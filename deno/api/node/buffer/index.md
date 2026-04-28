@@ -10,7 +10,10 @@ content_hash: "d26dac9b1eddaee55d1ecf32e47124911663c963294399b417da35b05c00853f"
 menu_path: ["buffer - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/async_hooks/index.md", "title": "async_hooks - Node documentation"}
+nav_next: {"path": "deno/api/node/child_process/index.md", "title": "child_process - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

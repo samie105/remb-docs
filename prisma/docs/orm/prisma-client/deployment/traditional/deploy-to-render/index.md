@@ -10,7 +10,10 @@ content_hash: "d498522804e368b55d4198c5340ac64dd1dfb6b281cf3aa2d7ae060ead499e70"
 menu_path: ["Deploy to Render"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-railway/index.md", "title": "Deploy to Railway"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
 ---
+
 Learn how to deploy a Node.js server that uses Prisma ORM to Render
 
 This guide explains how to deploy a Node.js server that uses Prisma ORM and PostgreSQL to Render.
@@ -25,7 +28,7 @@ The [Prisma Render deployment example](https://github.com/prisma/prisma-examples
 
 [Render](https://render.com/) is a cloud application platform that lets developers easily deploy and scale full-stack applications. For this example, it's helpful to know:
 
--   Render lets you deploy long-running, "serverful" full-stack applications. You can configure Render services to [autoscale](https://docs.render.com/scaling) based on CPU and/or memory usage. This is one of several [deployment paradigms](https://www.prisma.io/docs/orm/prisma-client/deployment/deploy-prisma) you can choose from.
+-   Render lets you deploy long-running, "serverful" full-stack applications. You can configure Render services to [autoscale](https://docs.render.com/scaling) based on CPU and/or memory usage. This is one of several [deployment paradigms](prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md) you can choose from.
 -   Render natively supports [common runtimes](https://docs.render.com/language-support), including Node.js and Bun. In this guide, we'll use the Node.js runtime.
 -   Render [integrates with Git repos](https://docs.render.com/github) for automatic deployments upon commits. You can deploy to Render from GitHub, GitLab, or Bitbucket. In this guide, we'll deploy from a Git repository.
 
@@ -51,8 +54,8 @@ The logic for the Express app is in two files:
 
 The Prisma components of this app are in two files:
 
--   `prisma/schema.prisma`: The data model of this app. This example defines two models, `User` and `Post`. The format of this file follows the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview).
--   `prisma/migrations/<migration name>/migration.sql`: The SQL commands that construct this schema in a PostgreSQL database. You can auto-generate migration files like this one by running [`prisma migrate dev`](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model#what-is-prisma-migrate).
+-   `prisma/schema.prisma`: The data model of this app. This example defines two models, `User` and `Post`. The format of this file follows the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md).
+-   `prisma/migrations/<migration name>/migration.sql`: The SQL commands that construct this schema in a PostgreSQL database. You can auto-generate migration files like this one by running [`prisma migrate dev`](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md#what-is-prisma-migrate).
 
 ### [Render Blueprint](#render-blueprint)
 
@@ -108,7 +111,7 @@ That’s it. Your web service will be live at its `onrender.com` URL as soon as 
 
 You can also deploy the example using the Render Blueprint. Follow Render's \[Blueprint setup guide\] and use the `render.yaml` in the example.
 
-Prisma ORM includes a framework for [seeding the database](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding) with starter data. In our example, `prisma/seed.js` defines some test users and posts.
+Prisma ORM includes a framework for [seeding the database](prisma/docs/orm/prisma-migrate/workflows/seeding/index.md) with starter data. In our example, `prisma/seed.js` defines some test users and posts.
 
 To add these users to the database, we can either:
 

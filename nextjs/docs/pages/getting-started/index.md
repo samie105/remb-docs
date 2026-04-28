@@ -11,8 +11,9 @@ menu_path: ["Getting Started - Pages Router"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/glossary/index.md", "title": "Next.js Glossary"}
+nav_next: {"path": "nextjs/docs/pages/getting-started/installation/index.md", "title": "Create a new Next.js application"}
 ---
-[Next.js Docs](/docs)[Pages Router](/docs/pages)Getting Started
 
 # Getting Started - Pages Router
 

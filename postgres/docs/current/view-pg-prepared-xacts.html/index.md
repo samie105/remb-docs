@@ -10,7 +10,10 @@ content_hash: "f3941a3b11378a74fdbd87113cd86a0e3559c8830a96d96677cc091e7ba659e9"
 menu_path: ["PostgreSQL: Documentation: 18: 53.17. pg_prepared_xacts"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-prepared-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.16.\u00a0pg_prepared_statements"}
+nav_next: {"path": "postgres/docs/current/view-pg-publication-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.18.\u00a0pg_publication_tables"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-prepared-xacts.html "PostgreSQL devel - 53.17. pg_prepared_xacts")
 
 The view `pg_prepared_xacts` displays information about transactions that are currently prepared for two-phase commit (see [PREPARE TRANSACTION](https://www.postgresql.org/docs/current/sql-prepare-transaction.html "PREPARE TRANSACTION") for details).

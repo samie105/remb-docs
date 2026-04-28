@@ -10,7 +10,10 @@ content_hash: "81f645f1a1b6d4a7489c0ede4a13fb81cc5398e2e3377a965ef829b291df6571"
 menu_path: ["function Deno.jupyter.html"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/~/Deno/index.md", "title": "namespace Deno"}
+nav_next: {"path": "deno/api/node/index.md", "title": "Node.js Built-in APIs"}
 ---
+
 # function Deno.jupyter.html
 
 unstable

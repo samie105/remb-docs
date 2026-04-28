@@ -10,15 +10,9 @@ content_hash: "681b7917d297f5e27c36fff1c1d30b0e4c37d8f360fcb8d58d14a13738c0b257"
 menu_path: ["backdrop-filter: contrast()"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/backdrop-filter-brightness/index.md", "title": "backdrop-filter: brightness()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-grayscale/index.md", "title": "backdrop-filter: grayscale()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  contrast
-
-Filters
 
 # backdrop-filter: contrast()
 

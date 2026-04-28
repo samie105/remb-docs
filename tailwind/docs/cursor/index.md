@@ -10,15 +10,9 @@ content_hash: "d7db93ed4a9299cf613405cab169c091e64cb8c47e2e09238c66c790df7257aa"
 menu_path: ["cursor"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/color-scheme/index.md", "title": "color-scheme"}
+nav_next: {"path": "tailwind/docs/field-sizing/index.md", "title": "field-sizing"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  cursor
-
-Interactivity
 
 # cursor
 

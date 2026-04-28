@@ -11,8 +11,9 @@ menu_path: ["typescript"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/typedRoutes/index.md", "title": "typedRoutes"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/urlImports/index.md", "title": "urlImports"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)typescript
 
 # typescript
 

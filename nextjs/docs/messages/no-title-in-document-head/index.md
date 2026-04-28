@@ -11,8 +11,9 @@ menu_path: ["No Title in Document Head"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-sync-scripts/index.md", "title": "No Sync Scripts"}
+nav_next: {"path": "nextjs/docs/messages/no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
 ---
-[Docs](/docs)[Errors](/docs)No Title in Document Head
 
 # No Title in Document Head
 

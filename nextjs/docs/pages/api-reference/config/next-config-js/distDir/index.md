@@ -11,8 +11,9 @@ menu_path: ["distDir"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/devIndicators/index.md", "title": "devIndicators"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/env/index.md", "title": "env"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)distDir
 
 # distDir
 

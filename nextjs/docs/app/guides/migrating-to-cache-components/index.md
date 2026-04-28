@@ -11,8 +11,9 @@ menu_path: ["Migrating to Cache Components"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/migrating/from-vite/index.md", "title": "How to migrate from Vite to Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/multi-tenant/index.md", "title": "How to build multi-tenant apps in Next.js"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Migrating to Cache Components
 
 # Migrating to Cache Components
 

@@ -11,8 +11,9 @@ menu_path: ["default.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/index.md", "title": "File-system conventions"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/dynamic-routes/index.md", "title": "Dynamic Route Segments"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)default.js
 
 # default.js
 

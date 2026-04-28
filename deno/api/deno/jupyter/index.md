@@ -10,7 +10,10 @@ content_hash: "8d34ade1b84fe591e1bea75b18ffc3b7867d3efd2ce8dcb533d2d4ae9dd68e0a"
 menu_path: ["Jupyter - Deno documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/io/index.md", "title": "I/O - Deno documentation"}
+nav_next: {"path": "deno/api/deno/linter/index.md", "title": "Linter - Deno documentation"}
 ---
+
 f
 
 [Deno.jupyter.broadcast](./././~/Deno.jupyter.broadcast "Deno.jupyter.broadcast")

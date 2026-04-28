@@ -11,8 +11,9 @@ menu_path: ["src Directory"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/public-folder/index.md", "title": "public Folder"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/index.md", "title": "Functions"}
 ---
-[API Reference](/docs/pages/api-reference)[File-system conventions](/docs/pages/api-reference/file-conventions)src Directory
 
 # src Directory
 

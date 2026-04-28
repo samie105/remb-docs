@@ -10,7 +10,10 @@ content_hash: "2f997905706bf69780f439fcfceac9f4ed91df564f336dbcd0eb3fd0f5f575d7"
 menu_path: ["clear"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/float/index.md", "title": "float"}
+nav_next: {"path": "tailwind/docs/isolation/index.md", "title": "isolation"}
 ---
+
 Utilities for controlling the wrapping of content around an element.
 
 ## [Examples](#examples)
@@ -63,4 +66,4 @@ Prefix a `clear` utility with a breakpoint variant like `md:` to only apply the 
 <p class="clear-left md:clear-none ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

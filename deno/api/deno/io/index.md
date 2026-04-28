@@ -10,7 +10,10 @@ content_hash: "a5f0005df647dedb12d4f86668b2f86fa2a3ba41c0c0772e53fd27e48f7831fd"
 menu_path: ["I/O - Deno documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/http-server/index.md", "title": "HTTP Server - Deno documentation"}
+nav_next: {"path": "deno/api/deno/jupyter/index.md", "title": "Jupyter - Deno documentation"}
 ---
+
 E
 
 [Deno.SeekMode](./././~/Deno.SeekMode "Deno.SeekMode")

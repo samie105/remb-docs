@@ -10,7 +10,10 @@ content_hash: "83775d772af678b6dc82ae96b784aaf123fca8b1c77afd64b18a7d3b3ec60b1a"
 menu_path: ["PostgreSQL: Documentation: 18: 47.10. Two-phase Commit Support for Logical Decoding"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/logicaldecoding-catalogs.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.5.\u00a0System Catalogs Related to Logical Decoding"}
+nav_next: {"path": "postgres/docs/current/logicaldecoding-walsender.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.3.\u00a0Streaming Replication Protocol Interface"}
 ---
+
 With the basic output plugin callbacks (eg., `begin_cb`, `change_cb`, `commit_cb` and `message_cb`) two-phase commit commands like `PREPARE TRANSACTION`, `COMMIT PREPARED` and `ROLLBACK PREPARED` are not decoded. While the `PREPARE TRANSACTION` is ignored, `COMMIT PREPARED` is decoded as a `COMMIT` and `ROLLBACK PREPARED` is decoded as a `ROLLBACK`.
 
 To support the streaming of two-phase commands, an output plugin needs to provide additional callbacks. There are multiple two-phase commit callbacks that are required, (`begin_prepare_cb`, `prepare_cb`, `commit_prepared_cb`, `rollback_prepared_cb` and `stream_prepare_cb`) and an optional callback (`filter_prepare_cb`).

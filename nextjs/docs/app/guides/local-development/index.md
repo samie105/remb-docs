@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/lazy-loading/index.md", "title": "How to lazy load Client Components and libraries"}
+nav_next: {"path": "nextjs/docs/app/guides/mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Development Environment
 
 # How to optimize your local development environment
 

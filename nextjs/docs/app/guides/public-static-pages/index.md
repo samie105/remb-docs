@@ -11,8 +11,9 @@ menu_path: ["Building public pages"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/progressive-web-apps/index.md", "title": "How to build a Progressive Web Application (PWA) with Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/redirecting/index.md", "title": "How to handle redirects in Next.js"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Public pages
 
 # Building public pages
 

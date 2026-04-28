@@ -11,8 +11,9 @@ menu_path: ["htmlLimitedBots"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/headers/index.md", "title": "headers"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)htmlLimitedBots
 
 # htmlLimitedBots
 

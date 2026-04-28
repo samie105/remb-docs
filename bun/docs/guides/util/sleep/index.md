@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:16.087Z"
 content_hash: "6c16536d0deff09ab3ff66df7e02374f09aab801a573428c0151502ffed76d94"
 menu_path: ["Sleep for a fixed number of milliseconds"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/util/path-to-file-url/index.md", "title": "Convert an absolute path to a file URL"}
+nav_next: {"path": "bun/docs/guides/util/upgrade/index.md", "title": "Upgrade Bun to the latest version"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

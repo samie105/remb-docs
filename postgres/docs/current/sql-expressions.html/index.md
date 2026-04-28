@@ -10,7 +10,10 @@ content_hash: "61cf356343f14711147180e19a0b522f952149f3b687402f3f05fddea622252b"
 menu_path: ["PostgreSQL: Documentation: 18: 4.2. Value Expressions"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/sql-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: EXPLAIN"}
+nav_next: {"path": "postgres/docs/current/sql-listen.html/index.md", "title": "PostgreSQL: Documentation: 18: LISTEN"}
 ---
+
 Value expressions are used in a variety of contexts, such as in the target list of the `SELECT` command, as new column values in `INSERT` or `UPDATE`, or in search conditions in a number of commands. The result of a value expression is sometimes called a _scalar_, to distinguish it from the result of a table expression (which is a table). Value expressions are therefore also called _scalar expressions_ (or even simply _expressions_). The expression syntax allows the calculation of values from primitive parts using arithmetic, logical, set, and other operations.
 
 A value expression is one of the following:

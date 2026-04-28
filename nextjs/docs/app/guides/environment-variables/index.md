@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/draft-mode/index.md", "title": "How to preview content with Draft Mode in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/forms/index.md", "title": "How to create forms with Server Actions"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Environment Variables
 
 # How to use environment variables in Next.js
 

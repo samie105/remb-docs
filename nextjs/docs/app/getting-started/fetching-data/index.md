@@ -11,8 +11,9 @@ menu_path: ["Fetching Data"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/server-and-client-components/index.md", "title": "Server and Client Components"}
+nav_next: {"path": "nextjs/docs/app/getting-started/mutating-data/index.md", "title": "Mutating Data"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Fetching Data
 
 # Fetching Data
 

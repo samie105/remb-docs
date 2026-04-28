@@ -11,8 +11,9 @@ menu_path: ["Error Handling"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/revalidating/index.md", "title": "Revalidating"}
+nav_next: {"path": "nextjs/docs/app/getting-started/css/index.md", "title": "CSS"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Error Handling
 
 # Error Handling
 

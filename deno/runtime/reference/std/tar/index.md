@@ -10,7 +10,10 @@ content_hash: "49c7c4a9ee3c8f41e8c65fe81ad9e8b11a8b73efcd8f6df5c5fa786cb3590bf8"
 menu_path: ["@std/tar"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/streams/index.md", "title": "@std/streams"}
+nav_next: {"path": "deno/runtime/reference/std/testing/index.md", "title": "@std/testing"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

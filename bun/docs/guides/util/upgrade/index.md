@@ -9,57 +9,10 @@ last_crawled_at: "2026-04-18T16:56:18.420Z"
 content_hash: "23708b2600862785b3e9295983644687904d600796703f165514e256b160287e"
 menu_path: ["Upgrade Bun to the latest version"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/util/sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
+nav_next: {"path": "bun/docs/guides/util/version/index.md", "title": "Get the current Bun version"}
 ---
-[Skip to main content](#content-area)
 
-[Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
-
-[Runtime
-
-](/docs)[Package Manager
-
-](/docs/pm/cli/install)[Bundler
-
-](/docs/bundler)[Test Runner
-
-](/docs/test)[Guides
-
-](/docs/guides)[Reference
-
-](https://bun.com/reference)[Blog
-
-](https://bun.com/blog)[Feedback
-
-](/docs/feedback)
-
-Bun can upgrade itself using the built-in `bun upgrade` command. This is the fastest way to get the latest features and bug fixes.
-
-terminal
-
-```
-bun upgrade
-```
-
-This downloads and installs the latest stable version of Bun, replacing the currently installed version.
-
-To see the current version of Bun, run `bun --version`.
-
-* * *
-
-## 
-
-[​
-
-](#verify-the-upgrade)
-
-Verify the upgrade
-
-After upgrading, verify the new version:
-
-terminal
-
-```
-bun --version
 # Output: 1.x.y
 
 # See the exact commit of the Bun binary

@@ -10,7 +10,10 @@ content_hash: "7eade9f0115238e0412dbec4f956cad7505863310c10163caf35055529af3520"
 menu_path: ["PostgreSQL: Documentation: 18: E.1. Release 18.3"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/release-18-2.html/index.md", "title": "PostgreSQL: Documentation: 18: E.2.\u00a0Release 18.2"}
+nav_next: {"path": "postgres/docs/current/release-18.html/index.md", "title": "PostgreSQL: Documentation: 18: E.4.\u00a0Release 18"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)

@@ -11,8 +11,9 @@ menu_path: ["redirects"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/reactStrictMode/index.md", "title": "reactStrictMode"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/rewrites/index.md", "title": "rewrites"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)redirects
 
 # redirects
 

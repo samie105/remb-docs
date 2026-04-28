@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:57.904Z"
 content_hash: "c4d21605c7ec05a627c2a0def15b49bcab332a1781f1bab748cc24a15bb80233"
 menu_path: ["Hash a password"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/util/gzip/index.md", "title": "Compress and decompress data with gzip"}
+nav_next: {"path": "bun/docs/guides/util/import-meta-dir/index.md", "title": "Get the directory of the current file"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

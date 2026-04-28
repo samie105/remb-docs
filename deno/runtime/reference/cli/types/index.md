@@ -10,7 +10,10 @@ content_hash: "63a1fda240fef3723927d78823c0a8c6a7e2ba0090e292da4f7df3c7f1510d36"
 menu_path: ["deno types"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/test/index.md", "title": "deno test"}
+nav_next: {"path": "deno/runtime/reference/cli/uninstall/index.md", "title": "deno uninstall"}
 ---
+
 **On this page**
 
 -   [Basic usage](#basic-usage)

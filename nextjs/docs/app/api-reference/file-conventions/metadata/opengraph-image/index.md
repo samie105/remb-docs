@@ -11,8 +11,9 @@ menu_path: ["opengraph-image and twitter-image"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/manifest/index.md", "title": "manifest.json"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/robots/index.md", "title": "robots.txt"}
 ---
-[File-system conventions](/docs/app/api-reference/file-conventions)[Metadata Files](/docs/app/api-reference/file-conventions/metadata)opengraph-image and twitter-image
 
 # opengraph-image and twitter-image
 

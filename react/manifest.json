@@ -1,7 +1,7 @@
 [
   {
     "url": "https://react.dev/learn",
-    "outputPath": "output/react/learn/index.md",
+    "outputPath": "react/learn/index.md",
     "title": "Quick Start",
     "contentHash": "6a7c330701f58a6e839169853f6111d95075c2c6c9365543af73b4c1bab49fbc",
     "visitedAt": "2026-04-18T16:32:18.632Z",
@@ -9,7 +9,7 @@
   },
   {
     "url": "https://react.dev/learn/thinking-in-react",
-    "outputPath": "output/react/learn/thinking-in-react/index.md",
+    "outputPath": "react/learn/thinking-in-react/index.md",
     "title": "Thinking in React",
     "contentHash": "4c366f029a0e25e686f3ac67188fa1ec35a584db50efd9af3afe178d0d9020b5",
     "visitedAt": "2026-04-18T16:32:42.433Z",
@@ -17,7 +17,7 @@
   },
   {
     "url": "https://react.dev/learn/installation",
-    "outputPath": "output/react/learn/installation/index.md",
+    "outputPath": "react/learn/installation/index.md",
     "title": "Installation",
     "contentHash": "7e08fa3e1a0a65e9c3c39ced2d826fc569a8cbe45607921cc982295c26c03bc0",
     "visitedAt": "2026-04-18T16:32:49.717Z",
@@ -25,7 +25,7 @@
   },
   {
     "url": "https://react.dev/learn/creating-a-react-app",
-    "outputPath": "output/react/learn/creating-a-react-app/index.md",
+    "outputPath": "react/learn/creating-a-react-app/index.md",
     "title": "Creating a React App",
     "contentHash": "f521d1d552b47fca9f873007b22ad835dc347b2faaaab2b65fd5e2fac3699281",
     "visitedAt": "2026-04-18T16:32:58.802Z",
@@ -33,7 +33,7 @@
   },
   {
     "url": "https://react.dev/learn/build-a-react-app-from-scratch",
-    "outputPath": "output/react/learn/build-a-react-app-from-scratch/index.md",
+    "outputPath": "react/learn/build-a-react-app-from-scratch/index.md",
     "title": "Build a React app from Scratch",
     "contentHash": "adaff0cb50d0902021420004cedb734f284e0e8c85602782ee622b83a2bae716",
     "visitedAt": "2026-04-18T16:33:07.203Z",
@@ -41,7 +41,7 @@
   },
   {
     "url": "https://react.dev/learn/add-react-to-an-existing-project",
-    "outputPath": "output/react/learn/add-react-to-an-existing-project/index.md",
+    "outputPath": "react/learn/add-react-to-an-existing-project/index.md",
     "title": "Add React to an Existing Project",
     "contentHash": "07f238c8a7610e2be7edca5e6497e1641669a8e19ef71cbda65ad56f9a126097",
     "visitedAt": "2026-04-18T16:33:17.802Z",
@@ -49,7 +49,7 @@
   },
   {
     "url": "https://react.dev/learn/setup",
-    "outputPath": "output/react/learn/setup/index.md",
+    "outputPath": "react/learn/setup/index.md",
     "title": "Setup",
     "contentHash": "4a59932a43c8b02f04b4767e42024d9bba8173682ce969d0e102e40e4a320656",
     "visitedAt": "2026-04-18T16:33:21.370Z",
@@ -57,7 +57,7 @@
   },
   {
     "url": "https://react.dev/learn/editor-setup",
-    "outputPath": "output/react/learn/editor-setup/index.md",
+    "outputPath": "react/learn/editor-setup/index.md",
     "title": "Editor Setup",
     "contentHash": "f7be2f2d85759c38906c5c8ca5fc3d890651b23ef072b333a739cb7daa2f91cd",
     "visitedAt": "2026-04-18T16:33:28.070Z",
@@ -65,7 +65,7 @@
   },
   {
     "url": "https://react.dev/learn/tutorial-tic-tac-toe",
-    "outputPath": "output/react/learn/tutorial-tic-tac-toe/index.md",
+    "outputPath": "react/learn/tutorial-tic-tac-toe/index.md",
     "title": "Tutorial: Tic-Tac-Toe",
     "contentHash": "9d252fa34baf70ee32dde6439854baec45135fd6cea3cc685d43a1cb1b7417d6",
     "visitedAt": "2026-04-18T16:34:35.663Z",
@@ -73,7 +73,7 @@
   },
   {
     "url": "https://react.dev/learn/react-developer-tools",
-    "outputPath": "output/react/learn/react-developer-tools/index.md",
+    "outputPath": "react/learn/react-developer-tools/index.md",
     "title": "React Developer Tools",
     "contentHash": "54bc954b44714db78639dfcb008b4f4e31356fd140a69fb201043bc6aec2ce4d",
     "visitedAt": "2026-04-18T16:34:40.272Z",
@@ -81,7 +81,7 @@
   },
   {
     "url": "https://react.dev/learn/typescript",
-    "outputPath": "output/react/learn/typescript/index.md",
+    "outputPath": "react/learn/typescript/index.md",
     "title": "Using TypeScript",
     "contentHash": "147ef28c96b9a0a8b92da0c1ecb9d03b9c8e86f83c5a7c0cb3f79dabdcdef5df",
     "visitedAt": "2026-04-18T16:34:51.432Z",
@@ -89,7 +89,7 @@
   },
   {
     "url": "https://react.dev/learn/react-compiler",
-    "outputPath": "output/react/learn/react-compiler/index.md",
+    "outputPath": "react/learn/react-compiler/index.md",
     "title": "React Compiler",
     "contentHash": "04a6d1ac0743f731d9e17edb627d94e31e0a08d06711368f4c3e193a956925d7",
     "visitedAt": "2026-04-18T16:34:57.580Z",
@@ -97,7 +97,7 @@
   },
   {
     "url": "https://react.dev/learn/react-compiler/introduction",
-    "outputPath": "output/react/learn/react-compiler/introduction/index.md",
+    "outputPath": "react/learn/react-compiler/introduction/index.md",
     "title": "Introduction",
     "contentHash": "d2425a236678a7bb41a0e10ced98b0888bf32c30c9bc61908529a274da78b187",
     "visitedAt": "2026-04-18T16:35:07.918Z",
@@ -105,7 +105,7 @@
   },
   {
     "url": "https://react.dev/learn/react-compiler/installation",
-    "outputPath": "output/react/learn/react-compiler/installation/index.md",
+    "outputPath": "react/learn/react-compiler/installation/index.md",
     "title": "Installation",
     "contentHash": "ffa9f844b30af5adf03cf3478d52bdb74988d3d494a6560147f93e3085397a87",
     "visitedAt": "2026-04-18T16:35:14.571Z",
@@ -113,7 +113,7 @@
   },
   {
     "url": "https://react.dev/learn/react-compiler/debugging",
-    "outputPath": "output/react/learn/react-compiler/debugging/index.md",
+    "outputPath": "react/learn/react-compiler/debugging/index.md",
     "title": "Debugging and Troubleshooting",
     "contentHash": "69baee129d424d32b1eea947b43f098b0ff3d9f9f35ed020ecf182a988943018",
     "visitedAt": "2026-04-18T16:35:23.075Z",
@@ -121,7 +121,7 @@
   },
   {
     "url": "https://react.dev/learn/react-compiler/incremental-adoption",
-    "outputPath": "output/react/learn/react-compiler/incremental-adoption/index.md",
+    "outputPath": "react/learn/react-compiler/incremental-adoption/index.md",
     "title": "Incremental Adoption",
     "contentHash": "e5a1bf5705a8f37a203eff1ea2202632be327d970db906361b0375f73593c618",
     "visitedAt": "2026-04-18T16:35:28.954Z",
@@ -129,7 +129,7 @@
   },
   {
     "url": "https://react.dev/learn/describing-the-ui",
-    "outputPath": "output/react/learn/describing-the-ui/index.md",
+    "outputPath": "react/learn/describing-the-ui/index.md",
     "title": "Describing the UI",
     "contentHash": "6917b63516fcbba17d3251da781741b8a8eff9689666f8a172d5a78539f64faf",
     "visitedAt": "2026-04-18T16:35:53.182Z",
@@ -137,7 +137,7 @@
   },
   {
     "url": "https://react.dev/learn/your-first-component",
-    "outputPath": "output/react/learn/your-first-component/index.md",
+    "outputPath": "react/learn/your-first-component/index.md",
     "title": "Your First Component",
     "contentHash": "aa3245882d0e50eb4db04219dd398a29e9302baa83f546cf2967c3ab14fb1b71",
     "visitedAt": "2026-04-18T16:36:14.262Z",
@@ -145,7 +145,7 @@
   },
   {
     "url": "https://react.dev/learn/importing-and-exporting-components",
-    "outputPath": "output/react/learn/importing-and-exporting-components/index.md",
+    "outputPath": "react/learn/importing-and-exporting-components/index.md",
     "title": "Importing and Exporting Components",
     "contentHash": "2588d58f5ef0388a0390742f5f63ddd59b9782bc2ab0b03746d33546eb3e5bbf",
     "visitedAt": "2026-04-18T16:36:20.755Z",
@@ -153,7 +153,7 @@
   },
   {
     "url": "https://react.dev/learn/writing-markup-with-jsx",
-    "outputPath": "output/react/learn/writing-markup-with-jsx/index.md",
+    "outputPath": "react/learn/writing-markup-with-jsx/index.md",
     "title": "Writing Markup with JSX",
     "contentHash": "404b6fd7ddd01f63a92a3ef8aef2ca5fc587afdc8773b1ab5a0d3f629cb76c36",
     "visitedAt": "2026-04-18T16:36:31.373Z",
@@ -161,7 +161,7 @@
   },
   {
     "url": "https://react.dev/learn/passing-props-to-a-component",
-    "outputPath": "output/react/learn/passing-props-to-a-component/index.md",
+    "outputPath": "react/learn/passing-props-to-a-component/index.md",
     "title": "Passing Props to a Component",
     "contentHash": "d3452c1ed0a3c747bd5a2a3cee9cf2ec7c7f93330597e2104641382b1691762a",
     "visitedAt": "2026-04-18T16:36:47.418Z",
@@ -169,7 +169,7 @@
   },
   {
     "url": "https://react.dev/learn/rendering-lists",
-    "outputPath": "output/react/learn/rendering-lists/index.md",
+    "outputPath": "react/learn/rendering-lists/index.md",
     "title": "Rendering Lists",
     "contentHash": "22511450b8c4b7c4ed3482a33e7fcd03220d755d3fbfdab9bee6db3b00a8dbf8",
     "visitedAt": "2026-04-18T16:37:18.403Z",
@@ -177,7 +177,7 @@
   },
   {
     "url": "https://react.dev/learn/javascript-in-jsx-with-curly-braces",
-    "outputPath": "output/react/learn/javascript-in-jsx-with-curly-braces/index.md",
+    "outputPath": "react/learn/javascript-in-jsx-with-curly-braces/index.md",
     "title": "JavaScript in JSX with Curly Braces",
     "contentHash": "79e2654050720cc5e2e245d338ff9f75fe005a753bbec8803916f142f87b2907",
     "visitedAt": "2026-04-18T16:37:34.133Z",
@@ -185,7 +185,7 @@
   },
   {
     "url": "https://react.dev/learn/understanding-your-ui-as-a-tree",
-    "outputPath": "output/react/learn/understanding-your-ui-as-a-tree/index.md",
+    "outputPath": "react/learn/understanding-your-ui-as-a-tree/index.md",
     "title": "Understanding Your UI as a Tree",
     "contentHash": "8ee2bc79c422f5766e95dfd9064ce465ae506e63cb2add82527aa99141088a50",
     "visitedAt": "2026-04-18T16:37:48.790Z",
@@ -193,7 +193,7 @@
   },
   {
     "url": "https://react.dev/learn/conditional-rendering",
-    "outputPath": "output/react/learn/conditional-rendering/index.md",
+    "outputPath": "react/learn/conditional-rendering/index.md",
     "title": "Conditional Rendering",
     "contentHash": "84e0b7b48751da16529df3d7af61d133a2d1c5a2ab03468c97db3886d01f6918",
     "visitedAt": "2026-04-18T16:38:03.999Z",
@@ -201,7 +201,7 @@
   },
   {
     "url": "https://react.dev/learn/keeping-components-pure",
-    "outputPath": "output/react/learn/keeping-components-pure/index.md",
+    "outputPath": "react/learn/keeping-components-pure/index.md",
     "title": "Keeping Components Pure",
     "contentHash": "b58d64bacc82f68c03dcdcbc09e22d1634010e6955209895c410ebb79d63648c",
     "visitedAt": "2026-04-18T16:38:16.215Z",
@@ -209,7 +209,7 @@
   },
   {
     "url": "https://react.dev/learn/state-a-components-memory",
-    "outputPath": "output/react/learn/state-a-components-memory/index.md",
+    "outputPath": "react/learn/state-a-components-memory/index.md",
     "title": "State: A Component's Memory",
     "contentHash": "e609b96425420f29d3e04d299443d1a42a94545e3ce28001e0ca6008eabe9791",
     "visitedAt": "2026-04-18T16:38:41.538Z",
@@ -217,7 +217,7 @@
   },
   {
     "url": "https://react.dev/learn/adding-interactivity",
-    "outputPath": "output/react/learn/adding-interactivity/index.md",
+    "outputPath": "react/learn/adding-interactivity/index.md",
     "title": "Adding Interactivity",
     "contentHash": "df9583bf85984c6f85741cecb9f8d4f3f477f8a9d014d08a96cf176d0af43527",
     "visitedAt": "2026-04-18T16:38:55.296Z",
@@ -225,7 +225,7 @@
   },
   {
     "url": "https://react.dev/learn/responding-to-events",
-    "outputPath": "output/react/learn/responding-to-events/index.md",
+    "outputPath": "react/learn/responding-to-events/index.md",
     "title": "Responding to Events",
     "contentHash": "5c48b5a0d734da89c40c5f62c45f7716345b133fe3c2ca0ad1cadc4448c83aa5",
     "visitedAt": "2026-04-18T16:39:26.991Z",
@@ -233,7 +233,7 @@
   },
   {
     "url": "https://react.dev/learn/state-as-a-snapshot",
-    "outputPath": "output/react/learn/state-as-a-snapshot/index.md",
+    "outputPath": "react/learn/state-as-a-snapshot/index.md",
     "title": "State as a Snapshot",
     "contentHash": "dda5d37630c22f9cc7c01535d849deb751a565beb8ef2fd0440304599217ad48",
     "visitedAt": "2026-04-18T16:39:38.604Z",
@@ -241,7 +241,7 @@
   },
   {
     "url": "https://react.dev/learn/render-and-commit",
-    "outputPath": "output/react/learn/render-and-commit/index.md",
+    "outputPath": "react/learn/render-and-commit/index.md",
     "title": "Render and Commit",
     "contentHash": "85b7f286c0114d6c173a94d8bb8718947ae0b64086417229b74c59b185e91de6",
     "visitedAt": "2026-04-18T16:39:44.533Z",
@@ -249,7 +249,7 @@
   },
   {
     "url": "https://react.dev/learn/queueing-a-series-of-state-updates",
-    "outputPath": "output/react/learn/queueing-a-series-of-state-updates/index.md",
+    "outputPath": "react/learn/queueing-a-series-of-state-updates/index.md",
     "title": "Queueing a Series of State Updates",
     "contentHash": "6aba64657f55be72347657271eed12c10b6d0a08ccea56befa3d6960c7013dea",
     "visitedAt": "2026-04-18T16:40:05.885Z",
@@ -257,7 +257,7 @@
   },
   {
     "url": "https://react.dev/learn/updating-objects-in-state",
-    "outputPath": "output/react/learn/updating-objects-in-state/index.md",
+    "outputPath": "react/learn/updating-objects-in-state/index.md",
     "title": "Updating Objects in State",
     "contentHash": "580d5c28031e6468a8bb1b8526dff4e194267fd8b8a826ac3237fe2d6ec9ef0d",
     "visitedAt": "2026-04-18T16:40:30.698Z",
@@ -265,7 +265,7 @@
   },
   {
     "url": "https://react.dev/learn/updating-arrays-in-state",
-    "outputPath": "output/react/learn/updating-arrays-in-state/index.md",
+    "outputPath": "react/learn/updating-arrays-in-state/index.md",
     "title": "Updating Arrays in State",
     "contentHash": "f0f7e191a8ed3d7fc20a52b6d7307c2d7e0451449672c0ff39edab7473f92898",
     "visitedAt": "2026-04-18T16:40:52.410Z",
@@ -273,7 +273,7 @@
   },
   {
     "url": "https://react.dev/learn/managing-state",
-    "outputPath": "output/react/learn/managing-state/index.md",
+    "outputPath": "react/learn/managing-state/index.md",
     "title": "Managing State",
     "contentHash": "0348862d5086a8500c1f4ca9516615f7666e9cb01cdad8cfbed43728fd96583f",
     "visitedAt": "2026-04-18T16:41:13.829Z",
@@ -281,7 +281,7 @@
   },
   {
     "url": "https://react.dev/learn/reacting-to-input-with-state",
-    "outputPath": "output/react/learn/reacting-to-input-with-state/index.md",
+    "outputPath": "react/learn/reacting-to-input-with-state/index.md",
     "title": "Reacting to Input with State",
     "contentHash": "7cee2772e3c70df1af4f52c736f45c03c0b6d4d45cbaf5bed24b0bb9ec4424ed",
     "visitedAt": "2026-04-18T16:41:27.471Z",
@@ -289,7 +289,7 @@
   },
   {
     "url": "https://react.dev/learn/choosing-the-state-structure",
-    "outputPath": "output/react/learn/choosing-the-state-structure/index.md",
+    "outputPath": "react/learn/choosing-the-state-structure/index.md",
     "title": "Choosing the State Structure",
     "contentHash": "db83fbbc4397154247714c759693153e24a2fa70da231c1c33cbcd27b20002cb",
     "visitedAt": "2026-04-18T16:41:48.239Z",
@@ -297,7 +297,7 @@
   },
   {
     "url": "https://react.dev/learn/extracting-state-logic-into-a-reducer",
-    "outputPath": "output/react/learn/extracting-state-logic-into-a-reducer/index.md",
+    "outputPath": "react/learn/extracting-state-logic-into-a-reducer/index.md",
     "title": "Extracting State Logic into a Reducer",
     "contentHash": "f02d240be7c6c4c8734394d53342150d2554a140864f9e88dd18c7fa638e9988",
     "visitedAt": "2026-04-18T16:42:09.750Z",
@@ -305,7 +305,7 @@
   },
   {
     "url": "https://react.dev/learn/sharing-state-between-components",
-    "outputPath": "output/react/learn/sharing-state-between-components/index.md",
+    "outputPath": "react/learn/sharing-state-between-components/index.md",
     "title": "Sharing State Between Components",
     "contentHash": "17b9a431c33d9e81308e86c3805fcbbd40639897b9bd50773ab42c09aa272bda",
     "visitedAt": "2026-04-18T16:42:22.926Z",
@@ -313,7 +313,7 @@
   },
   {
     "url": "https://react.dev/learn/preserving-and-resetting-state",
-    "outputPath": "output/react/learn/preserving-and-resetting-state/index.md",
+    "outputPath": "react/learn/preserving-and-resetting-state/index.md",
     "title": "Preserving and Resetting State",
     "contentHash": "a0771155f6990ecd722f6d82fbeb48e54b9095832e09d34916c0af4b017fe65c",
     "visitedAt": "2026-04-18T16:42:47.977Z",
@@ -321,7 +321,7 @@
   },
   {
     "url": "https://react.dev/learn/escape-hatches",
-    "outputPath": "output/react/learn/escape-hatches/index.md",
+    "outputPath": "react/learn/escape-hatches/index.md",
     "title": "Escape Hatches",
     "contentHash": "3409db7cc2470de7ebad07fd3df9d63a97d1a8baa8dacd18d33ccbaf727f85d8",
     "visitedAt": "2026-04-18T16:43:17.396Z",
@@ -329,7 +329,7 @@
   },
   {
     "url": "https://react.dev/learn/passing-data-deeply-with-context",
-    "outputPath": "output/react/learn/passing-data-deeply-with-context/index.md",
+    "outputPath": "react/learn/passing-data-deeply-with-context/index.md",
     "title": "Passing Data Deeply with Context",
     "contentHash": "0fb3a8eea4b1cd771e58969083b3824f9c23232df205484d873246e637fe168d",
     "visitedAt": "2026-04-18T16:43:32.940Z",
@@ -337,7 +337,7 @@
   },
   {
     "url": "https://react.dev/learn/scaling-up-with-reducer-and-context",
-    "outputPath": "output/react/learn/scaling-up-with-reducer-and-context/index.md",
+    "outputPath": "react/learn/scaling-up-with-reducer-and-context/index.md",
     "title": "Scaling Up with Reducer and Context",
     "contentHash": "f1414b457841a360e90ceafca7b36065928ab2742bb5cb04afa5aaef8b1bb33b",
     "visitedAt": "2026-04-18T16:43:43.678Z",
@@ -345,7 +345,7 @@
   },
   {
     "url": "https://react.dev/learn/manipulating-the-dom-with-refs",
-    "outputPath": "output/react/learn/manipulating-the-dom-with-refs/index.md",
+    "outputPath": "react/learn/manipulating-the-dom-with-refs/index.md",
     "title": "Manipulating the DOM with Refs",
     "contentHash": "a3c41c90e4e8588fd69a185fcf0186e92cb91753e4809933f925e591f806d95d",
     "visitedAt": "2026-04-18T16:44:10.661Z",
@@ -353,7 +353,7 @@
   },
   {
     "url": "https://react.dev/learn/synchronizing-with-effects",
-    "outputPath": "output/react/learn/synchronizing-with-effects/index.md",
+    "outputPath": "react/learn/synchronizing-with-effects/index.md",
     "title": "Synchronizing with Effects",
     "contentHash": "f02a3a4475401a1ecee31a459eac15e3173ab6e183e51ae8a9f5b437aa14f1ba",
     "visitedAt": "2026-04-18T16:44:29.327Z",
@@ -361,7 +361,7 @@
   },
   {
     "url": "https://react.dev/learn/referencing-values-with-refs",
-    "outputPath": "output/react/learn/referencing-values-with-refs/index.md",
+    "outputPath": "react/learn/referencing-values-with-refs/index.md",
     "title": "Referencing Values with Refs",
     "contentHash": "08e9655e99bbe165e229e7158ec5296e910429a6eaaee41c953224d5964063e7",
     "visitedAt": "2026-04-18T16:44:37.783Z",
@@ -369,7 +369,7 @@
   },
   {
     "url": "https://react.dev/learn/you-might-not-need-an-effect",
-    "outputPath": "output/react/learn/you-might-not-need-an-effect/index.md",
+    "outputPath": "react/learn/you-might-not-need-an-effect/index.md",
     "title": "You Might Not Need an Effect",
     "contentHash": "4aeb049e264be72666f4017b4f7415963f0e65bd260a5b61a0f694c3f24d346c",
     "visitedAt": "2026-04-18T16:44:52.747Z",
@@ -377,7 +377,7 @@
   },
   {
     "url": "https://react.dev/learn/lifecycle-of-reactive-effects",
-    "outputPath": "output/react/learn/lifecycle-of-reactive-effects/index.md",
+    "outputPath": "react/learn/lifecycle-of-reactive-effects/index.md",
     "title": "Lifecycle of Reactive Effects",
     "contentHash": "d94b10330862a8d4488d97b785a995d7c2676fcaae3d20d182527aea5fc2bc93",
     "visitedAt": "2026-04-18T16:45:18.750Z",
@@ -385,7 +385,7 @@
   },
   {
     "url": "https://react.dev/learn/removing-effect-dependencies",
-    "outputPath": "output/react/learn/removing-effect-dependencies/index.md",
+    "outputPath": "react/learn/removing-effect-dependencies/index.md",
     "title": "Removing Effect Dependencies",
     "contentHash": "5ade0c61107c2f3c61ea210c69e62c2f7a1278e87f1c32f863b70d62c661cc1b",
     "visitedAt": "2026-04-18T16:45:37.138Z",
@@ -393,7 +393,7 @@
   },
   {
     "url": "https://react.dev/learn/separating-events-from-effects",
-    "outputPath": "output/react/learn/separating-events-from-effects/index.md",
+    "outputPath": "react/learn/separating-events-from-effects/index.md",
     "title": "Separating Events from Effects",
     "contentHash": "2729b32799825b3d7fda3105780b0f4faa1280fd30a05ef12f039a027ba6116e",
     "visitedAt": "2026-04-18T16:45:48.233Z",
@@ -401,7 +401,7 @@
   },
   {
     "url": "https://react.dev/learn/reusing-logic-with-custom-hooks",
-    "outputPath": "output/react/learn/reusing-logic-with-custom-hooks/index.md",
+    "outputPath": "react/learn/reusing-logic-with-custom-hooks/index.md",
     "title": "Reusing Logic with Custom Hooks",
     "contentHash": "2f88e08bd6ebb32e86e31abfc4385e7cef038a95c1b234d9d3173e9860c17321",
     "visitedAt": "2026-04-18T16:46:36.160Z",

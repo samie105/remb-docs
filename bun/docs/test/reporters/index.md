@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:34.826Z"
 content_hash: "74687fe57334529bb39abacb9bfe7941fdebd1f9de356d476b4a32dbba2e57fe"
 menu_path: ["Test Reporters"]
 section_path: []
+nav_prev: {"path": "bun/docs/test/mocks/index.md", "title": "Mocks"}
+nav_next: {"path": "bun/docs/test/runtime-behavior/index.md", "title": "Runtime behavior"}
 ---
+
 bun test supports different output formats through reporters. This document covers both built-in reporters and how to implement your own custom reporters.
 
 * * *
@@ -129,7 +132,7 @@ The JUnit reporter currently has a few limitations that will be addressed in fut
 
 ### GitHub Actions reporter
 
-Bun test automatically detects when it’s running inside GitHub Actions and emits GitHub Actions annotations to the console directly. No special configuration is needed beyond installing Bun and running `bun test`. For a GitHub Actions workflow configuration example, see the [CI/CD integration](https://bun.com/docs/pm/cli/install#ci%2Fcd) section of the CLI documentation.
+Bun test automatically detects when it’s running inside GitHub Actions and emits GitHub Actions annotations to the console directly. No special configuration is needed beyond installing Bun and running `bun test`. For a GitHub Actions workflow configuration example, see the [CI/CD integration](bun/docs/pm/cli/install/index.md#ci%2Fcd) section of the CLI documentation.
 
 * * *
 

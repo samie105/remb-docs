@@ -10,7 +10,10 @@ content_hash: "cd1817dc97c8cbd27f0ef8e5c793ca6c6b44dbc0e2f444066e443c1afbee7491"
 menu_path: ["Many-to-many relations"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/index.md", "title": "Relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-many-relations/index.md", "title": "One-to-many relations"}
 ---
+
 How to define and work with many-to-many relations in Prisma.
 
 Many-to-many (m-n) relations connect zero or more records on one side to zero or more on the other. They can be [implicit](#implicit-many-to-many-relations) (Prisma manages the relation table) or [explicit](#explicit-many-to-many-relations) (you define the relation table).

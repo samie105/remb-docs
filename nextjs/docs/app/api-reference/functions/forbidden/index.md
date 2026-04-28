@@ -11,8 +11,9 @@ menu_path: ["forbidden"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/fetch/index.md", "title": "fetch"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-image-metadata/index.md", "title": "generateImageMetadata"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)forbidden
 
 # forbidden
 

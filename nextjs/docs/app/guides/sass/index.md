@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/rendering-philosophy/index.md", "title": "Next.js Rendering Philosophy"}
+nav_next: {"path": "nextjs/docs/app/guides/scripts/index.md", "title": "How to load and optimize scripts"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Sass
 
 # How to use Sass
 

@@ -10,7 +10,10 @@ content_hash: "b1f4c47a1d7cf7ca9234b531797fc6fb2590a29023cb44502d429443fdc5f451"
 menu_path: ["deno outdated"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/lint/index.md", "title": "deno lint"}
+nav_next: {"path": "deno/runtime/reference/cli/publish/index.md", "title": "deno publish"}
 ---
+
 **On this page**
 
 -   [Checking for outdated dependencies](#checking-for-outdated-dependencies)

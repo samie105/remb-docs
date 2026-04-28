@@ -11,7 +11,10 @@ menu_path: ["Deploy to Cloudflare Workers & Pages"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md", "title": "Deploy Prisma ORM"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-deno-deploy/index.md", "title": "Deploy to Deno Deploy"}
 ---
+
 Learn the things you need to know in order to deploy an app that uses Prisma Client for talking to a database to a Cloudflare Worker or to Cloudflare Pages
 
 **Questions answered in this page**
@@ -38,7 +41,7 @@ This command:
 
 ### [Using an edge-compatible driver](#using-an-edge-compatible-driver)
 
-When deploying a Cloudflare Worker that uses Prisma ORM, you need to use an [edge-compatible driver](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/overview#edge-compatibility-of-database-drivers) and its respective [driver adapter](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters) for Prisma ORM.
+When deploying a Cloudflare Worker that uses Prisma ORM, you need to use an [edge-compatible driver](prisma/docs/orm/prisma-client/deployment/edge/overview/index.md#edge-compatibility-of-database-drivers) and its respective [driver adapter](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters) for Prisma ORM.
 
 The edge-compatible drivers for Cloudflare Workers and Pages are:
 
@@ -46,7 +49,7 @@ The edge-compatible drivers for Cloudflare Workers and Pages are:
 -   [PlanetScale Serverless](https://planetscale.com/docs/tutorials/planetscale-serverless-driver) uses HTTP to access the database
 -   [`node-postgres`](https://node-postgres.com/) (`pg`) uses Cloudflare's `connect()` (TCP) to access the database
 -   [`@libsql/client`](https://github.com/tursodatabase/libsql-client-ts) is used to access Turso databases via HTTP
--   [Cloudflare D1](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare) is used to access D1 databases
+-   [Cloudflare D1](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md) is used to access D1 databases
 
 There's [also work being done](https://github.com/sidorares/node-mysql2/pull/2289) on the `node-mysql2` driver which will enable access to traditional MySQL databases from Cloudflare Workers and Pages in the future as well.
 
@@ -163,7 +166,7 @@ model User {
 
 If you are using a traditional PostgreSQL database that's accessed via TCP and the `pg` driver, you need to:
 
--   use the `@prisma/adapter-pg` database adapter (learn more [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql#using-driver-adapters))
+-   use the `@prisma/adapter-pg` database adapter (learn more [here](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#using-driver-adapters))
 -   set `node_compat = true` in `wrangler.toml` (see the [Cloudflare docs](https://developers.cloudflare.com/workers/runtime-apis/nodejs/))
 
 #### [1\. Configure Prisma schema & database connection](#1-configure-prisma-schema--database-connection)
@@ -281,7 +284,7 @@ The command will output the URL where you can access the deployed Worker.
 
 If you are using a PlanetScale database, you need to:
 
--   use the `@prisma/adapter-planetscale` database adapter (learn more [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql#planetscale))
+-   use the `@prisma/adapter-planetscale` database adapter (learn more [here](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale))
     
 -   manually remove the conflicting `cache` field:
     
@@ -417,7 +420,7 @@ The command will output the URL where you can access the deployed Worker.
 
 If you are using a Neon database, you need to:
 
--   use the `@prisma/adapter-neon` database adapter (learn more [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql#using-driver-adapters))
+-   use the `@prisma/adapter-neon` database adapter (learn more [here](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#using-driver-adapters))
 
 #### [1\. Configure Prisma schema & database connection](#1-configure-prisma-schema--database-connection-2)
 

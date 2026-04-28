@@ -10,15 +10,9 @@ content_hash: "40b0493e675505b164344a3b8284462810df82af60a7af79dec38d2d60a56a12"
 menu_path: ["align-content"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/justify-self/index.md", "title": "justify-self"}
+nav_next: {"path": "tailwind/docs/align-items/index.md", "title": "align-items"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  align-content
-
-Flexbox & Grid
 
 # align-content
 

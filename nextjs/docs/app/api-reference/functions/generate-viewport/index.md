@@ -11,8 +11,9 @@ menu_path: ["generateViewport"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-static-params/index.md", "title": "generateStaticParams"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/headers/index.md", "title": "headers"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)generateViewport
 
 # generateViewport
 

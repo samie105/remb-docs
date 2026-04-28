@@ -11,8 +11,9 @@ menu_path: ["Dynamic Route Segments"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/default/index.md", "title": "default.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/error/index.md", "title": "error.js"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)Dynamic Segments
 
 # Dynamic Route Segments
 

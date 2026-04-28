@@ -11,8 +11,9 @@ menu_path: ["src Folder"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route-groups/index.md", "title": "Route Groups"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/template/index.md", "title": "template.js"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)src
 
 # src Folder
 

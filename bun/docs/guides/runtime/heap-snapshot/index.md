@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:36.568Z"
 content_hash: "2c7e288a7b2733a3bc615afd4e85aa9eeab7eb64b87d517852e7d3b050b85708"
 menu_path: ["Inspect memory usage using V8 heap snapshots"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/runtime/delete-file/index.md", "title": "Delete files"}
+nav_next: {"path": "bun/docs/guides/runtime/import-html/index.md", "title": "Import a HTML file as text"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

@@ -11,8 +11,9 @@ menu_path: ["rewrites"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/redirects/index.md", "title": "redirects"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/sassOptions/index.md", "title": "sassOptions"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)rewrites
 
 # rewrites
 

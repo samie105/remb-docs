@@ -10,7 +10,10 @@ content_hash: "5b245195ca30ae319d4b9dee787e085950c557c31cc77126fe0d84a7509e8834"
 menu_path: ["PostgreSQL: Documentation: 18: 23.1. Locale Support"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/lo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.21.\u00a0lo \u2014 manage large objects"}
+nav_next: {"path": "postgres/docs/current/locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
 ---
+
 _Locale_ support refers to an application respecting cultural preferences regarding alphabets, sorting, number formatting, etc. PostgreSQL uses the standard ISO C and POSIX locale facilities provided by the server operating system. For additional information refer to the documentation of your system.
 
 ### 23.1.1. Overview [#](#LOCALE-OVERVIEW)
@@ -89,7 +92,7 @@ initdb --locale-provider=icu --icu-locale=en
 
 See the description of the respective commands and programs for details. Note that you can mix locale providers at different granularities, for example use `libc` by default for the cluster but have one database that uses the `icu` provider, and then have collation objects using either provider within those databases.
 
-Regardless of the locale provider, the operating system is still used to provide some locale-aware behavior, such as messages (see [lc\_messages](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-LC-MESSAGES)).
+Regardless of the locale provider, the operating system is still used to provide some locale-aware behavior, such as messages (see [lc\_messages](postgres/docs/current/runtime-config-client.html/index.md#GUC-LC-MESSAGES)).
 
 The available locale providers are listed below:
 
@@ -152,7 +155,7 @@ WARNING:  ICU locale "nonsense" has unknown language "nonsense"
 HINT:  To disable ICU locale validation, set parameter icu\_validation\_level to DISABLED.
 CREATE COLLATION
 
-[icu\_validation\_level](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-ICU-VALIDATION-LEVEL) controls how the message is reported. Unless set to `ERROR`, the collation will still be created, but the behavior may not be what the user intended.
+[icu\_validation\_level](postgres/docs/current/runtime-config-client.html/index.md#GUC-ICU-VALIDATION-LEVEL) controls how the message is reported. Unless set to `ERROR`, the collation will still be created, but the behavior may not be what the user intended.
 
 #### 23.1.5.3. Language Tag [#](#ICU-LANGUAGE-TAG)
 

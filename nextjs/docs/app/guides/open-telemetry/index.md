@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/multi-zones/index.md", "title": "How to build micro-frontends using multi-zones and Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/package-bundling/index.md", "title": "Optimizing package bundling"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)OpenTelemetry
 
 # How to set up instrumentation with OpenTelemetry
 

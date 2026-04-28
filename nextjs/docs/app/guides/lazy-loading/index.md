@@ -11,8 +11,9 @@ menu_path: ["How to lazy load Client Components and libraries"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
+nav_next: {"path": "nextjs/docs/app/guides/local-development/index.md", "title": "How to optimize your local development environment"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Lazy Loading
 
 # How to lazy load Client Components and libraries
 

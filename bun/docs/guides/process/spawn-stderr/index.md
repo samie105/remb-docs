@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:07.640Z"
 content_hash: "d055a259cd5db692e0e1c7a4ab45901ed6fd11e1e179b3fbc94a73a44bc1fbe8"
 menu_path: ["Read stderr from a child process"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/process/spawn/index.md", "title": "Spawn a child process"}
+nav_next: {"path": "bun/docs/guides/process/spawn-stdout/index.md", "title": "Read stdout from a child process"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

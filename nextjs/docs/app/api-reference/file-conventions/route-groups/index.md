@@ -11,8 +11,9 @@ menu_path: ["Route Groups"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/runtime/index.md", "title": "runtime"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/src-folder/index.md", "title": "src Folder"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)Route Groups
 
 # Route Groups
 

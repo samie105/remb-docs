@@ -10,7 +10,10 @@ content_hash: "23b291cfe366ed291baaf65719d95ade2d87139bbf66880baaf6543d98a6145e"
 menu_path: ["PostgreSQL: Documentation: 18: 12.4. Additional Features"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/textsearch-debugging.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.8.\u00a0Testing and Debugging Text Search"}
+nav_next: {"path": "postgres/docs/current/textsearch-limitations.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.11.\u00a0Limitations"}
 ---
+
 This section describes additional functions and operators that are useful in connection with text search.
 
 ### 12.4.1. Manipulating Documents [#](#TEXTSEARCH-MANIPULATE-TSVECTOR)

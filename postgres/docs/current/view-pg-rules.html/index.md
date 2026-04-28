@@ -10,7 +10,10 @@ content_hash: "d92952bbff06c1d5cacbcc74e5fdd27706efdeb1ca8a250f2cde7f017d4ec044"
 menu_path: ["PostgreSQL: Documentation: 18: 53.22. pg_rules"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.21.\u00a0pg_roles"}
+nav_next: {"path": "postgres/docs/current/view-pg-timezone-abbrevs.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.33.\u00a0pg_timezone_abbrevs"}
 ---
+
 The view `pg_rules` provides access to useful information about query rewrite rules.
 
 **Table 53.22. `pg_rules` Columns**

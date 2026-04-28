@@ -10,7 +10,10 @@ content_hash: "18c9d5d07e8e7aad450ac7e4a895de2a1aa029fe0b6488ec42351c8c863712c1"
 menu_path: ["PostgreSQL: Documentation: 18: 53.9. pg_group"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
+nav_next: {"path": "postgres/docs/current/view-pg-hba-file-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.10.\u00a0pg_hba_file_rules"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-group.html "PostgreSQL devel - 53.9. pg_group")
 
 The view `pg_group` exists for backwards compatibility: it emulates a catalog that existed in PostgreSQL before version 8.1. It shows the names and members of all roles that are marked as not `rolcanlogin`, which is an approximation to the set of roles that are being used as groups.

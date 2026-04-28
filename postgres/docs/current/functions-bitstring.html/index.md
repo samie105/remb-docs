@@ -10,7 +10,10 @@ content_hash: "5f0fdcaeb7231000cdc8f2f9a1b419509868cd3e3280d41bb71b4abe52ae60c7"
 menu_path: ["PostgreSQL: Documentation: 18: 9.6. Bit String Functions and Operators"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-geometry.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.11.\u00a0Geometric Functions and Operators"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/functions-bitstring.html "PostgreSQL devel - 9.6. Bit String Functions and Operators")
 
 This section describes functions and operators for examining and manipulating bit strings, that is values of the types `bit` and `bit varying`. (While only type `bit` is mentioned in these tables, values of type `bit varying` can be used interchangeably.) Bit strings support the usual comparison operators shown in [Table 9.1](https://www.postgresql.org/docs/current/functions-comparison.html#FUNCTIONS-COMPARISON-OP-TABLE "Table 9.1. Comparison Operators"), as well as the operators shown in [Table 9.14](https://www.postgresql.org/docs/current/functions-bitstring.html#FUNCTIONS-BIT-STRING-OP-TABLE "Table 9.14. Bit String Operators").

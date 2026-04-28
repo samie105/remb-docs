@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:42.010Z"
 content_hash: "d7941ba220016b6ba8b9292c54037de405f490ce75d04c1850746312a6741100"
 menu_path: ["Check if two objects are deeply equal"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/util/base64/index.md", "title": "Encode and decode base64 strings"}
+nav_next: {"path": "bun/docs/guides/util/deflate/index.md", "title": "Compress and decompress data with DEFLATE"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

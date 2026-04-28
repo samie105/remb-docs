@@ -10,7 +10,10 @@ content_hash: "b6c8fa038c98a7d65b83f0044a604b9aa5925234a091e3e947e055e57128f11a"
 menu_path: ["deno serve"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/sandbox/index.md", "title": "deno sandbox"}
+nav_next: {"path": "deno/runtime/reference/cli/task/index.md", "title": "deno task"}
 ---
+
 **On this page**
 
 -   [Basic usage](#basic-usage)

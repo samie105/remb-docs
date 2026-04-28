@@ -10,15 +10,9 @@ content_hash: "2bc972b6d0ae7865c6d01d78b6da1366275a96e38e74feb7824887144edb6080"
 menu_path: ["background-position"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/background-origin/index.md", "title": "background-origin"}
+nav_next: {"path": "tailwind/docs/background-repeat/index.md", "title": "background-repeat"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-position
-
-Backgrounds
 
 # background-position
 

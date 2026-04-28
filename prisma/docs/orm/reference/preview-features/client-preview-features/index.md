@@ -11,14 +11,17 @@ menu_path: ["Prisma Client & Prisma schema"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/reference/errors/index.md", "title": "Prisma Error Reference"}
+nav_next: {"path": "prisma/docs/orm/reference/preview-features/cli-preview-features/index.md", "title": "Prisma CLI Preview features"}
 ---
+
 Prisma Client and Prisma schema features that are currently in Preview
 
 When we release a new Prisma Client or Prisma schema feature, it often starts in Preview so that you can test it and submit your feedback. After we improve the feature with your feedback and are satisfied with the internal test results, we promote the feature to general availability.
 
-For more information, see [ORM releases and maturity levels](https://www.prisma.io/docs/orm/more/releases).
+For more information, see [ORM releases and maturity levels](prisma/docs/orm/more/releases/index.md).
 
-The following [Preview](https://www.prisma.io/docs/orm/more/releases#preview) feature flags are available for Prisma Client and Prisma schema:
+The following [Preview](prisma/docs/orm/more/releases/index.md#preview) feature flags are available for Prisma Client and Prisma schema:
 
 To enable a Preview feature, [add the feature flag to the `generator` block](#enabling-a-prisma-client-preview-feature) in your `schema.prisma` file. [Share your feedback on all Preview features on GitHub](https://github.com/prisma/prisma/issues/3108).
 

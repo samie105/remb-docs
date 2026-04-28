@@ -10,7 +10,10 @@ content_hash: "183fd8ecc1291172e2dc839d594be58b5ad79e6ba63fe364be8b896ba64a7a88"
 menu_path: ["Drizzle Kit configuration file"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/kit-web-mobile/index.md", "title": "Drizzle migrations in web and mobile environments"}
+nav_next: {"path": "drizzle/docs/seed-overview/index.md", "title": "Drizzle Seed"}
 ---
+
 ## Drizzle Kit configuration file
 
 Drizzle Kit lets you declare configuration options in `TypeScript` or `JavaScript` configuration files.
@@ -475,7 +478,7 @@ SELECT a.attname AS column_name, format_type(a.atttypid, a.atttypmod) as data_ty
 
 ### `tablesFilter`[](#tablesfilter)
 
-If you want to run multiple projects with one database - check out [our guide](https://orm.drizzle.team/docs/goodies#multi-project-schema).
+If you want to run multiple projects with one database - check out [our guide](drizzle/docs/goodies/index.md#multi-project-schema).
 
 `drizzle-kit push` and `drizzle-kit pull` will by default manage all tables in `public` schema. You can configure list of tables, schemas and extensions via `tablesFilters`, `schemaFilter` and `extensionFilters` options.
 
@@ -514,7 +517,7 @@ How it works in 0.x versions
 | default | `["public"]` |
 | commands | `push` `pull` |
 
-If you want to run multiple projects with one database - check out [our guide](https://orm.drizzle.team/docs/goodies#multi-project-schema).
+If you want to run multiple projects with one database - check out [our guide](drizzle/docs/goodies/index.md#multi-project-schema).
 
 `drizzle-kit push` and `drizzle-kit pull` will by default manage all schemas.
 

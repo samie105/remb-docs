@@ -11,8 +11,9 @@ menu_path: ["turbopack"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/transpilePackages/index.md", "title": "transpilePackages"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/typescript/index.md", "title": "typescript"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)turbopack
 
 # turbopack
 

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:53.547Z"
 content_hash: "77616064f9f1045602057e746dd9eed30fa13f1f93baed269cf6bf50891e1cab"
 menu_path: ["Hashing"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/globals/index.md", "title": "Globals"}
+nav_next: {"path": "bun/docs/runtime/html-rewriter/index.md", "title": "HTMLRewriter"}
 ---
+
 * * *
 
 ## `Bun.password`

@@ -10,7 +10,10 @@ content_hash: "02769bec2b59cf60162b822de88bac31413e720417ed97b4fda03e3c862694eb"
 menu_path: ["PostgreSQL: Documentation: 18: F.6. bloom — bloom filter index access method"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/bki-structure.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.5.\u00a0Structure of the Bootstrap BKI File"}
+nav_next: {"path": "postgres/docs/current/brin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.5.\u00a0BRIN Indexes"}
 ---
+
 A Bloom filter is a space-efficient data structure that is used to test whether an element is a member of a set. In the case of an index access method, it allows fast exclusion of non-matching tuples via signatures whose size is determined at index creation.
 
 A signature is a lossy representation of the indexed attribute(s), and as such is prone to reporting false positives; that is, it may be reported that an element is in the set, when it is not. So index search results must always be rechecked using the actual attribute values from the heap entry. Larger signatures reduce the odds of a false positive and thus reduce the number of useless heap visits, but of course also make the index larger and hence slower to scan.

@@ -10,7 +10,10 @@ content_hash: "93a504a48ffcd2b40a520c7ad5bfa51d4bba71bea47a4dad04b9815e1b702112"
 menu_path: ["Canvas - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/cache/index.md", "title": "Cache - Web documentation"}
+nav_next: {"path": "deno/api/web/crypto/index.md", "title": "Crypto - Web documentation"}
 ---
+
 f
 
 [createImageBitmap](./././~/createImageBitmap "createImageBitmap")

@@ -11,8 +11,9 @@ menu_path: ["taint"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/staticGeneration/index.md", "title": "staticGeneration*"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/trailingSlash/index.md", "title": "trailingSlash"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)taint
 
 # taint
 

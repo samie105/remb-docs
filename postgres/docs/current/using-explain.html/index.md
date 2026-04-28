@@ -10,7 +10,10 @@ content_hash: "31b16caf4163d53335d65834f3c9c09fb8d70d12c0af0d0eca79d535e39dd214"
 menu_path: ["PostgreSQL: Documentation: 18: 14.1. Using EXPLAIN"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/upgrading.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.6.\u00a0Upgrading a PostgreSQL Cluster"}
+nav_next: {"path": "postgres/docs/current/uuid-ossp.html/index.md", "title": "PostgreSQL: Documentation: 18: F.49.\u00a0uuid-ossp \u2014 a UUID generator"}
 ---
+
 PostgreSQL devises a _query plan_ for each query it receives. Choosing the right plan to match the query structure and the properties of the data is absolutely critical for good performance, so the system includes a complex _planner_ that tries to choose good plans. You can use the [`EXPLAIN`](https://www.postgresql.org/docs/current/sql-explain.html "EXPLAIN") command to see what query plan the planner creates for any query. Plan-reading is an art that requires some experience to master, but this section attempts to cover the basics.
 
 Examples in this section are drawn from the regression test database after doing a `VACUUM ANALYZE`, using v18 development sources. You should be able to get similar results if you try the examples yourself, but your estimated costs and row counts might vary slightly because `ANALYZE`'s statistics are random samples rather than exact, and because costs are inherently somewhat platform-dependent.
@@ -40,7 +43,7 @@ Since this query has no `WHERE` clause, it must scan all the rows of the table, 
 -   Estimated average width of rows output by this plan node (in bytes).
     
 
-The costs are measured in arbitrary units determined by the planner's cost parameters (see [Section 19.7.2](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS "19.7.2. Planner Cost Constants")). Traditional practice is to measure the costs in units of disk page fetches; that is, [seq\_page\_cost](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-SEQ-PAGE-COST) is conventionally set to `1.0` and the other cost parameters are set relative to that. The examples in this section are run with the default cost parameters.
+The costs are measured in arbitrary units determined by the planner's cost parameters (see [Section 19.7.2](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS "19.7.2. Planner Cost Constants")). Traditional practice is to measure the costs in units of disk page fetches; that is, [seq\_page\_cost](postgres/docs/current/runtime-config-query.html/index.md#GUC-SEQ-PAGE-COST) is conventionally set to `1.0` and the other cost parameters are set relative to that. The examples in this section are run with the default cost parameters.
 
 It's important to understand that the cost of an upper-level node includes the cost of all its child nodes. It's also important to realize that the cost only reflects things that the planner cares about. In particular, the cost does not consider the time spent to convert output values to text form or to transmit them to the client, which could be important factors in the real elapsed time; but the planner ignores those costs because it cannot change them by altering the plan. (Every correct plan will output the same row set, we trust.)
 
@@ -58,7 +61,7 @@ These numbers are derived very straightforwardly. If you do:
 
 SELECT relpages, reltuples FROM pg\_class WHERE relname = 'tenk1';
 
-you will find that `tenk1` has 345 disk pages and 10000 rows. The estimated cost is computed as (disk pages read \* [seq\_page\_cost](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-SEQ-PAGE-COST)) + (rows scanned \* [cpu\_tuple\_cost](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-CPU-TUPLE-COST)). By default, `seq_page_cost` is 1.0 and `cpu_tuple_cost` is 0.01, so the estimated cost is (345 \* 1.0) + (10000 \* 0.01) = 445.
+you will find that `tenk1` has 345 disk pages and 10000 rows. The estimated cost is computed as (disk pages read \* [seq\_page\_cost](postgres/docs/current/runtime-config-query.html/index.md#GUC-SEQ-PAGE-COST)) + (rows scanned \* [cpu\_tuple\_cost](postgres/docs/current/runtime-config-query.html/index.md#GUC-CPU-TUPLE-COST)). By default, `seq_page_cost` is 1.0 and `cpu_tuple_cost` is 0.01, so the estimated cost is (345 \* 1.0) + (10000 \* 0.01) = 445.
 
 Now let's modify the query to add a `WHERE` condition:
 
@@ -69,7 +72,7 @@ EXPLAIN SELECT \* FROM tenk1 WHERE unique1 < 7000;
  Seq Scan on tenk1  (cost=0.00..470.00 rows=7000 width=244)
    Filter: (unique1 < 7000)
 
-Notice that the `EXPLAIN` output shows the `WHERE` clause being applied as a “filter” condition attached to the Seq Scan plan node. This means that the plan node checks the condition for each row it scans, and outputs only the ones that pass the condition. The estimate of output rows has been reduced because of the `WHERE` clause. However, the scan will still have to visit all 10000 rows, so the cost hasn't decreased; in fact it has gone up a bit (by 10000 \* [cpu\_operator\_cost](https://www.postgresql.org/docs/current/runtime-config-query.html#GUC-CPU-OPERATOR-COST), to be exact) to reflect the extra CPU time spent checking the `WHERE` condition.
+Notice that the `EXPLAIN` output shows the `WHERE` clause being applied as a “filter” condition attached to the Seq Scan plan node. This means that the plan node checks the condition for each row it scans, and outputs only the ones that pass the condition. The estimate of output rows has been reduced because of the `WHERE` clause. However, the scan will still have to visit all 10000 rows, so the cost hasn't decreased; in fact it has gone up a bit (by 10000 \* [cpu\_operator\_cost](postgres/docs/current/runtime-config-query.html/index.md#GUC-CPU-OPERATOR-COST), to be exact) to reflect the extra CPU time spent checking the `WHERE` condition.
 
 The actual number of rows this query would select is 7000, but the `rows` estimate is only approximate. If you try to duplicate this experiment, you may well get a slightly different estimate; moreover, it can change after each `ANALYZE` command, because the statistics produced by `ANALYZE` are taken from a randomized sample of the table.
 

@@ -10,7 +10,10 @@ content_hash: "6e12a488ff4663e21527e59b82739058e1f79e9c95278441f56f334e74d48f11"
 menu_path: ["Deploy to Fly.io"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
 ---
+
 Learn how to deploy a Node.js server that uses Prisma ORM to Fly.io
 
 This guide explains how to deploy a Node.js server that uses Prisma ORM and PostgreSQL to Fly.io.
@@ -45,9 +48,9 @@ The logic for the Express app is in two files:
 
 The Prisma components of this app are in three files:
 
--   `prisma/schema.prisma`: The data model of this app. This example defines two models, `User` and `Post`. The format of this file follows the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview).
--   `prisma/migrations/<migration name>/migration.sql`: The SQL commands that construct this schema in a PostgreSQL database. You can auto-generate migration files like this one by running [`prisma migrate dev`](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model#what-is-prisma-migrate).
--   `prisma/seed.js`: defines some test users and postsPrisma, used to [seed the database](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding) with starter data.
+-   `prisma/schema.prisma`: The data model of this app. This example defines two models, `User` and `Post`. The format of this file follows the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md).
+-   `prisma/migrations/<migration name>/migration.sql`: The SQL commands that construct this schema in a PostgreSQL database. You can auto-generate migration files like this one by running [`prisma migrate dev`](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md#what-is-prisma-migrate).
+-   `prisma/seed.js`: defines some test users and postsPrisma, used to [seed the database](prisma/docs/orm/prisma-migrate/workflows/seeding/index.md) with starter data.
 
 ### [1\. Run `fly launch` and accept the defaults](#1-run-fly-launch-and-accept-the-defaults)
 

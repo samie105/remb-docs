@@ -11,8 +11,9 @@ menu_path: ["No Document Import in Page"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-css-tags/index.md", "title": "No CSS Tags"}
+nav_next: {"path": "nextjs/docs/messages/no-duplicate-head/index.md", "title": "No Duplicate Head"}
 ---
-[Docs](/docs)[Errors](/docs)No Document Import in Page
 
 # No Document Import in Page
 

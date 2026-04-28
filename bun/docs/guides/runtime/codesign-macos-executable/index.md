@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:19.746Z"
 content_hash: "b49cee8f4c36c5e91469733e8c1804f0e11b280a16ad3f483fcccee6a09cc853"
 menu_path: ["Codesign a single-file JavaScript executable on macOS"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/runtime/cicd/index.md", "title": "Install and run Bun in GitHub Actions"}
+nav_next: {"path": "bun/docs/guides/runtime/define-constant/index.md", "title": "Define and replace static globals & constants"}
 ---
+
 Compile your executable using the `--compile` flag.
 
 ```
@@ -69,4 +72,4 @@ codesign -vvv --verify ./myapp
 
 * * *
 
-For more information on macOS codesigning, refer to [Apple’s Code Signing documentation](https://developer.apple.com/documentation/security/code_signing_services). For details about creating single-file executables with Bun, see [Standalone Executables](https://bun.com/docs/bundler/executables). This guide requires Bun v1.2.4 or newer.
+For more information on macOS codesigning, refer to [Apple’s Code Signing documentation](https://developer.apple.com/documentation/security/code_signing_services). For details about creating single-file executables with Bun, see [Standalone Executables](bun/docs/bundler/executables/index.md). This guide requires Bun v1.2.4 or newer.

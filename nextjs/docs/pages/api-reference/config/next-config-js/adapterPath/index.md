@@ -11,8 +11,9 @@ menu_path: ["adapterPath"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/index.md", "title": "next.config.js Options"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)adapterPath
 
 # adapterPath
 

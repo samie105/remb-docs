@@ -11,8 +11,9 @@ menu_path: ["reactMaxHeadersLength"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/reactCompiler/index.md", "title": "reactCompiler"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/reactStrictMode/index.md", "title": "reactStrictMode"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)reactMaxHeadersLength
 
 # reactMaxHeadersLength
 

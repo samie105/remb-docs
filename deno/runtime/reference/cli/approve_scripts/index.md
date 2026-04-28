@@ -10,7 +10,10 @@ content_hash: "796331243a7acf801b9db0e7812e51777d0d8b3ca3ee3f78cce2006a5f1e9b27"
 menu_path: ["deno approve-scripts"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/add/index.md", "title": "deno add"}
+nav_next: {"path": "deno/runtime/reference/cli/audit/index.md", "title": "deno audit"}
 ---
+
 **On this page**
 
 -   [Basic usage](#basic-usage)

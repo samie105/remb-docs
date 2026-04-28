@@ -10,7 +10,10 @@ content_hash: "f24bbbbe03aa87902b11c1a638fd2f7b197a22bc9e18de55aef0063820a137a0"
 menu_path: ["Common way of defining custom types"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/read-replicas/index.md", "title": "Read Replicas"}
+nav_next: {"path": "drizzle/docs/goodies/index.md", "title": "Drizzle ORM - Goodies"}
 ---
+
 ## Common way of defining custom types
 
 ## Examples[](#examples)
@@ -264,11 +267,11 @@ export interface CustomTypeParams<T extends CustomTypeValues> {
   	/**
  	 * Optional mapping function, that is used for transforming data returned by transofmed to JSON in database data to desired format
  	 *
- 	 * Used by [relational queries](https://orm.drizzle.team/docs/rqb-v2)
+ 	 * Used by [relational queries](drizzle/docs/rqb-v2/index.md)
  	 *
  	 * Defaults to {@link fromDriver} function
  	 * @example
- 	 * For example, when querying bigint column via [RQB](https://orm.drizzle.team/docs/rqb-v2) or [JSON functions](https://orm.drizzle.team/docs/json-functions), the result field will be returned as it's string representation, as opposed to bigint from regular query
+ 	 * For example, when querying bigint column via [RQB](drizzle/docs/rqb-v2/index.md) or [JSON functions](drizzle/docs/json-functions/index.md), the result field will be returned as it's string representation, as opposed to bigint from regular query
  	 * To handle that, we need a separate function to handle such field's mapping:
  	 * ```
  	 * fromJson(value: string): bigint {
@@ -292,11 +295,11 @@ export interface CustomTypeParams<T extends CustomTypeValues> {
  	fromJson?: (value: T['jsonData']) => T['data'];
 
   	/**
- 	 * Optional selection modifier function, that is used for modifying selection of column inside [JSON functions](https://orm.drizzle.team/docs/json-functions)
+ 	 * Optional selection modifier function, that is used for modifying selection of column inside [JSON functions](drizzle/docs/json-functions/index.md)
  	 *
  	 * Additional mapping that could be required for such scenarios can be handled using {@link fromJson} function
  	 *
- 	 * Used by [relational queries](https://orm.drizzle.team/docs/rqb-v2)
+ 	 * Used by [relational queries](drizzle/docs/rqb-v2/index.md)
  	 * @example
  	 * For example, when using bigint we need to cast field to text to preserve data integrity
  	 * ```

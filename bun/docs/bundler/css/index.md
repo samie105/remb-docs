@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:32:49.060Z"
 content_hash: "b44d684ff878f82f034cb7305d2ad4ca9720cb464deaf60c430456601be9e46d"
 menu_path: ["CSS"]
 section_path: []
+nav_prev: {"path": "bun/docs/bundler/bytecode/index.md", "title": "Bytecode Caching"}
+nav_next: {"path": "bun/docs/bundler/esbuild/index.md", "title": "esbuild"}
 ---
+
 Bun’s bundler has built-in support for CSS with the following features:
 
 *   Transpiling modern/future features to work on all browsers (including vendor prefixing)

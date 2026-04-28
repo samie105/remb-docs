@@ -11,8 +11,9 @@ menu_path: ["bundlePagesRouterDependencies"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/basePath/index.md", "title": "basePath"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/compress/index.md", "title": "compress"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)bundlePagesRouterDependencies
 
 # bundlePagesRouterDependencies
 

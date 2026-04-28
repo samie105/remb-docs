@@ -10,7 +10,10 @@ content_hash: "064f451139b9bb7c4713fc5f215b2f21e6dcd26778eab85d52e9abebf5beae98"
 menu_path: ["PostgreSQL: Documentation: 18: 35.37. role_table_grants"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/infoschema-role-routine-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.36.\u00a0role_routine_grants"}
+nav_next: {"path": "postgres/docs/current/infoschema-role-udt-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.38.\u00a0role_udt_grants"}
 ---
+
 The view `role_table_grants` identifies all privileges granted on tables or views where the grantor or grantee is a currently enabled role. Further information can be found under `table_privileges`. The only effective difference between this view and `table_privileges` is that this view omits tables that have been made accessible to the current user by way of a grant to `PUBLIC`.
 
 **Table 35.35. `role_table_grants` Columns**

@@ -10,7 +10,10 @@ content_hash: "8af5638bdc5c8242240ece1a1764e9f1d15b604d2e12a8d205f87a540420ddb0"
 menu_path: ["GPU - Deno documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/file-system/index.md", "title": "File System - Deno documentation"}
+nav_next: {"path": "deno/api/deno/http-server/index.md", "title": "HTTP Server - Deno documentation"}
 ---
+
 c
 
 [Deno.UnsafeWindowSurface](./././~/Deno.UnsafeWindowSurface "Deno.UnsafeWindowSurface")

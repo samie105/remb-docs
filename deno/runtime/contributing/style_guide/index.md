@@ -10,7 +10,10 @@ content_hash: "ed6bf08cbb716c70ae2c452be0e27efce63415c90e7bb81bfce6230639e52640"
 menu_path: ["Deno Style Guide"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/contributing/release_schedule/index.md", "title": "Release Schedule"}
+nav_next: {"path": "deno/runtime/contributing/docs/index.md", "title": "Documentation guidelines"}
 ---
+
 **On this page**
 
 -   [Copyright Headers](#copyright-headers)

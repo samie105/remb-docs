@@ -10,15 +10,18 @@ content_hash: "2d4900c5756a0e67abe2095cdcbe47b4cddcf427075da985c3b58ee893d27888"
 menu_path: ["What are Client Extensions"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/typescript-performance/index.md", "title": "TypeScript performance"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/client/index.md", "title": "Add methods to Prisma Client"}
 ---
+
 You can use Prisma Client extensions to add functionality to your models, result objects, and queries, or to add client-level methods.
 
 You can create an extension with one or more of the following component types:
 
--   `model`: [add custom methods or fields to your models](https://www.prisma.io/docs/orm/prisma-client/client-extensions/model)
--   `client`: [add client-level methods to Prisma Client](https://www.prisma.io/docs/orm/prisma-client/client-extensions/client)
--   `query`: [create custom Prisma Client queries](https://www.prisma.io/docs/orm/prisma-client/client-extensions/query)
--   `result`: [add custom fields to your query results](https://www.prisma.io/docs/orm/prisma-client/client-extensions/result)
+-   `model`: [add custom methods or fields to your models](prisma/docs/orm/prisma-client/client-extensions/model/index.md)
+-   `client`: [add client-level methods to Prisma Client](prisma/docs/orm/prisma-client/client-extensions/client/index.md)
+-   `query`: [create custom Prisma Client queries](prisma/docs/orm/prisma-client/client-extensions/query/index.md)
+-   `result`: [add custom fields to your query results](prisma/docs/orm/prisma-client/client-extensions/result/index.md)
 
 For example, you might create an extension that uses the `model` and `client` component types.
 
@@ -26,7 +29,7 @@ When you use a Prisma Client extension, you create an _extended client_. An exte
 
 You can associate a single extension, or multiple extensions, with an extended client. [Learn more about multiple extensions](#multiple-extensions).
 
-You can [share your Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions/shared-extensions) with other Prisma ORM users, and [import Prisma Client extensions developed by other users](https://www.prisma.io/docs/orm/prisma-client/client-extensions/shared-extensions#install-a-shared-packaged-extension) into your Prisma ORM project.
+You can [share your Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md) with other Prisma ORM users, and [import Prisma Client extensions developed by other users](prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md#install-a-shared-packaged-extension) into your Prisma ORM project.
 
 ### [Extended clients](#extended-clients)
 
@@ -50,7 +53,7 @@ Because extended clients operate in isolated instances, they can be a good way t
 
 You can create an extension using two primary ways:
 
--   Use the client-level [`$extends`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#client-methods) method
+-   Use the client-level [`$extends`](prisma/docs/orm/reference/prisma-client-reference/index.md#client-methods) method
     
     ```
     const prisma = new PrismaClient().$extends({
@@ -79,9 +82,9 @@ You can create an extension using two primary ways:
     ```
     
 
-The above examples use the [`model` extension component](https://www.prisma.io/docs/orm/prisma-client/client-extensions/model) to extend the `User` model.
+The above examples use the [`model` extension component](prisma/docs/orm/prisma-client/client-extensions/model/index.md) to extend the `User` model.
 
-In your `$extends` method, use the appropriate extension component or components ([`model`](https://www.prisma.io/docs/orm/prisma-client/client-extensions/model), [`client`](https://www.prisma.io/docs/orm/prisma-client/client-extensions/client), [`result`](https://www.prisma.io/docs/orm/prisma-client/client-extensions/result) or [`query`](https://www.prisma.io/docs/orm/prisma-client/client-extensions/query)).
+In your `$extends` method, use the appropriate extension component or components ([`model`](prisma/docs/orm/prisma-client/client-extensions/model/index.md), [`client`](prisma/docs/orm/prisma-client/client-extensions/client/index.md), [`result`](prisma/docs/orm/prisma-client/client-extensions/result/index.md) or [`query`](prisma/docs/orm/prisma-client/client-extensions/query/index.md)).
 
 You can name your extensions to help identify them in error logs. To do so, use the optional field `name`. For example:
 
@@ -145,7 +148,7 @@ When you combine two or more extensions into a single extended client, then the 
 
 ### [Middleware chaining with query extensions](#middleware-chaining-with-query-extensions)
 
-Chain [`query`](https://www.prisma.io/docs/orm/prisma-client/client-extensions/query) extensions to compose middleware. Extensions execute in order—first in, first out:
+Chain [`query`](prisma/docs/orm/prisma-client/client-extensions/query/index.md) extensions to compose middleware. Extensions execute in order—first in, first out:
 
 ```
 import { PrismaClient } from "./generated/prisma";
@@ -243,7 +246,7 @@ The `Prisma.Result` type utility is used to infer the type of the extended `User
 
 ### [Usage of client-level methods in extended clients](#usage-of-client-level-methods-in-extended-clients)
 
-[Client-level methods](https://www.prisma.io/docs/orm/reference/prisma-client-reference#client-methods) do not necessarily exist on extended clients. For these clients you will need to first check for existence before using.
+[Client-level methods](prisma/docs/orm/reference/prisma-client-reference/index.md#client-methods) do not necessarily exist on extended clients. For these clients you will need to first check for existence before using.
 
 ```
 const xPrisma = new PrismaClient().$extends(...);

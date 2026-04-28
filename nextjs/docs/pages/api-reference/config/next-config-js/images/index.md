@@ -11,8 +11,9 @@ menu_path: ["images"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/logging/index.md", "title": "logging"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)images
 
 # images
 

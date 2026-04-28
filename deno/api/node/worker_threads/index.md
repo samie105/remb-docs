@@ -10,7 +10,10 @@ content_hash: "9b123483b1d9d7969c87a5df46df78f97c3dc93a689901ec3d5184d0981fde16"
 menu_path: ["worker_threads - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/wasi/index.md", "title": "wasi - Node documentation"}
+nav_next: {"path": "deno/api/node/zlib/index.md", "title": "zlib - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

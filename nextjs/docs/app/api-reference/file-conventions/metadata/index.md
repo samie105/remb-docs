@@ -11,8 +11,9 @@ menu_path: ["Metadata Files API Reference"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/unauthorized/index.md", "title": "unauthorized.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/app-icons/index.md", "title": "favicon, icon, and apple-icon"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)Metadata Files
 
 # Metadata Files API Reference
 

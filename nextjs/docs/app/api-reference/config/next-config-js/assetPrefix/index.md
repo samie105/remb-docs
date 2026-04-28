@@ -11,8 +11,9 @@ menu_path: ["assetPrefix"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/appDir/index.md", "title": "appDir"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/authInterrupts/index.md", "title": "authInterrupts"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)assetPrefix
 
 # assetPrefix
 

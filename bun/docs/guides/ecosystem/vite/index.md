@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:06.227Z"
 content_hash: "a2205516910ca3295854e39122d7cd30908c98aec7c27aba4b8af7fea6ba3fe0"
 menu_path: ["Build a frontend using Vite and Bun"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/ecosystem/upstash/index.md", "title": "Bun Redis with Upstash"}
+nav_next: {"path": "bun/docs/guides/html-rewriter/extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

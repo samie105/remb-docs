@@ -10,7 +10,10 @@ content_hash: "6f2c5b50a1fb2c1c297edc4c286436f408f652141e3b8286f22f18623a6f9779"
 menu_path: ["URL - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/temporal/index.md", "title": "404Sorry, couldn\u2019t find that page."}
+nav_next: {"path": "deno/api/web/wasm/index.md", "title": "Wasm - Web documentation"}
 ---
+
 I
 
 v

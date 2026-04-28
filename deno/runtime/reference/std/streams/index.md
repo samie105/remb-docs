@@ -10,7 +10,10 @@ content_hash: "599bfddf352ff3515ebc7f50e54889ec05b259fcf79c97b43bb45ff76bdf9aae"
 menu_path: ["@std/streams"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/semver/index.md", "title": "@std/semver"}
+nav_next: {"path": "deno/runtime/reference/std/tar/index.md", "title": "@std/tar"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

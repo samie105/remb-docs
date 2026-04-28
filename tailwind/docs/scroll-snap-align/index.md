@@ -10,7 +10,10 @@ content_hash: "ca457b8fd2e94c02de9022661e8ddce8c23d3af4120c4a7e8f5eba9d2fe80617"
 menu_path: ["scroll-snap-align"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/scroll-padding/index.md", "title": "scroll-padding"}
+nav_next: {"path": "tailwind/docs/scroll-snap-stop/index.md", "title": "scroll-snap-stop"}
 ---
+
 Utilities for controlling the scroll snap alignment of an element.
 
 ## [Examples](#examples)
@@ -93,4 +96,4 @@ Prefix a `scroll-snap-align` utility with a breakpoint variant like `md:` to onl
 <div class="snap-center md:snap-start ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

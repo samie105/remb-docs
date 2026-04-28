@@ -10,7 +10,10 @@ content_hash: "3a73b9f33a735642ebbb5cbfc60681b790fe9f6e58d2a398c5e868542f57ff6d"
 menu_path: ["Batch API"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/transactions/index.md", "title": "Transactions"}
+nav_next: {"path": "drizzle/docs/cache/index.md", "title": "Cache"}
 ---
+
 ## Batch API
 
 **LibSQL Batch API explanation**: _[source](https://docs.turso.tech/sdk/ts/reference#batch-transactions)_

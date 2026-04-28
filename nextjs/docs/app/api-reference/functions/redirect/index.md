@@ -11,8 +11,9 @@ menu_path: ["redirect"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/permanentRedirect/index.md", "title": "permanentRedirect"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/refresh/index.md", "title": "refresh"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)redirect
 
 # redirect
 

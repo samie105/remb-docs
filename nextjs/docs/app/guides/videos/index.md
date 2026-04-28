@@ -11,8 +11,9 @@ menu_path: ["How to use and optimize videos"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/upgrading/version-16/index.md", "title": "How to upgrade to version 16"}
+nav_next: {"path": "nextjs/docs/app/guides/view-transitions/index.md", "title": "Designing view transitions"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Videos
 
 # How to use and optimize videos
 

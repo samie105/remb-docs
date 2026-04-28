@@ -10,47 +10,10 @@ content_hash: "495da559325840ebfaa1120ff2e16cfe32c31c31c5ee783dbecc362bbe5e0329"
 menu_path: ["Continuous integration"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/ts_config_migration/index.md", "title": "Configuring TypeScript"}
+nav_next: {"path": "deno/runtime/reference/env_variables/index.md", "title": "Environment variables"}
 ---
-**On this page**
 
--   [Setting up a basic pipeline](#setting-up-a-basic-pipeline)
--   [Cross-platform workflows](#cross-platform-workflows)
--   [Speeding up Deno pipelines](#speeding-up-deno-pipelines)
-    -   [Reducing repetition](#reducing-repetition)
-    -   [Caching dependencies](#caching-dependencies)
-
-Deno's built-in tools make it easy to set up Continuous Integration (CI) pipelines for your projects. [Testing](/runtime/fundamentals/testing), [linting and formatting](/runtime/fundamentals/linting_and_formatting/) your code can all be done with the corresponding commands `deno test`, `deno lint` and `deno fmt`. In addition, you can generate code coverage reports from test results with `deno coverage` in pipelines.
-
-## Setting up a basic pipeline
-
-Tip
-
-Looking for a ready-made GitHub Actions workflow? GitHub provides an official starter workflow for Deno that you can add to your repository: [https://github.com/actions/starter-workflows/blob/main/ci/deno.yml](https://github.com/actions/starter-workflows/blob/main/ci/deno.yml).
-
-In GitHub, open the Actions tab, choose "New workflow", and search for "Deno" to use the template.
-
-You can set up basic pipelines for Deno projects in GitHub Actions. The concepts explained on this page largely apply to other CI providers as well, such as Azure Pipelines, CircleCI or GitLab.
-
-Building a pipeline for Deno generally starts with checking out the repository and installing Deno:
-
-```yaml
-name: Build
-
-on: push
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x # Run with latest stable Deno.
-```
-
-To expand the workflow, add any of the `deno` subcommands that you might need:
-
-```yaml
 # Check if the code is formatted according to Deno's default
 # formatting conventions.
 - run: deno fmt --check

@@ -11,13 +11,15 @@ menu_path: ["Prisma ORM"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_next: {"path": "prisma/docs/orm/core-concepts/data-modeling/index.md", "title": "Data modeling"}
 ---
+
 Prisma ORM is a next-generation Node.js and TypeScript ORM that provides type-safe database access, migrations, and a visual data editor.
 
 Prisma ORM is [open-source](https://github.com/prisma/prisma) and consists of:
 
--   [**Prisma Client**](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/introduction): Auto-generated, type-safe **ORM interface**
--   [**Prisma Migrate**](https://www.prisma.io/docs/orm/prisma-migrate): Database migration system
+-   [**Prisma Client**](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md): Auto-generated, type-safe **ORM interface**
+-   [**Prisma Migrate**](prisma/docs/orm/prisma-migrate/index.md): Database migration system
 -   [**Prisma Studio**](https://www.prisma.io/studio): GUI to view and edit your data
 
 Prisma Client works with any Node.js or TypeScript backend, whether you're deploying to traditional servers, serverless functions, or microservices.
@@ -47,7 +49,7 @@ Prisma takes a different approach:
 
 ### [1\. Define your schema](#1-define-your-schema)
 
-The [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview) defines your data models and database connection:
+The [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) defines your data models and database connection:
 
 ```
 datasource db {
@@ -98,9 +100,9 @@ export default defineConfig({
 
 ### [3\. Run migrations](#3-run-migrations)
 
-Use [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate) to create and apply migrations:
+Use [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md) to create and apply migrations:
 
-Or [introspect](https://www.prisma.io/docs/orm/prisma-schema/introspection) an existing database:
+Or [introspect](prisma/docs/orm/prisma-schema/introspection/index.md) an existing database:
 
 ### [4\. Query with Prisma Client](#4-query-with-prisma-client)
 
@@ -127,5 +129,5 @@ const user = await prisma.user.create({
 });
 ```
 
--   [**Prisma schema**](https://www.prisma.io/docs/orm/prisma-schema/overview) - Learn the schema language
--   [**Prisma Client**](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/introduction) - Explore the query API
+-   [**Prisma schema**](prisma/docs/orm/prisma-schema/overview/index.md) - Learn the schema language
+-   [**Prisma Client**](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md) - Explore the query API

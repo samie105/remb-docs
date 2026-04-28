@@ -11,8 +11,9 @@ menu_path: ["unstable_noStore"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unstable_cache/index.md", "title": "unstable_cache"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/unstable_rethrow/index.md", "title": "unstable_rethrow"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)unstable\_noStore
 
 # unstable\_noStore
 

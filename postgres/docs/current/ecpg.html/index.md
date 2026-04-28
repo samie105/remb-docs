@@ -10,7 +10,10 @@ content_hash: "da2f93a7906491d5e6ba8d0f5d4b82828cfdf5450a424e6851b44dd059316fe8"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 34. ECPG — Embedded SQL in C"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/largeobjects.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a033.\u00a0Large Objects"}
+nav_next: {"path": "postgres/docs/current/server-programming.html/index.md", "title": "Part\u00a0V.\u00a0Server Programming"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/ecpg.html "PostgreSQL devel - Chapter 34. ECPG — Embedded SQL in C")
 
 | Chapter 34. ECPG — Embedded SQL in C |

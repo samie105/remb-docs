@@ -10,13 +10,16 @@ content_hash: "caed94323d88cdc32c5da716dc93ea3c11a1eb4ab489b100bed66ae6c0a5be0f"
 menu_path: ["Drizzle <> Prisma Postgres"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/connect-vercel-postgres/index.md", "title": "Drizzle <> Vercel Postgres"}
+nav_next: {"path": "drizzle/docs/connect-supabase/index.md", "title": "Drizzle <> Supabase"}
 ---
+
 This guide assumes familiarity with:
 
--   Database [connection basics](https://orm.drizzle.team/docs/connect-overview) with Drizzle
+-   Database [connection basics](drizzle/docs/connect-overview/index.md) with Drizzle
 -   Prisma Postgres serverless database - [website](https://prisma.io/postgres)
 -   Prisma Postgres direct connections - [docs](https://www.prisma.io/docs/postgres/database/direct-connections)
--   Drizzle PostgreSQL drivers - [docs](https://orm.drizzle.team/docs/get-started-postgresql)
+-   Drizzle PostgreSQL drivers - [docs](drizzle/docs/get-started-postgresql/index.md)
 
 Prisma Postgres is a serverless database built on [unikernels](https://www.prisma.io/blog/announcing-prisma-postgres-early-access). It has a large free tier, [operation-based pricing](https://www.prisma.io/blog/operations-based-billing) and no cold starts.
 

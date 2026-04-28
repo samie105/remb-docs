@@ -11,8 +11,9 @@ menu_path: ["Codemods"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/upgrading/index.md", "title": "Upgrade Guides"}
+nav_next: {"path": "nextjs/docs/app/guides/upgrading/version-14/index.md", "title": "How to upgrade to version 14"}
 ---
-[Guides](/docs/app/guides)[Upgrading](/docs/app/guides/upgrading)Codemods
 
 # Codemods
 
@@ -260,7 +261,7 @@ Terminal
 npx @next/codemod@latest app-dir-runtime-config-experimental-edge .
 ```
 
-This codemod transforms [Route Segment Config `runtime`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config/runtime) value `experimental-edge` to `edge`.
+This codemod transforms [Route Segment Config `runtime`](nextjs/docs/app/api-reference/file-conventions/route-segment-config/runtime/index.md) value `experimental-edge` to `edge`.
 
 For example:
 

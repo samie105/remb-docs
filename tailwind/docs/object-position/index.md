@@ -10,7 +10,10 @@ content_hash: "3d15d0b9d648253a3487e7be9532c180cfbf0470d7bc8e10e438977ee5b04e8a"
 menu_path: ["object-position"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/object-fit/index.md", "title": "object-fit"}
+nav_next: {"path": "tailwind/docs/overflow/index.md", "title": "overflow"}
 ---
+
 Utilities for controlling how a replaced element's content should be positioned within its container.
 
 ## [Examples](#examples)
@@ -49,4 +52,4 @@ Prefix an `object-position` utility with a breakpoint variant like `md:` to only
 <img class="object-center md:object-top ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

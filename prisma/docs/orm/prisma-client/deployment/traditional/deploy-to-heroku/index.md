@@ -11,10 +11,13 @@ menu_path: ["Deploy to Heroku"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio/index.md", "title": "Deploy to Fly.io"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-koyeb/index.md", "title": "Deploy to Koyeb"}
 ---
+
 In this guide, you will set up and deploy a Node.js server that uses Prisma ORM with PostgreSQL to [Heroku](https://www.heroku.com/). The application exposes a REST API and uses Prisma Client to handle fetching, creating, and deleting records from a database.
 
-Heroku is a cloud platform as a service (PaaS). In contrast to the popular serverless deployment model, with Heroku, your application is constantly running even if no requests are made to it. This has several benefits due to the connection limits of a PostgreSQL database. For more information, check out the [general deployment documentation](https://www.prisma.io/docs/orm/prisma-client/deployment/deploy-prisma)
+Heroku is a cloud platform as a service (PaaS). In contrast to the popular serverless deployment model, with Heroku, your application is constantly running even if no requests are made to it. This has several benefits due to the connection limits of a PostgreSQL database. For more information, check out the [general deployment documentation](prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md)
 
 Typically Heroku integrates with a Git repository for automatic deployments upon commits. You can deploy to Heroku from a GitHub repository or by pushing your source to a [Git repository that Heroku creates per app](https://devcenter.heroku.com/articles/git). This guide uses the latter approach whereby you push your code to the app's repository on Heroku, which triggers a build and deploys the application.
 
@@ -38,9 +41,9 @@ While the example uses REST, the same principles apply to a GraphQL server, with
 
 > **Note:** Heroku doesn't provide a free plan, so billing information is required.
 
-At the core of Prisma ORM is the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview) – a declarative configuration where you define your data model and other Prisma ORM-related configuration. The Prisma schema is also a single source of truth for both Prisma Client and Prisma Migrate.
+At the core of Prisma ORM is the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) – a declarative configuration where you define your data model and other Prisma ORM-related configuration. The Prisma schema is also a single source of truth for both Prisma Client and Prisma Migrate.
 
-In this guide, you will use [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate) to create the database schema. Prisma Migrate is based on the Prisma schema and works by generating `.sql` migration files that are executed against the database.
+In this guide, you will use [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md) to create the database schema. Prisma Migrate is based on the Prisma schema and works by generating `.sql` migration files that are executed against the database.
 
 Migrate comes with two primary workflows:
 

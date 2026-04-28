@@ -11,8 +11,9 @@ menu_path: ["urlImports"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/typescript/index.md", "title": "typescript"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/useLightningcss/index.md", "title": "useLightningcss"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)urlImports
 
 # urlImports
 

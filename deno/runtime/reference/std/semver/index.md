@@ -10,7 +10,10 @@ content_hash: "19294d7909b233652f6719c5a9f1ef20cce07876654309d53264cd928fd1e596"
 menu_path: ["@std/semver"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/regexp/index.md", "title": "@std/regexp"}
+nav_next: {"path": "deno/runtime/reference/std/streams/index.md", "title": "@std/streams"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

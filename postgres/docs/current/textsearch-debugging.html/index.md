@@ -10,7 +10,10 @@ content_hash: "532f2ff1cf47221232fe9df785267d798c825dfde45f4aafe375b503e5cbc759"
 menu_path: ["PostgreSQL: Documentation: 18: 12.8. Testing and Debugging Text Search"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/sslinfo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.42.\u00a0sslinfo \u2014 obtain client SSL information"}
+nav_next: {"path": "postgres/docs/current/textsearch-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.4.\u00a0Additional Features"}
 ---
+
 The behavior of a custom text search configuration can easily become confusing. The functions described in this section are useful for testing text search objects. You can test a complete configuration, or test parsers and dictionaries separately.
 
 ### 12.8.1. Configuration Testing [#](#TEXTSEARCH-CONFIGURATION-TESTING)

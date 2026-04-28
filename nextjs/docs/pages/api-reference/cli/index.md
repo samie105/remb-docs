@@ -11,8 +11,9 @@ menu_path: ["CLI"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/eslint/index.md", "title": "ESLint"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/cli/create-next-app/index.md", "title": "create-next-app CLI"}
 ---
-[Pages Router](/docs/pages)[API Reference](/docs/pages/api-reference)CLI
 
 # CLI
 

@@ -10,7 +10,10 @@ content_hash: "b9582cde3c0f75cc915a58749f4706c339456fb7daed26a39831ae008aa540d6"
 menu_path: ["PostgreSQL: Documentation: 18: 51.3. The Parser Stage"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/parallel-safety.html/index.md", "title": "PostgreSQL: Documentation: 18: 15.4.\u00a0Parallel Safety"}
+nav_next: {"path": "postgres/docs/current/passwordcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.24.\u00a0passwordcheck \u2014 verify password strength"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/parser-stage.html "PostgreSQL devel - 51.3. The Parser Stage")
 
 The _parser stage_ consists of two parts:

@@ -10,15 +10,9 @@ content_hash: "19f350f88c1dec6b402f6fd5c3da62c4a114b1ec3728d918ca5008274e4d7369"
 menu_path: ["text-decoration-thickness"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/text-decoration-style/index.md", "title": "text-decoration-style"}
+nav_next: {"path": "tailwind/docs/text-underline-offset/index.md", "title": "text-underline-offset"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  text-decoration-thickness
-
-Typography
 
 # text-decoration-thickness
 

@@ -11,8 +11,9 @@ menu_path: ["headers"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-viewport/index.md", "title": "generateViewport"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/image-response/index.md", "title": "ImageResponse"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)headers
 
 # headers
 

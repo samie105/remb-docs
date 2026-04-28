@@ -11,8 +11,9 @@ menu_path: ["cssChunking"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/crossOrigin/index.md", "title": "crossOrigin"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/deploymentId/index.md", "title": "deploymentId"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)cssChunking
 
 # cssChunking
 

@@ -10,7 +10,10 @@ content_hash: "bb5a198a6691cf2935c5b5f96e2654705c1080ccba3ac0fb5880e1c042519079"
 menu_path: ["PostgreSQL: Documentation: 18: 47.7. Logical Decoding Output Writers"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/logicaldecoding-walsender.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.3.\u00a0Streaming Replication Protocol Interface"}
+nav_next: {"path": "postgres/docs/current/pageinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.23.\u00a0pageinspect \u2014 low-level inspection of database pages"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/logicaldecoding-writer.html "PostgreSQL devel - 47.7. Logical Decoding Output Writers")
 
 | 47.7. Logical Decoding Output Writers |

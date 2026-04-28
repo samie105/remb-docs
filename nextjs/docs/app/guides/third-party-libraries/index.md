@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/testing/vitest/index.md", "title": "How to set up Vitest with Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/upgrading/index.md", "title": "Upgrade Guides"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Third Party Libraries
 
 # How to optimize third-party libraries
 

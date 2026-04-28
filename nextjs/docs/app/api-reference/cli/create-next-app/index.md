@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/cli/index.md", "title": "CLI"}
+nav_next: {"path": "nextjs/docs/app/api-reference/cli/next/index.md", "title": "next CLI"}
 ---
-[API Reference](/docs/app/api-reference)[CLI](/docs/app/api-reference/cli)create-next-app
 
 # create-next-app
 

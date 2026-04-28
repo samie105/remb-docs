@@ -10,7 +10,10 @@ content_hash: "58c7f34b3567047f74743cf2b794a801545f424751a68dfc4288e8642deb22fe"
 menu_path: ["PostgreSQL: Documentation: 18: F.12. dict_int — example full-text search dictionary for integers"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/default-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: O.2.\u00a0Default Roles Renamed to Predefined Roles"}
+nav_next: {"path": "postgres/docs/current/docguide-style.html/index.md", "title": "PostgreSQL: Documentation: 18: J.6.\u00a0Style Guide"}
 ---
+
 `dict_int` is an example of an add-on dictionary template for full-text search. The motivation for this example dictionary is to control the indexing of integers (signed and unsigned), allowing such numbers to be indexed while preventing excessive growth in the number of unique words, which greatly affects the performance of searching.
 
 This module is considered “trusted”, that is, it can be installed by non-superusers who have `CREATE` privilege on the current database.

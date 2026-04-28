@@ -11,8 +11,9 @@ menu_path: ["getStaticProps"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-static-paths/index.md", "title": "getStaticPaths"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/next-request/index.md", "title": "NextRequest"}
 ---
-[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)getStaticProps
 
 # getStaticProps
 

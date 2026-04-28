@@ -11,8 +11,9 @@ menu_path: ["useSelectedLayoutSegment"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-search-params/index.md", "title": "useSearchParams"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-selected-layout-segments/index.md", "title": "useSelectedLayoutSegments"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)useSelectedLayoutSegment
 
 # useSelectedLayoutSegment
 

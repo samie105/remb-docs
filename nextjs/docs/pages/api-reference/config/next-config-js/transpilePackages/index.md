@@ -11,8 +11,9 @@ menu_path: ["transpilePackages"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/trailingSlash/index.md", "title": "trailingSlash"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/turbopack/index.md", "title": "turbopack"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)transpilePackages
 
 # transpilePackages
 

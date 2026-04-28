@@ -10,7 +10,10 @@ content_hash: "5620a594db8165b5edb2defbbb698f73ef66e45bc76f5a26b016c83be0aedb7e"
 menu_path: ["PostgreSQL: Documentation: 18: F.40. sepgsql — SELinux-, label-based mandatory access control (MAC) security module"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/seg.html/index.md", "title": "PostgreSQL: Documentation: 18: F.39.\u00a0seg \u2014 a datatype for line segments or floating point intervals"}
+nav_next: {"path": "postgres/docs/current/server-shutdown.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.5.\u00a0Shutting Down the Server"}
 ---
+
 `sepgsql` is a loadable module that supports label-based mandatory access control (MAC) based on SELinux security policy.
 
 ### Warning
@@ -43,7 +46,7 @@ If SELinux is disabled or not installed, you must set that product up first befo
 
 To build this module, specify [`--with-selinux`](https://www.postgresql.org/docs/current/install-make.html#CONFIGURE-OPTION-WITH-SEPGSQL) (when using [make and autoconf](https://www.postgresql.org/docs/current/install-make.html "17.3. Building and Installation with Autoconf and Make") ) or [`-Dselinux={ auto | enabled | disabled }`](https://www.postgresql.org/docs/current/install-meson.html#CONFIGURE-WITH-SEPGSQL-MESON) (when using [meson](https://www.postgresql.org/docs/current/install-meson.html "17.4. Building and Installation with Meson")). Be sure that the `libselinux-devel` RPM is installed at build time.
 
-To use this module, you must include `sepgsql` in the [shared\_preload\_libraries](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES) parameter in `postgresql.conf`. The module will not function correctly if loaded in any other manner. Once the module is loaded, you should execute `sepgsql.sql` in each database. This will install functions needed for security label management, and assign initial security labels.
+To use this module, you must include `sepgsql` in the [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES) parameter in `postgresql.conf`. The module will not function correctly if loaded in any other manner. Once the module is loaded, you should execute `sepgsql.sql` in each database. This will install functions needed for security label management, and assign initial security labels.
 
 Here is an example showing how to initialize a fresh database cluster with `sepgsql` functions and security labels installed. Adjust the paths shown as appropriate for your installation:
 

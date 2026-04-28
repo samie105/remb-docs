@@ -10,7 +10,10 @@ content_hash: "81997969c36db69a0a363eef524e29ebee38256a61a561d4b529f36e0bdb3bf5"
 menu_path: ["@std/net"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/msgpack/index.md", "title": "@std/msgpack"}
+nav_next: {"path": "deno/runtime/reference/std/path/index.md", "title": "@std/path"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

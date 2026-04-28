@@ -11,8 +11,9 @@ menu_path: ["Getting Started"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/index.md", "title": "Next.js Docs"}
+nav_next: {"path": "nextjs/docs/app/getting-started/installation/index.md", "title": "Installation"}
 ---
-[Next.js Docs](/docs)[App Router](/docs/app)Getting Started
 
 # Getting Started
 

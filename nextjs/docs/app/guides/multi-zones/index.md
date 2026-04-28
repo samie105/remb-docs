@@ -11,8 +11,9 @@ menu_path: ["How to build micro-frontends using multi-zones and Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/multi-tenant/index.md", "title": "How to build multi-tenant apps in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Multi-zones
 
 # How to build micro-frontends using multi-zones and Next.js
 

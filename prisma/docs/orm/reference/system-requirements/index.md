@@ -10,7 +10,10 @@ content_hash: "93fd7da363e638a2b76e74e27555b3398961f411a29b10cc8ce1584372ba7e6c"
 menu_path: ["System requirements"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/reference/supported-databases/index.md", "title": "Supported databases"}
+nav_next: {"path": "prisma/docs/orm/reference/error-reference/index.md", "title": "Error Reference"}
 ---
+
 System requirements for running Prisma ORM
 
 This section lists the software that Prisma ORM requires and the supported operating systems, along with runtime dependency requirements for specific operating systems.
@@ -29,7 +32,7 @@ The latest version of Prisma ORM requires the following software:
 -   **TypeScript** is only required for TypeScript users.
 -   When using **Yarn 1**, `1.19.2` is the minimum version compatible with Prisma Client.
 
-See also: [Supported database versions](https://www.prisma.io/docs/orm/reference/supported-databases)
+See also: [Supported database versions](prisma/docs/orm/reference/supported-databases/index.md)
 
 **Expand for earlier versions**
 

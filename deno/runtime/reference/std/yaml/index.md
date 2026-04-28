@@ -10,7 +10,10 @@ content_hash: "c5f7438984539923103369f34e203cc49a76dd891eab2df90ad6edceefd0318f"
 menu_path: ["@std/yaml"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/webgpu/index.md", "title": "@std/webgpu"}
+nav_next: {"path": "deno/runtime/reference/ts_config_migration/index.md", "title": "Configuring TypeScript"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

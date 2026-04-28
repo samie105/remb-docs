@@ -10,7 +10,10 @@ content_hash: "d420053553434155e2adf146ce46cc9e9635b2ca32ef63bfb47f6dfd1014bc94"
 menu_path: ["PostgreSQL: Documentation: 18: F.25. pg_buffercache — inspect PostgreSQL buffer cache state"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
+nav_next: {"path": "postgres/docs/current/pgcrypto.html/index.md", "title": "PostgreSQL: Documentation: 18: F.26.\u00a0pgcrypto \u2014 cryptographic functions"}
 ---
+
 The `pg_buffercache` module provides a means for examining what's happening in the shared buffer cache in real time. It also offers a low-level way to evict data from it, for testing purposes.
 
 This module provides the `pg_buffercache_pages()` function (wrapped in the `pg_buffercache` view), the `pg_buffercache_numa_pages()` function (wrapped in the `pg_buffercache_numa` view), the `pg_buffercache_summary()` function, the `pg_buffercache_usage_counts()` function, the `pg_buffercache_evict()` function, the `pg_buffercache_evict_relation()` function and the `pg_buffercache_evict_all()` function.

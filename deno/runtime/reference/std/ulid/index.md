@@ -10,7 +10,10 @@ content_hash: "396812cf762a7ccf55d3634e41f344e7d642631b06d25cba4d10a9e2f7a6c055"
 menu_path: ["@std/ulid"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/toml/index.md", "title": "@std/toml"}
+nav_next: {"path": "deno/runtime/reference/std/uuid/index.md", "title": "@std/uuid"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

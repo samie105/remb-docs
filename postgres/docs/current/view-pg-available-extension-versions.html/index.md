@@ -10,7 +10,10 @@ content_hash: "3edb202d8515c8899659480c6fd7dd94936ca0b0159a79cc8cfb3cf473a5e89b"
 menu_path: ["PostgreSQL: Documentation: 18: 53.4. pg_available_extension_versions"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-aios.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.2.\u00a0pg_aios"}
+nav_next: {"path": "postgres/docs/current/view-pg-available-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.3.\u00a0pg_available_extensions"}
 ---
+
 The `pg_available_extension_versions` view lists the specific extension versions that are available for installation. See also the [`pg_extension`](https://www.postgresql.org/docs/current/catalog-pg-extension.html "52.22. pg_extension") catalog, which shows the extensions currently installed.
 
 **Table 53.4. `pg_available_extension_versions` Columns**

@@ -10,14 +10,17 @@ content_hash: "72f7c4e212504a3248c9d331e2a18b666aeb283cae7393cac1c065be23c5d4e0"
 menu_path: ["Add custom methods to your models"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/extension-examples/index.md", "title": "Shared packages & examples"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/query/index.md", "title": "Create custom Prisma Client queries"}
 ---
+
 Client Extensions
 
 ## Add custom methods to your models
 
 Extend the functionality of Prisma Client, model component
 
-You can use the `model` [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) component type to add custom methods to your models.
+You can use the `model` [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) component type to add custom methods to your models.
 
 Possible uses for the `model` component include the following:
 
@@ -26,7 +29,7 @@ Possible uses for the `model` component include the following:
 -   Repetitive operations
 -   Model-specific utilities
 
-Use the `$extends` [client-level method](https://www.prisma.io/docs/orm/reference/prisma-client-reference#client-methods) to create an _extended client_. An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions. Use the `model` extension component to add methods to models in your schema.
+Use the `$extends` [client-level method](prisma/docs/orm/reference/prisma-client-reference/index.md#client-methods) to create an _extended client_. An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions. Use the `model` extension component to add methods to models in your schema.
 
 ### [Add a custom method to a specific model](#add-a-custom-method-to-a-specific-model)
 
@@ -144,4 +147,4 @@ await (context as any).findFirst({ args });
 
 Refer to [Add a custom method to all models in your schema](#example-1) for a concrete example for retrieving the current model name at runtime.
 
-You can improve the type-safety of `model` components in your shared extensions with [type utilities](https://www.prisma.io/docs/orm/prisma-client/client-extensions/type-utilities).
+You can improve the type-safety of `model` components in your shared extensions with [type utilities](prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md).

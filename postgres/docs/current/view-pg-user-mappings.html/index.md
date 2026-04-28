@@ -10,7 +10,10 @@ content_hash: "5729f0b7fd3c7770604d1acc3f0e759cd8d94965ac3c87d6813290619449d177"
 menu_path: ["PostgreSQL: Documentation: 18: 53.36. pg_user_mappings"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
+nav_next: {"path": "postgres/docs/current/view-pg-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.35.\u00a0pg_user"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-user-mappings.html "PostgreSQL devel - 53.36. pg_user_mappings")
 
 The view `pg_user_mappings` provides access to information about user mappings. This is essentially a publicly readable view of [`pg_user_mapping`](https://www.postgresql.org/docs/current/catalog-pg-user-mapping.html "52.65. pg_user_mapping") that leaves out the options field if the user has no rights to use it.

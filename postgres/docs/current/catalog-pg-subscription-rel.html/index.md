@@ -10,7 +10,10 @@ content_hash: "e9f46b8e95ed1b8ab3f652b9fac14a4fa5c645a0ad147a5efb86ed0059568d9e"
 menu_path: ["PostgreSQL: Documentation: 18: 52.55. pg_subscription_rel"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/catalog-pg-statistic.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.51.\u00a0pg_statistic"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.54.\u00a0pg_subscription"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-subscription-rel.html "PostgreSQL devel - 52.55. pg_subscription_rel")
 
 The catalog `pg_subscription_rel` contains the state for each replicated relation in each subscription. This is a many-to-many mapping.

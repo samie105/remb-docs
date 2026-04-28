@@ -11,8 +11,9 @@ menu_path: ["basePath"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/assetPrefix/index.md", "title": "assetPrefix"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/bundlePagesRouterDependencies/index.md", "title": "bundlePagesRouterDependencies"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)basePath
 
 # basePath
 

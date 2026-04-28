@@ -10,7 +10,10 @@ content_hash: "aefd157ac56ec77edb0dc2720100caf456ad3a6d0b0f0852b65024b8f07f7f8a"
 menu_path: ["inspector/promises - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/inspector/index.md", "title": "inspector - Node documentation"}
+nav_next: {"path": "deno/api/node/module/index.md", "title": "module - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

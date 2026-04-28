@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:20.163Z"
 content_hash: "8a3a76659a6655ea073cc7cb899ac34a9783099273406d680b7beac9a12fc7f2"
 menu_path: ["CSRF Protection"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/cron/index.md", "title": "Cron"}
+nav_next: {"path": "bun/docs/runtime/debugger/index.md", "title": "Debugging"}
 ---
+
 Bun provides a built-in API for generating and verifying [CSRF (Cross-Site Request Forgery)](https://owasp.org/www-community/attacks/csrf) tokens through `Bun.CSRF`. Tokens are signed with HMAC and include expiration timestamps to limit the token validity window.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)csrf.ts

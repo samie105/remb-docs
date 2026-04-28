@@ -10,7 +10,10 @@ content_hash: "c02789a57292f8dd6406aba89b4c2d2592f8f5e135c355239e8bb03121b73ca8"
 menu_path: ["PostgreSQL: Documentation: 18: 35.22. domain_udt_usage"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/infoschema-domain-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.21.\u00a0domain_constraints"}
+nav_next: {"path": "postgres/docs/current/infoschema-domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.23.\u00a0domains"}
 ---
+
 The view `domain_udt_usage` identifies all domains that are based on data types owned by a currently enabled role. Note that in PostgreSQL, built-in data types behave like user-defined types, so they are included here as well.
 
 **Table 35.20. `domain_udt_usage` Columns**

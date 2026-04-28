@@ -10,7 +10,10 @@ content_hash: "89944bfbebb5727ecad4fa6e6efa891ea38c398d5c40b47e1d53987dd19bf167"
 menu_path: ["domain - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/dns/promises/index.md", "title": "dns/promises - Node documentation"}
+nav_next: {"path": "deno/api/node/events/index.md", "title": "events - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

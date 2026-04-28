@@ -10,7 +10,10 @@ content_hash: "ea123c95586b1613fde2f009462cb76c46f1595700014761378ae41ff2da3983"
 menu_path: ["PostgreSQL: Documentation: 18: 35.24. element_types"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/infoschema-domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.23.\u00a0domains"}
+nav_next: {"path": "postgres/docs/current/infoschema-enabled-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.25.\u00a0enabled_roles"}
 ---
+
 | 
 Column Type
 

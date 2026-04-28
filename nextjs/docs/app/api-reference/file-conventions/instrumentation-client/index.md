@@ -11,8 +11,9 @@ menu_path: ["instrumentation-client.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/intercepting-routes/index.md", "title": "Intercepting Routes"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)instrumentation-client.js
 
 # instrumentation-client.js
 

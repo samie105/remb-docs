@@ -11,8 +11,9 @@ menu_path: ["useRouter"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/use-search-params/index.md", "title": "useSearchParams"}
 ---
-[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)useRouter
 
 # useRouter
 

@@ -11,8 +11,9 @@ menu_path: ["Project structure and organization"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/installation/index.md", "title": "Installation"}
+nav_next: {"path": "nextjs/docs/app/getting-started/layouts-and-pages/index.md", "title": "Layouts and Pages"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Project Structure
 
 # Project structure and organization
 

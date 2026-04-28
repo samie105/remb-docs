@@ -11,8 +11,9 @@ menu_path: ["Form Component"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/components/font/index.md", "title": "Font Module"}
+nav_next: {"path": "nextjs/docs/app/api-reference/components/image/index.md", "title": "Image Component"}
 ---
-[API Reference](/docs/app/api-reference)[Components](/docs/app/api-reference/components)Form Component
 
 # Form Component
 

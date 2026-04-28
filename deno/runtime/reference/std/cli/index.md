@@ -10,7 +10,10 @@ content_hash: "d8c833072ced9f2c1af021abf206295527857c81b816d15d3bbb85cd9ecb747f"
 menu_path: ["@std/cli"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/cbor/index.md", "title": "@std/cbor"}
+nav_next: {"path": "deno/runtime/reference/std/collections/index.md", "title": "@std/collections"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

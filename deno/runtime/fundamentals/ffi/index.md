@@ -10,7 +10,10 @@ content_hash: "4a0196e0dce253be1e5b58254b6c423fdffeb7f936ed0e4449e59dc103204f36"
 menu_path: ["Foreign Function Interface (FFI)"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/fundamentals/http_server/index.md", "title": "Writing an HTTP Server"}
+nav_next: {"path": "deno/runtime/fundamentals/open_telemetry/index.md", "title": "OpenTelemetry"}
 ---
+
 **On this page**
 
 -   [Introduction to FFI](#introduction-to-ffi)

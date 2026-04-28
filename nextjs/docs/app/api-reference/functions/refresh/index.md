@@ -11,8 +11,9 @@ menu_path: ["refresh"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/redirect/index.md", "title": "redirect"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/revalidatePath/index.md", "title": "revalidatePath"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)refresh
 
 # refresh
 

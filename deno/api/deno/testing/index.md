@@ -10,7 +10,10 @@ content_hash: "6defc0919963023a4c5ea3be3474cec50954129e3b52f3dd255c1b472c559e15"
 menu_path: ["Testing - Deno documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/telemetry/index.md", "title": "Telemetry - Deno documentation"}
+nav_next: {"path": "deno/api/deno/websockets/index.md", "title": "WebSockets - Deno documentation"}
 ---
+
 f
 
 [Deno.bench](./././~/Deno.bench "Deno.bench")

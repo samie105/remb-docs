@@ -10,7 +10,10 @@ content_hash: "f40d9b84f14e3f6d0ac9c7658a95d67b62b26ff7005dac673cf45d6cec696080"
 menu_path: ["Get Started with Drizzle and Gel in existing project"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/get-started/expo-new/index.md", "title": "Get Started with Drizzle and Expo"}
+nav_next: {"path": "drizzle/docs/get-started/gel-new/index.md", "title": "Get Started with Drizzle and Gel"}
 ---
+
 ## Get Started with Drizzle and Gel in existing project
 
 This guide assumes familiarity with:
@@ -61,7 +64,7 @@ bun add -D drizzle-kit tsx
 
 #### Step 2 - Setup Drizzle config file[](#step-2---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 

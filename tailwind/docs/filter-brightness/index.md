@@ -10,15 +10,9 @@ content_hash: "90a3a27b36bcc89ad82eb45eb381b1120e2125af632fb92e88fbc3b97a732fbf"
 menu_path: ["filter: brightness()"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/filter-blur/index.md", "title": "filter: blur()"}
+nav_next: {"path": "tailwind/docs/filter-contrast/index.md", "title": "filter: contrast()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  brightness
-
-Filters
 
 # filter: brightness()
 

@@ -11,8 +11,9 @@ menu_path: ["How to add analytics to your Next.js application"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/ai-agents/index.md", "title": "How to set up your Next.js project for AI coding agents"}
+nav_next: {"path": "nextjs/docs/app/guides/authentication/index.md", "title": "How to implement authentication in Next.js"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Analytics
 
 # How to add analytics to your Next.js application
 

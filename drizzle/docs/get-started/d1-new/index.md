@@ -10,7 +10,10 @@ content_hash: "10d029516b24d96a590aaae843f7b9aa47b9912f06830c250c020e2c9ecea091"
 menu_path: ["Get Started with Drizzle and D1"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/get-started/d1-existing/index.md", "title": "Get Started with Drizzle and D1 in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/do-existing/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects in existing project"}
 ---
+
 ## Get Started with Drizzle and D1
 
 This guide assumes familiarity with:
@@ -128,7 +131,7 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 6 - Setup Drizzle config file[](#step-6---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -151,7 +154,7 @@ export default defineConfig({
 
 tips
 
-You can check [our tutorial](https://orm.drizzle.team/docs/guides/d1-http-with-drizzle-kit) on how to get env variables from CloudFlare
+You can check [our tutorial](drizzle/docs/guides/d1-http-with-drizzle-kit/index.md) on how to get env variables from CloudFlare
 
 #### Step 7 - Applying changes to the database[](#step-7---applying-changes-to-the-database)
 
@@ -161,7 +164,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
+Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
 
 Tips
 
@@ -179,7 +182,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
+Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
 
 #### Step 8 - Seed and Query the database[](#step-8---seed-and-query-the-database)
 

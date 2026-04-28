@@ -10,7 +10,10 @@ content_hash: "d0bfb203bb6befafad9de0efa6587505e2359cfbffe4baf49816d9a2c13cab3d"
 menu_path: ["appearance"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/accent-color/index.md", "title": "accent-color"}
+nav_next: {"path": "tailwind/docs/caret-color/index.md", "title": "caret-color"}
 ---
+
 Utilities for suppressing native form control styling.
 
 | Class | Styles |
@@ -65,4 +68,4 @@ Prefix an `appearance` utility with a breakpoint variant like `md:` to only appl
 <select class="appearance-auto md:appearance-none ...">  <!-- ... --></select>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

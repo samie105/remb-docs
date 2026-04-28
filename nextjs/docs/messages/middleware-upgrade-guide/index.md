@@ -11,8 +11,9 @@ menu_path: ["Middleware Upgrade Guide"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/inline-script-id/index.md", "title": "Inline script id"}
+nav_next: {"path": "nextjs/docs/messages/missing-suspense-with-csr-bailout/index.md", "title": "Missing Suspense boundary with useSearchParams"}
 ---
-[Docs](/docs)[Errors](/docs)Middleware Upgrade Guide
 
 # Middleware Upgrade Guide
 

@@ -10,7 +10,10 @@ content_hash: "16dc32114c8d2185732e179d1cf68f948618f5d6b4e9655a48bebf07bdccc7d8"
 menu_path: ["deno info"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/fmt/index.md", "title": "deno fmt"}
+nav_next: {"path": "deno/runtime/reference/cli/init/index.md", "title": "deno init"}
 ---
+
 **On this page**
 
 -   [Example](#example)

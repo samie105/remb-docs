@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:04.778Z"
 content_hash: "643fb572bfc65968ab1ae76af70505b091b5d2da9ffbbfc737206a62221ee003"
 menu_path: ["Get the absolute path of the current file"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/util/import-meta-file/index.md", "title": "Get the file name of the current file"}
+nav_next: {"path": "bun/docs/guides/util/javascript-uuid/index.md", "title": "Generate a UUID"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

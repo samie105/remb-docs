@@ -11,8 +11,9 @@ menu_path: ["Automatic Static Optimization"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/rendering/static-site-generation/index.md", "title": "Static Site Generation (SSG)"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/client-side-rendering/index.md", "title": "Client-side Rendering (CSR)"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Rendering](/docs/pages/building-your-application/rendering)Automatic Static Optimization
 
 # Automatic Static Optimization
 

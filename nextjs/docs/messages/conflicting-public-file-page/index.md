@@ -11,8 +11,9 @@ menu_path: ["Conflicting Public File and Page File"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/blocking-route/index.md", "title": "Uncached data was accessed outside of `<Suspense>`"}
+nav_next: {"path": "nextjs/docs/messages/empty-generate-static-params/index.md", "title": "Empty generateStaticParams with Cache Components"}
 ---
-[Docs](/docs)[Errors](/docs)Conflicting Public File and Page File
 
 # Conflicting Public File and Page File
 

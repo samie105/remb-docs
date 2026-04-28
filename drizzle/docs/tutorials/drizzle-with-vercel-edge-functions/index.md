@@ -10,7 +10,10 @@ content_hash: "a174b9844fdd4c3f2f88aba042f09d47dfdd4fe79431defc9fe90eb31a5762b4"
 menu_path: ["Drizzle with Vercel Edge Functions"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-xata/index.md", "title": "Drizzle with Xata"}
 ---
+
 This tutorial demonstrates how to use Drizzle ORM with [Vercel Functions](https://vercel.com/docs/functions) in [Edge runtime](https://vercel.com/docs/functions/runtimes/edge-runtime).
 
 This guide assumes familiarity with:
@@ -39,7 +42,7 @@ bun add -g vercel
 npx create-next-app@latest --typescript
 ```
 
--   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
+-   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -73,15 +76,15 @@ When using Drizzle ORM with Vercel Edge functions you have to use edge-compatibl
 
 You can choose one of these drivers according to your database dialect:
 
--   [Neon serverless driver](https://orm.drizzle.team/docs/get-started-postgresql#neon) allows you to query your Neon Postgres databases from serverless and edge environments over HTTP or WebSockets in place of TCP. We recommend using this driver for connecting to `Neon Postgres`.
--   [Vercel Postgres driver](https://orm.drizzle.team/docs/get-started-postgresql#vercel-postgres) is built on top of the `Neon serverless driver`. We recommend using this driver for connecting to `Vercel Postgres`.
--   [PlanetScale serverless driver](https://orm.drizzle.team/docs/get-started-mysql#planetscale) allows you access any `MySQL` client and execute queries over an HTTP connection, which is generally not blocked by cloud providers.
--   [libSQL client](https://orm.drizzle.team/docs/get-started-sqlite#turso) allows you to access [Turso](https://docs.turso.tech/introduction) database.
+-   [Neon serverless driver](drizzle/docs/get-started-postgresql/index.md#neon) allows you to query your Neon Postgres databases from serverless and edge environments over HTTP or WebSockets in place of TCP. We recommend using this driver for connecting to `Neon Postgres`.
+-   [Vercel Postgres driver](drizzle/docs/get-started-postgresql/index.md#vercel-postgres) is built on top of the `Neon serverless driver`. We recommend using this driver for connecting to `Vercel Postgres`.
+-   [PlanetScale serverless driver](drizzle/docs/get-started-mysql/index.md#planetscale) allows you access any `MySQL` client and execute queries over an HTTP connection, which is generally not blocked by cloud providers.
+-   [libSQL client](drizzle/docs/get-started-sqlite/index.md#turso) allows you to access [Turso](https://docs.turso.tech/introduction) database.
 
--   Navigate directly to the [Neon Postgres](https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions#neon-postgres) section.
--   Navigate directly to the [Vercel Postgres](https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions#vercel-postgres) section.
--   Navigate directly to the [PlanetScale](https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions#planetscale) section.
--   Navigate directly to the [Turso](https://orm.drizzle.team/docs/tutorials/drizzle-with-vercel-edge-functions#turso) section.
+-   Navigate directly to the [Neon Postgres](drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md#neon-postgres) section.
+-   Navigate directly to the [Vercel Postgres](drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md#vercel-postgres) section.
+-   Navigate directly to the [PlanetScale](drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md#planetscale) section.
+-   Navigate directly to the [Turso](drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md#turso) section.
 
 ### Neon Postgres[](#neon-postgres)
 
@@ -122,7 +125,7 @@ export const usersTable = pgTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -174,7 +177,7 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
 
 ```bash
 npx drizzle-kit push
@@ -254,7 +257,7 @@ Finally, you can use URL of the deployed project and navigate to the route you c
 
 ### Vercel Postgres[](#vercel-postgres)
 
-You can check quickstart guide for Drizzle with Vercel Postgres client in the [documentation](https://orm.drizzle.team/docs/get-started-postgresql#vercel-postgres).
+You can check quickstart guide for Drizzle with Vercel Postgres client in the [documentation](drizzle/docs/get-started-postgresql/index.md#vercel-postgres).
 
 #### Install the `@vercel/postgres` driver[](#install-the-vercelpostgres-driver)
 
@@ -293,7 +296,7 @@ export const usersTable = pgTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file-1)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -345,7 +348,7 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
 
 ```bash
 npx drizzle-kit push
@@ -465,7 +468,7 @@ export const usersTable = mysqlTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file-2)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -518,7 +521,7 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
 
 ```bash
 npx drizzle-kit push
@@ -598,7 +601,7 @@ Finally, you can use URL of the deployed project and navigate to the route you c
 
 ### Turso[](#turso)
 
-You can check [quickstart guide](https://orm.drizzle.team/docs/get-started-sqlite#turso) or [tutorial](https://orm.drizzle.team/docs/tutorials/drizzle-with-turso) for Drizzle with Turso in the documentation.
+You can check [quickstart guide](drizzle/docs/get-started-sqlite/index.md#turso) or [tutorial](drizzle/docs/tutorials/drizzle-with-turso/index.md) for Drizzle with Turso in the documentation.
 
 #### Install the `@libsql/client` driver[](#install-the-libsqlclient-driver)
 
@@ -637,7 +640,7 @@ export const usersTable = sqliteTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file-3)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -692,7 +695,7 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
 
 ```bash
 npx drizzle-kit push

@@ -10,7 +10,10 @@ content_hash: "befcc7ca48517a60c52da292d973596049edec37973a6143dbfe8cd26dab2d5f"
 menu_path: ["effect-schema"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/typebox-legacy/index.md", "title": "typebox-legacy"}
+nav_next: {"path": "drizzle/docs/prisma/index.md", "title": "Drizzle extension for Prisma"}
 ---
+
 ```ts
 import { pgEnum, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 import { createInsertSchema, createSelectSchema, createUpdateSchema } from 'drizzle-orm/effect-schema';

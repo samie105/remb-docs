@@ -10,15 +10,9 @@ content_hash: "5c4ff7856e6ae193c630802a6c20fd5973d0b0eac63f01e1b42646a3958d3477"
 menu_path: ["skew"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/scale/index.md", "title": "scale"}
+nav_next: {"path": "tailwind/docs/transform/index.md", "title": "transform"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Transforms
-2.  skew
-
-Transforms
 
 # skew
 

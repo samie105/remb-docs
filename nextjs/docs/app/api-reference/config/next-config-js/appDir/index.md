@@ -11,8 +11,9 @@ menu_path: ["appDir"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/assetPrefix/index.md", "title": "assetPrefix"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)appDir
 
 # appDir
 

@@ -11,8 +11,9 @@ menu_path: ["Implementing Partial Prerendering on your platform"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/package-bundling/index.md", "title": "Optimizing package bundling"}
+nav_next: {"path": "nextjs/docs/app/guides/prefetching/index.md", "title": "Prefetching"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)PPR Platform Guide
 
 # Implementing Partial Prerendering on your platform
 

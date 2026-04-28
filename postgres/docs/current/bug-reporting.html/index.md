@@ -10,7 +10,10 @@ content_hash: "3e6373f35a98d9586b68baca876a0aa0fa50b037043f8191eeb76bd2b068cce2"
 menu_path: ["PostgreSQL: Documentation: 18: 5. Bug Reporting Guidelines"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/resources.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.\u00a0Further Information"}
+nav_next: {"path": "postgres/docs/current/tutorial-advanced.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a03.\u00a0Advanced Features"}
 ---
+
 When you find a bug in PostgreSQL we want to hear about it. Your bug reports play an important part in making PostgreSQL more reliable because even the utmost care cannot guarantee that every part of PostgreSQL will work on every platform under every circumstance.
 
 The following suggestions are intended to assist you in forming bug reports that can be handled in an effective fashion. No one is required to follow them but doing so tends to be to everyone's advantage.

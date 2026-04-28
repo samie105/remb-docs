@@ -10,7 +10,10 @@ content_hash: "b597a25a7d2db0ab866fa01c01010bcdeb7f1dbccd410b63689dc7e3e571c073"
 menu_path: ["PostgreSQL: Documentation: 18: 27.5. Dynamic Tracing"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.18.\u00a0Domain Types"}
+nav_next: {"path": "postgres/docs/current/earthdistance.html/index.md", "title": "PostgreSQL: Documentation: 18: F.14.\u00a0earthdistance \u2014 calculate great-circle distances"}
 ---
+
 | Name | Parameters | Description |
 | --- | --- | --- |
 | `transaction-start` | `(LocalTransactionId)` | Probe that fires at the start of a new transaction. arg0 is the transaction ID. |
@@ -49,7 +52,7 @@ content_language: "en"
 | `buffer-read-done` | `(ForkNumber, BlockNumber, Oid, Oid, Oid, int, bool)` | Probe that fires when a buffer read is complete. arg0 and arg1 contain the fork and block numbers of the page. arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation. arg5 is the ID of the backend which created the temporary relation for a local buffer, or `INVALID_PROC_NUMBER` (-1) for a shared buffer. arg6 is true if the buffer was found in the pool, false if not. |
 | `buffer-flush-start` | `(ForkNumber, BlockNumber, Oid, Oid, Oid)` | Probe that fires before issuing any write request for a shared buffer. arg0 and arg1 contain the fork and block numbers of the page. arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation. |
 | `buffer-flush-done` | `(ForkNumber, BlockNumber, Oid, Oid, Oid)` | Probe that fires when a write request is complete. (Note that this just reflects the time to pass the data to the kernel; it's typically not actually been written to disk yet.) The arguments are the same as for `buffer-flush-start`. |
-| `wal-buffer-write-dirty-start` | `()` | Probe that fires when a server process begins to write a dirty WAL buffer because no more WAL buffer space is available. (If this happens often, it implies that [wal\_buffers](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-WAL-BUFFERS) is too small.) |
+| `wal-buffer-write-dirty-start` | `()` | Probe that fires when a server process begins to write a dirty WAL buffer because no more WAL buffer space is available. (If this happens often, it implies that [wal\_buffers](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-BUFFERS) is too small.) |
 | `wal-buffer-write-dirty-done` | `()` | Probe that fires when a dirty WAL buffer write is complete. |
 | `wal-insert` | `(unsigned char, unsigned char)` | Probe that fires when a WAL record is inserted. arg0 is the resource manager (rmid) for the record. arg1 contains the info flags. |
 | `wal-switch` | `()` | Probe that fires when a WAL segment switch is requested. |

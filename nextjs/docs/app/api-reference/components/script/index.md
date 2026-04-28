@@ -11,8 +11,9 @@ menu_path: ["Script Component"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/components/link/index.md", "title": "Link Component"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/index.md", "title": "File-system conventions"}
 ---
-[API Reference](/docs/app/api-reference)[Components](/docs/app/api-reference/components)Script Component
 
 # Script Component
 

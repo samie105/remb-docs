@@ -11,8 +11,9 @@ menu_path: ["Inline script id"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/google-font-preconnect/index.md", "title": "Google Font Preconnect"}
+nav_next: {"path": "nextjs/docs/messages/middleware-upgrade-guide/index.md", "title": "Middleware Upgrade Guide"}
 ---
-[Docs](/docs)[Errors](/docs)Inline script id
 
 # Inline script id
 

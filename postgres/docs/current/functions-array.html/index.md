@@ -10,7 +10,10 @@ content_hash: "08dedb3ac63bf6f005e5fceca280820c61335664603a74af8b0a1281941fcefd"
 menu_path: ["PostgreSQL: Documentation: 18: 9.19. Array Functions and Operators"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/functions-admin.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.28.\u00a0System Administration Functions"}
+nav_next: {"path": "postgres/docs/current/functions-bitstring.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.6.\u00a0Bit String Functions and Operators"}
 ---
+
 | 
 Function
 
@@ -178,7 +181,7 @@ If _`descending`_ is true then sort in descending order, otherwise ascending ord
 
 `array_to_string` ( _`array`_ `anyarray`, _`delimiter`_ `text` \[, _`null_string`_ `text` \] ) → `text`
 
-Converts each array element to its text representation, and concatenates those separated by the _`delimiter`_ string. If _`null_string`_ is given and is not `NULL`, then `NULL` array entries are represented by that string; otherwise, they are omitted. See also [`string_to_array`](https://www.postgresql.org/docs/current/functions-string.html#FUNCTION-STRING-TO-ARRAY).
+Converts each array element to its text representation, and concatenates those separated by the _`delimiter`_ string. If _`null_string`_ is given and is not `NULL`, then `NULL` array entries are represented by that string; otherwise, they are omitted. See also [`string_to_array`](postgres/docs/current/functions-string.html/index.md#FUNCTION-STRING-TO-ARRAY).
 
 `array_to_string(ARRAY[1, 2, 3, NULL, 5], ',', '*')` → `1,2,3,*,5`
 

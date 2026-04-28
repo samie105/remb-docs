@@ -9,107 +9,10 @@ last_crawled_at: "2026-04-18T16:57:27.135Z"
 content_hash: "dc68141421e14db55c3cd93918f3eeabda57b75ae578f75e414d6ddf61cf0387"
 menu_path: ["bun install"]
 section_path: []
+nav_prev: {"path": "bun/docs/pm/cli/info/index.md", "title": "bun info"}
+nav_next: {"path": "bun/docs/pm/cli/link/index.md", "title": "bun link"}
 ---
-## Basic Usage
 
-terminal
-
-```
-bun install react
-bun install react@19.1.1 # specific version
-bun install react@latest # specific tag
-```
-
-The `bun` CLI contains a Node.js-compatible package manager designed to be a dramatically faster replacement for `npm`, `yarn`, and `pnpm`. It’s a standalone tool that will work in pre-existing Node.js projects; if your project has a `package.json`, `bun install` can help you speed up your workflow.
-
-To install all dependencies of a project:
-
-terminal
-
-```
-bun install
-```
-
-Running `bun install` will:
-
-*   **Install** all `dependencies`, `devDependencies`, and `optionalDependencies`. Bun will install `peerDependencies` by default.
-*   **Run** your project’s `{pre|post}install` and `{pre|post}prepare` scripts at the appropriate time. For security reasons Bun _does not execute_ lifecycle scripts of installed dependencies.
-*   **Write** a `bun.lock` lockfile to the project root.
-
-* * *
-
-## Logging
-
-To modify logging verbosity:
-
-terminal
-
-```
-bun install --verbose # debug logging
-bun install --silent  # no logging
-```
-
-* * *
-
-## Lifecycle scripts
-
-Unlike other npm clients, Bun does not execute arbitrary lifecycle scripts like `postinstall` for installed dependencies. Executing arbitrary scripts represents a potential security risk. To tell Bun to allow lifecycle scripts for a particular package, add the package to `trustedDependencies` in your package.json.
-
-package.json
-
-```
-{
-  "name": "my-app",
-  "version": "1.0.0",
-  "trustedDependencies": ["my-trusted-package"] 
-}
-```
-
-Then re-install the package. Bun will read this field and run lifecycle scripts for `my-trusted-package`. Lifecycle scripts will run in parallel during installation. To adjust the maximum number of concurrent scripts, use the `--concurrent-scripts` flag. The default is two times the reported cpu count or GOMAXPROCS.
-
-terminal
-
-```
-bun install --concurrent-scripts 5
-```
-
-Bun automatically optimizes postinstall scripts for popular packages (like `esbuild`, `sharp`, etc.) by determining which scripts need to run. To disable these optimizations:
-
-terminal
-
-```
-BUN_FEATURE_FLAG_DISABLE_NATIVE_DEPENDENCY_LINKER=1 bun install
-BUN_FEATURE_FLAG_DISABLE_IGNORE_SCRIPTS=1 bun install
-```
-
-* * *
-
-## Workspaces
-
-Bun supports `"workspaces"` in package.json. For complete documentation refer to [Package manager > Workspaces](https://bun.com/docs/pm/workspaces).
-
-package.json
-
-```
-{
-  "name": "my-app",
-  "version": "1.0.0",
-  "workspaces": ["packages/*"], 
-  "dependencies": {
-    "preact": "^10.5.13"
-  }
-}
-```
-
-* * *
-
-## Installing dependencies for specific packages
-
-In a monorepo, you can install the dependencies for a subset of packages using the `--filter` flag.
-
-terminal
-
-```
 # Install dependencies for all workspaces except `pkg-c`
 bun install --filter '!pkg-c'
 
@@ -117,13 +20,13 @@ bun install --filter '!pkg-c'
 bun install --filter './packages/pkg-a'
 ```
 
-For more information on filtering with `bun install`, refer to [Package Manager > Filtering](https://bun.com/docs/pm/filter#bun-install-and-bun-outdated)
+For more information on filtering with `bun install`, refer to [Package Manager > Filtering](bun/docs/pm/filter/index.md#bun-install-and-bun-outdated)
 
 * * *
 
 ## Overrides and resolutions
 
-Bun supports npm’s `"overrides"` and Yarn’s `"resolutions"` in `package.json`. These are mechanisms for specifying a version range for _metadependencies_—the dependencies of your dependencies. Refer to [Package manager > Overrides and resolutions](https://bun.com/docs/pm/overrides) for complete documentation.
+Bun supports npm’s `"overrides"` and Yarn’s `"resolutions"` in `package.json`. These are mechanisms for specifying a version range for _metadependencies_—the dependencies of your dependencies. Refer to [Package manager > Overrides and resolutions](bun/docs/pm/overrides/index.md) for complete documentation.
 
 package.json
 
@@ -183,7 +86,7 @@ terminal
 bun install --frozen-lockfile
 ```
 
-For more information on Bun’s lockfile `bun.lock`, refer to [Package manager > Lockfile](https://bun.com/docs/pm/lockfile).
+For more information on Bun’s lockfile `bun.lock`, refer to [Package manager > Lockfile](bun/docs/pm/lockfile/index.md).
 
 * * *
 
@@ -219,7 +122,7 @@ bun install --dry-run
 
 ## Non-npm dependencies
 
-Bun supports installing dependencies from Git, GitHub, and local or remotely-hosted tarballs. For complete documentation refer to [Package manager > Git, GitHub, and tarball dependencies](https://bun.com/docs/pm/cli/add).
+Bun supports installing dependencies from Git, GitHub, and local or remotely-hosted tarballs. For complete documentation refer to [Package manager > Git, GitHub, and tarball dependencies](bun/docs/pm/cli/add/index.md).
 
 package.json
 
@@ -272,7 +175,7 @@ The default linker strategy depends on whether you’re starting fresh or have a
 *   **New single-package projects**: `hoisted` (traditional npm behavior)
 *   **Existing projects (made pre-v1.3.2)**: `hoisted` (preserves backward compatibility)
 
-The default is controlled by a `configVersion` field in your lockfile. For a detailed explanation, see [Package manager > Isolated installs](https://bun.com/docs/pm/isolated-installs).
+The default is controlled by a `configVersion` field in your lockfile. For a detailed explanation, see [Package manager > Isolated installs](bun/docs/pm/isolated-installs/index.md).
 
 * * *
 
@@ -310,7 +213,7 @@ When the minimum age filter is active:
     *   Exact version requests (like `package@1.1.1`) still respect the age gate but bypass the stability check
 *   Versions without a `time` field are treated as passing the age check (npm registry should always provide timestamps)
 
-For more advanced security scanning, including integration with services & custom filtering, see [Package manager > Security Scanner API](https://bun.com/docs/pm/security-scanner-api).
+For more advanced security scanning, including integration with services & custom filtering, see [Package manager > Security Scanner API](bun/docs/pm/security-scanner-api/index.md).
 
 * * *
 

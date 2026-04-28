@@ -11,8 +11,9 @@ menu_path: ["How to optimize your Next.js application for production"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/preserving-ui-state/index.md", "title": "Preserving UI state across navigations"}
+nav_next: {"path": "nextjs/docs/app/guides/progressive-web-apps/index.md", "title": "How to build a Progressive Web Application (PWA) with Next.js"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Production
 
 # How to optimize your Next.js application for production
 

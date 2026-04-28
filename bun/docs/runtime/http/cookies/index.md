@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:59.128Z"
 content_hash: "7c2c5efba198a3ef0c3d5d2d13a48da1a0d326bf70fed33ad9bf1aaaf5fdf627"
 menu_path: ["Cookies"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/html-rewriter/index.md", "title": "HTMLRewriter"}
+nav_next: {"path": "bun/docs/runtime/http/error-handling/index.md", "title": "Error Handling"}
 ---
+
 Bun provides a built-in API for working with cookies in HTTP requests and responses. The `BunRequest` object includes a `cookies` property that provides a `CookieMap` for accessing and manipulating cookies. When using `routes`, `Bun.serve()` automatically tracks `request.cookies.set` and applies them to the response.
 
 ## Reading cookies

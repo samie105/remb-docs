@@ -11,7 +11,10 @@ menu_path: ["Hover, focus, and other states"]
 section_path: []
 tab_variants: ["HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS"]
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
+nav_next: {"path": "tailwind/docs/responsive-design/index.md", "title": "Responsive design"}
 ---
+
 Using utilities to style elements on hover, focus, and more.
 
 Every utility class in Tailwind can be applied _conditionally_ by adding a variant to the beginning of the class name that describes the condition you want to target.
@@ -208,7 +211,7 @@ Groups can be named however you like and don’t need to be configured in any wa
 
 #### [Arbitrary groups](#arbitrary-groups)
 
-You can create one-off `group-*` variants on the fly by providing your own selector as an [arbitrary value](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) between square brackets:
+You can create one-off `group-*` variants on the fly by providing your own selector as an [arbitrary value](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) between square brackets:
 
 #### HTML
 
@@ -280,7 +283,7 @@ Peers can be named however you like and don’t need to be configured in any way
 
 #### [Arbitrary peers](#arbitrary-peers)
 
-You can create one-off `peer-*` variants on the fly by providing your own selector as an [arbitrary value](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) between square brackets:
+You can create one-off `peer-*` variants on the fly by providing your own selector as an [arbitrary value](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) between square brackets:
 
 #### HTML
 
@@ -408,7 +411,7 @@ Style the backdrop of a [native `<dialog>` element](https://developer.mozilla.or
 <dialog class="backdrop:bg-gray-50">  <form method="dialog">    <!-- ... -->  </form></dialog>
 ```
 
-If you're using native `<dialog>` elements in your project, you may also want to read about [styling open/closed states](https://tailwindcss.com/docs/hover-focus-and-other-states#openclosed-state) using the `open` variant.
+If you're using native `<dialog>` elements in your project, you may also want to read about [styling open/closed states](tailwind/docs/hover-focus-and-other-states/index.md#openclosed-state) using the `open` variant.
 
 ### [Responsive breakpoints](#responsive-breakpoints)
 
@@ -426,7 +429,7 @@ To style an element based on the width of a parent element instead of the viewpo
 <div class="@container">  <div class="flex flex-col @md:flex-row">    <!-- ... -->  </div></div>
 ```
 
-Check out the [Responsive design](https://tailwindcss.com/docs/responsive-design) documentation for an in-depth look at how these features work.
+Check out the [Responsive design](tailwind/docs/responsive-design/index.md) documentation for an in-depth look at how these features work.
 
 ### [prefers-color-scheme](#prefers-color-scheme)
 
@@ -450,7 +453,7 @@ The Zero Gravity Pen can be used to write in any orientation, including upside-d
 <div class="bg-white dark:bg-gray-900 ...">  <!-- ... -->  <h3 class="text-gray-900 dark:text-white ...">Writes upside-down</h3>  <p class="text-gray-500 dark:text-gray-400 ...">    The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.  </p></div>
 ```
 
-Check out the [Dark Mode](https://tailwindcss.com/docs/dark-mode) documentation for an in-depth look at how this feature works.
+Check out the [Dark Mode](tailwind/docs/dark-mode/index.md) documentation for an in-depth look at how this feature works.
 
 ### [prefers-reduced-motion](#prefers-reduced-motion)
 
@@ -502,7 +505,7 @@ Use the `not-forced-colors` variant to apply styles based when the user is _not_
 <div class="not-forced-colors:appearance-none ...">  <!-- ... --></div>
 ```
 
-Tailwind also includes a [forced color adjust](https://tailwindcss.com/docs/forced-color-adjust) utilities to opt in and out of forced colors.
+Tailwind also includes a [forced color adjust](tailwind/docs/forced-color-adjust/index.md) utilities to opt in and out of forced colors.
 
 ### [inverted-colors](#inverted-colors)
 
@@ -792,7 +795,7 @@ Like `*`, the `**` variant can be used to style children of an element. The main
 
 ### [Using arbitrary variants](#using-arbitrary-variants)
 
-Just like [arbitrary values](https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values) let you use custom values with your utility classes, arbitrary variants let you write custom selector variants directly in your HTML.
+Just like [arbitrary values](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) let you use custom values with your utility classes, arbitrary variants let you write custom selector variants directly in your HTML.
 
 Arbitrary variants are just format strings that represent the selector, wrapped in square brackets. For example, this arbitrary variant changes the cursor to `grabbing` when the element has the `is-dragging` class:
 
@@ -866,7 +869,7 @@ Now you can use the `theme-midnight:<utility>` variant in your HTML:
 <html data-theme="midnight">  <button class="theme-midnight:bg-black ..."></button></html>
 ```
 
-Learn more about adding custom variants in the [adding custom variants documentation](https://tailwindcss.com/docs/adding-custom-styles#adding-custom-variants).
+Learn more about adding custom variants in the [adding custom variants documentation](tailwind/docs/adding-custom-styles/index.md#adding-custom-variants).
 
 ## [Appendix](#appendix)
 
@@ -876,7 +879,7 @@ A quick reference table of every single variant included in Tailwind by default.
 
 ### [Pseudo-class reference](#pseudo-class-reference)
 
-This is a comprehensive list of examples for all the pseudo-class variants included in Tailwind to complement the [pseudo-classes documentation](https://tailwindcss.com/docs/hover-focus-and-other-states#pseudo-classes) at the beginning of this guide.
+This is a comprehensive list of examples for all the pseudo-class variants included in Tailwind to complement the [pseudo-classes documentation](tailwind/docs/hover-focus-and-other-states/index.md#pseudo-classes) at the beginning of this guide.
 
 #### [:hover](#hover)
 

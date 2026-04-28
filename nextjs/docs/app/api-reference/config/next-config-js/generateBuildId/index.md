@@ -11,8 +11,9 @@ menu_path: ["generateBuildId"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/exportPathMap/index.md", "title": "exportPathMap"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateEtags/index.md", "title": "generateEtags"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)generateBuildId
 
 # generateBuildId
 

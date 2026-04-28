@@ -10,7 +10,10 @@ content_hash: "796f26c861aaf321e558b5180d5f19953c2c2e22e540e6360fd9bf722f8229ec"
 menu_path: ["@std/dotenv"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/datetime/index.md", "title": "@std/datetime"}
+nav_next: {"path": "deno/runtime/reference/std/encoding/index.md", "title": "@std/encoding"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

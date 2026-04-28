@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:47.106Z"
 content_hash: "095704024b0743d7bbdff1a7c973e6cae9798a7c4daaff4b8d12a55c676350ef"
 menu_path: ["Write a file to stdout"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/write-file/blob/index.md", "title": "Write a Blob to a file"}
+nav_next: {"path": "bun/docs/guides/write-file/file-cp/index.md", "title": "Copy a file to another location"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

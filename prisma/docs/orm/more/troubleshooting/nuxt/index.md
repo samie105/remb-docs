@@ -10,7 +10,10 @@ content_hash: "a99333805ea6eb732acfd36396b48c9fa86f5196b440383bb39507e5d9b77f98"
 menu_path: ["Nuxt"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/nextjs/index.md", "title": "Next.js"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/raw-sql-comparisons/index.md", "title": "Raw SQL comparisons"}
 ---
+
 The Next Evolution of Prisma ORMNew
 
 Prisma Next: a full TypeScript rewrite with a new query API, SQL builder, and extensible architecture.

@@ -10,92 +10,10 @@ content_hash: "6496b415b1db7ed10897d3dc77d4868c97047f02c1c29b75c252bbbc9eff03ad"
 menu_path: ["Security and permissions"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/fundamentals/node/index.md", "title": "Node and npm Compatibility"}
+nav_next: {"path": "deno/runtime/fundamentals/modules/index.md", "title": "Modules and dependencies"}
 ---
-**On this page**
 
--   [Key Principles](#key-principles)
--   [Permissions](#permissions)
-    -   [Configuration file](#configuration-file)
-    -   [File system access](#file-system-access)
-        -   [Symbolic links](#symbolic-links)
-    -   [Network access](#network-access)
-    -   [Environment variables](#environment-variables)
-    -   [System Information](#system-information)
-    -   [Subprocesses](#subprocesses)
-    -   [FFI (Foreign Function Interface)](#ffi-\(foreign-function-interface\))
-    -   [Importing from the Web](#importing-from-the-web)
--   [Evaluation of code](#evaluation-of-code)
--   [Executing untrusted code](#executing-untrusted-code)
--   [Permission broker](#permission-broker)
-
-Deno is secure by default. Unless you specifically enable it, a program run with Deno has no access to sensitive APIs, such as file system access, network connectivity, or environment access. You must explicitly grant access to these resources with command line flags or with a runtime permission prompt. This is a major difference from Node, where dependencies are automatically granted full access to all system I/O, potentially introducing hidden vulnerabilities into your project.
-
-Before using Deno to run completely untrusted code, read the [section on executing untrusted code](#executing-untrusted-code) below.
-
-## Key Principles
-
-Before diving into the specifics of permissions, it's important to understand the key principles of Deno's security model:
-
--   **No access to I/O by default**: Code executing in a Deno runtime has no access to read or write arbitrary files on the file system, to make network requests or open network listeners, to access environment variables, or to spawn subprocesses.
--   **No limits on the execution of code at the same privilege level**: Deno allows the execution of any code (JS/TS/Wasm) via multiple means, including `eval`, `new Function`, dynamic imports and web workers at the same privilege level with little restriction as to where the code originates (network, npm, JSR, etc).
--   **Multiple invocations of the same application can share data**: Deno provides a mechanism for multiple invocations of the same application to share data, through built in caching and KV storage APIs. Different applications can not see each other's data.
--   **All code executing on the same thread shares the same privilege level**: All code executing on the same thread shares the same privilege level. It is not possible for different modules to have different privilege levels within the same thread.
--   **Code can not escalate its privileges without user consent**: Code executing in a Deno runtime can not escalate its privileges without the user agreeing explicitly to an escalation via interactive prompt or a invocation time flag.
--   **The initial static module graph can import local files without restrictions**: All files that are imported in the initial static module graph can be imported without restrictions, so even if an explicit read permission is not granted for that file. This does not apply to any dynamic module imports.
-
-These key principles are designed to provide an environment where a user can execute code with minimal risk of harm to the host machine or network. The security model is designed to be simple to understand and to provide a clear separation of concerns between the runtime and the code executing within it. The security model is enforced by the Deno runtime, and is not dependent on the underlying operating system.
-
-## Permissions
-
-By default, access to most system I/O is denied. There are some I/O operations that are allowed in a limited capacity, even by default. These are described below.
-
-To enable these operations, the user must explicitly grant permission to the Deno runtime. This is done by passing the `--allow-read`, `--allow-write`, `--allow-net`, `--allow-env`, and `--allow-run` flags to the `deno` command.
-
-During execution of a script, a user can also explicitly grant permission to specific files, directories, network addresses, environment variables, and subprocesses when prompted by the runtime. Prompts are not shown if stdout/stderr are not a TTY, or when the `--no-prompt` flag is passed to the `deno` command.
-
-Users can also explicitly disallow access to specific resources by using the `--deny-read`, `--deny-write`, `--deny-net`, `--deny-env`, and `--deny-run` flags. These flags take precedence over the allow flags. For example, if you allow network access but deny access to a specific domain, the deny flag will take precedence.
-
-Deno also provides a `--allow-all` flag that grants all permissions to the script. This **disables** the security sandbox entirely, and should be used with caution. The `--allow-all` has the same security properties as running a script in Node.js (ie none).
-
-Definition: `-A, --allow-all`
-
-\>\_
-
-```sh
-deno run -A script.ts
-deno run --allow-all script.ts
-```
-
-By default, Deno will not generate a stack trace for permission requests as it comes with a hit to performance. Users can enable stack traces with the `DENO_TRACE_PERMISSIONS` environment variable to `1`.
-
-Deno can also generate an audit log of all accessed permissions; this can be achieved using the `DENO_AUDIT_PERMISSIONS` environment variable to a path. This works regardless if permissions are allowed or not. The output is in JSONL format, where each line is an object with the following keys:
-
--   `v`: the version of the format
--   `datetime`: when the permission was accessed, in RFC 3339 format
--   `permission`: the name of the permission
--   `value`: the value that the permission was accessed with, or `null` if it was accessed with no value
-
-A schema for this can be found in [permission-audit.v1.json](https://github.com/denoland/deno/blob/main/cli/schemas/permission-audit.v1.json).
-
-In addition, this env var can be combined with the above-mentioned `DENO_TRACE_PERMISSIONS`, which then adds a new `stack` field to the entries which is an array contain all the stack trace frames.
-
-### Configuration file
-
-Deno supports storing permissions in the deno.json/deno.jsonc file. Read more under [configuration](/runtime/fundamentals/configuration/#permissions).
-
-### File system access
-
-By default, executing code can not read or write arbitrary files on the file system. This includes listing the contents of directories, checking for the existence of a given file, and opening or connecting to Unix sockets.
-
-Access to read files is granted using the `--allow-read` (or `-R`) flag, and access to write files is granted using the `--allow-write` (or `-W`) flag. These flags can be specified with a list of paths to allow access to specific files or directories and any subdirectories in them.
-
-Definition: `--allow-read[=<PATH>...]` or `-R[=<PATH>...]`
-
-PATHs may be separated by comma (`,`) characters. To include a comma character in the PATH, it must be doubled. (Example: `this file,, contains a comma.txt`)
-
-\>\_
-
-```sh
 # Allow all reads from file system
 deno run -R script.ts
 # or 

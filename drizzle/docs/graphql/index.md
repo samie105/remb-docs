@@ -10,7 +10,10 @@ content_hash: "651efa08fc17d9727c9ce66392ebeec6946281268a49d7e4b34fb8386747b813"
 menu_path: ["drizzle-graphql"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/eslint-plugin/index.md", "title": "ESLint Drizzle Plugin"}
+nav_next: {"path": "drizzle/docs/column-types/cockroach/index.md", "title": "CockroachDB column types"}
 ---
+
 Create a GraphQL server from a Drizzle schema in one line, and easily enhance it with custom queries and mutations.
 
 ## Quick start[](#quick-start)

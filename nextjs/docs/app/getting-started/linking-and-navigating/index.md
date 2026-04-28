@@ -11,8 +11,9 @@ menu_path: ["Linking and Navigating"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/layouts-and-pages/index.md", "title": "Layouts and Pages"}
+nav_next: {"path": "nextjs/docs/app/getting-started/server-and-client-components/index.md", "title": "Server and Client Components"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Linking and Navigating
 
 # Linking and Navigating
 

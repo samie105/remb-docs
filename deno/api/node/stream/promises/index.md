@@ -10,7 +10,10 @@ content_hash: "dcf7b27e6a03ee3d5df09e8766eb95950940d4f7c3fc67f95290cb15f07aa1c4"
 menu_path: ["stream/promises - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/stream/consumers/index.md", "title": "stream/consumers - Node documentation"}
+nav_next: {"path": "deno/api/node/stream/web/index.md", "title": "stream/web - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

@@ -10,15 +10,9 @@ content_hash: "56fc47b083f38a53e0623a4645914b8bc0c861aaa0bafbfcdcdfb76c5a68e281"
 menu_path: ["color-scheme"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/caret-color/index.md", "title": "caret-color"}
+nav_next: {"path": "tailwind/docs/cursor/index.md", "title": "cursor"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  color-scheme
-
-Interactivity
 
 # color-scheme
 

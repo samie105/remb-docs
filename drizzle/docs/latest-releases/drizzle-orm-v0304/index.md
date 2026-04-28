@@ -10,7 +10,10 @@ content_hash: "4e0fbe113beaa7e4df41528deccec00e8d5b6ee61eea6addcd0af2adb6cb344b"
 menu_path: ["Drizzle ORM - DrizzleORM v0.30.4 release"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0303/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.3 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0305/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.5 release"}
 ---
+
 DrizzleORM v0.30.4 release
 
 Mar 19, 2024
@@ -57,4 +60,4 @@ const result = await db.select().from(...);
 
 You can also connect to Xata using `pg` or `postgres.js` drivers
 
-To get started with Xata and Drizzle follow the [documentation](https://orm.drizzle.team/docs/get-started-postgresql#xata).
+To get started with Xata and Drizzle follow the [documentation](drizzle/docs/get-started-postgresql/index.md#xata).

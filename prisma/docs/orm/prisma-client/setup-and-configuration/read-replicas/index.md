@@ -11,7 +11,10 @@ menu_path: ["Read replicas"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md", "title": "Introduction to Prisma Client"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/index.md", "title": "Fields & types"}
 ---
+
 Setup and Configuration
 
 Learn how to set up and use read replicas with Prisma Client

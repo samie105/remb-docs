@@ -11,8 +11,9 @@ menu_path: ["Client-side Rendering (CSR)"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/rendering/automatic-static-optimization/index.md", "title": "Automatic Static Optimization"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/index.md", "title": "Data Fetching"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Rendering](/docs/pages/building-your-application/rendering)Client-side Rendering (CSR)
 
 # Client-side Rendering (CSR)
 

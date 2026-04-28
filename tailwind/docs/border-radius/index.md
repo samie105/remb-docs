@@ -10,15 +10,9 @@ content_hash: "210706cfa6481d8c655bb0a702f69e5e5c5e95129c0b437c31ab6cb3b04c6d5d"
 menu_path: ["border-radius"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/background-size/index.md", "title": "background-size"}
+nav_next: {"path": "tailwind/docs/border-width/index.md", "title": "border-width"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Borders
-2.  border-radius
-
-Borders
 
 # border-radius
 

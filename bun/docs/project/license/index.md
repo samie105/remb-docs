@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:19.538Z"
 content_hash: "bcead06f9593986b82c9c89762c950e343e8d39a7acdcb3e8c1e7076197d8796"
 menu_path: ["License"]
 section_path: []
+nav_prev: {"path": "bun/docs/project/contributing/index.md", "title": "Contributing"}
+nav_next: {"path": "bun/docs/project/roadmap/index.md", "title": "Roadmap"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

@@ -10,7 +10,10 @@ content_hash: "bac735aefea3688e666efa8deccdaa92cd464814a8090d5496f9cb3c72e8061e"
 menu_path: ["translate"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/transform-style/index.md", "title": "transform-style"}
+nav_next: {"path": "tailwind/docs/accent-color/index.md", "title": "accent-color"}
 ---
+
 Transforms
 
 Utilities for translating elements.
@@ -83,4 +86,4 @@ Prefix a `translate` utility with a breakpoint variant like `md:` to only apply 
 <img class="translate-45 md:translate-60 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

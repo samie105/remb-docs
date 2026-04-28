@@ -10,7 +10,10 @@ content_hash: "f22fa5981ea0f8e46f9748ae01a1edde6e99fb606ee031c4f5fb5939fe4deccf"
 menu_path: ["@std/data-structures"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/csv/index.md", "title": "@std/csv"}
+nav_next: {"path": "deno/runtime/reference/std/datetime/index.md", "title": "@std/datetime"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

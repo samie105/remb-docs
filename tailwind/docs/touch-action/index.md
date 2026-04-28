@@ -10,15 +10,9 @@ content_hash: "10da5a0567979d4ae0068ee64b31ca864a1cbd5762d38a1dad61965290c182ab"
 menu_path: ["touch-action"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/scroll-snap-type/index.md", "title": "scroll-snap-type"}
+nav_next: {"path": "tailwind/docs/user-select/index.md", "title": "user-select"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  touch-action
-
-Interactivity
 
 # touch-action
 

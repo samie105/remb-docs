@@ -10,7 +10,10 @@ content_hash: "a407ff5b9aad75c4fd16a143f78e057e12c2713a84de63216853c8650394f5dd"
 menu_path: ["Functions and directives"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/detecting-classes-in-source-files/index.md", "title": "Detecting classes in source files"}
+nav_next: {"path": "tailwind/docs/preflight/index.md", "title": "Preflight"}
 ---
+
 A reference for the custom functions and directives Tailwind exposes to your CSS.
 
 ## [Directives](#directives)
@@ -29,7 +32,7 @@ Use the `@theme` directive to define your project's custom design tokens, like f
 @theme {  --font-display: "Satoshi", "sans-serif";  --breakpoint-3xl: 120rem;  --color-avocado-100: oklch(0.99 0 0);  --color-avocado-200: oklch(0.98 0.04 113.22);  --color-avocado-300: oklch(0.94 0.11 115.03);  --color-avocado-400: oklch(0.92 0.19 114.08);  --color-avocado-500: oklch(0.84 0.18 117.33);  --color-avocado-600: oklch(0.53 0.12 118.34);  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);  /* ... */}
 ```
 
-Learn more about customizing your theme in the [theme variables documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing your theme in the [theme variables documentation](tailwind/docs/theme/index.md).
 
 ### [@source](#source-directive)
 
@@ -39,7 +42,7 @@ Use the `@source` directive to explicitly specify source files that aren't picke
 @source "../node_modules/@my-company/ui-lib";
 ```
 
-Learn more about automatic content detection in the [detecting classes in source files documentation](https://tailwindcss.com/docs/detecting-classes-in-source-files).
+Learn more about automatic content detection in the [detecting classes in source files documentation](tailwind/docs/detecting-classes-in-source-files/index.md).
 
 ### [@utility](#utility-directive)
 
@@ -49,7 +52,7 @@ Use the `@utility` directive to add custom utilities to your project that work w
 @utility tab-4 {  tab-size: 4;}
 ```
 
-Learn more about registering custom utilities in the [adding custom utilities documentation](https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities).
+Learn more about registering custom utilities in the [adding custom utilities documentation](tailwind/docs/adding-custom-styles/index.md#adding-custom-utilities).
 
 ### [@variant](#variant-directive)
 
@@ -59,7 +62,7 @@ Use the `@variant` directive to apply a Tailwind variant to styles in your CSS:
 .my-element {  background: white;  @variant dark {    background: black;  }}
 ```
 
-Learn more using variants in the [using variants documentation](https://tailwindcss.com/docs/adding-custom-styles#using-variants).
+Learn more using variants in the [using variants documentation](tailwind/docs/adding-custom-styles/index.md#using-variants).
 
 ### [@custom-variant](#custom-variant-directive)
 
@@ -71,7 +74,7 @@ Use the `@custom-variant` directive to add a custom variant in your project:
 
 This lets you write utilities `theme-midnight:bg-black` and `theme-midnight:text-white`.
 
-Learn more about adding custom variants in the [adding custom variants documentation](https://tailwindcss.com/docs/adding-custom-styles#adding-custom-variants).
+Learn more about adding custom variants in the [adding custom variants documentation](tailwind/docs/adding-custom-styles/index.md#adding-custom-variants).
 
 ### [@apply](#apply-directive)
 
@@ -159,7 +162,7 @@ Use the `@config` directive to load a legacy JavaScript-based configuration file
 @config "../../tailwind.config.js";
 ```
 
-The `corePlugins`, `safelist`, and `separator` options from the JavaScript-based config are not supported in v4.0. To safelist utilities in v4 use [`@source inline()`](https://tailwindcss.com/docs/detecting-classes-in-source-files#safelisting-specific-utilities).
+The `corePlugins`, `safelist`, and `separator` options from the JavaScript-based config are not supported in v4.0. To safelist utilities in v4 use [`@source inline()`](tailwind/docs/detecting-classes-in-source-files/index.md#safelisting-specific-utilities).
 
 ### [@plugin](#plugin-directive)
 
@@ -179,4 +182,4 @@ Use the `theme()` function to access your Tailwind theme values using dot notati
 .my-element {  margin: theme(spacing.12);}
 ```
 
-This function is deprecated, and we recommend [using CSS theme variables](https://tailwindcss.com/docs/theme#using-your-theme-variables) instead.
+This function is deprecated, and we recommend [using CSS theme variables](tailwind/docs/theme/index.md#using-your-theme-variables) instead.

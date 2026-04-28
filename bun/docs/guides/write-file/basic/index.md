@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:38.389Z"
 content_hash: "e7c7f62edb8e4c330f866123bd111cd3b6e84f2a9a2dadb09a3ee7dc46d327eb"
 menu_path: ["Write a string to a file"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/write-file/append/index.md", "title": "Append content to a file"}
+nav_next: {"path": "bun/docs/guides/write-file/blob/index.md", "title": "Write a Blob to a file"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

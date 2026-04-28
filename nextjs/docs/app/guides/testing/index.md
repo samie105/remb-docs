@@ -11,8 +11,9 @@ menu_path: ["Testing"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/tailwind-v3-css/index.md", "title": "How to install Tailwind CSS v3 in your Next.js application"}
+nav_next: {"path": "nextjs/docs/app/guides/testing/cypress/index.md", "title": "How to set up Cypress with Next.js"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Testing
 
 # Testing
 

@@ -9,23 +9,10 @@ last_crawled_at: "2026-04-18T16:57:31.932Z"
 content_hash: "6e2226923ee1f5e6f3e315ec0c312a3ef9b4eafc48aec7ec8ef2e167f27a769d"
 menu_path: ["bun patch"]
 section_path: []
+nav_prev: {"path": "bun/docs/pm/cli/outdated/index.md", "title": "bun outdated"}
+nav_next: {"path": "bun/docs/pm/cli/pm/index.md", "title": "bun pm"}
 ---
-`bun patch` lets you persistently patch node\_modules in a maintainable, git-friendly way. Sometimes, you need to make a small change to a package in `node_modules/` to fix a bug or add a feature. `bun patch` lets you do this without vendoring the entire package and reuse the patch across multiple installs, multiple projects, and multiple machines. Features:
 
-*   Generates `.patch` files applied to dependencies in `node_modules` on install
-*   `.patch` files can be committed to your repository, reused across multiple installs, projects, and machines
-*   `"patchedDependencies"` in `package.json` keeps track of patched packages
-*   `bun patch` lets you patch packages in `node_modules/` while preserving the integrity of Bun’s [Global Cache](https://bun.com/docs/pm/global-cache)
-*   Test your changes locally before committing them with `bun patch --commit <pkg>`
-*   To preserve disk space and keep `bun install` fast, patched packages are committed to the Global Cache and shared across projects where possible
-
-#### Step 1. Prepare the package for patching
-
-To get started, use `bun patch <pkg>` to prepare the package for patching:
-
-terminal
-
-```
 # you can supply the package name
 bun patch react
 
@@ -38,7 +25,7 @@ bun patch node_modules/react
 
 #### Step 2. Test your changes locally
 
-`bun patch <pkg>` makes it safe to edit the `<pkg>` in `node_modules/` directly, while preserving the integrity of Bun’s [Global Cache](https://bun.com/docs/pm/global-cache). This works by re-creating an unlinked clone of the package in `node_modules/` and diffing it against the original package in the Global Cache.
+`bun patch <pkg>` makes it safe to edit the `<pkg>` in `node_modules/` directly, while preserving the integrity of Bun’s [Global Cache](bun/docs/pm/global-cache/index.md). This works by re-creating an unlinked clone of the package in `node_modules/` and diffing it against the original package in the Global Cache.
 
 #### Step 3. Commit your changes
 

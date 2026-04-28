@@ -9,44 +9,10 @@ last_crawled_at: "2026-04-18T16:54:24.335Z"
 content_hash: "e9f1e993b32944042aa31ae1114e1254440e0f8f2fef2f93ee095bef29d960de"
 menu_path: ["Bail early with the Bun test runner"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/streams/to-typedarray/index.md", "title": "Convert a ReadableStream to a Uint8Array"}
+nav_next: {"path": "bun/docs/guides/test/concurrent-test-glob/index.md", "title": "Selectively run tests concurrently with glob patterns"}
 ---
-[Skip to main content](#content-area)
 
-[Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
-
-[Runtime
-
-](/docs)[Package Manager
-
-](/docs/pm/cli/install)[Bundler
-
-](/docs/bundler)[Test Runner
-
-](/docs/test)[Guides
-
-](/docs/guides)[Reference
-
-](https://bun.com/reference)[Blog
-
-](https://bun.com/blog)[Feedback
-
-](/docs/feedback)
-
-Use the `--bail` flag to bail on a test run after a single failure. This is useful for aborting as soon as possible in a continuous integration environment.
-
-terminal
-
-```
-bun test --bail
-```
-
-* * *
-
-To bail after a certain threshold of failures, optionally specify a number after the flag.
-
-terminal
-
-```
 # bail after 10 failures
 bun test --bail=10
 ```

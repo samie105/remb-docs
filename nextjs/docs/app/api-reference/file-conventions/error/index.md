@@ -11,8 +11,9 @@ menu_path: ["error.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/dynamic-routes/index.md", "title": "Dynamic Route Segments"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/forbidden/index.md", "title": "forbidden.js"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)error.js
 
 # error.js
 

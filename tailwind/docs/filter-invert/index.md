@@ -10,15 +10,9 @@ content_hash: "ddd2630a265cab2bc7b7822ba194fe6cb536edc98630ee68b3fd92e6e7f89d98"
 menu_path: ["filter: invert()"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
+nav_next: {"path": "tailwind/docs/filter-saturate/index.md", "title": "filter: saturate()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  invert
-
-Filters
 
 # filter: invert()
 

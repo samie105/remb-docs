@@ -10,15 +10,9 @@ content_hash: "aea11b28207ed0013df876e6e3653ab0b166a3b75c088f0065f72d66e01c4545"
 menu_path: ["font-smoothing"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/font-size/index.md", "title": "font-size"}
+nav_next: {"path": "tailwind/docs/font-style/index.md", "title": "font-style"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  font-smoothing
-
-Typography
 
 # font-smoothing
 

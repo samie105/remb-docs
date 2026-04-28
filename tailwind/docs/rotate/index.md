@@ -10,7 +10,10 @@ content_hash: "8e273dbc9cafe36916db1e651d15f959c79b3d1788f30849f6dfc47b35b97dcb"
 menu_path: ["rotate"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/perspective-origin/index.md", "title": "perspective-origin"}
+nav_next: {"path": "tailwind/docs/scale/index.md", "title": "scale"}
 ---
+
 Utilities for rotating elements.
 
 ## [Examples](#examples)
@@ -63,4 +66,4 @@ Prefix a `rotate` utility with a breakpoint variant like `md:` to only apply the
 <img class="rotate-45 md:rotate-60 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

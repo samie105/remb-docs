@@ -10,7 +10,10 @@ content_hash: "72211b93b154f0bdc182cd1951323471b4d2a0afc29d33a8bfe2357eb01017a4"
 menu_path: ["PostgreSQL: Documentation: 18: B.5. POSIX Time Zone Specifications"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/datetime-keywords.html/index.md", "title": "PostgreSQL: Documentation: 18: B.3.\u00a0Date/Time Key Words"}
+nav_next: {"path": "postgres/docs/current/datetime-units-history.html/index.md", "title": "PostgreSQL: Documentation: 18: B.6.\u00a0History of Units"}
 ---
+
 PostgreSQL can accept time zone specifications that are written according to the POSIX standard's rules for the `TZ` environment variable. POSIX time zone specifications are inadequate to deal with the complexity of real-world time zone history, but there are sometimes reasons to use them.
 
 A POSIX time zone specification has the form

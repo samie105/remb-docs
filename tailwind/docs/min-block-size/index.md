@@ -10,7 +10,10 @@ content_hash: "84b89c50d455ee4351f23ede4bb0124e0708528afe912ecf29ab40d88abe01ab"
 menu_path: ["min-block-size"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/block-size/index.md", "title": "block-size"}
+nav_next: {"path": "tailwind/docs/max-block-size/index.md", "title": "max-block-size"}
 ---
+
 Utilities for setting the minimum block size of an element.
 
 ## [Examples](#examples)
@@ -77,7 +80,7 @@ Prefix a `min-block-size` utility with a breakpoint variant like `md:` to only a
 <div class="block-24 min-block-0 md:min-block-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -87,4 +90,4 @@ The `min-block-<number>` utilities are driven by the `--spacing` theme variable,
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).

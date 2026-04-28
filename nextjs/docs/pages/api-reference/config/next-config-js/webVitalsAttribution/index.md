@@ -11,8 +11,9 @@ menu_path: ["webVitalsAttribution"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/webpack/index.md", "title": "Custom Webpack Config"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/typescript/index.md", "title": "TypeScript"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)webVitalsAttribution
 
 # webVitalsAttribution
 

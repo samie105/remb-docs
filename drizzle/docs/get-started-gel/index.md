@@ -10,7 +10,10 @@ content_hash: "b2c689d3cda5c0601ab58b03d4ddc2f86e0cd2c2f9260c71f68a55b2cafeae6c"
 menu_path: ["Drizzle <> Gel"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/get-started-postgresql/index.md", "title": "Drizzle <> PostgreSQL"}
+nav_next: {"path": "drizzle/docs/get-started-mysql/index.md", "title": "Drizzle <> MySQL"}
 ---
+
 Drizzle has native support for Gel connections with the `gel-js` client.
 
 #### Step 1 - Install packages[](#step-1---install-packages)

@@ -11,7 +11,10 @@ menu_path: ["Deploy to Vercel Edge Functions & Middleware"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-deno-deploy/index.md", "title": "Deploy to Deno Deploy"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/edge/overview/index.md", "title": "Deploying edge functions with Prisma ORM"}
 ---
+
 Learn the things you need to know in order to deploy an Edge function that uses Prisma Client for talking to a database
 
 This page covers everything you need to know to deploy an app that uses Prisma Client for talking to a database in [Vercel Edge Middleware](https://vercel.com/docs/functions/edge-middleware) or a [Vercel Function](https://vercel.com/docs/functions) deployed to the [Vercel Edge Runtime](https://vercel.com/docs/functions/runtimes/edge-runtime).
@@ -38,7 +41,7 @@ Vercel's Edge Runtime currently only supports a limited set of database drivers:
 
 Note that [`node-postgres`](https://node-postgres.com/) (`pg`) is currently _not_ supported on Vercel Edge Functions.
 
-When deploying a Vercel Edge Function that uses Prisma ORM, you need to use one of these [edge-compatible drivers](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/overview#edge-compatibility-of-database-drivers) and its respective [driver adapter](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters) for Prisma ORM.
+When deploying a Vercel Edge Function that uses Prisma ORM, you need to use one of these [edge-compatible drivers](prisma/docs/orm/prisma-client/deployment/edge/overview/index.md#edge-compatibility-of-database-drivers) and its respective [driver adapter](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters) for Prisma ORM.
 
 ### [Setting your database connection URL as an environment variable](#setting-your-database-connection-url-as-an-environment-variable)
 
@@ -66,7 +69,7 @@ export default defineConfig({
 
 #### [Development](#development)
 
-When in **development**, you can configure your database connection via the `DATABASE_URL` environment variable (e.g. [using `.env` files](https://www.prisma.io/docs/orm/more/dev-environment/environment-variables)).
+When in **development**, you can configure your database connection via the `DATABASE_URL` environment variable (e.g. [using `.env` files](prisma/docs/orm/more/dev-environment/environment-variables/index.md)).
 
 #### [Production](#production)
 
@@ -250,7 +253,7 @@ At this point, you can get the URL of the deployed application from the Vercel D
 
 If you are using a PlanetScale database, you need to:
 
--   use the `@prisma/adapter-planetscale` database adapter (learn more [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql#planetscale))
+-   use the `@prisma/adapter-planetscale` database adapter (learn more [here](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale))
 
 #### [1\. Configure Prisma schema & database connection](#1-configure-prisma-schema--database-connection-1)
 
@@ -367,7 +370,7 @@ At this point, you can get the URL of the deployed application from the Vercel D
 
 If you are using a Neon database, you need to:
 
--   use the `@prisma/adapter-neon` database adapter (learn more [here](https://www.prisma.io/docs/orm/core-concepts/supported-databases/postgresql#using-driver-adapters))
+-   use the `@prisma/adapter-neon` database adapter (learn more [here](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#using-driver-adapters))
 
 #### [1\. Configure Prisma schema & database connection](#1-configure-prisma-schema--database-connection-2)
 
@@ -481,7 +484,7 @@ At this point, you can get the URL of the deployed application from the Vercel D
 
 [Fluid compute](https://vercel.com/fluid) is a compute model from Vercel that combines the flexibility of serverless with the stability of servers, making it ideal for dynamic workloads such as streaming data and AI APIs. Vercel's Fluid compute [supports both edge and Node.js runtimes](https://vercel.com/docs/fluid-compute#available-runtime-support). A common challenge in traditional serverless platforms is leaked database connections when functions are suspended and pools can't close idle connections. Fluid provides [`attachDatabasePool`](https://vercel.com/blog/the-real-serverless-compute-to-database-connection-problem-solved) to ensure idle connections are released before a function is suspended.
 
-Use `attachDatabasePool` together with [Prisma's driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers) to safely manage connections in Fluid:
+Use `attachDatabasePool` together with [Prisma's driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md) to safely manage connections in Fluid:
 
 ```
 import { Pool } from "pg";

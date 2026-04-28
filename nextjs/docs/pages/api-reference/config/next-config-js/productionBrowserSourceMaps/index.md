@@ -11,8 +11,9 @@ menu_path: ["productionBrowserSourceMaps"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/poweredByHeader/index.md", "title": "poweredByHeader"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/proxyClientMaxBodySize/index.md", "title": "experimental.proxyClientMaxBodySize"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)productionBrowserSourceMaps
 
 # productionBrowserSourceMaps
 

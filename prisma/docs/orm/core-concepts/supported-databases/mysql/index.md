@@ -11,7 +11,10 @@ menu_path: ["MySQL"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
 ---
+
 Supported databases
 
 Use Prisma ORM with MySQL databases including self-hosted MySQL/MariaDB and serverless PlanetScale
@@ -58,7 +61,7 @@ export default defineConfig({
 });
 ```
 
-Use JavaScript database drivers via [driver adapters](https://www.prisma.io/docs/orm/core-concepts/supported-databases/database-drivers#driver-adapters):
+Use JavaScript database drivers via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
 
 **With `mariadb` driver:**
 
@@ -187,7 +190,7 @@ model Comment {
 | `Json` | `JSON` |
 | `Bytes` | `LONGBLOB` |
 
-See [full type mapping reference](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types) for complete details.
+See [full type mapping reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for complete details.
 
 **SSL connections:**
 

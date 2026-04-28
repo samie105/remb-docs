@@ -10,7 +10,10 @@ content_hash: "3731f17a53ba54b7d294ff6ddd53f45585ec445b09f9cdee5d90e786121462b2"
 menu_path: ["timers/promises - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/timers/index.md", "title": "timers - Node documentation"}
+nav_next: {"path": "deno/api/node/tls/index.md", "title": "tls - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

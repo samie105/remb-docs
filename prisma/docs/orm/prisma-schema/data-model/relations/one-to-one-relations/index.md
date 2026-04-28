@@ -10,7 +10,10 @@ content_hash: "d4dbbf774be883ee7c3b7912e17559c82f032fdaf444e1ebf7f007e39d8fb398"
 menu_path: ["One-to-one relations"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-many-relations/index.md", "title": "One-to-many relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md", "title": "Referential actions"}
 ---
+
 How to define and work with one-to-one relations in Prisma.
 
 One-to-one (1-1) relations connect at most **one** record on each side. In this example, `User` and `Profile` have a 1-1 relation:

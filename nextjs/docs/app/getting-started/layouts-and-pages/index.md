@@ -11,8 +11,9 @@ menu_path: ["Layouts and Pages"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/project-structure/index.md", "title": "Project structure and organization"}
+nav_next: {"path": "nextjs/docs/app/getting-started/linking-and-navigating/index.md", "title": "Linking and Navigating"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Layouts and Pages
 
 # Layouts and Pages
 

@@ -11,8 +11,9 @@ menu_path: ["getServerSideProps"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-paths/index.md", "title": "getStaticPaths"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/client-side/index.md", "title": "Client-side Fetching"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Data Fetching](/docs/pages/building-your-application/data-fetching)getServerSideProps
 
 # getServerSideProps
 

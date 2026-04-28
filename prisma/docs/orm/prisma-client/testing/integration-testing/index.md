@@ -10,91 +10,10 @@ content_hash: "4153cc90c8af218010e1dfc09ba7386af59d7f34d97d8f6507178aa1cafe96f9"
 menu_path: ["Integration testing"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/testing/unit-testing/index.md", "title": "Unit testing"}
 ---
-Testing
 
-Learn how to setup and run integration tests with Prisma and Docker
-
-Integration tests focus on testing how separate parts of the program work together. In the context of applications using a database, integration tests usually require a database to be available and contain data that is convenient to the scenarios intended to be tested.
-
-One way to simulate a real world environment is to use [Docker](https://www.docker.com/get-started/) to encapsulate a database and some test data. This can be spun up and torn down with the tests and so operate as an isolated environment away from your production databases.
-
-> **Note:** This [blog post](https://www.prisma.io/blog/testing-series-2-xphjjmiesm) offers a comprehensive guide on setting up an integration testing environment and writing integration tests against a real database, providing valuable insights for those looking to explore this topic.
-
-This guide assumes you have [Docker](https://docs.docker.com/get-started/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed on your machine as well as `Jest` setup in your project.
-
-See our [system requirements](https://www.prisma.io/docs/orm/reference/system-requirements) for all minimum version requirements.
-
-The following e-commerce schema will be used throughout the guide. This varies from the traditional `User` and `Post` models used in other parts of the docs, mainly because it is unlikely you will be running integration tests against your blog.
-
-**Ecommerce schema**
-
-schema.prisma
-
-```
-// Can have 1 customer
-// Can have many order details
-model CustomerOrder {
-  id           Int            @id @default(autoincrement())
-  createdAt    DateTime       @default(now())
-  customer     Customer       @relation(fields: [customerId], references: [id])
-  customerId   Int
-  orderDetails OrderDetails[]
-}
-
-// Can have 1 order
-// Can have many products
-model OrderDetails {
-  id        Int           @id @default(autoincrement())
-  products  Product       @relation(fields: [productId], references: [id])
-  productId Int
-  order     CustomerOrder @relation(fields: [orderId], references: [id])
-  orderId   Int
-  total     Decimal
-  quantity  Int
-}
-
-// Can have many order details
-// Can have 1 category
-model Product {
-  id           Int            @id @default(autoincrement())
-  name         String
-  description  String
-  price        Decimal
-  sku          Int
-  orderDetails OrderDetails[]
-  category     Category       @relation(fields: [categoryId], references: [id])
-  categoryId   Int
-}
-
-// Can have many products
-model Category {
-  id       Int       @id @default(autoincrement())
-  name     String
-  products Product[]
-}
-
-// Can have many orders
-model Customer {
-  id      Int             @id @default(autoincrement())
-  email   String          @unique
-  address String?
-  name    String?
-  orders  CustomerOrder[]
-}
-```
-
-The guide uses a singleton pattern for Prisma Client setup. Refer to the [singleton](https://www.prisma.io/docs/orm/prisma-client/testing/unit-testing#singleton) docs for a walk through of how to set that up.
-
-![Docker compose code pointing towards image of container holding a Postgres database](/docs/img/orm/prisma-client/testing/Docker_Diagram_V1.png)
-
-With Docker and Docker compose both installed on your machine you can use them in your project.
-
-1.  Begin by creating a `docker-compose.yml` file at your projects root. Here you will add a Postgres image and specify the environments credentials.
-
-docker-compose.yml
-
-```
 # Set the version of docker compose to use
 version: "3.9"
 
@@ -271,7 +190,7 @@ The following tests will check if the `createOrder` function works as it should 
 -   Creating an order with an existing customer
 -   Show an "Out of stock" error message if a product doesn't exist
 
-Before the test suite is run the database is seeded with data. After the test suite has finished a [`deleteMany`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#deletemany) is used to clear the database of its data.
+Before the test suite is run the database is seeded with data. After the test suite has finished a [`deleteMany`](prisma/docs/orm/reference/prisma-client-reference/index.md#deletemany) is used to clear the database of its data.
 
 \_\_tests\_\_/create-order.ts
 

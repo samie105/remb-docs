@@ -10,7 +10,10 @@ content_hash: "2f5dc2d5253954ba9a7f808fef844021ea415751c19cb090d4282cefe0e5feb6"
 menu_path: ["All Symbols - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/index.md", "title": "Node.js Built-in APIs"}
+nav_next: {"path": "deno/api/node/assert/index.md", "title": "assert - Node documentation"}
 ---
+
 The `node:assert` module provides a set of assertion functions for verifying invariants.
 
 f

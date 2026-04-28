@@ -10,7 +10,10 @@ content_hash: "8b32e028cfc9d98904509b73538b77b517fa42e23225f6712a3d9f742ae7b52b"
 menu_path: ["Raw SQL comparisons"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/nuxt/index.md", "title": "Nuxt"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/typescript-performance/index.md", "title": "TypeScript performance"}
 ---
+
 Troubleshooting
 
 ## Raw SQL comparisons

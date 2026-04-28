@@ -10,7 +10,10 @@ content_hash: "6d58ec1f58e76500a0942085617d3ed3307d910349a1499c3d1e25a1aaf3649b"
 menu_path: ["@std/html"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/fs/index.md", "title": "@std/fs"}
+nav_next: {"path": "deno/runtime/reference/std/http/index.md", "title": "@std/http"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

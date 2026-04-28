@@ -10,7 +10,10 @@ content_hash: "568c9f6f3803755a9fa7195e0eeed63a5ec7c743dc308462d7121a1237dd66c5"
 menu_path: ["arktype"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/typebox/index.md", "title": "typebox"}
+nav_next: {"path": "drizzle/docs/typebox-legacy/index.md", "title": "typebox-legacy"}
 ---
+
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-arktype` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself

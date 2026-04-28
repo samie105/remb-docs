@@ -10,7 +10,10 @@ content_hash: "89f6ac5d02f37a5e74daa2cc434efd1f06828f64fe72f13894f82172a4470da9"
 menu_path: ["PostgreSQL: Documentation: 18: 35.30. foreign_table_options"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/infoschema-foreign-servers.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.29.\u00a0foreign_servers"}
+nav_next: {"path": "postgres/docs/current/infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
 ---
+
 The view `foreign_table_options` contains all the options defined for foreign tables in the current database. Only those foreign tables are shown that the current user has access to (by way of being the owner or having some privilege).
 
 **Table 35.28. `foreign_table_options` Columns**

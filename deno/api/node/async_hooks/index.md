@@ -10,7 +10,10 @@ content_hash: "c290bd14891aa11c1ded1988e17962dc214fa2d60d8de6174f6eb53cb110348a"
 menu_path: ["async_hooks - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/assert/strict/index.md", "title": "namespace assert.strict"}
+nav_next: {"path": "deno/api/node/buffer/index.md", "title": "buffer - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

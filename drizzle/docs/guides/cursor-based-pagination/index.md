@@ -10,7 +10,10 @@ content_hash: "9be1ff010868585ca52086ec134492927d77eccaaa3022a5ecc174efc96a484d"
 menu_path: ["Drizzle ORM - SQL Cursor-based pagination"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/guides/count-rows/index.md", "title": "Drizzle ORM - Count rows"}
+nav_next: {"path": "drizzle/docs/guides/d1-http-with-drizzle-kit/index.md", "title": "Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit"}
 ---
+
 Drizzle | SQL Cursor-based pagination
 
 This guide demonstrates how to implement `cursor-based` pagination in Drizzle:
@@ -225,4 +228,4 @@ await nextUserPage(3);
 
 **Drawbacks** of `cursor-based` pagination: the inability to directly navigate to a specific page and complexity of implementation. Since you add more columns to the sort order, you’ll need to add more filters to the `where` clause for the cursor comparison to ensure consistent pagination.
 
-So, if you need to directly navigate to a specific page or you need simpler implementation of pagination, you should consider using [offset/limit](https://orm.drizzle.team/docs/guides/limit-offset-pagination) pagination instead.
+So, if you need to directly navigate to a specific page or you need simpler implementation of pagination, you should consider using [offset/limit](drizzle/docs/guides/limit-offset-pagination/index.md) pagination instead.

@@ -10,7 +10,10 @@ content_hash: "06e2a999c7591d698b8aded5a98677cbccc3318dcf8ae81ae2e0e267fb778525"
 menu_path: ["Drizzle <> Neon Postgres"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/connect-planetscale-postgres/index.md", "title": "Drizzle <> PlanetScale Postgres"}
+nav_next: {"path": "drizzle/docs/connect-vercel-postgres/index.md", "title": "Drizzle <> Vercel Postgres"}
 ---
+
 ## Drizzle <> Neon Postgres
 
 Drizzle has native support for Neon connections with the `neon-http` and `neon-websockets` drivers. These use the **neon-serverless** driver under the hood.
@@ -19,7 +22,7 @@ With the `neon-http` and `neon-websockets` drivers, you can access a Neon databa
 Querying over HTTP is faster for single, non-interactive transactions.
 
 If you need session or interactive transaction support, or a fully compatible drop-in replacement for the `pg` driver, you can use the WebSocket-based `neon-serverless` driver.  
-You can connect to a Neon database directly using [Postgres](https://orm.drizzle.team/docs/get-started/postgresql-new)
+You can connect to a Neon database directly using [Postgres](drizzle/docs/get-started/postgresql-new/index.md)
 
 For an example of using Drizzle ORM with the Neon Serverless driver in a Cloudflare Worker, **[see here.](http://driz.link/neon-cf-ex)**  
 To use Neon from a serverful environment, you can use the PostgresJS driver, as described in Neon’s **[official Node.js docs](https://neon.tech/docs/guides/node)** — see **[docs](#postgresjs)**.

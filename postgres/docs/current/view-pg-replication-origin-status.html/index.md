@@ -10,7 +10,10 @@ content_hash: "2b7a0cffe18fb3b5dcb76923f62a84d1ed72083d4eb4aa115ad9094ec3efee03"
 menu_path: ["PostgreSQL: Documentation: 18: 53.19. pg_replication_origin_status"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-publication-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.18.\u00a0pg_publication_tables"}
+nav_next: {"path": "postgres/docs/current/view-pg-replication-slots.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.20.\u00a0pg_replication_slots"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-replication-origin-status.html "PostgreSQL devel - 53.19. pg_replication_origin_status")
 
 The `pg_replication_origin_status` view contains information about how far replay for a certain origin has progressed. For more on replication origins see [Chapter 48](https://www.postgresql.org/docs/current/replication-origins.html "Chapter 48. Replication Progress Tracking").

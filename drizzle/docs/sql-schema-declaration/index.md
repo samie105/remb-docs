@@ -10,7 +10,10 @@ content_hash: "ccaedaad8129fc639788b9e7014a6c73821f3933537df2129994664fe05c7465"
 menu_path: ["Drizzle schema"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/relations-v1-v2/index.md", "title": "Migrating to Relational Queries version 2"}
+nav_next: {"path": "drizzle/docs/relations-schema-declaration/index.md", "title": "Drizzle Relations Fundamentals"}
 ---
+
 Drizzle lets you define a schema in TypeScript with various models and properties supported by the underlying database. When you define your schema, it serves as the source of truth for future modifications in queries (using Drizzle-ORM) and migrations (using Drizzle-Kit).
 
 If you are using Drizzle-Kit for the migration process, make sure to export all the models defined in your schema files so that Drizzle-Kit can import them and use them in the migration diff process.
@@ -75,7 +78,7 @@ Example:
        └ 📜 schema.ts
 ```
 
-In the `drizzle.config.ts` file, you need to specify the path to your schema file. With this configuration, Drizzle will read from the `schema.ts` file and use this information during the migration generation process. For more information about the `drizzle.config.ts` file and migrations with Drizzle, please check: [link](https://orm.drizzle.team/docs/drizzle-config-file)
+In the `drizzle.config.ts` file, you need to specify the path to your schema file. With this configuration, Drizzle will read from the `schema.ts` file and use this information during the migration generation process. For more information about the `drizzle.config.ts` file and migrations with Drizzle, please check: [link](drizzle/docs/drizzle-config-file/index.md)
 
 ```ts
 import { defineConfig } from "drizzle-kit";
@@ -105,7 +108,7 @@ One use case would be to separate each table into its own file.
           └ 📜 etc.ts
 ```
 
-In the `drizzle.config.ts` file, you need to specify the path to your schema folder. With this configuration, Drizzle will read from the `schema` folder and find all the files recursively and get all the drizzle tables from there. For more information about the `drizzle.config.ts` file and migrations with Drizzle, please check: [link](https://orm.drizzle.team/docs/drizzle-config-file)
+In the `drizzle.config.ts` file, you need to specify the path to your schema folder. With this configuration, Drizzle will read from the `schema` folder and find all the files recursively and get all the drizzle tables from there. For more information about the `drizzle.config.ts` file and migrations with Drizzle, please check: [link](drizzle/docs/drizzle-config-file/index.md)
 
 ```ts
 import { defineConfig } from "drizzle-kit";
@@ -180,7 +183,7 @@ export const users = sqliteTable('users', {
 
 By default, Drizzle will use the TypeScript key names for columns in database queries. Therefore, the schema and query from the example will generate the SQL query shown below
 
-This example uses a db object, whose initialization is not covered in this part of the documentation. To learn how to connect to the database, please refer to the [Connections Docs](https://orm.drizzle.team/docs/get-started-postgresql)
+This example uses a db object, whose initialization is not covered in this part of the documentation. To learn how to connect to the database, please refer to the [Connections Docs](drizzle/docs/get-started-postgresql/index.md)
 
   
 **TypeScript key = database key**

@@ -10,7 +10,10 @@ content_hash: "d12bd0d854ea5eaf80cd6e30c283215ac77102f890fb0f856411a94be9b37e47"
 menu_path: ["ORM releases and maturity levels"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/more/best-practices/index.md", "title": "Best practices"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md", "title": "Database drivers"}
 ---
+
 Learn about the release process, versioning, and maturity of Prisma ORM components and how to deal with breaking changes that might happen throughout releases
 
 This page explains the release process of Prisma ORM, how it's versioned and how to deal with breaking changes that might happen throughout releases.
@@ -41,11 +44,11 @@ If a feature or product is a **Preview**:
 -   There are no significant known issues, although minor bugs may exist.
 -   We welcome feedback on these to make the solution stable as quickly as possible.
 
-Previews are typically available behind a feature flag or require some form of opt-in (for example, by providing a `--preview-feature` flag in the CLI or [adding them to a `previewFeatures` property in the `generator` block](https://www.prisma.io/docs/orm/reference/preview-features/cli-preview-features) for Prisma Client in your Prisma schema).
+Previews are typically available behind a feature flag or require some form of opt-in (for example, by providing a `--preview-feature` flag in the CLI or [adding them to a `previewFeatures` property in the `generator` block](prisma/docs/orm/reference/preview-features/cli-preview-features/index.md) for Prisma Client in your Prisma schema).
 
 We don't recommend using Preview features or products in production.
 
-See also: [All currently available Preview features](https://www.prisma.io/docs/orm/reference/preview-features/client-preview-features).
+See also: [All currently available Preview features](prisma/docs/orm/reference/preview-features/client-preview-features/index.md).
 
 ### [Generally Available (GA)](#generally-available-ga)
 

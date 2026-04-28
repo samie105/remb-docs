@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/custom-server/index.md", "title": "How to set up a custom server in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/debugging/index.md", "title": "How to use debugging tools with Next.js"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Data Security
 
 # How to think about data security in Next.js
 

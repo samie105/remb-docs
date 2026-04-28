@@ -11,8 +11,9 @@ menu_path: ["unauthorized.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/template/index.md", "title": "template.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/index.md", "title": "Metadata Files API Reference"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)unauthorized.js
 
 # unauthorized.js
 

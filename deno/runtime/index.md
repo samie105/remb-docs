@@ -10,7 +10,9 @@ content_hash: "bf8b12eaf4326835a6f0a5652e43071216740394d4695b19e66859cac8887514"
 menu_path: ["Welcome to Deno"]
 section_path: []
 content_language: "en"
+nav_next: {"path": "deno/runtime/getting_started/installation/index.md", "title": "Installation"}
 ---
+
 **On this page**
 
 -   [Why Deno?](#why-deno%3F)

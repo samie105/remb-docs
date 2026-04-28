@@ -10,15 +10,9 @@ content_hash: "cd1f76e75c9abe9dbc3f8ca7f8669774f1edbfbc1fcb4a9b9d9b9460f3623682"
 menu_path: ["mask-repeat"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/mask-position/index.md", "title": "mask-position"}
+nav_next: {"path": "tailwind/docs/mask-size/index.md", "title": "mask-size"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Effects
-2.  mask-repeat
-
-Effects
 
 # mask-repeat
 

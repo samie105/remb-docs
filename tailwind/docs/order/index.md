@@ -10,15 +10,9 @@ content_hash: "e28270a5c137896a4fe8bb3f1d04e578a9a42fde4474952790f07d4cd72a9efd"
 menu_path: ["order"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/flex-shrink/index.md", "title": "flex-shrink"}
+nav_next: {"path": "tailwind/docs/grid-template-columns/index.md", "title": "grid-template-columns"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  order
-
-Flexbox & Grid
 
 # order
 

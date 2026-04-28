@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:08.755Z"
 content_hash: "6804b2f762080373a16c0a74a94b931152c2f07c4310d6c1460828590b11549d"
 menu_path: ["Add a development dependency"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/install/add/index.md", "title": "Add a dependency"}
+nav_next: {"path": "bun/docs/guides/install/add-git/index.md", "title": "Add a Git dependency"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

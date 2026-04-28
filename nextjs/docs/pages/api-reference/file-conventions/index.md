@@ -11,8 +11,9 @@ menu_path: ["File-system conventions"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/components/script/index.md", "title": "Script"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
 ---
-[Pages Router](/docs/pages)[API Reference](/docs/pages/api-reference)File-system conventions
 
 # File-system conventions
 

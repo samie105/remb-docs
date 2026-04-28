@@ -11,8 +11,9 @@ menu_path: ["use server"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-client/index.md", "title": "use client"}
+nav_next: {"path": "nextjs/docs/app/api-reference/components/index.md", "title": "Components"}
 ---
-[API Reference](/docs/app/api-reference)[Directives](/docs/app/api-reference/directives)use server
 
 # use server
 

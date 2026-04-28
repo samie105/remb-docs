@@ -11,8 +11,9 @@ menu_path: ["userAgent"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-selected-layout-segments/index.md", "title": "useSelectedLayoutSegments"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/index.md", "title": "Configuration"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)userAgent
 
 # userAgent
 

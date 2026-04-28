@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:01:10.824Z"
 content_hash: "381e87f974740029633f3fc3aa00caa299c42c6a3092ce3da3c0644fd3e011ed"
 menu_path: ["Plugins"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/nodejs-compat/index.md", "title": "Node.js Compatibility"}
+nav_next: {"path": "bun/docs/runtime/redis/index.md", "title": "Redis"}
 ---
+
 Bun provides a universal plugin API that can be used to extend both the _runtime_ and _bundler_. Plugins intercept imports and perform custom loading logic: reading files, transpiling code, etc. They can be used to add support for additional file types, like `.scss` or `.yaml`. In the context of Bun’s bundler, plugins can be used to implement framework-level features like CSS extraction, macros, and client-server code co-location.
 
 ## Lifecycle hooks
@@ -291,7 +294,7 @@ Note that the `.defer()` function currently has the limitation that it can only 
 
 ## Native plugins
 
-One of the reasons why Bun’s bundler is so fast is that it is written in native code and leverages multi-threading to load and parse modules in parallel. However, one limitation of plugins written in JavaScript is that JavaScript itself is single-threaded. Native plugins are written as [NAPI](https://bun.com/docs/runtime/node-api) modules and can be run on multiple threads. This allows native plugins to run much faster than JavaScript plugins. In addition, native plugins can skip unnecessary work such as the UTF-8 -> UTF-16 conversion needed to pass strings to JavaScript. These are the following lifecycle hooks which are available to native plugins:
+One of the reasons why Bun’s bundler is so fast is that it is written in native code and leverages multi-threading to load and parse modules in parallel. However, one limitation of plugins written in JavaScript is that JavaScript itself is single-threaded. Native plugins are written as [NAPI](bun/docs/runtime/node-api/index.md) modules and can be run on multiple threads. This allows native plugins to run much faster than JavaScript plugins. In addition, native plugins can skip unnecessary work such as the UTF-8 -> UTF-16 conversion needed to pass strings to JavaScript. These are the following lifecycle hooks which are available to native plugins:
 
 *   [`onBeforeParse()`](#onbeforeparse): Called on any thread before a file is parsed by Bun’s bundler.
 

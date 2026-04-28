@@ -10,7 +10,10 @@ content_hash: "b5f3866e64993c8a7ef79a1bbaab20452157a4e0aba6d7e871812e25041eb992"
 menu_path: ["Drizzle ORM - PostGIS geometry point"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/guides/point-datatype-psql/index.md", "title": "Drizzle ORM - Point datatype in PostgreSQL"}
+nav_next: {"path": "drizzle/docs/guides/postgresql-full-text-search/index.md", "title": "Drizzle ORM - PostgreSQL full-text search"}
 ---
+
 Drizzle | PostGIS geometry point
 
 `PostGIS` extends the capabilities of the PostgreSQL relational database by adding support for storing, indexing, and querying geospatial data.
@@ -79,7 +82,7 @@ To compute the distance between the objects you can use `<->` operator and `ST_D
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](https://orm.drizzle.team/docs/upgrade-v1))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 

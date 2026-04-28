@@ -10,7 +10,10 @@ content_hash: "93d6a6b487e55dc44bd2e94a3107a8e8767ca2c3dc07f0cf33aab96f19ffcd8b"
 menu_path: ["PostgreSQL: Documentation: 18: 35.27. foreign_data_wrappers"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/infoschema-foreign-data-wrapper-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.26.\u00a0foreign_data_wrapper_options"}
+nav_next: {"path": "postgres/docs/current/infoschema-foreign-server-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.28.\u00a0foreign_server_options"}
 ---
+
 The view `foreign_data_wrappers` contains all foreign-data wrappers defined in the current database. Only those foreign-data wrappers are shown that the current user has access to (by way of being the owner or having some privilege).
 
 **Table 35.25. `foreign_data_wrappers` Columns**

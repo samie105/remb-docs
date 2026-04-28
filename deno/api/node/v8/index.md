@@ -10,7 +10,10 @@ content_hash: "4927cf6e568f9d8280593b5408e882a28ffa543f7d8e9883db7dac54ba56ea4d"
 menu_path: ["v8 - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/util/types/index.md", "title": "util/types - Node documentation"}
+nav_next: {"path": "deno/api/node/vm/index.md", "title": "vm - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

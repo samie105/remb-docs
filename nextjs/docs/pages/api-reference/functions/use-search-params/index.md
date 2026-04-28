@@ -11,8 +11,9 @@ menu_path: ["useSearchParams"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/use-router/index.md", "title": "useRouter"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/userAgent/index.md", "title": "userAgent"}
 ---
-[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)useSearchParams
 
 # useSearchParams
 

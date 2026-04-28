@@ -10,7 +10,10 @@ content_hash: "1d5cbfe90977701bc718fa528c1116cc530437cd8b748e2f759bebc32548c07a"
 menu_path: ["PostgreSQL: Documentation: 18: 52.56. pg_tablespace"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/catalog-pg-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.54.\u00a0pg_subscription"}
+nav_next: {"path": "postgres/docs/current/collation.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.2.\u00a0Collation Support"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-tablespace.html "PostgreSQL devel - 52.56. pg_tablespace")
 
 The catalog `pg_tablespace` stores information about the available tablespaces. Tables can be placed in particular tablespaces to aid administration of disk layout.

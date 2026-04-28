@@ -9,15 +9,10 @@ last_crawled_at: "2026-04-18T16:58:21.754Z"
 content_hash: "0a19367e17fa523f337dab76d21913e869bad68c76001f8d4dd6ed78688007fe"
 menu_path: ["Contributing"]
 section_path: []
+nav_prev: {"path": "bun/docs/project/building-windows/index.md", "title": "Building Windows"}
+nav_next: {"path": "bun/docs/project/license/index.md", "title": "License"}
 ---
-Configuring a development environment for Bun can take 10-30 minutes depending on your internet connection and computer speed. You will need ~10GB of free disk space for the repository and build artifacts. If you are using Windows, please refer to [this guide](https://bun.com/docs/project/building-windows)
 
-## Using Nix (Alternative)
-
-A Nix flake is provided as an alternative to manual dependency installation:
-
-```
-nix develop
 # or explicitly use the pure shell
 # nix develop .#pure
 export CMAKE_SYSTEM_PROCESSOR=$(uname -m)

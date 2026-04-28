@@ -10,7 +10,10 @@ content_hash: "5ebf7ab5d68c3dee9d10556d8fb70675e4736d7b2aa52eb34b3b2cd19a705d81"
 menu_path: ["PostgreSQL: Documentation: 18: 36.3. User-Defined Functions"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/xfunc-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.8.\u00a0Procedural Language Functions"}
+nav_next: {"path": "postgres/docs/current/xindex.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.16.\u00a0Interfacing Extensions to Indexes"}
 ---
+
 PostgreSQL provides four kinds of functions:
 
 -   query language functions (functions written in SQL) ([Section 36.5](https://www.postgresql.org/docs/current/xfunc-sql.html "36.5. Query Language (SQL) Functions"))

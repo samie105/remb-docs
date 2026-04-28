@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:30.764Z"
 content_hash: "689e6e3e92a6463f575411e656093fcc336a6f55df89bdcb0b6cc25ae7dc6a15"
 menu_path: ["FFI"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/environment-variables/index.md", "title": "Environment Variables"}
+nav_next: {"path": "bun/docs/runtime/file-io/index.md", "title": "File I/O"}
 ---
+
 Use the built-in `bun:ffi` module to efficiently call native libraries from JavaScript. It works with languages that support the C ABI (Zig, Rust, C/C++, C#, Nim, Kotlin, etc).
 
 * * *
@@ -397,7 +400,7 @@ When you’re done with a JSCallback, you should call `close()` to free the memo
 
 ### Experimental thread-safe callbacks
 
-`JSCallback` has experimental support for thread-safe callbacks. This will be needed if you pass a callback function into a different thread from its instantiation context. You can enable it with the optional `threadsafe` parameter. Currently, thread-safe callbacks work best when run from another thread that is running JavaScript code, i.e. a [`Worker`](https://bun.com/docs/runtime/workers). A future version of Bun will enable them to be called from any thread (such as new threads spawned by your native library that Bun is not aware of).
+`JSCallback` has experimental support for thread-safe callbacks. This will be needed if you pass a callback function into a different thread from its instantiation context. You can enable it with the optional `threadsafe` parameter. Currently, thread-safe callbacks work best when run from another thread that is running JavaScript code, i.e. a [`Worker`](bun/docs/runtime/workers/index.md). A future version of Bun will enable them to be called from any thread (such as new threads spawned by your native library that Bun is not aware of).
 
 ```
 const searchIterator = new JSCallback((ptr, length) => /hello/.test(new CString(ptr, length)), {

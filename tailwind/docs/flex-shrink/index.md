@@ -10,15 +10,9 @@ content_hash: "a728cd8eac6fd5325066ca7706e8fd962d50529f18c4dc6cae6463356c4c9540"
 menu_path: ["flex-shrink"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/flex-grow/index.md", "title": "flex-grow"}
+nav_next: {"path": "tailwind/docs/order/index.md", "title": "order"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  flex-shrink
-
-Flexbox & Grid
 
 # flex-shrink
 

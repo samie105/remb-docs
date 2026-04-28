@@ -11,8 +11,9 @@ menu_path: ["How to create a static export of your Next.js application"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/single-page-applications/index.md", "title": "How to build single-page applications with Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/streaming/index.md", "title": "Streaming"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Static Exports
 
 # How to create a static export of your Next.js application
 

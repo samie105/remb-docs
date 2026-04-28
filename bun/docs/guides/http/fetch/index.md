@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:47:41.724Z"
 content_hash: "d19015194da905826dba3fd95aec7f95b75c3cc0a476d26f969afe9888412bf8"
 menu_path: ["Send an HTTP request using fetch"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/http/cluster/index.md", "title": "Start a cluster of HTTP servers"}
+nav_next: {"path": "bun/docs/guides/http/fetch-unix/index.md", "title": "fetch with unix domain sockets in Bun"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

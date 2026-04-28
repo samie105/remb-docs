@@ -11,8 +11,9 @@ menu_path: ["deploymentId"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cssChunking/index.md", "title": "cssChunking"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/devIndicators/index.md", "title": "devIndicators"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)deploymentId
 
 # deploymentId
 

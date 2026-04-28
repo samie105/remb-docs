@@ -11,8 +11,9 @@ menu_path: ["use cache: remote"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-cache-private/index.md", "title": "use cache: private"}
+nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-client/index.md", "title": "use client"}
 ---
-[API Reference](/docs/app/api-reference)[Directives](/docs/app/api-reference/directives)use cache: remote
 
 # use cache: remote
 

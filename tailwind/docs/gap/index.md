@@ -10,15 +10,9 @@ content_hash: "36b88c207af402c8194fbf1c51963bdf0052b13d451823ac40d964aef5c6757b"
 menu_path: ["gap"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/grid-auto-rows/index.md", "title": "grid-auto-rows"}
+nav_next: {"path": "tailwind/docs/justify-content/index.md", "title": "justify-content"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  gap
-
-Flexbox & Grid
 
 # gap
 

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:51.309Z"
 content_hash: "e40f4029a80156e9e1c3b41a34fd89b80f6fb5331f15c9acc4485ccaf31e95ca"
 menu_path: ["Fetch"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/networking/dns/index.md", "title": "DNS"}
+nav_next: {"path": "bun/docs/runtime/networking/tcp/index.md", "title": "TCP"}
 ---
+
 Bun implements the WHATWG `fetch` standard, with some extensions to meet the needs of server-side JavaScript. Bun also implements `node:http`, but `fetch` is generally recommended instead.
 
 ## Sending an HTTP request
@@ -290,7 +293,7 @@ const response = await fetch("s3://my-bucket/path/to/object", {
 });
 ```
 
-Note: Only PUT and POST methods support request bodies when using S3. For uploads, Bun automatically uses multipart upload for streaming bodies. You can read more about Bun’s S3 support in the [S3](https://bun.com/docs/runtime/s3) documentation.
+Note: Only PUT and POST methods support request bodies when using S3. For uploads, Bun automatically uses multipart upload for streaming bodies. You can read more about Bun’s S3 support in the [S3](bun/docs/runtime/s3/index.md) documentation.
 
 #### File URLs - `file://`
 
@@ -397,7 +400,7 @@ dns.prefetch("bun.com");
 
 #### DNS caching
 
-By default, Bun caches and deduplicates DNS queries in-memory for up to 30 seconds. You can see the cache stats by calling `dns.getCacheStats()`: To learn more about DNS caching in Bun, see the [DNS caching](https://bun.com/docs/runtime/networking/dns) documentation.
+By default, Bun caches and deduplicates DNS queries in-memory for up to 30 seconds. You can see the cache stats by calling `dns.getCacheStats()`: To learn more about DNS caching in Bun, see the [DNS caching](bun/docs/runtime/networking/dns/index.md) documentation.
 
 ### Preconnect to a host
 

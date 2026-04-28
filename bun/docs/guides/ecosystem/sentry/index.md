@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:46:10.854Z"
 content_hash: "a9927e817f2f56a78ec2ce604ecfe7382e57797cb8e260c7099d3d5aff479bd9"
 menu_path: ["Add Sentry to a Bun app"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/ecosystem/remix/index.md", "title": "Build an app with Remix and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/solidstart/index.md", "title": "Build an app with SolidStart and Bun"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

@@ -11,8 +11,9 @@ menu_path: ["useLightningcss"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/urlImports/index.md", "title": "urlImports"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/webpack/index.md", "title": "Custom Webpack Config"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)useLightningcss
 
 # useLightningcss
 

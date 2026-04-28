@@ -10,16 +10,19 @@ content_hash: "ac09854975dc5017494a3b0cf2ade41b626226992594756ae1b480dd38eb78d2"
 menu_path: ["Drizzle <> PlanetScale Postgres"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/get-started-singlestore/index.md", "title": "Drizzle <> SingleStore"}
+nav_next: {"path": "drizzle/docs/connect-neon/index.md", "title": "Drizzle <> Neon Postgres"}
 ---
+
 This guide assumes familiarity with:
 
--   Database [connection basics](https://orm.drizzle.team/docs/connect-overview) with Drizzle
+-   Database [connection basics](drizzle/docs/connect-overview/index.md) with Drizzle
 -   PlanetScale Postgres database - [docs](https://planetscale.com/docs/postgres)
--   Drizzle PostgreSQL drivers - [docs](https://orm.drizzle.team/docs/get-started-postgresql)
+-   Drizzle PostgreSQL drivers - [docs](drizzle/docs/get-started-postgresql/index.md)
 
 PlanetScale offers both MySQL (Vitess) and PostgreSQL databases. This page covers connecting to PlanetScale Postgres.
 
-For PlanetScale MySQL, see the [PlanetScale MySQL connection guide](https://orm.drizzle.team/docs/connect-planetscale).
+For PlanetScale MySQL, see the [PlanetScale MySQL connection guide](drizzle/docs/connect-planetscale/index.md).
 
 With Drizzle ORM you can connect to PlanetScale Postgres using:
 

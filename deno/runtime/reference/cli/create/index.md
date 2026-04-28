@@ -10,7 +10,10 @@ content_hash: "6a2a02a89bd53c54097186d70477616eef86ee48646bf7c4e2a2149cb1e86e49"
 menu_path: ["deno create"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/compile/index.md", "title": "deno compile"}
+nav_next: {"path": "deno/runtime/reference/cli/completions/index.md", "title": "deno completions"}
 ---
+
 **On this page**
 
 -   [Usage](#usage)

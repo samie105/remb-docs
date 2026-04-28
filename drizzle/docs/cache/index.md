@@ -10,7 +10,10 @@ content_hash: "b2c6bccaafa217da70bd904e3cc81e66020f93e71e20ae2150fc621c6efbe6aa"
 menu_path: ["Cache"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/batch-api/index.md", "title": "Batch API"}
+nav_next: {"path": "drizzle/docs/dynamic-query-building/index.md", "title": "Dynamic query building"}
 ---
+
 Drizzle sends every query straight to your database by default. There are no hidden actions, no automatic caching or invalidation - you’ll always see exactly what runs. If you want caching, you must opt in.
 
 By default, Drizzle uses a `explicit` caching strategy (i.e. `global: false`), so nothing is ever cached unless you ask. This prevents surprises or hidden performance traps in your application. Alternatively, you can flip on `all` caching (`global: true`) so that every select will look in cache first.

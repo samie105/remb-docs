@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:04.761Z"
 content_hash: "997b8504e5c89417955cf40ccef41d9e725a911a46a633b488ffb5d2af8e4b8f"
 menu_path: ["Guides"]
 section_path: []
+nav_prev: {"path": "bun/docs/feedback/index.md", "title": "Feedback"}
+nav_next: {"path": "bun/docs/guides/binary/arraybuffer-to-array/index.md", "title": "Convert an ArrayBuffer to an array of numbers"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

@@ -11,8 +11,9 @@ menu_path: ["authInterrupts"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/assetPrefix/index.md", "title": "assetPrefix"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/basePath/index.md", "title": "basePath"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)authInterrupts
 
 # authInterrupts
 

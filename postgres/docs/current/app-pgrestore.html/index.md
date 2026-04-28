@@ -10,7 +10,10 @@ content_hash: "5463d057949c38edbc0827ce003d4e7d217bf792f5b8af8f877f7911e558e947"
 menu_path: ["PostgreSQL: Documentation: 18: pg_restore"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/app-pgresetxlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.4.\u00a0pg_resetxlog renamed to pg_resetwal"}
+nav_next: {"path": "postgres/docs/current/app-pgrewind.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_rewind"}
 ---
+
 pg\_restore accepts the following command line arguments.
 
 _`filename`_
@@ -193,7 +196,7 @@ Presently, the commands emitted for `--disable-triggers` must be done as superus
 
 `--enable-row-security`
 
-This option is relevant only when restoring the contents of a table which has row security. By default, pg\_restore will set [row\_security](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-ROW-SECURITY) to off, to ensure that all data is restored in to the table. If the user does not have sufficient privileges to bypass row security, then an error is thrown. This parameter instructs pg\_restore to set [row\_security](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-ROW-SECURITY) to on instead, allowing the user to attempt to restore the contents of the table with row security enabled. This might still fail if the user does not have the right to insert the rows from the dump into the table.
+This option is relevant only when restoring the contents of a table which has row security. By default, pg\_restore will set [row\_security](postgres/docs/current/runtime-config-client.html/index.md#GUC-ROW-SECURITY) to off, to ensure that all data is restored in to the table. If the user does not have sufficient privileges to bypass row security, then an error is thrown. This parameter instructs pg\_restore to set [row\_security](postgres/docs/current/runtime-config-client.html/index.md#GUC-ROW-SECURITY) to on instead, allowing the user to attempt to restore the contents of the table with row security enabled. This might still fail if the user does not have the right to insert the rows from the dump into the table.
 
 Note that this option currently also requires the dump be in `INSERT` format, as `COPY FROM` does not support row security.
 

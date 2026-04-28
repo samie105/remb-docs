@@ -11,8 +11,9 @@ menu_path: ["Caching and Revalidating (Previous Model)"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/backend-for-frontend/index.md", "title": "How to use Next.js as a backend for your frontend"}
+nav_next: {"path": "nextjs/docs/app/guides/cdn-caching/index.md", "title": "Using a CDN with Next.js"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Caching (Previous Model)
 
 # Caching and Revalidating (Previous Model)
 

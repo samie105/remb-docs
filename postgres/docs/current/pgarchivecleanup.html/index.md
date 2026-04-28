@@ -10,7 +10,10 @@ content_hash: "0279255ab6451061f5c9b01bb872ee1f7af56eebc263009aa56e43d8766eec76"
 menu_path: ["PostgreSQL: Documentation: 18: pg_archivecleanup"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/perm-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.6.\u00a0Function Security"}
+nav_next: {"path": "postgres/docs/current/pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
 ---
+
 pg\_archivecleanup — clean up PostgreSQL WAL archive files
 
 ## Synopsis
@@ -27,7 +30,7 @@ archive\_cleanup\_command = 'pg\_archivecleanup _`archivelocation`_ %r'
 
 where _`archivelocation`_ is the directory from which WAL segment files should be removed.
 
-When used within [archive\_cleanup\_command](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-ARCHIVE-CLEANUP-COMMAND), all WAL files logically preceding the value of the `%r` argument will be removed from _`archivelocation`_. This minimizes the number of files that need to be retained, while preserving crash-restart capability. Use of this parameter is appropriate if the _`archivelocation`_ is a transient staging area for this particular standby server, but _not_ when the _`archivelocation`_ is intended as a long-term WAL archive area, or when multiple standby servers are recovering from the same archive location.
+When used within [archive\_cleanup\_command](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-CLEANUP-COMMAND), all WAL files logically preceding the value of the `%r` argument will be removed from _`archivelocation`_. This minimizes the number of files that need to be retained, while preserving crash-restart capability. Use of this parameter is appropriate if the _`archivelocation`_ is a transient staging area for this particular standby server, but _not_ when the _`archivelocation`_ is intended as a long-term WAL archive area, or when multiple standby servers are recovering from the same archive location.
 
 When used as a standalone program all WAL files logically preceding the _`oldestkeptwalfile`_ will be removed from _`archivelocation`_. In this mode, if you specify a `.partial` or `.backup` file name, then only the file prefix will be used as the _`oldestkeptwalfile`_. This treatment of `.backup` file name allows you to remove all WAL files archived prior to a specific base backup without error. For example, the following example will remove all files older than WAL file name `000000010000003700000010`:
 

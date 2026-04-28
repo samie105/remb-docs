@@ -10,7 +10,10 @@ content_hash: "bca7c710d4af4edeca8773973eb66187ff7b0ad09e04856da413e42a8ed512be"
 menu_path: ["API patterns"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/core-concepts/data-modeling/index.md", "title": "Data modeling"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/introspection/index.md", "title": "What is introspection?"}
 ---
+
 ## API patterns
 
 How to use Prisma ORM with REST APIs, GraphQL servers, and fullstack frameworks

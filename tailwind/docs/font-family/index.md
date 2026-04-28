@@ -10,7 +10,10 @@ content_hash: "537fe44e7d636ffe7ee8b59d5666d0da97871fd6a84d2fed45242fcb9c2daaad"
 menu_path: ["font-family"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/max-block-size/index.md", "title": "max-block-size"}
+nav_next: {"path": "tailwind/docs/font-size/index.md", "title": "font-size"}
 ---
+
 Typography
 
 Utilities for controlling the font family of an element.
@@ -61,7 +64,7 @@ Prefix a `font-family` utility with a breakpoint variant like `md:` to only appl
 <p class="font-sans md:font-serif ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -97,4 +100,4 @@ If you're loading a font from a service like [Google Fonts](https://fonts.google
 
 Browsers require that `@import` statements come before any other rules, so URL imports need to be above imports like `@import "tailwindcss"` which are inlined in the compiled CSS.
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).

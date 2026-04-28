@@ -10,7 +10,10 @@ content_hash: "0244844b4827a2d028108b929677686e6ec422f004f2d58707e2fce3d10f0e86"
 menu_path: ["PostgreSQL: Documentation: 18: 35.42. routine_routine_usage"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
+nav_next: {"path": "postgres/docs/current/infoschema-routine-sequence-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.43.\u00a0routine_sequence_usage"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-routine-routine-usage.html "PostgreSQL devel - 35.42. routine_routine_usage")
 
 The view `routine_routine_usage` identifies all functions or procedures that are used by another (or the same) function or procedure, either in the SQL body or in parameter default expressions. (This only works for unquoted SQL bodies, not quoted bodies or functions in other languages.) An entry is included here only if the used function is owned by a currently enabled role. (There is no such restriction on the using function.)

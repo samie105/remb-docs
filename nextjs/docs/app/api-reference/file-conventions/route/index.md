@@ -11,8 +11,9 @@ menu_path: ["route.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/public-folder/index.md", "title": "public Folder"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams/index.md", "title": "dynamicParams"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)route.js
 
 # route.js
 

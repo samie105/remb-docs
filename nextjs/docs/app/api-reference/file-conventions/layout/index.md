@@ -11,8 +11,9 @@ menu_path: ["layout.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/intercepting-routes/index.md", "title": "Intercepting Routes"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/loading/index.md", "title": "loading.js"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)layout.js
 
 # layout.js
 

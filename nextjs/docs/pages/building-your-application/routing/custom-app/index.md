@@ -11,8 +11,9 @@ menu_path: ["Custom App"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/linking-and-navigating/index.md", "title": "Linking and Navigating"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/custom-document/index.md", "title": "Custom Document"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)Custom App
 
 # Custom App
 

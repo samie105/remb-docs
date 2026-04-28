@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/data-security/index.md", "title": "How to think about data security in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Debugging
 
 # How to use debugging tools with Next.js
 

@@ -11,8 +11,9 @@ menu_path: ["viewTransition"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/useLightningcss/index.md", "title": "useLightningcss"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/webpack/index.md", "title": "Custom Webpack Config"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)viewTransition
 
 # viewTransition
 

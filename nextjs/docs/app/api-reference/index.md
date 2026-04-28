@@ -11,8 +11,9 @@ menu_path: ["API Reference"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/view-transitions/index.md", "title": "Designing view transitions"}
+nav_next: {"path": "nextjs/docs/app/api-reference/directives/index.md", "title": "Directives"}
 ---
-[Next.js Docs](/docs)[App Router](/docs/app)API Reference
 
 # API Reference
 

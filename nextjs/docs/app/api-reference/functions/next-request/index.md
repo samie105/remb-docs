@@ -11,8 +11,9 @@ menu_path: ["NextRequest"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/image-response/index.md", "title": "ImageResponse"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/next-response/index.md", "title": "NextResponse"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)NextRequest
 
 # NextRequest
 

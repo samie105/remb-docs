@@ -10,7 +10,10 @@ content_hash: "1d929d931b04416a9b8e9b49808ddbf0581d3100b2ef8bb36eaf90ca94fceebc"
 menu_path: ["Drizzle ORM - Conditional filters in query"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/get-started/xata-new/index.md", "title": "Get Started with Drizzle and Xata"}
+nav_next: {"path": "drizzle/docs/guides/count-rows/index.md", "title": "Drizzle ORM - Count rows"}
 ---
+
 Drizzle | Conditional filters in query
 
 To pass a conditional filter in query you can use `.where()` method and logical operator like below:

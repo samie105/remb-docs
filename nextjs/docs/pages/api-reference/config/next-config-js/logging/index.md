@@ -11,8 +11,9 @@ menu_path: ["logging"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/images/index.md", "title": "images"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/onDemandEntries/index.md", "title": "onDemandEntries"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)logging
 
 # logging
 

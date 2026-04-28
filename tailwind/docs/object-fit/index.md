@@ -10,15 +10,9 @@ content_hash: "5a484ee20baa41f6da910975c2b6e42ceb2a030eea6ecdaaabc2307ff2688343"
 menu_path: ["object-fit"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/isolation/index.md", "title": "isolation"}
+nav_next: {"path": "tailwind/docs/object-position/index.md", "title": "object-position"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  object-fit
-
-Layout
 
 # object-fit
 

@@ -11,8 +11,9 @@ menu_path: ["userAgent"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/use-search-params/index.md", "title": "useSearchParams"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/index.md", "title": "Configuration"}
 ---
-[API Reference](/docs/pages/api-reference)[Functions](/docs/pages/api-reference/functions)userAgent
 
 # userAgent
 

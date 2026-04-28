@@ -10,7 +10,10 @@ content_hash: "d87544e7041420cc82cec678f236b0ff9fd9591d5439e0b4a690008e5df99a7a"
 menu_path: ["Theme variables"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/dark-mode/index.md", "title": "Dark mode"}
+nav_next: {"path": "tailwind/docs/colors/index.md", "title": "Colors"}
 ---
+
 Using utility classes as an API for your design tokens.
 
 ## [Overview](#overview)

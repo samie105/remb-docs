@@ -11,14 +11,17 @@ menu_path: ["Deploying database changes with Prisma Migrate"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms/index.md", "title": "Caveats when deploying to AWS platforms"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-migrations-from-a-local-environment/index.md", "title": "Deploy migrations from a local environment"}
 ---
+
 Deployment
 
 Learn how to deploy database changes with Prisma Migrate
 
 To apply pending migrations to staging, testing, or production environments, run the `migrate deploy` command as part of your CI/CD pipeline:
 
-Exactly when to run `prisma migrate deploy` depends on your platform. For example, a simplified [Heroku](https://www.prisma.io/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku) workflow includes:
+Exactly when to run `prisma migrate deploy` depends on your platform. For example, a simplified [Heroku](prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku/index.md) workflow includes:
 
 1.  Ensuring the `./prisma/migration` folder is in source control
 2.  Running `prisma migrate deploy` during the [release phase](https://devcenter.heroku.com/articles/release-phase)
@@ -27,9 +30,9 @@ Ideally, `migrate deploy` should be part of an automated CI/CD pipeline, and we 
 
 Beware that in order to run the `prisma migrate deploy` command, you need access to the `prisma` dependency that is typically added to the `devDependencies`. Some platforms like Vercel, prune development dependencies during the build, thereby preventing you from calling the command. This can be worked around by making the `prisma` a production dependency, by moving it to `dependencies` in your `package.json`. For more information about the `migrate deploy` command, see:
 
--   [`migrate deploy` reference](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#migrate-deploy)
--   [How `migrate deploy` works](https://www.prisma.io/docs/orm/prisma-migrate/workflows/development-and-production#production-and-testing-environments)
--   [Production troubleshooting](https://www.prisma.io/docs/orm/prisma-migrate/workflows/patching-and-hotfixing)
+-   [`migrate deploy` reference](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-deploy)
+-   [How `migrate deploy` works](prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md#production-and-testing-environments)
+-   [Production troubleshooting](prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md)
 
 As part of your CI/CD, you can run `prisma migrate deploy` as part of your pipeline to apply pending migrations to your production database.
 

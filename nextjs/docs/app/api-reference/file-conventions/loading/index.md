@@ -11,8 +11,9 @@ menu_path: ["loading.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/layout/index.md", "title": "layout.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/mdx-components/index.md", "title": "mdx-components.js"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)loading.js
 
 # loading.js
 

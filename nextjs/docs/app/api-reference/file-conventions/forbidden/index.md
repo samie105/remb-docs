@@ -11,8 +11,9 @@ menu_path: ["forbidden.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/error/index.md", "title": "error.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)forbidden.js
 
 # forbidden.js
 

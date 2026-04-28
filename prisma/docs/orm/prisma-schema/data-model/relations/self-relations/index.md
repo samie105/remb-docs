@@ -10,7 +10,10 @@ content_hash: "7d52d5c59d24bbc131bff29493f10517c254ffb639080afb6bc90155eea2ff0b"
 menu_path: ["Self-relations"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/relation-mode/index.md", "title": "Relation mode"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations/index.md", "title": "Troubleshooting relations"}
 ---
+
 How to define and work with self-relations in Prisma.
 
 A relation field can reference its own model, called a _self-relation_. Self-relations can be 1-1, 1-n, or m-n.

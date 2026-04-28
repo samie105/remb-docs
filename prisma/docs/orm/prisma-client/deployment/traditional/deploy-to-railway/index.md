@@ -10,7 +10,10 @@ content_hash: "04d5b8add3e6de204aecea1af8bf97cd0624b6fa43f07c25c58fdecd6148ba70"
 menu_path: ["Deploy to Railway"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-koyeb/index.md", "title": "Deploy to Koyeb"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-render/index.md", "title": "Deploy to Render"}
 ---
+
 Learn how to deploy an app that uses Prisma ORM and Prisma Postgres to Railway
 
 This guide explains how to deploy an app that uses Prisma ORM and Prisma Postgres to [Railway](https://railway.com/?utm_medium=integration&utm_source=docs&utm_campaign=prisma). The app exposes a REST API and uses Prisma Client to query a Prisma Postgres database. Your app will run on Railway and connect to a managed Prisma Postgres database.

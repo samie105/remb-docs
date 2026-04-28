@@ -11,7 +11,10 @@ menu_path: ["CRUD"]
 section_path: []
 tab_variants: ["PostgreSQL","MySQL"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
 ---
+
 This page describes how to perform CRUD operations with Prisma Client:
 
 -   [Create](#create) - Insert records
@@ -19,7 +22,7 @@ This page describes how to perform CRUD operations with Prisma Client:
 -   [Update](#update) - Modify records
 -   [Delete](#delete) - Remove records
 
-See the [Prisma Client API reference](https://www.prisma.io/docs/orm/reference/prisma-client-reference) for detailed method documentation.
+See the [Prisma Client API reference](prisma/docs/orm/reference/prisma-client-reference/index.md) for detailed method documentation.
 
 ### [Create a single record](#create-a-single-record)
 
@@ -60,7 +63,7 @@ const users = await prisma.user.createManyAndReturn({
 });
 ```
 
-See [Nested writes](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-writes) for creating records with relations.
+See [Nested writes](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-writes) for creating records with relations.
 
 ### [Get record by ID or unique field](#get-record-by-id-or-unique-field)
 
@@ -127,7 +130,7 @@ const nearbyLocations = await prisma.location.findMany({
 });
 ```
 
-See [Filtering and sorting](https://www.prisma.io/docs/v6/orm/prisma-client/queries/filtering-and-sorting) for more examples, or [Working with geometry fields](https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields) for spatial queries.
+See [Filtering and sorting](https://www.prisma.io/docs/v6/orm/prisma-client/queries/filtering-and-sorting) for more examples, or [Working with geometry fields](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md) for spatial queries.
 
 ### [Select fields](#select-fields)
 
@@ -146,7 +149,7 @@ const users = await prisma.user.findMany({
 });
 ```
 
-See [Select fields](https://www.prisma.io/docs/v6/orm/prisma-client/queries/select-fields) and [Relation queries](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) for more.
+See [Select fields](https://www.prisma.io/docs/v6/orm/prisma-client/queries/select-fields) and [Relation queries](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) for more.
 
 ### [Update a single record](#update-a-single-record)
 
@@ -199,11 +202,11 @@ await prisma.post.updateMany({
 });
 ```
 
-See [Relation queries](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries) for connecting and disconnecting related records.
+See [Relation queries](prisma/docs/orm/prisma-client/queries/relation-queries/index.md) for connecting and disconnecting related records.
 
 ### [Delete a single record](#delete-a-single-record)
 
-The following query uses [`delete()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#delete) to delete a single `User` record:
+The following query uses [`delete()`](prisma/docs/orm/reference/prisma-client-reference/index.md#delete) to delete a single `User` record:
 
 ```
 const deleteUser = await prisma.user.delete({
@@ -217,7 +220,7 @@ Attempting to delete a user with one or more posts result in an error, as every 
 
 ### [Delete multiple records](#delete-multiple-records)
 
-The following query uses [`deleteMany()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#deletemany) to delete all `User` records where `email` contains `prisma.io`:
+The following query uses [`deleteMany()`](prisma/docs/orm/reference/prisma-client-reference/index.md#deletemany) to delete all `User` records where `email` contains `prisma.io`:
 
 ```
 const deleteUsers = await prisma.user.deleteMany({
@@ -233,7 +236,7 @@ Attempting to delete a user with one or more posts result in an error, as every 
 
 ### [Delete all records](#delete-all-records)
 
-The following query uses [`deleteMany()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#deletemany) to delete all `User` records:
+The following query uses [`deleteMany()`](prisma/docs/orm/reference/prisma-client-reference/index.md#deletemany) to delete all `User` records:
 
 ```
 const deleteUsers = await prisma.user.deleteMany({});
@@ -241,7 +244,7 @@ const deleteUsers = await prisma.user.deleteMany({});
 
 Be aware that this query will fail if the user has any related records (such as posts). In this case, you need to [delete the related records first](#cascading-deletes-deleting-related-records).
 
-The following query uses [`delete()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#delete) to delete a single `User` record:
+The following query uses [`delete()`](prisma/docs/orm/reference/prisma-client-reference/index.md#delete) to delete a single `User` record:
 
 ```
 const deleteUser = await prisma.user.delete({
@@ -300,7 +303,7 @@ The following shows how to delete all records from all tables with Prisma Client
 
 #### [Deleting all data with `deleteMany()`](#deleting-all-data-with-deletemany)
 
-When you know the order in which your tables should be deleted, you can use the [`deleteMany`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#deletemany) function. This is executed synchronously in a [`$transaction`](https://www.prisma.io/docs/orm/prisma-client/queries/transactions) and can be used with all types of databases.
+When you know the order in which your tables should be deleted, you can use the [`deleteMany`](prisma/docs/orm/reference/prisma-client-reference/index.md#deletemany) function. This is executed synchronously in a [`$transaction`](prisma/docs/orm/prisma-client/queries/transactions/index.md) and can be used with all types of databases.
 
 ```
 const deletePosts = prisma.post.deleteMany();
@@ -324,7 +327,7 @@ await prisma.$transaction([deleteProfile, deletePosts, deleteUsers]);
 
 #### [Deleting all data with raw SQL / `TRUNCATE`](#deleting-all-data-with-raw-sql--truncate)
 
-If you are comfortable working with raw SQL, you can perform a `TRUNCATE` query on a table using [`$executeRawUnsafe`](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#executerawunsafe).
+If you are comfortable working with raw SQL, you can perform a `TRUNCATE` query on a table using [`$executeRawUnsafe`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#executerawunsafe).
 
 In the following examples, the first tab shows how to perform a `TRUNCATE` on a Postgres database by using a `$queryRaw` look up that maps over the table and `TRUNCATES` all tables in a single query.
 

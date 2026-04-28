@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:43:32.483Z"
 content_hash: "25ed91326460a1feca54ed7baa18b982c5acd6cdb85ad513c1973cae272a2293"
 menu_path: ["Build an app with Astro and Bun"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/deployment/vercel/index.md", "title": "Deploy a Bun application on Vercel"}
+nav_next: {"path": "bun/docs/guides/ecosystem/discordjs/index.md", "title": "Create a Discord bot"}
 ---
+
 Initialize a fresh Astro app with `bun create astro`. The `create-astro` package detects when you are using `bunx` and will automatically install dependencies using `bun`.
 
 terminal

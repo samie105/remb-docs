@@ -11,8 +11,9 @@ menu_path: ["`next/dynamic` has deprecated loading multiple modules at once"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/missing-suspense-with-csr-bailout/index.md", "title": "Missing Suspense boundary with useSearchParams"}
+nav_next: {"path": "nextjs/docs/messages/next-request-in-use-cache/index.md", "title": "Cannot access `cookies()` or `headers()` in `\"use cache\"`"}
 ---
-[Docs](/docs)[Errors](/docs)\`next/dynamic\` has deprecated loading multiple modules at once
 
 # \`next/dynamic\` has deprecated loading multiple modules at once
 

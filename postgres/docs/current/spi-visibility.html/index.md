@@ -10,7 +10,10 @@ content_hash: "5340fb361a2454f3abd95f1e3fa540b48721bebc116202266c675c116ac899bb"
 menu_path: ["PostgreSQL: Documentation: 18: 45.5. Visibility of Data Changes"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/spi-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.4.\u00a0Transaction Management"}
+nav_next: {"path": "postgres/docs/current/sql-alterdefaultprivileges.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DEFAULT PRIVILEGES"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)

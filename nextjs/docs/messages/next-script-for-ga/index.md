@@ -11,8 +11,9 @@ menu_path: ["Using Google Analytics with Next.js (through `@next/third-parties/g
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/next-request-in-use-cache/index.md", "title": "Cannot access `cookies()` or `headers()` in `\"use cache\"`"}
+nav_next: {"path": "nextjs/docs/messages/no-assign-module-variable/index.md", "title": "No assign module variable"}
 ---
-[Docs](/docs)[Errors](/docs)Using Google Analytics with Next.js (through \`@next/third-parties/google\`)
 
 # Using Google Analytics with Next.js (through \`@next/third-parties/google\`)
 

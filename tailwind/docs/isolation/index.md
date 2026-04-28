@@ -10,15 +10,9 @@ content_hash: "cee47cf25eab482a913bda5bf3a4f5119944ecafcfdbbf74ed29b1d604ee2df8"
 menu_path: ["isolation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/clear/index.md", "title": "clear"}
+nav_next: {"path": "tailwind/docs/object-fit/index.md", "title": "object-fit"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  isolation
-
-Layout
 
 # isolation
 

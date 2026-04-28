@@ -9,20 +9,10 @@ last_crawled_at: "2026-04-18T16:33:48.008Z"
 content_hash: "e98555c931b18ffa143e58bfd1a24288b95b6210a686fb1f508d831b52104e86"
 menu_path: ["esbuild"]
 section_path: []
+nav_prev: {"path": "bun/docs/bundler/css/index.md", "title": "CSS"}
+nav_next: {"path": "bun/docs/bundler/executables/index.md", "title": "Single-file executable"}
 ---
-Bun’s bundler API is inspired heavily by esbuild. Migrating to Bun’s bundler from esbuild should be relatively painless. This guide will briefly explain why you might consider migrating to Bun’s bundler and provide a side-by-side API comparison reference for those who are already familiar with esbuild’s API. There are a few behavioral differences to note.
 
-## Performance
-
-With a performance-minded API coupled with the extensively optimized Zig-based JS/TS parser, Bun’s bundler is 1.75x faster than esbuild on esbuild’s three.js benchmark.
-
-## CLI API
-
-Bun and esbuild both provide a command-line interface.
-
-terminal
-
-```
 # esbuild
 esbuild <entrypoint> --outdir=out --bundle
 

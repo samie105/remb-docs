@@ -11,8 +11,9 @@ menu_path: ["sassOptions"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/rewrites/index.md", "title": "rewrites"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverActions/index.md", "title": "serverActions"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)sassOptions
 
 # sassOptions
 

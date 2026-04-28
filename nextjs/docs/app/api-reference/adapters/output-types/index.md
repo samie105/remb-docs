@@ -11,8 +11,9 @@ menu_path: ["Output Types"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/invoking-entrypoints/index.md", "title": "Invoking Entrypoints"}
+nav_next: {"path": "nextjs/docs/app/api-reference/adapters/routing-information/index.md", "title": "Routing Information"}
 ---
-[API Reference](/docs/app/api-reference)[Adapters](/docs/app/api-reference/adapters)Output Types
 
 # Output Types
 

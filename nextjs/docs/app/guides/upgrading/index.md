@@ -11,8 +11,9 @@ menu_path: ["Upgrade Guides"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/third-party-libraries/index.md", "title": "How to optimize third-party libraries"}
+nav_next: {"path": "nextjs/docs/app/guides/upgrading/codemods/index.md", "title": "Codemods"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Upgrading
 
 # Upgrade Guides
 

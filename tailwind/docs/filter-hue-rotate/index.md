@@ -10,15 +10,9 @@ content_hash: "0ad29f2ebf7b3df9d2f602772b477f5997fbe71494a2379c94c3742a43561e13"
 menu_path: ["filter: hue-rotate()"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/filter-grayscale/index.md", "title": "filter: grayscale()"}
+nav_next: {"path": "tailwind/docs/filter-invert/index.md", "title": "filter: invert()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  hue-rotate
-
-Filters
 
 # filter: hue-rotate()
 

@@ -10,7 +10,10 @@ content_hash: "09cd06654a55ebe305a57cde86227c4d40ebf3a5b92d760f33698a400e59852c"
 menu_path: ["will-change"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/user-select/index.md", "title": "user-select"}
+nav_next: {"path": "tailwind/docs/fill/index.md", "title": "fill"}
 ---
+
 Utilities for optimizing upcoming animations of elements that are expected to change.
 
 ## [Examples](#examples)

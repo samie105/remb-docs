@@ -10,7 +10,10 @@ content_hash: "4c2f7bb1f800a0500033b67b5b785df1f0fa3d0faa6a1cec83399609bdda3002"
 menu_path: ["PostgreSQL: Documentation: 18: 54.1. Overview"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/protocol-logicalrep-message-formats.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.9.\u00a0Logical Replication Message Formats"}
+nav_next: {"path": "postgres/docs/current/protocol-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.4.\u00a0Streaming Replication Protocol"}
 ---
+
 The protocol has separate phases for startup and normal operation. In the startup phase, the frontend opens a connection to the server and authenticates itself to the satisfaction of the server. (This might involve a single message, or multiple messages depending on the authentication method being used.) If all goes well, the server then sends status information to the frontend, and finally enters normal operation. Except for the initial startup-request message, this part of the protocol is driven by the server.
 
 During normal operation, the frontend sends queries and other commands to the backend, and the backend sends back query results and other responses. There are a few cases (such as `NOTIFY`) wherein the backend will send unsolicited messages, but for the most part this portion of a session is driven by frontend requests.

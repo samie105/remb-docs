@@ -10,7 +10,10 @@ content_hash: "c8bc0e70277f5cce0a9901df39b2c3fe6de69fd4e68307646807ff3985711b01"
 menu_path: ["Transactions and batch queries"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md", "title": "Custom model and field names"}
 ---
+
 A database transaction is a sequence of read/write operations guaranteed to succeed or fail as a whole (ACID properties: Atomic, Consistent, Isolated, Durable).
 
 Prisma Client supports transactions in several ways:
@@ -21,7 +24,7 @@ Prisma Client supports transactions in several ways:
 | Independent writes | `$transaction([])` API, Batch operations |
 | Read, modify, write | Interactive transactions |
 
-A [nested write](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-writes) performs multiple operations on related records in a single transaction:
+A [nested write](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-writes) performs multiple operations on related records in a single transaction:
 
 ```
 // Create user with posts in a single transaction
@@ -191,7 +194,7 @@ To avoid transaction write conflicts and deadlocks on a transaction:
 
 1.  On your transaction, use the `isolationLevel` parameter to `Prisma.TransactionIsolationLevel.Serializable`.
     
-    This ensures that your application commits multiple concurrent or parallel transactions as if they were run serially. When a transaction fails due to a write conflict or deadlock, Prisma Client returns a [P2034 error](https://www.prisma.io/docs/orm/reference/error-reference#p2034).
+    This ensures that your application commits multiple concurrent or parallel transactions as if they were run serially. When a transaction fails due to a write conflict or deadlock, Prisma Client returns a [P2034 error](prisma/docs/orm/reference/error-reference/index.md#p2034).
     
 2.  In your application code, add a retry around your transaction to handle any P2034 errors, as shown in this example:
     

@@ -10,7 +10,10 @@ content_hash: "34430bd9a647bf39360cc8cc1a9d5a669cbc4e1ef8f5bf3aba5854352130c4a8"
 menu_path: ["zod"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/goodies/index.md", "title": "Drizzle ORM - Goodies"}
+nav_next: {"path": "drizzle/docs/valibot/index.md", "title": "valibot"}
 ---
+
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-zod` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself

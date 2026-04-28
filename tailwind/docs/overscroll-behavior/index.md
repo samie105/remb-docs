@@ -10,7 +10,10 @@ content_hash: "a30f9d0ca5f9021d547e7f509240b13e40a945420c3aeb05d8b7c080a4a86785"
 menu_path: ["overscroll-behavior"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/overflow/index.md", "title": "overflow"}
+nav_next: {"path": "tailwind/docs/position/index.md", "title": "position"}
 ---
+
 Utilities for controlling how the browser behaves when reaching the boundary of a scrolling area.
 
 ## [Examples](#examples)
@@ -65,4 +68,4 @@ Prefix an `overscroll-behavior` utility with a breakpoint variant like `md:` to 
 <div class="overscroll-auto md:overscroll-contain ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

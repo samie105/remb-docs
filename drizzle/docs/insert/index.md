@@ -10,7 +10,10 @@ content_hash: "bf317b7163cb32d1db98e3b98e58a0f5f4870ebf2f75434511a0bcc85459ef38"
 menu_path: ["SQL Insert"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/select/index.md", "title": "SQL Select"}
+nav_next: {"path": "drizzle/docs/update/index.md", "title": "SQL Update"}
 ---
+
 ## SQL Insert
 
 Drizzle ORM provides you the most SQL-like way to insert rows into the database tables.

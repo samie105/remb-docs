@@ -10,7 +10,10 @@ content_hash: "7d667558247140c3bcb79c2974a467619146caab146fb3f5120f00bba4d1a6b1"
 menu_path: ["Migrate from Prisma to Drizzle"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/migrate/components/index.md", "title": "Drizzle ORM - undefined"}
+nav_next: {"path": "drizzle/docs/migrate/migrate-from-sequelize/index.md", "title": "Migrate from Sequelize to Drizzle"}
 ---
+
 This guide provides a straightforward approach to migrating a basic **Prisma** project to **Drizzle ORM**. Although the example focuses on `PostgreSQL`, the process is similar for other supported databases.
 
 Regardless of your application type or API layer, the steps to transition from **Prisma** to **Drizzle ORM** remain consistent:
@@ -25,7 +28,7 @@ The corresponding tables have been created using a generated Prisma migration.
 
 #### Install Drizzle ORM & Drizzle Kit[](#install-drizzle-orm--drizzle-kit)
 
-The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) - CLI companion for automatic SQL migrations generation and rapid prototyping.
+The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](drizzle/docs/kit-overview/index.md) - CLI companion for automatic SQL migrations generation and rapid prototyping.
 
 ```
 npm i drizzle-orm pg

@@ -10,15 +10,9 @@ content_hash: "27174fb2907632e4cc2fd1dbfda938d86a5d9e5b41f82332dde495cc18eb50fe"
 menu_path: ["flex-direction"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/flex-basis/index.md", "title": "flex-basis"}
+nav_next: {"path": "tailwind/docs/flex-wrap/index.md", "title": "flex-wrap"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  flex-direction
-
-Flexbox & Grid
 
 # flex-direction
 

@@ -11,8 +11,9 @@ menu_path: ["next.config.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/index.md", "title": "Configuration"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/adapterPath/index.md", "title": "adapterPath"}
 ---
-[API Reference](/docs/app/api-reference)[Configuration](/docs/app/api-reference/config)next.config.js
 
 # next.config.js
 

@@ -10,7 +10,10 @@ content_hash: "4796433f6d4ef6cc71a916b6eafff9960b1b2101693a46d71ccf7aad6e7599a0"
 menu_path: ["text-align"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/list-style-type/index.md", "title": "list-style-type"}
+nav_next: {"path": "tailwind/docs/color/index.md", "title": "color"}
 ---
+
 Utilities for controlling the alignment of text.
 
 ## [Examples](#examples)
@@ -73,4 +76,4 @@ Prefix a `text-align` utility with a breakpoint variant like `md:` to only apply
 <p class="text-left md:text-center ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

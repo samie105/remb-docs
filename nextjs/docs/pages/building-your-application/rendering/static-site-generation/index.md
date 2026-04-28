@@ -11,8 +11,9 @@ menu_path: ["Static Site Generation (SSG)"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/rendering/server-side-rendering/index.md", "title": "Server-side Rendering (SSR)"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/automatic-static-optimization/index.md", "title": "Automatic Static Optimization"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Rendering](/docs/pages/building-your-application/rendering)Static Site Generation (SSG)
 
 # Static Site Generation (SSG)
 

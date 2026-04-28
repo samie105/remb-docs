@@ -9,29 +9,10 @@ last_crawled_at: "2026-04-18T16:58:58.958Z"
 content_hash: "87e8f9b4c917c2640cf0aa821850f5847fad0d0ad7806a3a0067793d4d672b5d"
 menu_path: ["bunfig.toml"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/bun-apis/index.md", "title": "Bun APIs"}
+nav_next: {"path": "bun/docs/runtime/c-compiler/index.md", "title": "C Compiler"}
 ---
-Bun’s behavior can be configured using its configuration file, `bunfig.toml`. In general, Bun relies on pre-existing configuration files like `package.json` and `tsconfig.json` to configure its behavior. `bunfig.toml` is only necessary for configuring Bun-specific things. This file is optional, and Bun will work out of the box without it.
 
-## Global vs. local
-
-In general, it’s recommended to add a `bunfig.toml` file to your project root, alongside your `package.json`. To configure Bun globally, you can also create a `.bunfig.toml` file at one of the following paths:
-
-*   `$HOME/.bunfig.toml`
-*   `$XDG_CONFIG_HOME/.bunfig.toml`
-
-If both a global and local `bunfig` are detected, the results are shallow-merged, with local overriding global. CLI flags will override `bunfig` setting where applicable.
-
-## Runtime
-
-Bun’s runtime behavior is configured using top-level fields in the `bunfig.toml` file.
-
-### `preload`
-
-An array of scripts/plugins to execute before running a file or script.
-
-bunfig.toml
-
-```
 # scripts to run before `bun run`-ing a file or script
 # register plugins by adding them to this list
 preload = ["./preload.ts"]
@@ -684,7 +665,7 @@ print = "yarn"
 
 ### `install.linker`
 
-Configure the linker strategy for installing dependencies. Defaults to `"isolated"` for new workspaces, `"hoisted"` for new single-package projects and existing projects (made pre-v1.3.2). For complete documentation refer to [Package manager > Isolated installs](https://bun.com/docs/pm/isolated-installs).
+Configure the linker strategy for installing dependencies. Defaults to `"isolated"` for new workspaces, `"hoisted"` for new single-package projects and existing projects (made pre-v1.3.2). For complete documentation refer to [Package manager > Isolated installs](bun/docs/pm/isolated-installs/index.md).
 
 bunfig.toml
 
@@ -754,7 +735,7 @@ When a security scanner is configured:
 *   Installation is cancelled if fatal issues are found
 *   Security warnings are displayed during installation
 
-Learn more about [using and writing security scanners](https://bun.com/docs/pm/security-scanner-api).
+Learn more about [using and writing security scanners](bun/docs/pm/security-scanner-api/index.md).
 
 ### `install.minimumReleaseAge`
 
@@ -770,7 +751,7 @@ minimumReleaseAge = 259200
 minimumReleaseAgeExcludes = ["@types/bun", "typescript"]
 ```
 
-For more details see [Minimum release age](https://bun.com/docs/pm/cli/install#minimum-release-age) in the install documentation.
+For more details see [Minimum release age](bun/docs/pm/cli/install/index.md#minimum-release-age) in the install documentation.
 
 ## `bun run`
 

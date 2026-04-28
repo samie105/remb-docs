@@ -11,8 +11,9 @@ menu_path: ["Docs Contribution Guide"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/community/index.md", "title": "Next.js Community"}
+nav_next: {"path": "nextjs/docs/community/rspack/index.md", "title": "Rspack Integration"}
 ---
-[Next.js Docs](/docs)[Community](/docs/community)Contribution Guide
 
 # Docs Contribution Guide
 
@@ -36,7 +37,7 @@ The docs content can be found on the [Next.js repo](https://github.com/vercel/ne
 
 If you're new to GitHub, we recommend reading the [GitHub Open Source Guide](https://opensource.guide/how-to-contribute/#opening-a-pull-request) to learn how to fork a repository, create a branch, and submit a pull request.
 
-> **Good to know**: The underlying docs code lives in a private codebase that is synced to the Next.js public repo. This means that you can't preview the docs locally. However, you'll see your changes on [nextjs.org](https://nextjs.org/docs) after merging a pull request.
+> **Good to know**: The underlying docs code lives in a private codebase that is synced to the Next.js public repo. This means that you can't preview the docs locally. However, you'll see your changes on [nextjs.org](nextjs/docs/index.md) after merging a pull request.
 
 ### Writing MDX[](#writing-mdx)
 

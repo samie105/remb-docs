@@ -10,15 +10,9 @@ content_hash: "258f764c591944c6e9c0f6f491715fba2e3bc42e5c8a1ab1b4d0f8e552172bb7"
 menu_path: ["user-select"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/touch-action/index.md", "title": "touch-action"}
+nav_next: {"path": "tailwind/docs/will-change/index.md", "title": "will-change"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  user-select
-
-Interactivity
 
 # user-select
 

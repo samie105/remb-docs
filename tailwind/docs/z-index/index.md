@@ -10,15 +10,9 @@ content_hash: "3d4a9eeffbbf04f941185345f0031f055c6851a00fa1ebf261535ffd711042b3"
 menu_path: ["z-index"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/visibility/index.md", "title": "visibility"}
+nav_next: {"path": "tailwind/docs/flex-basis/index.md", "title": "flex-basis"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  z-index
-
-Layout
 
 # z-index
 

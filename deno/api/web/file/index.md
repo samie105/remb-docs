@@ -10,7 +10,10 @@ content_hash: "4c1a2e97fed9ad3acf2ac6bec8e71680289c43bbcd4407e56629d50065dc1f35"
 menu_path: ["File - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/fetch/index.md", "title": "Fetch - Web documentation"}
+nav_next: {"path": "deno/api/web/gpu/index.md", "title": "GPU - Web documentation"}
 ---
+
 I
 
 v

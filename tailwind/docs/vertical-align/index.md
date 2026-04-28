@@ -10,15 +10,9 @@ content_hash: "8596080ea1606072aaa2df0703d711ca745f90187d182922686e775ccd7775de"
 menu_path: ["vertical-align"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/text-indent/index.md", "title": "text-indent"}
+nav_next: {"path": "tailwind/docs/white-space/index.md", "title": "white-space"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  vertical-align
-
-Typography
 
 # vertical-align
 

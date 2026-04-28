@@ -11,7 +11,10 @@ menu_path: ["Editor setup"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md", "title": "TypeORM"}
+nav_next: {"path": "prisma/docs/orm/more/dev-environment/environment-variables/index.md", "title": "Environment variables"}
 ---
+
 Dev environment
 
 Learn how to configure your editor and IDEs for an optimal developer experience with Prisma ORM

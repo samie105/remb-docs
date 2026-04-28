@@ -11,8 +11,9 @@ menu_path: ["Image"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/components/head/index.md", "title": "Head"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/components/image-legacy/index.md", "title": "Image (Legacy)"}
 ---
-[API Reference](/docs/pages/api-reference)[Components](/docs/pages/api-reference/components)Image
 
 # Image
 

@@ -10,7 +10,10 @@ content_hash: "44ce990787cb218e02418a4df61323f1b99e5d1fac40354809acd76ab751bc1d"
 menu_path: ["backface-visibility"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/animation/index.md", "title": "animation"}
+nav_next: {"path": "tailwind/docs/perspective/index.md", "title": "perspective"}
 ---
+
 Utilities for controlling if an element's backface is visible.
 
 ## [Examples](#examples)
@@ -35,4 +38,4 @@ Prefix a `backface-visibility` utility with a breakpoint variant like `md:` to o
 <div class="backface-visible md:backface-hidden ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

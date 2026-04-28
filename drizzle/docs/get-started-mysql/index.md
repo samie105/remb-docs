@@ -10,7 +10,10 @@ content_hash: "9a6dded7491593e3960f60515f26d10a94bbf3a5178bb9347c2041d34e77773c"
 menu_path: ["Drizzle <> MySQL"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/get-started-gel/index.md", "title": "Drizzle <> Gel"}
+nav_next: {"path": "drizzle/docs/get-started-sqlite/index.md", "title": "Drizzle <> SQLite"}
 ---
+
 To use Drizzle with a MySQL database, you should use the `mysql2` driver
 
 According to the **[official website](https://github.com/sidorares/node-mysql2)**, `mysql2` is a MySQL client for Node.js with focus on performance.

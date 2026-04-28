@@ -10,7 +10,10 @@ content_hash: "c73ff1563b4ea86f64f4283cf5043bd4fd42360f1b308c7192eeb7c57a05d81d"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_getnspname"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/spi-spi-getbinval.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getbinval"}
+nav_next: {"path": "postgres/docs/current/spi-spi-getrelname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getrelname"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/spi-spi-getnspname.html "PostgreSQL devel - SPI_getnspname")
 
 SPI\_getnspname — return the namespace of the specified relation

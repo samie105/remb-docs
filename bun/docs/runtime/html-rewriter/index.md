@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:59:55.990Z"
 content_hash: "814810f5f49c6a0accdfb293631bae799b251e275234cb927a23341413c970c3"
 menu_path: ["HTMLRewriter"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/hashing/index.md", "title": "Hashing"}
+nav_next: {"path": "bun/docs/runtime/http/cookies/index.md", "title": "Cookies"}
 ---
+
 HTMLRewriter lets you use CSS selectors to transform HTML documents. It works with `Request`, `Response`, as well as `string`. Bun’s implementation is based on Cloudflare’s [lol-html](https://github.com/cloudflare/lol-html).
 
 * * *

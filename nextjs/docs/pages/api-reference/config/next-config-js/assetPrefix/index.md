@@ -11,8 +11,9 @@ menu_path: ["assetPrefix"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/basePath/index.md", "title": "basePath"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)assetPrefix
 
 # assetPrefix
 

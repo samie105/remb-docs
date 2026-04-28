@@ -10,7 +10,10 @@ content_hash: "abe3e07e84aa92d6a8abae48597e8cf50a3c950457a8584367e8ba16d1c0d902"
 menu_path: ["PostgreSQL: Documentation: 18: 52.54. pg_subscription"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/catalog-pg-subscription-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.55.\u00a0pg_subscription_rel"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-tablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.56.\u00a0pg_tablespace"}
 ---
+
 The catalog `pg_subscription` contains all existing logical replication subscriptions. For more information about logical replication see [Chapter 29](https://www.postgresql.org/docs/current/logical-replication.html "Chapter 29. Logical Replication").
 
 Unlike most system catalogs, `pg_subscription` is shared across all databases of a cluster: there is only one copy of `pg_subscription` per cluster, not one per database.

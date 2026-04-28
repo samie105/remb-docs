@@ -11,8 +11,9 @@ menu_path: ["No CSS Tags"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-cache/index.md", "title": "No Cache Detected"}
+nav_next: {"path": "nextjs/docs/messages/no-document-import-in-page/index.md", "title": "No Document Import in Page"}
 ---
-[Docs](/docs)[Errors](/docs)No CSS Tags
 
 # No CSS Tags
 

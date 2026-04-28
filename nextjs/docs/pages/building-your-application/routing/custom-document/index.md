@@ -11,8 +11,9 @@ menu_path: ["Custom Document"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/custom-app/index.md", "title": "Custom App"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/api-routes/index.md", "title": "API Routes"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)Custom Document
 
 # Custom Document
 

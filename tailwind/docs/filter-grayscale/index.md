@@ -10,15 +10,9 @@ content_hash: "ecfba0b96c05430d0e94cf6a8a246f5b0a64f279a1835cfa8159f1480aa2fd57"
 menu_path: ["filter: grayscale()"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
+nav_next: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  grayscale
-
-Filters
 
 # filter: grayscale()
 

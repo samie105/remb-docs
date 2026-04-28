@@ -10,15 +10,9 @@ content_hash: "e34e04d85bd23473ef6e59ecd8c6a4f34a6e0e57b99f1a6d045e0e126e643c2c"
 menu_path: ["place-content"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/align-self/index.md", "title": "align-self"}
+nav_next: {"path": "tailwind/docs/place-items/index.md", "title": "place-items"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  place-content
-
-Flexbox & Grid
 
 # place-content
 

@@ -11,8 +11,9 @@ menu_path: ["getStaticProps"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/index.md", "title": "Data Fetching"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-paths/index.md", "title": "getStaticPaths"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Data Fetching](/docs/pages/building-your-application/data-fetching)getStaticProps
 
 # getStaticProps
 

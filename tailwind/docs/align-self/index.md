@@ -10,7 +10,10 @@ content_hash: "ff43c8c7bab04bfeb931b6c5efe98ca6d3fa55292b6f79a054bd21ee4ffe391a"
 menu_path: ["align-self"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/align-items/index.md", "title": "align-items"}
+nav_next: {"path": "tailwind/docs/place-content/index.md", "title": "place-content"}
 ---
+
 Flexbox & Grid
 
 Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis.
@@ -127,4 +130,4 @@ Prefix an `align-self` utility with a breakpoint variant like `md:` to only appl
 <div class="self-auto md:self-end ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

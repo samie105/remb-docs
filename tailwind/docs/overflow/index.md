@@ -10,15 +10,9 @@ content_hash: "b4f000111f10863bf8de0f11236fa423c9dae1a2a7578951fe6ba46f8e9361c0"
 menu_path: ["overflow"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/object-position/index.md", "title": "object-position"}
+nav_next: {"path": "tailwind/docs/overscroll-behavior/index.md", "title": "overscroll-behavior"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Layout
-2.  overflow
-
-Layout
 
 # overflow
 

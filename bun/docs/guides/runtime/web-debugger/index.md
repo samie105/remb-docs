@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:53:33.554Z"
 content_hash: "ec276e992e44eecf1a3e0dfe94d8af78f4a46c1052eff864b5d1b07eb30259cf"
 menu_path: ["Debugging Bun with the web debugger"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/runtime/vscode-debugger/index.md", "title": "Debugging Bun with the VS Code extension"}
+nav_next: {"path": "bun/docs/guides/streams/node-readable-to-arraybuffer/index.md", "title": "Convert a Node.js Readable to an ArrayBuffer"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

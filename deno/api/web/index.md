@@ -10,7 +10,10 @@ content_hash: "4833568f801855b6d235fb22d220449c460eaea51713559d159bc4642d66ec87"
 menu_path: ["Web Platform APIs"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/zlib/index.md", "title": "zlib - Node documentation"}
+nav_next: {"path": "deno/api/web/all_symbols/index.md", "title": "All Symbols - Web documentation"}
 ---
+
 **On this page**
 
 -   [Core Web APIs](#core-web-apis)

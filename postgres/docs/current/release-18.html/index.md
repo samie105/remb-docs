@@ -10,7 +10,10 @@ content_hash: "0fb107630e278b5e102a46b9e97f4765cd7ce48e292d03ac656b3b3b72d93655"
 menu_path: ["PostgreSQL: Documentation: 18: E.4. Release 18"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/release-18-3.html/index.md", "title": "PostgreSQL: Documentation: 18: E.1.\u00a0Release 18.3"}
+nav_next: {"path": "postgres/docs/current/release-prior.html/index.md", "title": "PostgreSQL: Documentation: 18: E.5.\u00a0Prior Releases"}
 ---
+
 -   Increase the logging granularity of server variable [log\_connections](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-CONNECTIONS) (Melanie Plageman) [§](https://postgr.es/c/9219093ca)
     
     This server variable was previously only boolean, which is still supported.
@@ -29,7 +32,7 @@ content_language: "en"
     
 -   Add delay time reporting to [VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html "VACUUM") and [ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") (Bertrand Drouvot, Nathan Bossart) [§](https://postgr.es/c/bb8dff999) [§](https://postgr.es/c/7720082ae)
     
-    This information appears in the server log, the system views [`pg_stat_progress_vacuum`](https://www.postgresql.org/docs/current/progress-reporting.html#VACUUM-PROGRESS-REPORTING "27.4.5. VACUUM Progress Reporting") and [`pg_stat_progress_analyze`](https://www.postgresql.org/docs/current/progress-reporting.html#PG-STAT-PROGRESS-ANALYZE-VIEW "Table 27.38. pg_stat_progress_analyze View"), and the output of [VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html "VACUUM") and [ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") when in `VERBOSE` mode; tracking must be enabled with the server variable [track\_cost\_delay\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-COST-DELAY-TIMING).
+    This information appears in the server log, the system views [`pg_stat_progress_vacuum`](https://www.postgresql.org/docs/current/progress-reporting.html#VACUUM-PROGRESS-REPORTING "27.4.5. VACUUM Progress Reporting") and [`pg_stat_progress_analyze`](https://www.postgresql.org/docs/current/progress-reporting.html#PG-STAT-PROGRESS-ANALYZE-VIEW "Table 27.38. pg_stat_progress_analyze View"), and the output of [VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html "VACUUM") and [ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") when in `VERBOSE` mode; tracking must be enabled with the server variable [track\_cost\_delay\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-COST-DELAY-TIMING).
     
 -   Add WAL, CPU, and average read statistics output to `ANALYZE VERBOSE` (Anthonin Bonnefoy) [§](https://postgr.es/c/4c1b4cdb8) [§](https://postgr.es/c/bb7775234)
     
@@ -41,13 +44,13 @@ content_language: "en"
     
 -   Add [`pg_stat_io`](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-IO-VIEW "27.2.13. pg_stat_io") columns to report I/O activity in bytes (Nazir Bilal Yavuz) [§](https://postgr.es/c/f92c854cf)
     
-    The new columns are `read_bytes`, `write_bytes`, and `extend_bytes`. The `op_bytes` column, which always equaled [`BLCKSZ`](https://www.postgresql.org/docs/current/runtime-config-preset.html#GUC-BLOCK-SIZE), has been removed.
+    The new columns are `read_bytes`, `write_bytes`, and `extend_bytes`. The `op_bytes` column, which always equaled [`BLCKSZ`](postgres/docs/current/runtime-config-preset.html/index.md#GUC-BLOCK-SIZE), has been removed.
     
 -   Add WAL I/O activity rows to `pg_stat_io` (Nazir Bilal Yavuz, Bertrand Drouvot, Michael Paquier) [§](https://postgr.es/c/a051e71e2) [§](https://postgr.es/c/4538bd3f1) [§](https://postgr.es/c/7f7f324eb)
     
     This includes WAL receiver activity and a wait event for such writes.
     
--   Change server variable [track\_wal\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-WAL-IO-TIMING) to control tracking WAL timing in `pg_stat_io` instead of [`pg_stat_wal`](https://www.postgresql.org/docs/current/monitoring-stats.html#PG-STAT-WAL-VIEW "Table 27.26. pg_stat_wal View") (Bertrand Drouvot) [§](https://postgr.es/c/6c349d83b)
+-   Change server variable [track\_wal\_io\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-WAL-IO-TIMING) to control tracking WAL timing in `pg_stat_io` instead of [`pg_stat_wal`](https://www.postgresql.org/docs/current/monitoring-stats.html#PG-STAT-WAL-VIEW "Table 27.26. pg_stat_wal View") (Bertrand Drouvot) [§](https://postgr.es/c/6c349d83b)
     
 -   Remove read/sync columns from `pg_stat_wal` (Bertrand Drouvot) [§](https://postgr.es/c/2421e9a51) [§](https://postgr.es/c/6c349d83b)
     
@@ -57,7 +60,7 @@ content_language: "en"
     
     Per-backend WAL statistics can be cleared via [`pg_stat_reset_backend_stats()`](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-STATS-FUNCS-TABLE "Table 27.36. Additional Statistics Functions").
     
--   Add function [`pg_ls_summariesdir()`](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADMIN-GENFILE-TABLE "Table 9.108. Generic File Access Functions") to specifically list the contents of [`PGDATA`](https://www.postgresql.org/docs/current/storage-file-layout.html "66.1. Database File Layout")/[`pg_wal/summaries`](https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-WAL-SUMMARY-KEEP-TIME) (Yushi Ogiwara) [§](https://postgr.es/c/4e1fad378)
+-   Add function [`pg_ls_summariesdir()`](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADMIN-GENFILE-TABLE "Table 9.108. Generic File Access Functions") to specifically list the contents of [`PGDATA`](https://www.postgresql.org/docs/current/storage-file-layout.html "66.1. Database File Layout")/[`pg_wal/summaries`](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-SUMMARY-KEEP-TIME) (Yushi Ogiwara) [§](https://postgr.es/c/4e1fad378)
     
 -   Add column [`pg_stat_checkpointer`](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-CHECKPOINTER-VIEW "27.2.15. pg_stat_checkpointer").`num_done` to report the number of completed checkpoints (Anton A. Melnikov) [§](https://postgr.es/c/559efce1d)
     
@@ -71,7 +74,7 @@ content_language: "en"
     
     The new columns are `parallel_workers_to_launch` and `parallel_workers_launched`.
     
--   Have [query id](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-COMPUTE-QUERY-ID) computation of constant lists consider only the first and last constants (Dmitry Dolgov, Sami Imseih) [§](https://postgr.es/c/62d712ecf) [§](https://postgr.es/c/9fbd53dea) [§](https://postgr.es/c/c2da1a5d6)
+-   Have [query id](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-COMPUTE-QUERY-ID) computation of constant lists consider only the first and last constants (Dmitry Dolgov, Sami Imseih) [§](https://postgr.es/c/62d712ecf) [§](https://postgr.es/c/9fbd53dea) [§](https://postgr.es/c/c2da1a5d6)
     
     Jumbling is used by [pg\_stat\_statements](https://www.postgresql.org/docs/current/pgstatstatements.html "F.32. pg_stat_statements — track statistics of SQL planning and execution").
     

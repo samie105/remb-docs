@@ -11,8 +11,9 @@ menu_path: ["Configuring"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/client-side/index.md", "title": "Client-side Fetching"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/index.md", "title": "API Reference"}
 ---
-[Pages Router](/docs/pages)[Building Your Application](/docs/pages/building-your-application)Configuring
 
 # Configuring
 

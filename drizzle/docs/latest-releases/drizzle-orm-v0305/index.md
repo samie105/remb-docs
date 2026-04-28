@@ -10,7 +10,10 @@ content_hash: "4d278d57401451dfded8d5a0be80d050c2f65e4cdf28f2218d2abdc75aba6de3"
 menu_path: ["Drizzle ORM - DrizzleORM v0.30.5 release"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0304/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.4 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0306/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.6 release"}
 ---
+
 DrizzleORM v0.30.5 release
 
 Mar 27, 2024

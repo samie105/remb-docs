@@ -10,7 +10,10 @@ content_hash: "3f977ab7bda04a8fd63fc25e9cb502df8d38d5e4d84dfae51af953f1277d428d"
 menu_path: ["Fetch - Deno documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/errors/index.md", "title": "Errors - Deno documentation"}
+nav_next: {"path": "deno/api/deno/ffi/index.md", "title": "FFI - Deno documentation"}
 ---
+
 c
 
 [Deno.HttpClient](./././~/Deno.HttpClient "Deno.HttpClient")

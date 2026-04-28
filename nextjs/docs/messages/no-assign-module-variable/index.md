@@ -11,8 +11,9 @@ menu_path: ["No assign module variable"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/next-script-for-ga/index.md", "title": "Using Google Analytics with Next.js (through `@next/third-parties/google`)"}
+nav_next: {"path": "nextjs/docs/messages/no-async-client-component/index.md", "title": "No async Client Component"}
 ---
-[Docs](/docs)[Errors](/docs)No assign module variable
 
 # No assign module variable
 

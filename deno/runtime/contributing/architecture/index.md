@@ -10,7 +10,10 @@ content_hash: "e5a43e9aad6509d60c4626913a6ac3d0e15b6dbe9fd72dbad65bb5464d1c2f29"
 menu_path: ["Architecture Overview"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/contributing/index.md", "title": "Contributing and support"}
+nav_next: {"path": "deno/runtime/contributing/profiling/index.md", "title": "Contributing and support"}
 ---
+
 **On this page**
 
 -   [Deno and Linux analogy](#deno-and-linux-analogy)

@@ -10,7 +10,10 @@ content_hash: "f641e493a0b992ce331ee8748beae992275b70c8109acc63a6adcf070dfae41a"
 menu_path: ["@std/regexp"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/random/index.md", "title": "@std/random"}
+nav_next: {"path": "deno/runtime/reference/std/semver/index.md", "title": "@std/semver"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

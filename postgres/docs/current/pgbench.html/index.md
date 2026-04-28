@@ -10,7 +10,10 @@ content_hash: "58c7a2f510fb3c0727cbccbc116b8d6d2a497b0ce1d45db84110d825c2b45cf4"
 menu_path: ["PostgreSQL: Documentation: 18: pgbench"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/pgarchivecleanup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_archivecleanup"}
+nav_next: {"path": "postgres/docs/current/pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
 ---
+
 ## Description
 
 pgbench is a simple program for running benchmark tests on PostgreSQL. It runs the same sequence of SQL commands over and over, possibly in multiple concurrent database sessions, and then calculates the average transaction rate (transactions per second). By default, pgbench tests a scenario that is loosely based on TPC-B, involving five `SELECT`, `UPDATE`, and `INSERT` commands per transaction. However, it is easy to test other cases by writing your own transaction script files.
@@ -467,7 +470,7 @@ SELECT 4 AS four \\; SELECT 5 AS five \\aset
 `\else`  
 `\endif` [#](#PGBENCH-METACOMMAND-IF-ELSE)
 
-This group of commands implements nestable conditional blocks, similarly to `psql`'s [`\if` _`expression`_](https://www.postgresql.org/docs/current/app-psql.html#PSQL-METACOMMAND-IF). Conditional expressions are identical to those with `\set`, with non-zero values interpreted as true.
+This group of commands implements nestable conditional blocks, similarly to `psql`'s [`\if` _`expression`_](postgres/docs/current/app-psql.html/index.md#PSQL-METACOMMAND-IF). Conditional expressions are identical to those with `\set`, with non-zero values interpreted as true.
 
 ``\set _`varname`_ _`expression`_`` [#](#PGBENCH-METACOMMAND-SET)
 
@@ -522,7 +525,7 @@ This group of commands implements pipelining of SQL statements. A pipeline must 
 
 ### Built-in Operators
 
-The arithmetic, bitwise, comparison and logical operators listed in [Table 302](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-OPERATORS "Table 302. pgbench Operators") are built into pgbench and may be used in expressions appearing in [`\set`](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-METACOMMAND-SET). The operators are listed in increasing precedence order. Except as noted, operators taking two numeric inputs will produce a double value if either input is double, otherwise they produce an integer result.
+The arithmetic, bitwise, comparison and logical operators listed in [Table 302](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-OPERATORS "Table 302. pgbench Operators") are built into pgbench and may be used in expressions appearing in [`\set`](postgres/docs/current/pgbench.html/index.md#PGBENCH-METACOMMAND-SET). The operators are listed in increasing precedence order. Except as noted, operators taking two numeric inputs will produce a double value if either input is double, otherwise they produce an integer result.
 
 **Table 302. pgbench Operators**
 
@@ -756,7 +759,7 @@ Negation
 
 ### Built-In Functions
 
-The functions listed in [Table 303](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-FUNCTIONS "Table 303. pgbench Functions") are built into pgbench and may be used in expressions appearing in [`\set`](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-METACOMMAND-SET).
+The functions listed in [Table 303](https://www.postgresql.org/docs/current/pgbench.html#PGBENCH-FUNCTIONS "Table 303. pgbench Functions") are built into pgbench and may be used in expressions appearing in [`\set`](postgres/docs/current/pgbench.html/index.md#PGBENCH-METACOMMAND-SET).
 
 **Table 303. pgbench Functions**
 

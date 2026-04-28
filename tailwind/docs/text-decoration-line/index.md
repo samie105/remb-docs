@@ -10,15 +10,9 @@ content_hash: "90ad3d4da9d2265481d3e2c5ea1cf879613740594fc766f94af17da6f1e9b963"
 menu_path: ["text-decoration-line"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/color/index.md", "title": "color"}
+nav_next: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  text-decoration-line
-
-Typography
 
 # text-decoration-line
 

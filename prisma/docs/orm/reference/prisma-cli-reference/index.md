@@ -11,291 +11,10 @@ menu_path: ["Prisma CLI reference"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues/index.md", "title": "Limitations and known issues"}
+nav_next: {"path": "prisma/docs/orm/reference/prisma-client-reference/index.md", "title": "Prisma Client API"}
 ---
-This page gives an overview of all available Prisma CLI commands, explains their options and shows numerous usage examples
 
-This document describes the Prisma CLI commands, arguments, and options.
-
-### [`version` (`-v`)](#version--v)
-
-The `version` command outputs information about your current `prisma` version, platform, and engine binaries.
-
-#### [Options](#options)
-
-The `version` command recognizes the following options to modify its behavior:
-
-| Option | Required | Description |
-| --- | --- | --- |
-| `--json` | No | Outputs version information in JSON format. |
-
-#### [Examples](#examples)
-
-##### [Output version information](#output-version-information)
-
-```
-prisma version
-```
-
-```
-Environment variables loaded from .env
-prisma               : 2.21.0-dev.4
-@prisma/client       : 2.21.0-dev.4
-Current platform     : windows
-Query Engine         : query-engine 2fb8f444d9cdf7c0beee7b041194b42d7a9ce1e6 (at C:\Users\veroh\AppData\Roaming\npm\node_modules\@prisma\cli\query-engine-windows.exe)
-Migration Engine     : migration-engine-cli 2fb8f444d9cdf7c0beee7b041194b42d7a9ce1e6 (at C:\Users\veroh\AppData\Roaming\npm\node_modules\@prisma\cli\migration-engine-windows.exe)
-Format Binary        : prisma-fmt 60ba6551f29b17d7d6ce479e5733c70d9c00860e (at node_modules\@prisma\engines\prisma-fmt-windows.exe)
-Default Engines Hash : 60ba6551f29b17d7d6ce479e5733c70d9c00860e
-Studio               : 0.365.0
-```
-
-##### [Output version information (`-v`)](#output-version-information--v)
-
-```
-prisma -v
-```
-
-```
-Environment variables loaded from .env
-prisma               : 2.21.0-dev.4
-@prisma/client       : 2.21.0-dev.4
-Current platform     : windows
-Query Engine         : query-engine 2fb8f444d9cdf7c0beee7b041194b42d7a9ce1e6 (at C:\Users\veroh\AppData\Roaming\npm\node_modules\@prisma\cli\query-engine-windows.exe)
-Migration Engine     : migration-engine-cli 2fb8f444d9cdf7c0beee7b041194b42d7a9ce1e6 (at C:\Users\veroh\AppData\Roaming\npm\node_modules\@prisma\cli\migration-engine-windows.exe)
-Format Binary        : prisma-fmt 60ba6551f29b17d7d6ce479e5733c70d9c00860e (at node_modules\@prisma\engines\prisma-fmt-windows.exe)
-Default Engines Hash : 60ba6551f29b17d7d6ce479e5733c70d9c00860e
-Studio               : 0.365.0
-```
-
-##### [Output version information as JSON](#output-version-information-as-json)
-
-```
-prisma version --json
-```
-
-```
-Environment variables loaded from .env
-{
-  "prisma": "2.21.0-dev.4",
-  "@prisma/client": "2.21.0-dev.4",
-  "current-platform": "windows",
-  "query-engine": "query-engine 60ba6551f29b17d7d6ce479e5733c70d9c00860e (at node_modules\\@prisma\\engines\\query-engine-windows.exe)",
-  "migration-engine": "migration-engine-cli 60ba6551f29b17d7d6ce479e5733c70d9c00860e (at node_modules\\@prisma\\engines\\migration-engine-windows.exe)",
-  "format-binary": "prisma-fmt 60ba6551f29b17d7d6ce479e5733c70d9c00860e (at node_modules\\@prisma\\engines\\prisma-fmt-windows.exe)",
-  "default-engines-hash": "60ba6551f29b17d7d6ce479e5733c70d9c00860e",
-  "studio": "0.365.0"
-}
-```
-
-### [`init`](#init)
-
-Bootstraps a fresh Prisma ORM project within the current directory.
-
-The `init` command does not interpret any existing files. Instead, it creates a `prisma` directory containing a bare-bones `schema.prisma` file within your current directory.
-
-By default, the project sets up a [local Prisma Postgres](https://www.prisma.io/docs/postgres/database/local-development) instance but you can choose a different database using the `--datasource-provider` option.
-
-#### [Arguments](#arguments)
-
-| Argument | Required | Description | Default |
-| --- | --- | --- | --- |
-| `--datasource-provider` | No | Specifies the value for the `provider` field in the `datasource` block. Options are `prisma+postgres`, `sqlite`, `postgresql`, `mysql`, `sqlserver`, `mongodb` and `cockroachdb`. | `postgresql` |
-| `--db` | No | Shorthand syntax for `--datasource-provider prisma+postgres`; creates a new [Prisma Postgres](https://www.prisma.io/docs/postgres) instance. Requires authentication in the [PDP Console](https://console.prisma.io/?utm_source=docs&utm_medium=content&utm_content=orm). |  |
-| `--prompt` (or `--vibe`) | No | Scaffolds a Prisma schema based on the prompt and deploys it to a fresh Prisma Postgres instance. Requires authentication in the [PDP Console](https://console.prisma.io/?utm_source=docs&utm_medium=content&utm_content=orm). |  |
-| `--url` | No | Define a custom `datasource` url. |  |
-| `--generator-provider` | No | Define the generator provider to use. | `prisma-client` |
-| `--preview-feature` | No | Define the [Preview features](https://www.prisma.io/docs/orm/reference/preview-features/cli-preview-features) to use. To define multiple Preview features, you have to provide the flag multiple times for each Preview feature. See examples. |  |
-| `--output` | No | Specifies the [output location for the generated client](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#fields-for-prisma-client-provider). | `../generated/prisma` |
-| `--with-model` | No | Adds a simple `User` model to the initial Prisma schema. Available since version `5.14.0`. |  |
-
-#### [Examples](#examples-1)
-
-**Run `prisma init`**
-
-```
-prisma init
-```
-
-```
-npx prisma init
-
-Initialized Prisma in your project
-
-  prisma/
-    schema.prisma
-  prisma.config.ts
-
-Next, choose how you want to set up your database:
-
-CONNECT EXISTING DATABASE:
-  1. Configure your DATABASE_URL in `prisma.config.ts`
-  2. Run `npx prisma db pull` to introspect your database.
-
-CREATE NEW DATABASE:
-  Local: npx prisma dev (runs Postgres locally in your terminal)
-  Cloud: npx create-db (creates a free Prisma Postgres database)
-
-  Then, define your models in `prisma/schema.prisma` and run `npx prisma migrate dev` to apply your schema.
-
-Learn more: https://pris.ly/getting-started
-```
-
-Next, run the `prisma dev` command to interact with your local Prisma Postgres instance (e.g. to run migrations or execute queries).
-
-**Run `prisma init --datasource-provider sqlite`**
-
-```
-prisma init --datasource-provider sqlite
-```
-
-The command output contains helpful information on how to use the generated files and begin using Prisma ORM with your project.
-
-**Run `prisma init --db`**
-
-```
-prisma init --db
-```
-
-```
-✓ Select an authentication method Google
-Authenticating to Prisma Platform via browser.
-
-Visit the following URL in your browser to authenticate:
-https://console.prisma.io/auth/cli?state=eyJjb6ll...
-
-Successfully authenticated as amanyoyoyo@gmail.com.
-Let's set up your Prisma Postgres database!
-✓ Select your region: ap-southeast-1 - Asia Pacific (Singapore)
-✓ Enter a project name: My Prisma Project
-✓ Success! Your Prisma Postgres database is ready ✅
-
-We found an existing schema.prisma file in your current project directory.
-
---- Database URL ---
-
-Connect Prisma ORM to your Prisma Postgres database with this URL:
-
---- Next steps ---
-
-Go to https://pris.ly/ppg-init for detailed instructions.
-
-1. Install the Postgres adapter
-npm install @prisma/adapter-pg
-
-...and add it to your Prisma Client instance:
-
-import { PrismaClient } from "./generated/prisma/client";
-import { PrismaPg } from "@prisma/adapter-pg";
-
-const connectionString = `${process.env.DATABASE_URL}`;
-
-const adapter = new PrismaPg({ connectionString });
-const prisma = new PrismaClient({ adapter });
-
-2. Apply migrations
-Run the following command to create and apply a migration:
-npx prisma migrate dev
-
-3. Manage your data
-View and edit your data locally by running this command:
-npx prisma studio
-
-...or online in Console:
-https://console.prisma.io/cmhyn0uwl0q6903foel16ff31/cmhyn143t074tyLfoezs684ag/cmhyn143t074uylfon8hfre5z/studio
-
-4. Send queries from your app
-If you already have an existing app with Prisma ORM, you can now run it and it will send queries against your newly created Prisma Postgres instance.
-
-5. Learn more
-For more info, visit the Prisma Postgres docs: https://pris.ly/ppg-docs
-```
-
-The command creates a new [Prisma Postgres](https://www.prisma.io/postgres) instance. Note that it requires you to be authenticated with the [PDP Console](https://console.prisma.io/?utm_source=docs&utm_medium=content&utm_content=orm), If you run it for the first time without being authenticated, the command will open the browser for you to log into Console.
-
-**Run `prisma init --prompt "Simple habit tracker application"`**
-
-```
-prisma init --prompt "Simple habit tracker application"
-```
-
-The command scaffolds a Prisma schema and deploys it to a fresh [Prisma Postgres](https://www.prisma.io/postgres) instance. Note that it requires you to be authenticated with the [PDP Console](https://console.prisma.io/?utm_source=docs&utm_medium=content&utm_content=orm), If you run it for the first time without being authenticated, the command will open the browser for you to log into Console.
-
-**Run `prisma init --preview-feature`**
-
-```
-prisma init --preview-feature metrics
-```
-
-```
-datasource db {
-  provider = "postgresql"
-}
-
-generator client {
-  provider        = "prisma-client"
-  previewFeatures = ["metrics"]
-}
-```
-
-```
-prisma init --preview-feature view --preview-feature metrics
-```
-
-```
-datasource db {
-  provider = "postgresql"
-}
-
-generator client {
-  provider        = "prisma-client"
-  previewFeatures = ["views", "metrics"]
-}
-```
-
-#### [Generated Assets](#generated-assets)
-
-**`prisma/schema.prisma`**
-
-An initial `schema.prisma` file to define your schema in:
-
-```
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-generator client {
-  provider = "prisma-client"
-  output   = "../generated/prisma"
-}
-
-datasource db {
-  provider = "postgresql"
-}
-```
-
-**`prisma.config.ts`**
-
-A TypeScript configuration file for Prisma that defines your datasource URL and other settings:
-
-```
-import { defineConfig, env } from "prisma/config";
-
-export default defineConfig({
-  schema: "prisma/schema.prisma",
-  migrations: {
-    path: "prisma/migrations",
-  },
-  datasource: {
-    url: env("DATABASE_URL"),
-  },
-});
-```
-
-See the [Prisma Config reference](https://www.prisma.io/docs/orm/reference/prisma-config-reference) for more details.
-
-**`.env`**
-
-A file to define environment variables for your project:
-
-```
 # Environment variables declared in this file are automatically made available to Prisma.
 # See the documentation for more detail: https://pris.ly/d/prisma-schema#using-environment-variables
 
@@ -379,7 +98,7 @@ DATABASE_URL="mysql://user:password@localhost:3306/mydb"
 
 ### [`generate`](#generate)
 
-The `generate` command generates assets like Prisma Client based on the [`generator`](https://www.prisma.io/docs/orm/prisma-schema/overview/generators) and [`data model`](https://www.prisma.io/docs/orm/prisma-schema/data-model/models) blocks defined in your `prisma/schema.prisma` file.
+The `generate` command generates assets like Prisma Client based on the [`generator`](prisma/docs/orm/prisma-schema/overview/generators/index.md) and [`data model`](prisma/docs/orm/prisma-schema/data-model/models/index.md) blocks defined in your `prisma/schema.prisma` file.
 
 The `generate` command is most often used to generate Prisma Client with the `prisma-client` generator. This does the following:
 
@@ -468,11 +187,11 @@ prisma generate --generator client --generator zod_schemas
 
 #### [Generated Assets](#generated-assets-2)
 
-The `prisma-client` generator creates a customized client for working with your database in a custom output directory specified by the `output` field - you can [customize the output folder](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#fields-for-prisma-client-provider).
+The `prisma-client` generator creates a customized client for working with your database in a custom output directory specified by the `output` field - you can [customize the output folder](prisma/docs/orm/reference/prisma-schema-reference/index.md#fields-for-prisma-client-provider).
 
 ### [`validate`](#validate)
 
-Validates the [Prisma Schema Language](https://www.prisma.io/docs/orm/prisma-schema/overview) of the Prisma schema file.
+Validates the [Prisma Schema Language](prisma/docs/orm/prisma-schema/overview/index.md) of the Prisma schema file.
 
 #### [Arguments](#arguments-2)
 
@@ -873,8 +592,8 @@ This command is a good choice when you do not need to version schema changes, su
 
 See also:
 
--   [Conceptual overview of `db push` and when to use it over Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyping-your-schema)
--   [Schema prototyping with `db push`](https://www.prisma.io/docs/orm/prisma-migrate/workflows/prototyping-your-schema)
+-   [Conceptual overview of `db push` and when to use it over Prisma Migrate](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md)
+-   [Schema prototyping with `db push`](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md)
 
 #### [Prerequisites](#prerequisites-2)
 
@@ -950,7 +669,7 @@ prisma db push --schema=/tmp/schema.prisma
 
 `db seed` changed from Preview to Generally Available (GA) in 3.0.1.
 
-See [Seeding your database](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding)
+See [Seeding your database](prisma/docs/orm/prisma-migrate/workflows/seeding/index.md)
 
 #### [Options](#options-4)
 
@@ -975,7 +694,7 @@ The output of the command is connector-specific, and is not meant for returning 
 
 See also:
 
--   [Migration troubleshooting in production](https://www.prisma.io/docs/orm/prisma-migrate/workflows/patching-and-hotfixing#fixing-failed-migrations-with-migrate-diff-and-db-execute)
+-   [Migration troubleshooting in production](prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md#fixing-failed-migrations-with-migrate-diff-and-db-execute)
 
 #### [Prerequisites](#prerequisites-3)
 
@@ -1048,15 +767,15 @@ Prisma Migrate changed from Preview to Generally Available (GA) in 2.19.0.
 
 The `migrate dev` command:
 
-1.  Reruns the existing migration history in the [shadow database](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database) in order to detect schema drift (edited or deleted migration file, or a manual changes to the database schema)
+1.  Reruns the existing migration history in the [shadow database](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md) in order to detect schema drift (edited or deleted migration file, or a manual changes to the database schema)
 2.  Applies pending migrations to the shadow database (for example, new migrations created by colleagues)
 3.  Generates a new migration from any changes you made to the Prisma schema before running `migrate dev`
 4.  Applies all unapplied migrations to the development database and updates the `_prisma_migrations` table
 
 See also:
 
--   [Conceptual overview of Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate)
--   [Developing with Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate)
+-   [Conceptual overview of Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md)
+-   [Developing with Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md)
 
 #### [Options](#options-6)
 
@@ -1283,7 +1002,7 @@ Both schema sources must use the same database provider. For example, a diff com
 
 See also:
 
--   [Migration troubleshooting in production](https://www.prisma.io/docs/orm/prisma-migrate/workflows/patching-and-hotfixing#fixing-failed-migrations-with-migrate-diff-and-db-execute)
+-   [Migration troubleshooting in production](prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md#fixing-failed-migrations-with-migrate-diff-and-db-execute)
 
 #### [Prerequisites](#prerequisites-4)
 
@@ -1532,8 +1251,8 @@ Prisma CLI supports [custom HTTP proxies](https://github.com/prisma/prisma/issue
 
 To activate usage of the proxy, provide either of the following environment variables:
 
--   [`HTTP_PROXY`](https://www.prisma.io/docs/orm/reference/environment-variables-reference#http_proxy) or `http_proxy`: Proxy URL for http traffic, for example `http://localhost:8080`
--   [`HTTPS_PROXY`](https://www.prisma.io/docs/orm/reference/environment-variables-reference#https_proxy) or `https_proxy`: Proxy URL for https traffic, for example `https://localhost:8080`
+-   [`HTTP_PROXY`](prisma/docs/orm/reference/environment-variables-reference/index.md#http_proxy) or `http_proxy`: Proxy URL for http traffic, for example `http://localhost:8080`
+-   [`HTTPS_PROXY`](prisma/docs/orm/reference/environment-variables-reference/index.md#https_proxy) or `https_proxy`: Proxy URL for https traffic, for example `https://localhost:8080`
 
 The [`create-db`](https://create-db.prisma.io/) command provisions a temporary [Prisma Postgres](https://www.prisma.io/docs/postgres) database with a single command. This is a standalone utility that can be invoked using `npx`. It's ideal for quickly testing, prototyping, or integrating with Prisma Postgres.
 

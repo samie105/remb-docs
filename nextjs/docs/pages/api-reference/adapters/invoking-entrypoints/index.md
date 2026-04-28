@@ -11,8 +11,9 @@ menu_path: ["Invoking Entrypoints"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/runtime-integration/index.md", "title": "Runtime Integration"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/output-types/index.md", "title": "Output Types"}
 ---
-[API Reference](/docs/pages/api-reference)[Adapters](/docs/pages/api-reference/adapters)Invoking Entrypoints
 
 # Invoking Entrypoints
 

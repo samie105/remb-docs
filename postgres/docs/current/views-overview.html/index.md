@@ -10,7 +10,10 @@ content_hash: "5faeffebf71c738710055bc9857df17b957fcb5c4377aeb9a90e956d6247b762"
 menu_path: ["PostgreSQL: Documentation: 18: 53.1. Overview"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-wait-events.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.38.\u00a0pg_wait_events"}
+nav_next: {"path": "postgres/docs/current/wal-async-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.4.\u00a0Asynchronous Commit"}
 ---
+
 | View Name | Purpose |
 | --- | --- |
 | [`pg_aios`](https://www.postgresql.org/docs/current/view-pg-aios.html "53.2. pg_aios") | In-use asynchronous IO handles |

@@ -10,7 +10,10 @@ content_hash: "f89dd55f64b88157e14f658422d07a334fa7db5e0e049c64402fe5af98733dea"
 menu_path: ["Table inheritance"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/troubleshooting-relations/index.md", "title": "Troubleshooting relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Schema)"}
 ---
+
 Learn about the use cases and patterns for table inheritance in Prisma ORM that enable usage of union types or polymorphic structures in your application.
 
 Table inheritance is a software design pattern that allows the modeling of hierarchical relationships between entities. Using table inheritance on the database level can also enable the use of union types in your JavaScript/TypeScript application or share a set of common properties across multiple models.
@@ -184,7 +187,7 @@ const videos: Video[] = videoActivities.map(activityToVideo);
 
 #### [Using Prisma Client extension for a more convenient API](#using-prisma-client-extension-for-a-more-convenient-api)
 
-You can use [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) to create a more convenient API for the table structures in your database.
+You can use [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) to create a more convenient API for the table structures in your database.
 
 ### [Data model](#data-model-1)
 
@@ -314,7 +317,7 @@ const videos: Video[] = videoWithActivities.map(toVideo);
 
 #### [Using Prisma Client extension for a more convenient API](#using-prisma-client-extension-for-a-more-convenient-api-1)
 
-You can use [Prisma Client extensions](https://www.prisma.io/docs/orm/prisma-client/client-extensions) to create a more convenient API for the table structures in your database.
+You can use [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) to create a more convenient API for the table structures in your database.
 
 -   **Data model**: The data model may feel more clean with MTI. With STI, you may end up with very wide rows and lots of columns that have `NULL` values in them.
 -   **Performance**: MTI may come with a performance cost because you need to join the parent and child tables to access _all_ properties relevant for a model.

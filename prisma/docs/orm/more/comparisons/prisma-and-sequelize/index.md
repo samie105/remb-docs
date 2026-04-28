@@ -11,7 +11,10 @@ menu_path: ["Sequelize"]
 section_path: []
 tab_variants: ["Using include","Fluent API","Using save","Using create","Using save","Using update","Manual","Automatic"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-mongoose/index.md", "title": "Mongoose"}
+nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md", "title": "TypeORM"}
 ---
+
 Comparisons
 
 Learn how Prisma ORM compares to Sequelize
@@ -24,7 +27,7 @@ While Prisma ORM and Sequelize solve similar problems, they work in very differe
 
 **Prisma ORM** is a new kind of ORM that mitigates many problems of traditional ORMs, such as bloated model instances, mixing business with storage logic, lack of type-safety or unpredictable queries caused e.g. by lazy loading.
 
-It uses the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview) to define application models in a declarative way. Prisma Migrate then allows to generate SQL migrations from the Prisma schema and executes them against the database. CRUD queries are provided by Prisma Client, a lightweight and entirely type-safe database client for Node.js and TypeScript.
+It uses the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) to define application models in a declarative way. Prisma Migrate then allows to generate SQL migrations from the Prisma schema and executes them against the database. CRUD queries are provided by Prisma Client, a lightweight and entirely type-safe database client for Node.js and TypeScript.
 
 ### [Fetching single objects](#fetching-single-objects)
 

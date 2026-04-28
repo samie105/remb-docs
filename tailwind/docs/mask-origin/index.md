@@ -10,15 +10,9 @@ content_hash: "dac8040f0668233608a53bd3ea8d8330419b6e9f455155bc5e3c5be1c55d2033"
 menu_path: ["mask-origin"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/mask-mode/index.md", "title": "mask-mode"}
+nav_next: {"path": "tailwind/docs/mask-position/index.md", "title": "mask-position"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Effects
-2.  mask-origin
-
-Effects
 
 # mask-origin
 

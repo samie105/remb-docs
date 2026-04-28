@@ -11,8 +11,9 @@ menu_path: ["Linking and Navigating"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/dynamic-routes/index.md", "title": "Dynamic Routes"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/custom-app/index.md", "title": "Custom App"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)Linking and Navigating
 
 # Linking and Navigating
 

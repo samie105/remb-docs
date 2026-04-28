@@ -10,7 +10,10 @@ content_hash: "9895b87c06fff154d6bc1ba9f677dfcb8d35cb5bbfa1da01b97634ebaa6c2b09"
 menu_path: ["Check constraints"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
 ---
+
 Troubleshooting
 
 Learn how to configure CHECK constraints for data validation with Prisma ORM and PostgreSQL

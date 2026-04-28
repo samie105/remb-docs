@@ -11,8 +11,9 @@ menu_path: ["Architecture"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/turbopack/index.md", "title": "Turbopack"}
+nav_next: {"path": "nextjs/docs/architecture/accessibility/index.md", "title": "Accessibility"}
 ---
-[Next.js Docs](/docs)Architecture
 
 # Architecture
 

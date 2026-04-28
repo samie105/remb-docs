@@ -10,7 +10,10 @@ content_hash: "1890e96a094598891c4242f15eb7eb84ab28acd6f44c642b46f6f2a8811ad6e2"
 menu_path: ["Best practices"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/reference/preview-features/cli-preview-features/index.md", "title": "Prisma CLI Preview features"}
+nav_next: {"path": "prisma/docs/orm/more/releases/index.md", "title": "ORM releases and maturity levels"}
 ---
+
 Learn production-ready patterns for schema design, query optimization, type safety, security, and deployment with Prisma ORM.
 
 ### [Naming conventions](#naming-conventions)
@@ -241,7 +244,7 @@ await prisma.post.updateMany({
 })
 ```
 
-Bulk operations (`createMany`, `createManyAndReturn`, `updateMany`, `updateManyAndReturn`, and `deleteMany`) [automatically run as transactions](https://www.prisma.io/docs/orm/prisma-client/queries/transactions#batch-operations), so all writes either succeed together or are rolled back if something fails.
+Bulk operations (`createMany`, `createManyAndReturn`, `updateMany`, `updateManyAndReturn`, and `deleteMany`) [automatically run as transactions](prisma/docs/orm/prisma-client/queries/transactions/index.md#batch-operations), so all writes either succeed together or are rolled back if something fails.
 
 ### [Raw queries](#raw-queries)
 
@@ -475,5 +478,5 @@ export async function handler(event) {
 Creating a new client inside the handler on every invocation risks exhausting database connections. Each concurrent function creates its own connection pool, quickly multiplying connection counts.
 
 -   [Query optimization](https://www.prisma.io/docs/query-insights)
--   [Raw queries](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries)
--   [Prisma Migrate workflows](https://www.prisma.io/docs/orm/prisma-migrate/workflows/development-and-production)
+-   [Raw queries](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md)
+-   [Prisma Migrate workflows](prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md)

@@ -9,28 +9,10 @@ last_crawled_at: "2026-04-18T16:46:53.932Z"
 content_hash: "d968957851af253270b1fc2c7104c51cb8707533cecb1f3fd133ae60eafea940"
 menu_path: ["Run Bun as a daemon with systemd"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/ecosystem/sveltekit/index.md", "title": "Build an app with SvelteKit and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
 ---
-[systemd](https://systemd.io/) is an init system and service manager for Linux operating systems that manages the startup and control of system processes and services.
 
-* * *
-
-To run a Bun application as a daemon using **systemd** you’ll need to create a _service file_ in `/lib/systemd/system/`.
-
-terminal
-
-```
-cd /lib/systemd/system
-touch my-app.service
-```
-
-* * *
-
-Here is a typical service file that runs an application on system start. You can use this as a template for your own service. Replace `YOUR_USER` with the name of the user you want to run the application as. To run as `root`, replace `YOUR_USER` with `root`, though this is generally not recommended for security reasons. Refer to the [systemd documentation](https://www.freedesktop.org/software/systemd/man/systemd.service.html) for more information on each setting.
-
-my-app.service
-
-```
-[Unit]
 # describe the app
 Description=My App
 # start the app after the network is available

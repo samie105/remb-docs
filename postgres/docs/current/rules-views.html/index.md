@@ -10,7 +10,10 @@ content_hash: "166b1ba5bfffbe9b59a01e0954151a19da072397058ff353957078eac212750d"
 menu_path: ["PostgreSQL: Documentation: 18: 39.2. Views and the Rule System"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/rules-update.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.4.\u00a0Rules on INSERT, UPDATE, and DELETE"}
+nav_next: {"path": "postgres/docs/current/runtime-config-client.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.11.\u00a0Client Connection Defaults"}
 ---
+
 Views in PostgreSQL are implemented using the rule system. A view is basically an empty table (having no actual storage) with an `ON SELECT DO INSTEAD` rule. Conventionally, that rule is named `_RETURN`. So a view like
 
 although you can't actually write that, because tables are not allowed to have `ON SELECT` rules.

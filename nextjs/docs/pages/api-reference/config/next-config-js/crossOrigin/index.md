@@ -11,8 +11,9 @@ menu_path: ["crossOrigin"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/compress/index.md", "title": "compress"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/deploymentId/index.md", "title": "deploymentId"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)crossOrigin
 
 # crossOrigin
 

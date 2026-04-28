@@ -11,8 +11,9 @@ menu_path: ["Use Cases"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/routing-information/index.md", "title": "Routing Information"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/edge/index.md", "title": "Edge Runtime"}
 ---
-[API Reference](/docs/pages/api-reference)[Adapters](/docs/pages/api-reference/adapters)Use Cases
 
 # Use Cases
 

@@ -10,7 +10,10 @@ content_hash: "26b97007d2bae1f15a5b781fce31ea7fe2b32181c935a18c8b5672b3eb80c356"
 menu_path: ["typebox-legacy"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/arktype/index.md", "title": "arktype"}
+nav_next: {"path": "drizzle/docs/effect-schema/index.md", "title": "effect-schema"}
 ---
+
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-typebox` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself

@@ -10,7 +10,10 @@ content_hash: "844ffa6b6adff3dae4cb23466650a590603187c0cd1526a41b874c5cbc65a70a"
 menu_path: ["PostgreSQL: Documentation: 18: 65.5. BRIN Indexes"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
+nav_next: {"path": "postgres/docs/current/btree-gin.html/index.md", "title": "PostgreSQL: Documentation: 18: F.7.\u00a0btree_gin \u2014 GIN operator classes with B-tree behavior"}
 ---
+
 ### 65.5.1. Introduction [#](#BRIN-INTRO)
 
 BRIN stands for Block Range Index. BRIN is designed for handling very large tables in which certain columns have some natural correlation with their physical location within the table.
@@ -29,7 +32,7 @@ At the time of creation, all existing heap pages are scanned and a summary index
 
 There are several ways to trigger the initial summarization of a page range. If the table is vacuumed, either manually or by [autovacuum](https://www.postgresql.org/docs/current/routine-vacuuming.html#AUTOVACUUM "24.1.6. The Autovacuum Daemon"), all existing unsummarized page ranges are summarized. Also, if the index's [autosummarize](https://www.postgresql.org/docs/current/sql-createindex.html#INDEX-RELOPTION-AUTOSUMMARIZE) parameter is enabled, which it isn't by default, whenever autovacuum runs in that database, summarization will occur for all unsummarized page ranges that have been filled, regardless of whether the table itself is processed by autovacuum; see below.
 
-Lastly, the following functions can be used (while these functions run, [search\_path](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`):
+Lastly, the following functions can be used (while these functions run, [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`):
 
 <table summary="Simple list"><tbody><tr><td><code>brin_summarize_new_values(regclass)</code> which summarizes all unsummarized ranges;</td></tr><tr><td><code>brin_summarize_range(regclass, bigint)</code> which summarizes only the range containing the given page, if it is unsummarized.</td></tr></tbody></table>
 

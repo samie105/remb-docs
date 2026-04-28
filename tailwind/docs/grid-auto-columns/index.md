@@ -10,15 +10,9 @@ content_hash: "1d17a098b22d38cfc69742a460595de80c1cb32aa9df38ec13646d9aecfd1393"
 menu_path: ["grid-auto-columns"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/grid-auto-flow/index.md", "title": "grid-auto-flow"}
+nav_next: {"path": "tailwind/docs/grid-auto-rows/index.md", "title": "grid-auto-rows"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  grid-auto-columns
-
-Flexbox & Grid
 
 # grid-auto-columns
 

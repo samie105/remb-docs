@@ -11,8 +11,9 @@ menu_path: ["Deploying"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/proxy/index.md", "title": "Proxy"}
+nav_next: {"path": "nextjs/docs/app/getting-started/upgrading/index.md", "title": "Upgrading"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Deploying
 
 # Deploying
 

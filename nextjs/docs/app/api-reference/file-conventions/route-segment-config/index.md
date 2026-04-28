@@ -11,8 +11,9 @@ menu_path: ["Route Segment Config"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/sitemap/index.md", "title": "sitemap.xml"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/index.md", "title": "Functions"}
 ---
-[API Reference](/docs/app/api-reference)[File-system conventions](/docs/app/api-reference/file-conventions)Route Segment Config
 
 # Route Segment Config
 

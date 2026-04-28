@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:00:45.787Z"
 content_hash: "1656d56e83d896f98d9c3c1e418948b38059688865120341e7512a7a5f7c31bc"
 menu_path: ["DNS"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/module-resolution/index.md", "title": "Module Resolution"}
+nav_next: {"path": "bun/docs/runtime/networking/fetch/index.md", "title": "Fetch"}
 ---
+
 Bun implements it’s own `dns` module, and the `node:dns` module.
 
 ```

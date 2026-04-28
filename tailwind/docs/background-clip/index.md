@@ -10,15 +10,9 @@ content_hash: "e3fd753f176198b0d6ccc410755ba4d849b785d0da3bd756d7366a4099226a1e"
 menu_path: ["background-clip"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/background-attachment/index.md", "title": "background-attachment"}
+nav_next: {"path": "tailwind/docs/background-color/index.md", "title": "background-color"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-clip
-
-Backgrounds
 
 # background-clip
 

@@ -10,7 +10,10 @@ content_hash: "0f60104a461796722f70acb5c6ab03255df5bc84fe1ae2ece16e91a9e0e5705c"
 menu_path: ["Generated Columns"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/set-operations/index.md", "title": "Set Operations"}
+nav_next: {"path": "drizzle/docs/transactions/index.md", "title": "Transactions"}
 ---
+
 #### Database side[](#database-side)
 
 **Types**: `STORED` only

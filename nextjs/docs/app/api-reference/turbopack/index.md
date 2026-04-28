@@ -11,8 +11,9 @@ menu_path: ["Turbopack"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/edge/index.md", "title": "Edge Runtime"}
+nav_next: {"path": "nextjs/docs/app/glossary/index.md", "title": "Next.js Glossary"}
 ---
-[App Router](/docs/app)[API Reference](/docs/app/api-reference)Turbopack
 
 # Turbopack
 

@@ -10,7 +10,10 @@ content_hash: "0f49a75d32d8ceb55efd4e1444a7c1de62a02f1ebb94e7b21338219d2efab86d"
 menu_path: ["PostgreSQL: Documentation: 18: 35.35. role_column_grants"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/infoschema-referential-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.34.\u00a0referential_constraints"}
+nav_next: {"path": "postgres/docs/current/infoschema-role-routine-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.36.\u00a0role_routine_grants"}
 ---
+
 The view `role_column_grants` identifies all privileges granted on columns where the grantor or grantee is a currently enabled role. Further information can be found under `column_privileges`. The only effective difference between this view and `column_privileges` is that this view omits columns that have been made accessible to the current user by way of a grant to `PUBLIC`.
 
 **Table 35.33. `role_column_grants` Columns**

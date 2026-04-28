@@ -11,8 +11,9 @@ menu_path: ["reactStrictMode"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/reactMaxHeadersLength/index.md", "title": "reactMaxHeadersLength"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/redirects/index.md", "title": "redirects"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)reactStrictMode
 
 # reactStrictMode
 

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:51:13.264Z"
 content_hash: "5d71302d46490713f11c3b00139a257cec400f6f91fb4bbb04e88acd861a7333"
 menu_path: ["Read from stdin"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/process/spawn-stdout/index.md", "title": "Read stdout from a child process"}
+nav_next: {"path": "bun/docs/guides/read-file/arraybuffer/index.md", "title": "Read a file to an ArrayBuffer"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

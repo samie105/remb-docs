@@ -10,7 +10,10 @@ content_hash: "608538f7d6d60e45ade03027a2b125b535add8a3f768e0f5cc7f7a3c63b97d99"
 menu_path: ["PostgreSQL: Documentation: 18: 53.16. pg_prepared_statements"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-policies.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.15.\u00a0pg_policies"}
+nav_next: {"path": "postgres/docs/current/view-pg-prepared-xacts.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.17.\u00a0pg_prepared_xacts"}
 ---
+
 The `pg_prepared_statements` view displays all the prepared statements that are available in the current session. See [PREPARE](https://www.postgresql.org/docs/current/sql-prepare.html "PREPARE") for more information about prepared statements.
 
 `pg_prepared_statements` contains one row for each prepared statement. Rows are added to the view when a new prepared statement is created and removed when a prepared statement is released (for example, via the [`DEALLOCATE`](https://www.postgresql.org/docs/current/sql-deallocate.html "DEALLOCATE") command).

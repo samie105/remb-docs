@@ -10,7 +10,10 @@ content_hash: "2381346d5b24fe1ca909b8181e19dcd54e33cd7f1588ece4a3e16c90c949909a"
 menu_path: ["deno remove"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/lsp/index.md", "title": "deno lsp"}
+nav_next: {"path": "deno/runtime/reference/cli/repl/index.md", "title": "deno repl"}
 ---
+
 **On this page**
 
 -   [Basic usage](#basic-usage)

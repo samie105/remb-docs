@@ -10,7 +10,10 @@ content_hash: "2bbc3d776c526dd1bee0b06290aca38f6940896d401e717fed53d3657cc38906"
 menu_path: ["max-inline-size"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/min-inline-size/index.md", "title": "min-inline-size"}
+nav_next: {"path": "tailwind/docs/block-size/index.md", "title": "block-size"}
 ---
+
 Sizing
 
 Utilities for setting the maximum inline size of an element.
@@ -71,7 +74,7 @@ Prefix a `max-inline-size` utility with a breakpoint variant like `md:` to only 
 <div class="max-inline-sm md:max-inline-lg ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -81,4 +84,4 @@ The `max-inline-<number>` utilities are driven by the `--spacing` theme variable
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).

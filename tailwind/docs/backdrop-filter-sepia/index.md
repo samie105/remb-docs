@@ -10,15 +10,9 @@ content_hash: "69317c48f2e90e94105205ed3be9a129051b1236988d34a9cbd7b7e30c518938"
 menu_path: ["backdrop-filter: sepia()"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/backdrop-filter-saturate/index.md", "title": "backdrop-filter: saturate()"}
+nav_next: {"path": "tailwind/docs/border-collapse/index.md", "title": "border-collapse"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  sepia
-
-Filters
 
 # backdrop-filter: sepia()
 

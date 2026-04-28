@@ -10,7 +10,10 @@ content_hash: "d2ef56f7ce6445af2e3575d30c106d0f86e2225e4a751df9994d921bfcf285f8"
 menu_path: ["punycode - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/process/index.md", "title": "process - Node documentation"}
+nav_next: {"path": "deno/api/node/querystring/index.md", "title": "querystring - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

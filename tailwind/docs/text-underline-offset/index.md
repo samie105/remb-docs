@@ -10,15 +10,9 @@ content_hash: "65c499e4daad7cf6e456732e5e6eeee631f7e4e23041075a63241b1c0ff9fe3d"
 menu_path: ["text-underline-offset"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
+nav_next: {"path": "tailwind/docs/text-transform/index.md", "title": "text-transform"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  text-underline-offset
-
-Typography
 
 # text-underline-offset
 

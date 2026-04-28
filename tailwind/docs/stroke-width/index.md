@@ -10,15 +10,9 @@ content_hash: "b0a56097bb0bcc62e4168835f874e1c6902e772c6b0a567234424d79e7fb7544"
 menu_path: ["stroke-width"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/stroke/index.md", "title": "stroke"}
+nav_next: {"path": "tailwind/docs/forced-color-adjust/index.md", "title": "forced-color-adjust"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  SVG
-2.  stroke-width
-
-SVG
 
 # stroke-width
 

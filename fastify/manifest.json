@@ -1,7 +1,7 @@
 [
   {
     "url": "https://fastify.dev/docs/latest/",
-    "outputPath": "output/fastify/docs/latest/index.md",
+    "outputPath": "fastify/docs/latest/index.md",
     "title": "Introduction",
     "contentHash": "56282a7d92ce542da5fad7427c3828031d26a9ee9d98d17f67e30f9e5c77235a",
     "visitedAt": "2026-04-18T16:31:48.593Z",
@@ -9,7 +9,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/",
-    "outputPath": "output/fastify/docs/latest/Reference/index.md",
+    "outputPath": "fastify/docs/latest/Reference/index.md",
     "title": "Index",
     "contentHash": "688c7cc324dae69b1751ab7365a09a1508d131c8b48c539fe9f6d331747632e4",
     "visitedAt": "2026-04-18T16:32:05.111Z",
@@ -17,7 +17,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/",
-    "outputPath": "output/fastify/docs/latest/Guides/index.md",
+    "outputPath": "fastify/docs/latest/Guides/index.md",
     "title": "Index",
     "contentHash": "d985485dd41cc25f93dd6c93011e0ee126bde6d5aeb5848844187cd481133a20",
     "visitedAt": "2026-04-18T16:32:05.380Z",
@@ -25,7 +25,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/ContentTypeParser/",
-    "outputPath": "output/fastify/docs/latest/Reference/ContentTypeParser/index.md",
+    "outputPath": "fastify/docs/latest/Reference/ContentTypeParser/index.md",
     "title": "ContentTypeParser",
     "contentHash": "425b7d0ed38bfe70c82fb7a5bed86a5359ee3afbbb229b0f7d9dcec422937b64",
     "visitedAt": "2026-04-18T16:32:30.129Z",
@@ -33,7 +33,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Encapsulation/",
-    "outputPath": "output/fastify/docs/latest/Reference/Encapsulation/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Encapsulation/index.md",
     "title": "Encapsulation",
     "contentHash": "c700cdbf85648113e079d44a46cc5685af88c8c76628e65aac9c9cfb99e15794",
     "visitedAt": "2026-04-18T16:32:32.442Z",
@@ -41,7 +41,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Decorators/",
-    "outputPath": "output/fastify/docs/latest/Reference/Decorators/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Decorators/index.md",
     "title": "Decorators",
     "contentHash": "ab42cf2b8a225fae307004258aa1e4adfae554598db92037cc1af89699a27c00",
     "visitedAt": "2026-04-18T16:32:35.422Z",
@@ -49,7 +49,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/HTTP2/",
-    "outputPath": "output/fastify/docs/latest/Reference/HTTP2/index.md",
+    "outputPath": "fastify/docs/latest/Reference/HTTP2/index.md",
     "title": "HTTP2",
     "contentHash": "1df7b46afe0fa80a225ea8801779b2b5727a56d7e001da8da59033b849fc1616",
     "visitedAt": "2026-04-18T16:32:44.234Z",
@@ -57,7 +57,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/LTS/",
-    "outputPath": "output/fastify/docs/latest/Reference/LTS/index.md",
+    "outputPath": "fastify/docs/latest/Reference/LTS/index.md",
     "title": "LTS",
     "contentHash": "d7d71af293df6914b679be2d2a613ee82dfc3e491779f4c0a729d68a8f6cdd92",
     "visitedAt": "2026-04-18T16:32:53.433Z",
@@ -65,7 +65,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Errors/",
-    "outputPath": "output/fastify/docs/latest/Reference/Errors/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Errors/index.md",
     "title": "Errors",
     "contentHash": "ae8658fe05af9de57bdc37bb6a2939f0b227bba4056a372ec9cbcbc04e0ece62",
     "visitedAt": "2026-04-18T16:33:02.278Z",
@@ -73,7 +73,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Hooks/",
-    "outputPath": "output/fastify/docs/latest/Reference/Hooks/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Hooks/index.md",
     "title": "Hooks",
     "contentHash": "cb1f2c0be4134f0e237aea652b458901fc0f244bdc9207b1d1348bf4a7c525c0",
     "visitedAt": "2026-04-18T16:33:12.940Z",
@@ -81,7 +81,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Lifecycle/",
-    "outputPath": "output/fastify/docs/latest/Reference/Lifecycle/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Lifecycle/index.md",
     "title": "Lifecycle",
     "contentHash": "1f9a12e8c4ceb145f634edd63d428a41a8e324c4a3f0728d5cc712f44f54915f",
     "visitedAt": "2026-04-18T16:33:17.249Z",
@@ -89,7 +89,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Logging/",
-    "outputPath": "output/fastify/docs/latest/Reference/Logging/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Logging/index.md",
     "title": "Logging",
     "contentHash": "43858e2b2c46de0ee2a824eddb0d5c311d1e0e3d39298e7f4940290d04b7b62e",
     "visitedAt": "2026-04-18T16:33:41.206Z",
@@ -97,7 +97,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Middleware/",
-    "outputPath": "output/fastify/docs/latest/Reference/Middleware/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Middleware/index.md",
     "title": "Middleware",
     "contentHash": "5fc96442b3b869d015c2d8e3da4ef0a9edce1b4725b0b13afc7d7aafd400957f",
     "visitedAt": "2026-04-18T16:33:48.430Z",
@@ -105,7 +105,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Plugins/",
-    "outputPath": "output/fastify/docs/latest/Reference/Plugins/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Plugins/index.md",
     "title": "Plugins",
     "contentHash": "47f30df9c53dfecbc32157f7534c724bcdd42df113a72745aa13d54ac11e2382",
     "visitedAt": "2026-04-18T16:33:52.339Z",
@@ -113,7 +113,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Principles/",
-    "outputPath": "output/fastify/docs/latest/Reference/Principles/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Principles/index.md",
     "title": "Technical Principles",
     "contentHash": "645bce4e4fafcee1a07eaa201bc5a1a52873a7a3bcc6402174b092cce0be9c66",
     "visitedAt": "2026-04-18T16:34:14.226Z",
@@ -121,7 +121,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Request/",
-    "outputPath": "output/fastify/docs/latest/Reference/Request/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Request/index.md",
     "title": "Request",
     "contentHash": "2ed6209cadb3dd691babd8dbe90611009c0adb61cd1ebb495f24e2f95985bb35",
     "visitedAt": "2026-04-18T16:34:28.215Z",
@@ -129,7 +129,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Reply/",
-    "outputPath": "output/fastify/docs/latest/Reference/Reply/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Reply/index.md",
     "title": "Reply",
     "contentHash": "9c97fd3bf0310c7a110d48d039a7092c239fe0287ff62bfc7c1e56be23027a6f",
     "visitedAt": "2026-04-18T16:34:30.765Z",
@@ -137,7 +137,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Routes/",
-    "outputPath": "output/fastify/docs/latest/Reference/Routes/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Routes/index.md",
     "title": "Routes",
     "contentHash": "ec8e2c2f3adff1fa368d49de0b8130b2fd5af2e8203a9b163eda5a2f0c67b89e",
     "visitedAt": "2026-04-18T16:34:50.894Z",
@@ -145,7 +145,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Type-Providers/",
-    "outputPath": "output/fastify/docs/latest/Reference/Type-Providers/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Type-Providers/index.md",
     "title": "Type-Providers",
     "contentHash": "3ab09344984c9daa523042ea009b43078c4cc738622c7b9a101339c443a0a5fc",
     "visitedAt": "2026-04-18T16:35:02.457Z",
@@ -153,7 +153,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Server/",
-    "outputPath": "output/fastify/docs/latest/Reference/Server/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Server/index.md",
     "title": "Server",
     "contentHash": "a4e8ac331eadac080b72a58064447053c51b719a9327b0bc137909a152ed1db9",
     "visitedAt": "2026-04-18T16:35:23.802Z",
@@ -161,7 +161,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Warnings/",
-    "outputPath": "output/fastify/docs/latest/Reference/Warnings/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Warnings/index.md",
     "title": "Warnings",
     "contentHash": "c10b390e8b2e1fe49ceec181b79c9cd0746297786df6a5708acde13030f2d07c",
     "visitedAt": "2026-04-18T16:35:34.279Z",
@@ -169,7 +169,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/TypeScript/",
-    "outputPath": "output/fastify/docs/latest/Reference/TypeScript/index.md",
+    "outputPath": "fastify/docs/latest/Reference/TypeScript/index.md",
     "title": "TypeScript",
     "contentHash": "95fb8b7aaac38405535e4c32abb9028c6f43c0042a8149321b9b7eded902f2bd",
     "visitedAt": "2026-04-18T16:35:46.769Z",
@@ -177,7 +177,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Reference/Validation-and-Serialization/",
-    "outputPath": "output/fastify/docs/latest/Reference/Validation-and-Serialization/index.md",
+    "outputPath": "fastify/docs/latest/Reference/Validation-and-Serialization/index.md",
     "title": "Validation-and-Serialization",
     "contentHash": "ae3a2c6e250fceabf7a6401266bbde906e061e5ac710f45c83f34e1891f5887c",
     "visitedAt": "2026-04-18T16:35:51.393Z",
@@ -185,7 +185,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Write-Type-Provider/",
-    "outputPath": "output/fastify/docs/latest/Guides/Write-Type-Provider/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Write-Type-Provider/index.md",
     "title": "Write-Type-Provider",
     "contentHash": "19d3b4c829643d9d104249d8851a2fe1267946047518399f67a94f3ac3fb9e53",
     "visitedAt": "2026-04-18T16:36:13.892Z",
@@ -193,7 +193,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Recommendations/",
-    "outputPath": "output/fastify/docs/latest/Guides/Recommendations/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Recommendations/index.md",
     "title": "Recommendations",
     "contentHash": "3abc96e923c470efbe6d9f73869c75f451d75f4bd31f6144aac04bb020339583",
     "visitedAt": "2026-04-18T16:36:24.613Z",
@@ -201,7 +201,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Getting-Started/",
-    "outputPath": "output/fastify/docs/latest/Guides/Getting-Started/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Getting-Started/index.md",
     "title": "Getting-Started",
     "contentHash": "b3a6de46039a143e188cfbc41067f30bac26f40819d7458fdc2e6331eb3d48b5",
     "visitedAt": "2026-04-18T16:36:27.271Z",
@@ -209,7 +209,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Write-Plugin/",
-    "outputPath": "output/fastify/docs/latest/Guides/Write-Plugin/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Write-Plugin/index.md",
     "title": "How to write a good plugin",
     "contentHash": "b4431db32f716362f8f61bda2059988fb49bda3419951f3a97e2f341e90c9b5f",
     "visitedAt": "2026-04-18T16:36:38.898Z",
@@ -217,7 +217,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Database/",
-    "outputPath": "output/fastify/docs/latest/Guides/Database/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Database/index.md",
     "title": "Database",
     "contentHash": "48e77ed407741394e436938dd67ae24ad1361db039104e5bec97099bdbbffe1a",
     "visitedAt": "2026-04-18T16:36:55.700Z",
@@ -225,7 +225,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Testing/",
-    "outputPath": "output/fastify/docs/latest/Guides/Testing/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Testing/index.md",
     "title": "Testing",
     "contentHash": "1e156bccc84eb73f80b68f2239c3a58b8701f267153a147dbe76228c08d770e4",
     "visitedAt": "2026-04-18T16:37:08.154Z",
@@ -233,7 +233,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Benchmarking/",
-    "outputPath": "output/fastify/docs/latest/Guides/Benchmarking/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Benchmarking/index.md",
     "title": "Benchmarking",
     "contentHash": "2599a83a038cd7d61f43419e3d06cde8f773de6d3951b609048194be6b8f6436",
     "visitedAt": "2026-04-18T16:37:18.657Z",
@@ -241,7 +241,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Contributing/",
-    "outputPath": "output/fastify/docs/latest/Guides/Contributing/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Contributing/index.md",
     "title": "Contributing To Fastify",
     "contentHash": "a0c27b7bdd7e7cb1078c545c2c556ca4a9830e12711c33f419353c29717317e8",
     "visitedAt": "2026-04-18T16:37:30.107Z",
@@ -249,7 +249,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Delay-Accepting-Requests/",
-    "outputPath": "output/fastify/docs/latest/Guides/Delay-Accepting-Requests/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Delay-Accepting-Requests/index.md",
     "title": "Delay Accepting Requests",
     "contentHash": "3fea5525e8f4b3199a831e0bd7c876d15a247a5fb4ffa866f8dd0897b4aee462",
     "visitedAt": "2026-04-18T16:37:46.428Z",
@@ -257,7 +257,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Detecting-When-Clients-Abort/",
-    "outputPath": "output/fastify/docs/latest/Guides/Detecting-When-Clients-Abort/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Detecting-When-Clients-Abort/index.md",
     "title": "Detecting When Clients Abort",
     "contentHash": "acea8ed333041ed6bf7fb61f1a0d316b510db167455e666baf74693bcc8a59b0",
     "visitedAt": "2026-04-18T16:37:50.353Z",
@@ -265,7 +265,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Ecosystem/",
-    "outputPath": "output/fastify/docs/latest/Guides/Ecosystem/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Ecosystem/index.md",
     "title": "Ecosystem",
     "contentHash": "a9825b31c926e5a0e4bb05e7174a1dea55512ac451a57190e1be74a1325715b1",
     "visitedAt": "2026-04-18T16:38:02.668Z",
@@ -273,7 +273,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Fluent-Schema/",
-    "outputPath": "output/fastify/docs/latest/Guides/Fluent-Schema/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Fluent-Schema/index.md",
     "title": "Fluent-Schema",
     "contentHash": "a43effc392a91a3b8b04b59a25ea25add1da89a408e0371d3002a63987317c8b",
     "visitedAt": "2026-04-18T16:38:18.655Z",
@@ -281,7 +281,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Migration-Guide-V3/",
-    "outputPath": "output/fastify/docs/latest/Guides/Migration-Guide-V3/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Migration-Guide-V3/index.md",
     "title": "V3 Migration Guide",
     "contentHash": "20dced8549be0c09172ad18bcb42cdadcf08406ad5104edcf3cb026c4d6f91d4",
     "visitedAt": "2026-04-18T16:38:28.176Z",
@@ -289,7 +289,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Migration-Guide-V4/",
-    "outputPath": "output/fastify/docs/latest/Guides/Migration-Guide-V4/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Migration-Guide-V4/index.md",
     "title": "V4 Migration Guide",
     "contentHash": "d69e261ebd60d137c94a9e7c545fdf502dec5dd8fb9b24c4323c21ba3a7d1a48",
     "visitedAt": "2026-04-18T16:38:41.883Z",
@@ -297,7 +297,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Plugins-Guide/",
-    "outputPath": "output/fastify/docs/latest/Guides/Plugins-Guide/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Plugins-Guide/index.md",
     "title": "The hitchhiker's guide to plugins",
     "contentHash": "6b278da86413b8eb9de6a76f57e4ede5c2f1d3b511fdc0451b8841fe15fc7436",
     "visitedAt": "2026-04-18T16:38:59.590Z",
@@ -305,7 +305,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Migration-Guide-V5/",
-    "outputPath": "output/fastify/docs/latest/Guides/Migration-Guide-V5/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Migration-Guide-V5/index.md",
     "title": "V5 Migration Guide",
     "contentHash": "7e49d2e97cf0f1bbcf1f033e80dcc60f708c0940d3234f20206e8a17ad7c475e",
     "visitedAt": "2026-04-18T16:39:04.447Z",
@@ -313,7 +313,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Prototype-Poisoning/",
-    "outputPath": "output/fastify/docs/latest/Guides/Prototype-Poisoning/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Prototype-Poisoning/index.md",
     "title": "Prototype-Poisoning",
     "contentHash": "46627cb1c64d906c8fbb55f468f64a6229de79eeb1f8446617fc7a0685568392",
     "visitedAt": "2026-04-18T16:39:14.718Z",
@@ -321,7 +321,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Style-Guide/",
-    "outputPath": "output/fastify/docs/latest/Guides/Style-Guide/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Style-Guide/index.md",
     "title": "Fastify Style Guide",
     "contentHash": "c86f61585ffdef3bb07e54e0a5516a3cedbb4536c96e277847ecafd9482e666a",
     "visitedAt": "2026-04-18T16:39:17.886Z",
@@ -329,7 +329,7 @@
   },
   {
     "url": "https://fastify.dev/docs/latest/Guides/Serverless/",
-    "outputPath": "output/fastify/docs/latest/Guides/Serverless/index.md",
+    "outputPath": "fastify/docs/latest/Guides/Serverless/index.md",
     "title": "Serverless",
     "contentHash": "d27e7a0c768484093e06a3f73181c596796d8ea87bce68258b3cb06c4aacb40c",
     "visitedAt": "2026-04-18T16:39:41.134Z",

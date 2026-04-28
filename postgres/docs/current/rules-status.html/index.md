@@ -10,7 +10,10 @@ content_hash: "f429e3b034065679f88bf42dcb79866f4371ae43777583b74f1a31b2754e0276"
 menu_path: ["PostgreSQL: Documentation: 18: 39.6. Rules and Command Status"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/rules-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.5.\u00a0Rules and Privileges"}
+nav_next: {"path": "postgres/docs/current/rules-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.7.\u00a0Rules Versus Triggers"}
 ---
+
 The PostgreSQL server returns a command status string, such as `INSERT 149592 1`, for each command it receives. This is simple enough when there are no rules involved, but what happens when the query is rewritten by rules?
 
 Rules affect the command status as follows:

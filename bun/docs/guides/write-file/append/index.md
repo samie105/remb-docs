@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:56:40.425Z"
 content_hash: "761951b9e106c87baf4fe2e9f660fc3f1ec151dc84f4882d48e568019fd2667d"
 menu_path: ["Append content to a file"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/websocket/simple/index.md", "title": "Build a simple WebSocket server"}
+nav_next: {"path": "bun/docs/guides/write-file/basic/index.md", "title": "Write a string to a file"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

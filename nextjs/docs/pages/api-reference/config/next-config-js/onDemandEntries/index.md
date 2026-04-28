@@ -11,8 +11,9 @@ menu_path: ["onDemandEntries"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/logging/index.md", "title": "logging"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/optimizePackageImports/index.md", "title": "optimizePackageImports"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)onDemandEntries
 
 # onDemandEntries
 

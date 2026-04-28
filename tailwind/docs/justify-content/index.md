@@ -10,15 +10,9 @@ content_hash: "c177b1d52977262ce575dea1e35d03e8cb2cc16091495fcbd91a33fe7539a503"
 menu_path: ["justify-content"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/gap/index.md", "title": "gap"}
+nav_next: {"path": "tailwind/docs/justify-items/index.md", "title": "justify-items"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  justify-content
-
-Flexbox & Grid
 
 # justify-content
 

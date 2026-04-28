@@ -10,7 +10,10 @@ content_hash: "6a2e252dc6e0a5b71599c8737263f157f10e31cb98b561323f5c5f378b654ca1"
 menu_path: ["deno audit"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/approve_scripts/index.md", "title": "deno approve-scripts"}
+nav_next: {"path": "deno/runtime/reference/cli/bench/index.md", "title": "deno bench"}
 ---
+
 **On this page**
 
 -   [Examples](#examples)

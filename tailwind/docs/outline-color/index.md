@@ -10,15 +10,9 @@ content_hash: "b5961dfcc917ea22da9cc82aceec5061a63a1640eb230256f824d210090f3300"
 menu_path: ["outline-color"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/outline-width/index.md", "title": "outline-width"}
+nav_next: {"path": "tailwind/docs/outline-style/index.md", "title": "outline-style"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Borders
-2.  outline-color
-
-Borders
 
 # outline-color
 

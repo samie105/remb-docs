@@ -10,7 +10,10 @@ content_hash: "7b175703a615884961c8d2239ad62172a8fd7e7fc5af942731636b1a3eb253eb"
 menu_path: ["Documentation guidelines"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/contributing/style_guide/index.md", "title": "Deno Style Guide"}
+nav_next: {"path": "deno/runtime/contributing/examples/index.md", "title": "Contributing an example"}
 ---
+
 **On this page**
 
 -   [Running the docs locally](#running-the-docs-locally)

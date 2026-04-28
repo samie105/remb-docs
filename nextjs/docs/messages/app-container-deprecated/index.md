@@ -11,8 +11,9 @@ menu_path: ["Addressing \"App Container Deprecated\" Error in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/index.md", "title": "App Router"}
+nav_next: {"path": "nextjs/docs/messages/blocking-route/index.md", "title": "Uncached data was accessed outside of `<Suspense>`"}
 ---
-[Docs](/docs)[Errors](/docs)Addressing "App Container Deprecated" Error in Next.js
 
 # Addressing "App Container Deprecated" Error in Next.js
 

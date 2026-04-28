@@ -10,7 +10,10 @@ content_hash: "09d3371b5407e02e1bbe0afb1ad1ff8ed7265ec36a372a538fdfcc3cf23da812"
 menu_path: ["PostgreSQL: Documentation: 18: B.6. History of Units"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/datetime-posix-timezone-specs.html/index.md", "title": "PostgreSQL: Documentation: 18: B.5.\u00a0POSIX Time Zone Specifications"}
+nav_next: {"path": "postgres/docs/current/dblink.html/index.md", "title": "PostgreSQL: Documentation: 18: F.11.\u00a0dblink \u2014 connect to other PostgreSQL databases"}
 ---
+
 The SQL standard states that “Within the definition of a ‘datetime literal’, the ‘datetime values’ are constrained by the natural rules for dates and times according to the Gregorian calendar”. PostgreSQL follows the SQL standard's lead by counting dates exclusively in the Gregorian calendar, even for years before that calendar was in use. This rule is known as the _proleptic Gregorian calendar_.
 
 The Julian calendar was introduced by Julius Caesar in 45 BC. It was in common use in the Western world until the year 1582, when countries started changing to the Gregorian calendar. In the Julian calendar, the tropical year is approximated as 365 1/4 days = 365.25 days. This gives an error of about 1 day in 128 years.

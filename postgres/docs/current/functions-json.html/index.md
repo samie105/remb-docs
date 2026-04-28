@@ -10,7 +10,10 @@ content_hash: "dfebe36472f6425c0c790f9d7be078bbaed4d1233cec3cb4d2a8ab33eb3492cc"
 menu_path: ["PostgreSQL: Documentation: 18: 9.16. JSON Functions and Operators"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/functions-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.27.\u00a0System Information Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-logical.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.1.\u00a0Logical Operators"}
 ---
+
 `json_array_elements` ( `json` ) → `setof json`
 
 `jsonb_array_elements` ( `jsonb` ) → `setof jsonb`
@@ -287,7 +290,7 @@ Returns the first JSON item returned by the JSON path for the specified JSON val
 
 `jsonb_path_query_first_tz` ( _`target`_ `jsonb`, _`path`_ `jsonpath` \[, _`vars`_ `jsonb` \[, _`silent`_ `boolean` \]\] ) → `jsonb`
 
-These functions act like their counterparts described above without the `_tz` suffix, except that these functions support comparisons of date/time values that require timezone-aware conversions. The example below requires interpretation of the date-only value `2015-08-02` as a timestamp with time zone, so the result depends on the current [TimeZone](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-TIMEZONE) setting. Due to this dependency, these functions are marked as stable, which means these functions cannot be used in indexes. Their counterparts are immutable, and so can be used in indexes; but they will throw errors if asked to make such comparisons.
+These functions act like their counterparts described above without the `_tz` suffix, except that these functions support comparisons of date/time values that require timezone-aware conversions. The example below requires interpretation of the date-only value `2015-08-02` as a timestamp with time zone, so the result depends on the current [TimeZone](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE) setting. Due to this dependency, these functions are marked as stable, which means these functions cannot be used in indexes. Their counterparts are immutable, and so can be used in indexes; but they will throw errors if asked to make such comparisons.
 
 `jsonb_path_exists_tz('["2015-08-01 12:00:00-05"]', '$[*] ? (@.datetime() < "2015-08-02".datetime())')` → `t`
 

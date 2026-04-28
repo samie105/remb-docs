@@ -10,7 +10,10 @@ content_hash: "273b8edf185e8e327d52f7b0af85f1191562f31c076a59218de48db8c0124c16"
 menu_path: ["inline-size"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/max-height/index.md", "title": "max-height"}
+nav_next: {"path": "tailwind/docs/min-inline-size/index.md", "title": "min-inline-size"}
 ---
+
 Sizing
 
 Utilities for setting the inline size of an element.
@@ -121,7 +124,7 @@ Prefix an `inline-size` utility with a breakpoint variant like `md:` to only app
 <div class="inline-1/2 md:inline-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -131,4 +134,4 @@ The `inline-<number>` utilities are driven by the `--spacing` theme variable, wh
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](https://tailwindcss.com/docs/theme).
+Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).

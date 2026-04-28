@@ -10,15 +10,9 @@ content_hash: "c87d8eb6eeb3b6b88d73c5ccfa47f25963499b98b949b1cc18cff70783ea679f"
 menu_path: ["background-size"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/background-repeat/index.md", "title": "background-repeat"}
+nav_next: {"path": "tailwind/docs/border-radius/index.md", "title": "border-radius"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Backgrounds
-2.  background-size
-
-Backgrounds
 
 # background-size
 

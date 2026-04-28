@@ -10,7 +10,10 @@ content_hash: "3ea9899d6b1bf21d0afb7ed51f744e3ff24f8d1643e1d89db1c74639f90a34f3"
 menu_path: ["PostgreSQL: Documentation: 18: 53.2. pg_aios"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/vacuumlo.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumlo"}
+nav_next: {"path": "postgres/docs/current/view-pg-available-extension-versions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.4.\u00a0pg_available_extension_versions"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-aios.html "PostgreSQL devel - 53.2. pg_aios")
 
 The `pg_aios` view lists all [Asynchronous I/O](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-AIO "Asynchronous I/O") handles that are currently in-use. An I/O handle is used to reference an I/O operation that is being prepared, executed or is in the process of completing. `pg_aios` contains one row for each I/O handle.
@@ -37,7 +40,7 @@ Process ID of the server process that is issuing this I/O.
 
 `io_id` `int4`
 
-Identifier of the I/O handle. Handles are reused once the I/O completed (or if the handle is released before I/O is started). On reuse [`pg_aios`.`io_generation`](https://www.postgresql.org/docs/current/view-pg-aios.html#VIEW-PG-AIOS-IO-GENERATION) is incremented.
+Identifier of the I/O handle. Handles are reused once the I/O completed (or if the handle is released before I/O is started). On reuse [`pg_aios`.`io_generation`](postgres/docs/current/view-pg-aios.html/index.md#VIEW-PG-AIOS-IO-GENERATION) is incremented.
 
  |
 | 
@@ -111,7 +114,7 @@ What kind of object is the I/O targeting:
 
 `handle_data_len` `int2`
 
-Length of the data associated with the I/O operation. For I/O to/from [shared\_buffers](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-SHARED-BUFFERS) and [temp\_buffers](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-TEMP-BUFFERS), this indicates the number of buffers the I/O is operating on.
+Length of the data associated with the I/O operation. For I/O to/from [shared\_buffers](postgres/docs/current/runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS) and [temp\_buffers](postgres/docs/current/runtime-config-resource.html/index.md#GUC-TEMP-BUFFERS), this indicates the number of buffers the I/O is operating on.
 
  |
 | 

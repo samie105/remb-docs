@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/migrating/index.md", "title": "Migrating"}
+nav_next: {"path": "nextjs/docs/app/guides/migrating/from-create-react-app/index.md", "title": "How to migrate from Create React App to Next.js"}
 ---
-[Guides](/docs/app/guides)[Migrating](/docs/app/guides/migrating)App Router
 
 # How to migrate from Pages to the App Router
 

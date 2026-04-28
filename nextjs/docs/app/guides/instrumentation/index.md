@@ -11,8 +11,9 @@ menu_path: ["How to set up instrumentation"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/incremental-static-regeneration/index.md", "title": "How to implement Incremental Static Regeneration (ISR)"}
+nav_next: {"path": "nextjs/docs/app/guides/internationalization/index.md", "title": "Internationalization"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Instrumentation
 
 # How to set up instrumentation
 

@@ -10,7 +10,10 @@ content_hash: "72696ceb5cfb069738cd686b56b2c721a6541f768321d5e17cf088c39c004873"
 menu_path: ["line-clamp"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/letter-spacing/index.md", "title": "letter-spacing"}
+nav_next: {"path": "tailwind/docs/line-height/index.md", "title": "line-height"}
 ---
+
 Mar 10, 2020
 
 Boost your conversion rate

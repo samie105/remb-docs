@@ -10,7 +10,10 @@ content_hash: "ff5b4008fcf5cae5697c2620322f702a8bd11541f6dfa44f3257b4ad3d3b4ab2"
 menu_path: ["color"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/text-align/index.md", "title": "text-align"}
+nav_next: {"path": "tailwind/docs/text-decoration-line/index.md", "title": "text-decoration-line"}
 ---
+
 Utilities for controlling the text color of an element.
 
 ## [Examples](#examples)
@@ -69,7 +72,7 @@ Oh I gotta get on that [internet](https://en.wikipedia.org/wiki/Internet), I'm l
 <p class="...">  Oh I gotta get on that  <a class="underline hover:text-blue-600 dark:hover:text-blue-400" href="https://en.wikipedia.org/wiki/Internet">internet</a>,  I'm late on everything!</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ### [Responsive design](#responsive-design)
 
@@ -79,7 +82,7 @@ Prefix a `color` utility with a breakpoint variant like `md:` to only apply the 
 <p class="text-blue-600 md:text-green-600 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -95,4 +98,4 @@ Now the `text-regal-blue` utility can be used in your markup:
 <p class="text-regal-blue">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).

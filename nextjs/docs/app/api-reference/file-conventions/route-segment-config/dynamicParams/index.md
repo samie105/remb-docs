@@ -11,8 +11,9 @@ menu_path: ["dynamicParams"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route/index.md", "title": "route.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/maxDuration/index.md", "title": "maxDuration"}
 ---
-[File-system conventions](/docs/app/api-reference/file-conventions)[Route Segment Config](/docs/app/api-reference/file-conventions/route-segment-config)dynamicParams
 
 # dynamicParams
 

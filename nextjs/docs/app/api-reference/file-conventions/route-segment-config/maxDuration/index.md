@@ -11,8 +11,9 @@ menu_path: ["maxDuration"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams/index.md", "title": "dynamicParams"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/preferredRegion/index.md", "title": "preferredRegion"}
 ---
-[File-system conventions](/docs/app/api-reference/file-conventions)[Route Segment Config](/docs/app/api-reference/file-conventions/route-segment-config)maxDuration
 
 # maxDuration
 

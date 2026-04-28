@@ -10,7 +10,10 @@ content_hash: "e7c61ff285b8bcdf52626a5cd7e44c034ce754275c05870f76c7101a3c1a2828"
 menu_path: ["mask-composite"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/mask-clip/index.md", "title": "mask-clip"}
+nav_next: {"path": "tailwind/docs/mask-image/index.md", "title": "mask-image"}
 ---
+
 Utilities for controlling how multiple masks are combined together.
 
 ## [Examples](#examples)
@@ -39,4 +42,4 @@ Prefix a `mask-composite` utility with a breakpoint variant like `md:` to only a
 <div class="mask-add md:mask-subtract ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

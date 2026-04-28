@@ -10,7 +10,10 @@ content_hash: "eeada3e930e5ebe629b83cf25251e3cd6de19ca3bdb77f6de726c3b043638acf"
 menu_path: ["perspective"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/backface-visibility/index.md", "title": "backface-visibility"}
+nav_next: {"path": "tailwind/docs/perspective-origin/index.md", "title": "perspective-origin"}
 ---
+
 Utilities for controlling an element's perspective when placed in 3D space.
 
 ## [Examples](#examples)
@@ -61,7 +64,7 @@ Prefix a `perspective` utility with a breakpoint variant like `md:` to only appl
 <div class="perspective-midrange md:perspective-dramatic ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -77,4 +80,4 @@ Now the `perspective-remote` utility can be used in your markup:
 <div class="perspective-remote">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](https://tailwindcss.com/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).

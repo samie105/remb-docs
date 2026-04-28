@@ -10,8 +10,11 @@ content_hash: "0070b03596fd6a6ce854aa8d9651048238980492969e2783be7634cb25452f98"
 menu_path: ["Error Reference"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/reference/system-requirements/index.md", "title": "System requirements"}
+nav_next: {"path": "prisma/docs/orm/reference/errors/index.md", "title": "Prisma Error Reference"}
 ---
-For more information about how to work with exceptions and error codes, see [Handling exceptions and errors](https://www.prisma.io/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors).
+
+For more information about how to work with exceptions and error codes, see [Handling exceptions and errors](prisma/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md).
 
 Prisma Client throws different kinds of errors. The following lists the exception types, and their documented data fields:
 
@@ -280,9 +283,9 @@ Errors:
 
 #### [`P2024`](#p2024)
 
-"Timed out fetching a new connection from the connection pool. (More info: [http://pris.ly/d/connection-pool](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool) (Current connection pool timeout: {timeout}, connection limit: {connection\_limit})"
+"Timed out fetching a new connection from the connection pool. (More info: [http://pris.ly/d/connection-pool](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md) (Current connection pool timeout: {timeout}, connection limit: {connection\_limit})"
 
-In Prisma ORM v7, pool size and timeout are configured per [driver adapter](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool)—see the connection pool reference for your adapter.
+In Prisma ORM v7, pool size and timeout are configured per [driver adapter](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md)—see the connection pool reference for your adapter.
 
 #### [`P2025`](#p2025)
 
@@ -310,7 +313,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](http
 
 #### [`P2031`](#p2031)
 
-"Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. See details: [https://pris.ly/d/mongodb-replica-set](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mongodb#replica-set-configuration)"
+"Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. See details: [https://pris.ly/d/mongodb-replica-set](prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md#replica-set-configuration)"
 
 #### [`P2033`](#p2033)
 
@@ -348,7 +351,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](http
 
 #### [`P3003`](#p3003)
 
-"The format of migrations changed, the saved migrations are no longer valid. To solve this problem, please follow the steps at: [https://pris.ly/d/migrate](https://www.prisma.io/docs/orm/prisma-migrate)"
+"The format of migrations changed, the saved migrations are no longer valid. To solve this problem, please follow the steps at: [https://pris.ly/d/migrate](prisma/docs/orm/prisma-migrate/index.md)"
 
 #### [`P3004`](#p3004)
 
@@ -356,7 +359,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](http
 
 #### [`P3005`](#p3005)
 
-"The database schema is not empty. Read more about how to baseline an existing production database: [https://pris.ly/d/migrate-baseline](https://www.prisma.io/docs/orm/prisma-migrate/workflows/baselining)"
+"The database schema is not empty. Read more about how to baseline an existing production database: [https://pris.ly/d/migrate-baseline](prisma/docs/orm/prisma-migrate/workflows/baselining/index.md)"
 
 #### [`P3006`](#p3006)
 
@@ -374,7 +377,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](http
 
 #### [`P3009`](#p3009)
 
-"migrate found failed migrations in the target database, new migrations will not be applied. Read more about how to resolve migration issues in a production database: [https://pris.ly/d/migrate-resolve](https://www.prisma.io/docs/orm/prisma-migrate/workflows/troubleshooting)  
+"migrate found failed migrations in the target database, new migrations will not be applied. Read more about how to resolve migration issues in a production database: [https://pris.ly/d/migrate-resolve](prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md)  
 {details}"
 
 #### [`P3010`](#p3010)
@@ -395,7 +398,7 @@ In Prisma ORM v7, pool size and timeout are configured per [driver adapter](http
 
 #### [`P3014`](#p3014)
 
-"Prisma Migrate could not create the shadow database. Please make sure the database user has permission to create databases. Read more about the shadow database (and workarounds) at [https://pris.ly/d/migrate-shadow](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database).
+"Prisma Migrate could not create the shadow database. Please make sure the database user has permission to create databases. Read more about the shadow database (and workarounds) at [https://pris.ly/d/migrate-shadow](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md).
 
 Original error: {error\_code}  
 {inner\_error}"
@@ -415,7 +418,7 @@ Original error: {error\_code}
 
 #### [`P3018`](#p3018)
 
-"A migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: [https://pris.ly/d/migrate-resolve](https://www.prisma.io/docs/orm/prisma-migrate/workflows/troubleshooting)"
+"A migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: [https://pris.ly/d/migrate-resolve](prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md)"
 
 Migration name: {migration\_name}
 
@@ -426,20 +429,20 @@ Database error:
 
 #### [`P3019`](#p3019)
 
-"The datasource provider `{provider}` specified in your schema does not match the one specified in the migration\_lock.toml, `{expected_provider}`. Please remove your current migration directory and start a new migration history with prisma migrate dev. Read more: [https://pris.ly/d/migrate-provider-switch](https://www.prisma.io/docs/orm/prisma-migrate/workflows/troubleshooting)"
+"The datasource provider `{provider}` specified in your schema does not match the one specified in the migration\_lock.toml, `{expected_provider}`. Please remove your current migration directory and start a new migration history with prisma migrate dev. Read more: [https://pris.ly/d/migrate-provider-switch](prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md)"
 
 #### [`P3020`](#p3020)
 
 "The automatic creation of shadow databases is disabled on Azure SQL. Please set up a shadow database using the `shadowDatabaseUrl` datasource attribute.  
-Read the docs page for more details: [https://pris.ly/d/migrate-shadow](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database)"
+Read the docs page for more details: [https://pris.ly/d/migrate-shadow](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md)"
 
 #### [`P3021`](#p3021)
 
-"Foreign keys cannot be created on this database. Learn more how to handle this: [https://pris.ly/d/migrate-no-foreign-keys](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql#planetscale)"
+"Foreign keys cannot be created on this database. Learn more how to handle this: [https://pris.ly/d/migrate-no-foreign-keys](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale)"
 
 #### [`P3022`](#p3022)
 
-"Direct execution of DDL (Data Definition Language) SQL statements is disabled on this database. Please read more here about how to handle this: [https://pris.ly/d/migrate-no-direct-ddl](https://www.prisma.io/docs/orm/core-concepts/supported-databases/mysql#planetscale)"
+"Direct execution of DDL (Data Definition Language) SQL statements is disabled on this database. Please read more here about how to handle this: [https://pris.ly/d/migrate-no-direct-ddl](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale)"
 
 #### [`P3023`](#p3023)
 
@@ -465,7 +468,7 @@ Read the docs page for more details: [https://pris.ly/d/migrate-shadow](https://
 
 ### [Prisma Accelerate](#prisma-accelerate)
 
-Prisma Accelerate-related errors start with `P6xxx` except for [`P5011`](https://www.prisma.io/docs/orm/reference/error-reference#p5011-too-many-requests).
+Prisma Accelerate-related errors start with `P6xxx` except for [`P5011`](prisma/docs/orm/reference/error-reference/index.md#p5011-too-many-requests).
 
 #### [`P6000` (`ServerError`)](#p6000-servererror)
 

@@ -11,8 +11,9 @@ menu_path: ["cacheLife"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheHandlers/index.md", "title": "cacheHandlers"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/compress/index.md", "title": "compress"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)cacheLife
 
 # cacheLife
 

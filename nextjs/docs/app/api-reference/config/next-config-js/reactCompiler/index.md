@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/proxyClientMaxBodySize/index.md", "title": "proxyClientMaxBodySize"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/reactMaxHeadersLength/index.md", "title": "reactMaxHeadersLength"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)reactCompiler
 
 # reactCompiler
 

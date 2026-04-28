@@ -10,7 +10,10 @@ content_hash: "efb61e1cec2f124c9a37ea526f1892895d2a1928430fe2559bdb1c8db3e61766"
 menu_path: ["All Symbols - Deno documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/index.md", "title": "Deno Namespace APIs"}
+nav_next: {"path": "deno/api/deno/cloud/index.md", "title": "Cloud - Deno documentation"}
 ---
+
 N
 
 [Deno](./././~/Deno "Deno")

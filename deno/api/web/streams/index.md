@@ -10,7 +10,10 @@ content_hash: "1489ca15fcfc9c649f5677e720aedc3076ffb25c8c166800c42375470d9cb992"
 menu_path: ["Streams - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/storage/index.md", "title": "Storage - Web documentation"}
+nav_next: {"path": "deno/api/web/temporal/index.md", "title": "404Sorry, couldn\u2019t find that page."}
 ---
+
 I
 
 v

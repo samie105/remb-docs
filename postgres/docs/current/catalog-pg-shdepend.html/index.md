@@ -10,7 +10,10 @@ content_hash: "cc228ccca2b156b780534fb6983de8500ce786e761310d59c64472ddf5c39dc9"
 menu_path: ["PostgreSQL: Documentation: 18: 52.48. pg_shdepend"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/catalog-pg-publication.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.40.\u00a0pg_publication"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-shdescription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.49.\u00a0pg_shdescription"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shdepend.html "PostgreSQL devel - 52.48. pg_shdepend")
 
 The catalog `pg_shdepend` records the dependency relationships between database objects and shared objects, such as roles. This information allows PostgreSQL to ensure that those objects are unreferenced before attempting to delete them.

@@ -10,7 +10,10 @@ content_hash: "80b3d777f27a6c101945e3e2b4c988d1209eea1c1cda7c26ba56a77f0d5af4c7"
 menu_path: ["Intl - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/gpu/index.md", "title": "GPU - Web documentation"}
+nav_next: {"path": "deno/api/web/io/index.md", "title": "I/O - Web documentation"}
 ---
+
 I
 
 [Intl.DateTimeFormat](./././~/Intl.DateTimeFormat "Intl.DateTimeFormat")

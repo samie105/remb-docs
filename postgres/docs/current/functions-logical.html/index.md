@@ -10,7 +10,10 @@ content_hash: "4480a57103ec84030719a7dc477fcf86825e6f5577ceb69492019f98eeaeb079"
 menu_path: ["PostgreSQL: Documentation: 18: 9.1. Logical Operators"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/functions-json.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.16.\u00a0JSON Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-matching.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.7.\u00a0Pattern Matching"}
 ---
+
 The usual logical operators are available:
 
 ```

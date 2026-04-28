@@ -11,8 +11,9 @@ menu_path: ["No HTML link for pages"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-head-import-in-document/index.md", "title": "No Head Import in Document"}
+nav_next: {"path": "nextjs/docs/messages/no-img-element/index.md", "title": "No img element"}
 ---
-[Docs](/docs)[Errors](/docs)No HTML link for pages
 
 # No HTML link for pages
 

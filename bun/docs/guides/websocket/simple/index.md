@@ -9,8 +9,11 @@ last_crawled_at: "2026-04-18T16:56:33.247Z"
 content_hash: "ecdce6c3289c2a4827b76d279d6f6224d884454462a03384a8ad577cde1884b2"
 menu_path: ["Build a simple WebSocket server"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/websocket/pubsub/index.md", "title": "Build a publish-subscribe WebSocket server"}
+nav_next: {"path": "bun/docs/guides/write-file/append/index.md", "title": "Append content to a file"}
 ---
-Start a simple WebSocket server using [`Bun.serve`](https://bun.com/docs/runtime/http/server). Inside `fetch`, we attempt to upgrade incoming `ws:` or `wss:` requests to WebSocket connections.
+
+Start a simple WebSocket server using [`Bun.serve`](bun/docs/runtime/http/server/index.md). Inside `fetch`, we attempt to upgrade incoming `ws:` or `wss:` requests to WebSocket connections.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)server.ts
 

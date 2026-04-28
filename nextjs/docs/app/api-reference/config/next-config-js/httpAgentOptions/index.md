@@ -11,8 +11,9 @@ menu_path: ["httpAgentOptions"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/images/index.md", "title": "images"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)httpAgentOptions
 
 # httpAgentOptions
 

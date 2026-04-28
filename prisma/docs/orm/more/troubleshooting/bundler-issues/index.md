@@ -10,7 +10,10 @@ content_hash: "4f36384ded3b8153bf90350af6886edd015efe8501caeecf1fb02fa412ad49a0"
 menu_path: ["Bundler issues"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/more/dev-environment/environment-variables/index.md", "title": "Environment variables"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/check-constraints/index.md", "title": "Check constraints"}
 ---
+
 Troubleshooting
 
 ## Bundler issues

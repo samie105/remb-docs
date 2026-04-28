@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:55:03.546Z"
 content_hash: "6d65abf5b5d90fabf50bc6165c20049402fd45ee44ed9ea12d12c77c88ca6079"
 menu_path: ["Skip tests with the Bun test runner"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/test/run-tests/index.md", "title": "Run your tests with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/snapshot/index.md", "title": "Use snapshot testing in `bun test`"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

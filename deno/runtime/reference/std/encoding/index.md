@@ -10,7 +10,10 @@ content_hash: "78656a15415f6d623db3b5be41045325ba47464367f3d709aed470fce81b6c52"
 menu_path: ["@std/encoding"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/dotenv/index.md", "title": "@std/dotenv"}
+nav_next: {"path": "deno/runtime/reference/std/expect/index.md", "title": "@std/expect"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

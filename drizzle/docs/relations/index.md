@@ -10,7 +10,10 @@ content_hash: "21ebd5009501ddf89c1be8c77cc506326cdb7470ff1a590a1d3d58e6b381aa18"
 menu_path: ["Drizzle soft relations"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/extensions/pg/index.md", "title": "PostgreSQL extensions"}
+nav_next: {"path": "drizzle/docs/kit-overview/index.md", "title": "Migrations with Drizzle Kit"}
 ---
+
 The sole purpose of Drizzle relations is to let you query your relational data in the most simple and consise way:
 
 Relational queries

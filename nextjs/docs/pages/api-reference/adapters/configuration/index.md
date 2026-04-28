@@ -11,8 +11,9 @@ menu_path: ["Configuration"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/index.md", "title": "Adapters"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/creating-an-adapter/index.md", "title": "Creating an Adapter"}
 ---
-[API Reference](/docs/pages/api-reference)[Adapters](/docs/pages/api-reference/adapters)Configuration
 
 # Configuration
 

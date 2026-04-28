@@ -11,8 +11,9 @@ menu_path: ["TypeScript"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/eslint/index.md", "title": "ESLint Plugin"}
 ---
-[API Reference](/docs/app/api-reference)[Configuration](/docs/app/api-reference/config)TypeScript
 
 # TypeScript
 

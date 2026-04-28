@@ -11,8 +11,9 @@ menu_path: ["logging"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/inlineCss/index.md", "title": "inlineCss"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/mdxRs/index.md", "title": "mdxRs"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)logging
 
 # logging
 

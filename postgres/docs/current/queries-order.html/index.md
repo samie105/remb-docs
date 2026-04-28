@@ -10,7 +10,10 @@ content_hash: "6fb73ad961f70f9491543f5d893b8d798711c6202b8796d2c080d73364267b53"
 menu_path: ["PostgreSQL: Documentation: 18: 7.5. Sorting Rows (ORDER BY)"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/protocol-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.4.\u00a0Streaming Replication Protocol"}
+nav_next: {"path": "postgres/docs/current/queries-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.1.\u00a0Overview"}
 ---
+
 After a query has produced an output table (after the select list has been processed) it can optionally be sorted. If sorting is not chosen, the rows will be returned in an unspecified order. The actual order in that case will depend on the scan and join plan types and the order on disk, but it must not be relied on. A particular output ordering can only be guaranteed if the sort step is explicitly chosen.
 
 The `ORDER BY` clause specifies the sort order:

@@ -10,7 +10,10 @@ content_hash: "961898c12ce479ae713af37093bd1f388dd90b5e3c229d0a73fe321cc9f0d980"
 menu_path: ["valibot"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/zod/index.md", "title": "zod"}
+nav_next: {"path": "drizzle/docs/typebox/index.md", "title": "typebox"}
 ---
+
 WARNING
 
 Starting from `drizzle-orm@1.0.0-beta.15`, `drizzle-valibot` has been deprecated in favor of first-class schema generation support within Drizzle ORM itself

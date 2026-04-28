@@ -10,7 +10,10 @@ content_hash: "751de45dfd8856d33b17d5c846b8a0489d49605f427593e11f63564d00255f41"
 menu_path: ["PostgreSQL: Documentation: 18: 29.8. Restrictions"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/logical-replication-quick-setup.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.14.\u00a0Quick Setup"}
+nav_next: {"path": "postgres/docs/current/logical-replication-row-filter.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.4.\u00a0Row Filters"}
 ---
+
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)
 
 [Documentation](/docs/ "Documentation") → [PostgreSQL 18](/docs/18/index.html)

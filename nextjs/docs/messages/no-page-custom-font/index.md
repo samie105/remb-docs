@@ -11,8 +11,9 @@ menu_path: ["No Page Custom Font"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-img-element/index.md", "title": "No img element"}
+nav_next: {"path": "nextjs/docs/messages/no-script-component-in-head/index.md", "title": "No Script Component in Head"}
 ---
-[Docs](/docs)[Errors](/docs)No Page Custom Font
 
 # No Page Custom Font
 

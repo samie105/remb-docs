@@ -10,7 +10,10 @@ content_hash: "453e778b220eeee26c0d4ecb9fa7e232ee0203ef0e92e7010aea8f4e4538a8d9"
 menu_path: ["Fetch - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/events/index.md", "title": "Events - Web documentation"}
+nav_next: {"path": "deno/api/web/file/index.md", "title": "File - Web documentation"}
 ---
+
 f
 
 [fetch](./././~/fetch "fetch")

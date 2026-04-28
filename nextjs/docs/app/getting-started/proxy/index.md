@@ -11,8 +11,9 @@ menu_path: ["Proxy"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/route-handlers/index.md", "title": "Route Handlers"}
+nav_next: {"path": "nextjs/docs/app/getting-started/deploying/index.md", "title": "Deploying"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Proxy
 
 # Proxy
 

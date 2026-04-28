@@ -11,8 +11,9 @@ menu_path: ["No async Client Component"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-assign-module-variable/index.md", "title": "No assign module variable"}
+nav_next: {"path": "nextjs/docs/messages/no-before-interactive-script-outside-document/index.md", "title": "No Before Interactive Script Outside Document"}
 ---
-[Docs](/docs)[Errors](/docs)No async Client Component
 
 # No async Client Component
 

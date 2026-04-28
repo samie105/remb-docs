@@ -10,7 +10,10 @@ content_hash: "c5d51820d7fe7eb6f7546ddcef189a27a28b3c51880c843cf1786bc395949496"
 menu_path: ["PostgreSQL: Documentation: 18: DROP FUNCTION"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/sql-dropeventtrigger.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP EVENT TRIGGER"}
+nav_next: {"path": "postgres/docs/current/sql-dropgroup.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP GROUP"}
 ---
+
 DROP FUNCTION — remove a function
 
 ## Synopsis

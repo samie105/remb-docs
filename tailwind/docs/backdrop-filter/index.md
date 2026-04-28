@@ -10,15 +10,9 @@ content_hash: "614841a8001d74593d135a3958be006782038ab478798eb617ec04aa021cd0cb"
 menu_path: ["backdrop-filter"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/filter-sepia/index.md", "title": "filter: sepia()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  backdrop-filter
-
-Filters
 
 # backdrop-filter
 

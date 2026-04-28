@@ -11,8 +11,9 @@ menu_path: ["useParams"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-link-status/index.md", "title": "useLinkStatus"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-pathname/index.md", "title": "usePathname"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)useParams
 
 # useParams
 

@@ -10,7 +10,10 @@ content_hash: "1a40d088f8909ff2cdd276d91a3361fc9adb0ad6132cc1452f26159d978a78b9"
 menu_path: ["Migration histories"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md", "title": "Understanding Migrations"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md", "title": "About the shadow database"}
 ---
+
 How Prisma ORM uses migration histories to track changes to your schema
 
 Your migration history is the story of the changes to your data model, and is represented by:
@@ -32,7 +35,7 @@ The `migrations` folder is the **source of truth** for the history of your data 
     -   If an applied migration was deleted
     -   If an applied migration was changed
 
-If you change or delete a migration (**not** recommended), the next steps depend on whether you are in a [development environment](https://www.prisma.io/docs/orm/prisma-migrate/workflows/development-and-production#production-and-testing-environments) (and therefore using `migrate dev`) or a [production / testing environment](https://www.prisma.io/docs/orm/prisma-migrate/workflows/development-and-production#production-and-testing-environments) (and therefore using `migrate deploy`).
+If you change or delete a migration (**not** recommended), the next steps depend on whether you are in a [development environment](prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md#production-and-testing-environments) (and therefore using `migrate dev`) or a [production / testing environment](prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md#production-and-testing-environments) (and therefore using `migrate deploy`).
 
 In general, you **should not edit or delete** a migration that has already been applied. Doing so can lead to inconsistencies between development and production environment migration histories, which may have unforeseen consequences, even if the change does not _appear_ to break anything at first.
 
@@ -74,9 +77,9 @@ If Prisma Migrate reports a missing or edited migration that has already been ap
 
 ## [Committing the migration history to source control](#committing-the-migration-history-to-source-control)
 
-You must commit the entire `prisma/migrations` folder to source control. This includes the `prisma/migrations/migration_lock.toml` file, which is used to detect if you have [attempted to change providers](https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues#you-cannot-automatically-switch-database-providers).
+You must commit the entire `prisma/migrations` folder to source control. This includes the `prisma/migrations/migration_lock.toml` file, which is used to detect if you have [attempted to change providers](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues/index.md#you-cannot-automatically-switch-database-providers).
 
 Source-controlling the `schema.prisma` file is not enough - you must include your migration history. This is because:
 
--   As you start to [customize migrations](https://www.prisma.io/docs/orm/prisma-migrate/workflows/development-and-production#customizing-migrations), your migration history contains **information that cannot be represented in the Prisma schema**. For example, you can customize a migration to mitigate data loss that would be caused by a breaking change.
+-   As you start to [customize migrations](prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md#customizing-migrations), your migration history contains **information that cannot be represented in the Prisma schema**. For example, you can customize a migration to mitigate data loss that would be caused by a breaking change.
 -   The `prisma migrate deploy` command, which is used to deploy changes to staging, testing, and production environments, _only_ runs migration files. It does not use the Prisma schema to fetch the models.

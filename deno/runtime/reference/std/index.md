@@ -10,7 +10,10 @@ content_hash: "a93ede8b1c2f566e2e5aed577b338c83a10cf769de5dc35c07dd338ff3a62ddf"
 menu_path: ["Deno Standard Library (@std)"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/x/index.md", "title": "deno x"}
+nav_next: {"path": "deno/runtime/reference/std/assert/index.md", "title": "Standard Assertions (@std/assert)"}
 ---
+
 **On this page**
 
 -   [Packages](#packages)

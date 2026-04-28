@@ -10,7 +10,10 @@ content_hash: "3337c5cb14df9e215d9f0b7d84e14e91ad79584d46be6bc5b9782830b8ebd6d8"
 menu_path: ["cluster - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/child_process/index.md", "title": "child_process - Node documentation"}
+nav_next: {"path": "deno/api/node/console/index.md", "title": "console - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

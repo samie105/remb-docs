@@ -10,15 +10,9 @@ content_hash: "6ce7891ac16dd915de1636a971ae041b81bc7e3e98432891aa5d71317067bd97"
 menu_path: ["pointer-events"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/field-sizing/index.md", "title": "field-sizing"}
+nav_next: {"path": "tailwind/docs/resize/index.md", "title": "resize"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  pointer-events
-
-Interactivity
 
 # pointer-events
 

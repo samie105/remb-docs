@@ -11,8 +11,9 @@ menu_path: ["Prefetching"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
+nav_next: {"path": "nextjs/docs/app/guides/preserving-ui-state/index.md", "title": "Preserving UI state across navigations"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Prefetching
 
 # Prefetching
 

@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:44:34.699Z"
 content_hash: "f3b6613d030d5c96de7ae598ff7e99596f804fc36b599eb93063a85f0c2cbb0d"
 menu_path: ["Read and write data to MongoDB using Mongoose and Bun"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/ecosystem/hono/index.md", "title": "Build an HTTP server using Hono and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/neon-drizzle/index.md", "title": "Use Neon Postgres through Drizzle ORM"}
 ---
+
 MongoDB and Mongoose work out of the box with Bun. This guide assumes you’ve already installed MongoDB and are running it as background process/service on your development machine. Follow [this guide](https://www.mongodb.com/docs/manual/installation/) for details.
 
 * * *

@@ -9,50 +9,10 @@ last_crawled_at: "2026-04-18T16:58:15.422Z"
 content_hash: "78379d01c8ce25a7441d6cb5da1a9f84f022f9d286606bb669423092473605bd"
 menu_path: ["Building Windows"]
 section_path: []
+nav_prev: {"path": "bun/docs/project/bindgen/index.md", "title": "Bindgen"}
+nav_next: {"path": "bun/docs/project/contributing/index.md", "title": "Contributing"}
 ---
-This document describes the build process for Windows. If you run into problems, please join the [#contributing channel on our Discord](http://bun.com/discord) for help. It is strongly recommended to use [PowerShell 7 (`pwsh.exe`)](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4) instead of the default `powershell.exe`.
 
-## Prerequisites
-
-### Enable Scripts
-
-By default, running unverified scripts are blocked.
-
-```
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
-```
-
-### System Dependencies
-
-Bun v1.1 or later. We use Bun to run it’s own code generators.
-
-```
-irm bun.sh/install.ps1 | iex
-```
-
-[Visual Studio](https://visualstudio.microsoft.com/) with the “Desktop Development with C++” workload. While installing, make sure to install Git as well, if Git for Windows is not already installed. Visual Studio can be installed graphically using the wizard or through WinGet:
-
-```
-winget install "Visual Studio Community 2022" --override "--add Microsoft.VisualStudio.Workload.NativeDesktop Microsoft.VisualStudio.Component.Git " -s msstore
-```
-
-After Visual Studio, you need the following:
-
-*   LLVM 21.1.8
-*   Go
-*   Rust
-*   NASM
-*   Perl
-*   Ruby
-*   Node.js
-
-Use [Scoop](https://scoop.sh/) to install these remaining tools.
-
-Scoop (x64)
-
-```
-irm https://get.scoop.sh | iex
-scoop install nodejs-lts go rust nasm ruby perl ccache
 # scoop seems to be buggy if you install llvm and the rest at the same time
 scoop install llvm@21.1.8
 ```

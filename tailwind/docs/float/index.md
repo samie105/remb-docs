@@ -10,7 +10,10 @@ content_hash: "fecb721179890815ee597e9e724b1104d3da2f78225af02b57a3fd7d074b53b8"
 menu_path: ["float"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/display/index.md", "title": "display"}
+nav_next: {"path": "tailwind/docs/clear/index.md", "title": "clear"}
 ---
+
 Utilities for controlling the wrapping of content around an element.
 
 ## [Examples](#examples)
@@ -55,4 +58,4 @@ Prefix a `float` utility with a breakpoint variant like `md:` to only apply the 
 <img class="float-right md:float-left" src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

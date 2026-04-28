@@ -10,7 +10,10 @@ content_hash: "60d623a99dbbcd131a729822b0647fbee5d3c028519fa04f0e1bc8c13324b6e8"
 menu_path: ["Connection management"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md", "title": "Database connections"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md", "title": "Connection pool"}
 ---
+
 Setup and Configuration
 
 Database Connections
@@ -19,12 +22,12 @@ This page explains how database connections are handled with Prisma Client and h
 
 `PrismaClient` connects and disconnects from your data source using the following two methods:
 
--   [`$connect()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference)
--   [`$disconnect()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference)
+-   [`$connect()`](prisma/docs/orm/reference/prisma-client-reference/index.md)
+-   [`$disconnect()`](prisma/docs/orm/reference/prisma-client-reference/index.md)
 
-In most cases, you **do not need to explicitly call these methods**. `PrismaClient` automatically connects when you run your first query, creates a [connection pool](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool), and disconnects when the Node.js process ends.
+In most cases, you **do not need to explicitly call these methods**. `PrismaClient` automatically connects when you run your first query, creates a [connection pool](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md), and disconnects when the Node.js process ends.
 
-See the [connection management guide](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/databases-connections) for information about managing connections for different deployment paradigms (long-running processes and serverless functions).
+See the [connection management guide](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md) for information about managing connections for different deployment paradigms (long-running processes and serverless functions).
 
 **Questions answered in this page**
 
@@ -32,7 +35,7 @@ See the [connection management guide](https://www.prisma.io/docs/orm/prisma-clie
 -   How does Prisma manage connection pools?
 -   How to handle connections in serverless?
 
-It is not necessary to call [`$connect()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference) thanks to the _lazy connect_ behavior: The `PrismaClient` instance connects lazily when the first request is made to the API (`$connect()` is called for you under the hood).
+It is not necessary to call [`$connect()`](prisma/docs/orm/reference/prisma-client-reference/index.md) thanks to the _lazy connect_ behavior: The `PrismaClient` instance connects lazily when the first request is made to the API (`$connect()` is called for you under the hood).
 
 ### [Calling `$connect()` explicitly](#calling-connect-explicitly)
 
@@ -45,7 +48,7 @@ const prisma = new PrismaClient();
 await prisma.$connect();
 ```
 
-When you call [`$disconnect()`](https://www.prisma.io/docs/orm/reference/prisma-client-reference) , Prisma Client:
+When you call [`$disconnect()`](prisma/docs/orm/reference/prisma-client-reference/index.md) , Prisma Client:
 
 1.  Runs the [`beforeExit` hook](#exit-hooks)
 2.  Closes all connections in the pool
@@ -54,7 +57,7 @@ In a long-running application such as a GraphQL API, which constantly serves req
 
 ### [Calling `$disconnect()` explicitly](#calling-disconnect-explicitly)
 
-In most long-running or serverless apps you should **not** call `$disconnect()` after each request, so connections can be reused. In some situations it **does** make sense to call it explicitly—for example, when creating a temporary `PrismaClient` and then immediately releasing its resources (e.g. in [Cloudflare Workers](https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare), where `ctx.waitUntil(prisma.$disconnect())` is recommended).
+In most long-running or serverless apps you should **not** call `$disconnect()` after each request, so connections can be reused. In some situations it **does** make sense to call it explicitly—for example, when creating a temporary `PrismaClient` and then immediately releasing its resources (e.g. in [Cloudflare Workers](prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md), where `ctx.waitUntil(prisma.$disconnect())` is recommended).
 
 Another scenario is a script that:
 

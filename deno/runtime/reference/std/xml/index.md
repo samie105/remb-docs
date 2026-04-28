@@ -10,7 +10,10 @@ content_hash: "be934a282a2ed0a916f6464725dc67974b8d132ec4a78275247064df4cc7860d"
 menu_path: ["@std/xml"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/math/index.md", "title": "@std/math"}
+nav_next: {"path": "deno/runtime/reference/web_platform_apis/index.md", "title": "Web Platform APIs"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

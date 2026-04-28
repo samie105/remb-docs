@@ -10,7 +10,10 @@ content_hash: "67219634e54c5978bee0fbd27d73720f6b8c406a252ccede55498079dc7021ff"
 menu_path: ["PostgreSQL: Documentation: 18: 53.15. pg_policies"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-matviews.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.14.\u00a0pg_matviews"}
+nav_next: {"path": "postgres/docs/current/view-pg-prepared-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.16.\u00a0pg_prepared_statements"}
 ---
+
 The view `pg_policies` provides access to useful information about each row-level security policy in the database.
 
 **Table 53.15. `pg_policies` Columns**

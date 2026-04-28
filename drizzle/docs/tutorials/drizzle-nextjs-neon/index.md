@@ -10,7 +10,10 @@ content_hash: "a6b2865a1a41cb28830705abf44d7ce1255df8d41672a1db96aed14c7b6b4cd9"
 menu_path: ["Todo App with Neon Postgres"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/tutorials/bun-railway-pg/index.md", "title": "Drizzle with Bun and PostgreSQL on Railway"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-encore/index.md", "title": "Drizzle with Encore"}
 ---
+
 This tutorial demonstrates how to build `Todo app` using **Drizzle ORM** with **Neon database** and **Next.js**.
 
 This guide assumes familiarity with:
@@ -21,7 +24,7 @@ This guide assumes familiarity with:
 npx create-next-app@latest --typescript
 ```
 
--   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
+-   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -136,7 +139,7 @@ Here we define the **`todo`** table with fields **`id`**, **`text`**, and **`don
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -184,7 +187,7 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](https://orm.drizzle.team/docs/kit-overview#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
 
 ```bash
 npx drizzle-kit push

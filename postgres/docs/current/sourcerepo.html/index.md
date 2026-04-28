@@ -10,7 +10,10 @@ content_hash: "8c5d843b573d17301cf787bed227f93ca2c8dc7a9f7ce302250e9d4f08d2f49a"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix I. The Source Code Repository"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/sql-keywords-appendix.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0C.\u00a0SQL Key Words"}
+nav_next: {"path": "postgres/docs/current/docguide.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0J.\u00a0Documentation"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/sourcerepo.html "PostgreSQL devel - Appendix I. The Source Code Repository")
 
 | Appendix I. The Source Code Repository |

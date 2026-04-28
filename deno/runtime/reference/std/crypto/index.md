@@ -10,7 +10,10 @@ content_hash: "e88f052792f060656310e925fa5f7be801824ddc70361ab34330c21539613cc7"
 menu_path: ["@std/crypto"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/collections/index.md", "title": "@std/collections"}
+nav_next: {"path": "deno/runtime/reference/std/csv/index.md", "title": "@std/csv"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

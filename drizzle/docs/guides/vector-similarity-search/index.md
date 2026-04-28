@@ -10,7 +10,10 @@ content_hash: "718eb6766a4929867e3c24b83422c89ee1996deceb94fae80c368b9487d0e216"
 menu_path: ["Drizzle ORM - Vector similarity search with pgvector extension"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/guides/upsert/index.md", "title": "Drizzle ORM - Upsert Query"}
+nav_next: {"path": "drizzle/docs/json-functions/index.md", "title": "404"}
 ---
+
 Drizzle | Vector similarity search with pgvector extension
 
 To implement vector similarity search in PostgreSQL with Drizzle ORM, you can use the `pgvector` extension. This extension provides a set of functions to work with vectors and perform similarity search.

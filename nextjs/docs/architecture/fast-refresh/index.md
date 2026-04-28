@@ -11,8 +11,9 @@ menu_path: ["Fast Refresh"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/architecture/accessibility/index.md", "title": "Accessibility"}
+nav_next: {"path": "nextjs/docs/architecture/nextjs-compiler/index.md", "title": "Next.js Compiler"}
 ---
-[Next.js Docs](/docs)[Architecture](/docs/architecture)Fast Refresh
 
 # Fast Refresh
 

@@ -10,7 +10,10 @@ content_hash: "5befb26bf38e333a119f11d579ab2acd495e74385d095c68fa73d85ff80d6175"
 menu_path: ["drizzle-kit export"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/drizzle-kit-pull/index.md", "title": "drizzle-kit pull"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-check/index.md", "title": "drizzle-kit check"}
 ---
+
 `drizzle-kit export` lets you export SQL representation of Drizzle schema and print in console SQL DDL representation on it.
 
 How it works under the hood?
@@ -21,9 +24,9 @@ Drizzle Kit `export` command triggers a sequence of events:
 2.  Based on json differences it will generate SQL DDL statements
 3.  Output SQL DDL statements to console
 
-It’s designed to cover [codebase first](https://orm.drizzle.team/docs/migrations) approach of managing Drizzle migrations. You can export the SQL representation of the Drizzle schema, allowing external tools like Atlas to handle all the migrations for you
+It’s designed to cover [codebase first](drizzle/docs/migrations/index.md) approach of managing Drizzle migrations. You can export the SQL representation of the Drizzle schema, allowing external tools like Atlas to handle all the migrations for you
 
-`drizzle-kit export` command requires you to provide both `dialect` and `schema` path options, you can set them either via [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) config file or via CLI options
+`drizzle-kit export` command requires you to provide both `dialect` and `schema` path options, you can set them either via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file or via CLI options
 
 With config file
 
@@ -148,7 +151,7 @@ bunx drizzle-kit push --name=seed_users --custom
 
 * * *
 
-We recommend configuring `drizzle-kit` through [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
+We recommend configuring `drizzle-kit` through [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
 
 |  |  |  |
 | --- | --- | --- |

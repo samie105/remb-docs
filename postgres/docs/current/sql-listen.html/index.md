@@ -10,7 +10,10 @@ content_hash: "cb47dc840068e33b0680be8d8b01d9355cea5adc18c625cf1f76de3c2f4abaec"
 menu_path: ["PostgreSQL: Documentation: 18: LISTEN"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/sql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.2.\u00a0Value Expressions"}
+nav_next: {"path": "postgres/docs/current/sql-lock.html/index.md", "title": "PostgreSQL: Documentation: 18: LOCK"}
 ---
+
 LISTEN — listen for a notification
 
 ## Description

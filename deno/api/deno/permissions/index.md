@@ -10,7 +10,10 @@ content_hash: "659f6d8f3ebabf4a30711e9f1a656815b92ce12eb589ae64214396d46df51942"
 menu_path: ["Permissions - Deno documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/network/index.md", "title": "Network - Deno documentation"}
+nav_next: {"path": "deno/api/deno/runtime/index.md", "title": "Runtime - Deno documentation"}
 ---
+
 c
 
 [Deno.Permissions](./././~/Deno.Permissions "Deno.Permissions")

@@ -10,7 +10,10 @@ content_hash: "0402fca18862e4afe45500cf808e12fdc16230df312561e6b5e2081ddcc8650d"
 menu_path: ["PostgreSQL: Documentation: 18: 68.6. BKI Example"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/bki-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.4.\u00a0BKI Commands"}
+nav_next: {"path": "postgres/docs/current/bki-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.3.\u00a0BKI File Format"}
 ---
+
 | 68.6. BKI Example |
 | --- |
 | [Prev](https://www.postgresql.org/docs/current/bki-structure.html "68.5. Structure of the Bootstrap BKI File")  | [Up](https://www.postgresql.org/docs/current/bki.html "Chapter 68. System Catalog Declarations and Initial Contents") | Chapter 68. System Catalog Declarations and Initial Contents | [Home](https://www.postgresql.org/docs/current/index.html "PostgreSQL 18.3 Documentation") |  [Next](https://www.postgresql.org/docs/current/planner-stats-details.html "Chapter 69. How the Planner Uses Statistics") |

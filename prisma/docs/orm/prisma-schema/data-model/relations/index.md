@@ -11,7 +11,10 @@ menu_path: ["Relations"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md", "title": "Multi-schema"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md", "title": "Many-to-many relations"}
 ---
+
 A relation is a connection between two models in the Prisma schema. This page explains how you can define one-to-one, one-to-many and many-to-many relations in Prisma
 
 A relation is a _connection_ between two models in the Prisma schema. For example, there is a one-to-many relation between `User` and `Post` because one user can have many blog posts:
@@ -99,9 +102,9 @@ await prisma.user.update({
 
 There are three different types (or [cardinalities](https://en.wikipedia.org/wiki/Cardinality_\(data_modeling\))) of relations in Prisma ORM:
 
--   [One-to-one](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/one-to-one-relations) (also called 1-1 relations)
--   [One-to-many](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/one-to-many-relations) (also called 1-n relations)
--   [Many-to-many](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations) (also called m-n relations)
+-   [One-to-one](prisma/docs/orm/prisma-schema/data-model/relations/one-to-one-relations/index.md) (also called 1-1 relations)
+-   [One-to-many](prisma/docs/orm/prisma-schema/data-model/relations/one-to-many-relations/index.md) (also called 1-n relations)
+-   [Many-to-many](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md) (also called m-n relations)
 
 The following Prisma schema includes every type of relation:
 
@@ -109,7 +112,7 @@ The following Prisma schema includes every type of relation:
 -   one-to-many: `User` ↔ `Post`
 -   many-to-many: `Post` ↔ `Category`
 
-Notice that the syntax is slightly different between relational databases and MongoDB - particularly for [many-to-many relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations).
+Notice that the syntax is slightly different between relational databases and MongoDB - particularly for [many-to-many relations](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md).
 
 For relational databases, the following entity relationship diagram represents the database that corresponds to the sample Prisma schema:
 
@@ -121,21 +124,21 @@ For MongoDB, Prisma ORM uses a [normalized data model design](https://www.mongod
 
 Many-to-many relations in relational databases can be modelled in two ways:
 
--   [explicit many-to-many relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations#explicit-many-to-many-relations), where the relation table is represented as an explicit model in your Prisma schema
--   [implicit many-to-many relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations#implicit-many-to-many-relations), where Prisma ORM manages the relation table and it does not appear in the Prisma schema.
+-   [explicit many-to-many relations](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#explicit-many-to-many-relations), where the relation table is represented as an explicit model in your Prisma schema
+-   [implicit many-to-many relations](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#implicit-many-to-many-relations), where Prisma ORM manages the relation table and it does not appear in the Prisma schema.
 
 Implicit many-to-many relations require both models to have a single `@id`. Be aware of the following:
 
--   You cannot use a [multi-field ID](https://www.prisma.io/docs/orm/reference/prisma-schema-reference)
+-   You cannot use a [multi-field ID](prisma/docs/orm/reference/prisma-schema-reference/index.md)
 -   You cannot use a `@unique` in place of an `@id`
 
 To use either of these features, you must set up an explicit many-to-many instead.
 
 The implicit many-to-many relation still manifests in a relation table in the underlying database. However, Prisma ORM manages this relation table.
 
-If you use an implicit many-to-many relation instead of an explicit one, it makes the [Prisma Client API](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/introduction) simpler (because, for example, you have one fewer level of nesting inside of [nested writes](https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries#nested-writes)).
+If you use an implicit many-to-many relation instead of an explicit one, it makes the [Prisma Client API](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md) simpler (because, for example, you have one fewer level of nesting inside of [nested writes](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-writes)).
 
-If you're not using Prisma Migrate but obtain your data model from [introspection](https://www.prisma.io/docs/orm/prisma-schema/introspection), you can still make use of implicit many-to-many relations by following Prisma ORM's [conventions for relation tables](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/many-to-many-relations#relation-table-conventions).
+If you're not using Prisma Migrate but obtain your data model from [introspection](prisma/docs/orm/prisma-schema/introspection/index.md), you can still make use of implicit many-to-many relations by following Prisma ORM's [conventions for relation tables](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#relation-table-conventions).
 
 Relation fields are fields on a Prisma model whose type is another model (not a scalar type). Every relation needs exactly two relation fields, one on each model.
 
@@ -172,7 +175,7 @@ The `@relation` attribute is required when:
 
 -   Defining one-to-one or one-to-many relations
 -   Disambiguating multiple relations between the same models
--   Defining [self-relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations/self-relations)
+-   Defining [self-relations](prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md)
 -   Defining many-to-many relations for MongoDB
 
 When you have two relations between the same models, use the `name` argument in `@relation` to disambiguate:

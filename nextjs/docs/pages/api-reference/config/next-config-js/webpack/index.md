@@ -11,8 +11,9 @@ menu_path: ["Custom Webpack Config"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/useLightningcss/index.md", "title": "useLightningcss"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
 ---
-[Configuration](/docs/pages/api-reference/config)[next.config.js Options](/docs/pages/api-reference/config/next-config-js)webpack
 
 # Custom Webpack Config
 

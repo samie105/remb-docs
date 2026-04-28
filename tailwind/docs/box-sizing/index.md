@@ -10,7 +10,10 @@ content_hash: "1156dbdbcf8269058e797c050dfab2d1b5f1d70e8e5a991b1b720f263998bf3a"
 menu_path: ["box-sizing"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/box-decoration-break/index.md", "title": "box-decoration-break"}
+nav_next: {"path": "tailwind/docs/display/index.md", "title": "display"}
 ---
+
 Layout
 
 Utilities for controlling how the browser should calculate an element's total size.
@@ -31,7 +34,7 @@ This means a 100px × 100px element with a 2px border and 4px of padding on all 
 <div class="box-border size-32 border-4 p-4 ...">  <!-- ... --></div>
 ```
 
-Tailwind makes this the default for all elements in our [preflight base styles](https://tailwindcss.com/docs/preflight).
+Tailwind makes this the default for all elements in our [preflight base styles](tailwind/docs/preflight/index.md).
 
 ### [Excluding borders and padding](#excluding-borders-and-padding)
 
@@ -55,4 +58,4 @@ Prefix a `box-sizing` utility with a breakpoint variant like `md:` to only apply
 <div class="box-content md:box-border ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](https://tailwindcss.com/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).

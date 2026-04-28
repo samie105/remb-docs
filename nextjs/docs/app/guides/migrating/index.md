@@ -11,8 +11,9 @@ menu_path: ["Migrating"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/memory-usage/index.md", "title": "How to optimize memory usage"}
+nav_next: {"path": "nextjs/docs/app/guides/migrating/app-router-migration/index.md", "title": "How to migrate from Pages to the App Router"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Migrating
 
 # Migrating
 

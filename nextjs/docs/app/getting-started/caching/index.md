@@ -11,8 +11,9 @@ menu_path: ["Caching"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/mutating-data/index.md", "title": "Mutating Data"}
+nav_next: {"path": "nextjs/docs/app/getting-started/revalidating/index.md", "title": "Revalidating"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Caching
 
 # Caching
 
@@ -287,7 +288,7 @@ This rendering approach is called **Partial Prerendering (PPR)**, and it's the d
 
 ![Diagram showing partially rendered page on the client, with loading UI for chunks that are being streamed.](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-with-streaming.png)
 
-Next.js requires you to explicitly handle components that can't complete during prerendering. If they aren't wrapped in `<Suspense>` or marked with `use cache`, you'll see an [`Uncached data was accessed outside of <Suspense>`](https://nextjs.org/docs/messages/blocking-route) error during development and build time.
+Next.js requires you to explicitly handle components that can't complete during prerendering. If they aren't wrapped in `<Suspense>` or marked with `use cache`, you'll see an [`Uncached data was accessed outside of <Suspense>`](nextjs/docs/messages/blocking-route/index.md) error during development and build time.
 
 > **🎥 Watch:** Why Partial Prerendering and how it works → [YouTube (10 minutes)](https://www.youtube.com/watch?v=MTcPrTIBkpA).
 

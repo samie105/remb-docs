@@ -11,8 +11,9 @@ menu_path: ["Image Optimization"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/css/index.md", "title": "CSS"}
+nav_next: {"path": "nextjs/docs/app/getting-started/fonts/index.md", "title": "Font Optimization"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Image Optimization
 
 # Image Optimization
 

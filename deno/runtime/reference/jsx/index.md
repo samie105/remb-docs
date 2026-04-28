@@ -10,7 +10,10 @@ content_hash: "7d8f7cb660f5e86398c875610438f789a6740f11d789bdfa6b38c0ba0eb5c060"
 menu_path: ["JSX"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/vscode/index.md", "title": "Deno & Visual Studio Code"}
+nav_next: {"path": "deno/runtime/reference/documentation/index.md", "title": "Documentation Tests"}
 ---
+
 **On this page**
 
 -   [Default configuration](#default-configuration)

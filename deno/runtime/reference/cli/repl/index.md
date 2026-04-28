@@ -10,7 +10,10 @@ content_hash: "628612176160da0baf2320bf037513cd5678a3425c609584534f386ed9bd2451"
 menu_path: ["deno repl"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/remove/index.md", "title": "deno remove"}
+nav_next: {"path": "deno/runtime/reference/cli/run/index.md", "title": "deno run"}
 ---
+
 **On this page**
 
 -   [Special variables](#special-variables)

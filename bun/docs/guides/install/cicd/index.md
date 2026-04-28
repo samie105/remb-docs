@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:49:43.415Z"
 content_hash: "1cf69e1f494367b109e845af46e2b661a18e4536a9cfbdbfc7e36a7978999a93"
 menu_path: ["Install dependencies with Bun in GitHub Actions"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/install/azure-artifacts/index.md", "title": "Using bun install with an Azure Artifacts npm registry"}
+nav_next: {"path": "bun/docs/guides/install/custom-registry/index.md", "title": "Override the default npm registry for bun install"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

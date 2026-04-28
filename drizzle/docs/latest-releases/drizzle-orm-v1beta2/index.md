@@ -10,7 +10,10 @@ content_hash: "c465a089d72fc4755e4af3ae7e52662a9e08aa1c323a99f012f79f1e5c819c7e"
 menu_path: ["New Features"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0322/index.md", "title": "Drizzle ORM - DrizzleORM v0.32.2 release"}
+nav_next: {"path": "drizzle/docs/migrate/components/index.md", "title": "Drizzle ORM - undefined"}
 ---
+
 Drizzle ORM and Drizzle Kit v1.0.0-beta.2 release
 
 Feb 12, 2025
@@ -19,11 +22,11 @@ Feb 12, 2025
 
 > Don’t forget to check `1.0.0-beta.1` release notes as well: [https://github.com/drizzle-team/drizzle-orm/blob/beta/changelogs/drizzle-orm/1.0.0-beta.1.md](https://github.com/drizzle-team/drizzle-orm/blob/beta/changelogs/drizzle-orm/1.0.0-beta.1.md)
 
-> Check the migration guide for RQBv1 to RQBv2 migration steps: [https://orm.drizzle.team/docs/relations-v1-v2](https://orm.drizzle.team/docs/relations-v1-v2)
+> Check the migration guide for RQBv1 to RQBv2 migration steps: [https://orm.drizzle.team/docs/relations-v1-v2](drizzle/docs/relations-v1-v2/index.md)
 
-> Check new RQBv2 schema docs: [https://orm.drizzle.team/docs/relations-v2](https://orm.drizzle.team/docs/relations-v2)
+> Check new RQBv2 schema docs: [https://orm.drizzle.team/docs/relations-v2](drizzle/docs/relations-v2/index.md)
 
-> Check new RQBv2 query docs: [https://orm.drizzle.team/docs/rqb-v2](https://orm.drizzle.team/docs/rqb-v2)
+> Check new RQBv2 query docs: [https://orm.drizzle.team/docs/rqb-v2](drizzle/docs/rqb-v2/index.md)
 
 ## New Features
 
@@ -194,10 +197,10 @@ const query = db
 
 We’ve added a few more MySQL column types:
 
--   blob: [https://orm.drizzle.team/docs/column-types/mysql#blob](https://orm.drizzle.team/docs/column-types/mysql#blob)
--   tinyblob: [https://orm.drizzle.team/docs/column-types/mysql#tinyblob](https://orm.drizzle.team/docs/column-types/mysql#tinyblob)
--   mediumblob: [https://orm.drizzle.team/docs/column-types/mysql#mediumblob](https://orm.drizzle.team/docs/column-types/mysql#mediumblob)
--   longblob: [https://orm.drizzle.team/docs/column-types/mysql#longblob](https://orm.drizzle.team/docs/column-types/mysql#longblob)
+-   blob: [https://orm.drizzle.team/docs/column-types/mysql#blob](drizzle/docs/column-types/mysql/index.md#blob)
+-   tinyblob: [https://orm.drizzle.team/docs/column-types/mysql#tinyblob](drizzle/docs/column-types/mysql/index.md#tinyblob)
+-   mediumblob: [https://orm.drizzle.team/docs/column-types/mysql#mediumblob](drizzle/docs/column-types/mysql/index.md#mediumblob)
+-   longblob: [https://orm.drizzle.team/docs/column-types/mysql#longblob](drizzle/docs/column-types/mysql/index.md#longblob)
 
 ## More Updates and Fixes
 

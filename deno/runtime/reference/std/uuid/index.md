@@ -10,7 +10,10 @@ content_hash: "f4a1ebb45496215b7f5a85cd4029bee0c905bdc1f4ee7657fc383ee667ce04b2"
 menu_path: ["@std/uuid"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/ulid/index.md", "title": "@std/ulid"}
+nav_next: {"path": "deno/runtime/reference/std/webgpu/index.md", "title": "@std/webgpu"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

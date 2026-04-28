@@ -11,8 +11,9 @@ menu_path: ["Custom Next.js Cache Handler"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/images/index.md", "title": "images"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/inlineCss/index.md", "title": "inlineCss"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)cacheHandler
 
 # Custom Next.js Cache Handler
 

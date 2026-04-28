@@ -11,8 +11,9 @@ menu_path: ["Functions"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/src-folder/index.md", "title": "src Directory"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/get-initial-props/index.md", "title": "getInitialProps"}
 ---
-[Pages Router](/docs/pages)[API Reference](/docs/pages/api-reference)Functions
 
 # Functions
 

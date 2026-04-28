@@ -10,7 +10,10 @@ content_hash: "9a4d064852101fd2a8b1e2984b82cc5d0b66f1762c02b4ecf45df3e310df318e"
 menu_path: ["Drizzle Queries + CRUD"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/connect-overview/index.md", "title": "Database connection with Drizzle"}
+nav_next: {"path": "drizzle/docs/migrations/index.md", "title": "Drizzle migrations fundamentals"}
 ---
+
 ## Drizzle Queries + CRUD
 
 Drizzle gives you a few ways for querying your database and it’s up to you to decide which one you’ll need in your next project. It can be either SQL-like syntax or Relational Syntax. Let’s check them:

@@ -10,7 +10,10 @@ content_hash: "bfdfc01e724fcf2bc8a52a4580b6aa5b43df75a5233c3bf16d49542a8bdc7508"
 menu_path: ["Web development"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/fundamentals/configuration/index.md", "title": "deno.json and package.json"}
+nav_next: {"path": "deno/runtime/fundamentals/testing/index.md", "title": "Testing"}
 ---
+
 **On this page**
 
 -   [React/Next](#react%2Fnext)

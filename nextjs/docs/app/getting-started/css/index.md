@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/error-handling/index.md", "title": "Error Handling"}
+nav_next: {"path": "nextjs/docs/app/getting-started/images/index.md", "title": "Image Optimization"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)CSS
 
 # CSS
 

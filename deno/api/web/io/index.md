@@ -10,7 +10,10 @@ content_hash: "11486fea92bc663c315d755aec5988a4400685bd66275dab03997f3e562cda53"
 menu_path: ["I/O - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/intl/index.md", "title": "Intl - Web documentation"}
+nav_next: {"path": "deno/api/web/messaging/index.md", "title": "Messaging - Web documentation"}
 ---
+
 I
 
 [Console](./././~/Console "Console")

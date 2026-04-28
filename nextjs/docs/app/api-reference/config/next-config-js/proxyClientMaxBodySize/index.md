@@ -11,8 +11,9 @@ menu_path: ["proxyClientMaxBodySize"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/productionBrowserSourceMaps/index.md", "title": "productionBrowserSourceMaps"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/reactCompiler/index.md", "title": "reactCompiler"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)proxyClientMaxBodySize
 
 # proxyClientMaxBodySize
 

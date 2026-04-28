@@ -10,7 +10,10 @@ content_hash: "c8021e7345668825d10b63f80584a050d9082f2ccd9141d11ea7af60194551f0"
 menu_path: ["deno lint"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/jupyter/index.md", "title": "Jupyter Kernel for Deno"}
+nav_next: {"path": "deno/runtime/reference/cli/outdated/index.md", "title": "deno outdated"}
 ---
+
 **On this page**
 
 -   [Basic usage](#basic-usage)

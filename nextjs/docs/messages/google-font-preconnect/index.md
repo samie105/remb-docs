@@ -11,8 +11,9 @@ menu_path: ["Google Font Preconnect"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/google-font-display/index.md", "title": "Google Font Display"}
+nav_next: {"path": "nextjs/docs/messages/inline-script-id/index.md", "title": "Inline script id"}
 ---
-[Docs](/docs)[Errors](/docs)Google Font Preconnect
 
 # Google Font Preconnect
 

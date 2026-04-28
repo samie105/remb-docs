@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:48:21.515Z"
 content_hash: "a73889c3909be8a539e614773d3e5fa56ce83e6022b70977e3b25d4bbd0fba16"
 menu_path: ["Write a simple HTTP server"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/http/server/index.md", "title": "Common HTTP server usage"}
+nav_next: {"path": "bun/docs/guides/http/sse/index.md", "title": "Server-Sent Events (SSE) with Bun"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

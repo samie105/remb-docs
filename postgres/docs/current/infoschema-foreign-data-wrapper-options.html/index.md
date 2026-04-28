@@ -10,7 +10,10 @@ content_hash: "cca9f7332757b60cad1ed62ee335a7c84f1178403c6176aa282dc531481ff8ee"
 menu_path: ["PostgreSQL: Documentation: 18: 35.26. foreign_data_wrapper_options"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/infoschema-enabled-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.25.\u00a0enabled_roles"}
+nav_next: {"path": "postgres/docs/current/infoschema-foreign-data-wrappers.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.27.\u00a0foreign_data_wrappers"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-foreign-data-wrapper-options.html "PostgreSQL devel - 35.26. foreign_data_wrapper_options")
 
 The view `foreign_data_wrapper_options` contains all the options defined for foreign-data wrappers in the current database. Only those foreign-data wrappers are shown that the current user has access to (by way of being the owner or having some privilege).

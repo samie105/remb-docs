@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:54:19.676Z"
 content_hash: "afe90f1178d1f55a472a43d9a0feb432aa3553edc916314ca0ac48a1a2fe503f"
 menu_path: ["Convert a ReadableStream to a Uint8Array"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/streams/to-string/index.md", "title": "Convert a ReadableStream to a string"}
+nav_next: {"path": "bun/docs/guides/test/bail/index.md", "title": "Bail early with the Bun test runner"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

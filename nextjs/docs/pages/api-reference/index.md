@@ -11,8 +11,9 @@ menu_path: ["API Reference"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/configuring/index.md", "title": "Configuring"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/components/index.md", "title": "Components"}
 ---
-[Next.js Docs](/docs)[Pages Router](/docs/pages)API Reference
 
 # API Reference
 

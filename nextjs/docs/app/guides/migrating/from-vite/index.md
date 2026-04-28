@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/migrating/from-create-react-app/index.md", "title": "How to migrate from Create React App to Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/migrating-to-cache-components/index.md", "title": "Migrating to Cache Components"}
 ---
-[Guides](/docs/app/guides)[Migrating](/docs/app/guides/migrating)Vite
 
 # How to migrate from Vite to Next.js
 

@@ -10,15 +10,9 @@ content_hash: "a34099a2a28e22893808cc5c19e9d2e4379c346f90a8b3d12d972d38552a445a"
 menu_path: ["font-stretch"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/font-weight/index.md", "title": "font-weight"}
+nav_next: {"path": "tailwind/docs/font-variant-numeric/index.md", "title": "font-variant-numeric"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  font-stretch
-
-Typography
 
 # font-stretch
 

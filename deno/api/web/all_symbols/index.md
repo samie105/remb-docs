@@ -10,7 +10,10 @@ content_hash: "1d66bd2d925e5b73035fd3147dfac50f132cdb2465055ee993064b9a1c1b41f5"
 menu_path: ["All Symbols - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/index.md", "title": "Web Platform APIs"}
+nav_next: {"path": "deno/api/web/cache/index.md", "title": "Cache - Web documentation"}
 ---
+
 I
 
 v

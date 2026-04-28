@@ -11,8 +11,9 @@ menu_path: ["No `styled-jsx` in `_document`"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-script-component-in-head/index.md", "title": "No Script Component in Head"}
+nav_next: {"path": "nextjs/docs/messages/no-sync-scripts/index.md", "title": "No Sync Scripts"}
 ---
-[Docs](/docs)[Errors](/docs)No \`styled-jsx\` in \`\_document\`
 
 # No \`styled-jsx\` in \`\_document\`
 

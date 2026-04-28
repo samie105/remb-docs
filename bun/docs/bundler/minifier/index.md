@@ -9,43 +9,10 @@ last_crawled_at: "2026-04-18T16:37:51.797Z"
 content_hash: "1b17b632a795940d2194ea50a81aa25106e48995d8aff10ecc4fe2a7c445c6b8"
 menu_path: ["Minifier"]
 section_path: []
+nav_prev: {"path": "bun/docs/bundler/loaders/index.md", "title": "Loaders"}
+nav_next: {"path": "bun/docs/bundler/plugins/index.md", "title": "Plugins"}
 ---
-Bun includes a fast JavaScript and TypeScript minifier that can reduce bundle sizes by 80% or more (depending on the codebase) and make output code run faster. The minifier performs dozens of optimizations including constant folding, dead code elimination, and syntax transformations. Unlike other minifiers, Bun’s minifier makes `bun build` run faster since there’s less code to print.
 
-## CLI Usage
-
-### Enable all minification
-
-Use the `--minify` flag to enable all minification modes:
-
-```
-bun build ./index.ts --minify --outfile=out.js
-```
-
-The `--minify` flag automatically enables:
-
-*   Whitespace minification
-*   Syntax minification
-*   Identifier minification
-
-### Production mode
-
-The `--production` flag automatically enables minification:
-
-```
-bun build ./index.ts --production --outfile=out.js
-```
-
-The `--production` flag also:
-
-*   Sets `process.env.NODE_ENV` to `production`
-*   Enables the production-mode JSX import & transform
-
-### Granular control
-
-You can enable specific minification modes individually:
-
-```
 # Only remove whitespace
 bun build ./index.ts --minify-whitespace --outfile=out.js
 

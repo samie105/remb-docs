@@ -10,7 +10,10 @@ content_hash: "35165debae36b7b9ad6bb8ce6a170a895a199e89d1e909b783c6651257c3584e"
 menu_path: ["PostgreSQL: Documentation: 18: 5.11. Inheritance"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
+nav_next: {"path": "postgres/docs/current/ddl-others.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.14.\u00a0Other Database Objects"}
 ---
+
 PostgreSQL implements table inheritance, which can be a useful tool for database designers. (SQL:1999 and later define a type inheritance feature, which differs in many respects from the features described here.)
 
 Let's start with an example: suppose we are trying to build a data model for cities. Each state has many cities, but only one capital. We want to be able to quickly retrieve the capital city for any particular state. This can be done by creating two tables, one for state capitals and one for cities that are not capitals. However, what happens when we want to ask for data about a city, regardless of whether it is a capital or not? The inheritance feature can help to resolve this problem. We define the `capitals` table so that it inherits from `cities`:

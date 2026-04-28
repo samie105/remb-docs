@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/index.md", "title": "Guides"}
+nav_next: {"path": "nextjs/docs/app/guides/analytics/index.md", "title": "How to add analytics to your Next.js application"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)AI Coding Agents
 
 # How to set up your Next.js project for AI coding agents
 
@@ -23,7 +24,7 @@ Next.js ships version-matched documentation inside the `next` package, allowing 
 
 ## How it works[](#how-it-works)
 
-When you install `next`, the Next.js documentation is bundled at `node_modules/next/dist/docs/`. The bundled docs mirror the structure of the [Next.js documentation site](https://nextjs.org/docs):
+When you install `next`, the Next.js documentation is bundled at `node_modules/next/dist/docs/`. The bundled docs mirror the structure of the [Next.js documentation site](nextjs/docs/index.md):
 
 ```
 node_modules/next/dist/docs/

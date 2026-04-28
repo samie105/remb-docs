@@ -10,7 +10,10 @@ content_hash: "a47344e95778cc5560a5a924568e205ffa201ea5641a3e919f45560f517e325f"
 menu_path: ["Drizzle ORM - Select parent rows with at least one related child row"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/guides/seeding-with-partially-exposed-tables/index.md", "title": "Drizzle ORM - Seeding Partially Exposed Tables with Foreign Key"}
+nav_next: {"path": "drizzle/docs/guides/timestamp-default-value/index.md", "title": "Drizzle ORM - SQL Timestamp as a default value"}
 ---
+
 Drizzle | Select parent rows with at least one related child row
 
 This guide demonstrates how to select parent rows with the condition of having at least one related child row. Below, there are examples of schema definitions and the corresponding database data:

@@ -10,54 +10,10 @@ content_hash: "83981c61071ffd1a04cbb15d1ba0b65afb5a52c6f1cab9c8456d856a99e381d3"
 menu_path: ["deno eval"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/doc/index.md", "title": "deno doc"}
+nav_next: {"path": "deno/runtime/reference/cli/fmt/index.md", "title": "deno fmt"}
 ---
-**On this page**
 
--   [Basic usage](#basic-usage)
--   [CommonJS support](#commonjs-support)
--   [Printing expression results](#printing-expression-results)
--   [Reading from stdin](#reading-from-stdin)
--   [Type checking options](#type-checking-options)
--   [Dependency management options](#dependency-management-options)
--   [Options](#options)
--   [Debugging options](#debugging-options)
-
-`deno eval` executes a string of code directly from the command line without needing a file. Unlike `deno run`, **`deno eval` runs with all permissions enabled by default**.
-
-## Basic usage
-
-\>\_
-
-```sh
-deno eval "console.log('Hello from Deno')"
-```
-
-TypeScript works out of the box:
-
-\>\_
-
-```sh
-deno eval "const greeting: string = 'Hello'; console.log(greeting)"
-```
-
-## CommonJS support
-
-CommonJS modules are automatically recognized and supported:
-
-\>\_
-
-```sh
-deno eval "const path = require('path'); console.log(path.join('a', 'b'))"
-```
-
-## Printing expression results
-
-Use `--print` (or `-p`) to evaluate an expression and print its result, similar to `node -p`:
-
-\>\_
-
-```sh
-deno eval -p "1 + 2"
 # 3
 
 deno eval -p "Deno.version"

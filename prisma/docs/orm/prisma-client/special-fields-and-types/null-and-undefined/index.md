@@ -10,7 +10,10 @@ content_hash: "18c1d6c41b259de6bf2164a679344d1c830242f3b44638704bb585a30d952027"
 menu_path: ["Null and undefined"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md", "title": "Composite types"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
 ---
+
 The `strictUndefinedChecks` preview feature changes how Prisma Client handles `undefined` values, offering better protection against accidental data loss or unintended query behavior.
 
 ### [Enabling strict undefined checks](#enabling-strict-undefined-checks)
@@ -323,7 +326,7 @@ The following table provides a high-level overview of how the different operator
 | `AND` | return all items | validate single filter | validate all filters |
 | `NOT` | return all items | validate single filter | validate all filters |
 
-This example shows how an `undefined` parameter impacts the results returned by a query that uses the [`OR`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#or) operator.
+This example shows how an `undefined` parameter impacts the results returned by a query that uses the [`OR`](prisma/docs/orm/reference/prisma-client-reference/index.md#or) operator.
 
 ```
 interface FormData {
@@ -352,7 +355,7 @@ const users = await prisma.user.findMany({
 
 The query receives filters from a formData object, which includes an optional email property. In this instance, the value of the email property is `undefined`. When this query is run no data is returned.
 
-This is in contrast to the [`AND`](https://www.prisma.io/docs/orm/reference/prisma-client-reference#and) and [`NOT`](https://www.prisma.io/docs/orm/reference/prisma-client-reference) operators, which will both return all the users if you pass in an `undefined` value.
+This is in contrast to the [`AND`](prisma/docs/orm/reference/prisma-client-reference/index.md#and) and [`NOT`](prisma/docs/orm/reference/prisma-client-reference/index.md) operators, which will both return all the users if you pass in an `undefined` value.
 
 > This is because passing an `undefined` value to an `AND` or `NOT` operator is the same as passing nothing at all, meaning the `findMany` query in the example will run without any filters and return all the users.
 

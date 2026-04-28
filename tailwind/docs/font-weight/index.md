@@ -10,15 +10,9 @@ content_hash: "9081e8cc83857bbea00d6b4ce77ba3b4ab034142137367ff5df33ac04b62785f"
 menu_path: ["font-weight"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/font-style/index.md", "title": "font-style"}
+nav_next: {"path": "tailwind/docs/font-stretch/index.md", "title": "font-stretch"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  font-weight
-
-Typography
 
 # font-weight
 

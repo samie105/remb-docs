@@ -11,8 +11,9 @@ menu_path: ["How to create forms with Server Actions"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/environment-variables/index.md", "title": "How to use environment variables in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Forms
 
 # How to create forms with Server Actions
 

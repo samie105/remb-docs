@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:58:49.983Z"
 content_hash: "84e7618c83dea8abb8da144e97a2f6ea1ac1c16fc1f14bc9826fe7b09bb67642"
 menu_path: ["Binary Data"]
 section_path: []
+nav_prev: {"path": "bun/docs/runtime/auto-install/index.md", "title": "Auto-install"}
+nav_next: {"path": "bun/docs/runtime/bun-apis/index.md", "title": "Bun APIs"}
 ---
+
 This page is intended as an introduction to working with binary data in JavaScript. Bun implements several data types and utilities for working with binary data, most of which are Web-standard. Any Bun-specific APIs will be noted as such. Below is a cheat sheet that doubles as a table of contents. Click an item in the left column to jump to that section.
 
 Class
@@ -503,7 +506,7 @@ for await (const chunk of stream) {
 // => "world"
 ```
 
-For a more complete discussion of streams in Bun, see [API > Streams](https://bun.com/docs/runtime/streams).
+For a more complete discussion of streams in Bun, see [API > Streams](bun/docs/runtime/streams/index.md).
 
 * * *
 

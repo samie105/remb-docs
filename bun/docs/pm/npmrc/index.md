@@ -9,57 +9,10 @@ last_crawled_at: "2026-04-18T16:58:03.197Z"
 content_hash: "e10a78802637e7f086bafd339cbacc848b445ecf0e06df03b1f8e18d23243688"
 menu_path: [".npmrc support"]
 section_path: []
+nav_prev: {"path": "bun/docs/pm/lockfile/index.md", "title": "Lockfile"}
+nav_next: {"path": "bun/docs/pm/overrides/index.md", "title": "Overrides and resolutions"}
 ---
-Bun supports loading configuration options from [`.npmrc`](https://docs.npmjs.com/cli/v10/configuring-npm/npmrc) files, allowing you to reuse existing registry/scope configurations.
 
-* * *
-
-## Supported options
-
-### Set the default registry
-
-The default registry is used to resolve packages, its default value is `npm`’s official registry (`https://registry.npmjs.org/`). To change it, you can set the `registry` option in `.npmrc`:
-
-.npmrc
-
-```
-registry=http://localhost:4873/
-```
-
-The equivalent `bunfig.toml` option is [`install.registry`](https://bun.com/docs/runtime/bunfig#install-registry):
-
-bunfig.toml
-
-```
-install.registry = "http://localhost:4873/"
-```
-
-### Set the registry for a specific scope
-
-`@<scope>:registry` allows you to set the registry for a specific scope:
-
-.npmrc
-
-```
-@myorg:registry=http://localhost:4873/
-```
-
-The equivalent `bunfig.toml` option is to add a key in [`install.scopes`](https://bun.com/docs/runtime/bunfig#install-registry):
-
-bunfig.toml
-
-```
-[install.scopes]
-myorg = "http://localhost:4873/"
-```
-
-### Configure options for a specific registry
-
-`//<registry_url>/:<key>=<value>` allows you to set options for a specific registry:
-
-.npmrc
-
-```
 # set an auth token for the registry
 # ${...} is a placeholder for environment variables
 //http://localhost:4873/:_authToken=${NPM_TOKEN}
@@ -83,7 +36,7 @@ The following options are supported:
 *   `_auth` (base64 encoded username:password, e.g. `btoa(username + ":" + password)`)
 *   `email`
 
-The equivalent `bunfig.toml` option is to add a key in [`install.scopes`](https://bun.com/docs/runtime/bunfig#install-registry):
+The equivalent `bunfig.toml` option is to add a key in [`install.scopes`](bun/docs/runtime/bunfig/index.md#install-registry):
 
 bunfig.toml
 
@@ -102,7 +55,7 @@ Controls how workspace packages are installed when available locally:
 link-workspace-packages=true
 ```
 
-The equivalent `bunfig.toml` option is [`install.linkWorkspacePackages`](https://bun.com/docs/runtime/bunfig#install-linkworkspacepackages):
+The equivalent `bunfig.toml` option is [`install.linkWorkspacePackages`](bun/docs/runtime/bunfig/index.md#install-linkworkspacepackages):
 
 bunfig.toml
 
@@ -121,7 +74,7 @@ Always saves exact versions without the `^` prefix:
 save-exact=true
 ```
 
-The equivalent `bunfig.toml` option is [`install.exact`](https://bun.com/docs/runtime/bunfig#install-exact):
+The equivalent `bunfig.toml` option is [`install.exact`](bun/docs/runtime/bunfig/index.md#install-exact):
 
 bunfig.toml
 
@@ -152,7 +105,7 @@ Shows what would be installed without actually installing:
 dry-run=true
 ```
 
-The equivalent `bunfig.toml` option is [`install.dryRun`](https://bun.com/docs/runtime/bunfig#install-dryrun):
+The equivalent `bunfig.toml` option is [`install.dryRun`](bun/docs/runtime/bunfig/index.md#install-dryrun):
 
 bunfig.toml
 
@@ -175,7 +128,7 @@ cache=/path/to/cache
 cache=false
 ```
 
-The equivalent `bunfig.toml` option is [`install.cache`](https://bun.com/docs/runtime/bunfig#install-cache):
+The equivalent `bunfig.toml` option is [`install.cache`](bun/docs/runtime/bunfig/index.md#install-cache):
 
 bunfig.toml
 

@@ -11,8 +11,9 @@ menu_path: ["Functions"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/index.md", "title": "Route Segment Config"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/after/index.md", "title": "after"}
 ---
-[App Router](/docs/app)[API Reference](/docs/app/api-reference)Functions
 
 # Functions
 

@@ -10,7 +10,10 @@ content_hash: "bcc004ab9e0233a52e1cd4ca00847b93b666908fb130b2e2eff26c06c47e6677"
 menu_path: ["PostgreSQL: Documentation: 18: 52.53. pg_statistic_ext_data"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/catalog-pg-shseclabel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.50.\u00a0pg_shseclabel"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-statistic-ext.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.52.\u00a0pg_statistic_ext"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-statistic-ext-data.html "PostgreSQL devel - 52.53. pg_statistic_ext_data")
 
 Unsupported versions: [13](https://www.postgresql.org/docs/13/catalog-pg-statistic-ext-data.html "PostgreSQL 13 - 52.53. pg_statistic_ext_data") / [12](https://www.postgresql.org/docs/12/catalog-pg-statistic-ext-data.html "PostgreSQL 12 - 52.53. pg_statistic_ext_data")

@@ -11,8 +11,9 @@ menu_path: ["How to handle redirects in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/public-static-pages/index.md", "title": "Building public pages"}
+nav_next: {"path": "nextjs/docs/app/guides/rendering-philosophy/index.md", "title": "Next.js Rendering Philosophy"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)Redirecting
 
 # How to handle redirects in Next.js
 

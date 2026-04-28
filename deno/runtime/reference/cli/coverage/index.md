@@ -10,7 +10,10 @@ content_hash: "48bb32ad30f7915502d5fbeb03912e3535f180a57aa1288aa8683bb21fa4e6df"
 menu_path: ["deno coverage"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/completions/index.md", "title": "deno completions"}
+nav_next: {"path": "deno/runtime/reference/cli/deploy/index.md", "title": "deno deploy"}
 ---
+
 **On this page**
 
 -   [Inclusions and Exclusions](#inclusions-and-exclusions)

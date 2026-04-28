@@ -11,8 +11,9 @@ menu_path: ["Mutating Data"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/fetching-data/index.md", "title": "Fetching Data"}
+nav_next: {"path": "nextjs/docs/app/getting-started/caching/index.md", "title": "Caching"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Mutating Data
 
 # Mutating Data
 

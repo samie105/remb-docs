@@ -10,7 +10,10 @@ content_hash: "ee742b283a05df23761aef9e070a84a9e569248328108e36307b8a5a3e9b98a5"
 menu_path: ["Drizzle ORM - Update many with different values for each row"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/guides/unique-case-insensitive-email/index.md", "title": "Drizzle ORM - Unique and Case-Insensitive Email Handling"}
+nav_next: {"path": "drizzle/docs/guides/upsert/index.md", "title": "Drizzle ORM - Upsert Query"}
 ---
+
 Drizzle | Update many with different values for each row
 
 To implement update many with different values for each row within 1 request you can use `sql` operator with `case` statement and `.update().set()` methods like this:

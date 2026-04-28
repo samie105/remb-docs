@@ -10,15 +10,9 @@ content_hash: "857f5e0b174ba15d791a63582850434115fcf685879d66a393c086036b6ce378"
 menu_path: ["filter: saturate()"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/filter-invert/index.md", "title": "filter: invert()"}
+nav_next: {"path": "tailwind/docs/filter-sepia/index.md", "title": "filter: sepia()"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Filters
-2.  saturate
-
-Filters
 
 # filter: saturate()
 

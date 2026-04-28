@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T16:52:39.951Z"
 content_hash: "426b52a7ca4b9dd9f4c400ceda2f324543c9568c16d6b859c9a4c5aca3622308"
 menu_path: ["Import a HTML file as text"]
 section_path: []
+nav_prev: {"path": "bun/docs/guides/runtime/heap-snapshot/index.md", "title": "Inspect memory usage using V8 heap snapshots"}
+nav_next: {"path": "bun/docs/guides/runtime/import-json/index.md", "title": "Import a JSON file"}
 ---
+
 [Skip to main content](#content-area)
 
 [Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)

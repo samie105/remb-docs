@@ -10,7 +10,10 @@ content_hash: "b4589cf4d79fce9ec52441bd33b3350ae1d87c9e3d7b9b68e5c07987a73eba53"
 menu_path: ["Get Started with Drizzle and SQLite Cloud"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/get-started/sqlite-cloud-existing/index.md", "title": "Get Started with Drizzle and SQLite Cloud in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/sqlite-existing/index.md", "title": "Get Started with Drizzle and SQLite in existing project"}
 ---
+
 ## Get Started with Drizzle and SQLite Cloud
 
 This guide assumes familiarity with:
@@ -104,7 +107,7 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](https://orm.drizzle.team/docs/kit-overview) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -130,7 +133,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](https://orm.drizzle.team/docs/drizzle-kit-push).
+Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
 
 Tips
 
@@ -148,7 +151,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](https://orm.drizzle.team/docs/kit-overview).
+Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 

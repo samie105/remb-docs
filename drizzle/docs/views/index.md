@@ -10,7 +10,10 @@ content_hash: "cc7eb1b66f913f9d2b3b1f1f54222e3da9f0cb302c024334b9a7b0294a3175b1"
 menu_path: ["Views"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/sequences/index.md", "title": "Sequences"}
+nav_next: {"path": "drizzle/docs/schemas/index.md", "title": "Table schemas"}
 ---
+
 There’re several ways you can declare views with Drizzle ORM.
 
 You can declare views that have to be created or you can declare views that already exist in the database.

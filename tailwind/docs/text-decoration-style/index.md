@@ -10,15 +10,9 @@ content_hash: "0a41f22ac593526bfcf5605dff2428bce94344349afb799ad05ec5203e26d38c"
 menu_path: ["text-decoration-style"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
+nav_next: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  text-decoration-style
-
-Typography
 
 # text-decoration-style
 

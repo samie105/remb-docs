@@ -11,8 +11,9 @@ menu_path: ["No Cache Detected"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-before-interactive-script-outside-document/index.md", "title": "No Before Interactive Script Outside Document"}
+nav_next: {"path": "nextjs/docs/messages/no-css-tags/index.md", "title": "No CSS Tags"}
 ---
-[Docs](/docs)[Errors](/docs)No Cache Detected
 
 # No Cache Detected
 

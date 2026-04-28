@@ -10,15 +10,9 @@ content_hash: "050d733558a30a342a00e88e646c8f4bd6c8e7dca05473b26044d51583c8a4e9"
 menu_path: ["grid-template-rows"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/grid-column/index.md", "title": "grid-column"}
+nav_next: {"path": "tailwind/docs/grid-row/index.md", "title": "grid-row"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Flexbox & Grid
-2.  grid-template-rows
-
-Flexbox & Grid
 
 # grid-template-rows
 

@@ -1,7 +1,7 @@
 [
   {
     "url": "https://tailwindcss.com/docs/installation/using-vite",
-    "outputPath": "output/tailwind/docs/installation/using-vite/index.md",
+    "outputPath": "tailwind/docs/installation/using-vite/index.md",
     "title": "Get started with Tailwind CSS",
     "contentHash": "e8ff1c692fac59f45045a0a7d1010d161a6550a64b19628d59ad1679f7016cba",
     "visitedAt": "2026-04-18T16:32:26.128Z",
@@ -9,7 +9,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/installation",
-    "outputPath": "output/tailwind/docs/installation/index.md",
+    "outputPath": "tailwind/docs/installation/index.md",
     "title": "Get started with Tailwind CSS",
     "contentHash": "e8ff1c692fac59f45045a0a7d1010d161a6550a64b19628d59ad1679f7016cba",
     "visitedAt": "2026-04-18T16:33:11.906Z",
@@ -17,7 +17,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/editor-setup",
-    "outputPath": "output/tailwind/docs/editor-setup/index.md",
+    "outputPath": "tailwind/docs/editor-setup/index.md",
     "title": "Editor setup",
     "contentHash": "22c722e5224ff8c8cd27dc18ab7f37e5a83b2fe334be04102fc96301c9c22226",
     "visitedAt": "2026-04-18T16:33:16.392Z",
@@ -25,7 +25,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/compatibility",
-    "outputPath": "output/tailwind/docs/compatibility/index.md",
+    "outputPath": "tailwind/docs/compatibility/index.md",
     "title": "Compatibility",
     "contentHash": "c10701e8d8778bc896d423e448af84e93315f4aef1a74550a4fdd42392a652cc",
     "visitedAt": "2026-04-18T16:33:23.062Z",
@@ -33,7 +33,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/styling-with-utility-classes",
-    "outputPath": "output/tailwind/docs/styling-with-utility-classes/index.md",
+    "outputPath": "tailwind/docs/styling-with-utility-classes/index.md",
     "title": "Styling with utility classes",
     "contentHash": "32a993ec3a5cbb09784c68f6a373a5d04e7d407e2bfeb63c0bbc945f72c4ab94",
     "visitedAt": "2026-04-18T16:34:34.066Z",
@@ -41,7 +41,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/upgrade-guide",
-    "outputPath": "output/tailwind/docs/upgrade-guide/index.md",
+    "outputPath": "tailwind/docs/upgrade-guide/index.md",
     "title": "Upgrade guide",
     "contentHash": "1a76f525d47abc5d737a82f39867e5e67f1295a0f6e145dbbde31901165fb7b1",
     "visitedAt": "2026-04-18T16:34:47.514Z",
@@ -49,7 +49,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/hover-focus-and-other-states",
-    "outputPath": "output/tailwind/docs/hover-focus-and-other-states/index.md",
+    "outputPath": "tailwind/docs/hover-focus-and-other-states/index.md",
     "title": "Hover, focus, and other states",
     "contentHash": "c0db115eaff6c9b037b02e63cc1cc5211d355559f3f332dc20e9f983c4deb7bf",
     "visitedAt": "2026-04-18T16:35:50.240Z",
@@ -57,7 +57,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/dark-mode",
-    "outputPath": "output/tailwind/docs/dark-mode/index.md",
+    "outputPath": "tailwind/docs/dark-mode/index.md",
     "title": "Dark mode",
     "contentHash": "62eec780490461e1cabfb530b0bf4ac1bfb2032455f21bf2f52905875ed1f4d5",
     "visitedAt": "2026-04-18T16:36:35.732Z",
@@ -65,7 +65,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/responsive-design",
-    "outputPath": "output/tailwind/docs/responsive-design/index.md",
+    "outputPath": "tailwind/docs/responsive-design/index.md",
     "title": "Responsive design",
     "contentHash": "4c45b39caef077f4c476d5db910bb6c0f720546ecd27f71da90d6fab4d79228c",
     "visitedAt": "2026-04-18T16:36:46.355Z",
@@ -73,7 +73,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/theme",
-    "outputPath": "output/tailwind/docs/theme/index.md",
+    "outputPath": "tailwind/docs/theme/index.md",
     "title": "Theme variables",
     "contentHash": "5b150a10e91af6a0892c50d34db2d7171cf9eb08294f6105f16a63aa450a1d79",
     "visitedAt": "2026-04-18T16:37:23.525Z",
@@ -81,7 +81,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/detecting-classes-in-source-files",
-    "outputPath": "output/tailwind/docs/detecting-classes-in-source-files/index.md",
+    "outputPath": "tailwind/docs/detecting-classes-in-source-files/index.md",
     "title": "Detecting classes in source files",
     "contentHash": "310e6aa713ee16c6fde8f940f9f25f0bce604a1145aa67c665f831e5d5091500",
     "visitedAt": "2026-04-18T16:38:13.424Z",
@@ -89,7 +89,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/adding-custom-styles",
-    "outputPath": "output/tailwind/docs/adding-custom-styles/index.md",
+    "outputPath": "tailwind/docs/adding-custom-styles/index.md",
     "title": "Adding custom styles",
     "contentHash": "e403579e88195381187adee4f3de2be0f3417ff7c00ce94ac0c450a4effe36ca",
     "visitedAt": "2026-04-18T16:38:34.749Z",
@@ -97,7 +97,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/colors",
-    "outputPath": "output/tailwind/docs/colors/index.md",
+    "outputPath": "tailwind/docs/colors/index.md",
     "title": "Colors",
     "contentHash": "a94634e206f1e7b348d1b7595c624a67410a691bc99160a7fa0a929883fc39fa",
     "visitedAt": "2026-04-18T16:38:52.464Z",
@@ -105,7 +105,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/functions-and-directives",
-    "outputPath": "output/tailwind/docs/functions-and-directives/index.md",
+    "outputPath": "tailwind/docs/functions-and-directives/index.md",
     "title": "Functions and directives",
     "contentHash": "45292499296635ee2c8d82f3a38f629dec4171fe82a8742f71fdfed346f8b28e",
     "visitedAt": "2026-04-18T16:39:38.243Z",
@@ -113,7 +113,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/preflight",
-    "outputPath": "output/tailwind/docs/preflight/index.md",
+    "outputPath": "tailwind/docs/preflight/index.md",
     "title": "Preflight",
     "contentHash": "a050ba565e9960a01d9d2a24da485c9f0bf381bdc69bfc844332363e281d92d5",
     "visitedAt": "2026-04-18T16:39:48.162Z",
@@ -121,7 +121,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/aspect-ratio",
-    "outputPath": "output/tailwind/docs/aspect-ratio/index.md",
+    "outputPath": "tailwind/docs/aspect-ratio/index.md",
     "title": "aspect-ratio",
     "contentHash": "ea346d141179e18920c9a9008942f15f2faed7e68bfd82be01e497d723baed81",
     "visitedAt": "2026-04-18T16:39:51.121Z",
@@ -129,7 +129,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/break-before",
-    "outputPath": "output/tailwind/docs/break-before/index.md",
+    "outputPath": "tailwind/docs/break-before/index.md",
     "title": "break-before",
     "contentHash": "00c49062058fa7f380b2ca0700cc12cf51d5df63c58c1cde4695c32f90bf901a",
     "visitedAt": "2026-04-18T16:40:34.158Z",
@@ -137,7 +137,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/break-after",
-    "outputPath": "output/tailwind/docs/break-after/index.md",
+    "outputPath": "tailwind/docs/break-after/index.md",
     "title": "break-after",
     "contentHash": "503b64695d774978209bea3fe97d081f38e5e71f6b0c623f2277edc2ecc6ca1d",
     "visitedAt": "2026-04-18T16:40:41.160Z",
@@ -145,7 +145,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/columns",
-    "outputPath": "output/tailwind/docs/columns/index.md",
+    "outputPath": "tailwind/docs/columns/index.md",
     "title": "columns",
     "contentHash": "adc6e1c8f108cb9b309c89e9398869d6a8b3594143c39fa09a10b0e4d2d97932",
     "visitedAt": "2026-04-18T16:40:46.351Z",
@@ -153,7 +153,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/break-inside",
-    "outputPath": "output/tailwind/docs/break-inside/index.md",
+    "outputPath": "tailwind/docs/break-inside/index.md",
     "title": "break-inside",
     "contentHash": "6a7fab08134c0e5ecf5335c387a0c9dfae1baad2f45928e657ae490be02b40f3",
     "visitedAt": "2026-04-18T16:41:22.725Z",
@@ -161,7 +161,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/box-sizing",
-    "outputPath": "output/tailwind/docs/box-sizing/index.md",
+    "outputPath": "tailwind/docs/box-sizing/index.md",
     "title": "box-sizing",
     "contentHash": "94ed8b69e000764b435612cd49b73b7b0eed9d479f4aa53e765ab4a569ae1268",
     "visitedAt": "2026-04-18T16:41:24.375Z",
@@ -169,7 +169,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/box-decoration-break",
-    "outputPath": "output/tailwind/docs/box-decoration-break/index.md",
+    "outputPath": "tailwind/docs/box-decoration-break/index.md",
     "title": "box-decoration-break",
     "contentHash": "f9eb3216b8a036001a548f08aab1b34c884d59a9f1ff9fe1466fa746d4ee8ff1",
     "visitedAt": "2026-04-18T16:41:29.902Z",
@@ -177,7 +177,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/clear",
-    "outputPath": "output/tailwind/docs/clear/index.md",
+    "outputPath": "tailwind/docs/clear/index.md",
     "title": "clear",
     "contentHash": "7529499bcee9a17816ae9cb0d45a8382759c94205e738a625a43cff54a9b665c",
     "visitedAt": "2026-04-18T16:42:13.436Z",
@@ -185,7 +185,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/display",
-    "outputPath": "output/tailwind/docs/display/index.md",
+    "outputPath": "tailwind/docs/display/index.md",
     "title": "display",
     "contentHash": "f42d96954b5bff24f43b2c83e638e345540fd44ca0ae53b4e9b5c41794c4cdbe",
     "visitedAt": "2026-04-18T16:42:23.846Z",
@@ -193,7 +193,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/float",
-    "outputPath": "output/tailwind/docs/float/index.md",
+    "outputPath": "tailwind/docs/float/index.md",
     "title": "float",
     "contentHash": "b3ac61e151ebd1bd4a9f2fa7d2685225b72716cd7bfcb9e97e84c96468809f53",
     "visitedAt": "2026-04-18T16:42:29.879Z",
@@ -201,7 +201,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/isolation",
-    "outputPath": "output/tailwind/docs/isolation/index.md",
+    "outputPath": "tailwind/docs/isolation/index.md",
     "title": "isolation",
     "contentHash": "efa9dcaeb2a7d1a4381ded899d12813f19c82aa216c96ffbf3e605a52142b5a0",
     "visitedAt": "2026-04-18T16:43:10.143Z",
@@ -209,7 +209,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/object-position",
-    "outputPath": "output/tailwind/docs/object-position/index.md",
+    "outputPath": "tailwind/docs/object-position/index.md",
     "title": "object-position",
     "contentHash": "0f4e79bf51d440d51fb66e075fbbf0954c37d6b5200dd83cb8670c4f1fdb2944",
     "visitedAt": "2026-04-18T16:43:15.012Z",
@@ -217,7 +217,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/object-fit",
-    "outputPath": "output/tailwind/docs/object-fit/index.md",
+    "outputPath": "tailwind/docs/object-fit/index.md",
     "title": "object-fit",
     "contentHash": "16fa33a0ad59d025f627943c4ca46978da3541d36e9a3d9a7a192c8ac346383c",
     "visitedAt": "2026-04-18T16:43:17.643Z",
@@ -225,7 +225,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/position",
-    "outputPath": "output/tailwind/docs/position/index.md",
+    "outputPath": "tailwind/docs/position/index.md",
     "title": "position",
     "contentHash": "09c5f343fdfc537a817a72ddbd7b340474e3482ffe028ec19b86b4c6912cfd37",
     "visitedAt": "2026-04-18T16:44:03.789Z",
@@ -233,7 +233,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/overscroll-behavior",
-    "outputPath": "output/tailwind/docs/overscroll-behavior/index.md",
+    "outputPath": "tailwind/docs/overscroll-behavior/index.md",
     "title": "overscroll-behavior",
     "contentHash": "ef77fc0f3b689831f1d2d1c929bbf954148ff707ec3b53e4e5ebabb4d659a1e2",
     "visitedAt": "2026-04-18T16:44:11.535Z",
@@ -241,7 +241,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/overflow",
-    "outputPath": "output/tailwind/docs/overflow/index.md",
+    "outputPath": "tailwind/docs/overflow/index.md",
     "title": "overflow",
     "contentHash": "64e419cd766a04e84993a7e58796c75b0055d592b0e25facdd89a9c0c41cbece",
     "visitedAt": "2026-04-18T16:44:16.012Z",
@@ -249,7 +249,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/top-right-bottom-left",
-    "outputPath": "output/tailwind/docs/top-right-bottom-left/index.md",
+    "outputPath": "tailwind/docs/top-right-bottom-left/index.md",
     "title": "top / right / bottom / left",
     "contentHash": "1a58f7955fcf31947c7d7d2cdcba6982902b18d1f6cbe2389e75193eb0b4eac1",
     "visitedAt": "2026-04-18T16:45:00.458Z",
@@ -257,7 +257,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/visibility",
-    "outputPath": "output/tailwind/docs/visibility/index.md",
+    "outputPath": "tailwind/docs/visibility/index.md",
     "title": "visibility",
     "contentHash": "530e50aae4b50ab6811af8f93ad0357a8c675a9b03b6f2fed6ec6692289bb2f5",
     "visitedAt": "2026-04-18T16:45:06.858Z",
@@ -265,7 +265,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/z-index",
-    "outputPath": "output/tailwind/docs/z-index/index.md",
+    "outputPath": "tailwind/docs/z-index/index.md",
     "title": "z-index",
     "contentHash": "8e9d386df8f1187c1de9fd9207c4f9ee6bff8ed99cbd5a02b001312e8fec8a7b",
     "visitedAt": "2026-04-18T16:45:09.018Z",
@@ -273,7 +273,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/flex-basis",
-    "outputPath": "output/tailwind/docs/flex-basis/index.md",
+    "outputPath": "tailwind/docs/flex-basis/index.md",
     "title": "flex-basis",
     "contentHash": "68fbdaba9b501dfd9f36729afd58f534583c92083260df23ee2ed70c3651b5fe",
     "visitedAt": "2026-04-18T16:45:46.118Z",
@@ -281,7 +281,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/flex-direction",
-    "outputPath": "output/tailwind/docs/flex-direction/index.md",
+    "outputPath": "tailwind/docs/flex-direction/index.md",
     "title": "flex-direction",
     "contentHash": "5066203fc7b0b32925d4b633b50dbc892e28b4a170f5e9bc4e95e3e65d6d5413",
     "visitedAt": "2026-04-18T16:45:48.245Z",
@@ -289,7 +289,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/flex-wrap",
-    "outputPath": "output/tailwind/docs/flex-wrap/index.md",
+    "outputPath": "tailwind/docs/flex-wrap/index.md",
     "title": "flex-wrap",
     "contentHash": "778d1f736ff074a024a3a286ff793676ec48ac630c695b3dedc093e4d5131f02",
     "visitedAt": "2026-04-18T16:45:50.187Z",
@@ -297,7 +297,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/flex",
-    "outputPath": "output/tailwind/docs/flex/index.md",
+    "outputPath": "tailwind/docs/flex/index.md",
     "title": "flex",
     "contentHash": "94d0aa4b4d7d4276370fc60e4f4af18994016feb6f91d4df9ab671b128cdf255",
     "visitedAt": "2026-04-18T16:46:26.758Z",
@@ -305,7 +305,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/flex-shrink",
-    "outputPath": "output/tailwind/docs/flex-shrink/index.md",
+    "outputPath": "tailwind/docs/flex-shrink/index.md",
     "title": "flex-shrink",
     "contentHash": "5a1ec35301e44be23bd83d85206009b823cad8408992b9b82dcb76ceda0ef68b",
     "visitedAt": "2026-04-18T16:46:28.054Z",
@@ -313,7 +313,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/flex-grow",
-    "outputPath": "output/tailwind/docs/flex-grow/index.md",
+    "outputPath": "tailwind/docs/flex-grow/index.md",
     "title": "flex-grow",
     "contentHash": "f4b4af9dd64f845eef18259a23ddd5aebfa67d54147b73449bc54850d167c0a2",
     "visitedAt": "2026-04-18T16:46:29.432Z",
@@ -321,7 +321,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/grid-template-columns",
-    "outputPath": "output/tailwind/docs/grid-template-columns/index.md",
+    "outputPath": "tailwind/docs/grid-template-columns/index.md",
     "title": "grid-template-columns",
     "contentHash": "5f852c0c078bf9bd7420438dbf0bd7415b76247438682413c34ce2db628422a8",
     "visitedAt": "2026-04-18T16:47:06.294Z",
@@ -329,7 +329,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/grid-column",
-    "outputPath": "output/tailwind/docs/grid-column/index.md",
+    "outputPath": "tailwind/docs/grid-column/index.md",
     "title": "grid-column",
     "contentHash": "39eca86f180f72257e1c48bd773a4710003e08f8152921e680938f582337c6ea",
     "visitedAt": "2026-04-18T16:47:08.439Z",
@@ -337,7 +337,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/order",
-    "outputPath": "output/tailwind/docs/order/index.md",
+    "outputPath": "tailwind/docs/order/index.md",
     "title": "order",
     "contentHash": "bd75e17d10dd58e22a1996a85e2e7bd7a66ee560b712560becb1f1a9435d89c3",
     "visitedAt": "2026-04-18T16:47:10.659Z",
@@ -345,7 +345,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/grid-auto-flow",
-    "outputPath": "output/tailwind/docs/grid-auto-flow/index.md",
+    "outputPath": "tailwind/docs/grid-auto-flow/index.md",
     "title": "grid-auto-flow",
     "contentHash": "c581b02126bca366ab5774a091d5ee955013c32c5dfc3ce8bb84280f5b02d934",
     "visitedAt": "2026-04-18T16:47:45.016Z",
@@ -353,7 +353,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/grid-template-rows",
-    "outputPath": "output/tailwind/docs/grid-template-rows/index.md",
+    "outputPath": "tailwind/docs/grid-template-rows/index.md",
     "title": "grid-template-rows",
     "contentHash": "affd0381b6ba1d27dc48b2a4dc1f1b70945b8315f26c9c2d7e973a6a78447775",
     "visitedAt": "2026-04-18T16:47:46.813Z",
@@ -361,7 +361,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/grid-row",
-    "outputPath": "output/tailwind/docs/grid-row/index.md",
+    "outputPath": "tailwind/docs/grid-row/index.md",
     "title": "grid-row",
     "contentHash": "05ff2c065937270c69e8ddeec236f6b8e97c2f71954729b42e51de335fc638c8",
     "visitedAt": "2026-04-18T16:47:48.704Z",
@@ -369,7 +369,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/grid-auto-columns",
-    "outputPath": "output/tailwind/docs/grid-auto-columns/index.md",
+    "outputPath": "tailwind/docs/grid-auto-columns/index.md",
     "title": "grid-auto-columns",
     "contentHash": "08a93bc81df04a8ff4cd6571e06902a9b41a4d1c45b2bf91c0d846a7a8c0bab0",
     "visitedAt": "2026-04-18T16:48:24.835Z",
@@ -377,7 +377,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/grid-auto-rows",
-    "outputPath": "output/tailwind/docs/grid-auto-rows/index.md",
+    "outputPath": "tailwind/docs/grid-auto-rows/index.md",
     "title": "grid-auto-rows",
     "contentHash": "067d2ee0ac3c7e1963dc551799a4ce64977350a556680c891a66e2cf0e0e7440",
     "visitedAt": "2026-04-18T16:48:26.591Z",
@@ -385,7 +385,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/gap",
-    "outputPath": "output/tailwind/docs/gap/index.md",
+    "outputPath": "tailwind/docs/gap/index.md",
     "title": "gap",
     "contentHash": "66f47c73a7c2bb1d63e56c5f93fc32b63d0dee8452b484b9491da3354c3e6361",
     "visitedAt": "2026-04-18T16:48:28.495Z",
@@ -393,7 +393,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/justify-items",
-    "outputPath": "output/tailwind/docs/justify-items/index.md",
+    "outputPath": "tailwind/docs/justify-items/index.md",
     "title": "justify-items",
     "contentHash": "5e98053ce4d00262f98b1e9ff6aa660cbd64b44cfcc4ef497c4b649f68b8500f",
     "visitedAt": "2026-04-18T16:49:06.895Z",
@@ -401,7 +401,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/justify-content",
-    "outputPath": "output/tailwind/docs/justify-content/index.md",
+    "outputPath": "tailwind/docs/justify-content/index.md",
     "title": "justify-content",
     "contentHash": "a9bda35f73806d30e25d148e6c882dd0ef02d15c523229b513901322779ed94a",
     "visitedAt": "2026-04-18T16:49:09.188Z",
@@ -409,7 +409,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/justify-self",
-    "outputPath": "output/tailwind/docs/justify-self/index.md",
+    "outputPath": "tailwind/docs/justify-self/index.md",
     "title": "justify-self",
     "contentHash": "4cfe8b2755ac941696a85b064b03f9524b575071c2010325ea655549899c5373",
     "visitedAt": "2026-04-18T16:49:11.292Z",
@@ -417,7 +417,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/align-items",
-    "outputPath": "output/tailwind/docs/align-items/index.md",
+    "outputPath": "tailwind/docs/align-items/index.md",
     "title": "align-items",
     "contentHash": "ebd1d8aeede2a719cce12cf96879afdb483b034b9b7d0b2c0d40a18b161016d3",
     "visitedAt": "2026-04-18T16:49:47.031Z",
@@ -425,7 +425,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/align-self",
-    "outputPath": "output/tailwind/docs/align-self/index.md",
+    "outputPath": "tailwind/docs/align-self/index.md",
     "title": "align-self",
     "contentHash": "a6632226d6b45f1cd623a1f02cd2d88394cdb0746cb5c24bde3bcab9f6125e88",
     "visitedAt": "2026-04-18T16:49:49.382Z",
@@ -433,7 +433,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/align-content",
-    "outputPath": "output/tailwind/docs/align-content/index.md",
+    "outputPath": "tailwind/docs/align-content/index.md",
     "title": "align-content",
     "contentHash": "6f83e2e8b1c64251e3071af6e68290b316ee0e5d196a5acffd2384766ae921c3",
     "visitedAt": "2026-04-18T16:49:51.366Z",
@@ -441,7 +441,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/place-items",
-    "outputPath": "output/tailwind/docs/place-items/index.md",
+    "outputPath": "tailwind/docs/place-items/index.md",
     "title": "place-items",
     "contentHash": "46b7a55038484787adc7c7457c38fdd3b47b7614e7d62b6394daf8e40848795a",
     "visitedAt": "2026-04-18T16:50:26.877Z",
@@ -449,7 +449,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/place-content",
-    "outputPath": "output/tailwind/docs/place-content/index.md",
+    "outputPath": "tailwind/docs/place-content/index.md",
     "title": "place-content",
     "contentHash": "1a389e05e93b4251aecdd827f83f5fee1c86f99a88ad996378a79bbe477700ad",
     "visitedAt": "2026-04-18T16:50:29.630Z",
@@ -457,7 +457,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/place-self",
-    "outputPath": "output/tailwind/docs/place-self/index.md",
+    "outputPath": "tailwind/docs/place-self/index.md",
     "title": "place-self",
     "contentHash": "4cbe6349570c977a15cb667fef4bf874a5a8863d8ad95ef819ba56199edff917",
     "visitedAt": "2026-04-18T16:50:32.186Z",
@@ -465,7 +465,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/width",
-    "outputPath": "output/tailwind/docs/width/index.md",
+    "outputPath": "tailwind/docs/width/index.md",
     "title": "width",
     "contentHash": "3055879e18cb4c1d080dab550275a5aac9f2c6cb923ba20e268770f0060cdc9b",
     "visitedAt": "2026-04-18T16:51:11.278Z",
@@ -473,7 +473,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/margin",
-    "outputPath": "output/tailwind/docs/margin/index.md",
+    "outputPath": "tailwind/docs/margin/index.md",
     "title": "margin",
     "contentHash": "d84cb67b2379e29385c7a0edf4c176949e900bd8a188c39eccb07f3bbefd02db",
     "visitedAt": "2026-04-18T16:51:14.701Z",
@@ -481,7 +481,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/padding",
-    "outputPath": "output/tailwind/docs/padding/index.md",
+    "outputPath": "tailwind/docs/padding/index.md",
     "title": "padding",
     "contentHash": "b5846e1b79308e4c690c4244538cbafa0fbb9b66bac588c9d6af893351f62387",
     "visitedAt": "2026-04-18T16:51:17.775Z",
@@ -489,7 +489,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/max-width",
-    "outputPath": "output/tailwind/docs/max-width/index.md",
+    "outputPath": "tailwind/docs/max-width/index.md",
     "title": "max-width",
     "contentHash": "b86da7c07f025dc22b51dac6e8fdc3432b5e1732f797e3da8f3096bfd950f042",
     "visitedAt": "2026-04-18T16:51:56.463Z",
@@ -497,7 +497,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/min-width",
-    "outputPath": "output/tailwind/docs/min-width/index.md",
+    "outputPath": "tailwind/docs/min-width/index.md",
     "title": "min-width",
     "contentHash": "4909646c60487e68bae833a989bd336d98f3e5fb4a569d6da58dd4f4bf30ad1c",
     "visitedAt": "2026-04-18T16:52:00.257Z",
@@ -505,7 +505,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/height",
-    "outputPath": "output/tailwind/docs/height/index.md",
+    "outputPath": "tailwind/docs/height/index.md",
     "title": "height",
     "contentHash": "ae9f701f3c0ba95b8b877d08719975d9f65feaec1a78bfbb0a05fcb7cab94ffa",
     "visitedAt": "2026-04-18T16:52:04.714Z",
@@ -513,7 +513,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/min-height",
-    "outputPath": "output/tailwind/docs/min-height/index.md",
+    "outputPath": "tailwind/docs/min-height/index.md",
     "title": "min-height",
     "contentHash": "e292918e603f1e8b9918c1ff812292ebdde48ac289783fbd4fcb002e226790a1",
     "visitedAt": "2026-04-18T16:52:41.763Z",
@@ -521,7 +521,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/max-height",
-    "outputPath": "output/tailwind/docs/max-height/index.md",
+    "outputPath": "tailwind/docs/max-height/index.md",
     "title": "max-height",
     "contentHash": "b76620e598acbcaaf7b1eda6c8b7527a43974b19aea6f7f98cfc1f9514baca1e",
     "visitedAt": "2026-04-18T16:52:44.354Z",
@@ -529,7 +529,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/inline-size",
-    "outputPath": "output/tailwind/docs/inline-size/index.md",
+    "outputPath": "tailwind/docs/inline-size/index.md",
     "title": "inline-size",
     "contentHash": "a55502dd93f222113f88e661b4d8137b3262cde2ffbeb0940abcb2ec0df94496",
     "visitedAt": "2026-04-18T16:52:49.922Z",
@@ -537,7 +537,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/max-inline-size",
-    "outputPath": "output/tailwind/docs/max-inline-size/index.md",
+    "outputPath": "tailwind/docs/max-inline-size/index.md",
     "title": "max-inline-size",
     "contentHash": "dadf4cf462c8ecd5bbf9d85f32602261ca7487f840e6df90a1ee7e7e2e6a5cae",
     "visitedAt": "2026-04-18T16:53:27.625Z",
@@ -545,7 +545,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/block-size",
-    "outputPath": "output/tailwind/docs/block-size/index.md",
+    "outputPath": "tailwind/docs/block-size/index.md",
     "title": "block-size",
     "contentHash": "ae9dd2c88ca9e5e7ae334fa1eaacdba668bc0daed0c632b9c6b70b35afabdf4b",
     "visitedAt": "2026-04-18T16:53:29.699Z",
@@ -553,7 +553,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/min-inline-size",
-    "outputPath": "output/tailwind/docs/min-inline-size/index.md",
+    "outputPath": "tailwind/docs/min-inline-size/index.md",
     "title": "min-inline-size",
     "contentHash": "37aa028b8519c5180c2b8fbba57db7d629684b5597a293a62bf4a626cf82fa7f",
     "visitedAt": "2026-04-18T16:53:31.025Z",
@@ -561,7 +561,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/max-block-size",
-    "outputPath": "output/tailwind/docs/max-block-size/index.md",
+    "outputPath": "tailwind/docs/max-block-size/index.md",
     "title": "max-block-size",
     "contentHash": "3bd1e5341258fd689d5584d8a4df2c32ad117d0c61e9b5e1d35e1101481003de",
     "visitedAt": "2026-04-18T16:54:07.006Z",
@@ -569,7 +569,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/font-family",
-    "outputPath": "output/tailwind/docs/font-family/index.md",
+    "outputPath": "tailwind/docs/font-family/index.md",
     "title": "font-family",
     "contentHash": "e3b2de437dde23c5f137386bd8501efa30621f68de627f993fdfa0d47b3d33bd",
     "visitedAt": "2026-04-18T16:54:09.119Z",
@@ -577,7 +577,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/min-block-size",
-    "outputPath": "output/tailwind/docs/min-block-size/index.md",
+    "outputPath": "tailwind/docs/min-block-size/index.md",
     "title": "min-block-size",
     "contentHash": "198a0981a542c61e3e8c1a8c7f928ab8ccccda42f3f472a144702490849fa407",
     "visitedAt": "2026-04-18T16:54:11.488Z",
@@ -585,7 +585,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/font-smoothing",
-    "outputPath": "output/tailwind/docs/font-smoothing/index.md",
+    "outputPath": "tailwind/docs/font-smoothing/index.md",
     "title": "font-smoothing",
     "contentHash": "d02118b64e1b9337eb1dfcf9a85b9884cec7c2ba30d22c96204c46b469953e39",
     "visitedAt": "2026-04-18T16:54:45.992Z",
@@ -593,7 +593,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/font-style",
-    "outputPath": "output/tailwind/docs/font-style/index.md",
+    "outputPath": "tailwind/docs/font-style/index.md",
     "title": "font-style",
     "contentHash": "d33acc804fbd57fcf5906baff01d302a66a8894f4291b45352fc903e1cc9faf8",
     "visitedAt": "2026-04-18T16:54:47.381Z",
@@ -601,7 +601,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/font-size",
-    "outputPath": "output/tailwind/docs/font-size/index.md",
+    "outputPath": "tailwind/docs/font-size/index.md",
     "title": "font-size",
     "contentHash": "41d125d8cc1fc2864ee96f76e7284f782097223e6e212dc9466f62c21e0cdcfc",
     "visitedAt": "2026-04-18T16:54:49.741Z",
@@ -609,7 +609,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/font-weight",
-    "outputPath": "output/tailwind/docs/font-weight/index.md",
+    "outputPath": "tailwind/docs/font-weight/index.md",
     "title": "font-weight",
     "contentHash": "52bbeaa99a9b86ba90dc6f85513e8734b5c1f0071f95041a0825cca492146ee6",
     "visitedAt": "2026-04-18T16:55:24.361Z",
@@ -617,7 +617,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/font-stretch",
-    "outputPath": "output/tailwind/docs/font-stretch/index.md",
+    "outputPath": "tailwind/docs/font-stretch/index.md",
     "title": "font-stretch",
     "contentHash": "a45db0006c8b5873d976c62005e0f063852c0aeafde8e466aa47e3860642e7af",
     "visitedAt": "2026-04-18T16:55:25.475Z",
@@ -625,7 +625,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/font-variant-numeric",
-    "outputPath": "output/tailwind/docs/font-variant-numeric/index.md",
+    "outputPath": "tailwind/docs/font-variant-numeric/index.md",
     "title": "font-variant-numeric",
     "contentHash": "c7e96978ce84bc9fbf46f3f088f89d97aa2f5220e32ab41d84440dcfebd6db0c",
     "visitedAt": "2026-04-18T16:55:27.095Z",
@@ -633,7 +633,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/font-feature-settings",
-    "outputPath": "output/tailwind/docs/font-feature-settings/index.md",
+    "outputPath": "tailwind/docs/font-feature-settings/index.md",
     "title": "font-feature-settings",
     "contentHash": "58956cb8d5f7274b234404f56cd14e9e29e6dd67b706d35d41e9917f1ce475cf",
     "visitedAt": "2026-04-18T16:56:01.299Z",
@@ -641,7 +641,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/letter-spacing",
-    "outputPath": "output/tailwind/docs/letter-spacing/index.md",
+    "outputPath": "tailwind/docs/letter-spacing/index.md",
     "title": "letter-spacing",
     "contentHash": "2d1f991fa11842b527ce92a1c4042e1a879f6a84c20a99b1e779375aa7f729e4",
     "visitedAt": "2026-04-18T16:56:02.198Z",
@@ -649,7 +649,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/line-clamp",
-    "outputPath": "output/tailwind/docs/line-clamp/index.md",
+    "outputPath": "tailwind/docs/line-clamp/index.md",
     "title": "line-clamp",
     "contentHash": "72696ceb5cfb069738cd686b56b2c721a6541f768321d5e17cf088c39c004873",
     "visitedAt": "2026-04-18T16:56:02.711Z",
@@ -657,7 +657,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/list-style-image",
-    "outputPath": "output/tailwind/docs/list-style-image/index.md",
+    "outputPath": "tailwind/docs/list-style-image/index.md",
     "title": "list-style-image",
     "contentHash": "8d6e0a339d922e1d916f2f7e4df12efd86ae6dcde34db13a6e8519cde2797c36",
     "visitedAt": "2026-04-18T16:56:36.438Z",
@@ -665,7 +665,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/line-height",
-    "outputPath": "output/tailwind/docs/line-height/index.md",
+    "outputPath": "tailwind/docs/line-height/index.md",
     "title": "line-height",
     "contentHash": "1b7f227d2e62589ad40ca1b14964d9b83c79fcb9f27132ba3a82bc7c83314a0f",
     "visitedAt": "2026-04-18T16:56:37.953Z",
@@ -673,7 +673,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/list-style-position",
-    "outputPath": "output/tailwind/docs/list-style-position/index.md",
+    "outputPath": "tailwind/docs/list-style-position/index.md",
     "title": "list-style-position",
     "contentHash": "a8ab6948d17a96c4d5d2663e2bc55dbfd546655e4f54d8f64ce8d6ad205e74d0",
     "visitedAt": "2026-04-18T16:56:39.976Z",
@@ -681,7 +681,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/list-style-type",
-    "outputPath": "output/tailwind/docs/list-style-type/index.md",
+    "outputPath": "tailwind/docs/list-style-type/index.md",
     "title": "list-style-type",
     "contentHash": "6a77667e26576ca24836ae9a11bc003d92af2e5d8ee2b51067aa81edba3377d8",
     "visitedAt": "2026-04-18T16:57:12.095Z",
@@ -689,7 +689,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-align",
-    "outputPath": "output/tailwind/docs/text-align/index.md",
+    "outputPath": "tailwind/docs/text-align/index.md",
     "title": "text-align",
     "contentHash": "5f05034244a13252e5466433c158004af1c034c449384f3468d3717946642d0e",
     "visitedAt": "2026-04-18T16:57:13.175Z",
@@ -697,7 +697,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/color",
-    "outputPath": "output/tailwind/docs/color/index.md",
+    "outputPath": "tailwind/docs/color/index.md",
     "title": "color",
     "contentHash": "e7a519da4202a1115683b64d503d1621e30e02a97564cff5700e3cc6012164aa",
     "visitedAt": "2026-04-18T16:57:15.651Z",
@@ -705,7 +705,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-decoration-color",
-    "outputPath": "output/tailwind/docs/text-decoration-color/index.md",
+    "outputPath": "tailwind/docs/text-decoration-color/index.md",
     "title": "text-decoration-color",
     "contentHash": "c9f5b43df9dc686565e60dabaa51cb805ac978b212fa3208f320d98f34e8d89b",
     "visitedAt": "2026-04-18T16:57:50.108Z",
@@ -713,7 +713,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-decoration-style",
-    "outputPath": "output/tailwind/docs/text-decoration-style/index.md",
+    "outputPath": "tailwind/docs/text-decoration-style/index.md",
     "title": "text-decoration-style",
     "contentHash": "adc057b684788c962f49ea7ad3cbe403e46a7b29ad8fa5874eb00a775502bfdf",
     "visitedAt": "2026-04-18T16:57:50.852Z",
@@ -721,7 +721,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-decoration-line",
-    "outputPath": "output/tailwind/docs/text-decoration-line/index.md",
+    "outputPath": "tailwind/docs/text-decoration-line/index.md",
     "title": "text-decoration-line",
     "contentHash": "254d3fd2edb33db6f1203a591b2a007fff69b39f341f5a61aee289c25a547bef",
     "visitedAt": "2026-04-18T16:57:53.277Z",
@@ -729,7 +729,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-decoration-thickness",
-    "outputPath": "output/tailwind/docs/text-decoration-thickness/index.md",
+    "outputPath": "tailwind/docs/text-decoration-thickness/index.md",
     "title": "text-decoration-thickness",
     "contentHash": "53f162eee9a70b58d4e947bf8a60926cdcca9f1d1c4f421135000828336cef69",
     "visitedAt": "2026-04-18T16:58:28.478Z",
@@ -737,7 +737,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-underline-offset",
-    "outputPath": "output/tailwind/docs/text-underline-offset/index.md",
+    "outputPath": "tailwind/docs/text-underline-offset/index.md",
     "title": "text-underline-offset",
     "contentHash": "fa42c5ec4f496fa4648217473c578fa81276b2a7b1d6cf9cd835e02c871702c1",
     "visitedAt": "2026-04-18T16:58:29.739Z",
@@ -745,7 +745,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-transform",
-    "outputPath": "output/tailwind/docs/text-transform/index.md",
+    "outputPath": "tailwind/docs/text-transform/index.md",
     "title": "text-transform",
     "contentHash": "75824e73618d7732b10acfb090b4dbfb97d512cad135ae301d0d0c77256348f8",
     "visitedAt": "2026-04-18T16:58:31.336Z",
@@ -753,7 +753,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-overflow",
-    "outputPath": "output/tailwind/docs/text-overflow/index.md",
+    "outputPath": "tailwind/docs/text-overflow/index.md",
     "title": "text-overflow",
     "contentHash": "077ec91ba9916fb8c52b32c01d6adbcd9b0811014b2fcd2f55320750af6487c3",
     "visitedAt": "2026-04-18T16:59:05.221Z",
@@ -761,7 +761,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-wrap",
-    "outputPath": "output/tailwind/docs/text-wrap/index.md",
+    "outputPath": "tailwind/docs/text-wrap/index.md",
     "title": "text-wrap",
     "contentHash": "c1bb157b57f4ab3a476171423c8f46edf51a4367fc310d0565b81999fb7741b4",
     "visitedAt": "2026-04-18T16:59:05.917Z",
@@ -769,7 +769,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-indent",
-    "outputPath": "output/tailwind/docs/text-indent/index.md",
+    "outputPath": "tailwind/docs/text-indent/index.md",
     "title": "text-indent",
     "contentHash": "ad2dfb39487210ec6116f4173b17fc872af5057f0dac409dd73cc6a09288f230",
     "visitedAt": "2026-04-18T16:59:09.948Z",
@@ -777,7 +777,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/vertical-align",
-    "outputPath": "output/tailwind/docs/vertical-align/index.md",
+    "outputPath": "tailwind/docs/vertical-align/index.md",
     "title": "vertical-align",
     "contentHash": "63084324e1c7de69af367d5d9d2d108ecec4b7963b4149f10134a5ebaf436c8a",
     "visitedAt": "2026-04-18T16:59:41.406Z",
@@ -785,7 +785,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/white-space",
-    "outputPath": "output/tailwind/docs/white-space/index.md",
+    "outputPath": "tailwind/docs/white-space/index.md",
     "title": "white-space",
     "contentHash": "7ec837ba0b65b8a493623c7aa5bf890809338c4b57328170dd572a63d1c2d60e",
     "visitedAt": "2026-04-18T16:59:43.829Z",
@@ -793,7 +793,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/word-break",
-    "outputPath": "output/tailwind/docs/word-break/index.md",
+    "outputPath": "tailwind/docs/word-break/index.md",
     "title": "word-break",
     "contentHash": "c3a4c447e134dc5930887eb5ebe978708419031b3668dab2c9f172a4c315357f",
     "visitedAt": "2026-04-18T16:59:46.201Z",
@@ -801,7 +801,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/hyphens",
-    "outputPath": "output/tailwind/docs/hyphens/index.md",
+    "outputPath": "tailwind/docs/hyphens/index.md",
     "title": "hyphens",
     "contentHash": "92b43dff882d86c830998bf981fbe4664f530dca81788f411ad380a0cafcb8b9",
     "visitedAt": "2026-04-18T17:00:18.228Z",
@@ -809,7 +809,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/overflow-wrap",
-    "outputPath": "output/tailwind/docs/overflow-wrap/index.md",
+    "outputPath": "tailwind/docs/overflow-wrap/index.md",
     "title": "overflow-wrap",
     "contentHash": "c552a0eb622a044e3509e03c3c64cdf3ad65fafff796fe21410885ddf0c092d6",
     "visitedAt": "2026-04-18T17:00:19.439Z",
@@ -817,7 +817,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/content",
-    "outputPath": "output/tailwind/docs/content/index.md",
+    "outputPath": "tailwind/docs/content/index.md",
     "title": "content",
     "contentHash": "5a2a14a5e5c17b8e5c189f3f60b35e382d305422332baf0dafa4b4eea9936daf",
     "visitedAt": "2026-04-18T17:00:22.202Z",
@@ -825,7 +825,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-attachment",
-    "outputPath": "output/tailwind/docs/background-attachment/index.md",
+    "outputPath": "tailwind/docs/background-attachment/index.md",
     "title": "background-attachment",
     "contentHash": "a7f392cdfdddbfc3d21c3ab045e50b3277481e0b240b83068357269874b57a4f",
     "visitedAt": "2026-04-18T17:00:54.985Z",
@@ -833,7 +833,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-clip",
-    "outputPath": "output/tailwind/docs/background-clip/index.md",
+    "outputPath": "tailwind/docs/background-clip/index.md",
     "title": "background-clip",
     "contentHash": "df9b92872ecd0803819d3db946a4add8ea4a4483c078284bde6e0cadfbdae12c",
     "visitedAt": "2026-04-18T17:00:56.426Z",
@@ -841,7 +841,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-color",
-    "outputPath": "output/tailwind/docs/background-color/index.md",
+    "outputPath": "tailwind/docs/background-color/index.md",
     "title": "background-color",
     "contentHash": "0431e0c44c82fc1278b23acf9179815034a4b90df2f5722af5aedf337a6e1725",
     "visitedAt": "2026-04-18T17:00:58.767Z",
@@ -849,7 +849,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-image",
-    "outputPath": "output/tailwind/docs/background-image/index.md",
+    "outputPath": "tailwind/docs/background-image/index.md",
     "title": "background-image",
     "contentHash": "b3cfccefa0d42de026ff44f1795d233e53d7cf05444f555d07b386e4152522be",
     "visitedAt": "2026-04-18T17:01:32.412Z",
@@ -857,7 +857,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-position",
-    "outputPath": "output/tailwind/docs/background-position/index.md",
+    "outputPath": "tailwind/docs/background-position/index.md",
     "title": "background-position",
     "contentHash": "48d62a9cd5656044e9b1265fd209976f24d754c42d55b0be3af55630ef5518bc",
     "visitedAt": "2026-04-18T17:01:32.923Z",
@@ -865,7 +865,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-origin",
-    "outputPath": "output/tailwind/docs/background-origin/index.md",
+    "outputPath": "tailwind/docs/background-origin/index.md",
     "title": "background-origin",
     "contentHash": "eb6ecd542ad8de8f4dbb471c6072a26ec47996c16f50cc43a38a4ed98690b56a",
     "visitedAt": "2026-04-18T17:01:33.386Z",
@@ -873,7 +873,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-size",
-    "outputPath": "output/tailwind/docs/background-size/index.md",
+    "outputPath": "tailwind/docs/background-size/index.md",
     "title": "background-size",
     "contentHash": "659d31aeec98489b8d81291d87c87775d1f077c9eefabf2fa2bf2a06405d8e28",
     "visitedAt": "2026-04-18T17:02:09.019Z",
@@ -881,7 +881,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-repeat",
-    "outputPath": "output/tailwind/docs/background-repeat/index.md",
+    "outputPath": "tailwind/docs/background-repeat/index.md",
     "title": "background-repeat",
     "contentHash": "351ca0ca4b39edec9a178d25f9cc064594e3fd58198ed5d43cb1cafda5fb8bd2",
     "visitedAt": "2026-04-18T17:02:09.432Z",
@@ -889,7 +889,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/border-radius",
-    "outputPath": "output/tailwind/docs/border-radius/index.md",
+    "outputPath": "tailwind/docs/border-radius/index.md",
     "title": "border-radius",
     "contentHash": "14937982c5d702f2269221dec5a1288c7d37bfbe44c1e1a2db66ededd6b20c28",
     "visitedAt": "2026-04-18T17:02:10.300Z",
@@ -897,7 +897,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/border-color",
-    "outputPath": "output/tailwind/docs/border-color/index.md",
+    "outputPath": "tailwind/docs/border-color/index.md",
     "title": "border-color",
     "contentHash": "1ba9bf103dc8b306f10accbfb1e49ee4a361399df6e989753f4dbaa73de849eb",
     "visitedAt": "2026-04-18T17:02:49.355Z",
@@ -905,7 +905,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/border-style",
-    "outputPath": "output/tailwind/docs/border-style/index.md",
+    "outputPath": "tailwind/docs/border-style/index.md",
     "title": "border-style",
     "contentHash": "35f91d1288619279dc20b95567d8ba238981c8e6af8998625b5d8932fa016752",
     "visitedAt": "2026-04-18T17:02:49.797Z",
@@ -913,7 +913,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/border-width",
-    "outputPath": "output/tailwind/docs/border-width/index.md",
+    "outputPath": "tailwind/docs/border-width/index.md",
     "title": "border-width",
     "contentHash": "bc150873d7e105ee9ae5f5f6aebafa28b8f3ea4a0bc1c190510dd3ff6f7d0bc2",
     "visitedAt": "2026-04-18T17:02:50.541Z",
@@ -921,7 +921,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/outline-width",
-    "outputPath": "output/tailwind/docs/outline-width/index.md",
+    "outputPath": "tailwind/docs/outline-width/index.md",
     "title": "outline-width",
     "contentHash": "a32f03b6bd854e0a0defaf81bab60d80a4b2e8f0f55c925d11049f19917157f3",
     "visitedAt": "2026-04-18T17:03:26.386Z",
@@ -929,7 +929,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/outline-color",
-    "outputPath": "output/tailwind/docs/outline-color/index.md",
+    "outputPath": "tailwind/docs/outline-color/index.md",
     "title": "outline-color",
     "contentHash": "af245f75fe8ec12fcecfe8521ac5e1a67475425ede4f0214885c0c9b0e5930b4",
     "visitedAt": "2026-04-18T17:03:27.082Z",
@@ -937,7 +937,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/outline-style",
-    "outputPath": "output/tailwind/docs/outline-style/index.md",
+    "outputPath": "tailwind/docs/outline-style/index.md",
     "title": "outline-style",
     "contentHash": "896783c46e5fe09111a5358ebdfd069f55d1609af820a0ebde3cb40eed18ee31",
     "visitedAt": "2026-04-18T17:03:27.666Z",
@@ -945,7 +945,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/outline-offset",
-    "outputPath": "output/tailwind/docs/outline-offset/index.md",
+    "outputPath": "tailwind/docs/outline-offset/index.md",
     "title": "outline-offset",
     "contentHash": "678bf551d07150556d540a525a7a9c1eef05861d32cfcca59370fe7aed3a6dab",
     "visitedAt": "2026-04-18T17:04:03.335Z",
@@ -953,7 +953,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/text-shadow",
-    "outputPath": "output/tailwind/docs/text-shadow/index.md",
+    "outputPath": "tailwind/docs/text-shadow/index.md",
     "title": "text-shadow",
     "contentHash": "b18f6a570345dbadd19461995d351e1c58ef1fb0b54fde9a4441530bc390469f",
     "visitedAt": "2026-04-18T17:04:05.069Z",
@@ -961,7 +961,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/box-shadow",
-    "outputPath": "output/tailwind/docs/box-shadow/index.md",
+    "outputPath": "tailwind/docs/box-shadow/index.md",
     "title": "box-shadow",
     "contentHash": "05414728dc97bda0e37059ec4e133cdb57be9cc4402a3ecb68b4d63a1b339c9c",
     "visitedAt": "2026-04-18T17:04:07.493Z",
@@ -969,7 +969,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mix-blend-mode",
-    "outputPath": "output/tailwind/docs/mix-blend-mode/index.md",
+    "outputPath": "tailwind/docs/mix-blend-mode/index.md",
     "title": "mix-blend-mode",
     "contentHash": "a74dbf13a957303960d9a4815fd9a2eb4768f45a44dccde5ad6612ad190ed863",
     "visitedAt": "2026-04-18T17:04:42.860Z",
@@ -977,7 +977,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/opacity",
-    "outputPath": "output/tailwind/docs/opacity/index.md",
+    "outputPath": "tailwind/docs/opacity/index.md",
     "title": "opacity",
     "contentHash": "be6e297d89567d2130151926b9a37b98d3146dbd17640355ed670b8055fc20d7",
     "visitedAt": "2026-04-18T17:04:43.263Z",
@@ -985,7 +985,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/background-blend-mode",
-    "outputPath": "output/tailwind/docs/background-blend-mode/index.md",
+    "outputPath": "tailwind/docs/background-blend-mode/index.md",
     "title": "background-blend-mode",
     "contentHash": "d0ec42471e770a7b5cbed94926e8711fbbb35128826522c676ba1f173fc48f3e",
     "visitedAt": "2026-04-18T17:04:43.603Z",
@@ -993,7 +993,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-clip",
-    "outputPath": "output/tailwind/docs/mask-clip/index.md",
+    "outputPath": "tailwind/docs/mask-clip/index.md",
     "title": "mask-clip",
     "contentHash": "923cc7974271e8b7a63f2d0d58526dc8be61bf22c7e5c873e10f2252ffe9e60e",
     "visitedAt": "2026-04-18T17:05:19.094Z",
@@ -1001,7 +1001,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-composite",
-    "outputPath": "output/tailwind/docs/mask-composite/index.md",
+    "outputPath": "tailwind/docs/mask-composite/index.md",
     "title": "mask-composite",
     "contentHash": "9aff3b5c5bdaf852844aee4105a73037336719f4bac05829026a5933e39d7908",
     "visitedAt": "2026-04-18T17:05:19.635Z",
@@ -1009,7 +1009,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-image",
-    "outputPath": "output/tailwind/docs/mask-image/index.md",
+    "outputPath": "tailwind/docs/mask-image/index.md",
     "title": "mask-image",
     "contentHash": "968024e92038d40acf1d9bd404a084a9243703ae1f0486891e198f23ea9f1722",
     "visitedAt": "2026-04-18T17:05:20.925Z",
@@ -1017,7 +1017,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-origin",
-    "outputPath": "output/tailwind/docs/mask-origin/index.md",
+    "outputPath": "tailwind/docs/mask-origin/index.md",
     "title": "mask-origin",
     "contentHash": "81f2056ae12a0020f7640e9522fb903511e2b9cd2e0ca52d92e2b5de85132bdf",
     "visitedAt": "2026-04-18T17:05:55.302Z",
@@ -1025,7 +1025,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-mode",
-    "outputPath": "output/tailwind/docs/mask-mode/index.md",
+    "outputPath": "tailwind/docs/mask-mode/index.md",
     "title": "mask-mode",
     "contentHash": "a34d0d7637784d77282992c4c79b894cc4d24864424be700b46497b8351f9331",
     "visitedAt": "2026-04-18T17:05:56.109Z",
@@ -1033,7 +1033,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-position",
-    "outputPath": "output/tailwind/docs/mask-position/index.md",
+    "outputPath": "tailwind/docs/mask-position/index.md",
     "title": "mask-position",
     "contentHash": "1866ca4562be266bd0eca5b6875d88ffcf669e28379c849b2435a0641bfb254d",
     "visitedAt": "2026-04-18T17:05:56.600Z",
@@ -1041,7 +1041,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-type",
-    "outputPath": "output/tailwind/docs/mask-type/index.md",
+    "outputPath": "tailwind/docs/mask-type/index.md",
     "title": "mask-type",
     "contentHash": "5e4dbfcc22c08a317d3eff521b11e9ca040825753c9c5ec8107b721a5b44e4d1",
     "visitedAt": "2026-04-18T17:06:32.869Z",
@@ -1049,7 +1049,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-size",
-    "outputPath": "output/tailwind/docs/mask-size/index.md",
+    "outputPath": "tailwind/docs/mask-size/index.md",
     "title": "mask-size",
     "contentHash": "f4b17619cb849cffef2aa0060f102e8687fc98be8eef622114020a7ddc2671d8",
     "visitedAt": "2026-04-18T17:06:33.270Z",
@@ -1057,7 +1057,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/mask-repeat",
-    "outputPath": "output/tailwind/docs/mask-repeat/index.md",
+    "outputPath": "tailwind/docs/mask-repeat/index.md",
     "title": "mask-repeat",
     "contentHash": "5bbf13ea60f4850f8fa65016a53a27432115462cad30fcd8f7085b59112abb3c",
     "visitedAt": "2026-04-18T17:06:33.629Z",
@@ -1065,7 +1065,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter",
-    "outputPath": "output/tailwind/docs/filter/index.md",
+    "outputPath": "tailwind/docs/filter/index.md",
     "title": "filter",
     "contentHash": "7f28012efd57c0a033839493c80d4747f32504e803ad3bda3972cc8f3bf9e43d",
     "visitedAt": "2026-04-18T17:07:08.381Z",
@@ -1073,7 +1073,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-blur",
-    "outputPath": "output/tailwind/docs/filter-blur/index.md",
+    "outputPath": "tailwind/docs/filter-blur/index.md",
     "title": "filter: blur()",
     "contentHash": "aec4c2b15406f065605af2a1fd760b4d59743ee06308faba56bec6140483a294",
     "visitedAt": "2026-04-18T17:07:08.942Z",
@@ -1081,7 +1081,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-brightness",
-    "outputPath": "output/tailwind/docs/filter-brightness/index.md",
+    "outputPath": "tailwind/docs/filter-brightness/index.md",
     "title": "filter: brightness()",
     "contentHash": "2c8a85b88f0e41ade37a22aa555fb1ce5d6d81c05493070aa8f8f6183b5f342b",
     "visitedAt": "2026-04-18T17:07:09.287Z",
@@ -1089,7 +1089,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-grayscale",
-    "outputPath": "output/tailwind/docs/filter-grayscale/index.md",
+    "outputPath": "tailwind/docs/filter-grayscale/index.md",
     "title": "filter: grayscale()",
     "contentHash": "cfb9a5ed3d5ef0ed1021aa4ad20920be6fa9bdc8dd75f8909d5c7d295a11cf1d",
     "visitedAt": "2026-04-18T17:07:44.819Z",
@@ -1097,7 +1097,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-contrast",
-    "outputPath": "output/tailwind/docs/filter-contrast/index.md",
+    "outputPath": "tailwind/docs/filter-contrast/index.md",
     "title": "filter: contrast()",
     "contentHash": "440e75f65f5c2b1239433aca3652fec79ff214c3f2a55a5adbc5649c415cd7fd",
     "visitedAt": "2026-04-18T17:07:45.285Z",
@@ -1105,7 +1105,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-drop-shadow",
-    "outputPath": "output/tailwind/docs/filter-drop-shadow/index.md",
+    "outputPath": "tailwind/docs/filter-drop-shadow/index.md",
     "title": "filter: drop-shadow()",
     "contentHash": "70d39fe8b1990f770ef7610cb1a311f6259acad8a59e2ab5cf0da7a64c43669f",
     "visitedAt": "2026-04-18T17:07:46.389Z",
@@ -1113,7 +1113,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-saturate",
-    "outputPath": "output/tailwind/docs/filter-saturate/index.md",
+    "outputPath": "tailwind/docs/filter-saturate/index.md",
     "title": "filter: saturate()",
     "contentHash": "ee176ad2bc70f3410096d15d08fa376e9ec9ddcfad2ade0166037f041d47ae0e",
     "visitedAt": "2026-04-18T17:08:21.958Z",
@@ -1121,7 +1121,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-hue-rotate",
-    "outputPath": "output/tailwind/docs/filter-hue-rotate/index.md",
+    "outputPath": "tailwind/docs/filter-hue-rotate/index.md",
     "title": "filter: hue-rotate()",
     "contentHash": "7bf404e628ca8e2b28c78f0a36370482dbf8172b98adf32fa3915dc79a250a30",
     "visitedAt": "2026-04-18T17:08:22.459Z",
@@ -1129,7 +1129,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-invert",
-    "outputPath": "output/tailwind/docs/filter-invert/index.md",
+    "outputPath": "tailwind/docs/filter-invert/index.md",
     "title": "filter: invert()",
     "contentHash": "dd243900818c22f361554a8f38f2905671486dd9ad5da3bd7b08c2ce24cdd065",
     "visitedAt": "2026-04-18T17:08:22.820Z",
@@ -1137,7 +1137,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/filter-sepia",
-    "outputPath": "output/tailwind/docs/filter-sepia/index.md",
+    "outputPath": "tailwind/docs/filter-sepia/index.md",
     "title": "filter: sepia()",
     "contentHash": "a7ed12c7b1e5f247533e32f31d89ccdc7d9b96dbbe5178c6ab42ad635b9f6b1c",
     "visitedAt": "2026-04-18T17:08:56.202Z",
@@ -1145,7 +1145,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter",
-    "outputPath": "output/tailwind/docs/backdrop-filter/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter/index.md",
     "title": "backdrop-filter",
     "contentHash": "726c6140c78e52ba449fa2b89ceab56fb74fc56b3769f3b359bebb023b772733",
     "visitedAt": "2026-04-18T17:08:56.671Z",
@@ -1153,7 +1153,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-blur",
-    "outputPath": "output/tailwind/docs/backdrop-filter-blur/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-blur/index.md",
     "title": "backdrop-filter: blur()",
     "contentHash": "9dc3f5cc2f815236d1e4e39432a291b3f2beadf0ef08647db3c6040b498ee144",
     "visitedAt": "2026-04-18T17:08:58.910Z",
@@ -1161,7 +1161,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-brightness",
-    "outputPath": "output/tailwind/docs/backdrop-filter-brightness/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-brightness/index.md",
     "title": "backdrop-filter: brightness()",
     "contentHash": "4f3128bdb6e766bedca713ac8f1190ecfb84c0ae500dd47bb6fabda86d374179",
     "visitedAt": "2026-04-18T17:09:31.550Z",
@@ -1169,7 +1169,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-contrast",
-    "outputPath": "output/tailwind/docs/backdrop-filter-contrast/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-contrast/index.md",
     "title": "backdrop-filter: contrast()",
     "contentHash": "ed4b6075f77787b1b5b6a6c54b0ba448f9c7c1a677b8d50da7f143d78fc70570",
     "visitedAt": "2026-04-18T17:09:32.030Z",
@@ -1177,7 +1177,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-grayscale",
-    "outputPath": "output/tailwind/docs/backdrop-filter-grayscale/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-grayscale/index.md",
     "title": "backdrop-filter: grayscale()",
     "contentHash": "9ba3e26c30eaccf75a2eb3c8a959c72085666f53f0e26f5da38afc25f1e2d75c",
     "visitedAt": "2026-04-18T17:09:34.083Z",
@@ -1185,7 +1185,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-invert",
-    "outputPath": "output/tailwind/docs/backdrop-filter-invert/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-invert/index.md",
     "title": "backdrop-filter: invert()",
     "contentHash": "71b921fed9fb3945c2196fe2b096ec794ad1d6ec500c44093a05d321cb716395",
     "visitedAt": "2026-04-18T17:10:07.860Z",
@@ -1193,7 +1193,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-hue-rotate",
-    "outputPath": "output/tailwind/docs/backdrop-filter-hue-rotate/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-hue-rotate/index.md",
     "title": "backdrop-filter: hue-rotate()",
     "contentHash": "cdae760e2216887c9468b5fdc448fb7cf3b0f1c39e965536bc0f24061f01bcaa",
     "visitedAt": "2026-04-18T17:10:08.487Z",
@@ -1201,7 +1201,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-opacity",
-    "outputPath": "output/tailwind/docs/backdrop-filter-opacity/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-opacity/index.md",
     "title": "backdrop-filter: opacity()",
     "contentHash": "d5897d73fa0415b6830db45598fa8dffcea5e82ba33cd7133dfa5a3001e25aac",
     "visitedAt": "2026-04-18T17:10:09.414Z",
@@ -1209,7 +1209,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-sepia",
-    "outputPath": "output/tailwind/docs/backdrop-filter-sepia/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-sepia/index.md",
     "title": "backdrop-filter: sepia()",
     "contentHash": "4c72be81f2b3e32e4440fc9c5afdbe78a4d3e034f38e6fd3243b2344ffef9155",
     "visitedAt": "2026-04-18T17:10:44.497Z",
@@ -1217,7 +1217,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backdrop-filter-saturate",
-    "outputPath": "output/tailwind/docs/backdrop-filter-saturate/index.md",
+    "outputPath": "tailwind/docs/backdrop-filter-saturate/index.md",
     "title": "backdrop-filter: saturate()",
     "contentHash": "b958f02928620283a8abea241d405ec3e68c00c71e81ccff15aed07b037b1350",
     "visitedAt": "2026-04-18T17:10:45.006Z",
@@ -1225,7 +1225,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/border-collapse",
-    "outputPath": "output/tailwind/docs/border-collapse/index.md",
+    "outputPath": "tailwind/docs/border-collapse/index.md",
     "title": "border-collapse",
     "contentHash": "1011162dfe8e8eb8f2db1e70c59c59c8fa4a99d4c40c4666a3456efd1a6c8f39",
     "visitedAt": "2026-04-18T17:10:45.619Z",
@@ -1233,7 +1233,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/table-layout",
-    "outputPath": "output/tailwind/docs/table-layout/index.md",
+    "outputPath": "tailwind/docs/table-layout/index.md",
     "title": "table-layout",
     "contentHash": "243c14e9498f18f105048cb51bbc58ccd2611862e2be1f5f622a8d1658c3e736",
     "visitedAt": "2026-04-18T17:11:20.676Z",
@@ -1241,7 +1241,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/caption-side",
-    "outputPath": "output/tailwind/docs/caption-side/index.md",
+    "outputPath": "tailwind/docs/caption-side/index.md",
     "title": "caption-side",
     "contentHash": "989c0ba782f2b120d133631a7b58c728e9b271bad4a82f4bbc6e0d7b8cfa03c4",
     "visitedAt": "2026-04-18T17:11:21.274Z",
@@ -1249,7 +1249,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/border-spacing",
-    "outputPath": "output/tailwind/docs/border-spacing/index.md",
+    "outputPath": "tailwind/docs/border-spacing/index.md",
     "title": "border-spacing",
     "contentHash": "8684dd8a86b739141c96664ba271d0d27a4af8b9a8e62287412208b1ad3421c0",
     "visitedAt": "2026-04-18T17:11:21.783Z",
@@ -1257,7 +1257,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/transition-behavior",
-    "outputPath": "output/tailwind/docs/transition-behavior/index.md",
+    "outputPath": "tailwind/docs/transition-behavior/index.md",
     "title": "transition-behavior",
     "contentHash": "c2c66a1d9016be18d761970f6a0e6a729a74fd826dd644784876607afbc08921",
     "visitedAt": "2026-04-18T17:11:56.604Z",
@@ -1265,7 +1265,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/transition-duration",
-    "outputPath": "output/tailwind/docs/transition-duration/index.md",
+    "outputPath": "tailwind/docs/transition-duration/index.md",
     "title": "transition-duration",
     "contentHash": "b4c08ec4ad30fc93ca7708dafa1e2796cff2b7f4d4b8c9e0e831ba15d82b05b4",
     "visitedAt": "2026-04-18T17:11:57.076Z",
@@ -1273,7 +1273,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/transition-property",
-    "outputPath": "output/tailwind/docs/transition-property/index.md",
+    "outputPath": "tailwind/docs/transition-property/index.md",
     "title": "transition-property",
     "contentHash": "5407a9de04a3e78ad82518a1c888a54e5a5882990d08b2e8e7c33143dca2efe1",
     "visitedAt": "2026-04-18T17:11:57.389Z",
@@ -1281,7 +1281,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/transition-timing-function",
-    "outputPath": "output/tailwind/docs/transition-timing-function/index.md",
+    "outputPath": "tailwind/docs/transition-timing-function/index.md",
     "title": "transition-timing-function",
     "contentHash": "3165e4cf08640cc06310e86a4231f5ae9dbe894555c88939008d19861036c192",
     "visitedAt": "2026-04-18T17:12:32.556Z",
@@ -1289,7 +1289,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/transition-delay",
-    "outputPath": "output/tailwind/docs/transition-delay/index.md",
+    "outputPath": "tailwind/docs/transition-delay/index.md",
     "title": "transition-delay",
     "contentHash": "b3d83d0673c06faea2a23cfc304318181f7fbbeff69b86cd184b3fc03ec698db",
     "visitedAt": "2026-04-18T17:12:32.937Z",
@@ -1297,7 +1297,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/animation",
-    "outputPath": "output/tailwind/docs/animation/index.md",
+    "outputPath": "tailwind/docs/animation/index.md",
     "title": "animation",
     "contentHash": "4866e5774ccedc4d61b4fb5b197b353de5074dd84d548c19b43c940944d43a40",
     "visitedAt": "2026-04-18T17:12:33.725Z",
@@ -1305,7 +1305,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/backface-visibility",
-    "outputPath": "output/tailwind/docs/backface-visibility/index.md",
+    "outputPath": "tailwind/docs/backface-visibility/index.md",
     "title": "backface-visibility",
     "contentHash": "783000c5ddbfe14ea937bd1874db045a0382f8a046deba258ac4ad898770b3d1",
     "visitedAt": "2026-04-18T17:13:09.496Z",
@@ -1313,7 +1313,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/perspective-origin",
-    "outputPath": "output/tailwind/docs/perspective-origin/index.md",
+    "outputPath": "tailwind/docs/perspective-origin/index.md",
     "title": "perspective-origin",
     "contentHash": "15ae6269b2c8adeeabc236afbd16ecb6e1189c8f747bf85e3426c314b1ede56e",
     "visitedAt": "2026-04-18T17:13:10.119Z",
@@ -1321,7 +1321,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/perspective",
-    "outputPath": "output/tailwind/docs/perspective/index.md",
+    "outputPath": "tailwind/docs/perspective/index.md",
     "title": "perspective",
     "contentHash": "0194e1462ea40df312c636a5d74fd988a9e9cf0c1277bf496af947f1757db157",
     "visitedAt": "2026-04-18T17:13:10.694Z",
@@ -1329,7 +1329,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/scale",
-    "outputPath": "output/tailwind/docs/scale/index.md",
+    "outputPath": "tailwind/docs/scale/index.md",
     "title": "scale",
     "contentHash": "bbf76d1adcad393f34850d5b72baab3bcf6e6d9c53f181e990456f3ba5b09fd9",
     "visitedAt": "2026-04-18T17:13:46.054Z",
@@ -1337,7 +1337,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/rotate",
-    "outputPath": "output/tailwind/docs/rotate/index.md",
+    "outputPath": "tailwind/docs/rotate/index.md",
     "title": "rotate",
     "contentHash": "11d8ef89c14e1ac06b1e01535d3b0649e4556ab79af6f0469bb664c1c146a772",
     "visitedAt": "2026-04-18T17:13:46.784Z",
@@ -1345,7 +1345,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/skew",
-    "outputPath": "output/tailwind/docs/skew/index.md",
+    "outputPath": "tailwind/docs/skew/index.md",
     "title": "skew",
     "contentHash": "89032970a7d325abb117b36e4a8e8d3f33765ccde41c114ab4e6ce178b9bbdf7",
     "visitedAt": "2026-04-18T17:13:47.193Z",
@@ -1353,7 +1353,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/transform-origin",
-    "outputPath": "output/tailwind/docs/transform-origin/index.md",
+    "outputPath": "tailwind/docs/transform-origin/index.md",
     "title": "transform-origin",
     "contentHash": "27d5932e48f4f8df63e1bd51af59056960a44b890e37ad39f0f41268722f7cbb",
     "visitedAt": "2026-04-18T17:14:22.095Z",
@@ -1361,7 +1361,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/transform",
-    "outputPath": "output/tailwind/docs/transform/index.md",
+    "outputPath": "tailwind/docs/transform/index.md",
     "title": "transform",
     "contentHash": "2034cb6258383bf6a885feb576da955399ca4078070d2cb63adc795ef05e02c3",
     "visitedAt": "2026-04-18T17:14:22.415Z",
@@ -1369,7 +1369,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/transform-style",
-    "outputPath": "output/tailwind/docs/transform-style/index.md",
+    "outputPath": "tailwind/docs/transform-style/index.md",
     "title": "transform-style",
     "contentHash": "2a8358ca600cb1e741e0f85ab55bc76e6216895ec11b0385e29d2b4fa0504680",
     "visitedAt": "2026-04-18T17:14:23.021Z",
@@ -1377,7 +1377,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/appearance",
-    "outputPath": "output/tailwind/docs/appearance/index.md",
+    "outputPath": "tailwind/docs/appearance/index.md",
     "title": "appearance",
     "contentHash": "13171eca81b5337cd75041d7e57f383d56b86554d38aa9a9f5ff4d16d201206f",
     "visitedAt": "2026-04-18T17:14:59.030Z",
@@ -1385,7 +1385,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/accent-color",
-    "outputPath": "output/tailwind/docs/accent-color/index.md",
+    "outputPath": "tailwind/docs/accent-color/index.md",
     "title": "accent-color",
     "contentHash": "cf74740dfd24a03b2fdde998c465d89734c677c5e272c0e78da510d34fc98568",
     "visitedAt": "2026-04-18T17:14:59.682Z",
@@ -1393,7 +1393,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/translate",
-    "outputPath": "output/tailwind/docs/translate/index.md",
+    "outputPath": "tailwind/docs/translate/index.md",
     "title": "translate",
     "contentHash": "7e794caa622904fdc74e201b4aa6b452273efd0bc21209d3aef6eb4b310f83bc",
     "visitedAt": "2026-04-18T17:15:00.335Z",
@@ -1401,7 +1401,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/color-scheme",
-    "outputPath": "output/tailwind/docs/color-scheme/index.md",
+    "outputPath": "tailwind/docs/color-scheme/index.md",
     "title": "color-scheme",
     "contentHash": "4a9ec441ef9725cf04e2d5ef292927c8a783b13f7021c9fa52ba355c4a1cff12",
     "visitedAt": "2026-04-18T17:15:33.424Z",
@@ -1409,7 +1409,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/cursor",
-    "outputPath": "output/tailwind/docs/cursor/index.md",
+    "outputPath": "tailwind/docs/cursor/index.md",
     "title": "cursor",
     "contentHash": "8723105884ec9ec2741ffcab0166f619b573a128d0d87c729ce51ab247c85dda",
     "visitedAt": "2026-04-18T17:15:35.842Z",
@@ -1417,7 +1417,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/caret-color",
-    "outputPath": "output/tailwind/docs/caret-color/index.md",
+    "outputPath": "tailwind/docs/caret-color/index.md",
     "title": "caret-color",
     "contentHash": "e292918c093af723c6cb575f566dfaf61321c2a7a5b9cedc0a7a89720dab3873",
     "visitedAt": "2026-04-18T17:15:36.547Z",
@@ -1425,7 +1425,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/field-sizing",
-    "outputPath": "output/tailwind/docs/field-sizing/index.md",
+    "outputPath": "tailwind/docs/field-sizing/index.md",
     "title": "field-sizing",
     "contentHash": "1dc4e5b38636f381ed780bdb0bd2d6ba7c1dcb3b34ba5d034f058bcb3ad6e2b1",
     "visitedAt": "2026-04-18T17:16:08.262Z",
@@ -1433,7 +1433,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/pointer-events",
-    "outputPath": "output/tailwind/docs/pointer-events/index.md",
+    "outputPath": "tailwind/docs/pointer-events/index.md",
     "title": "pointer-events",
     "contentHash": "b3b1a4ee5403d38ca3267f5d3ea41b0286f46b0e62058dd730a635c22e79aefc",
     "visitedAt": "2026-04-18T17:16:11.040Z",
@@ -1441,7 +1441,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/resize",
-    "outputPath": "output/tailwind/docs/resize/index.md",
+    "outputPath": "tailwind/docs/resize/index.md",
     "title": "resize",
     "contentHash": "b420b151f94e991b6a5ed884b5f1c77a8658ea03a57eb257ac77cea6b789b5e9",
     "visitedAt": "2026-04-18T17:16:11.430Z",
@@ -1449,7 +1449,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/scroll-behavior",
-    "outputPath": "output/tailwind/docs/scroll-behavior/index.md",
+    "outputPath": "tailwind/docs/scroll-behavior/index.md",
     "title": "scroll-behavior",
     "contentHash": "782d2fb85a432a17e642e4e559df06f02c16074c94efefd53d67c6bb6149e753",
     "visitedAt": "2026-04-18T17:16:43.496Z",
@@ -1457,7 +1457,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/scroll-margin",
-    "outputPath": "output/tailwind/docs/scroll-margin/index.md",
+    "outputPath": "tailwind/docs/scroll-margin/index.md",
     "title": "scroll-margin",
     "contentHash": "1ecfee70b0f9778a69bed54a6caf66dec63e943c127ac8ab609d2779951fcd79",
     "visitedAt": "2026-04-18T17:16:46.792Z",
@@ -1465,7 +1465,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/scroll-padding",
-    "outputPath": "output/tailwind/docs/scroll-padding/index.md",
+    "outputPath": "tailwind/docs/scroll-padding/index.md",
     "title": "scroll-padding",
     "contentHash": "9dc5e72edf3e741abf9c15dc0a0917e889e72a3bc28ccaff6a92bc4859e3c214",
     "visitedAt": "2026-04-18T17:16:47.431Z",
@@ -1473,7 +1473,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/scroll-snap-align",
-    "outputPath": "output/tailwind/docs/scroll-snap-align/index.md",
+    "outputPath": "tailwind/docs/scroll-snap-align/index.md",
     "title": "scroll-snap-align",
     "contentHash": "d160e3b0b18e58a6216be82bca5bf08ddcb135ca1e7f6b7c5eee72500bd4769d",
     "visitedAt": "2026-04-18T17:17:20.455Z",
@@ -1481,7 +1481,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/scroll-snap-stop",
-    "outputPath": "output/tailwind/docs/scroll-snap-stop/index.md",
+    "outputPath": "tailwind/docs/scroll-snap-stop/index.md",
     "title": "scroll-snap-stop",
     "contentHash": "ed121615475eba137673cad1111c8cb603f4f1fcfa32276c470f42f2af6453b1",
     "visitedAt": "2026-04-18T17:17:22.211Z",
@@ -1489,7 +1489,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/scroll-snap-type",
-    "outputPath": "output/tailwind/docs/scroll-snap-type/index.md",
+    "outputPath": "tailwind/docs/scroll-snap-type/index.md",
     "title": "scroll-snap-type",
     "contentHash": "077c3dabe965d1a877b71eb113c44a613437f2ab087ca20b8547f71146380b25",
     "visitedAt": "2026-04-18T17:17:22.897Z",
@@ -1497,7 +1497,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/touch-action",
-    "outputPath": "output/tailwind/docs/touch-action/index.md",
+    "outputPath": "tailwind/docs/touch-action/index.md",
     "title": "touch-action",
     "contentHash": "3d73867504476035685f1c4057613f65109c9070553c3ae60ce9ffb534bbed9e",
     "visitedAt": "2026-04-18T17:17:55.196Z",
@@ -1505,7 +1505,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/will-change",
-    "outputPath": "output/tailwind/docs/will-change/index.md",
+    "outputPath": "tailwind/docs/will-change/index.md",
     "title": "will-change",
     "contentHash": "de0d020880779f43d8bd496df5be09ec869f76c3afd3ad1b7d26e120a48e0eb8",
     "visitedAt": "2026-04-18T17:17:57.182Z",
@@ -1513,7 +1513,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/user-select",
-    "outputPath": "output/tailwind/docs/user-select/index.md",
+    "outputPath": "tailwind/docs/user-select/index.md",
     "title": "user-select",
     "contentHash": "a6a62748db6e7bd7c924b781d212440af198d4168c3765840233c8c395c8156f",
     "visitedAt": "2026-04-18T17:17:57.503Z",
@@ -1521,7 +1521,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/fill",
-    "outputPath": "output/tailwind/docs/fill/index.md",
+    "outputPath": "tailwind/docs/fill/index.md",
     "title": "fill",
     "contentHash": "1a7533369d15607173e5e705c050eada10181c518abbf91a3acefb7e0931a6f9",
     "visitedAt": "2026-04-18T17:18:30.711Z",
@@ -1529,7 +1529,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/stroke-width",
-    "outputPath": "output/tailwind/docs/stroke-width/index.md",
+    "outputPath": "tailwind/docs/stroke-width/index.md",
     "title": "stroke-width",
     "contentHash": "d182d8e0a27cbb240dc702c6e65d88c4f03f956afc54458f12b76102b4109bd4",
     "visitedAt": "2026-04-18T17:18:31.720Z",
@@ -1537,7 +1537,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/stroke",
-    "outputPath": "output/tailwind/docs/stroke/index.md",
+    "outputPath": "tailwind/docs/stroke/index.md",
     "title": "stroke",
     "contentHash": "2c869adc304461a1e3a7926d1a67c085519a6d487bce0255608c5fe046f17552",
     "visitedAt": "2026-04-18T17:18:32.336Z",
@@ -1545,7 +1545,7 @@
   },
   {
     "url": "https://tailwindcss.com/docs/forced-color-adjust",
-    "outputPath": "output/tailwind/docs/forced-color-adjust/index.md",
+    "outputPath": "tailwind/docs/forced-color-adjust/index.md",
     "title": "forced-color-adjust",
     "contentHash": "4659759cf1bad6d74adb74ceb44bc3de678ec9c91a55771737ac246369bd68df",
     "visitedAt": "2026-04-18T17:19:05.397Z",

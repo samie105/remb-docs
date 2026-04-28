@@ -10,7 +10,10 @@ content_hash: "eff54e7f126155d638b955b56b4719fe51070f6430f05426b1a36c0bf92272ee"
 menu_path: ["PostgreSQL: Documentation: 18: MOVE"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
+nav_next: {"path": "postgres/docs/current/sql-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: NOTIFY"}
 ---
+
 ## Synopsis
 
 MOVE \[ _`direction`_ \] \[ FROM | IN \] _`cursor_name`_

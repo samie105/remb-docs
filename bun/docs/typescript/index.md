@@ -9,7 +9,10 @@ last_crawled_at: "2026-04-18T17:02:45.400Z"
 content_hash: "0b3719a30ec3903841e801fe3e86a23457d4e912c933fb56bb52ff1fd38e53b8"
 menu_path: ["TypeScript"]
 section_path: []
+nav_prev: {"path": "bun/docs/test/writing-tests/index.md", "title": "Writing tests"}
+nav_next: {"path": "bun/docs/typescript-6/index.md", "title": "TypeScript 6 and 7"}
 ---
+
 To install the TypeScript definitions for Bun’s built-in APIs, install `@types/bun`.
 
 terminal
@@ -69,4 +72,4 @@ bun init
 
 ## TypeScript 6 and 7
 
-If you’re using TypeScript 6.0 or later, you’ll also need to add `"types": ["bun"]` to your `compilerOptions`. See [TypeScript 6 and 7](https://bun.com/docs/typescript-6) for details.
+If you’re using TypeScript 6.0 or later, you’ll also need to add `"types": ["bun"]` to your `compilerOptions`. See [TypeScript 6 and 7](bun/docs/typescript-6/index.md) for details.

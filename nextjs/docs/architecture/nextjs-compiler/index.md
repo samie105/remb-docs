@@ -11,8 +11,9 @@ menu_path: ["Next.js Compiler"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/architecture/fast-refresh/index.md", "title": "Fast Refresh"}
+nav_next: {"path": "nextjs/docs/architecture/supported-browsers/index.md", "title": "Supported Browsers"}
 ---
-[Next.js Docs](/docs)[Architecture](/docs/architecture)Next.js Compiler
 
 # Next.js Compiler
 

@@ -10,7 +10,10 @@ content_hash: "0711db3f5fd905d23c6c99c5bb539d10799f6d0fe779450a4dc826faa7b19b6b"
 menu_path: ["PostgreSQL: Documentation: 18: 52.52. pg_statistic_ext"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/catalog-pg-statistic-ext-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.53.\u00a0pg_statistic_ext_data"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-statistic.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.51.\u00a0pg_statistic"}
 ---
+
 The catalog `pg_statistic_ext` holds definitions of extended planner statistics. Each row in this catalog corresponds to a _statistics object_ created with [`CREATE STATISTICS`](https://www.postgresql.org/docs/current/sql-createstatistics.html "CREATE STATISTICS").
 
 **Table 52.52. `pg_statistic_ext` Columns**

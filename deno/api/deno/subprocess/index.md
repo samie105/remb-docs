@@ -10,7 +10,10 @@ content_hash: "2ddbfb0b2c072b0f6780da8c1c610b11b361e83def1de13eabcbdc1eb8c2cdd0"
 menu_path: ["Subprocess - Deno documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/deno/runtime/index.md", "title": "Runtime - Deno documentation"}
+nav_next: {"path": "deno/api/deno/telemetry/index.md", "title": "Telemetry - Deno documentation"}
 ---
+
 c
 
 [Deno.ChildProcess](./././~/Deno.ChildProcess "Deno.ChildProcess")

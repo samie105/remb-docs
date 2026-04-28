@@ -10,7 +10,10 @@ content_hash: "bf2baaccfdb6ef1bdaa4970f175a094d8282c0cbb8de951f4e676e567b03303a"
 menu_path: ["PostgreSQL: Documentation: 18: 52.49. pg_shdescription"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/catalog-pg-shdepend.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.48.\u00a0pg_shdepend"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-shseclabel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.50.\u00a0pg_shseclabel"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shdescription.html "PostgreSQL devel - 52.49. pg_shdescription")
 
 The catalog `pg_shdescription` stores optional descriptions (comments) for shared database objects. Descriptions can be manipulated with the [`COMMENT`](https://www.postgresql.org/docs/current/sql-comment.html "COMMENT") command and viewed with psql's `\d` commands.

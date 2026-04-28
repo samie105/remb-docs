@@ -10,14 +10,10 @@ content_hash: "bac357b019b1f778cdcbe64e263510c32d28aad7a928b7e671bc8b8234c52ced"
 menu_path: ["Drizzle with Encore"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
 ---
-This tutorial demonstrates how to use **Drizzle ORM** with **Encore**, an open source backend framework with built-in infrastructure automation and observability.
 
-This guide assumes familiarity with:
-
--   You should have the Encore CLI installed. You can install it with:
-
-```bash
 # macOS
 brew install encoredev/tap/encore
 
@@ -28,7 +24,7 @@ curl -L https://encore.dev/install.sh | bash
 iwr https://encore.dev/install.ps1 | iex
 ```
 
--   You should have installed Drizzle ORM and [Drizzle kit](https://orm.drizzle.team/docs/kit-overview). You can do this by running the following command:
+-   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -195,4 +191,4 @@ Migrations are automatically applied when you run your Encore application. You d
 
 -   [Encore Documentation](https://encore.dev/docs)
 -   [Encore Drizzle Guide](https://encore.dev/docs/ts/develop/orms/drizzle)
--   [Drizzle ORM Documentation](https://orm.drizzle.team/docs/overview)
+-   [Drizzle ORM Documentation](drizzle/docs/overview/index.md)

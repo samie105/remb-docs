@@ -10,8 +10,11 @@ content_hash: "3cad93c94d98bbed3f039cefe095162c18ed1d96174828fde8eef01518617b3e"
 menu_path: ["drizzle-kit pull"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/drizzle-kit-push/index.md", "title": "drizzle-kit push"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-export/index.md", "title": "drizzle-kit export"}
 ---
-`drizzle-kit pull` lets you literally pull(introspect) your existing database schema and generate `schema.ts` drizzle schema file, it is designed to cover [database first](https://orm.drizzle.team/docs/migrations) approach of Drizzle migrations.
+
+`drizzle-kit pull` lets you literally pull(introspect) your existing database schema and generate `schema.ts` drizzle schema file, it is designed to cover [database first](drizzle/docs/migrations/index.md) approach of Drizzle migrations.
 
 How it works under the hood?
 
@@ -50,7 +53,7 @@ It is a great approach if you need to manage database schema outside of your Typ
 
 * * *
 
-`drizzle-kit pull` requires you to specify `dialect` and either database connection `url` or `user:password@host:port/db` params, you can provide them either via [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) config file or via CLI options:
+`drizzle-kit pull` requires you to specify `dialect` and either database connection `url` or `user:password@host:port/db` params, you can provide them either via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file or via CLI options:
 
 With config file
 
@@ -116,7 +119,7 @@ bunx drizzle-kit pull --config=drizzle-prod.config.ts
 IMPORTANT
 
 **Expo SQLite** and **OP SQLite** are on-device(per-user) databases, there’s no way to `pull` database schema from there.  
-For embedded databases Drizzle provides **embedded migrations** - check out our [get started](https://orm.drizzle.team/docs/get-started/expo-new) guide.
+For embedded databases Drizzle provides **embedded migrations** - check out our [get started](drizzle/docs/get-started/expo-new/index.md) guide.
 
 Drizzle Kit does not come with a pre-bundled database driver, it will automatically pick available database driver from your current project based on the `dialect` - [see discussion](https://github.com/drizzle-team/drizzle-orm/discussions/2203).
 
@@ -237,7 +240,7 @@ npx drizzle-kit push
 
 ### Extended list of configurations[](#extended-list-of-configurations)
 
-We recommend configuring `drizzle-kit` through [drizzle.config.ts](https://orm.drizzle.team/docs/drizzle-config-file) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
+We recommend configuring `drizzle-kit` through [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) file, yet you can provide all configuration options through CLI if necessary, e.g. in CI/CD pipelines, etc.
 
 |  |  |  |
 | --- | --- | --- |

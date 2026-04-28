@@ -10,7 +10,10 @@ content_hash: "10bf06c210041d6942c6b3131069c2bea088b25bca432546479ff57be074974c"
 menu_path: ["PostgreSQL: Documentation: 18: 51.4. The PostgreSQL Rule System"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/rowtypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.16.\u00a0Composite Types"}
+nav_next: {"path": "postgres/docs/current/rules-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.5.\u00a0Rules and Privileges"}
 ---
+
 PostgreSQL supports a powerful _rule system_ for the specification of _views_ and ambiguous _view updates_. Originally the PostgreSQL rule system consisted of two implementations:
 
 -   The first one worked using _row level_ processing and was implemented deep in the _executor_. The rule system was called whenever an individual row had been accessed. This implementation was removed in 1995 when the last official release of the Berkeley Postgres project was transformed into Postgres95.

@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/testing/jest/index.md", "title": "How to set up Jest with Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/testing/vitest/index.md", "title": "How to set up Vitest with Next.js"}
 ---
-[Guides](/docs/app/guides)[Testing](/docs/app/guides/testing)Playwright
 
 # How to set up Playwright with Next.js
 

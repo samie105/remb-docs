@@ -11,8 +11,9 @@ menu_path: ["No img element"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/no-html-link-for-pages/index.md", "title": "No HTML link for pages"}
+nav_next: {"path": "nextjs/docs/messages/no-page-custom-font/index.md", "title": "No Page Custom Font"}
 ---
-[Docs](/docs)[Errors](/docs)No img element
 
 # No img element
 

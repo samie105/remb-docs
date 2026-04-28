@@ -9,63 +9,9 @@ last_crawled_at: "2026-04-18T16:38:32.131Z"
 content_hash: "5731032b61d6544ca154af1e6f23db4819d0d5e5525405f41b9bbd3c0e5af686"
 menu_path: ["Feedback"]
 section_path: []
+nav_prev: {"path": "bun/docs/bundler/standalone-html/index.md", "title": "Standalone HTML"}
+nav_next: {"path": "bun/docs/guides/index.md", "title": "Guides"}
 ---
-[Skip to main content](#content-area)
-
-[Bun home page![light logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-dark.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=3f55cd23822028e40658b192c927f3e4)![dark logo](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/logo/logo-with-wordmark-light.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=8a0c5928d9dc3631f0d33e17c257e2ec)](/docs)
-
-[Runtime
-
-](/docs)[Package Manager
-
-](/docs/pm/cli/install)[Bundler
-
-](/docs/bundler)[Test Runner
-
-](/docs/test)[Guides
-
-](/docs/guides)[Reference
-
-](https://bun.com/reference)[Blog
-
-](https://bun.com/blog)[Feedback
-
-](/docs/feedback)
-
-Whether you’ve found a bug, have a performance issue, or just want to suggest an improvement, here’s how you can open a helpful issue:
-
-For general questions, please join our [Discord](https://bun.com/discord).
-
-## 
-
-[​
-
-](#reporting-issues)
-
-Reporting Issues
-
-1
-
-[
-
-](#)
-
-Upgrade Bun
-
-Try upgrading Bun to the latest version with `bun upgrade`. This might fix your problem without having to open an issue.
-
-terminal
-
-```
-bun upgrade
-```
-
-You can also try the latest canary release, which includes the most recent changes and bug fixes that haven’t been released in a stable version yet.
-
-terminal
-
-```
-bun upgrade --canary
 
 # To revert back to the stable
 bun upgrade --stable

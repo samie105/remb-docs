@@ -10,15 +10,9 @@ content_hash: "54d63c312cf565c2f89daf47d97b7aad825777b2cc3bcf03b7b7372f0b740bcf"
 menu_path: ["list-style-type"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/list-style-position/index.md", "title": "list-style-position"}
+nav_next: {"path": "tailwind/docs/text-align/index.md", "title": "text-align"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Typography
-2.  list-style-type
-
-Typography
 
 # list-style-type
 

@@ -11,8 +11,9 @@ menu_path: ["trailingSlash"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/taint/index.md", "title": "taint"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/transpilePackages/index.md", "title": "transpilePackages"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)trailingSlash
 
 # trailingSlash
 

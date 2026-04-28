@@ -11,8 +11,9 @@ menu_path: ["mdxRs"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/logging/index.md", "title": "logging"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/onDemandEntries/index.md", "title": "onDemandEntries"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)mdxRs
 
 # mdxRs
 

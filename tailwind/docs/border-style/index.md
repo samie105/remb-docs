@@ -10,15 +10,9 @@ content_hash: "1b45d5e896fece20c6941b2dee32a9b1a967c9b8178d943babf51fb3f2ba72d9"
 menu_path: ["border-style"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/border-color/index.md", "title": "border-color"}
+nav_next: {"path": "tailwind/docs/outline-width/index.md", "title": "outline-width"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Borders
-2.  border-style
-
-Borders
 
 # border-style
 

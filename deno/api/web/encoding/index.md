@@ -10,7 +10,10 @@ content_hash: "74c52aebb36539b1b19fa7b61e2448fa53b338f81e94011de7d4a5c9a7c8b0af"
 menu_path: ["Encoding - Web documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/web/crypto/index.md", "title": "Crypto - Web documentation"}
+nav_next: {"path": "deno/api/web/events/index.md", "title": "Events - Web documentation"}
 ---
+
 f
 
 [atob](./././~/atob "atob")

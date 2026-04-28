@@ -9,27 +9,10 @@ last_crawled_at: "2026-04-18T16:57:55.673Z"
 content_hash: "47f828bd50d781a6332baaad2bbcb88d32a0bdbde8ee14b60ce6e3e90e574088"
 menu_path: ["Isolated installs"]
 section_path: []
+nav_prev: {"path": "bun/docs/pm/global-cache/index.md", "title": "Global cache"}
+nav_next: {"path": "bun/docs/pm/lifecycle/index.md", "title": "Lifecycle scripts"}
 ---
-Bun provides an alternative package installation strategy called **isolated installs** that creates strict dependency isolation similar to pnpm’s approach. This mode prevents phantom dependencies and ensures reproducible, deterministic builds. This is the default installation strategy for **new** workspace/monorepo projects (with `configVersion = 1` in the lockfile). Existing projects continue using hoisted installs unless explicitly configured.
 
-## What are isolated installs?
-
-Isolated installs create a non-hoisted dependency structure where packages can only access their explicitly declared dependencies. This differs from the traditional “hoisted” installation strategy used by npm and Yarn, where dependencies are flattened into a shared `node_modules` directory.
-
-### Key benefits
-
-*   **Prevents phantom dependencies** — Packages cannot accidentally import dependencies they haven’t declared
-*   **Deterministic resolution** — Same dependency tree regardless of what else is installed
-*   **Better for monorepos** — Workspace isolation prevents cross-contamination between packages
-*   **Reproducible builds** — More predictable resolution behavior across environments
-
-### Command line
-
-Use the `--linker` flag to specify the installation strategy:
-
-terminal
-
-```
 # Use isolated installs
 bun install --linker isolated
 
@@ -284,6 +267,6 @@ The main difference is that Bun uses symlinks in `node_modules` while pnpm uses 
 *   Working in environments where symlinks aren’t well supported
 *   You prefer the simpler traditional npm behavior
 
-*   [Package manager > Workspaces](https://bun.com/docs/pm/workspaces) — Monorepo workspace management
-*   [Package manager > Lockfile](https://bun.com/docs/pm/lockfile) — Understanding Bun’s lockfile format
-*   [CLI > install](https://bun.com/docs/pm/cli/install) — Complete `bun install` command reference
+*   [Package manager > Workspaces](bun/docs/pm/workspaces/index.md) — Monorepo workspace management
+*   [Package manager > Lockfile](bun/docs/pm/lockfile/index.md) — Understanding Bun’s lockfile format
+*   [CLI > install](bun/docs/pm/cli/install/index.md) — Complete `bun install` command reference

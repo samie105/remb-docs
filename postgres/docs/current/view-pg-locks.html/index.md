@@ -10,7 +10,10 @@ content_hash: "a4ee2d4dad72af4b3c7745efc950e24c9e5007a4dc3f9bdcff16e5e2c4d6ac1f"
 menu_path: ["PostgreSQL: Documentation: 18: 53.13. pg_locks"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/view-pg-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.12.\u00a0pg_indexes"}
+nav_next: {"path": "postgres/docs/current/view-pg-matviews.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.14.\u00a0pg_matviews"}
 ---
+
 The view `pg_locks` provides access to information about the locks held by active processes within the database server. See [Chapter 13](https://www.postgresql.org/docs/current/mvcc.html "Chapter 13. Concurrency Control") for more discussion of locking.
 
 `pg_locks` contains one row per active lockable object, requested lock mode, and relevant process. Thus, the same lockable object might appear many times, if multiple processes are holding or waiting for locks on it. However, an object that currently has no locks on it will not appear at all.

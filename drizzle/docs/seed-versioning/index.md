@@ -10,7 +10,10 @@ content_hash: "3fe449bc990f5672ef654d632f020fdfd5e5576e68f7e04ce49709ae2d442c38"
 menu_path: ["Versioning"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "drizzle/docs/seed-functions/index.md", "title": "Generators"}
+nav_next: {"path": "drizzle/docs/rqb-v2/index.md", "title": "Drizzle Queries"}
 ---
+
 `drizzle-seed` uses versioning to manage outputs for static and dynamic data. To ensure true determinism, ensure that values remain unchanged when using the same `seed` number. If changes are made to static data sources or dynamic data generation logic, the version will be updated, allowing you to choose between sticking with the previous version or using the latest.
 
 You can upgrade to the latest `drizzle-seed` version for new features, such as additional generators, while maintaining deterministic outputs with a previous version if needed. This is particularly useful when you need to rely on existing deterministic data while accessing new functionality.

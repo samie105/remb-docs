@@ -11,7 +11,10 @@ menu_path: ["Customizing migrations"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","Before","After","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","Before","After","npm","pnpm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/baselining/index.md", "title": "Baselining a database"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md", "title": "Development and production"}
 ---
+
 Workflows
 
 How to edit a migration file before applying it to avoid data loss in production.

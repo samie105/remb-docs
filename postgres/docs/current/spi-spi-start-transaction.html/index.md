@@ -10,7 +10,10 @@ content_hash: "8b8f95d1fb935135b75a7e89a15f75de1ca1eae48c3f712bdc5d814edefda3c1"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_start_transaction"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/spi-spi-scroll-cursor-move.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_scroll_cursor_move"}
+nav_next: {"path": "postgres/docs/current/spi-spi-unregister-relation.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_unregister_relation"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/spi-spi-start-transaction.html "PostgreSQL devel - SPI_start_transaction")
 
 Unsupported versions: [13](https://www.postgresql.org/docs/13/spi-spi-start-transaction.html "PostgreSQL 13 - SPI_start_transaction") / [12](https://www.postgresql.org/docs/12/spi-spi-start-transaction.html "PostgreSQL 12 - SPI_start_transaction") / [11](https://www.postgresql.org/docs/11/spi-spi-start-transaction.html "PostgreSQL 11 - SPI_start_transaction")

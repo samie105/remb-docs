@@ -11,8 +11,9 @@ menu_path: ["Designing view transitions"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/guides/videos/index.md", "title": "How to use and optimize videos"}
+nav_next: {"path": "nextjs/docs/app/api-reference/index.md", "title": "API Reference"}
 ---
-[App Router](/docs/app)[Guides](/docs/app/guides)View transitions
 
 # Designing view transitions
 

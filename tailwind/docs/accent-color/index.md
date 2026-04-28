@@ -10,15 +10,9 @@ content_hash: "983ce882073753beba1574ad8aa7387a9be7ce1d104b89a8a4db418c59a2113a"
 menu_path: ["accent-color"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "tailwind/docs/translate/index.md", "title": "translate"}
+nav_next: {"path": "tailwind/docs/appearance/index.md", "title": "appearance"}
 ---
-[](/)
-
-[Docs](/docs)[Blog](/blog)[Showcase](/showcase)[Sponsor](/sponsor)[Plus](/plus?ref=top)[](https://github.com/tailwindlabs/tailwindcss)
-
-1.  Interactivity
-2.  accent-color
-
-Interactivity
 
 # accent-color
 

@@ -10,7 +10,10 @@ content_hash: "5e10bd14304f47f04ab46d1087afbbcbeb7cc10ba01950ee39b71c0689770c66"
 menu_path: ["PostgreSQL: Documentation: 18: 41.5. Basic Statements"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
+nav_next: {"path": "postgres/docs/current/plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
 ---
+
 In this section and the following ones, we describe all the statement types that are explicitly understood by PL/pgSQL. Anything not recognized as one of these statement types is presumed to be an SQL command and is sent to the main database engine to execute, as described in [Section 41.5.2](https://www.postgresql.org/docs/current/plpgsql-statements.html#PLPGSQL-STATEMENTS-GENERAL-SQL "41.5.2. Executing SQL Commands").
 
 ### 41.5.1. Assignment [#](#PLPGSQL-STATEMENTS-ASSIGNMENT)

@@ -10,16 +10,19 @@ content_hash: "014c6aa0fd96c75c8ed8995e0ea6bf52738a4ca9ed6a67c19000809cf98439e2"
 menu_path: ["Database Features"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "prisma/docs/orm/reference/environment-variables-reference/index.md", "title": "Environment Variables"}
+nav_next: {"path": "prisma/docs/orm/reference/supported-databases/index.md", "title": "Supported databases"}
 ---
+
 Database features supported in Prisma ORM
 
 This page gives an overview of the features which are provided by the databases that Prisma ORM supports. Additionally, it explains how each of these features can be used in Prisma ORM with pointers to further documentation.
 
-This section describes which database features exist on the relational databases that are currently supported by Prisma ORM. The **Prisma schema** column indicates how a certain feature can be represented in the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema/overview) and links to its documentation. Note that database features can be used in **Prisma Client** even though they might not yet be representable in the Prisma schema.
+This section describes which database features exist on the relational databases that are currently supported by Prisma ORM. The **Prisma schema** column indicates how a certain feature can be represented in the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) and links to its documentation. Note that database features can be used in **Prisma Client** even though they might not yet be representable in the Prisma schema.
 
 ### [Constraints](#constraints)
 
-> \* [Caveats apply when using the `UNIQUE` constraint with Microsoft SQL Server](https://www.prisma.io/docs/orm/core-concepts/supported-databases/sql-server#common-considerations) † Only supported in MySQL in [version 8 and higher](https://dev.mysql.com/doc/refman/8.0/en/create-table-check-constraints.html). ‡ Only supported in PostgreSQL.
+> \* [Caveats apply when using the `UNIQUE` constraint with Microsoft SQL Server](prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md#common-considerations) † Only supported in MySQL in [version 8 and higher](https://dev.mysql.com/doc/refman/8.0/en/create-table-check-constraints.html). ‡ Only supported in PostgreSQL.
 
 ### [Referential Actions (Delete and Update behaviors for foreign key references)](#referential-actions-delete-and-update-behaviors-for-foreign-key-references)
 
@@ -37,9 +40,9 @@ This section describes which database features exist on the relational databases
 
 | Index | Supported | Prisma schema | Prisma Client | Prisma Migrate |
 | --- | --- | --- | --- | --- |
-| `UNIQUE` | ✔️ | [`@unique` and `@@unique`](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-a-unique-field) | ✔️ | ✔️ |
-| `USING` | PostgreSQL only | [`type`](https://www.prisma.io/docs/orm/prisma-schema/data-model/indexes#configuring-the-access-type-of-indexes-with-type-postgresql) | ✔️ | ✔️ |
-| `WHERE` | ✔️ | [`where`](https://www.prisma.io/docs/orm/prisma-schema/data-model/indexes#configuring-partial-indexes-with-where) (Preview) | ✔️ | ✔️ |
+| `UNIQUE` | ✔️ | [`@unique` and `@@unique`](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-a-unique-field) | ✔️ | ✔️ |
+| `USING` | PostgreSQL only | [`type`](prisma/docs/orm/prisma-schema/data-model/indexes/index.md#configuring-the-access-type-of-indexes-with-type-postgresql) | ✔️ | ✔️ |
+| `WHERE` | ✔️ | [`where`](prisma/docs/orm/prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) (Preview) | ✔️ | ✔️ |
 | `(expression)` | ✔️ | Not yet | ✔️ | Not yet |
 | `INCLUDE` | PostgreSQL and Microsoft SQL Server only | Not yet | ✔️ | Not yet |
 
@@ -61,9 +64,9 @@ Algorithm specified via `USING`:
 
 | Feature | Supported | Prisma schema | Prisma Client | Prisma Migrate |
 | --- | --- | --- | --- | --- |
-| Autoincrementing IDs | ✔️ | [`autoincrement()`](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-a-default-value) | ✔️ | ✔️ |
+| Autoincrementing IDs | ✔️ | [`autoincrement()`](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-a-default-value) | ✔️ | ✔️ |
 | Arrays | PostgreSQL only | [`[]`](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#type-modifiers) | ✔️ | ✔️ |
-| Enums | ✔️\*† | [`enum`](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-enums) | ✔️ | ✔️ |
+| Enums | ✔️\*† | [`enum`](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-enums) | ✔️ | ✔️ |
 | Native database types | ✔️ | ✔️ | ✔️ | Not yet |
 | SQL Views | ✔️ | Not yet | Not yet | Not yet |
 | JSON support | ✔️† | ✔️ | ✔️ | ✔️ |
@@ -88,10 +91,10 @@ The following table lists common MongoDB features and describes the level of sup
 | Indexes | ✔️ with caveats | Indexes can only be introspected if the field they refer to includes at least some data. |
 | Autoincrementing IDs | No |  |
 | Compound IDs | No | MongoDB does not support composite IDs (`@@id`) |
-| Generated `ObjectId` | ✔️ | See: [Defining IDs for MongoDB](https://www.prisma.io/docs/orm/prisma-schema/data-model/models#defining-ids-in-mongodb) |
+| Generated `ObjectId` | ✔️ | See: [Defining IDs for MongoDB](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-ids-in-mongodb) |
 | Arrays | ✔️ |  |
 | Enums | ✔️ | Implemented at Prisma ORM level |
-| Native database types | ✔️ | See: [Field mapping reference](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#model-field-scalar-types) |
+| Native database types | ✔️ | See: [Field mapping reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) |
 | JSON support | ✔️ | Advanced `Json` field filtering is not yet supported. |
 | DBrefs | No |  |
 | Change streams | No |  |

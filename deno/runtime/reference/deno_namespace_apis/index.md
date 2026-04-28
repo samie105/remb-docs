@@ -10,7 +10,10 @@ content_hash: "81f2c82a17705954922fc1cbd0a10a16f15f78308e6f434ee2d616ff0b6be2ec"
 menu_path: ["Deno Namespace APIs"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/cli/env_variables/index.md", "title": "Environment variables"}
+nav_next: {"path": "deno/runtime/reference/node_apis/index.md", "title": "Node APIs"}
 ---
+
 **On this page**
 
 -   [API Documentation](#api-documentation)

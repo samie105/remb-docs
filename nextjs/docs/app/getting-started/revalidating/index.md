@@ -11,8 +11,9 @@ menu_path: ["Revalidating"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/caching/index.md", "title": "Caching"}
+nav_next: {"path": "nextjs/docs/app/getting-started/error-handling/index.md", "title": "Error Handling"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Revalidating
 
 # Revalidating
 

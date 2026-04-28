@@ -10,7 +10,10 @@ content_hash: "54f10d70c8be769dd0fb33bf783f4db741baafbac82c5b27d37a5f57a7cdebf2"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 38. Event Triggers"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "postgres/docs/current/server-programming.html/index.md", "title": "Part\u00a0V.\u00a0Server Programming"}
+nav_next: {"path": "postgres/docs/current/plpgsql.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a041.\u00a0PL/pgSQL \u2014 SQL Procedural Language"}
 ---
+
 Development Versions: [devel](https://www.postgresql.org/docs/devel/event-triggers.html "PostgreSQL devel - Chapter 38. Event Triggers")
 
 | Chapter 38. Event Triggers |

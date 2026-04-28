@@ -10,7 +10,10 @@ content_hash: "e4b8d4d7d5aa76af1f44feb24081c69813a349821b2c97926984afe55ce1eb1d"
 menu_path: ["readline - Node documentation"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/api/node/querystring/index.md", "title": "querystring - Node documentation"}
+nav_next: {"path": "deno/api/node/readline/promises/index.md", "title": "readline/promises - Node documentation"}
 ---
+
 ### Usage in Deno
 
 ```typescript

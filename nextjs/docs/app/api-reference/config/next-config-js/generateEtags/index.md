@@ -11,8 +11,9 @@ menu_path: ["generateEtags"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateBuildId/index.md", "title": "generateBuildId"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/headers/index.md", "title": "headers"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)generateEtags
 
 # generateEtags
 

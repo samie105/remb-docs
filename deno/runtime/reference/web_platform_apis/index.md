@@ -10,7 +10,9 @@ content_hash: "cb6770c524ba26e343452f48381e145071dd896f3116dc1fd5cb371af0e03570"
 menu_path: ["Web Platform APIs"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/xml/index.md", "title": "@std/xml"}
 ---
+
 **On this page**
 
 -   [fetch](#fetch)

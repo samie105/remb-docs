@@ -11,8 +11,9 @@ menu_path: ["Pages and Layouts"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/index.md", "title": "Routing"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/dynamic-routes/index.md", "title": "Dynamic Routes"}
 ---
-[Building Your Application](/docs/pages/building-your-application)[Routing](/docs/pages/building-your-application/routing)Pages and Layouts
 
 # Pages and Layouts
 

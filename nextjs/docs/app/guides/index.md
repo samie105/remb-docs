@@ -11,8 +11,9 @@ menu_path: ["Guides"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/upgrading/index.md", "title": "Upgrading"}
+nav_next: {"path": "nextjs/docs/app/guides/ai-agents/index.md", "title": "How to set up your Next.js project for AI coding agents"}
 ---
-[Next.js Docs](/docs)[App Router](/docs/app)Guides
 
 # Guides
 

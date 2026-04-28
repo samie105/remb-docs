@@ -9,15 +9,10 @@ last_crawled_at: "2026-04-18T16:58:05.151Z"
 content_hash: "2280bb4ccf22d1255618172b817a2d3d6e96ee3db387ce3cb416ad67ae6bddf2"
 menu_path: ["Scopes and registries"]
 section_path: []
+nav_prev: {"path": "bun/docs/pm/overrides/index.md", "title": "Overrides and resolutions"}
+nav_next: {"path": "bun/docs/pm/security-scanner-api/index.md", "title": "Security Scanner API"}
 ---
-*   [.npmrc](#npmrc)
 
-The default registry is `registry.npmjs.org`. This can be globally configured in `bunfig.toml`:
-
-bunfig.toml
-
-```
-[install]
 # set default registry as a string
 registry = "https://registry.npmjs.org"
 # set a token
@@ -45,6 +40,6 @@ bunfig.toml
 
 ### `.npmrc`
 
-Bun also reads `.npmrc` files, [learn more](https://bun.com/docs/pm/npmrc).
+Bun also reads `.npmrc` files, [learn more](bun/docs/pm/npmrc/index.md).
 
 Was this page helpful?

@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "nextjs/docs/app/getting-started/project-structure/index.md", "title": "Project structure and organization"}
 ---
-[App Router](/docs/app)[Getting Started](/docs/app/getting-started)Installation
 
 # Installation
 

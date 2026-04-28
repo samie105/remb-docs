@@ -10,7 +10,10 @@ content_hash: "182d79029a627b402796eea406e06de4b676643e92bfb635509e5a6935a48fed"
 menu_path: ["Documentation Tests"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/jsx/index.md", "title": "JSX"}
+nav_next: {"path": "deno/runtime/reference/bundling/index.md", "title": "Bundling"}
 ---
+
 Deno supports both type-checking evaluating your documentation examples.
 
 This makes sure that examples within your documentation are up to date and working.

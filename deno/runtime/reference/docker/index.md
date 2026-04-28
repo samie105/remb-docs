@@ -10,36 +10,9 @@ content_hash: "a3a4fef144e306cc1c5062b55518e03ebf4e7db15572546bd992743706572ef2"
 menu_path: ["Deno and Docker"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/lsp_integration/index.md", "title": "Language Server Integration"}
+nav_next: {"path": "deno/runtime/contributing/index.md", "title": "Contributing and support"}
 ---
-**On this page**
-
--   [Using Deno with Docker](#using-deno-with-docker)
-    -   [Best Practices](#best-practices)
-        -   [Use Multi-stage Builds](#use-multi-stage-builds)
-        -   [Permission Flags](#permission-flags)
-        -   [Development Container](#development-container)
-    -   [Common Issues and Solutions](#common-issues-and-solutions)
-    -   [Example .dockerignore](#example-.dockerignore)
-    -   [Available Docker Tags](#available-docker-tags)
-    -   [Environment Variables](#environment-variables)
-    -   [Running Tests in Docker](#running-tests-in-docker)
-    -   [Using Docker Compose](#using-docker-compose)
-    -   [Health Checks](#health-checks)
-    -   [Common Development Workflow](#common-development-workflow)
-    -   [Security Considerations](#security-considerations)
--   [Working with Workspaces in Docker](#working-with-workspaces-in-docker)
-    -   [1\. Full Workspace Containerization](#1.-full-workspace-containerization)
-    -   [2\. Minimal Workspace Containerization](#2.-minimal-workspace-containerization)
-    -   [Best Practices](#best-practices-1)
-
-## Using Deno with Docker
-
-Deno provides [official Docker files](https://github.com/denoland/deno_docker) and [images](https://hub.docker.com/r/denoland/deno).
-
-To use the official image, create a `Dockerfile` in your project directory:
-
-```dockerfile
-FROM denoland/deno:latest
 
 # Create working directory
 WORKDIR /app

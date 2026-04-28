@@ -11,8 +11,9 @@ menu_path: ["Routing with @next/routing"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/testing-adapters/index.md", "title": "Testing Adapters"}
+nav_next: {"path": "nextjs/docs/app/api-reference/adapters/implementing-ppr-in-an-adapter/index.md", "title": "Implementing PPR in an Adapter"}
 ---
-[API Reference](/docs/app/api-reference)[Adapters](/docs/app/api-reference/adapters)Routing with @next/routing
 
 # Routing with @next/routing
 

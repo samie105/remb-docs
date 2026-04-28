@@ -10,7 +10,10 @@ content_hash: "31dc39ae09505f165cd04f33127b198c342cb32d3199fa288c40a52394552cb8"
 menu_path: ["@std/expect"]
 section_path: []
 content_language: "en"
+nav_prev: {"path": "deno/runtime/reference/std/encoding/index.md", "title": "@std/encoding"}
+nav_next: {"path": "deno/runtime/reference/std/fmt/index.md", "title": "@std/fmt"}
 ---
+
 **On this page**
 
 -   [Overview](#overview)

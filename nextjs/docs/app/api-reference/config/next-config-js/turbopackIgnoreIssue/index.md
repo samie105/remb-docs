@@ -11,8 +11,9 @@ menu_path: ["turbopack.ignoreIssue"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopackFileSystemCache/index.md", "title": "Turbopack FileSystem Caching"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/typedRoutes/index.md", "title": "typedRoutes"}
 ---
-[Configuration](/docs/app/api-reference/config)[next.config.js](/docs/app/api-reference/config/next-config-js)turbopack.ignoreIssue
 
 # turbopack.ignoreIssue
 

@@ -11,8 +11,9 @@ menu_path: ["cookies"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/connection/index.md", "title": "connection"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/draft-mode/index.md", "title": "draftMode"}
 ---
-[API Reference](/docs/app/api-reference)[Functions](/docs/app/api-reference/functions)cookies
 
 # cookies
 

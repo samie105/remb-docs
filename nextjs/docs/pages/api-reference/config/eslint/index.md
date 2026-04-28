@@ -12,8 +12,9 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/typescript/index.md", "title": "TypeScript"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/cli/index.md", "title": "CLI"}
 ---
-[API Reference](/docs/pages/api-reference)[Configuration](/docs/pages/api-reference/config)ESLint
 
 # ESLint
 

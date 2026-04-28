@@ -11,8 +11,9 @@ menu_path: ["Webpack 5 Adoption"]
 section_path: []
 version: "latest"
 content_language: "en"
+nav_prev: {"path": "nextjs/docs/messages/url-deprecated/index.md", "title": "`url` is deprecated"}
+nav_next: {"path": "nextjs/docs/pages/index.md", "title": "Pages Router"}
 ---
-[Docs](/docs)[Errors](/docs)Webpack 5 Adoption
 
 # Webpack 5 Adoption
 
