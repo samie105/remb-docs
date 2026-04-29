@@ -10,8 +10,8 @@ content_hash: "795366668c5af2f5505c5dc085513ea24bc6142e4fc5eb1b652d4722a0fb7fb3"
 menu_path: ["Wasm - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/web/url/index.md", "title": "URL - Web documentation"}
-nav_next: {"path": "deno/api/web/websockets/index.md", "title": "WebSockets - Web documentation"}
+nav_prev: {"path": "../url/index.md", "title": "URL - Web documentation"}
+nav_next: {"path": "../websockets/index.md", "title": "WebSockets - Web documentation"}
 ---
 
 c

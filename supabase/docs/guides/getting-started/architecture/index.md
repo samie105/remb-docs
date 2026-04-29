@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:02.897Z"
 content_hash: "d8ad2c8708c533d15a2f8f2506c061182211e5b5736691074420e57b88b42fd9"
 menu_path: ["Start with Supabase","Start with Supabase","Architecture","Architecture"]
 section_path: ["Start with Supabase","Start with Supabase","Architecture","Architecture"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/ai-skills/index.md", "title": "Agent Skills"}
-nav_next: {"path": "supabase/docs/guides/getting-started/byo-mcp/index.md", "title": "Deploy MCP servers"}
+nav_prev: {"path": "../ai-skills/index.md", "title": "Agent Skills"}
+nav_next: {"path": "../byo-mcp/index.md", "title": "Deploy MCP servers"}
 ---
 
 # 

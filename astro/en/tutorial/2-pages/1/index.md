@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:17.610Z"
 content_hash: "633bceb3caa61a18c5dcecae9347fc90526ebaef15cc2f59a375511446ef512f"
 menu_path: ["Create your first Astro page"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/1-setup/5/index.md", "title": "Deploy your site to the web"}
-nav_next: {"path": "astro/en/tutorial/2-pages/2/index.md", "title": "Write your first Markdown blog post"}
+nav_prev: {"path": "../../1-setup/5/index.md", "title": "Deploy your site to the web"}
+nav_next: {"path": "../2/index.md", "title": "Write your first Markdown blog post"}
 ---
 
 # Create your first Astro page

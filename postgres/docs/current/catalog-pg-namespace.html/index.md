@@ -10,8 +10,8 @@ content_hash: "b30cadeee0e8e8967945beb66c90c5be0ae8ebad8f3a0b5eb3e636be4a7d0834"
 menu_path: ["PostgreSQL: Documentation: 18: 52.32. pg_namespace"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/btree.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.1.\u00a0B-Tree Indexes"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
+nav_prev: {"path": "../btree.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.1.\u00a0B-Tree Indexes"}
+nav_next: {"path": "../catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-namespace.html "PostgreSQL devel - 52.32. pg_namespace")

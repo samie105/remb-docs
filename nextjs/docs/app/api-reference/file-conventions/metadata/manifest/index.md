@@ -11,8 +11,8 @@ menu_path: ["manifest.json"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/app-icons/index.md", "title": "favicon, icon, and apple-icon"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
+nav_prev: {"path": "../app-icons/index.md", "title": "favicon, icon, and apple-icon"}
+nav_next: {"path": "../opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
 ---
 
 # manifest.json

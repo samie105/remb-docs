@@ -11,8 +11,8 @@ menu_path: ["Supported Browsers"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/architecture/nextjs-compiler/index.md", "title": "Next.js Compiler"}
-nav_next: {"path": "nextjs/docs/community/index.md", "title": "Next.js Community"}
+nav_prev: {"path": "../nextjs-compiler/index.md", "title": "Next.js Compiler"}
+nav_next: {"path": "../../community/index.md", "title": "Next.js Community"}
 ---
 
 # Supported Browsers

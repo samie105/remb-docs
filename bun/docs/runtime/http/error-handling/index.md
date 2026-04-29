@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:01.690Z"
 content_hash: "a6cb6ae05af725fb6136c815ffbc5efa454148fdccc009878f5a737cfad9c3e5"
 menu_path: ["Error Handling"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/http/cookies/index.md", "title": "Cookies"}
-nav_next: {"path": "bun/docs/runtime/http/metrics/index.md", "title": "Metrics"}
+nav_prev: {"path": "../cookies/index.md", "title": "Cookies"}
+nav_next: {"path": "../metrics/index.md", "title": "Metrics"}
 ---
 
 [Skip to main content](#content-area)

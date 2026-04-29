@@ -10,8 +10,8 @@ content_hash: "c1bf4f9699afe25b02866cd0a1799832c73c729b253cb366402db6a09bd579ae"
 menu_path: ["PostgreSQL: Documentation: 18: E.3. Release 18.1"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/regress-variant.html/index.md", "title": "PostgreSQL: Documentation: 18: 31.3.\u00a0Variant Comparison Files"}
-nav_next: {"path": "postgres/docs/current/release-18-2.html/index.md", "title": "PostgreSQL: Documentation: 18: E.2.\u00a0Release 18.2"}
+nav_prev: {"path": "../regress-variant.html/index.md", "title": "PostgreSQL: Documentation: 18: 31.3.\u00a0Variant Comparison Files"}
+nav_next: {"path": "../release-18-2.html/index.md", "title": "PostgreSQL: Documentation: 18: E.2.\u00a0Release 18.2"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

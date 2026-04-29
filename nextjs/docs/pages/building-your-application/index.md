@@ -11,8 +11,8 @@ menu_path: ["Building Your Application"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/getting-started/deploying/index.md", "title": "How to deploy your Next.js application"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/index.md", "title": "Routing"}
+nav_prev: {"path": "../getting-started/deploying/index.md", "title": "How to deploy your Next.js application"}
+nav_next: {"path": "routing/index.md", "title": "Routing"}
 ---
 
 # Building Your Application

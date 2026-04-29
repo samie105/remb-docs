@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:12.438Z"
 content_hash: "1d9a575b59b58331e20b6dc326de6e46219a3ba5771673437d9c4cfd2f20729b"
 menu_path: ["PostgreSQL: Documentation: 18: MERGE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-lock.html/index.md", "title": "PostgreSQL: Documentation: 18: LOCK"}
-nav_next: {"path": "postgres/docs/current/sql-move.html/index.md", "title": "PostgreSQL: Documentation: 18: MOVE"}
+nav_prev: {"path": "../sql-lock.html/index.md", "title": "PostgreSQL: Documentation: 18: LOCK"}
+nav_next: {"path": "../sql-move.html/index.md", "title": "PostgreSQL: Documentation: 18: MOVE"}
 ---
 
 MERGE — conditionally insert, update, or delete rows of a table

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:02.316Z"
 content_hash: "428268c99741978fb44f957a5c8e74fa59dc1a0a0e5f64e6b7359fe6f21a983d"
 menu_path: ["Prepr CMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/payload/index.md", "title": "Payload CMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/prismic/index.md", "title": "Prismic & Astro"}
+nav_prev: {"path": "../payload/index.md", "title": "Payload CMS & Astro"}
+nav_next: {"path": "../prismic/index.md", "title": "Prismic & Astro"}
 ---
 
 # Prepr CMS & Astro

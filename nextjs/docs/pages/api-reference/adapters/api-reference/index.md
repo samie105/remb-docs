@@ -11,8 +11,8 @@ menu_path: ["API Reference"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/creating-an-adapter/index.md", "title": "Creating an Adapter"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/testing-adapters/index.md", "title": "Testing Adapters"}
+nav_prev: {"path": "../creating-an-adapter/index.md", "title": "Creating an Adapter"}
+nav_next: {"path": "../testing-adapters/index.md", "title": "Testing Adapters"}
 ---
 
 # API Reference

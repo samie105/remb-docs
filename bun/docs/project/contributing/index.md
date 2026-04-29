@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:21.754Z"
 content_hash: "0a19367e17fa523f337dab76d21913e869bad68c76001f8d4dd6ed78688007fe"
 menu_path: ["Contributing"]
 section_path: []
-nav_prev: {"path": "bun/docs/project/building-windows/index.md", "title": "Building Windows"}
-nav_next: {"path": "bun/docs/project/license/index.md", "title": "License"}
+nav_prev: {"path": "../building-windows/index.md", "title": "Building Windows"}
+nav_next: {"path": "../license/index.md", "title": "License"}
 ---
 
 # or explicitly use the pure shell

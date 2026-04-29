@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:45.231Z"
 content_hash: "1dfecfe4fe1f7d90d9cf8ec9ddf17b83dd8501b81cf6c4ae261877581bd780dc"
 menu_path: ["Troubleshooting"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/upgrade-to/v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/index.md", "title": "Migrate an existing project to Astro"}
+nav_prev: {"path": "../upgrade-to/v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
+nav_next: {"path": "../migrate-to-astro/index.md", "title": "Migrate an existing project to Astro"}
 ---
 
 # Troubleshooting

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:47.841Z"
 content_hash: "db5c9839c03fbb506178c2ac7def33bcb790b52b67b47d64c98589decb2dd3e4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/deprecated/development/index.md", "title": "Developer notes"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/index.md", "title": "Field and type options"}
+nav_prev: {"path": "../deprecated/development/index.md", "title": "Developer notes"}
+nav_next: {"path": "field-and-type-options/index.md", "title": "Field and type options"}
 ---
 
 # Indexing

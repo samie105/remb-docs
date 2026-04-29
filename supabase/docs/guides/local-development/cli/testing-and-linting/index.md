@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:31.079Z"
 content_hash: "5cbedc2a6bef21526e1fb2beae6d96f8370fb0004e4909a8fbb2db38b0e000ca"
 menu_path: ["Testing and linting"]
 section_path: []
-nav_prev: {"path": "supabase/docs/guides/local-development/cli/getting-started/index.md", "title": "Supabase CLI"}
-nav_next: {"path": "supabase/docs/guides/local-development/customizing-email-templates/index.md", "title": "Customizing email templates"}
+nav_prev: {"path": "../getting-started/index.md", "title": "Supabase CLI"}
+nav_next: {"path": "../../customizing-email-templates/index.md", "title": "Customizing email templates"}
 ---
 
 # 

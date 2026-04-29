@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:48.327Z"
 content_hash: "c03eb144df1891cad8d1b1e97f722a6fbdb42c09bd6f57f247e79c2b133a4edd"
 menu_path: ["Getting started"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/overview/index.md", "title": "Overview"}
-nav_next: {"path": "svelte/docs/svelte/svelte-files/index.md", "title": ".svelte files"}
+nav_prev: {"path": "../overview/index.md", "title": "Overview"}
+nav_next: {"path": "../svelte-files/index.md", "title": ".svelte files"}
 ---
 
 We recommend using [SvelteKit](../kit), which lets you [build almost anything](../kit/project-types). It's the official application framework from the Svelte team and powered by [Vite](https://vite.dev/). Create a new project with:

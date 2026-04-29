@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:15.275Z"
 content_hash: "ef0df3e631b6fb7d61de150d73c0b3275ec6aab3718e48dc911823b0b6d1b459"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        Define data pipeline","→","Define data pipeline"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        Define data pipeline","→","Define data pipeline"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-free-database/index.md", "title": "Create a free database"}
-nav_next: {"path": "redis/docs/latest/operate/rc/databases/rdi/quick-start/index.md", "title": "RDI on Redis Cloud quick start"}
+nav_prev: {"path": "../../create-database/create-free-database/index.md", "title": "Create a free database"}
+nav_next: {"path": "../quick-start/index.md", "title": "RDI on Redis Cloud quick start"}
 ---
 
 # Define data pipeline

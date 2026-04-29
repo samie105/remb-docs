@@ -10,8 +10,8 @@ content_hash: "e5b0fba4b7d9774878bea6aa9efd9eb790e3456d6a42a7bf96eeec693b10c188"
 menu_path: ["PostgreSQL: Documentation: 18: 33.4. Server-Side Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/lo-examplesect.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.5.\u00a0Example Program"}
-nav_next: {"path": "postgres/docs/current/lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
+nav_prev: {"path": "../lo-examplesect.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.5.\u00a0Example Program"}
+nav_next: {"path": "../lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
 ---
 
 Server-side functions tailored for manipulating large objects from SQL are listed in [Table 33.1](https://www.postgresql.org/docs/current/lo-funcs.html#LO-FUNCS-TABLE "Table 33.1. SQL-Oriented Large Object Functions").

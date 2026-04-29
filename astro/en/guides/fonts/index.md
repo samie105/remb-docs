@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:27.504Z"
 content_hash: "983c3cdd162d9863fe85a987c41321557c7dc35a1113e64f375a9d0afe9843ac"
 menu_path: ["Using custom fonts"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/styling/index.md", "title": "Styles and CSS"}
-nav_next: {"path": "astro/en/guides/syntax-highlighting/index.md", "title": "Syntax Highlighting"}
+nav_prev: {"path": "../styling/index.md", "title": "Styles and CSS"}
+nav_next: {"path": "../syntax-highlighting/index.md", "title": "Syntax Highlighting"}
 ---
 
 # Using custom fonts

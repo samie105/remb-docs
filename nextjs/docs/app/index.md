@@ -11,8 +11,8 @@ menu_path: ["App Router"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/community/rspack/index.md", "title": "Rspack Integration"}
-nav_next: {"path": "nextjs/docs/messages/app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
+nav_prev: {"path": "../community/rspack/index.md", "title": "Rspack Integration"}
+nav_next: {"path": "../messages/app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
 ---
 
 # App Router

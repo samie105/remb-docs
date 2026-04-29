@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:35.228Z"
 content_hash: "46d635534a5ac016b87c40cbf704285d89667ceb1727501cbf222e2ab3e71f4a"
 menu_path: ["SSR Options ​"]
 section_path: []
-nav_prev: {"path": "vite/config/shared-options/index.md", "title": "Shared Options \u200b"}
-nav_next: {"path": "vite/config/worker-options/index.md", "title": "Worker Options \u200b"}
+nav_prev: {"path": "../shared-options/index.md", "title": "Shared Options \u200b"}
+nav_next: {"path": "../worker-options/index.md", "title": "Worker Options \u200b"}
 ---
 
 Unless noted, the options in this section are applied to both dev and build.
@@ -18,7 +18,7 @@ Unless noted, the options in this section are applied to both dev and build.
 ## ssr.external [​](#ssr-external)
 
 *   **Type:** `string[] | true`
-*   **Related:** [SSR Externals](vite/guide/ssr/index.md#ssr-externals)
+*   **Related:** [SSR Externals](../../guide/ssr/index.md#ssr-externals)
 
 Externalize the given dependencies and their transitive dependencies for SSR. By default, all dependencies are externalized except for linked dependencies (for HMR). If you prefer to externalize the linked dependency, you can pass its name to this option.
 
@@ -29,7 +29,7 @@ Note that the explicitly listed dependencies (using `string[]` type) will always
 ## ssr.noExternal [​](#ssr-noexternal)
 
 *   **Type:** `string | RegExp | (string | RegExp)[] | true`
-*   **Related:** [SSR Externals](vite/guide/ssr/index.md#ssr-externals)
+*   **Related:** [SSR Externals](../../guide/ssr/index.md#ssr-externals)
 
 Prevent listed dependencies from being externalized for SSR, which they will get bundled in build. By default, only linked dependencies are not externalized (for HMR). If you prefer to externalize the linked dependency, you can pass its name to the `ssr.external` option.
 
@@ -48,7 +48,7 @@ Build target for the SSR server.
 
 *   **Type:** `string[]`
 *   **Default:** `['module', 'node', 'development|production']` (`defaultServerConditions`) (`['module', 'browser', 'development|production']` (`defaultClientConditions`) for `ssr.target === 'webworker'`)
-*   **Related:** [Resolve Conditions](vite/config/shared-options/index.md#resolve-conditions)
+*   **Related:** [Resolve Conditions](../shared-options/index.md#resolve-conditions)
 
 These conditions are used in the plugin pipeline, and only affect non-externalized dependencies during the SSR build. Use `ssr.resolve.externalConditions` to affect externalized imports.
 

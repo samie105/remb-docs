@@ -10,8 +10,8 @@ content_hash: "54d63c312cf565c2f89daf47d97b7aad825777b2cc3bcf03b7b7372f0b740bcf"
 menu_path: ["list-style-type"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/list-style-position/index.md", "title": "list-style-position"}
-nav_next: {"path": "tailwind/docs/text-align/index.md", "title": "text-align"}
+nav_prev: {"path": "../list-style-position/index.md", "title": "list-style-position"}
+nav_next: {"path": "../text-align/index.md", "title": "text-align"}
 ---
 
 # list-style-type

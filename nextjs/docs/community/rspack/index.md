@@ -11,8 +11,8 @@ menu_path: ["Rspack Integration"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/community/contribution-guide/index.md", "title": "Docs Contribution Guide"}
-nav_next: {"path": "nextjs/docs/app/index.md", "title": "App Router"}
+nav_prev: {"path": "../contribution-guide/index.md", "title": "Docs Contribution Guide"}
+nav_next: {"path": "../../app/index.md", "title": "App Router"}
 ---
 
 # Rspack Integration

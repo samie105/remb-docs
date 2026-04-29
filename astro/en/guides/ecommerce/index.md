@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:13.365Z"
 content_hash: "b6e4fe5e83a2961dc748d9ec12c073ad9fa4f42553e0f12351cff1850bd67e49"
 menu_path: ["E-commerce"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/media/mux/index.md", "title": "Mux & Astro"}
-nav_next: {"path": "astro/en/guides/authentication/index.md", "title": "Authentication"}
+nav_prev: {"path": "../media/mux/index.md", "title": "Mux & Astro"}
+nav_next: {"path": "../authentication/index.md", "title": "Authentication"}
 ---
 
 # E-commerce

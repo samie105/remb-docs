@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:14.723Z"
 content_hash: "013552059976b962fb36ab42d9540cc77fe925363478a8e7d09c23375d38b933"
 menu_path: ["Install and run Bun in GitHub Actions"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/build-time-constants/index.md", "title": "Build-time constants with --define"}
-nav_next: {"path": "bun/docs/guides/runtime/codesign-macos-executable/index.md", "title": "Codesign a single-file JavaScript executable on macOS"}
+nav_prev: {"path": "../build-time-constants/index.md", "title": "Build-time constants with --define"}
+nav_next: {"path": "../codesign-macos-executable/index.md", "title": "Codesign a single-file JavaScript executable on macOS"}
 ---
 
 Use the official [`setup-bun`](https://github.com/oven-sh/setup-bun) GitHub Action to install `bun` in your GitHub Actions runner.

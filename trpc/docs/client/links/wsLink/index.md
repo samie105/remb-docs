@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:24.215Z"
 content_hash: "b505c1a23a3143c38619988a2aa800a888f326800669a45e32bf29e412526233"
 menu_path: ["WebSocket Link"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/links/splitLink/index.md", "title": "Split Link"}
-nav_next: {"path": "trpc/docs/client/nextjs/index.md", "title": "Next.js Integration"}
+nav_prev: {"path": "../splitLink/index.md", "title": "Split Link"}
+nav_next: {"path": "../../nextjs/index.md", "title": "Next.js Integration"}
 ---
 
 `export interface WebSocketLinkOptions {`

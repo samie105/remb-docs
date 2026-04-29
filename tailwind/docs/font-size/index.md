@@ -10,8 +10,8 @@ content_hash: "b315f446df4564791d7d7306c38625048bf8a5d8f9736c931fbdda46d29a88c7"
 menu_path: ["font-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/font-family/index.md", "title": "font-family"}
-nav_next: {"path": "tailwind/docs/font-smoothing/index.md", "title": "font-smoothing"}
+nav_prev: {"path": "../font-family/index.md", "title": "font-family"}
+nav_next: {"path": "../font-smoothing/index.md", "title": "font-smoothing"}
 ---
 
 Typography
@@ -92,7 +92,7 @@ Prefix a `font-size` utility with a breakpoint variant like `md:` to only apply 
 <p class="text-sm md:text-base ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -114,4 +114,4 @@ You can also provide default `line-height`, `letter-spacing`, and `font-weight` 
 @theme {  --text-tiny: 0.625rem;  --text-tiny--line-height: 1.5rem;   --text-tiny--letter-spacing: 0.125rem;   --text-tiny--font-weight: 500; }
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).

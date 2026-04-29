@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:02.544Z"
 content_hash: "806c759473c3ca0afb30d5b101e0db004dac7a469efea6575ecddf52b65182af"
 menu_path: ["PostgreSQL: Documentation: 18: postgres"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
-nav_next: {"path": "postgres/docs/current/app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
+nav_prev: {"path": "../app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
+nav_next: {"path": "../app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
 ---
 
 postgres — PostgreSQL database server
@@ -37,7 +37,7 @@ The `postgres` command can also be called in single-user mode. The primary use f
 
 ``-B _`nbuffers`_``
 
-Sets the number of shared buffers for use by the server processes. The default value of this parameter is chosen automatically by initdb. Specifying this option is equivalent to setting the [shared\_buffers](postgres/docs/current/runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS) configuration parameter.
+Sets the number of shared buffers for use by the server processes. The default value of this parameter is chosen automatically by initdb. Specifying this option is equivalent to setting the [shared\_buffers](../runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS) configuration parameter.
 
 ``-c _`name`_=_`value`_``
 
@@ -47,7 +47,7 @@ Sets a named run-time parameter. The configuration parameters supported by Postg
 
 Prints the value of the named run-time parameter, and exits. (See the `-c` option above for details.) This returns values from `postgresql.conf`, modified by any parameters supplied in this invocation. It does not reflect parameters supplied when the cluster was started.
 
-This can be used on a running server for most parameters. However, the server must be shut down for some runtime-computed parameters (e.g., [shared\_memory\_size](postgres/docs/current/runtime-config-preset.html/index.md#GUC-SHARED-MEMORY-SIZE), [shared\_memory\_size\_in\_huge\_pages](postgres/docs/current/runtime-config-preset.html/index.md#GUC-SHARED-MEMORY-SIZE-IN-HUGE-PAGES), and [wal\_segment\_size](postgres/docs/current/runtime-config-preset.html/index.md#GUC-WAL-SEGMENT-SIZE)).
+This can be used on a running server for most parameters. However, the server must be shut down for some runtime-computed parameters (e.g., [shared\_memory\_size](../runtime-config-preset.html/index.md#GUC-SHARED-MEMORY-SIZE), [shared\_memory\_size\_in\_huge\_pages](../runtime-config-preset.html/index.md#GUC-SHARED-MEMORY-SIZE-IN-HUGE-PAGES), and [wal\_segment\_size](../runtime-config-preset.html/index.md#GUC-WAL-SEGMENT-SIZE)).
 
 This option is meant for other programs that interact with a server instance, such as [pg\_ctl](https://www.postgresql.org/docs/current/app-pg-ctl.html "pg_ctl"), to query configuration parameter values. User-facing applications should instead use [`SHOW`](https://www.postgresql.org/docs/current/sql-show.html "SHOW") or the `pg_settings` view.
 
@@ -65,21 +65,21 @@ Sets the default date style to “European”, that is `DMY` ordering of input d
 
 `-F`
 
-Disables `fsync` calls for improved performance, at the risk of data corruption in the event of a system crash. Specifying this option is equivalent to disabling the [fsync](postgres/docs/current/runtime-config-wal.html/index.md#GUC-FSYNC) configuration parameter. Read the detailed documentation before using this!
+Disables `fsync` calls for improved performance, at the risk of data corruption in the event of a system crash. Specifying this option is equivalent to disabling the [fsync](../runtime-config-wal.html/index.md#GUC-FSYNC) configuration parameter. Read the detailed documentation before using this!
 
 ``-h _`hostname`_``
 
-Specifies the IP host name or address on which `postgres` is to listen for TCP/IP connections from client applications. The value can also be a comma-separated list of addresses, or `*` to specify listening on all available interfaces. An empty value specifies not listening on any IP addresses, in which case only Unix-domain sockets can be used to connect to the server. Defaults to listening only on localhost. Specifying this option is equivalent to setting the [listen\_addresses](postgres/docs/current/runtime-config-connection.html/index.md#GUC-LISTEN-ADDRESSES) configuration parameter.
+Specifies the IP host name or address on which `postgres` is to listen for TCP/IP connections from client applications. The value can also be a comma-separated list of addresses, or `*` to specify listening on all available interfaces. An empty value specifies not listening on any IP addresses, in which case only Unix-domain sockets can be used to connect to the server. Defaults to listening only on localhost. Specifying this option is equivalent to setting the [listen\_addresses](../runtime-config-connection.html/index.md#GUC-LISTEN-ADDRESSES) configuration parameter.
 
 `-i`
 
 Allows remote clients to connect via TCP/IP (Internet domain) connections. Without this option, only local connections are accepted. This option is equivalent to setting `listen_addresses` to `*` in `postgresql.conf` or via `-h`.
 
-This option is deprecated since it does not allow access to the full functionality of [listen\_addresses](postgres/docs/current/runtime-config-connection.html/index.md#GUC-LISTEN-ADDRESSES). It's usually better to set `listen_addresses` directly.
+This option is deprecated since it does not allow access to the full functionality of [listen\_addresses](../runtime-config-connection.html/index.md#GUC-LISTEN-ADDRESSES). It's usually better to set `listen_addresses` directly.
 
 ``-k _`directory`_``
 
-Specifies the directory of the Unix-domain socket on which `postgres` is to listen for connections from client applications. The value can also be a comma-separated list of directories. An empty value specifies not listening on any Unix-domain sockets, in which case only TCP/IP sockets can be used to connect to the server. The default value is normally `/tmp`, but that can be changed at build time. Specifying this option is equivalent to setting the [unix\_socket\_directories](postgres/docs/current/runtime-config-connection.html/index.md#GUC-UNIX-SOCKET-DIRECTORIES) configuration parameter.
+Specifies the directory of the Unix-domain socket on which `postgres` is to listen for connections from client applications. The value can also be a comma-separated list of directories. An empty value specifies not listening on any Unix-domain sockets, in which case only TCP/IP sockets can be used to connect to the server. The default value is normally `/tmp`, but that can be changed at build time. Specifying this option is equivalent to setting the [unix\_socket\_directories](../runtime-config-connection.html/index.md#GUC-UNIX-SOCKET-DIRECTORIES) configuration parameter.
 
 `-l`
 
@@ -87,7 +87,7 @@ Enables secure connections using SSL. PostgreSQL must have been compiled with su
 
 ``-N _`max-connections`_``
 
-Sets the maximum number of client connections that this server will accept. The default value of this parameter is chosen automatically by initdb. Specifying this option is equivalent to setting the [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) configuration parameter.
+Sets the maximum number of client connections that this server will accept. The default value of this parameter is chosen automatically by initdb. Specifying this option is equivalent to setting the [max\_connections](../runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) configuration parameter.
 
 ``-p _`port`_``
 
@@ -189,7 +189,7 @@ Default data directory location
 
 `PGDATESTYLE`
 
-Default value of the [DateStyle](postgres/docs/current/runtime-config-client.html/index.md#GUC-DATESTYLE) run-time parameter. (The use of this environment variable is deprecated.)
+Default value of the [DateStyle](../runtime-config-client.html/index.md#GUC-DATESTYLE) run-time parameter. (The use of this environment variable is deprecated.)
 
 `PGPORT`
 
@@ -197,7 +197,7 @@ Default port number (preferably set in the configuration file)
 
 ## Diagnostics
 
-A failure message mentioning `semget` or `shmget` probably indicates you need to configure your kernel to provide adequate shared memory and semaphores. For more discussion see [Section 18.4](https://www.postgresql.org/docs/current/kernel-resources.html "18.4. Managing Kernel Resources"). You might be able to postpone reconfiguring your kernel by decreasing [shared\_buffers](postgres/docs/current/runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS) to reduce the shared memory consumption of PostgreSQL, and/or by reducing [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) to reduce the semaphore consumption.
+A failure message mentioning `semget` or `shmget` probably indicates you need to configure your kernel to provide adequate shared memory and semaphores. For more discussion see [Section 18.4](https://www.postgresql.org/docs/current/kernel-resources.html "18.4. Managing Kernel Resources"). You might be able to postpone reconfiguring your kernel by decreasing [shared\_buffers](../runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS) to reduce the shared memory consumption of PostgreSQL, and/or by reducing [max\_connections](../runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) to reduce the semaphore consumption.
 
 A failure message suggesting that another server is already running should be checked carefully, for example by using the command
 

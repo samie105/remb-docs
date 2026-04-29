@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:15.389Z"
 content_hash: "9265f45e597dc7b7ac8a5df3b380c5794709b12d52c5fd5d73cae05a89e13d5e"
 menu_path: ["Env Variables and Modes ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/static-deploy/index.md", "title": "Deploying a Static Site \u200b"}
-nav_next: {"path": "vite/guide/ssr/index.md", "title": "Server-Side Rendering (SSR) \u200b"}
+nav_prev: {"path": "../static-deploy/index.md", "title": "Deploying a Static Site \u200b"}
+nav_next: {"path": "../ssr/index.md", "title": "Server-Side Rendering (SSR) \u200b"}
 ---
 
 Vite exposes certain constants under the special `import.meta.env` object. These constants are defined as global variables during dev and statically replaced at build time to make tree-shaking effective.
@@ -32,13 +32,13 @@ Some built-in constants are available in all cases:
 
 *   **`import.meta.env.MODE`**: {string} the [mode](#modes) the app is running in.
     
-*   **`import.meta.env.BASE_URL`**: {string} the base url the app is being served from. This is determined by the [`base` config option](vite/config/shared-options/index.md#base).
+*   **`import.meta.env.BASE_URL`**: {string} the base url the app is being served from. This is determined by the [`base` config option](../../config/shared-options/index.md#base).
     
 *   **`import.meta.env.PROD`**: {boolean} whether the app is running in production (running the dev server with `NODE_ENV='production'` or running an app built with `NODE_ENV='production'`).
     
 *   **`import.meta.env.DEV`**: {boolean} whether the app is running in development (always the opposite of `import.meta.env.PROD`)
     
-*   **`import.meta.env.SSR`**: {boolean} whether the app is running in the [server](vite/guide/ssr/index.md#conditional-logic).
+*   **`import.meta.env.SSR`**: {boolean} whether the app is running in the [server](../ssr/index.md#conditional-logic).
     
 
 ## Env Variables [​](#env-variables)
@@ -63,7 +63,7 @@ console.log(import.meta.env.VITE_SOME_KEY) // "123"
 console.log(import.meta.env.DB_PASSWORD) // undefined
 ```
 
-If you want to customize the env variables prefix, see the [envPrefix](vite/config/shared-options/index.md#envprefix) option.
+If you want to customize the env variables prefix, see the [envPrefix](../../config/shared-options/index.md#envprefix) option.
 
 Env parsing
 
@@ -75,7 +75,7 @@ Protecting secrets
 
 ### `.env` Files [​](#env-files)
 
-Vite uses [dotenv](https://github.com/motdotla/dotenv) to load additional environment variables from the following files in your [environment directory](vite/config/shared-options/index.md#envdir):
+Vite uses [dotenv](https://github.com/motdotla/dotenv) to load additional environment variables from the following files in your [environment directory](../../config/shared-options/index.md#envdir):
 
 ```
 .env                # loaded in all cases
@@ -186,7 +186,7 @@ html
 
 If the env doesn't exist in `import.meta.env`, e.g. `%NON_EXISTENT%`, it will be ignored and not replaced, unlike `import.meta.env.NON_EXISTENT` in JS where it's replaced as `undefined`.
 
-Given that Vite is used by many frameworks, it is intentionally unopinionated about complex replacements like conditionals. Vite can be extended using [an existing userland plugin](https://github.com/vitejs/awesome-vite#transformers) or a custom plugin that implements the [`transformIndexHtml` hook](vite/guide/api-plugin/index.md#transformindexhtml).
+Given that Vite is used by many frameworks, it is intentionally unopinionated about complex replacements like conditionals. Vite can be extended using [an existing userland plugin](https://github.com/vitejs/awesome-vite#transformers) or a custom plugin that implements the [`transformIndexHtml` hook](../api-plugin/index.md#transformindexhtml).
 
 ## Modes [​](#modes)
 

@@ -10,8 +10,8 @@ content_hash: "95f80e8d86dd10e455d4fcaae8e0116d877da7c42fa80d963bf8e1c6b8eb2b04"
 menu_path: ["grid-column"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/grid-template-columns/index.md", "title": "grid-template-columns"}
-nav_next: {"path": "tailwind/docs/grid-template-rows/index.md", "title": "grid-template-rows"}
+nav_prev: {"path": "../grid-template-columns/index.md", "title": "grid-template-columns"}
+nav_next: {"path": "../grid-template-rows/index.md", "title": "grid-template-rows"}
 ---
 
 Flexbox & Grid
@@ -84,4 +84,4 @@ Prefix `grid-column`,`grid-column-start`, and `grid-column-end` utilities with a
 <div class="col-span-2 md:col-span-6 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

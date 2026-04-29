@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:56.554Z"
 content_hash: "a72cad35368337be037e487efd20343377a91956db65f9e38e8ef757f8c7f235"
 menu_path: ["Pages"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/dev-toolbar/index.md", "title": "Dev toolbar"}
-nav_next: {"path": "astro/en/guides/routing/index.md", "title": "Routing"}
+nav_prev: {"path": "../../guides/dev-toolbar/index.md", "title": "Dev toolbar"}
+nav_next: {"path": "../../guides/routing/index.md", "title": "Routing"}
 ---
 
 # Pages

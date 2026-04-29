@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:58.950Z"
 content_hash: "d53e43690339f51a303c0cbb9426d82c7af331509ebe56a6ad17abeac1888180"
 menu_path: ["Astro Renderer API"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/adapter-reference/index.md", "title": "Astro Adapter API"}
-nav_next: {"path": "astro/en/reference/content-loader-reference/index.md", "title": "Astro Content Loader API"}
+nav_prev: {"path": "../adapter-reference/index.md", "title": "Astro Adapter API"}
+nav_next: {"path": "../content-loader-reference/index.md", "title": "Astro Content Loader API"}
 ---
 
 # Astro Renderer API

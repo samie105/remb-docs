@@ -11,8 +11,8 @@ menu_path: ["Link Component"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/components/image/index.md", "title": "Image Component"}
-nav_next: {"path": "nextjs/docs/app/api-reference/components/script/index.md", "title": "Script Component"}
+nav_prev: {"path": "../image/index.md", "title": "Image Component"}
+nav_next: {"path": "../script/index.md", "title": "Script Component"}
 ---
 
 # Link Component

@@ -10,8 +10,8 @@ content_hash: "fb7ccbf0036a53f6db3b8153684ed5e012ae8a7ad39c801159db847d5cb2dbf7"
 menu_path: ["fs - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/events/index.md", "title": "events - Node documentation"}
-nav_next: {"path": "deno/api/node/fs/promises/index.md", "title": "fs/promises - Node documentation"}
+nav_prev: {"path": "../events/index.md", "title": "events - Node documentation"}
+nav_next: {"path": "promises/index.md", "title": "fs/promises - Node documentation"}
 ---
 
 ### Usage in Deno

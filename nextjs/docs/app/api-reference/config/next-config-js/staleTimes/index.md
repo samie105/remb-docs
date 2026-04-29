@@ -11,8 +11,8 @@ menu_path: ["staleTimes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/staticGeneration/index.md", "title": "staticGeneration*"}
+nav_prev: {"path": "../serverExternalPackages/index.md", "title": "serverExternalPackages"}
+nav_next: {"path": "../staticGeneration/index.md", "title": "staticGeneration*"}
 ---
 
 # staleTimes

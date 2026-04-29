@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:52.433Z"
 content_hash: "94e70a797ecf176faf11e4673f2d2f9a1bf0116379a55bed5d8eddb81f7190b4"
 menu_path: ["Read a file to a Uint8Array"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/read-file/string/index.md", "title": "Read a file as a string"}
-nav_next: {"path": "bun/docs/guides/read-file/watch/index.md", "title": "Watch a directory for changes"}
+nav_prev: {"path": "../string/index.md", "title": "Read a file as a string"}
+nav_next: {"path": "../watch/index.md", "title": "Watch a directory for changes"}
 ---
 
 [Skip to main content](#content-area)

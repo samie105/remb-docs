@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:54.313Z"
 content_hash: "85d174896b1f1aa5d3b286b50bc3b9195c5e39bfcfbb15229730a49c67160606"
 menu_path: ["Could not find Sharp."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/missing-middleware-for-internationalization/index.md", "title": "Enabled manual internationalization routing without having a middleware."}
-nav_next: {"path": "astro/en/reference/errors/mixed-content-data-collection-error/index.md", "title": "Content and data cannot be in same collection."}
+nav_prev: {"path": "../missing-middleware-for-internationalization/index.md", "title": "Enabled manual internationalization routing without having a middleware."}
+nav_next: {"path": "../mixed-content-data-collection-error/index.md", "title": "Content and data cannot be in same collection."}
 ---
 
 # Could not find Sharp.

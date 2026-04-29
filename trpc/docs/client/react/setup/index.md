@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:49.281Z"
 content_hash: "3dac4f2a07b83d0b67394ad24ea74912451285dd69d72e2d1e1abbb7e9eed03b"
 menu_path: ["Set up the React Query Integration"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/react/server-components/index.md", "title": "Set up with React Server Components"}
-nav_next: {"path": "trpc/docs/client/react/suspense/index.md", "title": "Suspense"}
+nav_prev: {"path": "../server-components/index.md", "title": "Set up with React Server Components"}
+nav_next: {"path": "../suspense/index.md", "title": "Suspense"}
 ---
 
 ### 1\. Install dependencies[​](#1-install-dependencies "Direct link to 1. Install dependencies")

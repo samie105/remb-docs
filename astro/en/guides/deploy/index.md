@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:14.360Z"
 content_hash: "3daf0a0a09bf750d0d9cf5a7ae594820ffcf5eab4ebc2838780fde33ff40bf35"
 menu_path: ["Deploy your Astro Site"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/sitemap/index.md", "title": "@astrojs/\n\t\t\t\t\tsitemap"}
-nav_next: {"path": "astro/en/guides/deploy/aws/index.md", "title": "Deploy your Astro Site to AWS"}
+nav_prev: {"path": "../integrations-guide/sitemap/index.md", "title": "@astrojs/\n\t\t\t\t\tsitemap"}
+nav_next: {"path": "aws/index.md", "title": "Deploy your Astro Site to AWS"}
 ---
 
 # Deploy your Astro Site

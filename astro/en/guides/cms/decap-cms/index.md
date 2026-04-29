@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:53.935Z"
 content_hash: "adf2e6d3c7b7de54694756c305438fcf1f4921a541d89f5f1616ca3e15f26fe4"
 menu_path: ["Decap CMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/datocms/index.md", "title": "DatoCMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/directus/index.md", "title": "Directus & Astro"}
+nav_prev: {"path": "../datocms/index.md", "title": "DatoCMS & Astro"}
+nav_next: {"path": "../directus/index.md", "title": "Directus & Astro"}
 ---
 
 # Decap CMS & Astro

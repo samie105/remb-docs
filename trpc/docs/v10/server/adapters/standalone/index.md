@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:38:30.493Z"
 content_hash: "d681637585595cbcbf011ab1a873b32316e8834a687b270ca80ca9ab45d5e844"
 menu_path: ["Standalone Adapter"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/adapters/nextjs/index.md", "title": "Next.js Adapter"}
-nav_next: {"path": "trpc/docs/v10/server/authorization/index.md", "title": "Authorization"}
+nav_prev: {"path": "../nextjs/index.md", "title": "Next.js Adapter"}
+nav_next: {"path": "../../authorization/index.md", "title": "Authorization"}
 ---
 
 tRPC's Standalone Adapter is the simplest way to get a new project working. It's ideal for local development, and for server-based production environments. In essence it's just a wrapper around the standard [Node.js HTTP Server](https://nodejs.org/api/http.html) with the normal options related to tRPC.
 
-If you have an existing API deployment like [Express](trpc/docs/v10/server/adapters/express/index.md), [Fastify](trpc/docs/v10/server/adapters/fastify/index.md), or [Next.js](trpc/docs/v10/server/adapters/nextjs/index.md), which you want to integrate tRPC into, you should have a look at their respective adapters. Likewise if you have a preference to host on serverless or edge compute, we have adapters like [AWS Lambda](trpc/docs/v10/server/adapters/aws-lambda/index.md) and [Fetch](trpc/docs/v10/server/adapters/fetch/index.md) which may fit your needs.
+If you have an existing API deployment like [Express](../express/index.md), [Fastify](../fastify/index.md), or [Next.js](../nextjs/index.md), which you want to integrate tRPC into, you should have a look at their respective adapters. Likewise if you have a preference to host on serverless or edge compute, we have adapters like [AWS Lambda](../aws-lambda/index.md) and [Fetch](../fetch/index.md) which may fit your needs.
 
 It's also not uncommon, where the deployed adapter is hard to run on local machines, to have 2 entry-points in your application. You could use the Standalone Adapter for local development, and a different adapter when deployed.
 
@@ -81,7 +81,7 @@ ts
 
 `export type AppRouter = typeof appRouter;`
 
-For more information you can look at the [quickstart guide](trpc/docs/quickstart/index.md)
+For more information you can look at the [quickstart guide](../../../../quickstart/index.md)
 
 ### 2\. Use the Standalone adapter[​](#2-use-the-standalone-adapter "Direct link to 2. Use the Standalone adapter")
 
@@ -161,7 +161,7 @@ ts
 
 The `middleware` option will accept any function which resembles a connect/node.js middleware, so it can be used for more than `cors` handling if you wish. It is, however, intended to be a simple escape hatch and as such won't on its own allow you to compose multiple middlewares together. If you want to do this then you could:
 
-1.  Use an alternate adapter with more comprehensive middleware support, like the [Express adapter](trpc/docs/server/adapters/express/index.md)
+1.  Use an alternate adapter with more comprehensive middleware support, like the [Express adapter](../../../../server/adapters/express/index.md)
 2.  Use a solution to compose middlewares such as [connect](https://github.com/senchalabs/connect)
 3.  Extend the Standalone `createHTTPHandler` with a custom http server (see below)
 

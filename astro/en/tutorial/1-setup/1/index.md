@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:07.149Z"
 content_hash: "d3e1a5802c077571edacb3d7ed6934dd4f80c8323b37f2d75979cf8003fd51ba"
 menu_path: ["Prepare your dev environment"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/0-introduction/1/index.md", "title": "About this Tutorial"}
-nav_next: {"path": "astro/en/tutorial/1-setup/2/index.md", "title": "Create your first Astro project"}
+nav_prev: {"path": "../../0-introduction/1/index.md", "title": "About this Tutorial"}
+nav_next: {"path": "../2/index.md", "title": "Create your first Astro project"}
 ---
 
 # Prepare your dev environment

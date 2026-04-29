@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:17.962Z"
 content_hash: "f5eb121eae7adad5bcfe6097c7b89468eee4240af4fe4f2410177dfa84f3784c"
 menu_path: ["import, require, and test Svelte components with bun test"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/spy-on/index.md", "title": "Spy on methods in `bun test`"}
-nav_next: {"path": "bun/docs/guides/test/testing-library/index.md", "title": "Using Testing Library with Bun"}
+nav_prev: {"path": "../spy-on/index.md", "title": "Spy on methods in `bun test`"}
+nav_next: {"path": "../testing-library/index.md", "title": "Using Testing Library with Bun"}
 ---
 
 # Tell Bun to load this plugin before your tests run

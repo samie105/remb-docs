@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:21.534Z"
 content_hash: "e36c2430c1d959561ae33bff4ea44b3fd399c7729136c6f8b3f830a0034baac8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/index.md", "title": "node-redis guide (JavaScript)"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/connect/index.md", "title": "Connect to the server"}
+nav_prev: {"path": "../index.md", "title": "node-redis guide (JavaScript)"}
+nav_next: {"path": "../connect/index.md", "title": "Connect to the server"}
 ---
 
 # Connect to Azure Managed Redis
@@ -256,6 +256,6 @@ After a connection enters PUB/SUB mode, the socket is blocked and can't process 
 
 ## Note about transactions
 
-If you use [transactions](redis/docs/latest/develop/clients/nodejs/transpipe/index.md) in code that also uses token-based authentication, ensure that you use the `node-redis` client multi/exec API rather than explicit commands to create each transaction (see [Execute a transaction](redis/docs/latest/develop/clients/nodejs/transpipe/index.md#execute-a-transaction) for an example of correct usage). This is because the token manager might attempt to reauthenticate while your code issues the separate transaction commands, which will interfere with the transaction. The transaction API handles this case for you safely.
+If you use [transactions](../transpipe/index.md) in code that also uses token-based authentication, ensure that you use the `node-redis` client multi/exec API rather than explicit commands to create each transaction (see [Execute a transaction](../transpipe/index.md#execute-a-transaction) for an example of correct usage). This is because the token manager might attempt to reauthenticate while your code issues the separate transaction commands, which will interfere with the transaction. The transaction API handles this case for you safely.
 
 ## On this page

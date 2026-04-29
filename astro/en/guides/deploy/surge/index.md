@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:55.574Z"
 content_hash: "e47fae81c98fb177ab2aeb8ae98bb3edb78cf9a08defbe56b9f0114ae33b7842"
 menu_path: ["Deploy your Astro Site to Surge"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/stormkit/index.md", "title": "Deploy your Astro Site to Stormkit"}
-nav_next: {"path": "astro/en/guides/deploy/vercel/index.md", "title": "Deploy your Astro Site to Vercel"}
+nav_prev: {"path": "../stormkit/index.md", "title": "Deploy your Astro Site to Stormkit"}
+nav_next: {"path": "../vercel/index.md", "title": "Deploy your Astro Site to Vercel"}
 ---
 
 # Deploy your Astro Site to Surge

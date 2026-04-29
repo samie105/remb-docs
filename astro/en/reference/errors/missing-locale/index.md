@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:49.644Z"
 content_hash: "9bfcc4098c82ccb78dde0c73edb68cfc77f1e44452b2eae1896614882e9614a4"
 menu_path: ["The provided locale does not exist."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/missing-index-for-internationalization/index.md", "title": "Index page not found."}
-nav_next: {"path": "astro/en/reference/errors/missing-media-query-directive/index.md", "title": "Missing value for client:media directive."}
+nav_prev: {"path": "../missing-index-for-internationalization/index.md", "title": "Index page not found."}
+nav_next: {"path": "../missing-media-query-directive/index.md", "title": "Missing value for client:media directive."}
 ---
 
 # The provided locale does not exist.

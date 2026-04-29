@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:12.183Z"
 content_hash: "4b6264818ed38f0781d0500b67e6ede5a0b70ef31146aefd15e98487523cf00f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis command tips","→","Redis command tips"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis command tips","→","Redis command tips"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/command-arguments/index.md", "title": "Redis command arguments"}
-nav_next: {"path": "redis/docs/latest/develop/reference/eviction/index.md", "title": "Key eviction"}
+nav_prev: {"path": "../command-arguments/index.md", "title": "Redis command arguments"}
+nav_next: {"path": "../eviction/index.md", "title": "Key eviction"}
 ---
 
 # Redis command tips

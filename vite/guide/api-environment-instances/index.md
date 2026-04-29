@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:16.412Z"
 content_hash: "aac55545db1e7fd918815ab93f73b34600eb146cccd9d52f41f0cc5de2099109"
 menu_path: ["Using Environment Instances ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/api-environment/index.md", "title": "Environment API \u200b"}
-nav_next: {"path": "vite/guide/api-environment-plugins/index.md", "title": "Environment API for Plugins \u200b"}
+nav_prev: {"path": "../api-environment/index.md", "title": "Environment API \u200b"}
+nav_next: {"path": "../api-environment-plugins/index.md", "title": "Environment API for Plugins \u200b"}
 ---
 
 ## Using `Environment` Instances [​](#using-environment-instances)
@@ -43,7 +43,7 @@ clientEnvironment.transformRequest(url)
 console.log(server.environments.ssr.moduleGraph)
 ```
 
-You can also access the current environment from plugins. See the [Environment API for Plugins](vite/guide/api-environment-plugins/index.md#accessing-the-current-environment-in-hooks) for more details.
+You can also access the current environment from plugins. See the [Environment API for Plugins](../api-environment-plugins/index.md#accessing-the-current-environment-in-hooks) for more details.
 
 ## `DevEnvironment` class [​](#devenvironment-class)
 
@@ -268,7 +268,7 @@ export interface CachedFetchResult {
 }
 ```
 
-`ExternalFetchResult` instructs the module runner to import the module using the `runExternalModule` method on the [`ModuleEvaluator`](vite/guide/api-environment-runtimes/index.md#moduleevaluator). In this case, the default module evaluator will use the runtime's native `import` instead of processing the file through Vite.
+`ExternalFetchResult` instructs the module runner to import the module using the `runExternalModule` method on the [`ModuleEvaluator`](../api-environment-runtimes/index.md#moduleevaluator). In this case, the default module evaluator will use the runtime's native `import` instead of processing the file through Vite.
 
 ts
 

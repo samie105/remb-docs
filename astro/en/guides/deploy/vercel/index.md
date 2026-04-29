@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:57.053Z"
 content_hash: "bdc69abff200524854fd53c8ee64b96ee95073f9ca836102902b7825e7b2d594"
 menu_path: ["Deploy your Astro Site to Vercel"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/surge/index.md", "title": "Deploy your Astro Site to Surge"}
-nav_next: {"path": "astro/en/guides/deploy/zeabur/index.md", "title": "Deploy your Astro Site to Zeabur"}
+nav_prev: {"path": "../surge/index.md", "title": "Deploy your Astro Site to Surge"}
+nav_next: {"path": "../zeabur/index.md", "title": "Deploy your Astro Site to Zeabur"}
 ---
 
 # Deploy your Astro Site to Vercel

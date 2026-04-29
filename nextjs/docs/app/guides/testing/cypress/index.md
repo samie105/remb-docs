@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/testing/index.md", "title": "Testing"}
-nav_next: {"path": "nextjs/docs/app/guides/testing/jest/index.md", "title": "How to set up Jest with Next.js"}
+nav_prev: {"path": "../index.md", "title": "Testing"}
+nav_next: {"path": "../jest/index.md", "title": "How to set up Jest with Next.js"}
 ---
 
 # How to set up Cypress with Next.js

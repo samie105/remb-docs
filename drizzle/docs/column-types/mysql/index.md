@@ -10,11 +10,11 @@ content_hash: "4fe0a3499668941a3b86da42f699e57f0bf34c876d92f669f86c2d8a9ce791fd"
 menu_path: ["MySQL column types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
-nav_next: {"path": "drizzle/docs/column-types/singlestore/index.md", "title": "SingleStore column types"}
+nav_prev: {"path": "../mssql/index.md", "title": "MSSQL column types"}
+nav_next: {"path": "../singlestore/index.md", "title": "SingleStore column types"}
 ---
 
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](../../custom-types/index.md)**.
 
 important
 
@@ -22,7 +22,7 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
+You can read more about it [here](../../sql-schema-declaration/index.md#shape-your-data-schema)
 
 ### integer[](#integer)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:46.033Z"
 content_hash: "64ec5d4dc5b59f264a4f8cd9ed1230169dff0b5b49c969126afe951606f024fa"
 menu_path: ["Using Plugins ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/cli/index.md", "title": "Command Line Interface \u200b"}
-nav_next: {"path": "vite/guide/dep-pre-bundling/index.md", "title": "Dependency Pre-Bundling \u200b"}
+nav_prev: {"path": "../cli/index.md", "title": "Command Line Interface \u200b"}
+nav_next: {"path": "../dep-pre-bundling/index.md", "title": "Dependency Pre-Bundling \u200b"}
 ---
 
 Vite can be extended using plugins, which are based on Rollup's well-designed plugin interface with a few extra Vite-specific options. This means that Vite users can rely on the mature ecosystem of Rollup plugins, while also being able to extend the dev server and SSR functionality as needed.
@@ -48,9 +48,9 @@ Falsy plugins will be ignored, which can be used to easily activate or deactivat
 
 NOTE
 
-Vite aims to provide out-of-the-box support for common web development patterns. Before searching for a Vite or compatible Rollup plugin, check out the [Features Guide](vite/guide/features/index.md). A lot of the cases where a plugin would be needed in a Rollup project are already covered in Vite.
+Vite aims to provide out-of-the-box support for common web development patterns. Before searching for a Vite or compatible Rollup plugin, check out the [Features Guide](../features/index.md). A lot of the cases where a plugin would be needed in a Rollup project are already covered in Vite.
 
-Check out the [Plugins section](vite/plugins/index.md) for information about official plugins. Community plugins that are published to npm are listed in [Vite Plugin Registry](vite/plugins/index.md).
+Check out the [Plugins section](../../plugins/index.md) for information about official plugins. Community plugins that are published to npm are listed in [Vite Plugin Registry](../../plugins/index.md).
 
 ## Enforcing Plugin Ordering [​](#enforcing-plugin-ordering)
 
@@ -78,7 +78,7 @@ export default defineConfig({
 })
 ```
 
-Check out [Plugins API Guide](vite/guide/api-plugin/index.md#plugin-ordering) for detailed information.
+Check out [Plugins API Guide](../api-plugin/index.md#plugin-ordering) for detailed information.
 
 ## Conditional Application [​](#conditional-application)
 
@@ -104,4 +104,4 @@ export default defineConfig({
 
 ## Building Plugins [​](#building-plugins)
 
-Check out the [Plugins API Guide](vite/guide/api-plugin/index.md) for documentation about creating plugins.
+Check out the [Plugins API Guide](../api-plugin/index.md) for documentation about creating plugins.

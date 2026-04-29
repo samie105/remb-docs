@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:43.242Z"
 content_hash: "63b29412fb882574d257550194ce1a40555201a68c5066a916587c25b8f7c675"
 menu_path: ["Migrating from Eleventy"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-docusaurus/index.md", "title": "Migrating from Docusaurus"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/from-gatsby/index.md", "title": "Migrating from Gatsby"}
+nav_prev: {"path": "../from-docusaurus/index.md", "title": "Migrating from Docusaurus"}
+nav_next: {"path": "../from-gatsby/index.md", "title": "Migrating from Gatsby"}
 ---
 
 # Migrating from Eleventy

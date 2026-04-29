@@ -10,8 +10,8 @@ content_hash: "50330d634b0c262c490e994969fd4a157635521a68e6b3644c09ee07e1b1aaf5"
 menu_path: ["PostgreSQL: Documentation: 18: 54.9. Logical Replication Message Formats"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/protocol-logical-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.5.\u00a0Logical Streaming Replication Protocol"}
-nav_next: {"path": "postgres/docs/current/protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
+nav_prev: {"path": "../protocol-logical-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.5.\u00a0Logical Streaming Replication Protocol"}
+nav_next: {"path": "../protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
 ---
 
 This section describes the detailed format of each logical replication message. These messages are either returned by the replication slot SQL interface or are sent by a walsender. In the case of a walsender, they are encapsulated inside replication protocol WAL messages as described in [Section 54.4](https://www.postgresql.org/docs/current/protocol-replication.html "54.4. Streaming Replication Protocol"), and generally obey the same message flow as physical replication.

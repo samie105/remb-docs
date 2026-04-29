@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:53.656Z"
 content_hash: "5b7e674d4990ccc315cbd259f17d687ef7d1a98cc7e4cde38cdde73abf02fbcb"
 menu_path: ["Unknown Vite Error."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/unknown-markdown-error/index.md", "title": "Unknown Markdown Error."}
-nav_next: {"path": "astro/en/reference/errors/unsupported-config-transform-error/index.md", "title": "Unsupported transform in content config."}
+nav_prev: {"path": "../unknown-markdown-error/index.md", "title": "Unknown Markdown Error."}
+nav_next: {"path": "../unsupported-config-transform-error/index.md", "title": "Unsupported transform in content config."}
 ---
 
 # Unknown Vite Error.

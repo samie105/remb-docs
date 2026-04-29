@@ -10,8 +10,8 @@ content_hash: "f46aa07a1351cbc69e8be1471b27303f435849c0660a120d04946410defa28ed"
 menu_path: ["field-sizing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/cursor/index.md", "title": "cursor"}
-nav_next: {"path": "tailwind/docs/pointer-events/index.md", "title": "pointer-events"}
+nav_prev: {"path": "../cursor/index.md", "title": "cursor"}
+nav_next: {"path": "../pointer-events/index.md", "title": "pointer-events"}
 ---
 
 # field-sizing

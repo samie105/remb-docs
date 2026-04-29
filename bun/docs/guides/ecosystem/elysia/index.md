@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:05.355Z"
 content_hash: "921ad8f104566825b1082e87dfd3ab6065d601351e771beff8bd7dffceb99e4f"
 menu_path: ["Build an HTTP server using Elysia and Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/ecosystem/drizzle/index.md", "title": "Use Drizzle ORM with Bun"}
-nav_next: {"path": "bun/docs/guides/ecosystem/express/index.md", "title": "Build an HTTP server using Express and Bun"}
+nav_prev: {"path": "../drizzle/index.md", "title": "Use Drizzle ORM with Bun"}
+nav_next: {"path": "../express/index.md", "title": "Build an HTTP server using Express and Bun"}
 ---
 
 [Skip to main content](#content-area)

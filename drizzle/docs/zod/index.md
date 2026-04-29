@@ -10,8 +10,8 @@ content_hash: "34430bd9a647bf39360cc8cc1a9d5a669cbc4e1ef8f5bf3aba5854352130c4a8"
 menu_path: ["zod"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/goodies/index.md", "title": "Drizzle ORM - Goodies"}
-nav_next: {"path": "drizzle/docs/valibot/index.md", "title": "valibot"}
+nav_prev: {"path": "../goodies/index.md", "title": "Drizzle ORM - Goodies"}
+nav_next: {"path": "../valibot/index.md", "title": "valibot"}
 ---
 
 WARNING

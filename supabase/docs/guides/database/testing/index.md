@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:38.548Z"
 content_hash: "d06b5321b385766287831ac0321401b7311fca0c518e0b4cf611c4bf0a081555"
 menu_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Testing your database","Testing your database"]
 section_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Testing your database","Testing your database"]
-nav_prev: {"path": "supabase/docs/guides/database/tables/index.md", "title": "Tables and Data"}
-nav_next: {"path": "supabase/docs/guides/database/vault/index.md", "title": "Vault"}
+nav_prev: {"path": "../tables/index.md", "title": "Tables and Data"}
+nav_next: {"path": "../vault/index.md", "title": "Vault"}
 ---
 
 # Testing using the Supabase CLI

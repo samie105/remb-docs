@@ -10,8 +10,8 @@ content_hash: "eedbb412e03c4b537e141c9ab826c0aafccc262d7d77690e86a0f2d528d6495f"
 menu_path: ["Workers - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/web/websockets/index.md", "title": "WebSockets - Web documentation"}
-nav_next: {"path": "deno/runtime/reference/cli/index.md", "title": "Deno CLI Subcommands"}
+nav_prev: {"path": "../websockets/index.md", "title": "WebSockets - Web documentation"}
+nav_next: {"path": "../../../runtime/reference/cli/index.md", "title": "Deno CLI Subcommands"}
 ---
 
 I

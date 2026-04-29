@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:44.375Z"
 content_hash: "742abcbd9ddb282675def0e9f0dce5d5803c2de47b621a83255f97522547e26e"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure Phone Login & MFA","Configure Phone Login & MFA"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure Phone Login & MFA","Configure Phone Login & MFA"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-oauth/index.md", "title": "Configure Social Login (OAuth) Providers"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-proxy-https/index.md", "title": "Configure Reverse Proxy and HTTPS"}
+nav_prev: {"path": "../self-hosted-oauth/index.md", "title": "Configure Social Login (OAuth) Providers"}
+nav_next: {"path": "../self-hosted-proxy-https/index.md", "title": "Configure Reverse Proxy and HTTPS"}
 ---
 
 # 

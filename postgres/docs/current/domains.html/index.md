@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:23.702Z"
 content_hash: "129012280990b43908d4c89e5e0dc69dcdc818a59ec4c1556e033dfbb4b0ea6f"
 menu_path: ["PostgreSQL: Documentation: 18: 8.18. Domain Types"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/docguide-toolsets.html/index.md", "title": "PostgreSQL: Documentation: 18: J.2.\u00a0Tool Sets"}
-nav_next: {"path": "postgres/docs/current/dynamic-trace.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.5.\u00a0Dynamic Tracing"}
+nav_prev: {"path": "../docguide-toolsets.html/index.md", "title": "PostgreSQL: Documentation: 18: J.2.\u00a0Tool Sets"}
+nav_next: {"path": "../dynamic-trace.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.5.\u00a0Dynamic Tracing"}
 ---
 
 A _domain_ is a user-defined data type that is based on another _underlying type_. Optionally, it can have constraints that restrict its valid values to a subset of what the underlying type would allow. Otherwise it behaves like the underlying type — for example, any operator or function that can be applied to the underlying type will work on the domain type. The underlying type can be any built-in or user-defined base type, enum type, array type, composite type, range type, or another domain.

@@ -11,8 +11,8 @@ menu_path: ["Preserving UI state across navigations"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/prefetching/index.md", "title": "Prefetching"}
-nav_next: {"path": "nextjs/docs/app/guides/production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
+nav_prev: {"path": "../prefetching/index.md", "title": "Prefetching"}
+nav_next: {"path": "../production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
 ---
 
 # Preserving UI state across navigations

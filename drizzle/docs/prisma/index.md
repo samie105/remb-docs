@@ -10,8 +10,8 @@ content_hash: "85b1e66993aaeb9c279022518794c98d2645a813073b134baf32f2ddeedb6a40"
 menu_path: ["Drizzle extension for Prisma"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/effect-schema/index.md", "title": "effect-schema"}
-nav_next: {"path": "drizzle/docs/eslint-plugin/index.md", "title": "ESLint Drizzle Plugin"}
+nav_prev: {"path": "../effect-schema/index.md", "title": "effect-schema"}
+nav_next: {"path": "../eslint-plugin/index.md", "title": "ESLint Drizzle Plugin"}
 ---
 
 ## Drizzle extension for Prisma
@@ -102,6 +102,6 @@ const users = await prisma.$drizzle.select().from(User);
 
 ## Limitations[](#limitations)
 
--   [Relational queries](drizzle/docs/rqb/index.md) are not supported due to a [Prisma driver limitation](https://github.com/prisma/prisma/issues/17576). Because of it, Prisma is unable to return query results in array format, which is required for relational queries to work.
+-   [Relational queries](../rqb/index.md) are not supported due to a [Prisma driver limitation](https://github.com/prisma/prisma/issues/17576). Because of it, Prisma is unable to return query results in array format, which is required for relational queries to work.
 -   In SQLite, `.values()` (e.g. `await db.select().from(table).values()`) is not supported, because of the same reason as above.
--   [Prepared statements](drizzle/docs/perf-queries/index.md#prepared-statement) support is limited - `.prepare()` will only build the SQL query on Drizzle side, because there is no Prisma API for prepared queries.
+-   [Prepared statements](../perf-queries/index.md#prepared-statement) support is limited - `.prepare()` will only build the SQL query on Drizzle side, because there is no Prisma API for prepared queries.

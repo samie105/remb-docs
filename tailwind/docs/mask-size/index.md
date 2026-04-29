@@ -10,8 +10,8 @@ content_hash: "3fad8ccbfb31758efe5a3e3754996fe74c47d255b1ceae16372f4dca4c45bb9f"
 menu_path: ["mask-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/mask-repeat/index.md", "title": "mask-repeat"}
-nav_next: {"path": "tailwind/docs/mask-type/index.md", "title": "mask-type"}
+nav_prev: {"path": "../mask-repeat/index.md", "title": "mask-repeat"}
+nav_next: {"path": "../mask-type/index.md", "title": "mask-type"}
 ---
 
 # mask-size

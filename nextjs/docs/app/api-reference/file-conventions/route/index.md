@@ -11,8 +11,8 @@ menu_path: ["route.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/public-folder/index.md", "title": "public Folder"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams/index.md", "title": "dynamicParams"}
+nav_prev: {"path": "../public-folder/index.md", "title": "public Folder"}
+nav_next: {"path": "../route-segment-config/dynamicParams/index.md", "title": "dynamicParams"}
 ---
 
 # route.js

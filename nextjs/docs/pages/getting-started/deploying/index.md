@@ -11,8 +11,8 @@ menu_path: ["How to deploy your Next.js application"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/getting-started/css/index.md", "title": "How to use CSS in your application"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/index.md", "title": "Building Your Application"}
+nav_prev: {"path": "../css/index.md", "title": "How to use CSS in your application"}
+nav_next: {"path": "../../building-your-application/index.md", "title": "Building Your Application"}
 ---
 
 # How to deploy your Next.js application

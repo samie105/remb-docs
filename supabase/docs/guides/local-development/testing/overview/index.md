@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:34.059Z"
 content_hash: "d6070d373bf3053a6a13d8e0e479be5496e0d3242c8a13afa2e9654d1f58545c"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Testing","Testing","Getting started","Getting started"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Testing","Testing","Getting started","Getting started"]
-nav_prev: {"path": "supabase/docs/guides/local-development/seeding-your-database/index.md", "title": "Seeding your database"}
-nav_next: {"path": "supabase/docs/guides/local-development/testing/pgtap-extended/index.md", "title": "Advanced pgTAP Testing"}
+nav_prev: {"path": "../../seeding-your-database/index.md", "title": "Seeding your database"}
+nav_next: {"path": "../pgtap-extended/index.md", "title": "Advanced pgTAP Testing"}
 ---
 
 # 

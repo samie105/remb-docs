@@ -10,8 +10,8 @@ content_hash: "0a41f22ac593526bfcf5605dff2428bce94344349afb799ad05ec5203e26d38c"
 menu_path: ["text-decoration-style"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
-nav_next: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
+nav_prev: {"path": "../text-decoration-color/index.md", "title": "text-decoration-color"}
+nav_next: {"path": "../text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
 ---
 
 # text-decoration-style

@@ -11,8 +11,8 @@ menu_path: ["headers"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateEtags/index.md", "title": "generateEtags"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
+nav_prev: {"path": "../generateEtags/index.md", "title": "generateEtags"}
+nav_next: {"path": "../htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
 ---
 
 # headers

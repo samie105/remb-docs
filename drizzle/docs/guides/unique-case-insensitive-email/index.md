@@ -10,8 +10,8 @@ content_hash: "9f3ba33ff0bf4442c3f3d6fd4b18c4601b2321d8167cd94e860780150ebfbef2"
 menu_path: ["Drizzle ORM - Unique and Case-Insensitive Email Handling"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
-nav_next: {"path": "drizzle/docs/guides/update-many-with-different-value/index.md", "title": "Drizzle ORM - Update many with different values for each row"}
+nav_prev: {"path": "../toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
+nav_next: {"path": "../update-many-with-different-value/index.md", "title": "Drizzle ORM - Update many with different values for each row"}
 ---
 
 Drizzle | Unique and Case-Insensitive Email Handling

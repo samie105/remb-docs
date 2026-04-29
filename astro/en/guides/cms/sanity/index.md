@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:17.377Z"
 content_hash: "81db259cab025c16218969df5d4190d43b86043ecb6a5e0260b28dadfcdfe8a6"
 menu_path: ["Sanity & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/prismic/index.md", "title": "Prismic & Astro"}
-nav_next: {"path": "astro/en/guides/cms/sitecore/index.md", "title": "Sitecore Experience Manager & Astro"}
+nav_prev: {"path": "../prismic/index.md", "title": "Prismic & Astro"}
+nav_next: {"path": "../sitecore/index.md", "title": "Sitecore Experience Manager & Astro"}
 ---
 
 # Sanity & Astro

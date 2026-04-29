@@ -10,8 +10,8 @@ content_hash: "1271c9385e9a589fa5c3c456017a5d328afeffad3a9496baa41bcd81f4962b27"
 menu_path: ["Shared packages & examples"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/client/index.md", "title": "Add methods to Prisma Client"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/model/index.md", "title": "Add custom methods to your models"}
+nav_prev: {"path": "../client/index.md", "title": "Add methods to Prisma Client"}
+nav_next: {"path": "../model/index.md", "title": "Add custom methods to your models"}
 ---
 
 Client Extensions
@@ -20,7 +20,7 @@ Explore the Prisma Client extensions that have been built by Prisma and its comm
 
 The following is a list of extensions we've built at Prisma:
 
-The following is a list of extensions created by the community. If you want to create your own package, refer to the [Shared Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md) documentation.
+The following is a list of extensions created by the community. If you want to create your own package, refer to the [Shared Prisma Client extensions](../shared-extensions/index.md) documentation.
 
 If you have built an extension and would like to see it featured, feel free to add it to the list by opening a pull request.
 
@@ -44,4 +44,4 @@ If you have built an extension and would like to see it featured, feel free to a
 | [`exists-method`](https://github.com/prisma/prisma-client-extensions/tree/main/exists-fn) | Demonstrates how to add an `exists` method to all your models |
 | [`update-delete-ignore-not-found`](https://github.com/prisma/prisma-client-extensions/tree/main/update-delete-ignore-not-found) | Demonstrates how to add the `updateIgnoreOnNotFound` and `deleteIgnoreOnNotFound` methods to all your models. |
 
--   Learn more about [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md).
+-   Learn more about [Prisma Client extensions](../index.md).

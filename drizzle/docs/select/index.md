@@ -10,13 +10,13 @@ content_hash: "16e32c99e6f035b7f957f2d9ba088863ec124cd064b80d719e6c2f8f1edba101"
 menu_path: ["SQL Select"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/rqb-v2/index.md", "title": "Drizzle Queries"}
-nav_next: {"path": "drizzle/docs/insert/index.md", "title": "SQL Insert"}
+nav_prev: {"path": "../rqb-v2/index.md", "title": "Drizzle Queries"}
+nav_next: {"path": "../insert/index.md", "title": "SQL Insert"}
 ---
 
 ## SQL Select
 
-Drizzle provides you the most SQL-like way to fetch data from your database, while remaining type-safe and composable. It natively supports mostly every query feature and capability of every dialect, and whatever it doesn’t support yet, can be added by the user with the powerful [`sql`](drizzle/docs/sql/index.md) operator.
+Drizzle provides you the most SQL-like way to fetch data from your database, while remaining type-safe and composable. It natively supports mostly every query feature and capability of every dialect, and whatever it doesn’t support yet, can be added by the user with the powerful [`sql`](../sql/index.md) operator.
 
 For the following examples, let’s assume you have a `users` table defined like this:
 
@@ -151,7 +151,7 @@ IMPORTANT
 By specifying `sql<string>`, you are telling Drizzle that the **expected** type of the field is `string`.  
 If you specify it incorrectly (e.g. use `sql<number>` for a field that will be returned as a string), the runtime value won’t match the expected type. Drizzle cannot perform any type casts based on the provided type generic, because that information is not available at runtime.
 
-If you need to apply runtime transformations to the returned value, you can use the [`.mapWith()`](drizzle/docs/sql/index.md#sqlmapwith) method.
+If you need to apply runtime transformations to the returned value, you can use the [`.mapWith()`](../sql/index.md#sqlmapwith) method.
 
 Info
 
@@ -217,11 +217,11 @@ select distinct on ("name") "name" from "users" order by "name";
 
 Powered by TypeScript, Drizzle APIs let you build your select queries in a variety of flexible ways.
 
-Sneak peek of advanced partial select, for more detailed advanced usage examples - see our [dedicated guide](drizzle/docs/guides/include-or-exclude-columns/index.md).
+Sneak peek of advanced partial select, for more detailed advanced usage examples - see our [dedicated guide](../guides/include-or-exclude-columns/index.md).
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](../upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -269,7 +269,7 @@ await db.query.posts.findMany({
 
 ### Filters[](#filters)
 
-You can filter the query results using the [filter operators](drizzle/docs/operators/index.md) in the `.where()` method:
+You can filter the query results using the [filter operators](../operators/index.md) in the `.where()` method:
 
 ```typescript
 import { eq, lt, gte, ne } from 'drizzle-orm';
@@ -288,7 +288,7 @@ select "id", "name", "age" from "users" where "id" >= 42;
 select "id", "name", "age" from "users" where "id" <> 42;
 ```
 
-All filter operators are implemented using the [`sql`](drizzle/docs/sql/index.md) function. You can use it yourself to write arbitrary SQL filters, or build your own operators. For inspiration, you can check how the operators provided by Drizzle are [implemented](https://github.com/drizzle-team/drizzle-orm/blob/main/drizzle-orm/src/sql/expressions/conditions.ts).
+All filter operators are implemented using the [`sql`](../sql/index.md) function. You can use it yourself to write arbitrary SQL filters, or build your own operators. For inspiration, you can check how the operators provided by Drizzle are [implemented](https://github.com/drizzle-team/drizzle-orm/blob/main/drizzle-orm/src/sql/expressions/conditions.ts).
 
 ```typescript
 import { sql } from 'drizzle-orm';
@@ -384,7 +384,7 @@ select "id", "name", "age" from "users" where "id" = 42 or "name" = 'Dan';
 
 In combination with TypeScript, Drizzle APIs provide you powerful and flexible ways to combine filters in queries.
 
-Sneak peek of conditional filtering, for more detailed advanced usage examples - see our [dedicated guide](drizzle/docs/guides/conditional-filters-in-query/index.md).
+Sneak peek of conditional filtering, for more detailed advanced usage examples - see our [dedicated guide](../guides/conditional-filters-in-query/index.md).
 
 ```ts
 const searchPosts = async (term?: string) => {
@@ -476,7 +476,7 @@ select "id", "name", "age" from "users" order by "name" asc, "name2" desc;
 
 Powered by TypeScript, Drizzle APIs let you implement all possible SQL pagination and sorting approaches.
 
-Sneak peek of advanced pagination, for more detailed advanced usage examples - see our dedicated [limit offset pagination](drizzle/docs/guides/limit-offset-pagination/index.md) and [cursor pagination](drizzle/docs/guides/cursor-based-pagination/index.md) guides.
+Sneak peek of advanced pagination, for more detailed advanced usage examples - see our dedicated [limit offset pagination](../guides/limit-offset-pagination/index.md) and [cursor pagination](../guides/cursor-based-pagination/index.md) guides.
 
 example 1
 
@@ -661,9 +661,9 @@ select "age", cast(count("id") as int)
   having cast(count("id") as int) > 1;
 ```
 
-`cast(... as int)` is necessary because `count()` returns `bigint` in PostgreSQL and `decimal` in MySQL, which are treated as string values instead of numbers. Alternatively, you can use [`.mapWith(Number)`](drizzle/docs/sql/index.md#sqlmapwith) to cast the value to a number at runtime.
+`cast(... as int)` is necessary because `count()` returns `bigint` in PostgreSQL and `decimal` in MySQL, which are treated as string values instead of numbers. Alternatively, you can use [`.mapWith(Number)`](../sql/index.md#sqlmapwith) to cast the value to a number at runtime.
 
-If you need count aggregation - we recommend using our [`$count`](drizzle/docs/select/index.md#count) API
+If you need count aggregation - we recommend using our [`$count`](index.md#count) API
 
 ### Aggregations helpers[](#aggregations-helpers)
 
@@ -906,7 +906,7 @@ select count(*) from "users";
 select count(*) from "users" where "name" = 'Dan';
 ```
 
-It is exceptionally useful in [subqueries](drizzle/docs/select/index.md#select-from-subquery):
+It is exceptionally useful in [subqueries](index.md#select-from-subquery):
 
 ```ts
 const users = await db.select({
@@ -915,7 +915,7 @@ const users = await db.select({
 }).from(users);
 ```
 
-usage example with [relational queries](drizzle/docs/rqb/index.md)
+usage example with [relational queries](../rqb/index.md)
 
 ```ts
 const users = await db.query.users.findMany({

@@ -11,8 +11,8 @@ menu_path: ["ImageResponse"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/headers/index.md", "title": "headers"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/next-request/index.md", "title": "NextRequest"}
+nav_prev: {"path": "../headers/index.md", "title": "headers"}
+nav_next: {"path": "../next-request/index.md", "title": "NextRequest"}
 ---
 
 # ImageResponse

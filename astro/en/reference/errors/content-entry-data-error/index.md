@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:09.069Z"
 content_hash: "173c755d421f0f73ba921beab599a48993f2ec6a393eaab8bcff8b1cd8d8c408"
 menu_path: ["Content entry data does not match schema."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/content-collection-type-mismatch-error/index.md", "title": "Collection contains entries of a different type."}
-nav_next: {"path": "astro/en/reference/errors/content-loader-invalid-data-error/index.md", "title": "Content entry is missing an ID"}
+nav_prev: {"path": "../content-collection-type-mismatch-error/index.md", "title": "Collection contains entries of a different type."}
+nav_next: {"path": "../content-loader-invalid-data-error/index.md", "title": "Content entry is missing an ID"}
 ---
 
 # Content entry data does not match schema.

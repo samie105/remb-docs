@@ -11,8 +11,8 @@ menu_path: ["Routing"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/index.md", "title": "Building Your Application"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/pages-and-layouts/index.md", "title": "Pages and Layouts"}
+nav_prev: {"path": "../index.md", "title": "Building Your Application"}
+nav_next: {"path": "pages-and-layouts/index.md", "title": "Pages and Layouts"}
 ---
 
 # Routing

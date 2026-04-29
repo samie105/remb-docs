@@ -10,8 +10,8 @@ content_hash: "e4a9e7e0cf84aa7dfd1ee6347d07f875d503c27dcfc79666df50d0a9ac036914"
 menu_path: ["stream/consumers - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/stream/index.md", "title": "stream - Node documentation"}
-nav_next: {"path": "deno/api/node/stream/promises/index.md", "title": "stream/promises - Node documentation"}
+nav_prev: {"path": "../index.md", "title": "stream - Node documentation"}
+nav_next: {"path": "../promises/index.md", "title": "stream/promises - Node documentation"}
 ---
 
 ### Usage in Deno

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:05.675Z"
 content_hash: "aede478b61174b7b6601c9519efc28a4a0205ea90a5d08e13f0478aa1b6e8631"
 menu_path: ["Node.js Compatibility"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/node-api/index.md", "title": "Node-API"}
-nav_next: {"path": "bun/docs/runtime/plugins/index.md", "title": "Plugins"}
+nav_prev: {"path": "../node-api/index.md", "title": "Node-API"}
+nav_next: {"path": "../plugins/index.md", "title": "Plugins"}
 ---
 
 [Skip to main content](#content-area)

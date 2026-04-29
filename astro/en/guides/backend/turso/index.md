@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:47.024Z"
 content_hash: "71cb11e72d0397b9c4ef8bfa0b072ca8fd949ad58f70bd483f61a84e0c883f91"
 menu_path: ["Turso & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/supabase/index.md", "title": "Supabase & Astro"}
-nav_next: {"path": "astro/en/guides/backend/xata/index.md", "title": "Xata & Astro"}
+nav_prev: {"path": "../supabase/index.md", "title": "Supabase & Astro"}
+nav_next: {"path": "../xata/index.md", "title": "Xata & Astro"}
 ---
 
 # Turso & Astro

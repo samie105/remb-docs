@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:57.429Z"
 content_hash: "45f7be0a55ee6c3141ae3254f19e913356cf815402f3c7a4c467d56860581330"
 menu_path: ["HTTP RPC Specification"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/quickstart/index.md", "title": "Quickstart"}
-nav_next: {"path": "trpc/docs/v10/server/adapters/index.md", "title": "Adapters"}
+nav_prev: {"path": "../quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "../server/adapters/index.md", "title": "Adapters"}
 ---
 
 ## Methods <-> Type mapping[​](#methods---type-mapping "Direct link to Methods <-> Type mapping")
@@ -199,7 +199,7 @@ Example JSON Response
 
 *   When possible, we propagate HTTP status codes from the error thrown.
 *   If the response has different statuses, we send back `207 Multi-Status` \_(e.g., if one call errored and one succeeded) \_
-*   For more on errors and how to customize them see [Error Formatting](trpc/docs/v10/server/error-formatting/index.md).
+*   For more on errors and how to customize them see [Error Formatting](../server/error-formatting/index.md).
 
 ## Error Codes <-> HTTP Status[​](#error-codes---http-status "Direct link to Error Codes <-> HTTP Status")
 

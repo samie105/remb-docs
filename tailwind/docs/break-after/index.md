@@ -10,8 +10,8 @@ content_hash: "1964e059911965471d3f12d03764c92da3984b8730ed25081ecd39e90a77f612"
 menu_path: ["break-after"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/columns/index.md", "title": "columns"}
-nav_next: {"path": "tailwind/docs/break-before/index.md", "title": "break-before"}
+nav_prev: {"path": "../columns/index.md", "title": "columns"}
+nav_next: {"path": "../break-before/index.md", "title": "break-before"}
 ---
 
 # break-after

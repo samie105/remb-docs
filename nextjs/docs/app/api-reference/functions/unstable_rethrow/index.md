@@ -11,8 +11,8 @@ menu_path: ["unstable_rethrow"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unstable_noStore/index.md", "title": "unstable_noStore"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/updateTag/index.md", "title": "updateTag"}
+nav_prev: {"path": "../unstable_noStore/index.md", "title": "unstable_noStore"}
+nav_next: {"path": "../updateTag/index.md", "title": "updateTag"}
 ---
 
 # unstable\_rethrow

@@ -10,8 +10,8 @@ content_hash: "34c29169fb56bf51d54936db18362cf38077884395aac91545f9050ea7956f57"
 menu_path: ["Storage - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/web/platform/index.md", "title": "Platform - Web documentation"}
-nav_next: {"path": "deno/api/web/streams/index.md", "title": "Streams - Web documentation"}
+nav_prev: {"path": "../platform/index.md", "title": "Platform - Web documentation"}
+nav_next: {"path": "../streams/index.md", "title": "Streams - Web documentation"}
 ---
 
 I

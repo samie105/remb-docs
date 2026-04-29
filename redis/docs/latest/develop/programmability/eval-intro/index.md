@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:36.480Z"
 content_hash: "bc1a120cf8247483ce4e9f2c6fe07350d05aab950ae83f7e0616f08d11a709d5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Scripting with Lua","→","Scripting with Lua"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Scripting with Lua","→","Scripting with Lua"]
-nav_prev: {"path": "redis/docs/latest/develop/get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
-nav_next: {"path": "redis/docs/latest/develop/programmability/functions-intro/index.md", "title": "Redis functions"}
+nav_prev: {"path": "../../get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
+nav_next: {"path": "../functions-intro/index.md", "title": "Redis functions"}
 ---
 
 # Scripting with Lua

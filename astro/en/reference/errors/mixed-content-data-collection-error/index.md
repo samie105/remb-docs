@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:55.620Z"
 content_hash: "a5b9041bcade9b5bda1a588ce5f96c3ab53904f9742be24a97c5b98062a99187"
 menu_path: ["Content and data cannot be in same collection."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/missing-sharp/index.md", "title": "Could not find Sharp."}
-nav_next: {"path": "astro/en/reference/errors/no-adapter-installed-server-islands/index.md", "title": "Cannot use Server Islands without an adapter."}
+nav_prev: {"path": "../missing-sharp/index.md", "title": "Could not find Sharp."}
+nav_next: {"path": "../no-adapter-installed-server-islands/index.md", "title": "Cannot use Server Islands without an adapter."}
 ---
 
 # Content and data cannot be in same collection.

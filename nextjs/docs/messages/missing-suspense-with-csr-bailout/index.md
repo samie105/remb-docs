@@ -11,8 +11,8 @@ menu_path: ["Missing Suspense boundary with useSearchParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/middleware-upgrade-guide/index.md", "title": "Middleware Upgrade Guide"}
-nav_next: {"path": "nextjs/docs/messages/next-dynamic-modules/index.md", "title": "`next/dynamic` has deprecated loading multiple modules at once"}
+nav_prev: {"path": "../middleware-upgrade-guide/index.md", "title": "Middleware Upgrade Guide"}
+nav_next: {"path": "../next-dynamic-modules/index.md", "title": "`next/dynamic` has deprecated loading multiple modules at once"}
 ---
 
 # Missing Suspense boundary with useSearchParams

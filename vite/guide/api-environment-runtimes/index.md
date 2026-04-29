@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:42.594Z"
 content_hash: "58f06bb17c90240bd2f92d2c3ca0a8aa3d89dadb3bb2ba2b7ebd24d89ec6dcc0"
 menu_path: ["Environment API for Runtimes ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/api-environment-frameworks/index.md", "title": "Environment API for Frameworks \u200b"}
-nav_next: {"path": "vite/guide/badges/index.md", "title": "Compatibility Badges \u200b"}
+nav_prev: {"path": "../api-environment-frameworks/index.md", "title": "Environment API for Frameworks \u200b"}
+nav_next: {"path": "../badges/index.md", "title": "Compatibility Badges \u200b"}
 ---
 
 ## Environment API for Runtimes [​](#environment-api-for-runtimes)
@@ -135,7 +135,7 @@ function createWorkerdDevEnvironment(
 
 By default, `HotChannel` transports have `server.fs` restrictions applied, meaning only files within the allowed directories can be served. If your transport is not exposed over the network (e.g., it communicates via worker threads or in-process calls), you can set `skipFsCheck: true` on the `HotChannel` to bypass these restrictions.
 
-There are [multiple communication levels for the `DevEnvironment`](vite/guide/api-environment-frameworks/index.md#devenvironment-communication-levels). To make it easier for frameworks to write runtime agnostic code, we recommend to implement the most flexible communication level possible.
+There are [multiple communication levels for the `DevEnvironment`](../api-environment-frameworks/index.md#devenvironment-communication-levels). To make it easier for frameworks to write runtime agnostic code, we recommend to implement the most flexible communication level possible.
 
 ## `ModuleRunner` [​](#modulerunner)
 

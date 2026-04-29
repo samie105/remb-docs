@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:12.130Z"
 content_hash: "0c321234ded7f104407420af3a63969ba8353e49b981f41b5f7f5ec21cf9c8f1"
 menu_path: ["Middlewares"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/metadata/index.md", "title": "Metadata"}
-nav_next: {"path": "trpc/docs/v10/server/procedures/index.md", "title": "Define Procedures"}
+nav_prev: {"path": "../metadata/index.md", "title": "Metadata"}
+nav_next: {"path": "../procedures/index.md", "title": "Define Procedures"}
 ---
 
 You are able to add middleware(s) to a procedure with the `t.procedure.use()` method. The middleware(s) will wrap the invocation of the procedure and must pass through its return value.

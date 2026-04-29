@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:06.746Z"
 content_hash: "c47fd107f04fc4d8a124e8598b834b25cd7ec55822c773cf0db1bda77e4502e7"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix L. Acronyms"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/docguide.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0J.\u00a0Documentation"}
-nav_next: {"path": "postgres/docs/current/glossary.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0M.\u00a0Glossary"}
+nav_prev: {"path": "../docguide.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0J.\u00a0Documentation"}
+nav_next: {"path": "../glossary.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0M.\u00a0Glossary"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

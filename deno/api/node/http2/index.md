@@ -10,8 +10,8 @@ content_hash: "19a176d8afb77d7f437c7089fcd96518a794e5b051b58a3f3de93eb671f635e1"
 menu_path: ["http2 - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/http/index.md", "title": "http - Node documentation"}
-nav_next: {"path": "deno/api/node/https/index.md", "title": "https - Node documentation"}
+nav_prev: {"path": "../http/index.md", "title": "http - Node documentation"}
+nav_next: {"path": "../https/index.md", "title": "https - Node documentation"}
 ---
 
 ### Usage in Deno

@@ -11,8 +11,8 @@ menu_path: ["generateSitemaps"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-metadata/index.md", "title": "generateMetadata"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-static-params/index.md", "title": "generateStaticParams"}
+nav_prev: {"path": "../generate-metadata/index.md", "title": "generateMetadata"}
+nav_next: {"path": "../generate-static-params/index.md", "title": "generateStaticParams"}
 ---
 
 # generateSitemaps

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:02.906Z"
 content_hash: "90e196985e7f3a77cd21c19cc4a0258fd7fafaf2aff732be8e21c79fdaad7dfa"
 menu_path: ["Experimental Intellisense for content collections"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/experimental-flags/client-prerender/index.md", "title": "Experimental client prerendering"}
-nav_next: {"path": "astro/en/reference/experimental-flags/chrome-devtools-workspace/index.md", "title": "Experimental Chrome DevTools workspace"}
+nav_prev: {"path": "../client-prerender/index.md", "title": "Experimental client prerendering"}
+nav_next: {"path": "../chrome-devtools-workspace/index.md", "title": "Experimental Chrome DevTools workspace"}
 ---
 
 # Experimental Intellisense for content collections

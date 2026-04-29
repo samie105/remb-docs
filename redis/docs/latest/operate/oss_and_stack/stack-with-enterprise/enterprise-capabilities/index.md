@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:12:16.483Z"
 content_hash: "abf114d04170e8b3a92ee12e7ced89c7038788c2d3eaba51363e8b354ed94642"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Redis Software and Redis Open Source feature compatibility","→","Redis Software and Redis Open Source feature compatibility"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Redis Software and Redis Open Source feature compatibility","→","Redis Software and Redis Open Source feature compatibility"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/quick_start_ri/index.md", "title": "Quick start using Redis Insight"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/install/index.md", "title": "Install and upgrade modules"}
+nav_prev: {"path": "../deprecated-features/triggers-and-functions/quick_start_ri/index.md", "title": "Quick start using Redis Insight"}
+nav_next: {"path": "../install/index.md", "title": "Install and upgrade modules"}
 ---
 
 # Redis Software and Redis Open Source feature compatibility

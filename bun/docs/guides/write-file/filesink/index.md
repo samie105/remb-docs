@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:50.574Z"
 content_hash: "e1b2b25dfad5586259ca10dcd900e11d086e0437ed87fe78206fddd0bbe78cea"
 menu_path: ["Write a file incrementally"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/write-file/file-cp/index.md", "title": "Copy a file to another location"}
-nav_next: {"path": "bun/docs/guides/write-file/response/index.md", "title": "Write a Response to a file"}
+nav_prev: {"path": "../file-cp/index.md", "title": "Copy a file to another location"}
+nav_next: {"path": "../response/index.md", "title": "Write a Response to a file"}
 ---
 
 [Skip to main content](#content-area)

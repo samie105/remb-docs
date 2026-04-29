@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:40.114Z"
 content_hash: "d78f5877502b5a019b20e3ca3d8ed36589515ecfbb044c63c84cfe6b83d8c6fd"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Vercel Postgres","Vercel Postgres"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Vercel Postgres","Vercel Postgres"]
-nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/render/index.md", "title": "Migrate from Render to Supabase"}
-nav_next: {"path": "supabase/docs/guides/platform/migrating-within-supabase/index.md", "title": "Migrating within Supabase"}
+nav_prev: {"path": "../render/index.md", "title": "Migrate from Render to Supabase"}
+nav_next: {"path": "../../migrating-within-supabase/index.md", "title": "Migrating within Supabase"}
 ---
 
 # 

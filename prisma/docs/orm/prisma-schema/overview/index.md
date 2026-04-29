@@ -11,8 +11,8 @@ menu_path: ["Overview of Prisma Schema"]
 section_path: []
 tab_variants: ["Relational Databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/views/index.md", "title": "Views"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/data-sources/index.md", "title": "Data sources"}
+nav_prev: {"path": "../data-model/views/index.md", "title": "Views"}
+nav_next: {"path": "data-sources/index.md", "title": "Data sources"}
 ---
 
 Overview
@@ -23,13 +23,13 @@ The Prisma schema is the main method of configuration when using Prisma. It is t
 
 The Prisma Schema (or _schema_ for short) is the main method of configuration for your Prisma ORM setup. It consists of the following parts:
 
--   [**Data sources**](prisma/docs/orm/prisma-schema/overview/data-sources/index.md): Specify the details of the data sources Prisma ORM should connect to (e.g. a PostgreSQL database)
--   [**Generators**](prisma/docs/orm/prisma-schema/overview/generators/index.md): Specifies what clients should be generated based on the data model (e.g. Prisma Client)
--   [**Data model definition**](prisma/docs/orm/prisma-schema/data-model/models/index.md): Specifies your application [models](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-models) (the shape of the data per data source) and their [relations](prisma/docs/orm/prisma-schema/data-model/relations/index.md)
+-   [**Data sources**](data-sources/index.md): Specify the details of the data sources Prisma ORM should connect to (e.g. a PostgreSQL database)
+-   [**Generators**](generators/index.md): Specifies what clients should be generated based on the data model (e.g. Prisma Client)
+-   [**Data model definition**](../data-model/models/index.md): Specifies your application [models](../data-model/models/index.md#defining-models) (the shape of the data per data source) and their [relations](../data-model/relations/index.md)
 
-It is typically a single file called `schema.prisma` (or multiple files with `.prisma` file extension) that is stored in a defined but customizable [location](prisma/docs/orm/prisma-schema/overview/location/index.md). You can also [organize your Prisma schema in multiple files](prisma/docs/orm/prisma-schema/overview/location/index.md#multi-file-prisma-schema) if you prefer that.
+It is typically a single file called `schema.prisma` (or multiple files with `.prisma` file extension) that is stored in a defined but customizable [location](location/index.md). You can also [organize your Prisma schema in multiple files](location/index.md#multi-file-prisma-schema) if you prefer that.
 
-See the [Prisma schema API reference](prisma/docs/orm/reference/prisma-schema-reference/index.md) for detailed information about each section of the schema.
+See the [Prisma schema API reference](../../reference/prisma-schema-reference/index.md) for detailed information about each section of the schema.
 
 Whenever a `prisma` command is invoked, the CLI typically reads some information from the schema, e.g.:
 
@@ -43,13 +43,13 @@ The following is an example of a Prisma Schema that specifies:
 -   A data source (PostgreSQL or MongoDB)
 -   A generator (Prisma Client)
 -   A data model definition with two models (with one relation) and one `enum`
--   Several [native data type attributes](prisma/docs/orm/prisma-schema/data-model/models/index.md#native-types-mapping) (`@db.VarChar(255)`, `@db.ObjectId`)
+-   Several [native data type attributes](../data-model/models/index.md#native-types-mapping) (`@db.VarChar(255)`, `@db.ObjectId`)
 
-Prisma Schema files are written in Prisma Schema Language (PSL). See the [data sources](prisma/docs/orm/prisma-schema/overview/data-sources/index.md), [generators](prisma/docs/orm/prisma-schema/overview/generators/index.md), [data model definition](prisma/docs/orm/prisma-schema/data-model/models/index.md) and of course [Prisma Schema API reference](prisma/docs/orm/reference/prisma-schema-reference/index.md) pages for details and examples.
+Prisma Schema files are written in Prisma Schema Language (PSL). See the [data sources](data-sources/index.md), [generators](generators/index.md), [data model definition](../data-model/models/index.md) and of course [Prisma Schema API reference](../../reference/prisma-schema-reference/index.md) pages for details and examples.
 
 ### [VS Code](#vs-code)
 
-Syntax highlighting for PSL is available via a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma) (which also lets you auto-format the contents of your Prisma schema and indicates syntax errors with red squiggly lines). Learn more about [setting up Prisma ORM in your editor](prisma/docs/orm/more/dev-environment/editor-setup/index.md).
+Syntax highlighting for PSL is available via a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma) (which also lets you auto-format the contents of your Prisma schema and indicates syntax errors with red squiggly lines). Learn more about [setting up Prisma ORM in your editor](../../more/dev-environment/editor-setup/index.md).
 
 ### [GitHub](#github)
 
@@ -83,7 +83,7 @@ You can use the `env()` function in the following places:
 -   A datasource url
 -   Generator binary targets
 
-See [Environment variables](prisma/docs/orm/more/dev-environment/environment-variables/index.md) for more information about how to use an `.env` file during development.
+See [Environment variables](../../more/dev-environment/environment-variables/index.md) for more information about how to use an `.env` file during development.
 
 There are three types of comments that are supported in Prisma Schema Language:
 
@@ -116,7 +116,7 @@ model Customer {
 
 Prisma ORM supports formatting `.prisma` files automatically. There are two ways to format `.prisma` files:
 
--   Run the [`prisma format`](prisma/docs/orm/reference/prisma-cli-reference/index.md#format) command.
+-   Run the [`prisma format`](../../reference/prisma-cli-reference/index.md#format) command.
 -   Install the [Prisma VS Code extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma) and invoke the [VS Code format action](https://code.visualstudio.com/docs/editor/codebasics#_formatting) - manually or on save.
 
 There are no configuration options - [formatting rules](#formatting-rules) are fixed (similar to Golang's `gofmt` but unlike Javascript's `prettier`):

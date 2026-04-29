@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:28.783Z"
 content_hash: "6af9ee2a5fb38b3ba568a4408c1b4386c3adb2f1c4e408e245aa2379f567454c"
 menu_path: ["Database","Database","Extensions","Extensions","index_advisor: Query optimization","index_advisor: Query optimization"]
 section_path: ["Database","Database","Extensions","Extensions","index_advisor: Query optimization","index_advisor: Query optimization"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/hypopg/index.md", "title": "HypoPG: Hypothetical indexes"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pg_cron/index.md", "title": "pg_cron: Schedule Recurring Jobs with Cron Syntax in Postgres"}
+nav_prev: {"path": "../hypopg/index.md", "title": "HypoPG: Hypothetical indexes"}
+nav_next: {"path": "../pg_cron/index.md", "title": "pg_cron: Schedule Recurring Jobs with Cron Syntax in Postgres"}
 ---
 
 # 

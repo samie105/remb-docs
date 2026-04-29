@@ -11,8 +11,8 @@ menu_path: ["Customizing migrations"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","Before","After","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","Before","After","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/baselining/index.md", "title": "Baselining a database"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md", "title": "Development and production"}
+nav_prev: {"path": "../baselining/index.md", "title": "Baselining a database"}
+nav_next: {"path": "../development-and-production/index.md", "title": "Development and production"}
 ---
 
 Workflows

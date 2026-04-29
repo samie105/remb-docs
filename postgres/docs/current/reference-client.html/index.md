@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:45.265Z"
 content_hash: "08f460bf5f9f4ca4ea8cf8e359726b34150ebf8aa3c6393ea9c49092140885c8"
 menu_path: ["PostgreSQL Client Applications"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-commands.html/index.md", "title": "SQL Commands"}
-nav_next: {"path": "postgres/docs/current/views.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a053.\u00a0System Views"}
+nav_prev: {"path": "../sql-commands.html/index.md", "title": "SQL Commands"}
+nav_next: {"path": "../views.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a053.\u00a0System Views"}
 ---
 
 This part contains reference information for PostgreSQL client applications and utilities. Not all of these commands are of general utility; some might require special privileges. The common feature of these applications is that they can be run on any host, independent of where the database server resides.
@@ -25,7 +25,7 @@ When specified on the command line, user and database names have their case pres
 
 [createuser](https://www.postgresql.org/docs/current/app-createuser.html) — define a new PostgreSQL user account
 
-[dropdb](postgres/docs/current/app-dropdb.html/index.md) — remove a PostgreSQL database
+[dropdb](../app-dropdb.html/index.md) — remove a PostgreSQL database
 
 [dropuser](https://www.postgresql.org/docs/current/app-dropuser.html) — remove a PostgreSQL user account
 
@@ -33,9 +33,9 @@ When specified on the command line, user and database names have their case pres
 
 [pg\_amcheck](https://www.postgresql.org/docs/current/app-pgamcheck.html) — checks for corruption in one or more PostgreSQL databases
 
-[pg\_basebackup](postgres/docs/current/app-pgbasebackup.html/index.md) — take a base backup of a PostgreSQL cluster
+[pg\_basebackup](../app-pgbasebackup.html/index.md) — take a base backup of a PostgreSQL cluster
 
-[pgbench](postgres/docs/current/pgbench.html/index.md) — run a benchmark test on PostgreSQL
+[pgbench](../pgbench.html/index.md) — run a benchmark test on PostgreSQL
 
 [pg\_combinebackup](https://www.postgresql.org/docs/current/app-pgcombinebackup.html) — reconstruct a full backup from an incremental backup and dependent backups
 
@@ -43,20 +43,20 @@ When specified on the command line, user and database names have their case pres
 
 [pg\_dump](https://www.postgresql.org/docs/current/app-pgdump.html) — export a PostgreSQL database as an SQL script or to other formats
 
-[pg\_dumpall](postgres/docs/current/app-pg-dumpall.html/index.md) — extract a PostgreSQL database cluster into a script file
+[pg\_dumpall](../app-pg-dumpall.html/index.md) — extract a PostgreSQL database cluster into a script file
 
 [pg\_isready](https://www.postgresql.org/docs/current/app-pg-isready.html) — check the connection status of a PostgreSQL server
 
-[pg\_receivewal](postgres/docs/current/app-pgreceivewal.html/index.md) — stream write-ahead logs from a PostgreSQL server
+[pg\_receivewal](../app-pgreceivewal.html/index.md) — stream write-ahead logs from a PostgreSQL server
 
-[pg\_recvlogical](postgres/docs/current/app-pgrecvlogical.html/index.md) — control PostgreSQL logical decoding streams
+[pg\_recvlogical](../app-pgrecvlogical.html/index.md) — control PostgreSQL logical decoding streams
 
-[pg\_restore](postgres/docs/current/app-pgrestore.html/index.md) — restore a PostgreSQL database from an archive file created by pg\_dump
+[pg\_restore](../app-pgrestore.html/index.md) — restore a PostgreSQL database from an archive file created by pg\_dump
 
-[pg\_verifybackup](postgres/docs/current/app-pgverifybackup.html/index.md) — verify the integrity of a base backup of a PostgreSQL cluster
+[pg\_verifybackup](../app-pgverifybackup.html/index.md) — verify the integrity of a base backup of a PostgreSQL cluster
 
-[psql](postgres/docs/current/app-psql.html/index.md) — PostgreSQL interactive terminal
+[psql](../app-psql.html/index.md) — PostgreSQL interactive terminal
 
-[reindexdb](postgres/docs/current/app-reindexdb.html/index.md) — reindex a PostgreSQL database
+[reindexdb](../app-reindexdb.html/index.md) — reindex a PostgreSQL database
 
-[vacuumdb](postgres/docs/current/app-vacuumdb.html/index.md) — garbage-collect and analyze a PostgreSQL database
+[vacuumdb](../app-vacuumdb.html/index.md) — garbage-collect and analyze a PostgreSQL database

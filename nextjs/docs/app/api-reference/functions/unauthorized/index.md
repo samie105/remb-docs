@@ -11,8 +11,8 @@ menu_path: ["unauthorized"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/revalidateTag/index.md", "title": "revalidateTag"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/unstable_cache/index.md", "title": "unstable_cache"}
+nav_prev: {"path": "../revalidateTag/index.md", "title": "revalidateTag"}
+nav_next: {"path": "../unstable_cache/index.md", "title": "unstable_cache"}
 ---
 
 # unauthorized

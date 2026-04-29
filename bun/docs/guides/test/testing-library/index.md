@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:55:21.766Z"
 content_hash: "95b9f14da0f8bee1bd771aea861ad53aa0f0be140e04a3ceb70f97144e256ecf"
 menu_path: ["Using Testing Library with Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/svelte-test/index.md", "title": "import, require, and test Svelte components with bun test"}
-nav_next: {"path": "bun/docs/guides/test/timeout/index.md", "title": "Set a per-test timeout with the Bun test runner"}
+nav_prev: {"path": "../svelte-test/index.md", "title": "import, require, and test Svelte components with bun test"}
+nav_next: {"path": "../timeout/index.md", "title": "Set a per-test timeout with the Bun test runner"}
 ---
 
 You can use [Testing Library](https://testing-library.com/) with Bun’s test runner.
 
 * * *
 
-As a prerequisite to using Testing Library you will need to install [Happy Dom](https://github.com/capricorn86/happy-dom). ([see Bun’s Happy DOM guide for more information](bun/docs/guides/test/happy-dom/index.md)).
+As a prerequisite to using Testing Library you will need to install [Happy Dom](https://github.com/capricorn86/happy-dom). ([see Bun’s Happy DOM guide for more information](../happy-dom/index.md)).
 
 terminal
 
@@ -37,7 +37,7 @@ bun add -D @testing-library/react @testing-library/dom @testing-library/jest-dom
 
 * * *
 
-Next you will need to create a preload script for Happy DOM and for Testing Library. For more details about the Happy DOM setup script see [Bun’s Happy DOM guide](bun/docs/guides/test/happy-dom/index.md).
+Next you will need to create a preload script for Happy DOM and for Testing Library. For more details about the Happy DOM setup script see [Bun’s Happy DOM guide](../happy-dom/index.md).
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)happydom.ts
 
@@ -113,4 +113,4 @@ test("Can use Testing Library", () => {
 
 * * *
 
-Refer to the [Testing Library docs](https://testing-library.com/), [Happy DOM repo](https://github.com/capricorn86/happy-dom) and [Docs > Test runner > DOM](bun/docs/test/dom/index.md) for complete documentation on writing browser tests with Bun.
+Refer to the [Testing Library docs](https://testing-library.com/), [Happy DOM repo](https://github.com/capricorn86/happy-dom) and [Docs > Test runner > DOM](../../../test/dom/index.md) for complete documentation on writing browser tests with Bun.

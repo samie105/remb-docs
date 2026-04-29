@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:08.255Z"
 content_hash: "14967ffd8923f9ee9cee9a0532eb8bf085a2cc302b359ac80c52dd381fc5f7b7"
 menu_path: ["Color"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/child-process/index.md", "title": "Spawn"}
-nav_next: {"path": "bun/docs/runtime/console/index.md", "title": "Console"}
+nav_prev: {"path": "../child-process/index.md", "title": "Spawn"}
+nav_next: {"path": "../console/index.md", "title": "Console"}
 ---
 
 `Bun.color(input, outputFormat?)` leverages Bun’s CSS parser to parse, normalize, and convert colors from user input to a variety of output formats, including:

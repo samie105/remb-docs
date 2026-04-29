@@ -10,8 +10,8 @@ content_hash: "1bf6d04816ce24225951a3b31654e9c4b6bab8be545b57c760ee724398e8ff2c"
 menu_path: ["GraphQL autocompletion"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/check-constraints/index.md", "title": "Check constraints"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/many-to-many-relations/index.md", "title": "Many-to-many relations"}
+nav_prev: {"path": "../check-constraints/index.md", "title": "Check constraints"}
+nav_next: {"path": "../many-to-many-relations/index.md", "title": "Many-to-many relations"}
 ---
 
 Troubleshooting

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:40.652Z"
 content_hash: "d4961c31be15e48e8cd232d23cdd0895d8a19509c71c256903a418145ecabbaa"
 menu_path: ["Image not found."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/markdown-frontmatter-parse-error/index.md", "title": "Failed to parse Markdown frontmatter."}
-nav_next: {"path": "astro/en/reference/errors/mdx-integration-missing-error/index.md", "title": "MDX integration missing."}
+nav_prev: {"path": "../markdown-frontmatter-parse-error/index.md", "title": "Failed to parse Markdown frontmatter."}
+nav_next: {"path": "../mdx-integration-missing-error/index.md", "title": "MDX integration missing."}
 ---
 
 # Image not found.

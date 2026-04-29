@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:31.679Z"
 content_hash: "a75999db42d4b02f2c1c8433363768e011da9f5048dc5fe9f13e527c5c547845"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Overview","Overview"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/integrations/vercel-marketplace/index.md", "title": "Vercel Marketplace"}
-nav_next: {"path": "supabase/docs/guides/local-development/cli/getting-started/index.md", "title": "Supabase CLI"}
+nav_prev: {"path": "../integrations/vercel-marketplace/index.md", "title": "Vercel Marketplace"}
+nav_next: {"path": "cli/getting-started/index.md", "title": "Supabase CLI"}
 ---
 
 # 

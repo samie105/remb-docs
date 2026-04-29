@@ -11,8 +11,8 @@ menu_path: ["Next.js Glossary"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/turbopack/index.md", "title": "Turbopack"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/index.md", "title": "Getting Started - Pages Router"}
+nav_prev: {"path": "../api-reference/turbopack/index.md", "title": "Turbopack"}
+nav_next: {"path": "../../pages/getting-started/index.md", "title": "Getting Started - Pages Router"}
 ---
 
 # Next.js Glossary

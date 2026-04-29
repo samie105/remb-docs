@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:08.412Z"
 content_hash: "dd4b59587761d53b454d46878dc2c90941639a66aa0033a8bfd99e9955202a02"
 menu_path: ["transition:"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/use/index.md", "title": "use:"}
-nav_next: {"path": "svelte/docs/svelte/in-and-out/index.md", "title": "in: and out:"}
+nav_prev: {"path": "../use/index.md", "title": "use:"}
+nav_next: {"path": "../in-and-out/index.md", "title": "in: and out:"}
 ---
 
 A _transition_ is triggered by an element entering or leaving the DOM as a result of a state change.

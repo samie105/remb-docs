@@ -10,8 +10,8 @@ content_hash: "9439cf4c375e75653be9b28bb1fe6bea5aa04a6fa6f51401ae45ce21fd5418a8"
 menu_path: ["HTTP Server - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/deno/gpu/index.md", "title": "GPU - Deno documentation"}
-nav_next: {"path": "deno/api/deno/io/index.md", "title": "I/O - Deno documentation"}
+nav_prev: {"path": "../gpu/index.md", "title": "GPU - Deno documentation"}
+nav_next: {"path": "../io/index.md", "title": "I/O - Deno documentation"}
 ---
 
 f

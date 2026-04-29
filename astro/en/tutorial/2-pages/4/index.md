@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:24.718Z"
 content_hash: "a7d0a794305990da12c532902db4d65ad7c24767e695f260da37413ec7b6b353"
 menu_path: ["Style your About page"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/2-pages/3/index.md", "title": "Add dynamic content about you"}
-nav_next: {"path": "astro/en/tutorial/2-pages/5/index.md", "title": "Add site-wide styling"}
+nav_prev: {"path": "../3/index.md", "title": "Add dynamic content about you"}
+nav_next: {"path": "../5/index.md", "title": "Add site-wide styling"}
 ---
 
 # Style your About page

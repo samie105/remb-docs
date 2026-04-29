@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:48.979Z"
 content_hash: "3c365d09bfa5c760f1aa9c92c12a382468e6f372f34003354c709c0e0703880e"
 menu_path: ["PostgreSQL: Documentation: 18: 19.3. Connections and Authentication"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
-nav_next: {"path": "postgres/docs/current/runtime-config-preset.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.15.\u00a0Preset Options"}
+nav_prev: {"path": "../runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
+nav_next: {"path": "../runtime-config-preset.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.15.\u00a0Preset Options"}
 ---
 
 ### 19.3.1. Connection Settings [#](#RUNTIME-CONFIG-CONNECTION-SETTINGS)
@@ -35,13 +35,13 @@ When running a standby server, you must set this parameter to the same or higher
 
 `reserved_connections` (`integer`) [#](#GUC-RESERVED-CONNECTIONS)
 
-Determines the number of connection “slots” that are reserved for connections by roles with privileges of the [pg\_use\_reserved\_connections](postgres/docs/current/predefined-roles.html/index.md#PREDEFINED-ROLE-PG-USE-RESERVED-CONNECTIONS) role. Whenever the number of free connection slots is greater than [superuser\_reserved\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-SUPERUSER-RESERVED-CONNECTIONS) but less than or equal to the sum of `superuser_reserved_connections` and `reserved_connections`, new connections will be accepted only for superusers and roles with privileges of `pg_use_reserved_connections`. If `superuser_reserved_connections` or fewer connection slots are available, new connections will be accepted only for superusers.
+Determines the number of connection “slots” that are reserved for connections by roles with privileges of the [pg\_use\_reserved\_connections](../predefined-roles.html/index.md#PREDEFINED-ROLE-PG-USE-RESERVED-CONNECTIONS) role. Whenever the number of free connection slots is greater than [superuser\_reserved\_connections](index.md#GUC-SUPERUSER-RESERVED-CONNECTIONS) but less than or equal to the sum of `superuser_reserved_connections` and `reserved_connections`, new connections will be accepted only for superusers and roles with privileges of `pg_use_reserved_connections`. If `superuser_reserved_connections` or fewer connection slots are available, new connections will be accepted only for superusers.
 
 The default value is zero connections. The value must be less than `max_connections` minus `superuser_reserved_connections`. This parameter can only be set at server start.
 
 `superuser_reserved_connections` (`integer`) [#](#GUC-SUPERUSER-RESERVED-CONNECTIONS)
 
-Determines the number of connection “slots” that are reserved for connections by PostgreSQL superusers. At most [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) connections can ever be active simultaneously. Whenever the number of active concurrent connections is at least `max_connections` minus `superuser_reserved_connections`, new connections will be accepted only for superusers. The connection slots reserved by this parameter are intended as final reserve for emergency use after the slots reserved by [reserved\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-RESERVED-CONNECTIONS) have been exhausted.
+Determines the number of connection “slots” that are reserved for connections by PostgreSQL superusers. At most [max\_connections](index.md#GUC-MAX-CONNECTIONS) connections can ever be active simultaneously. Whenever the number of active concurrent connections is at least `max_connections` minus `superuser_reserved_connections`, new connections will be accepted only for superusers. The connection slots reserved by this parameter are intended as final reserve for emergency use after the slots reserved by [reserved\_connections](index.md#GUC-RESERVED-CONNECTIONS) have been exhausted.
 
 The default value is three connections. The value must be less than `max_connections` minus `reserved_connections`. This parameter can only be set at server start.
 
@@ -109,7 +109,7 @@ This option relies on kernel events exposed by Linux, macOS, illumos and the BSD
 
 If the value is specified without units, it is taken as milliseconds. The default value is `0`, which disables connection checks. Without connection checks, the server will detect the loss of the connection only at the next interaction with the socket, when it waits for, receives or sends data.
 
-For the kernel itself to detect lost TCP connections reliably and within a known timeframe in all scenarios including network failure, it may also be necessary to adjust the TCP keepalive settings of the operating system, or the [tcp\_keepalives\_idle](postgres/docs/current/runtime-config-connection.html/index.md#GUC-TCP-KEEPALIVES-IDLE), [tcp\_keepalives\_interval](postgres/docs/current/runtime-config-connection.html/index.md#GUC-TCP-KEEPALIVES-INTERVAL) and [tcp\_keepalives\_count](postgres/docs/current/runtime-config-connection.html/index.md#GUC-TCP-KEEPALIVES-COUNT) settings of PostgreSQL.
+For the kernel itself to detect lost TCP connections reliably and within a known timeframe in all scenarios including network failure, it may also be necessary to adjust the TCP keepalive settings of the operating system, or the [tcp\_keepalives\_idle](index.md#GUC-TCP-KEEPALIVES-IDLE), [tcp\_keepalives\_interval](index.md#GUC-TCP-KEEPALIVES-INTERVAL) and [tcp\_keepalives\_count](index.md#GUC-TCP-KEEPALIVES-COUNT) settings of PostgreSQL.
 
 ### 19.3.3. Authentication [#](#RUNTIME-CONFIG-CONNECTION-AUTHENTICATION)
 
@@ -171,15 +171,15 @@ Specifies the name of the file containing the SSL server certificate. Relative p
 
 `ssl_crl_file` (`string`) [#](#GUC-SSL-CRL-FILE)
 
-Specifies the name of the file containing the SSL client certificate revocation list (CRL). Relative paths are relative to the data directory. This parameter can only be set in the `postgresql.conf` file or on the server command line. The default is empty, meaning no CRL file is loaded (unless [ssl\_crl\_dir](postgres/docs/current/runtime-config-connection.html/index.md#GUC-SSL-CRL-DIR) is set).
+Specifies the name of the file containing the SSL client certificate revocation list (CRL). Relative paths are relative to the data directory. This parameter can only be set in the `postgresql.conf` file or on the server command line. The default is empty, meaning no CRL file is loaded (unless [ssl\_crl\_dir](index.md#GUC-SSL-CRL-DIR) is set).
 
 `ssl_crl_dir` (`string`) [#](#GUC-SSL-CRL-DIR)
 
-Specifies the name of the directory containing the SSL client certificate revocation list (CRL). Relative paths are relative to the data directory. This parameter can only be set in the `postgresql.conf` file or on the server command line. The default is empty, meaning no CRLs are used (unless [ssl\_crl\_file](postgres/docs/current/runtime-config-connection.html/index.md#GUC-SSL-CRL-FILE) is set).
+Specifies the name of the directory containing the SSL client certificate revocation list (CRL). Relative paths are relative to the data directory. This parameter can only be set in the `postgresql.conf` file or on the server command line. The default is empty, meaning no CRLs are used (unless [ssl\_crl\_file](index.md#GUC-SSL-CRL-FILE) is set).
 
 The directory needs to be prepared with the OpenSSL command `openssl rehash` or `c_rehash`. See its documentation for details.
 
-When using this setting, CRLs in the specified directory are loaded on-demand at connection time. New CRLs can be added to the directory and will be used immediately. This is unlike [ssl\_crl\_file](postgres/docs/current/runtime-config-connection.html/index.md#GUC-SSL-CRL-FILE), which causes the CRL in the file to be loaded at server start time or when the configuration is reloaded. Both settings can be used together.
+When using this setting, CRLs in the specified directory are loaded on-demand at connection time. New CRLs can be added to the directory and will be used immediately. This is unlike [ssl\_crl\_file](index.md#GUC-SSL-CRL-FILE), which causes the CRL in the file to be loaded at server start time or when the configuration is reloaded. Both settings can be used together.
 
 `ssl_key_file` (`string`) [#](#GUC-SSL-KEY-FILE)
 
@@ -193,7 +193,7 @@ This parameter can only be set in the `postgresql.conf` file or on the server co
 
 `ssl_ciphers` (`string`) [#](#GUC-SSL-CIPHERS)
 
-Specifies a list of SSL ciphers that are allowed by connections using TLS version 1.2 and lower, see [ssl\_tls13\_ciphers](postgres/docs/current/runtime-config-connection.html/index.md#GUC-SSL-TLS13-CIPHERS) for TLS version 1.3 connections. See the ciphers manual page in the OpenSSL package for the syntax of this setting and a list of supported values. The default value is `HIGH:MEDIUM:+3DES:!aNULL`. The default is usually a reasonable choice unless you have specific security requirements.
+Specifies a list of SSL ciphers that are allowed by connections using TLS version 1.2 and lower, see [ssl\_tls13\_ciphers](index.md#GUC-SSL-TLS13-CIPHERS) for TLS version 1.3 connections. See the ciphers manual page in the OpenSSL package for the syntax of this setting and a list of supported values. The default value is `HIGH:MEDIUM:+3DES:!aNULL`. The default is usually a reasonable choice unless you have specific security requirements.
 
 This parameter can only be set in the `postgresql.conf` file or on the server command line.
 
@@ -241,7 +241,7 @@ This parameter can only be set in the `postgresql.conf` file or on the server co
 
 `ssl_max_protocol_version` (`enum`) [#](#GUC-SSL-MAX-PROTOCOL-VERSION)
 
-Sets the maximum SSL/TLS protocol version to use. Valid values are as for [ssl\_min\_protocol\_version](postgres/docs/current/runtime-config-connection.html/index.md#GUC-SSL-MIN-PROTOCOL-VERSION), with addition of an empty string, which allows any protocol version. The default is to allow any version. Setting the maximum protocol version is mainly useful for testing or if some component has issues working with a newer protocol.
+Sets the maximum SSL/TLS protocol version to use. Valid values are as for [ssl\_min\_protocol\_version](index.md#GUC-SSL-MIN-PROTOCOL-VERSION), with addition of an empty string, which allows any protocol version. The default is to allow any version. Setting the maximum protocol version is mainly useful for testing or if some component has issues working with a newer protocol.
 
 This parameter can only be set in the `postgresql.conf` file or on the server command line.
 

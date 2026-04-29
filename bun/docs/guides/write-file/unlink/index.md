@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:58.255Z"
 content_hash: "6f8b91f4ef74e8177fe634fd112328d55c5494c98ca515dd2d890bd33058fece"
 menu_path: ["Delete a file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/write-file/stream/index.md", "title": "Write a ReadableStream to a file"}
-nav_next: {"path": "bun/docs/pm/bunx/index.md", "title": "bunx"}
+nav_prev: {"path": "../stream/index.md", "title": "Write a ReadableStream to a file"}
+nav_next: {"path": "../../../pm/bunx/index.md", "title": "bunx"}
 ---
 
 [Skip to main content](#content-area)

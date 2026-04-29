@@ -11,8 +11,8 @@ menu_path: ["How to set a Content Security Policy (CSP) for your Next.js applica
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/ci-build-caching/index.md", "title": "How to configure Continuous Integration (CI) build caching"}
-nav_next: {"path": "nextjs/docs/app/guides/css-in-js/index.md", "title": "How to use CSS-in-JS libraries"}
+nav_prev: {"path": "../ci-build-caching/index.md", "title": "How to configure Continuous Integration (CI) build caching"}
+nav_next: {"path": "../css-in-js/index.md", "title": "How to use CSS-in-JS libraries"}
 ---
 
 # How to set a Content Security Policy (CSP) for your Next.js application

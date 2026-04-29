@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:45.954Z"
 content_hash: "6652d76c49a1e952f9178a268f4b90e2c20171a7dd846dd267e68a8290b4168f"
 menu_path: ["Combine layouts to get the best of both worlds"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/4-layouts/2/index.md", "title": "Create and pass data to a custom blog layout"}
-nav_next: {"path": "astro/en/tutorial/5-astro-api/1/index.md", "title": "Create a blog post archive"}
+nav_prev: {"path": "../2/index.md", "title": "Create and pass data to a custom blog layout"}
+nav_next: {"path": "../../5-astro-api/1/index.md", "title": "Create a blog post archive"}
 ---
 
 # Combine layouts to get the best of both worlds

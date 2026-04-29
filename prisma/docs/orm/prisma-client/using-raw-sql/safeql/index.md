@@ -11,13 +11,13 @@ menu_path: ["SafeQL & Prisma Client"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md", "title": "Raw queries"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md", "title": "TypedSQL"}
+nav_prev: {"path": "../raw-queries/index.md", "title": "Raw queries"}
+nav_next: {"path": "../typedsql/index.md", "title": "TypedSQL"}
 ---
 
 Learn how to use SafeQL and Prisma Client extensions to work around features not natively supported by Prisma, such as PostGIS
 
-This page explains how to improve the experience of writing raw SQL in Prisma ORM. It uses [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) and [SafeQL](https://safeql.dev/) to create custom, type-safe Prisma Client queries which abstract custom SQL that your app might need (using `$queryRaw`).
+This page explains how to improve the experience of writing raw SQL in Prisma ORM. It uses [Prisma Client extensions](../../client-extensions/index.md) and [SafeQL](https://safeql.dev/) to create custom, type-safe Prisma Client queries which abstract custom SQL that your app might need (using `$queryRaw`).
 
 The example will be using [PostGIS](https://postgis.net/) and PostgreSQL, but is applicable to any raw SQL queries that you might need in your application.
 
@@ -33,7 +33,7 @@ To follow along, you will be expected to have:
 
 At the time of writing, Prisma ORM does not support working with geographic data, specifically using [PostGIS](https://github.com/prisma/prisma/issues/2789).
 
-A model that has geographic data columns will be stored using the [`Unsupported`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unsupported) data type. Fields with `Unsupported` types are present in the generated Prisma Client and will be typed as `any`. A model with a required `Unsupported` type does not expose write operations such as `create`, and `update`.
+A model that has geographic data columns will be stored using the [`Unsupported`](../../../reference/prisma-schema-reference/index.md#unsupported) data type. Fields with `Unsupported` types are present in the generated Prisma Client and will be typed as `any`. A model with a required `Unsupported` type does not expose write operations such as `create`, and `update`.
 
 Prisma Client supports write operations on models with a required `Unsupported` field using `$queryRaw` and `$executeRaw`. You can use Prisma Client extensions and SafeQL to improve the type-safety when working with geographical data in raw queries.
 
@@ -77,7 +77,7 @@ model PointOfInterest {
 }
 ```
 
-You'll notice that the `location` field uses an [`Unsupported`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unsupported) type. This means that we lose a lot of the benefits of Prisma ORM when working with `PointOfInterest`. We'll be using [SafeQL](https://safeql.dev/) to fix this.
+You'll notice that the `location` field uses an [`Unsupported`](../../../reference/prisma-schema-reference/index.md#unsupported) type. This means that we lose a lot of the benefits of Prisma ORM when working with `PointOfInterest`. We'll be using [SafeQL](https://safeql.dev/) to fix this.
 
 Like before, create and execute a migration using the `prisma migrate dev` command to create the `PointOfInterest` table in your database:
 
@@ -194,7 +194,7 @@ module.exports = {
 
 SafeQL is now fully configured to help you write better raw SQL using Prisma Client.
 
-In this section, we'll create two [`model`](prisma/docs/orm/prisma-client/client-extensions/model/index.md) extensions with custom queries to be able to work conveniently with the `PointOfInterest` model:
+In this section, we'll create two [`model`](../../client-extensions/model/index.md) extensions with custom queries to be able to work conveniently with the `PointOfInterest` model:
 
 1.  A `create` query that allows us to create new `PointOfInterest` records in the database
 2.  A `findClosestPoints` query that returns the `PointOfInterest` records that are closest to a given coordinate

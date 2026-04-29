@@ -10,8 +10,8 @@ content_hash: "4bc1b97fa8a880896799cbf33286dee6c55e73fb4844037056bb27373209bdfb"
 menu_path: ["Query performance"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/rqb/index.md", "title": "Drizzle Queries"}
-nav_next: {"path": "drizzle/docs/perf-serverless/index.md", "title": "Drizzle Serverless performance"}
+nav_prev: {"path": "../rqb/index.md", "title": "Drizzle Queries"}
+nav_next: {"path": "../perf-serverless/index.md", "title": "Drizzle Serverless performance"}
 ---
 
 ## Query performance

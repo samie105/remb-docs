@@ -10,7 +10,7 @@ content_hash: "43e005aac9f423027a41d41be180d1dbb1c08f28ef1aa8e2047bab07eca096b2"
 menu_path: ["Drizzle ORM"]
 section_path: []
 content_language: "en"
-nav_next: {"path": "drizzle/docs/get-started/index.md", "title": "Get started with Drizzle"}
+nav_next: {"path": "../get-started/index.md", "title": "Get started with Drizzle"}
 ---
 
 Drizzle ORM is a headless TypeScript ORM with a head. 🐲
@@ -20,7 +20,7 @@ Drizzle ORM is a headless TypeScript ORM with a head. 🐲
 It looks and feels simple, performs on day _1000_ of your project,  
 lets you do things your way, and is there when you need it.
 
-**It’s the only ORM with both [relational](drizzle/docs/rqb/index.md) and [SQL-like](drizzle/docs/select/index.md) query APIs**, providing you the best of both worlds when it comes to accessing your relational data. Drizzle is lightweight, performant, typesafe, non-lactose, gluten-free, sober, flexible and **serverless-ready by design**. Drizzle is not just a library, it’s an experience. 🤩
+**It’s the only ORM with both [relational](../rqb/index.md) and [SQL-like](../select/index.md) query APIs**, providing you the best of both worlds when it comes to accessing your relational data. Drizzle is lightweight, performant, typesafe, non-lactose, gluten-free, sober, flexible and **serverless-ready by design**. Drizzle is not just a library, it’s an experience. 🤩
 
 [![Drizzle bestofjs](https://orm.drizzle.team/_astro/bestofjs.Dmfq7AUp_26yiDJ.webp)](https://bestofjs.org/projects/drizzle-orm)
 
@@ -46,7 +46,7 @@ Other ORMs and data frameworks tend to deviate/abstract you away from SQL, which
 
 Drizzle is the opposite. We embrace SQL and built Drizzle to be SQL-like at its core, so you can have zero to no learning curve and access to the full power of SQL.
 
-We bring all the familiar **[SQL schema](drizzle/docs/sql-schema-declaration/index.md)**, **[queries](drizzle/docs/select/index.md)**, **[automatic migrations](drizzle/docs/migrations/index.md)** and **[one more thing](drizzle/docs/rqb/index.md)**. ✨
+We bring all the familiar **[SQL schema](../sql-schema-declaration/index.md)**, **[queries](../select/index.md)**, **[automatic migrations](../migrations/index.md)** and **[one more thing](../rqb/index.md)**. ✨
 
 index.ts
 
@@ -97,7 +97,7 @@ ALTER TABLE "cities" ADD CONSTRAINT "cities_country_id_countries_id_fk" FOREIGN 
 
 We’re always striving for a perfectly balanced solution, and while SQL-like does cover 100% of the needs, there are certain common scenarios where you can query data in a better way.
 
-We’ve built the **[Queries API](drizzle/docs/rqb/index.md)** for you, so you can fetch relational nested data from the database in the most convenient and performant way, and never think about joins and data mapping.
+We’ve built the **[Queries API](../rqb/index.md)** for you, so you can fetch relational nested data from the database in the most convenient and performant way, and never think about joins and data mapping.
 
 **Drizzle always outputs exactly 1 SQL query.** Feel free to use it with serverless databases and never worry about performance or roundtrip costs!
 
@@ -119,7 +119,7 @@ Drizzle ORM is dialect-specific, slim, performant and serverless-ready **by desi
 
 We’ve spent a lot of time to make sure you have best-in-class SQL dialect support, including Postgres, MySQL, and others.
 
-Drizzle operates natively through industry-standard database drivers. We support all major **[PostgreSQL](drizzle/docs/get-started-postgresql/index.md)**, **[MySQL](drizzle/docs/get-started-mysql/index.md)**, **[SQLite](drizzle/docs/get-started-sqlite/index.md)** or **[SingleStore](drizzle/docs/get-started-singlestore/index.md)** drivers out there, and we’re adding new ones **[really fast](https://twitter.com/DrizzleORM/status/1653082492742647811?s=20)**.
+Drizzle operates natively through industry-standard database drivers. We support all major **[PostgreSQL](../get-started-postgresql/index.md)**, **[MySQL](../get-started-mysql/index.md)**, **[SQLite](../get-started-sqlite/index.md)** or **[SingleStore](../get-started-singlestore/index.md)** drivers out there, and we’re adding new ones **[really fast](https://twitter.com/DrizzleORM/status/1653082492742647811?s=20)**.
 
 ## Welcome on board![](#welcome-on-board)
 
@@ -129,6 +129,6 @@ More and more companies are adopting Drizzle in production, experiencing immense
 
 We have an outstanding **[Discord community](https://driz.link/discord)** and welcome all builders to our **[Twitter](https://twitter.com/drizzleorm)**.
 
-Now go build something awesome with Drizzle and your **[PostgreSQL](drizzle/docs/get-started-postgresql/index.md)**, **[MySQL](drizzle/docs/get-started-mysql/index.md)** or **[SQLite](drizzle/docs/get-started-sqlite/index.md)** database. 🚀
+Now go build something awesome with Drizzle and your **[PostgreSQL](../get-started-postgresql/index.md)**, **[MySQL](../get-started-mysql/index.md)** or **[SQLite](../get-started-sqlite/index.md)** database. 🚀
 
 ### Video Showcase[](#video-showcase)

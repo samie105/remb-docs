@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:34.804Z"
 content_hash: "7f453bed38ad36f4a87ccb4b2e8efa150824cd002fcdbc73e16f9b4ca82d0f46"
 menu_path: ["Database","Database","Examples","Examples","Select First Row per Group","Select First Row per Group"]
 section_path: ["Database","Database","Examples","Examples","Select First Row per Group","Select First Row per Group"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/event-triggers/index.md", "title": "Event Triggers"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/indexes/index.md", "title": "Managing Indexes in Postgres"}
+nav_prev: {"path": "../event-triggers/index.md", "title": "Event Triggers"}
+nav_next: {"path": "../indexes/index.md", "title": "Managing Indexes in Postgres"}
 ---
 
 # 

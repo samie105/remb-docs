@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:28.651Z"
 content_hash: "33b3b2b8731f1e6f8c6986c9a99c78374764c009b8ab3c9c39fbfa9806dd7c1d"
 menu_path: ["Queues","Queues","Getting Started","Getting Started","Consuming Messages with Edge Functions","Consuming Messages with Edge Functions"]
 section_path: ["Queues","Queues","Getting Started","Getting Started","Consuming Messages with Edge Functions","Consuming Messages with Edge Functions"]
-nav_prev: {"path": "supabase/docs/guides/queues/api/index.md", "title": "API"}
-nav_next: {"path": "supabase/docs/guides/queues/expose-self-hosted-queues/index.md", "title": "Expose Queues for local and self-hosted Supabase"}
+nav_prev: {"path": "../api/index.md", "title": "API"}
+nav_next: {"path": "../expose-self-hosted-queues/index.md", "title": "Expose Queues for local and self-hosted Supabase"}
 ---
 
 # 

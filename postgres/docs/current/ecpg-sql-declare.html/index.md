@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:44.995Z"
 content_hash: "28856c6a28c7b522ae21b8a9142f0c883d7c64c17b594048cfe86bc25650b828"
 menu_path: ["PostgreSQL: Documentation: 18: DECLARE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-declare-statement.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE STATEMENT"}
-nav_next: {"path": "postgres/docs/current/ecpg-sql-describe.html/index.md", "title": "PostgreSQL: Documentation: 18: DESCRIBE"}
+nav_prev: {"path": "../ecpg-sql-declare-statement.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE STATEMENT"}
+nav_next: {"path": "../ecpg-sql-describe.html/index.md", "title": "PostgreSQL: Documentation: 18: DESCRIBE"}
 ---
 
 DECLARE — define a cursor

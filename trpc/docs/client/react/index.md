@@ -9,17 +9,17 @@ last_crawled_at: "2026-04-18T16:46:19.770Z"
 content_hash: "d0446929003dda361539fc37f243cf70553777417750c71caf51c31e6bbce555"
 menu_path: ["React Query Integration (Classic)"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/nextjs/starter-projects/index.md", "title": "Starter Projects"}
-nav_next: {"path": "trpc/docs/client/react/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_prev: {"path": "../nextjs/starter-projects/index.md", "title": "Starter Projects"}
+nav_next: {"path": "aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
 
 tip
 
-These are the docs for our 'Classic' React Query integration, which (while still supported) is not the recommended way to start new tRPC projects with TanStack React Query. We recommend using the new [TanStack React Query Integration](trpc/docs/client/tanstack-react-query/setup/index.md) instead.
+These are the docs for our 'Classic' React Query integration, which (while still supported) is not the recommended way to start new tRPC projects with TanStack React Query. We recommend using the new [TanStack React Query Integration](../tanstack-react-query/setup/index.md) instead.
 
 tRPC offers a first class integration with React. Under the hood this is simply a wrapper around the very popular [@tanstack/react-query](https://tanstack.com/query/latest), so we recommend that you familiarize yourself with React Query, as their docs go into much greater depth on its usage.
 
-If you are using Next.js we recommend using [our integration with that](trpc/docs/client/nextjs/index.md) instead.
+If you are using Next.js we recommend using [our integration with that](../nextjs/index.md) instead.
 
 ❓ Do I have to use an integration?
 
@@ -58,5 +58,5 @@ tsx
 The wrapper abstracts some aspects of React Query for you:
 
 *   Query Keys - these are generated and managed by tRPC on your behalf, based on the procedure inputs you provide
-    *   If you need the query key which tRPC calculates, you can use [getQueryKey](trpc/docs/client/react/getQueryKey/index.md)
+    *   If you need the query key which tRPC calculates, you can use [getQueryKey](getQueryKey/index.md)
 *   Type safe by default - the types you provide in your tRPC Backend also drive the types of your React Query client, providing safety throughout your React app

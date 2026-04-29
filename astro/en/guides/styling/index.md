@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:37.928Z"
 content_hash: "786037649a691912b14eb14cf25b82d52d2bfe88843d93f3ff50cc050b9a6c71"
 menu_path: ["Styles and CSS"]
 section_path: []
-nav_prev: {"path": "astro/en/basics/layouts/index.md", "title": "Layouts"}
-nav_next: {"path": "astro/en/guides/fonts/index.md", "title": "Using custom fonts"}
+nav_prev: {"path": "../../basics/layouts/index.md", "title": "Layouts"}
+nav_next: {"path": "../fonts/index.md", "title": "Using custom fonts"}
 ---
 
 # Styles and CSS

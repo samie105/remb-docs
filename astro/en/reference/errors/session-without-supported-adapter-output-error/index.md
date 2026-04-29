@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:39.005Z"
 content_hash: "560aba08c34130bbb936a72b72aefdb5371061361927e52e04e2a30fb446b722"
 menu_path: ["Sessions cannot be used with an adapter that doesn't support server output."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/session-storage-save-error/index.md", "title": "Session data could not be saved."}
-nav_next: {"path": "astro/en/reference/errors/static-client-address-not-available/index.md", "title": "Astro.clientAddress is not available in prerendered pages."}
+nav_prev: {"path": "../session-storage-save-error/index.md", "title": "Session data could not be saved."}
+nav_next: {"path": "../static-client-address-not-available/index.md", "title": "Astro.clientAddress is not available in prerendered pages."}
 ---
 
 # Sessions cannot be used with an adapter that doesn't support server output.

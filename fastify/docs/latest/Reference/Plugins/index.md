@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:52.339Z"
 content_hash: "47f30df9c53dfecbc32157f7534c724bcdd42df113a72745aa13d54ac11e2382"
 menu_path: ["Plugins"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Middleware/index.md", "title": "Middleware"}
-nav_next: {"path": "fastify/docs/latest/Reference/Principles/index.md", "title": "Technical Principles"}
+nav_prev: {"path": "../Middleware/index.md", "title": "Middleware"}
+nav_next: {"path": "../Principles/index.md", "title": "Technical Principles"}
 ---
 
 Version: latest (v5.8.x)

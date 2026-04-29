@@ -11,8 +11,8 @@ menu_path: ["devIndicators"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/deploymentId/index.md", "title": "deploymentId"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
+nav_prev: {"path": "../deploymentId/index.md", "title": "deploymentId"}
+nav_next: {"path": "../distDir/index.md", "title": "distDir"}
 ---
 
 # devIndicators

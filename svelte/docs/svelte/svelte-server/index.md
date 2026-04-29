@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:16.616Z"
 content_hash: "44fe7c5b78519b6c133bc27cf6f79534c98fde9c5ccebfd54bb14990b7866aad"
 menu_path: ["svelte/server"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-reactivity/index.md", "title": "svelte/reactivity"}
-nav_next: {"path": "svelte/docs/svelte/svelte-store/index.md", "title": "svelte/store"}
+nav_prev: {"path": "../svelte-reactivity/index.md", "title": "svelte/reactivity"}
+nav_next: {"path": "../svelte-store/index.md", "title": "svelte/store"}
 ---
 
 ```

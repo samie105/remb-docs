@@ -10,8 +10,8 @@ content_hash: "b563479402e3e1d96288822f61ab26fade55c43a107ce901fe64ed86daba0cf8"
 menu_path: ["PostgreSQL: Documentation: 18: F.39. seg — a datatype for line segments or floating point intervals"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
-nav_next: {"path": "postgres/docs/current/sepgsql.html/index.md", "title": "PostgreSQL: Documentation: 18: F.40.\u00a0sepgsql \u2014 SELinux-, label-based mandatory access control (MAC) security module"}
+nav_prev: {"path": "../sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
+nav_next: {"path": "../sepgsql.html/index.md", "title": "PostgreSQL: Documentation: 18: F.40.\u00a0sepgsql \u2014 SELinux-, label-based mandatory access control (MAC) security module"}
 ---
 
 This module implements a data type `seg` for representing line segments, or floating point intervals. `seg` can represent uncertainty in the interval endpoints, making it especially useful for representing laboratory measurements.

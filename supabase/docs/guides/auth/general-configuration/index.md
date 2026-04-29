@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:32.190Z"
 content_hash: "cff3eccbd5feff1f7c92bd3f1875b64ad4a9c123d0366576ea1bc00fbe9e9ecb"
 menu_path: ["Auth","Auth","Configuration","Configuration","General Configuration","General Configuration"]
 section_path: ["Auth","Auth","Configuration","Configuration","General Configuration","General Configuration"]
-nav_prev: {"path": "supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md", "title": "Single Sign-On with SAML 2.0 for Projects"}
-nav_next: {"path": "supabase/docs/guides/auth/identities/index.md", "title": "Identities"}
+nav_prev: {"path": "../enterprise-sso/auth-sso-saml/index.md", "title": "Single Sign-On with SAML 2.0 for Projects"}
+nav_next: {"path": "../identities/index.md", "title": "Identities"}
 ---
 
 # 

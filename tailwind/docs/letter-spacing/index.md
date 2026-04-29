@@ -10,8 +10,8 @@ content_hash: "5a3349ba512da613ffa4481ca5b273c858fa79f5023259d082f2204ceb93d75d"
 menu_path: ["letter-spacing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/font-feature-settings/index.md", "title": "font-feature-settings"}
-nav_next: {"path": "tailwind/docs/line-clamp/index.md", "title": "line-clamp"}
+nav_prev: {"path": "../font-feature-settings/index.md", "title": "font-feature-settings"}
+nav_next: {"path": "../line-clamp/index.md", "title": "line-clamp"}
 ---
 
 # letter-spacing

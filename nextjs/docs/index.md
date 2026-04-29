@@ -11,7 +11,7 @@ menu_path: ["Next.js Docs"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_next: {"path": "nextjs/docs/app/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "app/getting-started/index.md", "title": "Getting Started"}
 ---
 
 # Next.js Docs

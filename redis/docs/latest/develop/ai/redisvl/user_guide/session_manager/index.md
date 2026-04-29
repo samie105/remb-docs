@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:10:01.009Z"
 content_hash: "0e9c082b344f91607c5cfff99254edcd706b83dc30b9833a5c0d68b4092956c7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        LLM Session Memory","→","LLM Session Memory"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        LLM Session Memory","→","LLM Session Memory"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/semantic_router/index.md", "title": "Semantic Routing"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/svs_vamana/index.md", "title": "SVS-VAMANA Vector Search"}
+nav_prev: {"path": "../semantic_router/index.md", "title": "Semantic Routing"}
+nav_next: {"path": "../svs_vamana/index.md", "title": "SVS-VAMANA Vector Search"}
 ---
 
 # LLM Session Memory

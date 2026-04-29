@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:59.619Z"
 content_hash: "c69545160a6b11ec0a69120b15709bbe5f2a34e8d89d23bb21e9aea89b10da38"
 menu_path: ["Database","Database","GUI quickstarts","GUI quickstarts","PSQL","PSQL"]
 section_path: ["Database","Database","GUI quickstarts","GUI quickstarts","PSQL","PSQL"]
-nav_prev: {"path": "supabase/docs/guides/database/prisma/prisma-troubleshooting/index.md", "title": "Troubleshooting prisma errors"}
-nav_next: {"path": "supabase/docs/guides/database/query-optimization/index.md", "title": "Query Optimization"}
+nav_prev: {"path": "../prisma/prisma-troubleshooting/index.md", "title": "Troubleshooting prisma errors"}
+nav_next: {"path": "../query-optimization/index.md", "title": "Query Optimization"}
 ---
 
 # 

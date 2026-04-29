@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:59.516Z"
 content_hash: "909f6c17e540dc62c9ea8b675912817bf2fccc46cd9d21f835b7287717413a5a"
 menu_path: ["Configure git to diff Bun's lockb lockfile"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/from-npm-install-to-bun-install/index.md", "title": "Migrate from npm install to bun install"}
-nav_next: {"path": "bun/docs/guides/install/jfrog-artifactory/index.md", "title": "Using bun install with Artifactory"}
+nav_prev: {"path": "../from-npm-install-to-bun-install/index.md", "title": "Migrate from npm install to bun install"}
+nav_next: {"path": "../jfrog-artifactory/index.md", "title": "Using bun install with Artifactory"}
 ---
 
 [Skip to main content](#content-area)

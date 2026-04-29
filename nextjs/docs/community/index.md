@@ -11,8 +11,8 @@ menu_path: ["Next.js Community"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/architecture/supported-browsers/index.md", "title": "Supported Browsers"}
-nav_next: {"path": "nextjs/docs/community/contribution-guide/index.md", "title": "Docs Contribution Guide"}
+nav_prev: {"path": "../architecture/supported-browsers/index.md", "title": "Supported Browsers"}
+nav_next: {"path": "contribution-guide/index.md", "title": "Docs Contribution Guide"}
 ---
 
 # Next.js Community

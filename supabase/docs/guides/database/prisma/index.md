@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:06.388Z"
 content_hash: "8862d2bdec5f0f10a2cef4a4fed733ae98111c299022aa8d7995a8094ea9c657"
 menu_path: ["Database","Database","More","More","More","Prisma","Prisma","Connecting with Prisma","Connecting with Prisma"]
 section_path: ["Database","Database","More","More","More","Prisma","Prisma","Connecting with Prisma","Connecting with Prisma"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/which-version-of-postgres/index.md", "title": "Print Postgres version"}
-nav_next: {"path": "supabase/docs/guides/database/prisma/prisma-troubleshooting/index.md", "title": "Troubleshooting prisma errors"}
+nav_prev: {"path": "../postgres/which-version-of-postgres/index.md", "title": "Print Postgres version"}
+nav_next: {"path": "prisma-troubleshooting/index.md", "title": "Troubleshooting prisma errors"}
 ---
 
 # 

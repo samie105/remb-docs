@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:27.453Z"
 content_hash: "794089e37d12608e53c2ba656dd87ed2295f2c4ce642f19b5027db6a8e490a8f"
 menu_path: ["Body Limit Middleware ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/middleware/builtin/bearer-auth/index.md", "title": "Bearer Auth Middleware \u200b"}
-nav_next: {"path": "hono/docs/middleware/builtin/cache/index.md", "title": "Cache Middleware \u200b"}
+nav_prev: {"path": "../bearer-auth/index.md", "title": "Bearer Auth Middleware \u200b"}
+nav_next: {"path": "../cache/index.md", "title": "Cache Middleware \u200b"}
 ---
 
 ## Body Limit Middleware [​](#body-limit-middleware)

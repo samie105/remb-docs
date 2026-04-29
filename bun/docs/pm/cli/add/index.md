@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:13.130Z"
 content_hash: "6e14fcad8768e6c1884766fddb565cb2a4defab67b9447682496a7a1247ac259"
 menu_path: ["bun add"]
 section_path: []
-nav_prev: {"path": "bun/docs/pm/catalogs/index.md", "title": "Catalogs"}
-nav_next: {"path": "bun/docs/pm/cli/audit/index.md", "title": "bun audit"}
+nav_prev: {"path": "../../catalogs/index.md", "title": "Catalogs"}
+nav_next: {"path": "../audit/index.md", "title": "bun audit"}
 ---
 
 # where `bun add --global` installs packages

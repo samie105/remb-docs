@@ -10,8 +10,8 @@ content_hash: "657ba768e52b4a0648cdd72d04924737aa8a626c821697405d659a5342df3b4c"
 menu_path: ["Drizzle ORM - Count rows"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/guides/conditional-filters-in-query/index.md", "title": "Drizzle ORM - Conditional filters in query"}
-nav_next: {"path": "drizzle/docs/guides/cursor-based-pagination/index.md", "title": "Drizzle ORM - SQL Cursor-based pagination"}
+nav_prev: {"path": "../conditional-filters-in-query/index.md", "title": "Drizzle ORM - Conditional filters in query"}
+nav_next: {"path": "../cursor-based-pagination/index.md", "title": "Drizzle ORM - SQL Cursor-based pagination"}
 ---
 
 Drizzle | Count rows
@@ -110,7 +110,7 @@ IMPORTANT
 By specifying `sql<number>`, you are telling Drizzle that the **expected** type of the field is `number`.  
 If you specify it incorrectly (e.g. use `sql<string>` for a field that will be returned as a number), the runtime value won’t match the expected type. Drizzle cannot perform any type casts based on the provided type generic, because that information is not available at runtime.
 
-If you need to apply runtime transformations to the returned value, you can use the [`.mapWith()`](drizzle/docs/sql/index.md#sqlmapwith) method.
+If you need to apply runtime transformations to the returned value, you can use the [`.mapWith()`](../../sql/index.md#sqlmapwith) method.
 
 To count rows that match a condition you can use `.where()` method:
 

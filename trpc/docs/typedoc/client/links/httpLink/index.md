@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:35.930Z"
 content_hash: "c517209b61e7b23f29bbac22292d541c7f81d47b724f7ae8b9c2273a1ee789a0"
 menu_path: ["links/httpLink"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/links/httpBatchLink/functions/httpBatchLink/index.md", "title": "Function: httpBatchLink()"}
-nav_next: {"path": "trpc/docs/typedoc/client/links/httpLink/functions/httpLink/index.md", "title": "Function: httpLink()"}
+nav_prev: {"path": "../httpBatchLink/functions/httpBatchLink/index.md", "title": "Function: httpBatchLink()"}
+nav_next: {"path": "functions/httpLink/index.md", "title": "Function: httpLink()"}
 ---
 
 links/httpLink | tRPC

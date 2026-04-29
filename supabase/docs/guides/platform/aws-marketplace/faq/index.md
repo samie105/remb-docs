@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:40.900Z"
 content_hash: "a9cc14ad4f98bc4f32975b5a5ac9f3f3134919d1d84186fff9e445952e6bab4b"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","FAQ","FAQ"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","FAQ","FAQ"]
-nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/account-setup/index.md", "title": "Account Setup"}
-nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/getting-started/index.md", "title": "Getting Started"}
+nav_prev: {"path": "../account-setup/index.md", "title": "Account Setup"}
+nav_next: {"path": "../getting-started/index.md", "title": "Getting Started"}
 ---
 
 # 

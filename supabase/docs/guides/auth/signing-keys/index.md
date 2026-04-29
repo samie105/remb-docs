@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:21.812Z"
 content_hash: "72e9dfb553997f04c219f41c14958b4d8923088a241fbad331729539533dcaad"
 menu_path: ["Auth","Auth","Security","Security","JWT Signing Keys","JWT Signing Keys"]
 section_path: ["Auth","Auth","Security","Security","JWT Signing Keys","JWT Signing Keys"]
-nav_prev: {"path": "supabase/docs/guides/auth/sessions/pkce-flow/index.md", "title": "PKCE flow"}
-nav_next: {"path": "supabase/docs/guides/auth/signout/index.md", "title": "Signing out"}
+nav_prev: {"path": "../sessions/pkce-flow/index.md", "title": "PKCE flow"}
+nav_next: {"path": "../signout/index.md", "title": "Signing out"}
 ---
 
 # 

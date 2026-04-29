@@ -10,8 +10,8 @@ content_hash: "3d1eebaba3c55223ed18d879b0a8551a75bba669ccc2546ee3096cde3a358b24"
 menu_path: ["Connection pool"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md", "title": "Connection management"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
+nav_prev: {"path": "../connection-management/index.md", "title": "Connection management"}
+nav_next: {"path": "../pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
 ---
 
 Setup and Configuration
@@ -20,9 +20,9 @@ Database Connections
 
 Prisma Client uses a connection pool (from the database driver or driver adapter) to store and manage database connections.
 
-Prisma Client uses a **connection pool** of database connections (managed by the database driver when using [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md)). The pool is created when Prisma Client opens the _first_ connection to the database, which can happen in one of two ways:
+Prisma Client uses a **connection pool** of database connections (managed by the database driver when using [driver adapters](../../../../core-concepts/supported-databases/database-drivers/index.md)). The pool is created when Prisma Client opens the _first_ connection to the database, which can happen in one of two ways:
 
--   By [explicitly calling `$connect()`](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md#connect) _or_
+-   By [explicitly calling `$connect()`](../connection-management/index.md#connect) _or_
 -   By running the first query, which calls `$connect()` under the hood
 
 Relational database connectors use Prisma ORM's own connection pool, and the MongoDB connectors uses the [MongoDB driver connection pool](https://github.com/mongodb/specifications/blob/master/source/connection-monitoring-and-pooling/connection-monitoring-and-pooling.rst).
@@ -33,7 +33,7 @@ Relational database connectors use Prisma ORM's own connection pool, and the Mon
 -   How do I set pool timeouts and limits?
 -   When should I use PgBouncer with Prisma?
 
-Starting with Prisma ORM v7, relational datasources instantiate Prisma Client with [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md) by default. Driver adapters rely on the Node.js driver you supply, so connection pooling defaults (and configuration) now come from the driver itself.
+Starting with Prisma ORM v7, relational datasources instantiate Prisma Client with [driver adapters](../../../../core-concepts/supported-databases/database-drivers/index.md) by default. Driver adapters rely on the Node.js driver you supply, so connection pooling defaults (and configuration) now come from the driver itself.
 
 Use the tables below to translate Prisma ORM v6 connection URL parameters to the Prisma ORM v7 driver adapter fields alongside their defaults.
 
@@ -131,8 +131,8 @@ const adapter = new PrismaMssql({
 
 The MongoDB connector does not use the Prisma ORM connection pool. The connection pool is managed internally by the MongoDB driver and [configured via connection string parameters](https://www.mongodb.com/docs/manual/reference/connection-string-options/#connection-pool-options).
 
-The pool size cannot exceed what the underlying database can support. Configure pool size and timeouts via your [driver adapter](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md) (see the tables above). This is a particular challenge in serverless environments, where each function manages an instance of `PrismaClient` and its own connection pool.
+The pool size cannot exceed what the underlying database can support. Configure pool size and timeouts via your [driver adapter](index.md) (see the tables above). This is a particular challenge in serverless environments, where each function manages an instance of `PrismaClient` and its own connection pool.
 
-Consider introducing [an external connection pooler like PgBouncer](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#pgbouncer) to prevent your application or functions from exhausting the database connection limit.
+Consider introducing [an external connection pooler like PgBouncer](../index.md#pgbouncer) to prevent your application or functions from exhausting the database connection limit.
 
 When using Prisma Client with a driver adapter, database connections are managed by the driver and its pool. They are not exposed to the developer and it is not possible to manually access individual connections.

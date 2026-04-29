@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:20.730Z"
 content_hash: "3cd52900efea2fae32bf5e018f6b451deddbdfd49aa512d47a9062add304b06a"
 menu_path: ["Storage","Storage","More","More","More","Management","Management","Download Objects","Download Objects"]
 section_path: ["Storage","Storage","More","More","More","Management","Management","Download Objects","Download Objects"]
-nav_prev: {"path": "supabase/docs/guides/storage/management/delete-objects/index.md", "title": "Delete Objects"}
-nav_next: {"path": "supabase/docs/guides/storage/pricing/index.md", "title": "Pricing"}
+nav_prev: {"path": "../delete-objects/index.md", "title": "Delete Objects"}
+nav_next: {"path": "../../pricing/index.md", "title": "Pricing"}
 ---
 
 # 

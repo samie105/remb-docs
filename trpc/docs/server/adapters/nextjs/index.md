@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:14.797Z"
 content_hash: "56af26b0fd5e06e2ad3dfd5b79c4a0248b0e16753c24a5177e251de9f73e00e0"
 menu_path: ["Next.js Adapter"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
-nav_next: {"path": "trpc/docs/server/adapters/standalone/index.md", "title": "Standalone Adapter"}
+nav_prev: {"path": "../fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
+nav_next: {"path": "../standalone/index.md", "title": "Standalone Adapter"}
 ---
 
 Serving your tRPC router in a Next.js project is straight-forward. Just create an API handler in `pages/api/trpc/[trpc].ts` as shown below:
@@ -35,7 +35,7 @@ ts
 
 While you can usually just "set and forget" the API Handler as shown above, sometimes you might want to modify it further.
 
-The API handler created by `createNextApiHandler` and equivalents in other frameworks is just a function that takes `req` and `res` objects. This means you can also modify those objects before passing them to the handler, for example to [enable CORS](trpc/docs/client/cors/index.md).
+The API handler created by `createNextApiHandler` and equivalents in other frameworks is just a function that takes `req` and `res` objects. This means you can also modify those objects before passing them to the handler, for example to [enable CORS](../../../client/cors/index.md).
 
 pages/api/trpc/\[trpc\].ts
 
@@ -111,7 +111,7 @@ ts
 
 `}`
 
-If you're using the Next.js **App Router**, use the [fetch adapter](trpc/docs/server/adapters/fetch/index.md) instead, as App Router route handlers are based on the Web standard `Request` and `Response` objects. See the [App Router setup guide](trpc/docs/client/nextjs/app-router-setup/index.md) for a complete walkthrough.
+If you're using the Next.js **App Router**, use the [fetch adapter](../fetch/index.md) instead, as App Router route handlers are based on the Web standard `Request` and `Response` objects. See the [App Router setup guide](../../../client/nextjs/app-router-setup/index.md) for a complete walkthrough.
 
 app/api/trpc/\[trpc\]/route.ts
 

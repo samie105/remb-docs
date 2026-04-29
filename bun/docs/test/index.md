@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:30.984Z"
 content_hash: "65c97011915d1628e36ff84b25eeb72601dda218c2029a378f2dd0cd03686c62"
 menu_path: ["Test runner"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/yaml/index.md", "title": "YAML"}
-nav_next: {"path": "bun/docs/test/code-coverage/index.md", "title": "Code coverage"}
+nav_prev: {"path": "../runtime/yaml/index.md", "title": "YAML"}
+nav_next: {"path": "code-coverage/index.md", "title": "Code coverage"}
 ---
 
 # run all tests or test suites with "addition" in the name
@@ -25,7 +25,7 @@ terminal
 bun test ./test/specific-file.test.ts
 ```
 
-The test runner runs all tests in a single process. It loads all `--preload` scripts (see [Lifecycle](bun/docs/test/lifecycle/index.md) for details), then runs all tests. If a test fails, the test runner will exit with a non-zero exit code.
+The test runner runs all tests in a single process. It loads all `--preload` scripts (see [Lifecycle](lifecycle/index.md) for details), then runs all tests. If a test fails, the test runner will exit with a non-zero exit code.
 
 ## CI/CD integration
 
@@ -312,7 +312,7 @@ terminal
 bun test --preload ./setup.ts
 ```
 
-See [Test > Lifecycle](bun/docs/test/lifecycle/index.md) for complete documentation.
+See [Test > Lifecycle](lifecycle/index.md) for complete documentation.
 
 ## Mocks
 
@@ -344,7 +344,7 @@ const random = mock(() => Math.random());
 const random = jest.fn(() => Math.random()); 
 ```
 
-See [Test > Mocks](bun/docs/test/mocks/index.md) for complete documentation.
+See [Test > Mocks](mocks/index.md) for complete documentation.
 
 ## Snapshot testing
 
@@ -369,7 +369,7 @@ terminal
 bun test --update-snapshots
 ```
 
-See [Test > Snapshots](bun/docs/test/snapshots/index.md) for complete documentation.
+See [Test > Snapshots](snapshots/index.md) for complete documentation.
 
 ## UI & DOM testing
 
@@ -379,7 +379,7 @@ Bun is compatible with popular UI testing libraries:
 *   [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro/)
 *   [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 
-See [Test > DOM Testing](bun/docs/test/dom/index.md) for complete documentation.
+See [Test > DOM Testing](dom/index.md) for complete documentation.
 
 ## Performance
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:49.832Z"
 content_hash: "a400839a78b6317fcd0c1c5f629afe459bba462792d6913c8233d65e6380f809"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 43. PL/Perl — Perl Procedural Language"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a041.\u00a0PL/pgSQL \u2014 SQL Procedural Language"}
-nav_next: {"path": "postgres/docs/current/plpython.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a044.\u00a0PL/Python \u2014 Python Procedural Language"}
+nav_prev: {"path": "../plpgsql.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a041.\u00a0PL/pgSQL \u2014 SQL Procedural Language"}
+nav_next: {"path": "../plpython.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a044.\u00a0PL/Python \u2014 Python Procedural Language"}
 ---
 
 PL/Perl is a loadable procedural language that enables you to write PostgreSQL functions and procedures in the [Perl programming language](https://www.perl.org/).

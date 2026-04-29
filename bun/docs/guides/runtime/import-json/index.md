@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:44.563Z"
 content_hash: "2cf8555dbaa26b260adf0a94b736c371512e2c6460b9d9f7d8be1700280afe5e"
 menu_path: ["Import a JSON file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/import-html/index.md", "title": "Import a HTML file as text"}
-nav_next: {"path": "bun/docs/guides/runtime/import-json5/index.md", "title": "Import a JSON5 file"}
+nav_prev: {"path": "../import-html/index.md", "title": "Import a HTML file as text"}
+nav_next: {"path": "../import-json5/index.md", "title": "Import a JSON5 file"}
 ---
 
 [Skip to main content](#content-area)

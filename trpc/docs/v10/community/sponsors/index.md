@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:25.895Z"
 content_hash: "2e1c2acc4ac114b9d177f5498346a7ecf88daa3ac6bb8da55854011b18cf2318"
 menu_path: ["Sponsors"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/community/love/index.md", "title": "Testimonials / Love"}
-nav_next: {"path": "trpc/docs/v10/concepts/index.md", "title": "Concepts"}
+nav_prev: {"path": "../love/index.md", "title": "Testimonials / Love"}
+nav_next: {"path": "../../concepts/index.md", "title": "Concepts"}
 ---
 
 Version: 10.x

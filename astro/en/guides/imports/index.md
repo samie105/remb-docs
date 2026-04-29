@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:35.942Z"
 content_hash: "c0b9a989437ad408cdb34fd0c1d1d3c1c5f7d76859a95dfb224e224a3a934a43"
 menu_path: ["Imports reference"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/cli-reference/index.md", "title": "CLI Commands"}
-nav_next: {"path": "astro/en/reference/routing-reference/index.md", "title": "Routing Reference"}
+nav_prev: {"path": "../../reference/cli-reference/index.md", "title": "CLI Commands"}
+nav_next: {"path": "../../reference/routing-reference/index.md", "title": "Routing Reference"}
 ---
 
 # Imports reference

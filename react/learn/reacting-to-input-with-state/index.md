@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:27.471Z"
 content_hash: "7cee2772e3c70df1af4f52c736f45c03c0b6d4d45cbaf5bed24b0bb9ec4424ed"
 menu_path: ["Reacting to Input with State"]
 section_path: []
-nav_prev: {"path": "react/learn/managing-state/index.md", "title": "Managing State"}
-nav_next: {"path": "react/learn/choosing-the-state-structure/index.md", "title": "Choosing the State Structure"}
+nav_prev: {"path": "../managing-state/index.md", "title": "Managing State"}
+nav_next: {"path": "../choosing-the-state-structure/index.md", "title": "Choosing the State Structure"}
 ---
 
 React provides a declarative way to manipulate the UI. Instead of manipulating individual pieces of the UI directly, you describe the different states that your component can be in, and switch between them in response to the user input. This is similar to how designers think about the UI.
@@ -118,7 +118,7 @@ Human inputs
 
 Computer inputs
 
-In both cases, **you must set [state variables](react/learn/state-a-components-memory/index.md#anatomy-of-usestate) to update the UI.** For the form you’re developing, you will need to change state in response to a few different inputs:
+In both cases, **you must set [state variables](../state-a-components-memory/index.md#anatomy-of-usestate) to update the UI.** For the form you’re developing, you will need to change state in response to a few different inputs:
 
 *   **Changing the text input** (human) should switch it from the _Empty_ state to the _Typing_ state or back, depending on whether the text box is empty or not.
 *   **Clicking the Submit button** (human) should switch it to the _Submitting_ state.
@@ -175,7 +175,7 @@ You know they are essential, because you can’t remove any of them without brea
 
 #### Eliminating “impossible” states with a reducer[](#eliminating-impossible-states-with-a-reducer "Link for Eliminating “impossible” states with a reducer ")
 
-These three variables are a good enough representation of this form’s state. However, there are still some intermediate states that don’t fully make sense. For example, a non-null `error` doesn’t make sense when `status` is `'success'`. To model the state more precisely, you can [extract it into a reducer.](react/learn/extracting-state-logic-into-a-reducer/index.md) Reducers let you unify multiple state variables into a single object and consolidate all the related logic!
+These three variables are a good enough representation of this form’s state. However, there are still some intermediate states that don’t fully make sense. For example, a non-null `error` doesn’t make sense when `status` is `'success'`. To model the state more precisely, you can [extract it into a reducer.](../extracting-state-logic-into-a-reducer/index.md) Reducers let you unify multiple state variables into a single object and consolidate all the related logic!
 
 ### Step 5: Connect the event handlers to set state[](#step-5-connect-the-event-handlers-to-set-state "Link for Step 5: Connect the event handlers to set state ")
 

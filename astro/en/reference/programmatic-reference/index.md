@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:52.507Z"
 content_hash: "533c80df532b3f70e6bda694e491de60bdbcee2bf30616e703774f2c35831b37"
 menu_path: ["Programmatic Astro API (experimental)"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/container-reference/index.md", "title": "Astro Container API (experimental)"}
-nav_next: {"path": "astro/en/reference/experimental-flags/index.md", "title": "Configuring experimental flags"}
+nav_prev: {"path": "../container-reference/index.md", "title": "Astro Container API (experimental)"}
+nav_next: {"path": "../experimental-flags/index.md", "title": "Configuring experimental flags"}
 ---
 
 # Programmatic Astro API (experimental)

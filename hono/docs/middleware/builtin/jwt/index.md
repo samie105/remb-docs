@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:12.227Z"
 content_hash: "dce46af874ffbce165d1647f2fa0def46c90a76d691a84517d57a34e8b9487fa"
 menu_path: ["JWT Auth Middleware ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/middleware/builtin/jwk/index.md", "title": "JWK Auth Middleware \u200b"}
-nav_next: {"path": "hono/docs/middleware/builtin/logger/index.md", "title": "Logger Middleware \u200b"}
+nav_prev: {"path": "../jwk/index.md", "title": "JWK Auth Middleware \u200b"}
+nav_next: {"path": "../logger/index.md", "title": "Logger Middleware \u200b"}
 ---
 
 ## JWT Auth Middleware [​](#jwt-auth-middleware)

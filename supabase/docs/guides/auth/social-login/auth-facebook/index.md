@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:20.894Z"
 content_hash: "6c0db715822e96d6a8f01eca48c78e53b81ab201fff84428d47b9e136f0b54ea"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Facebook","Facebook"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Facebook","Facebook"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-discord/index.md", "title": "Login with Discord"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-figma/index.md", "title": "Login with Figma"}
+nav_prev: {"path": "../auth-discord/index.md", "title": "Login with Discord"}
+nav_next: {"path": "../auth-figma/index.md", "title": "Login with Figma"}
 ---
 
 # 

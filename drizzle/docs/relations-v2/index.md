@@ -10,8 +10,8 @@ content_hash: "3a0dc48ec48c71689af218d8f2df5aa99243dbedbc0217bfdf1a578e5b313ab3"
 menu_path: ["Drizzle relations"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/schemas/index.md", "title": "Table schemas"}
-nav_next: {"path": "drizzle/docs/rls/index.md", "title": "Row-Level Security (RLS)"}
+nav_prev: {"path": "../schemas/index.md", "title": "Table schemas"}
+nav_next: {"path": "../rls/index.md", "title": "Row-Level Security (RLS)"}
 ---
 
 WARNING
@@ -42,9 +42,9 @@ bun add drizzle-kit@beta -D
 
 This guide assumes familiarity with:
 
--   **Relations Fundamentals** - get familiar with the concepts of foreign key constraints, soft relations, database normalization, etc - [read here](drizzle/docs/rqb-fundamentals/index.md)
--   **Declare schema** - get familiar with how to define drizzle schemas - [read here](drizzle/docs/sql-schema-declaration/index.md)
--   **Database connection** - get familiar with how to connect to database using drizzle - [read here](drizzle/docs/get-started-postgresql/index.md)
+-   **Relations Fundamentals** - get familiar with the concepts of foreign key constraints, soft relations, database normalization, etc - [read here](../rqb-fundamentals/index.md)
+-   **Declare schema** - get familiar with how to define drizzle schemas - [read here](../sql-schema-declaration/index.md)
+-   **Database connection** - get familiar with how to connect to database using drizzle - [read here](../get-started-postgresql/index.md)
 
 The sole purpose of Drizzle relations is to let you query your relational data in the most simple and concise way:
 
@@ -123,7 +123,7 @@ const relations = defineRelations({ users, posts }, (r) => ({
 -   `to: r.users.id` specifies the table to which we are establishing a soft relation. In this case, the relation points to the `id` column in the `users` table.
 -   `optional: false` at the type level makes the `author` key in the posts object `required`. This should be used when you are certain that this specific entity will always exist.
 -   `alias` is used to add a specific alias to relationships between tables. If you have multiple identical relationships between two tables, you should differentiate them using `alias`
--   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `verified authors` will be retrieved. Learn more about polymorphic relations [here](drizzle/docs/relations-schema-declaration/index.md#polymorphic-relations).
+-   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `verified authors` will be retrieved. Learn more about polymorphic relations [here](../relations-schema-declaration/index.md#polymorphic-relations).
 
 ### `many()`[](#many)
 
@@ -151,7 +151,7 @@ const relations = defineRelations({ users, posts }, (r) => ({
 -   `to: r.posts.ownerId` specifies the table to which we are establishing a soft relation. In this case, the relation points to the `ownerId` column in the `posts` table.
 -   `optional: false` at the type level makes the `feed` key in the posts object `required`. This should be used when you are certain that this specific entity will always exist.
 -   `alias` is used to add a specific alias to relationships between tables. If you have multiple identical relationships between two tables, you should differentiate them using `alias`
--   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `approved posts` will be retrieved. Learn more about polymorphic relations [here](drizzle/docs/relations-schema-declaration/index.md#polymorphic-relations).
+-   `where` condition can be used for polymorphic relations. It fetches relations based on a `where` statement. For example, in the case above, only `approved posts` will be retrieved. Learn more about polymorphic relations [here](../relations-schema-declaration/index.md#polymorphic-relations).
 
 ### One-to-one[](#one-to-one)
 

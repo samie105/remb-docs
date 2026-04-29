@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:05.700Z"
 content_hash: "009341fe41a27adc63f5aeec99a79c6ab5bfe6be6a07abe522ad05b23b023c8f"
 menu_path: ["Realtime","Realtime","Debugging","Debugging","Operational Error Codes","Operational Error Codes"]
 section_path: ["Realtime","Realtime","Debugging","Debugging","Operational Error Codes","Operational Error Codes"]
-nav_prev: {"path": "supabase/docs/guides/realtime/concepts/index.md", "title": "Realtime Concepts"}
-nav_next: {"path": "supabase/docs/guides/realtime/getting_started/index.md", "title": "Getting Started with Realtime"}
+nav_prev: {"path": "../concepts/index.md", "title": "Realtime Concepts"}
+nav_next: {"path": "../getting_started/index.md", "title": "Getting Started with Realtime"}
 ---
 
 # 
@@ -55,7 +55,7 @@ Realtime was not able to connect to the tenant's database due to not having enou
 
 Learn more:
 
-*   [Connection management guide](supabase/docs/guides/database/connection-management/index.md)
+*   [Connection management guide](../../database/connection-management/index.md)
 
 Verify your database connection limits.
 
@@ -165,7 +165,7 @@ Maximum number of WAL senders reached in tenant database.
 
 Learn more:
 
-*   [Configuring max WAL senders](supabase/docs/guides/database/custom-postgres-config/index.md#cli-configurable-settings)
+*   [Configuring max WAL senders](../../database/custom-postgres-config/index.md#cli-configurable-settings)
 
 `ReplicationSlotBeingUsed`
 

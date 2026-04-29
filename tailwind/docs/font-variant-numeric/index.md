@@ -10,8 +10,8 @@ content_hash: "33c223bd857d1c0251addf014d896f3b9c92743969e7c0d92679f3a6ad45d29c"
 menu_path: ["font-variant-numeric"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/font-stretch/index.md", "title": "font-stretch"}
-nav_next: {"path": "tailwind/docs/font-feature-settings/index.md", "title": "font-feature-settings"}
+nav_prev: {"path": "../font-stretch/index.md", "title": "font-stretch"}
+nav_next: {"path": "../font-feature-settings/index.md", "title": "font-feature-settings"}
 ---
 
 # font-variant-numeric

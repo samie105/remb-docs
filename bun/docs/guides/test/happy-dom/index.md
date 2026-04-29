@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:39.725Z"
 content_hash: "6e6201bce863ded029142de94228cc70d0ccb468a8e1f55bc6298fac808a073b"
 menu_path: ["Write browser DOM tests with Bun and happy-dom"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/coverage-threshold/index.md", "title": "Set a code coverage threshold with the Bun test runner"}
-nav_next: {"path": "bun/docs/guides/test/migrate-from-jest/index.md", "title": "Migrate from Jest to Bun's test runner"}
+nav_prev: {"path": "../coverage-threshold/index.md", "title": "Set a code coverage threshold with the Bun test runner"}
+nav_next: {"path": "../migrate-from-jest/index.md", "title": "Migrate from Jest to Bun's test runner"}
 ---
 
 [Skip to main content](#content-area)

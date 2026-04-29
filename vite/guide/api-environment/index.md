@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:52.550Z"
 content_hash: "8f3d0a353cff46f24ceef4103cb695bdfaf55f160455c8b53d5cd1c587f48e80"
 menu_path: ["Environment API ​"]
 section_path: []
-nav_prev: {"path": "vite/config/index.md", "title": "Configuring Vite \u200b"}
-nav_next: {"path": "vite/guide/api-environment-instances/index.md", "title": "Using Environment Instances \u200b"}
+nav_prev: {"path": "../../config/index.md", "title": "Configuring Vite \u200b"}
+nav_next: {"path": "../api-environment-instances/index.md", "title": "Using Environment Instances \u200b"}
 ---
 
 ## Environment API [​](#environment-api)
@@ -89,7 +89,7 @@ export default {
 }
 ```
 
-When not explicitly documented, environment inherits the configured top-level config options (for example, the new `server` and `edge` environments will inherit the `build.sourcemap: false` option). A small number of top-level options, like `optimizeDeps`, only apply to the `client` environment, as they don't work well when applied as a default to server environments. Those options have [non-inherit](vite/guide/api-environment/index.md#environments-configuration) badge in [the reference](vite/config/index.md). The `client` environment can also be configured explicitly through `environments.client`, but we recommend to do it with the top-level options so the client config remains unchanged when adding new environments.
+When not explicitly documented, environment inherits the configured top-level config options (for example, the new `server` and `edge` environments will inherit the `build.sourcemap: false` option). A small number of top-level options, like `optimizeDeps`, only apply to the `client` environment, as they don't work well when applied as a default to server environments. Those options have [non-inherit](index.md#environments-configuration) badge in [the reference](../../config/index.md). The `client` environment can also be configured explicitly through `environments.client`, but we recommend to do it with the top-level options so the client config remains unchanged when adding new environments.
 
 The `EnvironmentOptions` interface exposes all the per-environment options. There are environment options that apply to both `build` and `dev`, like `resolve`. And there are `DevEnvironmentOptions` and `BuildEnvironmentOptions` for dev and build specific options (like `dev.warmup` or `build.outDir`). Some options like `optimizeDeps` only applies to dev, but is kept as top level instead of nested in `dev` for backward compatibility.
 
@@ -162,8 +162,8 @@ We don't recommend switching to Environment API yet. We are aiming for a good po
 
 This guide provides the basic concepts about environments for end users.
 
-Plugin authors have a more consistent API available to interact with the current environment configuration. If you're building on top of Vite, the [Environment API Plugins Guide](vite/guide/api-environment-plugins/index.md) guide describes the way extended plugin APIs available to support multiple custom environments.
+Plugin authors have a more consistent API available to interact with the current environment configuration. If you're building on top of Vite, the [Environment API Plugins Guide](../api-environment-plugins/index.md) guide describes the way extended plugin APIs available to support multiple custom environments.
 
-Frameworks could decide to expose environments at different levels. If you're a framework author, continue reading the [Environment API Frameworks Guide](vite/guide/api-environment-frameworks/index.md) to learn about the Environment API programmatic side.
+Frameworks could decide to expose environments at different levels. If you're a framework author, continue reading the [Environment API Frameworks Guide](../api-environment-frameworks/index.md) to learn about the Environment API programmatic side.
 
-For Runtime providers, the [Environment API Runtimes Guide](vite/guide/api-environment-runtimes/index.md) explains how to offer custom environments to be consumed by frameworks and users.
+For Runtime providers, the [Environment API Runtimes Guide](../api-environment-runtimes/index.md) explains how to offer custom environments to be consumed by frameworks and users.

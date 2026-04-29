@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:05.728Z"
 content_hash: "7c89a2f7057b0ea428f74b9a0f925e56f46faf8dc5851d57f4e25c4b15bcac02"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Log Drains","Log Drains"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Log Drains","Log Drains"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/ipv4/index.md", "title": "Manage IPv4 usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
+nav_prev: {"path": "../ipv4/index.md", "title": "Manage IPv4 usage"}
+nav_next: {"path": "../monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:18.327Z"
 content_hash: "38bb67f389b01a1cc52afd7eb06313b0acf7a316fcd043a0673df12d2815a40c"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","SolidJS","SolidJS"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","SolidJS","SolidJS"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-refine/index.md", "title": "Build a User Management App with Refine"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-svelte/index.md", "title": "Build a User Management App with Svelte"}
+nav_prev: {"path": "../with-refine/index.md", "title": "Build a User Management App with Refine"}
+nav_next: {"path": "../with-svelte/index.md", "title": "Build a User Management App with Svelte"}
 ---
 
 # 

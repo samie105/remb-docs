@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:11.768Z"
 content_hash: "15fe91fdd119d243d2ba6a9e459bc7f9ffdd3e9c0e9a4330ccc78fcd2cf11ae5"
 menu_path: ["Working with integrations"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/environment-variables/index.md", "title": "Using environment variables"}
-nav_next: {"path": "astro/en/guides/build-with-ai/index.md", "title": "Building Astro sites with AI tools"}
+nav_prev: {"path": "../environment-variables/index.md", "title": "Using environment variables"}
+nav_next: {"path": "../build-with-ai/index.md", "title": "Building Astro sites with AI tools"}
 ---
 
 # Working with integrations

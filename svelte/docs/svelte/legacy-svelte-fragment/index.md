@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:18.060Z"
 content_hash: "0a52d45f58eb91935bc8e5948fb305bcc5849f4ade167929a9c632a29040630d"
 menu_path: ["<svelte:fragment>"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/legacy-$$slots/index.md", "title": "$$slots"}
-nav_next: {"path": "svelte/docs/svelte/legacy-svelte-component/index.md", "title": "<svelte:component>"}
+nav_prev: {"path": "../legacy-$$slots/index.md", "title": "$$slots"}
+nav_next: {"path": "../legacy-svelte-component/index.md", "title": "<svelte:component>"}
 ---
 
 The `<svelte:fragment>` element allows you to place content in a [named slot](legacy-slots) without wrapping it in a container DOM element. This keeps the flow layout of your document intact.

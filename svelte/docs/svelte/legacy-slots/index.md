@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:51.848Z"
 content_hash: "c698e5cc9164fdc65b8f18e6ea7a07b640e7f91cd5b89c84f09398b0f9149810"
 menu_path: ["<slot>"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/legacy-on/index.md", "title": "on:"}
-nav_next: {"path": "svelte/docs/svelte/legacy-$$slots/index.md", "title": "$$slots"}
+nav_prev: {"path": "../legacy-on/index.md", "title": "on:"}
+nav_next: {"path": "../legacy-$$slots/index.md", "title": "$$slots"}
 ---
 
 In Svelte 5, content can be passed to components in the form of [snippets](snippet) and rendered using [render tags](@render).

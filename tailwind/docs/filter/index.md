@@ -10,8 +10,8 @@ content_hash: "71f88212b74635631f01ea0eef6bbf35bc98a3baf89fcf6c50af327645c7b710"
 menu_path: ["filter"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/mask-type/index.md", "title": "mask-type"}
-nav_next: {"path": "tailwind/docs/filter-blur/index.md", "title": "filter: blur()"}
+nav_prev: {"path": "../mask-type/index.md", "title": "mask-type"}
+nav_next: {"path": "../filter-blur/index.md", "title": "filter: blur()"}
 ---
 
 # filter

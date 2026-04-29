@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:50.419Z"
 content_hash: "4435ee49b28ff144dacc40a26c867fa346a26abb34494c85862715f5cc61f4db"
 menu_path: ["Input & Output Validators"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/subscriptions/index.md", "title": "Subscriptions"}
-nav_next: {"path": "trpc/docs/server/websockets/index.md", "title": "WebSockets"}
+nav_prev: {"path": "../subscriptions/index.md", "title": "Subscriptions"}
+nav_next: {"path": "../websockets/index.md", "title": "WebSockets"}
 ---
 
 tRPC procedures may define validation logic for their input and/or output, and validators are also used to infer the types of inputs and outputs (using the [Standard Schema](https://standardschema.dev/) interface if available, or custom interfaces for supported validators if not). We have first class support for many popular validators, and you can [integrate validators](#contributing-your-own-validator-library) which we don't directly support.
@@ -55,7 +55,7 @@ ts
 
 ### Input Merging[​](#input-merging "Direct link to Input Merging")
 
-`.input()` can be stacked to build more complex types, which is particularly useful when you want to utilise some common input to a collection of procedures in a [middleware](trpc/docs/server/middlewares/index.md).
+`.input()` can be stacked to build more complex types, which is particularly useful when you want to utilise some common input to a collection of procedures in a [middleware](../middlewares/index.md).
 
 Input merging works by spreading object properties together. This means only **object types** can be chained — non-object types (like `z.string()`) cannot be merged. If two chained `.input()` calls define the same property, the later one takes precedence.
 
@@ -158,7 +158,7 @@ ts
 
 Since subscriptions are async iterators, you can use the same validation techniques as above.
 
-Have a look at the [subscriptions guide](trpc/docs/server/subscriptions/index.md#output-validation) for more information.
+Have a look at the [subscriptions guide](../subscriptions/index.md#output-validation) for more information.
 
 ## The most basic validator: a function[​](#the-most-basic-validator-a-function "Direct link to The most basic validator: a function")
 

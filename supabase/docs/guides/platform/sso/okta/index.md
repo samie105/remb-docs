@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:57.318Z"
 content_hash: "849824470426efce3b3bc58eb1df8cc26ab03e4dbe3285e1f6a3cfa9ead28d31"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Okta","SSO with Okta"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Okta","SSO with Okta"]
-nav_prev: {"path": "supabase/docs/guides/platform/sso/gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
-nav_next: {"path": "supabase/docs/guides/platform/upgrading/index.md", "title": "Upgrading"}
+nav_prev: {"path": "../gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
+nav_next: {"path": "../../upgrading/index.md", "title": "Upgrading"}
 ---
 
 # 

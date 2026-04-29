@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:05.762Z"
 content_hash: "d12c6caaeba0c80c83961f011149b1caf11df6804aa53c26c04e3fe8495da93f"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Nuxt 3","Nuxt 3"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Nuxt 3","Nuxt 3"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-react/index.md", "title": "Build a User Management App with React"}
+nav_prev: {"path": "../with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
+nav_next: {"path": "../with-react/index.md", "title": "Build a User Management App with React"}
 ---
 
 # 

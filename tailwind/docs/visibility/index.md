@@ -10,8 +10,8 @@ content_hash: "9eee1ea521fd0a9ad5e11f9556863cb696b62a16c48734f52d6f4cb16b9492b6"
 menu_path: ["visibility"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/top-right-bottom-left/index.md", "title": "top / right / bottom / left"}
-nav_next: {"path": "tailwind/docs/z-index/index.md", "title": "z-index"}
+nav_prev: {"path": "../top-right-bottom-left/index.md", "title": "top / right / bottom / left"}
+nav_next: {"path": "../z-index/index.md", "title": "z-index"}
 ---
 
 Utilities for controlling the visibility of an element.
@@ -32,7 +32,7 @@ Use the `invisible` utility to hide an element, but still maintain its place in 
 <div class="grid grid-cols-3 gap-4">  <div>01</div>  <div class="invisible ...">02</div>  <div>03</div></div>
 ```
 
-To completely remove an element from the document, use the [display](tailwind/docs/display/index.md#hidden) property instead.
+To completely remove an element from the document, use the [display](../display/index.md#hidden) property instead.
 
 ### [Collapsing elements](#collapsing-elements)
 
@@ -92,4 +92,4 @@ Prefix a `visibility` utility with a breakpoint variant like `md:` to only apply
 <div class="visible md:invisible ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

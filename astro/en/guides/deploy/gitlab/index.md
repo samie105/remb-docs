@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:20.715Z"
 content_hash: "c2eb808ca20c318d26a0a0f952348a015d73e98fba732d28fab9986cd943cb32"
 menu_path: ["Deploy your Astro Site to GitLab Pages"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/github/index.md", "title": "Deploy your Astro Site to GitHub Pages"}
-nav_next: {"path": "astro/en/guides/deploy/google-cloud/index.md", "title": "Deploy your Astro Site to Google Cloud"}
+nav_prev: {"path": "../github/index.md", "title": "Deploy your Astro Site to GitHub Pages"}
+nav_next: {"path": "../google-cloud/index.md", "title": "Deploy your Astro Site to Google Cloud"}
 ---
 
 # Deploy your Astro Site to GitLab Pages

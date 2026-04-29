@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:46.988Z"
 content_hash: "092b9da760e58e5b83e4266b86e98ca00295f00de3c0a504953b21486379d09e"
 menu_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Getting started","Getting started"]
 section_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Getting started","Getting started"]
-nav_prev: {"path": "supabase/docs/guides/platform/read-replicas/index.md", "title": "Read Replicas"}
-nav_next: {"path": "supabase/docs/guides/platform/regions/index.md", "title": "Available regions"}
+nav_prev: {"path": "../index.md", "title": "Read Replicas"}
+nav_next: {"path": "../../regions/index.md", "title": "Available regions"}
 ---
 
 # 

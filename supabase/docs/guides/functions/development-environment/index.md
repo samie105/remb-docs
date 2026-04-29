@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:19.524Z"
 content_hash: "a307d527c44add92a0b3ca05f485f52ae78f17c8143e22564fa7b2079ea548b5"
 menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Development Environment","Development Environment"]
 section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Development Environment","Development Environment"]
-nav_prev: {"path": "supabase/docs/guides/functions/deploy/index.md", "title": "Deploy to Production"}
-nav_next: {"path": "supabase/docs/guides/functions/development-tips/index.md", "title": "Development tips"}
+nav_prev: {"path": "../deploy/index.md", "title": "Deploy to Production"}
+nav_next: {"path": "../development-tips/index.md", "title": "Development tips"}
 ---
 
 # 

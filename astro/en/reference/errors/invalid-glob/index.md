@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:19.635Z"
 content_hash: "54d2ed7b00371404b26e6750c0fffed82d271b98af051b3645bf6b701de4a34a"
 menu_path: ["Invalid glob pattern."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/invalid-get-static-paths-return/index.md", "title": "Invalid value returned by getStaticPaths."}
-nav_next: {"path": "astro/en/reference/errors/invalid-i18n-middleware-configuration/index.md", "title": "Invalid internationalization middleware configuration"}
+nav_prev: {"path": "../invalid-get-static-paths-return/index.md", "title": "Invalid value returned by getStaticPaths."}
+nav_next: {"path": "../invalid-i18n-middleware-configuration/index.md", "title": "Invalid internationalization middleware configuration"}
 ---
 
 # Invalid glob pattern.

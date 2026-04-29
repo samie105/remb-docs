@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:51.844Z"
 content_hash: "df9b28f6c41ed82e3acc13b1638677db783900f0d214b939a809c819e89ef901"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Twitch","Twitch"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Twitch","Twitch"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-spotify/index.md", "title": "Login with Spotify"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-twitter/index.md", "title": "Login with X / Twitter"}
+nav_prev: {"path": "../auth-spotify/index.md", "title": "Login with Spotify"}
+nav_next: {"path": "../auth-twitter/index.md", "title": "Login with X / Twitter"}
 ---
 
 # 

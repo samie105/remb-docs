@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:07.158Z"
 content_hash: "3fea1c6171fa1b074e500f0ef432b111f9cb696ce6715372a23eb50374babb4f"
 menu_path: ["Dev Toolbar App API"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/image-service-reference/index.md", "title": "Image Service API"}
-nav_next: {"path": "astro/en/reference/session-driver-reference/index.md", "title": "Astro Session Driver API"}
+nav_prev: {"path": "../image-service-reference/index.md", "title": "Image Service API"}
+nav_next: {"path": "../session-driver-reference/index.md", "title": "Astro Session Driver API"}
 ---
 
 # Dev Toolbar App API

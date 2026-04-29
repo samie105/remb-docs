@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:39.224Z"
 content_hash: "6d0abc00b0214e71da00199e790241be9fb8b735d23cbb5b994feab7cdb36ea8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security","→\n      \n        TLS","→","TLS"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security","→\n      \n        TLS","→","TLS"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/acl/index.md", "title": "ACL"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/sentinel/index.md", "title": "High availability with Redis Sentinel"}
+nav_prev: {"path": "../acl/index.md", "title": "ACL"}
+nav_next: {"path": "../../sentinel/index.md", "title": "High availability with Redis Sentinel"}
 ---
 
 # TLS

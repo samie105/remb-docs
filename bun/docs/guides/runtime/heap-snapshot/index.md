@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:36.568Z"
 content_hash: "2c7e288a7b2733a3bc615afd4e85aa9eeab7eb64b87d517852e7d3b050b85708"
 menu_path: ["Inspect memory usage using V8 heap snapshots"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/delete-file/index.md", "title": "Delete files"}
-nav_next: {"path": "bun/docs/guides/runtime/import-html/index.md", "title": "Import a HTML file as text"}
+nav_prev: {"path": "../delete-file/index.md", "title": "Delete files"}
+nav_next: {"path": "../import-html/index.md", "title": "Import a HTML file as text"}
 ---
 
 [Skip to main content](#content-area)

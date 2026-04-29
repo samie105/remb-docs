@@ -11,8 +11,8 @@ menu_path: ["onDemandEntries"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/mdxRs/index.md", "title": "mdxRs"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/optimizePackageImports/index.md", "title": "optimizePackageImports"}
+nav_prev: {"path": "../mdxRs/index.md", "title": "mdxRs"}
+nav_next: {"path": "../optimizePackageImports/index.md", "title": "optimizePackageImports"}
 ---
 
 # onDemandEntries

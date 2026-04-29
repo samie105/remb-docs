@@ -11,8 +11,8 @@ menu_path: ["No Script Component in Head"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/no-page-custom-font/index.md", "title": "No Page Custom Font"}
-nav_next: {"path": "nextjs/docs/messages/no-styled-jsx-in-document/index.md", "title": "No `styled-jsx` in `_document`"}
+nav_prev: {"path": "../no-page-custom-font/index.md", "title": "No Page Custom Font"}
+nav_next: {"path": "../no-styled-jsx-in-document/index.md", "title": "No `styled-jsx` in `_document`"}
 ---
 
 # No Script Component in Head

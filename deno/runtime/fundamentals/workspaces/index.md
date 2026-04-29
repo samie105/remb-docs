@@ -10,8 +10,8 @@ content_hash: "be6be87a1f1091aa7f1b150f7533de2c6586b697355e0617ec20eb8bbe2c920d"
 menu_path: ["Workspaces and monorepos"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/fundamentals/debugging/index.md", "title": "Debugging"}
-nav_next: {"path": "deno/runtime/fundamentals/linting_and_formatting/index.md", "title": "Linting and formatting"}
+nav_prev: {"path": "../debugging/index.md", "title": "Debugging"}
+nav_next: {"path": "../linting_and_formatting/index.md", "title": "Linting and formatting"}
 ---
 
 # Test a published package

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:13.848Z"
 content_hash: "1afa9566487c77a575fea4a3742fde2fb4b74c300ea1ae7a5eb07444fbed5c81"
 menu_path: ["Database","Database","Extensions","Extensions","PostGIS: Geo queries","PostGIS: Geo queries"]
 section_path: ["Database","Database","Extensions","Extensions","PostGIS: Geo queries","PostGIS: Geo queries"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/plv8/index.md", "title": "plv8: JavaScript Language"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/postgres_fdw/index.md", "title": "postgres_fdw"}
+nav_prev: {"path": "../plv8/index.md", "title": "plv8: JavaScript Language"}
+nav_next: {"path": "../postgres_fdw/index.md", "title": "postgres_fdw"}
 ---
 
 # 

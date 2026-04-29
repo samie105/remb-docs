@@ -11,13 +11,13 @@ menu_path: ["Generators"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/data-sources/index.md", "title": "Data sources"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/location/index.md", "title": "Schema location"}
+nav_prev: {"path": "../data-sources/index.md", "title": "Data sources"}
+nav_next: {"path": "../location/index.md", "title": "Schema location"}
 ---
 
 Generators in your Prisma schema specify what assets are generated when the \`prisma generate\` command is invoked. This page explains how to configure generators
 
-A Prisma schema can have one or more generators, represented by the [`generator`](prisma/docs/orm/reference/prisma-schema-reference/index.md#generator) block:
+A Prisma schema can have one or more generators, represented by the [`generator`](../../../reference/prisma-schema-reference/index.md#generator) block:
 
 ```
 generator client {
@@ -54,7 +54,7 @@ Follow these steps to use the new `prisma-client` generator in your project.
 
 #### [1\. Configure the `prisma-client` generator in `schema.prisma`](#1-configure-the-prisma-client-generator-in-schemaprisma)
 
-Update your [`generator`](prisma/docs/orm/prisma-schema/overview/generators/index.md) block:
+Update your [`generator`](index.md) block:
 
 prisma/schema.prisma
 
@@ -299,7 +299,7 @@ The `prisma-client-js` generator requires the `@prisma/client` npm package and g
 
 The generator for Prisma's JavaScript Client accepts multiple additional properties:
 
--   `previewFeatures`: [Preview features](prisma/docs/orm/reference/preview-features/client-preview-features/index.md) to include
+-   `previewFeatures`: [Preview features](../../../reference/preview-features/client-preview-features/index.md) to include
 -   `binaryTargets`: Engine binary targets for `prisma-client-js` (for example, `debian-openssl-1.1.x` if you are deploying to Ubuntu 18+, or `native` if you are working locally)
 
 prisma/schema.prisma

@@ -11,8 +11,8 @@ menu_path: ["serverActions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/sassOptions/index.md", "title": "sassOptions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverComponentsHmrCache/index.md", "title": "serverComponentsHmrCache"}
+nav_prev: {"path": "../sassOptions/index.md", "title": "sassOptions"}
+nav_next: {"path": "../serverComponentsHmrCache/index.md", "title": "serverComponentsHmrCache"}
 ---
 
 # serverActions

@@ -10,8 +10,8 @@ content_hash: "a115c3122453c385c07204114d3ac5e6720d682d1abdf730408142a81c48937f"
 menu_path: ["Read Replicas"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/dynamic-query-building/index.md", "title": "Dynamic query building"}
-nav_next: {"path": "drizzle/docs/custom-types/index.md", "title": "Common way of defining custom types"}
+nav_prev: {"path": "../dynamic-query-building/index.md", "title": "Dynamic query building"}
+nav_next: {"path": "../custom-types/index.md", "title": "Common way of defining custom types"}
 ---
 
 When your project involves a set of read replica instances, and you require a convenient method for managing SELECT queries from read replicas, as well as performing create, delete, and update operations on the primary instance, you can leverage the `withReplicas()` function within Drizzle

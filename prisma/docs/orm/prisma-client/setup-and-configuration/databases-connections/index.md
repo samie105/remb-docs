@@ -10,8 +10,8 @@ content_hash: "c71d29b9365e5f6908ceebb21daff646030025990b586bf1b44bcc921646d521"
 menu_path: ["Database connections"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/database-polyfills/index.md", "title": "Database polyfills"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md", "title": "Connection management"}
+nav_prev: {"path": "../database-polyfills/index.md", "title": "Database polyfills"}
+nav_next: {"path": "connection-management/index.md", "title": "Connection management"}
 ---
 
 # Connection URL to your database using PgBouncer.
@@ -53,8 +53,8 @@ export const prisma = new PrismaClient({ adapter });
 
 PostgreSQL only supports a certain amount of concurrent connections, and this limit can be reached quite fast when the service usage goes up – especially in [serverless environments](#serverless-environments-faas).
 
-[PgBouncer](https://www.pgbouncer.org/) holds a connection pool to the database and proxies incoming client connections by sitting between Prisma Client and the database. This reduces the number of processes a database has to handle at any given time. PgBouncer passes on a limited number of connections to the database and queues additional connections for delivery when connections become available. To use PgBouncer, see [Configure Prisma Client with PgBouncer](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md).
+[PgBouncer](https://www.pgbouncer.org/) holds a connection pool to the database and proxies incoming client connections by sitting between Prisma Client and the database. This reduces the number of processes a database has to handle at any given time. PgBouncer passes on a limited number of connections to the database and queues additional connections for delivery when connections become available. To use PgBouncer, see [Configure Prisma Client with PgBouncer](pgbouncer/index.md).
 
 ### [AWS RDS Proxy](#aws-rds-proxy)
 
-Due to the way AWS RDS Proxy pins connections, [it does not provide any connection pooling benefits](prisma/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms/index.md#aws-rds-proxy) when used together with Prisma Client.
+Due to the way AWS RDS Proxy pins connections, [it does not provide any connection pooling benefits](../../deployment/caveats-when-deploying-to-aws-platforms/index.md#aws-rds-proxy) when used together with Prisma Client.

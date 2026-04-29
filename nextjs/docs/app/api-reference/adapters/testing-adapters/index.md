@@ -11,8 +11,8 @@ menu_path: ["Testing Adapters"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/api-reference/index.md", "title": "API Reference"}
-nav_next: {"path": "nextjs/docs/app/api-reference/adapters/routing-with-next-routing/index.md", "title": "Routing with @next/routing"}
+nav_prev: {"path": "../api-reference/index.md", "title": "API Reference"}
+nav_next: {"path": "../routing-with-next-routing/index.md", "title": "Routing with @next/routing"}
 ---
 
 # Testing Adapters

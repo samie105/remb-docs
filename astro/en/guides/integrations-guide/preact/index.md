@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:22.654Z"
 content_hash: "bf83714aa6e1c0f11a3919c656c9a63379c7520f503f8b0efc32e309e5ee592f"
 menu_path: ["@astrojs/\n\t\t\t\t\tpreact"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/alpinejs/index.md", "title": "@astrojs/\n\t\t\t\t\talpinejs"}
-nav_next: {"path": "astro/en/guides/integrations-guide/react/index.md", "title": "@astrojs/\n\t\t\t\t\treact"}
+nav_prev: {"path": "../alpinejs/index.md", "title": "@astrojs/\n\t\t\t\t\talpinejs"}
+nav_next: {"path": "../react/index.md", "title": "@astrojs/\n\t\t\t\t\treact"}
 ---
 
 # @astrojs/ preact

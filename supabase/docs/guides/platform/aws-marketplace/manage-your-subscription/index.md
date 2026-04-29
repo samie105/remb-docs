@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:47.080Z"
 content_hash: "2d4c6d1028cda0595e04096a2057f563dceaaa3adc9ae9db1c34ef65740cfb01"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Manage your subscription","Manage your subscription"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Manage your subscription","Manage your subscription"]
-nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/invoices/index.md", "title": "Invoices"}
-nav_next: {"path": "supabase/docs/guides/platform/backups/index.md", "title": "Database Backups"}
+nav_prev: {"path": "../invoices/index.md", "title": "Invoices"}
+nav_next: {"path": "../../backups/index.md", "title": "Database Backups"}
 ---
 
 # 

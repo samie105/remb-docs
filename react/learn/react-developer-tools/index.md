@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:40.272Z"
 content_hash: "54bc954b44714db78639dfcb008b4f4e31356fd140a69fb201043bc6aec2ce4d"
 menu_path: ["React Developer Tools"]
 section_path: []
-nav_prev: {"path": "react/learn/typescript/index.md", "title": "Using TypeScript"}
-nav_next: {"path": "react/learn/react-compiler/index.md", "title": "React Compiler"}
+nav_prev: {"path": "../typescript/index.md", "title": "Using TypeScript"}
+nav_next: {"path": "../react-compiler/index.md", "title": "React Compiler"}
 ---
 
 # Yarnyarn global add react-devtools# Npmnpm install -g react-devtools

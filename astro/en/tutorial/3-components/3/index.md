@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:35.651Z"
 content_hash: "4832964aa69b763cd2ff9d8e9f6859560e199695ff20426dab2ba47dbb789ea3"
 menu_path: ["Build it yourself - Header"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/3-components/2/index.md", "title": "Create a social media footer"}
-nav_next: {"path": "astro/en/tutorial/3-components/4/index.md", "title": "Send your first script to the browser"}
+nav_prev: {"path": "../2/index.md", "title": "Create a social media footer"}
+nav_next: {"path": "../4/index.md", "title": "Send your first script to the browser"}
 ---
 
 # Build it yourself - Header

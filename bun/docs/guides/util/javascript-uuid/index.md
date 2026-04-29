@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:06.315Z"
 content_hash: "bffcf039dca66f16b9b2a1c2df5d406cd91cf734951cc6a32debde8350b3701b"
 menu_path: ["Generate a UUID"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/import-meta-path/index.md", "title": "Get the absolute path of the current file"}
-nav_next: {"path": "bun/docs/guides/util/main/index.md", "title": "Get the absolute path to the current entrypoint"}
+nav_prev: {"path": "../import-meta-path/index.md", "title": "Get the absolute path of the current file"}
+nav_next: {"path": "../main/index.md", "title": "Get the absolute path to the current entrypoint"}
 ---
 
 [Skip to main content](#content-area)

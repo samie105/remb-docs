@@ -10,8 +10,8 @@ content_hash: "15fc848af935bd0b269cd0bdabce2b0a6bdf59077348a2fa7b27178abea77ba5"
 menu_path: ["Drizzle <> AWS Data API Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/connect-react-native-sqlite/index.md", "title": "Drizzle <> React Native SQLite"}
-nav_next: {"path": "drizzle/docs/connect-aws-data-api-mysql/index.md", "title": "Drizzle <> AWS Data API MySQL"}
+nav_prev: {"path": "../connect-react-native-sqlite/index.md", "title": "Drizzle <> React Native SQLite"}
+nav_next: {"path": "../connect-aws-data-api-mysql/index.md", "title": "Drizzle <> AWS Data API MySQL"}
 ---
 
 #### Step 1 - Install packages[](#step-1---install-packages)

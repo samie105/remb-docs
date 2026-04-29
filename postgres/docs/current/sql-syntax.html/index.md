@@ -10,8 +10,8 @@ content_hash: "3de1a639ab76335c0e305108f92688209f3aa7094f180d9828160c330fe97d90"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 4. SQL Syntax"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/tutorial-advanced.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a03.\u00a0Advanced Features"}
-nav_next: {"path": "postgres/docs/current/ddl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a05.\u00a0Data Definition"}
+nav_prev: {"path": "../tutorial-advanced.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a03.\u00a0Advanced Features"}
+nav_next: {"path": "../ddl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a05.\u00a0Data Definition"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/sql-syntax.html "PostgreSQL devel - Chapter 4. SQL Syntax")

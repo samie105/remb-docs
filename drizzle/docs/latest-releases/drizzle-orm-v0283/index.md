@@ -10,8 +10,8 @@ content_hash: "8c5b3bb7cc9a3d49735d82fef25db7bbc56cd189cc58c91cb04fa9cb31a0615f"
 menu_path: ["Drizzle ORM - DrizzleORM v0.28.3 release"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0282/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.2 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0284/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.4 release"}
+nav_prev: {"path": "../drizzle-orm-v0282/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.2 release"}
+nav_next: {"path": "../drizzle-orm-v0284/index.md", "title": "Drizzle ORM - DrizzleORM v0.28.4 release"}
 ---
 
 DrizzleORM v0.28.3 release
@@ -28,7 +28,7 @@ Aug 22, 2023
 
 ### 🎉 Added `.$defaultFn()` / `.$default()` methods to column builders
 
-For more information check docs for [PostgreSQL](drizzle/docs/column-types/pg/index.md#default-value), [MySQL](drizzle/docs/column-types/mysql/index.md#default-value) and [SQLite](drizzle/docs/column-types/sqlite/index.md#default-value).
+For more information check docs for [PostgreSQL](../../column-types/pg/index.md#default-value), [MySQL](../../column-types/mysql/index.md#default-value) and [SQLite](../../column-types/sqlite/index.md#default-value).
 
 You can specify any logic and any implementation for a function like `cuid()` for runtime defaults. Drizzle won’t limit you in the number of implementations you can add.
 

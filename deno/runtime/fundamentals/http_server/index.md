@@ -10,8 +10,8 @@ content_hash: "0d1643913aec259656028afffbebf911e397b91ad040333ab54f0a6a45f93918"
 menu_path: ["Writing an HTTP Server"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/fundamentals/linting_and_formatting/index.md", "title": "Linting and formatting"}
-nav_next: {"path": "deno/runtime/fundamentals/ffi/index.md", "title": "Foreign Function Interface (FFI)"}
+nav_prev: {"path": "../linting_and_formatting/index.md", "title": "Linting and formatting"}
+nav_next: {"path": "../ffi/index.md", "title": "Foreign Function Interface (FFI)"}
 ---
 
 **On this page**

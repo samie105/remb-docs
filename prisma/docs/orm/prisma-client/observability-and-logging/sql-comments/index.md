@@ -11,8 +11,8 @@ menu_path: ["SQL comments"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/opentelemetry-tracing/index.md", "title": "OpenTelemetry tracing"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/queries/advanced/query-optimization-performance/index.md", "title": "Query optimization"}
+nav_prev: {"path": "../opentelemetry-tracing/index.md", "title": "OpenTelemetry tracing"}
+nav_next: {"path": "../../queries/advanced/query-optimization-performance/index.md", "title": "Query optimization"}
 ---
 
 Add metadata to your SQL queries as comments for improved observability, debugging, and tracing

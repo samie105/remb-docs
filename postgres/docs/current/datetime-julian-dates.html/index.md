@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:25.720Z"
 content_hash: "ead1ff0e225979e2f63883c4640d763f76dbfc7164bfd451436a2bd478e5c433"
 menu_path: ["PostgreSQL: Documentation: 18: B.7. Julian Dates"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datetime-invalid-input.html/index.md", "title": "PostgreSQL: Documentation: 18: B.2.\u00a0Handling of Invalid or Ambiguous Timestamps"}
-nav_next: {"path": "postgres/docs/current/datetime-keywords.html/index.md", "title": "PostgreSQL: Documentation: 18: B.3.\u00a0Date/Time Key Words"}
+nav_prev: {"path": "../datetime-invalid-input.html/index.md", "title": "PostgreSQL: Documentation: 18: B.2.\u00a0Handling of Invalid or Ambiguous Timestamps"}
+nav_next: {"path": "../datetime-keywords.html/index.md", "title": "PostgreSQL: Documentation: 18: B.3.\u00a0Date/Time Key Words"}
 ---
 
 The _Julian Date_ system is a method for numbering days. It is unrelated to the Julian calendar, though it is confusingly named similarly to that calendar. The Julian Date system was invented by the French scholar Joseph Justus Scaliger (1540–1609) and probably takes its name from Scaliger's father, the Italian scholar Julius Caesar Scaliger (1484–1558).

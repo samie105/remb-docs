@@ -10,8 +10,8 @@ content_hash: "4edaacf50068b0319bb62d27f00bf0e5387146fa90d64fac9c2fda9de7bad99d"
 menu_path: ["PostgreSQL: Documentation: 18: 34.4. Using Host Variables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-whenever.html/index.md", "title": "PostgreSQL: Documentation: 18: WHENEVER"}
-nav_next: {"path": "postgres/docs/current/error-message-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.2.\u00a0Reporting Errors Within the Server"}
+nav_prev: {"path": "../ecpg-sql-whenever.html/index.md", "title": "PostgreSQL: Documentation: 18: WHENEVER"}
+nav_next: {"path": "../error-message-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.2.\u00a0Reporting Errors Within the Server"}
 ---
 
 In [Section 34.3](https://www.postgresql.org/docs/current/ecpg-commands.html "34.3. Running SQL Commands") you saw how you can execute SQL statements from an embedded SQL program. Some of those statements only used fixed values and did not provide a way to insert user-supplied values into statements or have the program process the values returned by the query. Those kinds of statements are not really useful in real applications. This section explains in detail how you can pass data between your C program and the embedded SQL statements using a simple mechanism called _host variables_. In an embedded SQL program we consider the SQL statements to be _guests_ in the C program code which is the _host language_. Therefore the variables of the C program are called _host variables_.
@@ -293,7 +293,7 @@ The member `arr` hosts binary format data. It can also handle `'\0'` as part of 
 
 ### Note
 
-`bytea` variable can be used only when [bytea\_output](postgres/docs/current/runtime-config-client.html/index.md#GUC-BYTEA-OUTPUT) is set to `hex`.
+`bytea` variable can be used only when [bytea\_output](../runtime-config-client.html/index.md#GUC-BYTEA-OUTPUT) is set to `hex`.
 
 #### 34.4.4.3. Host Variables with Nonprimitive Types [#](#ECPG-VARIABLES-NONPRIMITIVE-C)
 

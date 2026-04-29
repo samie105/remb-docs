@@ -10,8 +10,8 @@ content_hash: "90e7b58874685ceab0f41d9dc44eb33e2b3f81fc4cb66e1bdf13e0279f0c2b54"
 menu_path: ["height"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/max-width/index.md", "title": "max-width"}
-nav_next: {"path": "tailwind/docs/min-height/index.md", "title": "min-height"}
+nav_prev: {"path": "../max-width/index.md", "title": "max-width"}
+nav_next: {"path": "../min-height/index.md", "title": "min-height"}
 ---
 
 Utilities for setting the height of an element.
@@ -138,7 +138,7 @@ Prefix a `height` utility with a breakpoint variant like `md:` to only apply the
 <div class="h-1/2 md:h-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -148,4 +148,4 @@ The `h-<number>` and `size-<number>` utilities are driven by the `--spacing` the
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](../theme/index.md).

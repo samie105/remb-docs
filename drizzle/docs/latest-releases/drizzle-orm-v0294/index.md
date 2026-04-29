@@ -10,8 +10,8 @@ content_hash: "589688237cad4daac972c4019791f1a627658c881409fdc22c545e0c96e71c8a"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.4 release"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0293/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.3 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0295/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.5 release"}
+nav_prev: {"path": "../drizzle-orm-v0293/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.3 release"}
+nav_next: {"path": "../drizzle-orm-v0295/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.5 release"}
 ---
 
 DrizzleORM v0.29.4 release
@@ -22,7 +22,7 @@ Feb 22, 2024
 
 ### 🎉 Neon HTTP Batch
 
-For more info you can check [Neon docs](https://neon.tech/docs/serverless/serverless-driver#issue-multiple-queries-with-the-transaction-function) and [Get started with Neon and Drizzle](drizzle/docs/get-started-postgresql/index.md#neon).
+For more info you can check [Neon docs](https://neon.tech/docs/serverless/serverless-driver#issue-multiple-queries-with-the-transaction-function) and [Get started with Neon and Drizzle](../../get-started-postgresql/index.md#neon).
 
 ```ts
 import { neon } from '@neondatabase/serverless';

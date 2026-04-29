@@ -10,8 +10,8 @@ content_hash: "5fe6c253df4d3ac07dcfd6b95c128fa64ba3277671e42c3937d49f3c407797ac"
 menu_path: ["@std/csv"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/crypto/index.md", "title": "@std/crypto"}
-nav_next: {"path": "deno/runtime/reference/std/data-structures/index.md", "title": "@std/data-structures"}
+nav_prev: {"path": "../crypto/index.md", "title": "@std/crypto"}
+nav_next: {"path": "../data-structures/index.md", "title": "@std/data-structures"}
 ---
 
 **On this page**

@@ -10,8 +10,8 @@ content_hash: "176db791975868adadc6b0fd82caa005f40fb11fd0562590f4b8f64f3b17904e"
 menu_path: ["block-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/max-inline-size/index.md", "title": "max-inline-size"}
-nav_next: {"path": "tailwind/docs/min-block-size/index.md", "title": "min-block-size"}
+nav_prev: {"path": "../max-inline-size/index.md", "title": "max-inline-size"}
+nav_next: {"path": "../min-block-size/index.md", "title": "min-block-size"}
 ---
 
 Utilities for setting the block size of an element.
@@ -114,7 +114,7 @@ Prefix a `block-size` utility with a breakpoint variant like `md:` to only apply
 <div class="block-1/2 md:block-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -124,4 +124,4 @@ The `block-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](../theme/index.md).

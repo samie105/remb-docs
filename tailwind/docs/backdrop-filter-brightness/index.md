@@ -10,8 +10,8 @@ content_hash: "eb8b19d14e9bd6558797b3cd7a2a3fd2cb753f7701f696ae5428f31a2673c56b"
 menu_path: ["backdrop-filter: brightness()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-contrast/index.md", "title": "backdrop-filter: contrast()"}
+nav_prev: {"path": "../backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
+nav_next: {"path": "../backdrop-filter-contrast/index.md", "title": "backdrop-filter: contrast()"}
 ---
 
 # backdrop-filter: brightness()

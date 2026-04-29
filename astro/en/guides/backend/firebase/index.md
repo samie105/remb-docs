@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:37.798Z"
 content_hash: "e92e1c29b57e648b23740a32d32d81b86e28fc2084a9d45ca12cb37d9306160a"
 menu_path: ["Firebase & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/appwrite/index.md", "title": "Appwrite & Astro"}
-nav_next: {"path": "astro/en/guides/backend/neon/index.md", "title": "Neon Postgres & Astro"}
+nav_prev: {"path": "../appwrite/index.md", "title": "Appwrite & Astro"}
+nav_next: {"path": "../neon/index.md", "title": "Neon Postgres & Astro"}
 ---
 
 # Firebase & Astro

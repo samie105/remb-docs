@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:49.585Z"
 content_hash: "1683c25cfc25e4eaecc605cd02c9cb7803b4a356376e681bee027cd7745eda8a"
 menu_path: ["Convert a Buffer to a string"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/buffer-to-readablestream/index.md", "title": "Convert a Buffer to a ReadableStream"}
-nav_next: {"path": "bun/docs/guides/binary/buffer-to-typedarray/index.md", "title": "Convert a Buffer to a Uint8Array"}
+nav_prev: {"path": "../buffer-to-readablestream/index.md", "title": "Convert a Buffer to a ReadableStream"}
+nav_next: {"path": "../buffer-to-typedarray/index.md", "title": "Convert a Buffer to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)

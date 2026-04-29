@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:44:50.971Z"
 content_hash: "c19c919d1138930b1b84cc363f63813917aaee6b1694fbe6c91ac3779d2efa9d"
 menu_path: ["HTTP Link"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/links/httpBatchStreamLink/index.md", "title": "HTTP Batch Stream Link"}
-nav_next: {"path": "trpc/docs/client/links/httpSubscriptionLink/index.md", "title": "HTTP Subscription Link"}
+nav_prev: {"path": "../httpBatchStreamLink/index.md", "title": "HTTP Batch Stream Link"}
+nav_next: {"path": "../httpSubscriptionLink/index.md", "title": "HTTP Subscription Link"}
 ---
 
 Version: 11.x
 
-`httpLink` is a [**terminating link**](trpc/docs/client/links/index.md#the-terminating-link) that sends a tRPC operation to a tRPC procedure over HTTP.
+`httpLink` is a [**terminating link**](../index.md#the-terminating-link) that sends a tRPC operation to a tRPC procedure over HTTP.
 
 `httpLink` supports both POST and GET requests.
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:15.708Z"
 content_hash: "bb0e7de1686175c5cdfb4fdb3033745d42c7920684c1938dbb11abd47443e6ba"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Refine","Refine"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Refine","Refine"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-redwoodjs/index.md", "title": "Build a User Management App with RedwoodJS"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
+nav_prev: {"path": "../with-redwoodjs/index.md", "title": "Build a User Management App with RedwoodJS"}
+nav_next: {"path": "../with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
 ---
 
 # 

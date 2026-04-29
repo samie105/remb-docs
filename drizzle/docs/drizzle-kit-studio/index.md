@@ -10,11 +10,11 @@ content_hash: "b4fbb849ebfaeb18d409fed6f6020c98e7943aded076fa7d9d3c8d2916961f3f"
 menu_path: ["drizzle-kit studio"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/drizzle-kit-up/index.md", "title": "drizzle-kit up"}
-nav_next: {"path": "drizzle/docs/kit-custom-migrations/index.md", "title": "Migrations with Drizzle Kit"}
+nav_prev: {"path": "../drizzle-kit-up/index.md", "title": "drizzle-kit up"}
+nav_next: {"path": "../kit-custom-migrations/index.md", "title": "Migrations with Drizzle Kit"}
 ---
 
-`drizzle-kit studio` command spins up a server for [Drizzle Studio](https://orm.drizzle.team/drizzle-studio/overview) hosted on [local.drizzle.studio](https://local.drizzle.studio/). It requires you to specify database connection credentials via [drizzle.config.ts](drizzle/docs/drizzle-config-file/index.md) config file.
+`drizzle-kit studio` command spins up a server for [Drizzle Studio](https://orm.drizzle.team/drizzle-studio/overview) hosted on [local.drizzle.studio](https://local.drizzle.studio/). It requires you to specify database connection credentials via [drizzle.config.ts](../drizzle-config-file/index.md) config file.
 
 By default it will start a Drizzle Studio server on `127.0.0.1:4983`
 

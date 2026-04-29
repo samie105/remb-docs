@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:06.199Z"
 content_hash: "ed65f62f07e31e28f813cea895b0be38ba88fb78578cd759c677ef4722fd665f"
 menu_path: ["Database","Database","Extensions","Extensions","pgTAP: Unit Testing","pgTAP: Unit Testing"]
 section_path: ["Database","Database","Extensions","Extensions","pgTAP: Unit Testing","pgTAP: Unit Testing"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pgsodium/index.md", "title": "pgsodium (pending deprecation): Encryption Features"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pgvector/index.md", "title": "pgvector: Embeddings and vector similarity"}
+nav_prev: {"path": "../pgsodium/index.md", "title": "pgsodium (pending deprecation): Encryption Features"}
+nav_next: {"path": "../pgvector/index.md", "title": "pgvector: Embeddings and vector similarity"}
 ---
 
 # 

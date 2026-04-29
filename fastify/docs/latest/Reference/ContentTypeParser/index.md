@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:30.129Z"
 content_hash: "425b7d0ed38bfe70c82fb7a5bed86a5359ee3afbbb229b0f7d9dcec422937b64"
 menu_path: ["ContentTypeParser"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
-nav_next: {"path": "fastify/docs/latest/Reference/Decorators/index.md", "title": "Decorators"}
+nav_prev: {"path": "../../Guides/Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
+nav_next: {"path": "../Decorators/index.md", "title": "Decorators"}
 ---
 
 Version: latest (v5.8.x)

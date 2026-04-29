@@ -10,8 +10,8 @@ content_hash: "dac8040f0668233608a53bd3ea8d8330419b6e9f455155bc5e3c5be1c55d2033"
 menu_path: ["mask-origin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/mask-mode/index.md", "title": "mask-mode"}
-nav_next: {"path": "tailwind/docs/mask-position/index.md", "title": "mask-position"}
+nav_prev: {"path": "../mask-mode/index.md", "title": "mask-mode"}
+nav_next: {"path": "../mask-position/index.md", "title": "mask-position"}
 ---
 
 # mask-origin

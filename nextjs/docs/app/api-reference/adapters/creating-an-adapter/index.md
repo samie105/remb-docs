@@ -11,8 +11,8 @@ menu_path: ["Creating an Adapter"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/configuration/index.md", "title": "Configuration"}
-nav_next: {"path": "nextjs/docs/app/api-reference/adapters/api-reference/index.md", "title": "API Reference"}
+nav_prev: {"path": "../configuration/index.md", "title": "Configuration"}
+nav_next: {"path": "../api-reference/index.md", "title": "API Reference"}
 ---
 
 # Creating an Adapter

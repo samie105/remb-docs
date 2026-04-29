@@ -11,8 +11,8 @@ menu_path: ["permanentRedirect"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/not-found/index.md", "title": "notFound"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/redirect/index.md", "title": "redirect"}
+nav_prev: {"path": "../not-found/index.md", "title": "notFound"}
+nav_next: {"path": "../redirect/index.md", "title": "redirect"}
 ---
 
 # permanentRedirect

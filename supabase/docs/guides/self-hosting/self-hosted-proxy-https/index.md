@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:51.613Z"
 content_hash: "b0830e7c07176c70394d0ae6c36dedee02a06f1da5c350e24f4738c80c398c03"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Add Reverse Proxy with HTTPS","Add Reverse Proxy with HTTPS"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Add Reverse Proxy with HTTPS","Add Reverse Proxy with HTTPS"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-phone-mfa/index.md", "title": "Configure Phone Login & MFA"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-s3/index.md", "title": "Configure S3 Storage"}
+nav_prev: {"path": "../self-hosted-phone-mfa/index.md", "title": "Configure Phone Login & MFA"}
+nav_next: {"path": "../self-hosted-s3/index.md", "title": "Configure S3 Storage"}
 ---
 
 # 

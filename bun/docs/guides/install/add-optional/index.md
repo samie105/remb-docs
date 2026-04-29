@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:23.228Z"
 content_hash: "f0e8597ff099360598b45b004c860a554954b1d43aea9b51503a5e0162439912"
 menu_path: ["Add an optional dependency"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/add-git/index.md", "title": "Add a Git dependency"}
-nav_next: {"path": "bun/docs/guides/install/add-peer/index.md", "title": "Add a peer dependency"}
+nav_prev: {"path": "../add-git/index.md", "title": "Add a Git dependency"}
+nav_next: {"path": "../add-peer/index.md", "title": "Add a peer dependency"}
 ---
 
 [Skip to main content](#content-area)

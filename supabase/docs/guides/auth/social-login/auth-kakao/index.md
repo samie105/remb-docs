@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:35.670Z"
 content_hash: "786faffadcdc282a25ffa2277f5b22694de4296d092f08e7414536ac9f57787b"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Kakao","Kakao"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Kakao","Kakao"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-google/index.md", "title": "Login with Google"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-keycloak/index.md", "title": "Login with Keycloak"}
+nav_prev: {"path": "../auth-google/index.md", "title": "Login with Google"}
+nav_next: {"path": "../auth-keycloak/index.md", "title": "Login with Keycloak"}
 ---
 
 # 

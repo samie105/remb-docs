@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:55.012Z"
 content_hash: "52d4ff62e63668403284ff5905d3c4402b3c4557512301400904fa4e422cefba"
 menu_path: ["Database","Database","Extensions","Extensions","pgjwt (deprecated)","pgjwt (deprecated)"]
 section_path: ["Database","Database","Extensions","Extensions","pgjwt (deprecated)","pgjwt (deprecated)"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pgaudit/index.md", "title": "PGAudit: Postgres Auditing"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pgmq/index.md", "title": "pgmq: Queues"}
+nav_prev: {"path": "../pgaudit/index.md", "title": "PGAudit: Postgres Auditing"}
+nav_next: {"path": "../pgmq/index.md", "title": "pgmq: Queues"}
 ---
 
 # 

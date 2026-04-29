@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:57.046Z"
 content_hash: "0740271237936ed877cd1161a030754bd152d9d328358170590570a89716ac46"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Building a Telegram Bot","Building a Telegram Bot"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Building a Telegram Bot","Building a Telegram Bot"]
-nav_prev: {"path": "supabase/docs/guides/functions/examples/stripe-webhooks/index.md", "title": "Handling Stripe Webhooks"}
-nav_next: {"path": "supabase/docs/guides/functions/examples/upstash-redis/index.md", "title": "Upstash Redis"}
+nav_prev: {"path": "../stripe-webhooks/index.md", "title": "Handling Stripe Webhooks"}
+nav_next: {"path": "../upstash-redis/index.md", "title": "Upstash Redis"}
 ---
 
 # 

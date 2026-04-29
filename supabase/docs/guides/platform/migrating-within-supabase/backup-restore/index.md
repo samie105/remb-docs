@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:50.597Z"
 content_hash: "17b4194313ceb2e7ef1fef4ff216220ccf68ac3fc81972125f857e459a37825a"
 menu_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Backup and restore using CLI","Backup and restore using CLI"]
 section_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Backup and restore using CLI","Backup and restore using CLI"]
-nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/index.md", "title": "Migrating within Supabase"}
-nav_next: {"path": "supabase/docs/guides/platform/migrating-within-supabase/dashboard-restore/index.md", "title": "Restore Dashboard backup"}
+nav_prev: {"path": "../index.md", "title": "Migrating within Supabase"}
+nav_next: {"path": "../dashboard-restore/index.md", "title": "Restore Dashboard backup"}
 ---
 
 # Migrating the database

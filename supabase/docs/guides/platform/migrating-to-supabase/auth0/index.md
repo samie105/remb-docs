@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:24.762Z"
 content_hash: "e8d3fa9b91922a61b81ebc32cc5f08182c05be0bf8171e8ba2574ff7ec3a8b53"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Auth0","Auth0"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Auth0","Auth0"]
-nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
-nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firebase-auth/index.md", "title": "Migrate from Firebase Auth to Supabase"}
+nav_prev: {"path": "../amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
+nav_next: {"path": "../firebase-auth/index.md", "title": "Migrate from Firebase Auth to Supabase"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:42.620Z"
 content_hash: "eada3470c441e84039401dcf050fd90d64fd5272af86050b1bc720ae4fdf6e86"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","AI Models","AI Models"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","AI Models","AI Models"]
-nav_prev: {"path": "supabase/docs/guides/functions/index.md", "title": "Edge Functions"}
-nav_next: {"path": "supabase/docs/guides/functions/architecture/index.md", "title": "Edge Functions Architecture"}
+nav_prev: {"path": "../index.md", "title": "Edge Functions"}
+nav_next: {"path": "../architecture/index.md", "title": "Edge Functions Architecture"}
 ---
 
 # 

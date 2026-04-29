@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:19.228Z"
 content_hash: "915f602a8c57351cfed2b672b647770397cd5f9e949af014061db638aa6ec6b6"
 menu_path: ["Using environment variables"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/typescript/index.md", "title": "TypeScript"}
-nav_next: {"path": "astro/en/guides/integrations/index.md", "title": "Working with integrations"}
+nav_prev: {"path": "../typescript/index.md", "title": "TypeScript"}
+nav_next: {"path": "../integrations/index.md", "title": "Working with integrations"}
 ---
 
 # Using environment variables

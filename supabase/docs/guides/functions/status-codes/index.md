@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:33.211Z"
 content_hash: "a83467a0a0261acd96867568b0351e059f20cd77a5bc383947dfc878a53a5d9f"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Status codes","Status codes"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Status codes","Status codes"]
-nav_prev: {"path": "supabase/docs/guides/functions/secrets/index.md", "title": "Environment Variables"}
-nav_next: {"path": "supabase/docs/guides/functions/storage-caching/index.md", "title": "Integrating with Supabase Storage"}
+nav_prev: {"path": "../secrets/index.md", "title": "Environment Variables"}
+nav_next: {"path": "../storage-caching/index.md", "title": "Integrating with Supabase Storage"}
 ---
 
 # 

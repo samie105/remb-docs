@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:55.975Z"
 content_hash: "271e1f27d606c70f2e85df6092aaea54a7811ef10ecddb22288c3194d5a791a0"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis for VS Code","→","Redis for VS Code"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis for VS Code","→","Redis for VS Code"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v2.8.0/index.md", "title": "RedisInsight v2.8.0, August 2022"}
-nav_next: {"path": "redis/docs/latest/develop/tools/redis-for-vscode/release-notes/index.md", "title": "Redis for VS Code release notes"}
+nav_prev: {"path": "../insight/release-notes/v2.8.0/index.md", "title": "RedisInsight v2.8.0, August 2022"}
+nav_next: {"path": "release-notes/index.md", "title": "Redis for VS Code release notes"}
 ---
 
 # Redis for VS Code

@@ -11,8 +11,8 @@ menu_path: ["unstable_cache"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unauthorized/index.md", "title": "unauthorized"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/unstable_noStore/index.md", "title": "unstable_noStore"}
+nav_prev: {"path": "../unauthorized/index.md", "title": "unauthorized"}
+nav_next: {"path": "../unstable_noStore/index.md", "title": "unstable_noStore"}
 ---
 
 # unstable\_cache

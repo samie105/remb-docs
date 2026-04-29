@@ -11,17 +11,17 @@ menu_path: ["Many-to-many relations"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/nextjs/index.md", "title": "Next.js"}
+nav_prev: {"path": "../graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
+nav_next: {"path": "../nextjs/index.md", "title": "Next.js"}
 ---
 
 Troubleshooting
 
 Learn how to model, query, and convert many-to-many relations with Prisma ORM
 
-Modeling and querying many-to-many relations in relational databases can be challenging. This guide shows how to work with [implicit](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#implicit-many-to-many-relations) and [explicit](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#explicit-many-to-many-relations) many-to-many relations, and how to convert between them.
+Modeling and querying many-to-many relations in relational databases can be challenging. This guide shows how to work with [implicit](../../../prisma-schema/data-model/relations/many-to-many-relations/index.md#implicit-many-to-many-relations) and [explicit](../../../prisma-schema/data-model/relations/many-to-many-relations/index.md#explicit-many-to-many-relations) many-to-many relations, and how to convert between them.
 
-Implicit many-to-many relations let Prisma ORM handle the [relation table](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#relation-table-conventions) internally:
+Implicit many-to-many relations let Prisma ORM handle the [relation table](../../../prisma-schema/data-model/relations/many-to-many-relations/index.md#relation-table-conventions) internally:
 
 ```
 model Post {
@@ -83,7 +83,7 @@ await prisma.post.update({
 });
 ```
 
-Explicit relations are needed when you need to store extra fields in the relation table or when [introspecting](prisma/docs/orm/prisma-schema/introspection/index.md) an existing database:
+Explicit relations are needed when you need to store extra fields in the relation table or when [introspecting](../../../prisma-schema/introspection/index.md) an existing database:
 
 ```
 model Post {

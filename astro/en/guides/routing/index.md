@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:28.986Z"
 content_hash: "586c5164ceb8e07a46db8fcce6958b9c035827f1d35a1b5385e38c3a4bf429b5"
 menu_path: ["Routing"]
 section_path: []
-nav_prev: {"path": "astro/en/basics/astro-pages/index.md", "title": "Pages"}
-nav_next: {"path": "astro/en/guides/endpoints/index.md", "title": "Endpoints"}
+nav_prev: {"path": "../../basics/astro-pages/index.md", "title": "Pages"}
+nav_next: {"path": "../endpoints/index.md", "title": "Endpoints"}
 ---
 
 # Routing

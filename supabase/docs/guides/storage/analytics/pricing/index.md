@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:04.270Z"
 content_hash: "eb7d6dbe2f9d629ee4d3d28443e8917e2838733990e0e31baafdae45ebd0f2a3"
 menu_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Pricing","Pricing"]
 section_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Pricing","Pricing"]
-nav_prev: {"path": "supabase/docs/guides/storage/analytics/limits/index.md", "title": "Analytics Buckets Limits"}
-nav_next: {"path": "supabase/docs/guides/storage/analytics/query-with-postgres/index.md", "title": "Query with Postgres"}
+nav_prev: {"path": "../limits/index.md", "title": "Analytics Buckets Limits"}
+nav_next: {"path": "../query-with-postgres/index.md", "title": "Query with Postgres"}
 ---
 
 # 

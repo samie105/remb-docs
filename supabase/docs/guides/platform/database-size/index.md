@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:28.017Z"
 content_hash: "8525aaadc0376118a25ab01984653a901e6c7cc070691106ee19608e51ab9676"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Database Size","Database Size"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Database Size","Database Size"]
-nav_prev: {"path": "supabase/docs/guides/platform/custom-domains/index.md", "title": "Custom Domains"}
-nav_next: {"path": "supabase/docs/guides/platform/get-set-up-for-billing/index.md", "title": "Get set up for billing"}
+nav_prev: {"path": "../custom-domains/index.md", "title": "Custom Domains"}
+nav_next: {"path": "../get-set-up-for-billing/index.md", "title": "Get set up for billing"}
 ---
 
 # 

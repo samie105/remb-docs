@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:43.060Z"
 content_hash: "53562c5ae34b86a2b1af0d446cafe6497f873aa00d2714b22c159417025a4dae"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Notion","Notion"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Notion","Notion"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-linkedin/index.md", "title": "Login with LinkedIn"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-slack/index.md", "title": "Login with Slack"}
+nav_prev: {"path": "../auth-linkedin/index.md", "title": "Login with LinkedIn"}
+nav_next: {"path": "../auth-slack/index.md", "title": "Login with Slack"}
 ---
 
 # 

@@ -10,8 +10,8 @@ content_hash: "6cc9e313a1b672eb3437cfb003fb65d63beaeb5760b92d16557336cd4aa8db86"
 menu_path: ["@std/path"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/net/index.md", "title": "@std/net"}
-nav_next: {"path": "deno/runtime/reference/std/random/index.md", "title": "@std/random"}
+nav_prev: {"path": "../net/index.md", "title": "@std/net"}
+nav_next: {"path": "../random/index.md", "title": "@std/random"}
 ---
 
 **On this page**

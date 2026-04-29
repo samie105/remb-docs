@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:05:30.641Z"
 content_hash: "6a4904abdddf5fcf8632e86fd52e7131c919d0101b683f89d2c7e36dacaadeb5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Security","→","Security","→\n      \n        Recommended security practices","→","Recommended security practices"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Security","→","Security","→\n      \n        Recommended security practices","→","Recommended security practices"]
-nav_prev: {"path": "redis/docs/latest/operate/rs/security/access-control/index.md", "title": "Access control"}
+nav_prev: {"path": "../access-control/index.md", "title": "Access control"}
 ---
 
 # Recommended security practices

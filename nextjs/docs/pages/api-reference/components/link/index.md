@@ -11,8 +11,8 @@ menu_path: ["Link"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/image-legacy/index.md", "title": "Image (Legacy)"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/script/index.md", "title": "Script"}
+nav_prev: {"path": "../image-legacy/index.md", "title": "Image (Legacy)"}
+nav_next: {"path": "../script/index.md", "title": "Script"}
 ---
 
 # Link

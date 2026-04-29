@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:20.154Z"
 content_hash: "b60a6e3fe62dcbd7a7c4c665a79bf46ed7e1f03e4cd3dede728098e3d1c39126"
 menu_path: ["Ghost & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/frontmatter-cms/index.md", "title": "Front Matter CMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/gitcms/index.md", "title": "GitCMS & Astro"}
+nav_prev: {"path": "../frontmatter-cms/index.md", "title": "Front Matter CMS & Astro"}
+nav_next: {"path": "../gitcms/index.md", "title": "GitCMS & Astro"}
 ---
 
 # Ghost & Astro

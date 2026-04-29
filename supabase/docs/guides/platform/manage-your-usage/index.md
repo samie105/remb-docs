@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:41.705Z"
 content_hash: "6bd1d3cad09418edd50b63fe887303a8b8ad41fd1819bdd4ea3fb0771faf0158"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-subscription/index.md", "title": "Manage your subscription"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/advanced-mfa-phone/index.md", "title": "Manage Advanced MFA Phone usage"}
+nav_prev: {"path": "../manage-your-subscription/index.md", "title": "Manage your subscription"}
+nav_next: {"path": "advanced-mfa-phone/index.md", "title": "Manage Advanced MFA Phone usage"}
 ---
 
 # 

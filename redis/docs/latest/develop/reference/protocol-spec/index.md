@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:51.635Z"
 content_hash: "c2599a3686a444e86c25991ba2dc26ed6f76a52bc82669fbedf1a30e41a723bc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis serialization protocol specification","→","Redis serialization protocol specification"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis serialization protocol specification","→","Redis serialization protocol specification"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/modules/modules-native-types/index.md", "title": "Modules API for native types"}
-nav_next: {"path": "redis/docs/latest/develop/reference/sentinel-clients/index.md", "title": "Sentinel client spec"}
+nav_prev: {"path": "../modules/modules-native-types/index.md", "title": "Modules API for native types"}
+nav_next: {"path": "../sentinel-clients/index.md", "title": "Sentinel client spec"}
 ---
 
 # Redis serialization protocol specification

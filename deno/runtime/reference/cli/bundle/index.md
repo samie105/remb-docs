@@ -10,8 +10,8 @@ content_hash: "29e093adfaefafdf34e1238e433f095927d9ef278484a4abd7892d62a36251e5"
 menu_path: ["deno bundle"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/bench/index.md", "title": "deno bench"}
-nav_next: {"path": "deno/runtime/reference/cli/check/index.md", "title": "deno check"}
+nav_prev: {"path": "../bench/index.md", "title": "deno bench"}
+nav_next: {"path": "../check/index.md", "title": "deno check"}
 ---
 
 **On this page**

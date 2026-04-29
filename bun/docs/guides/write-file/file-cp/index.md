@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:49.132Z"
 content_hash: "c9934f18fad8a707627d9a9c85a46ea850354c150c5203869b96c758a61c95e7"
 menu_path: ["Copy a file to another location"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/write-file/cat/index.md", "title": "Write a file to stdout"}
-nav_next: {"path": "bun/docs/guides/write-file/filesink/index.md", "title": "Write a file incrementally"}
+nav_prev: {"path": "../cat/index.md", "title": "Write a file to stdout"}
+nav_next: {"path": "../filesink/index.md", "title": "Write a file incrementally"}
 ---
 
 [Skip to main content](#content-area)

@@ -11,8 +11,8 @@ menu_path: ["How to implement Incremental Static Regeneration (ISR)"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/instrumentation/index.md", "title": "How to set up instrumentation"}
+nav_prev: {"path": "../how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
+nav_next: {"path": "../instrumentation/index.md", "title": "How to set up instrumentation"}
 ---
 
 # How to implement Incremental Static Regeneration (ISR)

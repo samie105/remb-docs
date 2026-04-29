@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:12.611Z"
 content_hash: "4c54b24629551b4a2157bbc3f60dd90a7ee67670d37ed1e59a9a314a25bd7ca2"
 menu_path: ["Front Matter CMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/flotiq/index.md", "title": "Flotiq & Astro"}
-nav_next: {"path": "astro/en/guides/cms/ghost/index.md", "title": "Ghost & Astro"}
+nav_prev: {"path": "../flotiq/index.md", "title": "Flotiq & Astro"}
+nav_next: {"path": "../ghost/index.md", "title": "Ghost & Astro"}
 ---
 
 # Front Matter CMS & Astro

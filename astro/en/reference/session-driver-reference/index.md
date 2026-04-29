@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:00.769Z"
 content_hash: "e4778f5c5d3d48630282f66da5467c2f7ff248f36a984c6466f41a4615fa9ccf"
 menu_path: ["Astro Session Driver API"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/dev-toolbar-app-reference/index.md", "title": "Dev Toolbar App API"}
-nav_next: {"path": "astro/en/reference/font-provider-reference/index.md", "title": "Astro Font Provider API"}
+nav_prev: {"path": "../dev-toolbar-app-reference/index.md", "title": "Dev Toolbar App API"}
+nav_next: {"path": "../font-provider-reference/index.md", "title": "Astro Font Provider API"}
 ---
 
 # Astro Session Driver API

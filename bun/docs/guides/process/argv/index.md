@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:35.266Z"
 content_hash: "036d2f85f668b43bbac255fb5d3374dc9948b6fc032734767e5e10db409dfa72"
 menu_path: ["Parse command-line arguments"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/yarnlock/index.md", "title": "Generate a yarn-compatible lockfile"}
-nav_next: {"path": "bun/docs/guides/process/ctrl-c/index.md", "title": "Listen for CTRL+C"}
+nav_prev: {"path": "../../install/yarnlock/index.md", "title": "Generate a yarn-compatible lockfile"}
+nav_next: {"path": "../ctrl-c/index.md", "title": "Listen for CTRL+C"}
 ---
 
 [Skip to main content](#content-area)

@@ -10,8 +10,8 @@ content_hash: "b4f000111f10863bf8de0f11236fa423c9dae1a2a7578951fe6ba46f8e9361c0"
 menu_path: ["overflow"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/object-position/index.md", "title": "object-position"}
-nav_next: {"path": "tailwind/docs/overscroll-behavior/index.md", "title": "overscroll-behavior"}
+nav_prev: {"path": "../object-position/index.md", "title": "object-position"}
+nav_next: {"path": "../overscroll-behavior/index.md", "title": "overscroll-behavior"}
 ---
 
 # overflow

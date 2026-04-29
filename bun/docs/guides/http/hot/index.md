@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:03.934Z"
 content_hash: "da297c3a0a970b51ad9d19a5a244b8f9e4f7ff15f4c8043a699a22ca627a3c21"
 menu_path: ["Hot reload an HTTP server"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/http/file-uploads/index.md", "title": "Upload files via HTTP using FormData"}
-nav_next: {"path": "bun/docs/guides/http/proxy/index.md", "title": "Proxy HTTP requests using fetch()"}
+nav_prev: {"path": "../file-uploads/index.md", "title": "Upload files via HTTP using FormData"}
+nav_next: {"path": "../proxy/index.md", "title": "Proxy HTTP requests using fetch()"}
 ---
 
 [Skip to main content](#content-area)

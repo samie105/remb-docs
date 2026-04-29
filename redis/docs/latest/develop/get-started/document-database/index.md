@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:50.797Z"
 content_hash: "393c81bb5a7e5d0065bf76f67a206fd122cd41e43a503738ed338744c5207bdf"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a document database quick start guide","→","Redis as a document database quick start guide"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a document database quick start guide","→","Redis as a document database quick start guide"]
-nav_prev: {"path": "redis/docs/latest/develop/get-started/data-store/index.md", "title": "Redis as an in-memory data structure store quick start guide"}
-nav_next: {"path": "redis/docs/latest/develop/get-started/rag/index.md", "title": "RAG with Redis"}
+nav_prev: {"path": "../data-store/index.md", "title": "Redis as an in-memory data structure store quick start guide"}
+nav_next: {"path": "../rag/index.md", "title": "RAG with Redis"}
 ---
 
 # Redis as a document database quick start guide

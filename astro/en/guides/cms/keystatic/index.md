@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:36.722Z"
 content_hash: "7f1c804b1f869d930a3f8d58cbd4403c90a82883213dfaabb32a9fff1570b0ce"
 menu_path: ["Keystatic & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/jekyllpad/index.md", "title": "JekyllPad & Astro"}
-nav_next: {"path": "astro/en/guides/cms/keystonejs/index.md", "title": "KeystoneJS & Astro"}
+nav_prev: {"path": "../jekyllpad/index.md", "title": "JekyllPad & Astro"}
+nav_next: {"path": "../keystonejs/index.md", "title": "KeystoneJS & Astro"}
 ---
 
 # Keystatic & Astro

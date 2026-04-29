@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:52.842Z"
 content_hash: "5fd6f9672c062f16494d59117b4f0be99c8b78ec584bfcf36f760368c4002f53"
 menu_path: ["Database","Database","More","More","More","Manual replication","Manual replication","FAQ","FAQ"]
 section_path: ["Database","Database","More","More","More","Manual replication","Manual replication","FAQ","FAQ"]
-nav_prev: {"path": "supabase/docs/guides/database/replication/index.md", "title": "Database Replication"}
-nav_next: {"path": "supabase/docs/guides/database/replication/manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
+nav_prev: {"path": "../index.md", "title": "Database Replication"}
+nav_next: {"path": "../manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
 ---
 
 # 

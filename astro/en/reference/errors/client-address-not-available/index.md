@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:55.498Z"
 content_hash: "6d28b514c880b6bf2a213f0cba3e53f0217a00b2ae843dd48c01a936c3860b12"
 menu_path: ["Astro.clientAddress is not available in current adapter."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/cant-use-astro-config-module-error/index.md", "title": "Cannot use the astro:config module without enabling the experimental feature."}
-nav_next: {"path": "astro/en/reference/errors/collection-does-not-exist-error/index.md", "title": "Collection does not exist"}
+nav_prev: {"path": "../cant-use-astro-config-module-error/index.md", "title": "Cannot use the astro:config module without enabling the experimental feature."}
+nav_next: {"path": "../collection-does-not-exist-error/index.md", "title": "Collection does not exist"}
 ---
 
 # Astro.clientAddress is not available in current adapter.

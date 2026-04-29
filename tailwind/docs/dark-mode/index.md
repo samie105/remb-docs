@@ -10,8 +10,8 @@ content_hash: "411931b496eb611f1c7caf7278745385ac71d1f558fd989b3047e36c928be8e9"
 menu_path: ["Dark mode"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/responsive-design/index.md", "title": "Responsive design"}
-nav_next: {"path": "tailwind/docs/theme/index.md", "title": "Theme variables"}
+nav_prev: {"path": "../responsive-design/index.md", "title": "Responsive design"}
+nav_next: {"path": "../theme/index.md", "title": "Theme variables"}
 ---
 
 Using variants to style your site in dark mode.

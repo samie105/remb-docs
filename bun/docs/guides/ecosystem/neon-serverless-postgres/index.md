@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:51.688Z"
 content_hash: "4628f78de79e2625fd6c0b1d1795d6c1fcdbd4e8120dcc1b00b9778824c40385"
 menu_path: ["Use Neon's Serverless Postgres with Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/ecosystem/neon-drizzle/index.md", "title": "Use Neon Postgres through Drizzle ORM"}
-nav_next: {"path": "bun/docs/guides/ecosystem/nextjs/index.md", "title": "Build an app with Next.js and Bun"}
+nav_prev: {"path": "../neon-drizzle/index.md", "title": "Use Neon Postgres through Drizzle ORM"}
+nav_next: {"path": "../nextjs/index.md", "title": "Build an app with Next.js and Bun"}
 ---
 
 [Skip to main content](#content-area)

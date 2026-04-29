@@ -10,8 +10,8 @@ content_hash: "5becfcb510c67378a9505e779ec3733bc98dcafd10f8370c91eb800f38bdafdf"
 menu_path: ["MySQL extensions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/extensions/mssql/index.md", "title": "404"}
-nav_next: {"path": "drizzle/docs/extensions/singlestore/index.md", "title": "SingleStore extensions"}
+nav_prev: {"path": "../mssql/index.md", "title": "404"}
+nav_next: {"path": "../singlestore/index.md", "title": "SingleStore extensions"}
 ---
 
 Drizzle ORM - MySQL extensions

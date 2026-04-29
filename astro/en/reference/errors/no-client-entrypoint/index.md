@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:03.019Z"
 content_hash: "a41637654b0dce897bd39d3f564106acb3ccccc2f61c06daa456ffdaa76b81b6"
 menu_path: ["No client entrypoint specified in renderer."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/no-adapter-installed/index.md", "title": "Cannot use Server-side Rendering without an adapter."}
-nav_next: {"path": "astro/en/reference/errors/no-client-only-hint/index.md", "title": "Missing hint on client:only directive."}
+nav_prev: {"path": "../no-adapter-installed/index.md", "title": "Cannot use Server-side Rendering without an adapter."}
+nav_next: {"path": "../no-client-only-hint/index.md", "title": "Missing hint on client:only directive."}
 ---
 
 # No client entrypoint specified in renderer.

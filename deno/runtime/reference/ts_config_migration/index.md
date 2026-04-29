@@ -10,8 +10,8 @@ content_hash: "09f4fea471649d2edc7f8b04e92c05347fac68da1a18f65ea6875d3ace4f8ac7"
 menu_path: ["Configuring TypeScript"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/yaml/index.md", "title": "@std/yaml"}
-nav_next: {"path": "deno/runtime/reference/continuous_integration/index.md", "title": "Continuous integration"}
+nav_prev: {"path": "../std/yaml/index.md", "title": "@std/yaml"}
+nav_next: {"path": "../continuous_integration/index.md", "title": "Continuous integration"}
 ---
 
 **On this page**

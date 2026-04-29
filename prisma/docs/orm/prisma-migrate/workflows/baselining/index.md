@@ -11,8 +11,8 @@ menu_path: ["Baselining a database"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md", "title": "TypedSQL"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md", "title": "Customizing migrations"}
+nav_prev: {"path": "../../../prisma-client/using-raw-sql/typedsql/index.md", "title": "TypedSQL"}
+nav_next: {"path": "../customizing-migrations/index.md", "title": "Customizing migrations"}
 ---
 
 Workflows
@@ -28,7 +28,7 @@ Baselining tells Prisma Migrate to assume that one or more migrations have **alr
 
 Since this is working with development database, the assumption is that the database can be reset and reseeded.
 
-Baselining is part of [adding Prisma Migrate to a project with an existing database](prisma/docs/orm/prisma-migrate/getting-started/index.md#adding-to-an-existing-project).
+Baselining is part of [adding Prisma Migrate to a project with an existing database](../../getting-started/index.md#adding-to-an-existing-project).
 
 When you add Prisma Migrate to an existing project, your initial migration contains all the SQL required to recreate the state of the database **before you started using Prisma Migrate**:
 

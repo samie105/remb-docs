@@ -10,8 +10,8 @@ content_hash: "2cddfbc602d2441e669bc15f3a4260b24d93743be0274b040442762eb1745686"
 menu_path: ["Get Started with Drizzle and Turso Cloud in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/get-started/turso-database-new/index.md", "title": "Get Started with Drizzle and Turso Database"}
-nav_next: {"path": "drizzle/docs/get-started/turso-new/index.md", "title": "Get Started with Drizzle and Turso Cloud"}
+nav_prev: {"path": "../turso-database-new/index.md", "title": "Get Started with Drizzle and Turso Database"}
+nav_next: {"path": "../turso-new/index.md", "title": "Get Started with Drizzle and Turso Cloud"}
 ---
 
 ## Get Started with Drizzle and Turso Cloud in existing project
@@ -77,7 +77,7 @@ If you don’t know your `TURSO_DATABASE_URL` and `TURSO_AUTH_TOKEN` values, you
 
 #### Step 3 - Setup Drizzle config file[](#step-3---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -117,7 +117,7 @@ Pull your database schema:
 npx drizzle-kit pull --init
 ```
 
-The result of introspection will be a `schema.ts` file, `meta` folder with snapshots of your database schema, sql file with the migration and `relations.ts` file for [relational queries](drizzle/docs/rqb/index.md).
+The result of introspection will be a `schema.ts` file, `meta` folder with snapshots of your database schema, sql file with the migration and `relations.ts` file for [relational queries](../../rqb/index.md).
 
 Here is an example of the generated `schema.ts` file:
 
@@ -144,7 +144,7 @@ export const usersTable = sqliteTable(
 );
 ```
 
-Learn more about introspection in the [documentation](drizzle/docs/drizzle-kit-pull/index.md).
+Learn more about introspection in the [documentation](../../drizzle-kit-pull/index.md).
 
 #### Step 5 - Transfer code to your actual schema file[](#step-5---transfer-code-to-your-actual-schema-file)
 
@@ -400,7 +400,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](../../drizzle-kit-push/index.md).
 
 Tips
 
@@ -418,7 +418,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](../../kit-overview/index.md).
 
 #### Step 10 - Query the database with a new field (optional)[](#step-10---query-the-database-with-a-new-field-optional)
 

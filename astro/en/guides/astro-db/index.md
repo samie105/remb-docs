@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:23.535Z"
 content_hash: "b08704cd65302d1001d8b453b6e8bafb4d6251696b85f7cfb5777222b705e4bb"
 menu_path: ["Astro DB"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/data-fetching/index.md", "title": "Data fetching"}
-nav_next: {"path": "astro/en/guides/on-demand-rendering/index.md", "title": "On-demand rendering"}
+nav_prev: {"path": "../data-fetching/index.md", "title": "Data fetching"}
+nav_next: {"path": "../on-demand-rendering/index.md", "title": "On-demand rendering"}
 ---
 
 # Astro DB

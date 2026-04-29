@@ -10,8 +10,8 @@ content_hash: "386a8e30d064da79cc367e6e23c9f534ba233b721955639b5f92423a64359c57"
 menu_path: ["Drizzle <> TiDB Serverless"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/connect-planetscale/index.md", "title": "Drizzle <> PlanetScale MySQL"}
-nav_next: {"path": "drizzle/docs/connect-turso/index.md", "title": "Drizzle <> Turso Cloud"}
+nav_prev: {"path": "../connect-planetscale/index.md", "title": "Drizzle <> PlanetScale MySQL"}
+nav_next: {"path": "../connect-turso/index.md", "title": "Drizzle <> Turso Cloud"}
 ---
 
 Drizzle ORM - TiDB

@@ -10,8 +10,8 @@ content_hash: "76cd1b4137a63a632847ad4ab103ef324589f3e71d88fc58d8625cbbb09b9bac"
 menu_path: ["PostgreSQL: Documentation: 18: 52.50. pg_shseclabel"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/catalog-pg-shdescription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.49.\u00a0pg_shdescription"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-statistic-ext-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.53.\u00a0pg_statistic_ext_data"}
+nav_prev: {"path": "../catalog-pg-shdescription.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.49.\u00a0pg_shdescription"}
+nav_next: {"path": "../catalog-pg-statistic-ext-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.53.\u00a0pg_statistic_ext_data"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-shseclabel.html "PostgreSQL devel - 52.50. pg_shseclabel")

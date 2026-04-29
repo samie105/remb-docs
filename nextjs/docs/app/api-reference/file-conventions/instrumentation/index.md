@@ -11,8 +11,8 @@ menu_path: ["instrumentation.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/forbidden/index.md", "title": "forbidden.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation-client/index.md", "title": "instrumentation-client.js"}
+nav_prev: {"path": "../forbidden/index.md", "title": "forbidden.js"}
+nav_next: {"path": "../instrumentation-client/index.md", "title": "instrumentation-client.js"}
 ---
 
 # instrumentation.js

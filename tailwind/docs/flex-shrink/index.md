@@ -10,8 +10,8 @@ content_hash: "a728cd8eac6fd5325066ca7706e8fd962d50529f18c4dc6cae6463356c4c9540"
 menu_path: ["flex-shrink"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/flex-grow/index.md", "title": "flex-grow"}
-nav_next: {"path": "tailwind/docs/order/index.md", "title": "order"}
+nav_prev: {"path": "../flex-grow/index.md", "title": "flex-grow"}
+nav_next: {"path": "../order/index.md", "title": "order"}
 ---
 
 # flex-shrink

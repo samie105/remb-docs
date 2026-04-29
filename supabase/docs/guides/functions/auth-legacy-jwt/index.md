@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:37.444Z"
 content_hash: "a475af2f17207ed0405a84dcd1106f86b7b6e5a8d2d562f381543571c3b4c038"
 menu_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Legacy JWT secret","Legacy JWT secret"]
 section_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Legacy JWT secret","Legacy JWT secret"]
-nav_prev: {"path": "supabase/docs/guides/functions/auth/index.md", "title": "Securing Edge Functions"}
-nav_next: {"path": "supabase/docs/guides/functions/background-tasks/index.md", "title": "Background Tasks"}
+nav_prev: {"path": "../auth/index.md", "title": "Securing Edge Functions"}
+nav_next: {"path": "../background-tasks/index.md", "title": "Background Tasks"}
 ---
 
 # 

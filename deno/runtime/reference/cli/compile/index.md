@@ -10,8 +10,8 @@ content_hash: "549a095f6801cb7dba6942a2f884d993c209fa154f1b1c80d3918ab57f66a5c0"
 menu_path: ["deno compile"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/clean/index.md", "title": "deno clean"}
-nav_next: {"path": "deno/runtime/reference/cli/create/index.md", "title": "deno create"}
+nav_prev: {"path": "../clean/index.md", "title": "deno clean"}
+nav_next: {"path": "../create/index.md", "title": "deno create"}
 ---
 
 # Cross compile for Apple Silicon

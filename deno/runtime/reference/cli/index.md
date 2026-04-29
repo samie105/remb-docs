@@ -10,8 +10,8 @@ content_hash: "5862e25c07cab47ee00488464b3e76f73d8609e8f036b6c957376568c814b221"
 menu_path: ["Deno CLI Subcommands"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/web/workers/index.md", "title": "Workers - Web documentation"}
-nav_next: {"path": "deno/runtime/reference/cli/env_variables/index.md", "title": "Environment variables"}
+nav_prev: {"path": "../../../api/web/workers/index.md", "title": "Workers - Web documentation"}
+nav_next: {"path": "env_variables/index.md", "title": "Environment variables"}
 ---
 
 **On this page**

@@ -11,8 +11,8 @@ menu_path: ["How to use CSS-in-JS libraries"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/content-security-policy/index.md", "title": "How to set a Content Security Policy (CSP) for your Next.js application"}
-nav_next: {"path": "nextjs/docs/app/guides/custom-server/index.md", "title": "How to set up a custom server in Next.js"}
+nav_prev: {"path": "../content-security-policy/index.md", "title": "How to set a Content Security Policy (CSP) for your Next.js application"}
+nav_next: {"path": "../custom-server/index.md", "title": "How to set up a custom server in Next.js"}
 ---
 
 # How to use CSS-in-JS libraries

@@ -10,8 +10,8 @@ content_hash: "b8999103b582b5282b5d6f63fd89c5bcc3dbbfdc45ee02237ba8599881472e14"
 menu_path: ["Drizzle ORM - PostgreSQL full-text search"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/guides/postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
-nav_next: {"path": "drizzle/docs/guides/postgresql-local-setup/index.md", "title": "Drizzle ORM - How to setup PostgreSQL locally"}
+nav_prev: {"path": "../postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
+nav_next: {"path": "../postgresql-local-setup/index.md", "title": "Drizzle ORM - How to setup PostgreSQL locally"}
 ---
 
 Drizzle | PostgreSQL full-text search
@@ -315,7 +315,7 @@ To rank the search results, you can use the `ts_rank` or `ts_rank_cd` functions 
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](../../upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 

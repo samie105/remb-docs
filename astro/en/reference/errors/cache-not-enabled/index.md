@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:39.142Z"
 content_hash: "0136364c6815759e9c3026ff7ee954ab9b53547036926584369bd3ae6988d7bb"
 menu_path: ["Cache is not enabled."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/astro-response-headers-reassigned/index.md", "title": "Astro.response.headers must not be reassigned."}
-nav_next: {"path": "astro/en/reference/errors/cache-provider-not-found/index.md", "title": "Cache provider not found."}
+nav_prev: {"path": "../astro-response-headers-reassigned/index.md", "title": "Astro.response.headers must not be reassigned."}
+nav_next: {"path": "../cache-provider-not-found/index.md", "title": "Cache provider not found."}
 ---
 
 # Cache is not enabled.

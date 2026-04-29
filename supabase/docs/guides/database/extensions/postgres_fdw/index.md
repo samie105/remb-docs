@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:17.282Z"
 content_hash: "0a6fdbaa5614be5801738d1c0a8be530daca5563d9b68301178310e7ba055162"
 menu_path: ["Database","Database","Extensions","Extensions","postgres_fdw: query data from an external Postgres server","postgres_fdw: query data from an external Postgres server"]
 section_path: ["Database","Database","Extensions","Extensions","postgres_fdw: query data from an external Postgres server","postgres_fdw: query data from an external Postgres server"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/postgis/index.md", "title": "PostGIS: Geo queries"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/rum/index.md", "title": "RUM: improved inverted index for full-text search based on GIN index"}
+nav_prev: {"path": "../postgis/index.md", "title": "PostGIS: Geo queries"}
+nav_next: {"path": "../rum/index.md", "title": "RUM: improved inverted index for full-text search based on GIN index"}
 ---
 
 # 

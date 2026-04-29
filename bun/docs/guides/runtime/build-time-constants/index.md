@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:10.423Z"
 content_hash: "0235f6d3221460b0b58ff15f7096c1dfd5c7526d88a72ffaee7a9e877b5c3ee8"
 menu_path: ["Build-time constants with --define"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/read-file/watch/index.md", "title": "Watch a directory for changes"}
-nav_next: {"path": "bun/docs/guides/runtime/cicd/index.md", "title": "Install and run Bun in GitHub Actions"}
+nav_prev: {"path": "../../read-file/watch/index.md", "title": "Watch a directory for changes"}
+nav_next: {"path": "../cicd/index.md", "title": "Install and run Bun in GitHub Actions"}
 ---
 
 # Bundle with build-time constants
@@ -252,6 +252,6 @@ bun build --compile --target=bun-windows-x64 --define PLATFORM='"windows"' src/a
 
 * * *
 
-*   [Define constants at runtime](bun/docs/guides/runtime/define-constant/index.md) - Using `--define` with `bun run`
-*   [Building executables](bun/docs/bundler/executables/index.md) - Complete guide to `bun build --compile`
-*   [Bundler API](bun/docs/bundler/index.md) - Full bundler documentation including `define` option
+*   [Define constants at runtime](../define-constant/index.md) - Using `--define` with `bun run`
+*   [Building executables](../../../bundler/executables/index.md) - Complete guide to `bun build --compile`
+*   [Bundler API](../../../bundler/index.md) - Full bundler documentation including `define` option

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:28.059Z"
 content_hash: "198f7daebedba9540b493c2d13b467e80021b8e7a55d8535b5e72c0a118b85ae"
 menu_path: ["Bun Runtime"]
 section_path: []
-nav_prev: {"path": "bun/docs/quickstart/index.md", "title": "Quickstart"}
-nav_next: {"path": "bun/docs/runtime/archive/index.md", "title": "Archive"}
+nav_prev: {"path": "../quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "archive/index.md", "title": "Archive"}
 ---
 
 [Skip to main content](#content-area)

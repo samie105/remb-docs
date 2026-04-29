@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:09.773Z"
 content_hash: "218a5e8862df1ac968594a3cf46e5016c7e6998a89b346fe097db80190227ff4"
 menu_path: ["Get the absolute path to the current entrypoint"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/javascript-uuid/index.md", "title": "Generate a UUID"}
-nav_next: {"path": "bun/docs/guides/util/path-to-file-url/index.md", "title": "Convert an absolute path to a file URL"}
+nav_prev: {"path": "../javascript-uuid/index.md", "title": "Generate a UUID"}
+nav_next: {"path": "../path-to-file-url/index.md", "title": "Convert an absolute path to a file URL"}
 ---
 
 [Skip to main content](#content-area)

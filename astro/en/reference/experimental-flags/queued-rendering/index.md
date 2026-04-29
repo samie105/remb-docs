@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:06.249Z"
 content_hash: "0eb4d283c2212cdfc65eb5593145a3fbcecaeb574f4e772fad29de0a8c59155c"
 menu_path: ["Experimental queued rendering"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/experimental-flags/svg-optimization/index.md", "title": "Experimental SVG optimization"}
-nav_next: {"path": "astro/en/reference/experimental-flags/rust-compiler/index.md", "title": "Experimental Rust compiler"}
+nav_prev: {"path": "../svg-optimization/index.md", "title": "Experimental SVG optimization"}
+nav_next: {"path": "../rust-compiler/index.md", "title": "Experimental Rust compiler"}
 ---
 
 # Experimental queued rendering

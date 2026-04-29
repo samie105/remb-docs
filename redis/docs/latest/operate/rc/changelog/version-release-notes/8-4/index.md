@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:44.383Z"
 content_hash: "558959e34cb001430e5b8e06457227a59977cc971e78c12c652ed865b2cf77c9"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes","→\n      \n        Redis 8.4 release notes and breaking changes","→","Redis 8.4 release notes and breaking changes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes","→\n      \n        Redis 8.4 release notes and breaking changes","→","Redis 8.4 release notes and breaking changes"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-2/index.md", "title": "Redis 8.2 release notes and breaking changes"}
-nav_next: {"path": "redis/docs/latest/operate/rc/databases/active-active/create-active-active-database/index.md", "title": "Create an Active-Active database"}
+nav_prev: {"path": "../8-2/index.md", "title": "Redis 8.2 release notes and breaking changes"}
+nav_next: {"path": "../../../databases/active-active/create-active-active-database/index.md", "title": "Create an Active-Active database"}
 ---
 
 # Redis 8.4 release notes and breaking changes

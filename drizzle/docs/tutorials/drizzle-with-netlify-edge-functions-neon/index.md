@@ -10,8 +10,8 @@ content_hash: "1e2297926da3d4f76871d83d20ae13ccf626f2d5fc61f0b0c455fb3db58a669b"
 menu_path: ["Drizzle with Netlify Edge Functions and Neon Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
+nav_prev: {"path": "../drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
+nav_next: {"path": "../drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
 ---
 
 #### Setup Neon Postgres[](#setup-neon-postgres)
@@ -99,7 +99,7 @@ export const usersTable = pgTable('users_table', {
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -129,7 +129,7 @@ IMPORTANT
 
 Push command is good for situations where you need to quickly test new schema designs or changes in a local development environment, allowing for fast iterations without the overhead of managing migration files.
 
-Alternatively, you can use migrations workflow. Read about it here: [Migrations](drizzle/docs/migrations/index.md).
+Alternatively, you can use migrations workflow. Read about it here: [Migrations](../../migrations/index.md).
 
 #### Connect Drizzle ORM to your database[](#connect-drizzle-orm-to-your-database)
 

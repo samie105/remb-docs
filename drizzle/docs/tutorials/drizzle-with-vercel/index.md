@@ -10,15 +10,15 @@ content_hash: "55c6da613b724d0de50ded41fd0f781845b4649425a756ca970e2dbd2203dc65"
 menu_path: ["Drizzle with Vercel Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
+nav_prev: {"path": "../drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
+nav_next: {"path": "../drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Vercel Postgres](https://vercel.com/docs/storage/vercel-postgres). Vercel Postgres is a serverless SQL database designed to integrate with Vercel Functions and your frontend framework.
 
 This guide assumes familiarity with:
 
--   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
+-   You should have installed Drizzle ORM and [Drizzle kit](../../kit-overview/index.md). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -143,7 +143,7 @@ export type SelectPost = typeof postsTable.$inferSelect;
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -208,7 +208,7 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](../../kit-overview/index.md#prototyping-with-db-push):
 
 ```bash
 npx drizzle-kit push
@@ -245,7 +245,7 @@ For instance, we create `src/db/queries` folder and separate files for each oper
 
 #### Insert data[](#insert-data)
 
-Read more about insert query in the [documentation](drizzle/docs/insert/index.md).
+Read more about insert query in the [documentation](../../insert/index.md).
 
 ```typescript
 import { db } from '../index';
@@ -262,11 +262,11 @@ export async function createPost(data: InsertPost) {
 
 #### Select data[](#select-data)
 
-Read more about select query in the [documentation](drizzle/docs/select/index.md).
+Read more about select query in the [documentation](../../select/index.md).
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](../../upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -333,11 +333,11 @@ export async function getPostsForLast24Hours(
 }
 ```
 
-Alternatively, you can use [relational query syntax](drizzle/docs/rqb/index.md).
+Alternatively, you can use [relational query syntax](../../rqb/index.md).
 
 #### Update data[](#update-data)
 
-Read more about update query in the [documentation](drizzle/docs/update/index.md).
+Read more about update query in the [documentation](../../update/index.md).
 
 ```typescript
 import { eq } from 'drizzle-orm';
@@ -351,7 +351,7 @@ export async function updatePost(id: SelectPost['id'], data: Partial<Omit<Select
 
 #### Delete data[](#delete-data)
 
-Read more about delete query in the [documentation](drizzle/docs/delete/index.md).
+Read more about delete query in the [documentation](../../delete/index.md).
 
 ```typescript
 import { eq } from 'drizzle-orm';

@@ -10,8 +10,8 @@ content_hash: "c469b40cd663fd4227ed7fe51b0e1d48dda3d363bcf14668c9a77b00772d3567"
 menu_path: ["grid-auto-flow"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/grid-row/index.md", "title": "grid-row"}
-nav_next: {"path": "tailwind/docs/grid-auto-columns/index.md", "title": "grid-auto-columns"}
+nav_prev: {"path": "../grid-row/index.md", "title": "grid-row"}
+nav_next: {"path": "../grid-auto-columns/index.md", "title": "grid-auto-columns"}
 ---
 
 # grid-auto-flow

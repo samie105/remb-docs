@@ -10,8 +10,8 @@ content_hash: "c487f2c904dfc3873d89e637a591f82efa1e453a325e765fdad775b9f9020ea4"
 menu_path: ["Get Started with Drizzle and SQLite Durable Objects"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/get-started/do-existing/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/effect-postgresql-existing/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL in existing project"}
+nav_prev: {"path": "../do-existing/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects in existing project"}
+nav_next: {"path": "../effect-postgresql-existing/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL in existing project"}
 ---
 
 # Bind a Durable Object. Durable objects are a scale-to-zero compute primitive based on the actor model.
@@ -89,7 +89,7 @@ export const usersTable = sqliteTable("users_table", {
 
 #### Step 6 - Setup Drizzle config file[](#step-6---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 

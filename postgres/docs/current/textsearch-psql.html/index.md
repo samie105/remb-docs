@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:36.836Z"
 content_hash: "63bdeb170c02f1a40edc24ae4fb77b1eb5faab2535ad8ca3b388a8f8a96054e7"
 menu_path: ["PostgreSQL: Documentation: 18: 12.10. psql Support"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/textsearch-parsers.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.5.\u00a0Parsers"}
-nav_next: {"path": "postgres/docs/current/trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 37.3.\u00a0Writing Trigger Functions in C"}
+nav_prev: {"path": "../textsearch-parsers.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.5.\u00a0Parsers"}
+nav_next: {"path": "../trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 37.3.\u00a0Writing Trigger Functions in C"}
 ---
 
 Information about text search configuration objects can be obtained in psql using a set of commands:

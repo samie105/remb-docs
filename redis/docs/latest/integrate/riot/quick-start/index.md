@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:48.095Z"
 content_hash: "75852a3c2b0ff91f6ed4f821784b2e37e049011b8b9484947d261c5e8861cd52"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X","→\n      \n        Getting started","→","Getting started"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X","→\n      \n        Getting started","→","Getting started"]
-nav_prev: {"path": "redis/docs/latest/integrate/riot/install/index.md", "title": "Install"}
-nav_next: {"path": "redis/docs/latest/integrate/rust-redis/index.md", "title": "Rust client for Redis"}
+nav_prev: {"path": "../install/index.md", "title": "Install"}
+nav_next: {"path": "../../rust-redis/index.md", "title": "Rust client for Redis"}
 ---
 
 # Getting started

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:45.271Z"
 content_hash: "505dd89e9c1358d799e116f900963c2b048a9d41d5e3c9aeabf28c48e9d97597"
 menu_path: ["Error Formatting"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/data-transformers/index.md", "title": "Data Transformers"}
-nav_next: {"path": "trpc/docs/server/error-handling/index.md", "title": "Error Handling"}
+nav_prev: {"path": "../data-transformers/index.md", "title": "Data Transformers"}
+nav_next: {"path": "../error-handling/index.md", "title": "Error Handling"}
 ---
 
 The error formatting in your router will be inferred all the way to your client.

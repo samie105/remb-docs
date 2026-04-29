@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:49.884Z"
 content_hash: "2bb5928844e970c8d9ae76884907129fcc09a3a62114122a5b6ddec1122c4e8a"
 menu_path: ["fetch with unix domain sockets in Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/http/fetch/index.md", "title": "Send an HTTP request using fetch"}
-nav_next: {"path": "bun/docs/guides/http/file-uploads/index.md", "title": "Upload files via HTTP using FormData"}
+nav_prev: {"path": "../fetch/index.md", "title": "Send an HTTP request using fetch"}
+nav_next: {"path": "../file-uploads/index.md", "title": "Upload files via HTTP using FormData"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:42.726Z"
 content_hash: "5e0f60e36ad28290f984dc5be45850440bc1531c027ec4d1e5ffe7cff409b4ca"
 menu_path: ["svelte/legacy"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-events/index.md", "title": "svelte/events"}
-nav_next: {"path": "svelte/docs/svelte/svelte-motion/index.md", "title": "svelte/motion"}
+nav_prev: {"path": "../svelte-events/index.md", "title": "svelte/events"}
+nav_next: {"path": "../svelte-motion/index.md", "title": "svelte/motion"}
 ---
 
 This module provides various functions for use during the migration, since some features can't be replaced one to one with new features. All imports are marked as deprecated and should be migrated away from over time.

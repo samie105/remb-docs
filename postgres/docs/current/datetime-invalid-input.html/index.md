@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:52:15.020Z"
 content_hash: "46f501e7d5da4d1e4c45bd31220a1c513c278aaa3d84c95919532fa4ce97ab2c"
 menu_path: ["PostgreSQL: Documentation: 18: B.2. Handling of Invalid or Ambiguous Timestamps"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datetime-input-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: B.1.\u00a0Date/Time Input Interpretation"}
-nav_next: {"path": "postgres/docs/current/datetime-julian-dates.html/index.md", "title": "PostgreSQL: Documentation: 18: B.7.\u00a0Julian Dates"}
+nav_prev: {"path": "../datetime-input-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: B.1.\u00a0Date/Time Input Interpretation"}
+nav_next: {"path": "../datetime-julian-dates.html/index.md", "title": "PostgreSQL: Documentation: 18: B.7.\u00a0Julian Dates"}
 ---
 
 Ordinarily, if a date/time string is syntactically valid but contains out-of-range field values, an error will be thrown. For example, input specifying the 31st of February will be rejected.
 
-During a daylight-savings-time transition, it is possible for a seemingly valid timestamp string to represent a nonexistent or ambiguous timestamp. Such cases are not rejected; the ambiguity is resolved by determining which UTC offset to apply. For example, supposing that the [TimeZone](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE) parameter is set to `America/New_York`, consider
+During a daylight-savings-time transition, it is possible for a seemingly valid timestamp string to represent a nonexistent or ambiguous timestamp. Such cases are not rejected; the ambiguity is resolved by determining which UTC offset to apply. For example, supposing that the [TimeZone](../runtime-config-client.html/index.md#GUC-TIMEZONE) parameter is set to `America/New_York`, consider
 
 \=> SELECT '2018-03-11 02:30'::timestamptz;
       timestamptz

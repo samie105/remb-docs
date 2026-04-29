@@ -11,8 +11,8 @@ menu_path: ["How to configure Continuous Integration (CI) build caching"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/cdn-caching/index.md", "title": "Using a CDN with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/content-security-policy/index.md", "title": "How to set a Content Security Policy (CSP) for your Next.js application"}
+nav_prev: {"path": "../cdn-caching/index.md", "title": "Using a CDN with Next.js"}
+nav_next: {"path": "../content-security-policy/index.md", "title": "How to set a Content Security Policy (CSP) for your Next.js application"}
 ---
 
 # How to configure Continuous Integration (CI) build caching

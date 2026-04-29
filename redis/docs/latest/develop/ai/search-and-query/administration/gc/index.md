@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:18.893Z"
 content_hash: "e6d846f78876ba9fa77fd2f1c7e0f70dad3abadbe5b875c6001f6e35f3ff523c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Garbage collection","→","Garbage collection"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Garbage collection","→","Garbage collection"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/extensions/index.md", "title": "Extend existing search and query features"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/overview/index.md", "title": "Technical overview"}
+nav_prev: {"path": "../extensions/index.md", "title": "Extend existing search and query features"}
+nav_next: {"path": "../overview/index.md", "title": "Technical overview"}
 ---
 
 # Garbage collection

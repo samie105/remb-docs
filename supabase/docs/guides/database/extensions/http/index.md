@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:34.094Z"
 content_hash: "f61247d7ff6f7e0b4b564c9faf99f8ef6d4067946622643af3b5e22d33e0cb55"
 menu_path: ["Database","Database","Extensions","Extensions","http: RESTful Client","http: RESTful Client"]
 section_path: ["Database","Database","Extensions","Extensions","http: RESTful Client","http: RESTful Client"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/index.md", "title": "Postgres Extensions Overview"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/hypopg/index.md", "title": "HypoPG: Hypothetical indexes"}
+nav_prev: {"path": "../index.md", "title": "Postgres Extensions Overview"}
+nav_next: {"path": "../hypopg/index.md", "title": "HypoPG: Hypothetical indexes"}
 ---
 
 # 

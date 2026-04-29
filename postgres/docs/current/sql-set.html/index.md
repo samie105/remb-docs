@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:53.012Z"
 content_hash: "3b03d000493185082d6261c5c5a73e118f114e54ba36b829fef63ebc9707494b"
 menu_path: ["PostgreSQL: Documentation: 18: SET"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-set-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: SET TRANSACTION"}
-nav_next: {"path": "postgres/docs/current/sql-show.html/index.md", "title": "PostgreSQL: Documentation: 18: SHOW"}
+nav_prev: {"path": "../sql-set-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: SET TRANSACTION"}
+nav_next: {"path": "../sql-show.html/index.md", "title": "PostgreSQL: Documentation: 18: SHOW"}
 ---
 
 SET — change a run-time parameter

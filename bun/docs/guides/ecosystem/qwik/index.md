@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:36.796Z"
 content_hash: "1fe81360723b153aec83a33fa4aa9d6f00a0fcd8e74eae75700ba22ffcd0baf2"
 menu_path: ["Build an app with Qwik and Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/ecosystem/prisma-postgres/index.md", "title": "Use Prisma Postgres with Bun"}
-nav_next: {"path": "bun/docs/guides/ecosystem/react/index.md", "title": "Build a React app with Bun"}
+nav_prev: {"path": "../prisma-postgres/index.md", "title": "Use Prisma Postgres with Bun"}
+nav_next: {"path": "../react/index.md", "title": "Build a React app with Bun"}
 ---
 
 Initialize a new Qwik app with `bunx create-qwik`. The `create-qwik` package detects when you are using `bunx` and will automatically install dependencies using `bun`.

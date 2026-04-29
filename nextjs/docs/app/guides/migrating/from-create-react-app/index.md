@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/migrating/app-router-migration/index.md", "title": "How to migrate from Pages to the App Router"}
-nav_next: {"path": "nextjs/docs/app/guides/migrating/from-vite/index.md", "title": "How to migrate from Vite to Next.js"}
+nav_prev: {"path": "../app-router-migration/index.md", "title": "How to migrate from Pages to the App Router"}
+nav_next: {"path": "../from-vite/index.md", "title": "How to migrate from Vite to Next.js"}
 ---
 
 # How to migrate from Create React App to Next.js

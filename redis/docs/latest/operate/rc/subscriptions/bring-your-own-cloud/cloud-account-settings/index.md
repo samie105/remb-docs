@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:22.999Z"
 content_hash: "d21a9a6e26c287de44bc6ea1ee7a20a593c85646526f8afdd45ea94413070181"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create and edit Cloud accounts","→","Create and edit Cloud accounts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create and edit Cloud accounts","→","Create and edit Cloud accounts"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/security/access-control/data-access-control/default-user/index.md", "title": "Default user"}
-nav_next: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/index.md", "title": "Create IAM resources for AWS cloud accounts"}
+nav_prev: {"path": "../../../security/access-control/data-access-control/default-user/index.md", "title": "Default user"}
+nav_next: {"path": "../iam-resources/index.md", "title": "Create IAM resources for AWS cloud accounts"}
 ---
 
 # Create and edit Cloud accounts

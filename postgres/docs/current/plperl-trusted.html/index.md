@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:04.852Z"
 content_hash: "4af755d03fe770c76a50dafe4e911b0a365a226b4fcb88cc12a885f7c0e710b3"
 menu_path: ["PostgreSQL: Documentation: 18: 43.5. Trusted and Untrusted PL/Perl"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plperl-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.6.\u00a0PL/Perl Triggers"}
-nav_next: {"path": "postgres/docs/current/plperl-under-the-hood.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.8.\u00a0PL/Perl Under the Hood"}
+nav_prev: {"path": "../plperl-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.6.\u00a0PL/Perl Triggers"}
+nav_next: {"path": "../plperl-under-the-hood.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.8.\u00a0PL/Perl Under the Hood"}
 ---
 
 Normally, PL/Perl is installed as a “trusted” programming language named `plperl`. In this setup, certain Perl operations are disabled to preserve security. In general, the operations that are restricted are those that interact with the environment. This includes file handle operations, `require`, and `use` (for external modules). There is no way to access internals of the database server process or to gain OS-level access with the permissions of the server process, as a C function can do. Thus, any unprivileged database user can be permitted to use this language.

@@ -11,8 +11,8 @@ menu_path: ["Image Optimization"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/getting-started/installation/index.md", "title": "Create a new Next.js application"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/fonts/index.md", "title": "How to use fonts"}
+nav_prev: {"path": "../installation/index.md", "title": "Create a new Next.js application"}
+nav_next: {"path": "../fonts/index.md", "title": "How to use fonts"}
 ---
 
 # Image Optimization

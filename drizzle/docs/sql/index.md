@@ -10,8 +10,8 @@ content_hash: "917d315d5b991dff085282f061e14e9e760a8d5a9c3aabbd2b3796391426486b"
 menu_path: ["Magical sql operator 🪄"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/joins/index.md", "title": "Joins [SQL]"}
-nav_next: {"path": "drizzle/docs/rqb/index.md", "title": "Drizzle Queries"}
+nav_prev: {"path": "../joins/index.md", "title": "Joins [SQL]"}
+nav_next: {"path": "../rqb/index.md", "title": "Drizzle Queries"}
 ---
 
 ## Magical `sql` operator 🪄
@@ -293,11 +293,11 @@ select * from "users" where "users"."id" = $1; --> [ 12 ]
 
 You can use the sql functionality in partial select queries as well. Partial select queries allow you to retrieve specific fields or columns from a table rather than fetching the entire row.
 
-For more detailed information about partial select queries, you can refer to the Core API documentation available at **[Core API docs](drizzle/docs/select/index.md#basic-and-partial-select)**.
+For more detailed information about partial select queries, you can refer to the Core API documentation available at **[Core API docs](../select/index.md#basic-and-partial-select)**.
 
 **Select different custom fields from table**
 
-Here you can see a usage for **[`sql<T>`](drizzle/docs/sql/index.md#sqlt)**, **[`sql``.mapWith()`](drizzle/docs/sql/index.md#sqlmapwith)**, **[`sql``.as<T>()`](drizzle/docs/sql/index.md#sqlast)**.
+Here you can see a usage for **[`sql<T>`](index.md#sqlt)**, **[`sql``.mapWith()`](index.md#sqlmapwith)**, **[`sql``.as<T>()`](index.md#sqlast)**.
 
 ```typescript
 import { sql } from 'drizzle-orm'

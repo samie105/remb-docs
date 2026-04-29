@@ -10,8 +10,8 @@ content_hash: "2b3e0c5d1e0401d5a24419e6a588b6258edf06013e79d9c49000a09bd4d06296"
 menu_path: ["PostgreSQL: Documentation: 18: F.29. pg_overexplain — allow EXPLAIN to dump even more details"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/pglogicalinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.28.\u00a0pg_logicalinspect \u2014 logical decoding components inspection"}
-nav_next: {"path": "postgres/docs/current/pgprewarm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.30.\u00a0pg_prewarm \u2014 preload relation data into buffer caches"}
+nav_prev: {"path": "../pglogicalinspect.html/index.md", "title": "PostgreSQL: Documentation: 18: F.28.\u00a0pg_logicalinspect \u2014 logical decoding components inspection"}
+nav_next: {"path": "../pgprewarm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.30.\u00a0pg_prewarm \u2014 preload relation data into buffer caches"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/pgoverexplain.html "PostgreSQL devel - F.29. pg_overexplain — allow EXPLAIN to dump even more details")
@@ -22,7 +22,7 @@ To use it, simply load it into the server. You can load it into an individual se
 
 LOAD 'pg\_overexplain';
 
-You can also preload it into some or all sessions by including `pg_overexplain` in [session\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SESSION-PRELOAD-LIBRARIES) or [shared\_preload\_libraries](postgres/docs/current/runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`.
+You can also preload it into some or all sessions by including `pg_overexplain` in [session\_preload\_libraries](../runtime-config-client.html/index.md#GUC-SESSION-PRELOAD-LIBRARIES) or [shared\_preload\_libraries](../runtime-config-client.html/index.md#GUC-SHARED-PRELOAD-LIBRARIES) in `postgresql.conf`.
 
 ### F.29.1. EXPLAIN (DEBUG) [#](#PGOVEREXPLAIN-DEBUG)
 

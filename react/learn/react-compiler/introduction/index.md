@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:07.918Z"
 content_hash: "d2425a236678a7bb41a0e10ced98b0888bf32c30c9bc61908529a274da78b187"
 menu_path: ["Introduction"]
 section_path: []
-nav_prev: {"path": "react/learn/react-compiler/index.md", "title": "React Compiler"}
-nav_next: {"path": "react/learn/react-compiler/installation/index.md", "title": "Installation"}
+nav_prev: {"path": "../index.md", "title": "React Compiler"}
+nav_next: {"path": "../installation/index.md", "title": "Installation"}
 ---
 
 React Compiler is a new build-time tool that automatically optimizes your React app. It works with plain JavaScript, and understands the [Rules of React](https://react.dev/reference/rules), so you don’t need to rewrite any code to use it.
@@ -109,7 +109,7 @@ React Compiler is now stable and has been tested extensively in production. Whil
 
 ## What build tools are supported?[](#what-build-tools-are-supported "Link for What build tools are supported? ")
 
-React Compiler can be installed across [several build tools](react/learn/react-compiler/installation/index.md) such as Babel, Vite, Metro, and Rsbuild.
+React Compiler can be installed across [several build tools](../installation/index.md) such as Babel, Vite, Metro, and Rsbuild.
 
 React Compiler is primarily a light Babel plugin wrapper around the core compiler, which was designed to be decoupled from Babel itself. While the initial stable version of the compiler will remain primarily a Babel plugin, we are working with the swc and [oxc](https://github.com/oxc-project/oxc/issues/10048) teams to build first class support for React Compiler so you won’t have to add Babel back to your build pipelines in the future.
 
@@ -129,11 +129,11 @@ For existing code, we recommend either leaving existing memoization in place (re
 
 This section will help you get started with React Compiler and understand how to use it effectively in your projects.
 
-*   **[Installation](react/learn/react-compiler/installation/index.md)** - Install React Compiler and configure it for your build tools
+*   **[Installation](../installation/index.md)** - Install React Compiler and configure it for your build tools
 *   **[React Version Compatibility](https://react.dev/reference/react-compiler/target)** - Support for React 17, 18, and 19
 *   **[Configuration](https://react.dev/reference/react-compiler/configuration)** - Customize the compiler for your specific needs
-*   **[Incremental Adoption](react/learn/react-compiler/incremental-adoption/index.md)** - Strategies for gradually rolling out the compiler in existing codebases
-*   **[Debugging and Troubleshooting](react/learn/react-compiler/debugging/index.md)** - Identify and fix issues when using the compiler
+*   **[Incremental Adoption](../incremental-adoption/index.md)** - Strategies for gradually rolling out the compiler in existing codebases
+*   **[Debugging and Troubleshooting](../debugging/index.md)** - Identify and fix issues when using the compiler
 *   **[Compiling Libraries](https://react.dev/reference/react-compiler/compiling-libraries)** - Best practices for shipping compiled code
 *   **[API Reference](https://react.dev/reference/react-compiler/configuration)** - Detailed documentation of all configuration options
 

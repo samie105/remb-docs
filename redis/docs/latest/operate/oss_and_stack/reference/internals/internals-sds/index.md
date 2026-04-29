@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:19.143Z"
 content_hash: "08b5fbb97a8b1a4ef901ed3122ca187cb3143a4b01cee4008eb09d22e9bb9397"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        String internals","→","String internals"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        String internals","→","String internals"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-rediseventlib/index.md", "title": "Event library"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-vm/index.md", "title": "Virtual memory (deprecated)"}
+nav_prev: {"path": "../internals-rediseventlib/index.md", "title": "Event library"}
+nav_next: {"path": "../internals-vm/index.md", "title": "Virtual memory (deprecated)"}
 ---
 
 # String internals

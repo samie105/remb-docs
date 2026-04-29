@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:38.517Z"
 content_hash: "4a49c7867e88bdfcff315451d0583372719f2146118d21f16be9c3fbdf463d91"
 menu_path: ["Failed to parse Markdown frontmatter."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/markdown-content-schema-validation-error/index.md", "title": "Content collection frontmatter invalid."}
-nav_next: {"path": "astro/en/reference/errors/markdown-image-not-found/index.md", "title": "Image not found."}
+nav_prev: {"path": "../markdown-content-schema-validation-error/index.md", "title": "Content collection frontmatter invalid."}
+nav_next: {"path": "../markdown-image-not-found/index.md", "title": "Image not found."}
 ---
 
 # Failed to parse Markdown frontmatter.

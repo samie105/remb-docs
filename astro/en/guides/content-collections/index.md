@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:08.333Z"
 content_hash: "621696bb0997fda913c3623784f7527dd92640e065adc632764626763b9df498"
 menu_path: ["Content collections"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/markdown-content/index.md", "title": "Markdown in Astro"}
-nav_next: {"path": "astro/en/guides/images/index.md", "title": "Images"}
+nav_prev: {"path": "../markdown-content/index.md", "title": "Markdown in Astro"}
+nav_next: {"path": "../images/index.md", "title": "Images"}
 ---
 
 # Content collections

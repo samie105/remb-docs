@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:30.833Z"
 content_hash: "74c1547c742b9bec084e5d11f823994f3e734c24d3aa771f4534d2c139eea2dd"
 menu_path: ["Error in live content config."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/legacy-content-config-error/index.md", "title": "Legacy content config file found."}
-nav_next: {"path": "astro/en/reference/errors/local-image-used-wrongly/index.md", "title": "Local images must be imported."}
+nav_prev: {"path": "../legacy-content-config-error/index.md", "title": "Legacy content config file found."}
+nav_next: {"path": "../local-image-used-wrongly/index.md", "title": "Local images must be imported."}
 ---
 
 # Error in live content config.

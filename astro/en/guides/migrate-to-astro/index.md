@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:33.795Z"
 content_hash: "478d02bf80824e5a8b804f8316fb2de00f3e59ccd19888d75d75ed3465f1651b"
 menu_path: ["Migrate an existing project to Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/troubleshooting/index.md", "title": "Troubleshooting"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
+nav_prev: {"path": "../troubleshooting/index.md", "title": "Troubleshooting"}
+nav_next: {"path": "from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
 ---
 
 # Migrate an existing project to Astro

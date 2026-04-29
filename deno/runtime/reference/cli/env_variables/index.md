@@ -10,8 +10,8 @@ content_hash: "4e5e62fd155b5482f97475677da3d885472a25000dfd7fe2554cc2e16f89225c"
 menu_path: ["Environment variables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/index.md", "title": "Deno CLI Subcommands"}
-nav_next: {"path": "deno/runtime/reference/deno_namespace_apis/index.md", "title": "Deno Namespace APIs"}
+nav_prev: {"path": "../index.md", "title": "Deno CLI Subcommands"}
+nav_next: {"path": "../../deno_namespace_apis/index.md", "title": "Deno Namespace APIs"}
 ---
 
 **On this page**

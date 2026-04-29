@@ -9,11 +9,11 @@ last_crawled_at: "2026-04-18T16:48:36.599Z"
 content_hash: "0bb1e25836dfa0385989fcb7db4880844558671e586e2b1f3684499748e884e5"
 menu_path: ["Stream a file as an HTTP Response"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/http/sse/index.md", "title": "Server-Sent Events (SSE) with Bun"}
-nav_next: {"path": "bun/docs/guides/http/stream-iterator/index.md", "title": "Streaming HTTP Server with Async Iterators"}
+nav_prev: {"path": "../sse/index.md", "title": "Server-Sent Events (SSE) with Bun"}
+nav_next: {"path": "../stream-iterator/index.md", "title": "Streaming HTTP Server with Async Iterators"}
 ---
 
-This snippet reads a file from disk using [`Bun.file()`](bun/docs/runtime/file-io/index.md#reading-files-bun-file). This returns a `BunFile` instance, which can be passed directly into the `new Response` constructor.
+This snippet reads a file from disk using [`Bun.file()`](../../../runtime/file-io/index.md#reading-files-bun-file). This returns a `BunFile` instance, which can be passed directly into the `new Response` constructor.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)server.ts
 
@@ -45,7 +45,7 @@ new Response(Bun.file("./img.png")).headers.get("Content-Type");
 
 * * *
 
-Putting it all together with [`Bun.serve()`](bun/docs/runtime/http/server/index.md).
+Putting it all together with [`Bun.serve()`](../../../runtime/http/server/index.md).
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)server.ts
 
@@ -62,6 +62,6 @@ Bun.serve({
 
 * * *
 
-See [Docs > API > File I/O](bun/docs/runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
+See [Docs > API > File I/O](../../../runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
 
 Was this page helpful?

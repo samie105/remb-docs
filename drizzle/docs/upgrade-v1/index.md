@@ -10,8 +10,8 @@ content_hash: "e431c1c952633c6e8bc2b77ee8ba431fc050af67dd5b3ca3cae328fde7a3d8e8"
 menu_path: ["Upgrading to Drizzle v1 RC"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/gotchas/index.md", "title": "Drizzle gotchas"}
-nav_next: {"path": "drizzle/docs/relations-v1-v2/index.md", "title": "Migrating to Relational Queries version 2"}
+nav_prev: {"path": "../gotchas/index.md", "title": "Drizzle gotchas"}
+nav_next: {"path": "../relations-v1-v2/index.md", "title": "Migrating to Relational Queries version 2"}
 ---
 
 ## Upgrading to Drizzle v1 RC
@@ -96,8 +96,8 @@ All packages are now available via `drizzle-orm` imports:
 
 We’ve explained all the RQBv2 changes in detail, along with options for updating your codebase:
 
--   [How to migrate relations definition from v1 to v2](drizzle/docs/relations-v1-v2/index.md#how-to-migrate-relations-schema-definition-from-v1-to-v2)
--   [How to migrate queries from v1 to v2](drizzle/docs/relations-v1-v2/index.md#how-to-migrate-queries-from-v1-to-v2)
--   [Partial upgrade, or how to stay on v1 even after an upgrade?](drizzle/docs/relations-v1-v2/index.md#partial-upgrade-or-how-to-stay-on-rqb-v1-even-after-an-upgrade)
+-   [How to migrate relations definition from v1 to v2](../relations-v1-v2/index.md#how-to-migrate-relations-schema-definition-from-v1-to-v2)
+-   [How to migrate queries from v1 to v2](../relations-v1-v2/index.md#how-to-migrate-queries-from-v1-to-v2)
+-   [Partial upgrade, or how to stay on v1 even after an upgrade?](../relations-v1-v2/index.md#partial-upgrade-or-how-to-stay-on-rqb-v1-even-after-an-upgrade)
 
 #### Step 3 - Done ✅[](#step-3---done-)

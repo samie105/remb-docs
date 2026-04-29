@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:02.358Z"
 content_hash: "4b8dd75466af5d905efa90e211d12bcecf5906a8b850663953b80b9d47303a2b"
 menu_path: ["Deploy your Astro Site to Google’s Firebase Hosting"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/edgeone-pages/index.md", "title": "Deploy your Astro Site to EdgeOne Pages"}
-nav_next: {"path": "astro/en/guides/deploy/fleek/index.md", "title": "Deploy your Astro Site to Fleek"}
+nav_prev: {"path": "../edgeone-pages/index.md", "title": "Deploy your Astro Site to EdgeOne Pages"}
+nav_next: {"path": "../fleek/index.md", "title": "Deploy your Astro Site to Fleek"}
 ---
 
 # Deploy your Astro Site to Google’s Firebase Hosting

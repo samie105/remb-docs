@@ -10,8 +10,8 @@ content_hash: "8af4566b4d9cf669c613a4a99e6d69f8019ee8a192a18a51735f7bc3f1d054e6"
 menu_path: ["PostgreSQL: Documentation: 18: 9.7. Pattern Matching"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/functions-logical.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.1.\u00a0Logical Operators"}
-nav_next: {"path": "postgres/docs/current/functions-srf.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.26.\u00a0Set Returning Functions"}
+nav_prev: {"path": "../functions-logical.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.1.\u00a0Logical Operators"}
+nav_next: {"path": "../functions-srf.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.26.\u00a0Set Returning Functions"}
 ---
 
 There are three separate approaches to pattern matching provided by PostgreSQL: the traditional SQL `LIKE` operator, the more recent `SIMILAR TO` operator (added in SQL:1999), and POSIX\-style regular expressions. Aside from the basic “does this string match this pattern?” operators, functions are available to extract or replace matching substrings and to split a string at matching locations.

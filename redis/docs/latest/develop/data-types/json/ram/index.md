@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:07:58.770Z"
 content_hash: "3f3ff95e2231b7ccfd0edb7e518ef717888c890e04ca8e0946d28412c28a55a3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Redis JSON RAM Usage","→","Redis JSON RAM Usage"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Redis JSON RAM Usage","→","Redis JSON RAM Usage"]
-nav_prev: {"path": "redis/docs/latest/develop/data-types/json/performance/index.md", "title": "Performance"}
-nav_next: {"path": "redis/docs/latest/develop/data-types/json/resp3/index.md", "title": "Guide for migrating from RESP2 to RESP3 replies"}
+nav_prev: {"path": "../performance/index.md", "title": "Performance"}
+nav_next: {"path": "../resp3/index.md", "title": "Guide for migrating from RESP2 to RESP3 replies"}
 ---
 
 # Redis JSON RAM Usage

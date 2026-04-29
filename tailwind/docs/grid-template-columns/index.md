@@ -10,8 +10,8 @@ content_hash: "169b678d07279d6dcbdeb2958996c9876e4bc310fe52b306f628a7d1d0f3f94f"
 menu_path: ["grid-template-columns"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/order/index.md", "title": "order"}
-nav_next: {"path": "tailwind/docs/grid-column/index.md", "title": "grid-column"}
+nav_prev: {"path": "../order/index.md", "title": "order"}
+nav_next: {"path": "../grid-column/index.md", "title": "grid-column"}
 ---
 
 # grid-template-columns

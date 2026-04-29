@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:36.298Z"
 content_hash: "caaddccc19c1a4ef2e0185763a40fc09bf392bff12eea6fd061b376be08cda22"
 menu_path: ["Runtime warnings"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/runtime-errors/index.md", "title": "Runtime errors"}
-nav_next: {"path": "svelte/docs/svelte/legacy-overview/index.md", "title": "Overview"}
+nav_prev: {"path": "../runtime-errors/index.md", "title": "Runtime errors"}
+nav_next: {"path": "../legacy-overview/index.md", "title": "Overview"}
 ---
 
 ## Client warnings[](#Client-warnings)
@@ -465,7 +465,7 @@ Avoid using `$state` here. If `component` _does_ need to be reactive for some re
 A `<svelte:boundary>` `reset` function only resets the boundary the first time it is called
 ```
 
-When an error occurs while rendering the contents of a [`<svelte:boundary>`](svelte/docs/svelte/svelte-boundary/index.md), the `onerror` handler is called with the error plus a `reset` function that attempts to re-render the contents.
+When an error occurs while rendering the contents of a [`<svelte:boundary>`](../svelte-boundary/index.md), the `onerror` handler is called with the error plus a `reset` function that attempts to re-render the contents.
 
 This `reset` function should only be called once. After that, it has no effect — in a case like this, where a reference to `reset` is stored outside the boundary, clicking the button while `<Contents />` is rendered will _not_ cause the contents to be rendered again.
 

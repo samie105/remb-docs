@@ -10,8 +10,8 @@ content_hash: "3f236d519806e74887b8cf29842bca8eef1b1f1ced534683489dbfb784c63c5a"
 menu_path: ["Raw queries"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/index.md", "title": "Write your own SQL"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/safeql/index.md", "title": "SafeQL & Prisma Client"}
+nav_prev: {"path": "../index.md", "title": "Write your own SQL"}
+nav_next: {"path": "../safeql/index.md", "title": "SafeQL & Prisma Client"}
 ---
 
 Learn how you can send raw SQL and MongoDB queries to your database using the raw() methods from the Prisma Client API
@@ -134,7 +134,7 @@ const result = await prisma.$queryRaw<User[]>`SELECT * FROM User`;
 
 > **Note**: If you do not provide a type, `$queryRaw` defaults to `unknown`.
 
-If you are selecting **specific fields** of the model or want to include relations, refer to the documentation about [leveraging Prisma Client's generated types](prisma/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md#problem-using-variations-of-the-generated-model-type) if you want to make sure that the results are properly typed.
+If you are selecting **specific fields** of the model or want to include relations, refer to the documentation about [leveraging Prisma Client's generated types](../../type-safety/operating-against-partial-structures-of-model-types/index.md#problem-using-variations-of-the-generated-model-type) if you want to make sure that the results are properly typed.
 
 #### [Type caveats when using raw SQL](#type-caveats-when-using-raw-sql)
 
@@ -344,7 +344,7 @@ The following table shows the conversion between types used in the database and 
 | Uuid | `String` |
 | Xml | `String` |
 
-Note that the exact name for each database type will vary between databases – for example, the boolean type is known as `boolean` in PostgreSQL and `STRING` in CockroachDB. See the [Scalar types reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for full details of type names for each database.
+Note that the exact name for each database type will vary between databases – for example, the boolean type is known as `boolean` in PostgreSQL and `STRING` in CockroachDB. See the [Scalar types reference](../../../reference/prisma-schema-reference/index.md#model-field-scalar-types) for full details of type names for each database.
 
 ### [Raw query typecasting behavior](#raw-query-typecasting-behavior)
 
@@ -371,7 +371,7 @@ await prisma.$queryRaw`SELECT LENGTH(${42}::text);`;
 
 ### [Transactions](#transactions)
 
-You can use `.$executeRaw()` and `.$queryRaw()` inside a [transaction](prisma/docs/orm/prisma-client/queries/transactions/index.md).
+You can use `.$executeRaw()` and `.$queryRaw()` inside a [transaction](../../queries/transactions/index.md).
 
 ### [Using variables](#using-variables)
 
@@ -432,7 +432,7 @@ await prisma.$executeRawUnsafe('ALTER USER prisma WITH PASSWORD "$1"', password}
 
 ### [Unsupported types](#unsupported-types)
 
-[`Unsupported` types](prisma/docs/orm/reference/prisma-schema-reference/index.md#unsupported) need to be cast to Prisma Client supported types before using them in `$queryRaw` or `$queryRawUnsafe`. For example, take the following model, which has a `location` field with an `Unsupported` type:
+[`Unsupported` types](../../../reference/prisma-schema-reference/index.md#unsupported) need to be cast to Prisma Client supported types before using them in `$queryRaw` or `$queryRawUnsafe`. For example, take the following model, which has a `location` field with an `Unsupported` type:
 
 ```
 model Country {
@@ -629,7 +629,7 @@ console.log(result);
 
 #### [Using `$queryRawUnsafe` and `$executeRawUnsafe` unsafely](#using-queryrawunsafe-and-executerawunsafe-unsafely)
 
-If you cannot use tagged templates, you can instead use [`$queryRawUnsafe`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#queryrawunsafe) or [`$executeRawUnsafe`](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#executerawunsafe). However, **be aware that these functions significantly increase the risk of SQL injection vulnerabilities in your code**.
+If you cannot use tagged templates, you can instead use [`$queryRawUnsafe`](index.md#queryrawunsafe) or [`$executeRawUnsafe`](index.md#executerawunsafe). However, **be aware that these functions significantly increase the risk of SQL injection vulnerabilities in your code**.
 
 The following example concatenates `query` and `inputString`. Prisma Client ❌ **cannot** escape `inputString` in this example, which makes it vulnerable to SQL injection:
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:41.445Z"
 content_hash: "d9ef5c93f8bf861137645ee6c45dbd5e8b2b5ee05602a9cee287e5ab5b64ad71"
 menu_path: ["Module Resolution"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/markdown/index.md", "title": "Markdown"}
-nav_next: {"path": "bun/docs/runtime/networking/dns/index.md", "title": "DNS"}
+nav_prev: {"path": "../markdown/index.md", "title": "Markdown"}
+nav_next: {"path": "../networking/dns/index.md", "title": "DNS"}
 ---
 
 # Use it with bun build:

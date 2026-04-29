@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:34.761Z"
 content_hash: "5185462849e86022ac939f4bd7b9881e1fd9505d172dbcaf347cb21b21b73a90"
 menu_path: ["Astro Integration API"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/modules/astro-zod/index.md", "title": "Zod API Reference"}
-nav_next: {"path": "astro/en/reference/adapter-reference/index.md", "title": "Astro Adapter API"}
+nav_prev: {"path": "../modules/astro-zod/index.md", "title": "Zod API Reference"}
+nav_next: {"path": "../adapter-reference/index.md", "title": "Astro Adapter API"}
 ---
 
 # Astro Integration API

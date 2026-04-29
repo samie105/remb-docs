@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:53.503Z"
 content_hash: "0c694aa756ffb13d05f3511fd63c7d4a0f14f26f40c227fbf656b1a0cc64a2b8"
 menu_path: ["Convert a file URL to an absolute path"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/escape-html/index.md", "title": "Escape an HTML string"}
-nav_next: {"path": "bun/docs/guides/util/gzip/index.md", "title": "Compress and decompress data with gzip"}
+nav_prev: {"path": "../escape-html/index.md", "title": "Escape an HTML string"}
+nav_next: {"path": "../gzip/index.md", "title": "Compress and decompress data with gzip"}
 ---
 
 [Skip to main content](#content-area)

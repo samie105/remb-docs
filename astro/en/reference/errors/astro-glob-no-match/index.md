@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:32.221Z"
 content_hash: "e7dd6025e23166288d8d77206f63db276dc041c3c7c4c147663e61e922a3d4c6"
 menu_path: ["Astro.glob() did not match any files."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/adapter-support-output-mismatch/index.md", "title": "Adapter does not support server output."}
-nav_next: {"path": "astro/en/reference/errors/astro-glob-used-outside/index.md", "title": "Astro.glob() used outside of an Astro file."}
+nav_prev: {"path": "../adapter-support-output-mismatch/index.md", "title": "Adapter does not support server output."}
+nav_next: {"path": "../astro-glob-used-outside/index.md", "title": "Astro.glob() used outside of an Astro file."}
 ---
 
 # Astro.glob() did not match any files.

@@ -10,8 +10,8 @@ content_hash: "77f6bad8b9fd73d65e56306ecd0fa2373688e9d25c7ac7dddf9a29b2251e34b0"
 menu_path: ["tls - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/timers/promises/index.md", "title": "timers/promises - Node documentation"}
-nav_next: {"path": "deno/api/node/trace_events/index.md", "title": "trace_events - Node documentation"}
+nav_prev: {"path": "../timers/promises/index.md", "title": "timers/promises - Node documentation"}
+nav_next: {"path": "../trace_events/index.md", "title": "trace_events - Node documentation"}
 ---
 
 ### Usage in Deno

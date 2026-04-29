@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:44.146Z"
 content_hash: "2d00f6043308db057a31f83381d1383c4fe7c215fbef31d7e8fc848828d0525e"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Expo React Native","Expo React Native"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Expo React Native","Expo React Native"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-angular/index.md", "title": "Build a User Management App with Angular"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-flutter/index.md", "title": "Build a User Management App with Flutter"}
+nav_prev: {"path": "../with-angular/index.md", "title": "Build a User Management App with Angular"}
+nav_next: {"path": "../with-flutter/index.md", "title": "Build a User Management App with Flutter"}
 ---
 
 # 

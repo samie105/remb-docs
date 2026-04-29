@@ -10,8 +10,8 @@ content_hash: "bd5b1b4ed9626792331074ff816aa369a0c1a7cd14e14ee6a2f75d74c15bea97"
 menu_path: ["width"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/margin/index.md", "title": "margin"}
-nav_next: {"path": "tailwind/docs/min-width/index.md", "title": "min-width"}
+nav_prev: {"path": "../margin/index.md", "title": "margin"}
+nav_next: {"path": "../min-width/index.md", "title": "min-width"}
 ---
 
 Utilities for setting the width of an element.
@@ -144,7 +144,7 @@ Prefix a `width` utility with a breakpoint variant like `md:` to only apply the 
 <div class="w-1/2 md:w-full ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -154,4 +154,4 @@ The `w-<number>` and `size-<number>` utilities are driven by the `--spacing` the
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](../theme/index.md).

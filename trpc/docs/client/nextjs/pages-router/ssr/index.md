@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:08.601Z"
 content_hash: "f1a41560e776e0c1f9d1ab7f09968e64c8b8d06e5f5d0ee34a1b334d206d4bbe"
 menu_path: ["Server-Side Rendering"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/nextjs/pages-router/ssg/index.md", "title": "Static Site Generation"}
-nav_next: {"path": "trpc/docs/client/nextjs/server-actions/index.md", "title": "Server Actions"}
+nav_prev: {"path": "../ssg/index.md", "title": "Static Site Generation"}
+nav_next: {"path": "../../server-actions/index.md", "title": "Server Actions"}
 ---
 
 To enable SSR just set `ssr: true` in your `createTRPCNext` config callback.
@@ -20,9 +20,9 @@ info
 When you enable SSR, tRPC will use `getInitialProps` to prefetch all queries on the server. This results in problems [like this](https://github.com/trpc/trpc/issues/596) when you use `getServerSideProps`, and solving it is out of our hands.
 
    
-Alternatively, you can leave SSR disabled (the default) and use [Server-Side Helpers](trpc/docs/client/nextjs/pages-router/server-side-helpers/index.md) to prefetch queries in `getStaticProps` or `getServerSideProps`.
+Alternatively, you can leave SSR disabled (the default) and use [Server-Side Helpers](../server-side-helpers/index.md) to prefetch queries in `getStaticProps` or `getServerSideProps`.
 
-In order to execute queries properly during the server-side render step, we need to add extra logic inside our `config`. Additionally, consider [`Response Caching`](trpc/docs/server/caching/index.md).
+In order to execute queries properly during the server-side render step, we need to add extra logic inside our `config`. Additionally, consider [`Response Caching`](../../../../server/caching/index.md).
 
 utils/trpc.ts
 
@@ -234,7 +234,7 @@ tsx
 
 If you turn on SSR in your app, you might discover that your app loads slowly on, for instance, Vercel, but you can actually statically render your whole app without using SSG; [read this Twitter thread](https://twitter.com/alexdotjs/status/1386274093041950722) for more insights.
 
-You can use the `responseMeta` callback on `createTRPCNext` to set cache headers for SSR responses. See also the general [Response Caching](trpc/docs/server/caching/index.md) docs for framework-agnostic caching with `responseMeta`.
+You can use the `responseMeta` callback on `createTRPCNext` to set cache headers for SSR responses. See also the general [Response Caching](../../../../server/caching/index.md) docs for framework-agnostic caching with `responseMeta`.
 
 utils/trpc.tsx
 
@@ -452,4 +452,4 @@ If you don't remove the `connection` header, the data fetching will fail with `T
 
 ### Q: Why do I still see network requests being made in the Network tab?[​](#q-why-do-i-still-see-network-requests-being-made-in-the-network-tab "Direct link to Q: Why do I still see network requests being made in the Network tab?")
 
-By default, `@tanstack/react-query` (which we use for the data fetching hooks) refetches data on mount and window refocus, even if it's already got initial data via SSR. This ensures data is always up-to-date. See the page on [SSG](trpc/docs/client/nextjs/pages-router/ssg/index.md) if you'd like to disable this behavior.
+By default, `@tanstack/react-query` (which we use for the data fetching hooks) refetches data on mount and window refocus, even if it's already got initial data via SSR. This ensures data is always up-to-date. See the page on [SSG](../ssg/index.md) if you'd like to disable this behavior.

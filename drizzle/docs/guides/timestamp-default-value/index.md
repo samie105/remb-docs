@@ -10,8 +10,8 @@ content_hash: "9461eb469a0390fe90636f18cec3be043637bc9f3831ff1d763e99d385553308"
 menu_path: ["Drizzle ORM - SQL Timestamp as a default value"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/guides/select-parent-rows-with-at-least-one-related-child-row/index.md", "title": "Drizzle ORM - Select parent rows with at least one related child row"}
-nav_next: {"path": "drizzle/docs/guides/toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
+nav_prev: {"path": "../select-parent-rows-with-at-least-one-related-child-row/index.md", "title": "Drizzle ORM - Select parent rows with at least one related child row"}
+nav_next: {"path": "../toggling-a-boolean-field/index.md", "title": "Drizzle ORM - SQL Toggle value"}
 ---
 
 Drizzle | SQL Timestamp as a default value

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:29.751Z"
 content_hash: "e22880ed4d85cf79acce5e1bfa2dadba4b21ecc96a8568d846749613b6d36a60"
 menu_path: ["Realtime","Realtime","Usage","Usage","Postgres Changes","Postgres Changes"]
 section_path: ["Realtime","Realtime","Usage","Usage","Postgres Changes","Postgres Changes"]
-nav_prev: {"path": "supabase/docs/guides/realtime/limits/index.md", "title": "Realtime Limits"}
-nav_next: {"path": "supabase/docs/guides/realtime/presence/index.md", "title": "Presence"}
+nav_prev: {"path": "../limits/index.md", "title": "Realtime Limits"}
+nav_next: {"path": "../presence/index.md", "title": "Presence"}
 ---
 
 # 

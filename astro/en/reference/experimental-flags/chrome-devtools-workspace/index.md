@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:00.361Z"
 content_hash: "7eae4b92a371388209fe178623b832ec10da93e8b71587e6b10450480037a8a8"
 menu_path: ["Experimental Chrome DevTools workspace"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/experimental-flags/content-intellisense/index.md", "title": "Experimental Intellisense for content collections"}
-nav_next: {"path": "astro/en/reference/experimental-flags/svg-optimization/index.md", "title": "Experimental SVG optimization"}
+nav_prev: {"path": "../content-intellisense/index.md", "title": "Experimental Intellisense for content collections"}
+nav_next: {"path": "../svg-optimization/index.md", "title": "Experimental SVG optimization"}
 ---
 
 # Experimental Chrome DevTools workspace

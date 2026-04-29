@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:54.590Z"
 content_hash: "ea53e2fd6d92df21defa975cf6379dbc0882bb6c594803cd933d66006390612d"
 menu_path: ["Migration from v7 ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/performance/index.md", "title": "Performance \u200b"}
-nav_next: {"path": "vite/guide/api-plugin/index.md", "title": "Plugin API \u200b"}
+nav_prev: {"path": "../performance/index.md", "title": "Performance \u200b"}
+nav_next: {"path": "../api-plugin/index.md", "title": "Plugin API \u200b"}
 ---
 
 If you are migrating from `rolldown-vite`, the technical preview release for Rolldown integrated Vite for v6 & v7, only the sections with NRV in the title are applicable.
@@ -49,7 +49,7 @@ json
 
 ### Dependency Optimizer Now Uses Rolldown [​](#dependency-optimizer-now-uses-rolldown)
 
-Rolldown is now used for dependency optimization instead of esbuild. Vite still supports [`optimizeDeps.esbuildOptions`](vite/config/dep-optimization-options/index.md#optimizedeps-esbuildoptions) for backward compatibility by converting it to [`optimizeDeps.rolldownOptions`](vite/config/dep-optimization-options/index.md#optimizedeps-rolldownoptions) automatically. `optimizeDeps.esbuildOptions` is now deprecated and will be removed in the future and we encourage you to migrate to `optimizeDeps.rolldownOptions`.
+Rolldown is now used for dependency optimization instead of esbuild. Vite still supports [`optimizeDeps.esbuildOptions`](../../config/dep-optimization-options/index.md#optimizedeps-esbuildoptions) for backward compatibility by converting it to [`optimizeDeps.rolldownOptions`](../../config/dep-optimization-options/index.md#optimizedeps-rolldownoptions) automatically. `optimizeDeps.esbuildOptions` is now deprecated and will be removed in the future and we encourage you to migrate to `optimizeDeps.rolldownOptions`.
 
 The following options are converted automatically:
 
@@ -80,7 +80,7 @@ const plugin = {
 
 ### JavaScript Transforms by Oxc [​](#javascript-transforms-by-oxc)
 
-Oxc is now used for JavaScript transformation instead of esbuild. Vite still supports the [`esbuild`](vite/config/shared-options/index.md#esbuild) option for backward compatibility by converting it to [`oxc`](vite/config/shared-options/index.md#oxc) automatically. `esbuild` is now deprecated and will be removed in the future and we encourage you to migrate to `oxc`.
+Oxc is now used for JavaScript transformation instead of esbuild. Vite still supports the [`esbuild`](../../config/shared-options/index.md#esbuild) option for backward compatibility by converting it to [`oxc`](../../config/shared-options/index.md#oxc) automatically. `esbuild` is now deprecated and will be removed in the future and we encourage you to migrate to `oxc`.
 
 The following options are converted automatically:
 
@@ -246,7 +246,7 @@ export default defineConfig({
 
 ### JavaScript Minification by Oxc [​](#javascript-minification-by-oxc)
 
-The Oxc Minifier is now used for JavaScript minification instead of esbuild. You can use the deprecated [`build.minify: 'esbuild'`](vite/config/build-options/index.md#build-minify) option to switch back to esbuild. This configuration option will be removed in the future and you need install `esbuild` as a `devDependency` as Vite no longer relies on esbuild directly.
+The Oxc Minifier is now used for JavaScript minification instead of esbuild. You can use the deprecated [`build.minify: 'esbuild'`](../../config/build-options/index.md#build-minify) option to switch back to esbuild. This configuration option will be removed in the future and you need install `esbuild` as a `devDependency` as Vite no longer relies on esbuild directly.
 
 If you were using the `esbuild.minify*` options to control minification behavior, you can now use `build.rolldownOptions.output.minify` instead. If you were using the `esbuild.drop` option, you can now use [`build.rolldownOptions.output.minify.compress.drop*` options](https://oxc.rs/docs/guide/usage/minifier/dead-code-elimination).
 
@@ -261,7 +261,7 @@ Please report any issues you find related to minification in your JavaScript app
 
 ### CSS Minification by Lightning CSS [​](#css-minification-by-lightning-css)
 
-[Lightning CSS](https://lightningcss.dev/) is now used for CSS minification by default. You can use the [`build.cssMinify: 'esbuild'`](vite/config/build-options/index.md#build-cssminify) option to switch back to esbuild. Note that you need to install `esbuild` as a `devDependency`.
+[Lightning CSS](https://lightningcss.dev/) is now used for CSS minification by default. You can use the [`build.cssMinify: 'esbuild'`](../../config/build-options/index.md#build-cssminify) option to switch back to esbuild. Note that you need to install `esbuild` as a `devDependency`.
 
 Lightning CSS supports better syntax lowering and your CSS bundle size might increase slightly.
 
@@ -296,7 +296,7 @@ This change may break some existing code importing CJS modules. You can use the 
 
 ### Removed Module Resolution Using Format Sniffing [​](#removed-module-resolution-using-format-sniffing)
 
-When both `browser` and `module` fields are present in `package.json`, Vite used to resolve the field based on the content of the file and it used to pick the ESM file for browsers. This was introduced because some packages were using the `module` field to point to ESM files for Node.js and some other packages were using the `browser` field to point to UMD files for browsers. Given that the modern `exports` field solved this problem and is now adopted by many packages, Vite no longer uses this heuristic and always respects the order of the [`resolve.mainFields`](vite/config/shared-options/index.md#resolve-mainfields) option. If you were relying on this behavior, you can use the [`resolve.alias`](vite/config/shared-options/index.md#resolve-alias) option to map the field to the desired file or apply a patch with your package manager (e.g. `patch-package`, `pnpm patch`).
+When both `browser` and `module` fields are present in `package.json`, Vite used to resolve the field based on the content of the file and it used to pick the ESM file for browsers. This was introduced because some packages were using the `module` field to point to ESM files for Node.js and some other packages were using the `browser` field to point to UMD files for browsers. Given that the modern `exports` field solved this problem and is now adopted by many packages, Vite no longer uses this heuristic and always respects the order of the [`resolve.mainFields`](../../config/shared-options/index.md#resolve-mainfields) option. If you were relying on this behavior, you can use the [`resolve.alias`](../../config/shared-options/index.md#resolve-alias) option to map the field to the desired file or apply a patch with your package manager (e.g. `patch-package`, `pnpm patch`).
 
 ### Require Calls For Externalized Modules [​](#require-calls-for-externalized-modules)
 
@@ -321,7 +321,7 @@ See Rolldown's docs for more details: [`require` external modules - Bundling CJS
 
 ### `import.meta.url` in UMD / IIFE [​](#import-meta-url-in-umd-iife)
 
-`import.meta.url` is no longer polyfilled in UMD / IIFE output formats. It will be replaced with `undefined` by default. If you prefer the previous behavior, you can use the [`define`](vite/config/shared-options/index.md#define) option with [`build.rolldownOptions.output.intro`](https://rolldown.rs/reference/OutputOptions.intro) option. See Rolldown's docs for more details: [Well-known `import.meta` properties - Non ESM Output Formats | Rolldown](https://rolldown.rs/in-depth/non-esm-output-formats#well-known-import-meta-properties).
+`import.meta.url` is no longer polyfilled in UMD / IIFE output formats. It will be replaced with `undefined` by default. If you prefer the previous behavior, you can use the [`define`](../../config/shared-options/index.md#define) option with [`build.rolldownOptions.output.intro`](https://rolldown.rs/reference/OutputOptions.intro) option. See Rolldown's docs for more details: [Well-known `import.meta` properties - Non ESM Output Formats | Rolldown](https://rolldown.rs/in-depth/non-esm-output-formats#well-known-import-meta-properties).
 
 ### Removed `build.rollupOptions.watch.chokidar` option [​](#removed-build-rollupoptions-watch-chokidar-option)
 

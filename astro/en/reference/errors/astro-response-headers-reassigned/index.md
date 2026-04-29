@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:35.269Z"
 content_hash: "8451d8a174333cb04bfb2b4ae3b055444ba2a16eb4b9da84cdef1e6f0ec01de0"
 menu_path: ["Astro.response.headers must not be reassigned."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/astro-glob-used-outside/index.md", "title": "Astro.glob() used outside of an Astro file."}
-nav_next: {"path": "astro/en/reference/errors/cache-not-enabled/index.md", "title": "Cache is not enabled."}
+nav_prev: {"path": "../astro-glob-used-outside/index.md", "title": "Astro.glob() used outside of an Astro file."}
+nav_next: {"path": "../cache-not-enabled/index.md", "title": "Cache is not enabled."}
 ---
 
 # Astro.response.headers must not be reassigned.

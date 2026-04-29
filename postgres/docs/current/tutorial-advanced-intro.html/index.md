@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:56.612Z"
 content_hash: "4968b443c1fb4162cdc4cbdc89dfe654d23e1d4531b724f48deefcf0c54154fd"
 menu_path: ["PostgreSQL: Documentation: 18: 3.1. Introduction"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 37.3.\u00a0Writing Trigger Functions in C"}
-nav_next: {"path": "postgres/docs/current/tutorial-concepts.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.2.\u00a0Concepts"}
+nav_prev: {"path": "../trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 37.3.\u00a0Writing Trigger Functions in C"}
+nav_next: {"path": "../tutorial-concepts.html/index.md", "title": "PostgreSQL: Documentation: 18: 2.2.\u00a0Concepts"}
 ---
 
 In the previous chapter we have covered the basics of using SQL to store and access your data in PostgreSQL. We will now discuss some more advanced features of SQL that simplify management and prevent loss or corruption of your data. Finally, we will look at some PostgreSQL extensions.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:05.880Z"
 content_hash: "b07d34eba33bc3c31c6c4bf67e620d0c3ea677b2bef2afdf6d3bd20e92bc6e5a"
 menu_path: ["Security","Security","Product security","Product security","Product configuration","Product configuration"]
 section_path: ["Security","Security","Product security","Product security","Product configuration","Product configuration"]
-nav_prev: {"path": "supabase/docs/guides/security/platform-security/index.md", "title": "Secure configuration of Supabase platform"}
-nav_next: {"path": "supabase/docs/guides/security/security-testing/index.md", "title": "Security testing of your Supabase projects"}
+nav_prev: {"path": "../platform-security/index.md", "title": "Secure configuration of Supabase platform"}
+nav_next: {"path": "../security-testing/index.md", "title": "Security testing of your Supabase projects"}
 ---
 
 # 

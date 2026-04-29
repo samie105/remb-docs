@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:49:07.624Z"
 content_hash: "f8dc177e0a63d982aaa81a8e6f12f59e8a6fc129820341ad727b397ab02b2753"
 menu_path: ["Optional: Make a content collection"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/6-islands/3/index.md", "title": "Congratulations!"}
+nav_prev: {"path": "../3/index.md", "title": "Congratulations!"}
 ---
 
 # Optional: Make a content collection

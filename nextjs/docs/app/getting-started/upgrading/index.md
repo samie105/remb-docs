@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/getting-started/deploying/index.md", "title": "Deploying"}
-nav_next: {"path": "nextjs/docs/app/guides/index.md", "title": "Guides"}
+nav_prev: {"path": "../deploying/index.md", "title": "Deploying"}
+nav_next: {"path": "../../guides/index.md", "title": "Guides"}
 ---
 
 # Upgrading

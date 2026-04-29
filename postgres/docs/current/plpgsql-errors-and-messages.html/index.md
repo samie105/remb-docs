@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:59.708Z"
 content_hash: "f6a267ecc2653b75bcd53d63ca282e2ea1714aed76c51f2677e32dbf5386c982"
 menu_path: ["PostgreSQL: Documentation: 18: 41.9. Errors and Messages"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-development-tips.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.12.\u00a0Tips for Developing in PL/pgSQL"}
-nav_next: {"path": "postgres/docs/current/plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
+nav_prev: {"path": "../plpgsql-development-tips.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.12.\u00a0Tips for Developing in PL/pgSQL"}
+nav_next: {"path": "../plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
 ---
 
 ### 41.9.1. Reporting Errors and Messages [#](#PLPGSQL-STATEMENTS-RAISE)
@@ -23,7 +23,7 @@ RAISE \[ _`level`_ \] SQLSTATE '_`sqlstate`_' \[ USING _`option`_ { = | := } _`e
 RAISE \[ _`level`_ \] USING _`option`_ { = | := } _`expression`_ \[, ... \];
 RAISE ;
 
-The _`level`_ option specifies the error severity. Allowed levels are `DEBUG`, `LOG`, `INFO`, `NOTICE`, `WARNING`, and `EXCEPTION`, with `EXCEPTION` being the default. `EXCEPTION` raises an error (which normally aborts the current transaction); the other levels only generate messages of different priority levels. Whether messages of a particular priority are reported to the client, written to the server log, or both is controlled by the [log\_min\_messages](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-MIN-MESSAGES) and [client\_min\_messages](postgres/docs/current/runtime-config-client.html/index.md#GUC-CLIENT-MIN-MESSAGES) configuration variables. See [Chapter 19](https://www.postgresql.org/docs/current/runtime-config.html "Chapter 19. Server Configuration") for more information.
+The _`level`_ option specifies the error severity. Allowed levels are `DEBUG`, `LOG`, `INFO`, `NOTICE`, `WARNING`, and `EXCEPTION`, with `EXCEPTION` being the default. `EXCEPTION` raises an error (which normally aborts the current transaction); the other levels only generate messages of different priority levels. Whether messages of a particular priority are reported to the client, written to the server log, or both is controlled by the [log\_min\_messages](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-MIN-MESSAGES) and [client\_min\_messages](../runtime-config-client.html/index.md#GUC-CLIENT-MIN-MESSAGES) configuration variables. See [Chapter 19](https://www.postgresql.org/docs/current/runtime-config.html "Chapter 19. Server Configuration") for more information.
 
 In the first syntax variant, after the _`level`_ if any, write a _`format`_ string (which must be a simple string literal, not an expression). The format string specifies the error message text to be reported. The format string can be followed by optional argument expressions to be inserted into the message. Inside the format string, `%` is replaced by the string representation of the next optional argument's value. Write `%%` to emit a literal `%`. The number of arguments must match the number of `%` placeholders in the format string, or an error is raised during the compilation of the function.
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:07:41.559Z"
 content_hash: "252508e487041ee2b052e55f68db17a2b132ccc9dde0e79073f12bea8a4088fa"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on macOS","→","Install Redis Open Source on macOS"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Open Source on macOS","→","Install Redis Open Source on macOS"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/docker/index.md", "title": "Run Redis Open Source on Docker"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/rpm/index.md", "title": "Install Redis Open Source on Linux"}
+nav_prev: {"path": "../docker/index.md", "title": "Run Redis Open Source on Docker"}
+nav_next: {"path": "../rpm/index.md", "title": "Install Redis Open Source on Linux"}
 ---
 
 # Install Redis Open Source on macOS

@@ -10,8 +10,8 @@ content_hash: "ee74ebafe99fcd68b3830480d0158f43a7102e05adef5ee42bffa60478c67751"
 menu_path: ["hyphens"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/overflow-wrap/index.md", "title": "overflow-wrap"}
-nav_next: {"path": "tailwind/docs/content/index.md", "title": "content"}
+nav_prev: {"path": "../overflow-wrap/index.md", "title": "overflow-wrap"}
+nav_next: {"path": "../content/index.md", "title": "content"}
 ---
 
 # hyphens

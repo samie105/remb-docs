@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:09.407Z"
 content_hash: "046ad03b1ca4a533c9f9199afb8446eda6e8393ebe51138c2dfc8104a5cbf9a2"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Limits","Limits"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Limits","Limits"]
-nav_prev: {"path": "supabase/docs/guides/realtime/getting_started/index.md", "title": "Getting Started with Realtime"}
-nav_next: {"path": "supabase/docs/guides/realtime/postgres-changes/index.md", "title": "Postgres Changes"}
+nav_prev: {"path": "../getting_started/index.md", "title": "Getting Started with Realtime"}
+nav_next: {"path": "../postgres-changes/index.md", "title": "Postgres Changes"}
 ---
 
 # 

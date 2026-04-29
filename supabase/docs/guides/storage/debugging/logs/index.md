@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:16.458Z"
 content_hash: "4be0166db4576e327f87b6d4981da7f7c7bc47728d50f3f2761c9248cf7542a3"
 menu_path: ["Storage","Storage","More","More","More","Debugging","Debugging","Logs","Logs"]
 section_path: ["Storage","Storage","More","More","More","Debugging","Debugging","Logs","Logs"]
-nav_prev: {"path": "supabase/docs/guides/storage/debugging/error-codes/index.md", "title": "Error Codes"}
-nav_next: {"path": "supabase/docs/guides/storage/management/copy-move-objects/index.md", "title": "Copy Objects"}
+nav_prev: {"path": "../error-codes/index.md", "title": "Error Codes"}
+nav_next: {"path": "../../management/copy-move-objects/index.md", "title": "Copy Objects"}
 ---
 
 # 

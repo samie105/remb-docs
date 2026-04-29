@@ -10,8 +10,8 @@ content_hash: "9d1626e0fd92168013874e395c35b085fa280d4c9c85798d7e666eb26b4360dc"
 menu_path: ["Responsive design"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
-nav_next: {"path": "tailwind/docs/dark-mode/index.md", "title": "Dark mode"}
+nav_prev: {"path": "../hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
+nav_next: {"path": "../dark-mode/index.md", "title": "Dark mode"}
 ---
 
 Using responsive utility variants to build adaptive user interfaces.
@@ -132,7 +132,7 @@ Note that it's important to always use the same unit for defining your breakpoin
 
 Tailwind uses `rem` for the default breakpoints, so if you are adding additional breakpoints to the defaults, make sure you use `rem` as well.
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md).
 
 ### [Removing default breakpoints](#removing-default-breakpoints)
 
@@ -148,7 +148,7 @@ You can also reset all of the default breakpoints using `--breakpoint-*: initial
 @import "tailwindcss";@theme {  --breakpoint-*: initial;  --breakpoint-tablet: 40rem;  --breakpoint-laptop: 64rem;  --breakpoint-desktop: 80rem;}
 ```
 
-Learn more removing default theme values in the [theme documentation](tailwind/docs/theme/index.md).
+Learn more removing default theme values in the [theme documentation](../theme/index.md).
 
 ### [Using arbitrary values](#using-arbitrary-values)
 
@@ -158,7 +158,7 @@ If you need to use a one-off breakpoint that doesn’t make sense to include in 
 <div class="max-[600px]:bg-sky-300 min-[320px]:text-center">  <!-- ... --></div>
 ```
 
-Learn more about arbitrary value support in the [arbitrary values](tailwind/docs/adding-custom-styles/index.md#using-arbitrary-values) documentation.
+Learn more about arbitrary value support in the [arbitrary values](../adding-custom-styles/index.md#using-arbitrary-values) documentation.
 
 ## [Container queries](#container-queries)
 
@@ -216,7 +216,7 @@ This adds a new `8xl` container query variant that can be used in your markup:
 <div class="@container">  <div class="flex flex-col @8xl:flex-row">    <!-- ... -->  </div></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md).
 
 ### [Using arbitrary values](#using-arbitrary-container-query-values)
 

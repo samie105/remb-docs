@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:41.877Z"
 content_hash: "a5bd42725e8a3726157e0eb88128967cd910c281cd5ce254a3c3b2ccae035da3"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","LinkedIn","LinkedIn"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","LinkedIn","LinkedIn"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-keycloak/index.md", "title": "Login with Keycloak"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-notion/index.md", "title": "Login with Notion"}
+nav_prev: {"path": "../auth-keycloak/index.md", "title": "Login with Keycloak"}
+nav_next: {"path": "../auth-notion/index.md", "title": "Login with Notion"}
 ---
 
 # 

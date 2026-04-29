@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:19.525Z"
 content_hash: "0cecdacfbad68f8f1cf74d62a22ff2c8b9257d7694cb2f92f932da9958e2eb2d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Internal design","→","Internal design"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Internal design","→","Internal design"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/configuration/index.md", "title": "Configuration parameters"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/extensions/index.md", "title": "Extend existing search and query features"}
+nav_prev: {"path": "../configuration/index.md", "title": "Configuration parameters"}
+nav_next: {"path": "../extensions/index.md", "title": "Extend existing search and query features"}
 ---
 
 # Internal design

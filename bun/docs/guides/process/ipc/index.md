@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:51.848Z"
 content_hash: "7bf4fbbdea0941d3749b3b9e02ece7b6ab86bf76a61f507bb09c2a3972679120"
 menu_path: ["Spawn a child process and communicate using IPC"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/process/ctrl-c/index.md", "title": "Listen for CTRL+C"}
-nav_next: {"path": "bun/docs/guides/process/nanoseconds/index.md", "title": "Get the process uptime in nanoseconds"}
+nav_prev: {"path": "../ctrl-c/index.md", "title": "Listen for CTRL+C"}
+nav_next: {"path": "../nanoseconds/index.md", "title": "Get the process uptime in nanoseconds"}
 ---
 
 [Skip to main content](#content-area)

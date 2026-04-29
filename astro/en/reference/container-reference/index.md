@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:47.882Z"
 content_hash: "c68e00100acd9e9447852de2b0b859d62c66d3bf35560034f7aca9b1de5359e1"
 menu_path: ["Astro Container API (experimental)"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/font-provider-reference/index.md", "title": "Astro Font Provider API"}
-nav_next: {"path": "astro/en/reference/programmatic-reference/index.md", "title": "Programmatic Astro API (experimental)"}
+nav_prev: {"path": "../font-provider-reference/index.md", "title": "Astro Font Provider API"}
+nav_next: {"path": "../programmatic-reference/index.md", "title": "Programmatic Astro API (experimental)"}
 ---
 
 # Astro Container API (experimental)

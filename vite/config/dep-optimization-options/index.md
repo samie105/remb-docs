@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:32:03.019Z"
 content_hash: "e66eb0618fc2c72c6a56922d1a1515a39c75f37897cd73478aa530f5fbe0796d"
 menu_path: ["Dep Optimization Options ​"]
 section_path: []
-nav_prev: {"path": "vite/config/build-options/index.md", "title": "Build Options \u200b"}
-nav_next: {"path": "vite/config/preview-options/index.md", "title": "Preview Options \u200b"}
+nav_prev: {"path": "../build-options/index.md", "title": "Build Options \u200b"}
+nav_next: {"path": "../preview-options/index.md", "title": "Preview Options \u200b"}
 ---
 
-*   **Related:** [Dependency Pre-Bundling](vite/guide/dep-pre-bundling/index.md)
+*   **Related:** [Dependency Pre-Bundling](../../guide/dep-pre-bundling/index.md)
 
 Unless noted, the options in this section are only applied to the dependency optimizer, which is only used in dev.
 
-## optimizeDeps.entries [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-entries)
+## optimizeDeps.entries [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-entries)
 
 *   **Type:** `string | string[]`
 
@@ -25,7 +25,7 @@ By default, Vite will crawl all your `.html` files to detect dependencies that n
 
 If neither of these fit your needs, you can specify custom entries using this option - the value should be a [`tinyglobby` pattern](https://superchupu.dev/tinyglobby/comparison) or array of patterns that are relative from Vite project root. This will overwrite default entries inference. Only `node_modules` and `build.outDir` folders will be ignored by default when `optimizeDeps.entries` is explicitly defined. If other folders need to be ignored, you can use an ignore pattern as part of the entries list, marked with an initial `!`. `node_modules` will not be ignored for patterns that explicitly include the string `node_modules`.
 
-## optimizeDeps.exclude [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-exclude)
+## optimizeDeps.exclude [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-exclude)
 
 *   **Type:** `string[]`
 
@@ -45,7 +45,7 @@ export default defineConfig({
 })
 ```
 
-## optimizeDeps.include [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-include)
+## optimizeDeps.include [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-include)
 
 *   **Type:** `string[]`
 
@@ -63,7 +63,7 @@ export default defineConfig({
 })
 ```
 
-## optimizeDeps.rolldownOptions [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-rolldownoptions)
+## optimizeDeps.rolldownOptions [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-rolldownoptions)
 
 *   **Type:** `Omit<[RolldownOptions](https://rolldown.rs/reference/Interface.RolldownOptions), 'input' | 'logLevel' | 'output'> & { output?: Omit<[RolldownOutputOptions](https://rolldown.rs/reference/#:~:text=Output%20Options), 'format' | 'sourcemap' | 'dir' | 'banner'> }`
 
@@ -73,27 +73,27 @@ Certain options are omitted since changing them would not be compatible with Vit
 
 *   `plugins` are merged with Vite's dep plugin
 
-## optimizeDeps.esbuildOptions [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-esbuildoptions)
+## optimizeDeps.esbuildOptions [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-esbuildoptions)
 
 *   **Type:** `Omit<[EsbuildBuildOptions](https://esbuild.github.io/api/#general-options), 'bundle' | 'entryPoints' | 'external' | 'write' | 'watch' | 'outdir' | 'outfile' | 'outbase' | 'outExtension' | 'metafile'>`
 *   **Deprecated**
 
 This option is converted to `optimizeDeps.rolldownOptions` internally. Use `optimizeDeps.rolldownOptions` instead.
 
-## optimizeDeps.force [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-force)
+## optimizeDeps.force [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-force)
 
 *   **Type:** `boolean`
 
 Set to `true` to force dependency pre-bundling, ignoring previously cached optimized dependencies.
 
-## optimizeDeps.noDiscovery [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-nodiscovery)
+## optimizeDeps.noDiscovery [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-nodiscovery)
 
 *   **Type:** `boolean`
 *   **Default:** `false`
 
 When set to `true`, automatic dependency discovery will be disabled and only dependencies listed in `optimizeDeps.include` will be optimized. CJS-only dependencies must be present in `optimizeDeps.include` during dev.
 
-## optimizeDeps.holdUntilCrawlEnd [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-holduntilcrawlend)
+## optimizeDeps.holdUntilCrawlEnd [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-holduntilcrawlend)
 
 *   **Experimental:** [Give Feedback](https://github.com/vitejs/vite/discussions/15834)
 *   **Type:** `boolean`
@@ -101,7 +101,7 @@ When set to `true`, automatic dependency discovery will be disabled and only dep
 
 When enabled, it will hold the first optimized deps results until all static imports are crawled on cold start. This avoids the need for full-page reloads when new dependencies are discovered and they trigger the generation of new common chunks. If all dependencies are found by the scanner plus the explicitly defined ones in `include`, it is better to disable this option to let the browser process more requests in parallel.
 
-## optimizeDeps.disabled [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-disabled)
+## optimizeDeps.disabled [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-disabled)
 
 *   **Deprecated**
 *   **Experimental:** [Give Feedback](https://github.com/vitejs/vite/discussions/13839)
@@ -116,7 +116,7 @@ WARNING
 
 Optimizing dependencies during build time was an **experimental** feature. Projects trying out this strategy also removed `@rollup/plugin-commonjs` using `build.commonjsOptions: { include: [] }`. If you did so, a warning will guide you to re-enable it to support CJS only packages while bundling.
 
-## optimizeDeps.needsInterop [non-inherit](vite/guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-needsinterop)
+## optimizeDeps.needsInterop [non-inherit](../../guide/api-environment/index.md#environments-configuration) [​](#optimizedeps-needsinterop)
 
 *   **Experimental**
 *   **Type:** `string[]`

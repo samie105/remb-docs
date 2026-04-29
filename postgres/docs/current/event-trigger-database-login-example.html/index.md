@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:14.286Z"
 content_hash: "22c019cbcea73d819e565c3477daf34deac570e8bfb8d2f420c5504a6e6da4da"
 menu_path: ["PostgreSQL: Documentation: 18: 38.5. A Database Login Event Trigger Example"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/event-log-registration.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.12.\u00a0Registering Event Log on Windows"}
-nav_next: {"path": "postgres/docs/current/event-trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.2.\u00a0Writing Event Trigger Functions in C"}
+nav_prev: {"path": "../event-log-registration.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.12.\u00a0Registering Event Log on Windows"}
+nav_next: {"path": "../event-trigger-interface.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.2.\u00a0Writing Event Trigger Functions in C"}
 ---
 
 The event trigger on the `login` event can be useful for logging user logins, for verifying the connection and assigning roles according to current circumstances, or for session data initialization. It is very important that any event trigger using the `login` event checks whether or not the database is in recovery before performing any writes. Writing to a standby server will make it inaccessible.

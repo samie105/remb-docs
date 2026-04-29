@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:11.406Z"
 content_hash: "be8a2efc926930810f65d100af9eabb4d1edcca948ba749bf6f01c9174427ffa"
 menu_path: ["Template directives reference"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/astro-syntax/index.md", "title": "Template expressions reference"}
-nav_next: {"path": "astro/en/reference/configuration-reference/index.md", "title": "Configuration Reference"}
+nav_prev: {"path": "../astro-syntax/index.md", "title": "Template expressions reference"}
+nav_next: {"path": "../configuration-reference/index.md", "title": "Configuration Reference"}
 ---
 
 # Template directives reference

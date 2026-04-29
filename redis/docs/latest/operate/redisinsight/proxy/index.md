@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:10:42.922Z"
 content_hash: "dea32ed46121894e62eb3ab6b688bc54d0053cb8ef7f43de825740a8f73b28df"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Subpath proxy","→","Subpath proxy"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Subpath proxy","→","Subpath proxy"]
-nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-k8s/index.md", "title": "Install on Kubernetes"}
-nav_next: {"path": "redis/docs/latest/operate/rs/installing-upgrading/install/plan-deployment/index.md", "title": "Plan Redis Software deployment"}
+nav_prev: {"path": "../install/install-on-k8s/index.md", "title": "Install on Kubernetes"}
+nav_next: {"path": "../../rs/installing-upgrading/install/plan-deployment/index.md", "title": "Plan Redis Software deployment"}
 ---
 
 # Subpath proxy

@@ -10,8 +10,8 @@ content_hash: "5ae601ead351f2e59941ff5caf160c4024027c2a8474b747dd45101c6e784d81"
 menu_path: ["Drizzle ORM - undefined"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v1beta2/index.md", "title": "New Features"}
-nav_next: {"path": "drizzle/docs/migrate/migrate-from-prisma/index.md", "title": "Migrate from Prisma to Drizzle"}
+nav_prev: {"path": "../../latest-releases/drizzle-orm-v1beta2/index.md", "title": "New Features"}
+nav_next: {"path": "../migrate-from-prisma/index.md", "title": "Migrate from Prisma to Drizzle"}
 ---
 
 ## Npm[](#npm)

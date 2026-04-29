@@ -10,8 +10,8 @@ content_hash: "12de0aa015c5250c8ad96fa3f67a1da1a34163d3fa965e9f666d5545dc3bba87"
 menu_path: ["Generators"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/seed-overview/index.md", "title": "Drizzle Seed"}
-nav_next: {"path": "drizzle/docs/seed-versioning/index.md", "title": "Versioning"}
+nav_prev: {"path": "../seed-overview/index.md", "title": "Drizzle Seed"}
+nav_next: {"path": "../seed-versioning/index.md", "title": "Versioning"}
 ---
 
 warning

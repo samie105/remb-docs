@@ -11,8 +11,8 @@ menu_path: ["How to set up a custom server in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/css-in-js/index.md", "title": "How to use CSS-in-JS libraries"}
-nav_next: {"path": "nextjs/docs/app/guides/data-security/index.md", "title": "How to think about data security in Next.js"}
+nav_prev: {"path": "../css-in-js/index.md", "title": "How to use CSS-in-JS libraries"}
+nav_next: {"path": "../data-security/index.md", "title": "How to think about data security in Next.js"}
 ---
 
 # How to set up a custom server in Next.js

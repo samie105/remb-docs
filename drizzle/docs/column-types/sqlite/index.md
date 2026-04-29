@@ -10,13 +10,13 @@ content_hash: "1abe4195498ef0d1b07a87343b6e0fc04c972b9bea73d38575c98c6d3aa6ede9"
 menu_path: ["SQLite column types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/column-types/singlestore/index.md", "title": "SingleStore column types"}
-nav_next: {"path": "drizzle/docs/docs/drizzle-config-file/index.md", "title": "404"}
+nav_prev: {"path": "../singlestore/index.md", "title": "SingleStore column types"}
+nav_next: {"path": "../../docs/drizzle-config-file/index.md", "title": "404"}
 ---
 
 Based on the official **[SQLite docs](https://www.sqlite.org/datatype3.html)**, each value stored in an SQLite database (or manipulated by the database engine) has one of the following storage classes `NULL`, `INTEGER`, `REAL`, `TEXT` and `BLOB`.
 
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](../../custom-types/index.md)**.
 
 important
 
@@ -24,7 +24,7 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
+You can read more about it [here](../../sql-schema-declaration/index.md#shape-your-data-schema)
 
 ### Integer[](#integer)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:13.970Z"
 content_hash: "e67a413195d4fb2e9560302f9bc4eea0cdd70e5a421529ded42d364f18f0c178"
 menu_path: ["ApostropheCMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/index.md", "title": "Use a CMS with Astro"}
-nav_next: {"path": "astro/en/guides/cms/builderio/index.md", "title": "Builder.io & Astro"}
+nav_prev: {"path": "../index.md", "title": "Use a CMS with Astro"}
+nav_next: {"path": "../builderio/index.md", "title": "Builder.io & Astro"}
 ---
 
 # ApostropheCMS & Astro

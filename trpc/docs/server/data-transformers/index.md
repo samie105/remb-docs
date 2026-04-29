@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:47.271Z"
 content_hash: "42c620d418c1fe4428e13e57339e7d7289fcd90fe35579806d1fc2c5a8bd476b"
 menu_path: ["Data Transformers"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/context/index.md", "title": "Context"}
-nav_next: {"path": "trpc/docs/server/error-formatting/index.md", "title": "Error Formatting"}
+nav_prev: {"path": "../context/index.md", "title": "Context"}
+nav_next: {"path": "../error-formatting/index.md", "title": "Error Formatting"}
 ---
 
 You are able to serialize the response data & input args. The transformers need to be added both to the server and the client.

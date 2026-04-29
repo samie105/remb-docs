@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:50.098Z"
 content_hash: "63e0b26726d4cd71bf264e72a708013a52d8be36720bd82bc7723d73d33436d2"
 menu_path: ["Astro Courses"]
 section_path: []
-nav_prev: {"path": "astro/en/concepts/islands/index.md", "title": "Islands architecture"}
-nav_next: {"path": "astro/en/install-and-setup/index.md", "title": "Install Astro"}
+nav_prev: {"path": "../concepts/islands/index.md", "title": "Islands architecture"}
+nav_next: {"path": "../install-and-setup/index.md", "title": "Install Astro"}
 ---
 
 # Astro Courses

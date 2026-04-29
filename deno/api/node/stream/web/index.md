@@ -10,8 +10,8 @@ content_hash: "4ecb7f837c2a0cb6a0beb8213995db1bd525bb4be0e27c23f3f187015b6f8dd0"
 menu_path: ["stream/web - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/stream/promises/index.md", "title": "stream/promises - Node documentation"}
-nav_next: {"path": "deno/api/node/string_decoder/index.md", "title": "string_decoder - Node documentation"}
+nav_prev: {"path": "../promises/index.md", "title": "stream/promises - Node documentation"}
+nav_next: {"path": "../../string_decoder/index.md", "title": "string_decoder - Node documentation"}
 ---
 
 ### Usage in Deno

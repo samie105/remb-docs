@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:46.176Z"
 content_hash: "d97a5a57f0e307bbc7bda0e5d96417ea0be110ea5f9c7d2ea8385a3aaab8ae15"
 menu_path: ["Convert a Node.js Readable to a string"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/streams/node-readable-to-json/index.md", "title": "Convert a Node.js Readable to JSON"}
-nav_next: {"path": "bun/docs/guides/streams/node-readable-to-uint8array/index.md", "title": "Convert a Node.js Readable to an Uint8Array"}
+nav_prev: {"path": "../node-readable-to-json/index.md", "title": "Convert a Node.js Readable to JSON"}
+nav_next: {"path": "../node-readable-to-uint8array/index.md", "title": "Convert a Node.js Readable to an Uint8Array"}
 ---
 
 [Skip to main content](#content-area)

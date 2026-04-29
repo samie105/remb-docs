@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:01.529Z"
 content_hash: "4be5e39a97de5da2e218e0c83af90ec3b0c564aa6e32e48c3bdb13521d2afdfc"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE SCHEMA"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
-nav_next: {"path": "postgres/docs/current/sql-createsequence.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SEQUENCE"}
+nav_prev: {"path": "../sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
+nav_next: {"path": "../sql-createsequence.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SEQUENCE"}
 ---
 
 CREATE SCHEMA — define a new schema

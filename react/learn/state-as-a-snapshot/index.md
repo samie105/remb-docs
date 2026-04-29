@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:38.604Z"
 content_hash: "dda5d37630c22f9cc7c01535d849deb751a565beb8ef2fd0440304599217ad48"
 menu_path: ["State as a Snapshot"]
 section_path: []
-nav_prev: {"path": "react/learn/render-and-commit/index.md", "title": "Render and Commit"}
-nav_next: {"path": "react/learn/queueing-a-series-of-state-updates/index.md", "title": "Queueing a Series of State Updates"}
+nav_prev: {"path": "../render-and-commit/index.md", "title": "Render and Commit"}
+nav_next: {"path": "../queueing-a-series-of-state-updates/index.md", "title": "Queueing a Series of State Updates"}
 ---
 
 State variables might look like regular JavaScript variables that you can read and write to. However, state behaves more like a snapshot. Setting it does not change the state variable you already have, but instead triggers a re-render.
@@ -24,7 +24,7 @@ State variables might look like regular JavaScript variables that you can read a
 
 ## Setting state triggers renders[](#setting-state-triggers-renders "Link for Setting state triggers renders ")
 
-You might think of your user interface as changing directly in response to the user event like a click. In React, it works a little differently from this mental model. On the previous page, you saw that [setting state requests a re-render](react/learn/render-and-commit/index.md#step-1-trigger-a-render) from React. This means that for an interface to react to the event, you need to _update the state_.
+You might think of your user interface as changing directly in response to the user event like a click. In React, it works a little differently from this mental model. On the previous page, you saw that [setting state requests a re-render](../render-and-commit/index.md#step-1-trigger-a-render) from React. This means that for an interface to react to the event, you need to _update the state_.
 
 In this example, when you press “send”, `setIsSent(true)` tells React to re-render the UI:
 
@@ -38,7 +38,7 @@ Let’s take a closer look at the relationship between state and rendering.
 
 ## Rendering takes a snapshot in time[](#rendering-takes-a-snapshot-in-time "Link for Rendering takes a snapshot in time ")
 
-[“Rendering”](react/learn/render-and-commit/index.md#step-2-react-renders-your-components) means that React is calling your component, which is a function. The JSX you return from that function is like a snapshot of the UI in time. Its props, event handlers, and local variables were all calculated **using its state at the time of the render.**
+[“Rendering”](../render-and-commit/index.md#step-2-react-renders-your-components) means that React is calling your component, which is a function. The JSX you return from that function is like a snapshot of the UI in time. Its props, event handlers, and local variables were all calculated **using its state at the time of the render.**
 
 Unlike a photograph or a movie frame, the UI “snapshot” you return is interactive. It includes logic like event handlers that specify what happens in response to inputs. React updates the screen to match this snapshot and connects the event handlers. As a result, pressing a button will trigger the click handler from your JSX.
 
@@ -144,7 +144,7 @@ What do you expect the `alert` to display? Would it display, “You said Hello t
 
 **React keeps the state values “fixed” within one render’s event handlers.** You don’t need to worry whether the state has changed while the code is running.
 
-But what if you wanted to read the latest state before a re-render? You’ll want to use a [state updater function](react/learn/queueing-a-series-of-state-updates/index.md), covered on the next page!
+But what if you wanted to read the latest state before a re-render? You’ll want to use a [state updater function](../queueing-a-series-of-state-updates/index.md), covered on the next page!
 
 ## Recap[](#recap "Link for Recap")
 

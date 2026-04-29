@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:07:06.695Z"
 content_hash: "3a05596c87a0dd0e9edcfedf3e5a29d18a169b6cd46a22ccaa332883d318e61e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with .NET","→","Redis leaderboard with .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with .NET","→","Redis leaderboard with .NET"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/index.md", "title": "Redis leaderboard"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/go/index.md", "title": "Redis leaderboard with Go"}
+nav_prev: {"path": "../index.md", "title": "Redis leaderboard"}
+nav_next: {"path": "../go/index.md", "title": "Redis leaderboard with Go"}
 ---
 
 # Redis leaderboard with .NET

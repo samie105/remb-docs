@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:42.235Z"
 content_hash: "756521c7e661a0b1fde5654dfdbd3b80495bd790c4eb8e8e7467764e0935353b"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Wasm Modules","Wasm Modules"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Wasm Modules","Wasm Modules"]
-nav_prev: {"path": "supabase/docs/guides/functions/unit-test/index.md", "title": "Testing your Edge Functions"}
-nav_next: {"path": "supabase/docs/guides/functions/websockets/index.md", "title": "Handling WebSockets"}
+nav_prev: {"path": "../unit-test/index.md", "title": "Testing your Edge Functions"}
+nav_next: {"path": "../websockets/index.md", "title": "Handling WebSockets"}
 ---
 
 # 

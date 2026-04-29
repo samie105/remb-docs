@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:29.985Z"
 content_hash: "de879c98c1841a14375f133774dc0973c1ab925cde2dfb6babaae1ff4a88090b"
 menu_path: ["Merging Routers"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/introduction/index.md", "title": "tRPC server documentation"}
-nav_next: {"path": "trpc/docs/v10/server/metadata/index.md", "title": "Metadata"}
+nav_prev: {"path": "../introduction/index.md", "title": "tRPC server documentation"}
+nav_next: {"path": "../metadata/index.md", "title": "Metadata"}
 ---
 
 Writing all API-code in your code in the same file is not a great idea. It's easy to merge routers with other routers.

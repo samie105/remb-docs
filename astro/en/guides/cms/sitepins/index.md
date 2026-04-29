@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:18.605Z"
 content_hash: "58ba79fb9fdeaa0da0cf37e9ccee76e605cd05e2ecc81b5de17259bd23d9ca11"
 menu_path: ["Sitepins & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/sitecore/index.md", "title": "Sitecore Experience Manager & Astro"}
-nav_next: {"path": "astro/en/guides/cms/spinal/index.md", "title": "Spinal & Astro"}
+nav_prev: {"path": "../sitecore/index.md", "title": "Sitecore Experience Manager & Astro"}
+nav_next: {"path": "../spinal/index.md", "title": "Spinal & Astro"}
 ---
 
 # Sitepins & Astro

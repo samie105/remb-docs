@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:00.213Z"
 content_hash: "c7b80a7e56868f0014a5014b1afecaae75961bf12c072b1b6b27a6d7cce40d17"
 menu_path: ["Upload files via HTTP using FormData"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/http/fetch-unix/index.md", "title": "fetch with unix domain sockets in Bun"}
-nav_next: {"path": "bun/docs/guides/http/hot/index.md", "title": "Hot reload an HTTP server"}
+nav_prev: {"path": "../fetch-unix/index.md", "title": "fetch with unix domain sockets in Bun"}
+nav_next: {"path": "../hot/index.md", "title": "Hot reload an HTTP server"}
 ---
 
 To upload files via HTTP with Bun, use the [`FormData`](https://developer.mozilla.org/en-US/docs/Web/API/FormData) API. Let’s start with an HTTP server that serves an HTML web form.
@@ -72,7 +72,7 @@ Listening on http://localhost:4000
 
 * * *
 
-Our form will send a `POST` request to the `/action` endpoint with the form data. Let’s handle that request in our server. First we use the [`.formData()`](https://developer.mozilla.org/en-US/docs/Web/API/Request/formData) method on the incoming `Request` to asynchronously parse its contents to a `FormData` instance. Then we can use the [`.get()`](https://developer.mozilla.org/en-US/docs/Web/API/FormData/get) method to extract the value of the `name` and `profilePicture` fields. Here `name` corresponds to a `string` and `profilePicture` is a `Blob`. Finally, we write the `Blob` to disk using [`Bun.write()`](bun/docs/runtime/file-io/index.md#writing-files-bun-write).
+Our form will send a `POST` request to the `/action` endpoint with the form data. Let’s handle that request in our server. First we use the [`.formData()`](https://developer.mozilla.org/en-US/docs/Web/API/Request/formData) method on the incoming `Request` to asynchronously parse its contents to a `FormData` instance. Then we can use the [`.get()`](https://developer.mozilla.org/en-US/docs/Web/API/FormData/get) method to extract the value of the `name` and `profilePicture` fields. Here `name` corresponds to a `string` and `profilePicture` is a `Blob`. Finally, we write the `Blob` to disk using [`Bun.write()`](../../../runtime/file-io/index.md#writing-files-bun-write).
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)index.ts
 

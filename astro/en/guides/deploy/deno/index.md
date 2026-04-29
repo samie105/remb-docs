@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:48.679Z"
 content_hash: "98c0ab28e007582385c5727a907f18324f5926c10d6e9fa6afab0b22a6ca43c9"
 menu_path: ["Deploy your Astro Site with Deno"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/cloudray/index.md", "title": "Deploy your Astro Site with CloudRay"}
-nav_next: {"path": "astro/en/guides/deploy/deployhq/index.md", "title": "Deploy your Astro Site with DeployHQ"}
+nav_prev: {"path": "../cloudray/index.md", "title": "Deploy your Astro Site with CloudRay"}
+nav_next: {"path": "../deployhq/index.md", "title": "Deploy your Astro Site with DeployHQ"}
 ---
 
 # Deploy your Astro Site with Deno

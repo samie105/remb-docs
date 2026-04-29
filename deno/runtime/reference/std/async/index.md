@@ -10,8 +10,8 @@ content_hash: "8d781078ae1e365aca22e87f69597d1ebddfcf7d2c1a740baf0b68b9d3608966"
 menu_path: ["@std/async"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/assert/index.md", "title": "Standard Assertions (@std/assert)"}
-nav_next: {"path": "deno/runtime/reference/std/bytes/index.md", "title": "@std/bytes"}
+nav_prev: {"path": "../assert/index.md", "title": "Standard Assertions (@std/assert)"}
+nav_next: {"path": "../bytes/index.md", "title": "@std/bytes"}
 ---
 
 **On this page**

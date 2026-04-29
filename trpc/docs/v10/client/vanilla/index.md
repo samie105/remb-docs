@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:36.305Z"
 content_hash: "7ba58f5329be295a41b2b4875a6503afa29532121729f339a313c42c6004ff6c"
 menu_path: ["tRPC Client"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/react/useUtils/index.md", "title": "useUtils"}
-nav_next: {"path": "trpc/docs/v10/client/vanilla/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_prev: {"path": "../react/useUtils/index.md", "title": "useUtils"}
+nav_next: {"path": "aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
 
 Version: 10.x
@@ -34,5 +34,5 @@ You are likely to use this client in two scenarios:
 
 ### When **NOT** to use the Vanilla Client?[​](#when-not-to-use-the-vanilla-client "Direct link to when-not-to-use-the-vanilla-client")
 
-*   While you _can_ use the client to call procedures from a React component, you should usually use our [React Query Integration](trpc/docs/v10/client/react/index.md). It offers many additional features such as the ability to manage loading and error state, caching, and invalidation.
-*   We recommend you do not use this client when calling procedures of the same API instance, this is because the invocation has to pass through the network layer. For complete recommendations on invoking a procedure in the current API, you can [read more here](trpc/docs/server/server-side-calls/index.md).
+*   While you _can_ use the client to call procedures from a React component, you should usually use our [React Query Integration](../react/index.md). It offers many additional features such as the ability to manage loading and error state, caching, and invalidation.
+*   We recommend you do not use this client when calling procedures of the same API instance, this is because the invocation has to pass through the network layer. For complete recommendations on invoking a procedure in the current API, you can [read more here](../../../server/server-side-calls/index.md).

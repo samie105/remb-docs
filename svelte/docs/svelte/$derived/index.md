@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:30.321Z"
 content_hash: "cf73abbc4b3b343ed2b9ef57492303742189740808ceadb16d4ae9aa59c69f2a"
 menu_path: ["$derived"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/$state/index.md", "title": "$state"}
-nav_next: {"path": "svelte/docs/svelte/$effect/index.md", "title": "$effect"}
+nav_prev: {"path": "../$state/index.md", "title": "$state"}
+nav_next: {"path": "../$effect/index.md", "title": "$effect"}
 ---
 
 Derived state is declared with the `$derived` rune:

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:11.049Z"
 content_hash: "9cc33903462ac03837ec7dd7298526b0aa517a45c5e94a76bdacc01e8b39b7ca"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Azure (Microsoft)","Azure (Microsoft)"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Azure (Microsoft)","Azure (Microsoft)"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-apple/index.md", "title": "Login with Apple"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-bitbucket/index.md", "title": "Login with Bitbucket"}
+nav_prev: {"path": "../auth-apple/index.md", "title": "Login with Apple"}
+nav_next: {"path": "../auth-bitbucket/index.md", "title": "Login with Bitbucket"}
 ---
 
 # 

@@ -10,8 +10,8 @@ content_hash: "640a17cd83dda2336d226ab2385f38d6e46525f57c07d1668430aa3dfa8b7b50"
 menu_path: ["Lint Plugins"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/bundling/index.md", "title": "Bundling"}
-nav_next: {"path": "deno/runtime/reference/wasm/index.md", "title": "WebAssembly"}
+nav_prev: {"path": "../bundling/index.md", "title": "Bundling"}
+nav_next: {"path": "../wasm/index.md", "title": "WebAssembly"}
 ---
 
 **On this page**

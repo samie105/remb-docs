@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
-nav_next: {"path": "nextjs/docs/app/guides/memory-usage/index.md", "title": "How to optimize memory usage"}
+nav_prev: {"path": "../mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
+nav_next: {"path": "../memory-usage/index.md", "title": "How to optimize memory usage"}
 ---
 
 # How to use markdown and MDX in Next.js

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:16.215Z"
 content_hash: "b58d64bacc82f68c03dcdcbc09e22d1634010e6955209895c410ebb79d63648c"
 menu_path: ["Keeping Components Pure"]
 section_path: []
-nav_prev: {"path": "react/learn/rendering-lists/index.md", "title": "Rendering Lists"}
-nav_next: {"path": "react/learn/understanding-your-ui-as-a-tree/index.md", "title": "Understanding Your UI as a Tree"}
+nav_prev: {"path": "../rendering-lists/index.md", "title": "Rendering Lists"}
+nav_next: {"path": "../understanding-your-ui-as-a-tree/index.md", "title": "Understanding Your UI as a Tree"}
 ---
 
 Some JavaScript functions are _pure._ Pure functions only perform a calculation and nothing more. By strictly only writing your components as pure functions, you can avoid an entire class of baffling bugs and unpredictable behavior as your codebase grows. To get these benefits, though, there are a few rules you must follow.
@@ -56,7 +56,7 @@ If you pass `drinkers={4}`, it will return JSX containing `4 cups of water`. Alw
 
 Just like a math formula.
 
-You could think of your components as recipes: if you follow them and don’t introduce new ingredients during the cooking process, you will get the same dish every time. That “dish” is the JSX that the component serves to React to [render.](react/learn/render-and-commit/index.md)
+You could think of your components as recipes: if you follow them and don’t introduce new ingredients during the cooking process, you will get the same dish every time. That “dish” is the JSX that the component serves to React to [render.](../render-and-commit/index.md)
 
 ![A tea recipe for x people: take x cups of water, add x spoons of tea and 0.5x spoons of spices, and 0.5x cups of milk](https://react.dev/images/docs/illustrations/i_puritea-recipe.png)
 
@@ -70,7 +70,7 @@ This component is reading and writing a `guest` variable declared outside of it.
 
 Going back to our formula y = 2x, now even if x = 2, we cannot trust that y = 4. Our tests could fail, our users would be baffled, planes would fall out of the sky—you can see how this would lead to confusing bugs!
 
-You can fix this component by [passing `guest` as a prop instead](react/learn/passing-props-to-a-component/index.md):
+You can fix this component by [passing `guest` as a prop instead](../passing-props-to-a-component/index.md):
 
 Now your component is pure, as the JSX it returns only depends on the `guest` prop.
 
@@ -80,9 +80,9 @@ In general, you should not expect your components to be rendered in any particul
 
 #### Detecting impure calculations with StrictMode[](#detecting-impure-calculations-with-strict-mode "Link for Detecting impure calculations with StrictMode ")
 
-Although you might not have used them all yet, in React there are three kinds of inputs that you can read while rendering: [props](react/learn/passing-props-to-a-component/index.md), [state](react/learn/state-a-components-memory/index.md), and [context.](react/learn/passing-data-deeply-with-context/index.md) You should always treat these inputs as read-only.
+Although you might not have used them all yet, in React there are three kinds of inputs that you can read while rendering: [props](../passing-props-to-a-component/index.md), [state](../state-a-components-memory/index.md), and [context.](../passing-data-deeply-with-context/index.md) You should always treat these inputs as read-only.
 
-When you want to _change_ something in response to user input, you should [set state](react/learn/state-a-components-memory/index.md) instead of writing to a variable. You should never change preexisting variables or objects while your component is rendering.
+When you want to _change_ something in response to user input, you should [set state](../state-a-components-memory/index.md) instead of writing to a variable. You should never change preexisting variables or objects while your component is rendering.
 
 React offers a “Strict Mode” in which it calls each component’s function twice during development. **By calling the component functions twice, Strict Mode helps find components that break these rules.**
 
@@ -104,7 +104,7 @@ However, it’s fine because you’ve created them _during the same render_, ins
 
 While functional programming relies heavily on purity, at some point, somewhere, _something_ has to change. That’s kind of the point of programming! These changes—updating the screen, starting an animation, changing the data—are called **side effects.** They’re things that happen _“on the side”_, not during rendering.
 
-In React, **side effects usually belong inside [event handlers.](react/learn/responding-to-events/index.md)** Event handlers are functions that React runs when you perform some action—for example, when you click a button. Even though event handlers are defined _inside_ your component, they don’t run _during_ rendering! **So event handlers don’t need to be pure.**
+In React, **side effects usually belong inside [event handlers.](../responding-to-events/index.md)** Event handlers are functions that React runs when you perform some action—for example, when you click a button. Even though event handlers are defined _inside_ your component, they don’t run _during_ rendering! **So event handlers don’t need to be pure.**
 
 If you’ve exhausted all other options and can’t find the right event handler for your side effect, you can still attach it to your returned JSX with a [`useEffect`](https://react.dev/reference/react/useEffect) call in your component. This tells React to execute it later, after rendering, when side effects are allowed. **However, this approach should be your last resort.**
 
@@ -128,7 +128,7 @@ Every new React feature we’re building takes advantage of purity. From data fe
     *   **It minds its own business.** It should not change any objects or variables that existed before rendering.
     *   **Same inputs, same output.** Given the same inputs, a component should always return the same JSX.
 *   Rendering can happen at any time, so components should not depend on each others’ rendering sequence.
-*   You should not mutate any of the inputs that your components use for rendering. That includes props, state, and context. To update the screen, [“set” state](react/learn/state-a-components-memory/index.md) instead of mutating preexisting objects.
+*   You should not mutate any of the inputs that your components use for rendering. That includes props, state, and context. To update the screen, [“set” state](../state-a-components-memory/index.md) instead of mutating preexisting objects.
 *   Strive to express your component’s logic in the JSX you return. When you need to “change things”, you’ll usually want to do it in an event handler. As a last resort, you can `useEffect`.
 *   Writing pure functions takes a bit of practice, but it unlocks the power of React’s paradigm.
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:26.640Z"
 content_hash: "b2198d21c2bdf11d6d5e6852c36670b905c4ca90ec7cc4884fa2482cbdffe349"
 menu_path: ["Database","Database","Debugging","Debugging","Debugging performance issues","Debugging performance issues"]
 section_path: ["Database","Database","Debugging","Debugging","Debugging performance issues","Debugging performance issues"]
-nav_prev: {"path": "supabase/docs/guides/database/dbeaver/index.md", "title": "Connecting with DBeaver"}
-nav_next: {"path": "supabase/docs/guides/database/drizzle/index.md", "title": "Drizzle"}
+nav_prev: {"path": "../dbeaver/index.md", "title": "Connecting with DBeaver"}
+nav_next: {"path": "../drizzle/index.md", "title": "Drizzle"}
 ---
 
 # 

@@ -10,8 +10,8 @@ content_hash: "efaff1565837bae6da9aa4bfa6d244481eb0fe8a611513be895f99af9898189a"
 menu_path: ["transform-style"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/transform-origin/index.md", "title": "transform-origin"}
-nav_next: {"path": "tailwind/docs/translate/index.md", "title": "translate"}
+nav_prev: {"path": "../transform-origin/index.md", "title": "transform-origin"}
+nav_next: {"path": "../translate/index.md", "title": "translate"}
 ---
 
 Transforms
@@ -42,4 +42,4 @@ Prefix a `transform-style` utility with a breakpoint variant like `md:` to only 
 <div class="transform-3d md:transform-flat ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

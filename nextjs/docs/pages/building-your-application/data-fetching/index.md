@@ -11,8 +11,8 @@ menu_path: ["Data Fetching"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/rendering/client-side-rendering/index.md", "title": "Client-side Rendering (CSR)"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-props/index.md", "title": "getStaticProps"}
+nav_prev: {"path": "../rendering/client-side-rendering/index.md", "title": "Client-side Rendering (CSR)"}
+nav_next: {"path": "get-static-props/index.md", "title": "getStaticProps"}
 ---
 
 # Data Fetching

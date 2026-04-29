@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:18.292Z"
 content_hash: "5f924f800f8a45f841a77252998c5708fb654d65d21a9b6765a3c5ec6aeee5fd"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE COLLATION"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createcast.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CAST"}
-nav_next: {"path": "postgres/docs/current/sql-createconversion.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CONVERSION"}
+nav_prev: {"path": "../sql-createcast.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CAST"}
+nav_next: {"path": "../sql-createconversion.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE CONVERSION"}
 ---
 
 CREATE COLLATION — define a new collation

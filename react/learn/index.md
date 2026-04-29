@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:32:18.632Z"
 content_hash: "6a7c330701f58a6e839169853f6111d95075c2c6c9365543af73b4c1bab49fbc"
 menu_path: ["Quick Start"]
 section_path: []
-nav_next: {"path": "react/learn/tutorial-tic-tac-toe/index.md", "title": "Tutorial: Tic-Tac-Toe"}
+nav_next: {"path": "tutorial-tic-tac-toe/index.md", "title": "Tutorial: Tic-Tac-Toe"}
 ---
 
 Welcome to the React documentation! This page will give you an introduction to 80% of the React concepts that you will use on a daily basis.
@@ -47,7 +47,7 @@ The `export default` keywords specify the main component in the file. If you’r
 
 ## Writing markup with JSX[](#writing-markup-with-jsx "Link for Writing markup with JSX ")
 
-The markup syntax you’ve seen above is called _JSX_. It is optional, but most React projects use JSX for its convenience. All of the [tools we recommend for local development](react/learn/installation/index.md) support JSX out of the box.
+The markup syntax you’ve seen above is called _JSX_. It is optional, but most React projects use JSX for its convenience. All of the [tools we recommend for local development](installation/index.md) support JSX out of the box.
 
 JSX is stricter than HTML. You have to close tags like `<br />`. Your component also can’t return multiple JSX tags. You have to wrap them into a shared parent, like a `<div>...</div>` or an empty `<>...</>` wrapper:
 
@@ -239,4 +239,4 @@ When you click the button, the `onClick` handler fires. Each button’s `onClick
 
 By now, you know the basics of how to write React code!
 
-Check out the [Tutorial](react/learn/tutorial-tic-tac-toe/index.md) to put them into practice and build your first mini-app with React.
+Check out the [Tutorial](tutorial-tic-tac-toe/index.md) to put them into practice and build your first mini-app with React.

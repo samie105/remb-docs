@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:47.971Z"
 content_hash: "9ffce5926f8bd6def2ab2b83942688d4b31d7004a4ee1d6d23f9d7719a5c0b17"
 menu_path: [".svelte.js and .svelte.ts files"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-files/index.md", "title": ".svelte files"}
-nav_next: {"path": "svelte/docs/svelte/what-are-runes/index.md", "title": "What are runes?"}
+nav_prev: {"path": "../svelte-files/index.md", "title": ".svelte files"}
+nav_next: {"path": "../what-are-runes/index.md", "title": "What are runes?"}
 ---
 
 Besides `.svelte` files, Svelte also operates on `.svelte.js` and `.svelte.ts` files.

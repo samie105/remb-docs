@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:10.482Z"
 content_hash: "4cfb55ef2d0801ee323d4fec58982234ec9f24c9bf71c1556d1bf37f2e5980a1"
 menu_path: ["Console"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/color/index.md", "title": "Color"}
-nav_next: {"path": "bun/docs/runtime/cookies/index.md", "title": "Cookies"}
+nav_prev: {"path": "../color/index.md", "title": "Color"}
+nav_next: {"path": "../cookies/index.md", "title": "Cookies"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:45.352Z"
 content_hash: "3daeeea8bf1280e2cd4447ddc33cd1c63ade761d3282fc68f944b6e91934f20b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X","→\n      \n        Install","→","Install"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X","→\n      \n        Install","→","Install"]
-nav_prev: {"path": "redis/docs/latest/integrate/riot/docs/index.md", "title": "Documentation"}
-nav_next: {"path": "redis/docs/latest/integrate/riot/quick-start/index.md", "title": "Getting started"}
+nav_prev: {"path": "../docs/index.md", "title": "Documentation"}
+nav_next: {"path": "../quick-start/index.md", "title": "Getting started"}
 ---
 
 # Install

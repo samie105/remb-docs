@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:44.304Z"
 content_hash: "cb1c57aa51f28d4270e3cce6c4048f80d1835e2eebd2d90c1a2caac803f191c0"
 menu_path: ["Create and pass data to a custom blog layout"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/4-layouts/1/index.md", "title": "Build your first layout"}
-nav_next: {"path": "astro/en/tutorial/4-layouts/3/index.md", "title": "Combine layouts to get the best of both worlds"}
+nav_prev: {"path": "../1/index.md", "title": "Build your first layout"}
+nav_next: {"path": "../3/index.md", "title": "Combine layouts to get the best of both worlds"}
 ---
 
 # Create and pass data to a custom blog layout

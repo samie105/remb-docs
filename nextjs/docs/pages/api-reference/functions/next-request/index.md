@@ -11,8 +11,8 @@ menu_path: ["NextRequest"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-static-props/index.md", "title": "getStaticProps"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/next-response/index.md", "title": "NextResponse"}
+nav_prev: {"path": "../get-static-props/index.md", "title": "getStaticProps"}
+nav_next: {"path": "../next-response/index.md", "title": "NextResponse"}
 ---
 
 # NextRequest

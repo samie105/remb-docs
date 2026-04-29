@@ -11,8 +11,8 @@ menu_path: ["favicon, icon, and apple-icon"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/index.md", "title": "Metadata Files API Reference"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/manifest/index.md", "title": "manifest.json"}
+nav_prev: {"path": "../index.md", "title": "Metadata Files API Reference"}
+nav_next: {"path": "../manifest/index.md", "title": "manifest.json"}
 ---
 
 # favicon, icon, and apple-icon

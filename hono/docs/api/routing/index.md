@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:39.704Z"
 content_hash: "d65ef9ae894e1639564eab74a1a2ca499d42cb3756f2a0dafc282258e4ddc2c3"
 menu_path: ["Routing ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/api/hono/index.md", "title": "App - Hono \u200b"}
-nav_next: {"path": "hono/docs/api/context/index.md", "title": "Context \u200b"}
+nav_prev: {"path": "../hono/index.md", "title": "App - Hono \u200b"}
+nav_next: {"path": "../context/index.md", "title": "Context \u200b"}
 ---
 
 Routing of Hono is flexible and intuitive. Let's take a look.

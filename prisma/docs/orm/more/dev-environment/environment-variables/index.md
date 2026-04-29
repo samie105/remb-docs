@@ -11,8 +11,8 @@ menu_path: ["Environment variables"]
 section_path: []
 tab_variants: ["Command Prompt","PowerShell","Command Prompt","PowerShell"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
+nav_prev: {"path": "../editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "../../troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
 ---
 
 # environment variable already set in the environment of the system
@@ -145,7 +145,7 @@ package.json
 
 #### [Running tests on different environments](#running-tests-on-different-environments)
 
-When running tests, we advise you to [mock Prisma Client](prisma/docs/orm/prisma-client/testing/unit-testing/index.md#mocking-prisma-client). In doing so, you need to tell Jest which environment it should use when running its tests.
+When running tests, we advise you to [mock Prisma Client](../../../prisma-client/testing/unit-testing/index.md#mocking-prisma-client). In doing so, you need to tell Jest which environment it should use when running its tests.
 
 By default, Prisma Client will use the environment specified in the default `.env` file located at the project's root.
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:14.451Z"
 content_hash: "6587054d5cc0a3b2ec4d2d03167fe692b1f7bcfe0c496a79bcc64099a0559798"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Read Replicas","Read Replicas"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Read Replicas","Read Replicas"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/point-in-time-recovery/index.md", "title": "Manage Point-in-Time Recovery usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/realtime-messages/index.md", "title": "Manage Realtime Messages usage"}
+nav_prev: {"path": "../point-in-time-recovery/index.md", "title": "Manage Point-in-Time Recovery usage"}
+nav_next: {"path": "../realtime-messages/index.md", "title": "Manage Realtime Messages usage"}
 ---
 
 # 

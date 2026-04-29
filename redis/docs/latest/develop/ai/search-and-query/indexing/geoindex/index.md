@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:54.005Z"
 content_hash: "ccc7084dff598c8fa4bdcd7218e4ae7d514f361cf74fb6b3dc4a37fff81ee23e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Geospatial indexing","→","Geospatial indexing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Geospatial indexing","→","Geospatial indexing"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/index.md", "title": "Field and type options"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/schema-definition/index.md", "title": "Schema definition"}
+nav_prev: {"path": "../field-and-type-options/index.md", "title": "Field and type options"}
+nav_next: {"path": "../schema-definition/index.md", "title": "Schema definition"}
 ---
 
 # Geospatial indexing

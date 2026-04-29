@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:23.808Z"
 content_hash: "861c6b9422d39934cd4e60b1ced8b78bda5d734ba932b00a3ad21c92b0bbb948"
 menu_path: ["Aborting Procedure Calls"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/react/index.md", "title": "React Query Integration (Classic)"}
-nav_next: {"path": "trpc/docs/client/react/createTRPCQueryUtils/index.md", "title": "createTRPCQueryUtils"}
+nav_prev: {"path": "../index.md", "title": "React Query Integration (Classic)"}
+nav_next: {"path": "../createTRPCQueryUtils/index.md", "title": "createTRPCQueryUtils"}
 ---
 
 By default, tRPC does not cancel requests via React Query. If you want to opt into this behavior, you can provide `abortOnUnmount` in your configuration.

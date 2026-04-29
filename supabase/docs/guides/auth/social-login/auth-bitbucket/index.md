@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:14.912Z"
 content_hash: "06f2eac2bcb8d2ec6e7dd30044809cc2a3678abfca111b7b8db7cef61e6fd00b"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Bitbucket","Bitbucket"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Bitbucket","Bitbucket"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-azure/index.md", "title": "Login with Azure (Microsoft)"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-discord/index.md", "title": "Login with Discord"}
+nav_prev: {"path": "../auth-azure/index.md", "title": "Login with Azure (Microsoft)"}
+nav_next: {"path": "../auth-discord/index.md", "title": "Login with Discord"}
 ---
 
 # 

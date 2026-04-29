@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:49.632Z"
 content_hash: "358e697e1d02fe18ee826847aeb7995398fad6109dbb786f1e9d807da82d84db"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database triggers","Managing database triggers"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database triggers","Managing database triggers"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/timeouts/index.md", "title": "Timeouts"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/which-version-of-postgres/index.md", "title": "Print Postgres version"}
+nav_prev: {"path": "../timeouts/index.md", "title": "Timeouts"}
+nav_next: {"path": "../which-version-of-postgres/index.md", "title": "Print Postgres version"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:10.798Z"
 content_hash: "8d02b8cedfb9f27f39be846a782e200988451a94f1a8999288c8da0229c98747"
 menu_path: ["Data fetching"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/images/index.md", "title": "Images"}
-nav_next: {"path": "astro/en/guides/astro-db/index.md", "title": "Astro DB"}
+nav_prev: {"path": "../images/index.md", "title": "Images"}
+nav_next: {"path": "../astro-db/index.md", "title": "Astro DB"}
 ---
 
 # Data fetching

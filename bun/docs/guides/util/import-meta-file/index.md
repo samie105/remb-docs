@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:01.177Z"
 content_hash: "d1319ad73551540058d3949a6151270e5b772aa54db7fb1810089bc4a29b3b3f"
 menu_path: ["Get the file name of the current file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/import-meta-dir/index.md", "title": "Get the directory of the current file"}
-nav_next: {"path": "bun/docs/guides/util/import-meta-path/index.md", "title": "Get the absolute path of the current file"}
+nav_prev: {"path": "../import-meta-dir/index.md", "title": "Get the directory of the current file"}
+nav_next: {"path": "../import-meta-path/index.md", "title": "Get the absolute path of the current file"}
 ---
 
 [Skip to main content](#content-area)

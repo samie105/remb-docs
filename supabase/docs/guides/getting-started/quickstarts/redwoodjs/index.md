@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:24.302Z"
 content_hash: "8e217222465c084bccab1ee667dacfb578285e23b4ca71e30082ae734d0ffb66"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","RedwoodJS","RedwoodJS"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","RedwoodJS","RedwoodJS"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/reactjs/index.md", "title": "Use Supabase with React"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/refine/index.md", "title": "Use Supabase with Refine"}
+nav_prev: {"path": "../reactjs/index.md", "title": "Use Supabase with React"}
+nav_next: {"path": "../refine/index.md", "title": "Use Supabase with Refine"}
 ---
 
 # 

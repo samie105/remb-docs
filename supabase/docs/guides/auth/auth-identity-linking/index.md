@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:46.850Z"
 content_hash: "98bb8aca2042651e3eb4bdbda63fa8aa8a865f3da9c0771967661a74181bbdc5"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Identity Linking","Identity Linking"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Identity Linking","Identity Linking"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/send-sms-hook/index.md", "title": "Send SMS Hook"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-mfa/index.md", "title": "Multi-Factor Authentication"}
+nav_prev: {"path": "../auth-hooks/send-sms-hook/index.md", "title": "Send SMS Hook"}
+nav_next: {"path": "../auth-mfa/index.md", "title": "Multi-Factor Authentication"}
 ---
 
 # 

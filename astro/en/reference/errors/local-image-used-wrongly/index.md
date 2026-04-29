@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:32.572Z"
 content_hash: "284905c11af7042ce020fffae82bc9389470a5fd01e4a36de3cf84ebdd6d93bc"
 menu_path: ["Local images must be imported."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/live-content-config-error/index.md", "title": "Error in live content config."}
-nav_next: {"path": "astro/en/reference/errors/locals-not-an-object/index.md", "title": "Value assigned to locals is not accepted."}
+nav_prev: {"path": "../live-content-config-error/index.md", "title": "Error in live content config."}
+nav_next: {"path": "../locals-not-an-object/index.md", "title": "Value assigned to locals is not accepted."}
 ---
 
 # Local images must be imported.

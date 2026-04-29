@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:57.828Z"
 content_hash: "fd7a7c9f2a2db962e715b901ad39fcab36d406e924637b53d088df6591596439"
 menu_path: ["UDP"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/networking/tcp/index.md", "title": "TCP"}
-nav_next: {"path": "bun/docs/runtime/node-api/index.md", "title": "Node-API"}
+nav_prev: {"path": "../tcp/index.md", "title": "TCP"}
+nav_next: {"path": "../../node-api/index.md", "title": "Node-API"}
 ---
 
 ## Bind a UDP socket (`Bun.udpSocket()`)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:15.631Z"
 content_hash: "7a991971e4f33e109e6e7661f0e00fc4fb2807afad1fc6b49c4c28cdbe248272"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Redis Lua API reference","→","Redis Lua API reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Redis Lua API reference","→","Redis Lua API reference"]
-nav_prev: {"path": "redis/docs/latest/develop/programmability/functions-intro/index.md", "title": "Redis functions"}
-nav_next: {"path": "redis/docs/latest/develop/programmability/lua-debugging/index.md", "title": "Debugging Lua scripts in Redis"}
+nav_prev: {"path": "../functions-intro/index.md", "title": "Redis functions"}
+nav_next: {"path": "../lua-debugging/index.md", "title": "Debugging Lua scripts in Redis"}
 ---
 
 # Redis Lua API reference

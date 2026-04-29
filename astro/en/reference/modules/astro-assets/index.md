@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:38.987Z"
 content_hash: "832f2b29406a984a4a10089b67588f43ce26572cd01f016c2f37f3e1bb933532"
 menu_path: ["Image and Assets API Reference"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/modules/astro-app/index.md", "title": "Adapter Server Entrypoint API Reference"}
-nav_next: {"path": "astro/en/reference/modules/astro-config/index.md", "title": "Config imports API Reference"}
+nav_prev: {"path": "../astro-app/index.md", "title": "Adapter Server Entrypoint API Reference"}
+nav_next: {"path": "../astro-config/index.md", "title": "Config imports API Reference"}
 ---
 
 # Image and Assets API Reference

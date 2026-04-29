@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:05.940Z"
 content_hash: "a81539225f1e0c47c194f9784ca057e2d4b95570b8c010c3a1ed1f93ae1b9885"
 menu_path: ["Could not process image metadata."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/no-client-only-hint/index.md", "title": "Missing hint on client:only directive."}
-nav_next: {"path": "astro/en/reference/errors/no-matching-import/index.md", "title": "No import found for component."}
+nav_prev: {"path": "../no-client-only-hint/index.md", "title": "Missing hint on client:only directive."}
+nav_next: {"path": "../no-matching-import/index.md", "title": "No import found for component."}
 ---
 
 # Could not process image metadata.

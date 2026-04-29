@@ -10,8 +10,8 @@ content_hash: "b75f6fa98d8f7796acde534120de079da8062858ed1cafc11296a72c469ab02d"
 menu_path: ["PostgreSQL: Documentation: 18: 19.1. Setting Parameters"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/color-which.html/index.md", "title": "PostgreSQL: Documentation: 18: N.2.\u00a0Configuring the Colors"}
-nav_next: {"path": "postgres/docs/current/connect-estab.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.2.\u00a0How Connections Are Established"}
+nav_prev: {"path": "../color-which.html/index.md", "title": "PostgreSQL: Documentation: 18: N.2.\u00a0Configuring the Colors"}
+nav_next: {"path": "../connect-estab.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.2.\u00a0How Connections Are Established"}
 ---
 
 ### 19.1.1. Parameter Names and Values [#](#CONFIG-SETTING-NAMES-VALUES)
@@ -54,7 +54,7 @@ The configuration file is reread whenever the main server process receives a SIG
 
 In addition to `postgresql.conf`, a PostgreSQL data directory contains a file `postgresql.auto.conf`, which has the same format as `postgresql.conf` but is intended to be edited automatically, not manually. This file holds settings provided through the [`ALTER SYSTEM`](https://www.postgresql.org/docs/current/sql-altersystem.html "ALTER SYSTEM") command. This file is read whenever `postgresql.conf` is, and its settings take effect in the same way. Settings in `postgresql.auto.conf` override those in `postgresql.conf`.
 
-External tools may also modify `postgresql.auto.conf`. It is not recommended to do this while the server is running unless [allow\_alter\_system](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-ALLOW-ALTER-SYSTEM) is set to `off`, since a concurrent `ALTER SYSTEM` command could overwrite such changes. Such tools might simply append new settings to the end, or they might choose to remove duplicate settings and/or comments (as `ALTER SYSTEM` will).
+External tools may also modify `postgresql.auto.conf`. It is not recommended to do this while the server is running unless [allow\_alter\_system](../runtime-config-compatible.html/index.md#GUC-ALLOW-ALTER-SYSTEM) is set to `off`, since a concurrent `ALTER SYSTEM` command could overwrite such changes. Such tools might simply append new settings to the end, or they might choose to remove duplicate settings and/or comments (as `ALTER SYSTEM` will).
 
 The system view [`pg_file_settings`](https://www.postgresql.org/docs/current/view-pg-file-settings.html "53.8. pg_file_settings") can be helpful for pre-testing changes to the configuration files, or for diagnosing problems if a SIGHUP signal did not have the desired effects.
 

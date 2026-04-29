@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:44.096Z"
 content_hash: "4b9c4e48ec8cf83e09d338e67e2978a46c64793ce20d4f9978f54cfa111e99f2"
 menu_path: ["Backend Integration ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/ssr/index.md", "title": "Server-Side Rendering (SSR) \u200b"}
-nav_next: {"path": "vite/guide/troubleshooting/index.md", "title": "Troubleshooting \u200b"}
+nav_prev: {"path": "../ssr/index.md", "title": "Server-Side Rendering (SSR) \u200b"}
+nav_next: {"path": "../troubleshooting/index.md", "title": "Troubleshooting \u200b"}
 ---
 
 Note
@@ -44,7 +44,7 @@ If you need a custom integration, you can follow the steps in this guide to conf
     })
     ```
     
-    If you haven't disabled the [module preload polyfill](vite/config/build-options/index.md#build-polyfillmodulepreload), you also need to import the polyfill in your entry
+    If you haven't disabled the [module preload polyfill](../../config/build-options/index.md#build-polyfillmodulepreload), you also need to import the polyfill in your entry
     
     js
     
@@ -66,7 +66,7 @@ If you need a custom integration, you can follow the steps in this guide to conf
     In order to properly serve assets, you have two options:
     
     *   Make sure the server is configured to proxy static assets requests to the Vite server
-    *   Set [`server.origin`](vite/config/server-options/index.md#server-origin) so that generated asset URLs will be resolved using the back-end server URL instead of a relative path
+    *   Set [`server.origin`](../../config/server-options/index.md#server-origin) so that generated asset URLs will be resolved using the back-end server URL instead of a relative path
     
     This is needed for assets such as images to load properly.
     
@@ -189,7 +189,7 @@ If you need a custom integration, you can follow the steps in this guide to conf
     *   **Dynamic entry chunks**: Generated from dynamic imports. These chunks have `isDynamicEntry: true` and their key is the relative src path from project root.
     *   **Non-entry chunks**: Their key is the base name of the generated file prefixed with `_`.
     *   **Asset chunks**: Generated from imported assets like images, fonts. Their key is the relative src path from project root.
-    *   **CSS files**: When [`build.cssCodeSplit`](vite/config/build-options/index.md#build-csscodesplit) is `false`, a single CSS file is generated with the key `style.css`. When `build.cssCodeSplit` is not `false`, the key is generated similar to JS chunks (i.e. entry chunks will not have `_` prefix and non-entry chunks will have `_` prefix).
+    *   **CSS files**: When [`build.cssCodeSplit`](../../config/build-options/index.md#build-csscodesplit) is `false`, a single CSS file is generated with the key `style.css`. When `build.cssCodeSplit` is not `false`, the key is generated similar to JS chunks (i.e. entry chunks will not have `_` prefix and non-entry chunks will have `_` prefix).
     
     JS chunks (chunks other than assets or CSS) will contain information on their static and dynamic imports (both are keys that map to the corresponding chunk in the manifest). Chunks also list their corresponding CSS and asset files if they have any.
     

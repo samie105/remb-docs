@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:10.640Z"
 content_hash: "dbba63b96f9870fcfbefb5b7478fa133d82f8a37d2e95bf2ed0dc0f5356ee95a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        RDI in Redis Insight","→","RDI in Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        RDI in Redis Insight","→","RDI in Redis Insight"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/insight-stream-consumer/index.md", "title": "Manage streams and consumer groups in Redis Insight"}
-nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/index.md", "title": "Redis Insight release notes"}
+nav_prev: {"path": "../insight-stream-consumer/index.md", "title": "Manage streams and consumer groups in Redis Insight"}
+nav_next: {"path": "../release-notes/index.md", "title": "Redis Insight release notes"}
 ---
 
 # RDI in Redis Insight

@@ -11,8 +11,8 @@ menu_path: ["Getting started with Prisma Migrate"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/index.md", "title": "Overview of Prisma Migrate"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md", "title": "Understanding Migrations"}
+nav_prev: {"path": "../index.md", "title": "Overview of Prisma Migrate"}
+nav_next: {"path": "../understanding-prisma-migrate/mental-model/index.md", "title": "Understanding Migrations"}
 ---
 
 Learn how to migrate your schema in a development environment using Prisma Migrate
@@ -119,7 +119,7 @@ migrations/
 
 ### [Committing to versions control](#committing-to-versions-control)
 
-Your migration history can be [committed to version control](prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories/index.md#committing-the-migration-history-to-source-control) and use to [deploy changes to test environments and production](prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md#production-and-testing-environments).
+Your migration history can be [committed to version control](../understanding-prisma-migrate/migration-histories/index.md#committing-the-migration-history-to-source-control) and use to [deploy changes to test environments and production](../workflows/development-and-production/index.md#production-and-testing-environments).
 
 It's possible to integrate Prisma migrations to an existing project.
 
@@ -142,7 +142,7 @@ To create a baseline migration:
 
 ### [Work around features not supported by Prisma Schema Language](#work-around-features-not-supported-by-prisma-schema-language)
 
-To include [unsupported database features](prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md) that already exist in the database, you must replace or modify the initial migration SQL:
+To include [unsupported database features](../workflows/unsupported-database-features/index.md) that already exist in the database, you must replace or modify the initial migration SQL:
 
 -   Open the `migration.sql` file generated in the [Create a baseline migration](#create-a-baseline-migration) section.
     
@@ -189,5 +189,5 @@ Commit the following to source control:
 -   The entire migration history folder
 -   The `schema.prisma` file
 
--   Refer to the [Deploying database changes with Prisma Migrate](prisma/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md) guide for more on deploying migrations to production.
--   Refer to the [Production Troubleshooting](prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md#fixing-failed-migrations-with-migrate-diff-and-db-execute) guide to learn how to debug and resolve failed migrations in production using `prisma migrate diff`, `prisma db execute` and/ or `prisma migrate resolve`.
+-   Refer to the [Deploying database changes with Prisma Migrate](../../prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md) guide for more on deploying migrations to production.
+-   Refer to the [Production Troubleshooting](../workflows/patching-and-hotfixing/index.md#fixing-failed-migrations-with-migrate-diff-and-db-execute) guide to learn how to debug and resolve failed migrations in production using `prisma migrate diff`, `prisma db execute` and/ or `prisma migrate resolve`.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:59.777Z"
 content_hash: "eb387c184f1ed2f3321215b585b8ca89031b1dc62cb1c440f4948956a25c59b2"
 menu_path: ["Auth","Auth","More","More","More","Sessions","Sessions","Implicit flow","Implicit flow"]
 section_path: ["Auth","Auth","More","More","More","Sessions","Sessions","Implicit flow","Implicit flow"]
-nav_prev: {"path": "supabase/docs/guides/auth/sessions/index.md", "title": "User sessions"}
-nav_next: {"path": "supabase/docs/guides/auth/sessions/pkce-flow/index.md", "title": "PKCE flow"}
+nav_prev: {"path": "../index.md", "title": "User sessions"}
+nav_next: {"path": "../pkce-flow/index.md", "title": "PKCE flow"}
 ---
 
 # 

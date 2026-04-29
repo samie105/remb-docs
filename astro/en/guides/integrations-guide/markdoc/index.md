@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:59.476Z"
 content_hash: "3616417ed6b47e21114fb2ff371ccaf0be973fa726f2effbc94e671cf842697a"
 menu_path: ["@astrojs/\n\t\t\t\t\tmarkdoc"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/db/index.md", "title": "@astrojs/\n\t\t\t\t\tdb"}
-nav_next: {"path": "astro/en/guides/integrations-guide/mdx/index.md", "title": "@astrojs/\n\t\t\t\t\tmdx"}
+nav_prev: {"path": "../db/index.md", "title": "@astrojs/\n\t\t\t\t\tdb"}
+nav_next: {"path": "../mdx/index.md", "title": "@astrojs/\n\t\t\t\t\tmdx"}
 ---
 
 # @astrojs/ markdoc

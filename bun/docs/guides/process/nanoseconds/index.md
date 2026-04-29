@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:47.939Z"
 content_hash: "de9528145e0b816cfe753169bfda424af4cb90e4841e9d4f74b7f2b49c0688d8"
 menu_path: ["Get the process uptime in nanoseconds"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/process/ipc/index.md", "title": "Spawn a child process and communicate using IPC"}
-nav_next: {"path": "bun/docs/guides/process/os-signals/index.md", "title": "Listen to OS signals"}
+nav_prev: {"path": "../ipc/index.md", "title": "Spawn a child process and communicate using IPC"}
+nav_next: {"path": "../os-signals/index.md", "title": "Listen to OS signals"}
 ---
 
 [Skip to main content](#content-area)

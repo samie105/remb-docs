@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:02.248Z"
 content_hash: "f73d165a753e1bedd495ff81ff37a1c4ac09a34da645fe11db28a20833d913ea"
 menu_path: ["Use a CMS with Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/zerops/index.md", "title": "Deploy your Astro Site to Zerops"}
-nav_next: {"path": "astro/en/guides/cms/apostrophecms/index.md", "title": "ApostropheCMS & Astro"}
+nav_prev: {"path": "../deploy/zerops/index.md", "title": "Deploy your Astro Site to Zerops"}
+nav_next: {"path": "apostrophecms/index.md", "title": "ApostropheCMS & Astro"}
 ---
 
 # Use a CMS with Astro

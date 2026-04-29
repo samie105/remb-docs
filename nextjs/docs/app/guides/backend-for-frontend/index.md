@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/authentication/index.md", "title": "How to implement authentication in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/caching-without-cache-components/index.md", "title": "Caching and Revalidating (Previous Model)"}
+nav_prev: {"path": "../authentication/index.md", "title": "How to implement authentication in Next.js"}
+nav_next: {"path": "../caching-without-cache-components/index.md", "title": "Caching and Revalidating (Previous Model)"}
 ---
 
 # How to use Next.js as a backend for your frontend

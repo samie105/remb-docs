@@ -10,8 +10,8 @@ content_hash: "b0c165d9f58e1933d4a8d166bdad949395616d7e075241505fc94f8d35075d89"
 menu_path: ["Node and npm Compatibility"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/fundamentals/typescript/index.md", "title": "TypeScript support"}
-nav_next: {"path": "deno/runtime/fundamentals/security/index.md", "title": "Security and permissions"}
+nav_prev: {"path": "../typescript/index.md", "title": "TypeScript support"}
+nav_next: {"path": "../security/index.md", "title": "Security and permissions"}
 ---
 
 # npx allows remote execution of a package from npm or a URL

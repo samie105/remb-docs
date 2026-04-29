@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:29.163Z"
 content_hash: "894efc62a5f838242e58f855663979cd3d2980d164090386f1e40b75fdc7cbbc"
 menu_path: ["Runtime errors"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/compiler-warnings/index.md", "title": "Compiler warnings"}
-nav_next: {"path": "svelte/docs/svelte/runtime-warnings/index.md", "title": "Runtime warnings"}
+nav_prev: {"path": "../compiler-warnings/index.md", "title": "Compiler warnings"}
+nav_next: {"path": "../runtime-warnings/index.md", "title": "Runtime warnings"}
 ---
 
 ## Client errors[](#Client-errors)
@@ -333,9 +333,9 @@ If side-effects are unavoidable, use [`$effect`]($effect) instead.
 A `<svelte:boundary>` `reset` function cannot be called while an error is still being handled
 ```
 
-If a [`<svelte:boundary>`](svelte/docs/svelte/svelte-boundary/index.md) has an `onerror` function, it must not call the provided `reset` function synchronously since the boundary is still in a broken state. Typically, `reset()` is called later, once the error has been resolved.
+If a [`<svelte:boundary>`](../svelte-boundary/index.md) has an `onerror` function, it must not call the provided `reset` function synchronously since the boundary is still in a broken state. Typically, `reset()` is called later, once the error has been resolved.
 
-If it's possible to resolve the error inside the `onerror` callback, you must at least wait for the boundary to settle before calling `reset()`, for example using [`tick`](svelte/docs/svelte/lifecycle-hooks/index.md#tick):
+If it's possible to resolve the error inside the `onerror` callback, you must at least wait for the boundary to settle before calling `reset()`, for example using [`tick`](../lifecycle-hooks/index.md#tick):
 
 ```
 <svelte:boundary onerror={async (error, reset) => {

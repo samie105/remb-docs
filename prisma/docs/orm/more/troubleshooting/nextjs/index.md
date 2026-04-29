@@ -10,8 +10,8 @@ content_hash: "ce1cb6d89fe38bd54c932dc4c6813a6bcddbd9e8e25b9551e9f1110338d5ed3a"
 menu_path: ["Next.js"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/many-to-many-relations/index.md", "title": "Many-to-many relations"}
-nav_next: {"path": "prisma/docs/orm/more/troubleshooting/nuxt/index.md", "title": "Nuxt"}
+nav_prev: {"path": "../many-to-many-relations/index.md", "title": "Many-to-many relations"}
+nav_next: {"path": "../nuxt/index.md", "title": "Nuxt"}
 ---
 
 Best practices and troubleshooting for using Prisma ORM with Next.js applications
@@ -56,7 +56,7 @@ Monorepos allow multiple projects to share code and dependencies, making them a 
 
 -   **Centralize the Prisma Schema**: Place the `schema.prisma` file in a shared package, such as `@myorg/db`, to ensure consistency.
     
--   **Use a custom output directory for generated client**: Define a [custom output directory](prisma/docs/orm/reference/prisma-schema-reference/index.md#fields-for-prisma-client-provider) for the generated Prisma Client to maintain consistency across packages.
+-   **Use a custom output directory for generated client**: Define a [custom output directory](../../../reference/prisma-schema-reference/index.md#fields-for-prisma-client-provider) for the generated Prisma Client to maintain consistency across packages.
     
 -   **Install dependencies in the root**: To prevent version conflicts, install Prisma ORM at the root of the monorepo.
     

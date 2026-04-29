@@ -10,17 +10,17 @@ content_hash: "2b18d4dd11c489214a4762a1023917921679687b71220463ddbc45650105a600"
 menu_path: ["Drizzle <> PlanetScale MySQL"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/connect-effect-postgres/index.md", "title": "Drizzle <> Effect Postgres"}
-nav_next: {"path": "drizzle/docs/connect-tidb/index.md", "title": "Drizzle <> TiDB Serverless"}
+nav_prev: {"path": "../connect-effect-postgres/index.md", "title": "Drizzle <> Effect Postgres"}
+nav_next: {"path": "../connect-tidb/index.md", "title": "Drizzle <> TiDB Serverless"}
 ---
 
 PlanetScale offers both MySQL (Vitess) and PostgreSQL databases. This page covers connecting to PlanetScale MySQL.
 
-For PlanetScale Postgres, see the [PlanetScale Postgres connection guide](drizzle/docs/connect-planetscale-postgres/index.md).
+For PlanetScale Postgres, see the [PlanetScale Postgres connection guide](../connect-planetscale-postgres/index.md).
 
 With Drizzle ORM you can access PlanetScale MySQL over http through their official **[`database-js`](https://github.com/planetscale/database-js)** driver from serverless and serverfull environments with our `drizzle-orm/planetscale-serverless` package.
 
-You can also access PlanetScale MySQL through TCP with `mysql2` driver — **[see here.](drizzle/docs/get-started-mysql/index.md)**
+You can also access PlanetScale MySQL through TCP with `mysql2` driver — **[see here.](../get-started-mysql/index.md)**
 
 #### Step 1 - Install packages[](#step-1---install-packages)
 

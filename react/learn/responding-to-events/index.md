@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:26.991Z"
 content_hash: "5c48b5a0d734da89c40c5f62c45f7716345b133fe3c2ca0ad1cadc4448c83aa5"
 menu_path: ["Responding to Events"]
 section_path: []
-nav_prev: {"path": "react/learn/adding-interactivity/index.md", "title": "Adding Interactivity"}
-nav_next: {"path": "react/learn/state-a-components-memory/index.md", "title": "State: A Component's Memory"}
+nav_prev: {"path": "../adding-interactivity/index.md", "title": "Adding Interactivity"}
+nav_next: {"path": "../state-a-components-memory/index.md", "title": "State: A Component's Memory"}
 ---
 
 React lets you add _event handlers_ to your JSX. Event handlers are your own functions that will be triggered in response to interactions like clicking, hovering, focusing form inputs, and so on.
@@ -23,7 +23,7 @@ React lets you add _event handlers_ to your JSX. Event handlers are your own fun
 
 ## Adding event handlers[](#adding-event-handlers "Link for Adding event handlers ")
 
-To add an event handler, you will first define a function and then [pass it as a prop](react/learn/passing-props-to-a-component/index.md) to the appropriate JSX tag. For example, here is a button that doesn’t do anything yet:
+To add an event handler, you will first define a function and then [pass it as a prop](../passing-props-to-a-component/index.md) to the appropriate JSX tag. For example, here is a button that doesn’t do anything yet:
 
 You can make it show a message when a user clicks by following these three steps:
 
@@ -31,7 +31,7 @@ You can make it show a message when a user clicks by following these three steps
 2.  Implement the logic inside that function (use `alert` to show the message).
 3.  Add `onClick={handleClick}` to the `<button>` JSX.
 
-You defined the `handleClick` function and then [passed it as a prop](react/learn/passing-props-to-a-component/index.md) to `<button>`. `handleClick` is an **event handler.** Event handler functions:
+You defined the `handleClick` function and then [passed it as a prop](../passing-props-to-a-component/index.md) to `<button>`. `handleClick` is an **event handler.** Event handler functions:
 
 *   Are usually defined _inside_ your components.
 *   Have names that start with `handle`, followed by the name of the event.
@@ -66,7 +66,7 @@ calling a function (incorrect)
 
 The difference is subtle. In the first example, the `handleClick` function is passed as an `onClick` event handler. This tells React to remember it and only call your function when the user clicks the button.
 
-In the second example, the `()` at the end of `handleClick()` fires the function _immediately_ during [rendering](react/learn/render-and-commit/index.md), without any clicks. This is because JavaScript inside the [JSX `{` and `}`](react/learn/javascript-in-jsx-with-curly-braces/index.md) executes right away.
+In the second example, the `()` at the end of `handleClick()` fires the function _immediately_ during [rendering](../render-and-commit/index.md), without any clicks. This is because JavaScript inside the [JSX `{` and `}`](../javascript-in-jsx-with-curly-braces/index.md) executes right away.
 
 When you write code inline, the same pitfall presents itself in a different way:
 
@@ -212,7 +212,7 @@ Don’t confuse `e.stopPropagation()` and `e.preventDefault()`. They are both us
 
 Absolutely! Event handlers are the best place for side effects.
 
-Unlike rendering functions, event handlers don’t need to be [pure](react/learn/keeping-components-pure/index.md), so it’s a great place to _change_ something—for example, change an input’s value in response to typing, or change a list in response to a button press. However, in order to change some information, you first need some way to store it. In React, this is done by using [state, a component’s memory.](react/learn/state-a-components-memory/index.md) You will learn all about it on the next page.
+Unlike rendering functions, event handlers don’t need to be [pure](../keeping-components-pure/index.md), so it’s a great place to _change_ something—for example, change an input’s value in response to typing, or change a list in response to a button press. However, in order to change some information, you first need some way to store it. In React, this is done by using [state, a component’s memory.](../state-a-components-memory/index.md) You will learn all about it on the next page.
 
 ## Recap[](#recap "Link for Recap")
 

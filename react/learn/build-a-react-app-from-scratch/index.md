@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:07.203Z"
 content_hash: "adaff0cb50d0902021420004cedb734f284e0e8c85602782ee622b83a2bae716"
 menu_path: ["Build a React app from Scratch"]
 section_path: []
-nav_prev: {"path": "react/learn/creating-a-react-app/index.md", "title": "Creating a React App"}
-nav_next: {"path": "react/learn/add-react-to-an-existing-project/index.md", "title": "Add React to an Existing Project"}
+nav_prev: {"path": "../creating-a-react-app/index.md", "title": "Creating a React App"}
+nav_next: {"path": "../add-react-to-an-existing-project/index.md", "title": "Add React to an Existing Project"}
 ---
 
 If your app has constraints not well-served by existing frameworks, you prefer to build your own framework, or you just want to learn the basics of a React app, you can build a React app from scratch.
@@ -27,7 +27,7 @@ Our recommended frameworks also help you build better performing apps. For examp
 
 Going this route also makes it more difficult to get support, since the way you develop routing, data-fetching, and other features will be unique to your situation. You should only choose this option if you are comfortable tackling these problems on your own, or if you’re confident that you will never need these features.
 
-For a list of recommended frameworks, check out [Creating a React App](react/learn/creating-a-react-app/index.md).
+For a list of recommended frameworks, check out [Creating a React App](../creating-a-react-app/index.md).
 
 ## Step 1: Install a build tool[](#step-1-install-a-build-tool "Link for Step 1: Install a build tool ")
 
@@ -45,7 +45,7 @@ npm create vite@latest my-app -- --template react-ts
 
 Vite is opinionated and comes with sensible defaults out of the box. Vite has a rich ecosystem of plugins to support fast refresh, JSX, Babel/SWC, and other common features. See Vite’s [React plugin](https://vite.dev/plugins/#vitejs-plugin-react) or [React SWC plugin](https://vite.dev/plugins/#vitejs-plugin-react-swc) and [React SSR example project](https://vite.dev/guide/ssr.html#example-projects) to get started.
 
-Vite is already being used as a build tool in one of our [recommended frameworks](react/learn/creating-a-react-app/index.md): [React Router](https://reactrouter.com/start/framework/installation).
+Vite is already being used as a build tool in one of our [recommended frameworks](../creating-a-react-app/index.md): [React Router](https://reactrouter.com/start/framework/installation).
 
 ### Parcel[](#parcel "Link for Parcel ")
 
@@ -148,4 +148,4 @@ Using the right rendering strategy for the right routes can decrease the time it
 
 These are just a few examples of the features a new app will need to consider when building from scratch. Many limitations you’ll hit can be difficult to solve as each problem is interconnected with the others and can require deep expertise in problem areas you may not be familiar with.
 
-If you don’t want to solve these problems on your own, you can [get started with a framework](react/learn/creating-a-react-app/index.md) that provides these features out of the box.
+If you don’t want to solve these problems on your own, you can [get started with a framework](../creating-a-react-app/index.md) that provides these features out of the box.

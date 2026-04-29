@@ -10,8 +10,8 @@ content_hash: "6e9e111f1bd0ab2b58026ec4d72aebadc2f572a2b7ae44262b08003eb19e5b47"
 menu_path: ["PostgreSQL: Documentation: 18: 53.7. pg_cursors"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
-nav_next: {"path": "postgres/docs/current/view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
+nav_prev: {"path": "../view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
+nav_next: {"path": "../view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-cursors.html "PostgreSQL devel - 53.7. pg_cursors")

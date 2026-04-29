@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:02.668Z"
 content_hash: "a9825b31c926e5a0e4bb05e7174a1dea55512ac451a57190e1be74a1325715b1"
 menu_path: ["Ecosystem"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Detecting-When-Clients-Abort/index.md", "title": "Detecting When Clients Abort"}
-nav_next: {"path": "fastify/docs/latest/Guides/Fluent-Schema/index.md", "title": "Fluent-Schema"}
+nav_prev: {"path": "../Detecting-When-Clients-Abort/index.md", "title": "Detecting When Clients Abort"}
+nav_next: {"path": "../Fluent-Schema/index.md", "title": "Fluent-Schema"}
 ---
 
 Version: latest (v5.8.x)
@@ -74,8 +74,8 @@ Plugins maintained by the Fastify team are listed under [Core](#core) while plug
 *   [`@fastify/swagger`](https://github.com/fastify/fastify-swagger) Plugin for serving Swagger/OpenAPI documentation for Fastify, supporting dynamic generation.
 *   [`@fastify/swagger-ui`](https://github.com/fastify/fastify-swagger-ui) Plugin for serving Swagger UI.
 *   [`@fastify/throttle`](https://github.com/fastify/fastify-throttle) Plugin for throttling the download speed of a request.
-*   [`@fastify/type-provider-json-schema-to-ts`](https://github.com/fastify/fastify-type-provider-json-schema-to-ts) Fastify [type provider](fastify/docs/latest/Reference/Type-Providers/index.md) for [json-schema-to-ts](https://github.com/ThomasAribart/json-schema-to-ts).
-*   [`@fastify/type-provider-typebox`](https://github.com/fastify/fastify-type-provider-typebox) Fastify [type provider](fastify/docs/latest/Reference/Type-Providers/index.md) for [Typebox](https://github.com/sinclairzx81/typebox).
+*   [`@fastify/type-provider-json-schema-to-ts`](https://github.com/fastify/fastify-type-provider-json-schema-to-ts) Fastify [type provider](../../Reference/Type-Providers/index.md) for [json-schema-to-ts](https://github.com/ThomasAribart/json-schema-to-ts).
+*   [`@fastify/type-provider-typebox`](https://github.com/fastify/fastify-type-provider-typebox) Fastify [type provider](../../Reference/Type-Providers/index.md) for [Typebox](https://github.com/sinclairzx81/typebox).
 *   [`@fastify/under-pressure`](https://github.com/fastify/under-pressure) Measure process load with automatic handling of _"Service Unavailable"_ plugin for Fastify.
 *   [`@fastify/url-data`](https://github.com/fastify/fastify-url-data) Decorate the `Request` object with a method to access raw URL components.
 *   [`@fastify/view`](https://github.com/fastify/point-of-view) Templates rendering (_ejs, pug, handlebars, marko_) plugin support for Fastify.
@@ -493,9 +493,9 @@ Plugins maintained by the Fastify team are listed under [Core](#core) while plug
     
 *   [`fastify-totp`](https://github.com/beliven-it/fastify-totp) A plugin to handle TOTP (e.g. for 2FA).
     
-*   [`fastify-type-provider-effect-schema`](https://github.com/daotl/fastify-type-provider-effect-schema) Fastify [type provider](fastify/docs/latest/Reference/Type-Providers/index.md) for [@effect/schema](https://github.com/Effect-TS/effect).
+*   [`fastify-type-provider-effect-schema`](https://github.com/daotl/fastify-type-provider-effect-schema) Fastify [type provider](../../Reference/Type-Providers/index.md) for [@effect/schema](https://github.com/Effect-TS/effect).
     
-*   [`fastify-type-provider-zod`](https://github.com/turkerdev/fastify-type-provider-zod) Fastify [type provider](fastify/docs/latest/Reference/Type-Providers/index.md) for [zod](https://github.com/colinhacks/zod).
+*   [`fastify-type-provider-zod`](https://github.com/turkerdev/fastify-type-provider-zod) Fastify [type provider](../../Reference/Type-Providers/index.md) for [zod](https://github.com/colinhacks/zod).
     
 *   [`fastify-typeorm-plugin`](https://github.com/inthepocket/fastify-typeorm-plugin) Fastify plugin to work with TypeORM.
     

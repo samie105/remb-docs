@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:58.463Z"
 content_hash: "6ddd60fc69e868e64a147ef9f4f3fe689b30b1edb539ea45acc95b07eff5508e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/langcache/create-service/index.md", "title": "Create a LangCache service"}
-nav_next: {"path": "redis/docs/latest/operate/rc/security/access-control/access-management/index.md", "title": "Access management"}
+nav_prev: {"path": "../../langcache/create-service/index.md", "title": "Create a LangCache service"}
+nav_next: {"path": "access-management/index.md", "title": "Access management"}
 ---
 
 # Access control

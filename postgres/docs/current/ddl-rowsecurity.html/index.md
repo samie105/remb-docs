@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:55.899Z"
 content_hash: "1908b90d8c806ddebc705390cada11a824b59f89780b743bb758d529239846b0"
 menu_path: ["PostgreSQL: Documentation: 18: 5.9. Row Security Policies"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
-nav_next: {"path": "postgres/docs/current/ddl-schemas.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.10.\u00a0Schemas"}
+nav_prev: {"path": "../ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
+nav_next: {"path": "../ddl-schemas.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.10.\u00a0Schemas"}
 ---
 
 In addition to the SQL-standard [privilege system](https://www.postgresql.org/docs/current/ddl-priv.html "5.8. Privileges") available through [GRANT](https://www.postgresql.org/docs/current/sql-grant.html "GRANT"), tables can have _row security policies_ that restrict, on a per-user basis, which rows can be returned by normal queries or inserted, updated, or deleted by data modification commands. This feature is also known as _Row-Level Security_. By default, tables do not have any policies, so that if a user has access privileges to a table according to the SQL privilege system, all rows within it are equally available for querying or updating.
@@ -188,7 +188,7 @@ UPDATE 0
 
 Referential integrity checks, such as unique or primary key constraints and foreign key references, always bypass row security to ensure that data integrity is maintained. Care must be taken when developing schemas and row level policies to avoid “covert channel” leaks of information through such referential integrity checks.
 
-In some contexts it is important to be sure that row security is not being applied. For example, when taking a backup, it could be disastrous if row security silently caused some rows to be omitted from the backup. In such a situation, you can set the [row\_security](postgres/docs/current/runtime-config-client.html/index.md#GUC-ROW-SECURITY) configuration parameter to `off`. This does not in itself bypass row security; what it does is throw an error if any query's results would get filtered by a policy. The reason for the error can then be investigated and fixed.
+In some contexts it is important to be sure that row security is not being applied. For example, when taking a backup, it could be disastrous if row security silently caused some rows to be omitted from the backup. In such a situation, you can set the [row\_security](../runtime-config-client.html/index.md#GUC-ROW-SECURITY) configuration parameter to `off`. This does not in itself bypass row security; what it does is throw an error if any query's results would get filtered by a policy. The reason for the error can then be investigated and fixed.
 
 In the examples above, the policy expressions consider only the current values in the row to be accessed or updated. This is the simplest and best-performing case; when possible, it's best to design row security applications to work this way. If it is necessary to consult other rows or other tables to make a policy decision, that can be accomplished using sub-`SELECT`s, or functions that contain `SELECT`s, in the policy expressions. Be aware however that such accesses can create race conditions that could allow information leakage if care is not taken. As an example, consider the following table design:
 

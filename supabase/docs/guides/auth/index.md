@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:59.201Z"
 content_hash: "320556ef65810d04102c53fc4aaa305e1e175ba0c6ceefb14785159f500c36a5"
 menu_path: ["Auth","Auth","Overview","Overview"]
 section_path: ["Auth","Auth","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/api/using-custom-schemas/index.md", "title": "Using Custom Schemas"}
-nav_next: {"path": "supabase/docs/guides/auth/architecture/index.md", "title": "Auth architecture"}
+nav_prev: {"path": "../api/using-custom-schemas/index.md", "title": "Using Custom Schemas"}
+nav_next: {"path": "architecture/index.md", "title": "Auth architecture"}
 ---
 
 # 

@@ -11,11 +11,11 @@ menu_path: ["Working with Json fields"]
 section_path: []
 tab_variants: ["PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
+nav_prev: {"path": "../working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
+nav_next: {"path": "../working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
 ---
 
-Use the [`Json`](prisma/docs/orm/reference/prisma-schema-reference/index.md#json) Prisma ORM field type to read, write, and perform basic filtering on JSON types in the underlying database. In the following example, the `User` model has an optional `Json` field named `extendedPetsData`:
+Use the [`Json`](../../../reference/prisma-schema-reference/index.md#json) Prisma ORM field type to read, write, and perform basic filtering on JSON types in the underlying database. In the following example, the `User` model has an optional `Json` field named `extendedPetsData`:
 
 ```
 model User {
@@ -129,14 +129,14 @@ const getUsers = await prisma.user.findMany({
 });
 ```
 
-You can also filter rows by the data inside a `Json` field. We call this **advanced `Json` filtering**. This functionality is supported by [PostgreSQL](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md) and [MySQL](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md) only with [different syntaxes for the `path` option](#path-syntax-depending-on-database).
+You can also filter rows by the data inside a `Json` field. We call this **advanced `Json` filtering**. This functionality is supported by [PostgreSQL](../../../core-concepts/supported-databases/postgresql/index.md) and [MySQL](../../../core-concepts/supported-databases/mysql/index.md) only with [different syntaxes for the `path` option](#path-syntax-depending-on-database).
 
 ### [`path` syntax depending on database](#path-syntax-depending-on-database)
 
 The filters below use a `path` option to select specific parts of the `Json` value to filter on. The implementation of that filtering differs between connectors:
 
--   The [MySQL connector](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md) uses [MySQL's implementation of JSON path](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-path-syntax)
--   The [PostgreSQL connector](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md) uses the custom JSON functions and operators [supported in version 12 _and earlier_](https://www.postgresql.org/docs/11/functions-json.html)
+-   The [MySQL connector](../../../core-concepts/supported-databases/mysql/index.md) uses [MySQL's implementation of JSON path](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-path-syntax)
+-   The [PostgreSQL connector](../../../core-concepts/supported-databases/postgresql/index.md) uses the custom JSON functions and operators [supported in version 12 _and earlier_](https://www.postgresql.org/docs/11/functions-json.html)
 
 For example, the following is a valid MySQL `path` value:
 
@@ -167,11 +167,11 @@ The following query returns all users where the value of `petType` _contains_ `"
 
 The following string filters are available:
 
--   [`string_contains`](prisma/docs/orm/reference/prisma-client-reference/index.md#string_contains)
--   [`string_starts_with`](prisma/docs/orm/reference/prisma-client-reference/index.md#string_starts_with)
--   [`string_ends_with`](prisma/docs/orm/reference/prisma-client-reference/index.md#string_ends_with) .
+-   [`string_contains`](../../../reference/prisma-client-reference/index.md#string_contains)
+-   [`string_starts_with`](../../../reference/prisma-client-reference/index.md#string_starts_with)
+-   [`string_ends_with`](../../../reference/prisma-client-reference/index.md#string_ends_with) .
 
-To use case insensitive filter with these, you can use the [`mode`](prisma/docs/orm/reference/prisma-client-reference/index.md#mode) option:
+To use case insensitive filter with these, you can use the [`mode`](../../../reference/prisma-client-reference/index.md#mode) option:
 
 ### [Filter on nested object property](#filter-on-nested-object-property)
 
@@ -213,9 +213,9 @@ The following query returns all users with a pet named `"Claudine"`:
 
 The following array filters are available:
 
--   [`array_contains`](prisma/docs/orm/reference/prisma-client-reference/index.md#array_contains)
--   [`array_starts_with`](prisma/docs/orm/reference/prisma-client-reference/index.md#array_starts_with)
--   [`array_ends_with`](prisma/docs/orm/reference/prisma-client-reference/index.md#array_ends_with)
+-   [`array_contains`](../../../reference/prisma-client-reference/index.md#array_contains)
+-   [`array_starts_with`](../../../reference/prisma-client-reference/index.md#array_starts_with)
+-   [`array_ends_with`](../../../reference/prisma-client-reference/index.md#array_ends_with)
 
 ### [Filtering on nested array value](#filtering-on-nested-array-value)
 
@@ -451,7 +451,7 @@ Prisma's `Json` fields are untyped by default. To add strong typing, you can use
     }
     ```
     
-2.  Next, link a field to a TypeScript type using an [AST comment](prisma/docs/orm/prisma-schema/overview/index.md#comments).
+2.  Next, link a field to a TypeScript type using an [AST comment](../../../prisma-schema/overview/index.md#comments).
     
     schema.prisma
     

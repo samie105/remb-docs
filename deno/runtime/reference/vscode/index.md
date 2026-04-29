@@ -10,8 +10,8 @@ content_hash: "003bfae6c7f73cfdd9c7d91d955ed44e51d23602c8ca3990e913f5498c9b8cc4"
 menu_path: ["Deno & Visual Studio Code"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/env_variables/index.md", "title": "Environment variables"}
-nav_next: {"path": "deno/runtime/reference/jsx/index.md", "title": "JSX"}
+nav_prev: {"path": "../env_variables/index.md", "title": "Environment variables"}
+nav_next: {"path": "../jsx/index.md", "title": "JSX"}
 ---
 
 **On this page**

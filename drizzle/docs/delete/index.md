@@ -10,8 +10,8 @@ content_hash: "9b371913a4ae2c985ea07326f8e500054e183d1c5c4e69567dfc3f7d6da9527a"
 menu_path: ["SQL Delete"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/update/index.md", "title": "SQL Update"}
-nav_next: {"path": "drizzle/docs/operators/index.md", "title": "Filter and conditional operators"}
+nav_prev: {"path": "../update/index.md", "title": "SQL Update"}
+nav_next: {"path": "../operators/index.md", "title": "Filter and conditional operators"}
 ---
 
 ## SQL Delete

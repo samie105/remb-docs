@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:38.964Z"
 content_hash: "9344cd9bba71a44460873e2c6440c42483921edc49187d4aa1b7122efcd75ef0"
 menu_path: ["Features ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/why/index.md", "title": "Why Vite \u200b"}
-nav_next: {"path": "vite/guide/cli/index.md", "title": "Command Line Interface \u200b"}
+nav_prev: {"path": "../why/index.md", "title": "Why Vite \u200b"}
+nav_next: {"path": "../cli/index.md", "title": "Command Line Interface \u200b"}
 ---
 
 # .scss and .sass
@@ -50,9 +50,9 @@ Default and named imports from CSS files (e.g `import style from './foo.css'`) a
 
 Vite uses [Lightning CSS](https://lightningcss.dev/) to minify CSS in production builds by default. However, PostCSS is still used for other CSS processing.
 
-There is experimental support for using Lightning CSS for CSS processing entirely. You can opt into it by adding [`css.transformer: 'lightningcss'`](vite/config/shared-options/index.md#css-transformer).
+There is experimental support for using Lightning CSS for CSS processing entirely. You can opt into it by adding [`css.transformer: 'lightningcss'`](../../config/shared-options/index.md#css-transformer).
 
-To configure it, you can pass Lightning CSS options to the [`css.lightningcss`](vite/config/shared-options/index.md#css-lightningcss) config option. To configure CSS Modules, you should use [`css.lightningcss.cssModules`](https://lightningcss.dev/css-modules.html) instead of [`css.modules`](vite/config/shared-options/index.md#css-modules) (which configures the way PostCSS handles CSS modules).
+To configure it, you can pass Lightning CSS options to the [`css.lightningcss`](../../config/shared-options/index.md#css-lightningcss) config option. To configure CSS Modules, you should use [`css.lightningcss.cssModules`](https://lightningcss.dev/css-modules.html) instead of [`css.modules`](../../config/shared-options/index.md#css-modules) (which configures the way PostCSS handles CSS modules).
 
 ## Static Assets [​](#static-assets)
 
@@ -95,7 +95,7 @@ js
 import InlineWorker from './worker.js?worker&inline'
 ```
 
-More details in [Static Asset Handling](vite/guide/assets/index.md).
+More details in [Static Asset Handling](../assets/index.md).
 
 ## JSON [​](#json)
 
@@ -263,7 +263,7 @@ const modules = {
 
 #### Custom Queries [​](#custom-queries)
 
-You can also use the `query` option to provide queries to imports, for example, to import assets [as a string](vite/guide/assets/index.md#importing-asset-as-string) or [as a url](vite/guide/assets/index.md#importing-asset-as-url):
+You can also use the `query` option to provide queries to imports, for example, to import assets [as a string](../assets/index.md#importing-asset-as-string) or [as a url](../assets/index.md#importing-asset-as-url):
 
 ts
 
@@ -335,7 +335,7 @@ All the resulting module keys are modified to be relative to the base if provide
 Note that:
 
 *   This is a Vite-only feature and is not a web or ES standard.
-*   The glob patterns are treated like import specifiers: they must be either relative (start with `./`) or absolute (start with `/`, resolved relative to project root) or an alias path (see [`resolve.alias` option](vite/config/shared-options/index.md#resolve-alias)).
+*   The glob patterns are treated like import specifiers: they must be either relative (start with `./`) or absolute (start with `/`, resolved relative to project root) or an alias path (see [`resolve.alias` option](../../config/shared-options/index.md#resolve-alias)).
 *   The glob matching is done via [`tinyglobby`](https://github.com/SuperchupuDev/tinyglobby) - check out its documentation for [supported glob patterns](https://superchupu.dev/tinyglobby/comparison).
 *   You should also be aware that all the arguments in the `import.meta.glob` must be **passed as literals**. You can NOT use variables or expressions in them.
 
@@ -389,7 +389,7 @@ init({
 })
 ```
 
-In the production build, `.wasm` files smaller than `assetInlineLimit` will be inlined as base64 strings. Otherwise, they will be treated as a [static asset](vite/guide/assets/index.md) and fetched on-demand.
+In the production build, `.wasm` files smaller than `assetInlineLimit` will be inlined as base64 strings. Otherwise, they will be treated as a [static asset](../assets/index.md) and fetched on-demand.
 
 For SSR build, Node.js compatible runtimes are only supported
 
@@ -397,7 +397,7 @@ Due to the lack of a universal way to load a file, the internal implementation f
 
 ### Accessing the WebAssembly Module [​](#accessing-the-webassembly-module)
 
-If you need access to the `Module` object, e.g. to instantiate it multiple times, use an [explicit URL import](vite/guide/assets/index.md#explicit-url-imports) to resolve the asset, and then perform the instantiation:
+If you need access to the `Module` object, e.g. to instantiate it multiple times, use an [explicit URL import](../assets/index.md#explicit-url-imports) to resolve the asset, and then perform the instantiation:
 
 js
 
@@ -468,7 +468,7 @@ js
 import MyWorker from './worker?worker&url'
 ```
 
-See [Worker Options](vite/config/worker-options/index.md) for details on configuring the bundling of all workers.
+See [Worker Options](../../config/worker-options/index.md) for details on configuring the bundling of all workers.
 
 ## Content Security Policy (CSP) [​](#content-security-policy-csp)
 
@@ -476,7 +476,7 @@ To deploy CSP, certain directives or configs must be set due to Vite's internals
 
 ### [`'nonce-{RANDOM}'`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/Sources#nonce-base64-value) [​](#nonce-random)
 
-When [`html.cspNonce`](vite/config/shared-options/index.md#html-cspnonce) is set, Vite adds a nonce attribute with the specified value to any `<script>` and `<style>` tags, as well as `<link>` tags for stylesheets and module preloading. Additionally, when this option is set, Vite will inject a meta tag (`<meta property="csp-nonce" nonce="PLACEHOLDER" />`).
+When [`html.cspNonce`](../../config/shared-options/index.md#html-cspnonce) is set, Vite adds a nonce attribute with the specified value to any `<script>` and `<style>` tags, as well as `<link>` tags for stylesheets and module preloading. Additionally, when this option is set, Vite will inject a meta tag (`<meta property="csp-nonce" nonce="PLACEHOLDER" />`).
 
 The nonce value of a meta tag with `property="csp-nonce"` will be used by Vite whenever necessary during both dev and after build.
 
@@ -486,7 +486,7 @@ Ensure that you replace the placeholder with a unique value for each request. Th
 
 ### [`data:`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/Sources#scheme-source:~:text=schemes%20\(not%20recommended\).-,data%3A,-Allows%20data%3A) [​](#data)
 
-By default, during build, Vite inlines small assets as data URIs. Allowing `data:` for related directives (e.g. [`img-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/img-src), [`font-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src)), or, disabling it by setting [`build.assetsInlineLimit: 0`](vite/config/build-options/index.md#build-assetsinlinelimit) is necessary.
+By default, during build, Vite inlines small assets as data URIs. Allowing `data:` for related directives (e.g. [`img-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/img-src), [`font-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src)), or, disabling it by setting [`build.assetsInlineLimit: 0`](../../config/build-options/index.md#build-assetsinlinelimit) is necessary.
 
 WARNING
 
@@ -494,7 +494,7 @@ Do not allow `data:` for [`script-src`](https://developer.mozilla.org/en-US/docs
 
 ## License [​](#license)
 
-Vite can generate a file of all the dependencies' licenses used in the build with the [`build.license`](vite/config/build-options/index.md#build-license) option. It can be hosted to display and acknowledge the dependencies used by the app.
+Vite can generate a file of all the dependencies' licenses used in the build with the [`build.license`](../../config/build-options/index.md#build-license) option. It can be hosted to display and acknowledge the dependencies used by the app.
 
 vite.config.js
 
@@ -532,7 +532,7 @@ MIT License
 ...
 ```
 
-To serve the file at a different path, you can pass `{ fileName: 'license.md' }` for example, so that it's served at `https://example.com/license.md`. See the [`build.license`](vite/config/build-options/index.md#build-license) docs for more information.
+To serve the file at a different path, you can pass `{ fileName: 'license.md' }` for example, so that it's served at `https://example.com/license.md`. See the [`build.license`](../../config/build-options/index.md#build-license) docs for more information.
 
 ## Build Optimizations [​](#build-optimizations)
 
@@ -542,7 +542,7 @@ To serve the file at a different path, you can pass `{ fileName: 'license.md' }`
 
 Vite automatically extracts the CSS used by modules in an async chunk and generates a separate file for it. The CSS file is automatically loaded via a `<link>` tag when the associated async chunk is loaded, and the async chunk is guaranteed to only be evaluated after the CSS is loaded to avoid [FOUC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content#:~:text=A%20flash%20of%20unstyled%20content,before%20all%20information%20is%20retrieved.).
 
-If you'd rather have all the CSS extracted into a single file, you can disable CSS code splitting by setting [`build.cssCodeSplit`](vite/config/build-options/index.md#build-csscodesplit) to `false`.
+If you'd rather have all the CSS extracted into a single file, you can disable CSS code splitting by setting [`build.cssCodeSplit`](../../config/build-options/index.md#build-csscodesplit) to `false`.
 
 ### Preload Directives Generation [​](#preload-directives-generation)
 

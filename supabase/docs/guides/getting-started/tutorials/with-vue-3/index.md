@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:27.584Z"
 content_hash: "318c627025340b8f4d9a61b71f3e164a86a8ff32d6d98dbd9005746679884d46"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Vue 3","Vue 3"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Vue 3","Vue 3"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-swift/index.md", "title": "Build a User Management App with Swift and SwiftUI"}
-nav_next: {"path": "supabase/docs/guides/integrations/index.md", "title": "Integrations"}
+nav_prev: {"path": "../with-swift/index.md", "title": "Build a User Management App with Swift and SwiftUI"}
+nav_next: {"path": "../../../integrations/index.md", "title": "Integrations"}
 ---
 
 # 

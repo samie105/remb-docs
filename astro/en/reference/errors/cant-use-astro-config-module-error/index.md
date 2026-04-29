@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:52.052Z"
 content_hash: "dc4226386aef05e7f023c9cf7cec6b7597368ffe20770b904df508516c3dd4be"
 menu_path: ["Cannot use the astro:config module without enabling the experimental feature."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/cant-render-page/index.md", "title": "Astro can't render the route."}
-nav_next: {"path": "astro/en/reference/errors/client-address-not-available/index.md", "title": "Astro.clientAddress is not available in current adapter."}
+nav_prev: {"path": "../cant-render-page/index.md", "title": "Astro can't render the route."}
+nav_next: {"path": "../client-address-not-available/index.md", "title": "Astro.clientAddress is not available in current adapter."}
 ---
 
 # Cannot use the astro:config module without enabling the experimental feature.

@@ -10,8 +10,8 @@ content_hash: "ed7dacd05cf67783a406d56c5a897aa7029d6abb3d6e76193633cb6ccb754771"
 menu_path: ["Compatibility"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "tailwind/docs/upgrade-guide/index.md", "title": "Upgrade guide"}
+nav_prev: {"path": "../editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "../upgrade-guide/index.md", "title": "Upgrade guide"}
 ---
 
 Learn about browser support and compatibility with other tooling.
@@ -82,7 +82,7 @@ On top of that, when you're building things with Tailwind CSS, you do the vast m
 
 When using preprocessors like Sass or Less, you may have used functions like `darken` or `lighten` to adjust colors.
 
-When using Tailwind, the recommended workflow is to use a predefined color palette that includes light and dark shades of each color, like the expertly designed [default color palette](tailwind/docs/colors/index.md) included with the framework.
+When using Tailwind, the recommended workflow is to use a predefined color palette that includes light and dark shades of each color, like the expertly designed [default color palette](../colors/index.md) included with the framework.
 
 ```
 <button class="bg-indigo-500 hover:bg-indigo-600 ...">  <!-- ... --></button>

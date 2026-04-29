@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:03.571Z"
 content_hash: "943e4d2e92cbc31fc10be5391622e923ca12b34e2cac43f5a902eee7b016e0e9"
 menu_path: ["Metrics"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/http/error-handling/index.md", "title": "Error Handling"}
-nav_next: {"path": "bun/docs/runtime/http/routing/index.md", "title": "Routing"}
+nav_prev: {"path": "../error-handling/index.md", "title": "Error Handling"}
+nav_next: {"path": "../routing/index.md", "title": "Routing"}
 ---
 
 [Skip to main content](#content-area)

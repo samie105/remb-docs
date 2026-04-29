@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:41.300Z"
 content_hash: "47ca065545bcb556b901bcaf3d987cba84586a8de2376b291afca6e1224a1b67"
 menu_path: ["svelte/motion"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-legacy/index.md", "title": "svelte/legacy"}
-nav_next: {"path": "svelte/docs/svelte/svelte-reactivity-window/index.md", "title": "svelte/reactivity/window"}
+nav_prev: {"path": "../svelte-legacy/index.md", "title": "svelte/legacy"}
+nav_next: {"path": "../svelte-reactivity-window/index.md", "title": "svelte/reactivity/window"}
 ---
 
 ```

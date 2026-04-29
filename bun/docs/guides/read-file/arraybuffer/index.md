@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:19.541Z"
 content_hash: "16c247e5edd2f12544d674372d93d228497d32d380b2a318f8dc52cffaee0c85"
 menu_path: ["Read a file to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/process/stdin/index.md", "title": "Read from stdin"}
-nav_next: {"path": "bun/docs/guides/read-file/buffer/index.md", "title": "Read a file to a Buffer"}
+nav_prev: {"path": "../../process/stdin/index.md", "title": "Read from stdin"}
+nav_next: {"path": "../buffer/index.md", "title": "Read a file to a Buffer"}
 ---
 
 [Skip to main content](#content-area)

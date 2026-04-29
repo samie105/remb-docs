@@ -10,8 +10,8 @@ content_hash: "12db94997ea58e1f2292e9d29c8e6365e02d13c46bc455812650538827632b3d"
 menu_path: ["Runtime - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/deno/permissions/index.md", "title": "Permissions - Deno documentation"}
-nav_next: {"path": "deno/api/deno/subprocess/index.md", "title": "Subprocess - Deno documentation"}
+nav_prev: {"path": "../permissions/index.md", "title": "Permissions - Deno documentation"}
+nav_next: {"path": "../subprocess/index.md", "title": "Subprocess - Deno documentation"}
 ---
 
 f

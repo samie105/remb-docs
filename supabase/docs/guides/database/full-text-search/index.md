@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:50.598Z"
 content_hash: "0cbd5cfb739a43d74689ba09c7d83c0358dc18167bfffc38ef404b8fe9725919"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Using Full Text Search","Using Full Text Search"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Using Full Text Search","Using Full Text Search"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/uuid-ossp/index.md", "title": "uuid-ossp: Unique Identifiers"}
-nav_next: {"path": "supabase/docs/guides/database/functions/index.md", "title": "Database Functions"}
+nav_prev: {"path": "../extensions/uuid-ossp/index.md", "title": "uuid-ossp: Unique Identifiers"}
+nav_next: {"path": "../functions/index.md", "title": "Database Functions"}
 ---
 
 # 

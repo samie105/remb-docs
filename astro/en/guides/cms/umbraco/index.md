@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:52.052Z"
 content_hash: "732c929d896854cdebbc98f16f380f77c7c7996acf59803639aa5d663f0254b5"
 menu_path: ["Umbraco & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/tina-cms/index.md", "title": "Tina CMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/vault-cms/index.md", "title": "Vault CMS & Astro"}
+nav_prev: {"path": "../tina-cms/index.md", "title": "Tina CMS & Astro"}
+nav_next: {"path": "../vault-cms/index.md", "title": "Vault CMS & Astro"}
 ---
 
 # Umbraco & Astro

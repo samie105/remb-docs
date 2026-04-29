@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:30.698Z"
 content_hash: "580d5c28031e6468a8bb1b8526dff4e194267fd8b8a826ac3237fe2d6ec9ef0d"
 menu_path: ["Updating Objects in State"]
 section_path: []
-nav_prev: {"path": "react/learn/queueing-a-series-of-state-updates/index.md", "title": "Queueing a Series of State Updates"}
-nav_next: {"path": "react/learn/updating-arrays-in-state/index.md", "title": "Updating Arrays in State"}
+nav_prev: {"path": "../queueing-a-series-of-state-updates/index.md", "title": "Queueing a Series of State Updates"}
+nav_next: {"path": "../updating-arrays-in-state/index.md", "title": "Updating Arrays in State"}
 ---
 
 State can hold any kind of JavaScript value, including objects. But you shouldn’t change objects that you hold in the React state directly. Instead, when you want to update an object, you need to create a new one (or make a copy of an existing one), and then set the state to use that copy.
@@ -64,9 +64,9 @@ The problem is with this bit of code.
 onPointerMove={e => {position.x = e.clientX;position.y = e.clientY;}}
 ```
 
-This code modifies the object assigned to `position` from [the previous render.](react/learn/state-as-a-snapshot/index.md#rendering-takes-a-snapshot-in-time) But without using the state setting function, React has no idea that object has changed. So React does not do anything in response. It’s like trying to change the order after you’ve already eaten the meal. While mutating state can work in some cases, we don’t recommend it. You should treat the state value you have access to in a render as read-only.
+This code modifies the object assigned to `position` from [the previous render.](../state-as-a-snapshot/index.md#rendering-takes-a-snapshot-in-time) But without using the state setting function, React has no idea that object has changed. So React does not do anything in response. It’s like trying to change the order after you’ve already eaten the meal. While mutating state can work in some cases, we don’t recommend it. You should treat the state value you have access to in a render as read-only.
 
-To actually [trigger a re-render](react/learn/state-as-a-snapshot/index.md#setting-state-triggers-renders) in this case, **create a _new_ object and pass it to the state setting function:**
+To actually [trigger a re-render](../state-as-a-snapshot/index.md#setting-state-triggers-renders) in this case, **create a _new_ object and pass it to the state setting function:**
 
 ```
 onPointerMove={e => {setPosition({x: e.clientX,y: e.clientY});}}
@@ -101,7 +101,7 @@ In fact, it is completely equivalent to writing this:
 setPosition({x: e.clientX,y: e.clientY});
 ```
 
-Mutation is only a problem when you change _existing_ objects that are already in state. Mutating an object you’ve just created is okay because _no other code references it yet._ Changing it isn’t going to accidentally impact something that depends on it. This is called a “local mutation”. You can even do local mutation [while rendering.](react/learn/keeping-components-pure/index.md#local-mutation-your-components-little-secret) Very convenient and completely okay!
+Mutation is only a problem when you change _existing_ objects that are already in state. Mutating an object you’ve just created is okay because _no other code references it yet._ Changing it isn’t going to accidentally impact something that depends on it. This is called a “local mutation”. You can even do local mutation [while rendering.](../keeping-components-pure/index.md#local-mutation-your-components-little-secret) Very convenient and completely okay!
 
 ## Copying objects with the spread syntax[](#copying-objects-with-the-spread-syntax "Link for Copying objects with the spread syntax ")
 
@@ -402,7 +402,7 @@ If you were to mutate `obj3.artwork.city`, it would affect both `obj2.artwork.ci
 
 ### Write concise update logic with Immer[](#write-concise-update-logic-with-immer "Link for Write concise update logic with Immer ")
 
-If your state is deeply nested, you might want to consider [flattening it.](react/learn/choosing-the-state-structure/index.md#avoid-deeply-nested-state) But, if you don’t want to change your state structure, you might prefer a shortcut to nested spreads. [Immer](https://github.com/immerjs/use-immer) is a popular library that lets you write using the convenient but mutating syntax and takes care of producing the copies for you. With Immer, the code you write looks like you are “breaking the rules” and mutating an object:
+If your state is deeply nested, you might want to consider [flattening it.](../choosing-the-state-structure/index.md#avoid-deeply-nested-state) But, if you don’t want to change your state structure, you might prefer a shortcut to nested spreads. [Immer](https://github.com/immerjs/use-immer) is a popular library that lets you write using the convenient but mutating syntax and takes care of producing the copies for you. With Immer, the code you write looks like you are “breaking the rules” and mutating an object:
 
 ```
 updatePerson(draft => {draft.artwork.city = 'Lagos';});
@@ -433,7 +433,7 @@ There are a few reasons:
 
 *   **Debugging:** If you use `console.log` and don’t mutate state, your past logs won’t get clobbered by the more recent state changes. So you can clearly see how state has changed between renders.
 *   **Optimizations:** Common React [optimization strategies](https://react.dev/reference/react/memo) rely on skipping work if previous props or state are the same as the next ones. If you never mutate state, it is very fast to check whether there were any changes. If `prevObj === obj`, you can be sure that nothing could have changed inside of it.
-*   **New Features:** The new React features we’re building rely on state being [treated like a snapshot.](react/learn/state-as-a-snapshot/index.md) If you’re mutating past versions of state, that may prevent you from using the new features.
+*   **New Features:** The new React features we’re building rely on state being [treated like a snapshot.](../state-as-a-snapshot/index.md) If you’re mutating past versions of state, that may prevent you from using the new features.
 *   **Requirement Changes:** Some application features, like implementing Undo/Redo, showing a history of changes, or letting the user reset a form to earlier values, are easier to do when nothing is mutated. This is because you can keep past copies of state in memory, and reuse them when appropriate. If you start with a mutative approach, features like this can be difficult to add later on.
 *   **Simpler Implementation:** Because React does not rely on mutation, it does not need to do anything special with your objects. It does not need to hijack their properties, always wrap them into Proxies, or do other work at initialization as many “reactive” solutions do. This is also why React lets you put any object into state—no matter how large—without additional performance or correctness pitfalls.
 

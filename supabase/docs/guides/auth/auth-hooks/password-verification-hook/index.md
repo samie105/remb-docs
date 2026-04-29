@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:55.297Z"
 content_hash: "37a3c42375296b03625c18a77848006748c378f789d920777f9783aea7a1bb38"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Password verification hook","Password verification hook"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Password verification hook","Password verification hook"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/mfa-verification-hook/index.md", "title": "MFA Verification Hook"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/send-email-hook/index.md", "title": "Send Email Hook"}
+nav_prev: {"path": "../mfa-verification-hook/index.md", "title": "MFA Verification Hook"}
+nav_next: {"path": "../send-email-hook/index.md", "title": "Send Email Hook"}
 ---
 
 # 

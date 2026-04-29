@@ -11,8 +11,8 @@ menu_path: ["getStaticPaths"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-server-side-props/index.md", "title": "getServerSideProps"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/get-static-props/index.md", "title": "getStaticProps"}
+nav_prev: {"path": "../get-server-side-props/index.md", "title": "getServerSideProps"}
+nav_next: {"path": "../get-static-props/index.md", "title": "getStaticProps"}
 ---
 
 # getStaticPaths

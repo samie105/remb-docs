@@ -10,8 +10,8 @@ content_hash: "7e501b09ce3b10f2792b05a74cb60a9a75001990861d003e2c26b63b94bd4bfd"
 menu_path: ["aspect-ratio"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/preflight/index.md", "title": "Preflight"}
-nav_next: {"path": "tailwind/docs/columns/index.md", "title": "columns"}
+nav_prev: {"path": "../preflight/index.md", "title": "Preflight"}
+nav_next: {"path": "../columns/index.md", "title": "columns"}
 ---
 
 # aspect-ratio

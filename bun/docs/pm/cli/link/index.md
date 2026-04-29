@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:22.413Z"
 content_hash: "df2e70e33a17dee2d19af103bad89551af2ca2194311c7fe280ac3f7f25c5f6f"
 menu_path: ["bun link"]
 section_path: []
-nav_prev: {"path": "bun/docs/pm/cli/install/index.md", "title": "bun install"}
-nav_next: {"path": "bun/docs/pm/cli/outdated/index.md", "title": "bun outdated"}
+nav_prev: {"path": "../install/index.md", "title": "bun install"}
+nav_next: {"path": "../outdated/index.md", "title": "bun outdated"}
 ---
 
 [Skip to main content](#content-area)

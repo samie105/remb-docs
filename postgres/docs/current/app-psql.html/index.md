@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:47.160Z"
 content_hash: "38db55fe679f01678149c37cf4f679b114dbe98add5adf50c1ee376115752e4c"
 menu_path: ["PostgreSQL: Documentation: 18: psql"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-postgres.html/index.md", "title": "PostgreSQL: Documentation: 18: postgres"}
-nav_next: {"path": "postgres/docs/current/app-reindexdb.html/index.md", "title": "PostgreSQL: Documentation: 18: reindexdb"}
+nav_prev: {"path": "../app-postgres.html/index.md", "title": "PostgreSQL: Documentation: 18: postgres"}
+nav_next: {"path": "../app-reindexdb.html/index.md", "title": "PostgreSQL: Documentation: 18: reindexdb"}
 ---
 
 Anything you enter in psql that begins with an unquoted backslash is a psql meta-command that is processed by psql itself. These commands make psql more useful for administration or scripting. Meta-commands are often called slash or backslash commands.
@@ -829,7 +829,7 @@ All queries executed while a pipeline is ongoing use the extended query protocol
 
 `\getresults` accepts an optional _`number_results`_ parameter. If provided, only the first _`number_results`_ pending results will be read. If not provided or `0`, all pending results are read.
 
-When pipeline mode is active, a dedicated prompt variable is available to report the pipeline status. See [`%P`](postgres/docs/current/app-psql.html/index.md#APP-PSQL-PROMPTING-P-UC) for more details
+When pipeline mode is active, a dedicated prompt variable is available to report the pipeline status. See [`%P`](index.md#APP-PSQL-PROMPTING-P-UC) for more details
 
 `COPY` is not supported while in pipeline mode.
 
@@ -879,7 +879,7 @@ This command is identical to `\echo` except that the output will be written to p
 
 ``\watch [ i[nterval]=_`seconds`_ ] [ c[ount]=_`times`_ ] [ m[in_rows]=_`rows`_ ] [ _`seconds`_ ]`` [#](#APP-PSQL-META-COMMAND-WATCH)
 
-Repeatedly execute the current query buffer (as `\g` does) until interrupted, or the query fails, or the execution count limit (if given) is reached, or the query no longer returns the minimum number of rows. Wait the specified number of seconds (default 2) between executions. The default wait can be changed with the variable [`WATCH_INTERVAL`](postgres/docs/current/app-psql.html/index.md#APP-PSQL-VARIABLES-WATCH-INTERVAL). For backwards compatibility, _`seconds`_ can be specified with or without an `interval=` prefix. Each query result is displayed with a header that includes the `\pset title` string (if any), the time as of query start, and the delay interval.
+Repeatedly execute the current query buffer (as `\g` does) until interrupted, or the query fails, or the execution count limit (if given) is reached, or the query no longer returns the minimum number of rows. Wait the specified number of seconds (default 2) between executions. The default wait can be changed with the variable [`WATCH_INTERVAL`](index.md#APP-PSQL-VARIABLES-WATCH-INTERVAL). For backwards compatibility, _`seconds`_ can be specified with or without an `interval=` prefix. Each query result is displayed with a header that includes the `\pset title` string (if any), the time as of query start, and the delay interval.
 
 If the current query buffer is empty, the most recently sent query is re-executed instead.
 

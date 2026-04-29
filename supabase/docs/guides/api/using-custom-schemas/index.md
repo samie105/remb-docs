@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:54.351Z"
 content_hash: "aaebe41311928303171c9ade380e3b7955e9d9a5bec03afcf6f150d49b52aa01"
 menu_path: ["Data REST API","Data REST API","Using the Data APIs","Using the Data APIs","Using custom schemas","Using custom schemas"]
 section_path: ["Data REST API","Data REST API","Using the Data APIs","Using the Data APIs","Using custom schemas","Using custom schemas"]
-nav_prev: {"path": "supabase/docs/guides/api/sql-to-rest/index.md", "title": "SQL to REST API Translator"}
-nav_next: {"path": "supabase/docs/guides/auth/index.md", "title": "Auth"}
+nav_prev: {"path": "../sql-to-rest/index.md", "title": "SQL to REST API Translator"}
+nav_next: {"path": "../../auth/index.md", "title": "Auth"}
 ---
 
 # 

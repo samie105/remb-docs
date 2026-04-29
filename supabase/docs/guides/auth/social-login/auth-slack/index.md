@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:48.825Z"
 content_hash: "192e5cb74652d1daba83fbbb917ceca8dbfa40ef8088cb9c639db2521bfc51bb"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Slack","Slack"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Slack","Slack"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-notion/index.md", "title": "Login with Notion"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-spotify/index.md", "title": "Login with Spotify"}
+nav_prev: {"path": "../auth-notion/index.md", "title": "Login with Notion"}
+nav_next: {"path": "../auth-spotify/index.md", "title": "Login with Spotify"}
 ---
 
 # 

@@ -10,8 +10,8 @@ content_hash: "485d8aa33eb0a6f9831ee27d15e850e3a6c1938bf9a290103a8054bcefb436bc"
 menu_path: ["PostgreSQL: Documentation: 18: F.26. pgcrypto — cryptographic functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
-nav_next: {"path": "postgres/docs/current/pgfreespacemap.html/index.md", "title": "PostgreSQL: Documentation: 18: F.27.\u00a0pg_freespacemap \u2014 examine the free space map"}
+nav_prev: {"path": "../pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
+nav_next: {"path": "../pgfreespacemap.html/index.md", "title": "PostgreSQL: Documentation: 18: F.27.\u00a0pg_freespacemap \u2014 examine the free space map"}
 ---
 
 The `pgcrypto` module provides cryptographic functions for PostgreSQL.

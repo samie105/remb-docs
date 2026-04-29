@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:39.221Z"
 content_hash: "aeebdd29826633a0a3bb1d65664067d2ec06f8ef691b65cf0673c090a0fd5c81"
 menu_path: ["Syntax Highlighting"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/fonts/index.md", "title": "Using custom fonts"}
-nav_next: {"path": "astro/en/guides/client-side-scripts/index.md", "title": "Scripts and event handling"}
+nav_prev: {"path": "../fonts/index.md", "title": "Using custom fonts"}
+nav_next: {"path": "../client-side-scripts/index.md", "title": "Scripts and event handling"}
 ---
 
 # Syntax Highlighting

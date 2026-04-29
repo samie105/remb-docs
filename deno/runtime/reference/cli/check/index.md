@@ -10,8 +10,8 @@ content_hash: "93234718b8df98cf1fc197d3b316d954cf34ba9519410f3340bf8078fe3cf45c"
 menu_path: ["deno check"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/bundle/index.md", "title": "deno bundle"}
-nav_next: {"path": "deno/runtime/reference/cli/clean/index.md", "title": "deno clean"}
+nav_prev: {"path": "../bundle/index.md", "title": "deno bundle"}
+nav_next: {"path": "../clean/index.md", "title": "deno clean"}
 ---
 
 **On this page**

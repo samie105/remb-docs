@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:58.938Z"
 content_hash: "a9d54632bf1539dfac961b841bb4850b4cd1b9505504f1738392eac49ae97cf8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Probabilistic","→","Probabilistic","→\n      \n        HyperLogLog","→","HyperLogLog"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Probabilistic","→","Probabilistic","→\n      \n        HyperLogLog","→","HyperLogLog"]
-nav_prev: {"path": "redis/docs/latest/develop/data-types/json/use_cases/index.md", "title": "Use cases"}
-nav_next: {"path": "redis/docs/latest/develop/data-types/timeseries/configuration/index.md", "title": "Configuration Parameters"}
+nav_prev: {"path": "../../json/use_cases/index.md", "title": "Use cases"}
+nav_next: {"path": "../../timeseries/configuration/index.md", "title": "Configuration Parameters"}
 ---
 
 # HyperLogLog

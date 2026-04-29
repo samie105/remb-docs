@@ -10,15 +10,15 @@ content_hash: "27c286447043e861afa3f5294161ed6d8a9669c5785778b32936cac13530d628"
 menu_path: ["Operating against partial structures of your model types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/index.md", "title": "Type safety Overview"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
+nav_prev: {"path": "../index.md", "title": "Type safety Overview"}
+nav_next: {"path": "../prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
 ---
 
 Type Safety
 
 This page documents various scenarios for using the generated types from the Prisma namespace
 
-When using Prisma Client, every model from your [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) is translated into a dedicated TypeScript type. For example, assume you have the following `User` and `Post` models:
+When using Prisma Client, every model from your [Prisma schema](../../../prisma-schema/overview/index.md) is translated into a dedicated TypeScript type. For example, assume you have the following `User` and `Post` models:
 
 ```
 model User {
@@ -55,7 +55,7 @@ In some scenarios, you may need a _variation_ of the generated `User` type. For 
 
 As a solution, you can customize the generated model type using Prisma Client's helper types.
 
-The `User` type only contains the model's [scalar](prisma/docs/orm/prisma-schema/data-model/models/index.md#scalar-fields) fields, but doesn't account for any relations. That's because [relations are not included by default](https://www.prisma.io/docs/v6/orm/prisma-client/queries/select-fields#return-the-default-fields) in Prisma Client queries.
+The `User` type only contains the model's [scalar](../../../prisma-schema/data-model/models/index.md#scalar-fields) fields, but doesn't account for any relations. That's because [relations are not included by default](https://www.prisma.io/docs/v6/orm/prisma-client/queries/select-fields#return-the-default-fields) in Prisma Client queries.
 
 However, sometimes it's useful to have a type available that **includes a relation** (i.e. a type that you'd get from an API call that uses [`include`](https://www.prisma.io/docs/v6/orm/prisma-client/queries/select-fields#return-nested-objects-by-selecting-relation-fields)). Similarly, another useful scenario could be to have a type available that **includes only a subset of the model's scalar fields** (i.e. a type that you'd get from an API call that uses [`select`](https://www.prisma.io/docs/v6/orm/prisma-client/queries/select-fields#select-specific-fields)).
 
@@ -101,7 +101,7 @@ The main benefits of the latter approach are:
 
 ### [Description](#description-1)
 
-When doing [`select`](prisma/docs/orm/reference/prisma-client-reference/index.md#select) or [`include`](prisma/docs/orm/reference/prisma-client-reference/index.md#include) operations on your models and returning these variants from a function, it can be difficult to gain access to the return type, e.g:
+When doing [`select`](../../../reference/prisma-client-reference/index.md#select) or [`include`](../../../reference/prisma-client-reference/index.md#include) operations on your models and returning these variants from a function, it can be difficult to gain access to the return type, e.g:
 
 ```
 // Function definition that returns a partial structure

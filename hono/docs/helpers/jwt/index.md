@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:30.318Z"
 content_hash: "38921bcaea5195b67eb8c13bca17cdfdcc151024e9bb31abfebf77110e60d73f"
 menu_path: ["JWT Authentication Helper ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/helpers/html/index.md", "title": "html Helper \u200b"}
-nav_next: {"path": "hono/docs/helpers/proxy/index.md", "title": "Proxy Helper \u200b"}
+nav_prev: {"path": "../html/index.md", "title": "html Helper \u200b"}
+nav_next: {"path": "../proxy/index.md", "title": "Proxy Helper \u200b"}
 ---
 
 This helper provides functions for encoding, decoding, signing, and verifying JSON Web Tokens (JWTs). JWTs are commonly used for authentication and authorization purposes in web applications. This helper offers robust JWT functionality with support for various cryptographic algorithms.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:18.840Z"
 content_hash: "2b62c428c6057fbff42074c48d72f73f3c39cca75f76d79a2e9e6bc251ccc39b"
 menu_path: ["Duplicate content entry slug."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/data-collection-entry-parse-error/index.md", "title": "Data collection entry failed to parse."}
-nav_next: {"path": "astro/en/reference/errors/endpoint-did-not-return-aresponse/index.md", "title": "The endpoint did not return a Response."}
+nav_prev: {"path": "../data-collection-entry-parse-error/index.md", "title": "Data collection entry failed to parse."}
+nav_next: {"path": "../endpoint-did-not-return-aresponse/index.md", "title": "The endpoint did not return a Response."}
 ---
 
 # Duplicate content entry slug.

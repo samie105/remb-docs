@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:45.268Z"
 content_hash: "ea08d63c0c9212f57c3ffbaebdcec3796994b51f14bd6e49311a9dda035641a6"
 menu_path: ["useUtils"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/react/useQuery/index.md", "title": "useQuery()"}
-nav_next: {"path": "trpc/docs/v10/client/vanilla/index.md", "title": "tRPC Client"}
+nav_prev: {"path": "../useQuery/index.md", "title": "useQuery()"}
+nav_next: {"path": "../../vanilla/index.md", "title": "tRPC Client"}
 ---
 
 `useUtils` is a hook that gives you access to helpers that let you manage the cached data of the queries you execute via `@trpc/react-query`. These helpers are actually thin wrappers around `@tanstack/react-query`'s [`queryClient`](https://tanstack.com/query/v4/docs/reference/QueryClient) methods. If you want more in-depth information about options and usage patterns for `useUtils` helpers than what we provide here, we will link to their respective `@tanstack/react-query` docs so you can refer to them accordingly.

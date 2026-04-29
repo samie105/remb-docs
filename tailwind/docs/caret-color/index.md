@@ -10,8 +10,8 @@ content_hash: "e97d7cc079c62d7ddc87bb0151bfd4a63cf472787c3b4143df7793695927f2c8"
 menu_path: ["caret-color"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/appearance/index.md", "title": "appearance"}
-nav_next: {"path": "tailwind/docs/color-scheme/index.md", "title": "color-scheme"}
+nav_prev: {"path": "../appearance/index.md", "title": "appearance"}
+nav_next: {"path": "../color-scheme/index.md", "title": "color-scheme"}
 ---
 
 # caret-color

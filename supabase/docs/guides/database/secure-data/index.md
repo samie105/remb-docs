@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:18.886Z"
 content_hash: "f38700d0c729498b8efdf36adbcdb3a09f35d7b76ab0a1316da2583655f38121"
 menu_path: ["Database","Database","Fundamentals","Fundamentals","Securing your data","Securing your data"]
 section_path: ["Database","Database","Fundamentals","Fundamentals","Securing your data","Securing your data"]
-nav_prev: {"path": "supabase/docs/guides/database/replication/replication-setup/index.md", "title": "Replication Setup"}
-nav_next: {"path": "supabase/docs/guides/database/supavisor/index.md", "title": "Supavisor"}
+nav_prev: {"path": "../replication/replication-setup/index.md", "title": "Replication Setup"}
+nav_next: {"path": "../supavisor/index.md", "title": "Supavisor"}
 ---
 
 # 

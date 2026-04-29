@@ -9,17 +9,17 @@ last_crawled_at: "2026-04-18T16:45:53.265Z"
 content_hash: "563646ebab78080c2a1ccb88af4ff8d989866bfba4be4d4d9fe243fb9c096d75"
 menu_path: ["Set up with Next.js Pages Router"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/nextjs/pages-router/server-side-helpers/index.md", "title": "Server-Side Helpers"}
-nav_next: {"path": "trpc/docs/client/nextjs/pages-router/ssg/index.md", "title": "Static Site Generation"}
+nav_prev: {"path": "../server-side-helpers/index.md", "title": "Server-Side Helpers"}
+nav_next: {"path": "../ssg/index.md", "title": "Static Site Generation"}
 ---
 
 caution
 
-This guide is for the **Next.js Pages Router**. If you are using the **Next.js App Router**, see the [App Router setup guide](trpc/docs/client/nextjs/app-router-setup/index.md) instead.
+This guide is for the **Next.js Pages Router**. If you are using the **Next.js App Router**, see the [App Router setup guide](../../app-router-setup/index.md) instead.
 
 ## Recommended file structure[​](#recommended-file-structure "Direct link to Recommended file structure")
 
-We recommend a file structure like this one, although it is not enforced by tRPC. This is what you'll see in [our examples](trpc/docs/example-apps/index.md). The rest of this page will take you through the process of adding tRPC in to this structure.
+We recommend a file structure like this one, although it is not enforced by tRPC. This is what you'll see in [our examples](../../../../example-apps/index.md). The rest of this page will take you through the process of adding tRPC in to this structure.
 
 graphql
 
@@ -83,7 +83,7 @@ bash
 
 `npx @tanstack/intent@latest install`
 
-The Next.js integration is actually a combination of our [React Query Integration](trpc/docs/client/react/index.md) and some Next.js specific integrations.
+The Next.js integration is actually a combination of our [React Query Integration](../../../react/index.md) and some Next.js specific integrations.
 
 ### 2\. Enable strict mode[​](#2-enable-strict-mode "Direct link to 2. Enable strict mode")
 
@@ -115,8 +115,8 @@ diff
 
 Initialize your tRPC backend in `src/server/trpc.ts` using the `initTRPC` function, and create your first router. We're going to make a simple "hello world" router and procedure here - but for deeper information on creating your tRPC API you should refer to:
 
-*   the [Quickstart guide](trpc/docs/quickstart/index.md) and [Backend usage docs](trpc/docs/server/overview/index.md) for tRPC information
-*   the [Next.js Adapter docs](trpc/docs/server/adapters/nextjs/index.md) for mounting tRPC within your Next.js server.
+*   the [Quickstart guide](../../../../quickstart/index.md) and [Backend usage docs](../../../../server/overview/index.md) for tRPC information
+*   the [Next.js Adapter docs](../../../../server/adapters/nextjs/index.md) for mounting tRPC within your Next.js server.
 
 View sample backend
 
@@ -212,7 +212,7 @@ tsx
 
 note
 
-`createTRPCNext` does not work with the tRPC-v9 interop mode. If you are migrating from v9 using interop, you should continue using [the old way of initializing tRPC](trpc/docs/v9/nextjs/index.md#4-create-trpc-hooks).
+`createTRPCNext` does not work with the tRPC-v9 interop mode. If you are migrating from v9 using interop, you should continue using [the old way of initializing tRPC](../../../../v9/nextjs/index.md#4-create-trpc-hooks).
 
 ### 5\. Configure `_app.tsx`[​](#5-configure-_apptsx "Direct link to 5-configure-_apptsx")
 
@@ -238,7 +238,7 @@ tsx
 
 You're all set!
 
-You can now use the React hooks you have just created to invoke your API. For more detail see the [React Query Integration](trpc/docs/client/react/setup/index.md)
+You can now use the React hooks you have just created to invoke your API. For more detail see the [React Query Integration](../../../react/setup/index.md)
 
 pages/index.tsx
 
@@ -275,17 +275,17 @@ tsx
 The `config`\-argument is a function that returns an object that configures the tRPC and React Query clients. This function receives an object with an optional `ctx` property (of type `NextPageContext`) that gives you access to the Next.js `req` object during server-side rendering. The returned value can contain the following properties:
 
 *   **Required**:
-*   `links` to customize the flow of data between tRPC Client and the tRPC Server. [Read more](trpc/docs/client/links/index.md).
+*   `links` to customize the flow of data between tRPC Client and the tRPC Server. [Read more](../../../links/index.md).
 *   Optional:
 *   `queryClientConfig`: a configuration object for the React Query `QueryClient` used internally by the tRPC React hooks: [QueryClient docs](https://tanstack.com/query/v5/docs/reference/QueryClient)
 *   `queryClient`: a React Query [QueryClient instance](https://tanstack.com/query/v5/docs/reference/QueryClient)
     *   **Note:** You can only provide either a `queryClient` or a `queryClientConfig`.
-*   `transformer`: a transformer applied to outgoing payloads. Read more about [Data Transformers](trpc/docs/server/data-transformers/index.md)
+*   `transformer`: a transformer applied to outgoing payloads. Read more about [Data Transformers](../../../../server/data-transformers/index.md)
 *   `abortOnUnmount`: determines if in-flight requests will be cancelled on component unmount. This defaults to `false`.
 
 ### `overrides`: (default: `undefined`)[​](#overrides "Direct link to overrides")
 
-Configure [overrides for React Query's hooks](trpc/docs/client/react/useUtils/index.md#invalidate-full-cache-on-every-mutation).
+Configure [overrides for React Query's hooks](../../../react/useUtils/index.md#invalidate-full-cache-on-every-mutation).
 
 ### `ssr`\-boolean (default: `false`)[​](#ssr-boolean-default-false "Direct link to ssr-boolean-default-false")
 
@@ -325,6 +325,6 @@ tsx
 
 ## Next steps[​](#next-steps "Direct link to Next steps")
 
-Browse the rest of the docs to learn more about things like [authorization](trpc/docs/server/authorization/index.md), [middlewares](trpc/docs/server/middlewares/index.md), and [error handling](trpc/docs/server/error-handling/index.md).
+Browse the rest of the docs to learn more about things like [authorization](../../../../server/authorization/index.md), [middlewares](../../../../server/middlewares/index.md), and [error handling](../../../../server/error-handling/index.md).
 
-You can also find information about [queries](trpc/docs/client/react/useQuery/index.md) and [mutations](trpc/docs/client/react/useMutation/index.md) now that you're using `@trpc/react-query`.
+You can also find information about [queries](../../../react/useQuery/index.md) and [mutations](../../../react/useMutation/index.md) now that you're using `@trpc/react-query`.

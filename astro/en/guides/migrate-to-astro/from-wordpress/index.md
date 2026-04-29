@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:17.885Z"
 content_hash: "d9c27dac5e52e1a5c55a7fc6137df308c51a2046a7f8cb8c1acfbca064fe7b18"
 menu_path: ["Migrating from WordPress"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-vuepress/index.md", "title": "Migrating from VuePress"}
-nav_next: {"path": "astro/en/contribute/index.md", "title": "Contribute to Astro"}
+nav_prev: {"path": "../from-vuepress/index.md", "title": "Migrating from VuePress"}
+nav_next: {"path": "../../../contribute/index.md", "title": "Contribute to Astro"}
 ---
 
 # Migrating from WordPress

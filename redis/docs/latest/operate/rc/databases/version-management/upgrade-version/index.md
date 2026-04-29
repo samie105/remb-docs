@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:32.324Z"
 content_hash: "58d65394d80fe850453b543cdf12d14537cc75acbefc7f95c948d5a7dde92308"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Redis version management","→","Redis version management","→\n      \n        Upgrade Redis database version","→","Upgrade Redis database version"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Redis version management","→","Redis version management","→\n      \n        Upgrade Redis database version","→","Upgrade Redis database version"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/view-edit/index.md", "title": "View and edit data pipeline"}
-nav_next: {"path": "redis/docs/latest/operate/rc/langcache/create-service/index.md", "title": "Create a LangCache service"}
+nav_prev: {"path": "../../rdi/view-edit/index.md", "title": "View and edit data pipeline"}
+nav_next: {"path": "../../../langcache/create-service/index.md", "title": "Create a LangCache service"}
 ---
 
 # Upgrade Redis database version

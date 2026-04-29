@@ -10,14 +10,14 @@ content_hash: "0c2b88880d03af3cd0c092dfde30533266eb6527743ec85a4cc0399368b7e666"
 menu_path: ["Get started with Tailwind CSS"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/forced-color-adjust/index.md", "title": "forced-color-adjust"}
+nav_prev: {"path": "../../forced-color-adjust/index.md", "title": "forced-color-adjust"}
 ---
 
 Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
 
 It's fast, flexible, and reliable — with zero-runtime.
 
--   ## [Using Vite](tailwind/docs/installation/using-vite/index.md)
+-   ## [Using Vite](index.md)
     
 -   ## [Using PostCSS](https://tailwindcss.com/docs/installation/using-postcss)
     

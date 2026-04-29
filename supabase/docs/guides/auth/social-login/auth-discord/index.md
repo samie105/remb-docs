@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:19.646Z"
 content_hash: "4d7c09e2c7dca7f9fdb4364560b45a06afccc8f5d20a70a79ed0ec749243de34"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Discord","Discord"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Discord","Discord"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-bitbucket/index.md", "title": "Login with Bitbucket"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-facebook/index.md", "title": "Login with Facebook"}
+nav_prev: {"path": "../auth-bitbucket/index.md", "title": "Login with Bitbucket"}
+nav_next: {"path": "../auth-facebook/index.md", "title": "Login with Facebook"}
 ---
 
 # 

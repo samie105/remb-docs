@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:10.553Z"
 content_hash: "dd441ae7c3e2f3b240a127d1491a6fcfda15b6f90ba6849b55f861d1729b6f38"
 menu_path: ["Data REST API","Data REST API","Guides","Guides","Creating API routes","Creating API routes"]
 section_path: ["Data REST API","Data REST API","Guides","Guides","Creating API routes","Creating API routes"]
-nav_prev: {"path": "supabase/docs/guides/api/automatic-retries-in-supabase-js/index.md", "title": "How to do automatic retries with supabase-js"}
-nav_next: {"path": "supabase/docs/guides/api/custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
+nav_prev: {"path": "../automatic-retries-in-supabase-js/index.md", "title": "How to do automatic retries with supabase-js"}
+nav_next: {"path": "../custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:31.271Z"
 content_hash: "0abc5b091c6f1b0a587c37bc962776701e3e41a36fa13ce8a844a39620849503"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Manage streams and consumer groups in Redis Insight","→","Manage streams and consumer groups in Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Manage streams and consumer groups in Redis Insight","→","Manage streams and consumer groups in Redis Insight"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/debugging/index.md", "title": "Redis Insight debugging information"}
-nav_next: {"path": "redis/docs/latest/develop/tools/insight/rdi-connector/index.md", "title": "RDI in Redis Insight"}
+nav_prev: {"path": "../debugging/index.md", "title": "Redis Insight debugging information"}
+nav_next: {"path": "../rdi-connector/index.md", "title": "RDI in Redis Insight"}
 ---
 
 # Manage streams and consumer groups in Redis Insight

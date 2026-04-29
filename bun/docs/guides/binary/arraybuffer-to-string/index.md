@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:32.968Z"
 content_hash: "a76926b5fb3912aabd48e895bf2bde9616ed8ba80d5abf9eafaff2796064c1ba"
 menu_path: ["Convert an ArrayBuffer to a string"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/arraybuffer-to-buffer/index.md", "title": "Convert an ArrayBuffer to a Buffer"}
-nav_next: {"path": "bun/docs/guides/binary/arraybuffer-to-typedarray/index.md", "title": "Convert an ArrayBuffer to a Uint8Array"}
+nav_prev: {"path": "../arraybuffer-to-buffer/index.md", "title": "Convert an ArrayBuffer to a Buffer"}
+nav_next: {"path": "../arraybuffer-to-typedarray/index.md", "title": "Convert an ArrayBuffer to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)

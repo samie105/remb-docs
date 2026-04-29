@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:09.373Z"
 content_hash: "41b80c0dbfd0203e11037efcb204cc2f81f62c4b106c0516bbfcab299e20e33e"
 menu_path: ["Deploy your Astro Site to Zephyr Cloud"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/zeabur/index.md", "title": "Deploy your Astro Site to Zeabur"}
-nav_next: {"path": "astro/en/guides/deploy/zerops/index.md", "title": "Deploy your Astro Site to Zerops"}
+nav_prev: {"path": "../zeabur/index.md", "title": "Deploy your Astro Site to Zeabur"}
+nav_next: {"path": "../zerops/index.md", "title": "Deploy your Astro Site to Zerops"}
 ---
 
 # Deploy your Astro Site to Zephyr Cloud

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:54.986Z"
 content_hash: "fc95481b851208b60c2f8c3ed86316c28a3f367ab2f9a47e65d739e2790adc0a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Bulk loading","→","Bulk loading"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Bulk loading","→","Bulk loading"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/vecsets/index.md", "title": "Vector set embeddings"}
-nav_next: {"path": "redis/docs/latest/develop/clients/patterns/distributed-locks/index.md", "title": "Distributed Locks with Redis"}
+nav_prev: {"path": "../../nodejs/vecsets/index.md", "title": "Vector set embeddings"}
+nav_next: {"path": "../distributed-locks/index.md", "title": "Distributed Locks with Redis"}
 ---
 
 # Bulk loading

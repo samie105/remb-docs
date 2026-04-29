@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:03.633Z"
 content_hash: "a303cfc182c86325a1ec42b9cfb7bc44ea09847799b9b8e749698f546d490192"
 menu_path: ["PostgreSQL: Documentation: 18: 41.12. Tips for Developing in PL/pgSQL"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.7.\u00a0Cursors"}
-nav_next: {"path": "postgres/docs/current/plpgsql-errors-and-messages.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.9.\u00a0Errors and Messages"}
+nav_prev: {"path": "../plpgsql-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.7.\u00a0Cursors"}
+nav_next: {"path": "../plpgsql-errors-and-messages.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.9.\u00a0Errors and Messages"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/plpgsql-development-tips.html "PostgreSQL devel - 41.12. Tips for Developing in PL/pgSQL")

@@ -10,8 +10,8 @@ content_hash: "61437c8a342a3b2b41ef462101947a035ae7b5719ec0d1dadf1b4ac93863a311"
 menu_path: ["Database connection with Drizzle"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/relations-schema-declaration/index.md", "title": "Drizzle Relations Fundamentals"}
-nav_next: {"path": "drizzle/docs/data-querying/index.md", "title": "Drizzle Queries + CRUD"}
+nav_prev: {"path": "../relations-schema-declaration/index.md", "title": "Drizzle Relations Fundamentals"}
+nav_next: {"path": "../data-querying/index.md", "title": "Drizzle Queries + CRUD"}
 ---
 
 Drizzle ORM runs SQL queries on your database via **database drivers**.
@@ -115,7 +115,7 @@ import { drizzle } from "drizzle-orm/d1";
 const db = drizzle({ connection: env.DB });
 ```
 
-And yes, we do support runtime specific drivers like [Bun SQLite](drizzle/docs/connect-bun-sqlite/index.md) or [Expo SQLite](drizzle/docs/connect-expo-sqlite/index.md):
+And yes, we do support runtime specific drivers like [Bun SQLite](../connect-bun-sqlite/index.md) or [Expo SQLite](../connect-expo-sqlite/index.md):
 
 ```ts
 import { drizzle } from "drizzle-orm/bun-sqlite"

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:43.113Z"
 content_hash: "3fd6e6579302f197feae8d49bde81a3a807bd8e0e81e393211a0907c77142247"
 menu_path: ["Migrate from Jest to Bun's test runner"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/happy-dom/index.md", "title": "Write browser DOM tests with Bun and happy-dom"}
-nav_next: {"path": "bun/docs/guides/test/mock-clock/index.md", "title": "Set the system time in Bun's test runner"}
+nav_prev: {"path": "../happy-dom/index.md", "title": "Write browser DOM tests with Bun and happy-dom"}
+nav_next: {"path": "../mock-clock/index.md", "title": "Set the system time in Bun's test runner"}
 ---
 
 [Skip to main content](#content-area)

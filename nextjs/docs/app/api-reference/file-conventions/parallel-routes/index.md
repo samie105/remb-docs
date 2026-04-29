@@ -11,8 +11,8 @@ menu_path: ["Parallel Routes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/page/index.md", "title": "page.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/proxy/index.md", "title": "proxy.js"}
+nav_prev: {"path": "../page/index.md", "title": "page.js"}
+nav_next: {"path": "../proxy/index.md", "title": "proxy.js"}
 ---
 
 # Parallel Routes

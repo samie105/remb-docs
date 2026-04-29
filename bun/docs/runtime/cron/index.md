@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:18.347Z"
 content_hash: "124a51196f745022f7f361ccb78d75e75cb4e2e5107fcc5aa8d31ce37c180b23"
 menu_path: ["Cron"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/cookies/index.md", "title": "Cookies"}
-nav_next: {"path": "bun/docs/runtime/csrf/index.md", "title": "CSRF Protection"}
+nav_prev: {"path": "../cookies/index.md", "title": "Cookies"}
+nav_next: {"path": "../csrf/index.md", "title": "CSRF Protection"}
 ---
 
 # systemd-based (Ubuntu, Fedora, Arch, etc.)

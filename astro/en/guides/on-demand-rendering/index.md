@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:18.477Z"
 content_hash: "54a805595a6b75eb654fde392efa6d24e022c6704add04ac4c4a4d7283756955"
 menu_path: ["On-demand rendering"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/astro-db/index.md", "title": "Astro DB"}
-nav_next: {"path": "astro/en/guides/server-islands/index.md", "title": "Server islands"}
+nav_prev: {"path": "../astro-db/index.md", "title": "Astro DB"}
+nav_next: {"path": "../server-islands/index.md", "title": "Server islands"}
 ---
 
 # On-demand rendering

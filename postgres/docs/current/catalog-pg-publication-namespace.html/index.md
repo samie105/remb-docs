@@ -10,8 +10,8 @@ content_hash: "cce7e8d891ff36e86f7ac760e43a3e88d823b92b5b7dc3d95719e1d536070b49"
 menu_path: ["PostgreSQL: Documentation: 18: 52.41. pg_publication_namespace"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/catalog-pg-proc.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.39.\u00a0pg_proc"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-publication-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.42.\u00a0pg_publication_rel"}
+nav_prev: {"path": "../catalog-pg-proc.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.39.\u00a0pg_proc"}
+nav_next: {"path": "../catalog-pg-publication-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.42.\u00a0pg_publication_rel"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-publication-namespace.html "PostgreSQL devel - 52.41. pg_publication_namespace")

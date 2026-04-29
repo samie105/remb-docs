@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:50.035Z"
 content_hash: "8b571f8f717bd8b87cd4ef3fc06fd6982d70177bc4bd122730ed1b11c7b961e0"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Branching","Branching"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Branching","Branching"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/advanced-mfa-phone/index.md", "title": "Manage Advanced MFA Phone usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/compute/index.md", "title": "Manage Compute usage"}
+nav_prev: {"path": "../advanced-mfa-phone/index.md", "title": "Manage Advanced MFA Phone usage"}
+nav_next: {"path": "../compute/index.md", "title": "Manage Compute usage"}
 ---
 
 # 

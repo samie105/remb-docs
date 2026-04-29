@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:39.671Z"
 content_hash: "78cb927f51c902a2cdef58494c89755fa3b5f7bc2125c3b38071e4a0f03d7542"
 menu_path: ["Astro.clientAddress is not available in prerendered pages."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/session-without-supported-adapter-output-error/index.md", "title": "Sessions cannot be used with an adapter that doesn't support server output."}
-nav_next: {"path": "astro/en/reference/errors/static-redirect-not-available/index.md", "title": "Astro.redirect is not available in static mode."}
+nav_prev: {"path": "../session-without-supported-adapter-output-error/index.md", "title": "Sessions cannot be used with an adapter that doesn't support server output."}
+nav_next: {"path": "../static-redirect-not-available/index.md", "title": "Astro.redirect is not available in static mode."}
 ---
 
 # Astro.clientAddress is not available in prerendered pages.

@@ -11,8 +11,8 @@ menu_path: ["Font Optimization"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/getting-started/images/index.md", "title": "Image Optimization"}
-nav_next: {"path": "nextjs/docs/app/getting-started/metadata-and-og-images/index.md", "title": "Metadata and OG images"}
+nav_prev: {"path": "../images/index.md", "title": "Image Optimization"}
+nav_next: {"path": "../metadata-and-og-images/index.md", "title": "Metadata and OG images"}
 ---
 
 # Font Optimization

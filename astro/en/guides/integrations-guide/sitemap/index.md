@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:41.702Z"
 content_hash: "a4eeb5491fe06694a75086f7a575cb399201eabe7c8d2b2635643524c626f4dd"
 menu_path: ["@astrojs/\n\t\t\t\t\tsitemap"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/partytown/index.md", "title": "@astrojs/\n\t\t\t\t\tpartytown"}
-nav_next: {"path": "astro/en/guides/deploy/index.md", "title": "Deploy your Astro Site"}
+nav_prev: {"path": "../partytown/index.md", "title": "@astrojs/\n\t\t\t\t\tpartytown"}
+nav_next: {"path": "../../deploy/index.md", "title": "Deploy your Astro Site"}
 ---
 
 # @astrojs/ sitemap

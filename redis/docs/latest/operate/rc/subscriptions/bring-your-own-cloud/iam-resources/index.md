@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:16.283Z"
 content_hash: "f5c07e883fa8e5f7d94d069afe75ad78441f9901dfd70e11bc39a0e162fb016e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create IAM resources for AWS cloud accounts","→","Create IAM resources for AWS cloud accounts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create IAM resources for AWS cloud accounts","→","Create IAM resources for AWS cloud accounts"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/cloud-account-settings/index.md", "title": "Create and edit Cloud accounts"}
-nav_next: {"path": "redis/docs/latest/operate/redisinsight/configuration/index.md", "title": "Redis Insight configuration settings"}
+nav_prev: {"path": "../cloud-account-settings/index.md", "title": "Create and edit Cloud accounts"}
+nav_next: {"path": "../../../../redisinsight/configuration/index.md", "title": "Redis Insight configuration settings"}
 ---
 
 # Create IAM resources for AWS cloud accounts

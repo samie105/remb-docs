@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:50.439Z"
 content_hash: "e4d71fb8c4e225e58939fd7a674a04ed6d6c702f9855a2c83021cda33ffe63a8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Triggers","→","Triggers","→\n      \n        User functions","→","User functions"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Triggers","→","Triggers","→\n      \n        User functions","→","User functions"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/stream_triggers/index.md", "title": "Stream triggers"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/configuration/index.md", "title": "Configuration"}
+nav_prev: {"path": "../stream_triggers/index.md", "title": "Stream triggers"}
+nav_next: {"path": "../../../configuration/index.md", "title": "Configuration"}
 ---
 
 # User functions

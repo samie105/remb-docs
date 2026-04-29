@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:08.292Z"
 content_hash: "af607ec05b39301aff720f2bc45d75519f15bacecc9075f398f8612410016829"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        Aggregations","→","Aggregations"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        Aggregations","→","Aggregations"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations-syntax/index.md", "title": "FT.AGGREGATE order of operations"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/autocomplete/index.md", "title": "Autocomplete with Redis"}
+nav_prev: {"path": "../aggregations-syntax/index.md", "title": "FT.AGGREGATE order of operations"}
+nav_next: {"path": "../autocomplete/index.md", "title": "Autocomplete with Redis"}
 ---
 
 # Aggregations

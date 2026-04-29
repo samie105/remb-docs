@@ -11,8 +11,8 @@ menu_path: ["public Folder"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/proxy/index.md", "title": "Proxy"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/src-folder/index.md", "title": "src Directory"}
+nav_prev: {"path": "../proxy/index.md", "title": "Proxy"}
+nav_next: {"path": "../src-folder/index.md", "title": "src Directory"}
 ---
 
 # public Folder

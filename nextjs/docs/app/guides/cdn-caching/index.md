@@ -11,8 +11,8 @@ menu_path: ["Using a CDN with Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/caching-without-cache-components/index.md", "title": "Caching and Revalidating (Previous Model)"}
-nav_next: {"path": "nextjs/docs/app/guides/ci-build-caching/index.md", "title": "How to configure Continuous Integration (CI) build caching"}
+nav_prev: {"path": "../caching-without-cache-components/index.md", "title": "Caching and Revalidating (Previous Model)"}
+nav_next: {"path": "../ci-build-caching/index.md", "title": "How to configure Continuous Integration (CI) build caching"}
 ---
 
 # Using a CDN with Next.js

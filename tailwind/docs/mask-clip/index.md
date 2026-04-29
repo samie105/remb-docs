@@ -10,8 +10,8 @@ content_hash: "ad7c3c89ef0dd906373da75882d0279deb891aa44751c7cff22c9d25b3e19bfa"
 menu_path: ["mask-clip"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/background-blend-mode/index.md", "title": "background-blend-mode"}
-nav_next: {"path": "tailwind/docs/mask-composite/index.md", "title": "mask-composite"}
+nav_prev: {"path": "../background-blend-mode/index.md", "title": "background-blend-mode"}
+nav_next: {"path": "../mask-composite/index.md", "title": "mask-composite"}
 ---
 
 # mask-clip

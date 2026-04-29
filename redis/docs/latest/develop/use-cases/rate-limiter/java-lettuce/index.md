@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:02.070Z"
 content_hash: "87b22c5546a86f574c52c5e63ee015d349a6191225009440a5a9432277de9f38"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Java (Lettuce)","→","Token bucket rate limiter with Redis and Java (Lettuce)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Java (Lettuce)","→","Token bucket rate limiter with Redis and Java (Lettuce)"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/nodejs/index.md", "title": "Token bucket rate limiter with Redis and Node.js"}
+nav_prev: {"path": "../java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
+nav_next: {"path": "../nodejs/index.md", "title": "Token bucket rate limiter with Redis and Node.js"}
 ---
 
 # Token bucket rate limiter with Redis and Java (Lettuce)

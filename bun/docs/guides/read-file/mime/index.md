@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:42.861Z"
 content_hash: "91fe4a1c576fc74bac45ae1de90dfa6cd247308a2fefcc35f0ffd6e56a8145cf"
 menu_path: ["Get the MIME type of a file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/read-file/json/index.md", "title": "Read a JSON file"}
-nav_next: {"path": "bun/docs/guides/read-file/stream/index.md", "title": "Read a file as a ReadableStream"}
+nav_prev: {"path": "../json/index.md", "title": "Read a JSON file"}
+nav_next: {"path": "../stream/index.md", "title": "Read a file as a ReadableStream"}
 ---
 
 [Skip to main content](#content-area)

@@ -11,8 +11,8 @@ menu_path: ["CLI"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/eslint/index.md", "title": "ESLint Plugin"}
-nav_next: {"path": "nextjs/docs/app/api-reference/cli/create-next-app/index.md", "title": "create-next-app"}
+nav_prev: {"path": "../config/eslint/index.md", "title": "ESLint Plugin"}
+nav_next: {"path": "create-next-app/index.md", "title": "create-next-app"}
 ---
 
 # CLI

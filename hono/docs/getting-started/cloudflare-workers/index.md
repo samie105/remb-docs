@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:55.763Z"
 content_hash: "f0b86bb7a962f637639550d54ebfb19d6529766b734ce855a5e977953840d403"
 menu_path: ["Cloudflare Workers ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/getting-started/basic/index.md", "title": "Getting Started \u200b"}
-nav_next: {"path": "hono/docs/getting-started/cloudflare-pages/index.md", "title": "Cloudflare Pages \u200b"}
+nav_prev: {"path": "../basic/index.md", "title": "Getting Started \u200b"}
+nav_next: {"path": "../cloudflare-pages/index.md", "title": "Cloudflare Pages \u200b"}
 ---
 
 [Cloudflare Workers](https://workers.cloudflare.com/) is a JavaScript edge runtime on Cloudflare CDN.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:45.648Z"
 content_hash: "912c3eb9eb573a428c2c86713227e091de083ed2e488d3c38618fa18ed974d43"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        FT.AGGREGATE order of operations","→","FT.AGGREGATE order of operations"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        FT.AGGREGATE order of operations","→","FT.AGGREGATE order of operations"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/index.md", "title": "Search concepts"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/index.md", "title": "Aggregations"}
+nav_prev: {"path": "../index.md", "title": "Search concepts"}
+nav_next: {"path": "../aggregations/index.md", "title": "Aggregations"}
 ---
 
 # FT.AGGREGATE order of operations

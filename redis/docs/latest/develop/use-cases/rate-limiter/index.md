@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:48.414Z"
 content_hash: "d6ed578f0dfb3559af50522fcb44b4e817299ed6fe8561846262e8e69cc3832f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/rust/index.md", "title": "Redis leaderboard with Rust"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
+nav_prev: {"path": "../leaderboard/rust/index.md", "title": "Redis leaderboard with Rust"}
+nav_next: {"path": "dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
 ---
 
 # Token bucket rate limiter with Redis

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:04.509Z"
 content_hash: "fa0483bcbcf50f311d7a9bddc48b31b1c72959faf05337b79f6f502749f785b3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Rust","→","Redis session store with Rust"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Rust","→","Redis session store with Rust"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/ruby/index.md", "title": "Redis session store with Ruby"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/index.md", "title": "Rolling sensor graph demo with Redis"}
+nav_prev: {"path": "../ruby/index.md", "title": "Redis session store with Ruby"}
+nav_next: {"path": "../../time-series-dashboard/index.md", "title": "Rolling sensor graph demo with Redis"}
 ---
 
 # Redis session store with Rust

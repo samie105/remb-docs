@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:47.887Z"
 content_hash: "6bbcd9e5cff9a36ff23bfb13f261b5dadc595ec0a0784ce389dd9cecb89b30f1"
 menu_path: ["Streaming HTTP Server with Node.js Streams"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/http/stream-iterator/index.md", "title": "Streaming HTTP Server with Async Iterators"}
-nav_next: {"path": "bun/docs/guides/http/tls/index.md", "title": "Configure TLS on an HTTP server"}
+nav_prev: {"path": "../stream-iterator/index.md", "title": "Streaming HTTP Server with Async Iterators"}
+nav_next: {"path": "../tls/index.md", "title": "Configure TLS on an HTTP server"}
 ---
 
 [Skip to main content](#content-area)

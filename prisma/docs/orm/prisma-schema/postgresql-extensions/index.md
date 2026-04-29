@@ -11,8 +11,8 @@ menu_path: ["PostgreSQL extensions"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/introspection/index.md", "title": "What is introspection?"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/index.md", "title": "Overview of Prisma Migrate"}
+nav_prev: {"path": "../introspection/index.md", "title": "What is introspection?"}
+nav_next: {"path": "../../prisma-migrate/index.md", "title": "Overview of Prisma Migrate"}
 ---
 
 How to install and manage PostgreSQL extensions with Prisma ORM using customized migrations, and how to use them in Prisma Client
@@ -31,7 +31,7 @@ Let's walk through an example of installing the `citext` extension.
 
 ### [1\. Create an empty migration](#1-create-an-empty-migration)
 
-Run the following command to create an empty migration that you can [customize](prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md):
+Run the following command to create an empty migration that you can [customize](../../prisma-migrate/workflows/customizing-migrations/index.md):
 
 ### [2\. Add a SQL statement to install the extension](#2-add-a-sql-statement-to-install-the-extension)
 
@@ -47,7 +47,7 @@ Run the following command to deploy the migration and apply to your database:
 
 ### [4\. Use the extension](#4-use-the-extension)
 
-You can now use the extension in your queries with Prisma Client. If the extension has special data types that currently can't be natively represented in the Prisma schema, you can still define fields of that type on your models using the [`Unsupported`](prisma/docs/orm/prisma-schema/data-model/models/index.md#unsupported-types) fallback type.
+You can now use the extension in your queries with Prisma Client. If the extension has special data types that currently can't be natively represented in the Prisma schema, you can still define fields of that type on your models using the [`Unsupported`](../data-model/models/index.md#unsupported-types) fallback type.
 
 ## [PostGIS extension for spatial data](#postgis-extension-for-spatial-data)
 
@@ -141,4 +141,4 @@ const sorted = await prisma.location.findMany({
 });
 ```
 
-For detailed usage, examples, and real-world use cases, see [Working with geometry fields](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md).
+For detailed usage, examples, and real-world use cases, see [Working with geometry fields](../../prisma-client/special-fields-and-types/working-with-geometry-fields/index.md).

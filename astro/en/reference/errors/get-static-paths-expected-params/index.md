@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:50.814Z"
 content_hash: "d074504d998c3184f1ce32b5af8b7b05eb19d60947a147fdb49391234d022114"
 menu_path: ["Missing params property on getStaticPaths route."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/get-image-not-used-on-server/index.md", "title": "getImage() must be used on the server."}
-nav_next: {"path": "astro/en/reference/errors/get-static-paths-invalid-route-param/index.md", "title": "Invalid route parameter returned by getStaticPaths()."}
+nav_prev: {"path": "../get-image-not-used-on-server/index.md", "title": "getImage() must be used on the server."}
+nav_next: {"path": "../get-static-paths-invalid-route-param/index.md", "title": "Invalid route parameter returned by getStaticPaths()."}
 ---
 
 # Missing params property on getStaticPaths route.

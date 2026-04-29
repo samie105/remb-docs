@@ -10,8 +10,8 @@ content_hash: "89f2f3f40840e8158453d12dbfb396516e4afa7998976a675197e2e98b91bc17"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix C. SQL Key Words"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/datetime-appendix.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0B.\u00a0Date/Time Support"}
-nav_next: {"path": "postgres/docs/current/sourcerepo.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0I.\u00a0The Source Code Repository"}
+nav_prev: {"path": "../datetime-appendix.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0B.\u00a0Date/Time Support"}
+nav_next: {"path": "../sourcerepo.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0I.\u00a0The Source Code Repository"}
 ---
 
 | Key Word | PostgreSQL | SQL:2023 | SQL:2016 | SQL-92 |

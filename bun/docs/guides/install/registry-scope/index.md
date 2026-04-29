@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:14.405Z"
 content_hash: "63a65bba32195b150636d3fcd7cbca672cdcfc48a42226bfa097b8a71ff7a1b3"
 menu_path: ["Configure a private registry for an organization scope with bun install"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/npm-alias/index.md", "title": "Install a package under a different name"}
-nav_next: {"path": "bun/docs/guides/install/trusted/index.md", "title": "Add a trusted dependency"}
+nav_prev: {"path": "../npm-alias/index.md", "title": "Install a package under a different name"}
+nav_next: {"path": "../trusted/index.md", "title": "Add a trusted dependency"}
 ---
 
 # as a string

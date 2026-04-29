@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:25.486Z"
 content_hash: "212e6726aff244d6b353af6da432605c4dd1b54097e098a4d28026d77083c692"
 menu_path: ["Vanilla client"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/useInfiniteQuery/index.md", "title": "useInfiniteQuery"}
+nav_prev: {"path": "../useInfiniteQuery/index.md", "title": "useInfiniteQuery"}
 ---
 
 The magic of tRPC is making _strongly typed_ API calls without relying on code generation. With full-stack TypeScript projects, you can directly _import types from the server into the client_! This is a vital part of how tRPC works.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:05.883Z"
 content_hash: "20854a16a03259fc0a6191932922e014f4a15ffbda160438a008c12e5bb387db"
 menu_path: ["Deploy your Astro Site to Fly.io"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/fleek/index.md", "title": "Deploy your Astro Site to Fleek"}
-nav_next: {"path": "astro/en/guides/deploy/github/index.md", "title": "Deploy your Astro Site to GitHub Pages"}
+nav_prev: {"path": "../fleek/index.md", "title": "Deploy your Astro Site to Fleek"}
+nav_next: {"path": "../github/index.md", "title": "Deploy your Astro Site to GitHub Pages"}
 ---
 
 # Deploy your Astro Site to Fly.io

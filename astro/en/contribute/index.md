@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:10.420Z"
 content_hash: "b635f7d7600c0b35f1b91698eff4cca5850fc7c5c0c425a14e77b645f59441c0"
 menu_path: ["Contribute to Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-wordpress/index.md", "title": "Migrating from WordPress"}
-nav_next: {"path": "astro/en/reference/astro-syntax/index.md", "title": "Template expressions reference"}
+nav_prev: {"path": "../guides/migrate-to-astro/from-wordpress/index.md", "title": "Migrating from WordPress"}
+nav_next: {"path": "../reference/astro-syntax/index.md", "title": "Template expressions reference"}
 ---
 
 # Contribute to Astro

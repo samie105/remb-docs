@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:33.229Z"
 content_hash: "cea822d6ecd8466a2389fb5a808b04db3557ce3babed248c2e6bf3c7ad024b72"
 menu_path: ["Add a tarball dependency"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/add-peer/index.md", "title": "Add a peer dependency"}
-nav_next: {"path": "bun/docs/guides/install/azure-artifacts/index.md", "title": "Using bun install with an Azure Artifacts npm registry"}
+nav_prev: {"path": "../add-peer/index.md", "title": "Add a peer dependency"}
+nav_next: {"path": "../azure-artifacts/index.md", "title": "Using bun install with an Azure Artifacts npm registry"}
 ---
 
 [Skip to main content](#content-area)

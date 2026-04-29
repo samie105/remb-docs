@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:04.159Z"
 content_hash: "110ca542d0335d10c1a233572789362d57a381efeb388987a90708c7f73b641e"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Egress","Egress"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Egress","Egress"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/ipv4/index.md", "title": "Manage IPv4 usage"}
+nav_prev: {"path": "../edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
+nav_next: {"path": "../ipv4/index.md", "title": "Manage IPv4 usage"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:18.070Z"
 content_hash: "8a5aa660adb2daba560aee885d688b257055ce2b88b83a7dae50854a5e824166"
 menu_path: ["Function: createWSClient()"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/createTRPCUntypedClient/index.md", "title": "Function: createTRPCUntypedClient()"}
-nav_next: {"path": "trpc/docs/typedoc/client/index/functions/experimental_localLink/index.md", "title": "Function: experimental_localLink()"}
+nav_prev: {"path": "../createTRPCUntypedClient/index.md", "title": "Function: createTRPCUntypedClient()"}
+nav_next: {"path": "../experimental_localLink/index.md", "title": "Function: experimental_localLink()"}
 ---
 
 Function: createWSClient() | tRPC

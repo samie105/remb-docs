@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:37.360Z"
 content_hash: "1e62adb5a5a8c72c2c2f839569a306323f62349c60c9720b21167101962dcf09"
 menu_path: ["Using bun install with an Azure Artifacts npm registry"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/add-tarball/index.md", "title": "Add a tarball dependency"}
-nav_next: {"path": "bun/docs/guides/install/cicd/index.md", "title": "Install dependencies with Bun in GitHub Actions"}
+nav_prev: {"path": "../add-tarball/index.md", "title": "Add a tarball dependency"}
+nav_next: {"path": "../cicd/index.md", "title": "Install dependencies with Bun in GitHub Actions"}
 ---
 
 # You can use an environment variable here

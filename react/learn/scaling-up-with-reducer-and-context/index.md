@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:43.678Z"
 content_hash: "f1414b457841a360e90ceafca7b36065928ab2742bb5cb04afa5aaef8b1bb33b"
 menu_path: ["Scaling Up with Reducer and Context"]
 section_path: []
-nav_prev: {"path": "react/learn/passing-data-deeply-with-context/index.md", "title": "Passing Data Deeply with Context"}
-nav_next: {"path": "react/learn/escape-hatches/index.md", "title": "Escape Hatches"}
+nav_prev: {"path": "../passing-data-deeply-with-context/index.md", "title": "Passing Data Deeply with Context"}
+nav_next: {"path": "../escape-hatches/index.md", "title": "Escape Hatches"}
 ---
 
 Reducers let you consolidate a component’s state update logic. Context lets you pass information deep down to other components. You can combine reducers and context together to manage state of a complex screen.
@@ -23,9 +23,9 @@ Reducers let you consolidate a component’s state update logic. Context lets yo
 
 ## Combining a reducer with context[](#combining-a-reducer-with-context "Link for Combining a reducer with context ")
 
-In this example from [the introduction to reducers](react/learn/extracting-state-logic-into-a-reducer/index.md), the state is managed by a reducer. The reducer function contains all of the state update logic and is declared at the bottom of this file:
+In this example from [the introduction to reducers](../extracting-state-logic-into-a-reducer/index.md), the state is managed by a reducer. The reducer function contains all of the state update logic and is declared at the bottom of this file:
 
-A reducer helps keep the event handlers short and concise. However, as your app grows, you might run into another difficulty. **Currently, the `tasks` state and the `dispatch` function are only available in the top-level `TaskApp` component.** To let other components read the list of tasks or change it, you have to explicitly [pass down](react/learn/passing-props-to-a-component/index.md) the current state and the event handlers that change it as props.
+A reducer helps keep the event handlers short and concise. However, as your app grows, you might run into another difficulty. **Currently, the `tasks` state and the `dispatch` function are only available in the top-level `TaskApp` component.** To let other components read the list of tasks or change it, you have to explicitly [pass down](../passing-props-to-a-component/index.md) the current state and the event handlers that change it as props.
 
 For example, `TaskApp` passes a list of tasks and the event handlers to `TaskList`:
 
@@ -41,7 +41,7 @@ And `TaskList` passes the event handlers to `Task`:
 
 In a small example like this, this works well, but if you have tens or hundreds of components in the middle, passing down all state and functions can be quite frustrating!
 
-This is why, as an alternative to passing them through props, you might want to put both the `tasks` state and the `dispatch` function [into context.](react/learn/passing-data-deeply-with-context/index.md) **This way, any component below `TaskApp` in the tree can read the tasks and dispatch actions without the repetitive “prop drilling”.**
+This is why, as an alternative to passing them through props, you might want to put both the `tasks` state and the `dispatch` function [into context.](../passing-data-deeply-with-context/index.md) **This way, any component below `TaskApp` in the tree can read the tasks and dispatch actions without the repetitive “prop drilling”.**
 
 Here is how you can combine a reducer with context:
 
@@ -57,7 +57,7 @@ The `useReducer` Hook returns the current `tasks` and the `dispatch` function th
 const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 ```
 
-To pass them down the tree, you will [create](react/learn/passing-data-deeply-with-context/index.md#step-2-use-the-context) two separate contexts:
+To pass them down the tree, you will [create](../passing-data-deeply-with-context/index.md#step-2-use-the-context) two separate contexts:
 
 *   `TasksContext` provides the current list of tasks.
 *   `TasksDispatchContext` provides the function that lets components dispatch actions.
@@ -68,7 +68,7 @@ Here, you’re passing `null` as the default value to both contexts. The actual 
 
 ### Step 2: Put state and dispatch into context[](#step-2-put-state-and-dispatch-into-context "Link for Step 2: Put state and dispatch into context ")
 
-Now you can import both contexts in your `TaskApp` component. Take the `tasks` and `dispatch` returned by `useReducer()` and [provide them](react/learn/passing-data-deeply-with-context/index.md#step-3-provide-the-context) to the entire tree below:
+Now you can import both contexts in your `TaskApp` component. Take the `tasks` and `dispatch` returned by `useReducer()` and [provide them](../passing-data-deeply-with-context/index.md#step-3-provide-the-context) to the entire tree below:
 
 ```
 import { TasksContext, TasksDispatchContext } from './TasksContext.js';export default function TaskApp() {const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);// ...return (<TasksContext value={tasks}><TasksDispatchContext value={dispatch}>        ...</TasksDispatchContext></TasksContext>);}
@@ -114,7 +114,7 @@ This file is about to get crowded! You’ll move the reducer into that same file
 
 1.  It will manage the state with a reducer.
 2.  It will provide both contexts to components below.
-3.  It will [take `children` as a prop](react/learn/passing-props-to-a-component/index.md#passing-jsx-as-children) so you can pass JSX to it.
+3.  It will [take `children` as a prop](../passing-props-to-a-component/index.md#passing-jsx-as-children) so you can pass JSX to it.
 
 ```
 export function TasksProvider({ children }) {const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);return (<TasksContext value={tasks}><TasksDispatchContext value={dispatch}>{children}</TasksDispatchContext></TasksContext>);}
@@ -217,9 +217,9 @@ You can think of `TasksProvider` as a part of the screen that knows how to deal 
 
 ### Note
 
-Functions like `useTasks` and `useTasksDispatch` are called _[Custom Hooks.](react/learn/reusing-logic-with-custom-hooks/index.md)_ Your function is considered a custom Hook if its name starts with `use`. This lets you use other Hooks, like `useContext`, inside it.
+Functions like `useTasks` and `useTasksDispatch` are called _[Custom Hooks.](../reusing-logic-with-custom-hooks/index.md)_ Your function is considered a custom Hook if its name starts with `use`. This lets you use other Hooks, like `useContext`, inside it.
 
-As your app grows, you may have many context-reducer pairs like this. This is a powerful way to scale your app and [lift state up](react/learn/sharing-state-between-components/index.md) without too much work whenever you want to access the data deep in the tree.
+As your app grows, you may have many context-reducer pairs like this. This is a powerful way to scale your app and [lift state up](../sharing-state-between-components/index.md) without too much work whenever you want to access the data deep in the tree.
 
 ## Recap[](#recap "Link for Recap")
 

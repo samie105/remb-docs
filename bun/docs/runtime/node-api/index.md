@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:00.541Z"
 content_hash: "6fe8eee05a6cd435e47405edb0b2c290665eb2148a3d27ae0e726a1da2f9f8fc"
 menu_path: ["Node-API"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/networking/udp/index.md", "title": "UDP"}
-nav_next: {"path": "bun/docs/runtime/nodejs-compat/index.md", "title": "Node.js Compatibility"}
+nav_prev: {"path": "../networking/udp/index.md", "title": "UDP"}
+nav_next: {"path": "../nodejs-compat/index.md", "title": "Node.js Compatibility"}
 ---
 
 [Skip to main content](#content-area)

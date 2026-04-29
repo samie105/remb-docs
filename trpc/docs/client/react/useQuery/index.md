@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:12.303Z"
 content_hash: "e778d5684925393c938a9c752c3a882915b0d119ef582f4b0c53996f14836887"
 menu_path: ["useQuery()"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/react/useQueries/index.md", "title": "useQueries()"}
-nav_next: {"path": "trpc/docs/client/react/useSubscription/index.md", "title": "useSubscription()"}
+nav_prev: {"path": "../useQueries/index.md", "title": "useQueries()"}
+nav_next: {"path": "../useSubscription/index.md", "title": "useSubscription()"}
 ---
 
 `useQuery` is the primary hook for data fetching, it works similarly to `@tanstack/react-query`'s `useQuery`, but with some `trpc` specific options and additional features like streaming.
@@ -49,9 +49,9 @@ tsx
 
 Since `UseTRPCQueryOptions` extends `@tanstack/react-query`'s `UseQueryOptions`, you can use any of their options here such as `enabled`, `refetchOnWindowFocus`, etc. We also have some `trpc` specific options that let you opt in or out of certain behaviors on a per-procedure level:
 
-*   **`trpc.ssr`:** If you have `ssr: true` in your [global config](trpc/docs/client/nextjs/pages-router/setup/index.md#ssr-boolean-default-false), you can set this to false to disable ssr for this particular query. _Note that this does not work the other way around, i.e., you can not enable ssr on a procedure if your global config is set to false._
-*   **`trpc.abortOnUnmount`:** Override the [global config](trpc/docs/client/nextjs/pages-router/setup/index.md#config-callback) and opt in or out of aborting queries on unmount.
-*   **`trpc.context`:** Add extra meta data that could be used in [Links](trpc/docs/client/links/index.md).
+*   **`trpc.ssr`:** If you have `ssr: true` in your [global config](../../nextjs/pages-router/setup/index.md#ssr-boolean-default-false), you can set this to false to disable ssr for this particular query. _Note that this does not work the other way around, i.e., you can not enable ssr on a procedure if your global config is set to false._
+*   **`trpc.abortOnUnmount`:** Override the [global config](../../nextjs/pages-router/setup/index.md#config-callback) and opt in or out of aborting queries on unmount.
+*   **`trpc.context`:** Add extra meta data that could be used in [Links](../../links/index.md).
 
 tip
 

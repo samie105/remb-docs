@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:58.250Z"
 content_hash: "92242d5f36301dfcfa718c512aa7389c0947dbc81f342935869dff5c8ed7c791"
 menu_path: ["Auth","Auth","More","More","More","JSON Web Tokens (JWT)","JSON Web Tokens (JWT)","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","JSON Web Tokens (JWT)","JSON Web Tokens (JWT)","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/auth/jwt-fields/index.md", "title": "JWT Claims Reference"}
-nav_next: {"path": "supabase/docs/guides/auth/managing-user-data/index.md", "title": "User Management"}
+nav_prev: {"path": "../jwt-fields/index.md", "title": "JWT Claims Reference"}
+nav_next: {"path": "../managing-user-data/index.md", "title": "User Management"}
 ---
 
 # 

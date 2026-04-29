@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:03.210Z"
 content_hash: "a75999db42d4b02f2c1c8433363768e011da9f5048dc5fe9f13e527c5c547845"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Overview","Overview"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/auth/users/index.md", "title": "Users"}
-nav_next: {"path": "supabase/docs/guides/cron/index.md", "title": "Cron"}
+nav_prev: {"path": "../auth/users/index.md", "title": "Users"}
+nav_next: {"path": "../cron/index.md", "title": "Cron"}
 ---
 
 # 

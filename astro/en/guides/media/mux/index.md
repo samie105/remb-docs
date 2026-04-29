@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:30.018Z"
 content_hash: "6c3e67c9267c220235cdc055f367a4d884e94df09a69adc6fb2f230eebc338d0"
 menu_path: ["Mux & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/media/cloudinary/index.md", "title": "Cloudinary & Astro"}
-nav_next: {"path": "astro/en/guides/ecommerce/index.md", "title": "E-commerce"}
+nav_prev: {"path": "../cloudinary/index.md", "title": "Cloudinary & Astro"}
+nav_next: {"path": "../../ecommerce/index.md", "title": "E-commerce"}
 ---
 
 # Mux & Astro

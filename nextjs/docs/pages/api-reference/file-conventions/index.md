@@ -11,8 +11,8 @@ menu_path: ["File-system conventions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/script/index.md", "title": "Script"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
+nav_prev: {"path": "../components/script/index.md", "title": "Script"}
+nav_next: {"path": "instrumentation/index.md", "title": "instrumentation.js"}
 ---
 
 # File-system conventions

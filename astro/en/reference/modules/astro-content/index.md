@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:42.356Z"
 content_hash: "efaab34f952a8af04b10a054716e2593fd7e930253c1a8292bedd188083b3d4a"
 menu_path: ["Content Collections API Reference"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/modules/astro-config/index.md", "title": "Config imports API Reference"}
-nav_next: {"path": "astro/en/reference/modules/astro-env/index.md", "title": "Environment Variables API Reference"}
+nav_prev: {"path": "../astro-config/index.md", "title": "Config imports API Reference"}
+nav_next: {"path": "../astro-env/index.md", "title": "Environment Variables API Reference"}
 ---
 
 # Content Collections API Reference

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:42.089Z"
 content_hash: "4740944457f2b650aa78cde192d3115e5e89243ebec90435cded6cd85a65c592"
 menu_path: ["PostgreSQL: Documentation: 18: 9.11. Geometric Functions and Operators"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/functions-bitstring.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.6.\u00a0Bit String Functions and Operators"}
-nav_next: {"path": "postgres/docs/current/functions-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.27.\u00a0System Information Functions and Operators"}
+nav_prev: {"path": "../functions-bitstring.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.6.\u00a0Bit String Functions and Operators"}
+nav_next: {"path": "../functions-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.27.\u00a0System Information Functions and Operators"}
 ---
 
 _`geometric_type`_ `+` `point` → ``_`geometric_type`_``

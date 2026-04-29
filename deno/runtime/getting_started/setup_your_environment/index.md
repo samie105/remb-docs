@@ -10,8 +10,8 @@ content_hash: "78289ca573400f9c191dc6bdbe32af05bd006027eb6bd135aee66cef40e4a3f1"
 menu_path: ["Set up your environment"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/getting_started/first_project/index.md", "title": "Making a Deno project"}
-nav_next: {"path": "deno/runtime/getting_started/command_line_interface/index.md", "title": "Command line interface"}
+nav_prev: {"path": "../first_project/index.md", "title": "Making a Deno project"}
+nav_next: {"path": "../command_line_interface/index.md", "title": "Command line interface"}
 ---
 
 # Load the oh-my-zsh's library.

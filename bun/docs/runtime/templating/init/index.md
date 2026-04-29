@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:55.959Z"
 content_hash: "35a544ac8dddb708fc53a7c2d45028f9bb0baee2283bc7a0fb4f11dbaac9ecd8"
 menu_path: ["bun init"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/templating/create/index.md", "title": "bun create"}
-nav_next: {"path": "bun/docs/runtime/toml/index.md", "title": "TOML"}
+nav_prev: {"path": "../create/index.md", "title": "bun create"}
+nav_next: {"path": "../../toml/index.md", "title": "TOML"}
 ---
 
 [Skip to main content](#content-area)

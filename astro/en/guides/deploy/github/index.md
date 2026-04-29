@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:15.205Z"
 content_hash: "90c5ed012b229f2dfbc9dc3651ff57709aeae41c8d7a75971a0d4b2ca4309bf5"
 menu_path: ["Deploy your Astro Site to GitHub Pages"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/flyio/index.md", "title": "Deploy your Astro Site to Fly.io"}
-nav_next: {"path": "astro/en/guides/deploy/gitlab/index.md", "title": "Deploy your Astro Site to GitLab Pages"}
+nav_prev: {"path": "../flyio/index.md", "title": "Deploy your Astro Site to Fly.io"}
+nav_next: {"path": "../gitlab/index.md", "title": "Deploy your Astro Site to GitLab Pages"}
 ---
 
 # Deploy your Astro Site to GitHub Pages

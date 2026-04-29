@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:52.664Z"
 content_hash: "cd02372b2e9659df4a6f84e9d991b2598cca93e180ade5c3f0fb53f71e0bd78e"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Compute","Compute"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Compute","Compute"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/branching/index.md", "title": "Manage Branching usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/custom-domains/index.md", "title": "Manage Custom Domain usage"}
+nav_prev: {"path": "../branching/index.md", "title": "Manage Branching usage"}
+nav_next: {"path": "../custom-domains/index.md", "title": "Manage Custom Domain usage"}
 ---
 
 # 

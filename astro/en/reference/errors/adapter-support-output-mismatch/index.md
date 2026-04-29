@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:30.136Z"
 content_hash: "2cf713ce6de24dfb7477c0e18f2a697720e198b3cb43c80cbd4179e9961cbb8c"
 menu_path: ["Adapter does not support server output."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/actions-without-server-output-error/index.md", "title": "Actions must be used with server output."}
-nav_next: {"path": "astro/en/reference/errors/astro-glob-no-match/index.md", "title": "Astro.glob() did not match any files."}
+nav_prev: {"path": "../actions-without-server-output-error/index.md", "title": "Actions must be used with server output."}
+nav_next: {"path": "../astro-glob-no-match/index.md", "title": "Astro.glob() did not match any files."}
 ---
 
 # Adapter does not support server output.

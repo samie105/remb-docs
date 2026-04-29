@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:48.756Z"
 content_hash: "01ae59109611a8360e6a96c984caf4e4ebedbd5e80a318f5646980e5e228b460"
 menu_path: ["PostgreSQL: Documentation: 18: SET TRANSACTION"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-set-session-authorization.html/index.md", "title": "PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"}
-nav_next: {"path": "postgres/docs/current/sql-set.html/index.md", "title": "PostgreSQL: Documentation: 18: SET"}
+nav_prev: {"path": "../sql-set-session-authorization.html/index.md", "title": "PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"}
+nav_next: {"path": "../sql-set.html/index.md", "title": "PostgreSQL: Documentation: 18: SET"}
 ---
 
 SET TRANSACTION — set the characteristics of the current transaction
@@ -63,9 +63,9 @@ If `SET TRANSACTION` is executed without a prior `START TRANSACTION` or `BEGIN`,
 
 It is possible to dispense with `SET TRANSACTION` by instead specifying the desired _`transaction_modes`_ in `BEGIN` or `START TRANSACTION`. But that option is not available for `SET TRANSACTION SNAPSHOT`.
 
-The session default transaction modes can also be set or examined via the configuration parameters [default\_transaction\_isolation](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-ISOLATION), [default\_transaction\_read\_only](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-READ-ONLY), and [default\_transaction\_deferrable](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-DEFERRABLE). (In fact `SET SESSION CHARACTERISTICS` is just a verbose equivalent for setting these variables with `SET`.) This means the defaults can be set in the configuration file, via `ALTER DATABASE`, etc. Consult [Chapter 19](https://www.postgresql.org/docs/current/runtime-config.html "Chapter 19. Server Configuration") for more information.
+The session default transaction modes can also be set or examined via the configuration parameters [default\_transaction\_isolation](../runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-ISOLATION), [default\_transaction\_read\_only](../runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-READ-ONLY), and [default\_transaction\_deferrable](../runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-DEFERRABLE). (In fact `SET SESSION CHARACTERISTICS` is just a verbose equivalent for setting these variables with `SET`.) This means the defaults can be set in the configuration file, via `ALTER DATABASE`, etc. Consult [Chapter 19](https://www.postgresql.org/docs/current/runtime-config.html "Chapter 19. Server Configuration") for more information.
 
-The current transaction's modes can similarly be set or examined via the configuration parameters [transaction\_isolation](postgres/docs/current/runtime-config-client.html/index.md#GUC-TRANSACTION-ISOLATION), [transaction\_read\_only](postgres/docs/current/runtime-config-client.html/index.md#GUC-TRANSACTION-READ-ONLY), and [transaction\_deferrable](postgres/docs/current/runtime-config-client.html/index.md#GUC-TRANSACTION-DEFERRABLE). Setting one of these parameters acts the same as the corresponding `SET TRANSACTION` option, with the same restrictions on when it can be done. However, these parameters cannot be set in the configuration file, or from any source other than live SQL.
+The current transaction's modes can similarly be set or examined via the configuration parameters [transaction\_isolation](../runtime-config-client.html/index.md#GUC-TRANSACTION-ISOLATION), [transaction\_read\_only](../runtime-config-client.html/index.md#GUC-TRANSACTION-READ-ONLY), and [transaction\_deferrable](../runtime-config-client.html/index.md#GUC-TRANSACTION-DEFERRABLE). Setting one of these parameters acts the same as the corresponding `SET TRANSACTION` option, with the same restrictions on when it can be done. However, these parameters cannot be set in the configuration file, or from any source other than live SQL.
 
 ## Examples
 

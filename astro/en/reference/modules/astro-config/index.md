@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:35.923Z"
 content_hash: "620ea03b36e0f9a32461559c35b6224bfd11d8174c85814235370f4094b9c5da"
 menu_path: ["Config imports API Reference"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/modules/astro-assets/index.md", "title": "Image and Assets API Reference"}
-nav_next: {"path": "astro/en/reference/modules/astro-content/index.md", "title": "Content Collections API Reference"}
+nav_prev: {"path": "../astro-assets/index.md", "title": "Image and Assets API Reference"}
+nav_next: {"path": "../astro-content/index.md", "title": "Content Collections API Reference"}
 ---
 
 # Config imports API Reference

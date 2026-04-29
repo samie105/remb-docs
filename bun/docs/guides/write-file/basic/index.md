@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:38.389Z"
 content_hash: "e7c7f62edb8e4c330f866123bd111cd3b6e84f2a9a2dadb09a3ee7dc46d327eb"
 menu_path: ["Write a string to a file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/write-file/append/index.md", "title": "Append content to a file"}
-nav_next: {"path": "bun/docs/guides/write-file/blob/index.md", "title": "Write a Blob to a file"}
+nav_prev: {"path": "../append/index.md", "title": "Append content to a file"}
+nav_next: {"path": "../blob/index.md", "title": "Write a Blob to a file"}
 ---
 
 [Skip to main content](#content-area)

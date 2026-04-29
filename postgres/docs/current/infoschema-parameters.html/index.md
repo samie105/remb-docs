@@ -10,8 +10,8 @@ content_hash: "485a770f3f339f14892a5a0f6cec545d039ce87685547b170d56ade947af680a"
 menu_path: ["PostgreSQL: Documentation: 18: 35.33. parameters"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-key-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.32.\u00a0key_column_usage"}
-nav_next: {"path": "postgres/docs/current/infoschema-referential-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.34.\u00a0referential_constraints"}
+nav_prev: {"path": "../infoschema-key-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.32.\u00a0key_column_usage"}
+nav_next: {"path": "../infoschema-referential-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.34.\u00a0referential_constraints"}
 ---
 
 | 

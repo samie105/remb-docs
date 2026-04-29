@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:02.278Z"
 content_hash: "ae8658fe05af9de57bdc37bb6a2939f0b227bba4056a372ec9cbcbc04e0ece62"
 menu_path: ["Errors"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Encapsulation/index.md", "title": "Encapsulation"}
-nav_next: {"path": "fastify/docs/latest/Reference/HTTP2/index.md", "title": "HTTP2"}
+nav_prev: {"path": "../Encapsulation/index.md", "title": "Encapsulation"}
+nav_next: {"path": "../HTTP2/index.md", "title": "HTTP2"}
 ---
 
 Version: latest (v5.8.x)

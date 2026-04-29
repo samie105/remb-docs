@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:43.545Z"
 content_hash: "198bae0d20be8ce01ff5931fa6c3af8d3d55117c9376455ad95cb81d15a56abb"
 menu_path: ["Data REST API","Data REST API","Security","Security","Securing your API","Securing your API"]
 section_path: ["Data REST API","Data REST API","Security","Security","Securing your API","Securing your API"]
-nav_prev: {"path": "supabase/docs/guides/api/rest/postgrest-error-codes/index.md", "title": "Error Codes"}
-nav_next: {"path": "supabase/docs/guides/api/sql-to-api/index.md", "title": "Converting SQL to JavaScript API"}
+nav_prev: {"path": "../rest/postgrest-error-codes/index.md", "title": "Error Codes"}
+nav_next: {"path": "../sql-to-api/index.md", "title": "Converting SQL to JavaScript API"}
 ---
 
 # 

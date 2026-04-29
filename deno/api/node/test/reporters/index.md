@@ -10,8 +10,8 @@ content_hash: "77821fa5e14ebc08f264f78ed44870bb59460adf3d31230f6df48d414c47e3a8"
 menu_path: ["test/reporters - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/test/index.md", "title": "test - Node documentation"}
-nav_next: {"path": "deno/api/node/timers/index.md", "title": "timers - Node documentation"}
+nav_prev: {"path": "../index.md", "title": "test - Node documentation"}
+nav_next: {"path": "../../timers/index.md", "title": "timers - Node documentation"}
 ---
 
 ### Usage in Deno

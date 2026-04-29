@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:59.608Z"
 content_hash: "68961a8d6cbb23562c4ad30ed1a8ccd89b6de60e1096b7bc0e7acfa7d6aa12a8"
 menu_path: ["Error loading page"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/streams/to-arraybuffer/index.md", "title": "Convert a ReadableStream to an ArrayBuffer"}
-nav_next: {"path": "bun/docs/guides/streams/to-buffer/index.md", "title": "Convert a ReadableStream to a Buffer"}
+nav_prev: {"path": "../to-arraybuffer/index.md", "title": "Convert a ReadableStream to an ArrayBuffer"}
+nav_next: {"path": "../to-buffer/index.md", "title": "Convert a ReadableStream to a Buffer"}
 ---
 
 # Error loading page

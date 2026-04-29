@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:13.406Z"
 content_hash: "d84cddd5dec93fa5d0832267338d62600dcb1aa4b72f7eb174a961055de28a8f"
 menu_path: ["Run Bun as a daemon with PM2"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/ecosystem/nuxt/index.md", "title": "Build an app with Nuxt and Bun"}
-nav_next: {"path": "bun/docs/guides/ecosystem/prisma/index.md", "title": "Use Prisma with Bun"}
+nav_prev: {"path": "../nuxt/index.md", "title": "Build an app with Nuxt and Bun"}
+nav_next: {"path": "../prisma/index.md", "title": "Use Prisma with Bun"}
 ---
 
 [Skip to main content](#content-area)

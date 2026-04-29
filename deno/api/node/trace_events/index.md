@@ -10,8 +10,8 @@ content_hash: "7a33d3421e429b64639e67e5a68ded270eb38420c77f26bb9d46875db09ae188"
 menu_path: ["trace_events - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/tls/index.md", "title": "tls - Node documentation"}
-nav_next: {"path": "deno/api/node/tty/index.md", "title": "tty - Node documentation"}
+nav_prev: {"path": "../tls/index.md", "title": "tls - Node documentation"}
+nav_next: {"path": "../tty/index.md", "title": "tty - Node documentation"}
 ---
 
 ### Usage in Deno

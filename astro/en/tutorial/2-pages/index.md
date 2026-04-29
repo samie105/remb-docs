@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:14.653Z"
 content_hash: "52bd9b1f1e052e48a38bb25ecb3885643f389bb626741b3138135d5e2cfda7c5"
 menu_path: ["Check in: Unit 2 - Pages"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/1-setup/index.md", "title": "Check in: Unit 1 - Setup"}
-nav_next: {"path": "astro/en/tutorial/3-components/index.md", "title": "Check in: Unit 3 - Components"}
+nav_prev: {"path": "../1-setup/index.md", "title": "Check in: Unit 1 - Setup"}
+nav_next: {"path": "../3-components/index.md", "title": "Check in: Unit 3 - Components"}
 ---
 
 # Check in: Unit 2 - Pages

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:27.264Z"
 content_hash: "e4361d63befc44abb8018343b0c24ee6013d94927a69a1787306e0ab025d1670"
 menu_path: ["Check in: Unit 3 - Components"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/2-pages/index.md", "title": "Check in: Unit 2 - Pages"}
-nav_next: {"path": "astro/en/tutorial/4-layouts/index.md", "title": "Check in: Unit 4 - Layouts"}
+nav_prev: {"path": "../2-pages/index.md", "title": "Check in: Unit 2 - Pages"}
+nav_next: {"path": "../4-layouts/index.md", "title": "Check in: Unit 4 - Layouts"}
 ---
 
 # Check in: Unit 3 - Components

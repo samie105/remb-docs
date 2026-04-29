@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:51:19.164Z"
 content_hash: "37b0f23b86f6672664d712a35cdbc5bba89cf3b3510e97fe83907341eb76296c"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Sentry integration","Sentry integration"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Sentry integration","Sentry integration"]
-nav_prev: {"path": "supabase/docs/guides/telemetry/reports/index.md", "title": "Reports"}
+nav_prev: {"path": "../reports/index.md", "title": "Reports"}
 ---
 
 # 

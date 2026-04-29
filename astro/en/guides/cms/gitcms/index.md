@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:18.276Z"
 content_hash: "332ef04f614fdaf61abb9789c114a41b0c249ab07b3fd8582286d93c4fde06a9"
 menu_path: ["GitCMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/ghost/index.md", "title": "Ghost & Astro"}
-nav_next: {"path": "astro/en/guides/cms/hashnode/index.md", "title": "Hashnode & Astro"}
+nav_prev: {"path": "../ghost/index.md", "title": "Ghost & Astro"}
+nav_next: {"path": "../hashnode/index.md", "title": "Hashnode & Astro"}
 ---
 
 # GitCMS & Astro

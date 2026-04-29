@@ -11,8 +11,8 @@ menu_path: ["API Routes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/custom-document/index.md", "title": "Custom Document"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/custom-error/index.md", "title": "Custom Errors"}
+nav_prev: {"path": "../custom-document/index.md", "title": "Custom Document"}
+nav_next: {"path": "../custom-error/index.md", "title": "Custom Errors"}
 ---
 
 # API Routes

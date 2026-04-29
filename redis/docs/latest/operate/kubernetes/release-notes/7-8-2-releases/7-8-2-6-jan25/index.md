@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:20.523Z"
 content_hash: "344996772b21c4c51657e22a57fe4cdabcf15ef01ef9348130faebf01e6d2546"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 (Jan 2025) release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 (Jan 2025) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.2-6 (Jan 2025) release notes","→","Redis Enterprise for Kubernetes 7.8.2-6 (Jan 2025) release notes"]
-nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-4-2-releases/7-4-2-2/index.md", "title": "Redis Enterprise for Kubernetes 7.4.2-2 (Feb 2024) release notes"}
-nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-2-releases/7-8-2-6-nov24/index.md", "title": "Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"}
+nav_prev: {"path": "../../7-4-2-releases/7-4-2-2/index.md", "title": "Redis Enterprise for Kubernetes 7.4.2-2 (Feb 2024) release notes"}
+nav_next: {"path": "../7-8-2-6-nov24/index.md", "title": "Redis Enterprise for Kubernetes 7.8.2-6 (Nov 2024) release notes"}
 ---
 
 # Redis Enterprise for Kubernetes 7.8.2-6 (Jan 2025) release notes

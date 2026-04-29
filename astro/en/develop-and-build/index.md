@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:08.245Z"
 content_hash: "b52eb773b7e963a7dc675f2626f7132add138666fed83b9357a6b223737e7c92"
 menu_path: ["Develop and build"]
 section_path: []
-nav_prev: {"path": "astro/en/basics/project-structure/index.md", "title": "Project structure"}
-nav_next: {"path": "astro/en/guides/configuring-astro/index.md", "title": "Configuration overview"}
+nav_prev: {"path": "../basics/project-structure/index.md", "title": "Project structure"}
+nav_next: {"path": "../guides/configuring-astro/index.md", "title": "Configuration overview"}
 ---
 
 # Develop and build

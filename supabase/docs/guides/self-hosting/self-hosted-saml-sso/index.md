@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:56.293Z"
 content_hash: "6ad76bbde2b9a7913eead211f04f426392c40390d6a7c29fc384932688d54cb2"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure SAML 2.0 SSO","Configure SAML 2.0 SSO"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure SAML 2.0 SSO","Configure SAML 2.0 SSO"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-s3/index.md", "title": "Configure S3 Storage"}
-nav_next: {"path": "supabase/docs/guides/storage/index.md", "title": "Storage"}
+nav_prev: {"path": "../self-hosted-s3/index.md", "title": "Configure S3 Storage"}
+nav_next: {"path": "../../storage/index.md", "title": "Storage"}
 ---
 
 # 

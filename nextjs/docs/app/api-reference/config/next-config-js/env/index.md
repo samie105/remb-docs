@@ -11,8 +11,8 @@ menu_path: ["env"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/expireTime/index.md", "title": "expireTime"}
+nav_prev: {"path": "../distDir/index.md", "title": "distDir"}
+nav_next: {"path": "../expireTime/index.md", "title": "expireTime"}
 ---
 
 # env

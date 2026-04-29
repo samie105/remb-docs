@@ -10,8 +10,8 @@ content_hash: "5e15ee99a0c12bb041ea476ca627e658e4c6e5c4fabe3215bd8e2dbe794e4deb"
 menu_path: ["flex-wrap"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/flex-direction/index.md", "title": "flex-direction"}
-nav_next: {"path": "tailwind/docs/flex/index.md", "title": "flex"}
+nav_prev: {"path": "../flex-direction/index.md", "title": "flex-direction"}
+nav_next: {"path": "../flex/index.md", "title": "flex"}
 ---
 
 # flex-wrap

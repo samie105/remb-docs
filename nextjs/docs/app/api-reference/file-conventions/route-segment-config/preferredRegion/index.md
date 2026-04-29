@@ -11,8 +11,8 @@ menu_path: ["preferredRegion"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/maxDuration/index.md", "title": "maxDuration"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/runtime/index.md", "title": "runtime"}
+nav_prev: {"path": "../maxDuration/index.md", "title": "maxDuration"}
+nav_next: {"path": "../runtime/index.md", "title": "runtime"}
 ---
 
 # preferredRegion

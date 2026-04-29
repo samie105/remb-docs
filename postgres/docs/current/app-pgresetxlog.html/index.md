@@ -10,8 +10,8 @@ content_hash: "f11a47937f7b91eef4343ef4fad2dff59b517fa60aaaff05a0772163b714abd5"
 menu_path: ["PostgreSQL: Documentation: 18: O.4. pg_resetxlog renamed to pg_resetwal"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/app-pgresetwal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_resetwal"}
-nav_next: {"path": "postgres/docs/current/app-pgrestore.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_restore"}
+nav_prev: {"path": "../app-pgresetwal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_resetwal"}
+nav_next: {"path": "../app-pgrestore.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_restore"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/app-pgresetxlog.html "PostgreSQL devel - O.4. pg_resetxlog renamed to pg_resetwal")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:41.570Z"
 content_hash: "f4a76f95b882d99bcafa79465bc5073510e75fb94377c31c6ab062479b9eda0d"
 menu_path: ["Context"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/caching/index.md", "title": "Response Caching"}
-nav_next: {"path": "trpc/docs/server/data-transformers/index.md", "title": "Data Transformers"}
+nav_prev: {"path": "../caching/index.md", "title": "Response Caching"}
+nav_next: {"path": "../data-transformers/index.md", "title": "Data Transformers"}
 ---
 
 Your context holds data that all of your tRPC procedures will have access to, and is a great place to put things like authentication information.
@@ -59,7 +59,7 @@ ts
 
 ## Creating the context[​](#creating-the-context "Direct link to Creating the context")
 
-The `createContext()` function must be passed to the handler mounting your appRouter. The handler may use HTTP or a [server-side call](trpc/docs/server/server-side-calls/index.md).
+The `createContext()` function must be passed to the handler mounting your appRouter. The handler may use HTTP or a [server-side call](../server-side-calls/index.md).
 
 `createContext()` is called once per request, so all procedures within a single batched request share the same context.
 
@@ -205,7 +205,7 @@ ts
 
 In some scenarios it could make sense to split up your context into "inner" and "outer" functions.
 
-**Inner context** is where you define context which doesn’t depend on the request, e.g. your database connection. You can use this function for integration testing or [server-side calls](trpc/docs/server/server-side-calls/index.md), where you don’t have a request object. Whatever is defined here will **always** be available in your procedures.
+**Inner context** is where you define context which doesn’t depend on the request, e.g. your database connection. You can use this function for integration testing or [server-side calls](../server-side-calls/index.md), where you don’t have a request object. Whatever is defined here will **always** be available in your procedures.
 
 Tradeoff for large clients in `createContextInner`
 

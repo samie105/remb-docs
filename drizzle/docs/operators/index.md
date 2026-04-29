@@ -10,8 +10,8 @@ content_hash: "9b1e3c7b63f87ff6b087752960be5a7906f6080b4c31afbc08e0a19d31f05544"
 menu_path: ["Filter and conditional operators"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/delete/index.md", "title": "SQL Delete"}
-nav_next: {"path": "drizzle/docs/query-utils/index.md", "title": "Drizzle query utils"}
+nav_prev: {"path": "../delete/index.md", "title": "SQL Delete"}
+nav_next: {"path": "../query-utils/index.md", "title": "Drizzle query utils"}
 ---
 
 ## Filter and conditional operators

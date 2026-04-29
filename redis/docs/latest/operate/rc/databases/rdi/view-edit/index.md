@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:16.476Z"
 content_hash: "25bb7ee24fdfac78e57f6daa7650f287a4f030c59c6ceda5b8f32b69b93a8747"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        View and edit data pipeline","→","View and edit data pipeline"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        View and edit data pipeline","→","View and edit data pipeline"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/setup/index.md", "title": "Prepare source database"}
-nav_next: {"path": "redis/docs/latest/operate/rc/databases/version-management/upgrade-version/index.md", "title": "Upgrade Redis database version"}
+nav_prev: {"path": "../setup/index.md", "title": "Prepare source database"}
+nav_next: {"path": "../../version-management/upgrade-version/index.md", "title": "Upgrade Redis database version"}
 ---
 
 # View and edit data pipeline

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:09.394Z"
 content_hash: "3db91bee6f493c51be630e7c5670985ed5ad858550146c73f41ad4ad67afeca6"
 menu_path: ["PostgreSQL: Documentation: 18: 19.9. Run-time Statistics"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-short.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.18.\u00a0Short Options"}
-nav_next: {"path": "postgres/docs/current/runtime-config-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.10.\u00a0Vacuuming"}
+nav_prev: {"path": "../runtime-config-short.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.18.\u00a0Short Options"}
+nav_next: {"path": "../runtime-config-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.10.\u00a0Vacuuming"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/runtime-config-statistics.html "PostgreSQL devel - 19.9. Run-time Statistics")

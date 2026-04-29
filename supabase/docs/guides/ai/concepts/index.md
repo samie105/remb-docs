@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:02.043Z"
 content_hash: "dffe74633d87f8fcc08502331802d6fca11a517edd85f29ad3e9e60d9f0868aa"
 menu_path: ["AI & Vectors","AI & Vectors","Concepts","Concepts"]
 section_path: ["AI & Vectors","AI & Vectors","Concepts","Concepts"]
-nav_prev: {"path": "supabase/docs/guides/ai/choosing-compute-addon/index.md", "title": "Choosing your Compute Add-on"}
-nav_next: {"path": "supabase/docs/guides/ai/engineering-for-scale/index.md", "title": "Engineering for Scale"}
+nav_prev: {"path": "../choosing-compute-addon/index.md", "title": "Choosing your Compute Add-on"}
+nav_next: {"path": "../engineering-for-scale/index.md", "title": "Engineering for Scale"}
 ---
 
 # 

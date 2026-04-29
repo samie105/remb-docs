@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:03.331Z"
 content_hash: "cf15ff804f4ba671d2c90632a561fd246286754c5fa4b2ed5b95505270b10915"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on Kubernetes","→","Install on Kubernetes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on Kubernetes","→","Install on Kubernetes"]
-nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-docker/index.md", "title": "Install on Docker"}
-nav_next: {"path": "redis/docs/latest/operate/redisinsight/proxy/index.md", "title": "Subpath proxy"}
+nav_prev: {"path": "../install-on-docker/index.md", "title": "Install on Docker"}
+nav_next: {"path": "../../proxy/index.md", "title": "Subpath proxy"}
 ---
 
 # Install on Kubernetes

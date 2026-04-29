@@ -11,8 +11,8 @@ menu_path: ["Accessibility"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/architecture/index.md", "title": "Architecture"}
-nav_next: {"path": "nextjs/docs/architecture/fast-refresh/index.md", "title": "Fast Refresh"}
+nav_prev: {"path": "../index.md", "title": "Architecture"}
+nav_next: {"path": "../fast-refresh/index.md", "title": "Fast Refresh"}
 ---
 
 # Accessibility

@@ -11,25 +11,25 @@ menu_path: ["Models"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/indexes/index.md", "title": "Indexes"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md", "title": "Multi-schema"}
+nav_prev: {"path": "../indexes/index.md", "title": "Indexes"}
+nav_next: {"path": "../multi-schema/index.md", "title": "Multi-schema"}
 ---
 
 Learn about the concepts for building your data model with Prisma: Models, scalar types, enums, attributes, functions, IDs, default values and more
 
-The data model definition part of the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) defines your application models (also called **Prisma models**). Models:
+The data model definition part of the [Prisma schema](../../overview/index.md) defines your application models (also called **Prisma models**). Models:
 
 -   Represent the **entities** of your application domain
 -   Map to the **tables** (relational databases like PostgreSQL) or **collections** (MongoDB) in your database
--   Form the foundation of the **queries** available in the generated [Prisma Client API](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md)
--   When used with TypeScript, Prisma Client provides generated **type definitions** for your models and any [variations](prisma/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md) of them to make database access entirely type safe.
+-   Form the foundation of the **queries** available in the generated [Prisma Client API](../../../prisma-client/setup-and-configuration/introduction/index.md)
+-   When used with TypeScript, Prisma Client provides generated **type definitions** for your models and any [variations](../../../prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md) of them to make database access entirely type safe.
 
 The following schema describes a blogging platform - the data model definition is highlighted:
 
 The data model definition is made up of:
 
--   [Models](#defining-models) ([`model`](prisma/docs/orm/reference/prisma-schema-reference/index.md#model) primitives) that define a number of fields, including [relations between models](#relation-fields)
--   [Enums](#defining-enums) ([`enum`](prisma/docs/orm/reference/prisma-schema-reference/index.md#enum) primitives) (if your connector supports Enums)
+-   [Models](#defining-models) ([`model`](../../../reference/prisma-schema-reference/index.md#model) primitives) that define a number of fields, including [relations between models](#relation-fields)
+-   [Enums](#defining-enums) ([`enum`](../../../reference/prisma-schema-reference/index.md#enum) primitives) (if your connector supports Enums)
 -   [Attributes](#defining-attributes) and [functions](#using-functions) that change the behavior of fields and models
 
 The corresponding database looks like this:
@@ -73,10 +73,10 @@ Your data model reflects _your_ application domain. For example:
 
 There are two ways to define a data model:
 
--   **Write the data model manually and use Prisma Migrate**: You can write your data model manually and map it to your database using [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md). In this case, the data model is the single source of truth for the models of your application.
--   **Generate the data model via introspection**: When you have an existing database or prefer migrating your database schema with SQL, you generate the data model by [introspecting](prisma/docs/orm/prisma-schema/introspection/index.md) your database. In this case, the database schema is the single source of truth for the models of your application.
+-   **Write the data model manually and use Prisma Migrate**: You can write your data model manually and map it to your database using [Prisma Migrate](../../../prisma-migrate/index.md). In this case, the data model is the single source of truth for the models of your application.
+-   **Generate the data model via introspection**: When you have an existing database or prefer migrating your database schema with SQL, you generate the data model by [introspecting](../../introspection/index.md) your database. In this case, the database schema is the single source of truth for the models of your application.
 
-Models represent the entities of your application domain. Models are represented by [`model`](prisma/docs/orm/reference/prisma-schema-reference/index.md#model) blocks and define a number of [fields](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-fields). In the example data model above, `User`, `Profile`, `Post` and `Category` are models.
+Models represent the entities of your application domain. Models are represented by [`model`](../../../reference/prisma-schema-reference/index.md#model) blocks and define a number of [fields](../../../reference/prisma-schema-reference/index.md#model-fields). In the example data model above, `User`, `Profile`, `Post` and `Category` are models.
 
 A blogging platform can be extended with the following models:
 
@@ -92,7 +92,7 @@ model Tag {
 
 ### [Mapping model names to tables or collections](#mapping-model-names-to-tables-or-collections)
 
-Prisma model [naming conventions (singular form, PascalCase)](prisma/docs/orm/reference/prisma-schema-reference/index.md#naming-conventions) do not always match table names in the database. A common approach for naming tables/collections in databases is to use plural form and [snake\_case](https://en.wikipedia.org/wiki/Snake_case) notation - for example: `comments`. When you introspect a database with a table named `comments`, the resulting Prisma model will look like this:
+Prisma model [naming conventions (singular form, PascalCase)](../../../reference/prisma-schema-reference/index.md#naming-conventions) do not always match table names in the database. A common approach for naming tables/collections in databases is to use plural form and [snake\_case](https://en.wikipedia.org/wiki/Snake_case) notation - for example: `comments`. When you introspect a database with a table named `comments`, the resulting Prisma model will look like this:
 
 ```
 model comments {
@@ -100,7 +100,7 @@ model comments {
 }
 ```
 
-However, you can still adhere to the naming convention without renaming the underlying `comments` table in the database by using the [`@@map`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attribute:
+However, you can still adhere to the naming convention without renaming the underlying `comments` table in the database by using the [`@@map`](../../../reference/prisma-schema-reference/index.md) attribute:
 
 ```
 model Comment {
@@ -112,33 +112,33 @@ model Comment {
 
 With this model definition, Prisma ORM automatically maps the `Comment` model to the `comments` table in the underlying database.
 
-> **Note**: You can also [`@map`](prisma/docs/orm/reference/prisma-schema-reference/index.md#map) a column name or enum value, and `@@map` an enum name.
+> **Note**: You can also [`@map`](../../../reference/prisma-schema-reference/index.md#map) a column name or enum value, and `@@map` an enum name.
 
-`@map` and `@@map` allow you to [tune the shape of your Prisma Client API](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md#using-map-and-map-to-rename-fields-and-models-in-the-prisma-client-api) by decoupling model and field names from table and column names in the underlying database.
+`@map` and `@@map` allow you to [tune the shape of your Prisma Client API](../../../prisma-client/setup-and-configuration/custom-model-and-field-names/index.md#using-map-and-map-to-rename-fields-and-models-in-the-prisma-client-api) by decoupling model and field names from table and column names in the underlying database.
 
 The properties of a model are called _fields_, which consist of:
 
--   A **[field name](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-fields)**
--   A **[field type](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-fields)**
+-   A **[field name](../../../reference/prisma-schema-reference/index.md#model-fields)**
+-   A **[field type](../../../reference/prisma-schema-reference/index.md#model-fields)**
 -   Optional **[type modifiers](#type-modifiers)**
 -   Optional **[attributes](#defining-attributes)**, including [native database type attributes](#native-types-mapping)
 
 A field's type determines its _structure_, and fits into one of two categories:
 
--   [Scalar types](#scalar-fields) (includes [enums](#defining-enums)) that map to columns (relational databases) or document fields (MongoDB) - for example, [`String`](prisma/docs/orm/reference/prisma-schema-reference/index.md#string) or [`Int`](prisma/docs/orm/reference/prisma-schema-reference/index.md#int)
--   Model types (the field is then called [relation field](prisma/docs/orm/prisma-schema/data-model/relations/index.md#relation-fields)) - for example `Post` or `Comment[]`
+-   [Scalar types](#scalar-fields) (includes [enums](#defining-enums)) that map to columns (relational databases) or document fields (MongoDB) - for example, [`String`](../../../reference/prisma-schema-reference/index.md#string) or [`Int`](../../../reference/prisma-schema-reference/index.md#int)
+-   Model types (the field is then called [relation field](../relations/index.md#relation-fields)) - for example `Post` or `Comment[]`
 
 ### [Scalar fields](#scalar-fields)
 
 The following example extends the `Comment` and `Tag` models with several scalar types. Some fields include [attributes](#defining-attributes):
 
-See [complete list of scalar field types](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) .
+See [complete list of scalar field types](../../../reference/prisma-schema-reference/index.md#model-field-scalar-types) .
 
 ### [Relation fields](#relation-fields)
 
 A relation field's type is another model - for example, a post (`Post`) can have multiple comments (`Comment[]`):
 
-Refer to the [relations documentation](prisma/docs/orm/prisma-schema/data-model/relations/index.md) for more examples and information about relationships between models.
+Refer to the [relations documentation](../relations/index.md) for more examples and information about relationships between models.
 
 ### [Native types mapping](#native-types-mapping)
 
@@ -156,16 +156,16 @@ Type attributes are:
 
 -   Specific to the underlying provider (e.g., PostgreSQL uses `@db.Boolean`, MySQL uses `@db.TinyInt(1)`)
 -   Written in PascalCase and prefixed by `@db`
--   Only added during [introspection](prisma/docs/orm/prisma-schema/introspection/index.md) if the native type differs from the default
+-   Only added during [introspection](../../introspection/index.md) if the native type differs from the default
 
-See [native database type attributes](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for the complete list.
+See [native database type attributes](../../../reference/prisma-schema-reference/index.md#model-field-scalar-types) for the complete list.
 
 ### [Type modifiers](#type-modifiers)
 
 The type of a field can be modified by appending either of two modifiers:
 
 -   [`[]`](https://www.prisma.io/docs/orm/reference/prisma-schema-reference#-modifier) Make a field a list
--   [`?`](prisma/docs/orm/reference/prisma-schema-reference/index.md#-modifier-1) Make a field optional
+-   [`?`](../../../reference/prisma-schema-reference/index.md#-modifier-1) Make a field optional
 
 > **Note**: You **cannot** combine type modifiers - optional lists are not supported.
 
@@ -198,23 +198,23 @@ Fields without `?` are required:
 
 ### [Unsupported types](#unsupported-types)
 
-When you introspect a relational database, unsupported data types are added as [`Unsupported`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unsupported):
+When you introspect a relational database, unsupported data types are added as [`Unsupported`](../../../reference/prisma-schema-reference/index.md#unsupported):
 
 ```
 location    Unsupported("POLYGON")?
 ```
 
-Fields of type `Unsupported` don't appear in the generated Prisma Client API, but you can still use [raw database access](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md) to query them.
+Fields of type `Unsupported` don't appear in the generated Prisma Client API, but you can still use [raw database access](../../../prisma-client/using-raw-sql/raw-queries/index.md) to query them.
 
-Attributes modify the behavior of fields or model blocks. The following example includes three field attributes ([`@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md#id) , [`@default`](prisma/docs/orm/reference/prisma-schema-reference/index.md#default) , and [`@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unique) ) and one block attribute ([`@@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md)):
+Attributes modify the behavior of fields or model blocks. The following example includes three field attributes ([`@id`](../../../reference/prisma-schema-reference/index.md#id) , [`@default`](../../../reference/prisma-schema-reference/index.md#default) , and [`@unique`](../../../reference/prisma-schema-reference/index.md#unique) ) and one block attribute ([`@@unique`](../../../reference/prisma-schema-reference/index.md)):
 
-Some attributes accept [arguments](prisma/docs/orm/reference/prisma-schema-reference/index.md#attribute-argument-types) - for example, `@default` accepts `true` or `false`:
+Some attributes accept [arguments](../../../reference/prisma-schema-reference/index.md#attribute-argument-types) - for example, `@default` accepts `true` or `false`:
 
 ```
 isAdmin   Boolean @default(false) // short form of @default(value: false)
 ```
 
-See [complete list of field and block attributes](prisma/docs/orm/reference/prisma-schema-reference/index.md#attributes)
+See [complete list of field and block attributes](../../../reference/prisma-schema-reference/index.md#attributes)
 
 ### [Defining an ID field](#defining-an-id-field)
 
@@ -225,7 +225,7 @@ An ID uniquely identifies individual records of a model. A model can only have _
 
 #### [Defining IDs in relational databases](#defining-ids-in-relational-databases)
 
-In relational databases, an ID can be defined by a single field using the [`@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md#id) attribute, or multiple fields using the [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attribute.
+In relational databases, an ID can be defined by a single field using the [`@id`](../../../reference/prisma-schema-reference/index.md#id) attribute, or multiple fields using the [`@@id`](../../../reference/prisma-schema-reference/index.md) attribute.
 
 ##### [Single field IDs](#single-field-ids)
 
@@ -259,7 +259,7 @@ model User {
 
 By default, the name of this field in Prisma Client queries will be `firstName_lastName`.
 
-You can also provide your own name for the composite ID using the [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attribute's `name` field:
+You can also provide your own name for the composite ID using the [`@@id`](../../../reference/prisma-schema-reference/index.md) attribute's `name` field:
 
 ```
 model User {
@@ -290,7 +290,7 @@ model User {
 
 #### [Defining IDs in MongoDB](#defining-ids-in-mongodb)
 
-The MongoDB connector has [specific rules for defining an ID field](prisma/docs/orm/reference/prisma-schema-reference/index.md#mongodb) that differs from relational databases. An ID must be defined by a single field using the [`@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md#id) attribute and must include `@map("_id")`.
+The MongoDB connector has [specific rules for defining an ID field](../../../reference/prisma-schema-reference/index.md#mongodb) that differs from relational databases. An ID must be defined by a single field using the [`@id`](../../../reference/prisma-schema-reference/index.md#id) attribute and must include `@map("_id")`.
 
 In the following example, the `User` ID is represented by the `id` string field that accepts an auto-generated `ObjectId`:
 
@@ -320,7 +320,7 @@ model User {
 
 ### [Defining a default value](#defining-a-default-value)
 
-You can define default values for scalar fields using the [`@default`](prisma/docs/orm/reference/prisma-schema-reference/index.md#default) attribute:
+You can define default values for scalar fields using the [`@default`](../../../reference/prisma-schema-reference/index.md#default) attribute:
 
 ```
 model Post {
@@ -336,14 +336,14 @@ Default values can be:
 
 -   **Static values**: `5` (`Int`), `"Hello"` (`String`), `false` (`Boolean`)
 -   **Lists**: `[5, 6, 8]` (`Int[]`), `["Hello", "Goodbye"]` (`String[]`)
--   **Functions**: [`now()`](prisma/docs/orm/reference/prisma-schema-reference/index.md#now), [`uuid()`](prisma/docs/orm/reference/prisma-schema-reference/index.md#uuid), [`cuid()`](prisma/docs/orm/reference/prisma-schema-reference/index.md#cuid)
+-   **Functions**: [`now()`](../../../reference/prisma-schema-reference/index.md#now), [`uuid()`](../../../reference/prisma-schema-reference/index.md#uuid), [`cuid()`](../../../reference/prisma-schema-reference/index.md#cuid)
 -   **JSON**: Use escaped strings, e.g., `@default("{ \"hello\": \"world\" }")`
 
-See [attribute functions](prisma/docs/orm/reference/prisma-schema-reference/index.md#attribute-functions) for connector support details.
+See [attribute functions](../../../reference/prisma-schema-reference/index.md#attribute-functions) for connector support details.
 
 ### [Defining a unique field](#defining-a-unique-field)
 
-Unique attributes can be defined on a single field using [`@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unique), or on multiple fields using [`@@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md):
+Unique attributes can be defined on a single field using [`@unique`](../../../reference/prisma-schema-reference/index.md#unique), or on multiple fields using [`@@unique`](../../../reference/prisma-schema-reference/index.md):
 
 ```
 model User {
@@ -363,7 +363,7 @@ model Post {
 
 You can customize the constraint name with the `name` field: `@@unique(name: "authorTitle", [authorId, title])`
 
-See [working with composite unique identifiers](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md) for Prisma Client usage.
+See [working with composite unique identifiers](../../../prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md) for Prisma Client usage.
 
 #### [Composite type unique constraints (MongoDB)](#composite-type-unique-constraints-mongodb)
 
@@ -386,7 +386,7 @@ model User {
 
 ### [Defining an index](#defining-an-index)
 
-Define indexes via [`@@index`](prisma/docs/orm/reference/prisma-schema-reference/index.md#index):
+Define indexes via [`@@index`](../../../reference/prisma-schema-reference/index.md#index):
 
 ```
 model Post {
@@ -400,9 +400,9 @@ model Post {
 
 For MongoDB composite types, use dot notation: `@@index([address.city.name])`
 
-See [custom index names](prisma/docs/orm/prisma-schema/data-model/database-mapping/index.md#constraint-and-index-names) for naming customization.
+See [custom index names](../database-mapping/index.md#constraint-and-index-names) for naming customization.
 
-Enums are defined via the [`enum`](prisma/docs/orm/reference/prisma-schema-reference/index.md#enum) block when [supported by your database](prisma/docs/orm/reference/database-features/index.md#misc):
+Enums are defined via the [`enum`](../../../reference/prisma-schema-reference/index.md#enum) block when [supported by your database](../../../reference/database-features/index.md#misc):
 
 ```
 model User {
@@ -438,7 +438,7 @@ type Photo {
 
 **Not supported:** `@unique`, `@id`, `@relation`, `@ignore`, `@updatedAt`
 
-The Prisma schema supports [functions](prisma/docs/orm/reference/prisma-schema-reference/index.md#attribute-functions) for default values:
+The Prisma schema supports [functions](../../../reference/prisma-schema-reference/index.md#attribute-functions) for default values:
 
 ```
 model Post {
@@ -450,11 +450,11 @@ model Post {
 
 Common functions: `now()`, `uuid()`, `cuid()`, `autoincrement()`, `auto()` (MongoDB ObjectId)
 
-See [relations documentation](prisma/docs/orm/prisma-schema/data-model/relations/index.md) for relationship details.
+See [relations documentation](../relations/index.md) for relationship details.
 
 ### [Queries (CRUD)](#queries-crud)
 
-Every model generates CRUD queries in the [Prisma Client API](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md):
+Every model generates CRUD queries in the [Prisma Client API](../../../prisma-client/setup-and-configuration/introduction/index.md):
 
 `findMany()` | `findFirst()` | `findUnique()` | `create()` | `update()` | `upsert()` | `delete()` | `createMany()` | `updateMany()` | `deleteMany()`
 

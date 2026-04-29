@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:49.976Z"
 content_hash: "3c1855f70ab8d12a496dff39b60d4e7ea4a306c47fc220723e2609c2789df095"
 menu_path: ["Optimizely CMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/microcms/index.md", "title": "microCMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/pages-cms/index.md", "title": "Pages CMS & Astro"}
+nav_prev: {"path": "../microcms/index.md", "title": "microCMS & Astro"}
+nav_next: {"path": "../pages-cms/index.md", "title": "Pages CMS & Astro"}
 ---
 
 # Optimizely CMS & Astro

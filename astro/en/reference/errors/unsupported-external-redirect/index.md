@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:56.077Z"
 content_hash: "d23549fee8df4faaed053b297b4d88e02e66752b0db37aee7811237abbfb2a6b"
 menu_path: ["Unsupported or malformed URL."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/unsupported-config-transform-error/index.md", "title": "Unsupported transform in content config."}
-nav_next: {"path": "astro/en/reference/errors/unsupported-image-conversion/index.md", "title": "Unsupported image conversion"}
+nav_prev: {"path": "../unsupported-config-transform-error/index.md", "title": "Unsupported transform in content config."}
+nav_next: {"path": "../unsupported-image-conversion/index.md", "title": "Unsupported image conversion"}
 ---
 
 # Unsupported or malformed URL.

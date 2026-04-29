@@ -10,8 +10,8 @@ content_hash: "d64ddaec0fc7d2023b22b415e1958e8e943af64f35feb53b9d0354bef6fb5406"
 menu_path: ["@std/fmt"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/expect/index.md", "title": "@std/expect"}
-nav_next: {"path": "deno/runtime/reference/std/front-matter/index.md", "title": "@std/front-matter"}
+nav_prev: {"path": "../expect/index.md", "title": "@std/expect"}
+nav_next: {"path": "../front-matter/index.md", "title": "@std/front-matter"}
 ---
 
 # Runtime compatibility

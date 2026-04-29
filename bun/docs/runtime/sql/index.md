@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:42.712Z"
 content_hash: "1e439af42d4b9979e33408e56916c13b797ad4bafc99216fb9f73222532efed4"
 menu_path: ["SQL"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/shell/index.md", "title": "Shell"}
-nav_next: {"path": "bun/docs/runtime/sqlite/index.md", "title": "SQLite"}
+nav_prev: {"path": "../shell/index.md", "title": "Shell"}
+nav_next: {"path": "../sqlite/index.md", "title": "SQLite"}
 ---
 
 # PostgreSQL is detected for these patterns

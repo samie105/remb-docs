@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:55.673Z"
 content_hash: "47f828bd50d781a6332baaad2bbcb88d32a0bdbde8ee14b60ce6e3e90e574088"
 menu_path: ["Isolated installs"]
 section_path: []
-nav_prev: {"path": "bun/docs/pm/global-cache/index.md", "title": "Global cache"}
-nav_next: {"path": "bun/docs/pm/lifecycle/index.md", "title": "Lifecycle scripts"}
+nav_prev: {"path": "../global-cache/index.md", "title": "Global cache"}
+nav_next: {"path": "../lifecycle/index.md", "title": "Lifecycle scripts"}
 ---
 
 # Use isolated installs
@@ -267,6 +267,6 @@ The main difference is that Bun uses symlinks in `node_modules` while pnpm uses 
 *   Working in environments where symlinks aren’t well supported
 *   You prefer the simpler traditional npm behavior
 
-*   [Package manager > Workspaces](bun/docs/pm/workspaces/index.md) — Monorepo workspace management
-*   [Package manager > Lockfile](bun/docs/pm/lockfile/index.md) — Understanding Bun’s lockfile format
-*   [CLI > install](bun/docs/pm/cli/install/index.md) — Complete `bun install` command reference
+*   [Package manager > Workspaces](../workspaces/index.md) — Monorepo workspace management
+*   [Package manager > Lockfile](../lockfile/index.md) — Understanding Bun’s lockfile format
+*   [CLI > install](../cli/install/index.md) — Complete `bun install` command reference

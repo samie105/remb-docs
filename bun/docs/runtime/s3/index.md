@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:27.661Z"
 content_hash: "f0bf4c1d31e16302058bb73ba898added7985287ec4220ae7e765d5854b0f550"
 menu_path: ["S3"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/repl/index.md", "title": "REPL"}
-nav_next: {"path": "bun/docs/runtime/secrets/index.md", "title": "Secrets"}
+nav_prev: {"path": "../repl/index.md", "title": "REPL"}
+nav_next: {"path": "../secrets/index.md", "title": "Secrets"}
 ---
 
 Production servers often read, upload, and write files to S3-compatible object storage services instead of the local filesystem. Historically, that means local filesystem APIs you use in development can’t be used in production. When you use Bun, things are different.
@@ -556,7 +556,7 @@ Fallback environment variable
 
 `AWS_SESSION_TOKEN`
 
-These environment variables are read from [`.env` files](bun/docs/runtime/environment-variables/index.md) or from the process environment at initialization time (`process.env` is not used for this). These defaults are overridden by the options you pass to `s3.file(credentials)`, `new Bun.S3Client(credentials)`, or any of the methods that accept credentials. So if, for example, you use the same credentials for different buckets, you can set the credentials once in your `.env` file and then pass `bucket: "my-bucket"` to the `s3.file()` function without having to specify all the credentials again.
+These environment variables are read from [`.env` files](../environment-variables/index.md) or from the process environment at initialization time (`process.env` is not used for this). These defaults are overridden by the options you pass to `s3.file(credentials)`, `new Bun.S3Client(credentials)`, or any of the methods that accept credentials. So if, for example, you use the same credentials for different buckets, you can set the credentials once in your `.env` file and then pass `bucket: "my-bucket"` to the `s3.file()` function without having to specify all the credentials again.
 
 ### `S3Client` objects
 

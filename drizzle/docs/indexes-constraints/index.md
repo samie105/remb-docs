@@ -10,8 +10,8 @@ content_hash: "4c05a6b39a3f6a6fea74d835fa906ca27b906d928f90cc76bd1d8e3609c62e96"
 menu_path: ["Indexes & Constraints"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/column-types/pg/index.md", "title": "PostgreSQL column types"}
-nav_next: {"path": "drizzle/docs/sequences/index.md", "title": "Sequences"}
+nav_prev: {"path": "../column-types/pg/index.md", "title": "PostgreSQL column types"}
+nav_next: {"path": "../sequences/index.md", "title": "Sequences"}
 ---
 
 ## Constraints[](#constraints)

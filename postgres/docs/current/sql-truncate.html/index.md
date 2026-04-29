@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:23.125Z"
 content_hash: "ef557d880575faa63a6d7ee2cb92e969a2d2e7761ff05cdd3623d728b3fdbf46"
 menu_path: ["PostgreSQL: Documentation: 18: TRUNCATE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-syntax-lexical.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.1.\u00a0Lexical Structure"}
-nav_next: {"path": "postgres/docs/current/sql-unlisten.html/index.md", "title": "PostgreSQL: Documentation: 18: UNLISTEN"}
+nav_prev: {"path": "../sql-syntax-lexical.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.1.\u00a0Lexical Structure"}
+nav_next: {"path": "../sql-unlisten.html/index.md", "title": "PostgreSQL: Documentation: 18: UNLISTEN"}
 ---
 
 TRUNCATE — empty a table or set of tables

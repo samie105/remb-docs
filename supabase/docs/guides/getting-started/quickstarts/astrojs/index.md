@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:02.535Z"
 content_hash: "a13eafb8f0bf323cd799a0a32980abf1df62dab5656b6313d5ea85f4a473701e"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Astro","Astro"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Astro","Astro"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/mcp/index.md", "title": "Model context protocol (MCP)"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/expo-react-native/index.md", "title": "Use Supabase with Expo React Native"}
+nav_prev: {"path": "../../mcp/index.md", "title": "Model context protocol (MCP)"}
+nav_next: {"path": "../expo-react-native/index.md", "title": "Use Supabase with Expo React Native"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:00.759Z"
 content_hash: "89cbcdd3372afb413e9fa54363ec175250e1988811422a9c4e8a288a31e70b05"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Connect to the server","→","Connect to the server"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Connect to the server","→","Connect to the server"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/amr/index.md", "title": "Connect to Azure Managed Redis"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/error-handling/index.md", "title": "Error handling"}
+nav_prev: {"path": "../amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "../error-handling/index.md", "title": "Error handling"}
 ---
 
 # Connect to the server

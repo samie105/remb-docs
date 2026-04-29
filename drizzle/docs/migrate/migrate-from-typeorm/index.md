@@ -10,8 +10,8 @@ content_hash: "0bcf67f8225c95c1bf1442f063d8d475815ca9af86024f6eb0cb9184c81f6ade"
 menu_path: ["Migrate from TypeORM to Drizzle"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/migrate/migrate-from-sequelize/index.md", "title": "Migrate from Sequelize to Drizzle"}
-nav_next: {"path": "drizzle/docs/rqb-fundamentals/index.md", "title": "404"}
+nav_prev: {"path": "../migrate-from-sequelize/index.md", "title": "Migrate from Sequelize to Drizzle"}
+nav_next: {"path": "../../rqb-fundamentals/index.md", "title": "404"}
 ---
 
 This guide provides a straightforward approach to migrating a basic **TypeORM** project to **Drizzle ORM**. Although the example focuses on `PostgreSQL`, the process is similar for other supported databases.
@@ -28,7 +28,7 @@ The corresponding tables have been created using a generated TypeORM migration.
 
 #### Install Drizzle ORM & Drizzle Kit[](#install-drizzle-orm--drizzle-kit)
 
-The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](drizzle/docs/kit-overview/index.md) - CLI companion for automatic SQL migrations generation and rapid prototyping.
+The first step is to install **Drizzle ORM** and `pg` package which we will use as a driver. The second step is to install **Drizzle Kit** and types for `pg`. [Drizzle Kit](../../kit-overview/index.md) - CLI companion for automatic SQL migrations generation and rapid prototyping.
 
 ```
 npm i drizzle-orm pg

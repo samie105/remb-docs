@@ -10,20 +10,20 @@ content_hash: "6678736b376f9291b19229b6287559e7b1a132b19a12728d18dcd4032bdc7ac3"
 menu_path: ["Logging"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/opentelemetry-tracing/index.md", "title": "OpenTelemetry tracing"}
+nav_prev: {"path": "../../deployment/traditional/deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
+nav_next: {"path": "../opentelemetry-tracing/index.md", "title": "OpenTelemetry tracing"}
 ---
 
 Observability and Logging
 
 Learn how to configure Prisma Client to log the raw SQL queries it sends to the database and other information
 
-Use the `PrismaClient` [`log`](prisma/docs/orm/reference/prisma-client-reference/index.md#log) parameter to configure [log levels](prisma/docs/orm/reference/prisma-client-reference/index.md#log-levels) , including warnings, errors, and information about the queries sent to the database.
+Use the `PrismaClient` [`log`](../../../reference/prisma-client-reference/index.md#log) parameter to configure [log levels](../../../reference/prisma-client-reference/index.md#log-levels) , including warnings, errors, and information about the queries sent to the database.
 
 Prisma Client supports two types of logging:
 
 -   Logging to [stdout](https://en.wikipedia.org/wiki/Standard_streams) (default)
--   Event-based logging (use [`$on()`](prisma/docs/orm/reference/prisma-client-reference/index.md#on) method to [subscribe to events](#event-based-logging))
+-   Event-based logging (use [`$on()`](../../../reference/prisma-client-reference/index.md#on) method to [subscribe to events](#event-based-logging))
 
 The simplest way to print _all_ log levels to stdout is to pass in an array `LogLevel` objects:
 
@@ -79,4 +79,4 @@ Query: db.User.aggregate([ { $project: { _id: 1, email: 1, name: 1, }, }, ])
 Query: db.Post.aggregate([ { $match: { userId: { $in: [ "622f0bbbdf635a42016ee325", ], }, }, }, { $project: { _id: 1, slug: 1, title: 1, body: 1, userId: 1, }, }, ])
 ```
 
-The exact [event (`e`) type and the properties available](prisma/docs/orm/reference/prisma-client-reference/index.md#event-types) depends on the log level.
+The exact [event (`e`) type and the properties available](../../../reference/prisma-client-reference/index.md#event-types) depends on the log level.

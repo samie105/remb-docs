@@ -11,8 +11,8 @@ menu_path: ["SQL Server"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md", "title": "SQLite"}
+nav_prev: {"path": "../postgresql/index.md", "title": "PostgreSQL"}
+nav_next: {"path": "../sqlite/index.md", "title": "SQLite"}
 ---
 
 Supported databases
@@ -46,7 +46,7 @@ export default defineConfig({
 });
 ```
 
-Use the `node-mssql` JavaScript database driver via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
+Use the `node-mssql` JavaScript database driver via [driver adapters](../database-drivers/index.md#driver-adapters):
 
 ```
 import { PrismaMssql } from "@prisma/adapter-mssql";
@@ -129,7 +129,7 @@ sqlserver://mycomputer\sql2019;database=sample;integratedSecurity=true;trustServ
 | `Json` | Not supported |
 | `Bytes` | `VARBINARY(MAX)` |
 
-See [full type mapping reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for complete details.
+See [full type mapping reference](../../../reference/prisma-schema-reference/index.md#model-field-scalar-types) for complete details.
 
 **UNIQUE constraints:**
 
@@ -137,7 +137,7 @@ SQL Server [allows only one `NULL` value per `UNIQUE` constraint](https://learn.
 
 **Cyclic references:**
 
-With circular model references, you must use [`NoAction` referential actions](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md#special-rules-for-sql-server-and-mongodb) to avoid validation errors.
+With circular model references, you must use [`NoAction` referential actions](../../../prisma-schema/data-model/relations/referential-actions/index.md#special-rules-for-sql-server-and-mongodb) to avoid validation errors.
 
 **Raw queries with `VARCHAR` columns:**
 

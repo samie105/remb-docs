@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:56.985Z"
 content_hash: "57cf1a50670629992ba67362f820c373648987fe6524e1656ba30a08d7494fb6"
 menu_path: ["Unsupported image conversion"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/unsupported-external-redirect/index.md", "title": "Unsupported or malformed URL."}
-nav_next: {"path": "astro/en/reference/errors/unsupported-image-format/index.md", "title": "Unsupported image format"}
+nav_prev: {"path": "../unsupported-external-redirect/index.md", "title": "Unsupported or malformed URL."}
+nav_next: {"path": "../unsupported-image-format/index.md", "title": "Unsupported image format"}
 ---
 
 # Unsupported image conversion

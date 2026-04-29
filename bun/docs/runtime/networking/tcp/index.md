@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:53.934Z"
 content_hash: "010275f2ea718815d95921fee3f87a5df54606994bfc66122ad8a75c367ca661"
 menu_path: ["TCP"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/networking/fetch/index.md", "title": "Fetch"}
-nav_next: {"path": "bun/docs/runtime/networking/udp/index.md", "title": "UDP"}
+nav_prev: {"path": "../fetch/index.md", "title": "Fetch"}
+nav_next: {"path": "../udp/index.md", "title": "UDP"}
 ---
 
 This is a low-level API intended for library authors and for advanced use cases.

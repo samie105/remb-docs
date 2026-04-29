@@ -10,8 +10,8 @@ content_hash: "6a08953b95456e80de552c304dbd0ca809cf0505ab47257a09c8f47701331cda"
 menu_path: ["resize"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/pointer-events/index.md", "title": "pointer-events"}
-nav_next: {"path": "tailwind/docs/scroll-behavior/index.md", "title": "scroll-behavior"}
+nav_prev: {"path": "../pointer-events/index.md", "title": "pointer-events"}
+nav_next: {"path": "../scroll-behavior/index.md", "title": "scroll-behavior"}
 ---
 
 # resize

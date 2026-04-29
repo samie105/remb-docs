@@ -10,13 +10,13 @@ content_hash: "ece94b96037e7913b0a300194b028848c5abb5c188741163585b917cd251223f"
 menu_path: ["Connection URLs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/reference/prisma-config-reference/index.md", "title": "Config API"}
-nav_next: {"path": "prisma/docs/orm/reference/environment-variables-reference/index.md", "title": "Environment Variables"}
+nav_prev: {"path": "../prisma-config-reference/index.md", "title": "Config API"}
+nav_next: {"path": "../environment-variables-reference/index.md", "title": "Environment Variables"}
 ---
 
 Learn about the format and syntax Prisma ORM uses for defining database connection URLs for PostgreSQL, MySQL and SQLite
 
-Prisma ORM needs a connection URL to be able to connect to your database, e.g. when sending queries with [Prisma Client](prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md) or when changing the database schema with [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md).
+Prisma ORM needs a connection URL to be able to connect to your database, e.g. when sending queries with [Prisma Client](../../prisma-client/setup-and-configuration/introduction/index.md) or when changing the database schema with [Prisma Migrate](../../prisma-migrate/index.md).
 
 The connection URL is provided via the `url` field of a `datasource` block in your Prisma config (or Prisma schema if on version 6). It usually consists of the following components (except for SQLite and [Prisma Postgres](https://www.prisma.io/docs/postgres)):
 
@@ -30,18 +30,18 @@ Make sure you have this information at hand when getting started with Prisma ORM
 
 The format of the connection URL depends on the _database connector_ you're using. Prisma ORM generally supports the standard formats for each database. You can find out more about the connection URL of your database on the dedicated docs page:
 
--   [PostgreSQL](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md)
--   [MySQL](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md)
--   [SQLite](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md)
--   [MongoDB](prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md)
--   [Microsoft SQL Server](prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md)
--   [CockroachDB](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#cockroachdb)
+-   [PostgreSQL](../../core-concepts/supported-databases/postgresql/index.md)
+-   [MySQL](../../core-concepts/supported-databases/mysql/index.md)
+-   [SQLite](../../core-concepts/supported-databases/sqlite/index.md)
+-   [MongoDB](../../core-concepts/supported-databases/mongodb/index.md)
+-   [Microsoft SQL Server](../../core-concepts/supported-databases/sql-server/index.md)
+-   [CockroachDB](../../core-concepts/supported-databases/postgresql/index.md#cockroachdb)
 
 ### [Special characters](#special-characters)
 
 For MySQL, PostgreSQL and CockroachDB you must [percentage-encode special characters](https://developer.mozilla.org/en-US/docs/Glossary/Percent-encoding) in any part of your connection URL - including passwords. For example, `p@$$w0rd` becomes `p%40%24%24w0rd`.
 
-For Microsoft SQL Server, you must [escape special characters](prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md#connection-details) in any part of your connection string.
+For Microsoft SQL Server, you must [escape special characters](../../core-concepts/supported-databases/sql-server/index.md#connection-details) in any part of your connection string.
 
 Here are examples for the connection URLs of the databases Prisma ORM supports:
 
@@ -120,7 +120,7 @@ export default defineConfig({
 });
 ```
 
-However, in this case the `API_KEY` doesn't provide authentication details. Instead, it encodes information about the local Prisma Postgres instance. You can obtain a local connection string via the [`prisma dev`](prisma/docs/orm/reference/prisma-cli-reference/index.md#dev) command.
+However, in this case the `API_KEY` doesn't provide authentication details. Instead, it encodes information about the local Prisma Postgres instance. You can obtain a local connection string via the [`prisma dev`](../prisma-cli-reference/index.md#dev) command.
 
 ### [PostgreSQL](#postgresql)
 

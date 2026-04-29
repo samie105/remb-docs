@@ -9,11 +9,11 @@ last_crawled_at: "2026-04-18T16:45:07.270Z"
 content_hash: "32cf2c367519cc09950bc4f8b0319104525057fb2719fecc956c387ac435fb73"
 menu_path: ["HTTP Subscription Link"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/links/httpLink/index.md", "title": "HTTP Link"}
-nav_next: {"path": "trpc/docs/client/links/localLink/index.md", "title": "Local Link"}
+nav_prev: {"path": "../httpLink/index.md", "title": "HTTP Link"}
+nav_next: {"path": "../localLink/index.md", "title": "Local Link"}
 ---
 
-`httpSubscriptionLink` is a [**terminating link**](trpc/docs/client/links/index.md#the-terminating-link) that uses [Server-sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) (SSE) for subscriptions.
+`httpSubscriptionLink` is a [**terminating link**](../index.md#the-terminating-link) that uses [Server-sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) (SSE) for subscriptions.
 
 SSE is a good option for real-time as it's a bit easier than setting up a WebSockets-server.
 
@@ -23,7 +23,7 @@ info
 
 If your client's environment doesn't support EventSource, you need an [EventSource polyfill](https://www.npmjs.com/package/event-source-polyfill). For React Native specific instructions please defer to the [compatibility section](#compatibility-react-native).
 
-To use `httpSubscriptionLink`, you need to use a [splitLink](trpc/docs/client/links/splitLink/index.md) to make it explicit that we want to use SSE for subscriptions.
+To use `httpSubscriptionLink`, you need to use a [splitLink](../splitLink/index.md) to make it explicit that we want to use SSE for subscriptions.
 
 client/index.ts
 
@@ -85,7 +85,7 @@ ts
 
 tip
 
-The document here outlines the specific details of using `httpSubscriptionLink`. For general usage of subscriptions, see [our subscriptions guide](trpc/docs/server/subscriptions/index.md).
+The document here outlines the specific details of using `httpSubscriptionLink`. For general usage of subscriptions, see [our subscriptions guide](../../../server/subscriptions/index.md).
 
 ### Web apps[​](#web-apps "Direct link to Web apps")
 
@@ -199,7 +199,7 @@ tsx
 
 `httpSubscriptionLink` leverages SSE through `EventSource`, ensuring that connections encountering errors like network failures or bad response codes are automatically retried. However, `EventSource` does not allow re-execution of the `eventSourceOptions()` or `url()` options to update its configuration, which is particularly important in scenarios where authentication has expired since the last connection.
 
-To address this limitation, you can use a [`retryLink`](trpc/docs/client/links/retryLink/index.md) in conjunction with `httpSubscriptionLink`. This approach ensures that the connection is re-established with the latest configuration, including any updated authentication details.
+To address this limitation, you can use a [`retryLink`](../retryLink/index.md) in conjunction with `httpSubscriptionLink`. This approach ensures that the connection is re-established with the latest configuration, including any updated authentication details.
 
 caution
 

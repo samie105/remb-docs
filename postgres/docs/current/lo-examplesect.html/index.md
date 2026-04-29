@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:54.194Z"
 content_hash: "c23e147a18104f870baba6f559332fbb9f0ba518dc3e7e04f39215b628922488"
 menu_path: ["PostgreSQL: Documentation: 18: 33.5. Example Program"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/libpq-notice-processing.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.13.\u00a0Notice Processing"}
-nav_next: {"path": "postgres/docs/current/lo-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.4.\u00a0Server-Side Functions"}
+nav_prev: {"path": "../libpq-notice-processing.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.13.\u00a0Notice Processing"}
+nav_next: {"path": "../lo-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.4.\u00a0Server-Side Functions"}
 ---
 
 /\*-----------------------------------------------------------------

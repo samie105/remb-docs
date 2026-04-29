@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:28.543Z"
 content_hash: "023df2f5e1bd5ae6ccda7e9534379f6c2baf7c1e62e90417fc79549c0a63eb7f"
 menu_path: ["Appwrite & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/index.md", "title": "Use a backend service with Astro"}
-nav_next: {"path": "astro/en/guides/backend/firebase/index.md", "title": "Firebase & Astro"}
+nav_prev: {"path": "../index.md", "title": "Use a backend service with Astro"}
+nav_next: {"path": "../firebase/index.md", "title": "Firebase & Astro"}
 ---
 
 # Appwrite & Astro

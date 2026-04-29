@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:31.470Z"
 content_hash: "19a4598d5332c8a50afe52ef836e561acb5fc125c5907e21a479476269bdc268"
 menu_path: ["JekyllPad & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/hygraph/index.md", "title": "Hygraph & Astro"}
-nav_next: {"path": "astro/en/guides/cms/keystatic/index.md", "title": "Keystatic & Astro"}
+nav_prev: {"path": "../hygraph/index.md", "title": "Hygraph & Astro"}
+nav_next: {"path": "../keystatic/index.md", "title": "Keystatic & Astro"}
 ---
 
 # JekyllPad & Astro

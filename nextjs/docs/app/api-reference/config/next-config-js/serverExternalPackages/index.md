@@ -11,8 +11,8 @@ menu_path: ["serverExternalPackages"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverComponentsHmrCache/index.md", "title": "serverComponentsHmrCache"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/staleTimes/index.md", "title": "staleTimes"}
+nav_prev: {"path": "../serverComponentsHmrCache/index.md", "title": "serverComponentsHmrCache"}
+nav_next: {"path": "../staleTimes/index.md", "title": "staleTimes"}
 ---
 
 # serverExternalPackages

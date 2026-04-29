@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:16.286Z"
 content_hash: "916ce7013802a10d856a2e4d30623ea1d351043b2cb8e86998db667e03ab9805"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.2","→","Redis 8.2"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.2","→","Redis 8.2"]
-nav_prev: {"path": "redis/docs/latest/develop/whats-new/8-0/index.md", "title": "Redis 8.0"}
-nav_next: {"path": "redis/docs/latest/develop/whats-new/8-4/index.md", "title": "Redis 8.4"}
+nav_prev: {"path": "../8-0/index.md", "title": "Redis 8.0"}
+nav_next: {"path": "../8-4/index.md", "title": "Redis 8.4"}
 ---
 
 # Redis 8.2

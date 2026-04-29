@@ -10,8 +10,8 @@ content_hash: "f2ae6a0c31c38bec5721356944d5a23fc7a53fc9b249a1217618e02849e9b16b"
 menu_path: ["Drizzle Relations Fundamentals"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/sql-schema-declaration/index.md", "title": "Drizzle schema"}
-nav_next: {"path": "drizzle/docs/connect-overview/index.md", "title": "Database connection with Drizzle"}
+nav_prev: {"path": "../sql-schema-declaration/index.md", "title": "Drizzle schema"}
+nav_next: {"path": "../connect-overview/index.md", "title": "Database connection with Drizzle"}
 ---
 
 ## Drizzle Relations Fundamentals

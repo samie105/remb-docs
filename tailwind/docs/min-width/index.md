@@ -10,8 +10,8 @@ content_hash: "cad0ee118d2bf4e05e6dbf539470d46ecd72cf5390a55970cd14481d184f0f0b"
 menu_path: ["min-width"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/width/index.md", "title": "width"}
-nav_next: {"path": "tailwind/docs/max-width/index.md", "title": "max-width"}
+nav_prev: {"path": "../width/index.md", "title": "width"}
+nav_next: {"path": "../max-width/index.md", "title": "max-width"}
 ---
 
 Sizing
@@ -96,7 +96,7 @@ Prefix a `min-width` utility with a breakpoint variant like `md:` to only apply 
 <div class="w-24 min-w-full md:min-w-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -106,4 +106,4 @@ The `min-w-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](../theme/index.md).

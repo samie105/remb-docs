@@ -10,8 +10,8 @@ content_hash: "af5d98736fa86b89e34591c22702c01fd2d16baa4b24266337701eaeb75f3a81"
 menu_path: ["PostgreSQL: Documentation: 18: 36.17. Packaging Related Objects into an Extension"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/explicit-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.3.\u00a0Explicit Locking"}
-nav_next: {"path": "postgres/docs/current/extend-type-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.2.\u00a0The PostgreSQL Type System"}
+nav_prev: {"path": "../explicit-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.3.\u00a0Explicit Locking"}
+nav_next: {"path": "../extend-type-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.2.\u00a0The PostgreSQL Type System"}
 ---
 
 # cannot be relocatable because of use of @extschema@

@@ -11,8 +11,8 @@ menu_path: ["generateMetadata"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-image-metadata/index.md", "title": "generateImageMetadata"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-sitemaps/index.md", "title": "generateSitemaps"}
+nav_prev: {"path": "../generate-image-metadata/index.md", "title": "generateImageMetadata"}
+nav_next: {"path": "../generate-sitemaps/index.md", "title": "generateSitemaps"}
 ---
 
 # generateMetadata

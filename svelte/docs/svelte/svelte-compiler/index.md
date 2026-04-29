@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:04.904Z"
 content_hash: "60eccaf9ca410be30c9f7003008b7d39982c008c5749bdeff822ce3e71d34de0"
 menu_path: ["svelte/compiler"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-attachments/index.md", "title": "svelte/attachments"}
-nav_next: {"path": "svelte/docs/svelte/svelte-easing/index.md", "title": "svelte/easing"}
+nav_prev: {"path": "../svelte-attachments/index.md", "title": "svelte/attachments"}
+nav_next: {"path": "../svelte-easing/index.md", "title": "svelte/easing"}
 ---
 
 ```

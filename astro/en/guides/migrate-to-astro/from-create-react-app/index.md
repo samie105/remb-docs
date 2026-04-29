@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:41.789Z"
 content_hash: "33048e79f10357d07223244294221d40e7ffe34f9f7c6ecf88a8ac62e60208a7"
 menu_path: ["Migrating from Create React App (CRA)"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/index.md", "title": "Migrate an existing project to Astro"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/from-docusaurus/index.md", "title": "Migrating from Docusaurus"}
+nav_prev: {"path": "../index.md", "title": "Migrate an existing project to Astro"}
+nav_next: {"path": "../from-docusaurus/index.md", "title": "Migrating from Docusaurus"}
 ---
 
 # Migrating from Create React App (CRA)

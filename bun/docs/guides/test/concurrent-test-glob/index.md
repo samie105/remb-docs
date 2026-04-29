@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:30.093Z"
 content_hash: "f1f3f43e5949bb7edbbef79724c4ed604dd9f3f2744792aa6136ebfaa497933a"
 menu_path: ["Selectively run tests concurrently with glob patterns"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/bail/index.md", "title": "Bail early with the Bun test runner"}
-nav_next: {"path": "bun/docs/guides/test/coverage/index.md", "title": "Generate code coverage reports with the Bun test runner"}
+nav_prev: {"path": "../bail/index.md", "title": "Bail early with the Bun test runner"}
+nav_next: {"path": "../coverage/index.md", "title": "Generate code coverage reports with the Bun test runner"}
 ---
 
 # Run all test files with "concurrent-" prefix concurrently

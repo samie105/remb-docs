@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:00.909Z"
 content_hash: "19cd7214ca9444b943053b1b50bcabb147e40cdd5beab844ab24202e9a66a11d"
 menu_path: ["Image missing required \"alt\" property."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/i18n-not-enabled/index.md", "title": "i18n Not Enabled"}
-nav_next: {"path": "astro/en/reference/errors/image-not-found/index.md", "title": "Image not found."}
+nav_prev: {"path": "../i18n-not-enabled/index.md", "title": "i18n Not Enabled"}
+nav_next: {"path": "../image-not-found/index.md", "title": "Image not found."}
 ---
 
 # Image missing required "alt" property.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:04.580Z"
 content_hash: "20bca7cd8442fcbb85b659526e383b1e49d0eccd0f798c081ca03159d46bc1fc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Configuration Parameters","→","Configuration Parameters"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Configuration Parameters","→","Configuration Parameters"]
-nav_prev: {"path": "redis/docs/latest/develop/data-types/probabilistic/hyperloglogs/index.md", "title": "HyperLogLog"}
-nav_next: {"path": "redis/docs/latest/develop/data-types/timeseries/out-of-order_performance_considerations/index.md", "title": "Out-of-order / backfilled ingestion performance considerations"}
+nav_prev: {"path": "../../probabilistic/hyperloglogs/index.md", "title": "HyperLogLog"}
+nav_next: {"path": "../out-of-order_performance_considerations/index.md", "title": "Out-of-order / backfilled ingestion performance considerations"}
 ---
 
 # Configuration Parameters

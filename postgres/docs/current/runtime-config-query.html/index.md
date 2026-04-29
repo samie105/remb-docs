@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:34:48.511Z"
 content_hash: "4401761c9a9f754628c432326d6fe79fba830093ad65f0f36f47c92535028028"
 menu_path: ["PostgreSQL: Documentation: 18: 19.7. Query Planning"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-preset.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.15.\u00a0Preset Options"}
-nav_next: {"path": "postgres/docs/current/runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
+nav_prev: {"path": "../runtime-config-preset.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.15.\u00a0Preset Options"}
+nav_next: {"path": "../runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
 ---
 
 ### 19.7.1. Planner Method Configuration [#](#RUNTIME-CONFIG-QUERY-ENABLE)
 
-These configuration parameters provide a crude method of influencing the query plans chosen by the query optimizer. If the default plan chosen by the optimizer for a particular query is not optimal, a _temporary_ solution is to use one of these configuration parameters to force the optimizer to choose a different plan. Better ways to improve the quality of the plans chosen by the optimizer include adjusting the planner cost constants (see [Section 19.7.2](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS "19.7.2. Planner Cost Constants")), running [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") manually, increasing the value of the [default\_statistics\_target](postgres/docs/current/runtime-config-query.html/index.md#GUC-DEFAULT-STATISTICS-TARGET) configuration parameter, and increasing the amount of statistics collected for specific columns using `ALTER TABLE SET STATISTICS`.
+These configuration parameters provide a crude method of influencing the query plans chosen by the query optimizer. If the default plan chosen by the optimizer for a particular query is not optimal, a _temporary_ solution is to use one of these configuration parameters to force the optimizer to choose a different plan. Better ways to improve the quality of the plans chosen by the optimizer include adjusting the planner cost constants (see [Section 19.7.2](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS "19.7.2. Planner Cost Constants")), running [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") manually, increasing the value of the [default\_statistics\_target](index.md#GUC-DEFAULT-STATISTICS-TARGET) configuration parameter, and increasing the amount of statistics collected for specific columns using `ALTER TABLE SET STATISTICS`.
 
 `enable_async_append` (`boolean`) [#](#GUC-ENABLE-ASYNC-APPEND)
 
@@ -51,11 +51,11 @@ Enables or disables the query planner's use of incremental sort steps. The defau
 
 `enable_indexscan` (`boolean`) [#](#GUC-ENABLE-INDEXSCAN)
 
-Enables or disables the query planner's use of index-scan and index-only-scan plan types. The default is `on`. Also see [enable\_indexonlyscan](postgres/docs/current/runtime-config-query.html/index.md#GUC-ENABLE-INDEXONLYSCAN).
+Enables or disables the query planner's use of index-scan and index-only-scan plan types. The default is `on`. Also see [enable\_indexonlyscan](index.md#GUC-ENABLE-INDEXONLYSCAN).
 
 `enable_indexonlyscan` (`boolean`) [#](#GUC-ENABLE-INDEXONLYSCAN)
 
-Enables or disables the query planner's use of index-only-scan plan types (see [Section 11.9](https://www.postgresql.org/docs/current/indexes-index-only-scans.html "11.9. Index-Only Scans and Covering Indexes")). The default is `on`. The [enable\_indexscan](postgres/docs/current/runtime-config-query.html/index.md#GUC-ENABLE-INDEXSCAN) setting must also be enabled to have the query planner consider index-only-scans.
+Enables or disables the query planner's use of index-only-scan plan types (see [Section 11.9](https://www.postgresql.org/docs/current/indexes-index-only-scans.html "11.9. Index-Only Scans and Covering Indexes")). The default is `on`. The [enable\_indexscan](index.md#GUC-ENABLE-INDEXSCAN) setting must also be enabled to have the query planner consider index-only-scans.
 
 `enable_material` (`boolean`) [#](#GUC-ENABLE-MATERIAL)
 
@@ -237,7 +237,7 @@ SELECT \* FROM parent WHERE key = 2400;
 
 With constraint exclusion enabled, this `SELECT` will not scan `child1000` at all, improving performance.
 
-Currently, constraint exclusion is enabled by default only for cases that are often used to implement table partitioning via inheritance trees. Turning it on for all tables imposes extra planning overhead that is quite noticeable on simple queries, and most often will yield no benefit for simple queries. If you have no tables that are partitioned using traditional inheritance, you might prefer to turn it off entirely. (Note that the equivalent feature for partitioned tables is controlled by a separate parameter, [enable\_partition\_pruning](postgres/docs/current/runtime-config-query.html/index.md#GUC-ENABLE-PARTITION-PRUNING).)
+Currently, constraint exclusion is enabled by default only for cases that are often used to implement table partitioning via inheritance trees. Turning it on for all tables imposes extra planning overhead that is quite noticeable on simple queries, and most often will yield no benefit for simple queries. If you have no tables that are partitioned using traditional inheritance, you might prefer to turn it off entirely. (Note that the equivalent feature for partitioned tables is controlled by a separate parameter, [enable\_partition\_pruning](index.md#GUC-ENABLE-PARTITION-PRUNING).)
 
 Refer to [Section 5.12.5](https://www.postgresql.org/docs/current/ddl-partitioning.html#DDL-PARTITIONING-CONSTRAINT-EXCLUSION "5.12.5. Partitioning and Constraint Exclusion") for more information on using constraint exclusion to implement partitioning.
 
@@ -249,7 +249,7 @@ Sets the planner's estimate of the fraction of a cursor's rows that will be retr
 
 The planner will merge sub-queries into upper queries if the resulting `FROM` list would have no more than this many items. Smaller values reduce planning time but might yield inferior query plans. The default is eight. For more information see [Section 14.3](https://www.postgresql.org/docs/current/explicit-joins.html "14.3. Controlling the Planner with Explicit JOIN Clauses").
 
-Setting this value to [geqo\_threshold](postgres/docs/current/runtime-config-query.html/index.md#GUC-GEQO-THRESHOLD) or more may trigger use of the GEQO planner, resulting in non-optimal plans. See [Section 19.7.3](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-GEQO "19.7.3. Genetic Query Optimizer").
+Setting this value to [geqo\_threshold](index.md#GUC-GEQO-THRESHOLD) or more may trigger use of the GEQO planner, resulting in non-optimal plans. See [Section 19.7.3](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-GEQO "19.7.3. Genetic Query Optimizer").
 
 `jit` (`boolean`) [#](#GUC-JIT)
 
@@ -261,7 +261,7 @@ The planner will rewrite explicit `JOIN` constructs (except `FULL JOIN`s) into l
 
 By default, this variable is set the same as `from_collapse_limit`, which is appropriate for most uses. Setting it to 1 prevents any reordering of explicit `JOIN`s. Thus, the explicit join order specified in the query will be the actual order in which the relations are joined. Because the query planner does not always choose the optimal join order, advanced users can elect to temporarily set this variable to 1, and then specify the join order they desire explicitly. For more information see [Section 14.3](https://www.postgresql.org/docs/current/explicit-joins.html "14.3. Controlling the Planner with Explicit JOIN Clauses").
 
-Setting this value to [geqo\_threshold](postgres/docs/current/runtime-config-query.html/index.md#GUC-GEQO-THRESHOLD) or more may trigger use of the GEQO planner, resulting in non-optimal plans. See [Section 19.7.3](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-GEQO "19.7.3. Genetic Query Optimizer").
+Setting this value to [geqo\_threshold](index.md#GUC-GEQO-THRESHOLD) or more may trigger use of the GEQO planner, resulting in non-optimal plans. See [Section 19.7.3](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-GEQO "19.7.3. Genetic Query Optimizer").
 
 `plan_cache_mode` (`enum`) [#](#GUC-PLAN-CACHE-MODE)
 

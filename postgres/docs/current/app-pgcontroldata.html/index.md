@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:25.084Z"
 content_hash: "9bb45bc18bfcf2080a106a262ad693215b3f407ad5ec2d0f7644cad672ab39fa"
 menu_path: ["PostgreSQL: Documentation: 18: pg_controldata"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgchecksums.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_checksums"}
-nav_next: {"path": "postgres/docs/current/app-pgcreatesubscriber.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_createsubscriber"}
+nav_prev: {"path": "../app-pgchecksums.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_checksums"}
+nav_next: {"path": "../app-pgcreatesubscriber.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_createsubscriber"}
 ---
 
 pg\_controldata — display control information of a PostgreSQL database cluster

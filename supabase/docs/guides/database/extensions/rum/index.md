@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:18.213Z"
 content_hash: "c30fefc32609831713d8f2fffa0499797057b2184f64004bde394693e0a05dd6"
 menu_path: ["Database","Database","Extensions","Extensions","RUM: inverted index for full-text search","RUM: inverted index for full-text search"]
 section_path: ["Database","Database","Extensions","Extensions","RUM: inverted index for full-text search","RUM: inverted index for full-text search"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/postgres_fdw/index.md", "title": "postgres_fdw"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/timescaledb/index.md", "title": "timescaledb: Time-Series data"}
+nav_prev: {"path": "../postgres_fdw/index.md", "title": "postgres_fdw"}
+nav_next: {"path": "../timescaledb/index.md", "title": "timescaledb: Time-Series data"}
 ---
 
 # 

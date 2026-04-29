@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:36.292Z"
 content_hash: "23a7e8936087a44b32b357afd0f63ecb8851d7f575b2db60ecceaf1ea18a7074"
 menu_path: ["PostgreSQL: Documentation: 18: 19.6. Replication"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
-nav_next: {"path": "postgres/docs/current/runtime-config-resource.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.4.\u00a0Resource Consumption"}
+nav_prev: {"path": "../runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
+nav_next: {"path": "../runtime-config-resource.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.4.\u00a0Resource Consumption"}
 ---
 
 ### 19.6.3. Standby Servers [#](#RUNTIME-CONFIG-REPLICATION-STANDBY)
@@ -49,7 +49,7 @@ Note that `max_standby_streaming_delay` is not the same as the maximum length of
 
 `wal_receiver_create_temp_slot` (`boolean`) [#](#GUC-WAL-RECEIVER-CREATE-TEMP-SLOT)
 
-Specifies whether the WAL receiver process should create a temporary replication slot on the remote instance when no permanent replication slot to use has been configured (using [primary\_slot\_name](postgres/docs/current/runtime-config-replication.html/index.md#GUC-PRIMARY-SLOT-NAME)). The default is off. This parameter can only be set in the `postgresql.conf` file or on the server command line. If this parameter is changed while the WAL receiver process is running, that process is signaled to shut down and expected to restart with the new setting.
+Specifies whether the WAL receiver process should create a temporary replication slot on the remote instance when no permanent replication slot to use has been configured (using [primary\_slot\_name](index.md#GUC-PRIMARY-SLOT-NAME)). The default is off. This parameter can only be set in the `postgresql.conf` file or on the server command line. If this parameter is changed while the WAL receiver process is running, that process is signaled to shut down and expected to restart with the new setting.
 
 `wal_receiver_status_interval` (`integer`) [#](#GUC-WAL-RECEIVER-STATUS-INTERVAL)
 

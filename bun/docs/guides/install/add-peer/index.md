@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:27.809Z"
 content_hash: "8a2cd13353601069ac3d12345321e10e73b47a00198fa9bb151a7686935f7d51"
 menu_path: ["Add a peer dependency"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/add-optional/index.md", "title": "Add an optional dependency"}
-nav_next: {"path": "bun/docs/guides/install/add-tarball/index.md", "title": "Add a tarball dependency"}
+nav_prev: {"path": "../add-optional/index.md", "title": "Add an optional dependency"}
+nav_next: {"path": "../add-tarball/index.md", "title": "Add a tarball dependency"}
 ---
 
 [Skip to main content](#content-area)

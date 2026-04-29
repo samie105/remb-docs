@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:27.471Z"
 content_hash: "7c4cc68a70be2c67ba3b688b3c069f73601309811c183780b3e1261193580c22"
 menu_path: ["Actions API Reference"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/api-reference/index.md", "title": "Astro render context"}
-nav_next: {"path": "astro/en/reference/modules/astro-app/index.md", "title": "Adapter Server Entrypoint API Reference"}
+nav_prev: {"path": "../../api-reference/index.md", "title": "Astro render context"}
+nav_next: {"path": "../astro-app/index.md", "title": "Adapter Server Entrypoint API Reference"}
 ---
 
 # Actions API Reference

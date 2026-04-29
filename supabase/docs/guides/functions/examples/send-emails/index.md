@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:44.433Z"
 content_hash: "82270cc1fc99e5280d28db5166e63694f79e7fe8c6a3e7b9501091be299dca8e"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Sending Emails with Resend","Sending Emails with Resend"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Sending Emails with Resend","Sending Emails with Resend"]
-nav_prev: {"path": "supabase/docs/guides/functions/examples/semantic-search/index.md", "title": "Semantic Search"}
-nav_next: {"path": "supabase/docs/guides/functions/examples/sentry-monitoring/index.md", "title": "Monitoring with Sentry"}
+nav_prev: {"path": "../semantic-search/index.md", "title": "Semantic Search"}
+nav_next: {"path": "../sentry-monitoring/index.md", "title": "Monitoring with Sentry"}
 ---
 
 # 

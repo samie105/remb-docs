@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:29.554Z"
 content_hash: "c826eee52d827d6e28a7a1a278814c07244112bf8a67a5f6531b53e85344dfca"
 menu_path: ["Migrating from the classic React Client"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/tanstack-react-query/index.md", "title": "TanStack React Query"}
-nav_next: {"path": "trpc/docs/client/tanstack-react-query/server-components/index.md", "title": "Set up with React Server Components"}
+nav_prev: {"path": "../index.md", "title": "TanStack React Query"}
+nav_next: {"path": "../server-components/index.md", "title": "Set up with React Server Components"}
 ---
 
 There are a few approaches to migrate over, and this library is a significant departure from the classic client, so we're not expecting anybody to do it in one shot. But you will probably want to try a combination of...

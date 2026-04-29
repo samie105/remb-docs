@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:56.201Z"
 content_hash: "a95199888a820141646a1a0ce4ac8df011b4bd1ba3779c6027dad059b2f5bdee"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        RAG with Redis","→","RAG with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        RAG with Redis","→","RAG with Redis"]
-nav_prev: {"path": "redis/docs/latest/develop/get-started/document-database/index.md", "title": "Redis as a document database quick start guide"}
-nav_next: {"path": "redis/docs/latest/develop/get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
+nav_prev: {"path": "../document-database/index.md", "title": "Redis as a document database quick start guide"}
+nav_next: {"path": "../vector-database/index.md", "title": "Redis as a vector database quick start guide"}
 ---
 
 # RAG with Redis
@@ -46,7 +46,7 @@ To build a RAG application with Redis, follow these general steps:
     
 2.  **Use a Framework**:
     
-    1.  **Redis Vector Library (RedisVL)**: [RedisVL](redis/docs/latest/integrate/redisvl/index.md) enhances the development of generative AI applications by efficiently managing vectors and metadata. It allows for storage of vector embeddings and facilitates fast similarity searches, crucial for retrieving relevant information in RAG.
+    1.  **Redis Vector Library (RedisVL)**: [RedisVL](../../../integrate/redisvl/index.md) enhances the development of generative AI applications by efficiently managing vectors and metadata. It allows for storage of vector embeddings and facilitates fast similarity searches, crucial for retrieving relevant information in RAG.
     2.  **Popular AI frameworks**: Redis integrates seamlessly with various AI frameworks and tools. For instance, combining Redis with [LangChain](https://python.langchain.com/v0.2/docs/integrations/vectorstores/redis/) or [LlamaIndex](https://docs.llamaindex.ai/en/latest/examples/vector_stores/RedisIndexDemo/), libraries for building language models, enables developers to create sophisticated RAG pipelines. These integrations support efficient data management and building real-time LLM chains.
     3.  **Spring AI and Redis**: Using [Spring AI with Redis](https://redis.io/blog/building-a-rag-application-with-redis-and-spring-ai/) simplifies building RAG applications. Spring AI provides a structured approach to integrating AI capabilities into applications, while Redis handles data management, ensuring the RAG pipeline is efficient and scalable.
 3.  **Embed and store data**: Convert your data into vector embeddings using a suitable model (e.g., BERT, GPT). Store these embeddings in Redis, where they can be quickly retrieved based on vector searches.
@@ -68,7 +68,7 @@ In summary, Redis offers a powerful and efficient platform for implementing RAG.
 
 *   [RAG defined](https://redis.io/glossary/retrieval-augmented-generation/).
 *   [RAG overview](https://redis.io/kb/doc/2ok7xd1drq/how-to-perform-retrieval-augmented-generation-rag-with-redis).
-*   [Redis Vector Library (RedisVL)](redis/docs/latest/integrate/redisvl/index.md) and [introductory article](https://redis.io/blog/introducing-the-redis-vector-library-for-enhancing-genai-development/).
+*   [Redis Vector Library (RedisVL)](../../../integrate/redisvl/index.md) and [introductory article](https://redis.io/blog/introducing-the-redis-vector-library-for-enhancing-genai-development/).
 *   [RAG with Redis and SpringAI](https://redis.io/blog/building-a-rag-application-with-redis-and-spring-ai/)
 *   [Build a multimodal RAG app with LangChain and Redis](https://redis.io/blog/explore-the-new-multimodal-rag-template-from-langchain-and-redis/)
 *   [Get hands-on with advanced Redis AI Recipes](https://github.com/redis-developer/redis-ai-resources)

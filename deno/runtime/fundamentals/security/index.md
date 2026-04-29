@@ -10,8 +10,8 @@ content_hash: "6496b415b1db7ed10897d3dc77d4868c97047f02c1c29b75c252bbbc9eff03ad"
 menu_path: ["Security and permissions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/fundamentals/node/index.md", "title": "Node and npm Compatibility"}
-nav_next: {"path": "deno/runtime/fundamentals/modules/index.md", "title": "Modules and dependencies"}
+nav_prev: {"path": "../node/index.md", "title": "Node and npm Compatibility"}
+nav_next: {"path": "../modules/index.md", "title": "Modules and dependencies"}
 ---
 
 # Allow all reads from file system

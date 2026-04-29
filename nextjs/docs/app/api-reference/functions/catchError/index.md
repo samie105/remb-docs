@@ -11,8 +11,8 @@ menu_path: ["unstable_catchError"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/cacheTag/index.md", "title": "cacheTag"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/connection/index.md", "title": "connection"}
+nav_prev: {"path": "../cacheTag/index.md", "title": "cacheTag"}
+nav_next: {"path": "../connection/index.md", "title": "connection"}
 ---
 
 # unstable\_catchError

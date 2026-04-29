@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:39.443Z"
 content_hash: "691a682111f6b403638362b9aa2f09f7f6127577e9dc914b8877527b8080ea26"
 menu_path: ["Troubleshooting ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/backend-integration/index.md", "title": "Backend Integration \u200b"}
-nav_next: {"path": "vite/guide/performance/index.md", "title": "Performance \u200b"}
+nav_prev: {"path": "../backend-integration/index.md", "title": "Backend Integration \u200b"}
+nav_next: {"path": "../performance/index.md", "title": "Performance \u200b"}
 ---
 
 See [Rollup's troubleshooting guide](https://rollupjs.org/troubleshooting/) for more information too.
@@ -114,9 +114,9 @@ To solve this, you can:
     $ sudo sysctl -p
     ```
     
-*   Exclude directories with many files from file watching using [`server.watch.ignored`](vite/config/server-options/index.md#server-watch)
+*   Exclude directories with many files from file watching using [`server.watch.ignored`](../../config/server-options/index.md#server-watch)
     
-*   Use polling instead of file system events with [`server.watch.usePolling`](vite/config/server-options/index.md#server-watch). Note that polling uses more CPU resources
+*   Use polling instead of file system events with [`server.watch.usePolling`](../../config/server-options/index.md#server-watch). Note that polling uses more CPU resources
     
 
 ### Network requests stop loading [​](#network-requests-stop-loading)
@@ -141,7 +141,7 @@ Or, by importing it into the Keychain Access app and updating the trust of your 
 
 When the server / WebSocket server receives a large HTTP header, the request will be dropped and the following warning will be shown.
 
-> Server responded with status code 431. See [https://vite.dev/guide/troubleshooting.html#\_431-request-header-fields-too-large](vite/guide/troubleshooting/index.md#_431-request-header-fields-too-large).
+> Server responded with status code 431. See [https://vite.dev/guide/troubleshooting.html#\_431-request-header-fields-too-large](index.md#_431-request-header-fields-too-large).
 
 This is because Node.js limits request header size to mitigate [CVE-2018-12121](https://www.cve.org/CVERecord?id=CVE-2018-12121).
 
@@ -149,7 +149,7 @@ To avoid this, try to reduce your request header size. For example, if the cooki
 
 ### Dev Containers / VS Code Port Forwarding [​](#dev-containers-vs-code-port-forwarding)
 
-If you are using a Dev Container or port forwarding feature in VS Code, you may need to set the [`server.host`](vite/config/server-options/index.md#server-host) option to `127.0.0.1` in the config to make it work.
+If you are using a Dev Container or port forwarding feature in VS Code, you may need to set the [`server.host`](../../config/server-options/index.md#server-host) option to `127.0.0.1` in the config to make it work.
 
 This is because [the port forwarding feature in VS Code does not support IPv6](https://github.com/microsoft/vscode-remote-release/issues/7029).
 
@@ -171,7 +171,7 @@ Related issue: [#964](https://github.com/vitejs/vite/issues/964)
 
 ### Vite does not detect a file change [​](#vite-does-not-detect-a-file-change)
 
-If you are running Vite with WSL2, Vite cannot watch file changes in some conditions. See [`server.watch` option](vite/config/server-options/index.md#server-watch).
+If you are running Vite with WSL2, Vite cannot watch file changes in some conditions. See [`server.watch` option](../../config/server-options/index.md#server-watch).
 
 ### A full reload happens instead of HMR [​](#a-full-reload-happens-instead-of-hmr)
 
@@ -222,7 +222,7 @@ To resolve this, you can:
 *   **Keep old chunks temporarily**: Consider keeping the previous deployment's chunks for a period to allow cached users to transition smoothly.
 *   **Use a service worker**: Implement a service worker that will prefetch all the assets and cache them.
 *   **Prefetch the dynamic chunks**: Note that this does not help if your HTML file is cached by the browser due to `Cache-Control` headers.
-*   **Implement a graceful fallback**: Implement error handling for dynamic imports to reload the page when chunks are missing. See [Load Error Handling](vite/guide/build/index.md#load-error-handling) for more details.
+*   **Implement a graceful fallback**: Implement error handling for dynamic imports to reload the page when chunks are missing. See [Load Error Handling](../build/index.md#load-error-handling) for more details.
 
 #### Poor network conditions [​](#poor-network-conditions)
 
@@ -234,7 +234,7 @@ Note that you cannot retry the dynamic import due to browser limitations ([whatw
 
 The error may also occur if the browser extensions (like ad-blockers) are blocking that request.
 
-It might be possible to work around by selecting a different chunk name by [`build.rolldownOptions.output.chunkFileNames`](vite/config/build-options/index.md#build-rolldownoptions), as these extensions often block requests based on file names (e.g. names containing `ad`, `track`).
+It might be possible to work around by selecting a different chunk name by [`build.rolldownOptions.output.chunkFileNames`](../../config/build-options/index.md#build-rolldownoptions), as these extensions often block requests based on file names (e.g. names containing `ad`, `track`).
 
 ## Optimized Dependencies [​](#optimized-dependencies)
 

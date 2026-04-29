@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:36.285Z"
 content_hash: "3d1c9194ee440e606e51c15e9fba82872c98ee5569c1f1f67dcb808f6f907677"
 menu_path: ["Convert a Node.js Readable to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/web-debugger/index.md", "title": "Debugging Bun with the web debugger"}
-nav_next: {"path": "bun/docs/guides/streams/node-readable-to-blob/index.md", "title": "Convert a Node.js Readable to a Blob"}
+nav_prev: {"path": "../../runtime/web-debugger/index.md", "title": "Debugging Bun with the web debugger"}
+nav_next: {"path": "../node-readable-to-blob/index.md", "title": "Convert a Node.js Readable to a Blob"}
 ---
 
 [Skip to main content](#content-area)

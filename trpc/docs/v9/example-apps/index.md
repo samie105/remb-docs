@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:52.580Z"
 content_hash: "f05cb2803e4670bb0028db8cadd466bb4cc38c08914ee482f9807863ea8eea0c"
 menu_path: ["Example Apps"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/error-handling/index.md", "title": "Error Handling"}
-nav_next: {"path": "trpc/docs/v9/express/index.md", "title": "Usage with Express.js"}
+nav_prev: {"path": "../error-handling/index.md", "title": "Error Handling"}
+nav_next: {"path": "../express/index.md", "title": "Usage with Express.js"}
 ---
 
 You can clone trpc and play with local examples, or play with them in the CodeSandbox link below.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:48.706Z"
 content_hash: "bbb148d67766c1876f604d63c76aefe7cf7b7b2f59f76148ec66d47269ef0eff"
 menu_path: ["Supabase & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
-nav_next: {"path": "astro/en/guides/backend/turso/index.md", "title": "Turso & Astro"}
+nav_prev: {"path": "../sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
+nav_next: {"path": "../turso/index.md", "title": "Turso & Astro"}
 ---
 
 # Supabase & Astro

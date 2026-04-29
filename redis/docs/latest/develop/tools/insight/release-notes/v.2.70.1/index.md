@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:37.101Z"
 content_hash: "edc35a1c5e0a83f4f79b12c1b8d0764e7e20b74bd795ee116c1514ceff10b3ea"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.70.1, July 2025","→","Redis Insight v2.70.1, July 2025"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Redis Insight release notes","→","Redis Insight release notes","→\n      \n        Redis Insight v2.70.1, July 2025","→","Redis Insight v2.70.1, July 2025"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.2.70.0/index.md", "title": "Redis Insight v2.70.0, May 2025"}
-nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/v.3.0.0/index.md", "title": "Redis Insight v3.0.0, November 2025"}
+nav_prev: {"path": "../v.2.70.0/index.md", "title": "Redis Insight v2.70.0, May 2025"}
+nav_next: {"path": "../v.3.0.0/index.md", "title": "Redis Insight v3.0.0, November 2025"}
 ---
 
 # Redis Insight v2.70.1, July 2025

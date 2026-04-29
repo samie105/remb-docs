@@ -10,8 +10,8 @@ content_hash: "3c6015783ebb75c114e87ac432a661faab744ba748f70f7887366897362b7c85"
 menu_path: ["PostgreSQL: Documentation: 18: F.14. earthdistance — calculate great-circle distances"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/dynamic-trace.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.5.\u00a0Dynamic Tracing"}
-nav_next: {"path": "postgres/docs/current/ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
+nav_prev: {"path": "../dynamic-trace.html/index.md", "title": "PostgreSQL: Documentation: 18: 27.5.\u00a0Dynamic Tracing"}
+nav_next: {"path": "../ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/earthdistance.html "PostgreSQL devel - F.14. earthdistance — calculate great-circle distances")
@@ -28,7 +28,7 @@ It is strongly recommended that `earthdistance` and `cube` be installed in the s
 
 ### F.14.1. Cube-Based Earth Distances [#](#EARTHDISTANCE-CUBE-BASED)
 
-Data is stored in cubes that are points (both corners are the same) using 3 coordinates representing the x, y, and z distance from the center of the Earth. A [](postgres/docs/current/glossary.html/index.md#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") `earth` over type `cube` is provided, which includes constraint checks that the value meets these restrictions and is reasonably close to the actual surface of the Earth.
+Data is stored in cubes that are points (both corners are the same) using 3 coordinates representing the x, y, and z distance from the center of the Earth. A [](../glossary.html/index.md#GLOSSARY-DOMAIN)[domain](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-DOMAIN "Domain") `earth` over type `cube` is provided, which includes constraint checks that the value meets these restrictions and is reasonably close to the actual surface of the Earth.
 
 The radius of the Earth is obtained from the `earth()` function. It is given in meters. But by changing this one function you can change the module to use some other units, or to use a different value of the radius that you feel is more appropriate.
 

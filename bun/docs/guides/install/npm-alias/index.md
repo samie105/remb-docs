@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:09.861Z"
 content_hash: "93d4196e9722c4b26034bb92cac96a430876e2e003a0796c281dc08c99af7a72"
 menu_path: ["Install a package under a different name"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/jfrog-artifactory/index.md", "title": "Using bun install with Artifactory"}
-nav_next: {"path": "bun/docs/guides/install/registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
+nav_prev: {"path": "../jfrog-artifactory/index.md", "title": "Using bun install with Artifactory"}
+nav_next: {"path": "../registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
 ---
 
 [Skip to main content](#content-area)

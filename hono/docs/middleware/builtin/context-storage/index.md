@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:46.239Z"
 content_hash: "e2a1cca8842b45498345fdba3ec586cc7c724914c9341ab4a8b739c0e091e975"
 menu_path: ["Context Storage Middleware ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/middleware/builtin/compress/index.md", "title": "Compress Middleware \u200b"}
-nav_next: {"path": "hono/docs/middleware/builtin/cors/index.md", "title": "CORS Middleware \u200b"}
+nav_prev: {"path": "../compress/index.md", "title": "Compress Middleware \u200b"}
+nav_next: {"path": "../cors/index.md", "title": "CORS Middleware \u200b"}
 ---
 
 ## Context Storage Middleware [​](#context-storage-middleware)

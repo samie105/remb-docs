@@ -10,8 +10,8 @@ content_hash: "81ded5fc3983bc8021b205e24a5d03538aacb1fc6b78255cedaa3424e2341ba4"
 menu_path: ["background-blend-mode"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/mix-blend-mode/index.md", "title": "mix-blend-mode"}
-nav_next: {"path": "tailwind/docs/mask-clip/index.md", "title": "mask-clip"}
+nav_prev: {"path": "../mix-blend-mode/index.md", "title": "mix-blend-mode"}
+nav_next: {"path": "../mask-clip/index.md", "title": "mask-clip"}
 ---
 
 # background-blend-mode

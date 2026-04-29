@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:35.324Z"
 content_hash: "54b6affa9ffdb66cbece04915a4bc0feaafa0d2c21984bf0c658ac3d89b60cca"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Java","→","RedisOM for Java"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Java","→","RedisOM for Java"]
-nav_prev: {"path": "redis/docs/latest/integrate/redisinsight/index.md", "title": "Redis Insight"}
-nav_next: {"path": "redis/docs/latest/integrate/redisom-for-net/index.md", "title": "RedisOM for .NET"}
+nav_prev: {"path": "../redisinsight/index.md", "title": "Redis Insight"}
+nav_next: {"path": "../redisom-for-net/index.md", "title": "RedisOM for .NET"}
 ---
 
 # RedisOM for Java

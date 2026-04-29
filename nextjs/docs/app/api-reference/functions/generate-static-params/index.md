@@ -11,8 +11,8 @@ menu_path: ["generateStaticParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-sitemaps/index.md", "title": "generateSitemaps"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-viewport/index.md", "title": "generateViewport"}
+nav_prev: {"path": "../generate-sitemaps/index.md", "title": "generateSitemaps"}
+nav_next: {"path": "../generate-viewport/index.md", "title": "generateViewport"}
 ---
 
 # generateStaticParams

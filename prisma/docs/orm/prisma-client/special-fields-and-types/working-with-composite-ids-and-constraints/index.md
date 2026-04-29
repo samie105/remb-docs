@@ -10,15 +10,15 @@ content_hash: "606107d275b69e1ae41f9665e5725130504684b924ea942313d20fa744abde6e"
 menu_path: ["Working with compound IDs and unique constraints"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/null-and-undefined/index.md", "title": "Null and undefined"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
+nav_prev: {"path": "../null-and-undefined/index.md", "title": "Null and undefined"}
+nav_next: {"path": "../working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
 ---
 
 Special Fields and Types
 
 How to read, write, and filter by compound IDs and unique constraints
 
-Composite IDs and compound unique constraints can be defined in your Prisma schema using the [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md) and [`@@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attributes.
+Composite IDs and compound unique constraints can be defined in your Prisma schema using the [`@@id`](../../../reference/prisma-schema-reference/index.md) and [`@@unique`](../../../reference/prisma-schema-reference/index.md) attributes.
 
 A composite ID or compound unique constraint uses the combined values of two fields as a primary key or identifier in your database table. In the following example, the `postId` field and `userId` field are used as a composite ID for a `Like` table:
 

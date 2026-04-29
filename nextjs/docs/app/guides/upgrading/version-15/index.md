@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/upgrading/version-14/index.md", "title": "How to upgrade to version 14"}
-nav_next: {"path": "nextjs/docs/app/guides/upgrading/version-16/index.md", "title": "How to upgrade to version 16"}
+nav_prev: {"path": "../version-14/index.md", "title": "How to upgrade to version 14"}
+nav_next: {"path": "../version-16/index.md", "title": "How to upgrade to version 16"}
 ---
 
 # How to upgrade to version 15

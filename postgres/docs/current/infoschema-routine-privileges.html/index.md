@@ -10,8 +10,8 @@ content_hash: "809ccb2ba04dc4e15a45d6057147ca3579861c1035a83144c66b503b7dbbb891"
 menu_path: ["PostgreSQL: Documentation: 18: 35.41. routine_privileges"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-routine-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.40.\u00a0routine_column_usage"}
-nav_next: {"path": "postgres/docs/current/infoschema-routine-routine-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.42.\u00a0routine_routine_usage"}
+nav_prev: {"path": "../infoschema-routine-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.40.\u00a0routine_column_usage"}
+nav_next: {"path": "../infoschema-routine-routine-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.42.\u00a0routine_routine_usage"}
 ---
 
 The view `routine_privileges` identifies all privileges granted on functions to a currently enabled role or by a currently enabled role. There is one row for each combination of function, grantor, and grantee.

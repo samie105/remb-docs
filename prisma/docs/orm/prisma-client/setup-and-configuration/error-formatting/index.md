@@ -10,8 +10,8 @@ content_hash: "0df75f88e9fb011582711d698896c6a507ec2ec5c92a61312f1c86d4f3e461ea"
 menu_path: ["Configuring error formatting"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md", "title": "Introduction to Prisma Client"}
+nav_prev: {"path": "../databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
+nav_next: {"path": "../introduction/index.md", "title": "Introduction to Prisma Client"}
 ---
 
 Setup and Configuration
@@ -33,12 +33,12 @@ In order to configure these different error formatting levels, there are two opt
 -   Setting the config options via environment variables
 -   Providing the config options to the `PrismaClient` constructor
 
--   [`NO_COLOR`](prisma/docs/orm/reference/environment-variables-reference/index.md#no_color): If this env var is provided, colors are stripped from the error messages. Therefore you end up with a **colorless error**. The `NO_COLOR` environment variable is a standard described [here](https://no-color.org/).
+-   [`NO_COLOR`](../../../reference/environment-variables-reference/index.md#no_color): If this env var is provided, colors are stripped from the error messages. Therefore you end up with a **colorless error**. The `NO_COLOR` environment variable is a standard described [here](https://no-color.org/).
 -   `NODE_ENV=production`: If the env var `NODE_ENV` is set to `production`, only the **minimal error** will be printed. This allows for easier digestion of logs in production environments.
 
 ### [Formatting via the `PrismaClient` constructor](#formatting-via-the-prismaclient-constructor)
 
-Alternatively, use the `PrismaClient` [`errorFormat`](prisma/docs/orm/reference/prisma-client-reference/index.md#errorformat) parameter to set the error format:
+Alternatively, use the `PrismaClient` [`errorFormat`](../../../reference/prisma-client-reference/index.md#errorformat) parameter to set the error format:
 
 ```
 const prisma = new PrismaClient({

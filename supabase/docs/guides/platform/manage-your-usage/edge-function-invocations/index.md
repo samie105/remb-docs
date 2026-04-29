@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:00.622Z"
 content_hash: "d3868e7194b1b81e09f9f0ff1bfbbc8077f44b3f18574599a2dbd35286bfc19e"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Edge Function Invocations","Edge Function Invocations"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Edge Function Invocations","Edge Function Invocations"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/egress/index.md", "title": "Manage Egress usage"}
+nav_prev: {"path": "../disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
+nav_next: {"path": "../egress/index.md", "title": "Manage Egress usage"}
 ---
 
 # 

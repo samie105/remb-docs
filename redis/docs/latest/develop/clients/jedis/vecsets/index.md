@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:57.524Z"
 content_hash: "95a91164c99f6e9a8ceb123b23c6f48e85de272cfb9e7ec9a8df6730e9807c08"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Vector set embeddings","→","Vector set embeddings"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Vector set embeddings","→","Vector set embeddings"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/vecsearch/index.md", "title": "Index and query vectors"}
-nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/index.md", "title": "Lettuce guide (Java)"}
+nav_prev: {"path": "../vecsearch/index.md", "title": "Index and query vectors"}
+nav_next: {"path": "../../lettuce/index.md", "title": "Lettuce guide (Java)"}
 ---
 
 # Vector set embeddings

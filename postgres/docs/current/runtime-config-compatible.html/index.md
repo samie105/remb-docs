@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:19.476Z"
 content_hash: "c15586e2cc2a798d2c2a56dd97db695a54e192c55354493f5e8e2f4722adc5b2"
 menu_path: ["PostgreSQL: Documentation: 18: 19.13. Version and Platform Compatibility"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-client.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.11.\u00a0Client Connection Defaults"}
-nav_next: {"path": "postgres/docs/current/runtime-config-connection.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.3.\u00a0Connections and Authentication"}
+nav_prev: {"path": "../runtime-config-client.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.11.\u00a0Client Connection Defaults"}
+nav_next: {"path": "../runtime-config-connection.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.3.\u00a0Connections and Authentication"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/runtime-config-compatible.html "PostgreSQL devel - 19.13. Version and Platform Compatibility")

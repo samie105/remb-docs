@@ -9,14 +9,14 @@ last_crawled_at: "2026-04-18T16:46:52.362Z"
 content_hash: "5eff6b92662afa2b4ff70214f062d8905d40d8f7f02360a75698518df5c14224"
 menu_path: ["Suspense"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/react/setup/index.md", "title": "Set up the React Query Integration"}
-nav_next: {"path": "trpc/docs/client/react/useInfiniteQuery/index.md", "title": "useInfiniteQuery()"}
+nav_prev: {"path": "../setup/index.md", "title": "Set up the React Query Integration"}
+nav_next: {"path": "../useInfiniteQuery/index.md", "title": "useInfiniteQuery()"}
 ---
 
 info
 
 *   Ensure you're on the latest version of React
-*   If you use suspense with [tRPC's _automatic_ SSR in Next.js](trpc/docs/client/nextjs/pages-router/ssr/index.md), the full page will crash on the server if a query fails, even if you have an `<ErrorBoundary />`
+*   If you use suspense with [tRPC's _automatic_ SSR in Next.js](../../nextjs/pages-router/ssr/index.md), the full page will crash on the server if a query fails, even if you have an `<ErrorBoundary />`
 
 ## Usage[​](#usage "Direct link to Usage")
 
@@ -76,7 +76,7 @@ tsx
 
 ### `useSuspenseQueries()`[​](#usesuspensequeries "Direct link to usesuspensequeries")
 
-Suspense equivalent of [`useQueries()`](trpc/docs/client/react/useQueries/index.md).
+Suspense equivalent of [`useQueries()`](../useQueries/index.md).
 
 tsx
 
@@ -101,7 +101,7 @@ The performance of suspense queries can be improved by prefetching the query dat
 note
 
 *   Prefetching and the render-as-you-fetch model are very dependent on the framework and router you are using. We recommend reading your frameworks router docs along with the [@tanstack/react-query docs](https://tanstack.com/query/v5/docs/react/guides/prefetching) to understand how to implement these patterns.
-*   If you are using Next.js please look at the docs on [Server-Side Helpers](trpc/docs/client/nextjs/pages-router/server-side-helpers/index.md) to implement server-side prefetching.
+*   If you are using Next.js please look at the docs on [Server-Side Helpers](../../nextjs/pages-router/server-side-helpers/index.md) to implement server-side prefetching.
 
 ### Route-level prefetching[​](#route-level-prefetching "Direct link to Route-level prefetching")
 

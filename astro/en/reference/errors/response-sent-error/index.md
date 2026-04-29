@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:25.505Z"
 content_hash: "733d867d780fcb1b9b5bf0f9cd65dfc41200a2d0ab810a173a6790072f9e06aa"
 menu_path: ["Unable to set response."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/reserved-slot-name/index.md", "title": "Invalid slot name."}
-nav_next: {"path": "astro/en/reference/errors/rewrite-encountered-an-error/index.md", "title": "Astro couldn't find the route to rewrite, or if was found but it emitted an error during the rendering phase."}
+nav_prev: {"path": "../reserved-slot-name/index.md", "title": "Invalid slot name."}
+nav_next: {"path": "../rewrite-encountered-an-error/index.md", "title": "Astro couldn't find the route to rewrite, or if was found but it emitted an error during the rendering phase."}
 ---
 
 # Unable to set response.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:14.528Z"
 content_hash: "c1073535074b359c7a6b07996ad7d588985e22380582a909b7441b7d65fe009a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis signal handling","→","Redis signal handling"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis signal handling","→","Redis signal handling"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/rdd/index.md", "title": "Redis design draft #2 (historical)"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/index.md", "title": "Concepts"}
+nav_prev: {"path": "../internals/rdd/index.md", "title": "Redis design draft #2 (historical)"}
+nav_next: {"path": "../../stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/index.md", "title": "Concepts"}
 ---
 
 # Redis signal handling

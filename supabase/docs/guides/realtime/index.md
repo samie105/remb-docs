@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:33.930Z"
 content_hash: "18c828d605656ea98cf3406660cac08a66faf5b4bb3093df8e14f378b1a5d528"
 menu_path: ["Realtime","Realtime","Overview","Overview"]
 section_path: ["Realtime","Realtime","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/queues/quickstart/index.md", "title": "Quickstart"}
-nav_next: {"path": "supabase/docs/guides/realtime/architecture/index.md", "title": "Realtime Architecture"}
+nav_prev: {"path": "../queues/quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "architecture/index.md", "title": "Realtime Architecture"}
 ---
 
 # 

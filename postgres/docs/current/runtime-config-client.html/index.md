@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:49.522Z"
 content_hash: "0961fd1d8adedab1a5f2ff2bf4e4418c4bfdf70f4560e9d8cbd26ca6d7c40b6d"
 menu_path: ["PostgreSQL: Documentation: 18: 19.11. Client Connection Defaults"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/rules-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.2.\u00a0Views and the Rule System"}
-nav_next: {"path": "postgres/docs/current/runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
+nav_prev: {"path": "../rules-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.2.\u00a0Views and the Rule System"}
+nav_next: {"path": "../runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
 ---
 
 ### 19.11.1. Statement Behavior [#](#RUNTIME-CONFIG-CLIENT-STATEMENT)
@@ -57,7 +57,7 @@ This variable specifies the default tablespace in which to create objects (table
 
 The value is either the name of a tablespace, or an empty string to specify using the default tablespace of the current database. If the value does not match the name of any existing tablespace, PostgreSQL will automatically use the default tablespace of the current database. If a nondefault tablespace is specified, the user must have `CREATE` privilege for it, or creation attempts will fail.
 
-This variable is not used for temporary tables; for them, [temp\_tablespaces](postgres/docs/current/runtime-config-client.html/index.md#GUC-TEMP-TABLESPACES) is consulted instead.
+This variable is not used for temporary tables; for them, [temp\_tablespaces](index.md#GUC-TEMP-TABLESPACES) is consulted instead.
 
 This variable is also not used when creating databases. By default, a new database inherits its tablespace setting from the template database it is copied from.
 
@@ -79,7 +79,7 @@ When `temp_tablespaces` is set interactively, specifying a nonexistent tablespac
 
 The default value is an empty string, which results in all temporary objects being created in the default tablespace of the current database.
 
-See also [default\_tablespace](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TABLESPACE).
+See also [default\_tablespace](index.md#GUC-DEFAULT-TABLESPACE).
 
 `check_function_bodies` (`boolean`) [#](#GUC-CHECK-FUNCTION-BODIES)
 
@@ -107,15 +107,15 @@ Consult [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transa
 
 `transaction_isolation` (`enum`) [#](#GUC-TRANSACTION-ISOLATION)
 
-This parameter reflects the current transaction's isolation level. At the beginning of each transaction, it is set to the current value of [default\_transaction\_isolation](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-ISOLATION). Any subsequent attempt to change it is equivalent to a [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION") command.
+This parameter reflects the current transaction's isolation level. At the beginning of each transaction, it is set to the current value of [default\_transaction\_isolation](index.md#GUC-DEFAULT-TRANSACTION-ISOLATION). Any subsequent attempt to change it is equivalent to a [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION") command.
 
 `transaction_read_only` (`boolean`) [#](#GUC-TRANSACTION-READ-ONLY)
 
-This parameter reflects the current transaction's read-only status. At the beginning of each transaction, it is set to the current value of [default\_transaction\_read\_only](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-READ-ONLY). Any subsequent attempt to change it is equivalent to a [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION") command.
+This parameter reflects the current transaction's read-only status. At the beginning of each transaction, it is set to the current value of [default\_transaction\_read\_only](index.md#GUC-DEFAULT-TRANSACTION-READ-ONLY). Any subsequent attempt to change it is equivalent to a [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION") command.
 
 `transaction_deferrable` (`boolean`) [#](#GUC-TRANSACTION-DEFERRABLE)
 
-This parameter reflects the current transaction's deferrability status. At the beginning of each transaction, it is set to the current value of [default\_transaction\_deferrable](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TRANSACTION-DEFERRABLE). Any subsequent attempt to change it is equivalent to a [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION") command.
+This parameter reflects the current transaction's deferrability status. At the beginning of each transaction, it is set to the current value of [default\_transaction\_deferrable](index.md#GUC-DEFAULT-TRANSACTION-DEFERRABLE). Any subsequent attempt to change it is equivalent to a [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html "SET TRANSACTION") command.
 
 `session_replication_role` (`enum`) [#](#GUC-SESSION-REPLICATION-ROLE)
 

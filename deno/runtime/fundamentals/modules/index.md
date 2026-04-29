@@ -10,8 +10,8 @@ content_hash: "a956cbd6e8f925925cc6e526f204be11178d7ac3ee0eb6c4588a8e3f9b886b79"
 menu_path: ["Modules and dependencies"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/fundamentals/security/index.md", "title": "Security and permissions"}
-nav_next: {"path": "deno/runtime/fundamentals/configuration/index.md", "title": "deno.json and package.json"}
+nav_prev: {"path": "../security/index.md", "title": "Security and permissions"}
+nav_next: {"path": "../configuration/index.md", "title": "deno.json and package.json"}
 ---
 
 # Add the latest version of the module to deno.json

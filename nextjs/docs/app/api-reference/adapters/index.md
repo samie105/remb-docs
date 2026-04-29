@@ -11,8 +11,8 @@ menu_path: ["Adapters"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/cli/next/index.md", "title": "next CLI"}
-nav_next: {"path": "nextjs/docs/app/api-reference/adapters/configuration/index.md", "title": "Configuration"}
+nav_prev: {"path": "../cli/next/index.md", "title": "next CLI"}
+nav_next: {"path": "configuration/index.md", "title": "Configuration"}
 ---
 
 # Adapters

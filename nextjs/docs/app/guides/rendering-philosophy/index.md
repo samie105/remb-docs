@@ -11,8 +11,8 @@ menu_path: ["Next.js Rendering Philosophy"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/redirecting/index.md", "title": "How to handle redirects in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/sass/index.md", "title": "How to use Sass"}
+nav_prev: {"path": "../redirecting/index.md", "title": "How to handle redirects in Next.js"}
+nav_next: {"path": "../sass/index.md", "title": "How to use Sass"}
 ---
 
 # Next.js Rendering Philosophy

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:49.864Z"
 content_hash: "49a5e9e10a29099138cd5130186f12a5c8a5cdb3fffde21780696a35de7831a7"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","MFA Phone","MFA Phone"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","MFA Phone","MFA Phone"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/index.md", "title": "Manage your usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/branching/index.md", "title": "Manage Branching usage"}
+nav_prev: {"path": "../index.md", "title": "Manage your usage"}
+nav_next: {"path": "../branching/index.md", "title": "Manage Branching usage"}
 ---
 
 # 

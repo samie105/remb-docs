@@ -11,8 +11,8 @@ menu_path: ["rewrites"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/redirects/index.md", "title": "redirects"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
+nav_prev: {"path": "../redirects/index.md", "title": "redirects"}
+nav_next: {"path": "../serverExternalPackages/index.md", "title": "serverExternalPackages"}
 ---
 
 # rewrites

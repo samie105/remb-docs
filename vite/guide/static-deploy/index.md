@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:36:28.987Z"
 content_hash: "c721fc2fda8563a8079923a470919f6d0c4f07e77363ae0b0f853d3c51edc17b"
 menu_path: ["Deploying a Static Site ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/build/index.md", "title": "Building for Production \u200b"}
-nav_next: {"path": "vite/guide/env-and-mode/index.md", "title": "Env Variables and Modes \u200b"}
+nav_prev: {"path": "../build/index.md", "title": "Building for Production \u200b"}
+nav_next: {"path": "../env-and-mode/index.md", "title": "Env Variables and Modes \u200b"}
 ---
 
 The following guides are based on some shared assumptions:
 
-*   You are using the default build output location (`dist`). This location [can be changed using `build.outDir`](vite/config/build-options/index.md#build-outdir), and you can extrapolate instructions from these guides in that case.
+*   You are using the default build output location (`dist`). This location [can be changed using `build.outDir`](../../config/build-options/index.md#build-outdir), and you can extrapolate instructions from these guides in that case.
 *   You are using npm. You can use equivalent commands to run the scripts if you are using Yarn or other package managers.
 *   Vite is installed as a local dev dependency in your project, and you have setup the following npm scripts:
 
@@ -36,7 +36,7 @@ It is important to note that `vite preview` is intended for previewing the build
 
 NOTE
 
-These guides provide instructions for performing a static deployment of your Vite site. Vite also supports Server-Side Rendering. SSR refers to front-end frameworks that support running the same application in Node.js, pre-rendering it to HTML, and finally hydrating it on the client. Check out the [SSR Guide](vite/guide/ssr/index.md) to learn about this feature. On the other hand, if you are looking for integration with traditional server-side frameworks, check out the [Backend Integration guide](vite/guide/backend-integration/index.md) instead.
+These guides provide instructions for performing a static deployment of your Vite site. Vite also supports Server-Side Rendering. SSR refers to front-end frameworks that support running the same application in Node.js, pre-rendering it to HTML, and finally hydrating it on the client. Check out the [SSR Guide](../ssr/index.md) to learn about this feature. On the other hand, if you are looking for integration with traditional server-side frameworks, check out the [Backend Integration guide](../backend-integration/index.md) instead.
 
 ## Building the App [​](#building-the-app)
 

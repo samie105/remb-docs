@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:07.995Z"
 content_hash: "312f07091bbc44302542b785ad6c30963a91c2a4bdc908a7eddf7d55de0d7024"
 menu_path: ["PostgreSQL: Documentation: 18: END"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropview.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP VIEW"}
-nav_next: {"path": "postgres/docs/current/sql-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: EXPLAIN"}
+nav_prev: {"path": "../sql-dropview.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP VIEW"}
+nav_next: {"path": "../sql-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: EXPLAIN"}
 ---
 
 END — commit the current transaction

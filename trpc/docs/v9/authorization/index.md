@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:04.067Z"
 content_hash: "9a0bdf784b36823a68cfd3f8dfaf6f576a132743f5c0ff07adac6ef14feebe23"
 menu_path: ["Authorization"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/index.md", "title": "tRPC | tRPC"}
-nav_next: {"path": "trpc/docs/v9/awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
+nav_prev: {"path": "../index.md", "title": "tRPC | tRPC"}
+nav_next: {"path": "../awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
 ---
 
 The `createContext`\-function is called for each incoming request so here you can add contextual information about the calling user from the request object.
@@ -185,4 +185,4 @@ ts
 
   `);`
 
-This middleware can be re-used for multiple sub-routers by creating a [protected router](trpc/docs/v9/middlewares/index.md#createprotectedrouter-helper) helper.
+This middleware can be re-used for multiple sub-routers by creating a [protected router](../middlewares/index.md#createprotectedrouter-helper) helper.

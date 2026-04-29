@@ -10,8 +10,8 @@ content_hash: "745fc432bb438d0a611ff5d014c65706253c053722f1c27497af95ac9b70a473"
 menu_path: ["dgram - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/crypto/index.md", "title": "crypto - Node documentation"}
-nav_next: {"path": "deno/api/node/diagnostics_channel/index.md", "title": "diagnostics_channel - Node documentation"}
+nav_prev: {"path": "../crypto/index.md", "title": "crypto - Node documentation"}
+nav_next: {"path": "../diagnostics_channel/index.md", "title": "diagnostics_channel - Node documentation"}
 ---
 
 ### Usage in Deno

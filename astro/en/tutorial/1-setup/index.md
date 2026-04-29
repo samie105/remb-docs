@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:04.868Z"
 content_hash: "dd851d45e0c7f71be446f1c5eeed381fb1dd030eeb65f7a259e97f6454714234"
 menu_path: ["Check in: Unit 1 - Setup"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/0-introduction/index.md", "title": "Build your first Astro Blog"}
-nav_next: {"path": "astro/en/tutorial/2-pages/index.md", "title": "Check in: Unit 2 - Pages"}
+nav_prev: {"path": "../0-introduction/index.md", "title": "Build your first Astro Blog"}
+nav_next: {"path": "../2-pages/index.md", "title": "Check in: Unit 2 - Pages"}
 ---
 
 # Check in: Unit 1 - Setup

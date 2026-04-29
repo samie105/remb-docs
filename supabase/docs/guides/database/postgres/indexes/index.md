@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:36.154Z"
 content_hash: "dfbd2d3367ca260d0cce6ac6ed3b4c147b526fbe9f0b9b5cbf20ba671f5c5fb8"
 menu_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Managing indexes","Managing indexes"]
 section_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Managing indexes","Managing indexes"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/first-row-in-group/index.md", "title": "Select first row for each group in Postgres"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/roles/index.md", "title": "Postgres Roles"}
+nav_prev: {"path": "../first-row-in-group/index.md", "title": "Select first row for each group in Postgres"}
+nav_next: {"path": "../roles/index.md", "title": "Postgres Roles"}
 ---
 
 # 

@@ -5,7 +5,7 @@ Next.js is a React framework for production that uses file-system routing, serve
 ## Mental Model
 
 Next.js treats directories and files as URL routes, using special files and configuration to define layouts, loading states, and API boundaries. The framework compiles this into platform-agnostic outputs that adapters transform into hosting-specific deployments, bridging the CLI build step to runtime behavior. Start with the adapters overview to understand the platform bridge, then study the CLI and configuration contracts.
-Links: [`nextjs/docs/app/api-reference/adapters/index.md`](nextjs/docs/app/api-reference/adapters/index.md), [`nextjs/docs/app/api-reference/cli/next/index.md`](nextjs/docs/app/api-reference/cli/next/index.md), [`nextjs/docs/app/api-reference/config/next-config-js/index.md`](nextjs/docs/app/api-reference/config/next-config-js/index.md)
+Links: [`nextjs/docs/app/api-reference/adapters/index.md`](docs/app/api-reference/adapters/index.md), [`nextjs/docs/app/api-reference/cli/next/index.md`](docs/app/api-reference/cli/next/index.md), [`nextjs/docs/app/api-reference/config/next-config-js/index.md`](docs/app/api-reference/config/next-config-js/index.md)
 
 ## Learning Paths
 

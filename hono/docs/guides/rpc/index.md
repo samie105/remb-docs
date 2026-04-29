@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:42.843Z"
 content_hash: "036e73fbb550368612c0d204a0bc8b28533ca83856e0c186dcc3d443aa131994"
 menu_path: ["RPC ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/guides/validation/index.md", "title": "Validation \u200b"}
-nav_next: {"path": "hono/docs/guides/best-practices/index.md", "title": "Best Practices \u200b"}
+nav_prev: {"path": "../validation/index.md", "title": "Validation \u200b"}
+nav_next: {"path": "../best-practices/index.md", "title": "Best Practices \u200b"}
 ---
 
 # wrangler.toml
@@ -130,7 +130,7 @@ export default App
 
 ## Using RPC with larger applications [​](#using-rpc-with-larger-applications)
 
-In the case of a larger application, such as the example mentioned in [Building a larger application](hono/docs/guides/best-practices/index.md#building-a-larger-application), you need to be careful about the type of inference. A simple way to do this is to chain the handlers so that the types are always inferred.
+In the case of a larger application, such as the example mentioned in [Building a larger application](../best-practices/index.md#building-a-larger-application), you need to be careful about the type of inference. A simple way to do this is to chain the handlers so that the types are always inferred.
 
 ts
 

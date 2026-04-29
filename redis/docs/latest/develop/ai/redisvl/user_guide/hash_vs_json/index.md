@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:03:24.959Z"
 content_hash: "54fb97f8f004785e05b4134d10879bd06c537eba8908f24621f973433a964fe1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Hash vs JSON Storage","→","Hash vs JSON Storage"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Hash vs JSON Storage","→","Hash vs JSON Storage"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/getting_started/index.md", "title": "Getting Started with RedisVL"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/hybrid_queries/index.md", "title": "Querying with RedisVL"}
+nav_prev: {"path": "../getting_started/index.md", "title": "Getting Started with RedisVL"}
+nav_next: {"path": "../hybrid_queries/index.md", "title": "Querying with RedisVL"}
 ---
 
 # Hash vs JSON Storage

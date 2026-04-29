@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:31.055Z"
 content_hash: "d90381c5f8cb81ea64a758bf50d432268d26f8595401da7260731c385629bac2"
 menu_path: ["useQuery()"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/react/useQueries/index.md", "title": "useQueries()"}
-nav_next: {"path": "trpc/docs/v10/client/react/useUtils/index.md", "title": "useUtils"}
+nav_prev: {"path": "../useQueries/index.md", "title": "useQueries()"}
+nav_next: {"path": "../useUtils/index.md", "title": "useUtils"}
 ---
 
 note
@@ -45,9 +45,9 @@ tsx
 
 Since `UseTRPCQueryOptions` extends @tanstack/react-query's `UseQueryOptions`, you can use any of their options here such as `enabled`, `refetchOnWindowFocus`, etc. We also have some `trpc` specific options that let you opt in or out of certain behaviors on a per-procedure level:
 
-*   **`trpc.ssr`:** If you have `ssr: true` in your [global config](trpc/docs/v10/client/nextjs/setup/index.md#ssr-boolean-default-false), you can set this to false to disable ssr for this particular query. _Note that this does not work the other way around, i.e., you can not enable ssr on a procedure if your global config is set to false._
-*   **`trpc.abortOnUnmount`:** Override the [global config](trpc/docs/v10/client/nextjs/setup/index.md#config-callback) and opt in or out of aborting queries on unmount.
-*   **`trpc.context`:** Add extra meta data that could be used in [Links](trpc/docs/client/links/index.md).
+*   **`trpc.ssr`:** If you have `ssr: true` in your [global config](../../nextjs/setup/index.md#ssr-boolean-default-false), you can set this to false to disable ssr for this particular query. _Note that this does not work the other way around, i.e., you can not enable ssr on a procedure if your global config is set to false._
+*   **`trpc.abortOnUnmount`:** Override the [global config](../../nextjs/setup/index.md#config-callback) and opt in or out of aborting queries on unmount.
+*   **`trpc.context`:** Add extra meta data that could be used in [Links](../../../../client/links/index.md).
 
 tip
 

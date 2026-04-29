@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:27.435Z"
 content_hash: "a6db4da5c272e68dc647aeeae314a7975ee0552a4a05bf56bfd074b43ac09a09"
 menu_path: ["Spinal & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/sitepins/index.md", "title": "Sitepins & Astro"}
-nav_next: {"path": "astro/en/guides/cms/statamic/index.md", "title": "Headless Statamic & Astro"}
+nav_prev: {"path": "../sitepins/index.md", "title": "Sitepins & Astro"}
+nav_next: {"path": "../statamic/index.md", "title": "Headless Statamic & Astro"}
 ---
 
 # Spinal & Astro

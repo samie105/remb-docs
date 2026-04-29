@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:26.510Z"
 content_hash: "ed7534cbd827f4bcbda5f1fd75932c99019a0ddfb857179b915c47b1004b279a"
 menu_path: ["createTRPCQueryUtils"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/react/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
-nav_next: {"path": "trpc/docs/client/react/disabling-queries/index.md", "title": "Disabling Queries"}
+nav_prev: {"path": "../aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_next: {"path": "../disabling-queries/index.md", "title": "Disabling Queries"}
 ---
 
 The use case for `createTRPCQueryUtils` is when you need to use the helpers outside of a React Component, for example in `react-router`'s loaders.
@@ -99,4 +99,4 @@ If you were using Remix Run or SSR you wouldn't re-use the same `queryClient` fo
 
 Much like `useUtils`, `createTRPCQueryUtils` gives you access to same set of helpers, including `queryOptions` and `infiniteQueryOptions`. The only difference is that you need to pass in the `queryClient` and `client` objects.
 
-You can see them on the [useUtils](trpc/docs/client/react/useUtils/index.md#helpers)\-page.
+You can see them on the [useUtils](../useUtils/index.md#helpers)\-page.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:39.343Z"
 content_hash: "e07ef4282456b4c881f472754bdfacac0151dc7ad8a6bbb72610e1825babce95"
 menu_path: ["Glob patterns are not supported in the file loader"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/failed-to-load-module-ssr/index.md", "title": "Could not import file."}
-nav_next: {"path": "astro/en/reference/errors/file-parser-not-found/index.md", "title": "File parser not found"}
+nav_prev: {"path": "../failed-to-load-module-ssr/index.md", "title": "Could not import file."}
+nav_next: {"path": "../file-parser-not-found/index.md", "title": "File parser not found"}
 ---
 
 # Glob patterns are not supported in the file loader

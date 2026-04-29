@@ -11,8 +11,8 @@ menu_path: ["Edge Runtime"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/use-cases/index.md", "title": "Use Cases"}
-nav_next: {"path": "nextjs/docs/app/api-reference/turbopack/index.md", "title": "Turbopack"}
+nav_prev: {"path": "../adapters/use-cases/index.md", "title": "Use Cases"}
+nav_next: {"path": "../turbopack/index.md", "title": "Turbopack"}
 ---
 
 # Edge Runtime

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:14.306Z"
 content_hash: "fd2d824d5938de5933c46ed4a7eb5e7ad129400916c2f9042e55b0b2939c4f3f"
 menu_path: ["Content Schema should not contain slug."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/content-loader-returns-invalid-id/index.md", "title": "Content loader returned an entry with an invalid id."}
-nav_next: {"path": "astro/en/reference/errors/could-not-transform-image/index.md", "title": "Could not transform image."}
+nav_prev: {"path": "../content-loader-returns-invalid-id/index.md", "title": "Content loader returned an entry with an invalid id."}
+nav_next: {"path": "../could-not-transform-image/index.md", "title": "Could not transform image."}
 ---
 
 # Content Schema should not contain slug.

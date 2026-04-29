@@ -10,8 +10,8 @@ content_hash: "0108fe213b66442a85855cceeac44262aec0a5af9791b4c2a541f2f8250dc6b4"
 menu_path: ["PostgreSQL: Documentation: 18: COPY"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
-nav_next: {"path": "postgres/docs/current/sql-create-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ACCESS METHOD"}
+nav_prev: {"path": "../sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
+nav_next: {"path": "../sql-create-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ACCESS METHOD"}
 ---
 
 COPY — copy data between a file and a table
@@ -201,7 +201,7 @@ If row-level security is enabled for the table, the relevant `SELECT` policies w
 
 Files named in a `COPY` command are read or written directly by the server, not by the client application. Therefore, they must reside on or be accessible to the database server machine, not the client. They must be accessible to and readable or writable by the PostgreSQL user (the user ID the server runs as), not the client. Similarly, the command specified with `PROGRAM` is executed directly by the server, not by the client application, must be executable by the PostgreSQL user. `COPY` naming a file or command is only allowed to database superusers or users who are granted one of the roles `pg_read_server_files`, `pg_write_server_files`, or `pg_execute_server_program`, since it allows reading or writing any file or running a program that the server has privileges to access.
 
-Do not confuse `COPY` with the psql instruction `[\copy](postgres/docs/current/app-psql.html/index.md#APP-PSQL-META-COMMANDS-COPY)`. `\copy` invokes `COPY FROM STDIN` or `COPY TO STDOUT`, and then fetches/stores the data in a file accessible to the psql client. Thus, file accessibility and access rights depend on the client rather than the server when `\copy` is used.
+Do not confuse `COPY` with the psql instruction `[\copy](../app-psql.html/index.md#APP-PSQL-META-COMMANDS-COPY)`. `\copy` invokes `COPY FROM STDIN` or `COPY TO STDOUT`, and then fetches/stores the data in a file accessible to the psql client. Thus, file accessibility and access rights depend on the client rather than the server when `\copy` is used.
 
 It is recommended that the file name used in `COPY` always be specified as an absolute path. This is enforced by the server in the case of `COPY TO`, but for `COPY FROM` you do have the option of reading from a file specified by a relative path. The path will be interpreted relative to the working directory of the server process (normally the cluster's data directory), not the client's working directory.
 

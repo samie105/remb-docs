@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:42.899Z"
 content_hash: "e29f1ee17d475e6ea94131f7010e17b2469b900897eebe39a23f1386f231d5fe"
 menu_path: ["Define Router"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/react-queries/index.md", "title": "useQuery()"}
-nav_next: {"path": "trpc/docs/v9/rpc/index.md", "title": "HTTP RPC Specification"}
+nav_prev: {"path": "../react-queries/index.md", "title": "useQuery()"}
+nav_next: {"path": "../rpc/index.md", "title": "HTTP RPC Specification"}
 ---
 
 info

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:37.337Z"
 content_hash: "111f8f5b658e1630d85e5f793fb798eea4e6c9d2403ea2e442908dc4e1f65662"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Password-based","Password-based"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Password-based","Password-based"]
-nav_prev: {"path": "supabase/docs/guides/auth/password-security/index.md", "title": "Password security"}
-nav_next: {"path": "supabase/docs/guides/auth/phone-login/index.md", "title": "Phone Login"}
+nav_prev: {"path": "../password-security/index.md", "title": "Password security"}
+nav_next: {"path": "../phone-login/index.md", "title": "Phone Login"}
 ---
 
 # 

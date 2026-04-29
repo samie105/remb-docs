@@ -11,8 +11,8 @@ menu_path: ["crossOrigin"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/compress/index.md", "title": "compress"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cssChunking/index.md", "title": "cssChunking"}
+nav_prev: {"path": "../compress/index.md", "title": "compress"}
+nav_next: {"path": "../cssChunking/index.md", "title": "cssChunking"}
 ---
 
 # crossOrigin

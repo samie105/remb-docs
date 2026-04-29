@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:42.522Z"
 content_hash: "a0adef4fc8a3ed1d7ee6f084e505fad4fd3a5e19b2c2f605c9432a194ee5fed0"
 menu_path: ["Write a Blob to a file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/write-file/basic/index.md", "title": "Write a string to a file"}
-nav_next: {"path": "bun/docs/guides/write-file/cat/index.md", "title": "Write a file to stdout"}
+nav_prev: {"path": "../basic/index.md", "title": "Write a string to a file"}
+nav_next: {"path": "../cat/index.md", "title": "Write a file to stdout"}
 ---
 
 [Skip to main content](#content-area)

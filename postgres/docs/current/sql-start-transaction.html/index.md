@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:57.803Z"
 content_hash: "cc857a1bd99a6151a2e6fc2ce6a377cac83b9c80130dba1dfb60520430b55c39"
 menu_path: ["PostgreSQL: Documentation: 18: START TRANSACTION"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-show.html/index.md", "title": "PostgreSQL: Documentation: 18: SHOW"}
-nav_next: {"path": "postgres/docs/current/sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
+nav_prev: {"path": "../sql-show.html/index.md", "title": "PostgreSQL: Documentation: 18: SHOW"}
+nav_next: {"path": "../sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
 ---
 
 START TRANSACTION — start a transaction block

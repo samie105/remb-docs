@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:40.456Z"
 content_hash: "4dcb07cb6fd9b9d7409670f1019faeb9346b8d6f2ac5292eb1529d2d8e34f0e5"
 menu_path: ["Queues","Queues","Getting Started","Getting Started","Quickstart","Quickstart"]
 section_path: ["Queues","Queues","Getting Started","Getting Started","Quickstart","Quickstart"]
-nav_prev: {"path": "supabase/docs/guides/queues/pgmq/index.md", "title": "PGMQ Extension"}
-nav_next: {"path": "supabase/docs/guides/realtime/index.md", "title": "Realtime"}
+nav_prev: {"path": "../pgmq/index.md", "title": "PGMQ Extension"}
+nav_next: {"path": "../../realtime/index.md", "title": "Realtime"}
 ---
 
 # 

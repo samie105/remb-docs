@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:02.104Z"
 content_hash: "40cdc69a9fb872421afd0299507f03dc8c3a5a4384b7119fe093c84986ae62ed"
 menu_path: ["Function: createTRPCNext()"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/next/index.md", "title": "@trpc/next"}
-nav_next: {"path": "trpc/docs/v10/index.md", "title": "tRPC"}
+nav_prev: {"path": "../../index.md", "title": "@trpc/next"}
+nav_next: {"path": "../../../../v10/index.md", "title": "tRPC"}
 ---
 
 > **createTRPCNext**<`TRouter`, `TSSRContext`\>(`opts`): `ProtectedIntersection`<`CreateTRPCNextBase`<`TRouter`, `TSSRContext`\>, `DecorateRouterRecord`<`TRouter`\[`"_def"`\]\[`"_config"`\]\[`"$types"`\], `TRouter`\[`"_def"`\]\[`"record"`\]>>

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:15.769Z"
 content_hash: "3a374378836f57d8bc5e6beeafd0dbc1e1c67447a15ac8224b71ea496b528132"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Realtime Messages","Realtime Messages"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Realtime Messages","Realtime Messages"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/read-replicas/index.md", "title": "Manage Read Replica usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/realtime-peak-connections/index.md", "title": "Manage Realtime Peak Connections usage"}
+nav_prev: {"path": "../read-replicas/index.md", "title": "Manage Read Replica usage"}
+nav_next: {"path": "../realtime-peak-connections/index.md", "title": "Manage Realtime Peak Connections usage"}
 ---
 
 # 

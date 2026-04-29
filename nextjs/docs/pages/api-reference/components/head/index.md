@@ -11,8 +11,8 @@ menu_path: ["Head"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/form/index.md", "title": "Form"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/image/index.md", "title": "Image"}
+nav_prev: {"path": "../form/index.md", "title": "Form"}
+nav_next: {"path": "../image/index.md", "title": "Image"}
 ---
 
 # Head

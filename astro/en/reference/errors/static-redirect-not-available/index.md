@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:41.791Z"
 content_hash: "7d94dfed57706b73fac204d848c5eadb5b176f8a028a1b41bfa40a1265fd4b5b"
 menu_path: ["Astro.redirect is not available in static mode."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/static-client-address-not-available/index.md", "title": "Astro.clientAddress is not available in prerendered pages."}
-nav_next: {"path": "astro/en/reference/errors/unavailable-astro-global/index.md", "title": "Unavailable Astro global in getStaticPaths()"}
+nav_prev: {"path": "../static-client-address-not-available/index.md", "title": "Astro.clientAddress is not available in prerendered pages."}
+nav_next: {"path": "../unavailable-astro-global/index.md", "title": "Unavailable Astro global in getStaticPaths()"}
 ---
 
 # Astro.redirect is not available in static mode.

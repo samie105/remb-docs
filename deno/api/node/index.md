@@ -10,8 +10,8 @@ content_hash: "6d085ca5860397bae647f06aaeea70b1c78e549f8f7ab122ab68c8009880670c"
 menu_path: ["Node.js Built-in APIs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/deno/~/Deno.jupyter.html/index.md", "title": "function Deno.jupyter.html"}
-nav_next: {"path": "deno/api/node/all_symbols/index.md", "title": "All Symbols - Node documentation"}
+nav_prev: {"path": "../deno/~/Deno.jupyter.html/index.md", "title": "function Deno.jupyter.html"}
+nav_next: {"path": "all_symbols/index.md", "title": "All Symbols - Node documentation"}
 ---
 
 **On this page**

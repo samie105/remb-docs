@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:05.380Z"
 content_hash: "d985485dd41cc25f93dd6c93011e0ee126bde6d5aeb5848844187cd481133a20"
 menu_path: ["Index"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/index.md", "title": "Introduction"}
-nav_next: {"path": "fastify/docs/latest/Reference/index.md", "title": "Index"}
+nav_prev: {"path": "../index.md", "title": "Introduction"}
+nav_next: {"path": "../Reference/index.md", "title": "Index"}
 ---
 
 Version: latest (v5.8.x)

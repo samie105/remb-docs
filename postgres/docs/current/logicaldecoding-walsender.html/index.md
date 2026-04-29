@@ -10,8 +10,8 @@ content_hash: "3eee4285cb4b50207cc5a74b3df21aa669268b893dee52c3f93a7f031db00e2a"
 menu_path: ["PostgreSQL: Documentation: 18: 47.3. Streaming Replication Protocol Interface"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/logicaldecoding-two-phase-commits.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.10.\u00a0Two-phase Commit Support for Logical Decoding"}
-nav_next: {"path": "postgres/docs/current/logicaldecoding-writer.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.7.\u00a0Logical Decoding Output Writers"}
+nav_prev: {"path": "../logicaldecoding-two-phase-commits.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.10.\u00a0Two-phase Commit Support for Logical Decoding"}
+nav_next: {"path": "../logicaldecoding-writer.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.7.\u00a0Logical Decoding Output Writers"}
 ---
 
 The commands

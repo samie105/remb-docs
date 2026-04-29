@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:56.267Z"
 content_hash: "136787bb7c33c51032e6b3d8ec0f6e72e22ab593c61ae1456f90d0c4c7fa116e"
 menu_path: ["PostgreSQL: Documentation: 18: DROP ROLE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP PROCEDURE"}
-nav_next: {"path": "postgres/docs/current/sql-droprule.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP RULE"}
+nav_prev: {"path": "../sql-dropprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP PROCEDURE"}
+nav_next: {"path": "../sql-droprule.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP RULE"}
 ---
 
 DROP ROLE — remove a database role

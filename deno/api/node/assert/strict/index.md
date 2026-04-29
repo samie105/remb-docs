@@ -10,8 +10,8 @@ content_hash: "b3c4a8d61e82665e95a43e4c00d62fd2326c983b769fa6ca7ac4319984f55bf8"
 menu_path: ["namespace assert.strict"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/assert/index.md", "title": "assert - Node documentation"}
-nav_next: {"path": "deno/api/node/async_hooks/index.md", "title": "async_hooks - Node documentation"}
+nav_prev: {"path": "../index.md", "title": "assert - Node documentation"}
+nav_next: {"path": "../../async_hooks/index.md", "title": "async_hooks - Node documentation"}
 ---
 
 # namespace assert.strict

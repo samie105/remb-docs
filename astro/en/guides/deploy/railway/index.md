@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:37.956Z"
 content_hash: "e9e76516588201b071afc56c0eaed7a11f4153454d7e7f0c409c865e8e2bc020"
 menu_path: ["Deploy your Astro Site with Railway"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/netlify/index.md", "title": "Deploy your Astro Site to Netlify"}
-nav_next: {"path": "astro/en/guides/deploy/render/index.md", "title": "Deploy your Astro Site to Render"}
+nav_prev: {"path": "../netlify/index.md", "title": "Deploy your Astro Site to Netlify"}
+nav_next: {"path": "../render/index.md", "title": "Deploy your Astro Site to Render"}
 ---
 
 # Deploy your Astro Site with Railway

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:59.215Z"
 content_hash: "ec8b6e7b3acc5f90cb5f8fbce3ea5f6c19b9edc2414459c99a14b08d004a5308"
 menu_path: ["Routing Reference"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/imports/index.md", "title": "Imports reference"}
-nav_next: {"path": "astro/en/reference/api-reference/index.md", "title": "Astro render context"}
+nav_prev: {"path": "../../guides/imports/index.md", "title": "Imports reference"}
+nav_next: {"path": "../api-reference/index.md", "title": "Astro render context"}
 ---
 
 # Routing Reference

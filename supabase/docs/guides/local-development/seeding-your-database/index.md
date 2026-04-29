@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:52.988Z"
 content_hash: "1c8ea64aa2db41dc80e00f3142fc1bb75ab357491083b24947b8f1e4995468c1"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Seeding your database","Seeding your database"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Seeding your database","Seeding your database"]
-nav_prev: {"path": "supabase/docs/guides/local-development/restoring-downloaded-backup/index.md", "title": "Restoring a downloaded backup locally"}
-nav_next: {"path": "supabase/docs/guides/local-development/testing/overview/index.md", "title": "Testing Overview"}
+nav_prev: {"path": "../restoring-downloaded-backup/index.md", "title": "Restoring a downloaded backup locally"}
+nav_next: {"path": "../testing/overview/index.md", "title": "Testing Overview"}
 ---
 
 # 

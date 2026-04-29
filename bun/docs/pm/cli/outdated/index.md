@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:30.897Z"
 content_hash: "ac14b71cf4f8fe1aa43a7516621ed7555ddb4843b723a9e80f95815263bd1a16"
 menu_path: ["bun outdated"]
 section_path: []
-nav_prev: {"path": "bun/docs/pm/cli/link/index.md", "title": "bun link"}
-nav_next: {"path": "bun/docs/pm/cli/patch/index.md", "title": "bun patch"}
+nav_prev: {"path": "../link/index.md", "title": "bun link"}
+nav_next: {"path": "../patch/index.md", "title": "bun patch"}
 ---
 
 Use `bun outdated` to check for outdated dependencies in your project. This command displays a table of dependencies that have newer versions available.

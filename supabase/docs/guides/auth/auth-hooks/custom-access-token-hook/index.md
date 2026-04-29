@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:45.591Z"
 content_hash: "78471ad6fff45393dcf583fe8f69856b7631118ddfc599514d3023e460d19405"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Custom access token hook","Custom access token hook"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Custom access token hook","Custom access token hook"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/before-user-created-hook/index.md", "title": "Before User Created Hook"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/mfa-verification-hook/index.md", "title": "MFA Verification Hook"}
+nav_prev: {"path": "../before-user-created-hook/index.md", "title": "Before User Created Hook"}
+nav_next: {"path": "../mfa-verification-hook/index.md", "title": "MFA Verification Hook"}
 ---
 
 # 

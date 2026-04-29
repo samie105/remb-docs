@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:05.899Z"
 content_hash: "b98d8a2c4bd32e145e94175276be70f93cd4a358eb6fcec381bc92412fbecb80"
 menu_path: ["Payload CMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/pages-cms/index.md", "title": "Pages CMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/preprcms/index.md", "title": "Prepr CMS & Astro"}
+nav_prev: {"path": "../pages-cms/index.md", "title": "Pages CMS & Astro"}
+nav_next: {"path": "../preprcms/index.md", "title": "Prepr CMS & Astro"}
 ---
 
 # Payload CMS & Astro

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:02.987Z"
 content_hash: "84b39143f87e1301eb8601692c0b6f0cd182692c083adefe0f1f80ab690f739f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Sync and async","→","Sync and async"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Sync and async","→","Sync and async"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/resp_js_conversion/index.md", "title": "RESP & JavaScript"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/index.md", "title": "Triggers"}
+nav_prev: {"path": "../resp_js_conversion/index.md", "title": "RESP & JavaScript"}
+nav_next: {"path": "../triggers/index.md", "title": "Triggers"}
 ---
 
 # Sync and async

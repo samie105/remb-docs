@@ -10,8 +10,8 @@ content_hash: "4e20e4b5c69295f1863ec39e91a6e3295712e30ad6373227f1ddf4b570d3d676"
 menu_path: ["Upgrade guide"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/compatibility/index.md", "title": "Compatibility"}
-nav_next: {"path": "tailwind/docs/styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
+nav_prev: {"path": "../compatibility/index.md", "title": "Compatibility"}
+nav_next: {"path": "../styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
 ---
 
 Upgrading your Tailwind CSS projects from v3 to v4.
@@ -159,7 +159,7 @@ To update your project for this change, replace any usage of `ring` with `ring-3
 
 ### [Space-between selector](#space-between-selector)
 
-We've changed the selector used by the [`space-x-*` and `space-y-*` utilities](tailwind/docs/margin/index.md#adding-space-between-children) to address serious performance issues on large pages:
+We've changed the selector used by the [`space-x-*` and `space-y-*` utilities](../margin/index.md#adding-space-between-children) to address serious performance issues on large pages:
 
 ```
 /* Before */.space-y-4 > :not([hidden]) ~ :not([hidden]) {  margin-top: 1rem;}/* Now */.space-y-4 > :not(:last-child) {  margin-bottom: 1rem;}
@@ -175,7 +175,7 @@ If this change causes any issues in your project, we recommend migrating to a fl
 
 ### [Divide selector](#divide-selector)
 
-We've changed the selector used by the [`divide-x-*` and `divide-y-*` utilities](tailwind/docs/border-width/index.md#between-children) to address serious performance issues on large pages:
+We've changed the selector used by the [`divide-x-*` and `divide-y-*` utilities](../border-width/index.md#between-children) to address serious performance issues on large pages:
 
 ```
 /* Before */.divide-y-4 > :not([hidden]) ~ :not([hidden]) {  border-top-width: 4px;}/* Now */.divide-y-4 > :not(:last-child) {  border-bottom-width: 4px;}
@@ -333,7 +333,7 @@ Custom utilities are now also sorted based on the amount of properties they defi
 @layer components {  .btn {    border-radius: 0.5rem;    padding: 0.5rem 1rem;    background-color: ButtonFace;  }}@utility btn {  border-radius: 0.5rem;  padding: 0.5rem 1rem;  background-color: ButtonFace;}
 ```
 
-Learn more about registering custom utilities in the [adding custom utilities documentation](tailwind/docs/adding-custom-styles/index.md#adding-custom-utilities).
+Learn more about registering custom utilities in the [adding custom utilities documentation](../adding-custom-styles/index.md#adding-custom-utilities).
 
 ### [Variant stacking order](#variant-stacking-order)
 
@@ -441,7 +441,7 @@ If you still need to use a JavaScript config file, you can load it explicitly us
 @config "../../tailwind.config.js";
 ```
 
-The `corePlugins`, `safelist`, and `separator` options from the JavaScript-based config are not supported in v4.0. To safelist utilities in v4 use [`@source inline()`](tailwind/docs/detecting-classes-in-source-files/index.md#safelisting-specific-utilities).
+The `corePlugins`, `safelist`, and `separator` options from the JavaScript-based config are not supported in v4.0. To safelist utilities in v4 use [`@source inline()`](../detecting-classes-in-source-files/index.md#safelisting-specific-utilities).
 
 ### [Theme values in JavaScript](#theme-values-in-javascript)
 
@@ -465,7 +465,7 @@ let styles = getComputedStyle(document.documentElement);let shadow = styles.getP
 
 In v4, stylesheets that are bundled separately from your main CSS file (e.g. CSS modules files, `<style>` blocks in Vue, Svelte, or Astro, etc.) do not have access to theme variables, custom utilities, and custom variants defined in other files.
 
-To make these definitions available in these contexts, use [`@reference`](tailwind/docs/functions-and-directives/index.md#reference-directive) to import them without duplicating any CSS in your bundle:
+To make these definitions available in these contexts, use [`@reference`](../functions-and-directives/index.md#reference-directive) to import them without duplicating any CSS in your bundle:
 
 ```
 <template>  <h1>Hello world!</h1></template><style>  @reference "../../app.css";  h1 {    @apply text-2xl font-bold text-red-500;  }</style>
@@ -477,10 +477,10 @@ Alternatively, you can use your CSS theme variables directly instead of using `@
 <template>  <h1>Hello world!</h1></template><style>  h1 {    color: var(--text-red-500);  }</style>
 ```
 
-You can find more documentation on [using Tailwind with CSS modules](tailwind/docs/compatibility/index.md#css-modules).
+You can find more documentation on [using Tailwind with CSS modules](../compatibility/index.md#css-modules).
 
 ### [Using Sass, Less, and Stylus](#using-sass-less-and-stylus)
 
 Tailwind CSS v4.0 is not designed to be used with CSS preprocessors like Sass, Less, or Stylus. Think of Tailwind CSS itself as your preprocessor — you shouldn't use Tailwind with Sass for the same reason you wouldn't use Sass with Stylus. Because of this it is not possible to use Sass, Less, or Stylus for your stylesheets or `<style>` blocks in Vue, Svelte, Astro, etc.
 
-Learn more in the [compatibility documentation](tailwind/docs/compatibility/index.md#sass-less-and-stylus).
+Learn more in the [compatibility documentation](../compatibility/index.md#sass-less-and-stylus).

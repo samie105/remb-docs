@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:28.957Z"
 content_hash: "58c5cbf748c4196b956e96621580dc8f043cf1a39a11f2d4bcd6b4216abb7642"
 menu_path: ["envPrefix conflicts with secret environment variables"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/env-invalid-variables/index.md", "title": "Invalid Environment Variables"}
-nav_next: {"path": "astro/en/reference/errors/env-unsupported-get-secret/index.md", "title": "Unsupported astro:env getSecret"}
+nav_prev: {"path": "../env-invalid-variables/index.md", "title": "Invalid Environment Variables"}
+nav_next: {"path": "../env-unsupported-get-secret/index.md", "title": "Unsupported astro:env getSecret"}
 ---
 
 # envPrefix conflicts with secret environment variables

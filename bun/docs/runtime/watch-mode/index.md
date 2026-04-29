@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:01.132Z"
 content_hash: "a3094a26a13e6fce000909ce08dca8703d472ed6e0ced837a4bc6758f559ba61"
 menu_path: ["Watch Mode"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/utils/index.md", "title": "Utils"}
-nav_next: {"path": "bun/docs/runtime/web-apis/index.md", "title": "Web APIs"}
+nav_prev: {"path": "../utils/index.md", "title": "Utils"}
+nav_next: {"path": "../web-apis/index.md", "title": "Web APIs"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:51.956Z"
 content_hash: "a25e1c58c5ea66afc0ec9113b586a6c3f78c996277132313a24e9039aa5c021e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Redis Software quickstarts","→","Redis Software quickstarts","→\n      \n        Docker quickstart for Redis Software","→","Docker quickstart for Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Redis Software quickstarts","→","Redis Software quickstarts","→\n      \n        Docker quickstart for Redis Software","→","Docker quickstart for Redis Software"]
-nav_prev: {"path": "redis/docs/latest/operate/rs/installing-upgrading/install/prepare-install/index.md", "title": "Prepare to install Redis Software"}
-nav_next: {"path": "redis/docs/latest/operate/rs/installing-upgrading/quickstarts/redis-enterprise-software-quickstart/index.md", "title": "Redis Software quickstart"}
+nav_prev: {"path": "../../install/prepare-install/index.md", "title": "Prepare to install Redis Software"}
+nav_next: {"path": "../redis-enterprise-software-quickstart/index.md", "title": "Redis Software quickstart"}
 ---
 
 # Docker quickstart for Redis Software

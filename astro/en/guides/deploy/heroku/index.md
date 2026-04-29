@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:24.502Z"
 content_hash: "3aa5a03452ee8797fd4957f5178809bb9d8e27df8466ee080c589610122dd0cf"
 menu_path: ["Deploy your Astro Site to Heroku"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/google-cloud/index.md", "title": "Deploy your Astro Site to Google Cloud"}
-nav_next: {"path": "astro/en/guides/deploy/juno/index.md", "title": "Deploy your Astro Site to Juno"}
+nav_prev: {"path": "../google-cloud/index.md", "title": "Deploy your Astro Site to Google Cloud"}
+nav_next: {"path": "../juno/index.md", "title": "Deploy your Astro Site to Juno"}
 ---
 
 # Deploy your Astro Site to Heroku

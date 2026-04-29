@@ -10,8 +10,8 @@ content_hash: "5f1d97bc21f6304aa98433a4ad2109bf4b0613e8f3b1dbad9847b2750b779e2a"
 menu_path: ["filter: drop-shadow()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/filter-contrast/index.md", "title": "filter: contrast()"}
-nav_next: {"path": "tailwind/docs/filter-grayscale/index.md", "title": "filter: grayscale()"}
+nav_prev: {"path": "../filter-contrast/index.md", "title": "filter: contrast()"}
+nav_next: {"path": "../filter-grayscale/index.md", "title": "filter: grayscale()"}
 ---
 
 Utilities for applying drop-shadow filters to an element.
@@ -32,7 +32,7 @@ drop-shadow-xl
 <svg class="drop-shadow-md ...">  <!-- ... --></svg><svg class="drop-shadow-lg ...">  <!-- ... --></svg><svg class="drop-shadow-xl ...">  <!-- ... --></svg>
 ```
 
-This is useful for applying shadows to irregular shapes, like text and SVG elements. For applying shadows to regular elements, you probably want to use [box shadow](tailwind/docs/box-shadow/index.md) instead.
+This is useful for applying shadows to irregular shapes, like text and SVG elements. For applying shadows to regular elements, you probably want to use [box shadow](../box-shadow/index.md) instead.
 
 ### [Changing the opacity](#changing-the-opacity)
 
@@ -96,7 +96,7 @@ Prefix a `filter: drop-shadow()` utility with a breakpoint variant like `md:` to
 <svg class="drop-shadow-md md:drop-shadow-xl ...">  <!-- ... --></svg>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -114,7 +114,7 @@ Now the `drop-shadow-3xl` utility can be used in your markup:
 <svg class="drop-shadow-3xl">  <!-- ... --></svg>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### [Customizing shadow colors](#customizing-shadow-colors)
 
@@ -130,4 +130,4 @@ Now the `drop-shadow-regal-blue` utility can be used in your markup:
 <svg class="drop-shadow-regal-blue">  <!-- ... --></svg>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).

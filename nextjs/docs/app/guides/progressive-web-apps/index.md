@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
-nav_next: {"path": "nextjs/docs/app/guides/public-static-pages/index.md", "title": "Building public pages"}
+nav_prev: {"path": "../production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
+nav_next: {"path": "../public-static-pages/index.md", "title": "Building public pages"}
 ---
 
 # How to build a Progressive Web Application (PWA) with Next.js

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:06.063Z"
 content_hash: "8aaaee1820fb3f619d4de4158d52988549fbd086451a53f4aa19f40a38c05f81"
 menu_path: ["You can't use the current function with the current strategy"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/incompatible-descriptor-options/index.md", "title": "Cannot set both densities and widths"}
-nav_next: {"path": "astro/en/reference/errors/invalid-component-args/index.md", "title": "Invalid component arguments."}
+nav_prev: {"path": "../incompatible-descriptor-options/index.md", "title": "Cannot set both densities and widths"}
+nav_next: {"path": "../invalid-component-args/index.md", "title": "Invalid component arguments."}
 ---
 
 # You can't use the current function with the current strategy

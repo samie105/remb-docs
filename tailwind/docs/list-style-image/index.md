@@ -10,8 +10,8 @@ content_hash: "deaf08fe2e2921b84d70f8ba713a9fa7e4cce50b772ecc2d0a7ad03a95701bd3"
 menu_path: ["list-style-image"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/line-height/index.md", "title": "line-height"}
-nav_next: {"path": "tailwind/docs/list-style-position/index.md", "title": "list-style-position"}
+nav_prev: {"path": "../line-height/index.md", "title": "line-height"}
+nav_next: {"path": "../list-style-position/index.md", "title": "list-style-position"}
 ---
 
 # list-style-image

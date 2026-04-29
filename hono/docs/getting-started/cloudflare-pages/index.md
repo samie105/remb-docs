@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:47.014Z"
 content_hash: "f1fd40ac614573c3a85237f91e083efde823340ecd5275ecc076620bde888b3e"
 menu_path: ["Cloudflare Pages ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/getting-started/cloudflare-workers/index.md", "title": "Cloudflare Workers \u200b"}
-nav_next: {"path": "hono/docs/getting-started/deno/index.md", "title": "Deno \u200b"}
+nav_prev: {"path": "../cloudflare-workers/index.md", "title": "Cloudflare Workers \u200b"}
+nav_next: {"path": "../deno/index.md", "title": "Deno \u200b"}
 ---
 
 [Cloudflare Pages](https://pages.cloudflare.com/) is an edge platform for full-stack web applications. It serves static files and dynamic content provided by Cloudflare Workers.
@@ -403,7 +403,7 @@ export const onRequest = handleMiddleware(async (c, next) => {
 })
 ```
 
-You can also use built-in and 3rd party middleware for Hono. For example, to add Basic Authentication, you can use [Hono's Basic Authentication Middleware](hono/docs/middleware/builtin/basic-auth/index.md).
+You can also use built-in and 3rd party middleware for Hono. For example, to add Basic Authentication, you can use [Hono's Basic Authentication Middleware](../../middleware/builtin/basic-auth/index.md).
 
 ts
 

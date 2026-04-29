@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:27.324Z"
 content_hash: "561ac0e4c411724fb09b393e6b592b7764e71913821e060a10855c9fe47a59d8"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Building a Discord Bot","Building a Discord Bot"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Building a Discord Bot","Building a Discord Bot"]
-nav_prev: {"path": "supabase/docs/guides/functions/examples/cloudflare-turnstile/index.md", "title": "CAPTCHA support with Cloudflare Turnstile"}
-nav_next: {"path": "supabase/docs/guides/functions/examples/elevenlabs-generate-speech-stream/index.md", "title": "Streaming Speech with ElevenLabs"}
+nav_prev: {"path": "../cloudflare-turnstile/index.md", "title": "CAPTCHA support with Cloudflare Turnstile"}
+nav_next: {"path": "../elevenlabs-generate-speech-stream/index.md", "title": "Streaming Speech with ElevenLabs"}
 ---
 
 # 

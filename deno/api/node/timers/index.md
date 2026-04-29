@@ -10,8 +10,8 @@ content_hash: "3d1da28c1566a632456870a2bff98e2585970ca77cc6cdc32511c894c31d1921"
 menu_path: ["timers - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/test/reporters/index.md", "title": "test/reporters - Node documentation"}
-nav_next: {"path": "deno/api/node/timers/promises/index.md", "title": "timers/promises - Node documentation"}
+nav_prev: {"path": "../test/reporters/index.md", "title": "test/reporters - Node documentation"}
+nav_next: {"path": "promises/index.md", "title": "timers/promises - Node documentation"}
 ---
 
 ### Usage in Deno

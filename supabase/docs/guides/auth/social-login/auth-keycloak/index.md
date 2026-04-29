@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:39.727Z"
 content_hash: "fd24a8bbc516a9ae102962c942252acbc3e28d695cb09505c8fbfcd2017a1de4"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Keycloak","Keycloak"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Keycloak","Keycloak"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-kakao/index.md", "title": "Login with Kakao"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-linkedin/index.md", "title": "Login with LinkedIn"}
+nav_prev: {"path": "../auth-kakao/index.md", "title": "Login with Kakao"}
+nav_next: {"path": "../auth-linkedin/index.md", "title": "Login with LinkedIn"}
 ---
 
 # 

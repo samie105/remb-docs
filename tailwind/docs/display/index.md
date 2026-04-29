@@ -10,8 +10,8 @@ content_hash: "b8af814192628a81b773ee2591421c955291d8b2a06599740850d872230334cf"
 menu_path: ["display"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/box-sizing/index.md", "title": "box-sizing"}
-nav_next: {"path": "tailwind/docs/float/index.md", "title": "float"}
+nav_prev: {"path": "../box-sizing/index.md", "title": "box-sizing"}
+nav_next: {"path": "../float/index.md", "title": "float"}
 ---
 
 Utilities for controlling the display box type of an element.
@@ -174,7 +174,7 @@ Use the `hidden` utility to remove an element from the document:
 <div class="flex ...">  <div class="hidden ...">01</div>  <div>02</div>  <div>03</div></div>
 ```
 
-To visually hide an element but keep it in the document, use the [visibility](tailwind/docs/visibility/index.md#making-elements-invisible) property instead.
+To visually hide an element but keep it in the document, use the [visibility](../visibility/index.md#making-elements-invisible) property instead.
 
 ### [Screen-reader only](#screen-reader-only)
 
@@ -200,4 +200,4 @@ Prefix a `display` utility with a breakpoint variant like `md:` to only apply th
 <div class="flex md:inline-flex ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

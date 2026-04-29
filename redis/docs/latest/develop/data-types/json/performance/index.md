@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:40.510Z"
 content_hash: "3fdd8b411eaa20870ff3abd2f106d68ba39573a1e03220b635070c45e0d2f158"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Performance","→","Performance"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Performance","→","Performance"]
-nav_prev: {"path": "redis/docs/latest/develop/data-types/json/path/index.md", "title": "Path"}
-nav_next: {"path": "redis/docs/latest/develop/data-types/json/ram/index.md", "title": "Redis JSON RAM Usage"}
+nav_prev: {"path": "../path/index.md", "title": "Path"}
+nav_next: {"path": "../ram/index.md", "title": "Redis JSON RAM Usage"}
 ---
 
 # Performance

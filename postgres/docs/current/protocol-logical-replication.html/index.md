@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:41.128Z"
 content_hash: "e33b81b2df0b3ec3ebf243c85d48861b130c8484e5e538881a31c5b9d9e32bae"
 menu_path: ["PostgreSQL: Documentation: 18: 54.5. Logical Streaming Replication Protocol"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/protocol-changes.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.10.\u00a0Summary of Changes since Protocol 2.0"}
-nav_next: {"path": "postgres/docs/current/protocol-logicalrep-message-formats.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.9.\u00a0Logical Replication Message Formats"}
+nav_prev: {"path": "../protocol-changes.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.10.\u00a0Summary of Changes since Protocol 2.0"}
+nav_next: {"path": "../protocol-logicalrep-message-formats.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.9.\u00a0Logical Replication Message Formats"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/protocol-logical-replication.html "PostgreSQL devel - 54.5. Logical Streaming Replication Protocol")

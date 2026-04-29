@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:22.719Z"
 content_hash: "290a9cf2de059e16768e45fa9e909594233627623c4240b7f6c234b9d206d0d0"
 menu_path: ["PostgreSQL: Documentation: 18: 5.15. Dependency Tracking"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-default.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.2.\u00a0Default Values"}
-nav_next: {"path": "postgres/docs/current/ddl-foreign-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.13.\u00a0Foreign Data"}
+nav_prev: {"path": "../ddl-default.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.2.\u00a0Default Values"}
+nav_next: {"path": "../ddl-foreign-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.13.\u00a0Foreign Data"}
 ---
 
 When you create complex database structures involving many tables with foreign key constraints, views, triggers, functions, etc. you implicitly create a net of dependencies between the objects. For instance, a table with a foreign key constraint depends on the table it references.

@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
-nav_next: {"path": "nextjs/docs/app/guides/ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
+nav_prev: {"path": "../open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
+nav_next: {"path": "../ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
 ---
 
 # Optimizing package bundling

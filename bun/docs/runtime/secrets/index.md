@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:22.070Z"
 content_hash: "a1277f97ea8003bbffd6c59817974d8e82698a712de72e98efe3ea281b22867c"
 menu_path: ["Secrets"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/s3/index.md", "title": "S3"}
-nav_next: {"path": "bun/docs/runtime/semver/index.md", "title": "Semver"}
+nav_prev: {"path": "../s3/index.md", "title": "S3"}
+nav_next: {"path": "../semver/index.md", "title": "Semver"}
 ---
 
 Store and retrieve sensitive credentials securely using the operating system’s native credential storage APIs.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:35.770Z"
 content_hash: "d2f6897a8faa35d0d1cf907eeebf5c76b534a0adc6caaa6e524b879ac9b8dd84"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Go","→","Rolling sensor graph demo with Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Go","→","Rolling sensor graph demo with Go"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/dotnet/index.md", "title": "Rolling sensor graph demo with Redis and .NET"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/java-jedis/index.md", "title": "Rolling sensor graph demo with Java and Jedis"}
+nav_prev: {"path": "../dotnet/index.md", "title": "Rolling sensor graph demo with Redis and .NET"}
+nav_next: {"path": "../java-jedis/index.md", "title": "Rolling sensor graph demo with Java and Jedis"}
 ---
 
 # Rolling sensor graph demo with Go

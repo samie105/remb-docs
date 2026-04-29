@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:32.596Z"
 content_hash: "63ff61881067e6689890f0e8cb56e85f601406dc78327246c2cbc71101688fd7"
 menu_path: ["Middleware"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/endpoints/index.md", "title": "Endpoints"}
-nav_next: {"path": "astro/en/guides/internationalization/index.md", "title": "Internationalization (i18n) Routing"}
+nav_prev: {"path": "../endpoints/index.md", "title": "Endpoints"}
+nav_next: {"path": "../internationalization/index.md", "title": "Internationalization (i18n) Routing"}
 ---
 
 # Middleware

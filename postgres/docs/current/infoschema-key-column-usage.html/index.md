@@ -10,8 +10,8 @@ content_hash: "8821696ef962a9bb51391b94786543bd5d0fcfc0c62a4561d9ffa35365ffede6"
 menu_path: ["PostgreSQL: Documentation: 18: 35.32. key_column_usage"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-information-schema-catalog-name.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.3.\u00a0information_schema_catalog_name"}
-nav_next: {"path": "postgres/docs/current/infoschema-parameters.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.33.\u00a0parameters"}
+nav_prev: {"path": "../infoschema-information-schema-catalog-name.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.3.\u00a0information_schema_catalog_name"}
+nav_next: {"path": "../infoschema-parameters.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.33.\u00a0parameters"}
 ---
 
 The view `key_column_usage` identifies all columns in the current database that are restricted by some unique, primary key, or foreign key constraint. Check constraints are not included in this view. Only those columns are shown that the current user has access to, by way of being the owner or having some privilege.

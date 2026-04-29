@@ -11,8 +11,8 @@ menu_path: ["No Unwanted Polyfill.io"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/no-title-in-document-head/index.md", "title": "No Title in Document Head"}
-nav_next: {"path": "nextjs/docs/messages/sync-dynamic-apis/index.md", "title": "Dynamic APIs are Asynchronous"}
+nav_prev: {"path": "../no-title-in-document-head/index.md", "title": "No Title in Document Head"}
+nav_next: {"path": "../sync-dynamic-apis/index.md", "title": "Dynamic APIs are Asynchronous"}
 ---
 
 # No Unwanted Polyfill.io

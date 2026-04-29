@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:41.917Z"
 content_hash: "f211dd554248b5f908ecc6af0d972fe9569f9faa15ae5b2b77bbfaa6202ecde0"
 menu_path: ["File parser not found"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/file-glob-not-supported/index.md", "title": "Glob patterns are not supported in the file loader"}
-nav_next: {"path": "astro/en/reference/errors/font-family-not-found/index.md", "title": "Font family not found"}
+nav_prev: {"path": "../file-glob-not-supported/index.md", "title": "Glob patterns are not supported in the file loader"}
+nav_next: {"path": "../font-family-not-found/index.md", "title": "Font family not found"}
 ---
 
 # File parser not found

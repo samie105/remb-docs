@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:11.622Z"
 content_hash: "c004eaf8619550b35169d4cb8fbd2a132e306f7f24832041f0a19accfca6d1dd"
 menu_path: ["Content loader returned an entry with an invalid id."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/content-loader-invalid-data-error/index.md", "title": "Content entry is missing an ID"}
-nav_next: {"path": "astro/en/reference/errors/content-schema-contains-slug-error/index.md", "title": "Content Schema should not contain slug."}
+nav_prev: {"path": "../content-loader-invalid-data-error/index.md", "title": "Content entry is missing an ID"}
+nav_next: {"path": "../content-schema-contains-slug-error/index.md", "title": "Content Schema should not contain slug."}
 ---
 
 # Content loader returned an entry with an invalid id.

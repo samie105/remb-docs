@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:29.960Z"
 content_hash: "49a772e74ed4b195b58e4724822ad68d8d160bb9e12c2e2027b13757f164bccc"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Token Security & RLS","Token Security & RLS"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Token Security & RLS","Token Security & RLS"]
-nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
-nav_next: {"path": "supabase/docs/guides/auth/password-security/index.md", "title": "Password security"}
+nav_prev: {"path": "../oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
+nav_next: {"path": "../../password-security/index.md", "title": "Password security"}
 ---
 
 # 

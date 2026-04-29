@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:28.176Z"
 content_hash: "20dced8549be0c09172ad18bcb42cdadcf08406ad5104edcf3cb026c4d6f91d4"
 menu_path: ["V3 Migration Guide"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Getting-Started/index.md", "title": "Getting-Started"}
-nav_next: {"path": "fastify/docs/latest/Guides/Migration-Guide-V4/index.md", "title": "V4 Migration Guide"}
+nav_prev: {"path": "../Getting-Started/index.md", "title": "Getting-Started"}
+nav_next: {"path": "../Migration-Guide-V4/index.md", "title": "V4 Migration Guide"}
 ---
 
 Version: latest (v5.8.x)

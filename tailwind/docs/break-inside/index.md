@@ -10,8 +10,8 @@ content_hash: "82236875a3ea93e284181f66c7c0e64cff5fff0440b5b2d41a0bcc9b2de9a787"
 menu_path: ["break-inside"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/break-before/index.md", "title": "break-before"}
-nav_next: {"path": "tailwind/docs/box-decoration-break/index.md", "title": "box-decoration-break"}
+nav_prev: {"path": "../break-before/index.md", "title": "break-before"}
+nav_next: {"path": "../box-decoration-break/index.md", "title": "box-decoration-break"}
 ---
 
 # break-inside

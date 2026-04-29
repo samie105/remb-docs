@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:27.271Z"
 content_hash: "b3a6de46039a143e188cfbc41067f30bac26f40819d7458fdc2e6331eb3d48b5"
 menu_path: ["Getting-Started"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Fluent-Schema/index.md", "title": "Fluent-Schema"}
-nav_next: {"path": "fastify/docs/latest/Guides/Migration-Guide-V3/index.md", "title": "V3 Migration Guide"}
+nav_prev: {"path": "../Fluent-Schema/index.md", "title": "Fluent-Schema"}
+nav_next: {"path": "../Migration-Guide-V3/index.md", "title": "V3 Migration Guide"}
 ---
 
 Version: latest (v5.8.x)

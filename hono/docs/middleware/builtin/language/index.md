@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:56.492Z"
 content_hash: "e14eaa3417686861685f49bbddf982bb0ef643aad331dd0114648b99aedcc244"
 menu_path: ["Language Middleware ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/middleware/builtin/logger/index.md", "title": "Logger Middleware \u200b"}
-nav_next: {"path": "hono/docs/middleware/builtin/method-override/index.md", "title": "Method Override Middleware \u200b"}
+nav_prev: {"path": "../logger/index.md", "title": "Logger Middleware \u200b"}
+nav_next: {"path": "../method-override/index.md", "title": "Method Override Middleware \u200b"}
 ---
 
 # Via path

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:53.428Z"
 content_hash: "3afbab592529bd9854a786c54ca5d5c0110b45d7d2ff2b5f79f0d2bc8f31ce5e"
 menu_path: ["TOML"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/templating/init/index.md", "title": "bun init"}
-nav_next: {"path": "bun/docs/runtime/transpiler/index.md", "title": "Transpiler"}
+nav_prev: {"path": "../templating/init/index.md", "title": "bun init"}
+nav_next: {"path": "../transpiler/index.md", "title": "Transpiler"}
 ---
 
 # Application config

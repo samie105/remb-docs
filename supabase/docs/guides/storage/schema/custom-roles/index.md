@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:27.977Z"
 content_hash: "b4248c83374013ce32d5e7123ae0140039510d8cd1cc53cb7197a541fd93613b"
 menu_path: ["Storage","Storage","More","More","More","Schema","Schema","Custom Roles","Custom Roles"]
 section_path: ["Storage","Storage","More","More","More","Schema","Schema","Custom Roles","Custom Roles"]
-nav_prev: {"path": "supabase/docs/guides/storage/s3/compatibility/index.md", "title": "S3 Compatibility"}
-nav_next: {"path": "supabase/docs/guides/storage/schema/design/index.md", "title": "The Storage Schema"}
+nav_prev: {"path": "../../s3/compatibility/index.md", "title": "S3 Compatibility"}
+nav_next: {"path": "../design/index.md", "title": "The Storage Schema"}
 ---
 
 # 

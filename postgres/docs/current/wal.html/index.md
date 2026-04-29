@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:16.539Z"
 content_hash: "d4f2c2cd96e28bc6dd178e43143b9f158e85e12f8625fef429d64968faf28204"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 28. Reliability and the Write-Ahead Log"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/user-manag.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a021.\u00a0Database Roles"}
-nav_next: {"path": "postgres/docs/current/jit.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a030.\u00a0Just-in-Time Compilation (JIT)"}
+nav_prev: {"path": "../user-manag.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a021.\u00a0Database Roles"}
+nav_next: {"path": "../jit.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a030.\u00a0Just-in-Time Compilation (JIT)"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:45.332Z"
 content_hash: "f334cba181e27c1b31598d0d2c9823139bd31030c8946ea440a508bc3c005336"
 menu_path: ["Database","Database","Access and security","Access and security","Row Level Security","Row Level Security"]
 section_path: ["Database","Database","Access and security","Access and security","Row Level Security","Row Level Security"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/setup-replication-external/index.md", "title": "Replicate to another Postgres database using Logical Replication"}
+nav_prev: {"path": "../roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
+nav_next: {"path": "../setup-replication-external/index.md", "title": "Replicate to another Postgres database using Logical Replication"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:22.014Z"
 content_hash: "1e4e316a502217c050e0a853b1785be138d8a071d3dd281e83e10cecb472bcf0"
 menu_path: ["The endpoint did not return a Response."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/duplicate-content-entry-slug-error/index.md", "title": "Duplicate content entry slug."}
-nav_next: {"path": "astro/en/reference/errors/env-invalid-variable/index.md", "title": "Invalid Environment Variable"}
+nav_prev: {"path": "../duplicate-content-entry-slug-error/index.md", "title": "Duplicate content entry slug."}
+nav_next: {"path": "../env-invalid-variable/index.md", "title": "Invalid Environment Variable"}
 ---
 
 # The endpoint did not return a Response.

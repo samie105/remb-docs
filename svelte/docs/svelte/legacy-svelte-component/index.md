@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:25.895Z"
 content_hash: "3030d41bb4f1561130bf12e54f9ac43603f8d1b8b3d9691b900da0ee4a0c40ed"
 menu_path: ["<svelte:component>"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/legacy-svelte-fragment/index.md", "title": "<svelte:fragment>"}
-nav_next: {"path": "svelte/docs/svelte/legacy-svelte-self/index.md", "title": "<svelte:self>"}
+nav_prev: {"path": "../legacy-svelte-fragment/index.md", "title": "<svelte:fragment>"}
+nav_next: {"path": "../legacy-svelte-self/index.md", "title": "<svelte:self>"}
 ---
 
 In runes mode, `<MyComponent>` will re-render if the value of `MyComponent` changes. See the [Svelte 5 migration guide](/docs/svelte/v5-migration-guide#svelte:component-is-no-longer-necessary) for an example.

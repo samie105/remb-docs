@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:13.387Z"
 content_hash: "7fb8f2420673a70c7c41aa37403323982414ae45eb68cada50e2ff49230afe81"
 menu_path: ["Experimental route caching"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/experimental-flags/index.md", "title": "Configuring experimental flags"}
-nav_next: {"path": "astro/en/reference/experimental-flags/client-prerender/index.md", "title": "Experimental client prerendering"}
+nav_prev: {"path": "../index.md", "title": "Configuring experimental flags"}
+nav_next: {"path": "../client-prerender/index.md", "title": "Experimental client prerendering"}
 ---
 
 # Experimental route caching

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:49.543Z"
 content_hash: "ba60872e1929dc0420c09c3f58f738704ff25e2cae42efd72a2fce5879386629"
 menu_path: ["PostgreSQL: Documentation: 18: REASSIGN OWNED"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-prepare.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE"}
-nav_next: {"path": "postgres/docs/current/sql-refreshmaterializedview.html/index.md", "title": "PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"}
+nav_prev: {"path": "../sql-prepare.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE"}
+nav_next: {"path": "../sql-refreshmaterializedview.html/index.md", "title": "PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"}
 ---
 
 REASSIGN OWNED — change the ownership of database objects owned by a database role

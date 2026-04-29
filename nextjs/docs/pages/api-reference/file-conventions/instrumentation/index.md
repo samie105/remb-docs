@@ -11,8 +11,8 @@ menu_path: ["instrumentation.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/index.md", "title": "File-system conventions"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/proxy/index.md", "title": "Proxy"}
+nav_prev: {"path": "../index.md", "title": "File-system conventions"}
+nav_next: {"path": "../proxy/index.md", "title": "Proxy"}
 ---
 
 # instrumentation.js

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:19.382Z"
 content_hash: "edb5b2a57f6a298bb371b2c1c486f9fdd2e588529f89435311650b6cf1118cb5"
 menu_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Enforce MFA on organization","Enforce MFA on organization"]
 section_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Enforce MFA on organization","Enforce MFA on organization"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/storage-size/index.md", "title": "Manage Storage size usage"}
-nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/index.md", "title": "Migrating to Supabase"}
+nav_prev: {"path": "../../manage-your-usage/storage-size/index.md", "title": "Manage Storage size usage"}
+nav_next: {"path": "../../migrating-to-supabase/index.md", "title": "Migrating to Supabase"}
 ---
 
 # 

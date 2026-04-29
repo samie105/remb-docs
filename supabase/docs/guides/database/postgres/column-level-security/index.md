@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:23.019Z"
 content_hash: "bf4082c54fe8ebd02856eaf0fc6602ad87f90678b543e2b5b81849b8b92d3264"
 menu_path: ["Database","Database","Access and security","Access and security","Column Level Security","Column Level Security"]
 section_path: ["Database","Database","Access and security","Access and security","Column Level Security","Column Level Security"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/cascade-deletes/index.md", "title": "Cascade Deletes"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/configuration/index.md", "title": "Database configuration"}
+nav_prev: {"path": "../cascade-deletes/index.md", "title": "Cascade Deletes"}
+nav_next: {"path": "../configuration/index.md", "title": "Database configuration"}
 ---
 
 # 

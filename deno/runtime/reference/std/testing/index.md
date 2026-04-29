@@ -10,8 +10,8 @@ content_hash: "ddee6eb5726e0ba483c9c858426908abcd7769435deea6c0d8e5f4b35c40d71b"
 menu_path: ["@std/testing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/tar/index.md", "title": "@std/tar"}
-nav_next: {"path": "deno/runtime/reference/std/text/index.md", "title": "@std/text"}
+nav_prev: {"path": "../tar/index.md", "title": "@std/tar"}
+nav_next: {"path": "../text/index.md", "title": "@std/text"}
 ---
 
 **On this page**

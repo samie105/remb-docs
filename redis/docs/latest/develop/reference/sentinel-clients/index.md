@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:18.188Z"
 content_hash: "fee8862062c20336a47324240bfd9fd0e438b10e5072871989302820cbdcad69"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Sentinel client spec","→","Sentinel client spec"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Sentinel client spec","→","Sentinel client spec"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/protocol-spec/index.md", "title": "Redis serialization protocol specification"}
-nav_next: {"path": "redis/docs/latest/develop/tools/cli/index.md", "title": "Redis CLI"}
+nav_prev: {"path": "../protocol-spec/index.md", "title": "Redis serialization protocol specification"}
+nav_next: {"path": "../../tools/cli/index.md", "title": "Redis CLI"}
 ---
 
 # Sentinel client spec

@@ -10,8 +10,8 @@ content_hash: "e7605ccf9e28710074929567a13979b439e2485c8b37a51ed66f2cb7a38fb5b8"
 menu_path: ["mask-mode"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/mask-image/index.md", "title": "mask-image"}
-nav_next: {"path": "tailwind/docs/mask-origin/index.md", "title": "mask-origin"}
+nav_prev: {"path": "../mask-image/index.md", "title": "mask-image"}
+nav_next: {"path": "../mask-origin/index.md", "title": "mask-origin"}
 ---
 
 Utilities for controlling an element's mask mode.
@@ -57,4 +57,4 @@ Prefix a `mask-mode` utility with a breakpoint variant like `md:` to only apply 
 <div class="mask-alpha md:mask-luminance ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

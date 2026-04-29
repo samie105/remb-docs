@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:36.778Z"
 content_hash: "0e4b711d89761d177a52f4046d1706eeb13a6eba28982d05669405e6f8cc1c79"
 menu_path: ["Cosmic & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/contentful/index.md", "title": "Contentful & Astro"}
-nav_next: {"path": "astro/en/guides/cms/craft-cms/index.md", "title": "Craft CMS & Astro"}
+nav_prev: {"path": "../contentful/index.md", "title": "Contentful & Astro"}
+nav_next: {"path": "../craft-cms/index.md", "title": "Craft CMS & Astro"}
 ---
 
 # Cosmic & Astro

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:21.141Z"
 content_hash: "cdbd47aea51042c7fca5b4a90f9842be27ca25f0489cae6744002821265fe7b5"
 menu_path: ["Markdown in Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/framework-components/index.md", "title": "Front-end frameworks"}
-nav_next: {"path": "astro/en/guides/content-collections/index.md", "title": "Content collections"}
+nav_prev: {"path": "../framework-components/index.md", "title": "Front-end frameworks"}
+nav_next: {"path": "../content-collections/index.md", "title": "Content collections"}
 ---
 
 # Markdown in Astro

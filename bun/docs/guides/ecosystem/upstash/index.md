@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:57.544Z"
 content_hash: "78fa8d5fd4c7877c8f726f3deae271f8483cd3b70017a1721c037bf3c9ce9452"
 menu_path: ["Bun Redis with Upstash"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/ecosystem/tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
-nav_next: {"path": "bun/docs/guides/ecosystem/vite/index.md", "title": "Build a frontend using Vite and Bun"}
+nav_prev: {"path": "../tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
+nav_next: {"path": "../vite/index.md", "title": "Build a frontend using Vite and Bun"}
 ---
 
 [Skip to main content](#content-area)

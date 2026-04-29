@@ -10,8 +10,8 @@ content_hash: "1163f35ebddf6c69b33535921bbac7958c1576141b4ef9d4a9968d00c3cf981b"
 menu_path: ["grid-auto-rows"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/grid-auto-columns/index.md", "title": "grid-auto-columns"}
-nav_next: {"path": "tailwind/docs/gap/index.md", "title": "gap"}
+nav_prev: {"path": "../grid-auto-columns/index.md", "title": "grid-auto-columns"}
+nav_next: {"path": "../gap/index.md", "title": "gap"}
 ---
 
 # grid-auto-rows

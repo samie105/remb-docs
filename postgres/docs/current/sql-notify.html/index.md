@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:38.223Z"
 content_hash: "d54e8870cb5d8834dd1d360d1b21cd4b933698defbcb34f8ff402e683ce8313a"
 menu_path: ["PostgreSQL: Documentation: 18: NOTIFY"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-move.html/index.md", "title": "PostgreSQL: Documentation: 18: MOVE"}
-nav_next: {"path": "postgres/docs/current/sql-prepare-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE TRANSACTION"}
+nav_prev: {"path": "../sql-move.html/index.md", "title": "PostgreSQL: Documentation: 18: MOVE"}
+nav_next: {"path": "../sql-prepare-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE TRANSACTION"}
 ---
 
 NOTIFY — generate a notification

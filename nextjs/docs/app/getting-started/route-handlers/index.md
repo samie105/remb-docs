@@ -11,8 +11,8 @@ menu_path: ["Route Handlers"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/getting-started/metadata-and-og-images/index.md", "title": "Metadata and OG images"}
-nav_next: {"path": "nextjs/docs/app/getting-started/proxy/index.md", "title": "Proxy"}
+nav_prev: {"path": "../metadata-and-og-images/index.md", "title": "Metadata and OG images"}
+nav_next: {"path": "../proxy/index.md", "title": "Proxy"}
 ---
 
 # Route Handlers

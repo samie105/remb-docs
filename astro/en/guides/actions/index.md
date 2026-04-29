@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:19.223Z"
 content_hash: "78eaa94ab09cc599e2930c5f9d2b04052c44019309fe84d0b8136f6cacd25e97"
 menu_path: ["Actions"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/server-islands/index.md", "title": "Server islands"}
-nav_next: {"path": "astro/en/guides/sessions/index.md", "title": "Sessions"}
+nav_prev: {"path": "../server-islands/index.md", "title": "Server islands"}
+nav_next: {"path": "../sessions/index.md", "title": "Sessions"}
 ---
 
 # Actions

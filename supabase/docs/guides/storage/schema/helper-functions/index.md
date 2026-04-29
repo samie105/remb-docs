@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:30.474Z"
 content_hash: "a1cd1c0988b829b2bc2a9d668c1e240fcbf24bfcf3991c1374f1ee9ced2cbea5"
 menu_path: ["Storage","Storage","More","More","More","Schema","Schema","Helper Functions","Helper Functions"]
 section_path: ["Storage","Storage","More","More","More","Schema","Schema","Helper Functions","Helper Functions"]
-nav_prev: {"path": "supabase/docs/guides/storage/schema/design/index.md", "title": "The Storage Schema"}
-nav_next: {"path": "supabase/docs/guides/storage/security/access-control/index.md", "title": "Storage Access Control"}
+nav_prev: {"path": "../design/index.md", "title": "The Storage Schema"}
+nav_next: {"path": "../../security/access-control/index.md", "title": "Storage Access Control"}
 ---
 
 # 

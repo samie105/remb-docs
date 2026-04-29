@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:42.761Z"
 content_hash: "dd84f74c71dda79523bc60a546fb7abe6b3c1c662588821b3b0d00d6d993d680"
 menu_path: ["Convert a Node.js Readable to JSON"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/streams/node-readable-to-blob/index.md", "title": "Convert a Node.js Readable to a Blob"}
-nav_next: {"path": "bun/docs/guides/streams/node-readable-to-string/index.md", "title": "Convert a Node.js Readable to a string"}
+nav_prev: {"path": "../node-readable-to-blob/index.md", "title": "Convert a Node.js Readable to a Blob"}
+nav_next: {"path": "../node-readable-to-string/index.md", "title": "Convert a Node.js Readable to a string"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:20.835Z"
 content_hash: "53773146900b9e68d86e5e6d4b49c24788b4469052eb8e9ecfcbe7213a2105ae"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","MCP Authentication","MCP Authentication"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","MCP Authentication","MCP Authentication"]
-nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/getting-started/index.md", "title": "Getting Started with OAuth 2.1 Server"}
-nav_next: {"path": "supabase/docs/guides/auth/oauth-server/oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
+nav_prev: {"path": "../getting-started/index.md", "title": "Getting Started with OAuth 2.1 Server"}
+nav_next: {"path": "../oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
 ---
 
 # 

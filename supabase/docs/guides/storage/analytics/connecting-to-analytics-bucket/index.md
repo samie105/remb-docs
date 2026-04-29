@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:58.348Z"
 content_hash: "98d5a8292029d52ca7e7cbb9d47350bbf2e8b4367e147ecf2f56eb701800c3ed"
 menu_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Iceberg Catalog","Iceberg Catalog"]
 section_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Iceberg Catalog","Iceberg Catalog"]
-nav_prev: {"path": "supabase/docs/guides/storage/index.md", "title": "Storage"}
-nav_next: {"path": "supabase/docs/guides/storage/analytics/creating-analytics-buckets/index.md", "title": "Creating Analytics Buckets"}
+nav_prev: {"path": "../../index.md", "title": "Storage"}
+nav_next: {"path": "../creating-analytics-buckets/index.md", "title": "Creating Analytics Buckets"}
 ---
 
 # 

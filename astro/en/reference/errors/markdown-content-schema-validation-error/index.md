@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:37.140Z"
 content_hash: "f90fb8daafadf855df8e28db35ff27cbcd2e6d595e082cda7317315dad4d3196"
 menu_path: ["Content collection frontmatter invalid."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/locals-reassigned/index.md", "title": "locals must not be reassigned."}
-nav_next: {"path": "astro/en/reference/errors/markdown-frontmatter-parse-error/index.md", "title": "Failed to parse Markdown frontmatter."}
+nav_prev: {"path": "../locals-reassigned/index.md", "title": "locals must not be reassigned."}
+nav_next: {"path": "../markdown-frontmatter-parse-error/index.md", "title": "Failed to parse Markdown frontmatter."}
 ---
 
 # Content collection frontmatter invalid.

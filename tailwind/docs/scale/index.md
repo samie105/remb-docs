@@ -10,8 +10,8 @@ content_hash: "804ae1f8dd4ebc2aa14c227abbe6064259cb832aa5aa27910bcc560b1eedf3b9"
 menu_path: ["scale"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/rotate/index.md", "title": "rotate"}
-nav_next: {"path": "tailwind/docs/skew/index.md", "title": "skew"}
+nav_prev: {"path": "../rotate/index.md", "title": "rotate"}
+nav_next: {"path": "../skew/index.md", "title": "skew"}
 ---
 
 Utilities for scaling elements.
@@ -74,4 +74,4 @@ Prefix a `scale` utility with a variant like `hover:*` to only apply the utility
 <img class="scale-95 hover:scale-120 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

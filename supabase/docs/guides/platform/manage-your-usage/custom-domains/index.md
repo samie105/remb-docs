@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:54.879Z"
 content_hash: "e99bc456a50ffec6e45c65e9dbf410c0c0310b4c59c42a8ece7a063d3f399dcf"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Custom Domains","Custom Domains"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Custom Domains","Custom Domains"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/compute/index.md", "title": "Manage Compute usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-iops/index.md", "title": "Manage Disk IOPS usage"}
+nav_prev: {"path": "../compute/index.md", "title": "Manage Compute usage"}
+nav_next: {"path": "../disk-iops/index.md", "title": "Manage Disk IOPS usage"}
 ---
 
 # 

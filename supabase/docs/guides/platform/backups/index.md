@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:00.088Z"
 content_hash: "2cdbf33166468d09f9eda5462089665c90c73d5288c6c63d1b3cc1faf29b4019"
 menu_path: ["Platform","Platform","Add-ons","Add-ons","Database Backups","Database Backups"]
 section_path: ["Platform","Platform","Add-ons","Add-ons","Database Backups","Database Backups"]
-nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/manage-your-subscription/index.md", "title": "Manage your subscription"}
-nav_next: {"path": "supabase/docs/guides/platform/billing-faq/index.md", "title": "Billing FAQ"}
+nav_prev: {"path": "../aws-marketplace/manage-your-subscription/index.md", "title": "Manage your subscription"}
+nav_next: {"path": "../billing-faq/index.md", "title": "Billing FAQ"}
 ---
 
 # 

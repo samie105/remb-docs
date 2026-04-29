@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:45.637Z"
 content_hash: "94eda732cbf2cd712ef73cf2e9f1143555038f8548a9a52fababdfa522ed7503"
 menu_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Restore Dashboard backup","Restore Dashboard backup"]
 section_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Restore Dashboard backup","Restore Dashboard backup"]
-nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/backup-restore/index.md", "title": "Backup and Restore using the CLI"}
-nav_next: {"path": "supabase/docs/guides/platform/multi-factor-authentication/index.md", "title": "Multi-factor Authentication"}
+nav_prev: {"path": "../backup-restore/index.md", "title": "Backup and Restore using the CLI"}
+nav_next: {"path": "../../multi-factor-authentication/index.md", "title": "Multi-factor Authentication"}
 ---
 
 # 

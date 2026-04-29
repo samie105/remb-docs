@@ -10,8 +10,8 @@ content_hash: "088e60c34b0a606d67ed04578c7fb78fd89ad58209d9767530bb3fca0a227b4d"
 menu_path: ["text-shadow"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/box-shadow/index.md", "title": "box-shadow"}
-nav_next: {"path": "tailwind/docs/opacity/index.md", "title": "opacity"}
+nav_prev: {"path": "../box-shadow/index.md", "title": "box-shadow"}
+nav_next: {"path": "../opacity/index.md", "title": "opacity"}
 ---
 
 Utilities for controlling the shadow of a text element.
@@ -94,7 +94,7 @@ Prefix a `text-shadow` utility with a breakpoint variant like `md:` to only appl
 <p class="text-shadow-none md:text-shadow-lg ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -112,7 +112,7 @@ Now the `text-shadow-xl` utility can be used in your markup:
 <p class="text-shadow-xl">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### [Customizing shadow colors](#customizing-shadow-colors)
 
@@ -128,4 +128,4 @@ Now the `text-shadow-regal-blue` utility can be used in your markup:
 <p class="text-shadow-regal-blue">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).

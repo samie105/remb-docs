@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:03.947Z"
 content_hash: "a1ed2fecca79b5f5681fb7f80e41e75b578b26664ca31bb13457798ac5463590"
 menu_path: ["Using bun install with Artifactory"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/git-diff-bun-lockfile/index.md", "title": "Configure git to diff Bun's lockb lockfile"}
-nav_next: {"path": "bun/docs/guides/install/npm-alias/index.md", "title": "Install a package under a different name"}
+nav_prev: {"path": "../git-diff-bun-lockfile/index.md", "title": "Configure git to diff Bun's lockb lockfile"}
+nav_next: {"path": "../npm-alias/index.md", "title": "Install a package under a different name"}
 ---
 
 # You can use an environment variable here

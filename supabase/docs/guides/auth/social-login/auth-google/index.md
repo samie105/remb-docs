@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:34.516Z"
 content_hash: "32a0ac0068ae975170782d60391d7fd8e36f1381a143c5448e521dff79e19f2a"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Google","Google"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Google","Google"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-gitlab/index.md", "title": "Login with GitLab"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-kakao/index.md", "title": "Login with Kakao"}
+nav_prev: {"path": "../auth-gitlab/index.md", "title": "Login with GitLab"}
+nav_next: {"path": "../auth-kakao/index.md", "title": "Login with Kakao"}
 ---
 
 # 

@@ -11,7 +11,7 @@ menu_path: ["Pages Router"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/webpack5/index.md", "title": "Webpack 5 Adoption"}
+nav_prev: {"path": "../messages/webpack5/index.md", "title": "Webpack 5 Adoption"}
 ---
 
 # Pages Router

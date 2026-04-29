@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:51.969Z"
 content_hash: "65c12fd560fb0bc771c62494cb57fac26770e4233a67f5ace1700f174d9e3562"
 menu_path: ["svelte/reactivity/window"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-motion/index.md", "title": "svelte/motion"}
-nav_next: {"path": "svelte/docs/svelte/svelte-reactivity/index.md", "title": "svelte/reactivity"}
+nav_prev: {"path": "../svelte-motion/index.md", "title": "svelte/motion"}
+nav_next: {"path": "../svelte-reactivity/index.md", "title": "svelte/reactivity"}
 ---
 
 This module exports reactive versions of various `window` values, each of which has a reactive `current` property that you can reference in reactive contexts (templates, [deriveds]($derived) and [effects]($effect)) without using [`<svelte:window>`](svelte-window) bindings or manually creating your own event listeners.

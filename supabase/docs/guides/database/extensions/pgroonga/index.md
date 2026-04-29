@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:59.976Z"
 content_hash: "098f66d6b8c144813cea8c958ac41c448c559a833baea058e677d792232c20ee"
 menu_path: ["Database","Database","Extensions","Extensions","PGroonga: Multilingual Full Text Search","PGroonga: Multilingual Full Text Search"]
 section_path: ["Database","Database","Extensions","Extensions","PGroonga: Multilingual Full Text Search","PGroonga: Multilingual Full Text Search"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pgmq/index.md", "title": "pgmq: Queues"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pgrouting/index.md", "title": "pgrouting: Geospatial Routing"}
+nav_prev: {"path": "../pgmq/index.md", "title": "pgmq: Queues"}
+nav_next: {"path": "../pgrouting/index.md", "title": "pgrouting: Geospatial Routing"}
 ---
 
 # 

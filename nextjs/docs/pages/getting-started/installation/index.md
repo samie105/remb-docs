@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/getting-started/index.md", "title": "Getting Started - Pages Router"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/images/index.md", "title": "Image Optimization"}
+nav_prev: {"path": "../index.md", "title": "Getting Started - Pages Router"}
+nav_next: {"path": "../images/index.md", "title": "Image Optimization"}
 ---
 
 # Create a new Next.js application

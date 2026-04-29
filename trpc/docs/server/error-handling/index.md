@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:51.363Z"
 content_hash: "4042d6e308d3e7972c22047b0c4c1b21bb1e44773fef4feef857a68bd4422301"
 menu_path: ["Error Handling"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/error-formatting/index.md", "title": "Error Formatting"}
-nav_next: {"path": "trpc/docs/server/merging-routers/index.md", "title": "Merging Routers"}
+nav_prev: {"path": "../error-formatting/index.md", "title": "Error Formatting"}
+nav_next: {"path": "../merging-routers/index.md", "title": "Merging Routers"}
 ---
 
 Whenever an error occurs in a procedure, tRPC responds to the client with an object that includes an "error" property. This property contains all the information that you need to handle the error in the client.
@@ -47,7 +47,7 @@ json
 
 ## Stack traces in production[​](#stack-traces-in-production "Direct link to Stack traces in production")
 
-By default, tRPC includes `error.data.stack` only when [`isDev`](trpc/docs/server/routers/index.md#initialize-trpc) is `true`. `initTRPC.create()` sets `isDev` to `process.env.NODE_ENV !== 'production'` by default. If you need deterministic behavior across runtimes, override `isDev` manually.
+By default, tRPC includes `error.data.stack` only when [`isDev`](../routers/index.md#initialize-trpc) is `true`. `initTRPC.create()` sets `isDev` to `process.env.NODE_ENV !== 'production'` by default. If you need deterministic behavior across runtimes, override `isDev` manually.
 
 server.ts
 
@@ -57,7 +57,7 @@ ts
 
 `const t = initTRPC.create({ isDev: false });`
 
-If you need stricter control over which error fields are returned, use [error formatting](trpc/docs/server/error-formatting/index.md).
+If you need stricter control over which error fields are returned, use [error formatting](../error-formatting/index.md).
 
 ## Error codes[​](#error-codes "Direct link to Error codes")
 
@@ -291,7 +291,7 @@ json
 
 ## Handling errors[​](#handling-errors "Direct link to Handling errors")
 
-All errors that occur in a procedure go through the `onError` method before being sent to the client. Here you can handle errors (To change errors see [error formatting](trpc/docs/server/error-formatting/index.md)).
+All errors that occur in a procedure go through the `onError` method before being sent to the client. Here you can handle errors (To change errors see [error formatting](../error-formatting/index.md)).
 
 server.ts
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:37.686Z"
 content_hash: "e5349f23d3bde945cfbcd55a08fef0352aa069155eca868e8c061822f37d1e48"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE PUBLICATION"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PROCEDURE"}
-nav_next: {"path": "postgres/docs/current/sql-createrole.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ROLE"}
+nav_prev: {"path": "../sql-createprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PROCEDURE"}
+nav_next: {"path": "../sql-createrole.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ROLE"}
 ---
 
 CREATE PUBLICATION — define a new publication

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:48.527Z"
 content_hash: "de874ab71b330d441cbe98bad0ea2eaecd91b4580ae4290f8c1c481597bf6304"
 menu_path: ["Read a file as a string"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/read-file/stream/index.md", "title": "Read a file as a ReadableStream"}
-nav_next: {"path": "bun/docs/guides/read-file/uint8array/index.md", "title": "Read a file to a Uint8Array"}
+nav_prev: {"path": "../stream/index.md", "title": "Read a file as a ReadableStream"}
+nav_next: {"path": "../uint8array/index.md", "title": "Read a file to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)

@@ -10,8 +10,8 @@ content_hash: "82787c55b3ca2b392702e7a32eb1c5eea8e8649bedc52e8ffebec4c35010412c"
 menu_path: ["columns"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/aspect-ratio/index.md", "title": "aspect-ratio"}
-nav_next: {"path": "tailwind/docs/break-after/index.md", "title": "break-after"}
+nav_prev: {"path": "../aspect-ratio/index.md", "title": "aspect-ratio"}
+nav_next: {"path": "../break-after/index.md", "title": "break-after"}
 ---
 
 Layout
@@ -40,7 +40,7 @@ When setting the column width, the number of columns automatically adjusts to en
 
 Use the `gap-<width>` utilities to specify the width between columns:
 
-Learn more about the gap utilities in the [gap documentation](tailwind/docs/gap/index.md).
+Learn more about the gap utilities in the [gap documentation](../gap/index.md).
 
 ### [Using a custom value](#using-a-custom-value)
 
@@ -66,7 +66,7 @@ Prefix a `columns` utility with a breakpoint variant like `sm:` to only apply th
 <div class="columns-2 gap-4 sm:columns-3 sm:gap-8 ...">  <img class="aspect-3/2 ..." src="/img/mountains-1.jpg" />  <img class="aspect-square ..." src="/img/mountains-2.jpg" />  <img class="aspect-square ..." src="/img/mountains-3.jpg" />  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -82,4 +82,4 @@ Now the `columns-4xs` utility can be used in your markup:
 <div class="columns-4xs">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](tailwind/docs/theme/index.md#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).

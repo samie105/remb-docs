@@ -10,8 +10,8 @@ content_hash: "827a48d4d5f48874567df56e83e8bd5e357b236b8b80982d2dbcea088f97e1dd"
 menu_path: ["PostgreSQL: Documentation: 18: 5.4. Generated Columns"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/ddl-foreign-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.13.\u00a0Foreign Data"}
-nav_next: {"path": "postgres/docs/current/ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
+nav_prev: {"path": "../ddl-foreign-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.13.\u00a0Foreign Data"}
+nav_next: {"path": "../ddl-identity-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.3.\u00a0Identity Columns"}
 ---
 
 A generated column is a special column that is always computed from other columns. Thus, it is for columns what a view is for tables. There are two kinds of generated columns: stored and virtual. A stored generated column is computed when it is written (inserted or updated) and occupies storage as if it were a normal column. A virtual generated column occupies no storage and is computed when it is read. Thus, a virtual generated column is similar to a view and a stored generated column is similar to a materialized view (except that it is always updated automatically).
@@ -72,4 +72,4 @@ Additional considerations apply to the use of generated columns.
     
 -   Generated columns are, conceptually, updated after `BEFORE` triggers have run. Therefore, changes made to base columns in a `BEFORE` trigger will be reflected in generated columns. But conversely, it is not allowed to access generated columns in `BEFORE` triggers.
     
--   Generated columns are allowed to be replicated during logical replication according to the `CREATE PUBLICATION` parameter [`publish_generated_columns`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-GENERATED-COLUMNS) or by including them in the column list of the `CREATE PUBLICATION` command. This is currently only supported for stored generated columns. See [Section 29.6](https://www.postgresql.org/docs/current/logical-replication-gencols.html "29.6. Generated Column Replication") for details.
+-   Generated columns are allowed to be replicated during logical replication according to the `CREATE PUBLICATION` parameter [`publish_generated_columns`](../sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-WITH-PUBLISH-GENERATED-COLUMNS) or by including them in the column list of the `CREATE PUBLICATION` command. This is currently only supported for stored generated columns. See [Section 29.6](https://www.postgresql.org/docs/current/logical-replication-gencols.html "29.6. Generated Column Replication") for details.

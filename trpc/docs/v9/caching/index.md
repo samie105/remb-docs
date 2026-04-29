@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:20.579Z"
 content_hash: "2cb56168e174cadb0bb90bc3e633f1dfef410697f2f29e803325e0216610eb19"
 menu_path: ["Response Caching"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/aws-lambda/index.md", "title": "Usage with Amazon Lambda through the API Gateway"}
-nav_next: {"path": "trpc/docs/v9/context/index.md", "title": "Request Context"}
+nav_prev: {"path": "../aws-lambda/index.md", "title": "Usage with Amazon Lambda through the API Gateway"}
+nav_next: {"path": "../context/index.md", "title": "Request Context"}
 ---
 
 The below examples uses [Vercel's edge caching](https://vercel.com/docs/serverless-functions/edge-caching) to serve data to your users as fast as possible.
@@ -19,7 +19,7 @@ Always be careful with caching - especially if you handle personal information.
 
 Since batching is enabled by default, it's recommended to set your cache headers in the `responseMeta` function and make sure that there are not any concurrent calls that may include personal data - or to omit cache headers completely if there is an auth headers or cookie.
 
-You can also use a [`splitLink`](trpc/docs/v9/links/index.md) to split your requests that are public and those that should be private and uncached.
+You can also use a [`splitLink`](../links/index.md) to split your requests that are public and those that should be private and uncached.
 
 If you turn on SSR in your app you might discover that your app loads slow on for instance Vercel, but you can actually statically render your whole app without using SSG; [read this Twitter thread](https://twitter.com/alexdotjs/status/1386274093041950722) for more insights.
 

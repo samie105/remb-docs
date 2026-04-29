@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:56.821Z"
 content_hash: "5bc51d45e4a554ebbdc63d1be9e7f707c38d9ece8a71cfaf045a938ebbbfc368"
 menu_path: ["Building Astro sites with AI tools"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations/index.md", "title": "Working with integrations"}
-nav_next: {"path": "astro/en/guides/dev-toolbar/index.md", "title": "Dev toolbar"}
+nav_prev: {"path": "../integrations/index.md", "title": "Working with integrations"}
+nav_next: {"path": "../dev-toolbar/index.md", "title": "Dev toolbar"}
 ---
 
 # Building Astro sites with AI tools

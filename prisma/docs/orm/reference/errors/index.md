@@ -10,8 +10,8 @@ content_hash: "a99333805ea6eb732acfd36396b48c9fa86f5196b440383bb39507e5d9b77f98"
 menu_path: ["Prisma Error Reference"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/reference/error-reference/index.md", "title": "Error Reference"}
-nav_next: {"path": "prisma/docs/orm/reference/preview-features/client-preview-features/index.md", "title": "Prisma Client & Prisma schema"}
+nav_prev: {"path": "../error-reference/index.md", "title": "Error Reference"}
+nav_next: {"path": "../preview-features/client-preview-features/index.md", "title": "Prisma Client & Prisma schema"}
 ---
 
 The Next Evolution of Prisma ORMNew

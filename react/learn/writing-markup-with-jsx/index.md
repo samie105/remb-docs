@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:31.373Z"
 content_hash: "404b6fd7ddd01f63a92a3ef8aef2ca5fc587afdc8773b1ab5a0d3f629cb76c36"
 menu_path: ["Writing Markup with JSX"]
 section_path: []
-nav_prev: {"path": "react/learn/importing-and-exporting-components/index.md", "title": "Importing and Exporting Components"}
-nav_next: {"path": "react/learn/javascript-in-jsx-with-curly-braces/index.md", "title": "JavaScript in JSX with Curly Braces"}
+nav_prev: {"path": "../importing-and-exporting-components/index.md", "title": "Importing and Exporting Components"}
+nav_next: {"path": "../javascript-in-jsx-with-curly-braces/index.md", "title": "JavaScript in JSX with Curly Braces"}
 ---
 
 _JSX_ is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file. Although there are other ways to write components, most React developers prefer the conciseness of JSX, and most codebases use it.

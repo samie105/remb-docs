@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:24.335Z"
 content_hash: "e9f1e993b32944042aa31ae1114e1254440e0f8f2fef2f93ee095bef29d960de"
 menu_path: ["Bail early with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/streams/to-typedarray/index.md", "title": "Convert a ReadableStream to a Uint8Array"}
-nav_next: {"path": "bun/docs/guides/test/concurrent-test-glob/index.md", "title": "Selectively run tests concurrently with glob patterns"}
+nav_prev: {"path": "../../streams/to-typedarray/index.md", "title": "Convert a ReadableStream to a Uint8Array"}
+nav_next: {"path": "../concurrent-test-glob/index.md", "title": "Selectively run tests concurrently with glob patterns"}
 ---
 
 # bail after 10 failures

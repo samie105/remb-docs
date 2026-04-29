@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/getting-started/fonts/index.md", "title": "How to use fonts"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/deploying/index.md", "title": "How to deploy your Next.js application"}
+nav_prev: {"path": "../fonts/index.md", "title": "How to use fonts"}
+nav_next: {"path": "../deploying/index.md", "title": "How to deploy your Next.js application"}
 ---
 
 # How to use CSS in your application

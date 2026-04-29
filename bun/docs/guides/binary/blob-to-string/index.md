@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:09.278Z"
 content_hash: "c4e14862a453a2ba9269f7b1a0b219ff76a046547589d8537bf82c3a386f2597"
 menu_path: ["Convert a Blob to a string"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/blob-to-stream/index.md", "title": "Convert a Blob to a ReadableStream"}
-nav_next: {"path": "bun/docs/guides/binary/blob-to-typedarray/index.md", "title": "Convert a Blob to a Uint8Array"}
+nav_prev: {"path": "../blob-to-stream/index.md", "title": "Convert a Blob to a ReadableStream"}
+nav_next: {"path": "../blob-to-typedarray/index.md", "title": "Convert a Blob to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)

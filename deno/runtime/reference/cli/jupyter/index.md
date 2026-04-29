@@ -10,8 +10,8 @@ content_hash: "3f666ba4b54e9e03985ea7f511364ecfed2b8f117aaf061fa7517b760ecb1281"
 menu_path: ["Jupyter Kernel for Deno"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/install/index.md", "title": "deno install"}
-nav_next: {"path": "deno/runtime/reference/cli/lint/index.md", "title": "deno lint"}
+nav_prev: {"path": "../install/index.md", "title": "deno install"}
+nav_next: {"path": "../lint/index.md", "title": "deno lint"}
 ---
 
 **On this page**

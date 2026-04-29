@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:20.234Z"
 content_hash: "29b6e8985982548736ddcae8b3c14053e61293bc09acf708126926d7f4305e13"
 menu_path: ["Scoped styles"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/await-expressions/index.md", "title": "await"}
-nav_next: {"path": "svelte/docs/svelte/global-styles/index.md", "title": "Global styles"}
+nav_prev: {"path": "../await-expressions/index.md", "title": "await"}
+nav_next: {"path": "../global-styles/index.md", "title": "Global styles"}
 ---
 
 Svelte components can include a `<style>` element containing CSS that belongs to the component. This CSS is _scoped_ by default, meaning that styles will not apply to any elements on the page outside the component in question.

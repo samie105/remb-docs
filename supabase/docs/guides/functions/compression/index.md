@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:53.662Z"
 content_hash: "923a6e536f7346669f9b127095573aa508cc96cd89b4850a0562a6166ad79180"
 menu_path: ["Handling Compressed Requests"]
 section_path: []
-nav_prev: {"path": "supabase/docs/guides/functions/background-tasks/index.md", "title": "Background Tasks"}
-nav_next: {"path": "supabase/docs/guides/functions/connect-to-postgres/index.md", "title": "Integrating with Supabase Database (Postgres)"}
+nav_prev: {"path": "../background-tasks/index.md", "title": "Background Tasks"}
+nav_next: {"path": "../connect-to-postgres/index.md", "title": "Integrating with Supabase Database (Postgres)"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:28.208Z"
 content_hash: "9aa3567e5ab498d6300be1133633ca93e048635aaf605ce137dceda4acfbfdf7"
 menu_path: ["Data REST API","Data REST API","Guides","Guides","Generating Python Types","Generating Python Types"]
 section_path: ["Data REST API","Data REST API","Guides","Guides","Generating Python Types","Generating Python Types"]
-nav_prev: {"path": "supabase/docs/guides/api/rest/client-libs/index.md", "title": "Client Libraries"}
-nav_next: {"path": "supabase/docs/guides/api/rest/generating-types/index.md", "title": "Generating TypeScript Types"}
+nav_prev: {"path": "../client-libs/index.md", "title": "Client Libraries"}
+nav_next: {"path": "../generating-types/index.md", "title": "Generating TypeScript Types"}
 ---
 
 # 

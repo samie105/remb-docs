@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:03.081Z"
 content_hash: "2755402c696e282df8cd1c8b697560e46cf670aa0e69be081e4d669e3a09026a"
 menu_path: ["Congratulations!"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/6-islands/2/index.md", "title": "Back on dry land. Take your blog from day to night, no island required!"}
-nav_next: {"path": "astro/en/tutorial/6-islands/4/index.md", "title": "Optional: Make a content collection"}
+nav_prev: {"path": "../2/index.md", "title": "Back on dry land. Take your blog from day to night, no island required!"}
+nav_next: {"path": "../4/index.md", "title": "Optional: Make a content collection"}
 ---
 
 # Congratulations!

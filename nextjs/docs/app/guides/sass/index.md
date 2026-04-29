@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/rendering-philosophy/index.md", "title": "Next.js Rendering Philosophy"}
-nav_next: {"path": "nextjs/docs/app/guides/scripts/index.md", "title": "How to load and optimize scripts"}
+nav_prev: {"path": "../rendering-philosophy/index.md", "title": "Next.js Rendering Philosophy"}
+nav_next: {"path": "../scripts/index.md", "title": "How to load and optimize scripts"}
 ---
 
 # How to use Sass

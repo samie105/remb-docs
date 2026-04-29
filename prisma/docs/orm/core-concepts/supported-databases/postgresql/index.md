@@ -11,8 +11,8 @@ menu_path: ["PostgreSQL"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mysql/index.md", "title": "MySQL"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md", "title": "SQL Server"}
+nav_prev: {"path": "../mysql/index.md", "title": "MySQL"}
+nav_next: {"path": "../sql-server/index.md", "title": "SQL Server"}
 ---
 
 Supported databases
@@ -70,7 +70,7 @@ export default defineConfig({
 });
 ```
 
-Use JavaScript database drivers via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
+Use JavaScript database drivers via [driver adapters](../database-drivers/index.md#driver-adapters):
 
 **Standard PostgreSQL with `pg`:**
 
@@ -121,7 +121,7 @@ Serverless PostgreSQL with automatic scaling and branching.
 -   Cold start: 500ms - few seconds
 -   Database branching for development workflows
 
-**Timeout configuration:** Configure connection and pool timeouts via your [driver adapter](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md) (e.g. `connectionTimeoutMillis` for `pg`).
+**Timeout configuration:** Configure connection and pool timeouts via your [driver adapter](../../../prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md) (e.g. `connectionTimeoutMillis` for `pg`).
 
 **Resources:** [Neon docs](https://neon.tech/docs) • [Connection pooling](https://neon.tech/docs/connect/connection-pooling)
 
@@ -195,7 +195,7 @@ model User {
 | `Json` | `jsonb` | `JSONB` |
 | `Bytes` | `bytea` | `BYTES` |
 
-See [full type mapping reference](prisma/docs/orm/reference/prisma-schema-reference/index.md#model-field-scalar-types) for complete details.
+See [full type mapping reference](../../../reference/prisma-schema-reference/index.md#model-field-scalar-types) for complete details.
 
 **SSL connections:**
 
@@ -229,4 +229,4 @@ Driver adapters use `pg` defaults which differ from v6:
 -   **Connection timeout:** `0` (no timeout) vs v6's `5s`
 -   **Idle timeout:** `10s` vs v6's `300s`
 
-See [connection pool guide](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md#postgresql-using-the-pg-driver-adapter) for configuration.
+See [connection pool guide](../../../prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md#postgresql-using-the-pg-driver-adapter) for configuration.

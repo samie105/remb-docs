@@ -11,8 +11,8 @@ menu_path: ["exportPathMap"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/env/index.md", "title": "env"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/generateBuildId/index.md", "title": "generateBuildId"}
+nav_prev: {"path": "../env/index.md", "title": "env"}
+nav_next: {"path": "../generateBuildId/index.md", "title": "generateBuildId"}
 ---
 
 # exportPathMap

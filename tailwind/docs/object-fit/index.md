@@ -10,8 +10,8 @@ content_hash: "5a484ee20baa41f6da910975c2b6e42ceb2a030eea6ecdaaabc2307ff2688343"
 menu_path: ["object-fit"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/isolation/index.md", "title": "isolation"}
-nav_next: {"path": "tailwind/docs/object-position/index.md", "title": "object-position"}
+nav_prev: {"path": "../isolation/index.md", "title": "isolation"}
+nav_next: {"path": "../object-position/index.md", "title": "object-position"}
 ---
 
 # object-fit

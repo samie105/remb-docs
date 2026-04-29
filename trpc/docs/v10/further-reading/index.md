@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:04.199Z"
 content_hash: "5d006e77c90cf420c10f68ae287dc23691aff731eb3005498cc9bd92f1d4b551"
 menu_path: ["Further Reading"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/further/index.md", "title": "Extra Information"}
-nav_next: {"path": "trpc/docs/v10/getting-started/index.md", "title": "Getting Started"}
+nav_prev: {"path": "../further/index.md", "title": "Extra Information"}
+nav_next: {"path": "../getting-started/index.md", "title": "Getting Started"}
 ---
 
 ## Who is this for?[​](#who-is-this-for "Direct link to Who is this for?")

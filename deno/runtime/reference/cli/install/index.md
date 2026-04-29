@@ -10,8 +10,8 @@ content_hash: "3bef85b5a645ad7f0a489311f6a1f5835be18eb2421c00b0aeb3fa6027c87ee1"
 menu_path: ["deno install"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/init/index.md", "title": "deno init"}
-nav_next: {"path": "deno/runtime/reference/cli/jupyter/index.md", "title": "Jupyter Kernel for Deno"}
+nav_prev: {"path": "../init/index.md", "title": "deno init"}
+nav_next: {"path": "../jupyter/index.md", "title": "Jupyter Kernel for Deno"}
 ---
 
 # Install using deno install

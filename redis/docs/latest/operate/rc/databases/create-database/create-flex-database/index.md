@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:12:11.659Z"
 content_hash: "3eb6e62a70b8b99f10e0882f2ae61caf7a73dee09e1b406b97aec3ccefa09656"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create a Flex database","→","Create a Flex database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create a Flex database","→","Create a Flex database"]
-nav_prev: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-essentials-database/index.md", "title": "Create an Essentials database"}
-nav_next: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-free-database/index.md", "title": "Create a free database"}
+nav_prev: {"path": "../create-essentials-database/index.md", "title": "Create an Essentials database"}
+nav_next: {"path": "../create-free-database/index.md", "title": "Create a free database"}
 ---
 
 # Create a Flex database

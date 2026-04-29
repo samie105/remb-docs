@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:26.402Z"
 content_hash: "aecadcde6d9ce9c2413196f9eb156a6ef15bc456ff9aa3a9a0ca71ee840f6d25"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","GitHub","GitHub"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","GitHub","GitHub"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-figma/index.md", "title": "Login with Figma"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-gitlab/index.md", "title": "Login with GitLab"}
+nav_prev: {"path": "../auth-figma/index.md", "title": "Login with Figma"}
+nav_next: {"path": "../auth-gitlab/index.md", "title": "Login with GitLab"}
 ---
 
 # 

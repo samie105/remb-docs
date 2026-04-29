@@ -10,8 +10,8 @@ content_hash: "02769bec2b59cf60162b822de88bac31413e720417ed97b4fda03e3c862694eb"
 menu_path: ["PostgreSQL: Documentation: 18: F.6. bloom — bloom filter index access method"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/bki-structure.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.5.\u00a0Structure of the Bootstrap BKI File"}
-nav_next: {"path": "postgres/docs/current/brin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.5.\u00a0BRIN Indexes"}
+nav_prev: {"path": "../bki-structure.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.5.\u00a0Structure of the Bootstrap BKI File"}
+nav_next: {"path": "../brin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.5.\u00a0BRIN Indexes"}
 ---
 
 A Bloom filter is a space-efficient data structure that is used to test whether an element is a member of a set. In the case of an index access method, it allows fast exclusion of non-matching tuples via signatures whose size is determined at index creation.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:33.204Z"
 content_hash: "a71886415eef814bd00c8b8aef7a82c3e83dae50ca7b7aa80371ff114be9e67f"
 menu_path: ["JSX Renderer Middleware ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/middleware/builtin/ip-restriction/index.md", "title": "IP Restriction Middleware \u200b"}
-nav_next: {"path": "hono/docs/middleware/builtin/jwk/index.md", "title": "JWK Auth Middleware \u200b"}
+nav_prev: {"path": "../ip-restriction/index.md", "title": "IP Restriction Middleware \u200b"}
+nav_next: {"path": "../jwk/index.md", "title": "JWK Auth Middleware \u200b"}
 ---
 
 ## JSX Renderer Middleware [​](#jsx-renderer-middleware)
@@ -175,7 +175,7 @@ app.use(
 )
 ```
 
-As a concrete example, you can use this to disable streaming when generating static sites (SSG) with `<Suspense>`, by using the [`isSSGContext`](hono/docs/helpers/ssg/index.md#isssgcontext) helper:
+As a concrete example, you can use this to disable streaming when generating static sites (SSG) with `<Suspense>`, by using the [`isSSGContext`](../../../helpers/ssg/index.md#isssgcontext) helper:
 
 tsx
 

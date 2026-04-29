@@ -10,8 +10,8 @@ content_hash: "f17f4fc6dfbc321b46287988c59474b90393c78eb0fd25b444bfd583ef4841b3"
 menu_path: ["backdrop-filter: saturate()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/backdrop-filter-opacity/index.md", "title": "backdrop-filter: opacity()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-sepia/index.md", "title": "backdrop-filter: sepia()"}
+nav_prev: {"path": "../backdrop-filter-opacity/index.md", "title": "backdrop-filter: opacity()"}
+nav_next: {"path": "../backdrop-filter-sepia/index.md", "title": "backdrop-filter: sepia()"}
 ---
 
 # backdrop-filter: saturate()

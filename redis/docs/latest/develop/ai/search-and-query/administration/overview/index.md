@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:19.846Z"
 content_hash: "6ed782cd61b0a2b655bd545805c8d4375dd971d9cfbc193ec763081c2f54afe3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Technical overview","→","Technical overview"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Technical overview","→","Technical overview"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/gc/index.md", "title": "Garbage collection"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/index.md", "title": "Search concepts"}
+nav_prev: {"path": "../gc/index.md", "title": "Garbage collection"}
+nav_next: {"path": "../../advanced-concepts/index.md", "title": "Search concepts"}
 ---
 
 # Technical overview

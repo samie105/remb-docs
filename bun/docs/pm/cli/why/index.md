@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:46.313Z"
 content_hash: "fec11b2778fb9b3be5b20f2ac26dfdf1a1bbf134dee1fff7830a00904ed8a510"
 menu_path: ["bun why"]
 section_path: []
-nav_prev: {"path": "bun/docs/pm/cli/update/index.md", "title": "bun update"}
-nav_next: {"path": "bun/docs/pm/filter/index.md", "title": "bun --filter"}
+nav_prev: {"path": "../update/index.md", "title": "bun update"}
+nav_next: {"path": "../../filter/index.md", "title": "bun --filter"}
 ---
 
 [Skip to main content](#content-area)

@@ -11,8 +11,8 @@ menu_path: ["revalidatePath"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/refresh/index.md", "title": "refresh"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/revalidateTag/index.md", "title": "revalidateTag"}
+nav_prev: {"path": "../refresh/index.md", "title": "refresh"}
+nav_next: {"path": "../revalidateTag/index.md", "title": "revalidateTag"}
 ---
 
 # revalidatePath

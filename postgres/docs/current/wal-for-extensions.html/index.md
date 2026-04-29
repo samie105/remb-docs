@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:25.365Z"
 content_hash: "cbf5df6317f12890285d95fe235f5fce6eef945a88b9ee164c27009020df5945"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 64. Write Ahead Logging for Extensions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/geqo.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a061.\u00a0Genetic Query Optimizer"}
-nav_next: {"path": "postgres/docs/current/indextypes.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a065.\u00a0Built-in Index Access Methods"}
+nav_prev: {"path": "../geqo.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a061.\u00a0Genetic Query Optimizer"}
+nav_next: {"path": "../indextypes.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a065.\u00a0Built-in Index Access Methods"}
 ---
 
 Certain extensions, principally extensions that implement custom access methods, may need to perform write-ahead logging in order to ensure crash-safety. PostgreSQL provides two ways for extensions to achieve this goal.

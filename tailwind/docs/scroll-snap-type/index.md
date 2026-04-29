@@ -10,8 +10,8 @@ content_hash: "2bf0b25e11583a0d1e16fe4a546ca227e40eb547fe78ab3b1325bb264c5eb290"
 menu_path: ["scroll-snap-type"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/scroll-snap-stop/index.md", "title": "scroll-snap-stop"}
-nav_next: {"path": "tailwind/docs/touch-action/index.md", "title": "touch-action"}
+nav_prev: {"path": "../scroll-snap-stop/index.md", "title": "scroll-snap-stop"}
+nav_next: {"path": "../touch-action/index.md", "title": "touch-action"}
 ---
 
 Utilities for controlling how strictly snap points are enforced in a snap container.
@@ -42,7 +42,7 @@ snap point
 <div class="snap-x ...">  <div class="snap-center ...">    <img src="/img/vacation-01.jpg" />  </div>  <div class="snap-center ...">    <img src="/img/vacation-02.jpg" />  </div>  <div class="snap-center ...">    <img src="/img/vacation-03.jpg" />  </div>  <div class="snap-center ...">    <img src="/img/vacation-04.jpg" />  </div>  <div class="snap-center ...">    <img src="/img/vacation-05.jpg" />  </div>  <div class="snap-center ...">    <img src="/img/vacation-06.jpg" />  </div></div>
 ```
 
-For scroll snapping to work, you need to also set the [scroll snap alignment](tailwind/docs/scroll-snap-align/index.md) on the children.
+For scroll snapping to work, you need to also set the [scroll snap alignment](../scroll-snap-align/index.md) on the children.
 
 ### [Mandatory scroll snapping](#mandatory-scroll-snapping)
 
@@ -98,4 +98,4 @@ Prefix a `scroll-snap-type` utility with a breakpoint variant like `md:` to only
 <div class="snap-none md:snap-x ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

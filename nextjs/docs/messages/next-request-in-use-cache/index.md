@@ -11,8 +11,8 @@ menu_path: ["Cannot access `cookies()` or `headers()` in `\"use cache\"`"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/next-dynamic-modules/index.md", "title": "`next/dynamic` has deprecated loading multiple modules at once"}
-nav_next: {"path": "nextjs/docs/messages/next-script-for-ga/index.md", "title": "Using Google Analytics with Next.js (through `@next/third-parties/google`)"}
+nav_prev: {"path": "../next-dynamic-modules/index.md", "title": "`next/dynamic` has deprecated loading multiple modules at once"}
+nav_next: {"path": "../next-script-for-ga/index.md", "title": "Using Google Analytics with Next.js (through `@next/third-parties/google`)"}
 ---
 
 # Cannot access \`cookies()\` or \`headers()\` in \`"use cache"\`

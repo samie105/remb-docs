@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:39.195Z"
 content_hash: "b4902bc6e184f13eb19c736538169b04f7e5c617170677224ae6115eebb0357f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Redis modules and blocking commands","→","Redis modules and blocking commands"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis modules API","→","Redis modules API","→\n      \n        Redis modules and blocking commands","→","Redis modules and blocking commands"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/modules/modules-api-ref/index.md", "title": "Modules API reference"}
-nav_next: {"path": "redis/docs/latest/develop/reference/modules/modules-native-types/index.md", "title": "Modules API for native types"}
+nav_prev: {"path": "../modules-api-ref/index.md", "title": "Modules API reference"}
+nav_next: {"path": "../modules-native-types/index.md", "title": "Modules API for native types"}
 ---
 
 # Redis modules and blocking commands

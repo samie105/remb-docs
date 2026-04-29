@@ -11,8 +11,8 @@ menu_path: ["useParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/next-response/index.md", "title": "NextResponse"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
+nav_prev: {"path": "../next-response/index.md", "title": "NextResponse"}
+nav_next: {"path": "../use-report-web-vitals/index.md", "title": "useReportWebVitals"}
 ---
 
 # useParams

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:04.357Z"
 content_hash: "d3c4888fedc416a100f41ae5f0335316e16e02c3d772c963e9d871cf7538b211"
 menu_path: ["Why Astro?"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/6-islands/index.md", "title": "Check in: Unit 6 - Astro Islands"}
-nav_next: {"path": "astro/en/concepts/islands/index.md", "title": "Islands architecture"}
+nav_prev: {"path": "../../tutorial/6-islands/index.md", "title": "Check in: Unit 6 - Astro Islands"}
+nav_next: {"path": "../islands/index.md", "title": "Islands architecture"}
 ---
 
 # Why Astro?

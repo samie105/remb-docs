@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:49.050Z"
 content_hash: "6eb270562128f6c4df69afbf26cb1a193ad2405bf44c8745a42b5efba350cab9"
 menu_path: ["Getting Started ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/concepts/stacks/index.md", "title": "Hono Stacks \u200b"}
-nav_next: {"path": "hono/docs/getting-started/cloudflare-workers/index.md", "title": "Cloudflare Workers \u200b"}
+nav_prev: {"path": "../../concepts/stacks/index.md", "title": "Hono Stacks \u200b"}
+nav_next: {"path": "../cloudflare-workers/index.md", "title": "Cloudflare Workers \u200b"}
 ---
 
 ## Getting Started [​](#getting-started)
@@ -221,7 +221,7 @@ app.delete('/posts/:id', (c) =>
 
 ## Return HTML [​](#return-html)
 
-You can write HTML with [the html Helper](hono/docs/helpers/html/index.md) or using [JSX](hono/docs/guides/jsx/index.md) syntax. If you want to use JSX, rename the file to `src/index.tsx` and configure it (check with each runtime as it is different). Below is an example using JSX.
+You can write HTML with [the html Helper](../../helpers/html/index.md) or using [JSX](../../guides/jsx/index.md) syntax. If you want to use JSX, rename the file to `src/index.tsx` and configure it (check with each runtime as it is different). Below is an example using JSX.
 
 tsx
 

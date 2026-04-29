@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:55.605Z"
 content_hash: "3f804a1d55bceca966f4495d585d760f252df27f2faf6e72254e8fe843aab2be"
 menu_path: ["Build a tag index page"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/5-astro-api/2/index.md", "title": "Generate tag pages"}
-nav_next: {"path": "astro/en/tutorial/5-astro-api/4/index.md", "title": "Add an RSS feed"}
+nav_prev: {"path": "../2/index.md", "title": "Generate tag pages"}
+nav_next: {"path": "../4/index.md", "title": "Add an RSS feed"}
 ---
 
 # Build a tag index page

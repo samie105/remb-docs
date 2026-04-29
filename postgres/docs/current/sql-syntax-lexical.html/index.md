@@ -10,8 +10,8 @@ content_hash: "b1ad2a6a451f9b2e81543ef14878b14f6fffba9721e345aa9a295d7e037579b0"
 menu_path: ["PostgreSQL: Documentation: 18: 4.1. Lexical Structure"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
-nav_next: {"path": "postgres/docs/current/sql-truncate.html/index.md", "title": "PostgreSQL: Documentation: 18: TRUNCATE"}
+nav_prev: {"path": "../sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
+nav_next: {"path": "../sql-truncate.html/index.md", "title": "PostgreSQL: Documentation: 18: TRUNCATE"}
 ---
 
 SQL input consists of a sequence of _commands_. A command is composed of a sequence of _tokens_, terminated by a semicolon (“;”). The end of the input stream also terminates a command. Which tokens are valid depends on the syntax of the particular command.
@@ -125,9 +125,9 @@ It is your responsibility that the byte sequences you create, especially when us
 
 ### Caution
 
-If the configuration parameter [standard\_conforming\_strings](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) is `off`, then PostgreSQL recognizes backslash escapes in both regular and escape string constants. However, as of PostgreSQL 9.1, the default is `on`, meaning that backslash escapes are recognized only in escape string constants. This behavior is more standards-compliant, but might break applications which rely on the historical behavior, where backslash escapes were always recognized. As a workaround, you can set this parameter to `off`, but it is better to migrate away from using backslash escapes. If you need to use a backslash escape to represent a special character, write the string constant with an `E`.
+If the configuration parameter [standard\_conforming\_strings](../runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) is `off`, then PostgreSQL recognizes backslash escapes in both regular and escape string constants. However, as of PostgreSQL 9.1, the default is `on`, meaning that backslash escapes are recognized only in escape string constants. This behavior is more standards-compliant, but might break applications which rely on the historical behavior, where backslash escapes were always recognized. As a workaround, you can set this parameter to `off`, but it is better to migrate away from using backslash escapes. If you need to use a backslash escape to represent a special character, write the string constant with an `E`.
 
-In addition to `standard_conforming_strings`, the configuration parameters [escape\_string\_warning](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-ESCAPE-STRING-WARNING) and [backslash\_quote](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-BACKSLASH-QUOTE) govern treatment of backslashes in string constants.
+In addition to `standard_conforming_strings`, the configuration parameters [escape\_string\_warning](../runtime-config-compatible.html/index.md#GUC-ESCAPE-STRING-WARNING) and [backslash\_quote](../runtime-config-compatible.html/index.md#GUC-BACKSLASH-QUOTE) govern treatment of backslashes in string constants.
 
 The character with the code zero cannot be in a string constant.
 
@@ -153,7 +153,7 @@ Either the 4-digit or the 6-digit escape form can be used to specify UTF-16 surr
 
 If the server encoding is not UTF-8, the Unicode code point identified by one of these escape sequences is converted to the actual server encoding; an error is reported if that's not possible.
 
-Also, the Unicode escape syntax for string constants only works when the configuration parameter [standard\_conforming\_strings](postgres/docs/current/runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) is turned on. This is because otherwise this syntax could confuse clients that parse the SQL statements to the point that it could lead to SQL injections and similar security issues. If the parameter is set to off, this syntax will be rejected with an error message.
+Also, the Unicode escape syntax for string constants only works when the configuration parameter [standard\_conforming\_strings](../runtime-config-compatible.html/index.md#GUC-STANDARD-CONFORMING-STRINGS) is turned on. This is because otherwise this syntax could confuse clients that parse the SQL statements to the point that it could lead to SQL injections and similar security issues. If the parameter is set to off, this syntax will be rejected with an error message.
 
 #### 4.1.2.4. Dollar-Quoted String Constants [#](#SQL-SYNTAX-DOLLAR-QUOTING)
 

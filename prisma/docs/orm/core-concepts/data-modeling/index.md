@@ -10,8 +10,8 @@ content_hash: "f113dc65b592751eb5fc36382532d2eb1529efc013b764ab6427a2951c6a8acc"
 menu_path: ["Data modeling"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/index.md", "title": "Prisma ORM"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/api-patterns/index.md", "title": "API patterns"}
+nav_prev: {"path": "../../index.md", "title": "Prisma ORM"}
+nav_next: {"path": "../api-patterns/index.md", "title": "API patterns"}
 ---
 
 Learn how data modeling with Prisma differs from data modeling with SQL or ORMs. Prisma uses a declarative data modeling language to describe a database schema
@@ -180,7 +180,7 @@ The resulting `user` object is an instance of Sequelize's `Model` class (because
 
 Depending on which parts of Prisma ORM you want to use in your application, the data modeling flow looks slightly different. The following two sections explain the workflows for using [**only Prisma Client**](#using-only-prisma-client) and using [**Prisma Client and Prisma Migrate**](#using-prisma-client-and-prisma-migrate).
 
-No matter which approach though, with Prisma ORM you never create application models in your programming language by manually defining classes, interfaces, or structs. Instead, the application models are defined in your [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md):
+No matter which approach though, with Prisma ORM you never create application models in your programming language by manually defining classes, interfaces, or structs. Instead, the application models are defined in your [Prisma schema](../../prisma-schema/overview/index.md):
 
 -   **Only Prisma Client**: Application models in the Prisma schema are _generated based on the introspection of your database schema_. Data modeling happens primarily on the database-level.
 -   **Prisma Client and Prisma Migrate**: Data modeling happens in the Prisma schema by _manually adding application models_ to it. Prisma Migrate maps these application models to tables in the underlying database (currently only supported for relational databases).
@@ -239,7 +239,7 @@ Here is an overview of the main workflow:
 
 ### [Using Prisma Client and Prisma Migrate](#using-prisma-client-and-prisma-migrate)
 
-When using [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md), you define your application model in the Prisma schema and with relational databases use the `prisma migrate` subcommand to generate plain SQL migration files, which you can edit before applying. With MongoDB, you use `prisma db push` instead which applies the changes to your database directly.
+When using [Prisma Migrate](../../prisma-migrate/index.md), you define your application model in the Prisma schema and with relational databases use the `prisma migrate` subcommand to generate plain SQL migration files, which you can edit before applying. With MongoDB, you use `prisma db push` instead which applies the changes to your database directly.
 
 Here is an overview of the main workflow:
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:51.541Z"
 content_hash: "fe737168e26bab609821ccae545636ef091a43dfc617bf91d90392c03562f3b1"
 menu_path: ["TanStack React Query"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/tanstack-react-query/setup/index.md", "title": "TanStack React Query"}
-nav_next: {"path": "trpc/docs/client/vanilla/index.md", "title": "tRPC Client"}
+nav_prev: {"path": "../setup/index.md", "title": "TanStack React Query"}
+nav_next: {"path": "../../vanilla/index.md", "title": "tRPC Client"}
 ---
 
 ## Quick example query[​](#quick-example-query "Direct link to Quick example query")
@@ -387,7 +387,7 @@ ts
 
 ### `subscriptionOptions` - creating subscription options[​](#subscriptionOptions "Direct link to subscriptionOptions")
 
-TanStack does not provide a subscription hook, so we continue to expose our own abstraction here which works with a [standard tRPC subscription setup](trpc/docs/server/subscriptions/index.md). Available for all subscription procedures. Provides a type-safe identity function for constructing options that can be passed to `useSubscription`. Note that you need to have either the [`httpSubscriptionLink`](trpc/docs/client/links/httpSubscriptionLink/index.md) or [`wsLink`](trpc/docs/client/links/wsLink/index.md) configured in your tRPC client to use subscriptions.
+TanStack does not provide a subscription hook, so we continue to expose our own abstraction here which works with a [standard tRPC subscription setup](../../../server/subscriptions/index.md). Available for all subscription procedures. Provides a type-safe identity function for constructing options that can be passed to `useSubscription`. Note that you need to have either the [`httpSubscriptionLink`](../../links/httpSubscriptionLink/index.md) or [`wsLink`](../../links/wsLink/index.md) configured in your tRPC client to use subscriptions.
 
 tsx
 
@@ -677,7 +677,7 @@ ts
 
 ### Accessing the tRPC client[​](#useTRPCClient "Direct link to Accessing the tRPC client")
 
-If you used the [setup with React Context](trpc/docs/client/tanstack-react-query/setup/index.md#3a-set-up-the-trpc-context-provider), you can access the tRPC client using the `useTRPCClient` hook.
+If you used the [setup with React Context](../setup/index.md#3a-set-up-the-trpc-context-provider), you can access the tRPC client using the `useTRPCClient` hook.
 
 tsx
 
@@ -695,7 +695,7 @@ tsx
 
 `}`
 
-If you [setup without React Context](trpc/docs/client/tanstack-react-query/setup/index.md#3c-set-up-without-react-context), you can import the global client instance directly instead.
+If you [setup without React Context](../setup/index.md#3c-set-up-without-react-context), you can import the global client instance directly instead.
 
 ts
 

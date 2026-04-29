@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:47.962Z"
 content_hash: "8c5c308eb446fa63dbb0713a44ba1d6d5e6b04e63739b299945f88440fe7b3a0"
 menu_path: ["Svelte 5 migration guide"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/v4-migration-guide/index.md", "title": "Svelte 4 migration guide"}
-nav_next: {"path": "svelte/docs/svelte/faq/index.md", "title": "Frequently asked questions"}
+nav_prev: {"path": "../v4-migration-guide/index.md", "title": "Svelte 4 migration guide"}
+nav_next: {"path": "../faq/index.md", "title": "Frequently asked questions"}
 ---
 
 Version 5 comes with an overhauled syntax and reactivity system. While it may look different at first, you'll soon notice many similarities. This guide goes over the changes in detail and shows you how to upgrade. Along with it, we also provide information on _why_ we did these changes.

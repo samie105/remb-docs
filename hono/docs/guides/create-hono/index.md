@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:37.708Z"
 content_hash: "c2c2570fa0e71918ad28b7e2ae4ec9644327e023d0832550139f33b0afa3e5b9"
 menu_path: ["Create-hono ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/api/presets/index.md", "title": "Presets \u200b"}
-nav_next: {"path": "hono/docs/guides/middleware/index.md", "title": "Middleware \u200b"}
+nav_prev: {"path": "../../api/presets/index.md", "title": "Presets \u200b"}
+nav_next: {"path": "../middleware/index.md", "title": "Middleware \u200b"}
 ---
 
 # Forwarding arguments to create-hono (npm requires `--`)

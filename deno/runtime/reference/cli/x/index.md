@@ -10,8 +10,8 @@ content_hash: "fb97ccf917608f0253a9901c6e2e4cddc81d3e8d4ba44cb35741505374756f00"
 menu_path: ["deno x"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/unstable_flags/index.md", "title": "Unstable feature flags"}
-nav_next: {"path": "deno/runtime/reference/std/index.md", "title": "Deno Standard Library (@std)"}
+nav_prev: {"path": "../unstable_flags/index.md", "title": "Unstable feature flags"}
+nav_next: {"path": "../../std/index.md", "title": "Deno Standard Library (@std)"}
 ---
 
 **On this page**

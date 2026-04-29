@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:29.327Z"
 content_hash: "f02a3a4475401a1ecee31a459eac15e3173ab6e183e51ae8a9f5b437aa14f1ba"
 menu_path: ["Synchronizing with Effects"]
 section_path: []
-nav_prev: {"path": "react/learn/manipulating-the-dom-with-refs/index.md", "title": "Manipulating the DOM with Refs"}
-nav_next: {"path": "react/learn/you-might-not-need-an-effect/index.md", "title": "You Might Not Need an Effect"}
+nav_prev: {"path": "../manipulating-the-dom-with-refs/index.md", "title": "Manipulating the DOM with Refs"}
+nav_next: {"path": "../you-might-not-need-an-effect/index.md", "title": "You Might Not Need an Effect"}
 ---
 
 Some components need to synchronize with external systems. For example, you might want to control a non-React component based on the React state, set up a server connection, or send an analytics log when a component appears on the screen. _Effects_ let you run some code after rendering so that you can synchronize your component with some system outside of React.
@@ -27,14 +27,14 @@ Some components need to synchronize with external systems. For example, you migh
 
 Before getting to Effects, you need to be familiar with two types of logic inside React components:
 
-*   **Rendering code** (introduced in [Describing the UI](react/learn/describing-the-ui/index.md)) lives at the top level of your component. This is where you take the props and state, transform them, and return the JSX you want to see on the screen. [Rendering code must be pure.](react/learn/keeping-components-pure/index.md) Like a math formula, it should only _calculate_ the result, but not do anything else.
+*   **Rendering code** (introduced in [Describing the UI](../describing-the-ui/index.md)) lives at the top level of your component. This is where you take the props and state, transform them, and return the JSX you want to see on the screen. [Rendering code must be pure.](../keeping-components-pure/index.md) Like a math formula, it should only _calculate_ the result, but not do anything else.
     
-*   **Event handlers** (introduced in [Adding Interactivity](react/learn/adding-interactivity/index.md)) are nested functions inside your components that _do_ things rather than just calculate them. An event handler might update an input field, submit an HTTP POST request to buy a product, or navigate the user to another screen. Event handlers contain [“side effects”](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)) (they change the program’s state) caused by a specific user action (for example, a button click or typing).
+*   **Event handlers** (introduced in [Adding Interactivity](../adding-interactivity/index.md)) are nested functions inside your components that _do_ things rather than just calculate them. An event handler might update an input field, submit an HTTP POST request to buy a product, or navigate the user to another screen. Event handlers contain [“side effects”](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)) (they change the program’s state) caused by a specific user action (for example, a button click or typing).
     
 
 Sometimes this isn’t enough. Consider a `ChatRoom` component that must connect to the chat server whenever it’s visible on the screen. Connecting to a server is not a pure calculation (it’s a side effect) so it can’t happen during rendering. However, there is no single particular event like a click that causes `ChatRoom` to be displayed.
 
-**_Effects_ let you specify side effects that are caused by rendering itself, rather than by a particular event.** Sending a message in the chat is an _event_ because it is directly caused by the user clicking a specific button. However, setting up a server connection is an _Effect_ because it should happen no matter which interaction caused the component to appear. Effects run at the end of a [commit](react/learn/render-and-commit/index.md) after the screen updates. This is a good time to synchronize the React components with some external system (like network or a third-party library).
+**_Effects_ let you specify side effects that are caused by rendering itself, rather than by a particular event.** Sending a message in the chat is an _event_ because it is directly caused by the user clicking a specific button. However, setting up a server connection is an _Effect_ because it should happen no matter which interaction caused the component to appear. Effects run at the end of a [commit](../render-and-commit/index.md) after the screen updates. This is a good time to synchronize the React components with some external system (like network or a third-party library).
 
 ### Note
 
@@ -42,13 +42,13 @@ Here and later in this text, capitalized “Effect” refers to the React-specif
 
 ## You might not need an Effect[](#you-might-not-need-an-effect "Link for You might not need an Effect ")
 
-**Don’t rush to add Effects to your components.** Keep in mind that Effects are typically used to “step out” of your React code and synchronize with some _external_ system. This includes browser APIs, third-party widgets, network, and so on. If your Effect only adjusts some state based on other state, [you might not need an Effect.](react/learn/you-might-not-need-an-effect/index.md)
+**Don’t rush to add Effects to your components.** Keep in mind that Effects are typically used to “step out” of your React code and synchronize with some _external_ system. This includes browser APIs, third-party widgets, network, and so on. If your Effect only adjusts some state based on other state, [you might not need an Effect.](../you-might-not-need-an-effect/index.md)
 
 ## How to write an Effect[](#how-to-write-an-effect "Link for How to write an Effect ")
 
 To write an Effect, follow these three steps:
 
-1.  **Declare an Effect.** By default, your Effect will run after every [commit](react/learn/render-and-commit/index.md).
+1.  **Declare an Effect.** By default, your Effect will run after every [commit](../render-and-commit/index.md).
 2.  **Specify the Effect dependencies.** Most Effects should only re-run _when needed_ rather than after every render. For example, a fade-in animation should only trigger when a component appears. Connecting and disconnecting to a chat room should only happen when the component appears and disappears, or when the chat room changes. You will learn how to control this by specifying _dependencies._
 3.  **Add cleanup if needed.** Some Effects need to specify how to stop, undo, or clean up whatever they were doing. For example, “connect” needs “disconnect”, “subscribe” needs “unsubscribe”, and “fetch” needs either “cancel” or “ignore”. You will learn how to do this by returning a _cleanup function_.
 
@@ -84,11 +84,11 @@ function VideoPlayer({ src, isPlaying }) {// TODO: do something with isPlayingre
 
 However, the browser `<video>` tag does not have an `isPlaying` prop. The only way to control it is to manually call the [`play()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play) and [`pause()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/pause) methods on the DOM element. **You need to synchronize the value of `isPlaying` prop, which tells whether the video _should_ currently be playing, with calls like `play()` and `pause()`.**
 
-We’ll need to first [get a ref](react/learn/manipulating-the-dom-with-refs/index.md) to the `<video>` DOM node.
+We’ll need to first [get a ref](../manipulating-the-dom-with-refs/index.md) to the `<video>` DOM node.
 
 You might be tempted to try to call `play()` or `pause()` during rendering, but that isn’t correct:
 
-The reason this code isn’t correct is that it tries to do something with the DOM node during rendering. In React, [rendering should be a pure calculation](react/learn/keeping-components-pure/index.md) of JSX and should not contain side effects like modifying the DOM.
+The reason this code isn’t correct is that it tries to do something with the DOM node during rendering. In React, [rendering should be a pure calculation](../keeping-components-pure/index.md) of JSX and should not contain side effects like modifying the DOM.
 
 Moreover, when `VideoPlayer` is called for the first time, its DOM does not exist yet! There isn’t a DOM node yet to call `play()` or `pause()` on, because React doesn’t know what DOM to create until you return the JSX.
 
@@ -118,7 +118,7 @@ const [count, setCount] = useState(0);useEffect(() => {setCount(count + 1);});
 
 Effects run as a _result_ of rendering. Setting state _triggers_ rendering. Setting state immediately in an Effect is like plugging a power outlet into itself. The Effect runs, it sets the state, which causes a re-render, which causes the Effect to run, it sets the state again, this causes another re-render, and so on.
 
-Effects should usually synchronize your components with an _external_ system. If there’s no external system and you only want to adjust some state based on other state, [you might not need an Effect.](react/learn/you-might-not-need-an-effect/index.md)
+Effects should usually synchronize your components with an _external_ system. If there’s no external system and you only want to adjust some state based on other state, [you might not need an Effect.](../you-might-not-need-an-effect/index.md)
 
 ### Step 2: Specify the Effect dependencies[](#step-2-specify-the-effect-dependencies "Link for Step 2: Specify the Effect dependencies ")
 
@@ -186,7 +186,7 @@ export default function App() {
 
 The dependency array can contain multiple dependencies. React will only skip re-running the Effect if _all_ of the dependencies you specify have exactly the same values as they had during the previous render. React compares the dependency values using the [`Object.is`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is) comparison. See the [`useEffect` reference](https://react.dev/reference/react/useEffect#reference) for details.
 
-**Notice that you can’t “choose” your dependencies.** You will get a lint error if the dependencies you specified don’t match what React expects based on the code inside your Effect. This helps catch many bugs in your code. If you don’t want some code to re-run, [_edit the Effect code itself_ to not “need” that dependency.](react/learn/lifecycle-of-reactive-effects/index.md#what-to-do-when-you-dont-want-to-re-synchronize)
+**Notice that you can’t “choose” your dependencies.** You will get a lint error if the dependencies you specified don’t match what React expects based on the code inside your Effect. This helps catch many bugs in your code. If you don’t want some code to re-run, [_edit the Effect code itself_ to not “need” that dependency.](../lifecycle-of-reactive-effects/index.md#what-to-do-when-you-dont-want-to-re-synchronize)
 
 ### Pitfall
 
@@ -361,7 +361,7 @@ Writing `fetch` calls inside Effects is a [popular way to fetch data](https://ww
 
 This list of downsides is not specific to React. It applies to fetching data on mount with any library. Like with routing, data fetching is not trivial to do well, so we recommend the following approaches:
 
-*   **If you use a [framework](react/learn/creating-a-react-app/index.md#full-stack-frameworks), use its built-in data fetching mechanism.** Modern React frameworks have integrated data fetching mechanisms that are efficient and don’t suffer from the above pitfalls.
+*   **If you use a [framework](../creating-a-react-app/index.md#full-stack-frameworks), use its built-in data fetching mechanism.** Modern React frameworks have integrated data fetching mechanisms that are efficient and don’t suffer from the above pitfalls.
 *   **Otherwise, consider using or building a client-side cache.** Popular open source solutions include [TanStack Query](https://tanstack.com/query/latest), [useSWR](https://swr.vercel.app/), and [React Router 6.4+.](https://beta.reactrouter.com/en/main/start/overview) You can build your own solution too, in which case you would use Effects under the hood, but add logic for deduplicating requests, caching responses, and avoiding network waterfalls (by preloading data or hoisting data requirements to routes).
 
 You can continue fetching data directly in Effects if neither of these approaches suit you.
@@ -438,7 +438,7 @@ Let’s see what exactly happens as the user navigates around the app.
 
 #### Initial render[](#initial-render "Link for Initial render ")
 
-The user visits `<ChatRoom roomId="general" />`. Let’s [mentally substitute](react/learn/state-as-a-snapshot/index.md#rendering-takes-a-snapshot-in-time) `roomId` with `'general'`:
+The user visits `<ChatRoom roomId="general" />`. Let’s [mentally substitute](../state-as-a-snapshot/index.md#rendering-takes-a-snapshot-in-time) `roomId` with `'general'`:
 
 ```
 // JSX for the first render (roomId = "general")return <h1>Welcome to general!</h1>;

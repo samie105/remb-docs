@@ -10,8 +10,8 @@ content_hash: "bb58494e43283dd1fbb05f418ce7930e1d0402704324f13274f926d7bd17a674"
 menu_path: ["PostgreSQL: Documentation: 18: 35.34. referential_constraints"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-parameters.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.33.\u00a0parameters"}
-nav_next: {"path": "postgres/docs/current/infoschema-role-column-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.35.\u00a0role_column_grants"}
+nav_prev: {"path": "../infoschema-parameters.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.33.\u00a0parameters"}
+nav_next: {"path": "../infoschema-role-column-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.35.\u00a0role_column_grants"}
 ---
 
 The view `referential_constraints` contains all referential (foreign key) constraints in the current database. Only those constraints are shown for which the current user has write access to the referencing table (by way of being the owner or having some privilege other than `SELECT`).

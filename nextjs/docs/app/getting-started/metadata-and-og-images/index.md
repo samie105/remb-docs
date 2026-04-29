@@ -11,8 +11,8 @@ menu_path: ["Metadata and OG images"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/getting-started/fonts/index.md", "title": "Font Optimization"}
-nav_next: {"path": "nextjs/docs/app/getting-started/route-handlers/index.md", "title": "Route Handlers"}
+nav_prev: {"path": "../fonts/index.md", "title": "Font Optimization"}
+nav_next: {"path": "../route-handlers/index.md", "title": "Route Handlers"}
 ---
 
 # Metadata and OG images

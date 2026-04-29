@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:18.671Z"
 content_hash: "cf8fc18bc352629a81a6b9220e15612dee738a5968ef36f0481a61017bfc10fa"
 menu_path: ["Astro Font Provider API"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/session-driver-reference/index.md", "title": "Astro Session Driver API"}
-nav_next: {"path": "astro/en/reference/container-reference/index.md", "title": "Astro Container API (experimental)"}
+nav_prev: {"path": "../session-driver-reference/index.md", "title": "Astro Session Driver API"}
+nav_next: {"path": "../container-reference/index.md", "title": "Astro Container API (experimental)"}
 ---
 
 # Astro Font Provider API

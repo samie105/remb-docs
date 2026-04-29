@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:55.976Z"
 content_hash: "68bfa360308d81e6df9dbc89d57f08ff0498015ecab76184f90730d4deb8d331"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/stack-quickstart/index.md", "title": "Redis Open Source quick start"}
-nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-0/index.md", "title": "Redis 8.0 release notes and breaking changes"}
+nav_prev: {"path": "../../../oss_and_stack/stack-with-enterprise/stack-quickstart/index.md", "title": "Redis Open Source quick start"}
+nav_next: {"path": "8-0/index.md", "title": "Redis 8.0 release notes and breaking changes"}
 ---
 
 # Redis version release notes and breaking changes

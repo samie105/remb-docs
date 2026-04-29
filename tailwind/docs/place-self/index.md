@@ -10,8 +10,8 @@ content_hash: "b0a3585fa56267adc03e1dd7b66f03496165d555c02ed88001d867065d8a4972"
 menu_path: ["place-self"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/place-items/index.md", "title": "place-items"}
-nav_next: {"path": "tailwind/docs/padding/index.md", "title": "padding"}
+nav_prev: {"path": "../place-items/index.md", "title": "place-items"}
+nav_next: {"path": "../padding/index.md", "title": "padding"}
 ---
 
 Utilities for controlling how an individual item is justified and aligned at the same time.
@@ -126,4 +126,4 @@ Prefix a `place-self` utility with a breakpoint variant like `md:` to only apply
 <div class="place-self-start md:place-self-end ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

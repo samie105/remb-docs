@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:00.005Z"
 content_hash: "021b24c20454045ffb7200df1daa259917bd05d450a9642bfddc91efcee81fb0"
 menu_path: ["Add a dependency"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/http/tls/index.md", "title": "Configure TLS on an HTTP server"}
-nav_next: {"path": "bun/docs/guides/install/add-dev/index.md", "title": "Add a development dependency"}
+nav_prev: {"path": "../../http/tls/index.md", "title": "Configure TLS on an HTTP server"}
+nav_next: {"path": "../add-dev/index.md", "title": "Add a development dependency"}
 ---
 
 [Skip to main content](#content-area)

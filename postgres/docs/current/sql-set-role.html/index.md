@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:53.659Z"
 content_hash: "7e4fa93682a3f372e8f9b6ad36965d8d1c222d06fa5b0ee4def149f3feab1429"
 menu_path: ["PostgreSQL: Documentation: 18: SET ROLE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-reindex.html/index.md", "title": "PostgreSQL: Documentation: 18: REINDEX"}
-nav_next: {"path": "postgres/docs/current/sql-set-session-authorization.html/index.md", "title": "PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"}
+nav_prev: {"path": "../sql-reindex.html/index.md", "title": "PostgreSQL: Documentation: 18: REINDEX"}
+nav_next: {"path": "../sql-set-session-authorization.html/index.md", "title": "PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"}
 ---
 
 SET ROLE — set the current user identifier of the current session
@@ -29,7 +29,7 @@ The current session user must have the `SET` option for the specified _`role_nam
 
 The `SESSION` and `LOCAL` modifiers act the same as for the regular [`SET`](https://www.postgresql.org/docs/current/sql-set.html "SET") command.
 
-`SET ROLE NONE` sets the current user identifier to the current session user identifier, as returned by `session_user`. `RESET ROLE` sets the current user identifier to the connection-time setting specified by the [command-line options](postgres/docs/current/libpq-connect.html/index.md#LIBPQ-CONNECT-OPTIONS), [`ALTER ROLE`](https://www.postgresql.org/docs/current/sql-alterrole.html "ALTER ROLE"), or [`ALTER DATABASE`](https://www.postgresql.org/docs/current/sql-alterdatabase.html "ALTER DATABASE"), if any such settings exist. Otherwise, `RESET ROLE` sets the current user identifier to the current session user identifier. These forms can be executed by any user.
+`SET ROLE NONE` sets the current user identifier to the current session user identifier, as returned by `session_user`. `RESET ROLE` sets the current user identifier to the connection-time setting specified by the [command-line options](../libpq-connect.html/index.md#LIBPQ-CONNECT-OPTIONS), [`ALTER ROLE`](https://www.postgresql.org/docs/current/sql-alterrole.html "ALTER ROLE"), or [`ALTER DATABASE`](https://www.postgresql.org/docs/current/sql-alterdatabase.html "ALTER DATABASE"), if any such settings exist. Otherwise, `RESET ROLE` sets the current user identifier to the current session user identifier. These forms can be executed by any user.
 
 ## Notes
 

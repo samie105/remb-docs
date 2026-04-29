@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:17.788Z"
 content_hash: "d935e34007e8a13e51913813fae2cc314829a76e65e5350e19ab6ffcef5cde50"
 menu_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Shared responsibility model","Shared responsibility model"]
 section_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Shared responsibility model","Shared responsibility model"]
-nav_prev: {"path": "supabase/docs/guides/deployment/maturity-model/index.md", "title": "Maturity Model"}
-nav_next: {"path": "supabase/docs/guides/functions/index.md", "title": "Edge Functions"}
+nav_prev: {"path": "../maturity-model/index.md", "title": "Maturity Model"}
+nav_next: {"path": "../../functions/index.md", "title": "Edge Functions"}
 ---
 
 # 

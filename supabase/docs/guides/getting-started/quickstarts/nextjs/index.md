@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:16.934Z"
 content_hash: "d1015bca7aa13be7e105753f67a6485be3ef4ed8971d6916011846f51b8e6401"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Next.js","Next.js"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Next.js","Next.js"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/laravel/index.md", "title": "Use Supabase with Laravel"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
+nav_prev: {"path": "../laravel/index.md", "title": "Use Supabase with Laravel"}
+nav_next: {"path": "../nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
 ---
 
 # 

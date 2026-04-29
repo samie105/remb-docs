@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:02.162Z"
 content_hash: "076ae0d6770ef6f993d146a0bdbf724882be1aa450b719cc45783e4a63e1d057"
 menu_path: ["Web APIs"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/watch-mode/index.md", "title": "Watch Mode"}
-nav_next: {"path": "bun/docs/runtime/workers/index.md", "title": "Workers"}
+nav_prev: {"path": "../watch-mode/index.md", "title": "Watch Mode"}
+nav_next: {"path": "../workers/index.md", "title": "Workers"}
 ---
 
 [Skip to main content](#content-area)

@@ -10,13 +10,13 @@ content_hash: "730a7d2c89731030453a024abda232bb031426889ece597627f8db4485d953a7"
 menu_path: ["Add custom fields and methods to query results"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/query/index.md", "title": "Create custom Prisma Client queries"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md", "title": "Shared Prisma Client extensions"}
+nav_prev: {"path": "../query/index.md", "title": "Create custom Prisma Client queries"}
+nav_next: {"path": "../shared-extensions/index.md", "title": "Shared Prisma Client extensions"}
 ---
 
-You can use the `result` [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) component type to add custom fields and methods to query results.
+You can use the `result` [Prisma Client extensions](../index.md) component type to add custom fields and methods to query results.
 
-Use the `$extends` [client-level method](prisma/docs/orm/reference/prisma-client-reference/index.md#client-methods) to create an _extended client_. An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions.
+Use the `$extends` [client-level method](../../../reference/prisma-client-reference/index.md#client-methods) to create an _extended client_. An extended client is a variant of the standard Prisma Client that is wrapped by one or more extensions.
 
 To add a custom [field](#add-a-custom-field-to-query-results) or [method](#add-a-custom-method-to-the-result-object) to query results, use the following structure. In this example, we add the custom field `myComputedField` to the result of a `user` model query.
 
@@ -136,7 +136,7 @@ user.email = "mynewmail@mailservice.com";
 await user.save();
 ```
 
-You can use the [`omit` (Preview) option](prisma/docs/orm/reference/prisma-client-reference/index.md#omit) with [custom fields](#add-a-custom-field-to-query-results) and fields needed by custom fields.
+You can use the [`omit` (Preview) option](../../../reference/prisma-client-reference/index.md#omit) with [custom fields](#add-a-custom-field-to-query-results) and fields needed by custom fields.
 
 ### [`omit` fields needed by custom fields from query result](#omit-fields-needed-by-custom-fields-from-query-result)
 

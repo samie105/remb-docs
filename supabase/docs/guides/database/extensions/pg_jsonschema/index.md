@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:40.166Z"
 content_hash: "32408151b67ce7ab64fd370aadabb5c1c713d892c63b8881bbfed1fd23437ec0"
 menu_path: ["Database","Database","Extensions","Extensions","pg_jsonschema: JSON Schema Validation","pg_jsonschema: JSON Schema Validation"]
 section_path: ["Database","Database","Extensions","Extensions","pg_jsonschema: JSON Schema Validation","pg_jsonschema: JSON Schema Validation"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_hashids/index.md", "title": "pg_hashids: Short UIDs"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pg_net/index.md", "title": "pg_net: Async Networking"}
+nav_prev: {"path": "../pg_hashids/index.md", "title": "pg_hashids: Short UIDs"}
+nav_next: {"path": "../pg_net/index.md", "title": "pg_net: Async Networking"}
 ---
 
 # 

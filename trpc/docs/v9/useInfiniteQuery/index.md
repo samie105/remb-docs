@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:20.329Z"
 content_hash: "9b2edc9bdce46e9f7de01ff1069ce9929521c00aae57a602c9694aaebb716051"
 menu_path: ["useInfiniteQuery"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/subscriptions/index.md", "title": "Subscriptions / WebSockets"}
-nav_next: {"path": "trpc/docs/v9/vanilla/index.md", "title": "Vanilla client"}
+nav_prev: {"path": "../subscriptions/index.md", "title": "Subscriptions / WebSockets"}
+nav_next: {"path": "../vanilla/index.md", "title": "Vanilla client"}
 ---
 
 info

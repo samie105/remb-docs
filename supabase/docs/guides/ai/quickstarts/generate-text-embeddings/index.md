@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:12.503Z"
 content_hash: "c72248b0e34f450bbf56263f55be78440feabb5bb70e29070a31299b40b5919f"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Generate Embeddings","Generate Embeddings"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Generate Embeddings","Generate Embeddings"]
-nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/face-similarity/index.md", "title": "Face similarity search"}
-nav_next: {"path": "supabase/docs/guides/ai/quickstarts/hello-world/index.md", "title": "Creating and managing collections"}
+nav_prev: {"path": "../face-similarity/index.md", "title": "Face similarity search"}
+nav_next: {"path": "../hello-world/index.md", "title": "Creating and managing collections"}
 ---
 
 # 

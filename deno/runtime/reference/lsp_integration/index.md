@@ -10,8 +10,8 @@ content_hash: "da4f4d636e74ccfd499493ad566d60a3cf4e16b26a4477472f32b4a6c644d94c"
 menu_path: ["Language Server Integration"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/migration_guide/index.md", "title": "Deno 1.x to 2.x Migration Guide"}
-nav_next: {"path": "deno/runtime/reference/docker/index.md", "title": "Deno and Docker"}
+nav_prev: {"path": "../migration_guide/index.md", "title": "Deno 1.x to 2.x Migration Guide"}
+nav_next: {"path": "../docker/index.md", "title": "Deno and Docker"}
 ---
 
 **On this page**

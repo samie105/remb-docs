@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:56.813Z"
 content_hash: "a6f5bcef51e680ff0f602143a876ab6e66127fe1dfb47c66b0261a0aa72b4223"
 menu_path: ["Migrating from Jekyll"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-hugo/index.md", "title": "Migrating from Hugo"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/from-nextjs/index.md", "title": "Migrating from Next.js"}
+nav_prev: {"path": "../from-hugo/index.md", "title": "Migrating from Hugo"}
+nav_next: {"path": "../from-nextjs/index.md", "title": "Migrating from Next.js"}
 ---
 
 # Migrating from Jekyll

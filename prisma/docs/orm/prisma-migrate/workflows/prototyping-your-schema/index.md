@@ -11,15 +11,15 @@ menu_path: ["Prototyping your schema"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md", "title": "Patching & hotfixing"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/seeding/index.md", "title": "Seeding"}
+nav_prev: {"path": "../patching-and-hotfixing/index.md", "title": "Patching & hotfixing"}
+nav_next: {"path": "../seeding/index.md", "title": "Seeding"}
 ---
 
 Workflows
 
 Rapidly prototype your Prisma schema using db push without migrations
 
-The Prisma CLI has a dedicated command for prototyping schemas: [`db push`](prisma/docs/orm/reference/prisma-cli-reference/index.md#db-push)
+The Prisma CLI has a dedicated command for prototyping schemas: [`db push`](../../../reference/prisma-cli-reference/index.md#db-push)
 
 `db push` uses the same engine as Prisma Migrate to synchronize your Prisma schema with your database schema. The `db push` command:
 
@@ -35,16 +35,16 @@ The Prisma CLI has a dedicated command for prototyping schemas: [`db push`](pris
 -   You are prioritizing reaching a **desired end-state** and not the changes or steps executed to reach that end-state (there is no way to preview changes made by `db push`)
 -   You do not need to control how schema changes impact data. There is no way to orchestrate schema and data migrations—if `db push` anticipates that changes will result in data loss, you can either accept data loss with the `--accept-data-loss` option or stop the process. There is no way to customize the changes.
 
-See [Schema prototyping with `db push`](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md) for an example of how to use `db push` in this way.
+See [Schema prototyping with `db push`](index.md) for an example of how to use `db push` in this way.
 
 `db push` is **not recommended** if:
 
 -   You want to replicate your schema changes in other environments without losing data. You can use `db push` for prototyping, but you should use migrations to commit the schema changes and apply these in your other environments.
--   You want fine-grained control over how the schema changes are executed - for example, [renaming a column instead of dropping it and creating a new one](prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md#example-rename-a-field).
+-   You want fine-grained control over how the schema changes are executed - for example, [renaming a column instead of dropping it and creating a new one](../customizing-migrations/index.md#example-rename-a-field).
 -   You want to keep track of changes made to the database schema over time. `db push` does not create any artifacts that allow you to keep track of these changes.
 -   You want the schema changes to be reversible. You can use `db push` again to revert to the original state, but this might result in data loss.
 
-Yes, you can [use `db push` and Prisma Migrate together in your development workflow](prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md) . For example, you can:
+Yes, you can [use `db push` and Prisma Migrate together in your development workflow](index.md) . For example, you can:
 
 -   Use `db push` to prototype a schema at the start of a project and initialize a migration history when you are happy with the first draft
 -   Use `db push` to prototype a change to an existing schema, then run `prisma migrate dev` to generate a migration from your changes (you will be asked to reset)

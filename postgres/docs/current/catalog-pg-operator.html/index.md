@@ -10,8 +10,8 @@ content_hash: "68bdc2c0ba3ba9c1f7d8469d88cf7740f5e6907d2d72a3ae863a784887428d79"
 menu_path: ["PostgreSQL: Documentation: 18: 52.34. pg_operator"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/catalog-pg-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.32.\u00a0pg_namespace"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-policy.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.38.\u00a0pg_policy"}
+nav_prev: {"path": "../catalog-pg-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.32.\u00a0pg_namespace"}
+nav_next: {"path": "../catalog-pg-policy.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.38.\u00a0pg_policy"}
 ---
 
 The catalog `pg_operator` stores information about operators. See [CREATE OPERATOR](https://www.postgresql.org/docs/current/sql-createoperator.html "CREATE OPERATOR") and [Section 36.14](https://www.postgresql.org/docs/current/xoper.html "36.14. User-Defined Operators") for more information.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:55.664Z"
 content_hash: "cfca4698c52cb78b36fc477cb61e053caec15283a0ed6ab14ab81458dec4525a"
 menu_path: ["The path doesn't contain any locale"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/get-static-paths-required/index.md", "title": "getStaticPaths() function required for dynamic routes."}
-nav_next: {"path": "astro/en/reference/errors/i18n-not-enabled/index.md", "title": "i18n Not Enabled"}
+nav_prev: {"path": "../get-static-paths-required/index.md", "title": "getStaticPaths() function required for dynamic routes."}
+nav_next: {"path": "../i18n-not-enabled/index.md", "title": "i18n Not Enabled"}
 ---
 
 # The path doesn't contain any locale

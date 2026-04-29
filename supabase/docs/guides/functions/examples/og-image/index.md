@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:37.461Z"
 content_hash: "38bd6ed95e6410cee5e76e03b46be2274ae516776adff9f66af59dea75cb2404"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Generating OG images","Generating OG images"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Generating OG images","Generating OG images"]
-nav_prev: {"path": "supabase/docs/guides/functions/examples/mcp-server-mcp-lite/index.md", "title": "Building an MCP Server with mcp-lite"}
-nav_next: {"path": "supabase/docs/guides/functions/examples/push-notifications/index.md", "title": "Sending Push Notifications"}
+nav_prev: {"path": "../mcp-server-mcp-lite/index.md", "title": "Building an MCP Server with mcp-lite"}
+nav_next: {"path": "../push-notifications/index.md", "title": "Sending Push Notifications"}
 ---
 
 # 

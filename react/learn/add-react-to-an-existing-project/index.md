@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:33:17.802Z"
 content_hash: "07f238c8a7610e2be7edca5e6497e1641669a8e19ef71cbda65ad56f9a126097"
 menu_path: ["Add React to an Existing Project"]
 section_path: []
-nav_prev: {"path": "react/learn/build-a-react-app-from-scratch/index.md", "title": "Build a React app from Scratch"}
-nav_next: {"path": "react/learn/setup/index.md", "title": "Setup"}
+nav_prev: {"path": "../build-a-react-app-from-scratch/index.md", "title": "Build a React app from Scratch"}
+nav_next: {"path": "../setup/index.md", "title": "Setup"}
 ---
 
 If you want to add some interactivity to your existing project, you don’t have to rewrite it in React. Add React to your existing stack, and render interactive React components anywhere.
 
 ### Note
 
-**You need to install [Node.js](https://nodejs.org/en/) for local development.** Although you can [try React](react/learn/installation/index.md#try-react) online or with a simple HTML page, realistically most JavaScript tooling you’ll want to use for development requires Node.js.
+**You need to install [Node.js](https://nodejs.org/en/) for local development.** Although you can [try React](../installation/index.md#try-react) online or with a simple HTML page, realistically most JavaScript tooling you’ll want to use for development requires Node.js.
 
 ## Using React for an entire subroute of your existing website[](#using-react-for-an-entire-subroute-of-your-existing-website "Link for Using React for an entire subroute of your existing website ")
 
@@ -25,11 +25,11 @@ Let’s say you have an existing web app at `example.com` built with another ser
 
 Here’s how we recommend to set it up:
 
-1.  **Build the React part of your app** using one of the [React-based frameworks](react/learn/creating-a-react-app/index.md).
+1.  **Build the React part of your app** using one of the [React-based frameworks](../creating-a-react-app/index.md).
 2.  **Specify `/some-app` as the _base path_** in your framework’s configuration (here’s how: [Next.js](https://nextjs.org/docs/app/api-reference/config/next-config-js/basePath), [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
 3.  **Configure your server or a proxy** so that all requests under `/some-app/` are handled by your React app.
 
-This ensures the React part of your app can [benefit from the best practices](react/learn/build-a-react-app-from-scratch/index.md#consider-using-a-framework) baked into those frameworks.
+This ensures the React part of your app can [benefit from the best practices](../build-a-react-app-from-scratch/index.md#consider-using-a-framework) baked into those frameworks.
 
 Many React-based frameworks are full-stack and let your React app take advantage of the server. However, you can use the same approach even if you can’t or don’t want to run JavaScript on the server. In that case, serve the HTML/CSS/JS export ([`next export` output](https://nextjs.org/docs/advanced-features/static-html-export) for Next.js, default for Gatsby) at `/some-app/` instead.
 
@@ -39,7 +39,7 @@ Let’s say you have an existing page built with another technology (either a se
 
 You can do this in two steps:
 
-1.  **Set up a JavaScript environment** that lets you use the [JSX syntax](react/learn/writing-markup-with-jsx/index.md), split your code into modules with the [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) / [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) syntax, and use packages (for example, React) from the [npm](https://www.npmjs.com/) package registry.
+1.  **Set up a JavaScript environment** that lets you use the [JSX syntax](../writing-markup-with-jsx/index.md), split your code into modules with the [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) / [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) syntax, and use packages (for example, React) from the [npm](https://www.npmjs.com/) package registry.
 2.  **Render your React components** where you want to see them on the page.
 
 The exact approach depends on your existing page setup, so let’s walk through some details.
@@ -91,7 +91,7 @@ This lets you find that HTML element with [`document.getElementById`](https://de
 
 Notice how the original HTML content from `index.html` is preserved, but your own `NavigationBar` React component now appears inside the `<nav id="navigation">` from your HTML. Read the [`createRoot` usage documentation](https://react.dev/reference/react-dom/client/createRoot#rendering-a-page-partially-built-with-react) to learn more about rendering React components inside an existing HTML page.
 
-When you adopt React in an existing project, it’s common to start with small interactive components (like buttons), and then gradually keep “moving upwards” until eventually your entire page is built with React. If you ever reach that point, we recommend migrating to [a React framework](react/learn/creating-a-react-app/index.md) right after to get the most out of React.
+When you adopt React in an existing project, it’s common to start with small interactive components (like buttons), and then gradually keep “moving upwards” until eventually your entire page is built with React. If you ever reach that point, we recommend migrating to [a React framework](../creating-a-react-app/index.md) right after to get the most out of React.
 
 ## Using React Native in an existing native mobile app[](#using-react-native-in-an-existing-native-mobile-app "Link for Using React Native in an existing native mobile app ")
 

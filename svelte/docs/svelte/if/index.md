@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:35:33.036Z"
 content_hash: "730707bf29c7a72ec6ffb17221445f7c0169e86c32ac7052311f29b13a65aac7"
 menu_path: ["{#if ...}"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/basic-markup/index.md", "title": "Basic markup"}
+nav_prev: {"path": "../basic-markup/index.md", "title": "Basic markup"}
 nav_next: {"path": "svelte/docs/svelte/each/index.md", "title": "{#each ...}"}
 ---
 

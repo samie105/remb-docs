@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:50:57.199Z"
 content_hash: "68ee47958ee527ff832a7b113c8106cbd571c41ac0e50771713e6ec919f6590c"
 menu_path: ["WebSockets"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/validators/index.md", "title": "Input & Output Validators"}
-nav_next: {"path": "trpc/docs/test/index.md", "title": "Test"}
+nav_prev: {"path": "../validators/index.md", "title": "Input & Output Validators"}
+nav_next: {"path": "../../test/index.md", "title": "Test"}
 ---
 
-You can use WebSockets for all or some of the communication with your server, see [wsLink](trpc/docs/client/links/wsLink/index.md) for how to set it up on the client.
+You can use WebSockets for all or some of the communication with your server, see [wsLink](../../client/links/wsLink/index.md) for how to set it up on the client.
 
 tip
 
-The document here outlines the specific details of using WebSockets. For general usage of subscriptions, see [our subscriptions guide](trpc/docs/server/subscriptions/index.md).
+The document here outlines the specific details of using WebSockets. For general usage of subscriptions, see [our subscriptions guide](../subscriptions/index.md).
 
 ### Creating a WebSocket-server[​](#creating-a-websocket-server "Direct link to Creating a WebSocket-server")
 
@@ -97,7 +97,7 @@ ts
 
 tip
 
-You can use [Links](trpc/docs/client/links/index.md) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
+You can use [Links](../../client/links/index.md) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
 
 client.ts
 
@@ -416,7 +416,7 @@ ts
 
 ## Errors[​](#errors "Direct link to Errors")
 
-See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](trpc/docs/server/error-formatting/index.md).
+See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](../error-formatting/index.md).
 
 ## Notifications from Server to Client[​](#notifications-from-server-to-client "Direct link to Notifications from Server to Client")
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:20.591Z"
 content_hash: "5d8a0ee05fea36803f341d1776cee0be23b0984819704311ffd032d570129740"
 menu_path: ["Type Alias: TRPCClient<TRouter>"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/LocalLinkOptions/index.md", "title": "Type Alias: LocalLinkOptions<TRouter>"}
-nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCClientErrorLike/index.md", "title": "Type Alias: TRPCClientErrorLike<TInferrable>"}
+nav_prev: {"path": "../LocalLinkOptions/index.md", "title": "Type Alias: LocalLinkOptions<TRouter>"}
+nav_next: {"path": "../TRPCClientErrorLike/index.md", "title": "Type Alias: TRPCClientErrorLike<TInferrable>"}
 ---
 
 > **TRPCClient**<`TRouter`\>: `DecoratedProcedureRecord`<{ `errorShape`: `TRouter`\[`"_def"`\]\[`"_config"`\]\[`"$types"`\]\[`"errorShape"`\]; `transformer`: `TRouter`\[`"_def"`\]\[`"_config"`\]\[`"$types"`\]\[`"transformer"`\]; }, `TRouter`\[`"_def"`\]\[`"record"`\]> & `object`
@@ -21,7 +21,7 @@ Defined in: [packages/client/src/createTRPCClient.ts:40](https://github.com/trpc
 
 ### \[untypedClientSymbol\][​](#untypedclientsymbol "Direct link to [untypedClientSymbol]")
 
-> **\[untypedClientSymbol\]**: [`TRPCUntypedClient`](trpc/docs/typedoc/client/index/classes/TRPCUntypedClient/index.md)<`TRouter`\>
+> **\[untypedClientSymbol\]**: [`TRPCUntypedClient`](../../classes/TRPCUntypedClient/index.md)<`TRouter`\>
 
 ## Type Parameters[​](#type-parameters "Direct link to Type Parameters")
 

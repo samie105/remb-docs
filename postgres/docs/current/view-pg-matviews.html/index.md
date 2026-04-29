@@ -10,8 +10,8 @@ content_hash: "6806127641b72a9223f2c2de18d71e13d6d63d85295a731c8f8cf60cc55fecd6"
 menu_path: ["PostgreSQL: Documentation: 18: 53.14. pg_matviews"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/view-pg-locks.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.13.\u00a0pg_locks"}
-nav_next: {"path": "postgres/docs/current/view-pg-policies.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.15.\u00a0pg_policies"}
+nav_prev: {"path": "../view-pg-locks.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.13.\u00a0pg_locks"}
+nav_next: {"path": "../view-pg-policies.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.15.\u00a0pg_policies"}
 ---
 
 The view `pg_matviews` provides access to useful information about each materialized view in the database.

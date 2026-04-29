@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:23.112Z"
 content_hash: "5dd8e1e73445c5e037fe442233c69aee1e0b9dec0d65d61f3a6ed1a96303c789"
 menu_path: ["Re-map import paths"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/timezone/index.md", "title": "Set a time zone in Bun"}
-nav_next: {"path": "bun/docs/guides/runtime/typescript/index.md", "title": "Install TypeScript declarations for Bun"}
+nav_prev: {"path": "../timezone/index.md", "title": "Set a time zone in Bun"}
+nav_next: {"path": "../typescript/index.md", "title": "Install TypeScript declarations for Bun"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:16.773Z"
 content_hash: "fefcaf36b80fedde03fe3ad37bfe80055a5ec009ef29290620620ac2ee14a559"
 menu_path: ["svelte/events"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-easing/index.md", "title": "svelte/easing"}
-nav_next: {"path": "svelte/docs/svelte/svelte-legacy/index.md", "title": "svelte/legacy"}
+nav_prev: {"path": "../svelte-easing/index.md", "title": "svelte/easing"}
+nav_next: {"path": "../svelte-legacy/index.md", "title": "svelte/legacy"}
 ---
 
 ```

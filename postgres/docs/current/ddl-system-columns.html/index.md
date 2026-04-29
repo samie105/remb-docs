@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:05.720Z"
 content_hash: "04cc97eb5d84447eead3e7d795d8a6bd45a6fb892b348ba05470f9869e3ba800"
 menu_path: ["PostgreSQL: Documentation: 18: 5.6. System Columns"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ddl-schemas.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.10.\u00a0Schemas"}
-nav_next: {"path": "postgres/docs/current/default-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: O.2.\u00a0Default Roles Renamed to Predefined Roles"}
+nav_prev: {"path": "../ddl-schemas.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.10.\u00a0Schemas"}
+nav_next: {"path": "../default-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: O.2.\u00a0Default Roles Renamed to Predefined Roles"}
 ---
 
 Every table has several _system columns_ that are implicitly defined by the system. Therefore, these names cannot be used as names of user-defined columns. (Note that these restrictions are separate from whether the name is a key word or not; quoting a name will not allow you to escape these restrictions.) You do not really need to be concerned about these columns; just know they exist.

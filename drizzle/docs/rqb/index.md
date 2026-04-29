@@ -10,8 +10,8 @@ content_hash: "2f71ac8ce640c73abc0f436f14badcbefe558e0978ef8392d4d5d4f5004421b3"
 menu_path: ["Drizzle Queries"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/sql/index.md", "title": "Magical sql operator \ud83e\ude84"}
-nav_next: {"path": "drizzle/docs/perf-queries/index.md", "title": "Query performance"}
+nav_prev: {"path": "../sql/index.md", "title": "Magical sql operator \ud83e\ude84"}
+nav_next: {"path": "../perf-queries/index.md", "title": "Query performance"}
 ---
 
 ## Drizzle Queries
@@ -130,7 +130,7 @@ const db = drizzle({ client: connection, schema, mode: 'planetscale' });
 
 ## Querying[](#querying)
 
-Relational queries are an extension to Drizzle’s original **[query builder](drizzle/docs/select/index.md)**. You need to provide all `tables` and `relations` from your schema file/files upon `drizzle()` initialization and then just use the `db._query` API.
+Relational queries are an extension to Drizzle’s original **[query builder](../select/index.md)**. You need to provide all `tables` and `relations` from your schema file/files upon `drizzle()` initialization and then just use the `db._query` API.
 
 ```ts
 import * as schema from './schema';
@@ -293,7 +293,7 @@ const post = await db._query.posts.findFirst({
 ```
 
 You can chain nested with statements as much as necessary.  
-For any nested `with` queries Drizzle will infer types using [Core Type API](drizzle/docs/goodies/index.md#type-api).
+For any nested `with` queries Drizzle will infer types using [Core Type API](../goodies/index.md#type-api).
 
 **Get all users with posts. Each post should contain a list of comments:**
 
@@ -406,7 +406,7 @@ const posts = await db._query.posts.findMany({
 
 ### Select filters[](#select-filters)
 
-Just like in our SQL-like query builder, relational queries API lets you define filters and conditions with the list of our **[`operators`](drizzle/docs/operators/index.md)**.
+Just like in our SQL-like query builder, relational queries API lets you define filters and conditions with the list of our **[`operators`](../operators/index.md)**.
 
 You can either import them from `drizzle-orm` or use from the callback syntax:
 
@@ -494,7 +494,7 @@ await db._query.posts.findMany({
 
 Drizzle provides API for ordering in the relational query builder.
 
-You can use same ordering **[core API](drizzle/docs/select/index.md#order-by)** or use `order by` operator from the callback with no imports.
+You can use same ordering **[core API](../select/index.md#order-by)** or use `order by` operator from the callback with no imports.
 
 ```typescript
 import { desc, asc } from 'drizzle-orm';
@@ -529,7 +529,7 @@ Relational query API lets you add custom additional fields. It’s useful when y
 
 IMPORTANT
 
-As of now aggregations are not supported in `extras`, please use **[`core queries`](drizzle/docs/select/index.md)** for that.
+As of now aggregations are not supported in `extras`, please use **[`core queries`](../select/index.md)** for that.
 
 ```typescript
 import { sql } from 'drizzle-orm';
@@ -628,7 +628,7 @@ const res: {
 
 ### Prepared statements[](#prepared-statements)
 
-Prepared statements are designed to massively improve query performance — [see here.](drizzle/docs/perf-queries/index.md)
+Prepared statements are designed to massively improve query performance — [see here.](../perf-queries/index.md)
 
 In this section, you can learn how to define placeholders and execute prepared statements using the Drizzle relational query builder.
 

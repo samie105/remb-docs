@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:26.365Z"
 content_hash: "090ef707953bd5ea638575cb202e67e7920a197b0e272fcc30a25ad910a6d6e2"
 menu_path: ["Use a backend service with Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/wordpress/index.md", "title": "Headless WordPress & Astro"}
-nav_next: {"path": "astro/en/guides/backend/appwrite/index.md", "title": "Appwrite & Astro"}
+nav_prev: {"path": "../cms/wordpress/index.md", "title": "Headless WordPress & Astro"}
+nav_next: {"path": "appwrite/index.md", "title": "Appwrite & Astro"}
 ---
 
 # Use a backend service with Astro

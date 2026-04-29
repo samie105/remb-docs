@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:37.000Z"
 content_hash: "5c1a89f9d81b1935b4999d72054f6a88de877c41fe8385504986ac6b4876b688"
 menu_path: ["@astrojs/\n\t\t\t\t\treact"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/preact/index.md", "title": "@astrojs/\n\t\t\t\t\tpreact"}
-nav_next: {"path": "astro/en/guides/integrations-guide/solid-js/index.md", "title": "@astrojs/\n\t\t\t\t\tsolid-js"}
+nav_prev: {"path": "../preact/index.md", "title": "@astrojs/\n\t\t\t\t\tpreact"}
+nav_next: {"path": "../solid-js/index.md", "title": "@astrojs/\n\t\t\t\t\tsolid-js"}
 ---
 
 # @astrojs/ react

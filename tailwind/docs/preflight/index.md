@@ -10,8 +10,8 @@ content_hash: "0f0278064b04d48b19d620091a2ae40c87850a91b060631fd52683777013b4f8"
 menu_path: ["Preflight"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/functions-and-directives/index.md", "title": "Functions and directives"}
-nav_next: {"path": "tailwind/docs/aspect-ratio/index.md", "title": "aspect-ratio"}
+nav_prev: {"path": "../functions-and-directives/index.md", "title": "Functions and directives"}
+nav_next: {"path": "../aspect-ratio/index.md", "title": "aspect-ratio"}
 ---
 
 An opinionated set of base styles for Tailwind projects.
@@ -71,7 +71,7 @@ The reason for this is two-fold:
 -   **It helps you avoid accidentally deviating from your type scale**. By default, browsers assign sizes to headings that don't exist in Tailwind's default type scale, and aren't guaranteed to exist in your own type scale.
 -   **In UI development, headings should often be visually de-emphasized**. Making headings unstyled by default means any styling you apply to headings happens consciously and deliberately.
 
-You can always add default header styles to your project by [adding your own base styles](tailwind/docs/adding-custom-styles/index.md#adding-base-styles).
+You can always add default header styles to your project by [adding your own base styles](../adding-custom-styles/index.md#adding-base-styles).
 
 ### [Lists are unstyled](#lists-are-unstyled)
 
@@ -81,13 +81,13 @@ Ordered and unordered lists are unstyled by default, with no bullets or numbers:
 ol,ul,menu {  list-style: none;}
 ```
 
-If you'd like to style a list, you can do so using the [list-style-type](tailwind/docs/list-style-type/index.md) and [list-style-position](tailwind/docs/list-style-position/index.md) utilities:
+If you'd like to style a list, you can do so using the [list-style-type](../list-style-type/index.md) and [list-style-position](../list-style-position/index.md) utilities:
 
 ```
 <ul class="list-inside list-disc">  <li>One</li>  <li>Two</li>  <li>Three</li></ul>
 ```
 
-You can always add default list styles to your project by [adding your own base styles](tailwind/docs/adding-custom-styles/index.md#adding-base-styles).
+You can always add default list styles to your project by [adding your own base styles](../adding-custom-styles/index.md#adding-base-styles).
 
 #### [Accessibility considerations](#accessibility-considerations)
 
@@ -143,7 +143,7 @@ If you'd like to add your own base styles on top of Preflight, add them to the `
 @layer base {  h1 {    font-size: var(--text-2xl);  }  h2 {    font-size: var(--text-xl);  }  h3 {    font-size: var(--text-lg);  }  a {    color: var(--color-blue-600);    text-decoration-line: underline;  }}
 ```
 
-Learn more in the [adding base styles documentation](tailwind/docs/adding-custom-styles/index.md#adding-base-styles).
+Learn more in the [adding base styles documentation](../adding-custom-styles/index.md#adding-base-styles).
 
 ## [Disabling Preflight](#disabling-preflight)
 

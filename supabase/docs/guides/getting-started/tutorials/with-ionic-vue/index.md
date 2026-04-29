@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:57.360Z"
 content_hash: "2c32a886e79fd712939584d6859bec2398d82bf3c8d9403805d9fbac4e014d0c"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Ionic Vue","Ionic Vue"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Ionic Vue","Ionic Vue"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-react/index.md", "title": "Build a User Management App with Ionic React"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
+nav_prev: {"path": "../with-ionic-react/index.md", "title": "Build a User Management App with Ionic React"}
+nav_next: {"path": "../with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
 ---
 
 # 

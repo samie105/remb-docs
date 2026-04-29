@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:02.056Z"
 content_hash: "946ba3bf6a03ece925a025ab57e888358b50e438a5c67aebdf827431c42e4323"
 menu_path: ["Experimental client prerendering"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/experimental-flags/route-caching/index.md", "title": "Experimental route caching"}
-nav_next: {"path": "astro/en/reference/experimental-flags/content-intellisense/index.md", "title": "Experimental Intellisense for content collections"}
+nav_prev: {"path": "../route-caching/index.md", "title": "Experimental route caching"}
+nav_next: {"path": "../content-intellisense/index.md", "title": "Experimental Intellisense for content collections"}
 ---
 
 # Experimental client prerendering

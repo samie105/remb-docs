@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:34:32.050Z"
 content_hash: "9653c13d4469e45216009acb4c922d5a72f56639b0021ead2842836aab01ef1d"
 menu_path: ["Fullstack dev server"]
 section_path: []
-nav_prev: {"path": "bun/docs/bundler/executables/index.md", "title": "Single-file executable"}
-nav_next: {"path": "bun/docs/bundler/hot-reloading/index.md", "title": "Hot reloading"}
+nav_prev: {"path": "../executables/index.md", "title": "Single-file executable"}
+nav_next: {"path": "../hot-reloading/index.md", "title": "Hot reloading"}
 ---
 
 # env = "inline"  # inline all environment variables
 # env = "disable" # disable env var replacement (default)
 ```
 
-See the [HTML & static sites documentation](bun/docs/bundler/html-static/index.md#inline-environment-variables) for more details on build-time configuration and examples.
+See the [HTML & static sites documentation](../html-static/index.md#inline-environment-variables) for more details on build-time configuration and examples.
 
 ## How It Works
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:26.416Z"
 content_hash: "f42fb15665b2d8d5bdfac7714ec081271e413d1280e9f054af369653480adb92"
 menu_path: ["Cloudinary & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/media/index.md", "title": "Image and video hosting with Astro"}
-nav_next: {"path": "astro/en/guides/media/mux/index.md", "title": "Mux & Astro"}
+nav_prev: {"path": "../index.md", "title": "Image and video hosting with Astro"}
+nav_next: {"path": "../mux/index.md", "title": "Mux & Astro"}
 ---
 
 # Cloudinary & Astro

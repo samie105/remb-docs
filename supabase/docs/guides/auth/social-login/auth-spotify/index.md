@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:50.788Z"
 content_hash: "3c9aff86e29a8cfad4cf22c59ea164e8521f7b8faff67881c9c8c8eab533cf5f"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Spotify","Spotify"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Spotify","Spotify"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-slack/index.md", "title": "Login with Slack"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-twitch/index.md", "title": "Login with Twitch"}
+nav_prev: {"path": "../auth-slack/index.md", "title": "Login with Slack"}
+nav_next: {"path": "../auth-twitch/index.md", "title": "Login with Twitch"}
 ---
 
 # 

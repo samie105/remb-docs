@@ -11,8 +11,8 @@ menu_path: ["serverExternalPackages"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/rewrites/index.md", "title": "rewrites"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/trailingSlash/index.md", "title": "trailingSlash"}
+nav_prev: {"path": "../rewrites/index.md", "title": "rewrites"}
+nav_next: {"path": "../trailingSlash/index.md", "title": "trailingSlash"}
 ---
 
 # serverExternalPackages

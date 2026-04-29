@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:17.438Z"
 content_hash: "dd0baf28d1d2879a31ff40b878e38cc98929031fedce1a89ca53f2822fdd6fb7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard"]
-nav_prev: {"path": "redis/docs/latest/develop/tools/redis-for-vscode/release-notes/index.md", "title": "Redis for VS Code release notes"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/dotnet/index.md", "title": "Redis leaderboard with .NET"}
+nav_prev: {"path": "../../tools/redis-for-vscode/release-notes/index.md", "title": "Redis for VS Code release notes"}
+nav_next: {"path": "dotnet/index.md", "title": "Redis leaderboard with .NET"}
 ---
 
 # Redis leaderboard

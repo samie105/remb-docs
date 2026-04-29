@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:00.428Z"
 content_hash: "51a014aa9fc0489e4fa01441f7d65678d4e067751edbd1667ccdac4fbc81e30a"
 menu_path: ["Imperative component API"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/lifecycle-hooks/index.md", "title": "Lifecycle hooks"}
-nav_next: {"path": "svelte/docs/svelte/hydratable/index.md", "title": "Hydratable data"}
+nav_prev: {"path": "../lifecycle-hooks/index.md", "title": "Lifecycle hooks"}
+nav_next: {"path": "../hydratable/index.md", "title": "Hydratable data"}
 ---
 
 Every Svelte application starts by imperatively creating a root component. On the client this component is mounted to a specific element. On the server, you want to get back a string of HTML instead which you can render. The following functions help you achieve those tasks.

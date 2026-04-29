@@ -10,8 +10,8 @@ content_hash: "82c4e1436c432e257fdbce65e233e62ebfeebad602f2aa091df68f17dffe33ba"
 menu_path: ["PostgreSQL: Documentation: 18: F.33. pgstattuple — obtain tuple-level statistics"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/pgstatstatements.html/index.md", "title": "PostgreSQL: Documentation: 18: F.32.\u00a0pg_stat_statements \u2014 track statistics of SQL planning and execution"}
-nav_next: {"path": "postgres/docs/current/pgsurgery.html/index.md", "title": "PostgreSQL: Documentation: 18: F.34.\u00a0pg_surgery \u2014 perform low-level surgery on relation data"}
+nav_prev: {"path": "../pgstatstatements.html/index.md", "title": "PostgreSQL: Documentation: 18: F.32.\u00a0pg_stat_statements \u2014 track statistics of SQL planning and execution"}
+nav_next: {"path": "../pgsurgery.html/index.md", "title": "PostgreSQL: Documentation: 18: F.34.\u00a0pg_surgery \u2014 perform low-level surgery on relation data"}
 ---
 
 The `pgstattuple` module provides various functions to obtain tuple-level statistics.

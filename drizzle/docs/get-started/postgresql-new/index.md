@@ -10,8 +10,8 @@ content_hash: "80b6d23219fd7f5eabe1a2af1a51886465b284d3a1cb4046fafa5f3b39139951"
 menu_path: ["Get Started with Drizzle and PostgreSQL"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/get-started/postgresql-existing/index.md", "title": "Get Started with Drizzle and PostgreSQL in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/singlestore-existing/index.md", "title": "Get Started with Drizzle and SingleStore in existing project"}
+nav_prev: {"path": "../postgresql-existing/index.md", "title": "Get Started with Drizzle and PostgreSQL in existing project"}
+nav_next: {"path": "../singlestore-existing/index.md", "title": "Get Started with Drizzle and SingleStore in existing project"}
 ---
 
 ## Get Started with Drizzle and PostgreSQL
@@ -24,7 +24,7 @@ This guide assumes familiarity with:
 
 Drizzle has native support for PostgreSQL connections with the `node-postgres` and `postgres.js` drivers.
 
-We will use `node-postgres` for this get started example. But if you want to find more ways to connect to postgresql check our [PostgreSQL Connection](drizzle/docs/get-started-postgresql/index.md) page
+We will use `node-postgres` for this get started example. But if you want to find more ways to connect to postgresql check our [PostgreSQL Connection](../../get-started-postgresql/index.md) page
 
 #### Basic file structure
 
@@ -73,7 +73,7 @@ tips
 
 If you don’t have a PostgreSQL database yet and want to create one for testing, you can use our guide on how to set up PostgreSQL in Docker.
 
-The PostgreSQL in Docker guide is available [here](drizzle/docs/guides/postgresql-local-setup/index.md). Go set it up, generate a database URL (explained in the guide), and come back for the next steps
+The PostgreSQL in Docker guide is available [here](../../guides/postgresql-local-setup/index.md). Go set it up, generate a database URL (explained in the guide), and come back for the next steps
 
 #### Step 3 - Connect Drizzle ORM to the database[](#step-3---connect-drizzle-orm-to-the-database)
 
@@ -133,7 +133,7 @@ export const usersTable = pgTable("users", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -159,7 +159,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](../../drizzle-kit-push/index.md).
 
 Tips
 
@@ -177,7 +177,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](../../kit-overview/index.md).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 

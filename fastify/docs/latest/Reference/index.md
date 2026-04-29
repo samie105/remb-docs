@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:05.111Z"
 content_hash: "688c7cc324dae69b1751ab7365a09a1508d131c8b48c539fe9f6d331747632e4"
 menu_path: ["Index"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/index.md", "title": "Index"}
-nav_next: {"path": "fastify/docs/latest/Guides/Benchmarking/index.md", "title": "Benchmarking"}
+nav_prev: {"path": "../Guides/index.md", "title": "Index"}
+nav_next: {"path": "../Guides/Benchmarking/index.md", "title": "Benchmarking"}
 ---
 
 Version: latest (v5.8.x)

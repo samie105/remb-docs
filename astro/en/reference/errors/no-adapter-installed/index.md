@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:00.447Z"
 content_hash: "d01ac6f7e05a5527ca22911c0a98ab260b3579f513b2f78a484b7bc91dc76ccd"
 menu_path: ["Cannot use Server-side Rendering without an adapter."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/no-adapter-installed-server-islands/index.md", "title": "Cannot use Server Islands without an adapter."}
-nav_next: {"path": "astro/en/reference/errors/no-client-entrypoint/index.md", "title": "No client entrypoint specified in renderer."}
+nav_prev: {"path": "../no-adapter-installed-server-islands/index.md", "title": "Cannot use Server Islands without an adapter."}
+nav_next: {"path": "../no-client-entrypoint/index.md", "title": "No client entrypoint specified in renderer."}
 ---
 
 # Cannot use Server-side Rendering without an adapter.

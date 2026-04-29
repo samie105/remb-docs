@@ -10,8 +10,8 @@ content_hash: "dbc576d5bdf6f5c50a3ac639fe3bef610006cc15a86f04fda59a0ef6b117029c"
 menu_path: ["deno update"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/uninstall/index.md", "title": "deno uninstall"}
-nav_next: {"path": "deno/runtime/reference/cli/upgrade/index.md", "title": "deno upgrade"}
+nav_prev: {"path": "../uninstall/index.md", "title": "deno uninstall"}
+nav_next: {"path": "../upgrade/index.md", "title": "deno upgrade"}
 ---
 
 **On this page**

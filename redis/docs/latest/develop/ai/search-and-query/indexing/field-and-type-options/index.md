@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:54.937Z"
 content_hash: "3f068b0c0ea67f4ce47fc91a89e44c913bd65929de01738d5256cea06eb1c2cb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Field and type options","→","Field and type options"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Field and type options","→","Field and type options"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/index.md", "title": "Indexing"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/geoindex/index.md", "title": "Geospatial indexing"}
+nav_prev: {"path": "../index.md", "title": "Indexing"}
+nav_next: {"path": "../geoindex/index.md", "title": "Geospatial indexing"}
 ---
 
 # Field and type options

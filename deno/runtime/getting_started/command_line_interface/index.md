@@ -10,8 +10,8 @@ content_hash: "ed65dd60caccc4669b1660880b7f64554e3ed2834e479f0bb94d54afbe18a52a"
 menu_path: ["Command line interface"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/getting_started/setup_your_environment/index.md", "title": "Set up your environment"}
-nav_next: {"path": "deno/runtime/fundamentals/typescript/index.md", "title": "TypeScript support"}
+nav_prev: {"path": "../setup_your_environment/index.md", "title": "Set up your environment"}
+nav_next: {"path": "../../fundamentals/typescript/index.md", "title": "TypeScript support"}
 ---
 
 # Good. We grant net permission to net_client.ts.

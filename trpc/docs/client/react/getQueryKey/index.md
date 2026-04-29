@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:31.873Z"
 content_hash: "9f234ca858691e45cacb100f409af313820aae43b2e255d21ff35f4a82b79450"
 menu_path: ["getQueryKey"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/react/disabling-queries/index.md", "title": "Disabling Queries"}
-nav_next: {"path": "trpc/docs/client/react/infer-types/index.md", "title": "Inferring Types"}
+nav_prev: {"path": "../disabling-queries/index.md", "title": "Disabling Queries"}
+nav_next: {"path": "../infer-types/index.md", "title": "Inferring Types"}
 ---
 
 We provide a getQueryKey helper that accepts a `router` or `procedure` so that you can easily provide the native function the correct query key.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:06.579Z"
 content_hash: "c9f4ac1deb49f2150416aea958d1c7d9568eba3125af853516259f7a0a669f56"
 menu_path: ["svelte"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/faq/index.md", "title": "Frequently asked questions"}
-nav_next: {"path": "svelte/docs/svelte/svelte-action/index.md", "title": "svelte/action"}
+nav_prev: {"path": "../faq/index.md", "title": "Frequently asked questions"}
+nav_next: {"path": "../svelte-action/index.md", "title": "svelte/action"}
 ---
 
 ```
@@ -185,13 +185,13 @@ The custom element version of the component. Only present if compiled with the `
 constructor(options: ComponentConstructorOptions<Properties<Props, Slots>>);
 ```
 
-*   deprecated This constructor only exists when using the `asClassComponent` compatibility helper, which is a stop-gap solution. Migrate towards using `mount` instead. See [migration guide](svelte/docs/svelte/v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
+*   deprecated This constructor only exists when using the `asClassComponent` compatibility helper, which is a stop-gap solution. Migrate towards using `mount` instead. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
 
 ```
 $destroy(): void;
 ```
 
-*   deprecated This method only exists when using one of the legacy compatibility helpers, which is a stop-gap solution. See [migration guide](svelte/docs/svelte/v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
+*   deprecated This method only exists when using one of the legacy compatibility helpers, which is a stop-gap solution. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
 
 ```
 $on<K extends Extract<keyof Events, string>>(
@@ -200,13 +200,13 @@ $on<K extends Extract<keyof Events, string>>(
 ): () => void;
 ```
 
-*   deprecated This method only exists when using one of the legacy compatibility helpers, which is a stop-gap solution. See [migration guide](svelte/docs/svelte/v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
+*   deprecated This method only exists when using one of the legacy compatibility helpers, which is a stop-gap solution. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
 
 ```
 $set(props: Partial<Props>): void;
 ```
 
-*   deprecated This method only exists when using one of the legacy compatibility helpers, which is a stop-gap solution. See [migration guide](svelte/docs/svelte/v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
+*   deprecated This method only exists when using one of the legacy compatibility helpers, which is a stop-gap solution. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
 
 ## SvelteComponentTyped[](#SvelteComponentTyped)
 
@@ -627,13 +627,13 @@ interface Component<
 ): {
 	/**
 	 * @deprecated This method only exists when using one of the legacy compatibility helpers, which
-	 * is a stop-gap solution. See [migration guide](svelte/docs/svelte/v5-migration-guide/index.md#Components-are-no-longer-classes)
+	 * is a stop-gap solution. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes)
 	 * for more info.
 	 */
 	$on?(type: string, callback: (e: any) => void): () => void;
 	/**
 	 * @deprecated This method only exists when using one of the legacy compatibility helpers, which
-	 * is a stop-gap solution. See [migration guide](svelte/docs/svelte/v5-migration-guide/index.md#Components-are-no-longer-classes)
+	 * is a stop-gap solution. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes)
 	 * for more info.
 	 */
 	$set?(props: Partial<Props>): void;

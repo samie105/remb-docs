@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:16.033Z"
 content_hash: "5029b2e8d505283a04a2624d9c163df5b8b20f3487c5935bc5c26a726436f647"
 menu_path: ["export let"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/legacy-reactive-assignments/index.md", "title": "Reactive $: statements"}
-nav_next: {"path": "svelte/docs/svelte/legacy-$$props-and-$$restProps/index.md", "title": "$$props and $$restProps"}
+nav_prev: {"path": "../legacy-reactive-assignments/index.md", "title": "Reactive $: statements"}
+nav_next: {"path": "../legacy-$$props-and-$$restProps/index.md", "title": "$$props and $$restProps"}
 ---
 
 In runes mode, [component props](basic-markup#Component-props) are declared with the [`$props`]($props) rune, allowing parent components to pass in data.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:23.991Z"
 content_hash: "47e45c07c7bd79b4a4891aa861a57158e1627456f9eb550cdc0405aa88073bf4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Set up Redis for Bedrock","→","Set up Redis for Bedrock"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Set up Redis for Bedrock","→","Set up Redis for Bedrock"]
-nav_prev: {"path": "redis/docs/latest/integrate/amazon-bedrock/create-knowledge-base/index.md", "title": "Create a Bedrock knowledge base"}
-nav_next: {"path": "redis/docs/latest/integrate/confluent-with-redis-cloud/index.md", "title": "Confluent with Redis Cloud"}
+nav_prev: {"path": "../create-knowledge-base/index.md", "title": "Create a Bedrock knowledge base"}
+nav_next: {"path": "../../confluent-with-redis-cloud/index.md", "title": "Confluent with Redis Cloud"}
 ---
 
 # Set up Redis for Bedrock

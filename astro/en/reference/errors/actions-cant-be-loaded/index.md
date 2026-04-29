@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:21.015Z"
 content_hash: "3ad418530dd50c249fcd6f9a92a6c0c22247491e533e62031331c893338cc668"
 menu_path: ["Can't load the Astro actions."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/action-query-string-invalid-error/index.md", "title": "An invalid Action query string was passed by a form."}
-nav_next: {"path": "astro/en/reference/errors/actions-returned-invalid-data-error/index.md", "title": "Action handler returned invalid data."}
+nav_prev: {"path": "../action-query-string-invalid-error/index.md", "title": "An invalid Action query string was passed by a form."}
+nav_next: {"path": "../actions-returned-invalid-data-error/index.md", "title": "Action handler returned invalid data."}
 ---
 
 # Can't load the Astro actions.

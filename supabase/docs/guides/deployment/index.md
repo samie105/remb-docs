@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:06.824Z"
 content_hash: "d8bd30c40928b47a4216aae6a3c6d51c44986c09c2b8284334af5fd73735f612"
 menu_path: ["Deployment & Branching","Deployment & Branching","Overview","Overview"]
 section_path: ["Deployment & Branching","Deployment & Branching","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/database/webhooks/index.md", "title": "Database Webhooks"}
-nav_next: {"path": "supabase/docs/guides/deployment/branching/index.md", "title": "Branching"}
+nav_prev: {"path": "../database/webhooks/index.md", "title": "Database Webhooks"}
+nav_next: {"path": "branching/index.md", "title": "Branching"}
 ---
 
 # 

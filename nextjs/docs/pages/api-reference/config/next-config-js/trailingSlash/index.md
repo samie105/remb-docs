@@ -11,8 +11,8 @@ menu_path: ["trailingSlash"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/transpilePackages/index.md", "title": "transpilePackages"}
+nav_prev: {"path": "../serverExternalPackages/index.md", "title": "serverExternalPackages"}
+nav_next: {"path": "../transpilePackages/index.md", "title": "transpilePackages"}
 ---
 
 # trailingSlash

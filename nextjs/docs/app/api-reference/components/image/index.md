@@ -11,8 +11,8 @@ menu_path: ["Image Component"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/components/form/index.md", "title": "Form Component"}
-nav_next: {"path": "nextjs/docs/app/api-reference/components/link/index.md", "title": "Link Component"}
+nav_prev: {"path": "../form/index.md", "title": "Form Component"}
+nav_next: {"path": "../link/index.md", "title": "Link Component"}
 ---
 
 # Image Component

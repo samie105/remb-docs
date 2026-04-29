@@ -11,8 +11,8 @@ menu_path: ["Custom Webpack Config"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/viewTransition/index.md", "title": "viewTransition"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
+nav_prev: {"path": "../viewTransition/index.md", "title": "viewTransition"}
+nav_next: {"path": "../webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
 ---
 
 # Custom Webpack Config

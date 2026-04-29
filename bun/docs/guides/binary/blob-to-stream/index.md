@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:48.422Z"
 content_hash: "2f55797756fbd9724adde300e040772ed0f0aace1fb81ffc2510a45e62c77fd1"
 menu_path: ["Convert a Blob to a ReadableStream"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/blob-to-dataview/index.md", "title": "Convert a Blob to a DataView"}
-nav_next: {"path": "bun/docs/guides/binary/blob-to-string/index.md", "title": "Convert a Blob to a string"}
+nav_prev: {"path": "../blob-to-dataview/index.md", "title": "Convert a Blob to a DataView"}
+nav_next: {"path": "../blob-to-string/index.md", "title": "Convert a Blob to a string"}
 ---
 
 [Skip to main content](#content-area)

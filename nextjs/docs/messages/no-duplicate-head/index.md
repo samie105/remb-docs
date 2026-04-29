@@ -11,8 +11,8 @@ menu_path: ["No Duplicate Head"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/no-document-import-in-page/index.md", "title": "No Document Import in Page"}
-nav_next: {"path": "nextjs/docs/messages/no-head-element/index.md", "title": "No Head Element"}
+nav_prev: {"path": "../no-document-import-in-page/index.md", "title": "No Document Import in Page"}
+nav_next: {"path": "../no-head-element/index.md", "title": "No Head Element"}
 ---
 
 # No Duplicate Head

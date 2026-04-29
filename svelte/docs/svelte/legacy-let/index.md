@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:02.670Z"
 content_hash: "042d474c91cecb73e9775295b485c43b2dcc58a3949b210e6c3bd0b775b6da4c"
 menu_path: ["Reactive let/var declarations"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/legacy-overview/index.md", "title": "Overview"}
-nav_next: {"path": "svelte/docs/svelte/legacy-reactive-assignments/index.md", "title": "Reactive $: statements"}
+nav_prev: {"path": "../legacy-overview/index.md", "title": "Overview"}
+nav_next: {"path": "../legacy-reactive-assignments/index.md", "title": "Reactive $: statements"}
 ---
 
 In runes mode, reactive state is explicitly declared with the [`$state` rune]($state).

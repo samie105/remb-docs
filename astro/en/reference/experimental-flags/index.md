@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:59.018Z"
 content_hash: "ec15797969d55f72663aa0002787b389462e28a02f15bc16c33110a179079bec"
 menu_path: ["Configuring experimental flags"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/programmatic-reference/index.md", "title": "Programmatic Astro API (experimental)"}
-nav_next: {"path": "astro/en/reference/experimental-flags/route-caching/index.md", "title": "Experimental route caching"}
+nav_prev: {"path": "../programmatic-reference/index.md", "title": "Programmatic Astro API (experimental)"}
+nav_next: {"path": "route-caching/index.md", "title": "Experimental route caching"}
 ---
 
 # Configuring experimental flags

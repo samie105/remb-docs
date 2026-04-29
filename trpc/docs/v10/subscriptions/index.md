@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:34.121Z"
 content_hash: "fd1dc368ff63b18c49f795c4c7db0513af1909f8ac36c1dc6c56af5c65603ea3"
 menu_path: ["Subscriptions / WebSockets"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/validators/index.md", "title": "Input & Output Validators"}
-nav_next: {"path": "trpc/docs/v10/videos-and-community-resources/index.md", "title": "Videos and Community Resources"}
+nav_prev: {"path": "../server/validators/index.md", "title": "Input & Output Validators"}
+nav_next: {"path": "../videos-and-community-resources/index.md", "title": "Videos and Community Resources"}
 ---
 
 ## Using Subscriptions[​](#using-subscriptions "Direct link to Using Subscriptions")
@@ -152,7 +152,7 @@ ts
 
 tip
 
-You can use [Links](trpc/docs/v10/client/links/index.md) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
+You can use [Links](../client/links/index.md) to route queries and/or mutations to HTTP transport and subscriptions over WebSockets.
 
 client.ts
 
@@ -321,7 +321,7 @@ ts
 
 ## Errors[​](#errors "Direct link to Errors")
 
-See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](trpc/docs/v10/server/error-formatting/index.md).
+See [https://www.jsonrpc.org/specification#error\_object](https://www.jsonrpc.org/specification#error_object) or [Error Formatting](../server/error-formatting/index.md).
 
 ## Notifications from Server to Client[​](#notifications-from-server-to-client "Direct link to Notifications from Server to Client")
 

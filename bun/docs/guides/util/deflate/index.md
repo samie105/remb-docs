@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:44.528Z"
 content_hash: "babda58994a1221d61e08a737b113ddde8ddfea756825b185fc53ea47407f0e3"
 menu_path: ["Compress and decompress data with DEFLATE"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/deep-equals/index.md", "title": "Check if two objects are deeply equal"}
-nav_next: {"path": "bun/docs/guides/util/detect-bun/index.md", "title": "Detect when code is executed with Bun"}
+nav_prev: {"path": "../deep-equals/index.md", "title": "Check if two objects are deeply equal"}
+nav_next: {"path": "../detect-bun/index.md", "title": "Detect when code is executed with Bun"}
 ---
 
 [Skip to main content](#content-area)

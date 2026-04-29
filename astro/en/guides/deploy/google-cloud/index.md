@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:19.457Z"
 content_hash: "00c21a8dd532791443c0fd2c97682ace45808ed037c3c046ca2ff9281ec50690"
 menu_path: ["Deploy your Astro Site to Google Cloud"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/gitlab/index.md", "title": "Deploy your Astro Site to GitLab Pages"}
-nav_next: {"path": "astro/en/guides/deploy/heroku/index.md", "title": "Deploy your Astro Site to Heroku"}
+nav_prev: {"path": "../gitlab/index.md", "title": "Deploy your Astro Site to GitLab Pages"}
+nav_next: {"path": "../heroku/index.md", "title": "Deploy your Astro Site to Heroku"}
 ---
 
 # Deploy your Astro Site to Google Cloud

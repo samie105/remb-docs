@@ -10,8 +10,8 @@ content_hash: "8ecaae98763bd58f9d5bfab9a844f1a698533fb0600de4a56bd42f2fb126c819"
 menu_path: ["404Sorry, couldn’t find that page."]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/web/streams/index.md", "title": "Streams - Web documentation"}
-nav_next: {"path": "deno/api/web/url/index.md", "title": "URL - Web documentation"}
+nav_prev: {"path": "../streams/index.md", "title": "Streams - Web documentation"}
+nav_next: {"path": "../url/index.md", "title": "URL - Web documentation"}
 ---
 
 [Skip to main content](#content)

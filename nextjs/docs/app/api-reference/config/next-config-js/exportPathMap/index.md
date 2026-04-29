@@ -11,8 +11,8 @@ menu_path: ["exportPathMap"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/expireTime/index.md", "title": "expireTime"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateBuildId/index.md", "title": "generateBuildId"}
+nav_prev: {"path": "../expireTime/index.md", "title": "expireTime"}
+nav_next: {"path": "../generateBuildId/index.md", "title": "generateBuildId"}
 ---
 
 # exportPathMap

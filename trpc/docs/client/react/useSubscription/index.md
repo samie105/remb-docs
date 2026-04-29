@@ -9,11 +9,11 @@ last_crawled_at: "2026-04-18T16:47:17.546Z"
 content_hash: "35807a4ec34bc661d8d7f3f106c09ca333229869a0c244819b9e3d7924434162"
 menu_path: ["useSubscription()"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/react/useQuery/index.md", "title": "useQuery()"}
-nav_next: {"path": "trpc/docs/client/react/useUtils/index.md", "title": "useUtils"}
+nav_prev: {"path": "../useQuery/index.md", "title": "useQuery()"}
+nav_next: {"path": "../useUtils/index.md", "title": "useUtils"}
 ---
 
-The `useSubscription` hook can be used to subscribe to a [subscription](trpc/docs/server/subscriptions/index.md) procedure on the server.
+The `useSubscription` hook can be used to subscribe to a [subscription](../../../server/subscriptions/index.md) procedure on the server.
 
 ## Signature[​](#signature "Direct link to Signature")
 

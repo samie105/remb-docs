@@ -11,8 +11,8 @@ menu_path: ["Runtime Integration"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/implementing-ppr-in-an-adapter/index.md", "title": "Implementing PPR in an Adapter"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/invoking-entrypoints/index.md", "title": "Invoking Entrypoints"}
+nav_prev: {"path": "../implementing-ppr-in-an-adapter/index.md", "title": "Implementing PPR in an Adapter"}
+nav_next: {"path": "../invoking-entrypoints/index.md", "title": "Invoking Entrypoints"}
 ---
 
 # Runtime Integration

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:22.758Z"
 content_hash: "6dda9670f6511f46d4f0af18edfcdebe958c37f2ac2b4c34369b6315d6a6979c"
 menu_path: ["Add dynamic content about you"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/2-pages/2/index.md", "title": "Write your first Markdown blog post"}
-nav_next: {"path": "astro/en/tutorial/2-pages/4/index.md", "title": "Style your About page"}
+nav_prev: {"path": "../2/index.md", "title": "Write your first Markdown blog post"}
+nav_next: {"path": "../4/index.md", "title": "Style your About page"}
 ---
 
 # Add dynamic content about you

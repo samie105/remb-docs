@@ -10,8 +10,8 @@ content_hash: "8c8cede6c31cb6fcd2b6b5bc81a940531cbfc8ee8564a38d14e5f70b386295f9"
 menu_path: ["Drizzle with Nile Database"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
-nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
+nav_prev: {"path": "../drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
+nav_next: {"path": "../drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
 ---
 
 # create a tenant

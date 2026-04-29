@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:02.255Z"
 content_hash: "86411297f959469829e8f56f18c62e9f436e084a2eaf92fbfad5a0e99315198f"
 menu_path: ["AWS Lambda + API Gateway Adapter"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/adapters/index.md", "title": "Overview"}
-nav_next: {"path": "trpc/docs/server/adapters/express/index.md", "title": "Express Adapter"}
+nav_prev: {"path": "../index.md", "title": "Overview"}
+nav_next: {"path": "../express/index.md", "title": "Express Adapter"}
 ---
 
 ## AWS Lambda adapter[​](#aws-lambda-adapter "Direct link to AWS Lambda adapter")

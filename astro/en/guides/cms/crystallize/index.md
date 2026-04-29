@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:49.138Z"
 content_hash: "4192d9a32d9508b3aee7e603e259e8f8005ae4e1c57ec4193402e108c5351c25"
 menu_path: ["Crystallize & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/craft-cross-cms/index.md", "title": "Craft Cross CMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/datocms/index.md", "title": "DatoCMS & Astro"}
+nav_prev: {"path": "../craft-cross-cms/index.md", "title": "Craft Cross CMS & Astro"}
+nav_next: {"path": "../datocms/index.md", "title": "DatoCMS & Astro"}
 ---
 
 # Crystallize & Astro

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:00.600Z"
 content_hash: "671a3301fb5d4f47666b1e813da6110dc422abd36717a3a1fef432ff3299c6ec"
 menu_path: ["Configuration overview"]
 section_path: []
-nav_prev: {"path": "astro/en/develop-and-build/index.md", "title": "Develop and build"}
-nav_next: {"path": "astro/en/editor-setup/index.md", "title": "Editor setup"}
+nav_prev: {"path": "../../develop-and-build/index.md", "title": "Develop and build"}
+nav_next: {"path": "../../editor-setup/index.md", "title": "Editor setup"}
 ---
 
 # Configuration overview

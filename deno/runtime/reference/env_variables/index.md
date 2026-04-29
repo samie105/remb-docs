@@ -10,8 +10,8 @@ content_hash: "4e5e62fd155b5482f97475677da3d885472a25000dfd7fe2554cc2e16f89225c"
 menu_path: ["Environment variables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/continuous_integration/index.md", "title": "Continuous integration"}
-nav_next: {"path": "deno/runtime/reference/vscode/index.md", "title": "Deno & Visual Studio Code"}
+nav_prev: {"path": "../continuous_integration/index.md", "title": "Continuous integration"}
+nav_next: {"path": "../vscode/index.md", "title": "Deno & Visual Studio Code"}
 ---
 
 **On this page**

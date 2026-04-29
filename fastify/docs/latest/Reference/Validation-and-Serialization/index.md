@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:51.393Z"
 content_hash: "ae3a2c6e250fceabf7a6401266bbde906e061e5ac710f45c83f34e1891f5887c"
 menu_path: ["Validation-and-Serialization"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/TypeScript/index.md", "title": "TypeScript"}
-nav_next: {"path": "fastify/docs/latest/Reference/Warnings/index.md", "title": "Warnings"}
+nav_prev: {"path": "../TypeScript/index.md", "title": "TypeScript"}
+nav_next: {"path": "../Warnings/index.md", "title": "Warnings"}
 ---
 
 Version: latest (v5.8.x)

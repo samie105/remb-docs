@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:27.436Z"
 content_hash: "7710cadbacf0bb14ece707034d3fcdf3f45a4a9dc27e1156868ca96771fabc6c"
 menu_path: ["CloudCannon & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/caisy/index.md", "title": "Caisy & Astro"}
-nav_next: {"path": "astro/en/guides/cms/contentful/index.md", "title": "Contentful & Astro"}
+nav_prev: {"path": "../caisy/index.md", "title": "Caisy & Astro"}
+nav_next: {"path": "../contentful/index.md", "title": "Contentful & Astro"}
 ---
 
 # CloudCannon & Astro

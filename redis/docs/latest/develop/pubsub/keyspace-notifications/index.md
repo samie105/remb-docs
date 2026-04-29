@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:20.371Z"
 content_hash: "f10a862eb9ad09f78914a455e60bc9c15f49985e007f7670040312566e83036e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis Pub/sub","→","Redis Pub/sub","→\n      \n        Redis keyspace notifications","→","Redis keyspace notifications"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis Pub/sub","→","Redis Pub/sub","→\n      \n        Redis keyspace notifications","→","Redis keyspace notifications"]
-nav_prev: {"path": "redis/docs/latest/develop/programmability/lua-debugging/index.md", "title": "Debugging Lua scripts in Redis"}
-nav_next: {"path": "redis/docs/latest/develop/reference/client-side-caching/index.md", "title": "Client-side caching reference"}
+nav_prev: {"path": "../../programmability/lua-debugging/index.md", "title": "Debugging Lua scripts in Redis"}
+nav_next: {"path": "../../reference/client-side-caching/index.md", "title": "Client-side caching reference"}
 ---
 
 # Redis keyspace notifications

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:33:14.753Z"
 content_hash: "fd9437380c2edc4e4e54aa00dc143ab7f14424dff020315393a2c7f09c66dea3"
 menu_path: ["Static Site Generation"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/nextjs/setup/index.md", "title": "Set up with Next.js"}
-nav_next: {"path": "trpc/docs/v10/client/nextjs/ssr/index.md", "title": "Server-Side Rendering"}
+nav_prev: {"path": "../setup/index.md", "title": "Set up with Next.js"}
+nav_next: {"path": "../ssr/index.md", "title": "Server-Side Rendering"}
 ---
 
 tip
 
 Static site generation requires executing tRPC queries inside `getStaticProps` on each page.
 
-This can be done using [server-side helpers](trpc/docs/v10/client/nextjs/server-side-helpers/index.md) to prefetch the queries, dehydrate them, and pass it to the page. The queries will then automatically pick up the `trpcState` and use it as an initial value.
+This can be done using [server-side helpers](../server-side-helpers/index.md) to prefetch the queries, dehydrate them, and pass it to the page. The queries will then automatically pick up the `trpcState` and use it as an initial value.
 
 ## Fetch data in `getStaticProps`[​](#fetch-data-in-getstaticprops "Direct link to fetch-data-in-getstaticprops")
 

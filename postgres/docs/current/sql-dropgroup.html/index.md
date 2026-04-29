@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:37.260Z"
 content_hash: "4e6df0b24c82aa92f05a0250bc61698c2691cc81cac85627e8109d55c574486e"
 menu_path: ["PostgreSQL: Documentation: 18: DROP GROUP"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropfunction.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP FUNCTION"}
-nav_next: {"path": "postgres/docs/current/sql-dropindex.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP INDEX"}
+nav_prev: {"path": "../sql-dropfunction.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP FUNCTION"}
+nav_next: {"path": "../sql-dropindex.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP INDEX"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:27.135Z"
 content_hash: "dc68141421e14db55c3cd93918f3eeabda57b75ae578f75e414d6ddf61cf0387"
 menu_path: ["bun install"]
 section_path: []
-nav_prev: {"path": "bun/docs/pm/cli/info/index.md", "title": "bun info"}
-nav_next: {"path": "bun/docs/pm/cli/link/index.md", "title": "bun link"}
+nav_prev: {"path": "../info/index.md", "title": "bun info"}
+nav_next: {"path": "../link/index.md", "title": "bun link"}
 ---
 
 # Install dependencies for all workspaces except `pkg-c`
@@ -20,13 +20,13 @@ bun install --filter '!pkg-c'
 bun install --filter './packages/pkg-a'
 ```
 
-For more information on filtering with `bun install`, refer to [Package Manager > Filtering](bun/docs/pm/filter/index.md#bun-install-and-bun-outdated)
+For more information on filtering with `bun install`, refer to [Package Manager > Filtering](../../filter/index.md#bun-install-and-bun-outdated)
 
 * * *
 
 ## Overrides and resolutions
 
-Bun supports npm’s `"overrides"` and Yarn’s `"resolutions"` in `package.json`. These are mechanisms for specifying a version range for _metadependencies_—the dependencies of your dependencies. Refer to [Package manager > Overrides and resolutions](bun/docs/pm/overrides/index.md) for complete documentation.
+Bun supports npm’s `"overrides"` and Yarn’s `"resolutions"` in `package.json`. These are mechanisms for specifying a version range for _metadependencies_—the dependencies of your dependencies. Refer to [Package manager > Overrides and resolutions](../../overrides/index.md) for complete documentation.
 
 package.json
 
@@ -86,7 +86,7 @@ terminal
 bun install --frozen-lockfile
 ```
 
-For more information on Bun’s lockfile `bun.lock`, refer to [Package manager > Lockfile](bun/docs/pm/lockfile/index.md).
+For more information on Bun’s lockfile `bun.lock`, refer to [Package manager > Lockfile](../../lockfile/index.md).
 
 * * *
 
@@ -122,7 +122,7 @@ bun install --dry-run
 
 ## Non-npm dependencies
 
-Bun supports installing dependencies from Git, GitHub, and local or remotely-hosted tarballs. For complete documentation refer to [Package manager > Git, GitHub, and tarball dependencies](bun/docs/pm/cli/add/index.md).
+Bun supports installing dependencies from Git, GitHub, and local or remotely-hosted tarballs. For complete documentation refer to [Package manager > Git, GitHub, and tarball dependencies](../add/index.md).
 
 package.json
 
@@ -175,7 +175,7 @@ The default linker strategy depends on whether you’re starting fresh or have a
 *   **New single-package projects**: `hoisted` (traditional npm behavior)
 *   **Existing projects (made pre-v1.3.2)**: `hoisted` (preserves backward compatibility)
 
-The default is controlled by a `configVersion` field in your lockfile. For a detailed explanation, see [Package manager > Isolated installs](bun/docs/pm/isolated-installs/index.md).
+The default is controlled by a `configVersion` field in your lockfile. For a detailed explanation, see [Package manager > Isolated installs](../../isolated-installs/index.md).
 
 * * *
 
@@ -213,7 +213,7 @@ When the minimum age filter is active:
     *   Exact version requests (like `package@1.1.1`) still respect the age gate but bypass the stability check
 *   Versions without a `time` field are treated as passing the age check (npm registry should always provide timestamps)
 
-For more advanced security scanning, including integration with services & custom filtering, see [Package manager > Security Scanner API](bun/docs/pm/security-scanner-api/index.md).
+For more advanced security scanning, including integration with services & custom filtering, see [Package manager > Security Scanner API](../../security-scanner-api/index.md).
 
 * * *
 

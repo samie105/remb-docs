@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:50:22.234Z"
 content_hash: "b6697df49b2ca06dddb11deb971da430483ba8f44b73ccb4bb502a733c699b34"
 menu_path: ["Define Procedures"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/overview/index.md", "title": "Backend Usage"}
-nav_next: {"path": "trpc/docs/server/routers/index.md", "title": "Define Routers"}
+nav_prev: {"path": "../overview/index.md", "title": "Backend Usage"}
+nav_next: {"path": "../routers/index.md", "title": "Define Routers"}
 ---
 
 A procedure is a function which is exposed to the client, it can be one of:
 
 *   a `Query` - used to fetch data, generally does not change any data
 *   a `Mutation` - used to send data, often for create/update/delete purposes
-*   a `Subscription` - you might not need this, and we have [dedicated documentation](trpc/docs/server/subscriptions/index.md)
+*   a `Subscription` - you might not need this, and we have [dedicated documentation](../subscriptions/index.md)
 
 Procedures in tRPC are very flexible primitives to create backend functions. They use an immutable builder pattern, which means you can [create reusable base procedures](#reusable-base-procedures) that share functionality among multiple procedures.
 
@@ -73,7 +73,7 @@ As a general pattern we recommend you rename and export `t.procedure` as `public
 
 In the below code, we're using reusable base procedures to build common use-cases for our app - we're making a reusable base procedures for logged in users (`authedProcedure`) & another base procedure that takes an `organizationId` and validates that a user is part of that organization.
 
-> This is a simplified example; in practice you may want to use some combination of [Headers](trpc/docs/client/headers/index.md), [Context](trpc/docs/server/context/index.md), [Middleware](trpc/docs/server/middlewares/index.md), and [Metadata](trpc/docs/server/metadata/index.md), to [authenticate](https://en.wikipedia.org/wiki/Authentication) and [authorize](trpc/docs/server/authorization/index.md) your users.
+> This is a simplified example; in practice you may want to use some combination of [Headers](../../client/headers/index.md), [Context](../context/index.md), [Middleware](../middlewares/index.md), and [Metadata](../metadata/index.md), to [authenticate](https://en.wikipedia.org/wiki/Authentication) and [authorize](../authorization/index.md) your users.
 
 ts
 
@@ -235,7 +235,7 @@ ts
 
 ## Inferring the options type of a "Base Procedure"[​](#inferProcedureBuilderResolverOptions "Direct link to Inferring the options type of a \"Base Procedure\"")
 
-In addition to being able to [infer the input and output types](trpc/docs/client/vanilla/infer-types/index.md#inferring-input--output-types) of a procedure, you can also infer the options type of a specific procedure builder (or base procedure) using `inferProcedureBuilderResolverOptions`.
+In addition to being able to [infer the input and output types](../../client/vanilla/infer-types/index.md#inferring-input--output-types) of a procedure, you can also infer the options type of a specific procedure builder (or base procedure) using `inferProcedureBuilderResolverOptions`.
 
 This type helper is useful for declaring a type to a function's parameters. Like for example, separating the procedure's handler (main execution code) from its definition at the router, or for creating a helper function that works with multiple procedures.
 
@@ -283,4 +283,4 @@ ts
 
 ## Subscriptions[​](#subscriptions "Direct link to Subscriptions")
 
-For information on subscriptions, see [our subscriptions guide](trpc/docs/server/subscriptions/index.md).
+For information on subscriptions, see [our subscriptions guide](../subscriptions/index.md).

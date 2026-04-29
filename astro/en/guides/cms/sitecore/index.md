@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:17.001Z"
 content_hash: "d4ce0d49826ce905dcd2861dc4bcbe7a521641111766b6a979f2d00d992b811f"
 menu_path: ["Sitecore Experience Manager & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/sanity/index.md", "title": "Sanity & Astro"}
-nav_next: {"path": "astro/en/guides/cms/sitepins/index.md", "title": "Sitepins & Astro"}
+nav_prev: {"path": "../sanity/index.md", "title": "Sanity & Astro"}
+nav_next: {"path": "../sitepins/index.md", "title": "Sitepins & Astro"}
 ---
 
 # Sitecore Experience Manager & Astro

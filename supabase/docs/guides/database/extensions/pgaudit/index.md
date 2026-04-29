@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:54.145Z"
 content_hash: "7fd9a752ca598b3975e85b0274191eb3867e8a799aa74e116f6f34c266b52bff"
 menu_path: ["Database","Database","Extensions","Extensions","PGAudit: Postgres Auditing","PGAudit: Postgres Auditing"]
 section_path: ["Database","Database","Extensions","Extensions","PGAudit: Postgres Auditing","PGAudit: Postgres Auditing"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_stat_statements/index.md", "title": "pg_stat_statements: Query Performance Monitoring"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pgjwt/index.md", "title": "pgjwt: JSON Web Tokens"}
+nav_prev: {"path": "../pg_stat_statements/index.md", "title": "pg_stat_statements: Query Performance Monitoring"}
+nav_next: {"path": "../pgjwt/index.md", "title": "pgjwt: JSON Web Tokens"}
 ---
 
 # 

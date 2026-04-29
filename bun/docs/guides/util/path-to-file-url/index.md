@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:13.556Z"
 content_hash: "9cb59431101848c67366c40ea61e1044ed07b1861b5098901253f71a54baa260"
 menu_path: ["Convert an absolute path to a file URL"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/main/index.md", "title": "Get the absolute path to the current entrypoint"}
-nav_next: {"path": "bun/docs/guides/util/sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
+nav_prev: {"path": "../main/index.md", "title": "Get the absolute path to the current entrypoint"}
+nav_next: {"path": "../sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
 ---
 
 [Skip to main content](#content-area)

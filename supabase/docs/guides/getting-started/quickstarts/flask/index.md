@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:08.551Z"
 content_hash: "191a01d5631ecbf58ae6226093fb8ef6d5eaba61f8b352f294bc9b2f49a28d1a"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Flask (Python)","Flask (Python)"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Flask (Python)","Flask (Python)"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/expo-react-native/index.md", "title": "Use Supabase with Expo React Native"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/flutter/index.md", "title": "Use Supabase with Flutter"}
+nav_prev: {"path": "../expo-react-native/index.md", "title": "Use Supabase with Expo React Native"}
+nav_next: {"path": "../flutter/index.md", "title": "Use Supabase with Flutter"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:05.452Z"
 content_hash: "f6645f0e5fb95e15ed26e257244baac143f0c0a347ee78196e26f3e55063bae9"
 menu_path: ["Proxy Helper ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/helpers/jwt/index.md", "title": "JWT Authentication Helper \u200b"}
-nav_next: {"path": "hono/docs/helpers/route/index.md", "title": "Route Helper \u200b"}
+nav_prev: {"path": "../jwt/index.md", "title": "JWT Authentication Helper \u200b"}
+nav_next: {"path": "../route/index.md", "title": "Route Helper \u200b"}
 ---
 
 Proxy Helper provides useful functions when using Hono application as a (reverse) proxy.

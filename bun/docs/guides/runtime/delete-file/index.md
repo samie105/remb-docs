@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:31.275Z"
 content_hash: "8d0998f3cd8775fb38f5fc06544662d0844966edcced9d642a686d560ec86132"
 menu_path: ["Delete files"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/delete-directory/index.md", "title": "Delete directories"}
-nav_next: {"path": "bun/docs/guides/runtime/heap-snapshot/index.md", "title": "Inspect memory usage using V8 heap snapshots"}
+nav_prev: {"path": "../delete-directory/index.md", "title": "Delete directories"}
+nav_next: {"path": "../heap-snapshot/index.md", "title": "Inspect memory usage using V8 heap snapshots"}
 ---
 
 [Skip to main content](#content-area)

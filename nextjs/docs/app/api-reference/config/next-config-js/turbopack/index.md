@@ -11,8 +11,8 @@ menu_path: ["turbopack"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/transpilePackages/index.md", "title": "transpilePackages"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopackFileSystemCache/index.md", "title": "Turbopack FileSystem Caching"}
+nav_prev: {"path": "../transpilePackages/index.md", "title": "transpilePackages"}
+nav_next: {"path": "../turbopackFileSystemCache/index.md", "title": "Turbopack FileSystem Caching"}
 ---
 
 # turbopack

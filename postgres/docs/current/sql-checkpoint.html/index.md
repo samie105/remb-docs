@@ -10,8 +10,8 @@ content_hash: "2879916b0a2052089e66fdbe85ebc86a209ea14f0462a1e59b938369482f8a79"
 menu_path: ["PostgreSQL: Documentation: 18: CHECKPOINT"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/sql-call.html/index.md", "title": "PostgreSQL: Documentation: 18: CALL"}
-nav_next: {"path": "postgres/docs/current/sql-close.html/index.md", "title": "PostgreSQL: Documentation: 18: CLOSE"}
+nav_prev: {"path": "../sql-call.html/index.md", "title": "PostgreSQL: Documentation: 18: CALL"}
+nav_next: {"path": "../sql-close.html/index.md", "title": "PostgreSQL: Documentation: 18: CLOSE"}
 ---
 
 CHECKPOINT — force a write-ahead log checkpoint
@@ -24,7 +24,7 @@ The `CHECKPOINT` command forces an immediate checkpoint when the command is issu
 
 If executed during recovery, the `CHECKPOINT` command will force a restartpoint (see [Section 28.5](https://www.postgresql.org/docs/current/wal-configuration.html "28.5. WAL Configuration")) rather than writing a new checkpoint.
 
-Only superusers or users with the privileges of the [pg\_checkpoint](postgres/docs/current/predefined-roles.html/index.md#PREDEFINED-ROLE-PG-CHECKPOINT) role can call `CHECKPOINT`.
+Only superusers or users with the privileges of the [pg\_checkpoint](../predefined-roles.html/index.md#PREDEFINED-ROLE-PG-CHECKPOINT) role can call `CHECKPOINT`.
 
 ## Compatibility
 

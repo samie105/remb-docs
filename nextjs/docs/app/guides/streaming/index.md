@@ -11,8 +11,8 @@ menu_path: ["Streaming"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/static-exports/index.md", "title": "How to create a static export of your Next.js application"}
-nav_next: {"path": "nextjs/docs/app/guides/tailwind-v3-css/index.md", "title": "How to install Tailwind CSS v3 in your Next.js application"}
+nav_prev: {"path": "../static-exports/index.md", "title": "How to create a static export of your Next.js application"}
+nav_next: {"path": "../tailwind-v3-css/index.md", "title": "How to install Tailwind CSS v3 in your Next.js application"}
 ---
 
 # Streaming

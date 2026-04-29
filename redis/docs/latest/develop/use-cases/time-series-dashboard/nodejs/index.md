@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:13.919Z"
 content_hash: "a34e4c1b3551be4a80c32f1e6b6f0c3b51ed05da2f9e4682f4f7841ad6ba62d7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and Node.js","→","Rolling sensor graph demo with Redis and Node.js"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and Node.js","→","Rolling sensor graph demo with Redis and Node.js"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/java-lettuce/index.md", "title": "Rolling sensor graph demo with Java and Lettuce"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/php/index.md", "title": "Rolling sensor graph demo with Redis and PHP"}
+nav_prev: {"path": "../java-lettuce/index.md", "title": "Rolling sensor graph demo with Java and Lettuce"}
+nav_next: {"path": "../php/index.md", "title": "Rolling sensor graph demo with Redis and PHP"}
 ---
 
 # Rolling sensor graph demo with Redis and Node.js

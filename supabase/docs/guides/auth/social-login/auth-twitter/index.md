@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:58.205Z"
 content_hash: "c02bc252d9e3f97f812cff8aec791d5ed968d574ef3e3940763246e340ec8225"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Twitter","Twitter"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Twitter","Twitter"]
-nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-twitch/index.md", "title": "Login with Twitch"}
-nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-workos/index.md", "title": "SSO and Social Login with WorkOS"}
+nav_prev: {"path": "../auth-twitch/index.md", "title": "Login with Twitch"}
+nav_next: {"path": "../auth-workos/index.md", "title": "SSO and Social Login with WorkOS"}
 ---
 
 # 

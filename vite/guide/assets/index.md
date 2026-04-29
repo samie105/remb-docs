@@ -9,12 +9,12 @@ last_crawled_at: "2026-04-18T16:34:17.939Z"
 content_hash: "932de1d7cb49529bd128fa7c6d861aec8749e9adf959046d6047a188d58cf0af"
 menu_path: ["Static Asset Handling ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/dep-pre-bundling/index.md", "title": "Dependency Pre-Bundling \u200b"}
-nav_next: {"path": "vite/guide/build/index.md", "title": "Building for Production \u200b"}
+nav_prev: {"path": "../dep-pre-bundling/index.md", "title": "Dependency Pre-Bundling \u200b"}
+nav_next: {"path": "../build/index.md", "title": "Building for Production \u200b"}
 ---
 
-*   Related: [Public Base Path](vite/guide/build/index.md#public-base-path)
-*   Related: [`assetsInclude` config option](vite/config/shared-options/index.md#assetsinclude)
+*   Related: [Public Base Path](../build/index.md#public-base-path)
+*   Related: [`assetsInclude` config option](../../config/shared-options/index.md#assetsinclude)
 
 ## Importing Asset as URL [​](#importing-asset-as-url)
 
@@ -35,15 +35,15 @@ The behavior is similar to webpack's `file-loader`. The difference is that the i
     
 *   If using the Vue plugin, asset references in Vue SFC templates are automatically converted into imports.
     
-*   Common image, media, and font filetypes are detected as assets automatically. You can extend the internal list using the [`assetsInclude` option](vite/config/shared-options/index.md#assetsinclude).
+*   Common image, media, and font filetypes are detected as assets automatically. You can extend the internal list using the [`assetsInclude` option](../../config/shared-options/index.md#assetsinclude).
     
 *   Referenced assets are included as part of the build assets graph, will get hashed file names, and can be processed by plugins for optimization.
     
-*   Assets smaller in bytes than the [`assetsInlineLimit` option](vite/config/build-options/index.md#build-assetsinlinelimit) will be inlined as base64 data URLs.
+*   Assets smaller in bytes than the [`assetsInlineLimit` option](../../config/build-options/index.md#build-assetsinlinelimit) will be inlined as base64 data URLs.
     
 *   Git LFS placeholders are automatically excluded from inlining because they do not contain the content of the file they represent. To get inlining, make sure to download the file contents via Git LFS before building.
     
-*   TypeScript, by default, does not recognize static asset imports as valid modules. To fix this, include [`vite/client`](vite/guide/features/index.md#client-types).
+*   TypeScript, by default, does not recognize static asset imports as valid modules. To fix this, include [`vite/client`](../features/index.md#client-types).
     
 
 Inlining SVGs through `url()`
@@ -116,7 +116,7 @@ js
 import InlineWorker from './shader.js?worker&inline'
 ```
 
-Check out the [Web Worker section](vite/guide/features/index.md#web-workers) for more details.
+Check out the [Web Worker section](../features/index.md#web-workers) for more details.
 
 ## The `public` Directory [​](#the-public-directory)
 
@@ -128,7 +128,7 @@ If you have assets that are:
 
 Then you can place the asset in a special `public` directory under your project root. Assets in this directory will be served at root path `/` during dev, and copied to the root of the dist directory as-is.
 
-The directory defaults to `<root>/public`, but can be configured via the [`publicDir` option](vite/config/shared-options/index.md#publicdir).
+The directory defaults to `<root>/public`, but can be configured via the [`publicDir` option](../../config/shared-options/index.md#publicdir).
 
 Note that you should always reference `public` assets using root absolute path - for example, `public/icon.png` should be referenced in source code as `/icon.png`.
 

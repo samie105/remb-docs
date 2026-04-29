@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:48.140Z"
 content_hash: "07256421602f9d7a54b3e77499f4a0f50bca9ee8999eb63e39877ef87354eabc"
 menu_path: ["Service Worker ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/getting-started/webassembly-wasi/index.md", "title": "WebAssembly (w/ WASI) \u200b"}
-nav_next: {"path": "hono/docs/getting-started/nodejs/index.md", "title": "Node.js \u200b"}
+nav_prev: {"path": "../webassembly-wasi/index.md", "title": "WebAssembly (w/ WASI) \u200b"}
+nav_next: {"path": "../nodejs/index.md", "title": "Node.js \u200b"}
 ---
 
 [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) is a script that runs in the background of the browser to handle tasks like caching and push notifications. Using a Service Worker adapter, you can run applications made with Hono as [FetchEvent](https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent) handler within the browser.

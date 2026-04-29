@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:41.586Z"
 content_hash: "b0ec8d73e19031a243aed8bd355817fc3c9faf73e25ec872c950c638adecfb41"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Vector search","→","Vector search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Vector search","→","Vector search"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/range/index.md", "title": "Range queries"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/index.md", "title": "Vector search concepts"}
+nav_prev: {"path": "../range/index.md", "title": "Range queries"}
+nav_next: {"path": "../../vectors/index.md", "title": "Vector search concepts"}
 ---
 
 # Vector search

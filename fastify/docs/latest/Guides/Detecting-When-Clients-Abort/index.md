@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:50.353Z"
 content_hash: "acea8ed333041ed6bf7fb61f1a0d316b510db167455e666baf74693bcc8a59b0"
 menu_path: ["Detecting When Clients Abort"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Delay-Accepting-Requests/index.md", "title": "Delay Accepting Requests"}
-nav_next: {"path": "fastify/docs/latest/Guides/Ecosystem/index.md", "title": "Ecosystem"}
+nav_prev: {"path": "../Delay-Accepting-Requests/index.md", "title": "Delay Accepting Requests"}
+nav_next: {"path": "../Ecosystem/index.md", "title": "Ecosystem"}
 ---
 
 Version: latest (v5.8.x)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:43.454Z"
 content_hash: "ef5c002275ddf9889b09275c338cd5a0e56a6c4d0ac5781c9eae73e989190c78"
 menu_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Securing your functions","Securing your functions"]
 section_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Securing your functions","Securing your functions"]
-nav_prev: {"path": "supabase/docs/guides/functions/architecture/index.md", "title": "Edge Functions Architecture"}
-nav_next: {"path": "supabase/docs/guides/functions/auth-legacy-jwt/index.md", "title": "Integrating With Supabase Auth"}
+nav_prev: {"path": "../architecture/index.md", "title": "Edge Functions Architecture"}
+nav_next: {"path": "../auth-legacy-jwt/index.md", "title": "Integrating With Supabase Auth"}
 ---
 
 # 

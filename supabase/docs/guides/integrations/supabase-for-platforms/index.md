@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:34.645Z"
 content_hash: "17e827267cfa4c142a4b384d525f782e0dc7922e74418dbf28d0f065eb0826a4"
 menu_path: ["Integrations","Integrations","Build Your Own","Build Your Own","Supabase for Platforms","Supabase for Platforms"]
 section_path: ["Integrations","Integrations","Build Your Own","Build Your Own","Supabase for Platforms","Supabase for Platforms"]
-nav_prev: {"path": "supabase/docs/guides/integrations/build-a-supabase-oauth-integration/index.md", "title": "Build a Supabase Integration"}
-nav_next: {"path": "supabase/docs/guides/integrations/supabase-marketplace/index.md", "title": "Supabase Marketplace"}
+nav_prev: {"path": "../build-a-supabase-oauth-integration/index.md", "title": "Build a Supabase Integration"}
+nav_next: {"path": "../supabase-marketplace/index.md", "title": "Supabase Marketplace"}
 ---
 
 # 

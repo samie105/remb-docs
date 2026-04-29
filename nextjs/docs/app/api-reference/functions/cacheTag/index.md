@@ -11,8 +11,8 @@ menu_path: ["cacheTag"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/cacheLife/index.md", "title": "cacheLife"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/catchError/index.md", "title": "unstable_catchError"}
+nav_prev: {"path": "../cacheLife/index.md", "title": "cacheLife"}
+nav_next: {"path": "../catchError/index.md", "title": "unstable_catchError"}
 ---
 
 # cacheTag

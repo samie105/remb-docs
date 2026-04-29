@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:51.728Z"
 content_hash: "8a3eb708b87c46b6ddbcc465bfa5e91baf92cf7eab2111de7183fd217a341bb9"
 menu_path: ["Mock functions in `bun test`"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/mock-clock/index.md", "title": "Set the system time in Bun's test runner"}
-nav_next: {"path": "bun/docs/guides/test/rerun-each/index.md", "title": "Re-run tests multiple times with the Bun test runner"}
+nav_prev: {"path": "../mock-clock/index.md", "title": "Set the system time in Bun's test runner"}
+nav_next: {"path": "../rerun-each/index.md", "title": "Re-run tests multiple times with the Bun test runner"}
 ---
 
 Create mocks with the `mock` function from `bun:test`.
@@ -84,4 +84,4 @@ test("random", async () => {
 
 * * *
 
-See [Docs > Test Runner > Mocks](bun/docs/test/mocks/index.md) for complete documentation on mocking with the Bun test runner.
+See [Docs > Test Runner > Mocks](../../../test/mocks/index.md) for complete documentation on mocking with the Bun test runner.

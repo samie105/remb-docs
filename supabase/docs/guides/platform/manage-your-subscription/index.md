@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:39.645Z"
 content_hash: "a12f4617c65751a4d0d29f8c157546f4b08316fc0e71c74c681e49959e38aab2"
 menu_path: ["Platform","Platform","Billing","Billing","Manage your subscription","Manage your subscription"]
 section_path: ["Platform","Platform","Billing","Billing","Manage your subscription","Manage your subscription"]
-nav_prev: {"path": "supabase/docs/guides/platform/ipv4-address/index.md", "title": "Dedicated IPv4 Address for Ingress"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/index.md", "title": "Manage your usage"}
+nav_prev: {"path": "../ipv4-address/index.md", "title": "Dedicated IPv4 Address for Ingress"}
+nav_next: {"path": "../manage-your-usage/index.md", "title": "Manage your usage"}
 ---
 
 # 

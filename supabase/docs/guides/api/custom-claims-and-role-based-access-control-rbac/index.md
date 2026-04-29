@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:19.914Z"
 content_hash: "f4d36fdded4219d85c2a40f6ed2cf6cf5d66ff23aa65bc4f630694dbe605119c"
 menu_path: ["Data REST API","Data REST API","Security","Security","Custom Claims & RBAC","Custom Claims & RBAC"]
 section_path: ["Data REST API","Data REST API","Security","Security","Custom Claims & RBAC","Custom Claims & RBAC"]
-nav_prev: {"path": "supabase/docs/guides/api/creating-routes/index.md", "title": "Creating API Routes"}
-nav_next: {"path": "supabase/docs/guides/api/hardening-data-api/index.md", "title": "Hardening the Data API"}
+nav_prev: {"path": "../creating-routes/index.md", "title": "Creating API Routes"}
+nav_next: {"path": "../hardening-data-api/index.md", "title": "Hardening the Data API"}
 ---
 
 # 

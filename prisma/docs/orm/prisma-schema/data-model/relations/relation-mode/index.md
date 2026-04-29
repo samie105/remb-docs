@@ -10,8 +10,8 @@ content_hash: "e2889e67f4261441d6858c0ebb73087124f241ad4c908124cc301fb3cabe7f95"
 menu_path: ["Relation mode"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md", "title": "Referential actions"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md", "title": "Self-relations"}
+nav_prev: {"path": "../referential-actions/index.md", "title": "Referential actions"}
+nav_next: {"path": "../self-relations/index.md", "title": "Self-relations"}
 ---
 
 **Questions answered in this page**
@@ -20,7 +20,7 @@ nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/self-rela
 -   When should I use `prisma` vs `foreignKeys`?
 -   How does relation emulation affect constraints?
 
-In Prisma schema, relations between records are defined with the [`@relation`](prisma/docs/orm/reference/prisma-schema-reference/index.md#relation) attribute. For example, in the following schema there is a one-to-many relation between the `User` and `Post` models:
+In Prisma schema, relations between records are defined with the [`@relation`](../../../../reference/prisma-schema-reference/index.md#relation) attribute. For example, in the following schema there is a one-to-many relation between the `User` and `Post` models:
 
 schema.prisma
 
@@ -43,7 +43,7 @@ Prisma ORM has two _relation modes_, `foreignKeys` and `prisma`, that specify ho
 If you use Prisma ORM with a relational database, then by default Prisma ORM uses the [`foreignKeys` relation mode](#handle-relations-in-your-relational-database-with-the-foreignkeys-relation-mode), which enforces relations between records at the database level with foreign keys. A foreign key is a column or group of columns in one table that take values based on the primary key in another table. Foreign keys allow you to:
 
 -   set constraints that prevent you from making changes that break references
--   set [referential actions](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md) that define how changes to records are handled
+-   set [referential actions](../referential-actions/index.md) that define how changes to records are handled
 
 Together these constraints and referential actions guarantee the _referential integrity_ of the data.
 
@@ -76,7 +76,7 @@ ALTER TABLE "Post"
 
 In this case, the foreign key constraint on the `authorId` column of the `Post` table references the `id` column of the `User` table, and guarantees that a post must have an author that exists. If you update or delete a user then the `ON DELETE` and `ON UPDATE` referential actions specify the `CASCADE` option, which will also delete or update all posts belonging to the user.
 
-Some databases, such as MongoDB or [PlanetScale](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale), do not support foreign keys. Additionally, in some cases developers may prefer not to use foreign keys in their relational database that usually does support foreign keys. For these situations, Prisma ORM offers [the `prisma` relation mode](#emulate-relations-in-prisma-orm-with-the-prisma-relation-mode), which emulates some properties of relations in relational databases. When you use Prisma Client with the `prisma` relation mode enabled, the behavior of queries is identical or similar, but referential actions and some constraints are handled by the Prisma engine rather than in the database.
+Some databases, such as MongoDB or [PlanetScale](../../../../core-concepts/supported-databases/mysql/index.md#planetscale), do not support foreign keys. Additionally, in some cases developers may prefer not to use foreign keys in their relational database that usually does support foreign keys. For these situations, Prisma ORM offers [the `prisma` relation mode](#emulate-relations-in-prisma-orm-with-the-prisma-relation-mode), which emulates some properties of relations in relational databases. When you use Prisma Client with the `prisma` relation mode enabled, the behavior of queries is identical or similar, but referential actions and some constraints are handled by the Prisma engine rather than in the database.
 
 To set the relation mode, add the `relationMode` field in the `datasource` block:
 
@@ -92,13 +92,13 @@ datasource db {
 For relational databases, the available options are:
 
 -   `foreignKeys`: this handles relations in the database with foreign keys. This is the default option for all relational database connectors and is active if no `relationMode` is explicitly set in the `datasource` block.
--   `prisma`: this emulates relations in Prisma Client. You should also [enable this option](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale) when you use the MySQL connector with a PlanetScale database and don't have native foreign key constraints enabled in your PlanetScale database settings.
+-   `prisma`: this emulates relations in Prisma Client. You should also [enable this option](../../../../core-concepts/supported-databases/mysql/index.md#planetscale) when you use the MySQL connector with a PlanetScale database and don't have native foreign key constraints enabled in your PlanetScale database settings.
 
 For MongoDB, the only available option is the `prisma` relation mode. This mode is also active if no `relationMode` is explicitly set in the `datasource` block.
 
 The `foreignKeys` relation mode handles relations in your relational database with foreign keys. This is the default option when you use a relational database connector (PostgreSQL, MySQL, SQLite, SQL Server, CockroachDB).
 
-The `foreignKeys` relation mode is not available when you use the MongoDB connector. Some relational databases, [such as PlanetScale](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale), also forbid the use of foreign keys. In these cases, you should instead [emulate relations in Prisma ORM with the `prisma` relation mode](#emulate-relations-in-prisma-orm-with-the-prisma-relation-mode).
+The `foreignKeys` relation mode is not available when you use the MongoDB connector. Some relational databases, [such as PlanetScale](../../../../core-concepts/supported-databases/mysql/index.md#planetscale), also forbid the use of foreign keys. In these cases, you should instead [emulate relations in Prisma ORM with the `prisma` relation mode](#emulate-relations-in-prisma-orm-with-the-prisma-relation-mode).
 
 ### [Referential integrity](#referential-integrity)
 
@@ -112,7 +112,7 @@ When you _create_ or _update_ a record with a relation to another record, the re
 
 When you _update_ or _delete_ a record with a relation to another record, referential actions are triggered in the database. To maintain referential integrity in related records, referential actions prevent changes that would break referential integrity, cascade changes through to related records, or set the value of fields that reference the updated or deleted records to a `null` or default value.
 
-For more information, see the [referential actions](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md) page.
+For more information, see the [referential actions](../referential-actions/index.md) page.
 
 ### [Introspection](#introspection)
 
@@ -124,7 +124,7 @@ When you apply changes to your Prisma schema with Prisma Migrate or `db push` wi
 
 The `prisma` relation mode emulates some foreign key constraints and referential actions for each Prisma Client query to maintain referential integrity, using some additional database queries and logic.
 
-The `prisma` relation mode is the default option for the MongoDB connector. It should also be set if you use a relational database that does not support foreign keys. For example, [if you use PlanetScale](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale) without foreign key constraints, you should use the `prisma` relation mode.
+The `prisma` relation mode is the default option for the MongoDB connector. It should also be set if you use a relational database that does not support foreign keys. For example, [if you use PlanetScale](../../../../core-concepts/supported-databases/mysql/index.md#planetscale) without foreign key constraints, you should use the `prisma` relation mode.
 
 Emulation of relations is only available for Prisma Client queries and does not apply to raw queries.
 
@@ -176,7 +176,7 @@ When you apply changes to your Prisma schema with Prisma Migrate or `db push` wi
 
 In relational databases that use foreign key constraints, the database usually also implicitly creates an index for the foreign key columns. For example, [MySQL will create an index on all foreign key columns](https://dev.mysql.com/doc/refman/8.0/en/constraint-foreign-key.html#:~:text=MySQL%20requires%20that%20foreign%20key%20columns%20be%20indexed%3B%20if%20you%20create%20a%20table%20with%20a%20foreign%20key%20constraint%20but%20no%20index%20on%20a%20given%20column%2C%20an%20index%20is%20created.). This is to allow foreign key checks to run fast and not require a table scan.
 
-The `prisma` relation mode does not use foreign keys, so no indexes are created when you use Prisma Migrate or `db push` to apply changes to your database. You instead need to manually add an index on your relation scalar fields with the [`@@index`](prisma/docs/orm/reference/prisma-schema-reference/index.md#index) attribute (or the [`@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unique), [`@@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md) or [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attributes, if applicable).
+The `prisma` relation mode does not use foreign keys, so no indexes are created when you use Prisma Migrate or `db push` to apply changes to your database. You instead need to manually add an index on your relation scalar fields with the [`@@index`](../../../../reference/prisma-schema-reference/index.md#index) attribute (or the [`@unique`](../../../../reference/prisma-schema-reference/index.md#unique), [`@@unique`](../../../../reference/prisma-schema-reference/index.md) or [`@@id`](../../../../reference/prisma-schema-reference/index.md) attributes, if applicable).
 
 #### [Index validation](#index-validation)
 
@@ -222,7 +222,7 @@ model Post {
 }
 ```
 
-If you use the [Prisma VS Code extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma) (or our [language server in another editor](prisma/docs/orm/more/dev-environment/editor-setup/index.md)), the warning is augmented with a Quick Fix that adds the required index for you:
+If you use the [Prisma VS Code extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma) (or our [language server in another editor](../../../../more/dev-environment/editor-setup/index.md)), the warning is augmented with a Quick Fix that adds the required index for you:
 
 ![The Quick Fix pop-up for adding an index on a relation scalar field in VS Code](/docs/img/orm/prisma-schema/data-model/relations/quick-fix-index.png)
 
@@ -234,7 +234,7 @@ The default relation mode if you use a relational database and do not include th
 
 When you switch the relation mode from `foreignKeys` to `prisma`, after you first apply changes to your schema with Prisma Migrate or `db push` Prisma ORM will remove all previously created foreign keys in the next migration.
 
-If you keep the same database, you can then continue to work as normal. If you switch to a database that does not support foreign keys at all, your existing migration history contains SQL DDL that creates foreign keys, which might trigger errors if you ever have to rerun these migrations. In this case, we recommend that you delete the `migrations` directory. (If you use PlanetScale, which does not support foreign keys, we generally recommend that you [use `db push` rather than Prisma Migrate](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale).)
+If you keep the same database, you can then continue to work as normal. If you switch to a database that does not support foreign keys at all, your existing migration history contains SQL DDL that creates foreign keys, which might trigger errors if you ever have to rerun these migrations. In this case, we recommend that you delete the `migrations` directory. (If you use PlanetScale, which does not support foreign keys, we generally recommend that you [use `db push` rather than Prisma Migrate](../../../../core-concepts/supported-databases/mysql/index.md#planetscale).)
 
 ### [Switch from `prisma` to `foreignKeys`](#switch-from-prisma-to-foreignkeys)
 

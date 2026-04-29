@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:37.240Z"
 content_hash: "f7f048cb561dbae00a506d6461aac47c33d7c3662bb7bc7e424c728f53be822e"
 menu_path: ["PostgreSQL: Documentation: 18: 34.1. The Concept"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
-nav_next: {"path": "postgres/docs/current/ecpg-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.2.\u00a0Managing Database Connections"}
+nav_prev: {"path": "../ecpg-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.3.\u00a0Running SQL Commands"}
+nav_next: {"path": "../ecpg-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.2.\u00a0Managing Database Connections"}
 ---
 
 An embedded SQL program consists of code written in an ordinary programming language, in this case C, mixed with SQL commands in specially marked sections. To build the program, the source code (`*.pgc`) is first passed through the embedded SQL preprocessor, which converts it to an ordinary C program (`*.c`), and afterwards it can be processed by a C compiler. (For details about the compiling and linking see [Section 34.10](https://www.postgresql.org/docs/current/ecpg-process.html "34.10. Processing Embedded SQL Programs").) Converted ECPG applications call functions in the libpq library through the embedded SQL library (ecpglib), and communicate with the PostgreSQL server using the normal frontend-backend protocol.

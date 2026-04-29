@@ -11,8 +11,8 @@ menu_path: ["robots.txt"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/sitemap/index.md", "title": "sitemap.xml"}
+nav_prev: {"path": "../opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
+nav_next: {"path": "../sitemap/index.md", "title": "sitemap.xml"}
 ---
 
 # robots.txt

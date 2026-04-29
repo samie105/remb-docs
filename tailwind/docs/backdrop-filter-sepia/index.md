@@ -10,8 +10,8 @@ content_hash: "69317c48f2e90e94105205ed3be9a129051b1236988d34a9cbd7b7e30c518938"
 menu_path: ["backdrop-filter: sepia()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/backdrop-filter-saturate/index.md", "title": "backdrop-filter: saturate()"}
-nav_next: {"path": "tailwind/docs/border-collapse/index.md", "title": "border-collapse"}
+nav_prev: {"path": "../backdrop-filter-saturate/index.md", "title": "backdrop-filter: saturate()"}
+nav_next: {"path": "../border-collapse/index.md", "title": "border-collapse"}
 ---
 
 # backdrop-filter: sepia()

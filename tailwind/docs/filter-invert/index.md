@@ -10,8 +10,8 @@ content_hash: "ddd2630a265cab2bc7b7822ba194fe6cb536edc98630ee68b3fd92e6e7f89d98"
 menu_path: ["filter: invert()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
-nav_next: {"path": "tailwind/docs/filter-saturate/index.md", "title": "filter: saturate()"}
+nav_prev: {"path": "../filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
+nav_next: {"path": "../filter-saturate/index.md", "title": "filter: saturate()"}
 ---
 
 # filter: invert()

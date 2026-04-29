@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:12:51.390Z"
 content_hash: "c96f75ca36344f6bb56c0ea27f208868838415ea1ec6381c06d84eab76ede1ae"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Ruby","→","Redis leaderboard with Ruby"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Ruby","→","Redis leaderboard with Ruby"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/redis-py/index.md", "title": "Redis leaderboard with redis-py"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/rust/index.md", "title": "Redis leaderboard with Rust"}
+nav_prev: {"path": "../redis-py/index.md", "title": "Redis leaderboard with redis-py"}
+nav_next: {"path": "../rust/index.md", "title": "Redis leaderboard with Rust"}
 ---
 
 # Redis leaderboard with Ruby

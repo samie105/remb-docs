@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:35.731Z"
 content_hash: "539e0a52fe283a886a70f054fba3db79e95113ec3618fb7af3b78b4018bc7f05"
 menu_path: ["Run tests in watch mode with Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/update-snapshots/index.md", "title": "Update snapshots in `bun test`"}
-nav_next: {"path": "bun/docs/guides/util/base64/index.md", "title": "Encode and decode base64 strings"}
+nav_prev: {"path": "../update-snapshots/index.md", "title": "Update snapshots in `bun test`"}
+nav_next: {"path": "../../util/base64/index.md", "title": "Encode and decode base64 strings"}
 ---
 
 [Skip to main content](#content-area)

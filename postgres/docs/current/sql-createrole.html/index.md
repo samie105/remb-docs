@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:12.156Z"
 content_hash: "bc0e1bd916991d9310a55eaa7a6a8b55e297b5907f76dcdd243daf488a03805d"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE ROLE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-createpublication.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PUBLICATION"}
-nav_next: {"path": "postgres/docs/current/sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
+nav_prev: {"path": "../sql-createpublication.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PUBLICATION"}
+nav_next: {"path": "../sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
 ---
 
 CREATE ROLE — define a new database role
@@ -102,7 +102,7 @@ Sets the role's password. (A password is only of use for roles having the `LOGIN
 
 Specifying an empty string will also set the password to null, but that was not the case before PostgreSQL version 10. In earlier versions, an empty string could be used, or not, depending on the authentication method and the exact version, and libpq would refuse to use it in any case. To avoid the ambiguity, specifying an empty string should be avoided.
 
-The password is always stored encrypted in the system catalogs. The `ENCRYPTED` keyword has no effect, but is accepted for backwards compatibility. The method of encryption is determined by the configuration parameter [password\_encryption](postgres/docs/current/runtime-config-connection.html/index.md#GUC-PASSWORD-ENCRYPTION). If the presented password string is already in MD5-encrypted or SCRAM-encrypted format, then it is stored as-is regardless of `password_encryption` (since the system cannot decrypt the specified encrypted password string, to encrypt it in a different format). This allows reloading of encrypted passwords during dump/restore.
+The password is always stored encrypted in the system catalogs. The `ENCRYPTED` keyword has no effect, but is accepted for backwards compatibility. The method of encryption is determined by the configuration parameter [password\_encryption](../runtime-config-connection.html/index.md#GUC-PASSWORD-ENCRYPTION). If the presented password string is already in MD5-encrypted or SCRAM-encrypted format, then it is stored as-is regardless of `password_encryption` (since the system cannot decrypt the specified encrypted password string, to encrypt it in a different format). This allows reloading of encrypted passwords during dump/restore.
 
 ### Warning
 

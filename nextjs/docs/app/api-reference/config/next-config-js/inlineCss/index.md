@@ -11,8 +11,8 @@ menu_path: ["inlineCss"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath/index.md", "title": "Custom Next.js Cache Handler"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/logging/index.md", "title": "logging"}
+nav_prev: {"path": "../incrementalCacheHandlerPath/index.md", "title": "Custom Next.js Cache Handler"}
+nav_next: {"path": "../logging/index.md", "title": "logging"}
 ---
 
 # inlineCss

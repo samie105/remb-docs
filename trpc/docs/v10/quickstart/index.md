@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:37:23.890Z"
 content_hash: "1186bf94b9e6dc2fd1194ff9ee474de08fdd6113901263042946a0440f2d9bd1"
 menu_path: ["Quickstart"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/migrate-from-v9-to-v10/index.md", "title": "Migrate from v9 to v10"}
-nav_next: {"path": "trpc/docs/v10/rpc/index.md", "title": "HTTP RPC Specification"}
+nav_prev: {"path": "../migrate-from-v9-to-v10/index.md", "title": "Migrate from v9 to v10"}
+nav_next: {"path": "../rpc/index.md", "title": "HTTP RPC Specification"}
 ---
 
-tRPC combines concepts from [REST](https://www.sitepoint.com/rest-api/) and [GraphQL](https://graphql.org/). If you are unfamiliar with either, take a look at the key [Concepts](trpc/docs/v10/concepts/index.md).
+tRPC combines concepts from [REST](https://www.sitepoint.com/rest-api/) and [GraphQL](https://graphql.org/). If you are unfamiliar with either, take a look at the key [Concepts](../concepts/index.md).
 
 ## Installation[​](#installation "Direct link to Installation")
 
-tRPC is split between several packages, so you can install only what you need. Make sure to install the packages you want in the proper sections of your codebase. For this quickstart guide we'll keep it simple and use the vanilla client only. For framework guides, checkout [usage with React](trpc/docs/client/react/setup/index.md) and [usage with Next.js](trpc/docs/v10/client/nextjs/setup/index.md).
+tRPC is split between several packages, so you can install only what you need. Make sure to install the packages you want in the proper sections of your codebase. For this quickstart guide we'll keep it simple and use the vanilla client only. For framework guides, checkout [usage with React](../../client/react/setup/index.md) and [usage with Next.js](../client/nextjs/setup/index.md).
 
 Requirements
 
@@ -137,7 +137,7 @@ ts
 
 ### 3\. Using input parser to validate procedure inputs[​](#3-using-input-parser-to-validate-procedure-inputs "Direct link to 3. Using input parser to validate procedure inputs")
 
-To implement the `userById` procedure, we need to accept input from the client. tRPC lets you define [input parsers](trpc/docs/v10/server/validators/index.md) to validate and parse the input. You can define your own input parser or use a validation library of your choice, like [zod](https://zod.dev/), [yup](https://github.com/jquense/yup), or [superstruct](https://docs.superstructjs.org/).
+To implement the `userById` procedure, we need to accept input from the client. tRPC lets you define [input parsers](../server/validators/index.md) to validate and parse the input. You can define your own input parser or use a validation library of your choice, like [zod](https://zod.dev/), [yup](https://github.com/jquense/yup), or [superstruct](https://docs.superstructjs.org/).
 
 You define your input parser on `publicProcedure.input()`, which can then be accessed on the resolver function as shown below:
 
@@ -256,7 +256,7 @@ ts
 
 ## Serving the API[​](#serving-the-api "Direct link to Serving the API")
 
-Now that we have defined our router, we can serve it. tRPC has many [adapters](trpc/docs/server/adapters/index.md) so you can use any backend framework of your choice. To keep it simple, we'll use the [`standalone`](trpc/docs/server/adapters/standalone/index.md) adapter.
+Now that we have defined our router, we can serve it. tRPC has many [adapters](../../server/adapters/index.md) so you can use any backend framework of your choice. To keep it simple, we'll use the [`standalone`](../../server/adapters/standalone/index.md) adapter.
 
 server/index.ts
 
@@ -316,7 +316,7 @@ ts
 
 `});`
 
-Links in tRPC are similar to links in GraphQL, they let us control the data flow **before** being sent to the server. In the example above, we use the [httpBatchLink](trpc/docs/client/links/httpBatchLink/index.md), which automatically batches up multiple calls into a single HTTP request. For more in-depth usage of links, see the [links documentation](trpc/docs/client/links/index.md).
+Links in tRPC are similar to links in GraphQL, they let us control the data flow **before** being sent to the server. In the example above, we use the [httpBatchLink](../../client/links/httpBatchLink/index.md), which automatically batches up multiple calls into a single HTTP request. For more in-depth usage of links, see the [links documentation](../../client/links/index.md).
 
 ### 2\. Querying & mutating[​](#2-querying--mutating "Direct link to 2. Querying & mutating")
 
@@ -358,14 +358,14 @@ ts
 
 tip
 
-We highly encourage you to check out [the example apps](trpc/docs/v10/example-apps/index.md) to learn about how tRPC is installed in your favorite framework.
+We highly encourage you to check out [the example apps](../example-apps/index.md) to learn about how tRPC is installed in your favorite framework.
 
 tip
 
-By default, tRPC will map complex types like `Date` to their JSON-equivalent _(`string` in the case of `Date`)_. If you want to add to retain the integrity of those types, the easiest way to add support for these is to [use superjson](trpc/docs/server/data-transformers/index.md#using-superjson) as a Data Transformer.
+By default, tRPC will map complex types like `Date` to their JSON-equivalent _(`string` in the case of `Date`)_. If you want to add to retain the integrity of those types, the easiest way to add support for these is to [use superjson](../../server/data-transformers/index.md#using-superjson) as a Data Transformer.
 
 tRPC includes more sophisticated client-side tooling designed for React projects and Next.js.
 
-*   [Usage with Next.js](trpc/docs/v10/client/nextjs/index.md)
-*   [Usage with Express (server-side)](trpc/docs/server/adapters/express/index.md)
-*   [Usage with React (client-side)](trpc/docs/v10/client/react/index.md)
+*   [Usage with Next.js](../client/nextjs/index.md)
+*   [Usage with Express (server-side)](../../server/adapters/express/index.md)
+*   [Usage with React (client-side)](../client/react/index.md)

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:45:09.244Z"
 content_hash: "f20b085613e33efe674a63c028e94a66266ba3cf00a38747ada07ab915e4d360"
 menu_path: ["Local Link"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/links/httpSubscriptionLink/index.md", "title": "HTTP Subscription Link"}
-nav_next: {"path": "trpc/docs/client/links/loggerLink/index.md", "title": "Logger Link"}
+nav_prev: {"path": "../httpSubscriptionLink/index.md", "title": "HTTP Subscription Link"}
+nav_next: {"path": "../loggerLink/index.md", "title": "Logger Link"}
 ---
 
-`localLink` is a [**terminating link**](trpc/docs/client/links/index.md#the-terminating-link) that allows you to make tRPC procedure calls directly in your application without going through HTTP.
+`localLink` is a [**terminating link**](../index.md#the-terminating-link) that allows you to make tRPC procedure calls directly in your application without going through HTTP.
 
 info
 
-We have prefixed this as `unstable_` as it's a new API, but you're safe to use it! [Read more](trpc/docs/faq/index.md#unstable).
+We have prefixed this as `unstable_` as it's a new API, but you're safe to use it! [Read more](../../../faq/index.md#unstable).
 
 ## Usage[​](#usage "Direct link to Usage")
 

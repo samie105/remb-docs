@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:25.812Z"
 content_hash: "8df3bdb33b7feadaf738ff1bb3d4e267fe9d4eab8cdb18fc958457efbad079fd"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for .NET","→","RedisOM for .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for .NET","→","RedisOM for .NET"]
-nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-java/index.md", "title": "RedisOM for Java"}
-nav_next: {"path": "redis/docs/latest/integrate/redisom-for-node-js/index.md", "title": "RedisOM for Node.js"}
+nav_prev: {"path": "../redisom-for-java/index.md", "title": "RedisOM for Java"}
+nav_next: {"path": "../redisom-for-node-js/index.md", "title": "RedisOM for Node.js"}
 ---
 
 # RedisOM for .NET

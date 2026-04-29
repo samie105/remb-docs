@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/streaming/index.md", "title": "Streaming"}
-nav_next: {"path": "nextjs/docs/app/guides/testing/index.md", "title": "Testing"}
+nav_prev: {"path": "../streaming/index.md", "title": "Streaming"}
+nav_next: {"path": "../testing/index.md", "title": "Testing"}
 ---
 
 # How to install Tailwind CSS v3 in your Next.js application

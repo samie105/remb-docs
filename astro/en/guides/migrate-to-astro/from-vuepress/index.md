@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:13.382Z"
 content_hash: "9298762b285ada916e1d50d2054c0b23173bdecc3e43431be8ec0e02ba11bed8"
 menu_path: ["Migrating from VuePress"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-sveltekit/index.md", "title": "Migrating from SvelteKit"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/from-wordpress/index.md", "title": "Migrating from WordPress"}
+nav_prev: {"path": "../from-sveltekit/index.md", "title": "Migrating from SvelteKit"}
+nav_next: {"path": "../from-wordpress/index.md", "title": "Migrating from WordPress"}
 ---
 
 # Migrating from VuePress

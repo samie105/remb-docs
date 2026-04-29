@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:43.487Z"
 content_hash: "7b1baf1814137ae1a7b66d82dbdb7c616e938ef8444f2ac8ad3afc78c44ee9ec"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query documents","→","Index and query documents"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query documents","→","Index and query documents"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/produsage/index.md", "title": "Production usage"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/transpipe/index.md", "title": "Pipelines and transactions"}
+nav_prev: {"path": "../produsage/index.md", "title": "Production usage"}
+nav_next: {"path": "../transpipe/index.md", "title": "Pipelines and transactions"}
 ---
 
 # Index and query documents

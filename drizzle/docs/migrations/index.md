@@ -10,8 +10,8 @@ content_hash: "d5c918c0df4745ff7a09a8f40fa933a741e70b853f575c8e84592e5d9056fba9"
 menu_path: ["Drizzle migrations fundamentals"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/data-querying/index.md", "title": "Drizzle Queries + CRUD"}
-nav_next: {"path": "drizzle/docs/get-started-postgresql/index.md", "title": "Drizzle <> PostgreSQL"}
+nav_prev: {"path": "../data-querying/index.md", "title": "Drizzle Queries + CRUD"}
+nav_next: {"path": "../get-started-postgresql/index.md", "title": "Drizzle <> PostgreSQL"}
 ---
 
 ## Drizzle migrations fundamentals
@@ -26,7 +26,7 @@ There’re multiple production grade ways of managing database migrations. Drizz
 
 #### How can Drizzle help?[](#how-can-drizzle-help)
 
-We’ve built [**drizzle-kit**](drizzle/docs/kit-overview/index.md) - CLI app for managing migrations with Drizzle.
+We’ve built [**drizzle-kit**](../kit-overview/index.md) - CLI app for managing migrations with Drizzle.
 
 ```shell
 drizzle-kit migrate
@@ -49,7 +49,7 @@ It fits in both database and codebase first approaches, it lets you **push your 
 
 > I manage database schema myself using external migration tools or by running SQL migrations directly on my database. From Drizzle I just need to get current state of the schema from my database and save it as TypeScript schema file.
 
-That’s a **database first** approach. You have your database schema as a **source of truth** and Drizzle lets you pull database schema to TypeScript using [`drizzle-kit pull`](drizzle/docs/drizzle-kit-pull/index.md) command.
+That’s a **database first** approach. You have your database schema as a **source of truth** and Drizzle lets you pull database schema to TypeScript using [`drizzle-kit pull`](../drizzle-kit-pull/index.md) command.
 
 ```plaintext
                                   ┌────────────────────────┐      ┌─────────────────────────┐ 
@@ -80,7 +80,7 @@ export const users = p.pgTable("users", {
 > I want to have database schema in my TypeScript codebase, I don’t wanna deal with SQL migration files.  
 > I want Drizzle to “push” my schema directly to the database
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a **source of truth** and Drizzle lets you push schema changes to the database using [`drizzle-kit push`](drizzle/docs/drizzle-kit-push/index.md) command.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a **source of truth** and Drizzle lets you push schema changes to the database using [`drizzle-kit push`](../drizzle-kit-push/index.md) command.
 
 That’s the best approach for rapid prototyping and we’ve seen dozens of teams and solo developers successfully using it as a primary migrations flow in their production applications.
 
@@ -120,7 +120,7 @@ Add column to `users` table
 
 > I want to have database schema in my TypeScript codebase, I want Drizzle to generate SQL migration files for me and apply them to my database
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](drizzle/docs/drizzle-kit-generate/index.md) and then apply them to the database with [`drizzle-kit migrate`](drizzle/docs/drizzle-kit-migrate/index.md) commands.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](../drizzle-kit-generate/index.md) and then apply them to the database with [`drizzle-kit migrate`](../drizzle-kit-migrate/index.md) commands.
 
 ```typescript
 import * as p from "drizzle-orm/pg-core";
@@ -177,7 +177,7 @@ CREATE TABLE "users" (
 
 > I want to have database schema in my TypeScript codebase, I want Drizzle to generate SQL migration files for me and I want Drizzle to apply them during runtime
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](drizzle/docs/drizzle-kit-generate/index.md) and then you can apply them to the database during runtime of your application.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](../drizzle-kit-generate/index.md) and then you can apply them to the database during runtime of your application.
 
 This approach is widely used for **monolithic** applications when you apply database migrations during zero downtime deployment and rollback DDL changes if something fails. This is also used in **serverless** deployments with migrations running in **custom resource** once during deployment process.
 
@@ -247,7 +247,7 @@ await migrate(db);
 
 > I want to have database schema in my TypeScript codebase, I want Drizzle to generate SQL migration files for me, but I will apply them to my database myself or via external migration tools
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](drizzle/docs/drizzle-kit-generate/index.md) and then you can apply them to the database either directly or via external migration tools.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you generate SQL migration files based on your schema changes with [`drizzle-kit generate`](../drizzle-kit-generate/index.md) and then you can apply them to the database either directly or via external migration tools.
 
 ```typescript
 import * as p from "drizzle-orm/pg-core";
@@ -314,7 +314,7 @@ CREATE TABLE "users" (
 
 > I want to have database schema in my TypeScript codebase, I want Drizzle to output the SQL representation of my Drizzle schema to the console, and I will apply them to my database via [Atlas](https://atlasgo.io/guides/orms/drizzle)
 
-That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you export SQL statements based on your schema changes with [`drizzle-kit export`](drizzle/docs/drizzle-kit-generate/index.md) and then you can apply them to the database via [Atlas](https://atlasgo.io/guides/orms/drizzle) or other external SQL migration tools.
+That’s a **codebase first** approach. You have your TypeScript Drizzle schema as a source of truth and Drizzle lets you export SQL statements based on your schema changes with [`drizzle-kit export`](../drizzle-kit-generate/index.md) and then you can apply them to the database via [Atlas](https://atlasgo.io/guides/orms/drizzle) or other external SQL migration tools.
 
 ```typescript
 import * as p from "drizzle-orm/pg-core";

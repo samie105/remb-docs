@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:28.070Z"
 content_hash: "f7be2f2d85759c38906c5c8ca5fc3d890651b23ef072b333a739cb7daa2f91cd"
 menu_path: ["Editor Setup"]
 section_path: []
-nav_prev: {"path": "react/learn/setup/index.md", "title": "Setup"}
-nav_next: {"path": "react/learn/typescript/index.md", "title": "Using TypeScript"}
+nav_prev: {"path": "../setup/index.md", "title": "Setup"}
+nav_next: {"path": "../typescript/index.md", "title": "Using TypeScript"}
 ---
 
 A properly configured editor can make code clearer to read and faster to write. It can even help you catch bugs as you write them! If this is your first time setting up an editor or you’re looking to tune up your current editor, we have a few recommendations.

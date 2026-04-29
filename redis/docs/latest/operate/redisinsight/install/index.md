@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:02.116Z"
 content_hash: "6f6c1fbc5c0da87b16d31ec3dda7f621605a6130a0829ad87532872e82ce29ae"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight"]
-nav_prev: {"path": "redis/docs/latest/operate/redisinsight/configuration/index.md", "title": "Redis Insight configuration settings"}
-nav_next: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-aws/index.md", "title": "Install on AWS EC2"}
+nav_prev: {"path": "../configuration/index.md", "title": "Redis Insight configuration settings"}
+nav_next: {"path": "install-on-aws/index.md", "title": "Install on AWS EC2"}
 ---
 
 # Install Redis Insight

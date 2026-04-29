@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:02.601Z"
 content_hash: "a52922e570a8e409981160e649f5cef25c3ebaf8521519a358832d42ee0cda64"
 menu_path: ["@astrojs/\n\t\t\t\t\tmdx"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/markdoc/index.md", "title": "@astrojs/\n\t\t\t\t\tmarkdoc"}
-nav_next: {"path": "astro/en/guides/integrations-guide/partytown/index.md", "title": "@astrojs/\n\t\t\t\t\tpartytown"}
+nav_prev: {"path": "../markdoc/index.md", "title": "@astrojs/\n\t\t\t\t\tmarkdoc"}
+nav_next: {"path": "../partytown/index.md", "title": "@astrojs/\n\t\t\t\t\tpartytown"}
 ---
 
 # @astrojs/ mdx

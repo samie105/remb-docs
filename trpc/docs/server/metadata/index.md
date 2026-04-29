@@ -9,11 +9,11 @@ last_crawled_at: "2026-04-18T16:49:59.845Z"
 content_hash: "fdf15ed375b45821a3a0c2c0bb0b1edeb1b95a05b79fd66f5049d31433ce240c"
 menu_path: ["Metadata"]
 section_path: []
-nav_prev: {"path": "trpc/docs/server/merging-routers/index.md", "title": "Merging Routers"}
-nav_next: {"path": "trpc/docs/server/middlewares/index.md", "title": "Middlewares"}
+nav_prev: {"path": "../merging-routers/index.md", "title": "Merging Routers"}
+nav_next: {"path": "../middlewares/index.md", "title": "Middlewares"}
 ---
 
-Procedure metadata allows you to add an optional procedure specific `meta` property which will be available in all [middleware](trpc/docs/server/middlewares/index.md) function parameters.
+Procedure metadata allows you to add an optional procedure specific `meta` property which will be available in all [middleware](../middlewares/index.md) function parameters.
 
 tip
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:09.184Z"
 content_hash: "1a4ce2f0bc01ca0da9d23f7c35faf353dda6c4035f05f631fd69f8c9f2c02e23"
 menu_path: ["No matching renderer found."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/no-matching-import/index.md", "title": "No import found for component."}
-nav_next: {"path": "astro/en/reference/errors/no-matching-static-path-found/index.md", "title": "No static path found for requested path."}
+nav_prev: {"path": "../no-matching-import/index.md", "title": "No import found for component."}
+nav_next: {"path": "../no-matching-static-path-found/index.md", "title": "No static path found for requested path."}
 ---
 
 # No matching renderer found.

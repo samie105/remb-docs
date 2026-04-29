@@ -10,8 +10,8 @@ content_hash: "5dab73cac5f26f4b15c5c3fb08a63fd2aa8a559aa70dc0d2ecc7f8f1f824af4e"
 menu_path: ["Testing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/fundamentals/web_dev/index.md", "title": "Web development"}
-nav_next: {"path": "deno/runtime/fundamentals/debugging/index.md", "title": "Debugging"}
+nav_prev: {"path": "../web_dev/index.md", "title": "Web development"}
+nav_next: {"path": "../debugging/index.md", "title": "Debugging"}
 ---
 
 # Run all tests in the current directory and all sub-directories

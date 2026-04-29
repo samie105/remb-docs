@@ -10,13 +10,13 @@ content_hash: "86cfe8566f46e73b32137696ac65d9e6fdc335a1f8f11ff2712964cb150fa011"
 menu_path: ["PostgreSQL: Documentation: 18: F.1. amcheck — tools to verify table and index consistency"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/index.md", "title": "PostgreSQL 18.3 Documentation"}
-nav_next: {"path": "postgres/docs/current/app-dropdb.html/index.md", "title": "PostgreSQL: Documentation: 18: dropdb"}
+nav_prev: {"path": "../index.md", "title": "PostgreSQL 18.3 Documentation"}
+nav_next: {"path": "../app-dropdb.html/index.md", "title": "PostgreSQL: Documentation: 18: dropdb"}
 ---
 
 The `amcheck` module provides functions that allow you to verify the logical consistency of the structure of relations.
 
-The B-Tree checking functions verify various _invariants_ in the structure of the representation of particular relations. The correctness of the access method functions behind index scans and other important operations relies on these invariants always holding. For example, certain functions verify, among other things, that all B-Tree pages have items in “logical” order (e.g., for B-Tree indexes on `text`, index tuples should be in collated lexical order). If that particular invariant somehow fails to hold, we can expect binary searches on the affected page to incorrectly guide index scans, resulting in wrong answers to SQL queries. If the structure appears to be valid, no error is raised. While these checking functions are run, the [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
+The B-Tree checking functions verify various _invariants_ in the structure of the representation of particular relations. The correctness of the access method functions behind index scans and other important operations relies on these invariants always holding. For example, certain functions verify, among other things, that all B-Tree pages have items in “logical” order (e.g., for B-Tree indexes on `text`, index tuples should be in collated lexical order). If that particular invariant somehow fails to hold, we can expect binary searches on the affected page to incorrectly guide index scans, resulting in wrong answers to SQL queries. If the structure appears to be valid, no error is raised. While these checking functions are run, the [search\_path](../runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
 
 Verification is performed using the same procedures as those used by index scans themselves, which may be user-defined operator class code. For example, B-Tree index verification relies on comparisons made with one or more B-Tree support function 1 routines. See [Section 36.16.3](https://www.postgresql.org/docs/current/xindex.html#XINDEX-SUPPORT "36.16.3. Index Method Support Routines") for details of operator class support functions.
 

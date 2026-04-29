@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:32.585Z"
 content_hash: "6be377564dce16890459b65528cc6bd17a70074d90697c9daf16b03e509b0218"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis benchmark","→","Redis benchmark"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis benchmark","→","Redis benchmark"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/index.md", "title": "Optimizing Redis"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/cpu-profiling/index.md", "title": "Redis CPU profiling"}
+nav_prev: {"path": "../index.md", "title": "Optimizing Redis"}
+nav_next: {"path": "../cpu-profiling/index.md", "title": "Redis CPU profiling"}
 ---
 
 # Redis benchmark

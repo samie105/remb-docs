@@ -11,8 +11,8 @@ menu_path: ["Deploy to Deno Deploy"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-cloudflare/index.md", "title": "Deploy to Cloudflare Workers & Pages"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-vercel/index.md", "title": "Deploy to Vercel Edge Functions & Middleware"}
+nav_prev: {"path": "../deploy-to-cloudflare/index.md", "title": "Deploy to Cloudflare Workers & Pages"}
+nav_next: {"path": "../deploy-to-vercel/index.md", "title": "Deploy to Vercel Edge Functions & Middleware"}
 ---
 
 # Get API info
@@ -121,5 +121,5 @@ prisma-deno-deploy/
 
 -   Add authentication using [Deno KV](https://docs.deno.com/deploy/reference/deno_kv/) for sessions
 -   Add request validation with [Zod](https://zod.dev/)
--   Explore [Prisma Client extensions](prisma/docs/orm/prisma-client/client-extensions/index.md) for custom functionality
--   Set up [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md) for schema versioning in production
+-   Explore [Prisma Client extensions](../../../client-extensions/index.md) for custom functionality
+-   Set up [Prisma Migrate](../../../../prisma-migrate/index.md) for schema versioning in production

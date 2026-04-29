@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:09.197Z"
 content_hash: "3eea037c605aaedcd43b402c935a9a39c7729560a72625ed6c844b76e132c38a"
 menu_path: ["Read stdout from a child process"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/process/spawn-stderr/index.md", "title": "Read stderr from a child process"}
-nav_next: {"path": "bun/docs/guides/process/stdin/index.md", "title": "Read from stdin"}
+nav_prev: {"path": "../spawn-stderr/index.md", "title": "Read stderr from a child process"}
+nav_next: {"path": "../stdin/index.md", "title": "Read from stdin"}
 ---
 
 [Skip to main content](#content-area)

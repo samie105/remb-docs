@@ -10,8 +10,8 @@ content_hash: "d132e2f135281d3fcfb2b6351dc71eda668d7c919b033cf5a569f431bcf6db4e"
 menu_path: ["@std/fs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/front-matter/index.md", "title": "@std/front-matter"}
-nav_next: {"path": "deno/runtime/reference/std/html/index.md", "title": "@std/html"}
+nav_prev: {"path": "../front-matter/index.md", "title": "@std/front-matter"}
+nav_next: {"path": "../html/index.md", "title": "@std/html"}
 ---
 
 **On this page**

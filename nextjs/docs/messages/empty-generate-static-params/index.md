@@ -11,15 +11,15 @@ menu_path: ["Empty generateStaticParams with Cache Components"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
-nav_next: {"path": "nextjs/docs/messages/google-font-display/index.md", "title": "Google Font Display"}
+nav_prev: {"path": "../conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
+nav_next: {"path": "../google-font-display/index.md", "title": "Google Font Display"}
 ---
 
 # Empty generateStaticParams with Cache Components
 
 ## Why This Error Occurred[](#why-this-error-occurred)
 
-You're using [Cache Components](nextjs/docs/app/getting-started/caching/index.md) in your Next.js application, and one of your `generateStaticParams` functions returned an empty array, which causes a build error.
+You're using [Cache Components](../../app/getting-started/caching/index.md) in your Next.js application, and one of your `generateStaticParams` functions returned an empty array, which causes a build error.
 
 When Cache Components is enabled, Next.js performs build-time validation to ensure your routes can be properly prerendered without runtime dynamic access errors. If `generateStaticParams` returns an empty array, Next.js cannot validate that your route won't access dynamic values (like `await cookies()`, `await headers()`, or `await searchParams`) at runtime, which would cause errors.
 
@@ -92,8 +92,8 @@ Using placeholders provides minimal build-time validation and increases the risk
 
 ## Useful Links[](#useful-links)
 
--   [Cache Components Documentation](nextjs/docs/app/getting-started/caching/index.md)
--   [generateStaticParams API Reference](nextjs/docs/app/api-reference/functions/generate-static-params/index.md)
+-   [Cache Components Documentation](../../app/getting-started/caching/index.md)
+-   [generateStaticParams API Reference](../../app/api-reference/functions/generate-static-params/index.md)
 -   [Dynamic Routes with Cache Components](/docs/app/api-reference/file-conventions/dynamic-routes#with-cache-components)
 
 Was this helpful?

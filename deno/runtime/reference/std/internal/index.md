@@ -10,8 +10,8 @@ content_hash: "464f63508a334b2e0265856bfb0fbe564c46da729d3447683567871fb8adfb7d"
 menu_path: ["@std/internal"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/ini/index.md", "title": "@std/ini"}
-nav_next: {"path": "deno/runtime/reference/std/io/index.md", "title": "@std/io"}
+nav_prev: {"path": "../ini/index.md", "title": "@std/ini"}
+nav_next: {"path": "../io/index.md", "title": "@std/io"}
 ---
 
 [Skip to main content](#content)

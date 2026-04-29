@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:06.071Z"
 content_hash: "1eb6716b4e7ad9b54b579c62ff713569f3a23be5ea5ab173b0b8a8d4a581b31a"
 menu_path: ["Start with Supabase","Start with Supabase","AI Tools","AI Tools","Deploy MCP servers","Deploy MCP servers"]
 section_path: ["Start with Supabase","Start with Supabase","AI Tools","AI Tools","Deploy MCP servers","Deploy MCP servers"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/architecture/index.md", "title": "Architecture"}
-nav_next: {"path": "supabase/docs/guides/getting-started/features/index.md", "title": "Features"}
+nav_prev: {"path": "../architecture/index.md", "title": "Architecture"}
+nav_next: {"path": "../features/index.md", "title": "Features"}
 ---
 
 # 

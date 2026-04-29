@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:57.582Z"
 content_hash: "59660b53407b3dd8c07e00f192bf84cec55c4b5b6535ec5b5dfccc6f221b5ec5"
 menu_path: ["Import a TOML file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/import-json5/index.md", "title": "Import a JSON5 file"}
-nav_next: {"path": "bun/docs/guides/runtime/import-yaml/index.md", "title": "Import a YAML file"}
+nav_prev: {"path": "../import-json5/index.md", "title": "Import a JSON5 file"}
+nav_next: {"path": "../import-yaml/index.md", "title": "Import a YAML file"}
 ---
 
 [Skip to main content](#content-area)

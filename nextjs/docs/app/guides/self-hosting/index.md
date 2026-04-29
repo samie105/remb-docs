@@ -11,8 +11,8 @@ menu_path: ["How to self-host your Next.js application"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/scripts/index.md", "title": "How to load and optimize scripts"}
-nav_next: {"path": "nextjs/docs/app/guides/single-page-applications/index.md", "title": "How to build single-page applications with Next.js"}
+nav_prev: {"path": "../scripts/index.md", "title": "How to load and optimize scripts"}
+nav_next: {"path": "../single-page-applications/index.md", "title": "How to build single-page applications with Next.js"}
 ---
 
 # How to self-host your Next.js application

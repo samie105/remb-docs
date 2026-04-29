@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:21.622Z"
 content_hash: "a389bade73cb2efca8683068c07a52b394450c5c7f86cb2ae1bc399067cf36b1"
 menu_path: ["Integrations","Integrations","Supabase Marketplace","Supabase Marketplace"]
 section_path: ["Integrations","Integrations","Supabase Marketplace","Supabase Marketplace"]
-nav_prev: {"path": "supabase/docs/guides/integrations/supabase-for-platforms/index.md", "title": "Supabase for Platforms"}
-nav_next: {"path": "supabase/docs/guides/integrations/vercel-marketplace/index.md", "title": "Vercel Marketplace"}
+nav_prev: {"path": "../supabase-for-platforms/index.md", "title": "Supabase for Platforms"}
+nav_next: {"path": "../vercel-marketplace/index.md", "title": "Vercel Marketplace"}
 ---
 
 # 

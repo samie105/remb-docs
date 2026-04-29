@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:06.475Z"
 content_hash: "522b947d4f0597a222e8f7cf27d299ba70273df908e945e67f7eff6aae18f774"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Go","→","Token bucket rate limiter with Redis and Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Go","→","Token bucket rate limiter with Redis and Go"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
+nav_prev: {"path": "../dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
+nav_next: {"path": "../java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
 ---
 
 # Token bucket rate limiter with Redis and Go

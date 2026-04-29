@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:44.533Z"
 content_hash: "85b7f286c0114d6c173a94d8bb8718947ae0b64086417229b74c59b185e91de6"
 menu_path: ["Render and Commit"]
 section_path: []
-nav_prev: {"path": "react/learn/state-a-components-memory/index.md", "title": "State: A Component's Memory"}
-nav_next: {"path": "react/learn/state-as-a-snapshot/index.md", "title": "State as a Snapshot"}
+nav_prev: {"path": "../state-a-components-memory/index.md", "title": "State: A Component's Memory"}
+nav_next: {"path": "../state-as-a-snapshot/index.md", "title": "State as a Snapshot"}
 ---
 
 Before your components are displayed on screen, they must be rendered by React. Understanding the steps in this process will help you think about how your code executes and explain its behavior.
@@ -87,7 +87,7 @@ In the following example, React will call `Gallery()` and `Image()` several time
 
 ### Pitfall
 
-Rendering must always be a [pure calculation](react/learn/keeping-components-pure/index.md):
+Rendering must always be a [pure calculation](../keeping-components-pure/index.md):
 
 *   **Same inputs, same output.** Given the same inputs, a component should always return the same JSX. (When someone orders a salad with tomatoes, they should not receive a salad with onions!)
 *   **It minds its own business.** It should not change any objects or variables that existed before rendering. (One order should not change anyone else’s order.)

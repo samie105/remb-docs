@@ -10,8 +10,8 @@ content_hash: "2eafd70fa34afb152404b851f3df8d385bcca74400c507b5b1c5ce6b34dae903"
 menu_path: ["deno test"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/task/index.md", "title": "deno task"}
-nav_next: {"path": "deno/runtime/reference/cli/types/index.md", "title": "deno types"}
+nav_prev: {"path": "../task/index.md", "title": "deno task"}
+nav_next: {"path": "../types/index.md", "title": "deno types"}
 ---
 
 **On this page**

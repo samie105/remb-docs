@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:16.640Z"
 content_hash: "dbadec6b3aba7539bc06eee42533f00a768dba87e657b96d5298d71877858638"
 menu_path: ["ButterCMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/builderio/index.md", "title": "Builder.io & Astro"}
-nav_next: {"path": "astro/en/guides/cms/caisy/index.md", "title": "Caisy & Astro"}
+nav_prev: {"path": "../builderio/index.md", "title": "Builder.io & Astro"}
+nav_next: {"path": "../caisy/index.md", "title": "Caisy & Astro"}
 ---
 
 # ButterCMS & Astro

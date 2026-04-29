@@ -11,8 +11,8 @@ menu_path: ["Script"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/link/index.md", "title": "Link"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/index.md", "title": "File-system conventions"}
+nav_prev: {"path": "../link/index.md", "title": "Link"}
+nav_next: {"path": "../../file-conventions/index.md", "title": "File-system conventions"}
 ---
 
 # Script

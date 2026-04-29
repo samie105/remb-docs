@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:31.077Z"
 content_hash: "3aad1f206190a53a0628d8cdbd0421ade5b0513d8d54cbab02384778e4cf3af7"
 menu_path: ["Deploy your Astro Site with Buddy"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/azion/index.md", "title": "Deploy your Astro Site to Azion"}
-nav_next: {"path": "astro/en/guides/deploy/cleavr/index.md", "title": "Deploy your Astro Site with Cleavr"}
+nav_prev: {"path": "../azion/index.md", "title": "Deploy your Astro Site to Azion"}
+nav_next: {"path": "../cleavr/index.md", "title": "Deploy your Astro Site with Cleavr"}
 ---
 
 # Deploy your Astro Site with Buddy

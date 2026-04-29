@@ -11,8 +11,8 @@ menu_path: ["`url` is deprecated"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/sync-dynamic-apis/index.md", "title": "Dynamic APIs are Asynchronous"}
-nav_next: {"path": "nextjs/docs/messages/webpack5/index.md", "title": "Webpack 5 Adoption"}
+nav_prev: {"path": "../sync-dynamic-apis/index.md", "title": "Dynamic APIs are Asynchronous"}
+nav_next: {"path": "../webpack5/index.md", "title": "Webpack 5 Adoption"}
 ---
 
 # \`url\` is deprecated

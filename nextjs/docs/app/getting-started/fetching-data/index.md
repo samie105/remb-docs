@@ -11,8 +11,8 @@ menu_path: ["Fetching Data"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/getting-started/server-and-client-components/index.md", "title": "Server and Client Components"}
-nav_next: {"path": "nextjs/docs/app/getting-started/mutating-data/index.md", "title": "Mutating Data"}
+nav_prev: {"path": "../server-and-client-components/index.md", "title": "Server and Client Components"}
+nav_next: {"path": "../mutating-data/index.md", "title": "Mutating Data"}
 ---
 
 # Fetching Data

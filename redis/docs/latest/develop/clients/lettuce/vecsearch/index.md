@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:40.764Z"
 content_hash: "7f54326b1a590dd6083e5505078765c967e0aae20141fe306df656b987737898"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Index and query vectors","→","Index and query vectors"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Index and query vectors","→","Index and query vectors"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/queryjson/index.md", "title": "Index and query documents"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/index.md", "title": "node-redis guide (JavaScript)"}
+nav_prev: {"path": "../queryjson/index.md", "title": "Index and query documents"}
+nav_next: {"path": "../../nodejs/index.md", "title": "node-redis guide (JavaScript)"}
 ---
 
 # Index and query vectors

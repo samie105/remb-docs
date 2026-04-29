@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:56.986Z"
 content_hash: "c0efa5582dbb2af2e1a6753867ba8c67004435c68f484e41f110ad5f9c70914d"
 menu_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Access Control","Access Control"]
 section_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Access Control","Access Control"]
-nav_prev: {"path": "supabase/docs/guides/platform/index.md", "title": "Supabase Platform"}
-nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/index.md", "title": "AWS Marketplace"}
+nav_prev: {"path": "../index.md", "title": "Supabase Platform"}
+nav_next: {"path": "../aws-marketplace/index.md", "title": "AWS Marketplace"}
 ---
 
 # 

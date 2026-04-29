@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:46.769Z"
 content_hash: "95fb8b7aaac38405535e4c32abb9028c6f43c0042a8149321b9b7eded902f2bd"
 menu_path: ["TypeScript"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Type-Providers/index.md", "title": "Type-Providers"}
-nav_next: {"path": "fastify/docs/latest/Reference/Validation-and-Serialization/index.md", "title": "Validation-and-Serialization"}
+nav_prev: {"path": "../Type-Providers/index.md", "title": "Type-Providers"}
+nav_next: {"path": "../Validation-and-Serialization/index.md", "title": "Validation-and-Serialization"}
 ---
 
 Version: latest (v5.8.x)

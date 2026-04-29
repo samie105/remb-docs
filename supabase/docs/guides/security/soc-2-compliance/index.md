@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:13.689Z"
 content_hash: "177618e65db07f5362803468aa68e93522165041fcd7edd587a59fe9f011f479"
 menu_path: ["Security","Security","Compliance","Compliance","SOC 2","SOC 2"]
 section_path: ["Security","Security","Compliance","Compliance","SOC 2","SOC 2"]
-nav_prev: {"path": "supabase/docs/guides/security/security-testing/index.md", "title": "Security testing of your Supabase projects"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/index.md", "title": "Self-Hosting"}
+nav_prev: {"path": "../security-testing/index.md", "title": "Security testing of your Supabase projects"}
+nav_next: {"path": "../../self-hosting/index.md", "title": "Self-Hosting"}
 ---
 
 # Meeting compliance requirements

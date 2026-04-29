@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:10.181Z"
 content_hash: "345a1c9c3464f34eae89ccc7251229b7b690bdb492a3173aaa1f013cbaa14c66"
 menu_path: ["Platform","Platform","Billing","Billing","Billing FAQ","Billing FAQ"]
 section_path: ["Platform","Platform","Billing","Billing","Billing FAQ","Billing FAQ"]
-nav_prev: {"path": "supabase/docs/guides/platform/backups/index.md", "title": "Database Backups"}
-nav_next: {"path": "supabase/docs/guides/platform/billing-on-supabase/index.md", "title": "About billing on Supabase"}
+nav_prev: {"path": "../backups/index.md", "title": "Database Backups"}
+nav_next: {"path": "../billing-on-supabase/index.md", "title": "About billing on Supabase"}
 ---
 
 # 

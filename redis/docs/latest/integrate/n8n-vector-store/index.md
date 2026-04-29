@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:33.240Z"
 content_hash: "fb31c965c98f360c5e5a06871b3d117e6c6a9f0832fea080507889c2dc7788f3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        n8n Redis vector store","→","n8n Redis vector store"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        n8n Redis vector store","→","n8n Redis vector store"]
-nav_prev: {"path": "redis/docs/latest/integrate/lettuce/index.md", "title": "Java client for Redis"}
-nav_next: {"path": "redis/docs/latest/integrate/nagios-with-redis-enterprise/index.md", "title": "Nagios with Redis Software"}
+nav_prev: {"path": "../lettuce/index.md", "title": "Java client for Redis"}
+nav_next: {"path": "../nagios-with-redis-enterprise/index.md", "title": "Nagios with Redis Software"}
 ---
 
 # n8n Redis vector store

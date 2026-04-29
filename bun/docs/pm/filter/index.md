@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:48.479Z"
 content_hash: "dfa4e53f280f8e38a568292fce272ca4358ab33620ce25edd445e6a1d3f81265"
 menu_path: ["bun --filter"]
 section_path: []
-nav_prev: {"path": "bun/docs/pm/cli/why/index.md", "title": "bun why"}
-nav_next: {"path": "bun/docs/pm/global-cache/index.md", "title": "Global cache"}
+nav_prev: {"path": "../cli/why/index.md", "title": "bun why"}
+nav_next: {"path": "../global-cache/index.md", "title": "Global cache"}
 ---
 
 # Install dependencies for all workspaces except `pkg-c`
@@ -35,7 +35,7 @@ bun outdated --filter 'pkg-*'
 bun outdated --filter './'
 ```
 
-For more information on both these commands, see [`bun install`](bun/docs/pm/cli/install/index.md) and [`bun outdated`](bun/docs/pm/cli/outdated/index.md).
+For more information on both these commands, see [`bun install`](../cli/install/index.md) and [`bun outdated`](../cli/outdated/index.md).
 
 * * *
 
@@ -74,7 +74,7 @@ Both commands will be run in parallel, and you will see a nice terminal UI showi
 
 ### Running scripts in workspaces
 
-Filters respect your [workspace configuration](bun/docs/pm/workspaces/index.md): If you have a `package.json` file that specifies which packages are part of the workspace, `--filter` will be restricted to only these packages. Also, in a workspace you can use `--filter` to run scripts in packages that are located anywhere in the workspace:
+Filters respect your [workspace configuration](../workspaces/index.md): If you have a `package.json` file that specifies which packages are part of the workspace, `--filter` will be restricted to only these packages. Also, in a workspace you can use `--filter` to run scripts in packages that are located anywhere in the workspace:
 
 terminal
 

@@ -10,8 +10,8 @@ content_hash: "245d496fb1982181451ed29f79f5c04323e16bf6087ded84d8e3ac3051de86d1"
 menu_path: ["PostgreSQL: Documentation: 18: 35.3. information_schema_catalog_name"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
-nav_next: {"path": "postgres/docs/current/infoschema-key-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.32.\u00a0key_column_usage"}
+nav_prev: {"path": "../infoschema-foreign-tables.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.31.\u00a0foreign_tables"}
+nav_next: {"path": "../infoschema-key-column-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.32.\u00a0key_column_usage"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-information-schema-catalog-name.html "PostgreSQL devel - 35.3. information_schema_catalog_name")

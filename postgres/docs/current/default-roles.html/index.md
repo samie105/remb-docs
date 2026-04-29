@@ -10,8 +10,8 @@ content_hash: "d047d14d596cdf33b668d2334a7f99ce3c419d948ccfb2f22d534ac05b3c3c1f"
 menu_path: ["PostgreSQL: Documentation: 18: O.2. Default Roles Renamed to Predefined Roles"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/ddl-system-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.6.\u00a0System Columns"}
-nav_next: {"path": "postgres/docs/current/dict-int.html/index.md", "title": "PostgreSQL: Documentation: 18: F.12.\u00a0dict_int \u2014 example full-text search dictionary for integers"}
+nav_prev: {"path": "../ddl-system-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.6.\u00a0System Columns"}
+nav_next: {"path": "../dict-int.html/index.md", "title": "PostgreSQL: Documentation: 18: F.12.\u00a0dict_int \u2014 example full-text search dictionary for integers"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/default-roles.html "PostgreSQL devel - O.2. Default Roles Renamed to Predefined Roles")

@@ -11,8 +11,8 @@ menu_path: ["not-found.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/mdx-components/index.md", "title": "mdx-components.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/page/index.md", "title": "page.js"}
+nav_prev: {"path": "../mdx-components/index.md", "title": "mdx-components.js"}
+nav_next: {"path": "../page/index.md", "title": "page.js"}
 ---
 
 # not-found.js

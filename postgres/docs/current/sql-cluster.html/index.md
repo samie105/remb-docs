@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:03.954Z"
 content_hash: "b6263ae483ee884c9fc0aa843e5b86e1f3d2b9e5e050e6da7d6c76efdf76ad70"
 menu_path: ["PostgreSQL: Documentation: 18: CLUSTER"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-close.html/index.md", "title": "PostgreSQL: Documentation: 18: CLOSE"}
-nav_next: {"path": "postgres/docs/current/sql-comment.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMENT"}
+nav_prev: {"path": "../sql-close.html/index.md", "title": "PostgreSQL: Documentation: 18: CLOSE"}
+nav_next: {"path": "../sql-comment.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMENT"}
 ---
 
 CLUSTER — cluster a table according to an index
@@ -61,13 +61,13 @@ In cases where you are accessing single rows randomly within a table, the actual
 
 `CLUSTER` can re-sort the table using either an index scan on the specified index, or (if the index is a b-tree) a sequential scan followed by sorting. It will attempt to choose the method that will be faster, based on planner cost parameters and available statistical information.
 
-While `CLUSTER` is running, the [search\_path](postgres/docs/current/runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
+While `CLUSTER` is running, the [search\_path](../runtime-config-client.html/index.md#GUC-SEARCH-PATH) is temporarily changed to `pg_catalog, pg_temp`.
 
 When an index scan is used, a temporary copy of the table is created that contains the table data in the index order. Temporary copies of each index on the table are created as well. Therefore, you need free space on disk at least equal to the sum of the table size and the index sizes.
 
-When a sequential scan and sort is used, a temporary sort file is also created, so that the peak temporary space requirement is as much as double the table size, plus the index sizes. This method is often faster than the index scan method, but if the disk space requirement is intolerable, you can disable this choice by temporarily setting [enable\_sort](postgres/docs/current/runtime-config-query.html/index.md#GUC-ENABLE-SORT) to `off`.
+When a sequential scan and sort is used, a temporary sort file is also created, so that the peak temporary space requirement is as much as double the table size, plus the index sizes. This method is often faster than the index scan method, but if the disk space requirement is intolerable, you can disable this choice by temporarily setting [enable\_sort](../runtime-config-query.html/index.md#GUC-ENABLE-SORT) to `off`.
 
-It is advisable to set [maintenance\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM) to a reasonably large value (but not more than the amount of RAM you can dedicate to the `CLUSTER` operation) before clustering.
+It is advisable to set [maintenance\_work\_mem](../runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM) to a reasonably large value (but not more than the amount of RAM you can dedicate to the `CLUSTER` operation) before clustering.
 
 Because the planner records statistics about the ordering of tables, it is advisable to run [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") on the newly clustered table. Otherwise, the planner might make poor choices of query plans.
 

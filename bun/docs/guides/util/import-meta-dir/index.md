@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:59.452Z"
 content_hash: "13ec58feeb9b8ae612555833ed1860790a8286888f8a141b2bf90a888b3b63b2"
 menu_path: ["Get the directory of the current file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/hash-a-password/index.md", "title": "Hash a password"}
-nav_next: {"path": "bun/docs/guides/util/import-meta-file/index.md", "title": "Get the file name of the current file"}
+nav_prev: {"path": "../hash-a-password/index.md", "title": "Hash a password"}
+nav_next: {"path": "../import-meta-file/index.md", "title": "Get the file name of the current file"}
 ---
 
 [Skip to main content](#content-area)

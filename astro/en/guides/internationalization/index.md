@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:14.534Z"
 content_hash: "a766ce168fd8edbd3a402ab638e2d62c48bfd481e168d4b90640e76c8b0fe2e9"
 menu_path: ["Internationalization (i18n) Routing"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/middleware/index.md", "title": "Middleware"}
-nav_next: {"path": "astro/en/guides/prefetch/index.md", "title": "Prefetch"}
+nav_prev: {"path": "../middleware/index.md", "title": "Middleware"}
+nav_next: {"path": "../prefetch/index.md", "title": "Prefetch"}
 ---
 
 # Internationalization (i18n) Routing

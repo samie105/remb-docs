@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:57.200Z"
 content_hash: "33ba45b681d7a85b71fb81ae0ebbc3d8ad17e0e2f84e57fc85f98d5819596665"
 menu_path: ["Directus & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/decap-cms/index.md", "title": "Decap CMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/drupal/index.md", "title": "Drupal & Astro"}
+nav_prev: {"path": "../decap-cms/index.md", "title": "Decap CMS & Astro"}
+nav_next: {"path": "../drupal/index.md", "title": "Drupal & Astro"}
 ---
 
 # Directus & Astro

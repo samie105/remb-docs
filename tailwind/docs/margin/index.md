@@ -10,8 +10,8 @@ content_hash: "1beadf4db63e298d4fdd05ecf342ee17cfc0ed456fb22530cda0b2a09d33b8f1"
 menu_path: ["margin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/padding/index.md", "title": "padding"}
-nav_next: {"path": "tailwind/docs/width/index.md", "title": "width"}
+nav_prev: {"path": "../padding/index.md", "title": "padding"}
+nav_next: {"path": "../width/index.md", "title": "width"}
 ---
 
 Utilities for controlling an element's margin.
@@ -132,9 +132,9 @@ If your elements are in reverse order (using say `flex-row-reverse` or `flex-col
 
 The space utilities are really just a shortcut for adding margin to all-but-the-last-item in a group, and aren't designed to handle complex cases like grids, layouts that wrap, or situations where the children are rendered in a complex custom order rather than their natural DOM order.
 
-For those situations, it's better to use the [gap utilities](tailwind/docs/gap/index.md) when possible, or add margin to every element with a matching negative margin on the parent.
+For those situations, it's better to use the [gap utilities](../gap/index.md) when possible, or add margin to every element with a matching negative margin on the parent.
 
-Additionally, the space utilities are not designed to work together with the [divide utilities](tailwind/docs/border-width/index.md#between-children). For those situations, consider adding margin/padding utilities to the children instead.
+Additionally, the space utilities are not designed to work together with the [divide utilities](../border-width/index.md#between-children). For those situations, consider adding margin/padding utilities to the children instead.
 
 ### [Using a custom value](#using-a-custom-value)
 
@@ -160,7 +160,7 @@ Prefix a `margin` utility with a breakpoint variant like `md:` to only apply the
 <div class="mt-4 md:mt-8 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -170,4 +170,4 @@ The `m-<number>`,`mx-<number>`,`my-<number>`,`ms-<number>`,`me-<number>`,`mbs-<n
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](../theme/index.md).

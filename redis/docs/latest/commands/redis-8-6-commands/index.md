@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:11.842Z"
 content_hash: "ed90437f15e3872856006b15ee6d34da90366ffa15a15157e8978a3fcbd30a15"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.6 Commands Reference","→","Redis 8.6 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.6 Commands Reference","→","Redis 8.6 Commands Reference"]
-nav_prev: {"path": "redis/docs/latest/commands/redis-8-4-commands/index.md", "title": "Redis 8.4 Commands Reference"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/index.md", "title": "RedisVL"}
+nav_prev: {"path": "../redis-8-4-commands/index.md", "title": "Redis 8.4 Commands Reference"}
+nav_next: {"path": "../../develop/ai/redisvl/index.md", "title": "RedisVL"}
 ---
 
 # Redis 8.6 Commands Reference

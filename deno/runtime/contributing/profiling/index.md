@@ -10,8 +10,8 @@ content_hash: "6ade55c8bf1f85254456175cf22b1abbe13e9ed5040cf2b2bb75095cfd20862d"
 menu_path: ["Contributing and support"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/contributing/architecture/index.md", "title": "Architecture Overview"}
-nav_next: {"path": "deno/runtime/contributing/release_schedule/index.md", "title": "Release Schedule"}
+nav_prev: {"path": "../architecture/index.md", "title": "Architecture Overview"}
+nav_next: {"path": "../release_schedule/index.md", "title": "Release Schedule"}
 ---
 
 # Basic usage

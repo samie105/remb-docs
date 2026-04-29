@@ -11,8 +11,8 @@ menu_path: ["useLinkStatus"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/updateTag/index.md", "title": "updateTag"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-params/index.md", "title": "useParams"}
+nav_prev: {"path": "../updateTag/index.md", "title": "updateTag"}
+nav_next: {"path": "../use-params/index.md", "title": "useParams"}
 ---
 
 # useLinkStatus

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:01.052Z"
 content_hash: "6e64ed9d368300af115ddddf50901df5c49ac87d88e0a53d414784294fa7f94f"
 menu_path: ["Database","Database","More","More","More","Replication","Replication","Monitoring","Monitoring"]
 section_path: ["Database","Database","More","More","More","Replication","Replication","Monitoring","Monitoring"]
-nav_prev: {"path": "supabase/docs/guides/database/replication/replication-faq/index.md", "title": "Replication FAQ"}
-nav_next: {"path": "supabase/docs/guides/database/replication/replication-setup/index.md", "title": "Replication Setup"}
+nav_prev: {"path": "../replication-faq/index.md", "title": "Replication FAQ"}
+nav_next: {"path": "../replication-setup/index.md", "title": "Replication Setup"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:02.472Z"
 content_hash: "ad72cfdcbb63b3b833a03b83ae826e099b13f037d440256346fe964c5f245bce"
 menu_path: ["Islands architecture"]
 section_path: []
-nav_prev: {"path": "astro/en/concepts/why-astro/index.md", "title": "Why Astro?"}
-nav_next: {"path": "astro/en/astro-courses/index.md", "title": "Astro Courses"}
+nav_prev: {"path": "../why-astro/index.md", "title": "Why Astro?"}
+nav_next: {"path": "../../astro-courses/index.md", "title": "Astro Courses"}
 ---
 
 # Islands architecture

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:55.568Z"
 content_hash: "a151905786674c618021f66835e30469165e17db1fdd531e165c9225f2527cd4"
 menu_path: ["PostgreSQL: Documentation: 18: SHOW"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-set.html/index.md", "title": "PostgreSQL: Documentation: 18: SET"}
-nav_next: {"path": "postgres/docs/current/sql-start-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: START TRANSACTION"}
+nav_prev: {"path": "../sql-set.html/index.md", "title": "PostgreSQL: Documentation: 18: SET"}
+nav_next: {"path": "../sql-start-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: START TRANSACTION"}
 ---
 
 SHOW — show the value of a run-time parameter

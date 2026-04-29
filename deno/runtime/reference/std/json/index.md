@@ -10,8 +10,8 @@ content_hash: "6d4f8642e29be32eb60bdb0f20cec8ea5b97cf6ddef8e1c8e8c29bbb56a8275f"
 menu_path: ["@std/json"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/io/index.md", "title": "@std/io"}
-nav_next: {"path": "deno/runtime/reference/std/jsonc/index.md", "title": "@std/jsonc"}
+nav_prev: {"path": "../io/index.md", "title": "@std/io"}
+nav_next: {"path": "../jsonc/index.md", "title": "@std/jsonc"}
 ---
 
 **On this page**

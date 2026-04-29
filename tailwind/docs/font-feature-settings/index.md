@@ -10,8 +10,8 @@ content_hash: "8ceb5430d76ed99a9ee043219d119811538730e2dd2106502b0af144aa1d1ca4"
 menu_path: ["font-feature-settings"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/font-variant-numeric/index.md", "title": "font-variant-numeric"}
-nav_next: {"path": "tailwind/docs/letter-spacing/index.md", "title": "letter-spacing"}
+nav_prev: {"path": "../font-variant-numeric/index.md", "title": "font-variant-numeric"}
+nav_next: {"path": "../letter-spacing/index.md", "title": "letter-spacing"}
 ---
 
 # font-feature-settings

@@ -10,8 +10,8 @@ content_hash: "8a900bf451d4e20015c5af40fabeae0810784a987f88fd2ec9c772907762466f"
 menu_path: ["FFI - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/deno/fetch/index.md", "title": "Fetch - Deno documentation"}
-nav_next: {"path": "deno/api/deno/file-system/index.md", "title": "File System - Deno documentation"}
+nav_prev: {"path": "../fetch/index.md", "title": "Fetch - Deno documentation"}
+nav_next: {"path": "../file-system/index.md", "title": "File System - Deno documentation"}
 ---
 
 c

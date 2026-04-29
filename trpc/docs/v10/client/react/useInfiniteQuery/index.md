@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:11.834Z"
 content_hash: "fb59bf5182b61058747949b3c7609692be5e4b39035709d657fe42ea7b90029d"
 menu_path: ["useInfiniteQuery"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/react/suspense/index.md", "title": "Suspense"}
-nav_next: {"path": "trpc/docs/v10/client/react/useMutation/index.md", "title": "useMutation()"}
+nav_prev: {"path": "../suspense/index.md", "title": "Suspense"}
+nav_next: {"path": "../useMutation/index.md", "title": "useMutation()"}
 ---
 
 info

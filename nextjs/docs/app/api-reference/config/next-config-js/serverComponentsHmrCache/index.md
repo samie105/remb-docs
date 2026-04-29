@@ -11,8 +11,8 @@ menu_path: ["serverComponentsHmrCache"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverActions/index.md", "title": "serverActions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
+nav_prev: {"path": "../serverActions/index.md", "title": "serverActions"}
+nav_next: {"path": "../serverExternalPackages/index.md", "title": "serverExternalPackages"}
 ---
 
 # serverComponentsHmrCache

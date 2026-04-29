@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:44.739Z"
 content_hash: "4197a180ba9cca24a63e43e601ec92a48e518d734ee9eec91f6c5946fe4bafb3"
 menu_path: ["Bun APIs"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/binary-data/index.md", "title": "Binary Data"}
-nav_next: {"path": "bun/docs/runtime/bunfig/index.md", "title": "bunfig.toml"}
+nav_prev: {"path": "../binary-data/index.md", "title": "Binary Data"}
+nav_next: {"path": "../bunfig/index.md", "title": "bunfig.toml"}
 ---
 
 [Skip to main content](#content-area)

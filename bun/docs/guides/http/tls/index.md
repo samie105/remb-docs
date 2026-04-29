@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:54.852Z"
 content_hash: "d40f6352ad04d7db46eb3924f6da599e7eb6dd6e8f38768c77a4650ab70041a7"
 menu_path: ["Configure TLS on an HTTP server"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/http/stream-node-streams-in-bun/index.md", "title": "Streaming HTTP Server with Node.js Streams"}
-nav_next: {"path": "bun/docs/guides/install/add/index.md", "title": "Add a dependency"}
+nav_prev: {"path": "../stream-node-streams-in-bun/index.md", "title": "Streaming HTTP Server with Node.js Streams"}
+nav_next: {"path": "../../install/add/index.md", "title": "Add a dependency"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:48.430Z"
 content_hash: "5fc96442b3b869d015c2d8e3da4ef0a9edce1b4725b0b13afc7d7aafd400957f"
 menu_path: ["Middleware"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Logging/index.md", "title": "Logging"}
-nav_next: {"path": "fastify/docs/latest/Reference/Plugins/index.md", "title": "Plugins"}
+nav_prev: {"path": "../Logging/index.md", "title": "Logging"}
+nav_next: {"path": "../Plugins/index.md", "title": "Plugins"}
 ---
 
 Version: latest (v5.8.x)

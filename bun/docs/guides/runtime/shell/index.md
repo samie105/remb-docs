@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:15.082Z"
 content_hash: "109610d2542791cafdf834cea268190e4a3356cf566ecef72626879ba48bcf89"
 menu_path: ["Run a Shell Command"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/set-env/index.md", "title": "Set environment variables"}
-nav_next: {"path": "bun/docs/guides/runtime/timezone/index.md", "title": "Set a time zone in Bun"}
+nav_prev: {"path": "../set-env/index.md", "title": "Set environment variables"}
+nav_next: {"path": "../timezone/index.md", "title": "Set a time zone in Bun"}
 ---
 
 [Skip to main content](#content-area)

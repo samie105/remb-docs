@@ -10,8 +10,8 @@ content_hash: "26494c187ed23d5652f664b49a535b2a33f03eb18399282f24fd62b215e472f8"
 menu_path: ["deno completions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/create/index.md", "title": "deno create"}
-nav_next: {"path": "deno/runtime/reference/cli/coverage/index.md", "title": "deno coverage"}
+nav_prev: {"path": "../create/index.md", "title": "deno create"}
+nav_next: {"path": "../coverage/index.md", "title": "deno coverage"}
 ---
 
 **On this page**

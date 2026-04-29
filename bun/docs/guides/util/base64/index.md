@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:38.749Z"
 content_hash: "714ec0d8e05c3bd9a934d50514abb0a21fb8bd960ba2fcbbda87f0d001b31d07"
 menu_path: ["Encode and decode base64 strings"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/watch-mode/index.md", "title": "Run tests in watch mode with Bun"}
-nav_next: {"path": "bun/docs/guides/util/deep-equals/index.md", "title": "Check if two objects are deeply equal"}
+nav_prev: {"path": "../../test/watch-mode/index.md", "title": "Run tests in watch mode with Bun"}
+nav_next: {"path": "../deep-equals/index.md", "title": "Check if two objects are deeply equal"}
 ---
 
 [Skip to main content](#content-area)

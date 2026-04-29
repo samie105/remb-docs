@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:25.159Z"
 content_hash: "53574aa62d3fc364fa30ed035449dbd41a0b54308fdcc96494403eeb85b2a8ff"
 menu_path: ["Development tips"]
 section_path: []
-nav_prev: {"path": "supabase/docs/guides/functions/development-environment/index.md", "title": "Development Environment"}
-nav_next: {"path": "supabase/docs/guides/functions/ephemeral-storage/index.md", "title": "File Storage"}
+nav_prev: {"path": "../development-environment/index.md", "title": "Development Environment"}
+nav_next: {"path": "../ephemeral-storage/index.md", "title": "File Storage"}
 ---
 
 # 

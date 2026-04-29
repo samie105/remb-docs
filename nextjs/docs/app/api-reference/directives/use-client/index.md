@@ -11,8 +11,8 @@ menu_path: ["use client"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-cache-remote/index.md", "title": "use cache: remote"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-server/index.md", "title": "use server"}
+nav_prev: {"path": "../use-cache-remote/index.md", "title": "use cache: remote"}
+nav_next: {"path": "../use-server/index.md", "title": "use server"}
 ---
 
 # use client

@@ -10,8 +10,8 @@ content_hash: "b9d26846b05bd4a76ae875def97f629ecf8d8d6b90877fa3830dca8a5bb2cea3"
 menu_path: ["Migrating to Relational Queries version 2"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/upgrade-v1/index.md", "title": "Upgrading to Drizzle v1 RC"}
-nav_next: {"path": "drizzle/docs/sql-schema-declaration/index.md", "title": "Drizzle schema"}
+nav_prev: {"path": "../upgrade-v1/index.md", "title": "Upgrading to Drizzle v1 RC"}
+nav_next: {"path": "../sql-schema-declaration/index.md", "title": "Drizzle schema"}
 ---
 
 ## Migrating to Relational Queries version 2
@@ -326,7 +326,7 @@ export const relations = defineRelations(schema, (r) => ({
 
 There are a few new function were added to custom types, so you can control how data is mapped on Relational Queries v2:
 
-Optional mapping function, that is used for transforming data returned by transformed to JSON in database data to desired format For example, when querying bigint column via [RQB](drizzle/docs/rqb-v2/index.md) or [JSON functions](drizzle/docs/json-functions/index.md), the result field will be returned as it’s string representation, as opposed to bigint from regular query To handle that, we need a separate function to handle such field’s mapping:
+Optional mapping function, that is used for transforming data returned by transformed to JSON in database data to desired format For example, when querying bigint column via [RQB](../rqb-v2/index.md) or [JSON functions](../json-functions/index.md), the result field will be returned as it’s string representation, as opposed to bigint from regular query To handle that, we need a separate function to handle such field’s mapping:
 
 ```ts
 fromJson(value: string): bigint {
@@ -350,7 +350,7 @@ to:
 }
 ```
 
-Optional selection modifier function, that is used for modifying selection of column inside [JSON functions](drizzle/docs/json-functions/index.md) Additional mapping that could be required for such scenarios can be handled using fromJson function Used by [relational queries](drizzle/docs/rqb-v2/index.md)
+Optional selection modifier function, that is used for modifying selection of column inside [JSON functions](../json-functions/index.md) Additional mapping that could be required for such scenarios can be handled using fromJson function Used by [relational queries](../rqb-v2/index.md)
 
 For example, when using bigint we need to cast field to text to preserve data integrity
 
@@ -578,7 +578,7 @@ const response = db.query.users.findMany({
 });
 ```
 
-For a complete API Reference please check our [Select Filters docs](drizzle/docs/rqb-v2/index.md#select-filters)
+For a complete API Reference please check our [Select Filters docs](../rqb-v2/index.md#select-filters)
 
 Complex filter example using RAW
 
@@ -765,13 +765,13 @@ If you had MySQL dialect, you can remove `mode` from `drizzle()` as long as it�
 
 ##### Manual migration[](#manual-migration)
 
-If you want to migrate manually, you can check our [Drizzle Relations section](drizzle/docs/relations-v2/index.md) for the complete API reference and examples of one-to-one, one-to-many, and many-to-many relations.
+If you want to migrate manually, you can check our [Drizzle Relations section](../relations-v2/index.md) for the complete API reference and examples of one-to-one, one-to-many, and many-to-many relations.
 
 #### How to migrate queries from v1 to v2[](#how-to-migrate-queries-from-v1-to-v2)
 
 ##### Migrate `where` statements[](#migrate-where-statements)
 
-You can check our [Select Filters docs](drizzle/docs/rqb-v2/index.md#select-filters) to see examples and a complete API reference.
+You can check our [Select Filters docs](../rqb-v2/index.md#select-filters) to see examples and a complete API reference.
 
 With the new syntax, you can use `AND`, `OR`, `NOT`, and `RAW`, plus all the filtering operators that were previously available in Relations v1.
 

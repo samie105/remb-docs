@@ -10,8 +10,8 @@ content_hash: "a8c71d25ea3c6c400e3769b91839f43749e3104c0229a91c3d58ff0a4a16d7f5"
 menu_path: ["PostgreSQL: Documentation: 18: 5.14. Other Database Objects"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/ddl-inherit.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.11.\u00a0Inheritance"}
-nav_next: {"path": "postgres/docs/current/ddl-partitioning.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.12.\u00a0Table Partitioning"}
+nav_prev: {"path": "../ddl-inherit.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.11.\u00a0Inheritance"}
+nav_next: {"path": "../ddl-partitioning.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.12.\u00a0Table Partitioning"}
 ---
 
 Tables are the central objects in a relational database structure, because they hold your data. But they are not the only objects that exist in a database. Many other kinds of objects can be created to make the use and management of the data more efficient or convenient. They are not discussed in this chapter, but we give you a list here so that you are aware of what is possible:

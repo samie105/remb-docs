@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:54.401Z"
 content_hash: "8b63ab84e66a9be50730f934c0754238550a5cbef486bc7e8b3eb46a753ab3ba"
 menu_path: ["Unsupported transform in content config."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/unknown-vite-error/index.md", "title": "Unknown Vite Error."}
-nav_next: {"path": "astro/en/reference/errors/unsupported-external-redirect/index.md", "title": "Unsupported or malformed URL."}
+nav_prev: {"path": "../unknown-vite-error/index.md", "title": "Unknown Vite Error."}
+nav_next: {"path": "../unsupported-external-redirect/index.md", "title": "Unsupported or malformed URL."}
 ---
 
 # Unsupported transform in content config.

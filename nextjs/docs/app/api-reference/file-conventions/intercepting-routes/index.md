@@ -11,8 +11,8 @@ menu_path: ["Intercepting Routes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation-client/index.md", "title": "instrumentation-client.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/layout/index.md", "title": "layout.js"}
+nav_prev: {"path": "../instrumentation-client/index.md", "title": "instrumentation-client.js"}
+nav_next: {"path": "../layout/index.md", "title": "layout.js"}
 ---
 
 # Intercepting Routes

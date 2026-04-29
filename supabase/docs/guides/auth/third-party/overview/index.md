@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:14.751Z"
 content_hash: "6dafca0620524bfc46daf916cf4456f26704e78029c41d1a2e7cd0f9404568be"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","Overview","Overview"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/auth/third-party/firebase-auth/index.md", "title": "Firebase Auth"}
-nav_next: {"path": "supabase/docs/guides/auth/third-party/workos/index.md", "title": "WorkOS"}
+nav_prev: {"path": "../firebase-auth/index.md", "title": "Firebase Auth"}
+nav_next: {"path": "../workos/index.md", "title": "WorkOS"}
 ---
 
 # 

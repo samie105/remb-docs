@@ -10,8 +10,8 @@ content_hash: "3f5b28a814c184e82c99f8deed6f460bdd4d213c925ad3f8fa021db3a9b4035a"
 menu_path: ["Unstable feature flags"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/cli/upgrade/index.md", "title": "deno upgrade"}
-nav_next: {"path": "deno/runtime/reference/cli/x/index.md", "title": "deno x"}
+nav_prev: {"path": "../upgrade/index.md", "title": "deno upgrade"}
+nav_next: {"path": "../x/index.md", "title": "deno x"}
 ---
 
 **On this page**

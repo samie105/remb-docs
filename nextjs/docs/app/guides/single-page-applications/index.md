@@ -11,8 +11,8 @@ menu_path: ["How to build single-page applications with Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/self-hosting/index.md", "title": "How to self-host your Next.js application"}
-nav_next: {"path": "nextjs/docs/app/guides/static-exports/index.md", "title": "How to create a static export of your Next.js application"}
+nav_prev: {"path": "../self-hosting/index.md", "title": "How to self-host your Next.js application"}
+nav_next: {"path": "../static-exports/index.md", "title": "How to create a static export of your Next.js application"}
 ---
 
 # How to build single-page applications with Next.js

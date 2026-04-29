@@ -11,8 +11,8 @@ menu_path: ["TypeORM"]
 section_path: []
 tab_variants: ["find with select","Model","findMany with select","Model","find with relations","Models","find with relations","Models","User","Post","find with select","Model","Create with save","Create with insert","Model","Create with create","Model","Using include","Fluent API","Using relations","Using JOIN","Using eager relations","Using save","Using create","Using insert","Using delete","Using remove","Using delete","Using remove"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-sequelize/index.md", "title": "Sequelize"}
-nav_next: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
+nav_prev: {"path": "../prisma-and-sequelize/index.md", "title": "Sequelize"}
+nav_next: {"path": "../../dev-environment/editor-setup/index.md", "title": "Editor setup"}
 ---
 
 This page compares Prisma ORM and [TypeORM](https://typeorm.io/). If you want to learn how to migrate from TypeORM to Prisma ORM, check out this [guide](https://www.prisma.io/docs/guides/switch-to-prisma-orm/from-sql-orms).
@@ -23,11 +23,11 @@ While Prisma ORM and TypeORM solve similar problems, they work in very different
 
 **Prisma ORM** is a new kind of ORM that mitigates many problems of traditional ORMs, such as bloated model instances, mixing business with storage logic, lack of type-safety or unpredictable queries caused e.g. by lazy loading.
 
-It uses the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) to define application models in a declarative way. Prisma Migrate then allows to generate SQL migrations from the Prisma schema and executes them against the database. CRUD queries are provided by Prisma Client, a lightweight and entirely type-safe database client for Node.js and TypeScript.
+It uses the [Prisma schema](../../../prisma-schema/overview/index.md) to define application models in a declarative way. Prisma Migrate then allows to generate SQL migrations from the Prisma schema and executes them against the database. CRUD queries are provided by Prisma Client, a lightweight and entirely type-safe database client for Node.js and TypeScript.
 
 TypeORM and Prisma ORM operate on different levels of abstraction. TypeORM is closer to mirroring SQL in its API while Prisma Client provides a higher-level abstraction that was carefully designed with the common tasks of application developers in mind. Prisma ORM's API design heavily leans on the idea of [making the right thing easy](https://jason.energy/right-thing-easy-thing/).
 
-While Prisma Client operates at a higher level of abstraction, it strives to expose the full power of the underlying database, allowing you to drop down to [raw SQL](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md) at any time if your use case requires it.
+While Prisma Client operates at a higher level of abstraction, it strives to expose the full power of the underlying database, allowing you to drop down to [raw SQL](../../../prisma-client/using-raw-sql/raw-queries/index.md) at any time if your use case requires it.
 
 The following sections examine a few examples for how Prisma ORM's and TypeORM's APIs differ in certain scenarios and what the rationale of Prisma ORM's API design is in these cases.
 
@@ -105,19 +105,19 @@ TypeORM only offers limit-offset pagination while Prisma ORM conveniently provid
 
 ### [Relations](#relations)
 
-Working with records that are connected via foreign keys can become very complex in SQL. Prisma ORM's concept of [virtual relation field](prisma/docs/orm/prisma-schema/data-model/relations/index.md#relation-fields) enables an intuitive and convenient way for application developers to work with related data. Some benefits of Prisma ORM's approach are:
+Working with records that are connected via foreign keys can become very complex in SQL. Prisma ORM's concept of [virtual relation field](../../../prisma-schema/data-model/relations/index.md#relation-fields) enables an intuitive and convenient way for application developers to work with related data. Some benefits of Prisma ORM's approach are:
 
--   traversing relationships via the fluent API ([docs](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#fluent-api))
--   nested writes that enable updating/creating connected records ([docs](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-writes))
--   applying filters on related records ([docs](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-filters))
--   easy and type-safe querying of nested data without worrying about JOINs ([docs](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-reads))
--   creating nested TypeScript typings based on models and their relations ([docs](prisma/docs/orm/prisma-client/type-safety/index.md))
--   intuitive modeling of relations in the data model via relation fields ([docs](prisma/docs/orm/prisma-schema/data-model/relations/index.md))
--   implicit handling of relation tables (also sometimes called JOIN, link, pivot or junction tables) ([docs](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#implicit-many-to-many-relations))
+-   traversing relationships via the fluent API ([docs](../../../prisma-client/queries/relation-queries/index.md#fluent-api))
+-   nested writes that enable updating/creating connected records ([docs](../../../prisma-client/queries/relation-queries/index.md#nested-writes))
+-   applying filters on related records ([docs](../../../prisma-client/queries/relation-queries/index.md#relation-filters))
+-   easy and type-safe querying of nested data without worrying about JOINs ([docs](../../../prisma-client/queries/relation-queries/index.md#nested-reads))
+-   creating nested TypeScript typings based on models and their relations ([docs](../../../prisma-client/type-safety/index.md))
+-   intuitive modeling of relations in the data model via relation fields ([docs](../../../prisma-schema/data-model/relations/index.md))
+-   implicit handling of relation tables (also sometimes called JOIN, link, pivot or junction tables) ([docs](../../../prisma-schema/data-model/relations/many-to-many-relations/index.md#implicit-many-to-many-relations))
 
 ### [Data modeling and migrations](#data-modeling-and-migrations)
 
-Prisma models are defined in the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) while TypeORM uses classes and experimental TypeScript decorators for model definitions. With the Active Record ORM pattern, TypeORM's approach often leads to complex model instances that are becoming hard to maintain as an application grows.
+Prisma models are defined in the [Prisma schema](../../../prisma-schema/overview/index.md) while TypeORM uses classes and experimental TypeScript decorators for model definitions. With the Active Record ORM pattern, TypeORM's approach often leads to complex model instances that are becoming hard to maintain as an application grows.
 
 Prisma ORM on the other hand generates a lightweight database client that exposes a tailored and fully type-safe API to read and write data for the models that are defined in the Prisma schema, following the DataMapper ORM pattern rather than Active Record.
 

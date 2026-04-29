@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:54.861Z"
 content_hash: "d5c142884331946e2f4f9100588f500db1933d1313728f4e2f7d13ad48163f2c"
 menu_path: ["PostgreSQL: Documentation: 18: pg_test_fsync"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/pgsurgery.html/index.md", "title": "PostgreSQL: Documentation: 18: F.34.\u00a0pg_surgery \u2014 perform low-level surgery on relation data"}
-nav_next: {"path": "postgres/docs/current/pgtesttiming.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_timing"}
+nav_prev: {"path": "../pgsurgery.html/index.md", "title": "PostgreSQL: Documentation: 18: F.34.\u00a0pg_surgery \u2014 perform low-level surgery on relation data"}
+nav_next: {"path": "../pgtesttiming.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_timing"}
 ---
 
 pg\_test\_fsync — determine fastest `wal_sync_method` for PostgreSQL
@@ -21,7 +21,7 @@ pg\_test\_fsync — determine fastest `wal_sync_method` for PostgreSQL
 
 ## Description
 
-pg\_test\_fsync is intended to give you a reasonable idea of what the fastest [wal\_sync\_method](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-SYNC-METHOD) is on your specific system, as well as supplying diagnostic information in the event of an identified I/O problem. However, differences shown by pg\_test\_fsync might not make any significant difference in real database throughput, especially since many database servers are not speed-limited by their write-ahead logs. pg\_test\_fsync reports average file sync operation time in microseconds for each `wal_sync_method`, which can also be used to inform efforts to optimize the value of [commit\_delay](postgres/docs/current/runtime-config-wal.html/index.md#GUC-COMMIT-DELAY).
+pg\_test\_fsync is intended to give you a reasonable idea of what the fastest [wal\_sync\_method](../runtime-config-wal.html/index.md#GUC-WAL-SYNC-METHOD) is on your specific system, as well as supplying diagnostic information in the event of an identified I/O problem. However, differences shown by pg\_test\_fsync might not make any significant difference in real database throughput, especially since many database servers are not speed-limited by their write-ahead logs. pg\_test\_fsync reports average file sync operation time in microseconds for each `wal_sync_method`, which can also be used to inform efforts to optimize the value of [commit\_delay](../runtime-config-wal.html/index.md#GUC-COMMIT-DELAY).
 
 ## Options
 

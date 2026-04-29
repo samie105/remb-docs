@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:15.071Z"
 content_hash: "ca3eec159a5b1c77cb34ec5a16ee0018874d69816b5db11b149b953dce55eae7"
 menu_path: ["Awesome tRPC Collection"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/client/vanilla/setup/index.md", "title": "Set up a tRPC Client"}
-nav_next: {"path": "trpc/docs/v10/community/contributing/index.md", "title": "Contributing"}
+nav_prev: {"path": "../../client/vanilla/setup/index.md", "title": "Set up a tRPC Client"}
+nav_next: {"path": "../contributing/index.md", "title": "Contributing"}
 ---
 
 Version: 10.x

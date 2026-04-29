@@ -10,8 +10,8 @@ content_hash: "76bb6237613c7d7f57e19e80c0a40f6cdbfbc52da90d8896d6a4c79e173e4aba"
 menu_path: ["PostgreSQL: Documentation: 18: 9.14. UUID Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/functions-subquery.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.24.\u00a0Subquery Expressions"}
-nav_next: {"path": "postgres/docs/current/functions-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.15.\u00a0XML Functions"}
+nav_prev: {"path": "../functions-subquery.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.24.\u00a0Subquery Expressions"}
+nav_next: {"path": "../functions-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.15.\u00a0XML Functions"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/functions-uuid.html "PostgreSQL devel - 9.14. UUID Functions")

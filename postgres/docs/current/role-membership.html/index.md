@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:16.781Z"
 content_hash: "86882d317efe1b9041b3e644775c10878126b2e82c2393f89ddf3c232af4fb1c"
 menu_path: ["PostgreSQL: Documentation: 18: 21.3. Role Membership"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/release-prior.html/index.md", "title": "PostgreSQL: Documentation: 18: E.5.\u00a0Prior Releases"}
-nav_next: {"path": "postgres/docs/current/role-removal.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.4.\u00a0Dropping Roles"}
+nav_prev: {"path": "../release-prior.html/index.md", "title": "PostgreSQL: Documentation: 18: E.5.\u00a0Prior Releases"}
+nav_next: {"path": "../role-removal.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.4.\u00a0Dropping Roles"}
 ---
 
 It is frequently convenient to group users together to ease management of privileges: that way, privileges can be granted to, or revoked from, a group as a whole. In PostgreSQL this is done by creating a role that represents the group, and then granting _membership_ in the group role to individual user roles.

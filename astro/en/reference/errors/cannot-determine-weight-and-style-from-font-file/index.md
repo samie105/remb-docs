@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:44.849Z"
 content_hash: "4ac7d8c4acc51c4918f7bc418c2fd2d892ac3a964bf8cddbdeb664889b6139e2"
 menu_path: ["Cannot determine weight and style from font file."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/cache-query-config-conflict/index.md", "title": "Conflicting cache query configuration."}
-nav_next: {"path": "astro/en/reference/errors/cannot-extract-font-type/index.md", "title": "Cannot extract the font type from the given URL."}
+nav_prev: {"path": "../cache-query-config-conflict/index.md", "title": "Conflicting cache query configuration."}
+nav_next: {"path": "../cannot-extract-font-type/index.md", "title": "Cannot extract the font type from the given URL."}
 ---
 
 # Cannot determine weight and style from font file.

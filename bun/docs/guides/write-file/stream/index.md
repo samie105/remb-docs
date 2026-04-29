@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:56.341Z"
 content_hash: "c5eef501cd588aa967af4d1672817f139a6a4bb52bbbc7f33544b67ce9a34b4a"
 menu_path: ["Write a ReadableStream to a file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/write-file/stdout/index.md", "title": "Write to stdout"}
-nav_next: {"path": "bun/docs/guides/write-file/unlink/index.md", "title": "Delete a file"}
+nav_prev: {"path": "../stdout/index.md", "title": "Write to stdout"}
+nav_next: {"path": "../unlink/index.md", "title": "Delete a file"}
 ---
 
 [Skip to main content](#content-area)

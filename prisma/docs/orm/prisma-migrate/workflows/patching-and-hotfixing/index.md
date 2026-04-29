@@ -11,8 +11,8 @@ menu_path: ["Patching & hotfixing"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/native-database-types/index.md", "title": "Native database types"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md", "title": "Prototyping your schema"}
+nav_prev: {"path": "../native-database-types/index.md", "title": "Native database types"}
+nav_next: {"path": "../prototyping-your-schema/index.md", "title": "Prototyping your schema"}
 ---
 
 How to reconcile the migration history after applying a hotfix or patch to a production environment.
@@ -49,7 +49,7 @@ This command adds the migration to the migration history table without running t
 
 A migration might fail if:
 
--   You [modify a migration before running it](prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md) and introduce a syntax error
+-   You [modify a migration before running it](../customizing-migrations/index.md) and introduce a syntax error
 -   You add a mandatory (`NOT NULL`) column to a table that already has data
 -   The migration process stopped unexpectedly
 -   The database shut down in the middle of the migration process
@@ -89,8 +89,8 @@ The following example demonstrates how to manually complete the steps of a migra
 
 To help with fixing a failed migration, Prisma ORM provides the following commands for creating and executing a migration file:
 
--   [`prisma migrate diff`](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-diff) which diffs two database schema sources to create a migration taking one to the state of the second. You can output either a summary of the difference or a sql script. The script can be output into a file via `> file_name.sql` or be piped to the `db execute --stdin` command.
--   [`prisma db execute`](prisma/docs/orm/reference/prisma-cli-reference/index.md#db-execute) which applies a SQL script to the database without interacting with the Prisma migrations table.
+-   [`prisma migrate diff`](../../../reference/prisma-cli-reference/index.md#migrate-diff) which diffs two database schema sources to create a migration taking one to the state of the second. You can output either a summary of the difference or a sql script. The script can be output into a file via `> file_name.sql` or be piped to the `db execute --stdin` command.
+-   [`prisma db execute`](../../../reference/prisma-cli-reference/index.md#db-execute) which applies a SQL script to the database without interacting with the Prisma migrations table.
 
 This section gives an example scenario of a failed migration, and explains how to use `migrate diff` and `db execute` to fix it.
 
@@ -215,4 +215,4 @@ Error: undefined: Database error
 Error querying the database: db error: ERROR: prepared statement "s0" already exists
 ```
 
-See [Prisma Migrate and PgBouncer workaround](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md) for further information and a workaround. Follow [GitHub issue #6485](https://github.com/prisma/prisma/issues/6485) for updates.
+See [Prisma Migrate and PgBouncer workaround](../../../prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md) for further information and a workaround. Follow [GitHub issue #6485](https://github.com/prisma/prisma/issues/6485) for updates.

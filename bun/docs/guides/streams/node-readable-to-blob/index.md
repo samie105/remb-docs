@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:40.296Z"
 content_hash: "b3cd2bc7ab1fb105ca736a683145bbe6226cc06efc948f0dbbfa49a0e40ac99f"
 menu_path: ["Convert a Node.js Readable to a Blob"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/streams/node-readable-to-arraybuffer/index.md", "title": "Convert a Node.js Readable to an ArrayBuffer"}
-nav_next: {"path": "bun/docs/guides/streams/node-readable-to-json/index.md", "title": "Convert a Node.js Readable to JSON"}
+nav_prev: {"path": "../node-readable-to-arraybuffer/index.md", "title": "Convert a Node.js Readable to an ArrayBuffer"}
+nav_next: {"path": "../node-readable-to-json/index.md", "title": "Convert a Node.js Readable to JSON"}
 ---
 
 [Skip to main content](#content-area)

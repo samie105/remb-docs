@@ -10,8 +10,8 @@ content_hash: "2240f7a4415ed8d46339c5c0c66c14cbaaeda316b81640a98a20e969feafd6c2"
 menu_path: ["PostgreSQL: Documentation: 18: 53.10. pg_hba_file_rules"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/view-pg-group.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.9.\u00a0pg_group"}
-nav_next: {"path": "postgres/docs/current/view-pg-ident-file-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.11.\u00a0pg_ident_file_mappings"}
+nav_prev: {"path": "../view-pg-group.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.9.\u00a0pg_group"}
+nav_next: {"path": "../view-pg-ident-file-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.11.\u00a0pg_ident_file_mappings"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-hba-file-rules.html "PostgreSQL devel - 53.10. pg_hba_file_rules")

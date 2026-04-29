@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:18.420Z"
 content_hash: "23708b2600862785b3e9295983644687904d600796703f165514e256b160287e"
 menu_path: ["Upgrade Bun to the latest version"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
-nav_next: {"path": "bun/docs/guides/util/version/index.md", "title": "Get the current Bun version"}
+nav_prev: {"path": "../sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
+nav_next: {"path": "../version/index.md", "title": "Get the current Bun version"}
 ---
 
 # Output: 1.x.y

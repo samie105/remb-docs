@@ -11,8 +11,8 @@ menu_path: ["How to preview content with Draft Mode in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
-nav_next: {"path": "nextjs/docs/app/guides/environment-variables/index.md", "title": "How to use environment variables in Next.js"}
+nav_prev: {"path": "../deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
+nav_next: {"path": "../environment-variables/index.md", "title": "How to use environment variables in Next.js"}
 ---
 
 # How to preview content with Draft Mode in Next.js

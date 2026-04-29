@@ -11,8 +11,8 @@ menu_path: ["proxy.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/parallel-routes/index.md", "title": "Parallel Routes"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/public-folder/index.md", "title": "public Folder"}
+nav_prev: {"path": "../parallel-routes/index.md", "title": "Parallel Routes"}
+nav_next: {"path": "../public-folder/index.md", "title": "public Folder"}
 ---
 
 # proxy.js

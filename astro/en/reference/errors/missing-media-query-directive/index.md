@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:51.199Z"
 content_hash: "4ea2d5131f771b46cd9b53b2450e05ec5198c613a5cc6eb42486af76855afe78"
 menu_path: ["Missing value for client:media directive."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/missing-locale/index.md", "title": "The provided locale does not exist."}
-nav_next: {"path": "astro/en/reference/errors/missing-middleware-for-internationalization/index.md", "title": "Enabled manual internationalization routing without having a middleware."}
+nav_prev: {"path": "../missing-locale/index.md", "title": "The provided locale does not exist."}
+nav_next: {"path": "../missing-middleware-for-internationalization/index.md", "title": "Enabled manual internationalization routing without having a middleware."}
 ---
 
 # Missing value for client:media directive.

@@ -11,8 +11,8 @@ menu_path: ["use cache"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/directives/index.md", "title": "Directives"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-cache-private/index.md", "title": "use cache: private"}
+nav_prev: {"path": "../index.md", "title": "Directives"}
+nav_next: {"path": "../use-cache-private/index.md", "title": "use cache: private"}
 ---
 
 # use cache

@@ -10,8 +10,8 @@ content_hash: "1d59760ca95d8351b99758a43839b8a547937253d10fef2b338178a8afafd4f1"
 menu_path: ["line-height"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/line-clamp/index.md", "title": "line-clamp"}
-nav_next: {"path": "tailwind/docs/list-style-image/index.md", "title": "list-style-image"}
+nav_prev: {"path": "../line-clamp/index.md", "title": "line-clamp"}
+nav_next: {"path": "../list-style-image/index.md", "title": "list-style-image"}
 ---
 
 Typography
@@ -40,7 +40,7 @@ So I started to walk into the water. I won't lie to you boys, I was terrified. B
 <p class="text-base/6 ...">So I started to walk into the water...</p><p class="text-base/7 ...">So I started to walk into the water...</p><p class="text-base/8 ...">So I started to walk into the water...</p>
 ```
 
-Each font size utility also sets a default line height when one isn't provided. You can learn more about these values and how to customize them in the [font-size documentation](tailwind/docs/font-size/index.md).
+Each font size utility also sets a default line height when one isn't provided. You can learn more about these values and how to customize them in the [font-size documentation](../font-size/index.md).
 
 ### [Setting independently](#setting-independently)
 
@@ -96,7 +96,7 @@ Prefix a `line-height` utility with a breakpoint variant like `md:` to only appl
 <p class="leading-5 md:leading-6 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -106,4 +106,4 @@ The `leading-<number>` utilities are driven by the `--spacing` theme variable, w
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](../theme/index.md).

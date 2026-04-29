@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:57.746Z"
 content_hash: "d9bc1471cd717bfdbfb79609151d941f80511904e3fda6d042d5b898cf2dd5db"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Size","Disk Size"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Size","Disk Size"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-iops/index.md", "title": "Manage Disk IOPS usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
+nav_prev: {"path": "../disk-iops/index.md", "title": "Manage Disk IOPS usage"}
+nav_next: {"path": "../disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
 ---
 
 # 

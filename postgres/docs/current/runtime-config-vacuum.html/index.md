@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:12.777Z"
 content_hash: "cb46e2370f0c3358bf255e1c49d14d9839496f4b497cc5b589ca0e9ec06fd0f5"
 menu_path: ["PostgreSQL: Documentation: 18: 19.10. Vacuuming"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.9.\u00a0Run-time Statistics"}
-nav_next: {"path": "postgres/docs/current/runtime-config-wal.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.5.\u00a0Write Ahead Log"}
+nav_prev: {"path": "../runtime-config-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.9.\u00a0Run-time Statistics"}
+nav_next: {"path": "../runtime-config-wal.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.5.\u00a0Write Ahead Log"}
 ---
 
 These parameters control vacuuming behavior. For more information on the purpose and responsibilities of vacuum, see [Section 24.1](https://www.postgresql.org/docs/current/routine-vacuuming.html "24.1. Routine Vacuuming").
@@ -21,7 +21,7 @@ These settings control the behavior of the _autovacuum_ feature. Refer to [Secti
 
 `autovacuum` (`boolean`) [#](#GUC-AUTOVACUUM)
 
-Controls whether the server should run the autovacuum launcher daemon. This is on by default; however, [track\_counts](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-COUNTS) must also be enabled for autovacuum to work. This parameter can only be set in the `postgresql.conf` file or on the server command line; however, autovacuuming can be disabled for individual tables by changing table storage parameters.
+Controls whether the server should run the autovacuum launcher daemon. This is on by default; however, [track\_counts](../runtime-config-statistics.html/index.md#GUC-TRACK-COUNTS) must also be enabled for autovacuum to work. This parameter can only be set in the `postgresql.conf` file or on the server command line; however, autovacuuming can be disabled for individual tables by changing table storage parameters.
 
 Note that even when this parameter is disabled, the system will launch autovacuum processes if necessary to prevent transaction ID wraparound. See [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures") for more information.
 
@@ -29,13 +29,13 @@ Note that even when this parameter is disabled, the system will launch autovacuu
 
 Specifies the number of backend slots to reserve for autovacuum worker processes. The default is typically 16 slots, but might be less if your kernel settings will not support it (as determined during initdb). This parameter can only be set at server start.
 
-When changing this value, consider also adjusting [autovacuum\_max\_workers](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-MAX-WORKERS).
+When changing this value, consider also adjusting [autovacuum\_max\_workers](index.md#GUC-AUTOVACUUM-MAX-WORKERS).
 
 `autovacuum_max_workers` (`integer`) [#](#GUC-AUTOVACUUM-MAX-WORKERS)
 
 Specifies the maximum number of autovacuum processes (other than the autovacuum launcher) that may be running at any one time. The default is `3`. This parameter can only be set in the `postgresql.conf` file or on the server command line.
 
-Note that a setting for this value which is higher than [autovacuum\_worker\_slots](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-WORKER-SLOTS) will have no effect, since autovacuum workers are taken from the pool of slots established by that setting.
+Note that a setting for this value which is higher than [autovacuum\_worker\_slots](index.md#GUC-AUTOVACUUM-WORKER-SLOTS) will have no effect, since autovacuum workers are taken from the pool of slots established by that setting.
 
 `autovacuum_naptime` (`integer`) [#](#GUC-AUTOVACUUM-NAPTIME)
 
@@ -83,11 +83,11 @@ Vacuuming multixacts also allows removal of old files from the `pg_multixact/mem
 
 `autovacuum_vacuum_cost_delay` (`floating point`) [#](#GUC-AUTOVACUUM-VACUUM-COST-DELAY)
 
-Specifies the cost delay value that will be used in automatic `VACUUM` operations. If -1 is specified, the regular [vacuum\_cost\_delay](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-VACUUM-COST-DELAY) value will be used. If this value is specified without units, it is taken as milliseconds. The default value is 2 milliseconds. This parameter can only be set in the `postgresql.conf` file or on the server command line; but the setting can be overridden for individual tables by changing table storage parameters.
+Specifies the cost delay value that will be used in automatic `VACUUM` operations. If -1 is specified, the regular [vacuum\_cost\_delay](index.md#GUC-VACUUM-COST-DELAY) value will be used. If this value is specified without units, it is taken as milliseconds. The default value is 2 milliseconds. This parameter can only be set in the `postgresql.conf` file or on the server command line; but the setting can be overridden for individual tables by changing table storage parameters.
 
 `autovacuum_vacuum_cost_limit` (`integer`) [#](#GUC-AUTOVACUUM-VACUUM-COST-LIMIT)
 
-Specifies the cost limit value that will be used in automatic `VACUUM` operations. If `-1` is specified (which is the default), the regular [vacuum\_cost\_limit](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-VACUUM-COST-LIMIT) value will be used. Note that the value is distributed proportionally among the running autovacuum workers, if there is more than one, so that the sum of the limits for each worker does not exceed the value of this variable. This parameter can only be set in the `postgresql.conf` file or on the server command line; but the setting can be overridden for individual tables by changing table storage parameters.
+Specifies the cost limit value that will be used in automatic `VACUUM` operations. If `-1` is specified (which is the default), the regular [vacuum\_cost\_limit](index.md#GUC-VACUUM-COST-LIMIT) value will be used. Note that the value is distributed proportionally among the running autovacuum workers, if there is more than one, so that the sum of the limits for each worker does not exceed the value of this variable. This parameter can only be set in the `postgresql.conf` file or on the server command line; but the setting can be overridden for individual tables by changing table storage parameters.
 
 ### 19.10.2. Cost-based Vacuum Delay [#](#RUNTIME-CONFIG-RESOURCE-VACUUM-COST)
 
@@ -135,27 +135,27 @@ To maintain correctness even after transaction IDs wrap around, PostgreSQL marks
 
 `vacuum_freeze_table_age` (`integer`) [#](#GUC-VACUUM-FREEZE-TABLE-AGE)
 
-`VACUUM` performs an aggressive scan if the table's `pg_class`.`relfrozenxid` field has reached the age specified by this setting. An aggressive scan differs from a regular `VACUUM` in that it visits every page that might contain unfrozen XIDs or MXIDs, not just those that might contain dead tuples. The default is 150 million transactions. Although users can set this value anywhere from zero to two billion, `VACUUM` will silently limit the effective value to 95% of [autovacuum\_freeze\_max\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-FREEZE-MAX-AGE), so that a periodic manual `VACUUM` has a chance to run before an anti-wraparound autovacuum is launched for the table. For more information see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures").
+`VACUUM` performs an aggressive scan if the table's `pg_class`.`relfrozenxid` field has reached the age specified by this setting. An aggressive scan differs from a regular `VACUUM` in that it visits every page that might contain unfrozen XIDs or MXIDs, not just those that might contain dead tuples. The default is 150 million transactions. Although users can set this value anywhere from zero to two billion, `VACUUM` will silently limit the effective value to 95% of [autovacuum\_freeze\_max\_age](index.md#GUC-AUTOVACUUM-FREEZE-MAX-AGE), so that a periodic manual `VACUUM` has a chance to run before an anti-wraparound autovacuum is launched for the table. For more information see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures").
 
 `vacuum_freeze_min_age` (`integer`) [#](#GUC-VACUUM-FREEZE-MIN-AGE)
 
-Specifies the cutoff age (in transactions) that `VACUUM` should use to decide whether to trigger freezing of pages that have an older XID. The default is 50 million transactions. Although users can set this value anywhere from zero to one billion, `VACUUM` will silently limit the effective value to half the value of [autovacuum\_freeze\_max\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-FREEZE-MAX-AGE), so that there is not an unreasonably short time between forced autovacuums. For more information see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures").
+Specifies the cutoff age (in transactions) that `VACUUM` should use to decide whether to trigger freezing of pages that have an older XID. The default is 50 million transactions. Although users can set this value anywhere from zero to one billion, `VACUUM` will silently limit the effective value to half the value of [autovacuum\_freeze\_max\_age](index.md#GUC-AUTOVACUUM-FREEZE-MAX-AGE), so that there is not an unreasonably short time between forced autovacuums. For more information see [Section 24.1.5](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND "24.1.5. Preventing Transaction ID Wraparound Failures").
 
 `vacuum_failsafe_age` (`integer`) [#](#GUC-VACUUM-FAILSAFE-AGE)
 
 Specifies the maximum age (in transactions) that a table's `pg_class`.`relfrozenxid` field can attain before `VACUUM` takes extraordinary measures to avoid system-wide transaction ID wraparound failure. This is `VACUUM`'s strategy of last resort. The failsafe typically triggers when an autovacuum to prevent transaction ID wraparound has already been running for some time, though it's possible for the failsafe to trigger during any `VACUUM`.
 
-When the failsafe is triggered, any cost-based delay that is in effect will no longer be applied, further non-essential maintenance tasks (such as index vacuuming) are bypassed, and any [](postgres/docs/current/glossary.html/index.md#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") in use will be disabled resulting in `VACUUM` being free to make use of all of [](postgres/docs/current/glossary.html/index.md#GLOSSARY-SHARED-MEMORY)[shared buffers](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-SHARED-MEMORY "Shared memory").
+When the failsafe is triggered, any cost-based delay that is in effect will no longer be applied, further non-essential maintenance tasks (such as index vacuuming) are bypassed, and any [](../glossary.html/index.md#GLOSSARY-BUFFER-ACCESS-STRATEGY)[Buffer Access Strategy](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-BUFFER-ACCESS-STRATEGY "Buffer Access Strategy") in use will be disabled resulting in `VACUUM` being free to make use of all of [](../glossary.html/index.md#GLOSSARY-SHARED-MEMORY)[shared buffers](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-SHARED-MEMORY "Shared memory").
 
-The default is 1.6 billion transactions. Although users can set this value anywhere from zero to 2.1 billion, `VACUUM` will silently adjust the effective value to no less than 105% of [autovacuum\_freeze\_max\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-FREEZE-MAX-AGE).
+The default is 1.6 billion transactions. Although users can set this value anywhere from zero to 2.1 billion, `VACUUM` will silently adjust the effective value to no less than 105% of [autovacuum\_freeze\_max\_age](index.md#GUC-AUTOVACUUM-FREEZE-MAX-AGE).
 
 `vacuum_multixact_freeze_table_age` (`integer`) [#](#GUC-VACUUM-MULTIXACT-FREEZE-TABLE-AGE)
 
-`VACUUM` performs an aggressive scan if the table's `pg_class`.`relminmxid` field has reached the age specified by this setting. An aggressive scan differs from a regular `VACUUM` in that it visits every page that might contain unfrozen XIDs or MXIDs, not just those that might contain dead tuples. The default is 150 million multixacts. Although users can set this value anywhere from zero to two billion, `VACUUM` will silently limit the effective value to 95% of [autovacuum\_multixact\_freeze\_max\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-MULTIXACT-FREEZE-MAX-AGE), so that a periodic manual `VACUUM` has a chance to run before an anti-wraparound is launched for the table. For more information see [Section 24.1.5.1](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-MULTIXACT-WRAPAROUND "24.1.5.1. Multixacts and Wraparound").
+`VACUUM` performs an aggressive scan if the table's `pg_class`.`relminmxid` field has reached the age specified by this setting. An aggressive scan differs from a regular `VACUUM` in that it visits every page that might contain unfrozen XIDs or MXIDs, not just those that might contain dead tuples. The default is 150 million multixacts. Although users can set this value anywhere from zero to two billion, `VACUUM` will silently limit the effective value to 95% of [autovacuum\_multixact\_freeze\_max\_age](index.md#GUC-AUTOVACUUM-MULTIXACT-FREEZE-MAX-AGE), so that a periodic manual `VACUUM` has a chance to run before an anti-wraparound is launched for the table. For more information see [Section 24.1.5.1](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-MULTIXACT-WRAPAROUND "24.1.5.1. Multixacts and Wraparound").
 
 `vacuum_multixact_freeze_min_age` (`integer`) [#](#GUC-VACUUM-MULTIXACT-FREEZE-MIN-AGE)
 
-Specifies the cutoff age (in multixacts) that `VACUUM` should use to decide whether to trigger freezing of pages with an older multixact ID. The default is 5 million multixacts. Although users can set this value anywhere from zero to one billion, `VACUUM` will silently limit the effective value to half the value of [autovacuum\_multixact\_freeze\_max\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-MULTIXACT-FREEZE-MAX-AGE), so that there is not an unreasonably short time between forced autovacuums. For more information see [Section 24.1.5.1](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-MULTIXACT-WRAPAROUND "24.1.5.1. Multixacts and Wraparound").
+Specifies the cutoff age (in multixacts) that `VACUUM` should use to decide whether to trigger freezing of pages with an older multixact ID. The default is 5 million multixacts. Although users can set this value anywhere from zero to one billion, `VACUUM` will silently limit the effective value to half the value of [autovacuum\_multixact\_freeze\_max\_age](index.md#GUC-AUTOVACUUM-MULTIXACT-FREEZE-MAX-AGE), so that there is not an unreasonably short time between forced autovacuums. For more information see [Section 24.1.5.1](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-MULTIXACT-WRAPAROUND "24.1.5.1. Multixacts and Wraparound").
 
 `vacuum_multixact_failsafe_age` (`integer`) [#](#GUC-VACUUM-MULTIXACT-FAILSAFE-AGE)
 
@@ -163,7 +163,7 @@ Specifies the maximum age (in multixacts) that a table's `pg_class`.`relminmxid`
 
 When the failsafe is triggered, any cost-based delay that is in effect will no longer be applied, and further non-essential maintenance tasks (such as index vacuuming) are bypassed.
 
-The default is 1.6 billion multixacts. Although users can set this value anywhere from zero to 2.1 billion, `VACUUM` will silently adjust the effective value to no less than 105% of [autovacuum\_multixact\_freeze\_max\_age](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-MULTIXACT-FREEZE-MAX-AGE).
+The default is 1.6 billion multixacts. Although users can set this value anywhere from zero to 2.1 billion, `VACUUM` will silently adjust the effective value to no less than 105% of [autovacuum\_multixact\_freeze\_max\_age](index.md#GUC-AUTOVACUUM-MULTIXACT-FREEZE-MAX-AGE).
 
 `vacuum_max_eager_freeze_failure_rate` (`floating point`) [#](#GUC-VACUUM-MAX-EAGER-FREEZE-FAILURE-RATE)
 

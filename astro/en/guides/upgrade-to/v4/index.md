@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:57.805Z"
 content_hash: "9d08c18729c72568fee34cb1f95586da25bc1028da048f3045e72862e5eab66e"
 menu_path: ["Upgrade to Astro v4"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/upgrade-to/v5/index.md", "title": "Upgrade to Astro v5"}
-nav_next: {"path": "astro/en/guides/upgrade-to/v3/index.md", "title": "Upgrade to Astro v3"}
+nav_prev: {"path": "../v5/index.md", "title": "Upgrade to Astro v5"}
+nav_next: {"path": "../v3/index.md", "title": "Upgrade to Astro v3"}
 ---
 
 # Upgrade to Astro v4

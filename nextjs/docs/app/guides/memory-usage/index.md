@@ -11,8 +11,8 @@ menu_path: ["How to optimize memory usage"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/mdx/index.md", "title": "How to use markdown and MDX in Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/migrating/index.md", "title": "Migrating"}
+nav_prev: {"path": "../mdx/index.md", "title": "How to use markdown and MDX in Next.js"}
+nav_next: {"path": "../migrating/index.md", "title": "Migrating"}
 ---
 
 # How to optimize memory usage

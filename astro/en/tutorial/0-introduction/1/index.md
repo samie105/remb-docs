@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:03.197Z"
 content_hash: "0f9ab1671eb2bfb2dc35fcf25cb4e3183dab6a0f7466cdee23973eb035e7a388"
 menu_path: ["About this Tutorial"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/unsupported-image-format/index.md", "title": "Unsupported image format"}
-nav_next: {"path": "astro/en/tutorial/1-setup/1/index.md", "title": "Prepare your dev environment"}
+nav_prev: {"path": "../../../reference/errors/unsupported-image-format/index.md", "title": "Unsupported image format"}
+nav_next: {"path": "../../1-setup/1/index.md", "title": "Prepare your dev environment"}
 ---
 
 # About this Tutorial

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:41.163Z"
 content_hash: "d564af33d70fbdc4f24ce72753d1fbaf16fd9039a41933abc94e057568855095"
 menu_path: ["Security","Security","Overview","Overview"]
 section_path: ["Security","Security","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/resources/glossary/index.md", "title": "Glossary"}
-nav_next: {"path": "supabase/docs/guides/security/hipaa-compliance/index.md", "title": "HIPAA Compliance and Supabase"}
+nav_prev: {"path": "../resources/glossary/index.md", "title": "Glossary"}
+nav_next: {"path": "hipaa-compliance/index.md", "title": "HIPAA Compliance and Supabase"}
 ---
 
 # Compliance

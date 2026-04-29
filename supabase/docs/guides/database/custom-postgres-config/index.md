@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:13.997Z"
 content_hash: "49f5ffa8d196b090179d13074af89b3f2b6292bc1ff0147205b9696f7399a2a1"
 menu_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Customizing Postgres config","Customizing Postgres config"]
 section_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Customizing Postgres config","Customizing Postgres config"]
-nav_prev: {"path": "supabase/docs/guides/database/connection-management/index.md", "title": "Connection management"}
-nav_next: {"path": "supabase/docs/guides/database/dbeaver/index.md", "title": "Connecting with DBeaver"}
+nav_prev: {"path": "../connection-management/index.md", "title": "Connection management"}
+nav_next: {"path": "../dbeaver/index.md", "title": "Connecting with DBeaver"}
 ---
 
 # 

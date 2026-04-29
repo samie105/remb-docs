@@ -10,8 +10,8 @@ content_hash: "fe824e165aac2251f4bda46bb9a0f6b3b15bfbd4a2b020011b1782b9d0fce24e"
 menu_path: ["outline-width"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/border-style/index.md", "title": "border-style"}
-nav_next: {"path": "tailwind/docs/outline-color/index.md", "title": "outline-color"}
+nav_prev: {"path": "../border-style/index.md", "title": "border-style"}
+nav_next: {"path": "../outline-color/index.md", "title": "outline-color"}
 ---
 
 # outline-width

@@ -10,8 +10,8 @@ content_hash: "d4e4cbaa20465aa2aa29796a21e9f920368deccc7dcfa652af24139c39e25f28"
 menu_path: ["Drizzle ORM - Goodies"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/custom-types/index.md", "title": "Common way of defining custom types"}
-nav_next: {"path": "drizzle/docs/zod/index.md", "title": "zod"}
+nav_prev: {"path": "../custom-types/index.md", "title": "Common way of defining custom types"}
+nav_next: {"path": "../zod/index.md", "title": "zod"}
 ---
 
 ## Type API[](#type-api)
@@ -437,7 +437,7 @@ You can get a typed columns map, very useful when you need to omit certain colum
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](../upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 

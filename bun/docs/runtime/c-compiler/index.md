@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:53.522Z"
 content_hash: "33b5614e449cd022e58db2c8c00a0a57e981a49ed5bfe885de09707ab25a3ce3"
 menu_path: ["C Compiler"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/bunfig/index.md", "title": "bunfig.toml"}
-nav_next: {"path": "bun/docs/runtime/child-process/index.md", "title": "Spawn"}
+nav_prev: {"path": "../bunfig/index.md", "title": "bunfig.toml"}
+nav_next: {"path": "../child-process/index.md", "title": "Spawn"}
 ---
 
 `bun:ffi` has experimental support for compiling and running C from JavaScript with low overhead.
@@ -65,7 +65,7 @@ Under the hood, `cc` uses [TinyCC](https://bellard.org/tcc/) to compile the C co
 
 ### Primitive types
 
-The same `FFIType` values in [`dlopen`](bun/docs/runtime/ffi/index.md) are supported in `cc`.
+The same `FFIType` values in [`dlopen`](../ffi/index.md) are supported in `cc`.
 
 `FFIType`
 

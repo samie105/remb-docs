@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:58.653Z"
 content_hash: "d94551a5376d68b86e48d99ad2d5488710920861e8419164f528d28abc6afebc"
 menu_path: ["Scripts and event handling"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/syntax-highlighting/index.md", "title": "Syntax Highlighting"}
-nav_next: {"path": "astro/en/guides/framework-components/index.md", "title": "Front-end frameworks"}
+nav_prev: {"path": "../syntax-highlighting/index.md", "title": "Syntax Highlighting"}
+nav_next: {"path": "../framework-components/index.md", "title": "Front-end frameworks"}
 ---
 
 # Scripts and event handling

@@ -10,8 +10,8 @@ content_hash: "37202f232556434be2a2fad4f0cf56d6a68fb3b213a99bd76b382cf97d7d297f"
 menu_path: ["PostgreSQL: Documentation: 18: 53.35. pg_user"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/view-pg-user-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.36.\u00a0pg_user_mappings"}
-nav_next: {"path": "postgres/docs/current/view-pg-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.37.\u00a0pg_views"}
+nav_prev: {"path": "../view-pg-user-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.36.\u00a0pg_user_mappings"}
+nav_next: {"path": "../view-pg-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.37.\u00a0pg_views"}
 ---
 
 The view `pg_user` provides access to information about database users. This is simply a publicly readable view of [`pg_shadow`](https://www.postgresql.org/docs/current/view-pg-shadow.html "53.26. pg_shadow") that blanks out the password field.

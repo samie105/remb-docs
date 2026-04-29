@@ -10,8 +10,8 @@ content_hash: "d832349bbbc9f23e8b99888df17e436d764ad37fd72771b5d37e0c80ea51c156"
 menu_path: ["PostgreSQL: Documentation: 18: O.5. pg_receivexlog renamed to pg_receivewal"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/app-pgreceivewal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_receivewal"}
-nav_next: {"path": "postgres/docs/current/app-pgrecvlogical.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_recvlogical"}
+nav_prev: {"path": "../app-pgreceivewal.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_receivewal"}
+nav_next: {"path": "../app-pgrecvlogical.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_recvlogical"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/app-pgreceivexlog.html "PostgreSQL devel - O.5. pg_receivexlog renamed to pg_receivewal")

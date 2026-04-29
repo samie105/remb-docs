@@ -10,8 +10,8 @@ content_hash: "ef8a2c816916f8c66b6363c9ec2de462b03344fed449489bbf41e7793fdcadcd"
 menu_path: ["PostgreSQL: Documentation: 18: 53.8. pg_file_settings"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/view-pg-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.7.\u00a0pg_cursors"}
-nav_next: {"path": "postgres/docs/current/view-pg-group.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.9.\u00a0pg_group"}
+nav_prev: {"path": "../view-pg-cursors.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.7.\u00a0pg_cursors"}
+nav_next: {"path": "../view-pg-group.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.9.\u00a0pg_group"}
 ---
 
 The view `pg_file_settings` provides a summary of the contents of the server's configuration file(s). A row appears in this view for each “name = value” entry appearing in the files, with annotations indicating whether the value could be applied successfully. Additional row(s) may appear for problems not linked to a “name = value” entry, such as syntax errors in the files.

@@ -10,8 +10,8 @@ content_hash: "31984e1822d12fb4b9f03beef4fcad981fcbd0cd8aa7a671185f8d489cd81a4f"
 menu_path: ["transform-origin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/transform/index.md", "title": "transform"}
-nav_next: {"path": "tailwind/docs/transform-style/index.md", "title": "transform-style"}
+nav_prev: {"path": "../transform/index.md", "title": "transform"}
+nav_next: {"path": "../transform-style/index.md", "title": "transform-style"}
 ---
 
 # transform-origin

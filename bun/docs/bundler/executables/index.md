@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:37.643Z"
 content_hash: "d04531fc079745127d974cad148df49505389280c007a3615dd9188f93536aa2"
 menu_path: ["Single-file executable"]
 section_path: []
-nav_prev: {"path": "bun/docs/bundler/esbuild/index.md", "title": "esbuild"}
-nav_next: {"path": "bun/docs/bundler/fullstack/index.md", "title": "Fullstack dev server"}
+nav_prev: {"path": "../esbuild/index.md", "title": "esbuild"}
+nav_next: {"path": "../fullstack/index.md", "title": "Fullstack dev server"}
 ---
 
 # To support CPUs from before 2013, use the baseline version (nehalem)
@@ -624,7 +624,7 @@ terminal
 ./myapp
 ```
 
-Bun automatically handles serving the frontend assets with proper MIME types and cache headers. The HTML import is replaced with a manifest object that `Bun.serve` uses to efficiently serve pre-bundled assets. For more details on building full-stack applications with Bun, see the [full-stack guide](bun/docs/bundler/fullstack/index.md).
+Bun automatically handles serving the frontend assets with proper MIME types and cache headers. The HTML import is replaced with a manifest object that `Bun.serve` uses to efficiently serve pre-bundled assets. For more details on building full-stack applications with Bun, see the [full-stack guide](../fullstack/index.md).
 
 * * *
 
@@ -1250,7 +1250,7 @@ console.log(`Running in ${config.environment} mode`);
 console.log(`API endpoint: ${config.apiUrl}`);
 ```
 
-Plugins can perform any transformation: compile YAML/TOML configs, inline SQL queries, generate type-safe API clients, or preprocess templates. Refer to the [plugin documentation](bun/docs/bundler/plugins/index.md) for more details.
+Plugins can perform any transformation: compile YAML/TOML configs, inline SQL queries, generate type-safe API clients, or preprocess templates. Refer to the [plugin documentation](../plugins/index.md) for more details.
 
 * * *
 
@@ -1261,7 +1261,7 @@ Currently, the `--compile` flag can only accept a single entrypoint at a time an
 *   `--outdir` — use `outfile` instead (except when using with `--splitting`).
 *   `--public-path`
 *   `--target=node`
-*   `--target=browser` (without HTML entrypoints — see [Standalone HTML](bun/docs/bundler/standalone-html/index.md) for `--compile --target=browser` with `.html` files)
+*   `--target=browser` (without HTML entrypoints — see [Standalone HTML](../standalone-html/index.md) for `--compile --target=browser` with `.html` files)
 *   `--no-bundle` - we always bundle everything into the executable.
 
 * * *

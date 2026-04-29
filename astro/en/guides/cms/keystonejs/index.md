@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:40.646Z"
 content_hash: "f493e6fc190be30c80ce0b8d0a12d44f19112baa8b78a86d398887586802fbe1"
 menu_path: ["KeystoneJS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/keystatic/index.md", "title": "Keystatic & Astro"}
-nav_next: {"path": "astro/en/guides/cms/kontent-ai/index.md", "title": "Kontent.ai & Astro"}
+nav_prev: {"path": "../keystatic/index.md", "title": "Keystatic & Astro"}
+nav_next: {"path": "../kontent-ai/index.md", "title": "Kontent.ai & Astro"}
 ---
 
 # KeystoneJS & Astro

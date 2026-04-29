@@ -10,8 +10,8 @@ content_hash: "b352aa51e90080408f5d4776e3b25f83c3364ff0c5c2e23b229ffe074a76ca6a"
 menu_path: ["PostgreSQL: Documentation: 18: 35.31. foreign_tables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-foreign-table-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.30.\u00a0foreign_table_options"}
-nav_next: {"path": "postgres/docs/current/infoschema-information-schema-catalog-name.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.3.\u00a0information_schema_catalog_name"}
+nav_prev: {"path": "../infoschema-foreign-table-options.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.30.\u00a0foreign_table_options"}
+nav_next: {"path": "../infoschema-information-schema-catalog-name.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.3.\u00a0information_schema_catalog_name"}
 ---
 
 The view `foreign_tables` contains all foreign tables defined in the current database. Only those foreign tables are shown that the current user has access to (by way of being the owner or having some privilege).

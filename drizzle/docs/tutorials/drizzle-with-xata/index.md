@@ -10,15 +10,15 @@ content_hash: "68816afff2dd4c2e5677f72d0061e9ebb372c36e3ee7209b0379a7191ef257ac"
 menu_path: ["Drizzle with Xata"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
-nav_next: {"path": "drizzle/docs/tutorials/node-railway-pg/index.md", "title": "Drizzle with Node.js and PostgreSQL on Railway"}
+nav_prev: {"path": "../drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
+nav_next: {"path": "../node-railway-pg/index.md", "title": "Drizzle with Node.js and PostgreSQL on Railway"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Xata](https://xata.io/). Xata is a PostgreSQL database platform designed to help developers operate and scale databases with enhanced productivity and performance, featuring instant copy-on-write database branches, zero-downtime schema changes, data anonymization, and AI-powered performance monitoring.
 
 This guide assumes familiarity with:
 
--   You should have installed Drizzle ORM and [Drizzle kit](drizzle/docs/kit-overview/index.md). You can do this by running the following command:
+-   You should have installed Drizzle ORM and [Drizzle kit](../../kit-overview/index.md). You can do this by running the following command:
 
 ```
 npm i drizzle-orm
@@ -166,7 +166,7 @@ export type SelectPost = typeof postsTable.$inferSelect;
 
 #### Setup Drizzle config file[](#setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -231,9 +231,9 @@ Run migrations:
 npx drizzle-kit migrate
 ```
 
-Learn more about [migration process](drizzle/docs/migrations/index.md).
+Learn more about [migration process](../../migrations/index.md).
 
-Alternatively, you can push changes directly to the database using [Drizzle kit push command](drizzle/docs/kit-overview/index.md#prototyping-with-db-push):
+Alternatively, you can push changes directly to the database using [Drizzle kit push command](../../kit-overview/index.md#prototyping-with-db-push):
 
 ```bash
 npx drizzle-kit push
@@ -272,7 +272,7 @@ For instance, we create `src/db/queries` folder and separate files for each oper
 
 #### Insert data[](#insert-data)
 
-Read more about insert query in the [documentation](drizzle/docs/insert/index.md).
+Read more about insert query in the [documentation](../../insert/index.md).
 
 ```typescript
 import { db } from '../index';
@@ -289,11 +289,11 @@ export async function createPost(data: InsertPost) {
 
 #### Select data[](#select-data)
 
-Read more about select query in the [documentation](drizzle/docs/select/index.md).
+Read more about select query in the [documentation](../../select/index.md).
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](../../upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -360,11 +360,11 @@ export async function getPostsForLast24Hours(
 }
 ```
 
-Alternatively, you can use [relational query syntax](drizzle/docs/rqb/index.md).
+Alternatively, you can use [relational query syntax](../../rqb/index.md).
 
 #### Update data[](#update-data)
 
-Read more about update query in the [documentation](drizzle/docs/update/index.md).
+Read more about update query in the [documentation](../../update/index.md).
 
 ```typescript
 import { eq } from 'drizzle-orm';
@@ -378,7 +378,7 @@ export async function updatePost(id: SelectPost['id'], data: Partial<Omit<Select
 
 #### Delete data[](#delete-data)
 
-Read more about delete query in the [documentation](drizzle/docs/delete/index.md).
+Read more about delete query in the [documentation](../../delete/index.md).
 
 ```typescript
 import { eq } from 'drizzle-orm';
@@ -394,6 +394,6 @@ export async function deleteUser(id: SelectUser['id']) {
 
 Now that you have successfully set up Drizzle ORM with Xata, you can explore more advanced features:
 
--   Learn about [Drizzle relations](drizzle/docs/rqb/index.md) for complex queries
+-   Learn about [Drizzle relations](../../rqb/index.md) for complex queries
 -   Explore [Xata’s documentation](https://xata.io/documentation/)
--   Implement [database migrations](drizzle/docs/migrations/index.md) for production deployments
+-   Implement [database migrations](../../migrations/index.md) for production deployments

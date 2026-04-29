@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:28.724Z"
 content_hash: "b3629fbc2c602302d00f6026fc5fc283f5030c53f61ea352371a87d676f4cec8"
 menu_path: ["Convert a Buffer to a blob"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/buffer-to-arraybuffer/index.md", "title": "Convert a Buffer to an ArrayBuffer"}
-nav_next: {"path": "bun/docs/guides/binary/buffer-to-readablestream/index.md", "title": "Convert a Buffer to a ReadableStream"}
+nav_prev: {"path": "../buffer-to-arraybuffer/index.md", "title": "Convert a Buffer to an ArrayBuffer"}
+nav_next: {"path": "../buffer-to-readablestream/index.md", "title": "Convert a Buffer to a ReadableStream"}
 ---
 
 [Skip to main content](#content-area)

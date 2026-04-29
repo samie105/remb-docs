@@ -10,8 +10,8 @@ content_hash: "abf40ba77eb39ebd1f098a43ee6ab7f6aab71ab56ca68d9afac85213fcd803e1"
 menu_path: ["Making a Deno project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/getting_started/installation/index.md", "title": "Installation"}
-nav_next: {"path": "deno/runtime/getting_started/setup_your_environment/index.md", "title": "Set up your environment"}
+nav_prev: {"path": "../installation/index.md", "title": "Installation"}
+nav_next: {"path": "../setup_your_environment/index.md", "title": "Set up your environment"}
 ---
 
 **On this page**

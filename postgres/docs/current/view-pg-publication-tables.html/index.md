@@ -10,13 +10,13 @@ content_hash: "eec0ab34ec2d2911d337ff8af55eb33aef228f02cff78ce21eed5c728d3ffe27"
 menu_path: ["PostgreSQL: Documentation: 18: 53.18. pg_publication_tables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/view-pg-prepared-xacts.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.17.\u00a0pg_prepared_xacts"}
-nav_next: {"path": "postgres/docs/current/view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
+nav_prev: {"path": "../view-pg-prepared-xacts.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.17.\u00a0pg_prepared_xacts"}
+nav_next: {"path": "../view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-publication-tables.html "PostgreSQL devel - 53.18. pg_publication_tables")
 
-The view `pg_publication_tables` provides information about the mapping between publications and information of tables they contain. Unlike the underlying catalog [`pg_publication_rel`](https://www.postgresql.org/docs/current/catalog-pg-publication-rel.html "52.42. pg_publication_rel"), this view expands publications defined as [`FOR ALL TABLES`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-ALL-TABLES) and [`FOR TABLES IN SCHEMA`](postgres/docs/current/sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-TABLES-IN-SCHEMA), so for such publications there will be a row for each eligible table.
+The view `pg_publication_tables` provides information about the mapping between publications and information of tables they contain. Unlike the underlying catalog [`pg_publication_rel`](https://www.postgresql.org/docs/current/catalog-pg-publication-rel.html "52.42. pg_publication_rel"), this view expands publications defined as [`FOR ALL TABLES`](../sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-ALL-TABLES) and [`FOR TABLES IN SCHEMA`](../sql-createpublication.html/index.md#SQL-CREATEPUBLICATION-PARAMS-FOR-TABLES-IN-SCHEMA), so for such publications there will be a row for each eligible table.
 
 **Table 53.18. `pg_publication_tables` Columns**
 

@@ -10,8 +10,8 @@ content_hash: "d6393275c5d4713f5e76a2359340dba6bf27a22a5c9d31981d2696934caf1dbf"
 menu_path: ["Adding custom styles"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/colors/index.md", "title": "Colors"}
-nav_next: {"path": "tailwind/docs/detecting-classes-in-source-files/index.md", "title": "Detecting classes in source files"}
+nav_prev: {"path": "../colors/index.md", "title": "Colors"}
+nav_next: {"path": "../detecting-classes-in-source-files/index.md", "title": "Detecting classes in source files"}
 ---
 
 Best practices for adding your own custom styles in Tailwind projects.
@@ -30,7 +30,7 @@ If you want to change things like your color palette, spacing scale, typography 
 @theme {  --font-display: "Satoshi", "sans-serif";  --breakpoint-3xl: 120rem;  --color-avocado-100: oklch(0.99 0 0);  --color-avocado-200: oklch(0.98 0.04 113.22);  --color-avocado-300: oklch(0.94 0.11 115.03);  --color-avocado-400: oklch(0.92 0.19 114.08);  --color-avocado-500: oklch(0.84 0.18 117.33);  --color-avocado-600: oklch(0.53 0.12 118.34);  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);  /* ... */}
 ```
 
-Learn more about customizing your theme in the [theme variables documentation](tailwind/docs/theme/index.md).
+Learn more about customizing your theme in the [theme variables documentation](../theme/index.md).
 
 ## [Using arbitrary values](#using-arbitrary-values)
 
@@ -90,7 +90,7 @@ Arbitrary _variants_ are like arbitrary values but for doing on-the-fly selector
 <ul role="list">  {#each items as item}  <li class="lg:[&:nth-child(-n+3)]:hover:underline">{item}</li>  {/each}</ul>
 ```
 
-Learn more in the [arbitrary variants](tailwind/docs/hover-focus-and-other-states/index.md#using-arbitrary-variants) documentation.
+Learn more in the [arbitrary variants](../hover-focus-and-other-states/index.md#using-arbitrary-variants) documentation.
 
 ### [Handling whitespace](#handling-whitespace)
 
@@ -180,7 +180,7 @@ By defining component classes in the `components` layer, you can still use utili
 <!-- Will look like a card, but with square corners --><div class="card rounded-none">  <!-- ... --></div>
 ```
 
-Using Tailwind you probably don't need these types of classes as often as you think. Read our guide on [managing duplication](tailwind/docs/styling-with-utility-classes/index.md#managing-duplication) for our recommendations.
+Using Tailwind you probably don't need these types of classes as often as you think. Read our guide on [managing duplication](../styling-with-utility-classes/index.md#managing-duplication) for our recommendations.
 
 The `components` layer is also a good place to put custom styles for any third-party components you're using:
 

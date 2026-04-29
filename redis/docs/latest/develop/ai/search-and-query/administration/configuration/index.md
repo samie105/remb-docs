@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:35.741Z"
 content_hash: "75f2805a557cec6223dd0a911f2b5266022b8afb0855e28c7822aed83fae0f95"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Configuration parameters","→","Configuration parameters"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Configuration parameters","→","Configuration parameters"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/index.md", "title": "Administration"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/design/index.md", "title": "Internal design"}
+nav_prev: {"path": "../index.md", "title": "Administration"}
+nav_next: {"path": "../design/index.md", "title": "Internal design"}
 ---
 
 # Configuration parameters
@@ -963,7 +963,7 @@ Default: `0`
 
 ### search-on-oom
 
-Specifies the response policy for queries when the server's current memory usage exceeds the configured [maxmemory](redis/docs/latest/develop/reference/eviction/index.md#maxmem) limit.
+Specifies the response policy for queries when the server's current memory usage exceeds the configured [maxmemory](../../../../reference/eviction/index.md#maxmem) limit.
 
 *   `IGNORE`: Execute the query regardless of current memory usage.
 *   `RETURN`: In cluster mode, the query returns partial results from shards that did not exceed the memory limit. Shards that exceed the limit will not contribute results.

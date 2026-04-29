@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:51.392Z"
 content_hash: "641b06eb8b0c0dd6a2f0d39d67f99311090524f18e1845ab389608a977a8b361"
 menu_path: ["Define Procedures"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/middlewares/index.md", "title": "Middlewares"}
-nav_next: {"path": "trpc/docs/v10/server/routers/index.md", "title": "Define Routers"}
+nav_prev: {"path": "../middlewares/index.md", "title": "Middlewares"}
+nav_next: {"path": "../routers/index.md", "title": "Define Routers"}
 ---
 
 A procedure is a function which is exposed to the client, it can be one of:
 
 *   a `Query` - used to fetch data, generally does not change any data
 *   a `Mutation` - used to send data, often for create/update/delete purposes
-*   a `Subscription` - you might not need this, and we have [dedicated documentation](trpc/docs/v10/subscriptions/index.md)
+*   a `Subscription` - you might not need this, and we have [dedicated documentation](../../subscriptions/index.md)
 
 Procedures in tRPC are very flexible primitives to create backend functions. They use an immutable builder pattern, which means you can [create reusable base procedures](#reusable-base-procedures) that share functionality among multiple procedures.
 
@@ -71,7 +71,7 @@ ts
 
 As a general pattern we recommend you rename and export `t.procedure` as `publicProcedure`, which then makes room for you to create other named procedures for specific use cases and export those too. This pattern is called "base procedures" and is a key pattern for code and behaviour re-use in tRPC; every application is likely to need it.
 
-The below example takes a user input and [authorizes](https://en.wikipedia.org/wiki/Authorization) them like protective towns-people. This is obviously a contrived example for simplicity, and not an appropriate way to securely authorize an application user, so in practice you may want to use some combination of [Headers](trpc/docs/client/headers/index.md), [Context](trpc/docs/v10/server/context/index.md), [Middleware](trpc/docs/v10/server/middlewares/index.md), and [Metadata](trpc/docs/v10/server/metadata/index.md), to [authenticate](https://en.wikipedia.org/wiki/Authentication) and authorize your users.
+The below example takes a user input and [authorizes](https://en.wikipedia.org/wiki/Authorization) them like protective towns-people. This is obviously a contrived example for simplicity, and not an appropriate way to securely authorize an application user, so in practice you may want to use some combination of [Headers](../../../client/headers/index.md), [Context](../context/index.md), [Middleware](../middlewares/index.md), and [Metadata](../metadata/index.md), to [authenticate](https://en.wikipedia.org/wiki/Authentication) and authorize your users.
 
 ts
 

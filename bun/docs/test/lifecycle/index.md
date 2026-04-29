@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:28.645Z"
 content_hash: "07aad4c4c927836f1e9f76a4793422b615aa1be80de155d9a20f3c7974133d2e"
 menu_path: ["Lifecycle hooks"]
 section_path: []
-nav_prev: {"path": "bun/docs/test/dom/index.md", "title": "DOM testing"}
-nav_next: {"path": "bun/docs/test/mocks/index.md", "title": "Mocks"}
+nav_prev: {"path": "../dom/index.md", "title": "DOM testing"}
+nav_next: {"path": "../mocks/index.md", "title": "Mocks"}
 ---
 
 The test runner supports the following lifecycle hooks. This is useful for loading test fixtures, mocking data, and configuring the test environment.

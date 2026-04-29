@@ -10,8 +10,8 @@ content_hash: "b78473ba3f93188d02dbd53515710c53f4c577959cdc16bc93a2767f1f92bd5b"
 menu_path: ["Bundling"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/documentation/index.md", "title": "Documentation Tests"}
-nav_next: {"path": "deno/runtime/reference/lint_plugins/index.md", "title": "Lint Plugins"}
+nav_prev: {"path": "../documentation/index.md", "title": "Documentation Tests"}
+nav_next: {"path": "../lint_plugins/index.md", "title": "Lint Plugins"}
 ---
 
 # Or with an explicit output file:

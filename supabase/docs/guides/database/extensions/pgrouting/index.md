@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:59.109Z"
 content_hash: "8fea32990e60d9c5a67d3729f9bdec25ad1c0eedf8832b678ce4d2c6159a961b"
 menu_path: ["Database","Database","Extensions","Extensions","pgRouting: Geospatial Routing","pgRouting: Geospatial Routing"]
 section_path: ["Database","Database","Extensions","Extensions","pgRouting: Geospatial Routing","pgRouting: Geospatial Routing"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pgroonga/index.md", "title": "PGroonga: Multilingual Full Text Search"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pgsodium/index.md", "title": "pgsodium (pending deprecation): Encryption Features"}
+nav_prev: {"path": "../pgroonga/index.md", "title": "PGroonga: Multilingual Full Text Search"}
+nav_next: {"path": "../pgsodium/index.md", "title": "pgsodium (pending deprecation): Encryption Features"}
 ---
 
 # 

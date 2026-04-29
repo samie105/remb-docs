@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:00.480Z"
 content_hash: "d5cc897b0b38473876a57c5282416f554738649e20fee324dedcdadc41a4eb87"
 menu_path: ["AI & Vectors","AI & Vectors","Search","Search","Keyword search","Keyword search"]
 section_path: ["AI & Vectors","AI & Vectors","Search","Search","Keyword search","Keyword search"]
-nav_prev: {"path": "supabase/docs/guides/ai/integrations/roboflow/index.md", "title": "Roboflow"}
-nav_next: {"path": "supabase/docs/guides/ai/langchain/index.md", "title": "LangChain"}
+nav_prev: {"path": "../integrations/roboflow/index.md", "title": "Roboflow"}
+nav_next: {"path": "../langchain/index.md", "title": "LangChain"}
 ---
 
 # 

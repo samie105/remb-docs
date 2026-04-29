@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:12:46.326Z"
 content_hash: "fb814293bf5f163edf29fe6495e6fbe1932084ac73274b40fa1aca180503f517"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Production usage","→","Production usage"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Production usage","→","Production usage"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/prob/index.md", "title": "Probabilistic data types"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/queryjson/index.md", "title": "Index and query documents"}
+nav_prev: {"path": "../prob/index.md", "title": "Probabilistic data types"}
+nav_next: {"path": "../queryjson/index.md", "title": "Index and query documents"}
 ---
 
 # Production usage

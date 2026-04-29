@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:44.772Z"
 content_hash: "8f6c6fb4cbc13509ff2b3466192cc3e357f495e6c23c89925d6af194ec315d32"
 menu_path: ["Hono Stacks ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/concepts/developer-experience/index.md", "title": "Developer Experience \u200b"}
-nav_next: {"path": "hono/docs/getting-started/basic/index.md", "title": "Getting Started \u200b"}
+nav_prev: {"path": "../developer-experience/index.md", "title": "Developer Experience \u200b"}
+nav_next: {"path": "../../getting-started/basic/index.md", "title": "Getting Started \u200b"}
 ---
 
 Hono makes easy things easy and hard things easy. It is suitable for not just only returning JSON, but it's also great for building the full-stack application including REST API servers and the client.
@@ -81,7 +81,7 @@ To emit an endpoint specification, export its type.
 
 WARNING
 
-For the RPC to infer routes correctly, all included methods must be chained, and the endpoint or app type must be inferred from a declared variable. For more, see [Best Practices for RPC](hono/docs/guides/best-practices/index.md#if-you-want-to-use-rpc-features).
+For the RPC to infer routes correctly, all included methods must be chained, and the endpoint or app type must be inferred from a declared variable. For more, see [Best Practices for RPC](../../guides/best-practices/index.md#if-you-want-to-use-rpc-features).
 
 ts
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:13.622Z"
 content_hash: "11671020b0cbd738636ccc2b9cfbda59bc6f1cb440a4f388376dc9808bae50f5"
 menu_path: ["Deploy a Bun application on AWS Lambda"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/typedarray-to-string/index.md", "title": "Convert a Uint8Array to a string"}
-nav_next: {"path": "bun/docs/guides/deployment/digital-ocean/index.md", "title": "Deploy a Bun application on DigitalOcean"}
+nav_prev: {"path": "../../binary/typedarray-to-string/index.md", "title": "Convert a Uint8Array to a string"}
+nav_next: {"path": "../digital-ocean/index.md", "title": "Deploy a Bun application on DigitalOcean"}
 ---
 
 # Use the official AWS Lambda adapter image to handle the Lambda runtime

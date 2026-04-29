@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:20.460Z"
 content_hash: "9fb0f2f873fc72ea6973d57ea617f19cddef53f5bb9df6efba4c41d57cf1fce3"
 menu_path: ["Retry Link"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/links/loggerLink/index.md", "title": "Logger Link"}
-nav_next: {"path": "trpc/docs/client/links/splitLink/index.md", "title": "Split Link"}
+nav_prev: {"path": "../loggerLink/index.md", "title": "Logger Link"}
+nav_next: {"path": "../splitLink/index.md", "title": "Split Link"}
 ---
 
 `retryLink` is a link that allows you to retry failed operations in your tRPC client. It provides a customizable way to handle transient errors, such as network failures or server errors, by automatically retrying the failed requests based on specified conditions.
@@ -140,6 +140,6 @@ ts
 
 ## Handling tracked() events[​](#handling-tracked-events "Direct link to Handling tracked() events")
 
-When using `retryLink` with subscriptions that use [`tracked()`](trpc/docs/server/subscriptions/index.md#tracked), the link will automatically include the last known event ID when retrying. This ensures that when a subscription reconnects, it can resume from where it left off without missing any events.
+When using `retryLink` with subscriptions that use [`tracked()`](../../../server/subscriptions/index.md#tracked), the link will automatically include the last known event ID when retrying. This ensures that when a subscription reconnects, it can resume from where it left off without missing any events.
 
 For example, if you're using Server-sent Events (SSE) with `httpSubscriptionLink`, the `retryLink` will automatically handle reconnecting with the last event ID when errors like `401 Unauthorized` occur.

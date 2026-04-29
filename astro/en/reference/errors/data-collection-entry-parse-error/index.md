@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:17.920Z"
 content_hash: "0a91d886f0a1d4ee01c36338da6617982862e78771794fc52c9debccaf6ca34c"
 menu_path: ["Data collection entry failed to parse."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/csssyntax-error/index.md", "title": "CSS Syntax Error."}
-nav_next: {"path": "astro/en/reference/errors/duplicate-content-entry-slug-error/index.md", "title": "Duplicate content entry slug."}
+nav_prev: {"path": "../csssyntax-error/index.md", "title": "CSS Syntax Error."}
+nav_next: {"path": "../duplicate-content-entry-slug-error/index.md", "title": "Duplicate content entry slug."}
 ---
 
 # Data collection entry failed to parse.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:38.265Z"
 content_hash: "808e917f24215dc381fca492f1d81733f05d7a740c50a01416bec1b515554b94"
 menu_path: ["Migrating from Docusaurus"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/from-eleventy/index.md", "title": "Migrating from Eleventy"}
+nav_prev: {"path": "../from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
+nav_next: {"path": "../from-eleventy/index.md", "title": "Migrating from Eleventy"}
 ---
 
 # Migrating from Docusaurus

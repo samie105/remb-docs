@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:32.903Z"
 content_hash: "3d41820780e6c8a880e7f2c64dbdf5b6db9ec1bef78d77d3011678dd93b6eb63"
 menu_path: ["Neon Postgres & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/firebase/index.md", "title": "Firebase & Astro"}
-nav_next: {"path": "astro/en/guides/backend/prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
+nav_prev: {"path": "../firebase/index.md", "title": "Firebase & Astro"}
+nav_next: {"path": "../prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
 ---
 
 # Neon Postgres & Astro

@@ -10,8 +10,8 @@ content_hash: "a6ecd3beff486debf4365e5aee8cce1030f7a4dad478cbe1b548ff4471586005"
 menu_path: ["fill"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/will-change/index.md", "title": "will-change"}
-nav_next: {"path": "tailwind/docs/stroke/index.md", "title": "stroke"}
+nav_prev: {"path": "../will-change/index.md", "title": "will-change"}
+nav_next: {"path": "../stroke/index.md", "title": "stroke"}
 ---
 
 # fill

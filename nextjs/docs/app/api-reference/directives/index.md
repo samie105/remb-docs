@@ -11,8 +11,8 @@ menu_path: ["Directives"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/index.md", "title": "API Reference"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-cache/index.md", "title": "use cache"}
+nav_prev: {"path": "../index.md", "title": "API Reference"}
+nav_next: {"path": "use-cache/index.md", "title": "use cache"}
 ---
 
 # Directives

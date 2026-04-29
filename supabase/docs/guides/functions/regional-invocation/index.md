@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:15.745Z"
 content_hash: "cd87082d72bd7c9a32206d2afd3d2b1efabb68c63ca0c605c32df4a80752a7f6"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Regional invocations","Regional invocations"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Regional invocations","Regional invocations"]
-nav_prev: {"path": "supabase/docs/guides/functions/recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
-nav_next: {"path": "supabase/docs/guides/functions/routing/index.md", "title": "Handling Routing in Functions"}
+nav_prev: {"path": "../recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
+nav_next: {"path": "../routing/index.md", "title": "Handling Routing in Functions"}
 ---
 
 # 

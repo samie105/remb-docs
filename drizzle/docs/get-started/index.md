@@ -10,8 +10,8 @@ content_hash: "b556ea8d465ec4dded08794da24aab47192bbe3408334c71f2985c2711030422"
 menu_path: ["Get started with Drizzle"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/overview/index.md", "title": "Drizzle ORM"}
-nav_next: {"path": "drizzle/docs/sustainability/index.md", "title": "Drizzle Sustainability"}
+nav_prev: {"path": "../overview/index.md", "title": "Drizzle ORM"}
+nav_next: {"path": "../sustainability/index.md", "title": "Drizzle Sustainability"}
 ---
 
 Drizzle ORM - Get started

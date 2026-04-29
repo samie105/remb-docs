@@ -11,8 +11,8 @@ menu_path: ["Deploying Next.js to different platforms"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/debugging/index.md", "title": "How to use debugging tools with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/draft-mode/index.md", "title": "How to preview content with Draft Mode in Next.js"}
+nav_prev: {"path": "../debugging/index.md", "title": "How to use debugging tools with Next.js"}
+nav_next: {"path": "../draft-mode/index.md", "title": "How to preview content with Draft Mode in Next.js"}
 ---
 
 # Deploying Next.js to different platforms

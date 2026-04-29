@@ -10,8 +10,8 @@ content_hash: "ab44847ba4cf149025fb787de3e816d8f7eb1bc675b65c145648377a368abf83"
 menu_path: ["backdrop-filter: opacity()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/backdrop-filter-invert/index.md", "title": "backdrop-filter: invert()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-saturate/index.md", "title": "backdrop-filter: saturate()"}
+nav_prev: {"path": "../backdrop-filter-invert/index.md", "title": "backdrop-filter: invert()"}
+nav_next: {"path": "../backdrop-filter-saturate/index.md", "title": "backdrop-filter: saturate()"}
 ---
 
 # backdrop-filter: opacity()

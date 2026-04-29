@@ -10,8 +10,8 @@ content_hash: "996d08feddc9c43e794f103e4373712a0601e6c77ddc92a5af6e78584fadba0e"
 menu_path: ["Installation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/index.md", "title": "Welcome to Deno"}
-nav_next: {"path": "deno/runtime/getting_started/first_project/index.md", "title": "Making a Deno project"}
+nav_prev: {"path": "../../index.md", "title": "Welcome to Deno"}
+nav_next: {"path": "../first_project/index.md", "title": "Making a Deno project"}
 ---
 
 # Download and install the latest version of Deno

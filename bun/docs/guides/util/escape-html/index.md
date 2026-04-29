@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:51.456Z"
 content_hash: "5645a0e0aafe2cc0ef1c5ec25b4e88921533aea1c529f57bfe64f9a76275d391"
 menu_path: ["Escape an HTML string"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/entrypoint/index.md", "title": "Check if the current file is the entrypoint"}
-nav_next: {"path": "bun/docs/guides/util/file-url-to-path/index.md", "title": "Convert a file URL to an absolute path"}
+nav_prev: {"path": "../entrypoint/index.md", "title": "Check if the current file is the entrypoint"}
+nav_next: {"path": "../file-url-to-path/index.md", "title": "Convert a file URL to an absolute path"}
 ---
 
 [Skip to main content](#content-area)

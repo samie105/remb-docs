@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/upgrading/version-15/index.md", "title": "How to upgrade to version 15"}
-nav_next: {"path": "nextjs/docs/app/guides/videos/index.md", "title": "How to use and optimize videos"}
+nav_prev: {"path": "../version-15/index.md", "title": "How to upgrade to version 15"}
+nav_next: {"path": "../../videos/index.md", "title": "How to use and optimize videos"}
 ---
 
 # How to upgrade to version 16
@@ -332,7 +332,7 @@ export default nextConfig
 
 ## Async Request APIs (Breaking change)[](#async-request-apis-breaking-change)
 
-Version 15 introduced [Async Request APIs](nextjs/docs/app/guides/upgrading/version-15/index.md#async-request-apis-breaking-change) as a breaking change, with **temporary** synchronous compatibility.
+Version 15 introduced [Async Request APIs](../version-15/index.md#async-request-apis-breaking-change) as a breaking change, with **temporary** synchronous compatibility.
 
 Starting with **Next.js 16**, synchronous access is fully removed. These APIs can only be accessed asynchronously.
 

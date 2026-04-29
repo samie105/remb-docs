@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:59.675Z"
 content_hash: "4a99edf75679625d99534d21a7d87fe78080fcf6197f976e928f29daa2dadd3e"
 menu_path: ["@astrojs/\n\t\t\t\t\tvue"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/svelte/index.md", "title": "@astrojs/\n\t\t\t\t\tsvelte"}
-nav_next: {"path": "astro/en/guides/integrations-guide/cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
+nav_prev: {"path": "../svelte/index.md", "title": "@astrojs/\n\t\t\t\t\tsvelte"}
+nav_next: {"path": "../cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
 ---
 
 # @astrojs/ vue

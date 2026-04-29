@@ -11,8 +11,8 @@ menu_path: ["Database drivers"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/more/releases/index.md", "title": "ORM releases and maturity levels"}
-nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
+nav_prev: {"path": "../../../more/releases/index.md", "title": "ORM releases and maturity levels"}
+nav_next: {"path": "../mongodb/index.md", "title": "MongoDB"}
 ---
 
 Prisma Client can connect and run queries against your database using JavaScript database drivers via **driver adapters**. Adapters act as _translators_ between Prisma Client and the JavaScript database driver.
@@ -26,23 +26,23 @@ There are two different types of driver adapters:
 -   [Database driver adapters](#database-driver-adapters)
 -   [Serverless driver adapters](#serverless-driver-adapters)
 
-> **Note**: Driver adapters enable [edge deployments](prisma/docs/orm/prisma-client/deployment/edge/overview/index.md) of applications that use Prisma ORM.
+> **Note**: Driver adapters enable [edge deployments](../../../prisma-client/deployment/edge/overview/index.md) of applications that use Prisma ORM.
 
 ### [Database driver adapters](#database-driver-adapters)
 
 You can connect to your database using a Node.js-based driver from Prisma Client using a database driver adapter. Prisma maintains the adapters for the following drivers:
 
 -   PostgreSQL
-    -   [`pg`](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#using-driver-adapters)
+    -   [`pg`](../postgresql/index.md#using-driver-adapters)
 -   Prisma Postgres
     -   [`@prisma/adapter-ppg`](https://www.prisma.io/docs/postgres/database/serverless-driver#use-with-prisma-orm)
 -   MySQL/MariaDB
-    -   [`mariadb`](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#using-driver-adapters)
+    -   [`mariadb`](../mysql/index.md#using-driver-adapters)
 -   SQLite
-    -   [`better-sqlite3`](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md#using-driver-adapters)
-    -   [`libSQL`](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md#using-driver-adapters) (Turso)
+    -   [`better-sqlite3`](../sqlite/index.md#using-driver-adapters)
+    -   [`libSQL`](../sqlite/index.md#using-driver-adapters) (Turso)
 -   MS SQL Server
-    -   [`node-mssql`](prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md#using-driver-adapters)
+    -   [`node-mssql`](../sql-server/index.md#using-driver-adapters)
 
 ### [Serverless driver adapters](#serverless-driver-adapters)
 
@@ -51,9 +51,9 @@ Database providers, such as Neon and PlanetScale, allow you to connect to your d
 Prisma ORM maintains the following serverless driver adapters:
 
 -   [Prisma Postgres](https://www.prisma.io/docs/postgres/database/serverless-driver#use-with-prisma-orm)
--   [Neon](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#neon) (and Vercel Postgres)
--   [PlanetScale](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale)
--   [Cloudflare D1](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md#cloudflare-d1)
+-   [Neon](../postgresql/index.md#neon) (and Vercel Postgres)
+-   [PlanetScale](../mysql/index.md#planetscale)
+-   [Cloudflare D1](../sqlite/index.md#cloudflare-d1)
 
 ### [Community-maintained database driver adapters](#community-maintained-database-driver-adapters)
 
@@ -64,15 +64,15 @@ You can also build your own driver adapter for the database you're using. The fo
 
 Refer to the following pages to learn more about how to use the specific driver adapters with the specific database providers:
 
--   [PostgreSQL](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#using-driver-adapters)
+-   [PostgreSQL](../postgresql/index.md#using-driver-adapters)
 -   [Prisma Postgres](https://www.prisma.io/docs/postgres/database/serverless-driver#use-with-prisma-orm)
--   [MySQL/MariaDB](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#using-driver-adapters)
--   [MS SQL Server](prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md#using-driver-adapters)
--   [Neon](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#neon)
--   [PlanetScale](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md#planetscale)
--   [Turso](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md#turso-libsql)
--   [Cloudflare D1](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md#cloudflare-d1)
--   [CockroachDB](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#cockroachdb)
+-   [MySQL/MariaDB](../mysql/index.md#using-driver-adapters)
+-   [MS SQL Server](../sql-server/index.md#using-driver-adapters)
+-   [Neon](../postgresql/index.md#neon)
+-   [PlanetScale](../mysql/index.md#planetscale)
+-   [Turso](../sqlite/index.md#turso-libsql)
+-   [Cloudflare D1](../sqlite/index.md#cloudflare-d1)
+-   [CockroachDB](../postgresql/index.md#cockroachdb)
 
 ### [New driver adapters API in v6.6.0](#new-driver-adapters-api-in-v660)
 
@@ -117,7 +117,7 @@ const prisma = new PrismaClient({ adapter });
 
 ### [Driver adapters and database connection configuration](#driver-adapters-and-database-connection-configuration)
 
-In Prisma ORM 7, the database connection URL is configured in [`prisma.config.ts`](prisma/docs/orm/reference/prisma-config-reference/index.md). However, when using a driver adapter, the connection string needs to be provided in your _application code_ when the driver adapter is set up initially.
+In Prisma ORM 7, the database connection URL is configured in [`prisma.config.ts`](../../../reference/prisma-config-reference/index.md). However, when using a driver adapter, the connection string needs to be provided in your _application code_ when the driver adapter is set up initially.
 
 Here is how this is done for the `pg` driver and the `@prisma/adapter-pg` adapter:
 
@@ -188,6 +188,6 @@ export default defineNuxtConfig({
 
 ### [Driver adapters and TypedSQL](#driver-adapters-and-typedsql)
 
-[TypedSQL](prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md) lets you write fully type-safe SQL queries that integrate directly with Prisma Client. This feature is useful if you want the flexibility of writing SQL while still benefiting from Prisma's type-safety.
+[TypedSQL](../../../prisma-client/using-raw-sql/typedsql/index.md) lets you write fully type-safe SQL queries that integrate directly with Prisma Client. This feature is useful if you want the flexibility of writing SQL while still benefiting from Prisma's type-safety.
 
 You can also use driver adapters together with TypedSQL to connect through JavaScript database drivers. TypedSQL works with all supported driver adapters except `@prisma/adapter-better-sqlite3`. For SQLite support, use [`@prisma/adapter-libsql`](https://www.npmjs.com/package/@prisma/adapter-libsql) instead.

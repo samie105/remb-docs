@@ -10,8 +10,8 @@ content_hash: "a602ccf2d1598cbb14ceb70c4cef9051b79b3593dea84b59bc5c13acc8fb386d"
 menu_path: ["PostgreSQL: Documentation: 18: 35.49. sql_implementation_info"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-sql-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.48.\u00a0sql_features"}
-nav_next: {"path": "postgres/docs/current/jit-extensibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.4.\u00a0Extensibility"}
+nav_prev: {"path": "../infoschema-sql-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.48.\u00a0sql_features"}
+nav_next: {"path": "../jit-extensibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 30.4.\u00a0Extensibility"}
 ---
 
 The table `sql_implementation_info` contains information about various aspects that are left implementation-defined by the SQL standard. This information is primarily intended for use in the context of the ODBC interface; users of other interfaces will probably find this information to be of little use. For this reason, the individual implementation information items are not described here; you will find them in the description of the ODBC interface.

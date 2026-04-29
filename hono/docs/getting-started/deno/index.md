@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:12.679Z"
 content_hash: "c95918a1c1b0b3fd432de3507eaaa87770399ef90b14442e5fa5e021081406d9"
 menu_path: ["Deno ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/getting-started/cloudflare-pages/index.md", "title": "Cloudflare Pages \u200b"}
-nav_next: {"path": "hono/docs/getting-started/bun/index.md", "title": "Bun \u200b"}
+nav_prev: {"path": "../cloudflare-pages/index.md", "title": "Cloudflare Pages \u200b"}
+nav_next: {"path": "../bun/index.md", "title": "Bun \u200b"}
 ---
 
 [Deno](https://deno.com/) is a JavaScript runtime built on V8. It's not Node.js. Hono also works on Deno.

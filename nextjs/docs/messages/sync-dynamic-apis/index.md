@@ -11,8 +11,8 @@ menu_path: ["Dynamic APIs are Asynchronous"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
-nav_next: {"path": "nextjs/docs/messages/url-deprecated/index.md", "title": "`url` is deprecated"}
+nav_prev: {"path": "../no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
+nav_next: {"path": "../url-deprecated/index.md", "title": "`url` is deprecated"}
 ---
 
 # Dynamic APIs are Asynchronous

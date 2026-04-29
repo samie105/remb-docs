@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:44.277Z"
 content_hash: "22788e1d56dc896ac90c79459f2c44352481b2f2fd997c9ef509a3ff29a6cdce"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-email-templates/index.md", "title": "Email Templates"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/before-user-created-hook/index.md", "title": "Before User Created Hook"}
+nav_prev: {"path": "../auth-email-templates/index.md", "title": "Email Templates"}
+nav_next: {"path": "before-user-created-hook/index.md", "title": "Before User Created Hook"}
 ---
 
 # 

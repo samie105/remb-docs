@@ -10,8 +10,8 @@ content_hash: "89121ebc67862717d23edd3d7e1aac902153e0fa1882c912a3451207cbbc764e"
 menu_path: ["assert - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/all_symbols/index.md", "title": "All Symbols - Node documentation"}
-nav_next: {"path": "deno/api/node/assert/strict/index.md", "title": "namespace assert.strict"}
+nav_prev: {"path": "../all_symbols/index.md", "title": "All Symbols - Node documentation"}
+nav_next: {"path": "strict/index.md", "title": "namespace assert.strict"}
 ---
 
 ### Usage in Deno

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:46.691Z"
 content_hash: "5a8d625acfd0944fa92266416c2948c4b26bb266a55842e3b2a5a2adad5bb1af"
 menu_path: ["Cookie Helper ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/helpers/conninfo/index.md", "title": "ConnInfo Helper \u200b"}
-nav_next: {"path": "hono/docs/helpers/css/index.md", "title": "css Helper \u200b"}
+nav_prev: {"path": "../conninfo/index.md", "title": "ConnInfo Helper \u200b"}
+nav_next: {"path": "../css/index.md", "title": "css Helper \u200b"}
 ---
 
 The Cookie Helper provides an easy interface to manage cookies, enabling developers to set, parse, and delete cookies seamlessly.

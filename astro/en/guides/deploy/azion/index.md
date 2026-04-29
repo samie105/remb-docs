@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:24.150Z"
 content_hash: "2e3729c8060a57ba111568a6b7495c1240d46f6941923afa3bb7cfd0a530f4f5"
 menu_path: ["Deploy your Astro Site to Azion"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/aws-via-sst/index.md", "title": "Deploy your Astro Site to AWS with SST"}
-nav_next: {"path": "astro/en/guides/deploy/buddy/index.md", "title": "Deploy your Astro Site with Buddy"}
+nav_prev: {"path": "../aws-via-sst/index.md", "title": "Deploy your Astro Site to AWS with SST"}
+nav_next: {"path": "../buddy/index.md", "title": "Deploy your Astro Site with Buddy"}
 ---
 
 # Deploy your Astro Site to Azion

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:49.450Z"
 content_hash: "99c558cd738be13023f3e0eeaf7756b003cd944e607b4546c9d0915702e6a9bc"
 menu_path: ["PostgreSQL: Documentation: 18: 41.10. Trigger Functions"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/plpgsql-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.5.\u00a0Basic Statements"}
-nav_next: {"path": "postgres/docs/current/plpython-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.2.\u00a0Data Values"}
+nav_prev: {"path": "../plpgsql-statements.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.5.\u00a0Basic Statements"}
+nav_next: {"path": "../plpython-data.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.2.\u00a0Data Values"}
 ---
 
 PL/pgSQL can be used to define trigger functions on data changes or database events. A trigger function is created with the `CREATE FUNCTION` command, declaring it as a function with no arguments and a return type of `trigger` (for data change triggers) or `event_trigger` (for database event triggers). Special local variables named ``TG__`something`_`` are automatically defined to describe the condition that triggered the call.

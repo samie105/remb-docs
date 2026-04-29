@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:04.778Z"
 content_hash: "643fb572bfc65968ab1ae76af70505b091b5d2da9ffbbfc737206a62221ee003"
 menu_path: ["Get the absolute path of the current file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/import-meta-file/index.md", "title": "Get the file name of the current file"}
-nav_next: {"path": "bun/docs/guides/util/javascript-uuid/index.md", "title": "Generate a UUID"}
+nav_prev: {"path": "../import-meta-file/index.md", "title": "Get the file name of the current file"}
+nav_next: {"path": "../javascript-uuid/index.md", "title": "Generate a UUID"}
 ---
 
 [Skip to main content](#content-area)

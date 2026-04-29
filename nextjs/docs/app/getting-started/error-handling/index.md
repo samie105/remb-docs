@@ -11,8 +11,8 @@ menu_path: ["Error Handling"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/getting-started/revalidating/index.md", "title": "Revalidating"}
-nav_next: {"path": "nextjs/docs/app/getting-started/css/index.md", "title": "CSS"}
+nav_prev: {"path": "../revalidating/index.md", "title": "Revalidating"}
+nav_next: {"path": "../css/index.md", "title": "CSS"}
 ---
 
 # Error Handling

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:10.894Z"
 content_hash: "a95e3b01849fa00ef5b342d363459e1f9837d26552aee431921f28eea31a5d73"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Troubleshooting","Troubleshooting"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Troubleshooting","Troubleshooting"]
-nav_prev: {"path": "supabase/docs/guides/deployment/branching/integrations/index.md", "title": "Integrations"}
-nav_next: {"path": "supabase/docs/guides/deployment/branching/working-with-branches/index.md", "title": "Working with branches"}
+nav_prev: {"path": "../integrations/index.md", "title": "Integrations"}
+nav_next: {"path": "../working-with-branches/index.md", "title": "Working with branches"}
 ---
 
 # 

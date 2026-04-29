@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:46.472Z"
 content_hash: "80d9871ae5d0efbf90b9bb2d644ef7ac299dcdb17b9e8da927fab1684244d2ca"
 menu_path: ["Override the default npm registry for bun install"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/cicd/index.md", "title": "Install dependencies with Bun in GitHub Actions"}
-nav_next: {"path": "bun/docs/guides/install/from-npm-install-to-bun-install/index.md", "title": "Migrate from npm install to bun install"}
+nav_prev: {"path": "../cicd/index.md", "title": "Install dependencies with Bun in GitHub Actions"}
+nav_next: {"path": "../from-npm-install-to-bun-install/index.md", "title": "Migrate from npm install to bun install"}
 ---
 
 # set default registry as a string

@@ -10,8 +10,8 @@ content_hash: "c42ee4b71b9123694b71d872990f2bd5cc859094f970face5416e70d02ddbf56"
 menu_path: ["Drizzle ORM - Include or Exclude Columns in Query"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/guides/gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
-nav_next: {"path": "drizzle/docs/guides/incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
+nav_prev: {"path": "../gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
+nav_next: {"path": "../incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
 ---
 
 Drizzle | Include or Exclude Columns in Query
@@ -64,7 +64,7 @@ To include all columns with extra columns you can use `getColumns()` utility fun
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](../../upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 
@@ -94,7 +94,7 @@ To exclude columns you can use `getColumns()` utility function like this:
 
 IMPORTANT
 
-`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](drizzle/docs/upgrade-v1/index.md))
+`getColumns` available starting from `drizzle-orm@1.0.0-beta.2`(read more [here](../../upgrade-v1/index.md))
 
 If you are on pre-1 version(like `0.45.1`) then use `getTableColumns`
 

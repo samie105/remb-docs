@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:31:53.023Z"
 content_hash: "53c3166b91a364f9461ec415db85c4c8c0fda9342082a00656705846bdbc7c88"
 menu_path: ["Supabase Documentation"]
 section_path: []
-nav_next: {"path": "supabase/docs/guides/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "guides/getting-started/index.md", "title": "Getting Started"}
 ---
 
 # Supabase Documentation

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:53:02.356Z"
 content_hash: "79a991f101d5de15b04d13b8c3a0a373848961295c6e2277edc08b6deccc04f4"
 menu_path: ["PostgreSQL: Documentation: 18: B.4. Date/Time Configuration Files"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/datatype-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.13.\u00a0XML Type"}
-nav_next: {"path": "postgres/docs/current/datetime-input-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: B.1.\u00a0Date/Time Input Interpretation"}
+nav_prev: {"path": "../datatype-xml.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.13.\u00a0XML Type"}
+nav_next: {"path": "../datetime-input-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: B.1.\u00a0Date/Time Input Interpretation"}
 ---
 
 Since timezone abbreviations are not well standardized, PostgreSQL provides a means to customize the set of abbreviations accepted in datetime input. There are two sources for these abbreviations:
 
-1.  The [TimeZone](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE) run-time parameter is usually set to the name of an entry in the IANA time zone database. If that zone has widely-used zone abbreviations, they will appear in the IANA data, and PostgreSQL will preferentially recognize those abbreviations with the meanings given in the IANA data. For example, if `timezone` is set to `America/New_York` then `EST` will be understood as UTC-5 and `EDT` will be understood as UTC-4. (These IANA abbreviations will also be used in datetime output, if [DateStyle](postgres/docs/current/runtime-config-client.html/index.md#GUC-DATESTYLE) is set to a style that prefers non-numeric zone abbreviations.)
+1.  The [TimeZone](../runtime-config-client.html/index.md#GUC-TIMEZONE) run-time parameter is usually set to the name of an entry in the IANA time zone database. If that zone has widely-used zone abbreviations, they will appear in the IANA data, and PostgreSQL will preferentially recognize those abbreviations with the meanings given in the IANA data. For example, if `timezone` is set to `America/New_York` then `EST` will be understood as UTC-5 and `EDT` will be understood as UTC-4. (These IANA abbreviations will also be used in datetime output, if [DateStyle](../runtime-config-client.html/index.md#GUC-DATESTYLE) is set to a style that prefers non-numeric zone abbreviations.)
     
-2.  If an abbreviation is not found in the current IANA time zone, it is sought in the list specified by the [timezone\_abbreviations](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE-ABBREVIATIONS) run-time parameter. The `timezone_abbreviations` list is primarily useful for allowing datetime input to recognize abbreviations for time zones other than the current zone. (These abbreviations will not be used in datetime output.)
+2.  If an abbreviation is not found in the current IANA time zone, it is sought in the list specified by the [timezone\_abbreviations](../runtime-config-client.html/index.md#GUC-TIMEZONE-ABBREVIATIONS) run-time parameter. The `timezone_abbreviations` list is primarily useful for allowing datetime input to recognize abbreviations for time zones other than the current zone. (These abbreviations will not be used in datetime output.)
     
 
 While the `timezone_abbreviations` parameter can be altered by any database user, the possible values for it are under the control of the database administrator — they are in fact names of configuration files stored in `.../share/timezonesets/` of the installation directory. By adding or altering files in that directory, the administrator can set local policy for timezone abbreviations.

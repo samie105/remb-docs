@@ -10,8 +10,8 @@ content_hash: "05e7b2de16527d9eab37db87ac2779e2150248892de7f3c18bab22dbfa740213"
 menu_path: ["PostgreSQL: Documentation: 18: 52.51. pg_statistic"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/catalog-pg-statistic-ext.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.52.\u00a0pg_statistic_ext"}
-nav_next: {"path": "postgres/docs/current/catalog-pg-subscription-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.55.\u00a0pg_subscription_rel"}
+nav_prev: {"path": "../catalog-pg-statistic-ext.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.52.\u00a0pg_statistic_ext"}
+nav_next: {"path": "../catalog-pg-subscription-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.55.\u00a0pg_subscription_rel"}
 ---
 
 The catalog `pg_statistic` stores statistical data about the contents of the database. Entries are created by [`ANALYZE`](https://www.postgresql.org/docs/current/sql-analyze.html "ANALYZE") and subsequently used by the query planner. Note that all the statistical data is inherently approximate, even assuming that it is up-to-date.

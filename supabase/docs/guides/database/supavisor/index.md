@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:30.180Z"
 content_hash: "5c50007b0ea7a3fdacb5172cb0b426245c05adc35cc62ab48ad8ce22bac5c686"
 menu_path: ["Database","Database","Debugging","Debugging","Supavisor","Supavisor"]
 section_path: ["Database","Database","Debugging","Debugging","Supavisor","Supavisor"]
-nav_prev: {"path": "supabase/docs/guides/database/secure-data/index.md", "title": "Securing your data"}
-nav_next: {"path": "supabase/docs/guides/database/tables/index.md", "title": "Tables and Data"}
+nav_prev: {"path": "../secure-data/index.md", "title": "Securing your data"}
+nav_next: {"path": "../tables/index.md", "title": "Tables and Data"}
 ---
 
 # 

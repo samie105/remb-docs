@@ -10,8 +10,8 @@ content_hash: "596b7c8f78f42acfcbe54095eb8214f6dd7fcf80bffa5ecef5f7cd3feef1d32f"
 menu_path: ["Troubleshooting relations"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md", "title": "Self-relations"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/table-inheritance/index.md", "title": "Table inheritance"}
+nav_prev: {"path": "../self-relations/index.md", "title": "Self-relations"}
+nav_next: {"path": "../../table-inheritance/index.md", "title": "Table inheritance"}
 ---
 
 Modelling your schema can sometimes offer up some unexpected results. This section aims to cover the most prominent of those.
@@ -124,9 +124,9 @@ Although the lexicographic order of the relation fields in the Prisma schema cha
 
 If you rename relation fields in an implicit many-to-many self-relations, make sure that you maintain the alphabetic order of the fields - for example, by prefixing with `a_` and `b_`.
 
-There are a couple of ways to define an m-n relationship, implicitly or explicitly. Implicitly means letting Prisma ORM handle the relation table (JOIN table) under the hood, all you have to do is define an array/list for the non scalar types on each model, see [implicit many-to-many relations](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#implicit-many-to-many-relations).
+There are a couple of ways to define an m-n relationship, implicitly or explicitly. Implicitly means letting Prisma ORM handle the relation table (JOIN table) under the hood, all you have to do is define an array/list for the non scalar types on each model, see [implicit many-to-many relations](../many-to-many-relations/index.md#implicit-many-to-many-relations).
 
-Where you might run into trouble is when creating an [explicit m-n relationship](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#explicit-many-to-many-relations), that is, to create and handle the relation table yourself. **It can be overlooked that Prisma ORM requires both sides of the relation to be present**.
+Where you might run into trouble is when creating an [explicit m-n relationship](../many-to-many-relations/index.md#explicit-many-to-many-relations), that is, to create and handle the relation table yourself. **It can be overlooked that Prisma ORM requires both sides of the relation to be present**.
 
 Take the following example, here a relation table is created to act as the JOIN between the `Post` and `Category` tables. This will not work however as the relation table (`PostCategories`) must form a 1-to-many relationship with the other two models respectively.
 
@@ -205,7 +205,7 @@ model Category {
 }
 ```
 
-This however tells Prisma ORM to expect **two** separate one-to-many relationships. See [disambiguating relations](prisma/docs/orm/prisma-schema/data-model/relations/index.md#disambiguating-relations) for more information on using the `@relation` attribute.
+This however tells Prisma ORM to expect **two** separate one-to-many relationships. See [disambiguating relations](../index.md#disambiguating-relations) for more information on using the `@relation` attribute.
 
 The following example is the correct way to define an implicit many-to-many relationship.
 
@@ -225,7 +225,7 @@ model Category {
 }
 ```
 
-The `@relation` annotation can also be used to [name the underlying relation table](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#configuring-relation-table-name) created on a implicit many-to-many relationship.
+The `@relation` annotation can also be used to [name the underlying relation table](../many-to-many-relations/index.md#configuring-relation-table-name) created on a implicit many-to-many relationship.
 
 ```
 model Post {
@@ -247,4 +247,4 @@ Some cloud providers enforce the existence of primary keys in all tables. Howeve
 
 ### [Solution](#solution-1)
 
-You need to use [explicit relation syntax](prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md#explicit-many-to-many-relations), manually create the join model, and verify that this join model has a primary key.
+You need to use [explicit relation syntax](../many-to-many-relations/index.md#explicit-many-to-many-relations), manually create the join model, and verify that this join model has a primary key.

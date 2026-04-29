@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:16.130Z"
 content_hash: "36ff0756f9811491c10e4c6f29cb8852af8a27fe99104d2eaa7438b66536b4d5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare SQL Server for RDI","→","Prepare SQL Server for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare SQL Server for RDI","→","Prepare SQL Server for RDI"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/spanner/index.md", "title": "Prepare Spanner for RDI"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/index.md", "title": "Job files"}
+nav_prev: {"path": "../spanner/index.md", "title": "Prepare Spanner for RDI"}
+nav_next: {"path": "../../transform-examples/index.md", "title": "Job files"}
 ---
 
 # Prepare SQL Server for RDI

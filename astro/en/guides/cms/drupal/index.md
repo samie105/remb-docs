@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:06.933Z"
 content_hash: "eefcee7d8545ea7b651d4c4d336c6c0da5467154bc7e5e34e74cac607a014c6f"
 menu_path: ["Drupal & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/directus/index.md", "title": "Directus & Astro"}
-nav_next: {"path": "astro/en/guides/cms/flotiq/index.md", "title": "Flotiq & Astro"}
+nav_prev: {"path": "../directus/index.md", "title": "Directus & Astro"}
+nav_next: {"path": "../flotiq/index.md", "title": "Flotiq & Astro"}
 ---
 
 # Drupal & Astro

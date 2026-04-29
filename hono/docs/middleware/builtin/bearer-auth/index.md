@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:33.878Z"
 content_hash: "3e6405b13f40a17a1348028be2d311c19fcaa110926be1ec7baf6c5c5f06b869"
 menu_path: ["Bearer Auth Middleware ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/middleware/builtin/basic-auth/index.md", "title": "Basic Auth Middleware \u200b"}
-nav_next: {"path": "hono/docs/middleware/builtin/body-limit/index.md", "title": "Body Limit Middleware \u200b"}
+nav_prev: {"path": "../basic-auth/index.md", "title": "Basic Auth Middleware \u200b"}
+nav_next: {"path": "../body-limit/index.md", "title": "Body Limit Middleware \u200b"}
 ---
 
 ## Bearer Auth Middleware [​](#bearer-auth-middleware)

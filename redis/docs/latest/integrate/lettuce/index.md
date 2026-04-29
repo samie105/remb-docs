@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:37.152Z"
 content_hash: "f626c9d695de6c8171b89c79744fdba43c89e79db869577a71291c8c0bfa869b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Java client for Redis","→","Java client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Java client for Redis","→","Java client for Redis"]
-nav_prev: {"path": "redis/docs/latest/integrate/jedis/index.md", "title": "Java client for Redis"}
-nav_next: {"path": "redis/docs/latest/integrate/n8n-vector-store/index.md", "title": "n8n Redis vector store"}
+nav_prev: {"path": "../jedis/index.md", "title": "Java client for Redis"}
+nav_next: {"path": "../n8n-vector-store/index.md", "title": "n8n Redis vector store"}
 ---
 
 # Java client for Redis

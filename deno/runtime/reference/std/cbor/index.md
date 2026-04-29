@@ -10,8 +10,8 @@ content_hash: "d4dd0356ad33ae792606d672587db947385a529f6e8462f470e0f45bb1b75e4f"
 menu_path: ["@std/cbor"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/cache/index.md", "title": "@std/cache"}
-nav_next: {"path": "deno/runtime/reference/std/cli/index.md", "title": "@std/cli"}
+nav_prev: {"path": "../cache/index.md", "title": "@std/cache"}
+nav_next: {"path": "../cli/index.md", "title": "@std/cli"}
 ---
 
 **On this page**

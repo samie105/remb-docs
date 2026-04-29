@@ -11,8 +11,8 @@ menu_path: ["Internationalization"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/instrumentation/index.md", "title": "How to set up instrumentation"}
-nav_next: {"path": "nextjs/docs/app/guides/json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
+nav_prev: {"path": "../instrumentation/index.md", "title": "How to set up instrumentation"}
+nav_next: {"path": "../json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
 ---
 
 # Internationalization

@@ -11,8 +11,8 @@ menu_path: ["Custom Errors"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/api-routes/index.md", "title": "API Routes"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/server-side-rendering/index.md", "title": "Server-side Rendering (SSR)"}
+nav_prev: {"path": "../api-routes/index.md", "title": "API Routes"}
+nav_next: {"path": "../../rendering/server-side-rendering/index.md", "title": "Server-side Rendering (SSR)"}
 ---
 
 # Custom Errors

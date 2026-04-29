@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:21.423Z"
 content_hash: "9b3652e9752995300572a545cce8443ca9d63be34d7fce9dbdb4764b312ae7ee"
 menu_path: ["Caisy & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/buttercms/index.md", "title": "ButterCMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/cloudcannon/index.md", "title": "CloudCannon & Astro"}
+nav_prev: {"path": "../buttercms/index.md", "title": "ButterCMS & Astro"}
+nav_next: {"path": "../cloudcannon/index.md", "title": "CloudCannon & Astro"}
 ---
 
 # Caisy & Astro

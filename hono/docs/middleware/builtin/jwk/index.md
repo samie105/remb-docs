@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:10.197Z"
 content_hash: "1e1e314caeabb249f7677c1b9397560019c8c2f8ba21ad437bea1e775037ad47"
 menu_path: ["JWK Auth Middleware ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/middleware/builtin/jsx-renderer/index.md", "title": "JSX Renderer Middleware \u200b"}
-nav_next: {"path": "hono/docs/middleware/builtin/jwt/index.md", "title": "JWT Auth Middleware \u200b"}
+nav_prev: {"path": "../jsx-renderer/index.md", "title": "JSX Renderer Middleware \u200b"}
+nav_next: {"path": "../jwt/index.md", "title": "JWT Auth Middleware \u200b"}
 ---
 
 ## JWK Auth Middleware [​](#jwk-auth-middleware)

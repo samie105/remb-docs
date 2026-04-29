@@ -11,8 +11,8 @@ menu_path: ["Configuration"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/userAgent/index.md", "title": "userAgent"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/index.md", "title": "next.config.js"}
+nav_prev: {"path": "../functions/userAgent/index.md", "title": "userAgent"}
+nav_next: {"path": "next-config-js/index.md", "title": "next.config.js"}
 ---
 
 # Configuration

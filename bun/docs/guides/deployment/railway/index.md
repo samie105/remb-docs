@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:00.577Z"
 content_hash: "d7f01363185b3f82ba6d0362719fa259564a6ffab2be8029c1e75e59a2674cc4"
 menu_path: ["Deploy a Bun application on Railway"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/deployment/google-cloud-run/index.md", "title": "Deploy a Bun application on Google Cloud Run"}
-nav_next: {"path": "bun/docs/guides/deployment/render/index.md", "title": "Deploy a Bun application on Render"}
+nav_prev: {"path": "../google-cloud-run/index.md", "title": "Deploy a Bun application on Google Cloud Run"}
+nav_next: {"path": "../render/index.md", "title": "Deploy a Bun application on Render"}
 ---
 
 # Add PostgreSQL database. Make sure to add this first!

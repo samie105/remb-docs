@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:08.755Z"
 content_hash: "6804b2f762080373a16c0a74a94b931152c2f07c4310d6c1460828590b11549d"
 menu_path: ["Add a development dependency"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/add/index.md", "title": "Add a dependency"}
-nav_next: {"path": "bun/docs/guides/install/add-git/index.md", "title": "Add a Git dependency"}
+nav_prev: {"path": "../add/index.md", "title": "Add a dependency"}
+nav_next: {"path": "../add-git/index.md", "title": "Add a Git dependency"}
 ---
 
 [Skip to main content](#content-area)

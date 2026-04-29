@@ -10,8 +10,8 @@ content_hash: "20a7220f7255f3a6add95581f8c1c056912907ad794632e78fd9693497ec75a6"
 menu_path: ["Drizzle <> Bun SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/connect-cloudflare-d1/index.md", "title": "Drizzle <> Cloudflare D1"}
-nav_next: {"path": "drizzle/docs/connect-node-sqlite/index.md", "title": "Drizzle <> Node SQLite"}
+nav_prev: {"path": "../connect-cloudflare-d1/index.md", "title": "Drizzle <> Cloudflare D1"}
+nav_next: {"path": "../connect-node-sqlite/index.md", "title": "Drizzle <> Node SQLite"}
 ---
 
 According to the **[official website](https://bun.sh/)**, Bun is a fast all-in-one JavaScript runtime.

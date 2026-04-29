@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:27.537Z"
 content_hash: "90c3a44183680f94f3959d17fb8760918a8832feae5445be6d12b6d8ae52aa94"
 menu_path: ["Check if a file exists"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/read-file/buffer/index.md", "title": "Read a file to a Buffer"}
-nav_next: {"path": "bun/docs/guides/read-file/json/index.md", "title": "Read a JSON file"}
+nav_prev: {"path": "../buffer/index.md", "title": "Read a file to a Buffer"}
+nav_next: {"path": "../json/index.md", "title": "Read a JSON file"}
 ---
 
 [Skip to main content](#content-area)

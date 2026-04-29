@@ -10,8 +10,8 @@ content_hash: "fbae8b207d4a58c5e5c3bf9e7c5e3e2163e8b9833cc158b97c3fa130f77aeeb4"
 menu_path: ["console - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/cluster/index.md", "title": "cluster - Node documentation"}
-nav_next: {"path": "deno/api/node/constants/index.md", "title": "constants - Node documentation"}
+nav_prev: {"path": "../cluster/index.md", "title": "cluster - Node documentation"}
+nav_next: {"path": "../constants/index.md", "title": "constants - Node documentation"}
 ---
 
 ### Usage in Deno

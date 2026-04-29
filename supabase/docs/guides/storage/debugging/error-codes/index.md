@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:16.751Z"
 content_hash: "15b1a127554f8650a87b890b94d0dbd9d745ade8dee539c63f227889f30ed5d9"
 menu_path: ["Storage","Storage","More","More","More","Debugging","Debugging","Error Codes","Error Codes"]
 section_path: ["Storage","Storage","More","More","More","Debugging","Debugging","Error Codes","Error Codes"]
-nav_prev: {"path": "supabase/docs/guides/storage/cdn/smart-cdn/index.md", "title": "Smart CDN"}
-nav_next: {"path": "supabase/docs/guides/storage/debugging/logs/index.md", "title": "Logs"}
+nav_prev: {"path": "../../cdn/smart-cdn/index.md", "title": "Smart CDN"}
+nav_next: {"path": "../logs/index.md", "title": "Logs"}
 ---
 
 # 

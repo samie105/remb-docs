@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:24.815Z"
 content_hash: "7edc2d13a9f5cf9b6ad794ef1c4f8c579ceb60ce9762bdb2c94fbed9814f2e60"
 menu_path: ["Hydratable data"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/imperative-component-api/index.md", "title": "Imperative component API"}
-nav_next: {"path": "svelte/docs/svelte/best-practices/index.md", "title": "Best practices"}
+nav_prev: {"path": "../imperative-component-api/index.md", "title": "Imperative component API"}
+nav_next: {"path": "../best-practices/index.md", "title": "Best practices"}
 ---
 
 In Svelte, when you want to render asynchronous content data on the server, you can simply `await` it. This is great! However, it comes with a pitfall: when hydrating that content on the client, Svelte has to redo the asynchronous work, which blocks hydration for however long it takes:

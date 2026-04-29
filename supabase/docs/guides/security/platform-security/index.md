@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:04.290Z"
 content_hash: "67a086994fb11bf805b7ea3ab9239c157c063a705b66e6f4ebfd3eb4dc595b86"
 menu_path: ["Security","Security","Product security","Product security","Platform configuration","Platform configuration"]
 section_path: ["Security","Security","Product security","Product security","Platform configuration","Platform configuration"]
-nav_prev: {"path": "supabase/docs/guides/security/platform-audit-logs/index.md", "title": "Platform Audit Logs"}
-nav_next: {"path": "supabase/docs/guides/security/product-security/index.md", "title": "Secure configuration of Supabase products"}
+nav_prev: {"path": "../platform-audit-logs/index.md", "title": "Platform Audit Logs"}
+nav_next: {"path": "../product-security/index.md", "title": "Secure configuration of Supabase products"}
 ---
 
 # 

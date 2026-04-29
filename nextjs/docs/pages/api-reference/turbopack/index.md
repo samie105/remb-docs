@@ -11,8 +11,8 @@ menu_path: ["Turbopack"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/edge/index.md", "title": "Edge Runtime"}
-nav_next: {"path": "nextjs/docs/architecture/index.md", "title": "Architecture"}
+nav_prev: {"path": "../edge/index.md", "title": "Edge Runtime"}
+nav_next: {"path": "../../../architecture/index.md", "title": "Architecture"}
 ---
 
 # Turbopack

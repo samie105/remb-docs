@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:09.966Z"
 content_hash: "538ac55406ab441d686dab0a7659100c1c5632e8d6940ee8edba74a97a4345ab"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Flutter","Flutter"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Flutter","Flutter"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/flask/index.md", "title": "Use Supabase with Python"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/hono/index.md", "title": "Use Supabase with Hono"}
+nav_prev: {"path": "../flask/index.md", "title": "Use Supabase with Python"}
+nav_next: {"path": "../hono/index.md", "title": "Use Supabase with Hono"}
 ---
 
 # 

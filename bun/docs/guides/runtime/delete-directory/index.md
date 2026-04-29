@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:28.651Z"
 content_hash: "f781e47b00ad3d757f9c9fdddf62d0fce567af34acbbf5e72c3af342ddb5999e"
 menu_path: ["Delete directories"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/define-constant/index.md", "title": "Define and replace static globals & constants"}
-nav_next: {"path": "bun/docs/guides/runtime/delete-file/index.md", "title": "Delete files"}
+nav_prev: {"path": "../define-constant/index.md", "title": "Define and replace static globals & constants"}
+nav_next: {"path": "../delete-file/index.md", "title": "Delete files"}
 ---
 
 [Skip to main content](#content-area)

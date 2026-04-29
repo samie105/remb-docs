@@ -10,8 +10,8 @@ content_hash: "81a47dbdc3eb5807042dd1f467737425708f8ccd6ebc40e754ca06168711ce09"
 menu_path: ["Caveats when deploying to AWS platforms"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md", "title": "Handling exceptions and errors"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md", "title": "Deploying database changes with Prisma Migrate"}
+nav_prev: {"path": "../../debugging-and-troubleshooting/handling-exceptions-and-errors/index.md", "title": "Handling exceptions and errors"}
+nav_next: {"path": "../deploy-database-changes-with-prisma-migrate/index.md", "title": "Deploying database changes with Prisma Migrate"}
 ---
 
 Deployment

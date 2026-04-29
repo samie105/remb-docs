@@ -11,8 +11,8 @@ menu_path: ["cacheLife"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/after/index.md", "title": "after"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/cacheTag/index.md", "title": "cacheTag"}
+nav_prev: {"path": "../after/index.md", "title": "after"}
+nav_next: {"path": "../cacheTag/index.md", "title": "cacheTag"}
 ---
 
 # cacheLife

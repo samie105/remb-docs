@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:42.423Z"
 content_hash: "dcb0ee628597051c9c1dfea2c549e37522dce294359ed269a3f9e345336c4683"
 menu_path: ["Auth","Auth","Configuration","Configuration","Email Templates","Email Templates"]
 section_path: ["Auth","Auth","Configuration","Configuration","Email Templates","Email Templates"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-email-passwordless/index.md", "title": "Passwordless email logins"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/index.md", "title": "Auth Hooks"}
+nav_prev: {"path": "../auth-email-passwordless/index.md", "title": "Passwordless email logins"}
+nav_next: {"path": "../auth-hooks/index.md", "title": "Auth Hooks"}
 ---
 
 # 

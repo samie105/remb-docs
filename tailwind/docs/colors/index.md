@@ -10,8 +10,8 @@ content_hash: "0af7e648c5024c8cdc941f66fd851bcb42a6e3d5cf8bfd104d298249ddcac345"
 menu_path: ["Colors"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/theme/index.md", "title": "Theme variables"}
-nav_next: {"path": "tailwind/docs/adding-custom-styles/index.md", "title": "Adding custom styles"}
+nav_prev: {"path": "../theme/index.md", "title": "Theme variables"}
+nav_next: {"path": "../adding-custom-styles/index.md", "title": "Adding custom styles"}
 ---
 
 Using and customizing the color palette in Tailwind CSS projects.
@@ -122,7 +122,7 @@ Every color in the default palette includes 11 steps, with 50 being the lightest
 <div>  <div class="bg-sky-50"></div>  <div class="bg-sky-100"></div>  <div class="bg-sky-200"></div>  <div class="bg-sky-300"></div>  <div class="bg-sky-400"></div>  <div class="bg-sky-500"></div>  <div class="bg-sky-600"></div>  <div class="bg-sky-700"></div>  <div class="bg-sky-800"></div>  <div class="bg-sky-900"></div>  <div class="bg-sky-950"></div></div>
 ```
 
-The entire color palette is available across all color related utilities, including things like [background color](tailwind/docs/background-color/index.md), [border color](tailwind/docs/border-color/index.md), [fill](tailwind/docs/fill/index.md), [caret color](tailwind/docs/caret-color/index.md), and many more.
+The entire color palette is available across all color related utilities, including things like [background color](../background-color/index.md), [border color](../border-color/index.md), [fill](../fill/index.md), [caret color](../caret-color/index.md), and many more.
 
 ## [Working with colors](#working-with-colors)
 
@@ -142,19 +142,19 @@ Here's a full list of utilities that use your color palette:
 
 | Utility | Description |
 | --- | --- |
-| `bg-*` | Sets the [background color](tailwind/docs/background-color/index.md) of an element |
+| `bg-*` | Sets the [background color](../background-color/index.md) of an element |
 | `text-*` | Sets the [text color](https://tailwindcss.com/docs/text-color) of an element |
-| `decoration-*` | Sets the [text decoration color](tailwind/docs/text-decoration-color/index.md) of an element |
-| `border-*` | Sets the [border color](tailwind/docs/border-color/index.md) of an element |
-| `outline-*` | Sets the [outline color](tailwind/docs/outline-color/index.md) of an element |
-| `shadow-*` | Sets the color of [box shadows](tailwind/docs/box-shadow/index.md#setting-the-shadow-color) |
-| `inset-shadow-*` | Sets the color of [inset box shadows](tailwind/docs/box-shadow/index.md#setting-the-inset-shadow-color) |
-| `ring-*` | Sets the color of [ring shadows](tailwind/docs/box-shadow/index.md#setting-the-ring-color) |
-| `inset-ring-*` | Sets the color of [inset ring shadows](tailwind/docs/box-shadow/index.md#setting-the-inset-ring-color) |
-| `accent-*` | Sets the [accent color](tailwind/docs/accent-color/index.md) of form controls |
-| `caret-*` | Sets the [caret color](tailwind/docs/caret-color/index.md) in form controls |
-| `fill-*` | Sets the [fill color](tailwind/docs/fill/index.md) of SVG elements |
-| `stroke-*` | Sets the [stroke color](tailwind/docs/stroke/index.md) of SVG elements |
+| `decoration-*` | Sets the [text decoration color](../text-decoration-color/index.md) of an element |
+| `border-*` | Sets the [border color](../border-color/index.md) of an element |
+| `outline-*` | Sets the [outline color](../outline-color/index.md) of an element |
+| `shadow-*` | Sets the color of [box shadows](../box-shadow/index.md#setting-the-shadow-color) |
+| `inset-shadow-*` | Sets the color of [inset box shadows](../box-shadow/index.md#setting-the-inset-shadow-color) |
+| `ring-*` | Sets the color of [ring shadows](../box-shadow/index.md#setting-the-ring-color) |
+| `inset-ring-*` | Sets the color of [inset ring shadows](../box-shadow/index.md#setting-the-inset-ring-color) |
+| `accent-*` | Sets the [accent color](../accent-color/index.md) of form controls |
+| `caret-*` | Sets the [caret color](../caret-color/index.md) in form controls |
+| `fill-*` | Sets the [fill color](../fill/index.md) of SVG elements |
+| `stroke-*` | Sets the [stroke color](../stroke/index.md) of SVG elements |
 
 ### [Adjusting opacity](#adjusting-opacity)
 
@@ -190,7 +190,7 @@ The Zero Gravity Pen can be used to write in any orientation, including upside-d
 <div class="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">  <div>    <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">      <svg class="h-6 w-6 stroke-white" ...>        <!-- ... -->      </svg>    </span>  </div>  <h3 class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking-tight ">Writes upside-down</h3>  <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm ">    The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.  </p></div>
 ```
 
-Learn more about styling for dark mode in the [dark mode documentation](tailwind/docs/dark-mode/index.md).
+Learn more about styling for dark mode in the [dark mode documentation](../dark-mode/index.md).
 
 ### [Referencing in CSS](#referencing-in-css)
 
@@ -222,7 +222,7 @@ Use `@theme` to add custom colors to your project under the `--color-*` theme na
 
 Now utilities like `bg-midnight`, `text-tahiti`, and `fill-bermuda` will be available in your project in addition to the default colors.
 
-Learn more about theme variables in the [theme variables documentation](tailwind/docs/theme/index.md).
+Learn more about theme variables in the [theme variables documentation](../theme/index.md).
 
 ### [Overriding default colors](#overriding-default-colors)
 
@@ -258,7 +258,7 @@ Use `@theme inline` when defining colors that reference other colors:
 @import "tailwindcss";:root {  --acme-canvas-color: oklch(0.967 0.003 264.542);}[data-theme="dark"] {  --acme-canvas-color: oklch(0.21 0.034 264.665);}@theme inline {  --color-canvas: var(--acme-canvas-color);}
 ```
 
-Learn more in the theme documentation on [referencing other variables](tailwind/docs/theme/index.md#referencing-other-variables).
+Learn more in the theme documentation on [referencing other variables](../theme/index.md#referencing-other-variables).
 
 ## [Default color palette reference](#default-color-palette-reference)
 

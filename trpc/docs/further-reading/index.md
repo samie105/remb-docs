@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:31.417Z"
 content_hash: "a1dd39d6adbbecb7127d576dfa29203736d5c972d30737d27d18ca1028abd157"
 menu_path: ["Further Reading"]
 section_path: []
-nav_prev: {"path": "trpc/docs/faq/index.md", "title": "FAQ / Troubleshooting"}
-nav_next: {"path": "trpc/docs/landing-intro/Step1/index.md", "title": "Step1"}
+nav_prev: {"path": "../faq/index.md", "title": "FAQ / Troubleshooting"}
+nav_next: {"path": "../landing-intro/Step1/index.md", "title": "Step1"}
 ---
 
 ## Who is this for?[​](#who-is-this-for "Direct link to Who is this for?")

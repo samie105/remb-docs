@@ -11,8 +11,8 @@ menu_path: ["page.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/not-found/index.md", "title": "not-found.js"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/parallel-routes/index.md", "title": "Parallel Routes"}
+nav_prev: {"path": "../not-found/index.md", "title": "not-found.js"}
+nav_next: {"path": "../parallel-routes/index.md", "title": "Parallel Routes"}
 ---
 
 # page.js

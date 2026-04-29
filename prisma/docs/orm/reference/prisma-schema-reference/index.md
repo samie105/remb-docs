@@ -11,11 +11,11 @@ menu_path: ["Schema API"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/reference/prisma-client-reference/index.md", "title": "Prisma Client API"}
-nav_next: {"path": "prisma/docs/orm/reference/prisma-config-reference/index.md", "title": "Config API"}
+nav_prev: {"path": "../prisma-client-reference/index.md", "title": "Prisma Client API"}
+nav_next: {"path": "../prisma-config-reference/index.md", "title": "Config API"}
 ---
 
-Defines a [data source](prisma/docs/orm/prisma-schema/overview/data-sources/index.md) in the Prisma schema.
+Defines a [data source](../../prisma-schema/overview/data-sources/index.md) in the Prisma schema.
 
 ### [Fields](#fields)
 
@@ -24,20 +24,20 @@ A `datasource` block accepts the following fields:
 | Name | Required | Type | Description |
 | --- | --- | --- | --- |
 | `provider` | **Yes** | String (`postgresql`, `mysql`, `sqlite`, `sqlserver`, `mongodb`, `cockroachdb`) | Specifies the database connector to use. |
-| `relationMode` | No | String (`foreignKeys`, `prisma`) | Sets whether [referential integrity](prisma/docs/orm/prisma-schema/data-model/relations/relation-mode/index.md) is enforced by foreign keys or by Prisma. |
-| `schemas` | No | Array of strings | List of database schemas to include ([multi-schema](prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md) support, PostgreSQL and SQL Server). |
-| `extensions` | No | Array of extension names | [PostgreSQL extensions](prisma/docs/orm/prisma-schema/postgresql-extensions/index.md) to enable. |
+| `relationMode` | No | String (`foreignKeys`, `prisma`) | Sets whether [referential integrity](../../prisma-schema/data-model/relations/relation-mode/index.md) is enforced by foreign keys or by Prisma. |
+| `schemas` | No | Array of strings | List of database schemas to include ([multi-schema](../../prisma-schema/data-model/multi-schema/index.md) support, PostgreSQL and SQL Server). |
+| `extensions` | No | Array of extension names | [PostgreSQL extensions](../../prisma-schema/postgresql-extensions/index.md) to enable. |
 
-Connection URLs (`url`, `directUrl`, `shadowDatabaseUrl`) are configured in [`prisma.config.ts`](prisma/docs/orm/reference/prisma-config-reference/index.md#datasourceurl), not in the schema file.
+Connection URLs (`url`, `directUrl`, `shadowDatabaseUrl`) are configured in [`prisma.config.ts`](../prisma-config-reference/index.md#datasourceurl), not in the schema file.
 
 The following providers are available:
 
--   [`sqlite`](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md)
--   [`postgresql`](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md)
--   [`mysql`](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md)
--   [`sqlserver`](prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md)
--   [`mongodb`](prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md)
--   [`cockroachdb`](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md#cockroachdb)
+-   [`sqlite`](../../core-concepts/supported-databases/sqlite/index.md)
+-   [`postgresql`](../../core-concepts/supported-databases/postgresql/index.md)
+-   [`mysql`](../../core-concepts/supported-databases/mysql/index.md)
+-   [`sqlserver`](../../core-concepts/supported-databases/sql-server/index.md)
+-   [`mongodb`](../../core-concepts/supported-databases/mongodb/index.md)
+-   [`cockroachdb`](../../core-concepts/supported-databases/postgresql/index.md#cockroachdb)
 
 -   You can only have **one** `datasource` block in a schema.
 -   `datasource db` is convention - however, you can give your data source any name - for example, `datasource mysql` or `datasource data`.
@@ -64,7 +64,7 @@ export default defineConfig({
 });
 ```
 
-Learn more about PostgreSQL connection strings [here](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md).
+Learn more about PostgreSQL connection strings [here](../../core-concepts/supported-databases/postgresql/index.md).
 
 #### [Specify a PostgreSQL data source via an environment variable](#specify-a-postgresql-data-source-via-an-environment-variable)
 
@@ -99,7 +99,7 @@ datasource db {
 }
 ```
 
-Learn more about [MySQL connection URLs](prisma/docs/orm/core-concepts/supported-databases/mysql/index.md).
+Learn more about [MySQL connection URLs](../../core-concepts/supported-databases/mysql/index.md).
 
 #### [MongoDB datasource](#mongodb-datasource)
 
@@ -109,7 +109,7 @@ datasource db {
 }
 ```
 
-Learn more about [MongoDB connection URLs](prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md).
+Learn more about [MongoDB connection URLs](../../core-concepts/supported-databases/mongodb/index.md).
 
 #### [SQLite datasource](#sqlite-datasource)
 
@@ -119,7 +119,7 @@ datasource db {
 }
 ```
 
-Learn more about [SQLite connection URLs](prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md).
+Learn more about [SQLite connection URLs](../../core-concepts/supported-databases/sqlite/index.md).
 
 #### [CockroachDB datasource](#cockroachdb-datasource)
 
@@ -129,7 +129,7 @@ datasource db {
 }
 ```
 
-CockroachDB uses the same connection URL format as PostgreSQL. Learn more about [PostgreSQL connection URLs](prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md).
+CockroachDB uses the same connection URL format as PostgreSQL. Learn more about [PostgreSQL connection URLs](../../core-concepts/supported-databases/postgresql/index.md).
 
 #### [Multi-schema datasource (PostgreSQL)](#multi-schema-datasource-postgresql)
 
@@ -140,18 +140,18 @@ datasource db {
 }
 ```
 
-Defines a [generator](prisma/docs/orm/prisma-schema/overview/generators/index.md) in the Prisma schema.
+Defines a [generator](../../prisma-schema/overview/generators/index.md) in the Prisma schema.
 
 ### [Fields for `prisma-client-js` provider](#fields-for-prisma-client-js-provider)
 
-This is the default generator for Prisma ORM 6.x and earlier versions. Learn more about [generators](prisma/docs/orm/prisma-schema/overview/generators/index.md#prisma-client-js-deprecated).
+This is the default generator for Prisma ORM 6.x and earlier versions. Learn more about [generators](../../prisma-schema/overview/generators/index.md#prisma-client-js-deprecated).
 
 A `generator` block accepts the following fields:
 
 | Name | Required | Type | Description |
 | --- | --- | --- | --- |
-| `provider` | **Yes** | `prisma-client-js` | Describes which [generator](prisma/docs/orm/prisma-schema/overview/generators/index.md) to use. This can point to a file that implements a generator or specify a built-in generator directly. |
-| `output` | No | String (file path) | Determines the location for the generated client, [learn more](prisma/docs/orm/reference/prisma-schema-reference/index.md#fields-for-prisma-client-provider). **Default**: `node_modules/.prisma/client` |
+| `provider` | **Yes** | `prisma-client-js` | Describes which [generator](../../prisma-schema/overview/generators/index.md) to use. This can point to a file that implements a generator or specify a built-in generator directly. |
+| `output` | No | String (file path) | Determines the location for the generated client, [learn more](index.md#fields-for-prisma-client-provider). **Default**: `node_modules/.prisma/client` |
 | `previewFeatures` | No | List of Enums | Use intellisense to see list of currently available Preview features (`Ctrl+Space` in Visual Studio Code) **Default**: none |
 | `engineType` | No | Enum (`library` or `binary`) | Defines the query engine type to download and use. **Default**: `library` |
 | `binaryTargets` | No | List of Enums (see below) | Specify the OS on which the Prisma Client will run to ensure compatibility of the query engine. **Default**: `native` |
@@ -159,14 +159,14 @@ A `generator` block accepts the following fields:
 
 ### [Fields for `prisma-client` provider](#fields-for-prisma-client-provider)
 
-The ESM-first client generator that offers greater control and flexibility across different JavaScript environments. It generates plain TypeScript code into a custom directory, providing full visibility over the generated code. Learn more about the new [`prisma-client`](prisma/docs/orm/prisma-schema/overview/generators/index.md#prisma-client) generator.
+The ESM-first client generator that offers greater control and flexibility across different JavaScript environments. It generates plain TypeScript code into a custom directory, providing full visibility over the generated code. Learn more about the new [`prisma-client`](../../prisma-schema/overview/generators/index.md#prisma-client) generator.
 
 A `generator` block accepts the following fields:
 
 | Name | Required | Type | Description |
 | --- | --- | --- | --- |
-| `provider` | **Yes** | `prisma-client` | Describes which [generator](prisma/docs/orm/prisma-schema/overview/generators/index.md) to use. This can point to a file that implements a generator or specify a built-in generator directly. |
-| `output` | **Yes** | String (file path) | Determines the location for the generated client, [learn more](prisma/docs/orm/reference/prisma-schema-reference/index.md#fields-for-prisma-client-provider). |
+| `provider` | **Yes** | `prisma-client` | Describes which [generator](../../prisma-schema/overview/generators/index.md) to use. This can point to a file that implements a generator or specify a built-in generator directly. |
+| `output` | **Yes** | String (file path) | Determines the location for the generated client, [learn more](index.md#fields-for-prisma-client-provider). |
 | `previewFeatures` | No | List of Enums | Use intellisense to see list of currently available Preview features (`Ctrl+Space` in Visual Studio Code) **Default**: none |
 | `runtime` | No | Enum (`nodejs`, `deno`, `bun`, `workerd` (alias `cloudflare`), `vercel-edge` (alias `edge-light`), `react-native`) | Target runtime environment. **Default**: `nodejs` |
 | `moduleFormat` | No | Enum (`esm` or `cjs`) | Determines whether the generated code supports ESM (uses `import`) or CommonJS (uses `require(...)`) modules. We always recommend `esm` unless you have a good reason to use `cjs`. **Default**: Inferred from environment. |
@@ -325,7 +325,7 @@ generator client {
 }
 ```
 
-Defines a Prisma [model](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-models) .
+Defines a Prisma [model](../../prisma-schema/data-model/models/index.md#defining-models) .
 
 -   Every record of a model must be _uniquely_ identifiable. You must define _at least_ one of the following attributes per model:
     -   [`@unique`](#unique)
@@ -350,7 +350,7 @@ Defines a Prisma [model](prisma/docs/orm/prisma-schema/data-model/models/index.m
 
 #### [A model named `User` with two scalar fields](#a-model-named-user-with-two-scalar-fields)
 
-[Fields](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-fields) are properties of models.
+[Fields](../../prisma-schema/data-model/models/index.md#defining-fields) are properties of models.
 
 #### [Naming conventions](#naming-conventions-1)
 
@@ -358,11 +358,11 @@ Defines a Prisma [model](prisma/docs/orm/prisma-schema/data-model/models/index.m
 -   Typically spelled in camelCase
 -   Must adhere to the following regular expression: `[A-Za-z][A-Za-z0-9_]*`
 
-> **Note**: You can use the [`@map` attribute](#map) to [map a field name to a column](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) with a different name that does not match field naming conventions: e.g. `myField @map("my_field")`.
+> **Note**: You can use the [`@map` attribute](#map) to [map a field name to a column](../../prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) with a different name that does not match field naming conventions: e.g. `myField @map("my_field")`.
 
 The _data source connector_ determines what _native database type_ each of Prisma ORM scalar type maps to. Similarly, the _generator_ determines what _type in the target programming language_ each of these types map to.
 
-Prisma models also have [model field types](prisma/docs/orm/prisma-schema/data-model/relations/index.md) that define relations between models.
+Prisma models also have [model field types](../../prisma-schema/data-model/relations/index.md) that define relations between models.
 
 ### [`String`](#string)
 
@@ -391,7 +391,7 @@ Variable length text.
 | `uuid` | `@db.Uuid` |  |
 | `xml` | `@db.Xml` |  |
 | `inet` | `@db.Inet` |  |
-| `citext` | `@db.Citext` | Only available if [Citext extension is enabled](prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md#enable-postgresql-extensions-for-native-database-functions). |
+| `citext` | `@db.Citext` | Only available if [Citext extension is enabled](../../prisma-schema/data-model/unsupported-database-features/index.md#enable-postgresql-extensions-for-native-database-functions). |
 
 #### [MySQL](#mysql)
 
@@ -745,7 +745,7 @@ Floating point number.
 -   Currently, Prisma ORM [does not support](https://github.com/prisma/prisma/issues/5006) [zero dates](https://dev.mysql.com/doc/refman/8.3/en/date-and-time-types.html#:~:text=The%20following%20table%20shows%20the%20format%20of%20the%20%E2%80%9Czero%E2%80%9D%20value%20for%20each%20type) (`0000-00-00 00:00:00`, `0000-00-00`, `00:00:00`) in MySQL.
 -   There currently is a [bug](https://github.com/prisma/prisma/issues/9516) that doesn't allow you to pass in `DateTime` values as strings and produces a runtime error when you do. `DateTime` values need to be passed as [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) objects (i.e. `new Date('2024-12-04')` instead of `'2024-12-04'`).
 
-You can find more info and examples in this section: [Working with `DateTime`](prisma/docs/orm/prisma-client/special-fields-and-types/index.md#working-with-datetime).
+You can find more info and examples in this section: [Working with `DateTime`](../../prisma-client/special-fields-and-types/index.md#working-with-datetime).
 
 #### [Default type mappings](#default-type-mappings-6)
 
@@ -1128,7 +1128,7 @@ const newUser = await prisma.user.create({
 
 In the following example, `authorId` is a both a relation scalar and the ID of `Profile`:
 
-In this scenario, you cannot create a `Profile` only - you must use Prisma Client's [nested writes](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-writes) create a `User` **or** connect the profile to an existing user.
+In this scenario, you cannot create a `Profile` only - you must use Prisma Client's [nested writes](../../prisma-client/queries/relation-queries/index.md#nested-writes) create a `User` **or** connect the profile to an existing user.
 
 The following example creates a user and a profile:
 
@@ -1313,11 +1313,11 @@ const post = await prisma.post.create({
 
 ### [`@default`](#default)
 
-Defines a [default value for a field](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-a-default-value).
+Defines a [default value for a field](../../prisma-schema/data-model/models/index.md#defining-a-default-value).
 
--   Default values that cannot yet be represented in the Prisma schema are represented by the [`dbgenerated()` function](#dbgenerated) when you use [introspection](prisma/docs/orm/prisma-schema/introspection/index.md).
+-   Default values that cannot yet be represented in the Prisma schema are represented by the [`dbgenerated()` function](#dbgenerated) when you use [introspection](../../prisma-schema/introspection/index.md).
 -   Default values are not allowed on relation fields in the Prisma schema. Note however that you can still define default values on the fields backing a relation (the ones listed in the `fields` argument in the `@relation` attribute). A default value on the field backing a relation will mean that relation is populated automatically for you.
--   Default values can be used with [scalar lists](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md) in databases that natively support them.
+-   Default values can be used with [scalar lists](../../prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md) in databases that natively support them.
 
 ##### [Relational databases](#relational-databases-2)
 
@@ -1334,9 +1334,9 @@ Defines a [default value for a field](prisma/docs/orm/prisma-schema/data-model/m
     -   [`ulid()`](#ulid)
     -   [`nanoid()`](#nanoid)
     -   [`now()`](#now)
--   Default values that cannot yet be represented in the Prisma schema are represented by the [`dbgenerated(...)` function](#dbgenerated) when you use [introspection](prisma/docs/orm/prisma-schema/introspection/index.md).
+-   Default values that cannot yet be represented in the Prisma schema are represented by the [`dbgenerated(...)` function](#dbgenerated) when you use [introspection](../../prisma-schema/introspection/index.md).
 -   Default values are not allowed on relation fields in the Prisma schema. Note however that you can still define default values on the fields backing a relation (the ones listed in the `fields` argument in the `@relation` attribute). A default value on the field backing a relation will mean that relation is populated automatically for you.
--   Default values can be used with [scalar lists](prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md) in databases that natively support them.
+-   Default values can be used with [scalar lists](../../prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md) in databases that natively support them.
 -   JSON data. Note that JSON needs to be enclosed with double-quotes inside the `@default` attribute, e.g.: `@default("[]")`. If you want to provide a JSON object, you need to enclose it with double-quotes and then escape any internal double quotes using a backslash, e.g.: `@default("{ \"hello\": \"world\" }")`.
 
 ##### [MongoDB](#mongodb-11)
@@ -1451,7 +1451,7 @@ MySQL only.
 SQL Server only.
 
  |
-| `where` | **No** | `function` or `object` | Defines a [partial index](prisma/docs/orm/prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) that only includes rows matching the specified condition. Accepts `raw("SQL expression")` or an object literal like `{ field: value }`.
+| `where` | **No** | `function` or `object` | Defines a [partial index](../../prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) that only includes rows matching the specified condition. Accepts `raw("SQL expression")` or an object literal like `{ field: value }`.
 
 PostgreSQL, SQLite, SQL Server, and CockroachDB. Requires the `partialIndexes` Preview feature.
 
@@ -1465,7 +1465,7 @@ PostgreSQL, SQLite, SQL Server, and CockroachDB. Requires the `partialIndexes` P
 @unique(map: String?, length: number?, sort: String?, clustered: Boolean?, where: raw(String) | { field: value }?)
 ```
 
-> **Note**: The `where` argument accepts either `raw("SQL expression")` for raw SQL predicates or an object literal like `{ field: value }` for type-safe conditions. See [Configuring partial indexes](prisma/docs/orm/prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) for details.
+> **Note**: The `where` argument accepts either `raw("SQL expression")` for raw SQL predicates or an object literal like `{ field: value }` for type-safe conditions. See [Configuring partial indexes](../../prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) for details.
 
 > **Note**: Before the `partialIndexes` Preview feature, the signature was:
 > 
@@ -1483,7 +1483,7 @@ PostgreSQL, SQLite, SQL Server, and CockroachDB. Requires the `partialIndexes` P
 
 ### [`@@unique`](#unique-1)
 
-Defines a compound [unique constraint](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-a-unique-field) for the specified fields.
+Defines a compound [unique constraint](../../prisma-schema/data-model/models/index.md#defining-a-unique-field) for the specified fields.
 
 ##### [General](#general-2)
 
@@ -1539,7 +1539,7 @@ MySQL only.
 SQL Server only.
 
  |
-| `where` | **No** | `function` or `object` | Defines a [partial index](prisma/docs/orm/prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) that only includes rows matching the specified condition. Accepts `raw("SQL expression")` or an object literal like `{ field: value }`.
+| `where` | **No** | `function` or `object` | Defines a [partial index](../../prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) that only includes rows matching the specified condition. Accepts `raw("SQL expression")` or an object literal like `{ field: value }`.
 
 PostgreSQL, SQLite, SQL Server, and CockroachDB. Requires the `partialIndexes` Preview feature.
 
@@ -1566,7 +1566,7 @@ The `length` and `sort` arguments are added to the relevant field names:
 > @@unique(_ fields: FieldReference[], name: String?, map: String?, where: raw(String) | { field: value }?)
 > ```
 
-> **Note**: The `where` argument accepts either `raw("SQL expression")` for raw SQL predicates or an object literal like `{ field: value }` for type-safe conditions. See [Configuring partial indexes](prisma/docs/orm/prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) for details.
+> **Note**: The `where` argument accepts either `raw("SQL expression")` for raw SQL predicates or an object literal like `{ field: value }` for type-safe conditions. See [Configuring partial indexes](../../prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) for details.
 
 > **Note**: Before the `partialIndexes` Preview feature (and before version 4.0.0 / 3.5.0 with the `extendedIndexes` Preview feature), the signature was:
 > 
@@ -1653,7 +1653,7 @@ PostgreSQL and CockroachDB only.
 PostgreSQL only.
 
  |
-| `where` | **No** | `function` or `object` | Defines a [partial index](prisma/docs/orm/prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) that only includes rows matching the specified condition. Accepts `raw("SQL expression")` or an object literal like `{ field: value }`.
+| `where` | **No** | `function` or `object` | Defines a [partial index](../../prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) that only includes rows matching the specified condition. Accepts `raw("SQL expression")` or an object literal like `{ field: value }`.
 
 PostgreSQL, SQLite, SQL Server, and CockroachDB. Requires the `partialIndexes` Preview feature.
 
@@ -1679,7 +1679,7 @@ The `length` and `sort` arguments are added to the relevant field names:
 @@index(_ fields: FieldReference[], map: String?, where: raw(String) | { field: value }?)
 ```
 
-> **Note**: The `where` argument accepts either `raw("SQL expression")` for raw SQL predicates or an object literal like `{ field: value }` for type-safe conditions. See [Configuring partial indexes](prisma/docs/orm/prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) for details.
+> **Note**: The `where` argument accepts either `raw("SQL expression")` for raw SQL predicates or an object literal like `{ field: value }` for type-safe conditions. See [Configuring partial indexes](../../prisma-schema/data-model/indexes/index.md#configuring-partial-indexes-with-where) for details.
 
 > **Note**: With the `partialIndexes` Preview feature, the `where` argument is available. Before this Preview feature, the signature was:
 > 
@@ -1746,7 +1746,7 @@ model User {
 
 ### [`@relation`](#relation)
 
-Defines meta information about the relation. [Learn more](prisma/docs/orm/prisma-schema/data-model/relations/index.md#the-relation-attribute).
+Defines meta information about the relation. [Learn more](../../prisma-schema/data-model/relations/index.md#the-relation-attribute).
 
 ##### [Relational databases](#relational-databases-6)
 
@@ -1761,11 +1761,11 @@ Defines meta information about the relation. [Learn more](prisma/docs/orm/prisma
 | Name | Type | Required | Description | Example |
 | --- | --- | --- | --- | --- |
 | `name` | `String` | Sometimes (e.g. to disambiguate a relation) | Defines the name of the relationship. In an m-n-relation, it also determines the name of the underlying relation table. | `"CategoryOnPost"`, `"MyRelation"` |
-| `fields` | `FieldReference[]` | On [annotated](prisma/docs/orm/prisma-schema/data-model/relations/index.md#relation-fields) relation fields | A list of [fields](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-fields) of the _current_ model | `["authorId"]`, `["authorFirstName, authorLastName"]` |
-| `references` | `FieldReference[]` | On [annotated](prisma/docs/orm/prisma-schema/data-model/relations/index.md#relation-fields) relation fields | A list of [fields](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-fields) of the model on _the other side of the relation_ | `["id"]`, `["firstName, lastName"]` |
-| `map` | `String` | No | Defines a [custom name](prisma/docs/orm/prisma-schema/data-model/database-mapping/index.md#constraint-and-index-names) for the foreign key in the database. | `["id"]`, `["firstName, lastName"]` |
-| `onUpdate` | Enum. See [Types of referential actions](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md#types-of-referential-actions) for values. | No | Defines the [referential action](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md) to perform when a referenced entry in the referenced model is being updated. | `Cascade`, `NoAction` |
-| `onDelete` | Enum. See [Types of referential actions](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md#types-of-referential-actions) for values. | No | Defines the [referential action](prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md) to perform when a referenced entry in the referenced model is being deleted. | `Cascade`, `NoAction` |
+| `fields` | `FieldReference[]` | On [annotated](../../prisma-schema/data-model/relations/index.md#relation-fields) relation fields | A list of [fields](../../prisma-schema/data-model/models/index.md#defining-fields) of the _current_ model | `["authorId"]`, `["authorFirstName, authorLastName"]` |
+| `references` | `FieldReference[]` | On [annotated](../../prisma-schema/data-model/relations/index.md#relation-fields) relation fields | A list of [fields](../../prisma-schema/data-model/models/index.md#defining-fields) of the model on _the other side of the relation_ | `["id"]`, `["firstName, lastName"]` |
+| `map` | `String` | No | Defines a [custom name](../../prisma-schema/data-model/database-mapping/index.md#constraint-and-index-names) for the foreign key in the database. | `["id"]`, `["firstName, lastName"]` |
+| `onUpdate` | Enum. See [Types of referential actions](../../prisma-schema/data-model/relations/referential-actions/index.md#types-of-referential-actions) for values. | No | Defines the [referential action](../../prisma-schema/data-model/relations/referential-actions/index.md) to perform when a referenced entry in the referenced model is being updated. | `Cascade`, `NoAction` |
+| `onDelete` | Enum. See [Types of referential actions](../../prisma-schema/data-model/relations/referential-actions/index.md#types-of-referential-actions) for values. | No | Defines the [referential action](../../prisma-schema/data-model/relations/referential-actions/index.md) to perform when a referenced entry in the referenced model is being deleted. | `Cascade`, `NoAction` |
 
 The name of the `name` argument on the `@relation` attribute can be omitted (`references` is required):
 
@@ -1793,13 +1793,13 @@ With SQLite, the signature changes to:
 
 #### [Examples](#examples-12)
 
-See: [The `@relation` attribute](prisma/docs/orm/prisma-schema/data-model/relations/index.md#the-relation-attribute).
+See: [The `@relation` attribute](../../prisma-schema/data-model/relations/index.md#the-relation-attribute).
 
 ### [`@map`](#map)
 
 Maps a field name or enum value from the Prisma schema to a column or document field with a different name in the database. If you do not use `@map`, the Prisma field name matches the column name or document field name exactly.
 
-> See [Using custom model and field names](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) to see how `@map` and `@@map` changes the generated Prisma Client.
+> See [Using custom model and field names](../../prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) to see how `@map` and `@@map` changes the generated Prisma Client.
 
 ##### [General](#general-3)
 
@@ -1873,7 +1873,7 @@ This means `Role.ADMIN` evaluates to `"admin"`, not `"ADMIN"`.
 
 Maps the Prisma schema model name to a table (relational databases) or collection (MongoDB) with a different name, or an enum name to a different underlying enum in the database. If you do not use `@@map`, the model name matches the table (relational databases) or collection (MongoDB) name exactly.
 
-> See [Using custom model and field names](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) to see how `@map` and `@@map` changes the generated Prisma Client.
+> See [Using custom model and field names](../../prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) to see how `@map` and `@@map` changes the generated Prisma Client.
 
 #### [Arguments](#arguments-8)
 
@@ -2005,7 +2005,7 @@ model User {
 
 ### [`@@schema`](#schema)
 
-Add `@@schema` to a model to specify which schema in your database should contain the table associated with that model. Learn more about [adding multiple schema's here](prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md).
+Add `@@schema` to a model to specify which schema in your database should contain the table associated with that model. Learn more about [adding multiple schema's here](../../prisma-schema/data-model/multi-schema/index.md).
 
 #### [Arguments](#arguments-10)
 
@@ -2159,7 +2159,7 @@ Generate a globally unique identifier based on the [`cuid`](https://github.com/e
 If you'd like to use [`cuid2`](https://github.com/paralleldrive/cuid2) values, you can pass `2` as an argument to the `cuid` function: `cuid(2)`.
 
 -   Compatible with `String`.
--   Implemented by Prisma ORM and therefore not "visible" in the underlying database schema. You can still use `cuid()` when using [introspection](prisma/docs/orm/prisma-schema/introspection/index.md) by [manually changing your Prisma schema](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) and generating Prisma Client, in that case the values will be generated by Prisma ORM.
+-   Implemented by Prisma ORM and therefore not "visible" in the underlying database schema. You can still use `cuid()` when using [introspection](../../prisma-schema/introspection/index.md) by [manually changing your Prisma schema](../../prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) and generating Prisma Client, in that case the values will be generated by Prisma ORM.
 -   Since the length of `cuid()` output is undefined per the cuid creator, a safe field size is 30 characters, in order to allow for enough characters for very large values. If you set the field size as less than 30, and then a larger value is generated by `cuid()`, you might see Prisma Client errors such as `Error: The provided value for the column is too long for the column's type.`
 -   For **MongoDB**: `cuid()` does not generate a valid `ObjectId`. You can use [`@db.ObjectId` syntax](#generate-objectid-as-ids-mongodb-only) if you want to use `ObjectId` in the underlying database. However, you can still use `cuid()` if your `_id` field is not of type `ObjectId`.
 
@@ -2174,7 +2174,7 @@ If you'd like to use [`cuid2`](https://github.com/paralleldrive/cuid2) values, y
 Generate a globally unique identifier based on the [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) spec. Prisma ORM supports versions 4 (default) and 7.
 
 -   Compatible with `String`.
--   Implemented by Prisma ORM and therefore not "visible" in the underlying database schema. You can still use `uuid()` when using [introspection](prisma/docs/orm/prisma-schema/introspection/index.md) by [manually changing your Prisma schema](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) and generating Prisma Client, in that case the values will be generated by Prisma ORM.
+-   Implemented by Prisma ORM and therefore not "visible" in the underlying database schema. You can still use `uuid()` when using [introspection](../../prisma-schema/introspection/index.md) by [manually changing your Prisma schema](../../prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) and generating Prisma Client, in that case the values will be generated by Prisma ORM.
 -   For **relational databases**: If you do not want to use Prisma ORM's `uuid()` function, you can use [the native database function with `dbgenerated`](#override-default-value-behavior-for-supported-types).
 -   For **MongoDB**: `uuid()` does not generate a valid `ObjectId`. You can use [`@db.ObjectId` syntax](#generate-objectid-as-ids-mongodb-only) if you want to use `ObjectId` in the underlying database. However, you can still use `uuid()` if your `_id` field is not of type `ObjectId`.
 
@@ -2199,7 +2199,7 @@ Generate a universally unique lexicographically sortable identifier based on the
 Generated values based on the [Nano ID](https://github.com/ai/nanoid) spec. `nanoid()` accepts an integer value between 2 and 255 that specifies the _length_ of the generate ID value, e.g. `nanoid(16)` will generated ID with 16 characters. If you don't provide a value to the nanoid() function, the default value is 21.
 
 -   Compatible with `String`.
--   Implemented by Prisma ORM and therefore not "visible" in the underlying database schema. You can still use `uuid()` when using [introspection](prisma/docs/orm/prisma-schema/introspection/index.md) by [manually changing your Prisma schema](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) and [generating Prisma Client](prisma/docs/orm/reference/prisma-schema-reference/index.md#fields-for-prisma-client-provider), in that case the values will be generated by Prisma ORM.
+-   Implemented by Prisma ORM and therefore not "visible" in the underlying database schema. You can still use `uuid()` when using [introspection](../../prisma-schema/introspection/index.md) by [manually changing your Prisma schema](../../prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) and [generating Prisma Client](index.md#fields-for-prisma-client-provider), in that case the values will be generated by Prisma ORM.
 -   For **MongoDB**: `nanoid()` does not generate a valid `ObjectId`. You can use [`@db.ObjectId` syntax](#generate-objectid-as-ids-mongodb-only) if you want to use `ObjectId` in the underlying database. However, you can still use `nanoid()` if your `_id` field is not of type `ObjectId`.
 
 #### [Examples](#examples-24)
@@ -2278,7 +2278,7 @@ A variable length text in double quotes: `""`, `"Hello World"`, `"Alice"`
 
 An expression that can be evaluated by Prisma ORM: `42.0`, `""`, `Bob`, `now()`, `cuid()`
 
-Defines an [enum](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-enums) .
+Defines an [enum](../../prisma-schema/data-model/models/index.md#defining-enums) .
 
 -   Enums are natively supported by [PostgreSQL](https://www.postgresql.org/docs/current/datatype-enum.html) and [MySQL](https://dev.mysql.com/doc/refman/8.0/en/enum.html)
 -   Enums are implemented and enforced at Prisma ORM level in SQLite and MongoDB
@@ -2295,7 +2295,7 @@ Defines an [enum](prisma/docs/orm/prisma-schema/data-model/models/index.md#defin
 
 #### [Specify an `enum` with two possible values and set a default value](#specify-an-enum-with-two-possible-values-and-set-a-default-value)
 
-Defines a [composite type](prisma/docs/orm/prisma-schema/data-model/models/index.md#defining-composite-types-mongodb).
+Defines a [composite type](../../prisma-schema/data-model/models/index.md#defining-composite-types-mongodb).
 
 ### [Naming conventions](#naming-conventions-3)
 

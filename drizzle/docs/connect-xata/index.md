@@ -10,14 +10,14 @@ content_hash: "f6a8b711d7ae9e69d5bee6ad7efd2ed6c76ee531e20db0373a4e9580adb3ecad"
 menu_path: ["Drizzle <> Xata"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/connect-supabase/index.md", "title": "Drizzle <> Supabase"}
-nav_next: {"path": "drizzle/docs/connect-pglite/index.md", "title": "Drizzle <> PGlite"}
+nav_prev: {"path": "../connect-supabase/index.md", "title": "Drizzle <> Supabase"}
+nav_next: {"path": "../connect-pglite/index.md", "title": "Drizzle <> PGlite"}
 ---
 
 This guide assumes familiarity with:
 
--   Database [connection basics](drizzle/docs/connect-overview/index.md) with Drizzle
--   Drizzle PostgreSQL drivers - [docs](drizzle/docs/get-started-postgresql/index.md)
+-   Database [connection basics](../connect-overview/index.md) with Drizzle
+-   Drizzle PostgreSQL drivers - [docs](../get-started-postgresql/index.md)
 
 **[Xata](https://xata.io/)** is a PostgreSQL database platform designed to help developers operate and scale databases with enhanced productivity and performance. Xata provides features like instant copy-on-write database branches, zero-downtime schema changes, data anonymization, AI-powered performance monitoring, and BYOC.
 

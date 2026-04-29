@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:48.762Z"
 content_hash: "bd801f8307bb443862aa3cb8fdf5ac5f9e52a7357d06fd49a8b85ce458e02e04"
 menu_path: ["PostgreSQL: Documentation: 18: 54.3. SASL Authentication"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-wal.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.5.\u00a0Write Ahead Log"}
-nav_next: {"path": "postgres/docs/current/seg.html/index.md", "title": "PostgreSQL: Documentation: 18: F.39.\u00a0seg \u2014 a datatype for line segments or floating point intervals"}
+nav_prev: {"path": "../runtime-config-wal.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.5.\u00a0Write Ahead Log"}
+nav_next: {"path": "../seg.html/index.md", "title": "PostgreSQL: Documentation: 18: F.39.\u00a0seg \u2014 a datatype for line segments or floating point intervals"}
 ---
 
 _SASL_ is a framework for authentication in connection-oriented protocols. At the moment, PostgreSQL implements three SASL authentication mechanisms: SCRAM-SHA-256, SCRAM-SHA-256-PLUS, and OAUTHBEARER. More might be added in the future. The below steps illustrate how SASL authentication is performed in general, while the next subsections give more details on particular mechanisms.

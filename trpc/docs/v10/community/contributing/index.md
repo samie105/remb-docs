@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:35:10.583Z"
 content_hash: "ac7d6b5f0b81db8bb74c6fd4e1b07b8b1fe239fd748c9461b98a34d96b2b550c"
 menu_path: ["Contributing"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/community/awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
-nav_next: {"path": "trpc/docs/v10/community/love/index.md", "title": "Testimonials / Love"}
+nav_prev: {"path": "../awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
+nav_next: {"path": "../love/index.md", "title": "Testimonials / Love"}
 ---
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
 This is documentation for tRPC **10.x**, which is no longer actively maintained.
 
-For up-to-date documentation, see the **[latest version](trpc/docs/community/contributing/index.md)** (11.x).
+For up-to-date documentation, see the **[latest version](../../../community/contributing/index.md)** (11.x).
 
 Version: 10.x
 

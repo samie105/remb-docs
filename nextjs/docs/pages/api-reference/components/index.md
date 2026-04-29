@@ -11,8 +11,8 @@ menu_path: ["Components"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/index.md", "title": "API Reference"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/font/index.md", "title": "Font Module"}
+nav_prev: {"path": "../index.md", "title": "API Reference"}
+nav_next: {"path": "font/index.md", "title": "Font Module"}
 ---
 
 # Components

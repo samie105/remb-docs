@@ -10,8 +10,8 @@ content_hash: "5824f42ed65f2090b9a6aac6d5b9a442388428f1a314af75415be2d5abc9a664"
 menu_path: ["Errors - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/deno/cloud/index.md", "title": "Cloud - Deno documentation"}
-nav_next: {"path": "deno/api/deno/fetch/index.md", "title": "Fetch - Deno documentation"}
+nav_prev: {"path": "../cloud/index.md", "title": "Cloud - Deno documentation"}
+nav_next: {"path": "../fetch/index.md", "title": "Fetch - Deno documentation"}
 ---
 
 c

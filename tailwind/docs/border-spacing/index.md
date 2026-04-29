@@ -10,8 +10,8 @@ content_hash: "36d7e00b446d6e999f160550b225c860bd6d88f933f402584b68de5436d01d32"
 menu_path: ["border-spacing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/border-collapse/index.md", "title": "border-collapse"}
-nav_next: {"path": "tailwind/docs/table-layout/index.md", "title": "table-layout"}
+nav_prev: {"path": "../border-collapse/index.md", "title": "border-collapse"}
+nav_next: {"path": "../table-layout/index.md", "title": "table-layout"}
 ---
 
 Utilities for controlling the spacing between table borders.
@@ -20,7 +20,7 @@ Utilities for controlling the spacing between table borders.
 
 ### [Basic example](#basic-example)
 
-Use `border-spacing-<number>` utilities like `border-spacing-2` and `border-spacing-x-3` to control the space between the borders of table cells with [separate borders](tailwind/docs/border-collapse/index.md#separating-table-borders):
+Use `border-spacing-<number>` utilities like `border-spacing-2` and `border-spacing-x-3` to control the space between the borders of table cells with [separate borders](../border-collapse/index.md#separating-table-borders):
 
 | State | City |
 | --- | --- |
@@ -56,7 +56,7 @@ Prefix a `border-spacing` utility with a breakpoint variant like `md:` to only a
 <table class="border-spacing-2 md:border-spacing-4 ...">  <!-- ... --></table>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -66,4 +66,4 @@ The `border-spacing-<number>` utilities are driven by the `--spacing` theme vari
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](../theme/index.md).

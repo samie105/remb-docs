@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:31.393Z"
 content_hash: "5b1259c1e517e7b6e1a771baa630b5a60b860744a22753b5b4612d00c1f3e8aa"
 menu_path: ["Auth","Auth","Getting Started","Getting Started","Astro","Astro"]
 section_path: ["Auth","Auth","Getting Started","Getting Started","Astro","Astro"]
-nav_prev: {"path": "supabase/docs/guides/auth/phone-login/index.md", "title": "Phone Login"}
-nav_next: {"path": "supabase/docs/guides/auth/quickstarts/nextjs/index.md", "title": "Use Supabase Auth with Next.js"}
+nav_prev: {"path": "../../phone-login/index.md", "title": "Phone Login"}
+nav_next: {"path": "../nextjs/index.md", "title": "Use Supabase Auth with Next.js"}
 ---
 
 # 

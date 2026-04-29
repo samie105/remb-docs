@@ -10,8 +10,8 @@ content_hash: "81f2c82a17705954922fc1cbd0a10a16f15f78308e6f434ee2d616ff0b6be2ec"
 menu_path: ["Deno Namespace APIs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/help/index.md", "title": "Where to get help"}
-nav_next: {"path": "deno/api/deno/index.md", "title": "Deno Namespace APIs"}
+nav_prev: {"path": "../runtime/help/index.md", "title": "Where to get help"}
+nav_next: {"path": "../index.md", "title": "Deno Namespace APIs"}
 ---
 
 **On this page**

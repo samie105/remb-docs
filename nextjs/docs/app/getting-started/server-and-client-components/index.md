@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/getting-started/linking-and-navigating/index.md", "title": "Linking and Navigating"}
-nav_next: {"path": "nextjs/docs/app/getting-started/fetching-data/index.md", "title": "Fetching Data"}
+nav_prev: {"path": "../linking-and-navigating/index.md", "title": "Linking and Navigating"}
+nav_next: {"path": "../fetching-data/index.md", "title": "Fetching Data"}
 ---
 
 # Server and Client Components

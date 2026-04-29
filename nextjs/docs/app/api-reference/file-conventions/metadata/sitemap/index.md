@@ -11,8 +11,8 @@ menu_path: ["sitemap.xml"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/robots/index.md", "title": "robots.txt"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/index.md", "title": "Route Segment Config"}
+nav_prev: {"path": "../robots/index.md", "title": "robots.txt"}
+nav_next: {"path": "../../route-segment-config/index.md", "title": "Route Segment Config"}
 ---
 
 # sitemap.xml

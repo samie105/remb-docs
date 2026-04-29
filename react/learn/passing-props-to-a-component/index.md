@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:47.418Z"
 content_hash: "d3452c1ed0a3c747bd5a2a3cee9cf2ec7c7f93330597e2104641382b1691762a"
 menu_path: ["Passing Props to a Component"]
 section_path: []
-nav_prev: {"path": "react/learn/javascript-in-jsx-with-curly-braces/index.md", "title": "JavaScript in JSX with Curly Braces"}
-nav_next: {"path": "react/learn/conditional-rendering/index.md", "title": "Conditional Rendering"}
+nav_prev: {"path": "../javascript-in-jsx-with-curly-braces/index.md", "title": "JavaScript in JSX with Curly Braces"}
+nav_next: {"path": "../conditional-rendering/index.md", "title": "Conditional Rendering"}
 ---
 
 React components use _props_ to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions.
@@ -205,7 +205,7 @@ You can think of a component with a `children` prop as having a “hole” that 
 
 ## How props change over time[](#how-props-change-over-time "Link for How props change over time ")
 
-The `Clock` component below receives two props from its parent component: `color` and `time`. (The parent component’s code is omitted because it uses [state](react/learn/state-a-components-memory/index.md), which we won’t dive into just yet.)
+The `Clock` component below receives two props from its parent component: `color` and `time`. (The parent component’s code is omitted because it uses [state](../state-a-components-memory/index.md), which we won’t dive into just yet.)
 
 Try changing the color in the select box below:
 
@@ -213,7 +213,7 @@ This example illustrates that **a component may receive different props over tim
 
 However, props are [immutable](https://en.wikipedia.org/wiki/Immutable_object)—a term from computer science meaning “unchangeable”. When a component needs to change its props (for example, in response to a user interaction or new data), it will have to “ask” its parent component to pass it _different props_—a new object! Its old props will then be cast aside, and eventually the JavaScript engine will reclaim the memory taken by them.
 
-**Don’t try to “change props”.** When you need to respond to the user input (like changing the selected color), you will need to “set state”, which you can learn about in [State: A Component’s Memory.](react/learn/state-a-components-memory/index.md)
+**Don’t try to “change props”.** When you need to respond to the user input (like changing the selected color), you will need to “set state”, which you can learn about in [State: A Component’s Memory.](../state-a-components-memory/index.md)
 
 ## Recap[](#recap "Link for Recap")
 

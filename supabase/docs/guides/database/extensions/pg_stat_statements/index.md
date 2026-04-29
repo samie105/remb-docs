@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:52.355Z"
 content_hash: "05cd40c4d57e2b29cabb202f50c7921dc1f5085fd460dc8244693ea447351909"
 menu_path: ["Database","Database","Extensions","Extensions","pg_stat_statements: SQL Planning and Execution Statistics","pg_stat_statements: SQL Planning and Execution Statistics"]
 section_path: ["Database","Database","Extensions","Extensions","pg_stat_statements: SQL Planning and Execution Statistics","pg_stat_statements: SQL Planning and Execution Statistics"]
-nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_repack/index.md", "title": "pg_repack: Physical storage optimization and maintenance"}
-nav_next: {"path": "supabase/docs/guides/database/extensions/pgaudit/index.md", "title": "PGAudit: Postgres Auditing"}
+nav_prev: {"path": "../pg_repack/index.md", "title": "pg_repack: Physical storage optimization and maintenance"}
+nav_next: {"path": "../pgaudit/index.md", "title": "PGAudit: Postgres Auditing"}
 ---
 
 # 

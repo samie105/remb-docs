@@ -11,8 +11,8 @@ menu_path: ["Server-side Rendering (SSR)"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/custom-error/index.md", "title": "Custom Errors"}
-nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/static-site-generation/index.md", "title": "Static Site Generation (SSG)"}
+nav_prev: {"path": "../../routing/custom-error/index.md", "title": "Custom Errors"}
+nav_next: {"path": "../static-site-generation/index.md", "title": "Static Site Generation (SSG)"}
 ---
 
 # Server-side Rendering (SSR)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:16.496Z"
 content_hash: "907c277729a6be95c5631c4257639765e13ae23216da369a1c735d157d68a634"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","Firebase Auth","Firebase Auth"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","Firebase Auth","Firebase Auth"]
-nav_prev: {"path": "supabase/docs/guides/auth/third-party/clerk/index.md", "title": "Clerk"}
-nav_next: {"path": "supabase/docs/guides/auth/third-party/overview/index.md", "title": "Third-party auth"}
+nav_prev: {"path": "../clerk/index.md", "title": "Clerk"}
+nav_next: {"path": "../overview/index.md", "title": "Third-party auth"}
 ---
 
 # 

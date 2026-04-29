@@ -9,11 +9,11 @@ last_crawled_at: "2026-04-18T16:32:19.317Z"
 content_hash: "d299c8502691c86d3a891ea9fbf694b3e772c3e4dff5bc4a899c5815316b8f0a"
 menu_path: ["Configuring Vite ​"]
 section_path: []
-nav_prev: {"path": "vite/guide/api-javascript/index.md", "title": "JavaScript API \u200b"}
-nav_next: {"path": "vite/guide/api-environment/index.md", "title": "Environment API \u200b"}
+nav_prev: {"path": "../guide/api-javascript/index.md", "title": "JavaScript API \u200b"}
+nav_next: {"path": "../guide/api-environment/index.md", "title": "Environment API \u200b"}
 ---
 
-When running `vite` from the command line, Vite will automatically try to resolve a config file named `vite.config.js` inside [project root](vite/guide/index.md#index-html-and-project-root) (other JS and TS extensions are also supported).
+When running `vite` from the command line, Vite will automatically try to resolve a config file named `vite.config.js` inside [project root](../guide/index.md#index-html-and-project-root) (other JS and TS extensions are also supported).
 
 The most basic config file looks like this:
 
@@ -39,7 +39,7 @@ vite --config my-config.js
 
 CONFIG LOADING
 
-By default, Vite uses [Rolldown](https://rolldown.rs/) to bundle the config into a temporary file and load it. This may cause issues when importing TypeScript files in a monorepo. If you encounter any issues with this approach, you can specify `--configLoader runner` to use the [module runner](vite/guide/api-environment-runtimes/index.md#modulerunner) instead, which will not create a temporary config and will transform any files on the fly. Note that module runner doesn't support CJS in config files, but external CJS packages should work as usual.
+By default, Vite uses [Rolldown](https://rolldown.rs/) to bundle the config into a temporary file and load it. This may cause issues when importing TypeScript files in a monorepo. If you encounter any issues with this approach, you can specify `--configLoader runner` to use the [module runner](../guide/api-environment-runtimes/index.md#modulerunner) instead, which will not create a temporary config and will transform any files on the fly. Note that module runner doesn't support CJS in config files, but external CJS packages should work as usual.
 
 Alternatively, if you're using an environment that supports TypeScript (e.g. `node --experimental-strip-types`), or if you're only writing plain JavaScript, you can specify `--configLoader native` to use the environment's native runtime to load the config file. Note that updates to modules imported by the config file are not detected and hence would not auto-restart the Vite server.
 
@@ -82,7 +82,7 @@ export default {
 
 ## Conditional Config [​](#conditional-config)
 
-If the config needs to conditionally determine options based on the command (`serve` or `build`), the [mode](vite/guide/env-and-mode/index.md#modes) being used, if it's an SSR build (`isSsrBuild`), or is previewing the build (`isPreview`), it can export a function instead:
+If the config needs to conditionally determine options based on the command (`serve` or `build`), the [mode](../guide/env-and-mode/index.md#modes) being used, if it's an SSR build (`isSsrBuild`), or is previewing the build (`isPreview`), it can export a function instead:
 
 js
 
@@ -101,7 +101,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
 })
 ```
 
-It is important to note that in Vite's API the `command` value is `serve` during dev (in the cli [`vite`](vite/guide/cli/index.md#vite), `vite dev`, and `vite serve` are aliases), and `build` when building for production ([`vite build`](vite/guide/cli/index.md#vite-build)).
+It is important to note that in Vite's API the `command` value is `serve` during dev (in the cli [`vite`](../guide/cli/index.md#vite), `vite dev`, and `vite serve` are aliases), and `build` when building for production ([`vite build`](../guide/cli/index.md#vite-build)).
 
 `isSsrBuild` and `isPreview` are additional optional flags to differentiate the kind of `build` and `serve` commands respectively. Some tools that load the Vite config may not support these flags and will pass `undefined` instead. Hence, it's recommended to use explicit comparison against `true` and `false`.
 
@@ -122,11 +122,11 @@ export default defineConfig(async ({ command, mode }) => {
 
 ## Using Environment Variables in Config [​](#using-environment-variables-in-config)
 
-Environment variables available while the config itself is being evaluated are only those that already exist in the current process environment (`process.env`). Vite deliberately defers loading any `.env*` files until _after_ the user config has been resolved because the set of files to load depends on config options like [`root`](vite/guide/index.md#index-html-and-project-root) and [`envDir`](vite/config/shared-options/index.md#envdir), and also on the final `mode`.
+Environment variables available while the config itself is being evaluated are only those that already exist in the current process environment (`process.env`). Vite deliberately defers loading any `.env*` files until _after_ the user config has been resolved because the set of files to load depends on config options like [`root`](../guide/index.md#index-html-and-project-root) and [`envDir`](shared-options/index.md#envdir), and also on the final `mode`.
 
-This means: variables defined in `.env`, `.env.local`, `.env.[mode]`, or `.env.[mode].local` are **not** automatically injected into `process.env` while your `vite.config.*` is running. They _are_ automatically loaded later and exposed to application code via `import.meta.env` (with the default `VITE_` prefix filter) exactly as documented in [Env Variables and Modes](vite/guide/env-and-mode/index.md). So if you only need to pass values from `.env*` files to the app, you don't need to call anything in the config.
+This means: variables defined in `.env`, `.env.local`, `.env.[mode]`, or `.env.[mode].local` are **not** automatically injected into `process.env` while your `vite.config.*` is running. They _are_ automatically loaded later and exposed to application code via `import.meta.env` (with the default `VITE_` prefix filter) exactly as documented in [Env Variables and Modes](../guide/env-and-mode/index.md). So if you only need to pass values from `.env*` files to the app, you don't need to call anything in the config.
 
-If, however, values from `.env*` files must influence the config itself (for example to set `server.port`, conditionally enable plugins, or compute `define` replacements), you can load them manually using the exported [`loadEnv`](vite/guide/api-javascript/index.md#loadenv) helper.
+If, however, values from `.env*` files must influence the config itself (for example to set `server.port`, conditionally enable plugins, or compute `define` replacements), you can load them manually using the exported [`loadEnv`](../guide/api-javascript/index.md#loadenv) helper.
 
 js
 

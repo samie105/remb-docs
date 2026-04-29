@@ -10,8 +10,8 @@ content_hash: "924d2ac70e63e3f0639742633fa6ce63b63a0c8e563e26e48e487256697e10f8"
 menu_path: ["overflow-wrap"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/word-break/index.md", "title": "word-break"}
-nav_next: {"path": "tailwind/docs/hyphens/index.md", "title": "hyphens"}
+nav_prev: {"path": "../word-break/index.md", "title": "word-break"}
+nav_next: {"path": "../hyphens/index.md", "title": "hyphens"}
 ---
 
 Utilities for controlling line breaks within words in an overflowing element.
@@ -72,4 +72,4 @@ Prefix an `overflow-wrap` utility with a breakpoint variant like `md:` to only a
 <p class="wrap-normal md:wrap-break-word ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

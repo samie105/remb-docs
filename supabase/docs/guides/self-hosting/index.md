@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:44.831Z"
 content_hash: "f7bd129ce45e179bc266aa7fbac0615c4e6bc715ef8aee3d63aac8478ca57e8b"
 menu_path: ["Self-Hosting","Self-Hosting","Overview","Overview"]
 section_path: ["Self-Hosting","Self-Hosting","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/copy-from-platform-s3/index.md", "title": "Copy Storage Objects from Platform"}
+nav_prev: {"path": "../security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
+nav_next: {"path": "copy-from-platform-s3/index.md", "title": "Copy Storage Objects from Platform"}
 ---
 
 # 

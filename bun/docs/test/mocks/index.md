@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:37.983Z"
 content_hash: "2bd2a623b44b2c268730acc5cb56775d58bc732b8da2b4cdd9b1dadfbc1eda3f"
 menu_path: ["Mocks"]
 section_path: []
-nav_prev: {"path": "bun/docs/test/lifecycle/index.md", "title": "Lifecycle hooks"}
-nav_next: {"path": "bun/docs/test/reporters/index.md", "title": "Test Reporters"}
+nav_prev: {"path": "../lifecycle/index.md", "title": "Lifecycle hooks"}
+nav_next: {"path": "../reporters/index.md", "title": "Test Reporters"}
 ---
 
 # Load these modules before running tests.

@@ -10,8 +10,8 @@ content_hash: "681b7917d297f5e27c36fff1c1d30b0e4c37d8f360fcb8d58d14a13738c0b257"
 menu_path: ["backdrop-filter: contrast()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/backdrop-filter-brightness/index.md", "title": "backdrop-filter: brightness()"}
-nav_next: {"path": "tailwind/docs/backdrop-filter-grayscale/index.md", "title": "backdrop-filter: grayscale()"}
+nav_prev: {"path": "../backdrop-filter-brightness/index.md", "title": "backdrop-filter: brightness()"}
+nav_next: {"path": "../backdrop-filter-grayscale/index.md", "title": "backdrop-filter: grayscale()"}
 ---
 
 # backdrop-filter: contrast()

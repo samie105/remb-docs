@@ -10,7 +10,7 @@ content_hash: "5056b20d8aceb2701a71a166baaa97d0a4aded2bf68673f54b86138b4bdee08b"
 menu_path: ["bind:"]
 section_path: []
 nav_prev: {"path": "svelte/docs/svelte/@debug/index.md", "title": "{@debug ...}"}
-nav_next: {"path": "svelte/docs/svelte/use/index.md", "title": "use:"}
+nav_next: {"path": "../use/index.md", "title": "use:"}
 ---
 
 Data ordinarily flows down, from parent to child. The `bind:` directive allows data to flow the other way, from child to parent.

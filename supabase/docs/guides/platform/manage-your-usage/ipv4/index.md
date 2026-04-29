@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:05.879Z"
 content_hash: "8d4b430208b80d1c52628c7eff85552aa1c17b558d35c166154d670f4bfb3daf"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","IPv4","IPv4"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","IPv4","IPv4"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/egress/index.md", "title": "Manage Egress usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/log-drains/index.md", "title": "Manage Log Drain usage"}
+nav_prev: {"path": "../egress/index.md", "title": "Manage Egress usage"}
+nav_next: {"path": "../log-drains/index.md", "title": "Manage Log Drain usage"}
 ---
 
 # 

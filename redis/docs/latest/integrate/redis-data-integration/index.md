@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:15.326Z"
 content_hash: "499bbd314f4c6f6b6d1b7de53b9d4cc9caed073faea5470e2dd22429b9936421"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-ai-libraries/index.md", "title": "Redis for AI"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/pipeline-config/index.md", "title": "Pipeline configuration file"}
+nav_prev: {"path": "../redis-ai-libraries/index.md", "title": "Redis for AI"}
+nav_next: {"path": "data-pipelines/pipeline-config/index.md", "title": "Pipeline configuration file"}
 ---
 
 # Redis Data Integration

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:03.670Z"
 content_hash: "e13c2c4312210e69deea86300945d08771043d97a3cc5109141aa6bb39adb04a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Development","→","Development"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Development","→","Development"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/debugging/index.md", "title": "Debugging"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/examples/index.md", "title": "Triggers and functions examples"}
+nav_prev: {"path": "../debugging/index.md", "title": "Debugging"}
+nav_next: {"path": "../examples/index.md", "title": "Triggers and functions examples"}
 ---
 
 # Development

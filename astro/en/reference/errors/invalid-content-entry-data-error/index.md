@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:08.494Z"
 content_hash: "173c755d421f0f73ba921beab599a48993f2ec6a393eaab8bcff8b1cd8d8c408"
 menu_path: ["Content entry data does not match schema."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/invalid-component-args/index.md", "title": "Invalid component arguments."}
-nav_next: {"path": "astro/en/reference/errors/invalid-content-entry-frontmatter-error/index.md", "title": "Content entry frontmatter does not match schema."}
+nav_prev: {"path": "../invalid-component-args/index.md", "title": "Invalid component arguments."}
+nav_next: {"path": "../invalid-content-entry-frontmatter-error/index.md", "title": "Content entry frontmatter does not match schema."}
 ---
 
 # Content entry data does not match schema.

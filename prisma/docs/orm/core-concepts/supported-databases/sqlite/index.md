@@ -11,8 +11,8 @@ menu_path: ["SQLite"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md", "title": "SQL Server"}
-nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-drizzle/index.md", "title": "Drizzle"}
+nav_prev: {"path": "../sql-server/index.md", "title": "SQL Server"}
+nav_next: {"path": "../../../more/comparisons/prisma-and-drizzle/index.md", "title": "Drizzle"}
 ---
 
 Supported databases
@@ -46,7 +46,7 @@ export default defineConfig({
 });
 ```
 
-Instead of Prisma's built-in driver, you can use JavaScript database drivers via [driver adapters](prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md#driver-adapters):
+Instead of Prisma's built-in driver, you can use JavaScript database drivers via [driver adapters](../database-drivers/index.md#driver-adapters):
 
 **Local SQLite with `better-sqlite3`:**
 

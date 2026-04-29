@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:24.759Z"
 content_hash: "9a68e1808ca6130a1913e3297dfd081b68d95cb308da39be93fb90abc25a2766"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 33. Large Objects"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/jit.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a030.\u00a0Just-in-Time Compilation (JIT)"}
-nav_next: {"path": "postgres/docs/current/ecpg.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a034.\u00a0ECPG \u2014 Embedded SQL in C"}
+nav_prev: {"path": "../jit.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a030.\u00a0Just-in-Time Compilation (JIT)"}
+nav_next: {"path": "../ecpg.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a034.\u00a0ECPG \u2014 Embedded SQL in C"}
 ---
 
 PostgreSQL has a _large object_ facility, which provides stream-style access to user data that is stored in a special large-object structure. Streaming access is useful when working with data values that are too large to manipulate conveniently as a whole.

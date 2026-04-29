@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:49.459Z"
 content_hash: "aba8dd7fbbdf2672e2c68c0205126c7d8176312b201a3191004a9a8273547854"
 menu_path: ["Astro Docs"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/testing/index.md", "title": "Testing"}
-nav_next: {"path": "astro/en/guides/integrations-guide/deno/index.md", "title": "@deno/astro-adapter"}
+nav_prev: {"path": "../guides/testing/index.md", "title": "Testing"}
+nav_next: {"path": "../guides/integrations-guide/deno/index.md", "title": "@deno/astro-adapter"}
 ---
 
 # Astro Docs

@@ -10,8 +10,8 @@ content_hash: "7013e6df7a076457ba494c08a4847bd506000000d7ec79300a1fed37a609b5f8"
 menu_path: ["filter: blur()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/filter/index.md", "title": "filter"}
-nav_next: {"path": "tailwind/docs/filter-brightness/index.md", "title": "filter: brightness()"}
+nav_prev: {"path": "../filter/index.md", "title": "filter"}
+nav_next: {"path": "../filter-brightness/index.md", "title": "filter: brightness()"}
 ---
 
 # filter: blur()

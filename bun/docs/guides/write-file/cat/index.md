@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:47.106Z"
 content_hash: "095704024b0743d7bbdff1a7c973e6cae9798a7c4daaff4b8d12a55c676350ef"
 menu_path: ["Write a file to stdout"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/write-file/blob/index.md", "title": "Write a Blob to a file"}
-nav_next: {"path": "bun/docs/guides/write-file/file-cp/index.md", "title": "Copy a file to another location"}
+nav_prev: {"path": "../blob/index.md", "title": "Write a Blob to a file"}
+nav_next: {"path": "../file-cp/index.md", "title": "Copy a file to another location"}
 ---
 
 [Skip to main content](#content-area)

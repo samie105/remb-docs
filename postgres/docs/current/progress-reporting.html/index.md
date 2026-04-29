@@ -10,13 +10,13 @@ content_hash: "a51d2214edd0cf339313a67484e51db9b7718113d90915576f17ac1db27ea064"
 menu_path: ["PostgreSQL: Documentation: 18: 27.4. Progress Reporting"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/predefined-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.5.\u00a0Predefined Roles"}
-nav_next: {"path": "postgres/docs/current/protocol-changes.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.10.\u00a0Summary of Changes since Protocol 2.0"}
+nav_prev: {"path": "../predefined-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.5.\u00a0Predefined Roles"}
+nav_next: {"path": "../protocol-changes.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.10.\u00a0Summary of Changes since Protocol 2.0"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/progress-reporting.html "PostgreSQL devel - 27.4. Progress Reporting")
 
-PostgreSQL has the ability to report the progress of certain commands during command execution. Currently, the only commands which support progress reporting are `ANALYZE`, `CLUSTER`, `CREATE INDEX`, `VACUUM`, `COPY`, and [BASE\_BACKUP](postgres/docs/current/protocol-replication.html/index.md#PROTOCOL-REPLICATION-BASE-BACKUP) (i.e., replication command that [pg\_basebackup](https://www.postgresql.org/docs/current/app-pgbasebackup.html "pg_basebackup") issues to take a base backup). This may be expanded in the future.
+PostgreSQL has the ability to report the progress of certain commands during command execution. Currently, the only commands which support progress reporting are `ANALYZE`, `CLUSTER`, `CREATE INDEX`, `VACUUM`, `COPY`, and [BASE\_BACKUP](../protocol-replication.html/index.md#PROTOCOL-REPLICATION-BASE-BACKUP) (i.e., replication command that [pg\_basebackup](https://www.postgresql.org/docs/current/app-pgbasebackup.html "pg_basebackup") issues to take a base backup). This may be expanded in the future.
 
 ### 27.4.1. ANALYZE Progress Reporting [#](#ANALYZE-PROGRESS-REPORTING)
 
@@ -119,7 +119,7 @@ OID of the child table currently being scanned. This field is only valid when th
 
 `delay_time` `double precision`
 
-Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#RUNTIME-CONFIG-RESOURCE-VACUUM-COST "19.10.2. Cost-based Vacuum Delay")), in milliseconds (if [track\_cost\_delay\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-COST-DELAY-TIMING) is enabled, otherwise zero).
+Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#RUNTIME-CONFIG-RESOURCE-VACUUM-COST "19.10.2. Cost-based Vacuum Delay")), in milliseconds (if [track\_cost\_delay\_timing](../runtime-config-statistics.html/index.md#GUC-TRACK-COST-DELAY-TIMING) is enabled, otherwise zero).
 
  |
 
@@ -578,7 +578,7 @@ Number of completed index vacuum cycles.
 
 `max_dead_tuple_bytes` `bigint`
 
-Amount of dead tuple data that we can store before needing to perform an index vacuum cycle, based on [maintenance\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM).
+Amount of dead tuple data that we can store before needing to perform an index vacuum cycle, based on [maintenance\_work\_mem](../runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM).
 
  |
 | 
@@ -613,7 +613,7 @@ Number of indexes processed. This counter only advances when the phase is `vacuu
 
 `delay_time` `double precision`
 
-Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#RUNTIME-CONFIG-RESOURCE-VACUUM-COST "19.10.2. Cost-based Vacuum Delay")), in milliseconds (if [track\_cost\_delay\_timing](postgres/docs/current/runtime-config-statistics.html/index.md#GUC-TRACK-COST-DELAY-TIMING) is enabled, otherwise zero). This includes the time that any associated parallel workers have slept. However, parallel workers report their sleep time no more frequently than once per second, so the reported value may be slightly stale.
+Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https://www.postgresql.org/docs/current/runtime-config-vacuum.html#RUNTIME-CONFIG-RESOURCE-VACUUM-COST "19.10.2. Cost-based Vacuum Delay")), in milliseconds (if [track\_cost\_delay\_timing](../runtime-config-statistics.html/index.md#GUC-TRACK-COST-DELAY-TIMING) is enabled, otherwise zero). This includes the time that any associated parallel workers have slept. However, parallel workers report their sleep time no more frequently than once per second, so the reported value may be slightly stale.
 
  |
 
@@ -626,7 +626,7 @@ Total time spent sleeping due to cost-based delay (see [Section 19.10.2](https:
 | --- | --- |
 | `initializing` | `VACUUM` is preparing to begin scanning the heap. This phase is expected to be very brief. |
 | `scanning heap` | `VACUUM` is currently scanning the heap. It will prune and defragment each page if required, and possibly perform freezing activity. The `heap_blks_scanned` column can be used to monitor the progress of the scan. |
-| `vacuuming indexes` | `VACUUM` is currently vacuuming the indexes. If a table has any indexes, this will happen at least once per vacuum, after the heap has been completely scanned. It may happen multiple times per vacuum if [maintenance\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM) (or, in the case of autovacuum, [autovacuum\_work\_mem](postgres/docs/current/runtime-config-resource.html/index.md#GUC-AUTOVACUUM-WORK-MEM) if set) is insufficient to store the number of dead tuples found. |
+| `vacuuming indexes` | `VACUUM` is currently vacuuming the indexes. If a table has any indexes, this will happen at least once per vacuum, after the heap has been completely scanned. It may happen multiple times per vacuum if [maintenance\_work\_mem](../runtime-config-resource.html/index.md#GUC-MAINTENANCE-WORK-MEM) (or, in the case of autovacuum, [autovacuum\_work\_mem](../runtime-config-resource.html/index.md#GUC-AUTOVACUUM-WORK-MEM) if set) is insufficient to store the number of dead tuples found. |
 | `vacuuming heap` | `VACUUM` is currently vacuuming the heap. Vacuuming the heap is distinct from scanning the heap, and occurs after each instance of vacuuming indexes. If `heap_blks_scanned` is less than `heap_blks_total`, the system will return to scanning the heap after this phase is completed; otherwise, it will begin cleaning up indexes after this phase is completed. |
 | `cleaning up indexes` | `VACUUM` is currently cleaning up indexes. This occurs after the heap has been completely scanned and all vacuuming of the indexes and the heap has been completed. |
 | `truncating heap` | `VACUUM` is currently truncating the heap so as to return empty pages at the end of the relation to the operating system. This occurs after cleaning up indexes. |

@@ -11,8 +11,8 @@ menu_path: ["typedRoutes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopackIgnoreIssue/index.md", "title": "turbopack.ignoreIssue"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/typescript/index.md", "title": "typescript"}
+nav_prev: {"path": "../turbopackIgnoreIssue/index.md", "title": "turbopack.ignoreIssue"}
+nav_next: {"path": "../typescript/index.md", "title": "typescript"}
 ---
 
 # typedRoutes

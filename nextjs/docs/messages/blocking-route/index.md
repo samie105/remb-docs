@@ -11,8 +11,8 @@ menu_path: ["Uncached data was accessed outside of `<Suspense>`"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/messages/app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
-nav_next: {"path": "nextjs/docs/messages/conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
+nav_prev: {"path": "../app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
+nav_next: {"path": "../conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
 ---
 
 # Uncached data was accessed outside of \`<Suspense>\`

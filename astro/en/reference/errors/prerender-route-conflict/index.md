@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:17.655Z"
 content_hash: "38c874d7d243e96c2a3ac196a3c597778beca87f3652dae679871b237442c6eb"
 menu_path: ["Prerendered route generates the same path as another route."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/prerender-dynamic-endpoint-path-collide/index.md", "title": "Prerendered dynamic endpoint has path collision."}
-nav_next: {"path": "astro/en/reference/errors/redirect-with-no-location/index.md", "title": "A redirect must be given a location with the Location header."}
+nav_prev: {"path": "../prerender-dynamic-endpoint-path-collide/index.md", "title": "Prerendered dynamic endpoint has path collision."}
+nav_next: {"path": "../redirect-with-no-location/index.md", "title": "A redirect must be given a location with the Location header."}
 ---
 
 # Prerendered route generates the same path as another route.

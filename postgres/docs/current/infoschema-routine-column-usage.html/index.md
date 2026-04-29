@@ -10,8 +10,8 @@ content_hash: "c8b785ecb520f595bce8e9b584b6dfa340332a9f0c0ee00061f37bf687064621"
 menu_path: ["PostgreSQL: Documentation: 18: 35.40. routine_column_usage"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-role-usage-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.39.\u00a0role_usage_grants"}
-nav_next: {"path": "postgres/docs/current/infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
+nav_prev: {"path": "../infoschema-role-usage-grants.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.39.\u00a0role_usage_grants"}
+nav_next: {"path": "../infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
 ---
 
 The view `routine_column_usage` identifies all columns that are used by a function or procedure, either in the SQL body or in parameter default expressions. (This only works for unquoted SQL bodies, not quoted bodies or functions in other languages.) A column is only included if its table is owned by a currently enabled role.

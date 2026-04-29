@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:08:59.318Z"
 content_hash: "8ec4f9ce154684f716953c2471c70fd7eacb363f9f8a3eb5bcc6148e9ecd900c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Scale with Redis Cluster","→","Scale with Redis Cluster"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Scale with Redis Cluster","→","Scale with Redis Cluster"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/replication/index.md", "title": "Redis replication"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/index.md", "title": "Redis security"}
+nav_prev: {"path": "../replication/index.md", "title": "Redis replication"}
+nav_next: {"path": "../security/index.md", "title": "Redis security"}
 ---
 
 # Scale with Redis Cluster

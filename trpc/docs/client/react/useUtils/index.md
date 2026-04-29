@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:24.660Z"
 content_hash: "547cc7e38a674f61f4b72d9bcd2ba1139d1a3062154545987df189424a58ed05"
 menu_path: ["useUtils"]
 section_path: []
-nav_prev: {"path": "trpc/docs/client/react/useSubscription/index.md", "title": "useSubscription()"}
-nav_next: {"path": "trpc/docs/client/tanstack-react-query/index.md", "title": "TanStack React Query"}
+nav_prev: {"path": "../useSubscription/index.md", "title": "useSubscription()"}
+nav_next: {"path": "../../tanstack-react-query/index.md", "title": "TanStack React Query"}
 ---
 
 `useUtils` is a hook that gives you access to helpers that let you manage the cached data of the queries you execute via `@trpc/react-query`. These helpers are actually thin wrappers around `@tanstack/react-query`'s [`queryClient`](https://tanstack.com/query/v5/docs/reference/QueryClient) methods. If you want more in-depth information about options and usage patterns for `useUtils` helpers than what we provide here, we will link to their respective `@tanstack/react-query` docs so you can refer to them accordingly.
@@ -162,7 +162,7 @@ tRPC helper wrapper
 
 `@tanstack/react-query` has a lot of functions that we haven't put in the tRPC context yet. If you need a function that isn't here, feel free to [open a feature request](https://github.com/trpc/trpc/issues/new/choose) requesting it.
 
-In the meantime, you can import and use the function directly from `@tanstack/react-query`. We also provide a [getQueryKey](trpc/docs/client/react/getQueryKey/index.md) which you can use to get the correct queryKey on the filters when using these functions.
+In the meantime, you can import and use the function directly from `@tanstack/react-query`. We also provide a [getQueryKey](../getQueryKey/index.md) which you can use to get the correct queryKey on the filters when using these functions.
 
 ## Proxy client[​](#proxy-client "Direct link to Proxy client")
 

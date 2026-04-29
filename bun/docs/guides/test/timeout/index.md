@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:25.003Z"
 content_hash: "2f1de17814d490c25e284d9c7ff04577e43d02a0b861d423c0c726ac74dd1bac"
 menu_path: ["Set a per-test timeout with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/test/testing-library/index.md", "title": "Using Testing Library with Bun"}
-nav_next: {"path": "bun/docs/guides/test/todo-tests/index.md", "title": "Mark a test as a \"todo\" with the Bun test runner"}
+nav_prev: {"path": "../testing-library/index.md", "title": "Using Testing Library with Bun"}
+nav_next: {"path": "../todo-tests/index.md", "title": "Mark a test as a \"todo\" with the Bun test runner"}
 ---
 
 [Skip to main content](#content-area)

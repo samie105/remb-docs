@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:35.562Z"
 content_hash: "1cbfadfa57ee602fe0dc7890e6f0c7bd8b24138ba0dc61ff86c588c85e542ec0"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","TanStack Start","TanStack Start"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","TanStack Start","TanStack Start"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/sveltekit/index.md", "title": "Use Supabase with SvelteKit"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/vue/index.md", "title": "Use Supabase with Vue"}
+nav_prev: {"path": "../sveltekit/index.md", "title": "Use Supabase with SvelteKit"}
+nav_next: {"path": "../vue/index.md", "title": "Use Supabase with Vue"}
 ---
 
 # 

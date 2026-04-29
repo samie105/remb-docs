@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:55.966Z"
 content_hash: "e0ead273204831b1a51272bf70f71d21aa1385f6c24b2fe337d225dca45afa1a"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Network Restrictions","Network Restrictions"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Network Restrictions","Network Restrictions"]
-nav_prev: {"path": "supabase/docs/guides/platform/multi-factor-authentication/index.md", "title": "Multi-factor Authentication"}
-nav_next: {"path": "supabase/docs/guides/platform/performance/index.md", "title": "Performance Tuning"}
+nav_prev: {"path": "../multi-factor-authentication/index.md", "title": "Multi-factor Authentication"}
+nav_next: {"path": "../performance/index.md", "title": "Performance Tuning"}
 ---
 
 # 

@@ -10,8 +10,8 @@ content_hash: "f0dbdc18b7d70f560128bb08f32514e4d077fd98104600e0607d84c3cd91101f"
 menu_path: ["WebAssembly"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/lint_plugins/index.md", "title": "Lint Plugins"}
-nav_next: {"path": "deno/runtime/reference/migration_guide/index.md", "title": "Deno 1.x to 2.x Migration Guide"}
+nav_prev: {"path": "../lint_plugins/index.md", "title": "Lint Plugins"}
+nav_next: {"path": "../migration_guide/index.md", "title": "Deno 1.x to 2.x Migration Guide"}
 ---
 
 **On this page**

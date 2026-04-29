@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:11.111Z"
 content_hash: "180aa62f16d5d87e31c96e5d19fa2a9fb0d2bfc25dcf7b5ac287a0ac3b888b13"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Overview","Overview"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/auth/native-mobile-deep-linking/index.md", "title": "Native Mobile Deep Linking"}
-nav_next: {"path": "supabase/docs/guides/auth/oauth-server/getting-started/index.md", "title": "Getting Started with OAuth 2.1 Server"}
+nav_prev: {"path": "../native-mobile-deep-linking/index.md", "title": "Native Mobile Deep Linking"}
+nav_next: {"path": "getting-started/index.md", "title": "Getting Started with OAuth 2.1 Server"}
 ---
 
 # 

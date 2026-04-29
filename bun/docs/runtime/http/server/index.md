@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:15.619Z"
 content_hash: "8b69a7fa30f7d13d0f8712ad6b852deb73a56c9c287195a6c6fe62c8e75c103a"
 menu_path: ["Server"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/http/routing/index.md", "title": "Routing"}
-nav_next: {"path": "bun/docs/runtime/http/tls/index.md", "title": "TLS"}
+nav_prev: {"path": "../routing/index.md", "title": "Routing"}
+nav_next: {"path": "../tls/index.md", "title": "TLS"}
 ---
 
 ## Basic Setup
@@ -74,7 +74,7 @@ Bun.serve({
 });
 ```
 
-HTML imports don’t just serve HTML — it’s a full-featured frontend bundler, transpiler, and toolkit built using Bun’s [bundler](bun/docs/bundler/index.md), JavaScript transpiler and CSS parser. You can use this to build full-featured frontends with React, TypeScript, Tailwind CSS, and more. For a complete guide on building full-stack applications with HTML imports, including detailed examples and best practices, see [/docs/bundler/fullstack](bun/docs/bundler/fullstack/index.md).
+HTML imports don’t just serve HTML — it’s a full-featured frontend bundler, transpiler, and toolkit built using Bun’s [bundler](../../../bundler/index.md), JavaScript transpiler and CSS parser. You can use this to build full-featured frontends with React, TypeScript, Tailwind CSS, and more. For a complete guide on building full-stack applications with HTML imports, including detailed examples and best practices, see [/docs/bundler/fullstack](../../../bundler/fullstack/index.md).
 
 * * *
 

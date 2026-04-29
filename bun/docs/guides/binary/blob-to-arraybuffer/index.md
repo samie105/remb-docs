@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:37.447Z"
 content_hash: "dcecd11e6b216935707a38132e41ed7f6a00ced317dedae0e50bc31320b367a7"
 menu_path: ["Convert a Blob to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/arraybuffer-to-typedarray/index.md", "title": "Convert an ArrayBuffer to a Uint8Array"}
-nav_next: {"path": "bun/docs/guides/binary/blob-to-dataview/index.md", "title": "Convert a Blob to a DataView"}
+nav_prev: {"path": "../arraybuffer-to-typedarray/index.md", "title": "Convert an ArrayBuffer to a Uint8Array"}
+nav_next: {"path": "../blob-to-dataview/index.md", "title": "Convert a Blob to a DataView"}
 ---
 
 [Skip to main content](#content-area)

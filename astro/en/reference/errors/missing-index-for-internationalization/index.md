@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:49.457Z"
 content_hash: "bb2e9813da5d0629f9315fa2e92d075d5c2f712a26b9e70672bf2072bc9f85d8"
 menu_path: ["Index page not found."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/missing-image-dimension/index.md", "title": "Missing image dimensions"}
-nav_next: {"path": "astro/en/reference/errors/missing-locale/index.md", "title": "The provided locale does not exist."}
+nav_prev: {"path": "../missing-image-dimension/index.md", "title": "Missing image dimensions"}
+nav_next: {"path": "../missing-locale/index.md", "title": "The provided locale does not exist."}
 ---
 
 # Index page not found.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:41.206Z"
 content_hash: "43858e2b2c46de0ee2a824eddb0d5c311d1e0e3d39298e7f4940290d04b7b62e"
 menu_path: ["Logging"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Reference/Lifecycle/index.md", "title": "Lifecycle"}
-nav_next: {"path": "fastify/docs/latest/Reference/Middleware/index.md", "title": "Middleware"}
+nav_prev: {"path": "../Lifecycle/index.md", "title": "Lifecycle"}
+nav_next: {"path": "../Middleware/index.md", "title": "Middleware"}
 ---
 
 Version: latest (v5.8.x)

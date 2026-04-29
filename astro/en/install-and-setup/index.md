@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:24.396Z"
 content_hash: "9961153b90594d0fca78f7988b1927a1582500f0a2db73761f2e0c0bdf407904"
 menu_path: ["Install Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/astro-courses/index.md", "title": "Astro Courses"}
-nav_next: {"path": "astro/en/basics/project-structure/index.md", "title": "Project structure"}
+nav_prev: {"path": "../astro-courses/index.md", "title": "Astro Courses"}
+nav_next: {"path": "../basics/project-structure/index.md", "title": "Project structure"}
 ---
 
 # Install Astro

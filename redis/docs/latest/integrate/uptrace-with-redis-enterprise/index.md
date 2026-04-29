@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:11:36.257Z"
 content_hash: "0ff37b2c04f5fbc510fc0791fb868c4089c6e79bacaf492bb1a8a8776482e96d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Uptrace with Redis Software","→","Uptrace with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Uptrace with Redis Software","→","Uptrace with Redis Software"]
-nav_prev: {"path": "redis/docs/latest/integrate/terraform-provider-for-redis-cloud/index.md", "title": "Terraform provider for Redis Cloud"}
-nav_next: {"path": "redis/docs/latest/integrate/write-behind/installation/index.md", "title": "Installation"}
+nav_prev: {"path": "../terraform-provider-for-redis-cloud/index.md", "title": "Terraform provider for Redis Cloud"}
+nav_next: {"path": "../write-behind/installation/index.md", "title": "Installation"}
 ---
 
 # Uptrace with Redis Software

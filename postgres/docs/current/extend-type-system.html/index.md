@@ -10,8 +10,8 @@ content_hash: "9a84e798297f9d36a63ebdd15b60716b3c62bb85b1ea54a88731feda443092ed"
 menu_path: ["PostgreSQL: Documentation: 18: 36.2. The PostgreSQL Type System"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/extend-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.17.\u00a0Packaging Related Objects into an Extension"}
-nav_next: {"path": "postgres/docs/current/external-admin-tools.html/index.md", "title": "PostgreSQL: Documentation: 18: H.2.\u00a0Administration Tools"}
+nav_prev: {"path": "../extend-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.17.\u00a0Packaging Related Objects into an Extension"}
+nav_next: {"path": "../external-admin-tools.html/index.md", "title": "PostgreSQL: Documentation: 18: H.2.\u00a0Administration Tools"}
 ---
 
 PostgreSQL data types can be divided into base types, container types, domains, and pseudo-types.

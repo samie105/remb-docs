@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:10.843Z"
 content_hash: "545b6b7f550a579ddb62ee48a4eaaba2520949ed4df700e850e026afdee77380"
 menu_path: ["PostgreSQL: Documentation: 18: 7.7. VALUES Lists"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/queries-union.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.4.\u00a0Combining Queries (UNION, INTERSECT, EXCEPT)"}
-nav_next: {"path": "postgres/docs/current/query-path.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.1.\u00a0The Path of a Query"}
+nav_prev: {"path": "../queries-union.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.4.\u00a0Combining Queries (UNION, INTERSECT, EXCEPT)"}
+nav_next: {"path": "../query-path.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.1.\u00a0The Path of a Query"}
 ---
 
 `VALUES` provides a way to generate a “constant table” that can be used in a query without having to actually create and populate a table on-disk. The syntax is

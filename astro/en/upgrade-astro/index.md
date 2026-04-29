@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:06.379Z"
 content_hash: "bbdd1248c651f8f693f4a7498f1a617eff2201c721ca2f52cc450978c27b364f"
 menu_path: ["Upgrade Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/sessions/index.md", "title": "Sessions"}
-nav_next: {"path": "astro/en/guides/upgrade-to/v6/index.md", "title": "Upgrade to Astro v6"}
+nav_prev: {"path": "../guides/sessions/index.md", "title": "Sessions"}
+nav_next: {"path": "../guides/upgrade-to/v6/index.md", "title": "Upgrade to Astro v6"}
 ---
 
 # Upgrade Astro

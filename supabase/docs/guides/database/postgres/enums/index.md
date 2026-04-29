@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:30.967Z"
 content_hash: "558b853f7cbd1b895855948c0b49cde5ba78282e6bc55f725a47ce03d41a5453"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing enums","Managing enums"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing enums","Managing enums"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/dropping-all-tables-in-schema/index.md", "title": "Drop all tables in a Postgres schema"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/event-triggers/index.md", "title": "Event Triggers"}
+nav_prev: {"path": "../dropping-all-tables-in-schema/index.md", "title": "Drop all tables in a Postgres schema"}
+nav_next: {"path": "../event-triggers/index.md", "title": "Event Triggers"}
 ---
 
 # 

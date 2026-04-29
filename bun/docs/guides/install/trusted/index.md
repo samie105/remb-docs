@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:17.914Z"
 content_hash: "afbb9af7f99ad2be16107ab3201f138c298bb31fd660f850f149425609abb815"
 menu_path: ["Add a trusted dependency"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/install/registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
-nav_next: {"path": "bun/docs/guides/install/workspaces/index.md", "title": "Configuring a monorepo using workspaces"}
+nav_prev: {"path": "../registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
+nav_next: {"path": "../workspaces/index.md", "title": "Configuring a monorepo using workspaces"}
 ---
 
 [Skip to main content](#content-area)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:01.010Z"
 content_hash: "39280bf48269039330a487a4516e631cc7a978fbd9f4520821cce237399503f3"
 menu_path: ["Build your first Astro island"]
 section_path: []
-nav_prev: {"path": "astro/en/tutorial/5-astro-api/4/index.md", "title": "Add an RSS feed"}
-nav_next: {"path": "astro/en/tutorial/6-islands/2/index.md", "title": "Back on dry land. Take your blog from day to night, no island required!"}
+nav_prev: {"path": "../../5-astro-api/4/index.md", "title": "Add an RSS feed"}
+nav_next: {"path": "../2/index.md", "title": "Back on dry land. Take your blog from day to night, no island required!"}
 ---
 
 # Build your first Astro island

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:08.842Z"
 content_hash: "c9ab0c01b3bb0a8f4a87e291005ecc1628a85378203a9b9043fada8d9cfd26b3"
 menu_path: ["Experimental Rust compiler"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/experimental-flags/queued-rendering/index.md", "title": "Experimental queued rendering"}
-nav_next: {"path": "astro/en/reference/legacy-flags/index.md", "title": "Legacy flags"}
+nav_prev: {"path": "../queued-rendering/index.md", "title": "Experimental queued rendering"}
+nav_next: {"path": "../../legacy-flags/index.md", "title": "Legacy flags"}
 ---
 
 # Experimental Rust compiler

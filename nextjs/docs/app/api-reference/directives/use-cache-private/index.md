@@ -11,8 +11,8 @@ menu_path: ["use cache: private"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-cache/index.md", "title": "use cache"}
-nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-cache-remote/index.md", "title": "use cache: remote"}
+nav_prev: {"path": "../use-cache/index.md", "title": "use cache"}
+nav_next: {"path": "../use-cache-remote/index.md", "title": "use cache: remote"}
 ---
 
 # use cache: private
@@ -129,7 +129,7 @@ The following request-specific APIs can be used inside `'use cache: private'` fu
 | `searchParams` | No | Yes |
 | `connection()` | No | No |
 
-> **Note:** The [`connection()`](nextjs/docs/app/api-reference/functions/connection/index.md) API is prohibited in both `use cache` and `'use cache: private'` as it provides connection-specific information that cannot be safely cached.
+> **Note:** The [`connection()`](../../functions/connection/index.md) API is prohibited in both `use cache` and `'use cache: private'` as it provides connection-specific information that cannot be safely cached.
 
 ## Version History[](#version-history)
 

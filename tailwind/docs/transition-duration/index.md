@@ -10,8 +10,8 @@ content_hash: "6f186d297e536d3f8e6980e05fd45c89fa78753a94d18e1786d1a101a2a7741f"
 menu_path: ["transition-duration"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/transition-behavior/index.md", "title": "transition-behavior"}
-nav_next: {"path": "tailwind/docs/transition-timing-function/index.md", "title": "transition-timing-function"}
+nav_prev: {"path": "../transition-behavior/index.md", "title": "transition-behavior"}
+nav_next: {"path": "../transition-timing-function/index.md", "title": "transition-timing-function"}
 ---
 
 # transition-duration

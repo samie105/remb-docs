@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:41.406Z"
 content_hash: "4cfb3324f44cb0546a62907d62ed0bc9017a64e46f0fc041b072947a4b3795bf"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Managing config and secrets","Managing config and secrets"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Managing config and secrets","Managing config and secrets"]
-nav_prev: {"path": "supabase/docs/guides/local-development/declarative-database-schemas/index.md", "title": "Declarative database schemas"}
-nav_next: {"path": "supabase/docs/guides/local-development/overview/index.md", "title": "Local development with schema migrations"}
+nav_prev: {"path": "../declarative-database-schemas/index.md", "title": "Declarative database schemas"}
+nav_next: {"path": "../overview/index.md", "title": "Local development with schema migrations"}
 ---
 
 # 

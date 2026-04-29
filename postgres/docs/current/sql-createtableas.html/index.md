@@ -10,8 +10,8 @@ content_hash: "2ce3ea29da20b205c8fedf9f5bea8d0c7dcdff6400c9b3ed380a8c04525ee884"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE TABLE AS"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
-nav_next: {"path": "postgres/docs/current/sql-createtsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH PARSER"}
+nav_prev: {"path": "../sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
+nav_next: {"path": "../sql-createtsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH PARSER"}
 ---
 
 CREATE TABLE AS — define a new table from the results of a query
@@ -63,7 +63,7 @@ The name of a column in the new table. If column names are not provided, they ar
 
 ``USING _`method`_``
 
-This optional clause specifies the table access method to use to store the contents for the new table; the method needs be an access method of type `TABLE`. See [Chapter 62](https://www.postgresql.org/docs/current/tableam.html "Chapter 62. Table Access Method Interface Definition") for more information. If this option is not specified, the default table access method is chosen for the new table. See [default\_table\_access\_method](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TABLE-ACCESS-METHOD) for more information.
+This optional clause specifies the table access method to use to store the contents for the new table; the method needs be an access method of type `TABLE`. See [Chapter 62](https://www.postgresql.org/docs/current/tableam.html "Chapter 62. Table Access Method Interface Definition") for more information. If this option is not specified, the default table access method is chosen for the new table. See [default\_table\_access\_method](../runtime-config-client.html/index.md#GUC-DEFAULT-TABLE-ACCESS-METHOD) for more information.
 
 ``WITH ( _`storage_parameter`_ [= _`value`_] [, ... ] )``
 
@@ -91,7 +91,7 @@ The temporary table will be dropped at the end of the current transaction block.
 
 ``TABLESPACE _`tablespace_name`_``
 
-The _`tablespace_name`_ is the name of the tablespace in which the new table is to be created. If not specified, [default\_tablespace](postgres/docs/current/runtime-config-client.html/index.md#GUC-DEFAULT-TABLESPACE) is consulted, or [temp\_tablespaces](postgres/docs/current/runtime-config-client.html/index.md#GUC-TEMP-TABLESPACES) if the table is temporary.
+The _`tablespace_name`_ is the name of the tablespace in which the new table is to be created. If not specified, [default\_tablespace](../runtime-config-client.html/index.md#GUC-DEFAULT-TABLESPACE) is consulted, or [temp\_tablespaces](../runtime-config-client.html/index.md#GUC-TEMP-TABLESPACES) if the table is temporary.
 
 _`query`_
 

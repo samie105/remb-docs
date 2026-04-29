@@ -10,15 +10,15 @@ content_hash: "b739a3d03c4dea7d660c4bb0604486afb7fa275d70ccf422ce33eb9b6ba5f13e"
 menu_path: ["Supported databases"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/reference/database-features/index.md", "title": "Database Features"}
-nav_next: {"path": "prisma/docs/orm/reference/system-requirements/index.md", "title": "System requirements"}
+nav_prev: {"path": "../database-features/index.md", "title": "Database Features"}
+nav_next: {"path": "../system-requirements/index.md", "title": "System requirements"}
 ---
 
 This page lists all the databases and their versions that are supported by Prisma ORM
 
 Prisma ORM currently supports the following databases.
 
-> See also: [System requirements](prisma/docs/orm/reference/system-requirements/index.md).
+> See also: [System requirements](../system-requirements/index.md).
 
 An asterisk (\*) indicates that the version number is not relevant; either all versions are supported, there is not a public version number, etc.
 

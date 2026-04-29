@@ -11,8 +11,8 @@ menu_path: ["How to use fonts"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/getting-started/images/index.md", "title": "Image Optimization"}
-nav_next: {"path": "nextjs/docs/pages/getting-started/css/index.md", "title": "How to use CSS in your application"}
+nav_prev: {"path": "../images/index.md", "title": "Image Optimization"}
+nav_next: {"path": "../css/index.md", "title": "How to use CSS in your application"}
 ---
 
 # How to use fonts

@@ -10,8 +10,8 @@ content_hash: "a3a4fef144e306cc1c5062b55518e03ebf4e7db15572546bd992743706572ef2"
 menu_path: ["Deno and Docker"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/lsp_integration/index.md", "title": "Language Server Integration"}
-nav_next: {"path": "deno/runtime/contributing/index.md", "title": "Contributing and support"}
+nav_prev: {"path": "../lsp_integration/index.md", "title": "Language Server Integration"}
+nav_next: {"path": "../../contributing/index.md", "title": "Contributing and support"}
 ---
 
 # Create working directory

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:20.659Z"
 content_hash: "0d29363314455515d29966d860850cd58c509d4f63aa806d27062d45b59a000d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise databases (REDB)","→","Redis Enterprise databases (REDB)","→\n      \n        Manage Redis Enterprise databases for Kubernetes","→","Manage Redis Enterprise databases for Kubernetes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise databases (REDB)","→","Redis Enterprise databases (REDB)","→\n      \n        Manage Redis Enterprise databases for Kubernetes","→","Manage Redis Enterprise databases for Kubernetes"]
-nav_prev: {"path": "redis/docs/latest/operate/kubernetes/networking/ingress/index.md", "title": "Configure Ingress for external routing"}
-nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-22-0-releases/7-22-0-11-june2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes"}
+nav_prev: {"path": "../../networking/ingress/index.md", "title": "Configure Ingress for external routing"}
+nav_next: {"path": "../../release-notes/7-22-0-releases/7-22-0-11-june2025/index.md", "title": "Redis Enterprise for Kubernetes 7.22.0-11 (June 2025) release notes"}
 ---
 
 # Manage Redis Enterprise databases for Kubernetes

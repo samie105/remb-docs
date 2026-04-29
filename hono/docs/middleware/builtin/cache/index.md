@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:11.242Z"
 content_hash: "b8963488be6d648636ffdcab3342fac8cf12168efa97523504984050e0af20a4"
 menu_path: ["Cache Middleware ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/middleware/builtin/body-limit/index.md", "title": "Body Limit Middleware \u200b"}
-nav_next: {"path": "hono/docs/middleware/builtin/combine/index.md", "title": "Combine Middleware \u200b"}
+nav_prev: {"path": "../body-limit/index.md", "title": "Body Limit Middleware \u200b"}
+nav_next: {"path": "../combine/index.md", "title": "Combine Middleware \u200b"}
 ---
 
 ## Cache Middleware [​](#cache-middleware)

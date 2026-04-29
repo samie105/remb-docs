@@ -11,8 +11,8 @@ menu_path: ["draftMode"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/cookies/index.md", "title": "cookies"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/fetch/index.md", "title": "fetch"}
+nav_prev: {"path": "../cookies/index.md", "title": "cookies"}
+nav_next: {"path": "../fetch/index.md", "title": "fetch"}
 ---
 
 # draftMode

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:21.814Z"
 content_hash: "fccf4d6807da1358b2a41775f564cda5a98002eb1791e266c390e52d142287b9"
 menu_path: ["Concepts"]
 section_path: []
-nav_prev: {"path": "trpc/docs/skills/index.md", "title": "Agent Skills"}
-nav_next: {"path": "trpc/docs/example-apps/index.md", "title": "Example Apps"}
+nav_prev: {"path": "../skills/index.md", "title": "Agent Skills"}
+nav_next: {"path": "../example-apps/index.md", "title": "Example Apps"}
 ---
 
 ## What is RPC? What mindset should I adopt?[​](#what-is-rpc-what-mindset-should-i-adopt "Direct link to What is RPC? What mindset should I adopt?")
@@ -45,7 +45,7 @@ Term
 
 Description
 
-[**Procedure ↗**](trpc/docs/server/procedures/index.md)
+[**Procedure ↗**](../server/procedures/index.md)
 
 API endpoint - can be a **query**, **mutation**, or **subscription**.
 
@@ -61,18 +61,18 @@ A **procedure** that creates, updates, or deletes some data.
 
 A **procedure** that creates a persistent connection and listens to changes.
 
-[**Router ↗**](trpc/docs/server/routers/index.md)
+[**Router ↗**](../server/routers/index.md)
 
 A collection of **procedures** (and/or other routers) under a shared namespace.
 
-[**Context ↗**](trpc/docs/server/context/index.md)
+[**Context ↗**](../server/context/index.md)
 
 Stuff that every **procedure** can access. Commonly used for things like session state and database connections.
 
-[**Middleware ↗**](trpc/docs/server/middlewares/index.md)
+[**Middleware ↗**](../server/middlewares/index.md)
 
 A function that can run code before and after a **procedure**. Can modify **context**.
 
-[**Validation ↗**](trpc/docs/server/procedures/index.md#input-validation)
+[**Validation ↗**](../server/procedures/index.md#input-validation)
 
 "Does this input data contain the right stuff?"

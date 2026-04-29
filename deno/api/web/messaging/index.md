@@ -10,8 +10,8 @@ content_hash: "dfa356aa685916120d8376e97a72579e64a6eb930e948b912ca069ac94ba9d99"
 menu_path: ["Messaging - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/web/io/index.md", "title": "I/O - Web documentation"}
-nav_next: {"path": "deno/api/web/performance/index.md", "title": "Performance - Web documentation"}
+nav_prev: {"path": "../io/index.md", "title": "I/O - Web documentation"}
+nav_next: {"path": "../performance/index.md", "title": "Performance - Web documentation"}
 ---
 
 I

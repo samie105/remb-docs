@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:49.415Z"
 content_hash: "a5f757342383ee9b5a7d1a19ec2438ef4f8a91dd27fca93e0babf92de2f0362e"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Flutter","Flutter"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Flutter","Flutter"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-expo-react-native/index.md", "title": "Build a User Management App with Expo React Native"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-angular/index.md", "title": "Build a User Management App with Ionic Angular"}
+nav_prev: {"path": "../with-expo-react-native/index.md", "title": "Build a User Management App with Expo React Native"}
+nav_next: {"path": "../with-ionic-angular/index.md", "title": "Build a User Management App with Ionic Angular"}
 ---
 
 # 

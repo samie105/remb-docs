@@ -9,11 +9,11 @@ last_crawled_at: "2026-04-18T16:47:46.346Z"
 content_hash: "533384d97ce2485178ece885f55dbc27af937c74147eb4de2500b4016e5de6ff"
 menu_path: ["Extract social share images and Open Graph tags"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/html-rewriter/extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
-nav_next: {"path": "bun/docs/guides/http/cluster/index.md", "title": "Start a cluster of HTTP servers"}
+nav_prev: {"path": "../extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
+nav_next: {"path": "../../http/cluster/index.md", "title": "Start a cluster of HTTP servers"}
 ---
 
-Bun’s [HTMLRewriter](bun/docs/runtime/html-rewriter/index.md) API can be used to efficiently extract social share images and Open Graph metadata from HTML content. This is particularly useful for building link preview features, social media cards, or web scrapers. We can use HTMLRewriter to match CSS selectors to HTML elements, text, and attributes we want to process.
+Bun’s [HTMLRewriter](../../../runtime/html-rewriter/index.md) API can be used to efficiently extract social share images and Open Graph metadata from HTML content. This is particularly useful for building link preview features, social media cards, or web scrapers. We can use HTMLRewriter to match CSS selectors to HTML elements, text, and attributes we want to process.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)extract-social-meta.ts
 

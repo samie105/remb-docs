@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:11.268Z"
 content_hash: "c028b660ed66c96a72bd0fbcf2ce201e190b9aac9f0ad80b8d752575e267c971"
 menu_path: ["Migrating from NuxtJS"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-nextjs/index.md", "title": "Migrating from Next.js"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/from-pelican/index.md", "title": "Migrating from Pelican"}
+nav_prev: {"path": "../from-nextjs/index.md", "title": "Migrating from Next.js"}
+nav_next: {"path": "../from-pelican/index.md", "title": "Migrating from Pelican"}
 ---
 
 # Migrating from NuxtJS

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:30.210Z"
 content_hash: "8ceb15a8eee1a650e40b009cad0e1dadd655a1a60d13bfcbef4d93616723f52e"
 menu_path: ["Database","Database","Examples","Examples","Drop All Tables in Schema","Drop All Tables in Schema"]
 section_path: ["Database","Database","Examples","Examples","Drop All Tables in Schema","Drop All Tables in Schema"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/data-deletion/index.md", "title": "Deleting data and dropping objects safely"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/enums/index.md", "title": "Managing Enums in Postgres"}
+nav_prev: {"path": "../data-deletion/index.md", "title": "Deleting data and dropping objects safely"}
+nav_next: {"path": "../enums/index.md", "title": "Managing Enums in Postgres"}
 ---
 
 # 

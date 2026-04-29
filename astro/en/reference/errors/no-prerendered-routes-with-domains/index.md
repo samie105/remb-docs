@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:12.302Z"
 content_hash: "2850bf754e9020fd08e7289518d2d3eb593bf41a2185ac786b25d9b58dbcd0a7"
 menu_path: ["Prerendered routes aren't supported when internationalization domains are enabled."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/no-matching-static-path-found/index.md", "title": "No static path found for requested path."}
-nav_next: {"path": "astro/en/reference/errors/only-response-can-be-returned/index.md", "title": "Invalid type returned by Astro page."}
+nav_prev: {"path": "../no-matching-static-path-found/index.md", "title": "No static path found for requested path."}
+nav_next: {"path": "../only-response-can-be-returned/index.md", "title": "Invalid type returned by Astro page."}
 ---
 
 # Prerendered routes aren't supported when internationalization domains are enabled.

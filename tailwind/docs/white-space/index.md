@@ -10,8 +10,8 @@ content_hash: "dbe4f8af84ea4d0bfb4e03af30065463890752736404d458bb240ca958895498"
 menu_path: ["white-space"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/vertical-align/index.md", "title": "vertical-align"}
-nav_next: {"path": "tailwind/docs/word-break/index.md", "title": "word-break"}
+nav_prev: {"path": "../vertical-align/index.md", "title": "vertical-align"}
+nav_next: {"path": "../word-break/index.md", "title": "word-break"}
 ---
 
 Utilities for controlling an element's white-space property.
@@ -86,4 +86,4 @@ Prefix a `white-space` utility with a breakpoint variant like `md:` to only appl
 <p class="whitespace-pre md:whitespace-normal ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

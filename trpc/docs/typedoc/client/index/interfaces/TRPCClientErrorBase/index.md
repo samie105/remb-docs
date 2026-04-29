@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:57.579Z"
 content_hash: "4ec6a958b491ae97ba99a0a59810aae8dd8c8701447a2fda69b7d177b9f28bdf"
 menu_path: ["Interface: TRPCClientErrorBase<TShape>"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/index/interfaces/Encoder/index.md", "title": "Interface: Encoder"}
-nav_next: {"path": "trpc/docs/typedoc/client/index/interfaces/TRPCClientRuntime/index.md", "title": "Interface: TRPCClientRuntime"}
+nav_prev: {"path": "../Encoder/index.md", "title": "Interface: Encoder"}
+nav_next: {"path": "../TRPCClientRuntime/index.md", "title": "Interface: TRPCClientRuntime"}
 ---
 
 Version: 11.x

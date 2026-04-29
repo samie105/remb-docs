@@ -10,8 +10,8 @@ content_hash: "6422cf04fdb11dfd2f03020c4012cca46df8e9b152e96a1d01af7eb2aa0720b1"
 menu_path: ["PostgreSQL: Documentation: 18: B.3. Date/Time Key Words"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/datetime-julian-dates.html/index.md", "title": "PostgreSQL: Documentation: 18: B.7.\u00a0Julian Dates"}
-nav_next: {"path": "postgres/docs/current/datetime-posix-timezone-specs.html/index.md", "title": "PostgreSQL: Documentation: 18: B.5.\u00a0POSIX Time Zone Specifications"}
+nav_prev: {"path": "../datetime-julian-dates.html/index.md", "title": "PostgreSQL: Documentation: 18: B.7.\u00a0Julian Dates"}
+nav_next: {"path": "../datetime-posix-timezone-specs.html/index.md", "title": "PostgreSQL: Documentation: 18: B.5.\u00a0POSIX Time Zone Specifications"}
 ---
 
 [Table B.1](https://www.postgresql.org/docs/current/datetime-keywords.html#DATETIME-MONTH-TABLE "Table B.1. Month Names") shows the tokens that are recognized as names of months.

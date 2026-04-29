@@ -11,8 +11,8 @@ menu_path: ["Font Module"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/components/index.md", "title": "Components"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/components/form/index.md", "title": "Form"}
+nav_prev: {"path": "../index.md", "title": "Components"}
+nav_next: {"path": "../form/index.md", "title": "Form"}
 ---
 
 # Font Module

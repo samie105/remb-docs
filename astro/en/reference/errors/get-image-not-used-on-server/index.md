@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:47.547Z"
 content_hash: "2f6da97a9556d90a478acde39ba9124d223dac0e13e2efacff3361d67399d9f1"
 menu_path: ["getImage() must be used on the server."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/get-entry-deprecation-error/index.md", "title": "Invalid use of getDataEntryById or getEntryBySlug function."}
-nav_next: {"path": "astro/en/reference/errors/get-static-paths-expected-params/index.md", "title": "Missing params property on getStaticPaths route."}
+nav_prev: {"path": "../get-entry-deprecation-error/index.md", "title": "Invalid use of getDataEntryById or getEntryBySlug function."}
+nav_next: {"path": "../get-static-paths-expected-params/index.md", "title": "Missing params property on getStaticPaths route."}
 ---
 
 # getImage() must be used on the server.

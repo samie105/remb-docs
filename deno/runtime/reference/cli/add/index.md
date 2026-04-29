@@ -10,8 +10,8 @@ content_hash: "a8c85369d0a1bc20d9d99ad1f9ab58e238cd539e8b2c7b0c9170608a2e057362"
 menu_path: ["deno add"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/fundamentals/stability_and_releases/index.md", "title": "Stability and releases"}
-nav_next: {"path": "deno/runtime/reference/cli/approve_scripts/index.md", "title": "deno approve-scripts"}
+nav_prev: {"path": "../../../fundamentals/stability_and_releases/index.md", "title": "Stability and releases"}
+nav_next: {"path": "../approve_scripts/index.md", "title": "deno approve-scripts"}
 ---
 
 **On this page**

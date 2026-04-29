@@ -10,8 +10,8 @@ content_hash: "97a6249927cf873845d27b0826f426957ffc809a15bb2f7758f8781c363b07f0"
 menu_path: ["PostgreSQL: Documentation: 18: CLOSE"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/sql-checkpoint.html/index.md", "title": "PostgreSQL: Documentation: 18: CHECKPOINT"}
-nav_next: {"path": "postgres/docs/current/sql-cluster.html/index.md", "title": "PostgreSQL: Documentation: 18: CLUSTER"}
+nav_prev: {"path": "../sql-checkpoint.html/index.md", "title": "PostgreSQL: Documentation: 18: CHECKPOINT"}
+nav_next: {"path": "../sql-cluster.html/index.md", "title": "PostgreSQL: Documentation: 18: CLUSTER"}
 ---
 
 ## Synopsis

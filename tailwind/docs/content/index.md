@@ -10,8 +10,8 @@ content_hash: "345605381e8fb61ef3f357e7fa2526ec8189765ef69510b2b77d3d0113d5f759"
 menu_path: ["content"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/hyphens/index.md", "title": "hyphens"}
-nav_next: {"path": "tailwind/docs/background-attachment/index.md", "title": "background-attachment"}
+nav_prev: {"path": "../hyphens/index.md", "title": "hyphens"}
+nav_next: {"path": "../background-attachment/index.md", "title": "background-attachment"}
 ---
 
 # content

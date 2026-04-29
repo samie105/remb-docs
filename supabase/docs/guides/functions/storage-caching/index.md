@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:39.380Z"
 content_hash: "673331fc6aac3b1da4fdd53babcb3d191f57c3f0e1a97741ff9db298982bb16c"
 menu_path: ["Edge Functions","Edge Functions","Integrations","Integrations","Supabase Storage","Supabase Storage"]
 section_path: ["Edge Functions","Edge Functions","Integrations","Integrations","Supabase Storage","Supabase Storage"]
-nav_prev: {"path": "supabase/docs/guides/functions/status-codes/index.md", "title": "Status codes"}
-nav_next: {"path": "supabase/docs/guides/functions/unit-test/index.md", "title": "Testing your Edge Functions"}
+nav_prev: {"path": "../status-codes/index.md", "title": "Status codes"}
+nav_next: {"path": "../unit-test/index.md", "title": "Testing your Edge Functions"}
 ---
 
 # 

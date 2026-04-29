@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:16.233Z"
 content_hash: "c08d0f56cab09b96819e47058a22d176fe9f7ab1a6c3c21cd5cd67bae2776051"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Text Deduplication","Text Deduplication"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Text Deduplication","Text Deduplication"]
-nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/hello-world/index.md", "title": "Creating and managing collections"}
-nav_next: {"path": "supabase/docs/guides/ai/rag-with-permissions/index.md", "title": "RAG with Permissions"}
+nav_prev: {"path": "../hello-world/index.md", "title": "Creating and managing collections"}
+nav_next: {"path": "../../rag-with-permissions/index.md", "title": "RAG with Permissions"}
 ---
 
 # 

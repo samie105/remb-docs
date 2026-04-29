@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:10.810Z"
 content_hash: "0dc594528a12f010be551cd0bb10c03c69dc12fe065ef0125c1424e8209d36d6"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active Users","Monthly Active Users"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active Users","Monthly Active Users"]
-nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/log-drains/index.md", "title": "Manage Log Drain usage"}
-nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users-sso/index.md", "title": "Manage Monthly Active SSO Users usage"}
+nav_prev: {"path": "../log-drains/index.md", "title": "Manage Log Drain usage"}
+nav_next: {"path": "../monthly-active-users-sso/index.md", "title": "Manage Monthly Active SSO Users usage"}
 ---
 
 # 

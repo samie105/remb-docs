@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:16.692Z"
 content_hash: "64a548c43db8e779d1203df8897fdb6903a7ed1b561d821dfee82f63af1d435a"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Generating AI images","Generating AI images"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Generating AI images","Generating AI images"]
-nav_prev: {"path": "supabase/docs/guides/functions/error-handling/index.md", "title": "Error Handling"}
-nav_next: {"path": "supabase/docs/guides/functions/examples/cloudflare-turnstile/index.md", "title": "CAPTCHA support with Cloudflare Turnstile"}
+nav_prev: {"path": "../../error-handling/index.md", "title": "Error Handling"}
+nav_next: {"path": "../cloudflare-turnstile/index.md", "title": "CAPTCHA support with Cloudflare Turnstile"}
 ---
 
 # 

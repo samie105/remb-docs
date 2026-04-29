@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:50.163Z"
 content_hash: "fc00c19bb3456dd5473445908821cf7b7769e1d5b38f6ee824a853ecdaceb68c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis on Windows","→","Install Redis on Windows"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis on Windows","→","Install Redis on Windows"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-on-mac-os/index.md", "title": "Install Redis on macOS"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/index.md", "title": "Install Redis Stack"}
+nav_prev: {"path": "../install-redis-on-mac-os/index.md", "title": "Install Redis on macOS"}
+nav_next: {"path": "../../install-stack/index.md", "title": "Install Redis Stack"}
 ---
 
 # Install Redis on Windows

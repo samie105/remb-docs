@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:01.669Z"
 content_hash: "eabd386bfb2ef3817a3f76d48bf682f0c341cfdd800ee8bf254d884ab78f1927"
 menu_path: ["Usage with Fastify"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v9/express/index.md", "title": "Usage with Express.js"}
-nav_next: {"path": "trpc/docs/v9/further-reading/index.md", "title": "Further Reading"}
+nav_prev: {"path": "../express/index.md", "title": "Usage with Express.js"}
+nav_next: {"path": "../further-reading/index.md", "title": "Further Reading"}
 ---
 
 ## Example app[​](#example-app "Direct link to Example app")
@@ -39,17 +39,17 @@ bash
 
 ### Create the router[​](#create-the-router "Direct link to Create the router")
 
-First of all you need a [router](trpc/docs/v9/router/index.md) to handle your queries, mutations and subscriptions.
+First of all you need a [router](../router/index.md) to handle your queries, mutations and subscriptions.
 
 A sample router is given below, save it in a file named `router.ts`.
 
 router.ts
 
-If your router file starts getting too big, split your router into several subrouters each implemented in its own file. Then [merge them](trpc/docs/v9/merging-routers/index.md) into a single root `appRouter`.
+If your router file starts getting too big, split your router into several subrouters each implemented in its own file. Then [merge them](../merging-routers/index.md) into a single root `appRouter`.
 
 ### Create the context[​](#create-the-context "Direct link to Create the context")
 
-Then you need a [context](trpc/docs/v9/context/index.md) that will be created for each request.
+Then you need a [context](../context/index.md) that will be created for each request.
 
 A sample context is given below, save it in a file named `context.ts`:
 
@@ -121,7 +121,7 @@ with `req.body` of type `User`
 
 ## How to enable subscriptions (WebSocket)[​](#how-to-enable-subscriptions-websocket "Direct link to How to enable subscriptions (WebSocket)")
 
-The Fastify adapter supports [subscriptions](trpc/docs/v9/subscriptions/index.md) via the [@fastify/websocket](https://www.npmjs.com/package/@fastify/websocket) plugin. All you have to do in addition to the above steps is install the dependency, add some subscriptions to your router and activate the `useWSS` [option](#fastify-plugin-options) in the plugin. The minimum Fastify version required for `@fastify/websocket` is `3.11.0`.
+The Fastify adapter supports [subscriptions](../subscriptions/index.md) via the [@fastify/websocket](https://www.npmjs.com/package/@fastify/websocket) plugin. All you have to do in addition to the above steps is install the dependency, add some subscriptions to your router and activate the `useWSS` [option](#fastify-plugin-options) in the plugin. The minimum Fastify version required for `@fastify/websocket` is `3.11.0`.
 
 ### Install dependencies[​](#install-dependencies-1 "Direct link to Install dependencies")
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:20.975Z"
 content_hash: "6413ef71ca15d2b908ae8f48db2332facb9c83956e5b5f70a82e0bf377dd51e8"
 menu_path: ["Authentication"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/ecommerce/index.md", "title": "E-commerce"}
-nav_next: {"path": "astro/en/guides/testing/index.md", "title": "Testing"}
+nav_prev: {"path": "../ecommerce/index.md", "title": "E-commerce"}
+nav_next: {"path": "../testing/index.md", "title": "Testing"}
 ---
 
 # Authentication

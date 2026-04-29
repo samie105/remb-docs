@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:41.964Z"
 content_hash: "257a028e2dc983d26a1f6770d3295bc1b4c501e2832b2df9b4b6dbf5ac7a3321"
 menu_path: ["PostgreSQL: Documentation: 18: ALTER DOMAIN"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-alterdefaultprivileges.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DEFAULT PRIVILEGES"}
-nav_next: {"path": "postgres/docs/current/sql-alterforeigntable.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER FOREIGN TABLE"}
+nav_prev: {"path": "../sql-alterdefaultprivileges.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER DEFAULT PRIVILEGES"}
+nav_next: {"path": "../sql-alterforeigntable.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER FOREIGN TABLE"}
 ---
 
 ALTER DOMAIN — change the definition of a domain

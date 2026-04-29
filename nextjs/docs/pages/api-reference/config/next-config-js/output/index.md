@@ -11,8 +11,8 @@ menu_path: ["output"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/optimizePackageImports/index.md", "title": "optimizePackageImports"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/pageExtensions/index.md", "title": "pageExtensions"}
+nav_prev: {"path": "../optimizePackageImports/index.md", "title": "optimizePackageImports"}
+nav_next: {"path": "../pageExtensions/index.md", "title": "pageExtensions"}
 ---
 
 # output

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:57.382Z"
 content_hash: "728d09b0fed22f469c2f55844ceabe9aabbba2cd821a71b8990a2d702791303c"
 menu_path: ["Convert a ReadableStream to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/streams/to-array/index.md", "title": "Convert a ReadableStream to an array of chunks"}
-nav_next: {"path": "bun/docs/guides/streams/to-blob/index.md", "title": "Error loading page"}
+nav_prev: {"path": "../to-array/index.md", "title": "Convert a ReadableStream to an array of chunks"}
+nav_next: {"path": "../to-blob/index.md", "title": "Error loading page"}
 ---
 
 [Skip to main content](#content-area)

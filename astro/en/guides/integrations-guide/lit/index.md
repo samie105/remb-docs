@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:50.947Z"
 content_hash: "b90a208f803f6db1ca1fd450b58c005ae4893556454f2a61be2f5c0a2946f5a8"
 menu_path: ["Lit"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/deno/index.md", "title": "@deno/astro-adapter"}
-nav_next: {"path": "astro/en/guides/integrations-guide/prefetch/index.md", "title": "@astrojs/prefetch"}
+nav_prev: {"path": "../deno/index.md", "title": "@deno/astro-adapter"}
+nav_next: {"path": "../prefetch/index.md", "title": "@astrojs/prefetch"}
 ---
 
 # Lit

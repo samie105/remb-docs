@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:10.428Z"
 content_hash: "220d11d55e2a56441470de09fd00e3cd2e4ed88c59a381f2706996cfe2c85d4e"
 menu_path: ["@astrojs/\n\t\t\t\t\tnode"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/integrations-guide/cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
-nav_next: {"path": "astro/en/guides/integrations-guide/vercel/index.md", "title": "@astrojs/\n\t\t\t\t\tvercel"}
+nav_prev: {"path": "../cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
+nav_next: {"path": "../vercel/index.md", "title": "@astrojs/\n\t\t\t\t\tvercel"}
 ---
 
 # @astrojs/ node

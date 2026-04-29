@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:47.026Z"
 content_hash: "53c83b299a4badbcb7506b98968652893a97985fefb373f247cd9f1cc6124f8a"
 menu_path: ["Unknown compiler error."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/unknown-clierror/index.md", "title": "Unknown CLI Error."}
-nav_next: {"path": "astro/en/reference/errors/unknown-config-error/index.md", "title": "Unknown configuration error."}
+nav_prev: {"path": "../unknown-clierror/index.md", "title": "Unknown CLI Error."}
+nav_next: {"path": "../unknown-config-error/index.md", "title": "Unknown configuration error."}
 ---
 
 # Unknown compiler error.

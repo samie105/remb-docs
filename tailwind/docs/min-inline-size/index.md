@@ -10,8 +10,8 @@ content_hash: "db289090b0d9f0b9ebb8191b58ed8b6477ed65861783e3c322c653a4dfa7e54b"
 menu_path: ["min-inline-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/inline-size/index.md", "title": "inline-size"}
-nav_next: {"path": "tailwind/docs/max-inline-size/index.md", "title": "max-inline-size"}
+nav_prev: {"path": "../inline-size/index.md", "title": "inline-size"}
+nav_next: {"path": "../max-inline-size/index.md", "title": "max-inline-size"}
 ---
 
 Sizing
@@ -96,7 +96,7 @@ Prefix a `min-inline-size` utility with a breakpoint variant like `md:` to only 
 <div class="inline-24 min-inline-full md:min-inline-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ## [Customizing your theme](#customizing-your-theme)
 
@@ -106,4 +106,4 @@ The `min-inline-<number>` utilities are driven by the `--spacing` theme variable
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme variable documentation](tailwind/docs/theme/index.md).
+Learn more about customizing the spacing scale in the [theme variable documentation](../theme/index.md).

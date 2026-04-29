@@ -10,8 +10,8 @@ content_hash: "ffe7f9ba3d91274941c796e50e99ef22c80580c6b2bc5bec0a2e88293a61635f"
 menu_path: ["Deploy to Netlify"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
+nav_prev: {"path": "../deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
+nav_next: {"path": "../deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
 ---
 
 # Connect to DB
@@ -62,4 +62,4 @@ When you use a Function-as-a-Service provider, like Netlify, it is beneficial to
 
 You can use [Prisma Postgres](https://www.prisma.io/docs/postgres), which has built-in connection pooling, to reduce your Prisma Client bundle size, and to avoid cold starts.
 
-For more information on connection management for serverless environments, refer to our [connection management guide](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#serverless-environments-faas).
+For more information on connection management for serverless environments, refer to our [connection management guide](../../../setup-and-configuration/databases-connections/index.md#serverless-environments-faas).

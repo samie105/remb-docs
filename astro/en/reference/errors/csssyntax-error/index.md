@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:17.582Z"
 content_hash: "36cd556af04433d52c611036aa8c37789a7cc653273287afbf908f0b59811b86"
 menu_path: ["CSS Syntax Error."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/csp-not-enabled/index.md", "title": "CSP feature isn't enabled"}
-nav_next: {"path": "astro/en/reference/errors/data-collection-entry-parse-error/index.md", "title": "Data collection entry failed to parse."}
+nav_prev: {"path": "../csp-not-enabled/index.md", "title": "CSP feature isn't enabled"}
+nav_next: {"path": "../data-collection-entry-parse-error/index.md", "title": "Data collection entry failed to parse."}
 ---
 
 # CSS Syntax Error.

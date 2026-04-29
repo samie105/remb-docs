@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:47.841Z"
 content_hash: "4f989c2521f2b947fed87c57e38e2980192ff543ee51b47f2024a83c68375054"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis for AI","→","Redis for AI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis for AI","→","Redis for AI"]
-nav_prev: {"path": "redis/docs/latest/integrate/railway-redis/index.md", "title": "Redis on Railway"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/index.md", "title": "Redis Data Integration"}
+nav_prev: {"path": "../railway-redis/index.md", "title": "Redis on Railway"}
+nav_next: {"path": "../redis-data-integration/index.md", "title": "Redis Data Integration"}
 ---
 
 # Redis for AI

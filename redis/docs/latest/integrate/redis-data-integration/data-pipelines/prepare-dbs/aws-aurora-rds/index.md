@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:55.459Z"
 content_hash: "d077771060aea3a8be685de9aa567955769e74334f057cd0b96355f167988a4e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare AWS RDS and Aurora databases for RDI","→","Prepare AWS RDS and Aurora databases for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare AWS RDS and Aurora databases for RDI","→","Prepare AWS RDS and Aurora databases for RDI"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/index.md", "title": "Prepare source databases"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-mysql/index.md", "title": "Prepare AWS Aurora MySQL/AWS RDS MySQL for RDI"}
+nav_prev: {"path": "../index.md", "title": "Prepare source databases"}
+nav_next: {"path": "aws-aur-mysql/index.md", "title": "Prepare AWS Aurora MySQL/AWS RDS MySQL for RDI"}
 ---
 
 # Prepare AWS RDS and Aurora databases for RDI

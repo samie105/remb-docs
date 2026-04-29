@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:46.009Z"
 content_hash: "2381c909a2cbcf612098ff198052e71d84636b34467c86cd8d4c121bc1ca8c6c"
 menu_path: ["Internationalization API Reference"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/modules/astro-env/index.md", "title": "Environment Variables API Reference"}
-nav_next: {"path": "astro/en/reference/modules/astro-middleware/index.md", "title": "Middleware API Reference"}
+nav_prev: {"path": "../astro-env/index.md", "title": "Environment Variables API Reference"}
+nav_next: {"path": "../astro-middleware/index.md", "title": "Middleware API Reference"}
 ---
 
 # Internationalization API Reference

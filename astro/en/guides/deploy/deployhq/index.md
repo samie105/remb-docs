@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:51.635Z"
 content_hash: "9d8b0bff61f965805811cadd5208baa8fdad3f4d9c4aa65acc90d5607f06ba40"
 menu_path: ["Deploy your Astro Site with DeployHQ"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/deno/index.md", "title": "Deploy your Astro Site with Deno"}
-nav_next: {"path": "astro/en/guides/deploy/edgeone-pages/index.md", "title": "Deploy your Astro Site to EdgeOne Pages"}
+nav_prev: {"path": "../deno/index.md", "title": "Deploy your Astro Site with Deno"}
+nav_next: {"path": "../edgeone-pages/index.md", "title": "Deploy your Astro Site to EdgeOne Pages"}
 ---
 
 # Deploy your Astro Site with DeployHQ

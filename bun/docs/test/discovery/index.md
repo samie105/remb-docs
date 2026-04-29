@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:20.543Z"
 content_hash: "e47a67f768fa88f6eb3611c72fdd510c7039a3a346aeb3de47a872cbc47fe248"
 menu_path: ["Finding tests"]
 section_path: []
-nav_prev: {"path": "bun/docs/test/dates-times/index.md", "title": "Dates and times"}
-nav_next: {"path": "bun/docs/test/dom/index.md", "title": "DOM testing"}
+nav_prev: {"path": "../dates-times/index.md", "title": "Dates and times"}
+nav_next: {"path": "../dom/index.md", "title": "DOM testing"}
 ---
 
 # run all tests with "addition" in the name

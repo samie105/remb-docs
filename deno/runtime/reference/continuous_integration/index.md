@@ -10,8 +10,8 @@ content_hash: "495da559325840ebfaa1120ff2e16cfe32c31c31c5ee783dbecc362bbe5e0329"
 menu_path: ["Continuous integration"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/ts_config_migration/index.md", "title": "Configuring TypeScript"}
-nav_next: {"path": "deno/runtime/reference/env_variables/index.md", "title": "Environment variables"}
+nav_prev: {"path": "../ts_config_migration/index.md", "title": "Configuring TypeScript"}
+nav_next: {"path": "../env_variables/index.md", "title": "Environment variables"}
 ---
 
 # Check if the code is formatted according to Deno's default

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:50.054Z"
 content_hash: "765caa81afef669ae6a8521fb2fe011370dc2577c4adaafadbcfa6b3269758ef"
 menu_path: ["Database","Database","GUI quickstarts","GUI quickstarts","pgAdmin","pgAdmin"]
 section_path: ["Database","Database","GUI quickstarts","GUI quickstarts","pgAdmin","pgAdmin"]
-nav_prev: {"path": "supabase/docs/guides/database/partitions/index.md", "title": "Partitioning tables"}
-nav_next: {"path": "supabase/docs/guides/database/postgres-js/index.md", "title": "Postgres.js"}
+nav_prev: {"path": "../partitions/index.md", "title": "Partitioning tables"}
+nav_next: {"path": "../postgres-js/index.md", "title": "Postgres.js"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:30.775Z"
 content_hash: "d8f5fab7241f5d71d489499851a4e68e17a008690c01b8c74377dbcc1f781be9"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Upgrade to Postgres 17","Upgrade to Postgres 17"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Upgrade to Postgres 17","Upgrade to Postgres 17"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/enable-mcp/index.md", "title": "Enabling MCP Server Access"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/restore-from-platform/index.md", "title": "Restore a Platform Project to Self-Hosted"}
+nav_prev: {"path": "../enable-mcp/index.md", "title": "Enabling MCP Server Access"}
+nav_next: {"path": "../restore-from-platform/index.md", "title": "Restore a Platform Project to Self-Hosted"}
 ---
 
 # 

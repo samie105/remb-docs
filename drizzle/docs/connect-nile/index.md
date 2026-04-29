@@ -10,8 +10,8 @@ content_hash: "6ab1b4e9211d1d925767814745a09cf0b71de168d1fdb4b8fe2c68062c0e358c"
 menu_path: ["Drizzle <> Nile"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/connect-pglite/index.md", "title": "Drizzle <> PGlite"}
-nav_next: {"path": "drizzle/docs/connect-bun-sql/index.md", "title": "Drizzle <> Bun SQL"}
+nav_prev: {"path": "../connect-pglite/index.md", "title": "Drizzle <> PGlite"}
+nav_next: {"path": "../connect-bun-sql/index.md", "title": "Drizzle <> Bun SQL"}
 ---
 
 According to the **[official website](https://thenile.dev/)**, Nile is PostgreSQL re-engineered for multi-tenant apps.

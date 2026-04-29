@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:09.750Z"
 content_hash: "f02d240be7c6c4c8734394d53342150d2554a140864f9e88dd18c7fa638e9988"
 menu_path: ["Extracting State Logic into a Reducer"]
 section_path: []
-nav_prev: {"path": "react/learn/preserving-and-resetting-state/index.md", "title": "Preserving and Resetting State"}
-nav_next: {"path": "react/learn/passing-data-deeply-with-context/index.md", "title": "Passing Data Deeply with Context"}
+nav_prev: {"path": "../preserving-and-resetting-state/index.md", "title": "Preserving and Resetting State"}
+nav_next: {"path": "../passing-data-deeply-with-context/index.md", "title": "Passing Data Deeply with Context"}
 ---
 
 Components with many state updates spread across many event handlers can get overwhelming. For these cases, you can consolidate all the state update logic outside your component in a single function, called a _reducer._
@@ -180,12 +180,12 @@ We recommend using a reducer if you often encounter bugs due to incorrect state 
 
 Keep these two tips in mind when writing reducers:
 
-*   **Reducers must be pure.** Similar to [state updater functions](react/learn/queueing-a-series-of-state-updates/index.md), reducers run during rendering! (Actions are queued until the next render.) This means that reducers [must be pure](react/learn/keeping-components-pure/index.md)—same inputs always result in the same output. They should not send requests, schedule timeouts, or perform any side effects (operations that impact things outside the component). They should update [objects](react/learn/updating-objects-in-state/index.md) and [arrays](react/learn/updating-arrays-in-state/index.md) without mutations.
+*   **Reducers must be pure.** Similar to [state updater functions](../queueing-a-series-of-state-updates/index.md), reducers run during rendering! (Actions are queued until the next render.) This means that reducers [must be pure](../keeping-components-pure/index.md)—same inputs always result in the same output. They should not send requests, schedule timeouts, or perform any side effects (operations that impact things outside the component). They should update [objects](../updating-objects-in-state/index.md) and [arrays](../updating-arrays-in-state/index.md) without mutations.
 *   **Each action describes a single user interaction, even if that leads to multiple changes in the data.** For example, if a user presses “Reset” on a form with five fields managed by a reducer, it makes more sense to dispatch one `reset_form` action rather than five separate `set_field` actions. If you log every action in a reducer, that log should be clear enough for you to reconstruct what interactions or responses happened in what order. This helps with debugging!
 
 ## Writing concise reducers with Immer[](#writing-concise-reducers-with-immer "Link for Writing concise reducers with Immer ")
 
-Just like with [updating objects](react/learn/updating-objects-in-state/index.md#write-concise-update-logic-with-immer) and [arrays](react/learn/updating-arrays-in-state/index.md#write-concise-update-logic-with-immer) in regular state, you can use the Immer library to make reducers more concise. Here, [`useImmerReducer`](https://github.com/immerjs/use-immer#useimmerreducer) lets you mutate the state with `push` or `arr[i] =` assignment:
+Just like with [updating objects](../updating-objects-in-state/index.md#write-concise-update-logic-with-immer) and [arrays](../updating-arrays-in-state/index.md#write-concise-update-logic-with-immer) in regular state, you can use the Immer library to make reducers more concise. Here, [`useImmerReducer`](https://github.com/immerjs/use-immer#useimmerreducer) lets you mutate the state with `push` or `arr[i] =` assignment:
 
 Reducers must be pure, so they shouldn’t mutate state. But Immer provides you with a special `draft` object which is safe to mutate. Under the hood, Immer will create a copy of your state with the changes you made to the `draft`. This is why reducers managed by `useImmerReducer` can mutate their first argument and don’t need to return state.
 

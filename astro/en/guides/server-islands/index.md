@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:24.211Z"
 content_hash: "e795b6965c4c6a042f1eac7e4903d482ac147752fcffb4aaae6df4b90d79b309"
 menu_path: ["Server islands"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/on-demand-rendering/index.md", "title": "On-demand rendering"}
-nav_next: {"path": "astro/en/guides/actions/index.md", "title": "Actions"}
+nav_prev: {"path": "../on-demand-rendering/index.md", "title": "On-demand rendering"}
+nav_next: {"path": "../actions/index.md", "title": "Actions"}
 ---
 
 # Server islands

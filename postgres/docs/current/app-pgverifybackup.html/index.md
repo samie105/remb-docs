@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:06.186Z"
 content_hash: "27efc9bbced1e7cfba6b642e2c77d402b95b22b7841ed38b978012015570462f"
 menu_path: ["PostgreSQL: Documentation: 18: pg_verifybackup"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-pgrewind.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_rewind"}
-nav_next: {"path": "postgres/docs/current/app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
+nav_prev: {"path": "../app-pgrewind.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_rewind"}
+nav_next: {"path": "../app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
 ---
 
 pg\_verifybackup — verify the integrity of a base backup of a PostgreSQL cluster

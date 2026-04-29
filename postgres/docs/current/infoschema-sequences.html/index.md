@@ -10,8 +10,8 @@ content_hash: "9f58091e32f490cf36fbd96bc77327a449b23bbb7d972b120916142154acfd40"
 menu_path: ["PostgreSQL: Documentation: 18: 35.47. sequences"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-schemata.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.46.\u00a0schemata"}
-nav_next: {"path": "postgres/docs/current/infoschema-sql-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.48.\u00a0sql_features"}
+nav_prev: {"path": "../infoschema-schemata.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.46.\u00a0schemata"}
+nav_next: {"path": "../infoschema-sql-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.48.\u00a0sql_features"}
 ---
 
 The view `sequences` contains all sequences defined in the current database. Only those sequences are shown that the current user has access to (by way of being the owner or having some privilege).

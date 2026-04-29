@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:10.059Z"
 content_hash: "d7c8e8ce83e03b43808a9116db272055141734d1b95c237da59b6caa498fcd0d"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Hono","Hono"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Hono","Hono"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/flutter/index.md", "title": "Use Supabase with Flutter"}
-nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/ios-swiftui/index.md", "title": "Use Supabase with iOS and SwiftUI"}
+nav_prev: {"path": "../flutter/index.md", "title": "Use Supabase with Flutter"}
+nav_next: {"path": "../ios-swiftui/index.md", "title": "Use Supabase with iOS and SwiftUI"}
 ---
 
 # 

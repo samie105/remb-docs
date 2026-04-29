@@ -10,8 +10,8 @@ content_hash: "c90056f358a78adf40a298b78bb773c8b0472edbc5f395a69bb7a9824268bbb8"
 menu_path: ["PostgreSQL: Documentation: 18: 19.5. Write Ahead Log"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/runtime-config-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.10.\u00a0Vacuuming"}
-nav_next: {"path": "postgres/docs/current/sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
+nav_prev: {"path": "../runtime-config-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.10.\u00a0Vacuuming"}
+nav_next: {"path": "../sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
 ---
 
 `wal_level` (`enum`) [#](#GUC-WAL-LEVEL)
@@ -22,7 +22,7 @@ The `minimal` level generates the least WAL volume. It logs no row information f
 
 <table summary="Simple list"><tbody><tr><td><code>ALTER ... SET TABLESPACE</code></td></tr><tr><td><code>CLUSTER</code></td></tr><tr><td><code>CREATE TABLE</code></td></tr><tr><td><code>REFRESH MATERIALIZED VIEW</code> (without <code>CONCURRENTLY</code>)</td></tr><tr><td><code>REINDEX</code></td></tr><tr><td><code>TRUNCATE</code></td></tr></tbody></table>
 
-However, minimal WAL does not contain sufficient information for point-in-time recovery, so `replica` or higher must be used to enable continuous archiving ([archive\_mode](postgres/docs/current/runtime-config-wal.html/index.md#GUC-ARCHIVE-MODE)) and streaming binary replication. In fact, the server will not even start in this mode if `max_wal_senders` is non-zero. Note that changing `wal_level` to `minimal` makes previous base backups unusable for point-in-time recovery and standby servers.
+However, minimal WAL does not contain sufficient information for point-in-time recovery, so `replica` or higher must be used to enable continuous archiving ([archive\_mode](index.md#GUC-ARCHIVE-MODE)) and streaming binary replication. In fact, the server will not even start in this mode if `max_wal_senders` is non-zero. Note that changing `wal_level` to `minimal` makes previous base backups unusable for point-in-time recovery and standby servers.
 
 In `logical` level, the same information is logged as with `replica`, plus information needed to extract logical change sets from the WAL. Using a level of `logical` will increase the WAL volume, particularly if many tables are configured for `REPLICA IDENTITY FULL` and many `UPDATE` and `DELETE` statements are executed.
 
@@ -30,7 +30,7 @@ In releases prior to 9.6, this parameter also allowed the values `archive` and `
 
 `fsync` (`boolean`) [#](#GUC-FSYNC)
 
-If this parameter is on, the PostgreSQL server will try to make sure that updates are physically written to disk, by issuing `fsync()` system calls or various equivalent methods (see [wal\_sync\_method](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-SYNC-METHOD)). This ensures that the database cluster can recover to a consistent state after an operating system or hardware crash.
+If this parameter is on, the PostgreSQL server will try to make sure that updates are physically written to disk, by issuing `fsync()` system calls or various equivalent methods (see [wal\_sync\_method](index.md#GUC-WAL-SYNC-METHOD)). This ensures that the database cluster can recover to a consistent state after an operating system or hardware crash.
 
 While turning off `fsync` is often a performance benefit, this can result in unrecoverable data corruption in the event of a power failure or system crash. Thus it is only advisable to turn off `fsync` if you can easily recreate your entire database from external data.
 
@@ -38,17 +38,17 @@ Examples of safe circumstances for turning off `fsync` include the initial loadi
 
 For reliable recovery when changing `fsync` off to on, it is necessary to force all modified buffers in the kernel to durable storage. This can be done while the cluster is shutdown or while `fsync` is on by running `initdb --sync-only`, running `sync`, unmounting the file system, or rebooting the server.
 
-In many situations, turning off [synchronous\_commit](postgres/docs/current/runtime-config-wal.html/index.md#GUC-SYNCHRONOUS-COMMIT) for noncritical transactions can provide much of the potential performance benefit of turning off `fsync`, without the attendant risks of data corruption.
+In many situations, turning off [synchronous\_commit](index.md#GUC-SYNCHRONOUS-COMMIT) for noncritical transactions can provide much of the potential performance benefit of turning off `fsync`, without the attendant risks of data corruption.
 
-`fsync` can only be set in the `postgresql.conf` file or on the server command line. If you turn this parameter off, also consider turning off [full\_page\_writes](postgres/docs/current/runtime-config-wal.html/index.md#GUC-FULL-PAGE-WRITES).
+`fsync` can only be set in the `postgresql.conf` file or on the server command line. If you turn this parameter off, also consider turning off [full\_page\_writes](index.md#GUC-FULL-PAGE-WRITES).
 
 `synchronous_commit` (`enum`) [#](#GUC-SYNCHRONOUS-COMMIT)
 
 Specifies how much WAL processing must complete before the database server returns a “success” indication to the client. Valid values are `remote_apply`, `on` (the default), `remote_write`, `local`, and `off`.
 
-If `synchronous_standby_names` is empty, the only meaningful settings are `on` and `off`; `remote_apply`, `remote_write` and `local` all provide the same local synchronization level as `on`. The local behavior of all non-`off` modes is to wait for local flush of WAL to disk. In `off` mode, there is no waiting, so there can be a delay between when success is reported to the client and when the transaction is later guaranteed to be safe against a server crash. (The maximum delay is three times [wal\_writer\_delay](postgres/docs/current/runtime-config-wal.html/index.md#GUC-WAL-WRITER-DELAY).) Unlike [fsync](postgres/docs/current/runtime-config-wal.html/index.md#GUC-FSYNC), setting this parameter to `off` does not create any risk of database inconsistency: an operating system or database crash might result in some recent allegedly-committed transactions being lost, but the database state will be just the same as if those transactions had been aborted cleanly. So, turning `synchronous_commit` off can be a useful alternative when performance is more important than exact certainty about the durability of a transaction. For more discussion see [Section 28.4](https://www.postgresql.org/docs/current/wal-async-commit.html "28.4. Asynchronous Commit").
+If `synchronous_standby_names` is empty, the only meaningful settings are `on` and `off`; `remote_apply`, `remote_write` and `local` all provide the same local synchronization level as `on`. The local behavior of all non-`off` modes is to wait for local flush of WAL to disk. In `off` mode, there is no waiting, so there can be a delay between when success is reported to the client and when the transaction is later guaranteed to be safe against a server crash. (The maximum delay is three times [wal\_writer\_delay](index.md#GUC-WAL-WRITER-DELAY).) Unlike [fsync](index.md#GUC-FSYNC), setting this parameter to `off` does not create any risk of database inconsistency: an operating system or database crash might result in some recent allegedly-committed transactions being lost, but the database state will be just the same as if those transactions had been aborted cleanly. So, turning `synchronous_commit` off can be a useful alternative when performance is more important than exact certainty about the durability of a transaction. For more discussion see [Section 28.4](https://www.postgresql.org/docs/current/wal-async-commit.html "28.4. Asynchronous Commit").
 
-If [synchronous\_standby\_names](postgres/docs/current/runtime-config-replication.html/index.md#GUC-SYNCHRONOUS-STANDBY-NAMES) is non-empty, `synchronous_commit` also controls whether transaction commits will wait for their WAL records to be processed on the standby server(s).
+If [synchronous\_standby\_names](../runtime-config-replication.html/index.md#GUC-SYNCHRONOUS-STANDBY-NAMES) is non-empty, `synchronous_commit` also controls whether transaction commits will wait for their WAL records to be processed on the standby server(s).
 
 When set to `remote_apply`, commits will wait until replies from the current synchronous standby(s) indicate they have received the commit record of the transaction and applied it, so that it has become visible to queries on the standby(s), and also written to durable storage on the standbys. This will cause much larger commit delays than previous settings since it waits for WAL replay. When set to `on`, commits wait until replies from the current synchronous standby(s) indicate they have received the commit record of the transaction and flushed it to durable storage. This ensures the transaction will not be lost unless both the primary and all synchronous standbys suffer corruption of their database storage. When set to `remote_write`, commits will wait until replies from the current synchronous standby(s) indicate they have received the commit record of the transaction and written it to their file systems. This setting ensures data preservation if a standby instance of PostgreSQL crashes, but not if the standby suffers an operating-system-level crash because the data has not necessarily reached durable storage on the standby. The setting `local` causes commits to wait for local flush to disk, but not for replication. This is usually not desirable when synchronous replication is in use, but is provided for completeness.
 
@@ -106,7 +106,7 @@ This parameter can only be set at server start. The default value is `off`.
 
 `wal_compression` (`enum`) [#](#GUC-WAL-COMPRESSION)
 
-This parameter enables compression of WAL using the specified compression method. When enabled, the PostgreSQL server compresses full page images written to WAL (e.g. when [full\_page\_writes](postgres/docs/current/runtime-config-wal.html/index.md#GUC-FULL-PAGE-WRITES) is on, during a base backup, etc.). A compressed page image will be decompressed during WAL replay. The supported methods are `pglz`, `lz4` (if PostgreSQL was compiled with `--with-lz4`) and `zstd` (if PostgreSQL was compiled with `--with-zstd`). The default value is `off`. Only superusers and users with the appropriate `SET` privilege can change this setting.
+This parameter enables compression of WAL using the specified compression method. When enabled, the PostgreSQL server compresses full page images written to WAL (e.g. when [full\_page\_writes](index.md#GUC-FULL-PAGE-WRITES) is on, during a base backup, etc.). A compressed page image will be decompressed during WAL replay. The supported methods are `pglz`, `lz4` (if PostgreSQL was compiled with `--with-lz4`) and `zstd` (if PostgreSQL was compiled with `--with-zstd`). The default value is `off`. Only superusers and users with the appropriate `SET` privilege can change this setting.
 
 Enabling compression can reduce the WAL volume without increasing the risk of unrecoverable data corruption, but at the cost of some extra CPU spent on the compression during WAL logging and on the decompression during WAL replay.
 
@@ -120,7 +120,7 @@ If set to `on` (the default), this option causes WAL files to be recycled by ren
 
 `wal_buffers` (`integer`) [#](#GUC-WAL-BUFFERS)
 
-The amount of shared memory used for WAL data that has not yet been written to disk. The default setting of -1 selects a size equal to 1/32nd (about 3%) of [shared\_buffers](postgres/docs/current/runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS), but not less than `64kB` nor more than the size of one WAL segment, typically `16MB`. This value can be set manually if the automatic choice is too large or too small, but any positive value less than `32kB` will be treated as `32kB`. If this value is specified without units, it is taken as WAL blocks, that is `XLOG_BLCKSZ` bytes, typically 8kB. This parameter can only be set at server start.
+The amount of shared memory used for WAL data that has not yet been written to disk. The default setting of -1 selects a size equal to 1/32nd (about 3%) of [shared\_buffers](../runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS), but not less than `64kB` nor more than the size of one WAL segment, typically `16MB`. This value can be set manually if the automatic choice is too large or too small, but any positive value less than `32kB` will be treated as `32kB`. If this value is specified without units, it is taken as WAL blocks, that is `XLOG_BLCKSZ` bytes, typically 8kB. This parameter can only be set at server start.
 
 The contents of the WAL buffers are written out to disk at every transaction commit, so extremely large values are unlikely to provide a significant benefit. However, setting this value to at least a few megabytes can improve write performance on a busy server where many clients are committing at once. The auto-tuning selected by the default setting of -1 should give reasonable results in most cases.
 

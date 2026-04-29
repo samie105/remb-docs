@@ -10,15 +10,15 @@ content_hash: "87a88bef1a6a3f3abad5d67a12f0d9f8d204df215b4c62b9ceabd5b34dbb65ec"
 menu_path: ["About the shadow database"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories/index.md", "title": "Migration histories"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues/index.md", "title": "Limitations and known issues"}
+nav_prev: {"path": "../migration-histories/index.md", "title": "Migration histories"}
+nav_next: {"path": "../limitations-and-known-issues/index.md", "title": "Limitations and known issues"}
 ---
 
 Learn how Prisma Migrate uses shadow databases to detect schema drift
 
 The shadow database is a second, _temporary_ database that is **created and deleted automatically**\* each time you run `prisma migrate dev` and is primarily used to **detect problems** such as schema drift or potential data loss of the generated migration.
 
-[`migrate diff` command](prisma/docs/orm/reference/prisma-cli-reference/index.md#migrate-diff) also requires a shadow database when diffing against a local `migrations` directory with `--from-migrations` or `--to-migrations`.
+[`migrate diff` command](../../../reference/prisma-cli-reference/index.md#migrate-diff) also requires a shadow database when diffing against a local `migrations` directory with `--from-migrations` or `--to-migrations`.
 
 -   If your database does not allow creation and deleting of databases (e.g. in a cloud-hosted environment), you need to [create and configure the shadow database manually](#cloud-hosted-shadow-databases-must-be-created-manually).
 
@@ -31,7 +31,7 @@ When you run `prisma migrate dev` to create a new migration, Prisma Migrate uses
 
 To detect drift in development, Prisma Migrate:
 
--   Creates a fresh copy of the shadow database (or performs a soft reset if the shadow database is configured via [`shadowDatabaseUrl`](prisma/docs/orm/reference/prisma-schema-reference/index.md#datasource))
+-   Creates a fresh copy of the shadow database (or performs a soft reset if the shadow database is configured via [`shadowDatabaseUrl`](../../../reference/prisma-schema-reference/index.md#datasource))
 -   Reruns the **current**, existing migration history in the shadow database.
 -   **Introspects** the shadow database to generate the 'current state' of your Prisma schema.
 -   Compares the end state of the current migration history to the development database.
@@ -56,7 +56,7 @@ Assuming Prisma Migrate did not [detect schema drift](#detecting-schema-drift), 
 3.  Renders these steps to a SQL string and saves it in the new migration file.
 4.  Evaluate data loss caused by the SQL and warns about that.
 5.  Applies the generated migration to the development database (assuming you have not specified the `--create-only` flag)
-6.  Drops the shadow database (shadow databases configured via [`shadowDatabaseUrl`](prisma/docs/orm/reference/prisma-schema-reference/index.md#datasource) are not dropped, but are reset at the start of the `migrate dev` command)
+6.  Drops the shadow database (shadow databases configured via [`shadowDatabaseUrl`](../../../reference/prisma-schema-reference/index.md#datasource) are not dropped, but are reset at the start of the `migrate dev` command)
 
 In some cases it might make sense (e.g. when [creating and dropping databases is not allowed on cloud-hosted databases](#cloud-hosted-shadow-databases-must-be-created-manually)) to manually define the connection string and name of the database that should be used as the shadow database for `migrate dev`. In such a case you can:
 
@@ -127,4 +127,4 @@ To resolve this error:
 -   If you are working locally, we recommend that you update the database user's privileges.
 -   If you are developing against a database that does not allow creating and dropping databases (for any reason) see [Manually configuring the shadow database](#manually-configuring-the-shadow-database)
 -   If you are developing against a cloud-based database (for example, on Heroku, Digital Ocean, or Vercel Postgres) see: [Cloud-hosted shadow databases](#cloud-hosted-shadow-databases-must-be-created-manually).
--   If you are developing against a cloud-based database (for example, on Heroku, Digital Ocean, or Vercel Postgres) and are currently **prototyping** such that you don't care about generated migration files and only need to apply your Prisma schema to the database schema, you can run [`prisma db push`](prisma/docs/orm/reference/prisma-cli-reference/index.md#db) instead of the `prisma migrate dev` command.
+-   If you are developing against a cloud-based database (for example, on Heroku, Digital Ocean, or Vercel Postgres) and are currently **prototyping** such that you don't care about generated migration files and only need to apply your Prisma schema to the database schema, you can run [`prisma db push`](../../../reference/prisma-cli-reference/index.md#db) instead of the `prisma migrate dev` command.

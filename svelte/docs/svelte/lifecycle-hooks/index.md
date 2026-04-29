@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:48.577Z"
 content_hash: "d5d2179c6036a2448cd6d73c4782e89dd075c4d48a3a895c292b75d1078fe287"
 menu_path: ["Lifecycle hooks"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/context/index.md", "title": "Context"}
-nav_next: {"path": "svelte/docs/svelte/imperative-component-api/index.md", "title": "Imperative component API"}
+nav_prev: {"path": "../context/index.md", "title": "Context"}
+nav_next: {"path": "../imperative-component-api/index.md", "title": "Imperative component API"}
 ---
 
 In Svelte 5, the component lifecycle consists of only two parts: Its creation and its destruction. Everything in-between — when certain state is updated — is not related to the component as a whole; only the parts that need to react to the state change are notified. This is because under the hood the smallest unit of change is actually not a component, it's the (render) effects that the component sets up upon component initialization. Consequently, there's no such thing as a "before update"/"after update" hook.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:55.416Z"
 content_hash: "7d7f50431b8f50d894be8ee0c9631957c9dda6669ba35aa1c29f227a533650d8"
 menu_path: ["Convert a Buffer to a Uint8Array"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/buffer-to-string/index.md", "title": "Convert a Buffer to a string"}
-nav_next: {"path": "bun/docs/guides/binary/dataview-to-string/index.md", "title": "Convert a DataView to a string"}
+nav_prev: {"path": "../buffer-to-string/index.md", "title": "Convert a Buffer to a string"}
+nav_next: {"path": "../dataview-to-string/index.md", "title": "Convert a DataView to a string"}
 ---
 
 [Skip to main content](#content-area)

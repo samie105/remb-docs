@@ -10,8 +10,8 @@ content_hash: "e68b4854583b51818646e99751ad639dbbec18006f1cf424614f08c55ff55c2a"
 menu_path: ["PostgreSQL: Documentation: 18: 35.44. routine_table_usage"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-routine-sequence-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.43.\u00a0routine_sequence_usage"}
-nav_next: {"path": "postgres/docs/current/infoschema-routines.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.45.\u00a0routines"}
+nav_prev: {"path": "../infoschema-routine-sequence-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.43.\u00a0routine_sequence_usage"}
+nav_next: {"path": "../infoschema-routines.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.45.\u00a0routines"}
 ---
 
 The view `routine_table_usage` is meant to identify all tables that are used by a function or procedure. This information is currently not tracked by PostgreSQL.

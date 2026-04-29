@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:16.902Z"
 content_hash: "6a92330d2903ab4df12d161687bc16e6fdb82c7789aeabc557b0213dd68bcbf8"
 menu_path: ["PostgreSQL: Documentation: 18: EXECUTE IMMEDIATE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: DISCONNECT"}
-nav_next: {"path": "postgres/docs/current/ecpg-sql-type.html/index.md", "title": "PostgreSQL: Documentation: 18: TYPE"}
+nav_prev: {"path": "../ecpg-sql-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: DISCONNECT"}
+nav_next: {"path": "../ecpg-sql-type.html/index.md", "title": "PostgreSQL: Documentation: 18: TYPE"}
 ---
 
 EXECUTE IMMEDIATE — dynamically prepare and execute a statement

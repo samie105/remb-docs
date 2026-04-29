@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:53.440Z"
 content_hash: "66e1b3632227676c4fe28457b4e0a1f18eac8314b0a9d3fa071cdc3c5ad919af"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on AWS EC2","→","Install on AWS EC2"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on AWS EC2","→","Install on AWS EC2"]
-nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/index.md", "title": "Install Redis Insight"}
-nav_next: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-desktop/index.md", "title": "Install on desktop"}
+nav_prev: {"path": "../index.md", "title": "Install Redis Insight"}
+nav_next: {"path": "../install-on-desktop/index.md", "title": "Install on desktop"}
 ---
 
 # Install on AWS EC2

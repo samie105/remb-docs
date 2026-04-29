@@ -10,8 +10,8 @@ content_hash: "45b762db3146c9ec7e24a9963871f9e5291c4f443d45b5c23580a8ca222a6dae"
 menu_path: ["Get Started with Drizzle and CockroachDB"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/get-started/cockroach-existing/index.md", "title": "Get Started with Drizzle and CockroachDB in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/d1-existing/index.md", "title": "Get Started with Drizzle and D1 in existing project"}
+nav_prev: {"path": "../cockroach-existing/index.md", "title": "Get Started with Drizzle and CockroachDB in existing project"}
+nav_next: {"path": "../d1-existing/index.md", "title": "Get Started with Drizzle and D1 in existing project"}
 ---
 
 ## Get Started with Drizzle and CockroachDB
@@ -30,7 +30,7 @@ This guide assumes familiarity with:
 
 Drizzle has native support for CockroachDB connections with the `node-postgres` and `postgres.js` drivers.
 
-We will use `node-postgres` for this get started example. But if you want to find more ways to connect to postgresql check our [CockroachDB Connection](drizzle/docs/get-started-cockroach/index.md) page
+We will use `node-postgres` for this get started example. But if you want to find more ways to connect to postgresql check our [CockroachDB Connection](../../get-started-cockroach/index.md) page
 
 #### Basic file structure
 
@@ -133,7 +133,7 @@ export const usersTable = cockroachTable("users", {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -159,7 +159,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](../../drizzle-kit-push/index.md).
 
 Tips
 
@@ -177,7 +177,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](../../kit-overview/index.md).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:27.714Z"
 content_hash: "b7498c3425ef22619eb7a0d5e3e1fb71129caa763a0d56e52c012843cda41fd5"
 menu_path: ["Deploy your Astro Site to Microsoft Azure"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/juno/index.md", "title": "Deploy your Astro Site to Juno"}
-nav_next: {"path": "astro/en/guides/deploy/netlify/index.md", "title": "Deploy your Astro Site to Netlify"}
+nav_prev: {"path": "../juno/index.md", "title": "Deploy your Astro Site to Juno"}
+nav_next: {"path": "../netlify/index.md", "title": "Deploy your Astro Site to Netlify"}
 ---
 
 # Deploy your Astro Site to Microsoft Azure

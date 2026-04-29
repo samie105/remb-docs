@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:52.747Z"
 content_hash: "4aeb049e264be72666f4017b4f7415963f0e65bd260a5b61a0f694c3f24d346c"
 menu_path: ["You Might Not Need an Effect"]
 section_path: []
-nav_prev: {"path": "react/learn/synchronizing-with-effects/index.md", "title": "Synchronizing with Effects"}
-nav_next: {"path": "react/learn/lifecycle-of-reactive-effects/index.md", "title": "Lifecycle of Reactive Effects"}
+nav_prev: {"path": "../synchronizing-with-effects/index.md", "title": "Synchronizing with Effects"}
+nav_next: {"path": "../lifecycle-of-reactive-effects/index.md", "title": "Lifecycle of Reactive Effects"}
 ---
 
 Effects are an escape hatch from the React paradigm. They let you “step outside” of React and synchronize your components with some external system like a non-React widget, network, or the browser DOM. If there is no external system involved (for example, if you want to update a component’s state when some props or state change), you shouldn’t need an Effect. Removing unnecessary Effects will make your code easier to follow, faster to run, and less error-prone.
@@ -28,10 +28,10 @@ Effects are an escape hatch from the React paradigm. They let you “step outsid
 
 There are two common cases in which you don’t need Effects:
 
-*   **You don’t need Effects to transform data for rendering.** For example, let’s say you want to filter a list before displaying it. You might feel tempted to write an Effect that updates a state variable when the list changes. However, this is inefficient. When you update the state, React will first call your component functions to calculate what should be on the screen. Then React will [“commit”](react/learn/render-and-commit/index.md) these changes to the DOM, updating the screen. Then React will run your Effects. If your Effect _also_ immediately updates the state, this restarts the whole process from scratch! To avoid the unnecessary render passes, transform all the data at the top level of your components. That code will automatically re-run whenever your props or state change.
+*   **You don’t need Effects to transform data for rendering.** For example, let’s say you want to filter a list before displaying it. You might feel tempted to write an Effect that updates a state variable when the list changes. However, this is inefficient. When you update the state, React will first call your component functions to calculate what should be on the screen. Then React will [“commit”](../render-and-commit/index.md) these changes to the DOM, updating the screen. Then React will run your Effects. If your Effect _also_ immediately updates the state, this restarts the whole process from scratch! To avoid the unnecessary render passes, transform all the data at the top level of your components. That code will automatically re-run whenever your props or state change.
 *   **You don’t need Effects to handle user events.** For example, let’s say you want to send an `/api/buy` POST request and show a notification when the user buys a product. In the Buy button click event handler, you know exactly what happened. By the time an Effect runs, you don’t know _what_ the user did (for example, which button was clicked). This is why you’ll usually handle user events in the corresponding event handlers.
 
-You _do_ need Effects to [synchronize](react/learn/synchronizing-with-effects/index.md#what-are-effects-and-how-are-they-different-from-events) with external systems. For example, you can write an Effect that keeps a jQuery widget synchronized with the React state. You can also fetch data with Effects: for example, you can synchronize the search results with the current search query. Keep in mind that modern [frameworks](react/learn/creating-a-react-app/index.md#full-stack-frameworks) provide more efficient built-in data fetching mechanisms than writing Effects directly in your components.
+You _do_ need Effects to [synchronize](../synchronizing-with-effects/index.md#what-are-effects-and-how-are-they-different-from-events) with external systems. For example, you can write an Effect that keeps a jQuery widget synchronized with the React state. You can also fetch data with Effects: for example, you can synchronize the search results with the current search query. Keep in mind that modern [frameworks](../creating-a-react-app/index.md#full-stack-frameworks) provide more efficient built-in data fetching mechanisms than writing Effects directly in your components.
 
 To help you gain the right intuition, let’s look at some common concrete examples!
 
@@ -49,7 +49,7 @@ This is more complicated than necessary. It is inefficient too: it does an entir
 function Form() {const [firstName, setFirstName] = useState('Taylor');const [lastName, setLastName] = useState('Swift');// ✅ Good: calculated during renderingconst fullName = firstName + ' ' + lastName;// ...}
 ```
 
-**When something can be calculated from the existing props or state, [don’t put it in state.](react/learn/choosing-the-state-structure/index.md#avoid-redundant-state) Instead, calculate it during rendering.** This makes your code faster (you avoid the extra “cascading” updates), simpler (you remove some code), and less error-prone (you avoid bugs caused by different state variables getting out of sync with each other). If this approach feels new to you, [Thinking in React](react/learn/thinking-in-react/index.md#step-3-find-the-minimal-but-complete-representation-of-ui-state) explains what should go into state.
+**When something can be calculated from the existing props or state, [don’t put it in state.](../choosing-the-state-structure/index.md#avoid-redundant-state) Instead, calculate it during rendering.** This makes your code faster (you avoid the extra “cascading” updates), simpler (you remove some code), and less error-prone (you avoid bugs caused by different state variables getting out of sync with each other). If this approach feels new to you, [Thinking in React](../thinking-in-react/index.md#step-3-find-the-minimal-but-complete-representation-of-ui-state) explains what should go into state.
 
 ### Caching expensive calculations[](#caching-expensive-calculations "Link for Caching expensive calculations ")
 
@@ -71,7 +71,7 @@ You can cache (or [“memoize”](https://en.wikipedia.org/wiki/Memoization)) an
 
 ### Note
 
-[React Compiler](react/learn/react-compiler/index.md) can automatically memoize expensive calculations for you, eliminating the need for manual `useMemo` in many cases.
+[React Compiler](../react-compiler/index.md) can automatically memoize expensive calculations for you, eliminating the need for manual `useMemo` in many cases.
 
 ```
 import { useMemo, useState } from 'react';function TodoList({ todos, filter }) {const [newTodo, setNewTodo] = useState('');const visibleTodos = useMemo(() => {// ✅ Does not re-run unless todos or filter changereturn getFilteredTodos(todos, filter);}, [todos, filter]);// ...}
@@ -85,7 +85,7 @@ import { useMemo, useState } from 'react';function TodoList({ todos, filter }) {
 
 **This tells React that you don’t want the inner function to re-run unless either `todos` or `filter` have changed.** React will remember the return value of `getFilteredTodos()` during the initial render. During the next renders, it will check if `todos` or `filter` are different. If they’re the same as last time, `useMemo` will return the last result it has stored. But if they are different, React will call the inner function again (and store its result).
 
-The function you wrap in [`useMemo`](https://react.dev/reference/react/useMemo) runs during rendering, so this only works for [pure calculations.](react/learn/keeping-components-pure/index.md)
+The function you wrap in [`useMemo`](https://react.dev/reference/react/useMemo) runs during rendering, so this only works for [pure calculations.](../keeping-components-pure/index.md)
 
 ##### Deep Dive
 
@@ -125,7 +125,7 @@ Instead, you can tell React that each user’s profile is conceptually a _differ
 export default function ProfilePage({ userId }) {return (<ProfileuserId={userId}key={userId}/>);}function Profile({ userId }) {// ✅ This and any other state below will reset on key change automaticallyconst [comment, setComment] = useState('');// ...}
 ```
 
-Normally, React preserves the state when the same component is rendered in the same spot. **By passing `userId` as a `key` to the `Profile` component, you’re asking React to treat two `Profile` components with different `userId` as two different components that should not share any state.** Whenever the key (which you’ve set to `userId`) changes, React will recreate the DOM and [reset the state](react/learn/preserving-and-resetting-state/index.md#option-2-resetting-state-with-a-key) of the `Profile` component and all of its children. Now the `comment` field will clear out automatically when navigating between profiles.
+Normally, React preserves the state when the same component is rendered in the same spot. **By passing `userId` as a `key` to the `Profile` component, you’re asking React to treat two `Profile` components with different `userId` as two different components that should not share any state.** Whenever the key (which you’ve set to `userId`) changes, React will recreate the DOM and [reset the state](../preserving-and-resetting-state/index.md#option-2-resetting-state-with-a-key) of the `Profile` component and all of its children. Now the `comment` field will clear out automatically when navigating between profiles.
 
 Note that in this example, only the outer `ProfilePage` component is exported and visible to other files in the project. Components rendering `ProfilePage` don’t need to pass the key to it: they pass `userId` as a regular prop. The fact `ProfilePage` passes it as a `key` to the inner `Profile` component is an implementation detail.
 
@@ -149,7 +149,7 @@ function List({ items }) {const [isReverse, setIsReverse] = useState(false);cons
 
 [Storing information from previous renders](https://react.dev/reference/react/useState#storing-information-from-previous-renders) like this can be hard to understand, but it’s better than updating the same state in an Effect. In the above example, `setSelection` is called directly during a render. React will re-render the `List` _immediately_ after it exits with a `return` statement. React has not rendered the `List` children or updated the DOM yet, so this lets the `List` children skip rendering the stale `selection` value.
 
-When you update a component during rendering, React throws away the returned JSX and immediately retries rendering. To avoid very slow cascading retries, React only lets you update the _same_ component’s state during a render. If you update another component’s state during a render, you’ll see an error. A condition like `items !== prevItems` is necessary to avoid loops. You may adjust state like this, but any other side effects (like changing the DOM or setting timeouts) should stay in event handlers or Effects to [keep components pure.](react/learn/keeping-components-pure/index.md)
+When you update a component during rendering, React throws away the returned JSX and immediately retries rendering. To avoid very slow cascading retries, React only lets you update the _same_ component’s state during a render. If you update another component’s state during a render, you’ll see an error. A condition like `items !== prevItems` is necessary to avoid loops. You may adjust state like this, but any other side effects (like changing the DOM or setting timeouts) should stay in event handlers or Effects to [keep components pure.](../keeping-components-pure/index.md)
 
 **Although this pattern is more efficient than an Effect, most components shouldn’t need it either.** No matter how you do it, adjusting state based on props or other state makes your data flow more difficult to understand and debug. Always check whether you can [reset all state with a key](#resetting-all-state-when-a-prop-changes) or [calculate everything during rendering](#updating-state-based-on-props-or-state) instead. For example, instead of storing (and resetting) the selected _item_, you can store the selected _item ID:_
 
@@ -187,7 +187,7 @@ function Form() {const [firstName, setFirstName] = useState('');const [lastName,
 
 Let’s apply the same criteria as in the example before.
 
-The analytics POST request should remain in an Effect. This is because the _reason_ to send the analytics event is that the form was displayed. (It would fire twice in development, but [see here](react/learn/synchronizing-with-effects/index.md#sending-analytics) for how to deal with that.)
+The analytics POST request should remain in an Effect. This is because the _reason_ to send the analytics event is that the form was displayed. (It would fire twice in development, but [see here](../synchronizing-with-effects/index.md#sending-analytics) for how to deal with that.)
 
 However, the `/api/register` POST request is not caused by the form being _displayed_. You only want to send the request at one specific moment in time: when the user presses the button. It should only ever happen _on that particular interaction_. Delete the second Effect and move that POST request into the event handler:
 
@@ -219,7 +219,7 @@ function Game() {const [card, setCard] = useState(null);const [goldCardCount, se
 
 This is a lot more efficient. Also, if you implement a way to view game history, now you will be able to set each state variable to a move from the past without triggering the Effect chain that adjusts every other value. If you need to reuse logic between several event handlers, you can [extract a function](#sharing-logic-between-event-handlers) and call it from those handlers.
 
-Remember that inside event handlers, [state behaves like a snapshot.](react/learn/state-as-a-snapshot/index.md) For example, even after you call `setRound(round + 1)`, the `round` variable will reflect the value at the time the user clicked the button. If you need to use the next value for calculations, define it manually like `const nextRound = round + 1`.
+Remember that inside event handlers, [state behaves like a snapshot.](../state-as-a-snapshot/index.md) For example, even after you call `setRound(round + 1)`, the `round` variable will reflect the value at the time the user clicked the button. If you need to use the next value for calculations, define it manually like `const nextRound = round + 1`.
 
 In some cases, you _can’t_ calculate the next state directly in the event handler. For example, imagine a form with multiple dropdowns where the options of the next dropdown depend on the selected value of the previous dropdown. Then, a chain of Effects is appropriate because you are synchronizing with network.
 
@@ -233,7 +233,7 @@ You might be tempted to place it in an Effect in the top-level component:
 function App() {// 🔴 Avoid: Effects with logic that should only ever run onceuseEffect(() => {loadDataFromLocalStorage();checkAuthToken();}, []);// ...}
 ```
 
-However, you’ll quickly discover that it [runs twice in development.](react/learn/synchronizing-with-effects/index.md#how-to-handle-the-effect-firing-twice-in-development) This can cause issues—for example, maybe it invalidates the authentication token because the function wasn’t designed to be called twice. In general, your components should be resilient to being remounted. This includes your top-level `App` component.
+However, you’ll quickly discover that it [runs twice in development.](../synchronizing-with-effects/index.md#how-to-handle-the-effect-firing-twice-in-development) This can cause issues—for example, maybe it invalidates the authentication token because the function wasn’t designed to be called twice. In general, your components should be resilient to being remounted. This includes your top-level `App` component.
 
 Although it may not ever get remounted in practice in production, following the same constraints in all components makes it easier to move and reuse code. If some logic must run _once per app load_ rather than _once per component mount_, add a top-level variable to track whether it has already executed:
 
@@ -265,7 +265,7 @@ Delete the Effect and instead update the state of _both_ components within the s
 function Toggle({ onChange }) {const [isOn, setIsOn] = useState(false);function updateToggle(nextIsOn) {// ✅ Good: Perform all updates during the event that caused themsetIsOn(nextIsOn);onChange(nextIsOn);}function handleClick() {updateToggle(!isOn);}function handleDragEnd(e) {if (isCloserToRightEdge(e)) {updateToggle(true);} else {updateToggle(false);}}// ...}
 ```
 
-With this approach, both the `Toggle` component and its parent component update their state during the event. React [batches updates](react/learn/queueing-a-series-of-state-updates/index.md) from different components together, so there will only be one render pass.
+With this approach, both the `Toggle` component and its parent component update their state during the event. React [batches updates](../queueing-a-series-of-state-updates/index.md) from different components together, so there will only be one render pass.
 
 You might also be able to remove the state altogether, and instead receive `isOn` from the parent component:
 
@@ -273,7 +273,7 @@ You might also be able to remove the state altogether, and instead receive `isOn
 // ✅ Also good: the component is fully controlled by its parentfunction Toggle({ isOn, onChange }) {function handleClick() {onChange(!isOn);}function handleDragEnd(e) {if (isCloserToRightEdge(e)) {onChange(true);} else {onChange(false);}}// ...}
 ```
 
-[“Lifting state up”](react/learn/sharing-state-between-components/index.md) lets the parent component fully control the `Toggle` by toggling the parent’s own state. This means the parent component will have to contain more logic, but there will be less state overall to worry about. Whenever you try to keep two different state variables synchronized, try lifting state up instead!
+[“Lifting state up”](../sharing-state-between-components/index.md) lets the parent component fully control the `Toggle` by toggling the parent’s own state. This means the parent component will have to contain more logic, but there will be less state overall to worry about. Whenever you try to keep two different state variables synchronized, try lifting state up instead!
 
 ### Passing data to the parent[](#passing-data-to-the-parent "Link for Passing data to the parent ")
 
@@ -321,11 +321,11 @@ You _don’t_ need to move this fetch to an event handler.
 
 This might seem like a contradiction with the earlier examples where you needed to put the logic into the event handlers! However, consider that it’s not _the typing event_ that’s the main reason to fetch. Search inputs are often prepopulated from the URL, and the user might navigate Back and Forward without touching the input.
 
-It doesn’t matter where `page` and `query` come from. While this component is visible, you want to keep `results` [synchronized](react/learn/synchronizing-with-effects/index.md) with data from the network for the current `page` and `query`. This is why it’s an Effect.
+It doesn’t matter where `page` and `query` come from. While this component is visible, you want to keep `results` [synchronized](../synchronizing-with-effects/index.md) with data from the network for the current `page` and `query`. This is why it’s an Effect.
 
 However, the code above has a bug. Imagine you type `"hello"` fast. Then the `query` will change from `"h"`, to `"he"`, `"hel"`, `"hell"`, and `"hello"`. This will kick off separate fetches, but there is no guarantee about which order the responses will arrive in. For example, the `"hell"` response may arrive _after_ the `"hello"` response. Since it will call `setResults()` last, you will be displaying the wrong search results. This is called a [“race condition”](https://en.wikipedia.org/wiki/Race_condition): two different requests “raced” against each other and came in a different order than you expected.
 
-**To fix the race condition, you need to [add a cleanup function](react/learn/synchronizing-with-effects/index.md#fetching-data) to ignore stale responses:**
+**To fix the race condition, you need to [add a cleanup function](../synchronizing-with-effects/index.md#fetching-data) to ignore stale responses:**
 
 ```
 function SearchResults({ query }) {const [results, setResults] = useState([]);const [page, setPage] = useState(1);useEffect(() => {let ignore = false;fetchResults(query, page).then(json => {if (!ignore) {setResults(json);}});return () => {ignore = true;};}, [query, page]);function handleNextPageClick() {setPage(page + 1);}// ...}
@@ -335,7 +335,7 @@ This ensures that when your Effect fetches data, all responses except the last r
 
 Handling race conditions is not the only difficulty with implementing data fetching. You might also want to think about caching responses (so that the user can click Back and see the previous screen instantly), how to fetch data on the server (so that the initial server-rendered HTML contains the fetched content instead of a spinner), and how to avoid network waterfalls (so that a child can fetch data without waiting for every parent).
 
-**These issues apply to any UI library, not just React. Solving them is not trivial, which is why modern [frameworks](react/learn/creating-a-react-app/index.md#full-stack-frameworks) provide more efficient built-in data fetching mechanisms than fetching data in Effects.**
+**These issues apply to any UI library, not just React. Solving them is not trivial, which is why modern [frameworks](../creating-a-react-app/index.md#full-stack-frameworks) provide more efficient built-in data fetching mechanisms than fetching data in Effects.**
 
 If you don’t use a framework (and don’t want to build your own) but would like to make data fetching from Effects more ergonomic, consider extracting your fetching logic into a custom Hook like in this example:
 

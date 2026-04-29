@@ -10,8 +10,8 @@ content_hash: "62280f24dc5f2dba05aec98a9488166f7783b9153681c1915bbf4ebde999b735"
 menu_path: ["caption-side"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/table-layout/index.md", "title": "table-layout"}
-nav_next: {"path": "tailwind/docs/transition-property/index.md", "title": "transition-property"}
+nav_prev: {"path": "../table-layout/index.md", "title": "table-layout"}
+nav_next: {"path": "../transition-property/index.md", "title": "transition-property"}
 ---
 
 Utilities for controlling the alignment of a caption element inside of a table.
@@ -42,4 +42,4 @@ Prefix a `caption-side` utility with a breakpoint variant like `md:` to only app
 <caption class="caption-top md:caption-bottom ...">  <!-- ... --></caption>
 ```
 
-Learn more about using variants in the [variants documentation](tailwind/docs/hover-focus-and-other-states/index.md).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).

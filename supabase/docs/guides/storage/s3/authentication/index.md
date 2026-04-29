@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:24.745Z"
 content_hash: "e92c8c94fbe67e09ae6ccf8016d85e6b9c0cdf436ab854e41554b48aa299b42c"
 menu_path: ["Storage","Storage","More","More","More","S3","S3","Authentication","Authentication"]
 section_path: ["Storage","Storage","More","More","More","S3","S3","Authentication","Authentication"]
-nav_prev: {"path": "supabase/docs/guides/storage/quickstart/index.md", "title": "Storage Quickstart"}
-nav_next: {"path": "supabase/docs/guides/storage/s3/compatibility/index.md", "title": "S3 Compatibility"}
+nav_prev: {"path": "../../quickstart/index.md", "title": "Storage Quickstart"}
+nav_next: {"path": "../compatibility/index.md", "title": "S3 Compatibility"}
 ---
 
 # 

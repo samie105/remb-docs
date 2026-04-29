@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:07.170Z"
 content_hash: "c5da3615104c6f483c73167a866cc41c5899edb515a46fb5a42bdb959f932533"
 menu_path: ["Convert a ReadableStream to a Buffer"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/streams/to-blob/index.md", "title": "Error loading page"}
-nav_next: {"path": "bun/docs/guides/streams/to-json/index.md", "title": "Convert a ReadableStream to JSON"}
+nav_prev: {"path": "../to-blob/index.md", "title": "Error loading page"}
+nav_next: {"path": "../to-json/index.md", "title": "Convert a ReadableStream to JSON"}
 ---
 
 [Skip to main content](#content-area)

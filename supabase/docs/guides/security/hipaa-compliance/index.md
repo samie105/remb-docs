@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:55.997Z"
 content_hash: "09173de1280da9715ec214f0bf3d8e56e2cfe8a53680c11bcb456a346ca29832"
 menu_path: ["Security","Security","Compliance","Compliance","HIPAA","HIPAA"]
 section_path: ["Security","Security","Compliance","Compliance","HIPAA","HIPAA"]
-nav_prev: {"path": "supabase/docs/guides/security/index.md", "title": "Supabase Security"}
-nav_next: {"path": "supabase/docs/guides/security/platform-audit-logs/index.md", "title": "Platform Audit Logs"}
+nav_prev: {"path": "../index.md", "title": "Supabase Security"}
+nav_next: {"path": "../platform-audit-logs/index.md", "title": "Platform Audit Logs"}
 ---
 
 # 

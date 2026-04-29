@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:52.816Z"
 content_hash: "b45881c66f53afadc05d1ab4e7773352ea72779234cfba559b09edaea8a2acbf"
 menu_path: ["Testing Helper ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/helpers/streaming/index.md", "title": "Streaming Helper \u200b"}
-nav_next: {"path": "hono/docs/helpers/websocket/index.md", "title": "WebSocket Helper \u200b"}
+nav_prev: {"path": "../streaming/index.md", "title": "Streaming Helper \u200b"}
+nav_next: {"path": "../websocket/index.md", "title": "WebSocket Helper \u200b"}
 ---
 
 The Testing Helper provides functions to make testing of Hono applications easier.
@@ -26,7 +26,7 @@ import { testClient } from 'hono/testing'
 
 ## `testClient()` [​](#testclient)
 
-The `testClient()` function takes an instance of Hono as its first argument and returns an object typed according to your Hono application's routes, similar to the [Hono Client](hono/docs/guides/rpc/index.md#client). This allows you to call your defined routes in a type-safe manner with editor autocompletion within your tests.
+The `testClient()` function takes an instance of Hono as its first argument and returns an object typed according to your Hono application's routes, similar to the [Hono Client](../../guides/rpc/index.md#client). This allows you to call your defined routes in a type-safe manner with editor autocompletion within your tests.
 
 **Important Note on Type Inference:**
 
@@ -81,7 +81,7 @@ describe('Search Endpoint', () => {
 })
 ```
 
-To include headers in your test, pass them as the second parameter in the call. The second parameter can also take an `init` property as a `RequestInit` object, allowing you to set headers, method, body, etc. Learn more about the `init` property [here](hono/docs/guides/rpc/index.md#init-option).
+To include headers in your test, pass them as the second parameter in the call. The second parameter can also take an `init` property as a `RequestInit` object, allowing you to set headers, method, body, etc. Learn more about the `init` property [here](../../guides/rpc/index.md#init-option).
 
 ts
 

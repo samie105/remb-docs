@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:35.270Z"
 content_hash: "461c127453cdfecb7050863fd2ff31b3f5f75a3dd2ac4d7e174e22218e0ab7fe"
 menu_path: ["Index"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/biblio.html/index.md", "title": "Bibliography"}
-nav_next: {"path": "postgres/docs/current/index.md", "title": "PostgreSQL 18.3 Documentation"}
+nav_prev: {"path": "../biblio.html/index.md", "title": "Bibliography"}
+nav_next: {"path": "../index.md", "title": "PostgreSQL 18.3 Documentation"}
 ---
 
 # Index

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:41.068Z"
 content_hash: "b5dd51b5c0fa1d57a181676decfb299d164f20b8c970225b4b64e10a3e5f37e8"
 menu_path: ["PostgreSQL: Documentation: 18: DISCONNECT"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/ecpg-sql-describe.html/index.md", "title": "PostgreSQL: Documentation: 18: DESCRIBE"}
-nav_next: {"path": "postgres/docs/current/ecpg-sql-execute-immediate.html/index.md", "title": "PostgreSQL: Documentation: 18: EXECUTE IMMEDIATE"}
+nav_prev: {"path": "../ecpg-sql-describe.html/index.md", "title": "PostgreSQL: Documentation: 18: DESCRIBE"}
+nav_next: {"path": "../ecpg-sql-execute-immediate.html/index.md", "title": "PostgreSQL: Documentation: 18: EXECUTE IMMEDIATE"}
 ---
 
 DISCONNECT — terminate a database connection

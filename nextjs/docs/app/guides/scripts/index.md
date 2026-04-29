@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/sass/index.md", "title": "How to use Sass"}
-nav_next: {"path": "nextjs/docs/app/guides/self-hosting/index.md", "title": "How to self-host your Next.js application"}
+nav_prev: {"path": "../sass/index.md", "title": "How to use Sass"}
+nav_next: {"path": "../self-hosting/index.md", "title": "How to self-host your Next.js application"}
 ---
 
 # How to load and optimize scripts

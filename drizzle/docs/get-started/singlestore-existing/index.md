@@ -10,8 +10,8 @@ content_hash: "378ec0262b9a6a41b32a0edafa5c0328e2d194b6b58c065c09bab4ab48d2cfb1"
 menu_path: ["Get Started with Drizzle and SingleStore in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/get-started/postgresql-new/index.md", "title": "Get Started with Drizzle and PostgreSQL"}
-nav_next: {"path": "drizzle/docs/get-started/singlestore-new/index.md", "title": "Get Started with Drizzle and SingleStore"}
+nav_prev: {"path": "../postgresql-new/index.md", "title": "Get Started with Drizzle and PostgreSQL"}
+nav_next: {"path": "../singlestore-new/index.md", "title": "Get Started with Drizzle and SingleStore"}
 ---
 
 ## Get Started with Drizzle and SingleStore in existing project
@@ -67,7 +67,7 @@ Create a `.env` file in the root of your project and add your database connectio
 
 #### Step 3 - Setup Drizzle config file[](#step-3---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -141,7 +141,7 @@ export const usersTable = singlestoreTable(
 );
 ```
 
-Learn more about introspection in the [documentation](drizzle/docs/drizzle-kit-pull/index.md).
+Learn more about introspection in the [documentation](../../drizzle-kit-pull/index.md).
 
 #### Step 5 - Transfer code to your actual schema file[](#step-5---transfer-code-to-your-actual-schema-file)
 
@@ -340,7 +340,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](../../drizzle-kit-push/index.md).
 
 Tips
 
@@ -358,7 +358,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](../../kit-overview/index.md).
 
 #### Step 11 - Query the database with a new field (optional)[](#step-11---query-the-database-with-a-new-field-optional)
 

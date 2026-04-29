@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:46.650Z"
 content_hash: "2b636f50b1bf9e93649e15d3cc8f753846ba46dfd656c1ccf7779432b50c411e"
 menu_path: ["Detect when code is executed with Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/deflate/index.md", "title": "Compress and decompress data with DEFLATE"}
-nav_next: {"path": "bun/docs/guides/util/entrypoint/index.md", "title": "Check if the current file is the entrypoint"}
+nav_prev: {"path": "../deflate/index.md", "title": "Compress and decompress data with DEFLATE"}
+nav_next: {"path": "../entrypoint/index.md", "title": "Check if the current file is the entrypoint"}
 ---
 
 [Skip to main content](#content-area)

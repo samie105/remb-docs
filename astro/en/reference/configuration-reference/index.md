@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:57.941Z"
 content_hash: "072d7c5a65864301b3caec46ef97fefb522de2848f4965347c74acdf1d8de5bc"
 menu_path: ["Configuration Reference"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/directives-reference/index.md", "title": "Template directives reference"}
-nav_next: {"path": "astro/en/reference/cli-reference/index.md", "title": "CLI Commands"}
+nav_prev: {"path": "../directives-reference/index.md", "title": "Template directives reference"}
+nav_next: {"path": "../cli-reference/index.md", "title": "CLI Commands"}
 ---
 
 # Configuration Reference

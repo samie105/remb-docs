@@ -10,8 +10,8 @@ content_hash: "c0d4a43fc8a416f0a85ac0147cc4aa9f2c444b96a77571a492e2691f870352a2"
 menu_path: ["PostgreSQL: Documentation: 18: 35.48. sql_features"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/infoschema-sequences.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.47.\u00a0sequences"}
-nav_next: {"path": "postgres/docs/current/infoschema-sql-implementation-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.49.\u00a0sql_implementation_info"}
+nav_prev: {"path": "../infoschema-sequences.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.47.\u00a0sequences"}
+nav_next: {"path": "../infoschema-sql-implementation-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.49.\u00a0sql_implementation_info"}
 ---
 
 The table `sql_features` contains information about which formal features defined in the SQL standard are supported by PostgreSQL. This is the same information that is presented in [Appendix D](https://www.postgresql.org/docs/current/features.html "Appendix D. SQL Conformance"). There you can also find some additional background information.

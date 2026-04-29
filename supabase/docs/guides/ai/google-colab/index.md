@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:37.798Z"
 content_hash: "0f95b0240c13e60078551b5d43f9938fbf4a40080c9c20823022ae670afa1341"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Google Colab","Google Colab"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Google Colab","Google Colab"]
-nav_prev: {"path": "supabase/docs/guides/ai/going-to-prod/index.md", "title": "Going to Production"}
-nav_next: {"path": "supabase/docs/guides/ai/hugging-face/index.md", "title": "Hugging Face Inference API"}
+nav_prev: {"path": "../going-to-prod/index.md", "title": "Going to Production"}
+nav_next: {"path": "../hugging-face/index.md", "title": "Hugging Face Inference API"}
 ---
 
 # 

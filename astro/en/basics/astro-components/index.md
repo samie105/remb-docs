@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:52.834Z"
 content_hash: "b832dce6993cd041bbee22c14b15291f42d4a541710144b598adda034435f5a0"
 menu_path: ["Components"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/view-transitions/index.md", "title": "View transitions"}
-nav_next: {"path": "astro/en/basics/layouts/index.md", "title": "Layouts"}
+nav_prev: {"path": "../../guides/view-transitions/index.md", "title": "View transitions"}
+nav_next: {"path": "../layouts/index.md", "title": "Layouts"}
 ---
 
 # Components

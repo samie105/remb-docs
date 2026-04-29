@@ -11,8 +11,8 @@ menu_path: ["usePathname"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-params/index.md", "title": "useParams"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
+nav_prev: {"path": "../use-params/index.md", "title": "useParams"}
+nav_next: {"path": "../use-report-web-vitals/index.md", "title": "useReportWebVitals"}
 ---
 
 # usePathname

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:35.159Z"
 content_hash: "ecc3a8d67d5edc9d3a5466d96b1bcbf127c4b766c15095b06842d1365625c0c1"
 menu_path: ["Deploy your Astro Site to Netlify"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/microsoft-azure/index.md", "title": "Deploy your Astro Site to Microsoft Azure"}
-nav_next: {"path": "astro/en/guides/deploy/railway/index.md", "title": "Deploy your Astro Site with Railway"}
+nav_prev: {"path": "../microsoft-azure/index.md", "title": "Deploy your Astro Site to Microsoft Azure"}
+nav_next: {"path": "../railway/index.md", "title": "Deploy your Astro Site with Railway"}
 ---
 
 # Deploy your Astro Site to Netlify

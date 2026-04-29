@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:08.487Z"
 content_hash: "6d71da817cda1c2d380812d1d4293fc0093d89eadb86b6052a7e8edb67085d52"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis CLI","→","Redis CLI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis CLI","→","Redis CLI"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/sentinel-clients/index.md", "title": "Sentinel client spec"}
-nav_next: {"path": "redis/docs/latest/develop/tools/insight/index.md", "title": "Redis Insight"}
+nav_prev: {"path": "../../reference/sentinel-clients/index.md", "title": "Sentinel client spec"}
+nav_next: {"path": "../insight/index.md", "title": "Redis Insight"}
 ---
 
 # Redis CLI

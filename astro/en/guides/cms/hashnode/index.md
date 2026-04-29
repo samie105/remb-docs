@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:28.186Z"
 content_hash: "668ba8d7ff2cb0ef6e77c236cb5e7cc99a958bca97a379b3db43701ab511fa2a"
 menu_path: ["Hashnode & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/gitcms/index.md", "title": "GitCMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/hygraph/index.md", "title": "Hygraph & Astro"}
+nav_prev: {"path": "../gitcms/index.md", "title": "GitCMS & Astro"}
+nav_next: {"path": "../hygraph/index.md", "title": "Hygraph & Astro"}
 ---
 
 # Hashnode & Astro

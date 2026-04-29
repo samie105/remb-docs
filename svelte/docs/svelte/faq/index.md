@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:42.402Z"
 content_hash: "e75c9761b229abd5646ea9179d64ba051ca8f1abb7f9a0cce94a66c701f44b5e"
 menu_path: ["Frequently asked questions"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/v5-migration-guide/index.md", "title": "Svelte 5 migration guide"}
-nav_next: {"path": "svelte/docs/svelte/svelte/index.md", "title": "svelte"}
+nav_prev: {"path": "../v5-migration-guide/index.md", "title": "Svelte 5 migration guide"}
+nav_next: {"path": "../svelte/index.md", "title": "svelte"}
 ---
 
 ## I'm new to Svelte. Where should I start?[](#I'm-new-to-Svelte.-Where-should-I-start)

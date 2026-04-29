@@ -10,13 +10,13 @@ content_hash: "bcf1f567c202016009df13de71fe067abb9c546440a2babd5d02141288231731"
 menu_path: ["PostgreSQL: Documentation: 18: 53.33. pg_timezone_abbrevs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/view-pg-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.22.\u00a0pg_rules"}
-nav_next: {"path": "postgres/docs/current/view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
+nav_prev: {"path": "../view-pg-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.22.\u00a0pg_rules"}
+nav_next: {"path": "../view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-timezone-abbrevs.html "PostgreSQL devel - 53.33. pg_timezone_abbrevs")
 
-The view `pg_timezone_abbrevs` provides a list of time zone abbreviations that are currently recognized by the datetime input routines. The contents of this view change when the [TimeZone](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE) or [timezone\_abbreviations](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE-ABBREVIATIONS) run-time parameters are modified.
+The view `pg_timezone_abbrevs` provides a list of time zone abbreviations that are currently recognized by the datetime input routines. The contents of this view change when the [TimeZone](../runtime-config-client.html/index.md#GUC-TIMEZONE) or [timezone\_abbreviations](../runtime-config-client.html/index.md#GUC-TIMEZONE-ABBREVIATIONS) run-time parameters are modified.
 
 **Table 53.33. `pg_timezone_abbrevs` Columns**
 

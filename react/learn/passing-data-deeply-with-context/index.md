@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:32.940Z"
 content_hash: "0fb3a8eea4b1cd771e58969083b3824f9c23232df205484d873246e637fe168d"
 menu_path: ["Passing Data Deeply with Context"]
 section_path: []
-nav_prev: {"path": "react/learn/extracting-state-logic-into-a-reducer/index.md", "title": "Extracting State Logic into a Reducer"}
-nav_next: {"path": "react/learn/scaling-up-with-reducer-and-context/index.md", "title": "Scaling Up with Reducer and Context"}
+nav_prev: {"path": "../extracting-state-logic-into-a-reducer/index.md", "title": "Extracting State Logic into a Reducer"}
+nav_next: {"path": "../scaling-up-with-reducer-and-context/index.md", "title": "Scaling Up with Reducer and Context"}
 ---
 
 Usually, you will pass information from a parent component to a child component via props. But passing props can become verbose and inconvenient if you have to pass them through many components in the middle, or if many components in your app need the same information. _Context_ lets the parent component make some information available to any component in the tree below it—no matter how deep—without passing it explicitly through props.
@@ -24,9 +24,9 @@ Usually, you will pass information from a parent component to a child component 
 
 ## The problem with passing props[](#the-problem-with-passing-props "Link for The problem with passing props ")
 
-[Passing props](react/learn/passing-props-to-a-component/index.md) is a great way to explicitly pipe data through your UI tree to the components that use it.
+[Passing props](../passing-props-to-a-component/index.md) is a great way to explicitly pipe data through your UI tree to the components that use it.
 
-But passing props can become verbose and inconvenient when you need to pass some prop deeply through the tree, or if many components need the same prop. The nearest common ancestor could be far removed from the components that need data, and [lifting state up](react/learn/sharing-state-between-components/index.md) that high can lead to a situation called “prop drilling”.
+But passing props can become verbose and inconvenient when you need to pass some prop deeply through the tree, or if many components need the same prop. The nearest common ancestor could be far removed from the components that need data, and [lifting state up](../sharing-state-between-components/index.md) that high can lead to a situation called “prop drilling”.
 
 Lifting state up
 
@@ -192,8 +192,8 @@ Context is very tempting to use! However, this also means it’s too easy to ove
 
 Here’s a few alternatives you should consider before using context:
 
-1.  **Start by [passing props.](react/learn/passing-props-to-a-component/index.md)** If your components are not trivial, it’s not unusual to pass a dozen props down through a dozen components. It may feel like a slog, but it makes it very clear which components use which data! The person maintaining your code will be glad you’ve made the data flow explicit with props.
-2.  **Extract components and [pass JSX as `children`](react/learn/passing-props-to-a-component/index.md#passing-jsx-as-children) to them.** If you pass some data through many layers of intermediate components that don’t use that data (and only pass it further down), this often means that you forgot to extract some components along the way. For example, maybe you pass data props like `posts` to visual components that don’t use them directly, like `<Layout posts={posts} />`. Instead, make `Layout` take `children` as a prop, and render `<Layout><Posts posts={posts} /></Layout>`. This reduces the number of layers between the component specifying the data and the one that needs it.
+1.  **Start by [passing props.](../passing-props-to-a-component/index.md)** If your components are not trivial, it’s not unusual to pass a dozen props down through a dozen components. It may feel like a slog, but it makes it very clear which components use which data! The person maintaining your code will be glad you’ve made the data flow explicit with props.
+2.  **Extract components and [pass JSX as `children`](../passing-props-to-a-component/index.md#passing-jsx-as-children) to them.** If you pass some data through many layers of intermediate components that don’t use that data (and only pass it further down), this often means that you forgot to extract some components along the way. For example, maybe you pass data props like `posts` to visual components that don’t use them directly, like `<Layout posts={posts} />`. Instead, make `Layout` take `children` as a prop, and render `<Layout><Posts posts={posts} /></Layout>`. This reduces the number of layers between the component specifying the data and the one that needs it.
 
 If neither of these approaches works well for you, consider context.
 
@@ -202,7 +202,7 @@ If neither of these approaches works well for you, consider context.
 *   **Theming:** If your app lets the user change its appearance (e.g. dark mode), you can put a context provider at the top of your app, and use that context in components that need to adjust their visual look.
 *   **Current account:** Many components might need to know the currently logged in user. Putting it in context makes it convenient to read it anywhere in the tree. Some apps also let you operate multiple accounts at the same time (e.g. to leave a comment as a different user). In those cases, it can be convenient to wrap a part of the UI into a nested provider with a different current account value.
 *   **Routing:** Most routing solutions use context internally to hold the current route. This is how every link “knows” whether it’s active or not. If you build your own router, you might want to do it too.
-*   **Managing state:** As your app grows, you might end up with a lot of state closer to the top of your app. Many distant components below may want to change it. It is common to [use a reducer together with context](react/learn/scaling-up-with-reducer-and-context/index.md) to manage complex state and pass it down to distant components without too much hassle.
+*   **Managing state:** As your app grows, you might end up with a lot of state closer to the top of your app. Many distant components below may want to change it. It is common to [use a reducer together with context](../scaling-up-with-reducer-and-context/index.md) to manage complex state and pass it down to distant components without too much hassle.
 
 Context is not limited to static values. If you pass a different value on the next render, React will update all the components reading it below! This is why context is often used in combination with state.
 

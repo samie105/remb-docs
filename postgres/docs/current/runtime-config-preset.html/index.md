@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:33:04.993Z"
 content_hash: "17282963ce587cf3b5d95dd9b9aa04cf510268281264118bedb31394aff364cd"
 menu_path: ["PostgreSQL: Documentation: 18: 19.15. Preset Options"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/runtime-config-connection.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.3.\u00a0Connections and Authentication"}
-nav_next: {"path": "postgres/docs/current/runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
+nav_prev: {"path": "../runtime-config-connection.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.3.\u00a0Connections and Authentication"}
+nav_next: {"path": "../runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
 ---
 
 The following “parameters” are read-only. As such, they have been excluded from the sample `postgresql.conf` file. These options report various aspects of PostgreSQL behavior that might be of interest to certain applications, particularly administrative front-ends. Most of them are determined when PostgreSQL is compiled or when it is installed.
 
 `block_size` (`integer`) [#](#GUC-BLOCK-SIZE)
 
-Reports the size of a disk block. It is determined by the value of `BLCKSZ` when building the server. The default value is 8192 bytes. The meaning of some configuration variables (such as [shared\_buffers](postgres/docs/current/runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS)) is influenced by `block_size`. See [Section 19.4](https://www.postgresql.org/docs/current/runtime-config-resource.html "19.4. Resource Consumption") for information.
+Reports the size of a disk block. It is determined by the value of `BLCKSZ` when building the server. The default value is 8192 bytes. The meaning of some configuration variables (such as [shared\_buffers](../runtime-config-resource.html/index.md#GUC-SHARED-BUFFERS)) is influenced by `block_size`. See [Section 19.4](https://www.postgresql.org/docs/current/runtime-config-resource.html "19.4. Resource Consumption") for information.
 
 `data_checksums` (`boolean`) [#](#GUC-DATA-CHECKSUMS)
 
@@ -33,7 +33,7 @@ Reports whether PostgreSQL has been built with assertions enabled. That is the c
 
 `huge_pages_status` (`enum`) [#](#GUC-HUGE-PAGES-STATUS)
 
-Reports the state of huge pages in the current instance: `on`, `off`, or `unknown` (if displayed with `postgres -C`). This parameter is useful to determine whether allocation of huge pages was successful under `huge_pages=try`. See [huge\_pages](postgres/docs/current/runtime-config-resource.html/index.md#GUC-HUGE-PAGES) for more information.
+Reports the state of huge pages in the current instance: `on`, `off`, or `unknown` (if displayed with `postgres -C`). This parameter is useful to determine whether allocation of huge pages was successful under `huge_pages=try`. See [huge\_pages](../runtime-config-resource.html/index.md#GUC-HUGE-PAGES) for more information.
 
 `integer_datetimes` (`boolean`) [#](#GUC-INTEGER-DATETIMES)
 
@@ -57,7 +57,7 @@ Reports the maximum number of index keys. It is determined by the value of `INDE
 
 `num_os_semaphores` (`integer`) [#](#GUC-NUM-OS-SEMAPHORES)
 
-Reports the number of semaphores that are needed for the server based on the configured number of allowed connections ([max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS)), allowed autovacuum worker processes ([autovacuum\_max\_workers](postgres/docs/current/runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-MAX-WORKERS)), allowed WAL sender processes ([max\_wal\_senders](postgres/docs/current/runtime-config-replication.html/index.md#GUC-MAX-WAL-SENDERS)), allowed background processes ([max\_worker\_processes](postgres/docs/current/runtime-config-resource.html/index.md#GUC-MAX-WORKER-PROCESSES)), etc.
+Reports the number of semaphores that are needed for the server based on the configured number of allowed connections ([max\_connections](../runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS)), allowed autovacuum worker processes ([autovacuum\_max\_workers](../runtime-config-vacuum.html/index.md#GUC-AUTOVACUUM-MAX-WORKERS)), allowed WAL sender processes ([max\_wal\_senders](../runtime-config-replication.html/index.md#GUC-MAX-WAL-SENDERS)), allowed background processes ([max\_worker\_processes](../runtime-config-resource.html/index.md#GUC-MAX-WORKER-PROCESSES)), etc.
 
 `segment_size` (`integer`) [#](#GUC-SEGMENT-SIZE)
 
@@ -65,7 +65,7 @@ Reports the number of blocks (pages) that can be stored within a file segment. I
 
 `server_encoding` (`string`) [#](#GUC-SERVER-ENCODING)
 
-Reports the database encoding (character set). It is determined when the database is created. Ordinarily, clients need only be concerned with the value of [client\_encoding](postgres/docs/current/runtime-config-client.html/index.md#GUC-CLIENT-ENCODING).
+Reports the database encoding (character set). It is determined when the database is created. Ordinarily, clients need only be concerned with the value of [client\_encoding](../runtime-config-client.html/index.md#GUC-CLIENT-ENCODING).
 
 `server_version` (`string`) [#](#GUC-SERVER-VERSION)
 
@@ -81,7 +81,7 @@ Reports the size of the main shared memory area, rounded up to the nearest megab
 
 `shared_memory_size_in_huge_pages` (`integer`) [#](#GUC-SHARED-MEMORY-SIZE-IN-HUGE-PAGES)
 
-Reports the number of huge pages that are needed for the main shared memory area based on the specified [huge\_page\_size](postgres/docs/current/runtime-config-resource.html/index.md#GUC-HUGE-PAGE-SIZE). If huge pages are not supported, this will be `-1`.
+Reports the number of huge pages that are needed for the main shared memory area based on the specified [huge\_page\_size](../runtime-config-resource.html/index.md#GUC-HUGE-PAGE-SIZE). If huge pages are not supported, this will be `-1`.
 
 This setting is supported only on Linux. It is always set to `-1` on other platforms. For more details about using huge pages on Linux, see [Section 18.4.5](https://www.postgresql.org/docs/current/kernel-resources.html#LINUX-HUGE-PAGES "18.4.5. Linux Huge Pages").
 

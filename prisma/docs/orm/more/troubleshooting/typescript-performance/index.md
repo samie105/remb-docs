@@ -10,8 +10,8 @@ content_hash: "e78bd01f96cf7c41410799dd058de1c2feece3a2e7a76d56374e1d9b3b44150e"
 menu_path: ["TypeScript performance"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/raw-sql-comparisons/index.md", "title": "Raw SQL comparisons"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
+nav_prev: {"path": "../raw-sql-comparisons/index.md", "title": "Raw SQL comparisons"}
+nav_next: {"path": "../../../prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
 ---
 
 Troubleshooting

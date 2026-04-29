@@ -10,8 +10,8 @@ content_hash: "8eca51d75bed21479e0e69d6c1f11954b95e8b5d12c784ff52d14ac48a24640b"
 menu_path: ["@std/msgpack"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/std/media-types/index.md", "title": "@std/media-types"}
-nav_next: {"path": "deno/runtime/reference/std/net/index.md", "title": "@std/net"}
+nav_prev: {"path": "../media-types/index.md", "title": "@std/media-types"}
+nav_next: {"path": "../net/index.md", "title": "@std/net"}
 ---
 
 **On this page**

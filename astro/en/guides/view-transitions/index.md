@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:14.465Z"
 content_hash: "4314ab8012eb9c5507c43c338e3d2a376957f8a2ae612a19007b1748c89353ca"
 menu_path: ["View transitions"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/prefetch/index.md", "title": "Prefetch"}
-nav_next: {"path": "astro/en/basics/astro-components/index.md", "title": "Components"}
+nav_prev: {"path": "../prefetch/index.md", "title": "Prefetch"}
+nav_next: {"path": "../../basics/astro-components/index.md", "title": "Components"}
 ---
 
 # View transitions

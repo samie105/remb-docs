@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:39.275Z"
 content_hash: "1a4f6b127956c5d32b033ea678562e08ea564dce8f3dd000c2b289b09a3b973d"
 menu_path: ["StudioCMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/strapi/index.md", "title": "Strapi & Astro"}
-nav_next: {"path": "astro/en/guides/cms/tina-cms/index.md", "title": "Tina CMS & Astro"}
+nav_prev: {"path": "../strapi/index.md", "title": "Strapi & Astro"}
+nav_next: {"path": "../tina-cms/index.md", "title": "Tina CMS & Astro"}
 ---
 
 # StudioCMS & Astro

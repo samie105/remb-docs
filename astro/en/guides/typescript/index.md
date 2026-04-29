@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:46.983Z"
 content_hash: "61dce6d0f2f235a17aada11911390578ecb82bb282fdad3265d3c08407968cba"
 menu_path: ["TypeScript"]
 section_path: []
-nav_prev: {"path": "astro/en/editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "astro/en/guides/environment-variables/index.md", "title": "Using environment variables"}
+nav_prev: {"path": "../../editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "../environment-variables/index.md", "title": "Using environment variables"}
 ---
 
 # TypeScript

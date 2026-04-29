@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:29.776Z"
 content_hash: "99136ad8be720239c36e9e459ba815d9cbe51e6f5d107f1b0b66b66539c1cf33"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        Overview","→","Overview"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        Overview","→","Overview"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/install/index.md", "title": "Install RedisVL"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/index.md", "title": "User Guides"}
+nav_prev: {"path": "../install/index.md", "title": "Install RedisVL"}
+nav_next: {"path": "../user_guide/index.md", "title": "User Guides"}
 ---
 
 # Overview

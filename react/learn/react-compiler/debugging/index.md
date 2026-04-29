@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:23.075Z"
 content_hash: "69baee129d424d32b1eea947b43f098b0ff3d9f9f35ed020ecf182a988943018"
 menu_path: ["Debugging and Troubleshooting"]
 section_path: []
-nav_prev: {"path": "react/learn/react-compiler/incremental-adoption/index.md", "title": "Incremental Adoption"}
-nav_next: {"path": "react/learn/describing-the-ui/index.md", "title": "Describing the UI"}
+nav_prev: {"path": "../incremental-adoption/index.md", "title": "Incremental Adoption"}
+nav_next: {"path": "../../describing-the-ui/index.md", "title": "Describing the UI"}
 ---
 
 This guide helps you identify and fix issues when using React Compiler. Learn how to debug compilation problems and resolve common issues.
@@ -94,4 +94,4 @@ If you believe you’ve found a compiler bug:
 ## Next Steps[](#next-steps "Link for Next Steps ")
 
 *   Review the [Rules of React](https://react.dev/reference/rules) to prevent issues
-*   Check the [incremental adoption guide](react/learn/react-compiler/incremental-adoption/index.md) for gradual rollout strategies
+*   Check the [incremental adoption guide](../incremental-adoption/index.md) for gradual rollout strategies

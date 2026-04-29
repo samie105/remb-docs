@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:55.296Z"
 content_hash: "df9583bf85984c6f85741cecb9f8d4f3f477f8a9d014d08a96cf176d0af43527"
 menu_path: ["Adding Interactivity"]
 section_path: []
-nav_prev: {"path": "react/learn/understanding-your-ui-as-a-tree/index.md", "title": "Understanding Your UI as a Tree"}
-nav_next: {"path": "react/learn/responding-to-events/index.md", "title": "Responding to Events"}
+nav_prev: {"path": "../understanding-your-ui-as-a-tree/index.md", "title": "Understanding Your UI as a Tree"}
+nav_next: {"path": "../responding-to-events/index.md", "title": "Responding to Events"}
 ---
 
 Some things on the screen update in response to user input. For example, clicking an image gallery switches the active image. In React, data that changes over time is called _state._ You can add state to any component, and update it as needed. In this chapter, you’ll learn how to write components that handle interactions, update their state, and display different output over time.
@@ -78,7 +78,7 @@ This behavior helps you avoid subtle bugs. Here is a little chat app. Try to gue
 
 This component is buggy: clicking “+3” increments the score only once.
 
-[State as a Snapshot](react/learn/state-as-a-snapshot/index.md) explains why this is happening. Setting state requests a new re-render, but does not change it in the already running code. So `score` continues to be `0` right after you call `setScore(score + 1)`.
+[State as a Snapshot](../state-as-a-snapshot/index.md) explains why this is happening. Setting state requests a new re-render, but does not change it in the already running code. So `score` continues to be `0` right after you call `setScore(score + 1)`.
 
 ```
 console.log(score);  // 0setScore(score + 1); // setScore(0 + 1);console.log(score);  // 0setScore(score + 1); // setScore(0 + 1);console.log(score);  // 0setScore(score + 1); // setScore(0 + 1);console.log(score);  // 0
@@ -108,6 +108,6 @@ If copying arrays in code gets tedious, you can use a library like [Immer](https
 
 ## What’s next?[](#whats-next "Link for What’s next? ")
 
-Head over to [Responding to Events](react/learn/responding-to-events/index.md) to start reading this chapter page by page!
+Head over to [Responding to Events](../responding-to-events/index.md) to start reading this chapter page by page!
 
-Or, if you’re already familiar with these topics, why not read about [Managing State](react/learn/managing-state/index.md)?
+Or, if you’re already familiar with these topics, why not read about [Managing State](../managing-state/index.md)?

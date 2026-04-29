@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:58.569Z"
 content_hash: "4d0cc91d9b93580af590936350ddbf079a42f21391f84882db95e09f33b43829"
 menu_path: ["<svelte:boundary>"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/nested-style-elements/index.md", "title": "Nested <style> elements"}
-nav_next: {"path": "svelte/docs/svelte/svelte-window/index.md", "title": "<svelte:window>"}
+nav_prev: {"path": "../nested-style-elements/index.md", "title": "Nested <style> elements"}
+nav_next: {"path": "../svelte-window/index.md", "title": "<svelte:window>"}
 ---
 
 ```

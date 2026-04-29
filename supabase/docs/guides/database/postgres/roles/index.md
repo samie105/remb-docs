@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:40.804Z"
 content_hash: "d974b18fc666cf52647cd826d75ccec0acc0f77ee6f2f6de9df9ae94f2f63a7e"
 menu_path: ["Database","Database","Access and security","Access and security","Managing Postgres Roles","Managing Postgres Roles"]
 section_path: ["Database","Database","Access and security","Access and security","Managing Postgres Roles","Managing Postgres Roles"]
-nav_prev: {"path": "supabase/docs/guides/database/postgres/indexes/index.md", "title": "Managing Indexes in Postgres"}
-nav_next: {"path": "supabase/docs/guides/database/postgres/roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
+nav_prev: {"path": "../indexes/index.md", "title": "Managing Indexes in Postgres"}
+nav_next: {"path": "../roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
 ---
 
 # 

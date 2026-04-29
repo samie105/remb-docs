@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:58.257Z"
 content_hash: "134e9ac3f87b1dc868854659278d3d4abfb93e4f581e998fa67405010c021a46"
 menu_path: ["Build an HTTP server using Express and Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/ecosystem/elysia/index.md", "title": "Build an HTTP server using Elysia and Bun"}
-nav_next: {"path": "bun/docs/guides/ecosystem/gel/index.md", "title": "Use Gel with Bun"}
+nav_prev: {"path": "../elysia/index.md", "title": "Build an HTTP server using Elysia and Bun"}
+nav_next: {"path": "../gel/index.md", "title": "Use Gel with Bun"}
 ---
 
 [Skip to main content](#content-area)

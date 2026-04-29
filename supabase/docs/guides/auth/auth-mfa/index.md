@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:17.767Z"
 content_hash: "1f73563d505b6d5b7eae7d249f74be5edd3b87539c80af06e83fb1114d9757cb"
 menu_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-identity-linking/index.md", "title": "Identity Linking"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-mfa/phone/index.md", "title": "Multi-Factor Authentication (Phone)"}
+nav_prev: {"path": "../auth-identity-linking/index.md", "title": "Identity Linking"}
+nav_next: {"path": "phone/index.md", "title": "Multi-Factor Authentication (Phone)"}
 ---
 
 # 

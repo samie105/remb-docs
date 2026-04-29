@@ -11,8 +11,8 @@ menu_path: ["Deploy to Koyeb"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-railway/index.md", "title": "Deploy to Railway"}
+nav_prev: {"path": "../deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
+nav_next: {"path": "../deploy-to-railway/index.md", "title": "Deploy to Railway"}
 ---
 
 Learn how to deploy a Node.js server that uses Prisma ORM to Koyeb Serverless Platform
@@ -39,9 +39,9 @@ The focus of this guide is showing how to deploy projects using Prisma ORM to Ko
 -   [Koyeb](https://www.koyeb.com/) account.
 -   Node.js installed.
 
-At the core of Prisma ORM is the [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) – a declarative configuration where you define your data model and other Prisma ORM-related configuration. The Prisma schema is also a single source of truth for both Prisma Client and Prisma Migrate.
+At the core of Prisma ORM is the [Prisma schema](../../../../prisma-schema/overview/index.md) – a declarative configuration where you define your data model and other Prisma ORM-related configuration. The Prisma schema is also a single source of truth for both Prisma Client and Prisma Migrate.
 
-In this guide, you will create the database schema with [Prisma Migrate](prisma/docs/orm/prisma-migrate/index.md) to create the database schema. Prisma Migrate is based on the Prisma schema and works by generating `.sql` migration files that are executed against the database.
+In this guide, you will create the database schema with [Prisma Migrate](../../../../prisma-migrate/index.md) to create the database schema. Prisma Migrate is based on the Prisma schema and works by generating `.sql` migration files that are executed against the database.
 
 Migrate comes with two primary workflows:
 

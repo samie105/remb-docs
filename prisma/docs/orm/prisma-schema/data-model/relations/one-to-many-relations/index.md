@@ -10,8 +10,8 @@ content_hash: "da87fa2b0c5e95f3108d298b2d5e36069682f8fad08e652fca9013b98e3a8f25"
 menu_path: ["One-to-many relations"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md", "title": "Many-to-many relations"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-one-relations/index.md", "title": "One-to-one relations"}
+nav_prev: {"path": "../many-to-many-relations/index.md", "title": "Many-to-many relations"}
+nav_next: {"path": "../one-to-one-relations/index.md", "title": "One-to-one relations"}
 ---
 
 How to define and work with one-to-many relations in Prisma.

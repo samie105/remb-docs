@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:43.292Z"
 content_hash: "c01e96e28624e9f15dc3866d575df8b3157a63ab55283df2b83c126b1e64523e"
 menu_path: ["Convert a Buffer to a ReadableStream"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/buffer-to-blob/index.md", "title": "Convert a Buffer to a blob"}
-nav_next: {"path": "bun/docs/guides/binary/buffer-to-string/index.md", "title": "Convert a Buffer to a string"}
+nav_prev: {"path": "../buffer-to-blob/index.md", "title": "Convert a Buffer to a blob"}
+nav_next: {"path": "../buffer-to-string/index.md", "title": "Convert a Buffer to a string"}
 ---
 
 [Skip to main content](#content-area)

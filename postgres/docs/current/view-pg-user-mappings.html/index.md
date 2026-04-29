@@ -10,8 +10,8 @@ content_hash: "5729f0b7fd3c7770604d1acc3f0e759cd8d94965ac3c87d6813290619449d177"
 menu_path: ["PostgreSQL: Documentation: 18: 53.36. pg_user_mappings"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
-nav_next: {"path": "postgres/docs/current/view-pg-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.35.\u00a0pg_user"}
+nav_prev: {"path": "../view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
+nav_next: {"path": "../view-pg-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.35.\u00a0pg_user"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-user-mappings.html "PostgreSQL devel - 53.36. pg_user_mappings")

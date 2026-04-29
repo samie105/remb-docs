@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:48.233Z"
 content_hash: "2729b32799825b3d7fda3105780b0f4faa1280fd30a05ef12f039a027ba6116e"
 menu_path: ["Separating Events from Effects"]
 section_path: []
-nav_prev: {"path": "react/learn/lifecycle-of-reactive-effects/index.md", "title": "Lifecycle of Reactive Effects"}
-nav_next: {"path": "react/learn/removing-effect-dependencies/index.md", "title": "Removing Effect Dependencies"}
+nav_prev: {"path": "../lifecycle-of-reactive-effects/index.md", "title": "Lifecycle of Reactive Effects"}
+nav_next: {"path": "../removing-effect-dependencies/index.md", "title": "Removing Effect Dependencies"}
 ---
 
 Event handlers only re-run when you perform the same interaction again. Unlike event handlers, Effects re-synchronize if some value they read, like a prop or a state variable, is different from what it was during the last render. Sometimes, you also want a mix of both behaviors: an Effect that re-runs in response to some values but not others. This page will teach you how to do that.
@@ -32,7 +32,7 @@ Imagine you’re implementing a chat room component. Your requirements look like
 1.  Your component should automatically connect to the selected chat room.
 2.  When you click the “Send” button, it should send a message to the chat.
 
-Let’s say you’ve already implemented the code for them, but you’re not sure where to put it. Should you use event handlers or Effects? Every time you need to answer this question, consider [_why_ the code needs to run.](react/learn/synchronizing-with-effects/index.md#what-are-effects-and-how-are-they-different-from-events)
+Let’s say you’ve already implemented the code for them, but you’re not sure where to put it. Should you use event handlers or Effects? Every time you need to answer this question, consider [_why_ the code needs to run.](../synchronizing-with-effects/index.md#what-are-effects-and-how-are-they-different-from-events)
 
 ### Event handlers run in response to specific interactions[](#event-handlers-run-in-response-to-specific-interactions "Link for Event handlers run in response to specific interactions ")
 
@@ -54,7 +54,7 @@ The _reason_ to run this code is not some particular interaction. It doesn’t m
 function ChatRoom({ roomId }) {// ...useEffect(() => {const connection = createConnection(serverUrl, roomId);connection.connect();return () => {connection.disconnect();};}, [roomId]);// ...}
 ```
 
-With this code, you can be sure that there is always an active connection to the currently selected chat server, _regardless_ of the specific interactions performed by the user. Whether the user has only opened your app, selected a different room, or navigated to another screen and back, your Effect ensures that the component will _remain synchronized_ with the currently selected room, and will [re-connect whenever it’s necessary.](react/learn/lifecycle-of-reactive-effects/index.md#why-synchronization-may-need-to-happen-more-than-once)
+With this code, you can be sure that there is always an active connection to the currently selected chat server, _regardless_ of the specific interactions performed by the user. Whether the user has only opened your app, selected a different room, or navigated to another screen and back, your Effect ensures that the component will _remain synchronized_ with the currently selected room, and will [re-connect whenever it’s necessary.](../lifecycle-of-reactive-effects/index.md#why-synchronization-may-need-to-happen-more-than-once)
 
 ## Reactive values and reactive logic[](#reactive-values-and-reactive-logic "Link for Reactive values and reactive logic ")
 
@@ -71,7 +71,7 @@ const serverUrl = 'https://localhost:1234';function ChatRoom({ roomId }) {const 
 Reactive values like these can change due to a re-render. For example, the user may edit the `message` or choose a different `roomId` in a dropdown. Event handlers and Effects respond to changes differently:
 
 *   **Logic inside event handlers is _not reactive._** It will not run again unless the user performs the same interaction (e.g. a click) again. Event handlers can read reactive values without “reacting” to their changes.
-*   **Logic inside Effects is _reactive._** If your Effect reads a reactive value, [you have to specify it as a dependency.](react/learn/lifecycle-of-reactive-effects/index.md#effects-react-to-reactive-values) Then, if a re-render causes that value to change, React will re-run your Effect’s logic with the new value.
+*   **Logic inside Effects is _reactive._** If your Effect reads a reactive value, [you have to specify it as a dependency.](../lifecycle-of-reactive-effects/index.md#effects-react-to-reactive-values) Then, if a re-render causes that value to change, React will re-run your Effect’s logic with the new value.
 
 Let’s revisit the previous example to illustrate this difference.
 
@@ -115,7 +115,7 @@ For example, imagine that you want to show a notification when the user connects
 function ChatRoom({ roomId, theme }) {useEffect(() => {const connection = createConnection(serverUrl, roomId);connection.on('connected', () => {showNotification('Connected!', theme);});connection.connect();// ...
 ```
 
-However, `theme` is a reactive value (it can change as a result of re-rendering), and [every reactive value read by an Effect must be declared as its dependency.](react/learn/lifecycle-of-reactive-effects/index.md#react-verifies-that-you-specified-every-reactive-value-as-a-dependency) Now you have to specify `theme` as a dependency of your Effect:
+However, `theme` is a reactive value (it can change as a result of re-rendering), and [every reactive value read by an Effect must be declared as its dependency.](../lifecycle-of-reactive-effects/index.md#react-verifies-that-you-specified-every-reactive-value-as-a-dependency) Now you have to specify `theme` as a dependency of your Effect:
 
 ```
 function ChatRoom({ roomId, theme }) {useEffect(() => {const connection = createConnection(serverUrl, roomId);connection.on('connected', () => {showNotification('Connected!', theme);});connection.connect();return () => {connection.disconnect()};}, [roomId, theme]); // ✅ All dependencies declared// ...
@@ -337,7 +337,7 @@ export default function App() {
 
 This doesn’t mean that `useEffectEvent` is _always_ the correct solution. You should only apply it to the lines of code that you don’t want to be reactive. In the above sandbox, you didn’t want the Effect’s code to be reactive with regards to `canMove`. That’s why it made sense to extract an Effect Event.
 
-Read [Removing Effect Dependencies](react/learn/removing-effect-dependencies/index.md) for other correct alternatives to suppressing the linter.
+Read [Removing Effect Dependencies](../removing-effect-dependencies/index.md) for other correct alternatives to suppressing the linter.
 
 ### Limitations of Effect Events[](#limitations-of-effect-events "Link for Limitations of Effect Events ")
 

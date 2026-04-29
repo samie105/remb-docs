@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:18.655Z"
 content_hash: "a43effc392a91a3b8b04b59a25ea25add1da89a408e0371d3002a63987317c8b"
 menu_path: ["Fluent-Schema"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Ecosystem/index.md", "title": "Ecosystem"}
-nav_next: {"path": "fastify/docs/latest/Guides/Getting-Started/index.md", "title": "Getting-Started"}
+nav_prev: {"path": "../Ecosystem/index.md", "title": "Ecosystem"}
+nav_next: {"path": "../Getting-Started/index.md", "title": "Getting-Started"}
 ---
 
 Version: latest (v5.8.x)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:18.237Z"
 content_hash: "b3e6824a3efd4f2adaa50ba25957affc1ac122c57fc4e093d3506d73f70b2e79"
 menu_path: ["Next.js Adapter"]
 section_path: []
-nav_prev: {"path": "trpc/docs/v10/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
-nav_next: {"path": "trpc/docs/v10/server/adapters/standalone/index.md", "title": "Standalone Adapter"}
+nav_prev: {"path": "../fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
+nav_next: {"path": "../standalone/index.md", "title": "Standalone Adapter"}
 ---
 
 Serving your tRPC router in a Next.js project is straight-forward. Just create an API handler in `pages/api/trpc/[trpc].ts` as shown below:
@@ -37,7 +37,7 @@ ts
 
 While you can usually just "set and forget" the API Handler as shown above, sometimes you might want to modify it further.
 
-The API handler created by `createNextApiHandler` and equivalents in other frameworks is just a function that takes `req` and `res` objects. This means you can also modify those objects before passing them to the handler, for example to [enable CORS](trpc/docs/client/cors/index.md).
+The API handler created by `createNextApiHandler` and equivalents in other frameworks is just a function that takes `req` and `res` objects. This means you can also modify those objects before passing them to the handler, for example to [enable CORS](../../../../client/cors/index.md).
 
 pages/api/trpc/\[trpc\].ts
 
@@ -111,7 +111,7 @@ ts
 
 `}`
 
-If you're trying out the Next.js App Router and want to use [route handlers](https://beta.nextjs.org/docs/routing/route-handlers), you can do so by using the [fetch](trpc/docs/v10/server/adapters/fetch/index.md) adapter, as they build on web standard Request and Response objects:
+If you're trying out the Next.js App Router and want to use [route handlers](https://beta.nextjs.org/docs/routing/route-handlers), you can do so by using the [fetch](../fetch/index.md) adapter, as they build on web standard Request and Response objects:
 
 app/api/trpc/\[trpc\]/route.ts
 

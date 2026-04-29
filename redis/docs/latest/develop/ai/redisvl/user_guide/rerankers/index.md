@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:08:40.350Z"
 content_hash: "7e1ca1f16db517e1ac2e94568c9689cc43a7d4c2ac6795a7d66e81f2c8676c46"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Rerankers","→","Rerankers"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        Rerankers","→","Rerankers"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/message_history/index.md", "title": "LLM Message History"}
-nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/semantic_router/index.md", "title": "Semantic Routing"}
+nav_prev: {"path": "../message_history/index.md", "title": "LLM Message History"}
+nav_next: {"path": "../semantic_router/index.md", "title": "Semantic Routing"}
 ---
 
 # Rerankers

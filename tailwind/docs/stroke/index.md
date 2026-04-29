@@ -10,8 +10,8 @@ content_hash: "d1c10ccd1fb28768951c80eb2b037eba5b3b39363c489c8e178cc4b9d160060b"
 menu_path: ["stroke"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/fill/index.md", "title": "fill"}
-nav_next: {"path": "tailwind/docs/stroke-width/index.md", "title": "stroke-width"}
+nav_prev: {"path": "../fill/index.md", "title": "fill"}
+nav_next: {"path": "../stroke-width/index.md", "title": "stroke-width"}
 ---
 
 # stroke

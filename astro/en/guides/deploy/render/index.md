@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:40.080Z"
 content_hash: "f85962d4df8af0f3baffd75cfa62ab9d8623998fc2035278fb5cc0f4089a068d"
 menu_path: ["Deploy your Astro Site to Render"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/railway/index.md", "title": "Deploy your Astro Site with Railway"}
-nav_next: {"path": "astro/en/guides/deploy/seenode/index.md", "title": "Deploy your Astro Site to Seenode"}
+nav_prev: {"path": "../railway/index.md", "title": "Deploy your Astro Site with Railway"}
+nav_next: {"path": "../seenode/index.md", "title": "Deploy your Astro Site to Seenode"}
 ---
 
 # Deploy your Astro Site to Render

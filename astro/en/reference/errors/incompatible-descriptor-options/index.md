@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:03.197Z"
 content_hash: "cc05400f46ab96a83c2b522c23106e83f7ffb1d03e82f2522fe3f00b6e960f6b"
 menu_path: ["Cannot set both densities and widths"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/image-not-found/index.md", "title": "Image not found."}
-nav_next: {"path": "astro/en/reference/errors/incorrect-strategy-for-i18n/index.md", "title": "You can't use the current function with the current strategy"}
+nav_prev: {"path": "../image-not-found/index.md", "title": "Image not found."}
+nav_next: {"path": "../incorrect-strategy-for-i18n/index.md", "title": "You can't use the current function with the current strategy"}
 ---
 
 # Cannot set both densities and widths

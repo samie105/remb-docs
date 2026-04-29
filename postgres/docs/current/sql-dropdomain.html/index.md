@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:19.484Z"
 content_hash: "c8db54d63d6fa6e73a307ffd230f2404f260e6cc41e1d253ef7f38b569567442"
 menu_path: ["PostgreSQL: Documentation: 18: DROP DOMAIN"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-dropdatabase.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DATABASE"}
-nav_next: {"path": "postgres/docs/current/sql-dropeventtrigger.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP EVENT TRIGGER"}
+nav_prev: {"path": "../sql-dropdatabase.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DATABASE"}
+nav_next: {"path": "../sql-dropeventtrigger.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP EVENT TRIGGER"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

@@ -10,8 +10,8 @@ content_hash: "6b3feb9e5eba8b2658b31d13c6f713f93d127e17e174fc3d8254f7e7d76a11c9"
 menu_path: ["text-transform"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/text-underline-offset/index.md", "title": "text-underline-offset"}
-nav_next: {"path": "tailwind/docs/text-overflow/index.md", "title": "text-overflow"}
+nav_prev: {"path": "../text-underline-offset/index.md", "title": "text-underline-offset"}
+nav_next: {"path": "../text-overflow/index.md", "title": "text-overflow"}
 ---
 
 # text-transform

@@ -10,8 +10,8 @@ content_hash: "2d54f2d7b1de98436968c48ddc9ecd314d2dcbe2c51cee313aff43e99d8bd2c2"
 menu_path: ["module - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/inspector/promises/index.md", "title": "inspector/promises - Node documentation"}
-nav_next: {"path": "deno/api/node/net/index.md", "title": "net - Node documentation"}
+nav_prev: {"path": "../inspector/promises/index.md", "title": "inspector/promises - Node documentation"}
+nav_next: {"path": "../net/index.md", "title": "net - Node documentation"}
 ---
 
 ### Usage in Deno

@@ -10,8 +10,8 @@ content_hash: "0fe212ed555e2e2a4b3b587ba4c6cd7f94d9b8c299df39f9e72d8c0d17e7e4df"
 menu_path: ["Working with geometry fields"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md", "title": "Working with Json fields"}
+nav_prev: {"path": "../working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
+nav_next: {"path": "../working-with-json-fields/index.md", "title": "Working with Json fields"}
 ---
 
 # Create an empty migration
@@ -238,8 +238,8 @@ const locationsWithinOrNull = await prisma.location.findMany({
 });
 ```
 
--   [CRUD operations](prisma/docs/orm/prisma-client/queries/crud/index.md) for general query patterns
+-   [CRUD operations](../../queries/crud/index.md) for general query patterns
 -   [Filtering and sorting](https://www.prisma.io/docs/v6/orm/prisma-client/queries/filtering-and-sorting) for more filter options
--   [PostgreSQL extensions](prisma/docs/orm/prisma-schema/postgresql-extensions/index.md) for enabling PostGIS
+-   [PostgreSQL extensions](../../../prisma-schema/postgresql-extensions/index.md) for enabling PostGIS
 -   [PostGIS documentation](https://postgis.net/documentation/) for advanced spatial operations
 -   [GeoJSON specification](https://geojson.org/) for geometry format details

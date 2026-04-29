@@ -11,8 +11,8 @@ menu_path: ["images"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath/index.md", "title": "Custom Next.js Cache Handler"}
+nav_prev: {"path": "../httpAgentOptions/index.md", "title": "httpAgentOptions"}
+nav_next: {"path": "../incrementalCacheHandlerPath/index.md", "title": "Custom Next.js Cache Handler"}
 ---
 
 # images

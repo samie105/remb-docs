@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:38.855Z"
 content_hash: "de12a78fd54a8ee75bee6d74a73bfea6b44586823c0c68469e01e2b09a714bf3"
 menu_path: ["Testing"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/authentication/index.md", "title": "Authentication"}
-nav_next: {"path": "astro/en/getting-started/index.md", "title": "Astro Docs"}
+nav_prev: {"path": "../authentication/index.md", "title": "Authentication"}
+nav_next: {"path": "../../getting-started/index.md", "title": "Astro Docs"}
 ---
 
 # Testing

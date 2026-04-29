@@ -10,8 +10,8 @@ content_hash: "fa53c3667c360b45cc16b3efb8882aeb6f510aa8026ef7185f4b5ce60dbc1b34"
 menu_path: ["TypeScript support"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/getting_started/command_line_interface/index.md", "title": "Command line interface"}
-nav_next: {"path": "deno/runtime/fundamentals/node/index.md", "title": "Node and npm Compatibility"}
+nav_prev: {"path": "../../getting_started/command_line_interface/index.md", "title": "Command line interface"}
+nav_next: {"path": "../node/index.md", "title": "Node and npm Compatibility"}
 ---
 
 # Check the current directory/module

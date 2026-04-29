@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:49.822Z"
 content_hash: "1f1b1a74807c1934ee92cdc424bf92a440683e8d72974831be638664589cc026"
 menu_path: ["Migrating from Gatsby"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-eleventy/index.md", "title": "Migrating from Eleventy"}
-nav_next: {"path": "astro/en/guides/migrate-to-astro/from-gitbook/index.md", "title": "Migrating from GitBook"}
+nav_prev: {"path": "../from-eleventy/index.md", "title": "Migrating from Eleventy"}
+nav_next: {"path": "../from-gitbook/index.md", "title": "Migrating from GitBook"}
 ---
 
 # Migrating from Gatsby

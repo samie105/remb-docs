@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:57.417Z"
 content_hash: "140b7712571d1f7beeeebaacd89c1330a935acbb00878fd93dc1b7aa4ad9b848"
 menu_path: ["Lockfile"]
 section_path: []
-nav_prev: {"path": "bun/docs/pm/lifecycle/index.md", "title": "Lifecycle scripts"}
-nav_next: {"path": "bun/docs/pm/npmrc/index.md", "title": ".npmrc support"}
+nav_prev: {"path": "../lifecycle/index.md", "title": "Lifecycle scripts"}
+nav_next: {"path": "../npmrc/index.md", "title": ".npmrc support"}
 ---
 
 [Skip to main content](#content-area)

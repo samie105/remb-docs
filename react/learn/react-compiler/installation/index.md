@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:14.571Z"
 content_hash: "ffa9f844b30af5adf03cf3478d52bdb74988d3d494a6560147f93e3085397a87"
 menu_path: ["Installation"]
 section_path: []
-nav_prev: {"path": "react/learn/react-compiler/introduction/index.md", "title": "Introduction"}
-nav_next: {"path": "react/learn/react-compiler/incremental-adoption/index.md", "title": "Incremental Adoption"}
+nav_prev: {"path": "../introduction/index.md", "title": "Introduction"}
+nav_next: {"path": "../incremental-adoption/index.md", "title": "Incremental Adoption"}
 ---
 
 This guide will help you install and configure React Compiler in your React application.
@@ -155,7 +155,7 @@ After installation, verify that React Compiler is working correctly.
 
 Components optimized by React Compiler will show a “Memo ✨” badge in React DevTools:
 
-1.  Install the [React Developer Tools](react/learn/react-developer-tools/index.md) browser extension
+1.  Install the [React Developer Tools](../../react-developer-tools/index.md) browser extension
 2.  Open your app in development mode
 3.  Open React DevTools
 4.  Look for the ✨ emoji next to component names
@@ -186,7 +186,7 @@ function ProblematicComponent() {"use no memo";// Component code here}
 
 This tells the compiler to skip optimization for this specific component. You should fix the underlying issue and remove the directive once resolved.
 
-For more troubleshooting help, see the [debugging guide](react/learn/react-compiler/debugging/index.md).
+For more troubleshooting help, see the [debugging guide](../debugging/index.md).
 
 ## Next Steps[](#next-steps "Link for Next Steps ")
 
@@ -194,6 +194,6 @@ Now that you have React Compiler installed, learn more about:
 
 *   [React version compatibility](https://react.dev/reference/react-compiler/target) for React 17 and 18
 *   [Configuration options](https://react.dev/reference/react-compiler/configuration) to customize the compiler
-*   [Incremental adoption strategies](react/learn/react-compiler/incremental-adoption/index.md) for existing codebases
-*   [Debugging techniques](react/learn/react-compiler/debugging/index.md) for troubleshooting issues
+*   [Incremental adoption strategies](../incremental-adoption/index.md) for existing codebases
+*   [Debugging techniques](../debugging/index.md) for troubleshooting issues
 *   [Compiling Libraries guide](https://react.dev/reference/react-compiler/compiling-libraries) for compiling your React library

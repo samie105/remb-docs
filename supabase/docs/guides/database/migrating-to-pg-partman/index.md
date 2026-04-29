@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:33.390Z"
 content_hash: "77298fe5b4e212d3c074f6083f90070d1e05198e4d773676c02be4a7085332dd"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Migrating to pg_partman","Migrating to pg_partman"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Migrating to pg_partman","Migrating to pg_partman"]
-nav_prev: {"path": "supabase/docs/guides/database/metabase/index.md", "title": "Connecting to Metabase"}
-nav_next: {"path": "supabase/docs/guides/database/orioledb/index.md", "title": "OrioleDB Overview"}
+nav_prev: {"path": "../metabase/index.md", "title": "Connecting to Metabase"}
+nav_next: {"path": "../orioledb/index.md", "title": "OrioleDB Overview"}
 ---
 
 # 

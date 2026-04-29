@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:01.734Z"
 content_hash: "6335690accb71d15864761206b3aca5147fc89f76f281c354bfc3ef4ad6854f0"
 menu_path: ["Content collection has an invalid type field."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/config-not-found/index.md", "title": "Specified configuration file not found."}
-nav_next: {"path": "astro/en/reference/errors/content-collection-missing-loader/index.md", "title": "Content collection is missing a loader definition."}
+nav_prev: {"path": "../config-not-found/index.md", "title": "Specified configuration file not found."}
+nav_next: {"path": "../content-collection-missing-loader/index.md", "title": "Content collection is missing a loader definition."}
 ---
 
 # Content collection has an invalid type field.

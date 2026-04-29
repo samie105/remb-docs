@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:34.914Z"
 content_hash: "68a67cad126a90a198225b027ecf70f807d2eee2e68577e64ccd5d7d6f9a1464"
 menu_path: ["Astro.locals is not serializable"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/locals-not-an-object/index.md", "title": "Value assigned to locals is not accepted."}
-nav_next: {"path": "astro/en/reference/errors/locals-reassigned/index.md", "title": "locals must not be reassigned."}
+nav_prev: {"path": "../locals-not-an-object/index.md", "title": "Value assigned to locals is not accepted."}
+nav_next: {"path": "../locals-reassigned/index.md", "title": "locals must not be reassigned."}
 ---
 
 # Astro.locals is not serializable

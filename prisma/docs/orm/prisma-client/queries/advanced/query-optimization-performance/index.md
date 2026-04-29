@@ -10,8 +10,8 @@ content_hash: "e3debe57f4cba7e0da1b6ddde3657c6ec8911aa7113bf92c99ba5a281a64a676"
 menu_path: ["Query optimization"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md", "title": "SQL comments"}
-nav_next: {"path": "prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
+nav_prev: {"path": "../../../observability-and-logging/sql-comments/index.md", "title": "SQL comments"}
+nav_next: {"path": "../../aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
 ---
 
 This page covers identifying and optimizing query performance with Prisma ORM.
@@ -60,14 +60,14 @@ Use [Query Insights](https://www.prisma.io/docs/query-insights) to identify whic
 
 It is generally more performant to read and write large amounts of data in bulk - for example, inserting `50,000` records in batches of `1000` rather than as `50,000` separate inserts. `PrismaClient` supports the following bulk queries:
 
--   [`createMany()`](prisma/docs/orm/reference/prisma-client-reference/index.md#createmany)
--   [`createManyAndReturn()`](prisma/docs/orm/reference/prisma-client-reference/index.md#createmanyandreturn)
--   [`deleteMany()`](prisma/docs/orm/reference/prisma-client-reference/index.md#deletemany)
--   [`updateMany()`](prisma/docs/orm/reference/prisma-client-reference/index.md#updatemany)
--   [`updateManyAndReturn()`](prisma/docs/orm/reference/prisma-client-reference/index.md#updatemanyandreturn)
--   [`findMany()`](prisma/docs/orm/reference/prisma-client-reference/index.md#findmany)
+-   [`createMany()`](../../../../reference/prisma-client-reference/index.md#createmany)
+-   [`createManyAndReturn()`](../../../../reference/prisma-client-reference/index.md#createmanyandreturn)
+-   [`deleteMany()`](../../../../reference/prisma-client-reference/index.md#deletemany)
+-   [`updateMany()`](../../../../reference/prisma-client-reference/index.md#updatemany)
+-   [`updateManyAndReturn()`](../../../../reference/prisma-client-reference/index.md#updatemanyandreturn)
+-   [`findMany()`](../../../../reference/prisma-client-reference/index.md#findmany)
 
-Creating multiple instances of `PrismaClient` can exhaust your database connection pool, especially in serverless or edge environments, potentially slowing down other queries. Learn more in the [serverless challenge](prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md#the-serverless-challenge).
+Creating multiple instances of `PrismaClient` can exhaust your database connection pool, especially in serverless or edge environments, potentially slowing down other queries. Learn more in the [serverless challenge](../../../setup-and-configuration/databases-connections/index.md#the-serverless-challenge).
 
 For applications with a traditional server, instantiate `PrismaClient` once and reuse it throughout your app instead of creating multiple instances. For example, instead of:
 
@@ -109,7 +109,7 @@ async function getUsers() {
 }
 ```
 
-For serverless development environments with frameworks that use HMR (Hot Module Replacement), ensure you properly handle a [single instance of Prisma in development](prisma/docs/orm/more/troubleshooting/nextjs/index.md#best-practices-for-using-prisma-client-in-development).
+For serverless development environments with frameworks that use HMR (Hot Module Replacement), ensure you properly handle a [single instance of Prisma in development](../../../../more/troubleshooting/nextjs/index.md#best-practices-for-using-prisma-client-in-development).
 
 The n+1 problem occurs when looping through query results and performing one additional query **per result**.
 
@@ -242,7 +242,7 @@ const User = objectType({
 
 #### [Solution 1: Batching queries with the fluent API](#solution-1-batching-queries-with-the-fluent-api)
 
-Use `findUnique()` in combination with [the fluent API](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#fluent-api) (`.posts()`) as shown to return a user's posts. Even though the resolver is called once per user, the Prisma dataloader in Prisma Client **✔ batches the `findUnique()` queries**.
+Use `findUnique()` in combination with [the fluent API](../../relation-queries/index.md#fluent-api) (`.posts()`) as shown to return a user's posts. Even though the resolver is called once per user, the Prisma dataloader in Prisma Client **✔ batches the `findUnique()` queries**.
 
 ```
 const User = objectType({
@@ -296,7 +296,7 @@ If the `posts` resolver is invoked once per user, the dataloader in Prisma Clien
 
 #### [Solution 2: Using JOINs to perform queries](#solution-2-using-joins-to-perform-queries)
 
-You can perform the query with a [database join](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) by setting `relationLoadStrategy` to `"join"`, ensuring that only **one** query is executed against the database.
+You can perform the query with a [database join](../../relation-queries/index.md#relation-load-strategies-preview) by setting `relationLoadStrategy` to `"join"`, ensuring that only **one** query is executed against the database.
 
 ```
 const User = objectType({
@@ -353,13 +353,13 @@ const posts = await prisma.post.findMany({
 
 This is not an efficient way to query. Instead, you can:
 
--   Use nested reads ([`include`](prisma/docs/orm/reference/prisma-client-reference/index.md#include) ) to return users and related posts
--   Use the [`in`](prisma/docs/orm/reference/prisma-client-reference/index.md#in) filter
--   Set the [`relationLoadStrategy`](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) to `"join"`
+-   Use nested reads ([`include`](../../../../reference/prisma-client-reference/index.md#include) ) to return users and related posts
+-   Use the [`in`](../../../../reference/prisma-client-reference/index.md#in) filter
+-   Set the [`relationLoadStrategy`](../../relation-queries/index.md#relation-load-strategies-preview) to `"join"`
 
 #### [Solving n+1 with `include`](#solving-n1-with-include)
 
-You can use `include` to return each user's posts. This only results in **two** SQL queries - one to get users, and one to get posts. This is known as a [nested read](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#nested-reads).
+You can use `include` to return each user's posts. This only results in **two** SQL queries - one to get users, and one to get posts. This is known as a [nested read](../../relation-queries/index.md#nested-reads).
 
 ```
 const usersWithPosts = await prisma.user.findMany({
@@ -399,7 +399,7 @@ SELECT "public"."Post"."id", "public"."Post"."createdAt", "public"."Post"."updat
 
 #### [Solving n+1 with `relationLoadStrategy: "join"`](#solving-n1-with-relationloadstrategy-join)
 
-You can perform the query with a [database join](prisma/docs/orm/prisma-client/queries/relation-queries/index.md#relation-load-strategies-preview) by setting `relationLoadStrategy` to `"join"`, ensuring that only **one** query is executed against the database.
+You can perform the query with a [database join](../../relation-queries/index.md#relation-load-strategies-preview) by setting `relationLoadStrategy` to `"join"`, ensuring that only **one** query is executed against the database.
 
 ```
 const users = await prisma.user.findMany({});

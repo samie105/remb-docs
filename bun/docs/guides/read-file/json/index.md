@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:35.346Z"
 content_hash: "adc51e0ff2fbdd6bd304141a44714027892d9be5b31243f2e0ae85c876a0b7c4"
 menu_path: ["Read a JSON file"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/read-file/exists/index.md", "title": "Check if a file exists"}
-nav_next: {"path": "bun/docs/guides/read-file/mime/index.md", "title": "Get the MIME type of a file"}
+nav_prev: {"path": "../exists/index.md", "title": "Check if a file exists"}
+nav_next: {"path": "../mime/index.md", "title": "Get the MIME type of a file"}
 ---
 
 [Skip to main content](#content-area)

@@ -10,8 +10,8 @@ content_hash: "d8d7c392b1189692295773a0bcfb413b51ba19bff64d11b14999a565cf057389"
 menu_path: ["CockroachDB column types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/graphql/index.md", "title": "drizzle-graphql"}
-nav_next: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
+nav_prev: {"path": "../../graphql/index.md", "title": "drizzle-graphql"}
+nav_next: {"path": "../mssql/index.md", "title": "MSSQL column types"}
 ---
 
 WARNING
@@ -38,7 +38,7 @@ bun add drizzle-orm@beta
 bun add drizzle-kit@beta -D
 ```
 
-We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](drizzle/docs/custom-types/index.md)**.
+We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](../../custom-types/index.md)**.
 
 important
 
@@ -46,7 +46,7 @@ All examples in this part of the documentation do not use database column name a
 
 You can use database aliases in column names if you want, and you can also use the `casing` parameter to define a mapping strategy for Drizzle.
 
-You can read more about it [here](drizzle/docs/sql-schema-declaration/index.md#shape-your-data-schema)
+You can read more about it [here](../../sql-schema-declaration/index.md#shape-your-data-schema)
 
 ### bigint[](#bigint)
 

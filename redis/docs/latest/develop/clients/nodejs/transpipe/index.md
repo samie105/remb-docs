@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:50.891Z"
 content_hash: "db8597f11311f5f8ffff964063db317afcae516f1df7a37a9174ac9c83180bf1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Pipelines and transactions","→","Pipelines and transactions"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Pipelines and transactions","→","Pipelines and transactions"]
-nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/queryjson/index.md", "title": "Index and query documents"}
-nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/vecsearch/index.md", "title": "Index and query vectors"}
+nav_prev: {"path": "../queryjson/index.md", "title": "Index and query documents"}
+nav_next: {"path": "../vecsearch/index.md", "title": "Index and query vectors"}
 ---
 
 # Pipelines and transactions

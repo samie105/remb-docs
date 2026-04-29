@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:19.791Z"
 content_hash: "cdd5f3ede60d83f3c3efb776034036d78a87154f829308210668de221d41da6c"
 menu_path: ["Image and video hosting with Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/xata/index.md", "title": "Xata & Astro"}
-nav_next: {"path": "astro/en/guides/media/cloudinary/index.md", "title": "Cloudinary & Astro"}
+nav_prev: {"path": "../backend/xata/index.md", "title": "Xata & Astro"}
+nav_next: {"path": "cloudinary/index.md", "title": "Cloudinary & Astro"}
 ---
 
 # Image and video hosting with Astro

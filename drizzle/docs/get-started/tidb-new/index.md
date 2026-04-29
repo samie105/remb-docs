@@ -10,8 +10,8 @@ content_hash: "30f3589a7d3a9ed96b1e8d0eab6732f74d696533c880d3749d6b34bbff6b7538"
 menu_path: ["Get Started with Drizzle and TiDB"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/get-started/tidb-existing/index.md", "title": "Get Started with Drizzle and TiDB in existing project"}
-nav_next: {"path": "drizzle/docs/get-started/turso-database-existing/index.md", "title": "Get Started with Drizzle and Turso Database in existing project"}
+nav_prev: {"path": "../tidb-existing/index.md", "title": "Get Started with Drizzle and TiDB in existing project"}
+nav_next: {"path": "../turso-database-existing/index.md", "title": "Get Started with Drizzle and Turso Database in existing project"}
 ---
 
 ## Get Started with Drizzle and TiDB
@@ -25,7 +25,7 @@ This guide assumes familiarity with:
 
 important
 
-For this tutorial, we will use the `@tidbcloud/serverless` driver to make **HTTP** calls. If you need to connect to TiDB through TCP, you can refer to our [MySQL Get Started](drizzle/docs/get-started/mysql-new/index.md) page
+For this tutorial, we will use the `@tidbcloud/serverless` driver to make **HTTP** calls. If you need to connect to TiDB through TCP, you can refer to our [MySQL Get Started](../mysql-new/index.md) page
 
 #### Basic file structure
 
@@ -107,7 +107,7 @@ export const usersTable = mysqlTable('users_table', {
 
 #### Step 5 - Setup Drizzle config file[](#step-5---setup-drizzle-config-file)
 
-**Drizzle config** - a configuration file that is used by [Drizzle Kit](drizzle/docs/kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
+**Drizzle config** - a configuration file that is used by [Drizzle Kit](../../kit-overview/index.md) and contains all the information about your database connection, migration folder and schema files.
 
 Create a `drizzle.config.ts` file in the root of your project and add the following content:
 
@@ -133,7 +133,7 @@ You can directly apply changes to your database using the `drizzle-kit push` com
 npx drizzle-kit push
 ```
 
-Read more about the push command in [documentation](drizzle/docs/drizzle-kit-push/index.md).
+Read more about the push command in [documentation](../../drizzle-kit-push/index.md).
 
 Tips
 
@@ -151,7 +151,7 @@ Apply migrations:
 npx drizzle-kit migrate
 ```
 
-Read more about migration process in [documentation](drizzle/docs/kit-overview/index.md).
+Read more about migration process in [documentation](../../kit-overview/index.md).
 
 #### Step 7 - Seed and Query the database[](#step-7---seed-and-query-the-database)
 

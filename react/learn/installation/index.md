@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:49.717Z"
 content_hash: "7e08fa3e1a0a65e9c3c39ced2d826fc569a8cbe45607921cc982295c26c03bc0"
 menu_path: ["Installation"]
 section_path: []
-nav_prev: {"path": "react/learn/thinking-in-react/index.md", "title": "Thinking in React"}
-nav_next: {"path": "react/learn/creating-a-react-app/index.md", "title": "Creating a React App"}
+nav_prev: {"path": "../thinking-in-react/index.md", "title": "Thinking in React"}
+nav_next: {"path": "../creating-a-react-app/index.md", "title": "Creating a React App"}
 ---
 
 React has been designed from the start for gradual adoption. You can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to an HTML page, or start a complex React-powered app, this section will help you get started.
@@ -27,16 +27,16 @@ To try React locally on your computer, [download this HTML page.](https://gist.g
 
 ## Creating a React App[](#creating-a-react-app "Link for Creating a React App ")
 
-If you want to start a new React app, you can [create a React app](react/learn/creating-a-react-app/index.md) using a recommended framework.
+If you want to start a new React app, you can [create a React app](../creating-a-react-app/index.md) using a recommended framework.
 
 ## Build a React App from Scratch[](#build-a-react-app-from-scratch "Link for Build a React App from Scratch ")
 
-If a framework is not a good fit for your project, you prefer to build your own framework, or you just want to learn the basics of a React app you can [build a React app from scratch](react/learn/build-a-react-app-from-scratch/index.md).
+If a framework is not a good fit for your project, you prefer to build your own framework, or you just want to learn the basics of a React app you can [build a React app from scratch](../build-a-react-app-from-scratch/index.md).
 
 ## Add React to an existing project[](#add-react-to-an-existing-project "Link for Add React to an existing project ")
 
-If want to try using React in your existing app or a website, you can [add React to an existing project.](react/learn/add-react-to-an-existing-project/index.md)
+If want to try using React in your existing app or a website, you can [add React to an existing project.](../add-react-to-an-existing-project/index.md)
 
 ## Next steps[](#next-steps "Link for Next steps ")
 
-Head to the [Quick Start](react/learn/index.md) guide for a tour of the most important React concepts you will encounter every day.
+Head to the [Quick Start](../index.md) guide for a tour of the most important React concepts you will encounter every day.

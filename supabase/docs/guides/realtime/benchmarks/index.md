@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:56.502Z"
 content_hash: "6855d0605b1b12efdeb3ac99255c1b3f3d9c02e10cec714d88c0d63a7d6652d6"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Benchmarks","Benchmarks"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Benchmarks","Benchmarks"]
-nav_prev: {"path": "supabase/docs/guides/realtime/authorization/index.md", "title": "Realtime Authorization"}
-nav_next: {"path": "supabase/docs/guides/realtime/broadcast/index.md", "title": "Broadcast"}
+nav_prev: {"path": "../authorization/index.md", "title": "Realtime Authorization"}
+nav_next: {"path": "../broadcast/index.md", "title": "Broadcast"}
 ---
 
 # 

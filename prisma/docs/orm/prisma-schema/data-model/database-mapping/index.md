@@ -10,24 +10,24 @@ content_hash: "2f445b7d6001a936686f00a6d78c4976531c92cd67acffe949c8abc097ec341b"
 menu_path: ["Database mapping"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Migrate)"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/externally-managed-tables/index.md", "title": "External tables"}
+nav_prev: {"path": "../../../prisma-migrate/workflows/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Migrate)"}
+nav_next: {"path": "../externally-managed-tables/index.md", "title": "External tables"}
 ---
 
-The [Prisma schema](prisma/docs/orm/prisma-schema/overview/index.md) includes mechanisms that allow you to define names of certain database objects. You can:
+The [Prisma schema](../../overview/index.md) includes mechanisms that allow you to define names of certain database objects. You can:
 
 -   [Map model and field names to different collection/table and field/column names](#mapping-collectiontable-and-fieldcolumn-names)
 -   [Define constraint and index names](#constraint-and-index-names)
 
 Sometimes the names used to describe entities in your database might not match the names you would prefer in your generated API. Mapping names in the Prisma schema allows you to influence the naming in your Client API without having to change the underlying database names.
 
-A common approach for naming tables/collections in databases for example is to use plural form and [snake\_case](https://en.wikipedia.org/wiki/Snake_case) notation. However, we recommended a different [naming convention (singular form, PascalCase)](prisma/docs/orm/reference/prisma-schema-reference/index.md#naming-conventions).
+A common approach for naming tables/collections in databases for example is to use plural form and [snake\_case](https://en.wikipedia.org/wiki/Snake_case) notation. However, we recommended a different [naming convention (singular form, PascalCase)](../../../reference/prisma-schema-reference/index.md#naming-conventions).
 
-`@map` and `@@map` allow you to [tune the shape of your Prisma Client API](prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) by decoupling model and field names from table and column names in the underlying database.
+`@map` and `@@map` allow you to [tune the shape of your Prisma Client API](../../../prisma-client/setup-and-configuration/custom-model-and-field-names/index.md) by decoupling model and field names from table and column names in the underlying database.
 
 ### [Map collection / table names](#map-collection--table-names)
 
-As an example, when you [introspect](prisma/docs/orm/prisma-schema/introspection/index.md) a database with a table named `comments`, the resulting Prisma model will look like this:
+As an example, when you [introspect](../../introspection/index.md) a database with a table named `comments`, the resulting Prisma model will look like this:
 
 ```
 model comments {
@@ -35,7 +35,7 @@ model comments {
 }
 ```
 
-However, you can still choose `Comment` as the name of the model (e.g. to follow the naming convention) without renaming the underlying `comments` table in the database by using the [`@@map`](prisma/docs/orm/reference/prisma-schema-reference/index.md) attribute:
+However, you can still choose `Comment` as the name of the model (e.g. to follow the naming convention) without renaming the underlying `comments` table in the database by using the [`@@map`](../../../reference/prisma-schema-reference/index.md) attribute:
 
 ```
 model Comment {
@@ -49,7 +49,7 @@ With this modified model definition, Prisma Client automatically maps the `Comme
 
 ### [Map field / column names](#map-field--column-names)
 
-You can also [`@map`](prisma/docs/orm/reference/prisma-schema-reference/index.md#map) a column/field name:
+You can also [`@map`](../../../reference/prisma-schema-reference/index.md#map) a column/field name:
 
 ```
 model Comment {
@@ -103,7 +103,7 @@ export const Status = {
 
 This means `Status.PENDING` evaluates to `"PENDING"`, not `"pending"`. The mapping is handled at the database level only.
 
-You can optionally use the `map` argument to explicitly define the **underlying constraint and index names** in the Prisma schema for the attributes [`@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md#id), [`@@id`](prisma/docs/orm/reference/prisma-schema-reference/index.md), [`@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md#unique), [`@@unique`](prisma/docs/orm/reference/prisma-schema-reference/index.md), [`@@index`](prisma/docs/orm/reference/prisma-schema-reference/index.md#index) and [`@relation`](prisma/docs/orm/reference/prisma-schema-reference/index.md#relation).
+You can optionally use the `map` argument to explicitly define the **underlying constraint and index names** in the Prisma schema for the attributes [`@id`](../../../reference/prisma-schema-reference/index.md#id), [`@@id`](../../../reference/prisma-schema-reference/index.md), [`@unique`](../../../reference/prisma-schema-reference/index.md#unique), [`@@unique`](../../../reference/prisma-schema-reference/index.md), [`@@index`](../../../reference/prisma-schema-reference/index.md#index) and [`@relation`](../../../reference/prisma-schema-reference/index.md#relation).
 
 When introspecting a database, the `map` argument will _only_ be rendered in the schema if the name _differs_ from Prisma ORM's [default constraint naming convention for indexes and constraints](#prisma-orms-default-naming-conventions-for-indexes-and-constraints).
 

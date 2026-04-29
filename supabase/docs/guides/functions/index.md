@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:14.412Z"
 content_hash: "1e5755e02faa6a1f3361b0bdfba2a60d0362a7f55148c597a547fbd5ee1e9705"
 menu_path: ["Edge Functions","Edge Functions","Overview","Overview"]
 section_path: ["Edge Functions","Edge Functions","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/deployment/shared-responsibility-model/index.md", "title": "Shared Responsibility Model"}
-nav_next: {"path": "supabase/docs/guides/functions/ai-models/index.md", "title": "Running AI Models"}
+nav_prev: {"path": "../deployment/shared-responsibility-model/index.md", "title": "Shared Responsibility Model"}
+nav_next: {"path": "ai-models/index.md", "title": "Running AI Models"}
 ---
 
 # 

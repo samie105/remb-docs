@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:20.051Z"
 content_hash: "b2582527de0cfa300ca353de395a1ec6ae9cdcdb8038a856a2de8d69338d955d"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Svelte","Svelte"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Svelte","Svelte"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
+nav_prev: {"path": "../with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
+nav_next: {"path": "../with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:50.068Z"
 content_hash: "fd6bf1e913588346bde6e664cef1b7b234788c9726a3e31751c1a50beb2fa16e"
 menu_path: ["Telemetry","Telemetry","Overview","Overview"]
 section_path: ["Telemetry","Telemetry","Overview","Overview"]
-nav_prev: {"path": "supabase/docs/guides/storage/security/ownership/index.md", "title": "Ownership"}
-nav_next: {"path": "supabase/docs/guides/telemetry/advanced-log-filtering/index.md", "title": "Advanced Log Filtering"}
+nav_prev: {"path": "../storage/security/ownership/index.md", "title": "Ownership"}
+nav_next: {"path": "advanced-log-filtering/index.md", "title": "Advanced Log Filtering"}
 ---
 
 # 

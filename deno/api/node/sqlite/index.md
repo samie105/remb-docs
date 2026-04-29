@@ -10,8 +10,8 @@ content_hash: "1ab248979756d08cb76922da473de2e4b5d362a7ac681eb46e84363d61c8c3f9"
 menu_path: ["sqlite - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/node/sea/index.md", "title": "sea - Node documentation"}
-nav_next: {"path": "deno/api/node/stream/index.md", "title": "stream - Node documentation"}
+nav_prev: {"path": "../sea/index.md", "title": "sea - Node documentation"}
+nav_next: {"path": "../stream/index.md", "title": "stream - Node documentation"}
 ---
 
 ### Usage in Deno

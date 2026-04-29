@@ -10,8 +10,8 @@ content_hash: "78495b4c1bc8bff5f7c45df16594796eb09b5df2c5d52c883d0c12d4a9759e3c"
 menu_path: ["Drizzle ORM - DrizzleORM v0.30.0 release"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0295/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.5 release"}
-nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0301/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.1 release"}
+nav_prev: {"path": "../drizzle-orm-v0295/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.5 release"}
+nav_next: {"path": "../drizzle-orm-v0301/index.md", "title": "Drizzle ORM - DrizzleORM v0.30.1 release"}
 ---
 
 DrizzleORM v0.30.0 release
@@ -47,9 +47,9 @@ Ideally, as is the case with almost all other drivers, we should have the possib
 
 If we’ve overlooked this capability and it is already available with \`postgres.js“, please ping us in our Discord!
 
-A few more references for timestamps without and with timezones can be found in our [docs](drizzle/docs/column-types/pg/index.md#timestamp)
+A few more references for timestamps without and with timezones can be found in our [docs](../../column-types/pg/index.md#timestamp)
 
-Check docs for getting started with `postgres.js` driver and Drizzle [here](drizzle/docs/get-started-postgresql/index.md#postgresjs)
+Check docs for getting started with `postgres.js` driver and Drizzle [here](../../get-started-postgresql/index.md#postgresjs)
 
 ## Fixes
 

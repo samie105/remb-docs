@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:39.652Z"
 content_hash: "6d9cb58d0dea63cb3f341ddee9dff6071a1772c6247be6571489dee3e9d1c61e"
 menu_path: ["Prisma Postgres & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/neon/index.md", "title": "Neon Postgres & Astro"}
-nav_next: {"path": "astro/en/guides/backend/scalekit/index.md", "title": "Scalekit & Astro"}
+nav_prev: {"path": "../neon/index.md", "title": "Neon Postgres & Astro"}
+nav_next: {"path": "../scalekit/index.md", "title": "Scalekit & Astro"}
 ---
 
 # Prisma Postgres & Astro

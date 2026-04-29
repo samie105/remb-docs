@@ -10,8 +10,8 @@ content_hash: "29bf6b684cafbe12ff6b147db7ac86c905caeb93433287f2c325908ff951d43a"
 menu_path: ["File System - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/deno/ffi/index.md", "title": "FFI - Deno documentation"}
-nav_next: {"path": "deno/api/deno/gpu/index.md", "title": "GPU - Deno documentation"}
+nav_prev: {"path": "../ffi/index.md", "title": "FFI - Deno documentation"}
+nav_next: {"path": "../gpu/index.md", "title": "GPU - Deno documentation"}
 ---
 
 c

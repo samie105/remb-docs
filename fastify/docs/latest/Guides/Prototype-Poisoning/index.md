@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:14.718Z"
 content_hash: "46627cb1c64d906c8fbb55f468f64a6229de79eeb1f8446617fc7a0685568392"
 menu_path: ["Prototype-Poisoning"]
 section_path: []
-nav_prev: {"path": "fastify/docs/latest/Guides/Plugins-Guide/index.md", "title": "The hitchhiker's guide to plugins"}
-nav_next: {"path": "fastify/docs/latest/Guides/Recommendations/index.md", "title": "Recommendations"}
+nav_prev: {"path": "../Plugins-Guide/index.md", "title": "The hitchhiker's guide to plugins"}
+nav_next: {"path": "../Recommendations/index.md", "title": "Recommendations"}
 ---
 
 Version: latest (v5.8.x)

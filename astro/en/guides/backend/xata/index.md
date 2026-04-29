@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:50.550Z"
 content_hash: "01b431150205a1a28c5c1afb8e894247dbefdbc1453b04fd8bbdcd316c855512"
 menu_path: ["Xata & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/turso/index.md", "title": "Turso & Astro"}
-nav_next: {"path": "astro/en/guides/media/index.md", "title": "Image and video hosting with Astro"}
+nav_prev: {"path": "../turso/index.md", "title": "Turso & Astro"}
+nav_next: {"path": "../../media/index.md", "title": "Image and video hosting with Astro"}
 ---
 
 # Xata & Astro

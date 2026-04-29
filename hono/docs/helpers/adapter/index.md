@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:04.940Z"
 content_hash: "179be4de098f686e8d3bc97873f906bf6ec5ae9e163cf36bdc649951778515ae"
 menu_path: ["Adapter Helper ​"]
 section_path: []
-nav_prev: {"path": "hono/docs/helpers/accepts/index.md", "title": "Accepts Helper \u200b"}
-nav_next: {"path": "hono/docs/helpers/conninfo/index.md", "title": "ConnInfo Helper \u200b"}
+nav_prev: {"path": "../accepts/index.md", "title": "Accepts Helper \u200b"}
+nav_next: {"path": "../conninfo/index.md", "title": "ConnInfo Helper \u200b"}
 ---
 
 The Adapter Helper provides a seamless way to interact with various platforms through a unified interface.

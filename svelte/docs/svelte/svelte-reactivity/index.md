@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:19.280Z"
 content_hash: "0b6830adadbb185127895a570a3ab656f7424352fc56bd8d9ea78aba3e32fbe0"
 menu_path: ["svelte/reactivity"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-reactivity-window/index.md", "title": "svelte/reactivity/window"}
-nav_next: {"path": "svelte/docs/svelte/svelte-server/index.md", "title": "svelte/server"}
+nav_prev: {"path": "../svelte-reactivity-window/index.md", "title": "svelte/reactivity/window"}
+nav_next: {"path": "../svelte-server/index.md", "title": "svelte/server"}
 ---
 
 Svelte provides reactive versions of various built-ins like [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) and [`URL`](https://developer.mozilla.org/en-US/docs/Web/API/URL) that can be used just like their native counterparts, as well as a handful of additional utilities for handling reactivity.

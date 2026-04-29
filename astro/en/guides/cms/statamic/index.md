@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:27.054Z"
 content_hash: "675b54c47780331f10b3e0525c63f883bf222b583c8043a5f9f092da5545e4d4"
 menu_path: ["Headless Statamic & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/spinal/index.md", "title": "Spinal & Astro"}
-nav_next: {"path": "astro/en/guides/cms/storyblok/index.md", "title": "Storyblok & Astro"}
+nav_prev: {"path": "../spinal/index.md", "title": "Spinal & Astro"}
+nav_next: {"path": "../storyblok/index.md", "title": "Storyblok & Astro"}
 ---
 
 # Headless Statamic & Astro

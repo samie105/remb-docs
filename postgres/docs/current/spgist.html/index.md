@@ -10,8 +10,8 @@ content_hash: "3fa6479c177e22c9812766cfb9378740ceeaf33bb3c013878193f33d25d4614f"
 menu_path: ["PostgreSQL: Documentation: 18: 65.3. SP-GiST Indexes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/source-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.1.\u00a0Formatting"}
-nav_next: {"path": "postgres/docs/current/spi-spi-getbinval.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getbinval"}
+nav_prev: {"path": "../source-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.1.\u00a0Formatting"}
+nav_next: {"path": "../spi-spi-getbinval.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getbinval"}
 ---
 
 ### 65.3.1. Introduction [#](#SPGIST-INTRO)

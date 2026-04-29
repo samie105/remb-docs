@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:16.656Z"
 content_hash: "8a111ba472caee2d723c78f389384faadde4b5e70b3fa786cdc336d1056a6fac"
 menu_path: ["Auth","Auth","Configuration","Configuration","Custom SMTP","Custom SMTP"]
 section_path: ["Auth","Auth","Configuration","Configuration","Custom SMTP","Custom SMTP"]
-nav_prev: {"path": "supabase/docs/guides/auth/auth-mfa/totp/index.md", "title": "Multi-Factor Authentication (TOTP)"}
-nav_next: {"path": "supabase/docs/guides/auth/auth-web3/index.md", "title": "Sign in with Web3"}
+nav_prev: {"path": "../auth-mfa/totp/index.md", "title": "Multi-Factor Authentication (TOTP)"}
+nav_next: {"path": "../auth-web3/index.md", "title": "Sign in with Web3"}
 ---
 
 # 

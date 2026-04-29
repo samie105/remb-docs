@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:59.019Z"
 content_hash: "dab982324ea6318eb4c805f884b32eeccbbe53996aa5d64ff8ee9158ebb96ee4"
 menu_path: ["Convert a Blob to a DataView"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/binary/blob-to-arraybuffer/index.md", "title": "Convert a Blob to an ArrayBuffer"}
-nav_next: {"path": "bun/docs/guides/binary/blob-to-stream/index.md", "title": "Convert a Blob to a ReadableStream"}
+nav_prev: {"path": "../blob-to-arraybuffer/index.md", "title": "Convert a Blob to an ArrayBuffer"}
+nav_next: {"path": "../blob-to-stream/index.md", "title": "Convert a Blob to a ReadableStream"}
 ---
 
 [Skip to main content](#content-area)

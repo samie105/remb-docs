@@ -10,8 +10,8 @@ content_hash: "87a2f57ab5cf2bb948601fbdc6c22460ef316dcccc2de93ae0a05bc7983d9cfa"
 menu_path: ["background-origin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "tailwind/docs/background-image/index.md", "title": "background-image"}
-nav_next: {"path": "tailwind/docs/background-position/index.md", "title": "background-position"}
+nav_prev: {"path": "../background-image/index.md", "title": "background-image"}
+nav_next: {"path": "../background-position/index.md", "title": "background-position"}
 ---
 
 # background-origin

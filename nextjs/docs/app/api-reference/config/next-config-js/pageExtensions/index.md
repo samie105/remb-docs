@@ -11,8 +11,8 @@ menu_path: ["pageExtensions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/output/index.md", "title": "output"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/poweredByHeader/index.md", "title": "poweredByHeader"}
+nav_prev: {"path": "../output/index.md", "title": "output"}
+nav_next: {"path": "../poweredByHeader/index.md", "title": "poweredByHeader"}
 ---
 
 # pageExtensions

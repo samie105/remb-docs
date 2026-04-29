@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/testing/cypress/index.md", "title": "How to set up Cypress with Next.js"}
-nav_next: {"path": "nextjs/docs/app/guides/testing/playwright/index.md", "title": "How to set up Playwright with Next.js"}
+nav_prev: {"path": "../cypress/index.md", "title": "How to set up Cypress with Next.js"}
+nav_next: {"path": "../playwright/index.md", "title": "How to set up Playwright with Next.js"}
 ---
 
 # How to set up Jest with Next.js

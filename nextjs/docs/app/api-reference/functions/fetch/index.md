@@ -11,8 +11,8 @@ menu_path: ["fetch"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/draft-mode/index.md", "title": "draftMode"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/forbidden/index.md", "title": "forbidden"}
+nav_prev: {"path": "../draft-mode/index.md", "title": "draftMode"}
+nav_next: {"path": "../forbidden/index.md", "title": "forbidden"}
 ---
 
 # fetch

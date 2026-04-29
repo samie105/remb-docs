@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:11.360Z"
 content_hash: "b1cb6afb9ac6a0c35dfcc3e2697e740657c58b342c5a9ca7286ed7b7f73b7ccd"
 menu_path: ["Bytecode Caching"]
 section_path: []
-nav_prev: {"path": "bun/docs/bundler/index.md", "title": "Bundler"}
-nav_next: {"path": "bun/docs/bundler/css/index.md", "title": "CSS"}
+nav_prev: {"path": "../index.md", "title": "Bundler"}
+nav_next: {"path": "../css/index.md", "title": "CSS"}
 ---
 
 # ESM (requires --compile)

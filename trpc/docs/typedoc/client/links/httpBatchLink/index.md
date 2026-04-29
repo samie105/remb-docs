@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:30.781Z"
 content_hash: "129eb0370b61091ff36fafe463ec9be6aea1119114a8dc69f36593d860178eee"
 menu_path: ["links/httpBatchLink"]
 section_path: []
-nav_prev: {"path": "trpc/docs/typedoc/client/index/variables/jsonEncoder/index.md", "title": "Variable: jsonEncoder"}
-nav_next: {"path": "trpc/docs/typedoc/client/links/httpBatchLink/functions/httpBatchLink/index.md", "title": "Function: httpBatchLink()"}
+nav_prev: {"path": "../../index/variables/jsonEncoder/index.md", "title": "Variable: jsonEncoder"}
+nav_next: {"path": "functions/httpBatchLink/index.md", "title": "Function: httpBatchLink()"}
 ---
 
 links/httpBatchLink | tRPC

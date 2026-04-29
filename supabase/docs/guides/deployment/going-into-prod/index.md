@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:02.465Z"
 content_hash: "aa6c4691f8110bc4f70bdae3267eb4d9e6be9a4f09c63a8e0201f9d93ca59e8a"
 menu_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Production checklist","Production checklist"]
 section_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Production checklist","Production checklist"]
-nav_prev: {"path": "supabase/docs/guides/deployment/database-migrations/index.md", "title": "Database Migrations"}
-nav_next: {"path": "supabase/docs/guides/deployment/managing-environments/index.md", "title": "Managing Environments"}
+nav_prev: {"path": "../database-migrations/index.md", "title": "Database Migrations"}
+nav_next: {"path": "../managing-environments/index.md", "title": "Managing Environments"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:15.697Z"
 content_hash: "9102c929f5953a8eb5d2fb181bc85b80d586a91180575ee0c73d9894af65dfcb"
 menu_path: ["REPL"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/redis/index.md", "title": "Redis"}
-nav_next: {"path": "bun/docs/runtime/s3/index.md", "title": "S3"}
+nav_prev: {"path": "../redis/index.md", "title": "Redis"}
+nav_next: {"path": "../s3/index.md", "title": "S3"}
 ---
 
 # 42

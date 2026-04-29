@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:29.237Z"
 content_hash: "6bab5bb4905cea7c7557f4ca3031466bc7f7406c9fc36a3459d3117e12ca8671"
 menu_path: ["Storage","Storage","More","More","More","Schema","Schema","Database Design","Database Design"]
 section_path: ["Storage","Storage","More","More","More","Schema","Schema","Database Design","Database Design"]
-nav_prev: {"path": "supabase/docs/guides/storage/schema/custom-roles/index.md", "title": "Custom Roles"}
-nav_next: {"path": "supabase/docs/guides/storage/schema/helper-functions/index.md", "title": "Storage Helper Functions"}
+nav_prev: {"path": "../custom-roles/index.md", "title": "Custom Roles"}
+nav_next: {"path": "../helper-functions/index.md", "title": "Storage Helper Functions"}
 ---
 
 # 

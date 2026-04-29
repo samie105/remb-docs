@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:59.390Z"
 content_hash: "d7df19037d3a2832b308af0295a454a1e9f057c8babc8f3bf9e3dbb05d5755dc"
 menu_path: ["Compiler errors"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-transition/index.md", "title": "svelte/transition"}
-nav_next: {"path": "svelte/docs/svelte/compiler-warnings/index.md", "title": "Compiler warnings"}
+nav_prev: {"path": "../svelte-transition/index.md", "title": "svelte/transition"}
+nav_next: {"path": "../compiler-warnings/index.md", "title": "Compiler warnings"}
 ---
 
 ### animation\_duplicate[](#animation_duplicate)

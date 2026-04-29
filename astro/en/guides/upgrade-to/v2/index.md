@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:51.999Z"
 content_hash: "f91ca978684f3f98f4952cf2ab4928f51a7879eeb4de25934bd7534f1ee1b50a"
 menu_path: ["Upgrade to Astro v2"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/upgrade-to/v3/index.md", "title": "Upgrade to Astro v3"}
-nav_next: {"path": "astro/en/guides/upgrade-to/v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
+nav_prev: {"path": "../v3/index.md", "title": "Upgrade to Astro v3"}
+nav_next: {"path": "../v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
 ---
 
 # Upgrade to Astro v2

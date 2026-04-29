@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:13.704Z"
 content_hash: "5dae0c3deee940ddf3018e7ecc46b8b8c6f7819ec78a4295cdd421ce1ebd9c51"
 menu_path: ["Redis"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/plugins/index.md", "title": "Plugins"}
-nav_next: {"path": "bun/docs/runtime/repl/index.md", "title": "REPL"}
+nav_prev: {"path": "../plugins/index.md", "title": "Plugins"}
+nav_next: {"path": "../repl/index.md", "title": "REPL"}
 ---
 
 Bun provides native bindings for working with Redis databases with a modern, Promise-based API. The interface is designed to be performant, with built-in connection management, fully typed responses, and TLS support.

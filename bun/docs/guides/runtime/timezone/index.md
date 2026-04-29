@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:18.912Z"
 content_hash: "93cc6388bf2288c6814c6381e1be3f2f01d40fb62816ebcf90577f0071c6afc7"
 menu_path: ["Set a time zone in Bun"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/shell/index.md", "title": "Run a Shell Command"}
-nav_next: {"path": "bun/docs/guides/runtime/tsconfig-paths/index.md", "title": "Re-map import paths"}
+nav_prev: {"path": "../shell/index.md", "title": "Run a Shell Command"}
+nav_next: {"path": "../tsconfig-paths/index.md", "title": "Re-map import paths"}
 ---
 
 [Skip to main content](#content-area)

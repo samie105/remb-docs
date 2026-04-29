@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:44.418Z"
 content_hash: "352fa52b352d0880c4a1eabaa08a8c894f078d0f59119dfb05e8cd901abbdf54"
 menu_path: ["Glob"]
 section_path: []
-nav_prev: {"path": "bun/docs/runtime/file-types/index.md", "title": "File Types"}
-nav_next: {"path": "bun/docs/runtime/globals/index.md", "title": "Globals"}
+nav_prev: {"path": "../file-types/index.md", "title": "File Types"}
+nav_next: {"path": "../globals/index.md", "title": "Globals"}
 ---
 
 ## Quickstart

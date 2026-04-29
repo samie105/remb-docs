@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:27.741Z"
 content_hash: "bd715ae23423dc746074f151f587ddd9fddb52f75e90bebb722578d57e4d0a2a"
 menu_path: ["svelte/store"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/svelte-server/index.md", "title": "svelte/server"}
-nav_next: {"path": "svelte/docs/svelte/svelte-transition/index.md", "title": "svelte/transition"}
+nav_prev: {"path": "../svelte-server/index.md", "title": "svelte/server"}
+nav_next: {"path": "../svelte-transition/index.md", "title": "svelte/transition"}
 ---
 
 ```

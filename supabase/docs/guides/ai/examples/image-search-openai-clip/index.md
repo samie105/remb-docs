@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:39.768Z"
 content_hash: "45e63ad5b0a41cb09b09a05f81dae937bdcfd6a2013bcea54b7db615812c215d"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Image search with OpenAI CLIP","Image search with OpenAI CLIP"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Image search with OpenAI CLIP","Image search with OpenAI CLIP"]
-nav_prev: {"path": "supabase/docs/guides/ai/examples/huggingface-image-captioning/index.md", "title": "Generate image captions using Hugging Face"}
-nav_next: {"path": "supabase/docs/guides/ai/examples/mixpeek-video-search/index.md", "title": "Video Search with Mixpeek Multimodal Embeddings"}
+nav_prev: {"path": "../huggingface-image-captioning/index.md", "title": "Generate image captions using Hugging Face"}
+nav_next: {"path": "../mixpeek-video-search/index.md", "title": "Video Search with Mixpeek Multimodal Embeddings"}
 ---
 
 # 

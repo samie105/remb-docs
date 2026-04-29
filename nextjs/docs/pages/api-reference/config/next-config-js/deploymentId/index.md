@@ -11,8 +11,8 @@ menu_path: ["deploymentId"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/crossOrigin/index.md", "title": "crossOrigin"}
-nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/devIndicators/index.md", "title": "devIndicators"}
+nav_prev: {"path": "../crossOrigin/index.md", "title": "crossOrigin"}
+nav_next: {"path": "../devIndicators/index.md", "title": "devIndicators"}
 ---
 
 # deploymentId

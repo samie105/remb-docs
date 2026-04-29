@@ -10,8 +10,8 @@ content_hash: "d2be562521fdf4d3cf73180f874e8be1c648dba5415fdb9bdf395f2d2d2ae153"
 menu_path: ["PostgreSQL: Documentation: 18: 9.26. Set Returning Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "postgres/docs/current/functions-matching.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.7.\u00a0Pattern Matching"}
-nav_next: {"path": "postgres/docs/current/functions-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.31.\u00a0Statistics Information Functions"}
+nav_prev: {"path": "../functions-matching.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.7.\u00a0Pattern Matching"}
+nav_next: {"path": "../functions-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.31.\u00a0Statistics Information Functions"}
 ---
 
 This section describes functions that possibly return more than one row. The most widely used functions in this class are series generating functions, as detailed in [Table 9.69](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SERIES "Table 9.69. Series Generating Functions") and [Table 9.70](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SUBSCRIPTS "Table 9.70. Subscript Generating Functions"). Other, more specialized set-returning functions are described elsewhere in this manual. See [Section 7.2.1.4](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-TABLEFUNCTIONS "7.2.1.4. Table Functions") for ways to combine multiple set-returning functions.
@@ -42,7 +42,7 @@ Generates a series of values from _`start`_ to _`stop`_, with a step size of _`s
 
 `generate_series` ( _`start`_ `timestamp with time zone`, _`stop`_ `timestamp with time zone`, _`step`_ `interval` \[, _`timezone`_ `text` \] ) → `setof timestamp with time zone`
 
-Generates a series of values from _`start`_ to _`stop`_, with a step size of _`step`_. In the timezone-aware form, times of day and daylight-savings adjustments are computed according to the time zone named by the _`timezone`_ argument, or the current [TimeZone](postgres/docs/current/runtime-config-client.html/index.md#GUC-TIMEZONE) setting if that is omitted.
+Generates a series of values from _`start`_ to _`stop`_, with a step size of _`step`_. In the timezone-aware form, times of day and daylight-savings adjustments are computed according to the time zone named by the _`timezone`_ argument, or the current [TimeZone](../runtime-config-client.html/index.md#GUC-TIMEZONE) setting if that is omitted.
 
  |
 

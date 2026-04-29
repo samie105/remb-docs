@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:42.645Z"
 content_hash: "bf0a29458f008da3e7953a13d1c339d40a7b4de16f758a02d1f5136e89133410"
 menu_path: ["Unavailable Astro global in getStaticPaths()"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/static-redirect-not-available/index.md", "title": "Astro.redirect is not available in static mode."}
-nav_next: {"path": "astro/en/reference/errors/unhandled-rejection/index.md", "title": "Unhandled rejection"}
+nav_prev: {"path": "../static-redirect-not-available/index.md", "title": "Astro.redirect is not available in static mode."}
+nav_next: {"path": "../unhandled-rejection/index.md", "title": "Unhandled rejection"}
 ---
 
 # Unavailable Astro global in getStaticPaths()

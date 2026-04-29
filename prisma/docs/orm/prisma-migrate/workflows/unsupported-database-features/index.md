@@ -11,21 +11,21 @@ menu_path: ["Unsupported database features (Prisma Migrate)"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md", "title": "Troubleshooting"}
-nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/database-mapping/index.md", "title": "Database mapping"}
+nav_prev: {"path": "../troubleshooting/index.md", "title": "Troubleshooting"}
+nav_next: {"path": "../../../prisma-schema/data-model/database-mapping/index.md", "title": "Database mapping"}
 ---
 
 Workflows
 
 How to include unsupported database features for projects that use Prisma Migrate
 
-Prisma Migrate uses the Prisma schema to determine what features to create in the database. However, some database features [cannot be represented in the Prisma schema](prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md) , including but not limited to:
+Prisma Migrate uses the Prisma schema to determine what features to create in the database. However, some database features [cannot be represented in the Prisma schema](../../../prisma-schema/data-model/unsupported-database-features/index.md) , including but not limited to:
 
 -   Stored procedures
 -   Triggers
 -   Views
 
-To add an unsupported feature to your database, you must [customize a migration](prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md) to include that feature before you apply it.
+To add an unsupported feature to your database, you must [customize a migration](../customizing-migrations/index.md) to include that feature before you apply it.
 
 To customize a migration to include an unsupported feature:
 

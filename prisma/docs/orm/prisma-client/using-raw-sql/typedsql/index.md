@@ -11,8 +11,8 @@ menu_path: ["TypedSQL"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","PostgreSQL","MySQL","SQLite"]
 content_language: "en"
-nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/safeql/index.md", "title": "SafeQL & Prisma Client"}
-nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/baselining/index.md", "title": "Baselining a database"}
+nav_prev: {"path": "../safeql/index.md", "title": "SafeQL & Prisma Client"}
+nav_next: {"path": "../../../prisma-migrate/workflows/baselining/index.md", "title": "Baselining a database"}
 ---
 
 Learn how to use TypedSQL to write fully type-safe SQL queries that are compatible with any SQL console and Prisma Client
@@ -187,6 +187,6 @@ const columns = "name, email, age"; // Columns determined at runtime
 const result = await prisma.$queryRawUnsafe(`SELECT ${columns} FROM Users WHERE active = true`);
 ```
 
-In this example, the columns to be selected are defined dynamically and included in the SQL query. While this approach provides flexibility, it requires careful attention to security, particularly to [avoid SQL injection vulnerabilities](prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md#sql-injection-prevention). Additionally, using raw SQL queries means foregoing the type-safety and DX of TypedSQL.
+In this example, the columns to be selected are defined dynamically and included in the SQL query. While this approach provides flexibility, it requires careful attention to security, particularly to [avoid SQL injection vulnerabilities](../raw-queries/index.md#sql-injection-prevention). Additionally, using raw SQL queries means foregoing the type-safety and DX of TypedSQL.
 
 This feature was heavily inspired by [PgTyped](https://github.com/adelsz/pgtyped) and [SQLx](https://github.com/launchbadge/sqlx). Additionally, SQLite parsing is handled by SQLx.

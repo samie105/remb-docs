@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:28.172Z"
 content_hash: "7a96e8d0f36e684031a8c70dde9183fd9e0ecc904b6086b9d7af34f92249cf16"
 menu_path: ["Debugging Bun with the VS Code extension"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/runtime/typescript/index.md", "title": "Install TypeScript declarations for Bun"}
-nav_next: {"path": "bun/docs/guides/runtime/web-debugger/index.md", "title": "Debugging Bun with the web debugger"}
+nav_prev: {"path": "../typescript/index.md", "title": "Install TypeScript declarations for Bun"}
+nav_next: {"path": "../web-debugger/index.md", "title": "Debugging Bun with the web debugger"}
 ---
 
 [Skip to main content](#content-area)

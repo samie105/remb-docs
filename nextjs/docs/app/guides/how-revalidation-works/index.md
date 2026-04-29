@@ -11,8 +11,8 @@ menu_path: ["How revalidation works in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/forms/index.md", "title": "How to create forms with Server Actions"}
-nav_next: {"path": "nextjs/docs/app/guides/incremental-static-regeneration/index.md", "title": "How to implement Incremental Static Regeneration (ISR)"}
+nav_prev: {"path": "../forms/index.md", "title": "How to create forms with Server Actions"}
+nav_next: {"path": "../incremental-static-regeneration/index.md", "title": "How to implement Incremental Static Regeneration (ISR)"}
 ---
 
 # How revalidation works in Next.js

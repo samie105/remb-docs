@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:59.247Z"
 content_hash: "696747c043fd192411374a50ad4e516d3886a52a901368bd72abad57260a289d"
 menu_path: ["Project structure"]
 section_path: []
-nav_prev: {"path": "astro/en/install-and-setup/index.md", "title": "Install Astro"}
-nav_next: {"path": "astro/en/develop-and-build/index.md", "title": "Develop and build"}
+nav_prev: {"path": "../../install-and-setup/index.md", "title": "Install Astro"}
+nav_next: {"path": "../../develop-and-build/index.md", "title": "Develop and build"}
 ---
 
 # Project structure

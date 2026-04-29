@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:23.864Z"
 content_hash: "33e30108c017ef51d390339a81c7d21a61db7a50ef7da33503ffdd930ce23e70"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis from Source","→","Install Redis from Source"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis","→","Install Redis","→\n      \n        Install Redis from Source","→","Install Redis from Source"]
-nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/index.md", "title": "Install Redis"}
-nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-on-linux/index.md", "title": "Install Redis on Linux"}
+nav_prev: {"path": "../index.md", "title": "Install Redis"}
+nav_next: {"path": "../install-redis-on-linux/index.md", "title": "Install Redis on Linux"}
 ---
 
 # Install Redis from Source

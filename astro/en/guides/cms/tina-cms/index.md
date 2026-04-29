@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:44.622Z"
 content_hash: "071e83ad919101ac3e2fce70b462e18fd763013da0c717bb744ea935827ede17"
 menu_path: ["Tina CMS & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/studiocms/index.md", "title": "StudioCMS & Astro"}
-nav_next: {"path": "astro/en/guides/cms/umbraco/index.md", "title": "Umbraco & Astro"}
+nav_prev: {"path": "../studiocms/index.md", "title": "StudioCMS & Astro"}
+nav_next: {"path": "../umbraco/index.md", "title": "Umbraco & Astro"}
 ---
 
 # Tina CMS & Astro

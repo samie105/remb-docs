@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:17.857Z"
 content_hash: "950cc07e2442f19df3bb4ed24d83a69945bb012df3abc47e7606595d5cc2ba2c"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Custom Email Templates","Custom Email Templates"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Custom Email Templates","Custom Email Templates"]
-nav_prev: {"path": "supabase/docs/guides/self-hosting/copy-from-platform-s3/index.md", "title": "Copy Storage Objects from Platform"}
-nav_next: {"path": "supabase/docs/guides/self-hosting/docker/index.md", "title": "Self-Hosting with Docker"}
+nav_prev: {"path": "../copy-from-platform-s3/index.md", "title": "Copy Storage Objects from Platform"}
+nav_next: {"path": "../docker/index.md", "title": "Self-Hosting with Docker"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:42.669Z"
 content_hash: "838a1f1a0d245d89abd2b0c212cb100efb7542edb8a36ec6f3e0b3d643a20102"
 menu_path: ["PostgreSQL: Documentation: 18: 51.1. The Path of a Query"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/queries-values.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.7.\u00a0VALUES Lists"}
-nav_next: {"path": "postgres/docs/current/rangetypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.17.\u00a0Range Types"}
+nav_prev: {"path": "../queries-values.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.7.\u00a0VALUES Lists"}
+nav_next: {"path": "../rangetypes.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.17.\u00a0Range Types"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

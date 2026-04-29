@@ -10,8 +10,8 @@ content_hash: "b5f27135747af357f188611724de3c941a9274919bdd74892cd3cdfdf2841721"
 menu_path: ["Telemetry - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/deno/subprocess/index.md", "title": "Subprocess - Deno documentation"}
-nav_next: {"path": "deno/api/deno/testing/index.md", "title": "Testing - Deno documentation"}
+nav_prev: {"path": "../subprocess/index.md", "title": "Subprocess - Deno documentation"}
+nav_next: {"path": "../testing/index.md", "title": "Testing - Deno documentation"}
 ---
 
 N

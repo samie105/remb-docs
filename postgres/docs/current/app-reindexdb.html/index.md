@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:03.138Z"
 content_hash: "2dc600c3cc2f8e3b9f4176207aa44bec7aa4564d802aa4a300052c35cea82357"
 menu_path: ["PostgreSQL: Documentation: 18: reindexdb"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
-nav_next: {"path": "postgres/docs/current/app-vacuumdb.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumdb"}
+nav_prev: {"path": "../app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
+nav_next: {"path": "../app-vacuumdb.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumdb"}
 ---
 
 reindexdb — reindex a PostgreSQL database
@@ -58,7 +58,7 @@ Recreate _`index`_ only. Multiple indexes can be recreated by writing multiple `
 
 Execute the reindex commands in parallel by running _`njobs`_ commands simultaneously. This option may reduce the processing time but it also increases the load on the database server.
 
-reindexdb will open _`njobs`_ connections to the database, so make sure your [max\_connections](postgres/docs/current/runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) setting is high enough to accommodate all connections.
+reindexdb will open _`njobs`_ connections to the database, so make sure your [max\_connections](../runtime-config-connection.html/index.md#GUC-MAX-CONNECTIONS) setting is high enough to accommodate all connections.
 
 Note that this option is incompatible with the `--system` option.
 

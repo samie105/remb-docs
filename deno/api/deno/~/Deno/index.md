@@ -10,8 +10,8 @@ content_hash: "91f5014a979e0115dbc5bb19bb43f1230bbad95ede5a4a046e51b94d762c79f5"
 menu_path: ["namespace Deno"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/api/deno/websockets/index.md", "title": "WebSockets - Deno documentation"}
-nav_next: {"path": "deno/api/deno/~/Deno.jupyter.html/index.md", "title": "function Deno.jupyter.html"}
+nav_prev: {"path": "../../websockets/index.md", "title": "WebSockets - Deno documentation"}
+nav_next: {"path": "../Deno.jupyter.html/index.md", "title": "function Deno.jupyter.html"}
 ---
 
 # namespace Deno

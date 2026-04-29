@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:20.599Z"
 content_hash: "98dd865968e007fbc54d6ef0e381cba664d05463544a899f45db48e6e22ec046"
 menu_path: ["Deploy your Astro Site to AWS with SST"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/aws-via-flightcontrol/index.md", "title": "Deploy your Astro Site to AWS with Flightcontrol"}
-nav_next: {"path": "astro/en/guides/deploy/azion/index.md", "title": "Deploy your Astro Site to Azion"}
+nav_prev: {"path": "../aws-via-flightcontrol/index.md", "title": "Deploy your Astro Site to AWS with Flightcontrol"}
+nav_next: {"path": "../azion/index.md", "title": "Deploy your Astro Site to Azion"}
 ---
 
 # Deploy your Astro Site to AWS with SST

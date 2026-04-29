@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:34.136Z"
 content_hash: "36f3b322de18a8f9993010919a156d3ba8ef3c93914562ca592c91295793923a"
 menu_path: ["Astro render context"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/routing-reference/index.md", "title": "Routing Reference"}
-nav_next: {"path": "astro/en/reference/modules/astro-actions/index.md", "title": "Actions API Reference"}
+nav_prev: {"path": "../routing-reference/index.md", "title": "Routing Reference"}
+nav_next: {"path": "../modules/astro-actions/index.md", "title": "Actions API Reference"}
 ---
 
 # Astro render context

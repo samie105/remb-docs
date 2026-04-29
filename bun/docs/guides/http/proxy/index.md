@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:07.039Z"
 content_hash: "384901a16bf56d9ea0f34904c982ea06909d8b0591ed6e8beefbbbd324728211"
 menu_path: ["Proxy HTTP requests using fetch()"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/http/hot/index.md", "title": "Hot reload an HTTP server"}
-nav_next: {"path": "bun/docs/guides/http/server/index.md", "title": "Common HTTP server usage"}
+nav_prev: {"path": "../hot/index.md", "title": "Hot reload an HTTP server"}
+nav_next: {"path": "../server/index.md", "title": "Common HTTP server usage"}
 ---
 
 [Skip to main content](#content-area)

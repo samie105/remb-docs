@@ -10,8 +10,8 @@ content_hash: "95f59ae189d79e237e204a482f174d1aebb2e8bb9d5e5f2d47f3115e97e180d4"
 menu_path: ["Drizzle <> Turso Database"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/connect-turso/index.md", "title": "Drizzle <> Turso Cloud"}
-nav_next: {"path": "drizzle/docs/connect-sqlite-cloud/index.md", "title": "Drizzle <> SQLite Cloud"}
+nav_prev: {"path": "../connect-turso/index.md", "title": "Drizzle <> Turso Cloud"}
+nav_next: {"path": "../connect-sqlite-cloud/index.md", "title": "Drizzle <> SQLite Cloud"}
 ---
 
 Drizzle ORM - Turso Database

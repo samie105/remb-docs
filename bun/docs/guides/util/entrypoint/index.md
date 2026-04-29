@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:48.966Z"
 content_hash: "81f670d3ac7a61531f79e8eade960860d1bab9748e4becf4a52a39ae597aeaeb"
 menu_path: ["Check if the current file is the entrypoint"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/util/detect-bun/index.md", "title": "Detect when code is executed with Bun"}
-nav_next: {"path": "bun/docs/guides/util/escape-html/index.md", "title": "Escape an HTML string"}
+nav_prev: {"path": "../detect-bun/index.md", "title": "Detect when code is executed with Bun"}
+nav_next: {"path": "../escape-html/index.md", "title": "Escape an HTML string"}
 ---
 
 [Skip to main content](#content-area)

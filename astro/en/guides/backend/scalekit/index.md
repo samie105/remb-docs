@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:42.310Z"
 content_hash: "2f780ce350d9127c94625c9a3d1d3317a492e0024ad4a147e1f42f42031c6864"
 menu_path: ["Scalekit & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/backend/prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
-nav_next: {"path": "astro/en/guides/backend/sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
+nav_prev: {"path": "../prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
+nav_next: {"path": "../sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
 ---
 
 # Scalekit & Astro

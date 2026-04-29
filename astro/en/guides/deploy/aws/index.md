@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:27.968Z"
 content_hash: "cd5ee1929c4f25f06e930b0bc7d65622cfdb20d3c06f409daa18fb05e649a894"
 menu_path: ["Deploy your Astro Site to AWS"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/deploy/index.md", "title": "Deploy your Astro Site"}
-nav_next: {"path": "astro/en/guides/deploy/aws-via-flightcontrol/index.md", "title": "Deploy your Astro Site to AWS with Flightcontrol"}
+nav_prev: {"path": "../index.md", "title": "Deploy your Astro Site"}
+nav_next: {"path": "../aws-via-flightcontrol/index.md", "title": "Deploy your Astro Site to AWS with Flightcontrol"}
 ---
 
 # Deploy your Astro Site to AWS

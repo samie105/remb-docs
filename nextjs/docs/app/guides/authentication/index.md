@@ -11,8 +11,8 @@ menu_path: ["How to implement authentication in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/guides/analytics/index.md", "title": "How to add analytics to your Next.js application"}
-nav_next: {"path": "nextjs/docs/app/guides/backend-for-frontend/index.md", "title": "How to use Next.js as a backend for your frontend"}
+nav_prev: {"path": "../analytics/index.md", "title": "How to add analytics to your Next.js application"}
+nav_next: {"path": "../backend-for-frontend/index.md", "title": "How to use Next.js as a backend for your frontend"}
 ---
 
 # How to implement authentication in Next.js

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:41.006Z"
 content_hash: "0a45371d0934acda03945d7da9b33181af32620aa15d798898515a2904c2fa6b"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Vue","Vue"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Vue","Vue"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/tanstack/index.md", "title": "Use Supabase with TanStack Start"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-angular/index.md", "title": "Build a User Management App with Angular"}
+nav_prev: {"path": "../tanstack/index.md", "title": "Use Supabase with TanStack Start"}
+nav_next: {"path": "../../tutorials/with-angular/index.md", "title": "Build a User Management App with Angular"}
 ---
 
 # 

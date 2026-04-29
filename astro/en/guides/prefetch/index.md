@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:19.868Z"
 content_hash: "66bc88cdf80c6bec0f1ad4a84663788938baf4e8523c25b618d6182bebc0810d"
 menu_path: ["Prefetch"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/internationalization/index.md", "title": "Internationalization (i18n) Routing"}
-nav_next: {"path": "astro/en/guides/view-transitions/index.md", "title": "View transitions"}
+nav_prev: {"path": "../internationalization/index.md", "title": "Internationalization (i18n) Routing"}
+nav_next: {"path": "../view-transitions/index.md", "title": "View transitions"}
 ---
 
 # Prefetch

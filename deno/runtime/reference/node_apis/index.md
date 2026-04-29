@@ -10,8 +10,8 @@ content_hash: "f147a3e32996b1454ca949dc1036c1210d63b8a6c7fdca7710c7cd66ba50012e"
 menu_path: ["Node APIs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "deno/runtime/reference/deno_namespace_apis/index.md", "title": "Deno Namespace APIs"}
-nav_next: {"path": "deno/runtime/reference/std/math/index.md", "title": "@std/math"}
+nav_prev: {"path": "../deno_namespace_apis/index.md", "title": "Deno Namespace APIs"}
+nav_next: {"path": "../std/math/index.md", "title": "@std/math"}
 ---
 
 **On this page**

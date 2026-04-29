@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:28.269Z"
 content_hash: "b86a93a6698731d5bcd256df0b2e456960190207c73f157e476cb44b456e694e"
 menu_path: ["PostgreSQL: Documentation: 18: 38.2. Writing Event Trigger Functions in C"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/event-trigger-database-login-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.5.\u00a0A Database Login Event Trigger Example"}
-nav_next: {"path": "postgres/docs/current/event-trigger-table-rewrite-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.4.\u00a0A Table Rewrite Event Trigger Example"}
+nav_prev: {"path": "../event-trigger-database-login-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.5.\u00a0A Database Login Event Trigger Example"}
+nav_next: {"path": "../event-trigger-table-rewrite-example.html/index.md", "title": "PostgreSQL: Documentation: 18: 38.4.\u00a0A Table Rewrite Event Trigger Example"}
 ---
 
 This section describes the low-level details of the interface to an event trigger function. This information is only needed when writing event trigger functions in C. If you are using a higher-level language then these details are handled for you. In most cases you should consider using a procedural language before writing your event triggers in C. The documentation of each procedural language explains how to write an event trigger in that language.

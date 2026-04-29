@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:00.059Z"
 content_hash: "4565c76e028bf465f8fc37de394935eb4394e707348eb7c0007ccd58338e3d26"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare PostgreSQL/Supabase for RDI","→","Prepare PostgreSQL/Supabase for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare PostgreSQL/Supabase for RDI","→","Prepare PostgreSQL/Supabase for RDI"]
-nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/oracle/index.md", "title": "Prepare Oracle and Oracle RAC for RDI"}
-nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/spanner/index.md", "title": "Prepare Spanner for RDI"}
+nav_prev: {"path": "../oracle/index.md", "title": "Prepare Oracle and Oracle RAC for RDI"}
+nav_next: {"path": "../spanner/index.md", "title": "Prepare Spanner for RDI"}
 ---
 
 # Prepare PostgreSQL/Supabase for RDI

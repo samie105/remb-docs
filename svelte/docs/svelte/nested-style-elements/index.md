@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:55.581Z"
 content_hash: "af8655887ea6480aceb865fe655ccd2bc21b345e263cf57d106a5fe458cb2ebd"
 menu_path: ["Nested <style> elements"]
 section_path: []
-nav_prev: {"path": "svelte/docs/svelte/custom-properties/index.md", "title": "Custom properties"}
-nav_next: {"path": "svelte/docs/svelte/svelte-boundary/index.md", "title": "<svelte:boundary>"}
+nav_prev: {"path": "../custom-properties/index.md", "title": "Custom properties"}
+nav_next: {"path": "../svelte-boundary/index.md", "title": "<svelte:boundary>"}
 ---
 
 There can only be one top-level `<style>` tag per component.

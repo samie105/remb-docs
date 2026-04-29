@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:16.865Z"
 content_hash: "81460b4c656502c04bfb76716f414e8dbc56ccaf3b89f50ed2b3326585137b03"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and redis-py","→","Rolling sensor graph demo with Redis and redis-py"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and redis-py","→","Rolling sensor graph demo with Redis and redis-py"]
-nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/php/index.md", "title": "Rolling sensor graph demo with Redis and PHP"}
-nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
+nav_prev: {"path": "../php/index.md", "title": "Rolling sensor graph demo with Redis and PHP"}
+nav_next: {"path": "../ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
 ---
 
 # Rolling sensor graph demo with Redis and redis-py

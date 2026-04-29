@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:26.230Z"
 content_hash: "be08488dadf5d2f1ac1c7bc221703c7be1c04d5f7d02e094797144630b5711cd"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Swift","Swift"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Swift","Swift"]
-nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
-nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-vue-3/index.md", "title": "Build a User Management App with Vue 3"}
+nav_prev: {"path": "../with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
+nav_next: {"path": "../with-vue-3/index.md", "title": "Build a User Management App with Vue 3"}
 ---
 
 # 

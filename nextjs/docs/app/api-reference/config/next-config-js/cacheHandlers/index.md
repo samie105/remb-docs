@@ -11,8 +11,8 @@ menu_path: ["cacheHandlers"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheComponents/index.md", "title": "cacheComponents"}
-nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheLife/index.md", "title": "cacheLife"}
+nav_prev: {"path": "../cacheComponents/index.md", "title": "cacheComponents"}
+nav_next: {"path": "../cacheLife/index.md", "title": "cacheLife"}
 ---
 
 # cacheHandlers

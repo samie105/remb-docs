@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:43.166Z"
 content_hash: "eb1fd92300bbaa2e69b7041ce4a9d662410843a26bdd03aec8aad8071c19f2cc"
 menu_path: ["CLI Commands"]
 section_path: []
-nav_prev: {"path": "astro/en/reference/configuration-reference/index.md", "title": "Configuration Reference"}
-nav_next: {"path": "astro/en/guides/imports/index.md", "title": "Imports reference"}
+nav_prev: {"path": "../configuration-reference/index.md", "title": "Configuration Reference"}
+nav_next: {"path": "../../guides/imports/index.md", "title": "Imports reference"}
 ---
 
 # CLI Commands

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:57.987Z"
 content_hash: "fb01857589d86086a19992af0e522eb1ffa6321317835cb2dd71ba7d4bdbd562"
 menu_path: ["Layouts"]
 section_path: []
-nav_prev: {"path": "astro/en/basics/astro-components/index.md", "title": "Components"}
-nav_next: {"path": "astro/en/guides/styling/index.md", "title": "Styles and CSS"}
+nav_prev: {"path": "../astro-components/index.md", "title": "Components"}
+nav_next: {"path": "../../guides/styling/index.md", "title": "Styles and CSS"}
 ---
 
 # Layouts

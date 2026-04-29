@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:58.025Z"
 content_hash: "8b4d2fe31a9a95d40b632dd53d7e3b9bb47a91b5da046543d23c978b3e359943"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Combined queries","→","Combined queries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Combined queries","→","Combined queries"]
-nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/aggregation/index.md", "title": "Aggregation queries"}
-nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/exact-match/index.md", "title": "Exact match queries"}
+nav_prev: {"path": "../aggregation/index.md", "title": "Aggregation queries"}
+nav_next: {"path": "../exact-match/index.md", "title": "Exact match queries"}
 ---
 
 # Combined queries

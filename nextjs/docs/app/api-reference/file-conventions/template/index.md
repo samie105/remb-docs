@@ -11,8 +11,8 @@ menu_path: ["template.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/src-folder/index.md", "title": "src Folder"}
-nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/unauthorized/index.md", "title": "unauthorized.js"}
+nav_prev: {"path": "../src-folder/index.md", "title": "src Folder"}
+nav_next: {"path": "../unauthorized/index.md", "title": "unauthorized.js"}
 ---
 
 # template.js

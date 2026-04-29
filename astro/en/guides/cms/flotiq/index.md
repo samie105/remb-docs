@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:11.031Z"
 content_hash: "07d94d9db2064fa2c2e37d49f0d1d246123ade6d22804243d46ec2651a94a340"
 menu_path: ["Flotiq & Astro"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/cms/drupal/index.md", "title": "Drupal & Astro"}
-nav_next: {"path": "astro/en/guides/cms/frontmatter-cms/index.md", "title": "Front Matter CMS & Astro"}
+nav_prev: {"path": "../drupal/index.md", "title": "Drupal & Astro"}
+nav_next: {"path": "../frontmatter-cms/index.md", "title": "Front Matter CMS & Astro"}
 ---
 
 # Flotiq & Astro

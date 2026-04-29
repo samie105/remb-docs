@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:14.439Z"
 content_hash: "e5dbe38bc8a9c5e304094c4b8ce905ff83178f1d668af75989e183c9ce13a490"
 menu_path: ["Endpoints"]
 section_path: []
-nav_prev: {"path": "astro/en/guides/routing/index.md", "title": "Routing"}
-nav_next: {"path": "astro/en/guides/middleware/index.md", "title": "Middleware"}
+nav_prev: {"path": "../routing/index.md", "title": "Routing"}
+nav_next: {"path": "../middleware/index.md", "title": "Middleware"}
 ---
 
 # Endpoints

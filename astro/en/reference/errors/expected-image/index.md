@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:34.205Z"
 content_hash: "bb345f4aee3e75ba56777a4ce596b85eb08a66568fc15aac576baea9e99e857b"
 menu_path: ["Expected src to be an image."]
 section_path: []
-nav_prev: {"path": "astro/en/reference/errors/expected-image-options/index.md", "title": "Expected image options."}
-nav_next: {"path": "astro/en/reference/errors/expected-not-esmimage/index.md", "title": "Expected image options, not an ESM-imported image."}
+nav_prev: {"path": "../expected-image-options/index.md", "title": "Expected image options."}
+nav_next: {"path": "../expected-not-esmimage/index.md", "title": "Expected image options, not an ESM-imported image."}
 ---
 
 # Expected src to be an image.

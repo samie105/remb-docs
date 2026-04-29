@@ -10,8 +10,8 @@ content_hash: "92df43a8f59f64ffca5f6ddb7b309eb31f8306a48dcdcb521b54e62a7b52855d"
 menu_path: ["Drizzle ORM - Seeding Partially Exposed Tables with Foreign Key"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "drizzle/docs/guides/seeding-using-with-option/index.md", "title": "Drizzle ORM - Seeding using 'with' option"}
-nav_next: {"path": "drizzle/docs/guides/select-parent-rows-with-at-least-one-related-child-row/index.md", "title": "Drizzle ORM - Select parent rows with at least one related child row"}
+nav_prev: {"path": "../seeding-using-with-option/index.md", "title": "Drizzle ORM - Seeding using 'with' option"}
+nav_next: {"path": "../select-parent-rows-with-at-least-one-related-child-row/index.md", "title": "Drizzle ORM - Select parent rows with at least one related child row"}
 ---
 
 Drizzle | Seeding Partially Exposed Tables with Foreign Key
@@ -50,7 +50,7 @@ At this point, you have several options to resolve the error:
 await seed(db, { bloodPressure, users });
 ```
 
--   You can [refine](drizzle/docs/guides/seeding-with-partially-exposed-tables/index.md#refining-the-userid-column-generator) the `userId` column generator;
+-   You can [refine](index.md#refining-the-userid-column-generator) the `userId` column generator;
 
 ## Example 2[](#example-2)
 
@@ -80,7 +80,7 @@ Then you will have two choices:
 
 -   If you’re okay with filling the `userId` column with Null values, you can ignore the warning;
     
--   Otherwise, you can [refine](drizzle/docs/guides/seeding-with-partially-exposed-tables/index.md#refining-the-userid-column-generator) the `userId` column generator.
+-   Otherwise, you can [refine](index.md#refining-the-userid-column-generator) the `userId` column generator.
     
 
 ## Refining the `userId` column generator[](#refining-the-userid-column-generator)

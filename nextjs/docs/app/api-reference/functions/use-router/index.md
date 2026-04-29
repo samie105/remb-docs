@@ -11,8 +11,8 @@ menu_path: ["useRouter"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
-nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-search-params/index.md", "title": "useSearchParams"}
+nav_prev: {"path": "../use-report-web-vitals/index.md", "title": "useReportWebVitals"}
+nav_next: {"path": "../use-search-params/index.md", "title": "useSearchParams"}
 ---
 
 # useRouter

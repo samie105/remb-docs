@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:28.349Z"
 content_hash: "a5d6c98c10d40a70529fa56ac4dad7c00223a377a9e8f5131cc045d072719bed"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis client handling","→","Redis client handling"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis client handling","→","Redis client handling"]
-nav_prev: {"path": "redis/docs/latest/develop/reference/client-side-caching/index.md", "title": "Client-side caching reference"}
-nav_next: {"path": "redis/docs/latest/develop/reference/command-arguments/index.md", "title": "Redis command arguments"}
+nav_prev: {"path": "../client-side-caching/index.md", "title": "Client-side caching reference"}
+nav_next: {"path": "../command-arguments/index.md", "title": "Redis command arguments"}
 ---
 
 # Redis client handling

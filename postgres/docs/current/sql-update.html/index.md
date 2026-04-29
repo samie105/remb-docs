@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:18.903Z"
 content_hash: "0d4db5bd6fdf5763cf865fb877487a6cb6b578cc0852d6c0d92b069d70c08429"
 menu_path: ["PostgreSQL: Documentation: 18: UPDATE"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-unlisten.html/index.md", "title": "PostgreSQL: Documentation: 18: UNLISTEN"}
-nav_next: {"path": "postgres/docs/current/sql-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: VACUUM"}
+nav_prev: {"path": "../sql-unlisten.html/index.md", "title": "PostgreSQL: Documentation: 18: UNLISTEN"}
+nav_next: {"path": "../sql-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: VACUUM"}
 ---
 
 UPDATE — update rows of a table
@@ -190,7 +190,7 @@ Change the `kind` column of the table `films` in the row on which the cursor `c_
 
 UPDATE films SET kind = 'Dramatic' WHERE CURRENT OF c\_films;
 
-Updates affecting many rows can have negative effects on system performance, such as table bloat, increased replica lag, and increased lock contention. In such situations it can make sense to perform the operation in smaller batches, possibly with a `VACUUM` operation on the table between batches. While there is no `LIMIT` clause for `UPDATE`, it is possible to get a similar effect through the use of a [Common Table Expression](https://www.postgresql.org/docs/current/queries-with.html "7.8. WITH Queries (Common Table Expressions)") and a self-join. With the standard PostgreSQL table access method, a self-join on the system column [ctid](postgres/docs/current/ddl-system-columns.html/index.md#DDL-SYSTEM-COLUMNS-CTID) is very efficient:
+Updates affecting many rows can have negative effects on system performance, such as table bloat, increased replica lag, and increased lock contention. In such situations it can make sense to perform the operation in smaller batches, possibly with a `VACUUM` operation on the table between batches. While there is no `LIMIT` clause for `UPDATE`, it is possible to get a similar effect through the use of a [Common Table Expression](https://www.postgresql.org/docs/current/queries-with.html "7.8. WITH Queries (Common Table Expressions)") and a self-join. With the standard PostgreSQL table access method, a self-join on the system column [ctid](../ddl-system-columns.html/index.md#DDL-SYSTEM-COLUMNS-CTID) is very efficient:
 
 WITH exceeded\_max\_retries AS (
   SELECT w.ctid FROM work\_item AS w

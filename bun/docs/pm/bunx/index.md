@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:03.052Z"
 content_hash: "cc110fa0cd70f96f352b068fab205abdec52bd823e8b3ed3829f94dc0f9ddc59"
 menu_path: ["bunx"]
 section_path: []
-nav_prev: {"path": "bun/docs/guides/write-file/unlink/index.md", "title": "Delete a file"}
-nav_next: {"path": "bun/docs/pm/catalogs/index.md", "title": "Catalogs"}
+nav_prev: {"path": "../../guides/write-file/unlink/index.md", "title": "Delete a file"}
+nav_next: {"path": "../catalogs/index.md", "title": "Catalogs"}
 ---
 
 # Run Prisma migrations

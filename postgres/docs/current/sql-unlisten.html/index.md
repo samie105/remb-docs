@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:04.342Z"
 content_hash: "5ccf565fa9d6b287c4accc615945b987288a099bc6c8be94536c1512ef3c1919"
 menu_path: ["PostgreSQL: Documentation: 18: UNLISTEN"]
 section_path: []
-nav_prev: {"path": "postgres/docs/current/sql-truncate.html/index.md", "title": "PostgreSQL: Documentation: 18: TRUNCATE"}
-nav_next: {"path": "postgres/docs/current/sql-update.html/index.md", "title": "PostgreSQL: Documentation: 18: UPDATE"}
+nav_prev: {"path": "../sql-truncate.html/index.md", "title": "PostgreSQL: Documentation: 18: TRUNCATE"}
+nav_next: {"path": "../sql-update.html/index.md", "title": "PostgreSQL: Documentation: 18: UPDATE"}
 ---
 
 UNLISTEN — stop listening for a notification
