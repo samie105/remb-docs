@@ -17,7 +17,7 @@ Page selection strategy:
   - Deduplicate, preserve TOC order
 """
 
-import json, sys, os, subprocess, urllib.request, urllib.error, pathlib, textwrap, time
+import json, sys, os, subprocess, urllib.request, urllib.error, pathlib, textwrap, time, re
 
 WORKSPACE = pathlib.Path(__file__).parent.parent
 MODEL = "openai/gpt-4.1"
@@ -227,6 +227,35 @@ def build_prompt(slug: str, toc: str, pages: str) -> str:
     """).strip()
 
 
+# === SKILL.md path relativizer ============================================
+
+def make_skill_paths_relative(skill_md: str, slug: str) -> str:
+    """
+    Convert repo-root paths like 'nextjs/docs/...' in SKILL.md to paths
+    relative from the SKILL.md file inside the source directory (e.g. 'docs/app/...').
+    """
+    skill_dir = os.path.dirname(f"{slug}/SKILL.md") # e.g. "nextjs"
+    if not skill_dir:
+        return skill_md
+
+    def replacer(match):
+        text = match.group(1)
+        target = match.group(2)
+        anchor = match.group(3) or ""
+        # Only rewrite if target starts with slug + /
+        if target.startswith(f"{slug}/"):
+            rel = os.path.relpath(target, skill_dir)
+            # Ensure it starts with ./ or ../
+            if not rel.startswith("."):
+                rel = f"./{rel}"
+            return f"[{text}]({rel}{anchor})"
+        return match.group(0)
+
+    # Match markdown links: [text](path/...  [optional #anchor])
+    pattern = re.compile(r"\[([^\]]*)\]\(([^)#\s:][^)#\s]*)(#[^)\s]*)?\)")
+    return pattern.sub(replacer, skill_md)
+
+
 def resolve_slug_dir(slug: str) -> pathlib.Path:
     """Handle nested slugs like bun/bun and deno/deno."""
     direct = WORKSPACE / slug
@@ -288,6 +317,8 @@ def gen_skill(slug: str, token: str):
         if lines and lines[-1].strip() == "```":
             lines = lines[:-1]
         skill_md = "\n".join(lines).strip()
+    # Convert repo-root paths to relative paths from SKILL.md's directory
+    skill_md = make_skill_paths_relative(skill_md, slug)
     out_path.write_text(skill_md)
     print(f"  {slug}: wrote {out_path} ({len(skill_md)} chars)")
 

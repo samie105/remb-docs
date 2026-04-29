@@ -14,6 +14,7 @@ Idempotent: safe to re-run -- only writes files that actually change.
 """
 
 import json
+import os
 import pathlib
 import re
 import sys
@@ -96,10 +97,22 @@ def strip_sidebar_noise(body: str) -> str:
     return body[m.start():]
 
 
-def rewrite_internal_links(body: str, url_to_local: dict, base_url: str) -> str:
+
+def local_to_relpath(current_repo_path: str, target_repo_path: str) -> str:
+    """
+    Compute a relative path from current_repo_path to target_repo_path.
+    Both paths are relative to the repo root.
+    """
+    cur_dir = os.path.dirname(current_repo_path) or "."
+    target = target_repo_path
+    rel = os.path.relpath(target, cur_dir)
+    return rel if rel.startswith("./") else rel
+
+
+def rewrite_internal_links(body: str, url_to_local: dict, base_url: str, current_repo_path: str) -> str:
     """
     Replace absolute doc links like (https://nextjs.org/docs/app/getting-started)
-    with relative local paths like (nextjs/docs/app/getting-started/index.md).
+    with relative local paths like (installation/index.md).
     Only rewrites links whose URL is in the manifest (i.e. we actually crawled it).
     """
     def replacer(match):
@@ -108,8 +121,9 @@ def rewrite_internal_links(body: str, url_to_local: dict, base_url: str) -> str:
         anchor = match.group(3) or ""
         clean_url = url.rstrip("/")
         if clean_url in url_to_local:
-            local = url_to_local[clean_url]
-            return f"[{text}]({local}{anchor})"
+            target_repo = url_to_local[clean_url]
+            rel = local_to_relpath(current_repo_path, target_repo)
+            return f"[{text}]({rel}{anchor})"
         return match.group(0)
 
     pattern = re.compile(r"\[([^\]]*)\]\((https?://[^)#\s]+)(#[^)\s]*)?\)")
@@ -248,7 +262,7 @@ def process_slug(slug: str):
                 nav_extra["nav_next"] = json.dumps({"path": next_local, "title": next_title})
 
         # 3. Rewrite internal links in body
-        cleaned_body = rewrite_internal_links(cleaned_body, url_to_local, url)
+        cleaned_body = rewrite_internal_links(cleaned_body, url_to_local, url, local_path)
 
         # Upsert nav into raw frontmatter (no full re-serialize)
         if fm_block:
