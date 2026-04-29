@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:30.787Z"
 content_hash: "260df176a4e80e742ac3676e892d9ade8825b53bb77caac7d1d47fba84018af7"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Heroku","Heroku"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Heroku","Heroku"]
-nav_prev: {"path": "../firestore-data/index.md", "title": "Migrate from Firebase Firestore to Supabase"}
-nav_next: {"path": "../mssql/index.md", "title": "Migrate from MSSQL to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firestore-data/index.md", "title": "Migrate from Firebase Firestore to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/mssql/index.md", "title": "Migrate from MSSQL to Supabase"}
 ---
 
 # 
@@ -73,7 +73,7 @@ Run `pg_dump --help` for a full list of options.
 
 *   If you're planning to migrate a database larger than 6 GB, we recommend [upgrading to at least a Large compute add-on](/docs/guides/platform/compute-add-ons). This will ensure you have the necessary resources to handle the migration efficiently.
     
-*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](/docs/guides/platform/compute-and-disk#disk) documentation.
+*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](../../compute-and-disk/index.md#disk) documentation.
     
 
 ## Enterprise[#](#enterprise)

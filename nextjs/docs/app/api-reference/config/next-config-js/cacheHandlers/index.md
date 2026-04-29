@@ -11,15 +11,15 @@ menu_path: ["cacheHandlers"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../cacheComponents/index.md", "title": "cacheComponents"}
-nav_next: {"path": "../cacheLife/index.md", "title": "cacheLife"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheComponents/index.md", "title": "cacheComponents"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheLife/index.md", "title": "cacheLife"}
 ---
 
 # cacheHandlers
 
 Last updated April 23, 2026
 
-The `cacheHandlers` configuration allows you to define custom cache storage implementations for [`'use cache'`](/docs/app/api-reference/directives/use-cache) and [`'use cache: remote'`](/docs/app/api-reference/directives/use-cache-remote). This enables you to store cached components and functions in external services or customize the caching behavior. [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private) is not configurable.
+The `cacheHandlers` configuration allows you to define custom cache storage implementations for [`'use cache'`](../../../directives/use-cache/index.md) and [`'use cache: remote'`](../../../directives/use-cache-remote/index.md). This enables you to store cached components and functions in external services or customize the caching behavior. [`'use cache: private'`](../../../directives/use-cache-private/index.md) is not configurable.
 
 ## When to use custom cache handlers[](#when-to-use-custom-cache-handlers)
 
@@ -476,13 +476,13 @@ module.exports = {
 }
 ```
 
-For a full explanation of the tag architecture (including soft tags and multi-instance considerations), see [How Revalidation Works](/docs/app/guides/how-revalidation-works).
+For a full explanation of the tag architecture (including soft tags and multi-instance considerations), see [How Revalidation Works](../../../../guides/how-revalidation-works/index.md).
 
 ## Soft Tags[](#soft-tags)
 
 Soft tags are implicit tags that Next.js automatically generates based on the route path. For example, the route `/blog/hello` generates soft tags for `/`, `/blog`, `/blog/hello`, and their corresponding layout entries. These tags are prefixed internally with `_N_T_`.
 
-Soft tags enable [`revalidatePath()`](/docs/app/api-reference/functions/revalidatePath) to work through the same tag-based cache system. When `revalidatePath('/blog/hello')` is called, it invalidates all cache entries associated with that path's soft tags.
+Soft tags enable [`revalidatePath()`](../../../functions/revalidatePath/index.md) to work through the same tag-based cache system. When `revalidatePath('/blog/hello')` is called, it invalidates all cache entries associated with that path's soft tags.
 
 In the cache handler API, soft tags are passed to the [`get()`](#get) method as the `softTags` parameter. Your handler should check whether any soft tag has been invalidated (via `getExpiration()` or direct timestamp comparison) after the cache entry's `timestamp`. If a soft tag was invalidated more recently than the entry was created, the entry should be treated as stale.
 
@@ -506,10 +506,10 @@ Cache operations should be implemented defensively:
 
 | Deployment Option | Supported |
 | --- | --- |
-| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
-| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
-| [Static export](/docs/app/getting-started/deploying#static-export) | No |
-| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
+| [Node.js server](../../../../getting-started/deploying/index.md#nodejs-server) | Yes |
+| [Docker container](../../../../getting-started/deploying/index.md#docker) | Yes |
+| [Static export](../../../../getting-started/deploying/index.md#static-export) | No |
+| [Adapters](../../../../getting-started/deploying/index.md#adapters) | Platform-specific |
 
 ## Version History[](#version-history)
 
@@ -527,24 +527,24 @@ View related API references.
 
 Learn how to use the "use cache" directive to cache data in your Next.js application.
 
-](/docs/app/api-reference/directives/use-cache)[
+](../../../directives/use-cache/index.md)[
 
 ### use cache: remote
 
 Learn how to use the "use cache: remote" directive for persistent, shared caching using remote cache handlers.
 
-](/docs/app/api-reference/directives/use-cache-remote)[
+](../../../directives/use-cache-remote/index.md)[
 
 ### use cache: private
 
 Learn how to use the "use cache: private" directive to cache functions that access runtime request APIs.
 
-](/docs/app/api-reference/directives/use-cache-private)[
+](../../../directives/use-cache-private/index.md)[
 
 ### cacheLife
 
 Learn how to set up cacheLife configurations in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheLife)
+](../cacheLife/index.md)
 
 Was this helpful?

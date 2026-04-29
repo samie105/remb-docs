@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:14.139Z"
 content_hash: "549a3d7f4060ee8922b0249a12da4e7f74029942c8aa1d3b1e544bc644f7e114"
 menu_path: ["YAML"]
 section_path: []
-nav_prev: {"path": "../workers/index.md", "title": "Workers"}
-nav_next: {"path": "../../test/index.md", "title": "Test runner"}
+nav_prev: {"path": "bun/docs/runtime/workers/index.md", "title": "Workers"}
+nav_next: {"path": "bun/docs/test/index.md", "title": "Test runner"}
 ---
 
 # Employee record

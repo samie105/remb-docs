@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../cypress/index.md", "title": "How to set up Cypress with Next.js"}
-nav_next: {"path": "../playwright/index.md", "title": "How to set up Playwright with Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/testing/cypress/index.md", "title": "How to set up Cypress with Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/testing/playwright/index.md", "title": "How to set up Playwright with Next.js"}
 ---
 
 # How to set up Jest with Next.js
@@ -133,18 +133,18 @@ export default createJestConfig(config)
 
 Under the hood, `next/jest` is automatically configuring Jest for you, including:
 
--   Setting up `transform` using the [Next.js Compiler](/docs/architecture/nextjs-compiler).
--   Auto mocking stylesheets (`.css`, `.module.css`, and their scss variants), image imports and [`next/font`](/docs/app/api-reference/components/font).
+-   Setting up `transform` using the [Next.js Compiler](../../../../architecture/nextjs-compiler/index.md).
+-   Auto mocking stylesheets (`.css`, `.module.css`, and their scss variants), image imports and [`next/font`](../../../api-reference/components/font/index.md).
 -   Loading `.env` (and all variants) into `process.env`.
 -   Ignoring `node_modules` from test resolving and transforms.
 -   Ignoring `.next` from test resolving.
 -   Loading `next.config.js` for flags that enable SWC transforms.
 
-> **Good to know**: To test environment variables directly, load them manually in a separate setup script or in your `jest.config.ts` file. For more information, please see [Test Environment Variables](/docs/app/guides/environment-variables#test-environment-variables).
+> **Good to know**: To test environment variables directly, load them manually in a separate setup script or in your `jest.config.ts` file. For more information, please see [Test Environment Variables](../../environment-variables/index.md#test-environment-variables).
 
 ## Optional: Handling Absolute Imports and Module Path Aliases[](#optional-handling-absolute-imports-and-module-path-aliases)
 
-If your project is using [Module Path Aliases](/docs/app/getting-started/installation#set-up-absolute-imports-and-module-path-aliases), you will need to configure Jest to resolve the imports by matching the paths option in the `jsconfig.json` file with the `moduleNameMapper` option in the `jest.config.js` file. For example:
+If your project is using [Module Path Aliases](../../../getting-started/installation/index.md#set-up-absolute-imports-and-module-path-aliases), you will need to configure Jest to resolve the imports by matching the paths option in the `jsconfig.json` file with the `moduleNameMapper` option in the `jest.config.js` file. For example:
 
 tsconfig.json or jsconfig.json
 

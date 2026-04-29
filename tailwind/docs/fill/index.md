@@ -10,8 +10,8 @@ content_hash: "a6ecd3beff486debf4365e5aee8cce1030f7a4dad478cbe1b548ff4471586005"
 menu_path: ["fill"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../will-change/index.md", "title": "will-change"}
-nav_next: {"path": "../stroke/index.md", "title": "stroke"}
+nav_prev: {"path": "tailwind/docs/will-change/index.md", "title": "will-change"}
+nav_next: {"path": "tailwind/docs/stroke/index.md", "title": "stroke"}
 ---
 
 # fill
@@ -106,7 +106,7 @@ Prefix a `fill` utility with a breakpoint variant like `md:` to only apply the u
 <svg class="fill-cyan-500 md:fill-cyan-700 ...">  <!-- ... --></svg>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
@@ -120,7 +120,7 @@ Now the `fill-regal-blue` utility can be used in your markup:
 <svg class="fill-regal-blue">  <!-- ... --></svg>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

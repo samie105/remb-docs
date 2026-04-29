@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:59.364Z"
 content_hash: "b93d441489d1909f2c5a3809214d680f9950fcfbc6bcd6c5642a2af3ea2791eb"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Throughput","Disk Throughput"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Throughput","Disk Throughput"]
-nav_prev: {"path": "../disk-size/index.md", "title": "Manage Disk size usage"}
-nav_next: {"path": "../edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-size/index.md", "title": "Manage Disk size usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
 ---
 
 # 
@@ -23,9 +23,9 @@ Manage Disk Throughput usage
 
 Each database has a dedicated disk, and you are charged for its provisioned disk throughput. However, unless you explicitly opt in for additional throughput, no charges apply.
 
-Refer to our [disk guide](/docs/guides/platform/compute-and-disk#disk) for details on how disk throughput, disk IOPS, disk size, disk type and compute size interact, along with their limitations and constraints.
+Refer to our [disk guide](../../compute-and-disk/index.md#disk) for details on how disk throughput, disk IOPS, disk size, disk type and compute size interact, along with their limitations and constraints.
 
-Disk Throughput is **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+Disk Throughput is **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 Launching a Read Replica creates an additional database with its own dedicated disk. Read Replicas inherit the primary database's disk throughput settings. You are charged for the provisioned throughput of the Read Replica.
 
@@ -39,7 +39,7 @@ Usage is shown as "Disk Throughput MB/s-Hrs" on your invoice.
 
 ## Pricing[#](#pricing)
 
-Pricing depends on the [disk type](/docs/guides/platform/compute-and-disk#disk-types), with type gp3 being the default.
+Pricing depends on the [disk type](../../compute-and-disk/index.md#disk-types), with type gp3 being the default.
 
 ### General purpose disks (gp3)[#](#general-purpose-disks-gp3)
 

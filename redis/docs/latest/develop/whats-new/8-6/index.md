@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:37.062Z"
 content_hash: "f82e10dfca4faf34e0fe61289ccf549511cca68299f8d0ab5807e12534139090"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.6","→","Redis 8.6"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        What's new?","→","What's new?","→\n      \n        Redis 8.6","→","Redis 8.6"]
-nav_prev: {"path": "../8-4/index.md", "title": "Redis 8.4"}
-nav_next: {"path": "../../../integrate/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
+nav_prev: {"path": "redis/docs/latest/develop/whats-new/8-4/index.md", "title": "Redis 8.4"}
+nav_next: {"path": "redis/docs/latest/integrate/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
 ---
 
 # Redis 8.6
@@ -53,7 +53,7 @@ These features prevent duplicate entries in streams, making Redis Streams more r
 
 ### Enhanced memory management
 
-Redis 8.6 introduces new [eviction policies](/docs/latest/develop/reference/eviction/) that provide more granular control over memory management:
+Redis 8.6 introduces new [eviction policies](../../reference/eviction/index.md) that provide more granular control over memory management:
 
 *   **volatile-lrm**: Evicts keys with expiration times based on least recently modified criteria.
 *   **allkeys-lrm**: Evicts any keys based on least recently modified criteria.

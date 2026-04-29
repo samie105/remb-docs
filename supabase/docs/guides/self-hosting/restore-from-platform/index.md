@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:31.214Z"
 content_hash: "75a78a0563094b6ba87cfb4fcc0e9c6f52202d03ac1321e67ced12fa9f6ad969"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Restore Project from Platform","Restore Project from Platform"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Restore Project from Platform","Restore Project from Platform"]
-nav_prev: {"path": "../postgres-upgrade-17/index.md", "title": "Upgrade to Postgres 17"}
-nav_next: {"path": "../self-hosted-auth-keys/index.md", "title": "New API Keys and Asymmetric Authentication"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/postgres-upgrade-17/index.md", "title": "Upgrade to Postgres 17"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-auth-keys/index.md", "title": "New API Keys and Asymmetric Authentication"}
 ---
 
 # 
@@ -23,14 +23,14 @@ Restore your database from the Supabase platform to a self-hosted instance.
 
 * * *
 
-This guide walks you through restoring your database from a Supabase platform project to a [self-hosted Docker instance](/docs/guides/self-hosting/docker). Storage objects transfer or redeploying edge functions is not covered here.
+This guide walks you through restoring your database from a Supabase platform project to a [self-hosted Docker instance](../docker/index.md). Storage objects transfer or redeploying edge functions is not covered here.
 
 ## Before you begin[#](#before-you-begin)
 
 You need:
 
-*   A new self-hosted Supabase instance ([Docker setup guide](/docs/guides/self-hosting/docker))
-*   [Supabase CLI](/docs/guides/local-development/cli/getting-started) installed (or use `npx supabase`)
+*   A new self-hosted Supabase instance ([Docker setup guide](../docker/index.md))
+*   [Supabase CLI](../../local-development/cli/getting-started/index.md) installed (or use `npx supabase`)
 *   [Docker Desktop](https://docs.docker.com/get-started/get-docker/) installed (required by the CLI)
 *   `psql` installed ([official installation guide](https://www.postgresql.org/download/))
 *   Your Supabase database passwords (for platform and self-hosted)
@@ -67,7 +67,7 @@ Before restoring, check the following on your self-hosted instance:
 
 ## Step 4: Restore to your self-hosted database[#](#step-4-restore-to-your-self-hosted-database)
 
-Connect to your self-hosted Postgres and restore the dump files. The [default](/docs/guides/self-hosting/docker#accessing-postgres) connection string for self-hosted Supabase is:
+Connect to your self-hosted Postgres and restore the dump files. The [default](../docker/index.md#accessing-postgres) connection string for self-hosted Supabase is:
 
 ```
 1postgres://postgres.your-tenant-id:[POSTGRES_PASSWORD]@[your-domain]:5432/postgres
@@ -179,7 +179,7 @@ If the restore fails because an extension isn't available, check whether it's su
 
 ### Connection refused[#](#connection-refused)
 
-Make sure your self-hosted Postgres port is accessible. In the default [self-hosted Supabase](/docs/guides/self-hosting/docker#accessing-postgres) setup, the user is `postgres.your-tenant-id` with Supavisor on port `5432`.
+Make sure your self-hosted Postgres port is accessible. In the default [self-hosted Supabase](../docker/index.md#accessing-postgres) setup, the user is `postgres.your-tenant-id` with Supavisor on port `5432`.
 
 ### Legacy Studio configuration[#](#legacy-studio-configuration)
 
@@ -195,5 +195,5 @@ If you created custom database roles with the `LOGIN` attribute on your platform
 
 ### Additional resources[#](#additional-resources)
 
-*   [Backup and Restore using the CLI](/docs/guides/platform/migrating-within-supabase/backup-restore)
-*   [Restore Dashboard backup](/docs/guides/platform/migrating-within-supabase/dashboard-restore)
+*   [Backup and Restore using the CLI](../../platform/migrating-within-supabase/backup-restore/index.md)
+*   [Restore Dashboard backup](../../platform/migrating-within-supabase/dashboard-restore/index.md)

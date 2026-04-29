@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:37.187Z"
 content_hash: "822db0a3af9b923b3f421a822f7aa122c3df75fb42164ea3d80d4446b761fd48"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Connect to a Redis Cloud database","→","Connect to a Redis Cloud database","→\n      \n        Use Redis Insight on Redis Cloud","→","Use Redis Insight on Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Connect to a Redis Cloud database","→","Connect to a Redis Cloud database","→\n      \n        Use Redis Insight on Redis Cloud","→","Use Redis Insight on Redis Cloud"]
-nav_prev: {"path": "../../active-active/create-active-active-database/index.md", "title": "Create an Active-Active database"}
-nav_next: {"path": "../../create-database/create-essentials-database/index.md", "title": "Create an Essentials database"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/active-active/create-active-active-database/index.md", "title": "Create an Active-Active database"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-essentials-database/index.md", "title": "Create an Essentials database"}
 ---
 
 # Use Redis Insight on Redis Cloud
@@ -21,13 +21,13 @@ Redis Cloud
 
 Redis Insight
 
-[Redis Insight](/docs/latest/develop/tools/insight/) is a free Redis GUI that lets you visualize your Redis data and learn more about Redis.
+[Redis Insight](../../../../../develop/tools/insight/index.md) is a free Redis GUI that lets you visualize your Redis data and learn more about Redis.
 
-You can either [install Redis Insight](/docs/latest/develop/tools/insight/) on your computer, or you can open your database in Redis Insight directly on Redis Cloud.
+You can either [install Redis Insight](../../../../../develop/tools/insight/index.md) on your computer, or you can open your database in Redis Insight directly on Redis Cloud.
 
 Note:
 
-Opening your database with Redis Insight in your browser is only available for Essentials databases. For all other databases, [install Redis Insight](/docs/latest/develop/tools/insight/) on your computer and [open Redis Insight](/docs/latest/operate/rc/databases/connect/#ri-app) from the database page.
+Opening your database with Redis Insight in your browser is only available for Essentials databases. For all other databases, [install Redis Insight](../../../../../develop/tools/insight/index.md) on your computer and [open Redis Insight](/docs/latest/operate/rc/databases/connect/#ri-app) from the database page.
 
 To open your database with Redis Insight on Redis Cloud, select **Open with Redis Insight** on the [database screen](/docs/latest/operate/rc/databases/view-edit-database/).
 
@@ -35,7 +35,7 @@ To open your database with Redis Insight on Redis Cloud, select **Open with Redi
 
 Redis Insight will open in a new tab.
 
-This browser-based version of Redis Insight has a subset of the features of Redis Insight. For other Redis Insight features, [install Redis Insight](/docs/latest/develop/tools/insight/) on your computer and [open Redis Insight](/docs/latest/operate/rc/databases/connect/#ri-app) from the database page.
+This browser-based version of Redis Insight has a subset of the features of Redis Insight. For other Redis Insight features, [install Redis Insight](../../../../../develop/tools/insight/index.md) on your computer and [open Redis Insight](/docs/latest/operate/rc/databases/connect/#ri-app) from the database page.
 
 ## Browse
 

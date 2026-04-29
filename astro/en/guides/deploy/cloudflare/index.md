@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:36:41.475Z"
 content_hash: "e99cdff5ff1b345199b1bbc670b3579f0e95d33f37b43ae2b342cf175e7eaa99"
 menu_path: ["Deploy your Astro Site to Cloudflare"]
 section_path: []
-nav_prev: {"path": "../clever-cloud/index.md", "title": "Deploy your Astro Site to Clever Cloud"}
-nav_next: {"path": "../cloudray/index.md", "title": "Deploy your Astro Site with CloudRay"}
+nav_prev: {"path": "astro/en/guides/deploy/clever-cloud/index.md", "title": "Deploy your Astro Site to Clever Cloud"}
+nav_next: {"path": "astro/en/guides/deploy/cloudray/index.md", "title": "Deploy your Astro Site with CloudRay"}
 ---
 
 # Deploy your Astro Site to Cloudflare
 
 You can deploy full-stack applications, including front-end static assets and back-end APIs, as well as on-demand rendered sites, to [Cloudflare Workers](https://developers.cloudflare.com/workers/static-assets/).
 
-Read more about [using the Cloudflare runtime](/en/guides/integrations-guide/cloudflare/) in your Astro project.
+Read more about [using the Cloudflare runtime](../../integrations-guide/cloudflare/index.md) in your Astro project.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ To get started, you will need:
     npm install wrangler@latest --save-dev
     ```
     
-2.  If your site uses on-demand rendering, install the [`@astrojs/cloudflare` adapter](/en/guides/integrations-guide/cloudflare/).
+2.  If your site uses on-demand rendering, install the [`@astrojs/cloudflare` adapter](../../integrations-guide/cloudflare/index.md).
     
     This will install the adapter and make the appropriate changes to your `astro.config.mjs` file in one step.
     
@@ -53,7 +53,7 @@ To get started, you will need:
     npx astro add cloudflare
     ```
     
-    Read more about [on-demand rendering in Astro](/en/guides/on-demand-rendering/).
+    Read more about [on-demand rendering in Astro](../../on-demand-rendering/index.md).
     
 3.  Create a [Wrangler configuration file](https://developers.cloudflare.com/workers/wrangler/configuration/).
     
@@ -81,7 +81,7 @@ To get started, you will need:
 
 After your assets are uploaded, Wrangler will give you a preview URL to inspect your site.
 
-Read more about using [Cloudflare runtime APIs](/en/guides/integrations-guide/cloudflare/) such as bindings.
+Read more about using [Cloudflare runtime APIs](../../integrations-guide/cloudflare/index.md) such as bindings.
 
 ### How to deploy with CI/CD
 
@@ -128,11 +128,11 @@ Client-side hydration may fail as a result of Cloudflare’s Auto Minify setting
 
 [Section titled “Node.js runtime APIs”](#nodejs-runtime-apis)
 
-If you are building a project that is using on-demand rendering with [the Cloudflare adapter](/en/guides/integrations-guide/cloudflare/) and the server fails to build with an error message such as `[Error] Could not resolve "XXXX. The package "XXXX" wasn't found on the file system but is built into node.`:
+If you are building a project that is using on-demand rendering with [the Cloudflare adapter](../../integrations-guide/cloudflare/index.md) and the server fails to build with an error message such as `[Error] Could not resolve "XXXX. The package "XXXX" wasn't found on the file system but is built into node.`:
 
 *   This means that a package or import you are using in the server-side environment is not compatible with the [Cloudflare runtime APIs](https://developers.cloudflare.com/workers/runtime-apis/nodejs/).
     
-*   If you are directly importing a Node.js runtime API, please refer to the Astro documentation on Cloudflare’s [Node.js compatibility](/en/guides/integrations-guide/cloudflare/#nodejs-compatibility) for further steps on how to resolve this.
+*   If you are directly importing a Node.js runtime API, please refer to the Astro documentation on Cloudflare’s [Node.js compatibility](../../integrations-guide/cloudflare/index.md#nodejs-compatibility) for further steps on how to resolve this.
     
 *   If you are importing a package that imports a Node.js runtime API, check with the author of the package to see if they support the `node:*` import syntax. If they do not, you may need to find an alternative package.
     
@@ -141,131 +141,131 @@ If you are building a project that is using on-demand rendering with [the Cloudf
 
 *   ![](/logos/aws.svg)
     
-    ### [AWS](/en/guides/deploy/aws/)
+    ### [AWS](../aws/index.md)
     
 *   ![](/logos/flightcontrol.svg)
     
-    ### [AWS via Flightcontrol](/en/guides/deploy/aws-via-flightcontrol/)
+    ### [AWS via Flightcontrol](../aws-via-flightcontrol/index.md)
     
 *   ![](/logos/sst.svg)
     
-    ### [AWS via SST](/en/guides/deploy/aws-via-sst/)
+    ### [AWS via SST](../aws-via-sst/index.md)
     
 *   ![](/logos/azion.svg)
     
-    ### [Azion](/en/guides/deploy/azion/)
+    ### [Azion](../azion/index.md)
     
 *   ![](/logos/buddy.svg)
     
-    ### [Buddy](/en/guides/deploy/buddy/)
+    ### [Buddy](../buddy/index.md)
     
 *   ![](/logos/cleavr.svg)
     
-    ### [Cleavr](/en/guides/deploy/cleavr/)
+    ### [Cleavr](../cleavr/index.md)
     
 *   ![](/logos/clever-cloud.svg)
     
-    ### [Clever Cloud](/en/guides/deploy/clever-cloud/)
+    ### [Clever Cloud](../clever-cloud/index.md)
     
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [Cloudflare](/en/guides/deploy/cloudflare/)
+    ### [Cloudflare](index.md)
     
 *   ![](/logos/cloudray.svg)
     
-    ### [CloudRay](/en/guides/deploy/cloudray/)
+    ### [CloudRay](../cloudray/index.md)
     
 *   ![](/logos/deno.svg)
     
-    ### [Deno Deploy](/en/guides/deploy/deno/)
+    ### [Deno Deploy](../deno/index.md)
     
 *   ![](/logos/deployhq.svg)
     
-    ### [DeployHQ](/en/guides/deploy/deployhq/)
+    ### [DeployHQ](../deployhq/index.md)
     
 *   ![](/logos/edgeone-pages.svg)
     
-    ### [EdgeOne Pages](/en/guides/deploy/edgeone-pages/)
+    ### [EdgeOne Pages](../edgeone-pages/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/deploy/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/fleek.svg)
     
-    ### [Fleek](/en/guides/deploy/fleek/)
+    ### [Fleek](../fleek/index.md)
     
 *   ![](/logos/flyio.svg)
     
-    ### [Fly.io](/en/guides/deploy/flyio/)
+    ### [Fly.io](../flyio/index.md)
     
 *   ![](/logos/github.svg)
     
-    ### [GitHub Pages](/en/guides/deploy/github/)
+    ### [GitHub Pages](../github/index.md)
     
 *   ![](/logos/gitlab.svg)
     
-    ### [GitLab Pages](/en/guides/deploy/gitlab/)
+    ### [GitLab Pages](../gitlab/index.md)
     
 *   ![](/logos/google-cloud.svg)
     
-    ### [Google Cloud](/en/guides/deploy/google-cloud/)
+    ### [Google Cloud](../google-cloud/index.md)
     
 *   ![](/logos/heroku.svg)
     
-    ### [Heroku](/en/guides/deploy/heroku/)
+    ### [Heroku](../heroku/index.md)
     
 *   ![](/logos/juno.svg)
     
-    ### [Juno](/en/guides/deploy/juno/)
+    ### [Juno](../juno/index.md)
     
 *   ![](/logos/microsoft-azure.svg)
     
-    ### [Microsoft Azure](/en/guides/deploy/microsoft-azure/)
+    ### [Microsoft Azure](../microsoft-azure/index.md)
     
 *   ![](/logos/netlify.svg)
     
-    ### [Netlify](/en/guides/deploy/netlify/)
+    ### [Netlify](../netlify/index.md)
     
 *   ![](/logos/railway.svg)
     
-    ### [Railway](/en/guides/deploy/railway/)
+    ### [Railway](../railway/index.md)
     
 *   ![](/logos/render.svg)
     
-    ### [Render](/en/guides/deploy/render/)
+    ### [Render](../render/index.md)
     
 *   ![](/logos/seenode.svg)
     
-    ### [Seenode](/en/guides/deploy/seenode/)
+    ### [Seenode](../seenode/index.md)
     
 *   ![](/logos/sevalla.svg)
     
-    ### [Sevalla](/en/guides/deploy/sevalla/)
+    ### [Sevalla](../sevalla/index.md)
     
 *   ![](/logos/stormkit.svg)
     
-    ### [Stormkit](/en/guides/deploy/stormkit/)
+    ### [Stormkit](../stormkit/index.md)
     
 *   ![](/logos/surge.svg)
     
-    ### [Surge](/en/guides/deploy/surge/)
+    ### [Surge](../surge/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [Vercel](/en/guides/deploy/vercel/)
+    ### [Vercel](../vercel/index.md)
     
 *   ![](/logos/zeabur.svg)
     
-    ### [Zeabur](/en/guides/deploy/zeabur/)
+    ### [Zeabur](../zeabur/index.md)
     
 *   ![](/logos/zephyr.svg)
     
-    ### [Zephyr Cloud](/en/guides/deploy/zephyr/)
+    ### [Zephyr Cloud](../zephyr/index.md)
     
 *   ![](/logos/zerops.svg)
     
-    ### [Zerops](/en/guides/deploy/zerops/)
+    ### [Zerops](../zerops/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

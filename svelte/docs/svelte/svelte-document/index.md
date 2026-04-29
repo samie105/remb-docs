@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:34.357Z"
 content_hash: "7fdca52a51c269a6dd037f119326eff89262c460c95f5e1fbc42cf4ceec61567"
 menu_path: ["<svelte:document>"]
 section_path: []
-nav_prev: {"path": "../svelte-window/index.md", "title": "<svelte:window>"}
-nav_next: {"path": "../svelte-body/index.md", "title": "<svelte:body>"}
+nav_prev: {"path": "svelte/docs/svelte/svelte-window/index.md", "title": "<svelte:window>"}
+nav_next: {"path": "svelte/docs/svelte/svelte-body/index.md", "title": "<svelte:body>"}
 ---
 
 ```
@@ -42,4 +42,4 @@ All are readonly.
 
 previous next
 
-[<svelte:window>](/docs/svelte/svelte-window) [<svelte:body>](/docs/svelte/svelte-body)
+[<svelte:window>](../svelte-window/index.md) [<svelte:body>](../svelte-body/index.md)

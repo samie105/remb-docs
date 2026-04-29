@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:03.121Z"
 content_hash: "d6f47b9e2a6c4707bad55953fe38bf15fcdcd1bb8fb7da853ab0ea1daef4b9ab"
 menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (Dashboard)","Quickstart (Dashboard)"]
 section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (Dashboard)","Quickstart (Dashboard)"]
-nav_prev: {"path": "../quickstart/index.md", "title": "Getting Started with Edge Functions"}
-nav_next: {"path": "../recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
+nav_prev: {"path": "supabase/docs/guides/functions/quickstart/index.md", "title": "Getting Started with Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
 ---
 
 # 
@@ -29,7 +29,7 @@ This guide will walk you through creating, testing, and deploying your first Edg
 
 ##### Prefer using the CLI?
 
-You can also create and deploy functions using the Supabase CLI. Check out our [CLI Quickstart guide](/docs/guides/functions/quickstart).
+You can also create and deploy functions using the Supabase CLI. Check out our [CLI Quickstart guide](../quickstart/index.md).
 
 ##### New to Supabase?
 
@@ -169,7 +169,7 @@ Now that your function is deployed, you can access it from your local developmen
 
 ##### CLI not installed?
 
-Before getting started, make sure you have the **Supabase CLI installed**. Check out the [CLI installation guide](/docs/guides/cli) for installation methods and troubleshooting.
+Before getting started, make sure you have the **Supabase CLI installed**. Check out the [CLI installation guide](../../cli/index.md) for installation methods and troubleshooting.
 
 ```
 1# Link your project to your local environment2supabase link --project-ref [project-ref]34# List all functions in the linked project5supabase functions list67# Download a function8supabase functions download hello-world

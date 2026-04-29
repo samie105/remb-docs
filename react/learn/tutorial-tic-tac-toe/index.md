@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:35.663Z"
 content_hash: "9d252fa34baf70ee32dde6439854baec45135fd6cea3cc685d43a1cb1b7417d6"
 menu_path: ["Tutorial: Tic-Tac-Toe"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "Quick Start"}
-nav_next: {"path": "../thinking-in-react/index.md", "title": "Thinking in React"}
+nav_prev: {"path": "react/learn/index.md", "title": "Quick Start"}
+nav_next: {"path": "react/learn/thinking-in-react/index.md", "title": "Thinking in React"}
 ---
 
 You will build a small tic-tac-toe game during this tutorial. This tutorial does not assume any existing React knowledge. The techniques you’ll learn in the tutorial are fundamental to building any React app, and fully understanding it will give you a deep understanding of React.

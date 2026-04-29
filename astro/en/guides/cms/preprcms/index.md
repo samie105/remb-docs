@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:02.316Z"
 content_hash: "428268c99741978fb44f957a5c8e74fa59dc1a0a0e5f64e6b7359fe6f21a983d"
 menu_path: ["Prepr CMS & Astro"]
 section_path: []
-nav_prev: {"path": "../payload/index.md", "title": "Payload CMS & Astro"}
-nav_next: {"path": "../prismic/index.md", "title": "Prismic & Astro"}
+nav_prev: {"path": "astro/en/guides/cms/payload/index.md", "title": "Payload CMS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/prismic/index.md", "title": "Prismic & Astro"}
 ---
 
 # Prepr CMS & Astro
@@ -29,7 +29,7 @@ Prepr CMS provides a [GraphQL API](https://docs.prepr.io/reference/graphql/v1/ov
 
 To get started, you will need the following:
 
-*   A new or existing Astro project configured for [on-demand rendering](/en/guides/on-demand-rendering/).
+*   A new or existing Astro project configured for [on-demand rendering](../../on-demand-rendering/index.md).
 *   [A free Prepr account](https://signup.prepr.io/)
 *   [A Prepr environment with existing blog posts](https://docs.prepr.io/account/set-up-environments#create-an-envirntonment). These posts must include a `title` and `content`. Other fields are optional.
 
@@ -125,7 +125,7 @@ Your root directory should include these new files:
 
 [Section titled “Creating individual blog post pages”](#creating-individual-blog-post-pages)
 
-To create a page for each blog post, you will execute a new GraphQL query on a [dynamic routing](/en/guides/routing/#on-demand-dynamic-routes) `.astro` page. This query will fetch a specific article by its slug and a new page will be created for each individual blog post.
+To create a page for each blog post, you will execute a new GraphQL query on a [dynamic routing](../../routing/index.md#on-demand-dynamic-routes) `.astro` page. This query will fetch a specific article by its slug and a new page will be created for each individual blog post.
 
 1.  Create a file called `get-article-by-slug.js` in the `queries` folder and add the following to query a specific article by its slug and return data such as the article `title` and `content`:
     
@@ -172,7 +172,7 @@ Now, when you click an article link from the main list of blog posts, you will b
 
 [Section titled “Publishing your site”](#publishing-your-site)
 
-To deploy your Prepr blog, visit our [deployment guides](/en/guides/deploy/) and follow the instructions for your preferred hosting provider.
+To deploy your Prepr blog, visit our [deployment guides](../../deploy/index.md) and follow the instructions for your preferred hosting provider.
 
 ## Official Resources
 
@@ -187,7 +187,7 @@ To deploy your Prepr blog, visit our [deployment guides](/en/guides/deploy/) and
 
 *   ![](/logos/cloudcannon.svg)
     
-    ### [CloudCannon](/en/guides/cms/cloudcannon/)
+    ### [CloudCannon](../cloudcannon/index.md)
     
     Git-based CMS built for speed, security, and zero headaches.
     
@@ -196,171 +196,171 @@ To deploy your Prepr blog, visit our [deployment guides](/en/guides/deploy/) and
 
 *   ![](/logos/apostrophecms.svg)
     
-    ### [ApostropheCMS](/en/guides/cms/apostrophecms/)
+    ### [ApostropheCMS](../apostrophecms/index.md)
     
 *   ![](/logos/builderio.svg)
     
-    ### [Builder.io](/en/guides/cms/builderio/)
+    ### [Builder.io](../builderio/index.md)
     
 *   ![](/logos/buttercms.svg)
     
-    ### [ButterCMS](/en/guides/cms/buttercms/)
+    ### [ButterCMS](../buttercms/index.md)
     
 *   ![](/logos/caisy.svg)
     
-    ### [Caisy](/en/guides/cms/caisy/)
+    ### [Caisy](../caisy/index.md)
     
 *   ![](/logos/cloudcannon.svg)
     
-    ### [CloudCannon](/en/guides/cms/cloudcannon/)
+    ### [CloudCannon](../cloudcannon/index.md)
     
 *   ![](/logos/contentful.svg)
     
-    ### [Contentful](/en/guides/cms/contentful/)
+    ### [Contentful](../contentful/index.md)
     
 *   ![](/logos/cosmic.svg)
     
-    ### [Cosmic](/en/guides/cms/cosmic/)
+    ### [Cosmic](../cosmic/index.md)
     
 *   ![](/logos/craft-cms.svg)
     
-    ### [Craft CMS](/en/guides/cms/craft-cms/)
+    ### [Craft CMS](../craft-cms/index.md)
     
 *   ![](/logos/craft-cross-cms.svg)
     
-    ### [Craft Cross CMS](/en/guides/cms/craft-cross-cms/)
+    ### [Craft Cross CMS](../craft-cross-cms/index.md)
     
 *   ![](/logos/crystallize.svg)
     
-    ### [Crystallize](/en/guides/cms/crystallize/)
+    ### [Crystallize](../crystallize/index.md)
     
 *   ![](/logos/datocms.svg)
     
-    ### [DatoCMS](/en/guides/cms/datocms/)
+    ### [DatoCMS](../datocms/index.md)
     
 *   ![](/logos/decap-cms.svg)
     
-    ### [Decap CMS](/en/guides/cms/decap-cms/)
+    ### [Decap CMS](../decap-cms/index.md)
     
 *   ![](/logos/directus.svg)
     
-    ### [Directus](/en/guides/cms/directus/)
+    ### [Directus](../directus/index.md)
     
 *   ![](/logos/drupal.svg)
     
-    ### [Drupal](/en/guides/cms/drupal/)
+    ### [Drupal](../drupal/index.md)
     
 *   ![](/logos/flotiq.svg)
     
-    ### [Flotiq](/en/guides/cms/flotiq/)
+    ### [Flotiq](../flotiq/index.md)
     
 *   ![](/logos/frontmatter-cms.svg)
     
-    ### [Front Matter CMS](/en/guides/cms/frontmatter-cms/)
+    ### [Front Matter CMS](../frontmatter-cms/index.md)
     
 *   ![](/logos/ghost.png)
     
-    ### [Ghost](/en/guides/cms/ghost/)
+    ### [Ghost](../ghost/index.md)
     
 *   ![](/logos/gitcms.svg)
     
-    ### [GitCMS](/en/guides/cms/gitcms/)
+    ### [GitCMS](../gitcms/index.md)
     
 *   ![](/logos/hashnode.png)
     
-    ### [Hashnode](/en/guides/cms/hashnode/)
+    ### [Hashnode](../hashnode/index.md)
     
 *   ![](/logos/hygraph.svg)
     
-    ### [Hygraph](/en/guides/cms/hygraph/)
+    ### [Hygraph](../hygraph/index.md)
     
 *   ![](/logos/jekyllpad.svg)
     
-    ### [JekyllPad](/en/guides/cms/jekyllpad/)
+    ### [JekyllPad](../jekyllpad/index.md)
     
 *   ![](/logos/keystatic.svg)
     
-    ### [Keystatic](/en/guides/cms/keystatic/)
+    ### [Keystatic](../keystatic/index.md)
     
 *   ![](/logos/keystonejs.svg)
     
-    ### [KeystoneJS](/en/guides/cms/keystonejs/)
+    ### [KeystoneJS](../keystonejs/index.md)
     
 *   ![](/logos/kontent-ai.svg)
     
-    ### [Kontent.ai](/en/guides/cms/kontent-ai/)
+    ### [Kontent.ai](../kontent-ai/index.md)
     
 *   ![](/logos/microcms.svg)
     
-    ### [microCMS](/en/guides/cms/microcms/)
+    ### [microCMS](../microcms/index.md)
     
 *   ![](/logos/optimizely.svg)
     
-    ### [Optimizely CMS](/en/guides/cms/optimizely/)
+    ### [Optimizely CMS](../optimizely/index.md)
     
 *   ![](/logos/pages-cms.svg)
     
-    ### [Pages CMS](/en/guides/cms/pages-cms/)
+    ### [Pages CMS](../pages-cms/index.md)
     
 *   ![](/logos/payload.svg)
     
-    ### [Payload CMS](/en/guides/cms/payload/)
+    ### [Payload CMS](../payload/index.md)
     
 *   ![](/logos/preprcms.svg)
     
-    ### [Prepr CMS](/en/guides/cms/preprcms/)
+    ### [Prepr CMS](index.md)
     
 *   ![](/logos/prismic.svg)
     
-    ### [Prismic](/en/guides/cms/prismic/)
+    ### [Prismic](../prismic/index.md)
     
 *   ![](/logos/sanity.svg)
     
-    ### [Sanity](/en/guides/cms/sanity/)
+    ### [Sanity](../sanity/index.md)
     
 *   ![](/logos/sitecore.svg)
     
-    ### [Sitecore XM](/en/guides/cms/sitecore/)
+    ### [Sitecore XM](../sitecore/index.md)
     
 *   ![](/logos/sitepins.svg)
     
-    ### [Sitepins](/en/guides/cms/sitepins/)
+    ### [Sitepins](../sitepins/index.md)
     
 *   ![](/logos/spinal.svg)
     
-    ### [Spinal](/en/guides/cms/spinal/)
+    ### [Spinal](../spinal/index.md)
     
 *   ![](/logos/statamic.svg)
     
-    ### [Statamic](/en/guides/cms/statamic/)
+    ### [Statamic](../statamic/index.md)
     
 *   ![](/logos/storyblok.svg)
     
-    ### [Storyblok](/en/guides/cms/storyblok/)
+    ### [Storyblok](../storyblok/index.md)
     
 *   ![](/logos/strapi.svg)
     
-    ### [Strapi](/en/guides/cms/strapi/)
+    ### [Strapi](../strapi/index.md)
     
 *   ![](/logos/studiocms.svg)
     
-    ### [StudioCMS](/en/guides/cms/studiocms/)
+    ### [StudioCMS](../studiocms/index.md)
     
 *   ![](/logos/tina-cms.svg)
     
-    ### [Tina CMS](/en/guides/cms/tina-cms/)
+    ### [Tina CMS](../tina-cms/index.md)
     
 *   ![](/logos/umbraco.svg)
     
-    ### [Umbraco](/en/guides/cms/umbraco/)
+    ### [Umbraco](../umbraco/index.md)
     
 *   ![](/logos/vault-cms.svg)
     
-    ### [Vault CMS](/en/guides/cms/vault-cms/)
+    ### [Vault CMS](../vault-cms/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [Wordpress](/en/guides/cms/wordpress/)
+    ### [Wordpress](../wordpress/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -11,8 +11,8 @@ menu_path: ["connection"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../catchError/index.md", "title": "unstable_catchError"}
-nav_next: {"path": "../cookies/index.md", "title": "cookies"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/catchError/index.md", "title": "unstable_catchError"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/cookies/index.md", "title": "cookies"}
 ---
 
 # connection
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 The `connection()` function allows you to indicate rendering should wait for an incoming user request before continuing.
 
-It's useful when a component doesn't use [Request-time APIs](/docs/app/glossary#request-time-apis), but you want it to be rendered at runtime and not prerendered at build time. This usually occurs when you access external information that you intentionally want to change the result of a render, such as `Math.random()` or `new Date()`.
+It's useful when a component doesn't use [Request-time APIs](../../../glossary/index.md#request-time-apis), but you want it to be rendered at runtime and not prerendered at build time. This usually occurs when you access external information that you intentionally want to change the result of a render, such as `Math.random()` or `new Date()`.
 
 app/page.tsx
 
@@ -56,7 +56,7 @@ function connection(): Promise<void>
 
 ## Good to know[](#good-to-know)
 
--   `connection` replaces [`unstable_noStore`](/docs/app/api-reference/functions/unstable_noStore) to better align with the future of Next.js.
+-   `connection` replaces [`unstable_noStore`](../unstable_noStore/index.md) to better align with the future of Next.js.
 -   The function is only necessary when dynamic rendering is required and common Request-time APIs are not used.
 
 ### Version History[](#version-history)

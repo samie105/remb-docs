@@ -11,8 +11,8 @@ menu_path: ["No Unwanted Polyfill.io"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-title-in-document-head/index.md", "title": "No Title in Document Head"}
-nav_next: {"path": "../sync-dynamic-apis/index.md", "title": "Dynamic APIs are Asynchronous"}
+nav_prev: {"path": "nextjs/docs/messages/no-title-in-document-head/index.md", "title": "No Title in Document Head"}
+nav_next: {"path": "nextjs/docs/messages/sync-dynamic-apis/index.md", "title": "Dynamic APIs are Asynchronous"}
 ---
 
 # No Unwanted Polyfill.io
@@ -25,10 +25,10 @@ You are using polyfills from Polyfill.io and including polyfills already shipped
 
 ## Possible Ways to Fix It[](#possible-ways-to-fix-it)
 
-Remove all duplicate polyfills. If you need to add polyfills but are not sure if Next.js already includes it, take a look at the list of [supported browsers and features](/docs/architecture/supported-browsers).
+Remove all duplicate polyfills. If you need to add polyfills but are not sure if Next.js already includes it, take a look at the list of [supported browsers and features](../../architecture/supported-browsers/index.md).
 
 ## Useful Links[](#useful-links)
 
--   [Supported Browsers and Features](/docs/architecture/supported-browsers)
+-   [Supported Browsers and Features](../../architecture/supported-browsers/index.md)
 
 Was this helpful?

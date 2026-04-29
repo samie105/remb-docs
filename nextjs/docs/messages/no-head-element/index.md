@@ -11,8 +11,8 @@ menu_path: ["No Head Element"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-duplicate-head/index.md", "title": "No Duplicate Head"}
-nav_next: {"path": "../no-head-import-in-document/index.md", "title": "No Head Import in Document"}
+nav_prev: {"path": "nextjs/docs/messages/no-duplicate-head/index.md", "title": "No Duplicate Head"}
+nav_next: {"path": "nextjs/docs/messages/no-head-import-in-document/index.md", "title": "No Head Import in Document"}
 ---
 
 # No Head Element
@@ -48,6 +48,6 @@ export default Index
 
 ## Useful Links[](#useful-links)
 
--   [next/head](/docs/pages/api-reference/components/head)
+-   [next/head](../../pages/api-reference/components/head/index.md)
 
 Was this helpful?

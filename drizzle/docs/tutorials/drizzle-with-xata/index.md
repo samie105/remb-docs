@@ -10,8 +10,8 @@ content_hash: "68816afff2dd4c2e5677f72d0061e9ebb372c36e3ee7209b0379a7191ef257ac"
 menu_path: ["Drizzle with Xata"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
-nav_next: {"path": "../node-railway-pg/index.md", "title": "Drizzle with Node.js and PostgreSQL on Railway"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
+nav_next: {"path": "drizzle/docs/tutorials/node-railway-pg/index.md", "title": "Drizzle with Node.js and PostgreSQL on Railway"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Xata](https://xata.io/). Xata is a PostgreSQL database platform designed to help developers operate and scale databases with enhanced productivity and performance, featuring instant copy-on-write database branches, zero-downtime schema changes, data anonymization, and AI-powered performance monitoring.

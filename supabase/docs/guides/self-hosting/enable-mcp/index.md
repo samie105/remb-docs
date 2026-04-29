@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:22.605Z"
 content_hash: "cb2146d12538a465abf3ac4de8ac2c59b5e431d21c8ad6f20251bcc7a26f9ac6"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Enable MCP server","Enable MCP server"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Enable MCP server","Enable MCP server"]
-nav_prev: {"path": "../docker/index.md", "title": "Self-Hosting with Docker"}
-nav_next: {"path": "../postgres-upgrade-17/index.md", "title": "Upgrade to Postgres 17"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/docker/index.md", "title": "Self-Hosting with Docker"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/postgres-upgrade-17/index.md", "title": "Upgrade to Postgres 17"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Configure secure access to the MCP server in your self-hosted Supabase instance.
 
 * * *
 
-The MCP (Model Context Protocol) server in [self-hosted Supabase](/docs/guides/self-hosting/docker) runs behind the internal API. Currently, it does not offer OAuth 2.1 authentication, and is not intended to be exposed to the Internet. The corresponding API route has to be protected by restricting network connections from the outside. By default, all connections to the MCP server are denied.
+The MCP (Model Context Protocol) server in [self-hosted Supabase](../docker/index.md) runs behind the internal API. Currently, it does not offer OAuth 2.1 authentication, and is not intended to be exposed to the Internet. The corresponding API route has to be protected by restricting network connections from the outside. By default, all connections to the MCP server are denied.
 
 This guide explains how to securely enable access to your self-hosted MCP server.
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:23.481Z"
 content_hash: "fb10f28db51efd7f45838b97b277cd336fdfe3550b0b20f15a108d0ccee828b7"
 menu_path: ["Invalid slot name."]
 section_path: []
-nav_prev: {"path": "../render-undefined-entry-error/index.md", "title": "Attempted to render an undefined content collection entry."}
-nav_next: {"path": "../response-sent-error/index.md", "title": "Unable to set response."}
+nav_prev: {"path": "astro/en/reference/errors/render-undefined-entry-error/index.md", "title": "Attempted to render an undefined content collection entry."}
+nav_next: {"path": "astro/en/reference/errors/response-sent-error/index.md", "title": "Unable to set response."}
 ---
 
 # Invalid slot name.
@@ -25,6 +25,6 @@ Certain words cannot be used for slot names due to being already used internally
 
 **See Also:**
 
-*   [Named slots](/en/basics/astro-components/#named-slots)
+*   [Named slots](../../../basics/astro-components/index.md#named-slots)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

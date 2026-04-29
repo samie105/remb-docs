@@ -11,17 +11,17 @@ menu_path: ["authInterrupts"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../assetPrefix/index.md", "title": "assetPrefix"}
-nav_next: {"path": "../basePath/index.md", "title": "basePath"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/assetPrefix/index.md", "title": "assetPrefix"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/basePath/index.md", "title": "basePath"}
 ---
 
 # authInterrupts
 
-This feature is currently available in the canary channel and subject to change. Try it out by [upgrading Next.js](/docs/app/getting-started/upgrading#canary-version), and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
+This feature is currently available in the canary channel and subject to change. Try it out by [upgrading Next.js](../../../../getting-started/upgrading/index.md#canary-version), and share your feedback on [GitHub](https://github.com/vercel/next.js/issues).
 
 Last updated April 23, 2026
 
-The `authInterrupts` configuration option allows you to use [`forbidden`](/docs/app/api-reference/functions/forbidden) and [`unauthorized`](/docs/app/api-reference/functions/unauthorized) APIs in your application. While these functions are experimental, you must enable the `authInterrupts` option in your `next.config.js` file to use them:
+The `authInterrupts` configuration option allows you to use [`forbidden`](../../../functions/forbidden/index.md) and [`unauthorized`](../../../functions/unauthorized/index.md) APIs in your application. While these functions are experimental, you must enable the `authInterrupts` option in your `next.config.js` file to use them:
 
 next.config.ts
 
@@ -45,24 +45,24 @@ export default nextConfig
 
 API Reference for the forbidden function.
 
-](/docs/app/api-reference/functions/forbidden)[
+](../../../functions/forbidden/index.md)[
 
 ### unauthorized
 
 API Reference for the unauthorized function.
 
-](/docs/app/api-reference/functions/unauthorized)[
+](../../../functions/unauthorized/index.md)[
 
 ### forbidden.js
 
 API reference for the forbidden.js special file.
 
-](/docs/app/api-reference/file-conventions/forbidden)[
+](../../../file-conventions/forbidden/index.md)[
 
 ### unauthorized.js
 
 API reference for the unauthorized.js special file.
 
-](/docs/app/api-reference/file-conventions/unauthorized)
+](../../../file-conventions/unauthorized/index.md)
 
 Was this helpful?

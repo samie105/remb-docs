@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:51.898Z"
 content_hash: "428e5584feb09509158e1443d41d314c3c40d205c542ad5e806a57387ee5ea7e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis administration","→","Redis administration"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis administration","→","Redis administration"]
-nav_prev: {"path": "../../install/install-stack/windows/index.md", "title": "Run Redis Open Source on Windows using Docker"}
-nav_next: {"path": "../config/index.md", "title": "Redis configuration"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/install-stack/windows/index.md", "title": "Run Redis Open Source on Windows using Docker"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/config/index.md", "title": "Redis configuration"}
 ---
 
 # Redis administration
@@ -27,7 +27,7 @@ Redis Open Source
     
 *   Set the Linux kernel overcommit memory setting to 1. Add `vm.overcommit_memory = 1` to `/etc/sysctl.conf`. Then, reboot or run the command `sysctl vm.overcommit_memory=1` to activate the setting. See [FAQ: Background saving fails with a fork() error on Linux?](/docs/latest/develop/get-started/faq/#background-saving-fails-with-a-fork-error-on-linux) for details.
     
-*   To ensure the Linux kernel feature Transparent Huge Pages does not impact Redis memory usage and latency, run the command: `echo never > /sys/kernel/mm/transparent_hugepage/enabled` to disable it. See [Latency Diagnosis - Latency induced by transparent huge pages](/docs/latest/operate/oss_and_stack/management/optimization/latency/#latency-induced-by-transparent-huge-pages) for additional context.
+*   To ensure the Linux kernel feature Transparent Huge Pages does not impact Redis memory usage and latency, run the command: `echo never > /sys/kernel/mm/transparent_hugepage/enabled` to disable it. See [Latency Diagnosis - Latency induced by transparent huge pages](../optimization/latency/index.md#latency-induced-by-transparent-huge-pages) for additional context.
     
 
 ### Memory
@@ -56,7 +56,7 @@ Redis Open Source
 
 ### Security
 
-*   By default, Redis does not require any authentication and listens to all the network interfaces. This is a big security issue if you leave Redis exposed on the internet or other places where attackers can reach it. See for example [this attack](http://antirez.com/news/96) to see how dangerous it can be. Please check our [security page](/docs/latest/operate/oss_and_stack/management/security/) for information about how to secure Redis.
+*   By default, Redis does not require any authentication and listens to all the network interfaces. This is a big security issue if you leave Redis exposed on the internet or other places where attackers can reach it. See for example [this attack](http://antirez.com/news/96) to see how dangerous it can be. Please check our [security page](../security/index.md) for information about how to secure Redis.
 
 ## Running Redis on EC2
 
@@ -88,7 +88,7 @@ Follow these steps to avoid downtime.
 *   Once you confirm that the master is no longer receiving any queries (you can check this using the [`MONITOR`](/commands/monitor) command), elect the replica to master using the `REPLICAOF NO ONE` command, and then shut down your master.
     
 
-If you are using [Redis Sentinel](/docs/latest/operate/oss_and_stack/management/sentinel/) or [Redis Cluster](/docs/latest/operate/oss_and_stack/management/scaling/), the simplest way to upgrade to newer versions is to upgrade one replica after the other. Then you can perform a manual failover to promote one of the upgraded replicas to master, and finally promote the last replica.
+If you are using [Redis Sentinel](../sentinel/index.md) or [Redis Cluster](../scaling/index.md), the simplest way to upgrade to newer versions is to upgrade one replica after the other. Then you can perform a manual failover to promote one of the upgraded replicas to master, and finally promote the last replica.
 
 * * *
 

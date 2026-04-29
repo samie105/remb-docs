@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:01:34.801Z"
 content_hash: "ac554d220ed11d054c59f52818c4e23a77a38c19161a13f3e23a69d22b073e12"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and .NET","→","Rolling sensor graph demo with Redis and .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and .NET","→","Rolling sensor graph demo with Redis and .NET"]
-nav_prev: {"path": "../index.md", "title": "Rolling sensor graph demo with Redis"}
-nav_next: {"path": "../go/index.md", "title": "Rolling sensor graph demo with Go"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/index.md", "title": "Rolling sensor graph demo with Redis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/go/index.md", "title": "Rolling sensor graph demo with Go"}
 ---
 
 # Rolling sensor graph demo with Redis and .NET
 
 Build a Redis-backed rolling sensor graph demo in .NET with StackExchange.Redis
 
-This guide shows you how to build a compact rolling sensor graph demo in .NET with [`StackExchange.Redis`](/docs/latest/develop/clients/dotnet/) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
+This guide shows you how to build a compact rolling sensor graph demo in .NET with [`StackExchange.Redis`](../../../clients/dotnet/index.md) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
 
 ## Overview
 
@@ -160,7 +160,7 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 
 ## Learn more
 
-*   [.NET client guide](/docs/latest/develop/clients/dotnet/) - Install and use the .NET client
+*   [.NET client guide](../../../clients/dotnet/index.md) - Install and use the .NET client
 *   [Time series overview](/docs/latest/develop/data-types/timeseries/) - Time series concepts and commands
 *   [TS.RANGE command](/docs/latest/commands/ts.range/) - Query raw and aggregated ranges from a time series
 *   [TS.MADD command](/docs/latest/commands/ts.madd/) - Add multiple samples in one call

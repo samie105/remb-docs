@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:43.100Z"
 content_hash: "6acbb0bc639aa3e11ba7e6a816b5017e76744e8c2d243840749dbc653abafd95"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack on macOS","→","Install Redis Stack on macOS"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Install Redis Open Source","→","Install Redis Open Source","→\n      \n        Install Redis Community Edition or Redis Stack","→","Install Redis Community Edition or Redis Stack","→\n      \n        Install Redis Stack","→","Install Redis Stack","→\n      \n        Install Redis Stack on macOS","→","Install Redis Stack on macOS"]
-nav_prev: {"path": "../linux/index.md", "title": "Install Redis Stack on Linux"}
-nav_next: {"path": "../windows/index.md", "title": "Install Redis Stack on Windows"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/linux/index.md", "title": "Install Redis Stack on Linux"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/install/archive/install-stack/windows/index.md", "title": "Install Redis Stack on Windows"}
 ---
 
 # Install Redis Stack on macOS
@@ -142,14 +142,14 @@ Test the connection with the `ping` command:
 PONG
 ```
 
-You can also test that your Redis server is running using [Redis Insight](/docs/latest/develop/tools/insight/).
+You can also test that your Redis server is running using [Redis Insight](../../../../../../develop/tools/insight/index.md).
 
 ## Next steps
 
 Once you have a running Redis instance, you may want to:
 
-*   Try the [Redis CLI tutorial](/docs/latest/develop/tools/cli/)
+*   Try the [Redis CLI tutorial](../../../../../../develop/tools/cli/index.md)
 *   Connect using one of the [Redis clients](/docs/latest/develop/clients/)
-*   [Install Redis "properly"](/docs/latest/operate/oss_and_stack/install/archive/install-redis/#install-redis-properly) for production use.
+*   [Install Redis "properly"](../../install-redis/index.md#install-redis-properly) for production use.
 
 ## On this page

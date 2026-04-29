@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:49.692Z"
 content_hash: "20e55f04918b2ee0a07ade9fd52c1d800f46592b2949460b8bb4cd835ff19934"
 menu_path: ["Sponsors"]
 section_path: []
-nav_prev: {"path": "../rpc/index.md", "title": "HTTP RPC Specification"}
-nav_next: {"path": "../ssg/index.md", "title": "Static Site Generation"}
+nav_prev: {"path": "trpc/docs/v9/rpc/index.md", "title": "HTTP RPC Specification"}
+nav_next: {"path": "trpc/docs/v9/ssg/index.md", "title": "Static Site Generation"}
 ---
 
 Version: 9.x

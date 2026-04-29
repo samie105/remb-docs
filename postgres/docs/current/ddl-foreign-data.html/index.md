@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:49.111Z"
 content_hash: "94cc07752d764c69f1e860bfdf7c4b913ba8baac7dd359ba392433be50a5c8e9"
 menu_path: ["PostgreSQL: Documentation: 18: 5.13. Foreign Data"]
 section_path: []
-nav_prev: {"path": "../ddl-depend.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.15.\u00a0Dependency Tracking"}
-nav_next: {"path": "../ddl-generated-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.4.\u00a0Generated Columns"}
+nav_prev: {"path": "postgres/docs/current/ddl-depend.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.15.\u00a0Dependency Tracking"}
+nav_next: {"path": "postgres/docs/current/ddl-generated-columns.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.4.\u00a0Generated Columns"}
 ---
 
 PostgreSQL implements portions of the SQL/MED specification, allowing you to access data that resides outside PostgreSQL using regular SQL queries. Such data is referred to as _foreign data_. (Note that this usage is not to be confused with foreign keys, which are a type of constraint within the database.)

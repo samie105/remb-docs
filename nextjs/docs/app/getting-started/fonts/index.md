@@ -11,15 +11,15 @@ menu_path: ["Font Optimization"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../images/index.md", "title": "Image Optimization"}
-nav_next: {"path": "../metadata-and-og-images/index.md", "title": "Metadata and OG images"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/images/index.md", "title": "Image Optimization"}
+nav_next: {"path": "nextjs/docs/app/getting-started/metadata-and-og-images/index.md", "title": "Metadata and OG images"}
 ---
 
 # Font Optimization
 
 Last updated April 23, 2026
 
-The [`next/font`](/docs/app/api-reference/components/font) module automatically optimizes your fonts and removes external network requests for improved privacy and performance.
+The [`next/font`](../../api-reference/components/font/index.md) module automatically optimizes your fonts and removes external network requests for improved privacy and performance.
 
 It includes **built-in self-hosting** for any font file. This means you can optimally load web fonts with no layout shift.
 
@@ -45,7 +45,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 }
 ```
 
-Fonts are scoped to the component they're used in. To apply a font to your entire application, add it to the [Root Layout](/docs/app/api-reference/file-conventions/layout#root-layout).
+Fonts are scoped to the component they're used in. To apply a font to your entire application, add it to the [Root Layout](../../api-reference/file-conventions/layout/index.md#root-layout).
 
 ## Google fonts[](#google-fonts)
 
@@ -106,7 +106,7 @@ export default function RootLayout({
 
 ## Local fonts[](#local-fonts)
 
-To use a local font, import the `localFont` function from `next/font/local` and specify the [`src`](/docs/app/api-reference/components/font#src) of your local font file. The path is resolved relative to the file where `localFont` is called. Fonts can be stored anywhere in the project, including the [`public`](/docs/app/api-reference/file-conventions/public-folder) folder or co-located inside the `app` folder. For example, to use a font stored in `app/fonts/`:
+To use a local font, import the `localFont` function from `next/font/local` and specify the [`src`](../../api-reference/components/font/index.md#src) of your local font file. The path is resolved relative to the file where `localFont` is called. Fonts can be stored anywhere in the project, including the [`public`](../../api-reference/file-conventions/public-folder/index.md) folder or co-located inside the `app` folder. For example, to use a font stored in `app/fonts/`:
 
 app/layout.tsx
 
@@ -171,6 +171,6 @@ See the API Reference for the full feature set of Next.js Font
 
 Optimizing loading web fonts with the built-in \`next/font\` loaders.
 
-](/docs/app/api-reference/components/font)
+](../../api-reference/components/font/index.md)
 
 Was this helpful?

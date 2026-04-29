@@ -11,23 +11,23 @@ menu_path: ["updateTag"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../unstable_rethrow/index.md", "title": "unstable_rethrow"}
-nav_next: {"path": "../use-link-status/index.md", "title": "useLinkStatus"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unstable_rethrow/index.md", "title": "unstable_rethrow"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-link-status/index.md", "title": "useLinkStatus"}
 ---
 
 # updateTag
 
 Last updated April 23, 2026
 
-`updateTag` allows you to update cached data on-demand for a specific cache tag from within [Server Actions](/docs/app/getting-started/mutating-data).
+`updateTag` allows you to update cached data on-demand for a specific cache tag from within [Server Actions](../../../getting-started/mutating-data/index.md).
 
 This function is designed for **read-your-own-writes** scenarios, where a user makes a change (like creating a post), and the UI immediately shows the change, rather than stale data.
 
 ## Usage[](#usage)
 
-`updateTag` can **only** be called from within [Server Actions](/docs/app/getting-started/mutating-data). It cannot be used in Route Handlers, Client Components, or any other context.
+`updateTag` can **only** be called from within [Server Actions](../../../getting-started/mutating-data/index.md). It cannot be used in Route Handlers, Client Components, or any other context.
 
-If you need to invalidate cache tags in Route Handlers or other contexts, use [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) instead.
+If you need to invalidate cache tags in Route Handlers or other contexts, use [`revalidateTag`](../revalidateTag/index.md) instead.
 
 > **Good to know**: `updateTag` immediately expires the cached data for the specified tag. The next request will wait to fetch fresh data rather than serving stale content from the cache, ensuring users see their changes immediately.
 
@@ -41,13 +41,13 @@ updateTag(tag: string): void;
 
 Tags must first be assigned to cached data. You can do this in two ways:
 
--   Using the [`next.tags`](/docs/app/api-reference/functions/fetch) option with `fetch` for caching external API requests:
+-   Using the [`next.tags`](../fetch/index.md) option with `fetch` for caching external API requests:
 
 ```
 fetch(url, { next: { tags: ['posts'] } })
 ```
 
--   Using [`cacheTag`](/docs/app/api-reference/functions/cacheTag) inside cached functions or components with the `'use cache'` directive:
+-   Using [`cacheTag`](../cacheTag/index.md) inside cached functions or components with the `'use cache'` directive:
 
 ```
 import { cacheTag } from 'next/cache'
@@ -148,7 +148,7 @@ Use `revalidateTag` instead when:
 
 ## Related[](#related)
 
--   [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) - For invalidating tags in Route Handlers
--   [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) - For invalidating specific paths
+-   [`revalidateTag`](../revalidateTag/index.md) - For invalidating tags in Route Handlers
+-   [`revalidatePath`](../revalidatePath/index.md) - For invalidating specific paths
 
 Was this helpful?

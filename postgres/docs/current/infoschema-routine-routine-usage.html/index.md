@@ -10,8 +10,8 @@ content_hash: "0244844b4827a2d028108b929677686e6ec422f004f2d58707e2fce3d10f0e86"
 menu_path: ["PostgreSQL: Documentation: 18: 35.42. routine_routine_usage"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
-nav_next: {"path": "../infoschema-routine-sequence-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.43.\u00a0routine_sequence_usage"}
+nav_prev: {"path": "postgres/docs/current/infoschema-routine-privileges.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.41.\u00a0routine_privileges"}
+nav_next: {"path": "postgres/docs/current/infoschema-routine-sequence-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.43.\u00a0routine_sequence_usage"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/infoschema-routine-routine-usage.html "PostgreSQL devel - 35.42. routine_routine_usage")

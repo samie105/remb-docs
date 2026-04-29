@@ -10,8 +10,8 @@ content_hash: "31b16caf4163d53335d65834f3c9c09fb8d70d12c0af0d0eca79d535e39dd214"
 menu_path: ["PostgreSQL: Documentation: 18: 14.1. Using EXPLAIN"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../upgrading.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.6.\u00a0Upgrading a PostgreSQL Cluster"}
-nav_next: {"path": "../uuid-ossp.html/index.md", "title": "PostgreSQL: Documentation: 18: F.49.\u00a0uuid-ossp \u2014 a UUID generator"}
+nav_prev: {"path": "postgres/docs/current/upgrading.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.6.\u00a0Upgrading a PostgreSQL Cluster"}
+nav_next: {"path": "postgres/docs/current/uuid-ossp.html/index.md", "title": "PostgreSQL: Documentation: 18: F.49.\u00a0uuid-ossp \u2014 a UUID generator"}
 ---
 
 PostgreSQL devises a _query plan_ for each query it receives. Choosing the right plan to match the query structure and the properties of the data is absolutely critical for good performance, so the system includes a complex _planner_ that tries to choose good plans. You can use the [`EXPLAIN`](https://www.postgresql.org/docs/current/sql-explain.html "EXPLAIN") command to see what query plan the planner creates for any query. Plan-reading is an art that requires some experience to master, but this section attempts to cover the basics.

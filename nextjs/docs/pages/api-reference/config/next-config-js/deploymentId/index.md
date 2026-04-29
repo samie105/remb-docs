@@ -11,15 +11,15 @@ menu_path: ["deploymentId"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../crossOrigin/index.md", "title": "crossOrigin"}
-nav_next: {"path": "../devIndicators/index.md", "title": "devIndicators"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/crossOrigin/index.md", "title": "crossOrigin"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/devIndicators/index.md", "title": "devIndicators"}
 ---
 
 # deploymentId
 
 Last updated April 23, 2026
 
-The `deploymentId` option allows you to set an identifier for your deployment. This identifier is used for [version skew](/docs/app/guides/self-hosting#version-skew) protection and cache busting during rolling deployments.
+The `deploymentId` option allows you to set an identifier for your deployment. This identifier is used for [version skew](../../../../../app/guides/self-hosting/index.md#version-skew) protection and cache busting during rolling deployments.
 
 next.config.js
 
@@ -82,7 +82,7 @@ module.exports = {
 
 ## Related[](#related)
 
--   [Self-Hosting - Version Skew](/docs/app/guides/self-hosting#version-skew)
--   [generateBuildId](/docs/app/api-reference/config/next-config-js/generateBuildId)
+-   [Self-Hosting - Version Skew](../../../../../app/guides/self-hosting/index.md#version-skew)
+-   [generateBuildId](../../../../../app/api-reference/config/next-config-js/generateBuildId/index.md)
 
 Was this helpful?

@@ -11,8 +11,8 @@ menu_path: ["images"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../httpAgentOptions/index.md", "title": "httpAgentOptions"}
-nav_next: {"path": "../incrementalCacheHandlerPath/index.md", "title": "Custom Next.js Cache Handler"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath/index.md", "title": "Custom Next.js Cache Handler"}
 ---
 
 # images
@@ -44,11 +44,11 @@ export default function myImageLoader({ src, width, quality }) {
 }
 ```
 
-Alternatively, you can use the [`loader` prop](/docs/app/api-reference/components/image#loader) to pass the function to each instance of `next/image`.
+Alternatively, you can use the [`loader` prop](../../../components/image/index.md#loader) to pass the function to each instance of `next/image`.
 
-> **Good to know**: Customizing the image loader file, which accepts a function, requires using [Client Components](/docs/app/getting-started/server-and-client-components) to serialize the provided function.
+> **Good to know**: Customizing the image loader file, which accepts a function, requires using [Client Components](../../../../getting-started/server-and-client-components/index.md) to serialize the provided function.
 
-To learn more about configuring the behavior of the built-in [Image Optimization API](/docs/app/api-reference/components/image) and the [Image Component](/docs/app/api-reference/components/image), see [Image Configuration Options](/docs/app/api-reference/components/image#configuration-options) for available options.
+To learn more about configuring the behavior of the built-in [Image Optimization API](../../../components/image/index.md) and the [Image Component](../../../components/image/index.md), see [Image Configuration Options](../../../components/image/index.md#configuration-options) for available options.
 
 ## Example Loader Configuration[](#example-loader-configuration)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:49.142Z"
 content_hash: "3dba2ff0417b11d40d339be845145e567fd254c5c702db4515a6ce6f29eeb31f"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Phone Login","Phone Login"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Phone Login","Phone Login"]
-nav_prev: {"path": "../passwords/index.md", "title": "Password-based Auth"}
-nav_next: {"path": "../quickstarts/astrojs/index.md", "title": "Use Supabase Auth with Astro"}
+nav_prev: {"path": "supabase/docs/guides/auth/passwords/index.md", "title": "Password-based Auth"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/astrojs/index.md", "title": "Use Supabase Auth with Astro"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Phone Login is a method of authentication that allows users to log in to a websi
 
 At this time, `WhatsApp` is only supported as a channel for the Twilio and Twilio Verify Providers.
 
-Users can also log in with their phones using Native Mobile Login with the built-in identity provider. For Native Mobile Login with Android and iOS, see the [Social Login guides](/docs/guides/auth/social-login).
+Users can also log in with their phones using Native Mobile Login with the built-in identity provider. For Native Mobile Login with Android and iOS, see the [Social Login guides](../social-login/index.md).
 
 Phone OTP login can:
 
@@ -31,7 +31,7 @@ Phone OTP login can:
 *   Increase security by reducing the risk of password-related security breaches
 *   Reduce support burden of dealing with password resets and other password-related flows
 
-To keep SMS sending costs under control, make sure you adjust your project's rate limits and [configure CAPTCHA](/docs/guides/auth/auth-captcha). See the [Production Checklist](/docs/guides/platform/going-into-prod) to learn more.
+To keep SMS sending costs under control, make sure you adjust your project's rate limits and [configure CAPTCHA](../auth-captcha/index.md). See the [Production Checklist](/docs/guides/platform/going-into-prod) to learn more.
 
   
 
@@ -75,7 +75,7 @@ If successful the user will now be logged in and you should receive a valid sess
 1{2  "access_token": "<ACCESS_TOKEN>",3  "token_type": "bearer",4  "expires_in": 3600,5  "refresh_token": "<REFRESH_TOKEN>"6}
 ```
 
-The access token can be sent in the Authorization header as a Bearer token for any CRUD operations on supabase-js. See our guide on [Row Level Security](/docs/guides/auth#row-level-security) for more info on restricting access on a user basis.
+The access token can be sent in the Authorization header as a Bearer token for any CRUD operations on supabase-js. See our guide on [Row Level Security](../index.md#row-level-security) for more info on restricting access on a user basis.
 
 ## Updating a phone number[#](#updating-a-phone-number)
 

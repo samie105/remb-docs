@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:08.926Z"
 content_hash: "6042c76b60b38511414ac848efd9a7b9790650dd59c575bf39483f75cc9416f9"
 menu_path: ["Workspaces"]
 section_path: []
-nav_prev: {"path": "../security-scanner-api/index.md", "title": "Security Scanner API"}
-nav_next: {"path": "../../project/benchmarking/index.md", "title": "Benchmarking"}
+nav_prev: {"path": "bun/docs/pm/security-scanner-api/index.md", "title": "Security Scanner API"}
+nav_next: {"path": "bun/docs/project/benchmarking/index.md", "title": "Benchmarking"}
 ---
 
 # Install dependencies for all workspaces starting with `pkg-` except for `pkg-c`

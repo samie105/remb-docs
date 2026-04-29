@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:02.278Z"
 content_hash: "ae8658fe05af9de57bdc37bb6a2939f0b227bba4056a372ec9cbcbc04e0ece62"
 menu_path: ["Errors"]
 section_path: []
-nav_prev: {"path": "../Encapsulation/index.md", "title": "Encapsulation"}
-nav_next: {"path": "../HTTP2/index.md", "title": "HTTP2"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Encapsulation/index.md", "title": "Encapsulation"}
+nav_next: {"path": "fastify/docs/latest/Reference/HTTP2/index.md", "title": "HTTP2"}
 ---
 
 Version: latest (v5.8.x)
@@ -223,7 +223,7 @@ Fastify follows an all-or-nothing approach and aims to be lean and optimal. The 
 
 #### Errors In Input Data[​](#errors-in-input-data "Direct link to Errors In Input Data")
 
-Most errors result from unexpected input data, so it is recommended to [validate input data against a JSON schema](/docs/latest/Reference/Validation-and-Serialization/).
+Most errors result from unexpected input data, so it is recommended to [validate input data against a JSON schema](../Validation-and-Serialization/index.md).
 
 #### Catching Uncaught Errors In Fastify[​](#catching-uncaught-errors-in-fastify "Direct link to Catching Uncaught Errors In Fastify")
 
@@ -234,21 +234,21 @@ Fastify tries to catch as many uncaught errors as possible without hindering per
 
 In both cases, the error will be caught safely and routed to Fastify's default error handler, resulting in a generic `500 Internal Server Error` response.
 
-To customize this behavior, use [`setErrorHandler`](/docs/latest/Reference/Server/#seterrorhandler).
+To customize this behavior, use [`setErrorHandler`](../Server/index.md#seterrorhandler).
 
 ### Errors In Fastify Lifecycle Hooks And A Custom Error Handler[​](#errors-in-fastify-lifecycle-hooks-and-a-custom-error-handler "Direct link to Errors In Fastify Lifecycle Hooks And A Custom Error Handler")
 
-From the [Hooks documentation](/docs/latest/Reference/Hooks/#manage-errors-from-a-hook):
+From the [Hooks documentation](../Hooks/index.md#manage-errors-from-a-hook):
 
 > If you get an error during the execution of your hook, just pass it to `done()` and Fastify will automatically close the request and send the appropriate error code to the user.
 
-When a custom error handler is defined through [`setErrorHandler`](/docs/latest/Reference/Server/#seterrorhandler), it will receive the error passed to the `done()` callback or through other supported automatic error handling mechanisms. If `setErrorHandler` is used multiple times, the error will be routed to the most precedent handler within the error [encapsulation context](/docs/latest/Reference/Encapsulation/). Error handlers are fully encapsulated, so a `setErrorHandler` call within a plugin will limit the error handler to that plugin's context.
+When a custom error handler is defined through [`setErrorHandler`](../Server/index.md#seterrorhandler), it will receive the error passed to the `done()` callback or through other supported automatic error handling mechanisms. If `setErrorHandler` is used multiple times, the error will be routed to the most precedent handler within the error [encapsulation context](../Encapsulation/index.md). Error handlers are fully encapsulated, so a `setErrorHandler` call within a plugin will limit the error handler to that plugin's context.
 
 The root error handler is Fastify's generic error handler. This error handler will use the headers and status code in the `Error` object, if they exist. The headers and status code will not be automatically set if a custom error handler is provided.
 
 The following should be considered when using a custom error handler:
 
-*   `reply.send(data)` behaves as in [regular route handlers](/docs/latest/Reference/Reply/#senddata)
+*   `reply.send(data)` behaves as in [regular route handlers](../Reply/index.md#senddata)
     
     *   objects are serialized, triggering the `preSerialization` lifecycle hook if defined
     *   strings, buffers, and streams are sent to the client with appropriate headers (no serialization)
@@ -257,7 +257,7 @@ The following should be considered when using a custom error handler:
     *   The `onError` hook will be triggered once for the first error thrown
     *   An error will not be triggered twice from a lifecycle hook. Fastify internally monitors error invocation to avoid infinite loops for errors thrown in the reply phases of the lifecycle (those after the route handler)
 
-When using Fastify's custom error handling through [`setErrorHandler`](/docs/latest/Reference/Server/#seterrorhandler), be aware of how errors are propagated between custom and default error handlers.
+When using Fastify's custom error handling through [`setErrorHandler`](../Server/index.md#seterrorhandler), be aware of how errors are propagated between custom and default error handlers.
 
 If a plugin's error handler re-throws an error that is not an instance of [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error), it will not propagate to the parent context error handler. Instead, it will be caught by the default error handler. This can be seen in the `/bad` route of the example below.
 
@@ -393,7 +393,7 @@ FST\_ERR\_CTP\_BODY\_TOO\_LARGE
 
 The request body is larger than the provided limit.
 
-Increase the limit in the Fastify server instance setting: [bodyLimit](/docs/latest/Reference/Server/#bodylimit)
+Increase the limit in the Fastify server instance setting: [bodyLimit](../Server/index.md#bodylimit)
 
 [#1168](https://github.com/fastify/fastify/pull/1168)
 
@@ -527,7 +527,7 @@ Use a supported hook.
 
 FST\_ERR\_MISSING\_MIDDLEWARE
 
-You must register a plugin for handling middlewares, visit [`Middleware`](/docs/latest/Reference/Middleware/) for more info.
+You must register a plugin for handling middlewares, visit [`Middleware`](../Middleware/index.md) for more info.
 
 Register a plugin for handling middlewares.
 

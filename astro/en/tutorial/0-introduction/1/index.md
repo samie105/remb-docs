@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:03.197Z"
 content_hash: "0f9ab1671eb2bfb2dc35fcf25cb4e3183dab6a0f7466cdee23973eb035e7a388"
 menu_path: ["About this Tutorial"]
 section_path: []
-nav_prev: {"path": "../../../reference/errors/unsupported-image-format/index.md", "title": "Unsupported image format"}
-nav_next: {"path": "../../1-setup/1/index.md", "title": "Prepare your dev environment"}
+nav_prev: {"path": "astro/en/reference/errors/unsupported-image-format/index.md", "title": "Unsupported image format"}
+nav_next: {"path": "astro/en/tutorial/1-setup/1/index.md", "title": "Prepare your dev environment"}
 ---
 
 # About this Tutorial
@@ -35,9 +35,9 @@ Using the tracker is optional, but it can help you remember your place if you co
 
 Unit 1 is things I already know how to do. Can I skip it?
 
-You can use the lessons inside [Unit 1](/en/tutorial/1-setup/) to make sure you have the development tools and online accounts you’ll need to complete the tutorial. It will walk you through creating a new Astro project, storing it on GitHub, and deploying it to Netlify.
+You can use the lessons inside [Unit 1](../../1-setup/index.md) to make sure you have the development tools and online accounts you’ll need to complete the tutorial. It will walk you through creating a new Astro project, storing it on GitHub, and deploying it to Netlify.
 
-If you [create a new, empty Astro project](/en/install-and-setup/) and are comfortable with your setup, you can safely skip ahead to [Unit 2](/en/tutorial/2-pages/) where you will start making new pages in your project.
+If you [create a new, empty Astro project](../../../install-and-setup/index.md) and are comfortable with your setup, you can safely skip ahead to [Unit 2](../../2-pages/index.md) where you will start making new pages in your project.
 
 What if I need help, or want to learn more about Astro?
 
@@ -55,4 +55,4 @@ This tutorial is a project of our Docs team. You can find us on Discord in the `
 
  *    I’m ready to build this thing!
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

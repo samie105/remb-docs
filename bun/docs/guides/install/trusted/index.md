@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:17.914Z"
 content_hash: "afbb9af7f99ad2be16107ab3201f138c298bb31fd660f850f149425609abb815"
 menu_path: ["Add a trusted dependency"]
 section_path: []
-nav_prev: {"path": "../registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
-nav_next: {"path": "../workspaces/index.md", "title": "Configuring a monorepo using workspaces"}
+nav_prev: {"path": "bun/docs/guides/install/registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
+nav_next: {"path": "bun/docs/guides/install/workspaces/index.md", "title": "Configuring a monorepo using workspaces"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../workspaces/index.md", "title": "Configuring a monorepo us
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Unlike other npm clients, Bun does not execute arbitrary lifecycle scripts for installed dependencies, such as `postinstall` and `node-gyp` builds. These scripts represent a potential security risk, as they can execute arbitrary code on your machine.
 
@@ -76,7 +76,7 @@ bun install
 
 * * *
 
-See [Docs > Package manager > Trusted dependencies](/docs/pm/lifecycle) for complete documentation of trusted dependencies.
+See [Docs > Package manager > Trusted dependencies](../../../pm/lifecycle/index.md) for complete documentation of trusted dependencies.
 
 Was this page helpful?
 
@@ -88,10 +88,10 @@ Using bun install with Artifactory
 
 Previous
 
-](/docs/guides/install/jfrog-artifactory)[
+](../jfrog-artifactory/index.md)[
 
 Generate a yarn-compatible lockfile
 
 Next
 
-](/docs/guides/install/yarnlock)
+](../yarnlock/index.md)

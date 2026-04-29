@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:01.526Z"
 content_hash: "fa5279b29e05281ce1996a4cf6324a1cae0c8250363cf9ec9291e9d630950ec7"
 menu_path: ["Overrides and resolutions"]
 section_path: []
-nav_prev: {"path": "../npmrc/index.md", "title": ".npmrc support"}
-nav_next: {"path": "../scopes-registries/index.md", "title": "Scopes and registries"}
+nav_prev: {"path": "bun/docs/pm/npmrc/index.md", "title": ".npmrc support"}
+nav_next: {"path": "bun/docs/pm/scopes-registries/index.md", "title": "Scopes and registries"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../scopes-registries/index.md", "title": "Scopes and registr
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Bun supports npm’s `"overrides"` and Yarn’s `"resolutions"` in `package.json`. These are mechanisms for specifying a version range for _metadependencies_—the dependencies of your dependencies.
 
@@ -138,10 +138,10 @@ Scopes and registries
 
 Previous
 
-](/docs/pm/scopes-registries)[
+](../scopes-registries/index.md)[
 
 Security Scanner API
 
 Next
 
-](/docs/pm/security-scanner-api)
+](../security-scanner-api/index.md)

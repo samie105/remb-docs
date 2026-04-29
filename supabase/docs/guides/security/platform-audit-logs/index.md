@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:01.407Z"
 content_hash: "1f471519fd7248daea522201184ebf75fc0d12040bff70cb1fc8f4f194ed174e"
 menu_path: ["Security","Security","Product security","Product security","Platform Audit Logs","Platform Audit Logs"]
 section_path: ["Security","Security","Product security","Product security","Platform Audit Logs","Platform Audit Logs"]
-nav_prev: {"path": "../hipaa-compliance/index.md", "title": "HIPAA Compliance and Supabase"}
-nav_next: {"path": "../platform-security/index.md", "title": "Secure configuration of Supabase platform"}
+nav_prev: {"path": "supabase/docs/guides/security/hipaa-compliance/index.md", "title": "HIPAA Compliance and Supabase"}
+nav_next: {"path": "supabase/docs/guides/security/platform-security/index.md", "title": "Secure configuration of Supabase platform"}
 ---
 
 # 
@@ -21,7 +21,7 @@ Platform Audit Logs
 
 Any [Platform API](/docs/reference/api/introduction) or [dashboard](/dashboard) actions performed by organization members are logged automatically for auditing and security purposes. This includes actions such as creating a new project, inviting members, modifying an edge function or changing project settings.
 
-Besides Platform Audit Logs, Supabase Auth also provides [Auth Audit Logs](/docs/guides/auth/audit-logs) to monitor authentication-related activities within your projects.
+Besides Platform Audit Logs, Supabase Auth also provides [Auth Audit Logs](../../auth/audit-logs/index.md) to monitor authentication-related activities within your projects.
 
 Platform Audit Logs are only available on the [Team and Enterprise plans](/pricing).
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:33.131Z"
 content_hash: "5a2490c602488b4609fd38e592a00659505bc9c15cb34192ca54b31cce46058f"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","SolidJS","SolidJS"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","SolidJS","SolidJS"]
-nav_prev: {"path": "../ruby-on-rails/index.md", "title": "Use Supabase with Ruby on Rails"}
-nav_next: {"path": "../sveltekit/index.md", "title": "Use Supabase with SvelteKit"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/ruby-on-rails/index.md", "title": "Use Supabase with Ruby on Rails"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/sveltekit/index.md", "title": "Use Supabase with SvelteKit"}
 ---
 
 # 
@@ -101,7 +101,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=solidjs).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 

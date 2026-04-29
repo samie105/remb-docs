@@ -11,8 +11,8 @@ menu_path: ["Client-side Fetching"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../get-server-side-props/index.md", "title": "getServerSideProps"}
-nav_next: {"path": "../../configuring/index.md", "title": "Configuring"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-server-side-props/index.md", "title": "getServerSideProps"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/configuring/index.md", "title": "Configuring"}
 ---
 
 # Client-side Fetching

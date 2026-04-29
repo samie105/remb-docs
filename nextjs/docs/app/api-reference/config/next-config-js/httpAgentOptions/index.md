@@ -11,15 +11,15 @@ menu_path: ["httpAgentOptions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
-nav_next: {"path": "../images/index.md", "title": "images"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/images/index.md", "title": "images"}
 ---
 
 # httpAgentOptions
 
 Last updated April 23, 2026
 
-In Node.js versions prior to 18, Next.js automatically polyfills `fetch()` with [undici](/docs/architecture/supported-browsers#polyfills) and enables [HTTP Keep-Alive](https://developer.mozilla.org/docs/Web/HTTP/Headers/Keep-Alive) by default.
+In Node.js versions prior to 18, Next.js automatically polyfills `fetch()` with [undici](../../../../../architecture/supported-browsers/index.md#polyfills) and enables [HTTP Keep-Alive](https://developer.mozilla.org/docs/Web/HTTP/Headers/Keep-Alive) by default.
 
 To disable HTTP Keep-Alive for all `fetch()` calls on the server-side, open `next.config.js` and add the `httpAgentOptions` config:
 

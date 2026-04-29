@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:10.805Z"
 content_hash: "9297cd3c50f7873b3defe8019291b2526d70339e1a0526134e4ef8550d1ff923"
 menu_path: ["PostgreSQL: Documentation: 18: 11.1. Introduction"]
 section_path: []
-nav_prev: {"path": "../indexes-expressional.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.7.\u00a0Indexes on Expressions"}
-nav_next: {"path": "../indexes-multicolumn.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.3.\u00a0Multicolumn Indexes"}
+nav_prev: {"path": "postgres/docs/current/indexes-expressional.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.7.\u00a0Indexes on Expressions"}
+nav_next: {"path": "postgres/docs/current/indexes-multicolumn.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.3.\u00a0Multicolumn Indexes"}
 ---
 
 Suppose we have a table similar to this:

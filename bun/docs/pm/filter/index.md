@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:48.479Z"
 content_hash: "dfa4e53f280f8e38a568292fce272ca4358ab33620ce25edd445e6a1d3f81265"
 menu_path: ["bun --filter"]
 section_path: []
-nav_prev: {"path": "../cli/why/index.md", "title": "bun why"}
-nav_next: {"path": "../global-cache/index.md", "title": "Global cache"}
+nav_prev: {"path": "bun/docs/pm/cli/why/index.md", "title": "bun why"}
+nav_next: {"path": "bun/docs/pm/global-cache/index.md", "title": "Global cache"}
 ---
 
 # Install dependencies for all workspaces except `pkg-c`

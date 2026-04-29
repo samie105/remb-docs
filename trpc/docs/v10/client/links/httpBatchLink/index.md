@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:20.927Z"
 content_hash: "43b22b54ed9f6499e8b2da178b88084a63403b1f9e9669a345cb39bf3ae72ebf"
 menu_path: ["HTTP Batch Link"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "Links Overview"}
-nav_next: {"path": "../httpBatchStreamLink/index.md", "title": "HTTP Batch Stream Link"}
+nav_prev: {"path": "trpc/docs/v10/client/links/index.md", "title": "Links Overview"}
+nav_next: {"path": "trpc/docs/v10/client/links/httpBatchStreamLink/index.md", "title": "HTTP Batch Stream Link"}
 ---
 
 `httpBatchLink` is a [**terminating link**](../index.md#the-terminating-link) that batches an array of individual tRPC operations into a single HTTP request that's sent to a single tRPC procedure.

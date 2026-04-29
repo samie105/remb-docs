@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:27.606Z"
 content_hash: "7cda773ff535358354dc51bb03e2ae9afb9eef7bd0b02b65f9f5d4876c2bfb9e"
 menu_path: ["Mark a test as a \"todo\" with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "../timeout/index.md", "title": "Set a per-test timeout with the Bun test runner"}
-nav_next: {"path": "../update-snapshots/index.md", "title": "Update snapshots in `bun test`"}
+nav_prev: {"path": "bun/docs/guides/test/timeout/index.md", "title": "Set a per-test timeout with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/update-snapshots/index.md", "title": "Update snapshots in `bun test`"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../update-snapshots/index.md", "title": "Update snapshots in
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To remind yourself to write a test later, use the `test.todo` function. There’s no need to provide a test implementation.
 
@@ -107,8 +107,8 @@ $ echo $?
 
 See also:
 
-*   [Skip a test](/docs/guides/test/skip-tests)
-*   [Docs > Test runner > Writing tests](/docs/test/writing-tests)
+*   [Skip a test](../skip-tests/index.md)
+*   [Docs > Test runner > Writing tests](../../../test/writing-tests/index.md)
 
 Was this page helpful?
 
@@ -120,10 +120,10 @@ Skip tests with the Bun test runner
 
 Previous
 
-](/docs/guides/test/skip-tests)[
+](../skip-tests/index.md)[
 
 Set a per-test timeout with the Bun test runner
 
 Next
 
-](/docs/guides/test/timeout)
+](../timeout/index.md)

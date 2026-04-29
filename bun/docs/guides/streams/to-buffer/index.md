@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:07.170Z"
 content_hash: "c5da3615104c6f483c73167a866cc41c5899edb515a46fb5a42bdb959f932533"
 menu_path: ["Convert a ReadableStream to a Buffer"]
 section_path: []
-nav_prev: {"path": "../to-blob/index.md", "title": "Error loading page"}
-nav_next: {"path": "../to-json/index.md", "title": "Convert a ReadableStream to JSON"}
+nav_prev: {"path": "bun/docs/guides/streams/to-blob/index.md", "title": "Error loading page"}
+nav_next: {"path": "bun/docs/guides/streams/to-json/index.md", "title": "Convert a ReadableStream to JSON"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../to-json/index.md", "title": "Convert a ReadableStream to 
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun provides several convenience functions for reading the contents of a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) into different formats. This snippet reads the contents of a `ReadableStream` to an [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer), then creates a [`Buffer`](https://nodejs.org/api/buffer.html) that points to it.
 
@@ -45,7 +45,7 @@ const nodeBuf = Buffer.from(arrBuf);
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
+See [Docs > API > Utils](../../../runtime/utils/index.md#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
 
 Was this page helpful?
 
@@ -57,10 +57,10 @@ Convert a ReadableStream to a Blob
 
 Previous
 
-](/docs/guides/streams/to-blob)[
+](../to-blob/index.md)[
 
 Convert a ReadableStream to an ArrayBuffer
 
 Next
 
-](/docs/guides/streams/to-arraybuffer)
+](../to-arraybuffer/index.md)

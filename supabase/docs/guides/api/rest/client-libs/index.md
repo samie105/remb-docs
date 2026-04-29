@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:25.493Z"
 content_hash: "b0e6838e743095c04e9f574146160b33e8a3db251c0d8066e6dbceb9947fd35e"
 menu_path: ["Data REST API","Data REST API","Client Libraries","Client Libraries"]
 section_path: ["Data REST API","Data REST API","Client Libraries","Client Libraries"]
-nav_prev: {"path": "../auto-generated-docs/index.md", "title": "Auto-generated documentation"}
-nav_next: {"path": "../generating-python-types/index.md", "title": "Generating Python Types"}
+nav_prev: {"path": "supabase/docs/guides/api/rest/auto-generated-docs/index.md", "title": "Auto-generated documentation"}
+nav_next: {"path": "supabase/docs/guides/api/rest/generating-python-types/index.md", "title": "Generating Python Types"}
 ---
 
 # 

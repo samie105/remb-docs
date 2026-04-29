@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:07.976Z"
 content_hash: "c220a1485f493c4a3d7b33fcb64fe839138c7f4f2d5b54629d14bf2b0705ffbd"
 menu_path: ["Route Helper ​"]
 section_path: []
-nav_prev: {"path": "../proxy/index.md", "title": "Proxy Helper \u200b"}
-nav_next: {"path": "../ssg/index.md", "title": "SSG Helper \u200b"}
+nav_prev: {"path": "hono/docs/helpers/proxy/index.md", "title": "Proxy Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/ssg/index.md", "title": "SSG Helper \u200b"}
 ---
 
 The Route Helper provides enhanced routing information for debugging and middleware development. It allows you to access detailed information about matched routes and the current route being processed.

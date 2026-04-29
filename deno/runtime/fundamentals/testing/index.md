@@ -10,8 +10,8 @@ content_hash: "5dab73cac5f26f4b15c5c3fb08a63fd2aa8a559aa70dc0d2ecc7f8f1f824af4e"
 menu_path: ["Testing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../web_dev/index.md", "title": "Web development"}
-nav_next: {"path": "../debugging/index.md", "title": "Debugging"}
+nav_prev: {"path": "deno/runtime/fundamentals/web_dev/index.md", "title": "Web development"}
+nav_next: {"path": "deno/runtime/fundamentals/debugging/index.md", "title": "Debugging"}
 ---
 
 # Run all tests in the current directory and all sub-directories
@@ -185,7 +185,7 @@ To indicate that you are using a pattern (regular expression), wrap your filter 
 
 ### Including and excluding test files in the configuration file
 
-You can also filter tests by specifying paths to include or exclude in the [Deno configuration file](/runtime/fundamentals/configuration).
+You can also filter tests by specifying paths to include or exclude in the [Deno configuration file](../configuration/index.md).
 
 For example, if you want to only test `src/fetch_test.ts` and `src/signal_test.ts` and exclude everything in `out/`:
 
@@ -301,17 +301,17 @@ deno test --junit-path=./report.xml
 
 ## Spying, mocking (test doubles), stubbing and faking time
 
-The [Deno Standard Library](/runtime/reference/std/) provides a set of functions to help you write tests that involve spying, mocking, and stubbing. Check out the [`@std/testing` documentation](/runtime/reference/std/testing/) for more information on each of these utilities or our [tutorial on mocking and spying in tests with deno](/examples/mocking_tutorial/).
+The [Deno Standard Library](../../reference/std/index.md) provides a set of functions to help you write tests that involve spying, mocking, and stubbing. Check out the [`@std/testing` documentation](../../reference/std/testing/index.md) for more information on each of these utilities or our [tutorial on mocking and spying in tests with deno](/examples/mocking_tutorial/).
 
 ## Coverage
 
 Deno will collect test coverage into a directory for your code if you specify the `--coverage` flag when starting `deno test`. This coverage information is acquired directly from the V8 JavaScript engine, ensuring high accuracy.
 
-This can then be further processed from the internal format into well known formats like `lcov` with the [`deno coverage`](/runtime/reference/cli/coverage/) tool.
+This can then be further processed from the internal format into well known formats like `lcov` with the [`deno coverage`](../../reference/cli/coverage/index.md) tool.
 
 ## Behavior-Driven Development
 
-With the [`@std/testing/bdd`](/runtime/reference/std/testing/) module you can write your tests in a familiar format for grouping tests and adding setup/teardown hooks used by other JavaScript testing frameworks like Jasmine, Jest, and Mocha.
+With the [`@std/testing/bdd`](../../reference/std/testing/index.md) module you can write your tests in a familiar format for grouping tests and adding setup/teardown hooks used by other JavaScript testing frameworks like Jasmine, Jest, and Mocha.
 
 The `describe` function creates a block that groups together several related tests. The `it` function registers an individual test case. For example:
 
@@ -333,7 +333,7 @@ describe("add function", () => {
 });
 ```
 
-Check out the [`@std/testing` documentation](/runtime/reference/std/testing/) for more information on these functions and hooks.
+Check out the [`@std/testing` documentation](../../reference/std/testing/index.md) for more information on these functions and hooks.
 
 -   [BDD testing tutorial](/examples/bdd_tutorial/)
 
@@ -400,7 +400,7 @@ and then run it as a standalone module living in the same directory as the modul
 
 Want to type-check only?
 
-If you want to type-check your code snippets in JSDoc and markdown files without actually running them, you can use [`deno check`](/runtime/reference/cli/check/) command with `--doc` option (for JSDoc) or with `--doc-only` option (for markdown) instead.
+If you want to type-check your code snippets in JSDoc and markdown files without actually running them, you can use [`deno check`](../../reference/cli/check/index.md) command with `--doc` option (for JSDoc) or with `--doc-only` option (for markdown) instead.
 
 ### Exported items are automatically imported
 
@@ -564,7 +564,7 @@ Deno.test({
 
 ## Snapshot testing
 
-The [Deno Standard Library](/runtime/reference/std/) includes a [snapshot module](/runtime/reference/std/testing/) that allows developers to write tests by comparing values against reference snapshots. These snapshots are serialized representations of the original values and are stored alongside the test files.
+The [Deno Standard Library](../../reference/std/index.md) includes a [snapshot module](../../reference/std/testing/index.md) that allows developers to write tests by comparing values against reference snapshots. These snapshots are serialized representations of the original values and are stored alongside the test files.
 
 Snapshot testing enables catching a wide array of bugs with very little code. It is particularly helpful in situations where it is difficult to precisely express what should be asserted, without requiring a prohibitive amount of code, or where the assertions a test makes are expected to change often.
 

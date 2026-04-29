@@ -11,8 +11,8 @@ menu_path: ["public Folder"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../proxy/index.md", "title": "proxy.js"}
-nav_next: {"path": "../route/index.md", "title": "route.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/proxy/index.md", "title": "proxy.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route/index.md", "title": "route.js"}
 ---
 
 # public Folder
@@ -47,6 +47,6 @@ Cache-Control: public, max-age=0
 
 ## Robots, Favicons, and others[](#robots-favicons-and-others)
 
-For static metadata files, such as `robots.txt`, `favicon.ico`, etc, you should use [special metadata files](/docs/app/api-reference/file-conventions/metadata) inside the `app` folder.
+For static metadata files, such as `robots.txt`, `favicon.ico`, etc, you should use [special metadata files](../metadata/index.md) inside the `app` folder.
 
 Was this helpful?

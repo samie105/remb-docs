@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:47:28.789Z"
 content_hash: "03ad48d4883add460bc0534c6f624d3df6eba38be3d3badcf4c965c78720dbb5"
 menu_path: ["Adapter Server Entrypoint API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-actions/index.md", "title": "Actions API Reference"}
-nav_next: {"path": "../astro-assets/index.md", "title": "Image and Assets API Reference"}
+nav_prev: {"path": "astro/en/reference/modules/astro-actions/index.md", "title": "Actions API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-assets/index.md", "title": "Image and Assets API Reference"}
 ---
 
 # Adapter Server Entrypoint API Reference
 
-This module helps adapter authors [build a server entrypoint](/en/reference/adapter-reference/#building-a-server-entrypoint) while supporting pages rendered in development mode or that have been prebuilt through `astro build`.
+This module helps adapter authors [build a server entrypoint](../../adapter-reference/index.md#building-a-server-entrypoint) while supporting pages rendered in development mode or that have been prebuilt through `astro build`.
 
-`astro/app` is used internally for [Astro’s official server adapters](/en/guides/on-demand-rendering/#server-adapters), and is also publicly available for you to build a custom adapter for your specific runtime or deploy host.
+`astro/app` is used internally for [Astro’s official server adapters](../../../guides/on-demand-rendering/index.md#server-adapters), and is also publicly available for you to build a custom adapter for your specific runtime or deploy host.
 
 Astro uses the standard [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) and [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) objects. Hosts using a different API for requests/responses should convert to these types in their adapter. For example, Astro exposes [helpers to work with NodeJS](#imports-from-astroappnode).
 
@@ -39,7 +39,7 @@ import {  createApp} from "astro/app/entrypoint";
 
 **Added in:** `astro@6.0.0`
 
-Returns an [`App` instance](#the-app-instance) that includes methods to work with standard Request and Response objects when [building an adapter’s server entrypoint](/en/reference/adapter-reference/#building-a-server-entrypoint).
+Returns an [`App` instance](#the-app-instance) that includes methods to work with standard Request and Response objects when [building an adapter’s server entrypoint](../../adapter-reference/index.md#building-a-server-entrypoint).
 
 ```
 import { createApp } from "astro/app/entrypoint";import http from "http";
@@ -83,7 +83,7 @@ The `createApp()` function returns a class instance with the following methods.
 
 **Type:** `(request: Request, options?: [RenderOptions](#renderoptions)) => Promise<Response>`
 
-Calls the Astro page that matches the [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request), renders it, and returns a promise to a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object. This also works for [API routes](/en/guides/endpoints/#server-endpoints-api-routes) that do not render pages.
+Calls the Astro page that matches the [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request), renders it, and returns a promise to a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object. This also works for [API routes](../../../guides/endpoints/index.md#server-endpoints-api-routes) that do not render pages.
 
 ```
 const response = await app.render(request);
@@ -93,7 +93,7 @@ const response = await app.render(request);
 
 [Section titled “app.match()”](#appmatch)
 
-**Type:** `(request: Request, allowPrerenderedRoutes = false) => [RouteData](/en/reference/integrations-reference/#routedata) | undefined`
+**Type:** `(request: Request, allowPrerenderedRoutes = false) => [RouteData](../../integrations-reference/index.md#routedata) | undefined`
 
 Determines whether a request is matched by the Astro app’s routing rules.
 
@@ -109,11 +109,11 @@ By default, prerendered routes aren’t returned, even if they are matched. You 
 
 [Section titled “app.getAdapterLogger()”](#appgetadapterlogger)
 
-**Type:** `() => [AstroIntegrationLogger](/en/reference/integrations-reference/#astrointegrationlogger)`  
+**Type:** `() => [AstroIntegrationLogger](../../integrations-reference/index.md#astrointegrationlogger)`  
 
 **Added in:** `astro@v3.0.0`
 
-Returns an [instance of the Astro logger](/en/reference/integrations-reference/#astrointegrationlogger) available to the adapter’s runtime environment.
+Returns an [instance of the Astro logger](../../integrations-reference/index.md#astrointegrationlogger) available to the adapter’s runtime environment.
 
 ```
 const logger = app.getAdapterLogger();try {  /* Some logic that can throw */} catch {  logger.error("Your custom error message using Astro logger.");}
@@ -123,11 +123,11 @@ const logger = app.getAdapterLogger();try {  /* Some logic that can throw */} ca
 
 [Section titled “app.getAllowedDomains()”](#appgetalloweddomains)
 
-**Type:** `() => Partial<[RemotePattern](/en/reference/modules/astro-assets/#remotepattern)>[] | undefined`  
+**Type:** `() => Partial<[RemotePattern](../astro-assets/index.md#remotepattern)>[] | undefined`  
 
 **Added in:** `astro@5.14.2`
 
-Returns a list of permitted host patterns for incoming requests when using on-demand rendering [as configured in `security.allowedDomains`](/en/reference/configuration-reference/#securityalloweddomains).
+Returns a list of permitted host patterns for incoming requests when using on-demand rendering [as configured in `security.allowedDomains`](../../configuration-reference/index.md#securityalloweddomains).
 
 ##### `app.removeBase()`
 
@@ -171,11 +171,11 @@ This module is used in conjunction with [the methods provided by `createApp()`](
 
 [Section titled “createRequest()”](#createrequest)
 
-**Type:** `(req: NodeRequest, options?: { skipBody?: boolean; allowedDomains?: Partial<[RemotePattern](/en/reference/modules/astro-assets/#remotepattern)>[]; }) => Request`  
+**Type:** `(req: NodeRequest, options?: { skipBody?: boolean; allowedDomains?: Partial<[RemotePattern](../astro-assets/index.md#remotepattern)>[]; }) => Request`  
 
 **Added in:** `astro@6.0.0`
 
-Converts a NodeJS `IncomingMessage` into a standard `Request` object. An optional object can be passed as a second argument to further control how the request is created. This is useful if you want to ignore the body (defaults to `false`) or pass the configured [`allowedDomains`](/en/reference/configuration-reference/#securityalloweddomains) to the request.
+Converts a NodeJS `IncomingMessage` into a standard `Request` object. An optional object can be passed as a second argument to further control how the request is created. This is useful if you want to ignore the body (defaults to `false`) or pass the configured [`allowedDomains`](../../configuration-reference/index.md#securityalloweddomains) to the request.
 
 The following example creates a `Request` and passes it to [`app.render()`](#apprender):
 
@@ -228,7 +228,7 @@ Describes the options for controlling the routes rendering.
 **Type:** `boolean`  
 **Default:** `false`
 
-Whether or not to automatically add all cookies written by [`Astro.cookie.set()`](/en/reference/api-reference/#cookiesset) to the response headers.
+Whether or not to automatically add all cookies written by [`Astro.cookie.set()`](../../api-reference/index.md#cookiesset) to the response headers.
 
 When set to `true`, they will be added to the `Set-Cookie` header of the response as comma-separated key-value pairs. You can use the standard `response.headers.getSetCookie()` API to read them individually.
 
@@ -243,7 +243,7 @@ const response = await app.render(request, { addCookieHeader: true });
 **Type:** `string`  
 **Default:** `request[Symbol.for("astro.clientAddress")]`
 
-The client IP address that will be made available as [`Astro.clientAddress`](/en/reference/api-reference/#clientaddress) in pages, and as `ctx.clientAddress` in API routes and middleware.
+The client IP address that will be made available as [`Astro.clientAddress`](../../api-reference/index.md#clientaddress) in pages, and as `ctx.clientAddress` in API routes and middleware.
 
 The example below reads the `x-forwarded-for` header and passes it as `clientAddress`. This value becomes available to the user as `Astro.clientAddress`.
 
@@ -257,9 +257,9 @@ const clientAddress = request.headers.get("x-forwarded-for");const response = aw
 
 **Type:** `object`
 
-The [`context.locals` object](/en/reference/api-reference/#locals) used to store and access information during the lifecycle of a request.
+The [`context.locals` object](../../api-reference/index.md#locals) used to store and access information during the lifecycle of a request.
 
-The example below reads a header named `x-private-header`, attempts to parse it as an object, and passes it to `locals`, which can then be passed to any [middleware function](/en/guides/middleware/).
+The example below reads a header named `x-private-header`, attempts to parse it as an object, and passes it to `locals`, which can then be passed to any [middleware function](../../../guides/middleware/index.md).
 
 ```
 const privateHeader = request.headers.get("x-private-header");let locals = {};try {  if (privateHeader) {    locals = JSON.parse(privateHeader);  }} finally {  const response = await app.render(request, { locals });}
@@ -291,7 +291,7 @@ If not provided, Astro will fallback to its default behavior for fetching error 
 
 [Section titled “RenderOptions.routeData”](#renderoptionsroutedata)
 
-**Type:** [`RouteData`](/en/reference/integrations-reference/#routedata)  
+**Type:** [`RouteData`](../../integrations-reference/index.md#routedata)  
 **Default:** `app.match(request)`
 
 Defines the information about a route. This is useful when you already know the route to render. Doing so will bypass the internal call to [`app.match()`](#appmatch) to determine the route to render.
@@ -300,4 +300,4 @@ Defines the information about a route. This is useful when you already know the 
 const routeData = app.match(request);if (routeData) {  return app.render(request, { routeData });} else {  /* adapter-specific 404 response */  return new Response(..., { status: 404 });}
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

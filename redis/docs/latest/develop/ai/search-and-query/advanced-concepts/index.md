@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:11:29.135Z"
 content_hash: "35a9af8ae4d3bfd4040c0146f2ad054b9feba7a6cb1905a23a4f9adf099bfee3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts"]
-nav_prev: {"path": "../administration/overview/index.md", "title": "Technical overview"}
-nav_next: {"path": "aggregations-syntax/index.md", "title": "FT.AGGREGATE order of operations"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/overview/index.md", "title": "Technical overview"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations-syntax/index.md", "title": "FT.AGGREGATE order of operations"}
 ---
 
 # Search concepts
@@ -32,23 +32,23 @@ Redis Open Source supports the following Redis Search features. This article pro
 
 *   Multi-field queries
 *   Query on [JSON](/docs/latest/develop/data-types/json/) documents
-*   [Aggregation](/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/)
+*   [Aggregation](aggregations/index.md)
 *   Boolean queries with AND, OR, and NOT operators between subqueries
 *   Optional query clauses
 *   Retrieval of full document contents or only their IDs
 *   Exact phrase search and slop-based search
 *   Numeric filters and ranges
 *   Geo-filtering using Redis [geo commands](/docs/latest/commands/?group=geo)
-*   [Vector search](/docs/latest/develop/ai/search-and-query/vectors/)
+*   [Vector search](../vectors/index.md)
 *   [Key and field expiration behavior](/docs/latest/develop/ai/search-and-query/advanced-concepts/expiration/)
 
 ## Full-text search features
 
-*   [Prefix-based searches](/docs/latest/develop/ai/search-and-query/query/#prefix-matching)
+*   [Prefix-based searches](../query/index.md#prefix-matching)
 *   Field weights
-*   [Auto-complete](/docs/latest/develop/ai/search-and-query/administration/overview/#auto-complete) and fuzzy prefix suggestions
+*   [Auto-complete](../administration/overview/index.md#auto-complete) and fuzzy prefix suggestions
 *   [Stemming](/docs/latest/develop/ai/search-and-query/advanced-concepts/stemming/)\-based query expansion for [many languages](/docs/latest/develop/ai/search-and-query/advanced-concepts/stemming/#supported-languages) using [Snowball](http://snowballstem.org/)
-*   Support for custom functions for query expansion and scoring (see [Extensions](/docs/latest/develop/ai/search-and-query/administration/extensions/))
+*   Support for custom functions for query expansion and scoring (see [Extensions](../administration/extensions/index.md))
 *   Unicode support (UTF-8 input required)
 *   Document ranking
 

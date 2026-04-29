@@ -10,8 +10,8 @@ content_hash: "54d63c312cf565c2f89daf47d97b7aad825777b2cc3bcf03b7b7372f0b740bcf"
 menu_path: ["list-style-type"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../list-style-position/index.md", "title": "list-style-position"}
-nav_next: {"path": "../text-align/index.md", "title": "text-align"}
+nav_prev: {"path": "tailwind/docs/list-style-position/index.md", "title": "list-style-position"}
+nav_next: {"path": "tailwind/docs/text-align/index.md", "title": "text-align"}
 ---
 
 # list-style-type
@@ -89,7 +89,7 @@ Prefix a `list-style-type` utility with a breakpoint variant like `md:` to only 
 <ul class="list-none md:list-disc ...">  <!-- ... --></ul>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:28.987Z"
 content_hash: "c721fc2fda8563a8079923a470919f6d0c4f07e77363ae0b0f853d3c51edc17b"
 menu_path: ["Deploying a Static Site ​"]
 section_path: []
-nav_prev: {"path": "../build/index.md", "title": "Building for Production \u200b"}
-nav_next: {"path": "../env-and-mode/index.md", "title": "Env Variables and Modes \u200b"}
+nav_prev: {"path": "vite/guide/build/index.md", "title": "Building for Production \u200b"}
+nav_next: {"path": "vite/guide/env-and-mode/index.md", "title": "Env Variables and Modes \u200b"}
 ---
 
 The following guides are based on some shared assumptions:

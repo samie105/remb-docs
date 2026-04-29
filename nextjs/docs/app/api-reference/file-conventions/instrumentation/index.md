@@ -11,8 +11,8 @@ menu_path: ["instrumentation.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../forbidden/index.md", "title": "forbidden.js"}
-nav_next: {"path": "../instrumentation-client/index.md", "title": "instrumentation-client.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/forbidden/index.md", "title": "forbidden.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation-client/index.md", "title": "instrumentation-client.js"}
 ---
 
 # instrumentation.js
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 The `instrumentation.js|ts` file is used to integrate observability tools into your application, allowing you to track the performance and behavior, and to debug issues in production.
 
-To use it, place the file in the **root** of your application or inside a [`src` folder](/docs/app/api-reference/file-conventions/src-folder) if using one.
+To use it, place the file in the **root** of your application or inside a [`src` folder](../src-folder/index.md) if using one.
 
 ## Exports[](#exports)
 
@@ -146,6 +146,6 @@ export function onRequestError() {
 
 Learn how to use instrumentation to run code at server startup in your Next.js app
 
-](/docs/app/guides/instrumentation)
+](../../../guides/instrumentation/index.md)
 
 Was this helpful?

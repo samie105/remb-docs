@@ -10,8 +10,8 @@ content_hash: "1d373c5644db973a705fe6e24b5f4683f04a9e583fefda5f503c71b8be622f4c"
 menu_path: ["Drizzle ORM - Point datatype in PostgreSQL"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../mysql-local-setup/index.md", "title": "Drizzle ORM - How to setup MySQL locally"}
-nav_next: {"path": "../postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
+nav_prev: {"path": "drizzle/docs/guides/mysql-local-setup/index.md", "title": "Drizzle ORM - How to setup MySQL locally"}
+nav_next: {"path": "drizzle/docs/guides/postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
 ---
 
 Drizzle | Point datatype in PostgreSQL

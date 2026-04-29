@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:19.427Z"
 content_hash: "ae6fddb1dbf065c7cb3a4b136e68fd9b538a4d7bcf55851e52acdaf4d424cb56"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 7.4 Commands Reference","→","Redis 7.4 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 7.4 Commands Reference","→","Redis 7.4 Commands Reference"]
-nav_prev: {"path": "../redis-7-2-commands/index.md", "title": "Redis 7.2 Commands Reference"}
-nav_next: {"path": "../redis-8-0-commands/index.md", "title": "Redis 8.0 Commands Reference"}
+nav_prev: {"path": "redis/docs/latest/commands/redis-7-2-commands/index.md", "title": "Redis 7.2 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/commands/redis-8-0-commands/index.md", "title": "Redis 8.0 Commands Reference"}
 ---
 
 # Redis 7.4 Commands Reference

@@ -11,7 +11,7 @@ menu_path: ["Prisma ORM"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_next: {"path": "core-concepts/data-modeling/index.md", "title": "Data modeling"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/data-modeling/index.md", "title": "Data modeling"}
 ---
 
 Prisma ORM is a next-generation Node.js and TypeScript ORM that provides type-safe database access, migrations, and a visual data editor.

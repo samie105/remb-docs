@@ -10,8 +10,8 @@ content_hash: "72f7c4e212504a3248c9d331e2a18b666aeb283cae7393cac1c065be23c5d4e0"
 menu_path: ["Add custom methods to your models"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../extension-examples/index.md", "title": "Shared packages & examples"}
-nav_next: {"path": "../query/index.md", "title": "Create custom Prisma Client queries"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/extension-examples/index.md", "title": "Shared packages & examples"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/query/index.md", "title": "Create custom Prisma Client queries"}
 ---
 
 Client Extensions

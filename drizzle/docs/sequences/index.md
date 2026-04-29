@@ -10,8 +10,8 @@ content_hash: "aaa6195dc52f06ad3f111ba7f68dc75da405c703689932daf59e8c88ea676e87"
 menu_path: ["Sequences"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../indexes-constraints/index.md", "title": "Indexes & Constraints"}
-nav_next: {"path": "../views/index.md", "title": "Views"}
+nav_prev: {"path": "drizzle/docs/indexes-constraints/index.md", "title": "Indexes & Constraints"}
+nav_next: {"path": "drizzle/docs/views/index.md", "title": "Views"}
 ---
 
 Sequences in PostgreSQL and CockroachDB are special single-row tables created to generate unique identifiers, often used for auto-incrementing primary key values. They provide a thread-safe way to generate unique sequential values across multiple sessions.

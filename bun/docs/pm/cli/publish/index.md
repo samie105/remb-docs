@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:39.906Z"
 content_hash: "0c8f677481df6437454bced88ef90c2ac6872ccfce385628bd2be81c2d67cf2e"
 menu_path: ["bun publish"]
 section_path: []
-nav_prev: {"path": "../pm/index.md", "title": "bun pm"}
-nav_next: {"path": "../remove/index.md", "title": "bun remove"}
+nav_prev: {"path": "bun/docs/pm/cli/pm/index.md", "title": "bun pm"}
+nav_next: {"path": "bun/docs/pm/cli/remove/index.md", "title": "bun remove"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../remove/index.md", "title": "bun remove"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 `bun publish` will automatically pack your package into a tarball, strip catalog and workspace protocols from the `package.json` (resolving versions if necessary), and publish to the registry specified in your configuration files. Both `bunfig.toml` and `.npmrc` files are supported.
 
@@ -638,10 +638,10 @@ bunx
 
 Previous
 
-](/docs/pm/bunx)[
+](../../bunx/index.md)[
 
 bun outdated
 
 Next
 
-](/docs/pm/cli/outdated)
+](../outdated/index.md)

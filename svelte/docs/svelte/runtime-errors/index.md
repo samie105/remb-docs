@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:29.163Z"
 content_hash: "894efc62a5f838242e58f855663979cd3d2980d164090386f1e40b75fdc7cbbc"
 menu_path: ["Runtime errors"]
 section_path: []
-nav_prev: {"path": "../compiler-warnings/index.md", "title": "Compiler warnings"}
-nav_next: {"path": "../runtime-warnings/index.md", "title": "Runtime warnings"}
+nav_prev: {"path": "svelte/docs/svelte/compiler-warnings/index.md", "title": "Compiler warnings"}
+nav_next: {"path": "svelte/docs/svelte/runtime-warnings/index.md", "title": "Runtime warnings"}
 ---
 
 ## Client errors[](#Client-errors)
@@ -51,7 +51,7 @@ A component is attempting to bind to a non-bindable property `%key%` belonging t
 Calling `%method%` on a component instance (of %component%) is no longer valid in Svelte 5
 ```
 
-See the [migration guide](/docs/svelte/v5-migration-guide#Components-are-no-longer-classes) for more information.
+See the [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more information.
 
 ### component\_api\_invalid\_new[](#Client-errors-component_api_invalid_new)
 
@@ -59,7 +59,7 @@ See the [migration guide](/docs/svelte/v5-migration-guide#Components-are-no-long
 Attempted to instantiate %component% with `new %name%`, which is no longer valid in Svelte 5. If this component is not under your control, set the `compatibility.componentApi` compiler option to `4` to keep it working.
 ```
 
-See the [migration guide](/docs/svelte/v5-migration-guide#Components-are-no-longer-classes) for more information.
+See the [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more information.
 
 ### derived\_references\_self[](#Client-errors-derived_references_self)
 
@@ -601,4 +601,4 @@ The `this` prop on `<svelte:element>` must be a string, if defined
 
 previous next
 
-[Compiler warnings](/docs/svelte/compiler-warnings) [Runtime warnings](/docs/svelte/runtime-warnings)
+[Compiler warnings](../compiler-warnings/index.md) [Runtime warnings](../runtime-warnings/index.md)

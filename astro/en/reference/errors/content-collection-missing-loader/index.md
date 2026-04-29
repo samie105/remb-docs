@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:02.841Z"
 content_hash: "43c9e85e16a441af7ef51c8b86f973e4382d59e622a030432a8a7edfceac230a"
 menu_path: ["Content collection is missing a loader definition."]
 section_path: []
-nav_prev: {"path": "../content-collection-invalid-type/index.md", "title": "Content collection has an invalid type field."}
-nav_next: {"path": "../content-collection-type-mismatch-error/index.md", "title": "Collection contains entries of a different type."}
+nav_prev: {"path": "astro/en/reference/errors/content-collection-invalid-type/index.md", "title": "Content collection has an invalid type field."}
+nav_next: {"path": "astro/en/reference/errors/content-collection-type-mismatch-error/index.md", "title": "Collection contains entries of a different type."}
 ---
 
 # Content collection is missing a loader definition.
@@ -22,6 +22,6 @@ nav_next: {"path": "../content-collection-type-mismatch-error/index.md", "title"
 
 [Section titled “What went wrong?”](#what-went-wrong)
 
-A content collection is missing a `loader` definition. Make sure that each collection in your content config file has a `loader`. See the [Content collections documentation](/en/guides/content-collections/) for more information.
+A content collection is missing a `loader` definition. Make sure that each collection in your content config file has a `loader`. See the [Content collections documentation](../../../guides/content-collections/index.md) for more information.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

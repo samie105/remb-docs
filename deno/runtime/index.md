@@ -10,7 +10,7 @@ content_hash: "bf8b12eaf4326835a6f0a5652e43071216740394d4695b19e66859cac8887514"
 menu_path: ["Welcome to Deno"]
 section_path: []
 content_language: "en"
-nav_next: {"path": "getting_started/installation/index.md", "title": "Installation"}
+nav_next: {"path": "deno/runtime/getting_started/installation/index.md", "title": "Installation"}
 ---
 
 **On this page**
@@ -23,10 +23,10 @@ nav_next: {"path": "getting_started/installation/index.md", "title": "Installati
 
 ## Why Deno?
 
--   Deno is **[TypeScript-ready out of the box](/runtime/fundamentals/typescript/).** Zero config or additional steps necessary.
--   Deno is **[secure by default](/runtime/fundamentals/security/).** Where other runtimes give full access every script they run, Deno allows you to enforce granular permissions.
--   Deno has a **robust built-in toolchain.** Unlike Node or browser JavaScript, Deno includes a [standard library](/runtime/reference/std/), along with a first-party [linter/formatter](/runtime/fundamentals/linting_and_formatting/), [test runner](/runtime/fundamentals/testing/), and more.
--   Deno is **fully compatible with [Node and npm](/runtime/fundamentals/node/).**
+-   Deno is **[TypeScript-ready out of the box](fundamentals/typescript/index.md).** Zero config or additional steps necessary.
+-   Deno is **[secure by default](fundamentals/security/index.md).** Where other runtimes give full access every script they run, Deno allows you to enforce granular permissions.
+-   Deno has a **robust built-in toolchain.** Unlike Node or browser JavaScript, Deno includes a [standard library](reference/std/index.md), along with a first-party [linter/formatter](fundamentals/linting_and_formatting/index.md), [test runner](fundamentals/testing/index.md), and more.
+-   Deno is **fully compatible with [Node and npm](fundamentals/node/index.md).**
 -   Deno is **fast and reliable**.
 -   **[Deno is open-source](https://github.com/denoland/deno).**
 
@@ -52,7 +52,7 @@ irm https://deno.land/install.ps1 | iex
 curl -fsSL https://deno.land/install.sh | sh
 ```
 
-[Additional installation options can be found here](/runtime/getting_started/installation/). After installation, you should have the `deno` executable available on your system path. You can verify the installation by running:
+[Additional installation options can be found here](getting_started/installation/index.md). After installation, you should have the `deno` executable available on your system path. You can verify the installation by running:
 
 \>\_
 
@@ -64,6 +64,6 @@ deno --version
 
 Deno can run JavaScript and [TypeScript](https://www.typescriptlang.org/) with no additional tools or configuration required, all in a secure, batteries-included runtime.
 
--   [Making a Deno project](/runtime/getting_started/first_project/)
--   [Setting up your environment](/runtime/getting_started/setup_your_environment/)
--   [Using the CLI](/runtime/getting_started/command_line_interface)
+-   [Making a Deno project](getting_started/first_project/index.md)
+-   [Setting up your environment](getting_started/setup_your_environment/index.md)
+-   [Using the CLI](getting_started/command_line_interface/index.md)

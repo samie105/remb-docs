@@ -10,8 +10,8 @@ content_hash: "3bef85b5a645ad7f0a489311f6a1f5835be18eb2421c00b0aeb3fa6027c87ee1"
 menu_path: ["deno install"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../init/index.md", "title": "deno init"}
-nav_next: {"path": "../jupyter/index.md", "title": "Jupyter Kernel for Deno"}
+nav_prev: {"path": "deno/runtime/reference/cli/init/index.md", "title": "deno init"}
+nav_next: {"path": "deno/runtime/reference/cli/jupyter/index.md", "title": "Jupyter Kernel for Deno"}
 ---
 
 # Install using deno install
@@ -29,7 +29,7 @@ Use this command to compile a package or script into a standalone, self-containe
 deno install --global --compile -A npm:@anthropic-ai/claude-code
 ```
 
-This combines the behavior of [`deno compile`](/runtime/reference/cli/compile/) with global installation — producing a native binary placed in the installation root (same as `--global` without `--compile`).
+This combines the behavior of [`deno compile`](../compile/index.md) with global installation — producing a native binary placed in the installation root (same as `--global` without `--compile`).
 
 ## Native Node.js addons
 
@@ -78,7 +78,7 @@ deleted /Users/deno/.deno/bin/file-server
 ✅ Successfully uninstalled file-server
 ```
 
-See [`deno uninstall` page for more details](/runtime/reference/cli/uninstall/).
+See [`deno uninstall` page for more details](../uninstall/index.md).
 
 Command line usage:
 

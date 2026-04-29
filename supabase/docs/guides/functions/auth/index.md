@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:43.454Z"
 content_hash: "ef5c002275ddf9889b09275c338cd5a0e56a6c4d0ac5781c9eae73e989190c78"
 menu_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Securing your functions","Securing your functions"]
 section_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Securing your functions","Securing your functions"]
-nav_prev: {"path": "../architecture/index.md", "title": "Edge Functions Architecture"}
-nav_next: {"path": "../auth-legacy-jwt/index.md", "title": "Integrating With Supabase Auth"}
+nav_prev: {"path": "supabase/docs/guides/functions/architecture/index.md", "title": "Edge Functions Architecture"}
+nav_next: {"path": "supabase/docs/guides/functions/auth-legacy-jwt/index.md", "title": "Integrating With Supabase Auth"}
 ---
 
 # 
@@ -25,19 +25,19 @@ Best practices on securing Edge Functions
 
 In the past Supabase Auth used a **symmetric** secret to sign legacy JWTs. But it was replaced by new [JWT Signing Keys](/blog/jwt-signing-keys#start-using-asymmetric-jwts-today). This guide covers the new patterns for securing your Edge Functions.
 
-If you need to validate using the old method, read the [Legacy JWT Secret guide](/docs/guides/functions/auth-legacy-jwt).
+If you need to validate using the old method, read the [Legacy JWT Secret guide](../auth-legacy-jwt/index.md).
 
-Before continuing, read the [JWT Signing Keys guide](/docs/guides/auth/signing-keys) for details about the main differences compared to Legacy JWTs.
+Before continuing, read the [JWT Signing Keys guide](../../auth/signing-keys/index.md) for details about the main differences compared to Legacy JWTs.
 
 ## Overview[#](#overview)
 
-When an HTTP request is sent to Edge Functions, you can use Supabase Auth to secure endpoints. In the past, this verification was controlled by the [`verify_jwt` flag](/docs/guides/functions/function-configuration#skipping-authorization-checks).
+When an HTTP request is sent to Edge Functions, you can use Supabase Auth to secure endpoints. In the past, this verification was controlled by the [`verify_jwt` flag](../function-configuration/index.md#skipping-authorization-checks).
 
-But, this method is incompatible with the new [JWT Signing Keys](/docs/guides/auth/signing-keys) and also caused trouble when attempting [third-party integration](https://github.com/orgs/supabase/discussions/34988#discussion-8199151).
+But, this method is incompatible with the new [JWT Signing Keys](../../auth/signing-keys/index.md) and also caused trouble when attempting [third-party integration](https://github.com/orgs/supabase/discussions/34988#discussion-8199151).
 
 For this reason we decided to no longer implicitly force JWT verification, but instead suggest patterns and templates to handle this task. This allows users to own and control the auth code, instead of hiding it internally under Edge Runtime infrastructure.
 
-Following the [upcoming API key changes](https://github.com/orgs/supabase/discussions/29260) timetable, the `verify_jwt` flag will still be supported and enabled by default. To move to the new [JWT Signing Keys](/docs/guides/auth/signing-keys), you need to manually [skip the authorization checks](/docs/guides/functions/function-configuration#skipping-authorization-checks) and follow the steps below.
+Following the [upcoming API key changes](https://github.com/orgs/supabase/discussions/29260) timetable, the `verify_jwt` flag will still be supported and enabled by default. To move to the new [JWT Signing Keys](../../auth/signing-keys/index.md), you need to manually [skip the authorization checks](../function-configuration/index.md#skipping-authorization-checks) and follow the steps below.
 
 ## Integrating with Supabase Auth[#](#integrating-with-supabase-auth)
 
@@ -52,7 +52,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=&framework=).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -64,7 +64,7 @@ In most cases, you can get the correct key from [the Project's **Connect** dialo
 
 **For new keys**, open the **API Keys** tab, if you don't have a publishable key already, click **Create new API Keys**, and copy the value from the **Publishable key** section.
 
-Currently, the new API keys are not available by default on the Edge Functions environment. But you can manually expose them as [secret](/docs/guides/functions/secrets#local-secrets) using the `SB_` prefix.
+Currently, the new API keys are not available by default on the Edge Functions environment. But you can manually expose them as [secret](../secrets/index.md#local-secrets) using the `SB_` prefix.
 
 We're working on exposing these secrets and making them default in the future.
 

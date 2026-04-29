@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:21.465Z"
 content_hash: "00d93c513cea4119e22208d7b7a10cd22a2b397e49218a73fb7be92560c0bee4"
 menu_path: ["Server-Side Rendering (SSR) ​"]
 section_path: []
-nav_prev: {"path": "../env-and-mode/index.md", "title": "Env Variables and Modes \u200b"}
-nav_next: {"path": "../backend-integration/index.md", "title": "Backend Integration \u200b"}
+nav_prev: {"path": "vite/guide/env-and-mode/index.md", "title": "Env Variables and Modes \u200b"}
+nav_next: {"path": "vite/guide/backend-integration/index.md", "title": "Backend Integration \u200b"}
 ---
 
 Note

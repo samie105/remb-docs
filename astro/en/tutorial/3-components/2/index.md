@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:34.668Z"
 content_hash: "5ace6218eeb71c84cf4637054e99a28186d9023f55fdcc9c80cdbd6f1a4e4884"
 menu_path: ["Create a social media footer"]
 section_path: []
-nav_prev: {"path": "../1/index.md", "title": "Make a reusable Navigation component"}
-nav_next: {"path": "../3/index.md", "title": "Build it yourself - Header"}
+nav_prev: {"path": "astro/en/tutorial/3-components/1/index.md", "title": "Make a reusable Navigation component"}
+nav_next: {"path": "astro/en/tutorial/3-components/3/index.md", "title": "Build it yourself - Header"}
 ---
 
 # Create a social media footer
@@ -144,6 +144,6 @@ Since you might have multiple online accounts you can link to, you can make a si
 
 [Section titled “Resources”](#resources)
 
-*   [Component Props in Astro](/en/basics/astro-components/#component-props)
+*   [Component Props in Astro](../../../basics/astro-components/index.md#component-props)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:04.447Z"
 content_hash: "7e49d2e97cf0f1bbcf1f033e80dcc60f708c0940d3234f20206e8a17ad7c475e"
 menu_path: ["V5 Migration Guide"]
 section_path: []
-nav_prev: {"path": "../Migration-Guide-V4/index.md", "title": "V4 Migration Guide"}
-nav_next: {"path": "../Plugins-Guide/index.md", "title": "The hitchhiker's guide to plugins"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Migration-Guide-V4/index.md", "title": "V4 Migration Guide"}
+nav_next: {"path": "fastify/docs/latest/Guides/Plugins-Guide/index.md", "title": "The hitchhiker's guide to plugins"}
 ---
 
 Version: latest (v5.8.x)
 
 Version 3 and before of Fastify are no longer maintained.
 
-For information about support options for end-of-life versions, see the [Long Term Support](/docs/latest/Reference/LTS/) page.
+For information about support options for end-of-life versions, see the [Long Term Support](../../Reference/LTS/index.md) page.
 
 This guide is intended to help with migration from Fastify v4 to v5.
 

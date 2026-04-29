@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:32:58.653Z"
 content_hash: "d94551a5376d68b86e48d99ad2d5488710920861e8419164f528d28abc6afebc"
 menu_path: ["Scripts and event handling"]
 section_path: []
-nav_prev: {"path": "../syntax-highlighting/index.md", "title": "Syntax Highlighting"}
-nav_next: {"path": "../framework-components/index.md", "title": "Front-end frameworks"}
+nav_prev: {"path": "astro/en/guides/syntax-highlighting/index.md", "title": "Syntax Highlighting"}
+nav_next: {"path": "astro/en/guides/framework-components/index.md", "title": "Front-end frameworks"}
 ---
 
 # Scripts and event handling
 
 You can send JavaScript to the browser and add functionality to your Astro components using `<script>` tags in the component template.
 
-Scripts add interactivity to your site, such as handling events or updating content dynamically, without the need for a [UI framework](/en/guides/framework-components/) like React, Svelte, or Vue. This avoids the overhead of shipping framework JavaScript and doesn’t require you to know any additional framework to create a full-featured website or application.
+Scripts add interactivity to your site, such as handling events or updating content dynamically, without the need for a [UI framework](../framework-components/index.md) like React, Svelte, or Vue. This avoids the overhead of shipping framework JavaScript and doesn’t require you to know any additional framework to create a full-featured website or application.
 
 ## Client-Side Scripts
 
@@ -58,7 +58,7 @@ By default, Astro processes `<script>` tags that contain no attributes (other th
 
 Astro will not process a `<script>` tag if it has any attribute other than `src`.
 
-You can add the [`is:inline`](/en/reference/directives-reference/#isinline) directive to intentionally opt out of processing for a script.
+You can add the [`is:inline`](../../reference/directives-reference/index.md#isinline) directive to intentionally opt out of processing for a script.
 
 ```
 <script is:inline>  // Will be rendered into the HTML exactly as written!  // Not transformed: no TypeScript and no import resolution by Astro.  // If used inside a component, this code is duplicated for each instance.</script>
@@ -145,7 +145,7 @@ You can learn more about custom elements in [web.dev’s Reusable Web Components
 
 [Section titled “Pass frontmatter variables to scripts”](#pass-frontmatter-variables-to-scripts)
 
-In Astro components, the code in [the frontmatter](/en/basics/astro-components/#the-component-script) (between the `---` fences) runs on the server and is not available in the browser.
+In Astro components, the code in [the frontmatter](../../basics/astro-components/index.md#the-component-script) (between the `---` fences) runs on the server and is not available in the browser.
 
 To pass server-side variables to client-side scripts, store them in [`data-*` attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) on HTML elements. Scripts can then access these values using the `dataset` property.
 
@@ -170,6 +170,6 @@ Now we can use our component multiple times and be greeted by a different messag
 
 [Section titled “Combining scripts and UI Frameworks”](#combining-scripts-and-ui-frameworks)
 
-Elements rendered by a UI framework may not be available yet when a `<script>` tag executes. If your script also needs to handle [UI framework components](/en/guides/framework-components/), using a custom element is recommended.
+Elements rendered by a UI framework may not be available yet when a `<script>` tag executes. If your script also needs to handle [UI framework components](../framework-components/index.md), using a custom element is recommended.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

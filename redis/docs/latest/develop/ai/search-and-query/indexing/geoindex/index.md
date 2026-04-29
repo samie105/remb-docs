@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:53:54.005Z"
 content_hash: "ccc7084dff598c8fa4bdcd7218e4ae7d514f361cf74fb6b3dc4a37fff81ee23e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Geospatial indexing","→","Geospatial indexing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Geospatial indexing","→","Geospatial indexing"]
-nav_prev: {"path": "../field-and-type-options/index.md", "title": "Field and type options"}
-nav_next: {"path": "../schema-definition/index.md", "title": "Schema definition"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/index.md", "title": "Field and type options"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/schema-definition/index.md", "title": "Schema definition"}
 ---
 
 # Geospatial indexing
 
 Options for indexing geospatial data
 
-Redis supports two different [schema types](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/) for geospatial data:
+Redis supports two different [schema types](../field-and-type-options/index.md) for geospatial data:
 
 *   [`GEO`](#geo): This uses a simple format where individual geospatial points are specified as numeric longitude-latitude pairs.
 *   [`GEOSHAPE`](#geoshape): This uses a subset of the [Well-Known Text (WKT)](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry) format to specify both points and polygons using either geographical coordinates or Cartesian coordinates.
@@ -1675,7 +1675,7 @@ public class GeoIndexExample
 }
 ```
 
-See [Geospatial queries](/docs/latest/develop/ai/search-and-query/query/geo-spatial/) for more information about the available options.
+See [Geospatial queries](../../query/geo-spatial/index.md) for more information about the available options.
 
 ## `GEOSHAPE`
 
@@ -3333,6 +3333,6 @@ public class GeoIndexExample
 }
 ```
 
-You can also run queries to find whether shapes in the index completely contain or overlap each other. See [Geospatial queries](/docs/latest/develop/ai/search-and-query/query/geo-spatial/) for more information.
+You can also run queries to find whether shapes in the index completely contain or overlap each other. See [Geospatial queries](../../query/geo-spatial/index.md) for more information.
 
 ## On this page

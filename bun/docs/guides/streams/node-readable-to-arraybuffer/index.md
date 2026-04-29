@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:36.285Z"
 content_hash: "3d1c9194ee440e606e51c15e9fba82872c98ee5569c1f1f67dcb808f6f907677"
 menu_path: ["Convert a Node.js Readable to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "../../runtime/web-debugger/index.md", "title": "Debugging Bun with the web debugger"}
-nav_next: {"path": "../node-readable-to-blob/index.md", "title": "Convert a Node.js Readable to a Blob"}
+nav_prev: {"path": "bun/docs/guides/runtime/web-debugger/index.md", "title": "Debugging Bun with the web debugger"}
+nav_next: {"path": "bun/docs/guides/streams/node-readable-to-blob/index.md", "title": "Convert a Node.js Readable to a Blob"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../node-readable-to-blob/index.md", "title": "Convert a Node
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To convert a Node.js `Readable` stream to an `ArrayBuffer` in Bun, you can create a new `Response` object with the stream as the body, then use `arrayBuffer()` to read the stream into an `ArrayBuffer`.
 
@@ -53,4 +53,4 @@ Convert a Node.js Readable to an Uint8Array
 
 Previous
 
-](/docs/guides/streams/node-readable-to-uint8array)
+](../node-readable-to-uint8array/index.md)

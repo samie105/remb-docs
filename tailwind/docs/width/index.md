@@ -10,8 +10,8 @@ content_hash: "bd5b1b4ed9626792331074ff816aa369a0c1a7cd14e14ee6a2f75d74c15bea97"
 menu_path: ["width"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../margin/index.md", "title": "margin"}
-nav_next: {"path": "../min-width/index.md", "title": "min-width"}
+nav_prev: {"path": "tailwind/docs/margin/index.md", "title": "margin"}
+nav_next: {"path": "tailwind/docs/min-width/index.md", "title": "min-width"}
 ---
 
 Utilities for setting the width of an element.

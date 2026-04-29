@@ -11,8 +11,8 @@ menu_path: ["Routing"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Building Your Application"}
-nav_next: {"path": "pages-and-layouts/index.md", "title": "Pages and Layouts"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/index.md", "title": "Building Your Application"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/pages-and-layouts/index.md", "title": "Pages and Layouts"}
 ---
 
 # Routing
@@ -27,42 +27,42 @@ The Pages Router has a file-system based router built on concepts of pages. When
 
 Create your first page and shared layout with the Pages Router.
 
-](/docs/pages/building-your-application/routing/pages-and-layouts)[
+](pages-and-layouts/index.md)[
 
 ### Dynamic Routes
 
 Dynamic Routes are pages that allow you to add custom params to your URLs. Start creating Dynamic Routes and learn more here.
 
-](/docs/pages/building-your-application/routing/dynamic-routes)[
+](dynamic-routes/index.md)[
 
 ### Linking and Navigating
 
 Learn how navigation works in Next.js, and how to use the Link Component and \`useRouter\` hook.
 
-](/docs/pages/building-your-application/routing/linking-and-navigating)[
+](linking-and-navigating/index.md)[
 
 ### Custom App
 
 Control page initialization and add a layout that persists for all pages by overriding the default App component used by Next.js.
 
-](/docs/pages/building-your-application/routing/custom-app)[
+](custom-app/index.md)[
 
 ### Custom Document
 
 Extend the default document markup added by Next.js.
 
-](/docs/pages/building-your-application/routing/custom-document)[
+](custom-document/index.md)[
 
 ### API Routes
 
 Next.js supports API Routes, which allow you to build your API without leaving your Next.js app. Learn how it works here.
 
-](/docs/pages/building-your-application/routing/api-routes)[
+](api-routes/index.md)[
 
 ### Custom Errors
 
 Override and extend the built-in Error page to handle custom errors.
 
-](/docs/pages/building-your-application/routing/custom-error)
+](custom-error/index.md)
 
 Was this helpful?

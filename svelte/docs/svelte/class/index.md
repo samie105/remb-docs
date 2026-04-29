@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:47.920Z"
 content_hash: "93c3382e7e71b68dd40bbcc44913e1c5623105db4400451a08b0c5ee44c0a438"
 menu_path: ["class"]
 section_path: []
-nav_prev: {"path": "../style/index.md", "title": "style:"}
-nav_next: {"path": "../await-expressions/index.md", "title": "await"}
+nav_prev: {"path": "svelte/docs/svelte/style/index.md", "title": "style:"}
+nav_next: {"path": "svelte/docs/svelte/await-expressions/index.md", "title": "await"}
 ---
 
 There are two ways to set classes on elements: the `class` attribute, and the `class:` directive.
@@ -141,4 +141,4 @@ As with other directives, we can use a shorthand when the name of the class coin
 
 previous next
 
-[style:](/docs/svelte/style) [await](/docs/svelte/await-expressions)
+[style:](../style/index.md) [await](../await-expressions/index.md)

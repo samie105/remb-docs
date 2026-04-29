@@ -10,8 +10,8 @@ content_hash: "100dc2fe08f47ac65923c2c619d20de2826b107cbc622b8005e63900798711ef"
 menu_path: ["Indexes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../externally-managed-tables/index.md", "title": "External tables"}
-nav_next: {"path": "../models/index.md", "title": "Models"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/externally-managed-tables/index.md", "title": "External tables"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/models/index.md", "title": "Models"}
 ---
 
 Prisma ORM allows configuration of database indexes, unique constraints and primary key constraints. Full text indexes in MySQL and MongoDB are available through the `fullTextIndex` preview feature using the `@@fulltext` attribute.

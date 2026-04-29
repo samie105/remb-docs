@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:12.777Z"
 content_hash: "cb46e2370f0c3358bf255e1c49d14d9839496f4b497cc5b589ca0e9ec06fd0f5"
 menu_path: ["PostgreSQL: Documentation: 18: 19.10. Vacuuming"]
 section_path: []
-nav_prev: {"path": "../runtime-config-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.9.\u00a0Run-time Statistics"}
-nav_next: {"path": "../runtime-config-wal.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.5.\u00a0Write Ahead Log"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.9.\u00a0Run-time Statistics"}
+nav_next: {"path": "postgres/docs/current/runtime-config-wal.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.5.\u00a0Write Ahead Log"}
 ---
 
 These parameters control vacuuming behavior. For more information on the purpose and responsibilities of vacuum, see [Section 24.1](https://www.postgresql.org/docs/current/routine-vacuuming.html "24.1. Routine Vacuuming").

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:16.656Z"
 content_hash: "71d1cae4cc730cbbf0afbb22f5721c58bdda8b693c3f988b3be1652cd4061b9b"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","RAG with Permissions","RAG with Permissions"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","RAG with Permissions","RAG with Permissions"]
-nav_prev: {"path": "../quickstarts/text-deduplication/index.md", "title": "Semantic Text Deduplication"}
-nav_next: {"path": "../semantic-search/index.md", "title": "Semantic search"}
+nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/text-deduplication/index.md", "title": "Semantic Text Deduplication"}
+nav_next: {"path": "supabase/docs/guides/ai/semantic-search/index.md", "title": "Semantic search"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Fine-grain access control with Retrieval Augmented Generation.
 
 * * *
 
-Since pgvector is built on top of Postgres, you can implement fine-grain access control on your vector database using [Row Level Security (RLS)](/docs/guides/database/postgres/row-level-security). This means you can restrict which documents are returned during a vector similarity search to users that have access to them. Supabase also supports [Foreign Data Wrappers (FDW)](/docs/guides/database/extensions/wrappers/overview) which means you can use an external database or data source to determine these permissions if your user data doesn't exist in Supabase.
+Since pgvector is built on top of Postgres, you can implement fine-grain access control on your vector database using [Row Level Security (RLS)](../../database/postgres/row-level-security/index.md). This means you can restrict which documents are returned during a vector similarity search to users that have access to them. Supabase also supports [Foreign Data Wrappers (FDW)](/docs/guides/database/extensions/wrappers/overview) which means you can use an external database or data source to determine these permissions if your user data doesn't exist in Supabase.
 
 Use this guide to learn how to restrict access to documents when performing retrieval augmented generation (RAG).
 
@@ -41,7 +41,7 @@ Notice how we record the `owner_id` on each document. Let's create an RLS policy
 1-- enable row level security2alter table document_sections enable row level security;34-- setup RLS for select operations5create policy "Users can query their own document sections"6on document_sections for select to authenticated using (7  document_id in (8    select id9    from documents10    where (owner_id = (select auth.uid()))11  )12);
 ```
 
-In this example, the current user is determined using the built-in `auth.uid()` function when the query is executed through your project's auto-generated [REST API](/docs/guides/api). If you are connecting to your Supabase database through a direct Postgres connection, see [Direct Postgres Connection](#direct-postgres-connection) below for directions on how to achieve the same access control.
+In this example, the current user is determined using the built-in `auth.uid()` function when the query is executed through your project's auto-generated [REST API](../../api/index.md). If you are connecting to your Supabase database through a direct Postgres connection, see [Direct Postgres Connection](#direct-postgres-connection) below for directions on how to achieve the same access control.
 
 Now every `select` query executed on `document_sections` will implicitly filter the returned sections based on whether or not the current user has access to them.
 
@@ -57,7 +57,7 @@ as an authenticated user will only return rows that they are the owner of (as de
 1-- Perform inner product similarity based on a match_threshold2select *3from document_sections4where document_sections.embedding <#> embedding < -match_threshold5order by document_sections.embedding <#> embedding;
 ```
 
-The above example only configures `select` access to users. If you wanted, you could create more RLS policies for inserts, updates, and deletes in order to apply the same permission logic for those other operations. See [Row Level Security](/docs/guides/database/postgres/row-level-security) for a more in-depth guide on RLS policies.
+The above example only configures `select` access to users. If you wanted, you could create more RLS policies for inserts, updates, and deletes in order to apply the same permission logic for those other operations. See [Row Level Security](../../database/postgres/row-level-security/index.md) for a more in-depth guide on RLS policies.
 
 ## Alternative scenarios[#](#alternative-scenarios)
 
@@ -83,7 +83,7 @@ Instead of directly querying the `documents` table, we query the join table.
 
 You may have an existing system that stores users, documents, and their permissions in a separate database. Let's explore the scenario where this data exists in another Postgres database. We'll use a foreign data wrapper (FDW) to connect to the external DB from within your Supabase DB:
 
-RLS is latency-sensitive, so extra caution should be taken before implementing this method. Use the [query plan analyzer](/docs/guides/platform/performance#optimizing-poor-performing-queries) to measure execution times for your queries to ensure they are within expected ranges. For enterprise applications, contact [enterprise@supabase.io](mailto:enterprise@supabase.io).
+RLS is latency-sensitive, so extra caution should be taken before implementing this method. Use the [query plan analyzer](../../platform/performance/index.md#optimizing-poor-performing-queries) to measure execution times for your queries to ensure they are within expected ranges. For enterprise applications, contact [enterprise@supabase.io](mailto:enterprise@supabase.io).
 
 For data sources other than Postgres, see [Foreign Data Wrappers](/docs/guides/database/extensions/wrappers/overview) for a list of external sources supported today. If your data lives in a source not provided in the list, contact [support](/dashboard/support/new) and we'll be happy to discuss your use case.
 

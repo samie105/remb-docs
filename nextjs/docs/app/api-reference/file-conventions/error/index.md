@@ -11,8 +11,8 @@ menu_path: ["error.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../dynamic-routes/index.md", "title": "Dynamic Route Segments"}
-nav_next: {"path": "../forbidden/index.md", "title": "forbidden.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/dynamic-routes/index.md", "title": "Dynamic Route Segments"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/forbidden/index.md", "title": "forbidden.js"}
 ---
 
 # error.js
@@ -68,9 +68,9 @@ export default function Error({
 > 
 > -   The [React DevTools](https://react.dev/learn/react-developer-tools) allow you to toggle error boundaries to test error states.
 > -   If you want errors to bubble up to the parent error boundary, you can `throw` when rendering the `error` component.
-> -   For component-level error recovery that aren't tied to route segments like [`error.js`](/docs/app/api-reference/file-conventions/error), use the [`unstable_catchError`](/docs/app/api-reference/functions/catchError) function.
+> -   For component-level error recovery that aren't tied to route segments like [`error.js`](index.md), use the [`unstable_catchError`](../../functions/catchError/index.md) function.
 
-In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `error.js` wraps `loading.js`, `not-found.js`, `page.js`, and nested `layout.js` files in a React error boundary. It does **not** wrap the `layout.js` or `template.js` above it in the same segment. To handle errors in the root layout, use [`global-error.js`](/docs/app/api-reference/file-conventions/error#global-error).
+In the [component hierarchy](../../../getting-started/project-structure/index.md#component-hierarchy), `error.js` wraps `loading.js`, `not-found.js`, `page.js`, and nested `layout.js` files in a React error boundary. It does **not** wrap the `layout.js` or `template.js` above it in the same segment. To handle errors in the root layout, use [`global-error.js`](index.md#global-error).
 
 ## Reference[](#reference)
 
@@ -128,9 +128,9 @@ In most cases, you should use [`unstable_retry()`](#unstable_retry) instead. How
 
 ### Global Error[](#global-error)
 
-While less common, you can handle errors in the root layout or template using `global-error.jsx`, located in the root app directory, even when leveraging [internationalization](/docs/app/guides/internationalization). Global error UI must define its own `<html>` and `<body>` tags, global styles, fonts, or other dependencies that your error page requires. This file replaces the root layout or template when active.
+While less common, you can handle errors in the root layout or template using `global-error.jsx`, located in the root app directory, even when leveraging [internationalization](../../../guides/internationalization/index.md). Global error UI must define its own `<html>` and `<body>` tags, global styles, fonts, or other dependencies that your error page requires. This file replaces the root layout or template when active.
 
-> **Good to know**: Error boundaries must be [Client Components](/docs/app/getting-started/server-and-client-components#using-client-components), which means that [`metadata` and `generateMetadata`](/docs/app/getting-started/metadata-and-og-images) exports are not supported in `global-error.jsx`. As an alternative, you can use the React [`<title>`](https://react.dev/reference/react-dom/components/title) component.
+> **Good to know**: Error boundaries must be [Client Components](../../../getting-started/server-and-client-components/index.md#using-client-components), which means that [`metadata` and `generateMetadata`](../../../getting-started/metadata-and-og-images/index.md) exports are not supported in `global-error.jsx`. As an alternative, you can use the React [`<title>`](https://react.dev/reference/react-dom/components/title) component.
 
 app/global-error.tsx
 
@@ -249,6 +249,6 @@ export default GracefullyDegradingErrorBoundary
 
 Learn how to display expected errors and handle uncaught exceptions.
 
-](/docs/app/getting-started/error-handling)
+](../../../getting-started/error-handling/index.md)
 
 Was this helpful?

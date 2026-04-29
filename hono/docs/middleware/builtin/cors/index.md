@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:50.220Z"
 content_hash: "581b36e80a44eea24df1db5c0aafe05e9c7f9feeed7fe60f9560634005980c80"
 menu_path: ["CORS Middleware ​"]
 section_path: []
-nav_prev: {"path": "../context-storage/index.md", "title": "Context Storage Middleware \u200b"}
-nav_next: {"path": "../csrf/index.md", "title": "CSRF Protection \u200b"}
+nav_prev: {"path": "hono/docs/middleware/builtin/context-storage/index.md", "title": "Context Storage Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/csrf/index.md", "title": "CSRF Protection \u200b"}
 ---
 
 ## CORS Middleware [​](#cors-middleware)

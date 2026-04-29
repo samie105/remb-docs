@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:54.145Z"
 content_hash: "7fd9a752ca598b3975e85b0274191eb3867e8a799aa74e116f6f34c266b52bff"
 menu_path: ["Database","Database","Extensions","Extensions","PGAudit: Postgres Auditing","PGAudit: Postgres Auditing"]
 section_path: ["Database","Database","Extensions","Extensions","PGAudit: Postgres Auditing","PGAudit: Postgres Auditing"]
-nav_prev: {"path": "../pg_stat_statements/index.md", "title": "pg_stat_statements: Query Performance Monitoring"}
-nav_next: {"path": "../pgjwt/index.md", "title": "pgjwt: JSON Web Tokens"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_stat_statements/index.md", "title": "pg_stat_statements: Query Performance Monitoring"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pgjwt/index.md", "title": "pgjwt: JSON Web Tokens"}
 ---
 
 # 
@@ -39,7 +39,7 @@ PGAudit can be configured with different levels of precision.
 
 **PGAudit logging precision:**
 
-*   **[Session](#session-logging):** Logs activity within a connection, such as a [psql](/docs/guides/database/connecting-to-postgres#connecting-with-psql) connection.
+*   **[Session](#session-logging):** Logs activity within a connection, such as a [psql](../../connecting-to-postgres/index.md#connecting-with-psql) connection.
 *   **[User](#user-logging):** Logs activity by a particular database user (for example, `anon` or `postgres`).
 *   **[Global](#global-logging):** Logs activity across the entire database.
 *   **[Object](#object-logging):** Logs events related to specific database objects (for example, the auth.users table).
@@ -106,7 +106,7 @@ Below is a limited example of how to assign PGAudit to monitor specific categori
 
 ### Session logging[#](#session-logging)
 
-When you are connecting in a session environment, such as a [psql](/docs/guides/database/connecting-to-postgres#connecting-with-psql) connection, you can configure PGAudit to record events initiated within the session.
+When you are connecting in a session environment, such as a [psql](../../connecting-to-postgres/index.md#connecting-with-psql) connection, you can configure PGAudit to record events initiated within the session.
 
 The [Dashboard](/dashboard/project/_) is a transactional environment and won't sustain a session.
 
@@ -306,7 +306,7 @@ To prevent PGAudit from monitoring the problematic roles, you'll want to change 
 
 #### Using PGAudit to debug database functions[#](#using-pgaudit-to-debug-database-functions)
 
-Technically yes, but it is not the best approach. It is better to check out our [function debugging guide](/docs/guides/database/functions#general-logging) instead.
+Technically yes, but it is not the best approach. It is better to check out our [function debugging guide](../../functions/index.md#general-logging) instead.
 
 #### Downloading database logs[#](#downloading-database-logs)
 
@@ -324,7 +324,7 @@ You should not do this unless you are _absolutely_ certain it is necessary for y
 
 #### Logging function parameters[#](#logging-function-parameters)
 
-We don't currently support configuring `pgaudit.log_parameter` because it may log secrets in encrypted columns if you are using [pgsodium](/docs/guides/database/extensions/pgsodium) or[Vault](/docs/guides/database/vault).
+We don't currently support configuring `pgaudit.log_parameter` because it may log secrets in encrypted columns if you are using [pgsodium](../pgsodium/index.md) or[Vault](../../vault/index.md).
 
 You can upvote this [feature request](https://github.com/orgs/supabase/discussions/20183) with your use-case if you'd like this restriction lifted.
 
@@ -363,6 +363,6 @@ PGAudit's [official documentation](https://www.pgaudit.org) focuses on system an
 ## Resources[#](#resources)
 
 *   [Official `PGAudit` documentation](https://www.pgaudit.org)
-*   [Database Function Logging](/docs/guides/database/functions#general-logging)
+*   [Database Function Logging](../../functions/index.md#general-logging)
 *   [Supabase Logging](/docs/guides/platform/logs)
 *   [Self-Hosting Logs](/docs/reference/self-hosting-analytics/introduction)

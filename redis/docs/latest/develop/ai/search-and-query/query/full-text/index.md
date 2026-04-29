@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:45.273Z"
 content_hash: "401c0d2835a37409565c804dcfb7a3fb4f211c405890cdabee6d9ca3b79b8880"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Full-text search","→","Full-text search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Full-text search","→","Full-text search"]
-nav_prev: {"path": "../exact-match/index.md", "title": "Exact match queries"}
-nav_next: {"path": "../geo-spatial/index.md", "title": "Geospatial queries"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/exact-match/index.md", "title": "Exact match queries"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/geo-spatial/index.md", "title": "Geospatial queries"}
 ---
 
 # Full-text search
@@ -19,7 +19,7 @@ Perform a full-text search
 
 A full-text search finds words or phrases within larger texts. You can search within a specific text field or across all text fields.
 
-This article provides a good overview of the most relevant full-text search capabilities. Please find further details about all the full-text search features in the [reference documentation](/docs/latest/develop/ai/search-and-query/advanced-concepts/).
+This article provides a good overview of the most relevant full-text search capabilities. Please find further details about all the full-text search features in the [reference documentation](../../advanced-concepts/index.md).
 
 The examples in this article use a schema with the following fields:
 
@@ -1367,7 +1367,7 @@ public class QueryFtExample
 
 ## Phrase
 
-A phrase is a sentence, sentence fragment, or small group of words. You can find further details about how to find exact phrases in the [exact match article](/docs/latest/develop/ai/search-and-query/query/exact-match/).
+A phrase is a sentence, sentence fragment, or small group of words. You can find further details about how to find exact phrases in the [exact match article](../exact-match/index.md).
 
 ## Word prefix
 

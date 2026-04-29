@@ -10,8 +10,8 @@ content_hash: "90190a23dcb99430e33a20cd9f70c4eeeaa8760cae90c265ab36216db680b92a"
 menu_path: ["repl - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../readline/promises/index.md", "title": "readline/promises - Node documentation"}
-nav_next: {"path": "../sea/index.md", "title": "sea - Node documentation"}
+nav_prev: {"path": "deno/api/node/readline/promises/index.md", "title": "readline/promises - Node documentation"}
+nav_next: {"path": "deno/api/node/sea/index.md", "title": "sea - Node documentation"}
 ---
 
 ### Usage in Deno

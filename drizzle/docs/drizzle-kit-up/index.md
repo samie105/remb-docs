@@ -10,8 +10,8 @@ content_hash: "a2fefde2c1f3e58c3b356125002761bbb8f98bbe5a947bbaa8522757aa0b2ffa"
 menu_path: ["drizzle-kit up"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-kit-check/index.md", "title": "drizzle-kit check"}
-nav_next: {"path": "../drizzle-kit-studio/index.md", "title": "drizzle-kit studio"}
+nav_prev: {"path": "drizzle/docs/drizzle-kit-check/index.md", "title": "drizzle-kit check"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-studio/index.md", "title": "drizzle-kit studio"}
 ---
 
 `drizzle-kit up` command lets you upgrade drizzle schema snapshots to a newer version. It’s required whenever we introduce breaking changes to the json snapshots of the schema and upgrade the internal version.

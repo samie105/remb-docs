@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:06:19.960Z"
 content_hash: "c8f07442a147204315ef07046e1a5b3d3491a4987ff84020e662c3ec701912aa"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Rust","→","Rolling sensor graph demo with Rust"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Rust","→","Rolling sensor graph demo with Rust"]
-nav_prev: {"path": "../ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
-nav_next: {"path": "../../../whats-new/8-0/index.md", "title": "Redis 8.0"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
+nav_next: {"path": "redis/docs/latest/develop/whats-new/8-0/index.md", "title": "Redis 8.0"}
 ---
 
 # Rolling sensor graph demo with Rust
 
 Build a Redis-backed rolling sensor graph demo in Rust with redis-rs
 
-This guide shows you how to build a compact rolling sensor graph demo in Rust with [`redis-rs`](/docs/latest/develop/clients/rust/) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
+This guide shows you how to build a compact rolling sensor graph demo in Rust with [`redis-rs`](../../../clients/rust/index.md) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
 
 ## Overview
 
@@ -162,7 +162,7 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 
 ## Learn more
 
-*   [Rust client guide](/docs/latest/develop/clients/rust/) - Install and use the Rust client
+*   [Rust client guide](../../../clients/rust/index.md) - Install and use the Rust client
 *   [Time series overview](/docs/latest/develop/data-types/timeseries/) - Time series concepts and commands
 *   [TS.RANGE command](/docs/latest/commands/ts.range/) - Query raw and aggregated ranges from a time series
 *   [TS.MADD command](/docs/latest/commands/ts.madd/) - Add multiple samples in one call

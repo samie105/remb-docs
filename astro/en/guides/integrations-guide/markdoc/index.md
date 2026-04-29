@@ -9,21 +9,21 @@ last_crawled_at: "2026-04-18T16:38:59.476Z"
 content_hash: "3616417ed6b47e21114fb2ff371ccaf0be973fa726f2effbc94e671cf842697a"
 menu_path: ["@astrojs/\n\t\t\t\t\tmarkdoc"]
 section_path: []
-nav_prev: {"path": "../db/index.md", "title": "@astrojs/\n\t\t\t\t\tdb"}
-nav_next: {"path": "../mdx/index.md", "title": "@astrojs/\n\t\t\t\t\tmdx"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/db/index.md", "title": "@astrojs/\n\t\t\t\t\tdb"}
+nav_next: {"path": "astro/en/guides/integrations-guide/mdx/index.md", "title": "@astrojs/\n\t\t\t\t\tmdx"}
 ---
 
 # @astrojs/ markdoc
 
 v1.0.3 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/markdoc/) [npm](https://www.npmjs.com/package/@astrojs/markdoc) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/markdoc/CHANGELOG.md)
 
-This **[Astro integration](/en/guides/integrations/)** enables the usage of [Markdoc](https://markdoc.dev/) to create components, pages, and content collection entries.
+This **[Astro integration](../../integrations/index.md)** enables the usage of [Markdoc](https://markdoc.dev/) to create components, pages, and content collection entries.
 
 ## Why Markdoc?
 
 [Section titled “Why Markdoc?”](#why-markdoc)
 
-Markdoc allows you to enhance your Markdown with [Astro components](/en/basics/astro-components/). If you have existing content authored in Markdoc, this integration allows you to bring those files to your Astro project using content collections.
+Markdoc allows you to enhance your Markdown with [Astro components](../../../basics/astro-components/index.md). If you have existing content authored in Markdoc, this integration allows you to bring those files to your Astro project using content collections.
 
 ## Installation
 
@@ -95,7 +95,7 @@ Markdoc files can only be used within content collections. Add entries to any co
         
     
 
-Then, [query and display your posts and collections](/en/guides/content-collections/#querying-build-time-collections):
+Then, [query and display your posts and collections](../../content-collections/index.md#querying-build-time-collections):
 
 ```
 ---import { getEntry, render } from 'astro:content';
@@ -103,7 +103,7 @@ const entry = await getEntry('docs', 'why-markdoc');const { Content } = await re
 <!--Access frontmatter properties with `data`--><h1>{entry.data.title}</h1><!--Render Markdoc contents with the Content component--><Content />
 ```
 
-See the [Astro Content Collection docs](/en/guides/content-collections/) for more information.
+See the [Astro Content Collection docs](../../content-collections/index.md) for more information.
 
 ## Pass Markdoc variables
 
@@ -180,7 +180,7 @@ Use tags like this fancy "aside" to add some _flair_ to your docs.
 
 [Section titled “Use client-side UI components”](#use-client-side-ui-components)
 
-Tags and nodes are restricted to `.astro` files. To embed client-side UI components in Markdoc, [use a wrapper `.astro` component that renders a framework component](/en/guides/framework-components/#nesting-framework-components) with your desired `client:` directive.
+Tags and nodes are restricted to `.astro` files. To embed client-side UI components in Markdoc, [use a wrapper `.astro` component that renders a framework component](../../framework-components/index.md#nesting-framework-components) with your desired `client:` directive.
 
 This example wraps a React `Aside.tsx` component with a `ClientAside.astro` component:
 
@@ -265,7 +265,7 @@ import { defineMarkdocConfig } from '@astrojs/markdoc/config';import prism from 
 export default defineMarkdocConfig({  extends: [prism()],});
 ```
 
-To learn about configuring Prism stylesheets, [see our syntax highlighting guide](/en/guides/syntax-highlighting/#add-a-prism-stylesheet).
+To learn about configuring Prism stylesheets, [see our syntax highlighting guide](../../syntax-highlighting/index.md#add-a-prism-stylesheet).
 
 ## Custom Markdoc nodes / elements
 
@@ -286,7 +286,7 @@ See the [Markdoc nodes documentation](https://markdoc.dev/docs/nodes#built-in-no
 
 [Section titled “Custom headings”](#custom-headings)
 
-`@astrojs/markdoc` automatically adds anchor links to your headings, and [generates a list of `headings` via the content collections API](/en/guides/content-collections/#rendering-body-content). To further customize how headings are rendered, you can apply an Astro component [as a Markdoc node](https://markdoc.dev/docs/nodes).
+`@astrojs/markdoc` automatically adds anchor links to your headings, and [generates a list of `headings` via the content collections API](../../content-collections/index.md#rendering-body-content). To further customize how headings are rendered, you can apply an Astro component [as a Markdoc node](https://markdoc.dev/docs/nodes).
 
 This example renders a `Heading.astro` component using the `render` property:
 
@@ -298,7 +298,7 @@ export default defineMarkdocConfig({  nodes: {    heading: {      ...nodes.headi
 All Markdown headings will render the `Heading.astro` component and pass the following `attributes` as component props:
 
 *   `level: number` The heading level 1 - 6
-*   `id: string` An `id` generated from the heading’s text contents. This corresponds to the `slug` generated by the [content `render()` function](/en/guides/content-collections/#rendering-body-content).
+*   `id: string` An `id` generated from the heading’s text contents. This corresponds to the `slug` generated by the [content `render()` function](../../content-collections/index.md#rendering-body-content).
 
 For example, the heading `### Level 3 heading!` will pass `level: 3` and `id: 'level-3-heading'` as component props.
 
@@ -467,34 +467,34 @@ When using nested tags in Markdoc, it can be helpful to indent the content insid
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -502,34 +502,34 @@ When using nested tags in Markdoc, it can be helpful to indent the content insid
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

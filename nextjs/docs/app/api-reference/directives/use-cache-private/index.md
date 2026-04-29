@@ -11,8 +11,8 @@ menu_path: ["use cache: private"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../use-cache/index.md", "title": "use cache"}
-nav_next: {"path": "../use-cache-remote/index.md", "title": "use cache: remote"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-cache/index.md", "title": "use cache"}
+nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-cache-remote/index.md", "title": "use cache: remote"}
 ---
 
 # use cache: private
@@ -25,20 +25,20 @@ The `'use cache: private'` directive allows functions to access runtime request 
 
 Reach for `'use cache: private'` when:
 
--   You want to cache a function that already accesses runtime data, and refactoring to [move the runtime access outside and pass values as arguments](/docs/app/getting-started/caching#working-with-runtime-apis) is not practical.
+-   You want to cache a function that already accesses runtime data, and refactoring to [move the runtime access outside and pass values as arguments](../../../getting-started/caching/index.md#working-with-runtime-apis) is not practical.
 -   Compliance requirements prevent storing certain data on the server, even temporarily
 
-Because this directive accesses runtime data, the function executes on every server render and is excluded from running during [static shell](/docs/app/getting-started/caching#how-rendering-works) generation.
+Because this directive accesses runtime data, the function executes on every server render and is excluded from running during [static shell](../../../getting-started/caching/index.md#how-rendering-works) generation.
 
 It is **not** possible to configure custom cache handlers for `'use cache: private'`.
 
-For a comparison of the different cache directives, see [How `use cache: remote` differs from `use cache` and `use cache: private`](/docs/app/api-reference/directives/use-cache-remote#how-use-cache-remote-differs-from-use-cache-and-use-cache-private).
+For a comparison of the different cache directives, see [How `use cache: remote` differs from `use cache` and `use cache: private`](../use-cache-remote/index.md#how-use-cache-remote-differs-from-use-cache-and-use-cache-private).
 
-> **Good to know**: This directive is marked as `experimental` because it depends on runtime prefetching, which is not yet stable. Runtime prefetching is an upcoming feature that will let the router prefetch past the [static shell](/docs/app/getting-started/caching#how-rendering-works) into **any** cached scope, not just private caches.
+> **Good to know**: This directive is marked as `experimental` because it depends on runtime prefetching, which is not yet stable. Runtime prefetching is an upcoming feature that will let the router prefetch past the [static shell](../../../getting-started/caching/index.md#how-rendering-works) into **any** cached scope, not just private caches.
 
 ## Usage[](#usage)
 
-To use `'use cache: private'`, enable the [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) flag in your `next.config.ts` file:
+To use `'use cache: private'`, enable the [`cacheComponents`](../../config/next-config-js/cacheComponents/index.md) flag in your `next.config.ts` file:
 
 next.config.ts
 
@@ -116,7 +116,7 @@ async function getRecommendations(productId: string) {
 }
 ```
 
-> **Good to know**: The `stale` time must be at least 30 seconds for runtime prefetching to work. See [`cacheLife` client cache behavior](/docs/app/api-reference/functions/cacheLife#client-cache-behavior) for details.
+> **Good to know**: The `stale` time must be at least 30 seconds for runtime prefetching to work. See [`cacheLife` client cache behavior](../../functions/cacheLife/index.md#client-cache-behavior) for details.
 
 ## Request APIs allowed in private caches[](#request-apis-allowed-in-private-caches)
 
@@ -147,24 +147,24 @@ View related API references.
 
 Learn how to use the "use cache" directive to cache data in your Next.js application.
 
-](/docs/app/api-reference/directives/use-cache)[
+](../use-cache/index.md)[
 
 ### cacheComponents
 
 Learn how to enable the cacheComponents flag in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheComponents)[
+](../../config/next-config-js/cacheComponents/index.md)[
 
 ### cacheLife
 
 Learn how to use the cacheLife function to set the cache expiration time for a cached function or component.
 
-](/docs/app/api-reference/functions/cacheLife)[
+](../../functions/cacheLife/index.md)[
 
 ### cacheTag
 
 Learn how to use the cacheTag function to manage cache invalidation in your Next.js application.
 
-](/docs/app/api-reference/functions/cacheTag)
+](../../functions/cacheTag/index.md)
 
 Was this helpful?

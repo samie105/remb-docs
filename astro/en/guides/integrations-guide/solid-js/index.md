@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:45.075Z"
 content_hash: "03f45dd5db5f031935f375c18823fd20cc5c6248b49d136064836864d6e316b1"
 menu_path: ["@astrojs/\n\t\t\t\t\tsolid-js"]
 section_path: []
-nav_prev: {"path": "../react/index.md", "title": "@astrojs/\n\t\t\t\t\treact"}
-nav_next: {"path": "../svelte/index.md", "title": "@astrojs/\n\t\t\t\t\tsvelte"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/react/index.md", "title": "@astrojs/\n\t\t\t\t\treact"}
+nav_next: {"path": "astro/en/guides/integrations-guide/svelte/index.md", "title": "@astrojs/\n\t\t\t\t\tsvelte"}
 ---
 
 # @astrojs/ solid-js
 
 v6.0.1 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/solid/) [npm](https://www.npmjs.com/package/@astrojs/solid-js) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/solid/CHANGELOG.md)
 
-This **[Astro integration](/en/guides/integrations/)** enables rendering and client-side hydration for your [SolidJS](https://www.solidjs.com/) components.
+This **[Astro integration](../../integrations/index.md)** enables rendering and client-side hydration for your [SolidJS](https://www.solidjs.com/) components.
 
 ## Installation
 
@@ -78,7 +78,7 @@ And add the following code to the `tsconfig.json` file.
 
 [Section titled “Getting started”](#getting-started)
 
-To use your first SolidJS component in Astro, head to our [UI framework documentation](/en/guides/framework-components/#using-framework-components). You’ll explore:
+To use your first SolidJS component in Astro, head to our [UI framework documentation](../../framework-components/index.md#using-framework-components). You’ll explore:
 
 *   📦 how framework components are loaded,
 *   💧 client-side hydration options, and
@@ -134,7 +134,7 @@ export default defineConfig({  // Enable many frameworks to support all differen
 
 [Section titled “Usage”](#usage)
 
-Use a SolidJS component as you would any [UI framework component](/en/guides/framework-components/).
+Use a SolidJS component as you would any [UI framework component](../../framework-components/index.md).
 
 ### Suspense Boundaries
 
@@ -151,7 +151,7 @@ function CharacterName() {  const [name] = createResource(() =>    fetch('https:
 
 Similarly, Solid’s [Lazy Components](https://www.solidjs.com/docs/latest/api#lazy) will also be resolved and their HTML will be included in the initial server-rendered page.
 
-Non-hydrating [`client:only` components](/en/reference/directives-reference/#clientonly) are not automatically wrapped in Suspense boundaries.
+Non-hydrating [`client:only` components](../../../reference/directives-reference/index.md#clientonly) are not automatically wrapped in Suspense boundaries.
 
 Feel free to add additional Suspense boundaries according to your preference.
 
@@ -161,34 +161,34 @@ Feel free to add additional Suspense boundaries according to your preference.
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -196,34 +196,34 @@ Feel free to add additional Suspense boundaries according to your preference.
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

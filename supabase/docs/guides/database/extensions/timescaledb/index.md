@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:19.306Z"
 content_hash: "565beaeac9828d8bf4ea6e355a573fada25e49a618b2266cc4389373030b833b"
 menu_path: ["Database","Database","Extensions","Extensions","timescaledb (deprecated)","timescaledb (deprecated)"]
 section_path: ["Database","Database","Extensions","Extensions","timescaledb (deprecated)","timescaledb (deprecated)"]
-nav_prev: {"path": "../rum/index.md", "title": "RUM: improved inverted index for full-text search based on GIN index"}
-nav_next: {"path": "../uuid-ossp/index.md", "title": "uuid-ossp: Unique Identifiers"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/rum/index.md", "title": "RUM: improved inverted index for full-text search based on GIN index"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/uuid-ossp/index.md", "title": "uuid-ossp: Unique Identifiers"}
 ---
 
 # 
@@ -19,9 +19,9 @@ timescaledb: Time-Series data
 
 * * *
 
-The `timescaledb` extension is deprecated in projects using Postgres 17. It continues to be supported in projects using Postgres 15, but will need to dropped before those projects are upgraded to Postgres 17. See the [Upgrading to Postgres 17 notes](/docs/guides/platform/upgrading#upgrading-to-postgres-17) for more information.
+The `timescaledb` extension is deprecated in projects using Postgres 17. It continues to be supported in projects using Postgres 15, but will need to dropped before those projects are upgraded to Postgres 17. See the [Upgrading to Postgres 17 notes](../../../platform/upgrading/index.md#upgrading-to-postgres-17) for more information.
 
-If you are using hypertables, follow the [migration guide](/docs/guides/database/migrating-to-pg-partman) to convert to native partitioning managed by `pg_partman`.
+If you are using hypertables, follow the [migration guide](../../migrating-to-pg-partman/index.md) to convert to native partitioning managed by `pg_partman`.
 
 For additional support, contact our Success team by creating a support ticket in the Supabase Dashboard.
 

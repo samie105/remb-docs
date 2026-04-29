@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:03:58.083Z"
 content_hash: "07e4db9cc92bf7b5782165557986642935d4a5929c42bf77bad7cc0495a87e23"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Java (Lettuce)","→","Redis leaderboard with Java (Lettuce)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Java (Lettuce)","→","Redis leaderboard with Java (Lettuce)"]
-nav_prev: {"path": "../java-jedis/index.md", "title": "Redis leaderboard with Java and Jedis"}
-nav_next: {"path": "../nodejs/index.md", "title": "Redis leaderboard with node-redis"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/java-jedis/index.md", "title": "Redis leaderboard with Java and Jedis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/nodejs/index.md", "title": "Redis leaderboard with node-redis"}
 ---
 
 # Redis leaderboard with Java (Lettuce)
 
 Implement async and reactive Redis leaderboards in Java with Lettuce and sorted sets
 
-This guide shows you how to implement Redis-backed leaderboards in Java with the [`Lettuce`](/docs/latest/develop/clients/lettuce/) client library. It focuses on asynchronous and reactive APIs, which are the recommended Lettuce usage patterns in these docs.
+This guide shows you how to implement Redis-backed leaderboards in Java with the [`Lettuce`](../../../clients/lettuce/index.md) client library. It focuses on asynchronous and reactive APIs, which are the recommended Lettuce usage patterns in these docs.
 
 ## Overview
 
@@ -68,7 +68,7 @@ Add the Lettuce dependency to your project:
 
 ### Lettuce vs Jedis
 
-In these docs, [`Jedis`](/docs/latest/develop/clients/jedis/) is the recommended client when you want straightforward synchronous Java examples. The Lettuce examples here focus on async and reactive APIs, where Lettuce is especially strong.
+In these docs, [`Jedis`](../../../clients/jedis/index.md) is the recommended client when you want straightforward synchronous Java examples. The Lettuce examples here focus on async and reactive APIs, where Lettuce is especially strong.
 
 ## The Java leaderboard
 

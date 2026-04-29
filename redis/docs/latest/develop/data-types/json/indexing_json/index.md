@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:38.563Z"
 content_hash: "e26c1d80a299a2ac0c2d7ace99a4a552cf2868ad91ab303fffba377c86a43379"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Index/Search JSON documents","→","Index/Search JSON documents"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        JSON","→","JSON","→\n      \n        Index/Search JSON documents","→","Index/Search JSON documents"]
-nav_prev: {"path": "../developer/index.md", "title": "Developer notes"}
-nav_next: {"path": "../path/index.md", "title": "Path"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/json/developer/index.md", "title": "Developer notes"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/json/path/index.md", "title": "Path"}
 ---
 
 # Index/Search JSON documents
@@ -21,4 +21,4 @@ In addition to storing JSON documents, you can also index them using the [Redis 
 
 To use these features, install [Redis Open Source](/docs/latest/operate/oss_and_stack/).
 
-See the [tutorial](/docs/latest/develop/ai/search-and-query/indexing/) to learn how to search and query your JSON.
+See the [tutorial](../../../ai/search-and-query/indexing/index.md) to learn how to search and query your JSON.

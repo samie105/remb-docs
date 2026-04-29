@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:13.281Z"
 content_hash: "a6e050cadf17b2b9af37b7c21ee692b644f61560f6149cc63ac34a72f9823292"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Install and upgrade","→","Install and upgrade","→\n      \n        Requirements summary","→","Requirements summary"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Install and upgrade","→","Install and upgrade","→\n      \n        Requirements summary","→","Requirements summary"]
-nav_prev: {"path": "../../data-pipelines/transform-examples/index.md", "title": "Job files"}
-nav_next: {"path": "../../reference/data-transformation/add_field/index.md", "title": "add_field"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/index.md", "title": "Job files"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/reference/data-transformation/add_field/index.md", "title": "add_field"}
 ---
 
 # Requirements summary

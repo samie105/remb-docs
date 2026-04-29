@@ -11,8 +11,8 @@ menu_path: ["How to set up instrumentation"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../incremental-static-regeneration/index.md", "title": "How to implement Incremental Static Regeneration (ISR)"}
-nav_next: {"path": "../internationalization/index.md", "title": "Internationalization"}
+nav_prev: {"path": "nextjs/docs/app/guides/incremental-static-regeneration/index.md", "title": "How to implement Incremental Static Regeneration (ISR)"}
+nav_next: {"path": "nextjs/docs/app/guides/internationalization/index.md", "title": "Internationalization"}
 ---
 
 # How to set up instrumentation
@@ -23,7 +23,7 @@ Instrumentation is the process of using code to integrate monitoring and logging
 
 ## Convention[](#convention)
 
-To set up instrumentation, create `instrumentation.ts|js` file in the **root directory** of your project (or inside the [`src`](/docs/app/api-reference/file-conventions/src-folder) folder if using one).
+To set up instrumentation, create `instrumentation.ts|js` file in the **root directory** of your project (or inside the [`src`](../../api-reference/file-conventions/src-folder/index.md) folder if using one).
 
 Then, export a `register` function in the file. This function will be called **once** when a new Next.js server instance is initiated, and must complete before the server is ready to handle requests.
 
@@ -46,7 +46,7 @@ See the [Next.js with OpenTelemetry example](https://github.com/vercel/next.js/t
 > **Good to know**:
 > 
 > -   The `instrumentation` file should be in the root of your project and not inside the `app` or `pages` directory. If you're using the `src` folder, then place the file inside `src` alongside `pages` and `app`.
-> -   If you use the [`pageExtensions` config option](/docs/app/api-reference/config/next-config-js/pageExtensions) to add a suffix, you will also need to update the `instrumentation` filename to match.
+> -   If you use the [`pageExtensions` config option](../../api-reference/config/next-config-js/pageExtensions/index.md) to add a suffix, you will also need to update the `instrumentation` filename to match.
 
 ## Examples[](#examples)
 
@@ -72,7 +72,7 @@ export async function register() {
 
 ### Importing runtime-specific code[](#importing-runtime-specific-code)
 
-Next.js calls `register` in all environments, so it's important to conditionally import any code that doesn't support specific runtimes (e.g. [Edge or Node.js](/docs/app/api-reference/edge)). You can use the `NEXT_RUNTIME` environment variable to get the current environment:
+Next.js calls `register` in all environments, so it's important to conditionally import any code that doesn't support specific runtimes (e.g. [Edge or Node.js](../../api-reference/edge/index.md)). You can use the `NEXT_RUNTIME` environment variable to get the current environment:
 
 instrumentation.ts
 
@@ -98,6 +98,6 @@ export async function register() {
 
 API reference for the instrumentation.js file.
 
-](/docs/app/api-reference/file-conventions/instrumentation)
+](../../api-reference/file-conventions/instrumentation/index.md)
 
 Was this helpful?

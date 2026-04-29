@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:12.156Z"
 content_hash: "bc0e1bd916991d9310a55eaa7a6a8b55e297b5907f76dcdd243daf488a03805d"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE ROLE"]
 section_path: []
-nav_prev: {"path": "../sql-createpublication.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PUBLICATION"}
-nav_next: {"path": "../sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
+nav_prev: {"path": "postgres/docs/current/sql-createpublication.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PUBLICATION"}
+nav_next: {"path": "postgres/docs/current/sql-createrule.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE RULE"}
 ---
 
 CREATE ROLE — define a new database role

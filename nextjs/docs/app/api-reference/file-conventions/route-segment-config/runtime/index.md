@@ -11,8 +11,8 @@ menu_path: ["runtime"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../preferredRegion/index.md", "title": "preferredRegion"}
-nav_next: {"path": "../../route-groups/index.md", "title": "Route Groups"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/preferredRegion/index.md", "title": "preferredRegion"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-groups/index.md", "title": "Route Groups"}
 ---
 
 # runtime
@@ -36,6 +36,6 @@ export const runtime = 'nodejs'
 > **Good to know**:
 > 
 > -   Using `runtime: 'edge'` is **not supported** for Cache Components.
-> -   This option cannot be used in [Proxy](/docs/app/api-reference/file-conventions/proxy).
+> -   This option cannot be used in [Proxy](../../proxy/index.md).
 
 Was this helpful?

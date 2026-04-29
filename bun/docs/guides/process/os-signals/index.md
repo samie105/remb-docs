@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:55.079Z"
 content_hash: "8d81996bbc0be912ae4d94e56ab4930bd3761b1d577205280f30c7c5ae7cd331"
 menu_path: ["Listen to OS signals"]
 section_path: []
-nav_prev: {"path": "../nanoseconds/index.md", "title": "Get the process uptime in nanoseconds"}
-nav_next: {"path": "../spawn/index.md", "title": "Spawn a child process"}
+nav_prev: {"path": "bun/docs/guides/process/nanoseconds/index.md", "title": "Get the process uptime in nanoseconds"}
+nav_next: {"path": "bun/docs/guides/process/spawn/index.md", "title": "Spawn a child process"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../spawn/index.md", "title": "Spawn a child process"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun supports the Node.js `process` global, including the `process.on()` method for listening to OS signals.
 
@@ -59,7 +59,7 @@ process.on("exit", code => {
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -71,10 +71,10 @@ Listen for CTRL+C
 
 Previous
 
-](/docs/guides/process/ctrl-c)[
+](../ctrl-c/index.md)[
 
 Get the process uptime in nanoseconds
 
 Next
 
-](/docs/guides/process/nanoseconds)
+](../nanoseconds/index.md)

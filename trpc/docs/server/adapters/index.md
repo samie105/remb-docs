@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:59.803Z"
 content_hash: "6d926a3122c9384ea0ade18ee892b8ae631832d1f55e31b9308467c858fed852"
 menu_path: ["Overview"]
 section_path: []
-nav_prev: {"path": "../../rpc/index.md", "title": "HTTP RPC Specification"}
-nav_next: {"path": "aws-lambda/index.md", "title": "AWS Lambda + API Gateway Adapter"}
+nav_prev: {"path": "trpc/docs/rpc/index.md", "title": "HTTP RPC Specification"}
+nav_next: {"path": "trpc/docs/server/adapters/aws-lambda/index.md", "title": "AWS Lambda + API Gateway Adapter"}
 ---
 
 tRPC is not a server on its own, and must therefore be served using other hosts, such as a simple [Node.js HTTP Server](standalone/index.md), [Express](express/index.md), or even [Next.js](nextjs/index.md). Most tRPC features are the same no matter which backend you choose. **Adapters** act as the glue between the host system and your tRPC API.

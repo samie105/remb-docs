@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:36.568Z"
 content_hash: "2c7e288a7b2733a3bc615afd4e85aa9eeab7eb64b87d517852e7d3b050b85708"
 menu_path: ["Inspect memory usage using V8 heap snapshots"]
 section_path: []
-nav_prev: {"path": "../delete-file/index.md", "title": "Delete files"}
-nav_next: {"path": "../import-html/index.md", "title": "Import a HTML file as text"}
+nav_prev: {"path": "bun/docs/guides/runtime/delete-file/index.md", "title": "Delete files"}
+nav_next: {"path": "bun/docs/guides/runtime/import-html/index.md", "title": "Import a HTML file as text"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../import-html/index.md", "title": "Import a HTML file as te
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun implements V8’s heap snapshot API, which allows you to create snapshots of the heap at runtime. This helps debug memory leaks in your JavaScript/TypeScript application.
 
@@ -76,10 +76,10 @@ Debugging Bun with the web debugger
 
 Previous
 
-](/docs/guides/runtime/web-debugger)[
+](../web-debugger/index.md)[
 
 Build-time constants with --define
 
 Next
 
-](/docs/guides/runtime/build-time-constants)
+](../build-time-constants/index.md)

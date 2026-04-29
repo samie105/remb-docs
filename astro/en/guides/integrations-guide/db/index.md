@@ -9,19 +9,19 @@ last_crawled_at: "2026-04-18T16:38:47.219Z"
 content_hash: "a02154b1a1538b1c0c0a16967db9d969598ec22f88da78ac73ae60e6ddb78f67"
 menu_path: ["@astrojs/\n\t\t\t\t\tdb"]
 section_path: []
-nav_prev: {"path": "../vercel/index.md", "title": "@astrojs/\n\t\t\t\t\tvercel"}
-nav_next: {"path": "../markdoc/index.md", "title": "@astrojs/\n\t\t\t\t\tmarkdoc"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/vercel/index.md", "title": "@astrojs/\n\t\t\t\t\tvercel"}
+nav_next: {"path": "astro/en/guides/integrations-guide/markdoc/index.md", "title": "@astrojs/\n\t\t\t\t\tmarkdoc"}
 ---
 
 # @astrojs/ db
 
 v0.20.1 [GitHub](https://github.com/withastro/astro/tree/main/packages/db/) [npm](https://www.npmjs.com/package/@astrojs/db) [Changelog](https://github.com/withastro/astro/tree/main/packages/db/CHANGELOG.md)
 
-Astro DB is a fully-managed SQL database designed for the Astro ecosystem: develop locally in Astro and deploy to any [libSQL-compatible database](/en/guides/astro-db/).
+Astro DB is a fully-managed SQL database designed for the Astro ecosystem: develop locally in Astro and deploy to any [libSQL-compatible database](../../astro-db/index.md).
 
 With Astro DB you have a powerful, local, type-safe tool to query and model content as a relational database.
 
-See the [Astro DB guide](/en/guides/astro-db/) for full usage and examples.
+See the [Astro DB guide](../../astro-db/index.md) for full usage and examples.
 
 ## Installation
 
@@ -92,7 +92,7 @@ export default defineDb({  tables: {},})
 
 Configures the driver to use to connect to your database in production.
 
-By default, Astro DB uses a Node.js-based libSQL driver for production deployments. The `node` driver mode is sufficient for most Astro hosted or self-hosted websites with Node.js runtimes. This allows you to connect to your database over several protocols, including `memory:`, `file:`, `ws:`, `wss:`, `libsql`, `http`, and `https`, as well as allowing for more advanced features such as [embedded replicas](/en/guides/astro-db/#syncurl).
+By default, Astro DB uses a Node.js-based libSQL driver for production deployments. The `node` driver mode is sufficient for most Astro hosted or self-hosted websites with Node.js runtimes. This allows you to connect to your database over several protocols, including `memory:`, `file:`, `ws:`, `wss:`, `libsql`, `http`, and `https`, as well as allowing for more advanced features such as [embedded replicas](../../astro-db/index.md#syncurl).
 
 When deploying to a serverless environment on a non-Node.js runtime, such as Cloudflare Workers or Deno, a web-based libSQL driver is available. When deploying using the `web` mode, you will be able to make web-based connections over `libsql`, `http`, or `https`.
 
@@ -228,7 +228,7 @@ Compares your local schema against the remote database to check for any differen
 *   `--db-app-token <token>` Provide the remote database app token directly instead of `ASTRO_DB_APP_TOKEN`.
 *   `--remote` Run against your libSQL-compatible database. Omit to run against your local database file. Requires the `ASTRO_DB_REMOTE_URL` environment variable to be set, and either `ASTRO_DB_APP_TOKEN` to be set in the environment or a value passed with the `--db-app-token` command-line argument.
 
-Execute a `.ts` or `.js` file to read or write to your database. This accepts a file path as an argument, and supports usage of the `astro:db` module to write type-safe queries. Use the `--remote` flag to run against your libSQL-compatible database, or omit the flag to run against your local database file. See how to [seed development data](/en/guides/astro-db/#seed-your-database-for-development) for an example file.
+Execute a `.ts` or `.js` file to read or write to your database. This accepts a file path as an argument, and supports usage of the `astro:db` module to write type-safe queries. Use the `--remote` flag to run against your libSQL-compatible database, or omit the flag to run against your local database file. See how to [seed development data](../../astro-db/index.md#seed-your-database-for-development) for an example file.
 
 ### `astro db shell --query <sql-string>`
 
@@ -273,34 +273,34 @@ export const POST: APIRoute = (ctx) => {  try {    await db.insert(Comment).valu
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -308,34 +308,34 @@ export const POST: APIRoute = (ctx) => {  try {    await db.insert(Comment).valu
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

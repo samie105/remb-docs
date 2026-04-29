@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:39.951Z"
 content_hash: "426b52a7ca4b9dd9f4c400ceda2f324543c9568c16d6b859c9a4c5aca3622308"
 menu_path: ["Import a HTML file as text"]
 section_path: []
-nav_prev: {"path": "../heap-snapshot/index.md", "title": "Inspect memory usage using V8 heap snapshots"}
-nav_next: {"path": "../import-json/index.md", "title": "Import a JSON file"}
+nav_prev: {"path": "bun/docs/guides/runtime/heap-snapshot/index.md", "title": "Inspect memory usage using V8 heap snapshots"}
+nav_next: {"path": "bun/docs/guides/runtime/import-json/index.md", "title": "Import a JSON file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../import-json/index.md", "title": "Import a JSON file"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To import a `.html` file in Bun as a text file, use the `type: "text"` attribute in the import statement.
 
@@ -57,10 +57,10 @@ Import a JSON5 file
 
 Previous
 
-](/docs/guides/runtime/import-json5)[
+](../import-json5/index.md)[
 
 Get the directory of the current file
 
 Next
 
-](/docs/guides/util/import-meta-dir)
+](../../util/import-meta-dir/index.md)

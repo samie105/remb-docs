@@ -10,8 +10,8 @@ content_hash: "482aabb2ff5baee53fbdd941af9b18dca3a49f905d6dc6b634dfae76b3016ad7"
 menu_path: ["deno bench"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../audit/index.md", "title": "deno audit"}
-nav_next: {"path": "../bundle/index.md", "title": "deno bundle"}
+nav_prev: {"path": "deno/runtime/reference/cli/audit/index.md", "title": "deno audit"}
+nav_next: {"path": "deno/runtime/reference/cli/bundle/index.md", "title": "deno bundle"}
 ---
 
 # Run all benches in the current directory and all sub-directories

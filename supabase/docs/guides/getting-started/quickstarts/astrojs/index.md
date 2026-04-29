@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:02.535Z"
 content_hash: "a13eafb8f0bf323cd799a0a32980abf1df62dab5656b6313d5ea85f4a473701e"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Astro","Astro"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Astro","Astro"]
-nav_prev: {"path": "../../mcp/index.md", "title": "Model context protocol (MCP)"}
-nav_next: {"path": "../expo-react-native/index.md", "title": "Use Supabase with Expo React Native"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/mcp/index.md", "title": "Model context protocol (MCP)"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/expo-react-native/index.md", "title": "Use Supabase with Expo React Native"}
 ---
 
 # 
@@ -118,7 +118,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=astro).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -170,6 +170,6 @@ Run the development server, go to [http://localhost:4321/instruments](http://loc
 
 ## Next steps[#](#next-steps)
 
-*   Set up [Auth](/docs/guides/auth) for your app
-*   [Insert more data](/docs/guides/database/import-data) into your database
-*   Upload and serve static files using [Storage](/docs/guides/storage)
+*   Set up [Auth](../../../auth/index.md) for your app
+*   [Insert more data](../../../database/import-data/index.md) into your database
+*   Upload and serve static files using [Storage](../../../storage/index.md)

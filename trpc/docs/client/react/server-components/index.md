@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:46.190Z"
 content_hash: "9f171a1dbfd2c88bce92e48e6e36caeecbbf2ad14245e00b1579f46bcc2082d2"
 menu_path: ["Set up with React Server Components"]
 section_path: []
-nav_prev: {"path": "../infer-types/index.md", "title": "Inferring Types"}
-nav_next: {"path": "../setup/index.md", "title": "Set up the React Query Integration"}
+nav_prev: {"path": "trpc/docs/client/react/infer-types/index.md", "title": "Inferring Types"}
+nav_next: {"path": "trpc/docs/client/react/setup/index.md", "title": "Set up the React Query Integration"}
 ---
 
 tip

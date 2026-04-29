@@ -11,8 +11,8 @@ menu_path: ["Deploy to AWS Lambda"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../../edge/overview/index.md", "title": "Deploying edge functions with Prisma ORM"}
-nav_next: {"path": "../deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/edge/overview/index.md", "title": "Deploying edge functions with Prisma ORM"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
 ---
 
 Learn how to deploy your Prisma ORM-backed applications to AWS Lambda with AWS SAM, Serverless Framework, or SST

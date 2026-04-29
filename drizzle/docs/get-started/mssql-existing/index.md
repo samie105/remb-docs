@@ -10,8 +10,8 @@ content_hash: "c8671b01bdccebfb033c8835288a99a63728bd250833012886588efad21edfe4"
 menu_path: ["Get Started with Drizzle and MSSQL in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../gel-new/index.md", "title": "Get Started with Drizzle and Gel"}
-nav_next: {"path": "../mssql-new/index.md", "title": "Get Started with Drizzle and MSSQL"}
+nav_prev: {"path": "drizzle/docs/get-started/gel-new/index.md", "title": "Get Started with Drizzle and Gel"}
+nav_next: {"path": "drizzle/docs/get-started/mssql-new/index.md", "title": "Get Started with Drizzle and MSSQL"}
 ---
 
 ## Get Started with Drizzle and MSSQL in existing project

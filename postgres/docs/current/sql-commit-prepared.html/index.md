@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:18.158Z"
 content_hash: "752607b861cade7bd5c8ede38744af9a147476c24e6d18e1776a99092580ca50"
 menu_path: ["PostgreSQL: Documentation: 18: COMMIT PREPARED"]
 section_path: []
-nav_prev: {"path": "../sql-comment.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMENT"}
-nav_next: {"path": "../sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
+nav_prev: {"path": "postgres/docs/current/sql-comment.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMENT"}
+nav_next: {"path": "postgres/docs/current/sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
 ---
 
 COMMIT PREPARED — commit a transaction that was earlier prepared for two-phase commit

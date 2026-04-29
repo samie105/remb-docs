@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:15.934Z"
 content_hash: "c748bae18f4895ab22d7a43a63f7d75c41fc9473ee4d5ff87d65374755a42e62"
 menu_path: ["Invalid value returned by a getStaticPaths path."]
 section_path: []
-nav_prev: {"path": "../invalid-frontmatter-injection-error/index.md", "title": "Invalid frontmatter injection."}
-nav_next: {"path": "../invalid-get-static-paths-entry/index.md", "title": "Invalid entry inside getStaticPath's return value"}
+nav_prev: {"path": "astro/en/reference/errors/invalid-frontmatter-injection-error/index.md", "title": "Invalid frontmatter injection."}
+nav_next: {"path": "astro/en/reference/errors/invalid-get-static-paths-entry/index.md", "title": "Invalid entry inside getStaticPath's return value"}
 ---
 
 # Invalid value returned by a getStaticPaths path.
@@ -29,7 +29,7 @@ The `params` property in `getStaticPaths`’s return value (an array of objects)
 
 **See Also:**
 
-*   [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths)
-*   [`params`](/en/reference/api-reference/#params)
+*   [`getStaticPaths()`](../../routing-reference/index.md#getstaticpaths)
+*   [`params`](../../api-reference/index.md#params)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:40.804Z"
 content_hash: "d974b18fc666cf52647cd826d75ccec0acc0f77ee6f2f6de9df9ae94f2f63a7e"
 menu_path: ["Database","Database","Access and security","Access and security","Managing Postgres Roles","Managing Postgres Roles"]
 section_path: ["Database","Database","Access and security","Access and security","Managing Postgres Roles","Managing Postgres Roles"]
-nav_prev: {"path": "../indexes/index.md", "title": "Managing Indexes in Postgres"}
-nav_next: {"path": "../roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/indexes/index.md", "title": "Managing Indexes in Postgres"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Managing access to your Postgres database and configuring permissions.
 
 * * *
 
-Postgres manages database access permissions using the concept of roles. Generally you wouldn't use these roles for your own application - they are mostly for configuring _system access_ to your database. If you want to configure _application access_, then you should use [Row Level Security](/docs/guides/database/postgres/row-level-security) (RLS). You can also implement [Role-based Access Control](/docs/guides/api/custom-claims-and-role-based-access-control-rbac) on top of RLS.
+Postgres manages database access permissions using the concept of roles. Generally you wouldn't use these roles for your own application - they are mostly for configuring _system access_ to your database. If you want to configure _application access_, then you should use [Row Level Security](../row-level-security/index.md) (RLS). You can also implement [Role-based Access Control](../../../api/custom-claims-and-role-based-access-control-rbac/index.md) on top of RLS.
 
 ## Users vs roles[#](#users-vs-roles)
 
@@ -130,7 +130,7 @@ Used by the Auth middleware to connect to the database and run migration. Access
 
 ### `supabase_etl_admin`[#](#supabaseetladmin)
 
-Used by [Replication powered by Supabase ETL](/docs/guides/database/replication) to replicate database changes to external destinations. Has read-all access and replication privileges for change data capture, bypasses Row Level Security, and can write to the `etl` schema.
+Used by [Replication powered by Supabase ETL](../../replication/index.md) to replicate database changes to external destinations. Has read-all access and replication privileges for change data capture, bypasses Row Level Security, and can write to the `etl` schema.
 
 ### `dashboard_user`[#](#dashboarduser)
 

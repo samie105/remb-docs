@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:59:12.494Z"
 content_hash: "1a3ac88767846534afc60bb74d1f0df4338682ec4d27cc78c80dddec7a639ecd"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Java","→","Token bucket rate limiter with Redis and Java"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Java","→","Token bucket rate limiter with Redis and Java"]
-nav_prev: {"path": "../go/index.md", "title": "Token bucket rate limiter with Redis and Go"}
-nav_next: {"path": "../java-lettuce/index.md", "title": "Token bucket rate limiter with Redis and Java (Lettuce)"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/go/index.md", "title": "Token bucket rate limiter with Redis and Go"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-lettuce/index.md", "title": "Token bucket rate limiter with Redis and Java (Lettuce)"}
 ---
 
 # Token bucket rate limiter with Redis and Java
 
 Implement a token bucket rate limiter using Redis and Lua scripts in Java
 
-This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in Java with the [`Jedis`](/docs/latest/develop/clients/jedis/) client library.
+This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in Java with the [`Jedis`](../../../clients/jedis/index.md) client library.
 
 ## Overview
 
@@ -28,7 +28,7 @@ Rate limiting is a critical technique for controlling the rate at which operatio
 *   Ensuring fair resource allocation across multiple clients
 *   Throttling background jobs or batch operations
 
-The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Java implementation using the [`Jedis`](/docs/latest/develop/clients/jedis/) client library, taking advantage of Java's `try-with-resources` for connection management, `JedisPool` for connection pooling, and checked exceptions for error handling.
+The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Java implementation using the [`Jedis`](../../../clients/jedis/index.md) client library, taking advantage of Java's `try-with-resources` for connection management, `JedisPool` for connection pooling, and checked exceptions for error handling.
 
 ## How it works
 
@@ -324,9 +324,9 @@ try {
 
 *   [EVAL command](/docs/latest/commands/eval/) - Execute Lua scripts
 *   [EVALSHA command](/docs/latest/commands/evalsha/) - Execute cached Lua scripts
-*   [Lua scripting](/docs/latest/develop/programmability/eval-intro/) - Introduction to Redis Lua scripting
+*   [Lua scripting](../../../programmability/eval-intro/index.md) - Introduction to Redis Lua scripting
 *   [HMGET command](/docs/latest/commands/hmget/) - Get multiple hash fields
 *   [HMSET command](/docs/latest/commands/hmset/) - Set multiple hash fields
-*   [Jedis client](/docs/latest/develop/clients/jedis/) - Redis Java client documentation
+*   [Jedis client](../../../clients/jedis/index.md) - Redis Java client documentation
 
 ## On this page

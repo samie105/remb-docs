@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:48.430Z"
 content_hash: "5fc96442b3b869d015c2d8e3da4ef0a9edce1b4725b0b13afc7d7aafd400957f"
 menu_path: ["Middleware"]
 section_path: []
-nav_prev: {"path": "../Logging/index.md", "title": "Logging"}
-nav_next: {"path": "../Plugins/index.md", "title": "Plugins"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Logging/index.md", "title": "Logging"}
+nav_next: {"path": "fastify/docs/latest/Reference/Plugins/index.md", "title": "Plugins"}
 ---
 
 Version: latest (v5.8.x)
@@ -31,9 +31,9 @@ await fastify.register(require('@fastify/express'))fastify.use(require('cors')()
 await fastify.register(require('@fastify/middie'))fastify.use(require('cors')())
 ```
 
-Middleware can be encapsulated, allowing control over where it runs using `register` as explained in the [plugins guide](/docs/latest/Guides/Plugins-Guide/).
+Middleware can be encapsulated, allowing control over where it runs using `register` as explained in the [plugins guide](../../Guides/Plugins-Guide/index.md).
 
-Fastify middleware does not expose the `send` method or other methods specific to the Fastify [Reply](/docs/latest/Reference/Reply/#reply) instance. This is because Fastify wraps the incoming `req` and `res` Node instances using the [Request](/docs/latest/Reference/Request/#request) and [Reply](/docs/latest/Reference/Reply/#reply) objects internally, but this is done after the middleware phase. To create middleware, use the Node `req` and `res` instances. Alternatively, use the `preHandler` hook that already has the Fastify [Request](/docs/latest/Reference/Request/#request) and [Reply](/docs/latest/Reference/Reply/#reply) instances. For more information, see [Hooks](/docs/latest/Reference/Hooks/#hooks).
+Fastify middleware does not expose the `send` method or other methods specific to the Fastify [Reply](../Reply/index.md#reply) instance. This is because Fastify wraps the incoming `req` and `res` Node instances using the [Request](../Request/index.md#request) and [Reply](../Reply/index.md#reply) objects internally, but this is done after the middleware phase. To create middleware, use the Node `req` and `res` instances. Alternatively, use the `preHandler` hook that already has the Fastify [Request](../Request/index.md#request) and [Reply](../Reply/index.md#reply) instances. For more information, see [Hooks](../Hooks/index.md#hooks).
 
 #### Restrict middleware execution to certain paths[​](#restrict-middleware-execution-to-certain-paths "Direct link to Restrict middleware execution to certain paths")
 

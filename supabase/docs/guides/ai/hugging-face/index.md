@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:48.366Z"
 content_hash: "44ca7c40d5d906c555b4d32d1b0bef980ed926c0996692a21d3492d1d70155cf"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Hugging Face","Hugging Face"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Hugging Face","Hugging Face"]
-nav_prev: {"path": "../google-colab/index.md", "title": "Google Colab"}
-nav_next: {"path": "../hybrid-search/index.md", "title": "Hybrid search"}
+nav_prev: {"path": "supabase/docs/guides/ai/google-colab/index.md", "title": "Google Colab"}
+nav_next: {"path": "supabase/docs/guides/ai/hybrid-search/index.md", "title": "Hybrid search"}
 ---
 
 # 
@@ -24,7 +24,7 @@ Hugging Face Inference API
 There are 3 ways to use Hugging Face models in your application:
 
 1.  Use the [Transformers](https://huggingface.co/docs/transformers/index) Python library to perform inference in a Python backend.
-2.  [Generate embeddings](/docs/guides/ai/quickstarts/generate-text-embeddings) directly in Edge Functions using Transformers.js.
+2.  [Generate embeddings](../quickstarts/generate-text-embeddings/index.md) directly in Edge Functions using Transformers.js.
 3.  Use Hugging Face's hosted [Inference API](https://huggingface.co/inference-api) to execute AI tasks remotely on Hugging Face servers. This guide will walk you through this approach.
 
 ## AI tasks[#](#ai-tasks)
@@ -77,7 +77,7 @@ To ensure you don't experience any unexpected downtime or errors, we recommend c
 
 Edge Functions are server-side TypeScript functions that run on-demand. Since Edge Functions run on a server, you can safely give them access to your Hugging Face access token.
 
-You will need the `supabase` CLI [installed](/docs/guides/cli) for the following commands to work.
+You will need the `supabase` CLI [installed](../../cli/index.md) for the following commands to work.
 
 To create a new Edge Function, navigate to your local project and initialize Supabase if you haven't already:
 
@@ -144,4 +144,4 @@ Try running some other [AI tasks](#ai-tasks).
 
 *   Official [Hugging Face site](https://huggingface.co/).
 *   Official [Hugging Face JS docs](https://huggingface.co/docs/huggingface.js).
-*   [Generate image captions](/docs/guides/ai/examples/huggingface-image-captioning) using Hugging Face.
+*   [Generate image captions](../examples/huggingface-image-captioning/index.md) using Hugging Face.

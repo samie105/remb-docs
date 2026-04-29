@@ -11,8 +11,8 @@ menu_path: ["No `styled-jsx` in `_document`"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-script-component-in-head/index.md", "title": "No Script Component in Head"}
-nav_next: {"path": "../no-sync-scripts/index.md", "title": "No Sync Scripts"}
+nav_prev: {"path": "nextjs/docs/messages/no-script-component-in-head/index.md", "title": "No Script Component in Head"}
+nav_next: {"path": "nextjs/docs/messages/no-sync-scripts/index.md", "title": "No Sync Scripts"}
 ---
 
 # No \`styled-jsx\` in \`\_document\`
@@ -21,11 +21,11 @@ nav_next: {"path": "../no-sync-scripts/index.md", "title": "No Sync Scripts"}
 
 ## Why This Error Occurred[](#why-this-error-occurred)
 
-Custom CSS like `styled-jsx` is not allowed in a [Custom Document](/docs/pages/building-your-application/routing/custom-document).
+Custom CSS like `styled-jsx` is not allowed in a [Custom Document](../../pages/building-your-application/routing/custom-document/index.md).
 
 ## Possible Ways to Fix It[](#possible-ways-to-fix-it)
 
-If you need shared CSS for all of your pages, take a look at the [Custom `App`](/docs/pages/building-your-application/routing/custom-app) file or define a custom layout.
+If you need shared CSS for all of your pages, take a look at the [Custom `App`](../../pages/building-your-application/routing/custom-app/index.md) file or define a custom layout.
 
 For example, consider the following stylesheet named `styles.css`:
 
@@ -59,9 +59,9 @@ These styles (`styles.css`) will apply to all pages and components in your appli
 
 ## Useful Links[](#useful-links)
 
--   [Custom Document Caveats](/docs/pages/building-your-application/routing/custom-document#caveats)
--   [Layouts](/docs/pages/building-your-application/routing/pages-and-layouts#layout-pattern)
--   [Built in CSS Support](/docs/app/getting-started/css)
--   [Custom `App`](/docs/pages/building-your-application/routing/custom-app)
+-   [Custom Document Caveats](../../pages/building-your-application/routing/custom-document/index.md#caveats)
+-   [Layouts](../../pages/building-your-application/routing/pages-and-layouts/index.md#layout-pattern)
+-   [Built in CSS Support](../../app/getting-started/css/index.md)
+-   [Custom `App`](../../pages/building-your-application/routing/custom-app/index.md)
 
 Was this helpful?

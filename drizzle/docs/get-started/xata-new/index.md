@@ -10,8 +10,8 @@ content_hash: "d7b8f04c5230f3c342cf3591a06e92c640a2e608c7a2503e0f58e91cffd58ad4"
 menu_path: ["Get Started with Drizzle and Xata"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../xata-existing/index.md", "title": "Get Started with Drizzle and Xata in existing project"}
-nav_next: {"path": "../../guides/conditional-filters-in-query/index.md", "title": "Drizzle ORM - Conditional filters in query"}
+nav_prev: {"path": "drizzle/docs/get-started/xata-existing/index.md", "title": "Get Started with Drizzle and Xata in existing project"}
+nav_next: {"path": "drizzle/docs/guides/conditional-filters-in-query/index.md", "title": "Drizzle ORM - Conditional filters in query"}
 ---
 
 ## Get Started with Drizzle and Xata

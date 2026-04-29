@@ -11,8 +11,8 @@ menu_path: ["Client-side Rendering (CSR)"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../automatic-static-optimization/index.md", "title": "Automatic Static Optimization"}
-nav_next: {"path": "../../data-fetching/index.md", "title": "Data Fetching"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/rendering/automatic-static-optimization/index.md", "title": "Automatic Static Optimization"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/index.md", "title": "Data Fetching"}
 ---
 
 # Client-side Rendering (CSR)
@@ -25,7 +25,7 @@ After the page has been loaded for the first time, navigating to other pages on 
 
 In Next.js, there are two ways you can implement client-side rendering:
 
-1.  Using React's `useEffect()` hook inside your pages instead of the server-side rendering methods ([`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) and [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props)).
+1.  Using React's `useEffect()` hook inside your pages instead of the server-side rendering methods ([`getStaticProps`](../../data-fetching/get-static-props/index.md) and [`getServerSideProps`](../../data-fetching/get-server-side-props/index.md)).
 2.  Using a data fetching library like [SWR](https://swr.vercel.app/) or [TanStack Query](https://tanstack.com/query/latest/) to fetch data on the client (recommended).
 
 Here's an example of using `useEffect()` inside a Next.js page:
@@ -82,7 +82,7 @@ export function Page() {
 
 > **Good to know**:
 > 
-> Keep in mind that CSR can impact SEO. Some search engine crawlers might not execute JavaScript and therefore only see the initial empty or loading state of your application. It can also lead to performance issues for users with slower internet connections or devices, as they need to wait for all the JavaScript to load and run before they can see the full page. Next.js promotes a hybrid approach that allows you to use a combination of [server-side rendering](/docs/pages/building-your-application/rendering/server-side-rendering), [static site generation](/docs/pages/building-your-application/rendering/static-site-generation), and client-side rendering, **depending on the needs of each page** in your application. In the App Router, you can also use [Loading UI with Suspense](/docs/app/api-reference/file-conventions/loading) to show a loading indicator while the page is being rendered.
+> Keep in mind that CSR can impact SEO. Some search engine crawlers might not execute JavaScript and therefore only see the initial empty or loading state of your application. It can also lead to performance issues for users with slower internet connections or devices, as they need to wait for all the JavaScript to load and run before they can see the full page. Next.js promotes a hybrid approach that allows you to use a combination of [server-side rendering](../server-side-rendering/index.md), [static site generation](../static-site-generation/index.md), and client-side rendering, **depending on the needs of each page** in your application. In the App Router, you can also use [Loading UI with Suspense](../../../../app/api-reference/file-conventions/loading/index.md) to show a loading indicator while the page is being rendered.
 
 Learn about the alternative rendering methods in Next.js.
 
@@ -92,13 +92,13 @@ Learn about the alternative rendering methods in Next.js.
 
 Use Server-side Rendering to render pages on each request.
 
-](/docs/pages/building-your-application/rendering/server-side-rendering)[
+](../server-side-rendering/index.md)[
 
 ### Static Site Generation (SSG)
 
 Use Static Site Generation (SSG) to prerender pages at build time.
 
-](/docs/pages/building-your-application/rendering/static-site-generation)[
+](../static-site-generation/index.md)[
 
 ### ISR
 

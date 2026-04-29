@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:34.446Z"
 content_hash: "89ff6e8f346b78c9d4d28135505cb8cde70c7e875f69dd76afb1c72f832dc4d4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Active-Active Redis","→","Active-Active Redis","→\n      \n        Create an Active-Active database","→","Create an Active-Active database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Active-Active Redis","→","Active-Active Redis","→\n      \n        Create an Active-Active database","→","Create an Active-Active database"]
-nav_prev: {"path": "../../../changelog/version-release-notes/8-4/index.md", "title": "Redis 8.4 release notes and breaking changes"}
-nav_next: {"path": "../../connect/insight-cloud/index.md", "title": "Use Redis Insight on Redis Cloud"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-4/index.md", "title": "Redis 8.4 release notes and breaking changes"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/connect/insight-cloud/index.md", "title": "Use Redis Insight on Redis Cloud"}
 ---
 
 # Create an Active-Active database
@@ -226,7 +226,7 @@ By default, you're shown basic settings, which include:
     
 *   **Data Persistence**: Defines the data persistence policy, if any. See [Database persistence](/docs/latest/operate/rs/databases/configure/database-persistence/).
     
-*   **Supported Protocol(s)**: Choose between RESP2 and RESP3 _(Redis 7.2 or later)_. See [Redis serialization protocol](/docs/latest/develop/reference/protocol-spec/#resp-versions) for details.
+*   **Supported Protocol(s)**: Choose between RESP2 and RESP3 _(Redis 7.2 or later)_. See [Redis serialization protocol](../../../../../develop/reference/protocol-spec/index.md#resp-versions) for details.
     
 *   **Quantity**: Number of databases to create with these settings.
     

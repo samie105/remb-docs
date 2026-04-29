@@ -10,8 +10,8 @@ content_hash: "a7c080dfd552e3bf5deab5e5c3b2c7bc63a012fe3511ee57ea784ee66c35e5ca"
 menu_path: ["Get Started with Drizzle and Bun:SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../bun-sqlite-existing/index.md", "title": "Get Started with Drizzle and Bun:SQLite in existing project"}
-nav_next: {"path": "../cockroach-existing/index.md", "title": "Get Started with Drizzle and CockroachDB in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/bun-sqlite-existing/index.md", "title": "Get Started with Drizzle and Bun:SQLite in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/cockroach-existing/index.md", "title": "Get Started with Drizzle and CockroachDB in existing project"}
 ---
 
 ## Get Started with Drizzle and Bun:SQLite

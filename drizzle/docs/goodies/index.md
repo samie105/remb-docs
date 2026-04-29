@@ -10,8 +10,8 @@ content_hash: "d4e4cbaa20465aa2aa29796a21e9f920368deccc7dcfa652af24139c39e25f28"
 menu_path: ["Drizzle ORM - Goodies"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../custom-types/index.md", "title": "Common way of defining custom types"}
-nav_next: {"path": "../zod/index.md", "title": "zod"}
+nav_prev: {"path": "drizzle/docs/custom-types/index.md", "title": "Common way of defining custom types"}
+nav_next: {"path": "drizzle/docs/zod/index.md", "title": "zod"}
 ---
 
 ## Type API[](#type-api)

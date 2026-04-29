@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:51.393Z"
 content_hash: "ae3a2c6e250fceabf7a6401266bbde906e061e5ac710f45c83f34e1891f5887c"
 menu_path: ["Validation-and-Serialization"]
 section_path: []
-nav_prev: {"path": "../TypeScript/index.md", "title": "TypeScript"}
-nav_next: {"path": "../Warnings/index.md", "title": "Warnings"}
+nav_prev: {"path": "fastify/docs/latest/Reference/TypeScript/index.md", "title": "TypeScript"}
+nav_next: {"path": "fastify/docs/latest/Reference/Warnings/index.md", "title": "Warnings"}
 ---
 
 Version: latest (v5.8.x)
@@ -25,7 +25,7 @@ All examples use the [JSON Schema Draft 7](https://json-schema.org/draft-07) spe
 
 > ⚠ Warning: Treat schema definitions as application code. Validation and serialization features use `new Function()`, which is unsafe with user-provided schemas. See [Ajv](https://www.npmjs.com/package/ajv) and [fast-json-stringify](https://www.npmjs.com/package/fast-json-stringify) for details.
 > 
-> Whilst Fastify supports the [`$async` Ajv feature](https://ajv.js.org/guide/async-validation.html), it should not be used for initial validation. Accessing databases during validation may lead to Denial of Service attacks. Use [Fastify's hooks](/docs/latest/Reference/Hooks/) like `preHandler` for `async` tasks after validation.
+> Whilst Fastify supports the [`$async` Ajv feature](https://ajv.js.org/guide/async-validation.html), it should not be used for initial validation. Accessing databases during validation may lead to Denial of Service attacks. Use [Fastify's hooks](../Hooks/index.md) like `preHandler` for `async` tasks after validation.
 > 
 > When using custom validators with async `preValidation` hooks, validators **must return** `{error}` objects instead of throwing errors. Throwing errors from custom validators will cause unhandled promise rejections that crash the application when combined with async hooks. See the [custom validator examples](#using-other-validation-libraries) below for the correct pattern.
 
@@ -89,7 +89,7 @@ Supported validations include:
 
 Validations can be a complete JSON Schema object with a `type` of `'object'` and a `'properties'` object containing parameters, or a simpler variation listing parameters at the top level.
 
-> ℹ For using the latest Ajv (v8), refer to the [`schemaController`](/docs/latest/Reference/Server/#schema-controller) section.
+> ℹ For using the latest Ajv (v8), refer to the [`schemaController`](../Server/index.md#schema-controller) section.
 
 Example:
 
@@ -105,7 +105,7 @@ For `body` schema, it is further possible to differentiate the schema per conten
 fastify.post('/the/url', {  schema: {    body: {      content: {        'application/json': {          schema: { type: 'object' }        },        'text/plain': {          schema: { type: 'string' }        }        // Other content types will not be validated      }    }  }}, handler)
 ```
 
-> ⚠ Warning: When using [custom content type parsers](/docs/latest/Reference/ContentTypeParser/), the parsed body is validated **only** when the request content type matches a key in the schema `content` map.
+> ⚠ Warning: When using [custom content type parsers](../ContentTypeParser/index.md), the parsed body is validated **only** when the request content type matches a key in the schema `content` map.
 > 
 > Schema selection uses an exact match on the request's [essence MIME type](https://mimesniff.spec.whatwg.org/#mime-type-miscellaneous) (for example, `application/json`). If a parser is registered with a regular expression (for example, `/^application\/.*json$/`), the parser can accept more content types than the `content` map covers. Requests in that gap are parsed but **not validated**.
 > 
@@ -153,7 +153,7 @@ For more information, see [Ajv Coercion](https://ajv.js.org/coercion.html).
 
 A list of plugins can be provided for use with the default `ajv` instance. Ensure the plugin is **compatible with the Ajv version shipped within Fastify**.
 
-> Refer to [`ajv options`](/docs/latest/Reference/Server/#ajv) to check plugins format.
+> Refer to [`ajv options`](../Server/index.md#ajv) to check plugins format.
 
 ```
 const fastify = require('fastify')({  ajv: {    plugins: [      require('ajv-merge-patch')    ]  }})fastify.post('/', {  handler (req, reply) { reply.send({ ok: 1 }) },  schema: {    body: {      $patch: {        source: {          type: 'object',          properties: {            q: {              type: 'string'            }          }        },        with: [          {            op: 'add',            path: '/properties/q',            value: { type: 'number' }          }        ]      }    }  }})fastify.post('/foo', {  handler (req, reply) { reply.send({ ok: 1 }) },  schema: {    body: {      $merge: {        source: {          type: 'object',          properties: {            q: {              type: 'string'            }          }        },        with: {          required: ['q']        }      }    }  }})
@@ -169,7 +169,7 @@ Fastify's [baseline ajv configuration](https://github.com/fastify/ajv-compiler#a
 {  coerceTypes: 'array', // change data type of data to match type keyword  useDefaults: true, // replace missing properties and items with the values from corresponding default keyword  removeAdditional: true, // remove additional properties if additionalProperties is set to false, see: https://ajv.js.org/guide/modifying-data.html#removing-additional-properties  uriResolver: require('fast-uri'),  addUsedSchema: false,  // Explicitly set allErrors to `false`.  // When set to `true`, a DoS attack is possible.  allErrors: false}
 ```
 
-Modify the baseline configuration by providing [`ajv.customOptions`](/docs/latest/Reference/Server/#factory-ajv) to the Fastify factory.
+Modify the baseline configuration by providing [`ajv.customOptions`](../Server/index.md#factory-ajv) to the Fastify factory.
 
 To change or set additional config options, create a custom instance and override the existing one:
 
@@ -267,7 +267,7 @@ The `serializerCompiler` returns a function that must return a string from an in
 fastify.setSerializerCompiler(({ schema, method, url, httpStatus, contentType }) => {  return data => JSON.stringify(data)})fastify.get('/user', {  handler (req, reply) {    reply.send({ id: 1, name: 'Foo', image: 'BIG IMAGE' })  },  schema: {    response: {      '2xx': {        type: 'object',        properties: {          id: { type: 'number' },          name: { type: 'string' }        }      }    }  }})
 ```
 
-_To set a custom serializer in a specific part of the code, use [`reply.serializer(...)`](/docs/latest/Reference/Reply/#serializerfunc)._
+_To set a custom serializer in a specific part of the code, use [`reply.serializer(...)`](../Reply/index.md#serializerfunc)._
 
 ### Error Handling[​](#error-handling "Direct link to Error Handling")
 
@@ -283,7 +283,7 @@ If the request fails to satisfy the schema, the route will return a response wit
 {  "statusCode": 400,  "error": "Bad Request",  "message": "body should have required property 'name'"}
 ```
 
-> ⚠ Security Consideration: By default, validation error details from the schema are included in the response payload. If your organization requires sanitizing or customizing these error messages (e.g., to avoid exposing internal schema details), configure a custom error handler using [`setErrorHandler()`](/docs/latest/Reference/Server/#seterrorhandler).
+> ⚠ Security Consideration: By default, validation error details from the schema are included in the response payload. If your organization requires sanitizing or customizing these error messages (e.g., to avoid exposing internal schema details), configure a custom error handler using [`setErrorHandler()`](../Server/index.md#seterrorhandler).
 
 To handle errors inside the route, specify the `attachValidation` option. If there is a validation error, the `validationError` property of the request will contain the `Error` object with the raw validation result as shown below:
 
@@ -301,7 +301,7 @@ To format errors, provide a sync function that returns an error as the `schemaEr
 const fastify = Fastify({  schemaErrorFormatter: (errors, dataVar) => {    // ... my formatting logic    return new Error(myErrorMessage)  }})// orfastify.setSchemaErrorFormatter(function (errors, dataVar) {  this.log.error({ err: errors }, 'Validation failed')  // ... my formatting logic  return new Error(myErrorMessage)})
 ```
 
-Use [setErrorHandler](/docs/latest/Reference/Server/#seterrorhandler) to define a custom response for validation errors such as:
+Use [setErrorHandler](../Server/index.md#seterrorhandler) to define a custom response for validation errors such as:
 
 ```
 fastify.setErrorHandler(function (error, request, reply) {  if (error.validation) {     reply.status(422).send(new Error('validation failed'))  }})

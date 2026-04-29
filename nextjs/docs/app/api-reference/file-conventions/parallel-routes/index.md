@@ -11,8 +11,8 @@ menu_path: ["Parallel Routes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../page/index.md", "title": "page.js"}
-nav_next: {"path": "../proxy/index.md", "title": "proxy.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/page/index.md", "title": "page.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/proxy/index.md", "title": "proxy.js"}
 ---
 
 # Parallel Routes
@@ -59,7 +59,7 @@ export default function Layout({
 }
 ```
 
-However, slots are **not** route segments and do not affect the URL structure. For example, for `/@analytics/views`, the URL will be `/views` since `@analytics` is a slot. Slots are combined with the regular [Page](/docs/app/api-reference/file-conventions/page) component to form the final page associated with the route segment. Because of this, you cannot have separate [prerendered](/docs/app/glossary#prerendering) and [dynamically rendered](/docs/app/glossary#dynamic-rendering) slots at the same route segment level. If one slot is dynamic, all slots at that level must be dynamic.
+However, slots are **not** route segments and do not affect the URL structure. For example, for `/@analytics/views`, the URL will be `/views` since `@analytics` is a slot. Slots are combined with the regular [Page](../page/index.md) component to form the final page associated with the route segment. Because of this, you cannot have separate [prerendered](../../../glossary/index.md#prerendering) and [dynamically rendered](../../../glossary/index.md#dynamic-rendering) slots at the same route segment level. If one slot is dynamic, all slots at that level must be dynamic.
 
 > **Good to know**:
 > 
@@ -83,7 +83,7 @@ Additionally, since `children` is an implicit slot, you also need to create a `d
 
 By default, Next.js keeps track of the active _state_ (or subpage) for each slot. However, the content rendered within a slot will depend on the type of navigation:
 
--   [**Soft Navigation**](/docs/app/getting-started/linking-and-navigating#client-side-transitions): During client-side navigation, Next.js will perform a [partial render](/docs/app/getting-started/linking-and-navigating#client-side-transitions), changing the subpage within the slot, while maintaining the other slot's active subpages, even if they don't match the current URL.
+-   [**Soft Navigation**](../../../getting-started/linking-and-navigating/index.md#client-side-transitions): During client-side navigation, Next.js will perform a [partial render](../../../getting-started/linking-and-navigating/index.md#client-side-transitions), changing the subpage within the slot, while maintaining the other slot's active subpages, even if they don't match the current URL.
 -   **Hard Navigation**: After a full-page load (browser refresh), Next.js cannot determine the active state for the slots that don't match the current URL. Instead, it will render a [`default.js`](#defaultjs) file for the unmatched slots, or `404` if `default.js` doesn't exist.
 
 > **Good to know**:
@@ -94,7 +94,7 @@ By default, Next.js keeps track of the active _state_ (or subpage) for each slot
 
 ### With `useSelectedLayoutSegment(s)`[](#with-useselectedlayoutsegments)
 
-Both [`useSelectedLayoutSegment`](/docs/app/api-reference/functions/use-selected-layout-segment) and [`useSelectedLayoutSegments`](/docs/app/api-reference/functions/use-selected-layout-segments) accept a `parallelRoutesKey` parameter, which allows you to read the active route segment within a slot.
+Both [`useSelectedLayoutSegment`](../../functions/use-selected-layout-segment/index.md) and [`useSelectedLayoutSegments`](../../functions/use-selected-layout-segments/index.md) accept a `parallelRoutesKey` parameter, which allows you to read the active route segment within a slot.
 
 app/layout.tsx
 
@@ -146,7 +146,7 @@ For example, the `@analytics` slot has two subpages: `/page-views` and `/visitor
 
 ![Analytics slot with two subpages and a layout](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-tab-groups.png)
 
-Within `@analytics`, create a [`layout`](/docs/app/api-reference/file-conventions/layout) file to share the tabs between the two pages:
+Within `@analytics`, create a [`layout`](../layout/index.md) file to share the tabs between the two pages:
 
 app/@analytics/layout.tsx
 
@@ -170,7 +170,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 ### Modals[](#modals)
 
-Parallel Routes can be used together with [Intercepting Routes](/docs/app/api-reference/file-conventions/intercepting-routes) to create modals that support deep linking. This allows you to solve common challenges when building modals, such as:
+Parallel Routes can be used together with [Intercepting Routes](../intercepting-routes/index.md) to create modals that support deep linking. This allows you to solve common challenges when building modals, such as:
 
 -   Making the modal content **shareable through a URL**.
 -   **Preserving context** when the page is refreshed, instead of closing the modal.
@@ -197,7 +197,7 @@ export default function Page() {
 }
 ```
 
-Then, inside the `@auth` slot, add [`default.js`](/docs/app/api-reference/file-conventions/default) file that returns `null`. This ensures that the modal is not rendered when it's not active.
+Then, inside the `@auth` slot, add [`default.js`](../default/index.md) file that returns `null`. This ensures that the modal is not rendered when it's not active.
 
 app/@auth/default.tsx
 
@@ -230,8 +230,8 @@ export default function Page() {
 
 > **Good to know:**
 > 
-> -   The convention `(.)` is used for intercepting routes. See [Intercepting Routes](/docs/app/api-reference/file-conventions/intercepting-routes#convention) docs for more information.
-> -   By separating the `<Modal>` functionality from the modal content (`<Login>`), you can ensure any content inside the modal, e.g. [forms](/docs/app/guides/forms), are Server Components. See [Interleaving Client and Server Components](/docs/app/getting-started/server-and-client-components#interleaving-server-and-client-components) for more information.
+> -   The convention `(.)` is used for intercepting routes. See [Intercepting Routes](../intercepting-routes/index.md#convention) docs for more information.
+> -   By separating the `<Modal>` functionality from the modal content (`<Login>`), you can ensure any content inside the modal, e.g. [forms](../../../guides/forms/index.md), are Server Components. See [Interleaving Client and Server Components](../../../getting-started/server-and-client-components/index.md#interleaving-server-and-client-components) for more information.
 
 #### Opening the modal[](#opening-the-modal)
 
@@ -351,7 +351,7 @@ Parallel Routes can be streamed independently, allowing you to define independen
 
 ![Parallel routes enable custom error and loading states](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/parallel-routes-cinematic-universe.png)
 
-See the [Loading UI](/docs/app/api-reference/file-conventions/loading) and [Error Handling](/docs/app/getting-started/error-handling) documentation for more information.
+See the [Loading UI](../loading/index.md) and [Error Handling](../../../getting-started/error-handling/index.md) documentation for more information.
 
 [
 
@@ -359,6 +359,6 @@ See the [Loading UI](/docs/app/api-reference/file-conventions/loading) and [Erro
 
 API Reference for the default.js file.
 
-](/docs/app/api-reference/file-conventions/default)
+](../default/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:35.422Z"
 content_hash: "ab42cf2b8a225fae307004258aa1e4adfae554598db92037cc1af89699a27c00"
 menu_path: ["Decorators"]
 section_path: []
-nav_prev: {"path": "../ContentTypeParser/index.md", "title": "ContentTypeParser"}
-nav_next: {"path": "../Encapsulation/index.md", "title": "Encapsulation"}
+nav_prev: {"path": "fastify/docs/latest/Reference/ContentTypeParser/index.md", "title": "ContentTypeParser"}
+nav_next: {"path": "fastify/docs/latest/Reference/Encapsulation/index.md", "title": "Encapsulation"}
 ---
 
 Version: latest (v5.8.x)
@@ -19,7 +19,7 @@ Version: latest (v5.8.x)
 
 The decorators API customizes core Fastify objects, such as the server instance and any request and reply objects used during the HTTP request lifecycle. It can attach any type of property to core objects, e.g., functions, plain objects, or native types.
 
-This API is _synchronous_. Defining a decoration asynchronously could result in the Fastify instance booting before the decoration completes. To register an asynchronous decoration, use the `register` API with `fastify-plugin`. See the [Plugins](/docs/latest/Reference/Plugins/) documentation for more details.
+This API is _synchronous_. Defining a decoration asynchronously could result in the Fastify instance booting before the decoration completes. To register an asynchronous decoration, use the `register` API with `fastify-plugin`. See the [Plugins](../Plugins/index.md) documentation for more details.
 
 Decorating core objects with this API allows the underlying JavaScript engine to optimize the handling of server, request, and reply objects. This is accomplished by defining the shape of all such object instances before they are instantiated and used. As an example, the following is not recommended because it will change the shape of objects during their lifecycle:
 
@@ -39,7 +39,7 @@ Keep the initial shape of a decorated field close to its future dynamic value. I
 
 #### `decorate(name, value, [dependencies])`[​](#decoratename-value-dependencies "Direct link to decoratename-value-dependencies")
 
-This method customizes the Fastify [server](/docs/latest/Reference/Server/) instance.
+This method customizes the Fastify [server](../Server/index.md) instance.
 
 For example, to attach a new method to the server instance:
 
@@ -59,7 +59,7 @@ To access decorated properties, use the name provided to the decoration API:
 fastify.utility()console.log(fastify.conf.db)
 ```
 
-The decorated [Fastify server](/docs/latest/Reference/Server/) is bound to `this` in [route](/docs/latest/Reference/Routes/) handlers:
+The decorated [Fastify server](../Server/index.md) is bound to `this` in [route](../Routes/index.md) handlers:
 
 ```
 fastify.decorate('db', new DbConnection())fastify.get('/', async function (request, reply) {  // using return  return { hello: await this.db.query('world') }  // or  // using reply.send()  reply.send({ hello: await this.db.query('world') })  await reply})
@@ -93,7 +93,7 @@ Using `decorateReply` will throw and error if used with a reference type:
 
 In this example, the object reference would be shared with all requests, and **any mutation will impact all requests, potentially creating security vulnerabilities or memory leaks**. Fastify blocks this.
 
-To achieve proper encapsulation across requests configure a new value for each incoming request in the [`'onRequest'` hook](/docs/latest/Reference/Hooks/#onrequest).
+To achieve proper encapsulation across requests configure a new value for each incoming request in the [`'onRequest'` hook](../Hooks/index.md#onrequest).
 
 ```
 const fp = require('fastify-plugin')async function myPlugin (app) {  app.decorateReply('foo')  app.addHook('onRequest', async (req, reply) => {    reply.foo = { bar: 42 }  })}module.exports = fp(myPlugin)
@@ -119,7 +119,7 @@ Using `decorateRequest` will emit an error if used with a reference type:
 
 In this example, the object reference would be shared with all requests, and **any mutation will impact all requests, potentially creating security vulnerabilities or memory leaks**. Fastify blocks this.
 
-To achieve proper encapsulation across requests configure a new value for each incoming request in the [`'onRequest'` hook](/docs/latest/Reference/Hooks/#onrequest).
+To achieve proper encapsulation across requests configure a new value for each incoming request in the [`'onRequest'` hook](../Hooks/index.md#onrequest).
 
 Example:
 
@@ -205,7 +205,7 @@ The `getDecorator` method is useful for dependency validation - it can be used t
 fastify.register(async function (fastify) {  // Verify the decorator exists before using it  const usersRepository = fastify.getDecorator('usersRepository')  fastify.get('/users', async function (request, reply) {    return usersRepository.findAll()  })})
 ```
 
-> ℹ️ Note: For TypeScript users, `getDecorator` supports generic type parameters. See the [TypeScript documentation](/docs/latest/Reference/TypeScript/) for advanced typing examples.
+> ℹ️ Note: For TypeScript users, `getDecorator` supports generic type parameters. See the [TypeScript documentation](../TypeScript/index.md) for advanced typing examples.
 
 #### `setDecorator(name, value)`[​](#setdecoratorname-value "Direct link to setdecoratorname-value")
 
@@ -221,4 +221,4 @@ The `setDecorator` method provides runtime safety by ensuring the decorator exis
 fastify.decorateRequest('account', null)fastify.addHook('preHandler', async (req, reply) => {  // This will throw FST_ERR_DEC_UNDECLARED due to typo in decorator name  req.setDecorator('acount', { id: 123 })})
 ```
 
-> ℹ️ Note: For TypeScript users, see the [TypeScript documentation](/docs/latest/Reference/TypeScript/) for advanced typing examples using `setDecorator<T>`.
+> ℹ️ Note: For TypeScript users, see the [TypeScript documentation](../TypeScript/index.md) for advanced typing examples using `setDecorator<T>`.

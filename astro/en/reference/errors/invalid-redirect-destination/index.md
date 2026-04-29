@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:26.016Z"
 content_hash: "b2bacb3462357758aa1fed2c3a6a3da96a6930e22035306b29b3e48ff404c50a"
 menu_path: ["Invalid redirect destination."]
 section_path: []
-nav_prev: {"path": "../invalid-prerender-export/index.md", "title": "Invalid prerender export."}
-nav_next: {"path": "../invalid-rewrite404/index.md", "title": "You attempted to rewrite a 404 inside a static page, and this isn't allowed."}
+nav_prev: {"path": "astro/en/reference/errors/invalid-prerender-export/index.md", "title": "Invalid prerender export."}
+nav_next: {"path": "astro/en/reference/errors/invalid-rewrite404/index.md", "title": "You attempted to rewrite a 404 inside a static page, and this isn't allowed."}
 ---
 
 # Invalid redirect destination.
@@ -25,6 +25,6 @@ A dynamic redirect destination must match an existing route pattern. This error 
 
 **See Also:**
 
-*   [Configured redirects](/en/guides/routing/#configured-redirects)
+*   [Configured redirects](../../../guides/routing/index.md#configured-redirects)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

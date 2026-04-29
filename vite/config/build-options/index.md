@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:09.232Z"
 content_hash: "eb5ff70ca687e4eeb2f9125bd01d75e556e6728e6d158a993bedde6f01fc2e7b"
 menu_path: ["Build Options ​"]
 section_path: []
-nav_prev: {"path": "../../plugins/index.md", "title": "Vite Plugin Registry"}
-nav_next: {"path": "../dep-optimization-options/index.md", "title": "Dep Optimization Options \u200b"}
+nav_prev: {"path": "vite/plugins/index.md", "title": "Vite Plugin Registry"}
+nav_next: {"path": "vite/config/dep-optimization-options/index.md", "title": "Dep Optimization Options \u200b"}
 ---
 
 Unless noted, the options in this section are only applied to build.

@@ -11,8 +11,8 @@ menu_path: ["Server-side Rendering (SSR)"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../../routing/custom-error/index.md", "title": "Custom Errors"}
-nav_next: {"path": "../static-site-generation/index.md", "title": "Static Site Generation (SSG)"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/custom-error/index.md", "title": "Custom Errors"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/static-site-generation/index.md", "title": "Static Site Generation (SSG)"}
 ---
 
 # Server-side Rendering (SSR)
@@ -45,6 +45,6 @@ export async function getServerSideProps() {
 
 As you can see, `getServerSideProps` is similar to `getStaticProps`, but the difference is that `getServerSideProps` is run on every request instead of on build time.
 
-To learn more about how `getServerSideProps` works, check out our [Data Fetching documentation](/docs/pages/building-your-application/data-fetching/get-server-side-props).
+To learn more about how `getServerSideProps` works, check out our [Data Fetching documentation](../../data-fetching/get-server-side-props/index.md).
 
 Was this helpful?

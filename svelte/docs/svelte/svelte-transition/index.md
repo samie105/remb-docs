@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:52.934Z"
 content_hash: "8f1f90491537632714f0cac228d1697a8adb08c5666223020b8a098856f95c12"
 menu_path: ["svelte/transition"]
 section_path: []
-nav_prev: {"path": "../svelte-store/index.md", "title": "svelte/store"}
-nav_next: {"path": "../compiler-errors/index.md", "title": "Compiler errors"}
+nav_prev: {"path": "svelte/docs/svelte/svelte-store/index.md", "title": "svelte/store"}
+nav_next: {"path": "svelte/docs/svelte/compiler-errors/index.md", "title": "Compiler errors"}
 ---
 
 ```
@@ -59,7 +59,7 @@ function blur(
 
 ## crossfade[](#crossfade)
 
-The `crossfade` function creates a pair of [transitions](/docs/svelte/transition) called `send` and `receive`. When an element is 'sent', it looks for a corresponding element being 'received', and generates a transition that transforms the element to its counterpart's position and fades it out. When an element is 'received', the reverse happens. If there is no counterpart, the `fallback` transition is used.
+The `crossfade` function creates a pair of [transitions](../transition/index.md) called `send` and `receive`. When an element is 'sent', it looks for a corresponding element being 'received', and generates a transition that transforms the element to its counterpart's position and fades it out. When an element is 'received', the reverse happens. If there is no counterpart, the `fallback` transition is used.
 
 ```
 function crossfade({
@@ -365,4 +365,4 @@ tick?: (t: number, u: number) => void;
 
 previous next
 
-[svelte/store](/docs/svelte/svelte-store) [Compiler errors](/docs/svelte/compiler-errors)
+[svelte/store](../svelte-store/index.md) [Compiler errors](../compiler-errors/index.md)

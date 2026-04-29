@@ -11,8 +11,8 @@ menu_path: ["How to implement JSON-LD in your Next.js application"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../internationalization/index.md", "title": "Internationalization"}
-nav_next: {"path": "../lazy-loading/index.md", "title": "How to lazy load Client Components and libraries"}
+nav_prev: {"path": "nextjs/docs/app/guides/internationalization/index.md", "title": "Internationalization"}
+nav_next: {"path": "nextjs/docs/app/guides/lazy-loading/index.md", "title": "How to lazy load Client Components and libraries"}
 ---
 
 # How to implement JSON-LD in your Next.js application

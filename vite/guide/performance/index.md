@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:59.381Z"
 content_hash: "7a20e686d709a50a155a1008ce44851cbac4269ab3f425bf2bff97f0b48d2454"
 menu_path: ["Performance ​"]
 section_path: []
-nav_prev: {"path": "../troubleshooting/index.md", "title": "Troubleshooting \u200b"}
-nav_next: {"path": "../migration/index.md", "title": "Migration from v7 \u200b"}
+nav_prev: {"path": "vite/guide/troubleshooting/index.md", "title": "Troubleshooting \u200b"}
+nav_next: {"path": "vite/guide/migration/index.md", "title": "Migration from v7 \u200b"}
 ---
 
 While Vite is fast by default, performance issues can creep in as the project's requirements grow. This guide aims to help you identify and fix common performance issues, such as:

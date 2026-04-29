@@ -10,8 +10,8 @@ content_hash: "9c6f293b9a6ec41e600381d06f4f80f9953fc470f2a1cf5d4c0d448cb52e7a7d"
 menu_path: ["Where to get help"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../contributing/examples/index.md", "title": "Contributing an example"}
-nav_next: {"path": "../../api/index.md", "title": "Deno Namespace APIs"}
+nav_prev: {"path": "deno/runtime/contributing/examples/index.md", "title": "Contributing an example"}
+nav_next: {"path": "deno/api/index.md", "title": "Deno Namespace APIs"}
 ---
 
 **On this page**

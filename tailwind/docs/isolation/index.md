@@ -10,8 +10,8 @@ content_hash: "cee47cf25eab482a913bda5bf3a4f5119944ecafcfdbbf74ed29b1d604ee2df8"
 menu_path: ["isolation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../clear/index.md", "title": "clear"}
-nav_next: {"path": "../object-fit/index.md", "title": "object-fit"}
+nav_prev: {"path": "tailwind/docs/clear/index.md", "title": "clear"}
+nav_next: {"path": "tailwind/docs/object-fit/index.md", "title": "object-fit"}
 ---
 
 # isolation
@@ -42,7 +42,7 @@ Prefix an `isolation` utility with a breakpoint variant like `md:` to only apply
 <div class="isolate md:isolation-auto ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

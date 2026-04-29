@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:32.186Z"
 content_hash: "f3af3dfc97e79992a0e15b0ee8b37132f0694a82fbc4d170dc95cae9a004e3de"
 menu_path: ["PostgreSQL: Documentation: 18: 18.6. Upgrading a PostgreSQL Cluster"]
 section_path: []
-nav_prev: {"path": "../tutorial-fk.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.3.\u00a0Foreign Keys"}
-nav_next: {"path": "../using-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: 14.1.\u00a0Using EXPLAIN"}
+nav_prev: {"path": "postgres/docs/current/tutorial-fk.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.3.\u00a0Foreign Keys"}
+nav_next: {"path": "postgres/docs/current/using-explain.html/index.md", "title": "PostgreSQL: Documentation: 18: 14.1.\u00a0Using EXPLAIN"}
 ---
 
 This section discusses how to upgrade your database data from one PostgreSQL release to a newer one.

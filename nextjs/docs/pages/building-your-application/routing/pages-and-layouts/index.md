@@ -11,8 +11,8 @@ menu_path: ["Pages and Layouts"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Routing"}
-nav_next: {"path": "../dynamic-routes/index.md", "title": "Dynamic Routes"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/index.md", "title": "Routing"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/dynamic-routes/index.md", "title": "Dynamic Routes"}
 ---
 
 # Pages and Layouts
@@ -51,11 +51,11 @@ The router supports nested files. If you create a nested folder structure, files
 
 Next.js supports pages with dynamic routes. For example, if you create a file called `pages/posts/[id].js`, then it will be accessible at `posts/1`, `posts/2`, etc.
 
-> To learn more about dynamic routing, check the [Dynamic Routing documentation](/docs/pages/building-your-application/routing/dynamic-routes).
+> To learn more about dynamic routing, check the [Dynamic Routing documentation](../dynamic-routes/index.md).
 
 ## Layout Pattern[](#layout-pattern)
 
-The React model allows us to deconstruct a [page](/docs/pages/building-your-application/routing/pages-and-layouts) into a series of components. Many of these components are often reused between pages. For example, you might have the same navigation bar and footer on every page.
+The React model allows us to deconstruct a [page](index.md) into a series of components. Many of these components are often reused between pages. For example, you might have the same navigation bar and footer on every page.
 
 components/layout.js
 
@@ -78,7 +78,7 @@ export default function Layout({ children }) {
 
 ### Single Shared Layout with Custom App[](#single-shared-layout-with-custom-app)
 
-If you only have one layout for your entire application, you can create a [Custom App](/docs/pages/building-your-application/routing/custom-app) and wrap your application with the layout. Since the `<Layout />` component is re-used when changing pages, its component state will be preserved (e.g. input values).
+If you only have one layout for your entire application, you can create a [Custom App](../custom-app/index.md) and wrap your application with the layout. Since the `<Layout />` component is re-used when changing pages, its component state will be preserved (e.g. input values).
 
 pages/\_app.js
 
@@ -193,7 +193,7 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
 ### Data Fetching[](#data-fetching)
 
-Inside your layout, you can fetch data on the client-side using `useEffect` or a library like [SWR](https://swr.vercel.app/). Because this file is not a [Page](/docs/pages/building-your-application/routing/pages-and-layouts), you cannot use `getStaticProps` or `getServerSideProps` currently.
+Inside your layout, you can fetch data on the client-side using `useEffect` or a library like [SWR](https://swr.vercel.app/). Because this file is not a [Page](index.md), you cannot use `getStaticProps` or `getServerSideProps` currently.
 
 components/layout.js
 

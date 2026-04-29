@@ -10,8 +10,8 @@ content_hash: "7d667558247140c3bcb79c2974a467619146caab146fb3f5120f00bba4d1a6b1"
 menu_path: ["Migrate from Prisma to Drizzle"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../components/index.md", "title": "Drizzle ORM - undefined"}
-nav_next: {"path": "../migrate-from-sequelize/index.md", "title": "Migrate from Sequelize to Drizzle"}
+nav_prev: {"path": "drizzle/docs/migrate/components/index.md", "title": "Drizzle ORM - undefined"}
+nav_next: {"path": "drizzle/docs/migrate/migrate-from-sequelize/index.md", "title": "Migrate from Sequelize to Drizzle"}
 ---
 
 This guide provides a straightforward approach to migrating a basic **Prisma** project to **Drizzle ORM**. Although the example focuses on `PostgreSQL`, the process is similar for other supported databases.

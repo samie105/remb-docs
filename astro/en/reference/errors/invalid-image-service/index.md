@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:23.052Z"
 content_hash: "490ad2b16a98019f7fdcc60cbf510fc44da152ddaa3da0edcb090ee9385ead78"
 menu_path: ["Error while loading image service."]
 section_path: []
-nav_prev: {"path": "../invalid-i18n-middleware-configuration/index.md", "title": "Invalid internationalization middleware configuration"}
-nav_next: {"path": "../invalid-prerender-export/index.md", "title": "Invalid prerender export."}
+nav_prev: {"path": "astro/en/reference/errors/invalid-i18n-middleware-configuration/index.md", "title": "Invalid internationalization middleware configuration"}
+nav_next: {"path": "astro/en/reference/errors/invalid-prerender-export/index.md", "title": "Invalid prerender export."}
 ---
 
 # Error while loading image service.
@@ -27,6 +27,6 @@ If you believe that your service is properly configured and this error is wrong,
 
 **See Also:**
 
-*   [Image Service API](/en/reference/image-service-reference/)
+*   [Image Service API](../../image-service-reference/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

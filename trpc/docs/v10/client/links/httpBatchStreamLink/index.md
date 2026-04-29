@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:26.708Z"
 content_hash: "82cf1adcef39087c508f35d081339e2a5490b06f447cfe8a07906c73cd3c7b4b"
 menu_path: ["HTTP Batch Stream Link"]
 section_path: []
-nav_prev: {"path": "../httpBatchLink/index.md", "title": "HTTP Batch Link"}
-nav_next: {"path": "../httpLink/index.md", "title": "HTTP Link"}
+nav_prev: {"path": "trpc/docs/v10/client/links/httpBatchLink/index.md", "title": "HTTP Batch Link"}
+nav_next: {"path": "trpc/docs/v10/client/links/httpLink/index.md", "title": "HTTP Link"}
 ---
 
 `unstable_httpBatchStreamLink` is a [**terminating link**](../index.md#the-terminating-link) that batches an array of individual tRPC operations into a single HTTP request that's sent to a single tRPC procedure (equivalent to [`httpBatchLink`](../httpBatchLink/index.md)), but doesn't wait for all the responses of the batch to be ready and streams the responses as soon as any data is available.

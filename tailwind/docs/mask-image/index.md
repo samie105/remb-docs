@@ -10,8 +10,8 @@ content_hash: "b07be3f450e82e4e610792b126a1f9e97f486ac978801a267de1353349a1610d"
 menu_path: ["mask-image"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../mask-composite/index.md", "title": "mask-composite"}
-nav_next: {"path": "../mask-mode/index.md", "title": "mask-mode"}
+nav_prev: {"path": "tailwind/docs/mask-composite/index.md", "title": "mask-composite"}
+nav_next: {"path": "tailwind/docs/mask-mode/index.md", "title": "mask-mode"}
 ---
 
 Utilities for controlling an element's mask image.

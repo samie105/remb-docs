@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:13.713Z"
 content_hash: "23117c9d23a25df077bf28d578b3f73d1750b29305e6b622345b344f9461bbf1"
 menu_path: ["Action unexpected called from the server."]
 section_path: []
-nav_prev: {"path": "../../../guides/integrations-guide/tailwind/index.md", "title": "@astrojs/tailwind"}
-nav_next: {"path": "../action-not-found-error/index.md", "title": "Action not found."}
+nav_prev: {"path": "astro/en/guides/integrations-guide/tailwind/index.md", "title": "@astrojs/tailwind"}
+nav_next: {"path": "astro/en/reference/errors/action-not-found-error/index.md", "title": "Action not found."}
 ---
 
 # Action unexpected called from the server.
@@ -25,6 +25,6 @@ Action called from a server page or endpoint without using `Astro.callAction()`.
 
 **See Also:**
 
-*   [`Astro.callAction()` reference](/en/reference/api-reference/#callaction)
+*   [`Astro.callAction()` reference](../../api-reference/index.md#callaction)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

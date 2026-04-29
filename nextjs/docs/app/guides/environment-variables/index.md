@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../draft-mode/index.md", "title": "How to preview content with Draft Mode in Next.js"}
-nav_next: {"path": "../forms/index.md", "title": "How to create forms with Server Actions"}
+nav_prev: {"path": "nextjs/docs/app/guides/draft-mode/index.md", "title": "How to preview content with Draft Mode in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/forms/index.md", "title": "How to create forms with Server Actions"}
 ---
 
 # How to use environment variables in Next.js
@@ -55,7 +55,7 @@ DB_PASS=mypassword
 > PRIVATE_KEY="-----BEGIN RSA PRIVATE KEY-----\nKh9NV...\n-----END DSA PRIVATE KEY-----\n"
 > ```
 
-> **Note**: If you are using a `/src` folder, please note that Next.js will load the .env files **only** from the parent folder and **not** from the `/src` folder. This loads `process.env.DB_HOST`, `process.env.DB_USER`, and `process.env.DB_PASS` into the Node.js environment automatically allowing you to use them in [Route Handlers](/docs/app/api-reference/file-conventions/route).
+> **Note**: If you are using a `/src` folder, please note that Next.js will load the .env files **only** from the parent folder and **not** from the `/src` folder. This loads `process.env.DB_HOST`, `process.env.DB_USER`, and `process.env.DB_PASS` into the Node.js environment automatically allowing you to use them in [Route Handlers](../../api-reference/file-conventions/route/index.md).
 
 For example:
 
@@ -217,7 +217,7 @@ This allows you to use a singular Docker image that can be promoted through mult
 
 **Good to know:**
 
--   You can run code on server startup using the [`register` function](/docs/app/guides/instrumentation).
+-   You can run code on server startup using the [`register` function](../instrumentation/index.md).
 
 ## Test Environment Variables[](#test-environment-variables)
 
@@ -257,7 +257,7 @@ For example, if `NODE_ENV` is `development` and you define a variable in both `.
 
 ## Good to know[](#good-to-know)
 
--   If you are using a [`/src` directory](/docs/app/api-reference/file-conventions/src-folder), `.env.*` files should remain in the root of your project.
+-   If you are using a [`/src` directory](../../api-reference/file-conventions/src-folder/index.md), `.env.*` files should remain in the root of your project.
 -   If the environment variable `NODE_ENV` is unassigned, Next.js automatically assigns `development` when running the `next dev` command, or `production` for all other commands.
 
 ## Version History[](#version-history)

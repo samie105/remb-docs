@@ -10,8 +10,8 @@ content_hash: "622673baf4164e156accadf6977cbf8456e76fe40c2d069ce07b73063326c966"
 menu_path: ["animation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../transition-delay/index.md", "title": "transition-delay"}
-nav_next: {"path": "../backface-visibility/index.md", "title": "backface-visibility"}
+nav_prev: {"path": "tailwind/docs/transition-delay/index.md", "title": "transition-delay"}
+nav_next: {"path": "tailwind/docs/backface-visibility/index.md", "title": "backface-visibility"}
 ---
 
 Transitions & Animation

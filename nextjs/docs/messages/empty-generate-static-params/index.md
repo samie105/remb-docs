@@ -11,8 +11,8 @@ menu_path: ["Empty generateStaticParams with Cache Components"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
-nav_next: {"path": "../google-font-display/index.md", "title": "Google Font Display"}
+nav_prev: {"path": "nextjs/docs/messages/conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
+nav_next: {"path": "nextjs/docs/messages/google-font-display/index.md", "title": "Google Font Display"}
 ---
 
 # Empty generateStaticParams with Cache Components
@@ -94,6 +94,6 @@ Using placeholders provides minimal build-time validation and increases the risk
 
 -   [Cache Components Documentation](../../app/getting-started/caching/index.md)
 -   [generateStaticParams API Reference](../../app/api-reference/functions/generate-static-params/index.md)
--   [Dynamic Routes with Cache Components](/docs/app/api-reference/file-conventions/dynamic-routes#with-cache-components)
+-   [Dynamic Routes with Cache Components](../../app/api-reference/file-conventions/dynamic-routes/index.md#with-cache-components)
 
 Was this helpful?

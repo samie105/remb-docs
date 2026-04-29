@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:30.129Z"
 content_hash: "425b7d0ed38bfe70c82fb7a5bed86a5359ee3afbbb229b0f7d9dcec422937b64"
 menu_path: ["ContentTypeParser"]
 section_path: []
-nav_prev: {"path": "../../Guides/Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
-nav_next: {"path": "../Decorators/index.md", "title": "Decorators"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
+nav_next: {"path": "fastify/docs/latest/Reference/Decorators/index.md", "title": "Decorators"}
 ---
 
 Version: latest (v5.8.x)
@@ -25,15 +25,15 @@ To support other content types, use the `addContentTypeParser` API or an existin
 
 As with other APIs, `addContentTypeParser` is encapsulated in the scope in which it is declared. If declared in the root scope, it is available everywhere; if declared in a plugin, it is available only in that scope and its children.
 
-Fastify automatically adds the parsed request payload to the [Fastify request](/docs/latest/Reference/Request/) object, accessible via `request.body`.
+Fastify automatically adds the parsed request payload to the [Fastify request](../Request/index.md) object, accessible via `request.body`.
 
-> **Important:** When using a body schema with the [`content`](/docs/latest/Reference/Validation-and-Serialization/#body-content-type-validation) property to validate per content type, only content types listed in the schema will be validated. If you add a custom content type parser but do not include its content type in the body schema's `content` property, the incoming data will be parsed but **not validated**.
+> **Important:** When using a body schema with the [`content`](../Validation-and-Serialization/index.md#body-content-type-validation) property to validate per content type, only content types listed in the schema will be validated. If you add a custom content type parser but do not include its content type in the body schema's `content` property, the incoming data will be parsed but **not validated**.
 
 Note that for `GET` and `HEAD` requests, the payload is never parsed. For `OPTIONS` and `DELETE` requests, the payload is parsed only if a valid `content-type` header is provided. Unlike `POST`, `PUT`, and `PATCH`, the [catch-all](#catch-all) parser is not executed, and the payload is simply not parsed.
 
 > ⚠ Warning: When using regular expressions to detect `Content-Type`, it is important to ensure proper detection. For example, to match `application/*`, use `/^application\/([\w-]+);?/` to match the [essence MIME type](https://mimesniff.spec.whatwg.org/#mime-type-miscellaneous) only.
 > 
-> Additionally, if the route uses per-content-type body validation via `schema.body.content`, the schema is selected by an **exact match** on the essence MIME type, not by the parser's regex. A regex parser that accepts content types with no matching key in the `content` schema map will result in those requests **not being validated**. Ensure every content type matched by the regex has a corresponding entry in the schema's `content` map. See [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/) for details.
+> Additionally, if the route uses per-content-type body validation via `schema.body.content`, the schema is selected by an **exact match** on the essence MIME type, not by the parser's regex. A regex parser that accepts content types with no matching key in the `content` schema map will result in those requests **not being validated**. Ensure every content type matched by the regex has a corresponding entry in the schema's `content` map. See [Validation and Serialization](../Validation-and-Serialization/index.md) for details.
 
 ### Usage[​](#usage "Direct link to Usage")
 
@@ -87,7 +87,7 @@ fastify.removeAllContentTypeParsers()fastify.addContentTypeParser('text/xml', fu
 
 #### Body Parser[​](#body-parser "Direct link to Body Parser")
 
-The request body can be parsed in two ways. First, add a custom content type parser and handle the request stream. Or second, use the `parseAs` option in the `addContentTypeParser` API, specifying `'string'` or `'buffer'`. Fastify will handle the stream, check the [maximum size](/docs/latest/Reference/Server/#factory-body-limit) of the body, and the content length. If the limit is exceeded, the custom parser will not be invoked.
+The request body can be parsed in two ways. First, add a custom content type parser and handle the request stream. Or second, use the `parseAs` option in the `addContentTypeParser` API, specifying `'string'` or `'buffer'`. Fastify will handle the stream, check the [maximum size](../Server/index.md#factory-body-limit) of the body, and the content length. If the limit is exceeded, the custom parser will not be invoked.
 
 ```
 fastify.addContentTypeParser('application/json', { parseAs: 'string' }, function (req, body, done) {  try {    const json = JSON.parse(body)    done(null, json)  } catch (err) {    err.statusCode = 400    done(err, undefined)  }})
@@ -98,7 +98,7 @@ See [`example/parser.js`](https://github.com/fastify/fastify/blob/main/examples/
 ##### Custom Parser Options[​](#custom-parser-options "Direct link to Custom Parser Options")
 
 *   `parseAs` (string): `'string'` or `'buffer'` to designate how the incoming data should be collected. Default: `'buffer'`.
-*   `bodyLimit` (number): The maximum payload size, in bytes, that the custom parser will accept. Defaults to the global body limit passed to the [`Fastify factory function`](/docs/latest/Reference/Server/#bodylimit).
+*   `bodyLimit` (number): The maximum payload size, in bytes, that the custom parser will accept. Defaults to the global body limit passed to the [`Fastify factory function`](../Server/index.md#bodylimit).
 
 #### Catch-All[​](#catch-all "Direct link to Catch-All")
 

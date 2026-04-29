@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:03.019Z"
 content_hash: "e66eb0618fc2c72c6a56922d1a1515a39c75f37897cd73478aa530f5fbe0796d"
 menu_path: ["Dep Optimization Options ​"]
 section_path: []
-nav_prev: {"path": "../build-options/index.md", "title": "Build Options \u200b"}
-nav_next: {"path": "../preview-options/index.md", "title": "Preview Options \u200b"}
+nav_prev: {"path": "vite/config/build-options/index.md", "title": "Build Options \u200b"}
+nav_next: {"path": "vite/config/preview-options/index.md", "title": "Preview Options \u200b"}
 ---
 
 *   **Related:** [Dependency Pre-Bundling](../../guide/dep-pre-bundling/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:27.885Z"
 content_hash: "ab1c519ceea2ec3f7e92add5e45388954474af8c5fc04c303398bed7e26bfbda"
 menu_path: ["Server Options ​"]
 section_path: []
-nav_prev: {"path": "../preview-options/index.md", "title": "Preview Options \u200b"}
-nav_next: {"path": "../shared-options/index.md", "title": "Shared Options \u200b"}
+nav_prev: {"path": "vite/config/preview-options/index.md", "title": "Preview Options \u200b"}
+nav_next: {"path": "vite/config/shared-options/index.md", "title": "Shared Options \u200b"}
 ---
 
 Unless noted, the options in this section are only applied to dev.

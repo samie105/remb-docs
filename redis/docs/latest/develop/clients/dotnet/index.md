@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:25.380Z"
 content_hash: "520da75a4efc5f53c6be5ce7acbfaaa8798d67a43d9c406b99e09e6539530afe"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        NRedisStack guide (C#/.NET)","→","NRedisStack guide (C#/.NET)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        NRedisStack guide (C#/.NET)","→","NRedisStack guide (C#/.NET)"]
-nav_prev: {"path": "../../ai/search-and-query/vectors/svs-compression/index.md", "title": "Vector quantization and compression"}
-nav_next: {"path": "../go/index.md", "title": "go-redis guide (Go)"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/svs-compression/index.md", "title": "Vector quantization and compression"}
+nav_next: {"path": "redis/docs/latest/develop/clients/go/index.md", "title": "go-redis guide (Go)"}
 ---
 
 # NRedisStack guide (C#/.NET)
@@ -21,7 +21,7 @@ Connect your .NET application to a Redis database
 
 `NRedisStack` requires a running Redis server. See [here](/docs/latest/operate/oss_and_stack/install/) for Redis Open Source installation instructions.
 
-You can also access Redis with an object-mapping client interface. See [Redis OM for .NET](/docs/latest/integrate/redisom-for-net/) for more information.
+You can also access Redis with an object-mapping client interface. See [Redis OM for .NET](../../../integrate/redisom-for-net/index.md) for more information.
 
 ## Install
 

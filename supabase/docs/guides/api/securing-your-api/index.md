@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:43.545Z"
 content_hash: "198bae0d20be8ce01ff5931fa6c3af8d3d55117c9376455ad95cb81d15a56abb"
 menu_path: ["Data REST API","Data REST API","Security","Security","Securing your API","Securing your API"]
 section_path: ["Data REST API","Data REST API","Security","Security","Securing your API","Securing your API"]
-nav_prev: {"path": "../rest/postgrest-error-codes/index.md", "title": "Error Codes"}
-nav_next: {"path": "../sql-to-api/index.md", "title": "Converting SQL to JavaScript API"}
+nav_prev: {"path": "supabase/docs/guides/api/rest/postgrest-error-codes/index.md", "title": "Error Codes"}
+nav_next: {"path": "supabase/docs/guides/api/sql-to-api/index.md", "title": "Converting SQL to JavaScript API"}
 ---
 
 # 
@@ -19,9 +19,9 @@ Securing your API
 
 * * *
 
-The data APIs are designed to work with Postgres Row Level Security (RLS). If you use [Supabase Auth](/docs/guides/auth), you can restrict data based on the logged-in user.
+The data APIs are designed to work with Postgres Row Level Security (RLS). If you use [Supabase Auth](../../auth/index.md), you can restrict data based on the logged-in user.
 
-To control access to your data, you can use [Policies](/docs/guides/auth#policies).
+To control access to your data, you can use [Policies](../../auth/index.md#policies).
 
 ## Enabling row level security[#](#enabling-row-level-security)
 
@@ -36,13 +36,13 @@ Any table created through the Supabase Dashboard will have RLS enabled by defaul
 1.  Go to the [Authentication > Policies](/dashboard/project/_/auth/policies) page in the Dashboard.
 2.  Select **Enable RLS** to enable Row Level Security.
 
-With RLS enabled, you can create Policies that allow or disallow users to access and update data. We provide a detailed guide for creating Row Level Security Policies in our [Authorization documentation](/docs/guides/database/postgres/row-level-security).
+With RLS enabled, you can create Policies that allow or disallow users to access and update data. We provide a detailed guide for creating Row Level Security Policies in our [Authorization documentation](../../database/postgres/row-level-security/index.md).
 
 Any table **without RLS enabled** in the `public` schema will be accessible to the public, using the `anon` role. Always make sure that RLS is enabled or that you've got other security measures in place to avoid unauthorized access to your project's data!
 
 ## Disable the API or restrict to custom schema[#](#disable-the-api-or-restrict-to-custom-schema)
 
-If you don't use the Data API, or if you don't want to expose the `public` schema, you can either disable it entirely or change the automatically exposed schema to one of your choice. See **[Hardening the Data API](/docs/guides/api/hardening-data-api)** for instructions.
+If you don't use the Data API, or if you don't want to expose the `public` schema, you can either disable it entirely or change the automatically exposed schema to one of your choice. See **[Hardening the Data API](../hardening-data-api/index.md)** for instructions.
 
 ## Enforce additional rules on each request[#](#enforce-additional-rules-on-each-request)
 
@@ -183,7 +183,7 @@ Read more about [PostgREST's pre-request function](https://postgrest.org/en/stab
 
 ### Examples[#](#examples)
 
-You can only rate-limit `POST`, `PUT`, `PATCH` and `DELETE` requests. This is because `GET` and `HEAD` requests run in read-only mode, and will be served by [Read Replicas](/docs/guides/platform/read-replicas) which do not support writing to the database.
+You can only rate-limit `POST`, `PUT`, `PATCH` and `DELETE` requests. This is because `GET` and `HEAD` requests run in read-only mode, and will be served by [Read Replicas](../../platform/read-replicas/index.md) which do not support writing to the database.
 
 Outline:
 
@@ -234,4 +234,4 @@ This ensures the function is called when evaluating RLS policies for all product
 
 Be aware that calling functions directly in RLS policies can impact database performance, as the function is evaluated for each row when the policy is checked. Consider optimizing your function or using caching strategies if performance becomes an issue.
 
-To clear old entries in the `private.rate_limits` table, set up a [pg\_cron](/docs/guides/database/extensions/pg_cron) job to clean them up.
+To clear old entries in the `private.rate_limits` table, set up a [pg\_cron](../../database/extensions/pg_cron/index.md) job to clean them up.

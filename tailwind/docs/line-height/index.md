@@ -10,8 +10,8 @@ content_hash: "1d59760ca95d8351b99758a43839b8a547937253d10fef2b338178a8afafd4f1"
 menu_path: ["line-height"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../line-clamp/index.md", "title": "line-clamp"}
-nav_next: {"path": "../list-style-image/index.md", "title": "list-style-image"}
+nav_prev: {"path": "tailwind/docs/line-clamp/index.md", "title": "line-clamp"}
+nav_next: {"path": "tailwind/docs/list-style-image/index.md", "title": "list-style-image"}
 ---
 
 Typography

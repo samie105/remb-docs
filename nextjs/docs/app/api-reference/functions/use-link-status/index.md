@@ -11,8 +11,8 @@ menu_path: ["useLinkStatus"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../updateTag/index.md", "title": "updateTag"}
-nav_next: {"path": "../use-params/index.md", "title": "useParams"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/updateTag/index.md", "title": "updateTag"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-params/index.md", "title": "useParams"}
 ---
 
 # useLinkStatus
@@ -23,8 +23,8 @@ The `useLinkStatus` hook lets you track the **pending** state of a `<Link>`. Use
 
 `useLinkStatus` is useful when:
 
--   [Prefetching](/docs/app/getting-started/linking-and-navigating#prefetching) is disabled or in progress meaning navigation is blocked.
--   The destination route is dynamic **and** doesn't include a [`loading.js`](/docs/app/api-reference/file-conventions/loading) file that would allow an instant navigation.
+-   [Prefetching](../../../getting-started/linking-and-navigating/index.md#prefetching) is disabled or in progress meaning navigation is blocked.
+-   The destination route is dynamic **and** doesn't include a [`loading.js`](../../file-conventions/loading/index.md) file that would allow an instant navigation.
 
 app/hint.tsx
 
@@ -204,12 +204,12 @@ Learn more about the features mentioned in this page by reading the API Referenc
 
 Enable fast client-side navigation with the built-in \`next/link\` component.
 
-](/docs/app/api-reference/components/link)[
+](../../components/link/index.md)[
 
 ### loading.js
 
 API reference for the loading.js file.
 
-](/docs/app/api-reference/file-conventions/loading)
+](../../file-conventions/loading/index.md)
 
 Was this helpful?

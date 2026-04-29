@@ -10,8 +10,8 @@ content_hash: "d498522804e368b55d4198c5340ac64dd1dfb6b281cf3aa2d7ae060ead499e70"
 menu_path: ["Deploy to Render"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../deploy-to-railway/index.md", "title": "Deploy to Railway"}
-nav_next: {"path": "../deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-railway/index.md", "title": "Deploy to Railway"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
 ---
 
 Learn how to deploy a Node.js server that uses Prisma ORM to Render

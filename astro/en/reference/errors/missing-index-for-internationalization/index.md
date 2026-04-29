@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:49.457Z"
 content_hash: "bb2e9813da5d0629f9315fa2e92d075d5c2f712a26b9e70672bf2072bc9f85d8"
 menu_path: ["Index page not found."]
 section_path: []
-nav_prev: {"path": "../missing-image-dimension/index.md", "title": "Missing image dimensions"}
-nav_next: {"path": "../missing-locale/index.md", "title": "The provided locale does not exist."}
+nav_prev: {"path": "astro/en/reference/errors/missing-image-dimension/index.md", "title": "Missing image dimensions"}
+nav_next: {"path": "astro/en/reference/errors/missing-locale/index.md", "title": "The provided locale does not exist."}
 ---
 
 # Index page not found.
@@ -21,11 +21,11 @@ nav_next: {"path": "../missing-locale/index.md", "title": "The provided locale d
 
 [Section titled “What went wrong?”](#what-went-wrong)
 
-Astro could not find the index URL of your website. An index page is required so that Astro can create a redirect from the main index page to the localized index page of the default locale when using [`i18n.routing.prefixDefaultLocale`](/en/reference/configuration-reference/#i18nroutingprefixdefaultlocale).
+Astro could not find the index URL of your website. An index page is required so that Astro can create a redirect from the main index page to the localized index page of the default locale when using [`i18n.routing.prefixDefaultLocale`](../../configuration-reference/index.md#i18nroutingprefixdefaultlocale).
 
 **See Also:**
 
-*   [Internationalization](/en/guides/internationalization/#routing)
-*   [`i18n.routing` Configuration Reference](/en/reference/configuration-reference/#i18nrouting)
+*   [Internationalization](../../../guides/internationalization/index.md#routing)
+*   [`i18n.routing` Configuration Reference](../../configuration-reference/index.md#i18nrouting)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

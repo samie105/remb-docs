@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:39.420Z"
 content_hash: "bbd530c1a0440489811a0434c2c3dc44a346c4dc9cfc416cefd9f882dac0db61"
 menu_path: ["WebSocket Link"]
 section_path: []
-nav_prev: {"path": "../splitLink/index.md", "title": "Split Link"}
-nav_next: {"path": "../../nextjs/index.md", "title": "Next.js Integration"}
+nav_prev: {"path": "trpc/docs/v10/client/links/splitLink/index.md", "title": "Split Link"}
+nav_next: {"path": "trpc/docs/v10/client/nextjs/index.md", "title": "Next.js Integration"}
 ---
 
 `wsLink` is a [**terminating link**](../index.md#the-terminating-link) that's used when using tRPC's WebSockets Client and Subscriptions, which you can learn more about [here](../../../subscriptions/index.md).

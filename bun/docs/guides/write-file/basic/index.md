@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:38.389Z"
 content_hash: "e7c7f62edb8e4c330f866123bd111cd3b6e84f2a9a2dadb09a3ee7dc46d327eb"
 menu_path: ["Write a string to a file"]
 section_path: []
-nav_prev: {"path": "../append/index.md", "title": "Append content to a file"}
-nav_next: {"path": "../blob/index.md", "title": "Write a Blob to a file"}
+nav_prev: {"path": "bun/docs/guides/write-file/append/index.md", "title": "Append content to a file"}
+nav_next: {"path": "bun/docs/guides/write-file/blob/index.md", "title": "Write a Blob to a file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../blob/index.md", "title": "Write a Blob to a file"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-This code snippet writes a string to disk at a particular _absolute path_. It uses the fast [`Bun.write()`](/docs/runtime/file-io#writing-files-bun-write) API to efficiently write data to disk. The first argument is a _destination_; the second is the _data_ to write.
+This code snippet writes a string to disk at a particular _absolute path_. It uses the fast [`Bun.write()`](../../../runtime/file-io/index.md#writing-files-bun-write) API to efficiently write data to disk. The first argument is a _destination_; the second is the _data_ to write.
 
 ```
 const path = "/path/to/file.txt";
@@ -72,7 +72,7 @@ const bytes = await Bun.write(path, "Lorem ipsum");
 
 * * *
 
-See [Docs > API > File I/O](/docs/runtime/file-io#writing-files-bun-write) for complete documentation of `Bun.write()`.
+See [Docs > API > File I/O](../../../runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
 
 Was this page helpful?
 
@@ -84,10 +84,10 @@ Read a file as a ReadableStream
 
 Previous
 
-](/docs/guides/read-file/stream)[
+](../../read-file/stream/index.md)[
 
 Write a Blob to a file
 
 Next
 
-](/docs/guides/write-file/blob)
+](../blob/index.md)

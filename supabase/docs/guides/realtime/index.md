@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:33.930Z"
 content_hash: "18c828d605656ea98cf3406660cac08a66faf5b4bb3093df8e14f378b1a5d528"
 menu_path: ["Realtime","Realtime","Overview","Overview"]
 section_path: ["Realtime","Realtime","Overview","Overview"]
-nav_prev: {"path": "../queues/quickstart/index.md", "title": "Quickstart"}
-nav_next: {"path": "architecture/index.md", "title": "Realtime Architecture"}
+nav_prev: {"path": "supabase/docs/guides/queues/quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "supabase/docs/guides/realtime/architecture/index.md", "title": "Realtime Architecture"}
 ---
 
 # 
@@ -25,9 +25,9 @@ Send and receive messages to connected clients.
 
 Supabase provides a globally distributed [Realtime](https://github.com/supabase/realtime) service with the following features:
 
-*   [Broadcast](/docs/guides/realtime/broadcast): Send low-latency messages between clients. Perfect for real-time messaging, database changes, cursor tracking, game events, and custom notifications.
-*   [Presence](/docs/guides/realtime/presence): Track and synchronize user state across clients. Ideal for showing who's online, or active participants.
-*   [Postgres Changes](/docs/guides/realtime/postgres-changes): Listen to database changes in real-time.
+*   [Broadcast](broadcast/index.md): Send low-latency messages between clients. Perfect for real-time messaging, database changes, cursor tracking, game events, and custom notifications.
+*   [Presence](presence/index.md): Track and synchronize user state across clients. Ideal for showing who's online, or active participants.
+*   [Postgres Changes](postgres-changes/index.md): Listen to database changes in real-time.
 
 ## What can you build?[#](#what-can-you-build)
 
@@ -37,7 +37,7 @@ Supabase provides a globally distributed [Realtime](https://github.com/supabase/
 *   **Multiplayer games** - Synchronized game state and player interactions
 *   **Social features** - Live notifications, reactions, and user activity feeds
 
-Check the [Getting Started](/docs/guides/realtime/getting_started) guide to get started.
+Check the [Getting Started](getting_started/index.md) guide to get started.
 
 ## Examples[#](#examples)
 

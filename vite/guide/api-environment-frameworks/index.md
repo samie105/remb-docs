@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:01.257Z"
 content_hash: "899cfb2fd2b95f660530e9aadda8d15a2812b581d13e29cd85bd5595d65b310e"
 menu_path: ["Environment API for Frameworks ​"]
 section_path: []
-nav_prev: {"path": "../api-environment-plugins/index.md", "title": "Environment API for Plugins \u200b"}
-nav_next: {"path": "../api-environment-runtimes/index.md", "title": "Environment API for Runtimes \u200b"}
+nav_prev: {"path": "vite/guide/api-environment-plugins/index.md", "title": "Environment API for Plugins \u200b"}
+nav_next: {"path": "vite/guide/api-environment-runtimes/index.md", "title": "Environment API for Runtimes \u200b"}
 ---
 
 ## Environment API for Frameworks [​](#environment-api-for-frameworks)

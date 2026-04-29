@@ -11,21 +11,21 @@ menu_path: ["Font Module"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Components"}
-nav_next: {"path": "../form/index.md", "title": "Form"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/components/index.md", "title": "Components"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/components/form/index.md", "title": "Form"}
 ---
 
 # Font Module
 
 Last updated April 23, 2026
 
-[`next/font`](/docs/app/api-reference/components/font) automatically optimizes your fonts (including custom fonts) and removes external network requests for improved privacy and performance.
+[`next/font`](../../../../app/api-reference/components/font/index.md) automatically optimizes your fonts (including custom fonts) and removes external network requests for improved privacy and performance.
 
 It includes **built-in automatic self-hosting** for any font file. This means you can optimally load web fonts with no [layout shift](https://web.dev/articles/cls).
 
 You can also conveniently use all [Google Fonts](https://fonts.google.com/). CSS and font files are downloaded at build time and self-hosted with the rest of your static assets. **No requests are sent to Google by the browser.**
 
-To use the font in all your pages, add it to [`_app.js` file](/docs/pages/building-your-application/routing/custom-app) under `/pages` as shown below:
+To use the font in all your pages, add it to [`_app.js` file](../../../building-your-application/routing/custom-app/index.md) under `/pages` as shown below:
 
 pages/\_app.js
 
@@ -112,7 +112,7 @@ Examples:
 
 ### `subsets`[](#subsets)
 
-The font [`subsets`](https://fonts.google.com/knowledge/glossary/subsetting) defined by an array of string values with the names of each subset you would like to be [preloaded](/docs/app/api-reference/components/font#specifying-a-subset). Fonts specified via `subsets` will have a link preload tag injected into the head when the [`preload`](#preload) option is true, which is the default.
+The font [`subsets`](https://fonts.google.com/knowledge/glossary/subsetting) defined by an array of string values with the names of each subset you would like to be [preloaded](../../../../app/api-reference/components/font/index.md#specifying-a-subset). Fonts specified via `subsets` will have a link preload tag injected into the head when the [`preload`](#preload) option is true, which is the default.
 
 Used in `next/font/google`
 
@@ -150,7 +150,7 @@ Examples:
 
 ### `preload`[](#preload)
 
-A boolean value that specifies whether the font should be [preloaded](/docs/app/api-reference/components/font#preloading) or not. The default is `true`.
+A boolean value that specifies whether the font should be [preloaded](../../../../app/api-reference/components/font/index.md#preloading) or not. The default is `true`.
 
 Used in `next/font/google` and `next/font/local`
 
@@ -216,7 +216,7 @@ Examples:
 
 To use a Google font, import it from `next/font/google` as a function. We recommend using [variable fonts](https://fonts.google.com/variablefonts) for the best performance and flexibility.
 
-To use the font in all your pages, add it to [`_app.js` file](/docs/pages/building-your-application/routing/custom-app) under `/pages` as shown below:
+To use the font in all your pages, add it to [`_app.js` file](../../../building-your-application/routing/custom-app/index.md) under `/pages` as shown below:
 
 pages/\_app.js
 
@@ -318,7 +318,7 @@ export default function Home() {
 
 ### Specifying a subset[](#specifying-a-subset)
 
-Google Fonts are automatically [subset](https://fonts.google.com/knowledge/glossary/subsetting). This reduces the size of the font file and improves performance. You'll need to define which of these subsets you want to preload. Failing to specify any subsets while [`preload`](/docs/app/api-reference/components/font#preload) is `true` will result in a warning.
+Google Fonts are automatically [subset](https://fonts.google.com/knowledge/glossary/subsetting). This reduces the size of the font file and improves performance. You'll need to define which of these subsets you want to preload. Failing to specify any subsets while [`preload`](../../../../app/api-reference/components/font/index.md#preload) is `true` will result in a warning.
 
 This can be done by adding it to the function call:
 
@@ -328,7 +328,7 @@ pages/\_app.js
 const inter = Inter({ subsets: ['latin'] })
 ```
 
-View the [Font API Reference](/docs/app/api-reference/components/font) for more information.
+View the [Font API Reference](../../../../app/api-reference/components/font/index.md) for more information.
 
 ## Using Multiple Fonts[](#using-multiple-fonts)
 
@@ -356,7 +356,7 @@ export const roboto_mono = Roboto_Mono({
 
 In the example above, `Inter` will be applied globally, and `Roboto Mono` can be imported and applied as needed.
 
-Alternatively, you can create a [CSS variable](/docs/app/api-reference/components/font#variable) and use it with your preferred CSS solution:
+Alternatively, you can create a [CSS variable](../../../../app/api-reference/components/font/index.md#variable) and use it with your preferred CSS solution:
 
 app/global.css
 
@@ -424,11 +424,11 @@ const roboto = localFont({
 })
 ```
 
-View the [Font API Reference](/docs/app/api-reference/components/font) for more information.
+View the [Font API Reference](../../../../app/api-reference/components/font/index.md) for more information.
 
 ### With Tailwind CSS[](#with-tailwind-css)
 
-`next/font` integrates seamlessly with [Tailwind CSS](https://tailwindcss.com/) using [CSS variables](/docs/app/api-reference/components/font#css-variables).
+`next/font` integrates seamlessly with [Tailwind CSS](https://tailwindcss.com/) using [CSS variables](../../../../app/api-reference/components/font/index.md#css-variables).
 
 In the example below, we use the `Inter` and `Roboto_Mono` fonts from `next/font/google` (you can use any Google Font or Local Font). Use the `variable` option to define a CSS variable name, such as `inter` and `roboto_mono` for these fonts, respectively. Then, apply `inter.variable` and `roboto_mono.variable` to include the CSS variables in your HTML document.
 
@@ -459,7 +459,7 @@ export default function MyApp({ Component, pageProps }) {
 }
 ```
 
-Finally, add the CSS variable to your [Tailwind CSS config](/docs/app/getting-started/css#tailwind-css):
+Finally, add the CSS variable to your [Tailwind CSS config](../../../../app/getting-started/css/index.md#tailwind-css):
 
 global.css
 
@@ -651,8 +651,8 @@ import { greatVibes, sourceCodePro400 } from '@/fonts'
 
 When a font function is called on a page of your site, it is not globally available and preloaded on all routes. Rather, the font is only preloaded on the related route/s based on the type of file where it is used:
 
--   if it's a [unique page](/docs/pages/building-your-application/routing/pages-and-layouts), it is preloaded on the unique route for that page
--   if it's in the [custom App](/docs/pages/building-your-application/routing/custom-app), it is preloaded on all the routes of the site under `/pages`
+-   if it's a [unique page](../../../building-your-application/routing/pages-and-layouts/index.md), it is preloaded on the unique route for that page
+-   if it's in the [custom App](../../../building-your-application/routing/custom-app/index.md), it is preloaded on all the routes of the site under `/pages`
 
 ## Version Changes[](#version-changes)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:10:07.973Z"
 content_hash: "631a037e9f09580b7af1e0406d6e6bb499521ea2641af5fa02bd81f5dcb0b935"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Module lifecycle","→","Module lifecycle"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Module lifecycle","→","Module lifecycle"]
-nav_prev: {"path": "../install/index.md", "title": "Install and upgrade modules"}
-nav_next: {"path": "../stack-quickstart/index.md", "title": "Redis Open Source quick start"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/install/index.md", "title": "Install and upgrade modules"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/stack-quickstart/index.md", "title": "Redis Open Source quick start"}
 ---
 
 # Module lifecycle

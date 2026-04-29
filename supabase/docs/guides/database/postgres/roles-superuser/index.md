@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:37.624Z"
 content_hash: "8961ac40b6877c6c4dba7e30d5ba287ab708431a66cfc4f06d84ac32936d2e8e"
 menu_path: ["Database","Database","Access and security","Access and security","Superuser Access and Unsupported Operations","Superuser Access and Unsupported Operations"]
 section_path: ["Database","Database","Access and security","Access and security","Superuser Access and Unsupported Operations","Superuser Access and Unsupported Operations"]
-nav_prev: {"path": "../roles/index.md", "title": "Postgres Roles"}
-nav_next: {"path": "../row-level-security/index.md", "title": "Row Level Security"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/roles/index.md", "title": "Postgres Roles"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/row-level-security/index.md", "title": "Row Level Security"}
 ---
 
 # 

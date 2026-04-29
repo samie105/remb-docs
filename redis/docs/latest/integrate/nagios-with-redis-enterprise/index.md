@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:10:12.572Z"
 content_hash: "579ac15158c7941f989c246b121bc6a7811086546b0f1229219291ad9b78824d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Nagios with Redis Software","→","Nagios with Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Nagios with Redis Software","→","Nagios with Redis Software"]
-nav_prev: {"path": "../n8n-vector-store/index.md", "title": "n8n Redis vector store"}
-nav_next: {"path": "../new-relic-with-redis-cloud/index.md", "title": "New Relic with Redis Cloud"}
+nav_prev: {"path": "redis/docs/latest/integrate/n8n-vector-store/index.md", "title": "n8n Redis vector store"}
+nav_next: {"path": "redis/docs/latest/integrate/new-relic-with-redis-cloud/index.md", "title": "New Relic with Redis Cloud"}
 ---
 
 # Nagios with Redis Software

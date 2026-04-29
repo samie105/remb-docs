@@ -10,8 +10,8 @@ content_hash: "a8c85369d0a1bc20d9d99ad1f9ab58e238cd539e8b2c7b0c9170608a2e057362"
 menu_path: ["deno add"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../../fundamentals/stability_and_releases/index.md", "title": "Stability and releases"}
-nav_next: {"path": "../approve_scripts/index.md", "title": "deno approve-scripts"}
+nav_prev: {"path": "deno/runtime/fundamentals/stability_and_releases/index.md", "title": "Stability and releases"}
+nav_next: {"path": "deno/runtime/reference/cli/approve_scripts/index.md", "title": "deno approve-scripts"}
 ---
 
 **On this page**
@@ -21,7 +21,7 @@ nav_next: {"path": "../approve_scripts/index.md", "title": "deno approve-scripts
 -   [Options](#options)
 -   [Dependency management options](#dependency-management-options)
 
-The `deno add` command adds dependencies to your project's configuration file. It is an alias for [`deno install [PACKAGES]`](/runtime/reference/cli/install/#deno-install-packages). For more on how Deno handles dependencies, see [Modules and dependencies](/runtime/fundamentals/modules/).
+The `deno add` command adds dependencies to your project's configuration file. It is an alias for [`deno install [PACKAGES]`](/runtime/reference/cli/install/#deno-install-packages). For more on how Deno handles dependencies, see [Modules and dependencies](../../../fundamentals/modules/index.md).
 
 ## Examples
 
@@ -53,7 +53,7 @@ deno add --npm express
 
 ## Where dependencies are stored
 
-If your project has a `package.json`, npm packages will be added to `dependencies` in `package.json`. Otherwise, all packages are added to the `imports` field in [`deno.json`](/runtime/fundamentals/configuration/).
+If your project has a `package.json`, npm packages will be added to `dependencies` in `package.json`. Otherwise, all packages are added to the `imports` field in [`deno.json`](../../../fundamentals/configuration/index.md).
 
 Command line usage:
 

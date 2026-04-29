@@ -10,8 +10,8 @@ content_hash: "83981c61071ffd1a04cbb15d1ba0b65afb5a52c6f1cab9c8456d856a99e381d3"
 menu_path: ["deno eval"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../doc/index.md", "title": "deno doc"}
-nav_next: {"path": "../fmt/index.md", "title": "deno fmt"}
+nav_prev: {"path": "deno/runtime/reference/cli/doc/index.md", "title": "deno doc"}
+nav_next: {"path": "deno/runtime/reference/cli/fmt/index.md", "title": "deno fmt"}
 ---
 
 # 3

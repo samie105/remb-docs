@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:41.278Z"
 content_hash: "686118d05d6a9c420c8f53988a50f064690ba67fbdab6cf08a71618b8d386171"
 menu_path: ["Step3"]
 section_path: []
-nav_prev: {"path": "../Step2/index.md", "title": "Step2"}
-nav_next: {"path": "../../migrate-from-v10-to-v11/index.md", "title": "Migrate from v10 to v11"}
+nav_prev: {"path": "trpc/docs/landing-intro/Step2/index.md", "title": "Step2"}
+nav_next: {"path": "trpc/docs/migrate-from-v10-to-v11/index.md", "title": "Migrate from v10 to v11"}
 ---
 
 ts

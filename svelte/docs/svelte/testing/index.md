@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:42.221Z"
 content_hash: "a0436461bbb132ece0a9c3757180cdb2099e6f52d41c3e8c29b2839a640c6afd"
 menu_path: ["Testing"]
 section_path: []
-nav_prev: {"path": "../best-practices/index.md", "title": "Best practices"}
-nav_next: {"path": "../typescript/index.md", "title": "TypeScript"}
+nav_prev: {"path": "svelte/docs/svelte/best-practices/index.md", "title": "Best practices"}
+nav_next: {"path": "svelte/docs/svelte/typescript/index.md", "title": "TypeScript"}
 ---
 
 Testing helps you write and maintain your code and guard against regressions. Testing frameworks help you with that, allowing you to describe assertions or expectations about how your code should behave. Svelte is unopinionated about which testing framework you use — you can write unit tests, integration tests, and end-to-end tests using solutions like [Vitest](https://vitest.dev/), [Jasmine](https://jasmine.github.io/), [Cypress](https://www.cypress.io/) and [Playwright](https://playwright.dev/).
@@ -776,4 +776,4 @@ import testtest('home page has expected h1', async ({ page }) => {
 
 previous next
 
-[Best practices](/docs/svelte/best-practices) [TypeScript](/docs/svelte/typescript)
+[Best practices](../best-practices/index.md) [TypeScript](../typescript/index.md)

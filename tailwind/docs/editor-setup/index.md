@@ -10,8 +10,8 @@ content_hash: "2e7240c81ea79b8f9c798732b3a37aeca33896b85cf2b4983517ab2ee7cc352f"
 menu_path: ["Editor setup"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../installation/index.md", "title": "Get started with Tailwind CSS"}
-nav_next: {"path": "../compatibility/index.md", "title": "Compatibility"}
+nav_prev: {"path": "tailwind/docs/installation/index.md", "title": "Get started with Tailwind CSS"}
+nav_next: {"path": "tailwind/docs/compatibility/index.md", "title": "Compatibility"}
 ---
 
 Tooling to improve the developer experience when working with Tailwind CSS.

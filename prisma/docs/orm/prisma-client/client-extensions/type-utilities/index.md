@@ -10,8 +10,8 @@ content_hash: "6fef9739d2b7dfd832645f2a4cd54339c63592218a774da7e4a39ed1f37846f2"
 menu_path: ["Type utilities"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../shared-extensions/permit-rbac/index.md", "title": "Fine-Grained Authorization (Permit)"}
-nav_next: {"path": "../../debugging-and-troubleshooting/debugging/index.md", "title": "Debugging"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/permit-rbac/index.md", "title": "Fine-Grained Authorization (Permit)"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/debugging/index.md", "title": "Debugging"}
 ---
 
 Client Extensions

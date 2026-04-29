@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:07.172Z"
 content_hash: "0d107bff7d7178c3afee261aed8ce1fcc74898c7e61b529b90c9da0b8d83b7aa"
 menu_path: ["Security Scanner API"]
 section_path: []
-nav_prev: {"path": "../scopes-registries/index.md", "title": "Scopes and registries"}
-nav_next: {"path": "../workspaces/index.md", "title": "Workspaces"}
+nav_prev: {"path": "bun/docs/pm/scopes-registries/index.md", "title": "Scopes and registries"}
+nav_next: {"path": "bun/docs/pm/workspaces/index.md", "title": "Workspaces"}
 ---
 
 # This might go in ~/.bashrc, for example
@@ -40,8 +40,8 @@ For a complete example with tests and CI setup, see the official template: [gith
 
 Related
 
-*   [Configuration (bunfig.toml)](/docs/runtime/bunfig#install-security-scanner)
-*   [Package Manager](/docs/installation)
+*   [Configuration (bunfig.toml)](../../runtime/bunfig/index.md#install-security-scanner)
+*   [Package Manager](../../installation/index.md)
 *   [Security Scanner Template](https://github.com/oven-sh/security-scanner-template)
 
 Was this page helpful?
@@ -54,10 +54,10 @@ Overrides and resolutions
 
 Previous
 
-](/docs/pm/overrides)[
+](../overrides/index.md)[
 
 .npmrc support
 
 Next
 
-](/docs/pm/npmrc)
+](../npmrc/index.md)

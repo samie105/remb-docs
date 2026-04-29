@@ -10,8 +10,8 @@ content_hash: "93234718b8df98cf1fc197d3b316d954cf34ba9519410f3340bf8078fe3cf45c"
 menu_path: ["deno check"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../bundle/index.md", "title": "deno bundle"}
-nav_next: {"path": "../clean/index.md", "title": "deno clean"}
+nav_prev: {"path": "deno/runtime/reference/cli/bundle/index.md", "title": "deno bundle"}
+nav_next: {"path": "deno/runtime/reference/cli/clean/index.md", "title": "deno clean"}
 ---
 
 **On this page**
@@ -23,7 +23,7 @@ nav_next: {"path": "../clean/index.md", "title": "deno clean"}
 -   [Dependency management options](#dependency-management-options)
 -   [Options](#options)
 
-`deno check` type-checks your TypeScript (or JavaScript) code without running it. This is useful in CI pipelines or before deploying to catch type errors early. For more on TypeScript in Deno, see the [TypeScript](/runtime/fundamentals/typescript/) guide.
+`deno check` type-checks your TypeScript (or JavaScript) code without running it. This is useful in CI pipelines or before deploying to catch type errors early. For more on TypeScript in Deno, see the [TypeScript](../../../fundamentals/typescript/index.md) guide.
 
 ## Basic usage
 
@@ -71,7 +71,7 @@ deno check --check-js main.js
 deno check main.ts && echo "Types OK"
 ```
 
-Note that [`deno test`](/runtime/reference/cli/test/) and [`deno bench`](/runtime/reference/cli/bench/) already perform type-checking by default, so you don't need a separate `deno check` step if you're already running tests. Use `deno check` when you want to type-check without running anything — for example, as a fast early step in CI:
+Note that [`deno test`](../test/index.md) and [`deno bench`](../bench/index.md) already perform type-checking by default, so you don't need a separate `deno check` step if you're already running tests. Use `deno check` when you want to type-check without running anything — for example, as a fast early step in CI:
 
 \>\_
 

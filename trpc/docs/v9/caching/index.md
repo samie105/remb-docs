@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:20.579Z"
 content_hash: "2cb56168e174cadb0bb90bc3e633f1dfef410697f2f29e803325e0216610eb19"
 menu_path: ["Response Caching"]
 section_path: []
-nav_prev: {"path": "../aws-lambda/index.md", "title": "Usage with Amazon Lambda through the API Gateway"}
-nav_next: {"path": "../context/index.md", "title": "Request Context"}
+nav_prev: {"path": "trpc/docs/v9/aws-lambda/index.md", "title": "Usage with Amazon Lambda through the API Gateway"}
+nav_next: {"path": "trpc/docs/v9/context/index.md", "title": "Request Context"}
 ---
 
 The below examples uses [Vercel's edge caching](https://vercel.com/docs/serverless-functions/edge-caching) to serve data to your users as fast as possible.

@@ -10,8 +10,8 @@ content_hash: "45aabbb5ecfdcc0f15cd07212bc90ec6b6ba018f41b7902c53e8dc5671d3b66c"
 menu_path: ["Crypto - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../canvas/index.md", "title": "Canvas - Web documentation"}
-nav_next: {"path": "../encoding/index.md", "title": "Encoding - Web documentation"}
+nav_prev: {"path": "deno/api/web/canvas/index.md", "title": "Canvas - Web documentation"}
+nav_next: {"path": "deno/api/web/encoding/index.md", "title": "Encoding - Web documentation"}
 ---
 
 I

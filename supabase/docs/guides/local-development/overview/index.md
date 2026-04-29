@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:51.882Z"
 content_hash: "33235833d451273c0fce58c7a7e34ea4318950ad52451289d7a61059bd3b5fc4"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Getting started","Getting started"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Getting started","Getting started"]
-nav_prev: {"path": "../managing-config/index.md", "title": "Managing config and secrets"}
-nav_next: {"path": "../restoring-downloaded-backup/index.md", "title": "Restoring a downloaded backup locally"}
+nav_prev: {"path": "supabase/docs/guides/local-development/managing-config/index.md", "title": "Managing config and secrets"}
+nav_next: {"path": "supabase/docs/guides/local-development/restoring-downloaded-backup/index.md", "title": "Restoring a downloaded backup locally"}
 ---
 
 # 

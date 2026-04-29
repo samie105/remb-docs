@@ -88,4 +88,4 @@ Similarly, if you only want to show the error state, you can omit the `then` blo
 
 previous next
 
-[{#key ...}](/docs/svelte/key) [{#snippet ...}](/docs/svelte/snippet)
+[{#key ...}](../key/index.md) [{#snippet ...}](../snippet/index.md)

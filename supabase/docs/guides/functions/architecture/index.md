@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:30.861Z"
 content_hash: "783f9c132945e960a67f34c3165f9c3e016c036363b9702be564b795b057e413"
 menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Architecture","Architecture"]
 section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Architecture","Architecture"]
-nav_prev: {"path": "../ai-models/index.md", "title": "Running AI Models"}
-nav_next: {"path": "../auth/index.md", "title": "Securing Edge Functions"}
+nav_prev: {"path": "supabase/docs/guides/functions/ai-models/index.md", "title": "Running AI Models"}
+nav_next: {"path": "supabase/docs/guides/functions/auth/index.md", "title": "Securing Edge Functions"}
 ---
 
 # 

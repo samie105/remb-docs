@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:23.700Z"
 content_hash: "f1191acc7b2265ac0c4ffeb8770f1f75d4d0d685c8798500794778600319acdf"
 menu_path: ["PostgreSQL: Documentation: 18: ANALYZE"]
 section_path: []
-nav_prev: {"path": "../sql-alterlanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER LANGUAGE"}
-nav_next: {"path": "../sql-begin.html/index.md", "title": "PostgreSQL: Documentation: 18: BEGIN"}
+nav_prev: {"path": "postgres/docs/current/sql-alterlanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: ALTER LANGUAGE"}
+nav_next: {"path": "postgres/docs/current/sql-begin.html/index.md", "title": "PostgreSQL: Documentation: 18: BEGIN"}
 ---
 
 ## Description

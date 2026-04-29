@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:47.841Z"
 content_hash: "4f989c2521f2b947fed87c57e38e2980192ff543ee51b47f2024a83c68375054"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis for AI","→","Redis for AI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis for AI","→","Redis for AI"]
-nav_prev: {"path": "../railway-redis/index.md", "title": "Redis on Railway"}
-nav_next: {"path": "../redis-data-integration/index.md", "title": "Redis Data Integration"}
+nav_prev: {"path": "redis/docs/latest/integrate/railway-redis/index.md", "title": "Redis on Railway"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/index.md", "title": "Redis Data Integration"}
 ---
 
 # Redis for AI
@@ -44,7 +44,7 @@ The Redis Vector Library (RedisVL) is a Python client library for building AI ap
 *   **RAG Utilities**: Tools for building retrieval-augmented generation apps
 *   **Framework Integration**: Works with LangChain, LlamaIndex, and more
 
-[Learn more about RedisVL](/docs/latest/develop/ai/redisvl/)
+[Learn more about RedisVL](../../develop/ai/redisvl/index.md)
 
 ### LangChain Integration
 
@@ -61,8 +61,8 @@ Use Redis with LangChain for vector stores, semantic caching, and chat message h
 All major Redis client libraries support vector search operations:
 
 *   **redis-py (Python)**: [Vector search guide](/docs/latest/develop/clients/redis-py/vecsearch/)
-*   **node-redis (JavaScript)**: [Vector search guide](/docs/latest/develop/clients/nodejs/vecsearch/)
-*   **Jedis (Java)**: [Vector search guide](/docs/latest/develop/clients/jedis/vecsearch/)
+*   **node-redis (JavaScript)**: [Vector search guide](../../develop/clients/nodejs/vecsearch/index.md)
+*   **Jedis (Java)**: [Vector search guide](../../develop/clients/jedis/vecsearch/index.md)
 *   **NRedisStack (C#/.NET)**: [Vector search guide](/docs/latest/develop/clients/dotnet/vecsearch/)
 *   **go-redis (Go)**: [Vector search guide](/docs/latest/develop/clients/go/vecsearch/)
 
@@ -70,8 +70,8 @@ All major Redis client libraries support vector search operations:
 
 ### Quick Start Guides
 
-*   [Redis vector database quick start](/docs/latest/develop/get-started/vector-database/)
-*   [RAG quick start guide](/docs/latest/develop/get-started/rag/)
+*   [Redis vector database quick start](../../develop/get-started/vector-database/index.md)
+*   [RAG quick start guide](../../develop/get-started/rag/index.md)
 
 ### Tutorials and Examples
 

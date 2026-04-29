@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:52.972Z"
 content_hash: "c84723eac9e3089b1f146ba65ac84f7d2d5bcecb81677ff81f6b8a06df6eb596"
 menu_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Migrating from Auth Helpers","Migrating from Auth Helpers"]
 section_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Migrating from Auth Helpers","Migrating from Auth Helpers"]
-nav_prev: {"path": "../creating-a-client/index.md", "title": "Creating a Supabase client for SSR"}
-nav_next: {"path": "../../sessions/index.md", "title": "User sessions"}
+nav_prev: {"path": "supabase/docs/guides/auth/server-side/creating-a-client/index.md", "title": "Creating a Supabase client for SSR"}
+nav_next: {"path": "supabase/docs/guides/auth/sessions/index.md", "title": "User sessions"}
 ---
 
 # 
@@ -35,10 +35,10 @@ The new `ssr` package takes the core concepts of the Auth Helpers and makes them
 
 The new `ssr` package exports two functions for creating a Supabase client. The `createBrowserClient` function is used in the client, and the `createServerClient` function is used in the server.
 
-Read the [Creating a client](/docs/guides/auth/server-side/creating-a-client) page for examples of creating a client in your framework [and our migration guide](/docs/guides/troubleshooting/how-to-migrate-from-supabase-auth-helpers-to-ssr-package-5NRunM).
+Read the [Creating a client](../creating-a-client/index.md) page for examples of creating a client in your framework [and our migration guide](/docs/guides/troubleshooting/how-to-migrate-from-supabase-auth-helpers-to-ssr-package-5NRunM).
 
 ## Next steps[#](#next-steps)
 
-*   Implement [Authentication using Email and Password](/docs/guides/auth/passwords)
-*   Implement [Authentication using OAuth](/docs/guides/auth/social-login)
-*   [Learn more about SSR](/docs/guides/auth/server-side/advanced-guide)
+*   Implement [Authentication using Email and Password](../../passwords/index.md)
+*   Implement [Authentication using OAuth](../../social-login/index.md)
+*   [Learn more about SSR](../advanced-guide/index.md)

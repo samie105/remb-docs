@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:03.081Z"
 content_hash: "2755402c696e282df8cd1c8b697560e46cf670aa0e69be081e4d669e3a09026a"
 menu_path: ["Congratulations!"]
 section_path: []
-nav_prev: {"path": "../2/index.md", "title": "Back on dry land. Take your blog from day to night, no island required!"}
-nav_next: {"path": "../4/index.md", "title": "Optional: Make a content collection"}
+nav_prev: {"path": "astro/en/tutorial/6-islands/2/index.md", "title": "Back on dry land. Take your blog from day to night, no island required!"}
+nav_next: {"path": "astro/en/tutorial/6-islands/4/index.md", "title": "Optional: Make a content collection"}
 ---
 
 # Congratulations!
@@ -53,8 +53,8 @@ Congratulations on completing the Astro blog tutorial! Share your achievement wi
 
 You can enhance this project’s final code with one of our tutorial extensions, or start your next Astro project!
 
-[Start a new Astro Project](/en/install-and-setup/) Begin a new empty project, or use an existing Astro theme template.
+[Start a new Astro Project](../../../install-and-setup/index.md) Begin a new empty project, or use an existing Astro theme template.
 
 [Join us on Discord](https://astro.build/chat) Connect with our community to ask questions, share your work, and get involved with the project!
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:58:35.770Z"
 content_hash: "d2f6897a8faa35d0d1cf907eeebf5c76b534a0adc6caaa6e524b879ac9b8dd84"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Go","→","Rolling sensor graph demo with Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Go","→","Rolling sensor graph demo with Go"]
-nav_prev: {"path": "../dotnet/index.md", "title": "Rolling sensor graph demo with Redis and .NET"}
-nav_next: {"path": "../java-jedis/index.md", "title": "Rolling sensor graph demo with Java and Jedis"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/dotnet/index.md", "title": "Rolling sensor graph demo with Redis and .NET"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/java-jedis/index.md", "title": "Rolling sensor graph demo with Java and Jedis"}
 ---
 
 # Rolling sensor graph demo with Go
 
 Build a Redis-backed rolling sensor graph demo in Go with go-redis
 
-This guide shows you how to build a compact rolling sensor graph demo in Go with the [`go-redis`](/docs/latest/develop/clients/go/) client library and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
+This guide shows you how to build a compact rolling sensor graph demo in Go with the [`go-redis`](../../../clients/go/index.md) client library and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
 
 ## Overview
 
@@ -161,7 +161,7 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 
 ## Learn more
 
-*   [Go client guide](/docs/latest/develop/clients/go/) - Install and use the Go client
+*   [Go client guide](../../../clients/go/index.md) - Install and use the Go client
 *   [Time series overview](/docs/latest/develop/data-types/timeseries/) - Time series concepts and commands
 *   [TS.RANGE command](/docs/latest/commands/ts.range/) - Query raw and aggregated ranges from a time series
 *   [TS.MADD command](/docs/latest/commands/ts.madd/) - Add multiple samples in one call

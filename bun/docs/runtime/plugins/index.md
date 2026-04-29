@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:10.824Z"
 content_hash: "381e87f974740029633f3fc3aa00caa299c42c6a3092ce3da3c0644fd3e011ed"
 menu_path: ["Plugins"]
 section_path: []
-nav_prev: {"path": "../nodejs-compat/index.md", "title": "Node.js Compatibility"}
-nav_next: {"path": "../redis/index.md", "title": "Redis"}
+nav_prev: {"path": "bun/docs/runtime/nodejs-compat/index.md", "title": "Node.js Compatibility"}
+nav_next: {"path": "bun/docs/runtime/redis/index.md", "title": "Redis"}
 ---
 
 Bun provides a universal plugin API that can be used to extend both the _runtime_ and _bundler_. Plugins intercept imports and perform custom loading logic: reading files, transpiling code, etc. They can be used to add support for additional file types, like `.scss` or `.yaml`. In the context of Bun’s bundler, plugins can be used to implement framework-level features like CSS extraction, macros, and client-server code co-location.

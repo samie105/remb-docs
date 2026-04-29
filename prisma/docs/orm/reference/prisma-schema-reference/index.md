@@ -11,8 +11,8 @@ menu_path: ["Schema API"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "../prisma-client-reference/index.md", "title": "Prisma Client API"}
-nav_next: {"path": "../prisma-config-reference/index.md", "title": "Config API"}
+nav_prev: {"path": "prisma/docs/orm/reference/prisma-client-reference/index.md", "title": "Prisma Client API"}
+nav_next: {"path": "prisma/docs/orm/reference/prisma-config-reference/index.md", "title": "Config API"}
 ---
 
 Defines a [data source](../../prisma-schema/overview/data-sources/index.md) in the Prisma schema.

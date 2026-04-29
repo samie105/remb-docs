@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:48.008Z"
 content_hash: "e98555c931b18ffa143e58bfd1a24288b95b6210a686fb1f508d831b52104e86"
 menu_path: ["esbuild"]
 section_path: []
-nav_prev: {"path": "../css/index.md", "title": "CSS"}
-nav_next: {"path": "../executables/index.md", "title": "Single-file executable"}
+nav_prev: {"path": "bun/docs/bundler/css/index.md", "title": "CSS"}
+nav_next: {"path": "bun/docs/bundler/executables/index.md", "title": "Single-file executable"}
 ---
 
 # esbuild

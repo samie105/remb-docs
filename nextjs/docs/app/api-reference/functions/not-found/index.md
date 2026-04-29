@@ -11,19 +11,19 @@ menu_path: ["notFound"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../next-response/index.md", "title": "NextResponse"}
-nav_next: {"path": "../permanentRedirect/index.md", "title": "permanentRedirect"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/next-response/index.md", "title": "NextResponse"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/permanentRedirect/index.md", "title": "permanentRedirect"}
 ---
 
 # notFound
 
 Last updated April 23, 2026
 
-The `notFound` function allows you to render the [`not-found file`](/docs/app/api-reference/file-conventions/not-found) within a route segment as well as inject a [`<meta name="robots" content="noindex" />`](/docs/app/api-reference/file-conventions/loading#status-codes) tag for search engines.
+The `notFound` function allows you to render the [`not-found file`](../../file-conventions/not-found/index.md) within a route segment as well as inject a [`<meta name="robots" content="noindex" />`](../../file-conventions/loading/index.md#status-codes) tag for search engines.
 
 ## `notFound()`[](#notfound)
 
-Invoking the `notFound()` function throws a `NEXT_HTTP_ERROR_FALLBACK;404` error and terminates rendering of the route segment in which it was thrown. Specifying a [**not-found** file](/docs/app/api-reference/file-conventions/not-found) allows you to gracefully handle such errors by rendering a Not Found UI within the segment.
+Invoking the `notFound()` function throws a `NEXT_HTTP_ERROR_FALLBACK;404` error and terminates rendering of the route segment in which it was thrown. Specifying a [**not-found** file](../../file-conventions/not-found/index.md) allows you to gracefully handle such errors by rendering a Not Found UI within the segment.
 
 app/user/\[id\]/page.js
 

@@ -10,8 +10,8 @@ content_hash: "207dc7a806ed5af64bf151cc312c831225dce9790268e4354d71ace686887e4f"
 menu_path: ["PostgreSQL: Documentation: 18: H.1. Client Interfaces"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../external-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: H.4.\u00a0Extensions"}
-nav_next: {"path": "../external-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: H.3.\u00a0Procedural Languages"}
+nav_prev: {"path": "postgres/docs/current/external-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: H.4.\u00a0Extensions"}
+nav_next: {"path": "postgres/docs/current/external-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: H.3.\u00a0Procedural Languages"}
 ---
 
 There are only two client interfaces included in the base PostgreSQL distribution:

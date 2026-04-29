@@ -10,8 +10,8 @@ content_hash: "cce806c394e2ca7a9cfeb24752d94821eccf07883e22163f9bed46165085a68d"
 menu_path: ["Drizzle"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../../core-concepts/supported-databases/sqlite/index.md", "title": "SQLite"}
-nav_next: {"path": "../prisma-and-mongoose/index.md", "title": "Mongoose"}
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md", "title": "SQLite"}
+nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-mongoose/index.md", "title": "Mongoose"}
 ---
 
 Prisma and Drizzle take different approaches to working with databases. While Drizzle appeals to developers who prefer writing queries close to SQL, Prisma is designed to support teams building and maintaining production applications—where clarity, collaboration, and long-term maintainability matter.

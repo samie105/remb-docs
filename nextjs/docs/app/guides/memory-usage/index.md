@@ -11,8 +11,8 @@ menu_path: ["How to optimize memory usage"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../mdx/index.md", "title": "How to use markdown and MDX in Next.js"}
-nav_next: {"path": "../migrating/index.md", "title": "Migrating"}
+nav_prev: {"path": "nextjs/docs/app/guides/mdx/index.md", "title": "How to use markdown and MDX in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/migrating/index.md", "title": "Migrating"}
 ---
 
 # How to optimize memory usage
@@ -27,7 +27,7 @@ Let's explore some strategies and techniques to optimize memory and address comm
 
 Applications with a large amount of dependencies will use more memory.
 
-The [Bundle Analyzer](/docs/app/guides/package-bundling) can help you investigate large dependencies in your application that may be able to be removed to improve performance and memory usage.
+The [Bundle Analyzer](../package-bundling/index.md) can help you investigate large dependencies in your application that may be able to be removed to improve performance and memory usage.
 
 ## Try `experimental.webpackMemoryOptimizations`[](#try-experimentalwebpackmemoryoptimizations)
 
@@ -83,7 +83,7 @@ If you are using an older version of Next.js or you have a custom Webpack config
 
 The [Webpack cache](https://webpack.js.org/configuration/cache/) saves generated Webpack modules in memory and/or to disk to improve the speed of builds. This can help with performance, but it will also increase the memory usage of your application to store the cached data.
 
-You can disable this behavior by adding a [custom Webpack configuration](/docs/app/api-reference/config/next-config-js/webpack) to your application:
+You can disable this behavior by adding a [custom Webpack configuration](../../api-reference/config/next-config-js/webpack/index.md) to your application:
 
 next.config.mjs
 
@@ -128,7 +128,7 @@ const nextConfig = {
 export default nextConfig
 ```
 
--   [Ignoring TypeScript Errors](/docs/app/api-reference/config/typescript#disabling-typescript-errors-in-production)
+-   [Ignoring TypeScript Errors](../../api-reference/config/typescript/index.md#disabling-typescript-errors-in-production)
 
 Keep in mind that this may produce faulty deploys due to type errors. We strongly recommend only promoting builds to production after static analysis has completed. If you deploy to Vercel, you can check out the [guide for staging deployments](https://vercel.com/docs/deployments/managing-deployments#staging-and-promoting-a-production-deployment) to learn how to promote builds to production after custom tasks have succeeded.
 

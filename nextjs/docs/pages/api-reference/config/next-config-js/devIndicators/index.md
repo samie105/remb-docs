@@ -11,8 +11,8 @@ menu_path: ["devIndicators"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../deploymentId/index.md", "title": "deploymentId"}
-nav_next: {"path": "../distDir/index.md", "title": "distDir"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/deploymentId/index.md", "title": "deploymentId"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
 ---
 
 # devIndicators
@@ -40,7 +40,7 @@ Setting `devIndicators` to `false` will hide the indicator, however Next.js will
 
 If you expect a route to be static and the indicator has marked it as dynamic, it's likely the route has opted out of prerendering.
 
-You can confirm if a route is [prerendered](/docs/app/glossary#prerendering) or [dynamically rendered](/docs/app/glossary#dynamic-rendering) by building your application using `next build --debug`, and checking the output in your terminal. Static (or prerendered) routes will display a `○` symbol, whereas dynamic routes will display a `ƒ` symbol. For example:
+You can confirm if a route is [prerendered](../../../../../app/glossary/index.md#prerendering) or [dynamically rendered](../../../../../app/glossary/index.md#dynamic-rendering) by building your application using `next build --debug`, and checking the output in your terminal. Static (or prerendered) routes will display a `○` symbol, whereas dynamic routes will display a `ƒ` symbol. For example:
 
 Build Output
 
@@ -53,7 +53,7 @@ Route (app)
 ƒ  (Dynamic)  server-rendered on demand
 ```
 
-When exporting [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props) or [`getInitialProps`](/docs/pages/api-reference/functions/get-initial-props) from a page, it will be marked as dynamic.
+When exporting [`getServerSideProps`](../../../../building-your-application/data-fetching/get-server-side-props/index.md) or [`getInitialProps`](../../../functions/get-initial-props/index.md) from a page, it will be marked as dynamic.
 
 ## Version History[](#version-history)
 

@@ -10,8 +10,8 @@ content_hash: "1271c9385e9a589fa5c3c456017a5d328afeffad3a9496baa41bcd81f4962b27"
 menu_path: ["Shared packages & examples"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../client/index.md", "title": "Add methods to Prisma Client"}
-nav_next: {"path": "../model/index.md", "title": "Add custom methods to your models"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/client/index.md", "title": "Add methods to Prisma Client"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/model/index.md", "title": "Add custom methods to your models"}
 ---
 
 Client Extensions

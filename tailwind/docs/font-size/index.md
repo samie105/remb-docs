@@ -10,8 +10,8 @@ content_hash: "b315f446df4564791d7d7306c38625048bf8a5d8f9736c931fbdda46d29a88c7"
 menu_path: ["font-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../font-family/index.md", "title": "font-family"}
-nav_next: {"path": "../font-smoothing/index.md", "title": "font-smoothing"}
+nav_prev: {"path": "tailwind/docs/font-family/index.md", "title": "font-family"}
+nav_next: {"path": "tailwind/docs/font-smoothing/index.md", "title": "font-smoothing"}
 ---
 
 Typography

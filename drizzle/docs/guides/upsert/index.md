@@ -10,8 +10,8 @@ content_hash: "136a8c66440fdd0b7a4fdaf46dcb2883587ed138927207a4204e18ab15215c4c"
 menu_path: ["Drizzle ORM - Upsert Query"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../update-many-with-different-value/index.md", "title": "Drizzle ORM - Update many with different values for each row"}
-nav_next: {"path": "../vector-similarity-search/index.md", "title": "Drizzle ORM - Vector similarity search with pgvector extension"}
+nav_prev: {"path": "drizzle/docs/guides/update-many-with-different-value/index.md", "title": "Drizzle ORM - Update many with different values for each row"}
+nav_next: {"path": "drizzle/docs/guides/vector-similarity-search/index.md", "title": "Drizzle ORM - Vector similarity search with pgvector extension"}
 ---
 
 Drizzle | Upsert Query

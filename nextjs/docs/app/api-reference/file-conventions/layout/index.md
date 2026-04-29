@@ -11,8 +11,8 @@ menu_path: ["layout.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../intercepting-routes/index.md", "title": "Intercepting Routes"}
-nav_next: {"path": "../loading/index.md", "title": "loading.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/intercepting-routes/index.md", "title": "Intercepting Routes"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/loading/index.md", "title": "loading.js"}
 ---
 
 # layout.js
@@ -35,7 +35,7 @@ export default function DashboardLayout({
 }
 ```
 
-In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `layout.js` is the outermost component in a route segment. It wraps `template.js`, `error.js`, `loading.js`, `not-found.js`, and `page.js`.
+In the [component hierarchy](../../../getting-started/project-structure/index.md#component-hierarchy), `layout.js` is the outermost component in a route segment. It wraps `template.js`, `error.js`, `loading.js`, `not-found.js`, and `page.js`.
 
 A **root layout** is the top-most layout in the root `app` directory. It is used to define the `<html>` and `<body>` tags and other globally shared UI.
 
@@ -63,11 +63,11 @@ export default function RootLayout({
 
 #### `children` (required)[](#children-required)
 
-Layout components should accept and use a `children` prop. During rendering, `children` will be populated with the route segments the layout is wrapping. These will primarily be the component of a child [Layout](/docs/app/api-reference/file-conventions/page) (if it exists) or [Page](/docs/app/api-reference/file-conventions/page), but could also be other special files like [Loading](/docs/app/api-reference/file-conventions/loading) or [Error](/docs/app/getting-started/error-handling) when applicable.
+Layout components should accept and use a `children` prop. During rendering, `children` will be populated with the route segments the layout is wrapping. These will primarily be the component of a child [Layout](../page/index.md) (if it exists) or [Page](../page/index.md), but could also be other special files like [Loading](../loading/index.md) or [Error](../../../getting-started/error-handling/index.md) when applicable.
 
 #### `params` (optional)[](#params-optional)
 
-A promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) object from the root segment down to that layout.
+A promise that resolves to an object containing the [dynamic route parameters](../dynamic-routes/index.md) object from the root segment down to that layout.
 
 app/dashboard/\[team\]/layout.tsx
 
@@ -140,12 +140,12 @@ export default function RootLayout({
 ```
 
 -   The root layout **must** define `<html>` and `<body>` tags.
-    -   You should **not** manually add `<head>` tags such as `<title>` and `<meta>` to root layouts. Instead, you should use the [Metadata API](/docs/app/getting-started/metadata-and-og-images) which automatically handles advanced requirements such as streaming and de-duplicating `<head>` elements.
+    -   You should **not** manually add `<head>` tags such as `<title>` and `<meta>` to root layouts. Instead, you should use the [Metadata API](../../../getting-started/metadata-and-og-images/index.md) which automatically handles advanced requirements such as streaming and de-duplicating `<head>` elements.
 -   You can create **multiple root layouts**. Any layout without a `layout.js` above it is a root layout. Two common approaches:
-    -   Using [route groups](/docs/app/api-reference/file-conventions/route-groups) like `app/(shop)/layout.js` and `app/(marketing)/layout.js`
+    -   Using [route groups](../route-groups/index.md) like `app/(shop)/layout.js` and `app/(marketing)/layout.js`
     -   Omitting `app/layout.js` so layouts in subdirectories like `app/dashboard/layout.js` and `app/blog/layout.js` each become root layouts for their respective directories.
     -   Navigating **across multiple root layouts** will cause a **full page load** (as opposed to a client-side navigation).
--   The root layout can be under a **dynamic segment**, for example when implementing [internationalization](/docs/app/guides/internationalization) with `app/[lang]/layout.js`.
+-   The root layout can be under a **dynamic segment**, for example when implementing [internationalization](../../../guides/internationalization/index.md) with `app/[lang]/layout.js`.
 
 ## Caveats[](#caveats)
 
@@ -153,9 +153,9 @@ export default function RootLayout({
 
 Layouts are cached in the client during navigation to avoid unnecessary server requests.
 
-[Layouts](/docs/app/api-reference/file-conventions/layout) do not rerender. They can be cached and reused to avoid unnecessary computation when navigating between pages. By restricting layouts from accessing the raw request, Next.js can prevent the execution of potentially slow or expensive user code within the layout, which could negatively impact performance.
+[Layouts](index.md) do not rerender. They can be cached and reused to avoid unnecessary computation when navigating between pages. By restricting layouts from accessing the raw request, Next.js can prevent the execution of potentially slow or expensive user code within the layout, which could negatively impact performance.
 
-To access the request object, you can use [`headers`](/docs/app/api-reference/functions/headers) and [`cookies`](/docs/app/api-reference/functions/cookies) APIs in [Server Components](/docs/app/getting-started/server-and-client-components) and Functions.
+To access the request object, you can use [`headers`](../../functions/headers/index.md) and [`cookies`](../../functions/cookies/index.md) APIs in [Server Components](../../../getting-started/server-and-client-components/index.md) and Functions.
 
 app/shop/layout.tsx
 
@@ -175,7 +175,7 @@ export default async function Layout({ children }) {
 
 Layouts do not rerender on navigation, so they cannot access search params which would otherwise become stale.
 
-To access updated query parameters, you can use the Page [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional) prop, or read them inside a Client Component using the [`useSearchParams`](/docs/app/api-reference/functions/use-search-params) hook. Since Client Components re-render on navigation, they have access to the latest query parameters.
+To access updated query parameters, you can use the Page [`searchParams`](../page/index.md#searchparams-optional) prop, or read them inside a Client Component using the [`useSearchParams`](../../functions/use-search-params/index.md) hook. Since Client Components re-render on navigation, they have access to the latest query parameters.
 
 app/ui/search.tsx
 
@@ -216,7 +216,7 @@ export default function Layout({ children }) {
 
 Layouts do not re-render on navigation, so they do not access pathname which would otherwise become stale.
 
-To access the current pathname, you can read it inside a Client Component using the [`usePathname`](/docs/app/api-reference/functions/use-pathname) hook. Since Client Components re-render during navigation, they have access to the latest pathname.
+To access the current pathname, you can read it inside a Client Component using the [`usePathname`](../../functions/use-pathname/index.md) hook. Since Client Components re-render during navigation, they have access to the latest pathname.
 
 app/ui/breadcrumbs.tsx
 
@@ -264,9 +264,9 @@ export default function Layout({ children }) {
 
 ### Interaction with `loading.js`[](#interaction-with-loadingjs)
 
-Because `loading.js` sits below `layout.js` in the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), it cannot show a fallback for uncached or runtime data access in the layout itself, such as calling [`cookies()`](/docs/app/api-reference/functions/cookies), [`headers()`](/docs/app/api-reference/functions/headers), or making uncached fetches.
+Because `loading.js` sits below `layout.js` in the [component hierarchy](../../../getting-started/project-structure/index.md#component-hierarchy), it cannot show a fallback for uncached or runtime data access in the layout itself, such as calling [`cookies()`](../../functions/cookies/index.md), [`headers()`](../../functions/headers/index.md), or making uncached fetches.
 
-The behavior depends on whether [Cache Components](/docs/app/getting-started/caching) is enabled:
+The behavior depends on whether [Cache Components](../../../getting-started/caching/index.md) is enabled:
 
 -   **Without Cache Components:** The navigation will block until the layout finishes rendering, and the `loading.js` fallback will not be shown.
 -   **With Cache Components:** `loading.js` is treated as a regular `<Suspense>` boundary rather than a special prefetch marker. Uncached or runtime data access in the layout must be explicitly wrapped in its own `<Suspense>` boundary, otherwise Next.js guides you with a build-time error. The static shell streams immediately, and the uncached content swaps in as it resolves.
@@ -301,7 +301,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 Layouts cannot pass data to their `children`. However, you can fetch the same data in a route more than once, and use React [`cache`](https://react.dev/reference/react/cache) to dedupe the requests without affecting performance.
 
-Alternatively, when using [`fetch`](/docs/app/api-reference/functions/fetch)in Next.js, requests are automatically deduped.
+Alternatively, when using [`fetch`](../../functions/fetch/index.md)in Next.js, requests are automatically deduped.
 
 app/lib/data.ts
 
@@ -358,7 +358,7 @@ export default async function Page() {
 
 ### Accessing child segments[](#accessing-child-segments)
 
-Layouts do not have access to the route segments below itself. To access all route segments, you can use [`useSelectedLayoutSegment`](/docs/app/api-reference/functions/use-selected-layout-segment) or [`useSelectedLayoutSegments`](/docs/app/api-reference/functions/use-selected-layout-segments) in a Client Component.
+Layouts do not have access to the route segments below itself. To access all route segments, you can use [`useSelectedLayoutSegment`](../../functions/use-selected-layout-segment/index.md) or [`useSelectedLayoutSegments`](../../functions/use-selected-layout-segments/index.md) in a Client Component.
 
 app/ui/nav-link.tsx
 
@@ -423,7 +423,7 @@ export default async function Layout({
 
 ### Metadata[](#metadata)
 
-You can modify the `<head>` HTML elements such as `title` and `meta` using the [`metadata` object](/docs/app/api-reference/functions/generate-metadata#the-metadata-object) or [`generateMetadata` function](/docs/app/api-reference/functions/generate-metadata#generatemetadata-function).
+You can modify the `<head>` HTML elements such as `title` and `meta` using the [`metadata` object](../../functions/generate-metadata/index.md#the-metadata-object) or [`generateMetadata` function](../../functions/generate-metadata/index.md#generatemetadata-function).
 
 app/layout.tsx
 
@@ -441,11 +441,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 }
 ```
 
-> **Good to know**: You should **not** manually add `<head>` tags such as `<title>` and `<meta>` to root layouts. Instead, use the [Metadata APIs](/docs/app/api-reference/functions/generate-metadata) which automatically handles advanced requirements such as streaming and de-duplicating `<head>` elements.
+> **Good to know**: You should **not** manually add `<head>` tags such as `<title>` and `<meta>` to root layouts. Instead, use the [Metadata APIs](../../functions/generate-metadata/index.md) which automatically handles advanced requirements such as streaming and de-duplicating `<head>` elements.
 
 ### Active Nav Links[](#active-nav-links)
 
-You can use the [`usePathname`](/docs/app/api-reference/functions/use-pathname) hook to determine if a nav link is active.
+You can use the [`usePathname`](../../functions/use-pathname/index.md) hook to determine if a nav link is active.
 
 Since `usePathname` is a client hook, you need to extract the nav links into a Client Component, which can be imported into your layout:
 
@@ -500,7 +500,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 ### Displaying content based on `params`[](#displaying-content-based-on-params)
 
-Using [dynamic route segments](/docs/app/api-reference/file-conventions/dynamic-routes), you can display or fetch specific content based on the `params` prop.
+Using [dynamic route segments](../dynamic-routes/index.md), you can display or fetch specific content based on the `params` prop.
 
 app/dashboard/layout.tsx
 
@@ -553,7 +553,7 @@ export default function Page({
 
 | Version | Changes |
 | --- | --- |
-| `v15.0.0-RC` | `params` is now a promise. A [codemod](/docs/app/guides/upgrading/codemods#150) is available. |
+| `v15.0.0-RC` | `params` is now a promise. A [codemod](../../../guides/upgrading/codemods/index.md#150) is available. |
 | `v13.0.0` | `layout` introduced. |
 
 Was this helpful?

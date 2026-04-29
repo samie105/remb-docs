@@ -10,8 +10,8 @@ content_hash: "bf68e763f4bcc9493466ae211e907b01dbce0723e8de936e2eb7399aa580323b"
 menu_path: ["flex-basis"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../z-index/index.md", "title": "z-index"}
-nav_next: {"path": "../flex-direction/index.md", "title": "flex-direction"}
+nav_prev: {"path": "tailwind/docs/z-index/index.md", "title": "z-index"}
+nav_next: {"path": "tailwind/docs/flex-direction/index.md", "title": "flex-direction"}
 ---
 
 # flex-basis
@@ -126,7 +126,7 @@ Prefix a `flex-basis` utility with a breakpoint variant like `md:` to only apply
 <div class="flex flex-row">  <div class="basis-1/4 md:basis-1/3">01</div>  <div class="basis-1/4 md:basis-1/3">02</div>  <div class="basis-1/2 md:basis-1/3">03</div></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--container-*` theme variables to customize the fixed-width basis utilities in your project:
 
@@ -146,7 +146,7 @@ The `basis-<number>` utilities are driven by the `--spacing` theme variable, whi
 @theme {  --spacing: 1px; }
 ```
 
-Learn more about customizing the spacing scale in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing the spacing scale in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

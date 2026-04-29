@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:43.113Z"
 content_hash: "3fd6e6579302f197feae8d49bde81a3a807bd8e0e81e393211a0907c77142247"
 menu_path: ["Migrate from Jest to Bun's test runner"]
 section_path: []
-nav_prev: {"path": "../happy-dom/index.md", "title": "Write browser DOM tests with Bun and happy-dom"}
-nav_next: {"path": "../mock-clock/index.md", "title": "Set the system time in Bun's test runner"}
+nav_prev: {"path": "bun/docs/guides/test/happy-dom/index.md", "title": "Write browser DOM tests with Bun and happy-dom"}
+nav_next: {"path": "bun/docs/guides/test/mock-clock/index.md", "title": "Set the system time in Bun's test runner"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../mock-clock/index.md", "title": "Set the system time in Bu
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 In many cases, Bun’s test runner can run Jest test suites with no code changes. Just run `bun test` instead of `npx jest`, `yarn test`, etc.
 
@@ -99,13 +99,13 @@ describe("my test suite", () => {
 
 * * *
 
-Bun implements the vast majority of Jest’s matchers, but compatibility isn’t 100% yet. Refer to the full compatibility table at [Docs > Test runner > Writing tests](/docs/test/writing-tests#matchers). Some notable missing features:
+Bun implements the vast majority of Jest’s matchers, but compatibility isn’t 100% yet. Refer to the full compatibility table at [Docs > Test runner > Writing tests](../../../test/writing-tests/index.md#matchers). Some notable missing features:
 
 *   `expect().toHaveReturned()`
 
 * * *
 
-If you’re using `testEnvironment: "jsdom"` to run your tests in a browser-like environment, you should follow the [DOM testing with Bun and happy-dom](/docs/guides/test/happy-dom) guide to inject browser APIs into the global scope. This guide relies on [`happy-dom`](https://github.com/capricorn86/happy-dom), which is a leaner and faster alternative to [`jsdom`](https://github.com/jsdom/jsdom). At the moment jsdom does not work in Bun due to its internal use of V8 APIs. Track support for it [here](https://github.com/oven-sh/bun/issues/3554).
+If you’re using `testEnvironment: "jsdom"` to run your tests in a browser-like environment, you should follow the [DOM testing with Bun and happy-dom](../happy-dom/index.md) guide to inject browser APIs into the global scope. This guide relies on [`happy-dom`](https://github.com/capricorn86/happy-dom), which is a leaner and faster alternative to [`jsdom`](https://github.com/jsdom/jsdom). At the moment jsdom does not work in Bun due to its internal use of V8 APIs. Track support for it [here](https://github.com/oven-sh/bun/issues/3554).
 
 bunfig.toml
 
@@ -148,11 +148,11 @@ bun test --timeout 10000
 
 Many other flags become irrelevant or obsolete when using `bun test`.
 
-*   `transform` — Bun supports TypeScript & JSX. Other file types can be configured with [Plugins](/docs/runtime/plugins).
+*   `transform` — Bun supports TypeScript & JSX. Other file types can be configured with [Plugins](../../../runtime/plugins/index.md).
 *   `extensionsToTreatAsEsm`
 *   `haste` — Bun uses it’s own internal source maps
 *   `watchman`, `watchPlugins`, `watchPathIgnorePatterns` — use `--watch` to run tests in watch mode
-*   `verbose` — set `logLevel: "debug"` in [`bunfig.toml`](/docs/runtime/bunfig#loglevel)
+*   `verbose` — set `logLevel: "debug"` in [`bunfig.toml`](../../../runtime/bunfig/index.md#loglevel)
 
 * * *
 
@@ -162,8 +162,8 @@ Settings that aren’t mentioned here are not supported or have no equivalent. P
 
 See also:
 
-*   [Mark a test as a todo](/docs/guides/test/todo-tests)
-*   [Docs > Test runner > Writing tests](/docs/test/writing-tests)
+*   [Mark a test as a todo](../todo-tests/index.md)
+*   [Docs > Test runner > Writing tests](../../../test/writing-tests/index.md)
 
 Was this page helpful?
 
@@ -175,10 +175,10 @@ Run tests in watch mode with Bun
 
 Previous
 
-](/docs/guides/test/watch-mode)[
+](../watch-mode/index.md)[
 
 Mock functions in \`bun test\`
 
 Next
 
-](/docs/guides/test/mock-functions)
+](../mock-functions/index.md)

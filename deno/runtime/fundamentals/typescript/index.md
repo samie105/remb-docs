@@ -10,8 +10,8 @@ content_hash: "fa53c3667c360b45cc16b3efb8882aeb6f510aa8026ef7185f4b5ce60dbc1b34"
 menu_path: ["TypeScript support"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../getting_started/command_line_interface/index.md", "title": "Command line interface"}
-nav_next: {"path": "../node/index.md", "title": "Node and npm Compatibility"}
+nav_prev: {"path": "deno/runtime/getting_started/command_line_interface/index.md", "title": "Command line interface"}
+nav_next: {"path": "deno/runtime/fundamentals/node/index.md", "title": "Node and npm Compatibility"}
 ---
 
 # Check the current directory/module
@@ -58,7 +58,7 @@ deno test --no-check
 
 ## Using with JavaScript
 
-Deno runs JavaScript and TypeScript code. During type checking, Deno will only type check TypeScript files by default though. If you want to type check JavaScript files too, you can either add a `// @ts-check` pragma at the top of the file, or add `compilerOptions.checkJs` to your [`deno.json`](/runtime/fundamentals/configuration/) file.
+Deno runs JavaScript and TypeScript code. During type checking, Deno will only type check TypeScript files by default though. If you want to type check JavaScript files too, you can either add a `// @ts-check` pragma at the top of the file, or add `compilerOptions.checkJs` to your [`deno.json`](../configuration/index.md) file.
 
 main.js
 

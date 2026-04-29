@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:52.834Z"
 content_hash: "b832dce6993cd041bbee22c14b15291f42d4a541710144b598adda034435f5a0"
 menu_path: ["Components"]
 section_path: []
-nav_prev: {"path": "../../guides/view-transitions/index.md", "title": "View transitions"}
-nav_next: {"path": "../layouts/index.md", "title": "Layouts"}
+nav_prev: {"path": "astro/en/guides/view-transitions/index.md", "title": "View transitions"}
+nav_next: {"path": "astro/en/basics/layouts/index.md", "title": "Layouts"}
 ---
 
 # Components
@@ -21,9 +21,9 @@ Astro components are extremely flexible. An Astro component can be as small as a
 
 The most important thing to know about Astro components is that they **don’t render on the client**. They render to HTML either at build-time or on-demand. You can include JavaScript code inside of your component frontmatter, and all of it will be stripped from the final page sent to your users’ browsers. The result is a faster site, with zero JavaScript footprint added by default.
 
-When your Astro component does need client-side interactivity, you can add [standard HTML `<script>` tags](/en/guides/client-side-scripts/) or [UI Framework components](/en/guides/framework-components/#hydrating-interactive-components) as “client islands”.
+When your Astro component does need client-side interactivity, you can add [standard HTML `<script>` tags](../../guides/client-side-scripts/index.md) or [UI Framework components](../../guides/framework-components/index.md#hydrating-interactive-components) as “client islands”.
 
-For components that need to render personalized or dynamic content, you can defer their server rendering by adding a [server directive](/en/reference/directives-reference/#server-directives). These “server islands” will render their content when it is available, without delaying the entire page load.
+For components that need to render personalized or dynamic content, you can defer their server rendering by adding a [server directive](../../reference/directives-reference/index.md#server-directives). These “server islands” will render their content when it is available, without delaying the entire page load.
 
 ## Component Structure
 
@@ -65,7 +65,7 @@ The component template is below the code fence and determines the HTML output of
 
 If you write plain HTML here, your component will render that HTML in any Astro page it is imported and used.
 
-However, [Astro’s component template syntax](/en/reference/astro-syntax/) also supports **JavaScript expressions**, Astro [`<style>`](/en/guides/styling/#styling-in-astro) and [`<script>`](/en/guides/client-side-scripts/) tags, **imported components**, and [**special Astro directives**](/en/reference/directives-reference/). Data and values defined in the component script can be used in the component template to produce dynamically-created HTML.
+However, [Astro’s component template syntax](../../reference/astro-syntax/index.md) also supports **JavaScript expressions**, Astro [`<style>`](../../guides/styling/index.md#styling-in-astro) and [`<script>`](../../guides/client-side-scripts/index.md) tags, **imported components**, and [**special Astro directives**](../../reference/directives-reference/index.md). Data and values defined in the component script can be used in the component template to produce dynamically-created HTML.
 
 ```
 ---// Your component script here!import Banner from '../components/Banner.astro';import Avatar from '../components/Avatar.astro';import ReactPokemonComponent from '../components/ReactPokemonComponent.jsx';const myFavoritePokemon = [/* ... */];const { title } = Astro.props;---<!-- HTML comments supported! -->{/* JS comment syntax is also valid! */}
@@ -135,9 +135,9 @@ const { title } = Astro.props;---<div id="content-wrapper">  <Header />  <Logo /
 ---import Wrapper from '../components/Wrapper.astro';---<Wrapper title="Fred's Page">  <h2>All about Fred</h2>  <p>Here is some stuff about Fred.</p></Wrapper>
 ```
 
-This pattern is the basis of an [Astro layout component](/en/basics/layouts/): an entire page of HTML content can be “wrapped” with `<SomeLayoutComponent></SomeLayoutComponent>` tags and sent to the component to render inside of common page elements defined there.
+This pattern is the basis of an [Astro layout component](../layouts/index.md): an entire page of HTML content can be “wrapped” with `<SomeLayoutComponent></SomeLayoutComponent>` tags and sent to the component to render inside of common page elements defined there.
 
-See the [`Astro.slots` utility functions](/en/reference/astro-syntax/#astroslots) for more ways to access and render slot content.
+See the [`Astro.slots` utility functions](../../reference/astro-syntax/index.md#astroslots) for more ways to access and render slot content.
 
 ### Named Slots
 
@@ -158,7 +158,7 @@ To inject HTML content into a particular slot, use the `slot` attribute on any c
 ---import Wrapper from '../components/Wrapper.astro';---<Wrapper title="Fred's Page">  <img src="https://my.photo/fred.jpg" slot="after-header" />  <h2>All about Fred</h2>  <p>Here is some stuff about Fred.</p>  <p slot="after-footer">Copyright 2022</p></Wrapper>
 ```
 
-To pass multiple HTML elements into a component’s `<slot/>` placeholder without a wrapping `<div>`, use the `slot=""` attribute on [Astro’s `<Fragment/>` component](/en/reference/astro-syntax/#fragments):
+To pass multiple HTML elements into a component’s `<slot/>` placeholder without a wrapping `<div>`, use the `slot=""` attribute on [Astro’s `<Fragment/>` component](../../reference/astro-syntax/index.md#fragments):
 
 ```
 ---// Create a custom table with named slot placeholders for header and body content---<table class="bg-white">  <thead class="sticky top-0 bg-white"><slot name="header" /></thead>  <tbody class="[&_tr:nth-child(odd)]:bg-gray-100"><slot name="body" /></tbody></table>
@@ -217,13 +217,13 @@ Astro supports importing and using `.html` files as components or placing these 
 HTML components must contain only valid HTML, and therefore lack key Astro component features:
 
 *   They don’t support frontmatter, server-side imports, or dynamic expressions.
-*   Any `<script>` tags are left unbundled, treated as if they had an [`is:inline` directive](/en/reference/directives-reference/#isinline).
-*   They can only [reference assets that are in the `public/` folder](/en/basics/project-structure/#public).
+*   Any `<script>` tags are left unbundled, treated as if they had an [`is:inline` directive](../../reference/directives-reference/index.md#isinline).
+*   They can only [reference assets that are in the `public/` folder](../project-structure/index.md#public).
 
 ## Next Steps
 
 [Section titled “Next Steps”](#next-steps)
 
-Read more about using [UI framework components](/en/guides/framework-components/) in your Astro project.
+Read more about using [UI framework components](../../guides/framework-components/index.md) in your Astro project.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

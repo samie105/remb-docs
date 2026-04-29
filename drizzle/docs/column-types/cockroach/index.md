@@ -10,8 +10,8 @@ content_hash: "d8d7c392b1189692295773a0bcfb413b51ba19bff64d11b14999a565cf057389"
 menu_path: ["CockroachDB column types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../graphql/index.md", "title": "drizzle-graphql"}
-nav_next: {"path": "../mssql/index.md", "title": "MSSQL column types"}
+nav_prev: {"path": "drizzle/docs/graphql/index.md", "title": "drizzle-graphql"}
+nav_next: {"path": "drizzle/docs/column-types/mssql/index.md", "title": "MSSQL column types"}
 ---
 
 WARNING

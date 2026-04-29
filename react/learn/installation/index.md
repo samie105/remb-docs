@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:49.717Z"
 content_hash: "7e08fa3e1a0a65e9c3c39ced2d826fc569a8cbe45607921cc982295c26c03bc0"
 menu_path: ["Installation"]
 section_path: []
-nav_prev: {"path": "../thinking-in-react/index.md", "title": "Thinking in React"}
-nav_next: {"path": "../creating-a-react-app/index.md", "title": "Creating a React App"}
+nav_prev: {"path": "react/learn/thinking-in-react/index.md", "title": "Thinking in React"}
+nav_next: {"path": "react/learn/creating-a-react-app/index.md", "title": "Creating a React App"}
 ---
 
 React has been designed from the start for gradual adoption. You can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to an HTML page, or start a complex React-powered app, this section will help you get started.

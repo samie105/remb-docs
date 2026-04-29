@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:37.928Z"
 content_hash: "786037649a691912b14eb14cf25b82d52d2bfe88843d93f3ff50cc050b9a6c71"
 menu_path: ["Styles and CSS"]
 section_path: []
-nav_prev: {"path": "../../basics/layouts/index.md", "title": "Layouts"}
-nav_next: {"path": "../fonts/index.md", "title": "Using custom fonts"}
+nav_prev: {"path": "astro/en/basics/layouts/index.md", "title": "Layouts"}
+nav_next: {"path": "astro/en/guides/fonts/index.md", "title": "Using custom fonts"}
 ---
 
 # Styles and CSS
@@ -84,7 +84,7 @@ If you need to combine classes on an element dynamically, you can use the `class
 <style>  .box { border: 1px solid blue; }  .red { border-color: red; }</style>
 ```
 
-See our [directives reference](/en/reference/directives-reference/#classlist) page to learn more about `class:list`.
+See our [directives reference](../../reference/directives-reference/index.md#classlist) page to learn more about `class:list`.
 
 ### CSS Variables
 
@@ -98,7 +98,7 @@ The Astro `<style>` can reference any CSS variables available on the page. You c
 ---const foregroundColor = "rgb(221 243 228)";const backgroundColor = "rgb(24 121 78)";---<style define:vars={{ foregroundColor, backgroundColor }}>  h1 {    background-color: var(--backgroundColor);    color: var(--foregroundColor);  }</style><h1>Hello</h1>
 ```
 
-See our [directives reference](/en/reference/directives-reference/#definevars) page to learn more about `define:vars`.
+See our [directives reference](../../reference/directives-reference/index.md#definevars) page to learn more about `define:vars`.
 
 ### Passing a `class` to a child component
 
@@ -134,13 +134,13 @@ You can style HTML elements inline using the `style` attribute. This can be a CS
 
 There are two ways to resolve external global stylesheets: an ESM import for files located within your project source, and an absolute URL link for files in your `public/` directory, or hosted outside of your project.
 
-Read more about using [static assets](/en/guides/imports/) located in `public/` or `src/`.
+Read more about using [static assets](../imports/index.md) located in `public/` or `src/`.
 
 ### Import a local stylesheet
 
 [Section titled “Import a local stylesheet”](#import-a-local-stylesheet)
 
-You can import stylesheets in your Astro component frontmatter using ESM import syntax. CSS imports work like [any other ESM import in an Astro component](/en/basics/astro-components/#the-component-script), which should be referenced as **relative to the component** and must be written at the **top** of your component script, with any other imports.
+You can import stylesheets in your Astro component frontmatter using ESM import syntax. CSS imports work like [any other ESM import in an Astro component](../../basics/astro-components/index.md#the-component-script), which should be referenced as **relative to the component** and must be written at the **top** of your component script, with any other imports.
 
 ```
 ---// Astro will bundle and optimize this CSS for you automatically// This also works for preprocessor files like .scss, .styl, etc.import '../styles/utils.css';---<html><!-- Your page here --></html>
@@ -215,7 +215,7 @@ Astro CSS rules are evaluated in this order of appearance:
 
 [Section titled “Scoped Styles”](#scoped-styles-1)
 
-Depending on your chosen value for [`scopedStyleStrategy`](/en/reference/configuration-reference/#scopedstylestrategy), scoped styles may or may not increase the [CLASS column specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Specificity#class_column).
+Depending on your chosen value for [`scopedStyleStrategy`](../../reference/configuration-reference/index.md#scopedstylestrategy), scoped styles may or may not increase the [CLASS column specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Specificity#class_column).
 
 However, [scoped styles](#scoped-styles) will always come last in the order of appearance. These styles will therefore take precedence over other styles of the same specificity. For example, if you import a stylesheet that conflicts with a scoped style, the scoped style’s value will apply:
 
@@ -486,7 +486,7 @@ Svelte in Astro also works exactly as expected: [Svelte Styling Docs](https://sv
 
 [Section titled “Markdown Styling”](#markdown-styling)
 
-Any Astro styling methods are available to a [Markdown layout component](/en/basics/layouts/#markdown-layouts), but different methods will have different styling effects on your page.
+Any Astro styling methods are available to a [Markdown layout component](../../basics/layouts/index.md#markdown-layouts), but different methods will have different styling effects on your page.
 
 You can apply global styles to your Markdown content by adding [imported stylesheets](#external-styles) to the layout that wraps your page content. It is also possible to style your Markdown with [`<style is:global>` tags](#global-styles) in the layout component. Note that any styles added are subject to [Astro’s cascading order](#cascading-order), and you should check your rendered page carefully to ensure your styles are being applied as intended.
 
@@ -552,4 +552,4 @@ This is not recommended for most users. Instead, place your CSS files inside of 
 
 See [Vite’s docs](https://vite.dev/guide/assets.html#importing-asset-as-url) for full details.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

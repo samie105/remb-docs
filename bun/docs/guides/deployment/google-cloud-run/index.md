@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:57.146Z"
 content_hash: "8576f408aa37eaf1f05646fa7b6e61e12edc6c7d9f8d4be5d4c27bd2f24a8946"
 menu_path: ["Deploy a Bun application on Google Cloud Run"]
 section_path: []
-nav_prev: {"path": "../digital-ocean/index.md", "title": "Deploy a Bun application on DigitalOcean"}
-nav_next: {"path": "../railway/index.md", "title": "Deploy a Bun application on Railway"}
+nav_prev: {"path": "bun/docs/guides/deployment/digital-ocean/index.md", "title": "Deploy a Bun application on DigitalOcean"}
+nav_next: {"path": "bun/docs/guides/deployment/railway/index.md", "title": "Deploy a Bun application on Railway"}
 ---
 
 # Use the official Bun image to run the application

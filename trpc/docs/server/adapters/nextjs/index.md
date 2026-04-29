@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:14.797Z"
 content_hash: "56af26b0fd5e06e2ad3dfd5b79c4a0248b0e16753c24a5177e251de9f73e00e0"
 menu_path: ["Next.js Adapter"]
 section_path: []
-nav_prev: {"path": "../fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
-nav_next: {"path": "../standalone/index.md", "title": "Standalone Adapter"}
+nav_prev: {"path": "trpc/docs/server/adapters/fetch/index.md", "title": "Fetch / Edge Runtimes Adapter"}
+nav_next: {"path": "trpc/docs/server/adapters/standalone/index.md", "title": "Standalone Adapter"}
 ---
 
 Serving your tRPC router in a Next.js project is straight-forward. Just create an API handler in `pages/api/trpc/[trpc].ts` as shown below:

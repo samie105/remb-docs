@@ -11,8 +11,8 @@ menu_path: ["CRUD"]
 section_path: []
 tab_variants: ["PostgreSQL","MySQL"]
 content_language: "en"
-nav_prev: {"path": "../crud/index.md", "title": "CRUD"}
-nav_next: {"path": "../transactions/index.md", "title": "Transactions and batch queries"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/crud/index.md", "title": "CRUD"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/transactions/index.md", "title": "Transactions and batch queries"}
 ---
 
 This page describes how to perform CRUD operations with Prisma Client:

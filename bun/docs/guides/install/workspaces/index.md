@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:24.119Z"
 content_hash: "ef430a2ae5c0f12c153b124f140991297501458f112e291b5318bedb898c9a45"
 menu_path: ["Configuring a monorepo using workspaces"]
 section_path: []
-nav_prev: {"path": "../trusted/index.md", "title": "Add a trusted dependency"}
-nav_next: {"path": "../yarnlock/index.md", "title": "Generate a yarn-compatible lockfile"}
+nav_prev: {"path": "bun/docs/guides/install/trusted/index.md", "title": "Add a trusted dependency"}
+nav_next: {"path": "bun/docs/guides/install/yarnlock/index.md", "title": "Generate a yarn-compatible lockfile"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../yarnlock/index.md", "title": "Generate a yarn-compatible 
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun’s package manager supports npm `"workspaces"`. This allows you to split a codebase into multiple distinct “packages” that live in the same repository, can depend on each other, and (when possible) share a `node_modules` directory. Clone [this sample project](https://github.com/colinhacks/bun-workspaces) to experiment with workspaces.
 
@@ -106,7 +106,7 @@ bun add zod
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -118,10 +118,10 @@ Install a package under a different name
 
 Previous
 
-](/docs/guides/install/npm-alias)[
+](../npm-alias/index.md)[
 
 Override the default npm registry for bun install
 
 Next
 
-](/docs/guides/install/custom-registry)
+](../custom-registry/index.md)

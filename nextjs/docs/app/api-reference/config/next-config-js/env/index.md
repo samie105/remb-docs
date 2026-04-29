@@ -11,8 +11,8 @@ menu_path: ["env"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../distDir/index.md", "title": "distDir"}
-nav_next: {"path": "../expireTime/index.md", "title": "expireTime"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/expireTime/index.md", "title": "expireTime"}
 ---
 
 # env
@@ -21,9 +21,9 @@ This is a legacy API and no longer recommended. It's still supported for backwar
 
 Last updated April 23, 2026
 
-> Since the release of [Next.js 9.4](https://nextjs.org/blog/next-9-4) we now have a more intuitive and ergonomic experience for [adding environment variables](/docs/app/guides/environment-variables). Give it a try!
+> Since the release of [Next.js 9.4](https://nextjs.org/blog/next-9-4) we now have a more intuitive and ergonomic experience for [adding environment variables](../../../../guides/environment-variables/index.md). Give it a try!
 
-> **Good to know**: environment variables specified in this way will **always** be included in the JavaScript bundle, prefixing the environment variable name with `NEXT_PUBLIC_` only has an effect when specifying them [through the environment or .env files](/docs/app/guides/environment-variables).
+> **Good to know**: environment variables specified in this way will **always** be included in the JavaScript bundle, prefixing the environment variable name with `NEXT_PUBLIC_` only has an effect when specifying them [through the environment or .env files](../../../../guides/environment-variables/index.md).
 
 To add environment variables to the JavaScript bundle, open `next.config.js` and add the `env` config:
 

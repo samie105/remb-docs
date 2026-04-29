@@ -10,8 +10,8 @@ content_hash: "3c0f05ee3253a79b36b735db9a722fdb89c38021f05b3b89b71f2dc8bb12381d"
 menu_path: ["Native database types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../native-database-functions/index.md", "title": "Native database functions"}
-nav_next: {"path": "../patching-and-hotfixing/index.md", "title": "Patching & hotfixing"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/native-database-functions/index.md", "title": "Native database functions"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md", "title": "Patching & hotfixing"}
 ---
 
 Workflows

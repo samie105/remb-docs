@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:44.146Z"
 content_hash: "2d00f6043308db057a31f83381d1383c4fe7c215fbef31d7e8fc848828d0525e"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Expo React Native","Expo React Native"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Expo React Native","Expo React Native"]
-nav_prev: {"path": "../with-angular/index.md", "title": "Build a User Management App with Angular"}
-nav_next: {"path": "../with-flutter/index.md", "title": "Build a User Management App with Flutter"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-angular/index.md", "title": "Build a User Management App with Angular"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-flutter/index.md", "title": "Build a User Management App with Flutter"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a User Management App with Expo React Native
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/supabase-flutter-demo.png)
 
@@ -59,7 +59,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=exporeactnative).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -91,7 +91,7 @@ Then install the additional dependencies:
 
 Now create a helper file to initialize the Supabase client using the API URL and the key that you copied [earlier](#get-api-details).
 
-These variables are safe to expose in your Expo app since Supabase has [Row Level Security](/docs/guides/database/postgres/row-level-security) enabled on your Database.
+These variables are safe to expose in your Expo app since Supabase has [Row Level Security](../../../database/postgres/row-level-security/index.md) enabled on your Database.
 
 ###### lib/supabase.ts
 
@@ -153,7 +153,7 @@ And then press the appropriate key for the environment you want to test the app 
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Additional dependency installation[#](#additional-dependency-installation)
 

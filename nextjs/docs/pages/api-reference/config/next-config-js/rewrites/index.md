@@ -11,8 +11,8 @@ menu_path: ["rewrites"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../redirects/index.md", "title": "redirects"}
-nav_next: {"path": "../serverExternalPackages/index.md", "title": "serverExternalPackages"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/redirects/index.md", "title": "redirects"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
 ---
 
 # rewrites
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 Rewrites allow you to map an incoming request path to a different destination path.
 
-Rewrites act as a URL proxy and mask the destination path, making it appear the user hasn't changed their location on the site. In contrast, [redirects](/docs/pages/api-reference/config/next-config-js/redirects) will reroute to a new page and show the URL changes.
+Rewrites act as a URL proxy and mask the destination path, making it appear the user hasn't changed their location on the site. In contrast, [redirects](../redirects/index.md) will reroute to a new page and show the URL changes.
 
 To use rewrites you can use the `rewrites` key in `next.config.js`:
 
@@ -94,12 +94,12 @@ module.exports = {
 
 The order Next.js routes are checked is:
 
-1.  [headers](/docs/pages/api-reference/config/next-config-js/headers) are checked/applied
-2.  [redirects](/docs/pages/api-reference/config/next-config-js/redirects) are checked/applied
+1.  [headers](../headers/index.md) are checked/applied
+2.  [redirects](../redirects/index.md) are checked/applied
 3.  `beforeFiles` rewrites are checked/applied
-4.  static files from the [public directory](/docs/pages/api-reference/file-conventions/public-folder), `_next/static` files, and non-dynamic pages are checked/served
+4.  static files from the [public directory](../../../file-conventions/public-folder/index.md), `_next/static` files, and non-dynamic pages are checked/served
 5.  `afterFiles` rewrites are checked/applied, if one of these rewrites is matched we check dynamic routes/static files after each match
-6.  `fallback` rewrites are checked/applied, these are applied before rendering the 404 page and after dynamic routes/all static assets have been checked. If you use [fallback: true/'blocking'](/docs/pages/api-reference/functions/get-static-paths#fallback-true) in `getStaticPaths`, the fallback `rewrites` defined in your `next.config.js` will _not_ be run.
+6.  `fallback` rewrites are checked/applied, these are applied before rendering the 404 page and after dynamic routes/all static assets have been checked. If you use [fallback: true/'blocking'](../../../functions/get-static-paths/index.md#fallback-true) in `getStaticPaths`, the fallback `rewrites` defined in your `next.config.js` will _not_ be run.
 
 ## Rewrite parameters[](#rewrite-parameters)
 
@@ -157,7 +157,7 @@ module.exports = {
 }
 ```
 
-> **Good to know**: Static pages from [Automatic Static Optimization](/docs/pages/building-your-application/rendering/automatic-static-optimization) or [prerendering](/docs/pages/building-your-application/data-fetching/get-static-props) params from rewrites will be parsed on the client after hydration and provided in the query.
+> **Good to know**: Static pages from [Automatic Static Optimization](../../../../building-your-application/rendering/automatic-static-optimization/index.md) or [prerendering](../../../../building-your-application/data-fetching/get-static-props/index.md) params from rewrites will be parsed on the client after hydration and provided in the query.
 
 ## Path Matching[](#path-matching)
 
@@ -405,7 +405,7 @@ module.exports = {
 
 ### Rewrites with basePath support[](#rewrites-with-basepath-support)
 
-When leveraging [`basePath` support](/docs/app/api-reference/config/next-config-js/basePath) with rewrites each `source` and `destination` is automatically prefixed with the `basePath` unless you add `basePath: false` to the rewrite:
+When leveraging [`basePath` support](../../../../../app/api-reference/config/next-config-js/basePath/index.md) with rewrites each `source` and `destination` is automatically prefixed with the `basePath` unless you add `basePath: false` to the rewrite:
 
 next.config.js
 

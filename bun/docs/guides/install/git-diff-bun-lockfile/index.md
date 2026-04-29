@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:59.516Z"
 content_hash: "909f6c17e540dc62c9ea8b675912817bf2fccc46cd9d21f835b7287717413a5a"
 menu_path: ["Configure git to diff Bun's lockb lockfile"]
 section_path: []
-nav_prev: {"path": "../from-npm-install-to-bun-install/index.md", "title": "Migrate from npm install to bun install"}
-nav_next: {"path": "../jfrog-artifactory/index.md", "title": "Using bun install with Artifactory"}
+nav_prev: {"path": "bun/docs/guides/install/from-npm-install-to-bun-install/index.md", "title": "Migrate from npm install to bun install"}
+nav_next: {"path": "bun/docs/guides/install/jfrog-artifactory/index.md", "title": "Using bun install with Artifactory"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../jfrog-artifactory/index.md", "title": "Using bun install 
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-Bun v1.1.39 introduced `bun.lock`, a JSONC formatted lockfile. `bun.lock` is human-readable and git-diffable without configuration, at no cost to performance. In 1.2.0+ it is the default format used for new projects. [**Learn more.**](/docs/pm/lockfile#text-based-lockfile)
+Bun v1.1.39 introduced `bun.lock`, a JSONC formatted lockfile. `bun.lock` is human-readable and git-diffable without configuration, at no cost to performance. In 1.2.0+ it is the default format used for new projects. [**Learn more.**](../../../pm/lockfile/index.md#text-based-lockfile)
 
 * * *
 
@@ -96,10 +96,10 @@ Migrate from npm install to bun install
 
 Previous
 
-](/docs/guides/install/from-npm-install-to-bun-install)[
+](../from-npm-install-to-bun-install/index.md)[
 
 Install dependencies with Bun in GitHub Actions
 
 Next
 
-](/docs/guides/install/cicd)
+](../cicd/index.md)

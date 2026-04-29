@@ -10,8 +10,8 @@ content_hash: "9eee1ea521fd0a9ad5e11f9556863cb696b62a16c48734f52d6f4cb16b9492b6"
 menu_path: ["visibility"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../top-right-bottom-left/index.md", "title": "top / right / bottom / left"}
-nav_next: {"path": "../z-index/index.md", "title": "z-index"}
+nav_prev: {"path": "tailwind/docs/top-right-bottom-left/index.md", "title": "top / right / bottom / left"}
+nav_next: {"path": "tailwind/docs/z-index/index.md", "title": "z-index"}
 ---
 
 Utilities for controlling the visibility of an element.

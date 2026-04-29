@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:07.270Z"
 content_hash: "32cf2c367519cc09950bc4f8b0319104525057fb2719fecc956c387ac435fb73"
 menu_path: ["HTTP Subscription Link"]
 section_path: []
-nav_prev: {"path": "../httpLink/index.md", "title": "HTTP Link"}
-nav_next: {"path": "../localLink/index.md", "title": "Local Link"}
+nav_prev: {"path": "trpc/docs/client/links/httpLink/index.md", "title": "HTTP Link"}
+nav_next: {"path": "trpc/docs/client/links/localLink/index.md", "title": "Local Link"}
 ---
 
 `httpSubscriptionLink` is a [**terminating link**](../index.md#the-terminating-link) that uses [Server-sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) (SSE) for subscriptions.

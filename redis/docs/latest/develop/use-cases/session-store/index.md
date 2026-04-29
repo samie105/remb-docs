@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:27.860Z"
 content_hash: "3295b6487201792c6330a560b9e42537fcb9f34c8e9bcac0e0d6468a1b2c0e0c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store"]
-nav_prev: {"path": "../rate-limiter/rust/index.md", "title": "Token bucket rate limiter with Redis and Rust"}
-nav_next: {"path": "dotnet/index.md", "title": "Redis session store with .NET"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/rust/index.md", "title": "Token bucket rate limiter with Redis and Rust"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/dotnet/index.md", "title": "Redis session store with .NET"}
 ---
 
 # Redis session store
@@ -38,14 +38,14 @@ The typical pattern is:
 
 ## Available implementations
 
-*   [redis-py](/docs/latest/develop/use-cases/session-store/redis-py/) - Build a Python session store and a local demo server using the standard library HTTP server
-*   [Node.js](/docs/latest/develop/use-cases/session-store/nodejs/) - Build a Redis-backed session store with `node-redis` and a local Node.js demo server
-*   [Go](/docs/latest/develop/use-cases/session-store/go/) - Build a Redis-backed session store with `go-redis` and a local Go demo server
-*   [Java](/docs/latest/develop/use-cases/session-store/java-jedis/) - Build a Redis-backed session store with Jedis and a local Java demo server
-*   [Java (Lettuce)](/docs/latest/develop/use-cases/session-store/java-lettuce/) - Build a Redis-backed session store with Lettuce using async and reactive APIs
-*   [.NET](/docs/latest/develop/use-cases/session-store/dotnet/) - Build a Redis-backed session store with `StackExchange.Redis` and a local ASP.NET Core demo server
-*   [PHP](/docs/latest/develop/use-cases/session-store/php/) - Build a Redis-backed session store with Predis and a local PHP demo server
-*   [Ruby](/docs/latest/develop/use-cases/session-store/ruby/) - Build a Redis-backed session store with `redis-rb` and a local Ruby demo server
-*   [Rust](/docs/latest/develop/use-cases/session-store/rust/) - Build a Redis-backed session store with `redis-rs`, including both sync and async APIs
+*   [redis-py](redis-py/index.md) - Build a Python session store and a local demo server using the standard library HTTP server
+*   [Node.js](nodejs/index.md) - Build a Redis-backed session store with `node-redis` and a local Node.js demo server
+*   [Go](go/index.md) - Build a Redis-backed session store with `go-redis` and a local Go demo server
+*   [Java](java-jedis/index.md) - Build a Redis-backed session store with Jedis and a local Java demo server
+*   [Java (Lettuce)](java-lettuce/index.md) - Build a Redis-backed session store with Lettuce using async and reactive APIs
+*   [.NET](dotnet/index.md) - Build a Redis-backed session store with `StackExchange.Redis` and a local ASP.NET Core demo server
+*   [PHP](php/index.md) - Build a Redis-backed session store with Predis and a local PHP demo server
+*   [Ruby](ruby/index.md) - Build a Redis-backed session store with `redis-rb` and a local Ruby demo server
+*   [Rust](rust/index.md) - Build a Redis-backed session store with `redis-rs`, including both sync and async APIs
 
 ## On this page

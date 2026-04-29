@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:05.746Z"
 content_hash: "cd4f473065d2b66d1818db724110aaa81dc17ce4f01103d7a3e473aa100e6612"
 menu_path: ["Output Validation"]
 section_path: []
-nav_prev: {"path": "../nextjs/index.md", "title": "Usage with Next.js"}
-nav_next: {"path": "../quickstart/index.md", "title": "Quickstart"}
+nav_prev: {"path": "trpc/docs/v9/nextjs/index.md", "title": "Usage with Next.js"}
+nav_next: {"path": "trpc/docs/v9/quickstart/index.md", "title": "Quickstart"}
 ---
 
 tRPC gives you automatic type-safety of outputs without the need of adding a validator; however, it can be useful at times to strictly define the output type in order to prevent sensitive data of being leaked.

@@ -11,8 +11,8 @@ menu_path: ["Prisma Client & Prisma schema"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../../errors/index.md", "title": "Prisma Error Reference"}
-nav_next: {"path": "../cli-preview-features/index.md", "title": "Prisma CLI Preview features"}
+nav_prev: {"path": "prisma/docs/orm/reference/errors/index.md", "title": "Prisma Error Reference"}
+nav_next: {"path": "prisma/docs/orm/reference/preview-features/cli-preview-features/index.md", "title": "Prisma CLI Preview features"}
 ---
 
 Prisma Client and Prisma schema features that are currently in Preview

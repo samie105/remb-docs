@@ -10,8 +10,8 @@ content_hash: "ff8d7d7442d4d25b17863454a4ec1aafac0427269593f8e8d02ee7931b0230fe"
 menu_path: ["scroll-behavior"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../resize/index.md", "title": "resize"}
-nav_next: {"path": "../scroll-margin/index.md", "title": "scroll-margin"}
+nav_prev: {"path": "tailwind/docs/resize/index.md", "title": "resize"}
+nav_next: {"path": "tailwind/docs/scroll-margin/index.md", "title": "scroll-margin"}
 ---
 
 # scroll-behavior

@@ -10,8 +10,8 @@ content_hash: "40567fce2ca615ce853ed24fb8d217bd4461174fd6a8079c3c3b386ced4628cb"
 menu_path: ["Get Started with Drizzle and Turso Cloud"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../turso-existing/index.md", "title": "Get Started with Drizzle and Turso Cloud in existing project"}
-nav_next: {"path": "../vercel-existing/index.md", "title": "Get Started with Drizzle and Vercel Postgres in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/turso-existing/index.md", "title": "Get Started with Drizzle and Turso Cloud in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/vercel-existing/index.md", "title": "Get Started with Drizzle and Vercel Postgres in existing project"}
 ---
 
 ## Get Started with Drizzle and Turso Cloud

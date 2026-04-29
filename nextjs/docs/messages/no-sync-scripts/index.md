@@ -11,8 +11,8 @@ menu_path: ["No Sync Scripts"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-styled-jsx-in-document/index.md", "title": "No `styled-jsx` in `_document`"}
-nav_next: {"path": "../no-title-in-document-head/index.md", "title": "No Title in Document Head"}
+nav_prev: {"path": "nextjs/docs/messages/no-styled-jsx-in-document/index.md", "title": "No `styled-jsx` in `_document`"}
+nav_next: {"path": "nextjs/docs/messages/no-title-in-document-head/index.md", "title": "No Title in Document Head"}
 ---
 
 # No Sync Scripts

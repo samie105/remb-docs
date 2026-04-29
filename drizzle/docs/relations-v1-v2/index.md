@@ -10,8 +10,8 @@ content_hash: "b9d26846b05bd4a76ae875def97f629ecf8d8d6b90877fa3830dca8a5bb2cea3"
 menu_path: ["Migrating to Relational Queries version 2"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../upgrade-v1/index.md", "title": "Upgrading to Drizzle v1 RC"}
-nav_next: {"path": "../sql-schema-declaration/index.md", "title": "Drizzle schema"}
+nav_prev: {"path": "drizzle/docs/upgrade-v1/index.md", "title": "Upgrading to Drizzle v1 RC"}
+nav_next: {"path": "drizzle/docs/sql-schema-declaration/index.md", "title": "Drizzle schema"}
 ---
 
 ## Migrating to Relational Queries version 2

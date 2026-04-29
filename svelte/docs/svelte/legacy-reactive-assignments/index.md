@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:09.534Z"
 content_hash: "327230528a5b6d6d6415870ca0c20f5958888eb291caea1369340a4168b54f76"
 menu_path: ["Reactive $: statements"]
 section_path: []
-nav_prev: {"path": "../legacy-let/index.md", "title": "Reactive let/var declarations"}
-nav_next: {"path": "../legacy-export-let/index.md", "title": "export let"}
+nav_prev: {"path": "svelte/docs/svelte/legacy-let/index.md", "title": "Reactive let/var declarations"}
+nav_next: {"path": "svelte/docs/svelte/legacy-export-let/index.md", "title": "export let"}
 ---
 
 In runes mode, reactions to state updates are handled with the [`$derived`]($derived) and [`$effect`]($effect) runes.
@@ -101,4 +101,4 @@ title = title;
 
 previous next
 
-[Reactive let/var declarations](/docs/svelte/legacy-let) [export let](/docs/svelte/legacy-export-let)
+[Reactive let/var declarations](../legacy-let/index.md) [export let](../legacy-export-let/index.md)

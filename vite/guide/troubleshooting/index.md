@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:39.443Z"
 content_hash: "691a682111f6b403638362b9aa2f09f7f6127577e9dc914b8877527b8080ea26"
 menu_path: ["Troubleshooting ​"]
 section_path: []
-nav_prev: {"path": "../backend-integration/index.md", "title": "Backend Integration \u200b"}
-nav_next: {"path": "../performance/index.md", "title": "Performance \u200b"}
+nav_prev: {"path": "vite/guide/backend-integration/index.md", "title": "Backend Integration \u200b"}
+nav_next: {"path": "vite/guide/performance/index.md", "title": "Performance \u200b"}
 ---
 
 See [Rollup's troubleshooting guide](https://rollupjs.org/troubleshooting/) for more information too.

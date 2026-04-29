@@ -10,8 +10,8 @@ content_hash: "b5f3866e64993c8a7ef79a1bbaab20452157a4e0aba6d7e871812e25041eb992"
 menu_path: ["Drizzle ORM - PostGIS geometry point"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../point-datatype-psql/index.md", "title": "Drizzle ORM - Point datatype in PostgreSQL"}
-nav_next: {"path": "../postgresql-full-text-search/index.md", "title": "Drizzle ORM - PostgreSQL full-text search"}
+nav_prev: {"path": "drizzle/docs/guides/point-datatype-psql/index.md", "title": "Drizzle ORM - Point datatype in PostgreSQL"}
+nav_next: {"path": "drizzle/docs/guides/postgresql-full-text-search/index.md", "title": "Drizzle ORM - PostgreSQL full-text search"}
 ---
 
 Drizzle | PostGIS geometry point

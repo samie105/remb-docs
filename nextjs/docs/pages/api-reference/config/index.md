@@ -11,8 +11,8 @@ menu_path: ["Configuration"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../functions/userAgent/index.md", "title": "userAgent"}
-nav_next: {"path": "next-config-js/index.md", "title": "next.config.js Options"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/userAgent/index.md", "title": "userAgent"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/index.md", "title": "next.config.js Options"}
 ---
 
 # Configuration
@@ -25,18 +25,18 @@ Last updated April 23, 2026
 
 Learn about the options available in next.config.js for the Pages Router.
 
-](/docs/pages/api-reference/config/next-config-js)[
+](next-config-js/index.md)[
 
 ### TypeScript
 
 Next.js provides a TypeScript-first development experience for building your React application.
 
-](/docs/pages/api-reference/config/typescript)[
+](typescript/index.md)[
 
 ### ESLint
 
 Next.js reports ESLint errors and warnings during builds by default. Learn how to opt-out of this behavior here.
 
-](/docs/pages/api-reference/config/eslint)
+](eslint/index.md)
 
 Was this helpful?

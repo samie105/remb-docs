@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:05.355Z"
 content_hash: "921ad8f104566825b1082e87dfd3ab6065d601351e771beff8bd7dffceb99e4f"
 menu_path: ["Build an HTTP server using Elysia and Bun"]
 section_path: []
-nav_prev: {"path": "../drizzle/index.md", "title": "Use Drizzle ORM with Bun"}
-nav_next: {"path": "../express/index.md", "title": "Build an HTTP server using Express and Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/drizzle/index.md", "title": "Use Drizzle ORM with Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/express/index.md", "title": "Build an HTTP server using Express and Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../express/index.md", "title": "Build an HTTP server using E
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 [Elysia](https://elysiajs.com) is a Bun-first performance focused web framework that takes full advantage of Bun’s HTTP, file system, and hot reloading APIs. Get started with `bun create`.
 
@@ -73,10 +73,10 @@ Use Gel with Bun
 
 Previous
 
-](/docs/guides/ecosystem/gel)[
+](../gel/index.md)[
 
 Build an HTTP server using Express and Bun
 
 Next
 
-](/docs/guides/ecosystem/express)
+](../express/index.md)

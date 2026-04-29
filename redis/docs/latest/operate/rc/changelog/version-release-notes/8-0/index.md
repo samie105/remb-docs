@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:44.814Z"
 content_hash: "e3a4afe227cef9fd131d7d99d6f5e133c27141e994812fdcb8b26bad1decde3c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes","→\n      \n        Redis 8.0 release notes and breaking changes","→","Redis 8.0 release notes and breaking changes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Redis Cloud changelog","→","Redis Cloud changelog","→\n      \n        Redis version release notes and breaking changes","→","Redis version release notes and breaking changes","→\n      \n        Redis 8.0 release notes and breaking changes","→","Redis 8.0 release notes and breaking changes"]
-nav_prev: {"path": "../index.md", "title": "Redis version release notes and breaking changes"}
-nav_next: {"path": "../8-2/index.md", "title": "Redis 8.2 release notes and breaking changes"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/index.md", "title": "Redis version release notes and breaking changes"}
+nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/8-2/index.md", "title": "Redis 8.2 release notes and breaking changes"}
 ---
 
 # Redis 8.0 release notes and breaking changes
@@ -19,7 +19,7 @@ Release notes and breaking changes for Redis 8.0 on Redis Cloud.
 
 Redis Cloud
 
-Redis 8.0 introduces powerful new capabilities, including the beta release of the Vector Set data structure, designed for AI use cases such as semantic search and recommendation systems. Redis 8 also merges Redis Stack and Redis Community Edition into a single unified distribution: Redis Open Source. For more information on the changes in Redis 8.0, see [What's new in Redis 8.0](/docs/latest/develop/whats-new/8-0/).
+Redis 8.0 introduces powerful new capabilities, including the beta release of the Vector Set data structure, designed for AI use cases such as semantic search and recommendation systems. Redis 8 also merges Redis Stack and Redis Community Edition into a single unified distribution: Redis Open Source. For more information on the changes in Redis 8.0, see [What's new in Redis 8.0](../../../../../develop/whats-new/8-0/index.md).
 
 ## Breaking changes
 
@@ -33,7 +33,7 @@ Note:
 
 The following content is relevant to all Redis distributions (RS, RC, and ROS).
 
-Redis 8 includes Redis Search, as well as JSON, time series, Bloom filter, cuckoo filter, top-k, count-min sketch, and t-digest data types. The integration of these features into Redis also comes with improvements to Redis [ACL](/docs/latest/operate/oss_and_stack/management/security/acl/) rules.
+Redis 8 includes Redis Search, as well as JSON, time series, Bloom filter, cuckoo filter, top-k, count-min sketch, and t-digest data types. The integration of these features into Redis also comes with improvements to Redis [ACL](../../../../oss_and_stack/management/security/acl/index.md) rules.
 
 Warning:
 

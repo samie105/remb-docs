@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:42.010Z"
 content_hash: "d7941ba220016b6ba8b9292c54037de405f490ce75d04c1850746312a6741100"
 menu_path: ["Check if two objects are deeply equal"]
 section_path: []
-nav_prev: {"path": "../base64/index.md", "title": "Encode and decode base64 strings"}
-nav_next: {"path": "../deflate/index.md", "title": "Compress and decompress data with DEFLATE"}
+nav_prev: {"path": "bun/docs/guides/util/base64/index.md", "title": "Encode and decode base64 strings"}
+nav_next: {"path": "bun/docs/guides/util/deflate/index.md", "title": "Compress and decompress data with DEFLATE"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../deflate/index.md", "title": "Compress and decompress data
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-Check if two objects are deeply equal. This is used internally by `expect().toEqual()` in Bun’s [test runner](/docs/test/writing-tests).
+Check if two objects are deeply equal. This is used internally by `expect().toEqual()` in Bun’s [test runner](../../../test/writing-tests/index.md).
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)index.ts
 
@@ -48,7 +48,7 @@ Bun.deepEquals(a, b); // true
 
 * * *
 
-Pass `true` as a third argument to enable strict mode. This is used internally by `expect().toStrictEqual()` in Bun’s [test runner](/docs/test/writing-tests). The following examples would return `true` in non-strict mode but `false` in strict mode.
+Pass `true` as a third argument to enable strict mode. This is used internally by `expect().toStrictEqual()` in Bun’s [test runner](../../../test/writing-tests/index.md). The following examples would return `true` in non-strict mode but `false` in strict mode.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)index.ts
 
@@ -71,7 +71,7 @@ Bun.deepEquals(new Foo(), { a: 1 }, true); // false
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -83,10 +83,10 @@ Escape an HTML string
 
 Previous
 
-](/docs/guides/util/escape-html)[
+](../escape-html/index.md)[
 
 Sleep for a fixed number of milliseconds
 
 Next
 
-](/docs/guides/util/sleep)
+](../sleep/index.md)

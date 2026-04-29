@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:52.909Z"
 content_hash: "e4681df682cb0e48a0a9afd0d64b27b78509aeb0245539a66e7e948dc8032188"
 menu_path: ["Write a Response to a file"]
 section_path: []
-nav_prev: {"path": "../filesink/index.md", "title": "Write a file incrementally"}
-nav_next: {"path": "../stdout/index.md", "title": "Write to stdout"}
+nav_prev: {"path": "bun/docs/guides/write-file/filesink/index.md", "title": "Write a file incrementally"}
+nav_next: {"path": "bun/docs/guides/write-file/stdout/index.md", "title": "Write to stdout"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../stdout/index.md", "title": "Write to stdout"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-This code snippet writes a `Response` to disk at a particular path. Bun will consume the `Response` body according to its `Content-Type` header. It uses the fast [`Bun.write()`](/docs/runtime/file-io#writing-files-bun-write) API to efficiently write data to disk. The first argument is a _destination_, like an absolute path or `BunFile` instance. The second argument is the _data_ to write.
+This code snippet writes a `Response` to disk at a particular path. Bun will consume the `Response` body according to its `Content-Type` header. It uses the fast [`Bun.write()`](../../../runtime/file-io/index.md#writing-files-bun-write) API to efficiently write data to disk. The first argument is a _destination_, like an absolute path or `BunFile` instance. The second argument is the _data_ to write.
 
 ```
 const result = await fetch("https://bun.com");
@@ -45,7 +45,7 @@ await Bun.write(path, result);
 
 * * *
 
-See [Docs > API > File I/O](/docs/runtime/file-io#writing-files-bun-write) for complete documentation of `Bun.write()`.
+See [Docs > API > File I/O](../../../runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
 
 Was this page helpful?
 
@@ -57,10 +57,10 @@ Write a Blob to a file
 
 Previous
 
-](/docs/guides/write-file/blob)[
+](../blob/index.md)[
 
 Append content to a file
 
 Next
 
-](/docs/guides/write-file/append)
+](../append/index.md)

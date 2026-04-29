@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:08.755Z"
 content_hash: "6804b2f762080373a16c0a74a94b931152c2f07c4310d6c1460828590b11549d"
 menu_path: ["Add a development dependency"]
 section_path: []
-nav_prev: {"path": "../add/index.md", "title": "Add a dependency"}
-nav_next: {"path": "../add-git/index.md", "title": "Add a Git dependency"}
+nav_prev: {"path": "bun/docs/guides/install/add/index.md", "title": "Add a dependency"}
+nav_next: {"path": "bun/docs/guides/install/add-git/index.md", "title": "Add a Git dependency"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../add-git/index.md", "title": "Add a Git dependency"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To add an npm package as a development dependency, use `bun add --development`.
 
@@ -58,7 +58,7 @@ This will add the package to `devDependencies` in `package.json`.
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -70,10 +70,10 @@ Add a dependency
 
 Previous
 
-](/docs/guides/install/add)[
+](../add/index.md)[
 
 Add an optional dependency
 
 Next
 
-](/docs/guides/install/add-optional)
+](../add-optional/index.md)

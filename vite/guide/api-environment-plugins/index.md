@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:27.652Z"
 content_hash: "97bc10363c23f5f4cadb7ab4552160359e1245bd02d91fc2f8787b3d5c7e0cdb"
 menu_path: ["Environment API for Plugins ​"]
 section_path: []
-nav_prev: {"path": "../api-environment-instances/index.md", "title": "Using Environment Instances \u200b"}
-nav_next: {"path": "../api-environment-frameworks/index.md", "title": "Environment API for Frameworks \u200b"}
+nav_prev: {"path": "vite/guide/api-environment-instances/index.md", "title": "Using Environment Instances \u200b"}
+nav_next: {"path": "vite/guide/api-environment-frameworks/index.md", "title": "Environment API for Frameworks \u200b"}
 ---
 
 ## Environment API for Plugins [​](#environment-api-for-plugins)

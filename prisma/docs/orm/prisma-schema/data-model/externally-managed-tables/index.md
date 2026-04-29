@@ -11,8 +11,8 @@ menu_path: ["External tables"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../database-mapping/index.md", "title": "Database mapping"}
-nav_next: {"path": "../indexes/index.md", "title": "Indexes"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/database-mapping/index.md", "title": "Database mapping"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/indexes/index.md", "title": "Indexes"}
 ---
 
 Data Model

@@ -10,8 +10,8 @@ content_hash: "ce2611b8b5fefae0bb51b042a25375f4bb94157ca72f81ed3f3fe344550635be"
 menu_path: ["dns - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../diagnostics_channel/index.md", "title": "diagnostics_channel - Node documentation"}
-nav_next: {"path": "promises/index.md", "title": "dns/promises - Node documentation"}
+nav_prev: {"path": "deno/api/node/diagnostics_channel/index.md", "title": "diagnostics_channel - Node documentation"}
+nav_next: {"path": "deno/api/node/dns/promises/index.md", "title": "dns/promises - Node documentation"}
 ---
 
 ### Usage in Deno

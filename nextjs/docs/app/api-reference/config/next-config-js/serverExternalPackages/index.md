@@ -11,15 +11,15 @@ menu_path: ["serverExternalPackages"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../serverComponentsHmrCache/index.md", "title": "serverComponentsHmrCache"}
-nav_next: {"path": "../staleTimes/index.md", "title": "staleTimes"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverComponentsHmrCache/index.md", "title": "serverComponentsHmrCache"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/staleTimes/index.md", "title": "staleTimes"}
 ---
 
 # serverExternalPackages
 
 Last updated April 23, 2026
 
-Dependencies used inside [Server Components](/docs/app/getting-started/server-and-client-components) and [Route Handlers](/docs/app/api-reference/file-conventions/route) will automatically be bundled by Next.js.
+Dependencies used inside [Server Components](../../../../getting-started/server-and-client-components/index.md) and [Route Handlers](../../../file-conventions/route/index.md) will automatically be bundled by Next.js.
 
 If a dependency is using Node.js specific features, you can choose to opt-out specific dependencies from the Server Components bundling and use native Node.js `require`.
 

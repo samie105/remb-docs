@@ -10,8 +10,8 @@ content_hash: "65c499e4daad7cf6e456732e5e6eeee631f7e4e23041075a63241b1c0ff9fe3d"
 menu_path: ["text-underline-offset"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
-nav_next: {"path": "../text-transform/index.md", "title": "text-transform"}
+nav_prev: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
+nav_next: {"path": "tailwind/docs/text-transform/index.md", "title": "text-transform"}
 ---
 
 # text-underline-offset
@@ -87,7 +87,7 @@ Prefix a `text-underline-offset` utility with a breakpoint variant like `md:` to
 <p class="underline md:underline-offset-4 ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

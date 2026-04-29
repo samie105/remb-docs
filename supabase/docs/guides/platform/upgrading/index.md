@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:20.106Z"
 content_hash: "d0a8b08efdff530289c9681724d9ae322087c4741e8eb073ac29fa1859b51846"
 menu_path: ["Platform","Platform","Upgrades & Migrations","Upgrades & Migrations","Upgrading","Upgrading"]
 section_path: ["Platform","Platform","Upgrades & Migrations","Upgrades & Migrations","Upgrading","Upgrading"]
-nav_prev: {"path": "../sso/okta/index.md", "title": "Set Up SSO with Okta"}
-nav_next: {"path": "../your-monthly-invoice/index.md", "title": "Your monthly invoice"}
+nav_prev: {"path": "supabase/docs/guides/platform/sso/okta/index.md", "title": "Set Up SSO with Okta"}
+nav_next: {"path": "supabase/docs/guides/platform/your-monthly-invoice/index.md", "title": "Your monthly invoice"}
 ---
 
 # 
@@ -21,13 +21,13 @@ Upgrading
 
 Supabase ships fast and we endeavor to add all new features to existing projects wherever possible. In some cases, access to new features require upgrading or migrating your Supabase project.
 
-This guide refers to upgrading the Postgres version of your Supabase Project. For scaling your compute size, refer to the [Compute and Disk page](/docs/guides/platform/compute-and-disk).
+This guide refers to upgrading the Postgres version of your Supabase Project. For scaling your compute size, refer to the [Compute and Disk page](../compute-and-disk/index.md).
 
 You can upgrade your project using in-place upgrades or by pausing and restoring your project.
 
 ## In-place upgrades[#](#in-place-upgrades)
 
-For security purposes, passwords for custom roles are not backed up and, following a restore, they would need to be reset. See [here](/docs/guides/platform/backups#daily-backups) for more details
+For security purposes, passwords for custom roles are not backed up and, following a restore, they would need to be reset. See [here](../backups/index.md#daily-backups) for more details
 
 In-place upgrades uses `pg_upgrade`. For projects larger than 1GB, this method is generally faster than a pause and restore cycle, and the speed advantage grows with the size of the database.
 
@@ -80,8 +80,8 @@ During the 90-day restore window a paused project can be restored to the platfor
 
 After the 90-day restore window, you can download your project's backup file, and Storage objects from the project dashboard. You can restore the data in the following ways:
 
-*   [Restore a backup to a new Supabase project](/docs/guides/platform/migrating-within-supabase/dashboard-restore)
-*   [Restore a backup locally](/docs/guides/local-development/restoring-downloaded-backup)
+*   [Restore a backup to a new Supabase project](../migrating-within-supabase/dashboard-restore/index.md)
+*   [Restore a backup locally](../../local-development/restoring-downloaded-backup/index.md)
 
 ![Project Paused: 90 Days Remaining](/docs/img/guides/platform/paused-dl-backup.png)
 

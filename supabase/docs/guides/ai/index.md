@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:53.474Z"
 content_hash: "369ef20503b6c6106725d9a8e4ba023e36e208fc941d455d9d284e59f4fd4dc4"
 menu_path: ["AI & Vectors","AI & Vectors","Overview","Overview"]
 section_path: ["AI & Vectors","AI & Vectors","Overview","Overview"]
-nav_prev: {"path": "../getting-started/index.md", "title": "Getting Started"}
-nav_next: {"path": "automatic-embeddings/index.md", "title": "Automatic embeddings"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "supabase/docs/guides/ai/automatic-embeddings/index.md", "title": "Automatic embeddings"}
 ---
 
 # 
@@ -27,19 +27,19 @@ Supabase provides an open source toolkit for developing AI applications using Po
 
 The toolkit includes:
 
-*   A [vector store](/docs/guides/ai/vector-columns) and embeddings support using Postgres and pgvector.
-*   A [Python client](/docs/guides/ai/vecs-python-client) for managing unstructured embeddings.
-*   An [embedding generation](/docs/guides/ai/quickstarts/generate-text-embeddings) process using open source models directly in Edge Functions.
-*   [Database migrations](/docs/guides/ai/examples/headless-vector-search#prepare-your-database) for managing structured embeddings.
-*   Integrations with all popular AI providers, such as [OpenAI](/docs/guides/ai/examples/openai), [Hugging Face](/docs/guides/ai/hugging-face), [LangChain](/docs/guides/ai/langchain), and more.
+*   A [vector store](vector-columns/index.md) and embeddings support using Postgres and pgvector.
+*   A [Python client](vecs-python-client/index.md) for managing unstructured embeddings.
+*   An [embedding generation](quickstarts/generate-text-embeddings/index.md) process using open source models directly in Edge Functions.
+*   [Database migrations](examples/headless-vector-search/index.md#prepare-your-database) for managing structured embeddings.
+*   Integrations with all popular AI providers, such as [OpenAI](examples/openai/index.md), [Hugging Face](hugging-face/index.md), [LangChain](langchain/index.md), and more.
 
 ## Search[#](#search)
 
 You can use Supabase to build different types of search features for your app, including:
 
-*   [Semantic search](/docs/guides/ai/semantic-search): search by meaning rather than exact keywords
-*   [Keyword search](/docs/guides/ai/keyword-search): search by words or phrases
-*   [Hybrid search](/docs/guides/ai/hybrid-search): combine semantic search with keyword search
+*   [Semantic search](semantic-search/index.md): search by meaning rather than exact keywords
+*   [Keyword search](keyword-search/index.md): search by words or phrases
+*   [Hybrid search](hybrid-search/index.md): combine semantic search with keyword search
 
 ## Examples[#](#examples)
 
@@ -113,7 +113,7 @@ OpenAI
 
 OpenAI is an AI research and deployment company. Supabase provides a simple way to use OpenAI in your applications.
 
-](/docs/guides/ai/examples/building-chatgpt-plugins)
+](examples/building-chatgpt-plugins/index.md)
 
 [
 
@@ -121,7 +121,7 @@ Amazon Bedrock
 
 A fully managed service that offers a choice of high-performing foundation models from leading AI companies.
 
-](/docs/guides/ai/integrations/amazon-bedrock)
+](integrations/amazon-bedrock/index.md)
 
 [
 
@@ -129,7 +129,7 @@ Hugging Face
 
 Hugging Face is an open-source provider of NLP technologies. Supabase provides a simple way to use Hugging Face's models in your applications.
 
-](/docs/guides/ai/hugging-face)
+](hugging-face/index.md)
 
 [
 
@@ -137,7 +137,7 @@ LangChain
 
 LangChain is a language-agnostic, open-source, and self-hosted API for text translation, summarization, and sentiment analysis.
 
-](/docs/guides/ai/langchain)
+](langchain/index.md)
 
 [
 
@@ -145,7 +145,7 @@ LlamaIndex
 
 LlamaIndex is a data framework for your LLM applications.
 
-](/docs/guides/ai/integrations/llamaindex)
+](integrations/llamaindex/index.md)
 
 ## Case studies[#](#case-studies)
 

@@ -9,28 +9,28 @@ last_crawled_at: "2026-04-18T16:32:04.357Z"
 content_hash: "d3c4888fedc416a100f41ae5f0335316e16e02c3d772c963e9d871cf7538b211"
 menu_path: ["Why Astro?"]
 section_path: []
-nav_prev: {"path": "../../tutorial/6-islands/index.md", "title": "Check in: Unit 6 - Astro Islands"}
-nav_next: {"path": "../islands/index.md", "title": "Islands architecture"}
+nav_prev: {"path": "astro/en/tutorial/6-islands/index.md", "title": "Check in: Unit 6 - Astro Islands"}
+nav_next: {"path": "astro/en/concepts/islands/index.md", "title": "Islands architecture"}
 ---
 
 # Why Astro?
 
-**Astro** is the web framework for building **content-driven websites** like blogs, marketing, and e-commerce. Astro is best-known for pioneering a new [frontend architecture](/en/concepts/islands/) to reduce JavaScript overhead and complexity compared to other frameworks. If you need a website that loads fast and has great SEO, then Astro is for you.
+**Astro** is the web framework for building **content-driven websites** like blogs, marketing, and e-commerce. Astro is best-known for pioneering a new [frontend architecture](../islands/index.md) to reduce JavaScript overhead and complexity compared to other frameworks. If you need a website that loads fast and has great SEO, then Astro is for you.
 
 ## Features
 
 [Section titled “Features”](#features)
 
-**Astro is an all-in-one web framework.** It includes everything you need to create a website, built-in. There are also hundreds of different [integrations](https://astro.build/integrations/) and [API hooks](/en/reference/integrations-reference/) available to customize a project to your exact use case and needs.
+**Astro is an all-in-one web framework.** It includes everything you need to create a website, built-in. There are also hundreds of different [integrations](https://astro.build/integrations/) and [API hooks](../../reference/integrations-reference/index.md) available to customize a project to your exact use case and needs.
 
 Some highlights include:
 
-*   **[Islands](/en/concepts/islands/):** A component-based web architecture optimized for content-driven websites.
-*   **[UI-agnostic](/en/guides/framework-components/):** Supports React, Preact, Svelte, Vue, Solid, HTMX, web components, and more.
-*   **[Server-first](/en/guides/on-demand-rendering/):** Moves expensive rendering off of your visitors’ devices.
-*   **[Zero JS, by default](/en/basics/astro-components/):** Less client-side JavaScript to slow your site down.
-*   **[Content collections](/en/guides/content-collections/):** Organize, validate, and provide TypeScript type-safety for your Markdown content.
-*   **[Customizable](/en/guides/integrations/):** Partytown, MDX, and hundreds of integrations to choose from.
+*   **[Islands](../islands/index.md):** A component-based web architecture optimized for content-driven websites.
+*   **[UI-agnostic](../../guides/framework-components/index.md):** Supports React, Preact, Svelte, Vue, Solid, HTMX, web components, and more.
+*   **[Server-first](../../guides/on-demand-rendering/index.md):** Moves expensive rendering off of your visitors’ devices.
+*   **[Zero JS, by default](../../basics/astro-components/index.md):** Less client-side JavaScript to slow your site down.
+*   **[Content collections](../../guides/content-collections/index.md):** Organize, validate, and provide TypeScript type-safety for your Markdown content.
+*   **[Customizable](../../guides/integrations/index.md):** Partytown, MDX, and hundreds of integrations to choose from.
 
 ## Design Principles
 
@@ -113,4 +113,4 @@ Our welcoming, respectful, inclusive community on Discord is ready to provide su
 
 As an open-source project, we welcome contributions of all types and sizes from community members of all experience levels. You are invited to join in roadmap discussions to shape the future of Astro, and we hope you’ll contribute fixes and features to the core codebase, compiler, docs, language tools, websites, and other projects.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

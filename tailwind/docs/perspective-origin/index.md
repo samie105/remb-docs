@@ -10,8 +10,8 @@ content_hash: "c1beed79f3e6a4ca46826964db21a6d965395690b4734c42194473292d938a60"
 menu_path: ["perspective-origin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../perspective/index.md", "title": "perspective"}
-nav_next: {"path": "../rotate/index.md", "title": "rotate"}
+nav_prev: {"path": "tailwind/docs/perspective/index.md", "title": "perspective"}
+nav_next: {"path": "tailwind/docs/rotate/index.md", "title": "rotate"}
 ---
 
 Utilities for controlling an element's perspective origin when placed in 3D space.

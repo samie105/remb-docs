@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:18.477Z"
 content_hash: "54a805595a6b75eb654fde392efa6d24e022c6704add04ac4c4a4d7283756955"
 menu_path: ["On-demand rendering"]
 section_path: []
-nav_prev: {"path": "../astro-db/index.md", "title": "Astro DB"}
-nav_next: {"path": "../server-islands/index.md", "title": "Server islands"}
+nav_prev: {"path": "astro/en/guides/astro-db/index.md", "title": "Astro DB"}
+nav_next: {"path": "astro/en/guides/server-islands/index.md", "title": "Server islands"}
 ---
 
 # On-demand rendering
@@ -29,13 +29,13 @@ On-demand rendering on the server at request time is also known as **server-side
 
 To render any page on demand, you need to add an **adapter**. Each adapter allows Astro to output a script that runs your project on a specific **runtime**: the environment that runs code on the server to generate pages when they are requested (e.g. Netlify, Cloudflare).
 
-You may also wish to add an adapter even if your site is entirely static and you are not rendering any pages on demand. For example, the [Netlify adapter](/en/guides/integrations-guide/netlify/) enables Netlify’s Image CDN, and [server islands](/en/guides/server-islands/) require an adapter installed to use `server:defer` on a component.
+You may also wish to add an adapter even if your site is entirely static and you are not rendering any pages on demand. For example, the [Netlify adapter](/en/guides/integrations-guide/netlify/) enables Netlify’s Image CDN, and [server islands](../server-islands/index.md) require an adapter installed to use `server:defer` on a component.
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../integrations-guide/cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -43,20 +43,20 @@ You may also wish to add an adapter even if your site is entirely static and you
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../integrations-guide/node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../integrations-guide/vercel/index.md)
     
 
-Astro maintains official adapters for [Node.js](https://nodejs.org/), [Netlify](https://www.netlify.com/), [Vercel](https://vercel.com/), and [Cloudflare](https://www.cloudflare.com/). You can find both [official and community adapters in our integrations directory](https://astro.build/integrations/?search=&categories%5B%5D=adapters). Choose the one that corresponds to your [deployment environment](/en/guides/deploy/).
+Astro maintains official adapters for [Node.js](https://nodejs.org/), [Netlify](https://www.netlify.com/), [Vercel](https://vercel.com/), and [Cloudflare](https://www.cloudflare.com/). You can find both [official and community adapters in our integrations directory](https://astro.build/integrations/?search=&categories%5B%5D=adapters). Choose the one that corresponds to your [deployment environment](../deploy/index.md).
 
 ### Add an Adapter
 
 [Section titled “Add an Adapter”](#add-an-adapter)
 
-You can add any of the [official adapter integrations maintained by Astro](/en/guides/integrations/#official-integrations) with the following `astro add` command. This will install the adapter and make the appropriate changes to your `astro.config.mjs` file in one step.
+You can add any of the [official adapter integrations maintained by Astro](../integrations/index.md#official-integrations) with the following `astro add` command. This will install the adapter and make the appropriate changes to your `astro.config.mjs` file in one step.
 
 For example, to install the Netlify adapter, run:
 
@@ -68,7 +68,7 @@ For example, to install the Netlify adapter, run:
 npx astro add netlify
 ```
 
-You can also [add an adapter manually by installing the NPM package](/en/guides/integrations/#installing-an-npm-package) (e.g. `@astrojs/netlify`) and updating `astro.config.mjs` yourself.
+You can also [add an adapter manually by installing the NPM package](../integrations/index.md#installing-an-npm-package) (e.g. `@astrojs/netlify`) and updating `astro.config.mjs` yourself.
 
 Note that different adapters may have different configuration settings. Read each adapter’s documentation, and apply any necessary config options to your chosen adapter in `astro.config.mjs`
 
@@ -97,7 +97,7 @@ export async function GET() {  let number = Math.random();  return new Response(
 
 [Section titled “'server' mode”](#server-mode)
 
-For a **highly dynamic app**, after adding an adapter, you can [set your build output configuration to `output: 'server'`](/en/reference/configuration-reference/#output) to **server-render all your pages by default**. This is the equivalent of opting out of prerendering on every page.
+For a **highly dynamic app**, after adding an adapter, you can [set your build output configuration to `output: 'server'`](../../reference/configuration-reference/index.md#output) to **server-render all your pages by default**. This is the equivalent of opting out of prerendering on every page.
 
 Then, if needed, you can choose to prerender any individual pages that do not require a server to execute, such as a privacy policy or about page.
 
@@ -112,7 +112,7 @@ export const prerender = true;
 export async function GET() {  return new Response(    JSON.stringify({      message: `This is my static endpoint`,    }),  );}
 ```
 
-See more about the [`output` setting](/en/reference/configuration-reference/#output) in the configuration reference.
+See more about the [`output` setting](../../reference/configuration-reference/index.md#output) in the configuration reference.
 
 ## On-demand rendering features
 
@@ -141,13 +141,13 @@ if (Astro.cookies.has('counter')) {  const cookie = Astro.cookies.get('counter')
 Astro.cookies.set('counter', String(counter))---<html>  <h1>Counter = {counter}</h1></html>
 ```
 
-See more details about [`Astro.cookies` and the `AstroCookie` type](/en/reference/api-reference/#cookies) in the API reference.
+See more details about [`Astro.cookies` and the `AstroCookie` type](../../reference/api-reference/index.md#cookies) in the API reference.
 
 ### `Response`
 
 [Section titled “Response”](#response)
 
-[`Astro.response`](/en/reference/api-reference/#response) is a standard [`ResponseInit`](https://developer.mozilla.org/en-US/docs/Web/API/Response/Response#options) object. It can be used to set the response status and headers.
+[`Astro.response`](../../reference/api-reference/index.md#response) is a standard [`ResponseInit`](https://developer.mozilla.org/en-US/docs/Web/API/Response/Response#options) object. It can be used to set the response status and headers.
 
 The example below sets a response status and status text for a product page when the product does not exist:
 
@@ -173,7 +173,7 @@ Astro.response.headers.set('Cache-Control', 'public, max-age=3600');---<html>  <
 
 [Section titled “Return a Response object”](#return-a-response-object)
 
-You can also return a [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response) object directly from any page using on-demand rendering either manually or with [`Astro.redirect`](/en/reference/api-reference/#redirect).
+You can also return a [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response) object directly from any page using on-demand rendering either manually or with [`Astro.redirect`](../../reference/api-reference/index.md#redirect).
 
 The example below looks up an ID in the database on a dynamic page and either it returns a 404 if the product does not exist, or it redirects the user to another page if the product is no longer available, or it displays the product:
 
@@ -215,7 +215,7 @@ The HTTP method used in the request is available as `Astro.request.method`. This
 console.log(Astro.request.method) // GET (when navigated to in the browser)---
 ```
 
-See more details about [`Astro.request`](/en/reference/api-reference/#request) in the API reference.
+See more details about [`Astro.request`](../../reference/api-reference/index.md#request) in the API reference.
 
 ### Server Endpoints
 
@@ -223,8 +223,8 @@ See more details about [`Astro.request`](/en/reference/api-reference/#request) i
 
 A server endpoint, also known as an **API route**, is a special function exported from a `.js` or `.ts` file within the `src/pages/` folder. A powerful feature of server-side rendering on demand, API routes are able to securely execute code on the server.
 
-The function takes an [endpoint context](/en/reference/api-reference/) and returns a [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response).
+The function takes an [endpoint context](../../reference/api-reference/index.md) and returns a [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response).
 
-To learn more, see our [Endpoints Guide](/en/guides/endpoints/#server-endpoints-api-routes).
+To learn more, see our [Endpoints Guide](../endpoints/index.md#server-endpoints-api-routes).
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:20.278Z"
 content_hash: "097514acc66a85065446f22ac62ee6256ab5980772de2dd9d81b05a6389d0f5e"
 menu_path: ["Auth","Auth","Security","Security","Password Security","Password Security"]
 section_path: ["Auth","Auth","Security","Security","Password Security","Password Security"]
-nav_prev: {"path": "../oauth-server/token-security/index.md", "title": "Token Security and Row Level Security"}
-nav_next: {"path": "../passwords/index.md", "title": "Password-based Auth"}
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/token-security/index.md", "title": "Token Security and Row Level Security"}
+nav_next: {"path": "supabase/docs/guides/auth/passwords/index.md", "title": "Password-based Auth"}
 ---
 
 # 
@@ -96,7 +96,7 @@ In addition to choosing suitable password strength settings and preventing the u
 *   Use a password manager to store and generate passwords.
 *   Avoid password reuse across websites and apps.
 *   Avoid using personal information in passwords.
-*   Use [Multi-Factor Authentication](/docs/guides/auth/auth-mfa).
+*   Use [Multi-Factor Authentication](../auth-mfa/index.md).
 
 ## Frequently asked questions[#](#frequently-asked-questions)
 

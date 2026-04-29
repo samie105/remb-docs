@@ -10,8 +10,8 @@ content_hash: "44792f4fe74068bf312b9e87a31ebaa7585bca008457f7e30168fdcddd9dd30c"
 menu_path: ["word-break"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../white-space/index.md", "title": "white-space"}
-nav_next: {"path": "../overflow-wrap/index.md", "title": "overflow-wrap"}
+nav_prev: {"path": "tailwind/docs/white-space/index.md", "title": "white-space"}
+nav_next: {"path": "tailwind/docs/overflow-wrap/index.md", "title": "overflow-wrap"}
 ---
 
 Utilities for controlling word breaks in an element.

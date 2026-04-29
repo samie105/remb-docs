@@ -11,8 +11,8 @@ menu_path: ["How to build single-page applications with Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../self-hosting/index.md", "title": "How to self-host your Next.js application"}
-nav_next: {"path": "../static-exports/index.md", "title": "How to create a static export of your Next.js application"}
+nav_prev: {"path": "nextjs/docs/app/guides/self-hosting/index.md", "title": "How to self-host your Next.js application"}
+nav_next: {"path": "nextjs/docs/app/guides/static-exports/index.md", "title": "How to create a static export of your Next.js application"}
 ---
 
 # How to build single-page applications with Next.js
@@ -38,9 +38,9 @@ Strict SPAs often require large amounts of JavaScript to load before the page ca
 
 Next.js can automatically code split your JavaScript bundles, and generate multiple HTML entry points into different routes. This avoids loading unnecessary JavaScript code on the client-side, reducing the bundle size and enabling faster page loads.
 
-The [`next/link`](/docs/app/api-reference/components/link) component automatically [prefetches](/docs/app/api-reference/components/link#prefetch) routes, giving you the fast page transitions of a strict SPA, but with the advantage of persisting application routing state to the URL for linking and sharing.
+The [`next/link`](../../api-reference/components/link/index.md) component automatically [prefetches](../../api-reference/components/link/index.md#prefetch) routes, giving you the fast page transitions of a strict SPA, but with the advantage of persisting application routing state to the URL for linking and sharing.
 
-Next.js can start as a static site or even a strict SPA where everything is rendered client-side. If your project grows, Next.js allows you to progressively add more server features (e.g. [React Server Components](/docs/app/getting-started/server-and-client-components), [Server Actions](/docs/app/getting-started/mutating-data), and more) as needed.
+Next.js can start as a static site or even a strict SPA where everything is rendered client-side. If your project grows, Next.js allows you to progressively add more server features (e.g. [React Server Components](../../getting-started/server-and-client-components/index.md), [Server Actions](../../getting-started/mutating-data/index.md), and more) as needed.
 
 ## Examples[](#examples)
 
@@ -81,7 +81,7 @@ export default function RootLayout({
 }
 ```
 
-While you can [defer and pass a single Promise](/docs/app/getting-started/fetching-data#streaming-data-with-the-use-api) as a prop to a Client Component, we generally see this pattern paired with a React context provider. This enables easier access from Client Components with a custom React Hook.
+While you can [defer and pass a single Promise](../../getting-started/fetching-data/index.md#streaming-data-with-the-use-api) as a prop to a Client Component, we generally see this pattern paired with a React context provider. This enables easier access from Client Components with a custom React Hook.
 
 You can forward a Promise to the React context provider:
 
@@ -226,7 +226,7 @@ Learn more in the [React Query documentation](https://tanstack.com/query/latest/
 
 ### Rendering components only in the browser[](#rendering-components-only-in-the-browser)
 
-Client components are [prerendered](https://github.com/reactwg/server-components/discussions/4) during `next build`. If you want to disable prerendering for a Client Component and only load it in the browser environment, you can use [`next/dynamic`](/docs/app/guides/lazy-loading#nextdynamic):
+Client components are [prerendered](https://github.com/reactwg/server-components/discussions/4) during `next build`. If you want to disable prerendering for a Client Component and only load it in the browser environment, you can use [`next/dynamic`](../lazy-loading/index.md#nextdynamic):
 
 ```
 import dynamic from 'next/dynamic'
@@ -240,11 +240,11 @@ This can be useful for third-party libraries that rely on browser APIs like `win
 
 ### Shallow routing on the client[](#shallow-routing-on-the-client)
 
-If you are migrating from a strict SPA like [Create React App](/docs/app/guides/migrating/from-create-react-app) or [Vite](/docs/app/guides/migrating/from-vite), you might have existing code which shallow routes to update the URL state. This can be useful for manual transitions between views in your application _without_ using the default Next.js file-system routing.
+If you are migrating from a strict SPA like [Create React App](../migrating/from-create-react-app/index.md) or [Vite](../migrating/from-vite/index.md), you might have existing code which shallow routes to update the URL state. This can be useful for manual transitions between views in your application _without_ using the default Next.js file-system routing.
 
 Next.js allows you to use the native [`window.history.pushState`](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) and [`window.history.replaceState`](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState) methods to update the browser's history stack without reloading the page.
 
-`pushState` and `replaceState` calls integrate into the Next.js Router, allowing you to sync with [`usePathname`](/docs/app/api-reference/functions/use-pathname) and [`useSearchParams`](/docs/app/api-reference/functions/use-search-params).
+`pushState` and `replaceState` calls integrate into the Next.js Router, allowing you to sync with [`usePathname`](../../api-reference/functions/use-pathname/index.md) and [`useSearchParams`](../../api-reference/functions/use-search-params/index.md).
 
 ```
 'use client'
@@ -269,7 +269,7 @@ export default function SortProducts() {
 }
 ```
 
-Learn more about how [routing and navigation](/docs/app/getting-started/linking-and-navigating#how-navigation-works) work in Next.js.
+Learn more about how [routing and navigation](../../getting-started/linking-and-navigating/index.md#how-navigation-works) work in Next.js.
 
 ### Using Server Actions in Client Components[](#using-server-actions-in-client-components)
 
@@ -303,11 +303,11 @@ export function Button() {
 }
 ```
 
-Learn more about [mutating data with Server Actions](/docs/app/getting-started/mutating-data).
+Learn more about [mutating data with Server Actions](../../getting-started/mutating-data/index.md).
 
 ## Static export (optional)[](#static-export-optional)
 
-Next.js also supports generating a fully [static site](/docs/app/guides/static-exports). This has some advantages over strict SPAs:
+Next.js also supports generating a fully [static site](../static-exports/index.md). This has some advantages over strict SPAs:
 
 -   **Automatic code-splitting**: Instead of shipping a single `index.html`, Next.js will generate an HTML file per route, so your visitors get the content faster without waiting for the client JavaScript bundle.
 -   **Improved user experience:** Instead of a minimal skeleton for all routes, you get fully rendered pages for each route. When users navigate client side, transitions remain instant and SPA-like.
@@ -328,15 +328,15 @@ export default nextConfig
 
 After running `next build`, Next.js will create an `out` folder with the HTML/CSS/JS assets for your application.
 
-> **Note:** Next.js server features are not supported with static exports. [Learn more](/docs/app/guides/static-exports#unsupported-features).
+> **Note:** Next.js server features are not supported with static exports. [Learn more](../static-exports/index.md#unsupported-features).
 
 ## Migrating existing projects to Next.js[](#migrating-existing-projects-to-nextjs)
 
 You can incrementally migrate to Next.js by following our guides:
 
--   [Migrating from Create React App](/docs/app/guides/migrating/from-create-react-app)
--   [Migrating from Vite](/docs/app/guides/migrating/from-vite)
+-   [Migrating from Create React App](../migrating/from-create-react-app/index.md)
+-   [Migrating from Vite](../migrating/from-vite/index.md)
 
-If you are already using a SPA with the Pages Router, you can learn how to [incrementally adopt the App Router](/docs/app/guides/migrating/app-router-migration).
+If you are already using a SPA with the Pages Router, you can learn how to [incrementally adopt the App Router](../migrating/app-router-migration/index.md).
 
 Was this helpful?

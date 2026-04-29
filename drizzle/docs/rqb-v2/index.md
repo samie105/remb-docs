@@ -10,8 +10,8 @@ content_hash: "ac7d0a4d6c8946a3b3cbc1a8543913d01d8e6605daac851b4068b73291bca2c7"
 menu_path: ["Drizzle Queries"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../seed-versioning/index.md", "title": "Versioning"}
-nav_next: {"path": "../select/index.md", "title": "SQL Select"}
+nav_prev: {"path": "drizzle/docs/seed-versioning/index.md", "title": "Versioning"}
+nav_next: {"path": "drizzle/docs/select/index.md", "title": "SQL Select"}
 ---
 
 ## Drizzle Queries

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:58.958Z"
 content_hash: "87e8f9b4c917c2640cf0aa821850f5847fad0d0ad7806a3a0067793d4d672b5d"
 menu_path: ["bunfig.toml"]
 section_path: []
-nav_prev: {"path": "../bun-apis/index.md", "title": "Bun APIs"}
-nav_next: {"path": "../c-compiler/index.md", "title": "C Compiler"}
+nav_prev: {"path": "bun/docs/runtime/bun-apis/index.md", "title": "Bun APIs"}
+nav_next: {"path": "bun/docs/runtime/c-compiler/index.md", "title": "C Compiler"}
 ---
 
 # scripts to run before `bun run`-ing a file or script

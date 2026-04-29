@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:22.956Z"
 content_hash: "48e55df471dfec124786c235b15d3298eaa8529e7f76b6e4fd3e183ae106c578"
 menu_path: ["useQueries()"]
 section_path: []
-nav_prev: {"path": "../useMutation/index.md", "title": "useMutation()"}
-nav_next: {"path": "../useQuery/index.md", "title": "useQuery()"}
+nav_prev: {"path": "trpc/docs/v10/client/react/useMutation/index.md", "title": "useMutation()"}
+nav_next: {"path": "trpc/docs/v10/client/react/useQuery/index.md", "title": "useQuery()"}
 ---
 
 The `useQueries` hook can be used to fetch a variable number of queries at the same time using only one hook call.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:05.879Z"
 content_hash: "8d4b430208b80d1c52628c7eff85552aa1c17b558d35c166154d670f4bfb3daf"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","IPv4","IPv4"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","IPv4","IPv4"]
-nav_prev: {"path": "../egress/index.md", "title": "Manage Egress usage"}
-nav_next: {"path": "../log-drains/index.md", "title": "Manage Log Drain usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/egress/index.md", "title": "Manage Egress usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/log-drains/index.md", "title": "Manage Log Drain usage"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Manage IPv4 usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-You can assign a dedicated [IPv4 address](/docs/guides/platform/ipv4-address) to a database by enabling the [IPv4 add-on](/dashboard/project/_/settings/addons?panel=ipv4). You are charged for all IPv4 addresses configured across your databases.
+You can assign a dedicated [IPv4 address](../../ipv4-address/index.md) to a database by enabling the [IPv4 add-on](/dashboard/project/_/settings/addons?panel=ipv4). You are charged for all IPv4 addresses configured across your databases.
 
-IPv4 Hours are **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+IPv4 Hours are **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 If the primary database has a dedicated IPv4 address configured, its Read Replicas are also assigned one, with charges for each.
 
@@ -289,4 +289,4 @@ Compute Credits
 
 ## Optimize usage[#](#optimize-usage)
 
-To see whether your database actually needs a dedicated IPv4 address, refer to [When you need the IPv4 add-on](/docs/guides/platform/ipv4-address#when-you-need-the-ipv4-add-on).
+To see whether your database actually needs a dedicated IPv4 address, refer to [When you need the IPv4 add-on](../../ipv4-address/index.md#when-you-need-the-ipv4-add-on).

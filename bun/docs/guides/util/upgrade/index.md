@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:18.420Z"
 content_hash: "23708b2600862785b3e9295983644687904d600796703f165514e256b160287e"
 menu_path: ["Upgrade Bun to the latest version"]
 section_path: []
-nav_prev: {"path": "../sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
-nav_next: {"path": "../version/index.md", "title": "Get the current Bun version"}
+nav_prev: {"path": "bun/docs/guides/util/sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
+nav_next: {"path": "bun/docs/guides/util/version/index.md", "title": "Get the current Bun version"}
 ---
 
 # Output: 1.x.y
@@ -113,8 +113,8 @@ To avoid conflicts with Scoop, use `scoop update bun` instead.
 
 See also
 
-*   [Installation](/docs/installation) — Install Bun for the first time
-*   [Update packages](/docs/pm/cli/update) — Update dependencies to latest versions
+*   [Installation](../../../installation/index.md) — Install Bun for the first time
+*   [Update packages](../../../pm/cli/update/index.md) — Update dependencies to latest versions
 
 Was this page helpful?
 
@@ -126,10 +126,10 @@ Codesign a single-file JavaScript executable on macOS
 
 Previous
 
-](/docs/guides/runtime/codesign-macos-executable)[
+](../../runtime/codesign-macos-executable/index.md)[
 
 Detect when code is executed with Bun
 
 Next
 
-](/docs/guides/util/detect-bun)
+](../detect-bun/index.md)

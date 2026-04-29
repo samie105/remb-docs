@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:02.786Z"
 content_hash: "dfe08d2d1d3a677d6efd29498a3850b6c2b8358c5e4d9c16c9de4e9ca0c407bd"
 menu_path: ["Convert an ArrayBuffer to an array of numbers"]
 section_path: []
-nav_prev: {"path": "../../index.md", "title": "Guides"}
-nav_next: {"path": "../arraybuffer-to-blob/index.md", "title": "Convert an ArrayBuffer to a Blob"}
+nav_prev: {"path": "bun/docs/guides/index.md", "title": "Guides"}
+nav_next: {"path": "bun/docs/guides/binary/arraybuffer-to-blob/index.md", "title": "Convert an ArrayBuffer to a Blob"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../arraybuffer-to-blob/index.md", "title": "Convert an Array
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To retrieve the contents of an `ArrayBuffer` as an array of numbers, create a [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) over of the buffer. and use the [`Array.from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) method to convert it to an array.
 
@@ -57,7 +57,7 @@ const regularArr = Array.from(uintArr);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -69,10 +69,10 @@ Convert an ArrayBuffer to a Blob
 
 Previous
 
-](/docs/guides/binary/arraybuffer-to-blob)[
+](../arraybuffer-to-blob/index.md)[
 
 Convert an ArrayBuffer to a Uint8Array
 
 Next
 
-](/docs/guides/binary/arraybuffer-to-typedarray)
+](../arraybuffer-to-typedarray/index.md)

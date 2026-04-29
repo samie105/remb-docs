@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:09.966Z"
 content_hash: "538ac55406ab441d686dab0a7659100c1c5632e8d6940ee8edba74a97a4345ab"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Flutter","Flutter"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Flutter","Flutter"]
-nav_prev: {"path": "../flask/index.md", "title": "Use Supabase with Python"}
-nav_next: {"path": "../hono/index.md", "title": "Use Supabase with Hono"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/flask/index.md", "title": "Use Supabase with Python"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/hono/index.md", "title": "Use Supabase with Hono"}
 ---
 
 # 
@@ -103,7 +103,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=flutter).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -145,7 +145,7 @@ Note that `supabase_flutter` is compatible with web, iOS, Android, macOS, and Wi
 
 ## Setup deep links[#](#setup-deep-links)
 
-Many sign in methods require deep links to redirect the user back to your app after authentication. Read more about setting deep links up for all platforms (including web) in the [Flutter Mobile Guide](/docs/guides/getting-started/tutorials/with-flutter#setup-deep-links).
+Many sign in methods require deep links to redirect the user back to your app after authentication. Read more about setting deep links up for all platforms (including web) in the [Flutter Mobile Guide](../../tutorials/with-flutter/index.md#setup-deep-links).
 
 ## Going to production[#](#going-to-production)
 

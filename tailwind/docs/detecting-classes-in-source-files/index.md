@@ -10,8 +10,8 @@ content_hash: "d67361d0e271700b1a3701b10b967f5176a459deefab12aea01030c4774a510e"
 menu_path: ["Detecting classes in source files"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../adding-custom-styles/index.md", "title": "Adding custom styles"}
-nav_next: {"path": "../functions-and-directives/index.md", "title": "Functions and directives"}
+nav_prev: {"path": "tailwind/docs/adding-custom-styles/index.md", "title": "Adding custom styles"}
+nav_next: {"path": "tailwind/docs/functions-and-directives/index.md", "title": "Functions and directives"}
 ---
 
 Understanding and customizing how Tailwind scans your source files.

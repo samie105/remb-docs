@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:10.424Z"
 content_hash: "42d40640f2228f8aaea2dcd330ce7923e6dc2c2d60c77cf9aa78b746c9fd00f4"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Branching via GitHub","Branching via GitHub"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Branching via GitHub","Branching via GitHub"]
-nav_prev: {"path": "../dashboard/index.md", "title": "Branching via the dashboard"}
-nav_next: {"path": "../integrations/index.md", "title": "Integrations"}
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/dashboard/index.md", "title": "Branching via the dashboard"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/integrations/index.md", "title": "Integrations"}
 ---
 
 # 
@@ -39,7 +39,7 @@ In the Supabase Dashboard:
 
 ## Preparing your Git repository[#](#preparing-your-git-repository)
 
-You will be using the [Supabase CLI](/docs/guides/cli) to initialise your local `./supabase` directory:
+You will be using the [Supabase CLI](../../../cli/index.md) to initialise your local `./supabase` directory:
 
 1
 
@@ -81,7 +81,7 @@ When a new branch is created in GitHub, a corresponding branch is created in Sup
 
 ### Configuration[#](#configuration)
 
-You can test configuration changes on your Preview Branch by configuring the `config.toml` file in your Supabase directory. See the [Configuration docs](/docs/guides/deployment/branching/configuration) for more information.
+You can test configuration changes on your Preview Branch by configuring the `config.toml` file in your Supabase directory. See the [Configuration docs](../configuration/index.md) for more information.
 
 A comment is added to your PR with the deployment status of your preview branch.
 
@@ -93,7 +93,7 @@ The migrations in the `migrations` subdirectory of your Supabase directory are a
 
 No production data is copied to your Preview branch. This is meant to protect your sensitive production data.
 
-You can seed your Preview Branch with sample data using the `seed.sql` file in your Supabase directory. See the [Seeding docs](/docs/guides/local-development/seeding-your-database) for more information.
+You can seed your Preview Branch with sample data using the `seed.sql` file in your Supabase directory. See the [Seeding docs](../../../local-development/seeding-your-database/index.md) for more information.
 
 Data changes in your seed files are not merged to production.
 

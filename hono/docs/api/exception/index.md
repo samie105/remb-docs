@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:35.479Z"
 content_hash: "6892c043fc236e8019b21c5d37cdbeeac3af22978f941a78f71f3f9a6993a10d"
 menu_path: ["HTTPException ​"]
 section_path: []
-nav_prev: {"path": "../request/index.md", "title": "HonoRequest \u200b"}
-nav_next: {"path": "../presets/index.md", "title": "Presets \u200b"}
+nav_prev: {"path": "hono/docs/api/request/index.md", "title": "HonoRequest \u200b"}
+nav_next: {"path": "hono/docs/api/presets/index.md", "title": "Presets \u200b"}
 ---
 
 When a fatal error occurs, Hono (and many ecosystem middleware) may throw an `HTTPException`. This is a custom Hono `Error` that simplifies [returning error responses](#handling-httpexceptions).

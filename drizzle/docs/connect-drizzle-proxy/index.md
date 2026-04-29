@@ -10,8 +10,8 @@ content_hash: "596140daad9b2c49a65f017f8762a9a33f378e036dd4ebb8bd239af0f7ee3018"
 menu_path: ["Drizzle HTTP proxy"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-aws-data-api-mysql/index.md", "title": "Drizzle <> AWS Data API MySQL"}
-nav_next: {"path": "../column-types/pg/index.md", "title": "PostgreSQL column types"}
+nav_prev: {"path": "drizzle/docs/connect-aws-data-api-mysql/index.md", "title": "Drizzle <> AWS Data API MySQL"}
+nav_next: {"path": "drizzle/docs/column-types/pg/index.md", "title": "PostgreSQL column types"}
 ---
 
 How an HTTP Proxy works and why you might need it

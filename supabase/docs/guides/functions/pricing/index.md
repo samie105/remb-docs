@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:58.993Z"
 content_hash: "fa8e17273b466d53e14bc21d2552f0ba6be28c2934f628641310a51d89790eb8"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Pricing","Pricing"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Pricing","Pricing"]
-nav_prev: {"path": "../logging/index.md", "title": "Logging"}
-nav_next: {"path": "../quickstart/index.md", "title": "Getting Started with Edge Functions"}
+nav_prev: {"path": "supabase/docs/guides/functions/logging/index.md", "title": "Logging"}
+nav_next: {"path": "supabase/docs/guides/functions/quickstart/index.md", "title": "Getting Started with Edge Functions"}
 ---
 
 # 
@@ -51,4 +51,4 @@ Custom
 
 Custom
 
-For a detailed explanation of how charges are calculated, refer to [Manage Edge Function Invocations usage](/docs/guides/platform/manage-your-usage/edge-function-invocations).
+For a detailed explanation of how charges are calculated, refer to [Manage Edge Function Invocations usage](../../platform/manage-your-usage/edge-function-invocations/index.md).

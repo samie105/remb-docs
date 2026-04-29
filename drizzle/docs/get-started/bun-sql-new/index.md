@@ -10,8 +10,8 @@ content_hash: "6126c12469cb46fd127cca68b99e42d809ac3c2af7f95417dbea034e80201276"
 menu_path: ["Get Started with Drizzle and Bun:SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../bun-sql-existing/index.md", "title": "Get Started with Drizzle and SQLite in existing project"}
-nav_next: {"path": "../bun-sqlite-existing/index.md", "title": "Get Started with Drizzle and Bun:SQLite in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/bun-sql-existing/index.md", "title": "Get Started with Drizzle and SQLite in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/bun-sqlite-existing/index.md", "title": "Get Started with Drizzle and Bun:SQLite in existing project"}
 ---
 
 ## Get Started with Drizzle and Bun:SQLite

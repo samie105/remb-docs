@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:45.589Z"
 content_hash: "bd3c84d9bcc6cc694a27c7633ded590aae61e4d6f69538763929ea5570bab94c"
 menu_path: ["Use Neon Postgres through Drizzle ORM"]
 section_path: []
-nav_prev: {"path": "../mongoose/index.md", "title": "Read and write data to MongoDB using Mongoose and Bun"}
-nav_next: {"path": "../neon-serverless-postgres/index.md", "title": "Use Neon's Serverless Postgres with Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/mongoose/index.md", "title": "Read and write data to MongoDB using Mongoose and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/neon-serverless-postgres/index.md", "title": "Use Neon's Serverless Postgres with Bun"}
 ---
 
 [Neon](https://neon.tech/) is a fully managed serverless Postgres, separating compute and storage to offer features like autoscaling, branching and bottomless storage. Neon can be used from Bun directly using the `@neondatabase/serverless` driver or through an ORM like `Drizzle`. Drizzle ORM supports both a SQL-like “query builder” API and an ORM-like [Queries API](https://orm.drizzle.team/docs/rqb). Get started by creating a project directory, initializing the directory using `bun init`, and installing Drizzle and the [Neon serverless driver](https://github.com/neondatabase/serverless/).

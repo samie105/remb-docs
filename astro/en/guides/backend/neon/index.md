@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:32.903Z"
 content_hash: "3d41820780e6c8a880e7f2c64dbdf5b6db9ec1bef78d77d3011678dd93b6eb63"
 menu_path: ["Neon Postgres & Astro"]
 section_path: []
-nav_prev: {"path": "../firebase/index.md", "title": "Firebase & Astro"}
-nav_next: {"path": "../prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
+nav_prev: {"path": "astro/en/guides/backend/firebase/index.md", "title": "Firebase & Astro"}
+nav_next: {"path": "astro/en/guides/backend/prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
 ---
 
 # Neon Postgres & Astro
@@ -27,7 +27,7 @@ nav_next: {"path": "../prisma-postgres/index.md", "title": "Prisma Postgres & As
 
 *   A [Neon](https://console.neon.tech/signup) account with a created project
 *   Neon database connection string
-*   An Astro project with [on-demand rendering (SSR)](/en/guides/on-demand-rendering/) enabled
+*   An Astro project with [on-demand rendering (SSR)](../../on-demand-rendering/index.md) enabled
 
 ### Environment configuration
 
@@ -46,7 +46,7 @@ interface ImportMetaEnv {  readonly NEON_DATABASE_URL: string;}
 interface ImportMeta {  readonly env: ImportMetaEnv;}
 ```
 
-Learn more about [environment variables](/en/guides/environment-variables/) and `.env` files in Astro.
+Learn more about [environment variables](../../environment-variables/index.md) and `.env` files in Astro.
 
 ### Installing dependencies
 
@@ -107,39 +107,39 @@ NEON_DATABASE_URL=your_production_branch_url
 
 *   ![](/logos/appwriteio.svg)
     
-    ### [Appwrite](/en/guides/backend/appwrite/)
+    ### [Appwrite](../appwrite/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/backend/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/neon.svg)
     
-    ### [Neon](/en/guides/backend/neon/)
+    ### [Neon](index.md)
     
 *   ![](/logos/prisma-postgres.svg)
     
-    ### [Prisma Postgres](/en/guides/backend/prisma-postgres/)
+    ### [Prisma Postgres](../prisma-postgres/index.md)
     
 *   ![](/logos/scalekit.svg)
     
-    ### [Scalekit](/en/guides/backend/scalekit/)
+    ### [Scalekit](../scalekit/index.md)
     
 *   ![](/logos/sentry.svg)
     
-    ### [Sentry](/en/guides/backend/sentry/)
+    ### [Sentry](../sentry/index.md)
     
 *   ![](/logos/supabase.svg)
     
-    ### [Supabase](/en/guides/backend/supabase/)
+    ### [Supabase](../supabase/index.md)
     
 *   ![](/logos/turso.svg)
     
-    ### [Turso](/en/guides/backend/turso/)
+    ### [Turso](../turso/index.md)
     
 *   ![](/logos/xata.svg)
     
-    ### [Xata](/en/guides/backend/xata/)
+    ### [Xata](../xata/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

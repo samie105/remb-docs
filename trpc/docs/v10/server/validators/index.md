@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:47.598Z"
 content_hash: "5fb83186ab4f2877b472c073b6aab9e98aaa9ea6e489e8c91595c8ecc8b31a50"
 menu_path: ["Input & Output Validators"]
 section_path: []
-nav_prev: {"path": "../server-side-calls/index.md", "title": "Server Side Calls"}
-nav_next: {"path": "../../subscriptions/index.md", "title": "Subscriptions / WebSockets"}
+nav_prev: {"path": "trpc/docs/v10/server/server-side-calls/index.md", "title": "Server Side Calls"}
+nav_next: {"path": "trpc/docs/v10/subscriptions/index.md", "title": "Subscriptions / WebSockets"}
 ---
 
 tRPC procedures may define validation logic for their input and/or output, and validators are also used to infer the types of inputs and outputs. We have first class support for many popular validators, and you can [integrate validators](#contributing-your-own-validator-library) which we don't directly support.

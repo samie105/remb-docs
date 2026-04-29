@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../local-development/index.md", "title": "How to optimize your local development environment"}
-nav_next: {"path": "../mdx/index.md", "title": "How to use markdown and MDX in Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/local-development/index.md", "title": "How to optimize your local development environment"}
+nav_next: {"path": "nextjs/docs/app/guides/mdx/index.md", "title": "How to use markdown and MDX in Next.js"}
 ---
 
 # Enabling Next.js MCP Server for Coding Agents

@@ -10,8 +10,8 @@ content_hash: "a7c7f82668f613502bb6b17d0198594dded3017f1f0db0e739eaa8c5c0f69357"
 menu_path: ["border-color"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../border-width/index.md", "title": "border-width"}
-nav_next: {"path": "../border-style/index.md", "title": "border-style"}
+nav_prev: {"path": "tailwind/docs/border-width/index.md", "title": "border-width"}
+nav_next: {"path": "tailwind/docs/border-style/index.md", "title": "border-style"}
 ---
 
 Utilities for controlling the color of an element's borders.

@@ -10,8 +10,8 @@ content_hash: "eec0ab34ec2d2911d337ff8af55eb33aef228f02cff78ce21eed5c728d3ffe27"
 menu_path: ["PostgreSQL: Documentation: 18: 53.18. pg_publication_tables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../view-pg-prepared-xacts.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.17.\u00a0pg_prepared_xacts"}
-nav_next: {"path": "../view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
+nav_prev: {"path": "postgres/docs/current/view-pg-prepared-xacts.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.17.\u00a0pg_prepared_xacts"}
+nav_next: {"path": "postgres/docs/current/view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-publication-tables.html "PostgreSQL devel - 53.18. pg_publication_tables")

@@ -10,8 +10,8 @@ content_hash: "7e501b09ce3b10f2792b05a74cb60a9a75001990861d003e2c26b63b94bd4bfd"
 menu_path: ["aspect-ratio"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../preflight/index.md", "title": "Preflight"}
-nav_next: {"path": "../columns/index.md", "title": "columns"}
+nav_prev: {"path": "tailwind/docs/preflight/index.md", "title": "Preflight"}
+nav_next: {"path": "tailwind/docs/columns/index.md", "title": "columns"}
 ---
 
 # aspect-ratio
@@ -88,7 +88,7 @@ Prefix an `aspect-ratio` utility with a breakpoint variant like `md:` to only ap
 <iframe class="aspect-video md:aspect-square ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--aspect-*` theme variables to customize the aspect ratio utilities in your project:
 
@@ -102,7 +102,7 @@ Now the `aspect-retro` utility can be used in your markup:
 <iframe class="aspect-retro" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

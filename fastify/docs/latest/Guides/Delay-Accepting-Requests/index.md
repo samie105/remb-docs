@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:37:46.428Z"
 content_hash: "3fea5525e8f4b3199a831e0bd7c876d15a247a5fb4ffa866f8dd0897b4aee462"
 menu_path: ["Delay Accepting Requests"]
 section_path: []
-nav_prev: {"path": "../Database/index.md", "title": "Database"}
-nav_next: {"path": "../Detecting-When-Clients-Abort/index.md", "title": "Detecting When Clients Abort"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Database/index.md", "title": "Database"}
+nav_next: {"path": "fastify/docs/latest/Guides/Detecting-When-Clients-Abort/index.md", "title": "Detecting When Clients Abort"}
 ---
 
 Version: latest (v5.8.x)
 
 ## Introduction[​](#introduction "Direct link to Introduction")
 
-Fastify provides several [hooks](/docs/latest/Reference/Hooks/) useful for a variety of situations. One of them is the [`onReady`](/docs/latest/Reference/Hooks/#onready) hook, which is useful for executing tasks _right before_ the server starts accepting new requests. There isn't, though, a direct mechanism to handle scenarios in which you'd like the server to start accepting **specific** requests and denying all others, at least up to some point.
+Fastify provides several [hooks](../../Reference/Hooks/index.md) useful for a variety of situations. One of them is the [`onReady`](../../Reference/Hooks/index.md#onready) hook, which is useful for executing tasks _right before_ the server starts accepting new requests. There isn't, though, a direct mechanism to handle scenarios in which you'd like the server to start accepting **specific** requests and denying all others, at least up to some point.
 
 Say, for instance, your server needs to authenticate with an OAuth provider to start serving requests. To do that it'd need to engage in the [OAuth Authorization Code Flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow), which would require it to listen to two requests from the authentication provider:
 
@@ -40,7 +40,7 @@ The main goal here is to deny requests that would otherwise fail **as early as p
 
 That will be achieved by wrapping into a custom plugin two main features:
 
-1.  the mechanism for authenticating with the provider [decorating](/docs/latest/Reference/Decorators/) the `fastify` object with the authentication key (`magicKey` from here onward)
+1.  the mechanism for authenticating with the provider [decorating](../../Reference/Decorators/index.md) the `fastify` object with the authentication key (`magicKey` from here onward)
 2.  the mechanism for denying requests that would, otherwise, fail
 
 ### Hands-on[​](#hands-on "Direct link to Hands-on")
@@ -77,7 +77,7 @@ When our server spins up we start listening to new connections without having ou
 
 Of course, that could be simply mitigated by checking whether or not the `magicKey` has been set up before hitting the provider in the `/v1*` handler. Sure, but that would lead to bloat in the code. And imagine we have dozens of different routes, with different controllers, that require that key. Should we repeatedly add that check to all of them? That's error-prone and there are more elegant solutions.
 
-What we'll do to improve this setup overall is create a [`Plugin`](/docs/latest/Reference/Plugins/) that'll be solely responsible for making sure we both:
+What we'll do to improve this setup overall is create a [`Plugin`](../../Reference/Plugins/index.md) that'll be solely responsible for making sure we both:
 
 *   do not accept requests that would otherwise fail until we're ready for them
 *   make sure we reach out to our provider as soon as possible
@@ -140,7 +140,7 @@ const delay = (routes) =>  function (fastify, opts, done) {    // Make sure cust
 
 Instead of updating every single controller that might use the `magicKey`, we simply make sure that no route that's related to customer requests will be served until we have everything ready. And there's more: we fail **FAST** and have the possibility of giving the customer meaningful information, like how long they should wait before retrying the request. Going even further, by issuing a [`503` status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503) we're signaling to our infrastructure components (namely load balancers) that we're still not ready to take incoming requests and they should redirect traffic to other instances, if available. Additionally, we are providing a `Retry-After` header with the time in milliseconds the client should wait before retrying.
 
-It's noteworthy that we didn't use the `fastify-plugin` wrapper in the `delay` factory. That's because we wanted the `onRequest` hook to only be set within that specific scope and not to the scope that called it (in our case, the main `server` object defined in `index.js`). `fastify-plugin` sets the `skip-override` hidden property, which has a practical effect of making whatever changes we make to our `fastify` object available to the upper scope. That's also why we used it with the `customerRoutes` plugin: we wanted those routes to be available to its calling scope, the `delay` plugin. For more info on that subject refer to [Plugins](/docs/latest/Reference/Plugins/#handle-the-scope).
+It's noteworthy that we didn't use the `fastify-plugin` wrapper in the `delay` factory. That's because we wanted the `onRequest` hook to only be set within that specific scope and not to the scope that called it (in our case, the main `server` object defined in `index.js`). `fastify-plugin` sets the `skip-override` hidden property, which has a practical effect of making whatever changes we make to our `fastify` object available to the upper scope. That's also why we used it with the `customerRoutes` plugin: we wanted those routes to be available to its calling scope, the `delay` plugin. For more info on that subject refer to [Plugins](../../Reference/Plugins/index.md#handle-the-scope).
 
 Let's see how that behaves in action. If we fired our server up with `node index.js` and made a few requests to test things out. These were the logs we'd see (some bloat was removed to ease things up):
 
@@ -200,4 +200,4 @@ Specifics of the implementation will vary from one problem to another, but the m
 
 This guide is a tutorial on the use of plugins, decorators, and hooks to solve the problem of delaying serving specific requests on our application. It's not production-ready, as it keeps local state (the `magicKey`) and it's not horizontally scalable (we don't want to flood our provider, right?). One way of improving it would be storing the `magicKey` somewhere else (perhaps a cache database?).
 
-The keywords here were [Decorators](/docs/latest/Reference/Decorators/), [Hooks](/docs/latest/Reference/Hooks/), and [Plugins](/docs/latest/Reference/Plugins/). Combining what Fastify has to offer can lead to very ingenious and creative solutions to a wide variety of problems. Let's be creative! :)
+The keywords here were [Decorators](../../Reference/Decorators/index.md), [Hooks](../../Reference/Hooks/index.md), and [Plugins](../../Reference/Plugins/index.md). Combining what Fastify has to offer can lead to very ingenious and creative solutions to a wide variety of problems. Let's be creative! :)

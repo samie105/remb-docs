@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:59.413Z"
 content_hash: "50f5e994eaa8307e54ca4ae21b4aceb8ae3bc5c693ee68617d4716e5f44ef968"
 menu_path: ["AI & Vectors","AI & Vectors","Search","Search","Hybrid search","Hybrid search"]
 section_path: ["AI & Vectors","AI & Vectors","Search","Search","Hybrid search","Hybrid search"]
-nav_prev: {"path": "../hugging-face/index.md", "title": "Hugging Face Inference API"}
-nav_next: {"path": "../integrations/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
+nav_prev: {"path": "supabase/docs/guides/ai/hugging-face/index.md", "title": "Hugging Face Inference API"}
+nav_next: {"path": "supabase/docs/guides/ai/integrations/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Combine keyword search with semantic search.
 
 * * *
 
-Hybrid search combines [full text search](/docs/guides/ai/keyword-search) (searching by keyword) with [semantic search](/docs/guides/ai/semantic-search) (searching by meaning) to identify results that are both directly and contextually relevant to the user's query.
+Hybrid search combines [full text search](../keyword-search/index.md) (searching by keyword) with [semantic search](../semantic-search/index.md) (searching by meaning) to identify results that are both directly and contextually relevant to the user's query.
 
 ## Use cases for hybrid search[#](#use-cases-for-hybrid-search)
 
@@ -73,8 +73,8 @@ The table contains 4 columns:
 
 *   `id` is an auto-generated unique ID for the record. We'll use this later to match records when performing RRF.
 *   `content` contains the actual text we will be searching over.
-*   `fts` is an auto-generated `tsvector` column that is generated using the text in `content`. We will use this for [full text search](/docs/guides/database/full-text-search) (search by keyword).
-*   `embedding` is a [vector column](/docs/guides/ai/vector-columns) that stores the vector generated from our embedding model. We will use this for [semantic search](/docs/guides/ai/semantic-search) (search by meaning). We chose 512 dimensions for this example, but adjust this to match the size of the embedding vectors generated from your preferred model.
+*   `fts` is an auto-generated `tsvector` column that is generated using the text in `content`. We will use this for [full text search](../../database/full-text-search/index.md) (search by keyword).
+*   `embedding` is a [vector column](../vector-columns/index.md) that stores the vector generated from our embedding model. We will use this for [semantic search](../semantic-search/index.md) (search by meaning). We chose 512 dimensions for this example, but adjust this to match the size of the embedding vectors generated from your preferred model.
 
 Next we'll create indexes on the `fts` and `embedding` columns so that their individual queries will remain fast at scale:
 
@@ -84,7 +84,7 @@ Next we'll create indexes on the `fts` and `embedding` columns so that their ind
 
 For full text search we use a [generalized inverted (GIN) index](https://www.postgresql.org/docs/current/gin.html) which is designed for handling composite values like those stored in a `tsvector`.
 
-For semantic vector search we use an [HNSW index](/docs/guides/ai/vector-indexes/hnsw-indexes), which is a high performing approximate nearest neighbor (ANN) search algorithm. Note that we are using the `vector_ip_ops` (inner product) operator with this index because we plan on using the inner product (`<#>`) operator later in our query. If you plan to use a different operator like cosine distance (`<=>`), be sure to update the index accordingly. For more information, see [distance operators](/docs/guides/ai/vector-indexes#distance-operators).
+For semantic vector search we use an [HNSW index](../vector-indexes/hnsw-indexes/index.md), which is a high performing approximate nearest neighbor (ANN) search algorithm. Note that we are using the `vector_ip_ops` (inner product) operator with this index because we plan on using the inner product (`<#>`) operator later in our query. If you plan to use a different operator like cosine distance (`<=>`), be sure to update the index accordingly. For more information, see [distance operators](../vector-indexes/index.md#distance-operators).
 
 Finally we'll create our `hybrid_search` function:
 
@@ -119,7 +119,7 @@ To use this function in SQL, we can run:
 1select2  *3from4  hybrid_search(5    'Italian recipes with tomato sauce', -- user query6    '[...]'::extensions.vector(512), -- embedding generated from user query7    108  );
 ```
 
-In practice, you will likely be calling this from the [Supabase client](/docs/reference/javascript/introduction) or through a custom backend layer. Here is a quick example of how you might call this from an [Edge Function](/docs/guides/functions) using JavaScript:
+In practice, you will likely be calling this from the [Supabase client](/docs/reference/javascript/introduction) or through a custom backend layer. Here is a quick example of how you might call this from an [Edge Function](../../functions/index.md) using JavaScript:
 
 ```
 1import { createClient } from 'npm:@supabase/supabase-js@2'2import OpenAI from 'npm:openai'34const supabaseUrl = Deno.env.get('SUPABASE_URL')!5const supabaseServiceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!6const openaiApiKey = Deno.env.get('OPENAI_API_KEY')!78Deno.serve(async (req) => {9  // Grab the user's query from the JSON payload10  const { query } = await req.json()1112  // Instantiate OpenAI client13  const openai = new OpenAI({ apiKey: openaiApiKey })1415  // Generate a one-time embedding for the user's query16  const embeddingResponse = await openai.embeddings.create({17    model: 'text-embedding-3-large',18    input: query,19    dimensions: 512,20  })2122  const [{ embedding }] = embeddingResponse.data2324  // Instantiate the Supabase client25  // (replace service role key with user's JWT if using Supabase auth and RLS)26  const supabase = createClient(supabaseUrl, supabaseServiceRoleKey)2728  // Call hybrid_search Postgres function via RPC29  const { data: documents } = await supabase.rpc('hybrid_search', {30    query_text: query,31    query_embedding: embedding,32    match_count: 10,33  })3435  return new Response(JSON.stringify(documents), {36    headers: { 'Content-Type': 'application/json' },37  })38})
@@ -133,12 +133,12 @@ To test this, make a `POST` request to the function's endpoint while passing in 
 1curl -i --location --request POST \2  'http://127.0.0.1:54321/functions/v1/hybrid-search' \3  --header 'Authorization: Bearer <anonymous key>' \4  --header 'Content-Type: application/json' \5  --data '{"query":"Italian recipes with tomato sauce"}'
 ```
 
-For more information on how to create, test, and deploy edge functions, see [Getting started](/docs/guides/functions/quickstart).
+For more information on how to create, test, and deploy edge functions, see [Getting started](../../functions/quickstart/index.md).
 
 ## See also[#](#see-also)
 
-*   [Embedding concepts](/docs/guides/ai/concepts)
-*   [Vector columns](/docs/guides/ai/vector-columns)
-*   [Vector indexes](/docs/guides/ai/vector-indexes)
-*   [Semantic search](/docs/guides/ai/semantic-search)
-*   [Full text (keyword) search](/docs/guides/database/full-text-search)
+*   [Embedding concepts](../concepts/index.md)
+*   [Vector columns](../vector-columns/index.md)
+*   [Vector indexes](../vector-indexes/index.md)
+*   [Semantic search](../semantic-search/index.md)
+*   [Full text (keyword) search](../../database/full-text-search/index.md)

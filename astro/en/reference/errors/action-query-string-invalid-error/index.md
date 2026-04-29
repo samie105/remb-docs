@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:19.257Z"
 content_hash: "3d5882fdbd4640043c1757007325e84f5ca2894c6371dc2d30cc2124aa5c50c7"
 menu_path: ["An invalid Action query string was passed by a form."]
 section_path: []
-nav_prev: {"path": "../action-not-found-error/index.md", "title": "Action not found."}
-nav_next: {"path": "../actions-cant-be-loaded/index.md", "title": "Can't load the Astro actions."}
+nav_prev: {"path": "astro/en/reference/errors/action-not-found-error/index.md", "title": "Action not found."}
+nav_next: {"path": "astro/en/reference/errors/actions-cant-be-loaded/index.md", "title": "Can't load the Astro actions."}
 ---
 
 # An invalid Action query string was passed by a form.
@@ -27,4 +27,4 @@ The server received the query string `?_astroAction=name`, but could not find an
 
 *   [Actions RFC](https://github.com/withastro/roadmap/blob/actions/proposals/0046-actions.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

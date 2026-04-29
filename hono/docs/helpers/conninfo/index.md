@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:07.391Z"
 content_hash: "a86dcf32a142685f28a757be69243577bfedc97bddd9ae22d7bcf985f5e7fa3d"
 menu_path: ["ConnInfo Helper ​"]
 section_path: []
-nav_prev: {"path": "../adapter/index.md", "title": "Adapter Helper \u200b"}
-nav_next: {"path": "../cookie/index.md", "title": "Cookie Helper \u200b"}
+nav_prev: {"path": "hono/docs/helpers/adapter/index.md", "title": "Adapter Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/cookie/index.md", "title": "Cookie Helper \u200b"}
 ---
 
 The ConnInfo Helper helps you to get the connection information. For example, you can get the client's remote address easily.

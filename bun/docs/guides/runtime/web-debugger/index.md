@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:33.554Z"
 content_hash: "ec276e992e44eecf1a3e0dfe94d8af78f4a46c1052eff864b5d1b07eb30259cf"
 menu_path: ["Debugging Bun with the web debugger"]
 section_path: []
-nav_prev: {"path": "../vscode-debugger/index.md", "title": "Debugging Bun with the VS Code extension"}
-nav_next: {"path": "../../streams/node-readable-to-arraybuffer/index.md", "title": "Convert a Node.js Readable to an ArrayBuffer"}
+nav_prev: {"path": "bun/docs/guides/runtime/vscode-debugger/index.md", "title": "Debugging Bun with the VS Code extension"}
+nav_next: {"path": "bun/docs/guides/streams/node-readable-to-arraybuffer/index.md", "title": "Convert a Node.js Readable to an ArrayBuffer"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../streams/node-readable-to-arraybuffer/index.md", "title
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun speaks the [WebKit Inspector Protocol](https://github.com/oven-sh/bun/blob/main/packages/bun-inspector-protocol/src/protocol/jsc/index.d.ts). To enable debugging when running code with Bun, use the `--inspect` flag. For demonstration purposes, consider the following web server.
 
@@ -127,13 +127,13 @@ Debugging Bun with the VS Code extension
 
 Previous
 
-](/docs/guides/runtime/vscode-debugger)[
+](../vscode-debugger/index.md)[
 
 Inspect memory usage using V8 heap snapshots
 
 Next
 
-](/docs/guides/runtime/heap-snapshot)
+](../heap-snapshot/index.md)
 
 ![Screenshot of Bun debugger, Console
 tab](https://github.com/oven-sh/bun/assets/3084745/e6a976a8-80cc-4394-8925-539025cc025d)

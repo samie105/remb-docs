@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:42.235Z"
 content_hash: "756521c7e661a0b1fde5654dfdbd3b80495bd790c4eb8e8e7467764e0935353b"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Wasm Modules","Wasm Modules"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Wasm Modules","Wasm Modules"]
-nav_prev: {"path": "../unit-test/index.md", "title": "Testing your Edge Functions"}
-nav_next: {"path": "../websockets/index.md", "title": "Handling WebSockets"}
+nav_prev: {"path": "supabase/docs/guides/functions/unit-test/index.md", "title": "Testing your Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/websockets/index.md", "title": "Handling WebSockets"}
 ---
 
 # 
@@ -31,7 +31,7 @@ This allows you to:
 *   Port existing libraries from other languages (C, C++, Rust) to JavaScript
 *   Access low-level system operations not available in JavaScript
 
-For example, libraries like [magick-wasm](/docs/guides/functions/examples/image-manipulation) port existing C libraries to WebAssembly for complex image processing.
+For example, libraries like [magick-wasm](../examples/image-manipulation/index.md) port existing C libraries to WebAssembly for complex image processing.
 
 * * *
 
@@ -118,7 +118,7 @@ Supabase Edge Functions currently use Deno 1.46. From [Deno 2.1, importing Wasm 
 Before deploying, ensure the Wasm module is bundled with your function by defining it in `supabase/config.toml`:
 
 *   You will need update Supabase CLI to 2.7.0 or higher for the `static_files` support.
-*   Static files cannot be deployed using the `--use-api` API flag. You need to build them with [Docker on the CLI](/docs/guides/functions/quickstart#step-6-deploy-to-production).
+*   Static files cannot be deployed using the `--use-api` API flag. You need to build them with [Docker on the CLI](../quickstart/index.md#step-6-deploy-to-production).
 
 ```
 1[functions.wasm-add]2static_files = [ "./functions/wasm-add/add-wasm/pkg/*"]

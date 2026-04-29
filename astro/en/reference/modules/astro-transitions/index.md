@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:55.441Z"
 content_hash: "4f2828a0393a48c4f5e61b15dbab16e23755709f074457cd187efdd8297689d5"
 menu_path: ["View Transitions Router API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-static-paths/index.md", "title": "Static Paths API Reference"}
-nav_next: {"path": "../astro-zod/index.md", "title": "Zod API Reference"}
+nav_prev: {"path": "astro/en/reference/modules/astro-static-paths/index.md", "title": "Static Paths API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-zod/index.md", "title": "Zod API Reference"}
 ---
 
 # View Transitions Router API Reference
@@ -19,7 +19,7 @@ nav_next: {"path": "../astro-zod/index.md", "title": "Zod API Reference"}
 
 These modules provide functions to control and interact with the View Transitions API and client-side router.
 
-For features and usage examples, [see our View Transitions guide](/en/guides/view-transitions/).
+For features and usage examples, [see our View Transitions guide](../../../guides/view-transitions/index.md).
 
 ## Imports from `astro:transitions`
 
@@ -41,7 +41,7 @@ Opt in to using view transitions on individual pages by importing and adding the
 ---import { ClientRouter } from 'astro:transitions';---<html lang="en">  <head>    <title>My Homepage</title>    <ClientRouter />  </head>  <body>    <h1>Welcome to my website!</h1>  </body></html>
 ```
 
-See more about how to [control the router](/en/guides/view-transitions/#router-control) and [add transition directives](/en/guides/view-transitions/#transition-directives) to page elements and components.
+See more about how to [control the router](../../../guides/view-transitions/index.md#router-control) and [add transition directives](../../../guides/view-transitions/index.md#transition-directives) to page elements and components.
 
 The `<ClientRouter />` component accepts the following props:
 
@@ -104,7 +104,7 @@ Executes a navigation to the given `href` using the View Transitions API.
 
 This function signature is based on the [`navigate` function from the browser Navigation API](https://developer.mozilla.org/en-US/docs/Web/API/Navigation/navigate). Although based on the Navigation API, this function is implemented on top of the [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API) to allow for navigation without reloading the page.
 
-`navigate()` does not perform sanitization on the `href` parameter. [Sanitize user input](/en/guides/view-transitions/#navigating-with-user-input) if you use it to determine the URL to navigate to.
+`navigate()` does not perform sanitization on the `href` parameter. [Sanitize user input](../../../guides/view-transitions/index.md#navigating-with-user-input) if you use it to determine the URL to navigate to.
 
 #### `history` option
 
@@ -205,7 +205,7 @@ Whether or not the current page has view transitions enabled for client-side nav
 
 Returns the fallback strategy to use (`animate` by default) in browsers that do not support view transitions.
 
-See the guide on [Fallback control](/en/guides/view-transitions/#fallback-control) for how to choose and configure the fallback behavior.
+See the guide on [Fallback control](../../../guides/view-transitions/index.md#fallback-control) for how to choose and configure the fallback behavior.
 
 ### `swapFunctions`
 
@@ -215,7 +215,7 @@ See the guide on [Fallback control](/en/guides/view-transitions/#fallback-contro
 
 **Added in:** `astro@4.15.0`
 
-An object containing the utility functions used to build Astro’s default swap function. These can be useful when [building a custom swap function](/en/guides/view-transitions/#building-a-custom-swap-function).
+An object containing the utility functions used to build Astro’s default swap function. These can be useful when [building a custom swap function](../../../guides/view-transitions/index.md#building-a-custom-swap-function).
 
 `swapFunctions` provides the following methods:
 
@@ -225,7 +225,7 @@ An object containing the utility functions used to build Astro’s default swap 
 
 **Type:** `(newDocument: Document) => void`
 
-Marks scripts in the new document that should not be executed. Those scripts are already in the current document and are not flagged for re-execution using [`data-astro-rerun`](/en/guides/view-transitions/#data-astro-rerun).
+Marks scripts in the new document that should not be executed. Those scripts are already in the current document and are not flagged for re-execution using [`data-astro-rerun`](../../../guides/view-transitions/index.md#data-astro-rerun).
 
 #### `swapRootAttributes()`
 
@@ -265,7 +265,7 @@ Replaces the old body with the new body. Then, goes through every element in the
 
 [Section titled “Deprecated imports”](#deprecated-imports)
 
-The following imports are deprecated in v6 and will be removed in v7. You can still use them in your project, but you may prefer to update your code now. [See how to upgrade](/en/guides/upgrade-to/v6/#deprecated-exposed-astrotransitions-internals).
+The following imports are deprecated in v6 and will be removed in v7. You can still use them in your project, but you may prefer to update your code now. [See how to upgrade](../../../guides/upgrade-to/v6/index.md#deprecated-exposed-astrotransitions-internals).
 
 #### `isTransitionBeforePreparationEvent()`
 
@@ -402,7 +402,7 @@ A union of fallback strategies to use in browsers that do not support view trans
 *   `swap`: Astro will not attempt to animate the page. Instead, the old page will be immediately replaced by the new one.
 *   `none`: Astro will not do any animated page transitions at all. Instead, you will get full page navigation in non-supporting browsers.
 
-Learn more about [controlling the fallback strategy](/en/guides/view-transitions/#fallback-control) with the `ClientRouter`.
+Learn more about [controlling the fallback strategy](../../../guides/view-transitions/index.md#fallback-control) with the `ClientRouter`.
 
 [Section titled “NavigationTypeString”](#navigationtypestring)
 
@@ -471,7 +471,7 @@ This event has the attributes:
 *   [`formData`](#formdata)
 *   [`loader()`](#loader)
 
-Read more about how to use this event on the [View Transitions guide](/en/guides/view-transitions/#astrobefore-preparation).
+Read more about how to use this event on the [View Transitions guide](../../../guides/view-transitions/index.md#astrobefore-preparation).
 
 ### `astro:after-preparation` event
 
@@ -485,7 +485,7 @@ An event dispatched after the next page in a navigation using View Transitions r
 
 This event has no attributes.
 
-Read more about how to use this event on the [View Transitions guide](/en/guides/view-transitions/#astroafter-preparation).
+Read more about how to use this event on the [View Transitions guide](../../../guides/view-transitions/index.md#astroafter-preparation).
 
 ### `astro:before-swap` event
 
@@ -510,7 +510,7 @@ This event has the attributes:
 *   [`viewTransition`](#viewtransition)
 *   [`swap()`](#swap)
 
-Read more about how to use this event on the [View Transitions guide](/en/guides/view-transitions/#astrobefore-swap).
+Read more about how to use this event on the [View Transitions guide](../../../guides/view-transitions/index.md#astrobefore-swap).
 
 ### `astro:after-swap` event
 
@@ -649,6 +649,6 @@ Calls the default document swap logic. By default, this implementation will call
 4.  [`saveFocus()`](#savefocus)
 5.  [`swapBodyElement()`](#swapbodyelement)
 
-Read more about [building a custom swap function](/en/guides/view-transitions/#building-a-custom-swap-function) in the View Transitions guide.
+Read more about [building a custom swap function](../../../guides/view-transitions/index.md#building-a-custom-swap-function) in the View Transitions guide.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:47.160Z"
 content_hash: "38db55fe679f01678149c37cf4f679b114dbe98add5adf50c1ee376115752e4c"
 menu_path: ["PostgreSQL: Documentation: 18: psql"]
 section_path: []
-nav_prev: {"path": "../app-postgres.html/index.md", "title": "PostgreSQL: Documentation: 18: postgres"}
-nav_next: {"path": "../app-reindexdb.html/index.md", "title": "PostgreSQL: Documentation: 18: reindexdb"}
+nav_prev: {"path": "postgres/docs/current/app-postgres.html/index.md", "title": "PostgreSQL: Documentation: 18: postgres"}
+nav_next: {"path": "postgres/docs/current/app-reindexdb.html/index.md", "title": "PostgreSQL: Documentation: 18: reindexdb"}
 ---
 
 Anything you enter in psql that begins with an unquoted backslash is a psql meta-command that is processed by psql itself. These commands make psql more useful for administration or scripting. Meta-commands are often called slash or backslash commands.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:01.885Z"
 content_hash: "6d0fcbbe90a3866265c30ff933f13451ebceb4ed05da896c0abaf773112c05fe"
 menu_path: ["SSG Helpers"]
 section_path: []
-nav_prev: {"path": "../ssg/index.md", "title": "Static Site Generation"}
-nav_next: {"path": "../ssr/index.md", "title": "Server-Side Rendering"}
+nav_prev: {"path": "trpc/docs/v9/ssg/index.md", "title": "Static Site Generation"}
+nav_next: {"path": "trpc/docs/v9/ssr/index.md", "title": "Server-Side Rendering"}
 ---
 
 `createSSGHelpers` provides you a set of helper functions that you can use to prefetch queries on the server.

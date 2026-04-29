@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:53.434Z"
 content_hash: "62d6a80a98d7d19ecb324b0620cb0cc03da7b8ef0f104b3437c6bdaf825a8cf1"
 menu_path: ["PostgreSQL: Documentation: 18: DROP DATABASE"]
 section_path: []
-nav_prev: {"path": "../sql-dropcollation.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP COLLATION"}
-nav_next: {"path": "../sql-dropdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DOMAIN"}
+nav_prev: {"path": "postgres/docs/current/sql-dropcollation.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP COLLATION"}
+nav_next: {"path": "postgres/docs/current/sql-dropdomain.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP DOMAIN"}
 ---
 
 DROP DATABASE — remove a database

@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:40:41.789Z"
 content_hash: "33048e79f10357d07223244294221d40e7ffe34f9f7c6ecf88a8ac62e60208a7"
 menu_path: ["Migrating from Create React App (CRA)"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "Migrate an existing project to Astro"}
-nav_next: {"path": "../from-docusaurus/index.md", "title": "Migrating from Docusaurus"}
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/index.md", "title": "Migrate an existing project to Astro"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-docusaurus/index.md", "title": "Migrating from Docusaurus"}
 ---
 
 # Migrating from Create React App (CRA)
 
-Astro’s [React integration](/en/guides/integrations-guide/react/) provides support for [using React components inside Astro components](/en/guides/framework-components/), including entire React apps like Create React App (CRA)!
+Astro’s [React integration](../../integrations-guide/react/index.md) provides support for [using React components inside Astro components](../../framework-components/index.md), including entire React apps like Create React App (CRA)!
 
 ```
 ---// Import your root App componentimport App from '../cra-project/App.jsx';---<!-- Use a client directive to load your app --><App client:load />
@@ -33,15 +33,15 @@ Here are some key concepts and migration strategies to help you get started. Use
 
 [Section titled “Key Similarities between CRA and Astro”](#key-similarities-between-cra-and-astro)
 
-*   The [syntax of `.astro` files is similar to JSX](/en/reference/astro-syntax/#differences-between-astro-and-jsx). Writing Astro should feel familiar.
+*   The [syntax of `.astro` files is similar to JSX](../../../reference/astro-syntax/index.md#differences-between-astro-and-jsx). Writing Astro should feel familiar.
     
-*   Astro uses file-based routing, and [allows specially named pages to create dynamic routes](/en/guides/routing/#dynamic-routes).
+*   Astro uses file-based routing, and [allows specially named pages to create dynamic routes](../../routing/index.md#dynamic-routes).
     
-*   Astro is [component-based](/en/basics/astro-components/), and your markup structure will be similar before and after your migration.
+*   Astro is [component-based](../../../basics/astro-components/index.md), and your markup structure will be similar before and after your migration.
     
-*   Astro has [official integrations for React, Preact, and Solid](/en/guides/integrations-guide/react/) so you can use your existing JSX components. Note that in Astro, these files **must** have a `.jsx` or `.tsx` extension.
+*   Astro has [official integrations for React, Preact, and Solid](../../integrations-guide/react/index.md) so you can use your existing JSX components. Note that in Astro, these files **must** have a `.jsx` or `.tsx` extension.
     
-*   Astro has support for [installing NPM packages](/en/guides/imports/#npm-packages), including React libraries. Many of your existing dependencies will work in Astro.
+*   Astro has support for [installing NPM packages](../../imports/index.md#npm-packages), including React libraries. Many of your existing dependencies will work in Astro.
     
 
 ## Key Differences between CRA and Astro
@@ -52,9 +52,9 @@ When you rebuild your CRA site in Astro, you will notice some important differen
 
 *   CRA is a single-page application that uses `index.js` as your project’s root. Astro is a multi-page site, and `index.astro` is your home page.
     
-*   [`.astro` components](/en/basics/astro-components/) are not written as exported functions that return page templating. Instead, you’ll split your code into a “code fence” for your JavaScript and a body exclusively for the HTML you generate.
+*   [`.astro` components](../../../basics/astro-components/index.md) are not written as exported functions that return page templating. Instead, you’ll split your code into a “code fence” for your JavaScript and a body exclusively for the HTML you generate.
     
-*   [content-driven](/en/concepts/why-astro/#content-driven): Astro was designed to showcase your content and to allow you to opt-in to interactivity only as needed. An existing CRA app might be built for high client-side interactivity and may require advanced Astro techniques to include items that are more challenging to replicate using `.astro` components, such as dashboards.
+*   [content-driven](../../../concepts/why-astro/index.md#content-driven): Astro was designed to showcase your content and to allow you to opt-in to interactivity only as needed. An existing CRA app might be built for high client-side interactivity and may require advanced Astro techniques to include items that are more challenging to replicate using `.astro` components, such as dashboards.
     
 
 ## Add your CRA to Astro
@@ -141,7 +141,7 @@ Import your app’s root component in the frontmatter section of `index.astro`, 
 
 After [adding your existing app to Astro](#add-your-cra-to-astro), you will probably want to convert your app itself to Astro!
 
-You will replicate a similar component-based design [using Astro HTML templating components for your basic structure](/en/basics/astro-components/) while importing and including individual React components (which may themselves be entire apps!) for islands of interactivity.
+You will replicate a similar component-based design [using Astro HTML templating components for your basic structure](../../../basics/astro-components/index.md) while importing and including individual React components (which may themselves be entire apps!) for islands of interactivity.
 
 Every migration will look different and can be done incrementally without disrupting your working app. Convert individual pieces at your own pace so that more and more of your app is powered by Astro components over time.
 
@@ -157,7 +157,7 @@ Instead of importing Astro components into React components, you can nest React 
 ---import MyReactSidebar from '../components/MyReactSidebar.jsx';import MyReactButton from '../components/MyReactButton.jsx';---<MyReactSidebar>  <p>Here is a sidebar with some text and a button.</p>  <div slot="actions">    <MyReactButton client:idle />  </div></MyReactSidebar>
 ```
 
-You may find it helpful to learn about [Astro islands](/en/concepts/islands/) and [Astro components](/en/basics/astro-components/) before restructuring your CRA as an Astro project.
+You may find it helpful to learn about [Astro islands](../../../concepts/islands/index.md) and [Astro components](../../../basics/astro-components/index.md) before restructuring your CRA as an Astro project.
 
 ### Compare: JSX vs Astro
 
@@ -188,13 +188,13 @@ Here are some tips for converting a CRA `.js` component into a `.astro` componen
     
 2.  Change any [CRA or JSX syntax to Astro](#reference-convert-cra-syntax-to-astro) or to HTML web standards. This includes `{children}` and `className`, for example.
     
-3.  Move any necessary JavaScript, including import statements, into a [“code fence” (`---`)](/en/basics/astro-components/#the-component-script). Note: JavaScript to [conditionally render content](/en/reference/astro-syntax/#dynamic-html) is often written inside the HTML template directly in Astro.
+3.  Move any necessary JavaScript, including import statements, into a [“code fence” (`---`)](../../../basics/astro-components/index.md#the-component-script). Note: JavaScript to [conditionally render content](../../../reference/astro-syntax/index.md#dynamic-html) is often written inside the HTML template directly in Astro.
     
-4.  Use [`Astro.props`](/en/reference/api-reference/#props) to access any additional props that were previously passed to your CRA function.
+4.  Use [`Astro.props`](../../../reference/api-reference/index.md#props) to access any additional props that were previously passed to your CRA function.
     
 5.  Decide whether any imported components also need to be converted to Astro. You can keep them as React components for now, or forever. But, you may eventually want to convert them to `.astro` components, especially if they do not need to be interactive!
     
-6.  Replace `useEffect()` with import statements or [`import.meta.glob()`](/en/guides/imports/#importmetaglob) to query your local files. Use `fetch()` to fetch external data.
+6.  Replace `useEffect()` with import statements or [`import.meta.glob()`](../../imports/index.md#importmetaglob) to query your local files. Use `fetch()` to fetch external data.
     
 
 ### Migrating Tests
@@ -203,7 +203,7 @@ Here are some tips for converting a CRA `.js` component into a `.astro` componen
 
 As Astro outputs raw HTML, it is possible to write end-to-end tests using the output of the build step. Any end-to-end tests written previously might work out-of-the-box if you have been able to match the markup of your CRA site. Testing libraries such as Jest and React Testing Library can be imported and used in Astro to test your React components.
 
-See Astro’s [testing guide](/en/guides/testing/) for more.
+See Astro’s [testing guide](../../testing/index.md) for more.
 
 ## Reference: Convert CRA Syntax to Astro
 
@@ -213,7 +213,7 @@ See Astro’s [testing guide](/en/guides/testing/) for more.
 
 [Section titled “CRA Imports to Astro”](#cra-imports-to-astro)
 
-Update any [file imports](/en/guides/imports/) to reference relative file paths exactly. This can be done using [import aliases](/en/guides/typescript/#import-aliases), or by writing out a relative path in full.
+Update any [file imports](../../imports/index.md) to reference relative file paths exactly. This can be done using [import aliases](../../typescript/index.md#import-aliases), or by writing out a relative path in full.
 
 Note that `.astro` and several other file types must be imported with their full file extension.
 
@@ -232,9 +232,9 @@ Convert any instances of `{children}` to an Astro `<slot />`. Astro does not nee
 <div>  <slot /></div>
 ```
 
-React components that pass multiple sets of children can be migrated to an Astro component using [named slots](/en/basics/astro-components/#named-slots).
+React components that pass multiple sets of children can be migrated to an Astro component using [named slots](../../../basics/astro-components/index.md#named-slots).
 
-See more about [specific `<slot />` usage in Astro](/en/basics/astro-components/#slots).
+See more about [specific `<slot />` usage in Astro](../../../basics/astro-components/index.md#slots).
 
 ### CRA Data Fetching to Astro
 
@@ -244,7 +244,7 @@ Fetching data in a Create React App component is similar to Astro, with some sli
 
 You will need to remove any instances of a side effect hook (`useEffect`) for either `import.meta.glob()` or `getCollection()`/`getEntry()` to access data from other files in your project source.
 
-To [fetch remote data](/en/guides/data-fetching/), use `fetch()`.
+To [fetch remote data](../../data-fetching/index.md), use `fetch()`.
 
 These data requests are made in the frontmatter of the Astro component and use top-level await.
 
@@ -255,7 +255,7 @@ These data requests are made in the frontmatter of the Astro component and use t
 // Fetch remote dataconst response = await fetch('https://randomuser.me/api/');const data = await response.json();const randomUser = data.results[0];---
 ```
 
-See more about local files imports with [`import.meta.glob()`](/en/guides/imports/#importmetaglob), [querying with content collections](/en/guides/content-collections/#querying-build-time-collections) or [fetching remote data](/en/guides/data-fetching/).
+See more about local files imports with [`import.meta.glob()`](../../imports/index.md#importmetaglob), [querying with content collections](../../content-collections/index.md#querying-build-time-collections) or [fetching remote data](../../data-fetching/index.md).
 
 ### CRA Styling to Astro
 
@@ -263,15 +263,15 @@ See more about local files imports with [`import.meta.glob()`](/en/guides/import
 
 You may need to replace any [CSS-in-JS libraries](https://github.com/withastro/astro/issues/4432) (e.g. styled-components) with other available CSS options in Astro.
 
-If necessary, convert any inline style objects (`style={{ fontWeight: "bold" }}`) to inline HTML style attributes (`style="font-weight:bold;"`). Or, use an [Astro `<style>` tag](/en/guides/styling/#styling-in-astro) for scoped CSS styles.
+If necessary, convert any inline style objects (`style={{ fontWeight: "bold" }}`) to inline HTML style attributes (`style="font-weight:bold;"`). Or, use an [Astro `<style>` tag](../../styling/index.md#styling-in-astro) for scoped CSS styles.
 
 ```
 <div style={{backgroundColor: `#f4f4f4`, padding: `1em`}}>{message}</div><div style="background-color: #f4f4f4; padding: 1em;">{message}</div>
 ```
 
-Tailwind is supported after installing the [Tailwind Vite plugin](/en/guides/styling/#tailwind). No changes to your existing Tailwind code are required!
+Tailwind is supported after installing the [Tailwind Vite plugin](../../styling/index.md#tailwind). No changes to your existing Tailwind code are required!
 
-See more about [Styling in Astro](/en/guides/styling/).
+See more about [Styling in Astro](../../styling/index.md).
 
 ## Troubleshooting
 
@@ -291,59 +291,59 @@ If you cannot find your answers within these docs, please visit the [Astro Disco
 
 *   ![](/logos/create-react-app.svg)
     
-    ### [Create React App](/en/guides/migrate-to-astro/from-create-react-app/)
+    ### [Create React App](index.md)
     
 *   ![](/logos/docusaurus.svg)
     
-    ### [Docusaurus](/en/guides/migrate-to-astro/from-docusaurus/)
+    ### [Docusaurus](../from-docusaurus/index.md)
     
 *   ![](/logos/eleventy.svg)
     
-    ### [Eleventy](/en/guides/migrate-to-astro/from-eleventy/)
+    ### [Eleventy](../from-eleventy/index.md)
     
 *   ![](/logos/gatsby.svg)
     
-    ### [Gatsby](/en/guides/migrate-to-astro/from-gatsby/)
+    ### [Gatsby](../from-gatsby/index.md)
     
 *   ![](/logos/gitbook.svg)
     
-    ### [GitBook](/en/guides/migrate-to-astro/from-gitbook/)
+    ### [GitBook](../from-gitbook/index.md)
     
 *   ![](/logos/gridsome.svg)
     
-    ### [Gridsome](/en/guides/migrate-to-astro/from-gridsome/)
+    ### [Gridsome](../from-gridsome/index.md)
     
 *   ![](/logos/hugo.svg)
     
-    ### [Hugo](/en/guides/migrate-to-astro/from-hugo/)
+    ### [Hugo](../from-hugo/index.md)
     
 *   ![](/logos/jekyll.png)
     
-    ### [Jekyll](/en/guides/migrate-to-astro/from-jekyll/)
+    ### [Jekyll](../from-jekyll/index.md)
     
 *   ![](/logos/nextjs.svg)
     
-    ### [Next.js](/en/guides/migrate-to-astro/from-nextjs/)
+    ### [Next.js](../from-nextjs/index.md)
     
 *   ![](/logos/nuxtjs.svg)
     
-    ### [NuxtJS](/en/guides/migrate-to-astro/from-nuxtjs/)
+    ### [NuxtJS](../from-nuxtjs/index.md)
     
 *   ![](/logos/pelican.svg)
     
-    ### [Pelican](/en/guides/migrate-to-astro/from-pelican/)
+    ### [Pelican](../from-pelican/index.md)
     
 *   ![](/logos/sveltekit.svg)
     
-    ### [SvelteKit](/en/guides/migrate-to-astro/from-sveltekit/)
+    ### [SvelteKit](../from-sveltekit/index.md)
     
 *   ![](/logos/vuepress.png)
     
-    ### [VuePress](/en/guides/migrate-to-astro/from-vuepress/)
+    ### [VuePress](../from-vuepress/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [WordPress](/en/guides/migrate-to-astro/from-wordpress/)
+    ### [WordPress](../from-wordpress/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

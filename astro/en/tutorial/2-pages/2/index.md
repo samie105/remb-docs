@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:21.125Z"
 content_hash: "086c3cf343b0f03b7c522bf5938f9ce4796c5581631cb0eafee53a1a4d5037da"
 menu_path: ["Write your first Markdown blog post"]
 section_path: []
-nav_prev: {"path": "../1/index.md", "title": "Create your first Astro page"}
-nav_next: {"path": "../3/index.md", "title": "Add dynamic content about you"}
+nav_prev: {"path": "astro/en/tutorial/2-pages/1/index.md", "title": "Create your first Astro page"}
+nav_next: {"path": "astro/en/tutorial/2-pages/3/index.md", "title": "Add dynamic content about you"}
 ---
 
 # Write your first Markdown blog post
@@ -119,4 +119,4 @@ Get ready to…
 *   [YAML frontmatter](https://assemble.io/docs/YAML-front-matter.html) external
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

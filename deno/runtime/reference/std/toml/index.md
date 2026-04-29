@@ -10,8 +10,8 @@ content_hash: "0097c3000665b2d9a64d4f8d3e7b97012a4e2633836680a5cba35c885cc656d6"
 menu_path: ["@std/toml"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text/index.md", "title": "@std/text"}
-nav_next: {"path": "../ulid/index.md", "title": "@std/ulid"}
+nav_prev: {"path": "deno/runtime/reference/std/text/index.md", "title": "@std/text"}
+nav_next: {"path": "deno/runtime/reference/std/ulid/index.md", "title": "@std/ulid"}
 ---
 
 **On this page**

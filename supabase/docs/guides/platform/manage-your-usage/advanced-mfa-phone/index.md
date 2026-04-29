@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:49.864Z"
 content_hash: "49a5e9e10a29099138cd5130186f12a5c8a5cdb3fffde21780696a35de7831a7"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","MFA Phone","MFA Phone"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","MFA Phone","MFA Phone"]
-nav_prev: {"path": "../index.md", "title": "Manage your usage"}
-nav_next: {"path": "../branching/index.md", "title": "Manage Branching usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/index.md", "title": "Manage your usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/branching/index.md", "title": "Manage Branching usage"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Manage Advanced MFA Phone usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-You are charged for having the feature [Advanced Multi-Factor Authentication Phone](/docs/guides/auth/auth-mfa/phone) enabled for your project.
+You are charged for having the feature [Advanced Multi-Factor Authentication Phone](../../../auth/auth-mfa/phone/index.md) enabled for your project.
 
-The Advanced MFA Phone add-on is **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+The Advanced MFA Phone add-on is **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 Additional charges apply for each SMS or WhatsApp message sent, depending on your third-party messaging provider (such as Twilio or MessageBird).
 
@@ -111,7 +111,7 @@ Custom
 
 Custom
 
-For a detailed breakdown of how charges are calculated, refer to [Manage Advanced MFA Phone usage](/docs/guides/platform/manage-your-usage/advanced-mfa-phone).
+For a detailed breakdown of how charges are calculated, refer to [Manage Advanced MFA Phone usage](index.md).
 
 ## Billing examples[#](#billing-examples)
 

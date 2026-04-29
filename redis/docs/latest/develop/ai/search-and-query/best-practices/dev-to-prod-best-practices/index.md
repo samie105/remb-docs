@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:08.988Z"
 content_hash: "d4c51ad7335e4a3b2741d5d24393defcc60ebfc38aa782c884c3cc52531170de"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Move from Development to Production with Redis Search","→","Move from Development to Production with Redis Search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Move from Development to Production with Redis Search","→","Move from Development to Production with Redis Search"]
-nav_prev: {"path": "../index.md", "title": "Best practices"}
-nav_next: {"path": "../index-mgmt-best-practices/index.md", "title": "Index management best practices for Redis Search"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/index.md", "title": "Best practices"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/index-mgmt-best-practices/index.md", "title": "Index management best practices for Redis Search"}
 ---
 
 # Move from Development to Production with Redis Search
@@ -68,7 +68,7 @@ Redis Search offers several configurable parameters that influence query results
 
 *   Run a few test queries and check the results are what you expect.
 *   Use the following tools to validate and debug:
-    *   Redis CLI: use the [`MONITOR`](/docs/latest/commands/monitor/) command or [profiling features](/docs/latest/develop/tools/insight/#profiler) in Redis Insight to analyze commands.
+    *   Redis CLI: use the [`MONITOR`](/docs/latest/commands/monitor/) command or [profiling features](../../../../tools/insight/index.md#profiler) in Redis Insight to analyze commands.
     *   [`FT.PROFILE`](/docs/latest/commands/ft.profile/): Provides detailed insights into individual query execution paths, helping identify bottlenecks and inefficiencies.
 
 ### 2\. Performance

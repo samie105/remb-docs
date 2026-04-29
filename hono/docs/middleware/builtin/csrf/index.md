@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:47.910Z"
 content_hash: "fc1c9e8d03e3213d2b1a71cd32df2a5b41354ee404ff914c48b762b33a7f937f"
 menu_path: ["CSRF Protection ​"]
 section_path: []
-nav_prev: {"path": "../cors/index.md", "title": "CORS Middleware \u200b"}
-nav_next: {"path": "../etag/index.md", "title": "ETag Middleware \u200b"}
+nav_prev: {"path": "hono/docs/middleware/builtin/cors/index.md", "title": "CORS Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/etag/index.md", "title": "ETag Middleware \u200b"}
 ---
 
 This middleware protects against CSRF attacks by checking both the `Origin` header and the `Sec-Fetch-Site` header. The request is allowed if either validation passes.

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:10.428Z"
 content_hash: "220d11d55e2a56441470de09fd00e3cd2e4ed88c59a381f2706996cfe2c85d4e"
 menu_path: ["@astrojs/\n\t\t\t\t\tnode"]
 section_path: []
-nav_prev: {"path": "../cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
-nav_next: {"path": "../vercel/index.md", "title": "@astrojs/\n\t\t\t\t\tvercel"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
+nav_next: {"path": "astro/en/guides/integrations-guide/vercel/index.md", "title": "@astrojs/\n\t\t\t\t\tvercel"}
 ---
 
 # @astrojs/ node
 
 v10.0.5 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/node/) [npm](https://www.npmjs.com/package/@astrojs/node) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/node/CHANGELOG.md)
 
-This adapter allows Astro to deploy your [on-demand rendered routes and features](/en/guides/on-demand-rendering/) to Node targets, including [server islands](/en/guides/server-islands/), [actions](/en/guides/actions/), and [sessions](/en/guides/sessions/).
+This adapter allows Astro to deploy your [on-demand rendered routes and features](../../on-demand-rendering/index.md) to Node targets, including [server islands](../../server-islands/index.md), [actions](../../actions/index.md), and [sessions](../../sessions/index.md).
 
 If you’re using Astro as a static site builder, you don’t need an adapter.
 
@@ -43,7 +43,7 @@ Add the Node adapter to enable on-demand rendering in your Astro project with th
 npx astro add node
 ```
 
-Now, you can enable [on-demand rendering per page](/en/guides/on-demand-rendering/#enabling-on-demand-rendering), or set your build output configuration to `output: 'server'` to [server-render all your pages by default](/en/guides/on-demand-rendering/#server-mode).
+Now, you can enable [on-demand rendering per page](../../on-demand-rendering/index.md#enabling-on-demand-rendering), or set your build output configuration to `output: 'server'` to [server-render all your pages by default](../../on-demand-rendering/index.md#server-mode).
 
 ### Manual Install
 
@@ -99,7 +99,7 @@ export default defineConfig({  adapter: node({    mode: 'middleware',  }),});
 
 If enabled, the adapter will serve the headers of prerendered pages using the `Response` object when provided by Astro features, such as Content Security Policy.
 
-For example, when [Content Security Policy](/en/reference/configuration-reference/#securitycsp) is enabled, `staticHeaders` can be used to add the CSP headers to the `Response` object instead of creating a `<meta>` element:
+For example, when [Content Security Policy](../../../reference/configuration-reference/index.md#securitycsp) is enabled, `staticHeaders` can be used to add the CSP headers to the `Response` object instead of creating a `<meta>` element:
 
 ```
 import { defineConfig } from 'astro/config';import node from '@astrojs/node';
@@ -115,7 +115,7 @@ export default defineConfig({  security: {    csp: true  },  adapter: node({    
 
 **Added in:** `@astrojs/node@9.3.0`
 
-Disables Astro’s default [HTML streaming](/en/guides/on-demand-rendering/#html-streaming) for pages rendered on demand.
+Disables Astro’s default [HTML streaming](../../on-demand-rendering/index.md#html-streaming) for pages rendered on demand.
 
 HTML streaming helps with performance and generally provides a better visitor experience. In most cases, disabling streaming is not recommended.
 
@@ -148,7 +148,7 @@ export default defineConfig({  adapter: node({    mode: 'standalone',    bodySiz
 
 [Section titled “Usage”](#usage)
 
-First, [performing a build](/en/guides/deploy/#building-your-site-locally). Depending on which `mode` selected (see above) follow the appropriate steps below:
+First, [performing a build](../../deploy/index.md#building-your-site-locally). Depending on which `mode` selected (see above) follow the appropriate steps below:
 
 ### Middleware
 
@@ -234,15 +234,15 @@ Cache-Control: public, max-age=31536000, immutable
 
 [Section titled “Sessions”](#sessions)
 
-The Astro [Sessions API](/en/guides/sessions/) allows you to easily store user data between requests. This can be used for things like user data and preferences, shopping carts, and authentication credentials. Unlike cookie storage, there are no size limits on the data, and it can be restored on different devices.
+The Astro [Sessions API](../../sessions/index.md) allows you to easily store user data between requests. This can be used for things like user data and preferences, shopping carts, and authentication credentials. Unlike cookie storage, there are no size limits on the data, and it can be restored on different devices.
 
-Astro uses the local filesystem for session storage when using the Node adapter. If you would prefer to use a different session storage driver, you can specify it in your Astro config. See [the `session` configuration reference](/en/reference/configuration-reference/#sessiondriver) for more details.
+Astro uses the local filesystem for session storage when using the Node adapter. If you would prefer to use a different session storage driver, you can specify it in your Astro config. See [the `session` configuration reference](../../../reference/configuration-reference/index.md#sessiondriver) for more details.
 
 ## Environment variables
 
 [Section titled “Environment variables”](#environment-variables)
 
-When using the [`astro:env`](/en/guides/environment-variables/#type-safe-environment-variables) secrets or `process.env` at runtime, neither Astro nor the adapter loads environment variables for you.
+When using the [`astro:env`](../../environment-variables/index.md#type-safe-environment-variables) secrets or `process.env` at runtime, neither Astro nor the adapter loads environment variables for you.
 
 Some hosts may expose the environment variables you configure through their dashboard during the build and at runtime. Check your host’s documentation for setting and using environment variables within the specific platform.
 
@@ -262,34 +262,34 @@ DB_HOST=... DB_PASSWORD=... node ./dist/server/entry.mjs
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -297,34 +297,34 @@ DB_HOST=... DB_PASSWORD=... node ./dist/server/entry.mjs
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

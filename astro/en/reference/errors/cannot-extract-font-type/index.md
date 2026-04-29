@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:44.276Z"
 content_hash: "f740f45738e3efde7369499d5306858b9e8b23bef916e15c853655b1ed229f66"
 menu_path: ["Cannot extract the font type from the given URL."]
 section_path: []
-nav_prev: {"path": "../cannot-determine-weight-and-style-from-font-file/index.md", "title": "Cannot determine weight and style from font file."}
-nav_next: {"path": "../cannot-fetch-font-file/index.md", "title": "Cannot fetch the given font file."}
+nav_prev: {"path": "astro/en/reference/errors/cannot-determine-weight-and-style-from-font-file/index.md", "title": "Cannot determine weight and style from font file."}
+nav_next: {"path": "astro/en/reference/errors/cannot-fetch-font-file/index.md", "title": "Cannot fetch the given font file."}
 ---
 
 # Cannot extract the font type from the given URL.
@@ -23,4 +23,4 @@ nav_next: {"path": "../cannot-fetch-font-file/index.md", "title": "Cannot fetch 
 
 Cannot extract the font type from the given URL.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

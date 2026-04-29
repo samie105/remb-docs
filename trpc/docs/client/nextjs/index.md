@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:29.737Z"
 content_hash: "c485c6f9d7fd8072b9e2ae315dece5233bcf35a77ecb790ffe4d610dad564771"
 menu_path: ["Next.js Integration"]
 section_path: []
-nav_prev: {"path": "../links/wsLink/index.md", "title": "WebSocket Link"}
-nav_next: {"path": "app-router-setup/index.md", "title": "Set up with Next.js App Router"}
+nav_prev: {"path": "trpc/docs/client/links/wsLink/index.md", "title": "WebSocket Link"}
+nav_next: {"path": "trpc/docs/client/nextjs/app-router-setup/index.md", "title": "Set up with Next.js App Router"}
 ---
 
 ## tRPC + Next.js[​](#trpc--nextjs "Direct link to tRPC + Next.js")

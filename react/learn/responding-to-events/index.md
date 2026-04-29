@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:26.991Z"
 content_hash: "5c48b5a0d734da89c40c5f62c45f7716345b133fe3c2ca0ad1cadc4448c83aa5"
 menu_path: ["Responding to Events"]
 section_path: []
-nav_prev: {"path": "../adding-interactivity/index.md", "title": "Adding Interactivity"}
-nav_next: {"path": "../state-a-components-memory/index.md", "title": "State: A Component's Memory"}
+nav_prev: {"path": "react/learn/adding-interactivity/index.md", "title": "Adding Interactivity"}
+nav_next: {"path": "react/learn/state-a-components-memory/index.md", "title": "State: A Component's Memory"}
 ---
 
 React lets you add _event handlers_ to your JSX. Event handlers are your own functions that will be triggered in response to interactions like clicking, hovering, focusing form inputs, and so on.

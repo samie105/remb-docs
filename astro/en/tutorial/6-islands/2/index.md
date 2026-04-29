@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:01.442Z"
 content_hash: "21f72db5b63b7e568333c5e586f3f02d6ef59c5e1fb0140f6bfbe3e43a512565"
 menu_path: ["Back on dry land. Take your blog from day to night, no island required!"]
 section_path: []
-nav_prev: {"path": "../1/index.md", "title": "Build your first Astro island"}
-nav_next: {"path": "../3/index.md", "title": "Congratulations!"}
+nav_prev: {"path": "astro/en/tutorial/6-islands/1/index.md", "title": "Build your first Astro island"}
+nav_next: {"path": "astro/en/tutorial/6-islands/3/index.md", "title": "Congratulations!"}
 ---
 
 # Back on dry land. Take your blog from day to night, no island required!
@@ -112,6 +112,6 @@ Choose whether each of the following statements describes Astro `<script>` tags,
 
 [Section titled “Resources”](#resources)
 
-*   [Client-side `<script>` in Astro](/en/guides/client-side-scripts/)
+*   [Client-side `<script>` in Astro](../../../guides/client-side-scripts/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -10,8 +10,8 @@ content_hash: "e3debe57f4cba7e0da1b6ddde3657c6ec8911aa7113bf92c99ba5a281a64a676"
 menu_path: ["Query optimization"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../../observability-and-logging/sql-comments/index.md", "title": "SQL comments"}
-nav_next: {"path": "../../aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/sql-comments/index.md", "title": "SQL comments"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
 ---
 
 This page covers identifying and optimizing query performance with Prisma ORM.

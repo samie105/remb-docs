@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:11.381Z"
 content_hash: "956e6d14479339da1e57a13dcae3ec1675e8766d56969dc234a4bb1bd13d09dc"
 menu_path: ["Editor setup"]
 section_path: []
-nav_prev: {"path": "../guides/configuring-astro/index.md", "title": "Configuration overview"}
-nav_next: {"path": "../guides/typescript/index.md", "title": "TypeScript"}
+nav_prev: {"path": "astro/en/guides/configuring-astro/index.md", "title": "Configuration overview"}
+nav_next: {"path": "astro/en/guides/typescript/index.md", "title": "TypeScript"}
 ---
 
 # Editor setup
@@ -31,7 +31,7 @@ Astro works with any code editor. However, VS Code is our recommended editor for
 
 To get started, install the [Astro VS Code Extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode) today.
 
-See how to [set up TypeScript](/en/guides/typescript/) in your Astro project.
+See how to [set up TypeScript](../guides/typescript/index.md) in your Astro project.
 
 ## Zed
 
@@ -148,4 +148,4 @@ See the [Prettier plugin’s README](https://github.com/withastro/prettier-plugi
 
 [dprint](https://dprint.dev/) is a highly-configurable code formatter that supports many languages, including JavaScript, TypeScript, CSS, and more. Support for `.astro` files can be added using the [markup\_fmt plugin](https://github.com/g-plane/markup_fmt).
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

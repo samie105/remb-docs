@@ -10,8 +10,8 @@ content_hash: "2d4900c5756a0e67abe2095cdcbe47b4cddcf427075da985c3b58ee893d27888"
 menu_path: ["What are Client Extensions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../more/troubleshooting/typescript-performance/index.md", "title": "TypeScript performance"}
-nav_next: {"path": "client/index.md", "title": "Add methods to Prisma Client"}
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/typescript-performance/index.md", "title": "TypeScript performance"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/client/index.md", "title": "Add methods to Prisma Client"}
 ---
 
 You can use Prisma Client extensions to add functionality to your models, result objects, and queries, or to add client-level methods.

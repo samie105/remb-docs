@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:36.597Z"
 content_hash: "4e5ac6d34d025300a13ef9968296f998938519c54c0d7602e43764e43519c3c9"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        RDI on Redis Cloud quick start","→","RDI on Redis Cloud quick start"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        RDI on Redis Cloud quick start","→","RDI on Redis Cloud quick start"]
-nav_prev: {"path": "../define/index.md", "title": "Define data pipeline"}
-nav_next: {"path": "../setup/index.md", "title": "Prepare source database"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/define/index.md", "title": "Define data pipeline"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/rdi/setup/index.md", "title": "Prepare source database"}
 ---
 
 # RDI on Redis Cloud quick start
@@ -128,19 +128,19 @@ When your pipeline is provisioned, select **Complete setup**.
 
 After your pipeline is provisioned, you will be able to define your pipeline. You will select the database schemas, tables, and columns that you want to import and synchronize with your primary database.
 
-See [Define data pipeline](/docs/latest/operate/rc/databases/rdi/define/#define-data-pipeline) for detailed steps on defining your data pipeline.
+See [Define data pipeline](../define/index.md#define-data-pipeline) for detailed steps on defining your data pipeline.
 
 After you define your data pipeline, it will ingest data from the source database to your target Redis database. This process will take time, especially if you have a lot of records in your source database.
 
 After this initial sync is complete, the data pipeline enters the _change streaming_ phase, where changes are captured as they happen. Changes in the source database are added to the target within a few seconds of capture. You can see this by connecting to your source database and making changes to the data, and then connecting to your target Redis database and verifying that the changes are reflected there.
 
-You can view the status of your data pipeline in the **Data pipeline** tab of your database. See [View and edit data pipeline](/docs/latest/operate/rc/databases/rdi/view-edit/) to learn more.
+You can view the status of your data pipeline in the **Data pipeline** tab of your database. See [View and edit data pipeline](../view-edit/index.md) to learn more.
 
 ## Delete sample resources
 
 Warning:
 
-Make sure to [delete your data pipeline](/docs/latest/operate/rc/databases/rdi/view-edit/#delete-pipeline) before deleting the sample resources.
+Make sure to [delete your data pipeline](../view-edit/index.md#delete-pipeline) before deleting the sample resources.
 
 To delete the sample resources created by Terraform, run:
 

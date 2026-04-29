@@ -10,8 +10,8 @@ content_hash: "b0bf8d19da67f120f1e550977852d5b54cac537a232e143a3eed3b8c5cdc9507"
 menu_path: ["PostgreSQL: Documentation: 18: 52.38. pg_policy"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
-nav_next: {"path": "../catalog-pg-proc.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.39.\u00a0pg_proc"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-operator.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.34.\u00a0pg_operator"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-proc.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.39.\u00a0pg_proc"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/catalog-pg-policy.html "PostgreSQL devel - 52.38. pg_policy")

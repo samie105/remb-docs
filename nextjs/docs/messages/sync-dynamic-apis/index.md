@@ -11,8 +11,8 @@ menu_path: ["Dynamic APIs are Asynchronous"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
-nav_next: {"path": "../url-deprecated/index.md", "title": "`url` is deprecated"}
+nav_prev: {"path": "nextjs/docs/messages/no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
+nav_next: {"path": "nextjs/docs/messages/url-deprecated/index.md", "title": "`url` is deprecated"}
 ---
 
 # Dynamic APIs are Asynchronous
@@ -21,14 +21,14 @@ Learn more about why accessing certain APIs synchronously now warns.
 
 ## Why This Warning Occurred[](#why-this-warning-occurred)
 
-Somewhere in your code you used an API that opts into [dynamic rendering](/docs/app/glossary#dynamic-rendering).
+Somewhere in your code you used an API that opts into [dynamic rendering](../../app/glossary/index.md#dynamic-rendering).
 
 Dynamic APIs are:
 
 -   The `params` and `searchParams` props that get provided to pages, layouts, metadata APIs, and route handlers.
 -   `cookies()`, `draftMode()`, and `headers()` from `next/headers`
 
-In Next 15, these APIs have been made asynchronous. You can read more about this in the Next.js 15 [Upgrade Guide](/docs/app/guides/upgrading/version-15).
+In Next 15, these APIs have been made asynchronous. You can read more about this in the Next.js 15 [Upgrade Guide](../../app/guides/upgrading/version-15/index.md).
 
 For example, the following code will issue a warning:
 
@@ -45,7 +45,7 @@ This also includes enumerating (e.g. `{...params}`, or `Object.keys(params)`) or
 
 ## Possible Ways to Fix It[](#possible-ways-to-fix-it)
 
-The [`next-async-request-api` codemod](/docs/app/guides/upgrading/codemods#next-async-request-api) can fix many of these cases automatically:
+The [`next-async-request-api` codemod](../../app/guides/upgrading/codemods/index.md#next-async-request-api) can fix many of these cases automatically:
 
 Terminal
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:30.263Z"
 content_hash: "0faa70502f1d14ac55767d4cff15cca0e7e67d3ef01dd98df525195bf09a9bfd"
 menu_path: ["Bibliography"]
 section_path: []
-nav_prev: {"path": "../color.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0N.\u00a0Color Support"}
-nav_next: {"path": "../bookindex.html/index.md", "title": "Index"}
+nav_prev: {"path": "postgres/docs/current/color.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0N.\u00a0Color Support"}
+nav_next: {"path": "postgres/docs/current/bookindex.html/index.md", "title": "Index"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/biblio.html "PostgreSQL devel - Bibliography")

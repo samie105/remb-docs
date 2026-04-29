@@ -10,8 +10,8 @@ content_hash: "b8999103b582b5282b5d6f63fd89c5bcc3dbbfdc45ee02237ba8599881472e14"
 menu_path: ["Drizzle ORM - PostgreSQL full-text search"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
-nav_next: {"path": "../postgresql-local-setup/index.md", "title": "Drizzle ORM - How to setup PostgreSQL locally"}
+nav_prev: {"path": "drizzle/docs/guides/postgis-geometry-point/index.md", "title": "Drizzle ORM - PostGIS geometry point"}
+nav_next: {"path": "drizzle/docs/guides/postgresql-local-setup/index.md", "title": "Drizzle ORM - How to setup PostgreSQL locally"}
 ---
 
 Drizzle | PostgreSQL full-text search

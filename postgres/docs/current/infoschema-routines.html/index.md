@@ -10,8 +10,8 @@ content_hash: "d5877c33a794ecae2c49d7f44425ee6120070584ac48b00b775e4cd234bc8ae4"
 menu_path: ["PostgreSQL: Documentation: 18: 35.45. routines"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../infoschema-routine-table-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.44.\u00a0routine_table_usage"}
-nav_next: {"path": "../infoschema-schema.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.1.\u00a0The Schema"}
+nav_prev: {"path": "postgres/docs/current/infoschema-routine-table-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.44.\u00a0routine_table_usage"}
+nav_next: {"path": "postgres/docs/current/infoschema-schema.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.1.\u00a0The Schema"}
 ---
 
 | 

@@ -11,8 +11,8 @@ menu_path: ["Conflicting Public File and Page File"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../blocking-route/index.md", "title": "Uncached data was accessed outside of `<Suspense>`"}
-nav_next: {"path": "../empty-generate-static-params/index.md", "title": "Empty generateStaticParams with Cache Components"}
+nav_prev: {"path": "nextjs/docs/messages/blocking-route/index.md", "title": "Uncached data was accessed outside of `<Suspense>`"}
+nav_next: {"path": "nextjs/docs/messages/empty-generate-static-params/index.md", "title": "Empty generateStaticParams with Cache Components"}
 ---
 
 # Conflicting Public File and Page File
@@ -49,6 +49,6 @@ pages/
 
 ## Useful Links[](#useful-links)
 
--   [Static file serving docs](/docs/pages/api-reference/file-conventions/public-folder)
+-   [Static file serving docs](../../pages/api-reference/file-conventions/public-folder/index.md)
 
 Was this helpful?

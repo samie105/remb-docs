@@ -10,8 +10,8 @@ content_hash: "be8bf92796f296320e5e11bfd7a1938398d80769fa6038520dbfdaa132038da7"
 menu_path: ["Get Started with Drizzle and MSSQL"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../mssql-existing/index.md", "title": "Get Started with Drizzle and MSSQL in existing project"}
-nav_next: {"path": "../mysql-existing/index.md", "title": "Get Started with Drizzle and MySQL in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/mssql-existing/index.md", "title": "Get Started with Drizzle and MSSQL in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/mysql-existing/index.md", "title": "Get Started with Drizzle and MySQL in existing project"}
 ---
 
 ## Get Started with Drizzle and MSSQL

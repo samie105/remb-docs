@@ -556,4 +556,4 @@ In Svelte 4, content can be passed to components using [slots](legacy-slots). Sn
 
 previous next
 
-[{#await ...}](/docs/svelte/await) [{@render ...}](/docs/svelte/@render)
+[{#await ...}](../await/index.md) [{@render ...}](/docs/svelte/@render)

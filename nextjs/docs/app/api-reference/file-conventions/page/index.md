@@ -11,8 +11,8 @@ menu_path: ["page.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../not-found/index.md", "title": "not-found.js"}
-nav_next: {"path": "../parallel-routes/index.md", "title": "Parallel Routes"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/not-found/index.md", "title": "not-found.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/parallel-routes/index.md", "title": "Parallel Routes"}
 ---
 
 # page.js
@@ -43,7 +43,7 @@ export default function Page({
 -   A `page` is always the **leaf** of the route subtree.
 -   A `page` file is required to make a route segment **publicly accessible**.
 -   Pages are [Server Components](https://react.dev/reference/rsc/server-components) by default, but can be set to a [Client Component](https://react.dev/reference/rsc/use-client).
--   In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `page.js` is the innermost file convention. It is wrapped by `loading.js` (Suspense boundary), `error.js` (error boundary), `template.js`, and `layout.js` in the same segment.
+-   In the [component hierarchy](../../../getting-started/project-structure/index.md#component-hierarchy), `page.js` is the innermost file convention. It is wrapped by `loading.js` (Suspense boundary), `error.js` (error boundary), `template.js`, and `layout.js` in the same segment.
 
 ## Reference[](#reference)
 
@@ -51,7 +51,7 @@ export default function Page({
 
 #### `params` (optional)[](#params-optional)
 
-A promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) from the root segment down to that page.
+A promise that resolves to an object containing the [dynamic route parameters](../dynamic-routes/index.md) from the root segment down to that page.
 
 app/shop/\[slug\]/page.tsx
 
@@ -121,7 +121,7 @@ export default function Page({
 
 -   Since the `searchParams` prop is a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access the values.
     -   In version 14 and earlier, `searchParams` was a synchronous prop. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
--   `searchParams` is a **[Request-time API](/docs/app/glossary#request-time-apis)** whose values cannot be known ahead of time. Using it will opt the page into **[dynamic rendering](/docs/app/glossary#dynamic-rendering)** at request time.
+-   `searchParams` is a **[Request-time API](../../../glossary/index.md#request-time-apis)** whose values cannot be known ahead of time. Using it will opt the page into **[dynamic rendering](../../../glossary/index.md#dynamic-rendering)** at request time.
 -   `searchParams` is a plain JavaScript object, not a `URLSearchParams` instance.
 
 ### Page Props Helper[](#page-props-helper)
@@ -149,7 +149,7 @@ export default async function Page(props: PageProps<'/blog/[slug]'>) {
 
 ### Displaying content based on `params`[](#displaying-content-based-on-params)
 
-Using [dynamic route segments](/docs/app/api-reference/file-conventions/dynamic-routes), you can display or fetch specific content for the page based on the `params` prop.
+Using [dynamic route segments](../dynamic-routes/index.md), you can display or fetch specific content for the page based on the `params` prop.
 
 app/blog/\[slug\]/page.tsx
 
@@ -222,7 +222,7 @@ export default function Page({
 
 | Version | Changes |
 | --- | --- |
-| `v15.0.0-RC` | `params` and `searchParams` are now promises. A [codemod](/docs/app/guides/upgrading/codemods#150) is available. |
+| `v15.0.0-RC` | `params` and `searchParams` are now promises. A [codemod](../../../guides/upgrading/codemods/index.md#150) is available. |
 | `v13.0.0` | `page` introduced. |
 
 Was this helpful?

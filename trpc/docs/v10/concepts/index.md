@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:28.649Z"
 content_hash: "41fe8b213a1c1fb598ed3dca36d5493cf2d7ce830a689175cc147545f74293e5"
 menu_path: ["Concepts"]
 section_path: []
-nav_prev: {"path": "../community/sponsors/index.md", "title": "Sponsors"}
-nav_next: {"path": "../example-apps/index.md", "title": "Example Apps"}
+nav_prev: {"path": "trpc/docs/v10/community/sponsors/index.md", "title": "Sponsors"}
+nav_next: {"path": "trpc/docs/v10/example-apps/index.md", "title": "Example Apps"}
 ---
 
 ## What is RPC? What mindset should I adopt?[​](#what-is-rpc-what-mindset-should-i-adopt "Direct link to What is RPC? What mindset should I adopt?")

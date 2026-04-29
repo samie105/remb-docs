@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:25.251Z"
 content_hash: "1c5cbae8f536d1a1d1af1676dffd649a99362b4d6e850fc49fd0d4966629978a"
 menu_path: ["Install TypeScript declarations for Bun"]
 section_path: []
-nav_prev: {"path": "../tsconfig-paths/index.md", "title": "Re-map import paths"}
-nav_next: {"path": "../vscode-debugger/index.md", "title": "Debugging Bun with the VS Code extension"}
+nav_prev: {"path": "bun/docs/guides/runtime/tsconfig-paths/index.md", "title": "Re-map import paths"}
+nav_next: {"path": "bun/docs/guides/runtime/vscode-debugger/index.md", "title": "Debugging Bun with the VS Code extension"}
 ---
 
 To install TypeScript definitions for Bun’s built-in APIs in your project, install `@types/bun`.

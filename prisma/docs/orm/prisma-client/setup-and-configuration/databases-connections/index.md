@@ -10,8 +10,8 @@ content_hash: "c71d29b9365e5f6908ceebb21daff646030025990b586bf1b44bcc921646d521"
 menu_path: ["Database connections"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../database-polyfills/index.md", "title": "Database polyfills"}
-nav_next: {"path": "connection-management/index.md", "title": "Connection management"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/database-polyfills/index.md", "title": "Database polyfills"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md", "title": "Connection management"}
 ---
 
 # Connection URL to your database using PgBouncer.

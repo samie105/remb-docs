@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:09.278Z"
 content_hash: "c4e14862a453a2ba9269f7b1a0b219ff76a046547589d8537bf82c3a386f2597"
 menu_path: ["Convert a Blob to a string"]
 section_path: []
-nav_prev: {"path": "../blob-to-stream/index.md", "title": "Convert a Blob to a ReadableStream"}
-nav_next: {"path": "../blob-to-typedarray/index.md", "title": "Convert a Blob to a Uint8Array"}
+nav_prev: {"path": "bun/docs/guides/binary/blob-to-stream/index.md", "title": "Convert a Blob to a ReadableStream"}
+nav_next: {"path": "bun/docs/guides/binary/blob-to-typedarray/index.md", "title": "Convert a Blob to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../blob-to-typedarray/index.md", "title": "Convert a Blob to
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) class provides a number of methods for consuming its contents in different formats, including `.text()`.
 
@@ -45,7 +45,7 @@ const str = await blob.text();
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -57,10 +57,10 @@ Convert a Buffer to a ReadableStream
 
 Previous
 
-](/docs/guides/binary/buffer-to-readablestream)[
+](../buffer-to-readablestream/index.md)[
 
 Convert a Blob to an ArrayBuffer
 
 Next
 
-](/docs/guides/binary/blob-to-arraybuffer)
+](../blob-to-arraybuffer/index.md)

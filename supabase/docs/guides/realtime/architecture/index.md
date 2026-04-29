@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:43.324Z"
 content_hash: "734f1bdad99201f9686c87af4c152b35777fde0065f64974524ad75edd35cd13"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Architecture","Architecture"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Architecture","Architecture"]
-nav_prev: {"path": "../index.md", "title": "Realtime"}
-nav_next: {"path": "../authorization/index.md", "title": "Realtime Authorization"}
+nav_prev: {"path": "supabase/docs/guides/realtime/index.md", "title": "Realtime"}
+nav_next: {"path": "supabase/docs/guides/realtime/authorization/index.md", "title": "Realtime Authorization"}
 ---
 
 # 
@@ -67,7 +67,7 @@ Realtime Broadcast sends messages when changes happen in your database. Behind t
 
 The `realtime.messages` table is partitioned by day. This allows old messages to be deleted performantly, by dropping old partitions. Partitions are retained for 3 days before being deleted.
 
-Broadcast uses [Realtime Authorization](/docs/guides/realtime/authorization) by default to protect your data.
+Broadcast uses [Realtime Authorization](../authorization/index.md) by default to protect your data.
 
 ## Streaming the Write-Ahead Log[#](#streaming-the-write-ahead-log)
 

@@ -11,8 +11,8 @@ menu_path: ["adapterPath"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "next.config.js"}
-nav_next: {"path": "../allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/index.md", "title": "next.config.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
 ---
 
 # adapterPath
@@ -44,56 +44,56 @@ Alternatively `NEXT_ADAPTER_PATH` can be set to enable zero-config usage in depl
 
 For full adapter implementation details, use the dedicated Adapters section:
 
--   [Configuration](/docs/app/api-reference/adapters/configuration)
--   [Creating an Adapter](/docs/app/api-reference/adapters/creating-an-adapter)
--   [API Reference](/docs/app/api-reference/adapters/api-reference)
--   [Testing Adapters](/docs/app/api-reference/adapters/testing-adapters)
--   [Routing with `@next/routing`](/docs/app/api-reference/adapters/routing-with-next-routing)
--   [Implementing PPR in an Adapter](/docs/app/api-reference/adapters/implementing-ppr-in-an-adapter)
--   [Runtime Integration](/docs/app/api-reference/adapters/runtime-integration)
--   [Invoking Entrypoints](/docs/app/api-reference/adapters/invoking-entrypoints)
--   [Output Types](/docs/app/api-reference/adapters/output-types)
--   [Routing Information](/docs/app/api-reference/adapters/routing-information)
--   [Use Cases](/docs/app/api-reference/adapters/use-cases)
+-   [Configuration](../../../adapters/configuration/index.md)
+-   [Creating an Adapter](../../../adapters/creating-an-adapter/index.md)
+-   [API Reference](../../../adapters/api-reference/index.md)
+-   [Testing Adapters](../../../adapters/testing-adapters/index.md)
+-   [Routing with `@next/routing`](../../../adapters/routing-with-next-routing/index.md)
+-   [Implementing PPR in an Adapter](../../../adapters/implementing-ppr-in-an-adapter/index.md)
+-   [Runtime Integration](../../../adapters/runtime-integration/index.md)
+-   [Invoking Entrypoints](../../../adapters/invoking-entrypoints/index.md)
+-   [Output Types](../../../adapters/output-types/index.md)
+-   [Routing Information](../../../adapters/routing-information/index.md)
+-   [Use Cases](../../../adapters/use-cases/index.md)
 
 ## Creating an Adapter[](#creating-an-adapter)
 
-See [Creating an Adapter](/docs/app/api-reference/adapters/creating-an-adapter).
+See [Creating an Adapter](../../../adapters/creating-an-adapter/index.md).
 
 ## API Reference[](#api-reference)
 
-See [API Reference](/docs/app/api-reference/adapters/api-reference).
+See [API Reference](../../../adapters/api-reference/index.md).
 
 ## Testing Adapters[](#testing-adapters)
 
-See [Testing Adapters](/docs/app/api-reference/adapters/testing-adapters).
+See [Testing Adapters](../../../adapters/testing-adapters/index.md).
 
 ## Routing with `@next/routing`[](#routing-with-nextrouting)
 
-See [Routing with `@next/routing`](/docs/app/api-reference/adapters/routing-with-next-routing).
+See [Routing with `@next/routing`](../../../adapters/routing-with-next-routing/index.md).
 
 ## Implementing PPR in an Adapter[](#implementing-ppr-in-an-adapter)
 
-See [Implementing PPR in an Adapter](/docs/app/api-reference/adapters/implementing-ppr-in-an-adapter).
+See [Implementing PPR in an Adapter](../../../adapters/implementing-ppr-in-an-adapter/index.md).
 
 ## Runtime Integration[](#runtime-integration)
 
-See [Runtime Integration](/docs/app/api-reference/adapters/runtime-integration).
+See [Runtime Integration](../../../adapters/runtime-integration/index.md).
 
 ## Invoking Entrypoints[](#invoking-entrypoints)
 
-See [Invoking Entrypoints](/docs/app/api-reference/adapters/invoking-entrypoints).
+See [Invoking Entrypoints](../../../adapters/invoking-entrypoints/index.md).
 
 ## Output Types[](#output-types)
 
-See [Output Types](/docs/app/api-reference/adapters/output-types).
+See [Output Types](../../../adapters/output-types/index.md).
 
 ## Routing Information[](#routing-information)
 
-See [Routing Information](/docs/app/api-reference/adapters/routing-information).
+See [Routing Information](../../../adapters/routing-information/index.md).
 
 ## Use Cases[](#use-cases)
 
-See [Use Cases](/docs/app/api-reference/adapters/use-cases).
+See [Use Cases](../../../adapters/use-cases/index.md).
 
 Was this helpful?

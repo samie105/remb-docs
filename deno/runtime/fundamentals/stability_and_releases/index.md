@@ -10,8 +10,8 @@ content_hash: "41eff11d86ac8c67831672c94bfa2712307cae7ccefa1c7c4421f87afab16d8e"
 menu_path: ["Stability and releases"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../open_telemetry/index.md", "title": "OpenTelemetry"}
-nav_next: {"path": "../../reference/cli/add/index.md", "title": "deno add"}
+nav_prev: {"path": "deno/runtime/fundamentals/open_telemetry/index.md", "title": "OpenTelemetry"}
+nav_next: {"path": "deno/runtime/reference/cli/add/index.md", "title": "deno add"}
 ---
 
 **On this page**
@@ -63,7 +63,7 @@ LTS backports include:
 
 ## Unstable APIs
 
-When introducing new APIs, these are first marked as unstable. This means that the API may change in the future. These APIs are not available to use unless you explicitly pass an unstable flag, like `--unstable-kv`. [Learn more about `--unstable-*` flags](/runtime/reference/cli/unstable_flags).
+When introducing new APIs, these are first marked as unstable. This means that the API may change in the future. These APIs are not available to use unless you explicitly pass an unstable flag, like `--unstable-kv`. [Learn more about `--unstable-*` flags](../../reference/cli/unstable_flags/index.md).
 
 There are also some non-runtime features of Deno that are considered unstable, and are locked behind unstable flags. For example, the `--unstable-sloppy-imports` flag is used to enable `import`ing code without specifying file extensions.
 

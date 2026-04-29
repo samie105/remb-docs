@@ -11,8 +11,8 @@ menu_path: ["Configuration"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../functions/userAgent/index.md", "title": "userAgent"}
-nav_next: {"path": "next-config-js/index.md", "title": "next.config.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/userAgent/index.md", "title": "userAgent"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/index.md", "title": "next.config.js"}
 ---
 
 # Configuration
@@ -25,18 +25,18 @@ Last updated April 23, 2026
 
 Learn how to configure your application with next.config.js.
 
-](/docs/app/api-reference/config/next-config-js)[
+](next-config-js/index.md)[
 
 ### TypeScript
 
 Next.js provides a TypeScript-first development experience for building your React application.
 
-](/docs/app/api-reference/config/typescript)[
+](typescript/index.md)[
 
 ### ESLint
 
 Learn how to use and configure the ESLint plugin to catch common issues and problems in a Next.js application.
 
-](/docs/app/api-reference/config/eslint)
+](eslint/index.md)
 
 Was this helpful?

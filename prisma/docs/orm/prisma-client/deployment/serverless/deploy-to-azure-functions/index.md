@@ -10,8 +10,8 @@ content_hash: "7451095437962905165bb31eba1ea995875f82b061fe6ce2f397813c640c132d"
 menu_path: ["Deploy to Azure Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../deploy-to-aws-lambda/index.md", "title": "Deploy to AWS Lambda"}
-nav_next: {"path": "../deploy-to-netlify/index.md", "title": "Deploy to Netlify"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-aws-lambda/index.md", "title": "Deploy to AWS Lambda"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify/index.md", "title": "Deploy to Netlify"}
 ---
 
 Learn how to deploy a Prisma Client based REST API to Azure Functions and connect to an Azure SQL database

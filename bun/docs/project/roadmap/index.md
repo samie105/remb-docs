@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:24.301Z"
 content_hash: "c204601e022a4986ce65dceadeee99b208393e0933d09b527dd08a6c5ad40517"
 menu_path: ["Roadmap"]
 section_path: []
-nav_prev: {"path": "../license/index.md", "title": "License"}
-nav_next: {"path": "../../quickstart/index.md", "title": "Quickstart"}
+nav_prev: {"path": "bun/docs/project/license/index.md", "title": "License"}
+nav_next: {"path": "bun/docs/quickstart/index.md", "title": "Quickstart"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../quickstart/index.md", "title": "Quickstart"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Bun is a project with an incredibly large scope and is still in its early days. Long-term, Bun aims to provide an all-in-one toolkit to replace the complex, fragmented toolchains common today: Node.js, Jest, Webpack, esbuild, Babel, yarn, PostCSS, etc. Refer to [Bun’s Roadmap](https://github.com/oven-sh/bun/issues/159) on GitHub to learn more about the project’s long-term plans and priorities.
 
@@ -47,10 +47,10 @@ Node.js Compatibility
 
 Previous
 
-](/docs/runtime/nodejs-compat)[
+](../../runtime/nodejs-compat/index.md)[
 
 Benchmarking
 
 Next
 
-](/docs/project/benchmarking)
+](../benchmarking/index.md)

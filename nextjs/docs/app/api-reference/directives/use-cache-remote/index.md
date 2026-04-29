@@ -11,8 +11,8 @@ menu_path: ["use cache: remote"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../use-cache-private/index.md", "title": "use cache: private"}
-nav_next: {"path": "../use-client/index.md", "title": "use client"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-cache-private/index.md", "title": "use cache: private"}
+nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-client/index.md", "title": "use client"}
 ---
 
 # use cache: remote
@@ -31,7 +31,7 @@ The `'use cache: remote'` directive lets you declaratively specify that a cached
 
 ## Usage[](#usage)
 
-To use `'use cache: remote'`, enable the [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) flag in your `next.config.ts` file:
+To use `'use cache: remote'`, enable the [`cacheComponents`](../../config/next-config-js/cacheComponents/index.md) flag in your `next.config.ts` file:
 
 next.config.ts
 
@@ -47,7 +47,7 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
-Then add `'use cache: remote'` to the functions or components where you've determined remote caching is justified. The handler implementation is configured via [`cacheHandlers`](/docs/app/api-reference/config/next-config-js/cacheHandlers), though hosting providers should typically provide this automatically. If you're self-hosting, see the `cacheHandlers` configuration reference to set up your cache storage.
+Then add `'use cache: remote'` to the functions or components where you've determined remote caching is justified. The handler implementation is configured via [`cacheHandlers`](../../config/next-config-js/cacheHandlers/index.md), though hosting providers should typically provide this automatically. If you're self-hosting, see the `cacheHandlers` configuration reference to set up your cache storage.
 
 ### When to avoid remote caching[](#when-to-avoid-remote-caching)
 
@@ -58,7 +58,7 @@ Then add `'use cache: remote'` to the functions or components where you've deter
 
 ### When remote caching makes sense[](#when-remote-caching-makes-sense)
 
-Remote caching provides the most value when content is deferred to request time (outside the static shell). This typically happens when a component accesses request values like [`cookies()`](/docs/app/api-reference/functions/cookies), [`headers()`](/docs/app/api-reference/functions/headers), or [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional), placing it inside a Suspense boundary. In this context:
+Remote caching provides the most value when content is deferred to request time (outside the static shell). This typically happens when a component accesses request values like [`cookies()`](../../functions/cookies/index.md), [`headers()`](../../functions/headers/index.md), or [`searchParams`](../../file-conventions/page/index.md#searchparams-optional), placing it inside a Suspense boundary. In this context:
 
 -   Each request executes the component and looks up the cache
 -   In serverless environments, each instance has its own ephemeral memory with low cache hit rates
@@ -90,7 +90,7 @@ Next.js provides three caching directives, each designed for different use cases
 
 ### Caching with runtime data[](#caching-with-runtime-data)
 
-Both `use cache` and `'use cache: remote'` can't access runtime values like cookies or search params directly. You can extract these values and pass them as arguments to cached functions. See [with runtime data](/docs/app/getting-started/caching#working-with-runtime-apis) for this pattern.
+Both `use cache` and `'use cache: remote'` can't access runtime values like cookies or search params directly. You can extract these values and pass them as arguments to cached functions. See [with runtime data](../../../getting-started/caching/index.md#working-with-runtime-apis) for this pattern.
 
 > **Good to know**: `use cache` stores entries in-memory. In serverless environments, memory is not shared between instances and is typically destroyed after serving a request, leading to frequent cache misses for runtime caching.
 
@@ -190,7 +190,7 @@ The pattern is the same in both examples: find the dimension with fewer unique v
 
 If the service used by `getUserProfile` cannot scale with your frontend load, you may still be able to use the `use cache` directive with a short `cacheLife` for in-memory caching. However, for most user data, you likely want to fetch directly from the source (which might already be wrapped in a key/value store as mentioned in the guidelines above).
 
-Only use [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private) if you have compliance requirements or can't refactor to pass runtime data as arguments.
+Only use [`'use cache: private'`](../use-cache-private/index.md) if you have compliance requirements or can't refactor to pass runtime data as arguments.
 
 ### Nesting rules[](#nesting-rules)
 
@@ -254,7 +254,7 @@ async function innerPrivate() {
 
 ## Examples[](#examples)
 
-The following examples demonstrate common patterns for using `'use cache: remote'`. For details about `cacheLife` parameters (`stale`, `revalidate`, `expire`), see the [`cacheLife` API reference](/docs/app/api-reference/functions/cacheLife).
+The following examples demonstrate common patterns for using `'use cache: remote'`. For details about `cacheLife` parameters (`stale`, `revalidate`, `expire`), see the [`cacheLife` API reference](../../functions/cacheLife/index.md).
 
 ### With user preferences[](#with-user-preferences)
 
@@ -321,7 +321,7 @@ async function getProductPrice(productId: string, currency: string) {
 
 ### Reducing database load[](#reducing-database-load)
 
-Cache expensive database queries, reducing load on your database. In this example, we don't access `cookies()`, `headers()`, or `searchParams`. If we had a requirement to not include these stats in the static shell, we could use [`connection()`](/docs/app/api-reference/functions/connection) to explicitly defer to request time:
+Cache expensive database queries, reducing load on your database. In this example, we don't access `cookies()`, `headers()`, or `searchParams`. If we had a requirement to not include these stats in the static shell, we could use [`connection()`](../../functions/connection/index.md) to explicitly defer to request time:
 
 app/dashboard/page.tsx
 
@@ -553,20 +553,20 @@ function RecommendationsList({ items }) {
 > **Good to know**:
 > 
 > -   Remote caches are stored in server-side cache handlers and shared across all users
-> -   `'use cache: remote'` works outside the static shell where [`use cache`](/docs/app/api-reference/directives/use-cache) may not provide server-side cache hits
-> -   Use [`cacheTag()`](/docs/app/api-reference/functions/cacheTag) and [`revalidateTag()`](/docs/app/api-reference/functions/revalidateTag) to invalidate remote caches on-demand
-> -   Use [`cacheLife()`](/docs/app/api-reference/functions/cacheLife) to configure cache expiration
-> -   For user-specific data, use [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private) instead of `'use cache: remote'`
+> -   `'use cache: remote'` works outside the static shell where [`use cache`](../use-cache/index.md) may not provide server-side cache hits
+> -   Use [`cacheTag()`](../../functions/cacheTag/index.md) and [`revalidateTag()`](../../functions/revalidateTag/index.md) to invalidate remote caches on-demand
+> -   Use [`cacheLife()`](../../functions/cacheLife/index.md) to configure cache expiration
+> -   For user-specific data, use [`'use cache: private'`](../use-cache-private/index.md) instead of `'use cache: remote'`
 > -   Remote caches reduce origin load by storing computed or fetched data server-side
 
 ## Platform Support[](#platform-support)
 
 | Deployment Option | Supported |
 | --- | --- |
-| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
-| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
-| [Static export](/docs/app/getting-started/deploying#static-export) | No |
-| [Adapters](/docs/app/getting-started/deploying#adapters) | Yes |
+| [Node.js server](../../../getting-started/deploying/index.md#nodejs-server) | Yes |
+| [Docker container](../../../getting-started/deploying/index.md#docker) | Yes |
+| [Static export](../../../getting-started/deploying/index.md#static-export) | No |
+| [Adapters](../../../getting-started/deploying/index.md#adapters) | Yes |
 
 ## Version History[](#version-history)
 
@@ -584,42 +584,42 @@ View related API references.
 
 Learn how to use the "use cache" directive to cache data in your Next.js application.
 
-](/docs/app/api-reference/directives/use-cache)[
+](../use-cache/index.md)[
 
 ### use cache: private
 
 Learn how to use the "use cache: private" directive to cache functions that access runtime request APIs.
 
-](/docs/app/api-reference/directives/use-cache-private)[
+](../use-cache-private/index.md)[
 
 ### cacheComponents
 
 Learn how to enable the cacheComponents flag in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheComponents)[
+](../../config/next-config-js/cacheComponents/index.md)[
 
 ### cacheHandlers
 
 Configure custom cache handlers for use cache directives in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheHandlers)[
+](../../config/next-config-js/cacheHandlers/index.md)[
 
 ### cacheLife
 
 Learn how to use the cacheLife function to set the cache expiration time for a cached function or component.
 
-](/docs/app/api-reference/functions/cacheLife)[
+](../../functions/cacheLife/index.md)[
 
 ### cacheTag
 
 Learn how to use the cacheTag function to manage cache invalidation in your Next.js application.
 
-](/docs/app/api-reference/functions/cacheTag)[
+](../../functions/cacheTag/index.md)[
 
 ### connection
 
 API Reference for the connection function.
 
-](/docs/app/api-reference/functions/connection)
+](../../functions/connection/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:40.446Z"
 content_hash: "6a03c55fdb78ce2ddd4f88b54d83404225e641ac154f29084482f6d5f5ff6a68"
 menu_path: ["Database","Database","Extensions","Extensions","Overview","Overview"]
 section_path: ["Database","Database","Extensions","Extensions","Overview","Overview"]
-nav_prev: {"path": "../drizzle/index.md", "title": "Drizzle"}
-nav_next: {"path": "http/index.md", "title": "http: RESTful Client"}
+nav_prev: {"path": "supabase/docs/guides/database/drizzle/index.md", "title": "Drizzle"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/http/index.md", "title": "http: RESTful Client"}
 ---
 
 # 
@@ -162,13 +162,13 @@ hypopg
 
 Hypothetical indexes for PostgreSQL
 
-](/docs/guides/database/extensions/hypopg)[
+](hypopg/index.md)[
 
 http
 
 HTTP client for PostgreSQL, allows web page retrieval inside the database.
 
-](/docs/guides/database/extensions/http)[
+](http/index.md)[
 
 insert\_username
 
@@ -186,7 +186,7 @@ index\_advisor
 
 Optimize query performance with automatic index recommendation
 
-](/docs/guides/database/extensions/index_advisor)[
+](index_advisor/index.md)[
 
 intarray
 
@@ -222,7 +222,7 @@ pg\_cron
 
 Job scheduler for PostgreSQL
 
-](/docs/guides/database/extensions/pg_cron)[
+](pg_cron/index.md)[
 
 pg\_freespacemap
 
@@ -234,25 +234,25 @@ pg\_graphql
 
 Pg\_graphql: GraphQL support
 
-](/docs/guides/database/extensions/pg_graphql)[
+](pg_graphql/index.md)[
 
 pg\_hashids
 
 Pg\_hashids
 
-](/docs/guides/database/extensions/pg_hashids)[
+](pg_hashids/index.md)[
 
 pg\_jsonschema
 
 Pg\_jsonschema
 
-](/docs/guides/database/extensions/pg_jsonschema)[
+](pg_jsonschema/index.md)[
 
 pg\_net
 
 Async HTTP
 
-](/docs/guides/database/extensions/pg_net)[
+](pg_net/index.md)[
 
 pg\_partman
 
@@ -270,7 +270,7 @@ pg\_stat\_statements
 
 Track execution statistics of all SQL statements executed
 
-](/docs/guides/database/extensions/pg_stat_statements)[
+](pg_stat_statements/index.md)[
 
 pg\_surgery
 
@@ -288,7 +288,7 @@ pgaudit
 
 Provides auditing functionality
 
-](/docs/guides/database/extensions/pgaudit)[
+](pgaudit/index.md)[
 
 pg\_walinspect
 
@@ -308,13 +308,13 @@ JSON Web Token API for Postgresql
 
 Deprecated in Postgres 17
 
-](/docs/guides/database/extensions/pgjwt)[
+](pgjwt/index.md)[
 
 pgroonga
 
 Super fast and all languages supported full text search index based on Groonga
 
-](/docs/guides/database/extensions/pgroonga)[
+](pgroonga/index.md)[
 
 pgroonga\_database
 
@@ -326,7 +326,7 @@ pgrouting
 
 PgRouting Extension
 
-](/docs/guides/database/extensions/pgrouting)[
+](pgrouting/index.md)[
 
 pgrowlocks
 
@@ -338,7 +338,7 @@ pgsodium
 
 Postgres extension for libsodium functions
 
-](/docs/guides/database/extensions/pgsodium)[
+](pgsodium/index.md)[
 
 pgstattuple
 
@@ -350,7 +350,7 @@ pgtap
 
 Unit testing for PostgreSQL
 
-](/docs/guides/database/extensions/pgtap)[
+](pgtap/index.md)[
 
 plcoffee
 
@@ -384,7 +384,7 @@ plpgsql\_check
 
 Extended check for plpgsql functions
 
-](/docs/guides/database/extensions/plpgsql_check)[
+](plpgsql_check/index.md)[
 
 plv8
 
@@ -392,19 +392,19 @@ PL/JavaScript (v8) trusted procedural language
 
 Deprecated in Postgres 17
 
-](/docs/guides/database/extensions/plv8)[
+](plv8/index.md)[
 
 postgis
 
 PostGIS geometry and geography spatial types and functions
 
-](/docs/guides/database/extensions/postgis)[
+](postgis/index.md)[
 
 postgres\_fdw
 
 Foreign-data wrapper for remote PostgreSQL servers
 
-](/docs/guides/database/extensions/postgres_fdw)[
+](postgres_fdw/index.md)[
 
 refint
 
@@ -416,7 +416,7 @@ rum
 
 GIN-like index for text search
 
-](/docs/guides/database/extensions/rum)[
+](rum/index.md)[
 
 seg
 
@@ -448,7 +448,7 @@ Enables scalable inserts and complex queries for time-series data
 
 Deprecated in Postgres 17
 
-](/docs/guides/database/extensions/timescaledb)[
+](timescaledb/index.md)[
 
 tsm\_system\_rows
 
@@ -472,19 +472,19 @@ uuid-ossp
 
 Generate universally unique identifiers (UUIDs)
 
-](/docs/guides/database/extensions/uuid-ossp)[
+](uuid-ossp/index.md)[
 
 vector
 
 Vector data type with similarity search
 
-](/docs/guides/database/extensions/pgvector)[
+](pgvector/index.md)[
 
 pg\_repack
 
 Optimize physical storage and remove bloat from tables and indexes
 
-](/docs/guides/database/extensions/pg_repack)[
+](pg_repack/index.md)[
 
 wrappers
 

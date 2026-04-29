@@ -10,8 +10,8 @@ content_hash: "657f5b9b138483379a9805aa033e0920ce1c010117dac3c29823a1b696e51543"
 menu_path: ["Get Started with Drizzle and PlanetScale in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../pglite-new/index.md", "title": "Get Started with Drizzle and PGlite"}
-nav_next: {"path": "../planetscale-new/index.md", "title": "Get Started with Drizzle and PlanetScale"}
+nav_prev: {"path": "drizzle/docs/get-started/pglite-new/index.md", "title": "Get Started with Drizzle and PGlite"}
+nav_next: {"path": "drizzle/docs/get-started/planetscale-new/index.md", "title": "Get Started with Drizzle and PlanetScale"}
 ---
 
 ## Get Started with Drizzle and PlanetScale in existing project

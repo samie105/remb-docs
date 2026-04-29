@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:57.746Z"
 content_hash: "d9bc1471cd717bfdbfb79609151d941f80511904e3fda6d042d5b898cf2dd5db"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Size","Disk Size"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk Size","Disk Size"]
-nav_prev: {"path": "../disk-iops/index.md", "title": "Manage Disk IOPS usage"}
-nav_next: {"path": "../disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-iops/index.md", "title": "Manage Disk IOPS usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Manage Disk size usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-Each database has a dedicated [disk](/docs/guides/platform/compute-and-disk#disk). You are charged for the provisioned disk size.
+Each database has a dedicated [disk](../../compute-and-disk/index.md#disk). You are charged for the provisioned disk size.
 
-Disk size is not relevant for the Free Plan. Instead Free Plan customers are limited by [Database size](/docs/guides/platform/database-size).
+Disk size is not relevant for the Free Plan. Instead Free Plan customers are limited by [Database size](../../database-size/index.md).
 
 ## How charges are calculated[#](#how-charges-are-calculated)
 
@@ -35,7 +35,7 @@ Usage is shown as "Disk Size GB-Hrs" on your invoice.
 
 ## Pricing[#](#pricing)
 
-Pricing depends on the [disk type](/docs/guides/platform/compute-and-disk#disk-types), with gp3 being the default disk type.
+Pricing depends on the [disk type](../../compute-and-disk/index.md#disk-types), with gp3 being the default disk type.
 
 ### General purpose disks (gp3)[#](#general-purpose-disks-gp3)
 
@@ -73,7 +73,7 @@ Custom
 
 Custom
 
-Launching a Read Replica creates an additional database with its own dedicated disk. You are charged from the first byte of provisioned disk for the Read Replica. Refer to [Manage Read Replica usage](/docs/guides/platform/manage-your-usage/read-replicas) for details on billing.
+Launching a Read Replica creates an additional database with its own dedicated disk. You are charged from the first byte of provisioned disk for the Read Replica. Refer to [Manage Read Replica usage](../read-replicas/index.md) for details on billing.
 
 ### High performance disks (io2)[#](#high-performance-disks-io2)
 
@@ -253,14 +253,14 @@ In the Disk size section, you can see how much disk size your projects have prov
 
 ### Disk size distribution[#](#disk-size-distribution)
 
-To see how your disk usage is distributed across Database, WAL, and System categories, refer to [Disk size distribution](/docs/guides/platform/database-size#disk-size-distribution).
+To see how your disk usage is distributed across Database, WAL, and System categories, refer to [Disk size distribution](../../database-size/index.md#disk-size-distribution).
 
 ## Reduce Disk size[#](#reduce-disk-size)
 
-To see how you can downsize your disk, refer to [Reducing disk size](/docs/guides/platform/database-size#reducing-disk-size)
+To see how you can downsize your disk, refer to [Reducing disk size](../../database-size/index.md#reducing-disk-size)
 
 ## Exceeding Quotas[#](#exceeding-quotas)
 
-If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
+If you are on a paid plan and have [Spend Cap](../../cost-control/index.md#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
-When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](../../cost-control/index.md#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](../../billing-faq/index.md#fair-use-policy).

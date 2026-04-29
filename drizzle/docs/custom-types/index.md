@@ -10,8 +10,8 @@ content_hash: "f24bbbbe03aa87902b11c1a638fd2f7b197a22bc9e18de55aef0063820a137a0"
 menu_path: ["Common way of defining custom types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../read-replicas/index.md", "title": "Read Replicas"}
-nav_next: {"path": "../goodies/index.md", "title": "Drizzle ORM - Goodies"}
+nav_prev: {"path": "drizzle/docs/read-replicas/index.md", "title": "Read Replicas"}
+nav_next: {"path": "drizzle/docs/goodies/index.md", "title": "Drizzle ORM - Goodies"}
 ---
 
 ## Common way of defining custom types

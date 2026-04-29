@@ -11,8 +11,8 @@ menu_path: ["Building public pages"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../progressive-web-apps/index.md", "title": "How to build a Progressive Web Application (PWA) with Next.js"}
-nav_next: {"path": "../redirecting/index.md", "title": "How to handle redirects in Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/progressive-web-apps/index.md", "title": "How to build a Progressive Web Application (PWA) with Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/redirecting/index.md", "title": "How to handle redirects in Next.js"}
 ---
 
 # Building public pages
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 Public pages show the same content to every user. Common examples include landing pages, marketing pages, and product pages.
 
-Since data is shared, these kind of pages can be [prerendered](/docs/app/glossary#prerendering) ahead of time and reused. This leads to faster page loads and lower server costs.
+Since data is shared, these kind of pages can be [prerendered](../../glossary/index.md#prerendering) ahead of time and reused. This leads to faster page loads and lower server costs.
 
 This guide will show you how to build public pages that share data across users.
 
@@ -29,7 +29,7 @@ This guide will show you how to build public pages that share data across users.
 
 As an example, we'll build a product list page.
 
-We'll start with a static header, add a product list with async external data, and learn how to render it without blocking the response. Finally, we'll add a user-specific promotion banner without switching the entire page to [dynamic rendering](/docs/app/glossary#dynamic-rendering).
+We'll start with a static header, add a product list with async external data, and learn how to render it without blocking the response. Finally, we'll add a user-specific promotion banner without switching the entire page to [dynamic rendering](../../glossary/index.md#dynamic-rendering).
 
 You can find the resources used in this example here:
 
@@ -62,9 +62,9 @@ export default async function Page() {
 
 The `<Header />` component doesn't depend on any inputs that change between requests, such as: external data, request headers, route params, the current time, or random values.
 
-Since its output never changes and can be determined ahead of time, this kind of component is called a **static** component. With no reason to wait for a request, Next.js can safely **prerender** the page at [build time](/docs/app/glossary#build-time).
+Since its output never changes and can be determined ahead of time, this kind of component is called a **static** component. With no reason to wait for a request, Next.js can safely **prerender** the page at [build time](../../glossary/index.md#build-time).
 
-We can confirm this by running [`next build`](/docs/app/api-reference/cli/next#next-build-options).
+We can confirm this by running [`next build`](../../api-reference/cli/next/index.md#next-build-options).
 
 Terminal
 
@@ -118,18 +118,18 @@ However, if this component is rendered at request time, fetching its data will d
 
 Even though the header is rendered instantly, it can't be sent to the browser until the product list has finished fetching.
 
-To protect us from this performance cliff, Next.js will show us a [warning](/docs/messages/blocking-route) the first time we **await** data: `Blocking data was accessed outside of Suspense`
+To protect us from this performance cliff, Next.js will show us a [warning](../../../messages/blocking-route/index.md) the first time we **await** data: `Blocking data was accessed outside of Suspense`
 
 At this point, we have to decide how to **unblock** the response. Either:
 
--   [**Cache**](/docs/app/glossary#cache-components) the component, so it becomes **stable** and can be prerendered with the rest of the page.
--   [**Stream**](/docs/app/glossary#streaming) the component, so it becomes **non-blocking** and the rest of the page doesn't have to wait for it.
+-   [**Cache**](../../glossary/index.md#cache-components) the component, so it becomes **stable** and can be prerendered with the rest of the page.
+-   [**Stream**](../../glossary/index.md#streaming) the component, so it becomes **non-blocking** and the rest of the page doesn't have to wait for it.
 
 In our case, the product catalog is shared across all users, so caching is the right choice.
 
 ### Cache components[](#cache-components)
 
-We can mark a function as cacheable using the [`'use cache'`](/docs/app/api-reference/directives/use-cache) directive.
+We can mark a function as cacheable using the [`'use cache'`](../../api-reference/directives/use-cache/index.md) directive.
 
 app/products/page.tsx
 
@@ -156,7 +156,7 @@ export default async function Page() {
 }
 ```
 
-This turns it into a [cache component](/docs/app/glossary#cache-components). The first time it runs, whatever we return will be cached and reused.
+This turns it into a [cache component](../../glossary/index.md#cache-components). The first time it runs, whatever we return will be cached and reused.
 
 If a cache component's inputs are available **before** the request arrives, it can be prerendered just like a static component.
 
@@ -214,7 +214,7 @@ Last time, the data was shared, so it could be cached. This time, the promotion 
 
 Adding dynamic content doesn't mean we have to go back to a fully blocking render. We can unblock the response with streaming.
 
-Next.js supports streaming by default. We can use a [Suspense boundary](/docs/app/glossary#suspense-boundary) to tell the framework where to slice the streamed response into _chunks_, and what fallback UI to show while content loads.
+Next.js supports streaming by default. We can use a [Suspense boundary](../../glossary/index.md#suspense-boundary) to tell the framework where to slice the streamed response into _chunks_, and what fallback UI to show while content loads.
 
 app/products/page.tsx
 
@@ -249,7 +249,7 @@ export default async function Page() {
 
 The fallback is prerendered alongside the rest of our static and cached content. The inner component streams in later, once its async work completes.
 
-With this change, Next.js can separate prerenderable work from request-time work and the route becomes [partially prerendered](/docs/app/glossary#partial-prerendering-ppr).
+With this change, Next.js can separate prerenderable work from request-time work and the route becomes [partially prerendered](../../glossary/index.md#partial-prerendering-ppr).
 
 Again, we can confirm this by running `next build`:
 
@@ -263,9 +263,9 @@ Route (app)      Revalidate  Expire
 ◐  (Partial Prerender)  Prerendered as static HTML with dynamic server-streamed content
 ```
 
-At [**build time**](/docs/app/glossary#build-time), most of the page, including the header, product list and promotion fallback, is rendered, cached and pushed to a content delivery network.
+At [**build time**](../../glossary/index.md#build-time), most of the page, including the header, product list and promotion fallback, is rendered, cached and pushed to a content delivery network.
 
-At [**request time**](/docs/app/glossary#dynamic-rendering), the prerendered part is served instantly from a CDN node close to the user.
+At [**request time**](../../glossary/index.md#dynamic-rendering), the prerendered part is served instantly from a CDN node close to the user.
 
 In parallel, the user specific promotion is rendered on the server, streamed to the client, and swapped into the fallback slot.
 

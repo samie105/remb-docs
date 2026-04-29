@@ -10,8 +10,8 @@ content_hash: "0070b03596fd6a6ce854aa8d9651048238980492969e2783be7634cb25452f98"
 menu_path: ["Error Reference"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../system-requirements/index.md", "title": "System requirements"}
-nav_next: {"path": "../errors/index.md", "title": "Prisma Error Reference"}
+nav_prev: {"path": "prisma/docs/orm/reference/system-requirements/index.md", "title": "System requirements"}
+nav_next: {"path": "prisma/docs/orm/reference/errors/index.md", "title": "Prisma Error Reference"}
 ---
 
 For more information about how to work with exceptions and error codes, see [Handling exceptions and errors](../../prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md).

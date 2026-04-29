@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:25.159Z"
 content_hash: "53574aa62d3fc364fa30ed035449dbd41a0b54308fdcc96494403eeb85b2a8ff"
 menu_path: ["Development tips"]
 section_path: []
-nav_prev: {"path": "../development-environment/index.md", "title": "Development Environment"}
-nav_next: {"path": "../ephemeral-storage/index.md", "title": "File Storage"}
+nav_prev: {"path": "supabase/docs/guides/functions/development-environment/index.md", "title": "Development Environment"}
+nav_next: {"path": "supabase/docs/guides/functions/ephemeral-storage/index.md", "title": "File Storage"}
 ---
 
 # 
@@ -49,7 +49,7 @@ We recommend using hyphens to name functions because hyphens are the most URL-fr
 
 ### Organizing your Edge Functions[#](#organizing-your-edge-functions)
 
-We recommend developing "fat functions". This means that you should develop few large functions, rather than many small functions. One common pattern when developing Functions is that you need to share code between two or more Functions. To do this, you can store any shared code in a folder prefixed with an underscore (`_`). We also recommend a separate folder for [Unit Tests](/docs/guides/functions/unit-test) including the name of the function followed by a `-test` suffix. We recommend this folder structure:
+We recommend developing "fat functions". This means that you should develop few large functions, rather than many small functions. One common pattern when developing Functions is that you need to share code between two or more Functions. To do this, you can store any shared code in a folder prefixed with an underscore (`_`). We also recommend a separate folder for [Unit Tests](../unit-test/index.md) including the name of the function followed by a `-test` suffix. We recommend this folder structure:
 
 ```
 1└── supabase2    ├── functions3    │   ├── import_map.json # A top-level import map to use across functions.4    │   ├── _shared5    │   │   ├── supabaseAdmin.ts # Supabase client with SERVICE_ROLE key.6    │   │   └── supabaseClient.ts # Supabase client with ANON key.7    │   │   └── cors.ts # Reusable CORS headers.8    │   ├── function-one # Use hyphens to name functions.9    │   │   └── index.ts10    │   └── function-two11    │   │   └── index.ts12    │   └── tests13    │       └── function-one-test.ts14    │       └── function-two-test.ts15    ├── migrations16    └── config.toml
@@ -87,6 +87,6 @@ The `supabase-js` library provides several error types that you can use to handl
 
 ### Database Functions vs Edge Functions[#](#database-functions-vs-edge-functions)
 
-For data-intensive operations we recommend using [Database Functions](/docs/guides/database/functions), which are executed within your database and can be called remotely using the [REST and GraphQL API](/docs/guides/api).
+For data-intensive operations we recommend using [Database Functions](../../database/functions/index.md), which are executed within your database and can be called remotely using the [REST and GraphQL API](../../api/index.md).
 
-For use-cases which require low-latency we recommend [Edge Functions](/docs/guides/functions), which are globally-distributed and can be written in TypeScript.
+For use-cases which require low-latency we recommend [Edge Functions](../index.md), which are globally-distributed and can be written in TypeScript.

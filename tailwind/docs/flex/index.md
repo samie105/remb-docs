@@ -10,8 +10,8 @@ content_hash: "caa16fd63e4eed3d284feca293740f07126d8d80d39a36367bc22fcf7687e1ec"
 menu_path: ["flex"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../flex-wrap/index.md", "title": "flex-wrap"}
-nav_next: {"path": "../flex-grow/index.md", "title": "flex-grow"}
+nav_prev: {"path": "tailwind/docs/flex-wrap/index.md", "title": "flex-wrap"}
+nav_next: {"path": "tailwind/docs/flex-grow/index.md", "title": "flex-grow"}
 ---
 
 # flex
@@ -123,7 +123,7 @@ Prefix a `flex` utility with a breakpoint variant like `md:` to only apply the u
 <div class="flex-none md:flex-1 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

@@ -10,8 +10,8 @@ content_hash: "8e7199beb82d44e1793c3fdebe5e2153379c2c5e6b849a12eb2a419f6aeea1a6"
 menu_path: ["Table schemas"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../views/index.md", "title": "Views"}
-nav_next: {"path": "../relations-v2/index.md", "title": "Drizzle relations"}
+nav_prev: {"path": "drizzle/docs/views/index.md", "title": "Views"}
+nav_next: {"path": "drizzle/docs/relations-v2/index.md", "title": "Drizzle relations"}
 ---
 
 ## Table schemas

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:14.825Z"
 content_hash: "262d75a6cca8650668264d05eb629995aa8423dc18524abc302fdf3d786a4a59"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","SSL Enforcement","SSL Enforcement"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","SSL Enforcement","SSL Enforcement"]
-nav_prev: {"path": "../regions/index.md", "title": "Available regions"}
-nav_next: {"path": "../sso/index.md", "title": "Enable SSO for Your Organization"}
+nav_prev: {"path": "supabase/docs/guides/platform/regions/index.md", "title": "Available regions"}
+nav_next: {"path": "supabase/docs/guides/platform/sso/index.md", "title": "Enable SSO for Your Organization"}
 ---
 
 # 
@@ -43,9 +43,9 @@ You can also manage SSL enforcement using the Management API:
 
 To get started:
 
-1.  [Install](/docs/guides/cli) the Supabase CLI 1.37.0+.
+1.  [Install](../../cli/index.md) the Supabase CLI 1.37.0+.
 2.  [Log in](/docs/guides/getting-started/local-development#log-in-to-the-supabase-cli) to your Supabase account using the CLI.
-3.  Ensure that you have [Owner or Admin permissions](/docs/guides/platform/access-control#manage-team-members) for the project that you are enabling SSL enforcement.
+3.  Ensure that you have [Owner or Admin permissions](../access-control/index.md#manage-team-members) for the project that you are enabling SSL enforcement.
 
 ### Check enforcement status[#](#check-enforcement-status)
 

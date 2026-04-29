@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:24.072Z"
 content_hash: "d7d873032c25068892136d6fc24fabb33f8b6ad6d10a62222a2b51a5fa70fc61"
 menu_path: ["Standalone HTML"]
 section_path: []
-nav_prev: {"path": "../plugins/index.md", "title": "Plugins"}
-nav_next: {"path": "../../feedback/index.md", "title": "Feedback"}
+nav_prev: {"path": "bun/docs/bundler/plugins/index.md", "title": "Plugins"}
+nav_next: {"path": "bun/docs/feedback/index.md", "title": "Feedback"}
 ---
 
 Bun can bundle your entire frontend into a **single `.html` file** with zero external dependencies. JavaScript, TypeScript, JSX, CSS, images, fonts, videos, WASM — everything gets inlined into one file.

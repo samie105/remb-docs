@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:23.304Z"
 content_hash: "858fbfdbc5d53a736c6560a2fd127cf9031aa6f1fc6eec1639078fc0a480ddda"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        LLM Caching","→","LLM Caching"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        User Guides","→","User Guides","→\n      \n        LLM Caching","→","LLM Caching"]
-nav_prev: {"path": "../hybrid_queries/index.md", "title": "Querying with RedisVL"}
-nav_next: {"path": "../message_history/index.md", "title": "LLM Message History"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/hybrid_queries/index.md", "title": "Querying with RedisVL"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/user_guide/message_history/index.md", "title": "LLM Message History"}
 ---
 
 # LLM Caching

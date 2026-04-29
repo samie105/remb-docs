@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Guides"}
-nav_next: {"path": "../analytics/index.md", "title": "How to add analytics to your Next.js application"}
+nav_prev: {"path": "nextjs/docs/app/guides/index.md", "title": "Guides"}
+nav_next: {"path": "nextjs/docs/app/guides/analytics/index.md", "title": "How to add analytics to your Next.js application"}
 ---
 
 # How to set up your Next.js project for AI coding agents
@@ -45,7 +45,7 @@ The `AGENTS.md` file at the root of your project tells agents to read these bund
 
 ### New projects[](#new-projects)
 
-[`create-next-app`](/docs/app/api-reference/cli/create-next-app) generates `AGENTS.md` and `CLAUDE.md` automatically. No additional setup is needed:
+[`create-next-app`](../../api-reference/cli/create-next-app/index.md) generates `AGENTS.md` and `CLAUDE.md` automatically. No additional setup is needed:
 
 #### pnpm
 
@@ -129,6 +129,6 @@ The bundled docs include guides, API references, and file conventions for the Ap
 
 Learn how to use Next.js MCP support to allow coding agents access to your application state
 
-](/docs/app/guides/mcp)
+](../mcp/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:46.462Z"
 content_hash: "43957de12c413b0274ff5a19edf79c3d731dff02b6b20d5113cfff06c83341d2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create an Essentials database","→","Create an Essentials database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Create a database","→","Create a database","→\n      \n        Create an Essentials database","→","Create an Essentials database"]
-nav_prev: {"path": "../../connect/insight-cloud/index.md", "title": "Use Redis Insight on Redis Cloud"}
-nav_next: {"path": "../create-flex-database/index.md", "title": "Create a Flex database"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/connect/insight-cloud/index.md", "title": "Use Redis Insight on Redis Cloud"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/create-database/create-flex-database/index.md", "title": "Create a Flex database"}
 ---
 
 # Create an Essentials database
@@ -51,7 +51,7 @@ To create a database in your Redis Cloud account:
     [![The database name, cloud vendor, version, region, type, and durability settings.](/docs/latest/images/rc/create-database-essentials-cloud-vendor.png)](/docs/latest/images/rc/create-database-essentials-cloud-vendor.png)
 4.  Select **RAM** or **Flex** to choose between a database that uses only RAM or one that uses both RAM and Flash memory.
     
-    Choose Flex for larger datasets and cost-efficient scale when you can tolerate single-digit millisecond latency for warm data. Choose RAM when you need the absolute lowest latency for all data. To learn more about Flex, see [Create a Flex database](/docs/latest/operate/rc/databases/create-database/create-flex-database/).
+    Choose Flex for larger datasets and cost-efficient scale when you can tolerate single-digit millisecond latency for warm data. Choose RAM when you need the absolute lowest latency for all data. To learn more about Flex, see [Create a Flex database](../create-flex-database/index.md).
     
 5.  Redis will generate a database name for you. If you want to change it, you can do so in the **Name** field.
     

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:10.338Z"
 content_hash: "2eae00bc8ec71b6cde89d26439639544f6a10d32cfaec1c4cdccf20350862c05"
 menu_path: ["No static path found for requested path."]
 section_path: []
-nav_prev: {"path": "../no-matching-renderer/index.md", "title": "No matching renderer found."}
-nav_next: {"path": "../no-prerendered-routes-with-domains/index.md", "title": "Prerendered routes aren't supported when internationalization domains are enabled."}
+nav_prev: {"path": "astro/en/reference/errors/no-matching-renderer/index.md", "title": "No matching renderer found."}
+nav_next: {"path": "astro/en/reference/errors/no-prerendered-routes-with-domains/index.md", "title": "Prerendered routes aren't supported when internationalization domains are enabled."}
 ---
 
 # No static path found for requested path.
@@ -21,10 +21,10 @@ nav_next: {"path": "../no-prerendered-routes-with-domains/index.md", "title": "P
 
 [Section titled “What went wrong?”](#what-went-wrong)
 
-A [dynamic route](/en/guides/routing/#dynamic-routes) was matched, but no corresponding path was found for the requested parameters. This is often caused by a typo in either the generated or the requested path.
+A [dynamic route](../../../guides/routing/index.md#dynamic-routes) was matched, but no corresponding path was found for the requested parameters. This is often caused by a typo in either the generated or the requested path.
 
 **See Also:**
 
-*   [getStaticPaths()](/en/reference/routing-reference/#getstaticpaths)
+*   [getStaticPaths()](../../routing-reference/index.md#getstaticpaths)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:22.654Z"
 content_hash: "bf83714aa6e1c0f11a3919c656c9a63379c7520f503f8b0efc32e309e5ee592f"
 menu_path: ["@astrojs/\n\t\t\t\t\tpreact"]
 section_path: []
-nav_prev: {"path": "../alpinejs/index.md", "title": "@astrojs/\n\t\t\t\t\talpinejs"}
-nav_next: {"path": "../react/index.md", "title": "@astrojs/\n\t\t\t\t\treact"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/alpinejs/index.md", "title": "@astrojs/\n\t\t\t\t\talpinejs"}
+nav_next: {"path": "astro/en/guides/integrations-guide/react/index.md", "title": "@astrojs/\n\t\t\t\t\treact"}
 ---
 
 # @astrojs/ preact
 
 v5.1.1 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/preact/) [npm](https://www.npmjs.com/package/@astrojs/preact) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/preact/CHANGELOG.md)
 
-This **[Astro integration](/en/guides/integrations/)** enables rendering and client-side hydration for your [Preact](https://preactjs.com/) components.
+This **[Astro integration](../../integrations/index.md)** enables rendering and client-side hydration for your [Preact](https://preactjs.com/) components.
 
 ## Why Preact?
 
@@ -89,13 +89,13 @@ And add the following code to the `tsconfig.json` file.
 
 [Section titled “Usage”](#usage)
 
-To use your first Preact component in Astro, head to our [UI framework documentation](/en/guides/framework-components/#using-framework-components). You’ll explore:
+To use your first Preact component in Astro, head to our [UI framework documentation](../../framework-components/index.md#using-framework-components). You’ll explore:
 
 *   📦 how framework components are loaded,
 *   💧 client-side hydration options, and
 *   🤝 opportunities to mix and nest frameworks together
 
-Also check our [Astro Integration Documentation](/en/guides/integrations/) for more on integrations.
+Also check our [Astro Integration Documentation](../../integrations/index.md) for more on integrations.
 
 ## Configuration
 
@@ -196,34 +196,34 @@ export default defineConfig({  // Enable many frameworks to support all differen
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -231,34 +231,34 @@ export default defineConfig({  // Enable many frameworks to support all differen
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

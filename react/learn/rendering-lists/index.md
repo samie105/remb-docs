@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:18.403Z"
 content_hash: "22511450b8c4b7c4ed3482a33e7fcd03220d755d3fbfdab9bee6db3b00a8dbf8"
 menu_path: ["Rendering Lists"]
 section_path: []
-nav_prev: {"path": "../conditional-rendering/index.md", "title": "Conditional Rendering"}
-nav_next: {"path": "../keeping-components-pure/index.md", "title": "Keeping Components Pure"}
+nav_prev: {"path": "react/learn/conditional-rendering/index.md", "title": "Conditional Rendering"}
+nav_next: {"path": "react/learn/keeping-components-pure/index.md", "title": "Keeping Components Pure"}
 ---
 
 You will often want to display multiple similar components from a collection of data. You can use the [JavaScript array methods](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array#) to manipulate an array of data. On this page, you’ll use [`filter()`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) and [`map()`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map) with React to filter and transform your array of data into an array of components.

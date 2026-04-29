@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:10.105Z"
 content_hash: "b1e6c7f608b7d4bfca099d5709c0a5c4877613fdeee2d1be44c71909fc6eb431"
 menu_path: ["Set environment variables"]
 section_path: []
-nav_prev: {"path": "../read-env/index.md", "title": "Read environment variables"}
-nav_next: {"path": "../shell/index.md", "title": "Run a Shell Command"}
+nav_prev: {"path": "bun/docs/guides/runtime/read-env/index.md", "title": "Read environment variables"}
+nav_next: {"path": "bun/docs/guides/runtime/shell/index.md", "title": "Run a Shell Command"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../shell/index.md", "title": "Run a Shell Command"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The current environment variables can be accessed via `process.env` or `Bun.env`.
 
@@ -69,7 +69,7 @@ FOO=helloworld bun run dev
 
 * * *
 
-See [Docs > Runtime > Environment variables](/docs/runtime/environment-variables) for more information on using environment variables with Bun.
+See [Docs > Runtime > Environment variables](../../../runtime/environment-variables/index.md) for more information on using environment variables with Bun.
 
 Was this page helpful?
 
@@ -81,10 +81,10 @@ Set a time zone in Bun
 
 Previous
 
-](/docs/guides/runtime/timezone)[
+](../timezone/index.md)[
 
 Read environment variables
 
 Next
 
-](/docs/guides/runtime/read-env)
+](../read-env/index.md)

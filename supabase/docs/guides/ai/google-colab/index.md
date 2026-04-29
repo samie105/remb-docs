@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:37.798Z"
 content_hash: "0f95b0240c13e60078551b5d43f9938fbf4a40080c9c20823022ae670afa1341"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Google Colab","Google Colab"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Google Colab","Google Colab"]
-nav_prev: {"path": "../going-to-prod/index.md", "title": "Going to Production"}
-nav_next: {"path": "../hugging-face/index.md", "title": "Hugging Face Inference API"}
+nav_prev: {"path": "supabase/docs/guides/ai/going-to-prod/index.md", "title": "Going to Production"}
+nav_next: {"path": "supabase/docs/guides/ai/hugging-face/index.md", "title": "Hugging Face Inference API"}
 ---
 
 # 
@@ -25,7 +25,7 @@ Use Google Colab to manage your Supabase Vector store.
 
 [![](/docs/img/ai/colab-badge.svg)](https://colab.research.google.com/github/supabase/supabase/blob/master/examples/ai/vector_hello_world.ipynb)
 
-Google Colab is a hosted Jupyter Notebook service. It provides free access to computing resources, including GPUs and TPUs, and is well-suited to machine learning, data science, and education. We can use Colab to manage collections using [Supabase Vecs](/docs/guides/ai/vecs-python-client).
+Google Colab is a hosted Jupyter Notebook service. It provides free access to computing resources, including GPUs and TPUs, and is well-suited to machine learning, data science, and education. We can use Colab to manage collections using [Supabase Vecs](../vecs-python-client/index.md).
 
 In this tutorial we'll connect to a database running on the Supabase [platform](/dashboard/). If you don't already have a database, you can create one here: [database.new](https://database.new).
 
@@ -37,7 +37,7 @@ Start by visiting [colab.research.google.com](https://colab.research.google.com/
 
 ## Install Vecs[#](#install-vecs)
 
-We'll use the Supabase Vector client, [Vecs](/docs/guides/ai/vecs-python-client), to manage our collections.
+We'll use the Supabase Vector client, [Vecs](../vecs-python-client/index.md), to manage our collections.
 
 At the top of the notebook add the notebook paste the following code and hit the "execute" button (`ctrl+enter`):
 

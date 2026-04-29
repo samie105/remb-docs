@@ -11,15 +11,15 @@ menu_path: ["serverExternalPackages"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../rewrites/index.md", "title": "rewrites"}
-nav_next: {"path": "../trailingSlash/index.md", "title": "trailingSlash"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/rewrites/index.md", "title": "rewrites"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/trailingSlash/index.md", "title": "trailingSlash"}
 ---
 
 # serverExternalPackages
 
 Last updated April 23, 2026
 
-Opt-out specific dependencies from being included in the automatic bundling of the [`bundlePagesRouterDependencies`](/docs/pages/api-reference/config/next-config-js/bundlePagesRouterDependencies) option.
+Opt-out specific dependencies from being included in the automatic bundling of the [`bundlePagesRouterDependencies`](../bundlePagesRouterDependencies/index.md) option.
 
 These pages will then use native Node.js `require` to resolve the dependency.
 

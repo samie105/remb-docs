@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:32.131Z"
 content_hash: "5731032b61d6544ca154af1e6f23db4819d0d5e5525405f41b9bbd3c0e5af686"
 menu_path: ["Feedback"]
 section_path: []
-nav_prev: {"path": "../bundler/standalone-html/index.md", "title": "Standalone HTML"}
-nav_next: {"path": "../guides/index.md", "title": "Guides"}
+nav_prev: {"path": "bun/docs/bundler/standalone-html/index.md", "title": "Standalone HTML"}
+nav_next: {"path": "bun/docs/guides/index.md", "title": "Guides"}
 ---
 
 # To revert back to the stable

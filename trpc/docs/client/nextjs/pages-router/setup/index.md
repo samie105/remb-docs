@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:53.265Z"
 content_hash: "563646ebab78080c2a1ccb88af4ff8d989866bfba4be4d4d9fe243fb9c096d75"
 menu_path: ["Set up with Next.js Pages Router"]
 section_path: []
-nav_prev: {"path": "../server-side-helpers/index.md", "title": "Server-Side Helpers"}
-nav_next: {"path": "../ssg/index.md", "title": "Static Site Generation"}
+nav_prev: {"path": "trpc/docs/client/nextjs/pages-router/server-side-helpers/index.md", "title": "Server-Side Helpers"}
+nav_next: {"path": "trpc/docs/client/nextjs/pages-router/ssg/index.md", "title": "Static Site Generation"}
 ---
 
 caution

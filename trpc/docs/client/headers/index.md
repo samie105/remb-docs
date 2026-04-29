@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:38.963Z"
 content_hash: "193901ba691e08cc471b193493bd5d5debecd550acec113bb81beeef9f3cbe7f"
 menu_path: ["Headers"]
 section_path: []
-nav_prev: {"path": "../cors/index.md", "title": "Send cookies cross-origin"}
-nav_next: {"path": "../links/index.md", "title": "Links Overview"}
+nav_prev: {"path": "trpc/docs/client/cors/index.md", "title": "Send cookies cross-origin"}
+nav_next: {"path": "trpc/docs/client/links/index.md", "title": "Links Overview"}
 ---
 
 Version: 11.x

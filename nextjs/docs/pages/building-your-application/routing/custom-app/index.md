@@ -11,8 +11,8 @@ menu_path: ["Custom App"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../linking-and-navigating/index.md", "title": "Linking and Navigating"}
-nav_next: {"path": "../custom-document/index.md", "title": "Custom Document"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/linking-and-navigating/index.md", "title": "Linking and Navigating"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/custom-document/index.md", "title": "Custom Document"}
 ---
 
 # Custom App
@@ -23,7 +23,7 @@ Next.js uses the `App` component to initialize pages. You can override it and co
 
 -   Create a shared layout between page changes
 -   Inject additional data into pages
--   [Add global CSS](/docs/app/getting-started/css)
+-   [Add global CSS](../../../../app/getting-started/css/index.md)
 
 ## Usage[](#usage)
 
@@ -43,18 +43,18 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
 The `Component` prop is the active `page`, so whenever you navigate between routes, `Component` will change to the new `page`. Therefore, any props you send to `Component` will be received by the `page`.
 
-`pageProps` is an object with the initial props that were preloaded for your page by one of our [data fetching methods](/docs/pages/building-your-application/data-fetching), otherwise it's an empty object.
+`pageProps` is an object with the initial props that were preloaded for your page by one of our [data fetching methods](../../data-fetching/index.md), otherwise it's an empty object.
 
 > **Good to know**:
 > 
 > -   If your app is running and you added a custom `App`, you'll need to restart the development server. Only required if `pages/_app.js` didn't exist before.
-> -   `App` does not support Next.js [Data Fetching methods](/docs/pages/building-your-application/data-fetching) like [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) or [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props).
+> -   `App` does not support Next.js [Data Fetching methods](../../data-fetching/index.md) like [`getStaticProps`](../../data-fetching/get-static-props/index.md) or [`getServerSideProps`](../../data-fetching/get-server-side-props/index.md).
 
 ## `getInitialProps` with `App`[](#getinitialprops-with-app)
 
-Using [`getInitialProps`](/docs/pages/api-reference/functions/get-initial-props) in `App` will disable [Automatic Static Optimization](/docs/pages/building-your-application/rendering/automatic-static-optimization) for pages without [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props).
+Using [`getInitialProps`](../../../api-reference/functions/get-initial-props/index.md) in `App` will disable [Automatic Static Optimization](../../rendering/automatic-static-optimization/index.md) for pages without [`getStaticProps`](../../data-fetching/get-static-props/index.md).
 
-**We do not recommend using this pattern.** Instead, consider [incrementally adopting](/docs/app/guides/migrating/app-router-migration) the App Router, which allows you to more easily fetch data for pages and layouts.
+**We do not recommend using this pattern.** Instead, consider [incrementally adopting](../../../../app/guides/migrating/app-router-migration/index.md) the App Router, which allows you to more easily fetch data for pages and layouts.
 
 pages/\_app.tsx
 

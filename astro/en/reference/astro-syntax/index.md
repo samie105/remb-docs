@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:38.335Z"
 content_hash: "142d6af8bd5a4028a9f5399d39fb5e0331e6793b1ca660ed6404bbece3586379"
 menu_path: ["Template expressions reference"]
 section_path: []
-nav_prev: {"path": "../../contribute/index.md", "title": "Contribute to Astro"}
-nav_next: {"path": "../directives-reference/index.md", "title": "Template directives reference"}
+nav_prev: {"path": "astro/en/contribute/index.md", "title": "Contribute to Astro"}
+nav_next: {"path": "astro/en/reference/directives-reference/index.md", "title": "Template directives reference"}
 ---
 
 # Template expressions reference
@@ -75,16 +75,16 @@ When using dynamic tags:
 
 *   **Variable names must be capitalized.** For example, use `Element`, not `element`. Otherwise, Astro will try to render your variable name as a literal HTML tag.
     
-*   **Hydration directives are not supported.** When using [`client:*` hydration directives](/en/guides/framework-components/#hydrating-interactive-components), Astro needs to know which components to bundle for production, and the dynamic tag pattern prevents this from working.
+*   **Hydration directives are not supported.** When using [`client:*` hydration directives](../../guides/framework-components/index.md#hydrating-interactive-components), Astro needs to know which components to bundle for production, and the dynamic tag pattern prevents this from working.
     
-*   **The [define:vars directive](/en/reference/directives-reference/#definevars) is not supported.** If you cannot wrap the children with an extra element (e.g `<div>`), then you can manually add a ``style={`--myVar:${value}`}`` to your Element.
+*   **The [define:vars directive](../directives-reference/index.md#definevars) is not supported.** If you cannot wrap the children with an extra element (e.g `<div>`), then you can manually add a ``style={`--myVar:${value}`}`` to your Element.
     
 
 ### Fragments
 
 [Section titled “Fragments”](#fragments)
 
-Astro supports `<> </>` notation and also provides a built-in `<Fragment />` component. This component can be useful to avoid wrapper elements when adding [`set:*` directives](/en/reference/directives-reference/#sethtml) to inject an HTML string.
+Astro supports `<> </>` notation and also provides a built-in `<Fragment />` component. This component can be useful to avoid wrapper elements when adding [`set:*` directives](../directives-reference/index.md#sethtml) to inject an HTML string.
 
 The following example renders paragraph text using the `<Fragment />` component:
 
@@ -208,4 +208,4 @@ And would render HTML like this:
 <ul class="nested-list">  <li>A</li>  <li>    <ul class="nested-list">      <li>B</li>      <li>C</li>    </ul>  </li>  <li>D</li></ul>
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

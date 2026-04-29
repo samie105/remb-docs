@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:30.018Z"
 content_hash: "6c3e67c9267c220235cdc055f367a4d884e94df09a69adc6fb2f230eebc338d0"
 menu_path: ["Mux & Astro"]
 section_path: []
-nav_prev: {"path": "../cloudinary/index.md", "title": "Cloudinary & Astro"}
-nav_next: {"path": "../../ecommerce/index.md", "title": "E-commerce"}
+nav_prev: {"path": "astro/en/guides/media/cloudinary/index.md", "title": "Cloudinary & Astro"}
+nav_next: {"path": "astro/en/guides/ecommerce/index.md", "title": "E-commerce"}
 ---
 
 # Mux & Astro
@@ -31,7 +31,7 @@ Mux’s APIs and web components work in Astro to compress and optimize your vide
 
 [Section titled “Prerequisites”](#prerequisites)
 
-*   An existing Astro project. Some features may additionally require an adapter installed for [on-demand server rendering](/en/guides/on-demand-rendering/).
+*   An existing Astro project. Some features may additionally require an adapter installed for [on-demand server rendering](../../on-demand-rendering/index.md).
 *   A Mux account. If you don’t have an account, you can [sign up with Mux](https://dashboard.mux.com/login?utm_campaign=21819274-Astro&utm_source=astro-docs) using the code `ASTRO` to receive a $50 credit.
 
 ## Mux Player
@@ -152,7 +152,7 @@ This will allow you to create an instance of the Mux Node SDK for retrieving inf
 const mux = new Mux ({  tokenId: import.meta.env.MUX_TOKEN_ID,  tokenSecret: import.meta.env.MUX_TOKEN_SECRET,})---
 ```
 
-Read more about using [environment variables](/en/guides/environment-variables/) in your Astro project, including creating a [type-safe schema](/en/guides/environment-variables/#type-safe-environment-variables) for your Mux credentials.
+Read more about using [environment variables](../../environment-variables/index.md) in your Astro project, including creating a [type-safe schema](../../environment-variables/index.md#type-safe-environment-variables) for your Mux credentials.
 
 ### Retrieve asset data
 
@@ -224,7 +224,7 @@ See the [Mux Uploader customization guide](https://www.mux.com/docs/guides/uploa
 
 Mux Uploader provides a feature-rich, dynamic UI that changes based on the current state of your media upload. The uploader’s behavior responds to both user-driven events (e.g. selecting a file, retrying after an error) and state-driven events (e.g. upload in-progress, upload successfully completed).
 
-You can listen for these events and handle them in your Astro component with [client-side scripts](/en/guides/client-side-scripts/). A `MuxUploaderElement` type is also available.
+You can listen for these events and handle them in your Astro component with [client-side scripts](../../client-side-scripts/index.md). A `MuxUploaderElement` type is also available.
 
 ```
 ---import { MuxUploader } from '@mux/mux-uploader-astro';---
@@ -253,11 +253,11 @@ For the full API and webhook reference, usage guides, and information about addi
 
 *   ![](/logos/cloudinary.svg)
     
-    ### [Cloudinary](/en/guides/media/cloudinary/)
+    ### [Cloudinary](../cloudinary/index.md)
     
 *   ![](/logos/mux.svg)
     
-    ### [Mux](/en/guides/media/mux/)
+    ### [Mux](index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

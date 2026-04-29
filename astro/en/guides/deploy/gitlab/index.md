@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:20.715Z"
 content_hash: "c2eb808ca20c318d26a0a0f952348a015d73e98fba732d28fab9986cd943cb32"
 menu_path: ["Deploy your Astro Site to GitLab Pages"]
 section_path: []
-nav_prev: {"path": "../github/index.md", "title": "Deploy your Astro Site to GitHub Pages"}
-nav_next: {"path": "../google-cloud/index.md", "title": "Deploy your Astro Site to Google Cloud"}
+nav_prev: {"path": "astro/en/guides/deploy/github/index.md", "title": "Deploy your Astro Site to GitHub Pages"}
+nav_next: {"path": "astro/en/guides/deploy/google-cloud/index.md", "title": "Deploy your Astro Site to Google Cloud"}
 ---
 
 # Deploy your Astro Site to GitLab Pages
@@ -23,7 +23,7 @@ You can use [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/) to ho
 
 You can deploy an Astro site to GitLab Pages by using GitLab CI/CD to automatically build and deploy your site. To do this, your source code must be hosted on GitLab and you need to make the following changes to your Astro project:
 
-1.  Set up [`site`](/en/reference/configuration-reference/#site) and [`base`](/en/reference/configuration-reference/#base) options in `astro.config.mjs`.
+1.  Set up [`site`](../../../reference/configuration-reference/index.md#site) and [`base`](../../../reference/configuration-reference/index.md#base) options in `astro.config.mjs`.
     
     ```
     import { defineConfig } from 'astro/config';
@@ -50,7 +50,7 @@ You can deploy an Astro site to GitLab Pages by using GitLab CI/CD to automatica
     
 3.  Set `outDir: 'public'` in `astro.config.mjs`. This setting instructs Astro to put the static build output in a folder called `public`, which is the folder required by GitLab Pages for exposed files.
     
-    If you were using the [`public/` directory](/en/basics/project-structure/#public) as a source of static files in your Astro project, rename it and use that new folder name in `astro.config.mjs` for the value of `publicDir`.
+    If you were using the [`public/` directory](../../../basics/project-structure/index.md#public) as a source of static files in your Astro project, rename it and use that new folder name in `astro.config.mjs` for the value of `publicDir`.
     
     For example, here are the correct `astro.config.mjs` settings when the `public/` directory is renamed to `static/`:
     
@@ -86,131 +86,131 @@ Your site should now be published! When you push changes to your Astro projectâ€
 
 *   ![](/logos/aws.svg)
     
-    ### [AWS](/en/guides/deploy/aws/)
+    ### [AWS](../aws/index.md)
     
 *   ![](/logos/flightcontrol.svg)
     
-    ### [AWS via Flightcontrol](/en/guides/deploy/aws-via-flightcontrol/)
+    ### [AWS via Flightcontrol](../aws-via-flightcontrol/index.md)
     
 *   ![](/logos/sst.svg)
     
-    ### [AWS via SST](/en/guides/deploy/aws-via-sst/)
+    ### [AWS via SST](../aws-via-sst/index.md)
     
 *   ![](/logos/azion.svg)
     
-    ### [Azion](/en/guides/deploy/azion/)
+    ### [Azion](../azion/index.md)
     
 *   ![](/logos/buddy.svg)
     
-    ### [Buddy](/en/guides/deploy/buddy/)
+    ### [Buddy](../buddy/index.md)
     
 *   ![](/logos/cleavr.svg)
     
-    ### [Cleavr](/en/guides/deploy/cleavr/)
+    ### [Cleavr](../cleavr/index.md)
     
 *   ![](/logos/clever-cloud.svg)
     
-    ### [Clever Cloud](/en/guides/deploy/clever-cloud/)
+    ### [Clever Cloud](../clever-cloud/index.md)
     
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [Cloudflare](/en/guides/deploy/cloudflare/)
+    ### [Cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/cloudray.svg)
     
-    ### [CloudRay](/en/guides/deploy/cloudray/)
+    ### [CloudRay](../cloudray/index.md)
     
 *   ![](/logos/deno.svg)
     
-    ### [Deno Deploy](/en/guides/deploy/deno/)
+    ### [Deno Deploy](../deno/index.md)
     
 *   ![](/logos/deployhq.svg)
     
-    ### [DeployHQ](/en/guides/deploy/deployhq/)
+    ### [DeployHQ](../deployhq/index.md)
     
 *   ![](/logos/edgeone-pages.svg)
     
-    ### [EdgeOne Pages](/en/guides/deploy/edgeone-pages/)
+    ### [EdgeOne Pages](../edgeone-pages/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/deploy/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/fleek.svg)
     
-    ### [Fleek](/en/guides/deploy/fleek/)
+    ### [Fleek](../fleek/index.md)
     
 *   ![](/logos/flyio.svg)
     
-    ### [Fly.io](/en/guides/deploy/flyio/)
+    ### [Fly.io](../flyio/index.md)
     
 *   ![](/logos/github.svg)
     
-    ### [GitHub Pages](/en/guides/deploy/github/)
+    ### [GitHub Pages](../github/index.md)
     
 *   ![](/logos/gitlab.svg)
     
-    ### [GitLab Pages](/en/guides/deploy/gitlab/)
+    ### [GitLab Pages](index.md)
     
 *   ![](/logos/google-cloud.svg)
     
-    ### [Google Cloud](/en/guides/deploy/google-cloud/)
+    ### [Google Cloud](../google-cloud/index.md)
     
 *   ![](/logos/heroku.svg)
     
-    ### [Heroku](/en/guides/deploy/heroku/)
+    ### [Heroku](../heroku/index.md)
     
 *   ![](/logos/juno.svg)
     
-    ### [Juno](/en/guides/deploy/juno/)
+    ### [Juno](../juno/index.md)
     
 *   ![](/logos/microsoft-azure.svg)
     
-    ### [Microsoft Azure](/en/guides/deploy/microsoft-azure/)
+    ### [Microsoft Azure](../microsoft-azure/index.md)
     
 *   ![](/logos/netlify.svg)
     
-    ### [Netlify](/en/guides/deploy/netlify/)
+    ### [Netlify](../netlify/index.md)
     
 *   ![](/logos/railway.svg)
     
-    ### [Railway](/en/guides/deploy/railway/)
+    ### [Railway](../railway/index.md)
     
 *   ![](/logos/render.svg)
     
-    ### [Render](/en/guides/deploy/render/)
+    ### [Render](../render/index.md)
     
 *   ![](/logos/seenode.svg)
     
-    ### [Seenode](/en/guides/deploy/seenode/)
+    ### [Seenode](../seenode/index.md)
     
 *   ![](/logos/sevalla.svg)
     
-    ### [Sevalla](/en/guides/deploy/sevalla/)
+    ### [Sevalla](../sevalla/index.md)
     
 *   ![](/logos/stormkit.svg)
     
-    ### [Stormkit](/en/guides/deploy/stormkit/)
+    ### [Stormkit](../stormkit/index.md)
     
 *   ![](/logos/surge.svg)
     
-    ### [Surge](/en/guides/deploy/surge/)
+    ### [Surge](../surge/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [Vercel](/en/guides/deploy/vercel/)
+    ### [Vercel](../vercel/index.md)
     
 *   ![](/logos/zeabur.svg)
     
-    ### [Zeabur](/en/guides/deploy/zeabur/)
+    ### [Zeabur](../zeabur/index.md)
     
 *   ![](/logos/zephyr.svg)
     
-    ### [Zephyr Cloud](/en/guides/deploy/zephyr/)
+    ### [Zephyr Cloud](../zephyr/index.md)
     
 *   ![](/logos/zerops.svg)
     
-    ### [Zerops](/en/guides/deploy/zerops/)
+    ### [Zerops](../zerops/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

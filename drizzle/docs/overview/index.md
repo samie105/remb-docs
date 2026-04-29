@@ -10,7 +10,7 @@ content_hash: "43e005aac9f423027a41d41be180d1dbb1c08f28ef1aa8e2047bab07eca096b2"
 menu_path: ["Drizzle ORM"]
 section_path: []
 content_language: "en"
-nav_next: {"path": "../get-started/index.md", "title": "Get started with Drizzle"}
+nav_next: {"path": "drizzle/docs/get-started/index.md", "title": "Get started with Drizzle"}
 ---
 
 Drizzle ORM is a headless TypeScript ORM with a head. 🐲

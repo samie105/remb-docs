@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:13.589Z"
 content_hash: "8377985f16050fb21aa69f6a7f729d88b7796c2309122b29f1485478783feaa3"
 menu_path: ["Invalid type returned by Astro page."]
 section_path: []
-nav_prev: {"path": "../no-prerendered-routes-with-domains/index.md", "title": "Prerendered routes aren't supported when internationalization domains are enabled."}
-nav_next: {"path": "../page-number-param-not-found/index.md", "title": "Page number param not found."}
+nav_prev: {"path": "astro/en/reference/errors/no-prerendered-routes-with-domains/index.md", "title": "Prerendered routes aren't supported when internationalization domains are enabled."}
+nav_next: {"path": "astro/en/reference/errors/page-number-param-not-found/index.md", "title": "Page number param not found."}
 ---
 
 # Invalid type returned by Astro page.
@@ -30,6 +30,6 @@ Only instances of [Response](https://developer.mozilla.org/en-US/docs/Web/API/Re
 
 **See Also:**
 
-*   [Response](/en/guides/on-demand-rendering/#response)
+*   [Response](../../../guides/on-demand-rendering/index.md#response)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

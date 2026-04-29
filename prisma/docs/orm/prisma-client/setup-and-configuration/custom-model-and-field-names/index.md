@@ -10,8 +10,8 @@ content_hash: "dafdb4bd1d34e2808289b9f3b8e6b50cbd687a78100d28312346298f94931b67"
 menu_path: ["Custom model and field names"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../queries/transactions/index.md", "title": "Transactions and batch queries"}
-nav_next: {"path": "../database-polyfills/index.md", "title": "Database polyfills"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/transactions/index.md", "title": "Transactions and batch queries"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/database-polyfills/index.md", "title": "Database polyfills"}
 ---
 
 Setup and Configuration

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:54.590Z"
 content_hash: "ea53e2fd6d92df21defa975cf6379dbc0882bb6c594803cd933d66006390612d"
 menu_path: ["Migration from v7 ​"]
 section_path: []
-nav_prev: {"path": "../performance/index.md", "title": "Performance \u200b"}
-nav_next: {"path": "../api-plugin/index.md", "title": "Plugin API \u200b"}
+nav_prev: {"path": "vite/guide/performance/index.md", "title": "Performance \u200b"}
+nav_next: {"path": "vite/guide/api-plugin/index.md", "title": "Plugin API \u200b"}
 ---
 
 If you are migrating from `rolldown-vite`, the technical preview release for Rolldown integrated Vite for v6 & v7, only the sections with NRV in the title are applicable.

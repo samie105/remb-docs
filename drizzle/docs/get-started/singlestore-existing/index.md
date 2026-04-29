@@ -10,8 +10,8 @@ content_hash: "378ec0262b9a6a41b32a0edafa5c0328e2d194b6b58c065c09bab4ab48d2cfb1"
 menu_path: ["Get Started with Drizzle and SingleStore in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../postgresql-new/index.md", "title": "Get Started with Drizzle and PostgreSQL"}
-nav_next: {"path": "../singlestore-new/index.md", "title": "Get Started with Drizzle and SingleStore"}
+nav_prev: {"path": "drizzle/docs/get-started/postgresql-new/index.md", "title": "Get Started with Drizzle and PostgreSQL"}
+nav_next: {"path": "drizzle/docs/get-started/singlestore-new/index.md", "title": "Get Started with Drizzle and SingleStore"}
 ---
 
 ## Get Started with Drizzle and SingleStore in existing project

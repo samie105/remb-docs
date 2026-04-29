@@ -10,7 +10,7 @@ content_hash: "2ea30afd5ea24b82fe7ff518ad918703ab7de10463e725decf65bd3ef91ef076"
 menu_path: ["Drizzle with Node.js and PostgreSQL on Railway"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-with-xata/index.md", "title": "Drizzle with Xata"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-xata/index.md", "title": "Drizzle with Xata"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Node.js](https://nodejs.org/) and a PostgreSQL database, all deployed on [Railway](https://driz.link/railway).

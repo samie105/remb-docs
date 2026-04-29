@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:27.094Z"
 content_hash: "0c41ff85c9bed545235db02f632d7b0594aa41df8c6e7084c616ed558dacb385"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Client-side caching reference","→","Client-side caching reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Client-side caching reference","→","Client-side caching reference"]
-nav_prev: {"path": "../../pubsub/keyspace-notifications/index.md", "title": "Redis keyspace notifications"}
-nav_next: {"path": "../clients/index.md", "title": "Redis client handling"}
+nav_prev: {"path": "redis/docs/latest/develop/pubsub/keyspace-notifications/index.md", "title": "Redis keyspace notifications"}
+nav_next: {"path": "redis/docs/latest/develop/reference/clients/index.md", "title": "Redis client handling"}
 ---
 
 # Client-side caching reference

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:24.082Z"
 content_hash: "d59da3a401c57b8c29cce5a4c31222f5f34f9ff42006b5cd87ecf45a8768c36a"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Implementing cascade deletes","Implementing cascade deletes"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Implementing cascade deletes","Implementing cascade deletes"]
-nav_prev: {"path": "../../postgres-js/index.md", "title": "Postgres.js"}
-nav_next: {"path": "../column-level-security/index.md", "title": "Column Level Security"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres-js/index.md", "title": "Postgres.js"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/column-level-security/index.md", "title": "Column Level Security"}
 ---
 
 # 

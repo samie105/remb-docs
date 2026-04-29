@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:37.643Z"
 content_hash: "d04531fc079745127d974cad148df49505389280c007a3615dd9188f93536aa2"
 menu_path: ["Single-file executable"]
 section_path: []
-nav_prev: {"path": "../esbuild/index.md", "title": "esbuild"}
-nav_next: {"path": "../fullstack/index.md", "title": "Fullstack dev server"}
+nav_prev: {"path": "bun/docs/bundler/esbuild/index.md", "title": "esbuild"}
+nav_next: {"path": "bun/docs/bundler/fullstack/index.md", "title": "Fullstack dev server"}
 ---
 
 # To support CPUs from before 2013, use the baseline version (nehalem)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:41.806Z"
 content_hash: "7db06491b1a21f40906af38f50b20c50533ec0f4cecbdff7beb2d3b5b41830b7"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Going to Production","Going to Production"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Going to Production","Going to Production"]
-nav_prev: {"path": "../examples/semantic-image-search-amazon-titan/index.md", "title": "Semantic Image Search with Amazon Titan"}
-nav_next: {"path": "../google-colab/index.md", "title": "Google Colab"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/semantic-image-search-amazon-titan/index.md", "title": "Semantic Image Search with Amazon Titan"}
+nav_next: {"path": "supabase/docs/guides/ai/google-colab/index.md", "title": "Google Colab"}
 ---
 
 # 
@@ -25,7 +25,7 @@ Going to production checklist for AI applications.
 
 This guide will help you to prepare your application for production. We'll provide actionable steps to help you scale your application, ensure that it is reliable, can handle the load, and provide optimal accuracy for your use case.
 
-See our [Engineering for Scale](/docs/guides/ai/engineering-for-scale) guide for more information about engineering at scale.
+See our [Engineering for Scale](../engineering-for-scale/index.md) guide for more information about engineering at scale.
 
 ## Do you need indexes?[#](#do-you-need-indexes)
 
@@ -39,11 +39,11 @@ There are a couple of cases where you might not need indexes:
 
 You don't have to create indexes in these cases and can use sequential scans instead. This type of workload will not be RAM bound and will not require any additional resources but will result in higher latencies and lower throughput. Extra CPU cores may help to improve queries per second, but it will not help to improve latency.
 
-On the other hand, if you need to scale your application, you will need to [create indexes](/docs/guides/ai/vector-indexes). This will result in lower latencies and higher throughput, but will require additional RAM to make use of Postgres Caching. Also, using indexes will result in lower accuracy, since you are replacing exact (KNN) search with approximate (ANN) search.
+On the other hand, if you need to scale your application, you will need to [create indexes](../vector-indexes/index.md). This will result in lower latencies and higher throughput, but will require additional RAM to make use of Postgres Caching. Also, using indexes will result in lower accuracy, since you are replacing exact (KNN) search with approximate (ANN) search.
 
 ## HNSW vs IVFFlat indexes[#](#hnsw-vs-ivfflat-indexes)
 
-`pgvector` supports two types of indexes: HNSW and IVFFlat. We recommend using [HNSW](/docs/guides/ai/vector-indexes/hnsw-indexes) because of its [performance](/blog/increase-performance-pgvector-hnsw#hnsw-performance-1536-dimensions) and [robustness against changing data](/docs/guides/ai/vector-indexes/hnsw-indexes#when-should-you-create-hnsw-indexes).
+`pgvector` supports two types of indexes: HNSW and IVFFlat. We recommend using [HNSW](../vector-indexes/hnsw-indexes/index.md) because of its [performance](/blog/increase-performance-pgvector-hnsw#hnsw-performance-1536-dimensions) and [robustness against changing data](../vector-indexes/hnsw-indexes/index.md#when-should-you-create-hnsw-indexes).
 
 ![dbpedia embeddings comparing ivfflat and hnsw queries-per-second using the 4XL compute add-on](/docs/img/ai/going-prod/dbpedia-ivfflat-vs-hnsw-4xl--light.png)
 
@@ -104,7 +104,7 @@ First, a few generic tips which you can pick and choose from:
 
 Don't forget to check out the general [Production Checklist](/docs/guides/platform/going-into-prod) to ensure your project is secure, performant, and will remain available for your users.
 
-You can look at our [Choosing Compute Add-on](/docs/guides/ai/choosing-compute-addon) guide to get a basic understanding of how much compute you might need for your workload.
+You can look at our [Choosing Compute Add-on](../choosing-compute-addon/index.md) guide to get a basic understanding of how much compute you might need for your workload.
 
 Or take a look at our [pgvector 0.5.0 performance](/blog/increase-performance-pgvector-hnsw) and [pgvector 0.4.0 performance](/blog/pgvector-performance) blog posts to see what pgvector is capable of and how the above technique can be used to achieve the best results.
 

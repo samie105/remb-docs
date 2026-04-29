@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:22.298Z"
 content_hash: "3c2742f0c9014c155fcbc6fba378e92d10a696c1c4e2543b0c5cf278e7c4d4e2"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE TYPE"]
 section_path: []
-nav_prev: {"path": "../sql-createtstemplate.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH TEMPLATE"}
-nav_next: {"path": "../sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
+nav_prev: {"path": "postgres/docs/current/sql-createtstemplate.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH TEMPLATE"}
+nav_next: {"path": "postgres/docs/current/sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
 ---
 
 `CREATE TYPE` registers a new data type for use in the current database. The user who defines a type becomes its owner.

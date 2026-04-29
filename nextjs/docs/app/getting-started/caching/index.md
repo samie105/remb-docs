@@ -11,21 +11,21 @@ menu_path: ["Caching"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../mutating-data/index.md", "title": "Mutating Data"}
-nav_next: {"path": "../revalidating/index.md", "title": "Revalidating"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/mutating-data/index.md", "title": "Mutating Data"}
+nav_next: {"path": "nextjs/docs/app/getting-started/revalidating/index.md", "title": "Revalidating"}
 ---
 
 # Caching
 
 Last updated April 23, 2026
 
-> This page covers caching with [Cache Components](/docs/app/api-reference/config/next-config-js/cacheComponents), enabled by setting [`cacheComponents: true`](/docs/app/api-reference/config/next-config-js/cacheComponents) in your `next.config.ts` file. If you're not using Cache Components, see the [Caching and Revalidating (Previous Model)](/docs/app/guides/caching-without-cache-components) guide.
+> This page covers caching with [Cache Components](../../api-reference/config/next-config-js/cacheComponents/index.md), enabled by setting [`cacheComponents: true`](../../api-reference/config/next-config-js/cacheComponents/index.md) in your `next.config.ts` file. If you're not using Cache Components, see the [Caching and Revalidating (Previous Model)](../../guides/caching-without-cache-components/index.md) guide.
 
 Caching is a technique for storing the result of data fetching and other computations so that future requests for the same data can be served faster, without doing the work again.
 
 ## Enabling Cache Components[](#enabling-cache-components)
 
-You can enable Cache Components by adding the [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) option to your Next config file:
+You can enable Cache Components by adding the [`cacheComponents`](../../api-reference/config/next-config-js/cacheComponents/index.md) option to your Next config file:
 
 next.config.ts
 
@@ -41,16 +41,16 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
-> **Good to know:** When Cache Components is enabled, `GET` Route Handlers follow the same prerendering model as pages. See [Route Handlers with Cache Components](/docs/app/getting-started/route-handlers#with-cache-components) for details.
+> **Good to know:** When Cache Components is enabled, `GET` Route Handlers follow the same prerendering model as pages. See [Route Handlers with Cache Components](../route-handlers/index.md#with-cache-components) for details.
 
 ## Usage[](#usage)
 
-The [`use cache`](/docs/app/api-reference/directives/use-cache) directive caches the return value of async functions and components. You can apply it at two levels:
+The [`use cache`](../../api-reference/directives/use-cache/index.md) directive caches the return value of async functions and components. You can apply it at two levels:
 
 -   **Data-level**: Cache a function that fetches or computes data (e.g., `getProducts()`, `getUser(id)`)
 -   **UI-level**: Cache an entire component or page (e.g., `async function BlogPosts()`)
 
-> Arguments and any closed-over values from parent scopes automatically become part of the [cache key](/docs/app/api-reference/directives/use-cache#cache-keys), which means different inputs will produce separate cache entries. This enables personalized or parameterized cached content. See [serialization requirements and constraints](/docs/app/api-reference/directives/use-cache#constraints) for details on what can be cached and how arguments work.
+> Arguments and any closed-over values from parent scopes automatically become part of the [cache key](../../api-reference/directives/use-cache/index.md#cache-keys), which means different inputs will produce separate cache entries. This enables personalized or parameterized cached content. See [serialization requirements and constraints](../../api-reference/directives/use-cache/index.md#constraints) for details on what can be cached and how arguments work.
 
 ### Data-level caching[](#data-level-caching)
 
@@ -138,10 +138,10 @@ The fallback (`<p>Loading posts...</p>`) is included in the static shell, while 
 
 Request-time APIs require information that is only available when a user makes a request. These include:
 
--   [`cookies`](/docs/app/api-reference/functions/cookies) - User's cookie data
--   [`headers`](/docs/app/api-reference/functions/headers) - Request headers
--   [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional) - URL query parameters
--   [`params`](/docs/app/api-reference/file-conventions/page#params-optional) - Dynamic route parameters (unless at least one sample is provided via [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params)).
+-   [`cookies`](../../api-reference/functions/cookies/index.md) - User's cookie data
+-   [`headers`](../../api-reference/functions/headers/index.md) - Request headers
+-   [`searchParams`](../../api-reference/file-conventions/page/index.md#searchparams-optional) - URL query parameters
+-   [`params`](../../api-reference/file-conventions/page/index.md#params-optional) - Dynamic route parameters (unless at least one sample is provided via [`generateStaticParams`](../../api-reference/functions/generate-static-params/index.md)).
 
 Components that access runtime APIs should be wrapped in `<Suspense>`:
 
@@ -208,7 +208,7 @@ At request time, `CachedContent` executes if no matching cache entry is found, a
 
 Operations like `Math.random()`, `Date.now()`, or `crypto.randomUUID()` produce different values each time they execute. Cache Components requires you to explicitly handle these.
 
-**To generate unique values per request**, defer to request time by calling [`connection()`](/docs/app/api-reference/functions/connection) before these operations, and wrap the component in `<Suspense>`:
+**To generate unique values per request**, defer to request time by calling [`connection()`](../../api-reference/functions/connection/index.md) before these operations, and wrap the component in `<Suspense>`:
 
 page.tsx
 
@@ -278,13 +278,13 @@ At build time, Next.js renders your route's component tree. How each component i
 -   [`<Suspense>`](#streaming-uncached-data): fallback UI is included in the static shell while the content streams at request time
 -   [Deterministic operations](#working-with-deterministic-operations): like pure computations and module imports are automatically included in the static shell
 
-This generates a static shell consisting of HTML for initial page loads and a serialized [RSC Payload](/docs/app/getting-started/server-and-client-components#on-the-server) for client-side navigation, ensuring the browser receives fully rendered content instantly whether users navigate directly to the URL or transition from another page.
+This generates a static shell consisting of HTML for initial page loads and a serialized [RSC Payload](../server-and-client-components/index.md#on-the-server) for client-side navigation, ensuring the browser receives fully rendered content instantly whether users navigate directly to the URL or transition from another page.
 
 ![Partially re-rendered Product Page showing static nav and product information, and dynamic cart and recommended products](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/learn/light/thinking-in-ppr.png)
 
 This rendering approach is called **Partial Prerendering (PPR)**, and it's the default behavior with Cache Components.
 
-> You can verify that a route was fully prerendered by checking the [build output summary](/docs/app/api-reference/cli/next#next-build-options). Alternatively, see what content was added to the static shell of any page by viewing the page source in your browser.
+> You can verify that a route was fully prerendered by checking the [build output summary](../../api-reference/cli/next/index.md#next-build-options). Alternatively, see what content was added to the static shell of any page by viewing the page source in your browser.
 
 ![Diagram showing partially rendered page on the client, with loading UI for chunks that are being streamed.](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-with-streaming.png)
 
@@ -294,7 +294,7 @@ Next.js requires you to explicitly handle components that can't complete during 
 
 ### Opting out of the static shell[](#opting-out-of-the-static-shell)
 
-Placing a `<Suspense>` boundary with an empty fallback above the document body in your Root Layout causes the entire app to defer to request time. Because the fallback is empty, there is no static shell to send immediately, so every request blocks until the page is fully rendered. To limit this to specific routes, use [multiple root layouts](/docs/app/api-reference/file-conventions/layout#root-layout).
+Placing a `<Suspense>` boundary with an empty fallback above the document body in your Root Layout causes the entire app to defer to request time. Because the fallback is empty, there is no static shell to send immediately, so every request blocks until the page is fully rendered. To limit this to specific routes, use [multiple root layouts](../../api-reference/file-conventions/layout/index.md#root-layout).
 
 app/layout.tsx
 
@@ -316,7 +316,7 @@ export default function RootLayout({
 }
 ```
 
-> **Good to know**: This same pattern applies when `generateViewport` accesses uncached dynamic data. See [Viewport with Cache Components](/docs/app/api-reference/functions/generate-viewport#with-cache-components) for a detailed example.
+> **Good to know**: This same pattern applies when `generateViewport` accesses uncached dynamic data. See [Viewport with Cache Components](../../api-reference/functions/generate-viewport/index.md#with-cache-components) for a detailed example.
 
 ### Putting it all together[](#putting-it-all-together)
 
@@ -416,9 +416,9 @@ async function CreatePost() {
 }
 ```
 
-During prerendering, the header (static) and blog posts (cached with `use cache`) become part of the static shell along with the fallback UI for user preferences. Only the personalized preferences stream in at request time. When an admin publishes a new post, the [`updateTag`](/docs/app/getting-started/revalidating#updatetag) call immediately expires the blog posts cache so the next visitor sees it.
+During prerendering, the header (static) and blog posts (cached with `use cache`) become part of the static shell along with the fallback UI for user preferences. Only the personalized preferences stream in at request time. When an admin publishes a new post, the [`updateTag`](../revalidating/index.md#updatetag) call immediately expires the blog posts cache so the next visitor sees it.
 
-> **Good to know:** `generateMetadata` and `generateViewport` track runtime data access separately from the page. See [Metadata with Cache Components](/docs/app/api-reference/functions/generate-metadata#with-cache-components) and [Viewport with Cache Components](/docs/app/api-reference/functions/generate-viewport#with-cache-components) for how to handle this.
+> **Good to know:** `generateMetadata` and `generateViewport` track runtime data access separately from the page. See [Metadata with Cache Components](../../api-reference/functions/generate-metadata/index.md#with-cache-components) and [Viewport with Cache Components](../../api-reference/functions/generate-viewport/index.md#with-cache-components) for how to handle this.
 
 ## Next Steps
 
@@ -430,18 +430,18 @@ Learn more about revalidation and the APIs mentioned on this page.
 
 Learn how to revalidate cached data using time-based and on-demand strategies.
 
-](/docs/app/getting-started/revalidating)[
+](../revalidating/index.md)[
 
 ### use cache
 
 Learn how to use the "use cache" directive to cache data in your Next.js application.
 
-](/docs/app/api-reference/directives/use-cache)[
+](../../api-reference/directives/use-cache/index.md)[
 
 ### cacheComponents
 
 Learn how to enable the cacheComponents flag in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheComponents)
+](../../api-reference/config/next-config-js/cacheComponents/index.md)
 
 Was this helpful?

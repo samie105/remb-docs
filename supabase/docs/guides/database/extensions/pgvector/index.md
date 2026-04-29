@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:04.871Z"
 content_hash: "4782327f736c5882efec542b607431d7cf956706330efc00a17f94162ce6ee38"
 menu_path: ["Database","Database","Extensions","Extensions","pgvector: Embeddings and vector similarity","pgvector: Embeddings and vector similarity"]
 section_path: ["Database","Database","Extensions","Extensions","pgvector: Embeddings and vector similarity","pgvector: Embeddings and vector similarity"]
-nav_prev: {"path": "../pgtap/index.md", "title": "pgTAP: Unit Testing"}
-nav_next: {"path": "../plpgsql_check/index.md", "title": "plpgsql_check: PL/pgSQL Linter"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pgtap/index.md", "title": "pgTAP: Unit Testing"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/plpgsql_check/index.md", "title": "plpgsql_check: PL/pgSQL Linter"}
 ---
 
 # 
@@ -23,7 +23,7 @@ pgvector: Embeddings and vector similarity
 
 The name of pgvector's Postgres extension is [vector](https://github.com/pgvector/pgvector/blob/258eaf58fdaff1843617ff59ea855e0768243fe9/README.md?plain=1#L64).
 
-Learn more about Supabase's [AI & Vector](/docs/guides/ai) offering.
+Learn more about Supabase's [AI & Vector](../../../ai/index.md) offering.
 
 ## Concepts[#](#concepts)
 
@@ -33,7 +33,7 @@ Vector similarity refers to a measure of the similarity between two related item
 
 ### Embeddings[#](#embeddings)
 
-This is particularly useful if you're building AI applications with large language models. You can create and store [embeddings](/docs/guides/ai/quickstarts/generate-text-embeddings) for retrieval augmented generation (RAG).
+This is particularly useful if you're building AI applications with large language models. You can create and store [embeddings](../../../ai/quickstarts/generate-text-embeddings/index.md) for retrieval augmented generation (RAG).
 
 ## Usage[#](#usage)
 

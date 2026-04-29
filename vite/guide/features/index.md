@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:38.964Z"
 content_hash: "9344cd9bba71a44460873e2c6440c42483921edc49187d4aa1b7122efcd75ef0"
 menu_path: ["Features ​"]
 section_path: []
-nav_prev: {"path": "../why/index.md", "title": "Why Vite \u200b"}
-nav_next: {"path": "../cli/index.md", "title": "Command Line Interface \u200b"}
+nav_prev: {"path": "vite/guide/why/index.md", "title": "Why Vite \u200b"}
+nav_next: {"path": "vite/guide/cli/index.md", "title": "Command Line Interface \u200b"}
 ---
 
 # .scss and .sass

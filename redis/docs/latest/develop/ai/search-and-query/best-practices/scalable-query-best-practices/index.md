@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:44.449Z"
 content_hash: "d4660153473e46127081e2bd93e173c2076237c3d03219f3b4ab15dad1cfa938"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Best practices for Redis Search performance","→","Best practices for Redis Search performance"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Best practices for Redis Search performance","→","Best practices for Redis Search performance"]
-nav_prev: {"path": "../index-mgmt-best-practices/index.md", "title": "Index management best practices for Redis Search"}
-nav_next: {"path": "../../deprecated/development/index.md", "title": "Developer notes"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/index-mgmt-best-practices/index.md", "title": "Index management best practices for Redis Search"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/deprecated/development/index.md", "title": "Developer notes"}
 ---
 
 # Best practices for Redis Search performance
@@ -33,8 +33,8 @@ Below are some basic steps to ensure good performance of Redis Search .
 
 ### General
 
-*   Favor [`TAG`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#tag-fields) over [`NUMERIC`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#numeric-fields) for use cases that only require matching.
-*   Favor [`TAG`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#tag-fields) over [`TEXT`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#text-fields) for use cases that don’t require full-text capabilities (pure match).
+*   Favor [`TAG`](../../indexing/field-and-type-options/index.md#tag-fields) over [`NUMERIC`](../../indexing/field-and-type-options/index.md#numeric-fields) for use cases that only require matching.
+*   Favor [`TAG`](../../indexing/field-and-type-options/index.md#tag-fields) over [`TEXT`](../../indexing/field-and-type-options/index.md#text-fields) for use cases that don’t require full-text capabilities (pure match).
 
 ### Non-threaded search
 

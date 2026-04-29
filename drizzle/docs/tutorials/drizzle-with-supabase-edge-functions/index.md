@@ -10,8 +10,8 @@ content_hash: "5c30b7eae9e8e8952781d6409836b15e403815984a0ae2eaeea269510956adf8"
 menu_path: ["Drizzle with Supabase Edge Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
-nav_next: {"path": "../drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-supabase/index.md", "title": "Drizzle with Supabase Database"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
 ---
 
 To learn how to create a basic Edge Function on your local machine and then deploy it, see the [Edge Functions Quickstart](https://supabase.com/docs/guides/functions/quickstart).

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:12.690Z"
 content_hash: "221ebf44680dc7b51f3c0a5f99fd3807218d2c33d605c6c5aaf0fc1e34fab1f2"
 menu_path: ["SSG Helper ​"]
 section_path: []
-nav_prev: {"path": "../route/index.md", "title": "Route Helper \u200b"}
-nav_next: {"path": "../streaming/index.md", "title": "Streaming Helper \u200b"}
+nav_prev: {"path": "hono/docs/helpers/route/index.md", "title": "Route Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/streaming/index.md", "title": "Streaming Helper \u200b"}
 ---
 
 SSG Helper generates a static site from your Hono application. It will retrieve the contents of registered routes and save them as static files.

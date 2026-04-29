@@ -10,8 +10,8 @@ content_hash: "b1f4c47a1d7cf7ca9234b531797fc6fb2590a29023cb44502d429443fdc5f451"
 menu_path: ["deno outdated"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../lint/index.md", "title": "deno lint"}
-nav_next: {"path": "../publish/index.md", "title": "deno publish"}
+nav_prev: {"path": "deno/runtime/reference/cli/lint/index.md", "title": "deno lint"}
+nav_next: {"path": "deno/runtime/reference/cli/publish/index.md", "title": "deno publish"}
 ---
 
 **On this page**
@@ -26,7 +26,7 @@ nav_next: {"path": "../publish/index.md", "title": "deno publish"}
 
 ## Checking for outdated dependencies
 
-The `outdated` subcommand checks for new versions of NPM and JSR dependencies listed in [`deno.json`](/runtime/fundamentals/configuration/) or `package.json` files, and displays dependencies that could be updated. Workspaces are fully supported, including workspaces where some members use `package.json` and others use `deno.json`.
+The `outdated` subcommand checks for new versions of NPM and JSR dependencies listed in [`deno.json`](../../../fundamentals/configuration/index.md) or `package.json` files, and displays dependencies that could be updated. Workspaces are fully supported, including workspaces where some members use `package.json` and others use `deno.json`.
 
 For example, take a project with a `deno.json` file:
 

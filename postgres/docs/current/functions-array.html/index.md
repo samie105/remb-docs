@@ -10,8 +10,8 @@ content_hash: "08dedb3ac63bf6f005e5fceca280820c61335664603a74af8b0a1281941fcefd"
 menu_path: ["PostgreSQL: Documentation: 18: 9.19. Array Functions and Operators"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../functions-admin.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.28.\u00a0System Administration Functions"}
-nav_next: {"path": "../functions-bitstring.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.6.\u00a0Bit String Functions and Operators"}
+nav_prev: {"path": "postgres/docs/current/functions-admin.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.28.\u00a0System Administration Functions"}
+nav_next: {"path": "postgres/docs/current/functions-bitstring.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.6.\u00a0Bit String Functions and Operators"}
 ---
 
 | 

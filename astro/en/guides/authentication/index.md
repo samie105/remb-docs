@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:20.975Z"
 content_hash: "6413ef71ca15d2b908ae8f48db2332facb9c83956e5b5f70a82e0bf377dd51e8"
 menu_path: ["Authentication"]
 section_path: []
-nav_prev: {"path": "../ecommerce/index.md", "title": "E-commerce"}
-nav_next: {"path": "../testing/index.md", "title": "Testing"}
+nav_prev: {"path": "astro/en/guides/ecommerce/index.md", "title": "E-commerce"}
+nav_next: {"path": "astro/en/guides/testing/index.md", "title": "Testing"}
 ---
 
 # Authentication
@@ -19,7 +19,7 @@ Authentication and authorization are two security processes that manage access t
 
 Authentication allows you to customize areas of your site for logged-in individuals and provides the greatest protection for personal or private information. Authentication libraries (e.g. [Better Auth](https://better-auth.com/), [Clerk](https://clerk.com)) provide utilities for multiple authentication methods such as email sign-in and OAuth providers.
 
-See how to [add authentication with Supabase](/en/guides/backend/supabase/#adding-authentication-with-supabase), [add authentication with Firebase](/en/guides/backend/firebase/#adding-authentication-with-firebase), or [add authentication with Scalekit](/en/guides/backend/scalekit/#adding-authentication-with-scalekit) in our dedicated guides for these backend services.
+See how to [add authentication with Supabase](../backend/supabase/index.md#adding-authentication-with-supabase), [add authentication with Firebase](../backend/firebase/index.md#adding-authentication-with-firebase), or [add authentication with Scalekit](../backend/scalekit/index.md#adding-authentication-with-scalekit) in our dedicated guides for these backend services.
 
 ## Better Auth
 
@@ -194,7 +194,7 @@ export const onRequest = clerkMiddleware((auth, context) => {  if (!auth().userI
 
 [Section titled “Guide”](#guide)
 
-Follow the [Scalekit & Astro guide](/en/guides/backend/scalekit/) to add authentication to your Astro SSR project using social login, enterprise SSO, and more.
+Follow the [Scalekit & Astro guide](../backend/scalekit/index.md) to add authentication to your Astro SSR project using social login, enterprise SSO, and more.
 
 ### Examples
 
@@ -209,4 +209,4 @@ Follow the [Scalekit & Astro guide](/en/guides/backend/scalekit/) to add authent
 
 *   [Using Microsoft Entra Id EasyAuth with Astro and Azure Static Web App](https://agramont.net/blog/entra-id-easyauth-with-astro/)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

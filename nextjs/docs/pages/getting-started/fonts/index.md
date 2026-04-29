@@ -11,19 +11,19 @@ menu_path: ["How to use fonts"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../images/index.md", "title": "Image Optimization"}
-nav_next: {"path": "../css/index.md", "title": "How to use CSS in your application"}
+nav_prev: {"path": "nextjs/docs/pages/getting-started/images/index.md", "title": "Image Optimization"}
+nav_next: {"path": "nextjs/docs/pages/getting-started/css/index.md", "title": "How to use CSS in your application"}
 ---
 
 # How to use fonts
 
 Last updated April 23, 2026
 
-The [`next/font`](/docs/app/api-reference/components/font) module automatically optimizes your fonts and removes external network requests for improved privacy and performance.
+The [`next/font`](../../../app/api-reference/components/font/index.md) module automatically optimizes your fonts and removes external network requests for improved privacy and performance.
 
 It includes **built-in self-hosting** for any font file. This means you can optimally load web fonts with no layout shift.
 
-To start using `next/font`, import it from [`next/font/local`](#local-fonts) or [`next/font/google`](#google-fonts), call it as a function with the appropriate options, and set the `className` of the element you want to apply the font to. For example, you can apply fonts globally in your [Custom App](/docs/pages/building-your-application/routing/custom-app) (`pages/_app`):
+To start using `next/font`, import it from [`next/font/local`](#local-fonts) or [`next/font/google`](#google-fonts), call it as a function with the appropriate options, and set the `className` of the element you want to apply the font to. For example, you can apply fonts globally in your [Custom App](../../building-your-application/routing/custom-app/index.md) (`pages/_app`):
 
 pages/\_app.tsx
 
@@ -99,7 +99,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
 ## Local fonts[](#local-fonts)
 
-To use a local font, import your font from `next/font/local` and specify the [`src`](/docs/pages/api-reference/components/font#src) of your local font file. Fonts can be stored in the [`public`](/docs/pages/api-reference/file-conventions/public-folder) folder or inside the `pages` folder. For example:
+To use a local font, import your font from `next/font/local` and specify the [`src`](../../api-reference/components/font/index.md#src) of your local font file. Fonts can be stored in the [`public`](../../api-reference/file-conventions/public-folder/index.md) folder or inside the `pages` folder. For example:
 
 pages/\_app.tsx
 
@@ -161,6 +161,6 @@ See the API Reference for the full feature set of Next.js Font
 
 API Reference for the Font Module
 
-](/docs/pages/api-reference/components/font)
+](../../api-reference/components/font/index.md)
 
 Was this helpful?

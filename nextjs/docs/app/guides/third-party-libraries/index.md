@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../testing/vitest/index.md", "title": "How to set up Vitest with Next.js"}
-nav_next: {"path": "../upgrading/index.md", "title": "Upgrade Guides"}
+nav_prev: {"path": "nextjs/docs/app/guides/testing/vitest/index.md", "title": "How to set up Vitest with Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/upgrading/index.md", "title": "Upgrade Guides"}
 ---
 
 # How to optimize third-party libraries
@@ -223,7 +223,7 @@ Options to pass to the `<GoogleAnalytics>` component.
 | --- | --- | --- |
 | `gaId` | Required | Your [measurement ID](https://support.google.com/analytics/answer/12270356). Usually starts with `G-`. |
 | `dataLayerName` | Optional | Name of the data layer. Defaults to `dataLayer`. |
-| `nonce` | Optional | A [nonce](/docs/app/guides/content-security-policy#nonces). |
+| `nonce` | Optional | A [nonce](../content-security-policy/index.md#nonces). |
 
 ### Google Maps Embed[](#google-maps-embed)
 

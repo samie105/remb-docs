@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:04.737Z"
 content_hash: "6b94d65803cf4ec165d6b6b9483be86b0be6fe27f25eee81c77e4a68cebf05bb"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Android Kotlin","Android Kotlin"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Android Kotlin","Android Kotlin"]
-nav_prev: {"path": "../with-ionic-vue/index.md", "title": "Build a User Management App with Ionic Vue"}
-nav_next: {"path": "../with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-vue/index.md", "title": "Build a User Management App with Ionic Vue"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a Product Management Android App with Jetpack Compose
 
 This tutorial demonstrates how to build a basic product management app. The app demonstrates management operations, photo upload, account creation and authentication using:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - users log in through magic links sent to their email (without having to set up a password).
-*   [Supabase Storage](/docs/guides/storage) - users can upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - users log in through magic links sent to their email (without having to set up a password).
+*   [Supabase Storage](../../../storage/index.md) - users can upload a profile photo.
 
 ![manage-product-cover](/docs/img/guides/kotlin/manage-product-cover.png)
 
@@ -53,7 +53,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=androidkotlin).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -71,7 +71,7 @@ From the [Google Console](https://console.developers.google.com/apis/library), c
 
 ![Create Google OAuth credentials](/docs/img/guides/kotlin/google-cloud-oauth-credentials-create.png)
 
-In your [Supabase Auth settings](https://app.supabase.com/project/_/auth/providers) enable Google as a provider and set the required credentials as outlined in the [auth docs](/docs/guides/auth/social-login/auth-google).
+In your [Supabase Auth settings](https://app.supabase.com/project/_/auth/providers) enable Google as a provider and set the required credentials as outlined in the [auth docs](../../../auth/social-login/auth-google/index.md).
 
 ## Building the app[#](#building-the-app)
 

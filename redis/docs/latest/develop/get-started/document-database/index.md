@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:50.797Z"
 content_hash: "393c81bb5a7e5d0065bf76f67a206fd122cd41e43a503738ed338744c5207bdf"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a document database quick start guide","→","Redis as a document database quick start guide"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a document database quick start guide","→","Redis as a document database quick start guide"]
-nav_prev: {"path": "../data-store/index.md", "title": "Redis as an in-memory data structure store quick start guide"}
-nav_next: {"path": "../rag/index.md", "title": "RAG with Redis"}
+nav_prev: {"path": "redis/docs/latest/develop/get-started/data-store/index.md", "title": "Redis as an in-memory data structure store quick start guide"}
+nav_next: {"path": "redis/docs/latest/develop/get-started/rag/index.md", "title": "RAG with Redis"}
 ---
 
 # Redis as a document database quick start guide
@@ -47,7 +47,7 @@ The easiest way to get started with [Redis](/docs/latest/operate/oss_and_stack/)
 
 This free Redis Cloud database comes out of the box with all the Redis Open Source features.
 
-You can alternatively use the [installation guides](/docs/latest/operate/oss_and_stack/install/install-stack/) to install Redis Open Source on your local machine.
+You can alternatively use the [installation guides](../../../operate/oss_and_stack/install/install-stack/index.md) to install Redis Open Source on your local machine.
 
 ## Connect
 
@@ -1328,9 +1328,9 @@ You can copy and paste the connection details from the Redis Cloud database conf
 
 ## Create an index
 
-As explained in the [in-memory data store](/docs/latest/develop/get-started/data-store/) quick start guide, Redis allows you to access an item directly via its key. You also learned how to scan the keyspace. Whereby you can use other data structures (e.g., hashes and sorted sets) as secondary indexes, your application would need to maintain those indexes manually. Redis is a document database that allows you to declare which fields are auto-indexed. Redis currently supports secondary index creation on the [hashes](/docs/latest/develop/data-types/hashes/) and [JSON](/docs/latest/develop/data-types/json/) documents.
+As explained in the [in-memory data store](../data-store/index.md) quick start guide, Redis allows you to access an item directly via its key. You also learned how to scan the keyspace. Whereby you can use other data structures (e.g., hashes and sorted sets) as secondary indexes, your application would need to maintain those indexes manually. Redis is a document database that allows you to declare which fields are auto-indexed. Redis currently supports secondary index creation on the [hashes](/docs/latest/develop/data-types/hashes/) and [JSON](/docs/latest/develop/data-types/json/) documents.
 
-The following example shows an [FT.CREATE](/docs/latest/commands/ft.create/) command that creates an index with some text fields, a numeric field (price), and a tag field (condition). The text fields have a weight of 1.0, meaning they have the same relevancy in the context of full-text searches. The field names follow the [JSONPath](/docs/latest/develop/data-types/json/path/) notion. Each such index field maps to a property within the JSON document.
+The following example shows an [FT.CREATE](/docs/latest/commands/ft.create/) command that creates an index with some text fields, a numeric field (price), and a tag field (condition). The text fields have a weight of 1.0, meaning they have the same relevancy in the context of full-text searches. The field names follow the [JSONPath](../../data-types/json/path/index.md) notion. Each such index field maps to a property within the JSON document.
 
 ```plaintext
 > FT.CREATE idx:bicycle ON JSON PREFIX 1 bicycle: SCORE 1.0 SCHEMA $.brand AS brand TEXT WEIGHT 1.0 $.model AS model TEXT WEIGHT 1.0 $.description AS description TEXT WEIGHT 1.0 $.price AS price NUMERIC $.condition AS condition TAG SEPARATOR ,
@@ -7746,13 +7746,13 @@ public class SearchQuickstartExample
 }
 ```
 
-Please see the [query documentation](/docs/latest/develop/ai/search-and-query/query/) to learn how to make more advanced queries.
+Please see the [query documentation](../../ai/search-and-query/query/index.md) to learn how to make more advanced queries.
 
 ## Next steps
 
 You can learn more about how to use Redis Open Source as a vector database in the following quick start guide:
 
-*   [Redis as a vector database](/docs/latest/develop/get-started/vector-database/)
+*   [Redis as a vector database](../vector-database/index.md)
 
 ## Continue learning with Redis University
 

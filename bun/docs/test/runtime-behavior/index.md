@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:39.724Z"
 content_hash: "2e7010b25744287f8e0e758d071ed37fb88a73236a6facaa8cb189d5e48c0edb"
 menu_path: ["Runtime behavior"]
 section_path: []
-nav_prev: {"path": "../reporters/index.md", "title": "Test Reporters"}
-nav_next: {"path": "../snapshots/index.md", "title": "Snapshots"}
+nav_prev: {"path": "bun/docs/test/reporters/index.md", "title": "Test Reporters"}
+nav_next: {"path": "bun/docs/test/snapshots/index.md", "title": "Snapshots"}
 ---
 
 # Reduces memory usage for the test runner VM

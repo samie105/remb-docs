@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:20.894Z"
 content_hash: "6c0db715822e96d6a8f01eca48c78e53b81ab201fff84428d47b9e136f0b54ea"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Facebook","Facebook"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Facebook","Facebook"]
-nav_prev: {"path": "../auth-discord/index.md", "title": "Login with Discord"}
-nav_next: {"path": "../auth-figma/index.md", "title": "Login with Figma"}
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-discord/index.md", "title": "Login with Discord"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-figma/index.md", "title": "Login with Figma"}
 ---
 
 # 
@@ -60,9 +60,9 @@ When testing OAuth locally with the Supabase CLI, ensure your OAuth provider is 
 
 If this callback URL is missing or misconfigured, OAuth sign-in may fail or not redirect correctly during local development.
 
-See the [local development docs](/docs/guides/local-development) for more details.
+See the [local development docs](../../../local-development/index.md) for more details.
 
-For testing OAuth locally with the Supabase CLI see the [local development docs](/docs/guides/local-development).
+For testing OAuth locally with the Supabase CLI see the [local development docs](../../../local-development/index.md).
 
 ## Set up Facebook login for your Facebook app[#](#set-up-facebook-login-for-your-facebook-app)
 
@@ -116,7 +116,7 @@ You can also configure the Facebook auth provider using the Management API:
 
 Make sure you're using the right `supabase` client in the following code.
 
-If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](/docs/guides/auth/server-side/creating-a-client) for instructions on creating your Supabase client.
+If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](../../server-side/creating-a-client/index.md) for instructions on creating your Supabase client.
 
 When your user signs in, call [`signInWithOAuth()`](/docs/reference/javascript/auth-signinwithoauth) with `facebook` as the `provider`:
 
@@ -124,7 +124,7 @@ When your user signs in, call [`signInWithOAuth()`](/docs/reference/javascript/a
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6async function signInWithFacebook() {7  const { data, error } = await supabase.auth.signInWithOAuth({8    provider: 'facebook',9  })1011  if (error) {12    console.error('Error signing in with Facebook:', error.message)13    return14  }1516  // The user will be redirected to Facebook for authentication17}
 ```
 
-For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](/docs/guides/auth/redirect-urls).
+For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](../../redirect-urls/index.md).
 
 In the browser, `signInWithOAuth` automatically redirects to the OAuth provider's authentication endpoint, which then redirects to your endpoint.
 

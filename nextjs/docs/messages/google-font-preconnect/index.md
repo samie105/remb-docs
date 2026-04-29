@@ -11,8 +11,8 @@ menu_path: ["Google Font Preconnect"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../google-font-display/index.md", "title": "Google Font Display"}
-nav_next: {"path": "../inline-script-id/index.md", "title": "Inline script id"}
+nav_prev: {"path": "nextjs/docs/messages/google-font-display/index.md", "title": "Google Font Display"}
+nav_next: {"path": "nextjs/docs/messages/inline-script-id/index.md", "title": "Inline script id"}
 ---
 
 # Google Font Preconnect
@@ -41,6 +41,6 @@ pages/\_document.js
 
 -   [Preconnect to required origins](https://web.dev/uses-rel-preconnect/)
 -   [Preconnect and dns-prefetch](https://web.dev/preconnect-and-dns-prefetch/#resolve-domain-name-early-with-reldns-prefetch)
--   [Next.js Font Optimization](/docs/pages/api-reference/components/font)
+-   [Next.js Font Optimization](../../pages/api-reference/components/font/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:02.940Z"
 content_hash: "4342603b4b7a821e550ad8ee9697e0876bc9f0d6b71f1ad8b750e0995436e29e"
 menu_path: ["PostgreSQL: Documentation: 18: EXPLAIN"]
 section_path: []
-nav_prev: {"path": "../sql-end.html/index.md", "title": "PostgreSQL: Documentation: 18: END"}
-nav_next: {"path": "../sql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.2.\u00a0Value Expressions"}
+nav_prev: {"path": "postgres/docs/current/sql-end.html/index.md", "title": "PostgreSQL: Documentation: 18: END"}
+nav_next: {"path": "postgres/docs/current/sql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.2.\u00a0Value Expressions"}
 ---
 
 EXPLAIN — show the execution plan of a statement

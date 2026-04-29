@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:10.756Z"
 content_hash: "f56d7488d72f4c56643e348ab91bc185f51f855620f243ddc01d2f6c237d1b17"
 menu_path: ["PostgreSQL: Documentation: 18: DECLARE"]
 section_path: []
-nav_prev: {"path": "../sql-createtype.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TYPE"}
-nav_next: {"path": "../sql-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: DELETE"}
+nav_prev: {"path": "postgres/docs/current/sql-createtype.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TYPE"}
+nav_next: {"path": "postgres/docs/current/sql-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: DELETE"}
 ---
 
 ## Description

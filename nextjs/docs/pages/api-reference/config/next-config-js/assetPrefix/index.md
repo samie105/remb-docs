@@ -11,23 +11,23 @@ menu_path: ["assetPrefix"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
-nav_next: {"path": "../basePath/index.md", "title": "basePath"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/basePath/index.md", "title": "basePath"}
 ---
 
 # assetPrefix
 
 Last updated April 23, 2026
 
-> **Attention**: [Deploying to Vercel](/docs/pages/getting-started/deploying) automatically configures a global CDN for your Next.js project. You do not need to manually setup an Asset Prefix.
+> **Attention**: [Deploying to Vercel](../../../../getting-started/deploying/index.md) automatically configures a global CDN for your Next.js project. You do not need to manually setup an Asset Prefix.
 
-> **Good to know**: Next.js 9.5+ added support for a customizable [Base Path](/docs/app/api-reference/config/next-config-js/basePath), which is better suited for hosting your application on a sub-path like `/docs`. We do not suggest you use a custom Asset Prefix for this use case.
+> **Good to know**: Next.js 9.5+ added support for a customizable [Base Path](../../../../../app/api-reference/config/next-config-js/basePath/index.md), which is better suited for hosting your application on a sub-path like `/docs`. We do not suggest you use a custom Asset Prefix for this use case.
 
 ## Set up a CDN[](#set-up-a-cdn)
 
 To set up a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network), you can set up an asset prefix and configure your CDN's origin to resolve to the domain that Next.js is hosted on.
 
-Open `next.config.mjs` and add the `assetPrefix` config based on the [phase](/docs/app/api-reference/config/next-config-js#async-configuration):
+Open `next.config.mjs` and add the `assetPrefix` config based on the [phase](../../../../../app/api-reference/config/next-config-js/index.md#async-configuration):
 
 next.config.mjs
 
@@ -63,7 +63,7 @@ The exact configuration for uploading your files to a given CDN will depend on y
 
 While `assetPrefix` covers requests to `_next/static`, it does not influence the following paths:
 
--   Files in the [public](/docs/pages/api-reference/file-conventions/public-folder) folder; if you want to serve those assets over a CDN, you'll have to introduce the prefix yourself
+-   Files in the [public](../../../file-conventions/public-folder/index.md) folder; if you want to serve those assets over a CDN, you'll have to introduce the prefix yourself
 -   `/_next/data/` requests for `getServerSideProps` pages. These requests will always be made against the main domain since they're not static.
 -   `/_next/data/` requests for `getStaticProps` pages. These requests will always be made against the main domain to support [Incremental Static Generation](/docs/pages/guides/incremental-static-regeneration), even if you're not using it (for consistency).
 

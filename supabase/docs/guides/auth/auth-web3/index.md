@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:13.046Z"
 content_hash: "e026b88fa3162838bd1001c2306fbc1c29ee9e55125eb8b45dad7b11e97d35c4"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Web3 (Ethereum or Solana)","Web3 (Ethereum or Solana)"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Web3 (Ethereum or Solana)","Web3 (Ethereum or Solana)"]
-nav_prev: {"path": "../auth-smtp/index.md", "title": "Send emails with custom SMTP"}
-nav_next: {"path": "../custom-oauth-providers/index.md", "title": "Custom OAuth/OIDC Providers"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-smtp/index.md", "title": "Send emails with custom SMTP"}
+nav_next: {"path": "supabase/docs/guides/auth/custom-oauth-providers/index.md", "title": "Custom OAuth/OIDC Providers"}
 ---
 
 # 
@@ -46,12 +46,12 @@ It defines the wallet address, timestamp, browser location where the sign-in occ
 
 Most Web3 wallets are able to recognize these messages and show a dedicated "Confirm Sign In" dialog validating and presenting the information in the message in a secure and responsible way to the user. Even if the wallet does not directly support these messages, it will use the message signature dialog instead.
 
-Finally the Supabase Auth server validates both the message's contents and signature before issuing a valid [User session](/docs/guides/auth/sessions) to your application. Validation rules include:
+Finally the Supabase Auth server validates both the message's contents and signature before issuing a valid [User session](../sessions/index.md) to your application. Validation rules include:
 
 *   Message structure validation
 *   Cryptographic signature verification
 *   Timestamp validation, ensuring the signature was created within 10 minutes of the sign-in call
-*   URI and Domain validation, ensuring these match your server's defined [Redirect URLs](/docs/guides/auth/redirect-urls)
+*   URI and Domain validation, ensuring these match your server's defined [Redirect URLs](../redirect-urls/index.md)
 
 The wallet address is used as the identity identifier, and in the identity data you can also find the statement and additional metadata.
 
@@ -72,7 +72,7 @@ User accounts that sign in with their Web3 wallet will not have an email address
 Control your project's exposure by configuring in the dashboard:
 
 *   [Rate Limits for Web3](/dashboard/project/_/auth/rate-limits)
-*   [Enable CAPTCHA protection](/docs/guides/auth/auth-captcha)
+*   [Enable CAPTCHA protection](../auth-captcha/index.md)
 
 Or in the CLI:
 
@@ -80,7 +80,7 @@ Or in the CLI:
 1[auth.rate_limit]2# Number of Web3 logins that can be made in a 5 minute interval per IP address.3web3 = 3045[auth.captcha]6enabled = true7provider = "hcaptcha" # or other supported providers8secret = "0x0000000000000000000000000000000000000000"
 ```
 
-Many wallet applications will warn the user if the message sent for signing is not coming from the page they are currently visiting. To further prevent your Supabase project from receiving signed messages destined for other applications, you must register your application's URL using the [Redirect URL settings](/docs/guides/auth/redirect-urls).
+Many wallet applications will warn the user if the message sent for signing is not coming from the page they are currently visiting. To further prevent your Supabase project from receiving signed messages destined for other applications, you must register your application's URL using the [Redirect URL settings](../redirect-urls/index.md).
 
 For example if the user is signing in to the page `https://example.com/sign-in` you should add the following configurations in the Redirect URL settings:
 

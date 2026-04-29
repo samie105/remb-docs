@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:05.809Z"
 content_hash: "a2fd1084b593ee2a007d0f6c0e2200a3d25c44ad6559c0f6c9c733e553f4d852"
 menu_path: ["Auth","Auth","More","More","More","Sessions","Sessions","PKCE flow","PKCE flow"]
 section_path: ["Auth","Auth","More","More","More","Sessions","Sessions","PKCE flow","PKCE flow"]
-nav_prev: {"path": "../implicit-flow/index.md", "title": "Implicit flow"}
-nav_next: {"path": "../../signing-keys/index.md", "title": "JWT Signing Keys"}
+nav_prev: {"path": "supabase/docs/guides/auth/sessions/implicit-flow/index.md", "title": "Implicit flow"}
+nav_next: {"path": "supabase/docs/guides/auth/signing-keys/index.md", "title": "JWT Signing Keys"}
 ---
 
 # 
@@ -25,7 +25,7 @@ About authenticating with PKCE flow.
 
 The Proof Key for Code Exchange (PKCE) flow is one of two ways that a user can authenticate and your app can receive the necessary access and refresh tokens.
 
-The flow is an implementation detail handled for you by Supabase Auth, but understanding the difference between PKCE and [implicit flow](/docs/guides/auth/sessions/implicit-flow) is important for understanding the difference between client-only and server-side auth.
+The flow is an implementation detail handled for you by Supabase Auth, but understanding the difference between PKCE and [implicit flow](../implicit-flow/index.md) is important for understanding the difference between client-only and server-side auth.
 
 ## How it works[#](#how-it-works)
 

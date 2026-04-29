@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:04.285Z"
 content_hash: "00d8ce999b2e754652aff616dd97454e9b071510d4ec6ebb5def23fd909213c4"
 menu_path: ["Missing hint on client:only directive."]
 section_path: []
-nav_prev: {"path": "../no-client-entrypoint/index.md", "title": "No client entrypoint specified in renderer."}
-nav_next: {"path": "../no-image-metadata/index.md", "title": "Could not process image metadata."}
+nav_prev: {"path": "astro/en/reference/errors/no-client-entrypoint/index.md", "title": "No client entrypoint specified in renderer."}
+nav_next: {"path": "astro/en/reference/errors/no-image-metadata/index.md", "title": "Could not process image metadata."}
 ---
 
 # Missing hint on client:only directive.
@@ -29,6 +29,6 @@ nav_next: {"path": "../no-image-metadata/index.md", "title": "Could not process 
 
 **See Also:**
 
-*   [`client:only`](/en/reference/directives-reference/#clientonly)
+*   [`client:only`](../../directives-reference/index.md#clientonly)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

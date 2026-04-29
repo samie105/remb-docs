@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:48.329Z"
 content_hash: "63b9671c945a117b65bd234b3bd90d641f4527d04bb617eb3277628c6e9a64bb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis MCP","→","Redis MCP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis MCP","→","Redis MCP"]
-nav_prev: {"path": "../redis-data-integration/when-to-use/index.md", "title": "When to use RDI"}
-nav_next: {"path": "../redis-py/index.md", "title": "Python client for Redis"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/when-to-use/index.md", "title": "When to use RDI"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-py/index.md", "title": "Python client for Redis"}
 ---
 
 # Redis MCP

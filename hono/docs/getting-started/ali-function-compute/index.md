@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:52.252Z"
 content_hash: "e027e40aa022d3e8f6ea14bef7fdbd53b1e29d55279e2895a3a8c3ecb4c7a17d"
 menu_path: ["Alibaba Cloud Function Compute ​"]
 section_path: []
-nav_prev: {"path": "../supabase-functions/index.md", "title": "Supabase Edge Functions \u200b"}
-nav_next: {"path": "../webassembly-wasi/index.md", "title": "WebAssembly (w/ WASI) \u200b"}
+nav_prev: {"path": "hono/docs/getting-started/supabase-functions/index.md", "title": "Supabase Edge Functions \u200b"}
+nav_next: {"path": "hono/docs/getting-started/webassembly-wasi/index.md", "title": "WebAssembly (w/ WASI) \u200b"}
 ---
 
 # Please select a provider: Alibaba Cloud (alibaba)

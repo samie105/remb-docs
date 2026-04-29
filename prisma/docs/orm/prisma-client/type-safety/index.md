@@ -11,8 +11,8 @@ menu_path: ["Type safety Overview"]
 section_path: []
 tab_variants: ["Generated type","Model","Generated type","Example query","Generated type","Example query"]
 content_language: "en"
-nav_prev: {"path": "../testing/unit-testing/index.md", "title": "Unit testing"}
-nav_next: {"path": "operating-against-partial-structures-of-model-types/index.md", "title": "Operating against partial structures of your model types"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/testing/unit-testing/index.md", "title": "Unit testing"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/operating-against-partial-structures-of-model-types/index.md", "title": "Operating against partial structures of your model types"}
 ---
 
 Prisma Client provides full type safety for queries, even for partial queries or included relations. This page explains how to leverage the generated types and utilities

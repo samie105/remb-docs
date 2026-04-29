@@ -10,8 +10,8 @@ content_hash: "857f5e0b174ba15d791a63582850434115fcf685879d66a393c086036b6ce378"
 menu_path: ["filter: saturate()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../filter-invert/index.md", "title": "filter: invert()"}
-nav_next: {"path": "../filter-sepia/index.md", "title": "filter: sepia()"}
+nav_prev: {"path": "tailwind/docs/filter-invert/index.md", "title": "filter: invert()"}
+nav_next: {"path": "tailwind/docs/filter-sepia/index.md", "title": "filter: sepia()"}
 ---
 
 # filter: saturate()
@@ -77,7 +77,7 @@ Prefix a `filter: saturate()` utility with a breakpoint variant like `md:` to on
 <img class="saturate-50 md:saturate-150 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

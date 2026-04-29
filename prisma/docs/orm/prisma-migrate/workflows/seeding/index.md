@@ -11,8 +11,8 @@ menu_path: ["Seeding"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../prototyping-your-schema/index.md", "title": "Prototyping your schema"}
-nav_next: {"path": "../squashing-migrations/index.md", "title": "Squashing migrations"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md", "title": "Prototyping your schema"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/squashing-migrations/index.md", "title": "Squashing migrations"}
 ---
 
 # -e Exit immediately when a command returns a non-zero status.

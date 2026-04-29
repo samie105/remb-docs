@@ -11,8 +11,8 @@ menu_path: ["Fetching Data"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../server-and-client-components/index.md", "title": "Server and Client Components"}
-nav_next: {"path": "../mutating-data/index.md", "title": "Mutating Data"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/server-and-client-components/index.md", "title": "Server and Client Components"}
+nav_next: {"path": "nextjs/docs/app/getting-started/mutating-data/index.md", "title": "Mutating Data"}
 ---
 
 # Fetching Data
@@ -54,9 +54,9 @@ export default async function Page() {
 
 > **Good to know:**
 > 
-> -   Identical `fetch` requests in a React component tree are [memoized](/docs/app/glossary#memoization) by default, so you can fetch data in the component that needs it instead of drilling props.
-> -   `fetch` requests are not cached by default and will block the page from rendering until the request is complete. Use the [`use cache`](/docs/app/api-reference/directives/use-cache) directive to cache results, or wrap the fetching component in [`<Suspense>`](/docs/app/getting-started/caching#streaming-uncached-data) to stream fresh data at request time. See [caching](/docs/app/getting-started/caching) for details.
-> -   During development, you can log `fetch` calls for better visibility and debugging. See the [`logging` API reference](/docs/app/api-reference/config/next-config-js/logging).
+> -   Identical `fetch` requests in a React component tree are [memoized](../../glossary/index.md#memoization) by default, so you can fetch data in the component that needs it instead of drilling props.
+> -   `fetch` requests are not cached by default and will block the page from rendering until the request is complete. Use the [`use cache`](../../api-reference/directives/use-cache/index.md) directive to cache results, or wrap the fetching component in [`<Suspense>`](../caching/index.md#streaming-uncached-data) to stream fresh data at request time. See [caching](../caching/index.md) for details.
+> -   During development, you can log `fetch` calls for better visibility and debugging. See the [`logging` API reference](../../api-reference/config/next-config-js/logging/index.md).
 
 #### With an ORM or database[](#with-an-orm-or-database)
 
@@ -81,13 +81,13 @@ export default async function Page() {
 }
 ```
 
-You should still ensure requests are properly authenticated and authorized. For best practices on securing server-side data access, see the [data security guide](/docs/app/guides/data-security).
+You should still ensure requests are properly authenticated and authorized. For best practices on securing server-side data access, see the [data security guide](../../guides/data-security/index.md).
 
 ### Streaming[](#streaming)
 
 When you fetch data in Server Components, the data is fetched and rendered on the server for each request. If you have any slow data requests, the whole route will be blocked from rendering until all the data is fetched.
 
-To improve the initial load time and user experience, you can break the page into smaller _chunks_ and progressively send those chunks from the server to the client. This is called streaming. See the [Streaming guide](/docs/app/guides/streaming) for a deeper look at how streaming works, including the HTTP contract, infrastructure considerations, and performance trade-offs.
+To improve the initial load time and user experience, you can break the page into smaller _chunks_ and progressively send those chunks from the server to the client. This is called streaming. See the [Streaming guide](../../guides/streaming/index.md) for a deeper look at how streaming works, including the HTTP contract, infrastructure considerations, and performance trade-offs.
 
 ![How Server Rendering with Streaming Works](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-with-streaming.png)
 
@@ -117,13 +117,13 @@ On navigation, the user will immediately see the layout and a [loading state](#c
 
 ![Loading UI](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-ui.png)
 
-Behind the scenes, `loading.js` will be [nested inside `layout.js`](/docs/app/getting-started/project-structure#component-hierarchy), and will automatically wrap the `page.js` file and any children below in a `<Suspense>` boundary.
+Behind the scenes, `loading.js` will be [nested inside `layout.js`](../project-structure/index.md#component-hierarchy), and will automatically wrap the `page.js` file and any children below in a `<Suspense>` boundary.
 
 ![loading.js overview](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-overview.png)
 
-Because of this, a layout that accesses uncached or runtime data (e.g. `cookies()`, `headers()`, or uncached fetches) does not fall back to a same route segment `loading.js`. Instead, it blocks navigation until the layout finishes rendering. [Cache Components](/docs/app/getting-started/caching) prevents this by guiding you with a build-time error.
+Because of this, a layout that accesses uncached or runtime data (e.g. `cookies()`, `headers()`, or uncached fetches) does not fall back to a same route segment `loading.js`. Instead, it blocks navigation until the layout finishes rendering. [Cache Components](../caching/index.md) prevents this by guiding you with a build-time error.
 
-To fix this, wrap the uncached access in its own [`<Suspense>`](#with-suspense) boundary with a fallback, or move the data fetching into `page.js` where `loading.js` can cover it. See [`loading.js`](/docs/app/api-reference/file-conventions/loading) for more details.
+To fix this, wrap the uncached access in its own [`<Suspense>`](#with-suspense) boundary with a fallback, or move the data fetching into `page.js` where `loading.js` can cover it. See [`loading.js`](../../api-reference/file-conventions/loading/index.md) for more details.
 
 This is why, while `loading.js` works well for streaming route segments, using `<Suspense>` closer to the runtime or uncached data access is recommended.
 
@@ -308,13 +308,13 @@ async function Playlists({ artistID }: { artistID: string }) {
 
 In this example, `<Suspense>` allows the playlists to stream in after the artist data loads. However, the page still waits for the artist data before displaying anything. To prevent this, you can wrap the entire page component in a `<Suspense>` boundary (for example, using a [`loading.js` file](#with-loadingjs)) to show a loading state immediately.
 
-Ensure your data source can resolve the first request quickly, as it blocks everything else. If you can't optimize the request further, consider [caching](/docs/app/getting-started/caching) the result if the data changes infrequently.
+Ensure your data source can resolve the first request quickly, as it blocks everything else. If you can't optimize the request further, consider [caching](../caching/index.md) the result if the data changes infrequently.
 
 ### Parallel data fetching[](#parallel-data-fetching)
 
 Parallel data fetching happens when data requests in a route are eagerly initiated and start at the same time.
 
-By default, [layouts and pages](/docs/app/getting-started/layouts-and-pages) are rendered in parallel. So each segment starts fetching data as soon as possible.
+By default, [layouts and pages](../layouts-and-pages/index.md) are rendered in parallel. So each segment starts fetching data as soon as possible.
 
 However, within _any_ component, multiple `async`/`await` requests can still be sequential if placed after the other. For example, `getAlbums` will be blocked until `getArtist` is resolved:
 
@@ -520,30 +520,30 @@ Learn more about the features mentioned in this page by reading the API Referenc
 
 Learn the built-in data security features in Next.js and learn best practices for protecting your application's data.
 
-](/docs/app/guides/data-security)[
+](../../guides/data-security/index.md)[
 
 ### fetch
 
 API reference for the extended fetch function.
 
-](/docs/app/api-reference/functions/fetch)[
+](../../api-reference/functions/fetch/index.md)[
 
 ### loading.js
 
 API reference for the loading.js file.
 
-](/docs/app/api-reference/file-conventions/loading)[
+](../../api-reference/file-conventions/loading/index.md)[
 
 ### logging
 
 Configure logging behavior in the terminal when running Next.js in development mode, including fetch logging, incoming requests, and forwarding browser console logs to the terminal.
 
-](/docs/app/api-reference/config/next-config-js/logging)[
+](../../api-reference/config/next-config-js/logging/index.md)[
 
 ### taint
 
 Enable tainting Objects and Values.
 
-](/docs/app/api-reference/config/next-config-js/taint)
+](../../api-reference/config/next-config-js/taint/index.md)
 
 Was this helpful?

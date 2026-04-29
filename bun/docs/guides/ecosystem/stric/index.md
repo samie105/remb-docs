@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:29.136Z"
 content_hash: "cdb7c882b632b0ef33dae8b8c048abade2d4b6b5dc05bd126a8b2e923bc74a9e"
 menu_path: ["Build an HTTP server using StricJS and Bun"]
 section_path: []
-nav_prev: {"path": "../ssr-react/index.md", "title": "Server-side render (SSR) a React component"}
-nav_next: {"path": "../sveltekit/index.md", "title": "Build an app with SvelteKit and Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/ssr-react/index.md", "title": "Server-side render (SSR) a React component"}
+nav_next: {"path": "bun/docs/guides/ecosystem/sveltekit/index.md", "title": "Build an app with SvelteKit and Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../sveltekit/index.md", "title": "Build an app with SvelteKi
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 [StricJS](https://github.com/bunsvr) is a Bun framework for building high-performance web applications and APIs.
 
@@ -102,10 +102,10 @@ Server-side render (SSR) a React component
 
 Previous
 
-](/docs/guides/ecosystem/ssr-react)[
+](../ssr-react/index.md)[
 
 Build an app with SvelteKit and Bun
 
 Next
 
-](/docs/guides/ecosystem/sveltekit)
+](../sveltekit/index.md)

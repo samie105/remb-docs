@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:44.955Z"
 content_hash: "3565a3f8be2ce9e39af78a6c462dac143d2701a08ce7ffcc57530d3e2fce2d1c"
 menu_path: ["JSX ​"]
 section_path: []
-nav_prev: {"path": "../helpers/index.md", "title": "Helpers \u200b"}
-nav_next: {"path": "../jsx-dom/index.md", "title": "Client Components \u200b"}
+nav_prev: {"path": "hono/docs/guides/helpers/index.md", "title": "Helpers \u200b"}
+nav_next: {"path": "hono/docs/guides/jsx-dom/index.md", "title": "Client Components \u200b"}
 ---
 
 You can write HTML with JSX syntax with `hono/jsx`.

@@ -11,15 +11,15 @@ menu_path: ["Script Component"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../link/index.md", "title": "Link Component"}
-nav_next: {"path": "../../file-conventions/index.md", "title": "File-system conventions"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/components/link/index.md", "title": "Link Component"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/index.md", "title": "File-system conventions"}
 ---
 
 # Script Component
 
 Last updated April 23, 2026
 
-This API reference will help you understand how to use [props](#props) available for the Script Component. For features and usage, please see the [Optimizing Scripts](/docs/app/guides/scripts) page.
+This API reference will help you understand how to use [props](#props) available for the Script Component. For features and usage, please see the [Optimizing Scripts](../../../guides/scripts/index.md) page.
 
 app/dashboard/page.tsx
 

@@ -10,8 +10,8 @@ content_hash: "c7dda90f7a94d74f54b63c0f59ce22e8857054deddb217676bf285d2ee8379b9"
 menu_path: ["text-indent"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text-wrap/index.md", "title": "text-wrap"}
-nav_next: {"path": "../vertical-align/index.md", "title": "vertical-align"}
+nav_prev: {"path": "tailwind/docs/text-wrap/index.md", "title": "text-wrap"}
+nav_next: {"path": "tailwind/docs/vertical-align/index.md", "title": "vertical-align"}
 ---
 
 Utilities for controlling the amount of empty space shown before text in a block.

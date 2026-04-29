@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:17.828Z"
 content_hash: "e52e5a4b2fd5ca3d6e6aba45708d11115565aee487e941c512c0a3cee7e3ebb1"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Java client for Redis","→","Java client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Java client for Redis","→","Java client for Redis"]
-nav_prev: {"path": "../hiredis/index.md", "title": "C client for Redis"}
-nav_next: {"path": "../lettuce/index.md", "title": "Java client for Redis"}
+nav_prev: {"path": "redis/docs/latest/integrate/hiredis/index.md", "title": "C client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/lettuce/index.md", "title": "Java client for Redis"}
 ---
 
 # Java client for Redis
@@ -36,6 +36,6 @@ Jedis is a popular Java client for Redis that provides a simple, synchronous int
 
 ## Getting Started
 
-Refer to the complete [Jedis guide](/docs/latest/develop/clients/jedis/) to install, connect, and use Jedis.
+Refer to the complete [Jedis guide](../../develop/clients/jedis/index.md) to install, connect, and use Jedis.
 
 ## On this page

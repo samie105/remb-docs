@@ -10,8 +10,8 @@ content_hash: "841cf7a19713ff84603f2ea969a1a014bf7da42bea9d7143521898fa2a6c7386"
 menu_path: ["Data sources"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Overview of Prisma Schema"}
-nav_next: {"path": "../generators/index.md", "title": "Generators"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/index.md", "title": "Overview of Prisma Schema"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/generators/index.md", "title": "Generators"}
 ---
 
 Overview

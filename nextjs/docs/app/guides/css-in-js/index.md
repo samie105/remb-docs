@@ -11,8 +11,8 @@ menu_path: ["How to use CSS-in-JS libraries"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../content-security-policy/index.md", "title": "How to set a Content Security Policy (CSP) for your Next.js application"}
-nav_next: {"path": "../custom-server/index.md", "title": "How to set up a custom server in Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/content-security-policy/index.md", "title": "How to set a Content Security Policy (CSP) for your Next.js application"}
+nav_next: {"path": "nextjs/docs/app/guides/custom-server/index.md", "title": "How to set up a custom server in Next.js"}
 ---
 
 # How to use CSS-in-JS libraries
@@ -85,7 +85,7 @@ export default function StyledJsxRegistry({
 }
 ```
 
-Then, wrap your [root layout](/docs/app/api-reference/file-conventions/layout#root-layout) with the registry:
+Then, wrap your [root layout](../../api-reference/file-conventions/layout/index.md#root-layout) with the registry:
 
 app/layout.tsx
 
@@ -196,6 +196,6 @@ export default function RootLayout({
 > -   During server rendering, styles will be extracted to a global registry and flushed to the `<head>` of your HTML. This ensures the style rules are placed before any content that might use them. In the future, we may use an upcoming React feature to determine where to inject the styles.
 > -   During streaming, styles from each chunk will be collected and appended to existing styles. After client-side hydration is complete, `styled-components` will take over as usual and inject any further dynamic styles.
 > -   We specifically use a Client Component at the top level of the tree for the style registry because it's more efficient to extract CSS rules this way. It avoids re-generating styles on subsequent server renders, and prevents them from being sent in the Server Component payload.
-> -   For advanced use cases where you need to configure individual properties of styled-components compilation, you can read our [Next.js styled-components API reference](/docs/architecture/nextjs-compiler#styled-components) to learn more.
+> -   For advanced use cases where you need to configure individual properties of styled-components compilation, you can read our [Next.js styled-components API reference](../../../architecture/nextjs-compiler/index.md#styled-components) to learn more.
 
 Was this helpful?

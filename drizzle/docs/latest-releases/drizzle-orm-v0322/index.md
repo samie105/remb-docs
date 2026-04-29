@@ -10,8 +10,8 @@ content_hash: "888b4e21da41e5e82fc23617fbbe67e4f5d870120bd5703a9e5594a576270bb3"
 menu_path: ["Drizzle ORM - DrizzleORM v0.32.2 release"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-orm-v0321/index.md", "title": "Drizzle ORM - DrizzleORM v0.32.1 release"}
-nav_next: {"path": "../drizzle-orm-v1beta2/index.md", "title": "New Features"}
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0321/index.md", "title": "Drizzle ORM - DrizzleORM v0.32.1 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v1beta2/index.md", "title": "New Features"}
 ---
 
 Drizzle ORM - DrizzleORM v0.32.2 release

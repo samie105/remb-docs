@@ -11,8 +11,8 @@ menu_path: ["favicon, icon, and apple-icon"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Metadata Files API Reference"}
-nav_next: {"path": "../manifest/index.md", "title": "manifest.json"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/index.md", "title": "Metadata Files API Reference"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/manifest/index.md", "title": "manifest.json"}
 ---
 
 # favicon, icon, and apple-icon
@@ -99,7 +99,7 @@ Generate an app icon by creating an `icon` or `apple-icon` route that default ex
 | `icon` | `.js`, `.ts`, `.tsx` |
 | `apple-icon` | `.js`, `.ts`, `.tsx` |
 
-The easiest way to generate an icon is to use the [`ImageResponse`](/docs/app/api-reference/functions/image-response) API from `next/og`.
+The easiest way to generate an icon is to use the [`ImageResponse`](../../../functions/image-response/index.md) API from `next/og`.
 
 app/icon.tsx
 
@@ -153,10 +153,10 @@ export default function Icon() {
 
 > **Good to know**:
 > 
-> -   By default, generated icons are [**statically optimized**](/docs/app/glossary#prerendering) (generated at build time and cached) unless they use [Request-time APIs](/docs/app/glossary#request-time-apis) or uncached data.
-> -   You can generate multiple icons in the same file using [`generateImageMetadata`](/docs/app/api-reference/functions/generate-image-metadata).
+> -   By default, generated icons are [**statically optimized**](../../../../glossary/index.md#prerendering) (generated at build time and cached) unless they use [Request-time APIs](../../../../glossary/index.md#request-time-apis) or uncached data.
+> -   You can generate multiple icons in the same file using [`generateImageMetadata`](../../../functions/generate-image-metadata/index.md).
 > -   You cannot generate a `favicon` icon. Use [`icon`](#icon) or a [favicon.ico](#favicon) file instead.
-> -   App icons are special Route Handlers that are cached by default unless they use a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
+> -   App icons are special Route Handlers that are cached by default unless they use a [Request-time API](../../../../glossary/index.md#request-time-apis) or [dynamic config](../../../../guides/caching-without-cache-components/index.md#dynamic) option.
 
 ### Props[](#props)
 
@@ -164,9 +164,9 @@ The default export function receives the following props:
 
 #### `params` (optional)[](#params-optional)
 
-A promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) object from the root segment down to the segment `icon` or `apple-icon` is colocated in.
+A promise that resolves to an object containing the [dynamic route parameters](../../dynamic-routes/index.md) object from the root segment down to the segment `icon` or `apple-icon` is colocated in.
 
-> **Good to know**: If you use [`generateImageMetadata`](/docs/app/api-reference/functions/generate-image-metadata), the function will also receive an `id` prop that is a promise resolving to the `id` value from one of the items returned by `generateImageMetadata`.
+> **Good to know**: If you use [`generateImageMetadata`](../../../functions/generate-image-metadata/index.md), the function will also receive an `id` prop that is a promise resolving to the `id` value from one of the items returned by `generateImageMetadata`.
 
 app/shop/\[slug\]/icon.tsx
 
@@ -242,7 +242,7 @@ export default function Icon() {}
 
 #### Route Segment Config[](#route-segment-config)
 
-`icon` and `apple-icon` are specialized [Route Handlers](/docs/app/api-reference/file-conventions/route) that can use the same [route segment configuration](/docs/app/api-reference/file-conventions/route-segment-config) options as Pages and Layouts.
+`icon` and `apple-icon` are specialized [Route Handlers](../../route/index.md) that can use the same [route segment configuration](../../route-segment-config/index.md) options as Pages and Layouts.
 
 ## Version History[](#version-history)
 

@@ -10,8 +10,8 @@ content_hash: "844ffa6b6adff3dae4cb23466650a590603187c0cd1526a41b874c5cbc65a70a"
 menu_path: ["PostgreSQL: Documentation: 18: 65.5. BRIN Indexes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
-nav_next: {"path": "../btree-gin.html/index.md", "title": "PostgreSQL: Documentation: 18: F.7.\u00a0btree_gin \u2014 GIN operator classes with B-tree behavior"}
+nav_prev: {"path": "postgres/docs/current/bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
+nav_next: {"path": "postgres/docs/current/btree-gin.html/index.md", "title": "PostgreSQL: Documentation: 18: F.7.\u00a0btree_gin \u2014 GIN operator classes with B-tree behavior"}
 ---
 
 ### 65.5.1. Introduction [#](#BRIN-INTRO)

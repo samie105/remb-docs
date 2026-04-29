@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:31:53.023Z"
 content_hash: "53c3166b91a364f9461ec415db85c4c8c0fda9342082a00656705846bdbc7c88"
 menu_path: ["Supabase Documentation"]
 section_path: []
-nav_next: {"path": "guides/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "supabase/docs/guides/getting-started/index.md", "title": "Getting Started"}
 ---
 
 # Supabase Documentation
@@ -66,7 +66,7 @@ Set up and connect a database in just a few minutes.
 
 ](/docs/guides/getting-started/quickstarts/flask)
 
-[Start with Supabase AI prompts](/docs/guides/getting-started/ai-prompts)
+[Start with Supabase AI prompts](guides/getting-started/ai-prompts/index.md)
 
 ## Products
 
@@ -78,7 +78,7 @@ Set up and connect a database in just a few minutes.
     
     
     
-    ](/docs/guides/database/overview)
+    ](guides/database/overview/index.md)
 *   [
     
     Auth
@@ -87,7 +87,7 @@ Set up and connect a database in just a few minutes.
     
     
     
-    ](/docs/guides/auth)
+    ](guides/auth/index.md)
 *   [
     
     Storage
@@ -96,7 +96,7 @@ Set up and connect a database in just a few minutes.
     
     
     
-    ](/docs/guides/storage)
+    ](guides/storage/index.md)
 *   [
     
     Realtime
@@ -105,7 +105,7 @@ Set up and connect a database in just a few minutes.
     
     
     
-    ](/docs/guides/realtime)
+    ](guides/realtime/index.md)
 *   [
     
     Edge Functions
@@ -114,7 +114,7 @@ Set up and connect a database in just a few minutes.
     
     
     
-    ](/docs/guides/functions)
+    ](guides/functions/index.md)
 
 ## Modules
 
@@ -122,19 +122,19 @@ Set up and connect a database in just a few minutes.
 
 ##### AI & Vectors
 
-](/docs/guides/ai)[
+](guides/ai/index.md)[
 
 ##### Cron
 
-](/docs/guides/cron)[
+](guides/cron/index.md)[
 
 ##### Queues
 
-](/docs/guides/queues)[
+](guides/queues/index.md)[
 
 ##### Data REST API
 
-](/docs/guides/api)[
+](guides/api/index.md)[
 
 ##### GraphQL API
 
@@ -176,7 +176,7 @@ Bring your existing data, auth and storage to Supabase following our migration g
 
 Explore more resources about /guides/resourcesExplore more resources
 
-](/docs/guides/resources)
+](guides/resources/index.md)
 
 *   [
     
@@ -315,7 +315,7 @@ Explore more resources about /guides/resourcesExplore more resources
     
     
     
-    ](/docs/guides/platform)
+    ](guides/platform/index.md)
 *   [
     
     Integrations
@@ -324,7 +324,7 @@ Explore more resources about /guides/resourcesExplore more resources
     
     
     
-    ](/docs/guides/integrations)
+    ](guides/integrations/index.md)
 *   [
     
     Supabase UI
@@ -352,7 +352,7 @@ Get started with self-hosting Supabase.
 
 More on Self-Hosting about /guides/self-hostingMore on Self-Hosting
 
-](/docs/guides/self-hosting)
+](guides/self-hosting/index.md)
 
 *   [
     

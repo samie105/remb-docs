@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:43.416Z"
 content_hash: "cc3659ac29bc816c517c78b95103034fe8ba82cf7e28dfb6aa9b509e17cd00fd"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Semantic AI Search","Semantic AI Search"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Semantic AI Search","Semantic AI Search"]
-nav_prev: {"path": "../screenshots/index.md", "title": "Taking Screenshots with Puppeteer"}
-nav_next: {"path": "../send-emails/index.md", "title": "Sending Emails"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/screenshots/index.md", "title": "Taking Screenshots with Puppeteer"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/send-emails/index.md", "title": "Sending Emails"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Semantic Search with pgvector and Supabase Edge Functions
 
 * * *
 
-[Semantic search](/docs/guides/ai/semantic-search) interprets the meaning behind user queries rather than exact [keywords](/docs/guides/ai/keyword-search). It uses machine learning to capture the intent and context behind the query, handling language nuances like synonyms, phrasing variations, and word relationships.
+[Semantic search](../../../ai/semantic-search/index.md) interprets the meaning behind user queries rather than exact [keywords](../../../ai/keyword-search/index.md). It uses machine learning to capture the intent and context behind the query, handling language nuances like synonyms, phrasing variations, and word relationships.
 
 Since Supabase Edge Runtime [v1.36.0](https://github.com/supabase/edge-runtime/releases/tag/v1.36.0) you can run the [`gte-small` model](https://huggingface.co/Supabase/gte-small) natively within Supabase Edge Functions without any external dependencies! This allows you to generate text embeddings without calling any external APIs!
 
@@ -43,7 +43,7 @@ Given the [following table definition](https://github.com/supabase/supabase/blob
 1create extension if not exists vector with schema extensions;23create table embeddings (4  id bigint primary key generated always as identity,5  content text not null,6  embedding extensions.vector (384)7);8alter table embeddings enable row level security;910create index on embeddings using hnsw (embedding vector_ip_ops);
 ```
 
-You can deploy the [following edge function](https://github.com/supabase/supabase/blob/master/examples/ai/edge-functions/supabase/functions/generate-embedding/index.ts) as a [database webhook](/docs/guides/database/webhooks) to generate the embeddings for any text content inserted into the table:
+You can deploy the [following edge function](https://github.com/supabase/supabase/blob/master/examples/ai/edge-functions/supabase/functions/generate-embedding/index.ts) as a [database webhook](../../../database/webhooks/index.md) to generate the embeddings for any text content inserted into the table:
 
 ```
 1const model = new Supabase.ai.Session('gte-small')23Deno.serve(async (req) => {4  const payload: WebhookPayload = await req.json()5  const { content, id } = payload.record67  // Generate embedding.8  const embedding = await model.run(content, {9    mean_pool: true,10    normalize: true,11  })1213  // Store in database.14  const { error } = await supabase15    .from('embeddings')16    .update({ embedding: JSON.stringify(embedding) })17    .eq('id', id)18  if (error) console.warn(error.message)1920  return new Response('ok')21})

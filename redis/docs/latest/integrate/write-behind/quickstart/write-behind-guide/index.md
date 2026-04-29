@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:27.706Z"
 content_hash: "cbe9b1a8eb87fae0a9e9fd15684687c48bdcbcd75a019fc8c3f666047c8a4a57"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Write-behind (preview)","→","Write-behind (preview)","→\n      \n        Quickstart","→","Quickstart"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Write-behind (preview)","→","Write-behind (preview)","→\n      \n        Quickstart","→","Quickstart"]
-nav_prev: {"path": "../../installation/index.md", "title": "Installation"}
-nav_next: {"path": "../../reference/data-transformation-block-types/add_field/index.md", "title": "add_field"}
+nav_prev: {"path": "redis/docs/latest/integrate/write-behind/installation/index.md", "title": "Installation"}
+nav_next: {"path": "redis/docs/latest/integrate/write-behind/reference/data-transformation-block-types/add_field/index.md", "title": "add_field"}
 ---
 
 # Quickstart
@@ -161,7 +161,7 @@ The `redis` section is common for every pipeline initiated by an event in Redis,
 *   The `row_format` attribute can be used with the value `full` to receive both the `before` and `after` sections of the payload. Note that for write-behind events the `before` value of the key is never provided.
     
 
-> Note: Write-behind does not support the [`expired`](/docs/latest/develop/pubsub/keyspace-notifications/#events-generated-by-different-commands) event. Therefore, keys that are expired in Redis will not be deleted from the target database automatically. Notes: The `redis` attribute is a breaking change replacing the `keyspace` attribute. The `key_pattern` attribute replaces the `pattern` attribute. The `exclude_commands` attributes replaces the `exclude-commands` attribute. If you upgrade to version 0.105 and beyond, you must edit your existing jobs and redeploy them.
+> Note: Write-behind does not support the [`expired`](../../../../develop/pubsub/keyspace-notifications/index.md#events-generated-by-different-commands) event. Therefore, keys that are expired in Redis will not be deleted from the target database automatically. Notes: The `redis` attribute is a breaking change replacing the `keyspace` attribute. The `key_pattern` attribute replaces the `pattern` attribute. The `exclude_commands` attributes replaces the `exclude-commands` attribute. If you upgrade to version 0.105 and beyond, you must edit your existing jobs and redeploy them.
 
 ### Output section
 

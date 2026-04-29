@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:34.011Z"
 content_hash: "56e1f592e5a37e77fbaf66f465e6f7c5731b119751e155c421103fca15eb6c17"
 menu_path: ["Plugin API ​"]
 section_path: []
-nav_prev: {"path": "../migration/index.md", "title": "Migration from v7 \u200b"}
-nav_next: {"path": "../api-hmr/index.md", "title": "HMR API \u200b"}
+nav_prev: {"path": "vite/guide/migration/index.md", "title": "Migration from v7 \u200b"}
+nav_next: {"path": "vite/guide/api-hmr/index.md", "title": "HMR API \u200b"}
 ---
 
 Vite plugins extends Rolldown's plugin interface with a few extra Vite-specific options. As a result, you can write a Vite plugin once and have it work for both dev and build.

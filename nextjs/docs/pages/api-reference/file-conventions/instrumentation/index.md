@@ -11,8 +11,8 @@ menu_path: ["instrumentation.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "File-system conventions"}
-nav_next: {"path": "../proxy/index.md", "title": "Proxy"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/index.md", "title": "File-system conventions"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/proxy/index.md", "title": "Proxy"}
 ---
 
 # instrumentation.js
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 The `instrumentation.js|ts` file is used to integrate observability tools into your application, allowing you to track the performance and behavior, and to debug issues in production.
 
-To use it, place the file in the **root** of your application or inside a [`src` folder](/docs/app/api-reference/file-conventions/src-folder) if using one.
+To use it, place the file in the **root** of your application or inside a [`src` folder](../../../../app/api-reference/file-conventions/src-folder/index.md) if using one.
 
 ## Exports[](#exports)
 

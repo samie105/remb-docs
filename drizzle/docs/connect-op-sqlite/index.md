@@ -10,8 +10,8 @@ content_hash: "943ae98e07ba73eeb36bd30ccb6b6770a6d5e8fc83825e101708609440881912"
 menu_path: ["Drizzle <> OP SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-expo-sqlite/index.md", "title": "Drizzle <> Expo SQLite"}
-nav_next: {"path": "../connect-react-native-sqlite/index.md", "title": "Drizzle <> React Native SQLite"}
+nav_prev: {"path": "drizzle/docs/connect-expo-sqlite/index.md", "title": "Drizzle <> Expo SQLite"}
+nav_next: {"path": "drizzle/docs/connect-react-native-sqlite/index.md", "title": "Drizzle <> React Native SQLite"}
 ---
 
 According to the **[official github page](https://github.com/OP-Engineering/op-sqlite)**, OP-SQLite embeds the latest version of SQLite and provides a low-level API to execute SQL queries.

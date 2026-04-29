@@ -11,8 +11,8 @@ menu_path: ["Shared Prisma Client extensions"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../result/index.md", "title": "Add custom fields and methods to query results"}
-nav_next: {"path": "permit-rbac/index.md", "title": "Fine-Grained Authorization (Permit)"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/result/index.md", "title": "Add custom fields and methods to query results"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/permit-rbac/index.md", "title": "Fine-Grained Authorization (Permit)"}
 ---
 
 You can share your [Prisma Client extensions](../index.md) with other users, either as packages or as modules, and import extensions that other users create into your project.

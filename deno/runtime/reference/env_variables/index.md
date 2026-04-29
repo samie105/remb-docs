@@ -10,8 +10,8 @@ content_hash: "4e5e62fd155b5482f97475677da3d885472a25000dfd7fe2554cc2e16f89225c"
 menu_path: ["Environment variables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../continuous_integration/index.md", "title": "Continuous integration"}
-nav_next: {"path": "../vscode/index.md", "title": "Deno & Visual Studio Code"}
+nav_prev: {"path": "deno/runtime/reference/continuous_integration/index.md", "title": "Continuous integration"}
+nav_next: {"path": "deno/runtime/reference/vscode/index.md", "title": "Deno & Visual Studio Code"}
 ---
 
 **On this page**
@@ -58,7 +58,7 @@ Note
 
 When multiple declarations for the same environment variable exist within a single `.env` file, the first occurrence is applied. However, if the same variable is defined across multiple `.env` files (using multiple `--env-file` arguments), the value from the last file specified takes precedence. This means that the first occurrence found in the last `.env` file listed will be applied.
 
-## [`@std/dotenv`](/runtime/reference/std/dotenv/)
+## [`@std/dotenv`](../std/dotenv/index.md)
 
 The `dotenv` package in the standard library can be used to load environment variables from `.env`.
 
@@ -98,7 +98,7 @@ As with other CLI commands, you can set environment variables before running a c
 MY_VAR="my value" deno run main.ts
 ```
 
-This can be useful when you want to vary a task based on an environment variable, and can be helpfully combined with [`deno task`](/runtime/reference/cli/task/) commands like so:
+This can be useful when you want to vary a task based on an environment variable, and can be helpfully combined with [`deno task`](../cli/task/index.md) commands like so:
 
 deno.json
 
@@ -143,7 +143,7 @@ The Deno runtime has these special environment variables.
 | DENO\_TLS\_CA\_STORE | Comma-separated list of order dependent certificate stores.  
 Possible values: `system`, `mozilla`. Defaults to `mozilla`. |
 | DENO\_CERT | Load certificate authority from PEM encoded file |
-| DENO\_COVERAGE\_DIR | Set the directory for collecting coverage profile data. This option only works for [`deno test` subcommand](/runtime/reference/cli/test/). |
+| DENO\_COVERAGE\_DIR | Set the directory for collecting coverage profile data. This option only works for [`deno test` subcommand](../cli/test/index.md). |
 | DENO\_DIR | Set the cache directory |
 | DENO\_INSTALL\_ROOT | Set deno install's output directory (defaults to `$HOME/.deno/bin`) |
 | DENO\_REPL\_HISTORY | Set REPL history file path History file is disabled when the value is empty  

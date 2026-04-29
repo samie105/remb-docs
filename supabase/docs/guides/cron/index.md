@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:00.481Z"
 content_hash: "cbbe4e1bfa2f00cdbca9b08f211738bb5613ed8ed58d2b651865cc7423d98332"
 menu_path: ["Cron","Cron","Overview","Overview"]
 section_path: ["Cron","Cron","Overview","Overview"]
-nav_prev: {"path": "../cli/index.md", "title": "Local Development & CLI"}
-nav_next: {"path": "install/index.md", "title": "Install"}
+nav_prev: {"path": "supabase/docs/guides/cli/index.md", "title": "Local Development & CLI"}
+nav_next: {"path": "supabase/docs/guides/cron/install/index.md", "title": "Install"}
 ---
 
 # 

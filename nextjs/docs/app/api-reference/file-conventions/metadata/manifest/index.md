@@ -11,8 +11,8 @@ menu_path: ["manifest.json"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../app-icons/index.md", "title": "favicon, icon, and apple-icon"}
-nav_next: {"path": "../opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/app-icons/index.md", "title": "favicon, icon, and apple-icon"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
 ---
 
 # manifest.json
@@ -39,7 +39,7 @@ app/manifest.json | app/manifest.webmanifest
 
 Add a `manifest.js` or `manifest.ts` file that returns a [`Manifest` object](#manifest-object).
 
-> Good to know: `manifest.js` is a special Route Handlers that is cached by default unless it uses a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
+> Good to know: `manifest.js` is a special Route Handlers that is cached by default unless it uses a [Request-time API](../../../../glossary/index.md#request-time-apis) or [dynamic config](../../../../guides/caching-without-cache-components/index.md#dynamic) option.
 
 app/manifest.ts
 
@@ -70,6 +70,6 @@ export default function manifest(): MetadataRoute.Manifest {
 
 ### Manifest Object[](#manifest-object)
 
-The manifest object contains an extensive list of options that may be updated due to new web standards. For information on all the current options, refer to the `MetadataRoute.Manifest` type in your code editor if using [TypeScript](/docs/app/api-reference/config/typescript#ide-plugin) or see the [MDN](https://developer.mozilla.org/docs/Web/Manifest) docs.
+The manifest object contains an extensive list of options that may be updated due to new web standards. For information on all the current options, refer to the `MetadataRoute.Manifest` type in your code editor if using [TypeScript](../../../config/typescript/index.md#ide-plugin) or see the [MDN](https://developer.mozilla.org/docs/Web/Manifest) docs.
 
 Was this helpful?

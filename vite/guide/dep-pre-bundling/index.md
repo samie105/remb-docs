@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:06.793Z"
 content_hash: "a0b743bea0738bb6ab75c27d6090d3fbecfc7c0670e2d2c4072c5a4867635b5e"
 menu_path: ["Dependency Pre-Bundling ​"]
 section_path: []
-nav_prev: {"path": "../using-plugins/index.md", "title": "Using Plugins \u200b"}
-nav_next: {"path": "../assets/index.md", "title": "Static Asset Handling \u200b"}
+nav_prev: {"path": "vite/guide/using-plugins/index.md", "title": "Using Plugins \u200b"}
+nav_next: {"path": "vite/guide/assets/index.md", "title": "Static Asset Handling \u200b"}
 ---
 
 When you run `vite` for the first time, Vite prebundles your project dependencies before loading your site locally. It is done automatically and transparently by default.

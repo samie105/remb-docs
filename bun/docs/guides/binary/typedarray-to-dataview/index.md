@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:38.767Z"
 content_hash: "bda324c1558c6a365c13bf6cf72b73bec8a2a9a46dc81db9c621fbc1210a330c"
 menu_path: ["Convert a Uint8Array to a DataView"]
 section_path: []
-nav_prev: {"path": "../typedarray-to-buffer/index.md", "title": "Convert a Uint8Array to a Buffer"}
-nav_next: {"path": "../typedarray-to-readablestream/index.md", "title": "Convert a Uint8Array to a ReadableStream"}
+nav_prev: {"path": "bun/docs/guides/binary/typedarray-to-buffer/index.md", "title": "Convert a Uint8Array to a Buffer"}
+nav_next: {"path": "bun/docs/guides/binary/typedarray-to-readablestream/index.md", "title": "Convert a Uint8Array to a ReadableStream"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../typedarray-to-readablestream/index.md", "title": "Convert
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 A [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) is a _typed array_ class, meaning it is a mechanism for viewing data in an underlying `ArrayBuffer`. The following snippet creates a \[`DataView`\] instance over the same range of data as the `Uint8Array`.
 
@@ -44,7 +44,7 @@ const dv = new DataView(arr.buffer, arr.byteOffset, arr.byteLength);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a Uint8Array to a Blob
 
 Previous
 
-](/docs/guides/binary/typedarray-to-blob)[
+](../typedarray-to-blob/index.md)[
 
 Convert a Uint8Array to a ReadableStream
 
 Next
 
-](/docs/guides/binary/typedarray-to-readablestream)
+](../typedarray-to-readablestream/index.md)

@@ -11,8 +11,8 @@ menu_path: ["Fast Refresh"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../accessibility/index.md", "title": "Accessibility"}
-nav_next: {"path": "../nextjs-compiler/index.md", "title": "Next.js Compiler"}
+nav_prev: {"path": "nextjs/docs/architecture/accessibility/index.md", "title": "Accessibility"}
+nav_next: {"path": "nextjs/docs/architecture/nextjs-compiler/index.md", "title": "Next.js Compiler"}
 ---
 
 # Fast Refresh
@@ -69,6 +69,6 @@ For example, when you edit `useMemo(() => x * 2, [x])` to `useMemo(() => x * 10,
 
 Sometimes, this can lead to unexpected results. For example, even a `useEffect` with an empty array of dependencies would still re-run once during Fast Refresh.
 
-However, writing code resilient to occasional re-running of `useEffect` is a good practice even without Fast Refresh. It will make it easier for you to introduce new dependencies to it later on and it's enforced by [React Strict Mode](/docs/pages/api-reference/config/next-config-js/reactStrictMode), which we highly recommend enabling.
+However, writing code resilient to occasional re-running of `useEffect` is a good practice even without Fast Refresh. It will make it easier for you to introduce new dependencies to it later on and it's enforced by [React Strict Mode](../../pages/api-reference/config/next-config-js/reactStrictMode/index.md), which we highly recommend enabling.
 
 Was this helpful?

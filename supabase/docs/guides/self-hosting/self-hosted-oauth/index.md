@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:41.310Z"
 content_hash: "f437af716f4998d840b305945d521e8b0081b8e5ba147dd923f4f0b272f5b6f4"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure Social Login (OAuth)","Configure Social Login (OAuth)"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure Social Login (OAuth)","Configure Social Login (OAuth)"]
-nav_prev: {"path": "../self-hosted-functions/index.md", "title": "Self-Hosted Functions"}
-nav_next: {"path": "../self-hosted-phone-mfa/index.md", "title": "Configure Phone Login & MFA"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-functions/index.md", "title": "Self-Hosted Functions"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-phone-mfa/index.md", "title": "Configure Phone Login & MFA"}
 ---
 
 # 
@@ -29,7 +29,7 @@ This guide covers the **server-side configuration** required to enable social lo
 
 You need:
 
-*   A working self-hosted Supabase installation. See [Self-Hosting with Docker](/docs/guides/self-hosting/docker).
+*   A working self-hosted Supabase installation. See [Self-Hosting with Docker](../docker/index.md).
 *   `API_EXTERNAL_URL` set to the publicly reachable URL of your Supabase instance (e.g., `https://<your-domain>`).
 
 HTTPS is strongly recommended in production. Most OAuth providers reject `http://` callback URLs (except `localhost`).
@@ -154,7 +154,7 @@ Apple
 
 \-
 
-[Login with Apple](/docs/guides/auth/social-login/auth-apple)
+[Login with Apple](../../auth/social-login/auth-apple/index.md)
 
 Azure (Microsoft)
 
@@ -162,7 +162,7 @@ Azure (Microsoft)
 
 `URL` (tenant URL)
 
-[Login with Azure](/docs/guides/auth/social-login/auth-azure)
+[Login with Azure](../../auth/social-login/auth-azure/index.md)
 
 Bitbucket
 
@@ -170,7 +170,7 @@ Bitbucket
 
 \-
 
-[Login with Bitbucket](/docs/guides/auth/social-login/auth-bitbucket)
+[Login with Bitbucket](../../auth/social-login/auth-bitbucket/index.md)
 
 Discord
 
@@ -178,7 +178,7 @@ Discord
 
 \-
 
-[Login with Discord](/docs/guides/auth/social-login/auth-discord)
+[Login with Discord](../../auth/social-login/auth-discord/index.md)
 
 Facebook
 
@@ -186,7 +186,7 @@ Facebook
 
 \-
 
-[Login with Facebook](/docs/guides/auth/social-login/auth-facebook)
+[Login with Facebook](../../auth/social-login/auth-facebook/index.md)
 
 Figma
 
@@ -194,7 +194,7 @@ Figma
 
 \-
 
-[Login with Figma](/docs/guides/auth/social-login/auth-figma)
+[Login with Figma](../../auth/social-login/auth-figma/index.md)
 
 GitHub
 
@@ -202,7 +202,7 @@ GitHub
 
 `URL` (for GitHub Enterprise)
 
-[Login with GitHub](/docs/guides/auth/social-login/auth-github)
+[Login with GitHub](../../auth/social-login/auth-github/index.md)
 
 GitLab
 
@@ -210,7 +210,7 @@ GitLab
 
 `URL` (for self-hosted GitLab)
 
-[Login with GitLab](/docs/guides/auth/social-login/auth-gitlab)
+[Login with GitLab](../../auth/social-login/auth-gitlab/index.md)
 
 Google
 
@@ -218,7 +218,7 @@ Google
 
 \-
 
-[Login with Google](/docs/guides/auth/social-login/auth-google)
+[Login with Google](../../auth/social-login/auth-google/index.md)
 
 Kakao
 
@@ -226,7 +226,7 @@ Kakao
 
 \-
 
-[Login with Kakao](/docs/guides/auth/social-login/auth-kakao)
+[Login with Kakao](../../auth/social-login/auth-kakao/index.md)
 
 Keycloak (OIDC)
 
@@ -234,7 +234,7 @@ Keycloak (OIDC)
 
 `URL` (realm URL, **required**)
 
-[Login with Keycloak](/docs/guides/auth/social-login/auth-keycloak)
+[Login with Keycloak](../../auth/social-login/auth-keycloak/index.md)
 
 LinkedIn (OIDC)
 
@@ -242,7 +242,7 @@ LinkedIn (OIDC)
 
 \-
 
-[Login with LinkedIn](/docs/guides/auth/social-login/auth-linkedin)
+[Login with LinkedIn](../../auth/social-login/auth-linkedin/index.md)
 
 Notion
 
@@ -250,7 +250,7 @@ Notion
 
 \-
 
-[Login with Notion](/docs/guides/auth/social-login/auth-notion)
+[Login with Notion](../../auth/social-login/auth-notion/index.md)
 
 Slack (OIDC)
 
@@ -258,7 +258,7 @@ Slack (OIDC)
 
 \-
 
-[Login with Slack](/docs/guides/auth/social-login/auth-slack)
+[Login with Slack](../../auth/social-login/auth-slack/index.md)
 
 Snapchat
 
@@ -274,7 +274,7 @@ Spotify
 
 \-
 
-[Login with Spotify](/docs/guides/auth/social-login/auth-spotify)
+[Login with Spotify](../../auth/social-login/auth-spotify/index.md)
 
 Twitch
 
@@ -282,7 +282,7 @@ Twitch
 
 \-
 
-[Login with Twitch](/docs/guides/auth/social-login/auth-twitch)
+[Login with Twitch](../../auth/social-login/auth-twitch/index.md)
 
 Twitter
 
@@ -290,7 +290,7 @@ Twitter
 
 \-
 
-[Login with Twitter](/docs/guides/auth/social-login/auth-twitter)
+[Login with Twitter](../../auth/social-login/auth-twitter/index.md)
 
 WorkOS
 
@@ -298,7 +298,7 @@ WorkOS
 
 \-
 
-[Login with WorkOS](/docs/guides/auth/social-login/auth-workos)
+[Login with WorkOS](../../auth/social-login/auth-workos/index.md)
 
 Zoom
 
@@ -306,7 +306,7 @@ Zoom
 
 \-
 
-[Login with Zoom](/docs/guides/auth/social-login/auth-zoom)
+[Login with Zoom](../../auth/social-login/auth-zoom/index.md)
 
 For each provider, you need at minimum `ENABLED`, `CLIENT_ID`, `SECRET`, and `REDIRECT_URI` in `.env` and `docker-compose.yml`.
 
@@ -325,7 +325,7 @@ You can test OAuth with the following minimal HTML page:
 1<!doctype html>2<html>3  <body>4    <h1>Supabase OAuth Test</h1>5    <button id="loginBtn">Sign in with Google</button>6    <pre id="result"></pre>78    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>9    <script>10      document.addEventListener('DOMContentLoaded', function () {11        const SUPABASE_URL = 'https://<your-domain>'12        const SUPABASE_ANON_KEY = 'your-anon-key'1314        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)1516        const button = document.getElementById('loginBtn')1718        button.addEventListener('click', async () => {19          const { error } = await supabase.auth.signInWithOAuth({20            provider: 'google',21          })2223          if (error) {24            document.getElementById('result').textContent = JSON.stringify(error, null, 2)25          }26        })2728        supabase.auth.getSession().then(({ data }) => {29          if (data.session) {30            document.getElementById('result').textContent =31              'Logged in as: ' + data.session.user.email32          }33        })34      })35    </script>36  </body>37</html>
 ```
 
-For detailed client-side integration, see [Social Login](/docs/guides/auth/social-login).
+For detailed client-side integration, see [Social Login](../../auth/social-login/index.md).
 
 ## Troubleshooting[#](#troubleshooting)
 
@@ -422,5 +422,5 @@ Yes
 
 ## Additional resources[#](#additional-resources)
 
-*   [Redirect URLs](/docs/guides/auth/redirect-urls)
+*   [Redirect URLs](../../auth/redirect-urls/index.md)
 *   [Auth server on GitHub](https://github.com/supabase/auth) (check README and `example.env`)

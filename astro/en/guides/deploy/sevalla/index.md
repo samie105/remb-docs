@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:48.542Z"
 content_hash: "2616dbf32395b66abab7dcf6b4d7ee25b12b6271927520cbf07d75cd2db3064e"
 menu_path: ["Deploy your Astro Site to Sevalla"]
 section_path: []
-nav_prev: {"path": "../seenode/index.md", "title": "Deploy your Astro Site to Seenode"}
-nav_next: {"path": "../stormkit/index.md", "title": "Deploy your Astro Site to Stormkit"}
+nav_prev: {"path": "astro/en/guides/deploy/seenode/index.md", "title": "Deploy your Astro Site to Seenode"}
+nav_next: {"path": "astro/en/guides/deploy/stormkit/index.md", "title": "Deploy your Astro Site to Stormkit"}
 ---
 
 # Deploy your Astro Site to Sevalla
@@ -49,9 +49,9 @@ Sevalla’s Static Site Hosting deploys your site directly to a global edge netw
 
 [Section titled “SSR Deployment”](#ssr-deployment)
 
-Sevalla’s Application Hosting supports full-stack applications. You can deploy Astro projects using [on-demand rendering](/en/guides/on-demand-rendering/) (server-side rendering) via the Node.js adapter.
+Sevalla’s Application Hosting supports full-stack applications. You can deploy Astro projects using [on-demand rendering](../../on-demand-rendering/index.md) (server-side rendering) via the Node.js adapter.
 
-1.  Add the [`@astrojs/node` adapter](/en/guides/integrations-guide/node/) to your Astro project.
+1.  Add the [`@astrojs/node` adapter](../../integrations-guide/node/index.md) to your Astro project.
     
     ```
     npx astro add node
@@ -102,131 +102,131 @@ Ensure the Node.js version selected in Sevalla matches your local development ve
 
 *   ![](/logos/aws.svg)
     
-    ### [AWS](/en/guides/deploy/aws/)
+    ### [AWS](../aws/index.md)
     
 *   ![](/logos/flightcontrol.svg)
     
-    ### [AWS via Flightcontrol](/en/guides/deploy/aws-via-flightcontrol/)
+    ### [AWS via Flightcontrol](../aws-via-flightcontrol/index.md)
     
 *   ![](/logos/sst.svg)
     
-    ### [AWS via SST](/en/guides/deploy/aws-via-sst/)
+    ### [AWS via SST](../aws-via-sst/index.md)
     
 *   ![](/logos/azion.svg)
     
-    ### [Azion](/en/guides/deploy/azion/)
+    ### [Azion](../azion/index.md)
     
 *   ![](/logos/buddy.svg)
     
-    ### [Buddy](/en/guides/deploy/buddy/)
+    ### [Buddy](../buddy/index.md)
     
 *   ![](/logos/cleavr.svg)
     
-    ### [Cleavr](/en/guides/deploy/cleavr/)
+    ### [Cleavr](../cleavr/index.md)
     
 *   ![](/logos/clever-cloud.svg)
     
-    ### [Clever Cloud](/en/guides/deploy/clever-cloud/)
+    ### [Clever Cloud](../clever-cloud/index.md)
     
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [Cloudflare](/en/guides/deploy/cloudflare/)
+    ### [Cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/cloudray.svg)
     
-    ### [CloudRay](/en/guides/deploy/cloudray/)
+    ### [CloudRay](../cloudray/index.md)
     
 *   ![](/logos/deno.svg)
     
-    ### [Deno Deploy](/en/guides/deploy/deno/)
+    ### [Deno Deploy](../deno/index.md)
     
 *   ![](/logos/deployhq.svg)
     
-    ### [DeployHQ](/en/guides/deploy/deployhq/)
+    ### [DeployHQ](../deployhq/index.md)
     
 *   ![](/logos/edgeone-pages.svg)
     
-    ### [EdgeOne Pages](/en/guides/deploy/edgeone-pages/)
+    ### [EdgeOne Pages](../edgeone-pages/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/deploy/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/fleek.svg)
     
-    ### [Fleek](/en/guides/deploy/fleek/)
+    ### [Fleek](../fleek/index.md)
     
 *   ![](/logos/flyio.svg)
     
-    ### [Fly.io](/en/guides/deploy/flyio/)
+    ### [Fly.io](../flyio/index.md)
     
 *   ![](/logos/github.svg)
     
-    ### [GitHub Pages](/en/guides/deploy/github/)
+    ### [GitHub Pages](../github/index.md)
     
 *   ![](/logos/gitlab.svg)
     
-    ### [GitLab Pages](/en/guides/deploy/gitlab/)
+    ### [GitLab Pages](../gitlab/index.md)
     
 *   ![](/logos/google-cloud.svg)
     
-    ### [Google Cloud](/en/guides/deploy/google-cloud/)
+    ### [Google Cloud](../google-cloud/index.md)
     
 *   ![](/logos/heroku.svg)
     
-    ### [Heroku](/en/guides/deploy/heroku/)
+    ### [Heroku](../heroku/index.md)
     
 *   ![](/logos/juno.svg)
     
-    ### [Juno](/en/guides/deploy/juno/)
+    ### [Juno](../juno/index.md)
     
 *   ![](/logos/microsoft-azure.svg)
     
-    ### [Microsoft Azure](/en/guides/deploy/microsoft-azure/)
+    ### [Microsoft Azure](../microsoft-azure/index.md)
     
 *   ![](/logos/netlify.svg)
     
-    ### [Netlify](/en/guides/deploy/netlify/)
+    ### [Netlify](../netlify/index.md)
     
 *   ![](/logos/railway.svg)
     
-    ### [Railway](/en/guides/deploy/railway/)
+    ### [Railway](../railway/index.md)
     
 *   ![](/logos/render.svg)
     
-    ### [Render](/en/guides/deploy/render/)
+    ### [Render](../render/index.md)
     
 *   ![](/logos/seenode.svg)
     
-    ### [Seenode](/en/guides/deploy/seenode/)
+    ### [Seenode](../seenode/index.md)
     
 *   ![](/logos/sevalla.svg)
     
-    ### [Sevalla](/en/guides/deploy/sevalla/)
+    ### [Sevalla](index.md)
     
 *   ![](/logos/stormkit.svg)
     
-    ### [Stormkit](/en/guides/deploy/stormkit/)
+    ### [Stormkit](../stormkit/index.md)
     
 *   ![](/logos/surge.svg)
     
-    ### [Surge](/en/guides/deploy/surge/)
+    ### [Surge](../surge/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [Vercel](/en/guides/deploy/vercel/)
+    ### [Vercel](../vercel/index.md)
     
 *   ![](/logos/zeabur.svg)
     
-    ### [Zeabur](/en/guides/deploy/zeabur/)
+    ### [Zeabur](../zeabur/index.md)
     
 *   ![](/logos/zephyr.svg)
     
-    ### [Zephyr Cloud](/en/guides/deploy/zephyr/)
+    ### [Zephyr Cloud](../zephyr/index.md)
     
 *   ![](/logos/zerops.svg)
     
-    ### [Zerops](/en/guides/deploy/zerops/)
+    ### [Zerops](../zerops/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

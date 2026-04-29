@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:26.964Z"
 content_hash: "32509d282008cfba53be2429ea14f4ce7d1f44f287923152bb58004512ef1b5a"
 menu_path: ["Request Context"]
 section_path: []
-nav_prev: {"path": "../caching/index.md", "title": "Response Caching"}
-nav_next: {"path": "../contributing/index.md", "title": "Contributing"}
+nav_prev: {"path": "trpc/docs/v9/caching/index.md", "title": "Response Caching"}
+nav_next: {"path": "trpc/docs/v9/contributing/index.md", "title": "Contributing"}
 ---
 
 The `createContext()` function is called for each request and the result is propagated to all resolvers. You can use this to pass contextual data down to the resolvers.

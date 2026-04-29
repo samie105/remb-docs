@@ -10,8 +10,8 @@ content_hash: "f1fbc049e3cd4e1d31d98602567bda7f61d2afb5f1990910d315a431f2a35cf4"
 menu_path: ["box-decoration-break"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../break-inside/index.md", "title": "break-inside"}
-nav_next: {"path": "../box-sizing/index.md", "title": "box-sizing"}
+nav_prev: {"path": "tailwind/docs/break-inside/index.md", "title": "break-inside"}
+nav_next: {"path": "tailwind/docs/box-sizing/index.md", "title": "box-sizing"}
 ---
 
 Utilities for controlling how element fragments should be rendered across multiple lines, columns, or pages.

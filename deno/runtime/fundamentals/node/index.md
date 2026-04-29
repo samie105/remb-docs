@@ -10,8 +10,8 @@ content_hash: "b0c165d9f58e1933d4a8d166bdad949395616d7e075241505fc94f8d35075d89"
 menu_path: ["Node and npm Compatibility"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../typescript/index.md", "title": "TypeScript support"}
-nav_next: {"path": "../security/index.md", "title": "Security and permissions"}
+nav_prev: {"path": "deno/runtime/fundamentals/typescript/index.md", "title": "TypeScript support"}
+nav_next: {"path": "deno/runtime/fundamentals/security/index.md", "title": "Security and permissions"}
 ---
 
 # npx allows remote execution of a package from npm or a URL
@@ -278,7 +278,7 @@ Many npm packages ship with types, you can import these and use them with types 
 import chalk from "npm:chalk@5";
 ```
 
-Some packages do not ship with types but you can specify their types with the [`@ts-types`](/runtime/fundamentals/typescript) directive. For example, using a [`@types`](https://www.typescriptlang.org/docs/handbook/2/type-declarations.html#definitelytyped--types) package:
+Some packages do not ship with types but you can specify their types with the [`@ts-types`](../typescript/index.md) directive. For example, using a [`@types`](https://www.typescriptlang.org/docs/handbook/2/type-declarations.html#definitelytyped--types) package:
 
 ```ts
 // @ts-types="npm:@types/express@^4.17"
@@ -294,7 +294,7 @@ If a default export from an `npm:` import appears to have a wrong type (with the
 If you want to use a package that doesn't support TypeScript's node16 module resolution, you can:
 
 1.  Open an issue at the issue tracker of the package about the problem. (And perhaps contribute a fix :) (Although, unfortunately, there is a lack of tooling for packages to support both ESM and CJS, since default exports require different syntaxes. See also [microsoft/TypeScript#54593](https://github.com/microsoft/TypeScript/issues/54593))
-2.  Use a [CDN](/runtime/fundamentals/modules/#url_imports), that rebuilds the packages for Deno support, instead of an `npm:` identifier.
+2.  Use a [CDN](../modules/index.md#url_imports), that rebuilds the packages for Deno support, instead of an `npm:` identifier.
 3.  Ignore the type errors you get in your code base with `// @ts-expect-error` or `// @ts-ignore`.
 
 ## Including Node types
@@ -345,7 +345,7 @@ $ deno run --allow-read npm:cowsay@1.5.0/cowthink "What to eat?"
 
 When you run `npm install`, npm creates a `node_modules` directory in your project which houses the dependencies as specified in the `package.json` file.
 
-Deno uses [npm specifiers](/runtime/fundamentals/node/#using-npm-packages) to resolve npm packages to a central global npm cache, instead of using a `node_modules` folder in your projects. This is ideal since it uses less space and keeps your project directory clean.
+Deno uses [npm specifiers](index.md#using-npm-packages) to resolve npm packages to a central global npm cache, instead of using a `node_modules` folder in your projects. This is ideal since it uses less space and keeps your project directory clean.
 
 There may however be cases where you need a local `node_modules` directory in your Deno project, even if you don’t have a `package.json` (eg. when using frameworks like Next.js or Svelte or when depending on npm packages that use Node-API).
 
@@ -442,11 +442,11 @@ Deno supports [Node-API addons](https://nodejs.org/api/n-api.html) used by popul
 
 Note
 
-Many addons rely on npm lifecycle scripts (for example, `postinstall`). Deno supports them, but they are not run by default for security reasons. See the [`deno install` docs](/runtime/reference/cli/install/).
+Many addons rely on npm lifecycle scripts (for example, `postinstall`). Deno supports them, but they are not run by default for security reasons. See the [`deno install` docs](../../reference/cli/install/index.md).
 
 As of Deno 2.0, npm packages using Node-API addons are supported when a local `node_modules/` directory is present. Configure `"nodeModulesDir": "auto" | "manual"` in `deno.json` or run with `--node-modules-dir=auto|manual`.
 
-Like all native FFI, pass `--allow-ffi` to grant explicit permission. Review [Security and permissions](/runtime/fundamentals/security/#ffi-\(foreign-function-interface\)).
+Like all native FFI, pass `--allow-ffi` to grant explicit permission. Review [Security and permissions](../security/index.md#ffi-\(foreign-function-interface\)).
 
 ## Migrating from Node to Deno
 
@@ -494,7 +494,7 @@ Deno ships a unified toolchain (configuration, linter, formatter, test runner) t
 
 Caution
 
-Not to be confused with [private repositories and modules](/runtime/fundamentals/modules/#private-repositories).
+Not to be confused with [private repositories and modules](../modules/index.md#private-repositories).
 
 Deno supports private registries, which allow you to host and share your own modules. This is useful for organizations that want to keep their code private or for individuals who want to share their code with a select group of people.
 

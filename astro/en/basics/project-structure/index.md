@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:59.247Z"
 content_hash: "696747c043fd192411374a50ad4e516d3886a52a901368bd72abad57260a289d"
 menu_path: ["Project structure"]
 section_path: []
-nav_prev: {"path": "../../install-and-setup/index.md", "title": "Install Astro"}
-nav_next: {"path": "../../develop-and-build/index.md", "title": "Develop and build"}
+nav_prev: {"path": "astro/en/install-and-setup/index.md", "title": "Install Astro"}
+nav_next: {"path": "astro/en/develop-and-build/index.md", "title": "Develop and build"}
 ---
 
 # Project structure
@@ -92,13 +92,13 @@ A common Astro project directory might look like this:
 
 The `src/` folder is where most of your project source code lives. This includes:
 
-*   [Pages](/en/basics/astro-pages/)
-*   [Layouts](/en/basics/layouts/)
-*   [Astro components](/en/basics/astro-components/)
-*   [UI framework components (React, etc.)](/en/guides/framework-components/)
-*   [Styles (CSS, Sass)](/en/guides/styling/)
-*   [Markdown](/en/guides/markdown-content/)
-*   [Images to be optimized and processed by Astro](/en/guides/images/)
+*   [Pages](../astro-pages/index.md)
+*   [Layouts](../layouts/index.md)
+*   [Astro components](../astro-components/index.md)
+*   [UI framework components (React, etc.)](../../guides/framework-components/index.md)
+*   [Styles (CSS, Sass)](../../guides/styling/index.md)
+*   [Markdown](../../guides/markdown-content/index.md)
+*   [Images to be optimized and processed by Astro](../../guides/images/index.md)
 
 Astro processes, optimizes, and bundles your `src/` files to create the final website that is shipped to the browser. Unlike the static `public/` directory, your `src/` files are built and handled for you by Astro.
 
@@ -108,13 +108,13 @@ Some files (like Astro components) are not even sent to the browser as written b
 
 [Section titled “src/pages”](#srcpages)
 
-Pages routes are created for your site by adding [supported file types](/en/basics/astro-pages/#supported-page-files) to this directory.
+Pages routes are created for your site by adding [supported file types](../astro-pages/index.md#supported-page-files) to this directory.
 
 ### `src/components`
 
 [Section titled “src/components”](#srccomponents)
 
-**Components** are reusable units of code for your HTML pages. These could be [Astro components](/en/basics/astro-components/), or [UI framework components](/en/guides/framework-components/) like React or Vue. It is common to group and organize all of your project components together in this folder.
+**Components** are reusable units of code for your HTML pages. These could be [Astro components](../astro-components/index.md), or [UI framework components](../../guides/framework-components/index.md) like React or Vue. It is common to group and organize all of your project components together in this folder.
 
 This is a common convention in Astro projects, but it is not required. Feel free to organize your components however you like!
 
@@ -122,7 +122,7 @@ This is a common convention in Astro projects, but it is not required. Feel free
 
 [Section titled “src/layouts”](#srclayouts)
 
-[Layouts](/en/basics/layouts/) are Astro components that define the UI structure shared by one or more [pages](/en/basics/astro-pages/).
+[Layouts](../layouts/index.md) are Astro components that define the UI structure shared by one or more [pages](../astro-pages/index.md).
 
 Just like `src/components`, this directory is a common convention but not required.
 
@@ -150,7 +150,7 @@ This is a file used by JavaScript package managers to manage your dependencies. 
 
 There are [two kinds of dependencies](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file) you can specify in a `package.json`: `dependencies` and `devDependencies`. In most cases, these work the same: Astro needs all dependencies at build time, and your package manager will install both. We recommend putting all of your dependencies in `dependencies` to start, and only use `devDependencies` if you find a specific need to do so.
 
-For help creating a new `package.json` file for your project, check out the [manual setup](/en/install-and-setup/#manual-setup) instructions.
+For help creating a new `package.json` file for your project, check out the [manual setup](../../install-and-setup/index.md#manual-setup) instructions.
 
 ### `astro.config.mjs`
 
@@ -162,7 +162,7 @@ Astro supports several file formats for its JavaScript configuration file: `astr
 
 TypeScript config file loading is handled using [`tsm`](https://github.com/lukeed/tsm) and will respect your project’s `tsconfig` options.
 
-See the [configuration reference](/en/reference/configuration-reference/) for complete details.
+See the [configuration reference](../../reference/configuration-reference/index.md) for complete details.
 
 ### `tsconfig.json`
 
@@ -170,6 +170,6 @@ See the [configuration reference](/en/reference/configuration-reference/) for co
 
 This file is generated in every starter template and includes TypeScript configuration options for your Astro project. Some features (like npm package imports) aren’t fully supported in the editor without a `tsconfig.json` file.
 
-See the [TypeScript Guide](/en/guides/typescript/) for details on setting configurations.
+See the [TypeScript Guide](../../guides/typescript/index.md) for details on setting configurations.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

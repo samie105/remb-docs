@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:55.555Z"
 content_hash: "f11729e1abfe5c7eba7280b0a0d59f87be7bfa7ed38b7b4dce2d21c84a94d9a4"
 menu_path: ["Usage with Express.js"]
 section_path: []
-nav_prev: {"path": "../example-apps/index.md", "title": "Example Apps"}
-nav_next: {"path": "../fastify/index.md", "title": "Usage with Fastify"}
+nav_prev: {"path": "trpc/docs/v9/example-apps/index.md", "title": "Example Apps"}
+nav_next: {"path": "trpc/docs/v9/fastify/index.md", "title": "Usage with Fastify"}
 ---
 
 ## Example app[​](#example-app "Direct link to Example app")

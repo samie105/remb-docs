@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../streaming/index.md", "title": "Streaming"}
-nav_next: {"path": "../testing/index.md", "title": "Testing"}
+nav_prev: {"path": "nextjs/docs/app/guides/streaming/index.md", "title": "Streaming"}
+nav_next: {"path": "nextjs/docs/app/guides/testing/index.md", "title": "Testing"}
 ---
 
 # How to install Tailwind CSS v3 in your Next.js application
@@ -22,7 +22,7 @@ Last updated April 23, 2026
 
 This guide will walk you through how to install [Tailwind CSS v3](https://v3.tailwindcss.com/) in your Next.js application.
 
-> **Good to know:** For the latest Tailwind 4 setup, see the [Tailwind CSS setup instructions](/docs/app/getting-started/css#tailwind-css).
+> **Good to know:** For the latest Tailwind 4 setup, see the [Tailwind CSS setup instructions](../../getting-started/css/index.md#tailwind-css).
 
 ## Installing Tailwind v3[](#installing-tailwind-v3)
 

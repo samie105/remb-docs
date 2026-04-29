@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:08.256Z"
 content_hash: "d1b3fdf6088c05b91691699fe92ba3b982eb394993b13cb0cd52d109d839fbbb"
 menu_path: ["PostgreSQL: Documentation: 18: 20.6. GSSAPI Authentication"]
 section_path: []
-nav_prev: {"path": "../git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
-nav_next: {"path": "../gssapi-enc.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.10.\u00a0Secure TCP/IP Connections with GSSAPI Encryption"}
+nav_prev: {"path": "postgres/docs/current/git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
+nav_next: {"path": "postgres/docs/current/gssapi-enc.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.10.\u00a0Secure TCP/IP Connections with GSSAPI Encryption"}
 ---
 
 GSSAPI is an industry-standard protocol for secure authentication defined in [RFC 2743](https://datatracker.ietf.org/doc/html/rfc2743). PostgreSQL supports GSSAPI for authentication, communications encryption, or both. GSSAPI provides automatic authentication (single sign-on) for systems that support it. The authentication itself is secure. If GSSAPI encryption or SSL encryption is used, the data sent along the database connection will be encrypted; otherwise, it will not.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:48.071Z"
 content_hash: "abf6279c12f79b49b590e56b110b019f29c64f2938e5468d54fb2fcffec82014"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Semantic caching with LangCache on Redis Cloud","→","Semantic caching with LangCache on Redis Cloud","→\n      \n        Create a LangCache service","→","Create a LangCache service"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Semantic caching with LangCache on Redis Cloud","→","Semantic caching with LangCache on Redis Cloud","→\n      \n        Create a LangCache service","→","Create a LangCache service"]
-nav_prev: {"path": "../../databases/version-management/upgrade-version/index.md", "title": "Upgrade Redis database version"}
-nav_next: {"path": "../../security/access-control/index.md", "title": "Access control"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/version-management/upgrade-version/index.md", "title": "Upgrade Redis database version"}
+nav_next: {"path": "redis/docs/latest/operate/rc/security/access-control/index.md", "title": "Access control"}
 ---
 
 # Create a LangCache service
@@ -31,7 +31,7 @@ To create a LangCache service, you will need:
     
     *   Databases with a [CIDR allow list](/docs/latest/operate/rc/security/cidr-whitelist/)
     *   [Active-Active](/docs/latest/operate/rc/databases/active-active/) databases
-    *   Databases with the [default user](/docs/latest/operate/rc/security/access-control/data-access-control/default-user/) turned off
+    *   Databases with the [default user](../../security/access-control/data-access-control/default-user/index.md) turned off
     
 *   An API key for your embedding provider, if not using the default Redis embedding provider. LangCache supports [OpenAI](https://platform.openai.com/api-keys) and the Redis embedding provider during public preview.
     
@@ -99,7 +99,7 @@ The time to live (TTL) for cache entries, in milliseconds. Default: `No expirati
 
 **User for this service**
 
-The [database access user](/docs/latest/operate/rc/security/access-control/data-access-control/role-based-access-control/) to use for this service. LangCache only supports the [`default` user](/docs/latest/operate/rc/security/access-control/data-access-control/default-user/) during public preview.
+The [database access user](/docs/latest/operate/rc/security/access-control/data-access-control/role-based-access-control/) to use for this service. LangCache only supports the [`default` user](../../security/access-control/data-access-control/default-user/index.md) during public preview.
 
 ### Embedding settings
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:51.541Z"
 content_hash: "fe737168e26bab609821ccae545636ef091a43dfc617bf91d90392c03562f3b1"
 menu_path: ["TanStack React Query"]
 section_path: []
-nav_prev: {"path": "../setup/index.md", "title": "TanStack React Query"}
-nav_next: {"path": "../../vanilla/index.md", "title": "tRPC Client"}
+nav_prev: {"path": "trpc/docs/client/tanstack-react-query/setup/index.md", "title": "TanStack React Query"}
+nav_next: {"path": "trpc/docs/client/vanilla/index.md", "title": "tRPC Client"}
 ---
 
 ## Quick example query[​](#quick-example-query "Direct link to Quick example query")

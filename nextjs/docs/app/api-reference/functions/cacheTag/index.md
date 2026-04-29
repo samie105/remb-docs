@@ -11,8 +11,8 @@ menu_path: ["cacheTag"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../cacheLife/index.md", "title": "cacheLife"}
-nav_next: {"path": "../catchError/index.md", "title": "unstable_catchError"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/cacheLife/index.md", "title": "cacheLife"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/catchError/index.md", "title": "unstable_catchError"}
 ---
 
 # cacheTag
@@ -23,7 +23,7 @@ The `cacheTag` function allows you to tag cached data for on-demand invalidation
 
 ## Usage[](#usage)
 
-To use `cacheTag`, enable the [`cacheComponents` flag](/docs/app/api-reference/config/next-config-js/cacheComponents) in your `next.config.js` file:
+To use `cacheTag`, enable the [`cacheComponents` flag](../../config/next-config-js/cacheComponents/index.md) in your `next.config.js` file:
 
 next.config.ts
 
@@ -56,7 +56,7 @@ export async function getData() {
 }
 ```
 
-You can then purge the cache on-demand using [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) API in another function, for example, a [route handler](/docs/app/api-reference/file-conventions/route) or [Server Action](/docs/app/getting-started/mutating-data):
+You can then purge the cache on-demand using [`revalidateTag`](../revalidateTag/index.md) API in another function, for example, a [route handler](../../file-conventions/route/index.md) or [Server Action](../../../getting-started/mutating-data/index.md):
 
 app/action.ts
 
@@ -142,7 +142,7 @@ export async function Bookings({ type = 'haircut' }: BookingsProps) {
 
 ### Invalidating tagged cache[](#invalidating-tagged-cache)
 
-Using [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag), you can invalidate the cache for a specific tag when needed:
+Using [`revalidateTag`](../revalidateTag/index.md), you can invalidate the cache for a specific tag when needed:
 
 app/actions.ts
 
@@ -169,24 +169,24 @@ View related API references.
 
 Learn how to enable the cacheComponents flag in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheComponents)[
+](../../config/next-config-js/cacheComponents/index.md)[
 
 ### use cache
 
 Learn how to use the "use cache" directive to cache data in your Next.js application.
 
-](/docs/app/api-reference/directives/use-cache)[
+](../../directives/use-cache/index.md)[
 
 ### revalidateTag
 
 API Reference for the revalidateTag function.
 
-](/docs/app/api-reference/functions/revalidateTag)[
+](../revalidateTag/index.md)[
 
 ### cacheLife
 
 Learn how to use the cacheLife function to set the cache expiration time for a cached function or component.
 
-](/docs/app/api-reference/functions/cacheLife)
+](../cacheLife/index.md)
 
 Was this helpful?

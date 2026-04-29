@@ -10,8 +10,8 @@ content_hash: "85b1e66993aaeb9c279022518794c98d2645a813073b134baf32f2ddeedb6a40"
 menu_path: ["Drizzle extension for Prisma"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../effect-schema/index.md", "title": "effect-schema"}
-nav_next: {"path": "../eslint-plugin/index.md", "title": "ESLint Drizzle Plugin"}
+nav_prev: {"path": "drizzle/docs/effect-schema/index.md", "title": "effect-schema"}
+nav_next: {"path": "drizzle/docs/eslint-plugin/index.md", "title": "ESLint Drizzle Plugin"}
 ---
 
 ## Drizzle extension for Prisma

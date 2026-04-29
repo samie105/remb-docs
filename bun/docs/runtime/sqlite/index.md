@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:45.262Z"
 content_hash: "7784b562c8f9c96018aec87505ba6916dd2efe96c2b850182a50de73605c9cbc"
 menu_path: ["SQLite"]
 section_path: []
-nav_prev: {"path": "../sql/index.md", "title": "SQL"}
-nav_next: {"path": "../streams/index.md", "title": "Streams"}
+nav_prev: {"path": "bun/docs/runtime/sql/index.md", "title": "SQL"}
+nav_next: {"path": "bun/docs/runtime/streams/index.md", "title": "Streams"}
 ---
 
 Bun natively implements a high-performance [SQLite3](https://www.sqlite.org/) driver. To use it import from the built-in `bun:sqlite` module.

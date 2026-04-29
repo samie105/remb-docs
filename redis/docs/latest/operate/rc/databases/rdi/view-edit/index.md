@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:16.476Z"
 content_hash: "25bb7ee24fdfac78e57f6daa7650f287a4f030c59c6ceda5b8f32b69b93a8747"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        View and edit data pipeline","→","View and edit data pipeline"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        View and edit data pipeline","→","View and edit data pipeline"]
-nav_prev: {"path": "../setup/index.md", "title": "Prepare source database"}
-nav_next: {"path": "../../version-management/upgrade-version/index.md", "title": "Upgrade Redis database version"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/setup/index.md", "title": "Prepare source database"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/version-management/upgrade-version/index.md", "title": "Upgrade Redis database version"}
 ---
 
 # View and edit data pipeline
@@ -128,7 +128,7 @@ To change the data you want to ingest from the data pipeline:
     [![The continue button.](/docs/latest/images/rc/rdi/rdi-continue-button.png)](/docs/latest/images/rc/rdi/rdi-continue-button.png)
 3.  Select the Redis data type to write keys to the target. You can choose **Hash** or **JSON** if the target database supports JSON. [![The pipeline definition screen.](/docs/latest/images/rc/rdi/rdi-configure-new-pipeline.png)](/docs/latest/images/rc/rdi/rdi-configure-new-pipeline.png)
     
-    You can also supply one or more [transformation job files](/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/) that specify how you want to transform the captured data before writing it to the target. Select **Upload jobs** to upload your job files.
+    You can also supply one or more [transformation job files](../../../../../integrate/redis-data-integration/data-pipelines/transform-examples/index.md) that specify how you want to transform the captured data before writing it to the target. Select **Upload jobs** to upload your job files.
     
     [![The transformation jobs section. Select Upload jobs to upload transformation jobs.](/docs/latest/images/rc/rdi/rdi-transformation-jobs.png)](/docs/latest/images/rc/rdi/rdi-transformation-jobs.png)
     
@@ -158,11 +158,11 @@ If you selected **Apply to new data changes only**, the data pipeline will enter
 
 ## View metrics endpoints
 
-You can use [Prometheus and Grafana](/docs/latest/integrate/prometheus-with-redis-cloud/) to track and display metrics for the data pipeline.
+You can use [Prometheus and Grafana](../../../../../integrate/prometheus-with-redis-cloud/index.md) to track and display metrics for the data pipeline.
 
 To view the metrics endpoints for the source collector and pipeline processor, go to the **Data pipeline** tab and select **More actions**, and then **Show metrics**. You can add these endpoints as Prometheus targets to start tracking your RDI metrics.
 
-Prometheus endpoints are exposed on Redis Cloud's internal network. To access this network, enable [VPC peering](/docs/latest/operate/rc/security/vpc-peering/) or [AWS Transit Gateway](/docs/latest/operate/rc/security/aws-transit-gateway/). See [Prometheus and Grafana with Redis Cloud](/docs/latest/integrate/prometheus-with-redis-cloud/) for more information.
+Prometheus endpoints are exposed on Redis Cloud's internal network. To access this network, enable [VPC peering](/docs/latest/operate/rc/security/vpc-peering/) or [AWS Transit Gateway](/docs/latest/operate/rc/security/aws-transit-gateway/). See [Prometheus and Grafana with Redis Cloud](../../../../../integrate/prometheus-with-redis-cloud/index.md) for more information.
 
 For more information about available RDI metrics, see [Observability](/docs/latest/integrate/redis-data-integration/observability/).
 

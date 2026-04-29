@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:22.926Z"
 content_hash: "17b9a431c33d9e81308e86c3805fcbbd40639897b9bd50773ab42c09aa272bda"
 menu_path: ["Sharing State Between Components"]
 section_path: []
-nav_prev: {"path": "../choosing-the-state-structure/index.md", "title": "Choosing the State Structure"}
-nav_next: {"path": "../preserving-and-resetting-state/index.md", "title": "Preserving and Resetting State"}
+nav_prev: {"path": "react/learn/choosing-the-state-structure/index.md", "title": "Choosing the State Structure"}
+nav_next: {"path": "react/learn/preserving-and-resetting-state/index.md", "title": "Preserving and Resetting State"}
 ---
 
 Sometimes, you want the state of two components to always change together. To do it, remove state from both of them, move it to their closest common parent, and then pass it down to them via props. This is known as _lifting state up,_ and it’s one of the most common things you will do writing React code.

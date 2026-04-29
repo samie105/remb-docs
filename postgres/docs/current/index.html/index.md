@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:49:51.877Z"
 content_hash: "e06c49bd405c9da3a359d372691e5b452b6ef27a54b6d4e95def9f7e14c02f2b"
 menu_path: ["PostgreSQL 18.3 Documentation"]
 section_path: []
-nav_next: {"path": "../legalnotice.html/index.md", "title": "PostgreSQL: Documentation: 18: Legal Notice"}
+nav_next: {"path": "postgres/docs/current/legalnotice.html/index.md", "title": "PostgreSQL: Documentation: 18: Legal Notice"}
 ---
 
 # PostgreSQL 18.3 Documentation

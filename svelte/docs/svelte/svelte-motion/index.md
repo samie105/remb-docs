@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:41.300Z"
 content_hash: "47ca065545bcb556b901bcaf3d987cba84586a8de2376b291afca6e1224a1b67"
 menu_path: ["svelte/motion"]
 section_path: []
-nav_prev: {"path": "../svelte-legacy/index.md", "title": "svelte/legacy"}
-nav_next: {"path": "../svelte-reactivity-window/index.md", "title": "svelte/reactivity/window"}
+nav_prev: {"path": "svelte/docs/svelte/svelte-legacy/index.md", "title": "svelte/legacy"}
+nav_next: {"path": "svelte/docs/svelte/svelte-reactivity-window/index.md", "title": "svelte/reactivity/window"}
 ---
 
 ```
@@ -200,7 +200,7 @@ get target(): T;
 
 > Available since 5.7.0
 
-A [media query](/docs/svelte/svelte-reactivity#MediaQuery) that matches if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
+A [media query](../svelte-reactivity/index.md#MediaQuery) that matches if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
 
 ```
 <script>
@@ -227,7 +227,7 @@ const prefersReducedMotion: MediaQuery;
 
 ## spring[](#spring)
 
-> Use [`Spring`](/docs/svelte/svelte-motion#Spring) instead
+> Use [`Spring`](index.md#Spring) instead
 
 The spring function in Svelte creates a store whose value is animated, with a motion that simulates the behavior of a spring. This means when the value changes, instead of transitioning at a steady rate, it "bounces" like a spring would, depending on the physics parameters provided. This adds a level of realism to the transitions and can enhance the user experience.
 
@@ -240,7 +240,7 @@ function spring<T = any>(
 
 ## tweened[](#tweened)
 
-> Use [`Tween`](/docs/svelte/svelte-motion#Tween) instead
+> Use [`Tween`](index.md#Tween) instead
 
 A tweened store in Svelte is a special type of store that provides smooth transitions between state values over time.
 
@@ -379,4 +379,4 @@ type Updater<T> = (target_value: T, value: T) => T;
 
 previous next
 
-[svelte/legacy](/docs/svelte/svelte-legacy) [svelte/reactivity/window](/docs/svelte/svelte-reactivity-window)
+[svelte/legacy](../svelte-legacy/index.md) [svelte/reactivity/window](../svelte-reactivity-window/index.md)

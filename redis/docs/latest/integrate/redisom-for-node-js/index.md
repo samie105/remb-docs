@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:37.933Z"
 content_hash: "a4fedbffbb4ec57180f41efe844872918166ce22004e9ccc0c804915fa22af43"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Node.js","→","RedisOM for Node.js"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Node.js","→","RedisOM for Node.js"]
-nav_prev: {"path": "../redisom-for-net/index.md", "title": "RedisOM for .NET"}
-nav_next: {"path": "../redisom-for-python/index.md", "title": "RedisOM for Python"}
+nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-net/index.md", "title": "RedisOM for .NET"}
+nav_next: {"path": "redis/docs/latest/integrate/redisom-for-python/index.md", "title": "RedisOM for Python"}
 ---
 
 # RedisOM for Node.js
@@ -41,7 +41,7 @@ Redis Stack was replaced by Redis Open Source as of version 8.0.
 Like anything software-related, you need to have some dependencies installed before you can get started:
 
 *   [Node.js 14.8+](https://nodejs.org/en/): In this tutorial, we're using JavaScript's top-level `await` feature which was introduced in Node 14.8. So, make sure you are using that version or later.
-*   [Redis Stack](/docs/latest/operate/oss_and_stack/install/archive/install-stack/): You need a version of Redis Stack, either running locally on your machine or [in the cloud](https://redis.com/try-free/?utm_source=redisio&utm_medium=referral&utm_campaign=2023-09-try_free&utm_content=cu-redis_cloud_users).
+*   [Redis Stack](../../operate/oss_and_stack/install/archive/install-stack/index.md): You need a version of Redis Stack, either running locally on your machine or [in the cloud](https://redis.com/try-free/?utm_source=redisio&utm_medium=referral&utm_campaign=2023-09-try_free&utm_content=cu-redis_cloud_users).
 *   [Redis Insight](https://redis.com/redis-enterprise/redis-insight/): We'll use this to look inside Redis and make sure our code is doing what we think it's doing.
 
 ## Starter code

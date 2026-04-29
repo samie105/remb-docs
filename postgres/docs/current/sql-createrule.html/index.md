@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:01.943Z"
 content_hash: "0e48a6c7a358bde273a80c6ccebad09b80e55c54896c76f6ef7ea2278440824f"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE RULE"]
 section_path: []
-nav_prev: {"path": "../sql-createrole.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ROLE"}
-nav_next: {"path": "../sql-createschema.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SCHEMA"}
+nav_prev: {"path": "postgres/docs/current/sql-createrole.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ROLE"}
+nav_next: {"path": "postgres/docs/current/sql-createschema.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SCHEMA"}
 ---
 
 CREATE RULE — define a new rewrite rule

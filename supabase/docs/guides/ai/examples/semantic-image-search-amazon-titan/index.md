@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:51.724Z"
 content_hash: "e88e1dd119169dc015f997f3885f10ad89f7d031d9a99cb2baed2a50c4937ed8"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Semantic search with Amazon Titan","Semantic search with Amazon Titan"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Semantic search with Amazon Titan","Semantic search with Amazon Titan"]
-nav_prev: {"path": "../openai/index.md", "title": "Generating OpenAI GPT3 completions"}
-nav_next: {"path": "../../going-to-prod/index.md", "title": "Going to Production"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/openai/index.md", "title": "Generating OpenAI GPT3 completions"}
+nav_next: {"path": "supabase/docs/guides/ai/going-to-prod/index.md", "title": "Going to Production"}
 ---
 
 # 
@@ -27,7 +27,7 @@ Implement semantic image search with Amazon Titan and Supabase Vector in Python.
 
 [Amazon Titan](https://aws.amazon.com/bedrock/titan/) is a family of foundation models (FMs) for text and image generation, summarization, classification, open-ended Q&A, information extraction, and text or image search.
 
-In this guide we'll look at how we can get started with Amazon Bedrock and Supabase Vector in Python using the Amazon Titan multimodal model and the [vecs client](/docs/guides/ai/vecs-python-client).
+In this guide we'll look at how we can get started with Amazon Bedrock and Supabase Vector in Python using the Amazon Titan multimodal model and the [vecs client](../../vecs-python-client/index.md).
 
 You can find the full application code as a Python Poetry project on [GitHub](https://github.com/supabase/supabase/tree/master/examples/ai/aws_bedrock_image_search).
 
@@ -47,7 +47,7 @@ Then initialize a new project:
 
 ## Spin up a Postgres database with pgvector[#](#spin-up-a-postgres-database-with-pgvector)
 
-If you haven't already, head over to [database.new](https://database.new) and create a new project. Every Supabase project comes with a full Postgres database and the [pgvector extension](/docs/guides/database/extensions/pgvector) preconfigured.
+If you haven't already, head over to [database.new](https://database.new) and create a new project. Every Supabase project comes with a full Postgres database and the [pgvector extension](../../../database/extensions/pgvector/index.md) preconfigured.
 
 When creating your project, make sure to note down your database password as you will need it to construct the `DB_URL` in the next step.
 

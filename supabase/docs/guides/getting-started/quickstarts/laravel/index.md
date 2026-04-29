@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:14.830Z"
 content_hash: "30dabaf2816a8458ef0eec0bb39d5b0280ccb3ba86a1fbef6ad02c45bd6c58c2"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Laravel PHP","Laravel PHP"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Laravel PHP","Laravel PHP"]
-nav_prev: {"path": "../kotlin/index.md", "title": "Use Supabase with Android Kotlin"}
-nav_next: {"path": "../nextjs/index.md", "title": "Use Supabase with Next.js"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/kotlin/index.md", "title": "Use Supabase with Android Kotlin"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/nextjs/index.md", "title": "Use Supabase with Next.js"}
 ---
 
 # 
@@ -71,7 +71,7 @@ If you're in an [IPv6 environment](https://github.com/orgs/supabase/discussions/
 
 ### Change the default schema
 
-By default Laravel uses the `public` schema. We recommend changing this as Supabase exposes the `public` schema as a [data API](/docs/guides/api).
+By default Laravel uses the `public` schema. We recommend changing this as Supabase exposes the `public` schema as a [data API](../../../api/index.md).
 
 You can change the schema of your Laravel application by modifying the `search_path` variable `app/config/database.php`.
 

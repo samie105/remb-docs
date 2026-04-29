@@ -10,8 +10,8 @@ content_hash: "190ae833ef46f9d5ec849c6bf3cf7274ffd840e70850dfc394032e8d277c6c30"
 menu_path: ["PostgreSQL: Documentation: 18: 9.28. System Administration Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../external-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: H.3.\u00a0Procedural Languages"}
-nav_next: {"path": "../functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
+nav_prev: {"path": "postgres/docs/current/external-pl.html/index.md", "title": "PostgreSQL: Documentation: 18: H.3.\u00a0Procedural Languages"}
+nav_next: {"path": "postgres/docs/current/functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
 ---
 
 | 

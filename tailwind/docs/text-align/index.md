@@ -10,8 +10,8 @@ content_hash: "4796433f6d4ef6cc71a916b6eafff9960b1b2101693a46d71ccf7aad6e7599a0"
 menu_path: ["text-align"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../list-style-type/index.md", "title": "list-style-type"}
-nav_next: {"path": "../color/index.md", "title": "color"}
+nav_prev: {"path": "tailwind/docs/list-style-type/index.md", "title": "list-style-type"}
+nav_next: {"path": "tailwind/docs/color/index.md", "title": "color"}
 ---
 
 Utilities for controlling the alignment of text.

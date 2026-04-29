@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:43:07.158Z"
 content_hash: "3fea1c6171fa1b074e500f0ef432b111f9cb696ce6715372a23eb50374babb4f"
 menu_path: ["Dev Toolbar App API"]
 section_path: []
-nav_prev: {"path": "../image-service-reference/index.md", "title": "Image Service API"}
-nav_next: {"path": "../session-driver-reference/index.md", "title": "Astro Session Driver API"}
+nav_prev: {"path": "astro/en/reference/image-service-reference/index.md", "title": "Image Service API"}
+nav_next: {"path": "astro/en/reference/session-driver-reference/index.md", "title": "Astro Session Driver API"}
 ---
 
 # Dev Toolbar App API
 
-The Astro Dev Toolbar App API allows you to create [Astro Integrations](/en/reference/integrations-reference/) that add apps to the Astro Dev Toolbar. This allows you to add new features and integrations with third-party services.
+The Astro Dev Toolbar App API allows you to create [Astro Integrations](../integrations-reference/index.md) that add apps to the Astro Dev Toolbar. This allows you to add new features and integrations with third-party services.
 
 ![](/houston_chef.webp) **Related recipe:** [Create a dev toolbar app](/en/recipes/making-toolbar-apps/)
 
@@ -23,7 +23,7 @@ The Astro Dev Toolbar App API allows you to create [Astro Integrations](/en/refe
 
 [Section titled “Toolbar app integration setup”](#toolbar-app-integration-setup)
 
-Integrations can add apps to the dev toolbar in [the `astro:config:setup` hook](/en/reference/integrations-reference/#astroconfigsetup).
+Integrations can add apps to the dev toolbar in [the `astro:config:setup` hook](../integrations-reference/index.md#astroconfigsetup).
 
 ```
 /** * @type {() => import('astro').AstroIntegration} */export default () => ({  name: "my-integration",  hooks: {    "astro:config:setup": ({ addDevToolbarApp }) => {      addDevToolbarApp({        id: "my-app",        name: "My App",        icon: "<svg>...</svg>",        entrypoint: "./my-app.js",      });    },  },});
@@ -37,7 +37,7 @@ Integrations can add apps to the dev toolbar in [the `astro:config:setup` hook](
 
 **Added in:** `astro@4.0.0`
 
-A function available to [the `astro:config:setup` hook](/en/reference/integrations-reference/#astroconfigsetup) that adds dev toolbar apps. It takes an object with the following required properties to define the toolbar app: [`id`](#id), [`name`](#name), and [`entrypoint`](#entrypoint). Optionally, you can also define an [`icon`](#icon) for your app.
+A function available to [the `astro:config:setup` hook](../integrations-reference/index.md#astroconfigsetup) that adds dev toolbar apps. It takes an object with the following required properties to define the toolbar app: [`id`](#id), [`name`](#name), and [`entrypoint`](#entrypoint). Optionally, you can also define an [`icon`](#icon) for your app.
 
 ### `id`
 
@@ -326,7 +326,7 @@ init(canvas, app, server) {  server.on('server-message', (data) => {    console.
 
 [Section titled “On the server”](#on-the-server)
 
-In an integration, such as [the integration that adds your toolbar app](#toolbar-app-integration-setup), use the [`astro:server:setup` hook](/en/reference/integrations-reference/#astroserversetup) to access the `toolbar` object to send and receive messages to and from your apps.
+In an integration, such as [the integration that adds your toolbar app](#toolbar-app-integration-setup), use the [`astro:server:setup` hook](../integrations-reference/index.md#astroserversetup) to access the `toolbar` object to send and receive messages to and from your apps.
 
 ```
 export default () => ({  name: "my-integration",  hooks: {    "astro:config:setup": ({ addDevToolbarApp }) => {},    "astro:server:setup": ({ toolbar }) => {},  },});
@@ -695,4 +695,4 @@ Currently, the following icons are available and can be used in any component th
 
 All of the above icons have `fill="currentColor"` set by default and will inherit their color from the parent element.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

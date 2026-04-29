@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:55.788Z"
 content_hash: "ccf0b6d7919404dca69fafaf9020544f1a8bcd03edde43bdfd6a67e1cb9f1d76"
 menu_path: ["Migrate from npm install to bun install"]
 section_path: []
-nav_prev: {"path": "../custom-registry/index.md", "title": "Override the default npm registry for bun install"}
-nav_next: {"path": "../git-diff-bun-lockfile/index.md", "title": "Configure git to diff Bun's lockb lockfile"}
+nav_prev: {"path": "bun/docs/guides/install/custom-registry/index.md", "title": "Override the default npm registry for bun install"}
+nav_next: {"path": "bun/docs/guides/install/git-diff-bun-lockfile/index.md", "title": "Configure git to diff Bun's lockb lockfile"}
 ---
 
 # It only takes one command to migrate

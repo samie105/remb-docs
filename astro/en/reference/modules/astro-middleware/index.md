@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:47:46.554Z"
 content_hash: "30234128160addd4d992fb585d96a09f3572fa1fc8efe7433c0d60de3dbc8873"
 menu_path: ["Middleware API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-i18n/index.md", "title": "Internationalization API Reference"}
-nav_next: {"path": "../astro-static-paths/index.md", "title": "Static Paths API Reference"}
+nav_prev: {"path": "astro/en/reference/modules/astro-i18n/index.md", "title": "Internationalization API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-static-paths/index.md", "title": "Static Paths API Reference"}
 ---
 
 # Middleware API Reference
 
 **Added in:** `astro@2.6.0`
 
-Middleware allows you to intercept requests and responses and inject behaviors dynamically every time a page or endpoint is about to be rendered. For features and usage examples, [see our middleware guide](/en/guides/middleware/).
+Middleware allows you to intercept requests and responses and inject behaviors dynamically every time a page or endpoint is about to be rendered. For features and usage examples, [see our middleware guide](../../../guides/middleware/index.md).
 
 ## Imports from `astro:middleware`
 
@@ -60,7 +60,7 @@ export const onRequest = sequence(validation, auth, greeting);
 
 [Section titled “Imports from astro/middleware”](#imports-from-astromiddleware-1)
 
-The following helpers can be imported from the regular middleware module when you build an [Astro Integration](/en/reference/integrations-reference/):
+The following helpers can be imported from the regular middleware module when you build an [Astro Integration](../../integrations-reference/index.md):
 
 ```
 import {  createContext,  defineMiddleware,  sequence,  trySerializeLocals,} from "astro/middleware";
@@ -70,11 +70,11 @@ import {  createContext,  defineMiddleware,  sequence,  trySerializeLocals,} fro
 
 [Section titled “createContext()”](#createcontext)
 
-**Type:** `(context: [CreateContext](#createcontext-1)) => [APIContext](/en/reference/api-reference/)`  
+**Type:** `(context: [CreateContext](#createcontext-1)) => [APIContext](../../api-reference/index.md)`  
 
 **Added in:** `astro@2.8.0`
 
-A low-level API to create an [`APIContext`](/en/reference/api-reference/)to be passed to an Astro middleware [`onRequest()` function](#onrequest).
+A low-level API to create an [`APIContext`](../../api-reference/index.md)to be passed to an Astro middleware [`onRequest()` function](#onrequest).
 
 This function can be used by integrations/adapters to programmatically execute the Astro middleware.
 
@@ -134,7 +134,7 @@ The incoming [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Reques
 
 **Type:** `Params`
 
-An object containing the optional parameters to be passed to [`Astro.params`](/en/reference/api-reference/#params).
+An object containing the optional parameters to be passed to [`Astro.params`](../../api-reference/index.md#params).
 
 #### `CreateContext.userDefinedLocales`
 
@@ -144,7 +144,7 @@ An object containing the optional parameters to be passed to [`Astro.params`](/e
 
 **Added in:** `astro@3.5.0`
 
-A list of supported locales defined in the [user’s `i18n` configuration](/en/reference/configuration-reference/#i18nlocales).
+A list of supported locales defined in the [user’s `i18n` configuration](../../configuration-reference/index.md#i18nlocales).
 
 #### `CreateContext.defaultLocale`
 
@@ -154,7 +154,7 @@ A list of supported locales defined in the [user’s `i18n` configuration](/en/r
 
 **Added in:** `astro@4.16.0`
 
-The default locale defined in the [user’s `i18n` configuration](/en/reference/configuration-reference/#i18ndefaultlocale).
+The default locale defined in the [user’s `i18n` configuration](../../configuration-reference/index.md#i18ndefaultlocale).
 
 #### `CreateContext.locals`
 
@@ -164,9 +164,9 @@ The default locale defined in the [user’s `i18n` configuration](/en/reference/
 
 **Added in:** `astro@5.0.0`
 
-An object for storing arbitrary information from a middleware, accessible to the user via [`Astro.locals`](/en/reference/api-reference/#locals).
+An object for storing arbitrary information from a middleware, accessible to the user via [`Astro.locals`](../../api-reference/index.md#locals).
 
-Learn more about [storing data in `locals`](/en/guides/middleware/#storing-data-in-contextlocals) with example usage.
+Learn more about [storing data in `locals`](../../../guides/middleware/index.md#storing-data-in-contextlocals) with example usage.
 
 #### `CreateContext.clientAddress`
 
@@ -194,7 +194,7 @@ import type {  MiddlewareHandler,  MiddlewareNext,  RewritePayload,} from "astro
 
 [Section titled “MiddlewareHandler”](#middlewarehandler)
 
-**Type:** `(context: [APIContext](/en/reference/api-reference/), next: [MiddlewareNext](#middlewarenext)) => Promise<Response> | Response | Promise<void> | void`
+**Type:** `(context: [APIContext](../../api-reference/index.md), next: [MiddlewareNext](#middlewarenext)) => Promise<Response> | Response | Promise<void> | void`
 
 Represents an Astro middleware function. Middleware handlers receive two arguments and can either return a `Response` directly or call `next()` to invoke the next middleware in the chain. Alternatively, you can use [`defineMiddleware()`](#definemiddleware) to get type safety for your middleware.
 
@@ -211,9 +211,9 @@ A middleware handler receives the following properties:
 
 [Section titled “context”](#context)
 
-**Type:** [`APIContext`](/en/reference/api-reference/)
+**Type:** [`APIContext`](../../api-reference/index.md)
 
-An [Astro context](/en/reference/api-reference/) object mirroring many of the `Astro` global properties.
+An [Astro context](../../api-reference/index.md) object mirroring many of the `Astro` global properties.
 
 #### `next()`
 
@@ -223,7 +223,7 @@ An [Astro context](/en/reference/api-reference/) object mirroring many of the `A
 
 A function that calls all the subsequent middleware in the chain and returns a `Response`. For example, other middleware could modify the HTML body of a response and awaiting the result of `next()` would allow your middleware to respond to those changes.
 
-Since Astro v4.13.0, `next()` accepts an optional URL path parameter in the form of a string, `URL`, or `Request` to [rewrite](/en/guides/routing/#rewrites) the current request without retriggering a new rendering phase.
+Since Astro v4.13.0, `next()` accepts an optional URL path parameter in the form of a string, `URL`, or `Request` to [rewrite](../../../guides/routing/index.md#rewrites) the current request without retriggering a new rendering phase.
 
 The following example uses `next()` to serve content from a different path when the current path matches `/old-path`:
 
@@ -248,7 +248,7 @@ Represents the [`next()` function](#next) passed to middleware handlers.
 
 **Added in:** `astro@4.13.0`
 
-Represents the destination for a [rewrite](/en/guides/routing/#rewrites) when passed to the [`next()`](#next) function.
+Represents the destination for a [rewrite](../../../guides/routing/index.md#rewrites) when passed to the [`next()`](#next) function.
 
 ## Middleware exports
 
@@ -268,4 +268,4 @@ A required exported function from `src/middleware.js` that will be called before
 export function onRequest (context, next) {  // intercept response data from a request  // optionally, transform the response  // return a Response directly, or the result of calling `next()`  return next();};
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

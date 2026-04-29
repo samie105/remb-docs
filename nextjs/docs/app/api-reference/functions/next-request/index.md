@@ -11,8 +11,8 @@ menu_path: ["NextRequest"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../image-response/index.md", "title": "ImageResponse"}
-nav_next: {"path": "../next-response/index.md", "title": "NextResponse"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/image-response/index.md", "title": "ImageResponse"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/next-response/index.md", "title": "NextResponse"}
 ---
 
 # NextRequest
@@ -102,12 +102,12 @@ The following options are available:
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `basePath` | `string` | The [base path](/docs/app/api-reference/config/next-config-js/basePath) of the URL. |
-| `buildId` | `string` | `undefined` | The build identifier of the Next.js application. Can be [customized](/docs/app/api-reference/config/next-config-js/generateBuildId). |
+| `basePath` | `string` | The [base path](../../config/next-config-js/basePath/index.md) of the URL. |
+| `buildId` | `string` | `undefined` | The build identifier of the Next.js application. Can be [customized](../../config/next-config-js/generateBuildId/index.md). |
 | `pathname` | `string` | The pathname of the URL. |
 | `searchParams` | `Object` | The search parameters of the URL. |
 
-> **Note:** The internationalization properties from the Pages Router are not available for usage in the App Router. Learn more about [internationalization with the App Router](/docs/app/guides/internationalization).
+> **Note:** The internationalization properties from the Pages Router are not available for usage in the App Router. Learn more about [internationalization with the App Router](../../../guides/internationalization/index.md).
 
 ## Version History[](#version-history)
 

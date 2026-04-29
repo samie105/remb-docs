@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:36.599Z"
 content_hash: "0bb1e25836dfa0385989fcb7db4880844558671e586e2b1f3684499748e884e5"
 menu_path: ["Stream a file as an HTTP Response"]
 section_path: []
-nav_prev: {"path": "../sse/index.md", "title": "Server-Sent Events (SSE) with Bun"}
-nav_next: {"path": "../stream-iterator/index.md", "title": "Streaming HTTP Server with Async Iterators"}
+nav_prev: {"path": "bun/docs/guides/http/sse/index.md", "title": "Server-Sent Events (SSE) with Bun"}
+nav_next: {"path": "bun/docs/guides/http/stream-iterator/index.md", "title": "Streaming HTTP Server with Async Iterators"}
 ---
 
 This snippet reads a file from disk using [`Bun.file()`](../../../runtime/file-io/index.md#reading-files-bun-file). This returns a `BunFile` instance, which can be passed directly into the `new Response` constructor.

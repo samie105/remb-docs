@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:37.436Z"
 content_hash: "039cd0dd8a073464d4405f02f3a22c2c0ddcb547606fdf9c582e8193fbd88831"
 menu_path: ["PostgreSQL: Documentation: 18: 55.1. Formatting"]
 section_path: []
-nav_prev: {"path": "../source-conventions.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.4.\u00a0Miscellaneous Coding Conventions"}
-nav_next: {"path": "../spgist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.3.\u00a0SP-GiST Indexes"}
+nav_prev: {"path": "postgres/docs/current/source-conventions.html/index.md", "title": "PostgreSQL: Documentation: 18: 55.4.\u00a0Miscellaneous Coding Conventions"}
+nav_next: {"path": "postgres/docs/current/spgist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.3.\u00a0SP-GiST Indexes"}
 ---
 
 Source code formatting uses 4 column tab spacing, with tabs preserved (i.e., tabs are not expanded to spaces). Each logical indentation level is one additional tab stop.

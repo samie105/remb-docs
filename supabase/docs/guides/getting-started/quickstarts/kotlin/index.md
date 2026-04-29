@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:15.501Z"
 content_hash: "c26dbbeb4206938409f9ae6a866f625aa4689cde6c8048c3e8374d90fb764218"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Android Kotlin","Android Kotlin"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Android Kotlin","Android Kotlin"]
-nav_prev: {"path": "../ios-swiftui/index.md", "title": "Use Supabase with iOS and SwiftUI"}
-nav_next: {"path": "../laravel/index.md", "title": "Use Supabase with Laravel"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/ios-swiftui/index.md", "title": "Use Supabase with iOS and SwiftUI"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/laravel/index.md", "title": "Use Supabase with Laravel"}
 ---
 
 # 
@@ -109,7 +109,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=androidkotlin).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 

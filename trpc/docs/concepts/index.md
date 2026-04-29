@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:21.814Z"
 content_hash: "fccf4d6807da1358b2a41775f564cda5a98002eb1791e266c390e52d142287b9"
 menu_path: ["Concepts"]
 section_path: []
-nav_prev: {"path": "../skills/index.md", "title": "Agent Skills"}
-nav_next: {"path": "../example-apps/index.md", "title": "Example Apps"}
+nav_prev: {"path": "trpc/docs/skills/index.md", "title": "Agent Skills"}
+nav_next: {"path": "trpc/docs/example-apps/index.md", "title": "Example Apps"}
 ---
 
 ## What is RPC? What mindset should I adopt?[​](#what-is-rpc-what-mindset-should-i-adopt "Direct link to What is RPC? What mindset should I adopt?")

@@ -10,8 +10,8 @@ content_hash: "61355fd204b0b9adbc7e1fc413968cf750fc6218c732082806ed2d73517debcb"
 menu_path: ["Get Started with Drizzle and Turso Database"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../turso-database-existing/index.md", "title": "Get Started with Drizzle and Turso Database in existing project"}
-nav_next: {"path": "../turso-existing/index.md", "title": "Get Started with Drizzle and Turso Cloud in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/turso-database-existing/index.md", "title": "Get Started with Drizzle and Turso Database in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/turso-existing/index.md", "title": "Get Started with Drizzle and Turso Cloud in existing project"}
 ---
 
 ## Get Started with Drizzle and Turso Database

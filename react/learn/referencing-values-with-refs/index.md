@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:37.783Z"
 content_hash: "08e9655e99bbe165e229e7158ec5296e910429a6eaaee41c953224d5964063e7"
 menu_path: ["Referencing Values with Refs"]
 section_path: []
-nav_prev: {"path": "../escape-hatches/index.md", "title": "Escape Hatches"}
-nav_next: {"path": "../manipulating-the-dom-with-refs/index.md", "title": "Manipulating the DOM with Refs"}
+nav_prev: {"path": "react/learn/escape-hatches/index.md", "title": "Escape Hatches"}
+nav_next: {"path": "react/learn/manipulating-the-dom-with-refs/index.md", "title": "Manipulating the DOM with Refs"}
 ---
 
 When you want a component to “remember” some information, but you don’t want that information to [trigger new renders](../render-and-commit/index.md), you can use a _ref_.

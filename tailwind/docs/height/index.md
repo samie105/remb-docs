@@ -10,8 +10,8 @@ content_hash: "90e7b58874685ceab0f41d9dc44eb33e2b3f81fc4cb66e1bdf13e0279f0c2b54"
 menu_path: ["height"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../max-width/index.md", "title": "max-width"}
-nav_next: {"path": "../min-height/index.md", "title": "min-height"}
+nav_prev: {"path": "tailwind/docs/max-width/index.md", "title": "max-width"}
+nav_next: {"path": "tailwind/docs/min-height/index.md", "title": "min-height"}
 ---
 
 Utilities for setting the height of an element.

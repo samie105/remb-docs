@@ -11,15 +11,15 @@ menu_path: ["Migrating to Cache Components"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../migrating/from-vite/index.md", "title": "How to migrate from Vite to Next.js"}
-nav_next: {"path": "../multi-tenant/index.md", "title": "How to build multi-tenant apps in Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/migrating/from-vite/index.md", "title": "How to migrate from Vite to Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/multi-tenant/index.md", "title": "How to build multi-tenant apps in Next.js"}
 ---
 
 # Migrating to Cache Components
 
 Last updated April 23, 2026
 
-When [Cache Components](/docs/app/api-reference/config/next-config-js/cacheComponents) is enabled, route segment configs like `dynamic`, `revalidate`, and `fetchCache` are replaced by [`use cache`](/docs/app/api-reference/directives/use-cache) and [`cacheLife`](/docs/app/api-reference/functions/cacheLife).
+When [Cache Components](../../api-reference/config/next-config-js/cacheComponents/index.md) is enabled, route segment configs like `dynamic`, `revalidate`, and `fetchCache` are replaced by [`use cache`](../../api-reference/directives/use-cache/index.md) and [`cacheLife`](../../api-reference/functions/cacheLife/index.md).
 
 ## `dynamic = "force-dynamic"`[](#dynamic--force-dynamic)
 
@@ -53,7 +53,7 @@ export default function Page() {
 
 Start by removing it. When unhandled uncached or runtime data access is detected during development and build time, Next.js raises an error. Otherwise, the prerendering step automatically extracts the static HTML shell.
 
-For uncached data access, add [`use cache`](/docs/app/api-reference/directives/use-cache) as close to the data access as possible with a long [`cacheLife`](/docs/app/api-reference/functions/cacheLife) like `'max'` to maintain cached behavior. If needed, add it at the top of the page or layout.
+For uncached data access, add [`use cache`](../../api-reference/directives/use-cache/index.md) as close to the data access as possible with a long [`cacheLife`](../../api-reference/functions/cacheLife/index.md) like `'max'` to maintain cached behavior. If needed, add it at the top of the page or layout.
 
 For runtime data access (`cookies()`, `headers()`, etc.), errors will direct you to wrap it with `<Suspense>`. Since you started by using `force-static`, you must remove the runtime data access to prevent any request time work.
 
@@ -147,6 +147,6 @@ export default async function Page() {
 
 ## `runtime = 'edge'`[](#runtime--edge)
 
-**Not supported.** Cache Components requires the Node.js runtime. Switch to the Node.js runtime (the default) by removing the `runtime = 'edge'` export. If you need edge behavior for specific routes, use [Proxy](/docs/app/api-reference/file-conventions/proxy) instead.
+**Not supported.** Cache Components requires the Node.js runtime. Switch to the Node.js runtime (the default) by removing the `runtime = 'edge'` export. If you need edge behavior for specific routes, use [Proxy](../../api-reference/file-conventions/proxy/index.md) instead.
 
 Was this helpful?

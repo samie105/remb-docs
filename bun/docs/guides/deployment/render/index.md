@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:17.295Z"
 content_hash: "3148dfe698a1e7f83ffd985138861656c1b0bf9855d828cc510090e89b2e8628"
 menu_path: ["Deploy a Bun application on Render"]
 section_path: []
-nav_prev: {"path": "../railway/index.md", "title": "Deploy a Bun application on Railway"}
-nav_next: {"path": "../vercel/index.md", "title": "Deploy a Bun application on Vercel"}
+nav_prev: {"path": "bun/docs/guides/deployment/railway/index.md", "title": "Deploy a Bun application on Railway"}
+nav_next: {"path": "bun/docs/guides/deployment/vercel/index.md", "title": "Deploy a Bun application on Vercel"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../vercel/index.md", "title": "Deploy a Bun application on V
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 [Render](https://render.com/) is a cloud platform that lets you flexibly build, deploy, and scale your apps. It offers features like auto deploys from GitHub, a global CDN, private networks, automatic HTTPS setup, and managed PostgreSQL and Redis. Render supports Bun natively. You can deploy Bun apps as web services, background workers, cron jobs, and more.
 
@@ -159,10 +159,10 @@ Deploy a Bun application on Railway
 
 Previous
 
-](/docs/guides/deployment/railway)[
+](../railway/index.md)[
 
 Deploy a Bun application on AWS Lambda
 
 Next
 
-](/docs/guides/deployment/aws-lambda)
+](../aws-lambda/index.md)

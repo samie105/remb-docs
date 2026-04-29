@@ -10,8 +10,8 @@ content_hash: "82be7673a866b0cd4ba7a29163991052275d79fde3c82e5250955301ea04a678"
 menu_path: ["util/types - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "util - Node documentation"}
-nav_next: {"path": "../../v8/index.md", "title": "v8 - Node documentation"}
+nav_prev: {"path": "deno/api/node/util/index.md", "title": "util - Node documentation"}
+nav_next: {"path": "deno/api/node/v8/index.md", "title": "v8 - Node documentation"}
 ---
 
 ### Usage in Deno

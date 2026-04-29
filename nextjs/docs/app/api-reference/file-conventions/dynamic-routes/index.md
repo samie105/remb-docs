@@ -11,8 +11,8 @@ menu_path: ["Dynamic Route Segments"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../default/index.md", "title": "default.js"}
-nav_next: {"path": "../error/index.md", "title": "error.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/default/index.md", "title": "default.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/error/index.md", "title": "error.js"}
 ---
 
 # Dynamic Route Segments
@@ -40,7 +40,7 @@ export default async function Page({
 }
 ```
 
-Dynamic Segments are passed as the `params` prop to [`layout`](/docs/app/api-reference/file-conventions/layout), [`page`](/docs/app/api-reference/file-conventions/page), [`route`](/docs/app/api-reference/file-conventions/route), and [`generateMetadata`](/docs/app/api-reference/functions/generate-metadata#generatemetadata-function) functions.
+Dynamic Segments are passed as the `params` prop to [`layout`](../layout/index.md), [`page`](../page/index.md), [`route`](../route/index.md), and [`generateMetadata`](../../functions/generate-metadata/index.md#generatemetadata-function) functions.
 
 | Route | Example URL | `params` |
 | --- | --- | --- |
@@ -75,7 +75,7 @@ export default function BlogPostPage({
 }
 ```
 
-Alternatively Client Components can use the [`useParams`](/docs/app/api-reference/functions/use-params) hook to access the `params` anywhere in the Client Component tree.
+Alternatively Client Components can use the [`useParams`](../../functions/use-params/index.md) hook to access the `params` anywhere in the Client Component tree.
 
 ### Catch-all Segments[](#catch-all-segments)
 
@@ -106,7 +106,7 @@ The difference between **catch-all** and **optional catch-all** segments is that
 
 ### TypeScript[](#typescript)
 
-When using TypeScript, you can add types for `params` depending on your configured route segment — use [`PageProps<'/route'>`](/docs/app/api-reference/file-conventions/page#page-props-helper), [`LayoutProps<'/route'>`](/docs/app/api-reference/file-conventions/layout#layout-props-helper), or [`RouteContext<'/route'>`](/docs/app/api-reference/file-conventions/route#route-context-helper) to type `params` in `page`, `layout`, and `route` respectively.
+When using TypeScript, you can add types for `params` depending on your configured route segment — use [`PageProps<'/route'>`](../page/index.md#page-props-helper), [`LayoutProps<'/route'>`](../layout/index.md#layout-props-helper), or [`RouteContext<'/route'>`](../route/index.md#route-context-helper) to type `params` in `page`, `layout`, and `route` respectively.
 
 Route `params` values are typed as `string`, `string[]`, or `undefined` (for optional catch-all segments), because their values aren't known until runtime. Users can enter any URL into the address bar, and these broad types help ensure that your application code handles all these possible cases.
 
@@ -144,7 +144,7 @@ export default async function Page(props: PageProps<'/[locale]'>) {
 
 ### With Cache Components[](#with-cache-components)
 
-When using [Cache Components](/docs/app/getting-started/caching) with dynamic route segments, how you handle params depends on whether you use [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params).
+When using [Cache Components](../../../getting-started/caching/index.md) with dynamic route segments, how you handle params depends on whether you use [`generateStaticParams`](../../functions/generate-static-params/index.md).
 
 Without `generateStaticParams`, param values are unknown during prerendering, making params runtime data. You must wrap param access in `<Suspense>` boundaries to provide fallback UI.
 
@@ -156,7 +156,7 @@ The sections below demonstrate both patterns.
 
 All params are runtime data. Param access must be wrapped by Suspense fallback UI. Next.js generates a static shell at build time, and content loads on each request.
 
-> **Good to know**: You can also use [`loading.tsx`](/docs/app/api-reference/file-conventions/loading) for page-level fallback UI.
+> **Good to know**: You can also use [`loading.tsx`](../loading/index.md) for page-level fallback UI.
 
 app/blog/\[slug\]/page.tsx
 
@@ -299,7 +299,7 @@ async function PrivatePost({ slug }: { slug: string }) {
 
 ### With `generateStaticParams`[](#with-generatestaticparams-1)
 
-The [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) function can be used to [statically generate](/docs/app/glossary#prerendering) routes at build time instead of on-demand at request time.
+The [`generateStaticParams`](../../functions/generate-static-params/index.md) function can be used to [statically generate](../../../glossary/index.md#prerendering) routes at build time instead of on-demand at request time.
 
 app/blog/\[slug\]/page.tsx
 
@@ -315,11 +315,11 @@ export async function generateStaticParams() {
 }
 ```
 
-When using `fetch` inside the `generateStaticParams` function, the requests are [automatically deduplicated](/docs/app/glossary#memoization). This avoids multiple network calls for the same data Layouts, Pages, and other `generateStaticParams` functions, speeding up build time.
+When using `fetch` inside the `generateStaticParams` function, the requests are [automatically deduplicated](../../../glossary/index.md#memoization). This avoids multiple network calls for the same data Layouts, Pages, and other `generateStaticParams` functions, speeding up build time.
 
 ### Dynamic GET Route Handlers with `generateStaticParams`[](#dynamic-get-route-handlers-with-generatestaticparams)
 
-`generateStaticParams` also works with dynamic [Route Handlers](/docs/app/api-reference/file-conventions/route) to statically generate API responses at build time:
+`generateStaticParams` also works with dynamic [Route Handlers](../route/index.md) to statically generate API responses at build time:
 
 app/api/posts/\[id\]/route.ts
 
@@ -364,6 +364,6 @@ For more information on what to do next, we recommend the following sections
 
 API reference for the generateStaticParams function.
 
-](/docs/app/api-reference/functions/generate-static-params)
+](../../functions/generate-static-params/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:03.934Z"
 content_hash: "da297c3a0a970b51ad9d19a5a244b8f9e4f7ff15f4c8043a699a22ca627a3c21"
 menu_path: ["Hot reload an HTTP server"]
 section_path: []
-nav_prev: {"path": "../file-uploads/index.md", "title": "Upload files via HTTP using FormData"}
-nav_next: {"path": "../proxy/index.md", "title": "Proxy HTTP requests using fetch()"}
+nav_prev: {"path": "bun/docs/guides/http/file-uploads/index.md", "title": "Upload files via HTTP using FormData"}
+nav_next: {"path": "bun/docs/guides/http/proxy/index.md", "title": "Proxy HTTP requests using fetch()"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../proxy/index.md", "title": "Proxy HTTP requests using fetc
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-Bun supports the [`--hot`](/docs/runtime/watch-mode#hot-mode) flag to run a file with hot reloading enabled. When any module or file changes, Bun re-runs the file.
+Bun supports the [`--hot`](../../../runtime/watch-mode/index.md#hot-mode) flag to run a file with hot reloading enabled. When any module or file changes, Bun re-runs the file.
 
 terminal
 
@@ -70,10 +70,10 @@ Send an HTTP request using fetch
 
 Previous
 
-](/docs/guides/http/fetch)[
+](../fetch/index.md)[
 
 Start a cluster of HTTP servers
 
 Next
 
-](/docs/guides/http/cluster)
+](../cluster/index.md)

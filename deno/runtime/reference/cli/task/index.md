@@ -10,8 +10,8 @@ content_hash: "3c9c0e553479f3dac2476591e748c837d1c71980341011ea3e38c582d287ca70"
 menu_path: ["deno task"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../serve/index.md", "title": "deno serve"}
-nav_next: {"path": "../test/index.md", "title": "deno test"}
+nav_prev: {"path": "deno/runtime/reference/cli/serve/index.md", "title": "deno serve"}
+nav_next: {"path": "deno/runtime/reference/cli/test/index.md", "title": "deno test"}
 ---
 
 # outputs 10

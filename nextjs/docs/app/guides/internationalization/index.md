@@ -11,8 +11,8 @@ menu_path: ["Internationalization"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../instrumentation/index.md", "title": "How to set up instrumentation"}
-nav_next: {"path": "../json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
+nav_prev: {"path": "nextjs/docs/app/guides/instrumentation/index.md", "title": "How to set up instrumentation"}
+nav_next: {"path": "nextjs/docs/app/guides/json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
 ---
 
 # Internationalization
@@ -48,7 +48,7 @@ let defaultLocale = 'en-US'
 match(languages, locales, defaultLocale) // -> 'en-US'
 ```
 
-Routing can be internationalized by either the sub-path (`/fr/products`) or domain (`my-site.fr/products`). With this information, you can now redirect the user based on the locale inside [Proxy](/docs/app/api-reference/file-conventions/proxy).
+Routing can be internationalized by either the sub-path (`/fr/products`) or domain (`my-site.fr/products`). With this information, you can now redirect the user based on the locale inside [Proxy](../../api-reference/file-conventions/proxy/index.md).
 
 proxy.js
 
@@ -102,7 +102,7 @@ export default async function Page({ params }: PageProps<'/[lang]'>) {
 }
 ```
 
-> **Good to know:** `PageProps` and `LayoutProps` are globally available TypeScript helpers that provide strong typing for route parameters. See [PageProps](/docs/app/api-reference/file-conventions/page#page-props-helper) and [LayoutProps](/docs/app/api-reference/file-conventions/layout#layout-props-helper) for more details.
+> **Good to know:** `PageProps` and `LayoutProps` are globally available TypeScript helpers that provide strong typing for route parameters. See [PageProps](../../api-reference/file-conventions/page/index.md#page-props-helper) and [LayoutProps](../../api-reference/file-conventions/layout/index.md#layout-props-helper) for more details.
 
 The root layout can also be nested in the new folder (e.g. `app/[lang]/layout.js`).
 
@@ -176,7 +176,7 @@ export default async function Page({ params }: PageProps<'/[lang]'>) {
 }
 ```
 
-Because all layouts and pages in the `app/` directory default to [Server Components](/docs/app/getting-started/server-and-client-components), we do not need to worry about the size of the translation files affecting our client-side JavaScript bundle size. This code will **only run on the server**, and only the resulting HTML will be sent to the browser.
+Because all layouts and pages in the `app/` directory default to [Server Components](../../getting-started/server-and-client-components/index.md), we do not need to worry about the size of the translation files affecting our client-side JavaScript bundle size. This code will **only run on the server**, and only the resulting HTML will be sent to the browser.
 
 ## Static Rendering[](#static-rendering)
 

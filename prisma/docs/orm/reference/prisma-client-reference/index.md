@@ -11,8 +11,8 @@ menu_path: ["Prisma Client API"]
 section_path: []
 tab_variants: ["Query A","Query B","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL"]
 content_language: "en"
-nav_prev: {"path": "../prisma-cli-reference/index.md", "title": "Prisma CLI reference"}
-nav_next: {"path": "../prisma-schema-reference/index.md", "title": "Schema API"}
+nav_prev: {"path": "prisma/docs/orm/reference/prisma-cli-reference/index.md", "title": "Prisma CLI reference"}
+nav_next: {"path": "prisma/docs/orm/reference/prisma-schema-reference/index.md", "title": "Schema API"}
 ---
 
 The Prisma Client API reference documentation is based on the following schema:

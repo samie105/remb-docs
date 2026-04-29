@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:17.678Z"
 content_hash: "3b1035342b56e9c348ed64874a7dd23c81cf37eda0cd6b57a0df24dee1abe6fc"
 menu_path: ["Action not found."]
 section_path: []
-nav_prev: {"path": "../action-called-from-server-error/index.md", "title": "Action unexpected called from the server."}
-nav_next: {"path": "../action-query-string-invalid-error/index.md", "title": "An invalid Action query string was passed by a form."}
+nav_prev: {"path": "astro/en/reference/errors/action-called-from-server-error/index.md", "title": "Action unexpected called from the server."}
+nav_next: {"path": "astro/en/reference/errors/action-query-string-invalid-error/index.md", "title": "An invalid Action query string was passed by a form."}
 ---
 
 # Action not found.
@@ -23,4 +23,4 @@ nav_next: {"path": "../action-query-string-invalid-error/index.md", "title": "An
 
 The server received a request for an action but could not find a match with the same name.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

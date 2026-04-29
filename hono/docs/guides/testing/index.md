@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:26.319Z"
 content_hash: "78b0ac0660d8f1bf499055495942e1b84774c859d8d7ed885fa60da76b479e17"
 menu_path: ["Testing ​"]
 section_path: []
-nav_prev: {"path": "../jsx-dom/index.md", "title": "Client Components \u200b"}
-nav_next: {"path": "../validation/index.md", "title": "Validation \u200b"}
+nav_prev: {"path": "hono/docs/guides/jsx-dom/index.md", "title": "Client Components \u200b"}
+nav_next: {"path": "hono/docs/guides/validation/index.md", "title": "Validation \u200b"}
 ---
 
 Testing is important. In actuality, it is easy to test Hono's applications. The way to create a test environment differs from each runtime, but the basic steps are the same. In this section, let's test with Cloudflare Workers and [Vitest](https://vitest.dev/).

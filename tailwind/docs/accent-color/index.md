@@ -10,8 +10,8 @@ content_hash: "983ce882073753beba1574ad8aa7387a9be7ce1d104b89a8a4db418c59a2113a"
 menu_path: ["accent-color"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../translate/index.md", "title": "translate"}
-nav_next: {"path": "../appearance/index.md", "title": "appearance"}
+nav_prev: {"path": "tailwind/docs/translate/index.md", "title": "translate"}
+nav_next: {"path": "tailwind/docs/appearance/index.md", "title": "appearance"}
 ---
 
 # accent-color
@@ -116,7 +116,7 @@ Agree to terms
 <input class="accent-black hover:accent-pink-500" type="checkbox" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Prefix an `accent-color` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -124,7 +124,7 @@ Prefix an `accent-color` utility with a breakpoint variant like `md:` to only ap
 <input class="accent-black md:accent-pink-500 ..." type="checkbox" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
@@ -138,7 +138,7 @@ Now the `accent-regal-blue` utility can be used in your markup:
 <input class="accent-regal-blue" type="checkbox" />
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:42.539Z"
 content_hash: "49184ede84589a9664e121b79369e0cc5d70033c7088e6e74fee8cec22153fb7"
 menu_path: ["svelte/attachments"]
 section_path: []
-nav_prev: {"path": "../svelte-animate/index.md", "title": "svelte/animate"}
-nav_next: {"path": "../svelte-compiler/index.md", "title": "svelte/compiler"}
+nav_prev: {"path": "svelte/docs/svelte/svelte-animate/index.md", "title": "svelte/animate"}
+nav_next: {"path": "svelte/docs/svelte/svelte-compiler/index.md", "title": "svelte/compiler"}
 ---
 
 ```
@@ -68,7 +68,7 @@ function createAttachmentKey(): symbol;
 
 ## fromAction[](#fromAction)
 
-Converts an [action](/docs/svelte/use) into an [attachment](/docs/svelte/@attach) keeping the same behavior. It's useful if you want to start using attachments on components but you have actions provided by a library.
+Converts an [action](../use/index.md) into an [attachment](/docs/svelte/@attach) keeping the same behavior. It's useful if you want to start using attachments on components but you have actions provided by a library.
 
 Note that the second argument, if provided, must be a function that _returns_ the argument to the action function, not the argument itself.
 
@@ -104,7 +104,7 @@ function fromAction<E extends EventTarget>(
 
 An [attachment](/docs/svelte/@attach) is a function that runs when an element is mounted to the DOM, and optionally returns a function that is called when the element is later removed.
 
-It can be attached to an element with an `{@attach ...}` tag, or by spreading an object containing a property created with [`createAttachmentKey`](/docs/svelte/svelte-attachments#createAttachmentKey).
+It can be attached to an element with an `{@attach ...}` tag, or by spreading an object containing a property created with [`createAttachmentKey`](index.md#createAttachmentKey).
 
 ```
 interface Attachment<T extends EventTarget = Element> {…}
@@ -118,4 +118,4 @@ interface Attachment<T extends EventTarget = Element> {…}
 
 previous next
 
-[svelte/animate](/docs/svelte/svelte-animate) [svelte/compiler](/docs/svelte/svelte-compiler)
+[svelte/animate](../svelte-animate/index.md) [svelte/compiler](../svelte-compiler/index.md)

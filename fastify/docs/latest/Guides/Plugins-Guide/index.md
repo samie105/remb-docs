@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:59.590Z"
 content_hash: "6b278da86413b8eb9de6a76f57e4ede5c2f1d3b511fdc0451b8841fe15fc7436"
 menu_path: ["The hitchhiker's guide to plugins"]
 section_path: []
-nav_prev: {"path": "../Migration-Guide-V5/index.md", "title": "V5 Migration Guide"}
-nav_next: {"path": "../Prototype-Poisoning/index.md", "title": "Prototype-Poisoning"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Migration-Guide-V5/index.md", "title": "V5 Migration Guide"}
+nav_next: {"path": "fastify/docs/latest/Guides/Prototype-Poisoning/index.md", "title": "Prototype-Poisoning"}
 ---
 
 Version: latest (v5.8.x)
@@ -36,7 +36,7 @@ Fastify was built from the beginning to be an extremely modular system. We built
 
 As with JavaScript, where everything is an object, in Fastify everything is a plugin.
 
-Your routes, your utilities, and so on are all plugins. To add a new plugin, whatever its functionality may be, in Fastify you have a nice and unique API: [`register`](/docs/latest/Reference/Plugins/).
+Your routes, your utilities, and so on are all plugins. To add a new plugin, whatever its functionality may be, in Fastify you have a nice and unique API: [`register`](../../Reference/Plugins/index.md).
 
 ```
 fastify.register(  require('./my-plugin'),  { options })
@@ -86,7 +86,7 @@ const util = require('./your-awesome-utility')console.log(util('that is ', 'awes
 
 Now you will import your utility in every file you need it in. (And do not forget that you will probably also need it in your tests).
 
-Fastify offers you a more elegant and comfortable way to do this, _decorators_. Creating a decorator is extremely easy, just use the [`decorate`](/docs/latest/Reference/Decorators/) API:
+Fastify offers you a more elegant and comfortable way to do this, _decorators_. Creating a decorator is extremely easy, just use the [`decorate`](../../Reference/Decorators/index.md) API:
 
 ```
 fastify.decorate('util', (a, b) => a + b)
@@ -142,7 +142,7 @@ Again, it works, but it can be much better!
 fastify.decorateRequest('setBoolHeader', function (name) {  this.isHappy = this.headers[name] ?? false})fastify.decorateRequest('isHappy', false) // This will be added to the Request object prototype, yay speed!fastify.addHook('preHandler', (request, reply, done) => {  request.setBoolHeader('happy')  done()})fastify.get('/happiness', (request, reply) => {  reply.send({ happy: request.isHappy })})
 ```
 
-We have seen how to extend server functionality and how to handle the encapsulation system, but what if you need to add a function that must be executed whenever the server "[emits](/docs/latest/Reference/Lifecycle/)" an event?
+We have seen how to extend server functionality and how to handle the encapsulation system, but what if you need to add a function that must be executed whenever the server "[emits](../../Reference/Lifecycle/index.md)" an event?
 
 ## Hooks[​](#hooks "Direct link to Hooks")
 
@@ -154,7 +154,7 @@ fastify.decorate('util', (request, key, value) => { request[key] = value })fasti
 
 I think we all agree that this is terrible. Repeated code, awful readability and it cannot scale.
 
-So what can you do to avoid this annoying issue? Yes, you are right, use a [hook](/docs/latest/Reference/Hooks/)!
+So what can you do to avoid this annoying issue? Yes, you are right, use a [hook](../../Reference/Hooks/index.md)!
 
 ```
 fastify.decorate('util', (request, key, value) => { request[key] = value })fastify.addHook('preHandler', (request, reply, done) => {  fastify.util(request, 'timestamp', new Date())  done()})fastify.get('/plugin1', (request, reply) => {  reply.send(request)})fastify.get('/plugin2', (request, reply) => {  reply.send(request)})
@@ -170,7 +170,7 @@ fastify.register((instance, opts, done) => {  instance.decorate('util', (request
 
 Now your hook will run just for the first route!
 
-An alternative approach is to make use of the [onRoute hook](/docs/latest/Reference/Hooks/#onroute) to customize application routes dynamically from inside the plugin. Every time a new route is registered, you can read and modify the route options. For example, based on a [route config option](/docs/latest/Reference/Routes/#routes-options):
+An alternative approach is to make use of the [onRoute hook](../../Reference/Hooks/index.md#onroute) to customize application routes dynamically from inside the plugin. Every time a new route is registered, you can read and modify the route options. For example, based on a [route config option](../../Reference/Routes/index.md#routes-options):
 
 ```
 fastify.register((instance, opts, done) => {  instance.decorate('util', (request, key, value) => { request[key] = value })  function handler(request, reply, done) {    instance.util(request, 'timestamp', new Date())    done()  }  instance.addHook('onRoute', (routeOptions) => {    if (routeOptions.config && routeOptions.config.useUtil === true) {      // set or add our handler to the route preHandler hook      if (!routeOptions.preHandler) {        routeOptions.preHandler = [handler]        return      }      if (Array.isArray(routeOptions.preHandler)) {        routeOptions.preHandler.push(handler)        return      }      routeOptions.preHandler = [routeOptions.preHandler, handler]    }  })  instance.get('/plugin1', {config: {useUtil: true}}, (request, reply) => {    reply.send(request)  })  instance.get('/plugin2', (request, reply) => {    reply.send(request)  })  done()})
@@ -196,7 +196,7 @@ const fp = require('fastify-plugin')const dbClient = require('db-client')functio
 
 You can also tell `fastify-plugin` to check the installed version of Fastify, in case you need a specific API.
 
-As we mentioned earlier, Fastify starts loading its plugins **after** `.listen()`, `.inject()` or `.ready()` are called and as such, **after** they have been declared. This means that, even though the plugin may inject variables to the external Fastify instance via [`decorate`](/docs/latest/Reference/Decorators/), the decorated variables will not be accessible before calling `.listen()`, `.inject()`, or `.ready()`.
+As we mentioned earlier, Fastify starts loading its plugins **after** `.listen()`, `.inject()` or `.ready()` are called and as such, **after** they have been declared. This means that, even though the plugin may inject variables to the external Fastify instance via [`decorate`](../../Reference/Decorators/index.md), the decorated variables will not be accessible before calling `.listen()`, `.inject()`, or `.ready()`.
 
 In case you rely on a variable injected by a preceding plugin and want to pass that in the `options` argument of `register`, you can do so by using a function instead of an object:
 

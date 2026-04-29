@@ -11,8 +11,8 @@ menu_path: ["How to build micro-frontends using multi-zones and Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../multi-tenant/index.md", "title": "How to build multi-tenant apps in Next.js"}
-nav_next: {"path": "../open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
+nav_prev: {"path": "nextjs/docs/app/guides/multi-tenant/index.md", "title": "How to build multi-tenant apps in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
 ---
 
 # How to build micro-frontends using multi-zones and Next.js
@@ -41,7 +41,7 @@ Navigating from a page in one zone to a page in another zone, such as from `/` t
 
 ## How to define a zone[](#how-to-define-a-zone)
 
-A zone is a normal Next.js application where you also configure an [assetPrefix](/docs/app/api-reference/config/next-config-js/assetPrefix) to avoid conflicts with pages and static files in other zones.
+A zone is a normal Next.js application where you also configure an [assetPrefix](../../api-reference/config/next-config-js/assetPrefix/index.md) to avoid conflicts with pages and static files in other zones.
 
 next.config.js
 
@@ -81,7 +81,7 @@ const nextConfig = {
 
 With the Multi Zones set-up, you need to route the paths to the correct zone since they are served by different applications. You can use any HTTP proxy to do this, but one of the Next.js applications can also be used to route requests for the entire domain.
 
-To route to the correct zone using a Next.js application, you can use [`rewrites`](/docs/app/api-reference/config/next-config-js/rewrites). For each path served by a different zone, you would add a rewrite rule to send that path to the domain of the other zone, and you also need to rewrite the requests for the static assets. For example:
+To route to the correct zone using a Next.js application, you can use [`rewrites`](../../api-reference/config/next-config-js/rewrites/index.md). For each path served by a different zone, you would add a rewrite rule to send that path to the domain of the other zone, and you also need to rewrite the requests for the static assets. For example:
 
 next.config.js
 
@@ -110,7 +110,7 @@ async rewrites() {
 
 ### Routing requests using proxy[](#routing-requests-using-proxy)
 
-Routing requests through [`rewrites`](/docs/app/api-reference/config/next-config-js/rewrites) is recommended to minimize latency overhead for the requests, but proxy can also be used when there is a need for a dynamic decision when routing. For example, if you are using a feature flag to decide where a path should be routed such as during a migration, you can use proxy.
+Routing requests through [`rewrites`](../../api-reference/config/next-config-js/rewrites/index.md) is recommended to minimize latency overhead for the requests, but proxy can also be used when there is a need for a dynamic decision when routing. For example, if you are using a feature flag to decide where a path should be routed such as during a migration, you can use proxy.
 
 proxy.js
 
@@ -125,7 +125,7 @@ export async function proxy(request) {
 
 ## Linking between zones[](#linking-between-zones)
 
-Links to paths in a different zone should use an `a` tag instead of the Next.js [`<Link>`](/docs/pages/api-reference/components/link) component. This is because Next.js will try to prefetch and soft navigate to any relative path in `<Link>` component, which will not work across zones.
+Links to paths in a different zone should use an `a` tag instead of the Next.js [`<Link>`](../../../pages/api-reference/components/link/index.md) component. This is because Next.js will try to prefetch and soft navigate to any relative path in `<Link>` component, which will not work across zones.
 
 ## Sharing code[](#sharing-code)
 
@@ -135,7 +135,7 @@ Since the pages in different zones may be released at different times, feature f
 
 ## Server Actions[](#server-actions)
 
-When using [Server Actions](/docs/app/getting-started/mutating-data) with Multi-Zones, you must explicitly allow the user-facing origin since your user facing domain may serve multiple applications. In your `next.config.js` file, add the following lines:
+When using [Server Actions](../../getting-started/mutating-data/index.md) with Multi-Zones, you must explicitly allow the user-facing origin since your user facing domain may serve multiple applications. In your `next.config.js` file, add the following lines:
 
 next.config.js
 
@@ -149,6 +149,6 @@ const nextConfig = {
 }
 ```
 
-See [`serverActions.allowedOrigins`](/docs/app/api-reference/config/next-config-js/serverActions#allowedorigins) for more information.
+See [`serverActions.allowedOrigins`](../../api-reference/config/next-config-js/serverActions/index.md#allowedorigins) for more information.
 
 Was this helpful?

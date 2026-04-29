@@ -10,8 +10,8 @@ content_hash: "6496b415b1db7ed10897d3dc77d4868c97047f02c1c29b75c252bbbc9eff03ad"
 menu_path: ["Security and permissions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../node/index.md", "title": "Node and npm Compatibility"}
-nav_next: {"path": "../modules/index.md", "title": "Modules and dependencies"}
+nav_prev: {"path": "deno/runtime/fundamentals/node/index.md", "title": "Node and npm Compatibility"}
+nav_next: {"path": "deno/runtime/fundamentals/modules/index.md", "title": "Modules and dependencies"}
 ---
 
 # Allow all reads from file system
@@ -198,7 +198,7 @@ deno run --deny-env script.ts
 
 > Note for Windows users: environment variables are case insensitive on Windows, so Deno also matches them case insensitively (on Windows only).
 
-Deno reads certain environment variables on startup, such as `DENO_DIR` and `NO_COLOR` ([see the full list](/runtime/reference/cli/env_variables/)).
+Deno reads certain environment variables on startup, such as `DENO_DIR` and `NO_COLOR` ([see the full list](../../reference/cli/env_variables/index.md)).
 
 The value of the `NO_COLOR` environment variable is visible to all code running in the Deno runtime, regardless of whether the code has been granted permission to read environment variables.
 
@@ -277,7 +277,7 @@ By default `npm` packages will not have their post-install scripts executed duri
 
 ### FFI (Foreign Function Interface)
 
-Deno provides an [FFI mechanism for executing code written in other languages](/runtime/fundamentals/ffi/), such as Rust, C, or C++, from within a Deno runtime. This is done using the [`Deno.dlopen`](/api/deno/~/Deno.dlopen) API, which can load shared libraries and call functions from them.
+Deno provides an [FFI mechanism for executing code written in other languages](../ffi/index.md), such as Rust, C, or C++, from within a Deno runtime. This is done using the [`Deno.dlopen`](/api/deno/~/Deno.dlopen) API, which can load shared libraries and call functions from them.
 
 By default, executing code can not use the [`Deno.dlopen`](/api/deno/~/Deno.dlopen) API, as this would constitute a violation of the principle that code can not escalate it's privileges without user consent.
 

@@ -10,8 +10,8 @@ content_hash: "1333e132cfc256bb9a0b33a5f77a2b377d4fd2ce06b4628515218c7b261b6b47"
 menu_path: ["Environment Variables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connection-urls/index.md", "title": "Connection URLs"}
-nav_next: {"path": "../database-features/index.md", "title": "Database Features"}
+nav_prev: {"path": "prisma/docs/orm/reference/connection-urls/index.md", "title": "Connection URLs"}
+nav_next: {"path": "prisma/docs/orm/reference/database-features/index.md", "title": "Database Features"}
 ---
 
 # enable only `prisma:client`-level debugging output

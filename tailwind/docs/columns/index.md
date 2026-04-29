@@ -10,8 +10,8 @@ content_hash: "82787c55b3ca2b392702e7a32eb1c5eea8e8649bedc52e8ffebec4c35010412c"
 menu_path: ["columns"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../aspect-ratio/index.md", "title": "aspect-ratio"}
-nav_next: {"path": "../break-after/index.md", "title": "break-after"}
+nav_prev: {"path": "tailwind/docs/aspect-ratio/index.md", "title": "aspect-ratio"}
+nav_next: {"path": "tailwind/docs/break-after/index.md", "title": "break-after"}
 ---
 
 Layout

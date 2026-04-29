@@ -10,8 +10,8 @@ content_hash: "a6f186f8157ea9cb113d584154f13bfd945fbbb130daf52d93b3193c7386c527"
 menu_path: ["PostgreSQL: Documentation: 18: 9.27. System Information Functions and Operators"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../functions-geometry.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.11.\u00a0Geometric Functions and Operators"}
-nav_next: {"path": "../functions-json.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.16.\u00a0JSON Functions and Operators"}
+nav_prev: {"path": "postgres/docs/current/functions-geometry.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.11.\u00a0Geometric Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-json.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.16.\u00a0JSON Functions and Operators"}
 ---
 
 | 

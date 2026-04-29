@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:23.890Z"
 content_hash: "1186bf94b9e6dc2fd1194ff9ee474de08fdd6113901263042946a0440f2d9bd1"
 menu_path: ["Quickstart"]
 section_path: []
-nav_prev: {"path": "../migrate-from-v9-to-v10/index.md", "title": "Migrate from v9 to v10"}
-nav_next: {"path": "../rpc/index.md", "title": "HTTP RPC Specification"}
+nav_prev: {"path": "trpc/docs/v10/migrate-from-v9-to-v10/index.md", "title": "Migrate from v9 to v10"}
+nav_next: {"path": "trpc/docs/v10/rpc/index.md", "title": "HTTP RPC Specification"}
 ---
 
 tRPC combines concepts from [REST](https://www.sitepoint.com/rest-api/) and [GraphQL](https://graphql.org/). If you are unfamiliar with either, take a look at the key [Concepts](../concepts/index.md).

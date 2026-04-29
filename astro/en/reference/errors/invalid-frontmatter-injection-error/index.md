@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:14.054Z"
 content_hash: "cda6663e4f5c82ae7356dc541dbcad3f18d3609ea5af7ea569ce777c2e27632c"
 menu_path: ["Invalid frontmatter injection."]
 section_path: []
-nav_prev: {"path": "../invalid-dynamic-route/index.md", "title": "Invalid dynamic route."}
-nav_next: {"path": "../invalid-get-static-path-param/index.md", "title": "Invalid value returned by a getStaticPaths path."}
+nav_prev: {"path": "astro/en/reference/errors/invalid-dynamic-route/index.md", "title": "Invalid dynamic route."}
+nav_next: {"path": "astro/en/reference/errors/invalid-get-static-path-param/index.md", "title": "Invalid value returned by a getStaticPaths path."}
 ---
 
 # Invalid frontmatter injection.
@@ -25,6 +25,6 @@ A remark or rehype plugin attempted to inject invalid frontmatter. This occurs w
 
 **See Also:**
 
-*   [Modifying frontmatter programmatically](/en/guides/markdown-content/#modifying-frontmatter-programmatically)
+*   [Modifying frontmatter programmatically](../../../guides/markdown-content/index.md#modifying-frontmatter-programmatically)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

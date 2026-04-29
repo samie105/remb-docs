@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:23.228Z"
 content_hash: "f0e8597ff099360598b45b004c860a554954b1d43aea9b51503a5e0162439912"
 menu_path: ["Add an optional dependency"]
 section_path: []
-nav_prev: {"path": "../add-git/index.md", "title": "Add a Git dependency"}
-nav_next: {"path": "../add-peer/index.md", "title": "Add a peer dependency"}
+nav_prev: {"path": "bun/docs/guides/install/add-git/index.md", "title": "Add a Git dependency"}
+nav_next: {"path": "bun/docs/guides/install/add-peer/index.md", "title": "Add a peer dependency"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../add-peer/index.md", "title": "Add a peer dependency"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To add an npm package as an optional dependency, use the `--optional` flag.
 
@@ -59,7 +59,7 @@ package.json
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -71,10 +71,10 @@ Add a development dependency
 
 Previous
 
-](/docs/guides/install/add-dev)[
+](../add-dev/index.md)[
 
 Add a peer dependency
 
 Next
 
-](/docs/guides/install/add-peer)
+](../add-peer/index.md)

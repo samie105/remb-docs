@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:00.480Z"
 content_hash: "d5cc897b0b38473876a57c5282416f554738649e20fee324dedcdadc41a4eb87"
 menu_path: ["AI & Vectors","AI & Vectors","Search","Search","Keyword search","Keyword search"]
 section_path: ["AI & Vectors","AI & Vectors","Search","Search","Keyword search","Keyword search"]
-nav_prev: {"path": "../integrations/roboflow/index.md", "title": "Roboflow"}
-nav_next: {"path": "../langchain/index.md", "title": "LangChain"}
+nav_prev: {"path": "supabase/docs/guides/ai/integrations/roboflow/index.md", "title": "Roboflow"}
+nav_next: {"path": "supabase/docs/guides/ai/langchain/index.md", "title": "LangChain"}
 ---
 
 # 
@@ -23,9 +23,9 @@ Learn how to search by words or phrases.
 
 * * *
 
-Keyword search involves locating documents or records that contain specific words or phrases, primarily based on the exact match between the search terms and the text within the data. It differs from [semantic search](/docs/guides/ai/semantic-search), which interprets the meaning behind the query to provide results that are contextually related, even if the exact words aren't present in the text. Semantic search considers synonyms, intent, and natural language nuances to provide a more nuanced approach to information retrieval.
+Keyword search involves locating documents or records that contain specific words or phrases, primarily based on the exact match between the search terms and the text within the data. It differs from [semantic search](../semantic-search/index.md), which interprets the meaning behind the query to provide results that are contextually related, even if the exact words aren't present in the text. Semantic search considers synonyms, intent, and natural language nuances to provide a more nuanced approach to information retrieval.
 
-In Postgres, keyword search is implemented using [full-text search](/docs/guides/database/full-text-search). It supports indexing and text analysis for data retrieval, focusing on records that match the search criteria. Postgres' full-text search extends beyond simple keyword matching to address linguistic nuances, making it effective for applications that require precise text queries.
+In Postgres, keyword search is implemented using [full-text search](../../database/full-text-search/index.md). It supports indexing and text analysis for data retrieval, focusing on records that match the search criteria. Postgres' full-text search extends beyond simple keyword matching to address linguistic nuances, making it effective for applications that require precise text queries.
 
 ## When and why to use keyword search[#](#when-and-why-to-use-keyword-search)
 
@@ -33,13 +33,13 @@ Keyword search is particularly useful in scenarios where precision and specifici
 
 For example in technical or academic research databases, researchers often search for specific studies, compounds, or concepts identified by certain terms or codes. Searching for a specific chemical compound using its exact molecular formula or a unique identifier will yield more focused and relevant results compared to a semantic search, which could return a wide range of documents discussing the compound in different contexts. Keyword search ensures documents that explicitly mention the exact term are found, allowing users to access the precise data they need efficiently.
 
-It's also possible to combine keyword search with semantic search to get the best of both worlds. See [Hybrid search](/docs/guides/ai/hybrid-search) for more details.
+It's also possible to combine keyword search with semantic search to get the best of both worlds. See [Hybrid search](../hybrid-search/index.md) for more details.
 
 ## Using full-text search[#](#using-full-text-search)
 
-For an in-depth guide to Postgres' full-text search, including how to store, index, and query records, see [Full text search](/docs/guides/database/full-text-search).
+For an in-depth guide to Postgres' full-text search, including how to store, index, and query records, see [Full text search](../../database/full-text-search/index.md).
 
 ## See also[#](#see-also)
 
-*   [Semantic search](/docs/guides/ai/semantic-search)
-*   [Hybrid search](/docs/guides/ai/hybrid-search)
+*   [Semantic search](../semantic-search/index.md)
+*   [Hybrid search](../hybrid-search/index.md)

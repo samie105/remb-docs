@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:25.741Z"
 content_hash: "69eab1f3dfdf90d661b64b7d417eeed50d0ad631bc624fdf01746b30901a3667"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Ruby on Rails","Ruby on Rails"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Ruby on Rails","Ruby on Rails"]
-nav_prev: {"path": "../refine/index.md", "title": "Use Supabase with Refine"}
-nav_next: {"path": "../solidjs/index.md", "title": "Use Supabase with SolidJS"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/refine/index.md", "title": "Use Supabase with Refine"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/solidjs/index.md", "title": "Use Supabase with SolidJS"}
 ---
 
 # 

@@ -11,8 +11,8 @@ menu_path: ["Linking and Navigating"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../dynamic-routes/index.md", "title": "Dynamic Routes"}
-nav_next: {"path": "../custom-app/index.md", "title": "Custom App"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/dynamic-routes/index.md", "title": "Dynamic Routes"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/custom-app/index.md", "title": "Custom App"}
 ---
 
 # Linking and Navigating
@@ -51,11 +51,11 @@ The example above uses multiple links. Each one maps a path (`href`) to a known 
 -   `/about` → `pages/about.js`
 -   `/blog/hello-world` → `pages/blog/[slug].js`
 
-Any `<Link />` in the viewport (initially or through scroll) will be prefetched by default (including the corresponding data) for pages using [Static Generation](/docs/pages/building-your-application/data-fetching/get-static-props). The corresponding data for [server-rendered](/docs/pages/building-your-application/data-fetching/get-server-side-props) routes is fetched _only when_ the `<Link />` is clicked.
+Any `<Link />` in the viewport (initially or through scroll) will be prefetched by default (including the corresponding data) for pages using [Static Generation](../../data-fetching/get-static-props/index.md). The corresponding data for [server-rendered](../../data-fetching/get-server-side-props/index.md) routes is fetched _only when_ the `<Link />` is clicked.
 
 ## Linking to dynamic paths[](#linking-to-dynamic-paths)
 
-You can also use interpolation to create the path, which comes in handy for [dynamic route segments](/docs/pages/building-your-application/routing/dynamic-routes). For example, to show a list of posts which have been passed to the component as a prop:
+You can also use interpolation to create the path, which comes in handy for [dynamic route segments](../dynamic-routes/index.md). For example, to show a list of posts which have been passed to the component as a prop:
 
 ```
 import Link from 'next/link'
@@ -113,15 +113,15 @@ Now, instead of using interpolation to create the path, we use a URL object in `
 
 ## Injecting the router[](#injecting-the-router)
 
-To access the [`router` object](/docs/pages/api-reference/functions/use-router#router-object) in a React component you can use [`useRouter`](/docs/pages/api-reference/functions/use-router) or [`withRouter`](/docs/pages/api-reference/functions/use-router#withrouter).
+To access the [`router` object](../../../api-reference/functions/use-router/index.md#router-object) in a React component you can use [`useRouter`](../../../api-reference/functions/use-router/index.md) or [`withRouter`](../../../api-reference/functions/use-router/index.md#withrouter).
 
-In general we recommend using [`useRouter`](/docs/pages/api-reference/functions/use-router).
+In general we recommend using [`useRouter`](../../../api-reference/functions/use-router/index.md).
 
 ## Imperative Routing[](#imperative-routing)
 
-[`next/link`](/docs/pages/api-reference/components/link) should be able to cover most of your routing needs, but you can also do client-side navigations without it, take a look at the [documentation for `next/router`](/docs/pages/api-reference/functions/use-router).
+[`next/link`](../../../api-reference/components/link/index.md) should be able to cover most of your routing needs, but you can also do client-side navigations without it, take a look at the [documentation for `next/router`](../../../api-reference/functions/use-router/index.md).
 
-The following example shows how to do basic page navigations with [`useRouter`](/docs/pages/api-reference/functions/use-router):
+The following example shows how to do basic page navigations with [`useRouter`](../../../api-reference/functions/use-router/index.md):
 
 ```
 import { useRouter } from 'next/router'
@@ -143,9 +143,9 @@ export default function ReadMore() {
 
 -   [Shallow Routing](https://github.com/vercel/next.js/tree/canary/examples/with-shallow-routing)
 
-Shallow routing allows you to change the URL without running data fetching methods again, that includes [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props), and [`getInitialProps`](/docs/pages/api-reference/functions/get-initial-props).
+Shallow routing allows you to change the URL without running data fetching methods again, that includes [`getServerSideProps`](../../data-fetching/get-server-side-props/index.md), [`getStaticProps`](../../data-fetching/get-static-props/index.md), and [`getInitialProps`](../../../api-reference/functions/get-initial-props/index.md).
 
-You'll receive the updated `pathname` and the `query` via the [`router` object](/docs/pages/api-reference/functions/use-router#router-object) (added by [`useRouter`](/docs/pages/api-reference/functions/use-router) or [`withRouter`](/docs/pages/api-reference/functions/use-router#withrouter)), without losing state.
+You'll receive the updated `pathname` and the `query` via the [`router` object](../../../api-reference/functions/use-router/index.md#router-object) (added by [`useRouter`](../../../api-reference/functions/use-router/index.md) or [`withRouter`](../../../api-reference/functions/use-router/index.md#withrouter)), without losing state.
 
 To enable shallow routing, set the `shallow` option to `true`. Consider the following example:
 

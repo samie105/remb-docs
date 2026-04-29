@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:26.569Z"
 content_hash: "7d39b07dd48b74ae169f75f69e2e8e4eaf2ef744bee77f6729f14e39d25cbf1a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Diagnosing latency issues","→","Diagnosing latency issues"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Diagnosing latency issues","→","Diagnosing latency issues"]
-nav_prev: {"path": "../latency-monitor/index.md", "title": "Redis latency monitoring"}
-nav_next: {"path": "../memory-optimization/index.md", "title": "Memory optimization"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/latency-monitor/index.md", "title": "Redis latency monitoring"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/memory-optimization/index.md", "title": "Memory optimization"}
 ---
 
 # Diagnosing latency issues
@@ -31,7 +31,7 @@ The following documentation is very important in order to run Redis in a low lat
 2.  For EC2 users, make sure you use HVM based modern EC2 instances, like m3.medium. Otherwise fork() is too slow.
 3.  Transparent huge pages must be disabled from your kernel. Use `echo never > /sys/kernel/mm/transparent_hugepage/enabled` to disable them, and restart your Redis process.
 4.  If you are using a virtual machine, it is possible that you have an intrinsic latency that has nothing to do with Redis. Check the minimum latency you can expect from your runtime environment using `./redis-cli --intrinsic-latency 100`. Note: you need to run this command in _the server_ not in the client.
-5.  Enable and use the [Latency monitor](/docs/latest/operate/oss_and_stack/management/optimization/latency-monitor/) feature of Redis in order to get a human readable description of the latency events and causes in your Redis instance.
+5.  Enable and use the [Latency monitor](../latency-monitor/index.md) feature of Redis in order to get a human readable description of the latency events and causes in your Redis instance.
 
 In general, use the following table for durability VS latency/performance tradeoffs, ordered from stronger safety to better latency.
 
@@ -53,7 +53,7 @@ redis-cli --latency -h `host` -p `port`
 
 ## Using the internal Redis latency monitoring subsystem
 
-Since Redis 2.8.13, Redis provides latency monitoring capabilities that are able to sample different execution paths to understand where the server is blocking. This makes debugging of the problems illustrated in this documentation much simpler, so we suggest enabling latency monitoring ASAP. Please refer to the [Latency monitor documentation](/docs/latest/operate/oss_and_stack/management/optimization/latency-monitor/).
+Since Redis 2.8.13, Redis provides latency monitoring capabilities that are able to sample different execution paths to understand where the server is blocking. This makes debugging of the problems illustrated in this documentation much simpler, so we suggest enabling latency monitoring ASAP. Please refer to the [Latency monitor documentation](../latency-monitor/index.md).
 
 While the latency monitoring sampling and reporting capabilities will make it simpler to understand the source of latency in your Redis system, it is still advised that you read this documentation extensively to better understand the topic of Redis and latency spikes.
 

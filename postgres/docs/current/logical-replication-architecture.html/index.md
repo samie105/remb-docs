@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:04.760Z"
 content_hash: "bfcf603560390c57bf57702944a3ee23d2be9889a9da19daed7abef180ceecc6"
 menu_path: ["PostgreSQL: Documentation: 18: 29.9. Architecture"]
 section_path: []
-nav_prev: {"path": "../logfile-maintenance.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.3.\u00a0Log File Maintenance"}
-nav_next: {"path": "../logical-replication-col-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.5.\u00a0Column Lists"}
+nav_prev: {"path": "postgres/docs/current/logfile-maintenance.html/index.md", "title": "PostgreSQL: Documentation: 18: 24.3.\u00a0Log File Maintenance"}
+nav_next: {"path": "postgres/docs/current/logical-replication-col-lists.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.5.\u00a0Column Lists"}
 ---
 
 Logical replication is built with an architecture similar to physical streaming replication (see [Section 26.2.5](https://www.postgresql.org/docs/current/warm-standby.html#STREAMING-REPLICATION "26.2.5. Streaming Replication")). It is implemented by `walsender` and `apply` processes. The walsender process starts logical decoding (described in [Chapter 47](https://www.postgresql.org/docs/current/logicaldecoding.html "Chapter 47. Logical Decoding")) of the WAL and loads the standard logical decoding output plugin (`pgoutput`). The plugin transforms the changes read from WAL to the logical replication protocol (see [Section 54.5](https://www.postgresql.org/docs/current/protocol-logical-replication.html "54.5. Logical Streaming Replication Protocol")) and filters the data according to the publication specification. The data is then continuously transferred using the streaming replication protocol to the apply worker, which maps the data to local tables and applies the individual changes as they are received, in correct transactional order.

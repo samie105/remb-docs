@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:52.410Z"
 content_hash: "f0f7e191a8ed3d7fc20a52b6d7307c2d7e0451449672c0ff39edab7473f92898"
 menu_path: ["Updating Arrays in State"]
 section_path: []
-nav_prev: {"path": "../updating-objects-in-state/index.md", "title": "Updating Objects in State"}
-nav_next: {"path": "../managing-state/index.md", "title": "Managing State"}
+nav_prev: {"path": "react/learn/updating-objects-in-state/index.md", "title": "Updating Objects in State"}
+nav_next: {"path": "react/learn/managing-state/index.md", "title": "Managing State"}
 ---
 
 Arrays are mutable in JavaScript, but you should treat them as immutable when you store them in state. Just like with objects, when you want to update an array stored in state, you need to create a new one (or make a copy of an existing one), and then set state to use the new array.

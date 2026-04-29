@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:17.802Z"
 content_hash: "07f238c8a7610e2be7edca5e6497e1641669a8e19ef71cbda65ad56f9a126097"
 menu_path: ["Add React to an Existing Project"]
 section_path: []
-nav_prev: {"path": "../build-a-react-app-from-scratch/index.md", "title": "Build a React app from Scratch"}
-nav_next: {"path": "../setup/index.md", "title": "Setup"}
+nav_prev: {"path": "react/learn/build-a-react-app-from-scratch/index.md", "title": "Build a React app from Scratch"}
+nav_next: {"path": "react/learn/setup/index.md", "title": "Setup"}
 ---
 
 If you want to add some interactivity to your existing project, you don’t have to rewrite it in React. Add React to your existing stack, and render interactive React components anywhere.

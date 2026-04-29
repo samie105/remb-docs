@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../data-security/index.md", "title": "How to think about data security in Next.js"}
-nav_next: {"path": "../deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
+nav_prev: {"path": "nextjs/docs/app/guides/data-security/index.md", "title": "How to think about data security in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
 ---
 
 # How to use debugging tools with Next.js
@@ -84,7 +84,7 @@ launch.json
 
 In the "Next.js: debug full stack" configuration, `serverReadyAction.action` specifies which browser to open when the server is ready. `debugWithEdge` means to launch the Edge browser. If you are using Chrome, change this value to `debugWithChrome`.
 
-If you're [changing the port number](/docs/pages/api-reference/cli/next#next-dev-options) your application starts on, replace the `3000` in `http://localhost:3000` with the port you're using instead.
+If you're [changing the port number](../../../pages/api-reference/cli/next/index.md#next-dev-options) your application starts on, replace the `3000` in `http://localhost:3000` with the port you're using instead.
 
 If you're running Next.js from a directory other than root (for example, if you're using Turborepo) then you need to add `cwd` to the server-side and full stack debugging tasks. For example, `"cwd": "${workspaceFolder}/apps/web"`.
 

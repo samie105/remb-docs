@@ -10,8 +10,8 @@ content_hash: "a407ff5b9aad75c4fd16a143f78e057e12c2713a84de63216853c8650394f5dd"
 menu_path: ["Functions and directives"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../detecting-classes-in-source-files/index.md", "title": "Detecting classes in source files"}
-nav_next: {"path": "../preflight/index.md", "title": "Preflight"}
+nav_prev: {"path": "tailwind/docs/detecting-classes-in-source-files/index.md", "title": "Detecting classes in source files"}
+nav_next: {"path": "tailwind/docs/preflight/index.md", "title": "Preflight"}
 ---
 
 A reference for the custom functions and directives Tailwind exposes to your CSS.

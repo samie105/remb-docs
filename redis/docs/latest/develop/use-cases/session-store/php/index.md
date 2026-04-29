@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:08:16.841Z"
 content_hash: "9a37e3f4216bf2d806b90c62f7124aed4cd87bb2749816a94d82f94439b0aa90"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with PHP","→","Redis session store with PHP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with PHP","→","Redis session store with PHP"]
-nav_prev: {"path": "../nodejs/index.md", "title": "Redis session store with node-redis"}
-nav_next: {"path": "../redis-py/index.md", "title": "Redis session store with redis-py"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/nodejs/index.md", "title": "Redis session store with node-redis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/redis-py/index.md", "title": "Redis session store with redis-py"}
 ---
 
 # Redis session store with PHP
 
 Implement a Redis-backed session store in PHP with Predis
 
-This guide shows you how to implement a Redis-backed session store in PHP with [Predis](/docs/latest/develop/clients/php/). It includes a small local web server using PHP's built-in development server so you can see the session lifecycle end to end.
+This guide shows you how to implement a Redis-backed session store in PHP with [Predis](../../../clients/php/index.md). It includes a small local web server using PHP's built-in development server so you can see the session lifecycle end to end.
 
 ## Overview
 
@@ -260,8 +260,8 @@ You now have a complete Redis-backed session example in PHP using Predis. From h
 
 For more Redis data modeling patterns, see:
 
-*   [Session store overview](/docs/latest/develop/use-cases/session-store/)
-*   [PHP client guide](/docs/latest/develop/clients/php/)
+*   [Session store overview](../index.md)
+*   [PHP client guide](../../../clients/php/index.md)
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page

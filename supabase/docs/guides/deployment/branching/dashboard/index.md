@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:05.854Z"
 content_hash: "9a7a1737975da5cdd106d3fd7e32cd77c6aa764ee2b55f45ba6f8581859b0eba"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Branching via dashboard","Branching via dashboard"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Branching via dashboard","Branching via dashboard"]
-nav_prev: {"path": "../configuration/index.md", "title": "Configuration"}
-nav_next: {"path": "../github-integration/index.md", "title": "GitHub integration"}
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/configuration/index.md", "title": "Configuration"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/github-integration/index.md", "title": "GitHub integration"}
 ---
 
 # 

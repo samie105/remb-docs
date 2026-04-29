@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:20.755Z"
 content_hash: "2588d58f5ef0388a0390742f5f63ddd59b9782bc2ab0b03746d33546eb3e5bbf"
 menu_path: ["Importing and Exporting Components"]
 section_path: []
-nav_prev: {"path": "../your-first-component/index.md", "title": "Your First Component"}
-nav_next: {"path": "../writing-markup-with-jsx/index.md", "title": "Writing Markup with JSX"}
+nav_prev: {"path": "react/learn/your-first-component/index.md", "title": "Your First Component"}
+nav_next: {"path": "react/learn/writing-markup-with-jsx/index.md", "title": "Writing Markup with JSX"}
 ---
 
 The magic of components lies in their reusability: you can create components that are composed of other components. But as you nest more and more components, it often makes sense to start splitting them into different files. This lets you keep your files easy to scan and reuse components in more places.

@@ -10,8 +10,8 @@ content_hash: "bac357b019b1f778cdcbe64e263510c32d28aad7a928b7e671bc8b8234c52ced"
 menu_path: ["Drizzle with Encore"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
-nav_next: {"path": "../drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
 ---
 
 # macOS

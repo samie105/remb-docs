@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:24.762Z"
 content_hash: "e8d3fa9b91922a61b81ebc32cc5f08182c05be0bf8171e8ba2574ff7ec3a8b53"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Auth0","Auth0"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Auth0","Auth0"]
-nav_prev: {"path": "../amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
-nav_next: {"path": "../firebase-auth/index.md", "title": "Migrate from Firebase Auth to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firebase-auth/index.md", "title": "Migrate from Firebase Auth to Supabase"}
 ---
 
 # 
@@ -102,7 +102,7 @@ For users who sign in with passwords, we recommend a hybrid approach to reduce d
 
 ##### Sign up new users
 
-Sign up new users using Supabase Auth's [signin methods](/docs/guides/auth/passwords#signing-up-with-an-email-and-password).
+Sign up new users using Supabase Auth's [signin methods](../../../auth/passwords/index.md#signing-up-with-an-email-and-password).
 
 ##### Migrate existing users to Supabase Auth
 
@@ -146,13 +146,13 @@ For passwordless signin via email or phone, check for users with verified email 
 1import { createClient } from '@supabase/supabase-js'2const supabase = createClient('your_project_url', 'your_supabase_api_key')34// ---cut---5const { data, error } = await supabase.auth.admin.createUser({6  email: 'valid.email@supabase.io',7  email_confirm: true,8})
 ```
 
-Check your Supabase Auth [email configuration](/docs/guides/auth/auth-smtp) and configure your [email template](/dashboard/project/_/auth/templates) for use with magic links. See the [Email templates guide](/docs/guides/auth/auth-email-templates) to learn more.
+Check your Supabase Auth [email configuration](../../../auth/auth-smtp/index.md) and configure your [email template](/dashboard/project/_/auth/templates) for use with magic links. See the [Email templates guide](../../../auth/auth-email-templates/index.md) to learn more.
 
 Once you have imported your users, you can sign them in using the [`signInWithOtp`](/docs/reference/javascript/auth-signinwithotp) method.
 
 #### OAuth[#](#oauth)
 
-Configure your OAuth providers in Supabase by following the [Social login guides](/docs/guides/auth/social-login).
+Configure your OAuth providers in Supabase by following the [Social login guides](../../../auth/social-login/index.md).
 
 For both new and existing users, sign in the user using the [`signInWithOAuth`](/docs/reference/javascript/auth-signinwithoauth) method. This works without pre-migrating existing users, since the user always needs to sign in through the OAuth provider before being redirected to your service.
 
@@ -164,7 +164,7 @@ Each Auth provider has its own schema for tracking users and user information.
 
 In Supabase Auth, your users are stored in your project's database under the `auth` schema. Every user has an identity (unless the user is an anonymous user), which represents the signin method they can use with Supabase. This is represented by the `auth.users` and `auth.identities` table.
 
-See the [Users](/docs/guides/auth/users) and [Identities](/docs/guides/auth/identities) sections to learn more.
+See the [Users](../../../auth/users/index.md) and [Identities](../../../auth/identities/index.md) sections to learn more.
 
 ### Mapping user metadata and custom claims[#](#mapping-user-metadata-and-custom-claims)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:52.028Z"
 content_hash: "c83cf9ef9af46af6ac584021c452b49b1d4a3061ad24fccff9b7e58b6914e52f"
 menu_path: ["Realtime","Realtime","Guides","Guides","Realtime Reports","Realtime Reports"]
 section_path: ["Realtime","Realtime","Guides","Guides","Realtime Reports","Realtime Reports"]
-nav_prev: {"path": "../realtime-with-nextjs/index.md", "title": "Using Realtime with Next.js"}
-nav_next: {"path": "../settings/index.md", "title": "Settings"}
+nav_prev: {"path": "supabase/docs/guides/realtime/realtime-with-nextjs/index.md", "title": "Using Realtime with Next.js"}
+nav_next: {"path": "supabase/docs/guides/realtime/settings/index.md", "title": "Settings"}
 ---
 
 # 
@@ -156,7 +156,7 @@ Configure connection limit
 
 Adjust the "Max concurrent connections" setting to increase or decrease the connection limit for your project
 
-[Realtime Settings Guide](/docs/guides/realtime/settings)
+[Realtime Settings Guide](../settings/index.md)
 
 Upgrade plan
 
@@ -214,7 +214,7 @@ Configure event limits
 
 Adjust "Max events per second" and "Max payload size in KB" settings to optimize broadcast throughput and message size limits
 
-[Realtime Settings Guide](/docs/guides/realtime/settings)
+[Realtime Settings Guide](../settings/index.md)
 
 Review quotas
 
@@ -238,7 +238,7 @@ Learn broadcast basics
 
 Understand how to implement and optimize broadcast messaging in your application
 
-[Broadcast Guide](/docs/guides/realtime/broadcast)
+[Broadcast Guide](../broadcast/index.md)
 
 Contact support
 
@@ -266,7 +266,7 @@ Configure presence limits
 
 Adjust the "Max presence events per second" setting to optimize presence state update throughput
 
-[Realtime Settings Guide](/docs/guides/realtime/settings)
+[Realtime Settings Guide](../settings/index.md)
 
 Review quotas
 
@@ -290,7 +290,7 @@ Learn presence basics
 
 Understand how to implement and optimize presence state tracking in your application
 
-[Presence Guide](/docs/guides/realtime/presence)
+[Presence Guide](../presence/index.md)
 
 Contact support
 
@@ -330,25 +330,25 @@ Learn Postgres Changes
 
 Understand limitations and best practices for using Postgres Changes
 
-[Postgres Changes Guide](/docs/guides/realtime/postgres-changes)
+[Postgres Changes Guide](../postgres-changes/index.md)
 
 Migrate to Broadcast
 
 For better scalability, consider using Broadcast with database triggers instead of Postgres Changes
 
-[Broadcast Guide](/docs/guides/realtime/broadcast)
+[Broadcast Guide](../broadcast/index.md)
 
 Create database triggers
 
 Understand how to create triggers that can send Broadcast messages on database events
 
-[Database Triggers Guide](/docs/guides/database/postgres/triggers)
+[Database Triggers Guide](../../database/postgres/triggers/index.md)
 
 Monitor replication
 
 Monitor logical replication health and lag since Postgres Changes reads from the WAL
 
-[Replication Monitoring Guide](/docs/guides/database/replication/replication-monitoring)
+[Replication Monitoring Guide](../../database/replication/replication-monitoring/index.md)
 
 Contact support
 
@@ -394,7 +394,7 @@ Learn channel basics
 
 Understand how Realtime channels work and best practices for channel management
 
-[Realtime Channels Concepts](/docs/guides/realtime/concepts#channels)
+[Realtime Channels Concepts](../concepts/index.md#channels)
 
 Contact support
 
@@ -422,7 +422,7 @@ Configure payload limits
 
 Adjust the "Max payload size in KB" setting to increase or decrease the maximum message size allowed
 
-[Realtime Settings Guide](/docs/guides/realtime/settings)
+[Realtime Settings Guide](../settings/index.md)
 
 Review quotas
 
@@ -440,19 +440,19 @@ Review benchmarks
 
 Understand how payload size affects latency and throughput (larger payloads increase latency)
 
-[Payload Size Performance Benchmarks](/docs/guides/realtime/benchmarks#broadcast-impact-of-payload-size)
+[Payload Size Performance Benchmarks](../benchmarks/index.md#broadcast-impact-of-payload-size)
 
 Debug query performance
 
 Use `explain()` to analyze queries and identify performance bottlenecks that may be causing large payloads
 
-[Query Performance Debugging Guide](/docs/guides/database/debugging-performance)
+[Query Performance Debugging Guide](../../database/debugging-performance/index.md)
 
 Learn broadcast basics
 
 Understand best practices for structuring broadcast messages and optimizing payload sizes
 
-[Broadcast Guide](/docs/guides/realtime/broadcast)
+[Broadcast Guide](../broadcast/index.md)
 
 Contact support
 
@@ -492,31 +492,31 @@ Review replication metrics
 
 Use `pg_stat_subscription`, `pg_replication_slots`, and other Postgres views to diagnose replication issues
 
-[Manual Replication Monitoring Guide](/docs/guides/database/replication/manual-replication-monitoring)
+[Manual Replication Monitoring Guide](../../database/replication/manual-replication-monitoring/index.md)
 
 Debug database issues
 
 Use CLI inspection tools to identify bloat, lock contention, and long-running queries affecting replication
 
-[Database Inspection Tools Guide](/docs/guides/database/inspect)
+[Database Inspection Tools Guide](../../database/inspect/index.md)
 
 Optimize performance
 
 Optimize query performance and connection management to reduce database load
 
-[Performance Tuning Guide](/docs/guides/platform/performance)
+[Performance Tuning Guide](../../platform/performance/index.md)
 
 Configure timeouts
 
 Configure statement timeouts to prevent long-running transactions from blocking replication
 
-[Database Timeouts Guide](/docs/guides/database/postgres/timeouts)
+[Database Timeouts Guide](../../database/postgres/timeouts/index.md)
 
 Learn broadcast from DB
 
 Understand how broadcast from database works and best practices for implementation
 
-[Broadcast from Database Guide](/docs/guides/realtime/broadcast#trigger-broadcast-messages-from-your-database)
+[Broadcast from Database Guide](../broadcast/index.md#trigger-broadcast-messages-from-your-database)
 
 Contact support
 
@@ -544,7 +544,7 @@ Configure connection pool
 
 Adjust the "Database connection pool size" setting to increase the number of connections available for RLS authorization checks, which can improve performance for high-volume channel subscriptions
 
-[Realtime Settings Guide](/docs/guides/realtime/settings)
+[Realtime Settings Guide](../settings/index.md)
 
 Optimize RLS policies
 
@@ -562,25 +562,25 @@ Learn authorization basics
 
 Understand how RLS policies work with private channels and best practices for implementation
 
-[Realtime Authorization Guide](/docs/guides/realtime/authorization)
+[Realtime Authorization Guide](../authorization/index.md)
 
 Create indexes
 
 Add indexes on columns frequently used in RLS policy conditions to speed up authorization checks
 
-[Database Indexes Guide](/docs/guides/database/postgres/indexes)
+[Database Indexes Guide](../../database/postgres/indexes/index.md)
 
 Use index advisor
 
 Automatically detect missing indexes that could improve RLS policy performance
 
-[Index Advisor Extension Guide](/docs/guides/database/extensions/index_advisor)
+[Index Advisor Extension Guide](../../database/extensions/index_advisor/index.md)
 
 Optimize queries
 
 Learn techniques for optimizing queries including partial indexes and composite indexes for RLS conditions
 
-[Query Optimization Guide](/docs/guides/database/query-optimization)
+[Query Optimization Guide](../../database/query-optimization/index.md)
 
 Monitor database
 
@@ -614,7 +614,7 @@ Configure connection pool
 
 Adjust the "Database connection pool size" setting to increase the number of connections available for RLS authorization checks, which can improve performance for high-frequency message publishing
 
-[Realtime Settings Guide](/docs/guides/realtime/settings)
+[Realtime Settings Guide](../settings/index.md)
 
 Optimize RLS policies
 
@@ -632,25 +632,25 @@ Learn authorization basics
 
 Understand how RLS policies work with private channels for write operations and best practices for implementation
 
-[Realtime Authorization Guide](/docs/guides/realtime/authorization)
+[Realtime Authorization Guide](../authorization/index.md)
 
 Create indexes
 
 Add indexes on columns used in INSERT policies to speed up write authorization checks
 
-[Database Indexes Guide](/docs/guides/database/postgres/indexes)
+[Database Indexes Guide](../../database/postgres/indexes/index.md)
 
 Use index advisor
 
 Automatically detect missing indexes that could improve write RLS policy performance
 
-[Index Advisor Extension Guide](/docs/guides/database/extensions/index_advisor)
+[Index Advisor Extension Guide](../../database/extensions/index_advisor/index.md)
 
 Optimize queries
 
 Learn techniques for optimizing INSERT policy queries including partial indexes for specific conditions
 
-[Query Optimization Guide](/docs/guides/database/query-optimization)
+[Query Optimization Guide](../../database/query-optimization/index.md)
 
 Monitor database
 
@@ -702,7 +702,7 @@ Learn REST API broadcast
 
 Understand how to send broadcast messages using HTTP requests
 
-[Broadcast via REST API Guide](/docs/guides/realtime/broadcast#broadcast-via-rest-api)
+[Broadcast via REST API Guide](../broadcast/index.md#broadcast-via-rest-api)
 
 Monitor database
 
@@ -736,7 +736,7 @@ Configure limits
 
 Adjust "Max concurrent connections" or "Max events per second" settings if errors are related to quota limits being reached
 
-[Realtime Settings Guide](/docs/guides/realtime/settings)
+[Realtime Settings Guide](../settings/index.md)
 
 Check logs
 
@@ -754,7 +754,7 @@ Understand error codes
 
 Understand specific error codes and their resolutions
 
-[Realtime Error Codes Reference](/docs/guides/realtime/error_codes)
+[Realtime Error Codes Reference](../error_codes/index.md)
 
 Learn HTTP status codes
 
@@ -784,7 +784,7 @@ Learn authorization
 
 Troubleshoot authorization-related errors for private channels
 
-[Realtime Authorization Guide](/docs/guides/realtime/authorization)
+[Realtime Authorization Guide](../authorization/index.md)
 
 Contact support
 
@@ -812,7 +812,7 @@ Configure connection pool
 
 Adjust the "Database connection pool size" setting to optimize database connection usage, which can improve response times for authorization checks
 
-[Realtime Settings Guide](/docs/guides/realtime/settings)
+[Realtime Settings Guide](../settings/index.md)
 
 Check logs
 
@@ -836,7 +836,7 @@ Review benchmarks
 
 Understand expected latency and throughput for different Realtime operations
 
-[Realtime Performance Benchmarks](/docs/guides/realtime/benchmarks)
+[Realtime Performance Benchmarks](../benchmarks/index.md)
 
 Understand heartbeats
 

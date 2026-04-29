@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:53.660Z"
 content_hash: "fff69f44da18a73d1d1a18bdc7c9730995c832b35d8c05533061be8497d689fb"
 menu_path: ["PostgreSQL: Documentation: 18: F.5. basic_archive — an example WAL archive module"]
 section_path: []
-nav_prev: {"path": "../app-vacuumdb.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumdb"}
-nav_next: {"path": "../bki-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.4.\u00a0BKI Commands"}
+nav_prev: {"path": "postgres/docs/current/app-vacuumdb.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumdb"}
+nav_next: {"path": "postgres/docs/current/bki-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.4.\u00a0BKI Commands"}
 ---
 
 `basic_archive` is an example of an archive module. This module copies completed WAL segment files to the specified directory. This may not be especially useful, but it can serve as a starting point for developing your own archive module. For more information about archive modules, see [Chapter 49](https://www.postgresql.org/docs/current/archive-modules.html "Chapter 49. Archive Modules").

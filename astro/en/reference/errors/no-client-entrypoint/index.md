@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:03.019Z"
 content_hash: "a41637654b0dce897bd39d3f564106acb3ccccc2f61c06daa456ffdaa76b81b6"
 menu_path: ["No client entrypoint specified in renderer."]
 section_path: []
-nav_prev: {"path": "../no-adapter-installed/index.md", "title": "Cannot use Server-side Rendering without an adapter."}
-nav_next: {"path": "../no-client-only-hint/index.md", "title": "Missing hint on client:only directive."}
+nav_prev: {"path": "astro/en/reference/errors/no-adapter-installed/index.md", "title": "Cannot use Server-side Rendering without an adapter."}
+nav_next: {"path": "astro/en/reference/errors/no-client-only-hint/index.md", "title": "Missing hint on client:only directive."}
 ---
 
 # No client entrypoint specified in renderer.
@@ -25,7 +25,7 @@ Astro tried to hydrate a component on the client, but the renderer used does not
 
 **See Also:**
 
-*   [addRenderer option](/en/reference/integrations-reference/#addrenderer-option)
-*   [Hydrating framework components](/en/guides/framework-components/#hydrating-interactive-components)
+*   [addRenderer option](../../integrations-reference/index.md#addrenderer-option)
+*   [Hydrating framework components](../../../guides/framework-components/index.md#hydrating-interactive-components)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

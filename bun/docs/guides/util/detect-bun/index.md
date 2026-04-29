@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:46.650Z"
 content_hash: "2b636f50b1bf9e93649e15d3cc8f753846ba46dfd656c1ccf7779432b50c411e"
 menu_path: ["Detect when code is executed with Bun"]
 section_path: []
-nav_prev: {"path": "../deflate/index.md", "title": "Compress and decompress data with DEFLATE"}
-nav_next: {"path": "../entrypoint/index.md", "title": "Check if the current file is the entrypoint"}
+nav_prev: {"path": "bun/docs/guides/util/deflate/index.md", "title": "Compress and decompress data with DEFLATE"}
+nav_next: {"path": "bun/docs/guides/util/entrypoint/index.md", "title": "Check if the current file is the entrypoint"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../entrypoint/index.md", "title": "Check if the current file
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The recommended way to detect when code is being executed with Bun is to check `process.versions.bun`. This works in both JavaScript and TypeScript without requiring any additional type definitions.
 
@@ -65,10 +65,10 @@ Upgrade Bun to the latest version
 
 Previous
 
-](/docs/guides/util/upgrade)[
+](../upgrade/index.md)[
 
 Get the current Bun version
 
 Next
 
-](/docs/guides/util/version)
+](../version/index.md)

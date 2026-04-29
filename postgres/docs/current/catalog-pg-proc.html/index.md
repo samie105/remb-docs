@@ -10,8 +10,8 @@ content_hash: "d79e0a3deb37df06ad8069c7962c5f3bf6b305a8b35516784fad351465407330"
 menu_path: ["PostgreSQL: Documentation: 18: 52.39. pg_proc"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../catalog-pg-policy.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.38.\u00a0pg_policy"}
-nav_next: {"path": "../catalog-pg-publication-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.41.\u00a0pg_publication_namespace"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-policy.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.38.\u00a0pg_policy"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-publication-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.41.\u00a0pg_publication_namespace"}
 ---
 
 | 

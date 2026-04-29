@@ -10,8 +10,8 @@ content_hash: "c8bc0e70277f5cce0a9901df39b2c3fe6de69fd4e68307646807ff3985711b01"
 menu_path: ["Transactions and batch queries"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../relation-queries/index.md", "title": "CRUD"}
-nav_next: {"path": "../../setup-and-configuration/custom-model-and-field-names/index.md", "title": "Custom model and field names"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md", "title": "Custom model and field names"}
 ---
 
 A database transaction is a sequence of read/write operations guaranteed to succeed or fail as a whole (ACID properties: Atomic, Consistent, Isolated, Durable).

@@ -10,8 +10,8 @@ content_hash: "903d7f75964f365c73ddcd950d943cf1fbc2a5301ba17caa9c6b4885bb3cb6cd"
 menu_path: ["deno doc"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../deploy/index.md", "title": "deno deploy"}
-nav_next: {"path": "../eval/index.md", "title": "deno eval"}
+nav_prev: {"path": "deno/runtime/reference/cli/deploy/index.md", "title": "deno deploy"}
+nav_next: {"path": "deno/runtime/reference/cli/eval/index.md", "title": "deno eval"}
 ---
 
 **On this page**

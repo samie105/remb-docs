@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:41.146Z"
 content_hash: "357b13ef830a5466197f887a7b8992648e2666254fc2b6d4543b99e759af8d71"
 menu_path: ["Links Overview"]
 section_path: []
-nav_prev: {"path": "../headers/index.md", "title": "Headers"}
-nav_next: {"path": "httpBatchLink/index.md", "title": "HTTP Batch Link"}
+nav_prev: {"path": "trpc/docs/client/headers/index.md", "title": "Headers"}
+nav_next: {"path": "trpc/docs/client/links/httpBatchLink/index.md", "title": "HTTP Batch Link"}
 ---
 
 Links enable you to customize the flow of data between the tRPC Client and Server. A link should do only one thing, which can be either a self-contained modification to a tRPC operation (query, mutation, or subscription) or a side-effect based on the operation (such as logging).

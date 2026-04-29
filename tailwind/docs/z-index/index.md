@@ -10,8 +10,8 @@ content_hash: "3d4a9eeffbbf04f941185345f0031f055c6851a00fa1ebf261535ffd711042b3"
 menu_path: ["z-index"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../visibility/index.md", "title": "visibility"}
-nav_next: {"path": "../flex-basis/index.md", "title": "flex-basis"}
+nav_prev: {"path": "tailwind/docs/visibility/index.md", "title": "visibility"}
+nav_next: {"path": "tailwind/docs/flex-basis/index.md", "title": "flex-basis"}
 ---
 
 # z-index
@@ -92,7 +92,7 @@ Prefix a `z-index` utility with a breakpoint variant like `md:` to only apply th
 <div class="z-0 md:z-50 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

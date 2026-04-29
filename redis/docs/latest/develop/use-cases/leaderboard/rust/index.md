@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:14:53.658Z"
 content_hash: "63ec2225a214c56cc02934a2c07539508d2ccbe0f59c096f6a948f4f71729b7e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Rust","→","Redis leaderboard with Rust"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Rust","→","Redis leaderboard with Rust"]
-nav_prev: {"path": "../ruby/index.md", "title": "Redis leaderboard with Ruby"}
-nav_next: {"path": "../../rate-limiter/index.md", "title": "Token bucket rate limiter with Redis"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/ruby/index.md", "title": "Redis leaderboard with Ruby"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/index.md", "title": "Token bucket rate limiter with Redis"}
 ---
 
 # Redis leaderboard with Rust
 
 Implement sync and async Redis leaderboards in Rust with redis-rs and sorted sets
 
-This guide shows you how to implement Redis-backed leaderboards in Rust with the [`redis-rs`](/docs/latest/develop/clients/rust/) client library. It includes both synchronous and asynchronous APIs, uses a sorted set to store rank order, stores per-user metadata in Redis hashes, and includes a small local web server so you can explore the leaderboard interactively in your browser.
+This guide shows you how to implement Redis-backed leaderboards in Rust with the [`redis-rs`](../../../clients/rust/index.md) client library. It includes both synchronous and asynchronous APIs, uses a sorted set to store rank order, stores per-user metadata in Redis hashes, and includes a small local web server so you can explore the leaderboard interactively in your browser.
 
 ## Overview
 

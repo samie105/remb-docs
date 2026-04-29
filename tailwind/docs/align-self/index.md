@@ -10,8 +10,8 @@ content_hash: "ff43c8c7bab04bfeb931b6c5efe98ca6d3fa55292b6f79a054bd21ee4ffe391a"
 menu_path: ["align-self"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../align-items/index.md", "title": "align-items"}
-nav_next: {"path": "../place-content/index.md", "title": "place-content"}
+nav_prev: {"path": "tailwind/docs/align-items/index.md", "title": "align-items"}
+nav_next: {"path": "tailwind/docs/place-content/index.md", "title": "place-content"}
 ---
 
 Flexbox & Grid

@@ -10,8 +10,8 @@ content_hash: "e4feb205ce20675c7d6e3d0a8b225e41f67ab1caaed5cf8cdfcddf6f8c1bab4d"
 menu_path: ["Drizzle <> Expo SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-cloudflare-do/index.md", "title": "Drizzle <> Cloudflare Durable Objects SQLite"}
-nav_next: {"path": "../connect-op-sqlite/index.md", "title": "Drizzle <> OP SQLite"}
+nav_prev: {"path": "drizzle/docs/connect-cloudflare-do/index.md", "title": "Drizzle <> Cloudflare Durable Objects SQLite"}
+nav_next: {"path": "drizzle/docs/connect-op-sqlite/index.md", "title": "Drizzle <> OP SQLite"}
 ---
 
 According to the **[official website](https://expo.dev/)**, Expo is an ecosystem of tools to develop, build and ship applications on React Native. It’s powered by Hermes JavaScript runtime and Metro bundler, Drizzle Expo driver is built to natively support both.

@@ -10,8 +10,8 @@ content_hash: "80af20235ec64bf578d5ec21b5c4a41ee9f2f3e0dbdbedbeec2a42aa63c53f3e"
 menu_path: ["PostgreSQL: Documentation: 18: 65.4. GIN Indexes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
-nav_next: {"path": "../gist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.2.\u00a0GiST Indexes"}
+nav_prev: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
+nav_next: {"path": "postgres/docs/current/gist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.2.\u00a0GiST Indexes"}
 ---
 
 ### 65.4.1. Introduction [#](#GIN-INTRO)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:17.767Z"
 content_hash: "1f73563d505b6d5b7eae7d249f74be5edd3b87539c80af06e83fb1114d9757cb"
 menu_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","Overview","Overview"]
-nav_prev: {"path": "../auth-identity-linking/index.md", "title": "Identity Linking"}
-nav_next: {"path": "phone/index.md", "title": "Multi-Factor Authentication (Phone)"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-identity-linking/index.md", "title": "Identity Linking"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-mfa/phone/index.md", "title": "Multi-Factor Authentication (Phone)"}
 ---
 
 # 
@@ -65,7 +65,7 @@ Adding MFA to your app involves these four steps:
 3.  **Add challenge step to login.** If a user has set-up MFA, your app's login flow needs to present a challenge screen to the user asking them to prove they have access to the additional factor.
 4.  **Enforce rules for MFA logins.** Once your users have a way to enroll and log in with MFA, you need to enforce authorization rules across your app: on the frontend, backend, API servers or Row-Level Security policies.
 
-The enrollment flow and the challenge steps differ by factor and are covered on a separate page. Visit the [Phone](/docs/guides/auth/auth-mfa/phone) or [App Authenticator](/docs/guides/auth/auth-mfa/totp) pages to see how to add the flows for the respective factors. You can combine both flows and allow for use of both Phone and App Authenticator Factors.
+The enrollment flow and the challenge steps differ by factor and are covered on a separate page. Visit the [Phone](phone/index.md) or [App Authenticator](totp/index.md) pages to see how to add the flows for the respective factors. You can combine both flows and allow for use of both Phone and App Authenticator Factors.
 
 ### Add unenroll flow[#](#add-unenroll-flow)
 

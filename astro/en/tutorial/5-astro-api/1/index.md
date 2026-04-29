@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:50.697Z"
 content_hash: "3cefde31b6a62902046063dea10c81c696746dda6f95cad33e64942700598cf4"
 menu_path: ["Create a blog post archive"]
 section_path: []
-nav_prev: {"path": "../../4-layouts/3/index.md", "title": "Combine layouts to get the best of both worlds"}
-nav_next: {"path": "../2/index.md", "title": "Generate tag pages"}
+nav_prev: {"path": "astro/en/tutorial/4-layouts/3/index.md", "title": "Combine layouts to get the best of both worlds"}
+nav_next: {"path": "astro/en/tutorial/5-astro-api/2/index.md", "title": "Generate tag pages"}
 ---
 
 # Create a blog post archive
@@ -138,6 +138,6 @@ Choose the syntax you could write to represent:
 
 [Section titled “Resources”](#resources)
 
-*   [Importing glob patterns in Astro](/en/guides/imports/#importmetaglob)
+*   [Importing glob patterns in Astro](../../../guides/imports/index.md#importmetaglob)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

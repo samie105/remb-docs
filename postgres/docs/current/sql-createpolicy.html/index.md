@@ -10,8 +10,8 @@ content_hash: "7701851414e656252d9429d9498259aee2eb0760e69305ba18e2722d8c3492ac"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE POLICY"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql-createopfamily.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE OPERATOR FAMILY"}
-nav_next: {"path": "../sql-createprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PROCEDURE"}
+nav_prev: {"path": "postgres/docs/current/sql-createopfamily.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE OPERATOR FAMILY"}
+nav_next: {"path": "postgres/docs/current/sql-createprocedure.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE PROCEDURE"}
 ---
 
 CREATE POLICY — define a new row-level security policy for a table

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:04.490Z"
 content_hash: "985c6efafed8752a03a28669ad7b501d0a20c563b41a5b6714ed9ed131bc629a"
 menu_path: ["Netlify ​"]
 section_path: []
-nav_prev: {"path": "../nextjs/index.md", "title": "Next.js \u200b"}
-nav_next: {"path": "../aws-lambda/index.md", "title": "AWS Lambda \u200b"}
+nav_prev: {"path": "hono/docs/getting-started/nextjs/index.md", "title": "Next.js \u200b"}
+nav_next: {"path": "hono/docs/getting-started/aws-lambda/index.md", "title": "AWS Lambda \u200b"}
 ---
 
 Netlify provides static site hosting and serverless backend services. [Edge Functions](https://docs.netlify.com/edge-functions/overview/) enables us to make the web pages dynamic.

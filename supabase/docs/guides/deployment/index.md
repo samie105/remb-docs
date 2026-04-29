@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:06.824Z"
 content_hash: "d8bd30c40928b47a4216aae6a3c6d51c44986c09c2b8284334af5fd73735f612"
 menu_path: ["Deployment & Branching","Deployment & Branching","Overview","Overview"]
 section_path: ["Deployment & Branching","Deployment & Branching","Overview","Overview"]
-nav_prev: {"path": "../database/webhooks/index.md", "title": "Database Webhooks"}
-nav_next: {"path": "branching/index.md", "title": "Branching"}
+nav_prev: {"path": "supabase/docs/guides/database/webhooks/index.md", "title": "Database Webhooks"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/index.md", "title": "Branching"}
 ---
 
 # 
@@ -27,18 +27,18 @@ Supabase provides several options for environment management and deployment.
 
 You can maintain separate development, staging, and production environments for Supabase:
 
-*   **Development**: Develop with a local Supabase stack using the [Supabase CLI](/docs/guides/local-development).
-*   **Staging**: Use [branching](/docs/guides/deployment/branching) to create staging or preview environments. You can use persistent branches for a long-lived staging setup, or ephemeral branches for short-lived previews (which are often tied to a pull request).
+*   **Development**: Develop with a local Supabase stack using the [Supabase CLI](../local-development/index.md).
+*   **Staging**: Use [branching](branching/index.md) to create staging or preview environments. You can use persistent branches for a long-lived staging setup, or ephemeral branches for short-lived previews (which are often tied to a pull request).
 *   **Production**: If you have branching enabled, you can use the Supabase GitHub integration to automatically push your migration files when you merge a pull request. Alternatively, you can set up your own continuous deployment pipeline using the Supabase CLI.
 
 ##### Self-hosting
 
-Read the [self-hosting guides](/docs/guides/self-hosting) for instructions on hosting your own Supabase stack.
+Read the [self-hosting guides](../self-hosting/index.md) for instructions on hosting your own Supabase stack.
 
 ## Deployment[#](#deployment)
 
 You can automate deployments using:
 
 *   The [Supabase GitHub integration](/dashboard/project/_/settings/integrations) (with branching enabled)
-*   The [Supabase CLI](/docs/guides/local-development) in your own continuous deployment pipeline
+*   The [Supabase CLI](../local-development/index.md) in your own continuous deployment pipeline
 *   The [Supabase Terraform provider](/docs/guides/deployment/terraform)

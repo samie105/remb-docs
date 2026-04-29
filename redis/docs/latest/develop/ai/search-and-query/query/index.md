@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:05:16.433Z"
 content_hash: "221065ba11b17a9919f5f8b7effa967e0a68829ffa74d336b1bdeeb0c7f06f93"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data"]
-nav_prev: {"path": "../indexing/schema-definition/index.md", "title": "Schema definition"}
-nav_next: {"path": "aggregation/index.md", "title": "Aggregation queries"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/schema-definition/index.md", "title": "Schema definition"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/aggregation/index.md", "title": "Aggregation queries"}
 ---
 
 # Querying data
@@ -57,13 +57,13 @@ Aggregation
 
 The following articles provide an overview of how to query data with the [FT.SEARCH](/docs/latest/commands/ft.search/) command:
 
-*   [Exact match queries](/docs/latest/develop/ai/search-and-query/query/exact-match/)
-*   [Range queries](/docs/latest/develop/ai/search-and-query/query/range/)
-*   [Full-text search](/docs/latest/develop/ai/search-and-query/query/full-text/)
-*   [Geospatial queries](/docs/latest/develop/ai/search-and-query/query/geo-spatial/)
-*   [Vector search](/docs/latest/develop/ai/search-and-query/query/vector-search/)
-*   [Combined queries](/docs/latest/develop/ai/search-and-query/query/combined/)
+*   [Exact match queries](exact-match/index.md)
+*   [Range queries](range/index.md)
+*   [Full-text search](full-text/index.md)
+*   [Geospatial queries](geo-spatial/index.md)
+*   [Vector search](vector-search/index.md)
+*   [Combined queries](combined/index.md)
 
 You can find further details about aggregation queries with [FT.AGGREGATE](/docs/latest/commands/ft.aggregate/) in the following article:
 
-*   [Aggregation queries](/docs/latest/develop/ai/search-and-query/query/aggregation/)
+*   [Aggregation queries](aggregation/index.md)

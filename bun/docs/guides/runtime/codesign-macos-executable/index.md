@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:19.746Z"
 content_hash: "b49cee8f4c36c5e91469733e8c1804f0e11b280a16ad3f483fcccee6a09cc853"
 menu_path: ["Codesign a single-file JavaScript executable on macOS"]
 section_path: []
-nav_prev: {"path": "../cicd/index.md", "title": "Install and run Bun in GitHub Actions"}
-nav_next: {"path": "../define-constant/index.md", "title": "Define and replace static globals & constants"}
+nav_prev: {"path": "bun/docs/guides/runtime/cicd/index.md", "title": "Install and run Bun in GitHub Actions"}
+nav_next: {"path": "bun/docs/guides/runtime/define-constant/index.md", "title": "Define and replace static globals & constants"}
 ---
 
 Compile your executable using the `--compile` flag.

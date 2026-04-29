@@ -10,8 +10,8 @@ content_hash: "5ef26d1a4bc7168ec06df4b954834dacdf7a761fb141dae4d7fe11afce546541"
 menu_path: ["max-block-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../min-block-size/index.md", "title": "min-block-size"}
-nav_next: {"path": "../font-family/index.md", "title": "font-family"}
+nav_prev: {"path": "tailwind/docs/min-block-size/index.md", "title": "min-block-size"}
+nav_next: {"path": "tailwind/docs/font-family/index.md", "title": "font-family"}
 ---
 
 Utilities for setting the maximum block size of an element.

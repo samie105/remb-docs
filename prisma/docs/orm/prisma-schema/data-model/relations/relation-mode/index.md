@@ -10,8 +10,8 @@ content_hash: "e2889e67f4261441d6858c0ebb73087124f241ad4c908124cc301fb3cabe7f95"
 menu_path: ["Relation mode"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../referential-actions/index.md", "title": "Referential actions"}
-nav_next: {"path": "../self-relations/index.md", "title": "Self-relations"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/referential-actions/index.md", "title": "Referential actions"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md", "title": "Self-relations"}
 ---
 
 **Questions answered in this page**

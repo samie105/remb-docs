@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:50.894Z"
 content_hash: "ec8e2c2f3adff1fa368d49de0b8130b2fd5af2e8203a9b163eda5a2f0c67b89e"
 menu_path: ["Routes"]
 section_path: []
-nav_prev: {"path": "../Request/index.md", "title": "Request"}
-nav_next: {"path": "../Server/index.md", "title": "Server"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Request/index.md", "title": "Request"}
+nav_next: {"path": "fastify/docs/latest/Reference/Server/index.md", "title": "Server"}
 ---
 
 Version: latest (v5.8.x)
@@ -42,53 +42,53 @@ fastify.route(options)
 
 ### Routes options[​](#routes-options "Direct link to Routes options")
 
-*   `method`: currently it supports `GET`, `HEAD`, `TRACE`, `DELETE`, `OPTIONS`, `PATCH`, `PUT` and `POST`. To accept more methods, the [`addHttpMethod`](/docs/latest/Reference/Server/#addHttpMethod) must be used. It could also be an array of methods.
+*   `method`: currently it supports `GET`, `HEAD`, `TRACE`, `DELETE`, `OPTIONS`, `PATCH`, `PUT` and `POST`. To accept more methods, the [`addHttpMethod`](../Server/index.md#addHttpMethod) must be used. It could also be an array of methods.
     
 *   `url`: the path of the URL to match this route (alias: `path`).
     
-*   `schema`: an object containing the schemas for the request and response. They need to be in [JSON Schema](https://json-schema.org/) format, check [here](/docs/latest/Reference/Validation-and-Serialization/) for more info.
+*   `schema`: an object containing the schemas for the request and response. They need to be in [JSON Schema](https://json-schema.org/) format, check [here](../Validation-and-Serialization/index.md) for more info.
     
     *   `body`: validates the body of the request if it is a POST, PUT, PATCH, TRACE, SEARCH, PROPFIND, PROPPATCH or LOCK method.
     *   `querystring` or `query`: validates the querystring. This can be a complete JSON Schema object, with the property `type` of `object` and `properties` object of parameters, or simply the values of what would be contained in the `properties` object as shown below.
     *   `params`: validates the params.
     *   `response`: filter and generate a schema for the response, setting a schema allows us to have 10-20% more throughput.
-*   `exposeHeadRoute`: creates a sibling `HEAD` route for any `GET` routes. Defaults to the value of [`exposeHeadRoutes`](/docs/latest/Reference/Server/#exposeHeadRoutes) instance option. If you want a custom `HEAD` handler without disabling this option, make sure to define it before the `GET` route.
+*   `exposeHeadRoute`: creates a sibling `HEAD` route for any `GET` routes. Defaults to the value of [`exposeHeadRoutes`](../Server/index.md#exposeHeadRoutes) instance option. If you want a custom `HEAD` handler without disabling this option, make sure to define it before the `GET` route.
     
 *   `attachValidation`: attach `validationError` to request, if there is a schema validation error, instead of sending the error to the error handler. The default [error format](https://ajv.js.org/api.html#error-objects) is the Ajv one.
     
-*   `onRequest(request, reply, done)`: a [function](/docs/latest/Reference/Hooks/#onrequest) called as soon as a request is received, it could also be an array of functions.
+*   `onRequest(request, reply, done)`: a [function](../Hooks/index.md#onrequest) called as soon as a request is received, it could also be an array of functions.
     
-*   `preParsing(request, reply, payload, done)`: a [function](/docs/latest/Reference/Hooks/#preparsing) called before parsing the request, it could also be an array of functions.
+*   `preParsing(request, reply, payload, done)`: a [function](../Hooks/index.md#preparsing) called before parsing the request, it could also be an array of functions.
     
-*   `preValidation(request, reply, done)`: a [function](/docs/latest/Reference/Hooks/#prevalidation) called after the shared `preValidation` hooks, useful if you need to perform authentication at route level for example, it could also be an array of functions.
+*   `preValidation(request, reply, done)`: a [function](../Hooks/index.md#prevalidation) called after the shared `preValidation` hooks, useful if you need to perform authentication at route level for example, it could also be an array of functions.
     
-*   `preHandler(request, reply, done)`: a [function](/docs/latest/Reference/Hooks/#prehandler) called just before the request handler, it could also be an array of functions.
+*   `preHandler(request, reply, done)`: a [function](../Hooks/index.md#prehandler) called just before the request handler, it could also be an array of functions.
     
-*   `preSerialization(request, reply, payload, done)`: a [function](/docs/latest/Reference/Hooks/#preserialization) called just before the serialization, it could also be an array of functions.
+*   `preSerialization(request, reply, payload, done)`: a [function](../Hooks/index.md#preserialization) called just before the serialization, it could also be an array of functions.
     
-*   `onSend(request, reply, payload, done)`: a [function](/docs/latest/Reference/Hooks/#route-hooks) called right before a response is sent, it could also be an array of functions.
+*   `onSend(request, reply, payload, done)`: a [function](../Hooks/index.md#route-hooks) called right before a response is sent, it could also be an array of functions.
     
-*   `onResponse(request, reply, done)`: a [function](/docs/latest/Reference/Hooks/#onresponse) called when a response has been sent, so you will not be able to send more data to the client. It could also be an array of functions.
+*   `onResponse(request, reply, done)`: a [function](../Hooks/index.md#onresponse) called when a response has been sent, so you will not be able to send more data to the client. It could also be an array of functions.
     
-*   `onTimeout(request, reply, done)`: a [function](/docs/latest/Reference/Hooks/#ontimeout) called when a request is timed out and the HTTP socket has been hung up.
+*   `onTimeout(request, reply, done)`: a [function](../Hooks/index.md#ontimeout) called when a request is timed out and the HTTP socket has been hung up.
     
-*   `onError(request, reply, error, done)`: a [function](/docs/latest/Reference/Hooks/#onerror) called when an Error is thrown or sent to the client by the route handler.
+*   `onError(request, reply, error, done)`: a [function](../Hooks/index.md#onerror) called when an Error is thrown or sent to the client by the route handler.
     
-*   `handler(request, reply)`: the function that will handle this request. The [Fastify server](/docs/latest/Reference/Server/) will be bound to `this` when the handler is called. Note: using an arrow function will break the binding of `this`.
+*   `handler(request, reply)`: the function that will handle this request. The [Fastify server](../Server/index.md) will be bound to `this` when the handler is called. Note: using an arrow function will break the binding of `this`.
     
-*   `errorHandler(error, request, reply)`: a custom error handler for the scope of the request. Overrides the default error global handler, and anything set by [`setErrorHandler`](/docs/latest/Reference/Server/#seterrorhandler), for requests to the route. To access the default handler, you can access `instance.errorHandler`. Note that this will point to fastify's default `errorHandler` only if a plugin hasn't overridden it already.
+*   `errorHandler(error, request, reply)`: a custom error handler for the scope of the request. Overrides the default error global handler, and anything set by [`setErrorHandler`](../Server/index.md#seterrorhandler), for requests to the route. To access the default handler, you can access `instance.errorHandler`. Note that this will point to fastify's default `errorHandler` only if a plugin hasn't overridden it already.
     
-*   `childLoggerFactory(logger, binding, opts, rawReq)`: a custom factory function that will be called to produce a child logger instance for every request. See [`childLoggerFactory`](/docs/latest/Reference/Server/#childloggerfactory) for more info. Overrides the default logger factory, and anything set by [`setChildLoggerFactory`](/docs/latest/Reference/Server/#setchildloggerfactory), for requests to the route. To access the default factory, you can access `instance.childLoggerFactory`. Note that this will point to Fastify's default `childLoggerFactory` only if a plugin hasn't overridden it already.
+*   `childLoggerFactory(logger, binding, opts, rawReq)`: a custom factory function that will be called to produce a child logger instance for every request. See [`childLoggerFactory`](../Server/index.md#childloggerfactory) for more info. Overrides the default logger factory, and anything set by [`setChildLoggerFactory`](../Server/index.md#setchildloggerfactory), for requests to the route. To access the default factory, you can access `instance.childLoggerFactory`. Note that this will point to Fastify's default `childLoggerFactory` only if a plugin hasn't overridden it already.
     
-*   `validatorCompiler({ schema, method, url, httpPart })`: function that builds schemas for request validations. See the [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/#schema-validator) documentation.
+*   `validatorCompiler({ schema, method, url, httpPart })`: function that builds schemas for request validations. See the [Validation and Serialization](../Validation-and-Serialization/index.md#schema-validator) documentation.
     
-*   `serializerCompiler({ { schema, method, url, httpStatus, contentType } })`: function that builds schemas for response serialization. See the [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/#schema-serializer) documentation.
+*   `serializerCompiler({ { schema, method, url, httpStatus, contentType } })`: function that builds schemas for response serialization. See the [Validation and Serialization](../Validation-and-Serialization/index.md#schema-serializer) documentation.
     
-*   `schemaErrorFormatter(errors, dataVar)`: function that formats the errors from the validation compiler. See the [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/#error-handling) documentation. Overrides the global schema error formatter handler, and anything set by `setSchemaErrorFormatter`, for requests to the route.
+*   `schemaErrorFormatter(errors, dataVar)`: function that formats the errors from the validation compiler. See the [Validation and Serialization](../Validation-and-Serialization/index.md#error-handling) documentation. Overrides the global schema error formatter handler, and anything set by `setSchemaErrorFormatter`, for requests to the route.
     
 *   `bodyLimit`: prevents the default JSON body parser from parsing request bodies larger than this number of bytes. Must be an integer. You may also set this option globally when first creating the Fastify instance with `fastify(options)`. Defaults to `1048576` (1 MiB).
     
-*   `handlerTimeout`: maximum number of milliseconds for the route's full lifecycle. Overrides the server-level [`handlerTimeout`](/docs/latest/Reference/Server/#factory-handler-timeout). Must be a positive integer. When the timeout fires, `request.signal` is aborted and a 503 error is sent through the error handler (which can be customized per-route).
+*   `handlerTimeout`: maximum number of milliseconds for the route's full lifecycle. Overrides the server-level [`handlerTimeout`](../Server/index.md#factory-handler-timeout). Must be a positive integer. When the timeout fires, `request.signal` is aborted and a 503 error is sent through the error handler (which can be customized per-route).
     
 *   `logLevel`: set log level for this route. See below.
     
@@ -106,14 +106,14 @@ fastify.route(options)
     *   `slash`: Will register only `/prefix/`.
     *   `no-slash`: Will register only `/prefix`.
     
-    Note: this option does not override `ignoreTrailingSlash` in [Server](/docs/latest/Reference/Server/) configuration.
+    Note: this option does not override `ignoreTrailingSlash` in [Server](../Server/index.md) configuration.
     
-*   `request` is defined in [Request](/docs/latest/Reference/Request/).
+*   `request` is defined in [Request](../Request/index.md).
     
-*   `reply` is defined in [Reply](/docs/latest/Reference/Reply/).
+*   `reply` is defined in [Reply](../Reply/index.md).
     
 
-> ℹ️ Note: The documentation for `onRequest`, `preParsing`, `preValidation`, `preHandler`, `preSerialization`, `onSend`, and `onResponse` is detailed in [Hooks](/docs/latest/Reference/Hooks/). To send a response before the request is handled by the `handler`, see [Respond to a request from a hook](/docs/latest/Reference/Hooks/#respond-to-a-request-from-a-hook).
+> ℹ️ Note: The documentation for `onRequest`, `preParsing`, `preValidation`, `preHandler`, `preSerialization`, `onSend`, and `onResponse` is detailed in [Hooks](../Hooks/index.md). To send a response before the request is handled by the `handler`, see [Respond to a request from a hook](../Hooks/index.md#respond-to-a-request-from-a-hook).
 
 Example:
 
@@ -301,7 +301,7 @@ See the `prefixTrailingSlash` route option above to change this behavior.
 
 Different log levels can be set for routes in Fastify by passing the `logLevel` option to the plugin or route with the desired [value](https://github.com/pinojs/pino/blob/main/docs/api.md#level-string).
 
-Be aware that setting `logLevel` at the plugin level also affects [`setNotFoundHandler`](/docs/latest/Reference/Server/#setnotfoundhandler) and [`setErrorHandler`](/docs/latest/Reference/Server/#seterrorhandler).
+Be aware that setting `logLevel` at the plugin level also affects [`setNotFoundHandler`](../Server/index.md#setnotfoundhandler) and [`setErrorHandler`](../Server/index.md#seterrorhandler).
 
 ```
 // server.jsconst fastify = require('fastify')({ logger: true })fastify.register(require('./routes/user'), { logLevel: 'warn' })fastify.register(require('./routes/events'), { logLevel: 'debug' })fastify.listen({ port: 3000 })
@@ -363,7 +363,7 @@ If multiple versions with the same major or minor are declared, Fastify will alw
 
 If the request lacks an `Accept-Version` header, a 404 error will be returned.
 
-Custom version matching logic can be defined through the [`constraints`](/docs/latest/Reference/Server/#constraints) configuration when creating a Fastify server instance.
+Custom version matching logic can be defined through the [`constraints`](../Server/index.md#constraints) configuration when creating a Fastify server instance.
 
 #### Host Constraints[​](#host-constraints "Direct link to Host Constraints")
 

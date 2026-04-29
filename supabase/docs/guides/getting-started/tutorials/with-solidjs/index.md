@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:18.327Z"
 content_hash: "38bb67f389b01a1cc52afd7eb06313b0acf7a316fcd043a0673df12d2815a40c"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","SolidJS","SolidJS"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","SolidJS","SolidJS"]
-nav_prev: {"path": "../with-refine/index.md", "title": "Build a User Management App with Refine"}
-nav_next: {"path": "../with-svelte/index.md", "title": "Build a User Management App with Svelte"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-refine/index.md", "title": "Build a User Management App with Refine"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-svelte/index.md", "title": "Build a User Management App with Svelte"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a User Management App with SolidJS
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/user-management-demo.png)
 
@@ -59,7 +59,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=solidjs).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -97,7 +97,7 @@ And finally save the environment variables in a `.env` with the API URL and the 
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/user-management/solid-user-management/.env.example)
 
-Now that you have the API credentials in place, create a helper file to initialize the Supabase client. These variables will be exposed on the browser, and that's completely fine since you have [Row Level Security](/docs/guides/auth#row-level-security) enabled on the Database.
+Now that you have the API credentials in place, create a helper file to initialize the Supabase client. These variables will be exposed on the browser, and that's completely fine since you have [Row Level Security](../../../auth/index.md#row-level-security) enabled on the Database.
 
 ```
 1import { createClient } from '@supabase/supabase-js'2import { Database } from './schema'34const supabaseUrl = import.meta.env.VITE_SUPABASE_URL5const supabasePublishableKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY67export const supabase = createClient(supabaseUrl, supabasePublishableKey)
@@ -153,7 +153,7 @@ And then open the browser to [localhost:3000](http://localhost:3000) and you sho
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Create an upload widget[#](#create-an-upload-widget)
 

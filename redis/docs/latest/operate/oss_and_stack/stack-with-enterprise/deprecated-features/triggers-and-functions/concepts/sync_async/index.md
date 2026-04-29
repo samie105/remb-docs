@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:02.987Z"
 content_hash: "84b39143f87e1301eb8601692c0b6f0cd182692c083adefe0f1f80ab690f739f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Sync and async","→","Sync and async"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Sync and async","→","Sync and async"]
-nav_prev: {"path": "../resp_js_conversion/index.md", "title": "RESP & JavaScript"}
-nav_next: {"path": "../triggers/index.md", "title": "Triggers"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/resp_js_conversion/index.md", "title": "RESP & JavaScript"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/index.md", "title": "Triggers"}
 ---
 
 # Sync and async
@@ -239,7 +239,7 @@ RedisGears also provided `client.callAsyncRaw` API, which is the same as `client
 
 Blocking Redis might fail for a few reasons:
 
-*   Redis reached OOM state and the `redis.functionFlags.NO_WRITES` or `redis.functionFlags.ALLOW_OOM` flags are not set (see [functions flags](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/function_flags/) for more information)
+*   Redis reached OOM state and the `redis.functionFlags.NO_WRITES` or `redis.functionFlags.ALLOW_OOM` flags are not set (see [functions flags](../function_flags/index.md) for more information)
 *   `redis.functionFlags.NO_WRITES` flag is not set and the Redis instance changed roles and is now a replica.
 *   The ACL user that invoked the function was deleted.
 
@@ -247,7 +247,7 @@ The failure will result in an exception that the function writer can choose to h
 
 # Block Redis timeout
 
-Blocking Redis for a long time is discouraged and is considered an unsafe operation. The triggers and functions feature attempts to protect the function writer and will time out the blocking function if it continues for too long. The timeout can be set as a [module configuration](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/configuration/) along side the fatal failure policy that indicates how to handle the timeout. Policies can be one of the following:
+Blocking Redis for a long time is discouraged and is considered an unsafe operation. The triggers and functions feature attempts to protect the function writer and will time out the blocking function if it continues for too long. The timeout can be set as a [module configuration](../../configuration/index.md) along side the fatal failure policy that indicates how to handle the timeout. Policies can be one of the following:
 
 *   Abort - Stop the function invocation even at the cost of losing the atomicity property.
 *   Kill - Keep the atomicity property and do not stop the function invocation. In this case there is a risk of an external process killing the Redis server, thinking that the shard is not responding.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:47.649Z"
 content_hash: "1c67da380b5087fbd4be674360c399a849d3f2003b55099aa987143b8d990ad8"
 menu_path: ["File Types"]
 section_path: []
-nav_prev: {"path": "../file-system-router/index.md", "title": "File System Router"}
-nav_next: {"path": "../glob/index.md", "title": "Glob"}
+nav_prev: {"path": "bun/docs/runtime/file-system-router/index.md", "title": "File System Router"}
+nav_next: {"path": "bun/docs/runtime/glob/index.md", "title": "Glob"}
 ---
 
 The Bun bundler implements a set of default loaders out of the box. As a rule of thumb, the bundler and the runtime both support the same set of file types out of the box. `.js` `.cjs` `.mjs` `.mts` `.cts` `.ts` `.tsx` `.jsx` `.css` `.json` `.jsonc` `.json5` `.toml` `.yaml` `.yml` `.txt` `.wasm` `.node` `.html` `.sh` Bun uses the file extension to determine which built-in _loader_ should be used to parse the file. Every loader has a name, such as `js`, `tsx`, or `json`. These names are used when building [plugins](../../bundler/plugins/index.md) that extend Bun with custom loaders. You can explicitly specify which loader to use using the `'type'` import attribute.

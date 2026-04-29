@@ -10,8 +10,8 @@ content_hash: "7caf0e1d22d6f433dd1096b5f92185eafde775a724f3c360242f8b3e0635f239"
 menu_path: ["background-color"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../background-clip/index.md", "title": "background-clip"}
-nav_next: {"path": "../background-image/index.md", "title": "background-image"}
+nav_prev: {"path": "tailwind/docs/background-clip/index.md", "title": "background-clip"}
+nav_next: {"path": "tailwind/docs/background-image/index.md", "title": "background-image"}
 ---
 
 # background-color
@@ -114,7 +114,7 @@ Prefix a `background-color` utility with a variant like `hover:*` to only apply 
 <button class="bg-indigo-500 hover:bg-fuchsia-500 ...">Save changes</button>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Prefix a `background-color` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -122,7 +122,7 @@ Prefix a `background-color` utility with a breakpoint variant like `md:` to only
 <div class="bg-blue-500 md:bg-green-500 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
@@ -136,7 +136,7 @@ Now the `bg-regal-blue` utility can be used in your markup:
 <div class="bg-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

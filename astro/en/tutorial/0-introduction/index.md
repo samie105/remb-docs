@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:48:02.887Z"
 content_hash: "a63ffbf8f2e5b1c88d1f281ad7da06a0265b7d553ef7ba07d1218958dd2914b5"
 menu_path: ["Build your first Astro Blog"]
 section_path: []
-nav_next: {"path": "../1-setup/index.md", "title": "Check in: Unit 1 - Setup"}
+nav_next: {"path": "astro/en/tutorial/1-setup/index.md", "title": "Check in: Unit 1 - Setup"}
 ---
 
 # Build your first Astro Blog
@@ -33,4 +33,4 @@ Want a preview of what you’re going to build? You can view the final project o
 
  *    Looks great! I’m ready to get started!
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

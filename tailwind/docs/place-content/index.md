@@ -10,8 +10,8 @@ content_hash: "e34e04d85bd23473ef6e59ecd8c6a4f34a6e0e57b99f1a6d045e0e126e643c2c"
 menu_path: ["place-content"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../align-self/index.md", "title": "align-self"}
-nav_next: {"path": "../place-items/index.md", "title": "place-items"}
+nav_prev: {"path": "tailwind/docs/align-self/index.md", "title": "align-self"}
+nav_next: {"path": "tailwind/docs/place-items/index.md", "title": "place-items"}
 ---
 
 # place-content
@@ -174,7 +174,7 @@ Prefix a `place-content` utility with a breakpoint variant like `md:` to only ap
 <div class="grid place-content-start md:place-content-center ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

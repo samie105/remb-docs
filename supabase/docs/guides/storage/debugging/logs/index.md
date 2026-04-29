@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:16.458Z"
 content_hash: "4be0166db4576e327f87b6d4981da7f7c7bc47728d50f3f2761c9248cf7542a3"
 menu_path: ["Storage","Storage","More","More","More","Debugging","Debugging","Logs","Logs"]
 section_path: ["Storage","Storage","More","More","More","Debugging","Debugging","Logs","Logs"]
-nav_prev: {"path": "../error-codes/index.md", "title": "Error Codes"}
-nav_next: {"path": "../../management/copy-move-objects/index.md", "title": "Copy Objects"}
+nav_prev: {"path": "supabase/docs/guides/storage/debugging/error-codes/index.md", "title": "Error Codes"}
+nav_next: {"path": "supabase/docs/guides/storage/management/copy-move-objects/index.md", "title": "Copy Objects"}
 ---
 
 # 
@@ -23,7 +23,7 @@ The [Storage Logs](/dashboard/project/_/logs/storage-logs) provide a convenient 
 
 For more advanced filtering needs, use the [Logs Explorer](/dashboard/project/_/logs/explorer) to query the Storage logs dataset directly. The Logs Explorer is separate from the SQL Editor and uses a subset of the BigQuery SQL syntax rather than traditional SQL.
 
-For more details on filtering the log tables, see [Advanced Log Filtering](/docs/guides/telemetry/advanced-log-filtering)
+For more details on filtering the log tables, see [Advanced Log Filtering](../../../telemetry/advanced-log-filtering/index.md)
 
 ### Example Storage queries for the Logs Explorer[#](#example-storage-queries-for-the-logs-explorer)
 

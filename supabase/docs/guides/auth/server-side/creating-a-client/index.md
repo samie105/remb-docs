@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:51.965Z"
 content_hash: "e4fba4afedd1962c4075f465f9bdb8ab0186a4ca2c854d69841a6535a8077c13"
 menu_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Creating a client","Creating a client"]
 section_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Creating a client","Creating a client"]
-nav_prev: {"path": "../advanced-guide/index.md", "title": "Advanced guide"}
-nav_next: {"path": "../migrating-to-ssr-from-auth-helpers/index.md", "title": "Migrating to the SSR package from Auth Helpers"}
+nav_prev: {"path": "supabase/docs/guides/auth/server-side/advanced-guide/index.md", "title": "Advanced guide"}
+nav_next: {"path": "supabase/docs/guides/auth/server-side/migrating-to-ssr-from-auth-helpers/index.md", "title": "Migrating to the SSR package from Auth Helpers"}
 ---
 
 # 
@@ -53,7 +53,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -131,10 +131,10 @@ You can now use any Supabase features from your client or server code!
 
 If your app uses ISR (Incremental Static Regeneration) or is deployed behind a CDN, caching of HTTP responses can cause users to receive another user's session. When a session is refreshed, the new token is written to the response via `Set-Cookie`. If that response is cached and served to a different user, that user will be signed in as the wrong person.
 
-See the [advanced Auth server-side rendering guide](/docs/guides/auth/server-side/advanced-guide#can-i-use-server-side-rendering-with-a-cdn-or-cache) for details and framework-specific examples.
+See the [advanced Auth server-side rendering guide](../advanced-guide/index.md#can-i-use-server-side-rendering-with-a-cdn-or-cache) for details and framework-specific examples.
 
 ## Next steps[#](#next-steps)
 
-*   Implement [Authentication using Email and Password](/docs/guides/auth/passwords)
-*   Implement [Authentication using OAuth](/docs/guides/auth/social-login)
-*   [Learn more about SSR](/docs/guides/auth/server-side/advanced-guide)
+*   Implement [Authentication using Email and Password](../../passwords/index.md)
+*   Implement [Authentication using OAuth](../../social-login/index.md)
+*   [Learn more about SSR](../advanced-guide/index.md)

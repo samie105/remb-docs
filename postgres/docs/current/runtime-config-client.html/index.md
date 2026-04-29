@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:49.522Z"
 content_hash: "0961fd1d8adedab1a5f2ff2bf4e4418c4bfdf70f4560e9d8cbd26ca6d7c40b6d"
 menu_path: ["PostgreSQL: Documentation: 18: 19.11. Client Connection Defaults"]
 section_path: []
-nav_prev: {"path": "../rules-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.2.\u00a0Views and the Rule System"}
-nav_next: {"path": "../runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
+nav_prev: {"path": "postgres/docs/current/rules-views.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.2.\u00a0Views and the Rule System"}
+nav_next: {"path": "postgres/docs/current/runtime-config-compatible.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.13.\u00a0Version and Platform Compatibility"}
 ---
 
 ### 19.11.1. Statement Behavior [#](#RUNTIME-CONFIG-CLIENT-STATEMENT)

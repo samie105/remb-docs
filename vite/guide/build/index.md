@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:56.608Z"
 content_hash: "a727b4337d744d5e218677a00fd099fae591f523ede16c831e706613ec20f246"
 menu_path: ["Building for Production ​"]
 section_path: []
-nav_prev: {"path": "../assets/index.md", "title": "Static Asset Handling \u200b"}
-nav_next: {"path": "../static-deploy/index.md", "title": "Deploying a Static Site \u200b"}
+nav_prev: {"path": "vite/guide/assets/index.md", "title": "Static Asset Handling \u200b"}
+nav_next: {"path": "vite/guide/static-deploy/index.md", "title": "Deploying a Static Site \u200b"}
 ---
 
 When it is time to deploy your app for production, simply run the `vite build` command. By default, it uses `<root>/index.html` as the build entry point, and produces an application bundle that is suitable to be served over a static hosting service. Check out the [Deploying a Static Site](../static-deploy/index.md) for guides about popular services.

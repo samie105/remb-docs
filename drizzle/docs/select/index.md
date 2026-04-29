@@ -10,8 +10,8 @@ content_hash: "16e32c99e6f035b7f957f2d9ba088863ec124cd064b80d719e6c2f8f1edba101"
 menu_path: ["SQL Select"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../rqb-v2/index.md", "title": "Drizzle Queries"}
-nav_next: {"path": "../insert/index.md", "title": "SQL Insert"}
+nav_prev: {"path": "drizzle/docs/rqb-v2/index.md", "title": "Drizzle Queries"}
+nav_next: {"path": "drizzle/docs/insert/index.md", "title": "SQL Insert"}
 ---
 
 ## SQL Select

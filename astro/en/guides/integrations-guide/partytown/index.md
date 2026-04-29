@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:16.854Z"
 content_hash: "651f150f7eeac795dc7636414e0961ea8ee3ff69083af2979bd534ee68ccb078"
 menu_path: ["@astrojs/\n\t\t\t\t\tpartytown"]
 section_path: []
-nav_prev: {"path": "../mdx/index.md", "title": "@astrojs/\n\t\t\t\t\tmdx"}
-nav_next: {"path": "../sitemap/index.md", "title": "@astrojs/\n\t\t\t\t\tsitemap"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/mdx/index.md", "title": "@astrojs/\n\t\t\t\t\tmdx"}
+nav_next: {"path": "astro/en/guides/integrations-guide/sitemap/index.md", "title": "@astrojs/\n\t\t\t\t\tsitemap"}
 ---
 
 # @astrojs/ partytown
 
 v2.1.7 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/partytown/) [npm](https://www.npmjs.com/package/@astrojs/partytown) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/partytown/CHANGELOG.md)
 
-This **[Astro integration](/en/guides/integrations/)** enables [Partytown](https://partytown.qwik.dev/) in your Astro project.
+This **[Astro integration](../../integrations/index.md)** enables [Partytown](https://partytown.qwik.dev/) in your Astro project.
 
 ## Why Astro Partytown
 
@@ -98,7 +98,7 @@ This mirrors the [Partytown config object](https://partytown.qwik.dev/configurat
 
 Partytown ships with a `debug` mode; enable or disable it by passing `true` or `false` to `config.debug`. If [`debug` mode](https://partytown.qwik.dev/debugging) is enabled, it will output detailed logs to the browser console.
 
-If this option isn’t set, `debug` mode will be on by default in [dev](/en/reference/cli-reference/#astro-dev) or [preview](/en/reference/cli-reference/#astro-preview) mode.
+If this option isn’t set, `debug` mode will be on by default in [dev](../../../reference/cli-reference/index.md#astro-dev) or [preview](../../../reference/cli-reference/index.md#astro-preview) mode.
 
 ```
 export default defineConfig({  // ...  integrations: [    partytown({      // Example: Disable debug mode.      config: { debug: false },    }),  ],});
@@ -161,34 +161,34 @@ Note that the integration config will override `window.partytown` if you set a p
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -196,34 +196,34 @@ Note that the integration config will override `window.partytown` if you set a p
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

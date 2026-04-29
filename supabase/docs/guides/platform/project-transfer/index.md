@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:01.685Z"
 content_hash: "58983443d4be47c204504577b8a07f5e2c006e29b279fed11684d09f7dad2433"
 menu_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Transfer Project","Transfer Project"]
 section_path: ["Platform","Platform","Project & Account Management","Project & Account Management","Transfer Project","Transfer Project"]
-nav_prev: {"path": "../privatelink/index.md", "title": "PrivateLink"}
-nav_next: {"path": "../read-replicas/index.md", "title": "Read Replicas"}
+nav_prev: {"path": "supabase/docs/guides/platform/privatelink/index.md", "title": "PrivateLink"}
+nav_next: {"path": "supabase/docs/guides/platform/read-replicas/index.md", "title": "Read Replicas"}
 ---
 
 # 
@@ -37,7 +37,7 @@ Source organization - the organization the project currently belongs to Target o
 
 ## Usage-billing and project add-ons[#](#usage-billing-and-project-add-ons)
 
-For usage metrics such as disk size, egress or image transformations and project add-ons such as [Compute Add-On](/docs/guides/platform/compute-add-ons), [Point-In-Time-Recovery](/docs/guides/platform/backups#point-in-time-recovery), [IPv4](/docs/guides/platform/ipv4-address), [Log Drains](/docs/guides/platform/log-drains), [Advanced MFA](/docs/guides/auth/auth-mfa/phone) or a [Custom Domain](/docs/guides/platform/custom-domains), the source organization will still be charged for the usage up until the transfer. The charges will be added to the invoice when the billing cycle resets.
+For usage metrics such as disk size, egress or image transformations and project add-ons such as [Compute Add-On](/docs/guides/platform/compute-add-ons), [Point-In-Time-Recovery](../backups/index.md#point-in-time-recovery), [IPv4](../ipv4-address/index.md), [Log Drains](/docs/guides/platform/log-drains), [Advanced MFA](../../auth/auth-mfa/phone/index.md) or a [Custom Domain](../custom-domains/index.md), the source organization will still be charged for the usage up until the transfer. The charges will be added to the invoice when the billing cycle resets.
 
 The target organization will be charged at the end of the billing cycle for usage after the project transfer.
 
@@ -50,4 +50,4 @@ The target organization will be charged at the end of the billing cycle for usag
 
 ## Transfer to a different region[#](#transfer-to-a-different-region)
 
-Note that project transfers are only transferring your projects across an organization and cannot be used to transfer between different regions. To move your project to a different region, see [migrating your project](/docs/guides/platform/migrating-within-supabase).
+Note that project transfers are only transferring your projects across an organization and cannot be used to transfer between different regions. To move your project to a different region, see [migrating your project](../migrating-within-supabase/index.md).

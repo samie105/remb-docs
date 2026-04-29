@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:28.675Z"
 content_hash: "f84b968a29dee1d2c1c6f47d5266468131c69e44f747b10b5b8413bef3d7c9ee"
 menu_path: ["Convert an ArrayBuffer to a Uint8Array"]
 section_path: []
-nav_prev: {"path": "../arraybuffer-to-string/index.md", "title": "Convert an ArrayBuffer to a string"}
-nav_next: {"path": "../blob-to-arraybuffer/index.md", "title": "Convert a Blob to an ArrayBuffer"}
+nav_prev: {"path": "bun/docs/guides/binary/arraybuffer-to-string/index.md", "title": "Convert an ArrayBuffer to a string"}
+nav_next: {"path": "bun/docs/guides/binary/blob-to-arraybuffer/index.md", "title": "Convert a Blob to an ArrayBuffer"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../blob-to-arraybuffer/index.md", "title": "Convert a Blob t
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 A `Uint8Array` is a _typed array_, meaning it is a mechanism for viewing the data in an underlying `ArrayBuffer`.
 
@@ -69,7 +69,7 @@ const arr = new Uint8Array(buffer, 0, 16); // view first 16 bytes
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -81,10 +81,10 @@ Convert an ArrayBuffer to an array of numbers
 
 Previous
 
-](/docs/guides/binary/arraybuffer-to-array)[
+](../arraybuffer-to-array/index.md)[
 
 Convert a Buffer to a string
 
 Next
 
-](/docs/guides/binary/buffer-to-string)
+](../buffer-to-string/index.md)

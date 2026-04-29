@@ -10,8 +10,8 @@ content_hash: "6ade55c8bf1f85254456175cf22b1abbe13e9ed5040cf2b2bb75095cfd20862d"
 menu_path: ["Contributing and support"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../reference/docker/index.md", "title": "Deno and Docker"}
-nav_next: {"path": "architecture/index.md", "title": "Architecture Overview"}
+nav_prev: {"path": "deno/runtime/reference/docker/index.md", "title": "Deno and Docker"}
+nav_next: {"path": "deno/runtime/contributing/architecture/index.md", "title": "Architecture Overview"}
 ---
 
 # Basic usage

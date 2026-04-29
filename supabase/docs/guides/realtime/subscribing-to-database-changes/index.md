@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:57.585Z"
 content_hash: "9cf38357667b98027c5674a505334edd58ea9c66f5ee7f9b09c637cfa3f19831"
 menu_path: ["Realtime","Realtime","Guides","Guides","Subscribing to Database Changes","Subscribing to Database Changes"]
 section_path: ["Realtime","Realtime","Guides","Guides","Subscribing to Database Changes","Subscribing to Database Changes"]
-nav_prev: {"path": "../settings/index.md", "title": "Settings"}
-nav_next: {"path": "../../resources/index.md", "title": "Resources"}
+nav_prev: {"path": "supabase/docs/guides/realtime/settings/index.md", "title": "Settings"}
+nav_next: {"path": "supabase/docs/guides/resources/index.md", "title": "Resources"}
 ---
 
 # 
@@ -25,16 +25,16 @@ Listen to database changes in real-time from your website or application.
 
 You can use Supabase to subscribe to real-time database changes. There are two options available:
 
-1.  [Broadcast](/docs/guides/realtime/broadcast). This is the recommended method for scalability and security.
-2.  [Postgres Changes](/docs/guides/realtime/postgres-changes). This is a simpler method. It requires less setup, but does not scale as well as Broadcast.
+1.  [Broadcast](../broadcast/index.md). This is the recommended method for scalability and security.
+2.  [Postgres Changes](../postgres-changes/index.md). This is a simpler method. It requires less setup, but does not scale as well as Broadcast.
 
 ## Using Broadcast[#](#using-broadcast)
 
-To automatically send messages when a record is created, updated, or deleted, we can attach a [Postgres trigger](/docs/guides/database/postgres/triggers) to any table. Supabase Realtime provides a `realtime.broadcast_changes()` function which we can use in conjunction with a trigger. This function will use a private channel and needs broadcast authorization RLS policies to be met.
+To automatically send messages when a record is created, updated, or deleted, we can attach a [Postgres trigger](../../database/postgres/triggers/index.md) to any table. Supabase Realtime provides a `realtime.broadcast_changes()` function which we can use in conjunction with a trigger. This function will use a private channel and needs broadcast authorization RLS policies to be met.
 
 ### Broadcast authorization[#](#broadcast-authorization)
 
-[Realtime Authorization](/docs/guides/realtime/authorization) is required for receiving Broadcast messages. This is an example of a policy that allows authenticated users to listen to messages from topics:
+[Realtime Authorization](../authorization/index.md) is required for receiving Broadcast messages. This is an example of a policy that allows authenticated users to listen to messages from topics:
 
 ```
 1create policy "Authenticated users can receive broadcasts"2on "realtime"."messages"3for select4to authenticated5using ( true );
@@ -66,7 +66,7 @@ Finally, on the client side, listen to the topic `topic:<record_id>` to receive 
 
 ## Using Postgres Changes[#](#using-postgres-changes)
 
-Postgres Changes are simple to use, but have some [limitations](/docs/guides/realtime/postgres-changes#limitations) as your application scales. We recommend using Broadcast for most use cases.
+Postgres Changes are simple to use, but have some [limitations](../postgres-changes/index.md#limitations) as your application scales. We recommend using Broadcast for most use cases.
 
 ### Enable Postgres Changes[#](#enable-postgres-changes)
 

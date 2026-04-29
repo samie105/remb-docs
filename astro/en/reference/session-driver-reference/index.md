@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:48:00.769Z"
 content_hash: "e4778f5c5d3d48630282f66da5467c2f7ff248f36a984c6466f41a4615fa9ccf"
 menu_path: ["Astro Session Driver API"]
 section_path: []
-nav_prev: {"path": "../dev-toolbar-app-reference/index.md", "title": "Dev Toolbar App API"}
-nav_next: {"path": "../font-provider-reference/index.md", "title": "Astro Font Provider API"}
+nav_prev: {"path": "astro/en/reference/dev-toolbar-app-reference/index.md", "title": "Dev Toolbar App API"}
+nav_next: {"path": "astro/en/reference/font-provider-reference/index.md", "title": "Astro Font Provider API"}
 ---
 
 # Astro Session Driver API
 
-Astro [sessions](/en/guides/sessions/) allow to share data between requests for on-demand rendered pages. They require an Astro Session Driver to store session data.
+Astro [sessions](../../guides/sessions/index.md) allow to share data between requests for on-demand rendered pages. They require an Astro Session Driver to store session data.
 
 ## Built-in drivers
 
@@ -88,7 +88,7 @@ Defines the serializable config passed to [driver implementation](#the-session-d
 
 [Section titled “The session driver implementation”](#the-session-driver-implementation)
 
-A `SessionDriver` is an object responsible for [storing](#setitem), [retrieving](#getitem) and [deleting](#removeitem) data when [using sessions at runtime](/en/reference/api-reference/#session) (e.g. `context.session.set()`). You can implement it in your session driver module by exporting a default function that takes the [driver config](#config) as parameter.
+A `SessionDriver` is an object responsible for [storing](#setitem), [retrieving](#getitem) and [deleting](#removeitem) data when [using sessions at runtime](../api-reference/index.md#session) (e.g. `context.session.set()`). You can implement it in your session driver module by exporting a default function that takes the [driver config](#config) as parameter.
 
 The following example implements a memory driver:
 
@@ -147,4 +147,4 @@ import type { SessionDriver } from 'astro'import redisDriver from "unstorage/dri
 export default function(config): SessionDriver {    return redisDriver({        ...config,        tls: true    })}
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

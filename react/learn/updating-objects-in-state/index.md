@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:30.698Z"
 content_hash: "580d5c28031e6468a8bb1b8526dff4e194267fd8b8a826ac3237fe2d6ec9ef0d"
 menu_path: ["Updating Objects in State"]
 section_path: []
-nav_prev: {"path": "../queueing-a-series-of-state-updates/index.md", "title": "Queueing a Series of State Updates"}
-nav_next: {"path": "../updating-arrays-in-state/index.md", "title": "Updating Arrays in State"}
+nav_prev: {"path": "react/learn/queueing-a-series-of-state-updates/index.md", "title": "Queueing a Series of State Updates"}
+nav_next: {"path": "react/learn/updating-arrays-in-state/index.md", "title": "Updating Arrays in State"}
 ---
 
 State can hold any kind of JavaScript value, including objects. But you shouldn’t change objects that you hold in the React state directly. Instead, when you want to update an object, you need to create a new one (or make a copy of an existing one), and then set the state to use that copy.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:33.401Z"
 content_hash: "321a437115ab03a4d21977a534c2eb1667a91251addd1678ca13cabaab03c337"
 menu_path: ["Storage","Storage","More","More","More","Security","Security","Access Control","Access Control"]
 section_path: ["Storage","Storage","More","More","More","Security","Security","Access Control","Access Control"]
-nav_prev: {"path": "../../schema/helper-functions/index.md", "title": "Storage Helper Functions"}
-nav_next: {"path": "../ownership/index.md", "title": "Ownership"}
+nav_prev: {"path": "supabase/docs/guides/storage/schema/helper-functions/index.md", "title": "Storage Helper Functions"}
+nav_next: {"path": "supabase/docs/guides/storage/security/ownership/index.md", "title": "Ownership"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Storage Access Control
 
 * * *
 
-Supabase Storage is designed to work perfectly with Postgres [Row Level Security](/docs/guides/database/postgres/row-level-security) (RLS).
+Supabase Storage is designed to work perfectly with Postgres [Row Level Security](../../../database/postgres/row-level-security/index.md) (RLS).
 
 You can use RLS to create [Security Access Policies](https://www.postgresql.org/docs/current/sql-createpolicy.html) that are incredibly powerful and flexible, allowing you to restrict access based on your business needs.
 
@@ -27,7 +27,7 @@ You can use RLS to create [Security Access Policies](https://www.postgresql.org/
 
 By default Storage does not allow any uploads to buckets without RLS policies. You selectively allow certain operations by creating RLS policies on the `storage.objects` table.
 
-You can find the documentation for the storage schema [here](/docs/guides/storage/schema/design) , and to simplify the process of crafting your policies, you can utilize these [helper functions](/docs/guides/storage/schema/helper-functions) .
+You can find the documentation for the storage schema [here](../../schema/design/index.md) , and to simplify the process of crafting your policies, you can utilize these [helper functions](../../schema/helper-functions/index.md) .
 
 The RLS policies required for different operations are documented [here](/docs/reference/javascript/storage-createbucket)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:35.741Z"
 content_hash: "75f2805a557cec6223dd0a911f2b5266022b8afb0855e28c7822aed83fae0f95"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Configuration parameters","→","Configuration parameters"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Configuration parameters","→","Configuration parameters"]
-nav_prev: {"path": "../index.md", "title": "Administration"}
-nav_next: {"path": "../design/index.md", "title": "Internal design"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/index.md", "title": "Administration"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/design/index.md", "title": "Internal design"}
 ---
 
 # Configuration parameters
@@ -536,7 +536,7 @@ Default: `0`
 
 ### search-cursor-max-idle
 
-The maximum idle time (in ms) that can be set to the [cursor api](/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/#cursor-api).
+The maximum idle time (in ms) that can be set to the [cursor api](../../advanced-concepts/aggregations/index.md#cursor-api).
 
 Type: integer
 
@@ -568,7 +568,7 @@ Default: `1`
 
 ### search-ext-load
 
-If present, Redis will try to load an extension dynamic library from the specified file path. See [Extensions](/docs/latest/develop/ai/search-and-query/administration/extensions/) for details.
+If present, Redis will try to load an extension dynamic library from the specified file path. See [Extensions](../extensions/index.md) for details.
 
 Type: string
 
@@ -672,7 +672,7 @@ Notes:
 
 *   Caution should be used in modifying this parameter. Every open cursor results in additional memory usage.
 *   Cursor usage should be regulated first by use of [`FT.CURSOR DEL`](/docs/latest/commands/ft.cursor-del/) and/or [`MAXIDLE`](/docs/latest/commands/ft.aggregate/) prior to modifying `INDEX_CURSOR_LIMIT`
-*   See [Cursor API](/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/#cursor-api) for more details.
+*   See [Cursor API](../../advanced-concepts/aggregations/index.md#cursor-api) for more details.
 
 Type: integer
 
@@ -933,7 +933,7 @@ Notes:
 
 Added in v2.4.8.
 
-The maximum memory resize (in bytes) for vector indexes. The maximum memory resize (in bytes) for vector indexes. This value will override default memory limits if you need to allow for a large [`BLOCK_SIZE`](/docs/latest/develop/ai/search-and-query/vectors/#creation-attributes-per-algorithm).
+The maximum memory resize (in bytes) for vector indexes. The maximum memory resize (in bytes) for vector indexes. This value will override default memory limits if you need to allow for a large [`BLOCK_SIZE`](../../vectors/index.md#creation-attributes-per-algorithm).
 
 Type: integer
 
@@ -985,13 +985,13 @@ These methods are deprecated beginning with Redis 8.
 
 Setting configuration parameters at load-time is done by appending arguments after the `--loadmodule` argument when starting a server from the command line, or after the `loadmodule` directive in a Redis config file. For example:
 
-In [redis.conf](/docs/latest/operate/oss_and_stack/management/config/):
+In [redis.conf](../../../../../operate/oss_and_stack/management/config/index.md):
 
 ```
 loadmodule ./redisearch.so [OPT VAL]...
 ```
 
-From the [Redis CLI](/docs/latest/develop/tools/cli/), using the [MODULE LOAD](/docs/latest/commands/module-load/) command:
+From the [Redis CLI](../../../../tools/cli/index.md), using the [MODULE LOAD](/docs/latest/commands/module-load/) command:
 
 ```
 127.0.0.6379> MODULE LOAD redisearch.so [OPT VAL]...

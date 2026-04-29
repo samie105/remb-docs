@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:31.392Z"
 content_hash: "a636d8c931cee696b28c06bb0b598f9b5b187f806c3c854cd183d035cfdf1a89"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Vector search concepts","→","Vector search concepts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Vector search concepts","→","Vector search concepts"]
-nav_prev: {"path": "../query/vector-search/index.md", "title": "Vector search"}
-nav_next: {"path": "svs-compression/index.md", "title": "Vector quantization and compression"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/vector-search/index.md", "title": "Vector search"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/svs-compression/index.md", "title": "Vector quantization and compression"}
 ---
 
 # Vector search concepts
@@ -19,15 +19,15 @@ Learn how to use vector fields and perform vector searches in Redis
 
 Redis includes a [high-performance vector database](https://redis.io/blog/benchmarking-results-for-vector-databases/) that lets you perform semantic searches over vector embeddings. You can augment these searches with filtering over text, numerical, geospatial, and tag metadata.
 
-To quickly get started, check out the [Redis vector quickstart guide](/docs/latest/develop/get-started/vector-database/) and the [Redis AI Resources](https://github.com/redis-developer/redis-ai-resources) Github repo.
+To quickly get started, check out the [Redis vector quickstart guide](../../../get-started/vector-database/index.md) and the [Redis AI Resources](https://github.com/redis-developer/redis-ai-resources) Github repo.
 
 ## Overview
 
-1.  [**Create a vector index**](/docs/latest/develop/ai/search-and-query/vectors/#create-a-vector-index): Redis maintains a secondary index over your data with a defined schema (including vector fields and metadata). Redis supports [`FLAT`](/docs/latest/develop/ai/search-and-query/vectors/#flat-index), [`HNSW`](/docs/latest/develop/ai/search-and-query/vectors/#hnsw-index) and [`SVS-VAMANA`](/docs/latest/develop/ai/search-and-query/vectors/#svs-vamana-index) vector index types.
-2.  [**Store and update vectors**](/docs/latest/develop/ai/search-and-query/vectors/#store-and-update-vectors): Redis stores vectors and metadata in hashes or JSON objects.
-3.  [**Search with vectors**](/docs/latest/develop/ai/search-and-query/vectors/#search-with-vectors): Redis supports several advanced querying strategies with vector fields including k-nearest neighbor ([KNN](/docs/latest/develop/ai/search-and-query/vectors/#knn-vector-search)), [vector range queries](/docs/latest/develop/ai/search-and-query/vectors/#vector-range-queries), and [metadata filters](/docs/latest/develop/ai/search-and-query/vectors/#filters).
-4.  [**Configure vector queries at runtime**](/docs/latest/develop/ai/search-and-query/vectors/#runtime-query-params).
-5.  [**Vector search examples**](/docs/latest/develop/ai/search-and-query/vectors/#vector-search-examples): Explore several vector search examples that cover different use cases and techniques.
+1.  [**Create a vector index**](index.md#create-a-vector-index): Redis maintains a secondary index over your data with a defined schema (including vector fields and metadata). Redis supports [`FLAT`](index.md#flat-index), [`HNSW`](index.md#hnsw-index) and [`SVS-VAMANA`](index.md#svs-vamana-index) vector index types.
+2.  [**Store and update vectors**](index.md#store-and-update-vectors): Redis stores vectors and metadata in hashes or JSON objects.
+3.  [**Search with vectors**](index.md#search-with-vectors): Redis supports several advanced querying strategies with vector fields including k-nearest neighbor ([KNN](index.md#knn-vector-search)), [vector range queries](index.md#vector-range-queries), and [metadata filters](index.md#filters).
+4.  [**Configure vector queries at runtime**](index.md#runtime-query-params).
+5.  [**Vector search examples**](index.md#vector-search-examples): Explore several vector search examples that cover different use cases and techniques.
 
 ## Create a vector index
 
@@ -43,7 +43,7 @@ FT.CREATE <index_name>
     [<index_attribute_name> <index_attribute_value> ...]
 ```
 
-Refer to the full [indexing](/docs/latest/develop/ai/search-and-query/indexing/) documentation for additional fields, options, and noted limitations.
+Refer to the full [indexing](../indexing/index.md) documentation for additional fields, options, and noted limitations.
 
 **Parameters**
 
@@ -236,7 +236,7 @@ Default value
 
 `COMPRESSION`
 
-Compression algorithm; one of `LVQ8`, `LVQ4`, `LVQ4x4`, `LVQ4x8`, `LeanVec4x8`, or `LeanVec8x8`. See [this page](/docs/latest/develop/ai/search-and-query/vectors/svs-compression/) for more information.
+Compression algorithm; one of `LVQ8`, `LVQ4`, `LVQ4x4`, `LVQ4x8`, `LeanVec4x8`, or `LeanVec8x8`. See [this page](svs-compression/index.md) for more information.
 
 none
 
@@ -375,7 +375,7 @@ To store vectors in Redis as JSON, you store the vector as a JSON array of float
 JSON.SET docs:01 $ '{"doc_embedding":[0.34,0.63,-0.54,-0.69,0.98,0.61], "category": "sports"}'
 ```
 
-One of the benefits of JSON is schema flexibility. As of v2.6.1, JSON supports multi-value indexing. This allows you to index multiple vectors under the same [JSONPath](/docs/latest/develop/data-types/json/path/).
+One of the benefits of JSON is schema flexibility. As of v2.6.1, JSON supports multi-value indexing. This allows you to index multiple vectors under the same [JSONPath](../../../data-types/json/path/index.md).
 
 Here are some examples of multi-value indexing with vectors:
 
@@ -386,7 +386,7 @@ JSON.SET docs:01 $ '{"doc_embedding":[[1,2,3,4], [5,6,7,8]]}'
 JSON.SET docs:01 $ '{"chunk1":{"doc_embedding":[1,2,3,4]}, "chunk2":{"doc_embedding":[5,6,7,8]}}'
 ```
 
-Additional information and examples are available in the [Indexing JSON documents](/docs/latest/develop/ai/search-and-query/indexing/#index-json-arrays-as-vector) section.
+Additional information and examples are available in the [Indexing JSON documents](../indexing/index.md#index-json-arrays-as-vector) section.
 
 ## Search with vectors
 
@@ -420,7 +420,7 @@ Name of the index.
 
 `primary_filter_query`
 
-[Filter](/docs/latest/develop/ai/search-and-query/vectors/#filters) criteria. Use `*` when no filters are required.
+[Filter](index.md#filters) criteria. Use `*` when no filters are required.
 
 `top_k`
 
@@ -436,7 +436,7 @@ The query vector, passed in as a blob of raw bytes. The blob's byte size must ma
 
 `vector_query_params` (optional)
 
-An optional section for marking one or more vector query parameters passed through the `PARAMS` section. Valid parameters should be provided as key-value pairs. See which [runtime query params](/docs/latest/develop/ai/search-and-query/vectors/#runtime-query-params) are supported for each vector index type.
+An optional section for marking one or more vector query parameters passed through the `PARAMS` section. Valid parameters should be provided as key-value pairs. See which [runtime query params](index.md#runtime-query-params) are supported for each vector index type.
 
 `distance_field` (optional)
 
@@ -511,7 +511,7 @@ The query vector, passed in as a blob of raw bytes. The blob's byte size must ma
 
 `vector_query_params` (optional)
 
-An optional section for marking one or more vector query parameters passed through the `PARAMS` section. Valid parameters should be provided as key-value pairs. See which [runtime query params](/docs/latest/develop/ai/search-and-query/vectors/#runtime-query-params) are supported for each vector index type.
+An optional section for marking one or more vector query parameters passed through the `PARAMS` section. Valid parameters should be provided as key-value pairs. See which [runtime query params](index.md#runtime-query-params) are supported for each vector index type.
 
 `vector_query_params_count`
 
@@ -715,7 +715,7 @@ Important notes:
 
 ## Vector search examples
 
-Below are a number of examples to help you get started. For more comprehensive walkthroughs, see the [Redis vector quickstart guide](/docs/latest/develop/get-started/vector-database/) and the [Redis AI Resources](https://github.com/redis-developer/redis-ai-resources) Github repo.
+Below are a number of examples to help you get started. For more comprehensive walkthroughs, see the [Redis vector quickstart guide](../../../get-started/vector-database/index.md) and the [Redis AI Resources](https://github.com/redis-developer/redis-ai-resources) Github repo.
 
 ### KNN vector search examples
 

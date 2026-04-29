@@ -10,8 +10,8 @@ content_hash: "f147a3e32996b1454ca949dc1036c1210d63b8a6c7fdca7710c7cd66ba50012e"
 menu_path: ["Node APIs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../deno_namespace_apis/index.md", "title": "Deno Namespace APIs"}
-nav_next: {"path": "../std/math/index.md", "title": "@std/math"}
+nav_prev: {"path": "deno/runtime/reference/deno_namespace_apis/index.md", "title": "Deno Namespace APIs"}
+nav_next: {"path": "deno/runtime/reference/std/math/index.md", "title": "@std/math"}
 ---
 
 **On this page**
@@ -68,21 +68,21 @@ nav_next: {"path": "../std/math/index.md", "title": "@std/math"}
 
 Deno provides polyfills for a number of built-in Node.js modules and globals.
 
-[Explore built-in Node APIs](/api/node/)
+[Explore built-in Node APIs](../../../api/node/index.md)
 
 Node compatibility is an ongoing project - help us identify gaps and let us know which modules you need by [opening an issue on GitHub](https://github.com/denoland/deno).
 
 ## Fully supported modules (22/44)
 
-### [node:assert](/api/node/assert)
+### [node:assert](../../../api/node/assert/index.md)
 
-### [node:buffer](/api/node/buffer)
+### [node:buffer](../../../api/node/buffer/index.md)
 
-### [node:child\_process](/api/node/child_process)
+### [node:child\_process](../../../api/node/child_process/index.md)
 
-### [node:console](/api/node/console)
+### [node:console](../../../api/node/console/index.md)
 
-### [node:crypto](/api/node/crypto)
+### [node:crypto](../../../api/node/crypto/index.md)
 
 **Certificate**: The methods are non-functional stubs.
 
@@ -106,53 +106,53 @@ Node compatibility is an ongoing project - help us identify gaps and let us know
 
 **Sign**: The `sign` and `verify` methods are not supported with non BinaryLike input.
 
-### [node:diagnostics\_channel](/api/node/diagnostics_channel)
+### [node:diagnostics\_channel](../../../api/node/diagnostics_channel/index.md)
 
-### [node:events](/api/node/events)
+### [node:events](../../../api/node/events/index.md)
 
-### [node:fs](/api/node/fs)
+### [node:fs](../../../api/node/fs/index.md)
 
 **writeFile**: Missing `utf16le`, `latin1` and `ucs2` encoding.
 
 **writeFileSync**: Missing `utf16le`, `latin1` and `ucs2` encoding.
 
-### [node:fs/promises](/api/node/fs/promises)
+### [node:fs/promises](../../../api/node/fs/promises/index.md)
 
 **lchmod**: The lchmod implementation is a not implemented.
 
-### [node:module](/api/node/module)
+### [node:module](../../../api/node/module/index.md)
 
 **Module**: The `register` method is a non-functional stub.
 
-### [node:os](/api/node/os)
+### [node:os](../../../api/node/os/index.md)
 
-### [node:path](/api/node/path)
+### [node:path](../../../api/node/path/index.md)
 
-### [node:punycode](/api/node/punycode)
+### [node:punycode](../../../api/node/punycode/index.md)
 
-### [node:querystring](/api/node/querystring)
+### [node:querystring](../../../api/node/querystring/index.md)
 
-### [node:readline](/api/node/readline)
+### [node:readline](../../../api/node/readline/index.md)
 
-### [node:sqlite](/api/node/sqlite)
+### [node:sqlite](../../../api/node/sqlite/index.md)
 
 This module has been added in Deno v2.2.
 
-### [node:stream](/api/node/stream)
+### [node:stream](../../../api/node/stream/index.md)
 
-### [node:string\_decoder](/api/node/string_decoder)
+### [node:string\_decoder](../../../api/node/string_decoder/index.md)
 
-### [node:test](/api/node/test)
+### [node:test](../../../api/node/test/index.md)
 
-### [node:timers](/api/node/timers)
+### [node:timers](../../../api/node/timers/index.md)
 
-### [node:tty](/api/node/tty)
+### [node:tty](../../../api/node/tty/index.md)
 
-### [node:url](/api/node/url)
+### [node:url](../../../api/node/url/index.md)
 
 ## Partially supported modules (16/44)
 
-### [node:async\_hooks](/api/node/async_hooks)
+### [node:async\_hooks](../../../api/node/async_hooks/index.md)
 
 **AsyncResource**: The AsyncResource implementation is a non-functional stub.
 
@@ -160,7 +160,7 @@ This module has been added in Deno v2.2.
 
 **createHook**: The createHook implementation is a non-functional stub.
 
-### [node:dgram](/api/node/dgram)
+### [node:dgram](../../../api/node/dgram/index.md)
 
 **Socket**: The following methods are non-functional stubs:
 
@@ -174,7 +174,7 @@ This module has been added in Deno v2.2.
 -   setMulticastTtl
 -   setTtl
 
-### [node:dns](/api/node/dns)
+### [node:dns](../../../api/node/dns/index.md)
 
 **resolve**: The `ttl` option is not supported.
 
@@ -202,7 +202,7 @@ This module has been added in Deno v2.2.
 
 **resolveAny**: The `ttl` option is not supported.
 
-### [node:http](/api/node/http)
+### [node:http](../../../api/node/http/index.md)
 
 **RequestOptions**: Option `createConnection` is not supported.
 
@@ -214,7 +214,7 @@ This module has been added in Deno v2.2.
 
 **get**: Constructor option `createConnection` is not supported.
 
-### [node:http2](/api/node/http2)
+### [node:http2](../../../api/node/http2/index.md)
 
 **Http2Session**: The following methods are non-functional stubs:
 
@@ -250,33 +250,33 @@ This module has been added in Deno v2.2.
 
 **getUnpackedSettings**: This function is a non-functional stub.
 
-### [node:https](/api/node/https)
+### [node:https](../../../api/node/https/index.md)
 
 **Server**: The `cert` and `key` options do not support an array input.
 
-### [node:inspector](/api/node/inspector)
+### [node:inspector](../../../api/node/inspector/index.md)
 
 `console` is supported. Other APIs are non-functional stubs.
 
-### [node:net](/api/node/net)
+### [node:net](../../../api/node/net/index.md)
 
 **Socket**: The `fd` option is not supported.
 
-### [node:perf\_hooks](/api/node/perf_hooks)
+### [node:perf\_hooks](../../../api/node/perf_hooks/index.md)
 
 **performance**: The `eventLoopUtilization` method is a non-functional stub. The `timerify` method is not implemented.
 
 **monitorEventLoopDelay**: This symbol is not implemented.
 
-### [node:process](/api/node/process)
+### [node:process](../../../api/node/process/index.md)
 
 The `multipleResolves` and `worker` events are not supported.
 
-### [node:tls](/api/node/tls)
+### [node:tls](../../../api/node/tls/index.md)
 
 **createSecurePair**: This symbol is currently not supported.
 
-### [node:util](/api/node/util)
+### [node:util](../../../api/node/util/index.md)
 
 **transferableAbortSignal**: This symbol is currently not supported.
 
@@ -288,13 +288,13 @@ The `multipleResolves` and `worker` events are not supported.
 
 **getSystemErrorMap**: This symbol is currently not supported.
 
-### [node:v8](/api/node/v8)
+### [node:v8](../../../api/node/v8/index.md)
 
 `cachedDataVersionTag` and `getHeapStatistics`, `serialize` and `deserialize` are supported. `setFlagsFromStrings` is a noop. Other APIs are not supported and will throw and error.
 
 **setFlagsFromStrings**: This function is a noop.
 
-### [node:vm](/api/node/vm)
+### [node:vm](../../../api/node/vm/index.md)
 
 **measureMemory**: This is a non-functional stub.
 
@@ -304,7 +304,7 @@ The `multipleResolves` and `worker` events are not supported.
 
 **Script**: The `importModuleDynamically` parameter is not supported. The `runInContext` method does not support break on `SIGINT`.
 
-### [node:worker\_threads](/api/node/worker_threads)
+### [node:worker\_threads](../../../api/node/worker_threads/index.md)
 
 **parentPort**: The `emit` method is not supported. The `removeAllListeners` method is not supported.
 
@@ -316,7 +316,7 @@ The `multipleResolves` and `worker` events are not supported.
 
 **Worker**: The `getHeapSnapshot` method is not supported.
 
-### [node:zlib](/api/node/zlib)
+### [node:zlib](../../../api/node/zlib/index.md)
 
 **Options**: This class is not supported.
 
@@ -330,37 +330,37 @@ The `multipleResolves` and `worker` events are not supported.
 
 ## Unsupported modules (6/44)
 
-### [node:cluster](/api/node/cluster)
+### [node:cluster](../../../api/node/cluster/index.md)
 
 All exports are non-functional stubs.
 
 **All symbols**: This symbol is a non-functional stub.
 
-### [node:domain](/api/node/domain)
+### [node:domain](../../../api/node/domain/index.md)
 
 All exports are non-functional stubs. This is a deprecated Node module.
 
 **All symbols**: This symbol is a non-functional stub.
 
-### [node:repl](/api/node/repl)
+### [node:repl](../../../api/node/repl/index.md)
 
 All symbols are not supported.
 
 **All symbols**: This symbol is not supported.
 
-### [node:sea](/api/node/sea)
+### [node:sea](../../../api/node/sea/index.md)
 
 All symbols are not supported.
 
 **All symbols**: This symbol is not supported.
 
-### [node:trace\_events](/api/node/trace_events)
+### [node:trace\_events](../../../api/node/trace_events/index.md)
 
 All exports are non-functional stubs.
 
 **All symbols**: This symbol is a non-functional stub.
 
-### [node:wasi](/api/node/wasi)
+### [node:wasi](../../../api/node/wasi/index.md)
 
 All exports are non-functional stubs.
 

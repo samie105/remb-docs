@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:56.036Z"
 content_hash: "99f5879d020cd565d4a1eca643fb327ecac7153894b9a7acd6cb4f787bc780c7"
 menu_path: ["Aborting Procedure Calls"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "tRPC Client"}
-nav_next: {"path": "../infer-types/index.md", "title": "Inferring Types"}
+nav_prev: {"path": "trpc/docs/client/vanilla/index.md", "title": "tRPC Client"}
+nav_next: {"path": "trpc/docs/client/vanilla/infer-types/index.md", "title": "Inferring Types"}
 ---
 
 tRPC supports the standard `AbortController`/`AbortSignal` API for aborting procedures. All you have to do is pass an `AbortSignal` to the query or mutation options, and call the `AbortController` instance's `abort` method if you need to cancel the request.

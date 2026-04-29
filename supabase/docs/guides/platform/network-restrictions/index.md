@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:55.966Z"
 content_hash: "e0ead273204831b1a51272bf70f71d21aa1385f6c24b2fe337d225dca45afa1a"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Network Restrictions","Network Restrictions"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Network Restrictions","Network Restrictions"]
-nav_prev: {"path": "../multi-factor-authentication/index.md", "title": "Multi-factor Authentication"}
-nav_next: {"path": "../performance/index.md", "title": "Performance Tuning"}
+nav_prev: {"path": "supabase/docs/guides/platform/multi-factor-authentication/index.md", "title": "Multi-factor Authentication"}
+nav_next: {"path": "supabase/docs/guides/platform/performance/index.md", "title": "Performance Tuning"}
 ---
 
 # 
@@ -27,7 +27,7 @@ If direct connections to your database [resolve to a IPv6 address](/dashboard/pr
 
 ## To get started via the Dashboard:[#](#to-get-started-via-the-dashboard)
 
-Network restrictions can be configured in the [Database Settings](/dashboard/project/_/database/settings) page. Ensure that you have [Owner or Admin permissions](/docs/guides/platform/access-control#manage-team-members) for the project that you are enabling network restrictions.
+Network restrictions can be configured in the [Database Settings](/dashboard/project/_/database/settings) page. Ensure that you have [Owner or Admin permissions](../access-control/index.md#manage-team-members) for the project that you are enabling network restrictions.
 
 ## To get started via the Management API:[#](#to-get-started-via-the-management-api)
 
@@ -39,10 +39,10 @@ You can also manage network restrictions using the Management API:
 
 ## To get started via the CLI:[#](#to-get-started-via-the-cli)
 
-1.  [Install](/docs/guides/cli) the Supabase CLI 1.22.0+.
+1.  [Install](../../cli/index.md) the Supabase CLI 1.22.0+.
 2.  [Log in](/docs/guides/cli/local-development#log-in-to-the-supabase-cli) to your Supabase account using the CLI.
 3.  If your project was created before 23rd December 2022, it will need to be [upgraded to the latest Supabase version](/docs/guides/platform/migrating-and-upgrading-projects) before Network Restrictions can be used.
-4.  Ensure that you have [Owner or Admin permissions](/docs/guides/platform/access-control#manage-team-members) for the project that you are enabling network restrictions.
+4.  Ensure that you have [Owner or Admin permissions](../access-control/index.md#manage-team-members) for the project that you are enabling network restrictions.
 
 ### Check restrictions[#](#check-restrictions)
 

@@ -10,8 +10,8 @@ content_hash: "144c1e90d8e1600f161682735c44f3e229c5ccb6030032c2845cbd7c97b83c8f"
 menu_path: ["Deploying edge functions with Prisma ORM"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../deploy-to-vercel/index.md", "title": "Deploy to Vercel Edge Functions & Middleware"}
-nav_next: {"path": "../../serverless/deploy-to-aws-lambda/index.md", "title": "Deploy to AWS Lambda"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/edge/deploy-to-vercel/index.md", "title": "Deploy to Vercel Edge Functions & Middleware"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-aws-lambda/index.md", "title": "Deploy to AWS Lambda"}
 ---
 
 ## Deploying edge functions with Prisma ORM

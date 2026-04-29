@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:20.582Z"
 content_hash: "efa20a77084935a263454abd0b6e2a074cefd909a04ad1f3016db6276bc653bf"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE STATISTICS"]
 section_path: []
-nav_prev: {"path": "../sql-createserver.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SERVER"}
-nav_next: {"path": "../sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
+nav_prev: {"path": "postgres/docs/current/sql-createserver.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SERVER"}
+nav_next: {"path": "postgres/docs/current/sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
 ---
 
 CREATE STATISTICS — define extended statistics

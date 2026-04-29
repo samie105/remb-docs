@@ -10,8 +10,8 @@ content_hash: "cf667625a223ff181adf53528c627cd6787508693abc156ac18b8d141598aa0f"
 menu_path: ["@std/bytes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../async/index.md", "title": "@std/async"}
-nav_next: {"path": "../cache/index.md", "title": "@std/cache"}
+nav_prev: {"path": "deno/runtime/reference/std/async/index.md", "title": "@std/async"}
+nav_next: {"path": "deno/runtime/reference/std/cache/index.md", "title": "@std/cache"}
 ---
 
 **On this page**

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:04.580Z"
 content_hash: "20bca7cd8442fcbb85b659526e383b1e49d0eccd0f798c081ca03159d46bc1fc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Configuration Parameters","→","Configuration Parameters"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Configuration Parameters","→","Configuration Parameters"]
-nav_prev: {"path": "../../probabilistic/hyperloglogs/index.md", "title": "HyperLogLog"}
-nav_next: {"path": "../out-of-order_performance_considerations/index.md", "title": "Out-of-order / backfilled ingestion performance considerations"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/probabilistic/hyperloglogs/index.md", "title": "HyperLogLog"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/timeseries/out-of-order_performance_considerations/index.md", "title": "Out-of-order / backfilled ingestion performance considerations"}
 ---
 
 # Configuration Parameters
@@ -59,7 +59,7 @@ In a cluster, you must run `CONFIG SET` and `CONFIG REWRITE` on each node separa
 
 In Redis 8.0, new names for the time series configuration parameters were introduced to align the naming with the Redis configuration parameters. You must use the new names when using the `CONFIG` command.
 
-See also [Redis configuration](/docs/latest/operate/oss_and_stack/management/config/).
+See also [Redis configuration](../../../../operate/oss_and_stack/management/config/index.md).
 
 ## Time series configuration parameters
 
@@ -301,7 +301,7 @@ Each rule is separated by a semicolon (`;`), the rule consists of multiple field
 
 Warning:
 
-In a clustered environment, if you set this configuration parameter, you must use [hash tags](/docs/latest/operate/oss_and_stack/reference/cluster-spec/#hash-tags) for all time series key names. This ensures that Redis will create each compaction in the same hash slot as its source key. If you don't, the system may fail to compact the data without displaying any error messages.
+In a clustered environment, if you set this configuration parameter, you must use [hash tags](../../../../operate/oss_and_stack/reference/cluster-spec/index.md#hash-tags) for all time series key names. This ensures that Redis will create each compaction in the same hash slot as its source key. If you don't, the system may fail to compact the data without displaying any error messages.
 
 When a compaction policy is defined, compaction rules are created automatically for newly created time series, and the compaction key name would be:
 

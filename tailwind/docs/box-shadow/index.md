@@ -10,8 +10,8 @@ content_hash: "ed308ee8f7f6b85d915c60d8275b598b4c3f1b5517e46aca7a6976260c4aa7a9"
 menu_path: ["box-shadow"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../outline-offset/index.md", "title": "outline-offset"}
-nav_next: {"path": "../text-shadow/index.md", "title": "text-shadow"}
+nav_prev: {"path": "tailwind/docs/outline-offset/index.md", "title": "outline-offset"}
+nav_next: {"path": "tailwind/docs/text-shadow/index.md", "title": "text-shadow"}
 ---
 
 Utilities for controlling the box shadow of an element.

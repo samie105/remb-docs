@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:54:06.475Z"
 content_hash: "522b947d4f0597a222e8f7cf27d299ba70273df908e945e67f7eff6aae18f774"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Go","→","Token bucket rate limiter with Redis and Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Go","→","Token bucket rate limiter with Redis and Go"]
-nav_prev: {"path": "../dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
-nav_next: {"path": "../java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/dotnet/index.md", "title": "Token bucket rate limiter with Redis and .NET"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
 ---
 
 # Token bucket rate limiter with Redis and Go
 
 Implement a token bucket rate limiter using Redis and Lua scripts in Go
 
-This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in Go with the [`go-redis`](/docs/latest/develop/clients/go/) client library.
+This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in Go with the [`go-redis`](../../../clients/go/index.md) client library.
 
 ## Overview
 
@@ -28,7 +28,7 @@ Rate limiting is a critical technique for controlling the rate at which operatio
 *   Ensuring fair resource allocation across multiple clients
 *   Throttling background jobs or batch operations
 
-The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Go implementation using the [`go-redis`](/docs/latest/develop/clients/go/) client library, taking advantage of Go's `context.Context` for cancellation and timeouts, explicit error handling, and goroutine safety.
+The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Go implementation using the [`go-redis`](../../../clients/go/index.md) client library, taking advantage of Go's `context.Context` for cancellation and timeouts, explicit error handling, and goroutine safety.
 
 ## How it works
 
@@ -377,9 +377,9 @@ if err != nil {
 
 *   [EVAL command](/docs/latest/commands/eval/) - Execute Lua scripts
 *   [EVALSHA command](/docs/latest/commands/evalsha/) - Execute cached Lua scripts
-*   [Lua scripting](/docs/latest/develop/programmability/eval-intro/) - Introduction to Redis Lua scripting
+*   [Lua scripting](../../../programmability/eval-intro/index.md) - Introduction to Redis Lua scripting
 *   [HMGET command](/docs/latest/commands/hmget/) - Get multiple hash fields
 *   [HMSET command](/docs/latest/commands/hmset/) - Set multiple hash fields
-*   [Go client](/docs/latest/develop/clients/go/) - Redis Go client documentation
+*   [Go client](../../../clients/go/index.md) - Redis Go client documentation
 
 ## On this page

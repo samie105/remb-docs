@@ -11,8 +11,8 @@ menu_path: ["Data Fetching"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../rendering/client-side-rendering/index.md", "title": "Client-side Rendering (CSR)"}
-nav_next: {"path": "get-static-props/index.md", "title": "getStaticProps"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/rendering/client-side-rendering/index.md", "title": "Client-side Rendering (CSR)"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-props/index.md", "title": "getStaticProps"}
 ---
 
 # Data Fetching
@@ -58,13 +58,13 @@ Data fetching in Next.js allows you to render your content in different ways, de
 
 Fetch data and generate static pages with \`getStaticProps\`. Learn more about this API for data fetching in Next.js.
 
-](/docs/pages/building-your-application/data-fetching/get-static-props)[
+](get-static-props/index.md)[
 
 ### getStaticPaths
 
 Fetch data and generate static pages with \`getStaticPaths\`. Learn more about this API for data fetching in Next.js.
 
-](/docs/pages/building-your-application/data-fetching/get-static-paths)[
+](get-static-paths/index.md)[
 
 ### Forms and Mutations
 
@@ -76,12 +76,12 @@ Learn how to handle form submissions and data mutations with Next.js.
 
 Fetch data on each request with \`getServerSideProps\`.
 
-](/docs/pages/building-your-application/data-fetching/get-server-side-props)[
+](get-server-side-props/index.md)[
 
 ### Client-side Fetching
 
 Learn about client-side data fetching, and how to use SWR, a data fetching React Hook library that handles caching, revalidation, focus tracking, refetching on interval and more.
 
-](/docs/pages/building-your-application/data-fetching/client-side)
+](client-side/index.md)
 
 Was this helpful?

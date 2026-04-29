@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:19.676Z"
 content_hash: "afe90f1178d1f55a472a43d9a0feb432aa3553edc916314ca0ac48a1a2fe503f"
 menu_path: ["Convert a ReadableStream to a Uint8Array"]
 section_path: []
-nav_prev: {"path": "../to-string/index.md", "title": "Convert a ReadableStream to a string"}
-nav_next: {"path": "../../test/bail/index.md", "title": "Bail early with the Bun test runner"}
+nav_prev: {"path": "bun/docs/guides/streams/to-string/index.md", "title": "Convert a ReadableStream to a string"}
+nav_next: {"path": "bun/docs/guides/test/bail/index.md", "title": "Bail early with the Bun test runner"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../test/bail/index.md", "title": "Bail early with the Bun
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun provides several convenience functions for reading the contents of a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) into different formats. This snippet reads the contents of a `ReadableStream` to an [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer), then creates a [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) that points to the buffer.
 
@@ -52,7 +52,7 @@ const uint8 = await Bun.readableStreamToBytes(stream);
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
+See [Docs > API > Utils](../../../runtime/utils/index.md#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
 
 Was this page helpful?
 
@@ -64,10 +64,10 @@ Convert a ReadableStream to an ArrayBuffer
 
 Previous
 
-](/docs/guides/streams/to-arraybuffer)[
+](../to-arraybuffer/index.md)[
 
 Convert a ReadableStream to an array of chunks
 
 Next
 
-](/docs/guides/streams/to-array)
+](../to-array/index.md)

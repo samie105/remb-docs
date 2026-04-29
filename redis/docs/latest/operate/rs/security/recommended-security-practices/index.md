@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:05:30.641Z"
 content_hash: "6a4904abdddf5fcf8632e86fd52e7131c919d0101b683f89d2c7e36dacaadeb5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Security","→","Security","→\n      \n        Recommended security practices","→","Recommended security practices"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Security","→","Security","→\n      \n        Recommended security practices","→","Recommended security practices"]
-nav_prev: {"path": "../access-control/index.md", "title": "Access control"}
+nav_prev: {"path": "redis/docs/latest/operate/rs/security/access-control/index.md", "title": "Access control"}
 ---
 
 # Recommended security practices
@@ -65,7 +65,7 @@ When deploying Redis Software to production, we recommend the following practice
 
 ## Cluster security
 
-*   **Control the level of access to your system**: Redis Software lets you decide which users can access the cluster, which users can access databases, and which users can access both. We recommend preventing database users from accessing the cluster. See [Access control](/docs/latest/operate/rs/security/access-control/) for more information.
+*   **Control the level of access to your system**: Redis Software lets you decide which users can access the cluster, which users can access databases, and which users can access both. We recommend preventing database users from accessing the cluster. See [Access control](../access-control/index.md) for more information.
     
 *   **Enable LDAP authentication**: If your organization uses the Lightweight Directory Access Protocol (LDAP), we recommend enabling Redis Software support for role-based LDAP authentication.
     

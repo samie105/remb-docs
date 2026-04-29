@@ -10,8 +10,8 @@ content_hash: "bd4700dd8a87f02757b19a07a09b1e43cd2085f99e57d6e68ceda6b5154caad4"
 menu_path: ["PostgreSQL: Documentation: 18: 53.12. pg_indexes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../view-pg-ident-file-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.11.\u00a0pg_ident_file_mappings"}
-nav_next: {"path": "../view-pg-locks.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.13.\u00a0pg_locks"}
+nav_prev: {"path": "postgres/docs/current/view-pg-ident-file-mappings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.11.\u00a0pg_ident_file_mappings"}
+nav_next: {"path": "postgres/docs/current/view-pg-locks.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.13.\u00a0pg_locks"}
 ---
 
 The view `pg_indexes` provides access to useful information about each index in the database.

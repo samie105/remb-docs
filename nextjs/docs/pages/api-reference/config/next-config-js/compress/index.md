@@ -11,8 +11,8 @@ menu_path: ["compress"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../bundlePagesRouterDependencies/index.md", "title": "bundlePagesRouterDependencies"}
-nav_next: {"path": "../crossOrigin/index.md", "title": "crossOrigin"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/bundlePagesRouterDependencies/index.md", "title": "bundlePagesRouterDependencies"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/crossOrigin/index.md", "title": "crossOrigin"}
 ---
 
 # compress

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:03:21.815Z"
 content_hash: "7bd185be31c856641344b23c51d25019e9a91b8d52b78f984dd62521d1c1cf5c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Monitoring with metrics and alerts","→","Monitoring with metrics and alerts","→\n      \n        Get started with monitoring Redis Software","→","Get started with monitoring Redis Software"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Monitoring with metrics and alerts","→","Monitoring with metrics and alerts","→\n      \n        Get started with monitoring Redis Software","→","Get started with monitoring Redis Software"]
-nav_prev: {"path": "../../installing-upgrading/quickstarts/redis-enterprise-software-quickstart/index.md", "title": "Redis Software quickstart"}
-nav_next: {"path": "../../security/access-control/index.md", "title": "Access control"}
+nav_prev: {"path": "redis/docs/latest/operate/rs/installing-upgrading/quickstarts/redis-enterprise-software-quickstart/index.md", "title": "Redis Software quickstart"}
+nav_next: {"path": "redis/docs/latest/operate/rs/security/access-control/index.md", "title": "Access control"}
 ---
 
 # Get started with monitoring Redis Software
@@ -36,13 +36,13 @@ You can use Prometheus integrations to:
 
 You can integrate Redis Software with Prometheus and one of the following tools to collect and visualize your deployment's metrics:
 
-*   [Grafana](/docs/latest/integrate/prometheus-with-redis-enterprise/)
+*   [Grafana](../../../../integrate/prometheus-with-redis-enterprise/index.md)
     
-*   [Datadog](/docs/latest/integrate/datadog-with-redis-enterprise/)
+*   [Datadog](../../../../integrate/datadog-with-redis-enterprise/index.md)
     
-*   [Dynatrace](/docs/latest/integrate/dynatrace-with-redis-enterprise/)
+*   [Dynatrace](../../../../integrate/dynatrace-with-redis-enterprise/index.md)
     
-*   [New Relic](/docs/latest/integrate/new-relic-with-redis-enterprise/)
+*   [New Relic](../../../../integrate/new-relic-with-redis-enterprise/index.md)
     
 
 ## Best practices for monitoring

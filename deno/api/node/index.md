@@ -10,8 +10,8 @@ content_hash: "6d085ca5860397bae647f06aaeea70b1c78e549f8f7ab122ab68c8009880670c"
 menu_path: ["Node.js Built-in APIs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../deno/~/Deno.jupyter.html/index.md", "title": "function Deno.jupyter.html"}
-nav_next: {"path": "all_symbols/index.md", "title": "All Symbols - Node documentation"}
+nav_prev: {"path": "deno/api/deno/~/Deno.jupyter.html/index.md", "title": "function Deno.jupyter.html"}
+nav_next: {"path": "deno/api/node/all_symbols/index.md", "title": "All Symbols - Node documentation"}
 ---
 
 **On this page**
@@ -153,7 +153,7 @@ const randomBytes = crypto.randomBytes(16);
 
 Node compatibility is an ongoing project. Most core Node.js APIs are supported with high fidelity. For detailed compatibility information:
 
--   View our [Node.js compatibility guide](/runtime/reference/node_apis/)
+-   View our [Node.js compatibility guide](../../runtime/reference/node_apis/index.md)
 -   Check [Node.js test results](https://node-test-viewer.deno.dev/) for specific test coverage
 -   [Report compatibility issues](https://github.com/denoland/deno/issues) on GitHub
 
@@ -166,4 +166,4 @@ When migrating from Node.js to Deno:
 3.  **Use npm specifiers**: Import npm packages with `npm:` prefix
 4.  **Review permissions**: Configure Deno's permission system as needed
 
-For more guidance, see our [migration guide](/runtime/reference/migration_guide/).
+For more guidance, see our [migration guide](../../runtime/reference/migration_guide/index.md).

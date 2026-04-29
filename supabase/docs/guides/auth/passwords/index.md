@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:37.337Z"
 content_hash: "111f8f5b658e1630d85e5f793fb798eea4e6c9d2403ea2e442908dc4e1f65662"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Password-based","Password-based"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Password-based","Password-based"]
-nav_prev: {"path": "../password-security/index.md", "title": "Password security"}
-nav_next: {"path": "../phone-login/index.md", "title": "Phone Login"}
+nav_prev: {"path": "supabase/docs/guides/auth/password-security/index.md", "title": "Password security"}
+nav_next: {"path": "supabase/docs/guides/auth/phone-login/index.md", "title": "Phone Login"}
 ---
 
 # 
@@ -39,7 +39,7 @@ Change this setting on the [Auth Providers page](/dashboard/project/_/auth/provi
 
 ### Signing up with an email and password[#](#signing-up-with-an-email-and-password)
 
-There are two possible flows for email signup: [implicit flow](/docs/guides/auth/sessions#implicit-flow) and [PKCE flow](/docs/guides/auth/sessions#pkce-flow). If you're using SSR, you're using the PKCE flow. If you're using client-only code, the default flow depends upon the client library. The implicit flow is the default in JavaScript and Dart, and the PKCE flow is the default in Swift.
+There are two possible flows for email signup: [implicit flow](../sessions/index.md#implicit-flow) and [PKCE flow](../sessions/index.md#pkce-flow). If you're using SSR, you're using the PKCE flow. If you're using client-only code, the default flow depends upon the client library. The implicit flow is the default in JavaScript and Dart, and the PKCE flow is the default in Swift.
 
 The instructions in this section assume that email confirmations are enabled.
 
@@ -47,7 +47,7 @@ The implicit flow only works for client-only apps. Your site directly receives t
 
 To sign up the user, call [signUp()](/docs/reference/javascript/auth-signup) with their email address and password.
 
-You can optionally specify a URL to redirect to after the user clicks the confirmation link. This URL must be configured as a [Redirect URL](/docs/guides/auth/redirect-urls), which you can do in the [dashboard](/dashboard/project/_/auth/url-configuration) for hosted projects, or in the [configuration file](/docs/guides/cli/config#auth.additional_redirect_urls) for self-hosted projects.
+You can optionally specify a URL to redirect to after the user clicks the confirmation link. This URL must be configured as a [Redirect URL](../redirect-urls/index.md), which you can do in the [dashboard](/dashboard/project/_/auth/url-configuration) for hosted projects, or in the [configuration file](/docs/guides/cli/config#auth.additional_redirect_urls) for self-hosted projects.
 
 If you don't specify a redirect URL, the user is automatically redirected to your site URL. This defaults to `localhost:3000`, but you can also configure this.
 
@@ -69,7 +69,7 @@ When your user signs in, call [`signInWithPassword()`](/docs/reference/javascrip
 
 Create a **reset password** page. This page should be publicly accessible.
 
-Collect the user's email address and request a password reset email. Specify the redirect URL, which should point to the URL of a **change password** page. This URL needs to be configured in your [redirect URLs](/docs/guides/auth/redirect-urls).
+Collect the user's email address and request a password reset email. Specify the redirect URL, which should point to the URL of a **change password** page. This URL needs to be configured in your [redirect URLs](../redirect-urls/index.md).
 
 ```
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6await supabase.auth.resetPasswordForEmail('valid.email@supabase.io', {7  redirectTo: 'http://example.com/account/update-password',8})
@@ -101,7 +101,7 @@ The Supabase platform comes with a default email-sending service for you to try 
 
 Consider configuring a custom SMTP server for production.
 
-See the [Custom SMTP guide](/docs/guides/auth/auth-smtp) for instructions.
+See the [Custom SMTP guide](../auth-smtp/index.md) for instructions.
 
 #### Local development with Mailpit[#](#local-development-with-mailpit)
 
@@ -113,7 +113,7 @@ In your terminal, run `supabase status` to get the Mailpit URL. Go to this URL i
 
 You can use a user's mobile phone number as an identifier, instead of an email address, when they sign up with a password.
 
-This practice is usually discouraged because phone networks recycle mobile phone numbers. Anyone receiving a recycled phone number gets access to the original user's account. To mitigate this risk, [implement MFA](/docs/guides/auth/auth-mfa).
+This practice is usually discouraged because phone networks recycle mobile phone numbers. Anyone receiving a recycled phone number gets access to the original user's account. To mitigate this risk, [implement MFA](../auth-mfa/index.md).
 
 Protect users who use a phone number as a password-based auth identifier by enabling MFA.
 

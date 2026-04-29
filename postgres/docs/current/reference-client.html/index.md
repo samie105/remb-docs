@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:45.265Z"
 content_hash: "08f460bf5f9f4ca4ea8cf8e359726b34150ebf8aa3c6393ea9c49092140885c8"
 menu_path: ["PostgreSQL Client Applications"]
 section_path: []
-nav_prev: {"path": "../sql-commands.html/index.md", "title": "SQL Commands"}
-nav_next: {"path": "../views.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a053.\u00a0System Views"}
+nav_prev: {"path": "postgres/docs/current/sql-commands.html/index.md", "title": "SQL Commands"}
+nav_next: {"path": "postgres/docs/current/views.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a053.\u00a0System Views"}
 ---
 
 This part contains reference information for PostgreSQL client applications and utilities. Not all of these commands are of general utility; some might require special privileges. The common feature of these applications is that they can be run on any host, independent of where the database server resides.

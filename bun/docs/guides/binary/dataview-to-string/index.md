@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:09.881Z"
 content_hash: "c2f23c2f9adaf6701fd967d1373c8bc068ff34a4a7cfa93ef8d9bfe938b6c969"
 menu_path: ["Convert a DataView to a string"]
 section_path: []
-nav_prev: {"path": "../buffer-to-typedarray/index.md", "title": "Convert a Buffer to a Uint8Array"}
-nav_next: {"path": "../typedarray-to-arraybuffer/index.md", "title": "Convert a Uint8Array to an ArrayBuffer"}
+nav_prev: {"path": "bun/docs/guides/binary/buffer-to-typedarray/index.md", "title": "Convert a Buffer to a Uint8Array"}
+nav_next: {"path": "bun/docs/guides/binary/typedarray-to-arraybuffer/index.md", "title": "Convert a Uint8Array to an ArrayBuffer"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../typedarray-to-arraybuffer/index.md", "title": "Convert a 
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 If a [`DataView`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) contains ASCII-encoded text, you can convert it to a string using the [`TextDecoder`](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder) class.
 
@@ -45,7 +45,7 @@ const str = decoder.decode(dv);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -57,10 +57,10 @@ Convert a Uint8Array to a ReadableStream
 
 Previous
 
-](/docs/guides/binary/typedarray-to-readablestream)[
+](../typedarray-to-readablestream/index.md)[
 
 Convert a ReadableStream to a string
 
 Next
 
-](/docs/guides/streams/to-string)
+](../../streams/to-string/index.md)

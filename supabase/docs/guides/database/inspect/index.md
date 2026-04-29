@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:09.556Z"
 content_hash: "bff9970055ebe4b3f4967080562c7f3273265584d8a1fe081b8317c23d03ec5b"
 menu_path: ["Database","Database","Debugging","Debugging","Debugging and monitoring","Debugging and monitoring"]
 section_path: ["Database","Database","Debugging","Debugging","Debugging and monitoring","Debugging and monitoring"]
-nav_prev: {"path": "../import-data/index.md", "title": "Import data into Supabase"}
-nav_next: {"path": "../joins-and-nesting/index.md", "title": "Querying Joins and Nested tables"}
+nav_prev: {"path": "supabase/docs/guides/database/import-data/index.md", "title": "Import data into Supabase"}
+nav_next: {"path": "supabase/docs/guides/database/joins-and-nesting/index.md", "title": "Querying Joins and Nested tables"}
 ---
 
 # 
@@ -29,13 +29,13 @@ Database performance is a large topic and many factors can contribute. Some of t
 *   Lock contention from multiple queries operating on highly utilized tables
 *   Large amount of bloat on your tables causing poor query planning
 
-You can examine your database and queries for these issues using either the [Supabase CLI](/docs/guides/local-development/cli/getting-started) or SQL.
+You can examine your database and queries for these issues using either the [Supabase CLI](../../local-development/cli/getting-started/index.md) or SQL.
 
 ## Using the CLI[#](#using-the-cli)
 
 The Supabase CLI comes with a range of tools to help inspect your Postgres instances for potential issues. The CLI gets the information from [Postgres internals](https://www.postgresql.org/docs/current/internals.html). Therefore, most tools provided are compatible with any Postgres databases regardless if they are a Supabase project or not.
 
-You can find installation instructions for the Supabase CLI [here](/docs/guides/cli).
+You can find installation instructions for the Supabase CLI [here](../../cli/index.md).
 
 ### The `inspect db` command[#](#the-inspect-db-command)
 
@@ -109,7 +109,7 @@ Following commands require `pg_stat_statements` to be enabled: calls, locks, cac
 
 When using `pg_stat_statements` also take note that it only stores the latest 5,000 statements. Moreover, consider resetting the analysis after optimizing any queries by running `select pg_stat_statements_reset();`
 
-Learn more about pg\_stats [here](/docs/guides/database/extensions/pg_stat_statements).
+Learn more about pg\_stats [here](../extensions/pg_stat_statements/index.md).
 
 ## Using SQL[#](#using-sql)
 
@@ -121,7 +121,7 @@ If you're seeing an `insufficient privilege` error when viewing the Query Perfor
 
 ### Postgres cumulative statistics system[#](#postgres-cumulative-statistics-system)
 
-Postgres collects data about its own operations using the [cumulative statistics system](https://www.postgresql.org/docs/current/monitoring-stats.html). In addition to this, every Supabase project has the [pg\_stat\_statements extension](/docs/guides/database/extensions/pg_stat_statements) enabled by default. This extension records query execution performance details and is the best way to find inefficient queries. This information can be combined with the Postgres query plan analyzer to develop more efficient queries.
+Postgres collects data about its own operations using the [cumulative statistics system](https://www.postgresql.org/docs/current/monitoring-stats.html). In addition to this, every Supabase project has the [pg\_stat\_statements extension](../extensions/pg_stat_statements/index.md) enabled by default. This extension records query execution performance details and is the best way to find inefficient queries. This information can be combined with the Postgres query plan analyzer to develop more efficient queries.
 
 Here are some example queries to get you started.
 

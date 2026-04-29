@@ -10,8 +10,8 @@ content_hash: "b5961dfcc917ea22da9cc82aceec5061a63a1640eb230256f824d210090f3300"
 menu_path: ["outline-color"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../outline-width/index.md", "title": "outline-width"}
-nav_next: {"path": "../outline-style/index.md", "title": "outline-style"}
+nav_prev: {"path": "tailwind/docs/outline-width/index.md", "title": "outline-width"}
+nav_next: {"path": "tailwind/docs/outline-style/index.md", "title": "outline-style"}
 ---
 
 # outline-color
@@ -114,7 +114,7 @@ Prefix an `outline-color` utility with a breakpoint variant like `md:` to only a
 <div class="outline md:outline-blue-400 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
@@ -128,7 +128,7 @@ Now the `outline-regal-blue` utility can be used in your markup:
 <div class="outline-regal-blue">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

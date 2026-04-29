@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:17.892Z"
 content_hash: "db70f8604b45fea1775282c21808c4e814aebeab594e5e3f09ec400784a892c3"
 menu_path: ["Split Link"]
 section_path: []
-nav_prev: {"path": "../retryLink/index.md", "title": "Retry Link"}
-nav_next: {"path": "../wsLink/index.md", "title": "WebSocket Link"}
+nav_prev: {"path": "trpc/docs/client/links/retryLink/index.md", "title": "Retry Link"}
+nav_next: {"path": "trpc/docs/client/links/wsLink/index.md", "title": "WebSocket Link"}
 ---
 
 `splitLink` is a link that allows you to branch your link chain's execution depending on a given condition. Both the `true` and `false` branches are required. You can provide just one link, or multiple links per branch via an array.

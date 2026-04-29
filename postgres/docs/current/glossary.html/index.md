@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:03.003Z"
 content_hash: "e4264961ddf8a418e32ad0a565d3c2db9c4c213d0387ccd41e7acd8f79713f86"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix M. Glossary"]
 section_path: []
-nav_prev: {"path": "../acronyms.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0L.\u00a0Acronyms"}
-nav_next: {"path": "../color.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0N.\u00a0Color Support"}
+nav_prev: {"path": "postgres/docs/current/acronyms.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0L.\u00a0Acronyms"}
+nav_next: {"path": "postgres/docs/current/color.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0N.\u00a0Color Support"}
 ---
 
 This is a list of terms and their meaning in the context of PostgreSQL and relational database systems in general.

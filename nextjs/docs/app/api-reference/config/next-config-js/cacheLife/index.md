@@ -11,19 +11,19 @@ menu_path: ["cacheLife"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../cacheHandlers/index.md", "title": "cacheHandlers"}
-nav_next: {"path": "../compress/index.md", "title": "compress"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheHandlers/index.md", "title": "cacheHandlers"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/compress/index.md", "title": "compress"}
 ---
 
 # cacheLife
 
 Last updated April 23, 2026
 
-The `cacheLife` option allows you to define **custom cache profiles** when using the [`cacheLife`](/docs/app/api-reference/functions/cacheLife) function inside components or functions, and within the scope of the [`use cache` directive](/docs/app/api-reference/directives/use-cache).
+The `cacheLife` option allows you to define **custom cache profiles** when using the [`cacheLife`](../../../functions/cacheLife/index.md) function inside components or functions, and within the scope of the [`use cache` directive](../../../directives/use-cache/index.md).
 
 ## Usage[](#usage)
 
-To define a profile, enable the [`cacheComponents` flag](/docs/app/api-reference/config/next-config-js/cacheComponents) and add the cache profile in the `cacheLife` object in the `next.config.js` file. For example, a `blog` profile:
+To define a profile, enable the [`cacheComponents` flag](../cacheComponents/index.md) and add the cache profile in the `cacheLife` object in the `next.config.js` file. For example, a `blog` profile:
 
 next.config.ts
 
@@ -83,18 +83,18 @@ View related API references.
 
 Learn how to use the "use cache" directive to cache data in your Next.js application.
 
-](/docs/app/api-reference/directives/use-cache)[
+](../../../directives/use-cache/index.md)[
 
 ### cacheHandlers
 
 Configure custom cache handlers for use cache directives in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheHandlers)[
+](../cacheHandlers/index.md)[
 
 ### cacheLife
 
 Learn how to use the cacheLife function to set the cache expiration time for a cached function or component.
 
-](/docs/app/api-reference/functions/cacheLife)
+](../../../functions/cacheLife/index.md)
 
 Was this helpful?

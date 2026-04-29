@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:26.326Z"
 content_hash: "fb59fe603704e6e5b7b09171cb111cffb299f8b718754fe5da6fc4a02e87f7ef"
 menu_path: ["Extract links from a webpage using HTMLRewriter"]
 section_path: []
-nav_prev: {"path": "../../ecosystem/vite/index.md", "title": "Build a frontend using Vite and Bun"}
-nav_next: {"path": "../extract-social-meta/index.md", "title": "Extract social share images and Open Graph tags"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/vite/index.md", "title": "Build a frontend using Vite and Bun"}
+nav_next: {"path": "bun/docs/guides/html-rewriter/extract-social-meta/index.md", "title": "Extract social share images and Open Graph tags"}
 ---
 
 Bun’s [HTMLRewriter](../../../runtime/html-rewriter/index.md) API can be used to efficiently extract links from HTML content. It works by chaining together CSS selectors to match the elements, text, and attributes you want to process. Here is an example of how to extract links from a webpage. You can pass `.transform` a `Response`, `Blob`, or `string`.

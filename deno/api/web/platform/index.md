@@ -10,8 +10,8 @@ content_hash: "54c8cc185fe7b714fa9c022f3e82c8d42ab75f288595ad5a09aee1f65d17cf8d"
 menu_path: ["Platform - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../performance/index.md", "title": "Performance - Web documentation"}
-nav_next: {"path": "../storage/index.md", "title": "Storage - Web documentation"}
+nav_prev: {"path": "deno/api/web/performance/index.md", "title": "Performance - Web documentation"}
+nav_next: {"path": "deno/api/web/storage/index.md", "title": "Storage - Web documentation"}
 ---
 
 f

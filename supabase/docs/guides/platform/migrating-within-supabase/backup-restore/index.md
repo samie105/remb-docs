@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:50.597Z"
 content_hash: "17b4194313ceb2e7ef1fef4ff216220ccf68ac3fc81972125f857e459a37825a"
 menu_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Backup and restore using CLI","Backup and restore using CLI"]
 section_path: ["Platform","Platform","More","More","More","Migrating within Supabase","Migrating within Supabase","Backup and restore using CLI","Backup and restore using CLI"]
-nav_prev: {"path": "../index.md", "title": "Migrating within Supabase"}
-nav_next: {"path": "../dashboard-restore/index.md", "title": "Restore Dashboard backup"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/index.md", "title": "Migrating within Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-within-supabase/dashboard-restore/index.md", "title": "Restore Dashboard backup"}
 ---
 
 # Migrating the database
@@ -21,7 +21,7 @@ nav_next: {"path": "../dashboard-restore/index.md", "title": "Restore Dashboard 
 
 ### Install the Supabase CLI
 
-Install the [Supabase CLI](/docs/guides/local-development/cli/getting-started).
+Install the [Supabase CLI](../../../local-development/cli/getting-started/index.md).
 
 2
 
@@ -35,7 +35,7 @@ Install [Docker Desktop](https://www.docker.com) for your platform.
 
 On your project dashboard, click [Connect](/dashboard/project/_?showConnect=true&method=session).
 
-Use the [Session pooler](/dashboard/project/_?showConnect=true&method=session) connection string by default. If your network supports [IPv6](https://test-ipv6.com/) or you have the [IPv4 add-on](/docs/guides/platform/ipv4-address) enabled, use the direct connection string.
+Use the [Session pooler](/dashboard/project/_?showConnect=true&method=session) connection string by default. If your network supports [IPv6](https://test-ipv6.com/) or you have the [IPv4 add-on](../../ipv4-address/index.md) enabled, use the direct connection string.
 
 Session pooler connection string:
 
@@ -216,7 +216,7 @@ To resolve the issue, drop the custom `cli_login_postgres` role. Then the CLI ca
 
 ### Login to your Supabase Account
 
-With the Supabase CLI [Supabase CLI](/docs/guides/local-development/cli/getting-started), run:
+With the Supabase CLI [Supabase CLI](../../../local-development/cli/getting-started/index.md), run:
 
 ```
 1supabase login
@@ -240,7 +240,7 @@ You can download an individual function with the following command:
 1supabase functions download YOUR_FUNCTION_NAME --project-ref your_project_ref
 ```
 
-The command will not download [import maps](/docs/guides/functions/dependencies#using-import-maps-legacy) nor [deno.json](/docs/guides/functions/dependencies#using-denojson-recommended) files. If your edge functions rely on them for dependency management, you will have to add them back manually.
+The command will not download [import maps](../../../functions/dependencies/index.md#using-import-maps-legacy) nor [deno.json](../../../functions/dependencies/index.md#using-denojson-recommended) files. If your edge functions rely on them for dependency management, you will have to add them back manually.
 
 4
 
@@ -254,7 +254,7 @@ This deploys all functions within the `supabase/functions` to the target project
 
 ## Steps (using the Supabase Dashboard):[#](#steps-using-the-supabase-dashboard)
 
-Dependencies defined through [import maps](/docs/guides/functions/dependencies#using-import-maps-legacy) and [deno.json](/docs/guides/functions/dependencies#using-denojson-recommended) files will need to be rewritten to rely on their [direct import paths](/docs/guides/functions/dependencies#importing-dependencies) when using this approach.
+Dependencies defined through [import maps](../../../functions/dependencies/index.md#using-import-maps-legacy) and [deno.json](../../../functions/dependencies/index.md#using-denojson-recommended) files will need to be rewritten to rely on their [direct import paths](../../../functions/dependencies/index.md#importing-dependencies) when using this approach.
 
 1
 
@@ -327,4 +327,4 @@ Get the [secret keys](/dashboard/project/_/settings/api-keys) or [service\_role 
 
 ## Resources[#](#resources)
 
-*   [Connecting with PSQL](/docs/guides/database/psql)
+*   [Connecting with PSQL](../../../database/psql/index.md)

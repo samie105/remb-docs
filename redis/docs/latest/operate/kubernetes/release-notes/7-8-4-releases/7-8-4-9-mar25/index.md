@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:07.209Z"
 content_hash: "19cf2b4970a4eece182a4ea7469f98e7af9039b7d1465b49f375f2930250eeba"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4 release notes","→","Redis Enterprise for Kubernetes 7.8.4 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes","→","Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4 release notes","→","Redis Enterprise for Kubernetes 7.8.4 release notes","→\n      \n        Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes","→","Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes"]
-nav_prev: {"path": "../7-8-4-8-feb25/index.md", "title": "Redis Enterprise for Kubernetes 7.8.4-8 (Feb 2025) release notes"}
-nav_next: {"path": "../../8-0-2-releases/8-0-2-2-october2025/index.md", "title": "Redis Enterprise for Kubernetes 8.0.2-2 (October 2025) release notes"}
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-4-releases/7-8-4-8-feb25/index.md", "title": "Redis Enterprise for Kubernetes 7.8.4-8 (Feb 2025) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/8-0-2-releases/8-0-2-2-october2025/index.md", "title": "Redis Enterprise for Kubernetes 8.0.2-2 (October 2025) release notes"}
 ---
 
 # Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes
@@ -21,7 +21,7 @@ Redis Enterprise for Kubernetes
 
 This is a maintenance release to support [Redis Enterprise Software version 7.8.4-95](/docs/latest/operate/rs/release-notes/rs-7-8-releases/rs-7-8-4-95/) and OpenShift 4.17 and 4.18.
 
-For version changes and known limitations, see the [release notes for 7.8.2-6 (Nov 2024)](/docs/latest/operate/kubernetes/release-notes/7-8-2-releases/7-8-2-6-nov24/).
+For version changes and known limitations, see the [release notes for 7.8.2-6 (Nov 2024)](../../7-8-2-releases/7-8-2-6-nov24/index.md).
 
 ## Supported distributions
 

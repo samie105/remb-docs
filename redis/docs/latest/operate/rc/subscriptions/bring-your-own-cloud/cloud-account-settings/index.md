@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:22.999Z"
 content_hash: "d21a9a6e26c287de44bc6ea1ee7a20a593c85646526f8afdd45ea94413070181"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create and edit Cloud accounts","→","Create and edit Cloud accounts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage subscriptions","→","Manage subscriptions","→\n      \n        Redis Cloud Bring your own Cloud","→","Redis Cloud Bring your own Cloud","→\n      \n        Create and edit Cloud accounts","→","Create and edit Cloud accounts"]
-nav_prev: {"path": "../../../security/access-control/data-access-control/default-user/index.md", "title": "Default user"}
-nav_next: {"path": "../iam-resources/index.md", "title": "Create IAM resources for AWS cloud accounts"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/security/access-control/data-access-control/default-user/index.md", "title": "Default user"}
+nav_next: {"path": "redis/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/index.md", "title": "Create IAM resources for AWS cloud accounts"}
 ---
 
 # Create and edit Cloud accounts
@@ -26,7 +26,7 @@ To do this, you need:
 1.  A programmatic user with an access key and a secret access key for that user.
 2.  A console role that allows administrative access to the cloud account.
 
-You need to create these resources before adding the cloud account to your subscription. To learn more, see [Create IAM resources](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/).
+You need to create these resources before adding the cloud account to your subscription. To learn more, see [Create IAM resources](../iam-resources/index.md).
 
 Warning:
 
@@ -94,7 +94,7 @@ If the **Add account** button is inactive, verify that:
 *   The resources exist in your AWS account
 *   Each resource provides the required level of access
 
-For help, see [Create IAM resources](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/).
+For help, see [Create IAM resources](../iam-resources/index.md).
 
 ## Edit cloud account details
 
@@ -140,6 +140,6 @@ To remove a cloud account from your Redis cloud subscription, select the cloud a
 
 We strongly recommend using dedicated identity and access management (IAM) resources to manage your AWS cloud accounts. These resources should not be shared with any other task, account, or process.
 
-To learn more, see [Create IAM resources for AWS cloud accounts](/docs/latest/operate/rc/subscriptions/bring-your-own-cloud/iam-resources/).
+To learn more, see [Create IAM resources for AWS cloud accounts](../iam-resources/index.md).
 
 ## On this page

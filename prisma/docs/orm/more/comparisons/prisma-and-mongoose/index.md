@@ -11,8 +11,8 @@ menu_path: ["Mongoose"]
 section_path: []
 tab_variants: ["Using include","Fluent API","Using create","Using save","Using findOneAndUpdate","Using save"]
 content_language: "en"
-nav_prev: {"path": "../prisma-and-drizzle/index.md", "title": "Drizzle"}
-nav_next: {"path": "../prisma-and-sequelize/index.md", "title": "Sequelize"}
+nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-drizzle/index.md", "title": "Drizzle"}
+nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-sequelize/index.md", "title": "Sequelize"}
 ---
 
 Comparisons

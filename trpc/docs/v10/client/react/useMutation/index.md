@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:20.017Z"
 content_hash: "18c047483c5b82040ce7bb233dfed1cafb2fc4497b6c8284ac16f7698f183631"
 menu_path: ["useMutation()"]
 section_path: []
-nav_prev: {"path": "../useInfiniteQuery/index.md", "title": "useInfiniteQuery"}
-nav_next: {"path": "../useQueries/index.md", "title": "useQueries()"}
+nav_prev: {"path": "trpc/docs/v10/client/react/useInfiniteQuery/index.md", "title": "useInfiniteQuery"}
+nav_next: {"path": "trpc/docs/v10/client/react/useQueries/index.md", "title": "useQueries()"}
 ---
 
 tsx

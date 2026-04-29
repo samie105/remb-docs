@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:38:24.294Z"
 content_hash: "ab2abc6b62fca05dc3a0d674079cbf50c936b158c5f1e2db4a0b2dc2fcc84671"
 menu_path: ["Front-end frameworks"]
 section_path: []
-nav_prev: {"path": "../client-side-scripts/index.md", "title": "Scripts and event handling"}
-nav_next: {"path": "../markdown-content/index.md", "title": "Markdown in Astro"}
+nav_prev: {"path": "astro/en/guides/client-side-scripts/index.md", "title": "Scripts and event handling"}
+nav_next: {"path": "astro/en/guides/markdown-content/index.md", "title": "Markdown in Astro"}
 ---
 
 # Front-end frameworks
 
-Build your Astro website without sacrificing your favorite component framework. Create Astro [islands](/en/concepts/islands/) with the UI frameworks of your choice.
+Build your Astro website without sacrificing your favorite component framework. Create Astro [islands](../../concepts/islands/index.md) with the UI frameworks of your choice.
 
 ## Official front-end framework integrations
 
@@ -29,27 +29,27 @@ Find even more [community-maintained framework integrations](https://astro.build
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../integrations-guide/alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../integrations-guide/preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../integrations-guide/react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../integrations-guide/solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../integrations-guide/svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../integrations-guide/vue/index.md)
     
 
 ## Installing integrations
@@ -58,7 +58,7 @@ Find even more [community-maintained framework integrations](https://astro.build
 
 One or several of these Astro integrations can be installed and configured in your project.
 
-See the [Integrations Guide](/en/guides/integrations/) for more details on installing and configuring Astro integrations.
+See the [Integrations Guide](../integrations/index.md) for more details on installing and configuring Astro integrations.
 
 ## Using framework components
 
@@ -78,7 +78,7 @@ By default, your framework components will only render on the server, as static 
 
 [Section titled “Hydrating interactive components”](#hydrating-interactive-components)
 
-A framework component can be made interactive (hydrated) using a [`client:*` directive](/en/reference/directives-reference/#client-directives). These are component attributes that determine when your component’s JavaScript should be sent to the browser.
+A framework component can be made interactive (hydrated) using a [`client:*` directive](../../reference/directives-reference/index.md#client-directives). These are component attributes that determine when your component’s JavaScript should be sent to the browser.
 
 With all client directives except `client:only`, your component will first render on the server to generate static HTML. Component JavaScript will be sent to the browser according to the directive you chose. The component will then hydrate and become interactive.
 
@@ -96,7 +96,7 @@ The JavaScript framework (React, Svelte, etc.) needed to render the component wi
 
 There are several hydration directives available for UI framework components: `client:load`, `client:idle`, `client:visible`, `client:media={QUERY}` and `client:only={FRAMEWORK}`.
 
-See our [directives reference](/en/reference/directives-reference/#client-directives) page for a full description of these hydration directives, and their usage.
+See our [directives reference](../../reference/directives-reference/index.md#client-directives) page for a full description of these hydration directives, and their usage.
 
 ## Mixing frameworks
 
@@ -108,7 +108,7 @@ You can import and render components from multiple frameworks in the same Astro 
 ---// Example: Mixing multiple framework components on the same page.import MyReactComponent from '../components/MyReactComponent.jsx';import MySvelteComponent from '../components/MySvelteComponent.svelte';import MyVueComponent from '../components/MyVueComponent.vue';---<div>  <MySvelteComponent />  <MyReactComponent />  <MyVueComponent /></div>
 ```
 
-Astro will recognize and render your component based on its file extension. To distinguish between frameworks that use the same file extension, [additional configuration when rendering multiple JSX frameworks](/en/guides/integrations-guide/react/#combining-multiple-jsx-frameworks) (e.g. React and Preact) is required.
+Astro will recognize and render your component based on its file extension. To distinguish between frameworks that use the same file extension, [additional configuration when rendering multiple JSX frameworks](../integrations-guide/react/index.md#combining-multiple-jsx-frameworks) (e.g. React and Preact) is required.
 
 ## Passing props to framework components
 
@@ -120,7 +120,7 @@ You can pass props from Astro components to framework components:
 ---import TodoList from '../components/TodoList.jsx';import Counter from '../components/Counter.svelte';---<div>  <TodoList initialTodos={["learn Astro", "review PRs"]} />  <Counter startingCount={1} /></div>
 ```
 
-Props that are passed to interactive framework components [using a `client:*` directive](/en/reference/directives-reference/#client-directives) must be [serialized](https://developer.mozilla.org/en-US/docs/Glossary/Serialization): translated into a format suitable for transfer over a network, or storage. However, Astro does not serialize every type of data structure. Therefore, there are some limitations on what can be passed as props to hydrated components.
+Props that are passed to interactive framework components [using a `client:*` directive](../../reference/directives-reference/index.md#client-directives) must be [serialized](https://developer.mozilla.org/en-US/docs/Glossary/Serialization): translated into a format suitable for transfer over a network, or storage. However, Astro does not serialize every type of data structure. Therefore, there are some limitations on what can be passed as props to hydrated components.
 
 The following prop types are supported: plain object, `number`, `string`, `Array`, `Map`, `Set`, `RegExp`, `Date`, `BigInt`, `URL`, `Uint8Array`, `Uint16Array`, `Uint32Array`, and `Infinity`
 
@@ -136,7 +136,7 @@ Inside of an Astro component, you **can** pass children to framework components.
 ---import MyReactSidebar from '../components/MyReactSidebar.jsx';---<MyReactSidebar>  <p>Here is a sidebar with some text and a button.</p></MyReactSidebar>
 ```
 
-Additionally, you can use [Named Slots](/en/basics/astro-components/#named-slots) to group specific children together.
+Additionally, you can use [Named Slots](../../basics/astro-components/index.md#named-slots) to group specific children together.
 
 For React, Preact, and Solid, these slots will be converted to a top-level prop. Slot names using `kebab-case` will be converted to `camelCase`.
 
@@ -172,7 +172,7 @@ This allows you to build entire “apps” in your preferred JavaScript framewor
 
 Any UI framework component becomes an “island” of that framework. These components must be written entirely as valid code for that framework, using only its own imports and packages. You cannot import `.astro` components in a UI framework component (e.g. `.jsx` or `.svelte`).
 
-You can, however, use [the Astro `<slot />` pattern](/en/basics/astro-components/#slots) to pass static content generated by Astro components as children to your framework components **inside an `.astro` component**.
+You can, however, use [the Astro `<slot />` pattern](../../basics/astro-components/index.md#slots) to pass static content generated by Astro components as children to your framework components **inside an `.astro` component**.
 
 ```
 ---import MyReactComponent from  '../components/MyReactComponent.jsx';import MyAstroComponent from '../components/MyAstroComponent.astro';---<MyReactComponent>  <MyAstroComponent slot="name" /></MyReactComponent>
@@ -184,8 +184,8 @@ You can, however, use [the Astro `<slot />` pattern](/en/basics/astro-components
 
 If you try to hydrate an Astro component with a `client:` modifier, you will get an error.
 
-[Astro components](/en/basics/astro-components/) are HTML-only templating components with no client-side runtime. But, you can use a `<script>` tag in your Astro component template to send JavaScript to the browser that executes in the global scope.
+[Astro components](../../basics/astro-components/index.md) are HTML-only templating components with no client-side runtime. But, you can use a `<script>` tag in your Astro component template to send JavaScript to the browser that executes in the global scope.
 
-Learn more about [client-side `<script>` tags in Astro components](/en/guides/client-side-scripts/)
+Learn more about [client-side `<script>` tags in Astro components](../client-side-scripts/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

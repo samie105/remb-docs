@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:04.159Z"
 content_hash: "110ca542d0335d10c1a233572789362d57a381efeb388987a90708c7f73b641e"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Egress","Egress"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Egress","Egress"]
-nav_prev: {"path": "../edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
-nav_next: {"path": "../ipv4/index.md", "title": "Manage IPv4 usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/edge-function-invocations/index.md", "title": "Manage Edge Function Invocations usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/ipv4/index.md", "title": "Manage IPv4 usage"}
 ---
 
 # 
@@ -59,7 +59,7 @@ Data pushed to clients via Supabase Realtime for subscribed events.
 
 Data sent to the client when using the shared connection pooler (Supavisor) to access your database. When using the shared connection pooler, we do not count database egress, as this would otherwise count double (Database -> Shared Pooler + Shared Pooler -> Client).
 
-**Example:** You are using our [shared connection pooler](/docs/guides/database/connecting-to-postgres#shared-pooler) and you query a list of invoices in your backend. The data returned from that query is contributing to Shared Pooler Egress.
+**Example:** You are using our [shared connection pooler](../../../database/connecting-to-postgres/index.md#shared-pooler) and you query a list of invoices in your backend. The data returned from that query is contributing to Shared Pooler Egress.
 
 ### Log Drain Egress[#](#log-drain-egress)
 
@@ -69,7 +69,7 @@ Data pushed to the connected log drain.
 
 ### Cached Egress[#](#cached-egress)
 
-Cached and uncached egress have independent quotas and independent pricing. Cached egress is egress that is served from our CDN via cache hits. Cached egress is typically incurred for storage through our [Smart CDN](/docs/guides/storage/cdn/smart-cdn).
+Cached and uncached egress have independent quotas and independent pricing. Cached egress is egress that is served from our CDN via cache hits. Cached egress is typically incurred for storage through our [Smart CDN](../../../storage/cdn/smart-cdn/index.md).
 
 ## How charges are calculated[#](#how-charges-are-calculated)
 
@@ -252,10 +252,10 @@ In the [Logs Explorer](/dashboard/project/_/logs/explorer) you can access Edge L
 *   Reduce the number of queries or calls by optimizing client code or using caches
 *   For update or insert queries, configure your ORM or queries to not return the entire row if not needed
 *   When running manual backups through Supavisor, remove unneeded tables and/or reduce the frequency
-*   Refer to the [Storage Optimizations guide](/docs/guides/storage/production/scaling#egress) for tips on reducing Storage Egress
+*   Refer to the [Storage Optimizations guide](../../../storage/production/scaling/index.md#egress) for tips on reducing Storage Egress
 
 ## Exceeding Quotas[#](#exceeding-quotas)
 
-If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
+If you are on a paid plan and have [Spend Cap](../../cost-control/index.md#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
-When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](../../cost-control/index.md#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](../../billing-faq/index.md#fair-use-policy).

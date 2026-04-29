@@ -10,8 +10,8 @@ content_hash: "658f5093a55cf63beb3602c9f9ad4519bb1a96048607e8f8d7c0056ece1c5583"
 menu_path: ["Get Started with Drizzle and Nile"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../nile-existing/index.md", "title": "Get Started with Drizzle and Nile in existing project"}
-nav_next: {"path": "../op-sqlite-existing/index.md", "title": "Get Started with Drizzle and OP-SQLite in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/nile-existing/index.md", "title": "Get Started with Drizzle and Nile in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/op-sqlite-existing/index.md", "title": "Get Started with Drizzle and OP-SQLite in existing project"}
 ---
 
 ## Get Started with Drizzle and Nile

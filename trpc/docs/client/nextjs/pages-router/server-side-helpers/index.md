@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:45.808Z"
 content_hash: "70a7cbab95893ea9990f44aab2cb1af43b80d743cfefe18b27ea62f222e4dc54"
 menu_path: ["Server-Side Helpers"]
 section_path: []
-nav_prev: {"path": "../aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
-nav_next: {"path": "../setup/index.md", "title": "Set up with Next.js Pages Router"}
+nav_prev: {"path": "trpc/docs/client/nextjs/pages-router/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_next: {"path": "trpc/docs/client/nextjs/pages-router/setup/index.md", "title": "Set up with Next.js Pages Router"}
 ---
 
 The server-side helpers provide you with a set of helper functions that you can use to prefetch queries on the server. This is useful for SSG, but also for SSR if you opt not to use `ssr: true`.

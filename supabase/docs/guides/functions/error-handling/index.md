@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:33.203Z"
 content_hash: "e22a58dc63ad6fc7e415c71bd95d9ab27113acebe64ef295475d12ab1bf83d27"
 menu_path: ["Edge Functions","Edge Functions","Development","Development","Error Handling","Error Handling"]
 section_path: ["Edge Functions","Edge Functions","Development","Development","Error Handling","Error Handling"]
-nav_prev: {"path": "../ephemeral-storage/index.md", "title": "File Storage"}
-nav_next: {"path": "../examples/amazon-bedrock-image-generator/index.md", "title": "Generate Images with Amazon Bedrock"}
+nav_prev: {"path": "supabase/docs/guides/functions/ephemeral-storage/index.md", "title": "File Storage"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/amazon-bedrock-image-generator/index.md", "title": "Generate Images with Amazon Bedrock"}
 ---
 
 # 
@@ -63,4 +63,4 @@ You can see the production error logs in the Logs tab of your Supabase Dashboard
 
 ![Function invocations.](/docs/img/guides/functions/function-logs.png)
 
-For more information on Logging, check out [this guide](/docs/guides/functions/logging).
+For more information on Logging, check out [this guide](../logging/index.md).

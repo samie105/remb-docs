@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:51.026Z"
 content_hash: "aef62c3d3abc1f99d9d93f4da8b4b952d0a46989b03bb971bd64b06cfa9a1d56"
 menu_path: ["bun create"]
 section_path: []
-nav_prev: {"path": "../../streams/index.md", "title": "Streams"}
-nav_next: {"path": "../init/index.md", "title": "bun init"}
+nav_prev: {"path": "bun/docs/runtime/streams/index.md", "title": "Streams"}
+nav_next: {"path": "bun/docs/runtime/templating/init/index.md", "title": "bun init"}
 ---
 
 # Assuming bun detected imports to @/components/ui/accordion and @/components/ui/button
@@ -268,10 +268,10 @@ bun init
 
 Previous
 
-](/docs/runtime/templating/init)[
+](../init/index.md)[
 
 Bun Runtime
 
 Next
 
-](/docs/runtime)
+](../../index.md)

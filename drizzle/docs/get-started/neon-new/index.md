@@ -10,8 +10,8 @@ content_hash: "fbe55b7c3a791712b3527d69288f47a14f0e5a210b9e7d94e8a5b91e35da7333"
 menu_path: ["Get Started with Drizzle and Neon"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../neon-existing/index.md", "title": "Get Started with Drizzle and Neon in existing project"}
-nav_next: {"path": "../nile-existing/index.md", "title": "Get Started with Drizzle and Nile in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/neon-existing/index.md", "title": "Get Started with Drizzle and Neon in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/nile-existing/index.md", "title": "Get Started with Drizzle and Nile in existing project"}
 ---
 
 ## Get Started with Drizzle and Neon

@@ -10,8 +10,8 @@ content_hash: "5f1d97bc21f6304aa98433a4ad2109bf4b0613e8f3b1dbad9847b2750b779e2a"
 menu_path: ["filter: drop-shadow()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../filter-contrast/index.md", "title": "filter: contrast()"}
-nav_next: {"path": "../filter-grayscale/index.md", "title": "filter: grayscale()"}
+nav_prev: {"path": "tailwind/docs/filter-contrast/index.md", "title": "filter: contrast()"}
+nav_next: {"path": "tailwind/docs/filter-grayscale/index.md", "title": "filter: grayscale()"}
 ---
 
 Utilities for applying drop-shadow filters to an element.

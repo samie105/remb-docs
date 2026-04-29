@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:16.233Z"
 content_hash: "c08d0f56cab09b96819e47058a22d176fe9f7ab1a6c3c21cd5cd67bae2776051"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Text Deduplication","Text Deduplication"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Text Deduplication","Text Deduplication"]
-nav_prev: {"path": "../hello-world/index.md", "title": "Creating and managing collections"}
-nav_next: {"path": "../../rag-with-permissions/index.md", "title": "RAG with Permissions"}
+nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/hello-world/index.md", "title": "Creating and managing collections"}
+nav_next: {"path": "supabase/docs/guides/ai/rag-with-permissions/index.md", "title": "RAG with Permissions"}
 ---
 
 # 
@@ -82,8 +82,8 @@ You can view the inserted items in the [Table Editor](/dashboard/project/_/edito
 
 If you have your own infrastructure for deploying Python apps, you can continue to use `vecs` as described in this guide.
 
-Alternatively if you would like to quickly deploy using Supabase, check out our guide on using the [Hugging Face Inference API](/docs/guides/ai/hugging-face) in Edge Functions using TypeScript.
+Alternatively if you would like to quickly deploy using Supabase, check out our guide on using the [Hugging Face Inference API](../../hugging-face/index.md) in Edge Functions using TypeScript.
 
 ## Next steps[#](#next-steps)
 
-You can now start building your own applications with Vecs. Check our [examples](/docs/guides/ai#examples) for ideas.
+You can now start building your own applications with Vecs. Check our [examples](../../index.md#examples) for ideas.

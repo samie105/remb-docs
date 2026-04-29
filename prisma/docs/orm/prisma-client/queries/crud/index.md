@@ -11,8 +11,8 @@ menu_path: ["CRUD"]
 section_path: []
 tab_variants: ["PostgreSQL","MySQL"]
 content_language: "en"
-nav_prev: {"path": "../aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
-nav_next: {"path": "../relation-queries/index.md", "title": "CRUD"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/aggregation-grouping-summarizing/index.md", "title": "Aggregation, grouping, and summarizing"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/relation-queries/index.md", "title": "CRUD"}
 ---
 
 This page describes how to perform CRUD operations with Prisma Client:

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:50.392Z"
 content_hash: "f407478ddfd3711d8fd390159f7ac82296d3af5b6c1ed3b7784b89c5720c585f"
 menu_path: ["Globals"]
 section_path: []
-nav_prev: {"path": "../glob/index.md", "title": "Glob"}
-nav_next: {"path": "../hashing/index.md", "title": "Hashing"}
+nav_prev: {"path": "bun/docs/runtime/glob/index.md", "title": "Glob"}
+nav_next: {"path": "bun/docs/runtime/hashing/index.md", "title": "Hashing"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../hashing/index.md", "title": "Hashing"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Bun implements the following globals.
 
@@ -65,7 +65,7 @@ Web
 
 Node.js
 
-See [Node.js > `Buffer`](/docs/runtime/nodejs-compat#node-buffer)
+See [Node.js > `Buffer`](../nodejs-compat/index.md#node-buffer)
 
 `Bun`
 
@@ -165,7 +165,7 @@ Web
 
 Node.js
 
-See [Node.js > `global`](/docs/runtime/nodejs-compat#global).
+See [Node.js > `global`](../nodejs-compat/index.md#global).
 
 [`globalThis`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis)
 
@@ -177,7 +177,7 @@ Aliases to `global`
 
 Web
 
-[`HTMLRewriter`](/docs/runtime/html-rewriter)
+[`HTMLRewriter`](../html-rewriter/index.md)
 
 Cloudflare
 
@@ -201,7 +201,7 @@ Web
 
 Node.js
 
-See [Node.js > `process`](/docs/runtime/nodejs-compat#node-process)
+See [Node.js > `process`](../nodejs-compat/index.md#node-process)
 
 [`prompt`](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
 
@@ -325,10 +325,10 @@ Utils
 
 Previous
 
-](/docs/runtime/utils)[
+](../utils/index.md)[
 
 Bun APIs
 
 Next
 
-](/docs/runtime/bun-apis)
+](../bun-apis/index.md)

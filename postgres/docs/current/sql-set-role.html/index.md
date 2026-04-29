@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:53.659Z"
 content_hash: "7e4fa93682a3f372e8f9b6ad36965d8d1c222d06fa5b0ee4def149f3feab1429"
 menu_path: ["PostgreSQL: Documentation: 18: SET ROLE"]
 section_path: []
-nav_prev: {"path": "../sql-reindex.html/index.md", "title": "PostgreSQL: Documentation: 18: REINDEX"}
-nav_next: {"path": "../sql-set-session-authorization.html/index.md", "title": "PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"}
+nav_prev: {"path": "postgres/docs/current/sql-reindex.html/index.md", "title": "PostgreSQL: Documentation: 18: REINDEX"}
+nav_next: {"path": "postgres/docs/current/sql-set-session-authorization.html/index.md", "title": "PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"}
 ---
 
 SET ROLE — set the current user identifier of the current session

@@ -11,8 +11,8 @@ menu_path: ["redirects"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../reactStrictMode/index.md", "title": "reactStrictMode"}
-nav_next: {"path": "../rewrites/index.md", "title": "rewrites"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/reactStrictMode/index.md", "title": "reactStrictMode"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/rewrites/index.md", "title": "rewrites"}
 ---
 
 # redirects
@@ -54,7 +54,7 @@ module.exports = {
 
 Redirects are checked before the filesystem which includes pages and `/public` files.
 
-When using the Pages Router, redirects are not applied to client-side routing (`Link`, `router.push`) unless [Proxy](/docs/app/api-reference/file-conventions/proxy) is present and matches the path.
+When using the Pages Router, redirects are not applied to client-side routing (`Link`, `router.push`) unless [Proxy](../../../../../app/api-reference/file-conventions/proxy/index.md) is present and matches the path.
 
 When a redirect is applied, any query values provided in the request will be passed through to the redirect destination. For example, see the following redirect configuration:
 
@@ -253,7 +253,7 @@ module.exports = {
 
 ### Redirects with basePath support[](#redirects-with-basepath-support)
 
-When leveraging [`basePath` support](/docs/app/api-reference/config/next-config-js/basePath) with redirects each `source` and `destination` is automatically prefixed with the `basePath` unless you add `basePath: false` to the redirect:
+When leveraging [`basePath` support](../../../../../app/api-reference/config/next-config-js/basePath/index.md) with redirects each `source` and `destination` is automatically prefixed with the `basePath` unless you add `basePath: false` to the redirect:
 
 next.config.js
 
@@ -337,8 +337,8 @@ In some rare cases, you might need to assign a custom status code for older HTTP
 
 ## Other Redirects[](#other-redirects)
 
--   Inside [API Routes](/docs/pages/building-your-application/routing/api-routes) and [Route Handlers](/docs/app/api-reference/file-conventions/route), you can redirect based on the incoming request.
--   Inside [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) and [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), you can redirect specific pages at request-time.
+-   Inside [API Routes](../../../../building-your-application/routing/api-routes/index.md) and [Route Handlers](../../../../../app/api-reference/file-conventions/route/index.md), you can redirect based on the incoming request.
+-   Inside [`getStaticProps`](../../../../building-your-application/data-fetching/get-static-props/index.md) and [`getServerSideProps`](../../../../building-your-application/data-fetching/get-server-side-props/index.md), you can redirect specific pages at request-time.
 
 ## Version History[](#version-history)
 

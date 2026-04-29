@@ -10,8 +10,8 @@ content_hash: "15baa9661f0a300191e16c32df774d7756385c23eca53e80fa85e5b28b127c3a"
 menu_path: ["deno.json and package.json"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../modules/index.md", "title": "Modules and dependencies"}
-nav_next: {"path": "../web_dev/index.md", "title": "Web development"}
+nav_prev: {"path": "deno/runtime/fundamentals/modules/index.md", "title": "Modules and dependencies"}
+nav_next: {"path": "deno/runtime/fundamentals/web_dev/index.md", "title": "Web development"}
 ---
 
 **On this page**
@@ -57,7 +57,7 @@ Deno will automatically detect a `deno.json` or `deno.jsonc` configuration file 
 
 Deno also supports a `package.json` file for compatibility with Node.js projects. If you have a Node.js project, it is not necessary to create a `deno.json` file. Deno will use the `package.json` file to configure the project.
 
-If both a `deno.json` and `package.json` file are present in the same directory, Deno will understand dependencies specified in both `deno.json` and `package.json`; and use the `deno.json` file for Deno-specific configurations. Read more about [Node compatibility in Deno](/runtime/fundamentals/node/#node-compatibility).
+If both a `deno.json` and `package.json` file are present in the same directory, Deno will understand dependencies specified in both `deno.json` and `package.json`; and use the `deno.json` file for Deno-specific configurations. Read more about [Node compatibility in Deno](../node/index.md#node-compatibility).
 
 ## Dependencies
 
@@ -110,7 +110,7 @@ const app = express();
 
 Note that this will require you to run `deno install`.
 
-Read more about [module imports and dependencies](/runtime/fundamentals/modules/)
+Read more about [module imports and dependencies](../modules/index.md)
 
 ### Custom path mappings
 
@@ -289,11 +289,11 @@ This configuration will:
 -   format files in the `src/` directory,
 -   exclude files in the `src/testdata/` directory and any TypeScript files in the `src/fixtures/` directory.
 
-Read more about [formatting your code with Deno](/runtime/fundamentals/linting_and_formatting/).
+Read more about [formatting your code with Deno](../linting_and_formatting/index.md).
 
 ## Lockfile
 
-The `lock` field in the `deno.json` file is used to specify configuration of the lock file that Deno uses to [ensure the integrity of your dependencies](/runtime/fundamentals/modules/#integrity-checking-and-lock-files). A lock file records the exact versions and integrity hashes of the modules your project depends on, ensuring that the same versions are used every time the project is run, even if the dependencies are updated or changed remotely.
+The `lock` field in the `deno.json` file is used to specify configuration of the lock file that Deno uses to [ensure the integrity of your dependencies](../modules/index.md#integrity-checking-and-lock-files). A lock file records the exact versions and integrity hashes of the modules your project depends on, ensuring that the same versions are used every time the project is run, even if the dependencies are updated or changed remotely.
 
 deno.json
 
@@ -358,7 +358,7 @@ Info
 
 Deno recommends the default TypeScript configuration. This will help when sharing code.
 
-See also [Configuring TypeScript in Deno](/runtime/reference/ts_config_migration/).
+See also [Configuring TypeScript in Deno](../../reference/ts_config_migration/index.md).
 
 ## Unstable features
 
@@ -374,7 +374,7 @@ deno.json
 }
 ```
 
-[Learn more](/runtime/reference/cli/unstable_flags/).
+[Learn more](../../reference/cli/unstable_flags/index.md).
 
 ## include and exclude
 
@@ -533,13 +533,13 @@ import * as module_2 from "@example/my-package/module2";
 
 ## Permissions
 
-Deno 2.5+ supports storing [permission](/runtime/fundamentals/security/#permissions) sets in the config file.
+Deno 2.5+ supports storing [permission](../security/index.md#permissions) sets in the config file.
 
 ### Named permissions
 
 Permissions can be defined as key-value pairs under arbitrarily-named permission sets under the `"permissions"` key. Within each set,
 
--   the key is the name of a [permission](/runtime/fundamentals/security/#permissions) that would follow `--allow-` or `--deny-` in the CLI invocation (i.e. `read`, `write`, `net`, `env`, `sys`, `run`, `ffi`, `import`)
+-   the key is the name of a [permission](../security/index.md#permissions) that would follow `--allow-` or `--deny-` in the CLI invocation (i.e. `read`, `write`, `net`, `env`, `sys`, `run`, `ffi`, `import`)
 -   the value is a boolean (`true` / `false` correspond to allow / deny), an array of strings representing paths, domains etc., or an object with `allow`, `deny`, and/or `ignore` boolean key-value pairs.
 
 ```jsonc

@@ -10,8 +10,8 @@ content_hash: "ac8f9f23b348a7f9b6ec3a4f8f4c848890cac31d5db382e935f525c56bca4023"
 menu_path: ["crypto - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../constants/index.md", "title": "constants - Node documentation"}
-nav_next: {"path": "../dgram/index.md", "title": "dgram - Node documentation"}
+nav_prev: {"path": "deno/api/node/constants/index.md", "title": "constants - Node documentation"}
+nav_next: {"path": "deno/api/node/dgram/index.md", "title": "dgram - Node documentation"}
 ---
 
 ### Usage in Deno

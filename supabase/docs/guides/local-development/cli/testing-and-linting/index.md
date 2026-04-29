@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:31.079Z"
 content_hash: "5cbedc2a6bef21526e1fb2beae6d96f8370fb0004e4909a8fbb2db38b0e000ca"
 menu_path: ["Testing and linting"]
 section_path: []
-nav_prev: {"path": "../getting-started/index.md", "title": "Supabase CLI"}
-nav_next: {"path": "../../customizing-email-templates/index.md", "title": "Customizing email templates"}
+nav_prev: {"path": "supabase/docs/guides/local-development/cli/getting-started/index.md", "title": "Supabase CLI"}
+nav_next: {"path": "supabase/docs/guides/local-development/customizing-email-templates/index.md", "title": "Customizing email templates"}
 ---
 
 # 
@@ -33,7 +33,7 @@ The Supabase CLI provides Postgres linting using the `supabase test db` command.
 1supabase test db --help2Tests local database with pgTAP34Usage:5  supabase test db [flags]
 ```
 
-This is powered by the [pgTAP](/docs/guides/database/extensions/pgtap) extension. You can find a full guide to writing and running tests in the [Testing your database](/docs/guides/database/testing) section.
+This is powered by the [pgTAP](../../../database/extensions/pgtap/index.md) extension. You can find a full guide to writing and running tests in the [Testing your database](../../../database/testing/index.md) section.
 
 ### Test helpers[#](#test-helpers)
 
@@ -45,7 +45,7 @@ Use our GitHub Action to [automate your database tests](/docs/guides/deployment/
 
 ## Testing your Edge Functions[#](#testing-your-edge-functions)
 
-Edge Functions are powered by Deno, which provides a [native set of testing tools](https://deno.land/manual@v1.35.3/basics/testing). We extend this functionality in the Supabase CLI. You can find a detailed guide in the [Edge Functions section](/docs/guides/functions/unit-test).
+Edge Functions are powered by Deno, which provides a [native set of testing tools](https://deno.land/manual@v1.35.3/basics/testing). We extend this functionality in the Supabase CLI. You can find a detailed guide in the [Edge Functions section](../../../functions/unit-test/index.md).
 
 ## Testing Auth emails[#](#testing-auth-emails)
 

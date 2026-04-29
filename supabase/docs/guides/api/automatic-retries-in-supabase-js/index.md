@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:58.733Z"
 content_hash: "2c7eff5a282043a08b50730876b1843b9bff5c4ac5c5bc125b0c6185bddd42a4"
 menu_path: ["How to do automatic retries with supabase-js"]
 section_path: []
-nav_prev: {"path": "../api-keys/index.md", "title": "Understanding API keys"}
-nav_next: {"path": "../creating-routes/index.md", "title": "Creating API Routes"}
+nav_prev: {"path": "supabase/docs/guides/api/api-keys/index.md", "title": "Understanding API keys"}
+nav_next: {"path": "supabase/docs/guides/api/creating-routes/index.md", "title": "Creating API Routes"}
 ---
 
 # 

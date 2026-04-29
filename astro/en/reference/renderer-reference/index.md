@@ -9,28 +9,28 @@ last_crawled_at: "2026-04-18T16:47:58.950Z"
 content_hash: "d53e43690339f51a303c0cbb9426d82c7af331509ebe56a6ad17abeac1888180"
 menu_path: ["Astro Renderer API"]
 section_path: []
-nav_prev: {"path": "../adapter-reference/index.md", "title": "Astro Adapter API"}
-nav_next: {"path": "../content-loader-reference/index.md", "title": "Astro Content Loader API"}
+nav_prev: {"path": "astro/en/reference/adapter-reference/index.md", "title": "Astro Adapter API"}
+nav_next: {"path": "astro/en/reference/content-loader-reference/index.md", "title": "Astro Content Loader API"}
 ---
 
 # Astro Renderer API
 
-Astro is designed to support any UI framework. This ability is powered by renderers, which are [integrations](/en/reference/integrations-reference/). See the [front-end frameworks guide](/en/guides/framework-components/) to learn how to use UI components from different frameworks in Astro.
+Astro is designed to support any UI framework. This ability is powered by renderers, which are [integrations](../integrations-reference/index.md). See the [front-end frameworks guide](../../guides/framework-components/index.md) to learn how to use UI components from different frameworks in Astro.
 
 ## What is a renderer?
 
 [Section titled “What is a renderer?”](#what-is-a-renderer)
 
-A renderer is a special kind of [integration](/en/reference/integrations-reference/) that tells Astro how to detect and render component syntaxes it does not handle natively, such as [UI framework components](/en/guides/framework-components/). A renderer consists of two parts:
+A renderer is a special kind of [integration](../integrations-reference/index.md) that tells Astro how to detect and render component syntaxes it does not handle natively, such as [UI framework components](../../guides/framework-components/index.md). A renderer consists of two parts:
 
 *   a server module imported during development and production builds to render components to HTML.
-*   an optional client module imported in the browser to hydrate components with [client directives](/en/reference/directives-reference/#client-directives).
+*   an optional client module imported in the browser to hydrate components with [client directives](../directives-reference/index.md#client-directives).
 
 ## Building a renderer
 
 [Section titled “Building a renderer”](#building-a-renderer)
 
-When you need to add support for a new component syntax in Astro, create an integration and call `addRenderer()` in the [`astro:config:setup`](/en/reference/integrations-reference/#astroconfigsetup) hook. This allows you to define the [server entrypoint](#building-a-server-entrypoint) that Astro should use for rendering components. Optionally, you can also define the [client entrypoint](#building-a-client-entrypoint) used for hydration.
+When you need to add support for a new component syntax in Astro, create an integration and call `addRenderer()` in the [`astro:config:setup`](../integrations-reference/index.md#astroconfigsetup) hook. This allows you to define the [server entrypoint](#building-a-server-entrypoint) that Astro should use for rendering components. Optionally, you can also define the [client entrypoint](#building-a-client-entrypoint) used for hydration.
 
 The following example shows how to register a renderer in an Astro integration:
 
@@ -59,7 +59,7 @@ export default renderer;
 
 [Section titled “Building a client entrypoint”](#building-a-client-entrypoint)
 
-When your renderer supports [client directives](/en/reference/directives-reference/#client-directives), create a client entrypoint that defines how to hydrate components in the browser. The client module must default-export a function that receives the island element and returns an async hydrator function.
+When your renderer supports [client directives](../directives-reference/index.md#client-directives), create a client entrypoint that defines how to hydrate components in the browser. The client module must default-export a function that receives the island element and returns an async hydrator function.
 
 Astro dispatches a custom `astro:unmount` event on the island’s root element each time an island is removed from the page. You can listen for this event in your client entrypoint to clean up any mounted application state.
 
@@ -104,7 +104,7 @@ Defines the component name, used for error messages and debugging.
 
 **Type:** `'load' | 'idle' | 'visible' | 'media' | 'only'`
 
-Defines the [client directive](/en/reference/directives-reference/#client-directives) used on the component. If no value is provided, the component will not be hydrated on the client.
+Defines the [client directive](../directives-reference/index.md#client-directives) used on the component. If no value is provided, the component will not be hydrated on the client.
 
 Renderers can use this value to conditionally include client-side hydration state. For example, a renderer can skip serializing transfer state for components that will not be hydrated:
 
@@ -168,7 +168,7 @@ Indicates that Astro supports the static slot optimization for this component. R
 
 **Type:** `{ name: string; clientEntrypoint?: string | URL; serverEntrypoint: string | URL; }`
 
-Describes a [component renderer added by an integration](/en/reference/integrations-reference/#addrenderer-option).
+Describes a [component renderer added by an integration](../integrations-reference/index.md#addrenderer-option).
 
 #### `AstroRenderer.name`
 
@@ -268,4 +268,4 @@ Indicates whether the renderer supports Astro’s static slot optimization. When
 
 Returns an HTML string to inject once per page before the first hydrated component handled by this renderer. This is useful for renderers that need page-level hydration setup.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

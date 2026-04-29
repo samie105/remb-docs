@@ -11,8 +11,8 @@ menu_path: ["Unit testing"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../integration-testing/index.md", "title": "Integration testing"}
-nav_next: {"path": "../../type-safety/index.md", "title": "Type safety Overview"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/testing/integration-testing/index.md", "title": "Integration testing"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/index.md", "title": "Type safety Overview"}
 ---
 
 Testing

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:31.040Z"
 content_hash: "ee9273cba2457d78bc2dcd8b93d2ff7e44bd02c8441abed64f297d39d413282f"
 menu_path: ["Set per-socket contextual data on a WebSocket"]
 section_path: []
-nav_prev: {"path": "../compression/index.md", "title": "Enable compression for WebSocket messages"}
-nav_next: {"path": "../pubsub/index.md", "title": "Build a publish-subscribe WebSocket server"}
+nav_prev: {"path": "bun/docs/guides/websocket/compression/index.md", "title": "Enable compression for WebSocket messages"}
+nav_next: {"path": "bun/docs/guides/websocket/pubsub/index.md", "title": "Build a publish-subscribe WebSocket server"}
 ---
 
 When building a WebSocket server, it’s typically necessary to store some identifying information or context associated with each connected client. With [Bun.serve()](../../../runtime/http/websockets/index.md#contextual-data), this “contextual data” is set when the connection is initially upgraded by passing a `data` parameter in the `server.upgrade()` call.

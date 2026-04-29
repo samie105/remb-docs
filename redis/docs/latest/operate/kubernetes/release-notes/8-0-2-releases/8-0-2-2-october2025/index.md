@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:11.982Z"
 content_hash: "f529cd98167861942af8ccd49a66728b9faa3c5c6c0ebae789978020d4e14bb2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 8.0.2 release notes","→","Redis Enterprise for Kubernetes 8.0.2 release notes","→\n      \n        Redis Enterprise for Kubernetes 8.0.2-2 (October 2025) release notes","→","Redis Enterprise for Kubernetes 8.0.2-2 (October 2025) release notes"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise Software for Kubernetes release notes","→","Redis Enterprise Software for Kubernetes release notes","→\n      \n        Redis Enterprise for Kubernetes 8.0.2 release notes","→","Redis Enterprise for Kubernetes 8.0.2 release notes","→\n      \n        Redis Enterprise for Kubernetes 8.0.2-2 (October 2025) release notes","→","Redis Enterprise for Kubernetes 8.0.2-2 (October 2025) release notes"]
-nav_prev: {"path": "../../7-8-4-releases/7-8-4-9-mar25/index.md", "title": "Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes"}
-nav_next: {"path": "../8-0-2-6-december2025/index.md", "title": "Redis Enterprise for Kubernetes 8.0.2-6 (December 2025) release notes"}
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/release-notes/7-8-4-releases/7-8-4-9-mar25/index.md", "title": "Redis Enterprise for Kubernetes 7.8.4-9 (March 2025) release notes"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/release-notes/8-0-2-releases/8-0-2-6-december2025/index.md", "title": "Redis Enterprise for Kubernetes 8.0.2-6 (December 2025) release notes"}
 ---
 
 # Redis Enterprise for Kubernetes 8.0.2-2 (October 2025) release notes
@@ -55,7 +55,7 @@ For more information about Redis Software 8.0.2-17, see the [Redis Software 8.0.
 *   Enhanced ACLs
 *   New hash and streams commands
 
-For more details, see [What's new in Redis 8.0](/docs/latest/develop/whats-new/8-0/) and [What's new in Redis 8.2](/docs/latest/develop/whats-new/8-2/), and also the [Redis Open Source 8.0](/docs/latest/operate/oss_and_stack/stack-with-enterprise/release-notes/redisce/redisos-8.0-release-notes/) and [Redis Open Source 8.2](/docs/latest/operate/oss_and_stack/stack-with-enterprise/release-notes/redisce/redisos-8.2-release-notes/) release notes.
+For more details, see [What's new in Redis 8.0](../../../../../develop/whats-new/8-0/index.md) and [What's new in Redis 8.2](../../../../../develop/whats-new/8-2/index.md), and also the [Redis Open Source 8.0](/docs/latest/operate/oss_and_stack/stack-with-enterprise/release-notes/redisce/redisos-8.0-release-notes/) and [Redis Open Source 8.2](/docs/latest/operate/oss_and_stack/stack-with-enterprise/release-notes/redisce/redisos-8.2-release-notes/) release notes.
 
 ### Resolved issues
 

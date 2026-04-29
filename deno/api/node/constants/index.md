@@ -10,8 +10,8 @@ content_hash: "79e18e0272bed74d216619111a0afb61eff441f9ae7da600d5afbc18fa2b5c98"
 menu_path: ["constants - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../console/index.md", "title": "console - Node documentation"}
-nav_next: {"path": "../crypto/index.md", "title": "crypto - Node documentation"}
+nav_prev: {"path": "deno/api/node/console/index.md", "title": "console - Node documentation"}
+nav_next: {"path": "deno/api/node/crypto/index.md", "title": "crypto - Node documentation"}
 ---
 
 [Skip to main content](#content)

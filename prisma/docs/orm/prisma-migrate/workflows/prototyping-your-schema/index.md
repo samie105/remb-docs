@@ -11,8 +11,8 @@ menu_path: ["Prototyping your schema"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../patching-and-hotfixing/index.md", "title": "Patching & hotfixing"}
-nav_next: {"path": "../seeding/index.md", "title": "Seeding"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/patching-and-hotfixing/index.md", "title": "Patching & hotfixing"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/seeding/index.md", "title": "Seeding"}
 ---
 
 Workflows

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:06.315Z"
 content_hash: "bffcf039dca66f16b9b2a1c2df5d406cd91cf734951cc6a32debde8350b3701b"
 menu_path: ["Generate a UUID"]
 section_path: []
-nav_prev: {"path": "../import-meta-path/index.md", "title": "Get the absolute path of the current file"}
-nav_next: {"path": "../main/index.md", "title": "Get the absolute path to the current entrypoint"}
+nav_prev: {"path": "bun/docs/guides/util/import-meta-path/index.md", "title": "Get the absolute path of the current file"}
+nav_next: {"path": "bun/docs/guides/util/main/index.md", "title": "Get the absolute path to the current entrypoint"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../main/index.md", "title": "Get the absolute path to the cu
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use `crypto.randomUUID()` to generate a UUID v4. This API works in Bun, Node.js, and browsers. It requires no dependencies.
 
@@ -53,7 +53,7 @@ Bun.randomUUIDv7();
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -65,10 +65,10 @@ Hash a password
 
 Previous
 
-](/docs/guides/util/hash-a-password)[
+](../hash-a-password/index.md)[
 
 Encode and decode base64 strings
 
 Next
 
-](/docs/guides/util/base64)
+](../base64/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:04.344Z"
 content_hash: "223aee1d026d9b6335a3d2065228639e62fd671831cf003ab84148351a22ecf9"
 menu_path: ["Platform","Platform","Billing","Billing","About billing on Supabase","About billing on Supabase"]
 section_path: ["Platform","Platform","Billing","Billing","About billing on Supabase","About billing on Supabase"]
-nav_prev: {"path": "../billing-faq/index.md", "title": "Billing FAQ"}
-nav_next: {"path": "../clone-project/index.md", "title": "Restore to a new project"}
+nav_prev: {"path": "supabase/docs/guides/platform/billing-faq/index.md", "title": "Billing FAQ"}
+nav_next: {"path": "supabase/docs/guides/platform/clone-project/index.md", "title": "Restore to a new project"}
 ---
 
 # 
@@ -29,13 +29,13 @@ The Free Plan helps you get started and explore the platform. You are granted tw
 
 ### Paid plans[#](#paid-plans)
 
-Upgrading your organization to a paid plan provides additional features, and you receive a higher [usage quota](/docs/guides/platform/billing-on-supabase#variable-usage-fees-and-quotas). You unlock the benefits of the paid plan for all projects within your organization - for example, no projects in your Pro Plan organization will be paused.
+Upgrading your organization to a paid plan provides additional features, and you receive a higher [usage quota](index.md#variable-usage-fees-and-quotas). You unlock the benefits of the paid plan for all projects within your organization - for example, no projects in your Pro Plan organization will be paused.
 
 ## Organization-based billing[#](#organization-based-billing)
 
 Supabase bills separately for each organization. Each organization has its own subscription, including a unique subscription plan (Free, Pro, Team, or Enterprise), payment method, billing cycle, and invoices.
 
-Different plans cannot be mixed within a single organization. For example, you cannot have both a Pro Plan project and a Free Plan project in the same organization. To have projects on different plans, you must create separate organizations. See [Project Transfers](/docs/guides/platform/project-transfer) if you need to move a project to a different organization.
+Different plans cannot be mixed within a single organization. For example, you cannot have both a Pro Plan project and a Free Plan project in the same organization. To have projects on different plans, you must create separate organizations. See [Project Transfers](../project-transfer/index.md) if you need to move a project to a different organization.
 
 ![Organization-based billing](/docs/img/guides/platform/billing-overview--light.png)
 
@@ -43,9 +43,9 @@ Different plans cannot be mixed within a single organization. For example, you c
 
 Monthly costs for paid plans include a fixed subscription fee based on your chosen plan and variable usage fees. To learn more about billing and cost management, refer to the following resources.
 
-*   [Your monthly invoice](/docs/guides/platform/your-monthly-invoice) - For a detailed breakdown of what a monthly invoice includes
-*   [Manage your usage](/docs/guides/platform/manage-your-usage) - For details on how the different usage items are billed, and how to optimize usage and reduce costs
-*   [Control your costs](/docs/guides/platform/cost-control) - For details on how you can control your costs in case unexpected high usage occurs
+*   [Your monthly invoice](../your-monthly-invoice/index.md) - For a detailed breakdown of what a monthly invoice includes
+*   [Manage your usage](../manage-your-usage/index.md) - For details on how the different usage items are billed, and how to optimize usage and reduce costs
+*   [Control your costs](../cost-control/index.md) - For details on how you can control your costs in case unexpected high usage occurs
 
 ### Compute costs for projects[#](#compute-costs-for-projects)
 
@@ -53,13 +53,13 @@ An organization can have multiple projects. Each project includes a dedicated Po
 
 Each project you launch increases your monthly Compute costs.
 
-Read more about [Compute costs](/docs/guides/platform/manage-your-usage/compute).
+Read more about [Compute costs](../manage-your-usage/compute/index.md).
 
 ## Variable Usage Fees and Quotas[#](#variable-usage-fees-and-quotas)
 
-Each subscription plan includes a built-in quota for some selected usage items, such as [Egress](/docs/guides/platform/manage-your-usage/egress), [Storage Size](/docs/guides/platform/manage-your-usage/storage-size), or [Edge Function Invocations](/docs/guides/platform/manage-your-usage/edge-function-invocations). This quota represents your free usage allowance. If you stay within it, you incur no extra charges for these items. Only usage beyond the quota is billed as overage.
+Each subscription plan includes a built-in quota for some selected usage items, such as [Egress](../manage-your-usage/egress/index.md), [Storage Size](../manage-your-usage/storage-size/index.md), or [Edge Function Invocations](../manage-your-usage/edge-function-invocations/index.md). This quota represents your free usage allowance. If you stay within it, you incur no extra charges for these items. Only usage beyond the quota is billed as overage.
 
-For usage items without a quota, such as [Compute](/docs/guides/platform/manage-your-usage/compute) or [Custom Domains](/docs/guides/platform/manage-your-usage/custom-domains), you are charged for your entire usage.
+For usage items without a quota, such as [Compute](../manage-your-usage/compute/index.md) or [Custom Domains](../manage-your-usage/custom-domains/index.md), you are charged for your entire usage.
 
 The quota is applied to your entire organization, independent of how many projects you launch within that organization. For billing purposes, we sum the usage across all projects in a monthly invoice.
 
@@ -151,17 +151,17 @@ Realtime Peak Connections
 
 Custom
 
-You can find a detailed breakdown of all usage items and how they are billed on the [Manage your usage](/docs/guides/platform/manage-your-usage) page.
+You can find a detailed breakdown of all usage items and how they are billed on the [Manage your usage](../manage-your-usage/index.md) page.
 
 ## Project add-ons[#](#project-add-ons)
 
 While your subscription plan applies to your entire organization and is charged only once, you can enhance individual projects by opting into various add-ons.
 
-*   [Compute](/docs/guides/platform/compute-and-disk#compute) to scale your database up to 64 cores and 256 GB RAM
-*   [Read Replicas](/docs/guides/platform/read-replicas) to scale read operations and provide resiliency
-*   [Disk](/docs/guides/platform/compute-and-disk#disk) to provision extra IOPS/throughput or use a high-performance SSD
-*   [Log Drains](/docs/guides/telemetry/log-drains) to sync Supabase logs to a logging system of your choice
-*   [Custom Domains](/docs/guides/platform/custom-domains) to provide a branded experience
-*   [PITR](/docs/guides/platform/backups#point-in-time-recovery) to roll back to any specific point in time, down to the minute
-*   [IPv4](/docs/guides/platform/ipv4-address) for a dedicated IPv4 address
-*   [Advanced MFA](/docs/guides/auth/auth-mfa/phone) to provide other options than TOTP
+*   [Compute](../compute-and-disk/index.md#compute) to scale your database up to 64 cores and 256 GB RAM
+*   [Read Replicas](../read-replicas/index.md) to scale read operations and provide resiliency
+*   [Disk](../compute-and-disk/index.md#disk) to provision extra IOPS/throughput or use a high-performance SSD
+*   [Log Drains](../../telemetry/log-drains/index.md) to sync Supabase logs to a logging system of your choice
+*   [Custom Domains](../custom-domains/index.md) to provide a branded experience
+*   [PITR](../backups/index.md#point-in-time-recovery) to roll back to any specific point in time, down to the minute
+*   [IPv4](../ipv4-address/index.md) for a dedicated IPv4 address
+*   [Advanced MFA](../../auth/auth-mfa/phone/index.md) to provide other options than TOTP

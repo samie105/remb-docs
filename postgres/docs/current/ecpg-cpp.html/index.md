@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:24.865Z"
 content_hash: "3bbe8594e65410c10e856422dd51f409fc3bc043bf7910669ef517f964a8f282"
 menu_path: ["PostgreSQL: Documentation: 18: 34.13. C++ Applications"]
 section_path: []
-nav_prev: {"path": "../ecpg-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.2.\u00a0Managing Database Connections"}
-nav_next: {"path": "../ecpg-descriptors.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.7.\u00a0Using Descriptor Areas"}
+nav_prev: {"path": "postgres/docs/current/ecpg-connect.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.2.\u00a0Managing Database Connections"}
+nav_next: {"path": "postgres/docs/current/ecpg-descriptors.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.7.\u00a0Using Descriptor Areas"}
 ---
 
 ECPG has some limited support for C++ applications. This section describes some caveats.

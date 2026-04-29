@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:08.773Z"
 content_hash: "1fee1963495b1f7806b4963f4d9f079db3a3240e04230155a690d28033fa7f55"
 menu_path: ["Use snapshot testing in `bun test`"]
 section_path: []
-nav_prev: {"path": "../skip-tests/index.md", "title": "Skip tests with the Bun test runner"}
-nav_next: {"path": "../spy-on/index.md", "title": "Spy on methods in `bun test`"}
+nav_prev: {"path": "bun/docs/guides/test/skip-tests/index.md", "title": "Skip tests with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/spy-on/index.md", "title": "Spy on methods in `bun test`"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../spy-on/index.md", "title": "Spy on methods in `bun test`"
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun’s test runner supports Jest-style snapshot testing via `.toMatchSnapshot()`.
 
@@ -142,7 +142,7 @@ Ran 1 tests across 1 files. [102.00ms]
 
 * * *
 
-See [Docs > Test Runner > Snapshots](/docs/test/snapshots) for complete documentation on snapshots with the Bun test runner.
+See [Docs > Test Runner > Snapshots](../../../test/snapshots/index.md) for complete documentation on snapshots with the Bun test runner.
 
 Was this page helpful?
 
@@ -154,10 +154,10 @@ Set the system time in Bun's test runner
 
 Previous
 
-](/docs/guides/test/mock-clock)[
+](../mock-clock/index.md)[
 
 Update snapshots in \`bun test\`
 
 Next
 
-](/docs/guides/test/update-snapshots)
+](../update-snapshots/index.md)

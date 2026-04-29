@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:30.764Z"
 content_hash: "689e6e3e92a6463f575411e656093fcc336a6f55df89bdcb0b6cc25ae7dc6a15"
 menu_path: ["FFI"]
 section_path: []
-nav_prev: {"path": "../environment-variables/index.md", "title": "Environment Variables"}
-nav_next: {"path": "../file-io/index.md", "title": "File I/O"}
+nav_prev: {"path": "bun/docs/runtime/environment-variables/index.md", "title": "Environment Variables"}
+nav_next: {"path": "bun/docs/runtime/file-io/index.md", "title": "File I/O"}
 ---
 
 Use the built-in `bun:ffi` module to efficiently call native libraries from JavaScript. It works with languages that support the C ABI (Zig, Rust, C/C++, C#, Nim, Kotlin, etc).

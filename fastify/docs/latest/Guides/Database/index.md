@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:55.700Z"
 content_hash: "48e77ed407741394e436938dd67ae24ad1361db039104e5bec97099bdbbffe1a"
 menu_path: ["Database"]
 section_path: []
-nav_prev: {"path": "../Contributing/index.md", "title": "Contributing To Fastify"}
-nav_next: {"path": "../Delay-Accepting-Requests/index.md", "title": "Delay Accepting Requests"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Contributing/index.md", "title": "Contributing To Fastify"}
+nav_next: {"path": "fastify/docs/latest/Guides/Delay-Accepting-Requests/index.md", "title": "Delay Accepting Requests"}
 ---
 
 Version: latest (v5.8.x)
@@ -21,7 +21,7 @@ Fastify's ecosystem provides a handful of plugins for connecting to various data
 
 > If a plugin for your database of choice does not exist you can still use the database as Fastify is database agnostic. By following the examples of the database plugins listed in this guide, a plugin can be written for the missing database engine.
 
-> If you would like to write your own Fastify plugin please take a look at the [plugins guide](/docs/latest/Guides/Plugins-Guide/)
+> If you would like to write your own Fastify plugin please take a look at the [plugins guide](../Plugins-Guide/index.md)
 
 ### [MySQL](https://github.com/fastify/fastify-mysql)[​](#mysql "Direct link to mysql")
 

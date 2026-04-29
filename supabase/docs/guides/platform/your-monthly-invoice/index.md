@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:22.898Z"
 content_hash: "bd48ecf191813429e0e0a9865773e9b9af2cf653e661d46b1cd0de4297ce656a"
 menu_path: ["Platform","Platform","Billing","Billing","Your monthly invoice","Your monthly invoice"]
 section_path: ["Platform","Platform","Billing","Billing","Your monthly invoice","Your monthly invoice"]
-nav_prev: {"path": "../upgrading/index.md", "title": "Upgrading"}
-nav_next: {"path": "../../queues/index.md", "title": "Supabase Queues"}
+nav_prev: {"path": "supabase/docs/guides/platform/upgrading/index.md", "title": "Upgrading"}
+nav_next: {"path": "supabase/docs/guides/queues/index.md", "title": "Supabase Queues"}
 ---
 
 # 
@@ -62,7 +62,7 @@ The amount due of your invoice being higher than the $25 subscription fee for th
 
 *   **Running several projects:** You had more than one project running in the previous billing cycle. Supabase provides a dedicated server and database for every project. That means that every project you launch incurs compute costs. While the $10 Compute Credits cover a single project using a Nano or Micro compute instance, every additional project adds at least $10 compute costs to your invoice.
 *   **Usage beyond quota:** You exceeded the included usage quota for one or more line items in the previous billing cycle while having the Spend Cap disabled.
-*   **Usage that is not covered by the Spend Cap:** You had usage in the previous billing cycle that is not covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap). For example using an IPv4 address or a custom domain.
+*   **Usage that is not covered by the Spend Cap:** You had usage in the previous billing cycle that is not covered by the [Spend Cap](../cost-control/index.md#spend-cap). For example using an IPv4 address or a custom domain.
 
 ## How to settle your invoices[#](#how-to-settle-your-invoices)
 

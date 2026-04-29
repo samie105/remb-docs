@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:55.419Z"
 content_hash: "35d84544b503444abaaa74249e941d40e0cf94542570f14aa5333beb6e63a8d6"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 9. Functions and Operators"]
 section_path: []
-nav_prev: {"path": "../ddl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a05.\u00a0Data Definition"}
-nav_next: {"path": "../textsearch.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a012.\u00a0Full Text Search"}
+nav_prev: {"path": "postgres/docs/current/ddl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a05.\u00a0Data Definition"}
+nav_next: {"path": "postgres/docs/current/textsearch.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a012.\u00a0Full Text Search"}
 ---
 
 PostgreSQL provides a large number of functions and operators for the built-in data types. This chapter describes most of them, although additional special-purpose functions appear in relevant sections of the manual. Users can also define their own functions and operators, as described in [Part V](https://www.postgresql.org/docs/current/server-programming.html "Part V. Server Programming"). The psql commands `\df` and `\do` can be used to list all available functions and operators, respectively.

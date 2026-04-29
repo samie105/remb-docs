@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:19.911Z"
 content_hash: "f0d89e1f65ad4dff6e83f3de7bc089b64031ba732a25d7e22fd9a08609f26637"
 menu_path: ["PostgreSQL: Documentation: 18: DROP TABLE"]
 section_path: []
-nav_prev: {"path": "../sql-dropschema.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP SCHEMA"}
-nav_next: {"path": "../sql-droptablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLESPACE"}
+nav_prev: {"path": "postgres/docs/current/sql-dropschema.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP SCHEMA"}
+nav_next: {"path": "postgres/docs/current/sql-droptablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLESPACE"}
 ---
 
 DROP TABLE — remove a table

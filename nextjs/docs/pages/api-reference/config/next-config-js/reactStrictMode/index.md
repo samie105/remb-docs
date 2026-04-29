@@ -11,8 +11,8 @@ menu_path: ["reactStrictMode"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../proxyClientMaxBodySize/index.md", "title": "experimental.proxyClientMaxBodySize"}
-nav_next: {"path": "../redirects/index.md", "title": "redirects"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/proxyClientMaxBodySize/index.md", "title": "experimental.proxyClientMaxBodySize"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/redirects/index.md", "title": "redirects"}
 ---
 
 # reactStrictMode

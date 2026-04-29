@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:56.875Z"
 content_hash: "9dea4cd1ed82969dee672fc45bcafc8d9526a78b587bcb103d98882cd9a8f981"
 menu_path: ["Build an app with Next.js and Bun"]
 section_path: []
-nav_prev: {"path": "../neon-serverless-postgres/index.md", "title": "Use Neon's Serverless Postgres with Bun"}
-nav_next: {"path": "../nuxt/index.md", "title": "Build an app with Nuxt and Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/neon-serverless-postgres/index.md", "title": "Use Neon's Serverless Postgres with Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/nuxt/index.md", "title": "Build an app with Nuxt and Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../nuxt/index.md", "title": "Build an app with Nuxt and Bun"
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 [Next.js](https://nextjs.org/) is a React framework for building full-stack web applications. It supports server-side rendering, static site generation, API routes, and more. Bun provides fast package installation and can run Next.js development and production servers.
 
@@ -136,10 +136,10 @@ Use Neon's Serverless Postgres with Bun
 
 Previous
 
-](/docs/guides/ecosystem/neon-serverless-postgres)[
+](../neon-serverless-postgres/index.md)[
 
 Build an app with Nuxt and Bun
 
 Next
 
-](/docs/guides/ecosystem/nuxt)
+](../nuxt/index.md)

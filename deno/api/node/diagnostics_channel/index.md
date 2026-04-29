@@ -10,8 +10,8 @@ content_hash: "1b545b52e2d093c8e0411ea5ea48719c007a75aa792fd7754ed0b5821564f918"
 menu_path: ["diagnostics_channel - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../dgram/index.md", "title": "dgram - Node documentation"}
-nav_next: {"path": "../dns/index.md", "title": "dns - Node documentation"}
+nav_prev: {"path": "deno/api/node/dgram/index.md", "title": "dgram - Node documentation"}
+nav_next: {"path": "deno/api/node/dns/index.md", "title": "dns - Node documentation"}
 ---
 
 ### Usage in Deno

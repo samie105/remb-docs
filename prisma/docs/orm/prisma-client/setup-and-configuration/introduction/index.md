@@ -11,8 +11,8 @@ menu_path: ["Introduction to Prisma Client"]
 section_path: []
 tab_variants: ["Prisma Config","Prisma Schema","PostgreSQL","MySQL / MariaDB","SQLite","npm","npm","pnpm","yarn","bun","PostgreSQL","MySQL / MariaDB","SQLite","PostgreSQL (Edge)","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../error-formatting/index.md", "title": "Configuring error formatting"}
-nav_next: {"path": "../read-replicas/index.md", "title": "Read replicas"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/error-formatting/index.md", "title": "Configuring error formatting"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/read-replicas/index.md", "title": "Read replicas"}
 ---
 
 Setup and Configuration

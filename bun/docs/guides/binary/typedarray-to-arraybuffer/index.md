@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:21.036Z"
 content_hash: "77f0d3493541bb741bfae6758838e4e143e4c6d458428a7496c5685ed205b308"
 menu_path: ["Convert a Uint8Array to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "../dataview-to-string/index.md", "title": "Convert a DataView to a string"}
-nav_next: {"path": "../typedarray-to-blob/index.md", "title": "Convert a Uint8Array to a Blob"}
+nav_prev: {"path": "bun/docs/guides/binary/dataview-to-string/index.md", "title": "Convert a DataView to a string"}
+nav_next: {"path": "bun/docs/guides/binary/typedarray-to-blob/index.md", "title": "Convert a Uint8Array to a Blob"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../typedarray-to-blob/index.md", "title": "Convert a Uint8Ar
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 A [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) is a _typed array_ class, meaning it is a mechanism for viewing data in an underlying `ArrayBuffer`. The underlying `ArrayBuffer` is accessible via the `buffer` property.
 
@@ -55,7 +55,7 @@ arr.byteLength; // => 32
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -67,10 +67,10 @@ Convert a Uint8Array to a string
 
 Previous
 
-](/docs/guides/binary/typedarray-to-string)[
+](../typedarray-to-string/index.md)[
 
 Convert a Uint8Array to a Buffer
 
 Next
 
-](/docs/guides/binary/typedarray-to-buffer)
+](../typedarray-to-buffer/index.md)

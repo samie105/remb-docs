@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:01.132Z"
 content_hash: "a3094a26a13e6fce000909ce08dca8703d472ed6e0ced837a4bc6758f559ba61"
 menu_path: ["Watch Mode"]
 section_path: []
-nav_prev: {"path": "../utils/index.md", "title": "Utils"}
-nav_next: {"path": "../web-apis/index.md", "title": "Web APIs"}
+nav_prev: {"path": "bun/docs/runtime/utils/index.md", "title": "Utils"}
+nav_next: {"path": "bun/docs/runtime/web-apis/index.md", "title": "Web APIs"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../web-apis/index.md", "title": "Web APIs"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Bun supports two kinds of automatic reloading via CLI flags:
 
@@ -210,13 +210,13 @@ Bun Runtime
 
 Previous
 
-](/docs/runtime)[
+](../index.md)[
 
 Debugging
 
 Next
 
-](/docs/runtime/debugger)
+](../debugger/index.md)
 
 ![bun watch gif](https://user-images.githubusercontent.com/709451/228439002-7b9fad11-0db2-4e48-b82d-2b88c8625625.gif)
 

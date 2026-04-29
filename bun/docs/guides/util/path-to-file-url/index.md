@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:13.556Z"
 content_hash: "9cb59431101848c67366c40ea61e1044ed07b1861b5098901253f71a54baa260"
 menu_path: ["Convert an absolute path to a file URL"]
 section_path: []
-nav_prev: {"path": "../main/index.md", "title": "Get the absolute path to the current entrypoint"}
-nav_next: {"path": "../sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
+nav_prev: {"path": "bun/docs/guides/util/main/index.md", "title": "Get the absolute path to the current entrypoint"}
+nav_next: {"path": "bun/docs/guides/util/sleep/index.md", "title": "Sleep for a fixed number of milliseconds"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../sleep/index.md", "title": "Sleep for a fixed number of mi
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use `Bun.pathToFileURL()` to convert an absolute path to a `file://` URL.
 
@@ -44,7 +44,7 @@ Bun.pathToFileURL("/path/to/file.txt");
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a file URL to an absolute path
 
 Previous
 
-](/docs/guides/util/file-url-to-path)[
+](../file-url-to-path/index.md)[
 
 Get the path to an executable bin file
 
 Next
 
-](/docs/guides/util/which-path-to-executable-bin)
+](../which-path-to-executable-bin/index.md)

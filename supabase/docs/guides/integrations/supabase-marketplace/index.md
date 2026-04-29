@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:21.622Z"
 content_hash: "a389bade73cb2efca8683068c07a52b394450c5c7f86cb2ae1bc399067cf36b1"
 menu_path: ["Integrations","Integrations","Supabase Marketplace","Supabase Marketplace"]
 section_path: ["Integrations","Integrations","Supabase Marketplace","Supabase Marketplace"]
-nav_prev: {"path": "../supabase-for-platforms/index.md", "title": "Supabase for Platforms"}
-nav_next: {"path": "../vercel-marketplace/index.md", "title": "Vercel Marketplace"}
+nav_prev: {"path": "supabase/docs/guides/integrations/supabase-for-platforms/index.md", "title": "Supabase for Platforms"}
+nav_next: {"path": "supabase/docs/guides/integrations/vercel-marketplace/index.md", "title": "Vercel Marketplace"}
 ---
 
 # 
@@ -28,9 +28,9 @@ The Supabase Marketplace brings together all the tools you need to extend your S
 
 Supabase provides several integration points:
 
-*   The [Postgres connection](/docs/guides/database/connecting-to-postgres). Anything that works with Postgres also works with Supabase projects.
-*   The [Project REST API](/docs/guides/api#rest-api-overview) & client libraries.
-*   The [Project GraphQL API](/docs/guides/api#graphql-api-overview).
+*   The [Postgres connection](../../database/connecting-to-postgres/index.md). Anything that works with Postgres also works with Supabase projects.
+*   The [Project REST API](../../api/index.md#rest-api-overview) & client libraries.
+*   The [Project GraphQL API](../../api/index.md#graphql-api-overview).
 *   The [Platform API](/docs/reference/api).
 
 ## List your integration[#](#list-your-integration)

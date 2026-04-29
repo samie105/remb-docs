@@ -11,8 +11,8 @@ menu_path: ["useSelectedLayoutSegment"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../use-search-params/index.md", "title": "useSearchParams"}
-nav_next: {"path": "../use-selected-layout-segments/index.md", "title": "useSelectedLayoutSegments"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-search-params/index.md", "title": "useSearchParams"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-selected-layout-segments/index.md", "title": "useSelectedLayoutSegments"}
 ---
 
 # useSelectedLayoutSegment
@@ -41,9 +41,9 @@ export default function ExampleClientComponent() {
 
 > **Good to know**:
 > 
-> -   Since `useSelectedLayoutSegment` is a [Client Component](/docs/app/getting-started/server-and-client-components) hook, and Layouts are [Server Components](/docs/app/getting-started/server-and-client-components) by default, `useSelectedLayoutSegment` is usually called via a Client Component that is imported into a Layout.
-> -   `useSelectedLayoutSegment` only returns the segment one level down. To return all active segments, see [`useSelectedLayoutSegments`](/docs/app/api-reference/functions/use-selected-layout-segments)
-> -   For [catch-all](/docs/app/api-reference/file-conventions/dynamic-routes#catch-all-segments) routes, the matched segments are returned as a single joined string. For example, given `app/blog/[...slug]/page.js`, calling from `app/blog/layout.js` when visiting `/blog/a/b/c` returns `'a/b/c'`.
+> -   Since `useSelectedLayoutSegment` is a [Client Component](../../../getting-started/server-and-client-components/index.md) hook, and Layouts are [Server Components](../../../getting-started/server-and-client-components/index.md) by default, `useSelectedLayoutSegment` is usually called via a Client Component that is imported into a Layout.
+> -   `useSelectedLayoutSegment` only returns the segment one level down. To return all active segments, see [`useSelectedLayoutSegments`](../use-selected-layout-segments/index.md)
+> -   For [catch-all](../../file-conventions/dynamic-routes/index.md#catch-all-segments) routes, the matched segments are returned as a single joined string. For example, given `app/blog/[...slug]/page.js`, calling from `app/blog/layout.js` when visiting `/blog/a/b/c` returns `'a/b/c'`.
 
 ## Parameters[](#parameters)
 
@@ -51,7 +51,7 @@ export default function ExampleClientComponent() {
 const segment = useSelectedLayoutSegment(parallelRoutesKey?: string)
 ```
 
-`useSelectedLayoutSegment` _optionally_ accepts a [`parallelRoutesKey`](/docs/app/api-reference/file-conventions/parallel-routes#with-useselectedlayoutsegments), which allows you to read the active route segment within that slot.
+`useSelectedLayoutSegment` _optionally_ accepts a [`parallelRoutesKey`](../../file-conventions/parallel-routes/index.md#with-useselectedlayoutsegments), which allows you to read the active route segment within that slot.
 
 ## Returns[](#returns)
 

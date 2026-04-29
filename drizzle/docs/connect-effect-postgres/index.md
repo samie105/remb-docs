@@ -10,8 +10,8 @@ content_hash: "4aaf0ef9d92729282d2bf5cbcfb7b58fd85f793ce4af0dca48e6b365525a6dcc"
 menu_path: ["Drizzle <> Effect Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-bun-sql/index.md", "title": "Drizzle <> Bun SQL"}
-nav_next: {"path": "../connect-planetscale/index.md", "title": "Drizzle <> PlanetScale MySQL"}
+nav_prev: {"path": "drizzle/docs/connect-bun-sql/index.md", "title": "Drizzle <> Bun SQL"}
+nav_next: {"path": "drizzle/docs/connect-planetscale/index.md", "title": "Drizzle <> PlanetScale MySQL"}
 ---
 
 WARNING

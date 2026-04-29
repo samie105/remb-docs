@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:26.089Z"
 content_hash: "4e1e8ac9cf7aec653f9e120f8acc8f4c3c4955a908767de564409ac166cade2a"
 menu_path: ["DOM testing"]
 section_path: []
-nav_prev: {"path": "../discovery/index.md", "title": "Finding tests"}
-nav_next: {"path": "../lifecycle/index.md", "title": "Lifecycle hooks"}
+nav_prev: {"path": "bun/docs/test/discovery/index.md", "title": "Finding tests"}
+nav_next: {"path": "bun/docs/test/lifecycle/index.md", "title": "Lifecycle hooks"}
 ---
 
 Bun’s test runner plays well with existing component and DOM testing libraries, including React Testing Library and happy-dom.

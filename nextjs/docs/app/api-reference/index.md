@@ -11,8 +11,8 @@ menu_path: ["API Reference"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../guides/view-transitions/index.md", "title": "Designing view transitions"}
-nav_next: {"path": "directives/index.md", "title": "Directives"}
+nav_prev: {"path": "nextjs/docs/app/guides/view-transitions/index.md", "title": "Designing view transitions"}
+nav_next: {"path": "nextjs/docs/app/api-reference/directives/index.md", "title": "Directives"}
 ---
 
 # API Reference
@@ -25,54 +25,54 @@ Last updated April 23, 2026
 
 Directives are used to modify the behavior of your Next.js application.
 
-](/docs/app/api-reference/directives)[
+](directives/index.md)[
 
 ### Components
 
 API Reference for Next.js built-in components.
 
-](/docs/app/api-reference/components)[
+](components/index.md)[
 
 ### File-system conventions
 
 API Reference for Next.js file-system conventions.
 
-](/docs/app/api-reference/file-conventions)[
+](file-conventions/index.md)[
 
 ### Functions
 
 API Reference for Next.js Functions and Hooks.
 
-](/docs/app/api-reference/functions)[
+](functions/index.md)[
 
 ### Configuration
 
 Learn how to configure Next.js applications.
 
-](/docs/app/api-reference/config)[
+](config/index.md)[
 
 ### CLI
 
 API Reference for the Next.js Command Line Interface (CLI) tools.
 
-](/docs/app/api-reference/cli)[
+](cli/index.md)[
 
 ### Adapters
 
 Build deployment adapters for Next.js platforms and infrastructure.
 
-](/docs/app/api-reference/adapters)[
+](adapters/index.md)[
 
 ### Edge Runtime
 
 API Reference for the Edge Runtime.
 
-](/docs/app/api-reference/edge)[
+](edge/index.md)[
 
 ### Turbopack
 
 Turbopack is an incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.
 
-](/docs/app/api-reference/turbopack)
+](turbopack/index.md)
 
 Was this helpful?

@@ -10,8 +10,8 @@ content_hash: "1156dbdbcf8269058e797c050dfab2d1b5f1d70e8e5a991b1b720f263998bf3a"
 menu_path: ["box-sizing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../box-decoration-break/index.md", "title": "box-decoration-break"}
-nav_next: {"path": "../display/index.md", "title": "display"}
+nav_prev: {"path": "tailwind/docs/box-decoration-break/index.md", "title": "box-decoration-break"}
+nav_next: {"path": "tailwind/docs/display/index.md", "title": "display"}
 ---
 
 Layout

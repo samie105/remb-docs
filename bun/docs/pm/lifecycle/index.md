@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:56.219Z"
 content_hash: "a00253a74bb22d5b80d97dd3231f91fbfe44b51255d5e93669421131f232e9f1"
 menu_path: ["Lifecycle scripts"]
 section_path: []
-nav_prev: {"path": "../isolated-installs/index.md", "title": "Isolated installs"}
-nav_next: {"path": "../lockfile/index.md", "title": "Lockfile"}
+nav_prev: {"path": "bun/docs/pm/isolated-installs/index.md", "title": "Isolated installs"}
+nav_next: {"path": "bun/docs/pm/lockfile/index.md", "title": "Lockfile"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../lockfile/index.md", "title": "Lockfile"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Packages on `npm` can define _lifecycle scripts_ in their `package.json`. Some of the most common are below, but there are [many others](https://docs.npmjs.com/cli/v10/using-npm/scripts).
 
@@ -122,10 +122,10 @@ Lockfile
 
 Previous
 
-](/docs/pm/lockfile)[
+](../lockfile/index.md)[
 
 Scopes and registries
 
 Next
 
-](/docs/pm/scopes-registries)
+](../scopes-registries/index.md)

@@ -11,8 +11,8 @@ menu_path: ["API Reference"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../building-your-application/configuring/index.md", "title": "Configuring"}
-nav_next: {"path": "components/index.md", "title": "Components"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/configuring/index.md", "title": "Configuring"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/components/index.md", "title": "Components"}
 ---
 
 # API Reference
@@ -25,48 +25,48 @@ Last updated April 23, 2026
 
 API Reference for Next.js built-in components in the Pages Router.
 
-](/docs/pages/api-reference/components)[
+](components/index.md)[
 
 ### File-system conventions
 
 API Reference for Next.js file-system conventions.
 
-](/docs/pages/api-reference/file-conventions)[
+](file-conventions/index.md)[
 
 ### Functions
 
 API Reference for Functions and Hooks in Pages Router.
 
-](/docs/pages/api-reference/functions)[
+](functions/index.md)[
 
 ### Configuration
 
 Learn how to configure your Next.js application.
 
-](/docs/pages/api-reference/config)[
+](config/index.md)[
 
 ### CLI
 
 API Reference for the Next.js Command Line Interface (CLI) tools.
 
-](/docs/pages/api-reference/cli)[
+](cli/index.md)[
 
 ### Adapters
 
 Build deployment adapters for Next.js platforms and infrastructure.
 
-](/docs/pages/api-reference/adapters)[
+](adapters/index.md)[
 
 ### Edge Runtime
 
 API Reference for the Edge Runtime.
 
-](/docs/pages/api-reference/edge)[
+](edge/index.md)[
 
 ### Turbopack
 
 Turbopack is an incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.
 
-](/docs/pages/api-reference/turbopack)
+](turbopack/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:48.328Z"
 content_hash: "b1d9c4cce3e096cd9bd8e8c01e4b0a3d6695b32c025b8349f4eb863e12c7177d"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Background Tasks","Background Tasks"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","Background Tasks","Background Tasks"]
-nav_prev: {"path": "../auth-legacy-jwt/index.md", "title": "Integrating With Supabase Auth"}
-nav_next: {"path": "../compression/index.md", "title": "Handling Compressed Requests"}
+nav_prev: {"path": "supabase/docs/guides/functions/auth-legacy-jwt/index.md", "title": "Integrating With Supabase Auth"}
+nav_next: {"path": "supabase/docs/guides/functions/compression/index.md", "title": "Handling Compressed Requests"}
 ---
 
 # 
@@ -62,7 +62,7 @@ You can also add an event listener to [`unhandledrejection`](https://developer.m
 1addEventListener('unhandledrejection', (ev) => {2  console.log('unhandledrejection', ev.reason)3  ev.preventDefault()4})
 ```
 
-The maximum duration is capped based on the wall-clock, CPU, and memory limits. The function will shut down when it reaches one of these [limits](/docs/guides/functions/limits).
+The maximum duration is capped based on the wall-clock, CPU, and memory limits. The function will shut down when it reaches one of these [limits](../limits/index.md).
 
 * * *
 

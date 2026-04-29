@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:45.446Z"
 content_hash: "ee6ea526dad46182c6efa4f05c1f4af216356988ab62ccbbb0b7cda8cce933b0"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Networking","→","Networking","→\n      \n        Database connectivity","→","Database connectivity"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Networking","→","Networking","→\n      \n        Database connectivity","→","Database connectivity"]
-nav_prev: {"path": "../../architecture/index.md", "title": "Redis Enterprise for Kubernetes architecture"}
-nav_next: {"path": "../ingress/index.md", "title": "Configure Ingress for external routing"}
+nav_prev: {"path": "redis/docs/latest/operate/kubernetes/architecture/index.md", "title": "Redis Enterprise for Kubernetes architecture"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/networking/ingress/index.md", "title": "Configure Ingress for external routing"}
 ---
 
 # Database connectivity
@@ -155,7 +155,7 @@ Redis Enterprise for Kubernetes only supports the following ingress controllers 
 *   HAProxy Ingress - Built-in SSL passthrough support
 *   Istio Gateway - Service mesh integration with advanced traffic management
 
-See [Ingress routing](/docs/latest/operate/kubernetes/networking/ingress/) for detailed configuration steps.
+See [Ingress routing](../ingress/index.md) for detailed configuration steps.
 
 ### OpenShift routes
 
@@ -335,9 +335,9 @@ client.on('connect', () => {
 
 ## Related topics
 
-*   [Ingress routing](/docs/latest/operate/kubernetes/networking/ingress/) - Configure external access with ingress controllers
+*   [Ingress routing](../ingress/index.md) - Configure external access with ingress controllers
 *   [OpenShift routes](/docs/latest/operate/kubernetes/networking/routes/) - External access using OpenShift routes
-*   [Database controller](/docs/latest/operate/kubernetes/re-databases/db-controller/) - Database lifecycle management
+*   [Database controller](../../re-databases/db-controller/index.md) - Database lifecycle management
 *   [Security](/docs/latest/operate/kubernetes/security/) - TLS configuration and access control
 
 ## On this page

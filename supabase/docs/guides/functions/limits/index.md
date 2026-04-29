@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:46.590Z"
 content_hash: "b0620eebc89ae4e39aca1ab491f3c642f2c79ace6626aab11024518e1597a63a"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Limits","Limits"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Limits","Limits"]
-nav_prev: {"path": "../kysely-postgres/index.md", "title": "Type-Safe SQL with Kysely"}
-nav_next: {"path": "../logging/index.md", "title": "Logging"}
+nav_prev: {"path": "supabase/docs/guides/functions/kysely-postgres/index.md", "title": "Type-Safe SQL with Kysely"}
+nav_next: {"path": "supabase/docs/guides/functions/logging/index.md", "title": "Logging"}
 ---
 
 # 
@@ -42,7 +42,7 @@ Limits applied Edge Functions in Supabase's hosted platform.
     *   Enterprise: Unlimited
 *   Maximum log message length: 10,000 characters
 *   Log event threshold: 100 events per 10 seconds
-*   Recursive/Nested Function Calling: ~5000 requests per minute [more details](/docs/guides/functions/recursive-functions)
+*   Recursive/Nested Function Calling: ~5000 requests per minute [more details](../recursive-functions/index.md)
 
 ### Secrets[#](#secrets)
 
@@ -56,5 +56,5 @@ Limits applied Edge Functions in Supabase's hosted platform.
 *   Outgoing connections to ports `25` and `587` are not allowed.
 *   Serving of HTML content is only supported with [custom domains](/docs/reference/cli/supabase-domains) (Otherwise `GET` requests that return `text/html` will be rewritten to `text/plain`).
 *   Web Worker API (or Node `vm` API) are not available.
-*   Static files cannot be deployed using the API flag. You need to build them with [Docker on the CLI](/docs/guides/functions/quickstart#step-6-deploy-to-production).
+*   Static files cannot be deployed using the API flag. You need to build them with [Docker on the CLI](../quickstart/index.md#step-6-deploy-to-production).
 *   Node Libraries that require multithreading are not supported. Examples: [`libvips`](https://github.com/libvips/libvips), [sharp](https://github.com/lovell/sharp).

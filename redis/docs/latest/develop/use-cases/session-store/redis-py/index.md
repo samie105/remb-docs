@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:44:22.375Z"
 content_hash: "bc8c68b1de2ded0e8703099751a9d8119632c893b2bf78575e6fd80dbb44e2b3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with redis-py","→","Redis session store with redis-py"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with redis-py","→","Redis session store with redis-py"]
-nav_prev: {"path": "../php/index.md", "title": "Redis session store with PHP"}
-nav_next: {"path": "../ruby/index.md", "title": "Redis session store with Ruby"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/php/index.md", "title": "Redis session store with PHP"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/ruby/index.md", "title": "Redis session store with Ruby"}
 ---
 
 # Redis session store with redis-py
 
 Implement a Redis-backed session store in Python with redis-py
 
-This guide shows you how to implement a Redis-backed session store in Python with [`redis-py`](/docs/latest/develop/clients/redis-py/). It includes a small local web server built with the Python standard library so you can see the session lifecycle end to end.
+This guide shows you how to implement a Redis-backed session store in Python with [`redis-py`](../../../clients/redis-py/index.md). It includes a small local web server built with the Python standard library so you can see the session lifecycle end to end.
 
 ## Overview
 
@@ -257,7 +257,7 @@ redis-cli TTL session:<session_id>
 
 ## Learn more
 
-*   [redis-py guide](/docs/latest/develop/clients/redis-py/) - Install and use the Python Redis client
+*   [redis-py guide](../../../clients/redis-py/index.md) - Install and use the Python Redis client
 *   [EXPIRE command](/docs/latest/commands/expire/) - Set key expiration
 *   [HSET command](/docs/latest/commands/hset/) - Set hash fields
 *   [HGETALL command](/docs/latest/commands/hgetall/) - Read a full session hash

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:23.575Z"
 content_hash: "b60fff2b5fe2002fef9f961f2ef45a47cb537bfc09f2ee398e8aa8c80b30ad77"
 menu_path: ["PostgreSQL: Documentation: 18: B.1. Date/Time Input Interpretation"]
 section_path: []
-nav_prev: {"path": "../datetime-config-files.html/index.md", "title": "PostgreSQL: Documentation: 18: B.4.\u00a0Date/Time Configuration Files"}
-nav_next: {"path": "../datetime-invalid-input.html/index.md", "title": "PostgreSQL: Documentation: 18: B.2.\u00a0Handling of Invalid or Ambiguous Timestamps"}
+nav_prev: {"path": "postgres/docs/current/datetime-config-files.html/index.md", "title": "PostgreSQL: Documentation: 18: B.4.\u00a0Date/Time Configuration Files"}
+nav_next: {"path": "postgres/docs/current/datetime-invalid-input.html/index.md", "title": "PostgreSQL: Documentation: 18: B.2.\u00a0Handling of Invalid or Ambiguous Timestamps"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

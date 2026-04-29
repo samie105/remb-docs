@@ -10,8 +10,8 @@ content_hash: "3ea9899d6b1bf21d0afb7ed51f744e3ff24f8d1643e1d89db1c74639f90a34f3"
 menu_path: ["PostgreSQL: Documentation: 18: 53.2. pg_aios"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../vacuumlo.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumlo"}
-nav_next: {"path": "../view-pg-available-extension-versions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.4.\u00a0pg_available_extension_versions"}
+nav_prev: {"path": "postgres/docs/current/vacuumlo.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumlo"}
+nav_next: {"path": "postgres/docs/current/view-pg-available-extension-versions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.4.\u00a0pg_available_extension_versions"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-aios.html "PostgreSQL devel - 53.2. pg_aios")

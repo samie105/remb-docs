@@ -10,8 +10,8 @@ content_hash: "ff5b4008fcf5cae5697c2620322f702a8bd11541f6dfa44f3257b4ad3d3b4ab2"
 menu_path: ["color"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text-align/index.md", "title": "text-align"}
-nav_next: {"path": "../text-decoration-line/index.md", "title": "text-decoration-line"}
+nav_prev: {"path": "tailwind/docs/text-align/index.md", "title": "text-align"}
+nav_next: {"path": "tailwind/docs/text-decoration-line/index.md", "title": "text-decoration-line"}
 ---
 
 Utilities for controlling the text color of an element.

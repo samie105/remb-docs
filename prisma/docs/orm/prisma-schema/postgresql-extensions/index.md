@@ -11,8 +11,8 @@ menu_path: ["PostgreSQL extensions"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../introspection/index.md", "title": "What is introspection?"}
-nav_next: {"path": "../../prisma-migrate/index.md", "title": "Overview of Prisma Migrate"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/introspection/index.md", "title": "What is introspection?"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/index.md", "title": "Overview of Prisma Migrate"}
 ---
 
 How to install and manage PostgreSQL extensions with Prisma ORM using customized migrations, and how to use them in Prisma Client

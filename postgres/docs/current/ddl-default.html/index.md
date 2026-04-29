@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:12.842Z"
 content_hash: "182348e97af213f9a226e3e86f705d464a8c544dcda7712a1f7852e64eada49a"
 menu_path: ["PostgreSQL: Documentation: 18: 5.2. Default Values"]
 section_path: []
-nav_prev: {"path": "../ddl-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.5.\u00a0Constraints"}
-nav_next: {"path": "../ddl-depend.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.15.\u00a0Dependency Tracking"}
+nav_prev: {"path": "postgres/docs/current/ddl-constraints.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.5.\u00a0Constraints"}
+nav_next: {"path": "postgres/docs/current/ddl-depend.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.15.\u00a0Dependency Tracking"}
 ---
 
 A column can be assigned a default value. When a new row is created and no values are specified for some of the columns, those columns will be filled with their respective default values. A data manipulation command can also request explicitly that a column be set to its default value, without having to know what that value is. (Details about data manipulation commands are in [Chapter 6](https://www.postgresql.org/docs/current/dml.html "Chapter 6. Data Manipulation").)

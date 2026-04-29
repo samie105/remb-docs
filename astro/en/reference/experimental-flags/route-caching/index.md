@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:13.387Z"
 content_hash: "7fb8f2420673a70c7c41aa37403323982414ae45eb68cada50e2ff49230afe81"
 menu_path: ["Experimental route caching"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "Configuring experimental flags"}
-nav_next: {"path": "../client-prerender/index.md", "title": "Experimental client prerendering"}
+nav_prev: {"path": "astro/en/reference/experimental-flags/index.md", "title": "Configuring experimental flags"}
+nav_next: {"path": "astro/en/reference/experimental-flags/client-prerender/index.md", "title": "Experimental client prerendering"}
 ---
 
 # Experimental route caching
@@ -20,11 +20,11 @@ nav_next: {"path": "../client-prerender/index.md", "title": "Experimental client
 
 **Added in:** `astro@6.0.0`
 
-Enables a platform-agnostic API for caching responses from [on-demand rendered](/en/guides/on-demand-rendering/) pages and endpoints. Cache directives set in your routes are translated into the appropriate headers or runtime behavior depending on your configured cache provider.
+Enables a platform-agnostic API for caching responses from [on-demand rendered](../../../guides/on-demand-rendering/index.md) pages and endpoints. Cache directives set in your routes are translated into the appropriate headers or runtime behavior depending on your configured cache provider.
 
 Route caching builds on standard [HTTP caching semantics](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching), including `max-age` and [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate), with support for tag-based and path-based invalidation, config-level route rules, and pluggable cache providers that adapters can set automatically.
 
-This feature requires [on-demand rendering](/en/guides/on-demand-rendering/). Prerendered pages are already static and do not use route caching.
+This feature requires [on-demand rendering](../../../guides/on-demand-rendering/index.md). Prerendered pages are already static and do not use route caching.
 
 To enable this feature, configure `experimental.cache` with a cache provider in your Astro config:
 
@@ -113,9 +113,9 @@ In dev mode, the cache API is available so that route code does not need conditi
 
 [Section titled “Using with live content collections”](#using-with-live-content-collections)
 
-Route caching integrates directly with [live content collections](/en/guides/content-collections/#live-content-collections). `cache.set()` accepts `CacheHint` and `LiveDataEntry` objects natively, allowing cache hints from loaders to be passed through without manually setting headers.
+Route caching integrates directly with [live content collections](../../../guides/content-collections/index.md#live-content-collections). `cache.set()` accepts `CacheHint` and `LiveDataEntry` objects natively, allowing cache hints from loaders to be passed through without manually setting headers.
 
-A [live loader](/en/reference/content-loader-reference/#live-loaders) can return a `cacheHint` on individual entries or on the collection as a whole. These hints include `tags` (for targeted invalidation) and `lastModified` (for freshness). When passed to `cache.set()`, they merge with any other cache options already set on the page.
+A [live loader](../../content-loader-reference/index.md#live-loaders) can return a `cacheHint` on individual entries or on the collection as a whole. These hints include `tags` (for targeted invalidation) and `lastModified` (for freshness). When passed to `cache.set()`, they merge with any other cache options already set on the page.
 
 ### Passing cache hints from entries
 
@@ -133,7 +133,7 @@ if (cacheHint) {  Astro.cache.set(cacheHint);}Astro.cache.set({ maxAge: 300 });-
 <h1>{entry.data.name}</h1>
 ```
 
-A [`LiveDataEntry`](/en/reference/content-loader-reference/#livedataentry) can also be passed directly. Astro extracts its `cacheHint` automatically:
+A [`LiveDataEntry`](../../content-loader-reference/index.md#livedataentry) can also be passed directly. Astro extracts its `cacheHint` automatically:
 
 ```
 ---import { getLiveEntry } from 'astro:content';
@@ -172,7 +172,7 @@ if (cacheHint) {  Astro.cache.set(cacheHint);}Astro.cache.set({ maxAge: 600 });-
 <ul>  {entries.map((p) => <li>{p.data.name}</li>)}</ul>
 ```
 
-See the [Content Loader Reference](/en/reference/content-loader-reference/) for more about implementing cache hints in your live loaders.
+See the [Content Loader Reference](../../content-loader-reference/index.md) for more about implementing cache hints in your live loaders.
 
 ## Invalidation
 
@@ -188,7 +188,7 @@ export async function POST(context) {  // Invalidate all entries tagged 'data'  
   return Response.json({ purged: true });}
 ```
 
-Tag-based invalidation removes all cached entries whose tags include any of the provided tags. Path-based invalidation is exact-match only (no [glob](/en/guides/imports/#glob-patterns) or wildcard patterns).
+Tag-based invalidation removes all cached entries whose tags include any of the provided tags. Path-based invalidation is exact-match only (no [glob](../../../guides/imports/index.md#glob-patterns) or wildcard patterns).
 
 ## Route rules
 
@@ -219,7 +219,7 @@ Route patterns support:
 *   **Rest parameters**: `/docs/[...path]`
 *   **Glob wildcards**: `/api/*`
 
-Patterns use the same matching and priority rules as Astro’s [file-based routing](/en/guides/routing/#route-priority-order), so more specific patterns take precedence.
+Patterns use the same matching and priority rules as Astro’s [file-based routing](../../../guides/routing/index.md#route-priority-order), so more specific patterns take precedence.
 
 ### Merging with per-route `cache.set()`
 
@@ -553,4 +553,4 @@ Thrown at build time when the configured cache provider cannot be resolved. This
 
 For full details and to give feedback on this experimental API, see the [Route Caching RFC](https://github.com/withastro/roadmap/pull/1245).
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

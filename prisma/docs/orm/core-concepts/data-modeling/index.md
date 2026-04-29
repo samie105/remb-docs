@@ -10,8 +10,8 @@ content_hash: "f113dc65b592751eb5fc36382532d2eb1529efc013b764ab6427a2951c6a8acc"
 menu_path: ["Data modeling"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../index.md", "title": "Prisma ORM"}
-nav_next: {"path": "../api-patterns/index.md", "title": "API patterns"}
+nav_prev: {"path": "prisma/docs/orm/index.md", "title": "Prisma ORM"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/api-patterns/index.md", "title": "API patterns"}
 ---
 
 Learn how data modeling with Prisma differs from data modeling with SQL or ORMs. Prisma uses a declarative data modeling language to describe a database schema

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:41.791Z"
 content_hash: "7d94dfed57706b73fac204d848c5eadb5b176f8a028a1b41bfa40a1265fd4b5b"
 menu_path: ["Astro.redirect is not available in static mode."]
 section_path: []
-nav_prev: {"path": "../static-client-address-not-available/index.md", "title": "Astro.clientAddress is not available in prerendered pages."}
-nav_next: {"path": "../unavailable-astro-global/index.md", "title": "Unavailable Astro global in getStaticPaths()"}
+nav_prev: {"path": "astro/en/reference/errors/static-client-address-not-available/index.md", "title": "Astro.clientAddress is not available in prerendered pages."}
+nav_next: {"path": "astro/en/reference/errors/unavailable-astro-global/index.md", "title": "Unavailable Astro global in getStaticPaths()"}
 ---
 
 # Astro.redirect is not available in static mode.
@@ -21,13 +21,13 @@ nav_next: {"path": "../unavailable-astro-global/index.md", "title": "Unavailable
 
 [Section titled “What went wrong?”](#what-went-wrong)
 
-The `Astro.redirect` function is only available when [Server-side rendering](/en/guides/on-demand-rendering/) is enabled.
+The `Astro.redirect` function is only available when [Server-side rendering](../../../guides/on-demand-rendering/index.md) is enabled.
 
 To redirect on a static website, the [meta refresh attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta) can be used. Certain hosts also provide config-based redirects (ex: [Netlify redirects](https://docs.netlify.com/routing/redirects/)).
 
 **See Also:**
 
-*   [Enabling SSR in Your Project](/en/guides/on-demand-rendering/)
-*   [Astro.redirect](/en/reference/api-reference/#redirect)
+*   [Enabling SSR in Your Project](../../../guides/on-demand-rendering/index.md)
+*   [Astro.redirect](../../api-reference/index.md#redirect)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

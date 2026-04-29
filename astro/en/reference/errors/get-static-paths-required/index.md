@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:54.253Z"
 content_hash: "fd7e067ce13297a1700e452c0a08a410a78ea79c24b00b63dc8b4f146484de2b"
 menu_path: ["getStaticPaths() function required for dynamic routes."]
 section_path: []
-nav_prev: {"path": "../get-static-paths-removed-rsshelper/index.md", "title": "getStaticPaths RSS helper is not available anymore."}
-nav_next: {"path": "../i18n-no-locale-found-in-path/index.md", "title": "The path doesn't contain any locale"}
+nav_prev: {"path": "astro/en/reference/errors/get-static-paths-removed-rsshelper/index.md", "title": "getStaticPaths RSS helper is not available anymore."}
+nav_next: {"path": "astro/en/reference/errors/i18n-no-locale-found-in-path/index.md", "title": "The path doesn't contain any locale"}
 ---
 
 # getStaticPaths() function required for dynamic routes.
@@ -21,12 +21,12 @@ nav_next: {"path": "../i18n-no-locale-found-in-path/index.md", "title": "The pat
 
 [Section titled “What went wrong?”](#what-went-wrong)
 
-In [Static Mode](/en/guides/routing/#static-ssg-mode), all routes must be determined at build time. As such, dynamic routes must `export` a `getStaticPaths` function returning the different paths to generate.
+In [Static Mode](../../../guides/routing/index.md#static-ssg-mode), all routes must be determined at build time. As such, dynamic routes must `export` a `getStaticPaths` function returning the different paths to generate.
 
 **See Also:**
 
-*   [Dynamic Routes](/en/guides/routing/#dynamic-routes)
-*   [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths)
-*   [Server-side Rendering](/en/guides/on-demand-rendering/)
+*   [Dynamic Routes](../../../guides/routing/index.md#dynamic-routes)
+*   [`getStaticPaths()`](../../routing-reference/index.md#getstaticpaths)
+*   [Server-side Rendering](../../../guides/on-demand-rendering/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

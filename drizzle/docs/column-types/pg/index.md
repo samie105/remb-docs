@@ -10,8 +10,8 @@ content_hash: "01c9920ebf92af96d940eb6d554a06e177547ff8981727ebb48a535adcebdca4"
 menu_path: ["PostgreSQL column types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../connect-drizzle-proxy/index.md", "title": "Drizzle HTTP proxy"}
-nav_next: {"path": "../../indexes-constraints/index.md", "title": "Indexes & Constraints"}
+nav_prev: {"path": "drizzle/docs/connect-drizzle-proxy/index.md", "title": "Drizzle HTTP proxy"}
+nav_next: {"path": "drizzle/docs/indexes-constraints/index.md", "title": "Indexes & Constraints"}
 ---
 
 We have native support for all of them, yet if that’s not enough for you, feel free to create **[custom types](../../custom-types/index.md)**.

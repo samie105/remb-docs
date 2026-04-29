@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:44.277Z"
 content_hash: "22788e1d56dc896ac90c79459f2c44352481b2f2fd997c9ef509a3ff29a6cdce"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Overview","Overview"]
-nav_prev: {"path": "../auth-email-templates/index.md", "title": "Email Templates"}
-nav_next: {"path": "before-user-created-hook/index.md", "title": "Before User Created Hook"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-email-templates/index.md", "title": "Email Templates"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/before-user-created-hook/index.md", "title": "Before User Created Hook"}
 ---
 
 # 
@@ -41,33 +41,33 @@ Hook
 
 Available on Plan
 
-[Before User Created](/docs/guides/auth/auth-hooks/before-user-created-hook)
+[Before User Created](before-user-created-hook/index.md)
 
 Free, Pro
 
-[Custom Access Token](/docs/guides/auth/auth-hooks/custom-access-token-hook)
+[Custom Access Token](custom-access-token-hook/index.md)
 
 Free, Pro
 
-[Send SMS](/docs/guides/auth/auth-hooks/send-sms-hook)
+[Send SMS](send-sms-hook/index.md)
 
 Free, Pro
 
-[Send Email](/docs/guides/auth/auth-hooks/send-email-hook)
+[Send Email](send-email-hook/index.md)
 
 Free, Pro
 
-[MFA Verification Attempt](/docs/guides/auth/auth-hooks/mfa-verification-hook)
+[MFA Verification Attempt](mfa-verification-hook/index.md)
 
 Teams and Enterprise
 
-[Password Verification Attempt](/docs/guides/auth/auth-hooks/password-verification-hook)
+[Password Verification Attempt](password-verification-hook/index.md)
 
 Teams and Enterprise
 
 Supabase supports 2 ways to [configure a hook](/dashboard/project/_/auth/hooks) in your project:
 
-A [Postgres function](/docs/guides/database/functions) can be configured as a hook. The function should take in a single argument -- the event of type JSONB -- and return a JSONB object. Since the Postgres function runs on your database, the request does not leave your project's instance.
+A [Postgres function](../../database/functions/index.md) can be configured as a hook. The function should take in a single argument -- the event of type JSONB -- and return a JSONB object. Since the Postgres function runs on your database, the request does not leave your project's instance.
 
 ## Security model[#](#security-model)
 
@@ -82,11 +82,11 @@ When you configure a Postgres function as a hook, Supabase will automatically ap
 1-- Grant access to function to supabase_auth_admin2grant execute3  on function public.custom_access_token_hook4  to supabase_auth_admin;56-- Grant access to schema to supabase_auth_admin7grant usage on schema public to supabase_auth_admin;89-- Revoke function permissions from authenticated, anon and public10revoke execute11  on function public.custom_access_token_hook12  from authenticated, anon, public;
 ```
 
-You will need to alter your row-level security (RLS) policies to allow the `supabase_auth_admin` role to access tables that you have RLS policies on. You can read more about RLS policies [here](/docs/guides/database/postgres/row-level-security).
+You will need to alter your row-level security (RLS) policies to allow the `supabase_auth_admin` role to access tables that you have RLS policies on. You can read more about RLS policies [here](../../database/postgres/row-level-security/index.md).
 
 Alternatively, you can create your Postgres function via the dashboard with the `security definer` tag. The `security definer` tag specifies that the function is to be executed with the privileges of the user that owns it.
 
-Currently, functions created via the dashboard take on the `postgres` role. Read more about the `security definer` tag [in our database guide](/docs/guides/database/functions#security-definer-vs-invoker)
+Currently, functions created via the dashboard take on the `postgres` role. Read more about the `security definer` tag [in our database guide](../../database/functions/index.md#security-definer-vs-invoker)
 
 ## Using Hooks[#](#using-hooks)
 
@@ -174,7 +174,7 @@ For security, we recommend against the use the `security definer` tag. The `secu
 
 We recommend that you do not use any tag and explicitly grant permissions to `supabase_auth_admin` as described above.
 
-Read more about `security definer` tag [in our database guide](/docs/guides/database/functions#security-definer-vs-invoker).
+Read more about `security definer` tag [in our database guide](../../database/functions/index.md#security-definer-vs-invoker).
 
 Once done, save your Auth Hook as a migration in order to version the Auth Hook and share it with other team members. Run [`supabase migration new`](/docs/reference/cli/supabase-migration-new) to create a migration.
 
@@ -229,7 +229,7 @@ Custom Access Token
 
 Customize the access token issued by Supabase Auth
 
-](/docs/guides/auth/auth-hooks/custom-access-token-hook)
+](custom-access-token-hook/index.md)
 
 [
 
@@ -237,7 +237,7 @@ Send SMS
 
 Use a custom SMS provider to send authentication messages
 
-](/docs/guides/auth/auth-hooks/send-sms-hook)
+](send-sms-hook/index.md)
 
 [
 
@@ -245,7 +245,7 @@ Send Email
 
 Use a custom email provider to send authentication messages
 
-](/docs/guides/auth/auth-hooks/send-email-hook)
+](send-email-hook/index.md)
 
 [
 
@@ -253,7 +253,7 @@ MFA Verification
 
 Add additional checks to the MFA verification flow
 
-](/docs/guides/auth/auth-hooks/mfa-verification-hook)
+](mfa-verification-hook/index.md)
 
 [
 
@@ -261,4 +261,4 @@ Password verification
 
 Add additional checks to the password verification flow
 
-](/docs/guides/auth/auth-hooks/password-verification-hook)
+](password-verification-hook/index.md)

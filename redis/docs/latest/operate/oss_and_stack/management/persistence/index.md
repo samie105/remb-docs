@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:10:31.589Z"
 content_hash: "5ef7fc429cc7a7232353c70c090ea0f05736b4cba891ad6c3f0dee05b160ddcc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis persistence","→","Redis persistence"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis persistence","→","Redis persistence"]
-nav_prev: {"path": "../optimization/memory-optimization/index.md", "title": "Memory optimization"}
-nav_next: {"path": "../replication/index.md", "title": "Redis replication"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/memory-optimization/index.md", "title": "Memory optimization"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/replication/index.md", "title": "Redis replication"}
 ---
 
 # Redis persistence
@@ -36,7 +36,7 @@ To learn more about how to evaluate your Redis persistence strategy, read on.
 *   RDB is very good for disaster recovery, being a single compact file that can be transferred to far data centers, or onto Amazon S3 (possibly encrypted).
 *   RDB maximizes Redis performances since the only work the Redis parent process needs to do in order to persist is forking a child that will do all the rest. The parent process will never perform disk I/O or alike.
 *   RDB allows faster restarts with big datasets compared to AOF.
-*   On replicas, RDB supports [partial resynchronizations after restarts and failovers](/docs/latest/operate/oss_and_stack/management/replication/#partial-resynchronizations-after-restarts-and-failovers).
+*   On replicas, RDB supports [partial resynchronizations after restarts and failovers](../replication/index.md#partial-resynchronizations-after-restarts-and-failovers).
 
 ## RDB disadvantages
 

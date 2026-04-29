@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:41.234Z"
 content_hash: "1f0edea59cb19582d92df304d9ec8abd70183362a75d489d530a131046fc0926"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Protocol","Protocol"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Protocol","Protocol"]
-nav_prev: {"path": "../pricing/index.md", "title": "Realtime Pricing"}
-nav_next: {"path": "../realtime-listening-flutter/index.md", "title": "Listening to Postgres Changes with Flutter"}
+nav_prev: {"path": "supabase/docs/guides/realtime/pricing/index.md", "title": "Realtime Pricing"}
+nav_next: {"path": "supabase/docs/guides/realtime/realtime-listening-flutter/index.md", "title": "Listening to Postgres Changes with Flutter"}
 ---
 
 # 

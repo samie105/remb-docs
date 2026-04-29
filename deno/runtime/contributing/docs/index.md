@@ -10,8 +10,8 @@ content_hash: "7b175703a615884961c8d2239ad62172a8fd7e7fc5af942731636b1a3eb253eb"
 menu_path: ["Documentation guidelines"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../style_guide/index.md", "title": "Deno Style Guide"}
-nav_next: {"path": "../examples/index.md", "title": "Contributing an example"}
+nav_prev: {"path": "deno/runtime/contributing/style_guide/index.md", "title": "Deno Style Guide"}
+nav_next: {"path": "deno/runtime/contributing/examples/index.md", "title": "Contributing an example"}
 ---
 
 **On this page**
@@ -22,8 +22,8 @@ We welcome and appreciate contributions to the Deno documentation. If you find a
 
 Some pages in the Deno documentation are generated from source files in the Deno repository. These pages are not directly editable:
 
--   The [API reference](/api/deno/) pages are generated from type definitions in the Deno repository.
--   The [CLI reference](/runtime/reference/cli/) pages for each individual command are generated from source files in the Deno repository.
+-   The [API reference](../../../api/deno/index.md) pages are generated from type definitions in the Deno repository.
+-   The [CLI reference](../../reference/cli/index.md) pages for each individual command are generated from source files in the Deno repository.
 
 If you find an issue with one of these pages, you can either submit a pull request to the Deno repository. Or raise an issue in the [Deno docs repository](https://github.com/denoland/docs/issues) and we'll get it fixed.
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:30.254Z"
 content_hash: "f2a983bd73d6bd7e6890fcddf9f0967e516450bb028a431d0a8b49b82b3ab7e5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)"]
-nav_prev: {"path": "../lettuce/vecsearch/index.md", "title": "Index and query vectors"}
-nav_next: {"path": "amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/vecsearch/index.md", "title": "Index and query vectors"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/amr/index.md", "title": "Connect to Azure Managed Redis"}
 ---
 
 # node-redis guide (JavaScript)
@@ -21,11 +21,11 @@ Connect your Node.js/JavaScript application to a Redis database
 
 Note:
 
-node-redis is the recommended client library for Node.js/JavaScript, but we also support and document our older JavaScript client [`ioredis`](/docs/latest/develop/clients/ioredis/). See [Migrate from ioredis](/docs/latest/develop/clients/nodejs/migration/) if you are interested in converting an existing `ioredis` project to `node-redis`.
+node-redis is the recommended client library for Node.js/JavaScript, but we also support and document our older JavaScript client [`ioredis`](../ioredis/index.md). See [Migrate from ioredis](/docs/latest/develop/clients/nodejs/migration/) if you are interested in converting an existing `ioredis` project to `node-redis`.
 
 `node-redis` requires a running Redis server. See [here](/docs/latest/operate/oss_and_stack/install/) for Redis Open Source installation instructions.
 
-You can also access Redis with an object-mapping client interface. See [RedisOM for Node.js](/docs/latest/integrate/redisom-for-node-js/) for more information.
+You can also access Redis with an object-mapping client interface. See [RedisOM for Node.js](../../../integrate/redisom-for-node-js/index.md) for more information.
 
 ## Install
 

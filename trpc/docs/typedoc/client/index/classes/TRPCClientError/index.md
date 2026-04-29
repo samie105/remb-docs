@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:11.232Z"
 content_hash: "15db2ec3428c1cd88a0bb298d946e4bbf20010f0ee4acfb4bf1b30ec89436020"
 menu_path: ["Class: TRPCClientError<TRouterOrProcedure>"]
 section_path: []
-nav_prev: {"path": "../../index.md", "title": "index"}
-nav_next: {"path": "../TRPCUntypedClient/index.md", "title": "Class: TRPCUntypedClient<TInferrable>"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/index.md", "title": "index"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/classes/TRPCUntypedClient/index.md", "title": "Class: TRPCUntypedClient<TInferrable>"}
 ---
 
 Defined in: [packages/client/src/TRPCClientError.ts:47](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/TRPCClientError.ts#L47)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:07:16.065Z"
 content_hash: "04bff61ce4ff8e4033461c0ccf3d1de5907c75386f3551488c1ac1fbd9fcc16a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts"]
-nav_prev: {"path": "../../../../reference/signals/index.md", "title": "Redis signal handling"}
-nav_next: {"path": "binary_data/index.md", "title": "Binary data"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/signals/index.md", "title": "Redis signal handling"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/binary_data/index.md", "title": "Binary data"}
 ---
 
 # Concepts

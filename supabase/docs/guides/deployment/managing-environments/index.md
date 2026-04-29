@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:13.912Z"
 content_hash: "fe679a375ee0f1ef0731f306872de25ad68b2f6189c17ef729f2808c8bb34e08"
 menu_path: ["Deployment & Branching","Deployment & Branching","Environments","Environments","Managing environments","Managing environments"]
 section_path: ["Deployment & Branching","Deployment & Branching","Environments","Environments","Managing environments","Managing environments"]
-nav_prev: {"path": "../going-into-prod/index.md", "title": "Production Checklist"}
-nav_next: {"path": "../maturity-model/index.md", "title": "Maturity Model"}
+nav_prev: {"path": "supabase/docs/guides/deployment/going-into-prod/index.md", "title": "Production Checklist"}
+nav_next: {"path": "supabase/docs/guides/deployment/maturity-model/index.md", "title": "Maturity Model"}
 ---
 
 # 

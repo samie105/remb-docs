@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:09.901Z"
 content_hash: "86504859109ba6f8e6a3f578d2696fedf56a66d7090b671e6957eaf3ad465d98"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Vector search concepts","→","Vector search concepts","→\n      \n        Vector quantization and compression","→","Vector quantization and compression"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Vector search concepts","→","Vector search concepts","→\n      \n        Vector quantization and compression","→","Vector quantization and compression"]
-nav_prev: {"path": "../index.md", "title": "Vector search concepts"}
-nav_next: {"path": "../../../../clients/dotnet/index.md", "title": "NRedisStack guide (C#/.NET)"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/vectors/index.md", "title": "Vector search concepts"}
+nav_next: {"path": "redis/docs/latest/develop/clients/dotnet/index.md", "title": "NRedisStack guide (C#/.NET)"}
 ---
 
 # Vector quantization and compression
@@ -131,7 +131,7 @@ The strong performance of LVQ and LeanVec stems from their ability to adapt to t
 
 ### What does this mean in practice?
 
-*   **Initial training requirement:** A minimum number of representative vectors is required during index initialization to train the compression parameters (see the [TRAINING\_THRESHOLD](/docs/latest/develop/ai/search-and-query/vectors/#svs-vamana-index) parameter). A random sample from the dataset typically works well.
+*   **Initial training requirement:** A minimum number of representative vectors is required during index initialization to train the compression parameters (see the [TRAINING\_THRESHOLD](../index.md#svs-vamana-index) parameter). A random sample from the dataset typically works well.
 *   **Handling data drift:** If the characteristics of incoming vectors change significantly over time (that is, a data distribution shift), compression quality may degrade. This is a general limitation of all data-dependent compression methods,not just LVQ and LeanVec. When the data no longer resembles the original training sample, the learned representation becomes less effective.
 
 ## Build Redis Open Source with Intel SVS support

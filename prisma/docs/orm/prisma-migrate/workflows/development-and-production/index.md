@@ -11,8 +11,8 @@ menu_path: ["Development and production"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../customizing-migrations/index.md", "title": "Customizing migrations"}
-nav_next: {"path": "../generating-down-migrations/index.md", "title": "Generating down migrations"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md", "title": "Customizing migrations"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/generating-down-migrations/index.md", "title": "Generating down migrations"}
 ---
 
 Workflows

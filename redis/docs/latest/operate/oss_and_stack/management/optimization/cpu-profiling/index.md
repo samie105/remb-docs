@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:14.019Z"
 content_hash: "aa29a2e1b32fe1624da5b3402af6631ec404001a23eb0a06fa51937fdf2e81b4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis CPU profiling","→","Redis CPU profiling"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis CPU profiling","→","Redis CPU profiling"]
-nav_prev: {"path": "../benchmarks/index.md", "title": "Redis benchmark"}
-nav_next: {"path": "../latency-monitor/index.md", "title": "Redis latency monitoring"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/benchmarks/index.md", "title": "Redis benchmark"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/latency-monitor/index.md", "title": "Redis latency monitoring"}
 ---
 
 # Redis CPU profiling

@@ -10,8 +10,8 @@ content_hash: "0f0278064b04d48b19d620091a2ae40c87850a91b060631fd52683777013b4f8"
 menu_path: ["Preflight"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../functions-and-directives/index.md", "title": "Functions and directives"}
-nav_next: {"path": "../aspect-ratio/index.md", "title": "aspect-ratio"}
+nav_prev: {"path": "tailwind/docs/functions-and-directives/index.md", "title": "Functions and directives"}
+nav_next: {"path": "tailwind/docs/aspect-ratio/index.md", "title": "aspect-ratio"}
 ---
 
 An opinionated set of base styles for Tailwind projects.

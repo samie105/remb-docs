@@ -11,8 +11,8 @@ menu_path: ["ImageResponse"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../headers/index.md", "title": "headers"}
-nav_next: {"path": "../next-request/index.md", "title": "NextRequest"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/headers/index.md", "title": "headers"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/next-request/index.md", "title": "NextRequest"}
 ---
 
 # ImageResponse
@@ -131,7 +131,7 @@ export async function GET() {
 
 ### File-based Metadata[](#file-based-metadata)
 
-You can use `ImageResponse` in a [`opengraph-image.tsx`](/docs/app/api-reference/file-conventions/metadata/opengraph-image) file to generate Open Graph images at build time or dynamically at request time.
+You can use `ImageResponse` in a [`opengraph-image.tsx`](../../file-conventions/metadata/opengraph-image/index.md) file to generate Open Graph images at build time or dynamically at request time.
 
 app/opengraph-image.tsx
 

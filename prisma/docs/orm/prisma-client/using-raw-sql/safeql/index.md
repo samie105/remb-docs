@@ -11,8 +11,8 @@ menu_path: ["SafeQL & Prisma Client"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../raw-queries/index.md", "title": "Raw queries"}
-nav_next: {"path": "../typedsql/index.md", "title": "TypedSQL"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md", "title": "Raw queries"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md", "title": "TypedSQL"}
 ---
 
 Learn how to use SafeQL and Prisma Client extensions to work around features not natively supported by Prisma, such as PostGIS

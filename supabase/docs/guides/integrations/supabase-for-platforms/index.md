@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:34.645Z"
 content_hash: "17e827267cfa4c142a4b384d525f782e0dc7922e74418dbf28d0f065eb0826a4"
 menu_path: ["Integrations","Integrations","Build Your Own","Build Your Own","Supabase for Platforms","Supabase for Platforms"]
 section_path: ["Integrations","Integrations","Build Your Own","Build Your Own","Supabase for Platforms","Supabase for Platforms"]
-nav_prev: {"path": "../build-a-supabase-oauth-integration/index.md", "title": "Build a Supabase Integration"}
-nav_next: {"path": "../supabase-marketplace/index.md", "title": "Supabase Marketplace"}
+nav_prev: {"path": "supabase/docs/guides/integrations/build-a-supabase-oauth-integration/index.md", "title": "Build a Supabase Integration"}
+nav_next: {"path": "supabase/docs/guides/integrations/supabase-marketplace/index.md", "title": "Supabase Marketplace"}
 ---
 
 # 
@@ -23,15 +23,15 @@ Use Supabase as a platform for your own business and tools.
 
 * * *
 
-Supabase is a [Platform as a Service](https://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) that can be managed programmatically. You can use it to offer the key primitives to your own users, such as [Database](/docs/guides/database/overview), [Auth](/docs/guides/auth), [Edge Functions](/docs/guides/functions), [Storage](/docs/guides/storage), and [Realtime](/docs/guides/realtime). Supabase is commonly used as a platform by AI Builders and frameworks needing a backend.
+Supabase is a [Platform as a Service](https://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) that can be managed programmatically. You can use it to offer the key primitives to your own users, such as [Database](../../database/overview/index.md), [Auth](../../auth/index.md), [Edge Functions](../../functions/index.md), [Storage](../../storage/index.md), and [Realtime](../../realtime/index.md). Supabase is commonly used as a platform by AI Builders and frameworks needing a backend.
 
-This document will guide you on best practices when using Supabase for your own platform and assumes that Supabase projects are in a Supabase organization that you own. If you want to instead interact with projects that your users own, navigate to [OAuth integration](/docs/guides/integrations/build-a-supabase-oauth-integration) for more details.
+This document will guide you on best practices when using Supabase for your own platform and assumes that Supabase projects are in a Supabase organization that you own. If you want to instead interact with projects that your users own, navigate to [OAuth integration](../build-a-supabase-oauth-integration/index.md) for more details.
 
 ![Platform as a Service](/docs/img/integrations/paas-intro.png)
 
 ## Overview[#](#overview)
 
-All features of Supabase can be managed through the [Management API](/docs/reference/api/introduction) or the [remote MCP Server](/docs/guides/getting-started/mcp).
+All features of Supabase can be managed through the [Management API](/docs/reference/api/introduction) or the [remote MCP Server](../../getting-started/mcp/index.md).
 
 ## Launching projects[#](#launching-projects)
 
@@ -272,7 +272,7 @@ Only select customers have access to claim flow. Submit this [form](/solutions/a
 
 Your users may want to claim the project that currently lives in your org so that they can have more control over it.
 
-We've enabled transferring the project from your org to your user's org while you continue to retain access to interact with the project through an [OAuth integration](/docs/guides/integrations/build-a-supabase-oauth-integration).
+We've enabled transferring the project from your org to your user's org while you continue to retain access to interact with the project through an [OAuth integration](../build-a-supabase-oauth-integration/index.md).
 
 ```
 1curl -L "https://api.supabase.com/v1/oauth/authorize/project-claim?project_ref={ref}&client_id={oauth_client_id}&response_type=code&redirect_uri={redirect_uri}" \2  --request GET \3  --header 'Authorization: Bearer {PERSONAL_ACCESS_TOKEN}'

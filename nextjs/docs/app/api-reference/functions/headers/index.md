@@ -11,15 +11,15 @@ menu_path: ["headers"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../generate-viewport/index.md", "title": "generateViewport"}
-nav_next: {"path": "../image-response/index.md", "title": "ImageResponse"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-viewport/index.md", "title": "generateViewport"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/image-response/index.md", "title": "ImageResponse"}
 ---
 
 # headers
 
 Last updated April 23, 2026
 
-`headers` is an **async** function that allows you to **read** the HTTP incoming request headers from a [Server Component](/docs/app/getting-started/server-and-client-components).
+`headers` is an **async** function that allows you to **read** the HTTP incoming request headers from a [Server Component](../../../getting-started/server-and-client-components/index.md).
 
 app/page.tsx
 
@@ -56,7 +56,7 @@ export default async function Page() {
 -   `headers` is an **asynchronous** function that returns a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function.
     -   In version 14 and earlier, `headers` was a synchronous function. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
 -   Since `headers` is read-only, you cannot `set` or `delete` the outgoing request headers.
--   `headers` is a [Request-time API](/docs/app/glossary#request-time-apis) whose returned values cannot be known ahead of time. Using it in will opt a route into **[dynamic rendering](/docs/app/glossary#dynamic-rendering)**.
+-   `headers` is a [Request-time API](../../../glossary/index.md#request-time-apis) whose returned values cannot be known ahead of time. Using it in will opt a route into **[dynamic rendering](../../../glossary/index.md#dynamic-rendering)**.
 
 ## Examples[](#examples)
 
@@ -82,7 +82,7 @@ export default async function Page() {
 
 | Version | Changes |
 | --- | --- |
-| `v15.0.0-RC` | `headers` is now an async function. A [codemod](/docs/app/guides/upgrading/codemods#150) is available. |
+| `v15.0.0-RC` | `headers` is now an async function. A [codemod](../../../guides/upgrading/codemods/index.md#150) is available. |
 | `v13.0.0` | `headers` introduced. |
 
 Was this helpful?

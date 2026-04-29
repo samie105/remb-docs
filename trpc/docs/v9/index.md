@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:57.118Z"
 content_hash: "28411899305acb7935b8c2fa6db494300359795be88d00e0e89054aca513aec5"
 menu_path: ["tRPC | tRPC"]
 section_path: []
-nav_prev: {"path": "../v10/videos-and-community-resources/index.md", "title": "Videos and Community Resources"}
-nav_next: {"path": "authorization/index.md", "title": "Authorization"}
+nav_prev: {"path": "trpc/docs/v10/videos-and-community-resources/index.md", "title": "Videos and Community Resources"}
+nav_next: {"path": "trpc/docs/v9/authorization/index.md", "title": "Authorization"}
 ---
 
 ![tRPC](https://trpc.io/img/logo-text-white.svg)

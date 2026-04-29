@@ -11,17 +11,17 @@ menu_path: ["useRouter"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../use-report-web-vitals/index.md", "title": "useReportWebVitals"}
-nav_next: {"path": "../use-search-params/index.md", "title": "useSearchParams"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-search-params/index.md", "title": "useSearchParams"}
 ---
 
 # useRouter
 
 Last updated April 23, 2026
 
-The `useRouter` hook allows you to programmatically change routes inside [Client Components](/docs/app/getting-started/server-and-client-components).
+The `useRouter` hook allows you to programmatically change routes inside [Client Components](../../../getting-started/server-and-client-components/index.md).
 
-> **Recommendation:** Use the [`<Link>` component](/docs/app/api-reference/components/link) for navigation unless you have a specific requirement for using `useRouter`.
+> **Recommendation:** Use the [`<Link>` component](../../components/link/index.md) for navigation unless you have a specific requirement for using `useRouter`.
 
 app/example-client-component.tsx
 
@@ -47,8 +47,8 @@ export default function Page() {
 
 -   `router.push(href: string, { scroll: boolean, transitionTypes: string[] })`: Perform a client-side navigation to the provided route. Adds a new entry into the [browser's history stack](https://developer.mozilla.org/docs/Web/API/History_API). The optional `transitionTypes` are passed to [`React.addTransitionType`](https://react.dev/reference/react/addTransitionType) inside the navigation Transition.
 -   `router.replace(href: string, { scroll: boolean, transitionTypes: string[] })`: Perform a client-side navigation to the provided route without adding a new entry into the browser’s history stack. The optional `transitionTypes` are passed to [`React.addTransitionType`](https://react.dev/reference/react/addTransitionType) inside the navigation Transition.
--   `router.refresh()`: Refresh the current route. Making a new request to the server, re-fetching data requests, and re-rendering Server Components. The client will merge the updated React Server Component payload without losing unaffected client-side React (e.g. `useState`) or browser state (e.g. scroll position). This clears the [Client Cache](/docs/app/glossary#client-cache) for the current route, but does **not** invalidate the server-side cache. Use [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) to invalidate server-side cached data.
--   `router.prefetch(href: string, options?: { onInvalidate?: () => void })`: [Prefetch](/docs/app/getting-started/linking-and-navigating#prefetching) the provided route for faster client-side transitions. The optional `onInvalidate` callback is called when the [prefetched data becomes stale](/docs/app/guides/prefetching#extending-or-ejecting-link).
+-   `router.refresh()`: Refresh the current route. Making a new request to the server, re-fetching data requests, and re-rendering Server Components. The client will merge the updated React Server Component payload without losing unaffected client-side React (e.g. `useState`) or browser state (e.g. scroll position). This clears the [Client Cache](../../../glossary/index.md#client-cache) for the current route, but does **not** invalidate the server-side cache. Use [`revalidatePath`](../revalidatePath/index.md) or [`revalidateTag`](../revalidateTag/index.md) to invalidate server-side cached data.
+-   `router.prefetch(href: string, options?: { onInvalidate?: () => void })`: [Prefetch](../../../getting-started/linking-and-navigating/index.md#prefetching) the provided route for faster client-side transitions. The optional `onInvalidate` callback is called when the [prefetched data becomes stale](../../../guides/prefetching/index.md#extending-or-ejecting-link).
 -   `router.back()`: Navigate back to the previous route in the browser’s history stack.
 -   `router.forward()`: Navigate forwards to the next page in the browser’s history stack.
 
@@ -62,11 +62,11 @@ export default function Page() {
 ### Migrating from `next/router`[](#migrating-from-nextrouter)
 
 -   The `useRouter` hook should be imported from `next/navigation` and not `next/router` when using the App Router
--   The `pathname` string has been removed and is replaced by [`usePathname()`](/docs/app/api-reference/functions/use-pathname)
--   The `query` object has been removed and is replaced by [`useSearchParams()`](/docs/app/api-reference/functions/use-search-params)
+-   The `pathname` string has been removed and is replaced by [`usePathname()`](../use-pathname/index.md)
+-   The `query` object has been removed and is replaced by [`useSearchParams()`](../use-search-params/index.md)
 -   `router.events` has been replaced. [See below.](#router-events)
 
-[View the full migration guide](/docs/app/guides/migrating/app-router-migration).
+[View the full migration guide](../../../guides/migrating/app-router-migration/index.md).
 
 ## Examples[](#examples)
 
@@ -120,7 +120,7 @@ export default function Layout({ children }) {
 }
 ```
 
-> **Good to know**: `<NavigationEvents>` is wrapped in a [`Suspense` boundary](/docs/app/api-reference/file-conventions/loading#examples) because[`useSearchParams()`](/docs/app/api-reference/functions/use-search-params) causes client-side rendering up to the closest `Suspense` boundary during [prerendering](/docs/app/glossary#prerendering). [Learn more](/docs/app/api-reference/functions/use-search-params#behavior).
+> **Good to know**: `<NavigationEvents>` is wrapped in a [`Suspense` boundary](../../file-conventions/loading/index.md#examples) because[`useSearchParams()`](../use-search-params/index.md) causes client-side rendering up to the closest `Suspense` boundary during [prerendering](../../../glossary/index.md#prerendering). [Learn more](../use-search-params/index.md#behavior).
 
 ### Disabling scroll to top[](#disabling-scroll-to-top)
 

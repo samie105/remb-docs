@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:23.559Z"
 content_hash: "aab1c1c9be2c25b10b46aa1fe7d356014dd6f33e51c9d4309ebc96c6dd536426"
 menu_path: ["Queues","Queues","References","References","API","API"]
 section_path: ["Queues","Queues","References","References","API","API"]
-nav_prev: {"path": "../index.md", "title": "Supabase Queues"}
-nav_next: {"path": "../consuming-messages-with-edge-functions/index.md", "title": "Consuming Supabase Queue Messages with Edge Functions"}
+nav_prev: {"path": "supabase/docs/guides/queues/index.md", "title": "Supabase Queues"}
+nav_next: {"path": "supabase/docs/guides/queues/consuming-messages-with-edge-functions/index.md", "title": "Consuming Supabase Queue Messages with Edge Functions"}
 ---
 
 # 
@@ -21,7 +21,7 @@ API
 
 When you create a Queue in Supabase, you can choose to create helper database functions in the `pgmq_public` schema. This schema exposes operations to manage Queue Messages to consumers client-side, but does not expose functions for creating or dropping Queues.
 
-Database functions in `pgmq_public` can be exposed via Supabase Data API so consumers client-side can call them. Visit the [Quickstart](/docs/guides/queues/quickstart) for an example.
+Database functions in `pgmq_public` can be exposed via Supabase Data API so consumers client-side can call them. Visit the [Quickstart](../quickstart/index.md) for an example.
 
 ### `pgmq_public.pop(queue_name)`[#](#pgmqpublicpopqueuename)
 

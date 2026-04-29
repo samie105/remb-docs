@@ -10,8 +10,8 @@ content_hash: "27c286447043e861afa3f5294161ed6d8a9669c5785778b32936cac13530d628"
 menu_path: ["Operating against partial structures of your model types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Type safety Overview"}
-nav_next: {"path": "../prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/index.md", "title": "Type safety Overview"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
 ---
 
 Type Safety

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:39.657Z"
 content_hash: "7c04fc80503087845901066d8f89c24c599a5156c3ace59fa4da0e5462795604"
 menu_path: ["Auth","Auth","Getting Started","Getting Started","Next.js","Next.js"]
 section_path: ["Auth","Auth","Getting Started","Getting Started","Next.js","Next.js"]
-nav_prev: {"path": "../astrojs/index.md", "title": "Use Supabase Auth with Astro"}
-nav_next: {"path": "../react/index.md", "title": "Use Supabase Auth with React"}
+nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/astrojs/index.md", "title": "Use Supabase Auth with Astro"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/react/index.md", "title": "Use Supabase Auth with React"}
 ---
 
 # 
@@ -90,7 +90,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -119,4 +119,4 @@ To sign up a new user, navigate to [http://localhost:3000/auth/sign-up](http://l
 ## Learn more[#](#learn-more)
 
 *   [Setting up Server-Side Auth for Next.js](/docs/guides/auth/server-side/nextjs) for a Next.js deep dive
-*   [Supabase Auth docs](/docs/guides/auth#authentication) for more Supabase authentication methods
+*   [Supabase Auth docs](../../index.md#authentication) for more Supabase authentication methods

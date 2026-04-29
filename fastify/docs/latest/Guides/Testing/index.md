@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:08.154Z"
 content_hash: "1e156bccc84eb73f80b68f2239c3a58b8701f267153a147dbe76228c08d770e4"
 menu_path: ["Testing"]
 section_path: []
-nav_prev: {"path": "../Style-Guide/index.md", "title": "Fastify Style Guide"}
-nav_next: {"path": "../Write-Plugin/index.md", "title": "How to write a good plugin"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Style-Guide/index.md", "title": "Fastify Style Guide"}
+nav_next: {"path": "fastify/docs/latest/Guides/Write-Plugin/index.md", "title": "How to write a good plugin"}
 ---
 
 Version: latest (v5.8.x)
@@ -176,7 +176,7 @@ Run `npm i fastify fastify-plugin`
 const fP = require("fastify-plugin")async function myPlugin(fastify, options) {    fastify.decorateRequest("helloRequest", "Hello World")    fastify.decorate("helloInstance", "Hello Fastify Instance")}module.exports = fP(myPlugin)
 ```
 
-A basic example of a Plugin. See [Plugin Guide](/docs/latest/Guides/Plugins-Guide/)
+A basic example of a Plugin. See [Plugin Guide](../Plugins-Guide/index.md)
 
 **test/myFirstPlugin.test.js**:
 

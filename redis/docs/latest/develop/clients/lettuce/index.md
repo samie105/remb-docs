@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:07:47.734Z"
 content_hash: "dd04abc0972a9e12966e4abaa74af78186dd1c047065b6ff80ff9bbabb099c0d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)"]
-nav_prev: {"path": "../jedis/vecsets/index.md", "title": "Vector set embeddings"}
-nav_next: {"path": "amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/vecsets/index.md", "title": "Vector set embeddings"}
+nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/amr/index.md", "title": "Connect to Azure Managed Redis"}
 ---
 
 # Lettuce guide (Java)
 
 Connect your Lettuce application to a Redis database
 
-[Lettuce](https://github.com/redis/lettuce/tree/main/src/main) is an advanced Java client for Redis that supports synchronous, asynchronous, and reactive connections. If you only need synchronous connections then you may find the other Java client [Jedis](/docs/latest/develop/clients/jedis/) easier to use.
+[Lettuce](https://github.com/redis/lettuce/tree/main/src/main) is an advanced Java client for Redis that supports synchronous, asynchronous, and reactive connections. If you only need synchronous connections then you may find the other Java client [Jedis](../jedis/index.md) easier to use.
 
 The sections below explain how to install `Lettuce` and connect your application to a Redis database.
 

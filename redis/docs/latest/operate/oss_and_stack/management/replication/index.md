@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:06.854Z"
 content_hash: "16e6612ada75c59b765bb681d33ed64a931db3f87af89353c7668ddc3d51e18b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis replication","→","Redis replication"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis replication","→","Redis replication"]
-nav_prev: {"path": "../persistence/index.md", "title": "Redis persistence"}
-nav_next: {"path": "../scaling/index.md", "title": "Scale with Redis Cluster"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/persistence/index.md", "title": "Redis persistence"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/scaling/index.md", "title": "Scale with Redis Cluster"}
 ---
 
 # Redis replication
@@ -113,7 +113,7 @@ Diskless replication can be enabled using the `repl-diskless-sync` configuration
 
 Since Redis 2.6, replicas support a read-only mode that is enabled by default. This behavior is controlled by the `replica-read-only` option in the redis.conf file, and can be enabled and disabled at runtime using [`CONFIG SET`](/commands/config-set).
 
-Read-only replicas will reject all write commands, so that it is not possible to write to a replica because of a mistake. This does not mean that the feature is intended to expose a replica instance to the internet or more generally to a network where untrusted clients exist, because administrative commands like [`DEBUG`](/commands/debug) or [`CONFIG`](/commands/config) are still enabled. The [Security](/docs/latest/operate/oss_and_stack/management/security/) page describes how to secure a Redis instance.
+Read-only replicas will reject all write commands, so that it is not possible to write to a replica because of a mistake. This does not mean that the feature is intended to expose a replica instance to the internet or more generally to a network where untrusted clients exist, because administrative commands like [`DEBUG`](/commands/debug) or [`CONFIG`](/commands/config) are still enabled. The [Security](../security/index.md) page describes how to secure a Redis instance.
 
 You may wonder why it is possible to revert the read-only setting and have replica instances that can be targeted by write operations. The answer is that writable replicas exist only for historical reasons. Using writable replicas can result in inconsistency between the master and the replica, so it is not recommended to use writable replicas. To understand in which situations this can be a problem, we need to understand how replication works. Changes on the master is replicated by propagating regular Redis commands to the replica. When a key expires on the master, this is propagated as a DEL command. If a key which exists on the master but is deleted, expired or has a different type on the replica compared to the master will react differently to commands like DEL, INCR or RPOP propagated from the master than intended. The propagated command may fail on the replica or result in a different outcome. To minimize the risks (if you insist on using writable replicas) we suggest you follow these recommendations:
 

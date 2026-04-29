@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:47.841Z"
 content_hash: "db5c9839c03fbb506178c2ac7def33bcb790b52b67b47d64c98589decb2dd3e4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing"]
-nav_prev: {"path": "../deprecated/development/index.md", "title": "Developer notes"}
-nav_next: {"path": "field-and-type-options/index.md", "title": "Field and type options"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/deprecated/development/index.md", "title": "Developer notes"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/index.md", "title": "Field and type options"}
 ---
 
 # Indexing
@@ -23,7 +23,7 @@ In addition to indexing Redis hashes, Redis Open Source can also index JSON docu
 
 When you create an index with the [`FT.CREATE`](/docs/latest/commands/ft.create/) command, include the `ON JSON` keyword to index any existing and future JSON documents stored in the database.
 
-To define the `SCHEMA`, you can provide [JSONPath](/docs/latest/develop/data-types/json/path/) expressions. The result of each JSONPath expression is indexed and associated with a logical name called an `attribute` (previously known as a `field`). You can use these attributes in queries.
+To define the `SCHEMA`, you can provide [JSONPath](../../../data-types/json/path/index.md) expressions. The result of each JSONPath expression is indexed and associated with a logical name called an `attribute` (previously known as a `field`). You can use these attributes in queries.
 
 Note:
 
@@ -219,7 +219,7 @@ For JSON documents, you have two approaches to create TAG fields with multiple v
 
 ### Approach 1: JSON arrays (recommended)
 
-The preferred method for indexing multiple tag values is using JSON arrays. Each array element becomes a separate tag value. Use the [JSONPath](/docs/latest/develop/data-types/json/path/) wildcard operator `[*]` to index array elements.
+The preferred method for indexing multiple tag values is using JSON arrays. Each array element becomes a separate tag value. Use the [JSONPath](../../../data-types/json/path/index.md) wildcard operator `[*]` to index array elements.
 
 ```sql
 # Create index with array indexing
@@ -396,7 +396,7 @@ When JSONPath leads to multiple numerical values:
 
 ## Index JSON arrays as GEO and GEOSHAPE
 
-You can use `GEO` and `GEOSHAPE` fields to store geospatial data, such as geographical locations and geometric shapes. See [Geospatial indexing](/docs/latest/develop/ai/search-and-query/indexing/geoindex/) to learn how to use these schema types and see the [Geospatial](/docs/latest/develop/ai/search-and-query/advanced-concepts/geo/) reference page for an introduction to their format and usage.
+You can use `GEO` and `GEOSHAPE` fields to store geospatial data, such as geographical locations and geometric shapes. See [Geospatial indexing](geoindex/index.md) to learn how to use these schema types and see the [Geospatial](/docs/latest/develop/ai/search-and-query/advanced-concepts/geo/) reference page for an introduction to their format and usage.
 
 ## Index JSON arrays as VECTOR
 
@@ -430,7 +430,7 @@ Now you can search for the two headphones that are most similar to the image emb
    4) "{\"name\":\"Wireless earbuds\",\"description\":\"Wireless Bluetooth in-ear headphones\",\"price\":64.99,\"stock\":17,\"colors\":[\"black\",\"white\"],\"embedding\":[-0.7,-0.51,0.88,0.14]}"
 ```
 
-If you want to index multiple numeric arrays as VECTOR, use a [JSONPath](/docs/latest/develop/data-types/json/path/) leading to multiple numeric arrays using JSONPath operators such as wildcard, filter, union, array slice, and/or recursive descent.
+If you want to index multiple numeric arrays as VECTOR, use a [JSONPath](../../../data-types/json/path/index.md) leading to multiple numeric arrays using JSONPath operators such as wildcard, filter, union, array slice, and/or recursive descent.
 
 For example, assume that your JSON items include an array of vector embeddings, where each vector represents a different image of the same product. To index these vectors, specify the JSONPath `$.embeddings[*]` in the schema definition during index creation:
 
@@ -466,7 +466,7 @@ Now you can search for the two headphones that are most similar to an image embe
 
 Note that `0.771500051022` is the L2 distance between the query vector and `[-0.8,-0.15,0.33,-0.01]`, which is the second element in the embedding array, and it is lower than the L2 distance between the query vector and `[-0.7,-0.51,0.88,0.14]`, which is the first element in the embedding array.
 
-For more information on vector similarity syntax, see [Vector fields](/docs/latest/develop/ai/search-and-query/vectors/).
+For more information on vector similarity syntax, see [Vector fields](../vectors/index.md).
 
 ## Index JSON objects
 
@@ -534,7 +534,7 @@ For example, this query only returns the `name` and `price` of each set of headp
 
 ### Project with JSONPath
 
-You can use [JSONPath](/docs/latest/develop/data-types/json/path/) expressions in a `RETURN` statement to extract any part of the JSON document, even fields that were not defined in the index `SCHEMA`.
+You can use [JSONPath](../../../data-types/json/path/index.md) expressions in a `RETURN` statement to extract any part of the JSON document, even fields that were not defined in the index `SCHEMA`.
 
 For example, the following query uses the JSONPath expression `$.stock` to return each item's stock in addition to the name and price attributes.
 
@@ -617,9 +617,9 @@ For example, highlight the word "bluetooth" with bold HTML tags in item names an
 
 ## Aggregate with JSONPath
 
-You can use [aggregation](/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/) to generate statistics or build facet queries.
+You can use [aggregation](../advanced-concepts/aggregations/index.md) to generate statistics or build facet queries.
 
-The `LOAD` option accepts [JSONPath](/docs/latest/develop/data-types/json/path/) expressions. You can use any value in the pipeline, even if the value is not indexed.
+The `LOAD` option accepts [JSONPath](../../../data-types/json/path/index.md) expressions. You can use any value in the pipeline, even if the value is not indexed.
 
 This example uses aggregation to calculate a 10% price discount for each item and sorts the items from least expensive to most expensive:
 

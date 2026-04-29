@@ -10,8 +10,8 @@ content_hash: "049aef7a844e34afb700af391cd0d671a81f73d062d168fe654e03034df36693"
 menu_path: ["deno uninstall"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../types/index.md", "title": "deno types"}
-nav_next: {"path": "../update/index.md", "title": "deno update"}
+nav_prev: {"path": "deno/runtime/reference/cli/types/index.md", "title": "deno types"}
+nav_next: {"path": "deno/runtime/reference/cli/update/index.md", "title": "deno update"}
 ---
 
 **On this page**
@@ -23,7 +23,7 @@ nav_next: {"path": "../update/index.md", "title": "deno update"}
 
 ## `deno uninstall [PACKAGES]`
 
-Remove dependencies specified in [`deno.json`](/runtime/fundamentals/configuration/) or `package.json`:
+Remove dependencies specified in [`deno.json`](../../../fundamentals/configuration/index.md) or `package.json`:
 
 \>\_
 

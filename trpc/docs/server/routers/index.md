@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:26.512Z"
 content_hash: "71dfdfbb3be7993b4792674f0c5b0dea4d14a84aba4381b2134f68931fcc08cc"
 menu_path: ["Define Routers"]
 section_path: []
-nav_prev: {"path": "../procedures/index.md", "title": "Define Procedures"}
-nav_next: {"path": "../server-side-calls/index.md", "title": "Server Side Calls"}
+nav_prev: {"path": "trpc/docs/server/procedures/index.md", "title": "Define Procedures"}
+nav_next: {"path": "trpc/docs/server/server-side-calls/index.md", "title": "Server Side Calls"}
 ---
 
 To begin building your tRPC-based API, you'll first need to define your router. Once you've mastered the fundamentals, you can [customize your routers](#advanced-usage) for more advanced use cases.

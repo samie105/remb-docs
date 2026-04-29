@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:47:27.471Z"
 content_hash: "7c4cc68a70be2c67ba3b688b3c069f73601309811c183780b3e1261193580c22"
 menu_path: ["Actions API Reference"]
 section_path: []
-nav_prev: {"path": "../../api-reference/index.md", "title": "Astro render context"}
-nav_next: {"path": "../astro-app/index.md", "title": "Adapter Server Entrypoint API Reference"}
+nav_prev: {"path": "astro/en/reference/api-reference/index.md", "title": "Astro render context"}
+nav_next: {"path": "astro/en/reference/modules/astro-app/index.md", "title": "Adapter Server Entrypoint API Reference"}
 ---
 
 # Actions API Reference
 
 **Added in:** `astro@4.15.0`
 
-Actions help you build a type-safe backend you can call from client code and HTML forms. All utilities to define and call actions are exposed by the `astro:actions` module. For examples and usage instructions, [see the Actions guide](/en/guides/actions/).
+Actions help you build a type-safe backend you can call from client code and HTML forms. All utilities to define and call actions are exposed by the `astro:actions` module. For examples and usage instructions, [see the Actions guide](../../../guides/actions/index.md).
 
 ## Imports from `astro:actions`
 
@@ -58,7 +58,7 @@ Return values are parsed using the [devalue library](https://github.com/Rich-Har
 
 **Type:** `ZodType | undefined`
 
-An optional property that accepts a [Zod validator](/en/reference/modules/astro-zod/#common-data-type-validators) (e.g. Zod object, Zod discriminated union) to validate handler inputs at runtime. If the action fails to validate, [a `BAD_REQUEST` error](#actionerror) is returned and the `handler` is not called.
+An optional property that accepts a [Zod validator](../astro-zod/index.md#common-data-type-validators) (e.g. Zod object, Zod discriminated union) to validate handler inputs at runtime. If the action fails to validate, [a `BAD_REQUEST` error](#actionerror) is returned and the `handler` is not called.
 
 If `input` is omitted, the `handler` will receive an input of type `unknown` for JSON requests and type `FormData` for form requests.
 
@@ -76,7 +76,7 @@ Defines the format expected by an action:
 
 When your action accepts form inputs, the `z.object()` validator will automatically parse `FormData` to a typed object. All Zod validators are supported to validate your inputs.
 
-Learn about [using validators with form inputs](/en/guides/actions/#using-validators-with-form-inputs) in the Actions guide, including example usage and special input handling.
+Learn about [using validators with form inputs](../../../guides/actions/index.md#using-validators-with-form-inputs) in the Actions guide, including example usage and special input handling.
 
 ### `actions`
 
@@ -92,7 +92,7 @@ An object containing all your actions with the action name as key associated to 
 async () => {  const { data, error } = await actions.myAction({ /* ... */ });}</script>
 ```
 
-In order for Astro to recognize this property, you may need to restart the dev server or [run the `astro sync` command](/en/reference/cli-reference/#astro-sync) (`s + enter`).
+In order for Astro to recognize this property, you may need to restart the dev server or [run the `astro sync` command](../../cli-reference/index.md#astro-sync) (`s + enter`).
 
 ### `isInputError()`
 
@@ -102,7 +102,7 @@ In order for Astro to recognize this property, you may need to restart the dev s
 
 A utility used to check whether [an `ActionError`](#actionerror) is an input validation error. When the `input` validator is a `z.object()`, input errors include a `fields` object with error messages grouped by name.
 
-See the [form input errors guide](/en/guides/actions/#displaying-form-input-errors) for more on using `isInputError()`.
+See the [form input errors guide](../../../guides/actions/index.md#displaying-form-input-errors) for more on using `isInputError()`.
 
 ### `isActionError()`
 
@@ -167,7 +167,7 @@ An optional property to pass the stack trace.
 
 [Section titled “getActionContext()”](#getactioncontext)
 
-**Type:** `(context: [APIContext](/en/reference/api-reference/)) => AstroActionContext`  
+**Type:** `(context: [APIContext](../../api-reference/index.md)) => AstroActionContext`  
 
 **Added in:** `astro@5.0.0`
 
@@ -231,7 +231,7 @@ This is useful when calling actions from an HTML form to persist and load result
 import { defineMiddleware } from 'astro:middleware';import { getActionContext } from 'astro:actions';export const onRequest = defineMiddleware(async (context, next) => {  const { action, setActionResult, serializeActionResult } = getActionContext(context);  if (action?.calledFrom === 'form') {    const result = await action.handler();    // ... handle the action result    setActionResult(action.name, serializeActionResult(result));  }  return next();});
 ```
 
-See the [advanced sessions guide](/en/guides/actions/#advanced-persist-action-results-with-a-session) for a sample implementation using Netlify Blob.
+See the [advanced sessions guide](../../../guides/actions/index.md#advanced-persist-action-results-with-a-session) for a sample implementation using Netlify Blob.
 
 #### `serializeActionResult()`
 
@@ -264,7 +264,7 @@ Reverses the effect of [`serializeActionResult()`](#serializeactionresult) and r
 
 **Added in:** `astro@5.1.0`
 
-A utility that accepts an action and returns a URL path so you can execute an action call as a `fetch()` operation directly. This allows you to provide details such as custom headers when you call your action. Then, you can [handle the custom-formatted returned data](/en/guides/actions/#handling-returned-data) as needed, just as if you had called an action directly.
+A utility that accepts an action and returns a URL path so you can execute an action call as a `fetch()` operation directly. This allows you to provide details such as custom headers when you call your action. Then, you can [handle the custom-formatted returned data](../../../guides/actions/index.md#handling-returned-data) as needed, just as if you had called an action directly.
 
 This example shows how to call a defined `like` action passing the `Authorization` header and the [`keepalive`](https://developer.mozilla.org/en-US/docs/Web/API/Request/keepalive) option:
 
@@ -313,7 +313,7 @@ import type {  ActionAPIContext,  ActionClient,  ActionErrorCode,  ActionInputSc
 
 [Section titled “ActionAPIContext”](#actionapicontext)
 
-A subset of the [Astro context object](/en/reference/api-reference/). The following properties are not available: `callAction`, `getActionResult`, `props`, and `redirect`.
+A subset of the [Astro context object](../../api-reference/index.md). The following properties are not available: `callAction`, `getActionResult`, `props`, and `redirect`.
 
 ### `ActionClient`
 
@@ -425,4 +425,4 @@ Represents the result of an action call:
 *   on success, `data` contains the output of the action and `error` is `undefined`.
 *   on failure, `error` contains an [`ActionError`](#actionerror) with validation errors or runtime errors, and `data` is `undefined`.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

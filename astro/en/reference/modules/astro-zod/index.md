@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:47:51.321Z"
 content_hash: "860a8abb3d351c4617718839a8e3a3070d090825e3ce4e28d26ceaadb9a560c2"
 menu_path: ["Zod API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-transitions/index.md", "title": "View Transitions Router API Reference"}
-nav_next: {"path": "../../integrations-reference/index.md", "title": "Astro Integration API"}
+nav_prev: {"path": "astro/en/reference/modules/astro-transitions/index.md", "title": "View Transitions Router API Reference"}
+nav_next: {"path": "astro/en/reference/integrations-reference/index.md", "title": "Astro Integration API"}
 ---
 
 # Zod API Reference
 
 [Zod](https://github.com/colinhacks/zod) is a TypeScript-based schema declaration and validation library. This allows you to define schemas you can use to validate data and transform data, from a simple type (e.g. `string`, `number`) to complex data structures (e.g. nested objects).
 
-The `astro/zod` module exposes a re-export of Zod that gives you access to all the features of Zod v4. By using this module, you do not need to install Zod yourself. This also ensures that your project uses the same API versions as Astro when using features such as [Content Collections](/en/guides/content-collections/) or [Actions](/en/guides/actions/).
+The `astro/zod` module exposes a re-export of Zod that gives you access to all the features of Zod v4. By using this module, you do not need to install Zod yourself. This also ensures that your project uses the same API versions as Astro when using features such as [Content Collections](../../../guides/content-collections/index.md) or [Actions](../../../guides/actions/index.md).
 
 See the [Zod website](https://zod.dev/) for complete documentation on how Zod works and what features are available.
 
@@ -56,7 +56,7 @@ const user = z.object({  username: z.string(),  name: z.string().min(2),  email:
 
 [Section titled “Extracting a Typescript type”](#extracting-a-typescript-type)
 
-Zod allows you to create a Typescript type from any schema [using Zod type inference](https://zod.dev/basics#inferring-types). This can be useful for describing an expected data structure when [defining component props](/en/guides/typescript/#component-props).
+Zod allows you to create a Typescript type from any schema [using Zod type inference](https://zod.dev/basics#inferring-types). This can be useful for describing an expected data structure when [defining component props](../../../guides/typescript/index.md#component-props).
 
 The following example create a `User` type based on the previous schema:
 
@@ -91,4 +91,4 @@ import { coerce } from 'astro/zod';
 const publishedOn = coerce.date();const publicationDate = publishedOn.parse("2025-12-03");
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

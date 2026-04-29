@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:43.292Z"
 content_hash: "c01e96e28624e9f15dc3866d575df8b3157a63ab55283df2b83c126b1e64523e"
 menu_path: ["Convert a Buffer to a ReadableStream"]
 section_path: []
-nav_prev: {"path": "../buffer-to-blob/index.md", "title": "Convert a Buffer to a blob"}
-nav_next: {"path": "../buffer-to-string/index.md", "title": "Convert a Buffer to a string"}
+nav_prev: {"path": "bun/docs/guides/binary/buffer-to-blob/index.md", "title": "Convert a Buffer to a blob"}
+nav_next: {"path": "bun/docs/guides/binary/buffer-to-string/index.md", "title": "Convert a Buffer to a string"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../buffer-to-string/index.md", "title": "Convert a Buffer to
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The naive approach to creating a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) from a [`Buffer`](https://nodejs.org/api/buffer.html) is to use the `ReadableStream` constructor and enqueue the entire array as a single chunk. For a large buffer, this may be undesirable as this approach does not “streaming” the data in smaller chunks.
 
@@ -71,7 +71,7 @@ const stream = blob.stream(1024);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -83,10 +83,10 @@ Convert a Buffer to a Uint8Array
 
 Previous
 
-](/docs/guides/binary/buffer-to-typedarray)[
+](../buffer-to-typedarray/index.md)[
 
 Convert a Blob to a string
 
 Next
 
-](/docs/guides/binary/blob-to-string)
+](../blob-to-string/index.md)

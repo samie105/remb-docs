@@ -11,8 +11,8 @@ menu_path: ["Deploy to Koyeb"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
-nav_next: {"path": "../deploy-to-railway/index.md", "title": "Deploy to Railway"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-railway/index.md", "title": "Deploy to Railway"}
 ---
 
 Learn how to deploy a Node.js server that uses Prisma ORM to Koyeb Serverless Platform

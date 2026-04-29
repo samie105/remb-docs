@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:17.610Z"
 content_hash: "633bceb3caa61a18c5dcecae9347fc90526ebaef15cc2f59a375511446ef512f"
 menu_path: ["Create your first Astro page"]
 section_path: []
-nav_prev: {"path": "../../1-setup/5/index.md", "title": "Deploy your site to the web"}
-nav_next: {"path": "../2/index.md", "title": "Write your first Markdown blog post"}
+nav_prev: {"path": "astro/en/tutorial/1-setup/5/index.md", "title": "Deploy your site to the web"}
+nav_next: {"path": "astro/en/tutorial/2-pages/2/index.md", "title": "Write your first Markdown blog post"}
 ---
 
 # Create your first Astro page
@@ -131,9 +131,9 @@ When you are happy with the way your preview looks, **commit** your changes to y
 
 [Section titled “Resources”](#resources)
 
-*   [File-based Routing in Astro](/en/basics/astro-pages/#file-based-routing)
+*   [File-based Routing in Astro](../../../basics/astro-pages/index.md#file-based-routing)
     
-*   [Astro page HTML](/en/basics/astro-pages/#astro-pages)
+*   [Astro page HTML](../../../basics/astro-pages/index.md#astro-pages)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

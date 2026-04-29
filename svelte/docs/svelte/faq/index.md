@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:42.402Z"
 content_hash: "e75c9761b229abd5646ea9179d64ba051ca8f1abb7f9a0cce94a66c701f44b5e"
 menu_path: ["Frequently asked questions"]
 section_path: []
-nav_prev: {"path": "../v5-migration-guide/index.md", "title": "Svelte 5 migration guide"}
-nav_next: {"path": "../svelte/index.md", "title": "svelte"}
+nav_prev: {"path": "svelte/docs/svelte/v5-migration-guide/index.md", "title": "Svelte 5 migration guide"}
+nav_next: {"path": "svelte/docs/svelte/svelte/index.md", "title": "svelte"}
 ---
 
 ## I'm new to Svelte. Where should I start?[](#I'm-new-to-Svelte.-Where-should-I-start)
@@ -92,7 +92,7 @@ _End-to-End Tests_: To ensure your users are able to interact with your applicat
 
 Some resources for getting started with testing:
 
-*   [Svelte docs on testing](/docs/svelte/testing)
+*   [Svelte docs on testing](../testing/index.md)
 *   [Setup Vitest using the Svelte CLI](/docs/cli/vitest)
 *   [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/example/)
 *   [Svelte Component Testing in Cypress](https://docs.cypress.io/guides/component-testing/svelte/overview)
@@ -137,4 +137,4 @@ We recommend using [SvelteKit](/docs/kit), which supports HMR out of the box and
 
 previous next
 
-[Svelte 5 migration guide](/docs/svelte/v5-migration-guide) [svelte](/docs/svelte/svelte)
+[Svelte 5 migration guide](../v5-migration-guide/index.md) [svelte](../svelte/index.md)

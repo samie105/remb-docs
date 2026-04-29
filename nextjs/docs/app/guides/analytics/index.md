@@ -11,15 +11,15 @@ menu_path: ["How to add analytics to your Next.js application"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../ai-agents/index.md", "title": "How to set up your Next.js project for AI coding agents"}
-nav_next: {"path": "../authentication/index.md", "title": "How to implement authentication in Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/ai-agents/index.md", "title": "How to set up your Next.js project for AI coding agents"}
+nav_next: {"path": "nextjs/docs/app/guides/authentication/index.md", "title": "How to implement authentication in Next.js"}
 ---
 
 # How to add analytics to your Next.js application
 
 Last updated April 23, 2026
 
-Next.js has built-in support for measuring and reporting performance metrics. You can either use the [`useReportWebVitals`](/docs/app/api-reference/functions/use-report-web-vitals) hook to manage reporting yourself, or alternatively, Vercel provides a [managed service](https://vercel.com/analytics?utm_source=next-site&utm_medium=docs&utm_campaign=next-website) to automatically collect and visualize metrics for you.
+Next.js has built-in support for measuring and reporting performance metrics. You can either use the [`useReportWebVitals`](../../api-reference/functions/use-report-web-vitals/index.md) hook to manage reporting yourself, or alternatively, Vercel provides a [managed service](https://vercel.com/analytics?utm_source=next-site&utm_medium=docs&utm_campaign=next-website) to automatically collect and visualize metrics for you.
 
 ## Client Instrumentation[](#client-instrumentation)
 
@@ -75,7 +75,7 @@ export default function Layout({ children }) {
 
 > Since the `useReportWebVitals` hook requires the `'use client'` directive, the most performant approach is to create a separate component that the root layout imports. This confines the client boundary exclusively to the `WebVitals` component.
 
-View the [API Reference](/docs/app/api-reference/functions/use-report-web-vitals) for more information.
+View the [API Reference](../../api-reference/functions/use-report-web-vitals/index.md) for more information.
 
 ## Web Vitals[](#web-vitals)
 

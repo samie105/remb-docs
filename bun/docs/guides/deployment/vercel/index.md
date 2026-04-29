@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:23.059Z"
 content_hash: "3e7e56da82faeb67d0e49fbe5a5fccc4635450ee2e70aaa4b212827cf0a1d47e"
 menu_path: ["Deploy a Bun application on Vercel"]
 section_path: []
-nav_prev: {"path": "../render/index.md", "title": "Deploy a Bun application on Render"}
-nav_next: {"path": "../../ecosystem/astro/index.md", "title": "Build an app with Astro and Bun"}
+nav_prev: {"path": "bun/docs/guides/deployment/render/index.md", "title": "Deploy a Bun application on Render"}
+nav_next: {"path": "bun/docs/guides/ecosystem/astro/index.md", "title": "Build an app with Astro and Bun"}
 ---
 
 # Using bunx (no global install)
@@ -73,10 +73,10 @@ Guides
 
 Previous
 
-](/docs/guides)[
+](../../index.md)[
 
 Deploy a Bun application on Railway
 
 Next
 
-](/docs/guides/deployment/railway)
+](../railway/index.md)

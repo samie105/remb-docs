@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:21.786Z"
 content_hash: "54d45ec05115adde47cd14683f596cacffbbeac6d6fd3a82f932b61da52fc0b6"
 menu_path: ["Svelte 4 migration guide"]
 section_path: []
-nav_prev: {"path": "../custom-elements/index.md", "title": "Custom elements"}
-nav_next: {"path": "../v5-migration-guide/index.md", "title": "Svelte 5 migration guide"}
+nav_prev: {"path": "svelte/docs/svelte/custom-elements/index.md", "title": "Custom elements"}
+nav_next: {"path": "svelte/docs/svelte/v5-migration-guide/index.md", "title": "Svelte 5 migration guide"}
 ---
 
 This migration guide provides an overview of how to migrate from Svelte version 3 to 4. See the linked PRs for more details about each change. Use the migration script to migrate some of these automatically: `npx svelte-migrate@latest svelte-4`
@@ -629,4 +629,4 @@ Each preprocessor must also have a name. ([#8618](https://github.com/sveltejs/sv
 
 previous next
 
-[Custom elements](/docs/svelte/custom-elements) [Svelte 5 migration guide](/docs/svelte/v5-migration-guide)
+[Custom elements](../custom-elements/index.md) [Svelte 5 migration guide](../v5-migration-guide/index.md)

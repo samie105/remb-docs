@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:47:38.987Z"
 content_hash: "832f2b29406a984a4a10089b67588f43ce26572cd01f016c2f37f3e1bb933532"
 menu_path: ["Image and Assets API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-app/index.md", "title": "Adapter Server Entrypoint API Reference"}
-nav_next: {"path": "../astro-config/index.md", "title": "Config imports API Reference"}
+nav_prev: {"path": "astro/en/reference/modules/astro-app/index.md", "title": "Adapter Server Entrypoint API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-config/index.md", "title": "Config imports API Reference"}
 ---
 
 # Image and Assets API Reference
 
 **Added in:** `astro@3.0.0`
 
-Astro provides built-in components and helper functions for optimizing and displaying your images. For features and usage examples, [see our image guide](/en/guides/images/).
+Astro provides built-in components and helper functions for optimizing and displaying your images. For features and usage examples, [see our image guide](../../../guides/images/index.md).
 
 ## Imports from `astro:assets`
 
@@ -54,7 +54,7 @@ The `<Image />` component accepts the following listed properties in addition to
 
 The format of the `src` value of your image file depends on where your image file is located:
 
-*   **Local images in `src/`** - you must **also import the image** using a relative file path or configure and use an [import alias](/en/guides/imports/#aliases). Then use the import name as the `src` value:
+*   **Local images in `src/`** - you must **also import the image** using a relative file path or configure and use an [import alias](../../../guides/imports/index.md#aliases). Then use the import name as the `src` value:
     
     ```
     ---import { Image } from 'astro:assets';import myImportedImage from '../assets/my-local-image.png';---<Image src={myImportedImage} alt="descriptive text" />
@@ -201,7 +201,7 @@ Add `inferSize` to the `<Image />` component (or `inferSize: true` to `getImage(
 ---import { Image } from 'astro:assets';---<Image src="https://example.com/cat.png" inferSize alt="A cat sleeping in the sun." />
 ```
 
-As of Astro 5.17.3, `inferSize` only fetches dimensions for [authorized remote image domains](/en/guides/images/#authorizing-remote-images). Remote images outside the allowlist are not fetched.
+As of Astro 5.17.3, `inferSize` only fetches dimensions for [authorized remote image domains](../../../guides/images/index.md#authorizing-remote-images). Remote images outside the allowlist are not fetched.
 
 #### `priority`
 
@@ -235,7 +235,7 @@ These individual attributes can still be set manually if you need to customize t
 
 **Added in:** `astro@5.10.0`
 
-Determines how the image should resize when its container changes size. Can be used to override the default configured value for [`image.layout`](/en/reference/configuration-reference/#imagelayout).
+Determines how the image should resize when its container changes size. Can be used to override the default configured value for [`image.layout`](../../configuration-reference/index.md#imagelayout).
 
 ```
 ---import { Image } from 'astro:assets';import myImage from '../assets/my_image.png';---<Image src={myImage} alt="A description of my image." layout='constrained' width={800} height={600} />
@@ -289,7 +289,7 @@ The value for `layout` also defines the default styles applied to the `<img>` ta
 
 Defines how a image should be cropped if its aspect ratio is changed.
 
-Values match those of CSS `object-fit`. Defaults to `cover`, or the value of [`image.objectFit`](/en/reference/configuration-reference/#imageobjectfit) if set. Can be used to override the default `object-fit` styles.
+Values match those of CSS `object-fit`. Defaults to `cover`, or the value of [`image.objectFit`](../../configuration-reference/index.md#imageobjectfit) if set. Can be used to override the default `object-fit` styles.
 
 #### `position`
 
@@ -302,7 +302,7 @@ Values match those of CSS `object-fit`. Defaults to `cover`, or the value of [`i
 
 Defines the position of the image crop for a image if the aspect ratio is changed.
 
-Values match those of CSS `object-position`. Defaults to `center`, or the value of [`image.objectPosition`](/en/reference/configuration-reference/#imageobjectposition) if set. Can be used to override the default `object-position` styles.
+Values match those of CSS `object-position`. Defaults to `center`, or the value of [`image.objectPosition`](../../configuration-reference/index.md#imageobjectposition) if set. Can be used to override the default `object-position` styles.
 
 #### `background`
 
@@ -402,7 +402,7 @@ The `<Font />` component accepts the following properties:
 **Type:** `CssVariable`  
 **Example type:** `"--font-roboto" | "--font-comic-sans" | ...`
 
-The [`cssVariable`](/en/reference/configuration-reference/#fontcssvariable) registered in your Astro configuration:
+The [`cssVariable`](../../configuration-reference/index.md#fontcssvariable) registered in your Astro configuration:
 
 ```
 ---import { Font } from "astro:assets";---
@@ -440,7 +440,7 @@ Variable weight font files will be preloaded if any weight within its range is r
 
 **Type:** `(options: [UnresolvedImageTransform](#unresolvedimagetransform)) => Promise<[GetImageResult](#getimageresult)>`
 
-The `getImage()` function is intended for generating images destined to be used somewhere else than directly in HTML, for example in an [API Route](/en/guides/endpoints/#server-endpoints-api-routes). It also allows you to create your own custom `<Image />` component.
+The `getImage()` function is intended for generating images destined to be used somewhere else than directly in HTML, for example in an [API Route](../../../guides/endpoints/index.md#server-endpoints-api-routes). It also allows you to create your own custom `<Image />` component.
 
 This takes an options object with the [same properties as the Image component](#image-) (except `alt`) and returns a [`GetImageResult` object](#getimageresult).
 
@@ -474,7 +474,7 @@ import { inferRemoteSize } from 'astro:assets';const { width, height } = await i
 
 **Added in:** `astro@2.1.3`
 
-Retrieves the resolved [image service](/en/reference/configuration-reference/#imageservice).
+Retrieves the resolved [image service](../../configuration-reference/index.md#imageservice).
 
 ### `imageConfig`
 
@@ -484,7 +484,7 @@ Retrieves the resolved [image service](/en/reference/configuration-reference/#im
 
 **Added in:** `astro@3.0.9`
 
-The [configuration options for images](/en/reference/configuration-reference/#image-options) set by the user and merged with all defaults.
+The [configuration options for images](../../configuration-reference/index.md#image-options) set by the user and merged with all defaults.
 
 ### `fontData`
 
@@ -494,7 +494,7 @@ The [configuration options for images](/en/reference/configuration-reference/#im
 
 **Added in:** `astro@6.0.0`
 
-An object where each key is a [`cssVariable`](/en/reference/configuration-reference/#fontcssvariable) and the value is an array describing the associated fonts. Each font is an object containing an array of `src` available for that font and the following optional properties: `weight` and `style`:
+An object where each key is a [`cssVariable`](../../configuration-reference/index.md#fontcssvariable) and the value is an array describing the associated fonts. Each font is an object containing an array of `src` available for that font and the following optional properties: `weight` and `style`:
 
 ```
 import { fontData } from "astro:assets"
@@ -519,7 +519,7 @@ import type {  LocalImageProps,  RemoteImageProps,  FontData} from "astro/assets
 
 Describes the [properties of a local image](#image-). This ensures that [`src`](#src-required) matches the shape of an imported image.
 
-Learn more about [imported images in `src/`](/en/guides/images/#images-in-src) with an example usage.
+Learn more about [imported images in `src/`](../../../guides/images/index.md#images-in-src) with an example usage.
 
 ### `RemoteImageProps`
 
@@ -582,7 +582,7 @@ import {  baseService,  getConfiguredImageService,  getImage,  isLocalService,} 
 
 **Type:** `Omit<[LocalImageService](#localimageservice), ‘transform’>`
 
-The built-in local image service which can be extended to [create a custom image service](/en/reference/image-service-reference/).
+The built-in local image service which can be extended to [create a custom image service](../../image-service-reference/index.md).
 
 The following example reuses the `baseService` to create a new image service:
 
@@ -603,7 +603,7 @@ See [`getConfiguredImageService()`](#getconfiguredimageservice) from `astro:asse
 
 **Type:** `(options: [UnresolvedImageTransform](#unresolvedimagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options)) => Promise<[GetImageResult](#getimageresult)>`
 
-A function similar to [`getImage()`](#getimage) from `astro:assets` with two required arguments: an `options` object with [the same properties as the Image component](#image-) and a second object for the [image configuration](/en/reference/configuration-reference/#image-options).
+A function similar to [`getImage()`](#getimage) from `astro:assets` with two required arguments: an `options` object with [the same properties as the Image component](#image-) and a second object for the [image configuration](../../configuration-reference/index.md#image-options).
 
 ### `isLocalService()`
 
@@ -639,7 +639,7 @@ See [`RemoteImageProps`](#remoteimageprops) from `astro:assets`.
 
 [Section titled “Imports from astro/assets/utils”](#imports-from-astroassetsutils)
 
-The following helpers are imported from the `utils` directory in the regular assets module and can be used to [build an image service](/en/reference/image-service-reference/):
+The following helpers are imported from the `utils` directory in the regular assets module and can be used to [build an image service](../../image-service-reference/index.md):
 
 ```
 import {  isRemoteAllowed,  matchHostname,  matchPathname,  matchPattern,  matchPort,  matchProtocol,  isESMImportedImage,  isRemoteImage,  resolveSrc,  imageMetadata,  emitImageMetadata,  emitClientAsset,  getOrigQueryParams,  inferRemoteSize,  propsToFilename,  hashTransform,} from "astro/assets/utils";
@@ -927,7 +927,7 @@ import type {  GetImageResult,  ImageTransform,  UnresolvedImageTransform,  Imag
 
 **Added in:** `astro@2.2.0`
 
-Describes the result of the transformation after the call to [`getImage()`](/en/reference/modules/astro-assets/#getimage).
+Describes the result of the transformation after the call to [`getImage()`](index.md#getimage).
 
 #### `GetImageResult.attributes`
 
@@ -1099,7 +1099,7 @@ The path to an image imported or located in the `public` directory, or the URL o
 
 Determines whether the width and height of the image should be inferred.
 
-See also the [`inferSize` attribute](/en/reference/modules/astro-assets/#infersize) available on `<Image />`.
+See also the [`inferSize` attribute](index.md#infersize) available on `<Image />`.
 
 ### `ImageMetadata`
 
@@ -1217,9 +1217,9 @@ Defines the hooks that a local or external image service must provide.
 
 **Type:** `object`
 
-Defines the hooks that an external image transformation service must provide. This requires a [`getUrl()` hook](/en/reference/image-service-reference/#geturl) and supports [three additional hooks](/en/reference/image-service-reference/#hooks).
+Defines the hooks that an external image transformation service must provide. This requires a [`getUrl()` hook](../../image-service-reference/index.md#geturl) and supports [three additional hooks](../../image-service-reference/index.md#hooks).
 
-Learn how to build [external services](/en/reference/image-service-reference/#external-services) in the Image Service API reference with example usage.
+Learn how to build [external services](../../image-service-reference/index.md#external-services) in the Image Service API reference with example usage.
 
 ### `LocalImageService`
 
@@ -1227,9 +1227,9 @@ Learn how to build [external services](/en/reference/image-service-reference/#ex
 
 **Type:** `object`
 
-Defines the hooks that a local image transformation service must provide. This requires [`getUrl()`](/en/reference/image-service-reference/#geturl), [`parseUrl()`](/en/reference/image-service-reference/#parseurl), and [`transform()`](/en/reference/image-service-reference/#transform) hooks, and supports [additional hooks](/en/reference/image-service-reference/#hooks).
+Defines the hooks that a local image transformation service must provide. This requires [`getUrl()`](../../image-service-reference/index.md#geturl), [`parseUrl()`](../../image-service-reference/index.md#parseurl), and [`transform()`](../../image-service-reference/index.md#transform) hooks, and supports [additional hooks](../../image-service-reference/index.md#hooks).
 
-Learn how to build [local services](/en/reference/image-service-reference/#local-services) in the Image Service API reference with example usage.
+Learn how to build [local services](../../image-service-reference/index.md#local-services) in the Image Service API reference with example usage.
 
 ### `ImageServiceConfig`
 
@@ -1257,4 +1257,4 @@ A package or path to the image service module. This can be Astro’s built-in Sh
 
 A configuration object passed to the image service. The shape depends on the specific service being used.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

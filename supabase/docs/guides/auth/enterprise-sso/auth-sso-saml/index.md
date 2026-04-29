@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:19.719Z"
 content_hash: "19fc921bad6748291686b4e862f41fdaaa882503c54d9202b19e036aa6a6bb77"
 menu_path: ["Auth","Auth","More","More","More","Enterprise SSO","Enterprise SSO","SAML 2.0","SAML 2.0"]
 section_path: ["Auth","Auth","More","More","More","Enterprise SSO","Enterprise SSO","SAML 2.0","SAML 2.0"]
-nav_prev: {"path": "../index.md", "title": "Enterprise Single Sign-On"}
-nav_next: {"path": "../../general-configuration/index.md", "title": "General configuration"}
+nav_prev: {"path": "supabase/docs/guides/auth/enterprise-sso/index.md", "title": "Enterprise Single Sign-On"}
+nav_next: {"path": "supabase/docs/guides/auth/general-configuration/index.md", "title": "General configuration"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Single Sign-On with SAML 2.0 for Projects
 
 * * *
 
-Looking for guides on how to use Single Sign-On with the Supabase dashboard? Head on over to [Enable SSO for Your Organization](/docs/guides/platform/sso).
+Looking for guides on how to use Single Sign-On with the Supabase dashboard? Head on over to [Enable SSO for Your Organization](../../../platform/sso/index.md).
 
 Supabase Auth supports enterprise-level Single Sign-On (SSO) for any identity providers compatible with the SAML 2.0 protocol. This is a non-exclusive list of supported identity providers:
 
@@ -33,7 +33,7 @@ If you're having issues with identity provider software not on this list, [open 
 
 ## Prerequisites[#](#prerequisites)
 
-This guide requires the use of the [Supabase CLI](/docs/guides/cli). Make sure you're using version v1.46.4 or higher. You can use `supabase -v` to see the currently installed version. You can use the `supabase sso` [subcommands](/docs/reference/cli/supabase-sso) to manage your project's configuration.
+This guide requires the use of the [Supabase CLI](../../../cli/index.md). Make sure you're using version v1.46.4 or higher. You can use `supabase -v` to see the currently installed version. You can use the `supabase sso` [subcommands](/docs/reference/cli/supabase-sso) to manage your project's configuration.
 
 SAML 2.0 support is disabled by default on Supabase projects. You can configure this on the [Auth Providers](/dashboard/project/_/auth/providers) page on your project.
 
@@ -87,7 +87,7 @@ SLO URL
 
 Required `emailAddress` or `persistent`
 
-Note that SLO (Single Logout) is not supported at this time with Supabase Auth as it is a rarely supported feature by identity providers. However, the URL is registered and advertised for when this does become available. SLO is a best-effort service, so we recommend considering [Session Timebox or Session Inactivity Timeout](/docs/guides/auth/sessions#limiting-session-lifetime-and-number-of-allowed-sessions-per-user) instead to force your end-users to authenticate regularly.
+Note that SLO (Single Logout) is not supported at this time with Supabase Auth as it is a rarely supported feature by identity providers. However, the URL is registered and advertised for when this does become available. SLO is a best-effort service, so we recommend considering [Session Timebox or Session Inactivity Timeout](../../sessions/index.md#limiting-session-lifetime-and-number-of-allowed-sessions-per-user) instead to force your end-users to authenticate regularly.
 
 Append `?download=true` to the Metadata URL to download the Metadata XML file. This is useful in cases where the identity provider requires a file.
 
@@ -111,7 +111,7 @@ Here are some commonly used statements to extract SSO related information from t
 *   `auth.jwt()#>>'{amr,0,provider}'` Returns the UUID of the SSO identity provider used by the user to sign-in.
 *   `auth.jwt()#>>'{user_metadata,iss}'` Returns the identity provider's SAML 2.0 `EntityID`
 
-If you use [Multi-Factor Authentication](/docs/guides/auth/auth-mfa) with SSO, the `amr` array may have a different method at index `0`!
+If you use [Multi-Factor Authentication](../../auth-mfa/index.md) with SSO, the `amr` array may have a different method at index `0`!
 
 A common use case with SSO is to use the UUID of the identity provider as the identifier for the organization the user belongs to -- frequently known as a tenant. By associating the identity provider's UUID with your tenants, you can use restrictive RLS policies to scope down actions and data that a user is able to access.
 
@@ -203,7 +203,7 @@ For example, the following JSON structure configures attribute mapping for the `
 1{2  "keys": {3    "email": {4      "name": "mail"5    },6    "first_name": {7      "name": "givenName"8    }9  }10}
 ```
 
-When creating or updating an identity provider with the [Supabase CLI](/docs/guides/cli) you can include this JSON as a file with the `--attribute-mapping-file /path/to/attribute/mapping.json` flag.
+When creating or updating an identity provider with the [Supabase CLI](../../../cli/index.md) you can include this JSON as a file with the `--attribute-mapping-file /path/to/attribute/mapping.json` flag.
 
 For example, to change the attribute mappings to an existing provider you can use:
 
@@ -318,7 +318,7 @@ You can use the `-o json` flag to output the information as JSON, should you nee
 
 $0.015 per SSO MAU. You are only charged for usage exceeding your subscription plan's quota.
 
-For a detailed breakdown of how charges are calculated, refer to [Manage Monthly Active SSO Users usage](/docs/guides/platform/manage-your-usage/monthly-active-users-sso).
+For a detailed breakdown of how charges are calculated, refer to [Manage Monthly Active SSO Users usage](../../../platform/manage-your-usage/monthly-active-users-sso/index.md).
 
 ## Frequently asked questions[#](#frequently-asked-questions)
 
@@ -360,13 +360,13 @@ Yes, Supabase supports multi-tenant Single Sign-On (SSO) using SAML 2.0. While t
 
 ### Is multi-subdomain SSO with SAML supported?[#](#is-multi-subdomain-sso-with-saml-supported)
 
-Yes, also referred to as [cross-origin authentication within the same site](https://web.dev/articles/same-site-same-origin). To redirect to a URL other than the [Site URL](/docs/guides/auth/redirect-urls), following the SAML response from the IdP, the `redirectTo` option can be added to [`signInWithSSO`](/docs/reference/javascript/auth-signinwithsso).
+Yes, also referred to as [cross-origin authentication within the same site](https://web.dev/articles/same-site-same-origin). To redirect to a URL other than the [Site URL](../../redirect-urls/index.md), following the SAML response from the IdP, the `redirectTo` option can be added to [`signInWithSSO`](/docs/reference/javascript/auth-signinwithsso).
 
 ```
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6const { data, error } = await supabase.auth.signInWithSSO({7  domain: 'company.com',8  options: {9    redirectTo: `https://app.company.com/callback`,10  },11})
 ```
 
-When redirecting to a URL other than the Site URL, a `/callback` endpoint is necessary to process the auth code from the IdP and exchange it for a session. This assumes the [Supabase SSR client](/docs/guides/auth/server-side/creating-a-client) has already been configured.
+When redirecting to a URL other than the Site URL, a `/callback` endpoint is necessary to process the auth code from the IdP and exchange it for a session. This assumes the [Supabase SSR client](../../server-side/creating-a-client/index.md) has already been configured.
 
 ```
 1import { error, redirect } from '@sveltejs/kit'23import type { RequestHandler } from './$types'45export const GET: RequestHandler = async ({ url, locals }) => {6  const code = url.searchParams.get('code')78  if (!code) {9    error(400, 'No authorization code provided')10  }1112  const { error: tokenExchangeError } = await locals.supabase.auth.exchangeCodeForSession(code)1314  if (tokenExchangeError) {15    error(400, 'Failed to exchange authorization code for session')16  }1718  redirect(303, '/')19}

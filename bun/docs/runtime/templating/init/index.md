@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:55.959Z"
 content_hash: "35a544ac8dddb708fc53a7c2d45028f9bb0baee2283bc7a0fb4f11dbaac9ecd8"
 menu_path: ["bun init"]
 section_path: []
-nav_prev: {"path": "../create/index.md", "title": "bun create"}
-nav_next: {"path": "../../toml/index.md", "title": "TOML"}
+nav_prev: {"path": "bun/docs/runtime/templating/create/index.md", "title": "bun create"}
+nav_next: {"path": "bun/docs/runtime/toml/index.md", "title": "TOML"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../toml/index.md", "title": "TOML"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Get started with Bun by scaffolding a new project with `bun init`.
 
@@ -258,12 +258,12 @@ TypeScript 6 and 7
 
 Previous
 
-](/docs/typescript-6)[
+](../../../typescript-6/index.md)[
 
 bun create
 
 Next
 
-](/docs/runtime/templating/create)
+](../create/index.md)
 
 ![Demo](https://user-images.githubusercontent.com/709451/183006613-271960a3-ff22-4f7c-83f5-5e18f684c836.gif)

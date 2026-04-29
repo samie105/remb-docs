@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:59.949Z"
 content_hash: "bb2c12bfdca047d33516157af9985ba9c77a799f9139c2a08292318c4e684544"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Concepts","Concepts"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Concepts","Concepts"]
-nav_prev: {"path": "../broadcast/index.md", "title": "Broadcast"}
-nav_next: {"path": "../error_codes/index.md", "title": "Operational Error Codes"}
+nav_prev: {"path": "supabase/docs/guides/realtime/broadcast/index.md", "title": "Broadcast"}
+nav_next: {"path": "supabase/docs/guides/realtime/error_codes/index.md", "title": "Operational Error Codes"}
 ---
 
 # 
@@ -33,9 +33,9 @@ There are several concepts and terminology that is useful to understand how Real
 
 Channels are the foundation of Realtime. Think of them as rooms where clients can communicate and listen to events. Channels are identified by a topic name and if they are public or private.
 
-For private channels, you need to use [Realtime Authorization](/docs/guides/realtime/authorization) to control access to the channel and if they are able to send messages. For public channels, any user can subscribe to the channel, send and receive messages.
+For private channels, you need to use [Realtime Authorization](../authorization/index.md) to control access to the channel and if they are able to send messages. For public channels, any user can subscribe to the channel, send and receive messages.
 
-You can set your project to use only private channels or both private and public channels in the [Realtime Settings](/docs/guides/realtime/settings).
+You can set your project to use only private channels or both private and public channels in the [Realtime Settings](../settings/index.md).
 
 If you have a private channel and a public channel with the same topic name, Realtime sees them as unique channels and won't send messages between them.
 
@@ -43,7 +43,7 @@ If you have a private channel and a public channel with the same topic name, Rea
 
 ### Database connections[#](#database-connections)
 
-Realtime uses several database connections to perform various operations. You can configure some of these connections through [Realtime Settings](/docs/guides/realtime/settings).
+Realtime uses several database connections to perform various operations. You can configure some of these connections through [Realtime Settings](../settings/index.md).
 
 The connections include:
 

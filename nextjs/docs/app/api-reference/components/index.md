@@ -11,8 +11,8 @@ menu_path: ["Components"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../directives/use-server/index.md", "title": "use server"}
-nav_next: {"path": "font/index.md", "title": "Font Module"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-server/index.md", "title": "use server"}
+nav_next: {"path": "nextjs/docs/app/api-reference/components/font/index.md", "title": "Font Module"}
 ---
 
 # Components
@@ -25,30 +25,30 @@ Last updated April 23, 2026
 
 Optimizing loading web fonts with the built-in \`next/font\` loaders.
 
-](/docs/app/api-reference/components/font)[
+](font/index.md)[
 
 ### Form Component
 
 Learn how to use the \`<Form>\` component to handle form submissions and search params updates with client-side navigation.
 
-](/docs/app/api-reference/components/form)[
+](form/index.md)[
 
 ### Image Component
 
 Optimize Images in your Next.js Application using the built-in \`next/image\` Component.
 
-](/docs/app/api-reference/components/image)[
+](image/index.md)[
 
 ### Link Component
 
 Enable fast client-side navigation with the built-in \`next/link\` component.
 
-](/docs/app/api-reference/components/link)[
+](link/index.md)[
 
 ### Script Component
 
 Optimize third-party scripts in your Next.js application using the built-in \`next/script\` Component.
 
-](/docs/app/api-reference/components/script)
+](script/index.md)
 
 Was this helpful?

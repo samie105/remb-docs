@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:16.920Z"
 content_hash: "5180cf1b98f5f789f959a20e11b8500b26fa14f66999640f1217767cdb41f093"
 menu_path: ["Server Actions"]
 section_path: []
-nav_prev: {"path": "../pages-router/ssr/index.md", "title": "Server-Side Rendering"}
-nav_next: {"path": "../starter-projects/index.md", "title": "Starter Projects"}
+nav_prev: {"path": "trpc/docs/client/nextjs/pages-router/ssr/index.md", "title": "Server-Side Rendering"}
+nav_next: {"path": "trpc/docs/client/nextjs/starter-projects/index.md", "title": "Starter Projects"}
 ---
 
 Server Actions allow you to define functions on the server and call them directly from client components, with the network layer abstracted away by the framework.

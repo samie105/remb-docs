@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:19.317Z"
 content_hash: "d299c8502691c86d3a891ea9fbf694b3e772c3e4dff5bc4a899c5815316b8f0a"
 menu_path: ["Configuring Vite ​"]
 section_path: []
-nav_prev: {"path": "../guide/api-javascript/index.md", "title": "JavaScript API \u200b"}
-nav_next: {"path": "../guide/api-environment/index.md", "title": "Environment API \u200b"}
+nav_prev: {"path": "vite/guide/api-javascript/index.md", "title": "JavaScript API \u200b"}
+nav_next: {"path": "vite/guide/api-environment/index.md", "title": "Environment API \u200b"}
 ---
 
 When running `vite` from the command line, Vite will automatically try to resolve a config file named `vite.config.js` inside [project root](../guide/index.md#index-html-and-project-root) (other JS and TS extensions are also supported).

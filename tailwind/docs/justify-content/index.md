@@ -10,8 +10,8 @@ content_hash: "c177b1d52977262ce575dea1e35d03e8cb2cc16091495fcbd91a33fe7539a503"
 menu_path: ["justify-content"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../gap/index.md", "title": "gap"}
-nav_next: {"path": "../justify-items/index.md", "title": "justify-items"}
+nav_prev: {"path": "tailwind/docs/gap/index.md", "title": "gap"}
+nav_next: {"path": "tailwind/docs/justify-items/index.md", "title": "justify-items"}
 ---
 
 # justify-content
@@ -229,7 +229,7 @@ Prefix a `justify-content` utility with a breakpoint variant like `md:` to only 
 <div class="flex justify-start md:justify-between ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

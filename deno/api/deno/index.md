@@ -10,8 +10,8 @@ content_hash: "81f2c82a17705954922fc1cbd0a10a16f15f78308e6f434ee2d616ff0b6be2ec"
 menu_path: ["Deno Namespace APIs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Deno Namespace APIs"}
-nav_next: {"path": "all_symbols/index.md", "title": "All Symbols - Deno documentation"}
+nav_prev: {"path": "deno/api/index.md", "title": "Deno Namespace APIs"}
+nav_next: {"path": "deno/api/deno/all_symbols/index.md", "title": "All Symbols - Deno documentation"}
 ---
 
 **On this page**
@@ -48,13 +48,13 @@ The global `Deno` namespace contains APIs that are not web standard, including A
 
 ## API Documentation
 
-This section provides comprehensive documentation for all Deno-specific APIs available through the global `Deno` namespace. You can [browse all symbols](/api/deno/all_symbols) to view the complete list of available APIs or search by category. Click on any function or interface to see detailed documentation with examples
+This section provides comprehensive documentation for all Deno-specific APIs available through the global `Deno` namespace. You can [browse all symbols](all_symbols/index.md) to view the complete list of available APIs or search by category. Click on any function or interface to see detailed documentation with examples
 
 Below we highlight some of the most important Deno APIs to know.
 
 ## File System
 
-The Deno runtime comes with [various functions for working with files and directories](/api/deno/file-system). You will need to use --allow-read and --allow-write permissions to gain access to the file system.
+The Deno runtime comes with [various functions for working with files and directories](file-system/index.md). You will need to use --allow-read and --allow-write permissions to gain access to the file system.
 
 Refer to the links below for code examples of how to use the file system functions.
 
@@ -64,7 +64,7 @@ Refer to the links below for code examples of how to use the file system functio
 
 ## Network
 
-The Deno runtime comes with [built-in functions for dealing with connections to network ports](/api/deno/network).
+The Deno runtime comes with [built-in functions for dealing with connections to network ports](network/index.md).
 
 Refer to the links below for code examples for common functions.
 
@@ -81,7 +81,7 @@ For practical examples of networking functionality:
 
 ## Subprocesses
 
-The Deno runtime comes with [built-in functions for spinning up subprocesses](/api/deno/subprocess).
+The Deno runtime comes with [built-in functions for spinning up subprocesses](subprocess/index.md).
 
 Refer to the links below for code samples of how to create a subprocess.
 
@@ -90,7 +90,7 @@ Refer to the links below for code samples of how to create a subprocess.
 
 ## Errors
 
-The Deno runtime comes with [20 error classes](/api/deno/errors) that can be raised in response to a number of conditions.
+The Deno runtime comes with [20 error classes](errors/index.md) that can be raised in response to a number of conditions.
 
 Some examples are:
 
@@ -133,7 +133,7 @@ Deno.serve((_req) => {
 
 By default `Deno.serve` will listen on port `8000`, but this can be changed by passing in a port number in options bag as the first or second argument.
 
-You can [read more about how to use the HTTP server APIs](/runtime/fundamentals/http_server/).
+You can [read more about how to use the HTTP server APIs](../../runtime/fundamentals/http_server/index.md).
 
 For practical examples of HTTP servers:
 

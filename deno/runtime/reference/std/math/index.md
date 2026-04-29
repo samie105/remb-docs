@@ -10,8 +10,8 @@ content_hash: "dfb70dc9cc5eee76fa5d45a67eaebd8de1d93f93308139720820993828dd832e"
 menu_path: ["@std/math"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../node_apis/index.md", "title": "Node APIs"}
-nav_next: {"path": "../xml/index.md", "title": "@std/xml"}
+nav_prev: {"path": "deno/runtime/reference/node_apis/index.md", "title": "Node APIs"}
+nav_next: {"path": "deno/runtime/reference/std/xml/index.md", "title": "@std/xml"}
 ---
 
 **On this page**

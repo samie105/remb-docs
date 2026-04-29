@@ -10,8 +10,8 @@ content_hash: "3d1eebaba3c55223ed18d879b0a8551a75bba669ccc2546ee3096cde3a358b24"
 menu_path: ["Connection pool"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connection-management/index.md", "title": "Connection management"}
-nav_next: {"path": "../pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-management/index.md", "title": "Connection management"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
 ---
 
 Setup and Configuration

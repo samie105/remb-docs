@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:44.739Z"
 content_hash: "4197a180ba9cca24a63e43e601ec92a48e518d734ee9eec91f6c5946fe4bafb3"
 menu_path: ["Bun APIs"]
 section_path: []
-nav_prev: {"path": "../binary-data/index.md", "title": "Binary Data"}
-nav_next: {"path": "../bunfig/index.md", "title": "bunfig.toml"}
+nav_prev: {"path": "bun/docs/runtime/binary-data/index.md", "title": "Binary Data"}
+nav_next: {"path": "bun/docs/runtime/bunfig/index.md", "title": "bunfig.toml"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../bunfig/index.md", "title": "bunfig.toml"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Bun implements a set of native APIs on the `Bun` global object and through several built-in modules. These APIs are heavily optimized and represent the canonical “Bun-native” way to implement some common functionality. Bun strives to implement standard Web APIs wherever possible. Bun introduces new APIs primarily for server-side tasks where no standard exists, such as file I/O and starting an HTTP server. In these cases, Bun’s approach still builds atop standard APIs like `Blob`, `URL`, and `Request`.
 
@@ -55,47 +55,47 @@ APIs
 
 HTTP Server
 
-[`Bun.serve`](/docs/runtime/http/server)
+[`Bun.serve`](../http/server/index.md)
 
 Shell
 
-[`$`](/docs/runtime/shell)
+[`$`](../shell/index.md)
 
 Bundler
 
-[`Bun.build`](/docs/bundler)
+[`Bun.build`](../../bundler/index.md)
 
 File I/O
 
-[`Bun.file`](/docs/runtime/file-io#reading-files-bun-file), [`Bun.write`](/docs/runtime/file-io#writing-files-bun-write), `Bun.stdin`, `Bun.stdout`, `Bun.stderr`
+[`Bun.file`](../file-io/index.md#reading-files-bun-file), [`Bun.write`](../file-io/index.md#writing-files-bun-write), `Bun.stdin`, `Bun.stdout`, `Bun.stderr`
 
 Child Processes
 
-[`Bun.spawn`](/docs/runtime/child-process#spawn-a-process-bun-spawn), [`Bun.spawnSync`](/docs/runtime/child-process#blocking-api-bun-spawnsync)
+[`Bun.spawn`](../child-process/index.md#spawn-a-process-bun-spawn), [`Bun.spawnSync`](../child-process/index.md#blocking-api-bun-spawnsync)
 
 TCP Sockets
 
-[`Bun.listen`](/docs/runtime/networking/tcp#start-a-server-bun-listen), [`Bun.connect`](/docs/runtime/networking/tcp#start-a-server-bun-listen)
+[`Bun.listen`](../networking/tcp/index.md#start-a-server-bun-listen), [`Bun.connect`](../networking/tcp/index.md#start-a-server-bun-listen)
 
 UDP Sockets
 
-[`Bun.udpSocket`](/docs/runtime/networking/udp)
+[`Bun.udpSocket`](../networking/udp/index.md)
 
 WebSockets
 
-`new WebSocket()` (client), [`Bun.serve`](/docs/runtime/http/websockets) (server)
+`new WebSocket()` (client), [`Bun.serve`](../http/websockets/index.md) (server)
 
 Transpiler
 
-[`Bun.Transpiler`](/docs/runtime/transpiler)
+[`Bun.Transpiler`](../transpiler/index.md)
 
 Routing
 
-[`Bun.FileSystemRouter`](/docs/runtime/file-system-router)
+[`Bun.FileSystemRouter`](../file-system-router/index.md)
 
 Streaming HTML
 
-[`HTMLRewriter`](/docs/runtime/html-rewriter)
+[`HTMLRewriter`](../html-rewriter/index.md)
 
 Headless Browser
 
@@ -103,95 +103,95 @@ Headless Browser
 
 Hashing
 
-[`Bun.password`](/docs/runtime/hashing#bun-password), [`Bun.hash`](/docs/runtime/hashing#bun-hash), [`Bun.CryptoHasher`](/docs/runtime/hashing#bun-cryptohasher), `Bun.sha`
+[`Bun.password`](../hashing/index.md#bun-password), [`Bun.hash`](../hashing/index.md#bun-hash), [`Bun.CryptoHasher`](../hashing/index.md#bun-cryptohasher), `Bun.sha`
 
 CSRF Protection
 
-[`Bun.CSRF.generate`](/docs/runtime/csrf), [`Bun.CSRF.verify`](/docs/runtime/csrf)
+[`Bun.CSRF.generate`](../csrf/index.md), [`Bun.CSRF.verify`](../csrf/index.md)
 
 SQLite
 
-[`bun:sqlite`](/docs/runtime/sqlite)
+[`bun:sqlite`](../sqlite/index.md)
 
 PostgreSQL Client
 
-[`Bun.SQL`](/docs/runtime/sql), `Bun.sql`
+[`Bun.SQL`](../sql/index.md), `Bun.sql`
 
 Redis (Valkey) Client
 
-[`Bun.RedisClient`](/docs/runtime/redis), `Bun.redis`
+[`Bun.RedisClient`](../redis/index.md), `Bun.redis`
 
 FFI (Foreign Function Interface)
 
-[`bun:ffi`](/docs/runtime/ffi)
+[`bun:ffi`](../ffi/index.md)
 
 DNS
 
-[`Bun.dns.lookup`](/docs/runtime/networking/dns), `Bun.dns.prefetch`, `Bun.dns.getCacheStats`
+[`Bun.dns.lookup`](../networking/dns/index.md), `Bun.dns.prefetch`, `Bun.dns.getCacheStats`
 
 Testing
 
-[`bun:test`](/docs/test)
+[`bun:test`](../../test/index.md)
 
 Workers
 
-[`new Worker()`](/docs/runtime/workers)
+[`new Worker()`](../workers/index.md)
 
 Module Loaders
 
-[`Bun.plugin`](/docs/bundler/plugins)
+[`Bun.plugin`](../../bundler/plugins/index.md)
 
 Glob
 
-[`Bun.Glob`](/docs/runtime/glob)
+[`Bun.Glob`](../glob/index.md)
 
 Cookies
 
-[`Bun.Cookie`](/docs/runtime/cookies), [`Bun.CookieMap`](/docs/runtime/cookies)
+[`Bun.Cookie`](../cookies/index.md), [`Bun.CookieMap`](../cookies/index.md)
 
 Node-API
 
-[`Node-API`](/docs/runtime/node-api)
+[`Node-API`](../node-api/index.md)
 
 `import.meta`
 
-[`import.meta`](/docs/runtime/module-resolution#import-meta)
+[`import.meta`](../module-resolution/index.md#import-meta)
 
 Utilities
 
-[`Bun.version`](/docs/runtime/utils#bun-version), [`Bun.revision`](/docs/runtime/utils#bun-revision), [`Bun.env`](/docs/runtime/utils#bun-env), [`Bun.main`](/docs/runtime/utils#bun-main)
+[`Bun.version`](../utils/index.md#bun-version), [`Bun.revision`](../utils/index.md#bun-revision), [`Bun.env`](../utils/index.md#bun-env), [`Bun.main`](../utils/index.md#bun-main)
 
 Sleep & Timing
 
-[`Bun.sleep()`](/docs/runtime/utils#bun-sleep), [`Bun.sleepSync()`](/docs/runtime/utils#bun-sleepsync), [`Bun.nanoseconds()`](/docs/runtime/utils#bun-nanoseconds)
+[`Bun.sleep()`](../utils/index.md#bun-sleep), [`Bun.sleepSync()`](../utils/index.md#bun-sleepsync), [`Bun.nanoseconds()`](../utils/index.md#bun-nanoseconds)
 
 Random & UUID
 
-[`Bun.randomUUIDv7()`](/docs/runtime/utils#bun-randomuuidv7)
+[`Bun.randomUUIDv7()`](../utils/index.md#bun-randomuuidv7)
 
 System & Environment
 
-[`Bun.which()`](/docs/runtime/utils#bun-which)
+[`Bun.which()`](../utils/index.md#bun-which)
 
 Comparison & Inspection
 
-[`Bun.peek()`](/docs/runtime/utils#bun-peek), [`Bun.deepEquals()`](/docs/runtime/utils#bun-deepequals), `Bun.deepMatch`, [`Bun.inspect()`](/docs/runtime/utils#bun-inspect)
+[`Bun.peek()`](../utils/index.md#bun-peek), [`Bun.deepEquals()`](../utils/index.md#bun-deepequals), `Bun.deepMatch`, [`Bun.inspect()`](../utils/index.md#bun-inspect)
 
 String & Text Processing
 
-[`Bun.escapeHTML()`](/docs/runtime/utils#bun-escapehtml), [`Bun.stringWidth()`](/docs/runtime/utils#bun-stringwidth), `Bun.indexOfLine`
+[`Bun.escapeHTML()`](../utils/index.md#bun-escapehtml), [`Bun.stringWidth()`](../utils/index.md#bun-stringwidth), `Bun.indexOfLine`
 
 URL & Path Utilities
 
-[`Bun.fileURLToPath()`](/docs/runtime/utils#bun-fileurltopath), [`Bun.pathToFileURL()`](/docs/runtime/utils#bun-pathtofileurl)
+[`Bun.fileURLToPath()`](../utils/index.md#bun-fileurltopath), [`Bun.pathToFileURL()`](../utils/index.md#bun-pathtofileurl)
 
 Compression
 
-[`Bun.gzipSync()`](/docs/runtime/utils#bun-gzipsync), [`Bun.gunzipSync()`](/docs/runtime/utils#bun-gunzipsync), [`Bun.deflateSync()`](/docs/runtime/utils#bun-deflatesync), [`Bun.inflateSync()`](/docs/runtime/utils#bun-inflatesync), `Bun.zstdCompressSync()`, `Bun.zstdDecompressSync()`, `Bun.zstdCompress()`, `Bun.zstdDecompress()`
+[`Bun.gzipSync()`](../utils/index.md#bun-gzipsync), [`Bun.gunzipSync()`](../utils/index.md#bun-gunzipsync), [`Bun.deflateSync()`](../utils/index.md#bun-deflatesync), [`Bun.inflateSync()`](../utils/index.md#bun-inflatesync), `Bun.zstdCompressSync()`, `Bun.zstdDecompressSync()`, `Bun.zstdCompress()`, `Bun.zstdDecompress()`
 
 Stream Processing
 
-[`Bun.readableStreamTo*()`](/docs/runtime/utils#bun-readablestreamto), `Bun.readableStreamToBytes()`, `Bun.readableStreamToBlob()`, `Bun.readableStreamToFormData()`, `Bun.readableStreamToJSON()`, `Bun.readableStreamToArray()`
+[`Bun.readableStreamTo*()`](../utils/index.md#bun-readablestreamto), `Bun.readableStreamToBytes()`, `Bun.readableStreamToBlob()`, `Bun.readableStreamToFormData()`, `Bun.readableStreamToJSON()`, `Bun.readableStreamToArray()`
 
 Memory & Buffer Management
 
@@ -199,11 +199,11 @@ Memory & Buffer Management
 
 Module Resolution
 
-[`Bun.resolveSync()`](/docs/runtime/utils#bun-resolvesync)
+[`Bun.resolveSync()`](../utils/index.md#bun-resolvesync)
 
 Parsing & Formatting
 
-[`Bun.semver`](/docs/runtime/semver), [`Bun.TOML.parse`](/docs/runtime/toml), [`Bun.markdown`](/docs/runtime/markdown), [`Bun.color`](/docs/runtime/color)
+[`Bun.semver`](../semver/index.md), [`Bun.TOML.parse`](../toml/index.md), [`Bun.markdown`](../markdown/index.md), [`Bun.color`](../color/index.md)
 
 Low-level / Internals
 
@@ -219,10 +219,10 @@ Globals
 
 Previous
 
-](/docs/runtime/globals)[
+](../globals/index.md)[
 
 Web APIs
 
 Next
 
-](/docs/runtime/web-apis)
+](../web-apis/index.md)

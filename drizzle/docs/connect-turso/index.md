@@ -10,8 +10,8 @@ content_hash: "c5c9feded66740575c98291bf95a2ae51f0fd71fa8f0fce0caa3312c54c2d7f9"
 menu_path: ["Drizzle <> Turso Cloud"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-tidb/index.md", "title": "Drizzle <> TiDB Serverless"}
-nav_next: {"path": "../connect-turso-database/index.md", "title": "Drizzle <> Turso Database"}
+nav_prev: {"path": "drizzle/docs/connect-tidb/index.md", "title": "Drizzle <> TiDB Serverless"}
+nav_next: {"path": "drizzle/docs/connect-turso-database/index.md", "title": "Drizzle <> Turso Database"}
 ---
 
 According to the **[official website](https://turso.tech/drizzle)**, Turso is a **[libSQL](https://github.com/libsql/libsql)** powered edge SQLite database as a service.

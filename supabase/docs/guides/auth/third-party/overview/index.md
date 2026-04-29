@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:14.751Z"
 content_hash: "6dafca0620524bfc46daf916cf4456f26704e78029c41d1a2e7cd0f9404568be"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","Overview","Overview"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","Overview","Overview"]
-nav_prev: {"path": "../firebase-auth/index.md", "title": "Firebase Auth"}
-nav_next: {"path": "../workos/index.md", "title": "WorkOS"}
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/firebase-auth/index.md", "title": "Firebase Auth"}
+nav_next: {"path": "supabase/docs/guides/auth/third-party/workos/index.md", "title": "WorkOS"}
 ---
 
 # 
@@ -25,13 +25,13 @@ First-class support for authentication providers
 
 Supabase has first-class support for these third-party authentication providers:
 
-*   [Clerk](/docs/guides/auth/third-party/clerk)
-*   [Firebase Auth](/docs/guides/auth/third-party/firebase-auth)
-*   [Auth0](/docs/guides/auth/third-party/auth0)
-*   [AWS Cognito (with or without AWS Amplify)](/docs/guides/auth/third-party/aws-cognito)
-*   [WorkOS](/docs/guides/auth/third-party/workos)
+*   [Clerk](../clerk/index.md)
+*   [Firebase Auth](../firebase-auth/index.md)
+*   [Auth0](../auth0/index.md)
+*   [AWS Cognito (with or without AWS Amplify)](../aws-cognito/index.md)
+*   [WorkOS](../workos/index.md)
 
-You can use these providers alongside Supabase Auth, or on their own, to access the [Data API (REST and GraphQL)](/docs/guides/database), [Storage](/docs/guides/storage), [Realtime](/docs/guides/storage) and [Functions](/docs/guides/functions) from your existing apps.
+You can use these providers alongside Supabase Auth, or on their own, to access the [Data API (REST and GraphQL)](/docs/guides/database), [Storage](../../../storage/index.md), [Realtime](../../../storage/index.md) and [Functions](../../../functions/index.md) from your existing apps.
 
 If you already have production apps using one of these authentication providers, and would like to use a Supabase feature, you no longer need to migrate your users to Supabase Auth or use workarounds like translating JWTs into the Supabase Auth format and using your project's signing secret.
 

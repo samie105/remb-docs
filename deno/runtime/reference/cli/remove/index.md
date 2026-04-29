@@ -10,8 +10,8 @@ content_hash: "2381346d5b24fe1ca909b8181e19dcd54e33cd7f1588ece4a3e16c90c949909a"
 menu_path: ["deno remove"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../lsp/index.md", "title": "deno lsp"}
-nav_next: {"path": "../repl/index.md", "title": "deno repl"}
+nav_prev: {"path": "deno/runtime/reference/cli/lsp/index.md", "title": "deno lsp"}
+nav_next: {"path": "deno/runtime/reference/cli/repl/index.md", "title": "deno repl"}
 ---
 
 **On this page**
@@ -21,7 +21,7 @@ nav_next: {"path": "../repl/index.md", "title": "deno repl"}
 -   [Dependency management options](#dependency-management-options)
 -   [Options](#options)
 
-`deno remove` removes dependencies from your project's configuration file. It is the inverse of [`deno add`](/runtime/reference/cli/add/).
+`deno remove` removes dependencies from your project's configuration file. It is the inverse of [`deno add`](../add/index.md).
 
 ## Basic usage
 
@@ -43,7 +43,7 @@ deno remove @std/path @std/assert npm:express
 
 ## Where dependencies are removed from
 
-`deno remove` will look at both [`deno.json`](/runtime/fundamentals/configuration/) and `package.json` (if present) and remove the matching dependency from whichever file it is found in.
+`deno remove` will look at both [`deno.json`](../../../fundamentals/configuration/index.md) and `package.json` (if present) and remove the matching dependency from whichever file it is found in.
 
 Command line usage:
 

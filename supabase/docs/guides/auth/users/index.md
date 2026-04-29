@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:31.685Z"
 content_hash: "09dd5ef0a6b235e00959a3ae0483be780980054297335671df8a4e8fb7b976ab"
 menu_path: ["Auth","Auth","Concepts","Concepts","Users","Users"]
 section_path: ["Auth","Auth","Concepts","Concepts","Users","Users"]
-nav_prev: {"path": "../third-party/workos/index.md", "title": "WorkOS"}
-nav_next: {"path": "../../cli/index.md", "title": "Local Development & CLI"}
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/workos/index.md", "title": "WorkOS"}
+nav_next: {"path": "supabase/docs/guides/cli/index.md", "title": "Local Development & CLI"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Users
 
 * * *
 
-A **user** in Supabase Auth is someone with a user ID, stored in the Auth schema. Once someone is a user, they can be issued an Access Token, which can be used to access Supabase endpoints. The token is tied to the user, so you can restrict access to resources via [RLS policies](/docs/guides/database/postgres/row-level-security).
+A **user** in Supabase Auth is someone with a user ID, stored in the Auth schema. Once someone is a user, they can be issued an Access Token, which can be used to access Supabase endpoints. The token is tied to the user, so you can restrict access to resources via [RLS policies](../../database/postgres/row-level-security/index.md).
 
 ## Permanent and anonymous users[#](#permanent-and-anonymous-users)
 
@@ -34,7 +34,7 @@ Anonymous users are useful for:
 *   Full-feature demos without collecting personal information
 *   Temporary or throw-away accounts
 
-See the [Anonymous Signins guide](/docs/guides/auth/auth-anonymous) to learn more about anonymous users.
+See the [Anonymous Signins guide](../auth-anonymous/index.md) to learn more about anonymous users.
 
 ##### Anonymous users do not use the anon role
 
@@ -137,7 +137,7 @@ user\_metadata
 
 `object`
 
-Defaults to the first provider's identity data but can contain additional custom user metadata if specified. Refer to [**User Identity**](/docs/guides/auth/auth-identity-linking#the-user-identity) for more information about the identity object. Don't rely on the order of information in this field. Do not use it in security sensitive context (such as in RLS policies or authorization logic), as this value is editable by the user without any checks.
+Defaults to the first provider's identity data but can contain additional custom user metadata if specified. Refer to [**User Identity**](../auth-identity-linking/index.md#the-user-identity) for more information about the identity object. Don't rely on the order of information in this field. Do not use it in security sensitive context (such as in RLS policies or authorization logic), as this value is editable by the user without any checks.
 
 identities
 
@@ -165,4 +165,4 @@ Is true if the user is an anonymous user.
 
 ## Resources[#](#resources)
 
-*   [User Management guide](/docs/guides/auth/managing-user-data)
+*   [User Management guide](../managing-user-data/index.md)

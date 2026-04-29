@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:14.624Z"
 content_hash: "153be672168f2ed9f6bc8f9df3e9205acd33f1d4c08c3370cfe3a04bf4cfb445"
 menu_path: ["PostgreSQL: Documentation: 18: 67.2. Transactions and Locking"]
 section_path: []
-nav_prev: {"path": "../wal-reliability.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.1.\u00a0Reliability"}
-nav_next: {"path": "../xaggr.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.12.\u00a0User-Defined Aggregates"}
+nav_prev: {"path": "postgres/docs/current/wal-reliability.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.1.\u00a0Reliability"}
+nav_next: {"path": "postgres/docs/current/xaggr.html/index.md", "title": "PostgreSQL: Documentation: 18: 36.12.\u00a0User-Defined Aggregates"}
 ---
 
 The transaction IDs of currently executing transactions are shown in [`pg_locks`](https://www.postgresql.org/docs/current/view-pg-locks.html "53.13. pg_locks") in columns `virtualxid` and `transactionid`. Read-only transactions will have `virtualxid`s but NULL `transactionid`s, while both columns will be set in read-write transactions.

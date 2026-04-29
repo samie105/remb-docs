@@ -11,8 +11,8 @@ menu_path: ["Codemods"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Upgrade Guides"}
-nav_next: {"path": "../version-14/index.md", "title": "How to upgrade to version 14"}
+nav_prev: {"path": "nextjs/docs/app/guides/upgrading/index.md", "title": "Upgrade Guides"}
+nav_next: {"path": "nextjs/docs/app/guides/upgrading/version-14/index.md", "title": "How to upgrade to version 14"}
 ---
 
 # Codemods
@@ -277,7 +277,7 @@ export const runtime = 'edge'
 
 #### Migrate to async Dynamic APIs[](#migrate-to-async-dynamic-apis)
 
-APIs that opted into dynamic rendering that previously supported synchronous access are now asynchronous. You can read more about this breaking change in the [upgrade guide](/docs/app/guides/upgrading/version-15).
+APIs that opted into dynamic rendering that previously supported synchronous access are now asynchronous. You can read more about this breaking change in the [upgrade guide](../version-15/index.md).
 
 ##### `next-async-request-api`[](#next-async-request-api)
 
@@ -388,7 +388,7 @@ export async function generateMetadata(props: {
 }
 ```
 
-> **Good to know:** When this codemod identifies a spot that might require manual intervention, but we aren't able to determine the exact fix, it will add a comment or typecast to the code to inform the user that it needs to be manually updated. These comments are prefixed with **@next/codemod**, and typecasts are prefixed with `UnsafeUnwrapped`. Your build will error until these comments are explicitly removed. [Read more](/docs/messages/sync-dynamic-apis).
+> **Good to know:** When this codemod identifies a spot that might require manual intervention, but we aren't able to determine the exact fix, it will add a comment or typecast to the code to inform the user that it needs to be manually updated. These comments are prefixed with **@next/codemod**, and typecasts are prefixed with `UnsafeUnwrapped`. Your build will error until these comments are explicitly removed. [Read more](../../../../messages/sync-dynamic-apis/index.md).
 
 #### Replace `geo` and `ip` properties of `NextRequest` with `@vercel/functions`[](#replace-geo-and-ip-properties-of-nextrequest-with-vercelfunctions)
 
@@ -436,7 +436,7 @@ Terminal
 npx @next/codemod@latest next-og-import .
 ```
 
-This codemod moves transforms imports from `next/server` to `next/og` for usage of [Dynamic OG Image Generation](/docs/app/getting-started/metadata-and-og-images#generated-open-graph-images).
+This codemod moves transforms imports from `next/server` to `next/og` for usage of [Dynamic OG Image Generation](../../../getting-started/metadata-and-og-images/index.md#generated-open-graph-images).
 
 For example:
 
@@ -593,7 +593,7 @@ Terminal
 npx @next/codemod@latest new-link .
 ```
 
-Remove `<a>` tags inside [Link Components](/docs/app/api-reference/components/link).
+Remove `<a>` tags inside [Link Components](../../../api-reference/components/link/index.md).
 
 For example:
 
@@ -760,7 +760,7 @@ Terminal
 npx @next/codemod url-to-withrouter
 ```
 
-Transforms the deprecated automatically injected `url` property on top level pages to using `withRouter` and the `router` property it injects. Read more here: [https://nextjs.org/docs/messages/url-deprecated](/docs/messages/url-deprecated)
+Transforms the deprecated automatically injected `url` property on top level pages to using `withRouter` and the `router` property it injects. Read more here: [https://nextjs.org/docs/messages/url-deprecated](../../../../messages/url-deprecated/index.md)
 
 For example:
 

@@ -10,8 +10,8 @@ content_hash: "7ae809f83b80ea69c791979056c786455666d21d544786adf6d5258d6803e22a"
 menu_path: ["Drizzle <> Node SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-bun-sqlite/index.md", "title": "Drizzle <> Bun SQLite"}
-nav_next: {"path": "../connect-cloudflare-do/index.md", "title": "Drizzle <> Cloudflare Durable Objects SQLite"}
+nav_prev: {"path": "drizzle/docs/connect-bun-sqlite/index.md", "title": "Drizzle <> Bun SQLite"}
+nav_next: {"path": "drizzle/docs/connect-cloudflare-do/index.md", "title": "Drizzle <> Cloudflare Durable Objects SQLite"}
 ---
 
 Drizzle ORM natively supports **[`node:sqlite`](https://nodejs.org/api/sqlite.html)** module

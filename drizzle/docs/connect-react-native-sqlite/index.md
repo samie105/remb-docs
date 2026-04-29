@@ -10,8 +10,8 @@ content_hash: "e4cf280a1249d160d4841ad0323deb23fbea4a65f4a3a2b1e92dda9b5a1563c5"
 menu_path: ["Drizzle <> React Native SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-op-sqlite/index.md", "title": "Drizzle <> OP SQLite"}
-nav_next: {"path": "../connect-aws-data-api-pg/index.md", "title": "Drizzle <> AWS Data API Postgres"}
+nav_prev: {"path": "drizzle/docs/connect-op-sqlite/index.md", "title": "Drizzle <> OP SQLite"}
+nav_next: {"path": "drizzle/docs/connect-aws-data-api-pg/index.md", "title": "Drizzle <> AWS Data API Postgres"}
 ---
 
 Drizzle ORM - React Native SQLite

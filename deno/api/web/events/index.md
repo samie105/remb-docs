@@ -10,8 +10,8 @@ content_hash: "e5c0ea997fe4d6b30f0f3023314eb3165cefce22d067ff0960395d99766302c9"
 menu_path: ["Events - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../encoding/index.md", "title": "Encoding - Web documentation"}
-nav_next: {"path": "../fetch/index.md", "title": "Fetch - Web documentation"}
+nav_prev: {"path": "deno/api/web/encoding/index.md", "title": "Encoding - Web documentation"}
+nav_next: {"path": "deno/api/web/fetch/index.md", "title": "Fetch - Web documentation"}
 ---
 
 f

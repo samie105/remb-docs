@@ -10,8 +10,8 @@ content_hash: "5f0fdcaeb7231000cdc8f2f9a1b419509868cd3e3280d41bb71b4abe52ae60c7"
 menu_path: ["PostgreSQL: Documentation: 18: 9.6. Bit String Functions and Operators"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
-nav_next: {"path": "../functions-geometry.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.11.\u00a0Geometric Functions and Operators"}
+nav_prev: {"path": "postgres/docs/current/functions-array.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.19.\u00a0Array Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-geometry.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.11.\u00a0Geometric Functions and Operators"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/functions-bitstring.html "PostgreSQL devel - 9.6. Bit String Functions and Operators")

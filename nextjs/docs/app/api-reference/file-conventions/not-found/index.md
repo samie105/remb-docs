@@ -11,8 +11,8 @@ menu_path: ["not-found.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../mdx-components/index.md", "title": "mdx-components.js"}
-nav_next: {"path": "../page/index.md", "title": "page.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/mdx-components/index.md", "title": "mdx-components.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/page/index.md", "title": "page.js"}
 ---
 
 # not-found.js
@@ -21,12 +21,12 @@ Last updated April 23, 2026
 
 Next.js provides two conventions to handle not found cases:
 
--   **`not-found.js`**: Used when you call the [`notFound`](/docs/app/api-reference/functions/not-found) function in a route segment.
+-   **`not-found.js`**: Used when you call the [`notFound`](../../functions/not-found/index.md) function in a route segment.
 -   **`global-not-found.js`**: Used to define a global 404 page for unmatched routes across your entire app. This is handled at the routing level and doesn't depend on rendering a layout or page.
 
 ## `not-found.js`[](#not-foundjs)
 
-The **not-found** file is used to render UI when the [`notFound`](/docs/app/api-reference/functions/not-found) function is thrown within a route segment. Along with serving a custom UI, Next.js will return a `200` HTTP status code for streamed responses, and `404` for non-streamed responses (see [Status Codes](/docs/app/api-reference/file-conventions/loading#status-codes) for details about SEO).
+The **not-found** file is used to render UI when the [`notFound`](../../functions/not-found/index.md) function is thrown within a route segment. Along with serving a custom UI, Next.js will return a `200` HTTP status code for streamed responses, and `404` for non-streamed responses (see [Status Codes](../loading/index.md#status-codes) for details about SEO).
 
 app/not-found.tsx
 
@@ -46,7 +46,7 @@ export default function NotFound() {
 }
 ```
 
-In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `not-found.js` renders between `loading.js` and `page.js`. It is wrapped by the `<Suspense>` boundary from `loading.js` and the error boundary from `error.js` in the same segment.
+In the [component hierarchy](../../../getting-started/project-structure/index.md#component-hierarchy), `not-found.js` renders between `loading.js` and `page.js`. It is wrapped by the `<Suspense>` boundary from `loading.js` and the error boundary from `error.js` in the same segment.
 
 ## `global-not-found.js` (experimental)[](#global-not-foundjs-experimental)
 
@@ -152,7 +152,7 @@ If you need to use Client Component hooks like `usePathname` to display content 
 
 ### Metadata[](#metadata)
 
-For `global-not-found.js`, you can export a `metadata` object or a [`generateMetadata`](/docs/app/api-reference/functions/generate-metadata) function to customize the `<title>`, `<meta>`, and other head tags for your 404 page:
+For `global-not-found.js`, you can export a `metadata` object or a [`generateMetadata`](../../functions/generate-metadata/index.md) function to customize the `<title>`, `<meta>`, and other head tags for your 404 page:
 
 > **Good to know**: Next.js automatically injects `<meta name="robots" content="noindex" />` for pages that return a 404 status code, including `global-not-found.js` pages.
 

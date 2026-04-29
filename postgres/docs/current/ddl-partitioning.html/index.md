@@ -10,8 +10,8 @@ content_hash: "14a3b90b9c0124af80885ea6be5bdbd76abdebcfd1e2dc79fddd336724dbc59d"
 menu_path: ["PostgreSQL: Documentation: 18: 5.12. Table Partitioning"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../ddl-others.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.14.\u00a0Other Database Objects"}
-nav_next: {"path": "../ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
+nav_prev: {"path": "postgres/docs/current/ddl-others.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.14.\u00a0Other Database Objects"}
+nav_next: {"path": "postgres/docs/current/ddl-priv.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.8.\u00a0Privileges"}
 ---
 
 PostgreSQL supports basic table partitioning. This section describes why and how to implement partitioning as part of your database design.

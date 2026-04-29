@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:27.710Z"
 content_hash: "1aa8cb36f09d662cd539e40e2f2232c5b3b2db8aeab66c143934a97f16d773fe"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Firebase Storage","Firebase Storage"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Firebase Storage","Firebase Storage"]
-nav_prev: {"path": "../firebase-auth/index.md", "title": "Migrate from Firebase Auth to Supabase"}
-nav_next: {"path": "../firestore-data/index.md", "title": "Migrate from Firebase Firestore to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firebase-auth/index.md", "title": "Migrate from Firebase Auth to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firestore-data/index.md", "title": "Migrate from Firebase Firestore to Supabase"}
 ---
 
 # 

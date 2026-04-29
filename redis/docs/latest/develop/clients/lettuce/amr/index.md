@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:03.355Z"
 content_hash: "556333ab958a25d7bc6bbfe2ecf6fd0cb857a37c6a9e889ef3719b43947c7c31"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
-nav_prev: {"path": "../index.md", "title": "Lettuce guide (Java)"}
-nav_next: {"path": "../connect/index.md", "title": "Connect to the server"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/index.md", "title": "Lettuce guide (Java)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/connect/index.md", "title": "Connect to the server"}
 ---
 
 # Connect to Azure Managed Redis
@@ -23,7 +23,7 @@ See [Use Microsoft Entra for cache authentication](https://learn.microsoft.com/e
 
 ## Install
 
-Install [`Lettuce`](/docs/latest/develop/clients/lettuce/) first, if you have not already done so.
+Install [`Lettuce`](../index.md) first, if you have not already done so.
 
 If you are using Maven, add the following dependency to your `pom.xml` file:
 
@@ -131,7 +131,7 @@ try ( EntraIDTokenAuthConfigBuilder builder = EntraIDTokenAuthConfigBuilder.buil
 
 When you have created your `TokenBasedRedisCredentialsProvider` instance, you are ready to connect to AMR. The example below shows how to include the authentication details in a `TokenBasedRedisCredentialsProvider` instance and pass it to the `RedisURI.Builder` using the `withAuthentication()` option. It also uses a `ClientOptions` object to enable automatic re-authentication.
 
-The connection uses [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security), which is recommended and enabled by default for managed identities. See [TLS connection](/docs/latest/develop/clients/lettuce/connect/#tls-connection) for more information.
+The connection uses [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security), which is recommended and enabled by default for managed identities. See [TLS connection](../connect/index.md#tls-connection) for more information.
 
 Note:
 

@@ -10,8 +10,8 @@ content_hash: "a7fa99db2e9e00bf5de1d2ebaad9adeecc81822c719dec0bf9384fadc869b9c9"
 menu_path: ["Write your own SQL"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
-nav_next: {"path": "raw-queries/index.md", "title": "Raw queries"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/type-safety/prisma-type-system/index.md", "title": "How to use Prisma ORM's type system"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/raw-queries/index.md", "title": "Raw queries"}
 ---
 
 Using Raw SQL

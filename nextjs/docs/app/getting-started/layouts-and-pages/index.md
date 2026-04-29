@@ -11,8 +11,8 @@ menu_path: ["Layouts and Pages"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../project-structure/index.md", "title": "Project structure and organization"}
-nav_next: {"path": "../linking-and-navigating/index.md", "title": "Linking and Navigating"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/project-structure/index.md", "title": "Project structure and organization"}
+nav_next: {"path": "nextjs/docs/app/getting-started/linking-and-navigating/index.md", "title": "Linking and Navigating"}
 ---
 
 # Layouts and Pages
@@ -23,7 +23,7 @@ Next.js uses **file-system based routing**, meaning you can use folders and file
 
 ## Creating a page[](#creating-a-page)
 
-A **page** is UI that is rendered on a specific route. To create a page, add a [`page` file](/docs/app/api-reference/file-conventions/page) inside the `app` directory and default export a React component. For example, to create an index page (`/`):
+A **page** is UI that is rendered on a specific route. To create a page, add a [`page` file](../../api-reference/file-conventions/page/index.md) inside the `app` directory and default export a React component. For example, to create an index page (`/`):
 
 ![page.js special file](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/page-special-file.png)
 
@@ -41,7 +41,7 @@ export default function Page() {
 
 A layout is UI that is **shared** between multiple pages. On navigation, layouts preserve state, remain interactive, and do not rerender.
 
-You can define a layout by default exporting a React component from a [`layout` file](/docs/app/api-reference/file-conventions/layout). The component should accept a `children` prop which can be a page or another [layout](#nesting-layouts).
+You can define a layout by default exporting a React component from a [`layout` file](../../api-reference/file-conventions/layout/index.md). The component should accept a `children` prop which can be a page or another [layout](#nesting-layouts).
 
 For example, to create a layout that accepts your index page as child, add a `layout` file inside the `app` directory:
 
@@ -69,7 +69,7 @@ export default function DashboardLayout({
 }
 ```
 
-The layout above is called a [root layout](/docs/app/api-reference/file-conventions/layout#root-layout) because it's defined at the root of the `app` directory. The root layout is **required** and must contain `html` and `body` tags.
+The layout above is called a [root layout](../../api-reference/file-conventions/layout/index.md#root-layout) because it's defined at the root of the `app` directory. The root layout is **required** and must contain `html` and `body` tags.
 
 ## Creating a nested route[](#creating-a-nested-route)
 
@@ -126,7 +126,7 @@ export default function Page() {
 }
 ```
 
-Wrapping a folder name in square brackets (e.g. `[slug]`) creates a [dynamic route segment](/docs/app/api-reference/file-conventions/dynamic-routes) which is used to generate multiple pages from data. e.g. blog posts, product pages, etc.
+Wrapping a folder name in square brackets (e.g. `[slug]`) creates a [dynamic route segment](../../api-reference/file-conventions/dynamic-routes/index.md) which is used to generate multiple pages from data. e.g. blog posts, product pages, etc.
 
 ## Nesting layouts[](#nesting-layouts)
 
@@ -154,7 +154,7 @@ If you were to combine the two layouts above, the root layout (`app/layout.js`) 
 
 ## Creating a dynamic segment[](#creating-a-dynamic-segment)
 
-[Dynamic segments](/docs/app/api-reference/file-conventions/dynamic-routes) allow you to create routes that are generated from data. For example, instead of manually creating a route for each individual blog post, you can create a dynamic segment to generate the routes based on blog post data.
+[Dynamic segments](../../api-reference/file-conventions/dynamic-routes/index.md) allow you to create routes that are generated from data. For example, instead of manually creating a route for each individual blog post, you can create a dynamic segment to generate the routes based on blog post data.
 
 To create a dynamic segment, wrap the segment (folder) name in square brackets: `[segmentName]`. For example, in the `app/blog/[slug]/page.tsx` route, the `[slug]` is the dynamic segment.
 
@@ -180,13 +180,13 @@ export default async function BlogPostPage({
 }
 ```
 
-Learn more about [Dynamic Segments](/docs/app/api-reference/file-conventions/dynamic-routes) and the [`params`](/docs/app/api-reference/file-conventions/page#params-optional) props.
+Learn more about [Dynamic Segments](../../api-reference/file-conventions/dynamic-routes/index.md) and the [`params`](../../api-reference/file-conventions/page/index.md#params-optional) props.
 
-Nested [layouts within Dynamic Segments](/docs/app/api-reference/file-conventions/layout#params-optional), can also access the `params` props.
+Nested [layouts within Dynamic Segments](../../api-reference/file-conventions/layout/index.md#params-optional), can also access the `params` props.
 
 ## Rendering with search params[](#rendering-with-search-params)
 
-In a Server Component **page**, you can access search parameters using the [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional) prop:
+In a Server Component **page**, you can access search parameters using the [`searchParams`](../../api-reference/file-conventions/page/index.md#searchparams-optional) prop:
 
 app/page.tsx
 
@@ -202,11 +202,11 @@ export default async function Page({
 }
 ```
 
-Using `searchParams` opts your page into [**dynamic rendering**](/docs/app/glossary#dynamic-rendering) because it requires an incoming request to read the search parameters from.
+Using `searchParams` opts your page into [**dynamic rendering**](../../glossary/index.md#dynamic-rendering) because it requires an incoming request to read the search parameters from.
 
-Client Components can read search params using the [`useSearchParams`](/docs/app/api-reference/functions/use-search-params) hook.
+Client Components can read search params using the [`useSearchParams`](../../api-reference/functions/use-search-params/index.md) hook.
 
-Learn more about `useSearchParams` in [prerendered](/docs/app/api-reference/functions/use-search-params#prerendering) and [dynamically rendered](/docs/app/api-reference/functions/use-search-params#dynamic-rendering) routes.
+Learn more about `useSearchParams` in [prerendered](../../api-reference/functions/use-search-params/index.md#prerendering) and [dynamically rendered](../../api-reference/functions/use-search-params/index.md#dynamic-rendering) routes.
 
 ### What to use and when[](#what-to-use-and-when)
 
@@ -216,7 +216,7 @@ Learn more about `useSearchParams` in [prerendered](/docs/app/api-reference/func
 
 ## Linking between pages[](#linking-between-pages)
 
-You can use the [`<Link>` component](/docs/app/api-reference/components/link) to navigate between routes. `<Link>` is a built-in Next.js component that extends the HTML `<a>` tag to provide [prefetching](/docs/app/getting-started/linking-and-navigating#prefetching) and [client-side navigation](/docs/app/getting-started/linking-and-navigating#client-side-transitions).
+You can use the [`<Link>` component](../../api-reference/components/link/index.md) to navigate between routes. `<Link>` is a built-in Next.js component that extends the HTML `<a>` tag to provide [prefetching](../linking-and-navigating/index.md#prefetching) and [client-side navigation](../linking-and-navigating/index.md#client-side-transitions).
 
 For example, to generate a list of blog posts, import `<Link>` from `next/link` and pass a `href` prop to the component:
 
@@ -242,16 +242,16 @@ export default async function Post({ post }) {
 }
 ```
 
-> **Good to know**: `<Link>` is the primary way to navigate between routes in Next.js. You can also use the [`useRouter` hook](/docs/app/api-reference/functions/use-router) for more advanced navigation.
+> **Good to know**: `<Link>` is the primary way to navigate between routes in Next.js. You can also use the [`useRouter` hook](../../api-reference/functions/use-router/index.md) for more advanced navigation.
 
 ## Route Props Helpers[](#route-props-helpers)
 
 Next.js exposes utility types that infer `params` and named slots from your route structure:
 
--   [**PageProps**](/docs/app/api-reference/file-conventions/page#page-props-helper): Props for `page` components, including `params` and `searchParams`.
--   [**LayoutProps**](/docs/app/api-reference/file-conventions/layout#layout-props-helper): Props for `layout` components, including `children` and any named slots (e.g. folders like `@analytics`).
+-   [**PageProps**](../../api-reference/file-conventions/page/index.md#page-props-helper): Props for `page` components, including `params` and `searchParams`.
+-   [**LayoutProps**](../../api-reference/file-conventions/layout/index.md#layout-props-helper): Props for `layout` components, including `children` and any named slots (e.g. folders like `@analytics`).
 
-These are globally available helpers, generated when running either `next dev`, `next build` or [`next typegen`](/docs/app/api-reference/cli/next#next-typegen-options).
+These are globally available helpers, generated when running either `next dev`, `next build` or [`next typegen`](../../api-reference/cli/next/index.md#next-typegen-options).
 
 app/blog/\[slug\]/page.tsx
 
@@ -292,30 +292,30 @@ Learn more about the features mentioned in this page by reading the API Referenc
 
 Learn how the built-in navigation optimizations work, including prefetching, prerendering, and client-side navigation, and how to optimize navigation for dynamic routes and slow networks.
 
-](/docs/app/getting-started/linking-and-navigating)[
+](../linking-and-navigating/index.md)[
 
 ### layout.js
 
 API reference for the layout.js file.
 
-](/docs/app/api-reference/file-conventions/layout)[
+](../../api-reference/file-conventions/layout/index.md)[
 
 ### page.js
 
 API reference for the page.js file.
 
-](/docs/app/api-reference/file-conventions/page)[
+](../../api-reference/file-conventions/page/index.md)[
 
 ### Link Component
 
 Enable fast client-side navigation with the built-in \`next/link\` component.
 
-](/docs/app/api-reference/components/link)[
+](../../api-reference/components/link/index.md)[
 
 ### Dynamic Segments
 
 Dynamic Route Segments can be used to programmatically generate route segments from dynamic data.
 
-](/docs/app/api-reference/file-conventions/dynamic-routes)
+](../../api-reference/file-conventions/dynamic-routes/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:46.449Z"
 content_hash: "ae1c105f6d17c428d3f26fac7e51748500b0f53c08e25ded7d9819aeec275d9c"
 menu_path: ["PostgreSQL: Documentation: 18: 39.7. Rules Versus Triggers"]
 section_path: []
-nav_prev: {"path": "../rules-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.6.\u00a0Rules and Command Status"}
-nav_next: {"path": "../rules-update.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.4.\u00a0Rules on INSERT, UPDATE, and DELETE"}
+nav_prev: {"path": "postgres/docs/current/rules-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.6.\u00a0Rules and Command Status"}
+nav_next: {"path": "postgres/docs/current/rules-update.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.4.\u00a0Rules on INSERT, UPDATE, and DELETE"}
 ---
 
 Many things that can be done using triggers can also be implemented using the PostgreSQL rule system. One of the things that cannot be implemented by rules are some kinds of constraints, especially foreign keys. It is possible to place a qualified rule that rewrites a command to `NOTHING` if the value of a column does not appear in another table. But then the data is silently thrown away and that's not a good idea. If checks for valid values are required, and in the case of an invalid value an error message should be generated, it must be done by a trigger.

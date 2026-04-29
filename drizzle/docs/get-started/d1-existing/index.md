@@ -10,8 +10,8 @@ content_hash: "c3d9218b3d224a9ef57e98d0d9267a56fa70d82ee40013569f8d193de038af02"
 menu_path: ["Get Started with Drizzle and D1 in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../cockroach-new/index.md", "title": "Get Started with Drizzle and CockroachDB"}
-nav_next: {"path": "../d1-new/index.md", "title": "Get Started with Drizzle and D1"}
+nav_prev: {"path": "drizzle/docs/get-started/cockroach-new/index.md", "title": "Get Started with Drizzle and CockroachDB"}
+nav_next: {"path": "drizzle/docs/get-started/d1-new/index.md", "title": "Get Started with Drizzle and D1"}
 ---
 
 ## Get Started with Drizzle and D1 in existing project

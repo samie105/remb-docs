@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:17.885Z"
 content_hash: "d9c27dac5e52e1a5c55a7fc6137df308c51a2046a7f8cb8c1acfbca064fe7b18"
 menu_path: ["Migrating from WordPress"]
 section_path: []
-nav_prev: {"path": "../from-vuepress/index.md", "title": "Migrating from VuePress"}
-nav_next: {"path": "../../../contribute/index.md", "title": "Contribute to Astro"}
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-vuepress/index.md", "title": "Migrating from VuePress"}
+nav_next: {"path": "astro/en/contribute/index.md", "title": "Contribute to Astro"}
 ---
 
 # Migrating from WordPress
@@ -23,9 +23,9 @@ nav_next: {"path": "../../../contribute/index.md", "title": "Contribute to Astro
 
 WordPress and Astro share some similarities that will help you migrate your project:
 
-*   Both WordPress and Astro are ideal for [content-driven websites](/en/concepts/why-astro/#content-driven) like blogs and support writing your content in Markdown (requires a plugin in WordPress). Although the process for adding new content is different, [writing in Markdown files](/en/guides/markdown-content/) for your Astro blog should feel familiar if you have used Markdown syntax in your WordPress editor.
+*   Both WordPress and Astro are ideal for [content-driven websites](../../../concepts/why-astro/index.md#content-driven) like blogs and support writing your content in Markdown (requires a plugin in WordPress). Although the process for adding new content is different, [writing in Markdown files](../../markdown-content/index.md) for your Astro blog should feel familiar if you have used Markdown syntax in your WordPress editor.
     
-*   Both WordPress and Astro encourage you to [think about the design of your site in “blocks”](/en/concepts/islands/) (components). In Astro you will probably [write more of your own code to create these blocks](/en/basics/astro-components/) rather than rely on pre-built plugins. But thinking about the individual pieces of your site and how they are presented on the page should feel familiar.
+*   Both WordPress and Astro encourage you to [think about the design of your site in “blocks”](../../../concepts/islands/index.md) (components). In Astro you will probably [write more of your own code to create these blocks](../../../basics/astro-components/index.md) rather than rely on pre-built plugins. But thinking about the individual pieces of your site and how they are presented on the page should feel familiar.
     
 
 ## Key Differences between WordPress and Astro
@@ -34,11 +34,11 @@ WordPress and Astro share some similarities that will help you migrate your proj
 
 When you rebuild your WordPress site in Astro, you will notice some important differences:
 
-*   A WordPress site is edited using an online dashboard. In Astro, you will use a [code editor](/en/editor-setup/) and development environment to maintain your site. You can develop locally on your machine, or choose a cloud editor/development environment like StackBlitz or CodeSandbox.
+*   A WordPress site is edited using an online dashboard. In Astro, you will use a [code editor](../../../editor-setup/index.md) and development environment to maintain your site. You can develop locally on your machine, or choose a cloud editor/development environment like StackBlitz or CodeSandbox.
     
 *   WordPress has an extensive plugin and theme market. In Astro, you will find some themes and [integrations](https://astro.build/integrations/) available, but you may now have to build many of your existing features yourself instead of looking for third-party solutions. Or, you can choose to start with an [Astro theme](https://astro.build/themes) with built-in features!
     
-*   WordPress stores your content in a database. In Astro, you will have individual files (typically Markdown or MDX) in your [project directory](/en/basics/project-structure/) for each page’s content. Or, you can choose to use a [CMS for your content](/en/guides/cms/), even your existing WordPress site, and use Astro to fetch and present the data.
+*   WordPress stores your content in a database. In Astro, you will have individual files (typically Markdown or MDX) in your [project directory](../../../basics/project-structure/index.md) for each page’s content. Or, you can choose to use a [CMS for your content](../../cms/index.md), even your existing WordPress site, and use Astro to fetch and present the data.
     
 
 ## Switch from WordPress to Astro
@@ -47,7 +47,7 @@ When you rebuild your WordPress site in Astro, you will notice some important di
 
 To convert a WordPress blog to Astro, start with our blog theme starter template, or explore more community blog themes in our [theme showcase](https://astro.build/themes).
 
-You can pass a `--template` argument to the `create astro` command to start a new Astro project with one of our official starters. Or, you can [start a new project from any existing Astro repository on GitHub](/en/install-and-setup/#install-from-the-cli-wizard).
+You can pass a `--template` argument to the `create astro` command to start a new Astro project with one of our official starters. Or, you can [start a new project from any existing Astro repository on GitHub](../../../install-and-setup/index.md#install-from-the-cli-wizard).
 
 *   [npm](#tab-panel-1843)
 *   [pnpm](#tab-panel-1844)
@@ -57,9 +57,9 @@ You can pass a `--template` argument to the `create astro` command to start a ne
 npm create astro@latest -- --template blog
 ```
 
-You can continue to [use your existing WordPress blog as your CMS for Astro](/en/guides/cms/wordpress/), which means you will keep using your WordPress dashboard for writing your posts. Your content will be managed at WordPress, but all other aspects of your Astro site will be built in your code editing environment, and you will [deploy your Astro site](/en/guides/deploy/) separately from your WordPress site. (Be sure to update your domain at your host to keep the same website URL!)
+You can continue to [use your existing WordPress blog as your CMS for Astro](../../cms/wordpress/index.md), which means you will keep using your WordPress dashboard for writing your posts. Your content will be managed at WordPress, but all other aspects of your Astro site will be built in your code editing environment, and you will [deploy your Astro site](../../deploy/index.md) separately from your WordPress site. (Be sure to update your domain at your host to keep the same website URL!)
 
-You may wish to take [Astro’s Build a Blog Tutorial](/en/tutorial/0-introduction/) if you are new to working in a code editor and using GitHub to store and deploy your site. It will walk you through all the accounts and setup you need! You will also learn how to [build Astro components yourself](/en/tutorial/3-components/), and it will show you how to [add blog posts directly in Astro](/en/tutorial/2-pages/2/) if you choose not to use WordPress to write your content.
+You may wish to take [Astro’s Build a Blog Tutorial](../../../tutorial/0-introduction/index.md) if you are new to working in a code editor and using GitHub to store and deploy your site. It will walk you through all the accounts and setup you need! You will also learn how to [build Astro components yourself](../../../tutorial/3-components/index.md), and it will show you how to [add blog posts directly in Astro](../../../tutorial/2-pages/2/index.md) if you choose not to use WordPress to write your content.
 
 If you want to move all of your existing post content to Astro, you may find this [tool for exporting Markdown from WordPress helpful](https://github.com/lonekorean/wordpress-export-to-markdown). You may need to make some adjustments to the result if you have to [convert a large or complicated WordPress site to Markdown](https://swizec.com/blog/how-to-export-a-large-wordpress-site-to-markdown/).
 
@@ -93,59 +93,59 @@ To convert other types of sites, such as a portfolio or documentation site, see 
 
 *   ![](/logos/create-react-app.svg)
     
-    ### [Create React App](/en/guides/migrate-to-astro/from-create-react-app/)
+    ### [Create React App](../from-create-react-app/index.md)
     
 *   ![](/logos/docusaurus.svg)
     
-    ### [Docusaurus](/en/guides/migrate-to-astro/from-docusaurus/)
+    ### [Docusaurus](../from-docusaurus/index.md)
     
 *   ![](/logos/eleventy.svg)
     
-    ### [Eleventy](/en/guides/migrate-to-astro/from-eleventy/)
+    ### [Eleventy](../from-eleventy/index.md)
     
 *   ![](/logos/gatsby.svg)
     
-    ### [Gatsby](/en/guides/migrate-to-astro/from-gatsby/)
+    ### [Gatsby](../from-gatsby/index.md)
     
 *   ![](/logos/gitbook.svg)
     
-    ### [GitBook](/en/guides/migrate-to-astro/from-gitbook/)
+    ### [GitBook](../from-gitbook/index.md)
     
 *   ![](/logos/gridsome.svg)
     
-    ### [Gridsome](/en/guides/migrate-to-astro/from-gridsome/)
+    ### [Gridsome](../from-gridsome/index.md)
     
 *   ![](/logos/hugo.svg)
     
-    ### [Hugo](/en/guides/migrate-to-astro/from-hugo/)
+    ### [Hugo](../from-hugo/index.md)
     
 *   ![](/logos/jekyll.png)
     
-    ### [Jekyll](/en/guides/migrate-to-astro/from-jekyll/)
+    ### [Jekyll](../from-jekyll/index.md)
     
 *   ![](/logos/nextjs.svg)
     
-    ### [Next.js](/en/guides/migrate-to-astro/from-nextjs/)
+    ### [Next.js](../from-nextjs/index.md)
     
 *   ![](/logos/nuxtjs.svg)
     
-    ### [NuxtJS](/en/guides/migrate-to-astro/from-nuxtjs/)
+    ### [NuxtJS](../from-nuxtjs/index.md)
     
 *   ![](/logos/pelican.svg)
     
-    ### [Pelican](/en/guides/migrate-to-astro/from-pelican/)
+    ### [Pelican](../from-pelican/index.md)
     
 *   ![](/logos/sveltekit.svg)
     
-    ### [SvelteKit](/en/guides/migrate-to-astro/from-sveltekit/)
+    ### [SvelteKit](../from-sveltekit/index.md)
     
 *   ![](/logos/vuepress.png)
     
-    ### [VuePress](/en/guides/migrate-to-astro/from-vuepress/)
+    ### [VuePress](../from-vuepress/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [WordPress](/en/guides/migrate-to-astro/from-wordpress/)
+    ### [WordPress](index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

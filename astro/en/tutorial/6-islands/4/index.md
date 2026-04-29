@@ -9,12 +9,12 @@ last_crawled_at: "2026-04-18T16:49:07.624Z"
 content_hash: "f8dc177e0a63d982aaa81a8e6f12f59e8a6fc129820341ad727b397ab02b2753"
 menu_path: ["Optional: Make a content collection"]
 section_path: []
-nav_prev: {"path": "../3/index.md", "title": "Congratulations!"}
+nav_prev: {"path": "astro/en/tutorial/6-islands/3/index.md", "title": "Congratulations!"}
 ---
 
 # Optional: Make a content collection
 
-Now that you have a blog using Astro’s [built-in file-based routing](/en/guides/routing/#static-routes), you will update it to use a [content collection](/en/guides/content-collections/). Content collections are a powerful way to manage groups of similar content, such as blog posts.
+Now that you have a blog using Astro’s [built-in file-based routing](../../../guides/routing/index.md#static-routes), you will update it to use a [content collection](../../../guides/content-collections/index.md). Content collections are a powerful way to manage groups of similar content, such as blog posts.
 
 Get ready to…
 
@@ -28,9 +28,9 @@ Get ready to…
 
 Even when using content collections, you will still use the `src/pages/` folder for individual pages, such as your About Me page. But, moving your blog posts outside of this special folder will allow you to use more powerful and performant APIs to generate your blog post index and display your individual blog posts.
 
-At the same time, you’ll receive better guidance and autocompletion in your code editor because you will have a **[schema](/en/guides/content-collections/#defining-the-collection-schema)** to define a common structure for each post that Astro will help you enforce through [Zod](https://zod.dev/), a schema declaration and validation library for TypeScript. In your schema, you can specify when frontmatter properties are required, such as a description or an author, and which data type each property must be, such as a string or an array. This leads to catching many mistakes sooner, with descriptive error messages telling you exactly what the problem is.
+At the same time, you’ll receive better guidance and autocompletion in your code editor because you will have a **[schema](../../../guides/content-collections/index.md#defining-the-collection-schema)** to define a common structure for each post that Astro will help you enforce through [Zod](https://zod.dev/), a schema declaration and validation library for TypeScript. In your schema, you can specify when frontmatter properties are required, such as a description or an author, and which data type each property must be, such as a string or an array. This leads to catching many mistakes sooner, with descriptive error messages telling you exactly what the problem is.
 
-Read more about [Astro’s content collections](/en/guides/content-collections/) in our guide, or get started with the instructions below to convert a basic blog from `src/pages/posts/` to `src/blog/`.
+Read more about [Astro’s content collections](../../../guides/content-collections/index.md) in our guide, or get started with the instructions below to convert a basic blog from `src/pages/posts/` to `src/blog/`.
 
 ### Test your knowledge
 
@@ -67,7 +67,7 @@ Upgrade to the latest version of Astro, and upgrade all integrations to their la
     
 2.  Move all your existing blog posts (`.md` files) from `src/pages/posts/` into this new collection.
     
-3.  Create a `src/content.config.ts` file to [define a schema](/en/guides/content-collections/#defining-the-collection-schema) for your `postsCollection`. For the existing blog tutorial code, add the following contents to the file to define all the frontmatter properties used in its blog posts:
+3.  Create a `src/content.config.ts` file to [define a schema](../../../guides/content-collections/index.md#defining-the-collection-schema) for your `postsCollection`. For the existing blog tutorial code, add the following contents to the file to define all the frontmatter properties used in its blog posts:
     
     ```
     // Import the glob loaderimport { glob } from "astro/loaders";// Import utilities from `astro:content`import { defineCollection } from "astro:content";// Import Zodimport { z } from "astro/zod";// Define a `loader` and `schema` for each collectionconst blog = defineCollection({    loader: glob({ pattern: '**/[^_]*.md', base: "./src/blog" }),    schema: z.object({      title: z.string(),      pubDate: z.date(),      description: z.string(),      author: z.string(),      image: z.object({        url: z.string(),        alt: z.string()      }),      tags: z.array(z.string())    })});// Export a single `collections` object to register your collection(s)export const collections = { blog };
@@ -82,7 +82,7 @@ Upgrade to the latest version of Astro, and upgrade all integrations to their la
 
 1.  Create a page file called `src/pages/posts/[...slug].astro`. Your Markdown and MDX files no longer automatically become pages using Astro’s file-based routing when they are inside a collection, so you must create a page responsible for generating each individual blog post.
     
-2.  Add the following code to [query your collection](/en/guides/content-collections/#querying-build-time-collections) to make each blog post’s slug and page content available to each page it will generate:
+2.  Add the following code to [query your collection](../../../guides/content-collections/index.md#querying-build-time-collections) to make each blog post’s slug and page content available to each page it will generate:
     
     ```
     ---import { getCollection, render } from 'astro:content';
@@ -109,7 +109,7 @@ Upgrade to the latest version of Astro, and upgrade all integrations to their la
 
 [Section titled “Replace import.meta.glob() with getCollection()”](#replace-importmetaglob-with-getcollection)
 
-5.  Anywhere you have a list of blog posts, like the tutorial’s Blog page (`src/pages/blog.astro`), you will need to replace `import.meta.glob()` with [`getCollection()`](/en/reference/modules/astro-content/#getcollection) as the way to fetch content and metadata from your Markdown files.
+5.  Anywhere you have a list of blog posts, like the tutorial’s Blog page (`src/pages/blog.astro`), you will need to replace `import.meta.glob()` with [`getCollection()`](../../../reference/modules/astro-content/index.md#getcollection) as the way to fetch content and metadata from your Markdown files.
     
     ```
     ---import { getCollection } from "astro:content";import BaseLayout from "../layouts/BaseLayout.astro";import BlogPost from "../components/BlogPost.astro";
@@ -187,4 +187,4 @@ For the full example of the blog tutorial using content collections, see the [Co
 
  *    I can use content collections to manage groups of similar content for better performance and organization.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

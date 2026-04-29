@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:44.375Z"
 content_hash: "742abcbd9ddb282675def0e9f0dce5d5803c2de47b621a83255f97522547e26e"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure Phone Login & MFA","Configure Phone Login & MFA"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure Phone Login & MFA","Configure Phone Login & MFA"]
-nav_prev: {"path": "../self-hosted-oauth/index.md", "title": "Configure Social Login (OAuth) Providers"}
-nav_next: {"path": "../self-hosted-proxy-https/index.md", "title": "Configure Reverse Proxy and HTTPS"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-oauth/index.md", "title": "Configure Social Login (OAuth) Providers"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-proxy-https/index.md", "title": "Configure Reverse Proxy and HTTPS"}
 ---
 
 # 
@@ -25,13 +25,13 @@ Set up phone login SMS providers, OTP settings, and multi-factor authentication 
 
 This guide covers the **server-side configuration** for phone login and multi-factor authentication (MFA) on a self-hosted Supabase instance running with Docker Compose.
 
-For client-side implementation, see [Phone Login](/docs/guides/auth/phone-login) and [Multi-Factor Authentication](/docs/guides/auth/auth-mfa).
+For client-side implementation, see [Phone Login](../../auth/phone-login/index.md) and [Multi-Factor Authentication](../../auth/auth-mfa/index.md).
 
 ## Before you begin[#](#before-you-begin)
 
 You need:
 
-*   A working self-hosted Supabase installation. See [Self-Hosting with Docker](/docs/guides/self-hosting/docker).
+*   A working self-hosted Supabase installation. See [Self-Hosting with Docker](../docker/index.md).
 *   An account with an SMS provider (e.g., Twilio)
 
 Phone auth is **enabled by default** in the Docker setup (`ENABLE_PHONE_SIGNUP=true` in `.env`). However, without an SMS provider configured, the Auth service has no way to deliver OTP codes.
@@ -204,6 +204,6 @@ If users see "rate limit exceeded" errors, check `SMS_MAX_FREQUENCY` (minimum in
 
 ### Additional resources[#](#additional-resources)
 
-*   [Multi-Factor Authentication (Phone)](/docs/guides/auth/auth-mfa/phone)
-*   [Multi-Factor Authentication (TOTP)](/docs/guides/auth/auth-mfa/totp)
+*   [Multi-Factor Authentication (Phone)](../../auth/auth-mfa/phone/index.md)
+*   [Multi-Factor Authentication (TOTP)](../../auth/auth-mfa/totp/index.md)
 *   [Auth server on GitHub](https://github.com/supabase/auth) (check README and `example.env`)

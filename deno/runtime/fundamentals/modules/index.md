@@ -10,8 +10,8 @@ content_hash: "a956cbd6e8f925925cc6e526f204be11178d7ac3ee0eb6c4588a8e3f9b886b79"
 menu_path: ["Modules and dependencies"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../security/index.md", "title": "Security and permissions"}
-nav_next: {"path": "../configuration/index.md", "title": "deno.json and package.json"}
+nav_prev: {"path": "deno/runtime/fundamentals/security/index.md", "title": "Security and permissions"}
+nav_next: {"path": "deno/runtime/fundamentals/configuration/index.md", "title": "deno.json and package.json"}
 ---
 
 # Add the latest version of the module to deno.json
@@ -39,7 +39,7 @@ $ deno add jsr:@luca/cases@1.0.0
 Add @luca/cases - jsr:@luca/cases@1.0.0
 ```
 
-Read more in [`deno add` reference](/runtime/reference/cli/add/).
+Read more in [`deno add` reference](../../reference/cli/add/index.md).
 
 You can also remove dependencies using `deno remove`:
 
@@ -58,7 +58,7 @@ deno.json
 }
 ```
 
-Read more in [`deno remove` reference](/runtime/reference/cli/remove/).
+Read more in [`deno remove` reference](../../reference/cli/remove/index.md).
 
 ## Package Versions
 
@@ -530,7 +530,7 @@ Automate a weekly dependency refresh: a scheduled CI job that unfreezes,
 
 Note
 
-If you're looking for private npm registries and `.npmrc` support, visit the [npm support](/runtime/fundamentals/node/#private-registries) page.
+If you're looking for private npm registries and `.npmrc` support, visit the [npm support](../node/index.md#private-registries) page.
 
 There may be instances where you want to load a remote module that is located in a _private_ repository, like a private repository on GitHub.
 

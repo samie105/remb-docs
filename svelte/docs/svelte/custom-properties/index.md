@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:31.302Z"
 content_hash: "a2bfa8cbaeab779f49b44e2262a5f1f0299386ec067010baa9c12caf47eef93d"
 menu_path: ["Custom properties"]
 section_path: []
-nav_prev: {"path": "../global-styles/index.md", "title": "Global styles"}
-nav_next: {"path": "../nested-style-elements/index.md", "title": "Nested <style> elements"}
+nav_prev: {"path": "svelte/docs/svelte/global-styles/index.md", "title": "Global styles"}
+nav_next: {"path": "svelte/docs/svelte/nested-style-elements/index.md", "title": "Nested <style> elements"}
 ---
 
 You can pass CSS custom properties — both static and dynamic — to components:
@@ -71,4 +71,4 @@ You don't _have_ to specify the values directly on the component; as long as the
 
 previous next
 
-[Global styles](/docs/svelte/global-styles) [Nested <style> elements](/docs/svelte/nested-style-elements)
+[Global styles](../global-styles/index.md) [Nested <style> elements](../nested-style-elements/index.md)

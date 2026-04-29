@@ -11,15 +11,15 @@ menu_path: ["getStaticPaths"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../get-static-props/index.md", "title": "getStaticProps"}
-nav_next: {"path": "../get-server-side-props/index.md", "title": "getServerSideProps"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-props/index.md", "title": "getStaticProps"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-server-side-props/index.md", "title": "getServerSideProps"}
 ---
 
 # getStaticPaths
 
 Last updated April 23, 2026
 
-If a page has [Dynamic Routes](/docs/pages/building-your-application/routing/dynamic-routes) and uses `getStaticProps`, it needs to define a list of paths to be statically generated.
+If a page has [Dynamic Routes](../../routing/dynamic-routes/index.md) and uses `getStaticProps`, it needs to define a list of paths to be statically generated.
 
 When you export a function called `getStaticPaths` (Static Site Generation) from a page that uses dynamic routes, Next.js will statically prerender all the paths specified by `getStaticPaths`.
 
@@ -67,7 +67,7 @@ export default function Page({
 }
 ```
 
-The [`getStaticPaths` API reference](/docs/pages/api-reference/functions/get-static-paths) covers all parameters and props that can be used with `getStaticPaths`.
+The [`getStaticPaths` API reference](../../../api-reference/functions/get-static-paths/index.md) covers all parameters and props that can be used with `getStaticPaths`.
 
 ## When should I use getStaticPaths?[](#when-should-i-use-getstaticpaths)
 
@@ -92,8 +92,8 @@ You should use `getStaticPaths` if you’re statically prerendering pages that u
 ## Where can I use getStaticPaths[](#where-can-i-use-getstaticpaths)
 
 -   `getStaticPaths` **must** be used with `getStaticProps`
--   You **cannot** use `getStaticPaths` with [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props)
--   You can export `getStaticPaths` from a [Dynamic Route](/docs/pages/building-your-application/routing/dynamic-routes) that also uses `getStaticProps`
+-   You **cannot** use `getStaticPaths` with [`getServerSideProps`](../get-server-side-props/index.md)
+-   You can export `getStaticPaths` from a [Dynamic Route](../../routing/dynamic-routes/index.md) that also uses `getStaticProps`
 -   You **cannot** export `getStaticPaths` from non-page file (e.g. your `components` folder)
 -   You must export `getStaticPaths` as a standalone function, and not a property of the page component
 
@@ -103,7 +103,7 @@ In development (`next dev`), `getStaticPaths` will be called on every request.
 
 ## Generating paths on-demand[](#generating-paths-on-demand)
 
-`getStaticPaths` allows you to control which pages are generated during the build instead of on-demand with [`fallback`](/docs/pages/api-reference/functions/get-static-paths#fallback-blocking). Generating more pages during a build will cause slower builds.
+`getStaticPaths` allows you to control which pages are generated during the build instead of on-demand with [`fallback`](../../../api-reference/functions/get-static-paths/index.md#fallback-blocking). Generating more pages during a build will cause slower builds.
 
 You can defer generating all pages on-demand by returning an empty array for `paths`. This can be especially helpful when deploying your Next.js application to multiple environments. For example, you can have faster builds by generating all pages on-demand for previews (but not production builds). This is helpful for sites with hundreds/thousands of static pages.
 

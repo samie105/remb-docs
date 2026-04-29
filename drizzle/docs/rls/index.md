@@ -10,8 +10,8 @@ content_hash: "d0dfac530949c351dd56f61f856e4b0ef3d9e282bc89215c4d894abb881a16e7"
 menu_path: ["Row-Level Security (RLS)"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../relations-v2/index.md", "title": "Drizzle relations"}
-nav_next: {"path": "../extensions/pg/index.md", "title": "PostgreSQL extensions"}
+nav_prev: {"path": "drizzle/docs/relations-v2/index.md", "title": "Drizzle relations"}
+nav_next: {"path": "drizzle/docs/extensions/pg/index.md", "title": "PostgreSQL extensions"}
 ---
 
 With Drizzle, you can enable Row-Level Security (RLS) for any Postgres table, create policies with various options, and define and manage the roles those policies apply to.

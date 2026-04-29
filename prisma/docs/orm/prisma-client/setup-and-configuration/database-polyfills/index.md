@@ -10,8 +10,8 @@ content_hash: "b9ef0c0452977bb8a80eea3f533682a197cc2497fd0cc4a6a798d2dab5b8e069"
 menu_path: ["Database polyfills"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../custom-model-and-field-names/index.md", "title": "Custom model and field names"}
-nav_next: {"path": "../databases-connections/index.md", "title": "Database connections"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/custom-model-and-field-names/index.md", "title": "Custom model and field names"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md", "title": "Database connections"}
 ---
 
 Setup and Configuration

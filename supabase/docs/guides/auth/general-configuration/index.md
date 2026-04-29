@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:32.190Z"
 content_hash: "cff3eccbd5feff1f7c92bd3f1875b64ad4a9c123d0366576ea1bc00fbe9e9ecb"
 menu_path: ["Auth","Auth","Configuration","Configuration","General Configuration","General Configuration"]
 section_path: ["Auth","Auth","Configuration","Configuration","General Configuration","General Configuration"]
-nav_prev: {"path": "../enterprise-sso/auth-sso-saml/index.md", "title": "Single Sign-On with SAML 2.0 for Projects"}
-nav_next: {"path": "../identities/index.md", "title": "Identities"}
+nav_prev: {"path": "supabase/docs/guides/auth/enterprise-sso/auth-sso-saml/index.md", "title": "Single Sign-On with SAML 2.0 for Projects"}
+nav_next: {"path": "supabase/docs/guides/auth/identities/index.md", "title": "Identities"}
 ---
 
 # 
@@ -33,7 +33,7 @@ This section covers the [general configuration options](/dashboard/project/_/aut
 *   [Email Templates](/dashboard/project/_/auth/templates) to configure what emails your users receive.
 *   [Custom SMTP](/dashboard/project/_/auth/smtp) to configure how emails are sent.
 *   [Multi-Factor](/dashboard/project/_/auth/mfa) to require users to provide additional verification factors to authenticate.
-*   [URL Configuration](/dashboard/project/_/auth/url-configuration) to configure site URL and redirect URLs for authentication. Read more [in the redirect URLs documentation](/docs/guides/auth/redirect-urls).
+*   [URL Configuration](/dashboard/project/_/auth/url-configuration) to configure site URL and redirect URLs for authentication. Read more [in the redirect URLs documentation](../redirect-urls/index.md).
 *   [Attack Protection](/dashboard/project/_/auth/protection) to configure security settings to protect your project from attacks.
 *   [Auth Hooks (BETA)](/dashboard/project/_/auth/auth-hooks) to use Postgres functions or HTTP endpoints to customize the behavior of Supabase Auth to meet your needs.
 *   [Audit Logs (BETA)](/dashboard/project/_/auth/audit-logs) to track and monitor auth events in your project.

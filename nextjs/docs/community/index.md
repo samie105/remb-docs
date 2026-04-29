@@ -11,8 +11,8 @@ menu_path: ["Next.js Community"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../architecture/supported-browsers/index.md", "title": "Supported Browsers"}
-nav_next: {"path": "contribution-guide/index.md", "title": "Docs Contribution Guide"}
+nav_prev: {"path": "nextjs/docs/architecture/supported-browsers/index.md", "title": "Supported Browsers"}
+nav_next: {"path": "nextjs/docs/community/contribution-guide/index.md", "title": "Docs Contribution Guide"}
 ---
 
 # Next.js Community
@@ -25,7 +25,7 @@ With over 5 million weekly downloads, Next.js has a large and active community o
 
 There are a couple of ways you can contribute to the development of Next.js:
 
--   [Documentation](/docs/community/contribution-guide): Suggest improvements or even write new sections to help our users understand how to use Next.js.
+-   [Documentation](contribution-guide/index.md): Suggest improvements or even write new sections to help our users understand how to use Next.js.
 -   [Examples](https://github.com/vercel/next.js/tree/canary/examples): Help developers integrate Next.js with other tools and services by creating a new example or improving an existing one.
 -   [Codebase](https://github.com/vercel/next.js/tree/canary/contributing/core): Learn more about the underlying architecture, contribute to bug fixes, errors, and suggest new features.
 
@@ -51,12 +51,12 @@ We believe in creating an inclusive, welcoming community. As such, we ask all me
 
 Learn how to contribute to Next.js Documentation
 
-](/docs/community/contribution-guide)[
+](contribution-guide/index.md)[
 
 ### Rspack
 
 Use the \`next-rspack\` plugin to bundle your Next.js with Rspack.
 
-](/docs/community/rspack)
+](rspack/index.md)
 
 Was this helpful?

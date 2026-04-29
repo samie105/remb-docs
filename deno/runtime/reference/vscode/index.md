@@ -10,8 +10,8 @@ content_hash: "003bfae6c7f73cfdd9c7d91d955ed44e51d23602c8ca3990e913f5498c9b8cc4"
 menu_path: ["Deno & Visual Studio Code"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../env_variables/index.md", "title": "Environment variables"}
-nav_next: {"path": "../jsx/index.md", "title": "JSX"}
+nav_prev: {"path": "deno/runtime/reference/env_variables/index.md", "title": "Environment variables"}
+nav_next: {"path": "deno/runtime/reference/jsx/index.md", "title": "JSX"}
 ---
 
 **On this page**
@@ -43,7 +43,7 @@ This page covers developing Deno applications using [Visual Studio Code](https:/
 
 ## Installation
 
-The Deno VS Code extension integrates directly with the Deno CLI using the [language server protocol](/runtime/reference/lsp_integration/). This helps ensure that the information you get about your code aligns to how that code will work when you run it with the Deno CLI.
+The Deno VS Code extension integrates directly with the Deno CLI using the [language server protocol](../lsp_integration/index.md). This helps ensure that the information you get about your code aligns to how that code will work when you run it with the Deno CLI.
 
 The Deno extension is installed like other extensions in VS Code. Search for `Deno` in the extensions tab of VS Code and click the **install** button, or [this link](vscode:extension/denoland.vscode-deno) will open the extension page where you can choose to install.
 
@@ -152,7 +152,7 @@ The language server currently supports several code lenses (actionable contextua
 
 ### Testing code lens
 
-The Deno CLI includes a [built-in testing API](/runtime/reference/lsp_integration/#testing) available under [`Deno.test`](/api/deno/~/Deno.test). The extension and language server have a code lens enabled by default which provides the ability to run a test from within the editor.
+The Deno CLI includes a [built-in testing API](../lsp_integration/index.md#testing) available under [`Deno.test`](/api/deno/~/Deno.test). The extension and language server have a code lens enabled by default which provides the ability to run a test from within the editor.
 
 When you have a block of code that provides a test:
 
@@ -205,7 +205,7 @@ The extension provides integration with the built-in VS Code debugger. You can g
 
 ## Tasks
 
-While the extension communicates directly with the language server, there are times when you might prefer to run Deno commands via the CLI. You can define tasks in a `deno.json` file in the root of your workspace in a [`tasks` field](/runtime/fundamentals/configuration/#tasks).
+While the extension communicates directly with the language server, there are times when you might prefer to run Deno commands via the CLI. You can define tasks in a `deno.json` file in the root of your workspace in a [`tasks` field](../../fundamentals/configuration/index.md#tasks).
 
 ## Using a development container
 

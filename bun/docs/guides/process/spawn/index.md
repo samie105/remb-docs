@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:00.729Z"
 content_hash: "5928c21b5e33e855caa5f81cb392e58d5b7fbf3e0364e5bd26cb282e47c209b3"
 menu_path: ["Spawn a child process"]
 section_path: []
-nav_prev: {"path": "../os-signals/index.md", "title": "Listen to OS signals"}
-nav_next: {"path": "../spawn-stderr/index.md", "title": "Read stderr from a child process"}
+nav_prev: {"path": "bun/docs/guides/process/os-signals/index.md", "title": "Listen to OS signals"}
+nav_next: {"path": "bun/docs/guides/process/spawn-stderr/index.md", "title": "Read stderr from a child process"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../spawn-stderr/index.md", "title": "Read stderr from a chil
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-Use [`Bun.spawn()`](/docs/runtime/child-process) to spawn a child process.
+Use [`Bun.spawn()`](../../../runtime/child-process/index.md) to spawn a child process.
 
 ```
 const proc = Bun.spawn(["echo", "hello"]);
@@ -71,7 +71,7 @@ output; // => "hello\n"
 
 * * *
 
-See [Docs > API > Child processes](/docs/runtime/child-process) for complete documentation.
+See [Docs > API > Child processes](../../../runtime/child-process/index.md) for complete documentation.
 
 Was this page helpful?
 
@@ -83,10 +83,10 @@ Enable compression for WebSocket messages
 
 Previous
 
-](/docs/guides/websocket/compression)[
+](../../websocket/compression/index.md)[
 
 Read stdout from a child process
 
 Next
 
-](/docs/guides/process/spawn-stdout)
+](../spawn-stdout/index.md)

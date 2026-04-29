@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:59.904Z"
 content_hash: "b88e82066dabba270a62ebd3ab6b3460980281d185daf5b882e8acf75c23e843"
 menu_path: ["Google Cloud Run ​"]
 section_path: []
-nav_prev: {"path": "../azure-functions/index.md", "title": "Azure Functions \u200b"}
-nav_next: {"path": "../supabase-functions/index.md", "title": "Supabase Edge Functions \u200b"}
+nav_prev: {"path": "hono/docs/getting-started/azure-functions/index.md", "title": "Azure Functions \u200b"}
+nav_next: {"path": "hono/docs/getting-started/supabase-functions/index.md", "title": "Supabase Edge Functions \u200b"}
 ---
 
 [Google Cloud Run](https://cloud.google.com/run) is a serverless platform built by Google Cloud. You can run your code in response to events and Google automatically manages the underlying compute resources for you.

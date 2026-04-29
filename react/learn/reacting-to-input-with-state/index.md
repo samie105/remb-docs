@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:27.471Z"
 content_hash: "7cee2772e3c70df1af4f52c736f45c03c0b6d4d45cbaf5bed24b0bb9ec4424ed"
 menu_path: ["Reacting to Input with State"]
 section_path: []
-nav_prev: {"path": "../managing-state/index.md", "title": "Managing State"}
-nav_next: {"path": "../choosing-the-state-structure/index.md", "title": "Choosing the State Structure"}
+nav_prev: {"path": "react/learn/managing-state/index.md", "title": "Managing State"}
+nav_next: {"path": "react/learn/choosing-the-state-structure/index.md", "title": "Choosing the State Structure"}
 ---
 
 React provides a declarative way to manipulate the UI. Instead of manipulating individual pieces of the UI directly, you describe the different states that your component can be in, and switch between them in response to the user input. This is similar to how designers think about the UI.

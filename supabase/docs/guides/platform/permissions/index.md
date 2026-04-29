@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:53.426Z"
 content_hash: "85197f70dde21382b26f782e3296c1c9307387f9eacacbd7c536f1fc0c3717f5"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Default Platform Permissions","Default Platform Permissions"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Default Platform Permissions","Default Platform Permissions"]
-nav_prev: {"path": "../performance/index.md", "title": "Performance Tuning"}
-nav_next: {"path": "../privatelink/index.md", "title": "PrivateLink"}
+nav_prev: {"path": "supabase/docs/guides/platform/performance/index.md", "title": "Performance Tuning"}
+nav_next: {"path": "supabase/docs/guides/platform/privatelink/index.md", "title": "PrivateLink"}
 ---
 
 # 

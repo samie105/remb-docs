@@ -9,19 +9,19 @@ last_crawled_at: "2026-04-18T16:40:39.714Z"
 content_hash: "f85103b96e3d3cbf082c593b4c11f1d97876d401c5cdcdfe6efb3be7d379cc15"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Redis functions","→","Redis functions"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Redis functions","→","Redis functions"]
-nav_prev: {"path": "../eval-intro/index.md", "title": "Scripting with Lua"}
-nav_next: {"path": "../lua-api/index.md", "title": "Redis Lua API reference"}
+nav_prev: {"path": "redis/docs/latest/develop/programmability/eval-intro/index.md", "title": "Scripting with Lua"}
+nav_next: {"path": "redis/docs/latest/develop/programmability/lua-api/index.md", "title": "Redis Lua API reference"}
 ---
 
 # Redis functions
 
 Scripting with Redis 7 and beyond
 
-Redis Functions is an API for managing code to be executed on the server. This feature, which became available in Redis 7, supersedes the use of [EVAL](/docs/latest/develop/programmability/eval-intro/) in prior versions of Redis.
+Redis Functions is an API for managing code to be executed on the server. This feature, which became available in Redis 7, supersedes the use of [EVAL](../eval-intro/index.md) in prior versions of Redis.
 
 ## Prologue (or, what's wrong with Eval Scripts?)
 
-Prior versions of Redis made scripting available only via the [`EVAL`](/docs/latest/commands/eval/) command, which allows a Lua script to be sent for execution by the server. The core use cases for [Eval Scripts](/docs/latest/develop/programmability/eval-intro/) is executing part of your application logic inside Redis, efficiently and atomically. Such script can perform conditional updates across multiple keys, possibly combining several different data types.
+Prior versions of Redis made scripting available only via the [`EVAL`](/docs/latest/commands/eval/) command, which allows a Lua script to be sent for execution by the server. The core use cases for [Eval Scripts](../eval-intro/index.md) is executing part of your application logic inside Redis, efficiently and atomically. Such script can perform conditional updates across multiple keys, possibly combining several different data types.
 
 Using [`EVAL`](/docs/latest/commands/eval/) requires that the application sends the entire script for execution every time. Because this results in network and script compilation overheads, Redis provides an optimization in the form of the [`EVALSHA`](/docs/latest/commands/evalsha/) command. By first calling [`SCRIPT LOAD`](/docs/latest/commands/script-load/) to obtain the script's SHA1, the application can invoke it repeatedly afterward with its digest alone.
 
@@ -32,7 +32,7 @@ This approach suits many light-weight scripting use cases, but introduces severa
 1.  All client application instances must maintain a copy of all scripts. That means having some mechanism that applies script updates to all of the application's instances.
 2.  Calling cached scripts within the context of a [transaction](/docs/latest/develop/using-commands/transactions/) increases the probability of the transaction failing because of a missing script. Being more likely to fail makes using cached scripts as building blocks of workflows less attractive.
 3.  SHA1 digests are meaningless, making debugging the system extremely hard (e.g., in a [`MONITOR`](/docs/latest/commands/monitor/) session).
-4.  When used naively, [`EVAL`](/docs/latest/commands/eval/) promotes an anti-pattern in which scripts the client application renders verbatim scripts instead of responsibly using the [`KEYS` and `ARGV` Lua APIs](/docs/latest/develop/programmability/lua-api/#runtime-globals).
+4.  When used naively, [`EVAL`](/docs/latest/commands/eval/) promotes an anti-pattern in which scripts the client application renders verbatim scripts instead of responsibly using the [`KEYS` and `ARGV` Lua APIs](../lua-api/index.md#runtime-globals).
 5.  Because they are ephemeral, a script can't call another script. This makes sharing and reusing code between scripts nearly impossible, short of client-side preprocessing (see the first point).
 
 To address these needs while avoiding breaking changes to already-established and well-liked ephemeral scripts, Redis v7.0 introduces Redis Functions.
@@ -49,7 +49,7 @@ The design of Redis Functions also attempts to demarcate between the programming
 
 The Redis Functions feature makes no assumptions about the implementation's language. An execution engine that is part of the definition of the function handles running it. An engine can theoretically execute functions in any language as long as it respects several rules (such as the ability to terminate an executing function).
 
-Presently, as noted above, Redis ships with a single embedded [Lua 5.1](/docs/latest/develop/programmability/lua-api/) engine. There are plans to support additional engines in the future. Redis functions can use all of Lua's available capabilities to ephemeral scripts, with the only exception being the [Redis Lua scripts debugger](/docs/latest/develop/programmability/lua-debugging/).
+Presently, as noted above, Redis ships with a single embedded [Lua 5.1](../lua-api/index.md) engine. There are plans to support additional engines in the future. Redis functions can use all of Lua's available capabilities to ephemeral scripts, with the only exception being the [Redis Lua scripts debugger](../lua-debugging/index.md).
 
 Functions also simplify development by enabling code sharing. Every function belongs to a single library, and any given library can consist of multiple functions. The library's contents are immutable, and selective updates of its functions aren't allowed. Instead, libraries are updated as a whole with all of their functions together in one operation. This allows calling functions from other functions within the same library, or sharing code between functions by using a common code in library-internal methods, that can also take language native arguments.
 
@@ -61,7 +61,7 @@ Like all other operations in Redis, the execution of a function is atomic. A fun
 
 Let's explore Redis Functions via some tangible examples and Lua snippets.
 
-At this point, if you're unfamiliar with Lua in general and specifically in Redis, you may benefit from reviewing some of the examples in [Introduction to Eval Scripts](/docs/latest/develop/programmability/eval-intro/) and [Lua API](/docs/latest/develop/programmability/lua-api/) pages for a better grasp of the language.
+At this point, if you're unfamiliar with Lua in general and specifically in Redis, you may benefit from reviewing some of the examples in [Introduction to Eval Scripts](../eval-intro/index.md) and [Lua API](../lua-api/index.md) pages for a better grasp of the language.
 
 Every Redis function belongs to a single library that's loaded to Redis. Loading a library to the database is done with the [`FUNCTION LOAD`](/docs/latest/commands/function-load/) command. The command gets the library payload as input, the library payload must start with Shebang statement that provides a metadata about the library (like the engine to use and the library name). The Shebang format is:
 
@@ -199,7 +199,7 @@ redis.register_function('my_hgetall', my_hgetall)
 redis.register_function('my_hlastmodified', my_hlastmodified)
 ```
 
-While all of the above should be straightforward, note that the `my_hgetall` also calls [`redis.setresp(3)`](/docs/latest/develop/programmability/lua-api/#redis.setresp). That means that the function expects [RESP3](https://github.com/redis/redis-specifications/blob/master/protocol/RESP3.md) replies after calling `redis.call()`, which, unlike the default RESP2 protocol, provides dictionary (associative arrays) replies. Doing so allows the function to delete (or set to `nil` as is the case with Lua tables) specific fields from the reply, and in our case, the `_last_modified_` field.
+While all of the above should be straightforward, note that the `my_hgetall` also calls [`redis.setresp(3)`](../lua-api/index.md#redis.setresp). That means that the function expects [RESP3](https://github.com/redis/redis-specifications/blob/master/protocol/RESP3.md) replies after calling `redis.call()`, which, unlike the default RESP2 protocol, provides dictionary (associative arrays) replies. Doing so allows the function to delete (or set to `nil` as is the case with Lua tables) specific fields from the reply, and in our case, the `_last_modified_` field.
 
 Assuming you've saved the library's implementation in the _mylib.lua_ file, you can replace it with:
 
@@ -252,7 +252,7 @@ You can see that it is easy to update our library with new capabilities.
 
 ## Reusing code in the library
 
-On top of bundling functions together into database-managed software artifacts, libraries also facilitate code sharing. We can add to our library an error handling helper function called from other functions. The helper function `check_keys()` verifies that the input _keys_ table has a single key. Upon success it returns `nil`, otherwise it returns an [error reply](/docs/latest/develop/programmability/lua-api/#redis.error_reply).
+On top of bundling functions together into database-managed software artifacts, libraries also facilitate code sharing. We can add to our library an error handling helper function called from other functions. The helper function `check_keys()` verifies that the input _keys_ table has a single key. Upon success it returns `nil`, otherwise it returns an [error reply](../lua-api/index.md#redis.error_reply).
 
 The updated library's source code would be:
 
@@ -371,7 +371,7 @@ Redis returns this error because a function can, in theory, perform both read an
 2.  Using [`FCALL_RO`](/docs/latest/commands/fcall_ro/) to execute a function.
 3.  A disk error was detected (Redis is unable to persist so it rejects writes).
 
-In these cases, you can add the `no-writes` flag to the function's registration, disable the safeguard and allow them to run. To register a function with flags use the [named arguments](/docs/latest/develop/programmability/lua-api/#redis.register_function_named_args) variant of `redis.register_function`.
+In these cases, you can add the `no-writes` flag to the function's registration, disable the safeguard and allow them to run. To register a function with flags use the [named arguments](../lua-api/index.md#redis.register_function_named_args) variant of `redis.register_function`.
 
 The updated registration code snippet from the library looks like this:
 
@@ -401,6 +401,6 @@ redis> FCALL_RO my_hlastmodified 1 myhash
 "1640772721"
 ```
 
-For the complete documentation flags, please refer to [Script flags](/docs/latest/develop/programmability/lua-api/#script_flags).
+For the complete documentation flags, please refer to [Script flags](../lua-api/index.md#script_flags).
 
 ## On this page

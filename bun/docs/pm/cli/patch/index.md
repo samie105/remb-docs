@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:31.932Z"
 content_hash: "6e2226923ee1f5e6f3e315ec0c312a3ef9b4eafc48aec7ec8ef2e167f27a769d"
 menu_path: ["bun patch"]
 section_path: []
-nav_prev: {"path": "../outdated/index.md", "title": "bun outdated"}
-nav_next: {"path": "../pm/index.md", "title": "bun pm"}
+nav_prev: {"path": "bun/docs/pm/cli/outdated/index.md", "title": "bun outdated"}
+nav_next: {"path": "bun/docs/pm/cli/pm/index.md", "title": "bun pm"}
 ---
 
 # you can supply the package name

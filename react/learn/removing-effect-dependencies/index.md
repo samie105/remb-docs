@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:37.138Z"
 content_hash: "5ade0c61107c2f3c61ea210c69e62c2f7a1278e87f1c32f863b70d62c661cc1b"
 menu_path: ["Removing Effect Dependencies"]
 section_path: []
-nav_prev: {"path": "../separating-events-from-effects/index.md", "title": "Separating Events from Effects"}
-nav_next: {"path": "../reusing-logic-with-custom-hooks/index.md", "title": "Reusing Logic with Custom Hooks"}
+nav_prev: {"path": "react/learn/separating-events-from-effects/index.md", "title": "Separating Events from Effects"}
+nav_next: {"path": "react/learn/reusing-logic-with-custom-hooks/index.md", "title": "Reusing Logic with Custom Hooks"}
 ---
 
 When you write an Effect, the linter will verify that you’ve included every reactive value (like props and state) that the Effect reads in the list of your Effect’s dependencies. This ensures that your Effect remains synchronized with the latest props and state of your component. Unnecessary dependencies may cause your Effect to run too often, or even create an infinite loop. Follow this guide to review and remove unnecessary dependencies from your Effects.

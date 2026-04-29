@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:11.989Z"
 content_hash: "e238bb6a77a11ebeeec05dadf88a57eb075334931e213f0bc0c5672eca077e30"
 menu_path: ["Storage","Storage","More","More","More","CDN","CDN","Metrics","Metrics"]
 section_path: ["Storage","Storage","More","More","More","CDN","CDN","Metrics","Metrics"]
-nav_prev: {"path": "../fundamentals/index.md", "title": "Storage CDN"}
-nav_next: {"path": "../smart-cdn/index.md", "title": "Smart CDN"}
+nav_prev: {"path": "supabase/docs/guides/storage/cdn/fundamentals/index.md", "title": "Storage CDN"}
+nav_next: {"path": "supabase/docs/guides/storage/cdn/smart-cdn/index.md", "title": "Smart CDN"}
 ---
 
 # 

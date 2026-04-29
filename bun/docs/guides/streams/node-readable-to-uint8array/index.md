@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:49.887Z"
 content_hash: "3f13af586174cedb04b168982da671c627c5ba2d6e271c8494e0a2de7f59c9a2"
 menu_path: ["Convert a Node.js Readable to an Uint8Array"]
 section_path: []
-nav_prev: {"path": "../node-readable-to-string/index.md", "title": "Convert a Node.js Readable to a string"}
-nav_next: {"path": "../to-array/index.md", "title": "Convert a ReadableStream to an array of chunks"}
+nav_prev: {"path": "bun/docs/guides/streams/node-readable-to-string/index.md", "title": "Convert a Node.js Readable to a string"}
+nav_next: {"path": "bun/docs/guides/streams/to-array/index.md", "title": "Convert a ReadableStream to an array of chunks"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../to-array/index.md", "title": "Convert a ReadableStream to
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To convert a Node.js `Readable` stream to an `Uint8Array` in Bun, you can create a new `Response` object with the stream as the body, then use `bytes()` to read the stream into an `Uint8Array`.
 
@@ -53,10 +53,10 @@ Convert a Node.js Readable to a Blob
 
 Previous
 
-](/docs/guides/streams/node-readable-to-blob)[
+](../node-readable-to-blob/index.md)[
 
 Convert a Node.js Readable to an ArrayBuffer
 
 Next
 
-](/docs/guides/streams/node-readable-to-arraybuffer)
+](../node-readable-to-arraybuffer/index.md)

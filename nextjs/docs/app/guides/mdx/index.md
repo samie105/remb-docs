@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
-nav_next: {"path": "../memory-usage/index.md", "title": "How to optimize memory usage"}
+nav_prev: {"path": "nextjs/docs/app/guides/mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
+nav_next: {"path": "nextjs/docs/app/guides/memory-usage/index.md", "title": "How to optimize memory usage"}
 ---
 
 # How to use markdown and MDX in Next.js
@@ -127,7 +127,7 @@ export function useMDXComponents(): MDXComponents {
 > **Good to know**:
 > 
 > -   `mdx-components.tsx` is **required** to use `@next/mdx` with App Router and will not work without it.
-> -   Learn more about the [`mdx-components.tsx` file convention](/docs/app/api-reference/file-conventions/mdx-components).
+> -   Learn more about the [`mdx-components.tsx` file convention](../../api-reference/file-conventions/mdx-components/index.md).
 > -   Learn how to [use custom styles and components](#using-custom-styles-and-components).
 
 ## Rendering MDX[](#rendering-mdx)
@@ -138,7 +138,7 @@ You can render MDX using Next.js's file based routing or by importing MDX files 
 
 When using file based routing, you can use MDX pages like any other page.
 
-In App Router apps, that includes being able to use [metadata](/docs/app/getting-started/metadata-and-og-images).
+In App Router apps, that includes being able to use [metadata](../../getting-started/metadata-and-og-images/index.md).
 
 Create a new MDX page within the `/app` directory:
 
@@ -214,7 +214,7 @@ For example, you can have a dynamic route segment which loads MDX components fro
 
 ![Route segments for dynamic MDX components](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/mdx-files.png)
 
-[`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) can be used to prerender the provided routes. By marking `dynamicParams` as `false`, accessing a route not defined in `generateStaticParams` will 404.
+[`generateStaticParams`](../../api-reference/functions/generate-static-params/index.md) can be used to prerender the provided routes. By marking `dynamicParams` as `false`, accessing a route not defined in `generateStaticParams` will 404.
 
 app/blog/\[slug\]/page.tsx
 
@@ -239,7 +239,7 @@ export function generateStaticParams() {
 export const dynamicParams = false
 ```
 
-> **Good to know**: Ensure you specify the `.mdx` file extension in your import. While it is not required to use [module path aliases](/docs/app/getting-started/installation#set-up-absolute-imports-and-module-path-aliases) (e.g., `@/content`), it does simplify your import path.
+> **Good to know**: Ensure you specify the `.mdx` file extension in your import. While it is not required to use [module path aliases](../../getting-started/installation/index.md#set-up-absolute-imports-and-module-path-aliases) (e.g., `@/content`), it does simplify your import path.
 
 ## Using custom styles and components[](#using-custom-styles-and-components)
 
@@ -333,7 +333,7 @@ export default function Page() {
 
 ### Shared layouts[](#shared-layouts)
 
-To share a layout across MDX pages, you can use the [built-in layouts support](/docs/app/api-reference/file-conventions/layout) with the App Router.
+To share a layout across MDX pages, you can use the [built-in layouts support](../../api-reference/file-conventions/layout/index.md) with the App Router.
 
 app/mdx-page/layout.tsx
 
@@ -437,7 +437,7 @@ export default withMDX(nextConfig)
 
 ### Using Plugins with Turbopack[](#using-plugins-with-turbopack)
 
-To use plugins with [Turbopack](/docs/app/api-reference/turbopack), upgrade to the latest `@next/mdx` and specify plugin names using a string:
+To use plugins with [Turbopack](../../api-reference/turbopack/index.md), upgrade to the latest `@next/mdx` and specify plugin names using a string:
 
 next.config.mjs
 
@@ -471,7 +471,7 @@ export default withMDX(nextConfig)
 
 > **Good to know**:
 > 
-> remark and rehype plugins without serializable options cannot be used yet with [Turbopack](/docs/app/api-reference/turbopack), because JavaScript functions can't be passed to Rust.
+> remark and rehype plugins without serializable options cannot be used yet with [Turbopack](../../api-reference/turbopack/index.md), because JavaScript functions can't be passed to Rust.
 
 ## Deep Dive: How do you transform markdown into HTML?[](#deep-dive-how-do-you-transform-markdown-into-html)
 

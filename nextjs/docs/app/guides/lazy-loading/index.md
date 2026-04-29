@@ -11,8 +11,8 @@ menu_path: ["How to lazy load Client Components and libraries"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
-nav_next: {"path": "../local-development/index.md", "title": "How to optimize your local development environment"}
+nav_prev: {"path": "nextjs/docs/app/guides/json-ld/index.md", "title": "How to implement JSON-LD in your Next.js application"}
+nav_next: {"path": "nextjs/docs/app/guides/local-development/index.md", "title": "How to optimize your local development environment"}
 ---
 
 # How to lazy load Client Components and libraries
@@ -28,7 +28,7 @@ There are two ways you can implement lazy loading in Next.js:
 1.  Using [Dynamic Imports](#nextdynamic) with `next/dynamic`
 2.  Using [`React.lazy()`](https://react.dev/reference/react/lazy) with [Suspense](https://react.dev/reference/react/Suspense)
 
-By default, Server Components are automatically [code split](https://developer.mozilla.org/docs/Glossary/Code_splitting), and you can use [streaming](/docs/app/guides/streaming) to progressively send pieces of UI from the server to the client. Lazy loading applies to Client Components.
+By default, Server Components are automatically [code split](https://developer.mozilla.org/docs/Glossary/Code_splitting), and you can use [streaming](../streaming/index.md) to progressively send pieces of UI from the server to the client. Lazy loading applies to Client Components.
 
 ## `next/dynamic`[](#nextdynamic)
 

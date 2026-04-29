@@ -10,8 +10,8 @@ content_hash: "fb1d608e67f69944050f9cc19ae41967c4ea9b9e7518860498faa88fdea3ad60"
 menu_path: ["dns/promises - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "dns - Node documentation"}
-nav_next: {"path": "../../domain/index.md", "title": "domain - Node documentation"}
+nav_prev: {"path": "deno/api/node/dns/index.md", "title": "dns - Node documentation"}
+nav_next: {"path": "deno/api/node/domain/index.md", "title": "domain - Node documentation"}
 ---
 
 ### Usage in Deno

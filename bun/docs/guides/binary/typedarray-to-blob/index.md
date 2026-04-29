@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:18.217Z"
 content_hash: "62ce14e352e5bee168418a4827f098c7d00f407284538e0b4165d869f7bee4ee"
 menu_path: ["Convert a Uint8Array to a Blob"]
 section_path: []
-nav_prev: {"path": "../typedarray-to-arraybuffer/index.md", "title": "Convert a Uint8Array to an ArrayBuffer"}
-nav_next: {"path": "../typedarray-to-buffer/index.md", "title": "Convert a Uint8Array to a Buffer"}
+nav_prev: {"path": "bun/docs/guides/binary/typedarray-to-arraybuffer/index.md", "title": "Convert a Uint8Array to an ArrayBuffer"}
+nav_next: {"path": "bun/docs/guides/binary/typedarray-to-buffer/index.md", "title": "Convert a Uint8Array to a Buffer"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../typedarray-to-buffer/index.md", "title": "Convert a Uint8
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 A [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) can be constructed from an array of “chunks”, where each chunk is a string, binary data structure (including `Uint8Array`), or another `Blob`.
 
@@ -46,7 +46,7 @@ console.log(await blob.text());
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -58,10 +58,10 @@ Convert a Uint8Array to a Buffer
 
 Previous
 
-](/docs/guides/binary/typedarray-to-buffer)[
+](../typedarray-to-buffer/index.md)[
 
 Convert a Uint8Array to a DataView
 
 Next
 
-](/docs/guides/binary/typedarray-to-dataview)
+](../typedarray-to-dataview/index.md)

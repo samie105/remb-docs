@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:21.515Z"
 content_hash: "a73889c3909be8a539e614773d3e5fa56ce83e6022b70977e3b25d4bbd0fba16"
 menu_path: ["Write a simple HTTP server"]
 section_path: []
-nav_prev: {"path": "../server/index.md", "title": "Common HTTP server usage"}
-nav_next: {"path": "../sse/index.md", "title": "Server-Sent Events (SSE) with Bun"}
+nav_prev: {"path": "bun/docs/guides/http/server/index.md", "title": "Common HTTP server usage"}
+nav_next: {"path": "bun/docs/guides/http/sse/index.md", "title": "Server-Sent Events (SSE) with Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../sse/index.md", "title": "Server-Sent Events (SSE) with Bu
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-This starts an HTTP server listening on port `3000`. It responds to all requests with a `Response` with status `200` and body `"Welcome to Bun!"`. See [`Bun.serve`](/docs/runtime/http/server) for details.
+This starts an HTTP server listening on port `3000`. It responds to all requests with a `Response` with status `200` and body `"Welcome to Bun!"`. See [`Bun.serve`](../../../runtime/http/server/index.md) for details.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)server.ts
 
@@ -60,10 +60,10 @@ Common HTTP server usage
 
 Previous
 
-](/docs/guides/http/server)[
+](../server/index.md)[
 
 Send an HTTP request using fetch
 
 Next
 
-](/docs/guides/http/fetch)
+](../fetch/index.md)

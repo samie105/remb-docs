@@ -11,23 +11,23 @@ menu_path: ["unstable_catchError"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../cacheTag/index.md", "title": "cacheTag"}
-nav_next: {"path": "../connection/index.md", "title": "connection"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/cacheTag/index.md", "title": "cacheTag"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/connection/index.md", "title": "connection"}
 ---
 
 # unstable\_catchError
 
 Last updated April 23, 2026
 
-The `unstable_catchError` function creates a component that wraps its children in an error boundary. It provides a programmatic alternative to the [`error.js`](/docs/app/api-reference/file-conventions/error) file convention, enabling component-level error recovery anywhere in your component tree.
+The `unstable_catchError` function creates a component that wraps its children in an error boundary. It provides a programmatic alternative to the [`error.js`](../../file-conventions/error/index.md) file convention, enabling component-level error recovery anywhere in your component tree.
 
 Compared to a custom React error boundary, `unstable_catchError` is designed to work with Next.js out of the box:
 
--   **Built-in error recovery** — [`unstable_retry()`](/docs/app/api-reference/file-conventions/error#unstable_retry) re-fetches and re-renders the error boundary's children, including Server Components.
+-   **Built-in error recovery** — [`unstable_retry()`](../../file-conventions/error/index.md#unstable_retry) re-fetches and re-renders the error boundary's children, including Server Components.
 -   **Framework-aware integration** — APIs like `redirect()` and `notFound()` work by throwing special errors under the hood. `unstable_catchError` handles these seamlessly, so they're not accidentally caught by your error boundary.
 -   **Client navigation handling** — The error state automatically clears when you do a client navigation to a different route.
 
-`unstable_catchError` can be called from [Client Components](/docs/app/getting-started/server-and-client-components).
+`unstable_catchError` can be called from [Client Components](../../../getting-started/server-and-client-components/index.md).
 
 app/custom-error-boundary.tsx
 
@@ -75,7 +75,7 @@ A function that renders the error UI when an error is caught. It receives two ar
 | --- | --- | --- |
 | `error` | [`Error`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error) | The error instance that was caught. |
 | `unstable_retry` | `() => void` | Re-fetches and re-renders the error boundary's children. If successful, the fallback is replaced with the re-rendered result. |
-| `reset` | `() => void` | Resets the error state and re-renders without re-fetching. Use [`unstable_retry()`](/docs/app/api-reference/file-conventions/error#unstable_retry) in most cases. |
+| `reset` | `() => void` | Resets the error state and re-renders without re-fetching. Use [`unstable_retry()`](../../file-conventions/error/index.md#unstable_retry) in most cases. |
 
 The `fallback` function must be a Client Component (or defined in a `'use client'` module).
 
@@ -179,7 +179,7 @@ export default function Component({ children }: { children: React.ReactNode }) {
 > 
 > -   Unlike the `error.js` file convention which is scoped to route segments, `unstable_catchError` can be used to wrap any part of your component tree for component-level error recovery.
 > -   Props passed to the wrapper component are forwarded to the fallback function, making it easy to create reusable error UIs with different configurations.
-> -   You don't need to wrap `error.js` default exports with `unstable_catchError`. The [`error.js`](/docs/app/api-reference/file-conventions/error) file convention already renders inside a built-in error boundary provided by Next.js.
+> -   You don't need to wrap `error.js` default exports with `unstable_catchError`. The [`error.js`](../../file-conventions/error/index.md) file convention already renders inside a built-in error boundary provided by Next.js.
 
 ## Version History[](#version-history)
 
@@ -195,12 +195,12 @@ export default function Component({ children }: { children: React.ReactNode }) {
 
 Learn how to display expected errors and handle uncaught exceptions.
 
-](/docs/app/getting-started/error-handling)[
+](../../../getting-started/error-handling/index.md)[
 
 ### error.js
 
 API reference for the error.js special file.
 
-](/docs/app/api-reference/file-conventions/error)
+](../../file-conventions/error/index.md)
 
 Was this helpful?

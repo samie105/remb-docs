@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:16.282Z"
 content_hash: "19121556786c4a384770324444228a478e64d9b6e4f0ee204d8a38bff7556fd1"
 menu_path: ["Edge Functions","Edge Functions","Configuration","Configuration","Managing Dependencies","Managing Dependencies"]
 section_path: ["Edge Functions","Edge Functions","Configuration","Configuration","Managing Dependencies","Managing Dependencies"]
-nav_prev: {"path": "../debugging-tools/index.md", "title": "Local Debugging"}
-nav_next: {"path": "../deploy/index.md", "title": "Deploy to Production"}
+nav_prev: {"path": "supabase/docs/guides/functions/debugging-tools/index.md", "title": "Local Debugging"}
+nav_next: {"path": "supabase/docs/guides/functions/deploy/index.md", "title": "Deploy to Production"}
 ---
 
 # 
@@ -125,7 +125,7 @@ You can define it in the project's `.env` file or directly specify it when runni
 
 ## Importing types[#](#importing-types)
 
-If your [environment is set up properly](/docs/guides/functions/development-environment) and the module you're importing is exporting types, the import will have types and autocompletion support.
+If your [environment is set up properly](../development-environment/index.md) and the module you're importing is exporting types, the import will have types and autocompletion support.
 
 Some npm packages may not ship out of the box types and you may need to import them from a separate package. You can specify their types with a `@deno-types` directive:
 

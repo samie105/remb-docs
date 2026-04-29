@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:53.171Z"
 content_hash: "b94fdf83ff350dd1eb821ab623d4aa314ed41c9efbe3e476dd866a0a004f6b43"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure S3 Storage","Configure S3 Storage"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure S3 Storage","Configure S3 Storage"]
-nav_prev: {"path": "../self-hosted-proxy-https/index.md", "title": "Configure Reverse Proxy and HTTPS"}
-nav_next: {"path": "../self-hosted-saml-sso/index.md", "title": "Configure SAML SSO"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-proxy-https/index.md", "title": "Configure Reverse Proxy and HTTPS"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-saml-sso/index.md", "title": "Configure SAML SSO"}
 ---
 
 # 
@@ -34,7 +34,7 @@ You can configure either feature independently. For example, you can enable the 
 
 The S3 protocol endpoint at `/storage/v1/s3` allows standard S3 clients to interact with your self-hosted Storage instance. It works with any storage backend, including the default file-based storage - you do not need to configure an S3 backend first. The Supabase REST API and SDK do not use the S3 protocol.
 
-Make sure to check that `REGION`, `S3_PROTOCOL_ACCESS_KEY_ID` and `S3_PROTOCOL_ACCESS_KEY_SECRET` are properly configured in you `.env` file. Read more about the secrets and passwords in [Configuring and securing Supabase](/docs/guides/self-hosting/docker#configuring-and-securing-supabase).
+Make sure to check that `REGION`, `S3_PROTOCOL_ACCESS_KEY_ID` and `S3_PROTOCOL_ACCESS_KEY_SECRET` are properly configured in you `.env` file. Read more about the secrets and passwords in [Configuring and securing Supabase](../docker/index.md#configuring-and-securing-supabase).
 
 ```
 1storage:2  environment:3    # ... existing variables ...4    REGION: ${REGION}5    S3_PROTOCOL_ACCESS_KEY_ID: ${S3_PROTOCOL_ACCESS_KEY_ID}6    S3_PROTOCOL_ACCESS_KEY_SECRET: ${S3_PROTOCOL_ACCESS_KEY_SECRET}
@@ -137,4 +137,4 @@ If uploads from a browser fail (CORS or mixed content errors), check that `API_E
 ### Additional resources[#](#additional-resources)
 
 *   [Storage repository `.env.sample`](https://github.com/supabase/storage/blob/master/.env.sample)
-*   [S3 Authentication](/docs/guides/storage/s3/authentication)
+*   [S3 Authentication](../../storage/s3/authentication/index.md)

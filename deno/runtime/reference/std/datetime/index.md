@@ -10,8 +10,8 @@ content_hash: "3a5a6823a3b561e757dc0698ffb30b7783329de9e2d4ce73e8ea4572c1f6d1aa"
 menu_path: ["@std/datetime"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../data-structures/index.md", "title": "@std/data-structures"}
-nav_next: {"path": "../dotenv/index.md", "title": "@std/dotenv"}
+nav_prev: {"path": "deno/runtime/reference/std/data-structures/index.md", "title": "@std/data-structures"}
+nav_next: {"path": "deno/runtime/reference/std/dotenv/index.md", "title": "@std/dotenv"}
 ---
 
 **On this page**

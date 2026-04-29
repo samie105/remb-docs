@@ -11,8 +11,8 @@ menu_path: ["Getting Started - Pages Router"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../../app/glossary/index.md", "title": "Next.js Glossary"}
-nav_next: {"path": "installation/index.md", "title": "Create a new Next.js application"}
+nav_prev: {"path": "nextjs/docs/app/glossary/index.md", "title": "Next.js Glossary"}
+nav_next: {"path": "nextjs/docs/pages/getting-started/installation/index.md", "title": "Create a new Next.js application"}
 ---
 
 # Getting Started - Pages Router
@@ -25,7 +25,7 @@ Last updated April 23, 2026
 
 How to create a new Next.js application with \`create-next-app\`. Set up TypeScript, ESLint,and configure your \`next.config.js\` file.
 
-](/docs/pages/getting-started/installation)[
+](installation/index.md)[
 
 ### Project Structure
 
@@ -37,24 +37,24 @@ Learn about the folder and file conventions in a Next.js project, and how to org
 
 Optimize your images with the built-in \`next/image\` component.
 
-](/docs/pages/getting-started/images)[
+](images/index.md)[
 
 ### Fonts
 
 Learn how to use fonts in Next.js
 
-](/docs/pages/getting-started/fonts)[
+](fonts/index.md)[
 
 ### CSS
 
 Learn about the different ways to add CSS to your application, including CSS Modules, Global CSS, Tailwind CSS, and more.
 
-](/docs/pages/getting-started/css)[
+](css/index.md)[
 
 ### Deploying
 
 Learn how to deploy your Next.js application.
 
-](/docs/pages/getting-started/deploying)
+](deploying/index.md)
 
 Was this helpful?

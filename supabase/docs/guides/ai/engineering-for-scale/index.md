@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:24.218Z"
 content_hash: "66f82d41bab57260a1553b0fd43ee35c167dcdbc803c7b2b3a23b691ea33a9c2"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Engineering for scale","Engineering for scale"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Engineering for scale","Engineering for scale"]
-nav_prev: {"path": "../concepts/index.md", "title": "Concepts"}
-nav_next: {"path": "../examples/building-chatgpt-plugins/index.md", "title": "Building ChatGPT plugins"}
+nav_prev: {"path": "supabase/docs/guides/ai/concepts/index.md", "title": "Concepts"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/building-chatgpt-plugins/index.md", "title": "Building ChatGPT plugins"}
 ---
 
 # 
@@ -29,7 +29,7 @@ Content sources for vectors can be extremely large. As you grow you should run y
 
 For small workloads, it's typical to store your data in a single database.
 
-If you've used [Vecs](/docs/guides/ai/vecs-python-client) to create 3 different collections, you can expose collections to your web or mobile application using [views](/docs/guides/database/tables#views):
+If you've used [Vecs](../vecs-python-client/index.md) to create 3 different collections, you can expose collections to your web or mobile application using [views](../../database/tables/index.md#views):
 
 ![single database](/docs/img/ai/scaling/engineering-for-scale--single-database--light.png)
 

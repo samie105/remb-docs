@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:57.199Z"
 content_hash: "68ee47958ee527ff832a7b113c8106cbd571c41ac0e50771713e6ec919f6590c"
 menu_path: ["WebSockets"]
 section_path: []
-nav_prev: {"path": "../validators/index.md", "title": "Input & Output Validators"}
-nav_next: {"path": "../../test/index.md", "title": "Test"}
+nav_prev: {"path": "trpc/docs/server/validators/index.md", "title": "Input & Output Validators"}
+nav_next: {"path": "trpc/docs/test/index.md", "title": "Test"}
 ---
 
 You can use WebSockets for all or some of the communication with your server, see [wsLink](../../client/links/wsLink/index.md) for how to set it up on the client.

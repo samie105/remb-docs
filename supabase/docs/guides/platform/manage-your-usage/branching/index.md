@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:50.035Z"
 content_hash: "8b571f8f717bd8b87cd4ef3fc06fd6982d70177bc4bd122730ed1b11c7b961e0"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Branching","Branching"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Branching","Branching"]
-nav_prev: {"path": "../advanced-mfa-phone/index.md", "title": "Manage Advanced MFA Phone usage"}
-nav_next: {"path": "../compute/index.md", "title": "Manage Compute usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/advanced-mfa-phone/index.md", "title": "Manage Advanced MFA Phone usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/compute/index.md", "title": "Manage Compute usage"}
 ---
 
 # 
@@ -21,13 +21,13 @@ Manage Branching usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-Each [Preview branch](/docs/guides/deployment/branching) is a separate environment with all Supabase services (Database, Auth, Storage, etc.). You're charged for usage within that environment—such as [Compute](/docs/guides/platform/manage-your-usage/compute), [Disk Size](/docs/guides/platform/manage-your-usage/disk-size), [Egress](/docs/guides/platform/manage-your-usage/egress), and [Storage](/docs/guides/platform/manage-your-usage/storage-size)—just like the project you branched from.
+Each [Preview branch](../../../deployment/branching/index.md) is a separate environment with all Supabase services (Database, Auth, Storage, etc.). You're charged for usage within that environment—such as [Compute](../compute/index.md), [Disk Size](../disk-size/index.md), [Egress](../egress/index.md), and [Storage](../storage-size/index.md)—just like the project you branched from.
 
-Usage by Preview branches counts toward your subscription plan's quota. Branches are **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+Usage by Preview branches counts toward your subscription plan's quota. Branches are **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 ## How charges are calculated[#](#how-charges-are-calculated)
 
-Refer to individual [usage items](/docs/guides/platform/manage-your-usage) for details on how charges are calculated. Branching charges are the sum of all these items.
+Refer to individual [usage items](../index.md) for details on how charges are calculated. Branching charges are the sum of all these items.
 
 ### Usage on your invoice[#](#usage-on-your-invoice)
 
@@ -99,7 +99,7 @@ In the Usage Summary section, you can see how many hours your Preview branches e
 
 *   Merge Preview branches as soon as they are ready
 *   Delete Preview branches that are no longer in use
-*   Check whether your [persistent branches](/docs/guides/deployment/branching#persistent-branches) need to be defined as persistent, or if they can be ephemeral instead. Persistent branches will remain active even after the underlying PR is closed.
+*   Check whether your [persistent branches](../../../deployment/branching/index.md#persistent-branches) need to be defined as persistent, or if they can be ephemeral instead. Persistent branches will remain active even after the underlying PR is closed.
 
 ## FAQ[#](#faq)
 

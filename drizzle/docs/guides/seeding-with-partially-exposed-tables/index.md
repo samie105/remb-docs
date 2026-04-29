@@ -10,8 +10,8 @@ content_hash: "92df43a8f59f64ffca5f6ddb7b309eb31f8306a48dcdcb521b54e62a7b52855d"
 menu_path: ["Drizzle ORM - Seeding Partially Exposed Tables with Foreign Key"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../seeding-using-with-option/index.md", "title": "Drizzle ORM - Seeding using 'with' option"}
-nav_next: {"path": "../select-parent-rows-with-at-least-one-related-child-row/index.md", "title": "Drizzle ORM - Select parent rows with at least one related child row"}
+nav_prev: {"path": "drizzle/docs/guides/seeding-using-with-option/index.md", "title": "Drizzle ORM - Seeding using 'with' option"}
+nav_next: {"path": "drizzle/docs/guides/select-parent-rows-with-at-least-one-related-child-row/index.md", "title": "Drizzle ORM - Select parent rows with at least one related child row"}
 ---
 
 Drizzle | Seeding Partially Exposed Tables with Foreign Key

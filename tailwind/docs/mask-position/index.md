@@ -10,8 +10,8 @@ content_hash: "7e4209f1e04507448512c7e5e31acda831da7be451a48f5ce79071e66537a8e8"
 menu_path: ["mask-position"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../mask-origin/index.md", "title": "mask-origin"}
-nav_next: {"path": "../mask-repeat/index.md", "title": "mask-repeat"}
+nav_prev: {"path": "tailwind/docs/mask-origin/index.md", "title": "mask-origin"}
+nav_next: {"path": "tailwind/docs/mask-repeat/index.md", "title": "mask-repeat"}
 ---
 
 Utilities for controlling the position of an element's mask image.

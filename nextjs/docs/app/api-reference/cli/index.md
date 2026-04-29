@@ -11,8 +11,8 @@ menu_path: ["CLI"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../config/eslint/index.md", "title": "ESLint Plugin"}
-nav_next: {"path": "create-next-app/index.md", "title": "create-next-app"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/eslint/index.md", "title": "ESLint Plugin"}
+nav_next: {"path": "nextjs/docs/app/api-reference/cli/create-next-app/index.md", "title": "create-next-app"}
 ---
 
 # CLI
@@ -30,12 +30,12 @@ Next.js comes with **two** Command Line Interface (CLI) tools:
 
 Create Next.js apps using one command with the create-next-app CLI.
 
-](/docs/app/api-reference/cli/create-next-app)[
+](create-next-app/index.md)[
 
 ### next CLI
 
 Learn how to run and build your application with the Next.js CLI.
 
-](/docs/app/api-reference/cli/next)
+](next/index.md)
 
 Was this helpful?

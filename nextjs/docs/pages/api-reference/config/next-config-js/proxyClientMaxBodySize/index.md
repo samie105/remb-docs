@@ -11,8 +11,8 @@ menu_path: ["experimental.proxyClientMaxBodySize"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../productionBrowserSourceMaps/index.md", "title": "productionBrowserSourceMaps"}
-nav_next: {"path": "../reactStrictMode/index.md", "title": "reactStrictMode"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/productionBrowserSourceMaps/index.md", "title": "productionBrowserSourceMaps"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/reactStrictMode/index.md", "title": "reactStrictMode"}
 ---
 
 # experimental.proxyClientMaxBodySize

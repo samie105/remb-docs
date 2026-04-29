@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:15.645Z"
 content_hash: "8000565f14326c0225b85f9bc2012032543dbd835076375d6586f68f5fe70ff6"
 menu_path: ["Astro.clientAddress cannot be used inside prerendered routes."]
 section_path: []
-nav_prev: {"path": "../page-number-param-not-found/index.md", "title": "Page number param not found."}
-nav_next: {"path": "../prerender-dynamic-endpoint-path-collide/index.md", "title": "Prerendered dynamic endpoint has path collision."}
+nav_prev: {"path": "astro/en/reference/errors/page-number-param-not-found/index.md", "title": "Page number param not found."}
+nav_next: {"path": "astro/en/reference/errors/prerender-dynamic-endpoint-path-collide/index.md", "title": "Prerendered dynamic endpoint has path collision."}
 ---
 
 # Astro.clientAddress cannot be used inside prerendered routes.
@@ -25,7 +25,7 @@ The `Astro.clientAddress` property cannot be used inside prerendered routes.
 
 **See Also:**
 
-*   [On-demand rendering](/en/guides/on-demand-rendering/)
-*   [Astro.clientAddress](/en/reference/api-reference/#clientaddress)
+*   [On-demand rendering](../../../guides/on-demand-rendering/index.md)
+*   [Astro.clientAddress](../../api-reference/index.md#clientaddress)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

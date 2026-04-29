@@ -10,8 +10,8 @@ content_hash: "014c6aa0fd96c75c8ed8995e0ea6bf52738a4ca9ed6a67c19000809cf98439e2"
 menu_path: ["Database Features"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../environment-variables-reference/index.md", "title": "Environment Variables"}
-nav_next: {"path": "../supported-databases/index.md", "title": "Supported databases"}
+nav_prev: {"path": "prisma/docs/orm/reference/environment-variables-reference/index.md", "title": "Environment Variables"}
+nav_next: {"path": "prisma/docs/orm/reference/supported-databases/index.md", "title": "Supported databases"}
 ---
 
 Database features supported in Prisma ORM

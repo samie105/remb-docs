@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:01.712Z"
 content_hash: "b97395d3aaa64906e60ccf9b81a44e13faa86959f1c057c05cdb631c74b4e767"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Next.js","Next.js"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Next.js","Next.js"]
-nav_prev: {"path": "../with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
-nav_next: {"path": "../with-nuxt-3/index.md", "title": "Build a User Management App with Nuxt 3"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-nuxt-3/index.md", "title": "Build a User Management App with Nuxt 3"}
 ---
 
 # 
@@ -27,9 +27,9 @@ UI components built on shadcn/ui that connect to Supabase via a single command.
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/user-management-demo.png)
 
@@ -65,7 +65,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -274,7 +274,7 @@ When you enter your email and password, you will receive an email with the title
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Create an upload widget[#](#create-an-upload-widget)
 

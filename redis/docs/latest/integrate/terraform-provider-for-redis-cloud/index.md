@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:36.894Z"
 content_hash: "9523e16f681926fc2f618d3002094b579f311ba238b66cc59d8408a02fef8147"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Terraform provider for Redis Cloud","→","Terraform provider for Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Terraform provider for Redis Cloud","→","Terraform provider for Redis Cloud"]
-nav_prev: {"path": "../spring-framework-cache/index.md", "title": "Spring Data Redis"}
-nav_next: {"path": "../uptrace-with-redis-enterprise/index.md", "title": "Uptrace with Redis Software"}
+nav_prev: {"path": "redis/docs/latest/integrate/spring-framework-cache/index.md", "title": "Spring Data Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/uptrace-with-redis-enterprise/index.md", "title": "Uptrace with Redis Software"}
 ---
 
 # Terraform provider for Redis Cloud

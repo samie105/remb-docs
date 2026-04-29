@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:30.493Z"
 content_hash: "d681637585595cbcbf011ab1a873b32316e8834a687b270ca80ca9ab45d5e844"
 menu_path: ["Standalone Adapter"]
 section_path: []
-nav_prev: {"path": "../nextjs/index.md", "title": "Next.js Adapter"}
-nav_next: {"path": "../../authorization/index.md", "title": "Authorization"}
+nav_prev: {"path": "trpc/docs/v10/server/adapters/nextjs/index.md", "title": "Next.js Adapter"}
+nav_next: {"path": "trpc/docs/v10/server/authorization/index.md", "title": "Authorization"}
 ---
 
 tRPC's Standalone Adapter is the simplest way to get a new project working. It's ideal for local development, and for server-based production environments. In essence it's just a wrapper around the standard [Node.js HTTP Server](https://nodejs.org/api/http.html) with the normal options related to tRPC.

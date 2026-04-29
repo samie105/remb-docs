@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:51.848Z"
 content_hash: "7bf4fbbdea0941d3749b3b9e02ece7b6ab86bf76a61f507bb09c2a3972679120"
 menu_path: ["Spawn a child process and communicate using IPC"]
 section_path: []
-nav_prev: {"path": "../ctrl-c/index.md", "title": "Listen for CTRL+C"}
-nav_next: {"path": "../nanoseconds/index.md", "title": "Get the process uptime in nanoseconds"}
+nav_prev: {"path": "bun/docs/guides/process/ctrl-c/index.md", "title": "Listen for CTRL+C"}
+nav_next: {"path": "bun/docs/guides/process/nanoseconds/index.md", "title": "Get the process uptime in nanoseconds"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../nanoseconds/index.md", "title": "Get the process uptime i
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-Use [`Bun.spawn()`](/docs/runtime/child-process) to spawn a child process. When spawning a second `bun` process, you can open a direct inter-process communication (IPC) channel between the two processes.
+Use [`Bun.spawn()`](../../../runtime/child-process/index.md) to spawn a child process. When spawning a second `bun` process, you can open a direct inter-process communication (IPC) channel between the two processes.
 
 This API is only compatible with other `bun` processes. Use `process.execPath` to get a path to the currently running `bun` executable.
 
@@ -102,7 +102,7 @@ process.send({ message: "Hello from child as object" });
 
 * * *
 
-See [Docs > API > Child processes](/docs/runtime/child-process) for complete documentation.
+See [Docs > API > Child processes](../../../runtime/child-process/index.md) for complete documentation.
 
 Was this page helpful?
 
@@ -114,10 +114,10 @@ Read from stdin
 
 Previous
 
-](/docs/guides/process/stdin)[
+](../stdin/index.md)[
 
 Listen for CTRL+C
 
 Next
 
-](/docs/guides/process/ctrl-c)
+](../ctrl-c/index.md)

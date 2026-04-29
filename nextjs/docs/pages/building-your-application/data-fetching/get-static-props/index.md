@@ -11,8 +11,8 @@ menu_path: ["getStaticProps"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Data Fetching"}
-nav_next: {"path": "../get-static-paths/index.md", "title": "getStaticPaths"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/index.md", "title": "Data Fetching"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-paths/index.md", "title": "getStaticPaths"}
 ---
 
 # getStaticProps
@@ -50,7 +50,7 @@ export default function Page({
 
 > Note that irrespective of rendering type, any `props` will be passed to the page component and can be viewed on the client-side in the initial HTML. This is to allow the page to be [hydrated](https://react.dev/reference/react-dom/hydrate) correctly. Make sure that you don't pass any sensitive information that shouldn't be available on the client in `props`.
 
-The [`getStaticProps` API reference](/docs/pages/api-reference/functions/get-static-props) covers all parameters and props that can be used with `getStaticProps`.
+The [`getStaticProps` API reference](../../../api-reference/functions/get-static-props/index.md) covers all parameters and props that can be used with `getStaticProps`.
 
 ## When should I use getStaticProps?[](#when-should-i-use-getstaticprops)
 
@@ -66,14 +66,14 @@ You should use `getStaticProps` if:
 `getStaticProps` always runs on the server and never on the client. You can validate code written inside `getStaticProps` is removed from the client-side bundle [with this tool](https://next-code-elimination.vercel.app/).
 
 -   `getStaticProps` always runs during `next build`
--   `getStaticProps` runs in the background when using [`fallback: true`](/docs/pages/api-reference/functions/get-static-paths#fallback-true)
--   `getStaticProps` is called before initial render when using [`fallback: blocking`](/docs/pages/api-reference/functions/get-static-paths#fallback-blocking)
+-   `getStaticProps` runs in the background when using [`fallback: true`](../../../api-reference/functions/get-static-paths/index.md#fallback-true)
+-   `getStaticProps` is called before initial render when using [`fallback: blocking`](../../../api-reference/functions/get-static-paths/index.md#fallback-blocking)
 -   `getStaticProps` runs in the background when using `revalidate`
 -   `getStaticProps` runs on-demand in the background when using [`revalidate()`](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath)
 
 When combined with [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration), `getStaticProps` will run in the background while the stale page is being revalidated, and the fresh page served to the browser.
 
-`getStaticProps` does not have access to the incoming request (such as query parameters or HTTP headers) as it generates static HTML. If you need access to the request for your page, consider using [Proxy](/docs/pages/api-reference/file-conventions/proxy) in addition to `getStaticProps`.
+`getStaticProps` does not have access to the incoming request (such as query parameters or HTTP headers) as it generates static HTML. If you need access to the request for your page, consider using [Proxy](../../../api-reference/file-conventions/proxy/index.md) in addition to `getStaticProps`.
 
 ## Using getStaticProps to fetch data from a CMS[](#using-getstaticprops-to-fetch-data-from-a-cms)
 
@@ -114,7 +114,7 @@ export async function getStaticProps() {
 }
 ```
 
-The [`getStaticProps` API reference](/docs/pages/api-reference/functions/get-static-props) covers all parameters and props that can be used with `getStaticProps`.
+The [`getStaticProps` API reference](../../../api-reference/functions/get-static-props/index.md) covers all parameters and props that can be used with `getStaticProps`.
 
 ## Write server-side code directly[](#write-server-side-code-directly)
 
@@ -164,7 +164,7 @@ To verify what Next.js eliminates from the client-side bundle, you can use the [
 
 When a page with `getStaticProps` is prerendered at build time, in addition to the page HTML file, Next.js generates a JSON file holding the result of running `getStaticProps`.
 
-This JSON file will be used in client-side routing through [`next/link`](/docs/pages/api-reference/components/link) or [`next/router`](/docs/pages/api-reference/functions/use-router). When you navigate to a page that’s prerendered using `getStaticProps`, Next.js fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will **not** call `getStaticProps` as only the exported JSON is used.
+This JSON file will be used in client-side routing through [`next/link`](../../../api-reference/components/link/index.md) or [`next/router`](../../../api-reference/functions/use-router/index.md). When you navigate to a page that’s prerendered using `getStaticProps`, Next.js fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will **not** call `getStaticProps` as only the exported JSON is used.
 
 When using Incremental Static Generation, `getStaticProps` will be executed in the background to generate the JSON needed for client-side navigation. You may see this in the form of multiple requests being made for the same page, however, this is intended and has no impact on end-user performance.
 
@@ -176,7 +176,7 @@ One of the reasons for this restriction is that React needs to have all the requ
 
 Also, you must use export `getStaticProps` as a standalone function — it will **not** work if you add `getStaticProps` as a property of the page component.
 
-> **Good to know**: if you have created a [custom app](/docs/pages/building-your-application/routing/custom-app), ensure you are passing the `pageProps` to the page component as shown in the linked document, otherwise the props will be empty.
+> **Good to know**: if you have created a [custom app](../../routing/custom-app/index.md), ensure you are passing the `pageProps` to the page component as shown in the linked document, otherwise the props will be empty.
 
 ## Runs on every request in development[](#runs-on-every-request-in-development)
 

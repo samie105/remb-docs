@@ -9,19 +9,19 @@ last_crawled_at: "2026-04-18T16:33:52.339Z"
 content_hash: "47f30df9c53dfecbc32157f7534c724bcdd42df113a72745aa13d54ac11e2382"
 menu_path: ["Plugins"]
 section_path: []
-nav_prev: {"path": "../Middleware/index.md", "title": "Middleware"}
-nav_next: {"path": "../Principles/index.md", "title": "Technical Principles"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Middleware/index.md", "title": "Middleware"}
+nav_next: {"path": "fastify/docs/latest/Reference/Principles/index.md", "title": "Technical Principles"}
 ---
 
 Version: latest (v5.8.x)
 
 ## Plugins[​](#plugins "Direct link to Plugins")
 
-Fastify can be extended with plugins, which can be a set of routes, a server [decorator](/docs/latest/Reference/Decorators/), or other functionality. Use the `register` API to add one or more plugins.
+Fastify can be extended with plugins, which can be a set of routes, a server [decorator](../Decorators/index.md), or other functionality. Use the `register` API to add one or more plugins.
 
 By default, `register` creates a _new scope_, meaning changes to the Fastify instance (via `decorate`) will not affect the current context ancestors, only its descendants. This feature enables plugin _encapsulation_ and _inheritance_, creating a _directed acyclic graph_ (DAG) and avoiding cross-dependency issues.
 
-The [Getting Started](/docs/latest/Guides/Getting-Started/#your-first-plugin) guide includes an example of using this API:
+The [Getting Started](../../Guides/Getting-Started/index.md#your-first-plugin) guide includes an example of using this API:
 
 ```
 fastify.register(plugin, [options])
@@ -31,8 +31,8 @@ fastify.register(plugin, [options])
 
 The optional `options` parameter for `fastify.register` supports a predefined set of options that Fastify itself will use, except when the plugin has been wrapped with [fastify-plugin](https://github.com/fastify/fastify-plugin). This options object will also be passed to the plugin upon invocation, regardless of whether or not the plugin has been wrapped. The currently supported list of Fastify specific options is:
 
-*   [`logLevel`](/docs/latest/Reference/Routes/#custom-log-level)
-*   [`logSerializers`](/docs/latest/Reference/Routes/#custom-log-serializer)
+*   [`logLevel`](../Routes/index.md#custom-log-level)
+*   [`logSerializers`](../Routes/index.md#custom-log-serializer)
 *   [`prefix`](#route-prefixing-option)
 
 These options will be ignored when used with fastify-plugin.
@@ -55,15 +55,15 @@ The `options` parameter can also be a `Function` evaluated at plugin registratio
 const fp = require('fastify-plugin')fastify.register(fp((fastify, opts, done) => {  fastify.decorate('foo_bar', { hello: 'world' })  done()}))// The opts argument of fastify-foo will be { hello: 'world' }fastify.register(require('fastify-foo'), parent => parent.foo_bar)
 ```
 
-The Fastify instance passed to the function is the latest state of the **external Fastify instance** the plugin was declared on, allowing access to variables injected via [`decorate`](/docs/latest/Reference/Decorators/) by preceding plugins according to the **order of registration**. This is useful if a plugin depends on changes made to the Fastify instance by a preceding plugin, such as utilizing an existing database connection.
+The Fastify instance passed to the function is the latest state of the **external Fastify instance** the plugin was declared on, allowing access to variables injected via [`decorate`](../Decorators/index.md) by preceding plugins according to the **order of registration**. This is useful if a plugin depends on changes made to the Fastify instance by a preceding plugin, such as utilizing an existing database connection.
 
 Keep in mind that the Fastify instance passed to the function is the same as the one passed into the plugin, a copy of the external Fastify instance rather than a reference. Any usage of the instance will behave the same as it would if called within the plugin's function. For example, if `decorate` is called, the decorated variables will be available within the plugin's function unless it was wrapped with [`fastify-plugin`](https://github.com/fastify/fastify-plugin).
 
 #### Route Prefixing option[​](#route-prefixing-option "Direct link to Route Prefixing option")
 
-If an option with the key `prefix` and a `string` value is passed, Fastify will use it to prefix all the routes inside the register. For more info, check [here](/docs/latest/Reference/Routes/#route-prefixing).
+If an option with the key `prefix` and a `string` value is passed, Fastify will use it to prefix all the routes inside the register. For more info, check [here](../Routes/index.md#route-prefixing).
 
-Be aware that if routes are wrapped with [`fastify-plugin`](https://github.com/fastify/fastify-plugin), this option will not work (see the [workaround](/docs/latest/Reference/Routes/#fastify-plugin)).
+Be aware that if routes are wrapped with [`fastify-plugin`](https://github.com/fastify/fastify-plugin), this option will not work (see the [workaround](../Routes/index.md#fastify-plugin)).
 
 #### Error handling[​](#error-handling "Direct link to Error handling")
 
@@ -113,7 +113,7 @@ Remember, `register` always creates a new Fastify scope. If this is not needed, 
 
 ### Handle the scope[​](#handle-the-scope "Direct link to Handle the scope")
 
-If `register` is used only to extend server functionality with [`decorate`](/docs/latest/Reference/Decorators/), tell Fastify not to create a new scope. Otherwise, changes will not be accessible in the upper scope.
+If `register` is used only to extend server functionality with [`decorate`](../Decorators/index.md), tell Fastify not to create a new scope. Otherwise, changes will not be accessible in the upper scope.
 
 There are two ways to avoid creating a new context:
 

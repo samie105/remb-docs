@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:16.281Z"
 content_hash: "1dc824ca4f0b3655e2915159f75c326df7bb0e4dcbecafbefd6aff7ae793be0b"
 menu_path: ["Type Alias: inferRouterProxyClient<TRouter>"]
 section_path: []
-nav_prev: {"path": "../TRPCWebSocketClient/index.md", "title": "Type Alias: TRPCWebSocketClient"}
-nav_next: {"path": "../../variables/jsonEncoder/index.md", "title": "Variable: jsonEncoder"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/TRPCWebSocketClient/index.md", "title": "Type Alias: TRPCWebSocketClient"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/variables/jsonEncoder/index.md", "title": "Variable: jsonEncoder"}
 ---
 
 Type Alias: ~~inferRouterProxyClient\\<TRouter\\>~~ | tRPC

@@ -11,15 +11,15 @@ menu_path: ["cookies"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../connection/index.md", "title": "connection"}
-nav_next: {"path": "../draft-mode/index.md", "title": "draftMode"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/connection/index.md", "title": "connection"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/draft-mode/index.md", "title": "draftMode"}
 ---
 
 # cookies
 
 Last updated April 23, 2026
 
-`cookies` is an **async** function that allows you to read the HTTP incoming request cookies in [Server Components](/docs/app/getting-started/server-and-client-components), and read/write outgoing request cookies in [Server Functions](/docs/app/getting-started/mutating-data) or [Route Handlers](/docs/app/api-reference/file-conventions/route).
+`cookies` is an **async** function that allows you to read the HTTP incoming request cookies in [Server Components](../../../getting-started/server-and-client-components/index.md), and read/write outgoing request cookies in [Server Functions](../../../getting-started/mutating-data/index.md) or [Route Handlers](../../file-conventions/route/index.md).
 
 app/page.tsx
 
@@ -76,11 +76,11 @@ To learn more about these options, see the [MDN docs](https://developer.mozilla.
 
 -   `cookies` is an **asynchronous** function that returns a promise. You must use `async/await` or React's [`use`](https://react.dev/reference/react/use) function to access cookies.
     -   In version 14 and earlier, `cookies` was a synchronous function. To help with backwards compatibility, you can still access it synchronously in Next.js 15, but this behavior will be deprecated in the future.
--   `cookies` is a [Request-time API](/docs/app/glossary#request-time-apis) whose returned values cannot be known ahead of time. Using it in a layout or page will opt a route into [dynamic rendering](/docs/app/glossary#dynamic-rendering).
+-   `cookies` is a [Request-time API](../../../glossary/index.md#request-time-apis) whose returned values cannot be known ahead of time. Using it in a layout or page will opt a route into [dynamic rendering](../../../glossary/index.md#dynamic-rendering).
 -   The `.delete` method can only be called:
-    -   In a [Server Function](/docs/app/getting-started/mutating-data) or [Route Handler](/docs/app/api-reference/file-conventions/route).
+    -   In a [Server Function](../../../getting-started/mutating-data/index.md) or [Route Handler](../../file-conventions/route/index.md).
     -   If it belongs to the same domain from which `.set` is called. For wildcard domains, the specific subdomain must be an exact match. Additionally, the code must be executed on the same protocol (HTTP or HTTPS) as the cookie you want to delete.
--   HTTP does not allow setting cookies after streaming starts, so you must use `.set` in a [Server Function](/docs/app/getting-started/mutating-data) or [Route Handler](/docs/app/api-reference/file-conventions/route).
+-   HTTP does not allow setting cookies after streaming starts, so you must use `.set` in a [Server Function](../../../getting-started/mutating-data/index.md) or [Route Handler](../../file-conventions/route/index.md).
 
 ## Understanding Cookie Behavior in Server Components[](#understanding-cookie-behavior-in-server-components)
 
@@ -93,11 +93,11 @@ The server can only send instructions (via `Set-Cookie` headers) to tell the bro
 
 ## Understanding Cookie Behavior in Server Functions[](#understanding-cookie-behavior-in-server-functions)
 
-After you set or delete a cookie in a Server Function, Next.js can return both the updated UI and new data in a single server roundtrip when the function is used as a [Server Action](/docs/app/getting-started/mutating-data#what-are-server-functions) (e.g., passed to a form's `action` prop). See [Caching and Revalidating](/docs/app/getting-started/caching).
+After you set or delete a cookie in a Server Function, Next.js can return both the updated UI and new data in a single server roundtrip when the function is used as a [Server Action](../../../getting-started/mutating-data/index.md#what-are-server-functions) (e.g., passed to a form's `action` prop). See [Caching and Revalidating](../../../getting-started/caching/index.md).
 
 The UI is not unmounted, but effects that depend on data coming from the server will re-run.
 
-To refresh cached data too, call [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) inside the function.
+To refresh cached data too, call [`revalidatePath`](../revalidatePath/index.md) or [`revalidateTag`](../revalidateTag/index.md) inside the function.
 
 ## Examples[](#examples)
 
@@ -143,7 +143,7 @@ export default async function Page() {
 
 ### Setting a cookie[](#setting-a-cookie)
 
-You can use the `(await cookies()).set(name, value, options)` method in a [Server Function](/docs/app/getting-started/mutating-data) or [Route Handler](/docs/app/api-reference/file-conventions/route) to set a cookie. The [`options` object](#options) is optional.
+You can use the `(await cookies()).set(name, value, options)` method in a [Server Function](../../../getting-started/mutating-data/index.md) or [Route Handler](../../file-conventions/route/index.md) to set a cookie. The [`options` object](#options) is optional.
 
 app/actions.ts
 
@@ -247,7 +247,7 @@ export async function deleteCookie(data) {
 
 | Version | Changes |
 | --- | --- |
-| `v15.0.0-RC` | `cookies` is now an async function. A [codemod](/docs/app/guides/upgrading/codemods#150) is available. |
+| `v15.0.0-RC` | `cookies` is now an async function. A [codemod](../../../guides/upgrading/codemods/index.md#150) is available. |
 | `v13.0.0` | `cookies` introduced. |
 
 Was this helpful?

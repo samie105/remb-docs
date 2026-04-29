@@ -10,8 +10,8 @@ content_hash: "5a484ee20baa41f6da910975c2b6e42ceb2a030eea6ecdaaabc2307ff2688343"
 menu_path: ["object-fit"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../isolation/index.md", "title": "isolation"}
-nav_next: {"path": "../object-position/index.md", "title": "object-position"}
+nav_prev: {"path": "tailwind/docs/isolation/index.md", "title": "isolation"}
+nav_next: {"path": "tailwind/docs/object-position/index.md", "title": "object-position"}
 ---
 
 # object-fit
@@ -91,7 +91,7 @@ Prefix an `object-fit` utility with a breakpoint variant like `md:` to only appl
 <img class="object-contain md:object-cover" src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

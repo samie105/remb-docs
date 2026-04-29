@@ -10,8 +10,8 @@ content_hash: "3ac6f2065f6c8296f8cc51cea12a220827f61d1b9d55657798ee9af48bc02db2"
 menu_path: ["PostgreSQL: Documentation: 18: LOCK"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql-listen.html/index.md", "title": "PostgreSQL: Documentation: 18: LISTEN"}
-nav_next: {"path": "../sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
+nav_prev: {"path": "postgres/docs/current/sql-listen.html/index.md", "title": "PostgreSQL: Documentation: 18: LISTEN"}
+nav_next: {"path": "postgres/docs/current/sql-merge.html/index.md", "title": "PostgreSQL: Documentation: 18: MERGE"}
 ---
 
 ## Synopsis

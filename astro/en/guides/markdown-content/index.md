@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:21.141Z"
 content_hash: "cdbd47aea51042c7fca5b4a90f9842be27ca25f0489cae6744002821265fe7b5"
 menu_path: ["Markdown in Astro"]
 section_path: []
-nav_prev: {"path": "../framework-components/index.md", "title": "Front-end frameworks"}
-nav_next: {"path": "../content-collections/index.md", "title": "Content collections"}
+nav_prev: {"path": "astro/en/guides/framework-components/index.md", "title": "Front-end frameworks"}
+nav_next: {"path": "astro/en/guides/content-collections/index.md", "title": "Content collections"}
 ---
 
 # Markdown in Astro
@@ -31,13 +31,13 @@ Your Markdown content and frontmatter properties are available to use in compone
 
 [Section titled “File imports vs content collections queries”](#file-imports-vs-content-collections-queries)
 
-Local Markdown can be imported into `.astro` components using an `import` statement for a single file and [Vite’s `import.meta.glob()`](/en/guides/imports/#importmetaglob) to query multiple files at once. The [exported data from these Markdown files](#importing-markdown) can then be used in the `.astro` component.
+Local Markdown can be imported into `.astro` components using an `import` statement for a single file and [Vite’s `import.meta.glob()`](../imports/index.md#importmetaglob) to query multiple files at once. The [exported data from these Markdown files](#importing-markdown) can then be used in the `.astro` component.
 
-If you have groups of related Markdown files, consider [defining them as collections](/en/guides/content-collections/). This gives you several advantages, including the ability to store Markdown files anywhere on your filesystem or remotely.
+If you have groups of related Markdown files, consider [defining them as collections](../content-collections/index.md). This gives you several advantages, including the ability to store Markdown files anywhere on your filesystem or remotely.
 
 Collections use content-specific, optimized APIs for [querying and rendering your Markdown content](#markdown-from-content-collections-queries) instead of file imports. Collections are intended for sets of data that share the same structure, such as blog posts or product items. When you define that shape in a schema, you additionally get validation, type safety, and Intellisense in your editor.
 
-See more about [when to use content collections](/en/guides/content-collections/#when-to-create-a-collection) instead of file imports.
+See more about [when to use content collections](../content-collections/index.md#when-to-create-a-collection) instead of file imports.
 
 ## Dynamic JSX-like expressions
 
@@ -67,9 +67,9 @@ Here is my _great_ post!
 
 When fetching data from your collections with the helper functions `getCollection()` or `getEntry()`, your Markdown’s frontmatter properties are available on a `data` object (e.g. `post.data.title`). Additionally, `body` contains the raw, uncompiled body content as a string.
 
-The [`render()`](/en/reference/modules/astro-content/#render) function returns your Markdown body content, a generated list of headings, as well as a modified frontmatter object after any remark or rehype plugins have been applied.
+The [`render()`](../../reference/modules/astro-content/index.md#render) function returns your Markdown body content, a generated list of headings, as well as a modified frontmatter object after any remark or rehype plugins have been applied.
 
-Read more about [using content returned by a collections query](/en/guides/content-collections/#using-content-in-astro-templates).
+Read more about [using content returned by a collections query](../content-collections/index.md#using-content-in-astro-templates).
 
 #### Importing Markdown
 
@@ -97,7 +97,7 @@ Astro.props = {  file: "/home/user/projects/.../file.md",  url: "/en/guides/mark
 
 The `<Content />` component is available by importing `Content` from a Markdown file. This component returns the file’s full body content, rendered to HTML. You can optionally rename `Content` to any component name you prefer.
 
-You can similarly [render the HTML content of a Markdown collection entry](/en/guides/content-collections/#rendering-body-content) by rendering a `<Content />` component.
+You can similarly [render the HTML content of a Markdown collection entry](../content-collections/index.md#rendering-body-content) by rendering a `<Content />` component.
 
 ```
 ---// Import statementimport {Content as PromoBanner} from '../components/promoBanner.md';
@@ -144,13 +144,13 @@ Markdown support in Astro is powered by [remark](https://remark.js.org/), a powe
 
 Astro applies the [GitHub-flavored Markdown](https://github.com/remarkjs/remark-gfm) and [SmartyPants](https://github.com/silvenon/remark-smartypants) plugins by default. This brings some niceties like generating clickable links from text, and formatting for [quotations and em-dashes](https://daringfireball.net/projects/smartypants/).
 
-You can customize how remark parses your Markdown in `astro.config.mjs`. See the full list of [Markdown configuration options](/en/reference/configuration-reference/#markdown-options).
+You can customize how remark parses your Markdown in `astro.config.mjs`. See the full list of [Markdown configuration options](../../reference/configuration-reference/index.md#markdown-options).
 
 ### Adding remark and rehype plugins
 
 [Section titled “Adding remark and rehype plugins”](#adding-remark-and-rehype-plugins)
 
-Astro supports adding third-party [remark](https://github.com/remarkjs/remark) and [rehype](https://github.com/rehypejs/rehype) plugins for Markdown. These plugins allow you to extend your Markdown with new capabilities, like [auto-generating a table of contents](https://github.com/remarkjs/remark-toc), [applying accessible emoji labels](https://github.com/florianeckerstorfer/remark-a11y-emoji), and [styling your Markdown](/en/guides/styling/#markdown-styling).
+Astro supports adding third-party [remark](https://github.com/remarkjs/remark) and [rehype](https://github.com/rehypejs/rehype) plugins for Markdown. These plugins allow you to extend your Markdown with new capabilities, like [auto-generating a table of contents](https://github.com/remarkjs/remark-toc), [applying accessible emoji labels](https://github.com/florianeckerstorfer/remark-a11y-emoji), and [styling your Markdown](../styling/index.md#markdown-styling).
 
 We encourage you to browse [awesome-remark](https://github.com/remarkjs/awesome-remark) and [awesome-rehype](https://github.com/rehypejs/awesome-rehype) for popular plugins! See each plugin’s own README for specific installation instructions.
 
@@ -209,7 +209,7 @@ Now, every Markdown or MDX file will have `customProperty` in its frontmatter, m
 
 [Section titled “Extending Markdown config from MDX”](#extending-markdown-config-from-mdx)
 
-Astro’s MDX integration will extend [your project’s existing Markdown configuration](/en/reference/configuration-reference/#markdown-options) by default. To override individual options, you can specify their equivalent in your MDX configuration.
+Astro’s MDX integration will extend [your project’s existing Markdown configuration](../../reference/configuration-reference/index.md#markdown-options) by default. To override individual options, you can specify their equivalent in your MDX configuration.
 
 The following example disables GitHub-Flavored Markdown and applies a different set of remark plugins for MDX files:
 
@@ -219,7 +219,7 @@ export default defineConfig({  markdown: {    syntaxHighlight: 'prism',    remar
       // Markdown `remarkPlugins` ignored,      // only `remarkPlugin2` applied.      remarkPlugins: [remarkPlugin2],      // `gfm` overridden to `false`      gfm: false,    })  ]});
 ```
 
-To avoid extending your Markdown config from MDX, set [the `extendMarkdownConfig` option](/en/guides/integrations-guide/mdx/#extendmarkdownconfig) (enabled by default) to `false`:
+To avoid extending your Markdown config from MDX, set [the `extendMarkdownConfig` option](../integrations-guide/mdx/index.md#extendmarkdownconfig) (enabled by default) to `false`:
 
 ```
 import { defineConfig } from 'astro/config';import mdx from '@astrojs/mdx';
@@ -230,7 +230,7 @@ export default defineConfig({  markdown: {    remarkPlugins: [remarkPlugin],  },
 
 [Section titled “Individual Markdown pages”](#individual-markdown-pages)
 
-Astro treats [any supported file inside of the `/src/pages/` directory](/en/basics/astro-pages/#supported-page-files) as a page, including `.md` and other Markdown file types.
+Astro treats [any supported file inside of the `/src/pages/` directory](../../basics/astro-pages/index.md#supported-page-files) as a page, including `.md` and other Markdown file types.
 
 Placing a file in this directory, or any sub-directory, will automatically build a page route using the pathname of the file and display the Markdown content rendered to HTML. Astro will automatically add a `<meta charset="utf-8">` tag to your page to allow easier authoring of non-ASCII content.
 
@@ -245,7 +245,7 @@ It probably isn't styled much, but Markdown does support:- **bold** and _italics
 
 [Section titled “Frontmatter layout property”](#frontmatter-layout-property)
 
-To help with the limited functionality of individual Markdown pages, Astro provides a special frontmatter `layout` property which is a relative path to an Astro [Markdown layout component](/en/basics/layouts/#markdown-layouts). `layout` is not a special property when using [content collections](/en/guides/content-collections/) to query and render your Markdown content, and is not guaranteed to be supported outside of its intended use case.
+To help with the limited functionality of individual Markdown pages, Astro provides a special frontmatter `layout` property which is a relative path to an Astro [Markdown layout component](../../basics/layouts/index.md#markdown-layouts). `layout` is not a special property when using [content collections](../content-collections/index.md) to query and render your Markdown content, and is not guaranteed to be supported outside of its intended use case.
 
 If your Markdown file is located within `src/pages/`, create a layout component and add it in this layout property to provide a page shell around your Markdown content.
 
@@ -253,15 +253,15 @@ If your Markdown file is located within `src/pages/`, create a layout component 
 ---layout: ../../layouts/BlogPostLayout.astrotitle: Astro in briefauthor: Himanshudescription: Find out what makes Astro awesome!---This is a post written in Markdown.
 ```
 
-This layout component is a regular Astro component with [specific properties automatically available](/en/basics/layouts/#markdown-layout-props) through `Astro.props` for your Astro template. For example, you can access your Markdown file’s frontmatter properties through `Astro.props.frontmatter`:
+This layout component is a regular Astro component with [specific properties automatically available](../../basics/layouts/index.md#markdown-layout-props) through `Astro.props` for your Astro template. For example, you can access your Markdown file’s frontmatter properties through `Astro.props.frontmatter`:
 
 ```
 ---const {frontmatter} = Astro.props;---<html>  <head>    <!-- ... -->    <meta charset="utf-8"> // no longer added by default  </head>  <!-- ... -->  <h1>{frontmatter.title}</h1>  <h2>Post author: {frontmatter.author}</h2>  <p>{frontmatter.description}</p>  <slot /> <!-- Markdown content is injected here -->  <!-- ... --></html>
 ```
 
-When using the frontmatter `layout` property, you must include the `<meta charset="utf-8">` tag in your layout as Astro will no longer add it automatically. You can now also [style your Markdown](/en/guides/styling/#markdown-styling) in your layout component.
+When using the frontmatter `layout` property, you must include the `<meta charset="utf-8">` tag in your layout as Astro will no longer add it automatically. You can now also [style your Markdown](../styling/index.md#markdown-styling) in your layout component.
 
-Learn more about [Markdown Layouts](/en/basics/layouts/#markdown-layouts).
+Learn more about [Markdown Layouts](../../basics/layouts/index.md#markdown-layouts).
 
 ## Fetching Remote Markdown
 
@@ -269,7 +269,7 @@ Learn more about [Markdown Layouts](/en/basics/layouts/#markdown-layouts).
 
 Astro’s internal Markdown processor is not available for processing remote Markdown.
 
-To fetch remote Markdown for use in [content collections](/en/guides/content-collections/), you can [build a custom loader](/en/guides/content-collections/#custom-build-time-loaders) with access to a [`renderMarkdown()` function](/en/reference/content-loader-reference/#loadercontextrendermarkdown).
+To fetch remote Markdown for use in [content collections](../content-collections/index.md), you can [build a custom loader](../content-collections/index.md#custom-build-time-loaders) with access to a [`renderMarkdown()` function](../../reference/content-loader-reference/index.md#loadercontextrendermarkdown).
 
 To fetch remote Markdown directly and render it to HTML, you will need to install and configure your own Markdown parser from NPM. This will not inherit from any of Astro’s built-in Markdown settings that you have configured.
 
@@ -279,4 +279,4 @@ Be sure that you understand these limitations before implementing this in your p
 ---// Example: Fetch Markdown from a remote API// and render it to HTML, at runtime.// Using "marked" (https://github.com/markedjs/marked)import { marked } from 'marked';const response = await fetch('https://raw.githubusercontent.com/wiki/adam-p/markdown-here/Markdown-Cheatsheet.md');const markdown = await response.text();const content = marked.parse(markdown);---<article set:html={content} />
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

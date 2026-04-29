@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:42.125Z"
 content_hash: "80d56ada88722e2be61e4d46b1bc5a20f0435ae99d8f365d7e20d17e6217fd07"
 menu_path: ["Streaming HTTP Server with Async Iterators"]
 section_path: []
-nav_prev: {"path": "../stream-file/index.md", "title": "Stream a file as an HTTP Response"}
-nav_next: {"path": "../stream-node-streams-in-bun/index.md", "title": "Streaming HTTP Server with Node.js Streams"}
+nav_prev: {"path": "bun/docs/guides/http/stream-file/index.md", "title": "Stream a file as an HTTP Response"}
+nav_next: {"path": "bun/docs/guides/http/stream-node-streams-in-bun/index.md", "title": "Streaming HTTP Server with Node.js Streams"}
 ---
 
 In Bun, [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) objects can accept an async generator function as their body. This allows you to stream data to the client as it becomes available, rather than waiting for the entire response to be ready.

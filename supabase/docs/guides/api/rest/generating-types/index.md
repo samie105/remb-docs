@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:35.739Z"
 content_hash: "75543924a229c359286d808e5504a8762dc0c0e20802c353108084bec4e2a900"
 menu_path: ["Data REST API","Data REST API","Guides","Guides","Generating TypeScript Types","Generating TypeScript Types"]
 section_path: ["Data REST API","Data REST API","Guides","Guides","Generating TypeScript Types","Generating TypeScript Types"]
-nav_prev: {"path": "../generating-python-types/index.md", "title": "Generating Python Types"}
-nav_next: {"path": "../postgrest-error-codes/index.md", "title": "Error Codes"}
+nav_prev: {"path": "supabase/docs/guides/api/rest/generating-python-types/index.md", "title": "Generating Python Types"}
+nav_next: {"path": "supabase/docs/guides/api/rest/postgrest-error-codes/index.md", "title": "Error Codes"}
 ---
 
 # 
@@ -63,7 +63,7 @@ or in case of local development:
 1npx supabase gen types typescript --local > database.types.ts
 ```
 
-or in case of a self-hosted instance (see [Accessing Postgres](/docs/guides/self-hosting/docker#accessing-postgres) for more information):
+or in case of a self-hosted instance (see [Accessing Postgres](../../../self-hosting/docker/index.md#accessing-postgres) for more information):
 
 ```
 1npx supabase gen types typescript --db-url postgres://postgres.[POOLER_TENANT_ID]:[POSTGRES_PASSWORD]@[your-domain-or-ip]:5432/postgres --schema public > database.types.ts

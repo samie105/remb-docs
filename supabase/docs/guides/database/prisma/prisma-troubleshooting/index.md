@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:53.617Z"
 content_hash: "bfd405b89af8df7914d52ec2e4aa6179c2fda7107c8dfc3d2a33fec1eb40db90"
 menu_path: ["Database","Database","More","More","More","Prisma","Prisma","Prisma troubleshooting","Prisma troubleshooting"]
 section_path: ["Database","Database","More","More","More","Prisma","Prisma","Prisma troubleshooting","Prisma troubleshooting"]
-nav_prev: {"path": "../index.md", "title": "Prisma"}
-nav_next: {"path": "../../psql/index.md", "title": "Connecting with PSQL"}
+nav_prev: {"path": "supabase/docs/guides/database/prisma/index.md", "title": "Prisma"}
+nav_next: {"path": "supabase/docs/guides/database/psql/index.md", "title": "Connecting with PSQL"}
 ---
 
 # Errors
@@ -41,7 +41,7 @@ Prisma couldn't establish a connection with Postgres or Supavisor before the tim
 
 ### Solutions: [#](#solution-cant-reach-database-server-at)
 
-*   **Check database health**: Use the [Observability Dashboard](/dashboard/project/_/observability/database) to monitor CPU, memory, and I/O usage. If the database is overloaded, consider increasing your [compute size](/docs/guides/platform/compute-add-ons) or [optimizing your queries](/docs/guides/database/query-optimization).
+*   **Check database health**: Use the [Observability Dashboard](/dashboard/project/_/observability/database) to monitor CPU, memory, and I/O usage. If the database is overloaded, consider increasing your [compute size](/docs/guides/platform/compute-add-ons) or [optimizing your queries](../../query-optimization/index.md).
 *   **Verify connection string**: Double-check the connection string in your Prisma configuration to ensure it matches in your [project connect page](/dashboard/project/_?showConnect=true).
 *   **Increase connection timeout**: Try increasing the `connect_timeout` parameter in your Prisma configuration to give it more time to establish a connection.
 
@@ -66,7 +66,7 @@ Prisma is unable to allocate connections to pending queries fast enough to meet 
 *   **Increase the pool timeout**: Increase the `pool_timeout` parameter in your Prisma configuration to give the pooler more time to allocate connections.
 *   **Reduce the connection limit**: If you've explicitly increased the `connection_limit` parameter in your Prisma configuration, try reducing it to a more reasonable value.
 *   **Increase pool size**: If you are connecting with Supavisor, try increasing the pool size in the [Database Settings](/dashboard/project/_/database/settings).
-*   **Optimize queries**: [Improve the efficiency of your queries](/docs/guides/database/query-optimization) to reduce execution time.
+*   **Optimize queries**: [Improve the efficiency of your queries](../../query-optimization/index.md) to reduce execution time.
 *   **Increase compute size**: Like the preceding option, this is a strategy to reduce query execution time.
 
 * * *
@@ -78,7 +78,7 @@ According to this [GitHub Issue for Prisma](https://github.com/prisma/prisma/dis
 ### Solutions: [#](#solution-server-has-closed-the-connection)
 
 *   **Limit row return sizes**: Try to limit the total amount of rows returned for particularly large requests.
-*   **Minimize database strain**:Check the Reports Page for database strain. If there is obvious strain, consider [optimizing](/docs/guides/database/query-optimization) or increasing compute size
+*   **Minimize database strain**:Check the Reports Page for database strain. If there is obvious strain, consider [optimizing](../../query-optimization/index.md) or increasing compute size
 
 * * *
 
@@ -113,7 +113,7 @@ Postgres or Supavisor rejected a request for more connections
 *   **Reduce the number of Prisma connections**: A single client-server can establish multiple connections with a pooler. Typically, serverless setups do not need many connections. Starting with fewer, like five or three, or even just one, is often sufficient. In serverless setups, begin with `connection_limit=1`, increasing cautiously if needed to avoid maxing out connections.
 *   **Increase pool size**: If you are connecting with Supavisor, try increasing the pool size in the [Database Settings](/dashboard/project/_/database/settings).
 *   **Disconnect appropriately**: Close Prisma connections when they are no longer needed.
-*   **Decrease query time**: Reduce query complexity or add [strategic indexes](/docs/guides/database/postgres/indexes) to your tables to speed up queries.
+*   **Decrease query time**: Reduce query complexity or add [strategic indexes](../../postgres/indexes/index.md) to your tables to speed up queries.
 *   **Increase compute size**: Sometimes the best option is to increase your compute size, which also increases your max client size and query execution speed
 
 * * *

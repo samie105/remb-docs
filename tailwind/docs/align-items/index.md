@@ -10,8 +10,8 @@ content_hash: "717ade59d52e8a88ce26d84a4fc71ee486f74cd3ba51878196f758c82a8bf0c3"
 menu_path: ["align-items"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../align-content/index.md", "title": "align-content"}
-nav_next: {"path": "../align-self/index.md", "title": "align-self"}
+nav_prev: {"path": "tailwind/docs/align-content/index.md", "title": "align-content"}
+nav_next: {"path": "tailwind/docs/align-self/index.md", "title": "align-self"}
 ---
 
 # align-items
@@ -150,7 +150,7 @@ Prefix an `align-items` utility with a breakpoint variant like `md:` to only app
 <div class="flex items-stretch md:items-center ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

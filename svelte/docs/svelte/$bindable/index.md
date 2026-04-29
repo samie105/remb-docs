@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:17.118Z"
 content_hash: "b1d486e8885eb422f60dc0491a2be21c1843554c0c701e542caa2c5a7068d1ad"
 menu_path: ["$bindable"]
 section_path: []
-nav_prev: {"path": "../$props/index.md", "title": "$props"}
-nav_next: {"path": "../$inspect/index.md", "title": "$inspect"}
+nav_prev: {"path": "svelte/docs/svelte/$props/index.md", "title": "$props"}
+nav_next: {"path": "svelte/docs/svelte/$inspect/index.md", "title": "$inspect"}
 ---
 
 Ordinarily, props go one way, from parent to child. This makes it easy to understand how data flows around your app.

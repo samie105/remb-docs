@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:34.804Z"
 content_hash: "7f453bed38ad36f4a87ccb4b2e8efa150824cd002fcdbc73e16f9b4ca82d0f46"
 menu_path: ["Database","Database","Examples","Examples","Select First Row per Group","Select First Row per Group"]
 section_path: ["Database","Database","Examples","Examples","Select First Row per Group","Select First Row per Group"]
-nav_prev: {"path": "../event-triggers/index.md", "title": "Event Triggers"}
-nav_next: {"path": "../indexes/index.md", "title": "Managing Indexes in Postgres"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/event-triggers/index.md", "title": "Event Triggers"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/indexes/index.md", "title": "Managing Indexes in Postgres"}
 ---
 
 # 
@@ -90,4 +90,4 @@ The important bits here are:
 *   The `desc` keyword to order the `points` from highest to lowest.
 *   The `distinct` keyword that tells Postgres to only return a single row per team.
 
-This query can also be executed via `psql` or any other query editor if you prefer to [connect directly to the database](/docs/guides/database/connecting-to-postgres#direct-connections).
+This query can also be executed via `psql` or any other query editor if you prefer to [connect directly to the database](../../connecting-to-postgres/index.md#direct-connections).

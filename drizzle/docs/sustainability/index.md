@@ -10,8 +10,8 @@ content_hash: "6e52154b9b7643600742188ee69080b2e6e52cc642a1e4ce0356a8c0481e9ebc"
 menu_path: ["Drizzle Sustainability"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../get-started/index.md", "title": "Get started with Drizzle"}
-nav_next: {"path": "../guides/index.md", "title": "Drizzle ORM - Guides"}
+nav_prev: {"path": "drizzle/docs/get-started/index.md", "title": "Get started with Drizzle"}
+nav_next: {"path": "drizzle/docs/guides/index.md", "title": "Drizzle ORM - Guides"}
 ---
 
 We’ve been building Drizzle since 2021, and while the project has gone through a few evolutions (and emotional breakdowns) the core idea and vision never changed.

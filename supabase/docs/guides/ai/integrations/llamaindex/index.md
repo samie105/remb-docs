@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:01.882Z"
 content_hash: "f9594d60d6b008466131e670aa1b8ca9f7c43937c88504ed66d986dfd03b956a"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","LlamaIndex","LlamaIndex"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","LlamaIndex","LlamaIndex"]
-nav_prev: {"path": "../amazon-bedrock/index.md", "title": "Amazon Bedrock"}
-nav_next: {"path": "../roboflow/index.md", "title": "Roboflow"}
+nav_prev: {"path": "supabase/docs/guides/ai/integrations/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
+nav_next: {"path": "supabase/docs/guides/ai/integrations/roboflow/index.md", "title": "Roboflow"}
 ---
 
 # 

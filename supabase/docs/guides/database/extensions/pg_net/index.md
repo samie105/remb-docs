@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:43.431Z"
 content_hash: "7b2387a68ef938de557a83e3e85f58069515508ec4d21e4d0094903b45c31ce6"
 menu_path: ["Database","Database","Extensions","Extensions","pg_net: Async Networking","pg_net: Async Networking"]
 section_path: ["Database","Database","Extensions","Extensions","pg_net: Async Networking","pg_net: Async Networking"]
-nav_prev: {"path": "../pg_jsonschema/index.md", "title": "pg_jsonschema: JSON Schema Validation"}
-nav_next: {"path": "../pg_partman/index.md", "title": "Postgres Extensions Overview"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_jsonschema/index.md", "title": "pg_jsonschema: JSON Schema Validation"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_partman/index.md", "title": "Postgres Extensions Overview"}
 ---
 
 # 
@@ -21,7 +21,7 @@ pg\_net: Async Networking
 
 The pg\_net API is in beta. Functions signatures may change.
 
-[pg\_net](https://github.com/supabase/pg_net/) enables Postgres to make asynchronous HTTP/HTTPS requests in SQL. It differs from the [`http`](/docs/guides/database/extensions/http) extension in that it is asynchronous by default. This makes it useful in blocking functions (like triggers).
+[pg\_net](https://github.com/supabase/pg_net/) enables Postgres to make asynchronous HTTP/HTTPS requests in SQL. It differs from the [`http`](../http/index.md) extension in that it is asynchronous by default. This makes it useful in blocking functions (like triggers).
 
 It eliminates the need for servers to continuously poll for database changes and instead allows the database to proactively notify external resources about significant events.
 
@@ -37,7 +37,7 @@ Creates an HTTP GET request returning the request's ID. HTTP requests are not st
 
 ### Signature [#](#get-signature)
 
-This is a Postgres [SECURITY DEFINER](/docs/guides/database/postgres/row-level-security#use-security-definer-functions) function.
+This is a Postgres [SECURITY DEFINER](../../postgres/row-level-security/index.md#use-security-definer-functions) function.
 
 ```
 1net.http_get(2    -- url for the request3    url text,4    -- key/value pairs to be url encoded and appended to the `url`5    params jsonb default '{}'::jsonb,6    -- key/values to be included in request headers7    headers jsonb default '{}'::jsonb,8    -- the maximum number of milliseconds the request may take before being canceled9    timeout_milliseconds int default 200010)11    -- request_id reference12    returns bigint1314    strict15    volatile16    parallel safe17    language plpgsql
@@ -57,7 +57,7 @@ The body's character set encoding matches the database's `server_encoding` setti
 
 ### Signature [#](#post-signature)
 
-This is a Postgres [SECURITY DEFINER](/docs/guides/database/postgres/row-level-security#use-security-definer-functions) function
+This is a Postgres [SECURITY DEFINER](../../postgres/row-level-security/index.md#use-security-definer-functions) function
 
 ```
 1net.http_post(2    -- url for the request3    url text,4    -- body of the POST request5    body jsonb default '{}'::jsonb,6    -- key/value pairs to be url encoded and appended to the `url`7    params jsonb default '{}'::jsonb,8    -- key/values to be included in request headers9    headers jsonb default '{"Content-Type": "application/json"}'::jsonb,10    -- the maximum number of milliseconds the request may take before being canceled11    timeout_milliseconds int default 200012)13    -- request_id reference14    returns bigint1516    volatile17    parallel safe18    language plpgsql
@@ -75,7 +75,7 @@ Creates an HTTP DELETE request, returning the request's ID. HTTP requests are no
 
 ### Signature [#](#post-signature)
 
-This is a Postgres [SECURITY DEFINER](/docs/guides/database/postgres/row-level-security#use-security-definer-functions) function
+This is a Postgres [SECURITY DEFINER](../../postgres/row-level-security/index.md#use-security-definer-functions) function
 
 ```
 1net.http_delete(2    -- url for the request3    url text,4    -- key/value pairs to be url encoded and appended to the `url`5    params jsonb default '{}'::jsonb,6    -- key/values to be included in request headers7    headers jsonb default '{}'::jsonb,8    -- the maximum number of milliseconds the request may take before being canceled9    timeout_milliseconds int default 200010)11    -- request_id reference12    returns bigint1314    strict15    volatile16    parallel safe17    language plpgsql18    security definer
@@ -127,7 +127,7 @@ Inspecting the echo API response content to ensure it contains the right body
 1select2    "content"3from net._http_response4where id = <request_id>5-- returns information about the request6-- including the body sent: {"key": "value", "key": 5}
 ```
 
-Alternatively, by wrapping a request in a [database function](/docs/guides/database/functions), sent row data can be logged or returned for inspection and debugging.
+Alternatively, by wrapping a request in a [database function](../../functions/index.md), sent row data can be logged or returned for inspection and debugging.
 
 ```
 1create or replace function debugging_example (row_id int)2returns jsonb as $$3declare4    -- Store payload data5    row_data_var jsonb;6begin7    -- Retrieve row data and convert to JSON8    select to_jsonb("<example_table>".*) into row_data_var9    from "<example_table>"10    where "<example_table>".id = row_id;1112    -- Initiate HTTP POST request to URL13    perform14        net.http_post(15            url := 'https://postman-echo.com/post',16            -- Use row data as payload17            body := row_data_var18        ) as request_id;1920    -- Optionally Log row data or other data for inspection in Supabase Dashboard's Postgres Logs21    raise log 'Logging an entire row as JSON (%)', row_data_var;2223    -- return row data to inspect24    return row_data_var;2526-- Handle exceptions here if needed27exception28    when others then29        raise exception 'An error occurred: %', SQLERRM;30end;31$$ language plpgsql;3233-- calling function34select debugging_example(<row_id>);

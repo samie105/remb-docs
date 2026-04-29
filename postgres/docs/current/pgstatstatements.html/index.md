@@ -10,8 +10,8 @@ content_hash: "d5671c3c43077542bc8ef913810de81d4980b3fb6a870f8c537ef6f56430bea7"
 menu_path: ["PostgreSQL: Documentation: 18: F.32. pg_stat_statements — track statistics of SQL planning and execution"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../pgrowlocks.html/index.md", "title": "PostgreSQL: Documentation: 18: F.31.\u00a0pgrowlocks \u2014 show a table's row locking information"}
-nav_next: {"path": "../pgstattuple.html/index.md", "title": "PostgreSQL: Documentation: 18: F.33.\u00a0pgstattuple \u2014 obtain tuple-level statistics"}
+nav_prev: {"path": "postgres/docs/current/pgrowlocks.html/index.md", "title": "PostgreSQL: Documentation: 18: F.31.\u00a0pgrowlocks \u2014 show a table's row locking information"}
+nav_next: {"path": "postgres/docs/current/pgstattuple.html/index.md", "title": "PostgreSQL: Documentation: 18: F.33.\u00a0pgstattuple \u2014 obtain tuple-level statistics"}
 ---
 
 The `pg_stat_statements` module provides a means for tracking planning and execution statistics of all SQL statements executed by a server.

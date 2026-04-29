@@ -10,8 +10,8 @@ content_hash: "9c350222cd4345a1fc4415dcb175022e49988123091c84de5b375d1917b5ff2d"
 menu_path: ["Get Started with Drizzle and SQLite Durable Objects in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../d1-new/index.md", "title": "Get Started with Drizzle and D1"}
-nav_next: {"path": "../do-new/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects"}
+nav_prev: {"path": "drizzle/docs/get-started/d1-new/index.md", "title": "Get Started with Drizzle and D1"}
+nav_next: {"path": "drizzle/docs/get-started/do-new/index.md", "title": "Get Started with Drizzle and SQLite Durable Objects"}
 ---
 
 # Bind a Durable Object. Durable objects are a scale-to-zero compute primitive based on the actor model.

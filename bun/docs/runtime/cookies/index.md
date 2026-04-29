@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:15.972Z"
 content_hash: "99c86e292085b85d1f60e0526747ea052bd71753e8022dca48f162d99f97efee"
 menu_path: ["Cookies"]
 section_path: []
-nav_prev: {"path": "../console/index.md", "title": "Console"}
-nav_next: {"path": "../cron/index.md", "title": "Cron"}
+nav_prev: {"path": "bun/docs/runtime/console/index.md", "title": "Console"}
+nav_next: {"path": "bun/docs/runtime/cron/index.md", "title": "Cron"}
 ---
 
 Bun provides native APIs for working with HTTP cookies through `Bun.Cookie` and `Bun.CookieMap`. These APIs offer fast methods for parsing, generating, and manipulating cookies in HTTP requests and responses.

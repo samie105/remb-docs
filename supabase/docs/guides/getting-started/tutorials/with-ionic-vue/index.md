@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:57.360Z"
 content_hash: "2c32a886e79fd712939584d6859bec2398d82bf3c8d9403805d9fbac4e014d0c"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Ionic Vue","Ionic Vue"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Ionic Vue","Ionic Vue"]
-nav_prev: {"path": "../with-ionic-react/index.md", "title": "Build a User Management App with Ionic React"}
-nav_next: {"path": "../with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-react/index.md", "title": "Build a User Management App with Ionic React"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-kotlin/index.md", "title": "Build a Product Management Android App with Jetpack Compose"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a User Management App with Ionic Vue
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/ionic-demos/ionic-angular-account.png)
 
@@ -59,7 +59,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=vuejs).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -95,7 +95,7 @@ Save the environment variables in a `.env` file, including the API URL and key t
 1VUE_APP_SUPABASE_URL=YOUR_SUPABASE_URL2VUE_APP_SUPABASE_KEY=YOUR_SUPABASE_KEY
 ```
 
-With the API credentials in place, create a helper file to initialize the Supabase client. These variables will be exposed on the browser, and that's fine since Supabase enables [Row Level Security](/docs/guides/auth#row-level-security) on Databases by default.
+With the API credentials in place, create a helper file to initialize the Supabase client. These variables will be exposed on the browser, and that's fine since Supabase enables [Row Level Security](../../../auth/index.md#row-level-security) on Databases by default.
 
 ###### src/supabase.ts
 
@@ -161,7 +161,7 @@ And then open the browser to [localhost:8100](http://localhost:8100) and you sho
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Create an upload widget[#](#create-an-upload-widget)
 

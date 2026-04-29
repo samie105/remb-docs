@@ -10,8 +10,8 @@ content_hash: "c465a089d72fc4755e4af3ae7e52662a9e08aa1c323a99f012f79f1e5c819c7e"
 menu_path: ["New Features"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-orm-v0322/index.md", "title": "Drizzle ORM - DrizzleORM v0.32.2 release"}
-nav_next: {"path": "../../migrate/components/index.md", "title": "Drizzle ORM - undefined"}
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0322/index.md", "title": "Drizzle ORM - DrizzleORM v0.32.2 release"}
+nav_next: {"path": "drizzle/docs/migrate/components/index.md", "title": "Drizzle ORM - undefined"}
 ---
 
 Drizzle ORM and Drizzle Kit v1.0.0-beta.2 release

@@ -9,21 +9,21 @@ last_crawled_at: "2026-04-18T16:32:19.223Z"
 content_hash: "78eaa94ab09cc599e2930c5f9d2b04052c44019309fe84d0b8136f6cacd25e97"
 menu_path: ["Actions"]
 section_path: []
-nav_prev: {"path": "../server-islands/index.md", "title": "Server islands"}
-nav_next: {"path": "../sessions/index.md", "title": "Sessions"}
+nav_prev: {"path": "astro/en/guides/server-islands/index.md", "title": "Server islands"}
+nav_next: {"path": "astro/en/guides/sessions/index.md", "title": "Sessions"}
 ---
 
 # Actions
 
 **Added in:** `astro@4.15`
 
-Astro Actions allow you to define and call backend functions with type-safety. Actions perform data fetching, JSON parsing, and input validation for you. This can greatly reduce the amount of boilerplate needed compared to using an [API endpoint](/en/guides/endpoints/).
+Astro Actions allow you to define and call backend functions with type-safety. Actions perform data fetching, JSON parsing, and input validation for you. This can greatly reduce the amount of boilerplate needed compared to using an [API endpoint](../endpoints/index.md).
 
 Use actions instead of API endpoints for seamless communication between your client and server code and to:
 
-*   Automatically validate JSON and form data inputs using [Zod validation](/en/reference/modules/astro-zod/).
+*   Automatically validate JSON and form data inputs using [Zod validation](../../reference/modules/astro-zod/index.md).
 *   Generate type-safe functions to call your backend from the client and even [from HTML form actions](#call-actions-from-an-html-form-action). No need for manual `fetch()` calls.
-*   Standardize backend errors with the [`ActionError`](/en/reference/modules/astro-actions/#actionerror) object.
+*   Standardize backend errors with the [`ActionError`](../../reference/modules/astro-actions/index.md#actionerror) object.
 
 ## Basic usage
 
@@ -36,7 +36,7 @@ import { defineAction } from 'astro:actions';import { z } from 'astro/zod';
 export const server = {  myAction: defineAction({ /* ... */ })}
 ```
 
-Your actions are available as functions from the `astro:actions` module. Import `actions` and call them client-side within a [UI framework component](/en/guides/framework-components/), [a form POST request](#call-actions-from-an-html-form-action), or by using a `<script>` tag in an Astro component.
+Your actions are available as functions from the `astro:actions` module. Import `actions` and call them client-side within a [UI framework component](../framework-components/index.md), [a form POST request](#call-actions-from-an-html-form-action), or by using a `<script>` tag in an Astro component.
 
 When you call an action, it returns an object with either `data` containing the JSON-serialized result, or `error` containing thrown errors.
 
@@ -65,7 +65,7 @@ Follow these steps to define an action and call it in a `script` tag in your Ast
     export const server = {  // action declarations}
     ```
     
-3.  Use the `defineAction()` utility to define a `getGreeting` action. The `input` property will be used to validate input parameters with a [Zod schema](/en/reference/modules/astro-zod/#common-data-type-validators) and the `handler()` function includes the backend logic to run on the server.
+3.  Use the `defineAction()` utility to define a `getGreeting` action. The `input` property will be used to validate input parameters with a [Zod schema](../../reference/modules/astro-zod/index.md#common-data-type-validators) and the `handler()` function includes the backend logic to run on the server.
     
     ```
     import { defineAction } from 'astro:actions';import { z } from 'astro/zod';
@@ -90,7 +90,7 @@ Follow these steps to define an action and call it in a `script` tag in your Ast
     ```
     
 
-See the full Actions API documentation for details on [`defineAction()`](/en/reference/modules/astro-actions/#defineaction) and its properties.
+See the full Actions API documentation for details on [`defineAction()`](../../reference/modules/astro-actions/index.md#defineaction) and its properties.
 
 ## Organizing actions
 
@@ -125,7 +125,7 @@ Actions return an object containing either `data` with the type-safe return valu
 
 Actions return a custom data format that can handle Dates, Maps, Sets, and URLs [using the Devalue library](https://github.com/Rich-Harris/devalue). Therefore, you can’t easily inspect the response from the network like you can with regular JSON. For debugging, you can instead inspect the `data` object returned by actions.
 
-[See the `handler()` API reference](/en/reference/modules/astro-actions/#handler-property) for full details.
+[See the `handler()` API reference](../../reference/modules/astro-actions/index.md#handler-property) for full details.
 
 ### Checking for errors
 
@@ -165,7 +165,7 @@ You can use the provided `ActionError` to throw an error from your action `handl
 
 [Section titled “Creating an ActionError”](#creating-an-actionerror)
 
-To throw an error, import the [`ActionError()` class](/en/reference/modules/astro-actions/#actionerror) from the `astro:actions` module. Pass it a human-readable status `code` (e.g. `"NOT_FOUND"` or `"BAD_REQUEST"`), and an optional `message` to provide further information about the error.
+To throw an error, import the [`ActionError()` class](../../reference/modules/astro-actions/index.md#actionerror) from the `astro:actions` module. Pass it a human-readable status `code` (e.g. `"NOT_FOUND"` or `"BAD_REQUEST"`), and an optional `message` to provide further information about the error.
 
 This example throws an error from a `likePost` action when a user is not logged in, after checking a hypothetical “user-session” cookie for authentication:
 
@@ -191,7 +191,7 @@ export function LikeButton({ postId }: { postId: string }) {  const [showLogin, 
 
 [Section titled “Handling client redirects”](#handling-client-redirects)
 
-When calling actions from the client, you can integrate with a client-side library like `react-router`, or you can use Astro’s [`navigate()` function](/en/guides/view-transitions/#trigger-navigation) to redirect to a new page when an action succeeds.
+When calling actions from the client, you can integrate with a client-side library like `react-router`, or you can use Astro’s [`navigate()` function](../view-transitions/index.md#trigger-navigation) to redirect to a new page when an action succeeds.
 
 This example navigates to the homepage after a `logout` action returns successfully:
 
@@ -215,7 +215,7 @@ export const server = {  comment: defineAction({    accept: 'form',    input: z.
 
 [Section titled “Using validators with form inputs”](#using-validators-with-form-inputs)
 
-When your action is [configured to accept form data](/en/reference/modules/astro-actions/#accept-property), you can use any Zod validators to validate your fields (e.g. `z.coerce.date()` for date inputs). Extension functions including `.refine()`, `.transform()`, and `.pipe()` are also supported on the `z.object()` validator.
+When your action is [configured to accept form data](../../reference/modules/astro-actions/index.md#accept-property), you can use any Zod validators to validate your fields (e.g. `z.coerce.date()` for date inputs). Extension functions including `.refine()`, `.transform()`, and `.pipe()` are also supported on the `z.object()` validator.
 
 Additionally, Astro provides special handling under the hood for your convenience to validate the following types of field inputs:
 
@@ -257,7 +257,7 @@ The following example shows a validated newsletter registration form that accept
     export const server = {  newsletter: defineAction({    accept: 'form',    input: z.object({      email: z.email(),      terms: z.boolean(),    }),    handler: async ({ email, terms }) => { /* ... */ },  })}
     ```
     
-    See the [`input` API reference](/en/reference/modules/astro-actions/#input-validator) for all available form validators.
+    See the [`input` API reference](../../reference/modules/astro-actions/index.md#input-validator) for all available form validators.
     
 3.  Add a `<script>` to the HTML form to submit the user input. This example overrides the form’s default submit behavior to call `actions.newsletter()`, and redirects to `/confirmation` using the `navigate()` function:
     
@@ -274,7 +274,7 @@ The following example shows a validated newsletter registration form that accept
 
 [Section titled “Displaying form input errors”](#displaying-form-input-errors)
 
-You can validate form inputs before submission using [native HTML form validation attributes](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation) like `required`, `type="email"`, and `pattern`. For more complex `input` validation on the backend, you can use the provided [`isInputError()`](/en/reference/modules/astro-actions/#isinputerror) utility function.
+You can validate form inputs before submission using [native HTML form validation attributes](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation) like `required`, `type="email"`, and `pattern`. For more complex `input` validation on the backend, you can use the provided [`isInputError()`](../../reference/modules/astro-actions/index.md#isinputerror) utility function.
 
 To retrieve input errors, use the `isInputError()` utility to check whether an error was caused by invalid input. Input errors contain a `fields` object with messages for each input name that failed to validate. You can use these messages to prompt your user to correct their submission.
 
@@ -291,7 +291,7 @@ const form = document.querySelector('form');const formData = new FormData(form);
 
 You can enable zero-JS form submissions with standard attributes on any `<form>` element. Form submissions without client-side JavaScript may be useful both as a fallback for when JavaScript fails to load, or if you prefer to handle forms entirely from the server.
 
-Calling [Astro.getActionResult()](/en/reference/api-reference/#getactionresult) on the server returns the result of your form submission (`data` or `error`), and can be used to dynamically redirect, handle form errors, update the UI, and more.
+Calling [Astro.getActionResult()](../../reference/api-reference/index.md#getactionresult) on the server returns the result of your form submission (`data` or `error`), and can be used to dynamically redirect, handle form errors, update the UI, and more.
 
 To call an action from an HTML form, add `method="POST"` to your `<form>`, then set the form’s `action` attribute using your action, for example `action={actions.logout}`. This will set the `action` attribute to use a query string that is handled by the server automatically.
 
@@ -359,7 +359,7 @@ const result = Astro.getActionResult(actions.newsletter);const inputErrors = isI
 
 [Section titled “Preserve input values on error”](#preserve-input-values-on-error)
 
-Inputs will be cleared whenever a form is submitted. To persist input values, you can [enable view transitions](/en/guides/view-transitions/#enabling-view-transitions-spa-mode) and apply the `transition:persist` directive to each input:
+Inputs will be cleared whenever a form is submitted. To persist input values, you can [enable view transitions](../view-transitions/index.md#enabling-view-transitions-spa-mode) and apply the `transition:persist` directive to each input:
 
 ```
 <input transition:persist required type="email" name="email" />
@@ -390,7 +390,7 @@ Action results are displayed as a POST submission. This means that the result wi
 
 To customize this behavior, you can add middleware to handle the result of the action manually. You may choose to persist the action result using a cookie or session storage.
 
-Start by [creating a middleware file](/en/guides/middleware/) and importing [the `getActionContext()` utility](/en/reference/modules/astro-actions/#getactioncontext) from `astro:actions`. This function returns an `action` object with information about the incoming action request, including the action handler and whether the action was called from an HTML form. `getActionContext()` also returns the `setActionResult()` and `serializeActionResult()` functions to programmatically set the value returned by `Astro.getActionResult()`:
+Start by [creating a middleware file](../middleware/index.md) and importing [the `getActionContext()` utility](../../reference/modules/astro-actions/index.md#getactioncontext) from `astro:actions`. This function returns an `action` object with information about the incoming action request, including the action handler and whether the action was called from an HTML form. `getActionContext()` also returns the `setActionResult()` and `serializeActionResult()` functions to programmatically set the value returned by `Astro.getActionResult()`:
 
 ```
 import { defineMiddleware } from 'astro:middleware';import { getActionContext } from 'astro:actions';
@@ -425,9 +425,9 @@ Actions are accessible as public endpoints based on the name of the action. For 
 
 [Section titled “Authorize users from an action handler”](#authorize-users-from-an-action-handler)
 
-To authorize action requests, add an authentication check to your action handler. You may want to use [an authentication library](/en/guides/authentication/) to handle session management and user information.
+To authorize action requests, add an authentication check to your action handler. You may want to use [an authentication library](../authentication/index.md) to handle session management and user information.
 
-Actions expose [a subset of the `APIContext` object](/en/reference/modules/astro-actions/#actionapicontext) to access properties passed from middleware using `context.locals`. When a user is not authorized, you can raise an `ActionError` with the `UNAUTHORIZED` code:
+Actions expose [a subset of the `APIContext` object](../../reference/modules/astro-actions/index.md#actionapicontext) to access properties passed from middleware using `context.locals`. When a user is not authorized, you can raise an `ActionError` with the `UNAUTHORIZED` code:
 
 ```
 import { defineAction, ActionError } from 'astro:actions';
@@ -442,7 +442,7 @@ export const server = {  getUserSettings: defineAction({    handler: async (_inp
 
 Astro recommends authorizing user sessions from your action handler to respect permission levels and rate-limiting on a per-action basis. However, you can also gate requests to all actions (or a subset of actions) from middleware.
 
-Use the [`getActionContext()` function](/en/reference/modules/astro-actions/#getactioncontext) from your middleware to retrieve information about any inbound action requests. This includes the action name and whether that action was called using a client-side remote procedure call (RPC) function (e.g. `actions.blog.like()`) or an HTML form.
+Use the [`getActionContext()` function](../../reference/modules/astro-actions/index.md#getactioncontext) from your middleware to retrieve information about any inbound action requests. This includes the action name and whether that action was called using a client-side remote procedure call (RPC) function (e.g. `actions.blog.like()`) or an HTML form.
 
 The following example rejects all action requests that do not have a valid session token. If the check fails, a “Forbidden” response is returned. Note: this method ensures that actions are only accessible when a session is present, but is _not_ a substitute for secure authorization.
 
@@ -456,7 +456,7 @@ export const onRequest = defineMiddleware(async (context, next) => {  const { ac
 
 [Section titled “Call actions from Astro components and server endpoints”](#call-actions-from-astro-components-and-server-endpoints)
 
-You can call actions directly from Astro component scripts using the `Astro.callAction()` wrapper (or `context.callAction()` when using a [server endpoint](/en/guides/endpoints/#server-endpoints-api-routes)). This is common to reuse logic from your actions in other server code.
+You can call actions directly from Astro component scripts using the `Astro.callAction()` wrapper (or `context.callAction()` when using a [server endpoint](../endpoints/index.md#server-endpoints-api-routes)). This is common to reuse logic from your actions in other server code.
 
 Pass the action as the first argument and any input parameters as the second argument. This returns the same `data` and `error` objects you receive when calling actions on the client:
 
@@ -465,4 +465,4 @@ Pass the action as the first argument and any input parameters as the second arg
 const searchQuery = Astro.url.searchParams.get('search');if (searchQuery) {  const { data, error } = await Astro.callAction(actions.findProduct, { query: searchQuery });  // handle result}---
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

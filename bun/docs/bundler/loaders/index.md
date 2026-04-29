@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:48.946Z"
 content_hash: "a353d9306d953609c0f40a19d751b12318ea89a8f3b39936f28d357245209e9a"
 menu_path: ["Loaders"]
 section_path: []
-nav_prev: {"path": "../html-static/index.md", "title": "HTML & static sites"}
-nav_next: {"path": "../minifier/index.md", "title": "Minifier"}
+nav_prev: {"path": "bun/docs/bundler/html-static/index.md", "title": "HTML & static sites"}
+nav_next: {"path": "bun/docs/bundler/minifier/index.md", "title": "Minifier"}
 ---
 
 # Output: /path/to/project/logo.svg

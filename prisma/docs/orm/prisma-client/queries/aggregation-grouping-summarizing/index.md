@@ -10,8 +10,8 @@ content_hash: "30ab252ff945ae334fc7c3defe10b3128bebdd34fc100f65ff39817e493190d6"
 menu_path: ["Aggregation, grouping, and summarizing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../advanced/query-optimization-performance/index.md", "title": "Query optimization"}
-nav_next: {"path": "../crud/index.md", "title": "CRUD"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/queries/advanced/query-optimization-performance/index.md", "title": "Query optimization"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/queries/crud/index.md", "title": "CRUD"}
 ---
 
 Use Prisma Client to aggregate, group by, count, and select distinct.

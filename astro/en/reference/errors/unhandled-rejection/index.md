@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:43.501Z"
 content_hash: "a0120ec54b2d72c5ae11782d1e761be63fcf2f27ceff3f0d941ea2292ccd15a8"
 menu_path: ["Unhandled rejection"]
 section_path: []
-nav_prev: {"path": "../unavailable-astro-global/index.md", "title": "Unavailable Astro global in getStaticPaths()"}
-nav_next: {"path": "../unknown-clierror/index.md", "title": "Unknown CLI Error."}
+nav_prev: {"path": "astro/en/reference/errors/unavailable-astro-global/index.md", "title": "Unavailable Astro global in getStaticPaths()"}
+nav_next: {"path": "astro/en/reference/errors/unknown-clierror/index.md", "title": "Unknown CLI Error."}
 ---
 
 # Unhandled rejection
@@ -24,4 +24,4 @@ nav_next: {"path": "../unknown-clierror/index.md", "title": "Unknown CLI Error."
 
 Astro could not find any code to handle a rejected `Promise`. Make sure all your promises have an `await` or `.catch()` handler.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

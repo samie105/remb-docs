@@ -10,8 +10,8 @@ content_hash: "cafd325c99eba79e200104883fcdd0b9afb422582187b78d89b3d917ee03da1f"
 menu_path: ["forced-color-adjust"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../stroke-width/index.md", "title": "stroke-width"}
-nav_next: {"path": "../installation/using-vite/index.md", "title": "Get started with Tailwind CSS"}
+nav_prev: {"path": "tailwind/docs/stroke-width/index.md", "title": "stroke-width"}
+nav_next: {"path": "tailwind/docs/installation/using-vite/index.md", "title": "Get started with Tailwind CSS"}
 ---
 
 Utilities for opting in and out of forced colors.

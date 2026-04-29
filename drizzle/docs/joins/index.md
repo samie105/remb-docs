@@ -10,8 +10,8 @@ content_hash: "9d884d153693a22bbec5a34b145d18f3c654d2d942aafd756f87fdd069767b84"
 menu_path: ["Joins [SQL]"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../query-utils/index.md", "title": "Drizzle query utils"}
-nav_next: {"path": "../sql/index.md", "title": "Magical sql operator \ud83e\ude84"}
+nav_prev: {"path": "drizzle/docs/query-utils/index.md", "title": "Drizzle query utils"}
+nav_next: {"path": "drizzle/docs/sql/index.md", "title": "Magical sql operator \ud83e\ude84"}
 ---
 
 ## Joins \[SQL\]

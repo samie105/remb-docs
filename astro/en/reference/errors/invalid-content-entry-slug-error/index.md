@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:12.112Z"
 content_hash: "1541af7e490eb7996989485e00f2db4eedbd3e1d5a691f7bed3827414798d2c0"
 menu_path: ["Invalid content entry slug."]
 section_path: []
-nav_prev: {"path": "../invalid-content-entry-frontmatter-error/index.md", "title": "Content entry frontmatter does not match schema."}
-nav_next: {"path": "../invalid-dynamic-route/index.md", "title": "Invalid dynamic route."}
+nav_prev: {"path": "astro/en/reference/errors/invalid-content-entry-frontmatter-error/index.md", "title": "Content entry frontmatter does not match schema."}
+nav_next: {"path": "astro/en/reference/errors/invalid-dynamic-route/index.md", "title": "Invalid dynamic route."}
 ---
 
 # Invalid content entry slug.
@@ -25,6 +25,6 @@ A collection entry has an invalid `slug`. This field is reserved for generating 
 
 **See Also:**
 
-*   [The reserved entry `slug` field](/en/guides/content-collections/)
+*   [The reserved entry `slug` field](../../../guides/content-collections/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

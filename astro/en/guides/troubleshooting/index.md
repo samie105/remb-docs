@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:45.231Z"
 content_hash: "1dfecfe4fe1f7d90d9cf8ec9ddf17b83dd8501b81cf6c4ae261877581bd780dc"
 menu_path: ["Troubleshooting"]
 section_path: []
-nav_prev: {"path": "../upgrade-to/v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
-nav_next: {"path": "../migrate-to-astro/index.md", "title": "Migrate an existing project to Astro"}
+nav_prev: {"path": "astro/en/guides/upgrade-to/v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/index.md", "title": "Migrate an existing project to Astro"}
 ---
 
 # Troubleshooting
@@ -40,7 +40,7 @@ Code that is written or imported inside of an Astro `<script>` tag is run in the
 
 [Section titled “Debugging framework components”](#debugging-framework-components)
 
-[Framework components](/en/guides/framework-components/) (like React and Svelte) are unique: They render server-side by default, meaning that `console.log()` debug output will be visible in the terminal. However, they can also be hydrated for the browser, which may cause your debug logs to also appear in the browser.
+[Framework components](../framework-components/index.md) (like React and Svelte) are unique: They render server-side by default, meaning that `console.log()` debug output will be visible in the terminal. However, they can also be hydrated for the browser, which may cause your debug logs to also appear in the browser.
 
 This can be useful for debugging differences between the server output and the hydrated components in the browser.
 
@@ -67,13 +67,13 @@ The Debug component supports a variety of syntax options for even more flexible 
 
 [Section titled “Common Error Messages”](#common-error-messages)
 
-Here are some common error messages you might see in the terminal, what they might mean, and what to do about them. See our [full error reference guide](/en/reference/error-reference/) for a complete list of Astro errors you may encounter.
+Here are some common error messages you might see in the terminal, what they might mean, and what to do about them. See our [full error reference guide](../../reference/error-reference/index.md) for a complete list of Astro errors you may encounter.
 
 ### Cannot use import statement outside a module
 
 [Section titled “Cannot use import statement outside a module”](#cannot-use-import-statement-outside-a-module)
 
-In Astro components, `<script>` tags are loaded as [JS modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) by default. If you have included the [`is:inline` directive](/en/reference/directives-reference/#isinline) or any other attribute in your tag, this default behavior is removed.
+In Astro components, `<script>` tags are loaded as [JS modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) by default. If you have included the [`is:inline` directive](../../reference/directives-reference/index.md#isinline) or any other attribute in your tag, this default behavior is removed.
 
 **Solution**: If you have added any attributes to your `<script>` tag, you must also add the `type="module"` attribute to be able to use import statements.
 
@@ -96,7 +96,7 @@ Framework components run on the server by default, so this error can occur when 
 
 *   If the code is in an Astro component, move it to a `<script>` tag outside of the frontmatter. This tells Astro to run this code on the client, where `document` and `window` are available.
     
-*   If the code is in a framework component, try to access these objects after rendering using lifecycle methods (e.g. [`useEffect()`](https://react.dev/reference/react/useEffect) in React, [`onMounted()`](https://vuejs.org/api/composition-api-lifecycle.html#onmounted) in Vue, and [`onMount()`](https://svelte.dev/docs#run-time-svelte-onmount) in Svelte). Tell the framework component to hydrate client-side by using a [client:](/en/reference/directives-reference/#client-directives) directive, like `client:load`, to run these lifecycle methods. You can also prevent the component from rendering on the server at all by adding the [`client:only`](/en/reference/directives-reference/#clientonly) directive.
+*   If the code is in a framework component, try to access these objects after rendering using lifecycle methods (e.g. [`useEffect()`](https://react.dev/reference/react/useEffect) in React, [`onMounted()`](https://vuejs.org/api/composition-api-lifecycle.html#onmounted) in Vue, and [`onMount()`](https://svelte.dev/docs#run-time-svelte-onmount) in Svelte). Tell the framework component to hydrate client-side by using a [client:](../../reference/directives-reference/index.md#client-directives) directive, like `client:load`, to run these lifecycle methods. You can also prevent the component from rendering on the server at all by adding the [`client:only`](../../reference/directives-reference/index.md#clientonly) directive.
     
 
 **Status**: Expected Astro behavior, as intended.
@@ -131,13 +131,13 @@ This means that your site’s [Content Security Policy](https://developer.mozill
 
 [Section titled “My component is not rendering”](#my-component-is-not-rendering)
 
-First, check to see that you have **imported the component** in your [`.astro` component script](/en/basics/astro-components/#the-component-script) or [`.mdx` file](/en/guides/integrations-guide/mdx/#using-components-in-mdx).
+First, check to see that you have **imported the component** in your [`.astro` component script](../../basics/astro-components/index.md#the-component-script) or [`.mdx` file](../integrations-guide/mdx/index.md#using-components-in-mdx).
 
 Then check your import statement:
 
 *   Is your import linking to the wrong place? (Check your import path.)
     
-*   Does your import have the same name as the imported component? (Check your component name and that it [follows the `.astro` syntax](/en/reference/astro-syntax/#differences-between-astro-and-jsx).)
+*   Does your import have the same name as the imported component? (Check your component name and that it [follows the `.astro` syntax](../../reference/astro-syntax/index.md#differences-between-astro-and-jsx).)
     
 *   Have you included the extension in the import? (Check that your imported file contains an extension. e.g. `.astro`, `.md`, `.vue`, `.svelte`. Note: File extensions are **not** required for `.js(x)` and `.ts(x)` files only.)
     
@@ -146,9 +146,9 @@ Then check your import statement:
 
 [Section titled “My component is not interactive”](#my-component-is-not-interactive)
 
-If your component is rendering (see above) but is not responding to user interaction, then you may be missing a [`client:*` directive](/en/reference/directives-reference/#client-directives) to hydrate your component.
+If your component is rendering (see above) but is not responding to user interaction, then you may be missing a [`client:*` directive](../../reference/directives-reference/index.md#client-directives) to hydrate your component.
 
-By default, a [UI Framework component is not hydrated in the client](/en/guides/framework-components/#hydrating-interactive-components). If no `client:*` directive is provided, its HTML is rendered onto the page without JavaScript.
+By default, a [UI Framework component is not hydrated in the client](../framework-components/index.md#hydrating-interactive-components). If no `client:*` directive is provided, its HTML is rendered onto the page without JavaScript.
 
 ### Cannot find package ‘X’
 
@@ -162,7 +162,7 @@ React, for example, is a peer dependency of the `@astrojs/react` integration. Th
 # Example: Install integrations and frameworks togethernpm install @astrojs/react react react-dom
 ```
 
-See [Astro’s integration guide](/en/guides/integrations/) for instructions on adding framework renderers, CSS tools and other packages to Astro.
+See [Astro’s integration guide](../integrations/index.md) for instructions on adding framework renderers, CSS tools and other packages to Astro.
 
 ### Using Astro with Yarn 2+ (Berry)
 
@@ -190,13 +190,13 @@ import { defineConfig } from 'astro/config'export default defineConfig({  vite: 
 
 [Section titled “Using <head> in a component”](#using-head-in-a-component)
 
-In Astro, using a `<head>` tag works like any other HTML tag: it does not get moved to the top of the page or merged with the existing `<head>`. Because of this, you usually only want to include one `<head>` tag throughout a page. We recommend writing that single `<head>` and its contents in a [layout component](/en/basics/layouts/).
+In Astro, using a `<head>` tag works like any other HTML tag: it does not get moved to the top of the page or merged with the existing `<head>`. Because of this, you usually only want to include one `<head>` tag throughout a page. We recommend writing that single `<head>` and its contents in a [layout component](../../basics/layouts/index.md).
 
 ### An unexpected `<style>` is included
 
 [Section titled “An unexpected <style> is included”](#an-unexpected-style-is-included)
 
-You may notice an imported component’s `<style>` tag included in your HTML source even if that component doesn’t appear in the final output. For example, this will occur with [conditionally rendered](/en/reference/astro-syntax/#dynamic-html) components that are not displayed.
+You may notice an imported component’s `<style>` tag included in your HTML source even if that component doesn’t appear in the final output. For example, this will occur with [conditionally rendered](../../reference/astro-syntax/index.md#dynamic-html) components that are not displayed.
 
 Astro’s build process works on the module graph: once a component is included in the template, its `<style>` tag is processed, optimized, and bundled, whether it appears in the final output or not.
 
@@ -254,4 +254,4 @@ Visit the current [open Issues in Astro](https://github.com/withastro/astro/issu
 
 You can also visit [Roadmap Discussions](https://github.com/withastro/roadmap/discussions) to see whether you’ve found a known limitation of Astro, and check to see whether there are current proposals related to your use case.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

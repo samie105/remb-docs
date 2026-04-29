@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:47.887Z"
 content_hash: "6bbcd9e5cff9a36ff23bfb13f261b5dadc595ec0a0784ce389dd9cecb89b30f1"
 menu_path: ["Streaming HTTP Server with Node.js Streams"]
 section_path: []
-nav_prev: {"path": "../stream-iterator/index.md", "title": "Streaming HTTP Server with Async Iterators"}
-nav_next: {"path": "../tls/index.md", "title": "Configure TLS on an HTTP server"}
+nav_prev: {"path": "bun/docs/guides/http/stream-iterator/index.md", "title": "Streaming HTTP Server with Async Iterators"}
+nav_next: {"path": "bun/docs/guides/http/tls/index.md", "title": "Configure TLS on an HTTP server"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../tls/index.md", "title": "Configure TLS on an HTTP server"
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 In Bun, [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) objects can accept a Node.js [`Readable`](https://nodejs.org/api/stream.html#stream_readable_streams). This works because Bun’s `Response` object allows any async iterable as its body. Node.js streams are async iterables, so you can pass them directly to `Response`.
 
@@ -62,10 +62,10 @@ Server-Sent Events (SSE) with Bun
 
 Previous
 
-](/docs/guides/http/sse)[
+](../sse/index.md)[
 
 Build a simple WebSocket server
 
 Next
 
-](/docs/guides/websocket/simple)
+](../../websocket/simple/index.md)

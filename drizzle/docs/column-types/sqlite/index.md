@@ -10,8 +10,8 @@ content_hash: "1abe4195498ef0d1b07a87343b6e0fc04c972b9bea73d38575c98c6d3aa6ede9"
 menu_path: ["SQLite column types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../singlestore/index.md", "title": "SingleStore column types"}
-nav_next: {"path": "../../docs/drizzle-config-file/index.md", "title": "404"}
+nav_prev: {"path": "drizzle/docs/column-types/singlestore/index.md", "title": "SingleStore column types"}
+nav_next: {"path": "drizzle/docs/docs/drizzle-config-file/index.md", "title": "404"}
 ---
 
 Based on the official **[SQLite docs](https://www.sqlite.org/datatype3.html)**, each value stored in an SQLite database (or manipulated by the database engine) has one of the following storage classes `NULL`, `INTEGER`, `REAL`, `TEXT` and `BLOB`.

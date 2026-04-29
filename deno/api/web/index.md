@@ -10,8 +10,8 @@ content_hash: "4833568f801855b6d235fb22d220449c460eaea51713559d159bc4642d66ec87"
 menu_path: ["Web Platform APIs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../node/zlib/index.md", "title": "zlib - Node documentation"}
-nav_next: {"path": "all_symbols/index.md", "title": "All Symbols - Web documentation"}
+nav_prev: {"path": "deno/api/node/zlib/index.md", "title": "zlib - Node documentation"}
+nav_next: {"path": "deno/api/web/all_symbols/index.md", "title": "All Symbols - Web documentation"}
 ---
 
 **On this page**
@@ -51,7 +51,7 @@ nav_next: {"path": "all_symbols/index.md", "title": "All Symbols - Web documenta
 
 Deno implements many of the standard Web Platform APIs that are available in modern browsers. This means if you've built for the web, you're likely already familiar with many of Deno's APIs. Learning Deno also means investing in your knowledge of the web platform.
 
-This section provides comprehensive documentation for all Deno's supported Web APIs You can [browse all symbols](/api/web/all_symbols) to view the complete list or search by category. Click on any function or interface to see detailed documentation with examples
+This section provides comprehensive documentation for all Deno's supported Web APIs You can [browse all symbols](all_symbols/index.md) to view the complete list or search by category. Click on any function or interface to see detailed documentation with examples
 
 ## Core Web APIs
 
@@ -272,7 +272,7 @@ The `--location` flag is intended for those who have a specific purpose in mind 
 
 ## Web Storage
 
-The [Web Storage API](/api/web/storage) provides an API for storing string keys and values. Persisting data works similar to a browser, and has a 10MB storage limit. The global `sessionStorage` object only persists data for the current execution context, while `localStorage` persists data from execution to execution.
+The [Web Storage API](storage/index.md) provides an API for storing string keys and values. Persisting data works similar to a browser, and has a 10MB storage limit. The global `sessionStorage` object only persists data for the current execution context, while `localStorage` persists data from execution to execution.
 
 In a browser, `localStorage` persists data uniquely per origin (effectively the protocol plus hostname plus port). As of Deno 1.16, Deno has a set of rules to determine what is a unique storage location:
 
@@ -298,7 +298,7 @@ localStorage.clear();
 
 ## Web Workers
 
-Deno supports the [`Web Worker API`](/api/web/workers).
+Deno supports the [`Web Worker API`](workers/index.md).
 
 Workers can be used to run code on multiple threads. Each instance of `Worker` is run on a separate thread, dedicated only to that worker.
 
@@ -421,9 +421,9 @@ hello world
 
 Caution
 
-This is an unstable Deno feature. Learn more about [unstable features](/runtime/fundamentals/stability_and_releases/#unstable-apis).
+This is an unstable Deno feature. Learn more about [unstable features](../../runtime/fundamentals/stability_and_releases/index.md#unstable-apis).
 
-The permissions available for the worker are analogous to the CLI permission flags, meaning every permission enabled there can be disabled at the level of the Worker API. You can find a more detailed description of each of the permission options in the [security documentation](/runtime/fundamentals/security/).
+The permissions available for the worker are analogous to the CLI permission flags, meaning every permission enabled there can be disabled at the level of the Worker API. You can find a more detailed description of each of the permission options in the [security documentation](../../runtime/fundamentals/security/index.md).
 
 By default a worker will inherit permissions from the thread it was created in, however in order to allow users to limit the access of this worker we provide the `deno.permissions` option in the worker API.
 

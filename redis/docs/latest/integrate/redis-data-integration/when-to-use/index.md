@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:54.602Z"
 content_hash: "99b8e7aa9e69a8189611d7260d6692b56a60ad3c8ba84fd21c1b9fce23f4ff05"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        When to use RDI","→","When to use RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        When to use RDI","→","When to use RDI"]
-nav_prev: {"path": "../reference/data-transformation/add_field/index.md", "title": "add_field"}
-nav_next: {"path": "../../redis-mcp/index.md", "title": "Redis MCP"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/reference/data-transformation/add_field/index.md", "title": "add_field"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-mcp/index.md", "title": "Redis MCP"}
 ---
 
 # When to use RDI
@@ -38,7 +38,7 @@ RDI is a good fit when:
 *   RDI throughput during [full sync](/docs/latest/integrate/redis-data-integration/data-pipelines/#pipeline-lifecycle) would not exceed 30K records per second (for an average 1KB record size) and during [CDC](/docs/latest/integrate/redis-data-integration/data-pipelines/#pipeline-lifecycle) would not exceed 10K records per second (for an average 1KB record size).
 *   The total data size is not larger than 100GB (since this would typically exceed the throughput limits just mentioned for full sync).
 *   You don’t need to perform join operations on the data from several tables into a [nested Redis JSON object](/docs/latest/integrate/redis-data-integration/data-pipelines/data-denormalization/#joining-one-to-many-relationships).
-*   RDI supports the [data transformations](/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/) you need for your app.
+*   RDI supports the [data transformations](../data-pipelines/transform-examples/index.md) you need for your app.
 *   Your data caching needs are too complex or demanding to implement and maintain yourself.
 *   Your database administrator has reviewed RDI's requirements for the source database and confirmed that they are acceptable.
 

@@ -11,8 +11,8 @@ menu_path: ["How to set a Content Security Policy (CSP) for your Next.js applica
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../ci-build-caching/index.md", "title": "How to configure Continuous Integration (CI) build caching"}
-nav_next: {"path": "../css-in-js/index.md", "title": "How to use CSS-in-JS libraries"}
+nav_prev: {"path": "nextjs/docs/app/guides/ci-build-caching/index.md", "title": "How to configure Continuous Integration (CI) build caching"}
+nav_next: {"path": "nextjs/docs/app/guides/css-in-js/index.md", "title": "How to use CSS-in-JS libraries"}
 ---
 
 # How to set a Content Security Policy (CSP) for your Next.js application
@@ -39,9 +39,9 @@ If an attacker wanted to load a script into your page, they'd need to guess the 
 
 ### Adding a nonce with Proxy[](#adding-a-nonce-with-proxy)
 
-[Proxy](/docs/app/api-reference/file-conventions/proxy) enables you to add headers and generate nonces before the page renders.
+[Proxy](../../api-reference/file-conventions/proxy/index.md) enables you to add headers and generate nonces before the page renders.
 
-Every time a page is viewed, a fresh nonce should be generated. This means that you **must use [dynamic rendering](/docs/app/glossary#dynamic-rendering) to add nonces**.
+Every time a page is viewed, a fresh nonce should be generated. This means that you **must use [dynamic rendering](../../glossary/index.md#dynamic-rendering) to add nonces**.
 
 For example:
 
@@ -96,7 +96,7 @@ export function proxy(request: NextRequest) {
 }
 ```
 
-By default, Proxy runs on all requests. You can filter Proxy to run on specific paths using a [`matcher`](/docs/app/api-reference/file-conventions/proxy#matcher).
+By default, Proxy runs on all requests. You can filter Proxy to run on specific paths using a [`matcher`](../../api-reference/file-conventions/proxy/index.md#matcher).
 
 We recommend ignoring matching prefetches (from `next/link`) and static assets that don't need the CSP header.
 
@@ -161,7 +161,7 @@ export default async function Page() {
 
 ### Reading the nonce[](#reading-the-nonce)
 
-You can read the nonce from a [Server Component](/docs/app/getting-started/server-and-client-components) using [`headers`](/docs/app/api-reference/functions/headers):
+You can read the nonce from a [Server Component](../../getting-started/server-and-client-components/index.md) using [`headers`](../../api-reference/functions/headers/index.md):
 
 app/page.tsx
 
@@ -218,7 +218,7 @@ Consider nonces when:
 
 ## Without Nonces[](#without-nonces)
 
-For applications that do not require nonces, you can set the CSP header directly in your [`next.config.js`](/docs/app/api-reference/config/next-config-js) file:
+For applications that do not require nonces, you can set the CSP header directly in your [`next.config.js`](../../api-reference/config/next-config-js/index.md) file:
 
 next.config.js
 
@@ -452,12 +452,12 @@ const cspHeader = `
 
 API reference for the proxy.js file.
 
-](/docs/app/api-reference/file-conventions/proxy)[
+](../../api-reference/file-conventions/proxy/index.md)[
 
 ### headers
 
 API reference for the headers function.
 
-](/docs/app/api-reference/functions/headers)
+](../../api-reference/functions/headers/index.md)
 
 Was this helpful?

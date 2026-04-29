@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:16.262Z"
 content_hash: "e4be1626a9436f8b8a920795b79216e73d39d2c0bba08e26be6290d0bdabf49c"
 menu_path: ["Getting Started"]
 section_path: []
-nav_prev: {"path": "../../index.md", "title": "Supabase Documentation"}
-nav_next: {"path": "../ai/index.md", "title": "AI & Vectors"}
+nav_prev: {"path": "supabase/docs/index.md", "title": "Supabase Documentation"}
+nav_next: {"path": "supabase/docs/guides/ai/index.md", "title": "AI & Vectors"}
 ---
 
 # 
@@ -25,13 +25,13 @@ Features
 
 A non-exhaustive list of features that Supabase provides for every project.
 
-](/docs/guides/getting-started/features)[
+](features/index.md)[
 
 Architecture
 
 An overview of Supabase's architecture and product principles.
 
-](/docs/guides/getting-started/architecture)[
+](architecture/index.md)[
 
 Local Development
 

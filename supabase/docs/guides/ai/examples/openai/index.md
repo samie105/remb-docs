@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:53.380Z"
 content_hash: "1c1e7db6e3a219342e27f14792fb5dee25e71cc14815e9d12e0c8f798593323e"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","OpenAI completions using Edge Functions","OpenAI completions using Edge Functions"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","OpenAI completions using Edge Functions","OpenAI completions using Edge Functions"]
-nav_prev: {"path": "../nextjs-vector-search/index.md", "title": "Vector search with Next.js and OpenAI"}
-nav_next: {"path": "../semantic-image-search-amazon-titan/index.md", "title": "Semantic Image Search with Amazon Titan"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/nextjs-vector-search/index.md", "title": "Vector search with Next.js and OpenAI"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/semantic-image-search-amazon-titan/index.md", "title": "Semantic Image Search with Amazon Titan"}
 ---
 
 # 
@@ -29,7 +29,7 @@ OpenAI's API is intended to be used from the server-side. Supabase offers Edge F
 
 ## Setup Supabase project[#](#setup-supabase-project)
 
-If you haven't already, [install the Supabase CLI](/docs/guides/cli) and initialize your project:
+If you haven't already, [install the Supabase CLI](../../../cli/index.md) and initialize your project:
 
 ```
 1supabase init

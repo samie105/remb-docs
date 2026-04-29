@@ -11,8 +11,8 @@ menu_path: ["Addressing \"App Container Deprecated\" Error in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../../app/index.md", "title": "App Router"}
-nav_next: {"path": "../blocking-route/index.md", "title": "Uncached data was accessed outside of `<Suspense>`"}
+nav_prev: {"path": "nextjs/docs/app/index.md", "title": "App Router"}
+nav_next: {"path": "nextjs/docs/messages/blocking-route/index.md", "title": "Uncached data was accessed outside of `<Suspense>`"}
 ---
 
 # Addressing "App Container Deprecated" Error in Next.js
@@ -73,6 +73,6 @@ After making this change, your custom `<App>` should work as expected without th
 
 ## Useful Links[](#useful-links)
 
--   [Custom App](/docs/pages/building-your-application/routing/custom-app)
+-   [Custom App](../../pages/building-your-application/routing/custom-app/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:17.605Z"
 content_hash: "9dbde2b516e84c24c5a4d54dc3217f674f285b68eece64fa656264c4eccb36f3"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Reports","Reports"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Reports","Reports"]
-nav_prev: {"path": "../metrics/index.md", "title": "Metrics API"}
-nav_next: {"path": "../sentry-monitoring/index.md", "title": "Sentry integration"}
+nav_prev: {"path": "supabase/docs/guides/telemetry/metrics/index.md", "title": "Metrics API"}
+nav_next: {"path": "supabase/docs/guides/telemetry/sentry-monitoring/index.md", "title": "Sentry integration"}
 ---
 
 # 
@@ -369,7 +369,7 @@ Action
 
 Description
 
-[Upgrade compute size](/docs/guides/platform/compute-and-disk#compute-size)
+[Upgrade compute size](../../platform/compute-and-disk/index.md#compute-size)
 
 Increase available memory resources
 
@@ -445,11 +445,11 @@ Address IO bottlenecks
 
 Resolve disk/network issues when IOWait is high
 
-[Upgrade compute size](/docs/guides/platform/compute-and-disk)
+[Upgrade compute size](../../platform/compute-and-disk/index.md)
 
 Increase available CPU capacity
 
-[Implement proper indexing](/docs/guides/database/postgres/indexes)
+[Implement proper indexing](../../database/postgres/indexes/index.md)
 
 Use query optimization techniques
 
@@ -483,11 +483,11 @@ Action
 
 Description
 
-[Optimize indexing](/docs/guides/database/postgres/indexes)
+[Optimize indexing](../../database/postgres/indexes/index.md)
 
 Reduce high read IOPS through better query indexing
 
-Consider [read replicas](/docs/guides/platform/read-replicas)
+Consider [read replicas](../../platform/read-replicas/index.md)
 
 Distribute read-heavy workloads across multiple instances
 
@@ -495,7 +495,7 @@ Batch write operations
 
 Reduce write IOPS by grouping database writes
 
-[Upgrade compute size](/docs/guides/platform/compute-and-disk)
+[Upgrade compute size](../../platform/compute-and-disk/index.md)
 
 Increase IOPS limits with larger compute instances
 
@@ -537,7 +537,7 @@ Tune caching and batching
 
 Minimize repeated disk access and improve throughput headroom
 
-[Upgrade compute size](/docs/guides/platform/compute-and-disk)
+[Upgrade compute size](../../platform/compute-and-disk/index.md)
 
 Increase throughput limits for sustained workloads
 
@@ -605,13 +605,13 @@ Implement data archival
 
 Archive historical data to reduce active storage needs
 
-[Upgrade disk size](/docs/guides/platform/database-size)
+[Upgrade disk size](../../platform/database-size/index.md)
 
 Increase storage capacity when approaching limits
 
 ### Query Performance[#](#query-performance)
 
-Links to the [Query Performance Advisory page](/docs/guides/platform/performance#examine-query-performance) in the dashboard, which provides a detailed analysis of slow database queries
+Links to the [Query Performance Advisory page](../../platform/performance/index.md#examine-query-performance) in the dashboard, which provides a detailed analysis of slow database queries
 
 ### Database connections[#](#database-connections)
 
@@ -669,11 +669,11 @@ Action
 
 Description
 
-[Upgrade compute size](/docs/guides/platform/compute-and-disk#compute-size)
+[Upgrade compute size](../../platform/compute-and-disk/index.md#compute-size)
 
 Increase maximum connection limits
 
-Implement [connection pooling](/docs/guides/database/connecting-to-postgres#shared-pooler)
+Implement [connection pooling](../../database/connecting-to-postgres/index.md#shared-pooler)
 
 Optimize connection management for high direct connection usage
 
@@ -711,11 +711,11 @@ Action
 
 Description
 
-[Upgrade compute size](/docs/guides/platform/compute-and-disk#compute-size)
+[Upgrade compute size](../../platform/compute-and-disk/index.md#compute-size)
 
 Increase maximum connection limits
 
-Implement [connection pooling](/docs/guides/database/connecting-to-postgres#shared-pooler)
+Implement [connection pooling](../../database/connecting-to-postgres/index.md#shared-pooler)
 
 Optimize connection management for high direct connection usage
 
@@ -753,11 +753,11 @@ Action
 
 Description
 
-[Upgrade compute size](/docs/guides/platform/compute-and-disk#compute-size)
+[Upgrade compute size](../../platform/compute-and-disk/index.md#compute-size)
 
 Increase maximum connection limits
 
-Implement [connection pooling](/docs/guides/database/connecting-to-postgres#shared-pooler)
+Implement [connection pooling](../../database/connecting-to-postgres/index.md#shared-pooler)
 
 Optimize connection management for high direct connection usage
 
@@ -823,7 +823,7 @@ Implement data archival
 
 Archive historical data to reduce active storage needs
 
-[Upgrade disk size](/docs/guides/platform/database-size)
+[Upgrade disk size](../../platform/database-size/index.md)
 
 Increase storage capacity when approaching limits
 

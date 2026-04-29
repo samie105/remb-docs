@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:12:46.326Z"
 content_hash: "fb814293bf5f163edf29fe6495e6fbe1932084ac73274b40fa1aca180503f517"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Production usage","→","Production usage"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Production usage","→","Production usage"]
-nav_prev: {"path": "../prob/index.md", "title": "Probabilistic data types"}
-nav_next: {"path": "../queryjson/index.md", "title": "Index and query documents"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/prob/index.md", "title": "Probabilistic data types"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/queryjson/index.md", "title": "Index and query documents"}
 ---
 
 # Production usage
@@ -29,11 +29,11 @@ Each item in the checklist below links to the section for a recommendation. Use 
 
 Node-Redis provides [multiple events to handle various scenarios](https://github.com/redis/node-redis?tab=readme-ov-file#events), among which the most critical is the `error` event.
 
-This event is triggered whenever an error occurs within the client, and it is very important to set a handler to listen for it. See [Error events](/docs/latest/develop/clients/nodejs/error-handling/#error-events) for more information and an example of setting an error handler.
+This event is triggered whenever an error occurs within the client, and it is very important to set a handler to listen for it. See [Error events](../error-handling/index.md#error-events) for more information and an example of setting an error handler.
 
 ### Handling reconnections
 
-When the socket closes unexpectedly (without calling the `quit()` or `disconnect()` methods), the client can automatically restore the connection. A simple [exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff) strategy for reconnection is enabled by default, but you can replace this with your own custom strategy. See [Reconnect after disconnection](/docs/latest/develop/clients/nodejs/connect/#reconnect-after-disconnection) for more information.
+When the socket closes unexpectedly (without calling the `quit()` or `disconnect()` methods), the client can automatically restore the connection. A simple [exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff) strategy for reconnection is enabled by default, but you can replace this with your own custom strategy. See [Reconnect after disconnection](../connect/index.md#reconnect-after-disconnection) for more information.
 
 ### Timeouts
 
@@ -86,6 +86,6 @@ Use a separate connection with the queue disabled if you want to avoid queuing o
 
 _Smart client handoffs (SCH)_ is a feature of Redis Cloud and Redis Software servers that lets them actively notify clients about planned server maintenance shortly before it happens. This lets a client take action to avoid disruptions in service.
 
-See [Smart client handoffs](/docs/latest/develop/clients/sch/) for more information about SCH and [Connect using Smart client handoffs](/docs/latest/develop/clients/nodejs/connect/#connect-using-smart-client-handoffs-sch) for example code.
+See [Smart client handoffs](/docs/latest/develop/clients/sch/) for more information about SCH and [Connect using Smart client handoffs](../connect/index.md#connect-using-smart-client-handoffs-sch) for example code.
 
 ## On this page

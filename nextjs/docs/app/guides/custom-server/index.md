@@ -11,8 +11,8 @@ menu_path: ["How to set up a custom server in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../css-in-js/index.md", "title": "How to use CSS-in-JS libraries"}
-nav_next: {"path": "../data-security/index.md", "title": "How to think about data security in Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/css-in-js/index.md", "title": "How to use CSS-in-JS libraries"}
+nav_next: {"path": "nextjs/docs/app/guides/data-security/index.md", "title": "How to think about data security in Next.js"}
 ---
 
 # How to set up a custom server in Next.js
@@ -23,7 +23,7 @@ Next.js includes its own server with `next start` by default. If you have an exi
 
 > **Good to know**:
 > 
-> -   Before deciding to use a custom server, keep in mind that it should only be used when the integrated router of Next.js can't meet your app requirements. A custom server will remove important performance optimizations, like **[Automatic Static Optimization](/docs/pages/building-your-application/rendering/automatic-static-optimization).**
+> -   Before deciding to use a custom server, keep in mind that it should only be used when the integrated router of Next.js can't meet your app requirements. A custom server will remove important performance optimizations, like **[Automatic Static Optimization](../../../pages/building-your-application/rendering/automatic-static-optimization/index.md).**
 > -   When using standalone output mode, it does not trace custom server files. This mode outputs a separate minimal `server.js` file, instead. These cannot be used together.
 
 Take a look at the [following example](https://github.com/vercel/next.js/tree/canary/examples/custom-server) of a custom server:

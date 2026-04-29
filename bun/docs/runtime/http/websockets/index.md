@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:22.136Z"
 content_hash: "c3ad77cde0bdba3c24de653a4e43aa5668bb807d464d32aaba173ef58b2348fc"
 menu_path: ["WebSockets"]
 section_path: []
-nav_prev: {"path": "../tls/index.md", "title": "TLS"}
-nav_next: {"path": "../../json5/index.md", "title": "JSON5"}
+nav_prev: {"path": "bun/docs/runtime/http/tls/index.md", "title": "TLS"}
+nav_next: {"path": "bun/docs/runtime/json5/index.md", "title": "JSON5"}
 ---
 
 `Bun.serve()` supports server-side WebSockets, with on-the-fly compression, TLS support, and a Bun-native publish-subscribe API.

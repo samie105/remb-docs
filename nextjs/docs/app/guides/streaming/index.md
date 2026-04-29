@@ -11,8 +11,8 @@ menu_path: ["Streaming"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../static-exports/index.md", "title": "How to create a static export of your Next.js application"}
-nav_next: {"path": "../tailwind-v3-css/index.md", "title": "How to install Tailwind CSS v3 in your Next.js application"}
+nav_prev: {"path": "nextjs/docs/app/guides/static-exports/index.md", "title": "How to create a static export of your Next.js application"}
+nav_next: {"path": "nextjs/docs/app/guides/tailwind-v3-css/index.md", "title": "How to install Tailwind CSS v3 in your Next.js application"}
 ---
 
 # Streaming
@@ -43,15 +43,15 @@ When a browser requests a page, two streams work together during the initial pag
 
 ### The HTML stream[](#the-html-stream)
 
-React's server renderer produces progressive HTML chunks. The static parts of your page (layouts, navigation, Suspense fallbacks) render first and are sent immediately. When an async [Server Component](/docs/app/glossary#server-component) resolves, React streams its completed HTML along with inline `<script>` tags: one that swaps the fallback DOM node with the new content, and another carrying the [component payload](#the-component-payload) so React can later hydrate it. The browser executes the swap instantly, without waiting for the page's JavaScript bundle to load or hydration to complete. This is what the user _sees_: the page painting progressively, section by section.
+React's server renderer produces progressive HTML chunks. The static parts of your page (layouts, navigation, Suspense fallbacks) render first and are sent immediately. When an async [Server Component](../../glossary/index.md#server-component) resolves, React streams its completed HTML along with inline `<script>` tags: one that swaps the fallback DOM node with the new content, and another carrying the [component payload](#the-component-payload) so React can later hydrate it. The browser executes the swap instantly, without waiting for the page's JavaScript bundle to load or hydration to complete. This is what the user _sees_: the page painting progressively, section by section.
 
 ### The component payload[](#the-component-payload)
 
-The component payload is a serialized representation of the component tree that React uses to [hydrate](/docs/app/glossary#hydration) the page and handle client-side updates. On initial load, it arrives embedded in the HTML stream (as described above). On **client-side navigation**, only the component payload is fetched (with an `rsc: 1` request header) and no HTML is transferred at all. React uses it to update the component tree in place.
+The component payload is a serialized representation of the component tree that React uses to [hydrate](../../glossary/index.md#hydration) the page and handle client-side updates. On initial load, it arrives embedded in the HTML stream (as described above). On **client-side navigation**, only the component payload is fetched (with an `rsc: 1` request header) and no HTML is transferred at all. React uses it to update the component tree in place.
 
 ### The static shell[](#the-static-shell)
 
-Everything that renders before any async work resolves is called the **static shell**: your layouts, navigation, and the fallback UI defined by your `<Suspense>` boundaries. It is sent immediately, giving the user something to see and interact with while dynamic content streams in. With [Cache Components](/docs/app/getting-started/caching), the static shell is prerendered at build time and served instantly from the edge.
+Everything that renders before any async work resolves is called the **static shell**: your layouts, navigation, and the fallback UI defined by your `<Suspense>` boundaries. It is sent immediately, giving the user something to see and interact with while dynamic content streams in. With [Cache Components](../../getting-started/caching/index.md), the static shell is prerendered at build time and served instantly from the edge.
 
 ![How Server Rendering with Streaming Works](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/server-rendering-with-streaming.png)
 
@@ -92,7 +92,7 @@ This means:
 
 `loading.js` is useful when there's nothing meaningful to show until the page's data resolves. If the page needs to await data before it can render anything, a full-page skeleton is a reasonable fallback.
 
-See the [`loading.js` API reference](/docs/app/api-reference/file-conventions/loading) for more details.
+See the [`loading.js` API reference](../../api-reference/file-conventions/loading/index.md) for more details.
 
 ## Granular streaming with `<Suspense>`[](#granular-streaming-with-suspense)
 
@@ -272,17 +272,17 @@ This keeps `ProductGrid` simple (it takes a `string`, not a `Promise`) while sti
 | **Navigation** | Prefetched as instant fallback | Not prefetched by default |
 | **Best for** | Pages where nothing renders without data | Most pages, for granular control |
 
-Prefer explicit `<Suspense>` boundaries close to the dynamic access. When the prerenderer encounters dynamic work, it walks up the tree looking for the nearest Suspense boundary. If none is found, the build fails with a [blocking route error](/docs/messages/blocking-route). A `loading.js` high in the tree is a valid boundary, so the framework finds it and stops, but now the entire page falls back to a full-page skeleton instead of streaming granularly.
+Prefer explicit `<Suspense>` boundaries close to the dynamic access. When the prerenderer encounters dynamic work, it walks up the tree looking for the nearest Suspense boundary. If none is found, the build fails with a [blocking route error](../../../messages/blocking-route/index.md). A `loading.js` high in the tree is a valid boundary, so the framework finds it and stops, but now the entire page falls back to a full-page skeleton instead of streaming granularly.
 
 ### Error handling mid-stream[](#error-handling-mid-stream)
 
-If a component throws an error after streaming has started, the nearest [`error.js`](/docs/app/api-reference/file-conventions/error) boundary catches it and renders the error UI in place of the failed component. The rest of the page remains intact, only the section that errored is replaced.
+If a component throws an error after streaming has started, the nearest [`error.js`](../../api-reference/file-conventions/error/index.md) boundary catches it and renders the error UI in place of the failed component. The rest of the page remains intact, only the section that errored is replaced.
 
 Because the HTTP status code (`200 OK`) has already been sent with the first chunk, it cannot be changed to a `4xx` or `5xx`. The error is handled entirely within the streamed HTML. See [The HTTP contract](#the-http-contract) for more on this constraint.
 
 ## Streaming data to the client[](#streaming-data-to-the-client)
 
-You can start a fetch in a [Server Component](/docs/app/glossary#server-component) and pass the unresolved promise as a prop to a [Client Component](/docs/app/glossary#client-component). The promise can be passed through as many layers as needed. Only the component that calls React's [`use`](https://react.dev/reference/react/use) API to read the value needs a `<Suspense>` boundary around it:
+You can start a fetch in a [Server Component](../../glossary/index.md#server-component) and pass the unresolved promise as a prop to a [Client Component](../../glossary/index.md#client-component). The promise can be passed through as many layers as needed. Only the component that calls React's [`use`](https://react.dev/reference/react/use) API to read the value needs a `<Suspense>` boundary around it:
 
 app/dashboard/page.tsx
 
@@ -349,11 +349,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 }
 ```
 
-See [Sharing data with context and React.cache](/docs/app/getting-started/fetching-data#sharing-data-with-context-and-reactcache) for the full pattern including the provider and consumer components.
+See [Sharing data with context and React.cache](../../getting-started/fetching-data/index.md#sharing-data-with-context-and-reactcache) for the full pattern including the provider and consumer components.
 
 ## Streaming in Route Handlers[](#streaming-in-route-handlers)
 
-The patterns above rely on React and Suspense to stream UI. Outside of React rendering, [Route Handlers](/docs/app/api-reference/file-conventions/route) can stream raw responses using the Web Streams API. This is useful for Server-Sent Events, large file generation, or any response where you want data to arrive progressively:
+The patterns above rely on React and Suspense to stream UI. Outside of React rendering, [Route Handlers](../../api-reference/file-conventions/route/index.md) can stream raw responses using the Web Streams API. This is useful for Server-Sent Events, large file generation, or any response where you want data to arrive progressively:
 
 app/api/stream/route.ts
 
@@ -409,7 +409,7 @@ export async function GET() {
 }
 ```
 
-See the [Route Handler API reference](/docs/app/api-reference/file-conventions/route) for more details on building streaming endpoints.
+See the [Route Handler API reference](../../api-reference/file-conventions/route/index.md) for more details on building streaming endpoints.
 
 ## Streaming and Web Vitals[](#streaming-and-web-vitals)
 
@@ -424,7 +424,7 @@ Without streaming, the server waits for all data before sending any HTML, so TTF
 If your LCP element (a hero image, a main heading, a product photo) is inside a Suspense boundary, it can't paint until that boundary resolves. To keep LCP fast:
 
 -   Keep LCP elements **outside** or **above** Suspense boundaries so they render as part of the static shell.
--   Use the [`preload`](/docs/app/api-reference/components/image#preload) prop on `next/image` for LCP images. This injects a `<link rel="preload">` into the `<head>`, so the browser starts fetching the image from the very first chunk, before the `<img>` tag even appears in the HTML.
+-   Use the [`preload`](../../api-reference/components/image/index.md#preload) prop on `next/image` for LCP images. This injects a `<link rel="preload">` into the `<head>`, so the browser starts fetching the image from the very first chunk, before the `<img>` tag even appears in the HTML.
 -   For non-image LCP elements (text, headings), make sure they are not wrapped in a Suspense boundary that depends on slow data.
 
 ### CLS (Cumulative Layout Shift)[](#cls-cumulative-layout-shift)
@@ -450,7 +450,7 @@ Once streaming begins, the HTTP response headers (including the status code) hav
 
 ### Status codes[](#status-codes)
 
-When a `<Suspense>` fallback renders or a component suspends, the server must commit to `200 OK` in order to start sending the HTML stream. If a [`notFound()`](/docs/app/api-reference/functions/not-found) fires mid-stream, Next.js cannot go back and change the status to 404. Instead, it injects `<meta name="robots" content="noindex">` into the streamed HTML so that search engines don't index the page. Similarly, a [`redirect()`](/docs/app/api-reference/functions/redirect) mid-stream becomes a client-side redirect rather than an HTTP redirect header.
+When a `<Suspense>` fallback renders or a component suspends, the server must commit to `200 OK` in order to start sending the HTML stream. If a [`notFound()`](../../api-reference/functions/not-found/index.md) fires mid-stream, Next.js cannot go back and change the status to 404. Instead, it injects `<meta name="robots" content="noindex">` into the streamed HTML so that search engines don't index the page. Similarly, a [`redirect()`](../../api-reference/functions/redirect/index.md) mid-stream becomes a client-side redirect rather than an HTTP redirect header.
 
 ### When does streaming start?[](#when-does-streaming-start)
 
@@ -487,15 +487,15 @@ export default async function PostPage({
 }
 ```
 
-> **Good to know:** You can also reject requests early using [`proxy`](/docs/app/api-reference/file-conventions/proxy) (for redirects, rewrites, or returning a response) or [`next.config.js` redirects](/docs/app/api-reference/config/next-config-js/redirects). Both run before the page renders, so HTTP status codes are still available.
+> **Good to know:** You can also reject requests early using [`proxy`](../../api-reference/file-conventions/proxy/index.md) (for redirects, rewrites, or returning a response) or [`next.config.js` redirects](../../api-reference/config/next-config-js/redirects/index.md). Both run before the page renders, so HTTP status codes are still available.
 
 ### Metadata and bots[](#metadata-and-bots)
 
-[`generateMetadata`](/docs/app/api-reference/functions/generate-metadata) resolves before streaming begins for bots that only scrape static HTML (such as Twitterbot or Slackbot). For full browsers and capable crawlers, metadata can [stream](/docs/app/api-reference/functions/generate-metadata#streaming-metadata) alongside the page content.
+[`generateMetadata`](../../api-reference/functions/generate-metadata/index.md) resolves before streaming begins for bots that only scrape static HTML (such as Twitterbot or Slackbot). For full browsers and capable crawlers, metadata can [stream](../../api-reference/functions/generate-metadata/index.md#streaming-metadata) alongside the page content.
 
-Next.js automatically detects user agents to choose the right behavior. You can customize which bots receive blocking metadata with the [`htmlLimitedBots`](/docs/app/api-reference/config/next-config-js/htmlLimitedBots) configuration option.
+Next.js automatically detects user agents to choose the right behavior. You can customize which bots receive blocking metadata with the [`htmlLimitedBots`](../../api-reference/config/next-config-js/htmlLimitedBots/index.md) configuration option.
 
-See the [`loading.js` SEO section](/docs/app/api-reference/file-conventions/loading#seo) for more details.
+See the [`loading.js` SEO section](../../api-reference/file-conventions/loading/index.md#seo) for more details.
 
 ## What can affect streaming[](#what-can-affect-streaming)
 
@@ -545,7 +545,7 @@ Command-line tools like `curl` also buffer by default. The `-N` flag disables ou
 
 ### Verifying that streaming works[](#verifying-that-streaming-works)
 
-This section is about confirming the HTTP response is actually arriving in chunks through your infrastructure. For guidance on designing meaningful loading states and placing Suspense boundaries effectively, see [Granular streaming with `<Suspense>`](#granular-streaming-with-suspense) and the [Cache Components](/docs/app/getting-started/caching) guide.
+This section is about confirming the HTTP response is actually arriving in chunks through your infrastructure. For guidance on designing meaningful loading states and placing Suspense boundaries effectively, see [Granular streaming with `<Suspense>`](#granular-streaming-with-suspense) and the [Cache Components](../../getting-started/caching/index.md) guide.
 
 **Check the Network tab.** In Chrome DevTools, select the document request and look at the "Timing" breakdown. A long "Content Download" phase with an early "Time to First Byte" confirms the response is streaming rather than arriving all at once.
 
@@ -595,18 +595,18 @@ The `<template id="B:0">` markers are the Suspense fallback placeholders. When a
 
 | Deployment Option | Supported |
 | --- | --- |
-| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
-| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
-| [Static export](/docs/app/getting-started/deploying#static-export) | No |
-| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
+| [Node.js server](../../getting-started/deploying/index.md#nodejs-server) | Yes |
+| [Docker container](../../getting-started/deploying/index.md#docker) | Yes |
+| [Static export](../../getting-started/deploying/index.md#static-export) | No |
+| [Adapters](../../getting-started/deploying/index.md#adapters) | Platform-specific |
 
-See the [Self-Hosting guide](/docs/app/guides/self-hosting#streaming-and-suspense) for detailed configuration instructions.
+See the [Self-Hosting guide](../self-hosting/index.md#streaming-and-suspense) for detailed configuration instructions.
 
 ## Summary[](#summary)
 
 The trigger is **your code**: async work, non-deterministic output, or runtime data. When the framework encounters these, it walks up the tree looking for a `<Suspense>` boundary to use as a fallback. Everything above those boundaries forms the [static shell](#the-static-shell), which is sent immediately. As each boundary resolves, React streams the result into the page.
 
-The key decisions are **what to cache** and **where to place Suspense boundaries**. Cache what you can with [`"use cache"`](/docs/app/api-reference/directives/use-cache) to grow the static shell. Push dynamic access down to the components that need it, and wrap those in `<Suspense>`. Everything else becomes part of the shell.
+The key decisions are **what to cache** and **where to place Suspense boundaries**. Cache what you can with [`"use cache"`](../../api-reference/directives/use-cache/index.md) to grow the static shell. Push dynamic access down to the components that need it, and wrap those in `<Suspense>`. Everything else becomes part of the shell.
 
 ## Further reading[](#further-reading)
 
@@ -623,30 +623,30 @@ Related API references and guides.
 
 API reference for the loading.js file.
 
-](/docs/app/api-reference/file-conventions/loading)[
+](../../api-reference/file-conventions/loading/index.md)[
 
 ### Fetching Data
 
 Learn how to fetch data and stream content that depends on data.
 
-](/docs/app/getting-started/fetching-data)[
+](../../getting-started/fetching-data/index.md)[
 
 ### Linking and Navigating
 
 Learn how the built-in navigation optimizations work, including prefetching, prerendering, and client-side navigation, and how to optimize navigation for dynamic routes and slow networks.
 
-](/docs/app/getting-started/linking-and-navigating)[
+](../../getting-started/linking-and-navigating/index.md)[
 
 ### Self-Hosting
 
 Learn how to self-host your Next.js application on a Node.js server, Docker image, or static HTML files (static exports).
 
-](/docs/app/guides/self-hosting)[
+](../self-hosting/index.md)[
 
 ### Rendering Philosophy
 
 Learn how Next.js treats static and dynamic rendering as a spectrum at the component level, and what this means for deployment.
 
-](/docs/app/guides/rendering-philosophy)
+](../rendering-philosophy/index.md)
 
 Was this helpful?

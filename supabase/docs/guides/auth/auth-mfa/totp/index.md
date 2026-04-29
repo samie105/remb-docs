@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:08.837Z"
 content_hash: "dad84da1a37d1ae64e647f79cc85091a5063adabc51487a6f06f649d141f91ac"
 menu_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","App Authenticator (TOTP)","App Authenticator (TOTP)"]
 section_path: ["Auth","Auth","More","More","More","Multi-Factor Authentication","Multi-Factor Authentication","App Authenticator (TOTP)","App Authenticator (TOTP)"]
-nav_prev: {"path": "../phone/index.md", "title": "Multi-Factor Authentication (Phone)"}
-nav_next: {"path": "../../auth-smtp/index.md", "title": "Send emails with custom SMTP"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-mfa/phone/index.md", "title": "Multi-Factor Authentication (Phone)"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-smtp/index.md", "title": "Send emails with custom SMTP"}
 ---
 
 # 

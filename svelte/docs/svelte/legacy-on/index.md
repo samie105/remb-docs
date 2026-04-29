@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:44.225Z"
 content_hash: "a418a30016a84f8a11c770847d9b6bdc3f151bb83344c8f7d33946e8bc055a02"
 menu_path: ["on:"]
 section_path: []
-nav_prev: {"path": "../legacy-$$props-and-$$restProps/index.md", "title": "$$props and $$restProps"}
-nav_next: {"path": "../legacy-slots/index.md", "title": "<slot>"}
+nav_prev: {"path": "svelte/docs/svelte/legacy-$$props-and-$$restProps/index.md", "title": "$$props and $$restProps"}
+nav_next: {"path": "svelte/docs/svelte/legacy-slots/index.md", "title": "<slot>"}
 ---
 
 In runes mode, event handlers are just like any other attribute or prop.
@@ -205,4 +205,4 @@ Other than `once`, modifiers are not valid on component event handlers.
 
 previous next
 
-[$$props and $$restProps](/docs/svelte/legacy-$$props-and-$$restProps) [<slot>](/docs/svelte/legacy-slots)
+[$$props and $$restProps](/docs/svelte/legacy-$$props-and-$$restProps) [<slot>](../legacy-slots/index.md)

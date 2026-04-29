@@ -10,8 +10,8 @@ content_hash: "2fd740e0c27769257f0d75162ffef1f11978fd40eae3f77d3c2e63390a49c379"
 menu_path: ["path - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../os/index.md", "title": "os - Node documentation"}
-nav_next: {"path": "../perf_hooks/index.md", "title": "perf_hooks - Node documentation"}
+nav_prev: {"path": "deno/api/node/os/index.md", "title": "os - Node documentation"}
+nav_next: {"path": "deno/api/node/perf_hooks/index.md", "title": "perf_hooks - Node documentation"}
 ---
 
 ### Usage in Deno

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:10.872Z"
 content_hash: "24909992fec67657ae4338977ca457640819f87074dd73f42ed266cf7ccbb3c4"
 menu_path: ["PostgreSQL: Documentation: 18: pg_dumpall"]
 section_path: []
-nav_prev: {"path": "../app-pg-ctl.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_ctl"}
-nav_next: {"path": "../app-pgbasebackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_basebackup"}
+nav_prev: {"path": "postgres/docs/current/app-pg-ctl.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_ctl"}
+nav_next: {"path": "postgres/docs/current/app-pgbasebackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_basebackup"}
 ---
 
 pg\_dumpall — extract a PostgreSQL database cluster into a script file

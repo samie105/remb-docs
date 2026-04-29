@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:53.182Z"
 content_hash: "6917b63516fcbba17d3251da781741b8a8eff9689666f8a172d5a78539f64faf"
 menu_path: ["Describing the UI"]
 section_path: []
-nav_prev: {"path": "../react-compiler/debugging/index.md", "title": "Debugging and Troubleshooting"}
-nav_next: {"path": "../your-first-component/index.md", "title": "Your First Component"}
+nav_prev: {"path": "react/learn/react-compiler/debugging/index.md", "title": "Debugging and Troubleshooting"}
+nav_next: {"path": "react/learn/your-first-component/index.md", "title": "Your First Component"}
 ---
 
 React is a JavaScript library for rendering user interfaces (UI). UI is built from small units like buttons, text, and images. React lets you combine them into reusable, nestable _components._ From web sites to phone apps, everything on the screen can be broken down into components. In this chapter, you’ll learn to create, customize, and conditionally display React components.

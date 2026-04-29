@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:42:00.465Z"
 content_hash: "a1e4e6b77b9668d735c9d5e3000396724b2ef94fa1d06d11ae0bde62cb5bea94"
 menu_path: ["Upgrade to Astro v3"]
 section_path: []
-nav_prev: {"path": "../v4/index.md", "title": "Upgrade to Astro v4"}
-nav_next: {"path": "../v2/index.md", "title": "Upgrade to Astro v2"}
+nav_prev: {"path": "astro/en/guides/upgrade-to/v4/index.md", "title": "Upgrade to Astro v4"}
+nav_next: {"path": "astro/en/guides/upgrade-to/v2/index.md", "title": "Upgrade to Astro v2"}
 ---
 
 # Upgrade to Astro v3
 
 This guide will help you migrate from Astro v2 to Astro v3.
 
-Need to upgrade an older project to v2? See our [older migration guide](/en/guides/upgrade-to/v2/).
+Need to upgrade an older project to v2? See our [older migration guide](../v2/index.md).
 
 ## Upgrade Astro
 
@@ -80,7 +80,7 @@ Check that both your development environment and your deployment environment are
     node -v
     ```
     
-2.  Check your [deployment environment’s](/en/guides/deploy/) own documentation to verify that they support Node 18.
+2.  Check your [deployment environment’s](../../deploy/index.md) own documentation to verify that they support Node 18.
     
     You can specify Node `18.14.1` for your Astro project either in a dashboard configuration setting or a `.nvmrc` file.
     
@@ -150,7 +150,7 @@ Remove all instances of the `@astrojs/markdown-component`.
 
 To continue using a similar `<Markdown />` component in your code, consider using [community integrations](https://astro.build/integrations/) such as [`astro-remote`](https://github.com/natemoo-re/astro-remote). Be sure to update your `<Markdown />` component imports and attributes as necessary, according to the integration’s own documentation.
 
-Otherwise, delete all references to importing Astro’s `<Markdown />` component and the component itself in your `.astro` files. You will need to rewrite your content as HTML directly or [import Markdown](/en/guides/markdown-content/#importing-markdown) from a `.md` file.
+Otherwise, delete all references to importing Astro’s `<Markdown />` component and the component itself in your `.astro` files. You will need to rewrite your content as HTML directly or [import Markdown](../../markdown-content/index.md#importing-markdown) from a `.md` file.
 
 ### Removed: deprecated 1.x APIs
 
@@ -158,7 +158,7 @@ Otherwise, delete all references to importing Astro’s `<Markdown />` component
 
 In Astro v1.x, Astro deprecated our original configuration settings as well as `<style global>` and `<script hoist>` support. However, these were still supported for backwards compatibility.
 
-Astro v3.0 removes these deprecated APIs entirely. The officially supported [configuration settings](/en/reference/configuration-reference/) and modern `<style is:global>` and `<script>` syntax should be used instead.
+Astro v3.0 removes these deprecated APIs entirely. The officially supported [configuration settings](../../../reference/configuration-reference/index.md) and modern `<style is:global>` and `<script>` syntax should be used instead.
 
 #### What should I do?
 
@@ -166,8 +166,8 @@ Astro v3.0 removes these deprecated APIs entirely. The officially supported [con
 
 If you are continuing to use v1.x APIs, use the new APIs for each feature instead:
 
-*   Deprecated config options: See [the 0.26 migration guide](/en/guides/upgrade-to/v1/#new-configuration-api)
-*   Deprecated script/style attribute types: See [the 0.26 migration guide](/en/guides/upgrade-to/v1/#new-default-script-behavior)
+*   Deprecated config options: See [the 0.26 migration guide](../v1/index.md#new-configuration-api)
+*   Deprecated script/style attribute types: See [the 0.26 migration guide](../v1/index.md#new-default-script-behavior)
 
 ### Removed: Partial shims for Web APIs in server code
 
@@ -181,7 +181,7 @@ Astro v3.0 removes these partial shims entirely. Web APIs are no longer availabl
 
 [Section titled “What should I do?”](#what-should-i-do-5)
 
-If you are using Web APIs in server-rendered components, you will need to either make the usage of those APIs conditional or use [the `client:only` client directive](/en/reference/directives-reference/#clientonly).
+If you are using Web APIs in server-rendered components, you will need to either make the usage of those APIs conditional or use [the `client:only` client directive](../../../reference/directives-reference/index.md#clientonly).
 
 ### Removed: `image` from `astro:content` in content collections schema
 
@@ -226,7 +226,7 @@ If your project uses any of the themes below, rename them to their updated name:
 
 [Section titled “Removed: class:list features”](#removed-classlist-features)
 
-In Astro v2.x, the [`class:list` directive](/en/reference/directives-reference/#classlist) used a custom implementation inspired by [`clsx`](https://github.com/lukeed/clsx) with a few extra features like deduplication and `Set` support.
+In Astro v2.x, the [`class:list` directive](../../../reference/directives-reference/index.md#classlist) used a custom implementation inspired by [`clsx`](https://github.com/lukeed/clsx) with a few extra features like deduplication and `Set` support.
 
 Astro v3.0 now uses `clsx` directly for `class:list`, which does not support deduplication or `Set` values.
 
@@ -244,7 +244,7 @@ Replace any `Set` elements passed to the `class:list` directive with a plain `Ar
 
 [Section titled “Removed: passing class:list as a prop”](#removed-passing-classlist-as-a-prop)
 
-In Astro v2.x, [`class:list` values](/en/reference/directives-reference/#classlist) were sent to components via [`Astro.props['class:list']`](/en/reference/api-reference/#props).
+In Astro v2.x, [`class:list` values](../../../reference/directives-reference/index.md#classlist) were sent to components via [`Astro.props['class:list']`](/en/reference/api-reference/#props).
 
 Astro v3.0 normalizes `class:list` values into a string before being sent to components via `Astro.props['class']`
 
@@ -262,7 +262,7 @@ Remove any code that expects to receive the `class:list` prop.
 
 [Section titled “Removed: kebab-case transform for camelCase CSS variables”](#removed-kebab-case-transform-for-camelcase-css-variables)
 
-In Astro v2.x, camelCase [CSS variables](/en/guides/styling/#css-variables) passed to the `style` attribute were rendered as both camelCase (as written) and kebab-case (kept for backwards compatibility).
+In Astro v2.x, camelCase [CSS variables](../../styling/index.md#css-variables) passed to the `style` attribute were rendered as both camelCase (as written) and kebab-case (kept for backwards compatibility).
 
 Astro v3.0 removes the kebab-case transform for these camelCase CSS variable names, and only the original camelCase CSS variable is rendered.
 
@@ -285,7 +285,7 @@ If you were relying on Astro to transform kebab-case in your styles, update your
 
 [Section titled “Removed: automatic flattening of getStaticPaths()’s return value”](#removed-automatic-flattening-of-getstaticpathss-return-value)
 
-In Astro v2.x, the return value of [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths) was automatically flattened to allow you to return an array of arrays without errors.
+In Astro v2.x, the return value of [`getStaticPaths()`](../../../reference/routing-reference/index.md#getstaticpaths) was automatically flattened to allow you to return an array of arrays without errors.
 
 Astro v3.0 removes automatic flattening of `getStaticPaths()`’s result.
 
@@ -295,13 +295,13 @@ Astro v3.0 removes automatic flattening of `getStaticPaths()`’s result.
 
 If you’re returning an array of arrays instead of an array of _objects_ (as is expected), `.flatMap` and `.flat` should now be used to ensure that you are returning a flat array.
 
-An [error message indicating that `getStaticPath()`’s return value must be an array of objects](/en/reference/errors/invalid-get-static-paths-entry/#what-went-wrong) will be provided if you need to update your code.
+An [error message indicating that `getStaticPath()`’s return value must be an array of objects](../../../reference/errors/invalid-get-static-paths-entry/index.md#what-went-wrong) will be provided if you need to update your code.
 
 ### Moved: `astro check` now requires an external package
 
 [Section titled “Moved: astro check now requires an external package”](#moved-astro-check-now-requires-an-external-package)
 
-In Astro v2.x, [`astro check`](/en/reference/cli-reference/#astro-check) was included in Astro by default, and its dependencies were bundled in Astro. This meant a larger package whether or not you ever used `astro check`. This also prevented you from having control over the version of TypeScript and the Astro Language Server to use.
+In Astro v2.x, [`astro check`](../../../reference/cli-reference/index.md#astro-check) was included in Astro by default, and its dependencies were bundled in Astro. This meant a larger package whether or not you ever used `astro check`. This also prevented you from having control over the version of TypeScript and the Astro Language Server to use.
 
 Astro v3.0 moves the `astro check` command out of Astro core and now requires an external package `@astrojs/check`. Additionally, you must install `typescript` in your project to use the `astro check` command.
 
@@ -317,7 +317,7 @@ Run the `astro check` command after upgrading to Astro v3.0 and follow the promp
 
 In Astro v2.x, `build.excludeMiddleware` and `build.split` were used to change how specific files were emitted when using an adapter in SSR mode.
 
-Astro v3.0 replaces these build config options with new [SSR adapter configuration options](/en/guides/integrations/#official-integrations) to perform the same tasks: `edgeMiddleware` and `functionPerRoute`.
+Astro v3.0 replaces these build config options with new [SSR adapter configuration options](../../integrations/index.md#official-integrations) to perform the same tasks: `edgeMiddleware` and `functionPerRoute`.
 
 #### What should I do?
 
@@ -347,7 +347,7 @@ Astro v3.0 deprecates this feature in favor of the content collections method of
 
 [Section titled “What should I do?”](#what-should-i-do-14)
 
-To continue to mark some pages in your project as drafts, [migrate to content collections](/en/guides/content-collections/) and manually filter out pages with the `draft: true` frontmatter property instead.
+To continue to mark some pages in your project as drafts, [migrate to content collections](../../content-collections/index.md) and manually filter out pages with the `draft: true` frontmatter property instead.
 
 ### Deprecated: returning simple object in endpoints
 
@@ -403,7 +403,7 @@ While we recommend keeping it on and properly making your type imports with `typ
 
 In Astro v2.x, Astro ran on port `3000` by default.
 
-Astro v3.0 changes the [default port](/en/reference/cli-reference/#--port-number) to `4321`. 🚀
+Astro v3.0 changes the [default port](../../../reference/cli-reference/index.md#--port-number) to `4321`. 🚀
 
 #### What should I do?
 
@@ -415,7 +415,7 @@ Update any existing references to `localhost:3000`, for example in tests or in y
 
 [Section titled “Changed default: import.meta.env.BASE\_URL trailingSlash”](#changed-default-importmetaenvbase_url-trailingslash)
 
-In Astro v2.x, `import.meta.env.BASE_URL` appended your [`base`](/en/reference/configuration-reference/#base) setting with a [trailingSlash](/en/reference/configuration-reference/#trailingslash) by default. `trailingSlash: "ignore"` also appended a trailing slash.
+In Astro v2.x, `import.meta.env.BASE_URL` appended your [`base`](../../../reference/configuration-reference/index.md#base) setting with a [trailingSlash](../../../reference/configuration-reference/index.md#trailingslash) by default. `trailingSlash: "ignore"` also appended a trailing slash.
 
 Astro v3.0 no longer appends `import.meta.env.BASE_URL` with a trailing slash by default, nor when `trailingSlash: "ignore"` is set. (The existing behavior of `base` in combination with `trailingSlash: "always"` or `trailingSlash: "never"` is unchanged.)
 
@@ -436,7 +436,7 @@ export default defineConfig({  base: 'my-base',  base: 'my-base/',});
 
 [Section titled “Changed default: compressHTML”](#changed-default-compresshtml)
 
-In Astro v2.x, Astro only compressed your emitted HTML when [`compressHTML`](/en/reference/configuration-reference/#compresshtml) was explicitly set to `true`. The default value was `false`.
+In Astro v2.x, Astro only compressed your emitted HTML when [`compressHTML`](../../../reference/configuration-reference/index.md#compresshtml) was explicitly set to `true`. The default value was `false`.
 
 Astro v3.0 now compresses emitted HTML by default.
 
@@ -457,7 +457,7 @@ You must now set `compressHTML: false` to opt out of HTML compression.
 
 [Section titled “Changed default: scopedStyleStrategy”](#changed-default-scopedstylestrategy)
 
-In Astro v2.x, the default value of [`scopedStyleStrategy`](/en/reference/configuration-reference/#scopedstylestrategy) was `"where"`.
+In Astro v2.x, the default value of [`scopedStyleStrategy`](../../../reference/configuration-reference/index.md#scopedstylestrategy) was `"where"`.
 
 Astro v3.0 introduces a new, default value: `"attribute"`. By default, styles are now applied using `data-*` attributes.
 
@@ -465,7 +465,7 @@ Astro v3.0 introduces a new, default value: `"attribute"`. By default, styles ar
 
 [Section titled “What should I do?”](#what-should-i-do-20)
 
-To retain your project’s current [style scoping](/en/guides/styling/#scoped-styles), update the configuration file to the previous default value:
+To retain your project’s current [style scoping](../../styling/index.md#scoped-styles), update the configuration file to the previous default value:
 
 ```
 import { defineConfig } from "astro/config";
@@ -476,7 +476,7 @@ export default defineConfig({  scopedStyleStrategy: "where"})
 
 [Section titled “Changed default: inlineStyleSheets”](#changed-default-inlinestylesheets)
 
-In Astro v2.x, all project stylesheets were sent as link tags by default. You could opt in to inlining them into `<style>` tags every time with `"always"`, or to inlining only stylesheets below a certain size with `"auto"` by setting the [`build.inlineStylesheets`](/en/reference/configuration-reference/#buildinlinestylesheets) configuration. The default setting was `"never"`.
+In Astro v2.x, all project stylesheets were sent as link tags by default. You could opt in to inlining them into `<style>` tags every time with `"always"`, or to inlining only stylesheets below a certain size with `"auto"` by setting the [`build.inlineStylesheets`](../../../reference/configuration-reference/index.md#buildinlinestylesheets) configuration. The default setting was `"never"`.
 
 Astro v3.0 changes the default value of `inlineStylesheets` to `"auto"`. Stylesheets smaller than `ViteConfig.build.assetsInlineLimit` (default: 4kb) are inlined by default. Otherwise, project styles are sent in external stylesheets.
 
@@ -495,7 +495,7 @@ export default defineConfig({   build: {    inlineStylesheets: "never"  }})
 
 [Section titled “Changed default: image service”](#changed-default-image-service)
 
-In Astro v2.x, Squoosh was the [default image processing service](/en/guides/images/#default-image-service).
+In Astro v2.x, Squoosh was the [default image processing service](../../images/index.md#default-image-service).
 
 Astro v3.0 now includes Sharp as the default image processing service and instead provides a configuration option to use Squoosh.
 
@@ -514,7 +514,7 @@ export default defineConfig({  image: {    service: squooshImageService(),  }})
 
 [Section titled “Changed: HTTP request methods case”](#changed-http-request-methods-case)
 
-In Astro v2.x, [HTTP request methods](/en/guides/endpoints/#http-methods) were written using lowercase function names: `get`, `post`, `put`, `all`, and `del`.
+In Astro v2.x, [HTTP request methods](../../endpoints/index.md#http-methods) were written using lowercase function names: `get`, `post`, `put`, `all`, and `del`.
 
 Astro v3.0 uses uppercase function names, including `DELETE` instead of `del`.
 
@@ -538,7 +538,7 @@ export function get() {export function GET() {    return new Response(JSON.strin
 
 [Section titled “Changed: Multiple JSX framework configuration”](#changed-multiple-jsx-framework-configuration)
 
-In Astro v2.x, you could use [multiple JSX framework integrations](/en/guides/integrations/#official-integrations) (React, Solid, Preact) in the same project without needing to identify which files belonged to which framework.
+In Astro v2.x, you could use [multiple JSX framework integrations](../../integrations/index.md#official-integrations) (React, Solid, Preact) in the same project without needing to identify which files belonged to which framework.
 
 Astro v3.0 now requires you to specify which framework to use for your files with new `include` and `exclude` integration config options when you have multiple JSX framework integrations installed. This allows Astro to better support single-framework usage, as well as advanced features like React Fast Refresh.
 
@@ -588,7 +588,7 @@ Astro v3.0 removes the CLI from the entrypoint, and exports a new set of experim
 
 [Section titled “What should I do?”](#what-should-i-do-26)
 
-To [run the Astro CLI programmatically](/en/reference/programmatic-reference/), use the new experimental JavaScript APIs:
+To [run the Astro CLI programmatically](../../../reference/programmatic-reference/index.md), use the new experimental JavaScript APIs:
 
 ```
 import { dev, build } from "astro";
@@ -663,7 +663,7 @@ If necessary, also update your `src/env.d.ts` file to replace the `astro/client-
 
 [Section titled “Remove the ~/assets import alias”](#remove-the-assets-import-alias)
 
-This import alias is no longer included by default with `astro:assets`. If you were using this alias with experimental assets, you must convert them to relative file paths, or [create your own import aliases](/en/guides/imports/#aliases).
+This import alias is no longer included by default with `astro:assets`. If you were using this alias with experimental assets, you must convert them to relative file paths, or [create your own import aliases](../../imports/index.md#aliases).
 
 ```
 ---import rocket from '~/assets/rocket.png';import rocket from '../../assets/rocket.png';---
@@ -686,7 +686,7 @@ export default defineConfig({  image: {    service: {      entrypoint: 'astro/as
 
 [Section titled “Decide where to store your images”](#decide-where-to-store-your-images)
 
-See the Images guide to help you decide [where to store your images](/en/guides/images/#where-to-store-images). You may wish to take advantage of new options for storing your images with the added flexibility `astro:assets` brings. For example, relative images from your project `src/` can now be referenced in Markdown, MDX, and Markdoc using standard Markdown `![alt](src)` syntax.
+See the Images guide to help you decide [where to store your images](../../images/index.md#where-to-store-images). You may wish to take advantage of new options for storing your images with the added flexibility `astro:assets` brings. For example, relative images from your project `src/` can now be referenced in Markdown, MDX, and Markdoc using standard Markdown `![alt](src)` syntax.
 
 #### Update existing `<img>` tags
 
@@ -698,7 +698,7 @@ Previously, importing an image would return a simple `string` with the path of t
 interface ImageMetadata {  src: string;  width: number;  height: number;  format: string;}
 ```
 
-You must update the `src` attribute of any existing `<img>` tags (including any [images in UI framework components](/en/guides/images/#images-in-ui-framework-components)) and you may also update other attributes that are now available to you from the imported image.
+You must update the `src` attribute of any existing `<img>` tags (including any [images in UI framework components](../../images/index.md#images-in-ui-framework-components)) and you may also update other attributes that are now available to you from the imported image.
 
 ```
 ---import rocket from '../images/rocket.svg';---<img src={rocket} width="250" height="250" alt="A rocketship in space." />
@@ -719,7 +719,7 @@ This allows you to move your images from the `public/` directory to your project
 <!-- Keep your images next to your content! -->![A starry night sky.](./stars.png)
 ```
 
-If you require more control over your image attributes, we recommend using the `.mdx` file format, which allows you to include Astro’s `<Image />` component or a JSX `<img />` tag in addition to the Markdown syntax. Use the [MDX integration](/en/guides/integrations-guide/mdx/) to add support for MDX to Astro.
+If you require more control over your image attributes, we recommend using the `.mdx` file format, which allows you to include Astro’s `<Image />` component or a JSX `<img />` tag in addition to the Markdown syntax. Use the [MDX integration](../../integrations-guide/mdx/index.md) to add support for MDX to Astro.
 
 #### Remove `@astrojs/image`
 
@@ -729,7 +729,7 @@ If you were using the image integration in Astro v2.x, complete the following st
 
 1.  Remove the `@astrojs/image` integration.
     
-    You must [remove the integration](/en/guides/integrations/#removing-an-integration) by uninstalling and then removing it from your `astro.config.mjs` file.
+    You must [remove the integration](../../integrations/index.md#removing-an-integration) by uninstalling and then removing it from your `astro.config.mjs` file.
     
     ```
     import { defineConfig } from 'astro/config';import image from '@astrojs/image';
@@ -754,7 +754,7 @@ If you were using the image integration in Astro v2.x, complete the following st
     
     Change all `import` statements from `@astrojs/image/components` to `astro:assets` in order to use the new built-in `<Image />` component.
     
-    Remove any component attributes that are not [currently supported image asset properties](/en/reference/modules/astro-assets/#image-).
+    Remove any component attributes that are not [currently supported image asset properties](../../../reference/modules/astro-assets/index.md#image-).
     
     For example, `aspectRatio` is no longer supported, as it is now automatically inferred from the `width` and `height` attributes.
     
@@ -781,7 +781,7 @@ If you were using the image integration in Astro v2.x, complete the following st
 
 You can now declare an associated image for a content collections entry, such as a blog post’s cover image, in your frontmatter using its path relative to the current folder.
 
-The new `image` helper for content collections lets you validate the image metadata using Zod. Learn more about [how to use images in content collections](/en/guides/images/#images-in-content-collections)
+The new `image` helper for content collections lets you validate the image metadata using Zod. Learn more about [how to use images in content collections](../../images/index.md#images-in-content-collections)
 
 #### Navigating Image Imports in Astro v3.0
 
@@ -901,4 +901,4 @@ Know a good resource for Astro v3.0? [Edit this page](https://github.com/withast
 
 There are currently no known issues.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

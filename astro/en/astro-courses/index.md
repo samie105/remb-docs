@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:31:50.098Z"
 content_hash: "63e0b26726d4cd71bf264e72a708013a52d8be36720bd82bc7723d73d33436d2"
 menu_path: ["Astro Courses"]
 section_path: []
-nav_prev: {"path": "../concepts/islands/index.md", "title": "Islands architecture"}
-nav_next: {"path": "../install-and-setup/index.md", "title": "Install Astro"}
+nav_prev: {"path": "astro/en/concepts/islands/index.md", "title": "Islands architecture"}
+nav_next: {"path": "astro/en/install-and-setup/index.md", "title": "Install Astro"}
 ---
 
 # Astro Courses
 
 Want to get started learning Astro with a course or tutorial?
 
-You can learn the basics of Astro with our [official docs Build a Blog tutorial](/en/tutorial/0-introduction/), or explore our collection of recommended Astro educational content.
+You can learn the basics of Astro with our [official docs Build a Blog tutorial](../tutorial/0-introduction/index.md), or explore our collection of recommended Astro educational content.
 
 ## Education Partners
 
@@ -39,4 +39,4 @@ Learn from your fellow astronauts with curated collections of guides, articles, 
 
 [Astro Support Squid](https://supportsquid.ink/) An open, public Astro support forum and knowledge base outside of the Astro Discord.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

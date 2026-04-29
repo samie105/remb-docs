@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:29.656Z"
 content_hash: "ea49a9ad8ae0c584338214608a96dbca50b581907e74b2127aff5cb8cd7748fc"
 menu_path: ["HTTP Link"]
 section_path: []
-nav_prev: {"path": "../httpBatchStreamLink/index.md", "title": "HTTP Batch Stream Link"}
-nav_next: {"path": "../loggerLink/index.md", "title": "Logger Link"}
+nav_prev: {"path": "trpc/docs/v10/client/links/httpBatchStreamLink/index.md", "title": "HTTP Batch Stream Link"}
+nav_next: {"path": "trpc/docs/v10/client/links/loggerLink/index.md", "title": "Logger Link"}
 ---
 
 Version: 10.x

@@ -11,8 +11,8 @@ menu_path: ["Working with Json fields"]
 section_path: []
 tab_variants: ["PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","PostgreSQL","MySQL","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
-nav_next: {"path": "../working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
 ---
 
 Use the [`Json`](../../../reference/prisma-schema-reference/index.md#json) Prisma ORM field type to read, write, and perform basic filtering on JSON types in the underlying database. In the following example, the `User` model has an optional `Json` field named `extendedPetsData`:

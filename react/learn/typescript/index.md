@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:51.432Z"
 content_hash: "147ef28c96b9a0a8b92da0c1ecb9d03b9c8e86f83c5a7c0cb3f79dabdcdef5df"
 menu_path: ["Using TypeScript"]
 section_path: []
-nav_prev: {"path": "../editor-setup/index.md", "title": "Editor Setup"}
-nav_next: {"path": "../react-developer-tools/index.md", "title": "React Developer Tools"}
+nav_prev: {"path": "react/learn/editor-setup/index.md", "title": "Editor Setup"}
+nav_next: {"path": "react/learn/react-developer-tools/index.md", "title": "React Developer Tools"}
 ---
 
 TypeScript is a popular way to add type definitions to JavaScript codebases. Out of the box, TypeScript [supports JSX](../writing-markup-with-jsx/index.md) and you can get full React Web support by adding [`@types/react`](https://www.npmjs.com/package/@types/react) and [`@types/react-dom`](https://www.npmjs.com/package/@types/react-dom) to your project.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:38.407Z"
 content_hash: "2397b99e3f4d0379ac944dfcd314562bdf19bceac3a8917f598ff3611e6a4a28"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        PHP client for Redis","→","PHP client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        PHP client for Redis","→","PHP client for Redis"]
-nav_prev: {"path": "../nredisstack/index.md", "title": "C#/.NET client for Redis"}
-nav_next: {"path": "../prometheus-with-redis-cloud/index.md", "title": "Prometheus and Grafana with Redis Cloud"}
+nav_prev: {"path": "redis/docs/latest/integrate/nredisstack/index.md", "title": "C#/.NET client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/prometheus-with-redis-cloud/index.md", "title": "Prometheus and Grafana with Redis Cloud"}
 ---
 
 # PHP client for Redis
@@ -35,6 +35,6 @@ Predis is a flexible and feature-complete Redis client for PHP that supports Red
 
 ## Getting Started
 
-Refer to the complete [Predis guide](/docs/latest/develop/clients/php/) to install, connect, and use PHP Redis clients with detailed examples and framework integration guides.
+Refer to the complete [Predis guide](../../develop/clients/php/index.md) to install, connect, and use PHP Redis clients with detailed examples and framework integration guides.
 
 ## On this page

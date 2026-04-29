@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:59.201Z"
 content_hash: "320556ef65810d04102c53fc4aaa305e1e175ba0c6ceefb14785159f500c36a5"
 menu_path: ["Auth","Auth","Overview","Overview"]
 section_path: ["Auth","Auth","Overview","Overview"]
-nav_prev: {"path": "../api/using-custom-schemas/index.md", "title": "Using Custom Schemas"}
-nav_next: {"path": "architecture/index.md", "title": "Auth architecture"}
+nav_prev: {"path": "supabase/docs/guides/api/using-custom-schemas/index.md", "title": "Using Custom Schemas"}
+nav_next: {"path": "supabase/docs/guides/auth/architecture/index.md", "title": "Auth architecture"}
 ---
 
 # 
@@ -34,7 +34,7 @@ Authentication and authorization are the core responsibilities of any Auth syste
 *   **Authentication** means checking that a user is who they say they are.
 *   **Authorization** means checking what resources a user is allowed to access.
 
-Supabase Auth uses [JSON Web Tokens (JWTs)](/docs/guides/auth/jwts) for authentication. For a complete reference of all JWT fields, see the [JWT Fields Reference](/docs/guides/auth/jwt-fields). Auth integrates with Supabase's database features, making it easy to use [Row Level Security (RLS)](/docs/guides/database/postgres/row-level-security) for authorization.
+Supabase Auth uses [JSON Web Tokens (JWTs)](jwts/index.md) for authentication. For a complete reference of all JWT fields, see the [JWT Fields Reference](jwt-fields/index.md). Auth integrates with Supabase's database features, making it easy to use [Row Level Security (RLS)](../database/postgres/row-level-security/index.md) for authorization.
 
 ## The Supabase ecosystem[#](#the-supabase-ecosystem)
 
@@ -42,7 +42,7 @@ You can use Supabase Auth as a standalone product, but it's also built to integr
 
 Auth uses your project's Postgres database under the hood, storing user data and other Auth information in a special schema. You can connect this data to your own tables using triggers and foreign key references.
 
-Auth also enables access control to your database's automatically generated [REST API](/docs/guides/api). When using Supabase SDKs, your data requests are automatically sent with the user's Auth Token. The Auth Token scopes database access on a row-by-row level when used along with [RLS policies](/docs/guides/database/postgres/row-level-security).
+Auth also enables access control to your database's automatically generated [REST API](../api/index.md). When using Supabase SDKs, your data requests are automatically sent with the user's Auth Token. The Auth Token scopes database access on a row-by-row level when used along with [RLS policies](../database/postgres/row-level-security/index.md).
 
 ## Providers[#](#providers)
 
@@ -166,7 +166,7 @@ Supabase Auth works with many popular Auth methods, including Social and Phone A
 
 ](/docs/guides/auth/social-login/auth-zoom)
 
-You can also add any OAuth2 or OIDC-compatible identity provider using [Custom OAuth/OIDC Providers](/docs/guides/auth/custom-oauth-providers).
+You can also add any OAuth2 or OIDC-compatible identity provider using [Custom OAuth/OIDC Providers](custom-oauth-providers/index.md).
 
 ### Phone Auth[#](#phone-auth)
 
@@ -194,7 +194,7 @@ You can also add any OAuth2 or OIDC-compatible identity provider using [Custom O
 
 Charges apply to Monthly Active Users (MAU), Monthly Active Third-Party Users (Third-Party MAU), and Monthly Active SSO Users (SSO MAU) and Advanced MFA Add-ons. For a detailed breakdown of how these charges are calculated, refer to the following pages:
 
-*   [Pricing MAU](/docs/guides/platform/manage-your-usage/monthly-active-users)
+*   [Pricing MAU](../platform/manage-your-usage/monthly-active-users/index.md)
 *   [Pricing Third-Party MAU](/docs/guides/platform/manage-your-usage/monthly-active-users-third-party)
-*   [Pricing SSO MAU](/docs/guides/platform/manage-your-usage/monthly-active-users-sso)
-*   [Advanced MFA - Phone](/docs/guides/platform/manage-your-usage/advanced-mfa-phone)
+*   [Pricing SSO MAU](../platform/manage-your-usage/monthly-active-users-sso/index.md)
+*   [Advanced MFA - Phone](../platform/manage-your-usage/advanced-mfa-phone/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:51.004Z"
 content_hash: "4a62f77cc169a8f8a3b4cf5e61581ce2da4ef401f4f954e564b4f67ba08d650c"
 menu_path: ["PostgreSQL: Documentation: 18: COMMENT"]
 section_path: []
-nav_prev: {"path": "../sql-cluster.html/index.md", "title": "PostgreSQL: Documentation: 18: CLUSTER"}
-nav_next: {"path": "../sql-commit-prepared.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT PREPARED"}
+nav_prev: {"path": "postgres/docs/current/sql-cluster.html/index.md", "title": "PostgreSQL: Documentation: 18: CLUSTER"}
+nav_next: {"path": "postgres/docs/current/sql-commit-prepared.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT PREPARED"}
 ---
 
 COMMENT — define or change the comment of an object

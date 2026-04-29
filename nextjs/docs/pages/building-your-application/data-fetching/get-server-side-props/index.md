@@ -11,8 +11,8 @@ menu_path: ["getServerSideProps"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../get-static-paths/index.md", "title": "getStaticPaths"}
-nav_next: {"path": "../client-side/index.md", "title": "Client-side Fetching"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/data-fetching/get-static-paths/index.md", "title": "getStaticPaths"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/data-fetching/client-side/index.md", "title": "Client-side Fetching"}
 ---
 
 # getServerSideProps
@@ -60,7 +60,7 @@ export default function Page({
 
 You should use `getServerSideProps` if you need to render a page that relies on personalized user data, or information that can only be known at request time. For example, `authorization` headers or a geolocation.
 
-If you do not need to fetch the data at request time, or would prefer to cache the data and prerendered HTML, we recommend using [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props).
+If you do not need to fetch the data at request time, or would prefer to cache the data and prerendered HTML, we recommend using [`getStaticProps`](../get-static-props/index.md).
 
 ## Behavior[](#behavior)
 
@@ -69,17 +69,17 @@ If you do not need to fetch the data at request time, or would prefer to cache t
 -   `getServerSideProps` returns JSON.
 -   When a user visits a page, `getServerSideProps` will be used to fetch data at request time, and the data is used to render the initial HTML of the page.
 -   `props` passed to the page component can be viewed on the client as part of the initial HTML. This is to allow the page to be [hydrated](https://react.dev/reference/react-dom/hydrate) correctly. Make sure that you don't pass any sensitive information that shouldn't be available on the client in `props`.
--   When a user visits the page through [`next/link`](/docs/pages/api-reference/components/link) or [`next/router`](/docs/pages/api-reference/functions/use-router), Next.js sends an API request to the server, which runs `getServerSideProps`.
--   You do not have to call a Next.js [API Route](/docs/pages/building-your-application/routing/api-routes) to fetch data when using `getServerSideProps` since the function runs on the server. Instead, you can call a CMS, database, or other third-party APIs directly from inside `getServerSideProps`.
+-   When a user visits the page through [`next/link`](../../../api-reference/components/link/index.md) or [`next/router`](../../../api-reference/functions/use-router/index.md), Next.js sends an API request to the server, which runs `getServerSideProps`.
+-   You do not have to call a Next.js [API Route](../../routing/api-routes/index.md) to fetch data when using `getServerSideProps` since the function runs on the server. Instead, you can call a CMS, database, or other third-party APIs directly from inside `getServerSideProps`.
 
 > **Good to know:**
 > 
-> -   See [`getServerSideProps` API reference](/docs/pages/api-reference/functions/get-server-side-props) for parameters and props that can be used with `getServerSideProps`.
+> -   See [`getServerSideProps` API reference](../../../api-reference/functions/get-server-side-props/index.md) for parameters and props that can be used with `getServerSideProps`.
 > -   You can use the [next-code-elimination tool](https://next-code-elimination.vercel.app/) to verify what Next.js eliminates from the client-side bundle.
 
 ## Error Handling[](#error-handling)
 
-If an error is thrown inside `getServerSideProps`, it will show the `pages/500.js` file. Check out the documentation for [500 page](/docs/pages/building-your-application/routing/custom-error#500-page) to learn more on how to create it. During development, this file will not be used and the development error overlay will be shown instead.
+If an error is thrown inside `getServerSideProps`, it will show the `pages/500.js` file. Check out the documentation for [500 page](../../routing/custom-error/index.md#500-page) to learn more on how to create it. During development, this file will not be used and the development error overlay will be shown instead.
 
 ## Edge Cases[](#edge-cases)
 
@@ -107,6 +107,6 @@ export async function getServerSideProps({ req, res }) {
 }
 ```
 
-However, before reaching for `cache-control`, we recommend seeing if [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) with [ISR](/docs/pages/guides/incremental-static-regeneration) is a better fit for your use case.
+However, before reaching for `cache-control`, we recommend seeing if [`getStaticProps`](../get-static-props/index.md) with [ISR](/docs/pages/guides/incremental-static-regeneration) is a better fit for your use case.
 
 Was this helpful?

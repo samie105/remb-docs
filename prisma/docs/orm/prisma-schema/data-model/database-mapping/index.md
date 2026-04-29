@@ -10,8 +10,8 @@ content_hash: "2f445b7d6001a936686f00a6d78c4976531c92cd67acffe949c8abc097ec341b"
 menu_path: ["Database mapping"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../../prisma-migrate/workflows/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Migrate)"}
-nav_next: {"path": "../externally-managed-tables/index.md", "title": "External tables"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Migrate)"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/externally-managed-tables/index.md", "title": "External tables"}
 ---
 
 The [Prisma schema](../../overview/index.md) includes mechanisms that allow you to define names of certain database objects. You can:

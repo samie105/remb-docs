@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:46.438Z"
 content_hash: "0be749f0024b3a9f0d19e85b9f17a0dc148ee8eb02daafb2065ecb3d2c9d6695"
 menu_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Advanced guide","Advanced guide"]
 section_path: ["Auth","Auth","More","More","More","Server-Side Rendering","Server-Side Rendering","Advanced guide","Advanced guide"]
-nav_prev: {"path": "../index.md", "title": "Server-Side Rendering"}
-nav_next: {"path": "../creating-a-client/index.md", "title": "Creating a Supabase client for SSR"}
+nav_prev: {"path": "supabase/docs/guides/auth/server-side/index.md", "title": "Server-Side Rendering"}
+nav_next: {"path": "supabase/docs/guides/auth/server-side/creating-a-client/index.md", "title": "Creating a Supabase client for SSR"}
 ---
 
 # 
@@ -30,7 +30,7 @@ When a user authenticates with Supabase Auth, two pieces of information are issu
 
 The default behavior if you're not using SSR is to store this information in local storage. Local storage isn't accessible by the server, so for SSR, the tokens instead need to be stored in a secure cookie. The cookie can then be passed back and forth between your app code in the client and your app code in the server.
 
-If you're not using SSR, you might also be using the [implicit flow](/docs/guides/auth/sessions/implicit-flow) to get the access and refresh tokens. The server can't access the tokens in this flow, so for SSR, you should change to the [PKCE flow](/docs/guides/auth/sessions/pkce-flow). You can change the flow type when initiating your Supabase client if your client library provides this option.
+If you're not using SSR, you might also be using the [implicit flow](../../sessions/implicit-flow/index.md) to get the access and refresh tokens. The server can't access the tokens in this flow, so for SSR, you should change to the [PKCE flow](../../sessions/pkce-flow/index.md). You can change the flow type when initiating your Supabase client if your client library provides this option.
 
 In the `@supabase/ssr` package, Supabase clients are initiated to use the PKCE flow by default. They are also automatically configured to handle the saving and retrieval of session information in cookies.
 
@@ -84,7 +84,7 @@ Do not enable ISR on any route where authentication is handled or where a sessio
 
 When `@supabase/ssr` refreshes a session token server-side, it writes the updated JWT to the HTTP response via a `Set-Cookie` header. If your CDN (e.g. Vercel Edge, Cloudflare) caches that response and serves it to a different user, that user's browser will store the cached token and be signed in as the wrong person.
 
-As of `@supabase/ssr` v0.10.0, the library automatically passes the necessary cache headers (`Cache-Control`, `Expires`, `Pragma`) to your `setAll` callback as a second argument whenever a token refresh occurs. If your `setAll` implementation applies those headers to the response (as shown in the examples in [Creating a Supabase client for SSR](/docs/guides/auth/server-side/creating-a-client)), no additional manual configuration is needed for most CDNs.
+As of `@supabase/ssr` v0.10.0, the library automatically passes the necessary cache headers (`Cache-Control`, `Expires`, `Pragma`) to your `setAll` callback as a second argument whenever a token refresh occurs. If your `setAll` implementation applies those headers to the response (as shown in the examples in [Creating a Supabase client for SSR](../creating-a-client/index.md)), no additional manual configuration is needed for most CDNs.
 
 If you are on an older version or need to set headers manually, add `Cache-Control: private, no-store` to responses from any route that handles authentication:
 

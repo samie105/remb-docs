@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:28.543Z"
 content_hash: "023df2f5e1bd5ae6ccda7e9534379f6c2baf7c1e62e90417fc79549c0a63eb7f"
 menu_path: ["Appwrite & Astro"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "Use a backend service with Astro"}
-nav_next: {"path": "../firebase/index.md", "title": "Firebase & Astro"}
+nav_prev: {"path": "astro/en/guides/backend/index.md", "title": "Use a backend service with Astro"}
+nav_next: {"path": "astro/en/guides/backend/firebase/index.md", "title": "Firebase & Astro"}
 ---
 
 # Appwrite & Astro
@@ -27,39 +27,39 @@ nav_next: {"path": "../firebase/index.md", "title": "Firebase & Astro"}
 
 *   ![](/logos/appwriteio.svg)
     
-    ### [Appwrite](/en/guides/backend/appwrite/)
+    ### [Appwrite](index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/backend/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/neon.svg)
     
-    ### [Neon](/en/guides/backend/neon/)
+    ### [Neon](../neon/index.md)
     
 *   ![](/logos/prisma-postgres.svg)
     
-    ### [Prisma Postgres](/en/guides/backend/prisma-postgres/)
+    ### [Prisma Postgres](../prisma-postgres/index.md)
     
 *   ![](/logos/scalekit.svg)
     
-    ### [Scalekit](/en/guides/backend/scalekit/)
+    ### [Scalekit](../scalekit/index.md)
     
 *   ![](/logos/sentry.svg)
     
-    ### [Sentry](/en/guides/backend/sentry/)
+    ### [Sentry](../sentry/index.md)
     
 *   ![](/logos/supabase.svg)
     
-    ### [Supabase](/en/guides/backend/supabase/)
+    ### [Supabase](../supabase/index.md)
     
 *   ![](/logos/turso.svg)
     
-    ### [Turso](/en/guides/backend/turso/)
+    ### [Turso](../turso/index.md)
     
 *   ![](/logos/xata.svg)
     
-    ### [Xata](/en/guides/backend/xata/)
+    ### [Xata](../xata/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -11,8 +11,8 @@ menu_path: ["unauthorized.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../template/index.md", "title": "template.js"}
-nav_next: {"path": "../metadata/index.md", "title": "Metadata Files API Reference"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/template/index.md", "title": "template.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/index.md", "title": "Metadata Files API Reference"}
 ---
 
 # unauthorized.js
@@ -21,7 +21,7 @@ This feature is currently experimental and subject to change, it's not recommend
 
 Last updated April 23, 2026
 
-The **unauthorized** file is used to render UI when the [`unauthorized`](/docs/app/api-reference/functions/unauthorized) function is invoked during authentication. Along with allowing you to customize the UI, Next.js will return a `401` status code.
+The **unauthorized** file is used to render UI when the [`unauthorized`](../../functions/unauthorized/index.md) function is invoked during authentication. Along with allowing you to customize the UI, Next.js will return a `401` status code.
 
 app/unauthorized.tsx
 
@@ -51,7 +51,7 @@ export default function Unauthorized() {
 
 ### Displaying login UI to unauthenticated users[](#displaying-login-ui-to-unauthenticated-users)
 
-You can use [`unauthorized`](/docs/app/api-reference/functions/unauthorized) function to render the `unauthorized.js` file with a login UI.
+You can use [`unauthorized`](../../functions/unauthorized/index.md) function to render the `unauthorized.js` file with a login UI.
 
 app/dashboard/page.tsx
 
@@ -102,6 +102,6 @@ export default function UnauthorizedPage() {
 
 API Reference for the unauthorized function.
 
-](/docs/app/api-reference/functions/unauthorized)
+](../../functions/unauthorized/index.md)
 
 Was this helpful?

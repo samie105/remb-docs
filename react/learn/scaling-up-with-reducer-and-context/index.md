@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:43.678Z"
 content_hash: "f1414b457841a360e90ceafca7b36065928ab2742bb5cb04afa5aaef8b1bb33b"
 menu_path: ["Scaling Up with Reducer and Context"]
 section_path: []
-nav_prev: {"path": "../passing-data-deeply-with-context/index.md", "title": "Passing Data Deeply with Context"}
-nav_next: {"path": "../escape-hatches/index.md", "title": "Escape Hatches"}
+nav_prev: {"path": "react/learn/passing-data-deeply-with-context/index.md", "title": "Passing Data Deeply with Context"}
+nav_next: {"path": "react/learn/escape-hatches/index.md", "title": "Escape Hatches"}
 ---
 
 Reducers let you consolidate a component’s state update logic. Context lets you pass information deep down to other components. You can combine reducers and context together to manage state of a complex screen.

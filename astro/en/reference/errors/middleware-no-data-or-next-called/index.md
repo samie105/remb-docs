@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:45.003Z"
 content_hash: "ef8b024f343f73aa7a59809e18e1e4e860ecf06a6d1141cef67591c353b9479b"
 menu_path: ["The middleware didn't return a Response."]
 section_path: []
-nav_prev: {"path": "../middleware-cant-be-loaded/index.md", "title": "Can't load the middleware."}
-nav_next: {"path": "../middleware-not-aresponse/index.md", "title": "The middleware returned something that is not a Response object."}
+nav_prev: {"path": "astro/en/reference/errors/middleware-cant-be-loaded/index.md", "title": "Can't load the middleware."}
+nav_next: {"path": "astro/en/reference/errors/middleware-not-aresponse/index.md", "title": "The middleware returned something that is not a Response object."}
 ---
 
 # The middleware didn't return a Response.
@@ -29,4 +29,4 @@ For example:
 import {defineMiddleware} from "astro:middleware";export const onRequest = defineMiddleware((context, _) => {  // doesn't return anything or call `next`  context.locals.someData = false;});
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

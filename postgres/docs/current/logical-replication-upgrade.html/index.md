@@ -10,8 +10,8 @@ content_hash: "0a0b3ba7ced2d490694de575db602d4f40ef6dbd62bd5034cad4b901114d30e4"
 menu_path: ["PostgreSQL: Documentation: 18: 29.13. Upgrade"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../logical-replication-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.2.\u00a0Subscription"}
-nav_next: {"path": "../logicaldecoding-catalogs.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.5.\u00a0System Catalogs Related to Logical Decoding"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-subscription.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.2.\u00a0Subscription"}
+nav_next: {"path": "postgres/docs/current/logicaldecoding-catalogs.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.5.\u00a0System Catalogs Related to Logical Decoding"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/logical-replication-upgrade.html "PostgreSQL devel - 29.13. Upgrade")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:22.995Z"
 content_hash: "fd49d04bbf6cfd8fbdbf567530bb74533cbcb14a9772fced23ddcfd91df99a99"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Node.js","→","Token bucket rate limiter with Redis and Node.js"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Node.js","→","Token bucket rate limiter with Redis and Node.js"]
-nav_prev: {"path": "../java-lettuce/index.md", "title": "Token bucket rate limiter with Redis and Java (Lettuce)"}
-nav_next: {"path": "../php/index.md", "title": "Token bucket rate limiter with Redis and PHP"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-lettuce/index.md", "title": "Token bucket rate limiter with Redis and Java (Lettuce)"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/php/index.md", "title": "Token bucket rate limiter with Redis and PHP"}
 ---
 
 # Token bucket rate limiter with Redis and Node.js
@@ -28,7 +28,7 @@ Rate limiting is a critical technique for controlling the rate at which operatio
 *   Ensuring fair resource allocation across multiple clients
 *   Throttling background jobs or batch operations
 
-The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Node.js implementation using the [`node-redis`](/docs/latest/develop/clients/nodejs/) client library.
+The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Node.js implementation using the [`node-redis`](../../../clients/nodejs/index.md) client library.
 
 ## How it works
 
@@ -279,9 +279,9 @@ try {
 
 *   [EVAL command](/docs/latest/commands/eval/) - Execute Lua scripts
 *   [EVALSHA command](/docs/latest/commands/evalsha/) - Execute cached Lua scripts
-*   [Lua scripting](/docs/latest/develop/programmability/eval-intro/) - Introduction to Redis Lua scripting
+*   [Lua scripting](../../../programmability/eval-intro/index.md) - Introduction to Redis Lua scripting
 *   [HMGET command](/docs/latest/commands/hmget/) - Get multiple hash fields
 *   [HMSET command](/docs/latest/commands/hmset/) - Set multiple hash fields
-*   [Node.js client](/docs/latest/develop/clients/nodejs/) - Redis Node.js client documentation
+*   [Node.js client](../../../clients/nodejs/index.md) - Redis Node.js client documentation
 
 ## On this page

@@ -9,17 +9,17 @@ last_crawled_at: "2026-04-18T16:31:49.459Z"
 content_hash: "aba8dd7fbbdf2672e2c68c0205126c7d8176312b201a3191004a9a8273547854"
 menu_path: ["Astro Docs"]
 section_path: []
-nav_prev: {"path": "../guides/testing/index.md", "title": "Testing"}
-nav_next: {"path": "../guides/integrations-guide/deno/index.md", "title": "@deno/astro-adapter"}
+nav_prev: {"path": "astro/en/guides/testing/index.md", "title": "Testing"}
+nav_next: {"path": "astro/en/guides/integrations-guide/deno/index.md", "title": "@deno/astro-adapter"}
 ---
 
 # Astro Docs
 
 Guides, resources, and API references to help you build with Astro.
 
-[Install Astro](/en/install-and-setup/) [Learn about Astro’s features](/en/concepts/why-astro/)
+[Install Astro](../install-and-setup/index.md) [Learn about Astro’s features](../concepts/why-astro/index.md)
 
-Powered by Astro and our open-source contributors. [Join us!](/en/contribute/)
+Powered by Astro and our open-source contributors. [Join us!](../contribute/index.md)
 
 ![](/_astro/36526527_ct6ys.webp) ![](/_astro/28299972_Z1GJM7w.webp) ![](/_astro/25897764_1SSDte.webp)
 
@@ -35,7 +35,7 @@ Powered by Astro and our open-source contributors. [Join us!](/en/contribute/)
 
 ![](/_astro/25839948_1m6mGu.webp) ![](/_astro/19603573_Z1fB9Li.webp) ![](/_astro/10626596_Z1YtAS8.webp) ![](/_astro/188426_Z21yJwG.webp) ![](/_astro/39112954_Z1J5sRf.webp) ![](/_astro/4033662_WtfoT.webp)
 
-Powered by Astro and our open-source contributors. [Join us!](/en/contribute/)
+Powered by Astro and our open-source contributors. [Join us!](../contribute/index.md)
 
 ![](/_astro/46791833_ZQQBv8.webp) ![](/_astro/13069_1ewvl9.webp) ![](/_astro/69170106_Z2qp4h9.webp)
 
@@ -49,7 +49,7 @@ Explore [Astro starter themes](https://astro.build/themes/) for blogs, portfolio
 
 Take a guided tour
 
-Complete our introductory [Build a Blog Tutorial](/en/tutorial/0-introduction/) to learn the basics and create your first Astro site.
+Complete our introductory [Build a Blog Tutorial](../tutorial/0-introduction/index.md) to learn the basics and create your first Astro site.
 
 Start a new project
 
@@ -57,24 +57,24 @@ Start a new project
 # create a new project with npmnpm create astro@latest
 ```
 
-Our [installation guide](/en/install-and-setup/) has step-by-step instructions for installing Astro using our CLI wizard, creating a new project from an existing Astro GitHub repository, and for installing Astro manually.
+Our [installation guide](../install-and-setup/index.md) has step-by-step instructions for installing Astro using our CLI wizard, creating a new project from an existing Astro GitHub repository, and for installing Astro manually.
 
 Learn
 
-*   [Astro’s main features](/en/concepts/why-astro/)
-*   [Islands architecture](/en/concepts/islands/)
-*   [Astro components](/en/basics/astro-components/)
-*   [The Astro template syntax](/en/reference/astro-syntax/)
+*   [Astro’s main features](../concepts/why-astro/index.md)
+*   [Islands architecture](../concepts/islands/index.md)
+*   [Astro components](../basics/astro-components/index.md)
+*   [The Astro template syntax](../reference/astro-syntax/index.md)
 
 Extend
 
-*   [Add integrations like React and Partytown](/en/guides/integrations/)
-*   [Create type safe content collections](/en/guides/content-collections/)
-*   [Enhance navigation with view transitions](/en/guides/view-transitions/)
-*   [Connect a headless CMS to your project](/en/guides/cms/)
+*   [Add integrations like React and Partytown](../guides/integrations/index.md)
+*   [Create type safe content collections](../guides/content-collections/index.md)
+*   [Enhance navigation with view transitions](../guides/view-transitions/index.md)
+*   [Connect a headless CMS to your project](../guides/cms/index.md)
 
 ## Have a question or want to get involved?
 
 ![](/_astro/houston_love.BttrNCcZ_ZWYTdq.webp) [Join our Discord](https://astro.build/chat)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

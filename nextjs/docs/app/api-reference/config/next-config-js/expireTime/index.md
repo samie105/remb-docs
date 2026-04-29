@@ -11,8 +11,8 @@ menu_path: ["expireTime"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../env/index.md", "title": "env"}
-nav_next: {"path": "../exportPathMap/index.md", "title": "exportPathMap"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/env/index.md", "title": "env"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/exportPathMap/index.md", "title": "exportPathMap"}
 ---
 
 # expireTime

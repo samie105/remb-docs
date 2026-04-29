@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:19.048Z"
 content_hash: "324c0bde1e6cdd40bb43468bff244c96ab1f414f437458e065ed0625af31bb35"
 menu_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","IVFFlat indexes","IVFFlat indexes"]
 section_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","IVFFlat indexes","IVFFlat indexes"]
-nav_prev: {"path": "../hnsw-indexes/index.md", "title": "HNSW indexes"}
-nav_next: {"path": "../../../api/index.md", "title": "Data REST API"}
+nav_prev: {"path": "supabase/docs/guides/ai/vector-indexes/hnsw-indexes/index.md", "title": "HNSW indexes"}
+nav_next: {"path": "supabase/docs/guides/api/index.md", "title": "Data REST API"}
 ---
 
 # 
@@ -25,10 +25,10 @@ IVFFlat is a type of vector index for approximate nearest neighbor search. It is
 
 Today `pgvector` supports two types of indexes:
 
-*   [HNSW](/docs/guides/ai/vector-indexes/hnsw-indexes)
-*   [IVFFlat](/docs/guides/ai/vector-indexes/ivf-indexes)
+*   [HNSW](../hnsw-indexes/index.md)
+*   [IVFFlat](index.md)
 
-In general we recommend using [HNSW](/docs/guides/ai/vector-indexes/hnsw-indexes) because of its [performance](/blog/increase-performance-pgvector-hnsw#hnsw-performance-1536-dimensions) and [robustness against changing data](/docs/guides/ai/vector-indexes/hnsw-indexes#when-should-you-create-hnsw-indexes). If you have a special use case that requires IVFFlat instead, keep reading.
+In general we recommend using [HNSW](../hnsw-indexes/index.md) because of its [performance](/blog/increase-performance-pgvector-hnsw#hnsw-performance-1536-dimensions) and [robustness against changing data](../hnsw-indexes/index.md#when-should-you-create-hnsw-indexes). If you have a special use case that requires IVFFlat instead, keep reading.
 
 ## Usage[#](#usage)
 

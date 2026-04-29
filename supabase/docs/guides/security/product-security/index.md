@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:05.880Z"
 content_hash: "b07d34eba33bc3c31c6c4bf67e620d0c3ea677b2bef2afdf6d3bd20e92bc6e5a"
 menu_path: ["Security","Security","Product security","Product security","Product configuration","Product configuration"]
 section_path: ["Security","Security","Product security","Product security","Product configuration","Product configuration"]
-nav_prev: {"path": "../platform-security/index.md", "title": "Secure configuration of Supabase platform"}
-nav_next: {"path": "../security-testing/index.md", "title": "Security testing of your Supabase projects"}
+nav_prev: {"path": "supabase/docs/guides/security/platform-security/index.md", "title": "Secure configuration of Supabase platform"}
+nav_next: {"path": "supabase/docs/guides/security/security-testing/index.md", "title": "Security testing of your Supabase projects"}
 ---
 
 # 
@@ -19,34 +19,34 @@ Secure configuration of Supabase products
 
 * * *
 
-The Supabase [production checklist](/docs/guides/deployment/going-into-prod) provides detailed advice on preparing an app for production. While our [SOC 2](/docs/guides/security/soc-2-compliance) and [HIPAA](/docs/guides/security/hipaa-compliance) compliance documents outline the roles and responsibilities for building a secure and compliant app.
+The Supabase [production checklist](../../deployment/going-into-prod/index.md) provides detailed advice on preparing an app for production. While our [SOC 2](../soc-2-compliance/index.md) and [HIPAA](../hipaa-compliance/index.md) compliance documents outline the roles and responsibilities for building a secure and compliant app.
 
 Various products at Supabase have their own hardening and configuration guides, below is a definitive list of these to help guide your way.
 
 ## Auth[#](#auth)
 
-*   [Password security](/docs/guides/auth/password-security)
-*   [Rate limits](/docs/guides/auth/rate-limits)
-*   [Bot detection / Prevention](/docs/guides/auth/auth-captcha)
-*   [JWTs](/docs/guides/auth/jwts)
+*   [Password security](../../auth/password-security/index.md)
+*   [Rate limits](../../auth/rate-limits/index.md)
+*   [Bot detection / Prevention](../../auth/auth-captcha/index.md)
+*   [JWTs](../../auth/jwts/index.md)
 
 ## Database[#](#database)
 
-*   [Row Level Security](/docs/guides/database/postgres/row-level-security)
-*   [Column Level Security](/docs/guides/database/postgres/column-level-security)
-*   [Hardening the Data API](/docs/guides/api/hardening-data-api)
-*   [Additional security controls for the Data API](/docs/guides/api/securing-your-api)
-*   [Custom claims and role based access control](/docs/guides/api/custom-claims-and-role-based-access-control-rbac)
-*   [Managing Postgres roles](/docs/guides/database/postgres/roles)
-*   [Managing secrets with Vault](/docs/guides/database/vault)
+*   [Row Level Security](../../database/postgres/row-level-security/index.md)
+*   [Column Level Security](../../database/postgres/column-level-security/index.md)
+*   [Hardening the Data API](../../api/hardening-data-api/index.md)
+*   [Additional security controls for the Data API](../../api/securing-your-api/index.md)
+*   [Custom claims and role based access control](../../api/custom-claims-and-role-based-access-control-rbac/index.md)
+*   [Managing Postgres roles](../../database/postgres/roles/index.md)
+*   [Managing secrets with Vault](../../database/vault/index.md)
 *   [Superuser access and unsupported operations](docs/guides/database/postgres/roles-superuser)
 
 ## Storage[#](#storage)
 
-*   [Object ownership](/docs/guides/storage/security/ownership)
-*   [Access control](/docs/guides/storage/security/access-control)
+*   [Object ownership](../../storage/security/ownership/index.md)
+*   [Access control](../../storage/security/access-control/index.md)
     *   The Storage API docs contain hints about required [RLS policy permissions](/docs/reference/javascript/storage-createbucket)
-*   [Custom roles with the storage schema](/docs/guides/storage/schema/custom-roles)
+*   [Custom roles with the storage schema](../../storage/schema/custom-roles/index.md)
 
 ## Realtime[#](#realtime)
 

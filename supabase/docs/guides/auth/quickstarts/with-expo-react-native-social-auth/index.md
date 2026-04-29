@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:55.639Z"
 content_hash: "2d313a81f7660b452a3c54a2a1aed1c4826b1ad63bca0d2a9cce8b65b2eeb912"
 menu_path: ["Auth","Auth","Getting Started","Getting Started","React Native with Expo & Social Auth","React Native with Expo & Social Auth"]
 section_path: ["Auth","Auth","Getting Started","Getting Started","React Native with Expo & Social Auth","React Native with Expo & Social Auth"]
-nav_prev: {"path": "../react-native/index.md", "title": "Use Supabase Auth with React Native"}
-nav_next: {"path": "../../rate-limits/index.md", "title": "Rate limits"}
+nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/react-native/index.md", "title": "Use Supabase Auth with React Native"}
+nav_next: {"path": "supabase/docs/guides/auth/rate-limits/index.md", "title": "Rate limits"}
 ---
 
 # 
@@ -21,8 +21,8 @@ Build a Social Auth App with Expo React Native
 
 This tutorial demonstrates how to build a React Native app with [Expo](https://expo.dev) that implements social authentication. The app showcases a complete authentication flow with protected navigation using:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data with [Row Level Security](/docs/guides/auth#row-level-security) to ensure data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - enables users to log in through social authentication providers (Apple and Google).
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data with [Row Level Security](../../index.md#row-level-security) to ensure data is protected and users can only access their own information.
+*   [Supabase Auth](../../index.md) - enables users to log in through social authentication providers (Apple and Google).
 
 ![Supabase Social Auth example](/docs/img/supabase-expo-social-auth-login.png)
 
@@ -58,7 +58,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=exporeactnative).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -105,7 +105,7 @@ Now, create a helper file to initialize the Supabase client for both web and Rea
 
 ### Set up environment variables[#](#set-up-environment-variables)
 
-You need the API URL and the `publishable` key copied [earlier](#get-the-api-keys). These variables are safe to expose in your Expo app since Supabase has [Row Level Security](/docs/guides/database/postgres/row-level-security) enabled on your database.
+You need the API URL and the `publishable` key copied [earlier](#get-the-api-keys). These variables are safe to expose in your Expo app since Supabase has [Row Level Security](../../../database/postgres/row-level-security/index.md) enabled on your database.
 
 Create a `.env` file containing these variables:
 
@@ -243,7 +243,7 @@ To enable Apple sign-up on Android and Web, you also need to register the tunnel
 
 And add it to the **Redirect URLs** field in [your Supabase dashboard Authentication configuration](/dashboard/project/_/auth/url-configuration).
 
-For more information, follow the [Supabase Login with Apple](/docs/guides/auth/social-login/auth-apple) guide.
+For more information, follow the [Supabase Login with Apple](../../social-login/auth-apple/index.md) guide.
 
 #### Prerequisites[#](#prerequisites)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:54.879Z"
 content_hash: "e99bc456a50ffec6e45c65e9dbf410c0c0310b4c59c42a8ece7a063d3f399dcf"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Custom Domains","Custom Domains"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Custom Domains","Custom Domains"]
-nav_prev: {"path": "../compute/index.md", "title": "Manage Compute usage"}
-nav_next: {"path": "../disk-iops/index.md", "title": "Manage Disk IOPS usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/compute/index.md", "title": "Manage Compute usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-iops/index.md", "title": "Manage Disk IOPS usage"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Manage Custom Domain usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-You can configure a [custom domain](/docs/guides/platform/custom-domains) for a project by enabling the [Custom Domain add-on](/dashboard/project/_/settings/addons?panel=customDomain). You are charged for all custom domains configured across your projects.
+You can configure a [custom domain](../../custom-domains/index.md) for a project by enabling the [Custom Domain add-on](/dashboard/project/_/settings/addons?panel=customDomain). You are charged for all custom domains configured across your projects.
 
-Custom Domains are **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+Custom Domains are **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 ## How charges are calculated[#](#how-charges-are-calculated)
 
@@ -212,4 +212,4 @@ Compute Credits
 ## Optimize usage[#](#optimize-usage)
 
 *   Regularly check your projects and remove custom domains that are no longer needed
-*   Use free [Vanity subdomains](/docs/guides/platform/custom-domains#vanity-subdomains) where applicable
+*   Use free [Vanity subdomains](../../custom-domains/index.md#vanity-subdomains) where applicable

@@ -10,8 +10,8 @@ content_hash: "db289090b0d9f0b9ebb8191b58ed8b6477ed65861783e3c322c653a4dfa7e54b"
 menu_path: ["min-inline-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../inline-size/index.md", "title": "inline-size"}
-nav_next: {"path": "../max-inline-size/index.md", "title": "max-inline-size"}
+nav_prev: {"path": "tailwind/docs/inline-size/index.md", "title": "inline-size"}
+nav_next: {"path": "tailwind/docs/max-inline-size/index.md", "title": "max-inline-size"}
 ---
 
 Sizing

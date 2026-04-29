@@ -10,8 +10,8 @@ content_hash: "e2c8d935343be8e77bc5446fd17dd93b9934aafe115269b80af311ca51cd5f28"
 menu_path: ["PostgreSQL: Documentation: 18: 32.1. Database Connection Control Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../libpq-async.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.4.\u00a0Asynchronous Command Processing"}
-nav_next: {"path": "../libpq-control.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.11.\u00a0Control Functions"}
+nav_prev: {"path": "postgres/docs/current/libpq-async.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.4.\u00a0Asynchronous Command Processing"}
+nav_next: {"path": "postgres/docs/current/libpq-control.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.11.\u00a0Control Functions"}
 ---
 
 ### 32.1.2. Parameter Key Words [#](#LIBPQ-PARAMKEYWORDS)

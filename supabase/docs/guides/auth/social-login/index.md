@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:26.249Z"
 content_hash: "f20f5b763c98a7b8a3bf2665400fa313b816f0af57f405ee967dd7e5dacc6a0e"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Overview","Overview"]
-nav_prev: {"path": "../signout/index.md", "title": "Signing out"}
-nav_next: {"path": "auth-apple/index.md", "title": "Login with Apple"}
+nav_prev: {"path": "supabase/docs/guides/auth/signout/index.md", "title": "Signing out"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-apple/index.md", "title": "Login with Apple"}
 ---
 
 # 
@@ -152,7 +152,7 @@ Supabase supports a suite of social providers. Follow these guides to configure 
 
 ](/docs/guides/auth/social-login/auth-zoom)
 
-Need to integrate with a provider not listed here? You can add any OAuth2 or OIDC-compatible provider using [Custom OAuth/OIDC Providers](/docs/guides/auth/custom-oauth-providers).
+Need to integrate with a provider not listed here? You can add any OAuth2 or OIDC-compatible provider using [Custom OAuth/OIDC Providers](../custom-oauth-providers/index.md).
 
 ## Provider tokens[#](#provider-tokens)
 

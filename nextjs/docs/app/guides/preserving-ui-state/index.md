@@ -11,17 +11,17 @@ menu_path: ["Preserving UI state across navigations"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../prefetching/index.md", "title": "Prefetching"}
-nav_next: {"path": "../production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
+nav_prev: {"path": "nextjs/docs/app/guides/prefetching/index.md", "title": "Prefetching"}
+nav_next: {"path": "nextjs/docs/app/guides/production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
 ---
 
 # Preserving UI state across navigations
 
 Last updated April 23, 2026
 
-> **Good to know:** This guide assumes [Cache Components](/docs/app/getting-started/caching) is enabled. Enable it by setting [`cacheComponents: true`](/docs/app/api-reference/config/next-config-js/cacheComponents) in your Next config file.
+> **Good to know:** This guide assumes [Cache Components](../../getting-started/caching/index.md) is enabled. Enable it by setting [`cacheComponents: true`](../../api-reference/config/next-config-js/cacheComponents/index.md) in your Next config file.
 
-Before Cache Components, preserving page-level state across navigations required workarounds like hoisting state to a [shared layout](/docs/app/getting-started/layouts-and-pages#nesting-layouts) or using an external store. With Cache Components, Next.js preserves state and DOM out of the box.
+Before Cache Components, preserving page-level state across navigations required workarounds like hoisting state to a [shared layout](../../getting-started/layouts-and-pages/index.md#nesting-layouts) or using an external store. With Cache Components, Next.js preserves state and DOM out of the box.
 
 Instead of unmounting pages on navigation, Next.js hides them using React's [`<Activity>`](https://react.dev/reference/react/Activity) component. The DOM nodes stay in the document (hidden with `display: none`), so both React state and DOM state are preserved: form drafts, scroll positions, expanded `<details>` elements, video playback progress, and more.
 
@@ -78,7 +78,7 @@ function SettingsDropdown() {
 
 When Activity hides this component, the cleanup function runs and resets `isOpen`. When the page becomes visible again, the dropdown is closed. Using `useLayoutEffect` ensures the cleanup runs synchronously before the component is hidden, avoiding any flash of stale state.
 
-You can also use `Link`'s [`onNavigate`](/docs/app/api-reference/components/link#onnavigate) callback to close dropdowns immediately when a navigation link is clicked.
+You can also use `Link`'s [`onNavigate`](../../api-reference/components/link/index.md#onnavigate) callback to close dropdowns immediately when a navigation link is clicked.
 
 ### Dialog and initialization logic[](#dialog-and-initialization-logic)
 
@@ -526,6 +526,6 @@ Learn more about Cache Components and preserving UI state.
 
 Learn how to cache data and UI in Next.js
 
-](/docs/app/getting-started/caching)
+](../../getting-started/caching/index.md)
 
 Was this helpful?

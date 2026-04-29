@@ -9,17 +9,17 @@ last_crawled_at: "2026-04-18T16:47:59.215Z"
 content_hash: "ec8b6e7b3acc5f90cb5f8fbce3ea5f6c19b9edc2414459c99a14b08d004a5308"
 menu_path: ["Routing Reference"]
 section_path: []
-nav_prev: {"path": "../../guides/imports/index.md", "title": "Imports reference"}
-nav_next: {"path": "../api-reference/index.md", "title": "Astro render context"}
+nav_prev: {"path": "astro/en/guides/imports/index.md", "title": "Imports reference"}
+nav_next: {"path": "astro/en/reference/api-reference/index.md", "title": "Astro render context"}
 ---
 
 # Routing Reference
 
 There is no separate routing configuration in Astro.
 
-Every [supported page file](/en/basics/astro-pages/#supported-page-files) located within the special `src/pages/` directory creates a route. When the file name contains a [parameter](#params), a route can create multiple pages dynamically, otherwise it creates a single page.
+Every [supported page file](../../basics/astro-pages/index.md#supported-page-files) located within the special `src/pages/` directory creates a route. When the file name contains a [parameter](#params), a route can create multiple pages dynamically, otherwise it creates a single page.
 
-By default, all Astro page routes and endpoints are generated and prerendered at build time. [On-demand server rendering](/en/guides/on-demand-rendering/) can be set for individual routes, or as the default.
+By default, all Astro page routes and endpoints are generated and prerendered at build time. [On-demand server rendering](../../guides/on-demand-rendering/index.md) can be set for individual routes, or as the default.
 
 ## `prerender`
 
@@ -38,7 +38,7 @@ By default, all pages and endpoints are prerendered and will be statically gener
 
 [Section titled “Per-page override”](#per-page-override)
 
-You can override the default value to enable [on demand rendering](/en/guides/on-demand-rendering/) for an individual route by exporting `prerender` with the value `false` from that file:
+You can override the default value to enable [on demand rendering](../../guides/on-demand-rendering/index.md) for an individual route by exporting `prerender` with the value `false` from that file:
 
 ```
 ---export const prerender = false---<!-- server-rendered content --><!-- the rest of my site is static -->
@@ -48,7 +48,7 @@ You can override the default value to enable [on demand rendering](/en/guides/on
 
 [Section titled “Switch to server mode”](#switch-to-server-mode)
 
-You can override the default value for all routes by configuring [`output: 'server'`](/en/reference/configuration-reference/#output). In this output mode, all pages and endpoints will be generated on the server upon request by default instead of being prerendered.
+You can override the default value for all routes by configuring [`output: 'server'`](../configuration-reference/index.md#output). In this output mode, all pages and endpoints will be generated on the server upon request by default instead of being prerendered.
 
 In `server` mode, enable prerendering for an individual route by exporting `prerender` with the value `true` from that file:
 
@@ -69,7 +69,7 @@ A value exported from an individual route to determine whether or not it should 
 
 By default, all files located within the reserved `src/pages/` directory automatically include the `<!DOCTYPE html>` declaration and additional `<head>` content such as Astro’s scoped styles and scripts.
 
-You can override the default value to designate the content as a [page partial](/en/basics/astro-pages/#page-partials) for an individual route by exporting a value for `partial` from that file:
+You can override the default value to designate the content as a [page partial](../../basics/astro-pages/index.md#page-partials) for an individual route by exporting a value for `partial` from that file:
 
 ```
 ---export const partial = true---<!-- Generated HTML available at a URL --><!-- Available to a rendering library -->
@@ -97,7 +97,7 @@ The `getStaticPaths()` function must return an array of objects to determine whi
 export async function getStaticPaths() {  return [    // { params: { /* required */ }, props: { /* optional */ } },    { params: { post: '1' } }, // [post] is the parameter    { params: { post: '2' } }, // must match the file name    // ...  ];}---<!-- Your HTML template here. -->
 ```
 
-`getStaticPaths()` can also be used in static file endpoints for [dynamic routing](/en/guides/endpoints/#params-and-dynamic-routing).
+`getStaticPaths()` can also be used in static file endpoints for [dynamic routing](../../guides/endpoints/index.md#params-and-dynamic-routing).
 
 ### `params`
 
@@ -136,13 +136,13 @@ const { id } = Astro.params;const { post } = Astro.props;---<h1>{id}: {post.name
 
 **Added in:** `astro@5.14.0`
 
-A property available in [`getStaticPaths()`](#getstaticpaths) options to access the current [`routePattern`](/en/reference/api-reference/#routepattern) as a string.
+A property available in [`getStaticPaths()`](#getstaticpaths) options to access the current [`routePattern`](../api-reference/index.md#routepattern) as a string.
 
-This provides data from the [Astro render context](/en/reference/api-reference/) that would not otherwise be available within the scope of `getStaticPaths()` and can be useful to calculate the `params` and `props` for each page route.
+This provides data from the [Astro render context](../api-reference/index.md) that would not otherwise be available within the scope of `getStaticPaths()` and can be useful to calculate the `params` and `props` for each page route.
 
 `routePattern` always reflects the original dynamic segment definition in the file path (e.g. `/[...locale]/[files]/[slug]`), unlike `params`, which are explicit values for a page (e.g. `/fr/fichiers/article-1/`).
 
-The following example shows how to localize your route segments and return an array of static paths by passing `routePattern` to a custom `getLocalizedData()` helper function. The [params](/en/reference/routing-reference/#params) object will be set with explicit values for each route segment: `locale`, `files`, and `slug`. Then, these values will be used to generate the routes and can be used in your page template via `Astro.params`.
+The following example shows how to localize your route segments and return an array of static paths by passing `routePattern` to a custom `getLocalizedData()` helper function. The [params](index.md#params) object will be set with explicit values for each route segment: `locale`, `files`, and `slug`. Then, these values will be used to generate the routes and can be used in your page template via `Astro.params`.
 
 ```
 ---import { getLocalizedData } from "../../../utils/i18n";
@@ -254,7 +254,7 @@ The total number of pages.
 
 **Type:** `string`
 
-Get the URL of the current page (useful for canonical URLs). If a value is set for [`base`](/en/reference/configuration-reference/#base), the URL starts with that value.
+Get the URL of the current page (useful for canonical URLs). If a value is set for [`base`](../configuration-reference/index.md#base), the URL starts with that value.
 
 ##### `page.url.prev`
 
@@ -262,7 +262,7 @@ Get the URL of the current page (useful for canonical URLs). If a value is set f
 
 **Type:** `string | undefined`
 
-Get the URL of the previous page (will be `undefined` if on page 1). If a value is set for [`base`](/en/reference/configuration-reference/#base), prepend the base path to the URL.
+Get the URL of the previous page (will be `undefined` if on page 1). If a value is set for [`base`](../configuration-reference/index.md#base), prepend the base path to the URL.
 
 ##### `page.url.next`
 
@@ -270,7 +270,7 @@ Get the URL of the previous page (will be `undefined` if on page 1). If a value 
 
 **Type:** `string | undefined`
 
-Get the URL of the next page (will be `undefined` if no more pages). If a value is set for [`base`](/en/reference/configuration-reference/#base), prepend the base path to the URL.
+Get the URL of the next page (will be `undefined` if no more pages). If a value is set for [`base`](../configuration-reference/index.md#base), prepend the base path to the URL.
 
 ##### `page.url.first`
 
@@ -280,7 +280,7 @@ Get the URL of the next page (will be `undefined` if no more pages). If a value 
 
 **Added in:** `astro@4.12.0`
 
-Get the URL of the first page (will be `undefined` if on page 1). If a value is set for [`base`](/en/reference/configuration-reference/#base), prepend the base path to the URL.
+Get the URL of the first page (will be `undefined` if on page 1). If a value is set for [`base`](../configuration-reference/index.md#base), prepend the base path to the URL.
 
 ##### `page.url.last`
 
@@ -290,6 +290,6 @@ Get the URL of the first page (will be `undefined` if on page 1). If a value is 
 
 **Added in:** `astro@4.12.0`
 
-Get the URL of the last page (will be `undefined` if no more pages). If a value is set for [`base`](/en/reference/configuration-reference/#base), prepend the base path to the URL.
+Get the URL of the last page (will be `undefined` if no more pages). If a value is set for [`base`](../configuration-reference/index.md#base), prepend the base path to the URL.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:16.564Z"
 content_hash: "a834fe901394df302477a70401d87f7bd1362bb55f7d69d96782136c71aa6854"
 menu_path: ["$effect"]
 section_path: []
-nav_prev: {"path": "../$derived/index.md", "title": "$derived"}
-nav_next: {"path": "../$props/index.md", "title": "$props"}
+nav_prev: {"path": "svelte/docs/svelte/$derived/index.md", "title": "$derived"}
+nav_next: {"path": "svelte/docs/svelte/$props/index.md", "title": "$props"}
 ---
 
 Effects are functions that run when state updates, and can be used for things like calling third-party libraries, drawing on `<canvas>` elements, or making network requests. They only run in the browser, not during server-side rendering.
@@ -294,7 +294,7 @@ The `$effect.tracking` rune is an advanced feature that tells you whether or not
 <p>in template: {$effect.tracking()}</p> <!-- true -->
 ```
 
-It is used to implement abstractions like [`createSubscriber`](/docs/svelte/svelte-reactivity#createSubscriber), which will create listeners to update reactive values but _only_ if those values are being tracked (rather than, for example, read inside an event handler).
+It is used to implement abstractions like [`createSubscriber`](../svelte-reactivity/index.md#createSubscriber), which will create listeners to update reactive values but _only_ if those values are being tracked (rather than, for example, read inside an event handler).
 
 ## $effect.pending[](#$effect.pending)
 

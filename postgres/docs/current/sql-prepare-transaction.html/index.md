@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:26.914Z"
 content_hash: "8567d5a36831ac1e46b683f7b50c763dbad740e15bd3f63f01d6691a4c03871b"
 menu_path: ["PostgreSQL: Documentation: 18: PREPARE TRANSACTION"]
 section_path: []
-nav_prev: {"path": "../sql-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: NOTIFY"}
-nav_next: {"path": "../sql-prepare.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE"}
+nav_prev: {"path": "postgres/docs/current/sql-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: NOTIFY"}
+nav_next: {"path": "postgres/docs/current/sql-prepare.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE"}
 ---
 
 PREPARE TRANSACTION — prepare the current transaction for two-phase commit

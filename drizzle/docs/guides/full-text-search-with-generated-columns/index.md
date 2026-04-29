@@ -10,8 +10,8 @@ content_hash: "546375dc588a7c4f04381a537bd1274b60f61e0a01f42debf51d8f810f2074b7"
 menu_path: ["Drizzle ORM - Full-text search with Generated Columns"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../empty-array-default-value/index.md", "title": "Drizzle ORM - Empty array as a default value"}
-nav_next: {"path": "../gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
+nav_prev: {"path": "drizzle/docs/guides/empty-array-default-value/index.md", "title": "Drizzle ORM - Empty array as a default value"}
+nav_next: {"path": "drizzle/docs/guides/gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
 ---
 
 Drizzle | Full-text search with Generated Columns

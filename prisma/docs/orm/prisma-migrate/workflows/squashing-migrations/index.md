@@ -11,8 +11,8 @@ menu_path: ["Squashing migrations"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../seeding/index.md", "title": "Seeding"}
-nav_next: {"path": "../troubleshooting/index.md", "title": "Troubleshooting"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/seeding/index.md", "title": "Seeding"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md", "title": "Troubleshooting"}
 ---
 
 Workflows

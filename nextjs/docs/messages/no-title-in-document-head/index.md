@@ -11,8 +11,8 @@ menu_path: ["No Title in Document Head"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-sync-scripts/index.md", "title": "No Sync Scripts"}
-nav_next: {"path": "../no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
+nav_prev: {"path": "nextjs/docs/messages/no-sync-scripts/index.md", "title": "No Sync Scripts"}
+nav_next: {"path": "nextjs/docs/messages/no-unwanted-polyfillio/index.md", "title": "No Unwanted Polyfill.io"}
 ---
 
 # No Title in Document Head
@@ -45,7 +45,7 @@ export function Home() {
 
 ## Useful Links[](#useful-links)
 
--   [next/head](/docs/pages/api-reference/components/head)
--   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
+-   [next/head](../../pages/api-reference/components/head/index.md)
+-   [Custom Document](../../pages/building-your-application/routing/custom-document/index.md)
 
 Was this helpful?

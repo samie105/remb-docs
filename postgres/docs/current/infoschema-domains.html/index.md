@@ -10,8 +10,8 @@ content_hash: "1c7a8221c159965673174fda80fe49503631c6135f92819206c14204f020b872"
 menu_path: ["PostgreSQL: Documentation: 18: 35.23. domains"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../infoschema-domain-udt-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.22.\u00a0domain_udt_usage"}
-nav_next: {"path": "../infoschema-element-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.24.\u00a0element_types"}
+nav_prev: {"path": "postgres/docs/current/infoschema-domain-udt-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.22.\u00a0domain_udt_usage"}
+nav_next: {"path": "postgres/docs/current/infoschema-element-types.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.24.\u00a0element_types"}
 ---
 
 | 

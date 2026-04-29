@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:56.041Z"
 content_hash: "9dadc7ef771e2f6ec9e2730176f095a97dddf41ed0eac9c02f64721b936f7ac9"
 menu_path: ["await"]
 section_path: []
-nav_prev: {"path": "../class/index.md", "title": "class"}
-nav_next: {"path": "../scoped-styles/index.md", "title": "Scoped styles"}
+nav_prev: {"path": "svelte/docs/svelte/class/index.md", "title": "class"}
+nav_next: {"path": "svelte/docs/svelte/scoped-styles/index.md", "title": "Scoped styles"}
 ---
 
 As of Svelte 5.36, you can use the `await` keyword inside your components in three places where it was previously unavailable:
@@ -266,4 +266,4 @@ Effects run in a slightly different order when the `experimental.async` option i
 
 previous next
 
-[class](/docs/svelte/class) [Scoped styles](/docs/svelte/scoped-styles)
+[class](../class/index.md) [Scoped styles](../scoped-styles/index.md)

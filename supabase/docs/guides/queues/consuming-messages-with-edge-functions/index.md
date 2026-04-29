@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:28.651Z"
 content_hash: "33b3b2b8731f1e6f8c6986c9a99c78374764c009b8ab3c9c39fbfa9806dd7c1d"
 menu_path: ["Queues","Queues","Getting Started","Getting Started","Consuming Messages with Edge Functions","Consuming Messages with Edge Functions"]
 section_path: ["Queues","Queues","Getting Started","Getting Started","Consuming Messages with Edge Functions","Consuming Messages with Edge Functions"]
-nav_prev: {"path": "../api/index.md", "title": "API"}
-nav_next: {"path": "../expose-self-hosted-queues/index.md", "title": "Expose Queues for local and self-hosted Supabase"}
+nav_prev: {"path": "supabase/docs/guides/queues/api/index.md", "title": "API"}
+nav_next: {"path": "supabase/docs/guides/queues/expose-self-hosted-queues/index.md", "title": "Expose Queues for local and self-hosted Supabase"}
 ---
 
 # 
@@ -23,11 +23,11 @@ Learn how to consume Supabase Queue messages server-side with a Supabase Edge Fu
 
 * * *
 
-This guide helps you read & process queue messages server-side with a Supabase Edge Function. Read [Queues API Reference](/docs/guides/queues/api) for more details on our API.
+This guide helps you read & process queue messages server-side with a Supabase Edge Function. Read [Queues API Reference](../api/index.md) for more details on our API.
 
 ## Concepts[#](#concepts)
 
-Supabase Queues is a pull-based Message Queue consisting of three main components: Queues, Messages, and Queue Types. You should already be familiar with the [Queues Quickstart](/docs/guides/queues/quickstart).
+Supabase Queues is a pull-based Message Queue consisting of three main components: Queues, Messages, and Queue Types. You should already be familiar with the [Queues Quickstart](../quickstart/index.md).
 
 ### Consuming messages in an Edge Function[#](#consuming-messages-in-an-edge-function)
 
@@ -44,6 +44,6 @@ Every time this Edge Function is run it:
 3.  At the end of `processMessage`, the message is deleted from the queue
 4.  If `processMessage` throws an error, the error is logged. In this case, the message is still in the queue, so the next time this Edge Function runs it reads the message again.
 
-You might find this kind of setup handy to run with [Supabase Cron](/docs/guides/cron). You can set up Cron so that every N number of minutes or seconds, the Edge Function will run and process a number of messages off the queue.
+You might find this kind of setup handy to run with [Supabase Cron](../../cron/index.md). You can set up Cron so that every N number of minutes or seconds, the Edge Function will run and process a number of messages off the queue.
 
-Similarly, you can invoke the Edge Function on command at any given time with [`supabase.functions.invoke`](/docs/guides/functions/quickstart-dashboard#usage).
+Similarly, you can invoke the Edge Function on command at any given time with [`supabase.functions.invoke`](../../functions/quickstart-dashboard/index.md#usage).

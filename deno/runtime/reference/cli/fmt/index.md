@@ -10,8 +10,8 @@ content_hash: "98158520ba8d7518de848f33752f8993a6c0e04f4a0f6ef9bf7e9909978c904f"
 menu_path: ["deno fmt"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../eval/index.md", "title": "deno eval"}
-nav_next: {"path": "../info/index.md", "title": "deno info"}
+nav_prev: {"path": "deno/runtime/reference/cli/eval/index.md", "title": "deno eval"}
+nav_next: {"path": "deno/runtime/reference/cli/info/index.md", "title": "deno info"}
 ---
 
 # deno-fmt-ignore aaaaaa: bbbbbbb

@@ -10,8 +10,8 @@ content_hash: "350014e1242d29bdaff6837ae16ced9af86c2904cb3a6753fbdcbb04902b27f6"
 menu_path: ["deno deploy"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../coverage/index.md", "title": "deno coverage"}
-nav_next: {"path": "../doc/index.md", "title": "deno doc"}
+nav_prev: {"path": "deno/runtime/reference/cli/coverage/index.md", "title": "deno coverage"}
+nav_next: {"path": "deno/runtime/reference/cli/doc/index.md", "title": "deno doc"}
 ---
 
 # Add a secret environment variable

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:47.045Z"
 content_hash: "c311107146e097ab513dd93f71e9f43be7bab15b2aa8b21bfe2464ec6067417d"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 53. System Views"]
 section_path: []
-nav_prev: {"path": "../reference-client.html/index.md", "title": "PostgreSQL Client Applications"}
-nav_next: {"path": "../protocol.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a054.\u00a0Frontend/Backend Protocol"}
+nav_prev: {"path": "postgres/docs/current/reference-client.html/index.md", "title": "PostgreSQL Client Applications"}
+nav_next: {"path": "postgres/docs/current/protocol.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a054.\u00a0Frontend/Backend Protocol"}
 ---
 
 In addition to the system catalogs, PostgreSQL provides a number of built-in views. Some system views provide convenient access to some commonly used queries on the system catalogs. Other views provide access to internal server state.

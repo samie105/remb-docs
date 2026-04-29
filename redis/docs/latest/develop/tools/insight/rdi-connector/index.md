@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:00:10.640Z"
 content_hash: "dbba63b96f9870fcfbefb5b7478fa133d82f8a37d2e95bf2ed0dc0f5356ee95a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        RDI in Redis Insight","→","RDI in Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        RDI in Redis Insight","→","RDI in Redis Insight"]
-nav_prev: {"path": "../insight-stream-consumer/index.md", "title": "Manage streams and consumer groups in Redis Insight"}
-nav_next: {"path": "../release-notes/index.md", "title": "Redis Insight release notes"}
+nav_prev: {"path": "redis/docs/latest/develop/tools/insight/insight-stream-consumer/index.md", "title": "Manage streams and consumer groups in Redis Insight"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/release-notes/index.md", "title": "Redis Insight release notes"}
 ---
 
 # RDI in Redis Insight
 
 Connect to RDI from Redis Insight, configure pipelines, and more.
 
-Redis Data Integration (RDI) and its [ingest pipeline capability](/docs/latest/integrate/redis-data-integration/) is an end-to-end solution for mirroring your application's primary database in Redis. RDI employs a capture data change mechanism and a stream processor to map and transform source data such as relational tables into fast Redis data structures that match your use cases. You can read more about RDI's ingest architecture [on these pages](/docs/latest/integrate/redis-data-integration/architecture/).
+Redis Data Integration (RDI) and its [ingest pipeline capability](../../../../integrate/redis-data-integration/index.md) is an end-to-end solution for mirroring your application's primary database in Redis. RDI employs a capture data change mechanism and a stream processor to map and transform source data such as relational tables into fast Redis data structures that match your use cases. You can read more about RDI's ingest architecture [on these pages](/docs/latest/integrate/redis-data-integration/architecture/).
 
 As of version `2.54.0`, Redis Insight includes RDI connectivity, which allows you to connect to [RDI management planes](/docs/latest/integrate/redis-data-integration/architecture/#how-rdi-is-deployed), create, test, and deploy [RDI pipelines](/docs/latest/integrate/redis-data-integration/data-pipelines/), and view RDI statistics.
 
@@ -96,7 +96,7 @@ In the **Pipeline Management** pane, click the `+` next to the **Transform and V
 
 Next, click the job name you just created. You can either begin manually editing your transformation job or you can select **Insert template**, which will populate a sample, non-functional job template in the editor.
 
-The [RDI documentation](/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/) has several examples of transformation jobs that can help get you started. Note: RDI uses a very specific YAML format for job files. See [here](/docs/latest/integrate/redis-data-integration/data-pipelines/#job-files) for more information.
+The [RDI documentation](../../../../integrate/redis-data-integration/data-pipelines/transform-examples/index.md) has several examples of transformation jobs that can help get you started. Note: RDI uses a very specific YAML format for job files. See [here](/docs/latest/integrate/redis-data-integration/data-pipelines/#job-files) for more information.
 
 ## Use the built-in editors
 

@@ -10,8 +10,8 @@ content_hash: "6ba10fe28bd2bb8b0263e67e106db62ab49f04b7996fcca00ba5c0685c64dccc"
 menu_path: ["wasi - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../vm/index.md", "title": "vm - Node documentation"}
-nav_next: {"path": "../worker_threads/index.md", "title": "worker_threads - Node documentation"}
+nav_prev: {"path": "deno/api/node/vm/index.md", "title": "vm - Node documentation"}
+nav_next: {"path": "deno/api/node/worker_threads/index.md", "title": "worker_threads - Node documentation"}
 ---
 
 ### Usage in Deno

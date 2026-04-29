@@ -10,8 +10,8 @@ content_hash: "ac09854975dc5017494a3b0cf2ade41b626226992594756ae1b480dd38eb78d2"
 menu_path: ["Drizzle <> PlanetScale Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../get-started-singlestore/index.md", "title": "Drizzle <> SingleStore"}
-nav_next: {"path": "../connect-neon/index.md", "title": "Drizzle <> Neon Postgres"}
+nav_prev: {"path": "drizzle/docs/get-started-singlestore/index.md", "title": "Drizzle <> SingleStore"}
+nav_next: {"path": "drizzle/docs/connect-neon/index.md", "title": "Drizzle <> Neon Postgres"}
 ---
 
 This guide assumes familiarity with:

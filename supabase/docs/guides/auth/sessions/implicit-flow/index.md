@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:59.777Z"
 content_hash: "eb387c184f1ed2f3321215b585b8ca89031b1dc62cb1c440f4948956a25c59b2"
 menu_path: ["Auth","Auth","More","More","More","Sessions","Sessions","Implicit flow","Implicit flow"]
 section_path: ["Auth","Auth","More","More","More","Sessions","Sessions","Implicit flow","Implicit flow"]
-nav_prev: {"path": "../index.md", "title": "User sessions"}
-nav_next: {"path": "../pkce-flow/index.md", "title": "PKCE flow"}
+nav_prev: {"path": "supabase/docs/guides/auth/sessions/index.md", "title": "User sessions"}
+nav_next: {"path": "supabase/docs/guides/auth/sessions/pkce-flow/index.md", "title": "PKCE flow"}
 ---
 
 # 
@@ -25,7 +25,7 @@ About authenticating with implicit flow.
 
 The implicit flow is one of two ways that a user can authenticate and your app can receive the necessary access and refresh tokens.
 
-The flow is an implementation detail handled for you by Supabase Auth, but understanding the difference between implicit and [PKCE flow](/docs/guides/auth/sessions/pkce-flow) is important for understanding the difference between client-only and server-side auth.
+The flow is an implementation detail handled for you by Supabase Auth, but understanding the difference between implicit and [PKCE flow](../pkce-flow/index.md) is important for understanding the difference between client-only and server-side auth.
 
 ## How it works[#](#how-it-works)
 
@@ -50,4 +50,4 @@ The implicit flow only works on the client. Web browsers do not send the URL fra
 *   You may be hosting your single-page app on a third-party server. The third-party service shouldn't get access to your user's credentials.
 *   Even if the server is under your direct control, `GET` requests and their full URLs are often logged. This approach avoids leaking credentials in request or access logs.
 
-If you wish to obtain the access token and refresh token on a server, use the [PKCE flow](/docs/guides/auth/sessions/pkce-flow).
+If you wish to obtain the access token and refresh token on a server, use the [PKCE flow](../pkce-flow/index.md).

@@ -10,8 +10,8 @@ content_hash: "3f236d519806e74887b8cf29842bca8eef1b1f1ced534683489dbfb784c63c5a"
 menu_path: ["Raw queries"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Write your own SQL"}
-nav_next: {"path": "../safeql/index.md", "title": "SafeQL & Prisma Client"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/index.md", "title": "Write your own SQL"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/safeql/index.md", "title": "SafeQL & Prisma Client"}
 ---
 
 Learn how you can send raw SQL and MongoDB queries to your database using the raw() methods from the Prisma Client API

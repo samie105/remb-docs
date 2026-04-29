@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:41.980Z"
 content_hash: "77467d146d49c2fab63bc1d2ad3400fb03d520786496a0cdf79a77a732ff7778"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Index management best practices for Redis Search","→","Index management best practices for Redis Search"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Best practices","→","Best practices","→\n      \n        Index management best practices for Redis Search","→","Index management best practices for Redis Search"]
-nav_prev: {"path": "../dev-to-prod-best-practices/index.md", "title": "Move from Development to Production with Redis Search"}
-nav_next: {"path": "../scalable-query-best-practices/index.md", "title": "Best practices for Redis Search performance"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/dev-to-prod-best-practices/index.md", "title": "Move from Development to Production with Redis Search"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/scalable-query-best-practices/index.md", "title": "Best practices for Redis Search performance"}
 ---
 
 # Index management best practices for Redis Search
@@ -39,16 +39,16 @@ Indexes directly impact query speed and resource consumption. Poorly managed ind
 
 ## Plan your indexes strategically
 
-Planning your indexes strategically requires understanding your application’s query patterns and tailoring indexes to match. Begin by identifying the types of searches your application performs—such as full-text search, range queries, or geospatial lookups—and the fields involved. Categorize fields based on their purpose: searchable fields (e.g., [`TEXT`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#text-fields) for full-text searches), filterable fields (e.g., [`TAG`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#tag-fields) for exact match searches), and sortable fields (e.g., [`NUMERIC`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#numeric-fields) for range queries or sorting). Match field types to their intended use and avoid indexing fields that are rarely queried to conserve resources. Here's the list of index types:
+Planning your indexes strategically requires understanding your application’s query patterns and tailoring indexes to match. Begin by identifying the types of searches your application performs—such as full-text search, range queries, or geospatial lookups—and the fields involved. Categorize fields based on their purpose: searchable fields (e.g., [`TEXT`](../../indexing/field-and-type-options/index.md#text-fields) for full-text searches), filterable fields (e.g., [`TAG`](../../indexing/field-and-type-options/index.md#tag-fields) for exact match searches), and sortable fields (e.g., [`NUMERIC`](../../indexing/field-and-type-options/index.md#numeric-fields) for range queries or sorting). Match field types to their intended use and avoid indexing fields that are rarely queried to conserve resources. Here's the list of index types:
 
-*   [`TEXT`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#text-fields): use `TEXT` for free-text searches and set weights if some fields are more important.
-*   [`TAG`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#tag-fields): use `TAG` for categorical data (e.g., product categories) that benefit from exact matching and filtering.
-*   [`NUMERIC`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#numeric-fields): use `NUMERIC` for numeric ranges (e.g., prices, timestamps).
-*   [`GEO`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#geo-fields): use `GEO` for geospatial coordinates (e.g., latitude/longitude).
-*   [`GEOSHAPE`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#geoshape-fields): use `GEOSHAPE` to represent locations as points, but also to define shapes and query the interactions between points and shapes (e.g., to find all points that are contained within an enclosing shape).
-*   [`VECTOR`](/docs/latest/develop/ai/search-and-query/indexing/field-and-type-options/#vector-fields): use `VECTOR` for high-dimensional similarity searches.
+*   [`TEXT`](../../indexing/field-and-type-options/index.md#text-fields): use `TEXT` for free-text searches and set weights if some fields are more important.
+*   [`TAG`](../../indexing/field-and-type-options/index.md#tag-fields): use `TAG` for categorical data (e.g., product categories) that benefit from exact matching and filtering.
+*   [`NUMERIC`](../../indexing/field-and-type-options/index.md#numeric-fields): use `NUMERIC` for numeric ranges (e.g., prices, timestamps).
+*   [`GEO`](../../indexing/field-and-type-options/index.md#geo-fields): use `GEO` for geospatial coordinates (e.g., latitude/longitude).
+*   [`GEOSHAPE`](../../indexing/field-and-type-options/index.md#geoshape-fields): use `GEOSHAPE` to represent locations as points, but also to define shapes and query the interactions between points and shapes (e.g., to find all points that are contained within an enclosing shape).
+*   [`VECTOR`](../../indexing/field-and-type-options/index.md#vector-fields): use `VECTOR` for high-dimensional similarity searches.
 
-See [these pages](/docs/latest/develop/ai/search-and-query/query/) for discussions and examples on how best to use these index types.
+See [these pages](../../query/index.md) for discussions and examples on how best to use these index types.
 
 Next, simulate queries on a sample dataset to identify potential bottlenecks. Use tools like [`FT.PROFILE`](/docs/latest/commands/ft.profile/) to analyze query execution and refine your schema if needed. For example, assign weights to `TEXT` fields for prioritizing results or use the `PREFIX` option of [`FT.CREATE`](/docs/latest/commands/ft.create/) to limit indexing to specific key patterns. Note that you can use multiple `PREFIX` clauses when you create an index (see [below](#index-creation)) After creating the index, validate its performance with real queries and monitor usage with the available tools:
 

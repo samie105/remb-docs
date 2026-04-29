@@ -10,8 +10,8 @@ content_hash: "5af7c16a794a569a07118418c02d50258cd8b8d7fc57b903321d6d9ce3c8f515"
 menu_path: ["transition-property"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../caption-side/index.md", "title": "caption-side"}
-nav_next: {"path": "../transition-behavior/index.md", "title": "transition-behavior"}
+nav_prev: {"path": "tailwind/docs/caption-side/index.md", "title": "caption-side"}
+nav_next: {"path": "tailwind/docs/transition-behavior/index.md", "title": "transition-behavior"}
 ---
 
 # transition-property
@@ -99,7 +99,7 @@ Prefix a `transition-property` utility with a breakpoint variant like `md:` to o
 <button class="transition-none md:transition-all ...">  <!-- ... --></button>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

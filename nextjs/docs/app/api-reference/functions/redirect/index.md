@@ -11,19 +11,19 @@ menu_path: ["redirect"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../permanentRedirect/index.md", "title": "permanentRedirect"}
-nav_next: {"path": "../refresh/index.md", "title": "refresh"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/permanentRedirect/index.md", "title": "permanentRedirect"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/refresh/index.md", "title": "refresh"}
 ---
 
 # redirect
 
 Last updated April 23, 2026
 
-The `redirect` function allows you to redirect the user to another URL. `redirect` can be used while rendering in [Server and Client Components](/docs/app/getting-started/server-and-client-components), [Route Handlers](/docs/app/api-reference/file-conventions/route), and [Server Functions](/docs/app/getting-started/mutating-data).
+The `redirect` function allows you to redirect the user to another URL. `redirect` can be used while rendering in [Server and Client Components](../../../getting-started/server-and-client-components/index.md), [Route Handlers](../../file-conventions/route/index.md), and [Server Functions](../../../getting-started/mutating-data/index.md).
 
-When used in a [streaming context](/docs/app/getting-started/linking-and-navigating#streaming), this will insert a meta tag to emit the redirect on the client side. When used in a server action, it will serve a 303 HTTP redirect response to the caller. Otherwise, it will serve a 307 HTTP redirect response to the caller.
+When used in a [streaming context](../../../getting-started/linking-and-navigating/index.md#streaming), this will insert a meta tag to emit the redirect on the client side. When used in a server action, it will serve a 303 HTTP redirect response to the caller. Otherwise, it will serve a 307 HTTP redirect response to the caller.
 
-If a resource doesn't exist, you can use the [`notFound` function](/docs/app/api-reference/functions/not-found) instead.
+If a resource doesn't exist, you can use the [`notFound` function](../not-found/index.md) instead.
 
 ## Reference[](#reference)
 
@@ -40,7 +40,7 @@ redirect(path, type)
 | `path` | `string` | The URL to redirect to. Can be a relative or absolute path. |
 | `type` | `'replace'` (default) or `'push'` (default in Server Actions) | The type of redirect to perform. |
 
-By default, `redirect` will use `push` (adding a new entry to the browser history stack) in [Server Actions](/docs/app/getting-started/mutating-data) and `replace` (replacing the current URL in the browser history stack) everywhere else. You can override this behavior by specifying the `type` parameter.
+By default, `redirect` will use `push` (adding a new entry to the browser history stack) in [Server Actions](../../../getting-started/mutating-data/index.md) and `replace` (replacing the current URL in the browser history stack) everywhere else. You can override this behavior by specifying the `type` parameter.
 
 The `RedirectType` object contains the available options for the `type` parameter.
 
@@ -61,11 +61,11 @@ The `type` parameter has no effect when used in Server Components.
 ## Behavior[](#behavior)
 
 -   In Server Actions and Route Handlers, redirect should be called **outside** the `try` block when using `try/catch` statements.
--   If you prefer to return a 308 (Permanent) HTTP redirect instead of 307 (Temporary), you can use the [`permanentRedirect` function](/docs/app/api-reference/functions/permanentRedirect) instead.
+-   If you prefer to return a 308 (Permanent) HTTP redirect instead of 307 (Temporary), you can use the [`permanentRedirect` function](../permanentRedirect/index.md) instead.
 -   `redirect` throws an error so it should be called **outside** the `try` block when using `try/catch` statements.
--   `redirect` can be called in Client Components during the rendering process but not in event handlers. You can use the [`useRouter` hook](/docs/app/api-reference/functions/use-router) instead.
+-   `redirect` can be called in Client Components during the rendering process but not in event handlers. You can use the [`useRouter` hook](../use-router/index.md) instead.
 -   `redirect` also accepts absolute URLs and can be used to redirect to external links.
--   If you'd like to redirect before the render process, use [`next.config.js`](/docs/app/guides/redirecting#redirects-in-nextconfigjs) or [Proxy](/docs/app/guides/redirecting#nextresponseredirect-in-proxy).
+-   If you'd like to redirect before the render process, use [`next.config.js`](../../../guides/redirecting/index.md#redirects-in-nextconfigjs) or [Proxy](../../../guides/redirecting/index.md#nextresponseredirect-in-proxy).
 
 ## Example[](#example)
 
@@ -130,7 +130,7 @@ export function ClientRedirect() {
 
 > **Good to know**: When using `redirect` in a Client Component on initial page load during Server-Side Rendering (SSR), it will perform a server-side redirect.
 
-`redirect` can be used in a Client Component through a Server Action. If you need to use an event handler to redirect the user, you can use the [`useRouter`](/docs/app/api-reference/functions/use-router) hook.
+`redirect` can be used in a Client Component through a Server Action. If you need to use an event handler to redirect the user, you can use the [`useRouter`](../use-router/index.md) hook.
 
 app/client-redirect.tsx
 
@@ -194,6 +194,6 @@ The `redirect()` method uses a `307` by default, instead of a `302` temporary re
 
 API Reference for the permanentRedirect function.
 
-](/docs/app/api-reference/functions/permanentRedirect)
+](../permanentRedirect/index.md)
 
 Was this helpful?

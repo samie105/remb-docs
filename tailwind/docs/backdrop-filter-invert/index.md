@@ -10,8 +10,8 @@ content_hash: "ff4c750bb96d034c651521b1c76bda402eae620abe40227870135efb7ebcbb63"
 menu_path: ["backdrop-filter: invert()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../backdrop-filter-hue-rotate/index.md", "title": "backdrop-filter: hue-rotate()"}
-nav_next: {"path": "../backdrop-filter-opacity/index.md", "title": "backdrop-filter: opacity()"}
+nav_prev: {"path": "tailwind/docs/backdrop-filter-hue-rotate/index.md", "title": "backdrop-filter: hue-rotate()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-opacity/index.md", "title": "backdrop-filter: opacity()"}
 ---
 
 # backdrop-filter: invert()
@@ -78,7 +78,7 @@ Prefix a `backdrop-filter: invert()` utility with a breakpoint variant like `md:
 <div class="backdrop-invert-0 md:backdrop-invert ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

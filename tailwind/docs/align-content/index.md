@@ -10,8 +10,8 @@ content_hash: "40b0493e675505b164344a3b8284462810df82af60a7af79dec38d2d60a56a12"
 menu_path: ["align-content"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../justify-self/index.md", "title": "justify-self"}
-nav_next: {"path": "../align-items/index.md", "title": "align-items"}
+nav_prev: {"path": "tailwind/docs/justify-self/index.md", "title": "justify-self"}
+nav_next: {"path": "tailwind/docs/align-items/index.md", "title": "align-items"}
 ---
 
 # align-content
@@ -199,7 +199,7 @@ Prefix an `align-content` utility with a breakpoint variant like `md:` to only a
 <div class="grid content-start md:content-around ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

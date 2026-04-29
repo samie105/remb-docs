@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
-nav_next: {"path": "../public-static-pages/index.md", "title": "Building public pages"}
+nav_prev: {"path": "nextjs/docs/app/guides/production-checklist/index.md", "title": "How to optimize your Next.js application for production"}
+nav_next: {"path": "nextjs/docs/app/guides/public-static-pages/index.md", "title": "Building public pages"}
 ---
 
 # How to build a Progressive Web Application (PWA) with Next.js
@@ -32,7 +32,7 @@ PWAs allow you to:
 
 ### 1\. Creating the Web App Manifest[](#1-creating-the-web-app-manifest)
 
-Next.js provides built-in support for creating a [web app manifest](/docs/app/api-reference/file-conventions/metadata/manifest) using the App Router. You can create either a static or dynamic manifest file:
+Next.js provides built-in support for creating a [web app manifest](../../api-reference/file-conventions/metadata/manifest/index.md) using the App Router. You can create either a static or dynamic manifest file:
 
 For example, create a `app/manifest.ts` or `app/manifest.json` file:
 
@@ -401,7 +401,7 @@ Modern browsers will automatically show an installation prompt to users when the
 
 To ensure you can view notifications locally, ensure that:
 
--   You are [running locally with HTTPS](/docs/app/api-reference/cli/next#using-https-during-development)
+-   You are [running locally with HTTPS](../../api-reference/cli/next/index.md#using-https-during-development)
     -   Use `next dev --experimental-https` for testing
 -   Your browser (Chrome, Safari, Firefox) has notifications enabled
     -   When prompted locally, accept permissions to use notifications
@@ -468,12 +468,12 @@ Let’s go over each of these options:
     2.  `Cache-Control: no-cache, no-store, must-revalidate`: Prevents caching of the service worker, ensuring users always get the latest version.
     3.  `Content-Security-Policy: default-src 'self'; script-src 'self'`: Implements a strict Content Security Policy for the service worker, only allowing scripts from the same origin.
 
-Learn more about defining [Content Security Policies](/docs/app/guides/content-security-policy) with Next.js.
+Learn more about defining [Content Security Policies](../content-security-policy/index.md) with Next.js.
 
 ## Extending your PWA[](#extending-your-pwa)
 
 1.  **Exploring PWA Capabilities**: PWAs can leverage various web APIs to provide advanced functionality. Consider exploring features like background sync, periodic background sync, or the File System Access API to enhance your application. For inspiration and up-to-date information on PWA capabilities, you can refer to resources like [What PWA Can Do Today](https://whatpwacando.today/).
-2.  **Static Exports:** If your application requires not running a server, and instead using a static export of files, you can update the Next.js configuration to enable this change. Learn more in the [Next.js Static Export documentation](/docs/app/guides/static-exports). However, you will need to move from Server Actions to calling an external API, as well as moving your defined headers to your proxy.
+2.  **Static Exports:** If your application requires not running a server, and instead using a static export of files, you can update the Next.js configuration to enable this change. Learn more in the [Next.js Static Export documentation](../static-exports/index.md). However, you will need to move from Server Actions to calling an external API, as well as moving your defined headers to your proxy.
 3.  **Offline Support**: To provide offline functionality, one option is [Serwist](https://github.com/serwist/serwist) with Next.js. You can find an example of how to integrate Serwist with Next.js in their [documentation](https://github.com/serwist/serwist/tree/main/examples/next-basic). **Note:** this plugin currently requires webpack configuration.
 4.  **Security Considerations**: Ensure that your service worker is properly secured. This includes using HTTPS, validating the source of push messages, and implementing proper error handling.
 5.  **User Experience**: Consider implementing progressive enhancement techniques to ensure your app works well even when certain PWA features are not supported by the user's browser.
@@ -484,6 +484,6 @@ Learn more about defining [Content Security Policies](/docs/app/guides/content-s
 
 API Reference for manifest.json file.
 
-](/docs/app/api-reference/file-conventions/metadata/manifest)
+](../../api-reference/file-conventions/metadata/manifest/index.md)
 
 Was this helpful?

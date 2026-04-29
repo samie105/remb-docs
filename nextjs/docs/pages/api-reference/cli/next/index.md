@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../create-next-app/index.md", "title": "create-next-app CLI"}
-nav_next: {"path": "../../adapters/index.md", "title": "Adapters"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/cli/create-next-app/index.md", "title": "create-next-app CLI"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/index.md", "title": "Adapters"}
 ---
 
 # next CLI
@@ -86,8 +86,8 @@ The following options are available when running `next dev`:
 | --- | --- |
 | `-h, --help` | Show all available options. |
 | `[directory]` | A directory in which to build the application. If not provided, current directory is used. |
-| `--turbopack` | Force enable [Turbopack](/docs/app/api-reference/turbopack) (enabled by default). Also available as `--turbo`. |
-| `--webpack` | Use Webpack instead of the default [Turbopack](/docs/app/api-reference/turbopack) bundler for development. |
+| `--turbopack` | Force enable [Turbopack](../../../../app/api-reference/turbopack/index.md) (enabled by default). Also available as `--turbo`. |
+| `--webpack` | Use Webpack instead of the default [Turbopack](../../../../app/api-reference/turbopack/index.md) bundler for development. |
 | `-p` or `--port <port>` | Specify a port number on which to start the application. Default: 3000, env: PORT |
 | `-H`or `--hostname <hostname>` | Specify a hostname on which to start the application. Useful for making the application available for other devices on the network. Default: 0.0.0.0 |
 | `--experimental-https` | Starts the server with HTTPS and generates a self-signed certificate. |
@@ -118,7 +118,7 @@ The following options are available for the `next build` command:
 | --- | --- |
 | `-h, --help` | Show all available options. |
 | `[directory]` | A directory on which to build the application. If not provided, the current directory will be used. |
-| `--turbopack` | Force enable [Turbopack](/docs/app/api-reference/turbopack) (enabled by default). Also available as `--turbo`. |
+| `--turbopack` | Force enable [Turbopack](../../../../app/api-reference/turbopack/index.md) (enabled by default). Also available as `--turbo`. |
 | `--webpack` | Build using Webpack. |
 | `-d` or `--debug` | Enables a more verbose build output. With this flag enabled additional build output like rewrites, redirects, and headers will be shown. |
 |  |  |
@@ -253,7 +253,7 @@ The following options are available for the `next upgrade` command:
 
 ### `next experimental-analyze` options[](#next-experimental-analyze-options)
 
-`next experimental-analyze` analyzes your application's bundle output using [Turbopack](/docs/app/api-reference/turbopack). This command helps you understand the size and composition of your bundles, including JavaScript, CSS, and other assets. This command doesn't produce an application build.
+`next experimental-analyze` analyzes your application's bundle output using [Turbopack](../../../../app/api-reference/turbopack/index.md). This command helps you understand the size and composition of your bundles, including JavaScript, CSS, and other assets. This command doesn't produce an application build.
 
 #### pnpm
 
@@ -283,7 +283,7 @@ By default, the command starts a local server after analysis completes, allowing
 -   View the full import chain showing why a module is included
 -   Trace imports across server-to-client component boundaries and dynamic imports
 
-See [Package Bundling](/docs/app/guides/package-bundling#optimizing-large-bundles) for optimization strategies.
+See [Package Bundling](../../../../app/guides/package-bundling/index.md#optimizing-large-bundles) for optimization strategies.
 
 To write the analysis output to disk without starting the server, use the `--output` flag. The output is written to `.next/diagnostics/analyze` and contains static files that can be copied elsewhere or shared with others:
 

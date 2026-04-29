@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:10.420Z"
 content_hash: "b635f7d7600c0b35f1b91698eff4cca5850fc7c5c0c425a14e77b645f59441c0"
 menu_path: ["Contribute to Astro"]
 section_path: []
-nav_prev: {"path": "../guides/migrate-to-astro/from-wordpress/index.md", "title": "Migrating from WordPress"}
-nav_next: {"path": "../reference/astro-syntax/index.md", "title": "Template expressions reference"}
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-wordpress/index.md", "title": "Migrating from WordPress"}
+nav_next: {"path": "astro/en/reference/astro-syntax/index.md", "title": "Template expressions reference"}
 ---
 
 # Contribute to Astro
@@ -486,4 +486,4 @@ These docs are brought to you by all these helpful people. [Join us on GitHub!](
 *   [![karolhas](https://avatars.githubusercontent.com/u/99908851?s=64 "karolhas")](https://github.com/karolhas)
 *   [![trueberryless](https://avatars.githubusercontent.com/u/99918022?s=64 "trueberryless")](https://github.com/trueberryless)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -10,8 +10,8 @@ content_hash: "b7bef0b570ee285d758a5f4549c48476c43a329c2ae1cd52c6b6edf0699b81b2"
 menu_path: ["Composite types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Fields & types"}
-nav_next: {"path": "../null-and-undefined/index.md", "title": "Null and undefined"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/index.md", "title": "Fields & types"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/null-and-undefined/index.md", "title": "Null and undefined"}
 ---
 
 [Composite types](../../../prisma-schema/data-model/models/index.md), known as [embedded documents](https://www.mongodb.com/docs/manual/data-modeling/#embedded-data) in MongoDB, allow you to embed records within other records.

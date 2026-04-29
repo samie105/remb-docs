@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:44:24.447Z"
 content_hash: "f7ce2b9ea455d04652b48b7503e0b6a85ca4abb0aa5a8ba9b27c519c2e56ac8c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with redis-py","→","Redis leaderboard with redis-py"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with redis-py","→","Redis leaderboard with redis-py"]
-nav_prev: {"path": "../php/index.md", "title": "Redis leaderboard with PHP"}
-nav_next: {"path": "../ruby/index.md", "title": "Redis leaderboard with Ruby"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/php/index.md", "title": "Redis leaderboard with PHP"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/ruby/index.md", "title": "Redis leaderboard with Ruby"}
 ---
 
 # Redis leaderboard with redis-py
 
 Implement a Redis leaderboard in Python with redis-py and sorted sets
 
-This guide shows you how to implement a Redis-backed leaderboard in Python with [`redis-py`](/docs/latest/develop/clients/redis-py/). It uses a sorted set to store rank order, Redis hashes to store per-user metadata, and a small local web server so you can explore the leaderboard interactively in your browser.
+This guide shows you how to implement a Redis-backed leaderboard in Python with [`redis-py`](../../../clients/redis-py/index.md). It uses a sorted set to store rank order, Redis hashes to store per-user metadata, and a small local web server so you can explore the leaderboard interactively in your browser.
 
 ## Overview
 

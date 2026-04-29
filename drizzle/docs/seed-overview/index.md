@@ -10,8 +10,8 @@ content_hash: "62a27b5cf60edc6a4b6ecec230293c236b343b2f8fc36df190599b15a253e6c7"
 menu_path: ["Drizzle Seed"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-config-file/index.md", "title": "Drizzle Kit configuration file"}
-nav_next: {"path": "../seed-functions/index.md", "title": "Generators"}
+nav_prev: {"path": "drizzle/docs/drizzle-config-file/index.md", "title": "Drizzle Kit configuration file"}
+nav_next: {"path": "drizzle/docs/seed-functions/index.md", "title": "Generators"}
 ---
 
 ## Drizzle Seed

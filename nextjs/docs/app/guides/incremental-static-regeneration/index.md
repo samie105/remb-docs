@@ -11,8 +11,8 @@ menu_path: ["How to implement Incremental Static Regeneration (ISR)"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
-nav_next: {"path": "../instrumentation/index.md", "title": "How to set up instrumentation"}
+nav_prev: {"path": "nextjs/docs/app/guides/how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/instrumentation/index.md", "title": "How to set up instrumentation"}
 ---
 
 # How to implement Incremental Static Regeneration (ISR)
@@ -83,19 +83,19 @@ Here's how this example works:
 3.  After 60 seconds has passed, the next request will still return the cached (now stale) page
 4.  The cache is invalidated and a new version of the page begins generating in the background
 5.  Once generated successfully, the next request will return the updated page and cache it for subsequent requests
-6.  If `/blog/26` is requested, and it exists, the page will be generated on-demand. This behavior can be changed by using a different [dynamicParams](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams) value. However, if the post does not exist, then 404 is returned.
+6.  If `/blog/26` is requested, and it exists, the page will be generated on-demand. This behavior can be changed by using a different [dynamicParams](../../api-reference/file-conventions/route-segment-config/dynamicParams/index.md) value. However, if the post does not exist, then 404 is returned.
 
 ## Reference[](#reference)
 
 ### Route segment config[](#route-segment-config)
 
--   [`revalidate`](/docs/app/guides/caching-without-cache-components#route-segment-config-revalidate)
--   [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams)
+-   [`revalidate`](../caching-without-cache-components/index.md#route-segment-config-revalidate)
+-   [`dynamicParams`](../../api-reference/file-conventions/route-segment-config/dynamicParams/index.md)
 
 ### Functions[](#functions)
 
--   [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath)
--   [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag)
+-   [`revalidatePath`](../../api-reference/functions/revalidatePath/index.md)
+-   [`revalidateTag`](../../api-reference/functions/revalidateTag/index.md)
 
 ## Examples[](#examples)
 
@@ -132,7 +132,7 @@ export default async function Page() {
 }
 ```
 
-We recommend setting a high revalidation time. For instance, 1 hour instead of 1 second. If you need more precision, consider using on-demand revalidation. If you need real-time data, consider switching to [dynamic rendering](/docs/app/glossary#dynamic-rendering).
+We recommend setting a high revalidation time. For instance, 1 hour instead of 1 second. If you need more precision, consider using on-demand revalidation. If you need real-time data, consider switching to [dynamic rendering](../../glossary/index.md#dynamic-rendering).
 
 ### On-demand revalidation with `revalidatePath`[](#on-demand-revalidation-with-revalidatepath)
 
@@ -201,7 +201,7 @@ export default async function Page() {
 }
 ```
 
-You can then use `revalidateTag` in a [Server Actions](/docs/app/getting-started/mutating-data) or [Route Handler](/docs/app/api-reference/file-conventions/route):
+You can then use `revalidateTag` in a [Server Actions](../../getting-started/mutating-data/index.md) or [Route Handler](../../api-reference/file-conventions/route/index.md):
 
 app/actions.ts
 
@@ -220,17 +220,17 @@ export async function createPost() {
 
 ### Handling uncaught exceptions[](#handling-uncaught-exceptions)
 
-If an error is thrown while attempting to revalidate data, the last successfully generated data will continue to be served from the cache. On the next subsequent request, Next.js will retry revalidating the data. [Learn more about error handling](/docs/app/getting-started/error-handling).
+If an error is thrown while attempting to revalidate data, the last successfully generated data will continue to be served from the cache. On the next subsequent request, Next.js will retry revalidating the data. [Learn more about error handling](../../getting-started/error-handling/index.md).
 
 ### Customizing the cache location[](#customizing-the-cache-location)
 
-You can configure the Next.js cache location if you want to persist cached pages and data to durable storage, or share the cache across multiple containers or instances of your Next.js application. [Learn more](/docs/app/guides/self-hosting#caching-and-isr).
+You can configure the Next.js cache location if you want to persist cached pages and data to durable storage, or share the cache across multiple containers or instances of your Next.js application. [Learn more](../self-hosting/index.md#caching-and-isr).
 
 ## Troubleshooting[](#troubleshooting)
 
 ### Debugging cached data in local development[](#debugging-cached-data-in-local-development)
 
-If you are using the `fetch` API, you can add additional logging to understand which requests are cached or uncached. [Learn more about the `logging` option](/docs/app/api-reference/config/next-config-js/logging).
+If you are using the `fetch` API, you can add additional logging to understand which requests are cached or uncached. [Learn more about the `logging` option](../../api-reference/config/next-config-js/logging/index.md).
 
 next.config.js
 
@@ -261,11 +261,11 @@ This will make the Next.js server console log ISR cache hits and misses. You can
 ## Caveats[](#caveats)
 
 -   ISR is only supported when using the Node.js runtime (default).
--   ISR is not supported when creating a [Static Export](/docs/app/guides/static-exports).
--   If you have multiple `fetch` requests in a prerendered route, and each has a different `revalidate` frequency, the lowest time will be used for ISR. However, those revalidate frequencies will still be respected by the [cache](/docs/app/getting-started/caching).
+-   ISR is not supported when creating a [Static Export](../static-exports/index.md).
+-   If you have multiple `fetch` requests in a prerendered route, and each has a different `revalidate` frequency, the lowest time will be used for ISR. However, those revalidate frequencies will still be respected by the [cache](../../getting-started/caching/index.md).
 -   If any of the `fetch` requests used on a route have a `revalidate` time of `0`, or an explicit `no-store`, the route will be dynamically rendered.
 -   Proxy won't be executed for on-demand ISR requests, meaning any path rewrites or logic in Proxy will not be applied. Ensure you are revalidating the exact path. For example, `/post/1` instead of a rewritten `/post-1`.
--   When running multiple instances, the default file-system cache is per-instance. On-demand revalidation only invalidates the instance that receives the call. Use a shared [custom cache handler](/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath) to coordinate across instances. See [How Revalidation Works](/docs/app/guides/how-revalidation-works) for the full architecture.
+-   When running multiple instances, the default file-system cache is per-instance. On-demand revalidation only invalidates the instance that receives the call. Use a shared [custom cache handler](../../api-reference/config/next-config-js/incrementalCacheHandlerPath/index.md) to coordinate across instances. See [How Revalidation Works](../how-revalidation-works/index.md) for the full architecture.
 -   Background regeneration (stale-while-revalidate) runs on the instance that receives the triggering request. On platforms with per-request billing, this background work counts as additional compute.
 -   You can use the `x-nextjs-cache` response header to observe cache behavior. Values are `HIT` (served from cache), `STALE` (served from cache, revalidating in background), `MISS` (not in cache, rendered fresh), or `REVALIDATED` (regenerated via on-demand revalidation).
 
@@ -273,12 +273,12 @@ This will make the Next.js server console log ISR cache hits and misses. You can
 
 | Deployment Option | Supported |
 | --- | --- |
-| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
-| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
-| [Static export](/docs/app/getting-started/deploying#static-export) | No |
-| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
+| [Node.js server](../../getting-started/deploying/index.md#nodejs-server) | Yes |
+| [Docker container](../../getting-started/deploying/index.md#docker) | Yes |
+| [Static export](../../getting-started/deploying/index.md#static-export) | No |
+| [Adapters](../../getting-started/deploying/index.md#adapters) | Platform-specific |
 
-Learn how to [configure ISR](/docs/app/guides/self-hosting#caching-and-isr) when self-hosting Next.js.
+Learn how to [configure ISR](../self-hosting/index.md#caching-and-isr) when self-hosting Next.js.
 
 ## Version history[](#version-history)
 

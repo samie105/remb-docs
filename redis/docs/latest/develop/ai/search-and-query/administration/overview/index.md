@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:19.846Z"
 content_hash: "6ed782cd61b0a2b655bd545805c8d4375dd971d9cfbc193ec763081c2f54afe3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Technical overview","→","Technical overview"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Administration","→","Administration","→\n      \n        Technical overview","→","Technical overview"]
-nav_prev: {"path": "../gc/index.md", "title": "Garbage collection"}
-nav_next: {"path": "../../advanced-concepts/index.md", "title": "Search concepts"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/administration/gc/index.md", "title": "Garbage collection"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/index.md", "title": "Search concepts"}
 ---
 
 # Technical overview
@@ -132,7 +132,7 @@ Optionally, you can choose not to save any one of those attributes besides the I
 
 ### Numeric index
 
-Numeric properties are indexed in a special data structure that enables filtering by numeric ranges in an efficient way. One could view a numeric value as a term operating just like an inverted index. For example, all the products with the price $100 are in a specific list, which is intersected with the rest of the query. See [query execution engine](/docs/latest/develop/ai/search-and-query/administration/design/#query-execution-engine) for more information.
+Numeric properties are indexed in a special data structure that enables filtering by numeric ranges in an efficient way. One could view a numeric value as a term operating just like an inverted index. For example, all the products with the price $100 are in a specific list, which is intersected with the rest of the query. See [query execution engine](../design/index.md#query-execution-engine) for more information.
 
 However, in order to filter by a range of prices, you would have to intersect the query with all the distinct prices within that range, or perform a union query. If the range has many values in it, this becomes highly inefficient.
 
@@ -171,7 +171,7 @@ Simple syntax is supported for complex queries that can be combined together to 
 *   Selection of specific fields using the syntax `@field:hello world`.
 *   Numeric Range matches on numeric fields with the syntax `@field:[{min} {max}]`.
 *   Geo radius matches on geo fields with the syntax `@field:[{lon} {lat} {radius} {m|km|mi|ft}]`
-*   Tag field filters with the syntax `@field:{tag | tag | ...}`. See the [full documentation on tag fields](/docs/latest/develop/ai/search-and-query/query/#tag-filters).
+*   Tag field filters with the syntax `@field:{tag | tag | ...}`. See the [full documentation on tag fields](../../query/index.md#tag-filters).
 *   Optional terms or clauses: `foo ~bar` means bar is optional but documents with bar in them will rank higher.
 
 ### Complex query examples
@@ -227,7 +227,7 @@ And negative clauses can also be added to filter out plasma and CRT TVs:
 
 Redis comes with a few very basic scoring functions to evaluate document relevance. They are all based on document scores and term frequency. This is regardless of the ability to use sortable fields (see below). Scoring functions are specified by adding the `SCORER {scorer_name}` argument to a search request.
 
-If you prefer a custom scoring function, it is possible to add more functions using the [extension API](/docs/latest/develop/ai/search-and-query/administration/extensions/).
+If you prefer a custom scoring function, it is possible to add more functions using the [extension API](../extensions/index.md).
 
 These are the pre-bundled scoring functions available in Redis:
 
@@ -310,13 +310,13 @@ However, searching for fuzzy prefixes (especially very short ones) will traverse
 
 The autocomplete engine supports Unicode, allowing for fuzzy matches in non-latin languages as well.
 
-See the [autocomplete page](/docs/latest/develop/ai/search-and-query/advanced-concepts/autocomplete/) for more information and examples.
+See the [autocomplete page](../../advanced-concepts/autocomplete/index.md) for more information and examples.
 
 ## Search engine internals
 
 ### The Redis module API
 
-Redis Search is implemented using the [Redis module API](/docs/latest/develop/reference/modules/) and is loaded into Redis as an extension module at start-up.
+Redis Search is implemented using the [Redis module API](../../../../reference/modules/index.md) and is loaded into Redis as an extension module at start-up.
 
 Redis modules make it possible to extend Redis's core functionality, implementing new Redis commands, data structures, and capabilities with similar performance to native core Redis itself. Redis modules are dynamic libraries that can be loaded into Redis at start-up or loaded at run-time using the [`MODULE LOAD`](/docs/latest/commands/module-load/) command. Redis exports a C API, in the form of a single C header file called `redismodule.h`.
 

@@ -10,8 +10,8 @@ content_hash: "29edff1d0dfdde13a0a3674e2cf5bc72bf22bfadc0b040de1f1b657aa92cb631"
 menu_path: ["Linter - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../jupyter/index.md", "title": "Jupyter - Deno documentation"}
-nav_next: {"path": "../network/index.md", "title": "Network - Deno documentation"}
+nav_prev: {"path": "deno/api/deno/jupyter/index.md", "title": "Jupyter - Deno documentation"}
+nav_next: {"path": "deno/api/deno/network/index.md", "title": "Network - Deno documentation"}
 ---
 
 f

@@ -9,21 +9,21 @@ last_crawled_at: "2026-04-18T16:53:22.404Z"
 content_hash: "22a35ca6e1ed561a1d14b7056a836ea02e735ebb9a66b0511deeb08d16bc31f8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Create a Bedrock agent","→","Create a Bedrock agent"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Create a Bedrock agent","→","Create a Bedrock agent"]
-nav_prev: {"path": "../index.md", "title": "Amazon Bedrock"}
-nav_next: {"path": "../create-knowledge-base/index.md", "title": "Create a Bedrock knowledge base"}
+nav_prev: {"path": "redis/docs/latest/integrate/amazon-bedrock/index.md", "title": "Amazon Bedrock"}
+nav_next: {"path": "redis/docs/latest/integrate/amazon-bedrock/create-knowledge-base/index.md", "title": "Create a Bedrock knowledge base"}
 ---
 
 # Create a Bedrock agent
 
 Shows how to set up your Agent in Amazon Bedrock.
 
-After you have [created a knowledge base](/docs/latest/integrate/amazon-bedrock/create-knowledge-base/), you can use it to create an agent on Amazon Bedrock.
+After you have [created a knowledge base](../create-knowledge-base/index.md), you can use it to create an agent on Amazon Bedrock.
 
 Before you begin this guide, you will need:
 
 *   An [AWS IAM Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) with [permissions for the Bedrock agent](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html).
     
-*   A [Bedrock knowledge base](/docs/latest/integrate/amazon-bedrock/create-knowledge-base/) connected to a [Redis Cloud vector database](/docs/latest/integrate/amazon-bedrock/set-up-redis/).
+*   A [Bedrock knowledge base](../create-knowledge-base/index.md) connected to a [Redis Cloud vector database](../set-up-redis/index.md).
     
 
 ## Create an agent

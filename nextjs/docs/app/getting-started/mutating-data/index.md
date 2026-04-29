@@ -11,8 +11,8 @@ menu_path: ["Mutating Data"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../fetching-data/index.md", "title": "Fetching Data"}
-nav_next: {"path": "../caching/index.md", "title": "Caching"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/fetching-data/index.md", "title": "Fetching Data"}
+nav_next: {"path": "nextjs/docs/app/getting-started/caching/index.md", "title": "Caching"}
 ---
 
 # Mutating Data
@@ -36,7 +36,7 @@ When an action is invoked, Next.js can return both the updated UI and new data i
 
 Behind the scenes, actions use the `POST` method, and only this HTTP method can invoke them.
 
-Server Functions are reachable via direct POST requests, not just through your application's UI. Always verify authentication and authorization inside every Server Function. See the [Data Security guide](/docs/app/guides/data-security#authentication-and-authorization) for recommended patterns.
+Server Functions are reachable via direct POST requests, not just through your application's UI. Always verify authentication and authorization inside every Server Function. See the [Data Security guide](../../guides/data-security/index.md#authentication-and-authorization) for recommended patterns.
 
 > **Good to know:** A Server Action is a Server Function used in a specific way (for handling form submissions and mutations). Server Function is the broader term.
 
@@ -163,7 +163,7 @@ There are two main ways you can invoke a Server Function:
 1.  [Forms](#forms) in Server and Client Components
 2.  [Event Handlers](#event-handlers) and [useEffect](#useeffect) in Client Components
 
-> **Good to know:** Server Functions are designed for server-side mutations. The client currently dispatches and awaits them one at a time. This is an implementation detail and may change. If you need parallel data fetching, use [data fetching](/docs/app/getting-started/fetching-data#server-components) in Server Components, or perform parallel work inside a single Server Function or [Route Handler](/docs/app/guides/backend-for-frontend#manipulating-data).
+> **Good to know:** Server Functions are designed for server-side mutations. The client currently dispatches and awaits them one at a time. This is an implementation detail and may change. If you need parallel data fetching, use [data fetching](../fetching-data/index.md#server-components) in Server Components, or perform parallel work inside a single Server Function or [Route Handler](../../guides/backend-for-frontend/index.md#manipulating-data).
 
 ### Forms[](#forms)
 
@@ -275,7 +275,7 @@ export function Button() {
 
 ### Refresh data[](#refresh-data)
 
-After a mutation, you may want to refresh the current page to show the latest data. You can do this by calling [`refresh`](/docs/app/api-reference/functions/refresh) from `next/cache` in a Server Action:
+After a mutation, you may want to refresh the current page to show the latest data. You can do this by calling [`refresh`](../../api-reference/functions/refresh/index.md) from `next/cache` in a Server Action:
 
 app/lib/actions.ts
 
@@ -299,11 +299,11 @@ export async function updatePost(formData: FormData) {
 }
 ```
 
-This refreshes the client router, ensuring the UI reflects the latest state. The `refresh()` function does not revalidate tagged data. To revalidate tagged data, use [`updateTag`](/docs/app/api-reference/functions/updateTag) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) instead.
+This refreshes the client router, ensuring the UI reflects the latest state. The `refresh()` function does not revalidate tagged data. To revalidate tagged data, use [`updateTag`](../../api-reference/functions/updateTag/index.md) or [`revalidateTag`](../../api-reference/functions/revalidateTag/index.md) instead.
 
 ### Revalidate data[](#revalidate-data)
 
-After performing a mutation, you can revalidate the Next.js cache and show the updated data by calling [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) within the Server Function:
+After performing a mutation, you can revalidate the Next.js cache and show the updated data by calling [`revalidatePath`](../../api-reference/functions/revalidatePath/index.md) or [`revalidateTag`](../../api-reference/functions/revalidateTag/index.md) within the Server Function:
 
 app/lib/actions.ts
 
@@ -328,7 +328,7 @@ export async function createPost(formData: FormData) {
 
 ### Redirect after a mutation[](#redirect-after-a-mutation)
 
-You may want to redirect the user to a different page after a mutation. You can do this by calling [`redirect`](/docs/app/api-reference/functions/redirect) within the Server Function.
+You may want to redirect the user to a different page after a mutation. You can do this by calling [`redirect`](../../api-reference/functions/redirect/index.md) within the Server Function.
 
 app/lib/actions.ts
 
@@ -354,13 +354,13 @@ export async function createPost(formData: FormData) {
 }
 ```
 
-Calling `redirect` [throws](/docs/app/api-reference/functions/redirect#behavior) a framework handled control-flow exception. Any code after it won't execute. If you need fresh data, call [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) beforehand.
+Calling `redirect` [throws](../../api-reference/functions/redirect/index.md#behavior) a framework handled control-flow exception. Any code after it won't execute. If you need fresh data, call [`revalidatePath`](../../api-reference/functions/revalidatePath/index.md) or [`revalidateTag`](../../api-reference/functions/revalidateTag/index.md) beforehand.
 
 ### Cookies[](#cookies)
 
-You can `get`, `set`, and `delete` cookies inside a Server Action using the [`cookies`](/docs/app/api-reference/functions/cookies) API.
+You can `get`, `set`, and `delete` cookies inside a Server Action using the [`cookies`](../../api-reference/functions/cookies/index.md) API.
 
-When you [set or delete](/docs/app/api-reference/functions/cookies#understanding-cookie-behavior-in-server-functions) a cookie in a Server Action, Next.js re-renders the current page and its layouts on the server so the **UI reflects the new cookie value**.
+When you [set or delete](../../api-reference/functions/cookies/index.md#understanding-cookie-behavior-in-server-functions) a cookie in a Server Action, Next.js re-renders the current page and its layouts on the server so the **UI reflects the new cookie value**.
 
 > **Good to know**: The server update applies to the current React tree, re-rendering, mounting, or unmounting components, as needed. Client state is preserved for re-rendered components, and effects re-run if their dependencies changed.
 
@@ -427,18 +427,18 @@ Learn more about the features mentioned in this page by reading the API Referenc
 
 API Reference for the revalidatePath function.
 
-](/docs/app/api-reference/functions/revalidatePath)[
+](../../api-reference/functions/revalidatePath/index.md)[
 
 ### revalidateTag
 
 API Reference for the revalidateTag function.
 
-](/docs/app/api-reference/functions/revalidateTag)[
+](../../api-reference/functions/revalidateTag/index.md)[
 
 ### redirect
 
 API Reference for the redirect function.
 
-](/docs/app/api-reference/functions/redirect)
+](../../api-reference/functions/redirect/index.md)
 
 Was this helpful?

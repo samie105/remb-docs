@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:25.003Z"
 content_hash: "2f1de17814d490c25e284d9c7ff04577e43d02a0b861d423c0c726ac74dd1bac"
 menu_path: ["Set a per-test timeout with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "../testing-library/index.md", "title": "Using Testing Library with Bun"}
-nav_next: {"path": "../todo-tests/index.md", "title": "Mark a test as a \"todo\" with the Bun test runner"}
+nav_prev: {"path": "bun/docs/guides/test/testing-library/index.md", "title": "Using Testing Library with Bun"}
+nav_next: {"path": "bun/docs/guides/test/todo-tests/index.md", "title": "Mark a test as a \"todo\" with the Bun test runner"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../todo-tests/index.md", "title": "Mark a test as a \"todo\"
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use the `--timeout` flag to set a timeout for each test in milliseconds. If any test exceeds this timeout, it will be marked as failed. The default timeout is `5000` (5 seconds).
 
@@ -45,7 +45,7 @@ bun test --timeout 3000 # 3 seconds
 
 * * *
 
-See [Docs > Test runner](/docs/test) for complete documentation of `bun test`.
+See [Docs > Test runner](../../../test/index.md) for complete documentation of `bun test`.
 
 Was this page helpful?
 
@@ -57,10 +57,10 @@ Mark a test as a "todo" with the Bun test runner
 
 Previous
 
-](/docs/guides/test/todo-tests)[
+](../todo-tests/index.md)[
 
 Bail early with the Bun test runner
 
 Next
 
-](/docs/guides/test/bail)
+](../bail/index.md)

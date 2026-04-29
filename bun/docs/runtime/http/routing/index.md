@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:09.318Z"
 content_hash: "a4a8afc66f5dc48e5dd03c4635e2e2ec7ec5e03eaa35bbfb32bf0e843ff57b60"
 menu_path: ["Routing"]
 section_path: []
-nav_prev: {"path": "../metrics/index.md", "title": "Metrics"}
-nav_next: {"path": "../server/index.md", "title": "Server"}
+nav_prev: {"path": "bun/docs/runtime/http/metrics/index.md", "title": "Metrics"}
+nav_next: {"path": "bun/docs/runtime/http/server/index.md", "title": "Server"}
 ---
 
 You can add routes to `Bun.serve()` by using the `routes` property (for static paths, parameters, and wildcards) or by handling unmatched requests with the [`fetch`](#fetch) method. `Bun.serve()`’s router builds on top uWebSocket’s [tree-based approach](https://github.com/oven-sh/bun/blob/0d1a00fa0f7830f8ecd99c027fce8096c9d459b6/packages/bun-uws/src/HttpRouter.h#L57-L64) to add [SIMD-accelerated route parameter decoding](https://github.com/oven-sh/bun/blob/main/src/bun.js/bindings/decodeURIComponentSIMD.cpp#L21-L271) and [JavaScriptCore structure caching](https://github.com/oven-sh/bun/blob/main/src/bun.js/bindings/ServerRouteList.cpp#L100-L101) to push the performance limits of what modern hardware allows.

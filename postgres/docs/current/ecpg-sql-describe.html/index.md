@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:01.493Z"
 content_hash: "dc2f3531c0e017993acc335573461c44d13f968981898e1162a5e015ad55a6e1"
 menu_path: ["PostgreSQL: Documentation: 18: DESCRIBE"]
 section_path: []
-nav_prev: {"path": "../ecpg-sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
-nav_next: {"path": "../ecpg-sql-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: DISCONNECT"}
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-declare.html/index.md", "title": "PostgreSQL: Documentation: 18: DECLARE"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: DISCONNECT"}
 ---
 
 DESCRIBE — obtain information about a prepared statement or result set

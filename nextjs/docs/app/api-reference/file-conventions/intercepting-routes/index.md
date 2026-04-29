@@ -11,8 +11,8 @@ menu_path: ["Intercepting Routes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../instrumentation-client/index.md", "title": "instrumentation-client.js"}
-nav_next: {"path": "../layout/index.md", "title": "layout.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation-client/index.md", "title": "instrumentation-client.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/layout/index.md", "title": "layout.js"}
 ---
 
 # Intercepting Routes
@@ -44,13 +44,13 @@ For example, you can intercept the `photo` segment from within the `feed` segmen
 
 ![Intercepting routes folder structure](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/intercepted-routes-files.png)
 
-> **Good to know:** The `(..)` convention is based on _route segments_, not the file-system. For example, it does not consider `@slot` folders in [Parallel Routes](/docs/app/api-reference/file-conventions/parallel-routes).
+> **Good to know:** The `(..)` convention is based on _route segments_, not the file-system. For example, it does not consider `@slot` folders in [Parallel Routes](../parallel-routes/index.md).
 
 ## Examples[](#examples)
 
 ### Modals[](#modals)
 
-Intercepting Routes can be used together with [Parallel Routes](/docs/app/api-reference/file-conventions/parallel-routes) to create modals. This allows you to solve common challenges when building modals, such as:
+Intercepting Routes can be used together with [Parallel Routes](../parallel-routes/index.md) to create modals. This allows you to solve common challenges when building modals, such as:
 
 -   Making the modal content **shareable through a URL**.
 -   **Preserving context** when the page is refreshed, instead of closing the modal.
@@ -63,7 +63,7 @@ Consider the following UI pattern, where a user can open a photo modal from a ga
 
 In the above example, the path to the `photo` segment can use the `(..)` matcher since `@modal` is a slot and **not** a segment. This means that the `photo` route is only one segment level higher, despite being two file-system levels higher.
 
-See the [Parallel Routes](/docs/app/api-reference/file-conventions/parallel-routes#modals) documentation for a step-by-step example, or see our [image gallery example](https://github.com/vercel-labs/nextgram).
+See the [Parallel Routes](../parallel-routes/index.md#modals) documentation for a step-by-step example, or see our [image gallery example](https://github.com/vercel-labs/nextgram).
 
 > **Good to know:**
 > 
@@ -79,6 +79,6 @@ Learn how to create modals with Intercepted and Parallel Routes.
 
 Simultaneously render one or more pages in the same view that can be navigated independently. A pattern for highly dynamic applications.
 
-](/docs/app/api-reference/file-conventions/parallel-routes)
+](../parallel-routes/index.md)
 
 Was this helpful?

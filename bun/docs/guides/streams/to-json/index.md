@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:14.737Z"
 content_hash: "63b20e8e5bea169edfd2e9174f8968fd4b459297989d2ef3b14cc95652b0dbfa"
 menu_path: ["Convert a ReadableStream to JSON"]
 section_path: []
-nav_prev: {"path": "../to-buffer/index.md", "title": "Convert a ReadableStream to a Buffer"}
-nav_next: {"path": "../to-string/index.md", "title": "Convert a ReadableStream to a string"}
+nav_prev: {"path": "bun/docs/guides/streams/to-buffer/index.md", "title": "Convert a ReadableStream to a Buffer"}
+nav_next: {"path": "bun/docs/guides/streams/to-string/index.md", "title": "Convert a ReadableStream to a string"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../to-string/index.md", "title": "Convert a ReadableStream t
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun provides several convenience functions for reading the contents of a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) into different formats.
 
@@ -44,7 +44,7 @@ const json = await stream.json();
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
+See [Docs > API > Utils](../../../runtime/utils/index.md#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a ReadableStream to a string
 
 Previous
 
-](/docs/guides/streams/to-string)[
+](../to-string/index.md)[
 
 Convert a ReadableStream to a Blob
 
 Next
 
-](/docs/guides/streams/to-blob)
+](../to-blob/index.md)

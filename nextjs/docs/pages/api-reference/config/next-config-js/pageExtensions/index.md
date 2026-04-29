@@ -11,8 +11,8 @@ menu_path: ["pageExtensions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../output/index.md", "title": "output"}
-nav_next: {"path": "../poweredByHeader/index.md", "title": "poweredByHeader"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/output/index.md", "title": "output"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/poweredByHeader/index.md", "title": "poweredByHeader"}
 ---
 
 # pageExtensions
@@ -31,7 +31,7 @@ module.exports = {
 
 Changing these values affects _all_ Next.js pages, including the following:
 
--   [`proxy.js`](/docs/pages/api-reference/file-conventions/proxy)
+-   [`proxy.js`](../../../file-conventions/proxy/index.md)
 -   [`instrumentation.js`](/docs/pages/guides/instrumentation)
 -   `pages/_document.js`
 -   `pages/_app.js`

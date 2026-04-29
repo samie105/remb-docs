@@ -10,8 +10,8 @@ content_hash: "8d4aca17795efb14c263ce8f57fd4f038d5668b24aa24689d08e9088b4abe067"
 menu_path: ["PostgreSQL: Documentation: 18: 44.2. Data Values"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
-nav_next: {"path": "../plpython-database.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.6.\u00a0Database Access"}
+nav_prev: {"path": "postgres/docs/current/plpgsql-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.10.\u00a0Trigger Functions"}
+nav_next: {"path": "postgres/docs/current/plpython-database.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.6.\u00a0Database Access"}
 ---
 
 Generally speaking, the aim of PL/Python is to provide a “natural” mapping between the PostgreSQL and the Python worlds. This informs the data mapping rules described below.

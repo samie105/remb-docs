@@ -9,19 +9,19 @@ last_crawled_at: "2026-04-18T16:42:30.025Z"
 content_hash: "2921dd56432127797f0bf2024f67ed97121315c1146fcac1ba6e93cfc8cdbe3f"
 menu_path: ["Astro Adapter API"]
 section_path: []
-nav_prev: {"path": "../integrations-reference/index.md", "title": "Astro Integration API"}
-nav_next: {"path": "../renderer-reference/index.md", "title": "Astro Renderer API"}
+nav_prev: {"path": "astro/en/reference/integrations-reference/index.md", "title": "Astro Integration API"}
+nav_next: {"path": "astro/en/reference/renderer-reference/index.md", "title": "Astro Renderer API"}
 ---
 
 # Astro Adapter API
 
-Astro is designed to make it easy to deploy to any cloud provider for on-demand rendering, also known as server-side rendering (SSR). This ability is provided by **adapters**, which are [integrations](/en/reference/integrations-reference/). See the [on-demand rendering guide](/en/guides/on-demand-rendering/) to learn how to use an existing adapter.
+Astro is designed to make it easy to deploy to any cloud provider for on-demand rendering, also known as server-side rendering (SSR). This ability is provided by **adapters**, which are [integrations](../integrations-reference/index.md). See the [on-demand rendering guide](../../guides/on-demand-rendering/index.md) to learn how to use an existing adapter.
 
 ## What is an adapter?
 
 [Section titled “What is an adapter?”](#what-is-an-adapter)
 
-An adapter is a special kind of [integration](/en/reference/integrations-reference/) that provides an entrypoint for server rendering at request time. An adapter has access to the full Integration API and does two things:
+An adapter is a special kind of [integration](../integrations-reference/index.md) that provides an entrypoint for server rendering at request time. An adapter has access to the full Integration API and does two things:
 
 *   Implements host-specific APIs for handling requests.
 *   Configures the build according to host conventions.
@@ -30,7 +30,7 @@ An adapter is a special kind of [integration](/en/reference/integrations-referen
 
 [Section titled “Building an adapter”](#building-an-adapter)
 
-Create an integration and call the `setAdapter()` function in the [`astro:config:done`](/en/reference/integrations-reference/#astroconfigdone) hook. This allows you to define a server entrypoint and the features supported by your adapter.
+Create an integration and call the `setAdapter()` function in the [`astro:config:done`](../integrations-reference/index.md#astroconfigdone) hook. This allows you to define a server entrypoint and the features supported by your adapter.
 
 The following example creates an adapter with a server entrypoint and stable support for Astro static output:
 
@@ -59,7 +59,7 @@ Defines a unique name for your adapter. This will be used for logging.
 
 Specifies the method Astro will use to resolve the server entrypoint: `"auto"` (recommended) or `"explicit"` (default, but deprecated):
 
-*   **`"auto"` (recommended):** You are responsible for providing a valid module as an entrypoint using either [`serverEntrypoint`](/en/reference/adapter-reference/#serverentrypoint) or, if you need further customization at the Vite level using [`vite.build.rollupOptions.input`](https://rollupjs.org/configuration-options/#input).
+*   **`"auto"` (recommended):** You are responsible for providing a valid module as an entrypoint using either [`serverEntrypoint`](index.md#serverentrypoint) or, if you need further customization at the Vite level using [`vite.build.rollupOptions.input`](https://rollupjs.org/configuration-options/#input).
 *   **`"explicit"` (deprecated)**: You must provide the exports required by the host in the server entrypoint using a `createExports()` function before passing them to `setAdapter()` as an [`exports`](#exports) list. This supports adapters built using the Astro 5 version of the Adapter API. By default, all adapters will receive this value to allow backwards compatibility. **However, no new adapters should be created with this value.** Existing adapters should override this default value with `"auto"` as soon as they are able to migrate to the new v6 API.
 
 The following example defines the `entrypointResolution` and `serverEntrypoint` to tell Astro that a custom entrypoint is provided:
@@ -194,7 +194,7 @@ export default function createIntegration() {  return {    name: '@example/my-ad
 
 **Added in:** `astro@6.0.0`
 
-Adapters can provide a custom prerenderer to control how pages are prerendered by using the [`setPrerenderer()`](/en/reference/integrations-reference/#setprerenderer-option) function in the `astro:build:start` hook.
+Adapters can provide a custom prerenderer to control how pages are prerendered by using the [`setPrerenderer()`](../integrations-reference/index.md#setprerenderer-option) function in the `astro:build:start` hook.
 
 The following example shows how an adapter can set a custom prerenderer:
 
@@ -210,7 +210,7 @@ The factory function receives the default prerenderer, allowing you to wrap or e
 
 You will need to create a file that executes during server-side requests to enable on-demand rendering with your particular host. Astro’s adapter API attempts to work with any type of host and gives a flexible way to conform to the host APIs.
 
-You can import and use [`createApp()`](/en/reference/modules/astro-app/#createapp) to access methods that allow you to work with standard [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) and [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) objects.
+You can import and use [`createApp()`](../modules/astro-app/index.md#createapp) to access methods that allow you to work with standard [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) and [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) objects.
 
 This file should conform to what the host expects. For example, some serverless hosts expect you to export an `handler()` function:
 
@@ -220,7 +220,7 @@ const app = createApp();
 export async function handler(event, context) {  // ...}
 ```
 
-Learn more about the methods and utilities available in the [Adapter Server Entrypoint API Reference](/en/reference/modules/astro-app/).
+Learn more about the methods and utilities available in the [Adapter Server Entrypoint API Reference](../modules/astro-app/index.md).
 
 ### Passing build-time configuration
 
@@ -255,7 +255,7 @@ export async function handler(event, context) {  // ...}
 
 [Section titled “Building a preview entrypoint”](#building-a-preview-entrypoint)
 
-When your adapter supports [hybrid](#hybridoutput) or [server output](#serveroutput), you can provide a preview entrypoint to enable support for [`astro preview`](/en/reference/cli-reference/#astro-preview). Static output does not require a preview entrypoint.
+When your adapter supports [hybrid](#hybridoutput) or [server output](#serveroutput), you can provide a preview entrypoint to enable support for [`astro preview`](../cli-reference/index.md#astro-preview). Static output does not require a preview entrypoint.
 
 To register a preview entrypoint, make the module’s default export a function that takes the [server parameters](#previewserverparams) as an argument and returns a [`PreviewServer`](#previewserver). Then, specify the module path as the value for [`previewEntrypoint`](#previewentrypoint) in your adapter.
 
@@ -344,7 +344,7 @@ Defines whether the adapter is able to support i18n domains.
 
 **Added in:** `astro@4.10.0`
 
-Defines whether the adapter is able to support `getSecret()` exported from [`astro:env/server`](/en/reference/modules/astro-env/). When enabled, this feature allows your adapter to retrieve secrets configured by users in `env.schema`.
+Defines whether the adapter is able to support `getSecret()` exported from [`astro:env/server`](../modules/astro-env/index.md). When enabled, this feature allows your adapter to retrieve secrets configured by users in `env.schema`.
 
 The following example enables the feature by passing [a valid `AdapterSupportsKind` value](#adaptersupportskind) to the adapter:
 
@@ -405,7 +405,7 @@ In `edge` mode, the middleware code can be deployed independently from the serve
 export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          adapterFeatures: {            middlewareMode: 'edge'          }        });      },    },  };}
 ```
 
-Then, consume the hook [`astro:build:ssr`](/en/reference/integrations-reference/#astrobuildssr), which will give you a `middlewareEntryPoint`, an `URL` to the physical file on the file system.
+Then, consume the hook [`astro:build:ssr`](../integrations-reference/index.md#astrobuildssr), which will give you a `middlewareEntryPoint`, an `URL` to the physical file on the file system.
 
 ```
 export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          adapterFeatures: {            middlewareMode: 'edge'          }        });      },
@@ -437,13 +437,13 @@ export default function createIntegration() {  return {    name: '@example/my-ad
 
 **Added in:** `astro@6.0.0`
 
-Whether or not the adapter provides support for setting response headers for static pages. When this feature is enabled, Astro will return a map of the `Headers` emitted by the static pages. This map is available as `routeToHeaders` in the [`astro:build:generated` hook](/en/reference/integrations-reference/#astrobuildgenerated) and can be used to generate platform-specific output that controls HTTP headers, for example, to create a `_headers` file for platforms that support it.
+Whether or not the adapter provides support for setting response headers for static pages. When this feature is enabled, Astro will return a map of the `Headers` emitted by the static pages. This map is available as `routeToHeaders` in the [`astro:build:generated` hook](../integrations-reference/index.md#astrobuildgenerated) and can be used to generate platform-specific output that controls HTTP headers, for example, to create a `_headers` file for platforms that support it.
 
 ```
 export default function createIntegration() {  return {    name: '@example/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@example/my-adapter',          entrypointResolution: 'auto',          serverEntrypoint: '@example/my-adapter/server.js',          adapterFeatures: {            staticHeaders: true,          },        });      },      'astro:build:generated': ({ routeToHeaders }) => {        // use `routeToHeaders` to generate a configuration file        // for your virtual host of choice      },    },  };}
 ```
 
-The value of the headers might change based on the features enabled/used by the application. For example, if [CSP is enabled](/en/reference/configuration-reference/#securitycsp), the `<meta http-equiv="content-security-policy">` element is not added to the static page. Instead, its `content` is available in the `routeToHeaders` map.
+The value of the headers might change based on the features enabled/used by the application. For example, if [CSP is enabled](../configuration-reference/index.md#securitycsp), the `<meta http-equiv="content-security-policy">` element is not added to the static page. Instead, its `content` is available in the `routeToHeaders` map.
 
 ### `preserveBuildClientDir`
 
@@ -558,7 +558,7 @@ A union of valid formats to describe the mode in which middleware is run.
 
 **Type:** `(params: [PreviewServerParams](#previewserverparams)) => [PreviewServer](#previewserver) | Promise<[PreviewServer](#previewserver)>`
 
-Describes the function an adapter should export to start a preview server when [`astro preview`](/en/reference/cli-reference/#astro-preview) is run.
+Describes the function an adapter should export to start a preview server when [`astro preview`](../cli-reference/index.md#astro-preview) is run.
 
 ### `PreviewServer`
 
@@ -614,7 +614,7 @@ Describes the configuration for the preview server.
 
 **Type:** `URL`
 
-The [configured output directory](/en/reference/configuration-reference/#outdir) for the build.
+The [configured output directory](../configuration-reference/index.md#outdir) for the build.
 
 #### `PreviewServerParams.client`
 
@@ -622,7 +622,7 @@ The [configured output directory](/en/reference/configuration-reference/#outdir)
 
 **Type:** `URL`
 
-The [configured client assets directory](/en/reference/configuration-reference/#buildclient) for the build.
+The [configured client assets directory](../configuration-reference/index.md#buildclient) for the build.
 
 #### `PreviewServerParams.server`
 
@@ -632,7 +632,7 @@ The [configured client assets directory](/en/reference/configuration-reference/#
 
 **Added in:** `astro@6.0.0`
 
-The [configured directory for server JavaScript](/en/reference/configuration-reference/#buildserver) when building to SSR.
+The [configured directory for server JavaScript](../configuration-reference/index.md#buildserver) when building to SSR.
 
 #### `PreviewServerParams.serverEntrypoint`
 
@@ -648,7 +648,7 @@ The built server entry module generated by Astro.
 
 **Type:** `string | undefined`
 
-Specifies the [configured host](/en/reference/configuration-reference/#serverhost) on which the server preview should listen.
+Specifies the [configured host](../configuration-reference/index.md#serverhost) on which the server preview should listen.
 
 #### `PreviewServerParams.port`
 
@@ -656,7 +656,7 @@ Specifies the [configured host](/en/reference/configuration-reference/#serverhos
 
 **Type:** `number`
 
-Defines the [configured port](/en/reference/configuration-reference/#serverport) on which the server preview should listen.
+Defines the [configured port](../configuration-reference/index.md#serverport) on which the server preview should listen.
 
 #### `PreviewServerParams.base`
 
@@ -664,13 +664,13 @@ Defines the [configured port](/en/reference/configuration-reference/#serverport)
 
 **Type:** `string`
 
-Specifies the [configured base path](/en/reference/configuration-reference/#base) to deploy to.
+Specifies the [configured base path](../configuration-reference/index.md#base) to deploy to.
 
 #### `PreviewServerParams.logger`
 
 [Section titled “PreviewServerParams.logger”](#previewserverparamslogger)
 
-**Type:** [`AstroIntegrationLogger`](/en/reference/integrations-reference/#astrointegrationlogger)
+**Type:** [`AstroIntegrationLogger`](../integrations-reference/index.md#astrointegrationlogger)
 
 Defines an instance of the Astro logger that can be used to write logs when the preview server is running.
 
@@ -680,7 +680,7 @@ Defines an instance of the Astro logger that can be used to write logs when the 
 
 **Type:** `OutgoingHttpHeaders | undefined`
 
-Describes the [configured HTTP response headers](/en/reference/configuration-reference/#serverheaders).
+Describes the [configured HTTP response headers](../configuration-reference/index.md#serverheaders).
 
 #### `PreviewServerParams.root`
 
@@ -688,13 +688,13 @@ Describes the [configured HTTP response headers](/en/reference/configuration-ref
 
 **Type:** `URL`
 
-Specifies the [configured root directory](/en/reference/configuration-reference/#root) of the project.
+Specifies the [configured root directory](../configuration-reference/index.md#root) of the project.
 
 ## Allow installation via `astro add`
 
 [Section titled “Allow installation via astro add”](#allow-installation-via-astro-add)
 
-[The `astro add` command](/en/reference/cli-reference/#astro-add) allows users to easily add integrations and adapters to their project. To allow your adapter to be installed with this command, **add `astro-adapter` to the `keywords` field in your `package.json`**:
+[The `astro add` command](../cli-reference/index.md#astro-add) allows users to easily add integrations and adapters to their project. To allow your adapter to be installed with this command, **add `astro-adapter` to the `keywords` field in your `package.json`**:
 
 ```
 {  "name": "example",  "keywords": ["astro-adapter"],}
@@ -702,4 +702,4 @@ Specifies the [configured root directory](/en/reference/configuration-reference/
 
 Once you [publish your adapter to npm](https://docs.npmjs.com/cli/v8/commands/npm-publish), running `astro add example` will install your package with any peer dependencies specified in your `package.json` and instruct users to update their project config manually.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

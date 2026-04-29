@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:33.240Z"
 content_hash: "fb31c965c98f360c5e5a06871b3d117e6c6a9f0832fea080507889c2dc7788f3"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        n8n Redis vector store","→","n8n Redis vector store"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        n8n Redis vector store","→","n8n Redis vector store"]
-nav_prev: {"path": "../lettuce/index.md", "title": "Java client for Redis"}
-nav_next: {"path": "../nagios-with-redis-enterprise/index.md", "title": "Nagios with Redis Software"}
+nav_prev: {"path": "redis/docs/latest/integrate/lettuce/index.md", "title": "Java client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/nagios-with-redis-enterprise/index.md", "title": "Nagios with Redis Software"}
 ---
 
 # n8n Redis vector store
@@ -19,7 +19,7 @@ Learn how to use Redis as a vector store with n8n workflows
 
 [n8n](https://n8n.io/) is a platform that lets you automate data manipulation tasks. You specify the tasks using a visual graph notation known as a _workflow_. Each node in the graph represents a task, and the edges represent the data flow between tasks.
 
-The [Redis vector store](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.vectorstoreredis/) node lets you access [vector search](/docs/latest/develop/ai/search-and-query/vectors/) capabilities from your n8n workflows. Some typical usage patterns include:
+The [Redis vector store](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.vectorstoreredis/) node lets you access [vector search](../../develop/ai/search-and-query/vectors/index.md) capabilities from your n8n workflows. Some typical usage patterns include:
 
 *   **Use as a regular node to insert and retrieve documents**: Use the Redis Vector Store as a regular node to insert or get documents in the regular connection flow without using an agent.
 *   **Connect directly to an AI agent as a tool**: Connect the Redis Vector Store node directly to the tool connector of an AI agent to use a vector store as a resource when answering queries.
@@ -32,7 +32,7 @@ The sections below summarize how you can use the Redis vector store node in n8n,
 
 ## Prerequisites
 
-To use the Redis vector store node, you need a Redis server with Redis Search enabled. See the [Redis Cloud quickstart guide](/docs/latest/operate/rc/rc-quickstart/) or the [Redis Open Source installation guide](/docs/latest/operate/oss_and_stack/install/install-stack/) to learn how to set up a suitable Redis server within minutes.
+To use the Redis vector store node, you need a Redis server with Redis Search enabled. See the [Redis Cloud quickstart guide](/docs/latest/operate/rc/rc-quickstart/) or the [Redis Open Source installation guide](../../operate/oss_and_stack/install/install-stack/index.md) to learn how to set up a suitable Redis server within minutes.
 
 ## Available operations
 

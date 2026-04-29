@@ -11,8 +11,8 @@ menu_path: ["cssChunking"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../crossOrigin/index.md", "title": "crossOrigin"}
-nav_next: {"path": "../deploymentId/index.md", "title": "deploymentId"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/crossOrigin/index.md", "title": "crossOrigin"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/deploymentId/index.md", "title": "deploymentId"}
 ---
 
 # cssChunking

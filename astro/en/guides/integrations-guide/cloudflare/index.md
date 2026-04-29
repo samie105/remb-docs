@@ -9,19 +9,19 @@ last_crawled_at: "2026-04-18T16:38:45.575Z"
 content_hash: "d8a09baeede50867e0377a012edb5273299bd3b6d37e81150caca5d1971b263e"
 menu_path: ["@astrojs/\n\t\t\t\t\tcloudflare"]
 section_path: []
-nav_prev: {"path": "../vue/index.md", "title": "@astrojs/\n\t\t\t\t\tvue"}
-nav_next: {"path": "../node/index.md", "title": "@astrojs/\n\t\t\t\t\tnode"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/vue/index.md", "title": "@astrojs/\n\t\t\t\t\tvue"}
+nav_next: {"path": "astro/en/guides/integrations-guide/node/index.md", "title": "@astrojs/\n\t\t\t\t\tnode"}
 ---
 
 # @astrojs/ cloudflare
 
 v13.1.10 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/cloudflare/) [npm](https://www.npmjs.com/package/@astrojs/cloudflare) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/cloudflare/CHANGELOG.md)
 
-This adapter allows Astro to deploy your [on-demand rendered routes and features](/en/guides/on-demand-rendering/) to [Cloudflare](https://www.cloudflare.com/), including [server islands](/en/guides/server-islands/), [actions](/en/guides/actions/), and [sessions](/en/guides/sessions/).
+This adapter allows Astro to deploy your [on-demand rendered routes and features](../../on-demand-rendering/index.md) to [Cloudflare](https://www.cloudflare.com/), including [server islands](../../server-islands/index.md), [actions](../../actions/index.md), and [sessions](../../sessions/index.md).
 
 If you’re using Astro as a static site builder, you don’t need an adapter.
 
-Learn how to deploy your Astro site in our [Cloudflare deployment guide](/en/guides/deploy/cloudflare/).
+Learn how to deploy your Astro site in our [Cloudflare deployment guide](../../deploy/cloudflare/index.md).
 
 ## Why Astro Cloudflare
 
@@ -45,7 +45,7 @@ Add the Cloudflare adapter to enable server-rendering in your Astro project with
 npx astro add cloudflare
 ```
 
-Now, you can enable [on-demand rendering per page](/en/guides/on-demand-rendering/#enabling-on-demand-rendering), or set your build output configuration to `output: 'server'` to [server-render all your pages by default](/en/guides/on-demand-rendering/#server-mode).
+Now, you can enable [on-demand rendering per page](../../on-demand-rendering/index.md#enabling-on-demand-rendering), or set your build output configuration to `output: 'server'` to [server-render all your pages by default](../../on-demand-rendering/index.md#server-mode).
 
 ### Manual Install
 
@@ -101,9 +101,9 @@ Determines which image service is used by the adapter. The adapter will default 
 
 *   **`cloudflare`:** Uses the [Cloudflare Image Resizing](https://developers.cloudflare.com/images/image-resizing/) service.
 *   **`cloudflare-binding`:** Uses the [Cloudflare Images binding](https://developers.cloudflare.com/images/transform-images/bindings/) for image transformation. The binding is automatically provisioned when you deploy.
-*   **`passthrough`:** Uses the existing [`noop`](/en/guides/images/#configure-no-op-passthrough-service) service.
+*   **`passthrough`:** Uses the existing [`noop`](../../images/index.md#configure-no-op-passthrough-service) service.
 *   **`compile`:** Uses a combination of internal dependencies to transform images locally at build time for prerendered routes. The noop `passthrough` option is configured for on-demand rendered pages.
-*   **`custom`:** Always uses the image service configured in [Image Options](/en/reference/configuration-reference/#image-options). **This option will not check to see whether the configured image service works in Cloudflare’s `workerd` runtime.**
+*   **`custom`:** Always uses the image service configured in [Image Options](../../../reference/configuration-reference/index.md#image-options). **This option will not check to see whether the configured image service works in Cloudflare’s `workerd` runtime.**
 
 It is also possible to configure your image service as an object, setting both a build time and runtime service independently. Currently, `'compile'` is the only available build-time option. The supported runtime options are `'passthrough'` (default) and `'cloudflare-binding'`:
 
@@ -157,7 +157,7 @@ export default defineConfig({  adapter: cloudflare({    imageService: 'cloudflar
 
 **Added in:** `@astrojs/cloudflare@13.1.0` New
 
-Controls which runtime is used for [prerendering](/en/guides/on-demand-rendering/) static pages at build time and during development.
+Controls which runtime is used for [prerendering](../../on-demand-rendering/index.md) static pages at build time and during development.
 
 By default, prerendered pages are built using Cloudflare’s `workerd` runtime to match the production environment as closely as possible. Set this option to `'node'` when your prerendered pages depend on Node.js APIs or NPM packages that are not compatible with `workerd`:
 
@@ -207,7 +207,7 @@ Cloudflare environment variables and secrets can be imported from `"cloudflare:w
 const myVariable = env.MY_VARIABLE;const myKVNamespace = env.MY_KV;---
 ```
 
-They are also compatible with the [`astro:env` API](/en/guides/environment-variables/#type-safe-environment-variables):
+They are also compatible with the [`astro:env` API](../../environment-variables/index.md#type-safe-environment-variables):
 
 ```
 import { MY_VARIABLE } from 'astro:env/server';
@@ -263,7 +263,7 @@ Assets built by Astro are all named with a hash and, therefore, can be given lon
 
 [Section titled “Redirects”](#redirects)
 
-Declare [custom redirects for static assets](https://developers.cloudflare.com/workers/static-assets/redirects/) by adding a `_redirects` file in your Astro project’s `public/` folder. This file will be copied to your build output directory. For dynamic routes, [configure redirects in Astro directly](/en/guides/routing/#configured-redirects) instead.
+Declare [custom redirects for static assets](https://developers.cloudflare.com/workers/static-assets/redirects/) by adding a `_redirects` file in your Astro project’s `public/` folder. This file will be copied to your build output directory. For dynamic routes, [configure redirects in Astro directly](../../routing/index.md#configured-redirects) instead.
 
 ### Routes
 
@@ -275,7 +275,7 @@ Routing for static assets is based on the file structure in the build directory 
 
 [Section titled “Sessions”](#sessions)
 
-The Astro [Sessions API](/en/guides/sessions/) allows you to easily store user data between requests. This can be used for things like user data and preferences, shopping carts, and authentication credentials. Unlike cookie storage, there are no size limits on the data, and it can be restored on different devices.
+The Astro [Sessions API](../../sessions/index.md) allows you to easily store user data between requests. This can be used for things like user data and preferences, shopping carts, and authentication credentials. Unlike cookie storage, there are no size limits on the data, and it can be restored on different devices.
 
 Astro automatically configures [Workers KV](https://developers.cloudflare.com/kv/) for session storage when using the Cloudflare adapter. Wrangler can [automatically provision](https://developers.cloudflare.com/workers/wrangler/configuration/#automatic-provisioning) the KV namespace when you deploy, so no manual setup is required. Alternatively, you can define the KV binding manually in your `wrangler.jsonc` file and set a custom binding name using the [`sessionKVBindingName`](#sessionkvbindingname) adapter option.
 
@@ -352,7 +352,7 @@ export default defineConfig({  adapter: cloudflare(),  vite: {    build: {      
 
 Astro 6 brings significant improvements to the Cloudflare development experience and requires `@astrojs/cloudflare` v13 or later. Now, `astro dev` uses Cloudflare’s Vite plugin and `workerd` runtime to closely mirror production behavior.
 
-See [the Astro 6 upgrade guide](/en/guides/upgrade-to/v6/) for full instructions on upgrading Astro itself.
+See [the Astro 6 upgrade guide](../../upgrade-to/v6/index.md) for full instructions on upgrading Astro itself.
 
 ### Development server now uses workerd
 
@@ -546,34 +546,34 @@ Learn how to update your [Cloudflare environments](https://developers.cloudflare
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -581,34 +581,34 @@ Learn how to update your [Cloudflare environments](https://developers.cloudflare
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

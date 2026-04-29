@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:31.275Z"
 content_hash: "8d0998f3cd8775fb38f5fc06544662d0844966edcced9d642a686d560ec86132"
 menu_path: ["Delete files"]
 section_path: []
-nav_prev: {"path": "../delete-directory/index.md", "title": "Delete directories"}
-nav_next: {"path": "../heap-snapshot/index.md", "title": "Inspect memory usage using V8 heap snapshots"}
+nav_prev: {"path": "bun/docs/guides/runtime/delete-directory/index.md", "title": "Delete directories"}
+nav_next: {"path": "bun/docs/guides/runtime/heap-snapshot/index.md", "title": "Inspect memory usage using V8 heap snapshots"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../heap-snapshot/index.md", "title": "Inspect memory usage u
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To delete a file, use `Bun.file(path).delete()`.
 
@@ -51,7 +51,7 @@ const exists = await file.exists();
 
 * * *
 
-See [Docs > API > FileSystem](/docs/runtime/file-io) for more filesystem operations.
+See [Docs > API > FileSystem](../../../runtime/file-io/index.md) for more filesystem operations.
 
 Was this page helpful?
 
@@ -63,10 +63,10 @@ Delete a file
 
 Previous
 
-](/docs/guides/write-file/unlink)[
+](../../write-file/unlink/index.md)[
 
 Delete directories
 
 Next
 
-](/docs/guides/runtime/delete-directory)
+](../delete-directory/index.md)

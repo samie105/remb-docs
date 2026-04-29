@@ -11,8 +11,8 @@ menu_path: ["Testing"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../tailwind-v3-css/index.md", "title": "How to install Tailwind CSS v3 in your Next.js application"}
-nav_next: {"path": "cypress/index.md", "title": "How to set up Cypress with Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/tailwind-v3-css/index.md", "title": "How to install Tailwind CSS v3 in your Next.js application"}
+nav_next: {"path": "nextjs/docs/app/guides/testing/cypress/index.md", "title": "How to set up Cypress with Next.js"}
 ---
 
 # Testing
@@ -43,24 +43,24 @@ See the guides below to learn how to set up Next.js with these commonly used tes
 
 Learn how to set up Cypress with Next.js for End-to-End (E2E) and Component Testing.
 
-](/docs/app/guides/testing/cypress)[
+](cypress/index.md)[
 
 ### Jest
 
 Learn how to set up Jest with Next.js for Unit Testing and Snapshot Testing.
 
-](/docs/app/guides/testing/jest)[
+](jest/index.md)[
 
 ### Playwright
 
 Learn how to set up Playwright with Next.js for End-to-End (E2E) Testing.
 
-](/docs/app/guides/testing/playwright)[
+](playwright/index.md)[
 
 ### Vitest
 
 Learn how to set up Vitest with Next.js for Unit Testing.
 
-](/docs/app/guides/testing/vitest)
+](vitest/index.md)
 
 Was this helpful?

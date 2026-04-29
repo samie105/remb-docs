@@ -10,8 +10,8 @@ content_hash: "f6a8b711d7ae9e69d5bee6ad7efd2ed6c76ee531e20db0373a4e9580adb3ecad"
 menu_path: ["Drizzle <> Xata"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-supabase/index.md", "title": "Drizzle <> Supabase"}
-nav_next: {"path": "../connect-pglite/index.md", "title": "Drizzle <> PGlite"}
+nav_prev: {"path": "drizzle/docs/connect-supabase/index.md", "title": "Drizzle <> Supabase"}
+nav_next: {"path": "drizzle/docs/connect-pglite/index.md", "title": "Drizzle <> PGlite"}
 ---
 
 This guide assumes familiarity with:

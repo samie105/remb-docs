@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:12.105Z"
 content_hash: "edacc3c3dcda27dbf299f3c6e3a0e05d6eb29afe74285625388a14a3b4de81f9"
 menu_path: ["Routers ​"]
 section_path: []
-nav_prev: {"path": "../motivation/index.md", "title": "Philosophy \u200b"}
-nav_next: {"path": "../benchmarks/index.md", "title": "Benchmarks \u200b"}
+nav_prev: {"path": "hono/docs/concepts/motivation/index.md", "title": "Philosophy \u200b"}
+nav_next: {"path": "hono/docs/concepts/benchmarks/index.md", "title": "Benchmarks \u200b"}
 ---
 
 The routers are the most important features for Hono.

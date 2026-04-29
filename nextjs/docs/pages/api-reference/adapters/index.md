@@ -11,8 +11,8 @@ menu_path: ["Adapters"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../cli/next/index.md", "title": "next CLI"}
-nav_next: {"path": "configuration/index.md", "title": "Configuration"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/cli/next/index.md", "title": "next CLI"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/configuration/index.md", "title": "Configuration"}
 ---
 
 # Adapters
@@ -21,17 +21,17 @@ Last updated April 23, 2026
 
 Use this section to build and validate deployment adapters that integrate with the Next.js build and runtime model.
 
--   [Configuration](/docs/app/api-reference/adapters/configuration)
--   [Creating an Adapter](/docs/app/api-reference/adapters/creating-an-adapter)
--   [API Reference](/docs/app/api-reference/adapters/api-reference)
--   [Testing Adapters](/docs/app/api-reference/adapters/testing-adapters)
--   [Routing with `@next/routing`](/docs/app/api-reference/adapters/routing-with-next-routing)
--   [Implementing PPR in an Adapter](/docs/app/api-reference/adapters/implementing-ppr-in-an-adapter)
--   [Runtime Integration](/docs/app/api-reference/adapters/runtime-integration)
--   [Invoking Entrypoints](/docs/app/api-reference/adapters/invoking-entrypoints)
--   [Output Types](/docs/app/api-reference/adapters/output-types)
--   [Routing Information](/docs/app/api-reference/adapters/routing-information)
--   [Use Cases](/docs/app/api-reference/adapters/use-cases)
+-   [Configuration](../../../app/api-reference/adapters/configuration/index.md)
+-   [Creating an Adapter](../../../app/api-reference/adapters/creating-an-adapter/index.md)
+-   [API Reference](../../../app/api-reference/adapters/api-reference/index.md)
+-   [Testing Adapters](../../../app/api-reference/adapters/testing-adapters/index.md)
+-   [Routing with `@next/routing`](../../../app/api-reference/adapters/routing-with-next-routing/index.md)
+-   [Implementing PPR in an Adapter](../../../app/api-reference/adapters/implementing-ppr-in-an-adapter/index.md)
+-   [Runtime Integration](../../../app/api-reference/adapters/runtime-integration/index.md)
+-   [Invoking Entrypoints](../../../app/api-reference/adapters/invoking-entrypoints/index.md)
+-   [Output Types](../../../app/api-reference/adapters/output-types/index.md)
+-   [Routing Information](../../../app/api-reference/adapters/routing-information/index.md)
+-   [Use Cases](../../../app/api-reference/adapters/use-cases/index.md)
 
 [
 
@@ -39,66 +39,66 @@ Use this section to build and validate deployment adapters that integrate with t
 
 Configure \`adapterPath\` or \`NEXT\_ADAPTER\_PATH\` to use a custom deployment adapter.
 
-](/docs/pages/api-reference/adapters/configuration)[
+](configuration/index.md)[
 
 ### Creating an Adapter
 
 Create an adapter module that implements the \`NextAdapter\` interface.
 
-](/docs/pages/api-reference/adapters/creating-an-adapter)[
+](creating-an-adapter/index.md)[
 
 ### API Reference
 
 Reference for \`modifyConfig\` and \`onBuildComplete\` in the \`NextAdapter\` interface.
 
-](/docs/pages/api-reference/adapters/api-reference)[
+](api-reference/index.md)[
 
 ### Testing Adapters
 
 Validate adapters with the Next.js compatibility test harness and custom lifecycle scripts.
 
-](/docs/pages/api-reference/adapters/testing-adapters)[
+](testing-adapters/index.md)[
 
 ### Routing with @next/routing
 
 Use \`@next/routing\` to apply Next.js route matching behavior in adapters.
 
-](/docs/pages/api-reference/adapters/routing-with-next-routing)[
+](routing-with-next-routing/index.md)[
 
 ### Implementing PPR in an Adapter
 
 Implement Partial Prerendering support in an adapter using fallback output and cache hooks.
 
-](/docs/pages/api-reference/adapters/implementing-ppr-in-an-adapter)[
+](implementing-ppr-in-an-adapter/index.md)[
 
 ### Runtime Integration
 
 Understand how build-time adapters and runtime cache interfaces work together.
 
-](/docs/pages/api-reference/adapters/runtime-integration)[
+](runtime-integration/index.md)[
 
 ### Invoking Entrypoints
 
 Invoke Node.js and Edge build entrypoints with adapter runtime context.
 
-](/docs/pages/api-reference/adapters/invoking-entrypoints)[
+](invoking-entrypoints/index.md)[
 
 ### Output Types
 
 Reference for all build output types exposed to adapters.
 
-](/docs/pages/api-reference/adapters/output-types)[
+](output-types/index.md)[
 
 ### Routing Information
 
 Reference for routing phases and route fields exposed in \`onBuildComplete\`.
 
-](/docs/pages/api-reference/adapters/routing-information)[
+](routing-information/index.md)[
 
 ### Use Cases
 
 Common patterns and examples for deployment adapter implementations.
 
-](/docs/pages/api-reference/adapters/use-cases)
+](use-cases/index.md)
 
 Was this helpful?

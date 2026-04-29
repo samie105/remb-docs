@@ -10,8 +10,8 @@ content_hash: "06e2a999c7591d698b8aded5a98677cbccc3318dcf8ae81ae2e0e267fb778525"
 menu_path: ["Drizzle <> Neon Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-planetscale-postgres/index.md", "title": "Drizzle <> PlanetScale Postgres"}
-nav_next: {"path": "../connect-vercel-postgres/index.md", "title": "Drizzle <> Vercel Postgres"}
+nav_prev: {"path": "drizzle/docs/connect-planetscale-postgres/index.md", "title": "Drizzle <> PlanetScale Postgres"}
+nav_next: {"path": "drizzle/docs/connect-vercel-postgres/index.md", "title": "Drizzle <> Vercel Postgres"}
 ---
 
 ## Drizzle <> Neon Postgres

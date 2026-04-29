@@ -11,8 +11,8 @@ menu_path: ["Middleware Upgrade Guide"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../inline-script-id/index.md", "title": "Inline script id"}
-nav_next: {"path": "../missing-suspense-with-csr-bailout/index.md", "title": "Missing Suspense boundary with useSearchParams"}
+nav_prev: {"path": "nextjs/docs/messages/inline-script-id/index.md", "title": "Inline script id"}
+nav_next: {"path": "nextjs/docs/messages/missing-suspense-with-csr-bailout/index.md", "title": "Missing Suspense boundary with useSearchParams"}
 ---
 
 # Middleware Upgrade Guide
@@ -189,7 +189,7 @@ export function middleware(request: NextRequest) {
 
 #### Edge API Routes[](#edge-api-routes)
 
-If you were previously using Middleware to forward headers to an external API, you can now use [Edge API Routes](/docs/pages/building-your-application/routing/api-routes):
+If you were previously using Middleware to forward headers to an external API, you can now use [Edge API Routes](../../pages/building-your-application/routing/api-routes/index.md):
 
 pages/api/proxy.ts
 

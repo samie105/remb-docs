@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:05.728Z"
 content_hash: "7c89a2f7057b0ea428f74b9a0f925e56f46faf8dc5851d57f4e25c4b15bcac02"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Log Drains","Log Drains"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Log Drains","Log Drains"]
-nav_prev: {"path": "../ipv4/index.md", "title": "Manage IPv4 usage"}
-nav_next: {"path": "../monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/ipv4/index.md", "title": "Manage IPv4 usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Manage Log Drain usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-You can configure log drains in the [project settings](/dashboard/project/_/settings/log-drains) to send logs to one or more destinations. You are charged for each log drain that is configured (referred to as [Log Drain Hours](/docs/guides/platform/manage-your-usage/log-drains#log-drain-hours)), the log events sent (referred to as [Log Drain Events](/docs/guides/platform/manage-your-usage/log-drains#log-drain-events)), and the [Egress](/docs/guides/platform/manage-your-usage/egress) incurred by the export—across all your projects.
+You can configure log drains in the [project settings](/dashboard/project/_/settings/log-drains) to send logs to one or more destinations. You are charged for each log drain that is configured (referred to as [Log Drain Hours](index.md#log-drain-hours)), the log events sent (referred to as [Log Drain Events](index.md#log-drain-events)), and the [Egress](../egress/index.md) incurred by the export—across all your projects.
 
-Log Drains are **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+Log Drains are **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 ## Log Drain Hours[#](#log-drain-hours)
 

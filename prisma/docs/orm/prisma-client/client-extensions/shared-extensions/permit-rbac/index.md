@@ -11,8 +11,8 @@ menu_path: ["Fine-Grained Authorization (Permit)"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Shared Prisma Client extensions"}
-nav_next: {"path": "../../type-utilities/index.md", "title": "Type utilities"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/shared-extensions/index.md", "title": "Shared Prisma Client extensions"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
 ---
 
 Learn how to implement RBAC, ABAC, and ReBAC authorization in your Prisma applications

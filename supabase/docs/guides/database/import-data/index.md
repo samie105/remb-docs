@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:00.992Z"
 content_hash: "ee6200d37810ed3d2d7396ce69ebb66659f6f7f5c7ee42286b880abe3f975fc4"
 menu_path: ["Database","Database","Fundamentals","Fundamentals","Importing data","Importing data"]
 section_path: ["Database","Database","Fundamentals","Fundamentals","Importing data","Importing data"]
-nav_prev: {"path": "../functions/index.md", "title": "Database Functions"}
-nav_next: {"path": "../inspect/index.md", "title": "Debugging and monitoring"}
+nav_prev: {"path": "supabase/docs/guides/database/functions/index.md", "title": "Database Functions"}
+nav_next: {"path": "supabase/docs/guides/database/inspect/index.md", "title": "Debugging and monitoring"}
 ---
 
 # 
@@ -76,11 +76,11 @@ For databases using the Postgres engine, we recommend using the [pg\_dump](https
 
 ### Option 3: Using Postgres copy command[#](#option-3-using-postgres-copy-command)
 
-Read more about [Bulk data loading.](/docs/guides/database/tables#bulk-data-loading)
+Read more about [Bulk data loading.](../tables/index.md#bulk-data-loading)
 
 ### Option 4: Using the Supabase API[#](#option-4-using-the-supabase-api)
 
-The Supabase API allows you to programmatically import data into your tables. You can use various client libraries to interact with the API and perform data import operations. This approach is useful when you need to automate data imports, and it gives you fine-grained control over the process. Refer to our [API guide](/docs/guides/api) for more details.
+The Supabase API allows you to programmatically import data into your tables. You can use various client libraries to interact with the API and perform data import operations. This approach is useful when you need to automate data imports, and it gives you fine-grained control over the process. Refer to our [API guide](../../api/index.md) for more details.
 
 When importing data via the Supabase API, it's advisable to refrain from bulk imports. This helps ensure a smooth data transfer process and prevents any potential disruptions.
 
@@ -92,19 +92,19 @@ Large data imports can affect your database performance. Failed imports can also
 
 ### 1\. Back up your data[#](#1-back-up-your-data)
 
-Backups help you restore your data if something goes wrong. Databases on Pro, Team and Enterprise Plans are automatically backed up on schedule, but you can also take your own backup. See [Database Backups](/docs/guides/platform/backups) for more information.
+Backups help you restore your data if something goes wrong. Databases on Pro, Team and Enterprise Plans are automatically backed up on schedule, but you can also take your own backup. See [Database Backups](../../platform/backups/index.md) for more information.
 
 ### 2\. Increase statement timeouts[#](#2-increase-statement-timeouts)
 
 By default, Supabase enforces query statement timeouts to ensure fair resource allocation and prevent long-running queries from affecting the overall system. When importing large datasets, you may encounter timeouts. To address this:
 
-*   **Increase the Statement Timeout**: You can adjust the statement timeout for your session or connection to accommodate longer-running queries. Be cautious when doing this, as excessively long queries can negatively impact system performance. Read more about [Statement Timeouts](/docs/guides/database/postgres/configuration).
+*   **Increase the Statement Timeout**: You can adjust the statement timeout for your session or connection to accommodate longer-running queries. Be cautious when doing this, as excessively long queries can negatively impact system performance. Read more about [Statement Timeouts](../postgres/configuration/index.md).
 
 ### 3\. Estimate your required disk size[#](#3-estimate-your-required-disk-size)
 
 Large datasets consume disk space. Ensure your Supabase project has sufficient disk capacity to accommodate the imported data. If you know how big your database is going to be, you can manually increase the size in your [projects database settings](/dashboard/project/_/database/settings).
 
-Read more about [disk management](/docs/guides/platform/database-size#disk-management).
+Read more about [disk management](../../platform/database-size/index.md#disk-management).
 
 ### 4\. Disable triggers[#](#4-disable-triggers)
 
@@ -126,4 +126,4 @@ To build an index after the data import:
 1-- Create an index on a table2create index index_name on table_name (column_name);
 ```
 
-Read more about [Managing Indexes in Postgres](/docs/guides/database/postgres/indexes).
+Read more about [Managing Indexes in Postgres](../postgres/indexes/index.md).

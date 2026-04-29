@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:55.997Z"
 content_hash: "09173de1280da9715ec214f0bf3d8e56e2cfe8a53680c11bcb456a346ca29832"
 menu_path: ["Security","Security","Compliance","Compliance","HIPAA","HIPAA"]
 section_path: ["Security","Security","Compliance","Compliance","HIPAA","HIPAA"]
-nav_prev: {"path": "../index.md", "title": "Supabase Security"}
-nav_next: {"path": "../platform-audit-logs/index.md", "title": "Platform Audit Logs"}
+nav_prev: {"path": "supabase/docs/guides/security/index.md", "title": "Supabase Security"}
+nav_next: {"path": "supabase/docs/guides/security/platform-audit-logs/index.md", "title": "Platform Audit Logs"}
 ---
 
 # 
@@ -31,7 +31,7 @@ Covered entities (the customer) are organizations that directly handle PHI, such
 
 1.  **Compliance with HIPAA Rules**: Covered entities must comply with the [HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html), [Security Rule](https://www.hhs.gov/hipaa/for-professionals/security/index.html), and [Breach Notification Rule](https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html) to protect the privacy and security of ePHI.
 2.  **Business Associate Agreements (BAAs)**: Customers must sign a BAA with Supabase. When the covered entity engages a business associate to help carry out its healthcare activities, it must have a written BAA. This agreement outlines the business associate's responsibilities and requires them to comply with HIPAA Rules.
-3.  **Internal Compliance Programs**: Customers must [configure their HIPAA projects](/docs/guides/platform/hipaa-projects) and follow the guidance given by the security advisor. Covered entities are responsible for implementing internal processes and compliance programs to ensure they meet HIPAA requirements.
+3.  **Internal Compliance Programs**: Customers must [configure their HIPAA projects](../../platform/hipaa-projects/index.md) and follow the guidance given by the security advisor. Covered entities are responsible for implementing internal processes and compliance programs to ensure they meet HIPAA requirements.
 
 ### Supabase responsibilities[#](#supabase-responsibilities)
 
@@ -45,7 +45,7 @@ Supabase as the business associate, and the vendors used by Supabase, are the en
 
 Compliance is a continuous process and should not be treated as a point-in-time audit of controls. Supabase applies all the necessary privacy and security controls to ensure HIPAA compliance at audit time, but also has additional checks and monitoring in place to ensure those controls are not disabled or altered in between audit periods. Customers commit to doing the same in their HIPAA environments. Supabase provides a growing set of checks that warn customers of changes to their projects that disable or weaken HIPAA required controls. Customers will receive warnings and guidance via the Security Advisor, however the responsibility of applying the recommended controls falls directly to the customer.
 
-Our [shared responsibility model](/docs/guides/deployment/shared-responsibility-model#managing-healthcare-data) document discusses both HIPAA and general data management best practices, how this responsibility is shared between customers and Supabase, and how to stay compliant.
+Our [shared responsibility model](../../deployment/shared-responsibility-model/index.md#managing-healthcare-data) document discusses both HIPAA and general data management best practices, how this responsibility is shared between customers and Supabase, and how to stay compliant.
 
 ## Frequently asked questions[#](#frequently-asked-questions)
 
@@ -72,6 +72,6 @@ Supabase undergoes annual audits. The HIPAA controls are audited during the same
 2.  [HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html)
 3.  [Security Rule](https://www.hhs.gov/hipaa/for-professionals/security/index.html)
 4.  [Breach Notification Rule](https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html)
-5.  [Configuring HIPAA projects](/docs/guides/platform/hipaa-projects) on Supabase
-6.  [Shared Responsibility Model](/docs/guides/deployment/shared-responsibility-model)
-7.  [HIPAA shared responsibility](/docs/guides/deployment/shared-responsibility-model#managing-healthcare-data)
+5.  [Configuring HIPAA projects](../../platform/hipaa-projects/index.md) on Supabase
+6.  [Shared Responsibility Model](../../deployment/shared-responsibility-model/index.md)
+7.  [HIPAA shared responsibility](../../deployment/shared-responsibility-model/index.md#managing-healthcare-data)

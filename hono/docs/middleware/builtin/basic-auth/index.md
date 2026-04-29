@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:31.988Z"
 content_hash: "8d06ff03597f6695a1c5dea95a04e8abaccc9ba4fda5fed06d8367daa6cb9954"
 menu_path: ["Basic Auth Middleware ​"]
 section_path: []
-nav_prev: {"path": "../../../helpers/websocket/index.md", "title": "WebSocket Helper \u200b"}
-nav_next: {"path": "../bearer-auth/index.md", "title": "Bearer Auth Middleware \u200b"}
+nav_prev: {"path": "hono/docs/helpers/websocket/index.md", "title": "WebSocket Helper \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/bearer-auth/index.md", "title": "Bearer Auth Middleware \u200b"}
 ---
 
 ## Basic Auth Middleware [​](#basic-auth-middleware)

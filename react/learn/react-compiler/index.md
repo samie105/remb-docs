@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:57.580Z"
 content_hash: "04a6d1ac0743f731d9e17edb627d94e31e0a08d06711368f4c3e193a956925d7"
 menu_path: ["React Compiler"]
 section_path: []
-nav_prev: {"path": "../react-developer-tools/index.md", "title": "React Developer Tools"}
-nav_next: {"path": "introduction/index.md", "title": "Introduction"}
+nav_prev: {"path": "react/learn/react-developer-tools/index.md", "title": "React Developer Tools"}
+nav_next: {"path": "react/learn/react-compiler/introduction/index.md", "title": "Introduction"}
 ---
 
 ## Introduction[](#introduction "Link for Introduction ")

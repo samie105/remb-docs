@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:14.571Z"
 content_hash: "ffa9f844b30af5adf03cf3478d52bdb74988d3d494a6560147f93e3085397a87"
 menu_path: ["Installation"]
 section_path: []
-nav_prev: {"path": "../introduction/index.md", "title": "Introduction"}
-nav_next: {"path": "../incremental-adoption/index.md", "title": "Incremental Adoption"}
+nav_prev: {"path": "react/learn/react-compiler/introduction/index.md", "title": "Introduction"}
+nav_next: {"path": "react/learn/react-compiler/incremental-adoption/index.md", "title": "Incremental Adoption"}
 ---
 
 This guide will help you install and configure React Compiler in your React application.

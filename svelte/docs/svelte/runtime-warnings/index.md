@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:36.298Z"
 content_hash: "caaddccc19c1a4ef2e0185763a40fc09bf392bff12eea6fd061b376be08cda22"
 menu_path: ["Runtime warnings"]
 section_path: []
-nav_prev: {"path": "../runtime-errors/index.md", "title": "Runtime errors"}
-nav_next: {"path": "../legacy-overview/index.md", "title": "Overview"}
+nav_prev: {"path": "svelte/docs/svelte/runtime-errors/index.md", "title": "Runtime errors"}
+nav_next: {"path": "svelte/docs/svelte/legacy-overview/index.md", "title": "Overview"}
 ---
 
 ## Client warnings[](#Client-warnings)
@@ -491,7 +491,7 @@ This `reset` function should only be called once. After that, it has no effect â
 The `slide` transition does not work correctly for elements with `display: %value%`
 ```
 
-The [slide](/docs/svelte/svelte-transition#slide) transition works by animating the `height` of the element, which requires a `display` style like `block`, `flex` or `grid`. It does not work for:
+The [slide](../svelte-transition/index.md#slide) transition works by animating the `height` of the element, which requires a `display` style like `block`, `flex` or `grid`. It does not work for:
 
 *   `display: inline` (which is the default for elements like `<span>`), and its variants like `inline-block`, `inline-flex` and `inline-grid`
 *   `display: table` and `table-[name]`, which are the defaults for elements like `<table>` and `<tr>`
@@ -662,4 +662,4 @@ Example:
 
 previous next
 
-[Runtime errors](/docs/svelte/runtime-errors) [Overview](/docs/svelte/legacy-overview)
+[Runtime errors](../runtime-errors/index.md) [Overview](../legacy-overview/index.md)

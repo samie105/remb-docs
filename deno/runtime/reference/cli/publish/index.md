@@ -10,8 +10,8 @@ content_hash: "a388bd310a8b7531872b61d4a13d7e995e7c89068beb8d197969392f9c97881a"
 menu_path: ["deno publish"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../outdated/index.md", "title": "deno outdated"}
-nav_next: {"path": "../lsp/index.md", "title": "deno lsp"}
+nav_prev: {"path": "deno/runtime/reference/cli/outdated/index.md", "title": "deno outdated"}
+nav_next: {"path": "deno/runtime/reference/cli/lsp/index.md", "title": "deno lsp"}
 ---
 
 **On this page**
@@ -26,7 +26,7 @@ nav_next: {"path": "../lsp/index.md", "title": "deno lsp"}
 
 ## Package Requirements
 
-Your package must have a `name` and `version` and an `exports` field in its [`deno.json`](/runtime/fundamentals/configuration/) or `jsr.json` file.
+Your package must have a `name` and `version` and an `exports` field in its [`deno.json`](../../../fundamentals/configuration/index.md) or `jsr.json` file.
 
 -   The `name` field must be unique and follow the `@<scope_name>/<package_name>` convention.
 -   The `version` field must be a valid semver version.

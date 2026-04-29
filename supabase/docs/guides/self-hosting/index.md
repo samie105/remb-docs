@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:44.831Z"
 content_hash: "f7bd129ce45e179bc266aa7fbac0615c4e6bc715ef8aee3d63aac8478ca57e8b"
 menu_path: ["Self-Hosting","Self-Hosting","Overview","Overview"]
 section_path: ["Self-Hosting","Self-Hosting","Overview","Overview"]
-nav_prev: {"path": "../security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
-nav_next: {"path": "copy-from-platform-s3/index.md", "title": "Copy Storage Objects from Platform"}
+nav_prev: {"path": "supabase/docs/guides/security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/copy-from-platform-s3/index.md", "title": "Copy Storage Objects from Platform"}
 ---
 
 # 
@@ -74,7 +74,7 @@ Self-hosted Supabase is different from:
 
 Self-hosted Supabase (Docker) does not phone home or collect any telemetry.
 
-The **Supabase CLI** is a [separate tool](/docs/guides/local-development/cli/getting-started) from self-hosted Supabase and collects usage telemetry to help improve the developer experience. You can opt out by running `supabase telemetry disable` or setting `SUPABASE_TELEMETRY_DISABLED=1`. See [CLI telemetry](/docs/guides/local-development/cli/getting-started#telemetry) for other opt-out methods.
+The **Supabase CLI** is a [separate tool](../local-development/cli/getting-started/index.md) from self-hosted Supabase and collects usage telemetry to help improve the developer experience. You can opt out by running `supabase telemetry disable` or setting `SUPABASE_TELEMETRY_DISABLED=1`. See [CLI telemetry](../local-development/cli/getting-started/index.md#telemetry) for other opt-out methods.
 
 ### Your responsibilities when self-hosting[#](#your-responsibilities-when-self-hosting)
 

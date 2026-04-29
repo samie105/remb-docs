@@ -10,8 +10,8 @@ content_hash: "038c295089bc1b5ef7e221b4e10d93f425998027a36931f4356a11e8599e0d0e"
 menu_path: ["PostgreSQL: Documentation: 18: 65.1. B-Tree Indexes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../btree-gist.html/index.md", "title": "PostgreSQL: Documentation: 18: F.8.\u00a0btree_gist \u2014 GiST operator classes with B-tree behavior"}
-nav_next: {"path": "../catalog-pg-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.32.\u00a0pg_namespace"}
+nav_prev: {"path": "postgres/docs/current/btree-gist.html/index.md", "title": "PostgreSQL: Documentation: 18: F.8.\u00a0btree_gist \u2014 GiST operator classes with B-tree behavior"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-namespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.32.\u00a0pg_namespace"}
 ---
 
 ### 65.1.3. B-Tree Support Functions [#](#BTREE-SUPPORT-FUNCS)

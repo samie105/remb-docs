@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:46.206Z"
 content_hash: "8451a710c4da31484f362a5c8a1be4b14838dac2ffb5df7b8bccd42b546086f1"
 menu_path: ["Data REST API","Data REST API","Overview","Overview"]
 section_path: ["Data REST API","Data REST API","Overview","Overview"]
-nav_prev: {"path": "../ai/vector-indexes/ivf-indexes/index.md", "title": "IVFFlat indexes"}
-nav_next: {"path": "api-keys/index.md", "title": "Understanding API keys"}
+nav_prev: {"path": "supabase/docs/guides/ai/vector-indexes/ivf-indexes/index.md", "title": "IVFFlat indexes"}
+nav_next: {"path": "supabase/docs/guides/api/api-keys/index.md", "title": "Understanding API keys"}
 ---
 
 # 

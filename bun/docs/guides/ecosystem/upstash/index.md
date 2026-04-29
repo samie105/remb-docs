@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:57.544Z"
 content_hash: "78fa8d5fd4c7877c8f726f3deae271f8483cd3b70017a1721c037bf3c9ce9452"
 menu_path: ["Bun Redis with Upstash"]
 section_path: []
-nav_prev: {"path": "../tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
-nav_next: {"path": "../vite/index.md", "title": "Build a frontend using Vite and Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/vite/index.md", "title": "Build a frontend using Vite and Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../vite/index.md", "title": "Build a frontend using Vite and
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 [Upstash](https://upstash.com/) is a fully managed Redis database as a service. Upstash works with the Redis® API, which means you can use Bun’s native Redis client to connect to your Upstash database.
 
@@ -154,12 +154,12 @@ Build a frontend using Vite and Bun
 
 Previous
 
-](/docs/guides/ecosystem/vite)[
+](../vite/index.md)[
 
 Common HTTP server usage
 
 Next
 
-](/docs/guides/http/server)
+](../../http/server/index.md)
 
 ![Upstash Redis database page](https://mintcdn.com/bun-1dd33a4e/ONaGWxnTD93zNXCt/images/guides/upstash-1.png?w=840&fit=max&auto=format&n=ONaGWxnTD93zNXCt&q=85&s=e4b82c4ea36c2c04effd217639cd81f7)

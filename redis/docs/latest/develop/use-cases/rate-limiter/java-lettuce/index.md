@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:04:02.070Z"
 content_hash: "87b22c5546a86f574c52c5e63ee015d349a6191225009440a5a9432277de9f38"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Java (Lettuce)","→","Token bucket rate limiter with Redis and Java (Lettuce)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Java (Lettuce)","→","Token bucket rate limiter with Redis and Java (Lettuce)"]
-nav_prev: {"path": "../java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
-nav_next: {"path": "../nodejs/index.md", "title": "Token bucket rate limiter with Redis and Node.js"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/java-jedis/index.md", "title": "Token bucket rate limiter with Redis and Java"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/nodejs/index.md", "title": "Token bucket rate limiter with Redis and Node.js"}
 ---
 
 # Token bucket rate limiter with Redis and Java (Lettuce)
 
 Implement a token bucket rate limiter using Redis and Lua scripts in Java with Lettuce
 
-This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in Java with the [`Lettuce`](/docs/latest/develop/clients/lettuce/) client library.
+This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in Java with the [`Lettuce`](../../../clients/lettuce/index.md) client library.
 
 ## Overview
 
@@ -28,7 +28,7 @@ Rate limiting is a critical technique for controlling the rate at which operatio
 *   Ensuring fair resource allocation across multiple clients
 *   Throttling background jobs or batch operations
 
-The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Java implementation using the [`Lettuce`](/docs/latest/develop/clients/lettuce/) client library, taking advantage of Lettuce's `RedisClient` for connection management, `StatefulRedisConnection` for multiplexed connections, and support for synchronous, asynchronous, and reactive command execution.
+The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Java implementation using the [`Lettuce`](../../../clients/lettuce/index.md) client library, taking advantage of Lettuce's `RedisClient` for connection management, `StatefulRedisConnection` for multiplexed connections, and support for synchronous, asynchronous, and reactive command execution.
 
 ## How it works
 
@@ -141,7 +141,7 @@ Add the Lettuce dependency to your project:
 
 ### Lettuce vs Jedis
 
-Unlike [`Jedis`](/docs/latest/develop/clients/jedis/), which uses a connection pool (`JedisPool`) with one thread per connection, Lettuce uses a single `RedisClient` with multiplexed connections through `StatefulRedisConnection`. This means:
+Unlike [`Jedis`](../../../clients/jedis/index.md), which uses a connection pool (`JedisPool`) with one thread per connection, Lettuce uses a single `RedisClient` with multiplexed connections through `StatefulRedisConnection`. This means:
 
 *   **No connection pool needed**: A single connection handles multiple concurrent requests
 *   **Thread-safe by default**: The `StatefulRedisConnection` and its command interfaces are thread-safe
@@ -413,9 +413,9 @@ Lettuce also supports automatic reconnection by default. If the connection to Re
 
 *   [EVAL command](/docs/latest/commands/eval/) - Execute Lua scripts
 *   [EVALSHA command](/docs/latest/commands/evalsha/) - Execute cached Lua scripts
-*   [Lua scripting](/docs/latest/develop/programmability/eval-intro/) - Introduction to Redis Lua scripting
+*   [Lua scripting](../../../programmability/eval-intro/index.md) - Introduction to Redis Lua scripting
 *   [HMGET command](/docs/latest/commands/hmget/) - Get multiple hash fields
 *   [HMSET command](/docs/latest/commands/hmset/) - Set multiple hash fields
-*   [Lettuce client](/docs/latest/develop/clients/lettuce/) - Redis Lettuce client documentation
+*   [Lettuce client](../../../clients/lettuce/index.md) - Redis Lettuce client documentation
 
 ## On this page

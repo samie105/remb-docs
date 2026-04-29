@@ -10,8 +10,8 @@ content_hash: "6e12a488ff4663e21527e59b82739058e1f79e9c95278441f56f334e74d48f11"
 menu_path: ["Deploy to Fly.io"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../serverless/deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
-nav_next: {"path": "../deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-heroku/index.md", "title": "Deploy to Heroku"}
 ---
 
 Learn how to deploy a Node.js server that uses Prisma ORM to Fly.io

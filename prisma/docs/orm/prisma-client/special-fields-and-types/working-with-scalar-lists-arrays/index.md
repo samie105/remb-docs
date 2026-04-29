@@ -11,8 +11,8 @@ menu_path: ["Working with scalar lists"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "../working-with-json-fields/index.md", "title": "Working with Json fields"}
-nav_next: {"path": "../../testing/integration-testing/index.md", "title": "Integration testing"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-json-fields/index.md", "title": "Working with Json fields"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/testing/integration-testing/index.md", "title": "Integration testing"}
 ---
 
 Special Fields and Types

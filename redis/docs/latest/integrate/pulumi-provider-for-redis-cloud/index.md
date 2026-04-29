@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:56.761Z"
 content_hash: "d96b9ea2cc5650406500461b4b5bbbcca1aea19a843cece7d371331f985fcc8c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Pulumi provider for Redis Cloud","→","Pulumi provider for Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Pulumi provider for Redis Cloud","→","Pulumi provider for Redis Cloud"]
-nav_prev: {"path": "../prometheus-with-redis-enterprise/index.md", "title": "Prometheus and Grafana with Redis Software"}
-nav_next: {"path": "../railway-redis/index.md", "title": "Redis on Railway"}
+nav_prev: {"path": "redis/docs/latest/integrate/prometheus-with-redis-enterprise/index.md", "title": "Prometheus and Grafana with Redis Software"}
+nav_next: {"path": "redis/docs/latest/integrate/railway-redis/index.md", "title": "Redis on Railway"}
 ---
 
 # Pulumi provider for Redis Cloud
@@ -28,7 +28,7 @@ With the [Redis Cloud Resource Provider](https://www.pulumi.com/registry/package
 *   Go
 *   YAML
 
-The Redis Cloud Pulumi provider is based on the [Redis Cloud Terraform provider](/docs/latest/integrate/terraform-provider-for-redis-cloud/).
+The Redis Cloud Pulumi provider is based on the [Redis Cloud Terraform provider](../terraform-provider-for-redis-cloud/index.md).
 
 Note:
 

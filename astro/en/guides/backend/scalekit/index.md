@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:42.310Z"
 content_hash: "2f780ce350d9127c94625c9a3d1d3317a492e0024ad4a147e1f42f42031c6864"
 menu_path: ["Scalekit & Astro"]
 section_path: []
-nav_prev: {"path": "../prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
-nav_next: {"path": "../sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
+nav_prev: {"path": "astro/en/guides/backend/prisma-postgres/index.md", "title": "Prisma Postgres & Astro"}
+nav_next: {"path": "astro/en/guides/backend/sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
 ---
 
 # Scalekit & Astro
@@ -26,7 +26,7 @@ nav_next: {"path": "../sentry/index.md", "title": "Monitor your Astro Site with 
 [Section titled “Prerequisites”](#prerequisites)
 
 *   A Scalekit account and environment. If you don’t have one, you can sign up for free at [scalekit.com](https://scalekit.com/) and create a new environment.
-*   An Astro project with [`output: 'server'` for on-demand rendering](/en/guides/on-demand-rendering/) enabled.
+*   An Astro project with [`output: 'server'` for on-demand rendering](../../on-demand-rendering/index.md) enabled.
 *   Scalekit credentials for your environment. You can find these in the **Settings > API Credentials** section of your Scalekit dashboard.
     *   `SCALEKIT_ENVIRONMENT_URL`: The URL of your Scalekit environment.
     *   `SCALEKIT_CLIENT_ID`: Your Scalekit client ID.
@@ -54,7 +54,7 @@ interface ImportMeta {  readonly env: ImportMetaEnv;}
 declare namespace App {  interface Locals {    user?: {      sub: string;      email?: string;      name?: string;    };  }}
 ```
 
-Read more about [environment variables](/en/guides/environment-variables/) and `.env` files in Astro.
+Read more about [environment variables](../../environment-variables/index.md) and `.env` files in Astro.
 
 Your project should now include these files:
 
@@ -214,39 +214,39 @@ if (!user) {  return Astro.redirect("/");}---
 
 *   ![](/logos/appwriteio.svg)
     
-    ### [Appwrite](/en/guides/backend/appwrite/)
+    ### [Appwrite](../appwrite/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/backend/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/neon.svg)
     
-    ### [Neon](/en/guides/backend/neon/)
+    ### [Neon](../neon/index.md)
     
 *   ![](/logos/prisma-postgres.svg)
     
-    ### [Prisma Postgres](/en/guides/backend/prisma-postgres/)
+    ### [Prisma Postgres](../prisma-postgres/index.md)
     
 *   ![](/logos/scalekit.svg)
     
-    ### [Scalekit](/en/guides/backend/scalekit/)
+    ### [Scalekit](index.md)
     
 *   ![](/logos/sentry.svg)
     
-    ### [Sentry](/en/guides/backend/sentry/)
+    ### [Sentry](../sentry/index.md)
     
 *   ![](/logos/supabase.svg)
     
-    ### [Supabase](/en/guides/backend/supabase/)
+    ### [Supabase](../supabase/index.md)
     
 *   ![](/logos/turso.svg)
     
-    ### [Turso](/en/guides/backend/turso/)
+    ### [Turso](../turso/index.md)
     
 *   ![](/logos/xata.svg)
     
-    ### [Xata](/en/guides/backend/xata/)
+    ### [Xata](../xata/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

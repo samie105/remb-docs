@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:22.851Z"
 content_hash: "ab814117065ef48b469c3fe2275b5daf0677f300c389a3ba4d70b7b03db61ea6"
 menu_path: ["Get the current Bun version"]
 section_path: []
-nav_prev: {"path": "../upgrade/index.md", "title": "Upgrade Bun to the latest version"}
-nav_next: {"path": "../which-path-to-executable-bin/index.md", "title": "Get the path to an executable bin file"}
+nav_prev: {"path": "bun/docs/guides/util/upgrade/index.md", "title": "Upgrade Bun to the latest version"}
+nav_next: {"path": "bun/docs/guides/util/which-path-to-executable-bin/index.md", "title": "Get the path to an executable bin file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../which-path-to-executable-bin/index.md", "title": "Get the
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Get the current version of Bun in a semver format.
 
@@ -55,7 +55,7 @@ Bun.revision; // => "49231b2cb9aa48497ab966fc0bb6b742dacc4994"
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -67,10 +67,10 @@ Detect when code is executed with Bun
 
 Previous
 
-](/docs/guides/util/detect-bun)[
+](../detect-bun/index.md)[
 
 Hash a password
 
 Next
 
-](/docs/guides/util/hash-a-password)
+](../hash-a-password/index.md)

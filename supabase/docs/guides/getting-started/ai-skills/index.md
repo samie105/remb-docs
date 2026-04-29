@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:52.273Z"
 content_hash: "ca740db1adc9ab6463591ca0bdf86e8f59d13ffb835e517fe443a656d097a979"
 menu_path: ["Getting started","Getting started","AI Tools","AI Tools","Agent Skills","Agent Skills"]
 section_path: ["Getting started","Getting started","AI Tools","AI Tools","Agent Skills","Agent Skills"]
-nav_prev: {"path": "../ai-prompts/index.md", "title": "AI Prompts"}
-nav_next: {"path": "../architecture/index.md", "title": "Architecture"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/ai-prompts/index.md", "title": "AI Prompts"}
+nav_next: {"path": "supabase/docs/guides/getting-started/architecture/index.md", "title": "Architecture"}
 ---
 
 # 

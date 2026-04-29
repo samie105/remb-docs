@@ -11,8 +11,8 @@ menu_path: ["Form"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../font/index.md", "title": "Font Module"}
-nav_next: {"path": "../head/index.md", "title": "Head"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/components/font/index.md", "title": "Font Module"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/components/head/index.md", "title": "Head"}
 ---
 
 # Form
@@ -49,7 +49,7 @@ export default function Page() {
 The behavior of the `<Form>` component depends on whether the `action` prop is passed a `string` or `function`.
 
 -   When `action` is a **string**, the `<Form>` behaves like a native HTML form that uses a **`GET`** method. The form data is encoded into the URL as search params, and when the form is submitted, it navigates to the specified URL. In addition, Next.js:
-    -   Performs a [client-side navigation](/docs/app/getting-started/linking-and-navigating#client-side-transitions) instead of a full page reload when the form is submitted. This retains shared UI and client-side state.
+    -   Performs a [client-side navigation](../../../../app/getting-started/linking-and-navigating/index.md#client-side-transitions) instead of a full page reload when the form is submitted. This retains shared UI and client-side state.
 
 ### `action` (string) Props[](#action-string-props)
 

@@ -11,8 +11,8 @@ menu_path: ["What is introspection?"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../../core-concepts/api-patterns/index.md", "title": "API patterns"}
-nav_next: {"path": "../postgresql-extensions/index.md", "title": "PostgreSQL extensions"}
+nav_prev: {"path": "prisma/docs/orm/core-concepts/api-patterns/index.md", "title": "API patterns"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/postgresql-extensions/index.md", "title": "PostgreSQL extensions"}
 ---
 
 Learn how you can introspect your database to generate a data model into your Prisma schema

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:48.347Z"
 content_hash: "2e59f321090262cd8d7eb62db166b1f1236011ee88fb87b04f3cbbf6ca4456bf"
 menu_path: ["App - Hono ​"]
 section_path: []
-nav_prev: {"path": "../../getting-started/nodejs/index.md", "title": "Node.js \u200b"}
-nav_next: {"path": "../routing/index.md", "title": "Routing \u200b"}
+nav_prev: {"path": "hono/docs/getting-started/nodejs/index.md", "title": "Node.js \u200b"}
+nav_next: {"path": "hono/docs/api/routing/index.md", "title": "Routing \u200b"}
 ---
 
 `Hono` is the primary object. It will be imported first and used until the end.

@@ -11,8 +11,8 @@ menu_path: ["Models"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "../indexes/index.md", "title": "Indexes"}
-nav_next: {"path": "../multi-schema/index.md", "title": "Multi-schema"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/indexes/index.md", "title": "Indexes"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md", "title": "Multi-schema"}
 ---
 
 Learn about the concepts for building your data model with Prisma: Models, scalar types, enums, attributes, functions, IDs, default values and more

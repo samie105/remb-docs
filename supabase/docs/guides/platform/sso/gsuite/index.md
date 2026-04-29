@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:54.315Z"
 content_hash: "7055e08060ec517ab1ae0a6e24d5dcc18164331f777f2f6bd3e16f6df12966e0"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Google Workspace","SSO with Google Workspace"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Google Workspace","SSO with Google Workspace"]
-nav_prev: {"path": "../azure/index.md", "title": "Set Up SSO with Azure AD"}
-nav_next: {"path": "../okta/index.md", "title": "Set Up SSO with Okta"}
+nav_prev: {"path": "supabase/docs/guides/platform/sso/azure/index.md", "title": "Set Up SSO with Azure AD"}
+nav_next: {"path": "supabase/docs/guides/platform/sso/okta/index.md", "title": "Set Up SSO with Okta"}
 ---
 
 # 
@@ -21,7 +21,7 @@ Set Up SSO with Google Workspace
 
 This feature is only available on the [Team and Enterprise Plans](/pricing). If you are an existing Team or Enterprise Plan customer, continue with the setup below.
 
-Looking for docs on how to add Single Sign-On support in your Supabase project? Head on over to [Single Sign-On with SAML 2.0 for Projects](/docs/guides/auth/enterprise-sso/auth-sso-saml).
+Looking for docs on how to add Single Sign-On support in your Supabase project? Head on over to [Single Sign-On with SAML 2.0 for Projects](../../../auth/enterprise-sso/auth-sso-saml/index.md).
 
 Supabase supports single sign-on (SSO) using Google Workspace (formerly known as G Suite).
 
@@ -148,7 +148,7 @@ When auto-join is enabled, you can choose the **default role** for new users:
 
 Choose a role that fits the level of access you want to grant to new members.
 
-Visit [access-control](/docs/guides/platform/access-control) documentation for details about each role.
+Visit [access-control](../../access-control/index.md) documentation for details about each role.
 
 ## Step 13: Save changes and test single sign-on [#](#dashboard-configure-save)
 

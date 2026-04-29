@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:36.761Z"
 content_hash: "5c713711491f101f5ca6f9e8817e990848712323bb9ef822e342968a9c25f36d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Exact match queries","→","Exact match queries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Exact match queries","→","Exact match queries"]
-nav_prev: {"path": "../combined/index.md", "title": "Combined queries"}
-nav_next: {"path": "../full-text/index.md", "title": "Full-text search"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/combined/index.md", "title": "Combined queries"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/full-text/index.md", "title": "Full-text search"}
 ---
 
 # Exact match queries
@@ -39,7 +39,7 @@ Field type
 
 `NUMERIC`
 
-You can find more details about creating the index and loading the demo data in the [quick start guide](/docs/latest/develop/get-started/document-database/).
+You can find more details about creating the index and loading the demo data in the [quick start guide](../../../../get-started/document-database/index.md).
 
 ## Numeric field
 
@@ -57,7 +57,7 @@ or
 FT.SEARCH index "@field==value" DIALECT 2 # requires v2.10
 ```
 
-As described in the [article about range queries](/docs/latest/develop/ai/search-and-query/query/range/), you can also use the `FILTER` argument:
+As described in the [article about range queries](../range/index.md), you can also use the `FILTER` argument:
 
 ```
 FT.SEARCH index "*" FILTER field start end
@@ -4485,7 +4485,7 @@ public class QueryEmExample
 
 ## Full-text field
 
-A detailed explanation of full-text queries is available in the [full-text queries documentation](/docs/latest/develop/ai/search-and-query/query/full-text/). You can also query for an exact match of a phrase within a text field:
+A detailed explanation of full-text queries is available in the [full-text queries documentation](../full-text/index.md). You can also query for an exact match of a phrase within a text field:
 
 ```
 FT.SEARCH index "@field:\"phrase\""

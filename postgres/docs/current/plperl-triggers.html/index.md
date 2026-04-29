@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:04.218Z"
 content_hash: "3c18cf290e36e6a451c2ed7cd468245a4ad3fd9e857570894c44ace1739f5393"
 menu_path: ["PostgreSQL: Documentation: 18: 43.6. PL/Perl Triggers"]
 section_path: []
-nav_prev: {"path": "../pgtrgm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.35.\u00a0pg_trgm \u2014 support for similarity of text using trigram matching"}
-nav_next: {"path": "../plperl-trusted.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.5.\u00a0Trusted and Untrusted PL/Perl"}
+nav_prev: {"path": "postgres/docs/current/pgtrgm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.35.\u00a0pg_trgm \u2014 support for similarity of text using trigram matching"}
+nav_next: {"path": "postgres/docs/current/plperl-trusted.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.5.\u00a0Trusted and Untrusted PL/Perl"}
 ---
 
 PL/Perl can be used to write trigger functions. In a trigger function, the hash reference `$_TD` contains information about the current trigger event. `$_TD` is a global variable, which gets a separate local value for each invocation of the trigger. The fields of the `$_TD` hash reference are:

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:41.681Z"
 content_hash: "31b53ea489c2853d69c5485724b6f41207af8ea49fa1986f7ef9f008f9a26bfe"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare MongoDB for RDI","→","Prepare MongoDB for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare MongoDB for RDI","→","Prepare MongoDB for RDI"]
-nav_prev: {"path": "../aws-aurora-rds/aws-rds-sqlserver/index.md", "title": "Prepare Microsoft SQL Server on AWS RDS for RDI"}
-nav_next: {"path": "../my-sql-mariadb/index.md", "title": "Prepare MySQL/MariaDB for RDI"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-rds-sqlserver/index.md", "title": "Prepare Microsoft SQL Server on AWS RDS for RDI"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/my-sql-mariadb/index.md", "title": "Prepare MySQL/MariaDB for RDI"}
 ---
 
 # Prepare MongoDB for RDI

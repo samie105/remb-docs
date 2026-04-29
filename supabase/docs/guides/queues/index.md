@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:34.549Z"
 content_hash: "52d58030a4010c2d6ecc157400782f9f8ba952035f09ef409486fc9bc9ecfe8d"
 menu_path: ["Queues","Queues","Overview","Overview"]
 section_path: ["Queues","Queues","Overview","Overview"]
-nav_prev: {"path": "../platform/your-monthly-invoice/index.md", "title": "Your monthly invoice"}
-nav_next: {"path": "api/index.md", "title": "API"}
+nav_prev: {"path": "supabase/docs/guides/platform/your-monthly-invoice/index.md", "title": "Your monthly invoice"}
+nav_next: {"path": "supabase/docs/guides/queues/api/index.md", "title": "API"}
 ---
 
 # 
@@ -44,6 +44,6 @@ Queues couples the reliability of Postgres with the simplicity Supabase's platfo
 
 ## Resources[#](#resources)
 
-*   [Quickstart](/docs/guides/queues/quickstart)
-*   [API Reference](/docs/guides/queues/api)
+*   [Quickstart](quickstart/index.md)
+*   [API Reference](api/index.md)
 *   [`pgmq` GitHub Repository](https://github.com/tembo-io/pgmq)

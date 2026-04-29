@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:28.172Z"
 content_hash: "7a96e8d0f36e684031a8c70dde9183fd9e0ecc904b6086b9d7af34f92249cf16"
 menu_path: ["Debugging Bun with the VS Code extension"]
 section_path: []
-nav_prev: {"path": "../typescript/index.md", "title": "Install TypeScript declarations for Bun"}
-nav_next: {"path": "../web-debugger/index.md", "title": "Debugging Bun with the web debugger"}
+nav_prev: {"path": "bun/docs/guides/runtime/typescript/index.md", "title": "Install TypeScript declarations for Bun"}
+nav_next: {"path": "bun/docs/guides/runtime/web-debugger/index.md", "title": "Debugging Bun with the web debugger"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../web-debugger/index.md", "title": "Debugging Bun with the 
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-VSCode extension support is currently buggy. We recommend the [Web Debugger](/docs/guides/runtime/web-debugger) for now.
+VSCode extension support is currently buggy. We recommend the [Web Debugger](../web-debugger/index.md) for now.
 
 Bun speaks the [WebKit Inspector Protocol](https://github.com/oven-sh/bun/blob/main/packages/bun-inspector-protocol/src/protocol/jsc/index.d.ts) so you can debug your code with an interactive debugger.
 
@@ -83,13 +83,13 @@ Re-map import paths
 
 Previous
 
-](/docs/guides/runtime/tsconfig-paths)[
+](../tsconfig-paths/index.md)[
 
 Debugging Bun with the web debugger
 
 Next
 
-](/docs/guides/runtime/web-debugger)
+](../web-debugger/index.md)
 
 ![VS Code extension](https://github.com/oven-sh/bun/assets/3084745/7c8c80e6-d49e-457a-a45e-45ebed946d56)
 

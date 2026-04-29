@@ -10,8 +10,8 @@ content_hash: "bb40272b9e140dca54e7ca9947b3a980acb2c5a4b1be93ceae20ed2a0c5834c5"
 menu_path: ["Get Started with Drizzle and Vercel Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../vercel-existing/index.md", "title": "Get Started with Drizzle and Vercel Postgres in existing project"}
-nav_next: {"path": "../xata-existing/index.md", "title": "Get Started with Drizzle and Xata in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/vercel-existing/index.md", "title": "Get Started with Drizzle and Vercel Postgres in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/xata-existing/index.md", "title": "Get Started with Drizzle and Xata in existing project"}
 ---
 
 ## Get Started with Drizzle and Vercel Postgres

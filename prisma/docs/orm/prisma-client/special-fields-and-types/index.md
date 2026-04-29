@@ -10,8 +10,8 @@ content_hash: "5f8397c887146c63c78fd6e29cbe1c6447e29cee4a8d5af314c9f2fc30e82724"
 menu_path: ["Fields & types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../setup-and-configuration/read-replicas/index.md", "title": "Read replicas"}
-nav_next: {"path": "composite-types/index.md", "title": "Composite types"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/read-replicas/index.md", "title": "Read replicas"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md", "title": "Composite types"}
 ---
 
 Special Fields and Types

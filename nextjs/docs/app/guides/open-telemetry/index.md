@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../multi-zones/index.md", "title": "How to build micro-frontends using multi-zones and Next.js"}
-nav_next: {"path": "../package-bundling/index.md", "title": "Optimizing package bundling"}
+nav_prev: {"path": "nextjs/docs/app/guides/multi-zones/index.md", "title": "How to build micro-frontends using multi-zones and Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/package-bundling/index.md", "title": "Optimizing package bundling"}
 ---
 
 # How to set up instrumentation with OpenTelemetry
@@ -60,7 +60,7 @@ Terminal
 pnpm add @vercel/otel @opentelemetry/sdk-logs @opentelemetry/api-logs @opentelemetry/instrumentation
 ```
 
-Next, create a custom [`instrumentation.ts`](/docs/app/guides/instrumentation) (or `.js`) file in the **root directory** of the project (or inside `src` folder if using one):
+Next, create a custom [`instrumentation.ts`](../instrumentation/index.md) (or `.js`) file in the **root directory** of the project (or inside `src` folder if using one):
 
 your-project/instrumentation.ts
 
@@ -79,7 +79,7 @@ See the [`@vercel/otel` documentation](https://www.npmjs.com/package/@vercel/ote
 > **Good to know**:
 > 
 > -   The `instrumentation` file should be in the root of your project and not inside the `app` or `pages` directory. If you're using the `src` folder, then place the file inside `src` alongside `pages` and `app`.
-> -   If you use the [`pageExtensions` config option](/docs/app/api-reference/config/next-config-js/pageExtensions) to add a suffix, you will also need to update the `instrumentation` filename to match.
+> -   If you use the [`pageExtensions` config option](../../api-reference/config/next-config-js/pageExtensions/index.md) to add a suffix, you will also need to update the `instrumentation` filename to match.
 > -   We have created a basic [with-opentelemetry](https://github.com/vercel/next.js/tree/canary/examples/with-opentelemetry) example that you can use.
 
 ### Manual OpenTelemetry configuration[](#manual-opentelemetry-configuration)

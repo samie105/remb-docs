@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:14.451Z"
 content_hash: "6587054d5cc0a3b2ec4d2d03167fe692b1f7bcfe0c496a79bcc64099a0559798"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Read Replicas","Read Replicas"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Read Replicas","Read Replicas"]
-nav_prev: {"path": "../point-in-time-recovery/index.md", "title": "Manage Point-in-Time Recovery usage"}
-nav_next: {"path": "../realtime-messages/index.md", "title": "Manage Realtime Messages usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/point-in-time-recovery/index.md", "title": "Manage Point-in-Time Recovery usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/realtime-messages/index.md", "title": "Manage Realtime Messages usage"}
 ---
 
 # 
@@ -21,15 +21,15 @@ Manage Read Replica usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-Each [Read Replica](/docs/guides/platform/read-replicas) is a dedicated database. You are charged for its resources, which are the following, and mirrored from the primary database:
+Each [Read Replica](../../read-replicas/index.md) is a dedicated database. You are charged for its resources, which are the following, and mirrored from the primary database:
 
-*   [Compute](/docs/guides/platform/compute-and-disk#compute)
-*   [Disk Size](/docs/guides/platform/database-size#disk-size)
-*   Provisioned [Disk IOPS](/docs/guides/platform/compute-and-disk#provisioned-disk-throughput-and-iops)
-*   Provisioned [Disk Throughput](/docs/guides/platform/compute-and-disk#provisioned-disk-throughput-and-iops)
-*   [IPv4](/docs/guides/platform/ipv4-address).
+*   [Compute](../../compute-and-disk/index.md#compute)
+*   [Disk Size](../../database-size/index.md#disk-size)
+*   Provisioned [Disk IOPS](../../compute-and-disk/index.md#provisioned-disk-throughput-and-iops)
+*   Provisioned [Disk Throughput](../../compute-and-disk/index.md#provisioned-disk-throughput-and-iops)
+*   [IPv4](../../ipv4-address/index.md).
 
-Read Replicas are **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+Read Replicas are **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 ## How we calculate charges[#](#how-we-calculate-charges)
 
@@ -43,19 +43,19 @@ Read Replicas run on the same Compute size as the primary database.
 
 ### Disk size[#](#disk-size)
 
-Read [the Manage Disk Size usage guide](/docs/guides/platform/manage-your-usage/disk-size) for details on how we calculate charges. The disk size of a Read Replica is 1.25x the size of the primary disk to account for WAL archives. With a Read Replica you go beyond your subscription plan's quota for Disk Size.
+Read [the Manage Disk Size usage guide](../disk-size/index.md) for details on how we calculate charges. The disk size of a Read Replica is 1.25x the size of the primary disk to account for WAL archives. With a Read Replica you go beyond your subscription plan's quota for Disk Size.
 
 ### Provisioned Disk IOPS (optional)[#](#provisioned-disk-iops-optional)
 
-Read Replicas inherit any additional provisioned Disk IOPS from the primary database. Read the [Manage Disk IOPS usage guide](/docs/guides/platform/manage-your-usage/disk-iops) for details on how we calculate charges.
+Read Replicas inherit any additional provisioned Disk IOPS from the primary database. Read the [Manage Disk IOPS usage guide](../disk-iops/index.md) for details on how we calculate charges.
 
 ### Provisioned Disk Throughput (optional)[#](#provisioned-disk-throughput-optional)
 
-Read Replicas inherit any additional provisioned Disk Throughput from the primary database. Read the [Manage Disk Throughput usage guide](/docs/guides/platform/manage-your-usage/disk-throughput) for details on how we calculate charges.
+Read Replicas inherit any additional provisioned Disk Throughput from the primary database. Read the [Manage Disk Throughput usage guide](../disk-throughput/index.md) for details on how we calculate charges.
 
 ### IPv4 (optional)[#](#ipv4-optional)
 
-If the primary database has configured an IPv4 address add-on, its Read Replicas are also assigned one, with charges for each. Read the [Manage IPv4 usage guide](/docs/guides/platform/manage-your-usage/ipv4) for details on how we calculate charges.
+If the primary database has configured an IPv4 address add-on, its Read Replicas are also assigned one, with charges for each. Read the [Manage IPv4 usage guide](../ipv4/index.md) for details on how we calculate charges.
 
 ### Usage on your invoice[#](#usage-on-your-invoice)
 

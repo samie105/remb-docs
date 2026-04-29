@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:01:51.987Z"
 content_hash: "6cd8d452d5c8871c9e4a19b428bc66b2a18960a2d26d74b58d5f7bdacb0c7e43"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with .NET","→","Redis session store with .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with .NET","→","Redis session store with .NET"]
-nav_prev: {"path": "../index.md", "title": "Redis session store"}
-nav_next: {"path": "../go/index.md", "title": "Redis session store with Go"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/index.md", "title": "Redis session store"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/go/index.md", "title": "Redis session store with Go"}
 ---
 
 # Redis session store with .NET
 
 Implement a Redis-backed session store in .NET with StackExchange.Redis
 
-This guide shows you how to implement a Redis-backed session store in .NET with [`StackExchange.Redis`](/docs/latest/develop/clients/dotnet/). It includes a small local web server built with ASP.NET Core minimal APIs so you can see the session lifecycle end to end.
+This guide shows you how to implement a Redis-backed session store in .NET with [`StackExchange.Redis`](../../../clients/dotnet/index.md). It includes a small local web server built with ASP.NET Core minimal APIs so you can see the session lifecycle end to end.
 
 ## Overview
 
@@ -257,8 +257,8 @@ You now have a complete Redis-backed session example in .NET using StackExchange
 
 For more Redis data modeling patterns, see:
 
-*   [Session store overview](/docs/latest/develop/use-cases/session-store/)
-*   [.NET client guide](/docs/latest/develop/clients/dotnet/)
+*   [Session store overview](../index.md)
+*   [.NET client guide](../../../clients/dotnet/index.md)
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page

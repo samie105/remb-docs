@@ -10,8 +10,8 @@ content_hash: "36b88c207af402c8194fbf1c51963bdf0052b13d451823ac40d964aef5c6757b"
 menu_path: ["gap"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../grid-auto-rows/index.md", "title": "grid-auto-rows"}
-nav_next: {"path": "../justify-content/index.md", "title": "justify-content"}
+nav_prev: {"path": "tailwind/docs/grid-auto-rows/index.md", "title": "grid-auto-rows"}
+nav_next: {"path": "tailwind/docs/justify-content/index.md", "title": "justify-content"}
 ---
 
 # gap
@@ -117,7 +117,7 @@ Prefix `gap`,`column-gap`, and `row-gap` utilities with a breakpoint variant lik
 <div class="grid gap-4 md:gap-6 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

@@ -10,8 +10,8 @@ content_hash: "d713b556f440c950c0e008b69a05c3463868a7b04992cd2828ee09679d6ab2bc"
 menu_path: ["backdrop-filter: hue-rotate()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../backdrop-filter-grayscale/index.md", "title": "backdrop-filter: grayscale()"}
-nav_next: {"path": "../backdrop-filter-invert/index.md", "title": "backdrop-filter: invert()"}
+nav_prev: {"path": "tailwind/docs/backdrop-filter-grayscale/index.md", "title": "backdrop-filter: grayscale()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-invert/index.md", "title": "backdrop-filter: invert()"}
 ---
 
 Utilities for applying backdrop hue-rotate filters to an element.

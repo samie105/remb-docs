@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:48.266Z"
 content_hash: "066443fc2ddd4399b29b02cfb4c5b77bdf692eff54ab8e7e07b361547f0a9593"
 menu_path: ["HTTP RPC Specification"]
 section_path: []
-nav_prev: {"path": "../router/index.md", "title": "Define Router"}
-nav_next: {"path": "../sponsors/index.md", "title": "Sponsors"}
+nav_prev: {"path": "trpc/docs/v9/router/index.md", "title": "Define Router"}
+nav_next: {"path": "trpc/docs/v9/sponsors/index.md", "title": "Sponsors"}
 ---
 
 ## Methods <-> Type mapping[​](#methods---type-mapping "Direct link to Methods <-> Type mapping")

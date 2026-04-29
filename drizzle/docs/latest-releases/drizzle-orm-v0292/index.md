@@ -10,8 +10,8 @@ content_hash: "d9c8c1a67d68ae7f94b398d0c1c5af09ffed72fa8fa87dfc3a24ec1cffa9dce0"
 menu_path: ["Drizzle ORM - DrizzleORM v0.29.2 release"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-orm-v0291/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.1 release"}
-nav_next: {"path": "../drizzle-orm-v0293/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.3 release"}
+nav_prev: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0291/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.1 release"}
+nav_next: {"path": "drizzle/docs/latest-releases/drizzle-orm-v0293/index.md", "title": "Drizzle ORM - DrizzleORM v0.29.3 release"}
 ---
 
 DrizzleORM v0.29.2 release

@@ -11,8 +11,8 @@ menu_path: ["Custom Webpack Config"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../useLightningcss/index.md", "title": "useLightningcss"}
-nav_next: {"path": "../webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/useLightningcss/index.md", "title": "useLightningcss"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
 ---
 
 # Custom Webpack Config
@@ -23,8 +23,8 @@ Last updated April 23, 2026
 
 Before continuing to add custom webpack configuration to your application make sure Next.js doesn't already support your use-case:
 
--   [CSS imports](/docs/app/getting-started/css)
--   [CSS modules](/docs/app/getting-started/css)
+-   [CSS imports](../../../../../app/getting-started/css/index.md)
+-   [CSS modules](../../../../../app/getting-started/css/index.md)
 -   [Sass/SCSS imports](/docs/pages/guides/sass)
 -   [Sass/SCSS modules](/docs/pages/guides/sass)
 -   [Customizing babel configuration](/docs/pages/guides/babel)

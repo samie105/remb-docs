@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:13.305Z"
 content_hash: "c98662596920ed05acc403c2a2687c752ecd029cfe8967e354a349b081a8af9c"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Copy Storage from Platform","Copy Storage from Platform"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Copy Storage from Platform","Copy Storage from Platform"]
-nav_prev: {"path": "../index.md", "title": "Self-Hosting"}
-nav_next: {"path": "../custom-email-templates/index.md", "title": "Custom Email Templates"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/index.md", "title": "Self-Hosting"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/custom-email-templates/index.md", "title": "Custom Email Templates"}
 ---
 
 # 
@@ -31,7 +31,7 @@ Direct file copy (e.g., downloading files and placing them into `volumes/storage
 
 You need:
 
-*   A working self-hosted Supabase instance with the S3 protocol endpoint enabled - see [Configure S3 Storage](/docs/guides/self-hosting/self-hosted-s3#enable-the-s3-protocol-endpoint)
+*   A working self-hosted Supabase instance with the S3 protocol endpoint enabled - see [Configure S3 Storage](../self-hosted-s3/index.md#enable-the-s3-protocol-endpoint)
 *   Your platform project's S3 credentials - generated from the [S3 Configuration](/dashboard/project/_/storage/s3) page
 *   Matching buckets created on your self-hosted instance
 *   [rclone](https://rclone.org/install/) installed on the machine running the copy
@@ -50,7 +50,7 @@ For better performance with large files, use the direct storage hostname: `https
 
 Buckets must exist on the destination before you can copy objects into them. You can create them through dashboard UI, or with **SQL Editor**.
 
-If you already restored your platform database to self-hosted using the [restore guide](/docs/guides/self-hosting/restore-from-platform), your bucket definitions are already present. You can skip this step.
+If you already restored your platform database to self-hosted using the [restore guide](../restore-from-platform/index.md), your bucket definitions are already present. You can skip this step.
 
 To list your platform buckets, connect to your platform database and run:
 
@@ -74,7 +74,7 @@ Create or edit your rclone configuration file (`~/.config/rclone/rclone.conf`):
 1[platform]2type = s33provider = Other4access_key_id = your-platform-access-key-id5secret_access_key = your-platform-secret-access-key6endpoint = https://your-project-ref.supabase.co/storage/v1/s37region = your-project-region89[self-hosted]10type = s311provider = Other12access_key_id = your-self-hosted-access-key-id13secret_access_key = your-self-hosted-secret-access-key14endpoint = http://your-domain:8000/storage/v1/s315region = your-self-hosted-region
 ```
 
-Replace the credentials with your actual values. For self-hosted, use the `REGION`, `S3_PROTOCOL_ACCESS_KEY_ID` and `S3_PROTOCOL_ACCESS_KEY_SECRET` you configured in [Configure S3 Storage](/docs/guides/self-hosting/self-hosted-s3#enable-the-s3-protocol-endpoint).
+Replace the credentials with your actual values. For self-hosted, use the `REGION`, `S3_PROTOCOL_ACCESS_KEY_ID` and `S3_PROTOCOL_ACCESS_KEY_SECRET` you configured in [Configure S3 Storage](../self-hosted-s3/index.md#enable-the-s3-protocol-endpoint).
 
 Verify both remotes connect:
 

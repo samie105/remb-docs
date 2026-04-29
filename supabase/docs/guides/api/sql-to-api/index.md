@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:44.830Z"
 content_hash: "e77a294a0d58e02b2c1b216526255f3a68fb5ff9a7eeae85e168955e58e2df1e"
 menu_path: ["Data REST API","Data REST API","Using the Data APIs","Using the Data APIs","Converting from SQL to JavaScript API","Converting from SQL to JavaScript API"]
 section_path: ["Data REST API","Data REST API","Using the Data APIs","Using the Data APIs","Converting from SQL to JavaScript API","Converting from SQL to JavaScript API"]
-nav_prev: {"path": "../securing-your-api/index.md", "title": "Securing your API"}
-nav_next: {"path": "../sql-to-rest/index.md", "title": "SQL to REST API Translator"}
+nav_prev: {"path": "supabase/docs/guides/api/securing-your-api/index.md", "title": "Securing your API"}
+nav_next: {"path": "supabase/docs/guides/api/sql-to-rest/index.md", "title": "SQL to REST API Translator"}
 ---
 
 # 

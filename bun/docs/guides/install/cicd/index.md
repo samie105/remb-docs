@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:43.415Z"
 content_hash: "1cf69e1f494367b109e845af46e2b661a18e4536a9cfbdbfc7e36a7978999a93"
 menu_path: ["Install dependencies with Bun in GitHub Actions"]
 section_path: []
-nav_prev: {"path": "../azure-artifacts/index.md", "title": "Using bun install with an Azure Artifacts npm registry"}
-nav_next: {"path": "../custom-registry/index.md", "title": "Override the default npm registry for bun install"}
+nav_prev: {"path": "bun/docs/guides/install/azure-artifacts/index.md", "title": "Using bun install with an Azure Artifacts npm registry"}
+nav_next: {"path": "bun/docs/guides/install/custom-registry/index.md", "title": "Override the default npm registry for bun install"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../custom-registry/index.md", "title": "Override the default
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use the official [`setup-bun`](https://github.com/oven-sh/setup-bun) GitHub Action to install `bun` in your GitHub Actions runner.
 
@@ -87,10 +87,10 @@ Configure git to diff Bun's lockb lockfile
 
 Previous
 
-](/docs/guides/install/git-diff-bun-lockfile)[
+](../git-diff-bun-lockfile/index.md)[
 
 Run your tests with the Bun test runner
 
 Next
 
-](/docs/guides/test/run-tests)
+](../../test/run-tests/index.md)

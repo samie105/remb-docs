@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:38:14.439Z"
 content_hash: "e5dbe38bc8a9c5e304094c4b8ce905ff83178f1d668af75989e183c9ce13a490"
 menu_path: ["Endpoints"]
 section_path: []
-nav_prev: {"path": "../routing/index.md", "title": "Routing"}
-nav_next: {"path": "../middleware/index.md", "title": "Middleware"}
+nav_prev: {"path": "astro/en/guides/routing/index.md", "title": "Routing"}
+nav_next: {"path": "astro/en/guides/middleware/index.md", "title": "Middleware"}
 ---
 
 # Endpoints
 
 Astro lets you create custom endpoints to serve any kind of data. You can use this to generate images, expose an RSS document, or use them as API Routes to build a full API for your site.
 
-In statically-generated sites, your custom endpoints are called at build time to produce static files. If you opt in to [SSR](/en/guides/on-demand-rendering/) mode, custom endpoints turn into live server endpoints that are called on request. Static and SSR endpoints are defined similarly, but SSR endpoints support additional features.
+In statically-generated sites, your custom endpoints are called at build time to produce static files. If you opt in to [SSR](../on-demand-rendering/index.md) mode, custom endpoints turn into live server endpoints that are called on request. Static and SSR endpoints are defined similarly, but SSR endpoints support additional features.
 
 ## Static File Endpoints
 
@@ -25,7 +25,7 @@ In statically-generated sites, your custom endpoints are called at build time to
 
 To create a custom endpoint, add a `.js` or `.ts` file to the `/pages` directory. The `.js` or `.ts` extension will be removed during the build process, so the name of the file should include the extension of the data you want to create. For example, `src/pages/data.json.ts` will build a `/data.json` endpoint.
 
-Endpoints export a `GET` function (optionally `async`) that receives a [context object](/en/reference/api-reference/) with properties similar to the `Astro` global. Here, it returns a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object with a `name` and `url`, and Astro will call this at build time and use the contents of the body to generate the file.
+Endpoints export a `GET` function (optionally `async`) that receives a [context object](../../reference/api-reference/index.md) with properties similar to the `Astro` global. Here, it returns a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object with a `name` and `url`, and Astro will call this at build time and use the contents of the body to generate the file.
 
 ```
 // Outputs: /builtwith.jsonexport function GET({ params, request }) {  return new Response(    JSON.stringify({      name: "Astro",      url: "https://astro.build/",    }),  );}
@@ -45,13 +45,13 @@ import type { APIRoute } from "astro";
 export const GET = (async ({ params, request }) => { /* ... */ }) satisfies APIRoute;
 ```
 
-Note that endpoints whose URLs include a file extension (e.g. `src/pages/sitemap.xml.ts`) can only be accessed without a trailing slash (e.g. `/sitemap.xml`), regardless of your [`build.trailingSlash`](/en/reference/configuration-reference/#trailingslash) configuration.
+Note that endpoints whose URLs include a file extension (e.g. `src/pages/sitemap.xml.ts`) can only be accessed without a trailing slash (e.g. `/sitemap.xml`), regardless of your [`build.trailingSlash`](../../reference/configuration-reference/index.md#trailingslash) configuration.
 
 ### `params` and Dynamic routing
 
 [Section titled “params and Dynamic routing”](#params-and-dynamic-routing)
 
-Endpoints support the same [dynamic routing](/en/guides/routing/#dynamic-routes) features that pages do. Name your file with a bracketed parameter name and export a [`getStaticPaths()` function](/en/reference/routing-reference/#getstaticpaths). Then, you can access the parameter using the `params` property passed to the endpoint function:
+Endpoints support the same [dynamic routing](../routing/index.md#dynamic-routes) features that pages do. Name your file with a bracketed parameter name and export a [`getStaticPaths()` function](../../reference/routing-reference/index.md#getstaticpaths). Then, you can access the parameter using the `params` property passed to the endpoint function:
 
 ```
 import type { APIRoute } from "astro";
@@ -61,13 +61,13 @@ export const GET = (({ params, request }) => {  const id = params.id;
 export function getStaticPaths() {  return [    { params: { id: "0" } },    { params: { id: "1" } },    { params: { id: "2" } },    { params: { id: "3" } },  ];}
 ```
 
-This will generate four JSON endpoints at build time: `/api/0.json`, `/api/1.json`, `/api/2.json` and `/api/3.json`. Dynamic routing with endpoints works the same as it does with pages. In static mode, you can [pass props to the endpoint using `getStaticPaths()`](/en/reference/routing-reference/#data-passing-with-props). However, with on-demand rendering, since the endpoint is a function and not a component, passing props is not supported.
+This will generate four JSON endpoints at build time: `/api/0.json`, `/api/1.json`, `/api/2.json` and `/api/3.json`. Dynamic routing with endpoints works the same as it does with pages. In static mode, you can [pass props to the endpoint using `getStaticPaths()`](../../reference/routing-reference/index.md#data-passing-with-props). However, with on-demand rendering, since the endpoint is a function and not a component, passing props is not supported.
 
 ### `request`
 
 [Section titled “request”](#request)
 
-All endpoints receive a `request` property, but in static mode, you only have access to `request.url`. This returns the full URL of the current endpoint and works the same as [Astro.request.url](/en/reference/api-reference/#request) does for pages.
+All endpoints receive a `request` property, but in static mode, you only have access to `request.url`. This returns the full URL of the current endpoint and works the same as [Astro.request.url](../../reference/api-reference/index.md#request) does for pages.
 
 ```
 import type { APIRoute } from "astro";
@@ -78,7 +78,7 @@ export const GET = (({ params, request }) => {  return new Response(    JSON.str
 
 [Section titled “Server Endpoints (API Routes)”](#server-endpoints-api-routes)
 
-Everything described in the static file endpoints section can also be used in SSR mode: files can export a `GET` function which receives a [context object](/en/reference/api-reference/) with properties similar to the `Astro` global.
+Everything described in the static file endpoints section can also be used in SSR mode: files can export a `GET` function which receives a [context object](../../reference/api-reference/index.md) with properties similar to the `Astro` global.
 
 But, unlike in `static` mode, when you enable on-demand rendering for a route, the endpoint will be built when it is requested. This unlocks new features that are unavailable at build time, and allows you to build API routes that listen for requests and securely execute code on the server at runtime.
 
@@ -110,7 +110,7 @@ export async function GET({ params, request }) {  const response = await fetch( 
 
 In addition to the `GET` function, you can export a function with the name of any [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods). When a request comes in, Astro will check the method and call the corresponding function.
 
-You can also export an `ALL` function to match any method that doesn’t have a corresponding exported function. If there is a request with no matching method, it will redirect to your site’s [404 page](/en/basics/astro-pages/#custom-404-error-page).
+You can also export an `ALL` function to match any method that doesn’t have a corresponding exported function. If there is a request with no matching method, it will redirect to your site’s [404 page](../../basics/astro-pages/index.md#custom-404-error-page).
 
 ```
 export const GET = (({ params, request }) => {  return new Response(    JSON.stringify({      message: "This was a GET!",    }),  );}) satisfies APIRoute;
@@ -151,4 +151,4 @@ export async function GET({ params, redirect }) {  const { id } = params;  const
   return redirect(link, 307);}
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

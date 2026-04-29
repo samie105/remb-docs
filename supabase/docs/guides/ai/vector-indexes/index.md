@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:41.483Z"
 content_hash: "6d379bfd9f67e6db12573152c0e40fd3ff2ef3939e57b35fdf915b112892a233"
 menu_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","Overview","Overview"]
 section_path: ["AI & Vectors","AI & Vectors","More","More","More","Vector indexes","Vector indexes","Overview","Overview"]
-nav_prev: {"path": "../vector-columns/index.md", "title": "Vector columns"}
-nav_next: {"path": "hnsw-indexes/index.md", "title": "HNSW indexes"}
+nav_prev: {"path": "supabase/docs/guides/ai/vector-columns/index.md", "title": "Vector columns"}
+nav_next: {"path": "supabase/docs/guides/ai/vector-indexes/hnsw-indexes/index.md", "title": "HNSW indexes"}
 ---
 
 # 
@@ -25,10 +25,10 @@ Once your vector table starts to grow, you will likely want to add an index to s
 
 Today `pgvector` supports two types of indexes:
 
-*   [HNSW](/docs/guides/ai/vector-indexes/hnsw-indexes)
-*   [IVFFlat](/docs/guides/ai/vector-indexes/ivf-indexes)
+*   [HNSW](hnsw-indexes/index.md)
+*   [IVFFlat](ivf-indexes/index.md)
 
-In general we recommend using [HNSW](/docs/guides/ai/vector-indexes/hnsw-indexes) because of its [performance](/blog/increase-performance-pgvector-hnsw#hnsw-performance-1536-dimensions) and [robustness against changing data](/docs/guides/ai/vector-indexes/hnsw-indexes#when-should-you-create-hnsw-indexes).
+In general we recommend using [HNSW](hnsw-indexes/index.md) because of its [performance](/blog/increase-performance-pgvector-hnsw#hnsw-performance-1536-dimensions) and [robustness against changing data](hnsw-indexes/index.md#when-should-you-create-hnsw-indexes).
 
 ## Distance operators[#](#distance-operators)
 

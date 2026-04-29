@@ -11,15 +11,15 @@ menu_path: ["Revalidating"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../caching/index.md", "title": "Caching"}
-nav_next: {"path": "../error-handling/index.md", "title": "Error Handling"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/caching/index.md", "title": "Caching"}
+nav_next: {"path": "nextjs/docs/app/getting-started/error-handling/index.md", "title": "Error Handling"}
 ---
 
 # Revalidating
 
 Last updated April 23, 2026
 
-> This page covers revalidation with [Cache Components](/docs/app/api-reference/config/next-config-js/cacheComponents), enabled by setting [`cacheComponents: true`](/docs/app/api-reference/config/next-config-js/cacheComponents) in your `next.config.ts` file. If you're not using Cache Components, see the [Caching and Revalidating (Previous Model)](/docs/app/guides/caching-without-cache-components) guide.
+> This page covers revalidation with [Cache Components](../../api-reference/config/next-config-js/cacheComponents/index.md), enabled by setting [`cacheComponents: true`](../../api-reference/config/next-config-js/cacheComponents/index.md) in your `next.config.ts` file. If you're not using Cache Components, see the [Caching and Revalidating (Previous Model)](../../guides/caching-without-cache-components/index.md) guide.
 
 Revalidation is the process of updating cached data. It lets you keep serving fast, cached responses while ensuring content stays fresh. There are two strategies:
 
@@ -28,7 +28,7 @@ Revalidation is the process of updating cached data. It lets you keep serving fa
 
 ## `cacheLife`[](#cachelife)
 
-[`cacheLife`](/docs/app/api-reference/functions/cacheLife) controls how long cached data remains valid. Use it inside a [`use cache`](/docs/app/api-reference/directives/use-cache) scope to set the cache lifetime.
+[`cacheLife`](../../api-reference/functions/cacheLife/index.md) controls how long cached data remains valid. Use it inside a [`use cache`](../../api-reference/directives/use-cache/index.md) scope to set the cache lifetime.
 
 app/lib/data.ts
 
@@ -64,13 +64,13 @@ cacheLife({
 })
 ```
 
-> **Good to know:** A cache is considered "short-lived" when it uses the `seconds` profile, `revalidate: 0`, or `expire` under 5 minutes. Short-lived caches are automatically excluded from prerenders and become dynamic holes instead. See [Prerendering behavior](/docs/app/api-reference/functions/cacheLife#prerendering-behavior) for details.
+> **Good to know:** A cache is considered "short-lived" when it uses the `seconds` profile, `revalidate: 0`, or `expire` under 5 minutes. Short-lived caches are automatically excluded from prerenders and become dynamic holes instead. See [Prerendering behavior](../../api-reference/functions/cacheLife/index.md#prerendering-behavior) for details.
 
-See the [`cacheLife` API reference](/docs/app/api-reference/functions/cacheLife) for all profiles and custom configuration options.
+See the [`cacheLife` API reference](../../api-reference/functions/cacheLife/index.md) for all profiles and custom configuration options.
 
 ## `cacheTag`[](#cachetag)
 
-[`cacheTag`](/docs/app/api-reference/functions/cacheTag) lets you tag cached data so it can be invalidated on-demand. Use it inside a [`use cache`](/docs/app/api-reference/directives/use-cache) scope:
+[`cacheTag`](../../api-reference/functions/cacheTag/index.md) lets you tag cached data so it can be invalidated on-demand. Use it inside a [`use cache`](../../api-reference/directives/use-cache/index.md) scope:
 
 app/lib/data.ts
 
@@ -88,7 +88,7 @@ export async function getProducts() {
 
 Once tagged, invalidate the cache using [`revalidateTag`](#revalidatetag) or [`updateTag`](#updatetag).
 
-See the [`cacheTag` API reference](/docs/app/api-reference/functions/cacheTag) to learn more.
+See the [`cacheTag` API reference](../../api-reference/functions/cacheTag/index.md) to learn more.
 
 ## `revalidateTag`[](#revalidatetag)
 
@@ -107,15 +107,15 @@ export async function updateUser(id: string) {
 }
 ```
 
-You can reuse the same tag in multiple functions to revalidate them all at once. Call `revalidateTag` in a [Server Action](/docs/app/getting-started/mutating-data) or [Route Handler](/docs/app/api-reference/file-conventions/route).
+You can reuse the same tag in multiple functions to revalidate them all at once. Call `revalidateTag` in a [Server Action](../mutating-data/index.md) or [Route Handler](../../api-reference/file-conventions/route/index.md).
 
 > **Good to know:** The second argument sets how long stale content can be served while fresh content generates in the background. Once it expires, subsequent requests block until fresh content is ready. Using `'max'` gives the longest stale window.
 
-See the [`revalidateTag` API reference](/docs/app/api-reference/functions/revalidateTag) to learn more.
+See the [`revalidateTag` API reference](../../api-reference/functions/revalidateTag/index.md) to learn more.
 
 ## `updateTag`[](#updatetag)
 
-`updateTag` immediately expires cached data for read-your-own-writes scenarios — the user sees their change right away instead of stale content. Unlike `revalidateTag`, it can only be used in [Server Actions](/docs/app/getting-started/mutating-data).
+`updateTag` immediately expires cached data for read-your-own-writes scenarios — the user sees their change right away instead of stale content. Unlike `revalidateTag`, it can only be used in [Server Actions](../mutating-data/index.md).
 
 app/lib/actions.ts
 
@@ -144,7 +144,7 @@ export async function createPost(formData: FormData) {
 | **Behavior** | Immediately expires cache | Stale-while-revalidate |
 | **Use case** | Read-your-own-writes (user sees their change) | Background refresh (slight delay OK) |
 
-See the [`updateTag` API reference](/docs/app/api-reference/functions/updateTag) to learn more.
+See the [`updateTag` API reference](../../api-reference/functions/updateTag/index.md) to learn more.
 
 ## `revalidatePath`[](#revalidatepath)
 
@@ -165,11 +165,11 @@ export async function updateUser(id: string) {
 
 > **Good to know**: Prefer tag-based revalidation (`revalidateTag`/`updateTag`) over path-based when possible — it's more precise and avoids over-invalidating.
 
-See the [`revalidatePath` API reference](/docs/app/api-reference/functions/revalidatePath) to learn more.
+See the [`revalidatePath` API reference](../../api-reference/functions/revalidatePath/index.md) to learn more.
 
 ## What should I cache?[](#what-should-i-cache)
 
-Cache data that doesn't depend on [runtime data](/docs/app/getting-started/caching#working-with-runtime-apis) and that you're OK serving from cache for a period of time. Use `use cache` with `cacheLife` to describe that behavior.
+Cache data that doesn't depend on [runtime data](../caching/index.md#working-with-runtime-apis) and that you're OK serving from cache for a period of time. Use `use cache` with `cacheLife` to describe that behavior.
 
 For content management systems with update mechanisms, use tags with longer cache durations and rely on `revalidateTag` to refresh content when it actually changes, rather than expiring the cache preemptively.
 
@@ -183,30 +183,30 @@ Learn more about the APIs mentioned on this page.
 
 Learn how to use the cacheLife function to set the cache expiration time for a cached function or component.
 
-](/docs/app/api-reference/functions/cacheLife)[
+](../../api-reference/functions/cacheLife/index.md)[
 
 ### cacheTag
 
 Learn how to use the cacheTag function to manage cache invalidation in your Next.js application.
 
-](/docs/app/api-reference/functions/cacheTag)[
+](../../api-reference/functions/cacheTag/index.md)[
 
 ### revalidateTag
 
 API Reference for the revalidateTag function.
 
-](/docs/app/api-reference/functions/revalidateTag)[
+](../../api-reference/functions/revalidateTag/index.md)[
 
 ### updateTag
 
 API Reference for the updateTag function.
 
-](/docs/app/api-reference/functions/updateTag)[
+](../../api-reference/functions/updateTag/index.md)[
 
 ### revalidatePath
 
 API Reference for the revalidatePath function.
 
-](/docs/app/api-reference/functions/revalidatePath)
+](../../api-reference/functions/revalidatePath/index.md)
 
 Was this helpful?

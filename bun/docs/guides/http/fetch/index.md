@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:41.724Z"
 content_hash: "d19015194da905826dba3fd95aec7f95b75c3cc0a476d26f969afe9888412bf8"
 menu_path: ["Send an HTTP request using fetch"]
 section_path: []
-nav_prev: {"path": "../cluster/index.md", "title": "Start a cluster of HTTP servers"}
-nav_next: {"path": "../fetch-unix/index.md", "title": "fetch with unix domain sockets in Bun"}
+nav_prev: {"path": "bun/docs/guides/http/cluster/index.md", "title": "Start a cluster of HTTP servers"}
+nav_next: {"path": "bun/docs/guides/http/fetch-unix/index.md", "title": "fetch with unix domain sockets in Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../fetch-unix/index.md", "title": "fetch with unix domain so
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun implements the Web-standard [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) API for sending HTTP requests. To send a simple `GET` request to a URL:
 
@@ -70,10 +70,10 @@ Write a simple HTTP server
 
 Previous
 
-](/docs/guides/http/simple)[
+](../simple/index.md)[
 
 Hot reload an HTTP server
 
 Next
 
-](/docs/guides/http/hot)
+](../hot/index.md)

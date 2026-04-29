@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:46.068Z"
 content_hash: "e827b3b0cf00b57b69e053e5527bb7965391d4bacdb63e6160cb612d6b68acdd"
 menu_path: ["Read a file as a ReadableStream"]
 section_path: []
-nav_prev: {"path": "../mime/index.md", "title": "Get the MIME type of a file"}
-nav_next: {"path": "../string/index.md", "title": "Read a file as a string"}
+nav_prev: {"path": "bun/docs/guides/read-file/mime/index.md", "title": "Get the MIME type of a file"}
+nav_next: {"path": "bun/docs/guides/read-file/string/index.md", "title": "Read a file as a string"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../string/index.md", "title": "Read a file as a string"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.file()` function accepts a path and returns a `BunFile` instance. The `BunFile` class extends `Blob` and allows you to lazily read the file in a variety of formats. Use `.stream()` to consume the file incrementally as a `ReadableStream`.
 
@@ -56,7 +56,7 @@ for await (const chunk of stream) {
 
 * * *
 
-Refer to the [Streams](/docs/runtime/streams) documentation for more information on working with streams in Bun.
+Refer to the [Streams](../../../runtime/streams/index.md) documentation for more information on working with streams in Bun.
 
 Was this page helpful?
 
@@ -68,10 +68,10 @@ Watch a directory for changes
 
 Previous
 
-](/docs/guides/read-file/watch)[
+](../watch/index.md)[
 
 Write a string to a file
 
 Next
 
-](/docs/guides/write-file/basic)
+](../../write-file/basic/index.md)

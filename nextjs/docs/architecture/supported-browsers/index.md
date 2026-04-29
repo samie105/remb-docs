@@ -11,8 +11,8 @@ menu_path: ["Supported Browsers"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../nextjs-compiler/index.md", "title": "Next.js Compiler"}
-nav_next: {"path": "../../community/index.md", "title": "Next.js Community"}
+nav_prev: {"path": "nextjs/docs/architecture/nextjs-compiler/index.md", "title": "Next.js Compiler"}
+nav_next: {"path": "nextjs/docs/community/index.md", "title": "Next.js Community"}
 ---
 
 # Supported Browsers
@@ -56,7 +56,7 @@ If your own code or any external npm dependencies require features not supported
 
 #### In App Router[](#in-app-router)
 
-To include polyfills, you can import them into the [`instrumentation-client.js` file](/docs/app/api-reference/file-conventions/instrumentation-client).
+To include polyfills, you can import them into the [`instrumentation-client.js` file](../../app/api-reference/file-conventions/instrumentation-client/index.md).
 
 instrumentation-client.ts
 
@@ -66,7 +66,7 @@ import './polyfills'
 
 #### In Pages Router[](#in-pages-router)
 
-In this case, you should add a top-level import for the **specific polyfill** you need in your [Custom `<App>`](/docs/pages/building-your-application/routing/custom-app) or the individual component.
+In this case, you should add a top-level import for the **specific polyfill** you need in your [Custom `<App>`](../../pages/building-your-application/routing/custom-app/index.md) or the individual component.
 
 pages/\_app.tsx
 
@@ -122,7 +122,7 @@ Next.js allows you to use the latest JavaScript features out of the box. In addi
 
 ### TypeScript Features[](#typescript-features)
 
-Next.js has built-in TypeScript support. [Learn more here](/docs/pages/api-reference/config/typescript).
+Next.js has built-in TypeScript support. [Learn more here](../../pages/api-reference/config/typescript/index.md).
 
 ### Customizing Babel Config (Advanced)[](#customizing-babel-config-advanced)
 

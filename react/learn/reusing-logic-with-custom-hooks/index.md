@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:46:36.160Z"
 content_hash: "2f88e08bd6ebb32e86e31abfc4385e7cef038a95c1b234d9d3173e9860c17321"
 menu_path: ["Reusing Logic with Custom Hooks"]
 section_path: []
-nav_prev: {"path": "../removing-effect-dependencies/index.md", "title": "Removing Effect Dependencies"}
+nav_prev: {"path": "react/learn/removing-effect-dependencies/index.md", "title": "Removing Effect Dependencies"}
 ---
 
 React comes with several built-in Hooks like `useState`, `useContext`, and `useEffect`. Sometimes, you’ll wish that there was a Hook for some more specific purpose: for example, to fetch data, to keep track of whether the user is online, or to connect to a chat room. You might not find these Hooks in React, but you can create your own Hooks for your application’s needs.

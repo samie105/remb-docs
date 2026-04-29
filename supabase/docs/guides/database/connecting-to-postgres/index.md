@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:59.567Z"
 content_hash: "d795ec8959d60c40e492737ad86d0cb7bc1cb5af4a4b37d91cd63d9c85b22d08"
 menu_path: ["Database","Database","Fundamentals","Fundamentals","Connecting to your database","Connecting to your database"]
 section_path: ["Database","Database","Fundamentals","Fundamentals","Connecting to your database","Connecting to your database"]
-nav_prev: {"path": "../beekeeper-studio/index.md", "title": "Connecting with Beekeeper Studio"}
-nav_next: {"path": "serverless-drivers/index.md", "title": "Connect to your database"}
+nav_prev: {"path": "supabase/docs/guides/database/beekeeper-studio/index.md", "title": "Connecting with Beekeeper Studio"}
+nav_next: {"path": "supabase/docs/guides/database/connecting-to-postgres/serverless-drivers/index.md", "title": "Connect to your database"}
 ---
 
 # 
@@ -29,7 +29,7 @@ How you connect to your database depends on where you're connecting from:
 
 *   For frontend applications, use the [Data API](#data-apis-and-client-libraries)
 *   For Postgres clients, use a connection string
-    *   For single sessions (for example, database GUIs) or Postgres native commands (for example, using client applications like [pg\_dump](https://www.postgresql.org/docs/current/app-pgdump.html), [migrations](/docs/guides/deployment/database-migrations), [backup-restore](/docs/guides/platform/migrating-within-supabase/backup-restore), or specifying connections for [replication](/docs/guides/database/postgres/setup-replication-external)) use the [direct connection string](#direct-connection) if your environment supports IPv6. IPv4 available as [Add-on](/docs/guides/platform/ipv4-address).
+    *   For single sessions (for example, database GUIs) or Postgres native commands (for example, using client applications like [pg\_dump](https://www.postgresql.org/docs/current/app-pgdump.html), [migrations](../../deployment/database-migrations/index.md), [backup-restore](../../platform/migrating-within-supabase/backup-restore/index.md), or specifying connections for [replication](../postgres/setup-replication-external/index.md)) use the [direct connection string](#direct-connection) if your environment supports IPv6. IPv4 available as [Add-on](../../platform/ipv4-address/index.md).
     *   For application traffic from persistent clients, and support for both IPv4 and IPv6, use [pooler session mode](#pooler-session-mode)
     *   For application traffic from temporary clients (for example, serverless or edge functions) use [pooler transaction mode](#pooler-transaction-mode)
 
@@ -39,41 +39,41 @@ How you connect to your database depends on where you're connecting from:
 
 Prisma
 
-](/docs/guides/database/prisma)[
+](../prisma/index.md)[
 
 Drizzle
 
-](/docs/guides/database/drizzle)[
+](../drizzle/index.md)[
 
 Postgres.js
 
-](/docs/guides/database/postgres-js)[
+](../postgres-js/index.md)[
 
 pgAdmin
 
-](/docs/guides/database/pgadmin)[
+](../pgadmin/index.md)[
 
 PSQL
 
-](/docs/guides/database/psql)[
+](../psql/index.md)[
 
 DBeaver
 
-](/docs/guides/database/dbeaver)[
+](../dbeaver/index.md)[
 
 Metabase
 
-](/docs/guides/database/metabase)[
+](../metabase/index.md)[
 
 Beekeeper Studio
 
-](/docs/guides/database/beekeeper-studio)
+](../beekeeper-studio/index.md)
 
 ## Data APIs and client libraries[#](#data-apis-and-client-libraries)
 
-The Data APIs allow you to interact with your database using REST or GraphQL requests. You can use these APIs to fetch and insert data from the frontend, as long as you have [RLS](/docs/guides/database/postgres/row-level-security) enabled.
+The Data APIs allow you to interact with your database using REST or GraphQL requests. You can use these APIs to fetch and insert data from the frontend, as long as you have [RLS](../postgres/row-level-security/index.md) enabled.
 
-*   [REST](/docs/guides/api)
+*   [REST](../../api/index.md)
 *   [GraphQL](/docs/guides/graphql/api)
 
 For convenience, you can also use the [Supabase client libraries](/docs/reference), which wrap the Data APIs with a developer-friendly interface and automatically handle authentication:
@@ -89,7 +89,7 @@ For convenience, you can also use the [Supabase client libraries](/docs/referenc
 
 The direct connection string connects directly to your Postgres instance. It is ideal for persistent servers, such as virtual machines (VMs) and long-lasting containers. Examples include AWS EC2 machines, Fly.io VMs, and DigitalOcean Droplets.
 
-Direct connections use IPv6 by default. If your environment doesn't support IPv6, use [Supavisor session mode](#supavisor-session-mode) or get the [IPv4 add-on](/docs/guides/platform/ipv4-address).
+Direct connections use IPv6 by default. If your environment doesn't support IPv6, use [Supavisor session mode](#supavisor-session-mode) or get the [IPv4 add-on](../../platform/ipv4-address/index.md).
 
 The connection string looks like this:
 
@@ -131,7 +131,7 @@ Get your project's Transaction pooler connection string from your project dashbo
 
 ## Dedicated pooler[#](#dedicated-pooler)
 
-For paying customers, we provision a Dedicated Pooler ([PgBouncer](https://www.pgbouncer.org/)) that's co-located with your Postgres database. This will require you to connect with IPv6 or, if that's not an option, you can use the [IPv4 add-on](/docs/guides/platform/ipv4-address).
+For paying customers, we provision a Dedicated Pooler ([PgBouncer](https://www.pgbouncer.org/)) that's co-located with your Postgres database. This will require you to connect with IPv6 or, if that's not an option, you can use the [IPv4 add-on](../../platform/ipv4-address/index.md).
 
 The Dedicated Pooler ensures best performance and latency, while using up more of your project's compute resources. If your network supports IPv6 or you have the IPv4 add-on, we encourage you to use the Dedicated Pooler over the Shared Pooler.
 
@@ -169,9 +169,9 @@ You can obtain your connection info and Server root certificate from your applic
 
 ## Resources[#](#resources)
 
-*   [Connection management](/docs/guides/database/connection-management)
-*   [Connecting with psql](/docs/guides/database/psql)
-*   [Importing data into Supabase](/docs/guides/database/import-data)
+*   [Connection management](../connection-management/index.md)
+*   [Connecting with psql](../psql/index.md)
+*   [Importing data into Supabase](../import-data/index.md)
 
 ## Troubleshooting and Postgres connection string FAQs[#](#troubleshooting-and-postgres-connection-string-faqs)
 
@@ -203,7 +203,7 @@ Supavisor and PgBouncer work independently, but both reference the same pool siz
 
 ### What is the difference between client connections and backend connections?[#](#what-is-the-difference-between-client-connections-and-backend-connections)
 
-There are two different limits to understand when working with poolers. The first is client connections, which refers to how many clients can connect to a pooler at the same time. This number is capped by your [compute tier’s “max pooler clients” limit](/docs/guides/platform/compute-and-disk#postgres-replication-slots-wal-senders-and-connections), and it applies independently to Supavisor and PgBouncer. The second is backend connections, which is the number of active connections a pooler opens to Postgres. This number is set by the pool size for that pooler.
+There are two different limits to understand when working with poolers. The first is client connections, which refers to how many clients can connect to a pooler at the same time. This number is capped by your [compute tier’s “max pooler clients” limit](../../platform/compute-and-disk/index.md#postgres-replication-slots-wal-senders-and-connections), and it applies independently to Supavisor and PgBouncer. The second is backend connections, which is the number of active connections a pooler opens to Postgres. This number is set by the pool size for that pooler.
 
 ```
 1Total backend load on Postgres =2 Direct connections +3 Supavisor backend connections (≤ supavisor_pool_size) +4 PgBouncer backend connections (≤ pgbouncer_pool_size)5≤ Postgres max connections for your compute instance
@@ -211,7 +211,7 @@ There are two different limits to understand when working with poolers. The firs
 
 ### What is the max pooler clients limit?[#](#what-is-the-max-pooler-clients-limit)
 
-The “max pooler clients” limit for your compute tier applies separately to Supavisor and PgBouncer. One pooler reaching its client limit does not affect the other. When a pooler reaches this limit, it stops accepting new client connections until existing ones are closed, but the other pooler remains unaffected. You can check your tier’s connection limits in the [compute and disk limits documentation](/docs/guides/platform/compute-and-disk#postgres-replication-slots-wal-senders-and-connections).
+The “max pooler clients” limit for your compute tier applies separately to Supavisor and PgBouncer. One pooler reaching its client limit does not affect the other. When a pooler reaches this limit, it stops accepting new client connections until existing ones are closed, but the other pooler remains unaffected. You can check your tier’s connection limits in the [compute and disk limits documentation](../../platform/compute-and-disk/index.md#postgres-replication-slots-wal-senders-and-connections).
 
 ### Where can you see current connection usage?[#](#where-can-you-see-current-connection-usage)
 
@@ -256,7 +256,7 @@ Because the dedicated pooler is hosted on the same machine as your database, it 
 
 *   Best for: persistent backend services
 *   Use for migrations, pg\_dump, backup and management tools
-*   Limitation: IPv6 only by default. IPv4 available as [Add-on](/docs/guides/platform/ipv4-address).
+*   Limitation: IPv6 only by default. IPv4 available as [Add-on](../../platform/ipv4-address/index.md).
 
 **Shared pooler:**
 

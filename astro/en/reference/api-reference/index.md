@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:34.136Z"
 content_hash: "36f3b322de18a8f9993010919a156d3ba8ef3c93914562ca592c91295793923a"
 menu_path: ["Astro render context"]
 section_path: []
-nav_prev: {"path": "../routing-reference/index.md", "title": "Routing Reference"}
-nav_next: {"path": "../modules/astro-actions/index.md", "title": "Actions API Reference"}
+nav_prev: {"path": "astro/en/reference/routing-reference/index.md", "title": "Routing Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-actions/index.md", "title": "Actions API Reference"}
 ---
 
 # Astro render context
@@ -21,7 +21,7 @@ In `.astro` components, this context is available from the `Astro` global object
 
 Some properties are only available for routes rendered on demand or may have limited functionality on prerendered pages.
 
-The `Astro` global object is available to all `.astro` files. Use the `context` object in [endpoint functions](/en/guides/endpoints/) to serve static or live server endpoints and in [middleware](/en/guides/middleware/) to inject behavior when a page or endpoint is about to be rendered.
+The `Astro` global object is available to all `.astro` files. Use the `context` object in [endpoint functions](../../guides/endpoints/index.md) to serve static or live server endpoints and in [middleware](../../guides/middleware/index.md) to inject behavior when a page or endpoint is about to be rendered.
 
 ## The context object
 
@@ -33,7 +33,7 @@ The following properties are available on the `Astro` global (e.g. `Astro.props`
 
 [Section titled “props”](#props)
 
-`props` is an object containing any values that have been passed as [component attributes](/en/basics/astro-components/#component-props).
+`props` is an object containing any values that have been passed as [component attributes](../../basics/astro-components/index.md#component-props).
 
 ```
 ---const { title, date } = Astro.props;---<div>  <h1>{title}</h1>  <p>{date}</p></div>
@@ -43,7 +43,7 @@ The following properties are available on the `Astro` global (e.g. `Astro.props`
 ---import Heading from '../components/Heading.astro';---<Heading title="My First Post" date="09 Aug 2022" />
 ```
 
-Learn more about how [Markdown and MDX layouts](/en/guides/markdown-content/#frontmatter-layout-property) handle props.
+Learn more about how [Markdown and MDX layouts](../../guides/markdown-content/index.md#frontmatter-layout-property) handle props.
 
 The `props` object also contains any `props` passed from `getStaticPaths()` when rendering static routes.
 
@@ -55,15 +55,15 @@ The `props` object also contains any `props` passed from `getStaticPaths()` when
 const { id } = Astro.params;const { author } = Astro.props;---
 ```
 
-See also: [Data Passing with `props`](/en/reference/routing-reference/#data-passing-with-props)
+See also: [Data Passing with `props`](../routing-reference/index.md#data-passing-with-props)
 
 ### `params`
 
 [Section titled “params”](#params)
 
-`params` is an object containing the values of dynamic route segments matched for a request. Its keys must match the [parameters](/en/guides/routing/#dynamic-routes) in the page or endpoint file path.
+`params` is an object containing the values of dynamic route segments matched for a request. Its keys must match the [parameters](../../guides/routing/index.md#dynamic-routes) in the page or endpoint file path.
 
-In static builds, this will be the `params` returned by `getStaticPaths()` used for prerendering [dynamic routes](/en/guides/routing/#dynamic-routes):
+In static builds, this will be the `params` returned by `getStaticPaths()` used for prerendering [dynamic routes](../../guides/routing/index.md#dynamic-routes):
 
 *   [Astro.params](#tab-panel-2004)
 *   [context.params](#tab-panel-2005)
@@ -80,7 +80,7 @@ const post = await getPost(Astro.params.id);
 // No posts found with this IDif (!post) {  return Astro.redirect("/404")}---<html>  <h1>{post.name}</h1></html>
 ```
 
-See also: [`params`](/en/reference/routing-reference/#params)
+See also: [`params`](../routing-reference/index.md#params)
 
 ### `url`
 
@@ -94,7 +94,7 @@ See also: [`params`](/en/reference/routing-reference/#params)
 
 `Astro.url` is equivalent to doing `new URL(Astro.request.url)`.
 
-`url` will be a `localhost` URL in dev mode. When building a site, prerendered routes will receive a URL based on the [`site`](/en/reference/configuration-reference/#site) and [`base`](/en/reference/configuration-reference/#base) options. If `site` is not configured, prerendered pages will receive a `localhost` URL during builds as well.
+`url` will be a `localhost` URL in dev mode. When building a site, prerendered routes will receive a URL based on the [`site`](../configuration-reference/index.md#site) and [`base`](../configuration-reference/index.md#base) options. If `site` is not configured, prerendered pages will receive a `localhost` URL during builds as well.
 
 ```
 <h1>The current URL is: {Astro.url}</h1><h1>The current URL pathname is: {Astro.url.pathname}</h1><h1>The current URL origin is: {Astro.url.origin}</h1>
@@ -112,7 +112,7 @@ You can also use `url` to create new URLs by passing it as an argument to [`new 
 
 **Type:** `URL | undefined`
 
-`site` returns a `URL` made from `site` in your Astro config. It returns `undefined` if you have not set a value for [`site`](/en/reference/configuration-reference/#site) in your Astro config.
+`site` returns a `URL` made from `site` in your Astro config. It returns `undefined` if you have not set a value for [`site`](../configuration-reference/index.md#site) in your Astro config.
 
 ```
 <link    rel="alternate"    type="application/rss+xml"    title="Your Site's Title"    href={new URL("rss.xml", Astro.site)}/>
@@ -322,7 +322,7 @@ Astro components and API endpoints can read values from `locals` when they rende
 
 `preferredLocale` is a computed value to find the best match between your visitor’s browser language preferences and the locales supported by your site.
 
-It is computed by checking the configured locales in your [`i18n.locales`](/en/reference/configuration-reference/#i18nlocales) array and the locales supported by the user’s browser via the header `Accept-Language`. This value is `undefined` if no such match exists.
+It is computed by checking the configured locales in your [`i18n.locales`](../configuration-reference/index.md#i18nlocales) array and the locales supported by the user’s browser via the header `Accept-Language`. This value is `undefined` if no such match exists.
 
 This property is only available for routes rendered on demand and cannot be used on prerendered, static pages.
 
@@ -338,7 +338,7 @@ This property is only available for routes rendered on demand and cannot be used
 
 If none of the browser’s requested languages are found in your locales array, then the value is `[]`. This occurs when you do not support any of your visitor’s preferred locales.
 
-If the browser does not specify any preferred languages, then this value will be [`i18n.locales`](/en/reference/configuration-reference/#i18nlocales): all of your supported locales will be considered equally preferred by a visitor with no preferences.
+If the browser does not specify any preferred languages, then this value will be [`i18n.locales`](../configuration-reference/index.md#i18nlocales): all of your supported locales will be considered equally preferred by a visitor with no preferences.
 
 This property is only available for routes rendered on demand and cannot be used on prerendered, static pages.
 
@@ -350,7 +350,7 @@ This property is only available for routes rendered on demand and cannot be used
 
 **Added in:** `astro@3.5.6`
 
-The locale computed from the current URL, using the syntax specified in your `locales` configuration. If the URL does not contain a `/[locale]/` prefix, then the value will default to [`i18n.defaultLocale`](/en/reference/configuration-reference/#i18ndefaultlocale).
+The locale computed from the current URL, using the syntax specified in your `locales` configuration. If the URL does not contain a `/[locale]/` prefix, then the value will default to [`i18n.defaultLocale`](../configuration-reference/index.md#i18ndefaultlocale).
 
 ### `getActionResult()`
 
@@ -360,7 +360,7 @@ The locale computed from the current URL, using the syntax specified in your `lo
 
 **Added in:** `astro@4.15.0`
 
-`getActionResult()` is a function that returns the result of an [Action](/en/guides/actions/) submission. This accepts an action function as an argument (e.g. `actions.logout`) and returns a `data` or `error` object when a submission is received. Otherwise, it will return `undefined`.
+`getActionResult()` is a function that returns the result of an [Action](../../guides/actions/index.md) submission. This accepts an action function as an argument (e.g. `actions.logout`) and returns a `data` or `error` object when a submission is received. Otherwise, it will return `undefined`.
 
 ```
 ---import { actions } from 'astro:actions';
@@ -405,7 +405,7 @@ You can use this property to understand which route is rendering your component.
 
 **Added in:** `astro@1.4.0`
 
-`cookies` contains utilities for reading and manipulating cookies for [routes rendered on demand](/en/guides/on-demand-rendering/).
+`cookies` contains utilities for reading and manipulating cookies for [routes rendered on demand](../../guides/on-demand-rendering/index.md).
 
 #### Cookie utilities
 
@@ -607,11 +607,11 @@ Allows customizing how the cookie is serialized.
 
 **Added in:** `astro@5.7.0`
 
-`session` is an object that allows data to be stored between requests for [routes rendered on demand](/en/guides/on-demand-rendering/). It is associated with a cookie that contains the session ID only: the data itself is not stored in the cookie.
+`session` is an object that allows data to be stored between requests for [routes rendered on demand](../../guides/on-demand-rendering/index.md). It is associated with a cookie that contains the session ID only: the data itself is not stored in the cookie.
 
 The session is created when first used, and the session cookie is automatically set. The `session` object is `undefined` if no session storage has been configured, or if the current route is prerendered, and will log an error if you try to use it.
 
-See [the session guide](/en/guides/sessions/) for more information on how to use sessions in your Astro project.
+See [the session guide](../../guides/sessions/index.md) for more information on how to use sessions in your Astro project.
 
 #### `session.get()`
 
@@ -700,7 +700,7 @@ Astro’s CSP runtime APIs enable support for [Content Security Policy (CSP)](ht
 
 You can customize the `<meta>` element per page from the `Astro` global inside `.astro` components, or the `APIContext` type in endpoints and middleware.
 
-When resources are inserted multiple times or from multiple sources (e.g. defined in your [`csp` config](/en/reference/configuration-reference/#securitycsp) and added using the following CSP runtime APIs, Astro will merge and deduplicate all resources to create your `<meta>` element.
+When resources are inserted multiple times or from multiple sources (e.g. defined in your [`csp` config](../configuration-reference/index.md#securitycsp) and added using the following CSP runtime APIs, Astro will merge and deduplicate all resources to create your `<meta>` element.
 
 #### `csp.insertDirective()`
 
@@ -802,4 +802,4 @@ After the build, the `<meta>` element for this individual page will add your has
 <metahttp-equiv="content-security-policy"content="  script-src 'self' 'sha256-somehash' 'sha512-styleHash';  style-src 'self' 'sha256-somehash';  ">
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -11,19 +11,19 @@ menu_path: ["Caching and Revalidating (Previous Model)"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../backend-for-frontend/index.md", "title": "How to use Next.js as a backend for your frontend"}
-nav_next: {"path": "../cdn-caching/index.md", "title": "Using a CDN with Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/backend-for-frontend/index.md", "title": "How to use Next.js as a backend for your frontend"}
+nav_next: {"path": "nextjs/docs/app/guides/cdn-caching/index.md", "title": "Using a CDN with Next.js"}
 ---
 
 # Caching and Revalidating (Previous Model)
 
 Last updated April 23, 2026
 
-> This guide assumes you are **not** using [Cache Components](/docs/app/getting-started/caching) which was introduced in version 16 under the [`cacheComponents` flag](/docs/app/api-reference/config/next-config-js/cacheComponents).
+> This guide assumes you are **not** using [Cache Components](../../getting-started/caching/index.md) which was introduced in version 16 under the [`cacheComponents` flag](../../api-reference/config/next-config-js/cacheComponents/index.md).
 
 ## Caching `fetch` requests[](#caching-fetch-requests)
 
-By default, [`fetch`](/docs/app/api-reference/functions/fetch) requests are not cached. You can cache individual requests by setting the `cache` option to `'force-cache'`.
+By default, [`fetch`](../../api-reference/functions/fetch/index.md) requests are not cached. You can cache individual requests by setting the `cache` option to `'force-cache'`.
 
 app/page.tsx
 
@@ -35,7 +35,7 @@ export default async function Page() {
 }
 ```
 
-See the [`fetch` API reference](/docs/app/api-reference/functions/fetch) to learn more.
+See the [`fetch` API reference](../../api-reference/functions/fetch/index.md) to learn more.
 
 ### `unstable_cache` for non-`fetch` functions[](#unstable_cache-for-non-fetch-functions)
 
@@ -70,11 +70,11 @@ The third argument accepts:
 -   `tags`: an array of tags for on-demand revalidation with `revalidateTag`.
 -   `revalidate`: the number of seconds before the cache is revalidated.
 
-See the [`unstable_cache` API reference](/docs/app/api-reference/functions/unstable_cache) to learn more.
+See the [`unstable_cache` API reference](../../api-reference/functions/unstable_cache/index.md) to learn more.
 
 ### Route segment config[](#route-segment-config)
 
-You can configure caching behavior at the route level by exporting config options from a [Page](/docs/app/api-reference/file-conventions/page), [Layout](/docs/app/api-reference/file-conventions/layout), or [Route Handler](/docs/app/api-reference/file-conventions/route).
+You can configure caching behavior at the route level by exporting config options from a [Page](../../api-reference/file-conventions/page/index.md), [Layout](../../api-reference/file-conventions/layout/index.md), or [Route Handler](../../api-reference/file-conventions/route/index.md).
 
 #### `dynamic`[](#dynamic)
 
@@ -90,14 +90,14 @@ export const dynamic = 'auto'
 ```
 
 -   **`'auto'`** (default): The default option to cache as much as possible without preventing any components from opting into dynamic behavior.
--   **`'force-dynamic'`**: Force [dynamic rendering](/docs/app/glossary#dynamic-rendering), which will result in routes being rendered for each user at request time. This option is equivalent to:
+-   **`'force-dynamic'`**: Force [dynamic rendering](../../glossary/index.md#dynamic-rendering), which will result in routes being rendered for each user at request time. This option is equivalent to:
     -   Setting the option of every `fetch()` request in a layout or page to `{ cache: 'no-store', next: { revalidate: 0 } }`.
     -   Setting the segment config to `export const fetchCache = 'force-no-store'`
 -   **`'error'`**: Force prerendering and cache the data of a layout or page by causing an error if any components use Request-time APIs or uncached data. This option is equivalent to:
     -   `getStaticProps()` in the `pages` directory.
     -   Setting the option of every `fetch()` request in a layout or page to `{ cache: 'force-cache' }`.
     -   Setting the segment config to `fetchCache = 'only-cache'`.
--   **`'force-static'`**: Force prerendering and cache the data of a layout or page by forcing [`cookies`](/docs/app/api-reference/functions/cookies), [`headers()`](/docs/app/api-reference/functions/headers) and [`useSearchParams()`](/docs/app/api-reference/functions/use-search-params) to return empty values. It is possible to [`revalidate`](#route-segment-config-revalidate), [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath), or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag), in pages or layouts rendered with `force-static`.
+-   **`'force-static'`**: Force prerendering and cache the data of a layout or page by forcing [`cookies`](../../api-reference/functions/cookies/index.md), [`headers()`](../../api-reference/functions/headers/index.md) and [`useSearchParams()`](../../api-reference/functions/use-search-params/index.md) to return empty values. It is possible to [`revalidate`](#route-segment-config-revalidate), [`revalidatePath`](../../api-reference/functions/revalidatePath/index.md), or [`revalidateTag`](../../api-reference/functions/revalidateTag/index.md), in pages or layouts rendered with `force-static`.
 
 #### `fetchCache`[](#fetchcache)
 
@@ -181,7 +181,7 @@ export const revalidate = false
 
 ## On-demand revalidation[](#on-demand-revalidation)
 
-To revalidate cached data after an event, use [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) or [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) in a [Server Action](/docs/app/getting-started/mutating-data) or [Route Handler](/docs/app/api-reference/file-conventions/route).
+To revalidate cached data after an event, use [`revalidateTag`](../../api-reference/functions/revalidateTag/index.md) or [`revalidatePath`](../../api-reference/functions/revalidatePath/index.md) in a [Server Action](../../getting-started/mutating-data/index.md) or [Route Handler](../../api-reference/file-conventions/route/index.md).
 
 ### Tagging cached data[](#tagging-cached-data)
 
@@ -203,7 +203,7 @@ For non-`fetch` functions, `unstable_cache` also accepts a `tags` option (see [e
 
 ### `revalidateTag`[](#revalidatetag)
 
-Invalidate cached data by tag using [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag):
+Invalidate cached data by tag using [`revalidateTag`](../../api-reference/functions/revalidateTag/index.md):
 
 app/lib/actions.ts
 
@@ -220,7 +220,7 @@ export async function updateUser(id: string) {
 
 ### `revalidatePath`[](#revalidatepath)
 
-Invalidate all cached data for a specific route path using [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath):
+Invalidate all cached data for a specific route path using [`revalidatePath`](../../api-reference/functions/revalidatePath/index.md):
 
 app/lib/actions.ts
 
@@ -237,7 +237,7 @@ export async function updateUser(id: string) {
 
 ## Deduplicating requests[](#deduplicating-requests)
 
-If you are not using `fetch` (which is [automatically memoized](/docs/app/api-reference/functions/fetch#memoization)), and instead using an ORM or database directly, you can wrap your data access with the [React `cache`](https://react.dev/reference/react/cache) function to deduplicate requests within a single render pass:
+If you are not using `fetch` (which is [automatically memoized](../../api-reference/functions/fetch/index.md#memoization)), and instead using an ORM or database directly, you can wrap your data access with the [React `cache`](https://react.dev/reference/react/cache) function to deduplicate requests within a single render pass:
 
 app/lib/data.ts
 

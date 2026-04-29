@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:52.163Z"
 content_hash: "92a6c212337fd60505c41b205eed578726b5db2a2ff7d501c79f612172f305f7"
 menu_path: ["Realtime","Realtime","Security","Security","Authorization","Authorization"]
 section_path: ["Realtime","Realtime","Security","Security","Authorization","Authorization"]
-nav_prev: {"path": "../architecture/index.md", "title": "Realtime Architecture"}
-nav_next: {"path": "../benchmarks/index.md", "title": "Benchmarks"}
+nav_prev: {"path": "supabase/docs/guides/realtime/architecture/index.md", "title": "Realtime Architecture"}
+nav_next: {"path": "supabase/docs/guides/realtime/benchmarks/index.md", "title": "Benchmarks"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Realtime Authorization
 
 * * *
 
-You can control client access to Realtime [Broadcast](/docs/guides/realtime/broadcast) and [Presence](/docs/guides/realtime/presence) by adding Row Level Security policies to the `realtime.messages` table. Each RLS policy can map to a specific action a client can take:
+You can control client access to Realtime [Broadcast](../broadcast/index.md) and [Presence](../presence/index.md) by adding Row Level Security policies to the `realtime.messages` table. Each RLS policy can map to a specific action a client can take:
 
 *   Control which clients can broadcast to a Channel
 *   Control which clients can receive broadcasts from a Channel
@@ -39,7 +39,7 @@ By creating RLS policies on the `realtime.messages` table you can control the ac
 The validation is done when the user connects. When their WebSocket connection is established and a Channel topic is joined, their permissions are calculated based on:
 
 *   The RLS policies on the `realtime.messages` table
-*   The user information sent as part of their [Auth JWT](/docs/guides/auth/jwts)
+*   The user information sent as part of their [Auth JWT](../../auth/jwts/index.md)
 *   The request headers
 *   The Channel topic the user is trying to connect to
 
@@ -161,7 +161,7 @@ Client access policies are cached for the duration of the connection. Your datab
 Realtime updates the access policy cache for a client based on your RLS policies when:
 
 *   A client connects to Realtime and subscribes to a Channel
-*   A new JWT is sent to Realtime from a client via the [`access_token` message](/docs/guides/realtime/protocol#access-token)
+*   A new JWT is sent to Realtime from a client via the [`access_token` message](../protocol/index.md#access-token)
 
 If a new JWT is never received on the Channel, the client will be disconnected when the JWT expires.
 

@@ -11,8 +11,8 @@ menu_path: ["Proxy"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../instrumentation/index.md", "title": "instrumentation.js"}
-nav_next: {"path": "../public-folder/index.md", "title": "public Folder"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/public-folder/index.md", "title": "public Folder"}
 ---
 
 # Proxy
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 > **Note**: The `middleware` file convention is deprecated and has been renamed to `proxy`. See [Migration to Proxy](#migration-to-proxy) for more details.
 
-The `proxy.js|ts` file is used to write [Proxy](/docs/app/getting-started/proxy) and run code on the server before a request is completed. Then, based on the incoming request, you can modify the response by rewriting, redirecting, modifying the request or response headers, or responding directly.
+The `proxy.js|ts` file is used to write [Proxy](../../../../app/getting-started/proxy/index.md) and run code on the server before a request is completed. Then, based on the incoming request, you can modify the response by rewriting, redirecting, modifying the request or response headers, or responding directly.
 
 Proxy executes before routes are rendered. It's particularly useful for implementing custom server-side logic like authentication, logging, or handling redirects.
 
@@ -29,11 +29,11 @@ Proxy executes before routes are rendered. It's particularly useful for implemen
 > 
 > Proxy is meant to be invoked separately of your render code and in optimized cases deployed to your CDN for fast redirect/rewrite handling, you should not attempt relying on shared modules or globals.
 > 
-> To pass information from Proxy to your application, use [headers](#setting-headers), [cookies](#using-cookies), [rewrites](/docs/app/api-reference/functions/next-response#rewrite), [redirects](/docs/app/api-reference/functions/next-response#redirect), or the URL.
+> To pass information from Proxy to your application, use [headers](#setting-headers), [cookies](#using-cookies), [rewrites](../../../../app/api-reference/functions/next-response/index.md#rewrite), [redirects](../../../../app/api-reference/functions/next-response/index.md#redirect), or the URL.
 
 Create a `proxy.ts` (or `.js`) file in the project root, or inside `src` if applicable, so that it is located at the same level as `pages` or `app`.
 
-If you’ve customized [`pageExtensions`](/docs/app/api-reference/config/next-config-js/pageExtensions), for example to `.page.ts` or `.page.js`, name your file `proxy.page.ts` or `proxy.page.js` accordingly.
+If you’ve customized [`pageExtensions`](../../../../app/api-reference/config/next-config-js/pageExtensions/index.md), for example to `.page.ts` or `.page.js`, name your file `proxy.page.ts` or `proxy.page.js` accordingly.
 
 proxy.ts
 
@@ -189,7 +189,7 @@ The `NextResponse` API allows you to:
 
 To produce a response from Proxy, you can:
 
-1.  `rewrite` to a route ([Page](/docs/pages/building-your-application/routing/pages-and-layouts) or [Edge API Route](/docs/pages/building-your-application/routing/api-routes)) that produces a response
+1.  `rewrite` to a route ([Page](../../../building-your-application/routing/pages-and-layouts/index.md) or [Edge API Route](../../../building-your-application/routing/api-routes/index.md)) that produces a response
 2.  return a `NextResponse` directly. See [Producing a Response](#producing-a-response)
 
 ## Execution order[](#execution-order)
@@ -205,13 +205,13 @@ Proxy will be invoked for **every route in your project**. Given this, it's cruc
 7.  Dynamic Routes (`/blog/[slug]`)
 8.  `fallback` (`rewrites`) from `next.config.js`
 
-> **Good to know:** [Server Functions](/docs/app/api-reference/directives/use-server) are not separate routes in this chain. They are handled as POST requests to the route where they are used, so a Proxy matcher that excludes a path will also skip Server Function calls on that path.
+> **Good to know:** [Server Functions](../../../../app/api-reference/directives/use-server/index.md) are not separate routes in this chain. They are handled as POST requests to the route where they are used, so a Proxy matcher that excludes a path will also skip Server Function calls on that path.
 > 
-> A matcher change or a refactor that moves a Server Function to a different route can silently remove Proxy coverage. Always verify authentication and authorization inside each Server Function rather than relying on Proxy alone. See the [Data Security guide](/docs/app/guides/data-security#authentication-and-authorization) for recommended patterns.
+> A matcher change or a refactor that moves a Server Function to a different route can silently remove Proxy coverage. Always verify authentication and authorization inside each Server Function rather than relying on Proxy alone. See the [Data Security guide](../../../../app/guides/data-security/index.md#authentication-and-authorization) for recommended patterns.
 
 ## Runtime[](#runtime)
 
-Proxy defaults to using the Node.js runtime. The [`runtime`](/docs/app/api-reference/file-conventions/route-segment-config/runtime) config option is not available in Proxy files. Setting the `runtime` config option in Proxy will throw an error.
+Proxy defaults to using the Node.js runtime. The [`runtime`](../../../../app/api-reference/file-conventions/route-segment-config/runtime/index.md) config option is not available in Proxy files. Setting the `runtime` config option in Proxy will throw an error.
 
 ## Advanced Proxy flags[](#advanced-proxy-flags)
 
@@ -377,7 +377,7 @@ Note that the snippet uses:
 -   `NextResponse.next({ request: { headers: requestHeaders } })` to make `requestHeaders` available upstream
 -   **NOT** `NextResponse.next({ headers: requestHeaders })` which makes `requestHeaders` available to clients
 
-Learn more in [NextResponse headers in Proxy](/docs/app/api-reference/functions/next-response#next).
+Learn more in [NextResponse headers in Proxy](../../../../app/api-reference/functions/next-response/index.md#next).
 
 > **Good to know**: Avoid setting large headers as it might cause [431 Request Header Fields Too Large](https://developer.mozilla.org/docs/Web/HTTP/Status/431) error depending on your backend web server configuration.
 
@@ -618,12 +618,12 @@ expect(getRewrittenUrl(response)).toEqual('https://other-domain.com/docs')
 
 | Deployment Option | Supported |
 | --- | --- |
-| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
-| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
-| [Static export](/docs/app/getting-started/deploying#static-export) | No |
-| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
+| [Node.js server](../../../../app/getting-started/deploying/index.md#nodejs-server) | Yes |
+| [Docker container](../../../../app/getting-started/deploying/index.md#docker) | Yes |
+| [Static export](../../../../app/getting-started/deploying/index.md#static-export) | No |
+| [Adapters](../../../../app/getting-started/deploying/index.md#adapters) | Platform-specific |
 
-Learn how to [configure Proxy](/docs/app/guides/self-hosting#proxy) when self-hosting Next.js.
+Learn how to [configure Proxy](../../../../app/guides/self-hosting/index.md#proxy) when self-hosting Next.js.
 
 ## Migration to Proxy[](#migration-to-proxy)
 
@@ -635,7 +635,7 @@ Next.js is moving forward to provide better APIs with better ergonomics so that 
 
 ### Why "Proxy"[](#why-proxy)
 
-The name Proxy clarifies what Middleware is capable of. The term "proxy" implies that it has a network boundary in front of the app, which is the behavior of Middleware. Also, Middleware defaults to run at the [Edge Runtime](/docs/app/api-reference/edge), which can run closer to the client, separated from the app's region. These behaviors align better with the term "proxy" and provide a clearer purpose of the feature.
+The name Proxy clarifies what Middleware is capable of. The term "proxy" implies that it has a network boundary in front of the app, which is the behavior of Middleware. Also, Middleware defaults to run at the [Edge Runtime](../../../../app/api-reference/edge/index.md), which can run closer to the client, separated from the app's region. These behaviors align better with the term "proxy" and provide a clearer purpose of the feature.
 
 ### How to Migrate[](#how-to-migrate)
 
@@ -667,7 +667,7 @@ The codemod will rename the file and the function name from `middleware` to `pro
 | `v15.2.0` | Middleware can now use the Node.js runtime (experimental) |
 | `v13.1.0` | Advanced Middleware flags added |
 | `v13.0.0` | Middleware can modify request headers, response headers, and send responses |
-| `v12.2.0` | Middleware is stable, please see the [upgrade guide](/docs/messages/middleware-upgrade-guide) |
+| `v12.2.0` | Middleware is stable, please see the [upgrade guide](../../../../messages/middleware-upgrade-guide/index.md) |
 | `v12.0.9` | Enforce absolute URLs in Edge Runtime ([PR](https://github.com/vercel/next.js/pull/33410)) |
 | `v12.0.0` | Middleware (Beta) added |
 

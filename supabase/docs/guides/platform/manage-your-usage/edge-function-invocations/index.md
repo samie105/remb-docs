@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:00.622Z"
 content_hash: "d3868e7194b1b81e09f9f0ff1bfbbc8077f44b3f18574599a2dbd35286bfc19e"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Edge Function Invocations","Edge Function Invocations"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Edge Function Invocations","Edge Function Invocations"]
-nav_prev: {"path": "../disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
-nav_next: {"path": "../egress/index.md", "title": "Manage Egress usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-throughput/index.md", "title": "Manage Disk Throughput usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/egress/index.md", "title": "Manage Egress usage"}
 ---
 
 # 
@@ -193,6 +193,6 @@ In the Edge Function Invocations section, you can see how many invocations your 
 
 ## Exceeding Quotas[#](#exceeding-quotas)
 
-If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
+If you are on a paid plan and have [Spend Cap](../../cost-control/index.md#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
-When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](../../cost-control/index.md#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](../../billing-faq/index.md#fair-use-policy).

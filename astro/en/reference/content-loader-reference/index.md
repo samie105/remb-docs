@@ -9,17 +9,17 @@ last_crawled_at: "2026-04-18T16:43:03.967Z"
 content_hash: "c4655017173d3eb9e5942660beeb318319c0631adbab6654ee3c3a68f08e93b5"
 menu_path: ["Astro Content Loader API"]
 section_path: []
-nav_prev: {"path": "../renderer-reference/index.md", "title": "Astro Renderer API"}
-nav_next: {"path": "../image-service-reference/index.md", "title": "Image Service API"}
+nav_prev: {"path": "astro/en/reference/renderer-reference/index.md", "title": "Astro Renderer API"}
+nav_next: {"path": "astro/en/reference/image-service-reference/index.md", "title": "Image Service API"}
 ---
 
 # Astro Content Loader API
 
-Astro’s Content Loader API allows you to load your data from any source, local or remote, and interact with Astro’s content layer to manage your [content collections](/en/guides/content-collections/).
+Astro’s Content Loader API allows you to load your data from any source, local or remote, and interact with Astro’s content layer to manage your [content collections](../../guides/content-collections/index.md).
 
 This API includes two ready-to-use loaders for content stored locally. It also provides tools for building your own custom objects that can load data from any source into content collections.
 
-Learn more about [querying data loaded from build-time loaders](/en/guides/content-collections/#querying-build-time-collections) or [accessing live data from live loaders](/en/guides/content-collections/#accessing-live-data) with guided explanations and example usage in the content collections guide.
+Learn more about [querying data loaded from build-time loaders](../../guides/content-collections/index.md#querying-build-time-collections) or [accessing live data from live loaders](../../guides/content-collections/index.md#accessing-live-data) with guided explanations and example usage in the content collections guide.
 
 ## Build-time loaders
 
@@ -93,7 +93,7 @@ By default it uses [`github-slugger`](https://github.com/Flet/github-slugger) to
 
 Whether or not to store the raw body of content files in the data store.
 
-When `retainBody` is `false`, [`entry.body`](/en/reference/modules/astro-content/#collectionentrybody) will be `undefined` instead of containing the raw file contents.
+When `retainBody` is `false`, [`entry.body`](../modules/astro-content/index.md#collectionentrybody) will be `undefined` instead of containing the raw file contents.
 
 Setting this property to `false` significantly reduces the deployed size of the data store and helps avoid hitting size limits for sites with very large collections.
 
@@ -143,7 +143,7 @@ An optional object with the following properties:
 
 **Type:** `(text: string) => Record<string, Record<string, unknown>> | Array<Record<string, unknown>> | Promise<Record<string, Record<string, unknown>> | Array<Record<string, unknown>>>`
 
-A callback function to create a collection from a file’s contents. Use it when you need to process files other than JSON, YAML, or TOML that not supported by default (e.g. `.csv`) or when using [nested `.json` documents](/en/guides/content-collections/#nested-json-documents).
+A callback function to create a collection from a file’s contents. Use it when you need to process files other than JSON, YAML, or TOML that not supported by default (e.g. `.csv`) or when using [nested `.json` documents](../../guides/content-collections/index.md#nested-json-documents).
 
 ### Building a loader
 
@@ -174,7 +174,7 @@ See the full [`LoaderContext`](#loadercontext) list of properties for all option
 
 Providing a Zod [`schema`](#loaderschema) in your loader allows you to validate your fetched content entries with [`parseData()`](#loadercontextparsedata) before adding them to the data [store](#loadercontextstore). This schema will also be used as the collection’s default schema when one does not exist in `src/content.config.ts` to provide type safety and editor tooling. You do not also need a schema defined in the content collection if the loader provides this property.
 
-However, if the content collection also [defines a schema](/en/guides/content-collections/#defining-the-collection-schema), that schema will be used instead of your loader’s schema. This is to allow users of your loader to extend its schema, or transform data for use in their project. If you are [publishing and distributing a loader](#distributing-your-loader) for others to use, you may wish to document this behavior and encourage users not to define a collection schema themselves, or how to do so safely if they need data returned in a different format.
+However, if the content collection also [defines a schema](../../guides/content-collections/index.md#defining-the-collection-schema), that schema will be used instead of your loader’s schema. This is to allow users of your loader to extend its schema, or transform data for use in their project. If you are [publishing and distributing a loader](#distributing-your-loader) for others to use, you may wish to document this behavior and encourage users not to define a collection schema themselves, or how to do so safely if they need data returned in a different format.
 
 If you need to dynamically generate the schema based on the configuration options or by introspecting an API, you can use [`createSchema()`](#loadercreateschema) instead.
 
@@ -249,7 +249,7 @@ See the full [Live Loader API](#live-loader-api) for more about the functions an
 
 [Section titled “Providing a schema for live loaders”](#providing-a-schema-for-live-loaders)
 
-Live loaders do not include a schema property. Instead, you can provide type safety by [defining a Zod schema for your collection](/en/guides/content-collections/#using-zod-schemas-with-live-collections) in `src/live.config.ts`, or by passing generic types to the `LiveLoader` interface for the data they return.
+Live loaders do not include a schema property. Instead, you can provide type safety by [defining a Zod schema for your collection](../../guides/content-collections/index.md#using-zod-schemas-with-live-collections) in `src/live.config.ts`, or by passing generic types to the `LiveLoader` interface for the data they return.
 
 #### Example live loader
 
@@ -343,7 +343,7 @@ import type { LiveLoader } from "astro/loaders";import { loadStoreProduct, loadS
 export function myLoader(config): LiveLoader<Product, ProductEntryFilter, ProductCollectionFilter> {  return {    name: 'cached-loader',    loadCollection: async ({ filter }) => {      const products = await loadStoreProducts(filter);      return {        entries: products.map((item) => ({          id: item.id,          data: item,          // You can optionally provide cache hints for each entry          cacheHint: {            tags: [`product-${item.id}`, `category-${item.category}`],          },        })),        cacheHint: {          // All fields are optional, and are combined with each entry's cache hints          // tags are merged from all entries          // lastModified is the most recent lastModified of all entries and the collection          lastModified: getLastModifiedDate(products),          tags: ['products'],        },      };    },    loadEntry: async ({ filter }) => {      const item = await loadStoreProduct(filter);      return {        id: item.id,        data: item,        cacheHint: {          lastModified: new Date(item.lastModified),          tags: [`product-${item.id}`, `category-${item.category}`],        },      };    },  };}
 ```
 
-You can then use these hints in your pages. If you have [experimental route caching](/en/reference/experimental-flags/route-caching/) enabled, pass cache hints directly to `Astro.cache.set()`:
+You can then use these hints in your pages. If you have [experimental route caching](../experimental-flags/route-caching/index.md) enabled, pass cache hints directly to `Astro.cache.set()`:
 
 ```
 ---export const prerender = false; // Not needed in 'server' mode
@@ -370,7 +370,7 @@ if (cacheHint?.lastModified) {  Astro.response.headers.set('Last-Modified', cach
 
 [Section titled “Distributing your loader”](#distributing-your-loader)
 
-Loaders can be defined in your site or as a separate npm package. If you want to share your loader with the community, you can [publish it to npm with the `withastro` and `astro-loader` keywords](/en/guides/integrations/#packagejson-data).
+Loaders can be defined in your site or as a separate npm package. If you want to share your loader with the community, you can [publish it to npm with the `withastro` and `astro-loader` keywords](../../guides/integrations/index.md#packagejson-data).
 
 A loader should export a function that returns a `LiveLoader` object for live loaders or a `Loader` object for build-time loaders, allowing users to configure it with their own settings.
 
@@ -400,7 +400,7 @@ Optionally, you can return a third property defining a schema to validate your c
 
 **Added in:** `astro@5.0.0`
 
-A unique name for the loader, used in logs and [for conditional loading](/en/reference/integrations-reference/#refreshcontent-option).
+A unique name for the loader, used in logs and [for conditional loading](../integrations-reference/index.md#refreshcontent-option).
 
 #### `Loader.load()`
 
@@ -420,7 +420,7 @@ An async function that is called at build time to load data and update the store
 
 **Added in:** `astro@5.0.0`
 
-An optional [Zod schema](/en/guides/content-collections/#defining-datatypes-with-zod) that defines the shape of the entries. It is used to both validate the data and also to generate TypeScript types for the collection.
+An optional [Zod schema](../../guides/content-collections/index.md#defining-datatypes-with-zod) that defines the shape of the entries. It is used to both validate the data and also to generate TypeScript types for the collection.
 
 When you need to dynamically generate the schema at build time based on configuration options or by introspecting an API, use [`createSchema()`](#loadercreateschema) instead.
 
@@ -434,7 +434,7 @@ If present, it will be overridden by any Zod `schema` defined for the collection
 
 **Added in:** `astro@6.0.0`
 
-An optional async function that returns an object containing a [Zod schema](/en/guides/content-collections/#defining-datatypes-with-zod) and types. It is used to dynamically generate the schema at build time based on the configuration options or by introspecting an API.
+An optional async function that returns an object containing a [Zod schema](../../guides/content-collections/index.md#defining-datatypes-with-zod) and types. It is used to dynamically generate the schema at build time based on the configuration options or by introspecting an API.
 
 When you only need to provide a static schema, provide a Zod validation object using [`schema`](#loaderschema) instead.
 
@@ -495,11 +495,11 @@ const lastModified = meta.get("lastModified");// ...meta.set("lastModified", new
 
 [Section titled “LoaderContext.logger”](#loadercontextlogger)
 
-**Type:** [`AstroIntegrationLogger`](/en/reference/integrations-reference/#astrointegrationlogger)
+**Type:** [`AstroIntegrationLogger`](../integrations-reference/index.md#astrointegrationlogger)
 
 **Added in:** `astro@5.0.0`
 
-A logger that can be used to log messages to the console. Use this instead of `console.log` for more helpful logs that include loader-specific content such as the loader name or information about the loading process in the log message. See [`AstroIntegrationLogger`](/en/reference/integrations-reference/#astrointegrationlogger) for more information.
+A logger that can be used to log messages to the console. Use this instead of `console.log` for more helpful logs that include loader-specific content such as the loader name or information about the loading process in the log message. See [`AstroIntegrationLogger`](../integrations-reference/index.md#astrointegrationlogger) for more information.
 
 ```
 return {  name: 'file-loader',  load: async ({ config, store, logger, watcher }) => {    const url = new URL(fileName, config.root);    const filePath = fileURLToPath(url);    await syncData(filePath, store);
@@ -514,7 +514,7 @@ return {  name: 'file-loader',  load: async ({ config, store, logger, watcher })
 
 **Added in:** `astro@5.0.0`
 
-The full, resolved Astro configuration object with all defaults applied. See [the configuration reference](/en/reference/configuration-reference/) for more information.
+The full, resolved Astro configuration object with all defaults applied. See [the configuration reference](../configuration-reference/index.md) for more information.
 
 ```
 return {  name: 'file-loader',  load: async ({ config, store, logger, watcher }) => {    const url = new URL(fileName, config.root);    const filePath = fileURLToPath(url);    await syncData(filePath, store);
@@ -547,9 +547,9 @@ export function feedLoader({ url }) {  const feedUrl = new URL(url);  return {  
 
 Renders a Markdown string to HTML, returning a `RenderedContent` object.
 
-This allows you to render Markdown content directly within your loaders using the same Markdown processing as Astro’s built-in `glob()` loader and provides access to the `render()` function and `<Content />` component for [rendering body content](/en/guides/content-collections/#rendering-body-content).
+This allows you to render Markdown content directly within your loaders using the same Markdown processing as Astro’s built-in `glob()` loader and provides access to the `render()` function and `<Content />` component for [rendering body content](../../guides/content-collections/index.md#rendering-body-content).
 
-Assign this object to the [rendered](#dataentryrendered) field of the [DataEntry](#dataentry) object to allow users to [render the content in a page](/en/guides/content-collections/#rendering-body-content). If the Markdown content includes frontmatter, it will be parsed and available in `metadata.frontmatter`. The frontmatter will be excluded from the HTML output.
+Assign this object to the [rendered](#dataentryrendered) field of the [DataEntry](#dataentry) object to allow users to [render the content in a page](../../guides/content-collections/index.md#rendering-body-content). If the Markdown content includes frontmatter, it will be parsed and available in `metadata.frontmatter`. The frontmatter will be excluded from the HTML output.
 
 ```
 import type { Loader } from 'astro/loaders';import { loadFromCMS } from './cms.js';
@@ -568,7 +568,7 @@ export function myLoader(settings) {  return {    name: 'cms-loader',    async l
 
 Specifies the file path to use for resolving relative image paths in Markdown content.
 
-The following example uses the [configured root directory](/en/reference/configuration-reference/#root) to resolve image paths:
+The following example uses the [configured root directory](../configuration-reference/index.md#root) to resolve image paths:
 
 ```
 for (const file of files) {  const content = await readFile(file.path, 'utf8');  store.set({    id: file.id,    data: file.data,    rendered: await renderMarkdown(content, {      fileURL: new URL(file.path, config.root),    }),  });}
@@ -615,7 +615,7 @@ return {  name: 'file-loader',  load: async ({ config, store, watcher }) => {   
 
 **Added in:** `astro@5.0.0`
 
-If the loader has been triggered by an integration, this may optionally contain extra data set by that integration. It is only set when the loader is triggered by an integration. See the [`astro:server:setup`](/en/reference/integrations-reference/#refreshcontent-option) hook reference for more information.
+If the loader has been triggered by an integration, this may optionally contain extra data set by that integration. It is only set when the loader is triggered by an integration. See the [`astro:server:setup`](../integrations-reference/index.md#refreshcontent-option) hook reference for more information.
 
 ```
 import type { Loader } from "astro/loaders";import { processWebhook } from "./lib/webhooks";
@@ -732,7 +732,7 @@ This is the type of the object that is stored in the data store. It has the foll
 
 **Added in:** `astro@5.0.0`
 
-An identifier for the entry, which must be unique within the collection. This is used to look up the entry in the store and is the key used with [`getEntry()`](/en/reference/modules/astro-content/#getentry) for that collection.
+An identifier for the entry, which must be unique within the collection. This is used to look up the entry in the store and is the key used with [`getEntry()`](../modules/astro-content/index.md#getentry) for that collection.
 
 #### `DataEntry.data`
 
@@ -756,7 +756,7 @@ It is the loader’s responsibility to use [`parseData()`](#loadercontextparseda
 
 A path to the file that is the source of this entry, relative to the root of the site. This only applies to file-based loaders and is used to resolve paths such as images or other assets.
 
-If not set, then any fields in the schema that use [the `image()` helper](/en/guides/images/#images-in-content-collections) will be treated as [public paths](/en/guides/images/#where-to-store-images) and not transformed.
+If not set, then any fields in the schema that use [the `image()` helper](../../guides/images/index.md#images-in-content-collections) will be treated as [public paths](../../guides/images/index.md#where-to-store-images) and not transformed.
 
 #### `DataEntry.body`
 
@@ -792,7 +792,7 @@ The format of the digest is up to the loader, but it must be a string that chang
 
 Stores an object with an entry’s rendered content and metadata if it has been rendered to HTML. For example, this can be used to store the rendered content of a Markdown entry, or HTML from a CMS.
 
-If this field is provided, then [the `render()` function and `<Content />` component](/en/guides/content-collections/#rendering-body-content) are available to render the entry in a page.
+If this field is provided, then [the `render()` function and `<Content />` component](../../guides/content-collections/index.md#rendering-body-content) are available to render the entry in a page.
 
 If the entry has Markdown content then you can use the [`renderMarkdown()`](#loadercontextrendermarkdown) function to generate this object from the Markdown string.
 
@@ -802,7 +802,7 @@ If the entry has Markdown content then you can use the [`renderMarkdown()`](#loa
 
 **Type:** `string`
 
-Contains the rendered HTML string. This is used by [`render()`](/en/reference/modules/astro-content/#render) to return a component that renders this HTML.
+Contains the rendered HTML string. This is used by [`render()`](../modules/astro-content/index.md#render) to return a component that renders this HTML.
 
 ##### `DataEntry.rendered.metadata`
 
@@ -834,7 +834,7 @@ Specifies the list of headings present in this file. Each heading is described b
 
 **Type:** `Record<string, any>`
 
-Describes the raw frontmatter, parsed from the file. This may include [programmatically injected data from remark plugins](/en/guides/markdown-content/#modifying-frontmatter-programmatically).
+Describes the raw frontmatter, parsed from the file. This may include [programmatically injected data from remark plugins](../../guides/markdown-content/index.md#modifying-frontmatter-programmatically).
 
 ## Live loader API
 
@@ -857,8 +857,8 @@ A live loader function returns an object with three required live loader propert
 Use the `LiveLoader` generic type to provide type safety in your loader. This type accepts the following type parameters, in this order:
 
 *   **`TData`** (defaults to `Record<string, unknown>`): The data structure of each entry returned by the loader.
-*   **`TEntryFilter`** (defaults to `never`): The filter object type accepted by [`getLiveEntry()`](/en/reference/modules/astro-content/#getliveentry) and accessible in [`loadEntry()`](#liveloaderloadentry). Use `never` when you don’t support filtering single entries.
-*   **`TCollectionFilter`** (defaults to `never`): The filter object type accepted by [`getLiveCollection()`](/en/reference/modules/astro-content/#getlivecollection) and accessible in [`loadCollection()`](#liveloaderloadcollection). Use `never` when you don’t support filtering collections.
+*   **`TEntryFilter`** (defaults to `never`): The filter object type accepted by [`getLiveEntry()`](../modules/astro-content/index.md#getliveentry) and accessible in [`loadEntry()`](#liveloaderloadentry). Use `never` when you don’t support filtering single entries.
+*   **`TCollectionFilter`** (defaults to `never`): The filter object type accepted by [`getLiveCollection()`](../modules/astro-content/index.md#getlivecollection) and accessible in [`loadCollection()`](#liveloaderloadcollection). Use `never` when you don’t support filtering collections.
 *   **`TError`** (defaults to `Error`): A [custom `Error` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#custom_error_types) that can be returned by the loader for more granular error handling.
 
 #### `LiveLoader.name`
@@ -951,7 +951,7 @@ This is the type object that is returned by the [`loadEntry()`](#liveloaderloade
 
 **Added in:** `astro@6.0.0`
 
-An identifier for the entry, which must be unique within the collection. This is the key used with [`getLiveEntry()`](/en/reference/modules/astro-content/#getliveentry) for that collection.
+An identifier for the entry, which must be unique within the collection. This is the key used with [`getLiveEntry()`](../modules/astro-content/index.md#getliveentry) for that collection.
 
 #### `LiveDataEntry.data`
 
@@ -975,7 +975,7 @@ It is the loader’s responsibility to validate and parse the data before return
 
 An object with an entry’s rendered content if it has been rendered to HTML. For example, this can be the rendered content of a Markdown entry, or HTML from a CMS.
 
-If this field is provided, then [the `render()` function and `<Content />` component](/en/guides/content-collections/#rendering-body-content) are available to render the entry in a page.
+If this field is provided, then [the `render()` function and `<Content />` component](../../guides/content-collections/index.md#rendering-body-content) are available to render the entry in a page.
 
 If the loader does not return a `rendered` property for an entry, the `<Content />` component will render nothing.
 
@@ -1057,4 +1057,4 @@ The following example defines a cache hint for a single product using its last u
 return {  /* ... */  cacheHint: {    lastModified: new Date(product.updatedAt)  },};
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

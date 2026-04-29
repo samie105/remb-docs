@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:24.358Z"
 content_hash: "12d0baa7e22c55e094fd059344bd83e23ad9ae076e44555d28819b072afb52de"
 menu_path: ["Starter Projects"]
 section_path: []
-nav_prev: {"path": "../ssr/index.md", "title": "Server-Side Rendering"}
-nav_next: {"path": "../../react/index.md", "title": "React Query Integration"}
+nav_prev: {"path": "trpc/docs/v10/client/nextjs/ssr/index.md", "title": "Server-Side Rendering"}
+nav_next: {"path": "trpc/docs/v10/client/react/index.md", "title": "React Query Integration"}
 ---
 
 Version: 10.x

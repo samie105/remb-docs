@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:08.487Z"
 content_hash: "6d71da817cda1c2d380812d1d4293fc0093d89eadb86b6052a7e8edb67085d52"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis CLI","→","Redis CLI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis CLI","→","Redis CLI"]
-nav_prev: {"path": "../../reference/sentinel-clients/index.md", "title": "Sentinel client spec"}
-nav_next: {"path": "../insight/index.md", "title": "Redis Insight"}
+nav_prev: {"path": "redis/docs/latest/develop/reference/sentinel-clients/index.md", "title": "Sentinel client spec"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/index.md", "title": "Redis Insight"}
 ---
 
 # Redis CLI
@@ -31,7 +31,7 @@ This topic covers the different aspects of `redis-cli`, starting from the simple
 
 You have several options for installing or using `redis-cli`.
 
-*   [Install Redis Open Source](/docs/latest/operate/oss_and_stack/install/install-stack/). The `redis-cli` utility is installed as part of each installation method.
+*   [Install Redis Open Source](../../../operate/oss_and_stack/install/install-stack/index.md). The `redis-cli` utility is installed as part of each installation method.
     
 *   [Build Redis from source](/docs/latest/operate/oss_and_stack/install/build-stack/). Instead of building everything, you can just run the following command:
     
@@ -40,7 +40,7 @@ You have several options for installing or using `redis-cli`.
     The `redis-cli` utility will be built in the `/path/to/redis-source/src` directory as `/path/to/redis-source/src/redis-cli`.
     
 
-If you prefer not to install Redis, you can also run `redis-cli` in Docker. See the [Run `redis-cli` using Docker](/docs/latest/operate/oss_and_stack/install/install-stack/docker/#connect-with-redis-cli) page for instructions.
+If you prefer not to install Redis, you can also run `redis-cli` in Docker. See the [Run `redis-cli` using Docker](../../../operate/oss_and_stack/install/install-stack/docker/index.md#connect-with-redis-cli) page for instructions.
 
 ## Command line usage
 
@@ -229,7 +229,7 @@ used_memory_rss_human:2.73M
 
 ## Mass insertion of data using `redis-cli`
 
-Mass insertion using `redis-cli` is covered in a separate page as it is a worthwhile topic itself. Please refer to our [mass insertion guide](/docs/latest/develop/clients/patterns/bulk-loading/).
+Mass insertion using `redis-cli` is covered in a separate page as it is a worthwhile topic itself. Please refer to our [mass insertion guide](../../clients/patterns/bulk-loading/index.md).
 
 ## CSV output
 
@@ -246,7 +246,7 @@ Note that the `--csv` flag will only work on a single command, not the entirety 
 
 ## Run Lua scripts
 
-The `redis-cli` has extensive support for using the debugging facility of Lua scripting, available with Redis 3.2 onwards. For this feature, refer to the [Redis Lua debugger documentation](/docs/latest/develop/programmability/lua-debugging/).
+The `redis-cli` has extensive support for using the debugging facility of Lua scripting, available with Redis 3.2 onwards. For this feature, refer to the [Redis Lua debugger documentation](../../programmability/lua-debugging/index.md).
 
 Even without using the debugger, `redis-cli` can be used to run scripts from a file as an argument:
 
@@ -437,11 +437,11 @@ The CLI performs other auxiliary tasks related to Redis that are explained in th
 *   Key space scanner with pattern matching.
 *   Acting as a [Pub/Sub](/docs/latest/develop/pubsub/) client to subscribe to channels.
 *   Monitoring the commands executed into a Redis instance.
-*   Checking the [latency](/docs/latest/operate/oss_and_stack/management/optimization/latency/) of a Redis server in different ways.
+*   Checking the [latency](../../../operate/oss_and_stack/management/optimization/latency/index.md) of a Redis server in different ways.
 *   Checking the scheduler latency of the local computer.
 *   Transferring RDB backups from a remote Redis server locally.
 *   Acting as a Redis replica for showing what a replica receives.
-*   Simulating [LRU](/docs/latest/develop/reference/eviction/) workloads for showing stats about keys hits.
+*   Simulating [LRU](../../reference/eviction/index.md) workloads for showing stats about keys hits.
 *   A client for the Lua debugger.
 
 ### Continuous stats mode
@@ -824,7 +824,7 @@ If you think some of the commands are not replicated correctly in your replicas 
 
 ## Perform an LRU simulation
 
-Redis is often used as a cache with [LRU eviction](/docs/latest/develop/reference/eviction/). Depending on the number of keys and the amount of memory allocated for the cache (specified via the `maxmemory` directive), the amount of cache hits and misses will change. Sometimes, simulating the rate of hits is very useful to correctly provision your cache.
+Redis is often used as a cache with [LRU eviction](../../reference/eviction/index.md). Depending on the number of keys and the amount of memory allocated for the cache (specified via the `maxmemory` directive), the amount of cache hits and misses will change. Sometimes, simulating the rate of hits is very useful to correctly provision your cache.
 
 The `redis-cli` has a special mode where it performs a simulation of GET and SET operations, using an 80-20% power law distribution in the requests pattern. This means that 20% of keys will be requested 80% of times, which is a common distribution in caching scenarios.
 

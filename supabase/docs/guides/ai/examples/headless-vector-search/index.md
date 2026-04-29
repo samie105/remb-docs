@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:26.896Z"
 content_hash: "8a601dc38605d2305363460d217140de8679f490f03485f0ad984b78eaa8148b"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Adding generative Q&A to your documentation","Adding generative Q&A to your documentation"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Adding generative Q&A to your documentation","Adding generative Q&A to your documentation"]
-nav_prev: {"path": "../building-chatgpt-plugins/index.md", "title": "Building ChatGPT plugins"}
-nav_next: {"path": "../huggingface-image-captioning/index.md", "title": "Generate image captions using Hugging Face"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/building-chatgpt-plugins/index.md", "title": "Building ChatGPT plugins"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/huggingface-image-captioning/index.md", "title": "Generate image captions using Hugging Face"}
 ---
 
 # 
@@ -86,5 +86,5 @@ Now inside your docs, you need to create a search interface. Because this is a h
 ## Resources[#](#resources)
 
 *   Read about how we built [ChatGPT for the Supabase Docs](/blog/chatgpt-supabase-docs).
-*   Read the pgvector Docs for [Embeddings and vector similarity](/docs/guides/database/extensions/pgvector)
-*   See how to build something like this from scratch [using Next.js](/docs/guides/ai/examples/nextjs-vector-search).
+*   Read the pgvector Docs for [Embeddings and vector similarity](../../../database/extensions/pgvector/index.md)
+*   See how to build something like this from scratch [using Next.js](../nextjs-vector-search/index.md).

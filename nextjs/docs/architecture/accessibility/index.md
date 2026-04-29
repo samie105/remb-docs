@@ -11,8 +11,8 @@ menu_path: ["Accessibility"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Architecture"}
-nav_next: {"path": "../fast-refresh/index.md", "title": "Fast Refresh"}
+nav_prev: {"path": "nextjs/docs/architecture/index.md", "title": "Architecture"}
+nav_next: {"path": "nextjs/docs/architecture/fast-refresh/index.md", "title": "Fast Refresh"}
 ---
 
 # Accessibility
@@ -31,7 +31,7 @@ The Next.js route announcer looks for the page name to announce by first inspect
 
 ## Linting[](#linting)
 
-Next.js provides an [integrated ESLint experience](/docs/pages/api-reference/config/eslint) out of the box, including custom rules for Next.js. By default, Next.js includes `eslint-plugin-jsx-a11y` to help catch accessibility issues early, including warning on:
+Next.js provides an [integrated ESLint experience](../../pages/api-reference/config/eslint/index.md) out of the box, including custom rules for Next.js. By default, Next.js includes `eslint-plugin-jsx-a11y` to help catch accessibility issues early, including warning on:
 
 -   [aria-props](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-props.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)
 -   [aria-proptypes](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/aria-proptypes.md?rgh-link-date=2021-06-04T02%3A10%3A36Z)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:59.117Z"
 content_hash: "698e70a995f36d79cbbcdef6c59ac9494fdb71188323029c73c774152b32a761"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Connect","→","Connect"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Connect","→","Connect"]
-nav_prev: {"path": "../../go/index.md", "title": "go-redis guide (Go)"}
-nav_next: {"path": "../issue-commands/index.md", "title": "Issue commands"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/go/index.md", "title": "go-redis guide (Go)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/hiredis/issue-commands/index.md", "title": "Issue commands"}
 ---
 
 # Connect
@@ -120,7 +120,7 @@ void disconnectCallback(const redisAsyncContext *c, int status) {
 }
 ```
 
-Use the `redisAsyncCommand()` function to issue Redis commands with an asynchronous connection. This is similar to the equivalent synchronous function `redisCommand()` but also lets you supply a callback and a custom data pointer to process the response to the command. See [Construct asynchronous commands](/docs/latest/develop/clients/hiredis/issue-commands/#construct-asynchronous-commands) for more information.
+Use the `redisAsyncCommand()` function to issue Redis commands with an asynchronous connection. This is similar to the equivalent synchronous function `redisCommand()` but also lets you supply a callback and a custom data pointer to process the response to the command. See [Construct asynchronous commands](../issue-commands/index.md#construct-asynchronous-commands) for more information.
 
 Note that you should normally disconnect asynchronously from a callback when you have finished using the connection. Use `redisAsyncDisconnect()` to disconnect gracefully, letting pending commands execute and activate their callbacks. Use `redisAsyncFree()` to disconnect immediately. If you do this then any pending callbacks from commands that have already executed will be called with a `NULL` reply pointer.
 

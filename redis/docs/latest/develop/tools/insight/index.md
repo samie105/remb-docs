@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:28.308Z"
 content_hash: "bc59e33941cf42b00593e05eacf3b9be1706fdd0647d3563fab80c939b698fbc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Client tools","→","Client tools","→\n      \n        Redis Insight","→","Redis Insight"]
-nav_prev: {"path": "../cli/index.md", "title": "Redis CLI"}
-nav_next: {"path": "copilot-faq/index.md", "title": "Redis Copilot FAQ"}
+nav_prev: {"path": "redis/docs/latest/develop/tools/cli/index.md", "title": "Redis CLI"}
+nav_next: {"path": "redis/docs/latest/develop/tools/insight/copilot-faq/index.md", "title": "Redis Copilot FAQ"}
 ---
 
 # Redis Insight
@@ -56,7 +56,7 @@ Release Notes
 
 Note:
 
-When you add a Redis database for a particular user using the `username` and `password` fields, that user must be able to run the `INFO` command. See the [access control list (ACL) documentation](/docs/latest/operate/oss_and_stack/management/security/acl/) for more information.
+When you add a Redis database for a particular user using the `username` and `password` fields, that user must be able to run the `INFO` command. See the [access control list (ACL) documentation](../../../operate/oss_and_stack/management/security/acl/index.md) for more information.
 
 ### Connect to Azure Managed Redis with ease
 
@@ -89,11 +89,11 @@ Here's an example of using Redis Copilot to search data using a simple, natural 
 
 [![An example of using Redis Copilot to search data](/docs/latest/images/ri/ri-redis-copilot-query.png)](/docs/latest/images/ri/ri-redis-copilot-query.png)
 
-See the [Redis Insight Copilot FAQ](/docs/latest/develop/tools/insight/copilot-faq/) for more information.
+See the [Redis Insight Copilot FAQ](copilot-faq/index.md) for more information.
 
 ### RDI in Redis Insight
 
-Redis Insight includes Redis Data Integration (RDI) connectivity, which allows you to connect to an RDI management plane, and create, test, and deploy RDI pipelines. Read more about this feature [here](/docs/latest/develop/tools/insight/rdi-connector/).
+Redis Insight includes Redis Data Integration (RDI) connectivity, which allows you to connect to an RDI management plane, and create, test, and deploy RDI pipelines. Read more about this feature [here](rdi-connector/index.md).
 
 ### Browser
 
@@ -206,7 +206,7 @@ You can install Redis Insight on operating systems that are not officially suppo
 
 ## Redis Insight API (only for Docker)
 
-If you are running Redis Insight from [Docker](/docs/latest/operate/redisinsight/install/install-on-docker/), you can access the API from `http://localhost:5540/api/docs`.
+If you are running Redis Insight from [Docker](../../../operate/redisinsight/install/install-on-docker/index.md), you can access the API from `http://localhost:5540/api/docs`.
 
 ## Feedback
 

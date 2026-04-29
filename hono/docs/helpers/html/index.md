@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:25.545Z"
 content_hash: "571515fe3e00190cbda88948ec414f457047318efcdee79006f56ee2d8e6fcd7"
 menu_path: ["html Helper ​"]
 section_path: []
-nav_prev: {"path": "../factory/index.md", "title": "Factory Helper \u200b"}
-nav_next: {"path": "../jwt/index.md", "title": "JWT Authentication Helper \u200b"}
+nav_prev: {"path": "hono/docs/helpers/factory/index.md", "title": "Factory Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/jwt/index.md", "title": "JWT Authentication Helper \u200b"}
 ---
 
 The html Helper lets you write HTML in JavaScript template literal with a tag named `html`. Using `raw()`, the content will be rendered as is. You have to escape these strings by yourself.

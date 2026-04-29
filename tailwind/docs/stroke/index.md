@@ -10,8 +10,8 @@ content_hash: "d1c10ccd1fb28768951c80eb2b037eba5b3b39363c489c8e178cc4b9d160060b"
 menu_path: ["stroke"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../fill/index.md", "title": "fill"}
-nav_next: {"path": "../stroke-width/index.md", "title": "stroke-width"}
+nav_prev: {"path": "tailwind/docs/fill/index.md", "title": "fill"}
+nav_next: {"path": "tailwind/docs/stroke-width/index.md", "title": "stroke-width"}
 ---
 
 # stroke
@@ -106,7 +106,7 @@ Prefix a `stroke` utility with a breakpoint variant like `md:` to only apply the
 <svg class="stroke-cyan-500 md:stroke-cyan-700 ...">  <!-- ... --></svg>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
@@ -120,7 +120,7 @@ Now the `stroke-regal-blue` utility can be used in your markup:
 <svg class="stroke-regal-blue">  <!-- ... --></svg>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

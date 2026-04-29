@@ -11,8 +11,8 @@ menu_path: ["optimizePackageImports"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../onDemandEntries/index.md", "title": "onDemandEntries"}
-nav_next: {"path": "../output/index.md", "title": "output"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/onDemandEntries/index.md", "title": "onDemandEntries"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/output/index.md", "title": "output"}
 ---
 
 # optimizePackageImports

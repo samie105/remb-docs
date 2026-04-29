@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:30.107Z"
 content_hash: "a0c27b7bdd7e7cb1078c545c2c556ca4a9830e12711c33f419353c29717317e8"
 menu_path: ["Contributing To Fastify"]
 section_path: []
-nav_prev: {"path": "../Benchmarking/index.md", "title": "Benchmarking"}
-nav_next: {"path": "../Database/index.md", "title": "Database"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Benchmarking/index.md", "title": "Benchmarking"}
+nav_next: {"path": "fastify/docs/latest/Guides/Database/index.md", "title": "Database"}
 ---
 
 Version: latest (v5.8.x)

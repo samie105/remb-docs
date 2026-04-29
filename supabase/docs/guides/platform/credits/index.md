@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:25.037Z"
 content_hash: "2e1583f7a62bb64076b6e37416fbd8259d0430daca681f736e2fd6a66c5cb968"
 menu_path: ["Platform","Platform","Billing","Billing","Credits","Credits"]
 section_path: ["Platform","Platform","Billing","Billing","Credits","Credits"]
-nav_prev: {"path": "../cost-control/index.md", "title": "Control your costs"}
-nav_next: {"path": "../custom-domains/index.md", "title": "Custom Domains"}
+nav_prev: {"path": "supabase/docs/guides/platform/cost-control/index.md", "title": "Control your costs"}
+nav_next: {"path": "supabase/docs/guides/platform/custom-domains/index.md", "title": "Custom Domains"}
 ---
 
 # 

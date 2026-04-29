@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:55.867Z"
 content_hash: "13e182942619e9f05a233c7669db96b89f71f8a67ad195a6181d4d633d201d41"
 menu_path: ["Why Vite ​"]
 section_path: []
-nav_prev: {"path": "../philosophy/index.md", "title": "Project Philosophy \u200b"}
-nav_next: {"path": "../features/index.md", "title": "Features \u200b"}
+nav_prev: {"path": "vite/guide/philosophy/index.md", "title": "Project Philosophy \u200b"}
+nav_next: {"path": "vite/guide/features/index.md", "title": "Features \u200b"}
 ---
 
 As web applications have grown in size and complexity, the tools used to build them have struggled to keep up. Developers working on large projects have experienced painfully slow dev server startups, sluggish hot updates, and long production build times. Each generation of build tooling has improved on the last, but these problems have persisted.

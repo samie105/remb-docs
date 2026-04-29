@@ -10,8 +10,8 @@ content_hash: "1e2297926da3d4f76871d83d20ae13ccf626f2d5fc61f0b0c455fb3db58a669b"
 menu_path: ["Drizzle with Netlify Edge Functions and Neon Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
-nav_next: {"path": "../drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-neon/index.md", "title": "Drizzle with Neon Postgres"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-netlify-edge-functions-supabase/index.md", "title": "Drizzle with Netlify Edge Functions and Supabase Database"}
 ---
 
 #### Setup Neon Postgres[](#setup-neon-postgres)

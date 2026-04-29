@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:26.323Z"
 content_hash: "13fc91ad7b637729f4d25eae9e050a4e3ffa08fe612519ea046a4c3d29b98517"
 menu_path: ["Environment Variables"]
 section_path: []
-nav_prev: {"path": "../debugger/index.md", "title": "Debugging"}
-nav_next: {"path": "../ffi/index.md", "title": "FFI"}
+nav_prev: {"path": "bun/docs/runtime/debugger/index.md", "title": "Debugging"}
+nav_next: {"path": "bun/docs/runtime/ffi/index.md", "title": "FFI"}
 ---
 
 # Disable loading .env files
@@ -259,10 +259,10 @@ Workers
 
 Previous
 
-](/docs/runtime/workers)[
+](../workers/index.md)[
 
 Shell
 
 Next
 
-](/docs/runtime/shell)
+](../shell/index.md)

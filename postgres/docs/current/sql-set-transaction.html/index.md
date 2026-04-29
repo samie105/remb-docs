@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:48.756Z"
 content_hash: "01ae59109611a8360e6a96c984caf4e4ebedbd5e80a318f5646980e5e228b460"
 menu_path: ["PostgreSQL: Documentation: 18: SET TRANSACTION"]
 section_path: []
-nav_prev: {"path": "../sql-set-session-authorization.html/index.md", "title": "PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"}
-nav_next: {"path": "../sql-set.html/index.md", "title": "PostgreSQL: Documentation: 18: SET"}
+nav_prev: {"path": "postgres/docs/current/sql-set-session-authorization.html/index.md", "title": "PostgreSQL: Documentation: 18: SET SESSION AUTHORIZATION"}
+nav_next: {"path": "postgres/docs/current/sql-set.html/index.md", "title": "PostgreSQL: Documentation: 18: SET"}
 ---
 
 SET TRANSACTION — set the characteristics of the current transaction

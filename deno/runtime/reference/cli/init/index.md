@@ -10,8 +10,8 @@ content_hash: "2eb4bde59d0a2a6660efc09311909ad6426421be4f3890ceebaf27744bf6aec0"
 menu_path: ["deno init"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../info/index.md", "title": "deno info"}
-nav_next: {"path": "../install/index.md", "title": "deno install"}
+nav_prev: {"path": "deno/runtime/reference/cli/info/index.md", "title": "deno info"}
+nav_next: {"path": "deno/runtime/reference/cli/install/index.md", "title": "deno install"}
 ---
 
 **On this page**
@@ -118,7 +118,7 @@ deno.json
 
 ## Initialize a web server
 
-Running `deno init --serve` bootstraps a web server that works with [`deno serve`](/runtime/reference/cli/serve).
+Running `deno init --serve` bootstraps a web server that works with [`deno serve`](../serve/index.md).
 
 \>\_
 
@@ -138,7 +138,7 @@ Run these commands to get started
   deno -R test
 ```
 
-Your [`deno.json`](/runtime/fundamentals/configuration/) file will look like this:
+Your [`deno.json`](../../../fundamentals/configuration/index.md) file will look like this:
 
 deno.json
 
@@ -154,7 +154,7 @@ deno.json
 }
 ```
 
-Now, you can start your web server, which [watches for changes](/runtime/getting_started/command_line_interface/#watch-mode), by running `deno task dev`.
+Now, you can start your web server, which [watches for changes](../../../getting_started/command_line_interface/index.md#watch-mode), by running `deno task dev`.
 
 \>\_
 
@@ -184,7 +184,7 @@ Run these commands to get started
   deno task dev
 ```
 
-Your [`deno.json`](/runtime/fundamentals/configuration/) file will look like this:
+Your [`deno.json`](../../../fundamentals/configuration/index.md) file will look like this:
 
 deno.json
 
@@ -196,7 +196,7 @@ deno.json
 }
 ```
 
-Now, you can run the project, which [watches for changes](/runtime/getting_started/command_line_interface/#watch-mode), by running `deno task dev`.
+Now, you can run the project, which [watches for changes](../../../getting_started/command_line_interface/index.md#watch-mode), by running `deno task dev`.
 
 \>\_
 

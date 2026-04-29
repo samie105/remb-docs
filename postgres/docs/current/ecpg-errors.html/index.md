@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:00.064Z"
 content_hash: "53e38cc9c3434b1422935eccb2819e58bb01cfe3327ae3a65fae65649d12cb12"
 menu_path: ["PostgreSQL: Documentation: 18: 34.8. Error Handling"]
 section_path: []
-nav_prev: {"path": "../ecpg-develop.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.17.\u00a0Internals"}
-nav_next: {"path": "../ecpg-sql-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.14.\u00a0Embedded SQL Commands"}
+nav_prev: {"path": "postgres/docs/current/ecpg-develop.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.17.\u00a0Internals"}
+nav_next: {"path": "postgres/docs/current/ecpg-sql-commands.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.14.\u00a0Embedded SQL Commands"}
 ---
 
 This section describes how you can handle exceptional conditions and warnings in an embedded SQL program. There are two nonexclusive facilities for this.

@@ -10,8 +10,8 @@ content_hash: "9081e8cc83857bbea00d6b4ce77ba3b4ab034142137367ff5df33ac04b62785f"
 menu_path: ["font-weight"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../font-style/index.md", "title": "font-style"}
-nav_next: {"path": "../font-stretch/index.md", "title": "font-stretch"}
+nav_prev: {"path": "tailwind/docs/font-style/index.md", "title": "font-style"}
+nav_next: {"path": "tailwind/docs/font-stretch/index.md", "title": "font-stretch"}
 ---
 
 # font-weight
@@ -121,7 +121,7 @@ Prefix a `font-weight` utility with a breakpoint variant like `md:` to only appl
 <p class="font-normal md:font-bold ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--font-weight-*` theme variables to customize the font weight utilities in your project:
 
@@ -135,7 +135,7 @@ Now the `font-extrablack` utility can be used in your markup:
 <div class="font-extrablack">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

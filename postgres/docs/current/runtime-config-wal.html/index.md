@@ -10,8 +10,8 @@ content_hash: "c90056f358a78adf40a298b78bb773c8b0472edbc5f395a69bb7a9824268bbb8"
 menu_path: ["PostgreSQL: Documentation: 18: 19.5. Write Ahead Log"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../runtime-config-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.10.\u00a0Vacuuming"}
-nav_next: {"path": "../sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-vacuum.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.10.\u00a0Vacuuming"}
+nav_next: {"path": "postgres/docs/current/sasl-authentication.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.3.\u00a0SASL Authentication"}
 ---
 
 `wal_level` (`enum`) [#](#GUC-WAL-LEVEL)

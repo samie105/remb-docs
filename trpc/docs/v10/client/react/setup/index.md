@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:57.626Z"
 content_hash: "d1e96a48ee7684ef984a3d1061b9685e218a5117a42962d715c6727ebd137f75"
 menu_path: ["Set up the React Query Integration"]
 section_path: []
-nav_prev: {"path": "../infer-types/index.md", "title": "Inferring Types"}
-nav_next: {"path": "../suspense/index.md", "title": "Suspense"}
+nav_prev: {"path": "trpc/docs/v10/client/react/infer-types/index.md", "title": "Inferring Types"}
+nav_next: {"path": "trpc/docs/v10/client/react/suspense/index.md", "title": "Suspense"}
 ---
 
 ### 1\. Install dependencies[​](#1-install-dependencies "Direct link to 1. Install dependencies")

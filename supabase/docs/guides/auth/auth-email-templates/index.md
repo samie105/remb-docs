@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:42.423Z"
 content_hash: "dcb0ee628597051c9c1dfea2c549e37522dce294359ed269a3f9e345336c4683"
 menu_path: ["Auth","Auth","Configuration","Configuration","Email Templates","Email Templates"]
 section_path: ["Auth","Auth","Configuration","Configuration","Email Templates","Email Templates"]
-nav_prev: {"path": "../auth-email-passwordless/index.md", "title": "Passwordless email logins"}
-nav_next: {"path": "../auth-hooks/index.md", "title": "Auth Hooks"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-email-passwordless/index.md", "title": "Passwordless email logins"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/index.md", "title": "Auth Hooks"}
 ---
 
 # 
@@ -80,7 +80,7 @@ Contains metadata from `auth.users.user_metadata`. Use this to personalize the e
 
 `{{ .Email }}`
 
-Contains the original email address of the user. Empty when trying to [link an email address to an anonymous user](/docs/guides/auth/auth-anonymous#link-an-email--phone-identity).
+Contains the original email address of the user. Empty when trying to [link an email address to an anonymous user](../auth-anonymous/index.md#link-an-email--phone-identity).
 
 `{{ .NewEmail }}`
 
@@ -108,7 +108,7 @@ Contains the type of the newly enrolled/unenrolled MFA method. This variable is 
 
 ## Editing email templates[#](#editing-email-templates)
 
-On hosted Supabase projects, edit your email templates on the [Email Templates](/dashboard/project/_/auth/templates) page. On self-hosted projects or in local development, edit your [configuration files](/docs/guides/local-development/customizing-email-templates).
+On hosted Supabase projects, edit your email templates on the [Email Templates](/dashboard/project/_/auth/templates) page. On self-hosted projects or in local development, edit your [configuration files](../../local-development/customizing-email-templates/index.md).
 
 You can also manage email templates using the Management API:
 
@@ -118,7 +118,7 @@ You can also manage email templates using the Management API:
 
 ## Mobile deep linking[#](#mobile-deep-linking)
 
-For mobile applications, you might need to link or redirect to a specific page within your app. See the [Mobile Deep Linking guide](/docs/guides/auth/native-mobile-deep-linking) to set this up.
+For mobile applications, you might need to link or redirect to a specific page within your app. See the [Mobile Deep Linking guide](../native-mobile-deep-linking/index.md) to set this up.
 
 ## Limitations[#](#limitations)
 

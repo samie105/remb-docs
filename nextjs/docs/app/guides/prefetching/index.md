@@ -11,8 +11,8 @@ menu_path: ["Prefetching"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
-nav_next: {"path": "../preserving-ui-state/index.md", "title": "Preserving UI state across navigations"}
+nav_prev: {"path": "nextjs/docs/app/guides/ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
+nav_next: {"path": "nextjs/docs/app/guides/preserving-ui-state/index.md", "title": "Preserving UI state across navigations"}
 ---
 
 # Prefetching
@@ -35,15 +35,15 @@ When navigating between routes, the browser requests assets for the page like HT
 
 Next.js automatically splits your application into smaller JavaScript chunks based on routes. Instead of loading all the code upfront like traditional SPAs, only the code needed for the current route is loaded. This reduces the initial load time while other parts of the app are loaded in the background. By the time you click the link, the resources for the new route have already been loaded into the browser cache.
 
-When navigating to the new page, there's no full page reload or browser loading spinner. Instead, Next.js performs a [client-side transition](/docs/app/getting-started/linking-and-navigating#client-side-transitions), making the page navigation feel instant.
+When navigating to the new page, there's no full page reload or browser loading spinner. Instead, Next.js performs a [client-side transition](../../getting-started/linking-and-navigating/index.md#client-side-transitions), making the page navigation feel instant.
 
 ## Prefetching static vs. dynamic routes[](#prefetching-static-vs-dynamic-routes)
 
 |  | **Static page** | **Dynamic page** |
 | --- | --- | --- |
-| **Prefetched** | Yes, full route | No, unless [`loading.js`](/docs/app/api-reference/file-conventions/loading) |
-| [**Client Cache TTL**](/docs/app/glossary#client-cache) | 5 min (default) | Off, unless [enabled](/docs/app/api-reference/config/next-config-js/staleTimes) |
-| **Server roundtrip on click** | No | Yes, streamed after [shell](/docs/app/getting-started/caching) |
+| **Prefetched** | Yes, full route | No, unless [`loading.js`](../../api-reference/file-conventions/loading/index.md) |
+| [**Client Cache TTL**](../../glossary/index.md#client-cache) | 5 min (default) | Off, unless [enabled](../../api-reference/config/next-config-js/staleTimes/index.md) |
+| **Server roundtrip on click** | No | Yes, streamed after [shell](../../getting-started/caching/index.md) |
 
 > **Good to know:** During the initial navigation, the browser fetches the HTML, JavaScript, and React Server Components (RSC) Payload. For subsequent navigations, the browser will fetch the RSC Payload for Server Components and JS bundle for Client Components.
 
@@ -64,7 +64,7 @@ export default function NavLink() {
 | **Context** | **Prefetched payload** | **Client Cache TTL** |
 | --- | --- | --- |
 | No `loading.js` | Entire page | Until app reload |
-| With `loading.js` | Layout to first loading boundary | 30s ([configurable](/docs/app/api-reference/config/next-config-js/staleTimes)) |
+| With `loading.js` | Layout to first loading boundary | 30s ([configurable](../../api-reference/config/next-config-js/staleTimes/index.md)) |
 
 Automatic prefetching runs only in production. Disable with `prefetch={false}` or use the wrapper in [Disabled Prefetch](#disabled-prefetch).
 
@@ -133,7 +133,7 @@ export function HoverPrefetchLink({
 
 You can extend the `<Link>` component to create your own custom prefetching strategy. For example, using the [ForesightJS](https://foresightjs.com/docs/integrations/nextjs) library which prefetches links by predicting the direction of the user's cursor.
 
-Alternatively, you can use [`useRouter`](/docs/app/api-reference/functions/use-router) to recreate some of the native `<Link>` behavior. However, be aware this opts you into maintaining prefetching and cache invalidation.
+Alternatively, you can use [`useRouter`](../../api-reference/functions/use-router/index.md) to recreate some of the native `<Link>` behavior. However, be aware this opts you into maintaining prefetching and cache invalidation.
 
 ```
 'use client'
@@ -175,7 +175,7 @@ function ManualPrefetchLink({
 }
 ```
 
-[`onInvalidate`](/docs/app/api-reference/functions/use-router#userouter) is invoked when Next.js suspects cached data is stale, allowing you to refresh the prefetch.
+[`onInvalidate`](../../api-reference/functions/use-router/index.md#userouter) is invoked when Next.js suspects cached data is stale, allowing you to refresh the prefetch.
 
 > **Good to know:** Using an `a` tag will cause a full page navigation to the destination route, you can use `onClick` to prevent the full page navigation, and then invoke `router.push` to navigate to the destination.
 
@@ -217,7 +217,7 @@ The scheduler prioritizes likely navigations while minimizing unused downloads.
 
 ### Partial Prerendering (PPR)[](#partial-prerendering-ppr)
 
-When PPR is enabled, a page is divided into a [static shell](/docs/app/guides/streaming#the-static-shell) and a streamed dynamic section:
+When PPR is enabled, a page is divided into a [static shell](../streaming/index.md#the-static-shell) and a streamed dynamic section:
 
 -   The shell, which can be prefetched, streams immediately
 -   Uncached data streams when ready

@@ -11,8 +11,8 @@ menu_path: ["allowedDevOrigins"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../adapterPath/index.md", "title": "adapterPath"}
-nav_next: {"path": "../appDir/index.md", "title": "appDir"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/adapterPath/index.md", "title": "adapterPath"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/appDir/index.md", "title": "appDir"}
 ---
 
 # allowedDevOrigins

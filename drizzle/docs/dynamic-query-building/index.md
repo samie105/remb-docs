@@ -10,8 +10,8 @@ content_hash: "a536585fc3d7e9d972d6fd179c2139d04f934a5f71b27435d6bb5d8717c2d4c0"
 menu_path: ["Dynamic query building"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../cache/index.md", "title": "Cache"}
-nav_next: {"path": "../read-replicas/index.md", "title": "Read Replicas"}
+nav_prev: {"path": "drizzle/docs/cache/index.md", "title": "Cache"}
+nav_next: {"path": "drizzle/docs/read-replicas/index.md", "title": "Read Replicas"}
 ---
 
 By default, as all the query builders in Drizzle try to conform to SQL as much as possible, you can only invoke most of the methods once. For example, in a `SELECT` statement there might only be one `WHERE` clause, so you can only invoke `.where()` once:

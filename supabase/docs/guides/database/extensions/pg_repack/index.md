@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:50.383Z"
 content_hash: "1a35f3ee3660eaf512c0667ef16239a578f25537f45c18035872ecb019790e9b"
 menu_path: ["Database","Database","Extensions","Extensions","pg_repack: Storage Optimization","pg_repack: Storage Optimization"]
 section_path: ["Database","Database","Extensions","Extensions","pg_repack: Storage Optimization","pg_repack: Storage Optimization"]
-nav_prev: {"path": "../pg_plan_filter/index.md", "title": "pg_plan_filter: Restrict Total Cost"}
-nav_next: {"path": "../pg_stat_statements/index.md", "title": "pg_stat_statements: Query Performance Monitoring"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_plan_filter/index.md", "title": "pg_plan_filter: Restrict Total Cost"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_stat_statements/index.md", "title": "pg_stat_statements: Query Performance Monitoring"}
 ---
 
 # 
@@ -43,7 +43,7 @@ The first version of pg\_repack with full support for non-superuser repacking is
 1select default_version2from pg_available_extensions3where name = 'pg_repack';
 ```
 
-If pg\_repack is not present, or the version is < 1.5.2, [upgrade to the latest version](/docs/guides/platform/upgrading) of Supabase to gain access.
+If pg\_repack is not present, or the version is < 1.5.2, [upgrade to the latest version](../../../platform/upgrading/index.md) of Supabase to gain access.
 
 ## Usage[#](#usage)
 

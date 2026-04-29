@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:04.780Z"
 content_hash: "73e8a55f620e460d3a50ae42a4de9ab39b8baa000b947a0b28b29bec06d2daa1"
 menu_path: ["Express Adapter"]
 section_path: []
-nav_prev: {"path": "../aws-lambda/index.md", "title": "AWS Lambda + API Gateway Adapter"}
-nav_next: {"path": "../fastify/index.md", "title": "Fastify Adapter"}
+nav_prev: {"path": "trpc/docs/server/adapters/aws-lambda/index.md", "title": "AWS Lambda + API Gateway Adapter"}
+nav_next: {"path": "trpc/docs/server/adapters/fastify/index.md", "title": "Fastify Adapter"}
 ---
 
 ## Example app[​](#example-app "Direct link to Example app")

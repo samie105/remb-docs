@@ -10,8 +10,8 @@ content_hash: "56fc47b083f38a53e0623a4645914b8bc0c861aaa0bafbfcdcdfb76c5a68e281"
 menu_path: ["color-scheme"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../caret-color/index.md", "title": "caret-color"}
-nav_next: {"path": "../cursor/index.md", "title": "cursor"}
+nav_prev: {"path": "tailwind/docs/caret-color/index.md", "title": "caret-color"}
+nav_next: {"path": "tailwind/docs/cursor/index.md", "title": "cursor"}
 ---
 
 # color-scheme
@@ -70,7 +70,7 @@ Prefix a `color-scheme` utility with a variant like `dark:*` to only apply the u
 <html class="scheme-light dark:scheme-dark ...">  <!-- ... --></html>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:54.333Z"
 content_hash: "b53f5bc0ff213b31b6e66ce329160053019bd0b226ed83d7915526ed18cc6dae"
 menu_path: ["PostgreSQL: Documentation: 18: 11.7. Indexes on Expressions"]
 section_path: []
-nav_prev: {"path": "../indexes-examine.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.12.\u00a0Examining Index Usage"}
-nav_next: {"path": "../indexes-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.1.\u00a0Introduction"}
+nav_prev: {"path": "postgres/docs/current/indexes-examine.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.12.\u00a0Examining Index Usage"}
+nav_next: {"path": "postgres/docs/current/indexes-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.1.\u00a0Introduction"}
 ---
 
 An index column need not be just a column of the underlying table, but can be a function or scalar expression computed from one or more columns of the table. This feature is useful to obtain fast access to tables based on the results of computations.

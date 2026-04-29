@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:35.680Z"
 content_hash: "cf90483cb62c0c11d6b5da96f164e9c8e9a673723ce166bdd9fd60d81b791d6b"
 menu_path: ["PostgreSQL: Documentation: 18: 41.7. Cursors"]
 section_path: []
-nav_prev: {"path": "../plpgsql-control-structures.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.6.\u00a0Control Structures"}
-nav_next: {"path": "../plpgsql-development-tips.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.12.\u00a0Tips for Developing in PL/pgSQL"}
+nav_prev: {"path": "postgres/docs/current/plpgsql-control-structures.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.6.\u00a0Control Structures"}
+nav_next: {"path": "postgres/docs/current/plpgsql-development-tips.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.12.\u00a0Tips for Developing in PL/pgSQL"}
 ---
 
 Rather than executing a whole query at once, it is possible to set up a _cursor_ that encapsulates the query, and then read the query result a few rows at a time. One reason for doing this is to avoid memory overrun when the result contains a large number of rows. (However, PL/pgSQL users do not normally need to worry about that, since `FOR` loops automatically use a cursor internally to avoid memory problems.) A more interesting usage is to return a reference to a cursor that a function has created, allowing the caller to read the rows. This provides an efficient way to return large row sets from functions.

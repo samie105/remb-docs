@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:33.627Z"
 content_hash: "6ed128dd5e93468437a1abf1ed8a10fe57746922c8567cfd8924142df63773b4"
 menu_path: ["Convert a Uint8Array to a ReadableStream"]
 section_path: []
-nav_prev: {"path": "../typedarray-to-dataview/index.md", "title": "Convert a Uint8Array to a DataView"}
-nav_next: {"path": "../typedarray-to-string/index.md", "title": "Convert a Uint8Array to a string"}
+nav_prev: {"path": "bun/docs/guides/binary/typedarray-to-dataview/index.md", "title": "Convert a Uint8Array to a DataView"}
+nav_next: {"path": "bun/docs/guides/binary/typedarray-to-string/index.md", "title": "Convert a Uint8Array to a string"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../typedarray-to-string/index.md", "title": "Convert a Uint8
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The naive approach to creating a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) from a [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) is to use the [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) constructor and enqueue the entire array as a single chunk. For larger chunks, this may be undesirable as it isn’t actually “streaming” the data.
 
@@ -71,7 +71,7 @@ const stream = blob.stream(1024);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -83,10 +83,10 @@ Convert a Uint8Array to a DataView
 
 Previous
 
-](/docs/guides/binary/typedarray-to-dataview)[
+](../typedarray-to-dataview/index.md)[
 
 Convert a DataView to a string
 
 Next
 
-](/docs/guides/binary/dataview-to-string)
+](../dataview-to-string/index.md)

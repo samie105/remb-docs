@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:36:13.892Z"
 content_hash: "19d3b4c829643d9d104249d8851a2fe1267946047518399f67a94f3ac3fb9e53"
 menu_path: ["Write-Type-Provider"]
 section_path: []
-nav_prev: {"path": "../Write-Plugin/index.md", "title": "How to write a good plugin"}
-nav_next: {"path": "../../Reference/ContentTypeParser/index.md", "title": "ContentTypeParser"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Write-Plugin/index.md", "title": "How to write a good plugin"}
+nav_next: {"path": "fastify/docs/latest/Reference/ContentTypeParser/index.md", "title": "ContentTypeParser"}
 ---
 
 Version: latest (v5.8.x)
 
 ## How to write your own type provider[​](#how-to-write-your-own-type-provider "Direct link to How to write your own type provider")
 
-Things to keep in mind when implementing a custom [type provider](/docs/latest/Reference/Type-Providers/):
+Things to keep in mind when implementing a custom [type provider](../../Reference/Type-Providers/index.md):
 
 ### Type Contravariance[​](#type-contravariance "Direct link to Type Contravariance")
 

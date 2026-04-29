@@ -10,8 +10,8 @@ content_hash: "ee74ebafe99fcd68b3830480d0158f43a7102e05adef5ee42bffa60478c67751"
 menu_path: ["hyphens"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../overflow-wrap/index.md", "title": "overflow-wrap"}
-nav_next: {"path": "../content/index.md", "title": "content"}
+nav_prev: {"path": "tailwind/docs/overflow-wrap/index.md", "title": "overflow-wrap"}
+nav_next: {"path": "tailwind/docs/content/index.md", "title": "content"}
 ---
 
 # hyphens
@@ -69,7 +69,7 @@ Prefix a `hyphens` utility with a breakpoint variant like `md:` to only apply th
 <p class="hyphens-none md:hyphens-auto ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

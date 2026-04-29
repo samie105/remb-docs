@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:37.360Z"
 content_hash: "1e62adb5a5a8c72c2c2f839569a306323f62349c60c9720b21167101962dcf09"
 menu_path: ["Using bun install with an Azure Artifacts npm registry"]
 section_path: []
-nav_prev: {"path": "../add-tarball/index.md", "title": "Add a tarball dependency"}
-nav_next: {"path": "../cicd/index.md", "title": "Install dependencies with Bun in GitHub Actions"}
+nav_prev: {"path": "bun/docs/guides/install/add-tarball/index.md", "title": "Add a tarball dependency"}
+nav_next: {"path": "bun/docs/guides/install/cicd/index.md", "title": "Install dependencies with Bun in GitHub Actions"}
 ---
 
 # You can use an environment variable here
@@ -19,7 +19,7 @@ password = "$NPM_PASSWORD"
 
 * * *
 
-Then assign your Azure Personal Access Token to the `NPM_PASSWORD` environment variable. Bun [automatically reads](/docs/runtime/environment-variables) `.env` files, so create a file called `.env` in your project root. There is no need to base-64 encode this token! Bun will do this for you.
+Then assign your Azure Personal Access Token to the `NPM_PASSWORD` environment variable. Bun [automatically reads](../../../runtime/environment-variables/index.md) `.env` files, so create a file called `.env` in your project root. There is no need to base-64 encode this token! Bun will do this for you.
 
 .env
 
@@ -93,10 +93,10 @@ Configure a private registry for an organization scope with bun install
 
 Previous
 
-](/docs/guides/install/registry-scope)[
+](../registry-scope/index.md)[
 
 Using bun install with Artifactory
 
 Next
 
-](/docs/guides/install/jfrog-artifactory)
+](../jfrog-artifactory/index.md)

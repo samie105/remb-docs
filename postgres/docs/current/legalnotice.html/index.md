@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:35.666Z"
 content_hash: "27274ff5864d11ae6653ec84f460b8291e27bc29a6944ba1834f59ca08f43ce3"
 menu_path: ["PostgreSQL: Documentation: 18: Legal Notice"]
 section_path: []
-nav_prev: {"path": "../index.html/index.md", "title": "PostgreSQL 18.3 Documentation"}
-nav_next: {"path": "../resources.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.\u00a0Further Information"}
+nav_prev: {"path": "postgres/docs/current/index.html/index.md", "title": "PostgreSQL 18.3 Documentation"}
+nav_next: {"path": "postgres/docs/current/resources.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.\u00a0Further Information"}
 ---
 
 **Legal Notice**

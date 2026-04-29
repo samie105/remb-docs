@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:09.657Z"
 content_hash: "64190d66a765f255b8d3aebd4e8d48801f52e6aada88af054d13ed4398157fdf"
 menu_path: ["bun audit"]
 section_path: []
-nav_prev: {"path": "../add/index.md", "title": "bun add"}
-nav_next: {"path": "../info/index.md", "title": "bun info"}
+nav_prev: {"path": "bun/docs/pm/cli/add/index.md", "title": "bun add"}
+nav_next: {"path": "bun/docs/pm/cli/info/index.md", "title": "bun info"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../info/index.md", "title": "bun info"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Run the command in a project with a `bun.lock` file:
 
@@ -127,10 +127,10 @@ bun why
 
 Previous
 
-](/docs/pm/cli/why)[
+](../why/index.md)[
 
 bun info
 
 Next
 
-](/docs/pm/cli/info)
+](../info/index.md)

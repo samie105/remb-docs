@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:08.919Z"
 content_hash: "f15c4a3b8c2470c3343ef8a50502ad444c8e47d91833f37e8dfa493b57ab60a6"
 menu_path: ["Storage","Storage","File Buckets","File Buckets","Fundamentals","Fundamentals"]
 section_path: ["Storage","Storage","File Buckets","File Buckets","Fundamentals","Fundamentals"]
-nav_prev: {"path": "../creating-buckets/index.md", "title": "Creating Buckets"}
-nav_next: {"path": "../../cdn/fundamentals/index.md", "title": "Storage CDN"}
+nav_prev: {"path": "supabase/docs/guides/storage/buckets/creating-buckets/index.md", "title": "Creating Buckets"}
+nav_next: {"path": "supabase/docs/guides/storage/cdn/fundamentals/index.md", "title": "Storage CDN"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Storage Buckets
 
 * * *
 
-Buckets allow you to keep your files organized and determines the [Access Model](#access-model) for your assets. [Upload restrictions](/docs/guides/storage/buckets/creating-buckets#restricting-uploads) like max file size and allowed content types are also defined at the bucket level.
+Buckets allow you to keep your files organized and determines the [Access Model](#access-model) for your assets. [Upload restrictions](../creating-buckets/index.md#restricting-uploads) like max file size and allowed content types are also defined at the bucket level.
 
 ## Access model[#](#access-model)
 
@@ -27,7 +27,7 @@ There are 2 access models for buckets, **public** and **private** buckets.
 
 ### Private buckets[#](#private-buckets)
 
-When a bucket is set to **Private** all operations are subject to access control via [RLS policies](/docs/guides/storage/security/access-control). This also applies when downloading assets. Buckets are private by default.
+When a bucket is set to **Private** all operations are subject to access control via [RLS policies](../../security/access-control/index.md). This also applies when downloading assets. Buckets are private by default.
 
 The only ways to download assets within a private bucket is to:
 
@@ -51,4 +51,4 @@ Access control is still enforced for other types of operations including uploadi
 *   User public media
 *   Blog post content
 
-Public buckets are more performant than private buckets since they are [cached differently](/docs/guides/storage/cdn/fundamentals#public-vs-private-buckets).
+Public buckets are more performant than private buckets since they are [cached differently](../../cdn/fundamentals/index.md#public-vs-private-buckets).

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:26.005Z"
 content_hash: "909824026eeae0882a50cd85b054a6c8b177aa48aa59d07015c74e18bfed1cdf"
 menu_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","JSON and unstructured data","JSON and unstructured data"]
 section_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","JSON and unstructured data","JSON and unstructured data"]
-nav_prev: {"path": "../joins-and-nesting/index.md", "title": "Querying Joins and Nested tables"}
-nav_next: {"path": "../metabase/index.md", "title": "Connecting to Metabase"}
+nav_prev: {"path": "supabase/docs/guides/database/joins-and-nesting/index.md", "title": "Querying Joins and Nested tables"}
+nav_next: {"path": "supabase/docs/guides/database/metabase/index.md", "title": "Connecting to Metabase"}
 ---
 
 # 
@@ -66,7 +66,7 @@ Postgres support a range of [JSON functions and operators](https://www.postgresq
 
 ## Validating JSON data[#](#validating-json-data)
 
-Supabase provides the [`pg_jsonschema` extension](/docs/guides/database/extensions/pg_jsonschema) that adds the ability to validate `json` and `jsonb` data types against [JSON Schema](https://json-schema.org/) documents.
+Supabase provides the [`pg_jsonschema` extension](../extensions/pg_jsonschema/index.md) that adds the ability to validate `json` and `jsonb` data types against [JSON Schema](https://json-schema.org/) documents.
 
 Once you have enabled the extension, you can add a "check constraint" to your table to validate the JSON data:
 

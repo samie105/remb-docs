@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:24.780Z"
 content_hash: "eb1e9abc5a71956747b292e4da92420ec59ded3257a2185b8334255cfbb23013"
 menu_path: ["Read a file to a Buffer"]
 section_path: []
-nav_prev: {"path": "../arraybuffer/index.md", "title": "Read a file to an ArrayBuffer"}
-nav_next: {"path": "../exists/index.md", "title": "Check if a file exists"}
+nav_prev: {"path": "bun/docs/guides/read-file/arraybuffer/index.md", "title": "Read a file to an ArrayBuffer"}
+nav_next: {"path": "bun/docs/guides/read-file/exists/index.md", "title": "Check if a file exists"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../exists/index.md", "title": "Check if a file exists"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.file()` function accepts a path and returns a `BunFile` instance. The `BunFile` class extends `Blob` and allows you to lazily read the file in a variety of formats. To read the file into a `Buffer` instance, first use `.arrayBuffer()` to consume the file as an `ArrayBuffer`, then use `Buffer.from()` to create a `Buffer` from the `ArrayBuffer`.
 
@@ -49,7 +49,7 @@ const buffer = Buffer.from(arrbuf);
 
 * * *
 
-Refer to [Binary data > Buffer](/docs/runtime/binary-data#buffer) for more information on working with `Buffer` and other binary data formats in Bun.
+Refer to [Binary data > Buffer](../../../runtime/binary-data/index.md#buffer) for more information on working with `Buffer` and other binary data formats in Bun.
 
 Was this page helpful?
 
@@ -61,10 +61,10 @@ Read a file as a string
 
 Previous
 
-](/docs/guides/read-file/string)[
+](../string/index.md)[
 
 Read a file to a Uint8Array
 
 Next
 
-](/docs/guides/read-file/uint8array)
+](../uint8array/index.md)

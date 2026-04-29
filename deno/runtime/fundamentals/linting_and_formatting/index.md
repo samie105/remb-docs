@@ -10,8 +10,8 @@ content_hash: "82e5528a68c0c28f88c9449cd04ccfcaaef370d28be00b86028fd191feee09cf"
 menu_path: ["Linting and formatting"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../workspaces/index.md", "title": "Workspaces and monorepos"}
-nav_next: {"path": "../http_server/index.md", "title": "Writing an HTTP Server"}
+nav_prev: {"path": "deno/runtime/fundamentals/workspaces/index.md", "title": "Workspaces and monorepos"}
+nav_next: {"path": "deno/runtime/fundamentals/http_server/index.md", "title": "Writing an HTTP Server"}
 ---
 
 # or

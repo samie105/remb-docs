@@ -10,8 +10,8 @@ content_hash: "4cdfbfc293151712a35ea43ac4dc937a9c646b094e6ea4df4fe43f4b12067daf"
 menu_path: ["Set Operations"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../perf-serverless/index.md", "title": "Drizzle Serverless performance"}
-nav_next: {"path": "../generated-columns/index.md", "title": "Generated Columns"}
+nav_prev: {"path": "drizzle/docs/perf-serverless/index.md", "title": "Drizzle Serverless performance"}
+nav_next: {"path": "drizzle/docs/generated-columns/index.md", "title": "Generated Columns"}
 ---
 
 SQL set operations combine the results of multiple query blocks into a single result. The SQL standard defines the following three set operations: `UNION`, `INTERSECT`, `EXCEPT`, `UNION ALL`, `INTERSECT ALL`, `EXCEPT ALL`.

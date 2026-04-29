@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:06.338Z"
 content_hash: "b0287eb460655bbcd3274ecd596bf66b4f2b05bf8abb963122d57a54f950400b"
 menu_path: ["Read environment variables"]
 section_path: []
-nav_prev: {"path": "../import-yaml/index.md", "title": "Import a YAML file"}
-nav_next: {"path": "../set-env/index.md", "title": "Set environment variables"}
+nav_prev: {"path": "bun/docs/guides/runtime/import-yaml/index.md", "title": "Import a YAML file"}
+nav_next: {"path": "bun/docs/guides/runtime/set-env/index.md", "title": "Set environment variables"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../set-env/index.md", "title": "Set environment variables"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The current environment variables can be accessed via `process.env`.
 
@@ -71,7 +71,7 @@ FOOBAR=aaaaaa
 
 * * *
 
-See [Docs > Runtime > Environment variables](/docs/runtime/environment-variables) for more information on using environment variables with Bun.
+See [Docs > Runtime > Environment variables](../../../runtime/environment-variables/index.md) for more information on using environment variables with Bun.
 
 Was this page helpful?
 
@@ -83,10 +83,10 @@ Set environment variables
 
 Previous
 
-](/docs/guides/runtime/set-env)[
+](../set-env/index.md)[
 
 Add a dependency
 
 Next
 
-](/docs/guides/install/add)
+](../../install/add/index.md)

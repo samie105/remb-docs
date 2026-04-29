@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:10.001Z"
 content_hash: "882750702ae4e482b4c616f3c9b520ab00916cd5a14407955567e7b0996aeb10"
 menu_path: ["Write your first line of Astro"]
 section_path: []
-nav_prev: {"path": "../2/index.md", "title": "Create your first Astro project"}
-nav_next: {"path": "../4/index.md", "title": "Store your repository online"}
+nav_prev: {"path": "astro/en/tutorial/1-setup/2/index.md", "title": "Create your first Astro project"}
+nav_next: {"path": "astro/en/tutorial/1-setup/4/index.md", "title": "Store your repository online"}
 ---
 
 # Write your first line of Astro
@@ -54,4 +54,4 @@ The rest of this unit will set you up for success with version control and a pub
  *    I can make changes and see them in the browser.
 *    I am an Astro developer!
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

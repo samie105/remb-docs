@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:30.190Z"
 content_hash: "8d9a21b0d02ff37a95c7b0d298f93d90e13773b47f6fc0edbf1e419ceafda953"
 menu_path: ["PostgreSQL: Documentation: 18: DROP TABLESPACE"]
 section_path: []
-nav_prev: {"path": "../sql-droptable.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLE"}
-nav_next: {"path": "../sql-droptsdictionary.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TEXT SEARCH DICTIONARY"}
+nav_prev: {"path": "postgres/docs/current/sql-droptable.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TABLE"}
+nav_next: {"path": "postgres/docs/current/sql-droptsdictionary.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP TEXT SEARCH DICTIONARY"}
 ---
 
 DROP TABLESPACE — remove a tablespace

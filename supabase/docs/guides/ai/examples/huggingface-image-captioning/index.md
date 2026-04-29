@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:30.558Z"
 content_hash: "69d643b328e01cd04cd7d075d049eedda72440b46ed5b6c514dd7d69f895c7a7"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Generate image captions using Hugging Face","Generate image captions using Hugging Face"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Generate image captions using Hugging Face","Generate image captions using Hugging Face"]
-nav_prev: {"path": "../headless-vector-search/index.md", "title": "Adding generative Q&A for your documentation"}
-nav_next: {"path": "../image-search-openai-clip/index.md", "title": "Image Search with OpenAI CLIP"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/headless-vector-search/index.md", "title": "Adding generative Q&A for your documentation"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/image-search-openai-clip/index.md", "title": "Image Search with OpenAI CLIP"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Use the Hugging Face Inference API to make calls to 100,000+ Machine Learning mo
 
 * * *
 
-We can combine Hugging Face with [Supabase Storage](/storage) and [Database Webhooks](/docs/guides/database/webhooks) to automatically caption for any image we upload to a storage bucket.
+We can combine Hugging Face with [Supabase Storage](/storage) and [Database Webhooks](../../../database/webhooks/index.md) to automatically caption for any image we upload to a storage bucket.
 
 ## About Hugging Face[#](#about-hugging-face)
 

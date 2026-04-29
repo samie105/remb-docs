@@ -10,8 +10,8 @@ content_hash: "1a40d088f8909ff2cdd276d91a3361fc9adb0ad6132cc1452f26159d978a78b9"
 menu_path: ["Migration histories"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../mental-model/index.md", "title": "Understanding Migrations"}
-nav_next: {"path": "../shadow-database/index.md", "title": "About the shadow database"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md", "title": "Understanding Migrations"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/shadow-database/index.md", "title": "About the shadow database"}
 ---
 
 How Prisma ORM uses migration histories to track changes to your schema

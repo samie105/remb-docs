@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:09.069Z"
 content_hash: "173c755d421f0f73ba921beab599a48993f2ec6a393eaab8bcff8b1cd8d8c408"
 menu_path: ["Content entry data does not match schema."]
 section_path: []
-nav_prev: {"path": "../content-collection-type-mismatch-error/index.md", "title": "Collection contains entries of a different type."}
-nav_next: {"path": "../content-loader-invalid-data-error/index.md", "title": "Content entry is missing an ID"}
+nav_prev: {"path": "astro/en/reference/errors/content-collection-type-mismatch-error/index.md", "title": "Collection contains entries of a different type."}
+nav_next: {"path": "astro/en/reference/errors/content-loader-invalid-data-error/index.md", "title": "Content entry is missing an ID"}
 ---
 
 # Content entry data does not match schema.
@@ -24,6 +24,6 @@ nav_next: {"path": "../content-loader-invalid-data-error/index.md", "title": "Co
 
 [Section titled “What went wrong?”](#what-went-wrong)
 
-A content entry does not match its collection schema. Make sure that all required fields are present, and that all fields are of the correct type. You can check against the collection schema in your `src/content.config.*` file. See the [Content collections documentation](/en/guides/content-collections/) for more information.
+A content entry does not match its collection schema. Make sure that all required fields are present, and that all fields are of the correct type. You can check against the collection schema in your `src/content.config.*` file. See the [Content collections documentation](../../../guides/content-collections/index.md) for more information.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -10,8 +10,8 @@ content_hash: "8293a36be2e67b995207465389a49c39724c0928cc278ccc96d50d09ce51698d"
 menu_path: ["scroll-margin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../scroll-behavior/index.md", "title": "scroll-behavior"}
-nav_next: {"path": "../scroll-padding/index.md", "title": "scroll-padding"}
+nav_prev: {"path": "tailwind/docs/scroll-behavior/index.md", "title": "scroll-behavior"}
+nav_next: {"path": "tailwind/docs/scroll-padding/index.md", "title": "scroll-padding"}
 ---
 
 Utilities for controlling the scroll offset around items in a snap container.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:38.749Z"
 content_hash: "714ec0d8e05c3bd9a934d50514abb0a21fb8bd960ba2fcbbda87f0d001b31d07"
 menu_path: ["Encode and decode base64 strings"]
 section_path: []
-nav_prev: {"path": "../../test/watch-mode/index.md", "title": "Run tests in watch mode with Bun"}
-nav_next: {"path": "../deep-equals/index.md", "title": "Check if two objects are deeply equal"}
+nav_prev: {"path": "bun/docs/guides/test/watch-mode/index.md", "title": "Run tests in watch mode with Bun"}
+nav_next: {"path": "bun/docs/guides/util/deep-equals/index.md", "title": "Check if two objects are deeply equal"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../deep-equals/index.md", "title": "Check if two objects are
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun implements the Web-standard [`atob`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob) and [`btoa`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa) functions for encoding and decoding base64 strings.
 
@@ -45,7 +45,7 @@ const decoded = atob(encoded); // => "hello world"
 
 * * *
 
-See [Docs > Web APIs](/docs/runtime/web-apis) for a complete breakdown of the Web APIs implemented in Bun.
+See [Docs > Web APIs](../../../runtime/web-apis/index.md) for a complete breakdown of the Web APIs implemented in Bun.
 
 Was this page helpful?
 
@@ -57,10 +57,10 @@ Generate a UUID
 
 Previous
 
-](/docs/guides/util/javascript-uuid)[
+](../javascript-uuid/index.md)[
 
 Compress and decompress data with gzip
 
 Next
 
-](/docs/guides/util/gzip)
+](../gzip/index.md)

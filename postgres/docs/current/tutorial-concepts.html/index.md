@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:29.144Z"
 content_hash: "8ea70bba636c16c26ec2777836dd92d886d2e9077c6a6a7508129de9eb19ec3c"
 menu_path: ["PostgreSQL: Documentation: 18: 2.2. Concepts"]
 section_path: []
-nav_prev: {"path": "../tutorial-advanced-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.1.\u00a0Introduction"}
-nav_next: {"path": "../tutorial-createdb.html/index.md", "title": "PostgreSQL: Documentation: 18: 1.3.\u00a0Creating a Database"}
+nav_prev: {"path": "postgres/docs/current/tutorial-advanced-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.1.\u00a0Introduction"}
+nav_next: {"path": "postgres/docs/current/tutorial-createdb.html/index.md", "title": "PostgreSQL: Documentation: 18: 1.3.\u00a0Creating a Database"}
 ---
 
 PostgreSQL is a _relational database management system_ (RDBMS). That means it is a system for managing data stored in _relations_. Relation is essentially a mathematical term for _table_. The notion of storing data in tables is so commonplace today that it might seem inherently obvious, but there are a number of other ways of organizing databases. Files and directories on Unix-like operating systems form an example of a hierarchical database. A more modern development is the object-oriented database.

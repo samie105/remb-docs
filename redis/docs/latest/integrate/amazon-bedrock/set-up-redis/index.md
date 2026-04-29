@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:23.991Z"
 content_hash: "47e45c07c7bd79b4a4891aa861a57158e1627456f9eb550cdc0405aa88073bf4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Set up Redis for Bedrock","→","Set up Redis for Bedrock"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Set up Redis for Bedrock","→","Set up Redis for Bedrock"]
-nav_prev: {"path": "../create-knowledge-base/index.md", "title": "Create a Bedrock knowledge base"}
-nav_next: {"path": "../../confluent-with-redis-cloud/index.md", "title": "Confluent with Redis Cloud"}
+nav_prev: {"path": "redis/docs/latest/integrate/amazon-bedrock/create-knowledge-base/index.md", "title": "Create a Bedrock knowledge base"}
+nav_next: {"path": "redis/docs/latest/integrate/confluent-with-redis-cloud/index.md", "title": "Confluent with Redis Cloud"}
 ---
 
 # Set up Redis for Bedrock
@@ -24,7 +24,7 @@ You need to set up your Redis Cloud database before you can set it as the vector
 3.  [Store database credentials in AWS secrets manager](#store-secret)
 4.  [Create a vector index in your database](#create-vector-index) for Bedrock to use
 
-After you set up the database, you can use the database information to set it as your knowledge base database when you [create a knowledge base](/docs/latest/integrate/amazon-bedrock/create-knowledge-base/).
+After you set up the database, you can use the database information to set it as your knowledge base database when you [create a knowledge base](../create-knowledge-base/index.md).
 
 ## Sign up and create a database
 
@@ -191,7 +191,7 @@ After your Redis Cloud database is set up, create a search index with a vector f
 
 ### Redis Insight
 
-[Redis Insight](/docs/latest/develop/tools/insight/) is a free Redis GUI that allows you to visualize and optimize your data in Redis.
+[Redis Insight](../../../develop/tools/insight/index.md) is a free Redis GUI that allows you to visualize and optimize your data in Redis.
 
 To create your vector index in Redis Insight:
 
@@ -240,7 +240,7 @@ To create your vector index in Redis Insight:
 
 ### `redis-cli`
 
-The [`redis-cli`](/docs/latest/develop/tools/cli/) command-line utility lets you connect and run Redis commands directly from the command line. To use `redis-cli`, you can [install Redis](/docs/latest/operate/oss_and_stack/stack-with-enterprise/install/).
+The [`redis-cli`](../../../develop/tools/cli/index.md) command-line utility lets you connect and run Redis commands directly from the command line. To use `redis-cli`, you can [install Redis](../../../operate/oss_and_stack/stack-with-enterprise/install/index.md).
 
 Public endpoint and port details are available from the **Databases** list or the database's **Configuration** screen. Select **Connect** to view how to connect to your database with `redis-cli`.
 
@@ -273,6 +273,6 @@ Replace the following fields:
 
 ## Next steps
 
-After your Redis database is set up, you can use it to [create a knowledge base](/docs/latest/integrate/amazon-bedrock/create-knowledge-base/) in Amazon Bedrock.
+After your Redis database is set up, you can use it to [create a knowledge base](../create-knowledge-base/index.md) in Amazon Bedrock.
 
 ## On this page

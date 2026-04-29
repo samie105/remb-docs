@@ -11,8 +11,8 @@ menu_path: ["Missing Suspense boundary with useSearchParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../middleware-upgrade-guide/index.md", "title": "Middleware Upgrade Guide"}
-nav_next: {"path": "../next-dynamic-modules/index.md", "title": "`next/dynamic` has deprecated loading multiple modules at once"}
+nav_prev: {"path": "nextjs/docs/messages/middleware-upgrade-guide/index.md", "title": "Middleware Upgrade Guide"}
+nav_next: {"path": "nextjs/docs/messages/next-dynamic-modules/index.md", "title": "`next/dynamic` has deprecated loading multiple modules at once"}
 ---
 
 # Missing Suspense boundary with useSearchParams
@@ -26,7 +26,7 @@ Reading search parameters through `useSearchParams()` without a Suspense boundar
 You have a few options depending on your intent:
 
 -   To keep the route statically generated, wrap the smallest subtree that calls `useSearchParams()` in `Suspense`, for example you may move its usage into a child Client Component and render that component wrapped with `Suspense`. This preserves the static shell and avoids a full CSR bailout.
--   To make the route dynamically rendered, use the [`connection`](/docs/app/api-reference/functions/connection) function in a Server Component (e.g. the Page or a wrapping Layout). This waits for an incoming request and excludes everything below from prerendering.
+-   To make the route dynamically rendered, use the [`connection`](../../app/api-reference/functions/connection/index.md) function in a Server Component (e.g. the Page or a wrapping Layout). This waits for an incoming request and excludes everything below from prerendering.
 
 app/page.tsx
 
@@ -59,7 +59,7 @@ export default function RootLayout({
 }
 ```
 
--   Alternatively, a Server Component Page can pass the `searchParams` value down to Client Components. In a Client Component, you can unwrap it with React's `use()` (ensure a surrounding `Suspense` boundary). See [What to use and when](/docs/app/getting-started/layouts-and-pages#what-to-use-and-when).
+-   Alternatively, a Server Component Page can pass the `searchParams` value down to Client Components. In a Client Component, you can unwrap it with React's `use()` (ensure a surrounding `Suspense` boundary). See [What to use and when](../../app/getting-started/layouts-and-pages/index.md#what-to-use-and-when).
 
 app/page.tsx
 
@@ -159,8 +159,8 @@ This provides unminified stack traces with source maps, making it easier to pinp
 
 ## Useful Links[](#useful-links)
 
--   [`useSearchParams`](/docs/app/api-reference/functions/use-search-params)
--   [`connection`](/docs/app/api-reference/functions/connection)
--   [Debugging prerender errors](/docs/app/api-reference/cli/next#debugging-prerender-errors)
+-   [`useSearchParams`](../../app/api-reference/functions/use-search-params/index.md)
+-   [`connection`](../../app/api-reference/functions/connection/index.md)
+-   [Debugging prerender errors](../../app/api-reference/cli/next/index.md#debugging-prerender-errors)
 
 Was this helpful?

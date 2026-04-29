@@ -10,8 +10,8 @@ content_hash: "8f06bba2baff60018e97f321ce72a5b4917f2b861b5324967a83ed6592f998cc"
 menu_path: ["top / right / bottom / left"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../position/index.md", "title": "position"}
-nav_next: {"path": "../visibility/index.md", "title": "visibility"}
+nav_prev: {"path": "tailwind/docs/position/index.md", "title": "position"}
+nav_next: {"path": "tailwind/docs/visibility/index.md", "title": "visibility"}
 ---
 
 Utilities for controlling the placement of positioned elements.

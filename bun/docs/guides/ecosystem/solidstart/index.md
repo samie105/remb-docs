@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:22.395Z"
 content_hash: "a2e27497e77c088417b3d57f382abed2e7ae9313ca6037b968f6e31b4134821d"
 menu_path: ["Build an app with SolidStart and Bun"]
 section_path: []
-nav_prev: {"path": "../sentry/index.md", "title": "Add Sentry to a Bun app"}
-nav_next: {"path": "../ssr-react/index.md", "title": "Server-side render (SSR) a React component"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/sentry/index.md", "title": "Add Sentry to a Bun app"}
+nav_next: {"path": "bun/docs/guides/ecosystem/ssr-react/index.md", "title": "Server-side render (SSR) a React component"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../ssr-react/index.md", "title": "Server-side render (SSR) a
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Initialize a SolidStart app with `create-solid`. You can specify the `--solidstart` flag to create a SolidStart project, and `--ts` for TypeScript support. When prompted for a template, select `basic` for a minimal starter app.
 
@@ -108,10 +108,10 @@ Add Sentry to a Bun app
 
 Previous
 
-](/docs/guides/ecosystem/sentry)[
+](../sentry/index.md)[
 
 Server-side render (SSR) a React component
 
 Next
 
-](/docs/guides/ecosystem/ssr-react)
+](../ssr-react/index.md)

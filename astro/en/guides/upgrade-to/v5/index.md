@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:42:11.082Z"
 content_hash: "20bbbcb57bf32ccec4c1ea3b377b898eb839b5b7473dfd588a340ddda149cea4"
 menu_path: ["Upgrade to Astro v5"]
 section_path: []
-nav_prev: {"path": "../v6/index.md", "title": "Upgrade to Astro v6"}
-nav_next: {"path": "../v4/index.md", "title": "Upgrade to Astro v4"}
+nav_prev: {"path": "astro/en/guides/upgrade-to/v6/index.md", "title": "Upgrade to Astro v6"}
+nav_next: {"path": "astro/en/guides/upgrade-to/v4/index.md", "title": "Upgrade to Astro v4"}
 ---
 
 # Upgrade to Astro v5
 
 This guide will help you migrate from Astro v4 to Astro v5.
 
-Need to upgrade an older project to v4 first? See our [older migration guide](/en/guides/upgrade-to/v4/).
+Need to upgrade an older project to v4 first? See our [older migration guide](../v4/index.md).
 
 Need to see the v4 docs? Visit this [older version of the docs site (unmaintained v4.16 snapshot)](https://v4.docs.astro.build/).
 
@@ -35,7 +35,7 @@ Update your project’s version of Astro to the latest version using your packag
 # Upgrade Astro and official integrations togethernpx @astrojs/upgrade
 ```
 
-You can also [upgrade your Astro integrations manually](/en/guides/integrations/#manual-upgrading) if needed, and you may also need to upgrade other dependencies in your project.
+You can also [upgrade your Astro integrations manually](../../integrations/index.md#manual-upgrading) if needed, and you may also need to upgrade other dependencies in your project.
 
 Astro v5.0 includes [potentially breaking changes](#breaking-changes), as well as the removal and deprecation of some features.
 
@@ -77,13 +77,13 @@ Astro v5.0 moves this responsibility to handle and render JSX and MDX to the `@a
 
 If your project includes `.mdx` files, you must upgrade `@astrojs/mdx` to the latest version (v4.0.0) so that your JSX can be handled properly by the integration.
 
-If you are using an MDX server renderer with the experimental [Astro Container API](/en/reference/container-reference/) you must update the import to reflect the new location:
+If you are using an MDX server renderer with the experimental [Astro Container API](../../../reference/container-reference/index.md) you must update the import to reflect the new location:
 
 ```
 import mdxRenderer from "astro/jsx/server.js";import mdxRenderer from "@astrojs/mdx/server.js";
 ```
 
-Learn more about [using MDX in your project](/en/guides/integrations-guide/mdx/).
+Learn more about [using MDX in your project](../../integrations-guide/mdx/index.md).
 
 ## Legacy
 
@@ -95,7 +95,7 @@ The following features are now considered legacy features. They should function 
 
 [Section titled “Legacy: v2.0 Content Collections API”](#legacy-v20-content-collections-api)
 
-In Astro 4.x, content collections were defined, queried, and rendered using [the Content Collections API first introduced in Astro v2.0](https://astro.build/blog/introducing-content-collections/). All collection entries were local files within the reserved `src/content/` folder. Additionally, Astro’s [file name convention to exclude building individual pages](/en/guides/routing/#excluding-pages) was built in to the Content Collections API.
+In Astro 4.x, content collections were defined, queried, and rendered using [the Content Collections API first introduced in Astro v2.0](https://astro.build/blog/introducing-content-collections/). All collection entries were local files within the reserved `src/content/` folder. Additionally, Astro’s [file name convention to exclude building individual pages](../../routing/index.md#excluding-pages) was built in to the Content Collections API.
 
 Astro 5.0 introduces a new version of content collections using the Content Layer API which brings several performance improvements and added capabilities. While old (legacy) and new (Content Layer API) collections can continue exist together in this release, there are potentially breaking changes to existing legacy collections.
 
@@ -111,7 +111,7 @@ If you are unable to convert your collections, then please consult the [legacy c
 
 If you are unable to make any changes to your collections at this time, you can [enable the `legacy.collections` flag](#enabling-the-legacycollections-flag) which will allow you to keep your collections in their current state until the legacy flag is no longer supported.
 
-Learn more about the updated [content collections](/en/guides/content-collections/).
+Learn more about the updated [content collections](../../content-collections/index.md).
 
 ##### Updating existing collections
 
@@ -172,7 +172,7 @@ This backwards compatibility implementation is able to emulate most of the featu
 
 [Implementation PR: Implement legacy collections using glob (#11976)](https://github.com/withastro/astro/pull/11976)
 
-If you are not yet ready to update your existing collections, you can enable the [`legacy.collections`](/en/reference/legacy-flags/) flag and your existing collections will continue to function as before.
+If you are not yet ready to update your existing collections, you can enable the [`legacy.collections`](../../../reference/legacy-flags/index.md) flag and your existing collections will continue to function as before.
 
 ## Deprecated
 
@@ -196,18 +196,18 @@ Astro 5.0 deprecates `Astro.glob()` in favor of using `getCollection()` to query
 
 [Section titled “What should I do?”](#what-should-i-do-3)
 
-Replace all use of `Astro.glob()` with `import.meta.glob()`. Note that `import.meta.glob()` no longer returns a `Promise`, so you may have to update your code accordingly. You should not require any updates to your [glob patterns](/en/guides/imports/#glob-patterns).
+Replace all use of `Astro.glob()` with `import.meta.glob()`. Note that `import.meta.glob()` no longer returns a `Promise`, so you may have to update your code accordingly. You should not require any updates to your [glob patterns](../../imports/index.md#glob-patterns).
 
 ```
 ---const posts = await Astro.glob('./posts/*.md');const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));---
 {posts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
 ```
 
-Where appropriate, consider using [content collections](/en/guides/content-collections/) to organize your content, which has its own newer, more performant querying functions.
+Where appropriate, consider using [content collections](../../content-collections/index.md) to organize your content, which has its own newer, more performant querying functions.
 
 You may also wish to consider using glob packages from NPM, such as [`fast-glob`](https://www.npmjs.com/package/fast-glob).
 
-Learn more about [importing files with `import.meta.glob`](/en/guides/imports/#importmetaglob).
+Learn more about [importing files with `import.meta.glob`](../../imports/index.md#importmetaglob).
 
 ### Deprecated: `functionPerRoute` (Adapter API)
 
@@ -225,7 +225,7 @@ Remove the `functionPerRoute` property from your `adapterFeatures` configuration
 export default function createIntegration() {  return {    name: '@matthewp/my-adapter',    hooks: {      'astro:config:done': ({ setAdapter }) => {        setAdapter({          name: '@matthewp/my-adapter',          serverEntrypoint: '@matthewp/my-adapter/server.js',          adapterFeatures: {              functionPerRoute: true          }        });      },    },  };}
 ```
 
-Learn more about [the Adapter API](/en/reference/adapter-reference/) for building adapter integrations.
+Learn more about [the Adapter API](../../../reference/adapter-reference/index.md) for building adapter integrations.
 
 ### Deprecated: `routes` on `astro:build:done` hook (Integration API)
 
@@ -247,7 +247,7 @@ Remove any instance of `routes` passed to `astro:build:done` and replace it with
 const integration = () => {    let routes    return {        name: 'my-integration',        hooks: {            'astro:routes:resolved': (params) => {                routes = params.routes            },            'astro:build:done': ({                routes                assets            }) => {                for (const route of routes) {                    const distURL = assets.get(route.pattern)                    if (distURL) {                        Object.assign(route, { distURL })                    }                }                console.log(routes)            }        }    }}
 ```
 
-Learn more about [the Integration API `astro:routes:resolved` hook](/en/reference/integrations-reference/#astroroutesresolved) for building integrations.
+Learn more about [the Integration API `astro:routes:resolved` hook](../../../reference/integrations-reference/index.md#astroroutesresolved) for building integrations.
 
 ## Removed
 
@@ -280,7 +280,7 @@ You can continue to use Lit for client components by adding a client-side script
 
 If you’re interested in maintaining a Lit integration yourself, you may wish to use the [last published version of `@astrojs/lit`](https://github.com/withastro/astro/tree/astro%404.13.0/packages/integrations/lit) as a starting point and upgrade the relevant packages.
 
-Learn more about [Astro’s official integrations](/en/guides/integrations/).
+Learn more about [Astro’s official integrations](../../integrations/index.md).
 
 ### Removed: `hybrid` rendering mode
 
@@ -311,7 +311,7 @@ If you were using the `output: 'static'` (default) option, you can continue to u
 
 An adapter is still required to deploy an Astro project with any server-rendered pages, no matter which `output` mode your project uses. Failure to include an adapter will result in a warning in development and an error at build time.
 
-Learn more about [on-demand rendering in Astro](/en/guides/on-demand-rendering/).
+Learn more about [on-demand rendering in Astro](../../on-demand-rendering/index.md).
 
 ### Removed: support for dynamic `prerender` values in routes
 
@@ -364,7 +364,7 @@ export default defineConfig({ image: {   service: squooshImageService() }});
 
 If you are using a strict package manager like `pnpm`, you may need to install the `sharp` package manually to use the Sharp image service, even though it is built into Astro by default.
 
-If your adapter does not support Astro’s built-in Sharp image optimization, you can [configure a no-op image service](/en/guides/images/#configure-no-op-passthrough-service) to allow you to use the `<Image />` and `<Picture />` components.
+If your adapter does not support Astro’s built-in Sharp image optimization, you can [configure a no-op image service](../../images/index.md#configure-no-op-passthrough-service) to allow you to use the `<Image />` and `<Picture />` components.
 
 Alternatively, you may wish to consider [a community-maintained Squoosh image service](https://github.com/Princesseuh/astro-image-service-squoosh) if you are unable to use the Sharp image service.
 
@@ -378,7 +378,7 @@ If your adapter previously precised its compatibility status with Squoosh, you s
 supportedAstroFeatures: {  assets: {    isSquooshCompatible: true  }}
 ```
 
-Read more about [configuring your default image service](/en/guides/images/#default-image-service).
+Read more about [configuring your default image service](../../images/index.md#default-image-service).
 
 ### Removed: some public-facing types
 
@@ -458,7 +458,7 @@ To disable this behavior, you must explicitly set `security.checkOrigin: false`.
 export default defineConfig({  output: "server",  security: {    checkOrigin: false  }})
 ```
 
-Read more about [security configuration options](/en/reference/configuration-reference/#security)
+Read more about [security configuration options](../../../reference/configuration-reference/index.md#security)
 
 ### Route priority order for injected routes and redirects
 
@@ -466,7 +466,7 @@ Read more about [security configuration options](/en/reference/configuration-ref
 
 [Implementation PR: Remove legacy route prioritization (#11798)](https://github.com/withastro/astro/pull/11798)
 
-In Astro v4.x, `experimental.globalRoutePriority` was an optional flag that ensured that injected routes, file-based routes, and redirects were all prioritized using the [route priority order rules for all routes](/en/guides/routing/#route-priority-order). This allowed more control over routing in your project by not automatically prioritizing certain kinds of routes and standardizing the route priority order.
+In Astro v4.x, `experimental.globalRoutePriority` was an optional flag that ensured that injected routes, file-based routes, and redirects were all prioritized using the [route priority order rules for all routes](../../routing/index.md#route-priority-order). This allowed more control over routing in your project by not automatically prioritizing certain kinds of routes and standardizing the route priority order.
 
 Astro v5.0 removes this experimental flag and makes this the new default behavior in Astro: redirects and injected routes are now prioritized equally alongside file-based project routes.
 
@@ -494,7 +494,7 @@ The following URLs will be built (instead of following the route priority order 
 
 In the event of route collisions, where two routes of equal route priority attempt to build the same URL, Astro will log a warning identifying the conflicting routes.
 
-Read more about the [route priority order rules](/en/guides/routing/#route-priority-order).
+Read more about the [route priority order rules](../../routing/index.md#route-priority-order).
 
 ### `<script>` tags are rendered directly as declared
 
@@ -519,7 +519,7 @@ If you previously had conditionally rendered `<script>` tags, you will need to a
 const { showAlert } = Astro.props;---{  showAlert && <script is:inline>alert("Some very important code!!")</script>}
 ```
 
-Read more about [using `script` tags in Astro](/en/guides/client-side-scripts/).
+Read more about [using `script` tags in Astro](../../client-side-scripts/index.md).
 
 ## Breaking Changes
 
@@ -550,7 +550,7 @@ import { ViewTransitions } from 'astro:transitions';import { ClientRouter } from
 <html>  <head>    ...   <ViewTransitions />   <ClientRouter />  </head></html>
 ```
 
-Read more about [view transitions and client-side routing in Astro](/en/guides/view-transitions/).
+Read more about [view transitions and client-side routing in Astro](../../view-transitions/index.md).
 
 ### Changed: TypeScript configuration
 
@@ -576,7 +576,7 @@ To update your project to Astro’s recommended TypeScript settings, add the fol
 
 Note that `src/env.d.ts` is only necessary if you have added custom configurations, or if you’re not using a `tsconfig.json` file.
 
-Read more about [TypeScript configuration in Astro](/en/guides/typescript/#setup).
+Read more about [TypeScript configuration in Astro](../../typescript/index.md#setup).
 
 ### Changed: Actions submitted by HTML forms no longer use cookie redirects
 
@@ -610,9 +610,9 @@ const result = Astro.getActionResult(actions.newsletter);if (!result?.error) {  
 
 [Section titled “(Optional) To remove the confirm dialog on refresh”](#optional-to-remove-the-confirm-dialog-on-refresh)
 
-To address the “confirm form resubmission?” dialog on refresh, or to preserve action results across sessions, you can now [customize action result handling from middleware](/en/guides/actions/#advanced-persist-action-results-with-a-session).
+To address the “confirm form resubmission?” dialog on refresh, or to preserve action results across sessions, you can now [customize action result handling from middleware](../../actions/index.md#advanced-persist-action-results-with-a-session).
 
-We recommend using a session storage provider [as described in our Netlify Blob example](/en/guides/actions/#advanced-persist-action-results-with-a-session). However, if you prefer the cookie forwarding behavior from 4.X and accept the 4 KB size limit, you can implement the pattern as shown in this sample snippet:
+We recommend using a session storage provider [as described in our Netlify Blob example](../../actions/index.md#advanced-persist-action-results-with-a-session). However, if you prefer the cookie forwarding behavior from 4.X and accept the 4 KB size limit, you can implement the pattern as shown in this sample snippet:
 
 ```
 import { defineMiddleware } from 'astro:middleware';import { getActionContext } from 'astro:actions';
@@ -647,7 +647,7 @@ const content = myPost.compiledContent();const content = await myPost.compiledCo
 <Fragment set:html={content} />
 ```
 
-Read more about the [`compiledContent()` function](/en/guides/markdown-content/#importing-markdown) for returning compiled Markdown.
+Read more about the [`compiledContent()` function](../../markdown-content/index.md#importing-markdown) for returning compiled Markdown.
 
 ### Changed: `astro:content` can no longer be used on the client
 
@@ -671,7 +671,7 @@ const posts = await getCollection('blog');const postsData = posts.map(post => po
 <ClientComponent posts={postsData} />
 ```
 
-Read more about [the `astro:content` API](/en/reference/modules/astro-content/).
+Read more about [the `astro:content` API](../../../reference/modules/astro-content/index.md).
 
 ### Renamed: Shiki `css-variables` theme color token names
 
@@ -693,7 +693,7 @@ You can perform a global find and replace in your project to migrate to the new 
 :root {  --astro-code-color-text: #000;  --astro-code-color-background: #fff;  --astro-code-foreground: #000;  --astro-code-background: #fff;}
 ```
 
-Read more about [syntax highlighting in Astro](/en/guides/syntax-highlighting/).
+Read more about [syntax highlighting in Astro](../../syntax-highlighting/index.md).
 
 ### Changed: internal Shiki rehype plugin for highlighting code blocks
 
@@ -713,7 +713,7 @@ If you are using Shiki transformers passed to `markdown.shikiConfig.transformers
 
 Code blocks in `.mdoc` files and Astro’s built-in `<Code />` component do not use the internal Shiki rehype plugin and are unaffected.
 
-Read more about [syntax highlighting in Astro](/en/guides/syntax-highlighting/).
+Read more about [syntax highlighting in Astro](../../syntax-highlighting/index.md).
 
 ### Changed: Automatic `charset=utf-8` behavior for Markdown and MDX pages
 
@@ -733,7 +733,7 @@ If your Markdown or MDX pages use the `layout` frontmatter property, or if the M
 
 If you require `charset=utf-8` to render your page correctly, make sure that your layout components contain the `<meta charset="utf-8">` tag. You may need to add this if you have not already done so.
 
-Read more about [Markdown layouts](/en/basics/layouts/#markdown-layouts).
+Read more about [Markdown layouts](../../../basics/layouts/index.md#markdown-layouts).
 
 ### Changed: Astro-specific metadata attached in remark and rehype plugins
 
@@ -756,7 +756,7 @@ The types of `imagePaths` has also been updated from `Set<string>` to `string[]`
 
 While we don’t consider these APIs public, they can be accessed by remark and rehype plugins that want to re-use Astro’s metadata. If you are using these APIs, make sure to access them in the new locations.
 
-Read more about [using Markdown plugins in Astro](/en/guides/markdown-content/#markdown-plugins).
+Read more about [using Markdown plugins in Astro](../../markdown-content/index.md#markdown-plugins).
 
 ### Changed: image endpoint configuration
 
@@ -779,7 +779,7 @@ import { defineConfig } from "astro/config";
 defineConfig({  image: {    endpoint: './src/image-endpoint.ts',    endpoint: {      route: "/image",      entrypoint: "./src/image_endpoint.ts"    }  },})
 ```
 
-Read more about [setting an endpoint to use for image optimization](/en/reference/configuration-reference/#imageendpoint).
+Read more about [setting an endpoint to use for image optimization](../../../reference/configuration-reference/index.md#imageendpoint).
 
 ### Changed: `build.client` and `build.server` resolve behavior
 
@@ -805,7 +805,7 @@ Previously the values were incorrectly resolved:
 
 If you were relying on the previous build paths, make sure that your project code is updated to the new build paths.
 
-Read more about [`build` configuration options in Astro](/en/reference/configuration-reference/#build-options).
+Read more about [`build` configuration options in Astro](../../../reference/configuration-reference/index.md#build-options).
 
 ### Changed: JS dependencies in config file are no longer processed by Vite
 
@@ -825,7 +825,7 @@ This change was made as the previous behavior caused confusion among integration
 
 Make sure your locally-linked JS dependencies are built before running your Astro project. Then, the config loading should work as before.
 
-Read more about [Vite configuration settings in Astro](/en/reference/configuration-reference/#vite).
+Read more about [Vite configuration settings in Astro](../../../reference/configuration-reference/index.md#vite).
 
 ### Changed: URLs returned by `paginate()`
 
@@ -847,7 +847,7 @@ If you are using the `paginate()` function for these URLs, remove any existing `
 ---export async function getStaticPaths({ paginate }) {  const astronautPages = [{    astronaut: 'Neil Armstrong',  }, {    astronaut: 'Buzz Aldrin',  }, {    astronaut: 'Sally Ride',  }, {    astronaut: 'John Glenn',  }];  return paginate(astronautPages, { pageSize: 1 });}const { page } = Astro.props;// `base: /'docs'` configured in `astro.config.mjs`const prev = "/docs" + page.url.prev;const prev = page.url.prev;---<a id="prev" href={prev}>Back</a>
 ```
 
-Read more about [pagination in Astro](/en/guides/routing/#pagination).
+Read more about [pagination in Astro](../../routing/index.md#pagination).
 
 ### Changed: non-boolean HTML attribute values
 
@@ -884,7 +884,7 @@ el.getAttribute('inherit') === ''el.getAttribute('inherit') === 'false'
 el.hasAttribute('data-light')el.dataset.light === 'true'
 ```
 
-Read more about [using HTML attributes in Astro](/en/reference/astro-syntax/#dynamic-attributes).
+Read more about [using HTML attributes in Astro](../../../reference/astro-syntax/index.md#dynamic-attributes).
 
 ### Changed: adding values to `context.locals`
 
@@ -906,7 +906,7 @@ Where you previously were overwriting the object, you must now instead assign va
 ctx.locals = {Object.assign(ctx.locals, {  one: 1,  two: 2}})
 ```
 
-See more about [storing data in `context.locals`](/en/guides/middleware/#storing-data-in-contextlocals).
+See more about [storing data in `context.locals`](../../middleware/index.md#storing-data-in-contextlocals).
 
 ### Changed: `params` no longer decoded
 
@@ -931,7 +931,7 @@ const { id } = Astro.params;---
 
 Note that the use of [`decodeURIComponent`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) is discouraged for `getStaticPaths` because it decodes more characters than it should, for example `/`, `?`, `#` and more.
 
-Read more about [creating dynamic routes with `params`](/en/guides/routing/#static-ssg-mode).
+Read more about [creating dynamic routes with `params`](../../routing/index.md#static-ssg-mode).
 
 ### Changed: `RouteData` type replaced by `IntegrationsRouteData` (Integrations API)
 
@@ -974,7 +974,7 @@ Update your code to handle `IntegrationRouteData.distURL` as an array.
 if (route.distURL) {  if (route.distURL.endsWith('index.html')) {    // do something  }  for (const url of route.distURL) {    if (url.endsWith('index.html')) {      // do something    }  }}
 ```
 
-See the [API reference for `distURL`](/en/reference/integrations-reference/#routedatadisturl).
+See the [API reference for `distURL`](../../../reference/integrations-reference/index.md#routedatadisturl).
 
 ### Changed: Arguments passed to `app.render()` (Adapter API)
 
@@ -996,7 +996,7 @@ Pass an object as the second argument to `app.render()`, which can include `rout
 const response = await app.render(request, routeData, locals);const response = await app.render(request, {routeData, locals});
 ```
 
-See the [Adapter API reference for `renderOptions`](/en/reference/modules/astro-app/#renderoptions).
+See the [Adapter API reference for `renderOptions`](../../../reference/modules/astro-app/index.md#renderoptions).
 
 ### Changed: Properties on `supportedAstroFeatures` (Adapter API)
 
@@ -1024,7 +1024,7 @@ You may also wish to update your supported features with the new `limited` optio
 supportedAstroFeatures: {  assets: {    supportKind: "stable",    isSharpCompatible: true,    isSquooshCompatible: true,  },  sharpImageService: {    support: "limited",    message: 'This adapter supports the built-in sharp image service, but with some limitations.'  }}
 ```
 
-Read more about [specifying supported Astro features in an adapter](/en/reference/adapter-reference/#astro-features).
+Read more about [specifying supported Astro features in an adapter](../../../reference/adapter-reference/index.md#astro-features).
 
 ### Removed: Deprecated definition shape for dev toolbar apps (Dev Toolbar API)
 
@@ -1051,7 +1051,7 @@ If you were using the deprecated shape, update your dev toolbar app to use the n
 export default {  id: 'my-dev-toolbar-app',  title: 'My Dev Toolbar App',  icon: '🚀',  init() {    // ...  }}
 ```
 
-Read more about [developing a dev toolbar app for Astro using the Dev Toolbar API](/en/reference/dev-toolbar-app-reference/).
+Read more about [developing a dev toolbar app for Astro using the Dev Toolbar API](../../../reference/dev-toolbar-app-reference/index.md).
 
 ### Removed: configuring Typescript during `create-astro`
 
@@ -1091,4 +1091,4 @@ Know a good resource for Astro v5.0? [Edit this page](https://github.com/withast
 
 Please check [Astro’s issues on GitHub](https://github.com/withastro/astro/issues/) for any reported issues, or to file an issue yourself.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

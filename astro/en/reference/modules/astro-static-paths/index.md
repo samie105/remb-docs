@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:47.221Z"
 content_hash: "b370cd307042e457fee414beb945ce2344246be35e0e00f0903de9ec84486409"
 menu_path: ["Static Paths API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-middleware/index.md", "title": "Middleware API Reference"}
-nav_next: {"path": "../astro-transitions/index.md", "title": "View Transitions Router API Reference"}
+nav_prev: {"path": "astro/en/reference/modules/astro-middleware/index.md", "title": "Middleware API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-transitions/index.md", "title": "View Transitions Router API Reference"}
 ---
 
 # Static Paths API Reference
@@ -31,9 +31,9 @@ import {  StaticPaths,} from 'astro:static-paths';
 
 [Section titled “StaticPaths”](#staticpaths)
 
-Allows adapters to collect all paths that need to be prerendered from within their target runtime. This is useful when [implementing a custom prerenderer](/en/reference/adapter-reference/#custom-prerenderer) that runs in a non-Node environment:
+Allows adapters to collect all paths that need to be prerendered from within their target runtime. This is useful when [implementing a custom prerenderer](../../adapter-reference/index.md#custom-prerenderer) that runs in a non-Node environment:
 
-The `StaticPaths` constructor accepts a required [SSR manifest](/en/reference/integrations-reference/#ssrmanifest) and an object describing the route cache and providing a method to access the component used to render the route. The preferred method to initiate a `StaticPaths` instance is to pass it an [app instance](/en/reference/modules/astro-app/#the-app-instance).
+The `StaticPaths` constructor accepts a required [SSR manifest](../../integrations-reference/index.md#ssrmanifest) and an object describing the route cache and providing a method to access the component used to render the route. The preferred method to initiate a `StaticPaths` instance is to pass it an [app instance](../astro-app/index.md#the-app-instance).
 
 The following example initializes a `StaticPaths` instance from an app in an adapter server entrypoint:
 
@@ -47,7 +47,7 @@ export const handler = (event, context) => {  // do something with `staticPaths`
 
 [Section titled “StaticPaths.getAll()”](#staticpathsgetall)
 
-**Type:** `() => Promise<Array<{ pathname: string, route: [RouteData](/en/reference/integrations-reference/#routedata) }>>`
+**Type:** `() => Promise<Array<{ pathname: string, route: [RouteData](../../integrations-reference/index.md#routedata) }>>`
 
 Retrieves all paths that should be prerendered. This returns a promise that resolves to an array of objects describing the route path and its data.
 
@@ -60,4 +60,4 @@ export function createHandler(app) {  return async (request) => {    const { pat
     // ... handle other requests  };}
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

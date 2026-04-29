@@ -10,8 +10,8 @@ content_hash: "e624abcd9f3babfa06138cd4be0e648b07e1c20860a783b66ea8a34d0584f9bd"
 menu_path: ["Network - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../linter/index.md", "title": "Linter - Deno documentation"}
-nav_next: {"path": "../permissions/index.md", "title": "Permissions - Deno documentation"}
+nav_prev: {"path": "deno/api/deno/linter/index.md", "title": "Linter - Deno documentation"}
+nav_next: {"path": "deno/api/deno/permissions/index.md", "title": "Permissions - Deno documentation"}
 ---
 
 c

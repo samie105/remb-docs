@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:22.538Z"
 content_hash: "ae0213f362605a694ed2a543f78865bf9ba28721ed9e77ba51719f0196f9b657"
 menu_path: ["Legacy flags"]
 section_path: []
-nav_prev: {"path": "../experimental-flags/rust-compiler/index.md", "title": "Experimental Rust compiler"}
-nav_next: {"path": "../error-reference/index.md", "title": "Error reference"}
+nav_prev: {"path": "astro/en/reference/experimental-flags/rust-compiler/index.md", "title": "Experimental Rust compiler"}
+nav_next: {"path": "astro/en/reference/error-reference/index.md", "title": "Error reference"}
 ---
 
 # Legacy flags
@@ -42,4 +42,4 @@ This flag preserves some legacy v4 content collections features:
 
 This is a temporary migration helper. Migrate collections to the Content Layer API, then disable this flag.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -11,8 +11,8 @@ menu_path: ["Deploy to Heroku"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../deploy-to-flyio/index.md", "title": "Deploy to Fly.io"}
-nav_next: {"path": "../deploy-to-koyeb/index.md", "title": "Deploy to Koyeb"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio/index.md", "title": "Deploy to Fly.io"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-koyeb/index.md", "title": "Deploy to Koyeb"}
 ---
 
 In this guide, you will set up and deploy a Node.js server that uses Prisma ORM with PostgreSQL to [Heroku](https://www.heroku.com/). The application exposes a REST API and uses Prisma Client to handle fetching, creating, and deleting records from a database.

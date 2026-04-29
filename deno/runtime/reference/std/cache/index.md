@@ -10,8 +10,8 @@ content_hash: "b56ff2e5b12cb250e3ef84af8e8721440a3f46bed1fb31ba6559b360ee2c8109"
 menu_path: ["@std/cache"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../bytes/index.md", "title": "@std/bytes"}
-nav_next: {"path": "../cbor/index.md", "title": "@std/cbor"}
+nav_prev: {"path": "deno/runtime/reference/std/bytes/index.md", "title": "@std/bytes"}
+nav_next: {"path": "deno/runtime/reference/std/cbor/index.md", "title": "@std/cbor"}
 ---
 
 **On this page**

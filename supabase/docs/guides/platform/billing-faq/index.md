@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:10.181Z"
 content_hash: "345a1c9c3464f34eae89ccc7251229b7b690bdb492a3173aaa1f013cbaa14c66"
 menu_path: ["Platform","Platform","Billing","Billing","Billing FAQ","Billing FAQ"]
 section_path: ["Platform","Platform","Billing","Billing","Billing FAQ","Billing FAQ"]
-nav_prev: {"path": "../backups/index.md", "title": "Database Backups"}
-nav_next: {"path": "../billing-on-supabase/index.md", "title": "About billing on Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/backups/index.md", "title": "Database Backups"}
+nav_next: {"path": "supabase/docs/guides/platform/billing-on-supabase/index.md", "title": "About billing on Supabase"}
 ---
 
 # 
@@ -27,9 +27,9 @@ This documentation covers frequently asked questions around subscription plans, 
 
 #### What are organizations and projects?[#](#what-are-organizations-and-projects)
 
-The Supabase Platform has "organizations" and "projects". An organization may contain multiple projects. Each project is a dedicated Supabase instance with all of its sub-services including Storage, Auth, Functions and Realtime. Each organization only has a single subscription with a single plan (Free, Pro, Team or Enterprise). Project add-ons such as [Compute](/docs/guides/platform/compute-add-ons), [IPv4](/docs/guides/platform/ipv4-address), [Log Drains](/docs/guides/platform/log-drains), [Advanced MFA](/docs/guides/auth/auth-mfa/phone), [Custom Domains](/docs/guides/platform/custom-domains) and [PITR](/docs/guides/platform/backups#point-in-time-recovery) are configured per project and are added to your organization subscription.
+The Supabase Platform has "organizations" and "projects". An organization may contain multiple projects. Each project is a dedicated Supabase instance with all of its sub-services including Storage, Auth, Functions and Realtime. Each organization only has a single subscription with a single plan (Free, Pro, Team or Enterprise). Project add-ons such as [Compute](/docs/guides/platform/compute-add-ons), [IPv4](../ipv4-address/index.md), [Log Drains](/docs/guides/platform/log-drains), [Advanced MFA](../../auth/auth-mfa/phone/index.md), [Custom Domains](../custom-domains/index.md) and [PITR](../backups/index.md#point-in-time-recovery) are configured per project and are added to your organization subscription.
 
-Read more on [About billing on Supabase](/docs/guides/platform/billing-on-supabase#organization-based-billing).
+Read more on [About billing on Supabase](../billing-on-supabase/index.md#organization-based-billing).
 
 #### How many free projects can I have?[#](#how-many-free-projects-can-i-have)
 
@@ -37,11 +37,11 @@ You are entitled to two active free projects. Paused projects do not count towar
 
 #### Can I mix free and paid projects in a single organization?[#](#can-i-mix-free-and-paid-projects-in-a-single-organization)
 
-The subscription plan is set on the organization level and it is not possible to mix paid and non-paid projects inside a single organization. However, you can have a paid and a free organization and make use of the [self-serve project transfers](/docs/guides/platform/project-transfer) to organize your projects. All projects in an organization benefit from the subscription plan. If your organization is on the Pro Plan, all projects within the organization benefit from no project pausing, automated backups and so on.
+The subscription plan is set on the organization level and it is not possible to mix paid and non-paid projects inside a single organization. However, you can have a paid and a free organization and make use of the [self-serve project transfers](../project-transfer/index.md) to organize your projects. All projects in an organization benefit from the subscription plan. If your organization is on the Pro Plan, all projects within the organization benefit from no project pausing, automated backups and so on.
 
 #### Can I transfer my projects to another organization?[#](#can-i-transfer-my-projects-to-another-organization)
 
-Yes, you can transfer your projects to another organization. You can find instructions on how to transfer your projects [here](/docs/guides/platform/project-transfer).
+Yes, you can transfer your projects to another organization. You can find instructions on how to transfer your projects [here](../project-transfer/index.md).
 
 #### Can I transfer my credits to another organization?[#](#can-i-transfer-my-credits-to-another-organization)
 
@@ -65,7 +65,7 @@ Running 3 projects in a Pro Plan organization on the default Micro instance:
 *   $30 for 3 projects on the default compute size
 *   $10 Compute credits ⇒ $45 / month
 
-Refer to our [Compute](/docs/guides/platform/manage-your-usage/compute#billing-examples) docs for more examples and insights.
+Refer to our [Compute](../manage-your-usage/compute/index.md#billing-examples) docs for more examples and insights.
 
 #### How does compute billing work?[#](#how-does-compute-billing-work)
 
@@ -77,7 +77,7 @@ If you launch additional instances on your paid plan, we will add the correspond
 
 If you upgrade your project to a larger instance for 10 hours and then downgrade, you’ll only pay for the larger instance for the 10 hours of usage at the end of your billing cycle. You can see your current compute usage on your [organization’s usage page](/dashboard/org/_/usage).
 
-Read more about [Compute usage](/docs/guides/platform/manage-your-usage/compute).
+Read more about [Compute usage](../manage-your-usage/compute/index.md).
 
 #### What is egress and how is it billed?[#](#what-is-egress-and-how-is-it-billed)
 
@@ -85,7 +85,7 @@ Egress refers to the total bandwidth (network traffic) quota available to each o
 
 We differentiate between cached (served via our CDN from cache hits) and uncached egress and give quotas for each type and have varying pricing (cached egress is cheaper). Cached egress only applies to Storage.
 
-Read more about [Egress usage](/docs/guides/platform/manage-your-usage/egress).
+Read more about [Egress usage](../manage-your-usage/egress/index.md).
 
 ## Plans and subscriptions[#](#plans-and-subscriptions)
 
@@ -95,17 +95,17 @@ Change your subscription plan in your [organization's billing settings](/dashboa
 
 #### What happens if I cancel my subscription?[#](#what-happens-if-i-cancel-my-subscription)
 
-The organization is given [credits](/docs/guides/platform/credits) for unused time on the subscription plan. The credits will not expire and can be used again in the future. You may see an additional charge for unbilled excessive usage charges from your previous billing cycle.
+The organization is given [credits](../credits/index.md) for unused time on the subscription plan. The credits will not expire and can be used again in the future. You may see an additional charge for unbilled excessive usage charges from your previous billing cycle.
 
-Read more about [downgrades](/docs/guides/platform/manage-your-subscription#downgrade).
+Read more about [downgrades](../manage-your-subscription/index.md#downgrade).
 
 #### I mistakenly upgraded the wrong organization and then downgraded it. Could you issue a refund?[#](#i-mistakenly-upgraded-the-wrong-organization-and-then-downgraded-it-could-you-issue-a-refund)
 
-We can transfer the amount as [credits](/docs/guides/platform/credits) to another organization of your choice. You can use these credits to upgrade the organization, or if you have already upgraded, the credits will be used to pay the next month's invoice. Please create a [support ticket](https://supabase.help) for this case.
+We can transfer the amount as [credits](../credits/index.md) to another organization of your choice. You can use these credits to upgrade the organization, or if you have already upgraded, the credits will be used to pay the next month's invoice. Please create a [support ticket](https://supabase.help) for this case.
 
 #### How do I get an annual subscription?[#](#how-do-i-get-an-annual-subscription)
 
-We currently do not support annual plans officially. However, you can do a [credit top-up](/docs/guides/platform/credits#credit-top-ups) to avoid monthly payments.
+We currently do not support annual plans officially. However, you can do a [credit top-up](../credits/index.md#credit-top-ups) to avoid monthly payments.
 
 ## Quotas and spend caps[#](#quotas-and-spend-caps)
 
@@ -119,7 +119,7 @@ You will be notified when you exceed your Pro Plan quota. To unblock yourself, y
 
 #### How do I scale beyond the limits of my Pro Plan?[#](#how-do-i-scale-beyond-the-limits-of-my-pro-plan)
 
-The Pro Plan has a Spend Cap enabled by default to keep costs under control. If you want to scale beyond the plan's included quota, switch off the Spend Cap to pay for additional usage beyond the plans included limits. You can toggle the Spend Cap in the [organization's billing settings](/dashboard/org/_/billing). Read more about the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+The Pro Plan has a Spend Cap enabled by default to keep costs under control. If you want to scale beyond the plan's included quota, switch off the Spend Cap to pay for additional usage beyond the plans included limits. You can toggle the Spend Cap in the [organization's billing settings](/dashboard/org/_/billing). Read more about the [Spend Cap](../cost-control/index.md#spend-cap).
 
 ## Fair Use Policy[#](#fair-use-policy)
 
@@ -195,19 +195,19 @@ All our invoices are issued in USD, but you can pay in any currency so long as t
 
 Yes, you will have to add the new payment method before being allowed to remove the old one. This can be done from your dashboard on the [organization’s billing page](/dashboard/org/_/billing).
 
-Read more on [Manage your payment methods](/docs/guides/platform/manage-your-subscription#manage-your-payment-methods).
+Read more on [Manage your payment methods](../manage-your-subscription/index.md#manage-your-payment-methods).
 
 #### Can I pay upfront for multiple months?[#](#can-i-pay-upfront-for-multiple-months)
 
 You can top up your credit balance to cover multiple months through your [organization’s billing page](/dashboard/org/_/billing).
 
-Read more on [Credit top-ups](/docs/guides/platform/credits#credit-top-ups).
+Read more on [Credit top-ups](../credits/index.md#credit-top-ups).
 
 #### When are payments taken?[#](#when-are-payments-taken)
 
 Payments are taken at the beginning of each billing cycle. You will be charged once a month. You can see the current billing cycle and upcoming invoice in your [organization's billing settings](/dashboard/org/_/billing). The subscription plan fee is charged upfront, whereas usage-charges, including compute, are charged in arrears based on your usage.
 
-Read more on [Your monthly invoice](/docs/guides/platform/your-monthly-invoice).
+Read more on [Your monthly invoice](../your-monthly-invoice/index.md).
 
 #### Where can I change my billing details?[#](#where-can-i-change-my-billing-details)
 
@@ -240,7 +240,7 @@ No, we do not provide refunds. Please refer to our [Terms of Service](/terms#1-f
 
 #### What do I do if my bill looks wrong?[#](#what-do-i-do-if-my-bill-looks-wrong)
 
-Take a moment to review our [Your monthly invoice](/docs/guides/platform/your-monthly-invoice) page, which may help clarify any questions about your invoice. If it still looks wrong, submit a [support ticket](https://supabase.help) through the dashboard. Select the affected organization and provide the invoice number for us to look at your case.
+Take a moment to review our [Your monthly invoice](../your-monthly-invoice/index.md) page, which may help clarify any questions about your invoice. If it still looks wrong, submit a [support ticket](https://supabase.help) through the dashboard. Select the affected organization and provide the invoice number for us to look at your case.
 
 ## Taxes[#](#taxes)
 

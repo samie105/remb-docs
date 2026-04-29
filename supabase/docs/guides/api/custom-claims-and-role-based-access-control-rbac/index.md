@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:19.914Z"
 content_hash: "f4d36fdded4219d85c2a40f6ed2cf6cf5d66ff23aa65bc4f630694dbe605119c"
 menu_path: ["Data REST API","Data REST API","Security","Security","Custom Claims & RBAC","Custom Claims & RBAC"]
 section_path: ["Data REST API","Data REST API","Security","Security","Custom Claims & RBAC","Custom Claims & RBAC"]
-nav_prev: {"path": "../creating-routes/index.md", "title": "Creating API Routes"}
-nav_next: {"path": "../hardening-data-api/index.md", "title": "Hardening the Data API"}
+nav_prev: {"path": "supabase/docs/guides/api/creating-routes/index.md", "title": "Creating API Routes"}
+nav_next: {"path": "supabase/docs/guides/api/hardening-data-api/index.md", "title": "Hardening the Data API"}
 ---
 
 # 
@@ -25,9 +25,9 @@ Custom Claims are special attributes attached to a user that you can use to cont
 1{2  "user_role": "admin",3  "plan": "TRIAL",4  "user_level": 100,5  "group_name": "Super Guild!",6  "joined_on": "2022-05-20T14:28:18.217Z",7  "group_manager": false,8  "items": ["toothpick", "string", "ring"]9}
 ```
 
-To implement Role-Based Access Control (RBAC) with `custom claims`, use a [Custom Access Token Auth Hook](/docs/guides/auth/auth-hooks#hook-custom-access-token). This hook runs before a token is issued. You can use it to add additional claims to the user's JWT.
+To implement Role-Based Access Control (RBAC) with `custom claims`, use a [Custom Access Token Auth Hook](../../auth/auth-hooks/index.md#hook-custom-access-token). This hook runs before a token is issued. You can use it to add additional claims to the user's JWT.
 
-This guide uses the [Slack Clone example](https://github.com/supabase/supabase/tree/master/examples/slack-clone/nextjs-slack-clone) to demonstrate how to add a `user_role` claim and use it in your [Row Level Security (RLS) policies](/docs/guides/database/postgres/row-level-security).
+This guide uses the [Slack Clone example](https://github.com/supabase/supabase/tree/master/examples/slack-clone/nextjs-slack-clone) to demonstrate how to add a `user_role` claim and use it in your [Row Level Security (RLS) policies](../../database/postgres/row-level-security/index.md).
 
 ## Create a table to track user roles and permissions[#](#create-a-table-to-track-user-roles-and-permissions)
 
@@ -50,7 +50,7 @@ You can now manage your roles and permissions in SQL. For example, to add the me
 
 ## Create Auth Hook to apply user role[#](#create-auth-hook-to-apply-user-role)
 
-The [Custom Access Token Auth Hook](/docs/guides/auth/auth-hooks#hook-custom-access-token) runs before a token is issued. You can use it to edit the JWT.
+The [Custom Access Token Auth Hook](../../auth/auth-hooks/index.md#hook-custom-access-token) runs before a token is issued. You can use it to edit the JWT.
 
 ```
 1-- Create the auth hook function2create or replace function public.custom_access_token_hook(event jsonb)3returns jsonb4language plpgsql5stable6as $$7  declare8    claims jsonb;9    user_role public.app_role;10  begin11    -- Fetch the user role in the user_roles table12    select role into user_role from public.user_roles where user_id = (event->>'user_id')::uuid;1314    claims := event->'claims';1516    if user_role is not null then17      -- Set the claim18      claims := jsonb_set(claims, '{user_role}', to_jsonb(user_role));19    else20      claims := jsonb_set(claims, '{user_role}', 'null');21    end if;2223    -- Update the 'claims' object in the original event24    event := jsonb_set(event, '{claims}', claims);2526    -- Return the modified or original event27    return event;28  end;29$$;3031grant usage on schema public to supabase_auth_admin;3233grant execute34  on function public.custom_access_token_hook35  to supabase_auth_admin;3637revoke execute38  on function public.custom_access_token_hook39  from authenticated, anon, public;4041grant all42  on table public.user_roles43to supabase_auth_admin;4445revoke all46  on table public.user_roles47  from authenticated, anon, public;4849create policy "Allow auth admin to read user roles" ON public.user_roles50as permissive for select51to supabase_auth_admin52using (true);
@@ -60,9 +60,9 @@ The [Custom Access Token Auth Hook](/docs/guides/auth/auth-hooks#hook-custom-acc
 
 In the dashboard, navigate to [`Authentication > Hooks (Beta)`](/dashboard/project/_/auth/hooks) and select the appropriate Postgres function from the dropdown menu.
 
-When developing locally, follow the [local development](/docs/guides/auth/auth-hooks#local-development) instructions.
+When developing locally, follow the [local development](../../auth/auth-hooks/index.md#local-development) instructions.
 
-To learn more about Auth Hooks, see the [Auth Hooks docs](/docs/guides/auth/auth-hooks).
+To learn more about Auth Hooks, see the [Auth Hooks docs](../../auth/auth-hooks/index.md).
 
 ## Accessing custom claims in RLS policies[#](#accessing-custom-claims-in-rls-policies)
 
@@ -72,7 +72,7 @@ To utilize Role-Based Access Control (RBAC) in Row Level Security (RLS) policies
 1create or replace function public.authorize(2  requested_permission app_permission3)4returns boolean as $$5declare6  bind_permissions int;7  user_role public.app_role;8begin9  -- Fetch user role once and store it to reduce number of calls10  select (auth.jwt() ->> 'user_role')::public.app_role into user_role;1112  select count(*)13  into bind_permissions14  from public.role_permissions15  where role_permissions.permission = requested_permission16    and role_permissions.role = user_role;1718  return bind_permissions > 0;19end;20$$ language plpgsql stable security definer set search_path = '';
 ```
 
-You can read more about using functions in RLS policies in the [RLS guide](/docs/guides/database/postgres/row-level-security#using-functions).
+You can read more about using functions in RLS policies in the [RLS guide](../../database/postgres/row-level-security/index.md#using-functions).
 
 You can then use the `authorize` method within your RLS policies. For example, to enable the desired delete access, you would add the following policies:
 
@@ -98,7 +98,7 @@ You now have a robust system in place to manage user roles and permissions withi
 
 ## More resources[#](#more-resources)
 
-*   [Auth Hooks](/docs/guides/auth/auth-hooks)
-*   [Row Level Security](/docs/guides/database/postgres/row-level-security)
-*   [RLS Functions](/docs/guides/database/postgres/row-level-security#using-functions)
+*   [Auth Hooks](../../auth/auth-hooks/index.md)
+*   [Row Level Security](../../database/postgres/row-level-security/index.md)
+*   [RLS Functions](../../database/postgres/row-level-security/index.md#using-functions)
 *   [Next.js Slack Clone Example](https://github.com/supabase/supabase/tree/master/examples/slack-clone/nextjs-slack-clone)

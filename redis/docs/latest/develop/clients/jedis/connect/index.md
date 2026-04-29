@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:41.834Z"
 content_hash: "d7de8775a50dd204a7375d60d505ecb0419aef9901701fe53643e861054b0418"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
-nav_prev: {"path": "../amr/index.md", "title": "Connect to Azure Managed Redis"}
-nav_next: {"path": "../prob/index.md", "title": "Probabilistic data types"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/prob/index.md", "title": "Probabilistic data types"}
 ---
 
 # Connect to the server
@@ -98,7 +98,7 @@ RedisClusterClient jedis = RedisClusterClient.create(jedisClusterNodes);
 
 ### Connect to your production Redis with TLS
 
-When you deploy your application, use TLS and follow the [Redis security](/docs/latest/operate/oss_and_stack/management/security/) guidelines.
+When you deploy your application, use TLS and follow the [Redis security](../../../../operate/oss_and_stack/management/security/index.md) guidelines.
 
 Before connecting your application to the TLS-enabled Redis server, ensure that your certificates and private keys are in the correct format.
 
@@ -185,7 +185,7 @@ public class Main {
 
 Client-side caching is a technique to reduce network traffic between the client and server, resulting in better performance. See [Client-side caching introduction](/docs/latest/develop/clients/client-side-caching/) for more information about how client-side caching works and how to use it effectively.
 
-To enable client-side caching, specify the [RESP3](/docs/latest/develop/reference/protocol-spec/#resp-versions) protocol and pass a cache configuration object during the connection.
+To enable client-side caching, specify the [RESP3](../../../reference/protocol-spec/index.md#resp-versions) protocol and pass a cache configuration object during the connection.
 
 The example below shows the simplest client-side caching connection to the default host and port, `localhost:6379`. All of the connection variants described above accept these parameters, so you can use client-side caching with a connection pool or a cluster connection in exactly the same way.
 
@@ -193,7 +193,7 @@ Note:
 
 Client-side caching requires Jedis v5.2.0 or later. To maximize compatibility with all Redis products, client-side caching is supported by Redis v7.4 or later.
 
-The [Redis server products](/docs/latest/operate/) support [opt-in/opt-out](/docs/latest/develop/reference/client-side-caching/#opt-in-and-opt-out-caching) mode and [broadcasting mode](/docs/latest/develop/reference/client-side-caching/#broadcasting-mode) for CSC, but these modes are not currently implemented by Jedis.
+The [Redis server products](/docs/latest/operate/) support [opt-in/opt-out](../../../reference/client-side-caching/index.md#opt-in-and-opt-out-caching) mode and [broadcasting mode](../../../reference/client-side-caching/index.md#broadcasting-mode) for CSC, but these modes are not currently implemented by Jedis.
 
 ```java
 HostAndPort endpoint = new HostAndPort("localhost", 6379);
@@ -221,7 +221,7 @@ client.get("city");     // Retrieved from Redis server and cached
 client.get("city");     // Retrieved from cache
 ```
 
-You can see the cache working if you connect to the same Redis database with [`redis-cli`](/docs/latest/develop/tools/cli/) and run the [`MONITOR`](/docs/latest/commands/monitor/) command. If you run the code above but without passing `cacheConfig` during the connection, you should see the following in the CLI among the output from `MONITOR`:
+You can see the cache working if you connect to the same Redis database with [`redis-cli`](../../../tools/cli/index.md) and run the [`MONITOR`](/docs/latest/commands/monitor/) command. If you run the code above but without passing `cacheConfig` during the connection, you should see the following in the CLI among the output from `MONITOR`:
 
 ```
 1723109720.268903 [...] "SET" "city" "New York"

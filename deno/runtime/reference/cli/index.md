@@ -10,8 +10,8 @@ content_hash: "5862e25c07cab47ee00488464b3e76f73d8609e8f036b6c957376568c814b221"
 menu_path: ["Deno CLI Subcommands"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../../api/web/workers/index.md", "title": "Workers - Web documentation"}
-nav_next: {"path": "env_variables/index.md", "title": "Environment variables"}
+nav_prev: {"path": "deno/api/web/workers/index.md", "title": "Workers - Web documentation"}
+nav_next: {"path": "deno/runtime/reference/cli/env_variables/index.md", "title": "Environment variables"}
 ---
 
 **On this page**
@@ -25,46 +25,46 @@ The Deno CLI (Command Line Interface) allows you to interact with the Deno runti
 
 ## Execution
 
--   [deno run](/runtime/reference/cli/run/) - run a script
--   [deno serve](/runtime/reference/cli/serve/) - run a web server
--   [deno task](/runtime/reference/cli/task/) - run a task
--   [deno repl](/runtime/reference/cli/repl/) - starts a read-eval-print-loop
--   [deno eval](/runtime/reference/cli/eval/) - evaluate provided script
+-   [deno run](run/index.md) - run a script
+-   [deno serve](serve/index.md) - run a web server
+-   [deno task](task/index.md) - run a task
+-   [deno repl](repl/index.md) - starts a read-eval-print-loop
+-   [deno eval](eval/index.md) - evaluate provided script
 
 ## Dependency management
 
--   [deno add](/runtime/reference/cli/add) - add dependencies
--   [deno approve-scripts](/runtime/reference/cli/approve_scripts) - manage lifecycle scripts of npm packages
--   [deno audit](/runtime/reference/cli/audit) - audit dependencies
--   deno cache - _(Deprecated. Please use [deno install](/runtime/reference/cli/install/))_
--   [deno install](/runtime/reference/cli/install/) - install a dependency or a script
--   [deno uninstall](/runtime/reference/cli/uninstall/) - uninstall a dependency or a script
--   [deno remove](/runtime/reference/cli/remove) - Remove dependencies
--   [deno outdated](/runtime/reference/cli/outdated) - view or update outdated dependencies
+-   [deno add](add/index.md) - add dependencies
+-   [deno approve-scripts](approve_scripts/index.md) - manage lifecycle scripts of npm packages
+-   [deno audit](audit/index.md) - audit dependencies
+-   deno cache - _(Deprecated. Please use [deno install](install/index.md))_
+-   [deno install](install/index.md) - install a dependency or a script
+-   [deno uninstall](uninstall/index.md) - uninstall a dependency or a script
+-   [deno remove](remove/index.md) - Remove dependencies
+-   [deno outdated](outdated/index.md) - view or update outdated dependencies
 
 ## Tooling
 
--   [deno bench](/runtime/reference/cli/bench/) - benchmarking tool
--   [deno check](/runtime/reference/cli/check/) - type check your program without running it
--   [deno compile](/runtime/reference/cli/compile/) - compile a program into a standalone executable
--   [deno completions](/runtime/reference/cli/completions/) - generate shell completions
--   [deno coverage](/runtime/reference/cli/coverage/) - generate test coverage reports
--   [deno create](/runtime/reference/cli/create/) - scaffold a new project from a template
--   [deno doc](/runtime/reference/cli/doc/) - generate documentation for a module
--   [deno deploy](/runtime/reference/cli/deploy) - Manage and publish your projects on the web
--   [deno fmt](/runtime/reference/cli/fmt/) - format your code
--   [deno info](/runtime/reference/cli/info/) - inspect an ES module and all of its dependencies
--   [deno init](/runtime/reference/cli/init/) - create a new project
--   [deno jupyter](/runtime/reference/cli/jupyter/) - run a Jupyter notebook
--   [deno lint](/runtime/reference/cli/lint/) - lint your code
--   [deno lsp](/runtime/reference/cli/lsp/) - language server protocol integration
--   [deno publish](/runtime/reference/cli/publish/) - publish a module to JSR
--   [deno test](/runtime/reference/cli/test/) - run your tests
--   [deno types](/runtime/reference/cli/types/) - print runtime types
--   [deno upgrade](/runtime/reference/cli/upgrade/) - upgrade Deno to the latest version
--   [deno x](/runtime/reference/cli/x/) - run an npm or JSR package
+-   [deno bench](bench/index.md) - benchmarking tool
+-   [deno check](check/index.md) - type check your program without running it
+-   [deno compile](compile/index.md) - compile a program into a standalone executable
+-   [deno completions](completions/index.md) - generate shell completions
+-   [deno coverage](coverage/index.md) - generate test coverage reports
+-   [deno create](create/index.md) - scaffold a new project from a template
+-   [deno doc](doc/index.md) - generate documentation for a module
+-   [deno deploy](deploy/index.md) - Manage and publish your projects on the web
+-   [deno fmt](fmt/index.md) - format your code
+-   [deno info](info/index.md) - inspect an ES module and all of its dependencies
+-   [deno init](init/index.md) - create a new project
+-   [deno jupyter](jupyter/index.md) - run a Jupyter notebook
+-   [deno lint](lint/index.md) - lint your code
+-   [deno lsp](lsp/index.md) - language server protocol integration
+-   [deno publish](publish/index.md) - publish a module to JSR
+-   [deno test](test/index.md) - run your tests
+-   [deno types](types/index.md) - print runtime types
+-   [deno upgrade](upgrade/index.md) - upgrade Deno to the latest version
+-   [deno x](x/index.md) - run an npm or JSR package
 
 ## Other
 
--   [Unstable feature flags](/runtime/reference/cli/unstable_flags/)
--   [Integrating the Deno LSP](/runtime/reference/lsp_integration/)
+-   [Unstable feature flags](unstable_flags/index.md)
+-   [Integrating the Deno LSP](../lsp_integration/index.md)

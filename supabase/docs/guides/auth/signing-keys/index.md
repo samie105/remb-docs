@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:21.812Z"
 content_hash: "72e9dfb553997f04c219f41c14958b4d8923088a241fbad331729539533dcaad"
 menu_path: ["Auth","Auth","Security","Security","JWT Signing Keys","JWT Signing Keys"]
 section_path: ["Auth","Auth","Security","Security","JWT Signing Keys","JWT Signing Keys"]
-nav_prev: {"path": "../sessions/pkce-flow/index.md", "title": "PKCE flow"}
-nav_next: {"path": "../signout/index.md", "title": "Signing out"}
+nav_prev: {"path": "supabase/docs/guides/auth/sessions/pkce-flow/index.md", "title": "PKCE flow"}
+nav_next: {"path": "supabase/docs/guides/auth/signout/index.md", "title": "Signing out"}
 ---
 
 # 
@@ -25,7 +25,7 @@ Best practices on managing keys used by Supabase Auth to create and verify JSON 
 
 Supabase Auth continuously issues a new JWT for each user session, for as long as the user remains signed in. JWT signing keys provide fine grained control over this important process for the security of your application.
 
-Before continuing check the comprehensive guide on [Sessions](/docs/guides/auth/sessions) for all the details about how Auth creates tokens for a user's session. Read up on [JWTs](/docs/guides/auth/jwts) if you are not familiar with the basics.
+Before continuing check the comprehensive guide on [Sessions](../sessions/index.md) for all the details about how Auth creates tokens for a user's session. Read up on [JWTs](../jwts/index.md) if you are not familiar with the basics.
 
 ## Overview[#](#overview)
 
@@ -57,7 +57,7 @@ A JWT signing key based on a [shared secret](https://en.wikipedia.org/wiki/HMAC)
 
 ### Benefits of the signing keys system[#](#benefits-of-the-signing-keys-system)
 
-We've designed the Signing keys system to address many problems the legacy system had. It goes hand-in-hand with the [publishable and secret API keys](/docs/guides/api/api-keys).
+We've designed the Signing keys system to address many problems the legacy system had. It goes hand-in-hand with the [publishable and secret API keys](../../api/api-keys/index.md).
 
 Benefit
 
@@ -85,7 +85,7 @@ If using asymmetric signing key, revocation is automatic via the key discovery e
 
 Zero-downtime rotation
 
-Downtime, sometimes being significant. Requires careful coordination with [API keys](/docs/guides/api/api-keys).
+Downtime, sometimes being significant. Requires careful coordination with [API keys](../../api/api-keys/index.md).
 
 No downtime, as each rotation step is independent and reversible.
 
@@ -99,13 +99,13 @@ Independence from API keys
 
 `anon` and `service_role` must be rotated simultaneously.
 
-[Publishable and secret API keys](/docs/guides/api/api-keys) no longer are based on the JWT signing key and can be independently managed.
+[Publishable and secret API keys](../../api/api-keys/index.md) no longer are based on the JWT signing key and can be independently managed.
 
 Security compliance frameworks (SOC2, etc.)
 
 Difficult to remain aligned as the secret can be extracted from Supabase.
 
-Easier alignment as the private key or shared secret can't be extracted. [Row Level Security](/docs/guides/database/postgres/row-level-security) has strong key revocation guarantees.
+Easier alignment as the private key or shared secret can't be extracted. [Row Level Security](../../database/postgres/row-level-security/index.md) has strong key revocation guarantees.
 
 ## Getting started[#](#getting-started)
 
@@ -116,8 +116,8 @@ You can start migrating away from the legacy JWT secret through the Supabase das
 3.  If you're not ready to switch away from the legacy JWT secret right now, you can stop here without any issue. If you wish to use a different signing key -- either to use a different signing algorithm (RSA, Elliptic Curve or shared secret) or to import a private key or shared secret you already have -- feel free to move the standby key to _Previously used_ before finally moving it to _Revoked._
 4.  If you do wish to start using the standby key for all new JWT use the _Rotate keys_ button. A few important notes:
     *   Make sure your app does not directly rely on the legacy JWT secret. If it's verifying every JWT against the legacy JWT secret (using a library like `jose`, `jsonwebtoken` or similar), continuing with the rotation might break those components.
-    *   If you're using [Edge Functions](/docs/guides/functions) that have the Verify JWT setting, continuing with the rotation might break your app. You will need to turn off this setting.
-    *   In both cases, change or add code to your app or Edge Function that verifies the JWT. Use the `supabase.auth.getClaims()` function or read more about [Verifying a JWT from Supabase](/docs/guides/auth/jwts#verifying-a-jwt-from-supabase) on the best way to do this.
+    *   If you're using [Edge Functions](../../functions/index.md) that have the Verify JWT setting, continuing with the rotation might break your app. You will need to turn off this setting.
+    *   In both cases, change or add code to your app or Edge Function that verifies the JWT. Use the `supabase.auth.getClaims()` function or read more about [Verifying a JWT from Supabase](../jwts/index.md#verifying-a-jwt-from-supabase) on the best way to do this.
 5.  Rotating the keys immediately causes the Auth server to issue new JWT access tokens for signed in users signed with the new key. Non-expired access tokens will remain to be accepted, so no users will be forcefully signed out.
 6.  Plan for revocation of the legacy JWT secret.
     *   If your access token expiry time is configured to be 1 hour, wait at least 1 hour and 15 minutes before revoking the legacy JWT secret -- now under the _Previously used_ section.
@@ -131,9 +131,9 @@ Key rotation and revocation are one of the most important processes for maintain
 **Malicious actors abusing the legacy JWT secret, or imported private key**
 
 *   The legacy JWT secret has been leaked in logs, committed to source control, or accidentally exposed in the frontend build of your application, a library, desktop or mobile app package, etc.
-*   You suspect that a [member of your organization](/docs/guides/platform/access-control) has lost control of their devices, and a malicious actor may have accessed the JWT secret via the Supabase dashboard or by accessing your application's backend configuration.
+*   You suspect that a [member of your organization](../../platform/access-control/index.md) has lost control of their devices, and a malicious actor may have accessed the JWT secret via the Supabase dashboard or by accessing your application's backend configuration.
 *   You suspect that an ex-team-member of your organization may be a malicious actor, by abusing the power the legacy JWT secret provides.
-*   Make sure you also switch to [publishable and secret API keys](/docs/guides/api/api-keys) and disable the `anon` and `service_role` keys.
+*   Make sure you also switch to [publishable and secret API keys](../../api/api-keys/index.md) and disable the `anon` and `service_role` keys.
 *   If you've imported a private key, and you're suspecting that this private key has been compromised on your end similarly.
 
 **Closer alignment to security best practices and compliance frameworks (SOC2, PCI-DSS, ISO27000, HIPAA, ...)**
@@ -215,7 +215,7 @@ This discovery endpoint is cached by Supabase's edge servers for 10 minutes. Fur
 
 This multi-level cache is a trade-off allowing fast JWT verification without placing the Auth server in the hot path of your application, increasing its reliability and performance.
 
-Importantly Supabase products **do not rely on this cache**, so stronger security guarantees are provided especially when keys are revoked. If your application only uses [Row Level Security](/docs/guides/database/postgres/row-level-security) policies and does not have any other backend components (such as APIs, Edge Functions, servers, etc.) key rotation and revocation are instantaneous.
+Importantly Supabase products **do not rely on this cache**, so stronger security guarantees are provided especially when keys are revoked. If your application only uses [Row Level Security](../../database/postgres/row-level-security/index.md) policies and does not have any other backend components (such as APIs, Edge Functions, servers, etc.) key rotation and revocation are instantaneous.
 
 Finally this multi-level cache is cleared every 20 minutes, or longer if you have a custom setup. Consider the following problems that may arise due to it:
 
@@ -300,7 +300,7 @@ To import the generated private key to your project, create a [new standby key](
 
 Once imported, click **Rotate key** to activate your new signing key. Any JWT signed by your old key will continue to be usable until your old signing key is manually revoked.
 
-To mint a new JWT using the asymmetric signing key, you need to set the following [JWT headers](/docs/guides/auth/jwts#introduction) to match your generated private key.
+To mint a new JWT using the asymmetric signing key, you need to set the following [JWT headers](../jwts/index.md#introduction) to match your generated private key.
 
 ```
 1{2  "alg": "ES256",3  "kid": "3a18cfe2-7226-43b0-bbb4-7c5242f2406e",4  "typ": "JWT"5}
@@ -324,9 +324,9 @@ For simplicity, use the following CLI command to generate tokens with the desire
 1supabase gen bearer-jwt --role authenticated --sub ef0493c9-3582-425f-a362-aef909588df7
 ```
 
-Finally, you can use your newly minted JWT by setting the `Authorization: Bearer <JWT>` header to all [Data API requests](/docs/guides/auth/jwts#using-custom-or-third-party-jwts).
+Finally, you can use your newly minted JWT by setting the `Authorization: Bearer <JWT>` header to all [Data API requests](../jwts/index.md#using-custom-or-third-party-jwts).
 
-A separate `apikey` header is required to access your project's APIs. This can be a [publishable, secret or the legacy `anon` or `service_role` keys](/docs/guides/api/api-keys). Using your minted JWT is not possible in this header.
+A separate `apikey` header is required to access your project's APIs. This can be a [publishable, secret or the legacy `anon` or `service_role` keys](../../api/api-keys/index.md). Using your minted JWT is not possible in this header.
 
 ### Why is a 5 minute wait imposed when changing signing key states?[#](#why-is-a-5-minute-wait-imposed-when-changing-signing-key-states)
 

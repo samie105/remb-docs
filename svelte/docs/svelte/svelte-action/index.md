@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:20.855Z"
 content_hash: "7594c45a6a5387f13738f55c6acb5b68a42a13b59b11a28baf3ad2e10583601b"
 menu_path: ["svelte/action"]
 section_path: []
-nav_prev: {"path": "../svelte/index.md", "title": "svelte"}
-nav_next: {"path": "../svelte-animate/index.md", "title": "svelte/animate"}
+nav_prev: {"path": "svelte/docs/svelte/svelte/index.md", "title": "svelte"}
+nav_next: {"path": "svelte/docs/svelte/svelte-animate/index.md", "title": "svelte/animate"}
 ---
 
 This module provides types for [actions](use), which have been superseded by [attachments](@attach).
@@ -102,4 +102,4 @@ destroy?: () => void;
 
 previous next
 
-[svelte](/docs/svelte/svelte) [svelte/animate](/docs/svelte/svelte-animate)
+[svelte](../svelte/index.md) [svelte/animate](../svelte-animate/index.md)

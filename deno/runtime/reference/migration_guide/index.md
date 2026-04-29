@@ -10,8 +10,8 @@ content_hash: "de5a4a3dbc18d407588e2687af859cc5b21cbb0ee9ab88556e5a1c7675a1bef4"
 menu_path: ["Deno 1.x to 2.x Migration Guide"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../wasm/index.md", "title": "WebAssembly"}
-nav_next: {"path": "../lsp_integration/index.md", "title": "Language Server Integration"}
+nav_prev: {"path": "deno/runtime/reference/wasm/index.md", "title": "WebAssembly"}
+nav_next: {"path": "deno/runtime/reference/lsp_integration/index.md", "title": "Language Server Integration"}
 ---
 
 **On this page**
@@ -45,15 +45,15 @@ deno.json
 }
 ```
 
-[Read more on `Node.js support` page](/runtime/fundamentals/node/).
+[Read more on `Node.js support` page](../../fundamentals/node/index.md).
 
 ## Managing dependencies
 
 Deno 2 greatly improves dependency management for npm and JSR packages with tools like:
 
--   [`deno install`](/runtime/reference/cli/install/)
--   [`deno add`](/runtime/reference/cli/add/)
--   [`deno remove`](/runtime/reference/cli/remove/)
+-   [`deno install`](../cli/install/index.md)
+-   [`deno add`](../cli/add/index.md)
+-   [`deno remove`](../cli/remove/index.md)
 
 You can expect a seamless experience with Deno-first projects using `deno.json`, Node.js-first project using `package.json`, as well as hybrid projects using both `deno.json` and `package.json` to enable an easy migration path.
 
@@ -70,11 +70,11 @@ With Deno 2 your team can leverage private npm registries the same way you'd do 
 mycompany.com:8111/:_authToken=token
 ```
 
-Learn more about private registry configuration [on `npm packages` page](/runtime/fundamentals/node/#private-registries).
+Learn more about private registry configuration [on `npm packages` page](../../fundamentals/node/index.md#private-registries).
 
 Deno 2 has workspace support, allowing you to mix Deno-first and Node-first packages in the same monorepo, making incremental adoption fast and approachable.
 
-Read more [on `Workspaces and Monorepos` page](/runtime/fundamentals/workspaces/).
+Read more [on `Workspaces and Monorepos` page](../../fundamentals/workspaces/index.md).
 
 ## Framework support
 

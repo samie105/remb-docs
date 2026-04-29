@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:48:43.487Z"
 content_hash: "7b1baf1814137ae1a7b66d82dbdb7c616e938ef8444f2ac8ad3afc78c44ee9ec"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query documents","→","Index and query documents"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query documents","→","Index and query documents"]
-nav_prev: {"path": "../produsage/index.md", "title": "Production usage"}
-nav_next: {"path": "../transpipe/index.md", "title": "Pipelines and transactions"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/produsage/index.md", "title": "Production usage"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/transpipe/index.md", "title": "Pipelines and transactions"}
 ---
 
 # Index and query documents
 
 Learn how to use Redis Search with JSON and hash documents.
 
-This example shows how to create a [search index](/docs/latest/develop/ai/search-and-query/indexing/) for [JSON](/docs/latest/develop/data-types/json/) documents and run queries against the index. It then goes on to show the slight differences in the equivalent code for [hash](/docs/latest/develop/data-types/hashes/) documents.
+This example shows how to create a [search index](../../../ai/search-and-query/indexing/index.md) for [JSON](/docs/latest/develop/data-types/json/) documents and run queries against the index. It then goes on to show the slight differences in the equivalent code for [hash](/docs/latest/develop/data-types/hashes/) documents.
 
 Note:
 
@@ -25,7 +25,7 @@ From [v5.0.0](https://github.com/redis/node-redis/releases/tag/redis%405.0.0) on
 
 ## Initialize
 
-Make sure that you have [Redis Open Source](/docs/latest/operate/oss_and_stack/) or another Redis server available. Also install the [`node-redis`](/docs/latest/develop/clients/nodejs/) client library if you haven't already done so.
+Make sure that you have [Redis Open Source](/docs/latest/operate/oss_and_stack/) or another Redis server available. Also install the [`node-redis`](../index.md) client library if you haven't already done so.
 
 Add the following dependencies:
 
@@ -307,7 +307,7 @@ await client.quit();
 
 ## Add the index
 
-Connect to your Redis database. The code below shows the most basic connection but see [Connect to the server](/docs/latest/develop/clients/nodejs/connect/) to learn more about the available connection options.
+Connect to your Redis database. The code below shows the most basic connection but see [Connect to the server](../connect/index.md) to learn more about the available connection options.
 
 ```node.js
 import {
@@ -445,7 +445,7 @@ findPaulHashResult.documents.forEach(doc => {
 await client.quit();
 ```
 
-Create an index. In this example, only JSON documents with the key prefix `user:` are indexed. For more information, see [Query syntax](/docs/latest/develop/ai/search-and-query/query/).
+Create an index. In this example, only JSON documents with the key prefix `user:` are indexed. For more information, see [Query syntax](../../../ai/search-and-query/query/index.md).
 
 First, drop any existing index to avoid a collision. (The callback is required to avoid an error if the index doesn't already exist.)
 
@@ -725,7 +725,7 @@ await client.quit();
 
 ## Add the data
 
-Add the three sets of user data to the database as [JSON](/docs/latest/develop/data-types/json/) objects. If you use keys with the `user:` prefix then Redis will index the objects automatically as you add them. Note that placing the commands in a `Promise.all()` call is an easy way to create a [pipeline](/docs/latest/develop/clients/nodejs/transpipe/), which is more efficient than sending the commands individually.
+Add the three sets of user data to the database as [JSON](/docs/latest/develop/data-types/json/) objects. If you use keys with the `user:` prefix then Redis will index the objects automatically as you add them. Note that placing the commands in a `Promise.all()` call is an easy way to create a [pipeline](../transpipe/index.md), which is more efficient than sending the commands individually.
 
 ```node.js
 import {
@@ -865,7 +865,7 @@ await client.quit();
 
 ## Query the data
 
-You can now use the index to search the JSON objects. The [query](/docs/latest/develop/ai/search-and-query/query/) below searches for objects that have the text "Paul" in any field and have an `age` value in the range 30 to 40:
+You can now use the index to search the JSON objects. The [query](../../../ai/search-and-query/query/index.md) below searches for objects that have the text "Paul" in any field and have an `age` value in the range 30 to 40:
 
 ```node.js
 import {
@@ -1141,7 +1141,7 @@ findPaulHashResult.documents.forEach(doc => {
 await client.quit();
 ```
 
-Use an [aggregation query](/docs/latest/develop/ai/search-and-query/query/aggregation/) to count all users in each city.
+Use an [aggregation query](../../../ai/search-and-query/query/aggregation/index.md) to count all users in each city.
 
 ```node.js
 import {

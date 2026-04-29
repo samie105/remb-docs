@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:36.607Z"
 content_hash: "cf15ad8b612b9ef62f77d9ff09c5a3ef51cb3170325b05fa690ec1ee57564ea6"
 menu_path: ["Set a code coverage threshold with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "../coverage/index.md", "title": "Generate code coverage reports with the Bun test runner"}
-nav_next: {"path": "../happy-dom/index.md", "title": "Write browser DOM tests with Bun and happy-dom"}
+nav_prev: {"path": "bun/docs/guides/test/coverage/index.md", "title": "Generate code coverage reports with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/happy-dom/index.md", "title": "Write browser DOM tests with Bun and happy-dom"}
 ---
 
 # to require 90% line-level and function-level coverage
@@ -47,7 +47,7 @@ coverageThreshold = { lines = 0.5, functions = 0.7 }
 
 * * *
 
-See [Docs > Test runner > Coverage](/docs/test/code-coverage) for complete documentation on code coverage reporting in Bun.
+See [Docs > Test runner > Coverage](../../../test/code-coverage/index.md) for complete documentation on code coverage reporting in Bun.
 
 Was this page helpful?
 
@@ -59,10 +59,10 @@ Generate code coverage reports with the Bun test runner
 
 Previous
 
-](/docs/guides/test/coverage)[
+](../coverage/index.md)[
 
 Selectively run tests concurrently with glob patterns
 
 Next
 
-](/docs/guides/test/concurrent-test-glob)
+](../concurrent-test-glob/index.md)

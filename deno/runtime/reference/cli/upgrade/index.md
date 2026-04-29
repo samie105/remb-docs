@@ -10,8 +10,8 @@ content_hash: "bc05a12a8d681baaab60bedec314377619946e9b3a13e8f86f07617bed2eaf20"
 menu_path: ["deno upgrade"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../update/index.md", "title": "deno update"}
-nav_next: {"path": "../unstable_flags/index.md", "title": "Unstable feature flags"}
+nav_prev: {"path": "deno/runtime/reference/cli/update/index.md", "title": "deno update"}
+nav_next: {"path": "deno/runtime/reference/cli/unstable_flags/index.md", "title": "Unstable feature flags"}
 ---
 
 # Upgrade to the latest canary build

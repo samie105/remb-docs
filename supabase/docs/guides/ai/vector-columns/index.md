@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:51.666Z"
 content_hash: "0aec8458d64e65d08e883611180ea8787be10ddc4821e9facb25544593377290"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Vector columns","Vector columns"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Vector columns","Vector columns"]
-nav_prev: {"path": "../vecs-python-client/index.md", "title": "Python client"}
-nav_next: {"path": "../vector-indexes/index.md", "title": "Vector indexes"}
+nav_prev: {"path": "supabase/docs/guides/ai/vecs-python-client/index.md", "title": "Python client"}
+nav_next: {"path": "supabase/docs/guides/ai/vector-indexes/index.md", "title": "Vector indexes"}
 ---
 
 # 
@@ -19,9 +19,9 @@ Vector columns
 
 * * *
 
-Supabase offers a number of different ways to store and query vectors within Postgres. The SQL included in this guide is applicable for clients in all programming languages. If you are a Python user see your [Python client options](/docs/guides/ai/python-clients) after reading the `Learn` section.
+Supabase offers a number of different ways to store and query vectors within Postgres. The SQL included in this guide is applicable for clients in all programming languages. If you are a Python user see your [Python client options](../python-clients/index.md) after reading the `Learn` section.
 
-Vectors in Supabase are enabled via [pgvector](https://github.com/pgvector/pgvector/), a Postgres extension for storing and querying vectors in Postgres. It can be used to store [embeddings](/docs/guides/ai/concepts#what-are-embeddings).
+Vectors in Supabase are enabled via [pgvector](https://github.com/pgvector/pgvector/), a Postgres extension for storing and querying vectors in Postgres. It can be used to store [embeddings](../concepts/index.md#what-are-embeddings).
 
 ## Usage[#](#usage)
 
@@ -39,7 +39,7 @@ After enabling the `vector` extension, you will get access to a new data type ca
 1create table documents (2  id serial primary key,3  title text not null,4  body text not null,5  embedding extensions.vector(384)6);
 ```
 
-In the above SQL snippet, we create a `documents` table with a column called `embedding` (note this is just a regular Postgres column - you can name it whatever you like). We give the `embedding` column a `vector` data type with 384 dimensions. Change this to the number of dimensions produced by your embedding model. For example, if you are [generating embeddings](/docs/guides/ai/quickstarts/generate-text-embeddings) using the open source [`gte-small`](https://huggingface.co/Supabase/gte-small) model, you would set this number to 384 since that model produces 384 dimensions.
+In the above SQL snippet, we create a `documents` table with a column called `embedding` (note this is just a regular Postgres column - you can name it whatever you like). We give the `embedding` column a `vector` data type with 384 dimensions. Change this to the number of dimensions produced by your embedding model. For example, if you are [generating embeddings](../quickstarts/generate-text-embeddings/index.md) using the open source [`gte-small`](https://huggingface.co/Supabase/gte-small) model, you would set this number to 384 since that model produces 384 dimensions.
 
 In general, embeddings with fewer dimensions perform best. See our [analysis on fewer dimensions in pgvector](/blog/fewer-dimensions-are-better-pgvector).
 
@@ -51,7 +51,7 @@ In this example we'll generate a vector using Transformers.js, then store it in 
 1import { pipeline } from '@huggingface/transformers'2const generateEmbedding = await pipeline('feature-extraction', 'Supabase/gte-small')34const title = 'First post!'5const body = 'Hello world!'67// Generate a vector using Transformers.js8const output = await generateEmbedding(body, {9  pooling: 'mean',10  normalize: true,11})1213// Extract the embedding output14const embedding = Array.from(output.data)1516// Store the vector in Postgres17const { data, error } = await supabase.from('documents').insert({18  title,19  body,20  embedding,21})
 ```
 
-This example uses the JavaScript Supabase client, but you can modify it to work with any [supported language library](/docs#client-libraries).
+This example uses the JavaScript Supabase client, but you can modify it to work with any [supported language library](../../../index.md#client-libraries).
 
 ### Querying a vector / embedding[#](#querying-a-vector--embedding)
 
@@ -73,9 +73,9 @@ negative inner product
 
 cosine distance
 
-Choosing the right operator depends on your needs. Dot product tends to be the fastest if your vectors are normalized. For more information on how embeddings work and how they relate to each other, see [What are Embeddings?](/docs/guides/ai/concepts#what-are-embeddings).
+Choosing the right operator depends on your needs. Dot product tends to be the fastest if your vectors are normalized. For more information on how embeddings work and how they relate to each other, see [What are Embeddings?](../concepts/index.md#what-are-embeddings).
 
-Supabase client libraries like `supabase-js` connect to your Postgres instance via [PostgREST](/docs/guides/getting-started/architecture#postgrest-api). PostgREST does not currently support `pgvector` similarity operators, so we'll need to wrap our query in a Postgres function and call it via the `rpc()` method:
+Supabase client libraries like `supabase-js` connect to your Postgres instance via [PostgREST](../../getting-started/architecture/index.md#postgrest-api). PostgREST does not currently support `pgvector` similarity operators, so we'll need to wrap our query in a Postgres function and call it via the `rpc()` method:
 
 ```
 1create or replace function match_documents (2  query_embedding extensions.vector(384),3  match_threshold float,4  match_count int5)6returns table (7  id bigint,8  title text,9  body text,10  similarity float11)12language sql stable13as $$14  select15    documents.id,16    documents.title,17    documents.body,18    1 - (documents.embedding <=> query_embedding) as similarity19  from documents20  where 1 - (documents.embedding <=> query_embedding) > match_threshold21  order by (documents.embedding <=> query_embedding) asc22  limit match_count;23$$;
@@ -97,8 +97,8 @@ In this example `embedding` would be another embedding you wish to compare again
 
 Be sure to use embeddings produced from the same embedding model when calculating distance. Comparing embeddings from two different models will produce no meaningful result.
 
-Vectors and embeddings can be used for much more than search. Learn more about embeddings at [What are Embeddings?](/docs/guides/ai/concepts#what-are-embeddings).
+Vectors and embeddings can be used for much more than search. Learn more about embeddings at [What are Embeddings?](../concepts/index.md#what-are-embeddings).
 
 ### Indexes[#](#indexes)
 
-Once your vector table starts to grow, you will likely want to add an index to speed up queries. See [Vector indexes](/docs/guides/ai/vector-indexes) to learn how vector indexes work and how to create them.
+Once your vector table starts to grow, you will likely want to add an index to speed up queries. See [Vector indexes](../vector-indexes/index.md) to learn how vector indexes work and how to create them.

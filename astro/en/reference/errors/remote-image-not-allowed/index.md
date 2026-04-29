@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:21.762Z"
 content_hash: "b91c680149bac6410220be4de20650b847a6e54607cec61ce3447c2cb88e1583"
 menu_path: ["Remote image is not allowed"]
 section_path: []
-nav_prev: {"path": "../redirect-with-no-location/index.md", "title": "A redirect must be given a location with the Location header."}
-nav_next: {"path": "../render-undefined-entry-error/index.md", "title": "Attempted to render an undefined content collection entry."}
+nav_prev: {"path": "astro/en/reference/errors/redirect-with-no-location/index.md", "title": "A redirect must be given a location with the Location header."}
+nav_next: {"path": "astro/en/reference/errors/render-undefined-entry-error/index.md", "title": "Attempted to render an undefined content collection entry."}
 ---
 
 # Remote image is not allowed
@@ -23,4 +23,4 @@ nav_next: {"path": "../render-undefined-entry-error/index.md", "title": "Attempt
 
 The remote image URL does not match your configured `image.domains` or `image.remotePatterns`.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

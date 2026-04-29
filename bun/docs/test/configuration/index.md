@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:22.262Z"
 content_hash: "12be50da3082cdb3b091daff251d45a33e03916d3a9fac2862703d0017d17467"
 menu_path: ["Test configuration"]
 section_path: []
-nav_prev: {"path": "../code-coverage/index.md", "title": "Code coverage"}
-nav_next: {"path": "../dates-times/index.md", "title": "Dates and times"}
+nav_prev: {"path": "bun/docs/test/code-coverage/index.md", "title": "Code coverage"}
+nav_next: {"path": "bun/docs/test/dates-times/index.md", "title": "Dates and times"}
 ---
 
 # Options go here

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:58.825Z"
 content_hash: "bee82e990e9a6b94a4b8a94ff0e49cf72493c206f16af0f7bbf677faa1b61a6e"
 menu_path: ["Database","Database","More","More","More","Replication","Replication","FAQ","FAQ"]
 section_path: ["Database","Database","More","More","More","Replication","Replication","FAQ","FAQ"]
-nav_prev: {"path": "../manual-replication-setup/index.md", "title": "Manual Replication Setup"}
-nav_next: {"path": "../replication-monitoring/index.md", "title": "Replication Monitoring"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/manual-replication-setup/index.md", "title": "Manual Replication Setup"}
+nav_next: {"path": "supabase/docs/guides/database/replication/replication-monitoring/index.md", "title": "Replication Monitoring"}
 ---
 
 # 
@@ -29,7 +29,7 @@ Replication is currently in private alpha. Access is limited and features may ch
 
 ## What destinations are supported?[#](#what-destinations-are-supported)
 
-Replication currently supports **BigQuery** as the only managed destination. See the [Setup guide](/docs/guides/database/replication/replication-setup#step-3-add-a-destination) for configuration details.
+Replication currently supports **BigQuery** as the only managed destination. See the [Setup guide](../replication-setup/index.md#step-3-add-a-destination) for configuration details.
 
 We are working on adding more destinations in the future. Availability may continue to vary based on the planned roll-out strategy.
 
@@ -51,7 +51,7 @@ Check your publication settings and verify your table meets the requirements.
 
 ## Why aren't publication changes reflected after adding or removing tables?[#](#why-arent-publication-changes-reflected-after-adding-or-removing-tables)
 
-After modifying your Postgres publication, you must restart the replication pipeline for changes to take effect. See [Adding or removing tables](/docs/guides/database/replication/replication-setup#adding-or-removing-tables) for instructions.
+After modifying your Postgres publication, you must restart the replication pipeline for changes to take effect. See [Adding or removing tables](../replication-setup/index.md#adding-or-removing-tables) for instructions.
 
 ## Why is a pipeline in failed state?[#](#why-is-a-pipeline-in-failed-state)
 
@@ -62,7 +62,7 @@ Pipeline failures occur during the streaming phase when an error happens while r
 3.  Fix the underlying issue (e.g., schema mismatches, destination connectivity)
 4.  Restart the pipeline
 
-See [Handling errors](/docs/guides/database/replication/replication-monitoring#handling-errors) for more details.
+See [Handling errors](../replication-monitoring/index.md#handling-errors) for more details.
 
 ## Why is a table in error state?[#](#why-is-a-table-in-error-state)
 
@@ -77,11 +77,11 @@ Check the [Database](/dashboard/project/_/database/replication) → **replicatio
 3.  Ensure all tables show **Live** state (actively replicating)
 4.  Monitor replication lag metrics
 
-See the [Replication Monitoring guide](/docs/guides/database/replication/replication-monitoring) for comprehensive monitoring instructions.
+See the [Replication Monitoring guide](../replication-monitoring/index.md) for comprehensive monitoring instructions.
 
 ## How to stop or pause replication[#](#how-to-stop-or-pause-replication)
 
-You can manage your pipeline using the actions menu in the destinations list. See [Managing your pipeline](/docs/guides/database/replication/replication-setup#managing-your-pipeline) for details on available actions.
+You can manage your pipeline using the actions menu in the destinations list. See [Managing your pipeline](../replication-setup/index.md#managing-your-pipeline) for details on available actions.
 
 Note: Stopping replication will cause changes to queue up in the WAL.
 
@@ -131,6 +131,6 @@ Navigate to [Logs](/dashboard/project/_/logs/explorer) → **Replication** to se
 
 If you need assistance:
 
-1.  Check the [Replication Setup guide](/docs/guides/database/replication/replication-setup) and [Replication Monitoring guide](/docs/guides/database/replication/replication-monitoring)
+1.  Check the [Replication Setup guide](../replication-setup/index.md) and [Replication Monitoring guide](../replication-monitoring/index.md)
 2.  Review this FAQ for common issues
 3.  Contact support with your error details and logs

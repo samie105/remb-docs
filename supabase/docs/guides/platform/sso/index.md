@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:14.436Z"
 content_hash: "0ea6655926fcad2b132972d1ea3ee49c255df0ffedf1c260f42bace4676d7e09"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","Overview","Overview"]
-nav_prev: {"path": "../ssl-enforcement/index.md", "title": "Postgres SSL Enforcement"}
-nav_next: {"path": "azure/index.md", "title": "Set Up SSO with Azure AD"}
+nav_prev: {"path": "supabase/docs/guides/platform/ssl-enforcement/index.md", "title": "Postgres SSL Enforcement"}
+nav_next: {"path": "supabase/docs/guides/platform/sso/azure/index.md", "title": "Set Up SSO with Azure AD"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Enable SSO for Your Organization
 
 * * *
 
-Looking for docs on how to add Single Sign-On support in your Supabase project? Head on over to [Single Sign-On with SAML 2.0 for Projects](/docs/guides/auth/enterprise-sso/auth-sso-saml).
+Looking for docs on how to add Single Sign-On support in your Supabase project? Head on over to [Single Sign-On with SAML 2.0 for Projects](../../auth/enterprise-sso/auth-sso-saml/index.md).
 
 Supabase offers single sign-on (SSO) as a login option to provide additional account security for your team. This allows company administrators to enforce the use of an identity provider when logging into Supabase. SSO improves the onboarding and offboarding experience of the company as the employee only needs a single set of credentials to access third-party applications or tools which can also be revoked by an administrator.
 
@@ -29,9 +29,9 @@ Supabase currently provides SAML SSO for [Team and Enterprise Plan customers](/p
 
 Supabase supports practically all identity providers that support the SAML 2.0 SSO protocol. We've prepared these guides for commonly used identity providers to help you get started. If you use a different provider, our support stands ready to support you.
 
-*   [Google Workspaces (formerly G Suite)](/docs/guides/platform/sso/gsuite)
-*   [Azure Active Directory](/docs/guides/platform/sso/azure)
-*   [Okta](/docs/guides/platform/sso/okta)
+*   [Google Workspaces (formerly G Suite)](gsuite/index.md)
+*   [Azure Active Directory](azure/index.md)
+*   [Okta](okta/index.md)
 
 Once configured, you can update your settings anytime via the [SSO tab](/dashboard/org/_/sso) under **Organization Settings**.
 
@@ -41,7 +41,7 @@ Once configured, you can update your settings anytime via the [SSO tab](/dashboa
 
 *   **Multiple domains** - You can associate one or more email domains with your SSO provider. Users with email addresses matching these domains are eligible to sign in via SSO.
 *   **Auto-join** - Optionally allow users with a matching domain to be added to your organization automatically when they first sign in, without an invitation.
-*   **Default role for auto-joined users** - Choose the role (e.g., `Read-only`, `Developer`, `Administrator`, `Owner`) that automatically joined users receive. Refer to [access control](/docs/guides/platform/access-control) for more information about roles.
+*   **Default role for auto-joined users** - Choose the role (e.g., `Read-only`, `Developer`, `Administrator`, `Owner`) that automatically joined users receive. Refer to [access control](../access-control/index.md) for more information about roles.
 
 ## How SSO works in Supabase[#](#how-sso-works-in-supabase)
 
@@ -51,7 +51,7 @@ When SSO is enabled for an organization:
 *   Every user has an organization created by default. They can create as many projects as they want.
 *   An SSO user will not be able to update or reset their password since the company administrator manages their access via the identity provider.
 *   If an SSO user with the following email of `alice@foocorp.com` attempts to sign in with a GitHub account that uses the same email, a separate Supabase account is created and will not be linked to the SSO user's account.
-*   SSO users will only see organizations/projects they've been invited to or auto-joined into. See [access control](/docs/guides/platform/access-control) for more details.
+*   SSO users will only see organizations/projects they've been invited to or auto-joined into. See [access control](../access-control/index.md) for more details.
 
 ## Enabling SSO for an organization[#](#enabling-sso-for-an-organization)
 

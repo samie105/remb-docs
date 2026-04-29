@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:16.934Z"
 content_hash: "d1015bca7aa13be7e105753f67a6485be3ef4ed8971d6916011846f51b8e6401"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Next.js","Next.js"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Next.js","Next.js"]
-nav_prev: {"path": "../laravel/index.md", "title": "Use Supabase with Laravel"}
-nav_next: {"path": "../nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/laravel/index.md", "title": "Use Supabase with Laravel"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
 ---
 
 # 
@@ -98,7 +98,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -134,6 +134,6 @@ Run the development server, go to [http://localhost:3000/instruments](http://loc
 
 ## Next steps[#](#next-steps)
 
-*   Set up [Auth](/docs/guides/auth) for your app
-*   [Insert more data](/docs/guides/database/import-data) into your database
-*   Upload and serve static files using [Storage](/docs/guides/storage)
+*   Set up [Auth](../../../auth/index.md) for your app
+*   [Insert more data](../../../database/import-data/index.md) into your database
+*   Upload and serve static files using [Storage](../../../storage/index.md)

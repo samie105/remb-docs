@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:29.357Z"
 content_hash: "b8ec59866bb549113f3e5e31ba8d48e861c2085095caa26e4788df5d96631244"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Building ChatGPT Plugins","Building ChatGPT Plugins"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Building ChatGPT Plugins","Building ChatGPT Plugins"]
-nav_prev: {"path": "../../engineering-for-scale/index.md", "title": "Engineering for Scale"}
-nav_next: {"path": "../headless-vector-search/index.md", "title": "Adding generative Q&A for your documentation"}
+nav_prev: {"path": "supabase/docs/guides/ai/engineering-for-scale/index.md", "title": "Engineering for Scale"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/headless-vector-search/index.md", "title": "Adding generative Q&A for your documentation"}
 ---
 
 # 
@@ -64,7 +64,7 @@ Choose your desired datastore provider and remove unused dependencies from `pypr
 
 ### Step 3: Create a Supabase project[#](#step-3-create-a-supabase-project)
 
-Create a [Supabase project](/dashboard) and database by following the instructions [here](/docs/guides/platform). Export the environment variables required for the retrieval plugin to work:
+Create a [Supabase project](/dashboard) and database by following the instructions [here](../../../platform/index.md). Export the environment variables required for the retrieval plugin to work:
 
 ```
 1export OPENAI_API_KEY=<open_ai_api_key>2export DATASTORE=supabase3export SUPABASE_URL=<supabase_url>4export SUPABASE_SERVICE_ROLE_KEY=<supabase_key>

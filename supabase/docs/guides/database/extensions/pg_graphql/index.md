@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:35.868Z"
 content_hash: "864b447079f63e6f21c90e8a6c3b2ca032743285bd1af4acebd8dd390aae28fe"
 menu_path: ["Database","Database","Extensions","Extensions","pg_graphql: GraphQL Support","pg_graphql: GraphQL Support"]
 section_path: ["Database","Database","Extensions","Extensions","pg_graphql: GraphQL Support","pg_graphql: GraphQL Support"]
-nav_prev: {"path": "../pg_cron/index.md", "title": "pg_cron: Schedule Recurring Jobs with Cron Syntax in Postgres"}
-nav_next: {"path": "../pg_hashids/index.md", "title": "pg_hashids: Short UIDs"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pg_cron/index.md", "title": "pg_cron: Schedule Recurring Jobs with Cron Syntax in Postgres"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pg_hashids/index.md", "title": "pg_hashids: Short UIDs"}
 ---
 
 # 

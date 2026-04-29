@@ -11,8 +11,8 @@ menu_path: ["Routing Information"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../output-types/index.md", "title": "Output Types"}
-nav_next: {"path": "../use-cases/index.md", "title": "Use Cases"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/output-types/index.md", "title": "Output Types"}
+nav_next: {"path": "nextjs/docs/app/api-reference/adapters/use-cases/index.md", "title": "Use Cases"}
 ---
 
 # Routing Information

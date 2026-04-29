@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:53.606Z"
 content_hash: "1a5319bdc4152a38d28dc03a468fee126e5069ccee94c22dea6bb4adb3c662e6"
 menu_path: ["Lambda@Edge ​"]
 section_path: []
-nav_prev: {"path": "../aws-lambda/index.md", "title": "AWS Lambda \u200b"}
-nav_next: {"path": "../azure-functions/index.md", "title": "Azure Functions \u200b"}
+nav_prev: {"path": "hono/docs/getting-started/aws-lambda/index.md", "title": "AWS Lambda \u200b"}
+nav_next: {"path": "hono/docs/getting-started/azure-functions/index.md", "title": "Azure Functions \u200b"}
 ---
 
 [Lambda@Edge](https://aws.amazon.com/lambda/edge/) is a serverless platform by Amazon Web Services. It allows you to run Lambda functions at Amazon CloudFront's edge locations, enabling you to customize behaviors for HTTP requests/responses.

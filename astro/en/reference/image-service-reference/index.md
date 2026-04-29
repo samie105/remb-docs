@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:20.363Z"
 content_hash: "430bf8bf4eebcaef1276d30763b657b0f771d2f02ee563a0874f3b3674b782fa"
 menu_path: ["Image Service API"]
 section_path: []
-nav_prev: {"path": "../content-loader-reference/index.md", "title": "Astro Content Loader API"}
-nav_next: {"path": "../dev-toolbar-app-reference/index.md", "title": "Dev Toolbar App API"}
+nav_prev: {"path": "astro/en/reference/content-loader-reference/index.md", "title": "Astro Content Loader API"}
+nav_next: {"path": "astro/en/reference/dev-toolbar-app-reference/index.md", "title": "Dev Toolbar App API"}
 ---
 
 # Image Service API
@@ -75,9 +75,9 @@ In dev mode and when using an adapter to render on demand, Astro doesn’t know 
 
 [Section titled “getConfiguredImageService & imageConfig”](#getconfiguredimageservice--imageconfig)
 
-If you implement your own endpoint as an Astro endpoint, you can use [`getConfiguredImageService`](/en/reference/modules/astro-assets/#getconfiguredimageservice) and [`imageConfig`](/en/reference/modules/astro-assets/#imageconfig) to call your service’s `parseURL` and `transform` methods and provide the image config.
+If you implement your own endpoint as an Astro endpoint, you can use [`getConfiguredImageService`](../modules/astro-assets/index.md#getconfiguredimageservice) and [`imageConfig`](../modules/astro-assets/index.md#imageconfig) to call your service’s `parseURL` and `transform` methods and provide the image config.
 
-To access the image service config ([`image.service.config`](/en/reference/configuration-reference/#imageservice)), you can use `imageConfig.service.config`.
+To access the image service config ([`image.service.config`](../configuration-reference/index.md#imageservice)), you can use `imageConfig.service.config`.
 
 ```
 import type { APIRoute } from "astro";import { getConfiguredImageService, imageConfig } from 'astro:assets';
@@ -95,7 +95,7 @@ export const GET: APIRoute = async ({ request }) => {  const imageService = awai
 
 [Section titled “getURL()”](#geturl)
 
-**Type:** `(options: [ImageTransform](/en/reference/modules/astro-assets/#imagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options)) => string | Promise<string>`  
+**Type:** `(options: [ImageTransform](../modules/astro-assets/index.md#imagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options)) => string | Promise<string>`  
 
 **Added in:** `astro@2.1.0`
 
@@ -123,7 +123,7 @@ This hook parses the generated URLs by `getURL()` back into an object with the d
 
 [Section titled “transform()”](#transform)
 
-**Type:** `(inputBuffer: Uint8Array, options: { src: string, [key: string]: any }, imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options)) => Promise<{ data: Uint8Array; format: [ImageOutputFormat](/en/reference/modules/astro-assets/#imageoutputformat) }>`  
+**Type:** `(inputBuffer: Uint8Array, options: { src: string, [key: string]: any }, imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options)) => Promise<{ data: Uint8Array; format: [ImageOutputFormat](../modules/astro-assets/index.md#imageoutputformat) }>`  
 
 **Added in:** `astro@2.1.0`
 
@@ -137,7 +137,7 @@ You must return a `format` to ensure that the proper MIME type is served to user
 
 [Section titled “getHTMLAttributes()”](#gethtmlattributes)
 
-**Type:** `(options: [ImageTransform](/en/reference/modules/astro-assets/#imagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options) ) => Record<string, any> | Promise<Record<string, any>>`  
+**Type:** `(options: [ImageTransform](../modules/astro-assets/index.md#imagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options) ) => Record<string, any> | Promise<Record<string, any>>`  
 
 **Added in:** `astro@2.1.0`
 
@@ -149,7 +149,7 @@ This hook returns all additional attributes used to render the image as HTML, ba
 
 [Section titled “getSrcSet()”](#getsrcset)
 
-**Type:** `(options: [ImageTransform](/en/reference/modules/astro-assets/#imagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options) ) => UnresolvedSrcSetValue[] | Promise<UnresolvedSrcSetValue[]>`  
+**Type:** `(options: [ImageTransform](../modules/astro-assets/index.md#imagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options) ) => UnresolvedSrcSetValue[] | Promise<UnresolvedSrcSetValue[]>`  
 
 **Added in:** `astro@3.3.0`
 
@@ -167,7 +167,7 @@ export type UnresolvedSrcSetValue = {  transform: ImageTransform;  descriptor?: 
 
 [Section titled “validateOptions()”](#validateoptions)
 
-**Type:** `(options: [ImageTransform](/en/reference/modules/astro-assets/#imagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options) ) => ImageTransform | Promise<ImageTransform>`
+**Type:** `(options: [ImageTransform](../modules/astro-assets/index.md#imagetransform), imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options) ) => ImageTransform | Promise<ImageTransform>`
 
 **Added in:** `astro@2.1.4`
 
@@ -181,13 +181,13 @@ This hook allows you to validate and augment the options passed by the user. Thi
 
 [Section titled “getRemoteSize()”](#getremotesize)
 
-**Type:** `(url: string, imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options) ) => Omit<[ImageMetadata](/en/reference/modules/astro-assets/#imagemetadata-1), ‘src’ | ‘fsPath’> | Promise<Omit<[ImageMetadata](/en/reference/modules/astro-assets/#imagemetadata-1), ‘src’ | ‘fsPath’>>`
+**Type:** `(url: string, imageConfig: [AstroConfig[‘image’]](/en/reference/configuration-reference/#image-options) ) => Omit<[ImageMetadata](../modules/astro-assets/index.md#imagemetadata-1), ‘src’ | ‘fsPath’> | Promise<Omit<[ImageMetadata](../modules/astro-assets/index.md#imagemetadata-1), ‘src’ | ‘fsPath’>>`
 
 **Added in:** `astro@6.0.0`
 
 **Optional for both local and external services**
 
-This hook allows you to extend the behavior of [`inferRemoteSize()`](/en/reference/modules/astro-assets/#inferremotesize). This is useful for reducing network traffic by caching images, or when you can predict image information from the image URL.
+This hook allows you to extend the behavior of [`inferRemoteSize()`](../modules/astro-assets/index.md#inferremotesize). This is useful for reducing network traffic by caching images, or when you can predict image information from the image URL.
 
 ## User configuration
 
@@ -214,7 +214,7 @@ For example, to add a custom `blur` prop that your image service supports:
 declare namespace Astro {  interface CustomImageProps {    /** Apply a Gaussian blur with this radius to the image. */    blur?: number;  }}
 ```
 
-You can expose these types to users by making your image service an [Astro integration](/en/reference/integrations-reference/) and using the [`injectTypes()`](/en/reference/integrations-reference/#injecttypes-option) helper.
+You can expose these types to users by making your image service an [Astro integration](../integrations-reference/index.md) and using the [`injectTypes()`](../integrations-reference/index.md#injecttypes-option) helper.
 
 Then, users will be able to get autocomplete and type safety for your custom props:
 
@@ -222,4 +222,4 @@ Then, users will be able to get autocomplete and type safety for your custom pro
 <Image blur="yes" src={myPhoto}  />//     ^^^^^^^^^^//     Type 'string' is not assignable to type 'number | undefined'.
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -10,8 +10,8 @@ content_hash: "bfdfc01e724fcf2bc8a52a4580b6aa5b43df75a5233c3bf16d49542a8bdc7508"
 menu_path: ["Web development"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../configuration/index.md", "title": "deno.json and package.json"}
-nav_next: {"path": "../testing/index.md", "title": "Testing"}
+nav_prev: {"path": "deno/runtime/fundamentals/configuration/index.md", "title": "deno.json and package.json"}
+nav_next: {"path": "deno/runtime/fundamentals/testing/index.md", "title": "Testing"}
 ---
 
 **On this page**
@@ -28,11 +28,11 @@ nav_next: {"path": "../testing/index.md", "title": "Testing"}
 
 Deno offers a secure and developer-friendly environment for building web applications, making your web dev a delightful experience.
 
-1.  Deno has [secure defaults](/runtime/fundamentals/security/), meaning it requires explicit permission for file, network, and environment access, reducing the risk of security vulnerabilities.
-2.  Deno has [built-in TypeScript support](/runtime/fundamentals/typescript/), allowing you to write TypeScript code without additional configuration or tooling.
-3.  Deno comes with a [standard library](/runtime/reference/std/) that includes modules for common tasks like HTTP servers, file system operations, and more.
+1.  Deno has [secure defaults](../security/index.md), meaning it requires explicit permission for file, network, and environment access, reducing the risk of security vulnerabilities.
+2.  Deno has [built-in TypeScript support](../typescript/index.md), allowing you to write TypeScript code without additional configuration or tooling.
+3.  Deno comes with a [standard library](../../reference/std/index.md) that includes modules for common tasks like HTTP servers, file system operations, and more.
 
-For your vanilla TypeScript, or JavaScript, web applications, you can use the built-in Deno [HTTP server](/runtime/fundamentals/http_server/). This is a great way to get started with Deno and build simple web applications without any additional dependencies.
+For your vanilla TypeScript, or JavaScript, web applications, you can use the built-in Deno [HTTP server](../http_server/index.md). This is a great way to get started with Deno and build simple web applications without any additional dependencies.
 
 Most likely, if you're building a more complex application, you'll be interacting with Deno through a web framework.
 
@@ -52,7 +52,7 @@ deno task dev
 
 This will create a new Next.js app with TypeScript and run it with Deno. You can then open your browser to `http://localhost:3000` to see your new app, and start editing `page.tsx` to see your changes live.
 
-To better understand how JSX and Deno interface under the hood, read on [here](/runtime/reference/jsx/).
+To better understand how JSX and Deno interface under the hood, read on [here](../../reference/jsx/index.md).
 
 ## Fresh
 
@@ -192,4 +192,4 @@ deno run --allow-net server.ts
 
 ## Node projects
 
-Deno will run your Node.js projects out the box. Check out our guide on [migrating your Node.js project to Deno](/runtime/fundamentals/node/#migrating-from-node.js-to-deno).
+Deno will run your Node.js projects out the box. Check out our guide on [migrating your Node.js project to Deno](../node/index.md#migrating-from-node.js-to-deno).

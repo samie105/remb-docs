@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../lazy-loading/index.md", "title": "How to lazy load Client Components and libraries"}
-nav_next: {"path": "../mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
+nav_prev: {"path": "nextjs/docs/app/guides/lazy-loading/index.md", "title": "How to lazy load Client Components and libraries"}
+nav_next: {"path": "nextjs/docs/app/guides/mcp/index.md", "title": "Enabling Next.js MCP Server for Coding Agents"}
 ---
 
 # How to optimize your local development environment
@@ -105,11 +105,11 @@ Terminal
 pnpm dev --webpack
 ```
 
-[Learn more about Turbopack](/blog/turbopack-for-development-stable). See our [upgrade guides](/docs/app/guides/upgrading) and codemods for more information.
+[Learn more about Turbopack](/blog/turbopack-for-development-stable). See our [upgrade guides](../upgrading/index.md) and codemods for more information.
 
 ### 3\. Check your imports[](#3-check-your-imports)
 
-The way you import code can greatly affect compilation and bundling time. Learn more about [optimizing package bundling](/docs/app/guides/package-bundling) and explore tools like [Dependency Cruiser](https://github.com/sverweij/dependency-cruiser) or [Madge](https://github.com/pahen/madge).
+The way you import code can greatly affect compilation and bundling time. Learn more about [optimizing package bundling](../package-bundling/index.md) and explore tools like [Dependency Cruiser](https://github.com/sverweij/dependency-cruiser) or [Madge](https://github.com/pahen/madge).
 
 #### Icon libraries[](#icon-libraries)
 
@@ -193,13 +193,13 @@ Tailwind CSS version 3.4.8 or newer will warn you about settings that might slow
 
 If you've added custom webpack settings, they might be slowing down compilation.
 
-Consider if you really need them for local development. You can optionally only include certain tools for production builds, or explore using the default Turbopack bundler and configuring [loaders](/docs/app/api-reference/config/next-config-js/turbopack#configuring-webpack-loaders) instead.
+Consider if you really need them for local development. You can optionally only include certain tools for production builds, or explore using the default Turbopack bundler and configuring [loaders](../../api-reference/config/next-config-js/turbopack/index.md#configuring-webpack-loaders) instead.
 
 ### 6\. Optimize memory usage[](#6-optimize-memory-usage)
 
 If your app is very large, it might need more memory.
 
-[Learn more about optimizing memory usage](/docs/app/guides/memory-usage).
+[Learn more about optimizing memory usage](../memory-usage/index.md).
 
 ### 7\. Server Components and data fetching[](#7-server-components-and-data-fetching)
 
@@ -207,7 +207,7 @@ Changes to Server Components cause the entire page to re-render locally in order
 
 The experimental `serverComponentsHmrCache` option allows you to cache `fetch` responses in Server Components across Hot Module Replacement (HMR) refreshes in local development. This results in faster responses and reduced costs for billed API calls.
 
-[Learn more about the experimental option](/docs/app/api-reference/config/next-config-js/serverComponentsHmrCache).
+[Learn more about the experimental option](../../api-reference/config/next-config-js/serverComponentsHmrCache/index.md).
 
 ### 8\. Consider local development over Docker[](#8-consider-local-development-over-docker)
 
@@ -221,7 +221,7 @@ This performance difference is due to how Docker handles filesystem operations o
 -   Reserve Docker for production deployments and testing production builds
 -   If you must use Docker for development, consider using Docker on a Linux machine or VM
 
-[Learn more about Docker deployment](/docs/app/getting-started/deploying#docker) for production use.
+[Learn more about Docker deployment](../../getting-started/deploying/index.md#docker) for production use.
 
 ## Tools for finding problems[](#tools-for-finding-problems)
 
@@ -239,7 +239,7 @@ module.exports = {
 }
 ```
 
-[Learn more about fetch logging](/docs/app/api-reference/config/next-config-js/logging).
+[Learn more about fetch logging](../../api-reference/config/next-config-js/logging/index.md).
 
 ### Turbopack tracing[](#turbopack-tracing)
 

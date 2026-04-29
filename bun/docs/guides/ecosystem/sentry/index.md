@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:10.854Z"
 content_hash: "a9927e817f2f56a78ec2ce604ecfe7382e57797cb8e260c7099d3d5aff479bd9"
 menu_path: ["Add Sentry to a Bun app"]
 section_path: []
-nav_prev: {"path": "../remix/index.md", "title": "Build an app with Remix and Bun"}
-nav_next: {"path": "../solidstart/index.md", "title": "Build an app with SolidStart and Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/remix/index.md", "title": "Build an app with Remix and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/solidstart/index.md", "title": "Build an app with SolidStart and Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../solidstart/index.md", "title": "Build an app with SolidSt
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 [Sentry](https://sentry.io) is a developer-first error tracking and performance monitoring platform. Sentry has a first-class SDK for Bun, `@sentry/bun`, that instruments your Bun application to automatically collect error and performance data. Don’t already have an account and Sentry project established? Head over to [sentry.io](https://sentry.io/signup/), then return to this page.
 
@@ -98,10 +98,10 @@ Use TanStack Start with Bun
 
 Previous
 
-](/docs/guides/ecosystem/tanstack-start)[
+](../tanstack-start/index.md)[
 
 Build an app with SolidStart and Bun
 
 Next
 
-](/docs/guides/ecosystem/solidstart)
+](../solidstart/index.md)

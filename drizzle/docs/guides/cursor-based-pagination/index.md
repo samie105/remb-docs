@@ -10,8 +10,8 @@ content_hash: "9be1ff010868585ca52086ec134492927d77eccaaa3022a5ecc174efc96a484d"
 menu_path: ["Drizzle ORM - SQL Cursor-based pagination"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../count-rows/index.md", "title": "Drizzle ORM - Count rows"}
-nav_next: {"path": "../d1-http-with-drizzle-kit/index.md", "title": "Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit"}
+nav_prev: {"path": "drizzle/docs/guides/count-rows/index.md", "title": "Drizzle ORM - Count rows"}
+nav_next: {"path": "drizzle/docs/guides/d1-http-with-drizzle-kit/index.md", "title": "Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit"}
 ---
 
 Drizzle | SQL Cursor-based pagination

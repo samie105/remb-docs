@@ -10,8 +10,8 @@ content_hash: "614841a8001d74593d135a3958be006782038ab478798eb617ec04aa021cd0cb"
 menu_path: ["backdrop-filter"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../filter-sepia/index.md", "title": "filter: sepia()"}
-nav_next: {"path": "../backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
+nav_prev: {"path": "tailwind/docs/filter-sepia/index.md", "title": "filter: sepia()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-blur/index.md", "title": "backdrop-filter: blur()"}
 ---
 
 # backdrop-filter
@@ -53,7 +53,7 @@ combined
 <div class="bg-[url(/img/mountains.jpg)] ...">  <div class="backdrop-blur-xs ..."></div></div><div class="bg-[url(/img/mountains.jpg)] ...">  <div class="backdrop-grayscale ..."></div></div><div class="bg-[url(/img/mountains.jpg)] ...">  <div class="backdrop-blur-xs backdrop-grayscale ..."></div></div>
 ```
 
-You can combine the following backdrop filter utilities: [blur](/docs/backdrop-filter-blur), [brightness](/docs/backdrop-filter-brightness), [contrast](/docs/backdrop-filter-contrast), [grayscale](/docs/backdrop-filter-grayscale), [hue-rotate](/docs/backdrop-filter-hue-rotate), [invert](/docs/backdrop-filter-invert), [opacity](/docs/backdrop-filter-opacity), [saturate](/docs/backdrop-filter-saturate), and [sepia](/docs/backdrop-filter-sepia).
+You can combine the following backdrop filter utilities: [blur](../backdrop-filter-blur/index.md), [brightness](../backdrop-filter-brightness/index.md), [contrast](../backdrop-filter-contrast/index.md), [grayscale](../backdrop-filter-grayscale/index.md), [hue-rotate](../backdrop-filter-hue-rotate/index.md), [invert](../backdrop-filter-invert/index.md), [opacity](../backdrop-filter-opacity/index.md), [saturate](../backdrop-filter-saturate/index.md), and [sepia](../backdrop-filter-sepia/index.md).
 
 Use the `backdrop-filter-none` utility to remove all of the backdrop filters applied to an element:
 
@@ -81,7 +81,7 @@ Prefix a `backdrop-filter` utility with a variant like `hover:*` to only apply t
 <div class="backdrop-blur-sm hover:backdrop-filter-none ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Prefix a `backdrop-filter` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -89,7 +89,7 @@ Prefix a `backdrop-filter` utility with a breakpoint variant like `md:` to only 
 <div class="backdrop-blur-sm md:backdrop-filter-none ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

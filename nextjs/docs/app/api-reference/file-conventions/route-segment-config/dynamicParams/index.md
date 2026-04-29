@@ -11,15 +11,15 @@ menu_path: ["dynamicParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../../route/index.md", "title": "route.js"}
-nav_next: {"path": "../maxDuration/index.md", "title": "maxDuration"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route/index.md", "title": "route.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/maxDuration/index.md", "title": "maxDuration"}
 ---
 
 # dynamicParams
 
 Last updated April 23, 2026
 
-The `dynamicParams` option allows you to control what happens when a dynamic segment is visited that was not generated with [generateStaticParams](/docs/app/api-reference/functions/generate-static-params).
+The `dynamicParams` option allows you to control what happens when a dynamic segment is visited that was not generated with [generateStaticParams](../../../functions/generate-static-params/index.md).
 
 layout.tsx | page.tsx
 
@@ -35,6 +35,6 @@ export const dynamicParams = true // true | false
 > **Good to know**:
 > 
 > -   This option replaces the `fallback: true | false | blocking` option of `getStaticPaths` in the `pages` directory.
-> -   `dynamicParams` is not available when [Cache Components](/docs/app/api-reference/config/next-config-js/cacheComponents) is enabled.
+> -   `dynamicParams` is not available when [Cache Components](../../../config/next-config-js/cacheComponents/index.md) is enabled.
 
 Was this helpful?

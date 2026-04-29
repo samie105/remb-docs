@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:34.915Z"
 content_hash: "dc3c09b9459e48d6eb5a9f1289a090f67fd749c3053037bf911e30402ffdc5b2"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","OAuth Flows","OAuth Flows"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","OAuth Flows","OAuth Flows"]
-nav_prev: {"path": "../mcp-authentication/index.md", "title": "Model Context Protocol (MCP) Authentication"}
-nav_next: {"path": "../token-security/index.md", "title": "Token Security and Row Level Security"}
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/mcp-authentication/index.md", "title": "Model Context Protocol (MCP) Authentication"}
+nav_next: {"path": "supabase/docs/guides/auth/oauth-server/token-security/index.md", "title": "Token Security and Row Level Security"}
 ---
 
 # 
@@ -143,7 +143,7 @@ Your frontend application at the authorization path should:
 
 This is a **frontend implementation** using `supabase-js`. Supabase Auth handles all the backend OAuth logic (generating authorization codes, validating requests, etc.) after you call the approve/deny methods.
 
-See the [Getting Started guide](/docs/guides/auth/oauth-server/getting-started#example-authorization-ui) for complete implementation examples.
+See the [Getting Started guide](../getting-started/index.md#example-authorization-ui) for complete implementation examples.
 
 ### Step 4: Authorization code issued[#](#step-4-authorization-code-issued)
 
@@ -185,7 +185,7 @@ The state parameter from the original request (for CSRF protection)
 
 ### Step 5: Token exchange[#](#step-5-token-exchange)
 
-The client exchanges the authorization code for tokens by making a POST request to the token endpoint. How the client authenticates depends on its `token_endpoint_auth_method` (set during [client registration](/docs/guides/auth/oauth-server/getting-started#token-endpoint-authentication-method)).
+The client exchanges the authorization code for tokens by making a POST request to the token endpoint. How the client authenticates depends on its `token_endpoint_auth_method` (set during [client registration](../getting-started/index.md#token-endpoint-authentication-method)).
 
 #### Public clients (`token_endpoint_auth_method: none`)[#](#public-clients--tokenendpointauthmethod-none-)
 
@@ -273,7 +273,7 @@ Description
 
 The OAuth client ID that obtained this token
 
-All other claims follow the standard [Supabase JWT structure](/docs/guides/auth/jwts).
+All other claims follow the standard [Supabase JWT structure](../../jwts/index.md).
 
 ### Available scopes[#](#available-scopes)
 
@@ -460,7 +460,7 @@ Third-party clients should validate access tokens to ensure they're authentic an
 
 For OAuth implementations, we strongly recommend using asymmetric signing algorithms (RS256 or ES256) instead of the default HS256. With asymmetric keys, third-party clients can validate JWTs using the public key from your JWKS endpoint without needing access to your JWT secret. This is more secure, scalable, and follows OAuth best practices.
 
-Learn how to [configure asymmetric JWT signing keys](/docs/guides/auth/signing-keys) in your project.
+Learn how to [configure asymmetric JWT signing keys](../../signing-keys/index.md) in your project.
 
 **ID tokens require asymmetric signing algorithms**
 
@@ -537,6 +537,6 @@ For complete API reference, see the [OAuth methods in supabase-js](/docs/referen
 
 ## Next steps[#](#next-steps)
 
-*   [Implement MCP authentication](/docs/guides/auth/oauth-server/mcp-authentication) - Enable AI agent authentication
-*   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Control data access for OAuth clients
-*   [Learn about JWTs](/docs/guides/auth/jwts) - Understand Supabase token structure
+*   [Implement MCP authentication](../mcp-authentication/index.md) - Enable AI agent authentication
+*   [Secure with RLS](../token-security/index.md) - Control data access for OAuth clients
+*   [Learn about JWTs](../../jwts/index.md) - Understand Supabase token structure

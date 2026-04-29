@@ -10,8 +10,8 @@ content_hash: "6cf9eb3e2187af7d0d14cfc84d3f02748b3d5826206ef8ca9475f96fb65feea0"
 menu_path: ["Understanding Migrations"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../getting-started/index.md", "title": "Getting started with Prisma Migrate"}
-nav_next: {"path": "../migration-histories/index.md", "title": "Migration histories"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/getting-started/index.md", "title": "Getting started with Prisma Migrate"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories/index.md", "title": "Migration histories"}
 ---
 
 Database migrations are a controlled set of changes that modify and evolve the structure of your database schema. Migrations help you transition your database schema from one state to another. For example, within a migration you can create or remove tables and columns, split fields in a table, or add types and constraints to your database.

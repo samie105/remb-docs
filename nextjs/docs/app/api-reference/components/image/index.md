@@ -11,8 +11,8 @@ menu_path: ["Image Component"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../form/index.md", "title": "Form Component"}
-nav_next: {"path": "../link/index.md", "title": "Link Component"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/components/form/index.md", "title": "Form Component"}
+nav_next: {"path": "nextjs/docs/app/api-reference/components/link/index.md", "title": "Link Component"}
 ---
 
 # Image Component
@@ -613,7 +613,7 @@ export default function myImageLoader({ src, width, quality }) {
 
 **Example:**
 
--   [Custom Image Loader Configuration](/docs/app/api-reference/config/next-config-js/images#example-loader-configuration)
+-   [Custom Image Loader Configuration](../../config/next-config-js/images/index.md#example-loader-configuration)
 
 > Alternatively, you can use the [`loader` prop](#loader) to configure each instance of `next/image`.
 
@@ -753,7 +753,7 @@ module.exports = {
 
 #### `minimumCacheTTL`[](#minimumcachettl)
 
-`minimumCacheTTL` allows you to configure the Time to Live (TTL) in seconds for cached optimized images. In many cases, it's better to use a [Static Image Import](/docs/app/getting-started/images#local-images) which will automatically hash the file contents and cache the image forever with a `Cache-Control` header of `immutable`.
+`minimumCacheTTL` allows you to configure the Time to Live (TTL) in seconds for cached optimized images. In many cases, it's better to use a [Static Image Import](../../../getting-started/images/index.md#local-images) which will automatically hash the file contents and cache the image forever with a `Cache-Control` header of `immutable`.
 
 If no configuration is provided, the default below is used.
 
@@ -781,7 +781,7 @@ module.exports = {
 
 The expiration (or rather Max Age) of the optimized image is defined by either the `minimumCacheTTL` or the upstream image `Cache-Control` header, whichever is larger.
 
-If you need to change the caching behavior per image, you can configure [`headers`](/docs/app/api-reference/config/next-config-js/headers) to set the `Cache-Control` header on the upstream image (e.g. `/some-asset.jpg`, not `/_next/image` itself).
+If you need to change the caching behavior per image, you can configure [`headers`](../../config/next-config-js/headers/index.md) to set the `Cache-Control` header on the upstream image (e.g. `/some-asset.jpg`, not `/_next/image` itself).
 
 There is no mechanism to invalidate the cache at this time, so its best to keep `minimumCacheTTL` low. Otherwise you may need to manually change the [`src`](#src) prop or delete the cached file `<distDir>/cache/images`.
 
@@ -863,7 +863,7 @@ If no value is configured, the default behavior is to check the current availabl
 
 When the disk cache exceeds the configured size, the least recently used optimized images will be deleted until the cache is under the limit again.
 
-Alternatively, you can implement your own cache handler using [`cacheHandler`](/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath) which will ignore the `maximumDiskCacheSize` configuration.
+Alternatively, you can implement your own cache handler using [`cacheHandler`](../../config/next-config-js/incrementalCacheHandlerPath/index.md) which will ignore the `maximumDiskCacheSize` configuration.
 
 #### `maximumResponseBody`[](#maximumresponsebody)
 
@@ -936,7 +936,7 @@ module.exports = {
 By default, Next.js does not optimize SVG images for a few reasons:
 
 -   SVG is a vector format meaning it can be resized losslessly.
--   SVG has many of the same features as HTML/CSS, which can lead to vulnerabilities without proper [Content Security Policy (CSP) headers](/docs/app/api-reference/config/next-config-js/headers#content-security-policy).
+-   SVG has many of the same features as HTML/CSS, which can lead to vulnerabilities without proper [Content Security Policy (CSP) headers](../../config/next-config-js/headers/index.md#content-security-policy).
 
 We recommend using the [`unoptimized`](#unoptimized) prop when the [`src`](#src) prop is known to be SVG. This happens automatically when `src` ends with `".svg"`.
 
@@ -1059,7 +1059,7 @@ This `next/image` component uses browser native [lazy loading](https://caniuse.c
 
 Styling the Image component is similar to styling a normal `<img>` element, but there are a few guidelines to keep in mind:
 
-Use `className` or `style`, not `styled-jsx`. In most cases, we recommend using the `className` prop. This can be an imported [CSS Module](/docs/app/getting-started/css), a [global stylesheet](/docs/app/getting-started/css#global-css), etc.
+Use `className` or `style`, not `styled-jsx`. In most cases, we recommend using the `className` prop. This can be an imported [CSS Module](../../../getting-started/css/index.md), a [global stylesheet](../../../getting-started/css/index.md#global-css), etc.
 
 ```
 import styles from './styles.module.css'
@@ -1087,7 +1087,7 @@ When using `fill`, the parent element must have `position: relative` or `display
 </div>
 ```
 
-You cannot use [styled-jsx](/docs/app/guides/css-in-js) because it's scoped to the current component (unless you mark the style as `global`).
+You cannot use [styled-jsx](../../../guides/css-in-js/index.md) because it's scoped to the current component (unless you mark the style as `global`).
 
 ### Responsive images with a static export[](#responsive-images-with-a-static-export)
 
@@ -1236,7 +1236,7 @@ export default function Page() {
 }
 ```
 
-Since Next.js does not have access to remote files during the build process, you'll need to provide the [`width`](/docs/app/api-reference/components/image#width-and-height), [`height`](/docs/app/api-reference/components/image#width-and-height) and optional [`blurDataURL`](/docs/app/api-reference/components/image#blurdataurl) props manually.
+Since Next.js does not have access to remote files during the build process, you'll need to provide the [`width`](index.md#width-and-height), [`height`](index.md#width-and-height) and optional [`blurDataURL`](index.md#blurdataurl) props manually.
 
 The `width` and `height` attributes are used to infer the correct aspect ratio of image and avoid layout shift from the image loading in. The `width` and `height` do _not_ determine the rendered size of the image file.
 
@@ -1405,7 +1405,7 @@ export default function Home() {
 | `v13.4.14` | `placeholder` prop support for `data:/image...` |
 | `v13.2.0` | `contentDispositionType` configuration added. |
 | `v13.0.6` | `ref` prop added. |
-| `v13.0.0` | The `next/image` import was renamed to `next/legacy/image`. The `next/future/image` import was renamed to `next/image`. A [codemod is available](/docs/app/guides/upgrading/codemods#next-image-to-legacy-image) to safely and automatically rename your imports. `<span>` wrapper removed. `layout`, `objectFit`, `objectPosition`, `lazyBoundary`, `lazyRoot` props removed. `alt` is required. `onLoadingComplete` receives reference to `img` element. Built-in loader config removed. |
+| `v13.0.0` | The `next/image` import was renamed to `next/legacy/image`. The `next/future/image` import was renamed to `next/image`. A [codemod is available](../../../guides/upgrading/codemods/index.md#next-image-to-legacy-image) to safely and automatically rename your imports. `<span>` wrapper removed. `layout`, `objectFit`, `objectPosition`, `lazyBoundary`, `lazyRoot` props removed. `alt` is required. `onLoadingComplete` receives reference to `img` element. Built-in loader config removed. |
 | `v12.3.0` | `remotePatterns` and `unoptimized` configuration is stable. |
 | `v12.2.0` | Experimental `remotePatterns` and experimental `unoptimized` configuration added. `layout="raw"` removed. |
 | `v12.1.1` | `style` prop added. Experimental support for `layout="raw"` added. |

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:33.670Z"
 content_hash: "9126a4769072094c734842f0a2806b2360495ba6a124776201aafffab7e0415a"
 menu_path: ["Quickstart"]
 section_path: []
-nav_prev: {"path": "../project/roadmap/index.md", "title": "Roadmap"}
-nav_next: {"path": "../runtime/index.md", "title": "Bun Runtime"}
+nav_prev: {"path": "bun/docs/project/roadmap/index.md", "title": "Roadmap"}
+nav_next: {"path": "bun/docs/runtime/index.md", "title": "Bun Runtime"}
 ---
 
 ## Overview

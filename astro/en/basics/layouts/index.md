@@ -9,24 +9,24 @@ last_crawled_at: "2026-04-18T16:31:57.987Z"
 content_hash: "fb01857589d86086a19992af0e522eb1ffa6321317835cb2dd71ba7d4bdbd562"
 menu_path: ["Layouts"]
 section_path: []
-nav_prev: {"path": "../astro-components/index.md", "title": "Components"}
-nav_next: {"path": "../../guides/styling/index.md", "title": "Styles and CSS"}
+nav_prev: {"path": "astro/en/basics/astro-components/index.md", "title": "Components"}
+nav_next: {"path": "astro/en/guides/styling/index.md", "title": "Styles and CSS"}
 ---
 
 # Layouts
 
-**Layouts** are [Astro components](/en/basics/astro-components/) used to provide a reusable UI structure, such as a page template.
+**Layouts** are [Astro components](../astro-components/index.md) used to provide a reusable UI structure, such as a page template.
 
-We conventionally use the term “layout” for Astro components that provide common UI elements shared across pages such as headers, navigation bars, and footers. A typical Astro layout component provides [Astro, Markdown or MDX pages](/en/basics/astro-pages/) with:
+We conventionally use the term “layout” for Astro components that provide common UI elements shared across pages such as headers, navigation bars, and footers. A typical Astro layout component provides [Astro, Markdown or MDX pages](../astro-pages/index.md) with:
 
 *   a **page shell** (`<html>`, `<head>` and `<body>` tags)
-*   a [**`<slot />`**](/en/basics/astro-components/#slots) to specify where individual page content should be injected.
+*   a [**`<slot />`**](../astro-components/index.md#slots) to specify where individual page content should be injected.
 
-But, there is nothing special about a layout component! They can [accept props](/en/basics/astro-components/#component-props) and [import and use other components](/en/basics/astro-components/#component-structure) like any other Astro component. They can include [UI frameworks components](/en/guides/framework-components/) and [client-side scripts](/en/guides/client-side-scripts/). They do not even have to provide a full page shell, and can instead be used as partial UI templates.
+But, there is nothing special about a layout component! They can [accept props](../astro-components/index.md#component-props) and [import and use other components](../astro-components/index.md#component-structure) like any other Astro component. They can include [UI frameworks components](../../guides/framework-components/index.md) and [client-side scripts](../../guides/client-side-scripts/index.md). They do not even have to provide a full page shell, and can instead be used as partial UI templates.
 
 However, if a layout component does contain a page shell, its `<html>` element must be the parent of all other elements in the component.
 
-Layout components are commonly placed in a `src/layouts` directory in your project for organization, but this is not a requirement; you can choose to place them anywhere in your project. You can even colocate layout components alongside your pages by [prefixing the layout names with `_`](/en/guides/routing/#excluding-pages).
+Layout components are commonly placed in a `src/layouts` directory in your project for organization, but this is not a requirement; you can choose to place them anywhere in your project. You can even colocate layout components alongside your pages by [prefixing the layout names with `_`](../../guides/routing/index.md#excluding-pages).
 
 ## Sample Layout
 
@@ -40,7 +40,7 @@ Layout components are commonly placed in a `src/layouts` directory in your proje
 ---import MySiteLayout from '../layouts/MySiteLayout.astro';---<MySiteLayout title="Home Page">  <p>My page content, wrapped in a layout!</p></MySiteLayout>
 ```
 
-Learn more about [slots](/en/basics/astro-components/#slots).
+Learn more about [slots](../astro-components/index.md#slots).
 
 ## Using TypeScript with layouts
 
@@ -58,9 +58,9 @@ Any Astro layout can be modified to introduce type safety & autocompletion by pr
 
 Page layouts are especially useful for individual Markdown pages which otherwise would not have any page formatting.
 
-Astro provides a special `layout` frontmatter property intended for [individual `.md` files located within `src/pages/` using file-based routing](/en/guides/markdown-content/#individual-markdown-pages) to specify which `.astro` component to use as the page layout. This component allows you to provide `<head>` content like meta tags (e.g. `<meta charset="utf-8">`) and styles for the Markdown page. By default, this specified component can automatically access data from the Markdown file.
+Astro provides a special `layout` frontmatter property intended for [individual `.md` files located within `src/pages/` using file-based routing](../../guides/markdown-content/index.md#individual-markdown-pages) to specify which `.astro` component to use as the page layout. This component allows you to provide `<head>` content like meta tags (e.g. `<meta charset="utf-8">`) and styles for the Markdown page. By default, this specified component can automatically access data from the Markdown file.
 
-This is not recognized as a special property when using [content collections](/en/guides/content-collections/) to query and render your content.
+This is not recognized as a special property when using [content collections](../../guides/content-collections/index.md) to query and render your content.
 
 ```
 ---layout: ../layouts/BlogPostLayout.astrotitle: "Hello, World!"author: "Matthew Phillips"date: "09 Aug 2022"---All frontmatter properties are available as props to an Astro layout component.
@@ -71,13 +71,13 @@ You can use it in Markdown files located within `src/pages/`.
 A typical layout for a Markdown page includes:
 
 1.  The `frontmatter` prop to access the Markdown page’s frontmatter and other data.
-2.  A default [`<slot />`](/en/basics/astro-components/#slots) to indicate where the page’s Markdown content should be rendered.
+2.  A default [`<slot />`](../astro-components/index.md#slots) to indicate where the page’s Markdown content should be rendered.
 
 ```
 ---// 1. The frontmatter prop gives access to frontmatter and other dataconst { frontmatter } = Astro.props;---<html>  <head>    <!-- Add other Head elements here, like styles and meta tags. -->    <meta name="viewport" content="width=device-width, initial-scale=1">    <meta charset="utf-8">    <title>{frontmatter.title}</title>  </head>  <body>    <!-- Add other UI components here, like common headers and footers. -->    <h1>{frontmatter.title} by {frontmatter.author}</h1>    <!-- 2. Rendered HTML will be passed into the default slot. -->    <slot />    <p>Written on: {frontmatter.date}</p>  </body></html>
 ```
 
-You can set a layout’s [`Props` type](/en/guides/typescript/#component-props) with the `MarkdownLayoutProps` helper:
+You can set a layout’s [`Props` type](../../guides/typescript/index.md#component-props) with the `MarkdownLayoutProps` helper:
 
 ```
 ---import type { MarkdownLayoutProps } from 'astro';
@@ -122,7 +122,7 @@ Then, your values are available to you through `Astro.props` in your layout, and
 
 When using any layout (either through the frontmatter `layout` property or by importing a layout), you must include the `<meta charset="utf-8">` tag in your layout as Astro will no longer add it automatically to your MDX page.
 
-Learn more about Astro’s Markdown and MDX support in our [Markdown guide](/en/guides/markdown-content/).
+Learn more about Astro’s Markdown and MDX support in our [Markdown guide](../../guides/markdown-content/index.md).
 
 ## Nesting Layouts
 
@@ -136,4 +136,4 @@ For example, a `BlogPostLayout.astro` layout component could style a post’s ti
 ---import BaseLayout from './BaseLayout.astro';const { frontmatter } = Astro.props;---<BaseLayout url={frontmatter.url}>  <h1>{frontmatter.title}</h1>  <h2>Post author: {frontmatter.author}</h2>  <slot /></BaseLayout>
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

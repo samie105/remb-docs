@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:36.027Z"
 content_hash: "216a6670c3aa5a26dbccfc0f6507cf81a9077e716df1ca8fa1832ff42973428f"
 menu_path: ["PostgreSQL: Documentation: 18: 63.2. Index Access Method Functions"]
 section_path: []
-nav_prev: {"path": "../hash-index.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.6.\u00a0Hash Indexes"}
-nav_next: {"path": "../index-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.4.\u00a0Index Locking Considerations"}
+nav_prev: {"path": "postgres/docs/current/hash-index.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.6.\u00a0Hash Indexes"}
+nav_next: {"path": "postgres/docs/current/index-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.4.\u00a0Index Locking Considerations"}
 ---
 
 The index construction and maintenance functions that an index access method must provide in `IndexAmRoutine` are:

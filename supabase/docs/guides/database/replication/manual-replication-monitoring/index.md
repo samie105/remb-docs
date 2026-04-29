@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:55.041Z"
 content_hash: "116f776ff54f4cb93812257217f21810ebfe7af0ec17f6e995ddffa5b7c19897"
 menu_path: ["Database","Database","More","More","More","Manual replication","Manual replication","Monitoring","Monitoring"]
 section_path: ["Database","Database","More","More","More","Manual replication","Manual replication","Monitoring","Monitoring"]
-nav_prev: {"path": "../manual-replication-faq/index.md", "title": "Manual Replication FAQ"}
-nav_next: {"path": "../manual-replication-setup/index.md", "title": "Manual Replication Setup"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/manual-replication-faq/index.md", "title": "Manual Replication FAQ"}
+nav_next: {"path": "supabase/docs/guides/database/replication/manual-replication-setup/index.md", "title": "Manual Replication Setup"}
 ---
 
 # 
@@ -25,12 +25,12 @@ Track replication health and performance.
 
 Monitoring replication lag is important and there are 3 ways to do this:
 
-1.  Dashboard - Under the [Reports](/docs/guides/telemetry/reports) of the dashboard, you can view the replication lag of your project
+1.  Dashboard - Under the [Reports](../../../telemetry/reports/index.md) of the dashboard, you can view the replication lag of your project
 2.  Database -
     *   pg\_stat\_subscription (subscriber) - if PID is null, then the subscription is not active
     *   pg\_stat\_subscription\_stats - look here for error\_count to see if there were issues applying or syncing (if yes, check the logs for why)
     *   pg\_replication\_slots - use this to check if the slot is active and you can also calculate the lag from here
-3.  [Metrics](/docs/guides/telemetry/metrics) - Using the prometheus endpoint for your project
+3.  [Metrics](../../../telemetry/metrics/index.md) - Using the prometheus endpoint for your project
     *   replication\_slots\_max\_lag\_bytes - this is the more important one
     *   pg\_stat\_replication\_replay\_lag - lag to replay WAL files from the source DB on the target DB (throttled by disk or high activity)
     *   pg\_stat\_replication\_send\_lag - lag in sending WAL files from the source DB (a high lag means that the publisher is not being asked to send new WAL files OR network issues)

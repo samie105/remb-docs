@@ -11,8 +11,8 @@ menu_path: ["Generators"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../data-sources/index.md", "title": "Data sources"}
-nav_next: {"path": "../location/index.md", "title": "Schema location"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/data-sources/index.md", "title": "Data sources"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/location/index.md", "title": "Schema location"}
 ---
 
 Generators in your Prisma schema specify what assets are generated when the \`prisma generate\` command is invoked. This page explains how to configure generators

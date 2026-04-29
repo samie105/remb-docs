@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:47.329Z"
 content_hash: "03492ac409f9427fe4065426eacbc4b8b4e261602be5817fbaf8fce140904d65"
 menu_path: ["Database","Database","Debugging","Debugging","Timeouts","Timeouts"]
 section_path: ["Database","Database","Debugging","Debugging","Timeouts","Timeouts"]
-nav_prev: {"path": "../setup-replication-external/index.md", "title": "Replicate to another Postgres database using Logical Replication"}
-nav_next: {"path": "../triggers/index.md", "title": "Postgres Triggers"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/setup-replication-external/index.md", "title": "Replicate to another Postgres database using Logical Replication"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/triggers/index.md", "title": "Postgres Triggers"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Extend database timeouts to execute longer transactions
 
 * * *
 
-Dashboard and [Client](/docs/guides/api/rest/client-libs) queries have a max-configurable timeout of 60 seconds. For longer transactions, use [Supavisor or direct connections](/docs/guides/database/connecting-to-postgres#quick-summary).
+Dashboard and [Client](../../../api/rest/client-libs/index.md) queries have a max-configurable timeout of 60 seconds. For longer transactions, use [Supavisor or direct connections](../../connecting-to-postgres/index.md#quick-summary).
 
 ## Change Postgres timeout[#](#change-postgres-timeout)
 

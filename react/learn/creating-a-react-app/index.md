@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:58.802Z"
 content_hash: "f521d1d552b47fca9f873007b22ad835dc347b2faaaab2b65fd5e2fac3699281"
 menu_path: ["Creating a React App"]
 section_path: []
-nav_prev: {"path": "../installation/index.md", "title": "Installation"}
-nav_next: {"path": "../build-a-react-app-from-scratch/index.md", "title": "Build a React app from Scratch"}
+nav_prev: {"path": "react/learn/installation/index.md", "title": "Installation"}
+nav_next: {"path": "react/learn/build-a-react-app-from-scratch/index.md", "title": "Build a React app from Scratch"}
 ---
 
 If you want to build a new app or website with React, we recommend starting with a framework.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:46.988Z"
 content_hash: "092b9da760e58e5b83e4266b86e98ca00295f00de3c0a504953b21486379d09e"
 menu_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Getting started","Getting started"]
 section_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Getting started","Getting started"]
-nav_prev: {"path": "../index.md", "title": "Read Replicas"}
-nav_next: {"path": "../../regions/index.md", "title": "Available regions"}
+nav_prev: {"path": "supabase/docs/guides/platform/read-replicas/index.md", "title": "Read Replicas"}
+nav_next: {"path": "supabase/docs/guides/platform/regions/index.md", "title": "Available regions"}
 ---
 
 # 
@@ -37,9 +37,9 @@ Projects must meet these requirements to use Read Replicas:
 3.  Running on Postgres 15+.
     
     *   For projects running on older versions of Postgres, you need to [upgrade to the latest platform version](/docs/guides/platform/migrating-and-upgrading-projects#pgupgrade).
-4.  Not using [legacy logical backups](/docs/guides/platform/backups#point-in-time-recovery)
+4.  Not using [legacy logical backups](../../backups/index.md#point-in-time-recovery)
     
-    *   Physical backups are automatically enabled if using [Point in time recovery (PITR)](/docs/guides/platform/backups#point-in-time-recovery)
+    *   Physical backups are automatically enabled if using [Point in time recovery (PITR)](../../backups/index.md#point-in-time-recovery)
 
 ## Creating a Read Replica[#](#creating-a-read-replica)
 
@@ -102,7 +102,7 @@ Once the Primary database has completed restarting (or resizing, in case of a co
 The following procedures require all Read Replicas for a project to be brought down before performing them:
 
 1.  [Project upgrades](/docs/guides/platform/migrating-and-upgrading-projects#pgupgrade)
-2.  [Data restorations](/docs/guides/platform/backups#pitr-restoration-process)
+2.  [Data restorations](../../backups/index.md#pitr-restoration-process)
 
 These operations need to complete before you can re-deploy Read Replicas.
 

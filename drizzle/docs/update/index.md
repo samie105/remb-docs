@@ -10,8 +10,8 @@ content_hash: "e3f472ea1a9963edab9353277583625f6d635e88c5395c080e63ae2a94368fa3"
 menu_path: ["SQL Update"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../insert/index.md", "title": "SQL Insert"}
-nav_next: {"path": "../delete/index.md", "title": "SQL Delete"}
+nav_prev: {"path": "drizzle/docs/insert/index.md", "title": "SQL Insert"}
+nav_next: {"path": "drizzle/docs/delete/index.md", "title": "SQL Delete"}
 ---
 
 ## SQL Update

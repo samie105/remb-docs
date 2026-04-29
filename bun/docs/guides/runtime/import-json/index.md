@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:44.563Z"
 content_hash: "2cf8555dbaa26b260adf0a94b736c371512e2c6460b9d9f7d8be1700280afe5e"
 menu_path: ["Import a JSON file"]
 section_path: []
-nav_prev: {"path": "../import-html/index.md", "title": "Import a HTML file as text"}
-nav_next: {"path": "../import-json5/index.md", "title": "Import a JSON5 file"}
+nav_prev: {"path": "bun/docs/guides/runtime/import-html/index.md", "title": "Import a HTML file as text"}
+nav_next: {"path": "bun/docs/guides/runtime/import-json5/index.md", "title": "Import a JSON5 file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../import-json5/index.md", "title": "Import a JSON5 file"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun natively supports `.json` imports.
 
@@ -92,10 +92,10 @@ Codesign a single-file JavaScript executable on macOS
 
 Previous
 
-](/docs/guides/runtime/codesign-macos-executable)[
+](../codesign-macos-executable/index.md)[
 
 Import a TOML file
 
 Next
 
-](/docs/guides/runtime/import-toml)
+](../import-toml/index.md)

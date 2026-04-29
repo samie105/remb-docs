@@ -10,8 +10,8 @@ content_hash: "4bd3a0202a7c31bee5f79ddf1498673dcf30eaf6b0062edee6e75ba6b132061f"
 menu_path: ["Get Started with Drizzle and SQLite in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sqlite-cloud-new/index.md", "title": "Get Started with Drizzle and SQLite Cloud"}
-nav_next: {"path": "../sqlite-new/index.md", "title": "Get Started with Drizzle and SQLite"}
+nav_prev: {"path": "drizzle/docs/get-started/sqlite-cloud-new/index.md", "title": "Get Started with Drizzle and SQLite Cloud"}
+nav_next: {"path": "drizzle/docs/get-started/sqlite-new/index.md", "title": "Get Started with Drizzle and SQLite"}
 ---
 
 ## Get Started with Drizzle and SQLite in existing project

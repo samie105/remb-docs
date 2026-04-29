@@ -11,8 +11,8 @@ menu_path: ["Hover, focus, and other states"]
 section_path: []
 tab_variants: ["HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS","HTML","Generated CSS"]
 content_language: "en"
-nav_prev: {"path": "../styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
-nav_next: {"path": "../responsive-design/index.md", "title": "Responsive design"}
+nav_prev: {"path": "tailwind/docs/styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
+nav_next: {"path": "tailwind/docs/responsive-design/index.md", "title": "Responsive design"}
 ---
 
 Using utilities to style elements on hover, focus, and more.

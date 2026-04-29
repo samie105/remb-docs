@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:13.957Z"
 content_hash: "1e17c203090adcf2bd43415109b522a085c912c74f275872ffd26fb1fbd6ddc2"
 menu_path: ["Inferring Types"]
 section_path: []
-nav_prev: {"path": "../header/index.md", "title": "Custom header"}
-nav_next: {"path": "../invalidateQueries/index.md", "title": "invalidateQueries"}
+nav_prev: {"path": "trpc/docs/v9/header/index.md", "title": "Custom header"}
+nav_next: {"path": "trpc/docs/v9/invalidateQueries/index.md", "title": "invalidateQueries"}
 ---
 
 `// trpc-helper.ts`

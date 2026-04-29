@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:15.952Z"
 content_hash: "b6a81bff34a34e8c0603deec028fd7b6ff3be7a5c15f04b0ac4582d3fa0ea328"
 menu_path: ["animate:"]
 section_path: []
-nav_prev: {"path": "../in-and-out/index.md", "title": "in: and out:"}
-nav_next: {"path": "../style/index.md", "title": "style:"}
+nav_prev: {"path": "svelte/docs/svelte/in-and-out/index.md", "title": "in: and out:"}
+nav_next: {"path": "svelte/docs/svelte/style/index.md", "title": "style:"}
 ---
 
 An animation is triggered when the contents of a [keyed each block](each#Keyed-each-blocks) are re-ordered. Animations do not run when an element is added or removed, only when the index of an existing data item within the each block changes. Animate directives must be on an element that is an _immediate_ child of a keyed each block.
@@ -174,4 +174,4 @@ App
 
 previous next
 
-[in: and out:](/docs/svelte/in-and-out) [style:](/docs/svelte/style)
+[in: and out:](../in-and-out/index.md) [style:](../style/index.md)

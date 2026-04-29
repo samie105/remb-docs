@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:42.558Z"
 content_hash: "bacdb3ad85259c983e777ce8a49d2803c95b69531cf0931ba85f6cb99d24f7c9"
 menu_path: ["Resources"]
 section_path: []
-nav_prev: {"path": "../realtime/subscribing-to-database-changes/index.md", "title": "Subscribing to Database Changes"}
-nav_next: {"path": "glossary/index.md", "title": "Glossary"}
+nav_prev: {"path": "supabase/docs/guides/realtime/subscribing-to-database-changes/index.md", "title": "Subscribing to Database Changes"}
+nav_next: {"path": "supabase/docs/guides/resources/glossary/index.md", "title": "Glossary"}
 ---
 
 # 
@@ -31,7 +31,7 @@ Glossary
 
 Definitions for terminology and acronyms used in the Supabase documentation.
 
-](/docs/guides/resources/glossary)
+](glossary/index.md)
 
 ### Migrate to Supabase[#](#migrate-to-supabase)
 
@@ -125,28 +125,28 @@ Managing Indexes
 
 Improve query performance using various index types in Postgres.
 
-](/docs/guides/database/postgres/indexes)[
+](../database/postgres/indexes/index.md)[
 
 Cascade Deletes
 
 Understand the types of foreign key constraint deletes.
 
-](/docs/guides/database/postgres/cascade-deletes)[
+](../database/postgres/cascade-deletes/index.md)[
 
 Drop all tables in schema
 
 Delete all tables in a given schema.
 
-](/docs/guides/database/postgres/dropping-all-tables-in-schema)[
+](../database/postgres/dropping-all-tables-in-schema/index.md)[
 
 Select first row per group
 
 Retrieve the first row in each distinct group.
 
-](/docs/guides/database/postgres/first-row-in-group)[
+](../database/postgres/first-row-in-group/index.md)[
 
 Print Postgres version
 
 Find out which version of Postgres you are running.
 
-](/docs/guides/database/postgres/which-version-of-postgres)
+](../database/postgres/which-version-of-postgres/index.md)

@@ -11,8 +11,8 @@ menu_path: ["Custom Webpack Config"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../viewTransition/index.md", "title": "viewTransition"}
-nav_next: {"path": "../webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/viewTransition/index.md", "title": "viewTransition"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
 ---
 
 # Custom Webpack Config
@@ -23,10 +23,10 @@ Last updated April 23, 2026
 
 Before continuing to add custom webpack configuration to your application make sure Next.js doesn't already support your use-case:
 
--   [CSS imports](/docs/app/getting-started/css)
--   [CSS modules](/docs/app/getting-started/css#css-modules)
--   [Sass/SCSS imports](/docs/app/guides/sass)
--   [Sass/SCSS modules](/docs/app/guides/sass)
+-   [CSS imports](../../../../getting-started/css/index.md)
+-   [CSS modules](../../../../getting-started/css/index.md#css-modules)
+-   [Sass/SCSS imports](../../../../guides/sass/index.md)
+-   [Sass/SCSS modules](../../../../guides/sass/index.md)
 
 Some commonly asked for features are available as plugins:
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:23.019Z"
 content_hash: "bf4082c54fe8ebd02856eaf0fc6602ad87f90678b543e2b5b81849b8b92d3264"
 menu_path: ["Database","Database","Access and security","Access and security","Column Level Security","Column Level Security"]
 section_path: ["Database","Database","Access and security","Access and security","Column Level Security","Column Level Security"]
-nav_prev: {"path": "../cascade-deletes/index.md", "title": "Cascade Deletes"}
-nav_next: {"path": "../configuration/index.md", "title": "Database configuration"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/cascade-deletes/index.md", "title": "Cascade Deletes"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/configuration/index.md", "title": "Database configuration"}
 ---
 
 # 
@@ -38,7 +38,7 @@ For example, let's assume you have a `posts` table with the following columns:
 *   `created_at`
 *   `updated_at`
 
-You can restrict updates to just the user who created it using [RLS](/docs/guides/auth#row-level-security), with the following policy:
+You can restrict updates to just the user who created it using [RLS](../../../auth/index.md#row-level-security), with the following policy:
 
 ```
 1create policy "Allow update for owners" on posts for2update3  using ((select auth.uid()) = user_id);
@@ -83,7 +83,7 @@ You can view and edit the privileges in the [Supabase Studio](/dashboard/project
 
 ## Manage column privileges in migrations[#](#manage-column-privileges-in-migrations)
 
-While you can manage privileges directly from the Dashboard, as your project grows you may want to manage them in your migrations. Read about database migrations in the [Local Development](/docs/guides/deployment/database-migrations) guide.
+While you can manage privileges directly from the Dashboard, as your project grows you may want to manage them in your migrations. Read about database migrations in the [Local Development](../../../deployment/database-migrations/index.md) guide.
 
 1
 

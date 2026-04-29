@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:46.769Z"
 content_hash: "95fb8b7aaac38405535e4c32abb9028c6f43c0042a8149321b9b7eded902f2bd"
 menu_path: ["TypeScript"]
 section_path: []
-nav_prev: {"path": "../Type-Providers/index.md", "title": "Type-Providers"}
-nav_next: {"path": "../Validation-and-Serialization/index.md", "title": "Validation-and-Serialization"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Type-Providers/index.md", "title": "Type-Providers"}
+nav_next: {"path": "fastify/docs/latest/Reference/Validation-and-Serialization/index.md", "title": "Validation-and-Serialization"}
 ---
 
 Version: latest (v5.8.x)
@@ -114,7 +114,7 @@ The type system heavily relies on generic properties to provide the most accurat
 
 ### JSON Schema[​](#json-schema "Direct link to JSON Schema")
 
-To validate your requests and responses you can use JSON Schema files. If you didn't know already, defining schemas for your Fastify routes can increase their throughput! Check out the [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/) documentation for more info.
+To validate your requests and responses you can use JSON Schema files. If you didn't know already, defining schemas for your Fastify routes can increase their throughput! Check out the [Validation and Serialization](../Validation-and-Serialization/index.md) documentation for more info.
 
 Also it has the advantage to use the defined type within your handlers (including pre-validation, etc.).
 
@@ -129,7 +129,7 @@ Fastify offers two packages wrapping `json-schema-to-ts` and `typebox`:
 
 And a `zod` wrapper by a third party called [`fastify-type-provider-zod`](https://github.com/turkerdev/fastify-type-provider-zod)
 
-They simplify schema validation setup and you can read more about them in [Type Providers](/docs/latest/Reference/Type-Providers/) page.
+They simplify schema validation setup and you can read more about them in [Type Providers](../Type-Providers/index.md) page.
 
 Below is how to setup schema validation using the `typebox`, `json-schema-to-typescript`, and `json-schema-to-ts` packages without type providers.
 
@@ -560,7 +560,7 @@ There are two types of HTTP2 server types, insecure and secure. Both require spe
 const insecureServer = fastify({ http2: true })const secureServer = fastify({  http2: true,  https: {} // use the `key.pem` and `cert.pem` files from the https section})
 ```
 
-For more details on using HTTP2 check out the Fastify [HTTP2](/docs/latest/Reference/HTTP2/) documentation page.
+For more details on using HTTP2 check out the Fastify [HTTP2](../HTTP2/index.md) documentation page.
 
 ###### Example 4: Extended HTTP server[​](#example-4-extended-http-server "Direct link to Example 4: Extended HTTP server")
 
@@ -572,7 +572,7 @@ import fastify from 'fastify'import http from 'node:http'interface customRequest
 
 ###### Example 5: Specifying logger types[​](#example-5-specifying-logger-types "Direct link to Example 5: Specifying logger types")
 
-Fastify uses [Pino](https://getpino.io/#/) logging library under the hood. Since `pino@7`, all of it's properties can be configured via `logger` field when constructing Fastify's instance. If properties you need aren't exposed, please open an Issue to [`Pino`](https://github.com/pinojs/pino/issues) or pass a preconfigured external instance of Pino (or any other compatible logger) as temporary fix to Fastify via the same field. This allows creating custom serializers as well, see the [Logging](/docs/latest/Reference/Logging/) documentation for more info.
+Fastify uses [Pino](https://getpino.io/#/) logging library under the hood. Since `pino@7`, all of it's properties can be configured via `logger` field when constructing Fastify's instance. If properties you need aren't exposed, please open an Issue to [`Pino`](https://github.com/pinojs/pino/issues) or pass a preconfigured external instance of Pino (or any other compatible logger) as temporary fix to Fastify via the same field. This allows creating custom serializers as well, see the [Logging](../Logging/index.md) documentation for more info.
 
 ```
 import fastify from 'fastify'const server = fastify({  logger: {    level: 'info',    redact: ['x-userinfo'],    messageKey: 'message'  }})server.get('/', async (request, reply) => {  server.log.info('log message')  return 'another message'})
@@ -750,7 +750,7 @@ A loosely typed object used to constrain the `options` parameter of [`fastify.re
 
 [src](https://github.com/fastify/fastify/blob/main/types/register.d.ts#L9)
 
-This type interface specifies the type for the [`fastify.register()`](/docs/latest/Reference/Server/#register) method. The type interface returns a function signature with an underlying generic `Options` which is defaulted to [FastifyPluginOptions](#fastifyfastifypluginoptions). It infers this generic from the FastifyPlugin parameter when calling this function so there is no need to specify the underlying generic. The options parameter is the intersection of the plugin's options and two additional optional properties: `prefix: string` and `logLevel`: [LogLevel](#fastifyloglevel). `FastifyPlugin` is deprecated use `FastifyPluginCallback` and `FastifyPluginAsync` instead.
+This type interface specifies the type for the [`fastify.register()`](../Server/index.md#register) method. The type interface returns a function signature with an underlying generic `Options` which is defaulted to [FastifyPluginOptions](#fastifyfastifypluginoptions). It infers this generic from the FastifyPlugin parameter when calling this function so there is no need to specify the underlying generic. The options parameter is the intersection of the plugin's options and two additional optional properties: `prefix: string` and `logLevel`: [LogLevel](#fastifyloglevel). `FastifyPlugin` is deprecated use `FastifyPluginCallback` and `FastifyPluginAsync` instead.
 
 Below is an example of the options inference in action:
 
@@ -776,7 +776,7 @@ Check out the [Specifying Logger Types](#example-5-specifying-logger-types) exam
 
 [src](https://github.com/fastify/fastify/blob/main/types/logger.d.ts#L17)
 
-An interface definition for the internal Fastify logger. It is emulative of the [Pino.js](https://getpino.io/#/) logger. When enabled through server options, use it following the general [logger](/docs/latest/Reference/Logging/) documentation.
+An interface definition for the internal Fastify logger. It is emulative of the [Pino.js](https://getpino.io/#/) logger. When enabled through server options, use it following the general [logger](../Logging/index.md) documentation.
 
 ##### fastify.FastifyLogFn[​](#fastifyfastifylogfn "Direct link to fastify.FastifyLogFn")
 

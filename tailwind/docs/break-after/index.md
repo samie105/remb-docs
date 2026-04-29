@@ -10,8 +10,8 @@ content_hash: "1964e059911965471d3f12d03764c92da3984b8730ed25081ecd39e90a77f612"
 menu_path: ["break-after"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../columns/index.md", "title": "columns"}
-nav_next: {"path": "../break-before/index.md", "title": "break-before"}
+nav_prev: {"path": "tailwind/docs/columns/index.md", "title": "columns"}
+nav_next: {"path": "tailwind/docs/break-before/index.md", "title": "break-before"}
 ---
 
 # break-after
@@ -72,7 +72,7 @@ Prefix a `break-after` utility with a breakpoint variant like `md:` to only appl
 <div class="break-after-column md:break-after-auto ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

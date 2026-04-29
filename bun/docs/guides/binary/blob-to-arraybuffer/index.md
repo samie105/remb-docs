@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:37.447Z"
 content_hash: "dcecd11e6b216935707a38132e41ed7f6a00ced317dedae0e50bc31320b367a7"
 menu_path: ["Convert a Blob to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "../arraybuffer-to-typedarray/index.md", "title": "Convert an ArrayBuffer to a Uint8Array"}
-nav_next: {"path": "../blob-to-dataview/index.md", "title": "Convert a Blob to a DataView"}
+nav_prev: {"path": "bun/docs/guides/binary/arraybuffer-to-typedarray/index.md", "title": "Convert an ArrayBuffer to a Uint8Array"}
+nav_next: {"path": "bun/docs/guides/binary/blob-to-dataview/index.md", "title": "Convert a Blob to a DataView"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../blob-to-dataview/index.md", "title": "Convert a Blob to a
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) class provides a number of methods for consuming its contents in different formats, including `.arrayBuffer()`.
 
@@ -44,7 +44,7 @@ const buf = await blob.arrayBuffer();
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a Blob to a string
 
 Previous
 
-](/docs/guides/binary/blob-to-string)[
+](../blob-to-string/index.md)[
 
 Convert a Blob to a Uint8Array
 
 Next
 
-](/docs/guides/binary/blob-to-typedarray)
+](../blob-to-typedarray/index.md)

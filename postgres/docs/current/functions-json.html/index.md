@@ -10,8 +10,8 @@ content_hash: "dfebe36472f6425c0c790f9d7be078bbaed4d1233cec3cb4d2a8ab33eb3492cc"
 menu_path: ["PostgreSQL: Documentation: 18: 9.16. JSON Functions and Operators"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../functions-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.27.\u00a0System Information Functions and Operators"}
-nav_next: {"path": "../functions-logical.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.1.\u00a0Logical Operators"}
+nav_prev: {"path": "postgres/docs/current/functions-info.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.27.\u00a0System Information Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-logical.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.1.\u00a0Logical Operators"}
 ---
 
 `json_array_elements` ( `json` ) → `setof json`

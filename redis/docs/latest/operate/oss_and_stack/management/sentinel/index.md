@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:44.015Z"
 content_hash: "9f762b4386f99b690cec5c7b67e04c7fac2785fdf6f780bb097d1d028ed46ae4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        High availability with Redis Sentinel","→","High availability with Redis Sentinel"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        High availability with Redis Sentinel","→","High availability with Redis Sentinel"]
-nav_prev: {"path": "../security/encryption/index.md", "title": "TLS"}
-nav_next: {"path": "../troubleshooting/index.md", "title": "Troubleshooting Redis"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/encryption/index.md", "title": "TLS"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/troubleshooting/index.md", "title": "Troubleshooting Redis"}
 ---
 
 # High availability with Redis Sentinel
@@ -19,7 +19,7 @@ High availability for non-clustered Redis
 
 Redis Open Source
 
-Redis Sentinel provides high availability for Redis when not using [Redis Cluster](/docs/latest/operate/oss_and_stack/management/scaling/).
+Redis Sentinel provides high availability for Redis when not using [Redis Cluster](../scaling/index.md).
 
 Redis Sentinel also provides other collateral tasks such as monitoring, notifications and acts as a configuration provider for clients.
 
@@ -539,7 +539,7 @@ The `SENTINEL` command is the main API for Sentinel. The following is the list o
 
 For connection management and administration purposes, Sentinel supports the following subset of Redis' commands:
 
-*   **ACL** (`>= 6.2`) This command manages the Sentinel Access Control List. For more information refer to the [ACL](/docs/latest/operate/oss_and_stack/management/security/acl/) documentation page and the [_Sentinel Access Control List authentication_](#sentinel-access-control-list-authentication).
+*   **ACL** (`>= 6.2`) This command manages the Sentinel Access Control List. For more information refer to the [ACL](../security/acl/index.md) documentation page and the [_Sentinel Access Control List authentication_](#sentinel-access-control-list-authentication).
 *   **AUTH** (`>= 5.0.1`) Authenticate a client connection. For more information refer to the [`AUTH`](/commands/auth) command and the [_Configuring Sentinel instances with authentication_ section](#configuring-sentinel-instances-with-authentication).
 *   **CLIENT** This command manages client connections. For more information refer to its subcommands' pages.
 *   **COMMAND** (`>= 6.2`) This command returns information about commands. For more information refer to the [`COMMAND`](/commands/command) command and its various subcommands.
@@ -679,7 +679,7 @@ When the master is configured to require authentication from clients, as a secur
 
 ## Redis Access Control List authentication
 
-Starting with Redis 6, user authentication and permission is managed with the [Access Control List (ACL)](/docs/latest/operate/oss_and_stack/management/security/acl/).
+Starting with Redis 6, user authentication and permission is managed with the [Access Control List (ACL)](../security/acl/index.md).
 
 In order for Sentinels to connect to Redis server instances when they are configured with ACL, the Sentinel configuration must include the following directives:
 
@@ -715,7 +715,7 @@ sentinel auth-pass <master-name> <password>
 
 ## Configuring Sentinel instances with authentication
 
-Sentinel instances themselves can be secured by requiring clients to authenticate via the [`AUTH`](/commands/auth) command. Starting with Redis 6.2, the [Access Control List (ACL)](/docs/latest/operate/oss_and_stack/management/security/acl/) is available, whereas previous versions (starting with Redis 5.0.1) support password-only authentication.
+Sentinel instances themselves can be secured by requiring clients to authenticate via the [`AUTH`](/commands/auth) command. Starting with Redis 6.2, the [Access Control List (ACL)](../security/acl/index.md) is available, whereas previous versions (starting with Redis 5.0.1) support password-only authentication.
 
 Note that Sentinel's authentication configuration should be **applied to each of the instances** in your deployment, and **all instances should use the same configuration**. Furthermore, ACL and password-only authentication should not be used together.
 
@@ -768,7 +768,7 @@ Before using this configuration, make sure your client library can send the [`AU
 
 * * *
 
-Sentinel requires explicit client support, unless the system is configured to execute a script that performs a transparent redirection of all the requests to the new master instance (virtual IP or other similar systems). The topic of client libraries implementation is covered in the document [Sentinel clients guidelines](/docs/latest/develop/reference/sentinel-clients/).
+Sentinel requires explicit client support, unless the system is configured to execute a script that performs a transparent redirection of all the requests to the new master instance (virtual IP or other similar systems). The topic of client libraries implementation is covered in the document [Sentinel clients guidelines](../../../../develop/reference/sentinel-clients/index.md).
 
 ## More advanced concepts
 

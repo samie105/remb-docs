@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:58.255Z"
 content_hash: "6f8b91f4ef74e8177fe634fd112328d55c5494c98ca515dd2d890bd33058fece"
 menu_path: ["Delete a file"]
 section_path: []
-nav_prev: {"path": "../stream/index.md", "title": "Write a ReadableStream to a file"}
-nav_next: {"path": "../../../pm/bunx/index.md", "title": "bunx"}
+nav_prev: {"path": "bun/docs/guides/write-file/stream/index.md", "title": "Write a ReadableStream to a file"}
+nav_next: {"path": "bun/docs/pm/bunx/index.md", "title": "bunx"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../../pm/bunx/index.md", "title": "bunx"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.file()` function accepts a path and returns a `BunFile` instance. Use the `.delete()` method to delete the file.
 
@@ -46,7 +46,7 @@ await file.delete();
 
 * * *
 
-See [Docs > API > File I/O](/docs/runtime/file-io#reading-files-bun-file) for complete documentation of `Bun.file()`.
+See [Docs > API > File I/O](../../../runtime/file-io/index.md#reading-files-bun-file) for complete documentation of `Bun.file()`.
 
 Was this page helpful?
 
@@ -58,10 +58,10 @@ Copy a file to another location
 
 Previous
 
-](/docs/guides/write-file/file-cp)[
+](../file-cp/index.md)[
 
 Delete files
 
 Next
 
-](/docs/guides/runtime/delete-file)
+](../../runtime/delete-file/index.md)

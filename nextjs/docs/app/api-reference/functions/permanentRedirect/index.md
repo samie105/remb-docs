@@ -11,21 +11,21 @@ menu_path: ["permanentRedirect"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../not-found/index.md", "title": "notFound"}
-nav_next: {"path": "../redirect/index.md", "title": "redirect"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/not-found/index.md", "title": "notFound"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/redirect/index.md", "title": "redirect"}
 ---
 
 # permanentRedirect
 
 Last updated April 23, 2026
 
-The `permanentRedirect` function allows you to redirect the user to another URL. `permanentRedirect` can be used in Server Components, Client Components, [Route Handlers](/docs/app/api-reference/file-conventions/route), and [Server Functions](/docs/app/getting-started/mutating-data).
+The `permanentRedirect` function allows you to redirect the user to another URL. `permanentRedirect` can be used in Server Components, Client Components, [Route Handlers](../../file-conventions/route/index.md), and [Server Functions](../../../getting-started/mutating-data/index.md).
 
 When used in a streaming context, this will insert a meta tag to emit the redirect on the client side. When used in a server action, it will serve a 303 HTTP redirect response to the caller. Otherwise, it will serve a 308 (Permanent) HTTP redirect response to the caller.
 
-If a resource doesn't exist, you can use the [`notFound` function](/docs/app/api-reference/functions/not-found) instead.
+If a resource doesn't exist, you can use the [`notFound` function](../not-found/index.md) instead.
 
-> **Good to know**: If you prefer to return a 307 (Temporary) HTTP redirect instead of 308 (Permanent), you can use the [`redirect` function](/docs/app/api-reference/functions/redirect) instead.
+> **Good to know**: If you prefer to return a 307 (Temporary) HTTP redirect instead of 308 (Permanent), you can use the [`redirect` function](../redirect/index.md) instead.
 
 ## Parameters[](#parameters)
 
@@ -40,7 +40,7 @@ permanentRedirect(path, type)
 | `path` | `string` | The URL to redirect to. Can be a relative or absolute path. |
 | `type` | `'replace'` (default) or `'push'` (default in Server Actions) | The type of redirect to perform. |
 
-By default, `permanentRedirect` will use `push` (adding a new entry to the browser history stack) in [Server Actions](/docs/app/getting-started/mutating-data) and `replace` (replacing the current URL in the browser history stack) everywhere else. You can override this behavior by specifying the `type` parameter.
+By default, `permanentRedirect` will use `push` (adding a new entry to the browser history stack) in [Server Actions](../../../getting-started/mutating-data/index.md) and `replace` (replacing the current URL in the browser history stack) everywhere else. You can override this behavior by specifying the `type` parameter.
 
 The `RedirectType` object contains the available options for the `type` parameter.
 
@@ -92,6 +92,6 @@ export default async function Profile({ params }) {
 
 API Reference for the redirect function.
 
-](/docs/app/api-reference/functions/redirect)
+](../redirect/index.md)
 
 Was this helpful?

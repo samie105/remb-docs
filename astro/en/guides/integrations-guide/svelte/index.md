@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:49.747Z"
 content_hash: "5a70e2177dbfba8681a09d871d87d50baa8c91a9d80fadc695ca2da3df96f7db"
 menu_path: ["@astrojs/\n\t\t\t\t\tsvelte"]
 section_path: []
-nav_prev: {"path": "../solid-js/index.md", "title": "@astrojs/\n\t\t\t\t\tsolid-js"}
-nav_next: {"path": "../vue/index.md", "title": "@astrojs/\n\t\t\t\t\tvue"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/solid-js/index.md", "title": "@astrojs/\n\t\t\t\t\tsolid-js"}
+nav_next: {"path": "astro/en/guides/integrations-guide/vue/index.md", "title": "@astrojs/\n\t\t\t\t\tvue"}
 ---
 
 # @astrojs/ svelte
 
 v8.0.5 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/svelte/) [npm](https://www.npmjs.com/package/@astrojs/svelte) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/svelte/CHANGELOG.md)
 
-This **[Astro integration](/en/guides/integrations/)** enables rendering and client-side hydration for your [Svelte](https://svelte.dev/) 5 components. For Svelte 3 and 4 support, install `@astrojs/svelte@5` instead.
+This **[Astro integration](../../integrations/index.md)** enables rendering and client-side hydration for your [Svelte](https://svelte.dev/) 5 components. For Svelte 3 and 4 support, install `@astrojs/svelte@5` instead.
 
 ## Installation
 
@@ -79,7 +79,7 @@ export default {  preprocess: vitePreprocess(),}
 
 [Section titled “Getting started”](#getting-started)
 
-To use your first Svelte component in Astro, head to our [UI framework documentation](/en/guides/framework-components/#using-framework-components). You’ll explore:
+To use your first Svelte component in Astro, head to our [UI framework documentation](../../framework-components/index.md#using-framework-components). You’ll explore:
 
 *   📦 how framework components are loaded,
 *   💧 client-side hydration options, and
@@ -123,34 +123,34 @@ This config file will be automatically added for you when you run `astro add sve
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -158,34 +158,34 @@ This config file will be automatically added for you when you run `astro add sve
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

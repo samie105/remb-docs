@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:10.599Z"
 content_hash: "c9621002123e97fe2da8e855cf6d45ac9193e0771b6d6787b132f235592365d4"
 menu_path: ["JavaScript API ​"]
 section_path: []
-nav_prev: {"path": "../api-hmr/index.md", "title": "HMR API \u200b"}
-nav_next: {"path": "../../config/index.md", "title": "Configuring Vite \u200b"}
+nav_prev: {"path": "vite/guide/api-hmr/index.md", "title": "HMR API \u200b"}
+nav_next: {"path": "vite/config/index.md", "title": "Configuring Vite \u200b"}
 ---
 
 Vite's JavaScript APIs are fully typed, and it's recommended to use TypeScript or enable JS type checking in VS Code to leverage the intellisense and validation.

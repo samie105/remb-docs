@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:41.248Z"
 content_hash: "12866bbc2ca38f102b2597a8eb6e9fb7ff239632b4045968da01378dfc9ce136"
 menu_path: ["<svelte:head>"]
 section_path: []
-nav_prev: {"path": "../svelte-body/index.md", "title": "<svelte:body>"}
-nav_next: {"path": "../svelte-element/index.md", "title": "<svelte:element>"}
+nav_prev: {"path": "svelte/docs/svelte/svelte-body/index.md", "title": "<svelte:body>"}
+nav_next: {"path": "svelte/docs/svelte/svelte-element/index.md", "title": "<svelte:element>"}
 ---
 
 ```
@@ -32,4 +32,4 @@ As with `<svelte:window>`, `<svelte:document>` and `<svelte:body>`, this element
 
 previous next
 
-[<svelte:body>](/docs/svelte/svelte-body) [<svelte:element>](/docs/svelte/svelte-element)
+[<svelte:body>](../svelte-body/index.md) [<svelte:element>](../svelte-element/index.md)

@@ -11,8 +11,8 @@ menu_path: ["No HTML link for pages"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-head-import-in-document/index.md", "title": "No Head Import in Document"}
-nav_next: {"path": "../no-img-element/index.md", "title": "No img element"}
+nav_prev: {"path": "nextjs/docs/messages/no-head-import-in-document/index.md", "title": "No Head Import in Document"}
+nav_next: {"path": "nextjs/docs/messages/no-img-element/index.md", "title": "No img element"}
 ---
 
 # No HTML link for pages
@@ -67,7 +67,7 @@ export default Home
 
 This rule can normally locate your `pages` directory automatically.
 
-If you're working in a monorepo, we recommend configuring the [`rootDir`](/docs/pages/api-reference/config/eslint#specifying-a-root-directory-within-a-monorepo) setting in `eslint-plugin-next`, which `pagesDir` will use to locate your `pages` directory.
+If you're working in a monorepo, we recommend configuring the [`rootDir`](../../pages/api-reference/config/eslint/index.md#specifying-a-root-directory-within-a-monorepo) setting in `eslint-plugin-next`, which `pagesDir` will use to locate your `pages` directory.
 
 In some cases, you may also need to configure this rule directly by providing a `pages` directory. This can be a path or an array of paths.
 
@@ -83,6 +83,6 @@ eslint.config.json
 
 ## Useful Links[](#useful-links)
 
--   [next/link API Reference](/docs/pages/api-reference/components/link)
+-   [next/link API Reference](../../pages/api-reference/components/link/index.md)
 
 Was this helpful?

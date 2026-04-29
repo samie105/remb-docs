@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:41.651Z"
 content_hash: "edc77e50fa8e6bf7ef2f4df98f9762e10b6df6b6b51976386843ed4ec89c2311"
 menu_path: ["Strapi & Astro"]
 section_path: []
-nav_prev: {"path": "../storyblok/index.md", "title": "Storyblok & Astro"}
-nav_next: {"path": "../studiocms/index.md", "title": "StudioCMS & Astro"}
+nav_prev: {"path": "astro/en/guides/cms/storyblok/index.md", "title": "Storyblok & Astro"}
+nav_next: {"path": "astro/en/guides/cms/studiocms/index.md", "title": "StudioCMS & Astro"}
 ---
 
 # Strapi & Astro
@@ -29,7 +29,7 @@ This guide will build a wrapper function to connect Strapi with Astro.
 
 To get started, you will need to have the following:
 
-1.  **An Astro project** - If you don’t have an Astro project yet, our [Installation guide](/en/install-and-setup/) will get you up and running in no time.
+1.  **An Astro project** - If you don’t have an Astro project yet, our [Installation guide](../../../install-and-setup/index.md) will get you up and running in no time.
 2.  **A Strapi CMS server** - You can [set up a Strapi server on a local environment](https://docs.strapi.io/dev-docs/quick-start).
 
 ### Adding the Strapi URL in `.env`
@@ -60,7 +60,7 @@ Your root directory should now include the new file(s):
 *   astro.config.mjs
 *   package.json
 
-Learn more about [environment variables](/en/guides/environment-variables/) and `.env` files in Astro.
+Learn more about [environment variables](../../environment-variables/index.md) and `.env` files in Astro.
 
 ### Creating the API wrapper
 
@@ -144,7 +144,7 @@ export default interface Article {  documentId: number;  title: string;  descrip
 
 [Section titled “Generating article pages”](#generating-article-pages)
 
-Create the file `src/pages/blog/[slug].astro` to [dynamically generate a page](/en/guides/routing/#dynamic-routes) for each article.
+Create the file `src/pages/blog/[slug].astro` to [dynamically generate a page](../../routing/index.md#dynamic-routes) for each article.
 
 *   Directorysrc/
     
@@ -174,7 +174,7 @@ Create the file `src/pages/blog/[slug].astro` to [dynamically generate a page](/
 
 [Section titled “Static site generation”](#static-site-generation)
 
-In Astro’s default static mode (SSG), use [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths) to fetch your list of articles from Strapi.
+In Astro’s default static mode (SSG), use [`getStaticPaths()`](../../../reference/routing-reference/index.md#getstaticpaths) to fetch your list of articles from Strapi.
 
 ```
 ---import fetchApi from '../../lib/strapi';import type Article from '../../interfaces/article';
@@ -200,7 +200,7 @@ const article = Astro.props;---
 
 [Section titled “On-demand rendering”](#on-demand-rendering)
 
-If you’ve [opted into on-demand rendering with an adapter](/en/guides/on-demand-rendering/), [generate your dynamic routes](/en/guides/routing/#on-demand-dynamic-routes) using the following code:
+If you’ve [opted into on-demand rendering with an adapter](../../on-demand-rendering/index.md), [generate your dynamic routes](../../routing/index.md#on-demand-dynamic-routes) using the following code:
 
 Create the `src/pages/blog/[slug].astro` file:
 
@@ -229,7 +229,7 @@ If the article is not found, the user will be redirected to this 404 page and be
 
 [Section titled “Publishing your site”](#publishing-your-site)
 
-To deploy your website, visit our [deployment guides](/en/guides/deploy/) and follow the instructions for your preferred hosting provider.
+To deploy your website, visit our [deployment guides](../../deploy/index.md) and follow the instructions for your preferred hosting provider.
 
 #### Rebuild on changes
 
@@ -281,7 +281,7 @@ Follow [the Strapi webhooks guide](https://strapi.io/blog/webhooks) to create a 
 
 *   ![](/logos/cloudcannon.svg)
     
-    ### [CloudCannon](/en/guides/cms/cloudcannon/)
+    ### [CloudCannon](../cloudcannon/index.md)
     
     Git-based CMS built for speed, security, and zero headaches.
     
@@ -290,171 +290,171 @@ Follow [the Strapi webhooks guide](https://strapi.io/blog/webhooks) to create a 
 
 *   ![](/logos/apostrophecms.svg)
     
-    ### [ApostropheCMS](/en/guides/cms/apostrophecms/)
+    ### [ApostropheCMS](../apostrophecms/index.md)
     
 *   ![](/logos/builderio.svg)
     
-    ### [Builder.io](/en/guides/cms/builderio/)
+    ### [Builder.io](../builderio/index.md)
     
 *   ![](/logos/buttercms.svg)
     
-    ### [ButterCMS](/en/guides/cms/buttercms/)
+    ### [ButterCMS](../buttercms/index.md)
     
 *   ![](/logos/caisy.svg)
     
-    ### [Caisy](/en/guides/cms/caisy/)
+    ### [Caisy](../caisy/index.md)
     
 *   ![](/logos/cloudcannon.svg)
     
-    ### [CloudCannon](/en/guides/cms/cloudcannon/)
+    ### [CloudCannon](../cloudcannon/index.md)
     
 *   ![](/logos/contentful.svg)
     
-    ### [Contentful](/en/guides/cms/contentful/)
+    ### [Contentful](../contentful/index.md)
     
 *   ![](/logos/cosmic.svg)
     
-    ### [Cosmic](/en/guides/cms/cosmic/)
+    ### [Cosmic](../cosmic/index.md)
     
 *   ![](/logos/craft-cms.svg)
     
-    ### [Craft CMS](/en/guides/cms/craft-cms/)
+    ### [Craft CMS](../craft-cms/index.md)
     
 *   ![](/logos/craft-cross-cms.svg)
     
-    ### [Craft Cross CMS](/en/guides/cms/craft-cross-cms/)
+    ### [Craft Cross CMS](../craft-cross-cms/index.md)
     
 *   ![](/logos/crystallize.svg)
     
-    ### [Crystallize](/en/guides/cms/crystallize/)
+    ### [Crystallize](../crystallize/index.md)
     
 *   ![](/logos/datocms.svg)
     
-    ### [DatoCMS](/en/guides/cms/datocms/)
+    ### [DatoCMS](../datocms/index.md)
     
 *   ![](/logos/decap-cms.svg)
     
-    ### [Decap CMS](/en/guides/cms/decap-cms/)
+    ### [Decap CMS](../decap-cms/index.md)
     
 *   ![](/logos/directus.svg)
     
-    ### [Directus](/en/guides/cms/directus/)
+    ### [Directus](../directus/index.md)
     
 *   ![](/logos/drupal.svg)
     
-    ### [Drupal](/en/guides/cms/drupal/)
+    ### [Drupal](../drupal/index.md)
     
 *   ![](/logos/flotiq.svg)
     
-    ### [Flotiq](/en/guides/cms/flotiq/)
+    ### [Flotiq](../flotiq/index.md)
     
 *   ![](/logos/frontmatter-cms.svg)
     
-    ### [Front Matter CMS](/en/guides/cms/frontmatter-cms/)
+    ### [Front Matter CMS](../frontmatter-cms/index.md)
     
 *   ![](/logos/ghost.png)
     
-    ### [Ghost](/en/guides/cms/ghost/)
+    ### [Ghost](../ghost/index.md)
     
 *   ![](/logos/gitcms.svg)
     
-    ### [GitCMS](/en/guides/cms/gitcms/)
+    ### [GitCMS](../gitcms/index.md)
     
 *   ![](/logos/hashnode.png)
     
-    ### [Hashnode](/en/guides/cms/hashnode/)
+    ### [Hashnode](../hashnode/index.md)
     
 *   ![](/logos/hygraph.svg)
     
-    ### [Hygraph](/en/guides/cms/hygraph/)
+    ### [Hygraph](../hygraph/index.md)
     
 *   ![](/logos/jekyllpad.svg)
     
-    ### [JekyllPad](/en/guides/cms/jekyllpad/)
+    ### [JekyllPad](../jekyllpad/index.md)
     
 *   ![](/logos/keystatic.svg)
     
-    ### [Keystatic](/en/guides/cms/keystatic/)
+    ### [Keystatic](../keystatic/index.md)
     
 *   ![](/logos/keystonejs.svg)
     
-    ### [KeystoneJS](/en/guides/cms/keystonejs/)
+    ### [KeystoneJS](../keystonejs/index.md)
     
 *   ![](/logos/kontent-ai.svg)
     
-    ### [Kontent.ai](/en/guides/cms/kontent-ai/)
+    ### [Kontent.ai](../kontent-ai/index.md)
     
 *   ![](/logos/microcms.svg)
     
-    ### [microCMS](/en/guides/cms/microcms/)
+    ### [microCMS](../microcms/index.md)
     
 *   ![](/logos/optimizely.svg)
     
-    ### [Optimizely CMS](/en/guides/cms/optimizely/)
+    ### [Optimizely CMS](../optimizely/index.md)
     
 *   ![](/logos/pages-cms.svg)
     
-    ### [Pages CMS](/en/guides/cms/pages-cms/)
+    ### [Pages CMS](../pages-cms/index.md)
     
 *   ![](/logos/payload.svg)
     
-    ### [Payload CMS](/en/guides/cms/payload/)
+    ### [Payload CMS](../payload/index.md)
     
 *   ![](/logos/preprcms.svg)
     
-    ### [Prepr CMS](/en/guides/cms/preprcms/)
+    ### [Prepr CMS](../preprcms/index.md)
     
 *   ![](/logos/prismic.svg)
     
-    ### [Prismic](/en/guides/cms/prismic/)
+    ### [Prismic](../prismic/index.md)
     
 *   ![](/logos/sanity.svg)
     
-    ### [Sanity](/en/guides/cms/sanity/)
+    ### [Sanity](../sanity/index.md)
     
 *   ![](/logos/sitecore.svg)
     
-    ### [Sitecore XM](/en/guides/cms/sitecore/)
+    ### [Sitecore XM](../sitecore/index.md)
     
 *   ![](/logos/sitepins.svg)
     
-    ### [Sitepins](/en/guides/cms/sitepins/)
+    ### [Sitepins](../sitepins/index.md)
     
 *   ![](/logos/spinal.svg)
     
-    ### [Spinal](/en/guides/cms/spinal/)
+    ### [Spinal](../spinal/index.md)
     
 *   ![](/logos/statamic.svg)
     
-    ### [Statamic](/en/guides/cms/statamic/)
+    ### [Statamic](../statamic/index.md)
     
 *   ![](/logos/storyblok.svg)
     
-    ### [Storyblok](/en/guides/cms/storyblok/)
+    ### [Storyblok](../storyblok/index.md)
     
 *   ![](/logos/strapi.svg)
     
-    ### [Strapi](/en/guides/cms/strapi/)
+    ### [Strapi](index.md)
     
 *   ![](/logos/studiocms.svg)
     
-    ### [StudioCMS](/en/guides/cms/studiocms/)
+    ### [StudioCMS](../studiocms/index.md)
     
 *   ![](/logos/tina-cms.svg)
     
-    ### [Tina CMS](/en/guides/cms/tina-cms/)
+    ### [Tina CMS](../tina-cms/index.md)
     
 *   ![](/logos/umbraco.svg)
     
-    ### [Umbraco](/en/guides/cms/umbraco/)
+    ### [Umbraco](../umbraco/index.md)
     
 *   ![](/logos/vault-cms.svg)
     
-    ### [Vault CMS](/en/guides/cms/vault-cms/)
+    ### [Vault CMS](../vault-cms/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [Wordpress](/en/guides/cms/wordpress/)
+    ### [Wordpress](../wordpress/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

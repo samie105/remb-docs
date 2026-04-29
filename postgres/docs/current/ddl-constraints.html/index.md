@@ -10,8 +10,8 @@ content_hash: "59db3fbe3c32ab2345864d14c460c48ad7a88adbc3e7cb0a2391e3dbb6ff03ef"
 menu_path: ["PostgreSQL: Documentation: 18: 5.5. Constraints"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../ddl-basics.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.1.\u00a0Table Basics"}
-nav_next: {"path": "../ddl-default.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.2.\u00a0Default Values"}
+nav_prev: {"path": "postgres/docs/current/ddl-basics.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.1.\u00a0Table Basics"}
+nav_next: {"path": "postgres/docs/current/ddl-default.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.2.\u00a0Default Values"}
 ---
 
 Data types are a way to limit the kind of data that can be stored in a table. For many applications, however, the constraint they provide is too coarse. For example, a column containing a product price should probably only accept positive values. But there is no standard data type that accepts only positive numbers. Another issue is that you might want to constrain column data with respect to other columns or rows. For example, in a table containing product information, there should be only one row for each product number.

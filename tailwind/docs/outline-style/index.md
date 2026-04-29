@@ -10,8 +10,8 @@ content_hash: "56d42c9ee1a97159ce81b6b48719c7f32fe6b4eb474f272c9d15961339129be5"
 menu_path: ["outline-style"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../outline-color/index.md", "title": "outline-color"}
-nav_next: {"path": "../outline-offset/index.md", "title": "outline-offset"}
+nav_prev: {"path": "tailwind/docs/outline-color/index.md", "title": "outline-color"}
+nav_next: {"path": "tailwind/docs/outline-offset/index.md", "title": "outline-offset"}
 ---
 
 Utilities for controlling the style of an element's outline.

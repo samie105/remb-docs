@@ -10,8 +10,8 @@ content_hash: "b795035e0a9806ba42264a74d415ffb1cce0433ac6845c31500ed3dc311a4bee"
 menu_path: ["OpenTelemetry"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../ffi/index.md", "title": "Foreign Function Interface (FFI)"}
-nav_next: {"path": "../stability_and_releases/index.md", "title": "Stability and releases"}
+nav_prev: {"path": "deno/runtime/fundamentals/ffi/index.md", "title": "Foreign Function Interface (FFI)"}
+nav_next: {"path": "deno/runtime/fundamentals/stability_and_releases/index.md", "title": "Stability and releases"}
 ---
 
 **On this page**

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:06.026Z"
 content_hash: "c59e68bfa83bf30c18615ebcd4bcca58c0043a7a63adc5cd8757434fb3a6bbfe"
 menu_path: ["Set up with Next.js"]
 section_path: []
-nav_prev: {"path": "../server-side-helpers/index.md", "title": "Server-Side Helpers"}
-nav_next: {"path": "../ssg/index.md", "title": "Static Site Generation"}
+nav_prev: {"path": "trpc/docs/v10/client/nextjs/server-side-helpers/index.md", "title": "Server-Side Helpers"}
+nav_next: {"path": "trpc/docs/v10/client/nextjs/ssg/index.md", "title": "Static Site Generation"}
 ---
 
 ## Recommended file structure[​](#recommended-file-structure "Direct link to Recommended file structure")

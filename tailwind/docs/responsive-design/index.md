@@ -10,8 +10,8 @@ content_hash: "9d1626e0fd92168013874e395c35b085fa280d4c9c85798d7e666eb26b4360dc"
 menu_path: ["Responsive design"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
-nav_next: {"path": "../dark-mode/index.md", "title": "Dark mode"}
+nav_prev: {"path": "tailwind/docs/hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
+nav_next: {"path": "tailwind/docs/dark-mode/index.md", "title": "Dark mode"}
 ---
 
 Using responsive utility variants to build adaptive user interfaces.

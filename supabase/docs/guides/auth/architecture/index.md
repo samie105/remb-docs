@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:01.588Z"
 content_hash: "1650c59db8dac9573c855fee24804180fbda8bbc0fd495863cea4c6bcd213f54"
 menu_path: ["Auth","Auth","Architecture","Architecture"]
 section_path: ["Auth","Auth","Architecture","Architecture"]
-nav_prev: {"path": "../index.md", "title": "Auth"}
-nav_next: {"path": "../audit-logs/index.md", "title": "Auth Audit Logs"}
+nav_prev: {"path": "supabase/docs/guides/auth/index.md", "title": "Auth"}
+nav_next: {"path": "supabase/docs/guides/auth/audit-logs/index.md", "title": "Auth Audit Logs"}
 ---
 
 # 
@@ -73,7 +73,7 @@ The Auth service is responsible for:
 
 Supabase Auth uses the `auth` schema in your Postgres database to store user tables and other information. For security, this schema is not exposed on the auto-generated API.
 
-You can connect Auth information to your own objects using [database triggers](/docs/guides/database/postgres/triggers) and [foreign keys](https://www.postgresql.org/docs/current/tutorial-fk.html). Make sure that any views you create for Auth data are adequately protected by [enabling RLS](/docs/guides/database/postgres/row-level-security) or [revoking grants](https://www.postgresql.org/docs/current/sql-revoke.html).
+You can connect Auth information to your own objects using [database triggers](../../database/postgres/triggers/index.md) and [foreign keys](https://www.postgresql.org/docs/current/tutorial-fk.html). Make sure that any views you create for Auth data are adequately protected by [enabling RLS](../../database/postgres/row-level-security/index.md) or [revoking grants](https://www.postgresql.org/docs/current/sql-revoke.html).
 
 Make sure any views you create for Auth data are protected.
 

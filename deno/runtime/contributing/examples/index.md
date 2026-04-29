@@ -10,8 +10,8 @@ content_hash: "d234e452d6e14e5f310fd0c06784922da32f42982e5a37807a5305e9cbca971f"
 menu_path: ["Contributing an example"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../docs/index.md", "title": "Documentation guidelines"}
-nav_next: {"path": "../../help/index.md", "title": "Where to get help"}
+nav_prev: {"path": "deno/runtime/contributing/docs/index.md", "title": "Documentation guidelines"}
+nav_next: {"path": "deno/runtime/help/index.md", "title": "Where to get help"}
 ---
 
 **On this page**

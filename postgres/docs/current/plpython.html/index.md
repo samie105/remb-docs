@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:39.730Z"
 content_hash: "c125789e5018d3ac0344af231af164b649ff83c08f5a3ab42bfb86358eaecd46"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 44. PL/Python — Python Procedural Language"]
 section_path: []
-nav_prev: {"path": "../plperl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a043.\u00a0PL/Perl \u2014 Perl Procedural Language"}
-nav_next: {"path": "../bgworker.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a046.\u00a0Background Worker Processes"}
+nav_prev: {"path": "postgres/docs/current/plperl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a043.\u00a0PL/Perl \u2014 Perl Procedural Language"}
+nav_next: {"path": "postgres/docs/current/bgworker.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a046.\u00a0Background Worker Processes"}
 ---
 
 The PL/Python procedural language allows PostgreSQL functions and procedures to be written in the [Python language](https://www.python.org/).

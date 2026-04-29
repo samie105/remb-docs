@@ -10,8 +10,8 @@ content_hash: "c8021e7345668825d10b63f80584a050d9082f2ccd9141d11ea7af60194551f0"
 menu_path: ["deno lint"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../jupyter/index.md", "title": "Jupyter Kernel for Deno"}
-nav_next: {"path": "../outdated/index.md", "title": "deno outdated"}
+nav_prev: {"path": "deno/runtime/reference/cli/jupyter/index.md", "title": "Jupyter Kernel for Deno"}
+nav_next: {"path": "deno/runtime/reference/cli/outdated/index.md", "title": "deno outdated"}
 ---
 
 **On this page**
@@ -31,7 +31,7 @@ nav_next: {"path": "../outdated/index.md", "title": "deno outdated"}
 -   [Options](#options)
 -   [File watching options](#file-watching-options)
 
-Deno ships with a built-in linter that analyzes your code for potential errors, bugs, and stylistic issues. For a broader overview, see [Linting and Formatting](/runtime/fundamentals/linting_and_formatting/).
+Deno ships with a built-in linter that analyzes your code for potential errors, bugs, and stylistic issues. For a broader overview, see [Linting and Formatting](../../../fundamentals/linting_and_formatting/index.md).
 
 ## Basic usage
 
@@ -107,7 +107,7 @@ deno.json
 -   **`include`** — additional individual rules to enable
 -   **`exclude`** — rules to disable even if included by a tag
 
-See the [Configuration](/runtime/fundamentals/configuration/#linting) page for all available options.
+See the [Configuration](../../../fundamentals/configuration/index.md#linting) page for all available options.
 
 ## Including and excluding files
 
@@ -134,7 +134,7 @@ deno lint --ignore=dist/,build/
 
 ## Lint plugins
 
-You can extend the linter with custom rules using [lint plugins](/runtime/reference/lint_plugins/).
+You can extend the linter with custom rules using [lint plugins](../../lint_plugins/index.md).
 
 ## Ignore directives
 

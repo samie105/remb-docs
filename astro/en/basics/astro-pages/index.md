@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:56.554Z"
 content_hash: "a72cad35368337be037e487efd20343377a91956db65f9e38e8ef757f8c7f235"
 menu_path: ["Pages"]
 section_path: []
-nav_prev: {"path": "../../guides/dev-toolbar/index.md", "title": "Dev toolbar"}
-nav_next: {"path": "../../guides/routing/index.md", "title": "Routing"}
+nav_prev: {"path": "astro/en/guides/dev-toolbar/index.md", "title": "Dev toolbar"}
+nav_next: {"path": "astro/en/guides/routing/index.md", "title": "Routing"}
 ---
 
 # Pages
@@ -25,9 +25,9 @@ Astro supports the following file types in the `src/pages/` directory:
 
 *   [`.astro`](#astro-pages)
 *   [`.md`](#markdownmdx-pages)
-*   `.mdx` (with the [MDX Integration installed](/en/guides/integrations-guide/mdx/#installation))
+*   `.mdx` (with the [MDX Integration installed](../../guides/integrations-guide/mdx/index.md#installation))
 *   [`.html`](#html-pages)
-*   `.js`/`.ts` (as [endpoints](/en/guides/endpoints/))
+*   `.js`/`.ts` (as [endpoints](../../guides/endpoints/index.md))
 
 ## File-based routing
 
@@ -35,9 +35,9 @@ Astro supports the following file types in the `src/pages/` directory:
 
 Astro leverages a routing strategy called **file-based routing**. Each file in your `src/pages/` directory becomes an endpoint on your site based on its file path.
 
-A single file can also generate multiple pages using [dynamic routing](/en/guides/routing/#dynamic-routes). This allows you to create pages even if your content lives outside of the special `/pages/` directory, such as in a [content collection](/en/guides/content-collections/) or a [CMS](/en/guides/cms/).
+A single file can also generate multiple pages using [dynamic routing](../../guides/routing/index.md#dynamic-routes). This allows you to create pages even if your content lives outside of the special `/pages/` directory, such as in a [content collection](../../guides/content-collections/index.md) or a [CMS](../../guides/cms/index.md).
 
-Read more about [Routing in Astro](/en/guides/routing/).
+Read more about [Routing in Astro](../../guides/routing/index.md).
 
 ### Link between pages
 
@@ -55,7 +55,7 @@ Read more <a href="/authors/sonali/">about Sonali</a>.
 
 [Section titled “Astro Pages”](#astro-pages)
 
-Astro pages use the `.astro` file extension and support the same features as [Astro components](/en/basics/astro-components/).
+Astro pages use the `.astro` file extension and support the same features as [Astro components](../astro-components/index.md).
 
 ```
 ------<html lang="en">  <head>    <title>My Homepage</title>  </head>  <body>    <h1>Welcome to my website!</h1>  </body></html>
@@ -63,34 +63,34 @@ Astro pages use the `.astro` file extension and support the same features as [As
 
 A page must produce a full HTML document. If not explicitly included, Astro will add the necessary `<!DOCTYPE html>` declaration and `<head>` content to any `.astro` component located within `src/pages/` by default. You can opt-out of this behavior on a per-component basis by marking it as a [partial](#page-partials) page.
 
-To avoid repeating the same HTML elements on every page, you can move common `<head>` and `<body>` elements into your own [layout components](/en/basics/layouts/). You can use as many or as few layout components as you’d like.
+To avoid repeating the same HTML elements on every page, you can move common `<head>` and `<body>` elements into your own [layout components](../layouts/index.md). You can use as many or as few layout components as you’d like.
 
 ```
 ---import MySiteLayout from "../layouts/MySiteLayout.astro";---<MySiteLayout>  <p>My page content, wrapped in a layout!</p></MySiteLayout>
 ```
 
-Read more about [layout components](/en/basics/layouts/) in Astro.
+Read more about [layout components](../layouts/index.md) in Astro.
 
 ## Markdown/MDX Pages
 
 [Section titled “Markdown/MDX Pages”](#markdownmdx-pages)
 
-Astro also treats any Markdown (`.md`) files inside of `src/pages/` as pages in your final website. If you have the [MDX Integration installed](/en/guides/integrations-guide/mdx/#installation), it also treats MDX (`.mdx`) files the same way.
+Astro also treats any Markdown (`.md`) files inside of `src/pages/` as pages in your final website. If you have the [MDX Integration installed](../../guides/integrations-guide/mdx/index.md#installation), it also treats MDX (`.mdx`) files the same way.
 
-Markdown files can use the special `layout` frontmatter property to specify a [layout component](/en/basics/layouts/) that will wrap their Markdown content in a full `<html>...</html>` page document.
+Markdown files can use the special `layout` frontmatter property to specify a [layout component](../layouts/index.md) that will wrap their Markdown content in a full `<html>...</html>` page document.
 
 ```
 ---layout: ../layouts/MySiteLayout.astrotitle: My Markdown page---# Title
 This is my page, written in **Markdown.**
 ```
 
-Read more about [Markdown](/en/guides/markdown-content/) in Astro.
+Read more about [Markdown](../../guides/markdown-content/index.md) in Astro.
 
 ## HTML Pages
 
 [Section titled “HTML Pages”](#html-pages)
 
-Files with the `.html` file extension can be placed in the `src/pages/` directory and used directly as pages on your site. Note that some key Astro features are not supported in [HTML Components](/en/basics/astro-components/#html-components).
+Files with the `.html` file extension can be placed in the `src/pages/` directory and used directly as pages on your site. Note that some key Astro features are not supported in [HTML Components](../astro-components/index.md#html-components).
 
 ## Custom 404 Error Page
 
@@ -98,13 +98,13 @@ Files with the `.html` file extension can be placed in the `src/pages/` director
 
 For a custom 404 error page, you can create a `404.astro` or `404.md` file in `src/pages`.
 
-This will build to a `404.html` page. Most [deploy services](/en/guides/deploy/) will find and use it.
+This will build to a `404.html` page. Most [deploy services](../../guides/deploy/index.md) will find and use it.
 
 ## Custom 500 Error Page
 
 [Section titled “Custom 500 Error Page”](#custom-500-error-page)
 
-For a custom 500 error page to show for pages that are [rendered on demand](/en/guides/on-demand-rendering/), create the file `src/pages/500.astro`. This custom page is not available for prerendered pages.
+For a custom 500 error page to show for pages that are [rendered on demand](../../guides/on-demand-rendering/index.md), create the file `src/pages/500.astro`. This custom page is not available for prerendered pages.
 
 If an error occurs rendering this page, your host’s default 500 error page will be shown to your visitor.
 
@@ -141,9 +141,9 @@ Like components located outside of this folder, these files do not automatically
 
 However, because they are located in the special `src/pages/` directory, the generated HTML is available at a URL corresponding to its file path. This allows a rendering library (e.g. [htmx](https://htmx.org/), [Stimulus](https://stimulus.hotwired.dev/), [jQuery](https://jquery.com/)) to access it on the client and load sections of HTML dynamically on a page without a browser refresh or page navigation.
 
-Partials, when combined with a rendering library, provide an alternative to [Astro islands](/en/concepts/islands/) and [`<script>` tags](/en/guides/client-side-scripts/) for building dynamic content in Astro.
+Partials, when combined with a rendering library, provide an alternative to [Astro islands](../../concepts/islands/index.md) and [`<script>` tags](../../guides/client-side-scripts/index.md) for building dynamic content in Astro.
 
-Page files that can export a value for [`partial`](/en/reference/routing-reference/#partial) (e.g. `.astro` and `.mdx`, but not `.md`) can be marked as partials.
+Page files that can export a value for [`partial`](../../reference/routing-reference/index.md#partial) (e.g. `.astro` and `.mdx`, but not `.md`) can be marked as partials.
 
 ```
 ---export const partial = true;---<li>I'm a partial!</li>
@@ -170,4 +170,4 @@ The `.astro` partial must exist at the corresponding file path, and include an e
 
 See the [htmx documentation](https://htmx.org/docs/) for more details on using htmx.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

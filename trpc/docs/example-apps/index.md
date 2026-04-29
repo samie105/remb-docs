@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:26.086Z"
 content_hash: "af14119a7f58afc8f78157236893ba7914a479cef5101597cf41af1ba85d2eca"
 menu_path: ["Example Apps"]
 section_path: []
-nav_prev: {"path": "../concepts/index.md", "title": "Concepts"}
-nav_next: {"path": "../client/index.md", "title": "tRPC Client"}
+nav_prev: {"path": "trpc/docs/concepts/index.md", "title": "Concepts"}
+nav_next: {"path": "trpc/docs/client/index.md", "title": "tRPC Client"}
 ---
 
 ## Official[​](#official "Direct link to Official")

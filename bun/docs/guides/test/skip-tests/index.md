@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:03.546Z"
 content_hash: "6d65abf5b5d90fabf50bc6165c20049402fd45ee44ed9ea12d12c77c88ca6079"
 menu_path: ["Skip tests with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "../run-tests/index.md", "title": "Run your tests with the Bun test runner"}
-nav_next: {"path": "../snapshot/index.md", "title": "Use snapshot testing in `bun test`"}
+nav_prev: {"path": "bun/docs/guides/test/run-tests/index.md", "title": "Run your tests with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/snapshot/index.md", "title": "Use snapshot testing in `bun test`"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../snapshot/index.md", "title": "Use snapshot testing in `bu
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To skip a test with the Bun test runner, use the `test.skip` function.
 
@@ -74,8 +74,8 @@ Ran 3 tests across 1 files. [74.00ms]
 
 See also:
 
-*   [Mark a test as a todo](/docs/guides/test/todo-tests)
-*   [Docs > Test runner > Writing tests](/docs/test/writing-tests)
+*   [Mark a test as a todo](../todo-tests/index.md)
+*   [Docs > Test runner > Writing tests](../../../test/writing-tests/index.md)
 
 Was this page helpful?
 
@@ -87,10 +87,10 @@ Selectively run tests concurrently with glob patterns
 
 Previous
 
-](/docs/guides/test/concurrent-test-glob)[
+](../concurrent-test-glob/index.md)[
 
 Mark a test as a "todo" with the Bun test runner
 
 Next
 
-](/docs/guides/test/todo-tests)
+](../todo-tests/index.md)

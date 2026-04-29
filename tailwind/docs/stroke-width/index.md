@@ -10,8 +10,8 @@ content_hash: "b0a56097bb0bcc62e4168835f874e1c6902e772c6b0a567234424d79e7fb7544"
 menu_path: ["stroke-width"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../stroke/index.md", "title": "stroke"}
-nav_next: {"path": "../forced-color-adjust/index.md", "title": "forced-color-adjust"}
+nav_prev: {"path": "tailwind/docs/stroke/index.md", "title": "stroke"}
+nav_next: {"path": "tailwind/docs/forced-color-adjust/index.md", "title": "forced-color-adjust"}
 ---
 
 # stroke-width
@@ -63,7 +63,7 @@ Prefix a `stroke-width` utility with a breakpoint variant like `md:` to only app
 <div class="stroke-1 md:stroke-2 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

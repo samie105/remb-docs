@@ -9,19 +9,19 @@ last_crawled_at: "2026-04-18T16:40:04.209Z"
 content_hash: "5a5db1b3a1af1173e83c020edd298178e28916e304555d04f196ff578c58a7d8"
 menu_path: ["@astrojs/\n\t\t\t\t\tvercel"]
 section_path: []
-nav_prev: {"path": "../node/index.md", "title": "@astrojs/\n\t\t\t\t\tnode"}
-nav_next: {"path": "../db/index.md", "title": "@astrojs/\n\t\t\t\t\tdb"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/node/index.md", "title": "@astrojs/\n\t\t\t\t\tnode"}
+nav_next: {"path": "astro/en/guides/integrations-guide/db/index.md", "title": "@astrojs/\n\t\t\t\t\tdb"}
 ---
 
 # @astrojs/ vercel
 
 v10.0.4 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/vercel/) [npm](https://www.npmjs.com/package/@astrojs/vercel) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/vercel/CHANGELOG.md)
 
-This adapter allows Astro to deploy your [on-demand rendered routes and features](/en/guides/on-demand-rendering/) to [Vercel](https://www.vercel.com/), including [server islands](/en/guides/server-islands/), [actions](/en/guides/actions/), and [sessions](/en/guides/sessions/).
+This adapter allows Astro to deploy your [on-demand rendered routes and features](../../on-demand-rendering/index.md) to [Vercel](https://www.vercel.com/), including [server islands](../../server-islands/index.md), [actions](../../actions/index.md), and [sessions](../../sessions/index.md).
 
 If you’re using Astro as a static site builder, you only need this adapter if you are using additional Vercel services (e.g. [Vercel Web Analytics](https://vercel.com/docs/analytics), [Vercel Image Optimization](https://vercel.com/docs/image-optimization)). Otherwise, you do not need an adapter to deploy your static site.
 
-Learn how to deploy your Astro site in our [Vercel deployment guide](/en/guides/deploy/vercel/).
+Learn how to deploy your Astro site in our [Vercel deployment guide](../../deploy/vercel/index.md).
 
 ## Why Astro Vercel?
 
@@ -45,7 +45,7 @@ Add the Vercel adapter to enable on-demand rendering in your Astro project with 
 npx astro add vercel
 ```
 
-Now, you can enable [on-demand rendering per page](/en/guides/on-demand-rendering/#enabling-on-demand-rendering), or set your build output configuration to `output: 'server'` to [server-render all your pages by default](/en/guides/on-demand-rendering/#server-mode).
+Now, you can enable [on-demand rendering per page](../../on-demand-rendering/index.md#enabling-on-demand-rendering), or set your build output configuration to `output: 'server'` to [server-render all your pages by default](../../on-demand-rendering/index.md#server-mode).
 
 ### Manual Install
 
@@ -72,7 +72,7 @@ export default defineConfig({  // ...  adapter: vercel(),});
 
 [Section titled “Usage”](#usage)
 
-Find out more about [deploying your project to Vercel](/en/guides/deploy/vercel/).
+Find out more about [deploying your project to Vercel](../../deploy/vercel/index.md).
 
 You can deploy by CLI (`vercel deploy`) or by connecting your new repo in the [Vercel Dashboard](https://vercel.com/). Alternatively, you can create a production build locally:
 
@@ -115,7 +115,7 @@ export default defineConfig({  // ...  adapter: vercel({    webAnalytics: {     
 
 Configuration options for [Vercel’s Image Optimization API](https://vercel.com/docs/concepts/image-optimization). See [Vercel’s image configuration documentation](https://vercel.com/docs/build-output-api/v3/configuration#images) for a complete list of supported parameters.
 
-The `domains` and `remotePatterns` properties will automatically be filled using [the Astro corresponding `image` settings](/en/reference/configuration-reference/#image-options).
+The `domains` and `remotePatterns` properties will automatically be filled using [the Astro corresponding `image` settings](../../../reference/configuration-reference/index.md#image-options).
 
 ```
 import { defineConfig } from 'astro/config';import vercel from '@astrojs/vercel';
@@ -131,7 +131,7 @@ export default defineConfig({  // ...  output: 'static',  adapter: vercel({    i
 
 **Added in:** `@astrojs/vercel@3.3.0`
 
-When enabled, an [Image Service](/en/reference/image-service-reference/) powered by the Vercel Image Optimization API will be automatically configured and used in production. In development, the image service specified by [`devImageService`](#devimageservice) will be used instead.
+When enabled, an [Image Service](../../../reference/image-service-reference/index.md) powered by the Vercel Image Optimization API will be automatically configured and used in production. In development, the image service specified by [`devImageService`](#devimageservice) will be used instead.
 
 ```
 import { defineConfig } from 'astro/config';import vercel from '@astrojs/vercel';
@@ -182,7 +182,7 @@ import { defineConfig } from 'astro/config';import vercel from '@astrojs/vercel'
 export default defineConfig({  // ...  adapter: vercel({    isr: true,  }),});
 ```
 
-Note that ISR function requests do not include search params, similar to [requests](/en/reference/api-reference/#request) in static mode.
+Note that ISR function requests do not include search params, similar to [requests](../../../reference/api-reference/index.md#request) in static mode.
 
 #### ISR cache invalidation
 
@@ -220,7 +220,7 @@ You can then invalidate a cached page by sending a HEAD or GET request to the pa
 
 [Section titled “Draft mode”](#draft-mode)
 
-To bypass the ISR cache and render fresh content (e.g., for previewing unpublished CMS content), use [Vercel’s Draft mode](https://vercel.com/docs/build-output-api/v3/features#draft-mode). This requires [defining a `bypassToken`](#on-demand-invalidation) in your configuration and reusing its value in your pages to [set a cookie](/en/guides/on-demand-rendering/#cookies) named `__prerender_bypass`.
+To bypass the ISR cache and render fresh content (e.g., for previewing unpublished CMS content), use [Vercel’s Draft mode](https://vercel.com/docs/build-output-api/v3/features#draft-mode). This requires [defining a `bypassToken`](#on-demand-invalidation) in your configuration and reusing its value in your pages to [set a cookie](../../on-demand-rendering/index.md#cookies) named `__prerender_bypass`.
 
 ##### Excluding paths from caching
 
@@ -305,7 +305,7 @@ Enables specifying custom headers for prerendered pages in Vercel’s configurat
 
 If enabled, the adapter will save [static headers in the Vercel `vercel.json` file](https://vercel.com/docs/project-configuration#headers) when provided by Astro features, such as Content Security Policy.
 
-For example, when [Content Security Policy](/en/reference/configuration-reference/#securitycsp) is enabled, `staticHeaders` can be used to add the CSP `headers` to your Vercel configuration, instead of creating a `<meta>` element:
+For example, when [Content Security Policy](../../../reference/configuration-reference/index.md#securitycsp) is enabled, `staticHeaders` can be used to add the CSP `headers` to your Vercel configuration, instead of creating a `<meta>` element:
 
 ```
 import { defineConfig } from 'astro/config';import vercel from '@astrojs/vercel';
@@ -316,7 +316,7 @@ export default defineConfig({  security: {    csp: true  },  adapter: vercel({  
 
 [Section titled “Running Astro middleware on Vercel Edge Functions”](#running-astro-middleware-on-vercel-edge-functions)
 
-The `@astrojs/vercel` adapter can create an [edge function](https://vercel.com/docs/functions/edge-functions) from an Astro middleware in your code base. When [`middlewareMode`](/en/reference/adapter-reference/#middlewaremode) is set to `'edge'`, an edge function will execute your middleware code for all requests, including static assets, prerendered pages, and on-demand rendered pages.
+The `@astrojs/vercel` adapter can create an [edge function](https://vercel.com/docs/functions/edge-functions) from an Astro middleware in your code base. When [`middlewareMode`](../../../reference/adapter-reference/index.md#middlewaremode) is set to `'edge'`, an edge function will execute your middleware code for all requests, including static assets, prerendered pages, and on-demand rendered pages.
 
 For on-demand rendered pages, the `context.locals` object is serialized using JSON and sent in a header for the serverless function, which performs the rendering. As a security measure, the serverless function will refuse to serve requests with a `403 Forbidden` response unless they come from the generated edge function.
 
@@ -327,7 +327,7 @@ import { defineConfig } from 'astro/config';import vercel from '@astrojs/vercel'
 export default defineConfig({  // ...  adapter: vercel({    middlewareMode: 'edge',  }),});
 ```
 
-The edge middleware has access to Vercel’s [`RequestContext`](https://vercel.com/docs/functions/edge-middleware/middleware-api#requestcontext) as `ctx.locals.vercel.edge`. If you’re using TypeScript, you can [get proper typings](/en/guides/typescript/#extending-global-types) by updating `src/env.d.ts` to use `EdgeLocals`:
+The edge middleware has access to Vercel’s [`RequestContext`](https://vercel.com/docs/functions/edge-middleware/middleware-api#requestcontext) as `ctx.locals.vercel.edge`. If you’re using TypeScript, you can [get proper typings](../../typescript/index.md#extending-global-types) by updating `src/env.d.ts` to use `EdgeLocals`:
 
 ```
 type EdgeLocals = import('@astrojs/vercel').EdgeLocals
@@ -338,9 +338,9 @@ declare namespace App {  interface Locals extends EdgeLocals {    // ...  }}
 
 [Section titled “Sessions”](#sessions)
 
-The Astro [Sessions API](/en/guides/sessions/) allows you to easily store user data between requests. This can be used for things like user data and preferences, shopping carts, and authentication credentials. Unlike cookie storage, there are no size limits on the data, and it can be restored on different devices.
+The Astro [Sessions API](../../sessions/index.md) allows you to easily store user data between requests. This can be used for things like user data and preferences, shopping carts, and authentication credentials. Unlike cookie storage, there are no size limits on the data, and it can be restored on different devices.
 
-When using sessions on Vercel, you need to [configure a driver](/en/reference/configuration-reference/#sessiondriver) for session storage. You can install a storage provider from [the Vercel marketplace](https://vercel.com/marketplace?category=storage).
+When using sessions on Vercel, you need to [configure a driver](../../../reference/configuration-reference/index.md#sessiondriver) for session storage. You can install a storage provider from [the Vercel marketplace](https://vercel.com/marketplace?category=storage).
 
 For example, if you have installed [a Redis integration](https://vercel.com/marketplace?category=storage&search=redis) and linked a database to your site:
 
@@ -384,34 +384,34 @@ Check out the [Vercel documentation](https://vercel.com/docs/functions/serverles
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -419,34 +419,34 @@ Check out the [Vercel documentation](https://vercel.com/docs/functions/serverles
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

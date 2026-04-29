@@ -10,8 +10,8 @@ content_hash: "30f3589a7d3a9ed96b1e8d0eab6732f74d696533c880d3749d6b34bbff6b7538"
 menu_path: ["Get Started with Drizzle and TiDB"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../tidb-existing/index.md", "title": "Get Started with Drizzle and TiDB in existing project"}
-nav_next: {"path": "../turso-database-existing/index.md", "title": "Get Started with Drizzle and Turso Database in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/tidb-existing/index.md", "title": "Get Started with Drizzle and TiDB in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/turso-database-existing/index.md", "title": "Get Started with Drizzle and Turso Database in existing project"}
 ---
 
 ## Get Started with Drizzle and TiDB

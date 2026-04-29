@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:41.528Z"
 content_hash: "74923ddd4b9570cced371f2cfba5dd572d42882a799e768fd641637b18057a5e"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 30. Just-in-Time Compilation (JIT)"]
 section_path: []
-nav_prev: {"path": "../wal.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a028.\u00a0Reliability and the Write-Ahead Log"}
-nav_next: {"path": "../largeobjects.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a033.\u00a0Large Objects"}
+nav_prev: {"path": "postgres/docs/current/wal.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a028.\u00a0Reliability and the Write-Ahead Log"}
+nav_next: {"path": "postgres/docs/current/largeobjects.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a033.\u00a0Large Objects"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

@@ -10,8 +10,8 @@ content_hash: "9df57c67be565186cf4e798e42b2eb6893f7e05ee952bbc83d65c20cb7f3f032"
 menu_path: ["PostgreSQL: Documentation: 18: 35.21. domain_constraints"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../indexes-unique.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.6.\u00a0Unique Indexes"}
-nav_next: {"path": "../infoschema-domain-udt-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.22.\u00a0domain_udt_usage"}
+nav_prev: {"path": "postgres/docs/current/indexes-unique.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.6.\u00a0Unique Indexes"}
+nav_next: {"path": "postgres/docs/current/infoschema-domain-udt-usage.html/index.md", "title": "PostgreSQL: Documentation: 18: 35.22.\u00a0domain_udt_usage"}
 ---
 
 The view `domain_constraints` contains all constraints belonging to domains defined in the current database. Only those domains are shown that the current user has access to (by way of being the owner or having some privilege).

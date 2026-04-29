@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:41:57.805Z"
 content_hash: "9d08c18729c72568fee34cb1f95586da25bc1028da048f3045e72862e5eab66e"
 menu_path: ["Upgrade to Astro v4"]
 section_path: []
-nav_prev: {"path": "../v5/index.md", "title": "Upgrade to Astro v5"}
-nav_next: {"path": "../v3/index.md", "title": "Upgrade to Astro v3"}
+nav_prev: {"path": "astro/en/guides/upgrade-to/v5/index.md", "title": "Upgrade to Astro v5"}
+nav_next: {"path": "astro/en/guides/upgrade-to/v3/index.md", "title": "Upgrade to Astro v3"}
 ---
 
 # Upgrade to Astro v4
 
 This guide will help you migrate from Astro v3 to Astro v4.
 
-Need to upgrade an older project to v3? See our [older migration guide](/en/guides/upgrade-to/v3/).
+Need to upgrade an older project to v3? See our [older migration guide](../v3/index.md).
 
 Need to see the v3 docs? Visit this [older version of the docs site (unmaintained v3.6 snapshot)](https://web.archive.org/web/20231203051122/https://docs.astro.build/en/getting-started/).
 
@@ -35,7 +35,7 @@ Update your project’s version of Astro and all official integrations to the la
 # Upgrade Astro and official integrations togethernpx @astrojs/upgrade
 ```
 
-You can also [upgrade your Astro integrations manually](/en/guides/integrations/#manual-upgrading) if needed, and you may also need to upgrade other dependencies in your project.
+You can also [upgrade your Astro integrations manually](../../integrations/index.md#manual-upgrading) if needed, and you may also need to upgrade other dependencies in your project.
 
 Astro v4.0 includes [potentially breaking changes](#breaking-changes), as well as the [removal of some previously deprecated features](#previously-deprecated-features-now-removed).
 
@@ -243,7 +243,7 @@ export async function GET() {  const file = await fs.readFile('./bob.png');  ret
 
 [Section titled “Removed: build.split and build.excludeMiddleware”](#removed-buildsplit-and-buildexcludemiddleware)
 
-In Astro v3.0, `build.split` and `build.excludeMiddleware` build config options were deprecated and replaced with [adapter configuration options](/en/reference/adapter-reference/#adapter-features) to perform the same tasks.
+In Astro v3.0, `build.split` and `build.excludeMiddleware` build config options were deprecated and replaced with [adapter configuration options](../../../reference/adapter-reference/index.md#adapter-features) to perform the same tasks.
 
 Astro v4.0 removes these properties entirely.
 
@@ -253,7 +253,7 @@ Astro v4.0 removes these properties entirely.
 
 If you are using the deprecated `build.split` or `build.excludeMiddleware`, you must now remove them as these no longer exist.
 
-Please see the v3 migration guide to [update these deprecated middleware properties](/en/guides/upgrade-to/v3/#deprecated-buildexcludemiddleware-and-buildsplit) with adapter configurations.
+Please see the v3 migration guide to [update these deprecated middleware properties](../v3/index.md#deprecated-buildexcludemiddleware-and-buildsplit) with adapter configurations.
 
 ### Removed: `Astro.request.params`
 
@@ -267,7 +267,7 @@ Astro v4.0 removes this option entirely.
 
 [Section titled “What should I do?”](#what-should-i-do-9)
 
-Update all occurrences to [`Astro.params`](/en/reference/api-reference/#params), which is the supported replacement.
+Update all occurrences to [`Astro.params`](../../../reference/api-reference/index.md#params), which is the supported replacement.
 
 ```
 const { id } = Astro.request.params;const { id } = Astro.params;
@@ -287,7 +287,7 @@ Astro v4.0 removes this option entirely.
 
 If you are using the deprecated `markdown.drafts`, you must now remove it as it no longer exists.
 
-To continue to mark some pages in your project as drafts, [migrate to content collections](/en/guides/content-collections/) and manually filter out pages with the `draft: true` frontmatter property instead.
+To continue to mark some pages in your project as drafts, [migrate to content collections](../../content-collections/index.md) and manually filter out pages with the `draft: true` frontmatter property instead.
 
 ### Removed: `getHeaders()`
 
@@ -335,7 +335,7 @@ Astro v4.0 removes support for lowercase names entirely. All HTTP request method
 
 If you are using the deprecated lowercase names, you must now replace them with their uppercase equivalents.
 
-Please see the v3 migration guide [for guidance using uppercase HTTP request methods](/en/guides/upgrade-to/v3/#changed-http-request-methods-case).
+Please see the v3 migration guide [for guidance using uppercase HTTP request methods](../v3/index.md#changed-http-request-methods-case).
 
 ### Removed: 301 redirects when missing a `base` prefix
 
@@ -349,7 +349,7 @@ Astro v4.0 returns a 404 status without a base path prefix for public directory 
 
 [Section titled “What should I do?”](#what-should-i-do-14)
 
-When using the Astro preview server, all of your static asset imports and URLs from the public directory must have [the base value](/en/reference/configuration-reference/#base) prefixed to the path.
+When using the Astro preview server, all of your static asset imports and URLs from the public directory must have [the base value](../../../reference/configuration-reference/index.md#base) prefixed to the path.
 
 The following example shows the `src` attribute required to display an image from the public folder when `base: '/docs'` is configured:
 
@@ -388,4 +388,4 @@ Know a good resource for Astro v4.0? [Edit this page](https://github.com/withast
 
 Please check [Astro’s issues on GitHub](https://github.com/withastro/astro/issues/) for any reported issues, or to file an issue yourself.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

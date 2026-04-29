@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:08.344Z"
 content_hash: "2187db8e792a3cfcd4741a8ffe7a139e5d335db7e40385ac8c924e586e0bedf3"
 menu_path: ["PostgreSQL: Documentation: 18: pg_test_timing"]
 section_path: []
-nav_prev: {"path": "../pgtestfsync.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_fsync"}
-nav_next: {"path": "../pgtrgm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.35.\u00a0pg_trgm \u2014 support for similarity of text using trigram matching"}
+nav_prev: {"path": "postgres/docs/current/pgtestfsync.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_fsync"}
+nav_next: {"path": "postgres/docs/current/pgtrgm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.35.\u00a0pg_trgm \u2014 support for similarity of text using trigram matching"}
 ---
 
 # echo acpi\_pm > /sys/devices/system/clocksource/clocksource0/current\_clocksource

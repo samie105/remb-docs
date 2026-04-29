@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:59:21.278Z"
 content_hash: "b9e566a5539eb1923a77652e036a1ea71aa46d4661eb59c5d1adc0163beef814"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Java and Jedis","→","Redis session store with Java and Jedis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Java and Jedis","→","Redis session store with Java and Jedis"]
-nav_prev: {"path": "../go/index.md", "title": "Redis session store with Go"}
-nav_next: {"path": "../java-lettuce/index.md", "title": "Redis session store with Java (Lettuce)"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/go/index.md", "title": "Redis session store with Go"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/java-lettuce/index.md", "title": "Redis session store with Java (Lettuce)"}
 ---
 
 # Redis session store with Java and Jedis
 
 Implement a Redis-backed session store in Java with Jedis
 
-This guide shows you how to implement a Redis-backed session store in Java with [`Jedis`](/docs/latest/develop/clients/jedis/). It includes a small local web server built with Java's built-in `HttpServer` so you can see the session lifecycle end to end.
+This guide shows you how to implement a Redis-backed session store in Java with [`Jedis`](../../../clients/jedis/index.md). It includes a small local web server built with Java's built-in `HttpServer` so you can see the session lifecycle end to end.
 
 ## Overview
 
@@ -272,8 +272,8 @@ You now have a complete Redis-backed session example in Java using Jedis. From h
 
 For more Redis data modeling patterns, see:
 
-*   [Session store overview](/docs/latest/develop/use-cases/session-store/)
-*   [Jedis guide](/docs/latest/develop/clients/jedis/)
+*   [Session store overview](../index.md)
+*   [Jedis guide](../../../clients/jedis/index.md)
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page

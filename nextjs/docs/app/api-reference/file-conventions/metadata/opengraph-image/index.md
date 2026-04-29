@@ -11,8 +11,8 @@ menu_path: ["opengraph-image and twitter-image"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../manifest/index.md", "title": "manifest.json"}
-nav_next: {"path": "../robots/index.md", "title": "robots.txt"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/manifest/index.md", "title": "manifest.json"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/robots/index.md", "title": "robots.txt"}
 ---
 
 # opengraph-image and twitter-image
@@ -116,11 +116,11 @@ Generate a route segment's shared image by creating an `opengraph-image` or `twi
 
 > **Good to know**:
 > 
-> -   By default, generated images are [**statically optimized**](/docs/app/glossary#prerendering) (generated at build time and cached) unless they use [Request-time APIs](/docs/app/glossary#request-time-apis) or uncached data.
-> -   You can generate multiple Images in the same file using [`generateImageMetadata`](/docs/app/api-reference/functions/generate-image-metadata).
-> -   `opengraph-image.js` and `twitter-image.js` are special Route Handlers that is cached by default unless it uses a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
+> -   By default, generated images are [**statically optimized**](../../../../glossary/index.md#prerendering) (generated at build time and cached) unless they use [Request-time APIs](../../../../glossary/index.md#request-time-apis) or uncached data.
+> -   You can generate multiple Images in the same file using [`generateImageMetadata`](../../../functions/generate-image-metadata/index.md).
+> -   `opengraph-image.js` and `twitter-image.js` are special Route Handlers that is cached by default unless it uses a [Request-time API](../../../../glossary/index.md#request-time-apis) or [dynamic config](../../../../guides/caching-without-cache-components/index.md#dynamic) option.
 
-The easiest way to generate an image is to use the [ImageResponse](/docs/app/api-reference/functions/image-response) API from `next/og`.
+The easiest way to generate an image is to use the [ImageResponse](../../../functions/image-response/index.md) API from `next/og`.
 
 app/about/opengraph-image.tsx
 
@@ -198,9 +198,9 @@ The default export function receives the following props:
 
 #### `params` (optional)[](#params-optional)
 
-A promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) object from the root segment down to the segment `opengraph-image` or `twitter-image` is colocated in.
+A promise that resolves to an object containing the [dynamic route parameters](../../dynamic-routes/index.md) object from the root segment down to the segment `opengraph-image` or `twitter-image` is colocated in.
 
-> **Good to know**: If you use [`generateImageMetadata`](/docs/app/api-reference/functions/generate-image-metadata), the function will also receive an `id` prop that is a promise resolving to the `id` value from one of the items returned by `generateImageMetadata`.
+> **Good to know**: If you use [`generateImageMetadata`](../../../functions/generate-image-metadata/index.md), the function will also receive an `id` prop that is a promise resolving to the `id` value from one of the items returned by `generateImageMetadata`.
 
 app/shop/\[slug\]/opengraph-image.tsx
 
@@ -296,7 +296,7 @@ export default function Image() {}
 
 #### Route Segment Config[](#route-segment-config)
 
-`opengraph-image` and `twitter-image` are specialized [Route Handlers](/docs/app/api-reference/file-conventions/route) that can use the same [route segment configuration](/docs/app/api-reference/file-conventions/route-segment-config) options as Pages and Layouts.
+`opengraph-image` and `twitter-image` are specialized [Route Handlers](../../route/index.md) that can use the same [route segment configuration](../../route-segment-config/index.md) options as Pages and Layouts.
 
 ### Examples[](#examples)
 
@@ -304,7 +304,7 @@ export default function Image() {}
 
 This example uses the `params` object and external data to generate the image.
 
-> **Good to know**: By default, this generated image will be statically optimized. You can configure the individual `fetch` [`options`](/docs/app/api-reference/functions/fetch) or route segments [options](/docs/app/guides/caching-without-cache-components#route-segment-config-revalidate) to change this behavior.
+> **Good to know**: By default, this generated image will be statically optimized. You can configure the individual `fetch` [`options`](../../../functions/fetch/index.md) or route segments [options](../../../../guides/caching-without-cache-components/index.md#route-segment-config-revalidate) to change this behavior.
 
 app/posts/\[slug\]/opengraph-image.tsx
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:16.517Z"
 content_hash: "44e17f07083de227766628dcab608320e25a9a5d113b52d760900cff5bb40d20"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Create a Bedrock knowledge base","→","Create a Bedrock knowledge base"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Amazon Bedrock","→","Amazon Bedrock","→\n      \n        Create a Bedrock knowledge base","→","Create a Bedrock knowledge base"]
-nav_prev: {"path": "../create-agent/index.md", "title": "Create a Bedrock agent"}
-nav_next: {"path": "../set-up-redis/index.md", "title": "Set up Redis for Bedrock"}
+nav_prev: {"path": "redis/docs/latest/integrate/amazon-bedrock/create-agent/index.md", "title": "Create a Bedrock agent"}
+nav_next: {"path": "redis/docs/latest/integrate/amazon-bedrock/set-up-redis/index.md", "title": "Set up Redis for Bedrock"}
 ---
 
 # Create a Bedrock knowledge base
@@ -25,7 +25,7 @@ Before you begin this guide, you will need:
     
 *   An [AWS IAM Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) with permissions for the Bedrock knowledge base.
     
-*   A Redis database that is [set up for Amazon Bedrock](/docs/latest/integrate/amazon-bedrock/set-up-redis/)
+*   A Redis database that is [set up for Amazon Bedrock](../set-up-redis/index.md)
     
 
 ## Create knowledge base
@@ -52,11 +52,11 @@ To use your Redis database to create a knowledge base on Amazon Bedrock:
     Fill in the fields with the following information:
     
     *   **Endpoint URL**: Public endpoint of your database. This can be found in the [Redis Cloud console](https://cloud.redis.io/) from the database list or from the **General** section of the **Configuration** tab for the source database.
-    *   **Credentials Secret ARN**: [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#iam-resources) of your [database credentials secret](/docs/latest/integrate/amazon-bedrock/set-up-redis/#store-secret).
-    *   **Vector Index name**: Name of the [vector index](/docs/latest/integrate/amazon-bedrock/set-up-redis/#create-vector-index)
-    *   **Vector field**: Name of the [vector field](/docs/latest/integrate/amazon-bedrock/set-up-redis/#create-vector-index) of the vector index
-    *   **Text field**: Name of the [text field](/docs/latest/integrate/amazon-bedrock/set-up-redis/#create-vector-index) of the vector index
-    *   **Metadata field**: Name of the [metadata field](/docs/latest/integrate/amazon-bedrock/set-up-redis/#create-vector-index) of the vector index
+    *   **Credentials Secret ARN**: [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#iam-resources) of your [database credentials secret](../set-up-redis/index.md#store-secret).
+    *   **Vector Index name**: Name of the [vector index](../set-up-redis/index.md#create-vector-index)
+    *   **Vector field**: Name of the [vector field](../set-up-redis/index.md#create-vector-index) of the vector index
+    *   **Text field**: Name of the [text field](../set-up-redis/index.md#create-vector-index) of the vector index
+    *   **Metadata field**: Name of the [metadata field](../set-up-redis/index.md#create-vector-index) of the vector index
     
     Select **Next** to review your settings.
     
@@ -74,6 +74,6 @@ Select the name of your knowledge base to view the syncing status of your data s
 
 [![A Bedrock data source with a Ready status.](/docs/latest/images/rc/bedrock-aws-status-data-source-ready.png)](/docs/latest/images/rc/bedrock-aws-status-data-source-ready.png)
 
-After the knowledge base is ready, you can use it to [Create an agent](/docs/latest/integrate/amazon-bedrock/create-agent/).
+After the knowledge base is ready, you can use it to [Create an agent](../create-agent/index.md).
 
 ## On this page

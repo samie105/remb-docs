@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:55.012Z"
 content_hash: "52d4ff62e63668403284ff5905d3c4402b3c4557512301400904fa4e422cefba"
 menu_path: ["Database","Database","Extensions","Extensions","pgjwt (deprecated)","pgjwt (deprecated)"]
 section_path: ["Database","Database","Extensions","Extensions","pgjwt (deprecated)","pgjwt (deprecated)"]
-nav_prev: {"path": "../pgaudit/index.md", "title": "PGAudit: Postgres Auditing"}
-nav_next: {"path": "../pgmq/index.md", "title": "pgmq: Queues"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/pgaudit/index.md", "title": "PGAudit: Postgres Auditing"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/pgmq/index.md", "title": "pgmq: Queues"}
 ---
 
 # 
@@ -19,9 +19,9 @@ pgjwt: JSON Web Tokens
 
 * * *
 
-Supabase creates and handles JWT for you. It is built into the platform. **If you use Postgres version 15 or earlier**, you don't need the pgjwt extension, and it is safe to disable. For more information on how Supabase handles JWTs, read the [Supabase and JWTs documentation](/docs/guides/auth/jwts#supabase-and-jwts)
+Supabase creates and handles JWT for you. It is built into the platform. **If you use Postgres version 15 or earlier**, you don't need the pgjwt extension, and it is safe to disable. For more information on how Supabase handles JWTs, read the [Supabase and JWTs documentation](../../../auth/jwts/index.md#supabase-and-jwts)
 
-The `pgjwt` extension is deprecated in projects using Postgres 17. It continues to be supported in projects using Postgres 15, but will need to dropped before those projects are upgraded to Postgres 17. See the [Upgrading to Postgres 17 notes](/docs/guides/platform/upgrading#upgrading-to-postgres-17) for more information.
+The `pgjwt` extension is deprecated in projects using Postgres 17. It continues to be supported in projects using Postgres 15, but will need to dropped before those projects are upgraded to Postgres 17. See the [Upgrading to Postgres 17 notes](../../../platform/upgrading/index.md#upgrading-to-postgres-17) for more information.
 
 The [`pgjwt`](https://github.com/michelp/pgjwt) (Postgres JSON Web Token) extension allows you to create and parse [JSON Web Tokens (JWTs)](https://en.wikipedia.org/wiki/JSON_Web_Token) within a Postgres database. JWTs are commonly used for authentication and authorization in web applications and services.
 

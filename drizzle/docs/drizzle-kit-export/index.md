@@ -10,8 +10,8 @@ content_hash: "5befb26bf38e333a119f11d579ab2acd495e74385d095c68fa73d85ff80d6175"
 menu_path: ["drizzle-kit export"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-kit-pull/index.md", "title": "drizzle-kit pull"}
-nav_next: {"path": "../drizzle-kit-check/index.md", "title": "drizzle-kit check"}
+nav_prev: {"path": "drizzle/docs/drizzle-kit-pull/index.md", "title": "drizzle-kit pull"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-check/index.md", "title": "drizzle-kit check"}
 ---
 
 `drizzle-kit export` lets you export SQL representation of Drizzle schema and print in console SQL DDL representation on it.

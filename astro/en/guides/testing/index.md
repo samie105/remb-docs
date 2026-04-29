@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:38.855Z"
 content_hash: "de12a78fd54a8ee75bee6d74a73bfea6b44586823c0c68469e01e2b09a714bf3"
 menu_path: ["Testing"]
 section_path: []
-nav_prev: {"path": "../authentication/index.md", "title": "Authentication"}
-nav_next: {"path": "../../getting-started/index.md", "title": "Astro Docs"}
+nav_prev: {"path": "astro/en/guides/authentication/index.md", "title": "Authentication"}
+nav_next: {"path": "astro/en/getting-started/index.md", "title": "Astro Docs"}
 ---
 
 # Testing
@@ -50,7 +50,7 @@ See the [Astro + Vitest starter template](https://github.com/withastro/astro/tre
 
 **Added in:** `astro@4.9.0`
 
-You can natively test Astro components using the [container API](/en/reference/container-reference/). First, setup [`vitest` as explained above](#vitest), then create a `.test.js` file to test your component:
+You can natively test Astro components using the [container API](../../reference/container-reference/index.md). First, setup [`vitest` as explained above](#vitest), then create a `.test.js` file to test your component:
 
 ```
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';import { expect, test } from 'vitest';import Card from '../src/components/Card.astro';
@@ -306,4 +306,4 @@ More information about NightwatchJS can be found in the links below:
 *   [Intro to Nightwatch](https://nightwatchjs.org/guide/overview/what-is-nightwatch.html)
 *   [Testing with Nightwatch](https://nightwatchjs.org/guide/writing-tests/introduction.html)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

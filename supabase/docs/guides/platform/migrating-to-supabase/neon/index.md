@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:35.099Z"
 content_hash: "40d6c49bcdb08218884f4802ac79f200a5a482e5dbec9f0c8adedea652d84455"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Neon","Neon"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Neon","Neon"]
-nav_prev: {"path": "../mysql/index.md", "title": "Migrate from MySQL to Supabase"}
-nav_next: {"path": "../postgres/index.md", "title": "Migrate from Postgres to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/mysql/index.md", "title": "Migrate from MySQL to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/postgres/index.md", "title": "Migrate from Postgres to Supabase"}
 ---
 
 # 
@@ -100,7 +100,7 @@ Run `pg_dump --help` for a full list of options.
 
 *   If you're planning to migrate a database larger than 6 GB, we recommend [upgrading to at least a Large compute add-on](/docs/guides/platform/compute-add-ons). This will ensure you have the necessary resources to handle the migration efficiently.
     
-*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](/docs/guides/platform/compute-and-disk#disk) documentation.
+*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](../../compute-and-disk/index.md#disk) documentation.
     
 
 ## Enterprise[#](#enterprise)

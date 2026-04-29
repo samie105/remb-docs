@@ -11,8 +11,8 @@ menu_path: ["Getting started with Prisma Migrate"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Overview of Prisma Migrate"}
-nav_next: {"path": "../understanding-prisma-migrate/mental-model/index.md", "title": "Understanding Migrations"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/index.md", "title": "Overview of Prisma Migrate"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/mental-model/index.md", "title": "Understanding Migrations"}
 ---
 
 Learn how to migrate your schema in a development environment using Prisma Migrate

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:26.105Z"
 content_hash: "3d66aef2eb8f7312f01e79f8b3b2d36ec6cbc378408396ba2fac52ff89e7f550"
 menu_path: ["Define and replace static globals & constants"]
 section_path: []
-nav_prev: {"path": "../codesign-macos-executable/index.md", "title": "Codesign a single-file JavaScript executable on macOS"}
-nav_next: {"path": "../delete-directory/index.md", "title": "Delete directories"}
+nav_prev: {"path": "bun/docs/guides/runtime/codesign-macos-executable/index.md", "title": "Codesign a single-file JavaScript executable on macOS"}
+nav_next: {"path": "bun/docs/guides/runtime/delete-directory/index.md", "title": "Delete directories"}
 ---
 
 # JSON
@@ -85,10 +85,10 @@ Build-time constants with --define
 
 Previous
 
-](/docs/guides/runtime/build-time-constants)[
+](../build-time-constants/index.md)[
 
 Install and run Bun in GitHub Actions
 
 Next
 
-](/docs/guides/runtime/cicd)
+](../cicd/index.md)

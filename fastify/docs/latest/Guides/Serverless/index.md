@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:41.134Z"
 content_hash: "d27e7a0c768484093e06a3f73181c596796d8ea87bce68258b3cb06c4aacb40c"
 menu_path: ["Serverless"]
 section_path: []
-nav_prev: {"path": "../Recommendations/index.md", "title": "Recommendations"}
-nav_next: {"path": "../Style-Guide/index.md", "title": "Fastify Style Guide"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Recommendations/index.md", "title": "Recommendations"}
+nav_next: {"path": "fastify/docs/latest/Guides/Style-Guide/index.md", "title": "Fastify Style Guide"}
 ---
 
 # Use the official Node.js 10 image.# https://hub.docker.com/_/nodeFROM node:10# Create and change to the app directory.WORKDIR /usr/src/app# Copy application dependency manifests to the container image.# A wildcard is used to ensure both package.json AND package-lock.json are copied.# Copying this separately prevents re-running npm install on every code change.COPY package*.json ./# Install production dependencies.RUN npm i --production# Copy local code to the container image.COPY . .# Run the web service on container startup.CMD [ "npm", "start" ]

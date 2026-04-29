@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:45.756Z"
 content_hash: "f96290942cef79734756e39da656e2510e6b90b3092034c629dc4b33ef4d3c0b"
 menu_path: ["PostgreSQL: Documentation: 18: dropdb"]
 section_path: []
-nav_prev: {"path": "../amcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.1.\u00a0amcheck \u2014 tools to verify table and index consistency"}
-nav_next: {"path": "../app-pg-ctl.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_ctl"}
+nav_prev: {"path": "postgres/docs/current/amcheck.html/index.md", "title": "PostgreSQL: Documentation: 18: F.1.\u00a0amcheck \u2014 tools to verify table and index consistency"}
+nav_next: {"path": "postgres/docs/current/app-pg-ctl.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_ctl"}
 ---
 
 dropdb — remove a PostgreSQL database

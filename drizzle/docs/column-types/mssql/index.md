@@ -10,8 +10,8 @@ content_hash: "9a7433a063035f71efc263f43e4f67fa85943eb206c8db4cc5a3eaba3eff1bff"
 menu_path: ["MSSQL column types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../cockroach/index.md", "title": "CockroachDB column types"}
-nav_next: {"path": "../mysql/index.md", "title": "MySQL column types"}
+nav_prev: {"path": "drizzle/docs/column-types/cockroach/index.md", "title": "CockroachDB column types"}
+nav_next: {"path": "drizzle/docs/column-types/mysql/index.md", "title": "MySQL column types"}
 ---
 
 WARNING

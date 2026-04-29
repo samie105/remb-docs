@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:19.868Z"
 content_hash: "66bc88cdf80c6bec0f1ad4a84663788938baf4e8523c25b618d6182bebc0810d"
 menu_path: ["Prefetch"]
 section_path: []
-nav_prev: {"path": "../internationalization/index.md", "title": "Internationalization (i18n) Routing"}
-nav_next: {"path": "../view-transitions/index.md", "title": "View transitions"}
+nav_prev: {"path": "astro/en/guides/internationalization/index.md", "title": "Internationalization (i18n) Routing"}
+nav_next: {"path": "astro/en/guides/view-transitions/index.md", "title": "View transitions"}
 ---
 
 # Prefetch
@@ -68,7 +68,7 @@ Each strategy is fine-tuned to only prefetch when needed and save your users’ 
 
 [Section titled “Default prefetch strategy”](#default-prefetch-strategy)
 
-The default prefetch strategy when adding the `data-astro-prefetch` attribute is `hover`. To change it, you can configure [`prefetch.defaultStrategy`](/en/reference/configuration-reference/#prefetchdefaultstrategy) in your `astro.config.mjs` file:
+The default prefetch strategy when adding the `data-astro-prefetch` attribute is `hover`. To change it, you can configure [`prefetch.defaultStrategy`](../../reference/configuration-reference/index.md#prefetchdefaultstrategy) in your `astro.config.mjs` file:
 
 ```
 import { defineConfig } from 'astro/config';
@@ -79,7 +79,7 @@ export default defineConfig({  prefetch: {    defaultStrategy: 'viewport'  }});
 
 [Section titled “Prefetch all links by default”](#prefetch-all-links-by-default)
 
-If you want to prefetch all links, including those without the `data-astro-prefetch` attribute, you can set [`prefetch.prefetchAll`](/en/reference/configuration-reference/#prefetchprefetchall) to `true`:
+If you want to prefetch all links, including those without the `data-astro-prefetch` attribute, you can set [`prefetch.prefetchAll`](../../reference/configuration-reference/index.md#prefetchprefetchall) to `true`:
 
 ```
 import { defineConfig } from 'astro/config';
@@ -123,7 +123,7 @@ To ignore slow connection detection, you can use the `ignoreSlowConnection` opti
 
 **Added in:** `astro@5.6.0`
 
-With the experimental [`clientPrerender`](/en/reference/experimental-flags/client-prerender/) flag enabled, you can use the `eagerness` option on `prefetch()` to suggest to the browser how eagerly it should prefetch/prerender link targets.
+With the experimental [`clientPrerender`](../../reference/experimental-flags/client-prerender/index.md) flag enabled, you can use the `eagerness` option on `prefetch()` to suggest to the browser how eagerly it should prefetch/prerender link targets.
 
 This follows the same API described in the [Speculation Rules API](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/speculationrules#eagerness) and defaults to `immediate` (the most eager option). In decreasing order of eagerness, the other options are `eager`, `moderate`, and `conservative`.
 
@@ -151,7 +151,7 @@ Make sure to only import `prefetch()` in client-side scripts as it relies on bro
 
 [Section titled “Using with View Transitions”](#using-with-view-transitions)
 
-When you use [Astro’s `<ClientRouter />`](/en/guides/view-transitions/#enabling-view-transitions-spa-mode) on a page, prefetching will also be enabled by default. It sets a default configuration of `{ prefetchAll: true }` which enables [prefetching for all links](#prefetch-all-links-by-default) on the page.
+When you use [Astro’s `<ClientRouter />`](../view-transitions/index.md#enabling-view-transitions-spa-mode) on a page, prefetching will also be enabled by default. It sets a default configuration of `{ prefetchAll: true }` which enables [prefetching for all links](#prefetch-all-links-by-default) on the page.
 
 You can customize the prefetch configuration in `astro.config.mjs` to override the default. For example:
 
@@ -179,7 +179,7 @@ The most common browsers support Astro’s prefetching with subtle differences:
 
 Chrome supports `<link rel="prefetch">`. Prefetching works as intended.
 
-It also fully supports `<script type="speculationrules">` from the [Speculation Rules API](https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API), which can be used to further describe [prefetching strategies and rules](#eagerness), enhancing user experience for your Chrome users. You’ll need to enable [`clientPrerender`](/en/reference/experimental-flags/client-prerender/) experiment to utilize this functionality with `prefetch()`
+It also fully supports `<script type="speculationrules">` from the [Speculation Rules API](https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API), which can be used to further describe [prefetching strategies and rules](#eagerness), enhancing user experience for your Chrome users. You’ll need to enable [`clientPrerender`](../../reference/experimental-flags/client-prerender/index.md) experiment to utilize this functionality with `prefetch()`
 
 ### Firefox
 
@@ -244,4 +244,4 @@ The `@astrojs/prefetch` integration was deprecated in v3.5.0 and is no longer ma
     *   The `throttles` option from `@astrojs/prefetch` is no longer needed as the new prefetch feature will automatically schedule and prefetch optimally.
         
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

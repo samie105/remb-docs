@@ -10,8 +10,8 @@ content_hash: "3a0dc48ec48c71689af218d8f2df5aa99243dbedbc0217bfdf1a578e5b313ab3"
 menu_path: ["Drizzle relations"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../schemas/index.md", "title": "Table schemas"}
-nav_next: {"path": "../rls/index.md", "title": "Row-Level Security (RLS)"}
+nav_prev: {"path": "drizzle/docs/schemas/index.md", "title": "Table schemas"}
+nav_next: {"path": "drizzle/docs/rls/index.md", "title": "Row-Level Security (RLS)"}
 ---
 
 WARNING

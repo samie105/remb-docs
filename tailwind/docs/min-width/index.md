@@ -10,8 +10,8 @@ content_hash: "cad0ee118d2bf4e05e6dbf539470d46ecd72cf5390a55970cd14481d184f0f0b"
 menu_path: ["min-width"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../width/index.md", "title": "width"}
-nav_next: {"path": "../max-width/index.md", "title": "max-width"}
+nav_prev: {"path": "tailwind/docs/width/index.md", "title": "width"}
+nav_next: {"path": "tailwind/docs/max-width/index.md", "title": "max-width"}
 ---
 
 Sizing

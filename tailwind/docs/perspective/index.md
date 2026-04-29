@@ -10,8 +10,8 @@ content_hash: "eeada3e930e5ebe629b83cf25251e3cd6de19ca3bdb77f6de726c3b043638acf"
 menu_path: ["perspective"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../backface-visibility/index.md", "title": "backface-visibility"}
-nav_next: {"path": "../perspective-origin/index.md", "title": "perspective-origin"}
+nav_prev: {"path": "tailwind/docs/backface-visibility/index.md", "title": "backface-visibility"}
+nav_next: {"path": "tailwind/docs/perspective-origin/index.md", "title": "perspective-origin"}
 ---
 
 Utilities for controlling an element's perspective when placed in 3D space.

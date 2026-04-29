@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:31.627Z"
 content_hash: "697affa240a188fe8b78697edba6e3ea8680b47e20c08d0936b2b9034acf95fb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        C#/.NET client for Redis","→","C#/.NET client for Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        C#/.NET client for Redis","→","C#/.NET client for Redis"]
-nav_prev: {"path": "../node-redis/index.md", "title": "Node.js client for Redis"}
-nav_next: {"path": "../php-redis/index.md", "title": "PHP client for Redis"}
+nav_prev: {"path": "redis/docs/latest/integrate/node-redis/index.md", "title": "Node.js client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/php-redis/index.md", "title": "PHP client for Redis"}
 ---
 
 # C#/.NET client for Redis
@@ -36,6 +36,6 @@ NRedisStack is a comprehensive .NET client library for Redis that extends StackE
 
 ## Getting Started
 
-Refer to the complete [C#/.NET guide](/docs/latest/develop/clients/dotnet/) to install, connect, and use NRedisStack.
+Refer to the complete [C#/.NET guide](../../develop/clients/dotnet/index.md) to install, connect, and use NRedisStack.
 
 ## On this page

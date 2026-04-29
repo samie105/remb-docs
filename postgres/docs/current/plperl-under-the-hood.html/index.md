@@ -10,8 +10,8 @@ content_hash: "ddce83d5c4defcb10ca263065b3bfb09048a7479411fe0af73093950e65b19c3"
 menu_path: ["PostgreSQL: Documentation: 18: 43.8. PL/Perl Under the Hood"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../plperl-trusted.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.5.\u00a0Trusted and Untrusted PL/Perl"}
-nav_next: {"path": "../plpgsql-control-structures.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.6.\u00a0Control Structures"}
+nav_prev: {"path": "postgres/docs/current/plperl-trusted.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.5.\u00a0Trusted and Untrusted PL/Perl"}
+nav_next: {"path": "postgres/docs/current/plpgsql-control-structures.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.6.\u00a0Control Structures"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/plperl-under-the-hood.html "PostgreSQL devel - 43.8. PL/Perl Under the Hood")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:38.898Z"
 content_hash: "b4431db32f716362f8f61bda2059988fb49bda3419951f3a97e2f341e90c9b5f"
 menu_path: ["How to write a good plugin"]
 section_path: []
-nav_prev: {"path": "../Testing/index.md", "title": "Testing"}
-nav_next: {"path": "../Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Testing/index.md", "title": "Testing"}
+nav_next: {"path": "fastify/docs/latest/Guides/Write-Type-Provider/index.md", "title": "Write-Type-Provider"}
 ---
 
 Version: latest (v5.8.x)
@@ -23,11 +23,11 @@ _Need some inspiration? You can use the label ["plugin suggestion"](https://gith
 
 ## Code[​](#code "Direct link to Code")
 
-Fastify uses different techniques to optimize its code, many of which are documented in our Guides. We highly recommend you read [the hitchhiker's guide to plugins](/docs/latest/Guides/Plugins-Guide/) to discover all the APIs you can use to build your plugin and learn how to use them.
+Fastify uses different techniques to optimize its code, many of which are documented in our Guides. We highly recommend you read [the hitchhiker's guide to plugins](../Plugins-Guide/index.md) to discover all the APIs you can use to build your plugin and learn how to use them.
 
 Do you have a question or need some advice? We are more than happy to help you! Just open an issue in our [help repository](https://github.com/fastify/help).
 
-Once you submit a plugin to our [ecosystem list](/docs/latest/Guides/Ecosystem/), we will review your code and help you improve it if necessary.
+Once you submit a plugin to our [ecosystem list](../Ecosystem/index.md), we will review your code and help you improve it if necessary.
 
 ## Documentation[​](#documentation "Direct link to Documentation")
 
@@ -57,7 +57,7 @@ A plugin **must** be thoroughly tested to verify that is working properly.
 
 A plugin without tests will not be accepted to the ecosystem list. A lack of tests does not inspire trust nor guarantee that the code will continue to work among different versions of its dependencies.
 
-We do not enforce any testing library. We use [`node:test`](https://nodejs.org/api/test.html) since it offers out-of-the-box parallel testing and code coverage, but it is up to you to choose your library of preference. We highly recommend you read the [Plugin Testing](/docs/latest/Guides/Testing/#plugins) to learn about how to test your plugins.
+We do not enforce any testing library. We use [`node:test`](https://nodejs.org/api/test.html) since it offers out-of-the-box parallel testing and code coverage, but it is up to you to choose your library of preference. We highly recommend you read the [Plugin Testing](../Testing/index.md#plugins) to learn about how to test your plugins.
 
 ## Code Linter[​](#code-linter "Direct link to Code Linter")
 

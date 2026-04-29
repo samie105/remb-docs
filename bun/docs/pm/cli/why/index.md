@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:46.313Z"
 content_hash: "fec11b2778fb9b3be5b20f2ac26dfdf1a1bbf134dee1fff7830a00904ed8a510"
 menu_path: ["bun why"]
 section_path: []
-nav_prev: {"path": "../update/index.md", "title": "bun update"}
-nav_next: {"path": "../../filter/index.md", "title": "bun --filter"}
+nav_prev: {"path": "bun/docs/pm/cli/update/index.md", "title": "bun update"}
+nav_next: {"path": "bun/docs/pm/filter/index.md", "title": "bun --filter"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../filter/index.md", "title": "bun --filter"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `bun why` command explains why a package is installed in your project by showing the dependency chain that led to its installation.
 
@@ -165,10 +165,10 @@ bun outdated
 
 Previous
 
-](/docs/pm/cli/outdated)[
+](../outdated/index.md)[
 
 bun audit
 
 Next
 
-](/docs/pm/cli/audit)
+](../audit/index.md)

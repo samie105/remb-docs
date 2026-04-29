@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:47.418Z"
 content_hash: "d3452c1ed0a3c747bd5a2a3cee9cf2ec7c7f93330597e2104641382b1691762a"
 menu_path: ["Passing Props to a Component"]
 section_path: []
-nav_prev: {"path": "../javascript-in-jsx-with-curly-braces/index.md", "title": "JavaScript in JSX with Curly Braces"}
-nav_next: {"path": "../conditional-rendering/index.md", "title": "Conditional Rendering"}
+nav_prev: {"path": "react/learn/javascript-in-jsx-with-curly-braces/index.md", "title": "JavaScript in JSX with Curly Braces"}
+nav_next: {"path": "react/learn/conditional-rendering/index.md", "title": "Conditional Rendering"}
 ---
 
 React components use _props_ to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions.

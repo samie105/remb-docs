@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:44.434Z"
 content_hash: "5366637a7991adcddb6ac6b962800e99209a5e2d513b4fb2576ec330cc020497"
 menu_path: ["Next.js Integration"]
 section_path: []
-nav_prev: {"path": "../links/wsLink/index.md", "title": "WebSocket Link"}
-nav_next: {"path": "aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_prev: {"path": "trpc/docs/v10/client/links/wsLink/index.md", "title": "WebSocket Link"}
+nav_next: {"path": "trpc/docs/v10/client/nextjs/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
 
 Version: 10.x

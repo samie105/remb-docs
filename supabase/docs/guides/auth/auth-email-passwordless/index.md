@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:22.801Z"
 content_hash: "7a25f603caa6a23276814a561f50c37f2e2209d7ac9a53c91ae765738f5d1f0c"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Email (Magic Link or OTP)","Email (Magic Link or OTP)"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Email (Magic Link or OTP)","Email (Magic Link or OTP)"]
-nav_prev: {"path": "../auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
-nav_next: {"path": "../auth-email-templates/index.md", "title": "Email Templates"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-email-templates/index.md", "title": "Email Templates"}
 ---
 
 # 
@@ -62,7 +62,7 @@ If the user hasn't signed up yet, they are automatically signed up by default. T
 
 That's it for the implicit flow.
 
-If you're using PKCE flow, edit the Magic Link [email template](/docs/guides/auth/auth-email-templates) to send a token hash:
+If you're using PKCE flow, edit the Magic Link [email template](../auth-email-templates/index.md) to send a token hash:
 
 ```
 1<h2>Magic Link</h2>23<p>Follow this link to login:</p>4<p><a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email">Log In</a></p>
@@ -82,7 +82,7 @@ Email one-time passwords (OTP) are a form of passwordless login where users key 
 
 Email authentication methods, including Email OTPs, are enabled by default.
 
-Email OTPs share an implementation with Magic Links. To send an OTP instead of a Magic Link, alter the **Magic Link** email template. For a hosted Supabase project, go to [Email Templates](/dashboard/project/_/auth/templates) in the Dashboard. For a self-hosted project or local development, see the [Email Templates guide](/docs/guides/auth/auth-email-templates).
+Email OTPs share an implementation with Magic Links. To send an OTP instead of a Magic Link, alter the **Magic Link** email template. For a hosted Supabase project, go to [Email Templates](/dashboard/project/_/auth/templates) in the Dashboard. For a self-hosted project or local development, see the [Email Templates guide](../auth-email-templates/index.md).
 
 Modify the template to include the `{{ .Token }}` variable, for example:
 

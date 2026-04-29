@@ -11,8 +11,8 @@ menu_path: ["App Router"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../community/rspack/index.md", "title": "Rspack Integration"}
-nav_next: {"path": "../messages/app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
+nav_prev: {"path": "nextjs/docs/community/rspack/index.md", "title": "Rspack Integration"}
+nav_next: {"path": "nextjs/docs/messages/app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
 ---
 
 # App Router
@@ -31,30 +31,30 @@ Learn the fundamentals of building an App Router project, from installation to l
 
 Learn how to create a new Next.js application with the \`create-next-app\` CLI, and set up TypeScript, ESLint, and Module Path Aliases.
 
-](/docs/app/getting-started/installation)[
+](getting-started/installation/index.md)[
 
 ### Project Structure
 
 Learn the folder and file conventions in Next.js, and how to organize your project.
 
-](/docs/app/getting-started/project-structure)[
+](getting-started/project-structure/index.md)[
 
 ### Layouts and Pages
 
 Learn how to create your first pages and layouts, and link between them with the Link component.
 
-](/docs/app/getting-started/layouts-and-pages)[
+](getting-started/layouts-and-pages/index.md)[
 
 ### Linking and Navigating
 
 Learn how the built-in navigation optimizations work, including prefetching, prerendering, and client-side navigation, and how to optimize navigation for dynamic routes and slow networks.
 
-](/docs/app/getting-started/linking-and-navigating)[
+](getting-started/linking-and-navigating/index.md)[
 
 ### Server and Client Components
 
 Learn how you can use React Server and Client Components to render parts of your application on the server or the client.
 
-](/docs/app/getting-started/server-and-client-components)
+](getting-started/server-and-client-components/index.md)
 
 Was this helpful?

@@ -10,8 +10,8 @@ content_hash: "4a0196e0dce253be1e5b58254b6c423fdffeb7f936ed0e4449e59dc103204f36"
 menu_path: ["Foreign Function Interface (FFI)"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../http_server/index.md", "title": "Writing an HTTP Server"}
-nav_next: {"path": "../open_telemetry/index.md", "title": "OpenTelemetry"}
+nav_prev: {"path": "deno/runtime/fundamentals/http_server/index.md", "title": "Writing an HTTP Server"}
+nav_next: {"path": "deno/runtime/fundamentals/open_telemetry/index.md", "title": "OpenTelemetry"}
 ---
 
 **On this page**
@@ -32,7 +32,7 @@ nav_next: {"path": "../open_telemetry/index.md", "title": "OpenTelemetry"}
 
 Deno's Foreign Function Interface (FFI) allows JavaScript and TypeScript code to call functions in dynamic libraries written in languages like C, C++, or Rust. This enables you to integrate native code performance and capabilities directly into your Deno applications.
 
-[Deno FFI Reference Docs](/api/deno/ffi)
+[Deno FFI Reference Docs](../../../api/deno/ffi/index.md)
 
 ## Introduction to FFI
 
@@ -46,7 +46,7 @@ Deno's FFI implementation is based on the [`Deno.dlopen`](/api/deno/~/Deno.dlope
 
 ## Security considerations
 
-FFI requires explicit permission using the [`--allow-ffi`](/runtime/fundamentals/security#ffi-foreign-function-interface) flag, as native code runs outside of Deno's security sandbox:
+FFI requires explicit permission using the [`--allow-ffi`](../security/index.md#ffi-foreign-function-interface) flag, as native code runs outside of Deno's security sandbox:
 
 \>\_
 
@@ -301,8 +301,8 @@ Node-API support is ideal for leveraging existing Node.js native modules, wherea
 
 Before using FFI, consider these alternatives:
 
--   [WebAssembly](/runtime/reference/wasm/), for portable native code that runs within Deno's sandbox.
+-   [WebAssembly](../../reference/wasm/index.md), for portable native code that runs within Deno's sandbox.
 -   Use [`Deno.command`](/api/deno/~/Deno.command) to execute external binaries and subprocesses with controlled permissions.
--   Check whether [Deno's native APIs](/api/deno) already provide the functionality you need.
+-   Check whether [Deno's native APIs](../../../api/deno/index.md) already provide the functionality you need.
 
 Deno's FFI capabilities provide powerful integration with native code, enabling performance optimizations and access to system-level functionality. However, this power comes with significant security considerations. Always be cautious when working with FFI and ensure you trust the native libraries you're using.

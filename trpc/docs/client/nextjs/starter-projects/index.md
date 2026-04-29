@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:13.430Z"
 content_hash: "97d0b5736b1d0435f3a20446344d4c71fa3ae08af8e704b691dfc128f6c5170a"
 menu_path: ["Starter Projects"]
 section_path: []
-nav_prev: {"path": "../server-actions/index.md", "title": "Server Actions"}
-nav_next: {"path": "../../react/index.md", "title": "React Query Integration (Classic)"}
+nav_prev: {"path": "trpc/docs/client/nextjs/server-actions/index.md", "title": "Server Actions"}
+nav_next: {"path": "trpc/docs/client/react/index.md", "title": "React Query Integration (Classic)"}
 ---
 
 _zART-stack_ example (**z**ero-**A**PI, **T**ypeScript, **R**eact).

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:47.962Z"
 content_hash: "8c5c308eb446fa63dbb0713a44ba1d6d5e6b04e63739b299945f88440fe7b3a0"
 menu_path: ["Svelte 5 migration guide"]
 section_path: []
-nav_prev: {"path": "../v4-migration-guide/index.md", "title": "Svelte 4 migration guide"}
-nav_next: {"path": "../faq/index.md", "title": "Frequently asked questions"}
+nav_prev: {"path": "svelte/docs/svelte/v4-migration-guide/index.md", "title": "Svelte 4 migration guide"}
+nav_next: {"path": "svelte/docs/svelte/faq/index.md", "title": "Frequently asked questions"}
 ---
 
 Version 5 comes with an overhauled syntax and reactivity system. While it may look different at first, you'll soon notice many similarities. This guide goes over the changes in detail and shows you how to upgrade. Along with it, we also provide information on _why_ we did these changes.
@@ -1177,7 +1177,7 @@ This is because the Svelte compiler treated the assignment to `foo.value` as an 
 
 When using `ontouchstart` and `ontouchmove` event attributes, the handlers are [passive](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#using_passive_listeners) to align with browser defaults. This greatly improves responsiveness by allowing the browser to scroll the document immediately, rather than waiting to see if the event handler calls `event.preventDefault()`.
 
-In the very rare cases that you need to prevent these event defaults, you should use [`on`](/docs/svelte/svelte-events#on) instead (for example inside an action).
+In the very rare cases that you need to prevent these event defaults, you should use [`on`](../svelte-events/index.md#on) instead (for example inside an action).
 
 ### Attribute/prop syntax is stricter[](#Breaking-changes-in-runes-mode-Attribute-prop-syntax-is-stricter)
 
@@ -1371,4 +1371,4 @@ Svelte 5 uses an extra `<svelte-css-wrapper>` element instead of a `<div>` to wr
 
 previous next
 
-[Svelte 4 migration guide](/docs/svelte/v4-migration-guide) [Frequently asked questions](/docs/svelte/faq)
+[Svelte 4 migration guide](../v4-migration-guide/index.md) [Frequently asked questions](../faq/index.md)

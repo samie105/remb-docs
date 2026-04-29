@@ -10,8 +10,8 @@ content_hash: "9e77c1aa4ab6dc907dabfb2e721b26f6fcc4869695c442d3f45d07b3d8b658b3"
 menu_path: ["PostgreSQL: Documentation: 18: 65.2. GiST Indexes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../gin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.4.\u00a0GIN Indexes"}
-nav_next: {"path": "../git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
+nav_prev: {"path": "postgres/docs/current/gin.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.4.\u00a0GIN Indexes"}
+nav_next: {"path": "postgres/docs/current/git.html/index.md", "title": "PostgreSQL: Documentation: 18: I.1.\u00a0Getting the Source via Git"}
 ---
 
 ### 65.2.1. Introduction [#](#GIST-INTRO)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:11.406Z"
 content_hash: "be8a2efc926930810f65d100af9eabb4d1edcca948ba749bf6f01c9174427ffa"
 menu_path: ["Template directives reference"]
 section_path: []
-nav_prev: {"path": "../astro-syntax/index.md", "title": "Template expressions reference"}
-nav_next: {"path": "../configuration-reference/index.md", "title": "Configuration Reference"}
+nav_prev: {"path": "astro/en/reference/astro-syntax/index.md", "title": "Template expressions reference"}
+nav_next: {"path": "astro/en/reference/configuration-reference/index.md", "title": "Configuration Reference"}
 ---
 
 # Template directives reference
@@ -110,11 +110,11 @@ This is equivalent to just passing a variable into a template expression directl
 
 [Section titled “Client Directives”](#client-directives)
 
-These directives control how [UI Framework components](/en/guides/framework-components/) are hydrated on the page.
+These directives control how [UI Framework components](../../guides/framework-components/index.md) are hydrated on the page.
 
 By default, a UI Framework component is not hydrated in the client. If no `client:*` directive is provided, its HTML is rendered onto the page without JavaScript.
 
-A client directive can only be used on a UI framework component that is directly imported into a `.astro` component. Hydration directives are not supported when using [dynamic tags](/en/reference/astro-syntax/#dynamic-tags) and [custom components passed via the `components` prop](/en/guides/integrations-guide/mdx/#passing-components-to-mdx-content).
+A client directive can only be used on a UI framework component that is directly imported into a `.astro` component. Hydration directives are not supported when using [dynamic tags](../astro-syntax/index.md#dynamic-tags) and [custom components passed via the `components` prop](../../guides/integrations-guide/mdx/index.md#passing-components-to-mdx-content).
 
 ### `client:load`
 
@@ -224,7 +224,7 @@ For components that render only on the client, it is also possible to display fa
 
 Since Astro 2.6.0, integrations can also add custom `client:*` directives to change how and when components should be hydrated.
 
-Visit the [`addClientDirective` API](/en/reference/integrations-reference/#addclientdirective-option) page to learn more about creating a custom client directive.
+Visit the [`addClientDirective` API](../integrations-reference/index.md#addclientdirective-option) page to learn more about creating a custom client directive.
 
 ## Server Directives
 
@@ -238,7 +238,7 @@ These directives control how server island components are rendered.
 
 The `server:defer` directive transforms the component into a server island, causing it to be rendered on demand, outside the scope of the rest of the page rendering.
 
-See more about using [server island components](/en/guides/server-islands/).
+See more about using [server island components](../../guides/server-islands/index.md).
 
 ```
 <Avatar server:defer />
@@ -260,7 +260,7 @@ By default, Astro automatically scopes `<style>` CSS rules to the component. You
 
 You can combine `<style>` and `<style is:global>` together in the same component, to create some global style rules while still scoping most of your component CSS.
 
-See the [Styling & CSS](/en/guides/styling/#global-styles) page for more details about how global styles work.
+See the [Styling & CSS](../../guides/styling/index.md#global-styles) page for more details about how global styles work.
 
 ```
 <style is:global>  body a { color: red; }</style>
@@ -287,7 +287,7 @@ The `is:inline` directive means that `<style>` and `<script>` tags:
 <script is:inline>  /* inline: relative & npm package imports are not supported. */  console.log('I am inlined right here in the final output HTML.');</script>
 ```
 
-See how [client-side scripts](/en/guides/client-side-scripts/) work in Astro components.
+See how [client-side scripts](../../guides/client-side-scripts/index.md) work in Astro components.
 
 ### `define:vars`
 
@@ -316,4 +316,4 @@ For example, if you had a custom Katex component that converted some text to HTM
 ---import Katex from '../components/Katex.astro';---<Katex is:raw>Some conflicting {syntax} here</Katex>
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

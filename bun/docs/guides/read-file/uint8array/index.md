@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:52.433Z"
 content_hash: "94e70a797ecf176faf11e4673f2d2f9a1bf0116379a55bed5d8eddb81f7190b4"
 menu_path: ["Read a file to a Uint8Array"]
 section_path: []
-nav_prev: {"path": "../string/index.md", "title": "Read a file as a string"}
-nav_next: {"path": "../watch/index.md", "title": "Watch a directory for changes"}
+nav_prev: {"path": "bun/docs/guides/read-file/string/index.md", "title": "Read a file as a string"}
+nav_next: {"path": "bun/docs/guides/read-file/watch/index.md", "title": "Watch a directory for changes"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../watch/index.md", "title": "Watch a directory for changes"
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.file()` function accepts a path and returns a `BunFile` instance. The `BunFile` class extends `Blob` and allows you to lazily read the file in a variety of formats. To read the file into a `Uint8Array` instance, retrieve the contents of the `BunFile` with `.bytes()`.
 
@@ -49,7 +49,7 @@ byteArray.length; // length of byteArray
 
 * * *
 
-Refer to [API > Binary data > Typed arrays](/docs/runtime/binary-data#typedarray) for more information on working with `Uint8Array` and other binary data formats in Bun.
+Refer to [API > Binary data > Typed arrays](../../../runtime/binary-data/index.md#typedarray) for more information on working with `Uint8Array` and other binary data formats in Bun.
 
 Was this page helpful?
 
@@ -61,10 +61,10 @@ Read a file to a Buffer
 
 Previous
 
-](/docs/guides/read-file/buffer)[
+](../buffer/index.md)[
 
 Read a file to an ArrayBuffer
 
 Next
 
-](/docs/guides/read-file/arraybuffer)
+](../arraybuffer/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:48.149Z"
 content_hash: "80b6008bb0317a4def33c9d35400897d5dc689608f1fe30ed3de804a3d2ee6b3"
 menu_path: ["Kontent.ai & Astro"]
 section_path: []
-nav_prev: {"path": "../keystonejs/index.md", "title": "KeystoneJS & Astro"}
-nav_next: {"path": "../microcms/index.md", "title": "microCMS & Astro"}
+nav_prev: {"path": "astro/en/guides/cms/keystonejs/index.md", "title": "KeystoneJS & Astro"}
+nav_next: {"path": "astro/en/guides/cms/microcms/index.md", "title": "microCMS & Astro"}
 ---
 
 # Kontent.ai & Astro
@@ -46,7 +46,7 @@ KONTENT_ENVIRONMENT_ID=YOUR_ENVIRONMENT_IDKONTENT_PREVIEW_API_KEY=YOUR_PREVIEW_A
 
 Now, these environment variables can be used in your Astro project.
 
-If you would like to get [TypeScript IntelliSense for these environment variables](/en/guides/environment-variables/#intellisense-for-typescript), you can create a new `env.d.ts` file in the `src/` directory and configure `ImportMetaEnv` like this:
+If you would like to get [TypeScript IntelliSense for these environment variables](../../environment-variables/index.md#intellisense-for-typescript), you can create a new `env.d.ts` file in the `src/` directory and configure `ImportMetaEnv` like this:
 
 ```
 interface ImportMetaEnv {  readonly KONTENT_ENVIRONMENT_ID: string;  readonly KONTENT_PREVIEW_API_KEY: string;}
@@ -256,7 +256,7 @@ The last step of the tutorial is to generate detailed blog post pages.
 
 [Section titled “Static site generation”](#static-site-generation)
 
-In this section, you’ll use the [Static (SSG) Mode](/en/guides/routing/#static-ssg-mode) with Astro.
+In this section, you’ll use the [Static (SSG) Mode](../../routing/index.md#static-ssg-mode) with Astro.
 
 First, create a file `[slug].astro` in `/src/pages/blog/` which needs to export a function `getStaticPaths` that collects all data from the CMS:
 
@@ -290,7 +290,7 @@ Navigate to your Astro preview ([http://localhost:4321/blog/astro-is-amazing/](h
 
 [Section titled “On-demand rendering”](#on-demand-rendering)
 
-If your routes are [rendered on demand](/en/guides/on-demand-rendering/), you will use dynamic routes to fetch the page data from Kontent.ai.
+If your routes are [rendered on demand](../../on-demand-rendering/index.md), you will use dynamic routes to fetch the page data from Kontent.ai.
 
 Create a new file `[slug].astro` in `/src/pages/blog/` and add the following code. The data fetching is very similar to previous use cases but adds an `equalsFilter` that lets us find the right blog post based on the used URL:
 
@@ -316,7 +316,7 @@ const { slug } = Astro.paramslet blogPost: BlogPost;try {    const data = await 
 
 [Section titled “Publishing your site”](#publishing-your-site)
 
-To deploy your website, visit the [deployment guides](/en/guides/deploy/) and follow the instructions for your preferred hosting provider.
+To deploy your website, visit the [deployment guides](../../deploy/index.md) and follow the instructions for your preferred hosting provider.
 
 #### Rebuild on Kontent.ai changes
 
@@ -364,7 +364,7 @@ Now, whenever you publish a new blog post in Kontent.ai, a new build will be tri
 
 *   ![](/logos/cloudcannon.svg)
     
-    ### [CloudCannon](/en/guides/cms/cloudcannon/)
+    ### [CloudCannon](../cloudcannon/index.md)
     
     Git-based CMS built for speed, security, and zero headaches.
     
@@ -373,171 +373,171 @@ Now, whenever you publish a new blog post in Kontent.ai, a new build will be tri
 
 *   ![](/logos/apostrophecms.svg)
     
-    ### [ApostropheCMS](/en/guides/cms/apostrophecms/)
+    ### [ApostropheCMS](../apostrophecms/index.md)
     
 *   ![](/logos/builderio.svg)
     
-    ### [Builder.io](/en/guides/cms/builderio/)
+    ### [Builder.io](../builderio/index.md)
     
 *   ![](/logos/buttercms.svg)
     
-    ### [ButterCMS](/en/guides/cms/buttercms/)
+    ### [ButterCMS](../buttercms/index.md)
     
 *   ![](/logos/caisy.svg)
     
-    ### [Caisy](/en/guides/cms/caisy/)
+    ### [Caisy](../caisy/index.md)
     
 *   ![](/logos/cloudcannon.svg)
     
-    ### [CloudCannon](/en/guides/cms/cloudcannon/)
+    ### [CloudCannon](../cloudcannon/index.md)
     
 *   ![](/logos/contentful.svg)
     
-    ### [Contentful](/en/guides/cms/contentful/)
+    ### [Contentful](../contentful/index.md)
     
 *   ![](/logos/cosmic.svg)
     
-    ### [Cosmic](/en/guides/cms/cosmic/)
+    ### [Cosmic](../cosmic/index.md)
     
 *   ![](/logos/craft-cms.svg)
     
-    ### [Craft CMS](/en/guides/cms/craft-cms/)
+    ### [Craft CMS](../craft-cms/index.md)
     
 *   ![](/logos/craft-cross-cms.svg)
     
-    ### [Craft Cross CMS](/en/guides/cms/craft-cross-cms/)
+    ### [Craft Cross CMS](../craft-cross-cms/index.md)
     
 *   ![](/logos/crystallize.svg)
     
-    ### [Crystallize](/en/guides/cms/crystallize/)
+    ### [Crystallize](../crystallize/index.md)
     
 *   ![](/logos/datocms.svg)
     
-    ### [DatoCMS](/en/guides/cms/datocms/)
+    ### [DatoCMS](../datocms/index.md)
     
 *   ![](/logos/decap-cms.svg)
     
-    ### [Decap CMS](/en/guides/cms/decap-cms/)
+    ### [Decap CMS](../decap-cms/index.md)
     
 *   ![](/logos/directus.svg)
     
-    ### [Directus](/en/guides/cms/directus/)
+    ### [Directus](../directus/index.md)
     
 *   ![](/logos/drupal.svg)
     
-    ### [Drupal](/en/guides/cms/drupal/)
+    ### [Drupal](../drupal/index.md)
     
 *   ![](/logos/flotiq.svg)
     
-    ### [Flotiq](/en/guides/cms/flotiq/)
+    ### [Flotiq](../flotiq/index.md)
     
 *   ![](/logos/frontmatter-cms.svg)
     
-    ### [Front Matter CMS](/en/guides/cms/frontmatter-cms/)
+    ### [Front Matter CMS](../frontmatter-cms/index.md)
     
 *   ![](/logos/ghost.png)
     
-    ### [Ghost](/en/guides/cms/ghost/)
+    ### [Ghost](../ghost/index.md)
     
 *   ![](/logos/gitcms.svg)
     
-    ### [GitCMS](/en/guides/cms/gitcms/)
+    ### [GitCMS](../gitcms/index.md)
     
 *   ![](/logos/hashnode.png)
     
-    ### [Hashnode](/en/guides/cms/hashnode/)
+    ### [Hashnode](../hashnode/index.md)
     
 *   ![](/logos/hygraph.svg)
     
-    ### [Hygraph](/en/guides/cms/hygraph/)
+    ### [Hygraph](../hygraph/index.md)
     
 *   ![](/logos/jekyllpad.svg)
     
-    ### [JekyllPad](/en/guides/cms/jekyllpad/)
+    ### [JekyllPad](../jekyllpad/index.md)
     
 *   ![](/logos/keystatic.svg)
     
-    ### [Keystatic](/en/guides/cms/keystatic/)
+    ### [Keystatic](../keystatic/index.md)
     
 *   ![](/logos/keystonejs.svg)
     
-    ### [KeystoneJS](/en/guides/cms/keystonejs/)
+    ### [KeystoneJS](../keystonejs/index.md)
     
 *   ![](/logos/kontent-ai.svg)
     
-    ### [Kontent.ai](/en/guides/cms/kontent-ai/)
+    ### [Kontent.ai](index.md)
     
 *   ![](/logos/microcms.svg)
     
-    ### [microCMS](/en/guides/cms/microcms/)
+    ### [microCMS](../microcms/index.md)
     
 *   ![](/logos/optimizely.svg)
     
-    ### [Optimizely CMS](/en/guides/cms/optimizely/)
+    ### [Optimizely CMS](../optimizely/index.md)
     
 *   ![](/logos/pages-cms.svg)
     
-    ### [Pages CMS](/en/guides/cms/pages-cms/)
+    ### [Pages CMS](../pages-cms/index.md)
     
 *   ![](/logos/payload.svg)
     
-    ### [Payload CMS](/en/guides/cms/payload/)
+    ### [Payload CMS](../payload/index.md)
     
 *   ![](/logos/preprcms.svg)
     
-    ### [Prepr CMS](/en/guides/cms/preprcms/)
+    ### [Prepr CMS](../preprcms/index.md)
     
 *   ![](/logos/prismic.svg)
     
-    ### [Prismic](/en/guides/cms/prismic/)
+    ### [Prismic](../prismic/index.md)
     
 *   ![](/logos/sanity.svg)
     
-    ### [Sanity](/en/guides/cms/sanity/)
+    ### [Sanity](../sanity/index.md)
     
 *   ![](/logos/sitecore.svg)
     
-    ### [Sitecore XM](/en/guides/cms/sitecore/)
+    ### [Sitecore XM](../sitecore/index.md)
     
 *   ![](/logos/sitepins.svg)
     
-    ### [Sitepins](/en/guides/cms/sitepins/)
+    ### [Sitepins](../sitepins/index.md)
     
 *   ![](/logos/spinal.svg)
     
-    ### [Spinal](/en/guides/cms/spinal/)
+    ### [Spinal](../spinal/index.md)
     
 *   ![](/logos/statamic.svg)
     
-    ### [Statamic](/en/guides/cms/statamic/)
+    ### [Statamic](../statamic/index.md)
     
 *   ![](/logos/storyblok.svg)
     
-    ### [Storyblok](/en/guides/cms/storyblok/)
+    ### [Storyblok](../storyblok/index.md)
     
 *   ![](/logos/strapi.svg)
     
-    ### [Strapi](/en/guides/cms/strapi/)
+    ### [Strapi](../strapi/index.md)
     
 *   ![](/logos/studiocms.svg)
     
-    ### [StudioCMS](/en/guides/cms/studiocms/)
+    ### [StudioCMS](../studiocms/index.md)
     
 *   ![](/logos/tina-cms.svg)
     
-    ### [Tina CMS](/en/guides/cms/tina-cms/)
+    ### [Tina CMS](../tina-cms/index.md)
     
 *   ![](/logos/umbraco.svg)
     
-    ### [Umbraco](/en/guides/cms/umbraco/)
+    ### [Umbraco](../umbraco/index.md)
     
 *   ![](/logos/vault-cms.svg)
     
-    ### [Vault CMS](/en/guides/cms/vault-cms/)
+    ### [Vault CMS](../vault-cms/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [Wordpress](/en/guides/cms/wordpress/)
+    ### [Wordpress](../wordpress/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

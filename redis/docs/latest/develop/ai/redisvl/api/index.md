@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:02.070Z"
 content_hash: "08c16e4a5e15b5fbf322320a115391b397bbe33cf4c4da5927e76154d0357292"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        RedisVL API","→","RedisVL API"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        RedisVL","→","RedisVL","→\n      \n        RedisVL API","→","RedisVL API"]
-nav_prev: {"path": "../index.md", "title": "RedisVL"}
-nav_next: {"path": "../install/index.md", "title": "Install RedisVL"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/redisvl/index.md", "title": "RedisVL"}
+nav_next: {"path": "redis/docs/latest/develop/ai/redisvl/install/index.md", "title": "Install RedisVL"}
 ---
 
 # RedisVL API

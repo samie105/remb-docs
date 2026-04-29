@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:12.940Z"
 content_hash: "cb1f2c0be4134f0e237aea652b458901fc0f244bdc9207b1d1348bf4a7c525c0"
 menu_path: ["Hooks"]
 section_path: []
-nav_prev: {"path": "../HTTP2/index.md", "title": "HTTP2"}
-nav_next: {"path": "../LTS/index.md", "title": "LTS"}
+nav_prev: {"path": "fastify/docs/latest/Reference/HTTP2/index.md", "title": "HTTP2"}
+nav_next: {"path": "fastify/docs/latest/Reference/LTS/index.md", "title": "LTS"}
 ---
 
 Version: latest (v5.8.x)
@@ -50,11 +50,11 @@ By using hooks you can interact directly with the lifecycle of Fastify. There ar
 
 ## Request/Reply Hooks[​](#requestreply-hooks "Direct link to Request/Reply Hooks")
 
-[Request](/docs/latest/Reference/Request/) and [Reply](/docs/latest/Reference/Reply/) are the core Fastify objects.
+[Request](../Request/index.md) and [Reply](../Reply/index.md) are the core Fastify objects.
 
-`done` is the function to continue with the [lifecycle](/docs/latest/Reference/Lifecycle/).
+`done` is the function to continue with the [lifecycle](../Lifecycle/index.md).
 
-It is easy to understand where each hook is executed by looking at the [lifecycle page](/docs/latest/Reference/Lifecycle/).
+It is easy to understand where each hook is executed by looking at the [lifecycle page](../Lifecycle/index.md).
 
 Hooks are affected by Fastify's encapsulation, and can thus be applied to selected routes. See the [Scopes](#scope) section for more information.
 
@@ -96,7 +96,7 @@ fastify.addHook('preParsing', async (request, reply, payload) => {  // Some code
 
 > ℹ️ Note: You should also add a `receivedEncodedLength` property to the returned stream. This property is used to correctly match the request payload with the `Content-Length` header value. Ideally, this property should be updated on each received chunk.
 
-> ℹ️ Note: The size of the returned stream is checked to not exceed the limit set in [`bodyLimit`](/docs/latest/Reference/Server/#bodylimit) option.
+> ℹ️ Note: The size of the returned stream is checked to not exceed the limit set in [`bodyLimit`](../Server/index.md#bodylimit) option.
 
 ### preValidation[​](#prevalidation "Direct link to preValidation")
 
@@ -158,7 +158,7 @@ This hook is useful if you need to do some custom error logging or add some spec
 
 It is not intended for changing the error, and calling `reply.send` will throw an exception.
 
-This hook will be executed before the [Custom Error Handler set by `setErrorHandler`](/docs/latest/Reference/Server/#seterrorhandler).
+This hook will be executed before the [Custom Error Handler set by `setErrorHandler`](../Server/index.md#seterrorhandler).
 
 > ℹ️ Note: Unlike the other hooks, passing an error to the `done` function is not supported.
 
@@ -216,7 +216,7 @@ fastify.addHook('onTimeout', async (request, reply) => {  // Some code  await as
 
 `onTimeout` is useful if you need to monitor the request timed out in your service (if the `connectionTimeout` property is set on the Fastify instance). The `onTimeout` hook is executed when a request is timed out and the HTTP socket has been hung up. Therefore, you will not be able to send data to the client.
 
-> ℹ️ Note: The `onTimeout` hook is triggered by socket-level timeouts set via `connectionTimeout`. For application-level per-route timeouts, see the [`handlerTimeout`](/docs/latest/Reference/Server/#factory-handler-timeout) option which uses `request.signal` for cooperative cancellation.
+> ℹ️ Note: The `onTimeout` hook is triggered by socket-level timeouts set via `connectionTimeout`. For application-level per-route timeouts, see the [`handlerTimeout`](../Server/index.md#factory-handler-timeout) option which uses `request.signal` for cooperative cancellation.
 
 ### onRequestAbort[​](#onrequestabort "Direct link to onRequestAbort")
 
@@ -232,7 +232,7 @@ fastify.addHook('onRequestAbort', async (request) => {  // Some code  await asyn
 
 The `onRequestAbort` hook is executed when a client closes the connection before the entire request has been processed. Therefore, you will not be able to send data to the client.
 
-> ℹ️ Note: Client abort detection is not completely reliable. See: [`Detecting-When-Clients-Abort.md`](/docs/latest/Guides/Detecting-When-Clients-Abort/)
+> ℹ️ Note: Client abort detection is not completely reliable. See: [`Detecting-When-Clients-Abort.md`](../../Guides/Detecting-When-Clients-Abort/index.md)
 
 ### Manage Errors from a hook[​](#manage-errors-from-a-hook "Direct link to Manage Errors from a hook")
 
@@ -248,7 +248,7 @@ If you want to pass a custom error code to the user, just use `reply.code()`:
 fastify.addHook('preHandler', (request, reply, done) => {  reply.code(400)  done(new Error('Some error'))})
 ```
 
-_The error will be handled by [`Reply`](/docs/latest/Reference/Reply/#errors)._
+_The error will be handled by [`Reply`](../Reply/index.md#errors)._
 
 Or if you're using `async/await` you can just throw an error:
 
@@ -313,7 +313,7 @@ This is an alternative to `fastify.server.on('listening', () => {})`.
 
 ### onClose[​](#onclose "Direct link to onClose")
 
-Triggered when `fastify.close()` is invoked to stop the server. By the time `onClose` hooks execute, the HTTP server has already stopped listening, all in-flight HTTP requests have been completed, and connections have been drained. This makes `onClose` the safe place for [plugins](/docs/latest/Reference/Plugins/) to release resources such as database connection pools, as no new requests will arrive.
+Triggered when `fastify.close()` is invoked to stop the server. By the time `onClose` hooks execute, the HTTP server has already stopped listening, all in-flight HTTP requests have been completed, and connections have been drained. This makes `onClose` the safe place for [plugins](../Plugins/index.md) to release resources such as database connection pools, as no new requests will arrive.
 
 The hook function takes the Fastify instance as a first argument, and a `done` callback for synchronous hook functions.
 
@@ -329,13 +329,13 @@ When multiple `onClose` hooks are registered across plugins, child-plugin hooks 
 fastify.register(function dbPlugin (instance, opts, done) {  instance.addHook('onClose', async (instance) => {    // Runs first — close the database pool    await instance.db.close()  })  done()})fastify.addHook('onClose', async (instance) => {  // Runs second — after child plugins have cleaned up})
 ```
 
-See [`close`](/docs/latest/Reference/Server/#close) for the full shutdown lifecycle.
+See [`close`](../Server/index.md#close) for the full shutdown lifecycle.
 
 ### preClose[​](#preclose "Direct link to preClose")
 
-Triggered when `fastify.close()` is invoked to stop the server. At this point the server is already rejecting new requests with `503` (when [`return503OnClosing`](/docs/latest/Reference/Server/#factory-return-503-on-closing) is `true`), but the HTTP server has not yet stopped listening and in-flight requests are still being processed.
+Triggered when `fastify.close()` is invoked to stop the server. At this point the server is already rejecting new requests with `503` (when [`return503OnClosing`](../Server/index.md#factory-return-503-on-closing) is `true`), but the HTTP server has not yet stopped listening and in-flight requests are still being processed.
 
-It is useful when [plugins](/docs/latest/Reference/Plugins/) have set up state attached to the HTTP server that would prevent the server from closing, such as open WebSocket connections or Server-Sent Events streams that must be explicitly terminated for `server.close()` to complete. _It is unlikely you will need to use this hook_, use the [`onClose`](#onclose) for the most common case.
+It is useful when [plugins](../Plugins/index.md) have set up state attached to the HTTP server that would prevent the server from closing, such as open WebSocket connections or Server-Sent Events streams that must be explicitly terminated for `server.close()` to complete. _It is unlikely you will need to use this hook_, use the [`onClose`](#onclose) for the most common case.
 
 ```
 // callback stylefastify.addHook('preClose', (done) => {  // Some code  done()})// or async/await stylefastify.addHook('preClose', async () => {  // Some async code  await removeSomeServerState()})
@@ -349,7 +349,7 @@ fastify.addHook('preClose', async () => {  // Close all WebSocket connections so
 
 ### onRoute[​](#onroute "Direct link to onRoute")
 
-Triggered when a new route is registered. Listeners are passed a [`routeOptions`](/docs/latest/Reference/Routes/#routes-options) object as the sole parameter. The interface is synchronous, and, as such, the listeners are not passed a callback. This hook is encapsulated.
+Triggered when a new route is registered. Listeners are passed a [`routeOptions`](../Routes/index.md#routes-options) object as the sole parameter. The interface is synchronous, and, as such, the listeners are not passed a callback. This hook is encapsulated.
 
 ```
 fastify.addHook('onRoute', (routeOptions) => {  //Some code  routeOptions.method  routeOptions.schema  routeOptions.url // the complete URL of the route, it will include the prefix if any  routeOptions.path // `url` alias  routeOptions.routePath // the URL of the route without the prefix  routeOptions.bodyLimit  routeOptions.logLevel  routeOptions.logSerializers  routeOptions.prefix})
@@ -383,7 +383,7 @@ fastify.decorate('data', [])fastify.register(async (instance, opts) => {  instan
 
 ## Scope[​](#scope "Direct link to Scope")
 
-Except for [onClose](#onclose), all hooks are encapsulated. This means that you can decide where your hooks should run by using `register` as explained in the [plugins guide](/docs/latest/Guides/Plugins-Guide/). If you pass a function, that function is bound to the right Fastify context and from there you have full access to the Fastify API.
+Except for [onClose](#onclose), all hooks are encapsulated. This means that you can decide where your hooks should run by using `register` as explained in the [plugins guide](../../Guides/Plugins-Guide/index.md). If you pass a function, that function is bound to the right Fastify context and from there you have full access to the Fastify API.
 
 ```
 fastify.addHook('onRequest', function (request, reply, done) {  const self = this // Fastify context  done()})
@@ -413,7 +413,7 @@ fastify.addHook('onRequest', (request, reply, done) => {  // Your code  done()})
 
 You can use a hook to inject custom properties into incoming requests. This is useful for reusing processed data from hooks in controllers.
 
-A very common use case is, for example, checking user authentication based on their token and then storing their recovered data into the [Request](/docs/latest/Reference/Request/) instance. This way, your controllers can read it easily with `request.authenticatedUser` or whatever you want to call it. That's how it might look like:
+A very common use case is, for example, checking user authentication based on their token and then storing their recovered data into the [Request](../Request/index.md) instance. This way, your controllers can read it easily with `request.authenticatedUser` or whatever you want to call it. That's how it might look like:
 
 ```
 fastify.addHook('preParsing', async (request) => {  request.authenticatedUser = {    id: 42,    name: 'Jane Doe',    role: 'admin'  }})fastify.get('/me/is-admin', async function (req, reply) {  return { isAdmin: req.authenticatedUser?.role === 'admin' || false }})
@@ -421,13 +421,13 @@ fastify.addHook('preParsing', async (request) => {  request.authenticatedUser = 
 
 Note that `.authenticatedUser` could actually be any property name chosen by yourself. Using your own custom property prevents you from mutating existing properties, which would be a dangerous and destructive operation. So be careful and make sure your property is entirely new, also using this approach only for very specific and small cases like this example.
 
-Regarding TypeScript in this example, you'd need to update the `FastifyRequest` core interface to include your new property typing (for more about it, see [TypeScript](/docs/latest/Reference/TypeScript/) page), like:
+Regarding TypeScript in this example, you'd need to update the `FastifyRequest` core interface to include your new property typing (for more about it, see [TypeScript](../TypeScript/index.md) page), like:
 
 ```
 interface AuthenticatedUser { /* ... */ }declare module 'fastify' {  export interface FastifyRequest {    authenticatedUser?: AuthenticatedUser;  }}
 ```
 
-Although this is a very pragmatic approach, if you're trying to do something more complex that changes these core objects, then consider creating a custom [Plugin](/docs/latest/Reference/Plugins/) instead.
+Although this is a very pragmatic approach, if you're trying to do something more complex that changes these core objects, then consider creating a custom [Plugin](../Plugins/index.md) instead.
 
 ## Diagnostics Channel Hooks[​](#diagnostics-channel-hooks "Direct link to Diagnostics Channel Hooks")
 

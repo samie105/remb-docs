@@ -11,21 +11,21 @@ menu_path: ["How to preview content with Draft Mode in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
-nav_next: {"path": "../environment-variables/index.md", "title": "How to use environment variables in Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/deploying-to-platforms/index.md", "title": "Deploying Next.js to different platforms"}
+nav_next: {"path": "nextjs/docs/app/guides/environment-variables/index.md", "title": "How to use environment variables in Next.js"}
 ---
 
 # How to preview content with Draft Mode in Next.js
 
 Last updated April 23, 2026
 
-**Draft Mode** allows you to preview draft content from your headless CMS in your Next.js application. This is useful for static pages that are generated at build time as it allows you to switch to [dynamic rendering](/docs/app/glossary#dynamic-rendering) and see the draft changes without having to rebuild your entire site.
+**Draft Mode** allows you to preview draft content from your headless CMS in your Next.js application. This is useful for static pages that are generated at build time as it allows you to switch to [dynamic rendering](../../glossary/index.md#dynamic-rendering) and see the draft changes without having to rebuild your entire site.
 
 This page walks through how to enable and use Draft Mode.
 
 ## Step 1: Create a Route Handler[](#step-1-create-a-route-handler)
 
-Create a [Route Handler](/docs/app/api-reference/file-conventions/route). It can have any name, for example, `app/api/draft/route.ts`.
+Create a [Route Handler](../../api-reference/file-conventions/route/index.md). It can have any name, for example, `app/api/draft/route.ts`.
 
 app/api/draft/route.ts
 
@@ -37,7 +37,7 @@ export async function GET(request: Request) {
 }
 ```
 
-Then, import the [`draftMode`](/docs/app/api-reference/functions/draft-mode) function and call the `enable()` method.
+Then, import the [`draftMode`](../../api-reference/functions/draft-mode/index.md) function and call the `enable()` method.
 
 app/api/draft/route.ts
 
@@ -173,6 +173,6 @@ See the API reference for more information on how to use Draft Mode.
 
 API Reference for the draftMode function.
 
-](/docs/app/api-reference/functions/draft-mode)
+](../../api-reference/functions/draft-mode/index.md)
 
 Was this helpful?

@@ -11,7 +11,7 @@ menu_path: ["Next.js Docs"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_next: {"path": "app/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "nextjs/docs/app/getting-started/index.md", "title": "Getting Started"}
 ---
 
 # Next.js Docs
@@ -30,9 +30,9 @@ Whether you're an individual developer or part of a larger team, Next.js can hel
 
 The docs are organized into 3 sections:
 
--   [Getting Started](/docs/app/getting-started): Step-by-step tutorials to help you create a new application and learn the core Next.js features.
--   [Guides](/docs/app/guides): Tutorials on specific use cases, choose what's relevant to you.
--   [API Reference](/docs/app/api-reference): Detailed technical reference for every feature.
+-   [Getting Started](app/getting-started/index.md): Step-by-step tutorials to help you create a new application and learn the core Next.js features.
+-   [Guides](app/guides/index.md): Tutorials on specific use cases, choose what's relevant to you.
+-   [API Reference](app/api-reference/index.md): Detailed technical reference for every feature.
 
 Use the sidebar to navigate through the sections, or search (`Ctrl+K` or `Cmd+K`) to quickly find a page.
 
@@ -43,7 +43,7 @@ Next.js has two different routers:
 -   **App Router**: The newer router that supports new React features like Server Components.
 -   **Pages Router**: The original router, still supported and being improved.
 
-At the top of the sidebar, you'll notice a dropdown menu that allows you to switch between the [App Router](/docs/app) and the [Pages Router](/docs/pages) docs.
+At the top of the sidebar, you'll notice a dropdown menu that allows you to switch between the [App Router](app/index.md) and the [Pages Router](pages/index.md) docs.
 
 ### React version handling[](#react-version-handling)
 
@@ -85,6 +85,6 @@ Create your first application and learn the core Next.js features.
 
 Learn how to create full-stack web applications with the Next.js App Router.
 
-](/docs/app/getting-started)
+](app/getting-started/index.md)
 
 Was this helpful?

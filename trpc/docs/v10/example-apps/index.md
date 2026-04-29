@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:42.514Z"
 content_hash: "e5d3c9d3a78a73c8ad8ec91d2eb08322cc82b3168bc3c997dfddbfd9e76bde7d"
 menu_path: ["Example Apps"]
 section_path: []
-nav_prev: {"path": "../concepts/index.md", "title": "Concepts"}
-nav_next: {"path": "../faq/index.md", "title": "FAQ / Troubleshooting"}
+nav_prev: {"path": "trpc/docs/v10/concepts/index.md", "title": "Concepts"}
+nav_next: {"path": "trpc/docs/v10/faq/index.md", "title": "FAQ / Troubleshooting"}
 ---
 
 note

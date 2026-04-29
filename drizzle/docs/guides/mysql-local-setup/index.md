@@ -10,8 +10,8 @@ content_hash: "de791d6fa06a401163f6f72d25fda2a63da65a714e2e366027d369663ac3c75d"
 menu_path: ["Drizzle ORM - How to setup MySQL locally"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../limit-offset-pagination/index.md", "title": "Drizzle ORM - SQL Limit/Offset pagination"}
-nav_next: {"path": "../point-datatype-psql/index.md", "title": "Drizzle ORM - Point datatype in PostgreSQL"}
+nav_prev: {"path": "drizzle/docs/guides/limit-offset-pagination/index.md", "title": "Drizzle ORM - SQL Limit/Offset pagination"}
+nav_next: {"path": "drizzle/docs/guides/point-datatype-psql/index.md", "title": "Drizzle ORM - Point datatype in PostgreSQL"}
 ---
 
 Drizzle ORM - How to setup MySQL locally

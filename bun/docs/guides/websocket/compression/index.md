@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:24.290Z"
 content_hash: "f1a37acd4792716cbb26cf7d7d3a0c52c511a4fe3e74672d061b99bd3e15e19e"
 menu_path: ["Enable compression for WebSocket messages"]
 section_path: []
-nav_prev: {"path": "../../util/which-path-to-executable-bin/index.md", "title": "Get the path to an executable bin file"}
-nav_next: {"path": "../context/index.md", "title": "Set per-socket contextual data on a WebSocket"}
+nav_prev: {"path": "bun/docs/guides/util/which-path-to-executable-bin/index.md", "title": "Get the path to an executable bin file"}
+nav_next: {"path": "bun/docs/guides/websocket/context/index.md", "title": "Set per-socket contextual data on a WebSocket"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../context/index.md", "title": "Set per-socket contextual da
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Per-message compression can be enabled with the `perMessageDeflate` parameter. When set, all messages will be compressed using the [permessage-deflate](https://tools.ietf.org/html/rfc7692) WebSocket extension.
 
@@ -77,10 +77,10 @@ Set per-socket contextual data on a WebSocket
 
 Previous
 
-](/docs/guides/websocket/context)[
+](../context/index.md)[
 
 Spawn a child process
 
 Next
 
-](/docs/guides/process/spawn)
+](../../process/spawn/index.md)

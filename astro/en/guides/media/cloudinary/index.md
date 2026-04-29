@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:26.416Z"
 content_hash: "f42fb15665b2d8d5bdfac7714ec081271e413d1280e9f054af369653480adb92"
 menu_path: ["Cloudinary & Astro"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "Image and video hosting with Astro"}
-nav_next: {"path": "../mux/index.md", "title": "Mux & Astro"}
+nav_prev: {"path": "astro/en/guides/media/index.md", "title": "Image and video hosting with Astro"}
+nav_next: {"path": "astro/en/guides/media/mux/index.md", "title": "Mux & Astro"}
 ---
 
 # Cloudinary & Astro
@@ -114,7 +114,7 @@ import { defineCollection } from 'astro:content';import { cldAssetsLoader } from
 export const collections = {  assets: defineCollection({    loader: cldAssetsLoader({      folder: '<Folder>' // Optional, without loads root directory    })  }),}
 ```
 
-You can then use the [`getCollection()` or `getEntry()` query functions](/en/guides/content-collections/#querying-build-time-collections) to select one or many images or videos from your collection.
+You can then use the [`getCollection()` or `getEntry()` query functions](../../content-collections/index.md#querying-build-time-collections) to select one or many images or videos from your collection.
 
 See [Cloudinary’s `cldAssetsLoader` documentation](https://astro.cloudinary.dev/cldassetsloader/basic-usage) for more information.
 
@@ -186,11 +186,11 @@ Learn how to [upload files using the Cloudinary Node.js SDK with Astro Forms](ht
 
 *   ![](/logos/cloudinary.svg)
     
-    ### [Cloudinary](/en/guides/media/cloudinary/)
+    ### [Cloudinary](index.md)
     
 *   ![](/logos/mux.svg)
     
-    ### [Mux](/en/guides/media/mux/)
+    ### [Mux](../mux/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

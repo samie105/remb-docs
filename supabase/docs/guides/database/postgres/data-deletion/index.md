@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:29.101Z"
 content_hash: "3ba542de60ae3a0a73e7dbfdacb6512ad3fed66231a13542aff4543fcd68e5c7"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Deleting data and dropping objects safely","Deleting data and dropping objects safely"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Deleting data and dropping objects safely","Deleting data and dropping objects safely"]
-nav_prev: {"path": "../configuration/index.md", "title": "Database configuration"}
-nav_next: {"path": "../dropping-all-tables-in-schema/index.md", "title": "Drop all tables in a Postgres schema"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/configuration/index.md", "title": "Database configuration"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/dropping-all-tables-in-schema/index.md", "title": "Drop all tables in a Postgres schema"}
 ---
 
 # 
@@ -26,9 +26,9 @@ Deleting rows and dropping database objects are routine operations, but on a liv
 *   Test in a staging environment
 *   Ensure you have a recent backup
 *   Confirm the table dependencies and foreign key constraints
-*   Drop dependent objects explicitly, use [CASCADE](/docs/guides/database/postgres/cascade-deletes) with caution
+*   Drop dependent objects explicitly, use [CASCADE](../cascade-deletes/index.md) with caution
 *   Choose a low traffic time to run the operation
-*   Run operations inside a [migration](/docs/guides/deployment/database-migrations)
+*   Run operations inside a [migration](../../../deployment/database-migrations/index.md)
 *   Set timeouts, such as `lock_timeout` and `statement_timeout`
 
 ### Identifying dependencies[#](#identifying-dependencies)
@@ -81,7 +81,7 @@ Then exclude soft-deleted rows in your queries or views:
 1create view active_orders as2  select * from orders where deleted_at is null;
 ```
 
-Combine soft deletes with a scheduled hard-delete job (using [pg\_cron](/docs/guides/database/extensions/pg_cron)) to permanently remove old soft-deleted rows in batches during low-traffic periods.
+Combine soft deletes with a scheduled hard-delete job (using [pg\_cron](../../extensions/pg_cron/index.md)) to permanently remove old soft-deleted rows in batches during low-traffic periods.
 
 ### Deleting all data[#](#deleting-all-data)
 
@@ -171,11 +171,11 @@ For reclaiming disk space (not just marking tuples as reusable), use `VACUUM FUL
 1-- This locks the table for the duration — use during maintenance windows only2vacuum full logs;
 ```
 
-The most efficient way to reclaim disk space, without locks, is to use [pg\_repack](/docs/guides/database/extensions/pg_repack).
+The most efficient way to reclaim disk space, without locks, is to use [pg\_repack](../../extensions/pg_repack/index.md).
 
 ## Related links[#](#related-links)
 
-*   [Safe Cascading Deletes](/docs/guides/database/postgres/cascade-deletes)
-*   [Inspecting your Database](/docs/guides/database/inspect)
-*   [Understanding Database and Disk Size](/docs/guides/platform/database-size)
+*   [Safe Cascading Deletes](../cascade-deletes/index.md)
+*   [Inspecting your Database](../../inspect/index.md)
+*   [Understanding Database and Disk Size](../../../platform/database-size/index.md)
 *   [Bloat in Postgres](/docs/blog/postgres-bloat)

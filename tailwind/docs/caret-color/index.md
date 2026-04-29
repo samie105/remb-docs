@@ -10,8 +10,8 @@ content_hash: "e97d7cc079c62d7ddc87bb0151bfd4a63cf472787c3b4143df7793695927f2c8"
 menu_path: ["caret-color"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../appearance/index.md", "title": "appearance"}
-nav_next: {"path": "../color-scheme/index.md", "title": "color-scheme"}
+nav_prev: {"path": "tailwind/docs/appearance/index.md", "title": "appearance"}
+nav_next: {"path": "tailwind/docs/color-scheme/index.md", "title": "color-scheme"}
 ---
 
 # caret-color
@@ -98,7 +98,7 @@ Prefix a `caret-color` utility with a breakpoint variant like `md:` to only appl
 <textarea class="caret-rose-500 md:caret-lime-600 ..."></textarea>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
@@ -112,7 +112,7 @@ Now the `caret-regal-blue` utility can be used in your markup:
 <textarea class="caret-regal-blue"></textarea>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

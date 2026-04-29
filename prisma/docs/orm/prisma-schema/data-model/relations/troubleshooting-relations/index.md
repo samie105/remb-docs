@@ -10,8 +10,8 @@ content_hash: "596b7c8f78f42acfcbe54095eb8214f6dd7fcf80bffa5ecef5f7cd3feef1d32f"
 menu_path: ["Troubleshooting relations"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../self-relations/index.md", "title": "Self-relations"}
-nav_next: {"path": "../../table-inheritance/index.md", "title": "Table inheritance"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/self-relations/index.md", "title": "Self-relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/table-inheritance/index.md", "title": "Table inheritance"}
 ---
 
 Modelling your schema can sometimes offer up some unexpected results. This section aims to cover the most prominent of those.

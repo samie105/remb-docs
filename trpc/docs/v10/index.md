@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:48.149Z"
 content_hash: "c36bfcd104efa17936c5c23c1660d45db4ce2cde49a03ef4351082e8d015d0ab"
 menu_path: ["tRPC"]
 section_path: []
-nav_prev: {"path": "../typedoc/next/functions/createTRPCNext/index.md", "title": "Function: createTRPCNext()"}
-nav_next: {"path": "client/index.md", "title": "Client Overview"}
+nav_prev: {"path": "trpc/docs/typedoc/next/functions/createTRPCNext/index.md", "title": "Function: createTRPCNext()"}
+nav_next: {"path": "trpc/docs/v10/client/index.md", "title": "Client Overview"}
 ---
 
 End-to-end typesafe APIs made easy

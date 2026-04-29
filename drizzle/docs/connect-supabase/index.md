@@ -10,8 +10,8 @@ content_hash: "c9c3ddbba83761a1064b8a36c39bb3ffbee08f745657e66c4e8c9842c8ddfe31"
 menu_path: ["Drizzle <> Supabase"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-prisma-postgres/index.md", "title": "Drizzle <> Prisma Postgres"}
-nav_next: {"path": "../connect-xata/index.md", "title": "Drizzle <> Xata"}
+nav_prev: {"path": "drizzle/docs/connect-prisma-postgres/index.md", "title": "Drizzle <> Prisma Postgres"}
+nav_next: {"path": "drizzle/docs/connect-xata/index.md", "title": "Drizzle <> Xata"}
 ---
 
 This guide assumes familiarity with:

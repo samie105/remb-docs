@@ -11,21 +11,21 @@ menu_path: ["generateStaticParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../generate-sitemaps/index.md", "title": "generateSitemaps"}
-nav_next: {"path": "../generate-viewport/index.md", "title": "generateViewport"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-sitemaps/index.md", "title": "generateSitemaps"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-viewport/index.md", "title": "generateViewport"}
 ---
 
 # generateStaticParams
 
 Last updated April 23, 2026
 
-The `generateStaticParams` function can be used in combination with [dynamic route segments](/docs/app/api-reference/file-conventions/dynamic-routes) to [**statically generate**](/docs/app/glossary#prerendering) routes at build time instead of on-demand at request time.
+The `generateStaticParams` function can be used in combination with [dynamic route segments](../../file-conventions/dynamic-routes/index.md) to [**statically generate**](../../../glossary/index.md#prerendering) routes at build time instead of on-demand at request time.
 
 `generateStaticParams` can be used with:
 
--   [Pages](/docs/app/api-reference/file-conventions/page) (`page.tsx`/`page.js`)
--   [Layouts](/docs/app/api-reference/file-conventions/layout) (`layout.tsx`/`layout.js`)
--   [Route Handlers](/docs/app/api-reference/file-conventions/route) (`route.ts`/`route.js`)
+-   [Pages](../../file-conventions/page/index.md) (`page.tsx`/`page.js`)
+-   [Layouts](../../file-conventions/layout/index.md) (`layout.tsx`/`layout.js`)
+-   [Route Handlers](../../file-conventions/route/index.md) (`route.ts`/`route.js`)
 
 app/blog/\[slug\]/page.tsx
 
@@ -55,12 +55,12 @@ export default async function Page({
 
 > **Good to know**:
 > 
-> -   You can use the [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams) segment config option to control what happens when a dynamic segment is visited that was not generated with `generateStaticParams`.
-> -   You must return [an empty array from `generateStaticParams`](#all-paths-at-build-time) or utilize [`export const dynamic = 'force-static'`](/docs/app/guides/caching-without-cache-components#dynamic) in order to revalidate (ISR) [paths at runtime](#all-paths-at-runtime).
+> -   You can use the [`dynamicParams`](../../file-conventions/route-segment-config/dynamicParams/index.md) segment config option to control what happens when a dynamic segment is visited that was not generated with `generateStaticParams`.
+> -   You must return [an empty array from `generateStaticParams`](#all-paths-at-build-time) or utilize [`export const dynamic = 'force-static'`](../../../guides/caching-without-cache-components/index.md#dynamic) in order to revalidate (ISR) [paths at runtime](#all-paths-at-runtime).
 > -   During `next dev`, `generateStaticParams` will be called when you navigate to a route.
 > -   During `next build`, `generateStaticParams` runs before the corresponding Layouts or Pages are generated.
 > -   During revalidation (ISR), `generateStaticParams` will not be called again.
-> -   `generateStaticParams` replaces the [`getStaticPaths`](/docs/pages/api-reference/functions/get-static-paths) function in the Pages Router.
+> -   `generateStaticParams` replaces the [`getStaticPaths`](../../../../pages/api-reference/functions/get-static-paths/index.md) function in the Pages Router.
 
 ## Parameters[](#parameters)
 
@@ -206,7 +206,7 @@ export async function generateStaticParams() {
 }
 ```
 
-Then, by using the [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams) segment config option, you can control what happens when a dynamic segment is visited that was not generated with `generateStaticParams`.
+Then, by using the [`dynamicParams`](../../file-conventions/route-segment-config/dynamicParams/index.md) segment config option, you can control what happens when a dynamic segment is visited that was not generated with `generateStaticParams`.
 
 app/blog/\[slug\]/page.tsx
 
@@ -228,7 +228,7 @@ export async function generateStaticParams() {
 
 #### All paths at runtime[](#all-paths-at-runtime)
 
-To statically render all paths the first time they're visited, return an empty array (no paths will be rendered at build time) or utilize [`export const dynamic = 'force-static'`](/docs/app/guides/caching-without-cache-components#dynamic):
+To statically render all paths the first time they're visited, return an empty array (no paths will be rendered at build time) or utilize [`export const dynamic = 'force-static'`](../../../guides/caching-without-cache-components/index.md#dynamic):
 
 app/blog/\[slug\]/page.js
 
@@ -250,15 +250,15 @@ export const dynamic = 'force-static'
 
 #### With Cache Components[](#with-cache-components)
 
-When using [Cache Components](/docs/app/getting-started/caching) with dynamic routes, `generateStaticParams` must return **at least one param**. Empty arrays cause a [build error](/docs/messages/empty-generate-static-params). This allows Cache Components to validate your route doesn't incorrectly access `cookies()`, `headers()`, or `searchParams` at runtime.
+When using [Cache Components](../../../getting-started/caching/index.md) with dynamic routes, `generateStaticParams` must return **at least one param**. Empty arrays cause a [build error](../../../../messages/empty-generate-static-params/index.md). This allows Cache Components to validate your route doesn't incorrectly access `cookies()`, `headers()`, or `searchParams` at runtime.
 
 > **Good to know**: If you don't know the actual param values at build time, you can return a placeholder param (e.g., `[{ slug: '__placeholder__' }]`) for validation, then handle it in your page with `notFound()`. However, this prevents build time validation from working effectively and may cause runtime errors.
 
-See the [dynamic routes section](/docs/app/api-reference/file-conventions/dynamic-routes#with-cache-components) for detailed walkthroughs.
+See the [dynamic routes section](../../file-conventions/dynamic-routes/index.md#with-cache-components) for detailed walkthroughs.
 
 ### With Route Handlers[](#with-route-handlers)
 
-You can use `generateStaticParams` with [Route Handlers](/docs/app/api-reference/file-conventions/route) to statically generate API responses at build time:
+You can use `generateStaticParams` with [Route Handlers](../../file-conventions/route/index.md) to statically generate API responses at build time:
 
 app/api/posts/\[id\]/route.ts
 
@@ -281,7 +281,7 @@ export async function GET(
 
 ### Route Handlers with Cache Components[](#route-handlers-with-cache-components)
 
-When using [Cache Components](/docs/app/getting-started/caching), combine with `use cache` for optimal caching:
+When using [Cache Components](../../../getting-started/caching/index.md), combine with `use cache` for optimal caching:
 
 app/api/posts/\[id\]/route.ts
 
@@ -306,11 +306,11 @@ export async function GET(
 }
 ```
 
-See the [Route Handlers documentation](/docs/app/api-reference/file-conventions/route#static-generation-with-generatestaticparams) for more details.
+See the [Route Handlers documentation](../../file-conventions/route/index.md#static-generation-with-generatestaticparams) for more details.
 
 ### Disable rendering for unspecified paths[](#disable-rendering-for-unspecified-paths)
 
-To prevent unspecified paths from being prerendered at runtime, add the `export const dynamicParams = false` option in a route segment. When this config option is used, only paths provided by `generateStaticParams` will be served, and unspecified routes will 404 or match (in the case of [catch-all routes](/docs/app/api-reference/file-conventions/dynamic-routes#catch-all-segments)).
+To prevent unspecified paths from being prerendered at runtime, add the `export const dynamicParams = false` option in a route segment. When this config option is used, only paths provided by `generateStaticParams` will be served, and unspecified routes will 404 or match (in the case of [catch-all routes](../../file-conventions/dynamic-routes/index.md#catch-all-segments)).
 
 ### Multiple Dynamic Segments in a Route[](#multiple-dynamic-segments-in-a-route)
 
@@ -412,7 +412,7 @@ export default function Page({
 
 Notice that the params argument can be accessed synchronously and includes only parent segment params.
 
-For type completion, you can make use of the TypeScript `Awaited` helper in combination with either [`Page Props helper`](/docs/app/api-reference/file-conventions/page#page-props-helper) or [`Layout Props helper`](/docs/app/api-reference/file-conventions/layout#layout-props-helper):
+For type completion, you can make use of the TypeScript `Awaited` helper in combination with either [`Page Props helper`](../../file-conventions/page/index.md#page-props-helper) or [`Layout Props helper`](../../file-conventions/layout/index.md#layout-props-helper):
 
 app/products/\[category\]/\[product\]/page.tsx
 
@@ -434,7 +434,7 @@ export async function generateStaticParams({
 }
 ```
 
-> **Good to know**: `fetch` requests are automatically [memoized](/docs/app/glossary#memoization) for the same data across all `generate`\-prefixed functions, Layouts, Pages, and Server Components. React [`cache` can be used](https://react.dev/reference/react/cache) if `fetch` is unavailable.
+> **Good to know**: `fetch` requests are automatically [memoized](../../../glossary/index.md#memoization) for the same data across all `generate`\-prefixed functions, Layouts, Pages, and Server Components. React [`cache` can be used](https://react.dev/reference/react/cache) if `fetch` is unavailable.
 
 ## Version History[](#version-history)
 

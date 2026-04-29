@@ -10,8 +10,8 @@ content_hash: "f1ce178180d75ce084bc7f9af4a3cbce9f69b93bec905e1ede1780b52707f887"
 menu_path: ["Migrations with Drizzle Kit"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../relations/index.md", "title": "Drizzle soft relations"}
-nav_next: {"path": "../drizzle-kit-generate/index.md", "title": "drizzle-kit generate"}
+nav_prev: {"path": "drizzle/docs/relations/index.md", "title": "Drizzle soft relations"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-generate/index.md", "title": "drizzle-kit generate"}
 ---
 
 ## Migrations with Drizzle Kit

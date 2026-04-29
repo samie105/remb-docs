@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:19.541Z"
 content_hash: "16c247e5edd2f12544d674372d93d228497d32d380b2a318f8dc52cffaee0c85"
 menu_path: ["Read a file to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "../../process/stdin/index.md", "title": "Read from stdin"}
-nav_next: {"path": "../buffer/index.md", "title": "Read a file to a Buffer"}
+nav_prev: {"path": "bun/docs/guides/process/stdin/index.md", "title": "Read from stdin"}
+nav_next: {"path": "bun/docs/guides/read-file/buffer/index.md", "title": "Read a file to a Buffer"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../buffer/index.md", "title": "Read a file to a Buffer"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.file()` function accepts a path and returns a `BunFile` instance. The `BunFile` class extends `Blob` and allows you to lazily read the file in a variety of formats. Use `.arrayBuffer()` to read the file as an `ArrayBuffer`.
 
@@ -48,7 +48,7 @@ const buffer = await file.arrayBuffer();
 
 * * *
 
-The binary content in the `ArrayBuffer` can then be read as a typed array, such as `Int8Array`. For `Uint8Array`, use [`.bytes()`](/docs/guides/read-file/uint8array).
+The binary content in the `ArrayBuffer` can then be read as a typed array, such as `Int8Array`. For `Uint8Array`, use [`.bytes()`](../uint8array/index.md).
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)index.ts
 
@@ -62,7 +62,7 @@ bytes.length;
 
 * * *
 
-Refer to the [Typed arrays](/docs/runtime/binary-data#typedarray) docs for more information on working with typed arrays in Bun.
+Refer to the [Typed arrays](../../../runtime/binary-data/index.md#typedarray) docs for more information on working with typed arrays in Bun.
 
 Was this page helpful?
 
@@ -74,10 +74,10 @@ Read a file to a Uint8Array
 
 Previous
 
-](/docs/guides/read-file/uint8array)[
+](../uint8array/index.md)[
 
 Read a JSON file
 
 Next
 
-](/docs/guides/read-file/json)
+](../json/index.md)

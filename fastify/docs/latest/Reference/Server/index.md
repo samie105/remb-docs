@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:23.802Z"
 content_hash: "a4e8ac331eadac080b72a58064447053c51b719a9327b0bc137909a152ed1db9"
 menu_path: ["Server"]
 section_path: []
-nav_prev: {"path": "../Routes/index.md", "title": "Routes"}
-nav_next: {"path": "../Type-Providers/index.md", "title": "Type-Providers"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Routes/index.md", "title": "Routes"}
+nav_next: {"path": "fastify/docs/latest/Reference/Type-Providers/index.md", "title": "Type-Providers"}
 ---
 
 Version: latest (v5.8.x)
@@ -192,11 +192,11 @@ When `serverFactory` option is specified, this option is ignored. It must be set
 
 Defines the maximum number of milliseconds allowed for processing a request through the entire route lifecycle (from routing through onRequest, parsing, validation, handler execution, and serialization). If the response is not sent within this time, a `503 Service Unavailable` error is returned and `request.signal` is aborted.
 
-Unlike `connectionTimeout` and `requestTimeout` (which operate at the socket level), `handlerTimeout` is an application-level timeout that works correctly with HTTP keep-alive connections. It can be overridden per-route via [route options](/docs/latest/Reference/Routes/#routes-options). When set at both levels, the route-level value takes precedence. Routes without an explicit `handlerTimeout` inherit the server default. Once a server-level timeout is set, individual routes cannot opt out of it — they can only override it with a different positive integer.
+Unlike `connectionTimeout` and `requestTimeout` (which operate at the socket level), `handlerTimeout` is an application-level timeout that works correctly with HTTP keep-alive connections. It can be overridden per-route via [route options](../Routes/index.md#routes-options). When set at both levels, the route-level value takes precedence. Routes without an explicit `handlerTimeout` inherit the server default. Once a server-level timeout is set, individual routes cannot opt out of it — they can only override it with a different positive integer.
 
-The timeout is **cooperative**: when it fires, Fastify sends the 503 error response, but the handler's async work continues to run. Use [`request.signal`](/docs/latest/Reference/Request/) to detect cancellation and stop ongoing work (database queries, HTTP requests, etc.). APIs that accept a `signal` option (`fetch()`, database drivers, `stream.pipeline()`) will cancel automatically.
+The timeout is **cooperative**: when it fires, Fastify sends the 503 error response, but the handler's async work continues to run. Use [`request.signal`](../Request/index.md) to detect cancellation and stop ongoing work (database queries, HTTP requests, etc.). APIs that accept a `signal` option (`fetch()`, database drivers, `stream.pipeline()`) will cancel automatically.
 
-The timeout error (`FST_ERR_HANDLER_TIMEOUT`) is sent through the route's [error handler](/docs/latest/Reference/Routes/#routes-options), which can be customized per-route to change the status code or response body.
+The timeout error (`FST_ERR_HANDLER_TIMEOUT`) is sent through the route's [error handler](../Routes/index.md#routes-options), which can be customized per-route to change the status code or response body.
 
 When `reply.hijack()` is called, the timeout timer is cleared — the handler takes full responsibility for the response lifecycle.
 
@@ -210,13 +210,13 @@ const fastify = require('fastify')({  handlerTimeout: 10000 // 10s default for a
 
 *   Default: `1048576` (1MiB)
 
-Defines the maximum payload, in bytes, the server is allowed to accept. The default body reader sends [`FST_ERR_CTP_BODY_TOO_LARGE`](/docs/latest/Reference/Errors/#fst_err_ctp_body_too_large) reply, if the size of the body exceeds this limit. If [`preParsing` hook](/docs/latest/Reference/Hooks/#preparsing) is provided, this limit is applied to the size of the stream the hook returns (i.e. the size of "decoded" body).
+Defines the maximum payload, in bytes, the server is allowed to accept. The default body reader sends [`FST_ERR_CTP_BODY_TOO_LARGE`](../Errors/index.md#fst_err_ctp_body_too_large) reply, if the size of the body exceeds this limit. If [`preParsing` hook](../Hooks/index.md#preparsing) is provided, this limit is applied to the size of the stream the hook returns (i.e. the size of "decoded" body).
 
 ### `onProtoPoisoning`[​](#onprotopoisoning "Direct link to onprotopoisoning")
 
 *   Default: `'error'`
 
-Defines what action the framework must take when parsing a JSON object with `__proto__`. This functionality is provided by [secure-json-parse](https://github.com/fastify/secure-json-parse). See [Prototype Poisoning](/docs/latest/Guides/Prototype-Poisoning/) for more details about prototype poisoning attacks.
+Defines what action the framework must take when parsing a JSON object with `__proto__`. This functionality is provided by [secure-json-parse](https://github.com/fastify/secure-json-parse). See [Prototype Poisoning](../../Guides/Prototype-Poisoning/index.md) for more details about prototype poisoning attacks.
 
 Possible values are `'error'`, `'remove'`, or `'ignore'`.
 
@@ -224,7 +224,7 @@ Possible values are `'error'`, `'remove'`, or `'ignore'`.
 
 *   Default: `'error'`
 
-Defines what action the framework must take when parsing a JSON object with `constructor`. This functionality is provided by [secure-json-parse](https://github.com/fastify/secure-json-parse). See [Prototype Poisoning](/docs/latest/Guides/Prototype-Poisoning/) for more details about prototype poisoning attacks.
+Defines what action the framework must take when parsing a JSON object with `constructor`. This functionality is provided by [secure-json-parse](https://github.com/fastify/secure-json-parse). See [Prototype Poisoning](../../Guides/Prototype-Poisoning/index.md) for more details about prototype poisoning attacks.
 
 Possible values are `'error'`, `'remove'`, or `'ignore'`.
 
@@ -297,7 +297,7 @@ Internally Fastify uses the API of Node core HTTP server, so if you are using a 
 
 *   Default: `'request-id'`
 
-The header name used to set the request-id. See [the request-id](/docs/latest/Reference/Logging/#logging-request-id) section. Setting `requestIdHeader` to `true` will set the `requestIdHeader` to `"request-id"`. Setting `requestIdHeader` to a non-empty string will use the specified string as the `requestIdHeader`. By default `requestIdHeader` is set to `false` and will immediately use [genReqId](#genreqid). Setting `requestIdHeader` to an empty String (`""`) will set the requestIdHeader to `false`.
+The header name used to set the request-id. See [the request-id](../Logging/index.md#logging-request-id) section. Setting `requestIdHeader` to `true` will set the `requestIdHeader` to `"request-id"`. Setting `requestIdHeader` to a non-empty string will use the specified string as the `requestIdHeader`. By default `requestIdHeader` is set to `false` and will immediately use [genReqId](#genreqid). Setting `requestIdHeader` to an empty String (`""`) will set the requestIdHeader to `false`.
 
 *   Default: `false`
 
@@ -349,7 +349,7 @@ const fastify = Fastify({ trustProxy: true })
 
 For more examples, refer to the [`@fastify/proxy-addr`](https://www.npmjs.com/package/@fastify/proxy-addr) package.
 
-You may access the `ip`, `ips`, `host` and `protocol` values on the [`request`](/docs/latest/Reference/Request/) object.
+You may access the `ip`, `ips`, `host` and `protocol` values on the [`request`](../Request/index.md) object.
 
 ```
 fastify.get('/', (request, reply) => {  console.log(request.ip)  console.log(request.ips)  console.log(request.host)  console.log(request.protocol)})
@@ -397,7 +397,7 @@ When `false`, requests arriving during the closing phase are routed and processe
 
 ### `ajv`[​](#ajv "Direct link to ajv")
 
-Configure the Ajv v8 instance used by Fastify without providing a custom one. The default configuration is explained in the [#schema-validator](/docs/latest/Reference/Validation-and-Serialization/#schema-validator) section.
+Configure the Ajv v8 instance used by Fastify without providing a custom one. The default configuration is explained in the [#schema-validator](../Validation-and-Serialization/index.md#schema-validator) section.
 
 ```
 const fastify = require('fastify')({  ajv: {    customOptions: {      removeAdditional: 'all' // Refer to [ajv options](https://ajv.js.org/options.html#removeadditional)    },    plugins: [      require('ajv-merge-patch'),      [require('ajv-keywords'), 'instanceof']      // Usage: [plugin, pluginOptions] - Plugin with options      // Usage: plugin - Plugin without options    ],    onCreate: (ajv) => {      // Modify the ajv instance as you need.      ajv.addFormat('myFormat', (data) => typeof data === 'string')    }  }})
@@ -744,7 +744,7 @@ fastify.routing(req, res)
 
 #### route[​](#route "Direct link to route")
 
-Method to add routes to the server, it also has shorthand functions, check [here](/docs/latest/Reference/Routes/).
+Method to add routes to the server, it also has shorthand functions, check [here](../Routes/index.md).
 
 #### hasRoute[​](#hasroute "Direct link to hasRoute")
 
@@ -764,7 +764,7 @@ const route = fastify.findRoute({  url: '/artists/:artistId',  method: 'GET',  c
 
 #### close[​](#close "Direct link to close")
 
-`fastify.close(callback)`: call this function to close the server instance and run the [`'onClose'`](/docs/latest/Reference/Hooks/#on-close) hook.
+`fastify.close(callback)`: call this function to close the server instance and run the [`'onClose'`](../Hooks/index.md#on-close) hook.
 
 Calling `close` will also cause the server to respond to every new incoming request with a `503` error and destroy that request. See [`return503OnClosing` flags](#factory-return-503-on-closing) for changing this behavior.
 
@@ -779,32 +779,32 @@ fastify.close().then(() => {  console.log('successfully closed!')}, (err) => {  
 When `fastify.close()` is called, the following steps happen in order:
 
 1.  The server is flagged as **closing**. New incoming requests receive a `Connection: close` header (HTTP/1.1) and are handled according to [`return503OnClosing`](#factory-return-503-on-closing).
-2.  [`preClose`](/docs/latest/Reference/Hooks/#pre-close) hooks execute. The server is still processing in-flight requests at this point.
+2.  [`preClose`](../Hooks/index.md#pre-close) hooks execute. The server is still processing in-flight requests at this point.
 3.  **Connection draining** based on the [`forceCloseConnections`](#forcecloseconnections) option:
     *   `"idle"` — idle keep-alive connections are closed; in-flight requests continue.
     *   `true` — all persistent connections are destroyed immediately.
     *   `false` — no forced closure; idle connections remain open until they time out naturally (see [`keepAliveTimeout`](#keepalivetimeout)).
 4.  The HTTP server **stops accepting** new TCP connections (`server.close()`). Node.js waits for all in-flight requests to complete before invoking the callback.
-5.  [`onClose`](/docs/latest/Reference/Hooks/#on-close) hooks execute. All in-flight requests have completed and the server is no longer listening.
+5.  [`onClose`](../Hooks/index.md#on-close) hooks execute. All in-flight requests have completed and the server is no longer listening.
 6.  The `close` callback (or the returned Promise) resolves.
 
 ```
 fastify.close() called  │  ├─▶ closing = true (new requests receive 503)  │  ├─▶ preClose hooks  │     (in-flight requests still active)  │  ├─▶ Connection draining (forceCloseConnections)  │  ├─▶ server.close()  │     (waits for in-flight requests to complete)  │  ├─▶ onClose hooks  │     (server stopped, all requests done)  │  └─▶ close callback / Promise resolves
 ```
 
-> ℹ️ Note: Upgraded connections (such as WebSocket) are not tracked by the HTTP server and will prevent `server.close()` from completing. Close them explicitly in a [`preClose`](/docs/latest/Reference/Hooks/#pre-close) hook.
+> ℹ️ Note: Upgraded connections (such as WebSocket) are not tracked by the HTTP server and will prevent `server.close()` from completing. Close them explicitly in a [`preClose`](../Hooks/index.md#pre-close) hook.
 
 #### decorate\*[​](#decorate "Direct link to decorate*")
 
-Function useful if you need to decorate the fastify instance, Reply or Request, check [here](/docs/latest/Reference/Decorators/).
+Function useful if you need to decorate the fastify instance, Reply or Request, check [here](../Decorators/index.md).
 
 #### register[​](#register "Direct link to register")
 
-Fastify allows the user to extend its functionality with plugins. A plugin can be a set of routes, a server decorator, or whatever, check [here](/docs/latest/Reference/Plugins/).
+Fastify allows the user to extend its functionality with plugins. A plugin can be a set of routes, a server decorator, or whatever, check [here](../Plugins/index.md).
 
 #### addHook[​](#addhook "Direct link to addHook")
 
-Function to add a specific hook in the lifecycle of Fastify, check [here](/docs/latest/Reference/Hooks/).
+Function to add a specific hook in the lifecycle of Fastify, check [here](../Hooks/index.md).
 
 #### prefix[​](#prefix "Direct link to prefix")
 
@@ -843,15 +843,15 @@ The current origin the server is listening to. For example, a TCP socket based s
 
 #### log[​](#log "Direct link to log")
 
-The logger instance, check [here](/docs/latest/Reference/Logging/).
+The logger instance, check [here](../Logging/index.md).
 
 #### version[​](#version "Direct link to version")
 
-Fastify version of the instance. Used for plugin support. See [Plugins](/docs/latest/Reference/Plugins/#handle-the-scope) for information on how the version is used by plugins.
+Fastify version of the instance. Used for plugin support. See [Plugins](../Plugins/index.md#handle-the-scope) for information on how the version is used by plugins.
 
 #### inject[​](#inject "Direct link to inject")
 
-Fake HTTP injection (for testing purposes) [here](/docs/latest/Guides/Testing/#benefits-of-using-fastifyinject).
+Fake HTTP injection (for testing purposes) [here](../../Guides/Testing/index.md#benefits-of-using-fastifyinject).
 
 #### addHttpMethod[​](#addhttpmethod "Direct link to addHttpMethod")
 
@@ -873,7 +873,7 @@ fastify.addHttpMethod('MKCOL', { hasBody: true })fastify.mkcol('/', (req, reply)
 
 `fastify.addSchema(schemaObj)`, adds a JSON schema to the Fastify instance. This allows you to reuse it everywhere in your application just by using the standard `$ref` keyword.
 
-To learn more, read the [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/) documentation.
+To learn more, read the [Validation and Serialization](../Validation-and-Serialization/index.md) documentation.
 
 #### getSchemas[​](#getschemas "Direct link to getSchemas")
 
@@ -885,7 +885,7 @@ To learn more, read the [Validation and Serialization](/docs/latest/Reference/Va
 
 #### setReplySerializer[​](#setreplyserializer "Direct link to setReplySerializer")
 
-Set the reply serializer for all the routes. This will be used as default if a [Reply.serializer(func)](/docs/latest/Reference/Reply/#serializerfunc) has not been set. The handler is fully encapsulated, so different plugins can set different error handlers. Note: the function parameter is called only for status `2xx`. Check out the [`setErrorHandler`](#seterrorhandler) for errors.
+Set the reply serializer for all the routes. This will be used as default if a [Reply.serializer(func)](../Reply/index.md#serializerfunc) has not been set. The handler is fully encapsulated, so different plugins can set different error handlers. Note: the function parameter is called only for status `2xx`. Check out the [`setErrorHandler`](#seterrorhandler) for errors.
 
 ```
 fastify.setReplySerializer(function (payload, statusCode){  // serialize the payload with a sync function  return `my serialized ${statusCode} content: ${payload}`})
@@ -893,15 +893,15 @@ fastify.setReplySerializer(function (payload, statusCode){  // serialize the pay
 
 #### setValidatorCompiler[​](#setvalidatorcompiler "Direct link to setValidatorCompiler")
 
-Set the schema validator compiler for all routes. See [#schema-validator](/docs/latest/Reference/Validation-and-Serialization/#schema-validator).
+Set the schema validator compiler for all routes. See [#schema-validator](../Validation-and-Serialization/index.md#schema-validator).
 
 #### setSchemaErrorFormatter[​](#setschemaerrorformatter "Direct link to setSchemaErrorFormatter")
 
-Set the schema error formatter for all routes. See [#error-handling](/docs/latest/Reference/Validation-and-Serialization/#schemaerrorformatter).
+Set the schema error formatter for all routes. See [#error-handling](../Validation-and-Serialization/index.md#schemaerrorformatter).
 
 #### setSerializerCompiler[​](#setserializercompiler "Direct link to setSerializerCompiler")
 
-Set the schema serializer compiler for all routes. See [#schema-serializer](/docs/latest/Reference/Validation-and-Serialization/#schema-serializer).
+Set the schema serializer compiler for all routes. See [#schema-serializer](../Validation-and-Serialization/index.md#schema-serializer).
 
 > ℹ️ Note: [`setReplySerializer`](#set-reply-serializer) has priority if set!
 
@@ -915,7 +915,7 @@ This property can be used to get the schema serializer. If not set, it will be `
 
 #### schemaErrorFormatter[​](#schemaerrorformatter "Direct link to schemaErrorFormatter")
 
-This property can be used to set a function to format errors that happen while the `validationCompiler` fails to validate the schema. See [#error-handling](/docs/latest/Reference/Validation-and-Serialization/#schemaerrorformatter).
+This property can be used to set a function to format errors that happen while the `validationCompiler` fails to validate the schema. See [#error-handling](../Validation-and-Serialization/index.md#schemaerrorformatter).
 
 #### schemaController[​](#schemacontroller "Direct link to schemaController")
 
@@ -934,11 +934,11 @@ const fastify = Fastify({  schemaController: {    /**     * This factory is call
 
 #### setNotFoundHandler[​](#setnotfoundhandler "Direct link to setNotFoundHandler")
 
-`fastify.setNotFoundHandler(handler(request, reply))`: set the 404 handler. This call is encapsulated by prefix, so different plugins can set different not found handlers if a different [`prefix` option](/docs/latest/Reference/Plugins/#route-prefixing-option) is passed to `fastify.register()`. The handler is treated as a regular route handler so requests will go through the full [Fastify lifecycle](/docs/latest/Reference/Lifecycle/#lifecycle) for unexisting URLs. _async-await_ is supported as well. Badly formatted URLs are sent to the [`onBadUrl`](#onbadurl) handler instead.
+`fastify.setNotFoundHandler(handler(request, reply))`: set the 404 handler. This call is encapsulated by prefix, so different plugins can set different not found handlers if a different [`prefix` option](../Plugins/index.md#route-prefixing-option) is passed to `fastify.register()`. The handler is treated as a regular route handler so requests will go through the full [Fastify lifecycle](../Lifecycle/index.md#lifecycle) for unexisting URLs. _async-await_ is supported as well. Badly formatted URLs are sent to the [`onBadUrl`](#onbadurl) handler instead.
 
-You can also register [`preValidation`](/docs/latest/Reference/Hooks/#route-hooks) and [`preHandler`](/docs/latest/Reference/Hooks/#route-hooks) hooks for the 404 handler.
+You can also register [`preValidation`](../Hooks/index.md#route-hooks) and [`preHandler`](../Hooks/index.md#route-hooks) hooks for the 404 handler.
 
-> ℹ️ Note: The `preValidation` hook registered using this method will run for a route that Fastify does not recognize and **not** when a route handler manually calls [`reply.callNotFound`](/docs/latest/Reference/Reply/#call-not-found). In which case, only preHandler will be run.
+> ℹ️ Note: The `preValidation` hook registered using this method will run for a route that Fastify does not recognize and **not** when a route handler manually calls [`reply.callNotFound`](../Reply/index.md#call-not-found). In which case, only preHandler will be run.
 
 ```
 fastify.setNotFoundHandler({  preValidation: (req, reply, done) => {    // your code    done()  },  preHandler: (req, reply, done) => {    // your code    done()  }}, function (request, reply) {    // Default not found handler with preValidation and preHandler hooks})fastify.register(function (instance, options, done) {  instance.setNotFoundHandler(function (request, reply) {    // Handle not found request without preValidation and preHandler hooks    // to URLs that begin with '/v1'  })  done()}, { prefix: '/v1' })
@@ -1050,7 +1050,7 @@ If you want to print the internal router tree, you should specify the `method` p
   console.log(fastify.printRoutes({ commonPrefix: false }))  // ├── /test (GET)  // │   ├── /hello (GET)  // │   └── ing (GET)  // │       └── /:param (GET)  // └── /update (PUT)
 ```
 
-`fastify.printRoutes({ includeMeta: (true | []) })` will display properties from the `route.store` object for each displayed route. This can be an `array` of keys (e.g. `['onRequest', Symbol('key')]`), or `true` to display all properties. A shorthand option, `fastify.printRoutes({ includeHooks: true })` will include all [hooks](/docs/latest/Reference/Hooks/).
+`fastify.printRoutes({ includeMeta: (true | []) })` will display properties from the `route.store` object for each displayed route. This can be an `array` of keys (e.g. `['onRequest', Symbol('key')]`), or `true` to display all properties. A shorthand option, `fastify.printRoutes({ includeHooks: true })` will include all [hooks](../Hooks/index.md).
 
 ```
   fastify.get('/test', () => {})  fastify.get('/test/hello', () => {})  const onTimeout = () => {}  fastify.addHook('onRequest', () => {})  fastify.addHook('onTimeout', onTimeout)  console.log(fastify.printRoutes({ includeHooks: true, includeMeta: ['errorHandler'] }))  // └── /  //     └── test (GET)  //         • (onTimeout) ["onTimeout()"]  //         • (onRequest) ["anonymous()"]  //         • (errorHandler) "defaultErrorHandler()"  //         test (HEAD)  //         • (onTimeout) ["onTimeout()"]  //         • (onRequest) ["anonymous()"]  //         • (onSend) ["headRouteOnSendHandler()"]  //         • (errorHandler) "defaultErrorHandler()"  //         └── /hello (GET)  //             • (onTimeout) ["onTimeout()"]  //             • (onRequest) ["anonymous()"]  //             • (errorHandler) "defaultErrorHandler()"  //             /hello (HEAD)  //             • (onTimeout) ["onTimeout()"]  //             • (onRequest) ["anonymous()"]  //             • (onSend) ["headRouteOnSendHandler()"]  //             • (errorHandler) "defaultErrorHandler()"  console.log(fastify.printRoutes({ includeHooks: true }))  // └── /  //     └── test (GET)  //         • (onTimeout) ["onTimeout()"]  //         • (onRequest) ["anonymous()"]  //         test (HEAD)  //         • (onTimeout) ["onTimeout()"]  //         • (onRequest) ["anonymous()"]  //         • (onSend) ["headRouteOnSendHandler()"]  //         └── /hello (GET)  //             • (onTimeout) ["onTimeout()"]  //             • (onRequest) ["anonymous()"]  //             /hello (HEAD)  //             • (onTimeout) ["onTimeout()"]  //             • (onRequest) ["anonymous()"]  //             • (onSend) ["headRouteOnSendHandler()"]
@@ -1094,7 +1094,7 @@ fastify.removeContentTypeParser('application/json')fastify.removeContentTypePars
 
 The `fastify.removeAllContentTypeParsers()` method allows all content type parsers in the current context to be removed. A use case of this method is the implementation of catch-all content type parser. Before adding this parser with `fastify.addContentTypeParser()` one could call the `removeAllContentTypeParsers` method.
 
-For more details about the usage of the different content type parser APIs see [here](/docs/latest/Reference/ContentTypeParser/#usage).
+For more details about the usage of the different content type parser APIs see [here](../ContentTypeParser/index.md#usage).
 
 #### getDefaultJsonParser[​](#getdefaultjsonparser "Direct link to getDefaultJsonParser")
 

@@ -10,8 +10,8 @@ content_hash: "0a41f22ac593526bfcf5605dff2428bce94344349afb799ad05ec5203e26d38c"
 menu_path: ["text-decoration-style"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text-decoration-color/index.md", "title": "text-decoration-color"}
-nav_next: {"path": "../text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
+nav_prev: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
+nav_next: {"path": "tailwind/docs/text-decoration-thickness/index.md", "title": "text-decoration-thickness"}
 ---
 
 # text-decoration-style
@@ -45,7 +45,7 @@ Utilities for controlling the style of text decorations.
 
  |
 
-Use utilities like `decoration-dotted` and `decoration-dashed` to change the [text decoration](/docs/text-decoration-line) style of an element:
+Use utilities like `decoration-dotted` and `decoration-dashed` to change the [text decoration](../text-decoration-line/index.md) style of an element:
 
 decoration-solid
 
@@ -77,7 +77,7 @@ Prefix a `text-decoration-style` utility with a breakpoint variant like `md:` to
 <p class="underline md:decoration-dashed ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

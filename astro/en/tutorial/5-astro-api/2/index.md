@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:52.564Z"
 content_hash: "00166dfd897c7d92d306244cf5333beb728699398a383eec269c74e5d5352b62"
 menu_path: ["Generate tag pages"]
 section_path: []
-nav_prev: {"path": "../1/index.md", "title": "Create a blog post archive"}
-nav_next: {"path": "../3/index.md", "title": "Build a tag index page"}
+nav_prev: {"path": "astro/en/tutorial/5-astro-api/1/index.md", "title": "Create a blog post archive"}
+nav_next: {"path": "astro/en/tutorial/5-astro-api/3/index.md", "title": "Build a tag index page"}
 ---
 
 # Generate tag pages
@@ -188,9 +188,9 @@ Choose the term that matches the description.
 
 [Section titled “Resources”](#resources)
 
-*   [Dynamic Page Routing in Astro](/en/guides/routing/#dynamic-routes)
+*   [Dynamic Page Routing in Astro](../../../guides/routing/index.md#dynamic-routes)
     
-*   [`getStaticPaths()` API documentation](/en/reference/routing-reference/#getstaticpaths)
+*   [`getStaticPaths()` API documentation](../../../reference/routing-reference/index.md#getstaticpaths)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

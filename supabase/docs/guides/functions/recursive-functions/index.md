@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:15.015Z"
 content_hash: "31d7a2cda8cb2a67c8ad4aa9d69acf928a080aa2f0af282fca1c6457c655e911"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Recursive/Nested function calls","Recursive/Nested function calls"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Recursive/Nested function calls","Recursive/Nested function calls"]
-nav_prev: {"path": "../quickstart-dashboard/index.md", "title": "Getting Started with Edge Functions (Dashboard)"}
-nav_next: {"path": "../regional-invocation/index.md", "title": "Regional Invocations"}
+nav_prev: {"path": "supabase/docs/guides/functions/quickstart-dashboard/index.md", "title": "Getting Started with Edge Functions (Dashboard)"}
+nav_next: {"path": "supabase/docs/guides/functions/regional-invocation/index.md", "title": "Regional Invocations"}
 ---
 
 # 
@@ -76,7 +76,7 @@ If your function is recursive, set a maximum depth to prevent unbounded call cha
 
 ### 3\. Use queues for large workloads[#](#3-use-queues-for-large-workloads)
 
-For processing large datasets, consider using [Supabase Queues](/docs/guides/queues) instead of recursive function calls. Queues handle backpressure automatically and are better suited for high-volume workloads.
+For processing large datasets, consider using [Supabase Queues](../../queues/index.md) instead of recursive function calls. Queues handle backpressure automatically and are better suited for high-volume workloads.
 
 ### 4\. Use shared libraries instead of separate functions[#](#4-use-shared-libraries-instead-of-separate-functions)
 

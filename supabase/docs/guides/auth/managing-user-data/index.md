@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:08.442Z"
 content_hash: "ae8d093fa049bffad87b29a6a7112e3d11f17a9dd251662c730af08a38a420b5"
 menu_path: ["Auth","Auth","Configuration","Configuration","User Management","User Management"]
 section_path: ["Auth","Auth","Configuration","Configuration","User Management","User Management"]
-nav_prev: {"path": "../jwts/index.md", "title": "JSON Web Token (JWT)"}
-nav_next: {"path": "../native-mobile-deep-linking/index.md", "title": "Native Mobile Deep Linking"}
+nav_prev: {"path": "supabase/docs/guides/auth/jwts/index.md", "title": "JSON Web Token (JWT)"}
+nav_next: {"path": "supabase/docs/guides/auth/native-mobile-deep-linking/index.md", "title": "Native Mobile Deep Linking"}
 ---
 
 # 
@@ -29,7 +29,7 @@ You can view your users on the [Users page](/dashboard/project/_/auth/users) of 
 
 For security, the Auth schema is not exposed in the auto-generated API. If you want to access users data via the API, you can create your own user tables in the `public` schema.
 
-Make sure to protect the table by enabling [Row Level Security](/docs/guides/database/postgres/row-level-security). Reference the `auth.users` table to ensure data integrity. Specify `on delete cascade` in the reference. For example, a `public.profiles` table might look like this:
+Make sure to protect the table by enabling [Row Level Security](../../database/postgres/row-level-security/index.md). Reference the `auth.users` table to ensure data integrity. Specify `on delete cascade` in the reference. For example, a `public.profiles` table might look like this:
 
 ```
 1create table public.profiles (2  id uuid not null references auth.users on delete cascade,3  first_name text,4  last_name text,56  primary key (id)7);89alter table public.profiles enable row level security;

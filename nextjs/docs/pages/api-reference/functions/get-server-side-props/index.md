@@ -11,8 +11,8 @@ menu_path: ["getServerSideProps"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../get-initial-props/index.md", "title": "getInitialProps"}
-nav_next: {"path": "../get-static-paths/index.md", "title": "getStaticPaths"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-initial-props/index.md", "title": "getInitialProps"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/get-static-paths/index.md", "title": "getStaticPaths"}
 ---
 
 # getServerSideProps
@@ -60,7 +60,7 @@ The `context` parameter is an object containing the following keys:
 
 | Name | Description |
 | --- | --- |
-| `params` | If this page uses a [dynamic route](/docs/pages/building-your-application/routing/dynamic-routes), `params` contains the route parameters. If the page name is `[id].js`, then `params` will look like `{ id: ... }`. |
+| `params` | If this page uses a [dynamic route](../../../building-your-application/routing/dynamic-routes/index.md), `params` contains the route parameters. If the page name is `[id].js`, then `params` will look like `{ id: ... }`. |
 | `req` | [The `HTTP` IncomingMessage object](https://nodejs.org/api/http.html#http_class_http_incomingmessage), with an additional `cookies` prop, which is an object with string keys mapping to string values of cookies. |
 | `res` | [The `HTTP` response object](https://nodejs.org/api/http.html#http_class_http_serverresponse). |
 | `query` | An object representing the query string, including dynamic route parameters. |
@@ -90,7 +90,7 @@ export async function getServerSideProps(context) {
 
 ### `notFound`[](#notfound)
 
-The `notFound` boolean allows the page to return a `404` status and [404 Page](/docs/pages/building-your-application/routing/custom-error#404-page). With `notFound: true`, the page will return a `404` even if there was a successfully generated page before. This is meant to support use cases like user-generated content getting removed by its author.
+The `notFound` boolean allows the page to return a `404` status and [404 Page](../../../building-your-application/routing/custom-error/index.md#404-page). With `notFound: true`, the page will return a `404` even if there was a successfully generated page before. This is meant to support use cases like user-generated content getting removed by its author.
 
 ```
 export async function getServerSideProps(context) {
@@ -137,7 +137,7 @@ export async function getServerSideProps(context) {
 
 | Version | Changes |
 | --- | --- |
-| `v13.4.0` | [App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching |
+| `v13.4.0` | [App Router](../../../../app/getting-started/fetching-data/index.md) is now stable with simplified data fetching |
 | `v10.0.0` | `locale`, `locales`, `defaultLocale`, and `notFound` options added. |
 | `v9.3.0` | `getServerSideProps` introduced. |
 

@@ -10,8 +10,8 @@ content_hash: "fac5aa1f68bd4fa2d9965e138d9a6ec8e1a54c8fb82626d757f952d8c60bc6dd"
 menu_path: ["transform"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../skew/index.md", "title": "skew"}
-nav_next: {"path": "../transform-origin/index.md", "title": "transform-origin"}
+nav_prev: {"path": "tailwind/docs/skew/index.md", "title": "skew"}
+nav_next: {"path": "tailwind/docs/transform-origin/index.md", "title": "transform-origin"}
 ---
 
 # transform

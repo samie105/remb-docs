@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:34.319Z"
 content_hash: "9015e86153014b0c389b8e05ddd816a1599af32a8f669d61fa878d3bf5110b75"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 65. Built-in Index Access Methods"]
 section_path: []
-nav_prev: {"path": "../wal-for-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a064.\u00a0Write Ahead Logging for Extensions"}
-nav_next: {"path": "../bki.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a068.\u00a0System Catalog Declarations and Initial Contents"}
+nav_prev: {"path": "postgres/docs/current/wal-for-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a064.\u00a0Write Ahead Logging for Extensions"}
+nav_next: {"path": "postgres/docs/current/bki.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a068.\u00a0System Catalog Declarations and Initial Contents"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

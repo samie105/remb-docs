@@ -10,8 +10,8 @@ content_hash: "87a88bef1a6a3f3abad5d67a12f0d9f8d204df215b4c62b9ceabd5b34dbb65ec"
 menu_path: ["About the shadow database"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../migration-histories/index.md", "title": "Migration histories"}
-nav_next: {"path": "../limitations-and-known-issues/index.md", "title": "Limitations and known issues"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories/index.md", "title": "Migration histories"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/understanding-prisma-migrate/limitations-and-known-issues/index.md", "title": "Limitations and known issues"}
 ---
 
 Learn how Prisma Migrate uses shadow databases to detect schema drift

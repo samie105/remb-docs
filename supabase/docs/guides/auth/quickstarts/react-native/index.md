@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:41.083Z"
 content_hash: "be89dfcac7092f36f6bebd1f4bb4d7e7eaaf70cd7250f9130f33790b17164453"
 menu_path: ["Auth","Auth","Getting Started","Getting Started","React Native","React Native"]
 section_path: ["Auth","Auth","Getting Started","Getting Started","React Native","React Native"]
-nav_prev: {"path": "../react/index.md", "title": "Use Supabase Auth with React"}
-nav_next: {"path": "../with-expo-react-native-social-auth/index.md", "title": "Build a Social Auth App with Expo React Native"}
+nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/react/index.md", "title": "Use Supabase Auth with React"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/with-expo-react-native-social-auth/index.md", "title": "Build a Social Auth App with Expo React Native"}
 ---
 
 # 
@@ -93,7 +93,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=exporeactnative).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 

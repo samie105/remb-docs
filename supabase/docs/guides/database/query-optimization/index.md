@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:10.305Z"
 content_hash: "dc9409001e22a5445322e84610259d115e8de65fe233f3955b8efea581cc029e"
 menu_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Query optimization","Query optimization"]
 section_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Query optimization","Query optimization"]
-nav_prev: {"path": "../psql/index.md", "title": "Connecting with PSQL"}
-nav_next: {"path": "../replication/index.md", "title": "Database Replication"}
+nav_prev: {"path": "supabase/docs/guides/database/psql/index.md", "title": "Connecting with PSQL"}
+nav_next: {"path": "supabase/docs/guides/database/replication/index.md", "title": "Database Replication"}
 ---
 
 # 
@@ -32,7 +32,7 @@ This guide is intended to:
 
 This is not a comprehensive resource, but rather a helpful starting point for your optimization journey.
 
-If you're new to query optimization, you may be interested in [`index_advisor`](/docs/guides/database/extensions/index_advisor), our tool for automatically detecting indexes that improve performance on a given query.
+If you're new to query optimization, you may be interested in [`index_advisor`](../extensions/index_advisor/index.md), our tool for automatically detecting indexes that improve performance on a given query.
 
 ## Example query[#](#example-query)
 

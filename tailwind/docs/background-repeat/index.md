@@ -10,8 +10,8 @@ content_hash: "183052af4be35d0961c87a843b15fca194277fa0011665c05c0539328a5b3a02"
 menu_path: ["background-repeat"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../background-position/index.md", "title": "background-position"}
-nav_next: {"path": "../background-size/index.md", "title": "background-size"}
+nav_prev: {"path": "tailwind/docs/background-position/index.md", "title": "background-position"}
+nav_next: {"path": "tailwind/docs/background-size/index.md", "title": "background-size"}
 ---
 
 # background-repeat
@@ -92,7 +92,7 @@ Prefix a `background-repeat` utility with a breakpoint variant like `md:` to onl
 <div class="bg-repeat md:bg-repeat-x ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

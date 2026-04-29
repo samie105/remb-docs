@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../deploying/index.md", "title": "Deploying"}
-nav_next: {"path": "../../guides/index.md", "title": "Guides"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/deploying/index.md", "title": "Deploying"}
+nav_next: {"path": "nextjs/docs/app/guides/index.md", "title": "Guides"}
 ---
 
 # Upgrading
@@ -110,11 +110,11 @@ The following features are currently available in canary:
 
 **Authentication**:
 
--   [`forbidden`](/docs/app/api-reference/functions/forbidden)
--   [`unauthorized`](/docs/app/api-reference/functions/unauthorized)
--   [`forbidden.js`](/docs/app/api-reference/file-conventions/forbidden)
--   [`unauthorized.js`](/docs/app/api-reference/file-conventions/unauthorized)
--   [`authInterrupts`](/docs/app/api-reference/config/next-config-js/authInterrupts)
+-   [`forbidden`](../../api-reference/functions/forbidden/index.md)
+-   [`unauthorized`](../../api-reference/functions/unauthorized/index.md)
+-   [`forbidden.js`](../../api-reference/file-conventions/forbidden/index.md)
+-   [`unauthorized.js`](../../api-reference/file-conventions/unauthorized/index.md)
+-   [`authInterrupts`](../../api-reference/config/next-config-js/authInterrupts/index.md)
 
 ## Version guides
 
@@ -126,18 +126,18 @@ See the version guides for in-depth upgrade instructions.
 
 Upgrade your Next.js Application from Version 15 to 16.
 
-](/docs/app/guides/upgrading/version-16)[
+](../../guides/upgrading/version-16/index.md)[
 
 ### Version 15
 
 Upgrade your Next.js Application from Version 14 to 15.
 
-](/docs/app/guides/upgrading/version-15)[
+](../../guides/upgrading/version-15/index.md)[
 
 ### Version 14
 
 Upgrade your Next.js Application from Version 13 to 14.
 
-](/docs/app/guides/upgrading/version-14)
+](../../guides/upgrading/version-14/index.md)
 
 Was this helpful?

@@ -11,8 +11,8 @@ menu_path: ["appDir"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
-nav_next: {"path": "../assetPrefix/index.md", "title": "assetPrefix"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/allowedDevOrigins/index.md", "title": "allowedDevOrigins"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/assetPrefix/index.md", "title": "assetPrefix"}
 ---
 
 # appDir
@@ -23,8 +23,8 @@ Last updated April 23, 2026
 
 > **Good to know**: This option is **no longer** needed as of Next.js 13.4. The App Router is now stable.
 
-The App Router ([`app` directory](/docs/app)) enables support for [layouts](/docs/app/api-reference/file-conventions/layout), [Server Components](/docs/app/getting-started/server-and-client-components), [streaming](/docs/app/api-reference/file-conventions/loading), and [colocated data fetching](/docs/app/getting-started/fetching-data).
+The App Router ([`app` directory](../../../../index.md)) enables support for [layouts](../../../file-conventions/layout/index.md), [Server Components](../../../../getting-started/server-and-client-components/index.md), [streaming](../../../file-conventions/loading/index.md), and [colocated data fetching](../../../../getting-started/fetching-data/index.md).
 
-Using the `app` directory will automatically enable [React Strict Mode](https://react.dev/reference/react/StrictMode). Learn how to [incrementally adopt `app`](/docs/app/guides/migrating/app-router-migration#migrating-from-pages-to-app).
+Using the `app` directory will automatically enable [React Strict Mode](https://react.dev/reference/react/StrictMode). Learn how to [incrementally adopt `app`](../../../../guides/migrating/app-router-migration/index.md#migrating-from-pages-to-app).
 
 Was this helpful?

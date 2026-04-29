@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:30.356Z"
 content_hash: "c6c0290683fa2126c299e288a8d06e9924ce08882b7001bdd7270b6f3c24656d"
 menu_path: ["IP Restriction Middleware ​"]
 section_path: []
-nav_prev: {"path": "../etag/index.md", "title": "ETag Middleware \u200b"}
-nav_next: {"path": "../jsx-renderer/index.md", "title": "JSX Renderer Middleware \u200b"}
+nav_prev: {"path": "hono/docs/middleware/builtin/etag/index.md", "title": "ETag Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/jsx-renderer/index.md", "title": "JSX Renderer Middleware \u200b"}
 ---
 
 ## IP Restriction Middleware [​](#ip-restriction-middleware)

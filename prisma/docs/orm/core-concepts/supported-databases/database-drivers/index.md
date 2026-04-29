@@ -11,8 +11,8 @@ menu_path: ["Database drivers"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../../../more/releases/index.md", "title": "ORM releases and maturity levels"}
-nav_next: {"path": "../mongodb/index.md", "title": "MongoDB"}
+nav_prev: {"path": "prisma/docs/orm/more/releases/index.md", "title": "ORM releases and maturity levels"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
 ---
 
 Prisma Client can connect and run queries against your database using JavaScript database drivers via **driver adapters**. Adapters act as _translators_ between Prisma Client and the JavaScript database driver.

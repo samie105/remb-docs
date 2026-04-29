@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:43.068Z"
 content_hash: "374777973dc910de4865e6b19ed32740373c0c93450298e982a4a3fd4380ad6b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RIOT-X","→","RIOT-X"]
-nav_prev: {"path": "../redisvl/index.md", "title": "RedisVL"}
-nav_next: {"path": "docs/index.md", "title": "Documentation"}
+nav_prev: {"path": "redis/docs/latest/integrate/redisvl/index.md", "title": "RedisVL"}
+nav_next: {"path": "redis/docs/latest/integrate/riot/docs/index.md", "title": "Documentation"}
 ---
 
 # RIOT-X

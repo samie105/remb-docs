@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:28.724Z"
 content_hash: "b3629fbc2c602302d00f6026fc5fc283f5030c53f61ea352371a87d676f4cec8"
 menu_path: ["Convert a Buffer to a blob"]
 section_path: []
-nav_prev: {"path": "../buffer-to-arraybuffer/index.md", "title": "Convert a Buffer to an ArrayBuffer"}
-nav_next: {"path": "../buffer-to-readablestream/index.md", "title": "Convert a Buffer to a ReadableStream"}
+nav_prev: {"path": "bun/docs/guides/binary/buffer-to-arraybuffer/index.md", "title": "Convert a Buffer to an ArrayBuffer"}
+nav_next: {"path": "bun/docs/guides/binary/buffer-to-readablestream/index.md", "title": "Convert a Buffer to a ReadableStream"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../buffer-to-readablestream/index.md", "title": "Convert a B
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 A [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) can be constructed from an array of “chunks”, where each chunk is a string, binary data structure (including `Buffer`), or another `Blob`.
 
@@ -44,7 +44,7 @@ const blob = new Blob([buf]);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a Buffer to an ArrayBuffer
 
 Previous
 
-](/docs/guides/binary/buffer-to-arraybuffer)[
+](../buffer-to-arraybuffer/index.md)[
 
 Convert a Buffer to a Uint8Array
 
 Next
 
-](/docs/guides/binary/buffer-to-typedarray)
+](../buffer-to-typedarray/index.md)

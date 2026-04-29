@@ -10,8 +10,8 @@ content_hash: "82ab80afb4731bc7857e670afa301e95339a3d6a685a21e4b4bdd54c6cec0659"
 menu_path: ["backdrop-filter: blur()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../backdrop-filter/index.md", "title": "backdrop-filter"}
-nav_next: {"path": "../backdrop-filter-brightness/index.md", "title": "backdrop-filter: brightness()"}
+nav_prev: {"path": "tailwind/docs/backdrop-filter/index.md", "title": "backdrop-filter"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-brightness/index.md", "title": "backdrop-filter: brightness()"}
 ---
 
 # backdrop-filter: blur()
@@ -108,7 +108,7 @@ Prefix a `backdrop-filter: blur()` utility with a breakpoint variant like `md:` 
 <div class="backdrop-blur-none md:backdrop-blur-lg ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--blur-*` theme variables to customize the backdrop blur utilities in your project:
 
@@ -122,7 +122,7 @@ Now the `backdrop-blur-2xs` utility can be used in your markup:
 <div class="backdrop-blur-2xs">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

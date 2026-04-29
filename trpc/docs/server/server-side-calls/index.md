@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:32.575Z"
 content_hash: "ea18f4eae8a127bbe9288ed01ee10fcecb113e4a790453459a238ddca6c3496c"
 menu_path: ["Server Side Calls"]
 section_path: []
-nav_prev: {"path": "../routers/index.md", "title": "Define Routers"}
-nav_next: {"path": "../subscriptions/index.md", "title": "Subscriptions"}
+nav_prev: {"path": "trpc/docs/server/routers/index.md", "title": "Define Routers"}
+nav_next: {"path": "trpc/docs/server/subscriptions/index.md", "title": "Subscriptions"}
 ---
 
 You may need to call your procedure(s) directly from the same server they're hosted in, `createCallerFactory()` can be used to achieve this. This is useful for server-side calls and for integration testing of your tRPC procedures.

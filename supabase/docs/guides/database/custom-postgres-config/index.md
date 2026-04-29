@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:13.997Z"
 content_hash: "49f5ffa8d196b090179d13074af89b3f2b6292bc1ff0147205b9696f7399a2a1"
 menu_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Customizing Postgres config","Customizing Postgres config"]
 section_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Customizing Postgres config","Customizing Postgres config"]
-nav_prev: {"path": "../connection-management/index.md", "title": "Connection management"}
-nav_next: {"path": "../dbeaver/index.md", "title": "Connecting with DBeaver"}
+nav_prev: {"path": "supabase/docs/guides/database/connection-management/index.md", "title": "Connection management"}
+nav_next: {"path": "supabase/docs/guides/database/dbeaver/index.md", "title": "Connecting with DBeaver"}
 ---
 
 # 
@@ -101,11 +101,11 @@ Controls logging of temporary file names and sizes.
 
 `pg_net.batch_size`
 
-Sets how many requests the [pg\_net extension](/docs/guides/database/extensions/pg_net) can make per second
+Sets how many requests the [pg\_net extension](../extensions/pg_net/index.md) can make per second
 
 `pg_net.ttl`
 
-Sets how long the [pg\_net extension](/docs/guides/database/extensions/pg_net) saves responses
+Sets how long the [pg\_net extension](../extensions/pg_net/index.md) saves responses
 
 `pg_stat_statements.*`
 
@@ -113,7 +113,7 @@ Configures the [pg\_stat\_statements extension](https://www.postgresql.org/docs/
 
 `pgaudit.*`
 
-Configures the [PGAudit extension](/docs/guides/database/extensions/pgaudit). The `log_parameter` is still restricted to protect secrets
+Configures the [PGAudit extension](../extensions/pgaudit/index.md). The `log_parameter` is still restricted to protect secrets
 
 `pgrst.*`
 
@@ -121,7 +121,7 @@ Configures the [PGAudit extension](/docs/guides/database/extensions/pgaudit). Th
 
 `plan_filter.*`
 
-Configures the [pg\_plan\_filter extension](/docs/guides/database/extensions/pg_plan_filter)
+Configures the [pg\_plan\_filter extension](../extensions/pg_plan_filter/index.md)
 
 `safeupdate.enabled`
 
@@ -431,7 +431,7 @@ You can also pass the `--no-restart` flag to attempt a reload-only apply. If the
 
 ##### Read Replicas and Custom Config
 
-Postgres requires several parameters to be synchronized between the Primary cluster and [Read Replicas](/docs/guides/platform/read-replicas).
+Postgres requires several parameters to be synchronized between the Primary cluster and [Read Replicas](../../platform/read-replicas/index.md).
 
 By default, Supabase ensures that this propagation is executed correctly. However, if the `--no-restart` behavior is used in conjunction with parameters that cannot be reloaded without a restart, the user is responsible for ensuring that both the primaries and the read replicas get restarted in a timely manner to ensure a stable running state. Leaving the configuration updated, but not utilized (via a restart) in such a case can result in read replica failure if the primary, or a read replica, restarts in isolation (e.g. due to an out-of-memory event, or hardware failure).
 

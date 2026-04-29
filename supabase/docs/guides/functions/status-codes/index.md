@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:33.211Z"
 content_hash: "a83467a0a0261acd96867568b0351e059f20cd77a5bc383947dfc878a53a5d9f"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Status codes","Status codes"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Status codes","Status codes"]
-nav_prev: {"path": "../secrets/index.md", "title": "Environment Variables"}
-nav_next: {"path": "../storage-caching/index.md", "title": "Integrating with Supabase Storage"}
+nav_prev: {"path": "supabase/docs/guides/functions/secrets/index.md", "title": "Environment Variables"}
+nav_next: {"path": "supabase/docs/guides/functions/storage-caching/index.md", "title": "Integrating with Supabase Storage"}
 ---
 
 # 
@@ -86,7 +86,7 @@ These errors indicate issues with the function execution or underlying platform.
 1// ✅ Good error handling2try {3  const result = await someAsyncOperation()4  return new Response(JSON.stringify(result))5} catch (error) {6  console.error('Function error:', error)7  return new Response('Internal error', { status: 500 })8}
 ```
 
-You can see the output in the [Edge Function Logs](/docs/guides/functions/logging).
+You can see the output in the [Edge Function Logs](../logging/index.md).
 
 ### 503 Service Unavailable[#](#503-service-unavailable)
 
@@ -102,7 +102,7 @@ You can see the output in the [Edge Function Logs](/docs/guides/functions/loggin
 
 ### 504 Gateway Timeout[#](#504-gateway-timeout)
 
-**Cause:** Your Edge Function didn't respond within the [request timeout limit](/docs/guides/functions/limits).
+**Cause:** Your Edge Function didn't respond within the [request timeout limit](../limits/index.md).
 
 **Common causes:**
 
@@ -118,7 +118,7 @@ You can see the output in the [Edge Function Logs](/docs/guides/functions/loggin
 
 ### 546 Resource Limit (Custom Error Code)[#](#546-resource-limit-custom-error-code)
 
-**Cause:** Your Edge Function execution was stopped due to exceeding resource limits (`WORKER_LIMIT`). Edge Function logs should provide which [resource limit](/docs/guides/functions/limits) was exceeded.
+**Cause:** Your Edge Function execution was stopped due to exceeding resource limits (`WORKER_LIMIT`). Edge Function logs should provide which [resource limit](../limits/index.md) was exceeded.
 
 **Common causes:**
 

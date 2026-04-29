@@ -10,8 +10,8 @@ content_hash: "48f0c9a32cf01dc5f6a7fda660f8684621fb4a8c86e203523cf3bc4e8cc8ad7f"
 menu_path: ["PostgreSQL: Documentation: 18: 19.18. Short Options"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../runtime-config-resource.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.4.\u00a0Resource Consumption"}
-nav_next: {"path": "../runtime-config-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.9.\u00a0Run-time Statistics"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-resource.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.4.\u00a0Resource Consumption"}
+nav_next: {"path": "postgres/docs/current/runtime-config-statistics.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.9.\u00a0Run-time Statistics"}
 ---
 
 | Short Option | Equivalent |

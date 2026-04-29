@@ -10,8 +10,8 @@ content_hash: "fa9ff50257c9f82c01665fd514119aeefc15e3d7903ae02e793d8dd0278e86cb"
 menu_path: ["scroll-padding"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../scroll-margin/index.md", "title": "scroll-margin"}
-nav_next: {"path": "../scroll-snap-align/index.md", "title": "scroll-snap-align"}
+nav_prev: {"path": "tailwind/docs/scroll-margin/index.md", "title": "scroll-margin"}
+nav_next: {"path": "tailwind/docs/scroll-snap-align/index.md", "title": "scroll-snap-align"}
 ---
 
 Utilities for controlling an element's scroll offset within a snap container.

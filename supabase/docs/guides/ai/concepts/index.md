@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:02.043Z"
 content_hash: "dffe74633d87f8fcc08502331802d6fca11a517edd85f29ad3e9e60d9f0868aa"
 menu_path: ["AI & Vectors","AI & Vectors","Concepts","Concepts"]
 section_path: ["AI & Vectors","AI & Vectors","Concepts","Concepts"]
-nav_prev: {"path": "../choosing-compute-addon/index.md", "title": "Choosing your Compute Add-on"}
-nav_next: {"path": "../engineering-for-scale/index.md", "title": "Engineering for Scale"}
+nav_prev: {"path": "supabase/docs/guides/ai/choosing-compute-addon/index.md", "title": "Choosing your Compute Add-on"}
+nav_next: {"path": "supabase/docs/guides/ai/engineering-for-scale/index.md", "title": "Engineering for Scale"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Concepts
 
 * * *
 
-Embeddings are core to many AI and vector applications. This guide covers these concepts. If you prefer to get started right away, see our guide on [Generating Embeddings](/docs/guides/ai/quickstarts/generate-text-embeddings).
+Embeddings are core to many AI and vector applications. This guide covers these concepts. If you prefer to get started right away, see our guide on [Generating Embeddings](../quickstarts/generate-text-embeddings/index.md).
 
 ## What are embeddings?[#](#what-are-embeddings)
 
@@ -72,4 +72,4 @@ Why is this useful? Once we have generated embeddings on multiple texts, it is t
 
 ## See also[#](#see-also)
 
-*   [Structured and Unstructured embeddings](/docs/guides/ai/structured-unstructured)
+*   [Structured and Unstructured embeddings](../structured-unstructured/index.md)

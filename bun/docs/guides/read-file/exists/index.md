@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:27.537Z"
 content_hash: "90c3a44183680f94f3959d17fb8760918a8832feae5445be6d12b6d8ae52aa94"
 menu_path: ["Check if a file exists"]
 section_path: []
-nav_prev: {"path": "../buffer/index.md", "title": "Read a file to a Buffer"}
-nav_next: {"path": "../json/index.md", "title": "Read a JSON file"}
+nav_prev: {"path": "bun/docs/guides/read-file/buffer/index.md", "title": "Read a file to a Buffer"}
+nav_next: {"path": "bun/docs/guides/read-file/json/index.md", "title": "Read a JSON file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../json/index.md", "title": "Read a JSON file"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.file()` function accepts a path and returns a `BunFile` instance. Use the `.exists()` method to check if a file exists at the given path.
 
@@ -48,7 +48,7 @@ await file.exists(); // boolean;
 
 * * *
 
-Refer to [API > File I/O](/docs/runtime/file-io) for more information on working with `BunFile`.
+Refer to [API > File I/O](../../../runtime/file-io/index.md) for more information on working with `BunFile`.
 
 Was this page helpful?
 
@@ -60,10 +60,10 @@ Get the MIME type of a file
 
 Previous
 
-](/docs/guides/read-file/mime)[
+](../mime/index.md)[
 
 Watch a directory for changes
 
 Next
 
-](/docs/guides/read-file/watch)
+](../watch/index.md)

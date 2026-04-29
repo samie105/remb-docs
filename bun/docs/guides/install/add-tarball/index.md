@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:33.229Z"
 content_hash: "cea822d6ecd8466a2389fb5a808b04db3557ce3babed248c2e6bf3c7ad024b72"
 menu_path: ["Add a tarball dependency"]
 section_path: []
-nav_prev: {"path": "../add-peer/index.md", "title": "Add a peer dependency"}
-nav_next: {"path": "../azure-artifacts/index.md", "title": "Using bun install with an Azure Artifacts npm registry"}
+nav_prev: {"path": "bun/docs/guides/install/add-peer/index.md", "title": "Add a peer dependency"}
+nav_next: {"path": "bun/docs/guides/install/azure-artifacts/index.md", "title": "Using bun install with an Azure Artifacts npm registry"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../azure-artifacts/index.md", "title": "Using bun install wi
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun’s package manager can install any publicly available tarball URL as a dependency of your project.
 
@@ -67,7 +67,7 @@ import { z } from "zod";
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -79,10 +79,10 @@ Add a Git dependency
 
 Previous
 
-](/docs/guides/install/add-git)[
+](../add-git/index.md)[
 
 Install a package under a different name
 
 Next
 
-](/docs/guides/install/npm-alias)
+](../npm-alias/index.md)

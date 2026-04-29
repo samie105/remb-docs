@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:49.599Z"
 content_hash: "ebb7b7fa9632fadee63e3fce7da37f64a53004f0c9fc7096e01c47e424d93ad5"
 menu_path: ["Legacy v0.x Upgrade Guide"]
 section_path: []
-nav_prev: {"path": "../v2/index.md", "title": "Upgrade to Astro v2"}
-nav_next: {"path": "../../troubleshooting/index.md", "title": "Troubleshooting"}
+nav_prev: {"path": "astro/en/guides/upgrade-to/v2/index.md", "title": "Upgrade to Astro v2"}
+nav_next: {"path": "astro/en/guides/troubleshooting/index.md", "title": "Troubleshooting"}
 ---
 
 # Legacy v0.x Upgrade Guide
@@ -45,7 +45,7 @@ Astro v1.0 has upgraded from Vite 2 to [Vite 3](https://vite.dev/). We’ve hand
 
 [Section titled “Deprecated: Astro.canonicalURL”](#deprecated-astrocanonicalurl)
 
-You can now use the new [`Astro.url`](/en/reference/api-reference/#url) helper to construct your own canonical URL from the current page/request URL.
+You can now use the new [`Astro.url`](../../../reference/api-reference/index.md#url) helper to construct your own canonical URL from the current page/request URL.
 
 ```
 // Before:const canonicalURL = Astro.canonicalURL;// After:const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -83,7 +83,7 @@ The previous specificity increase made it hard to combine scoped styles in Astro
 
 [Section titled “Deprecated: Components and JSX in Markdown”](#deprecated-components-and-jsx-in-markdown)
 
-Astro no longer supports components or JSX expressions in Markdown pages by default. For long-term support you should migrate to the [`@astrojs/mdx`](/en/guides/integrations-guide/mdx/) integration.
+Astro no longer supports components or JSX expressions in Markdown pages by default. For long-term support you should migrate to the [`@astrojs/mdx`](../../integrations-guide/mdx/index.md) integration.
 
 To make migrating easier, a new `legacy.astroFlavoredMarkdown` flag (removed in v2.0) can be used to re-enable previous Markdown features.
 
@@ -93,7 +93,7 @@ To make migrating easier, a new `legacy.astroFlavoredMarkdown` flag (removed in 
 
 If you’re not familiar with MDX, here are some steps you can follow to quickly convert an existing “Astro Flavored Markdown” file to MDX. As you learn more about MDX, feel free to explore other ways of writing your pages!
 
-1.  Install the [`@astrojs/mdx`](/en/guides/integrations-guide/mdx/) integration.
+1.  Install the [`@astrojs/mdx`](../../integrations-guide/mdx/index.md) integration.
     
 2.  Change your existing `.md` file extensions to `.mdx`
     
@@ -157,7 +157,7 @@ Our Configuration API has been redesigned to solve a few glaring points of confu
 *   `.markdownOptions` has been replaced with `.markdown`, a mostly similar config object with some small changes to simplify Markdown configuration.
 *   `.sitemap` has been moved into the [@astrojs/sitemap](https://www.npmjs.com/package/@astrojs/sitemap) integration.
 
-If you run Astro with legacy configuration, you will see a warning with instructions on how to update. See our updated [Configuration Reference](/en/reference/configuration-reference/) for more information on upgrading.
+If you run Astro with legacy configuration, you will see a warning with instructions on how to update. See our updated [Configuration Reference](../../../reference/configuration-reference/index.md) for more information on upgrading.
 
 Read [RFC0019](https://github.com/withastro/rfcs/blob/main/proposals/0019-config-finalization.md) for more background on these changes.
 
@@ -199,7 +199,7 @@ This includes a few changes to be aware of:
 // v0.25<script hoist type="module">// v0.26+<script>
 ```
 
-See how to use [client-side scripts](/en/guides/client-side-scripts/) in Astro for full details.
+See how to use [client-side scripts](../../client-side-scripts/index.md) in Astro for full details.
 
 Read [RFC0016](https://github.com/withastro/rfcs/blob/main/proposals/0016-style-script-defaults.md) for more background on these changes.
 
@@ -233,7 +233,7 @@ Read [RFC0018](https://github.com/withastro/rfcs/blob/main/proposals/0018-astro-
 
 [Section titled “Astro Integrations”](#astro-integrations)
 
-The `renderers` config has been replaced by a new, official integration system! This unlocks some really exciting new features for Astro. You can read our [Using Integrations](/en/guides/integrations/) guide for more details on how to use this new system.
+The `renderers` config has been replaced by a new, official integration system! This unlocks some really exciting new features for Astro. You can read our [Using Integrations](../../integrations/index.md) guide for more details on how to use this new system.
 
 Integrations replace our original `renderers` concept, and come with a few breaking changes and new defaults for existing users. These changes are covered below.
 
@@ -243,7 +243,7 @@ Integrations replace our original `renderers` concept, and come with a few break
 
 Previously, React, Preact, Svelte, and Vue were all included with Astro by default. Starting in v0.25.0, Astro no longer comes with any built-in renderers. If you did not have a `renderers` configuration entry already defined for your project, you will now need to install those frameworks yourself.
 
-Read our [step-by-step walkthrough](/en/guides/integrations/) to learn how to add a new Astro integration for the framework(s) that you currently use.
+Read our [step-by-step walkthrough](../../integrations/index.md) to learn how to add a new Astro integration for the framework(s) that you currently use.
 
 #### Deprecated: Renderers
 
@@ -253,7 +253,7 @@ The new integration system replaces the previous `renderers` system, including t
 
 **To migrate:** update Astro to `v0.25.0` and then run `astro dev` or `astro build` with your old configuration file containing the outdated `"renderers"` config. You will immediately see a notice telling you the exact changes you need to make to your `astro.config.mjs` file, based on your current config. You can also update your packages yourself, using the table below.
 
-For a deeper walkthrough, read our [step-by-step guide](/en/guides/integrations/) to learn how to replace existing renderers with a new Astro framework integration.
+For a deeper walkthrough, read our [step-by-step guide](../../integrations/index.md) to learn how to replace existing renderers with a new Astro framework integration.
 
 ```
 # Install your new integrations and frameworks:# (Read the full walkthrough: https://docs.astro.build/en/guides/integrations-guide)npm install @astrojs/lit litnpm install @astrojs/react react react-dom
@@ -298,7 +298,7 @@ Unlike the old renderers, integrations no longer mark the frameworks themselves 
 # Example: Install integrations and frameworks togethernpm install @astrojs/react react react-dom
 ```
 
-If you see a `"Cannot find package 'react'"` (or similar) warning when you start up Astro, that means that you need to install that package into your project. See our [note on peer dependencies](/en/guides/troubleshooting/#cannot-find-package-x) in the troubleshooting guide for more information.
+If you see a `"Cannot find package 'react'"` (or similar) warning when you start up Astro, that means that you need to install that package into your project. See our [note on peer dependencies](../../troubleshooting/index.md#cannot-find-package-x) in the troubleshooting guide for more information.
 
 If you are using `npm` & Node v16+, then this may be automatically handled for you by `npm`, since the latest version of `npm` (v7+) installs peer dependencies like this for you automatically. In that case, installing a framework like “react” into your project is an optional but still recommended step.
 
@@ -600,4 +600,4 @@ In Astro v0.21+, a bug has been introduced that requires imports inside componen
 ---import Component from '../components/Component.astro'const whereShouldIPutMyImports = "on top!"---
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

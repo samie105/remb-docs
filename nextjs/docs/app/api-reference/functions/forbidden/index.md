@@ -11,8 +11,8 @@ menu_path: ["forbidden"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../fetch/index.md", "title": "fetch"}
-nav_next: {"path": "../generate-image-metadata/index.md", "title": "generateImageMetadata"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/fetch/index.md", "title": "fetch"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-image-metadata/index.md", "title": "generateImageMetadata"}
 ---
 
 # forbidden
@@ -21,9 +21,9 @@ This feature is currently experimental and subject to change, it's not recommend
 
 Last updated April 23, 2026
 
-The `forbidden` function throws an error that renders a Next.js 403 error page. It's useful for handling authorization errors in your application. You can customize the UI using the [`forbidden.js` file](/docs/app/api-reference/file-conventions/forbidden).
+The `forbidden` function throws an error that renders a Next.js 403 error page. It's useful for handling authorization errors in your application. You can customize the UI using the [`forbidden.js` file](../../file-conventions/forbidden/index.md).
 
-To start using `forbidden`, enable the experimental [`authInterrupts`](/docs/app/api-reference/config/next-config-js/authInterrupts) configuration option in your `next.config.js` file:
+To start using `forbidden`, enable the experimental [`authInterrupts`](../../config/next-config-js/authInterrupts/index.md) configuration option in your `next.config.js` file:
 
 next.config.ts
 
@@ -41,7 +41,7 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
-`forbidden` can be invoked in [Server Components](/docs/app/getting-started/server-and-client-components), [Server Functions](/docs/app/getting-started/mutating-data), and [Route Handlers](/docs/app/api-reference/file-conventions/route).
+`forbidden` can be invoked in [Server Components](../../../getting-started/server-and-client-components/index.md), [Server Functions](../../../getting-started/mutating-data/index.md), and [Route Handlers](../../file-conventions/route/index.md).
 
 app/auth/page.tsx
 
@@ -66,7 +66,7 @@ export default async function AdminPage() {
 
 ## Good to know[](#good-to-know)
 
--   The `forbidden` function cannot be called in the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout).
+-   The `forbidden` function cannot be called in the [root layout](../../file-conventions/layout/index.md#root-layout).
 
 ## Examples[](#examples)
 
@@ -140,6 +140,6 @@ export async function updateRole(formData: FormData) {
 
 API reference for the forbidden.js special file.
 
-](/docs/app/api-reference/file-conventions/forbidden)
+](../../file-conventions/forbidden/index.md)
 
 Was this helpful?

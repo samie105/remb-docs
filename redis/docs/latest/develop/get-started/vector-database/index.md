@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:24.282Z"
 content_hash: "2bda9d2229a2175ba67719f649c69fab779aa1b7988ecbf98dd5256181257d5b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a vector database quick start guide","→","Redis as a vector database quick start guide"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as a vector database quick start guide","→","Redis as a vector database quick start guide"]
-nav_prev: {"path": "../rag/index.md", "title": "RAG with Redis"}
-nav_next: {"path": "../../programmability/eval-intro/index.md", "title": "Scripting with Lua"}
+nav_prev: {"path": "redis/docs/latest/develop/get-started/rag/index.md", "title": "RAG with Redis"}
+nav_next: {"path": "redis/docs/latest/develop/programmability/eval-intro/index.md", "title": "Scripting with Lua"}
 ---
 
 # Redis as a vector database quick start guide
@@ -26,12 +26,12 @@ This quick start guide helps you to:
 
 Note:
 
-This guide uses [RedisVL](/docs/latest/develop/clients/redis-vl/), which is a Python client library for Redis that is highly specialized for vector processing. You may also be interested in the vector query examples for our other client libraries:
+This guide uses [RedisVL](../../clients/redis-vl/index.md), which is a Python client library for Redis that is highly specialized for vector processing. You may also be interested in the vector query examples for our other client libraries:
 
 *   [`redis-py` (Python)](/docs/latest/develop/clients/redis-py/vecsearch/)
 *   [`NRedisStack`(C#/.NET)](/docs/latest/develop/clients/dotnet/vecsearch/)
-*   [`node-redis` (JavaScript/Node.js)](/docs/latest/develop/clients/nodejs/vecsearch/)
-*   [`jedis` (Java)](/docs/latest/develop/clients/jedis/vecsearch/)
+*   [`node-redis` (JavaScript/Node.js)](../../clients/nodejs/vecsearch/index.md)
+*   [`jedis` (Java)](../../clients/jedis/vecsearch/index.md)
 *   [`go-redis` (Go)](/docs/latest/develop/clients/go/vecsearch/)
 
 ## Understand vector databases
@@ -63,13 +63,13 @@ The easiest way to get started is to use Redis Cloud:
 
 This free Redis Cloud database comes out of the box with all the Redis Open Source features.
 
-You can alternatively use the [installation guides](/docs/latest/operate/oss_and_stack/install/install-stack/) to install Redis on your local machine.
+You can alternatively use the [installation guides](../../../operate/oss_and_stack/install/install-stack/index.md) to install Redis on your local machine.
 
 ## Install the required Python packages
 
 Create a Python virtual environment and install the following dependencies using `pip`:
 
-*   `redis`: You can find further details about the `redis-py` client library in the [clients](/docs/latest/develop/clients/redis-py/) section of this documentation site.
+*   `redis`: You can find further details about the `redis-py` client library in the [clients](../../clients/redis-py/index.md) section of this documentation site.
 *   `pandas`: Pandas is a data analysis library.
 *   `sentence-transformers`: You will use the [SentenceTransformers](https://www.sbert.net/) framework to generate embeddings on full text.
 *   `tabulate`: `pandas` uses `tabulate` to render Markdown.
@@ -2962,7 +2962,7 @@ Here is a breakdown of the `VECTOR` field definition:
 *   `DIM 768`: The length or dimension of the embeddings, determined by the chosen embedding model.
 *   `DISTANCE_METRIC COSINE`: The chosen distance function: [cosine distance](https://en.wikipedia.org/wiki/Cosine_similarity).
 
-You can find further details about all these options in the [vector reference documentation](/docs/latest/develop/ai/search-and-query/vectors/).
+You can find further details about all these options in the [vector reference documentation](../../ai/search-and-query/vectors/index.md).
 
 ### 2\. Check the state of the index
 
@@ -3228,7 +3228,7 @@ print(table)
 
 ## Perform vector searches
 
-This quick start guide focuses on vector search. However, you can learn more about how to query based on document metadata in the [document database quick start guide](/docs/latest/develop/get-started/document-database/).
+This quick start guide focuses on vector search. However, you can learn more about how to query based on document metadata in the [document database quick start guide](../document-database/index.md).
 
 ### 1\. Embed your queries
 
@@ -4359,7 +4359,7 @@ Small and powerful, the Jigger is the best ride for the smallest of tikes! This 
 
 ## Next steps
 
-1.  You can learn more about the query options, such as filters and vector range queries, by reading the [vector reference documentation](/docs/latest/develop/ai/search-and-query/vectors/).
+1.  You can learn more about the query options, such as filters and vector range queries, by reading the [vector reference documentation](../../ai/search-and-query/vectors/index.md).
 2.  The complete [Redis Search documentation](/docs/latest/develop/ai/search-and-query/) might be interesting for you.
 3.  If you want to follow the code examples more interactively, then you can use the [Jupyter notebook](https://github.com/redis-developer/redis-ai-resources/blob/main/python-recipes/vector-search/00_redispy.ipynb) that inspired this quick start guide.
 4.  If you want to see more advanced examples of a Redis vector database in action, visit the [Redis AI Resources](https://github.com/redis-developer/redis-ai-resources) page on GitHub.

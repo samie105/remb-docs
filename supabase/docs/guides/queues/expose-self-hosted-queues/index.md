@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:30.528Z"
 content_hash: "3623be661e5ae3063fea9bdb96049659fc84ee807e5051fee2f0fe4acd2fab7d"
 menu_path: ["Queues","Queues","Getting Started","Getting Started","Expose Queues for local and self-hosted Supabase","Expose Queues for local and self-hosted Supabase"]
 section_path: ["Queues","Queues","Getting Started","Getting Started","Expose Queues for local and self-hosted Supabase","Expose Queues for local and self-hosted Supabase"]
-nav_prev: {"path": "../consuming-messages-with-edge-functions/index.md", "title": "Consuming Supabase Queue Messages with Edge Functions"}
-nav_next: {"path": "../pgmq/index.md", "title": "PGMQ Extension"}
+nav_prev: {"path": "supabase/docs/guides/queues/consuming-messages-with-edge-functions/index.md", "title": "Consuming Supabase Queue Messages with Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/queues/pgmq/index.md", "title": "PGMQ Extension"}
 ---
 
 # 
@@ -25,7 +25,7 @@ Learn how to expose Queues when running Supabase with Supabase CLI or Docker Com
 
 By default, local and self-hosted Supabase instances expose only core schemas like public and graphql\_public. To allow client-side consumers to use your queues, you have to add `pgmq_public` schema to the list of exposed schemas.
 
-Before continuing, complete the step [Expose queues to client-side consumers](/docs/guides/queues/quickstart#expose-queues-to-client-side-consumers) from the Queues Quickstart guide. This creates the `pgmq_public` schema, which must exist before it can be exposed through the API.
+Before continuing, complete the step [Expose queues to client-side consumers](../quickstart/index.md#expose-queues-to-client-side-consumers) from the Queues Quickstart guide. This creates the `pgmq_public` schema, which must exist before it can be exposed through the API.
 
 You only need to expose the `pgmq_public` schema manually when running Supabase locally with the Supabase CLI or self-hosting using Docker Compose.
 

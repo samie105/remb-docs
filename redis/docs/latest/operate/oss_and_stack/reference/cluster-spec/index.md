@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:56.127Z"
 content_hash: "d9cff8b0e96d8f57d49decfe846d79d4f5835f5fb33283d45c2165390d1de117"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis cluster specification","→","Redis cluster specification"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis cluster specification","→","Redis cluster specification"]
-nav_prev: {"path": "../../management/troubleshooting/index.md", "title": "Troubleshooting Redis"}
-nav_next: {"path": "../internals/internals-rediseventlib/index.md", "title": "Event library"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/troubleshooting/index.md", "title": "Troubleshooting Redis"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-rediseventlib/index.md", "title": "Event library"}
 ---
 
 # Redis cluster specification

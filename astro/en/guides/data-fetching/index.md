@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:10.798Z"
 content_hash: "8d02b8cedfb9f27f39be846a782e200988451a94f1a8999288c8da0229c98747"
 menu_path: ["Data fetching"]
 section_path: []
-nav_prev: {"path": "../images/index.md", "title": "Images"}
-nav_next: {"path": "../astro-db/index.md", "title": "Astro DB"}
+nav_prev: {"path": "astro/en/guides/images/index.md", "title": "Images"}
+nav_next: {"path": "astro/en/guides/astro-db/index.md", "title": "Astro DB"}
 ---
 
 # Data fetching
@@ -21,9 +21,9 @@ nav_next: {"path": "../astro-db/index.md", "title": "Astro DB"}
 
 [Section titled “fetch() in Astro”](#fetch-in-astro)
 
-All [Astro components](/en/basics/astro-components/) have access to the [global `fetch()` function](https://developer.mozilla.org/en-US/docs/Web/API/fetch) in their component script to make HTTP requests to APIs using the full URL (e.g. `https://example.com/api`). Additionally, you can construct a URL to your project’s pages and endpoints that are rendered on demand on the server using [`new URL("/api", Astro.url)`](/en/reference/api-reference/#url).
+All [Astro components](../../basics/astro-components/index.md) have access to the [global `fetch()` function](https://developer.mozilla.org/en-US/docs/Web/API/fetch) in their component script to make HTTP requests to APIs using the full URL (e.g. `https://example.com/api`). Additionally, you can construct a URL to your project’s pages and endpoints that are rendered on demand on the server using [`new URL("/api", Astro.url)`](../../reference/api-reference/index.md#url).
 
-This fetch call will be executed at build time, and the data will be available to the component template for generating dynamic HTML. If [SSR](/en/guides/on-demand-rendering/) mode is enabled, any fetch calls will be executed at runtime.
+This fetch call will be executed at build time, and the data will be available to the component template for generating dynamic HTML. If [SSR](../on-demand-rendering/index.md) mode is enabled, any fetch calls will be executed at runtime.
 
 💡 Take advantage of [**top-level `await`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await#top_level_await) inside of your Astro component script.
 
@@ -39,7 +39,7 @@ const response = await fetch("https://randomuser.me/api/");const data = await re
 
 [Section titled “fetch() in Framework Components”](#fetch-in-framework-components)
 
-The `fetch()` function is also globally available to any [framework components](/en/guides/framework-components/):
+The `fetch()` function is also globally available to any [framework components](../framework-components/index.md):
 
 ```
 import type { FunctionalComponent } from 'preact';
@@ -65,9 +65,9 @@ const json = await response.json();const { film } = json.data;---<h1>Fetching in
 
 [Section titled “Fetch from a Headless CMS”](#fetch-from-a-headless-cms)
 
-Astro components can fetch data from your favorite CMS and then render it as your page content. Using [dynamic routes](/en/guides/routing/#dynamic-routes), components can even generate pages based on your CMS content.
+Astro components can fetch data from your favorite CMS and then render it as your page content. Using [dynamic routes](../routing/index.md#dynamic-routes), components can even generate pages based on your CMS content.
 
-See our [CMS Guides](/en/guides/cms/) for full details on integrating Astro with headless CMSes including Storyblok, Contentful, and WordPress.
+See our [CMS Guides](../cms/index.md) for full details on integrating Astro with headless CMSes including Storyblok, Contentful, and WordPress.
 
 ## Community resources
 
@@ -75,4 +75,4 @@ See our [CMS Guides](/en/guides/cms/) for full details on integrating Astro with
 
 *   [Creating a fullstack app with Astro + GraphQL](https://robkendal.co.uk/blog/how-to-build-astro-site-with-graphql/)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

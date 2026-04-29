@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:48.135Z"
 content_hash: "00c12781100270571824f3ba73d1514bfa75eba54d2a4aaef6ec5f81b0512998"
 menu_path: ["Error Handling"]
 section_path: []
-nav_prev: {"path": "../error-formatting/index.md", "title": "Error Formatting"}
-nav_next: {"path": "../example-apps/index.md", "title": "Example Apps"}
+nav_prev: {"path": "trpc/docs/v9/error-formatting/index.md", "title": "Error Formatting"}
+nav_next: {"path": "trpc/docs/v9/example-apps/index.md", "title": "Example Apps"}
 ---
 
 Whenever an error occurs in a procedure, tRPC responds to the client with an object that includes an "error" property. This property contains all the information that you need to handle the error in the client.

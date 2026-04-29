@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:48.432Z"
 content_hash: "51d0e435b06059ee2e634a5427ecd030b1f18c5ece7d3c2e7456b58ca389199e"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Adding generative Q&A to your Next.js site","Adding generative Q&A to your Next.js site"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Adding generative Q&A to your Next.js site","Adding generative Q&A to your Next.js site"]
-nav_prev: {"path": "../mixpeek-video-search/index.md", "title": "Video Search with Mixpeek Multimodal Embeddings"}
-nav_next: {"path": "../openai/index.md", "title": "Generating OpenAI GPT3 completions"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/mixpeek-video-search/index.md", "title": "Video Search with Mixpeek Multimodal Embeddings"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/openai/index.md", "title": "Generating OpenAI GPT3 completions"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Learn how to build a ChatGPT-style doc search powered by Next.js, OpenAI, and Su
 
 * * *
 
-While our [Headless Vector search](/docs/guides/ai/examples/headless-vector-search) provides a toolkit for generative Q&A, in this tutorial we'll go more in-depth, build a custom ChatGPT-like search experience from the ground-up using Next.js. You will:
+While our [Headless Vector search](../headless-vector-search/index.md) provides a toolkit for generative Q&A, in this tutorial we'll go more in-depth, build a custom ChatGPT-like search experience from the ground-up using Next.js. You will:
 
 1.  Convert your markdown into embeddings using OpenAI.
 2.  Store you embeddings in Postgres using pgvector.
@@ -132,5 +132,5 @@ In a last step, we need to process the event stream from the OpenAI API and prin
 Want to learn more about the awesome tech that is powering this?
 
 *   Read about how we built [ChatGPT for the Supabase Docs](/blog/chatgpt-supabase-docs).
-*   Read the pgvector Docs for [Embeddings and vector similarity](/docs/guides/database/extensions/pgvector)
+*   Read the pgvector Docs for [Embeddings and vector similarity](../../../database/extensions/pgvector/index.md)
 *   Watch Greg's video for a full breakdown:

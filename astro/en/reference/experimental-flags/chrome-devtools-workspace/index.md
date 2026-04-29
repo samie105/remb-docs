@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:00.361Z"
 content_hash: "7eae4b92a371388209fe178623b832ec10da93e8b71587e6b10450480037a8a8"
 menu_path: ["Experimental Chrome DevTools workspace"]
 section_path: []
-nav_prev: {"path": "../content-intellisense/index.md", "title": "Experimental Intellisense for content collections"}
-nav_next: {"path": "../svg-optimization/index.md", "title": "Experimental SVG optimization"}
+nav_prev: {"path": "astro/en/reference/experimental-flags/content-intellisense/index.md", "title": "Experimental Intellisense for content collections"}
+nav_next: {"path": "astro/en/reference/experimental-flags/svg-optimization/index.md", "title": "Experimental SVG optimization"}
 ---
 
 # Experimental Chrome DevTools workspace
@@ -39,7 +39,7 @@ export default defineConfig({  experimental: {    chromeDevtoolsWorkspace: true,
 
 Astro will create the necessary configuration file to support Chrome DevTools workspaces. However, your project must also be [connected as a source](https://developer.chrome.com/docs/devtools/workspaces#manual-connection) to enable file saving.
 
-1.  [Start the Astro dev server](/en/develop-and-build/#start-the-astro-dev-server) with the appropriate CLI command for your package manager.
+1.  [Start the Astro dev server](../../../develop-and-build/index.md#start-the-astro-dev-server) with the appropriate CLI command for your package manager.
     
 2.  Navigate to your site preview (e.g. `http://localhost:4321/`) in Chrome and open DevTools.
     
@@ -48,4 +48,4 @@ Astro will create the necessary configuration file to support Chrome DevTools wo
 
 See the [Chrome DevTools workspace documentation](https://developer.chrome.com/docs/devtools/workspaces#connect) for more information.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

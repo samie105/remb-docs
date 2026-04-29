@@ -11,8 +11,8 @@ menu_path: ["Sequelize"]
 section_path: []
 tab_variants: ["Using include","Fluent API","Using save","Using create","Using save","Using update","Manual","Automatic"]
 content_language: "en"
-nav_prev: {"path": "../prisma-and-mongoose/index.md", "title": "Mongoose"}
-nav_next: {"path": "../prisma-and-typeorm/index.md", "title": "TypeORM"}
+nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-mongoose/index.md", "title": "Mongoose"}
+nav_next: {"path": "prisma/docs/orm/more/comparisons/prisma-and-typeorm/index.md", "title": "TypeORM"}
 ---
 
 Comparisons

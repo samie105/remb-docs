@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:47.106Z"
 content_hash: "095704024b0743d7bbdff1a7c973e6cae9798a7c4daaff4b8d12a55c676350ef"
 menu_path: ["Write a file to stdout"]
 section_path: []
-nav_prev: {"path": "../blob/index.md", "title": "Write a Blob to a file"}
-nav_next: {"path": "../file-cp/index.md", "title": "Copy a file to another location"}
+nav_prev: {"path": "bun/docs/guides/write-file/blob/index.md", "title": "Write a Blob to a file"}
+nav_next: {"path": "bun/docs/guides/write-file/file-cp/index.md", "title": "Copy a file to another location"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../file-cp/index.md", "title": "Copy a file to another locat
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-Bun exposes `stdout` as a `BunFile` with the `Bun.stdout` property. This can be used as a destination for [`Bun.write()`](/docs/runtime/file-io#writing-files-bun-write). This code writes a file to `stdout` similar to the `cat` command in Unix.
+Bun exposes `stdout` as a `BunFile` with the `Bun.stdout` property. This can be used as a destination for [`Bun.write()`](../../../runtime/file-io/index.md#writing-files-bun-write). This code writes a file to `stdout` similar to the `cat` command in Unix.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)cat.ts
 
@@ -47,7 +47,7 @@ await Bun.write(Bun.stdout, file);
 
 * * *
 
-See [Docs > API > File I/O](/docs/runtime/file-io#writing-files-bun-write) for complete documentation of `Bun.write()`.
+See [Docs > API > File I/O](../../../runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
 
 Was this page helpful?
 
@@ -59,10 +59,10 @@ Write to stdout
 
 Previous
 
-](/docs/guides/write-file/stdout)[
+](../stdout/index.md)[
 
 Copy a file to another location
 
 Next
 
-](/docs/guides/write-file/file-cp)
+](../file-cp/index.md)

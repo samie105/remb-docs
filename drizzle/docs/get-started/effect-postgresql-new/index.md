@@ -10,8 +10,8 @@ content_hash: "ac3d16f70a427b0e614efe6b0407e55f6b8a80cffb18f78f86ef628ade02c0f1"
 menu_path: ["Get Started with Drizzle and Effect PostgreSQL"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../effect-postgresql-existing/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL in existing project"}
-nav_next: {"path": "../expo-existing/index.md", "title": "Get Started with Drizzle and Expo in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/effect-postgresql-existing/index.md", "title": "Get Started with Drizzle and Effect PostgreSQL in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/expo-existing/index.md", "title": "Get Started with Drizzle and Expo in existing project"}
 ---
 
 ## Get Started with Drizzle and Effect PostgreSQL

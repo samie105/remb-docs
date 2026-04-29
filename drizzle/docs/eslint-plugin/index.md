@@ -10,8 +10,8 @@ content_hash: "5ff03bd1f9d8d4bc93efb2e65fc26866b2cd4cf2a1b37805dcaf8e1a49ad34db"
 menu_path: ["ESLint Drizzle Plugin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../prisma/index.md", "title": "Drizzle extension for Prisma"}
-nav_next: {"path": "../graphql/index.md", "title": "drizzle-graphql"}
+nav_prev: {"path": "drizzle/docs/prisma/index.md", "title": "Drizzle extension for Prisma"}
+nav_next: {"path": "drizzle/docs/graphql/index.md", "title": "drizzle-graphql"}
 ---
 
 For cases where it’s impossible to perform type checks for specific scenarios, or where it’s possible but error messages would be challenging to understand, we’ve decided to create an ESLint package with recommended rules. This package aims to assist developers in handling crucial scenarios during development

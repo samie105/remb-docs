@@ -10,8 +10,8 @@ content_hash: "917d315d5b991dff085282f061e14e9e760a8d5a9c3aabbd2b3796391426486b"
 menu_path: ["Magical sql operator 🪄"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../joins/index.md", "title": "Joins [SQL]"}
-nav_next: {"path": "../rqb/index.md", "title": "Drizzle Queries"}
+nav_prev: {"path": "drizzle/docs/joins/index.md", "title": "Joins [SQL]"}
+nav_next: {"path": "drizzle/docs/rqb/index.md", "title": "Drizzle Queries"}
 ---
 
 ## Magical `sql` operator 🪄

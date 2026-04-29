@@ -11,8 +11,8 @@ menu_path: ["use server"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../use-client/index.md", "title": "use client"}
-nav_next: {"path": "../../components/index.md", "title": "Components"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/directives/use-client/index.md", "title": "use client"}
+nav_next: {"path": "nextjs/docs/app/api-reference/components/index.md", "title": "Components"}
 ---
 
 # use server
@@ -116,7 +116,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
 
 ## Security considerations[](#security-considerations)
 
-Design your data access functions as secure primitives: validate inputs, check authentication and authorization, and constrain return types to only what the caller needs. When Server Functions delegate to a [Data Access Layer](/docs/app/guides/data-security#using-a-data-access-layer-for-mutations), these guarantees live in one place and apply consistently.
+Design your data access functions as secure primitives: validate inputs, check authentication and authorization, and constrain return types to only what the caller needs. When Server Functions delegate to a [Data Access Layer](../../../guides/data-security/index.md#using-a-data-access-layer-for-mutations), these guarantees live in one place and apply consistently.
 
 ### Authentication and authorization[](#authentication-and-authorization)
 
@@ -144,7 +144,7 @@ export async function createUser(data: { name: string; email: string }) {
 
 ### Return values[](#return-values)
 
-Server Function return values are serialized and sent to the client. Only return data the UI needs, not raw database records. See the [Data Security guide](/docs/app/guides/data-security#controlling-return-values) for more details.
+Server Function return values are serialized and sent to the client. Only return data the UI needs, not raw database records. See the [Data Security guide](../../../guides/data-security/index.md#controlling-return-values) for more details.
 
 ## Reference[](#reference)
 

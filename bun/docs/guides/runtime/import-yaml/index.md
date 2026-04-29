@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:02.445Z"
 content_hash: "29fb336010ca765dd458cc42b3e6973b85652445d2863c1d41e7031fbc816182"
 menu_path: ["Import a YAML file"]
 section_path: []
-nav_prev: {"path": "../import-toml/index.md", "title": "Import a TOML file"}
-nav_next: {"path": "../read-env/index.md", "title": "Read environment variables"}
+nav_prev: {"path": "bun/docs/guides/runtime/import-toml/index.md", "title": "Import a TOML file"}
+nav_next: {"path": "bun/docs/guides/runtime/read-env/index.md", "title": "Read environment variables"}
 ---
 
 Bun natively supports `.yaml` and `.yml` imports.

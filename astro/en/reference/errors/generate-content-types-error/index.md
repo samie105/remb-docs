@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:46.006Z"
 content_hash: "e899a4fac823db07c535ad1d8b43956eb7a1d1b1126a2ead08d08230da8e9046"
 menu_path: ["Failed to generate content types."]
 section_path: []
-nav_prev: {"path": "../forbidden-rewrite/index.md", "title": "Forbidden rewrite to a static route."}
-nav_next: {"path": "../get-entry-deprecation-error/index.md", "title": "Invalid use of getDataEntryById or getEntryBySlug function."}
+nav_prev: {"path": "astro/en/reference/errors/forbidden-rewrite/index.md", "title": "Forbidden rewrite to a static route."}
+nav_next: {"path": "astro/en/reference/errors/get-entry-deprecation-error/index.md", "title": "Invalid use of getDataEntryById or getEntryBySlug function."}
 ---
 
 # Failed to generate content types.
@@ -25,6 +25,6 @@ nav_next: {"path": "../get-entry-deprecation-error/index.md", "title": "Invalid 
 
 **See Also:**
 
-*   [Content collections documentation](/en/guides/content-collections/)
+*   [Content collections documentation](../../../guides/content-collections/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

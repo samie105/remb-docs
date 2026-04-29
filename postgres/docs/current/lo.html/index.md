@@ -10,8 +10,8 @@ content_hash: "02380ef820fb793b656f74ad7b4b8fc39c685dbc36587d5edcb36892aa187fdc"
 menu_path: ["PostgreSQL: Documentation: 18: F.21. lo — manage large objects"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
-nav_next: {"path": "../locale.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.1.\u00a0Locale Support"}
+nav_prev: {"path": "postgres/docs/current/lo-implementation.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.2.\u00a0Implementation Features"}
+nav_next: {"path": "postgres/docs/current/locale.html/index.md", "title": "PostgreSQL: Documentation: 18: 23.1.\u00a0Locale Support"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/lo.html "PostgreSQL devel - F.21. lo — manage large objects")

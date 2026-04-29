@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:47.939Z"
 content_hash: "26d70a7e84b4efc41e0fb7753d3202875d8ec3e951ce055feceb7d9e8eb9f1c1"
 menu_path: ["PostgreSQL: Documentation: 18: WHENEVER"]
 section_path: []
-nav_prev: {"path": "../ecpg-sql-var.html/index.md", "title": "PostgreSQL: Documentation: 18: VAR"}
-nav_next: {"path": "../ecpg-variables.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.4.\u00a0Using Host Variables"}
+nav_prev: {"path": "postgres/docs/current/ecpg-sql-var.html/index.md", "title": "PostgreSQL: Documentation: 18: VAR"}
+nav_next: {"path": "postgres/docs/current/ecpg-variables.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.4.\u00a0Using Host Variables"}
 ---
 
 WHENEVER — specify the action to be taken when an SQL statement causes a specific class condition to be raised

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:38:41.883Z"
 content_hash: "d69e261ebd60d137c94a9e7c545fdf502dec5dd8fb9b24c4323c21ba3a7d1a48"
 menu_path: ["V4 Migration Guide"]
 section_path: []
-nav_prev: {"path": "../Migration-Guide-V3/index.md", "title": "V3 Migration Guide"}
-nav_next: {"path": "../Migration-Guide-V5/index.md", "title": "V5 Migration Guide"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Migration-Guide-V3/index.md", "title": "V3 Migration Guide"}
+nav_next: {"path": "fastify/docs/latest/Guides/Migration-Guide-V5/index.md", "title": "V5 Migration Guide"}
 ---
 
 Version: latest (v5.8.x)
 
 Version 3 and before of Fastify are no longer maintained.
 
-For information about support options for end-of-life versions, see the [Long Term Support](/docs/latest/Reference/LTS/) page.
+For information about support options for end-of-life versions, see the [Long Term Support](../../Reference/LTS/index.md) page.
 
 This guide is intended to help with migration from Fastify v3 to v4.
 
@@ -58,7 +58,7 @@ import Fastify from 'fastify'const fastify = Fastify()fastify.register(async fas
 
 With v4 of Fastify, `app.use()` has been removed and the use of middleware is no longer supported.
 
-If you need to use middleware, use [`@fastify/middie`](https://github.com/fastify/middie) or [`@fastify/express`](https://github.com/fastify/fastify-express), which will continue to be maintained. However, it is strongly recommended that you migrate to Fastify's [hooks](/docs/latest/Reference/Hooks/).
+If you need to use middleware, use [`@fastify/middie`](https://github.com/fastify/middie) or [`@fastify/express`](https://github.com/fastify/fastify-express), which will continue to be maintained. However, it is strongly recommended that you migrate to Fastify's [hooks](../../Reference/Hooks/index.md).
 
 > ℹ️ Note: Codemod remove `app.use()` with:
 > 

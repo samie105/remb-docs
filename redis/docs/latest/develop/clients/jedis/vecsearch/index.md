@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:54:23.888Z"
 content_hash: "6f4a89f229265425761def89be57b076796627e0630d526e59d22a6f6ccc7ea8"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Index and query vectors","→","Index and query vectors"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Index and query vectors","→","Index and query vectors"]
-nav_prev: {"path": "../transpipe/index.md", "title": "Pipelines and transactions"}
-nav_next: {"path": "../vecsets/index.md", "title": "Vector set embeddings"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/transpipe/index.md", "title": "Pipelines and transactions"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/vecsets/index.md", "title": "Vector set embeddings"}
 ---
 
 # Index and query vectors
 
 Learn how to index and query vector embeddings with Redis
 
-[Redis Search](/docs/latest/develop/ai/search-and-query/) lets you index vector fields in [hash](/docs/latest/develop/data-types/hashes/) or [JSON](/docs/latest/develop/data-types/json/) objects (see the [Vectors](/docs/latest/develop/ai/search-and-query/vectors/) reference page for more information). Among other things, vector fields can store _text embeddings_, which are AI-generated vector representations of the semantic information in pieces of text. The [vector distance](/docs/latest/develop/ai/search-and-query/vectors/#distance-metrics) between two embeddings indicates how similar they are semantically. By comparing the similarity of an embedding generated from some query text with embeddings stored in hash or JSON fields, Redis can retrieve documents that closely match the query in terms of their meaning.
+[Redis Search](/docs/latest/develop/ai/search-and-query/) lets you index vector fields in [hash](/docs/latest/develop/data-types/hashes/) or [JSON](/docs/latest/develop/data-types/json/) objects (see the [Vectors](../../../ai/search-and-query/vectors/index.md) reference page for more information). Among other things, vector fields can store _text embeddings_, which are AI-generated vector representations of the semantic information in pieces of text. The [vector distance](../../../ai/search-and-query/vectors/index.md#distance-metrics) between two embeddings indicates how similar they are semantically. By comparing the similarity of an embedding generated from some query text with embeddings stored in hash or JSON fields, Redis can retrieve documents that closely match the query in terms of their meaning.
 
 The example below uses the [HuggingFace](https://huggingface.co/) model [`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) to generate the vector embeddings to store and index with Redis Search. The code is first demonstrated for hash documents with a separate section to explain the [differences with JSON documents](#differences-with-json-documents).
 
@@ -1169,7 +1169,7 @@ public class HomeQueryVec {
 }
 ```
 
-Next, create the index. The schema in the example below includes three fields: the text content to index, a [tag](/docs/latest/develop/ai/search-and-query/advanced-concepts/tags/) field to represent the "genre" of the text, and the embedding vector generated from the original text content. The `embedding` field specifies [HNSW](/docs/latest/develop/ai/search-and-query/vectors/#hnsw-index) indexing, the [L2](/docs/latest/develop/ai/search-and-query/vectors/#distance-metrics) vector distance metric, `Float32` values to represent the vector's components, and 384 dimensions, as required by the `all-MiniLM-L6-v2` embedding model.
+Next, create the index. The schema in the example below includes three fields: the text content to index, a [tag](/docs/latest/develop/ai/search-and-query/advanced-concepts/tags/) field to represent the "genre" of the text, and the embedding vector generated from the original text content. The `embedding` field specifies [HNSW](../../../ai/search-and-query/vectors/index.md#hnsw-index) indexing, the [L2](../../../ai/search-and-query/vectors/index.md#distance-metrics) vector distance metric, `Float32` values to represent the vector's components, and 384 dimensions, as required by the `all-MiniLM-L6-v2` embedding model.
 
 The `FTCreateParams` object specifies hash objects for storage and a prefix `doc:` that identifies the hash objects to index.
 
@@ -1729,7 +1729,7 @@ public class HomeQueryVec {
 
 After you have created the index and added the data, you are ready to run a query. To do this, you must create another embedding vector from your chosen query text. Redis calculates the vector distance between the query vector and each embedding vector in the index as it runs the query. You can request the results to be sorted to rank them in order of ascending distance.
 
-The code below creates the query embedding using the `predict()` method, as with the indexing, and passes it as a parameter when the query executes (see [Vector search](/docs/latest/develop/ai/search-and-query/query/vector-search/) for more information about using query parameters with embeddings). The query is a [K nearest neighbors (KNN)](/docs/latest/develop/ai/search-and-query/vectors/#knn-vector-search) search that sorts the results in order of vector distance from the query vector.
+The code below creates the query embedding using the `predict()` method, as with the indexing, and passes it as a parameter when the query executes (see [Vector search](../../../ai/search-and-query/query/vector-search/index.md) for more information about using query parameters with embeddings). The query is a [K nearest neighbors (KNN)](../../../ai/search-and-query/vectors/index.md#knn-vector-search) search that sorts the results in order of vector distance from the query vector.
 
 ```java
 import redis.clients.jedis.RedisClient;
@@ -2017,7 +2017,7 @@ Note that the results are ordered according to the value of the `distance` field
 
 ## Differences with JSON documents
 
-Indexing JSON documents is similar to hash indexing, but there are some important differences. JSON allows much richer data modeling with nested fields, so you must supply a [path](/docs/latest/develop/data-types/json/path/) in the schema to identify each field you want to index. However, you can declare a short alias for each of these paths (using the `as()` option) to avoid typing it in full for every query. Also, you must specify `IndexDataType.JSON` when you create the index.
+Indexing JSON documents is similar to hash indexing, but there are some important differences. JSON allows much richer data modeling with nested fields, so you must supply a [path](../../../data-types/json/path/index.md) in the schema to identify each field you want to index. However, you can declare a short alias for each of these paths (using the `as()` option) to avoid typing it in full for every query. Also, you must specify `IndexDataType.JSON` when you create the index.
 
 The code below shows these differences, but the index is otherwise very similar to the one created previously for hashes:
 
@@ -2857,6 +2857,6 @@ ID: jdoc:3, Distance: 1.48624765873, Content: Today is a sunny day
 
 ## Learn more
 
-See [Vector search](/docs/latest/develop/ai/search-and-query/query/vector-search/) for more information about the indexing options, distance metrics, and query format for vectors.
+See [Vector search](../../../ai/search-and-query/query/vector-search/index.md) for more information about the indexing options, distance metrics, and query format for vectors.
 
 ## On this page

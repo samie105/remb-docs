@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:09.042Z"
 content_hash: "c6c4165998c4be2cffbd86c313658d64247fb63bfccd61576f422432bc141f94"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Regions","Regions"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Regions","Regions"]
-nav_prev: {"path": "../read-replicas/getting-started/index.md", "title": "Getting started with Read Replicas"}
-nav_next: {"path": "../ssl-enforcement/index.md", "title": "Postgres SSL Enforcement"}
+nav_prev: {"path": "supabase/docs/guides/platform/read-replicas/getting-started/index.md", "title": "Getting started with Read Replicas"}
+nav_next: {"path": "supabase/docs/guides/platform/ssl-enforcement/index.md", "title": "Postgres SSL Enforcement"}
 ---
 
 # 

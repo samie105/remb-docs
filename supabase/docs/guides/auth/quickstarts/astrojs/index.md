@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:31.393Z"
 content_hash: "5b1259c1e517e7b6e1a771baa630b5a60b860744a22753b5b4612d00c1f3e8aa"
 menu_path: ["Auth","Auth","Getting Started","Getting Started","Astro","Astro"]
 section_path: ["Auth","Auth","Getting Started","Getting Started","Astro","Astro"]
-nav_prev: {"path": "../../phone-login/index.md", "title": "Phone Login"}
-nav_next: {"path": "../nextjs/index.md", "title": "Use Supabase Auth with Next.js"}
+nav_prev: {"path": "supabase/docs/guides/auth/phone-login/index.md", "title": "Phone Login"}
+nav_next: {"path": "supabase/docs/guides/auth/quickstarts/nextjs/index.md", "title": "Use Supabase Auth with Next.js"}
 ---
 
 # 
@@ -107,7 +107,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=astro).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -224,4 +224,4 @@ Start the development server, then navigate to [http://localhost:4321/auth/signu
 
 ## Learn more[#](#learn-more)
 
-*   [Supabase Auth docs](/docs/guides/auth#authentication) for more Supabase authentication methods
+*   [Supabase Auth docs](../../index.md#authentication) for more Supabase authentication methods

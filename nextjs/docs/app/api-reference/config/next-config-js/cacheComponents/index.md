@@ -11,8 +11,8 @@ menu_path: ["cacheComponents"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../basePath/index.md", "title": "basePath"}
-nav_next: {"path": "../cacheHandlers/index.md", "title": "cacheHandlers"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/basePath/index.md", "title": "basePath"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheHandlers/index.md", "title": "cacheHandlers"}
 ---
 
 # cacheComponents
@@ -23,7 +23,7 @@ The `cacheComponents` flag is a feature in Next.js that causes data fetching ope
 
 It is useful if your application requires fresh data fetching during runtime rather than serving from a prerendered cache.
 
-It is expected to be used in conjunction with [`use cache`](/docs/app/api-reference/directives/use-cache) so that your data fetching happens at runtime by default unless you define specific parts of your application to be cached with `use cache` at the page, function, or component level.
+It is expected to be used in conjunction with [`use cache`](../../../directives/use-cache/index.md) so that your data fetching happens at runtime by default unless you define specific parts of your application to be cached with `use cache` at the page, function, or component level.
 
 ## Usage[](#usage)
 
@@ -43,9 +43,9 @@ export default nextConfig
 
 When `cacheComponents` is enabled, you can use the following cache functions and configurations:
 
--   The [`use cache` directive](/docs/app/api-reference/directives/use-cache)
--   The [`cacheLife` function](/docs/app/api-reference/config/next-config-js/cacheLife) with `use cache`
--   The [`cacheTag` function](/docs/app/api-reference/functions/cacheTag)
+-   The [`use cache` directive](../../../directives/use-cache/index.md)
+-   The [`cacheLife` function](../cacheLife/index.md) with `use cache`
+-   The [`cacheTag` function](../../../functions/cacheTag/index.md)
 
 When `cacheComponents` is enabled, Next.js uses React's [`<Activity>`](https://react.dev/reference/react/Activity) component to preserve component state during client-side navigation.
 
@@ -59,7 +59,7 @@ This behavior improves the navigation experience by maintaining UI state (form i
 
 > **Good to know**: Next.js uses heuristics to keep a few recently visited routes `"hidden"`, while older routes are removed from the DOM to prevent excessive growth.
 
-Some UI patterns behave differently when components stay mounted instead of unmounting. See the [Preserving UI state guide](/docs/app/guides/preserving-ui-state) for handling common patterns like dropdowns, dialogs, and testing.
+Some UI patterns behave differently when components stay mounted instead of unmounting. See the [Preserving UI state guide](../../../../guides/preserving-ui-state/index.md) for handling common patterns like dropdowns, dialogs, and testing.
 
 ## Version History[](#version-history)
 

@@ -11,8 +11,8 @@ menu_path: ["Views"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB","Relational databases","MongoDB","Relational databases","MongoDB","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Schema)"}
-nav_next: {"path": "../../overview/index.md", "title": "Overview of Prisma Schema"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Schema)"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/index.md", "title": "Overview of Prisma Schema"}
 ---
 
 Database views allow you to name and store queries. In relational databases, views are [stored SQL queries](https://www.postgresql.org/docs/current/sql-createview.html) that might include columns in multiple tables, or calculated values such as aggregates. In MongoDB, views are queryable objects where the contents are defined by an [aggregation pipeline](https://www.mongodb.com/docs/manual/core/aggregation-pipeline) on other collections.

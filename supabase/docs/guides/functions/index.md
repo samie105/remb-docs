@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:14.412Z"
 content_hash: "1e5755e02faa6a1f3361b0bdfba2a60d0362a7f55148c597a547fbd5ee1e9705"
 menu_path: ["Edge Functions","Edge Functions","Overview","Overview"]
 section_path: ["Edge Functions","Edge Functions","Overview","Overview"]
-nav_prev: {"path": "../deployment/shared-responsibility-model/index.md", "title": "Shared Responsibility Model"}
-nav_next: {"path": "ai-models/index.md", "title": "Running AI Models"}
+nav_prev: {"path": "supabase/docs/guides/deployment/shared-responsibility-model/index.md", "title": "Shared Responsibility Model"}
+nav_next: {"path": "supabase/docs/guides/functions/ai-models/index.md", "title": "Running AI Models"}
 ---
 
 # 
@@ -44,7 +44,7 @@ Edge Functions are server-side TypeScript functions, distributed globally at the
 *   **Runtime:** Supabase Edge Runtime (Deno compatible runtime with TypeScript first). Functions are simple `.ts` files that export a handler.
 *   **Local dev parity:** Use Supabase CLI for a local runtime similar to production for faster iteration (`supabase functions serve` command).
 *   **Global deployment:** Deploy your Edge Functions via Supabase Dashboard, CLI or MCP.
-*   **Cold starts & concurrency:** cold starts are possible — design for short-lived, idempotent operations. Heavy long-running jobs should be moved to [background workers](/docs/guides/functions/background-tasks).
+*   **Cold starts & concurrency:** cold starts are possible — design for short-lived, idempotent operations. Heavy long-running jobs should be moved to [background workers](background-tasks/index.md).
 *   **Database connections:** treat Postgres like a remote, pooled service — use connection pools or serverless-friendly drivers.
 *   **Secrets:** store credentials in Supabase [project secrets](/docs/reference/cli/supabase-secrets) and access them via environment variables.
 
@@ -57,7 +57,7 @@ Edge Functions are server-side TypeScript functions, distributed globally at the
 *   Sending transactional emails.
 *   Building messaging bots for Slack, Discord, etc.
 
-[Get started](/docs/guides/functions/quickstart)
+[Get started](quickstart/index.md)
 
 ## Examples[#](#examples)
 

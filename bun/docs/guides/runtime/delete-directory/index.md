@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:28.651Z"
 content_hash: "f781e47b00ad3d757f9c9fdddf62d0fce567af34acbbf5e72c3af342ddb5999e"
 menu_path: ["Delete directories"]
 section_path: []
-nav_prev: {"path": "../define-constant/index.md", "title": "Define and replace static globals & constants"}
-nav_next: {"path": "../delete-file/index.md", "title": "Delete files"}
+nav_prev: {"path": "bun/docs/guides/runtime/define-constant/index.md", "title": "Define and replace static globals & constants"}
+nav_next: {"path": "bun/docs/guides/runtime/delete-file/index.md", "title": "Delete files"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../delete-file/index.md", "title": "Delete files"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To recursively delete a directory and all its contents, use `rm` from `node:fs/promises`. This is like running `rm -rf` in JavaScript.
 
@@ -71,7 +71,7 @@ try {
 
 * * *
 
-See [Docs > API > FileSystem](/docs/runtime/file-io) for more filesystem operations.
+See [Docs > API > FileSystem](../../../runtime/file-io/index.md) for more filesystem operations.
 
 Was this page helpful?
 
@@ -83,10 +83,10 @@ Delete files
 
 Previous
 
-](/docs/guides/runtime/delete-file)[
+](../delete-file/index.md)[
 
 Hash a password
 
 Next
 
-](/docs/guides/util/hash-a-password)
+](../../util/hash-a-password/index.md)

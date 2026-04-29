@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:07.203Z"
 content_hash: "adaff0cb50d0902021420004cedb734f284e0e8c85602782ee622b83a2bae716"
 menu_path: ["Build a React app from Scratch"]
 section_path: []
-nav_prev: {"path": "../creating-a-react-app/index.md", "title": "Creating a React App"}
-nav_next: {"path": "../add-react-to-an-existing-project/index.md", "title": "Add React to an Existing Project"}
+nav_prev: {"path": "react/learn/creating-a-react-app/index.md", "title": "Creating a React App"}
+nav_next: {"path": "react/learn/add-react-to-an-existing-project/index.md", "title": "Add React to an Existing Project"}
 ---
 
 If your app has constraints not well-served by existing frameworks, you prefer to build your own framework, or you just want to learn the basics of a React app, you can build a React app from scratch.

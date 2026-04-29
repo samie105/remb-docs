@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:18.995Z"
 content_hash: "ab1cf0a533e2baf99d9e6ab10b3c13c03b95a0e4cc3f236ea66cfd47875f8d6e"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Compute and Disk","Compute and Disk"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Compute and Disk","Compute and Disk"]
-nav_prev: {"path": "../clone-project/index.md", "title": "Restore to a new project"}
-nav_next: {"path": "../cost-control/index.md", "title": "Control your costs"}
+nav_prev: {"path": "supabase/docs/guides/platform/clone-project/index.md", "title": "Restore to a new project"}
+nav_next: {"path": "supabase/docs/guides/platform/cost-control/index.md", "title": "Control your costs"}
 ---
 
 # 
@@ -185,11 +185,11 @@ Custom
 
 Custom
 
-Compute sizes can be changed by first selecting your project in the dashboard [here](/dashboard/project/_/settings/compute-and-disk) and the upgrade process will [incur downtime](/docs/guides/platform/compute-and-disk#upgrades).
+Compute sizes can be changed by first selecting your project in the dashboard [here](/dashboard/project/_/settings/compute-and-disk) and the upgrade process will [incur downtime](index.md#upgrades).
 
 ![Compute Size Selection](/docs/img/guides/platform/compute-size-selection--light.png)
 
-We charge hourly for additional compute based on your usage. Read more about [usage-based billing for compute](/docs/guides/platform/manage-your-usage/compute).
+We charge hourly for additional compute based on your usage. Read more about [usage-based billing for compute](../manage-your-usage/compute/index.md).
 
 ### Dedicated vs shared CPU[#](#dedicated-vs-shared-cpu)
 
@@ -199,7 +199,7 @@ All Postgres databases on Supabase run in isolated environments. Compute instanc
 
 Compute instance changes are usually applied with less than 2 minutes of downtime, but can take longer depending on the underlying Cloud Provider.
 
-When considering compute upgrades, assess whether your bottlenecks are hardware-constrained or software-constrained. For example, you may want to look into [optimizing the number of connections](/docs/guides/platform/performance#optimizing-the-number-of-connections) or [examining query performance](/docs/guides/platform/performance#examining-query-performance). When you're happy with your Postgres instance's performance, then you can focus on additional compute resources. For example, you can load test your application in staging to understand your compute requirements. You can also start out on a smaller tier, [create a report](/dashboard/project/_/observability) in the Dashboard to monitor your CPU utilization, and upgrade as needed.
+When considering compute upgrades, assess whether your bottlenecks are hardware-constrained or software-constrained. For example, you may want to look into [optimizing the number of connections](../performance/index.md#optimizing-the-number-of-connections) or [examining query performance](../performance/index.md#examining-query-performance). When you're happy with your Postgres instance's performance, then you can focus on additional compute resources. For example, you can load test your application in staging to understand your compute requirements. You can also start out on a smaller tier, [create a report](/dashboard/project/_/observability) in the Dashboard to monitor your CPU utilization, and upgrade as needed.
 
 ## Disk[#](#disk)
 
@@ -421,7 +421,7 @@ XL
 
 Smaller compute instances like Nano, Micro, Small, and Medium can burst above baseline for short periods of time. Once burst capacity is exhausted, performance returns to baseline. If you need consistent disk performance, consider upgrading your compute size.
 
-Larger compute instances (4XL and above) are designed for sustained, high performance with specific IOPS and throughput limits which you can [configure](/docs/guides/platform/manage-your-usage/disk-throughput). If you hit your IOPS or throughput limit, throttling will occur.
+Larger compute instances (4XL and above) are designed for sustained, high performance with specific IOPS and throughput limits which you can [configure](../manage-your-usage/disk-throughput/index.md). If you hit your IOPS or throughput limit, throttling will occur.
 
 ### Choosing the right compute instance for consistent disk performance[#](#choosing-the-right-compute-instance-for-consistent-disk-performance)
 
@@ -494,7 +494,7 @@ Compute instance size changes will not change your selected disk type or disk si
 
 ### Postgres replication slots, WAL senders, and connections[#](#postgres-replication-slots-wal-senders-and-connections)
 
-[Replication Slots](https://postgresqlco.nf/doc/en/param/max_replication_slots) and [WAL Senders](https://postgresqlco.nf/doc/en/param/max_wal_senders/) are used to enable [Postgres Replication](/docs/guides/database/replication). Each compute instance also has limits on the maximum number of database connections and connection pooler clients it can handle.
+[Replication Slots](https://postgresqlco.nf/doc/en/param/max_replication_slots) and [WAL Senders](https://postgresqlco.nf/doc/en/param/max_wal_senders/) are used to enable [Postgres Replication](../../database/replication/index.md). Each compute instance also has limits on the maximum number of database connections and connection pooler clients it can handle.
 
 The maximum number of replication slots, WAL senders, database connections, and pooler clients depends on your compute instance size, as follows:
 
@@ -631,4 +631,4 @@ As mentioned in the Postgres [documentation](https://postgresqlco.nf/doc/en/para
     
 2.  Compute resources on the Free plan are subject to change. [↩](#user-content-fnref-3)
     
-3.  Database max connections are recommended values and can be [customized via `max_connections`](/docs/guides/database/custom-postgres-config) depending on your use case. Be aware of [these considerations](/docs/guides/troubleshooting/how-to-change-max-database-connections-_BQ8P5) before modifying. [↩](#user-content-fnref-1)
+3.  Database max connections are recommended values and can be [customized via `max_connections`](../../database/custom-postgres-config/index.md) depending on your use case. Be aware of [these considerations](/docs/guides/troubleshooting/how-to-change-max-database-connections-_BQ8P5) before modifying. [↩](#user-content-fnref-1)

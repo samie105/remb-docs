@@ -11,15 +11,15 @@ menu_path: ["htmlLimitedBots"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../headers/index.md", "title": "headers"}
-nav_next: {"path": "../httpAgentOptions/index.md", "title": "httpAgentOptions"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/headers/index.md", "title": "headers"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
 ---
 
 # htmlLimitedBots
 
 Last updated April 23, 2026
 
-The `htmlLimitedBots` config allows you to specify a list of user agents that should receive blocking metadata instead of [streaming metadata](/docs/app/api-reference/functions/generate-metadata#streaming-metadata).
+The `htmlLimitedBots` config allows you to specify a list of user agents that should receive blocking metadata instead of [streaming metadata](../../../functions/generate-metadata/index.md#streaming-metadata).
 
 next.config.ts
 

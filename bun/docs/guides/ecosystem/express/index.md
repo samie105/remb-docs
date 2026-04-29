@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:58.257Z"
 content_hash: "134e9ac3f87b1dc868854659278d3d4abfb93e4f581e998fa67405010c021a46"
 menu_path: ["Build an HTTP server using Express and Bun"]
 section_path: []
-nav_prev: {"path": "../elysia/index.md", "title": "Build an HTTP server using Elysia and Bun"}
-nav_next: {"path": "../gel/index.md", "title": "Use Gel with Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/elysia/index.md", "title": "Build an HTTP server using Elysia and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/gel/index.md", "title": "Use Gel with Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,25 +19,25 @@ nav_next: {"path": "../gel/index.md", "title": "Use Gel with Bun"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Express and other major Node.js HTTP libraries should work out of the box. Bun implements the [`node:http`](https://nodejs.org/api/http.html) and [`node:https`](https://nodejs.org/api/https.html) modules that these libraries rely on.
 
-Refer to the [Runtime > Node.js APIs](/docs/runtime/nodejs-compat#node-http) page for more detailed compatibility information.
+Refer to the [Runtime > Node.js APIs](../../../runtime/nodejs-compat/index.md#node-http) page for more detailed compatibility information.
 
 terminal
 
@@ -86,10 +86,10 @@ Build an HTTP server using Elysia and Bun
 
 Previous
 
-](/docs/guides/ecosystem/elysia)[
+](../elysia/index.md)[
 
 Build an HTTP server using Hono and Bun
 
 Next
 
-](/docs/guides/ecosystem/hono)
+](../hono/index.md)

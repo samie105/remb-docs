@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:46.362Z"
 content_hash: "2af39eb7a4e25e0ed7e4b5b1e9316f34d0ccba123e7914eaa5ed3d74ff218866"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Python","→","RedisOM for Python"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Python","→","RedisOM for Python"]
-nav_prev: {"path": "../redisom-for-node-js/index.md", "title": "RedisOM for Node.js"}
-nav_next: {"path": "../redisvl/index.md", "title": "RedisVL"}
+nav_prev: {"path": "redis/docs/latest/integrate/redisom-for-node-js/index.md", "title": "RedisOM for Node.js"}
+nav_next: {"path": "redis/docs/latest/integrate/redisvl/index.md", "title": "RedisVL"}
 ---
 
 # RedisOM for Python
@@ -287,7 +287,7 @@ $ redis-cli
 "{\"$.skills[0]\":[\"synths\"],\"$.address\":[{\"pk\":\"01FX8SSSDNRDSRB3HMVH00NQTT\",\"street_number\":56,\"unit\":\"4A\",\"street_name\":\"The Rushes\",\"city\":\"Birmingham\",\"state\":\"West Midlands\",\"postal_code\":\"B91 6HG\",\"country\":\"United Kingdom\"}]}"
 ```
 
-For more information on the JSON Path syntax used to query JSON documents in Redis, see the [documentation](/docs/latest/develop/data-types/json/path/#jsonpath-syntax).
+For more information on the JSON Path syntax used to query JSON documents in Redis, see the [documentation](../../develop/data-types/json/path/index.md#jsonpath-syntax).
 
 ### Find a Person by ID
 

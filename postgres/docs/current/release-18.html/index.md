@@ -10,8 +10,8 @@ content_hash: "0fb107630e278b5e102a46b9e97f4765cd7ce48e292d03ac656b3b3b72d93655"
 menu_path: ["PostgreSQL: Documentation: 18: E.4. Release 18"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../release-18-3.html/index.md", "title": "PostgreSQL: Documentation: 18: E.1.\u00a0Release 18.3"}
-nav_next: {"path": "../release-prior.html/index.md", "title": "PostgreSQL: Documentation: 18: E.5.\u00a0Prior Releases"}
+nav_prev: {"path": "postgres/docs/current/release-18-3.html/index.md", "title": "PostgreSQL: Documentation: 18: E.1.\u00a0Release 18.3"}
+nav_next: {"path": "postgres/docs/current/release-prior.html/index.md", "title": "PostgreSQL: Documentation: 18: E.5.\u00a0Prior Releases"}
 ---
 
 -   Increase the logging granularity of server variable [log\_connections](https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-LOG-CONNECTIONS) (Melanie Plageman) [§](https://postgr.es/c/9219093ca)

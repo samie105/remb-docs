@@ -10,8 +10,8 @@ content_hash: "d12bd0d854ea5eaf80cd6e30c283215ac77102f890fb0f856411a94be9b37e47"
 menu_path: ["ORM releases and maturity levels"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../best-practices/index.md", "title": "Best practices"}
-nav_next: {"path": "../../core-concepts/supported-databases/database-drivers/index.md", "title": "Database drivers"}
+nav_prev: {"path": "prisma/docs/orm/more/best-practices/index.md", "title": "Best practices"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/database-drivers/index.md", "title": "Database drivers"}
 ---
 
 Learn about the release process, versioning, and maturity of Prisma ORM components and how to deal with breaking changes that might happen throughout releases

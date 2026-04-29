@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:21.116Z"
 content_hash: "61bd5970cebec696f2b4445d47056fb0356c8cd628d1cbcdb772474945e14235"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Redis Open Source quick start","→","Redis Open Source quick start"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Redis Open Source quick start","→","Redis Open Source quick start"]
-nav_prev: {"path": "../modules-lifecycle/index.md", "title": "Module lifecycle"}
-nav_next: {"path": "../../../rc/changelog/version-release-notes/index.md", "title": "Redis version release notes and breaking changes"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/modules-lifecycle/index.md", "title": "Module lifecycle"}
+nav_next: {"path": "redis/docs/latest/operate/rc/changelog/version-release-notes/index.md", "title": "Redis version release notes and breaking changes"}
 ---
 
 # Redis Open Source quick start
@@ -19,8 +19,8 @@ To quickly set up a database with Redis Stack (Redis Open Source) features, you 
 
 Alternatively, you can use one of these methods:
 
-*   [Redis Software](/docs/latest/operate/rs/installing-upgrading/quickstarts/redis-enterprise-software-quickstart/)
-*   Redis Software in a [Docker container](/docs/latest/operate/rs/installing-upgrading/quickstarts/docker-quickstart/)
+*   [Redis Software](../../../rs/installing-upgrading/quickstarts/redis-enterprise-software-quickstart/index.md)
+*   Redis Software in a [Docker container](../../../rs/installing-upgrading/quickstarts/docker-quickstart/index.md)
 *   [Other platforms](/docs/latest/operate/kubernetes/) for Redis Software
 
 ## Set up a Redis Cloud database
@@ -84,7 +84,7 @@ With this information, you can connect to your database with the [`redis-cli`](/
 
 To try out Redis Open Source features, follow the examples provided by the corresponding guides:
 
-*   [Redis Search quick start](/docs/latest/develop/get-started/document-database/)
+*   [Redis Search quick start](../../../../develop/get-started/document-database/index.md)
 *   [JSON quick start](/docs/latest/develop/data-types/json/#use-redisjson)
 *   [Time series quick start](/docs/latest/develop/data-types/timeseries/)
 *   [Probabilistic data structures quick start](/docs/latest/develop/data-types/probabilistic/)

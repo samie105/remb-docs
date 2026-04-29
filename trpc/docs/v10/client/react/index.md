@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:29.836Z"
 content_hash: "195c63f9d42075f801c37b35a12198e8b93f80f0d889b3634b9eba39a56e53a7"
 menu_path: ["React Query Integration"]
 section_path: []
-nav_prev: {"path": "../nextjs/starter-projects/index.md", "title": "Starter Projects"}
-nav_next: {"path": "aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_prev: {"path": "trpc/docs/v10/client/nextjs/starter-projects/index.md", "title": "Starter Projects"}
+nav_next: {"path": "trpc/docs/v10/client/react/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
 
 tRPC offers a first class integration with React. Under the hood this is simply a wrapper around the very popular [@tanstack/react-query](https://tanstack.com/query/latest), so we recommend that you familiarise yourself with React Query, as their docs go in to much greater depth on its usage.

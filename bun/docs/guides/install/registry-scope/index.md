@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:14.405Z"
 content_hash: "63a65bba32195b150636d3fcd7cbca672cdcfc48a42226bfa097b8a71ff7a1b3"
 menu_path: ["Configure a private registry for an organization scope with bun install"]
 section_path: []
-nav_prev: {"path": "../npm-alias/index.md", "title": "Install a package under a different name"}
-nav_next: {"path": "../trusted/index.md", "title": "Add a trusted dependency"}
+nav_prev: {"path": "bun/docs/guides/install/npm-alias/index.md", "title": "Install a package under a different name"}
+nav_next: {"path": "bun/docs/guides/install/trusted/index.md", "title": "Add a trusted dependency"}
 ---
 
 # as a string
@@ -31,7 +31,7 @@ nav_next: {"path": "../trusted/index.md", "title": "Add a trusted dependency"}
 
 * * *
 
-Your `bunfig.toml` can reference environment variables. Bun automatically loads environment variables from `.env.local`, `.env.[NODE_ENV]`, and `.env`. See [Docs > Environment variables](/docs/runtime/environment-variables) for more information.
+Your `bunfig.toml` can reference environment variables. Bun automatically loads environment variables from `.env.local`, `.env.[NODE_ENV]`, and `.env`. See [Docs > Environment variables](../../../runtime/environment-variables/index.md) for more information.
 
 bunfig.toml
 
@@ -42,7 +42,7 @@ bunfig.toml
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -54,10 +54,10 @@ Override the default npm registry for bun install
 
 Previous
 
-](/docs/guides/install/custom-registry)[
+](../custom-registry/index.md)[
 
 Using bun install with an Azure Artifacts npm registry
 
 Next
 
-](/docs/guides/install/azure-artifacts)
+](../azure-artifacts/index.md)

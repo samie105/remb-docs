@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:21.749Z"
 content_hash: "b60eb7b8bc3362980621d0750ff9a12978066e9ad39284007c5e2c7468e395fa"
 menu_path: ["Get the path to an executable bin file"]
 section_path: []
-nav_prev: {"path": "../version/index.md", "title": "Get the current Bun version"}
-nav_next: {"path": "../../websocket/compression/index.md", "title": "Enable compression for WebSocket messages"}
+nav_prev: {"path": "bun/docs/guides/util/version/index.md", "title": "Get the current Bun version"}
+nav_next: {"path": "bun/docs/guides/websocket/compression/index.md", "title": "Enable compression for WebSocket messages"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../websocket/compression/index.md", "title": "Enable comp
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 `Bun.which` is a utility function to find the absolute path of an executable file. It is similar to the `which` command in Unix-like systems.
 
@@ -47,7 +47,7 @@ Bun.which("bun"); // => "/home/user/.bun/bin/bun"
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils#bun-which) for complete documentation.
+See [Docs > API > Utils](../../../runtime/utils/index.md#bun-which) for complete documentation.
 
 Was this page helpful?
 
@@ -59,10 +59,10 @@ Convert an absolute path to a file URL
 
 Previous
 
-](/docs/guides/util/path-to-file-url)[
+](../path-to-file-url/index.md)[
 
 Get the directory of the current file
 
 Next
 
-](/docs/guides/util/import-meta-dir)
+](../import-meta-dir/index.md)

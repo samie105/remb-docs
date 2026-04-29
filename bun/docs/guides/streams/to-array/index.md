@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:53.430Z"
 content_hash: "aa79276f7bc219ead9d0b20b1cc878d0ee6c27ee33a530c44a9f668eb78fefae"
 menu_path: ["Convert a ReadableStream to an array of chunks"]
 section_path: []
-nav_prev: {"path": "../node-readable-to-uint8array/index.md", "title": "Convert a Node.js Readable to an Uint8Array"}
-nav_next: {"path": "../to-arraybuffer/index.md", "title": "Convert a ReadableStream to an ArrayBuffer"}
+nav_prev: {"path": "bun/docs/guides/streams/node-readable-to-uint8array/index.md", "title": "Convert a Node.js Readable to an Uint8Array"}
+nav_next: {"path": "bun/docs/guides/streams/to-arraybuffer/index.md", "title": "Convert a ReadableStream to an ArrayBuffer"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../to-arraybuffer/index.md", "title": "Convert a ReadableStr
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun provides several convenience functions for reading the contents of a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) into different formats. The `Bun.readableStreamToArray` function reads the contents of a `ReadableStream` to an array of chunks.
 
@@ -44,7 +44,7 @@ const str = await Bun.readableStreamToArray(stream);
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
+See [Docs > API > Utils](../../../runtime/utils/index.md#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a ReadableStream to a Uint8Array
 
 Previous
 
-](/docs/guides/streams/to-typedarray)[
+](../to-typedarray/index.md)[
 
 Convert a Node.js Readable to a string
 
 Next
 
-](/docs/guides/streams/node-readable-to-string)
+](../node-readable-to-string/index.md)

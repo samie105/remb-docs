@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:50.604Z"
 content_hash: "8a8e87db5916ad871d4a170ee648850f6ce501e5c970a3ab8bd36ad731ccfb40"
 menu_path: ["PostgreSQL: Documentation: 18: 28.5. WAL Configuration"]
 section_path: []
-nav_prev: {"path": "../wal-async-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.4.\u00a0Asynchronous Commit"}
-nav_next: {"path": "../wal-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.3.\u00a0Write-Ahead Logging (WAL)"}
+nav_prev: {"path": "postgres/docs/current/wal-async-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.4.\u00a0Asynchronous Commit"}
+nav_next: {"path": "postgres/docs/current/wal-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.3.\u00a0Write-Ahead Logging (WAL)"}
 ---
 
 There are several WAL\-related configuration parameters that affect database performance. This section explains their use. Consult [Chapter 19](https://www.postgresql.org/docs/current/runtime-config.html "Chapter 19. Server Configuration") for general information about setting server configuration parameters.

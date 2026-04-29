@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:10.869Z"
 content_hash: "32631050f8f25855229460958738d7e6dc06207b7e6d7f89f861c6eee23b883b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Redis Agent Memory","→","Redis Agent Memory"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis with Google Agent Development Kit (ADK)","→","Redis with Google Agent Development Kit (ADK)","→\n      \n        Redis Agent Memory","→","Redis Agent Memory"]
-nav_prev: {"path": "../integration-patterns/index.md", "title": "Memory integration patterns"}
-nav_next: {"path": "../search-tools/index.md", "title": "Redis search tools"}
+nav_prev: {"path": "redis/docs/latest/integrate/google-adk/integration-patterns/index.md", "title": "Memory integration patterns"}
+nav_next: {"path": "redis/docs/latest/integrate/google-adk/search-tools/index.md", "title": "Redis search tools"}
 ---
 
 # Redis Agent Memory
@@ -48,7 +48,7 @@ LLM via MCP protocol
 
 Portable, standardized
 
-See [Integration patterns](/docs/latest/integrate/google-adk/integration-patterns/) for detailed tradeoff comparison.
+See [Integration patterns](../integration-patterns/index.md) for detailed tradeoff comparison.
 
 ## Working memory
 
@@ -292,7 +292,7 @@ The most portable approach — swap memory backends without changing agent code.
 
 ## More info
 
-*   [Integration patterns](/docs/latest/integrate/google-adk/integration-patterns/): Detailed tradeoff comparison of all three approaches
+*   [Integration patterns](../integration-patterns/index.md): Detailed tradeoff comparison of all three approaches
 *   [simple\_redis\_memory](https://github.com/redis-developer/adk-redis/tree/main/examples/simple_redis_memory): Minimal framework services setup
 *   [travel\_agent\_memory\_tools](https://github.com/redis-developer/adk-redis/tree/main/examples/travel_agent_memory_tools): REST tools only
 *   [fitness\_coach\_mcp](https://github.com/redis-developer/adk-redis/tree/main/examples/fitness_coach_mcp): MCP tools

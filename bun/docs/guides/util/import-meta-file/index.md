@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:01.177Z"
 content_hash: "d1319ad73551540058d3949a6151270e5b772aa54db7fb1810089bc4a29b3b3f"
 menu_path: ["Get the file name of the current file"]
 section_path: []
-nav_prev: {"path": "../import-meta-dir/index.md", "title": "Get the directory of the current file"}
-nav_next: {"path": "../import-meta-path/index.md", "title": "Get the absolute path of the current file"}
+nav_prev: {"path": "bun/docs/guides/util/import-meta-dir/index.md", "title": "Get the directory of the current file"}
+nav_next: {"path": "bun/docs/guides/util/import-meta-path/index.md", "title": "Get the absolute path of the current file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../import-meta-path/index.md", "title": "Get the absolute pa
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-Bun provides a handful of module-specific utilities on the [`import.meta`](/docs/runtime/module-resolution#import-meta) object. Use `import.meta.file` to retrieve the name of the current file.
+Bun provides a handful of module-specific utilities on the [`import.meta`](../../../runtime/module-resolution/index.md#import-meta) object. Use `import.meta.file` to retrieve the name of the current file.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)/a/b/c.ts
 
@@ -45,7 +45,7 @@ import.meta.file; // => "c.ts"
 
 * * *
 
-See [Docs > API > import.meta](/docs/runtime/module-resolution#import-meta) for complete documentation.
+See [Docs > API > import.meta](../../../runtime/module-resolution/index.md#import-meta) for complete documentation.
 
 Was this page helpful?
 
@@ -57,10 +57,10 @@ Get the directory of the current file
 
 Previous
 
-](/docs/guides/util/import-meta-dir)[
+](../import-meta-dir/index.md)[
 
 Get the absolute path of the current file
 
 Next
 
-](/docs/guides/util/import-meta-path)
+](../import-meta-path/index.md)

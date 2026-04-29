@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:00.909Z"
 content_hash: "19cd7214ca9444b943053b1b50bcabb147e40cdd5beab844ab24202e9a66a11d"
 menu_path: ["Image missing required \"alt\" property."]
 section_path: []
-nav_prev: {"path": "../i18n-not-enabled/index.md", "title": "i18n Not Enabled"}
-nav_next: {"path": "../image-not-found/index.md", "title": "Image not found."}
+nav_prev: {"path": "astro/en/reference/errors/i18n-not-enabled/index.md", "title": "i18n Not Enabled"}
+nav_next: {"path": "astro/en/reference/errors/image-not-found/index.md", "title": "Image not found."}
 ---
 
 # Image missing required "alt" property.
@@ -27,8 +27,8 @@ If the image is merely decorative (i.e. doesn’t contribute to the understandin
 
 **See Also:**
 
-*   [Images](/en/guides/images/)
-*   [Image component](/en/reference/modules/astro-assets/#image-)
-*    [Image component#alt](/en/reference/modules/astro-assets/#alt-required)
+*   [Images](../../../guides/images/index.md)
+*   [Image component](../../modules/astro-assets/index.md#image-)
+*    [Image component#alt](../../modules/astro-assets/index.md#alt-required)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

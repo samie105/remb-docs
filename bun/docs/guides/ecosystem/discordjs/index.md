@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:45.597Z"
 content_hash: "cf1b76d99ab2be4370afa7aa209f17bdc3419f5ab614e2e67ea82a51b0572870"
 menu_path: ["Create a Discord bot"]
 section_path: []
-nav_prev: {"path": "../astro/index.md", "title": "Build an app with Astro and Bun"}
-nav_next: {"path": "../docker/index.md", "title": "Containerize a Bun application with Docker"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/astro/index.md", "title": "Build an app with Astro and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/docker/index.md", "title": "Containerize a Bun application with Docker"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../docker/index.md", "title": "Containerize a Bun applicatio
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Discord.js works out of the box with Bun. Let’s write a bot. First create a directory and initialize it with `bun init`.
 
@@ -132,10 +132,10 @@ Build an app with Astro and Bun
 
 Previous
 
-](/docs/guides/ecosystem/astro)[
+](../astro/index.md)[
 
 Containerize a Bun application with Docker
 
 Next
 
-](/docs/guides/ecosystem/docker)
+](../docker/index.md)

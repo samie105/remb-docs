@@ -10,8 +10,8 @@ content_hash: "6fc50c7493c7a6c97c9d4930aa05efc66f8609c5c7d171dbbca7532867c115c7"
 menu_path: ["Drizzle <> Cloudflare Durable Objects SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-node-sqlite/index.md", "title": "Drizzle <> Node SQLite"}
-nav_next: {"path": "../connect-expo-sqlite/index.md", "title": "Drizzle <> Expo SQLite"}
+nav_prev: {"path": "drizzle/docs/connect-node-sqlite/index.md", "title": "Drizzle <> Node SQLite"}
+nav_next: {"path": "drizzle/docs/connect-expo-sqlite/index.md", "title": "Drizzle <> Expo SQLite"}
 ---
 
 # Bind a Durable Object. Durable objects are a scale-to-zero compute primitive based on the actor model.

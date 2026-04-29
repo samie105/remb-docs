@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:01.413Z"
 content_hash: "9ed4fd2b07e7538469d6f8570bd4ec6bab3a8231efe80bbb5c63a5425c6c7e64"
 menu_path: ["Custom elements"]
 section_path: []
-nav_prev: {"path": "../typescript/index.md", "title": "TypeScript"}
-nav_next: {"path": "../v4-migration-guide/index.md", "title": "Svelte 4 migration guide"}
+nav_prev: {"path": "svelte/docs/svelte/typescript/index.md", "title": "TypeScript"}
+nav_next: {"path": "svelte/docs/svelte/v4-migration-guide/index.md", "title": "Svelte 4 migration guide"}
 ---
 
 Svelte components can also be compiled to custom elements (aka web components) using the `customElement: true` compiler option. You should specify a tag name for the component using the `<svelte:options>` [element](svelte-options). Within the custom element you can access the host element via the [`$host`](../$host/index.md) rune.
@@ -218,4 +218,4 @@ Custom elements can be a useful way to package components for consumption in a n
 
 previous next
 
-[TypeScript](/docs/svelte/typescript) [Svelte 4 migration guide](/docs/svelte/v4-migration-guide)
+[TypeScript](../typescript/index.md) [Svelte 4 migration guide](../v4-migration-guide/index.md)

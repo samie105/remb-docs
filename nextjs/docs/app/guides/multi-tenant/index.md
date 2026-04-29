@@ -11,8 +11,8 @@ menu_path: ["How to build multi-tenant apps in Next.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../migrating-to-cache-components/index.md", "title": "Migrating to Cache Components"}
-nav_next: {"path": "../multi-zones/index.md", "title": "How to build micro-frontends using multi-zones and Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/migrating-to-cache-components/index.md", "title": "Migrating to Cache Components"}
+nav_next: {"path": "nextjs/docs/app/guides/multi-zones/index.md", "title": "How to build micro-frontends using multi-zones and Next.js"}
 ---
 
 # How to build multi-tenant apps in Next.js

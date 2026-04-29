@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:20.572Z"
 content_hash: "2d548beffc30b54ec670bdce29488fc020757131a073e51f7d40757fff04fb09"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Job files","→","Job files"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Job files","→","Job files"]
-nav_prev: {"path": "../prepare-dbs/sql-server/index.md", "title": "Prepare SQL Server for RDI"}
-nav_next: {"path": "../../installation/reqsummary/index.md", "title": "Requirements summary"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/sql-server/index.md", "title": "Prepare SQL Server for RDI"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/installation/reqsummary/index.md", "title": "Requirements summary"}
 ---
 
 # Job files
@@ -51,8 +51,8 @@ The main sections of these files are:
 *   `source`: This is a mandatory section that specifies the data items that you want to use. You can add the following properties here:
     
     *   `server_name`: Logical server name (optional).
-    *   `db`: Database name (optional). This refers to a database name you supplied in [config.yaml](/docs/latest/integrate/redis-data-integration/data-pipelines/pipeline-config/).
-    *   `schema`: Database schema (optional). This refers to a schema name you supplied in [config.yaml](/docs/latest/integrate/redis-data-integration/data-pipelines/pipeline-config/).
+    *   `db`: Database name (optional). This refers to a database name you supplied in [config.yaml](../pipeline-config/index.md).
+    *   `schema`: Database schema (optional). This refers to a schema name you supplied in [config.yaml](../pipeline-config/index.md).
     *   `table`: Database table name. This refers to a table name you supplied in `config.yaml`. The default job doesn't apply to a specific table, so use "\*" in place of the table name for this job only.
     *   `row_format`: Format of the data to be transformed. This can take the values `partial` (default) to use only the payload data, or `full` to use the complete change record. See the `transform` section below for details of the extra data you can access when you use the `full` option.
     *   `case_insensitive`: This applies to the `server_name`, `db`, `schema`, and `table` properties and is set to `true` by default. Set it to `false` if you need to use case-sensitive values for these properties.

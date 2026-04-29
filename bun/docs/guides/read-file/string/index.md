@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:48.527Z"
 content_hash: "de874ab71b330d441cbe98bad0ea2eaecd91b4580ae4290f8c1c481597bf6304"
 menu_path: ["Read a file as a string"]
 section_path: []
-nav_prev: {"path": "../stream/index.md", "title": "Read a file as a ReadableStream"}
-nav_next: {"path": "../uint8array/index.md", "title": "Read a file to a Uint8Array"}
+nav_prev: {"path": "bun/docs/guides/read-file/stream/index.md", "title": "Read a file as a ReadableStream"}
+nav_next: {"path": "bun/docs/guides/read-file/uint8array/index.md", "title": "Read a file to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../uint8array/index.md", "title": "Read a file to a Uint8Arr
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.file()` function accepts a path and returns a `BunFile` instance. The `BunFile` class extends `Blob` and allows you to lazily read the file in a variety of formats. Use `.text()` to read the contents as a string.
 
@@ -64,10 +64,10 @@ Get the absolute path to the current entrypoint
 
 Previous
 
-](/docs/guides/util/main)[
+](../../util/main/index.md)[
 
 Read a file to a Buffer
 
 Next
 
-](/docs/guides/read-file/buffer)
+](../buffer/index.md)

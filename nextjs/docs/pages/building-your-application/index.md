@@ -11,8 +11,8 @@ menu_path: ["Building Your Application"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../getting-started/deploying/index.md", "title": "How to deploy your Next.js application"}
-nav_next: {"path": "routing/index.md", "title": "Routing"}
+nav_prev: {"path": "nextjs/docs/pages/getting-started/deploying/index.md", "title": "How to deploy your Next.js application"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/index.md", "title": "Routing"}
 ---
 
 # Building Your Application
@@ -25,7 +25,7 @@ Last updated April 23, 2026
 
 Learn the fundamentals of routing for front-end applications with the Pages Router.
 
-](/docs/pages/building-your-application/routing)[
+](routing/index.md)[
 
 ### Rendering
 
@@ -37,12 +37,12 @@ Learn the fundamentals of rendering in React and Next.js.
 
 Next.js allows you to fetch data in multiple ways, with prerendering, server-side rendering or static-site generation, and incremental static regeneration. Learn how to manage your application data in Next.js.
 
-](/docs/pages/building-your-application/data-fetching)[
+](data-fetching/index.md)[
 
 ### Configuring
 
 Learn how to configure your Next.js application.
 
-](/docs/pages/building-your-application/configuring)
+](configuring/index.md)
 
 Was this helpful?

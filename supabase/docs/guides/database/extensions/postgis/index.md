@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:13.848Z"
 content_hash: "1afa9566487c77a575fea4a3742fde2fb4b74c300ea1ae7a5eb07444fbed5c81"
 menu_path: ["Database","Database","Extensions","Extensions","PostGIS: Geo queries","PostGIS: Geo queries"]
 section_path: ["Database","Database","Extensions","Extensions","PostGIS: Geo queries","PostGIS: Geo queries"]
-nav_prev: {"path": "../plv8/index.md", "title": "plv8: JavaScript Language"}
-nav_next: {"path": "../postgres_fdw/index.md", "title": "postgres_fdw"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/plv8/index.md", "title": "plv8: JavaScript Language"}
+nav_next: {"path": "supabase/docs/guides/database/extensions/postgres_fdw/index.md", "title": "postgres_fdw"}
 ---
 
 # 
@@ -90,7 +90,7 @@ At this point, if you go into your Supabase dashboard and look at the data, you 
 10101000020E6100000A4DFBE0E9C91614044FAEDEBC0494240
 ```
 
-We can query the `restaurants` table directly, but it will return the `location` column in the format you see above. We will create [database functions](/docs/guides/database/functions) so that we can use the [st\_y()](https://postgis.net/docs/ST_Y.html) and [st\_x()](https://postgis.net/docs/ST_X.html) function to convert it back to lat and long floating values.
+We can query the `restaurants` table directly, but it will return the `location` column in the format you see above. We will create [database functions](../../functions/index.md) so that we can use the [st\_y()](https://postgis.net/docs/ST_Y.html) and [st\_x()](https://postgis.net/docs/ST_X.html) function to convert it back to lat and long floating values.
 
 ### Order by distance[#](#order-by-distance)
 

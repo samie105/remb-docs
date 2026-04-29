@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:23.535Z"
 content_hash: "b08704cd65302d1001d8b453b6e8bafb4d6251696b85f7cfb5777222b705e4bb"
 menu_path: ["Astro DB"]
 section_path: []
-nav_prev: {"path": "../data-fetching/index.md", "title": "Data fetching"}
-nav_next: {"path": "../on-demand-rendering/index.md", "title": "On-demand rendering"}
+nav_prev: {"path": "astro/en/guides/data-fetching/index.md", "title": "Data fetching"}
+nav_next: {"path": "astro/en/guides/on-demand-rendering/index.md", "title": "On-demand rendering"}
 ---
 
 # Astro DB
@@ -23,7 +23,7 @@ Astro DB is a complete solution to configuring, developing, and querying your da
 
 [Section titled “Installation”](#installation)
 
-Install the [`@astrojs/db` integration](/en/guides/integrations-guide/db/) using the built-in `astro add` command:
+Install the [`@astrojs/db` integration](../integrations-guide/db/index.md) using the built-in `astro add` command:
 
 *   [npm](#tab-panel-1428)
 *   [pnpm](#tab-panel-1429)
@@ -62,7 +62,7 @@ const Comment = defineTable({  columns: {    author: column.text(),    body: col
 export default defineDb({  tables: { Comment },})
 ```
 
-See the [table configuration reference](/en/guides/integrations-guide/db/#table-configuration-reference) for a complete reference of table options.
+See the [table configuration reference](../integrations-guide/db/index.md#table-configuration-reference) for a complete reference of table options.
 
 ### Columns
 
@@ -75,7 +75,7 @@ import { defineTable, column } from 'astro:db';
 const Comment = defineTable({  columns: {    // A string of text.    author: column.text(),    // A whole integer value.    likes: column.number(),    // A true or false value.    flagged: column.boolean(),    // Date/time values queried as JavaScript Date objects.    published: column.date(),    // An untyped JSON object.    metadata: column.json(),  }});
 ```
 
-See the [table columns reference](/en/guides/integrations-guide/db/#table-configuration-reference) for more details.
+See the [table columns reference](../integrations-guide/db/index.md#table-configuration-reference) for more details.
 
 ### Table References
 
@@ -206,7 +206,7 @@ You can also use the flag directly in the command line:
 # Develop with a remote connectionastro dev --remote
 ```
 
-The `--remote` flag uses the connection to the remote DB both locally during the build and on the server. Ensure you set the necessary environment variables in both your local development environment and your deployment platform. Additionally, you may need to [configure web mode](/en/guides/integrations-guide/db/#mode) for non-Node.js runtimes such as Cloudflare Workers or Deno.
+The `--remote` flag uses the connection to the remote DB both locally during the build and on the server. Ensure you set the necessary environment variables in both your local development environment and your deployment platform. Additionally, you may need to [configure web mode](../integrations-guide/db/index.md#mode) for non-Node.js runtimes such as Cloudflare Workers or Deno.
 
 When deploying your Astro DB project, make sure your deployment platform’s build command is set to `npm run build` (or the equivalent for your package manager) to utilize the `--remote` flag configured in your `package.json`.
 
@@ -276,7 +276,7 @@ ASTRO_DB_REMOTE_URL=memory:?syncUrl=libsql%3A%2F%2Fyour.server.io&syncInterval=6
 
 [Section titled “Query your database”](#query-your-database)
 
-You can query your database from any [Astro page](/en/basics/astro-pages/#astro-pages), [endpoint](/en/guides/endpoints/), or [action](/en/guides/actions/) in your project using the provided `db` ORM and query builder.
+You can query your database from any [Astro page](../../basics/astro-pages/index.md#astro-pages), [endpoint](../endpoints/index.md), or [action](../actions/index.md) in your project using the provided `db` ORM and query builder.
 
 ### Drizzle ORM
 
@@ -307,7 +307,7 @@ See the [Drizzle `select()` API reference](https://orm.drizzle.team/docs/select)
 
 [Section titled “Insert”](#insert)
 
-To accept user input, such as handling form requests and inserting data into your remote hosted database, configure your Astro project for [on-demand rendering](/en/guides/on-demand-rendering/) and [add an adapter](/en/guides/on-demand-rendering/#add-an-adapter) for your deployment environment.
+To accept user input, such as handling form requests and inserting data into your remote hosted database, configure your Astro project for [on-demand rendering](../on-demand-rendering/index.md) and [add an adapter](../on-demand-rendering/index.md#add-an-adapter) for your deployment environment.
 
 This example inserts a row into a `Comment` table based on a parsed form POST request:
 
@@ -321,7 +321,7 @@ if (Astro.request.method === 'POST') {  // Parse form data  const formData = awa
 <!-- Render `comments` -->
 ```
 
-You can also use [Astro actions](/en/guides/actions/) to insert data into an Astro DB table. The following example inserts a row into a `Comment` table using an action:
+You can also use [Astro actions](../actions/index.md) to insert data into an Astro DB table. The following example inserts a row into a `Comment` table using an action:
 
 ```
 import { db, Comment } from 'astro:db';import { defineAction } from 'astro:actions';import { z } from 'astro/zod';
@@ -493,13 +493,13 @@ import { Comment } from 'astro:db';
 export default async function () {  await db.insert(Comment).values([    { authorId: 1, body: 'Hope you like Astro DB!' },    { authorId: 2, body: 'Enjoy!' },  ])}
 ```
 
-See the [CLI reference](/en/guides/integrations-guide/db/#astro-db-cli-reference) for a complete list of commands.
+See the [CLI reference](../integrations-guide/db/index.md#astro-db-cli-reference) for a complete list of commands.
 
 ## Building Astro DB integrations
 
 [Section titled “Building Astro DB integrations”](#building-astro-db-integrations)
 
-[Astro integrations](/en/reference/integrations-reference/) can extend user projects with additional Astro DB tables and seed data.
+[Astro integrations](../../reference/integrations-reference/index.md) can extend user projects with additional Astro DB tables and seed data.
 
 Use the `extendDb()` method in the `astro:db:setup` hook to register additional Astro DB config and seed files. The `defineDbIntegration()` helper provides TypeScript support and auto-complete for the `astro:db:setup` hook.
 
@@ -580,4 +580,4 @@ The value returned by `asDrizzleTable('Pets', Pets)` is equivalent to `import { 
     
 8.  Once you have confirmed your project connects to the new database, you can safely delete the project from Astro Studio.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

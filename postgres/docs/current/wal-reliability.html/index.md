@@ -10,8 +10,8 @@ content_hash: "ed2c867faf31e7798242cd979fbab98df2bad52b5d52659b937078954b126417"
 menu_path: ["PostgreSQL: Documentation: 18: 28.1. Reliability"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../wal-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.3.\u00a0Write-Ahead Logging (WAL)"}
-nav_next: {"path": "../xact-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 67.2.\u00a0Transactions and Locking"}
+nav_prev: {"path": "postgres/docs/current/wal-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.3.\u00a0Write-Ahead Logging (WAL)"}
+nav_next: {"path": "postgres/docs/current/xact-locking.html/index.md", "title": "PostgreSQL: Documentation: 18: 67.2.\u00a0Transactions and Locking"}
 ---
 
 Reliability is an important property of any serious database system, and PostgreSQL does everything possible to guarantee reliable operation. One aspect of reliable operation is that all data recorded by a committed transaction should be stored in a nonvolatile area that is safe from power loss, operating system failure, and hardware failure (except failure of the nonvolatile area itself, of course). Successfully writing the data to the computer's permanent storage (disk drive or equivalent) ordinarily meets this requirement. In fact, even if a computer is fatally damaged, if the disk drives survive they can be moved to another computer with similar hardware and all committed transactions will remain intact.

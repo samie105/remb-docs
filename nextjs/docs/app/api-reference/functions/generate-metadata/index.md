@@ -11,8 +11,8 @@ menu_path: ["generateMetadata"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../generate-image-metadata/index.md", "title": "generateImageMetadata"}
-nav_next: {"path": "../generate-sitemaps/index.md", "title": "generateSitemaps"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-image-metadata/index.md", "title": "generateImageMetadata"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-sitemaps/index.md", "title": "generateSitemaps"}
 ---
 
 # generateMetadata
@@ -48,7 +48,7 @@ Dynamic metadata depends on **dynamic information**, such as the current route p
 
 Resolving `generateMetadata` is part of rendering the page. If the page can be prerendered and `generateMetadata` doesn't introduce dynamic behavior, the resulting metadata is included in the page's initial HTML.
 
-Otherwise the metadata resolved from `generateMetadata` [can be streamed](/docs/app/api-reference/functions/generate-metadata#streaming-metadata) after sending the initial UI.
+Otherwise the metadata resolved from `generateMetadata` [can be streamed](index.md#streaming-metadata) after sending the initial UI.
 
 app/products/\[id\]/page.tsx
 
@@ -86,7 +86,7 @@ export async function generateMetadata(
 export default function Page({ params, searchParams }: Props) {}
 ```
 
-For type completion of `params` and `searchParams`, you can type the first argument with [`PageProps<'/route'>`](/docs/app/api-reference/file-conventions/page#page-props-helper) or [`LayoutProps<'/route'>`](/docs/app/api-reference/file-conventions/layout#layout-props-helper) for pages and layouts respectively.
+For type completion of `params` and `searchParams`, you can type the first argument with [`PageProps<'/route'>`](../../file-conventions/page/index.md#page-props-helper) or [`LayoutProps<'/route'>`](../../file-conventions/layout/index.md#layout-props-helper) for pages and layouts respectively.
 
 > **Good to know**:
 > 
@@ -94,9 +94,9 @@ For type completion of `params` and `searchParams`, you can type the first argum
 > -   Next.js will automatically resolve the metadata, and create the relevant `<head>` tags for the page.
 > -   The `metadata` object and `generateMetadata` function exports are **only supported in Server Components**.
 > -   You cannot export both the `metadata` object and `generateMetadata` function from the same route segment.
-> -   `fetch` requests inside `generateMetadata` are automatically [memoized](/docs/app/glossary#memoization) for the same data across `generateMetadata`, `generateStaticParams`, Layouts, Pages, and Server Components.
+> -   `fetch` requests inside `generateMetadata` are automatically [memoized](../../../glossary/index.md#memoization) for the same data across `generateMetadata`, `generateStaticParams`, Layouts, Pages, and Server Components.
 > -   React [`cache` can be used](https://react.dev/reference/react/cache) if `fetch` is unavailable.
-> -   [File-based metadata](/docs/app/api-reference/file-conventions/metadata) has the higher priority and will override the `metadata` object and `generateMetadata` function.
+> -   [File-based metadata](../../file-conventions/metadata/index.md) has the higher priority and will override the `metadata` object and `generateMetadata` function.
 
 ## Why `generateMetadata` is Server Component only[](#why-generatemetadata-is-server-component-only)
 
@@ -141,7 +141,7 @@ export function InteractiveComponent() {
 
 -   `props` - An object containing the parameters of the current route:
     
-    -   `params` - An object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) object from the root segment down to the segment `generateMetadata` is called from. Examples:
+    -   `params` - An object containing the [dynamic route parameters](../../file-conventions/dynamic-routes/index.md) object from the root segment down to the segment `generateMetadata` is called from. Examples:
         
         | Route | URL | `params` |
         | --- | --- | --- |
@@ -169,7 +169,7 @@ export function InteractiveComponent() {
 > -   If metadata doesn't depend on request information, it should be defined using the static [`metadata` object](#the-metadata-object) rather than `generateMetadata`.
 > -   `fetch` requests are automatically memoized for the same data across `generateMetadata`, `generateStaticParams`, Layouts, Pages, and Server Components. React [`cache` can be used](https://react.dev/reference/react/cache) if `fetch` is unavailable.
 > -   `searchParams` are only available in `page.js` segments.
-> -   The [`redirect()`](/docs/app/api-reference/functions/redirect) and [`notFound()`](/docs/app/api-reference/functions/not-found) Next.js methods can also be used inside `generateMetadata`.
+> -   The [`redirect()`](../redirect/index.md) and [`notFound()`](../not-found/index.md) Next.js methods can also be used inside `generateMetadata`.
 
 ### Metadata Fields[](#metadata-fields)
 
@@ -528,7 +528,7 @@ export const metadata = {
 
 > **Good to know**:
 > 
-> -   It may be more convenient to use the [file-based Metadata API](/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif) for Open Graph images. Rather than having to sync the config export with actual files, the file-based API will automatically generate the correct metadata for you.
+> -   It may be more convenient to use the [file-based Metadata API](../../file-conventions/metadata/opengraph-image/index.md#image-files-jpg-png-gif) for Open Graph images. Rather than having to sync the config export with actual files, the file-based API will automatically generate the correct metadata for you.
 
 ### `robots`[](#robots)
 
@@ -566,7 +566,7 @@ export const metadata: Metadata = {
 
 ### `icons`[](#icons)
 
-> **Good to know**: We recommend using the [file-based Metadata API](/docs/app/api-reference/file-conventions/metadata/app-icons#image-files-ico-jpg-png) for icons where possible. Rather than having to sync the config export with actual files, the file-based API will automatically generate the correct metadata for you.
+> **Good to know**: We recommend using the [file-based Metadata API](../../file-conventions/metadata/app-icons/index.md#image-files-ico-jpg-png) for icons where possible. Rather than having to sync the config export with actual files, the file-based API will automatically generate the correct metadata for you.
 
 layout.js | page.js
 
@@ -645,11 +645,11 @@ export const metadata = {
 
 ### `themeColor`[](#themecolor)
 
-> **Deprecated**: The `themeColor` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
+> **Deprecated**: The `themeColor` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](../generate-viewport/index.md) instead.
 
 ### `colorScheme`[](#colorscheme)
 
-> **Deprecated**: The `colorScheme` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
+> **Deprecated**: The `colorScheme` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](../generate-viewport/index.md) instead.
 
 ### `manifest`[](#manifest)
 
@@ -757,7 +757,7 @@ export const metadata = {
 
 ### `viewport`[](#viewport)
 
-> **Deprecated**: The `viewport` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
+> **Deprecated**: The `viewport` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](../generate-viewport/index.md) instead.
 
 ### `verification`[](#verification)
 
@@ -1091,7 +1091,7 @@ export const metadata = {
 
 ### Types[](#types)
 
-You can add type safety to your metadata by using the `Metadata` type. If you are using the [built-in TypeScript plugin](/docs/app/api-reference/config/typescript) in your IDE, you do not need to manually add the type, but you can still explicitly add it if you want.
+You can add type safety to your metadata by using the `Metadata` type. If you are using the [built-in TypeScript plugin](../../config/typescript/index.md) in your IDE, you do not need to manually add the type, but you can still explicitly add it if you want.
 
 #### `metadata` object[](#metadata-object)
 
@@ -1192,11 +1192,11 @@ The following metadata types do not currently have built-in support. However, th
 
 | Metadata | Recommendation |
 | --- | --- |
-| `<meta http-equiv="...">` | Use appropriate HTTP Headers via [`redirect()`](/docs/app/api-reference/functions/redirect), [Proxy](/docs/app/api-reference/file-conventions/proxy#nextresponse), [Security Headers](/docs/app/api-reference/config/next-config-js/headers) |
+| `<meta http-equiv="...">` | Use appropriate HTTP Headers via [`redirect()`](../redirect/index.md), [Proxy](../../file-conventions/proxy/index.md#nextresponse), [Security Headers](../../config/next-config-js/headers/index.md) |
 | `<base>` | Render the tag in the layout or page itself. |
 | `<noscript>` | Render the tag in the layout or page itself. |
-| `<style>` | Learn more about [styling in Next.js](/docs/app/getting-started/css). |
-| `<script>` | Learn more about [using scripts](/docs/app/guides/scripts). |
+| `<style>` | Learn more about [styling in Next.js](../../../getting-started/css/index.md). |
+| `<script>` | Learn more about [using scripts](../../../guides/scripts/index.md). |
 | `<link rel="stylesheet" />` | `import` stylesheets directly in the layout or page itself. |
 | `<link rel="preload />` | Use [ReactDOM preload method](#link-relpreload) |
 | `<link rel="preconnect" />` | Use [ReactDOM preconnect method](#link-relpreconnect) |
@@ -1287,7 +1287,7 @@ There are two default `meta` tags that are always added even if a route doesn't 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
 
-> **Good to know**: You can overwrite the default [`viewport`](/docs/app/api-reference/functions/generate-metadata#viewport) meta tag.
+> **Good to know**: You can overwrite the default [`viewport`](index.md#viewport) meta tag.
 
 ### Streaming metadata[](#streaming-metadata)
 
@@ -1297,7 +1297,7 @@ When `generateMetadata` resolves, the resulting metadata tags are appended to th
 
 For **HTML-limited bots** that can’t execute JavaScript (e.g. `facebookexternalhit`), metadata continues to block page rendering. The resulting metadata will be available in the `<head>` tag.
 
-Next.js automatically detects **HTML-limited bots** by looking at the User Agent header. You can use the [`htmlLimitedBots`](/docs/app/api-reference/config/next-config-js/htmlLimitedBots) option in your Next.js config file to override the default [User Agent list](https://github.com/vercel/next.js/blob/canary/packages/next/src/shared/lib/router/utils/html-bots.ts).
+Next.js automatically detects **HTML-limited bots** by looking at the User Agent header. You can use the [`htmlLimitedBots`](../../config/next-config-js/htmlLimitedBots/index.md) option in your Next.js config file to override the default [User Agent list](https://github.com/vercel/next.js/blob/canary/packages/next/src/shared/lib/router/utils/html-bots.ts).
 
 To fully disable streaming metadata:
 
@@ -1321,7 +1321,7 @@ Overriding `htmlLimitedBots` could lead to longer response times. Streaming meta
 
 ### With Cache Components[](#with-cache-components)
 
-When [Cache Components](/docs/app/getting-started/caching) is enabled, `generateMetadata` follows the same rules as other components. If metadata accesses runtime data (`cookies()`, `headers()`, `params`, `searchParams`) or performs uncached data fetching, it defers to request time.
+When [Cache Components](../../../getting-started/caching/index.md) is enabled, `generateMetadata` follows the same rules as other components. If metadata accesses runtime data (`cookies()`, `headers()`, `params`, `searchParams`) or performs uncached data fetching, it defers to request time.
 
 How Next.js handles this depends on the rest of your page:
 
@@ -1397,7 +1397,7 @@ Metadata is evaluated in order, starting from the root segment down to the segme
 
 Following the [evaluation order](#ordering), Metadata objects exported from multiple segments in the same route are **shallowly** merged together to form the final metadata output of a route. Duplicate keys are **replaced** based on their ordering.
 
-This means metadata with nested fields such as [`openGraph`](/docs/app/api-reference/functions/generate-metadata#opengraph) and [`robots`](/docs/app/api-reference/functions/generate-metadata#robots) that are defined in an earlier segment are **overwritten** by the last segment to define them.
+This means metadata with nested fields such as [`openGraph`](index.md#opengraph) and [`robots`](index.md#robots) that are defined in an earlier segment are **overwritten** by the last segment to define them.
 
 #### Overwriting fields[](#overwriting-fields)
 
@@ -1506,7 +1506,7 @@ export const metadata = {
 | Version | Changes |
 | --- | --- |
 | `v15.2.0` | Introduced streaming support to `generateMetadata`. |
-| `v13.2.0` | `viewport`, `themeColor`, and `colorScheme` deprecated in favor of the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport). |
+| `v13.2.0` | `viewport`, `themeColor`, and `colorScheme` deprecated in favor of the [`viewport` configuration](../generate-viewport/index.md). |
 | `v13.2.0` | `metadata` and `generateMetadata` introduced. |
 
 ## Next Steps
@@ -1519,24 +1519,24 @@ View all the Metadata API options.
 
 API documentation for the metadata file conventions.
 
-](/docs/app/api-reference/file-conventions/metadata)[
+](../../file-conventions/metadata/index.md)[
 
 ### generateViewport
 
 API Reference for the generateViewport function.
 
-](/docs/app/api-reference/functions/generate-viewport)[
+](../generate-viewport/index.md)[
 
 ### Caching
 
 Learn how to cache data and UI in Next.js
 
-](/docs/app/getting-started/caching)[
+](../../../getting-started/caching/index.md)[
 
 ### cacheComponents
 
 Learn how to enable the cacheComponents flag in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheComponents)
+](../../config/next-config-js/cacheComponents/index.md)
 
 Was this helpful?

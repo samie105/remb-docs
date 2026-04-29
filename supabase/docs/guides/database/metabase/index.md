@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:23.847Z"
 content_hash: "35689e0c60b94bb99803f8809b5d0688b8c9961804d3bb5c09d7884851c50a3f"
 menu_path: ["Database","Database","GUI quickstarts","GUI quickstarts","Metabase","Metabase"]
 section_path: ["Database","Database","GUI quickstarts","GUI quickstarts","Metabase","Metabase"]
-nav_prev: {"path": "../json/index.md", "title": "Managing JSON and unstructured data"}
-nav_next: {"path": "../migrating-to-pg-partman/index.md", "title": "Migrate from TimescaleDB to pg_partman"}
+nav_prev: {"path": "supabase/docs/guides/database/json/index.md", "title": "Managing JSON and unstructured data"}
+nav_next: {"path": "supabase/docs/guides/database/migrating-to-pg-partman/index.md", "title": "Migrate from TimescaleDB to pg_partman"}
 ---
 
 # 
@@ -52,7 +52,7 @@ Connect your Postgres server to Metabase.
 
 ##### connection notice
 
-If you're in an [IPv6 environment](/docs/guides/platform/ipv4-address#checking-your-network-ipv6-support) or have the [IPv4 Add-On](/docs/guides/platform/ipv4-address#understanding-ip-addresses), you can use the direct connection string instead of Supavisor in Session mode.
+If you're in an [IPv6 environment](../../platform/ipv4-address/index.md#checking-your-network-ipv6-support) or have the [IPv4 Add-On](../../platform/ipv4-address/index.md#understanding-ip-addresses), you can use the direct connection string instead of Supavisor in Session mode.
 
 *   Enter your database credentials into Metabase
 

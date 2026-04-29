@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:15.745Z"
 content_hash: "cd87082d72bd7c9a32206d2afd3d2b1efabb68c63ca0c605c32df4a80752a7f6"
 menu_path: ["Edge Functions","Edge Functions","Platform","Platform","Regional invocations","Regional invocations"]
 section_path: ["Edge Functions","Edge Functions","Platform","Platform","Regional invocations","Regional invocations"]
-nav_prev: {"path": "../recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
-nav_next: {"path": "../routing/index.md", "title": "Handling Routing in Functions"}
+nav_prev: {"path": "supabase/docs/guides/functions/recursive-functions/index.md", "title": "Recursive / Nested Function Calls"}
+nav_next: {"path": "supabase/docs/guides/functions/routing/index.md", "title": "Handling Routing in Functions"}
 ---
 
 # 
@@ -75,7 +75,7 @@ You can specify the region programmatically using the Supabase Client library, o
 
 In case you cannot add the `x-region` header to the request (e.g.: CORS requests, Webhooks), you can use `forceFunctionRegion` query parameter.
 
-You can verify the execution region by looking at the `x-sb-edge-region` HTTP header in the response. You can also find it as metadata in [Edge Function Logs](/docs/guides/functions/logging).
+You can verify the execution region by looking at the `x-sb-edge-region` HTTP header in the response. You can also find it as metadata in [Edge Function Logs](../logging/index.md).
 
 * * *
 

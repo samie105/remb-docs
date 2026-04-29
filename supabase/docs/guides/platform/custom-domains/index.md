@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:29.180Z"
 content_hash: "be3072c5094b86946a0aabe7c222c0d981c2b5bbefd4c13d15e055ca913ee7fa"
 menu_path: ["Platform","Platform","Add-ons","Add-ons","Custom Domains","Custom Domains"]
 section_path: ["Platform","Platform","Add-ons","Add-ons","Custom Domains","Custom Domains"]
-nav_prev: {"path": "../credits/index.md", "title": "Credits"}
-nav_next: {"path": "../database-size/index.md", "title": "Understanding Database and Disk Size"}
+nav_prev: {"path": "supabase/docs/guides/platform/credits/index.md", "title": "Credits"}
+nav_next: {"path": "supabase/docs/guides/platform/database-size/index.md", "title": "Understanding Database and Disk Size"}
 ---
 
 # 
@@ -32,15 +32,15 @@ You can choose either a custom domain or vanity subdomain for each project.
 
 Custom domains change the way your project's URLs appear to your users. This is useful when:
 
-*   You are using [OAuth (Social Login)](/docs/guides/auth/social-login) with Supabase Auth and the project's URL is shown on the OAuth consent screen.
-*   You are creating APIs for third-party systems, for example, implementing webhooks or external API calls to your project via [Edge Functions](/docs/guides/functions).
+*   You are using [OAuth (Social Login)](../../auth/social-login/index.md) with Supabase Auth and the project's URL is shown on the OAuth consent screen.
+*   You are creating APIs for third-party systems, for example, implementing webhooks or external API calls to your project via [Edge Functions](../../functions/index.md).
 *   You are storing URLs in a database or encoding them in QR codes.
 
 Custom domains help you keep your APIs portable for the long term. By using a custom domain you can migrate from one Supabase project to another, or make it easier to version APIs in the future.
 
 ### Limitations[#](#limitations)
 
-*   Custom domains are not intended to enable hosting of frontend applications through [Edge Functions](/docs/guides/functions).
+*   Custom domains are not intended to enable hosting of frontend applications through [Edge Functions](../../functions/index.md).
 *   You can only attach a single custom domain to any given Supabase project. It is not possible to break out your project's resources into multiple custom domains.
 *   Custom domains can only be powered by CNAME records.
 
@@ -56,7 +56,7 @@ To get started:
 
 1.  [Install](/docs/guides/resources/supabase-cli) the latest version of the Supabase CLI.
 2.  [Log in](/docs/guides/cli/local-development#log-in-to-the-supabase-cli) to your Supabase account using the CLI.
-3.  Ensure you have [Owner or Admin permissions](/docs/guides/platform/access-control#manage-team-members) for the project.
+3.  Ensure you have [Owner or Admin permissions](../access-control/index.md#manage-team-members) for the project.
 4.  Get a custom domain from a DNS provider. Currently, only subdomains are supported.
     *   Use `api.example.com` instead of `example.com`.
 
@@ -121,7 +121,7 @@ To prevent issues for your users, follow these steps:
     *   In the provider's developer console (not in the Supabase dashboard), find the OAuth application and add the custom domain Supabase Auth callback URL **in addition to the Supabase project URL.** Example:
         *   `https://abcdefghijklmnopqrst.supabase.co/auth/v1/callback` **and**
         *   `https://api.example.com/auth/v1/callback`
-    *   [Sign in with Twitter](/docs/guides/auth/social-login/auth-twitter) uses cookies bound to the project's domain. Make sure your frontend code uses the custom domain instead of the default project's domain.
+    *   [Sign in with Twitter](../../auth/social-login/auth-twitter/index.md) uses cookies bound to the project's domain. Make sure your frontend code uses the custom domain instead of the default project's domain.
 2.  For each of your SAML identity providers:
     *   Contact your provider and ask them to update the metadata for the SAML application. They should use `https://api.example.com/auth/v1/...` instead of `https://abcdefghijklmnopqrst.supabase.co/auth/v1/sso/saml/{metadata,acs,slo}`.
     *   Once these changes are made, SAML Single Sign-On will likely stop working until the domain is activated. Plan for this ahead of time.
@@ -162,7 +162,7 @@ To get started:
 
 1.  [Install](/docs/guides/resources/supabase-cli) the latest version of the Supabase CLI.
 2.  [Log in](/docs/guides/cli/local-development#log-in-to-the-supabase-cli) to your Supabase account using the CLI.
-3.  Ensure that you have [Owner or Admin permissions](/docs/guides/platform/access-control#manage-team-members) for the project you'd like to set up a vanity subdomain for.
+3.  Ensure that you have [Owner or Admin permissions](../access-control/index.md#manage-team-members) for the project you'd like to set up a vanity subdomain for.
 4.  Ensure that your organization is on a paid plan (Pro/Team/Enterprise Plan) in the [Billing page of the Dashboard](/dashboard/org/_/billing).
 
 ### Configure a vanity subdomain[#](#configure-a-vanity-subdomain)
@@ -196,7 +196,7 @@ To prevent issues for your users, make sure you have gone through these steps:
     *   In the provider's developer console (not in the Supabase dashboard!), find the OAuth application and add the subdomain Supabase Auth callback URL **in addition to the Supabase project URL.** Example:
         *   `https://abcdefghijklmnopqrst.supabase.co/auth/v1/callback` **and**
         *   `https://my-example-brand.supabase.co/auth/v1/callback`
-    *   [Sign in with Twitter](/docs/guides/auth/social-login/auth-twitter) uses cookies bound to the project's domain. In this case make sure your frontend code uses the subdomain instead of the default project's domain.
+    *   [Sign in with Twitter](../../auth/social-login/auth-twitter/index.md) uses cookies bound to the project's domain. In this case make sure your frontend code uses the subdomain instead of the default project's domain.
 2.  Go through all of your SAML identity providers:
     *   You will need to reach out via email to all of your existing identity providers and ask them to update the metadata for the SAML application (your project). Use `https://example-brand.supabase.co/auth/v1/...` instead of `https://abcdefghijklmnopqrst.supabase.co/auth/v1/sso/saml/{metadata,acs,slo}`.
     *   Once these changes are made, SAML Single Sign-On will likely stop working until the domain is activated. Plan for this ahead of time.
@@ -217,7 +217,7 @@ If you wish to use the new domain in client code, you can set it up like so:
 1import { createClient } from '@supabase/supabase-js'23// Use a custom domain as the supabase URL4const supabase = createClient('https://my-example-brand.supabase.co', 'sb_publishable_...')
 ```
 
-When using [Sign in with Twitter](/docs/guides/auth/social-login/auth-twitter) make sure your frontend code is using the subdomain only.
+When using [Sign in with Twitter](../../auth/social-login/auth-twitter/index.md) make sure your frontend code is using the subdomain only.
 
 ### Remove a vanity subdomain[#](#remove-a-vanity-subdomain)
 
@@ -231,4 +231,4 @@ Use the [`vanity-subdomains delete`](/docs/reference/cli/supabase-vanity-subdoma
 
 ## Pricing[#](#pricing)
 
-For a detailed breakdown of how charges are calculated, refer to [Manage Custom Domain usage](/docs/guides/platform/manage-your-usage/custom-domains).
+For a detailed breakdown of how charges are calculated, refer to [Manage Custom Domain usage](../manage-your-usage/custom-domains/index.md).

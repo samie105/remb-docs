@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:38:18.655Z"
 content_hash: "a43effc392a91a3b8b04b59a25ea25add1da89a408e0371d3002a63987317c8b"
 menu_path: ["Fluent-Schema"]
 section_path: []
-nav_prev: {"path": "../Ecosystem/index.md", "title": "Ecosystem"}
-nav_next: {"path": "../Getting-Started/index.md", "title": "Getting-Started"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Ecosystem/index.md", "title": "Ecosystem"}
+nav_next: {"path": "fastify/docs/latest/Guides/Getting-Started/index.md", "title": "Getting-Started"}
 ---
 
 Version: latest (v5.8.x)
 
 ## Fluent Schema[​](#fluent-schema "Direct link to Fluent Schema")
 
-The [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/) documentation outlines all parameters accepted by Fastify to set up JSON Schema Validation to validate the input, and JSON Schema Serialization to optimize the output.
+The [Validation and Serialization](../../Reference/Validation-and-Serialization/index.md) documentation outlines all parameters accepted by Fastify to set up JSON Schema Validation to validate the input, and JSON Schema Serialization to optimize the output.
 
 [`fluent-json-schema`](https://github.com/fastify/fluent-json-schema) can be used to simplify this task while allowing the reuse of constants.
 
@@ -29,7 +29,7 @@ const S = require('fluent-json-schema')// You can have an object like this, or q
 
 ### Reuse[​](#reuse "Direct link to Reuse")
 
-With `fluent-json-schema`, you can manipulate your schemas more easily and programmatically and then reuse them thanks to the `addSchema()` method. You can refer to the schema in two different manners that are detailed in the [Validation and Serialization](/docs/latest/Reference/Validation-and-Serialization/#adding-a-shared-schema) documentation.
+With `fluent-json-schema`, you can manipulate your schemas more easily and programmatically and then reuse them thanks to the `addSchema()` method. You can refer to the schema in two different manners that are detailed in the [Validation and Serialization](../../Reference/Validation-and-Serialization/index.md#adding-a-shared-schema) documentation.
 
 Here are some usage examples:
 

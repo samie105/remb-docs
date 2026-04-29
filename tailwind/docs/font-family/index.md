@@ -10,8 +10,8 @@ content_hash: "537fe44e7d636ffe7ee8b59d5666d0da97871fd6a84d2fed45242fcb9c2daaad"
 menu_path: ["font-family"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../max-block-size/index.md", "title": "max-block-size"}
-nav_next: {"path": "../font-size/index.md", "title": "font-size"}
+nav_prev: {"path": "tailwind/docs/max-block-size/index.md", "title": "max-block-size"}
+nav_next: {"path": "tailwind/docs/font-size/index.md", "title": "font-size"}
 ---
 
 Typography

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:07.640Z"
 content_hash: "d055a259cd5db692e0e1c7a4ab45901ed6fd11e1e179b3fbc94a73a44bc1fbe8"
 menu_path: ["Read stderr from a child process"]
 section_path: []
-nav_prev: {"path": "../spawn/index.md", "title": "Spawn a child process"}
-nav_next: {"path": "../spawn-stdout/index.md", "title": "Read stdout from a child process"}
+nav_prev: {"path": "bun/docs/guides/process/spawn/index.md", "title": "Spawn a child process"}
+nav_next: {"path": "bun/docs/guides/process/spawn-stdout/index.md", "title": "Read stdout from a child process"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../spawn-stdout/index.md", "title": "Read stdout from a chil
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-When using [`Bun.spawn()`](/docs/runtime/child-process), the child process inherits the `stderr` of the spawning process. If instead you’d prefer to read and handle `stderr`, set the `stderr` option to `"pipe"`.
+When using [`Bun.spawn()`](../../../runtime/child-process/index.md), the child process inherits the `stderr` of the spawning process. If instead you’d prefer to read and handle `stderr`, set the `stderr` option to `"pipe"`.
 
 ```
 const proc = Bun.spawn(["echo", "hello"], {
@@ -62,7 +62,7 @@ if (errors) {
 
 * * *
 
-See [Docs > API > Child processes](/docs/runtime/child-process) for complete documentation.
+See [Docs > API > Child processes](../../../runtime/child-process/index.md) for complete documentation.
 
 Was this page helpful?
 
@@ -74,10 +74,10 @@ Read stdout from a child process
 
 Previous
 
-](/docs/guides/process/spawn-stdout)[
+](../spawn-stdout/index.md)[
 
 Parse command-line arguments
 
 Next
 
-](/docs/guides/process/argv)
+](../argv/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:53.471Z"
 content_hash: "876b6723937b2287c92decf47ed9796e88f63d1493b6b0e9d4300a366a1ddc71"
 menu_path: ["tRPC Client"]
 section_path: []
-nav_prev: {"path": "../tanstack-react-query/usage/index.md", "title": "TanStack React Query"}
-nav_next: {"path": "aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_prev: {"path": "trpc/docs/client/tanstack-react-query/usage/index.md", "title": "TanStack React Query"}
+nav_next: {"path": "trpc/docs/client/vanilla/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
 
 Version: 11.x

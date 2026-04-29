@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:47.688Z"
 content_hash: "8d3f747c46d20dfcd278dc89f7753a4a1fd1cc998a4ba3ed222717ba8365c5a3"
 menu_path: ["Shared Options ​"]
 section_path: []
-nav_prev: {"path": "../server-options/index.md", "title": "Server Options \u200b"}
-nav_next: {"path": "../ssr-options/index.md", "title": "SSR Options \u200b"}
+nav_prev: {"path": "vite/config/server-options/index.md", "title": "Server Options \u200b"}
+nav_next: {"path": "vite/config/ssr-options/index.md", "title": "SSR Options \u200b"}
 ---
 
 Unless noted, the options in this section are applied to all dev, build, and preview.

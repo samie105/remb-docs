@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:09.530Z"
 content_hash: "6abfdd40e8654edfcca7879fda9000c7441737a5084efcb1267d33901c30de83"
 menu_path: ["Getting Started"]
 section_path: []
-nav_prev: {"path": "../further-reading/index.md", "title": "Further Reading"}
-nav_next: {"path": "../landing-intro/Step1/index.md", "title": "Step1"}
+nav_prev: {"path": "trpc/docs/v10/further-reading/index.md", "title": "Further Reading"}
+nav_next: {"path": "trpc/docs/v10/landing-intro/Step1/index.md", "title": "Step1"}
 ---
 
 ## A quick look at tRPC[​](#a-quick-look-at-trpc "Direct link to A quick look at tRPC")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:10.279Z"
 content_hash: "885603a7c7338b5b482b18ae0fe19faed654c933c993061e4ce0de9538ce4756"
 menu_path: ["Quickstart"]
 section_path: []
-nav_prev: {"path": "../output-validation/index.md", "title": "Output Validation"}
-nav_next: {"path": "../react/index.md", "title": "Usage with React"}
+nav_prev: {"path": "trpc/docs/v9/output-validation/index.md", "title": "Output Validation"}
+nav_next: {"path": "trpc/docs/v9/react/index.md", "title": "Usage with React"}
 ---
 
 tip

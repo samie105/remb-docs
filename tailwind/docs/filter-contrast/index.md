@@ -10,8 +10,8 @@ content_hash: "a189f0207f3a54557fcbc8ba551d660ac217ab452ff58fe8ffdd90796bece052"
 menu_path: ["filter: contrast()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../filter-brightness/index.md", "title": "filter: brightness()"}
-nav_next: {"path": "../filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
+nav_prev: {"path": "tailwind/docs/filter-brightness/index.md", "title": "filter: brightness()"}
+nav_next: {"path": "tailwind/docs/filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
 ---
 
 # filter: contrast()
@@ -77,7 +77,7 @@ Prefix a `filter: contrast()` utility with a breakpoint variant like `md:` to on
 <img class="contrast-125 md:contrast-150 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

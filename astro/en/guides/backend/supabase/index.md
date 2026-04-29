@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:48.706Z"
 content_hash: "bbb148d67766c1876f604d63c76aefe7cf7b7b2f59f76148ec66d47269ef0eff"
 menu_path: ["Supabase & Astro"]
 section_path: []
-nav_prev: {"path": "../sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
-nav_next: {"path": "../turso/index.md", "title": "Turso & Astro"}
+nav_prev: {"path": "astro/en/guides/backend/sentry/index.md", "title": "Monitor your Astro Site with Sentry"}
+nav_next: {"path": "astro/en/guides/backend/turso/index.md", "title": "Turso & Astro"}
 ---
 
 # Supabase & Astro
@@ -26,7 +26,7 @@ nav_next: {"path": "../turso/index.md", "title": "Turso & Astro"}
 [Section titled “Prerequisites”](#prerequisites)
 
 *   A Supabase project. If you don’t have one, you can sign up for free at [supabase.com](https://supabase.com/) and create a new project.
-*   An Astro project with [`output: 'server'` for on-demand rendering](/en/guides/on-demand-rendering/) enabled.
+*   An Astro project with [`output: 'server'` for on-demand rendering](../../on-demand-rendering/index.md) enabled.
 *   Supabase credentials for your project. You can find these in the **Settings > API** tab of your Supabase project.
     *   `SUPABASE_URL`: The URL of your Supabase project.
     *   `SUPABASE_ANON_KEY`: The anonymous key for your Supabase project.
@@ -335,39 +335,39 @@ After creating the OAuth callback endpoint and editing the sign in page and serv
 
 *   ![](/logos/appwriteio.svg)
     
-    ### [Appwrite](/en/guides/backend/appwrite/)
+    ### [Appwrite](../appwrite/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/backend/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/neon.svg)
     
-    ### [Neon](/en/guides/backend/neon/)
+    ### [Neon](../neon/index.md)
     
 *   ![](/logos/prisma-postgres.svg)
     
-    ### [Prisma Postgres](/en/guides/backend/prisma-postgres/)
+    ### [Prisma Postgres](../prisma-postgres/index.md)
     
 *   ![](/logos/scalekit.svg)
     
-    ### [Scalekit](/en/guides/backend/scalekit/)
+    ### [Scalekit](../scalekit/index.md)
     
 *   ![](/logos/sentry.svg)
     
-    ### [Sentry](/en/guides/backend/sentry/)
+    ### [Sentry](../sentry/index.md)
     
 *   ![](/logos/supabase.svg)
     
-    ### [Supabase](/en/guides/backend/supabase/)
+    ### [Supabase](index.md)
     
 *   ![](/logos/turso.svg)
     
-    ### [Turso](/en/guides/backend/turso/)
+    ### [Turso](../turso/index.md)
     
 *   ![](/logos/xata.svg)
     
-    ### [Xata](/en/guides/backend/xata/)
+    ### [Xata](../xata/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

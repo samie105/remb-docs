@@ -11,8 +11,8 @@ menu_path: ["unstable_rethrow"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../unstable_noStore/index.md", "title": "unstable_noStore"}
-nav_next: {"path": "../updateTag/index.md", "title": "updateTag"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unstable_noStore/index.md", "title": "unstable_noStore"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/updateTag/index.md", "title": "updateTag"}
 ---
 
 # unstable\_rethrow
@@ -23,7 +23,7 @@ Last updated April 23, 2026
 
 `unstable_rethrow` can be used to avoid catching internal errors thrown by Next.js when attempting to handle errors thrown in your application code.
 
-For example, calling the `notFound` function will throw an internal Next.js error and render the [`not-found.js`](/docs/app/api-reference/file-conventions/not-found) component. However, if used inside the `try` block of a `try/catch` statement, the error will be caught, preventing `not-found.js` from rendering:
+For example, calling the `notFound` function will throw an internal Next.js error and render the [`not-found.js`](../../file-conventions/not-found/index.md) component. However, if used inside the `try` block of a `try/catch` statement, the error will be caught, preventing `not-found.js` from rendering:
 
 @/app/ui/component.tsx
 
@@ -66,15 +66,15 @@ export default async function Page() {
 
 The following Next.js APIs rely on throwing an error which should be rethrown and handled by Next.js itself:
 
--   [`notFound()`](/docs/app/api-reference/functions/not-found)
--   [`redirect()`](/docs/app/guides/redirecting#redirect-function)
--   [`permanentRedirect()`](/docs/app/guides/redirecting#permanentredirect-function)
+-   [`notFound()`](../not-found/index.md)
+-   [`redirect()`](../../../guides/redirecting/index.md#redirect-function)
+-   [`permanentRedirect()`](../../../guides/redirecting/index.md#permanentredirect-function)
 
 If a route segment is marked to throw an error unless it's static, a Request-time API call will also throw an error that should similarly not be caught by the developer. Note that Partial Prerendering (PPR) affects this behavior as well. These APIs are:
 
--   [`cookies`](/docs/app/api-reference/functions/cookies)
--   [`headers`](/docs/app/api-reference/functions/headers)
--   [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional)
+-   [`cookies`](../cookies/index.md)
+-   [`headers`](../headers/index.md)
+-   [`searchParams`](../../file-conventions/page/index.md#searchparams-optional)
 -   `fetch(..., { cache: 'no-store' })`
 -   `fetch(..., { next: { revalidate: 0 } })`
 

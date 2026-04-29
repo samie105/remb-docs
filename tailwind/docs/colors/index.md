@@ -10,8 +10,8 @@ content_hash: "0af7e648c5024c8cdc941f66fd851bcb42a6e3d5cf8bfd104d298249ddcac345"
 menu_path: ["Colors"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../theme/index.md", "title": "Theme variables"}
-nav_next: {"path": "../adding-custom-styles/index.md", "title": "Adding custom styles"}
+nav_prev: {"path": "tailwind/docs/theme/index.md", "title": "Theme variables"}
+nav_next: {"path": "tailwind/docs/adding-custom-styles/index.md", "title": "Adding custom styles"}
 ---
 
 Using and customizing the color palette in Tailwind CSS projects.

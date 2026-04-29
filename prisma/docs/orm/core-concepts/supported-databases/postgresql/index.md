@@ -11,8 +11,8 @@ menu_path: ["PostgreSQL"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../mysql/index.md", "title": "MySQL"}
-nav_next: {"path": "../sql-server/index.md", "title": "SQL Server"}
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mysql/index.md", "title": "MySQL"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/sql-server/index.md", "title": "SQL Server"}
 ---
 
 Supported databases

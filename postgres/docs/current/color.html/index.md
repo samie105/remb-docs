@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:14.777Z"
 content_hash: "01f024ba0a0492b1a5704eb045b066f9cbd0a3a65d4cf7ea1a72b2649b6fa4f3"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix N. Color Support"]
 section_path: []
-nav_prev: {"path": "../glossary.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0M.\u00a0Glossary"}
-nav_next: {"path": "../biblio.html/index.md", "title": "Bibliography"}
+nav_prev: {"path": "postgres/docs/current/glossary.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0M.\u00a0Glossary"}
+nav_next: {"path": "postgres/docs/current/biblio.html/index.md", "title": "Bibliography"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

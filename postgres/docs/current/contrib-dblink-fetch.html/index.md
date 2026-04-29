@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:43.598Z"
 content_hash: "53fbfe63b28b880fbc137acb3e47bfedadef45693e620a0b89a408ac399b1f53"
 menu_path: ["PostgreSQL: Documentation: 18: dblink_fetch"]
 section_path: []
-nav_prev: {"path": "../contrib-dblink-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_disconnect"}
-nav_next: {"path": "../contrib-dblink-function.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink"}
+nav_prev: {"path": "postgres/docs/current/contrib-dblink-disconnect.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_disconnect"}
+nav_next: {"path": "postgres/docs/current/contrib-dblink-function.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink"}
 ---
 
 dblink\_fetch — returns rows from an open cursor in a remote database

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:04.432Z"
 content_hash: "34ba106435fd775213e2c87dbae307b4e84d36249077a0f4093aad5c763d7d2b"
 menu_path: ["Database","Database","More","More","More","Replication","Replication","Setting up","Setting up"]
 section_path: ["Database","Database","More","More","More","Replication","Replication","Setting up","Setting up"]
-nav_prev: {"path": "../replication-monitoring/index.md", "title": "Replication Monitoring"}
-nav_next: {"path": "../../secure-data/index.md", "title": "Securing your data"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/replication-monitoring/index.md", "title": "Replication Monitoring"}
+nav_next: {"path": "supabase/docs/guides/database/secure-data/index.md", "title": "Securing your data"}
 ---
 
 # 
@@ -213,7 +213,7 @@ After creating a destination, the replication pipeline will start and appear in 
 
 ![Replication Destinations List](/docs/img/database/replication/replication-destinations-list.png)
 
-For comprehensive monitoring instructions including pipeline states, metrics, and logs, see the [Replication Monitoring guide](/docs/guides/database/replication/replication-monitoring).
+For comprehensive monitoring instructions including pipeline states, metrics, and logs, see the [Replication Monitoring guide](../replication-monitoring/index.md).
 
 ### Managing your pipeline[#](#managing-your-pipeline)
 
@@ -257,7 +257,7 @@ If your Postgres publication uses `FOR ALL TABLES` or `FOR TABLES IN SCHEMA`, ne
 2.  **Restart the replication pipeline** using the actions menu (see [Managing your pipeline](#managing-your-pipeline)) for the changes to take effect.
     
 
-Deleted tables are automatically recreated by the pipeline. To permanently delete a table, pause the pipeline first or remove it from the publication before deleting. See the [FAQ](/docs/guides/database/replication/replication-faq#what-happens-if-a-table-is-deleted-at-the-destination) for details.
+Deleted tables are automatically recreated by the pipeline. To permanently delete a table, pause the pipeline first or remove it from the publication before deleting. See the [FAQ](../replication-faq/index.md#what-happens-if-a-table-is-deleted-at-the-destination) for details.
 
 ### How it works[#](#how-it-works)
 
@@ -278,7 +278,7 @@ If you encounter issues during setup:
 *   **Pipeline failed to start**: Check the error message in the status view for specific details
 *   **No data being replicated**: Verify your Postgres publication includes the correct tables and event types
 
-For more troubleshooting help, see the [Replication FAQ](/docs/guides/database/replication/replication-faq).
+For more troubleshooting help, see the [Replication FAQ](../replication-faq/index.md).
 
 ### Limitations[#](#limitations)
 
@@ -288,7 +288,7 @@ Replication has the following limitations:
 *   **Custom data types**: Not supported
 *   **Schema changes**: Not automatically handled
 *   **No data transformation**: Data is replicated as-is without transformation
-*   **Data duplicates**: Duplicates can occur when stopping a pipeline if your database has transactions that take longer than a few minutes to complete. See [Can data duplicates occur?](/docs/guides/database/replication/replication-faq#can-data-duplicates-occur-during-pipeline-operations) for details
+*   **Data duplicates**: Duplicates can occur when stopping a pipeline if your database has transactions that take longer than a few minutes to complete. See [Can data duplicates occur?](../replication-faq/index.md#can-data-duplicates-occur-during-pipeline-operations) for details
 
 Destination-specific limitations, such as BigQuery's row size limits, are documented in [Step 3](#step-3-add-a-destination) above.
 
@@ -303,5 +303,5 @@ There are no public timelines for these features, but they represent the roadmap
 
 ### Next steps[#](#next-steps)
 
-*   [Monitor Replication](/docs/guides/database/replication/replication-monitoring)
-*   [View Replication FAQ](/docs/guides/database/replication/replication-faq)
+*   [Monitor Replication](../replication-monitoring/index.md)
+*   [View Replication FAQ](../replication-faq/index.md)

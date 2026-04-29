@@ -10,8 +10,8 @@ content_hash: "210706cfa6481d8c655bb0a702f69e5e5c5e95129c0b437c31ab6cb3b04c6d5d"
 menu_path: ["border-radius"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../background-size/index.md", "title": "background-size"}
-nav_next: {"path": "../border-width/index.md", "title": "border-width"}
+nav_prev: {"path": "tailwind/docs/background-size/index.md", "title": "background-size"}
+nav_next: {"path": "tailwind/docs/border-width/index.md", "title": "border-width"}
 ---
 
 # border-radius
@@ -133,7 +133,7 @@ Here are all the available border radius logical property utilities and their ph
 | `rounded-es-*` | `rounded-bl-*` | `rounded-br-*` |
 | `rounded-ee-*` | `rounded-br-*` | `rounded-bl-*` |
 
-For more control, you can also use the [LTR and RTL modifiers](/docs/hover-focus-and-other-states#rtl-support) to conditionally apply specific styles depending on the current text direction.
+For more control, you can also use the [LTR and RTL modifiers](../hover-focus-and-other-states/index.md#rtl-support) to conditionally apply specific styles depending on the current text direction.
 
 Use the `rounded-full` utility to create pill buttons:
 
@@ -171,7 +171,7 @@ Prefix a `border-radius` utility with a breakpoint variant like `md:` to only ap
 <div class="rounded md:rounded-lg ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--radius-*` theme variables to customize the border radius utilities in your project:
 
@@ -185,7 +185,7 @@ Now the `rounded-5xl` utility can be used in your markup:
 <div class="rounded-5xl">  <!-- ... --></div>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

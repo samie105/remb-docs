@@ -10,8 +10,8 @@ content_hash: "e93cfe3619373e4ffa8b321617f1be0880474fd9ef28e7ee0924c101ad6e12c7"
 menu_path: ["PostgreSQL: Documentation: 18: 23.2. Collation Support"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../catalog-pg-tablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.56.\u00a0pg_tablespace"}
-nav_next: {"path": "../color-when.html/index.md", "title": "PostgreSQL: Documentation: 18: N.1.\u00a0When Color is Used"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-tablespace.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.56.\u00a0pg_tablespace"}
+nav_next: {"path": "postgres/docs/current/color-when.html/index.md", "title": "PostgreSQL: Documentation: 18: N.1.\u00a0When Color is Used"}
 ---
 
 The collation feature allows specifying the sort order and character classification behavior of data per-column, or even per-operation. This alleviates the restriction that the `LC_COLLATE` and `LC_CTYPE` settings of a database cannot be changed after its creation.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:32.593Z"
 content_hash: "46fd9f39bae81003511a6460caec0ad75bd284526b0e86e71599f9a27a3cec69"
 menu_path: ["Update snapshots in `bun test`"]
 section_path: []
-nav_prev: {"path": "../todo-tests/index.md", "title": "Mark a test as a \"todo\" with the Bun test runner"}
-nav_next: {"path": "../watch-mode/index.md", "title": "Run tests in watch mode with Bun"}
+nav_prev: {"path": "bun/docs/guides/test/todo-tests/index.md", "title": "Mark a test as a \"todo\" with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/watch-mode/index.md", "title": "Run tests in watch mode with Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../watch-mode/index.md", "title": "Run tests in watch mode w
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun’s test runner supports Jest-style snapshot testing via `.toMatchSnapshot()`.
 
@@ -83,7 +83,7 @@ Ran 1 tests across 1 files. [102.00ms]
 
 * * *
 
-See [Docs > Test Runner > Snapshots](/docs/test/snapshots) for complete documentation on snapshots with the Bun test runner.
+See [Docs > Test Runner > Snapshots](../../../test/snapshots/index.md) for complete documentation on snapshots with the Bun test runner.
 
 Was this page helpful?
 
@@ -95,10 +95,10 @@ Use snapshot testing in \`bun test\`
 
 Previous
 
-](/docs/guides/test/snapshot)[
+](../snapshot/index.md)[
 
 Generate code coverage reports with the Bun test runner
 
 Next
 
-](/docs/guides/test/coverage)
+](../coverage/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:36.022Z"
 content_hash: "123717c1f6c1d349c605d930111efb2a5dd687fea562d3ff6f1f425250bbd61c"
 menu_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Managing tables, views, and data","Managing tables, views, and data"]
 section_path: ["Database","Database","Working with your database (basics)","Working with your database (basics)","Managing tables, views, and data","Managing tables, views, and data"]
-nav_prev: {"path": "../supavisor/index.md", "title": "Supavisor"}
-nav_next: {"path": "../testing/index.md", "title": "Testing Your Database"}
+nav_prev: {"path": "supabase/docs/guides/database/supavisor/index.md", "title": "Supavisor"}
+nav_next: {"path": "supabase/docs/guides/database/testing/index.md", "title": "Testing Your Database"}
 ---
 
 # 

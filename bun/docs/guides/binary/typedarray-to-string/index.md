@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:52.187Z"
 content_hash: "a9e952e3746ec62912377c0bc3ff995e841b555d8a338261ad98dc1ca9edf943"
 menu_path: ["Convert a Uint8Array to a string"]
 section_path: []
-nav_prev: {"path": "../typedarray-to-readablestream/index.md", "title": "Convert a Uint8Array to a ReadableStream"}
-nav_next: {"path": "../../deployment/aws-lambda/index.md", "title": "Deploy a Bun application on AWS Lambda"}
+nav_prev: {"path": "bun/docs/guides/binary/typedarray-to-readablestream/index.md", "title": "Convert a Uint8Array to a ReadableStream"}
+nav_next: {"path": "bun/docs/guides/deployment/aws-lambda/index.md", "title": "Deploy a Bun application on AWS Lambda"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../deployment/aws-lambda/index.md", "title": "Deploy a Bu
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun implements the Web-standard [`TextDecoder`](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder) class for converting from binary data types like `Uint8Array` and strings.
 
@@ -46,7 +46,7 @@ const str = decoder.decode(arr);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -58,10 +58,10 @@ Convert a Blob to a ReadableStream
 
 Previous
 
-](/docs/guides/binary/blob-to-stream)[
+](../blob-to-stream/index.md)[
 
 Convert a Uint8Array to an ArrayBuffer
 
 Next
 
-](/docs/guides/binary/typedarray-to-arraybuffer)
+](../typedarray-to-arraybuffer/index.md)

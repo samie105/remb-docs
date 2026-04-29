@@ -10,8 +10,8 @@ content_hash: "bcf1f567c202016009df13de71fe067abb9c546440a2babd5d02141288231731"
 menu_path: ["PostgreSQL: Documentation: 18: 53.33. pg_timezone_abbrevs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../view-pg-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.22.\u00a0pg_rules"}
-nav_next: {"path": "../view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
+nav_prev: {"path": "postgres/docs/current/view-pg-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.22.\u00a0pg_rules"}
+nav_next: {"path": "postgres/docs/current/view-pg-timezone-names.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.34.\u00a0pg_timezone_names"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-timezone-abbrevs.html "PostgreSQL devel - 53.33. pg_timezone_abbrevs")

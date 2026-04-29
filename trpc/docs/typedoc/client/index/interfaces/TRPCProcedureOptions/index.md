@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:59.498Z"
 content_hash: "34dc13e435387b1659207c2533dba2ab0546ed9daf13b0a9bdbb812376ce016b"
 menu_path: ["Interface: TRPCProcedureOptions"]
 section_path: []
-nav_prev: {"path": "../TRPCClientRuntime/index.md", "title": "Interface: TRPCClientRuntime"}
-nav_next: {"path": "../TRPCRequestOptions/index.md", "title": "Interface: TRPCRequestOptions"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/interfaces/TRPCClientRuntime/index.md", "title": "Interface: TRPCClientRuntime"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/interfaces/TRPCRequestOptions/index.md", "title": "Interface: TRPCRequestOptions"}
 ---
 
 Interface: TRPCProcedureOptions | tRPC

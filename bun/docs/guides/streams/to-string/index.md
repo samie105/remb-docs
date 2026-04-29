@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:11.858Z"
 content_hash: "935ed258ec77befbe036a580915bf6b8be3574e49905a2a8ca35bda36f4c3603"
 menu_path: ["Convert a ReadableStream to a string"]
 section_path: []
-nav_prev: {"path": "../to-json/index.md", "title": "Convert a ReadableStream to JSON"}
-nav_next: {"path": "../to-typedarray/index.md", "title": "Convert a ReadableStream to a Uint8Array"}
+nav_prev: {"path": "bun/docs/guides/streams/to-json/index.md", "title": "Convert a ReadableStream to JSON"}
+nav_next: {"path": "bun/docs/guides/streams/to-typedarray/index.md", "title": "Convert a ReadableStream to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../to-typedarray/index.md", "title": "Convert a ReadableStre
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun provides several convenience functions for reading the contents of a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) into different formats.
 
@@ -44,7 +44,7 @@ const str = await Bun.readableStreamToText(stream);
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
+See [Docs > API > Utils](../../../runtime/utils/index.md#bun-readablestreamto) for documentation on Bun’s other `ReadableStream` conversion functions.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a DataView to a string
 
 Previous
 
-](/docs/guides/binary/dataview-to-string)[
+](../../binary/dataview-to-string/index.md)[
 
 Convert a ReadableStream to JSON
 
 Next
 
-](/docs/guides/streams/to-json)
+](../to-json/index.md)

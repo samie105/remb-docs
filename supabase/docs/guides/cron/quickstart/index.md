@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:42.215Z"
 content_hash: "b1ef437bdfe5b3bc935bce74f8faeea496fdaac662a8a615b017fbf537474257"
 menu_path: ["Cron","Cron","Getting Started","Getting Started","Quickstart","Quickstart"]
 section_path: ["Cron","Cron","Getting Started","Getting Started","Quickstart","Quickstart"]
-nav_prev: {"path": "../install/index.md", "title": "Install"}
-nav_next: {"path": "../../database/arrays/index.md", "title": "Working With Arrays"}
+nav_prev: {"path": "supabase/docs/guides/cron/install/index.md", "title": "Install"}
+nav_next: {"path": "supabase/docs/guides/database/arrays/index.md", "title": "Working With Arrays"}
 ---
 
 # 
@@ -97,7 +97,7 @@ Make a POST request to a Supabase Edge Function every 30 seconds:
 1select2  cron.schedule(3    'invoke-function-every-half-minute',4    '30 seconds',5    $$6    select7      net.http_post(8          url:='https://project-ref.supabase.co/functions/v1/function-name',9          headers:=jsonb_build_object('Content-Type','application/json', 'Authorization', 'Bearer ' || 'YOUR_ANON_KEY'),10          body:=jsonb_build_object('time', now() ),11          timeout_milliseconds:=500012      ) as request_id;13    $$14  );
 ```
 
-This requires the [`pg_net` extension](/docs/guides/database/extensions/pg_net) to be enabled.
+This requires the [`pg_net` extension](../../database/extensions/pg_net/index.md) to be enabled.
 
 ## Caution: Scheduling system maintenance[#](#caution-scheduling-system-maintenance)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:02.032Z"
 content_hash: "5ad605c60681b9468725ce3e86334ae14af57bd56d7d8acf1a41243503f92700"
 menu_path: ["Auth","Auth","Configuration","Configuration","Redirect URLs","Redirect URLs"]
 section_path: ["Auth","Auth","Configuration","Configuration","Redirect URLs","Redirect URLs"]
-nav_prev: {"path": "../rate-limits/index.md", "title": "Rate limits"}
-nav_next: {"path": "../server-side/index.md", "title": "Server-Side Rendering"}
+nav_prev: {"path": "supabase/docs/guides/auth/rate-limits/index.md", "title": "Rate limits"}
+nav_next: {"path": "supabase/docs/guides/auth/server-side/index.md", "title": "Server-Side Rendering"}
 ---
 
 # 
@@ -25,11 +25,11 @@ Set up redirect urls with Supabase Auth.
 
 ## Overview[#](#overview)
 
-Supabase Auth allows you to control how the [user sessions](/docs/guides/auth/sessions) are handled by your application.
+Supabase Auth allows you to control how the [user sessions](../sessions/index.md) are handled by your application.
 
 **Looking for OAuth client redirect URIs?**
 
-This guide covers redirect URLs for users signing **into** your application (using social providers like Google, GitHub, etc.). If you're setting up your Supabase project as an **OAuth 2.1 provider** for third-party applications, see the [OAuth Server Redirect URI configuration](/docs/guides/auth/oauth-server/getting-started#redirect-uri-configuration) instead.
+This guide covers redirect URLs for users signing **into** your application (using social providers like Google, GitHub, etc.). If you're setting up your Supabase project as an **OAuth 2.1 provider** for third-party applications, see the [OAuth Server Redirect URI configuration](../oauth-server/getting-started/index.md#redirect-uri-configuration) instead.
 
 When using [passwordless sign-ins](/docs/reference/javascript/auth-signinwithotp) or [third-party providers](/docs/reference/javascript/auth-signinwithoauth#sign-in-using-a-third-party-provider-with-redirect), the Supabase client library provides a `redirectTo` parameter to specify where to redirect the user after authentication. The URL in `redirectTo` should match the [Redirect URLs](/dashboard/project/_/auth/url-configuration) list configuration.
 
@@ -37,7 +37,7 @@ To configure allowed redirect URLs, go to the [URL Configuration](/dashboard/pro
 
 The Site URL in [URL Configuration](/dashboard/project/_/auth/url-configuration) defines the **default redirect URL** when no `redirectTo` is specified in the code. Change this from `http://localhost:3000` to your production URL (e.g., [https://example.com](https://example.com)). This setting is critical for email confirmations and password resets.
 
-When using [Sign in with Web3](/docs/guides/auth/auth-web3), the message signed by the user in the Web3 wallet application will indicate the URL on which the signature took place. Supabase Auth will reject messages that are signed for URLs that are not on the allowed list.
+When using [Sign in with Web3](../auth-web3/index.md), the message signed by the user in the Web3 wallet application will indicate the URL on which the signature took place. Supabase Auth will reject messages that are signed for URLs that are not on the allowed list.
 
 In local development or self-hosted projects, use the [configuration file](/docs/guides/local-development/cli/config#auth.additional_redirect_urls). See below for more information on configuring `SITE_URL` when deploying to Vercel or Netlify.
 
@@ -123,7 +123,7 @@ Vercel provides an environment variable for the URL of the deployment called `NE
 
 ## Email templates when using `redirectTo`[#](#email-templates-when-using-redirectto)
 
-When using a `redirectTo` option, you may need to replace the `{{ .SiteURL }}` with `{{ .RedirectTo }}` in your email templates. See the [Email Templates guide](/docs/guides/auth/auth-email-templates) for more information.
+When using a `redirectTo` option, you may need to replace the `{{ .SiteURL }}` with `{{ .RedirectTo }}` in your email templates. See the [Email Templates guide](../auth-email-templates/index.md) for more information.
 
 For example, change the following:
 
@@ -135,7 +135,7 @@ For example, change the following:
 
 For mobile applications you can use deep linking URIs. For example, for your `SITE_URL` you can specify something like `com.supabase://login-callback/` and for additional redirect URLs something like `com.supabase.staging://login-callback/` if needed.
 
-Read more about deep linking and find code examples for different frameworks [here](/docs/guides/auth/native-mobile-deep-linking).
+Read more about deep linking and find code examples for different frameworks [here](../native-mobile-deep-linking/index.md).
 
 ## Error handling[#](#error-handling)
 

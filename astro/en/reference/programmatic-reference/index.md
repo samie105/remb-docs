@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:52.507Z"
 content_hash: "533c80df532b3f70e6bda694e491de60bdbcee2bf30616e703774f2c35831b37"
 menu_path: ["Programmatic Astro API (experimental)"]
 section_path: []
-nav_prev: {"path": "../container-reference/index.md", "title": "Astro Container API (experimental)"}
-nav_next: {"path": "../experimental-flags/index.md", "title": "Configuring experimental flags"}
+nav_prev: {"path": "astro/en/reference/container-reference/index.md", "title": "Astro Container API (experimental)"}
+nav_next: {"path": "astro/en/reference/experimental-flags/index.md", "title": "Configuring experimental flags"}
 ---
 
 # Programmatic Astro API (experimental)
@@ -23,7 +23,7 @@ These APIs are experimental and their API signature may change. Any updates will
 
 [Section titled “Commands”](#commands)
 
-The following [CLI commands](/en/reference/cli-reference/) can be run programmatically.
+The following [CLI commands](../cli-reference/index.md) can be run programmatically.
 
 ### `dev()`
 
@@ -31,7 +31,7 @@ The following [CLI commands](/en/reference/cli-reference/) can be run programmat
 
 **Type:** `(inlineConfig: [AstroInlineConfig](#astroinlineconfig)) => Promise<[DevServer](#devserver)>`
 
-Similar to [`astro dev`](/en/reference/cli-reference/#astro-dev), it runs Astro’s development server.
+Similar to [`astro dev`](../cli-reference/index.md#astro-dev), it runs Astro’s development server.
 
 ```
 import { dev } from "astro";
@@ -89,7 +89,7 @@ Returns a `Promise` that resolves once all pending requests have been fulfilled 
 
 **Type:** `(inlineConfig: [AstroInlineConfig](#astroinlineconfig), options?: [BuildOptions](#buildoptions)) => Promise<void>`
 
-Similar to [`astro build`](/en/reference/cli-reference/#astro-build), it builds your site for deployment.
+Similar to [`astro build`](../cli-reference/index.md#astro-build), it builds your site for deployment.
 
 ```
 import { build } from "astro";
@@ -134,7 +134,7 @@ When building multiple projects in the same execution (e.g. during tests), disab
 
 **Type:** `(inlineConfig: [AstroInlineConfig](#astroinlineconfig)) => Promise<[PreviewServer](#previewserver)>`
 
-Similar to [`astro preview`](/en/reference/cli-reference/#astro-preview), it starts a local server to serve your build output.
+Similar to [`astro preview`](../cli-reference/index.md#astro-preview), it starts a local server to serve your build output.
 
 If no adapter is set in the configuration, the preview server will only serve the built static files. If an adapter is set in the configuration, the preview server is provided by the adapter. Adapters are not required to provide a preview server, so this feature may not be available depending on your adapter of choice.
 
@@ -150,7 +150,7 @@ const previewServer = await preview({  root: "./my-project",});
 
 **Type:** `(inlineConfig: [AstroInlineConfig](#astroinlineconfig)) => Promise<void>`
 
-Similar to [`astro sync`](/en/reference/cli-reference/#astro-sync), it generates TypeScript types for all Astro modules.
+Similar to [`astro sync`](../cli-reference/index.md#astro-sync), it generates TypeScript types for all Astro modules.
 
 ```
 import { sync } from "astro";
@@ -161,13 +161,13 @@ await sync({  root: "./my-project",});
 
 [Section titled “Utilities”](#utilities)
 
-The following utilities can be [imported from `astro/config`](/en/reference/modules/astro-config/#imports-from-astroconfig) and used to manipulate or validate the configuration before passing it to CLI commands.
+The following utilities can be [imported from `astro/config`](../modules/astro-config/index.md#imports-from-astroconfig) and used to manipulate or validate the configuration before passing it to CLI commands.
 
 ### `mergeConfig()`
 
 [Section titled “mergeConfig()”](#mergeconfig)
 
-**Type:** `(defaults: [AstroConfig](/en/reference/configuration-reference/), overrides: DeepPartial<AstroConfig>) => AstroConfig`  
+**Type:** `(defaults: [AstroConfig](../configuration-reference/index.md), overrides: DeepPartial<AstroConfig>) => AstroConfig`  
 
 **Added in:** `astro@5.4.0`
 
@@ -189,15 +189,15 @@ mergeConfig(  {    output: "static",    site: "https://example.com",    integrat
 
 [Section titled “validateConfig()”](#validateconfig)
 
-**Type:** `(userConfig: any, root: string, cmd: string) => Promise<[AstroConfig](/en/reference/configuration-reference/)>`  
+**Type:** `(userConfig: any, root: string, cmd: string) => Promise<[AstroConfig](../configuration-reference/index.md)>`  
 
 **Added in:** `astro@5.4.0`
 
 Validates an object as if it were exported from `astro.config.mjs` and imported by Astro. This takes the following arguments:
 
 *   The configuration to be validated.
-*   The [root directory of the project](/en/reference/configuration-reference/#root).
-*   The [Astro command that is being executed](/en/reference/cli-reference/#astro-commands) (e.g. `build`, `dev`, `sync`)
+*   The [root directory of the project](../configuration-reference/index.md#root).
+*   The [Astro command that is being executed](../cli-reference/index.md#astro-commands) (e.g. `build`, `dev`, `sync`)
 
 The returned promise resolves to the validated configuration, filled with all default values appropriate for the given Astro command.
 
@@ -219,7 +219,7 @@ import type {  AstroInlineConfig,  PreviewServer,} from "astro";
 
 [Section titled “AstroInlineConfig”](#astroinlineconfig)
 
-The `AstroInlineConfig` type is used by all of the [command APIs](#commands). It extends from the user [Astro config](/en/reference/configuration-reference/) type:
+The `AstroInlineConfig` type is used by all of the [command APIs](#commands). It extends from the user [Astro config](../configuration-reference/index.md) type:
 
 ```
 interface AstroInlineConfig extends AstroUserConfig {  configFile?: string | false;  mode?: string;  logLevel?: "debug" | "info" | "warn" | "error" | "silent";}
@@ -253,9 +253,9 @@ The inline config passed in this object will take highest priority when merging 
 
 The mode used when developing or building your site (e.g. `"production"`, `"testing"`).
 
-This value is passed to Vite using [the `--mode` flag](/en/reference/cli-reference/#--mode-string) when the `astro build` or `astro dev` commands are run to determine the value of `import.meta.env.MODE`. This also determines which `.env` files are loaded, and therefore the values of `astro:env`. See the [environment variables page](/en/guides/environment-variables/) for more details.
+This value is passed to Vite using [the `--mode` flag](../cli-reference/index.md#--mode-string) when the `astro build` or `astro dev` commands are run to determine the value of `import.meta.env.MODE`. This also determines which `.env` files are loaded, and therefore the values of `astro:env`. See the [environment variables page](../../guides/environment-variables/index.md) for more details.
 
-To output a development-based build, you can run `astro build` with the [`--devOutput` flag](/en/reference/cli-reference/#--devoutput).
+To output a development-based build, you can run `astro build` with the [`--devOutput` flag](../cli-reference/index.md#--devoutput).
 
 #### `AstroInlineConfig.logLevel`
 
@@ -316,4 +316,4 @@ The returned `Promise` resolves when the close request has been sent. This does 
 
 Returns a `Promise` that will resolve once the server is closed and reject if an error happens on the server.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -10,8 +10,8 @@ content_hash: "a4f5a4922c1e0f6f07b99a22f022d0de8647ebb16689ff27a9929c3fce7feee5"
 menu_path: ["PostgreSQL: Documentation: 18: 54.4. Streaming Replication Protocol"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
-nav_next: {"path": "../queries-order.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.5.\u00a0Sorting Rows (ORDER BY)"}
+nav_prev: {"path": "postgres/docs/current/protocol-overview.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.1.\u00a0Overview"}
+nav_next: {"path": "postgres/docs/current/queries-order.html/index.md", "title": "PostgreSQL: Documentation: 18: 7.5.\u00a0Sorting Rows (ORDER BY)"}
 ---
 
 To initiate streaming replication, the frontend sends the `replication` parameter in the startup message. A Boolean value of `true` (or `on`, `yes`, `1`) tells the backend to go into physical replication walsender mode, wherein a small set of replication commands, shown below, can be issued instead of SQL statements.

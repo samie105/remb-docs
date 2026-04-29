@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:33.066Z"
 content_hash: "7fc74ab85fe7825a26195e5bd59508a5a64b8e14ae7319b150a5b36bb804cfae"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","MSSQL","MSSQL"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","MSSQL","MSSQL"]
-nav_prev: {"path": "../heroku/index.md", "title": "Migrate from Heroku to Supabase"}
-nav_next: {"path": "../mysql/index.md", "title": "Migrate from MySQL to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/heroku/index.md", "title": "Migrate from Heroku to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/mysql/index.md", "title": "Migrate from MySQL to Supabase"}
 ---
 
 # 
@@ -60,7 +60,7 @@ Alternatively, you can use [pgloader](https://github.com/dimitri/pgloader), a fl
 
 *   If you're planning to migrate a database larger than 6 GB, we recommend [upgrading to at least a Large compute add-on](/docs/guides/platform/compute-add-ons). This will ensure you have the necessary resources to handle the migration efficiently.
     
-*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](/docs/guides/platform/compute-and-disk#disk) documentation.
+*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](../../compute-and-disk/index.md#disk) documentation.
     
 
 ## Enterprise[#](#enterprise)

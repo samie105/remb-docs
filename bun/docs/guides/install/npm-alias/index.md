@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:09.861Z"
 content_hash: "93d4196e9722c4b26034bb92cac96a430876e2e003a0796c281dc08c99af7a72"
 menu_path: ["Install a package under a different name"]
 section_path: []
-nav_prev: {"path": "../jfrog-artifactory/index.md", "title": "Using bun install with Artifactory"}
-nav_next: {"path": "../registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
+nav_prev: {"path": "bun/docs/guides/install/jfrog-artifactory/index.md", "title": "Using bun install with Artifactory"}
+nav_next: {"path": "bun/docs/guides/install/registry-scope/index.md", "title": "Configure a private registry for an organization scope with bun install"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../registry-scope/index.md", "title": "Configure a private r
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To install an npm package under an alias:
 
@@ -57,7 +57,7 @@ z.string();
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -69,10 +69,10 @@ Add a tarball dependency
 
 Previous
 
-](/docs/guides/install/add-tarball)[
+](../add-tarball/index.md)[
 
 Configuring a monorepo using workspaces
 
 Next
 
-](/docs/guides/install/workspaces)
+](../workspaces/index.md)

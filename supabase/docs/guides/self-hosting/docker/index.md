@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:27.242Z"
 content_hash: "8e128fe5b28661928b4e8e63e490ffc6fab5404ee0159134d187555b4977e0f5"
 menu_path: ["Self-Hosting","Self-Hosting","Self-Hosting with Docker","Self-Hosting with Docker"]
 section_path: ["Self-Hosting","Self-Hosting","Self-Hosting with Docker","Self-Hosting with Docker"]
-nav_prev: {"path": "../custom-email-templates/index.md", "title": "Custom Email Templates"}
-nav_next: {"path": "../enable-mcp/index.md", "title": "Enabling MCP Server Access"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/custom-email-templates/index.md", "title": "Custom Email Templates"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/enable-mcp/index.md", "title": "Enabling MCP Server Access"}
 ---
 
 # 
@@ -118,7 +118,7 @@ Change the placeholder password in the `.env` file **before** starting Supabase 
 
 *   `POSTGRES_PASSWORD`: the password for the `postgres` and `supabase_admin` database roles
 
-Follow the [password guidelines](/docs/guides/database/postgres/roles#passwords) for choosing a secure password. For easier configuration, **use only letters and numbers** to avoid URL encoding issues in connection strings.
+Follow the [password guidelines](../../database/postgres/roles/index.md#passwords) for choosing a secure password. For easier configuration, **use only letters and numbers** to avoid URL encoding issues in connection strings.
 
 ### Generate and configure API keys[#](#generate-and-configure-api-keys)
 
@@ -161,16 +161,16 @@ Edit the following settings in the `.env` file:
 *   `PG_META_CRYPTO_KEY`: encryption key for securing connection strings used by Studio against postgres-meta. (Must be at least 32 characters; generate with `openssl rand -base64 24`)
 *   `LOGFLARE_PUBLIC_ACCESS_TOKEN`: API token for log ingestion and querying. Used by Vector and Studio to send and query logs. (Must be at least 32 characters; generate with `openssl rand -base64 24`)
 *   `LOGFLARE_PRIVATE_ACCESS_TOKEN`: API token for Logflare management operations. Used by Studio for administrative tasks. Never expose client-side. (Must be at least 32 characters; generate with `openssl rand -base64 24`)
-*   `S3_PROTOCOL_ACCESS_KEY_ID`: Access key ID (username-like) for [accessing](/docs/guides/self-hosting/self-hosted-s3) the S3 protocol endpoint in Storage. (Generate with `openssl rand -hex 16`)
+*   `S3_PROTOCOL_ACCESS_KEY_ID`: Access key ID (username-like) for [accessing](../self-hosted-s3/index.md) the S3 protocol endpoint in Storage. (Generate with `openssl rand -hex 16`)
 *   `S3_PROTOCOL_ACCESS_KEY_SECRET`: Secret key (password-like) used with S3\_PROTOCOL\_ACCESS\_KEY\_ID. (Generate with `openssl rand -hex 32`)
 
-*   `MINIO_ROOT_PASSWORD`: Root administrator password for the [MinIO server](/docs/guides/self-hosting/self-hosted-s3#using-minio). (Must be 8+ characters; generate with `openssl rand -hex 16`)
+*   `MINIO_ROOT_PASSWORD`: Root administrator password for the [MinIO server](../self-hosted-s3/index.md#using-minio). (Must be 8+ characters; generate with `openssl rand -hex 16`)
 
 Review and change URL environment variables:
 
 *   `SUPABASE_PUBLIC_URL`: base URL for accessing Supabase from the Internet (Dashboard, API, Storage, etc.), e.g, `http://example.com:8000`
 *   `API_EXTERNAL_URL`: base URL of the Auth service as seen externally, e.g., `http://example.com:8000`
-*   `SITE_URL`: default [redirect URL](/docs/guides/auth/redirect-urls) for Auth, e.g., `http://example.com:3000`
+*   `SITE_URL`: default [redirect URL](../../auth/redirect-urls/index.md) for Auth, e.g., `http://example.com:3000`
 
 If you are only using self-hosted Supabase locally, you can use `localhost`.
 
@@ -334,7 +334,7 @@ If the tools and communities already exist, with an MIT, Apache 2, or equivalent
 *   **[Vector](https://github.com/vectordotdev/vector)** - High-performance observability data pipeline for logs
 *   **[Supavisor](https://github.com/supabase/supavisor)** - Supabase's Postgres connection pooler
 
-Multiple services require specific configuration within the Postgres database. Refer to the documentation describing the [default roles](/docs/guides/database/postgres/roles#supabase-roles) to learn more.
+Multiple services require specific configuration within the Postgres database. Refer to the documentation describing the [default roles](../../database/postgres/roles/index.md#supabase-roles) to learn more.
 
 You can find all the default extensions inside the [schema migration scripts repo](https://github.com/supabase/postgres/tree/develop/migrations). These scripts are mounted at `/docker-entrypoint-initdb.d` to run automatically when starting the database container.
 
@@ -366,21 +366,21 @@ We recommend using [AWS SES](https://aws.amazon.com/ses/). It's affordable and r
 
 By default all files are stored locally on the server. You can connect Storage to an S3-compatible backend (AWS S3, MinIO, Cloudflare R2), enable the S3 protocol endpoint for tools like `rclone`, or both. These are independent features.
 
-See the [Configure S3 Storage](/docs/guides/self-hosting/self-hosted-s3) guide for detailed setup instructions.
+See the [Configure S3 Storage](../self-hosted-s3/index.md) guide for detailed setup instructions.
 
 #### Configuring HTTPS[#](#configuring-https)
 
 By default, Supabase is accessible over HTTP. For production deployments, especially when using OAuth providers, you need HTTPS with a valid TLS certificate. The recommended approach is to place a reverse proxy (such as Caddy or Nginx) in front of Kong.
 
-See the [Configure HTTPS](/docs/guides/self-hosting/self-hosted-proxy-https) guide for setup instructions.
+See the [Configure HTTPS](../self-hosted-proxy-https/index.md) guide for setup instructions.
 
 #### Configuring social login (OAuth) providers[#](#configuring-social-login-oauth-providers)
 
-See the [Configure Social Login (OAuth) Providers](/docs/guides/self-hosting/self-hosted-oauth) guide for setup instructions.
+See the [Configure Social Login (OAuth) Providers](../self-hosted-oauth/index.md) guide for setup instructions.
 
 #### Configuring phone login, SMS, and MFA[#](#configuring-phone-login-sms-and-mfa)
 
-See the [Configure Phone Login & MFA](/docs/guides/self-hosting/self-hosted-phone-mfa) guide for SMS provider setup, OTP settings, and multi-factor authentication configuration.
+See the [Configure Phone Login & MFA](../self-hosted-phone-mfa/index.md) guide for SMS provider setup, OTP settings, and multi-factor authentication configuration.
 
 #### Configuring Supabase AI Assistant[#](#configuring-supabase-ai-assistant)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:26.510Z"
 content_hash: "ed7534cbd827f4bcbda5f1fd75932c99019a0ddfb857179b915c47b1004b279a"
 menu_path: ["createTRPCQueryUtils"]
 section_path: []
-nav_prev: {"path": "../aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
-nav_next: {"path": "../disabling-queries/index.md", "title": "Disabling Queries"}
+nav_prev: {"path": "trpc/docs/client/react/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_next: {"path": "trpc/docs/client/react/disabling-queries/index.md", "title": "Disabling Queries"}
 ---
 
 The use case for `createTRPCQueryUtils` is when you need to use the helpers outside of a React Component, for example in `react-router`'s loaders.

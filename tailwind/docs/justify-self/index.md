@@ -10,8 +10,8 @@ content_hash: "36890254984114a67bba135a3878130e7869e7002aabc818a37f507b0658e500"
 menu_path: ["justify-self"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../justify-items/index.md", "title": "justify-items"}
-nav_next: {"path": "../align-content/index.md", "title": "align-content"}
+nav_prev: {"path": "tailwind/docs/justify-items/index.md", "title": "justify-items"}
+nav_next: {"path": "tailwind/docs/align-content/index.md", "title": "align-content"}
 ---
 
 # justify-self
@@ -183,7 +183,7 @@ Prefix a `justify-self` utility with a breakpoint variant like `md:` to only app
 <div class="justify-self-start md:justify-self-end ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

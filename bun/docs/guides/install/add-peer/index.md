@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:27.809Z"
 content_hash: "8a2cd13353601069ac3d12345321e10e73b47a00198fa9bb151a7686935f7d51"
 menu_path: ["Add a peer dependency"]
 section_path: []
-nav_prev: {"path": "../add-optional/index.md", "title": "Add an optional dependency"}
-nav_next: {"path": "../add-tarball/index.md", "title": "Add a tarball dependency"}
+nav_prev: {"path": "bun/docs/guides/install/add-optional/index.md", "title": "Add an optional dependency"}
+nav_next: {"path": "bun/docs/guides/install/add-tarball/index.md", "title": "Add a tarball dependency"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../add-tarball/index.md", "title": "Add a tarball dependency
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To add an npm package as a peer dependency, use the `--peer` flag.
 
@@ -78,7 +78,7 @@ package.json
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -90,10 +90,10 @@ Add an optional dependency
 
 Previous
 
-](/docs/guides/install/add-optional)[
+](../add-optional/index.md)[
 
 Add a Git dependency
 
 Next
 
-](/docs/guides/install/add-git)
+](../add-git/index.md)

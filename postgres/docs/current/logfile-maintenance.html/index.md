@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:28.384Z"
 content_hash: "3742d873cf2f7dedec02cb1e5626d8d0c5cb8fc4146f0f6e161cb1348ee1d2af"
 menu_path: ["PostgreSQL: Documentation: 18: 24.3. Log File Maintenance"]
 section_path: []
-nav_prev: {"path": "../locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
-nav_next: {"path": "../logical-replication-architecture.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.9.\u00a0Architecture"}
+nav_prev: {"path": "postgres/docs/current/locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
+nav_next: {"path": "postgres/docs/current/logical-replication-architecture.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.9.\u00a0Architecture"}
 ---
 
 It is a good idea to save the database server's log output somewhere, rather than just discarding it via `/dev/null`. The log output is invaluable when diagnosing problems.

@@ -10,8 +10,8 @@ content_hash: "10da5a0567979d4ae0068ee64b31ca864a1cbd5762d38a1dad61965290c182ab"
 menu_path: ["touch-action"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../scroll-snap-type/index.md", "title": "scroll-snap-type"}
-nav_next: {"path": "../user-select/index.md", "title": "user-select"}
+nav_prev: {"path": "tailwind/docs/scroll-snap-type/index.md", "title": "scroll-snap-type"}
+nav_next: {"path": "tailwind/docs/user-select/index.md", "title": "user-select"}
 ---
 
 # touch-action
@@ -100,7 +100,7 @@ Prefix a `touch-action` utility with a breakpoint variant like `md:` to only app
 <div class="touch-pan-x md:touch-auto ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

@@ -11,8 +11,8 @@ menu_path: ["images"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../httpAgentOptions/index.md", "title": "httpAgentOptions"}
-nav_next: {"path": "../logging/index.md", "title": "logging"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/httpAgentOptions/index.md", "title": "httpAgentOptions"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/logging/index.md", "title": "logging"}
 ---
 
 # images
@@ -42,9 +42,9 @@ export default function myImageLoader({ src, width, quality }) {
 }
 ```
 
-Alternatively, you can use the [`loader` prop](/docs/pages/api-reference/components/image#loader) to pass the function to each instance of `next/image`.
+Alternatively, you can use the [`loader` prop](../../../components/image/index.md#loader) to pass the function to each instance of `next/image`.
 
-To learn more about configuring the behavior of the built-in [Image Optimization API](/docs/pages/api-reference/components/image) and the [Image Component](/docs/pages/api-reference/components/image), see [Image Configuration Options](/docs/pages/api-reference/components/image#configuration-options) for available options.
+To learn more about configuring the behavior of the built-in [Image Optimization API](../../../components/image/index.md) and the [Image Component](../../../components/image/index.md), see [Image Configuration Options](../../../components/image/index.md#configuration-options) for available options.
 
 ## Example Loader Configuration[](#example-loader-configuration)
 

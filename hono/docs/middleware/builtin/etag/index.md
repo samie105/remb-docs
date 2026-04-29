@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:27.289Z"
 content_hash: "7053ff415d57b99239de454a3e39d39d3035cf7e584eebb6483038cb44016c92"
 menu_path: ["ETag Middleware ​"]
 section_path: []
-nav_prev: {"path": "../csrf/index.md", "title": "CSRF Protection \u200b"}
-nav_next: {"path": "../ip-restriction/index.md", "title": "IP Restriction Middleware \u200b"}
+nav_prev: {"path": "hono/docs/middleware/builtin/csrf/index.md", "title": "CSRF Protection \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/ip-restriction/index.md", "title": "IP Restriction Middleware \u200b"}
 ---
 
 ## ETag Middleware [​](#etag-middleware)

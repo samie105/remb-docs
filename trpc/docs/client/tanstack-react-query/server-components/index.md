@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:38.750Z"
 content_hash: "37623a97043f88b36400154fa89f1a8fc235d328c966fc894e59510345adfadb"
 menu_path: ["Set up with React Server Components"]
 section_path: []
-nav_prev: {"path": "../migrating/index.md", "title": "Migrating from the classic React Client"}
-nav_next: {"path": "../setup/index.md", "title": "TanStack React Query"}
+nav_prev: {"path": "trpc/docs/client/tanstack-react-query/migrating/index.md", "title": "Migrating from the classic React Client"}
+nav_next: {"path": "trpc/docs/client/tanstack-react-query/setup/index.md", "title": "TanStack React Query"}
 ---
 
 This guide is an overview of how one may use tRPC with a React Server Components (RSC) framework such as Next.js App Router. Be aware that RSC on its own solves a lot of the same problems tRPC was designed to solve, so you may not need tRPC at all.

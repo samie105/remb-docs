@@ -10,8 +10,8 @@ content_hash: "493d7a8eeb1e0127f39328b8b8dd1db4b8ba7e17af09f0ad00bde6e8aca64ac4"
 menu_path: ["deno clean"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../check/index.md", "title": "deno check"}
-nav_next: {"path": "../compile/index.md", "title": "deno compile"}
+nav_prev: {"path": "deno/runtime/reference/cli/check/index.md", "title": "deno check"}
+nav_next: {"path": "deno/runtime/reference/cli/compile/index.md", "title": "deno compile"}
 ---
 
 **On this page**
@@ -23,7 +23,7 @@ nav_next: {"path": "../compile/index.md", "title": "deno compile"}
 -   [Options](#options)
 -   [Dependency management options](#dependency-management-options)
 
-`deno clean` removes Deno's global module cache directory. See [Modules](/runtime/fundamentals/modules/) for more information about how Deno caches dependencies.
+`deno clean` removes Deno's global module cache directory. See [Modules](../../../fundamentals/modules/index.md) for more information about how Deno caches dependencies.
 
 ## Basic usage
 

@@ -11,8 +11,8 @@ menu_path: ["exportPathMap"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../env/index.md", "title": "env"}
-nav_next: {"path": "../generateBuildId/index.md", "title": "generateBuildId"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/env/index.md", "title": "env"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/generateBuildId/index.md", "title": "generateBuildId"}
 ---
 
 # exportPathMap
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 > This feature is exclusive to `next export` and currently **deprecated** in favor of `getStaticPaths` with `pages` or `generateStaticParams` with `app`.
 
-`exportPathMap` allows you to specify a mapping of request paths to page destinations, to be used during export. Paths defined in `exportPathMap` will also be available when using [`next dev`](/docs/app/api-reference/cli/next#next-dev-options).
+`exportPathMap` allows you to specify a mapping of request paths to page destinations, to be used during export. Paths defined in `exportPathMap` will also be available when using [`next dev`](../../../../../app/api-reference/cli/next/index.md#next-dev-options).
 
 Let's start with an example, to create a custom `exportPathMap` for an app with the following pages:
 
@@ -50,7 +50,7 @@ module.exports = {
 }
 ```
 
-> **Good to know**: the `query` field in `exportPathMap` cannot be used with [automatically statically optimized pages](/docs/pages/building-your-application/rendering/automatic-static-optimization) or [`getStaticProps` pages](/docs/pages/building-your-application/data-fetching/get-static-props) as they are rendered to HTML files at build-time and additional query information cannot be provided during `next export`.
+> **Good to know**: the `query` field in `exportPathMap` cannot be used with [automatically statically optimized pages](../../../../building-your-application/rendering/automatic-static-optimization/index.md) or [`getStaticProps` pages](../../../../building-your-application/data-fetching/get-static-props/index.md) as they are rendered to HTML files at build-time and additional query information cannot be provided during `next export`.
 
 The pages will then be exported as HTML files, for example, `/about` will become `/about.html`.
 
@@ -59,7 +59,7 @@ The pages will then be exported as HTML files, for example, `/about` will become
 -   `dev` - `true` when `exportPathMap` is being called in development. `false` when running `next export`. In development `exportPathMap` is used to define routes.
 -   `dir` - Absolute path to the project directory
 -   `outDir` - Absolute path to the `out/` directory ([configurable with `-o`](#customizing-the-output-directory)). When `dev` is `true` the value of `outDir` will be `null`.
--   `distDir` - Absolute path to the `.next/` directory (configurable with the [`distDir`](/docs/pages/api-reference/config/next-config-js/distDir) config)
+-   `distDir` - Absolute path to the `.next/` directory (configurable with the [`distDir`](../distDir/index.md) config)
 -   `buildId` - The generated build id
 
 The returned object is a map of pages where the `key` is the `pathname` and the `value` is an object that accepts the following fields:

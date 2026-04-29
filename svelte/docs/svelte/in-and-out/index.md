@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:09.014Z"
 content_hash: "1d4af99ed43638f1825a99e289e28d0bedef71df95e9e4c55b638ba297dfcc2d"
 menu_path: ["in: and out:"]
 section_path: []
-nav_prev: {"path": "../transition/index.md", "title": "transition:"}
-nav_next: {"path": "../animate/index.md", "title": "animate:"}
+nav_prev: {"path": "svelte/docs/svelte/transition/index.md", "title": "transition:"}
+nav_next: {"path": "svelte/docs/svelte/animate/index.md", "title": "animate:"}
 ---
 
 The `in:` and `out:` directives are identical to [`transition:`](transition), except that the resulting transitions are not bidirectional — an `in` transition will continue to 'play' alongside the `out` transition, rather than reversing, if the block is outroed while the transition is in progress. If an out transition is aborted, transitions will restart from scratch.
@@ -36,4 +36,4 @@ The `in:` and `out:` directives are identical to [`transition:`](transition), ex
 
 previous next
 
-[transition:](/docs/svelte/transition) [animate:](/docs/svelte/animate)
+[transition:](../transition/index.md) [animate:](../animate/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:20.658Z"
 content_hash: "7053ea4f97652fed3e8dd3d65e083ea9b21a5ffa6e6e84b845ac0552b5f50d51"
 menu_path: ["PostgreSQL: Documentation: 18: PREPARE"]
 section_path: []
-nav_prev: {"path": "../sql-prepare-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE TRANSACTION"}
-nav_next: {"path": "../sql-reassign-owned.html/index.md", "title": "PostgreSQL: Documentation: 18: REASSIGN OWNED"}
+nav_prev: {"path": "postgres/docs/current/sql-prepare-transaction.html/index.md", "title": "PostgreSQL: Documentation: 18: PREPARE TRANSACTION"}
+nav_next: {"path": "postgres/docs/current/sql-reassign-owned.html/index.md", "title": "PostgreSQL: Documentation: 18: REASSIGN OWNED"}
 ---
 
 PREPARE — prepare a statement for execution

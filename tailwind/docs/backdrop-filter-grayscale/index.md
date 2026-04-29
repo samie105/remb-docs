@@ -10,8 +10,8 @@ content_hash: "0d8b21b699537576e01e39fd7d0493e6a6fc36e32f1ba400c489674f3db4934f"
 menu_path: ["backdrop-filter: grayscale()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../backdrop-filter-contrast/index.md", "title": "backdrop-filter: contrast()"}
-nav_next: {"path": "../backdrop-filter-hue-rotate/index.md", "title": "backdrop-filter: hue-rotate()"}
+nav_prev: {"path": "tailwind/docs/backdrop-filter-contrast/index.md", "title": "backdrop-filter: contrast()"}
+nav_next: {"path": "tailwind/docs/backdrop-filter-hue-rotate/index.md", "title": "backdrop-filter: hue-rotate()"}
 ---
 
 # backdrop-filter: grayscale()
@@ -78,7 +78,7 @@ Prefix a `backdrop-filter: grayscale()` utility with a breakpoint variant like `
 <div class="backdrop-grayscale md:backdrop-grayscale-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

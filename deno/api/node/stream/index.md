@@ -10,8 +10,8 @@ content_hash: "dd713f3c2a44bd99f6b21cdfd9aca01e3f177937b9e1482c147b146df8eb1d33"
 menu_path: ["stream - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sqlite/index.md", "title": "sqlite - Node documentation"}
-nav_next: {"path": "consumers/index.md", "title": "stream/consumers - Node documentation"}
+nav_prev: {"path": "deno/api/node/sqlite/index.md", "title": "sqlite - Node documentation"}
+nav_next: {"path": "deno/api/node/stream/consumers/index.md", "title": "stream/consumers - Node documentation"}
 ---
 
 ### Usage in Deno

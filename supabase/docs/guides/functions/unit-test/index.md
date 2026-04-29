@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:41.126Z"
 content_hash: "093898e491191c82d41f7a24f8857916bde04ee4e67693cc5b6fd42c2bbf7d84"
 menu_path: ["Edge Functions","Edge Functions","Debugging","Debugging","Testing your Functions","Testing your Functions"]
 section_path: ["Edge Functions","Edge Functions","Debugging","Debugging","Testing your Functions","Testing your Functions"]
-nav_prev: {"path": "../storage-caching/index.md", "title": "Integrating with Supabase Storage"}
-nav_next: {"path": "../wasm/index.md", "title": "Using Wasm modules"}
+nav_prev: {"path": "supabase/docs/guides/functions/storage-caching/index.md", "title": "Integrating with Supabase Storage"}
+nav_next: {"path": "supabase/docs/guides/functions/wasm/index.md", "title": "Using Wasm modules"}
 ---
 
 # 

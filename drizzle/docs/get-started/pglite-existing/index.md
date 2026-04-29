@@ -10,8 +10,8 @@ content_hash: "0d88e4bc7e7584e2da11d4e816449aa37566dca45f09e9e0b3dce58e655a95de"
 menu_path: ["Get Started with Drizzle and PGLite in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../op-sqlite-new/index.md", "title": "Get Started with Drizzle and OP-SQLite"}
-nav_next: {"path": "../pglite-new/index.md", "title": "Get Started with Drizzle and PGlite"}
+nav_prev: {"path": "drizzle/docs/get-started/op-sqlite-new/index.md", "title": "Get Started with Drizzle and OP-SQLite"}
+nav_next: {"path": "drizzle/docs/get-started/pglite-new/index.md", "title": "Get Started with Drizzle and PGlite"}
 ---
 
 ## Get Started with Drizzle and PGLite in existing project

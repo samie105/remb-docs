@@ -11,8 +11,8 @@ menu_path: ["Baselining a database"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../../../prisma-client/using-raw-sql/typedsql/index.md", "title": "TypedSQL"}
-nav_next: {"path": "../customizing-migrations/index.md", "title": "Customizing migrations"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/using-raw-sql/typedsql/index.md", "title": "TypedSQL"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/customizing-migrations/index.md", "title": "Customizing migrations"}
 ---
 
 Workflows

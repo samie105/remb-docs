@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:10:18.538Z"
 content_hash: "31fb618f1e5928631b7bab664bb20799cbb416f023a1a1bc2aef6b614d7a5561"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        New Relic with Redis Cloud","→","New Relic with Redis Cloud"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        New Relic with Redis Cloud","→","New Relic with Redis Cloud"]
-nav_prev: {"path": "../nagios-with-redis-enterprise/index.md", "title": "Nagios with Redis Software"}
-nav_next: {"path": "../new-relic-with-redis-enterprise/index.md", "title": "New Relic with Redis Software"}
+nav_prev: {"path": "redis/docs/latest/integrate/nagios-with-redis-enterprise/index.md", "title": "Nagios with Redis Software"}
+nav_next: {"path": "redis/docs/latest/integrate/new-relic-with-redis-enterprise/index.md", "title": "New Relic with Redis Software"}
 ---
 
 # New Relic with Redis Cloud

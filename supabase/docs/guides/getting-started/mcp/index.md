@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:13.614Z"
 content_hash: "ddca93aeeca1c900d0c72b3f06d428771df6cdd1b3d80c76d634aa3fa08096dd"
 menu_path: ["Start with Supabase","Start with Supabase","AI Tools","AI Tools","Supabase MCP server","Supabase MCP server"]
 section_path: ["Start with Supabase","Start with Supabase","AI Tools","AI Tools","Supabase MCP server","Supabase MCP server"]
-nav_prev: {"path": "../features/index.md", "title": "Features"}
-nav_next: {"path": "../quickstarts/astrojs/index.md", "title": "Use Supabase with Astro"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/features/index.md", "title": "Features"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/astrojs/index.md", "title": "Use Supabase with Astro"}
 ---
 
 # 
@@ -181,7 +181,7 @@ Enable only specific tool groups (comma-separated)
 
 Parameters can be combined: `https://mcp.supabase.com/mcp?project_ref=abc123&read_only=true`
 
-When using [Supabase CLI](/docs/guides/cli) for local development, the MCP server is available at `http://localhost:54321/mcp`.
+When using [Supabase CLI](../../cli/index.md) for local development, the MCP server is available at `http://localhost:54321/mcp`.
 
 ## Manual authentication[#](#manual-authentication)
 
@@ -253,7 +253,7 @@ We recommend the following best practices to mitigate security risks when using 
 *   **Don't give to your customers**: The MCP server operates under the context of your developer permissions, so you should not give it to your customers or end users. Instead, use it internally as a developer tool to help you build and test your applications.
 *   **Read-only mode**: If you must connect to real data, set the server to [read-only](#configuration-options) mode, which executes all queries as a read-only Postgres user.
 *   **Project scoping**: Scope your MCP server to a [specific project](#configuration-options), limiting access to only that project's resources. This prevents LLMs from accessing data from other projects in your Supabase account.
-*   **Branching**: Use Supabase's [branching feature](/docs/guides/deployment/branching) to create a development branch for your database. This allows you to test changes in a safe environment before merging them to production.
+*   **Branching**: Use Supabase's [branching feature](../../deployment/branching/index.md) to create a development branch for your database. This allows you to test changes in a safe environment before merging them to production.
 *   **Feature groups**: Restrict which [tool groups](#available-tools) are available using the `features` [configuration option](#configuration-options). This helps reduce the attack surface and limits the actions that LLMs can perform to only those that you need.
 
 ## On GitHub[#](#on-github)

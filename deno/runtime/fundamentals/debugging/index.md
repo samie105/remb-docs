@@ -10,8 +10,8 @@ content_hash: "7ba6fa3c50565a0beb2b30d582ee3f625befd0d4d6ace4f8fe355a8be3a5d83f"
 menu_path: ["Debugging"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../testing/index.md", "title": "Testing"}
-nav_next: {"path": "../workspaces/index.md", "title": "Workspaces and monorepos"}
+nav_prev: {"path": "deno/runtime/fundamentals/testing/index.md", "title": "Testing"}
+nav_next: {"path": "deno/runtime/fundamentals/workspaces/index.md", "title": "Workspaces and monorepos"}
 ---
 
 # or with deno eval
@@ -147,7 +147,7 @@ This will automatically collect and export runtime observability data, including
 -   Runtime metrics
 -   Console logs and errors
 
-For full details on Deno's OpenTelemetry integration, including custom metrics, traces, and configuration options, see the [OpenTelemetry documentation](/runtime/fundamentals/open_telemetry).
+For full details on Deno's OpenTelemetry integration, including custom metrics, traces, and configuration options, see the [OpenTelemetry documentation](../open_telemetry/index.md).
 
 ## TLS session debugging
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:21.579Z"
 content_hash: "f2bd457f4cd33be4313c06829a14d158afddea11348ca570550e40a7eba3fe18"
 menu_path: ["useMutation()"]
 section_path: []
-nav_prev: {"path": "../react/index.md", "title": "Usage with React"}
-nav_next: {"path": "../react-queries/index.md", "title": "useQuery()"}
+nav_prev: {"path": "trpc/docs/v9/react/index.md", "title": "Usage with React"}
+nav_next: {"path": "trpc/docs/v9/react-queries/index.md", "title": "useQuery()"}
 ---
 
 tsx

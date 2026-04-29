@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:24.718Z"
 content_hash: "a7d0a794305990da12c532902db4d65ad7c24767e695f260da37413ec7b6b353"
 menu_path: ["Style your About page"]
 section_path: []
-nav_prev: {"path": "../3/index.md", "title": "Add dynamic content about you"}
-nav_next: {"path": "../5/index.md", "title": "Add site-wide styling"}
+nav_prev: {"path": "astro/en/tutorial/2-pages/3/index.md", "title": "Add dynamic content about you"}
+nav_next: {"path": "astro/en/tutorial/2-pages/5/index.md", "title": "Add site-wide styling"}
 ---
 
 # Style your About page
@@ -120,11 +120,11 @@ const skillColor = "crimson";const fontWeight = "bold";const textCase = "upperca
 
 [Section titled “Resources”](#resources)
 
-*   [Astro syntax vs JSX - comparison](/en/reference/astro-syntax/#differences-between-astro-and-jsx)
+*   [Astro syntax vs JSX - comparison](../../../reference/astro-syntax/index.md#differences-between-astro-and-jsx)
     
-*   [Astro `<style>` tag](/en/guides/styling/#styling-in-astro)
+*   [Astro `<style>` tag](../../../guides/styling/index.md#styling-in-astro)
     
-*   [CSS variables in Astro](/en/guides/styling/#css-variables)
+*   [CSS variables in Astro](../../../guides/styling/index.md#css-variables)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

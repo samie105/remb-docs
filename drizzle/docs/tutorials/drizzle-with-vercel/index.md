@@ -10,8 +10,8 @@ content_hash: "55c6da613b724d0de50ded41fd0f781845b4649425a756ca970e2dbd2203dc65"
 menu_path: ["Drizzle with Vercel Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
-nav_next: {"path": "../drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-turso/index.md", "title": "Drizzle with Turso"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-vercel-edge-functions/index.md", "title": "Drizzle with Vercel Edge Functions"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Vercel Postgres](https://vercel.com/docs/storage/vercel-postgres). Vercel Postgres is a serverless SQL database designed to integrate with Vercel Functions and your frontend framework.

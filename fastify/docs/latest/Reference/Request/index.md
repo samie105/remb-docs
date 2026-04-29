@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:28.215Z"
 content_hash: "2ed6209cadb3dd691babd8dbe90611009c0adb61cd1ebb495f24e2f95985bb35"
 menu_path: ["Request"]
 section_path: []
-nav_prev: {"path": "../Reply/index.md", "title": "Reply"}
-nav_next: {"path": "../Routes/index.md", "title": "Routes"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Reply/index.md", "title": "Reply"}
+nav_next: {"path": "fastify/docs/latest/Reference/Routes/index.md", "title": "Routes"}
 ---
 
 Version: latest (v5.8.x)
@@ -21,17 +21,17 @@ The first parameter of the handler function is `Request`.
 
 Request is a core Fastify object containing the following fields:
 
-*   `query` - The parsed querystring, its format is specified by [`querystringParser`](/docs/latest/Reference/Server/#querystringparser).
-*   `body` - The request payload, see [Content-Type Parser](/docs/latest/Reference/ContentTypeParser/) for details on what request payloads Fastify natively parses and how to support other content types.
+*   `query` - The parsed querystring, its format is specified by [`querystringParser`](../Server/index.md#querystringparser).
+*   `body` - The request payload, see [Content-Type Parser](../ContentTypeParser/index.md) for details on what request payloads Fastify natively parses and how to support other content types.
 *   `params` - The params matching the URL.
 *   [`headers`](#headers) - The headers getter and setter.
 *   `raw` - The incoming HTTP request from Node core.
-*   `server` - The Fastify server instance, scoped to the current [encapsulation context](/docs/latest/Reference/Encapsulation/).
+*   `server` - The Fastify server instance, scoped to the current [encapsulation context](../Encapsulation/index.md).
 *   `id` - The request ID.
 *   `log` - The logger instance of the incoming request.
 *   `ip` - The IP address of the incoming request.
-*   `ips` - An array of the IP addresses, ordered from closest to furthest, in the `X-Forwarded-For` header of the incoming request (only when the [`trustProxy`](/docs/latest/Reference/Server/#factory-trust-proxy) option is enabled).
-*   `host` - The host of the incoming request (derived from `X-Forwarded-Host` header when the [`trustProxy`](/docs/latest/Reference/Server/#factory-trust-proxy) option is enabled). For HTTP/2 compatibility, it returns `:authority` if no host header exists. The host header may return an empty string if `requireHostHeader` is `false`, not provided with HTTP/1.0, or removed by schema validation. ⚠ Security: this value comes from client-controlled headers; only trust it when you control proxy behavior and have validated or allow-listed hosts. No additional validation is performed beyond RFC parsing (see [RFC 9110, section 7.2](https://www.rfc-editor.org/rfc/rfc9110#section-7.2) and [RFC 3986, section 3.2.2](https://www.rfc-editor.org/rfc/rfc3986#section-3.2.2)).
+*   `ips` - An array of the IP addresses, ordered from closest to furthest, in the `X-Forwarded-For` header of the incoming request (only when the [`trustProxy`](../Server/index.md#factory-trust-proxy) option is enabled).
+*   `host` - The host of the incoming request (derived from `X-Forwarded-Host` header when the [`trustProxy`](../Server/index.md#factory-trust-proxy) option is enabled). For HTTP/2 compatibility, it returns `:authority` if no host header exists. The host header may return an empty string if `requireHostHeader` is `false`, not provided with HTTP/1.0, or removed by schema validation. ⚠ Security: this value comes from client-controlled headers; only trust it when you control proxy behavior and have validated or allow-listed hosts. No additional validation is performed beyond RFC parsing (see [RFC 9110, section 7.2](https://www.rfc-editor.org/rfc/rfc9110#section-7.2) and [RFC 3986, section 3.2.2](https://www.rfc-editor.org/rfc/rfc3986#section-3.2.2)).
 *   `hostname` - The hostname derived from the `host` property of the incoming request.
 *   `port` - The port from the `host` property, which may refer to the port the server is listening on.
 *   `protocol` - The protocol of the incoming request (`https` or `http`).
@@ -40,13 +40,13 @@ Request is a core Fastify object containing the following fields:
 *   `originalUrl` - Similar to `url`, allows access to the original `url` in case of internal re-routing.
 *   `is404` - `true` if request is being handled by 404 handler, `false` otherwise.
 *   `socket` - The underlying connection of the incoming request.
-*   `signal` - An `AbortSignal` that aborts when the handler timeout fires or the client disconnects. Created lazily on first access, so there is zero overhead when not used. When [`handlerTimeout`](/docs/latest/Reference/Server/#factory-handler-timeout) is configured, the signal is pre-created and also aborts on timeout. Pass it to `fetch()`, database queries, or any API accepting a `signal` option for cooperative cancellation. On timeout, `signal.reason` is the `FST_ERR_HANDLER_TIMEOUT` error; on client disconnect it is a generic `AbortError`. Check `signal.reason.code` to distinguish the two cases.
+*   `signal` - An `AbortSignal` that aborts when the handler timeout fires or the client disconnects. Created lazily on first access, so there is zero overhead when not used. When [`handlerTimeout`](../Server/index.md#factory-handler-timeout) is configured, the signal is pre-created and also aborts on timeout. Pass it to `fetch()`, database queries, or any API accepting a `signal` option for cooperative cancellation. On timeout, `signal.reason` is the `FST_ERR_HANDLER_TIMEOUT` error; on client disconnect it is a generic `AbortError`. Check `signal.reason.code` to distinguish the two cases.
 *   `context` - Deprecated, use `request.routeOptions.config` instead. A Fastify internal object. Do not use or modify it directly. It is useful to access one special key:
-    *   `context.config` - The route [`config`](/docs/latest/Reference/Routes/#routes-config) object.
-*   `routeOptions` - The route [`option`](/docs/latest/Reference/Routes/#routes-options) object.
+    *   `context.config` - The route [`config`](../Routes/index.md#routes-config) object.
+*   `routeOptions` - The route [`option`](../Routes/index.md#routes-options) object.
     *   `bodyLimit` - Either server limit or route limit.
     *   `handlerTimeout` - The handler timeout configured for this route.
-    *   `config` - The [`config`](/docs/latest/Reference/Routes/#routes-config) object for this route.
+    *   `config` - The [`config`](../Routes/index.md#routes-config) object for this route.
     *   `method` - The HTTP method for the route.
     *   `url` - The path of the URL to match this route.
     *   `handler` - The handler for this route.
@@ -92,7 +92,7 @@ See [.compileValidationSchema(schema, \[httpStatus\])](#compileValidationSchema)
 
 ### .compileValidationSchema(schema, \[httpPart\])[​](#compilevalidationschemaschema-httppart "Direct link to .compileValidationSchema(schema, [httpPart])")
 
-This function compiles a validation schema and returns a function to validate data. The returned function (a.k.a. _validation function_) is compiled using the provided [`SchemaController#ValidationCompiler`](/docs/latest/Reference/Server/#schema-controller). A `WeakMap` is used to cache this, reducing compilation calls.
+This function compiles a validation schema and returns a function to validate data. The returned function (a.k.a. _validation function_) is compiled using the provided [`SchemaController#ValidationCompiler`](../Server/index.md#schema-controller). A `WeakMap` is used to cache this, reducing compilation calls.
 
 The optional parameter `httpPart`, if provided, is forwarded to the `ValidationCompiler`, allowing it to compile the validation function if a custom `ValidationCompiler` is provided for the route.
 

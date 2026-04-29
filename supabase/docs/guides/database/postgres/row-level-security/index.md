@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:45.332Z"
 content_hash: "f334cba181e27c1b31598d0d2c9823139bd31030c8946ea440a508bc3c005336"
 menu_path: ["Database","Database","Access and security","Access and security","Row Level Security","Row Level Security"]
 section_path: ["Database","Database","Access and security","Access and security","Row Level Security","Row Level Security"]
-nav_prev: {"path": "../roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
-nav_next: {"path": "../setup-replication-external/index.md", "title": "Replicate to another Postgres database using Logical Replication"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/roles-superuser/index.md", "title": "Roles, superuser access and unsupported operations"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/setup-replication-external/index.md", "title": "Replicate to another Postgres database using Logical Replication"}
 ---
 
 # 
@@ -37,7 +37,7 @@ RLS is enabled by default on tables created with the Table Editor in the dashboa
 1alter table <schema_name>.<table_name>2enable row level security;
 ```
 
-RLS is incredibly powerful and flexible, allowing you to write complex SQL rules that fit your unique business needs. RLS can be combined with [Supabase Auth](/docs/guides/auth) for end-to-end user security from the browser to the database.
+RLS is incredibly powerful and flexible, allowing you to write complex SQL rules that fit your unique business needs. RLS can be combined with [Supabase Auth](../../../auth/index.md) for end-to-end user security from the browser to the database.
 
 RLS is a Postgres primitive and can provide "[defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_\(computing\))" to protect your data from malicious actors even when accessed through third-party tooling.
 
@@ -65,11 +65,11 @@ You can enable RLS for any table using the `enable row level security` clause:
 1alter table "table_name" enable row level security;
 ```
 
-Once you have enabled RLS, no data will be accessible via the [API](/docs/guides/api) when using the public `anon` key, until you create policies.
+Once you have enabled RLS, no data will be accessible via the [API](../../../api/index.md) when using the public `anon` key, until you create policies.
 
 ## Auto-enable RLS for new tables[#](#auto-enable-rls-for-new-tables)
 
-If you want RLS enabled automatically for new tables, you can create an event trigger that runs after table creation. This uses a Postgres [event trigger](/docs/guides/database/postgres/event-triggers) to call `ALTER TABLE ... ENABLE ROW LEVEL SECURITY` on each newly created table.
+If you want RLS enabled automatically for new tables, you can create an event trigger that runs after table creation. This uses a Postgres [event trigger](../event-triggers/index.md) to call `ALTER TABLE ... ENABLE ROW LEVEL SECURITY` on each newly created table.
 
 ```
 1CREATE OR REPLACE FUNCTION rls_auto_enable()2RETURNS EVENT_TRIGGER3LANGUAGE plpgsql4SECURITY DEFINER5SET search_path = pg_catalog6AS $$7DECLARE8  cmd record;9BEGIN10  FOR cmd IN11    SELECT *12    FROM pg_event_trigger_ddl_commands()13    WHERE command_tag IN ('CREATE TABLE', 'CREATE TABLE AS', 'SELECT INTO')14      AND object_type IN ('table','partitioned table')15  LOOP16     IF cmd.schema_name IS NOT NULL AND cmd.schema_name IN ('public') AND cmd.schema_name NOT IN ('pg_catalog','information_schema') AND cmd.schema_name NOT LIKE 'pg_toast%' AND cmd.schema_name NOT LIKE 'pg_temp%' THEN17      BEGIN18        EXECUTE format('alter table if exists %s enable row level security', cmd.object_identity);19        RAISE LOG 'rls_auto_enable: enabled RLS on %', cmd.object_identity;20      EXCEPTION21        WHEN OTHERS THEN22          RAISE LOG 'rls_auto_enable: failed to enable RLS on %', cmd.object_identity;23      END;24     ELSE25        RAISE LOG 'rls_auto_enable: skip % (either system schema or not in enforced list: %.)', cmd.object_identity, cmd.schema_name;26     END IF;27  END LOOP;28END;29$$;3031DROP EVENT TRIGGER IF EXISTS ensure_rls;32CREATE EVENT TRIGGER ensure_rls33ON ddl_command_end34WHEN TAG IN ('CREATE TABLE', 'CREATE TABLE AS', 'SELECT INTO')35EXECUTE FUNCTION rls_auto_enable();
@@ -108,7 +108,7 @@ Supabase maps every request to one of the roles:
 *   `anon`: an unauthenticated request (the user is not logged in)
 *   `authenticated`: an authenticated request (the user is logged in)
 
-These are actually [Postgres Roles](/docs/guides/database/postgres/roles). You can use these roles within your Policies using the `TO` clause:
+These are actually [Postgres Roles](../roles/index.md). You can use these roles within your Policies using the `TO` clause:
 
 ```
 1create policy "Profiles are viewable by everyone"2on profiles for select3to authenticated, anon4using ( true );56-- OR78create policy "Public profiles are viewable only by authenticated users"9on profiles for select10to authenticated11using ( true );
@@ -116,7 +116,7 @@ These are actually [Postgres Roles](/docs/guides/database/postgres/roles). You c
 
 ##### Anonymous user vs the anon key
 
-Using the `anon` Postgres role is different from an [anonymous user](/docs/guides/auth/auth-anonymous) in Supabase Auth. An anonymous user assumes the `authenticated` role to access the database and can be differentiated from a permanent user by checking the `is_anonymous` claim in the JWT.
+Using the `anon` Postgres role is different from an [anonymous user](../../../auth/auth-anonymous/index.md) in Supabase Auth. An anonymous user assumes the `authenticated` role to access the database and can be differentiated from a permanent user by checking the `is_anonymous` claim in the JWT.
 
 ## Creating policies[#](#creating-policies)
 
@@ -219,7 +219,7 @@ Also, if you are using Cookies for Auth, then you must be mindful of the JWT siz
 
 ### MFA[#](#mfa)
 
-The `auth.jwt()` function can be used to check for [Multi-Factor Authentication](/docs/guides/auth/auth-mfa#enforce-rules-for-mfa-logins). For example, you could restrict a user from updating their profile unless they have at least 2 levels of authentication (Assurance Level 2):
+The `auth.jwt()` function can be used to check for [Multi-Factor Authentication](../../../auth/auth-mfa/index.md#enforce-rules-for-mfa-logins). For example, you could restrict a user from updating their profile unless they have at least 2 levels of authentication (Assurance Level 2):
 
 ```
 1create policy "Restrict updates."2on profiles3as restrictive4for update5to authenticated using (6  (select auth.jwt()->>'aal') = 'aal2'7);
@@ -231,7 +231,7 @@ Supabase provides special "Service" keys, which can be used to bypass RLS. These
 
 Supabase will adhere to the RLS policy of the signed-in user, even if the client library is initialized with a Service Key.
 
-You can also create new [Postgres Roles](/docs/guides/database/postgres/roles) which can bypass Row Level Security using the "bypass RLS" privilege:
+You can also create new [Postgres Roles](../roles/index.md) which can bypass Row Level Security using the "bypass RLS" privilege:
 
 ```
 1alter role "role_name" with bypassrls;
@@ -247,7 +247,7 @@ Based on a series of [tests](https://github.com/GaryAustin1/RLS-Performance), we
 
 ### Add indexes[#](#add-indexes)
 
-Make sure you've added [indexes](/docs/guides/database/postgres/indexes) on any columns used within the Policies which are not already indexed (or primary keys). For a Policy like this:
+Make sure you've added [indexes](../indexes/index.md) on any columns used within the Policies which are not already indexed (or primary keys). For a Policy like this:
 
 ```
 1create policy "rls_test_select" on test_table2to authenticated3using ( (select auth.uid()) = user_id );
@@ -533,6 +533,6 @@ After:
 
 ## More resources[#](#more-resources)
 
-*   [Testing your database](/docs/guides/database/testing)
+*   [Testing your database](../../testing/index.md)
 *   [RLS Guide and Best Practices](https://github.com/orgs/supabase/discussions/14576)
 *   Community repo on testing RLS using [pgTAP and dbdev](https://github.com/usebasejump/supabase-test-helpers/tree/main)

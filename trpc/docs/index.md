@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:44:31.608Z"
 content_hash: "081fc80a86489680c1364f7ebe52aad8a208bd706faeb1835f56acaace101582"
 menu_path: ["tRPC | tRPC"]
 section_path: []
-nav_next: {"path": "quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "trpc/docs/quickstart/index.md", "title": "Quickstart"}
 ---
 
 End-to-end typesafe APIs made easy

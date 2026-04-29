@@ -10,8 +10,8 @@ content_hash: "7d7f5c96d75eef733c50af71528af7fda10089f5cd038f2edb1f6bf3254d372e"
 menu_path: ["PostgreSQL extensions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../rls/index.md", "title": "Row-Level Security (RLS)"}
-nav_next: {"path": "../../relations/index.md", "title": "Drizzle soft relations"}
+nav_prev: {"path": "drizzle/docs/rls/index.md", "title": "Row-Level Security (RLS)"}
+nav_next: {"path": "drizzle/docs/relations/index.md", "title": "Drizzle soft relations"}
 ---
 
 ### `pg_vector`[](#pg_vector)

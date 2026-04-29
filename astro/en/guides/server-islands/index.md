@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:24.211Z"
 content_hash: "e795b6965c4c6a042f1eac7e4903d482ac147752fcffb4aaae6df4b90d79b309"
 menu_path: ["Server islands"]
 section_path: []
-nav_prev: {"path": "../on-demand-rendering/index.md", "title": "On-demand rendering"}
-nav_next: {"path": "../actions/index.md", "title": "Actions"}
+nav_prev: {"path": "astro/en/guides/on-demand-rendering/index.md", "title": "On-demand rendering"}
+nav_next: {"path": "astro/en/guides/actions/index.md", "title": "Actions"}
 ---
 
 # Server islands
@@ -23,17 +23,17 @@ This means your visitor will see the most important parts of your page sooner, a
 
 [Section titled “Server island components”](#server-island-components)
 
-A server island is a normal server-rendered [Astro component](/en/basics/astro-components/) that is instructed to delay rendering until its contents are available.
+A server island is a normal server-rendered [Astro component](../../basics/astro-components/index.md) that is instructed to delay rendering until its contents are available.
 
 Your page will be rendered immediately with any specified [fallback content as a placeholder](#server-island-fallback-content). Then, the component’s own contents are fetched on the client and displayed when available.
 
-With [an adapter installed](/en/guides/on-demand-rendering/#server-adapters) to perform the delayed rendering, add the [`server:defer` directive](/en/reference/directives-reference/#server-directives) to any component on your page to turn it into its own island:
+With [an adapter installed](../on-demand-rendering/index.md#server-adapters) to perform the delayed rendering, add the [`server:defer` directive](../../reference/directives-reference/index.md#server-directives) to any component on your page to turn it into its own island:
 
 ```
 ---import Avatar from '../components/Avatar.astro';---<Avatar server:defer />
 ```
 
-These components can do [anything you normally would in an on-demand rendered page](/en/guides/on-demand-rendering/#on-demand-rendering-features) using an adapter, such as fetch content, and access cookies:
+These components can do [anything you normally would in an on-demand rendered page](../on-demand-rendering/index.md#on-demand-rendering-features) using an adapter, such as fetch content, and access cookies:
 
 ```
 ---import { getUserAvatar } from '../sessions';const userSession = Astro.cookies.get('session');const avatarURL = await getUserAvatar(userSession);---<img alt="User avatar" src={avatarURL} />
@@ -97,7 +97,7 @@ However, [the browser limits URLs to a maximum length of 2048 bytes](https://chr
 
 [Section titled “Accessing the page URL in a server island”](#accessing-the-page-url-in-a-server-island)
 
-In most cases you, your server island component can get information about the page rendering it by [passing props](/en/basics/astro-components/#component-props) like in normal components.
+In most cases you, your server island component can get information about the page rendering it by [passing props](../../basics/astro-components/index.md#component-props) like in normal components.
 
 However, server islands run in their own isolated context outside of the page request. `Astro.url` and `Astro.request.url` in a server island component both return a URL that looks like `/_server-islands/Avatar` instead of the current page’s URL in the browser. Additionally, if you are prerendering the page you will not have access to information such as query parameters in order to pass as props.
 
@@ -125,4 +125,4 @@ astro create-key
 
 Use this value to configure the `ASTRO_KEY` environment variable (e.g. in a `.env` file) and include it in your CI/CD or host’s build settings. This ensures the same key is always reused in the generated bundle so that encryption and decryption remain in sync.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

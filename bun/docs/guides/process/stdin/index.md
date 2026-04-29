@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:13.264Z"
 content_hash: "5d71302d46490713f11c3b00139a257cec400f6f91fb4bbb04e88acd861a7333"
 menu_path: ["Read from stdin"]
 section_path: []
-nav_prev: {"path": "../spawn-stdout/index.md", "title": "Read stdout from a child process"}
-nav_next: {"path": "../../read-file/arraybuffer/index.md", "title": "Read a file to an ArrayBuffer"}
+nav_prev: {"path": "bun/docs/guides/process/spawn-stdout/index.md", "title": "Read stdout from a child process"}
+nav_next: {"path": "bun/docs/guides/read-file/arraybuffer/index.md", "title": "Read a file to an ArrayBuffer"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../read-file/arraybuffer/index.md", "title": "Read a file
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 For CLI tools, it’s often useful to read from `stdin`. In Bun, the `console` object is an `AsyncIterable` that yields lines from `stdin`.
 
@@ -96,7 +96,7 @@ Chunk: hello
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -108,10 +108,10 @@ Parse command-line arguments
 
 Previous
 
-](/docs/guides/process/argv)[
+](../argv/index.md)[
 
 Spawn a child process and communicate using IPC
 
 Next
 
-](/docs/guides/process/ipc)
+](../ipc/index.md)

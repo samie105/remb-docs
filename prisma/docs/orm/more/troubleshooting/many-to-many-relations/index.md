@@ -11,8 +11,8 @@ menu_path: ["Many-to-many relations"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
-nav_next: {"path": "../nextjs/index.md", "title": "Next.js"}
+nav_prev: {"path": "prisma/docs/orm/more/troubleshooting/graphql-autocompletion/index.md", "title": "GraphQL autocompletion"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/nextjs/index.md", "title": "Next.js"}
 ---
 
 Troubleshooting

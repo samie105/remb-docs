@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:58.348Z"
 content_hash: "98d5a8292029d52ca7e7cbb9d47350bbf2e8b4367e147ecf2f56eb701800c3ed"
 menu_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Iceberg Catalog","Iceberg Catalog"]
 section_path: ["Storage","Storage","Analytics Buckets","Analytics Buckets","Iceberg Catalog","Iceberg Catalog"]
-nav_prev: {"path": "../../index.md", "title": "Storage"}
-nav_next: {"path": "../creating-analytics-buckets/index.md", "title": "Creating Analytics Buckets"}
+nav_prev: {"path": "supabase/docs/guides/storage/index.md", "title": "Storage"}
+nav_next: {"path": "supabase/docs/guides/storage/analytics/creating-analytics-buckets/index.md", "title": "Creating Analytics Buckets"}
 ---
 
 # 
@@ -44,7 +44,7 @@ To connect to an analytics bucket, you need:
 
 ### 1\. S3 credentials[#](#1-s3-credentials)
 
-Create S3 credentials through [**Project Settings > Storage**](/dashboard/project/_/storage/settings). See the [S3 Authentication Guide](/docs/guides/storage/s3/authentication) for detailed instructions.
+Create S3 credentials through [**Project Settings > Storage**](/dashboard/project/_/storage/settings). See the [S3 Authentication Guide](../../s3/authentication/index.md) for detailed instructions.
 
 You'll obtain:
 
@@ -74,4 +74,4 @@ A successful response returns the catalog configuration including warehouse loca
 
 *   [Connect with PyIceberg](/docs/guides/storage/analytics/examples/pyiceberg)
 *   [Connect with Apache Spark](/docs/guides/storage/analytics/examples/apache-spark)
-*   [Query with Postgres](/docs/guides/storage/analytics/query-with-postgres)
+*   [Query with Postgres](../query-with-postgres/index.md)

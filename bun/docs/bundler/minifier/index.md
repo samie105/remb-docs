@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:51.797Z"
 content_hash: "1b17b632a795940d2194ea50a81aa25106e48995d8aff10ecc4fe2a7c445c6b8"
 menu_path: ["Minifier"]
 section_path: []
-nav_prev: {"path": "../loaders/index.md", "title": "Loaders"}
-nav_next: {"path": "../plugins/index.md", "title": "Plugins"}
+nav_prev: {"path": "bun/docs/bundler/loaders/index.md", "title": "Loaders"}
+nav_next: {"path": "bun/docs/bundler/plugins/index.md", "title": "Plugins"}
 ---
 
 # Only remove whitespace

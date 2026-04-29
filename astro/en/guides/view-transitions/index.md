@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:14.465Z"
 content_hash: "4314ab8012eb9c5507c43c338e3d2a376957f8a2ae612a19007b1748c89353ca"
 menu_path: ["View transitions"]
 section_path: []
-nav_prev: {"path": "../prefetch/index.md", "title": "Prefetch"}
-nav_next: {"path": "../../basics/astro-components/index.md", "title": "Components"}
+nav_prev: {"path": "astro/en/guides/prefetch/index.md", "title": "Prefetch"}
+nav_next: {"path": "astro/en/basics/astro-components/index.md", "title": "Components"}
 ---
 
 # View transitions
@@ -105,7 +105,7 @@ For example, the following `<video>` will continue to play as you navigate to an
 <video controls muted autoplay transition:persist>  <source    src="https://ia804502.us.archive.org/33/items/GoldenGa1939_3/GoldenGa1939_3_512kb.mp4"    type="video/mp4"  /></video>
 ```
 
-You can also place the directive on an [Astro island](/en/concepts/islands/) (a UI framework component with a [`client:` directive](/en/reference/directives-reference/#client-directives)). If that component exists on the next page, the island from the old page **with its current state** will continue to be displayed, instead of replacing it with the island from the new page.
+You can also place the directive on an [Astro island](../../concepts/islands/index.md) (a UI framework component with a [`client:` directive](../../reference/directives-reference/index.md#client-directives)). If that component exists on the next page, the island from the old page **with its current state** will continue to be displayed, instead of replacing it with the island from the new page.
 
 In the example below, the component’s internal state of the count will not be reset when navigating back and forth across pages that contain the `<Counter />` component with the `transition:persist` attribute.
 
@@ -234,7 +234,7 @@ Links with the `data-astro-reload` attribute will be ignored by the router and a
 
 [Section titled “Trigger navigation”](#trigger-navigation)
 
-You can also trigger client-side navigation via events not normally listened to by the `<ClientRouter />` router using [`navigate()`](/en/reference/modules/astro-transitions/#navigate). This function from the `astro:transitions/client` module can be used in scripts, and in framework components that are hydrated with a [client directive](/en/reference/directives-reference/#client-directives).
+You can also trigger client-side navigation via events not normally listened to by the `<ClientRouter />` router using [`navigate()`](../../reference/modules/astro-transitions/index.md#navigate). This function from the `astro:transitions/client` module can be used in scripts, and in framework components that are hydrated with a [client directive](../../reference/directives-reference/index.md#client-directives).
 
 The following example shows an Astro component that navigates a visitor to another page they select from a menu:
 
@@ -262,7 +262,7 @@ The `<Form />` component can then be rendered on an Astro page that uses the `<C
 
 For backward and forward navigation through the browser history, you can combine `navigate()` with the built-in `history.back()`, `history.forward()` and `history.go()` functions of the browser. If `navigate()` is called during the server-side render of your component, it has no effect.
 
-See the `astro:transitions` reference for more information about the [`navigate()` options](/en/reference/modules/astro-transitions/#navigate).
+See the `astro:transitions` reference for more information about the [`navigate()` options](../../reference/modules/astro-transitions/index.md#navigate).
 
 ### Replace entries in the browser history
 
@@ -272,7 +272,7 @@ Normally, each time you navigate, a new entry is written to the browser’s hist
 
 The `<ClientRouter />` router allows you to overwrite history entries by adding the `data-astro-history` attribute to any individual `<a>` tag.
 
-The `data-astro-history` attribute can be set to the same three values as the [`history` option of the `navigate()` function](/en/reference/modules/astro-transitions/#history-option):
+The `data-astro-history` attribute can be set to the same three values as the [`history` option of the `navigate()` function](../../reference/modules/astro-transitions/index.md#history-option):
 
 *   `"push"`: the router will use `history.pushState` to create a new entry in the browser history.
 *   `"replace"`: the router will use `history.replaceState` to update the URL without adding a new entry into navigation.
@@ -324,7 +324,7 @@ One way to implement this safely is to ensure only a set of known paths can be r
 
 The exact kind of sanitization you need will depend on your site and what you want to allow.
 
-Consider enabling Astro’s [Content Security Policy feature](/en/reference/configuration-reference/#securitycsp) to help protect against cross-site scripting (XSS) risks if using user input with the `navigate()` API.
+Consider enabling Astro’s [Content Security Policy feature](../../reference/configuration-reference/index.md#securitycsp) to help protect against cross-site scripting (XSS) risks if using user input with the `navigate()` API.
 
 ## Fallback control
 
@@ -402,9 +402,9 @@ When navigating between pages with the `<ClientRouter />` component, scripts are
 
 [Section titled “Script re-execution”](#script-re-execution)
 
-[Bundled module scripts](/en/guides/client-side-scripts/#script-processing), which are the default scripts in Astro, are only ever executed once. After initial execution they will be ignored, even if the script exists on the new page after a transition.
+[Bundled module scripts](../client-side-scripts/index.md#script-processing), which are the default scripts in Astro, are only ever executed once. After initial execution they will be ignored, even if the script exists on the new page after a transition.
 
-Unlike bundled module scripts, [inline scripts](/en/guides/client-side-scripts/#unprocessed-scripts) have the potential to be re-executed during a user’s visit to a site if they exist on a page that is visited multiple times. Inline scripts might also re-execute when a visitor navigates to a page without the script, and then back to one with the script.
+Unlike bundled module scripts, [inline scripts](../client-side-scripts/index.md#unprocessed-scripts) have the potential to be re-executed during a user’s visit to a site if they exist on a page that is visited multiple times. Inline scripts might also re-execute when a visitor navigates to a page without the script, and then back to one with the script.
 
 With view transitions, some scripts may no longer re-run after page navigation like they do with full-page browser refreshes. There are several [events during client-side routing that you can listen for](#lifecycle-events), and fire events when they occur. You can wrap an existing script in an event listener to ensure it runs at the proper time in the navigation cycle.
 
@@ -433,7 +433,7 @@ To force inline scripts to re-execute after every transition, add the `data-astr
 <script is:inline data-astro-rerun>...</script>
 ```
 
-To ensure that a script runs every time a page is loaded during client-side navigation, it should be executed by a [lifecycle event](#lifecycle-events). For example, event listeners for `DOMContentLoaded` can be replaced by the [`astro:page-load`](/en/guides/view-transitions/#astropage-load) lifecycle event.
+To ensure that a script runs every time a page is loaded during client-side navigation, it should be executed by a [lifecycle event](#lifecycle-events). For example, event listeners for `DOMContentLoaded` can be replaced by the [`astro:page-load`](index.md#astropage-load) lifecycle event.
 
 If you have code that sets up a global state in an inline script, this state will need to take into account that the script might execute more than once. Check for the global state in your `<script>` tag, and conditionally execute your code where possible. This works because `window` is preserved.
 
@@ -473,7 +473,7 @@ This event is used:
 *   To alter loading, such as loading content you’ve defined in a template rather than from the external URL.
 *   To change the `direction` of the navigation (which is usually either `forward` or `backward`) for custom animation.
 
-Here is an example of using the `astro:before-preparation` event to load a spinner before the content is loaded and stop it immediately after loading. Note that using the [`loader` callback](/en/reference/modules/astro-transitions/#loader) in this way allows asynchronous execution of code.
+Here is an example of using the `astro:before-preparation` event to load a spinner before the content is loaded and stop it immediately after loading. Note that using the [`loader` callback](../../reference/modules/astro-transitions/index.md#loader) in this way allows asynchronous execution of code.
 
 ```
 <script is:inline>  document.addEventListener("astro:before-preparation", (event) => {    const originalLoader = event.loader;    event.loader = async function () {      const { startSpinner } = await import("./spinner.js");      const stop = startSpinner();      await originalLoader();      stop();    };  });</script>
@@ -523,7 +523,7 @@ At this point of the lifecycle, you could choose to define your own swap impleme
 
 **Added in:** `astro@4.15.0`
 
-The [`swapFunctions` object](/en/reference/modules/astro-transitions/#swapfunctions) of the `astro:transitions/client` module provides five utility functions that handle specific swap-related tasks, including handling document attributes, page elements, and script execution. These functions can be used directly to define a custom swap implementation.
+The [`swapFunctions` object](../../reference/modules/astro-transitions/index.md#swapfunctions) of the `astro:transitions/client` module provides five utility functions that handle specific swap-related tasks, including handling document attributes, page elements, and script execution. These functions can be used directly to define a custom swap implementation.
 
 The following example demonstrates how to use these functions to recreate Astro’s built-in swap implementation:
 
@@ -595,4 +595,4 @@ We strongly recommend you always include a `<title>` in each page for accessibil
 
 Astro’s `<ClientRouter />` component includes a CSS media query that disables _all_ view transition animations, including fallback animation, whenever the [`prefers-reduced-motion`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) setting is detected. Instead, the browser will simply swap the DOM elements without an animation.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

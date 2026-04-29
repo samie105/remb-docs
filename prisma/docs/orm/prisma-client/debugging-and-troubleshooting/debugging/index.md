@@ -10,8 +10,8 @@ content_hash: "f9cdac538230f678d9cab4821b6f4d270945246675e09d58572f2aed142eacd2"
 menu_path: ["Debugging"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../client-extensions/type-utilities/index.md", "title": "Type utilities"}
-nav_next: {"path": "../handling-exceptions-and-errors/index.md", "title": "Handling exceptions and errors"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/type-utilities/index.md", "title": "Type utilities"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/debugging-and-troubleshooting/handling-exceptions-and-errors/index.md", "title": "Handling exceptions and errors"}
 ---
 
 # enable only `prisma:engine`-level debugging output

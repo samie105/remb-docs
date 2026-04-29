@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:25.343Z"
 content_hash: "917ef1c74950f3a84795372c9d920aa2aeb814f9cc42bfdd1c179b1d3df25d05"
 menu_path: ["PostgreSQL: Documentation: 18: 68.5. Structure of the Bootstrap BKI File"]
 section_path: []
-nav_prev: {"path": "../bki-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.3.\u00a0BKI File Format"}
-nav_next: {"path": "../bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
+nav_prev: {"path": "postgres/docs/current/bki-format.html/index.md", "title": "PostgreSQL: Documentation: 18: 68.3.\u00a0BKI File Format"}
+nav_next: {"path": "postgres/docs/current/bloom.html/index.md", "title": "PostgreSQL: Documentation: 18: F.6.\u00a0bloom \u2014 bloom filter index access method"}
 ---
 
 The `open` command cannot be used until the tables it uses exist and have entries for the table that is to be opened. (These minimum tables are `pg_class`, `pg_attribute`, `pg_proc`, and `pg_type`.) To allow those tables themselves to be filled, `create` with the `bootstrap` option implicitly opens the created table for data insertion.

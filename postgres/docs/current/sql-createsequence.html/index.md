@@ -10,8 +10,8 @@ content_hash: "727cc9913c759f269e4f0d859dc4de1d84e90b009ad581551c1caad3b59a5500"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE SEQUENCE"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql-createschema.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SCHEMA"}
-nav_next: {"path": "../sql-createserver.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SERVER"}
+nav_prev: {"path": "postgres/docs/current/sql-createschema.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SCHEMA"}
+nav_next: {"path": "postgres/docs/current/sql-createserver.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SERVER"}
 ---
 
 CREATE SEQUENCE — define a new sequence generator

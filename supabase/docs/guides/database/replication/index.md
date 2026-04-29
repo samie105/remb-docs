@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:15.657Z"
 content_hash: "511b8610d70c8ea53c07502a7c4f39df05c8597a4837bf617c9d165e30c67805"
 menu_path: ["Database","Database","Database replication","Database replication","Overview","Overview"]
 section_path: ["Database","Database","Database replication","Database replication","Overview","Overview"]
-nav_prev: {"path": "../query-optimization/index.md", "title": "Query Optimization"}
-nav_next: {"path": "manual-replication-faq/index.md", "title": "Manual Replication FAQ"}
+nav_prev: {"path": "supabase/docs/guides/database/query-optimization/index.md", "title": "Query Optimization"}
+nav_next: {"path": "supabase/docs/guides/database/replication/manual-replication-faq/index.md", "title": "Manual Replication FAQ"}
 ---
 
 # 
@@ -41,7 +41,7 @@ Supabase supports three methods for replicating your database to external destin
 
 Additional databases that are kept in sync with your Primary database. These read-only databases can be deployed across multiple regions, for lower latency and better resource management.
 
-*   [Set up Read Replicas](/docs/guides/platform/read-replicas)
+*   [Set up Read Replicas](../../platform/read-replicas/index.md)
 
 ### Replication[#](#replication)
 
@@ -57,20 +57,20 @@ We are currently working on a new Supabase Warehouse product designed to address
 
 At the moment, BigQuery is the only supported destination, but we are actively working on expanding capabilities.
 
-*   [Set up replication](/docs/guides/database/replication/replication-setup)
+*   [Set up replication](replication-setup/index.md)
 
 ### Manual replication[#](#manual-replication)
 
 Configure your own replication using external tools and Postgres's native logical replication. This gives you full control over the replication process and allows you to use any tool that supports Postgres logical replication.
 
-*   [Set up Manual Replication](/docs/guides/database/replication/manual-replication-setup)
+*   [Set up Manual Replication](manual-replication-setup/index.md)
 
 ## Related features[#](#related-features)
 
 Choose the data syncing method based on your use case:
 
-*   For realtime features and syncing data to clients (browsers, mobile apps), see [Realtime](/docs/guides/realtime)
-*   For deploying read-only databases across multiple regions, see [Read Replicas](/docs/guides/platform/read-replicas)
+*   For realtime features and syncing data to clients (browsers, mobile apps), see [Realtime](../../realtime/index.md)
+*   For deploying read-only databases across multiple regions, see [Read Replicas](../../platform/read-replicas/index.md)
 
 ## Concepts and terms[#](#concepts-and-terms)
 
@@ -102,7 +102,7 @@ Logical replication is typically output in 2 forms, `pgoutput` and `wal2json`. T
 
 When using logical replication, Postgres is then configured to keep WAL files around for longer than it needs them. If the files are removed too quickly, then your `replication slot` will become inactive and, if the database receives a large number of changes in a short time, then the `replication slot` can become lost as it was not able to keep up.
 
-In order to mitigate this, Postgres has many options and settings that can be [tweaked](/docs/guides/database/custom-postgres-config) to manage the WAL usage effectively. Not all of these settings are user configurable as they can impact the stability of your database. For those that are, these should be considered as advanced configuration and not changed without understanding that they can cause additional disk space and resources to be used, as well as incur additional costs.
+In order to mitigate this, Postgres has many options and settings that can be [tweaked](../custom-postgres-config/index.md) to manage the WAL usage effectively. Not all of these settings are user configurable as they can impact the stability of your database. For those that are, these should be considered as advanced configuration and not changed without understanding that they can cause additional disk space and resources to be used, as well as incur additional costs.
 
 Setting
 

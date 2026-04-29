@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:43.416Z"
 content_hash: "83bc7405afddfefeb9a4bd8e77d67115d57c914777d251ce23f591b1e6132f17"
 menu_path: ["PostgreSQL: Documentation: 18: pg_checksums"]
 section_path: []
-nav_prev: {"path": "../app-pgbasebackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_basebackup"}
-nav_next: {"path": "../app-pgcontroldata.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_controldata"}
+nav_prev: {"path": "postgres/docs/current/app-pgbasebackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_basebackup"}
+nav_next: {"path": "postgres/docs/current/app-pgcontroldata.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_controldata"}
 ---
 
 pg\_checksums — enable, disable or check data checksums in a PostgreSQL database cluster

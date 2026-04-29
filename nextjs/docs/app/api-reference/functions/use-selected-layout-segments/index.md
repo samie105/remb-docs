@@ -11,8 +11,8 @@ menu_path: ["useSelectedLayoutSegments"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../use-selected-layout-segment/index.md", "title": "useSelectedLayoutSegment"}
-nav_next: {"path": "../userAgent/index.md", "title": "userAgent"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-selected-layout-segment/index.md", "title": "useSelectedLayoutSegment"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/userAgent/index.md", "title": "userAgent"}
 ---
 
 # useSelectedLayoutSegments
@@ -47,9 +47,9 @@ export default function ExampleClientComponent() {
 
 > **Good to know**:
 > 
-> -   Since `useSelectedLayoutSegments` is a [Client Component](/docs/app/getting-started/server-and-client-components) hook, and Layouts are [Server Components](/docs/app/getting-started/server-and-client-components) by default, `useSelectedLayoutSegments` is usually called via a Client Component that is imported into a Layout.
-> -   The returned segments include [Route Groups](/docs/app/api-reference/file-conventions/route-groups), which you might not want to be included in your UI. You can use the [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) array method to remove items that start with a bracket.
-> -   For [catch-all](/docs/app/api-reference/file-conventions/dynamic-routes#catch-all-segments) routes, the matched segments are returned as a single joined string within the array. For example, given `app/blog/[...slug]/page.js`, calling from `app/layout.js` when visiting `/blog/a/b/c` returns `['blog', 'a/b/c']`, not `['blog', 'a', 'b', 'c']`.
+> -   Since `useSelectedLayoutSegments` is a [Client Component](../../../getting-started/server-and-client-components/index.md) hook, and Layouts are [Server Components](../../../getting-started/server-and-client-components/index.md) by default, `useSelectedLayoutSegments` is usually called via a Client Component that is imported into a Layout.
+> -   The returned segments include [Route Groups](../../file-conventions/route-groups/index.md), which you might not want to be included in your UI. You can use the [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) array method to remove items that start with a bracket.
+> -   For [catch-all](../../file-conventions/dynamic-routes/index.md#catch-all-segments) routes, the matched segments are returned as a single joined string within the array. For example, given `app/blog/[...slug]/page.js`, calling from `app/layout.js` when visiting `/blog/a/b/c` returns `['blog', 'a/b/c']`, not `['blog', 'a', 'b', 'c']`.
 
 ## Parameters[](#parameters)
 
@@ -57,7 +57,7 @@ export default function ExampleClientComponent() {
 const segments = useSelectedLayoutSegments(parallelRoutesKey?: string)
 ```
 
-`useSelectedLayoutSegments` _optionally_ accepts a [`parallelRoutesKey`](/docs/app/api-reference/file-conventions/parallel-routes#with-useselectedlayoutsegments), which allows you to read the active route segment within that slot.
+`useSelectedLayoutSegments` _optionally_ accepts a [`parallelRoutesKey`](../../file-conventions/parallel-routes/index.md#with-useselectedlayoutsegments), which allows you to read the active route segment within that slot.
 
 ## Returns[](#returns)
 

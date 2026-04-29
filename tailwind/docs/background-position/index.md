@@ -10,8 +10,8 @@ content_hash: "2bc972b6d0ae7865c6d01d78b6da1366275a96e38e74feb7824887144edb6080"
 menu_path: ["background-position"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../background-origin/index.md", "title": "background-origin"}
-nav_next: {"path": "../background-repeat/index.md", "title": "background-repeat"}
+nav_prev: {"path": "tailwind/docs/background-origin/index.md", "title": "background-origin"}
+nav_next: {"path": "tailwind/docs/background-repeat/index.md", "title": "background-repeat"}
 ---
 
 # background-position
@@ -139,7 +139,7 @@ Prefix a `background-position` utility with a breakpoint variant like `md:` to o
 <div class="bg-center md:bg-top ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

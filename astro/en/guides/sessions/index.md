@@ -9,17 +9,17 @@ last_crawled_at: "2026-04-18T16:41:26.905Z"
 content_hash: "d139733edef7cf6167f49f6ff012ef00b629076cdfe5c0e85dabe77e62f0bd2f"
 menu_path: ["Sessions"]
 section_path: []
-nav_prev: {"path": "../actions/index.md", "title": "Actions"}
-nav_next: {"path": "../../upgrade-astro/index.md", "title": "Upgrade Astro"}
+nav_prev: {"path": "astro/en/guides/actions/index.md", "title": "Actions"}
+nav_next: {"path": "astro/en/upgrade-astro/index.md", "title": "Upgrade Astro"}
 ---
 
 # Sessions
 
 **Added in:** `astro@5.7.0`
 
-Sessions are used to share data between requests for [on-demand rendered pages](/en/guides/on-demand-rendering/).
+Sessions are used to share data between requests for [on-demand rendered pages](../on-demand-rendering/index.md).
 
-Unlike [`cookies`](/en/guides/on-demand-rendering/#cookies), sessions are stored on the server, so you can store larger amounts of data without worrying about size limits or security issues. They are useful for storing things like user data, shopping carts, and form state, and they work without any client-side JavaScript:
+Unlike [`cookies`](../on-demand-rendering/index.md#cookies), sessions are stored on the server, so you can store larger amounts of data without worrying about size limits or security issues. They are useful for storing things like user data, shopping carts, and form state, and they work without any client-side JavaScript:
 
 ```
 ---export const prerender = false; // Not needed with 'server' outputconst cart = await Astro.session?.get('cart');---
@@ -30,26 +30,26 @@ Unlike [`cookies`](/en/guides/on-demand-rendering/#cookies), sessions are stored
 
 [Section titled “Configuring sessions”](#configuring-sessions)
 
-Sessions require a storage driver to store the session data. The [Node](/en/guides/integrations-guide/node/#sessions), [Cloudflare](/en/guides/integrations-guide/cloudflare/#sessions), and [Netlify](/en/guides/integrations-guide/netlify/#sessions) adapters automatically configure a default driver for you, but other adapters currently require you to [specify a driver manually](/en/reference/configuration-reference/#sessiondriver).
+Sessions require a storage driver to store the session data. The [Node](../integrations-guide/node/index.md#sessions), [Cloudflare](../integrations-guide/cloudflare/index.md#sessions), and [Netlify](/en/guides/integrations-guide/netlify/#sessions) adapters automatically configure a default driver for you, but other adapters currently require you to [specify a driver manually](../../reference/configuration-reference/index.md#sessiondriver).
 
 ```
 import { defineConfig, sessionDrivers } from 'astro/config'import vercel from '@astrojs/vercel'
 export default defineConfig({  adapter: vercel()  session: {    driver: sessionDrivers.redis({      url: process.env.REDIS_URL    }),  }})
 ```
 
-See [the `session` configuration option](/en/reference/configuration-reference/#session-options) for more details on setting a storage driver, and other configurable options.
+See [the `session` configuration option](../../reference/configuration-reference/index.md#session-options) for more details on setting a storage driver, and other configurable options.
 
 ## Interacting with session data
 
 [Section titled “Interacting with session data”](#interacting-with-session-data)
 
-The [`session` object](/en/reference/api-reference/#session) allows you to interact with the stored user state (e.g. adding items to a shopping cart) and the session ID (e.g. deleting the session ID cookie when logging out). The object is accessible as `Astro.session` in your Astro components and pages and as `context.session` object in API endpoints, middleware, and actions.
+The [`session` object](../../reference/api-reference/index.md#session) allows you to interact with the stored user state (e.g. adding items to a shopping cart) and the session ID (e.g. deleting the session ID cookie when logging out). The object is accessible as `Astro.session` in your Astro components and pages and as `context.session` object in API endpoints, middleware, and actions.
 
-The session is generated automatically when it is first used and can be regenerated at any time with [`session.regenerate()`](/en/reference/api-reference/#sessionregenerate) or destroyed with [`session.destroy()`](/en/reference/api-reference/#sessiondestroy).
+The session is generated automatically when it is first used and can be regenerated at any time with [`session.regenerate()`](../../reference/api-reference/index.md#sessionregenerate) or destroyed with [`session.destroy()`](../../reference/api-reference/index.md#sessiondestroy).
 
-For many use cases, you will only need to use [`session.get()`](/en/reference/api-reference/#sessionget) and [`session.set()`](/en/reference/api-reference/#sessionset).
+For many use cases, you will only need to use [`session.get()`](../../reference/api-reference/index.md#sessionget) and [`session.set()`](../../reference/api-reference/index.md#sessionset).
 
-See [the Sessions API reference](/en/reference/api-reference/#session) for more details.
+See [the Sessions API reference](../../reference/api-reference/index.md#session) for more details.
 
 ### Astro components and pages
 
@@ -100,7 +100,7 @@ export const onRequest = defineMiddleware(async (context, next) => {  context.se
 
 By default session data is untyped, and you can store arbitrary data in any key. Values are serialized and deserialized using [devalue](https://github.com/Rich-Harris/devalue), which is the same library used in content collections and actions. This means that supported types are the same, and include strings, numbers, `Date`, `Map`, `Set`, `URL`, arrays, and plain objects.
 
-You can optionally [define TypeScript types](/en/guides/typescript/#extending-global-types) for your session data by creating a `src/env.d.ts` file and adding a declaration for the `App.SessionData` type:
+You can optionally [define TypeScript types](../typescript/index.md#extending-global-types) for your session data by creating a `src/env.d.ts` file and adding a declaration for the `App.SessionData` type:
 
 ```
 declare namespace App {  interface SessionData {    user: {      id: string;      name: string;    };    cart: string[];  }}
@@ -114,4 +114,4 @@ const something = await Astro.session?.get('something');// const something: any
 Astro.session?.set('user', { id: 1, name: 'Houston' });// Error: Argument of type '{ id: number; name: string }' is not assignable to parameter of type '{ id: string; name: string; }'.---
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

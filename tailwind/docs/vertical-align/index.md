@@ -10,8 +10,8 @@ content_hash: "8596080ea1606072aaa2df0703d711ca745f90187d182922686e775ccd7775de"
 menu_path: ["vertical-align"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text-indent/index.md", "title": "text-indent"}
-nav_next: {"path": "../white-space/index.md", "title": "white-space"}
+nav_prev: {"path": "tailwind/docs/text-indent/index.md", "title": "text-indent"}
+nav_next: {"path": "tailwind/docs/white-space/index.md", "title": "white-space"}
 ---
 
 # vertical-align
@@ -138,7 +138,7 @@ Prefix a `vertical-align` utility with a breakpoint variant like `md:` to only a
 <span class="align-middle md:align-top ...">  <!-- ... --></span>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

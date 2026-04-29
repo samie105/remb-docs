@@ -10,8 +10,8 @@ content_hash: "c90b7c9d33b2986b6f17b397391d4dcf0df5c4157e673064004e2f3ecfe8a9fc"
 menu_path: ["drizzle-kit check"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-kit-export/index.md", "title": "drizzle-kit export"}
-nav_next: {"path": "../drizzle-kit-up/index.md", "title": "drizzle-kit up"}
+nav_prev: {"path": "drizzle/docs/drizzle-kit-export/index.md", "title": "drizzle-kit export"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-up/index.md", "title": "drizzle-kit up"}
 ---
 
 `drizzle-kit check` command lets you check consistency of your generated SQL migrations history.

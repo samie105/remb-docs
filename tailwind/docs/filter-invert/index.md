@@ -10,8 +10,8 @@ content_hash: "ddd2630a265cab2bc7b7822ba194fe6cb536edc98630ee68b3fd92e6e7f89d98"
 menu_path: ["filter: invert()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
-nav_next: {"path": "../filter-saturate/index.md", "title": "filter: saturate()"}
+nav_prev: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
+nav_next: {"path": "tailwind/docs/filter-saturate/index.md", "title": "filter: saturate()"}
 ---
 
 # filter: invert()
@@ -78,7 +78,7 @@ Prefix a `filter: invert()` utility with a breakpoint variant like `md:` to only
 <img class="invert md:invert-0 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

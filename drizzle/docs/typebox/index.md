@@ -10,8 +10,8 @@ content_hash: "367bdd24db01292f4ea9a722a4512d99ca1907602bf4f9772d4b18d61ab26963"
 menu_path: ["typebox"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../valibot/index.md", "title": "valibot"}
-nav_next: {"path": "../arktype/index.md", "title": "arktype"}
+nav_prev: {"path": "drizzle/docs/valibot/index.md", "title": "valibot"}
+nav_next: {"path": "drizzle/docs/arktype/index.md", "title": "arktype"}
 ---
 
 ```ts

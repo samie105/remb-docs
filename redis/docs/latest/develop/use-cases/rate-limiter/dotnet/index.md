@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:01:41.274Z"
 content_hash: "2fdabad1bc95c58fe4a0e1764b7acc34d03b3449da4133fb0e379a10e5db1e9f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and .NET","→","Token bucket rate limiter with Redis and .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and .NET","→","Token bucket rate limiter with Redis and .NET"]
-nav_prev: {"path": "../index.md", "title": "Token bucket rate limiter with Redis"}
-nav_next: {"path": "../go/index.md", "title": "Token bucket rate limiter with Redis and Go"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/index.md", "title": "Token bucket rate limiter with Redis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/go/index.md", "title": "Token bucket rate limiter with Redis and Go"}
 ---
 
 # Token bucket rate limiter with Redis and .NET
 
 Implement a token bucket rate limiter using Redis and Lua scripts in .NET
 
-This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in .NET with the [`StackExchange.Redis`](/docs/latest/develop/clients/dotnet/) client library.
+This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in .NET with the [`StackExchange.Redis`](../../../clients/dotnet/index.md) client library.
 
 ## Overview
 
@@ -28,7 +28,7 @@ Rate limiting is a critical technique for controlling the rate at which operatio
 *   Ensuring fair resource allocation across multiple clients
 *   Throttling background jobs or batch operations
 
-The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the .NET implementation using the [`StackExchange.Redis`](/docs/latest/develop/clients/dotnet/) client library, taking advantage of `ConnectionMultiplexer` for connection management and `record` types for clean result types.
+The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the .NET implementation using the [`StackExchange.Redis`](../../../clients/dotnet/index.md) client library, taking advantage of `ConnectionMultiplexer` for connection management and `record` types for clean result types.
 
 ## How it works
 
@@ -320,9 +320,9 @@ catch (RedisException ex)
 
 *   [EVAL command](/docs/latest/commands/eval/) - Execute Lua scripts
 *   [EVALSHA command](/docs/latest/commands/evalsha/) - Execute cached Lua scripts
-*   [Lua scripting](/docs/latest/develop/programmability/eval-intro/) - Introduction to Redis Lua scripting
+*   [Lua scripting](../../../programmability/eval-intro/index.md) - Introduction to Redis Lua scripting
 *   [HMGET command](/docs/latest/commands/hmget/) - Get multiple hash fields
 *   [HMSET command](/docs/latest/commands/hmset/) - Set multiple hash fields
-*   [.NET client](/docs/latest/develop/clients/dotnet/) - Redis .NET client documentation
+*   [.NET client](../../../clients/dotnet/index.md) - Redis .NET client documentation
 
 ## On this page

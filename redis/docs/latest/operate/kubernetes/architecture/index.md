@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:16.821Z"
 content_hash: "6c1e2fe2ebb0472449f2777809f11caa9df9f9ec3996b1b1952121f53c58d4fb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise for Kubernetes architecture","→","Redis Enterprise for Kubernetes architecture"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Enterprise for Kubernetes","→","Redis Enterprise for Kubernetes","→\n      \n        Redis Enterprise for Kubernetes architecture","→","Redis Enterprise for Kubernetes architecture"]
-nav_prev: {"path": "../../../integrate/write-behind/reference/data-transformation-block-types/add_field/index.md", "title": "add_field"}
-nav_next: {"path": "../networking/database-connectivity/index.md", "title": "Database connectivity"}
+nav_prev: {"path": "redis/docs/latest/integrate/write-behind/reference/data-transformation-block-types/add_field/index.md", "title": "add_field"}
+nav_next: {"path": "redis/docs/latest/operate/kubernetes/networking/database-connectivity/index.md", "title": "Database connectivity"}
 ---
 
 # Redis Enterprise for Kubernetes architecture

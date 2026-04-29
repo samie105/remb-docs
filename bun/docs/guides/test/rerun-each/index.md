@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:53.638Z"
 content_hash: "a6ead387853e048be6abab93abdb710577811f6caee65dd68003125ab8f9fb92"
 menu_path: ["Re-run tests multiple times with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "../mock-functions/index.md", "title": "Mock functions in `bun test`"}
-nav_next: {"path": "../run-tests/index.md", "title": "Run your tests with the Bun test runner"}
+nav_prev: {"path": "bun/docs/guides/test/mock-functions/index.md", "title": "Mock functions in `bun test`"}
+nav_next: {"path": "bun/docs/guides/test/run-tests/index.md", "title": "Run your tests with the Bun test runner"}
 ---
 
 # re-run each test 10 times
@@ -19,7 +19,7 @@ bun test --rerun-each 10
 
 * * *
 
-See [Docs > Test runner](/docs/test) for complete documentation of `bun test`.
+See [Docs > Test runner](../../../test/index.md) for complete documentation of `bun test`.
 
 Was this page helpful?
 
@@ -31,10 +31,10 @@ Bail early with the Bun test runner
 
 Previous
 
-](/docs/guides/test/bail)[
+](../bail/index.md)[
 
 Using Testing Library with Bun
 
 Next
 
-](/docs/guides/test/testing-library)
+](../testing-library/index.md)

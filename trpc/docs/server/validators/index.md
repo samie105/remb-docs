@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:50.419Z"
 content_hash: "4435ee49b28ff144dacc40a26c867fa346a26abb34494c85862715f5cc61f4db"
 menu_path: ["Input & Output Validators"]
 section_path: []
-nav_prev: {"path": "../subscriptions/index.md", "title": "Subscriptions"}
-nav_next: {"path": "../websockets/index.md", "title": "WebSockets"}
+nav_prev: {"path": "trpc/docs/server/subscriptions/index.md", "title": "Subscriptions"}
+nav_next: {"path": "trpc/docs/server/websockets/index.md", "title": "WebSockets"}
 ---
 
 tRPC procedures may define validation logic for their input and/or output, and validators are also used to infer the types of inputs and outputs (using the [Standard Schema](https://standardschema.dev/) interface if available, or custom interfaces for supported validators if not). We have first class support for many popular validators, and you can [integrate validators](#contributing-your-own-validator-library) which we don't directly support.

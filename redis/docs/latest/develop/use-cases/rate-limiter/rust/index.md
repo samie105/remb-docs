@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:12:57.272Z"
 content_hash: "d0025735e413d133daf4ef52bbb7f265c3b25425773e31b01c0b6227ba4d0cc0"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Rust","→","Token bucket rate limiter with Redis and Rust"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Rust","→","Token bucket rate limiter with Redis and Rust"]
-nav_prev: {"path": "../ruby/index.md", "title": "Token bucket rate limiter with Redis and Ruby"}
-nav_next: {"path": "../../session-store/index.md", "title": "Redis session store"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/ruby/index.md", "title": "Token bucket rate limiter with Redis and Ruby"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/index.md", "title": "Redis session store"}
 ---
 
 # Token bucket rate limiter with Redis and Rust
 
 Implement a token bucket rate limiter using Redis and Lua scripts in Rust
 
-This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in Rust with the [`redis-rs`](/docs/latest/develop/clients/rust/) client library.
+This guide shows you how to implement a distributed token bucket rate limiter using Redis and Lua scripts in Rust with the [`redis-rs`](../../../clients/rust/index.md) client library.
 
 ## Overview
 
@@ -28,7 +28,7 @@ Rate limiting is a critical technique for controlling the rate at which operatio
 *   Ensuring fair resource allocation across multiple clients
 *   Throttling background jobs or batch operations
 
-The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Rust implementation using the [`redis-rs`](/docs/latest/develop/clients/rust/) client library, taking advantage of Rust's type safety, ownership model, and zero-cost abstractions.
+The **token bucket algorithm** is a popular rate limiting approach that allows bursts of traffic while maintaining an average rate limit over time. This guide covers the Rust implementation using the [`redis-rs`](../../../clients/rust/index.md) client library, taking advantage of Rust's type safety, ownership model, and zero-cost abstractions.
 
 ## How it works
 
@@ -421,9 +421,9 @@ if tokens_acquired == 5 {
 
 *   [EVAL command](/docs/latest/commands/eval/) - Execute Lua scripts
 *   [EVALSHA command](/docs/latest/commands/evalsha/) - Execute cached Lua scripts
-*   [Lua scripting](/docs/latest/develop/programmability/eval-intro/) - Introduction to Redis Lua scripting
+*   [Lua scripting](../../../programmability/eval-intro/index.md) - Introduction to Redis Lua scripting
 *   [HMGET command](/docs/latest/commands/hmget/) - Get multiple hash fields
 *   [HMSET command](/docs/latest/commands/hmset/) - Set multiple hash fields
-*   [Rust client](/docs/latest/develop/clients/rust/) - Redis Rust client documentation
+*   [Rust client](../../../clients/rust/index.md) - Redis Rust client documentation
 
 ## On this page

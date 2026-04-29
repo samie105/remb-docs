@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:36.480Z"
 content_hash: "bc1a120cf8247483ce4e9f2c6fe07350d05aab950ae83f7e0616f08d11a709d5"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Scripting with Lua","→","Scripting with Lua"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Scripting with Lua","→","Scripting with Lua"]
-nav_prev: {"path": "../../get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
-nav_next: {"path": "../functions-intro/index.md", "title": "Redis functions"}
+nav_prev: {"path": "redis/docs/latest/develop/get-started/vector-database/index.md", "title": "Redis as a vector database quick start guide"}
+nav_next: {"path": "redis/docs/latest/develop/programmability/functions-intro/index.md", "title": "Redis functions"}
 ---
 
 # Scripting with Lua
@@ -29,9 +29,9 @@ Scripting offers several properties that can be valuable in many cases. These in
 
 Lua lets you run part of your application logic inside Redis. Such scripts can perform conditional updates across multiple keys, possibly combining several different data types atomically.
 
-Scripts are executed in Redis by an embedded execution engine. Presently, Redis supports a single scripting engine, the [Lua 5.1](https://www.lua.org/) interpreter. Please refer to the [Redis Lua API Reference](/docs/latest/develop/programmability/lua-api/) page for complete documentation.
+Scripts are executed in Redis by an embedded execution engine. Presently, Redis supports a single scripting engine, the [Lua 5.1](https://www.lua.org/) interpreter. Please refer to the [Redis Lua API Reference](../lua-api/index.md) page for complete documentation.
 
-Although the server executes them, Eval scripts are regarded as a part of the client-side application, which is why they're not named, versioned, or persisted. So all scripts may need to be reloaded by the application at any time if missing (after a server restart, fail-over to a replica, etc.). As of version 7.0, [Redis Functions](/docs/latest/develop/programmability/functions-intro/) offer an alternative approach to programmability which allow the server itself to be extended with additional programmed logic.
+Although the server executes them, Eval scripts are regarded as a part of the client-side application, which is why they're not named, versioned, or persisted. So all scripts may need to be reloaded by the application at any time if missing (after a server restart, fail-over to a replica, etc.). As of version 7.0, [Redis Functions](../functions-intro/index.md) offer an alternative approach to programmability which allow the server itself to be extended with additional programmed logic.
 
 ## Getting started
 
@@ -78,7 +78,7 @@ While key names in Redis are just strings, unlike any other string values, these
 
 Any input to the function that isn't the name of a key is a regular input argument.
 
-In the example above, both _Hello_ and _Parameterization!_ regular input arguments for the script. Because the script doesn't touch any keys, we use the numerical argument _0_ to specify there are no key name arguments. The execution context makes arguments available to the script through [_KEYS_](/docs/latest/develop/programmability/lua-api/#the-keys-global-variable) and [_ARGV_](/docs/latest/develop/programmability/lua-api/#the-argv-global-variable) global runtime variables. The _KEYS_ table is pre-populated with all key name arguments provided to the script before its execution, whereas the _ARGV_ table serves a similar purpose but for regular arguments.
+In the example above, both _Hello_ and _Parameterization!_ regular input arguments for the script. Because the script doesn't touch any keys, we use the numerical argument _0_ to specify there are no key name arguments. The execution context makes arguments available to the script through [_KEYS_](../lua-api/index.md#the-keys-global-variable) and [_ARGV_](../lua-api/index.md#the-argv-global-variable) global runtime variables. The _KEYS_ table is pre-populated with all key name arguments provided to the script before its execution, whereas the _ARGV_ table serves a similar purpose but for regular arguments.
 
 The following attempts to demonstrate the distribution of input arguments between the scripts _KEYS_ and _ARGV_ runtime global variables:
 
@@ -91,11 +91,11 @@ redis> EVAL "return { KEYS[1], KEYS[2], ARGV[1], ARGV[2], ARGV[3] }" 2 key1 key2
 5) "arg3"
 ```
 
-**Note:** as can been seen above, Lua's table arrays are returned as [RESP2 array replies](/docs/latest/develop/reference/protocol-spec/#resp-arrays), so it is likely that your client's library will convert it to the native array data type in your programming language. Please refer to the rules that govern [data type conversion](/docs/latest/develop/programmability/lua-api/#data-type-conversion) for more pertinent information.
+**Note:** as can been seen above, Lua's table arrays are returned as [RESP2 array replies](../../reference/protocol-spec/index.md#resp-arrays), so it is likely that your client's library will convert it to the native array data type in your programming language. Please refer to the rules that govern [data type conversion](../lua-api/index.md#data-type-conversion) for more pertinent information.
 
 ## Interacting with Redis from a script
 
-It is possible to call Redis commands from a Lua script either via [`redis.call()`](/docs/latest/develop/programmability/lua-api/#redis.call) or [`redis.pcall()`](/docs/latest/develop/programmability/lua-api/#redis.pcall).
+It is possible to call Redis commands from a Lua script either via [`redis.call()`](../lua-api/index.md#redis.call) or [`redis.pcall()`](../lua-api/index.md#redis.pcall).
 
 The two are nearly identical. Both execute a Redis command along with its provided arguments, if these represent a well-formed command. However, the difference between the two functions lies in the manner in which runtime errors (such as syntax errors, for example) are handled. Errors raised from calling `redis.call()` function are returned directly to the client that had executed it. Conversely, errors encountered when calling the `redis.pcall()` function are returned to the script's execution context instead for possible handling.
 
@@ -173,19 +173,19 @@ The Redis [`SCRIPT`](/docs/latest/commands/script/) provides several ways for co
     
 *   [`SCRIPT KILL`](/docs/latest/commands/script-kill/): this command is the only way to interrupt a long-running script (a.k.a slow script), short of shutting down the server. A script is deemed as slow once its execution's duration exceeds the configured [maximum execution time](/docs/latest/develop/programmability/#maximum-execution-time) threshold. The [`SCRIPT KILL`](/docs/latest/commands/script-kill/) command can be used only with scripts that did not modify the dataset during their execution (since stopping a read-only script does not violate the scripting engine's guaranteed atomicity).
     
-*   [`SCRIPT DEBUG`](/docs/latest/commands/script-debug/): controls use of the built-in [Redis Lua scripts debugger](/docs/latest/develop/programmability/lua-debugging/).
+*   [`SCRIPT DEBUG`](/docs/latest/commands/script-debug/): controls use of the built-in [Redis Lua scripts debugger](../lua-debugging/index.md).
     
 
 ## Script replication
 
-In standalone deployments, a single Redis instance called _master_ manages the entire database. A [clustered deployment](/docs/latest/operate/oss_and_stack/management/scaling/) has at least three masters managing the sharded database. Redis uses [replication](/docs/latest/operate/oss_and_stack/management/replication/) to maintain one or more replicas, or exact copies, for any given master.
+In standalone deployments, a single Redis instance called _master_ manages the entire database. A [clustered deployment](../../../operate/oss_and_stack/management/scaling/index.md) has at least three masters managing the sharded database. Redis uses [replication](../../../operate/oss_and_stack/management/replication/index.md) to maintain one or more replicas, or exact copies, for any given master.
 
 Because scripts can modify the data, Redis ensures all write operations performed by a script are also sent to replicas to maintain consistency. There are two conceptual approaches when it comes to script replication:
 
 1.  Verbatim replication: the master sends the script's source code to the replicas. Replicas then execute the script and apply the write effects. This mode can save on replication bandwidth in cases where short scripts generate many commands (for example, a _for_ loop). However, this replication mode means that replicas redo the same work done by the master, which is wasteful. More importantly, it also requires [all write scripts to be deterministic](#scripts-with-deterministic-writes).
 2.  Effects replication: only the script's data-modifying commands are replicated. Replicas then run the commands without executing any scripts. While potentially lengthier in terms of network traffic, this replication mode is deterministic by definition and therefore doesn't require special consideration.
 
-Verbatim script replication was the only mode supported until Redis 3.2, in which effects replication was added. The _lua-replicate-commands_ configuration directive and [`redis.replicate_commands()`](/docs/latest/develop/programmability/lua-api/#redis.replicate_commands) Lua API can be used to enable it.
+Verbatim script replication was the only mode supported until Redis 3.2, in which effects replication was added. The _lua-replicate-commands_ configuration directive and [`redis.replicate_commands()`](../lua-api/index.md#redis.replicate_commands) Lua API can be used to enable it.
 
 In Redis 5.0, effects replication became the default mode. As of Redis 7.0, verbatim replication is no longer supported.
 
@@ -209,7 +209,7 @@ Unless already enabled by the server's configuration or defaults (before Redis 7
 redis.replicate_commands()
 ```
 
-The [`redis.replicate_commands()`](/docs/latest/develop/programmability/lua-api/#redis.replicate_commands) function returns \_true) if script effects replication was enabled; otherwise, if the function was called after the script already called a write command, it returns _false_, and normal whole script replication is used.
+The [`redis.replicate_commands()`](../lua-api/index.md#redis.replicate_commands) function returns \_true) if script effects replication was enabled; otherwise, if the function was called after the script already called a write command, it returns _false_, and normal whole script replication is used.
 
 This function is deprecated as of Redis 7.0, and while you can still call it, it will always succeed.
 
@@ -234,7 +234,7 @@ To enforce the deterministic behavior of scripts, Redis does the following:
 *   Lua does not export commands to access the system time or other external states.
 *   Redis will block the script with an error if a script calls a Redis command able to alter the data set **after** a Redis _random_ command like [`RANDOMKEY`](/docs/latest/commands/randomkey/), [`SRANDMEMBER`](/docs/latest/commands/srandmember/), [`TIME`](/docs/latest/commands/time/). That means that read-only scripts that don't modify the dataset can call those commands. Note that a _random command_ does not necessarily mean a command that uses random numbers: any non-deterministic command is considered as a random command (the best example in this regard is the [`TIME`](/docs/latest/commands/time/) command).
 *   In Redis version 4.0, commands that may return elements in random order, such as [`SMEMBERS`](/docs/latest/commands/smembers/) (because Redis Sets are _unordered_), exhibit a different behavior when called from Lua, and undergo a silent lexicographical sorting filter before returning data to Lua scripts. So `redis.call("SMEMBERS",KEYS[1])` will always return the Set elements in the same order, while the same command invoked by normal clients may return different results even if the key contains exactly the same elements. However, starting with Redis 5.0, this ordering is no longer performed because replicating effects circumvents this type of non-determinism. In general, even when developing for Redis 4.0, never assume that certain commands in Lua will be ordered, but instead rely on the documentation of the original command you call to see the properties it provides.
-*   Lua's pseudo-random number generation function `math.random` is modified and always uses the same seed for every execution. This means that calling [`math.random`](/docs/latest/develop/programmability/lua-api/#runtime-libraries) will always generate the same sequence of numbers every time a script is executed (unless `math.randomseed` is used).
+*   Lua's pseudo-random number generation function `math.random` is modified and always uses the same seed for every execution. This means that calling [`math.random`](../lua-api/index.md#runtime-libraries) will always generate the same sequence of numbers every time a script is executed (unless `math.randomseed` is used).
 
 All that said, you can still use commands that write and random behavior with a simple trick. Imagine that you want to write a Redis script that will populate a list with N random integers.
 
@@ -300,13 +300,13 @@ Note: an important part of this behavior is that the PRNG that Redis implements 
 
 ## Debugging Eval scripts
 
-Starting with Redis 3.2, Redis has support for native Lua debugging. The Redis Lua debugger is a remote debugger consisting of a server, which is Redis itself, and a client, which is by default [`redis-cli`](/docs/latest/develop/tools/cli/).
+Starting with Redis 3.2, Redis has support for native Lua debugging. The Redis Lua debugger is a remote debugger consisting of a server, which is Redis itself, and a client, which is by default [`redis-cli`](../../tools/cli/index.md).
 
-The Lua debugger is described in the [Lua scripts debugging](/docs/latest/develop/programmability/lua-debugging/) section of the Redis documentation.
+The Lua debugger is described in the [Lua scripts debugging](../lua-debugging/index.md) section of the Redis documentation.
 
 ## Execution under low memory conditions
 
-When memory usage in Redis exceeds the `maxmemory` limit, the first write command encountered in the script that uses additional memory will cause the script to abort (unless [`redis.pcall`](/docs/latest/develop/programmability/lua-api/#redis.pcall) was used).
+When memory usage in Redis exceeds the `maxmemory` limit, the first write command encountered in the script that uses additional memory will cause the script to abort (unless [`redis.pcall`](../lua-api/index.md#redis.pcall) was used).
 
 However, an exception to the above is when the script's first write command does not use additional memory, as is the case with (for example, [`DEL`](/docs/latest/commands/del/) and [`LREM`](/docs/latest/commands/lrem/)). In this case, Redis will allow all commands in the script to run to ensure atomicity. If subsequent writes in the script consume additional memory, Redis' memory usage can exceed the threshold set by the `maxmemory` configuration directive.
 
@@ -332,6 +332,6 @@ Note that as soon as Redis sees the `#!` comment, it'll treat the script as if i
 
 Another difference is that scripts without `#!` can run commands that access keys belonging to different cluster hash slots, but ones with `#!` inherit the default flags, so they cannot.
 
-Please refer to [Script flags](/docs/latest/develop/programmability/lua-api/#script_flags) to learn about the various scripts and the defaults.
+Please refer to [Script flags](../lua-api/index.md#script_flags) to learn about the various scripts and the defaults.
 
 ## On this page

@@ -10,8 +10,8 @@ content_hash: "7add3df87085313f4d5d1b986aa2cbc42a9074af52a263599cc3ca4969840c79"
 menu_path: ["deno lsp"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../publish/index.md", "title": "deno publish"}
-nav_next: {"path": "../remove/index.md", "title": "deno remove"}
+nav_prev: {"path": "deno/runtime/reference/cli/publish/index.md", "title": "deno publish"}
+nav_next: {"path": "deno/runtime/reference/cli/remove/index.md", "title": "deno remove"}
 ---
 
 **On this page**
@@ -39,5 +39,5 @@ The language server communicates over stdin/stdout using the [Language Server Pr
 
 For instructions on configuring your editor to use the Deno language server, see:
 
--   [Deno & VS Code](/runtime/reference/vscode/)
--   [LSP integration](/runtime/reference/lsp_integration/) for other editors
+-   [Deno & VS Code](../../vscode/index.md)
+-   [LSP integration](../../lsp_integration/index.md) for other editors

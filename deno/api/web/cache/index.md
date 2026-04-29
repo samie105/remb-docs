@@ -10,8 +10,8 @@ content_hash: "393178582995d7afcad7a46012114f7deba9de0eb83f6d3c3e1bc3d9db1c5a99"
 menu_path: ["Cache - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../all_symbols/index.md", "title": "All Symbols - Web documentation"}
-nav_next: {"path": "../canvas/index.md", "title": "Canvas - Web documentation"}
+nav_prev: {"path": "deno/api/web/all_symbols/index.md", "title": "All Symbols - Web documentation"}
+nav_next: {"path": "deno/api/web/canvas/index.md", "title": "Canvas - Web documentation"}
 ---
 
 I

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:17.362Z"
 content_hash: "7392feab50d973662a7db6b9f6aebba2e4a42eb3282fdaeffad129fbe035ae41"
 menu_path: ["Database","Database","GUI quickstarts","GUI quickstarts","DBeaver","DBeaver"]
 section_path: ["Database","Database","GUI quickstarts","GUI quickstarts","DBeaver","DBeaver"]
-nav_prev: {"path": "../custom-postgres-config/index.md", "title": "Customizing Postgres configs"}
-nav_next: {"path": "../debugging-performance/index.md", "title": "Debugging performance issues"}
+nav_prev: {"path": "supabase/docs/guides/database/custom-postgres-config/index.md", "title": "Customizing Postgres configs"}
+nav_next: {"path": "supabase/docs/guides/database/debugging-performance/index.md", "title": "Debugging performance issues"}
 ---
 
 # 

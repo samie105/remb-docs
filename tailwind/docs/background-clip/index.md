@@ -10,8 +10,8 @@ content_hash: "e3fd753f176198b0d6ccc410755ba4d849b785d0da3bd756d7366a4099226a1e"
 menu_path: ["background-clip"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../background-attachment/index.md", "title": "background-attachment"}
-nav_next: {"path": "../background-color/index.md", "title": "background-color"}
+nav_prev: {"path": "tailwind/docs/background-attachment/index.md", "title": "background-attachment"}
+nav_next: {"path": "tailwind/docs/background-color/index.md", "title": "background-color"}
 ---
 
 # background-clip
@@ -66,7 +66,7 @@ Prefix a `background-clip` utility with a breakpoint variant like `md:` to only 
 <div class="bg-clip-border md:bg-clip-padding ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

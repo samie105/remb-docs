@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:57.318Z"
 content_hash: "849824470426efce3b3bc58eb1df8cc26ab03e4dbe3285e1f6a3cfa9ead28d31"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Okta","SSO with Okta"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Okta","SSO with Okta"]
-nav_prev: {"path": "../gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
-nav_next: {"path": "../../upgrading/index.md", "title": "Upgrading"}
+nav_prev: {"path": "supabase/docs/guides/platform/sso/gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
+nav_next: {"path": "supabase/docs/guides/platform/upgrading/index.md", "title": "Upgrading"}
 ---
 
 # 
@@ -21,7 +21,7 @@ Set Up SSO with Okta
 
 This feature is only available on the [Team and Enterprise Plans](/pricing). If you are an existing Team or Enterprise Plan customer, continue with the setup below.
 
-Looking for docs on how to add Single Sign-On support in your Supabase project? Head on over to [Single Sign-On with SAML 2.0 for Projects](/docs/guides/auth/enterprise-sso/auth-sso-saml).
+Looking for docs on how to add Single Sign-On support in your Supabase project? Head on over to [Single Sign-On with SAML 2.0 for Projects](../../../auth/enterprise-sso/auth-sso-saml/index.md).
 
 Supabase supports single sign-on (SSO) using Okta.
 
@@ -150,7 +150,7 @@ When auto-join is enabled, you can choose the **default role** for new users:
 
 Choose a role that fits the level of access you want to grant to new members.
 
-Visit [access-control](/docs/guides/platform/access-control) documentation for details about each role.
+Visit [access-control](../../access-control/index.md) documentation for details about each role.
 
 ## Step 12: Save changes and test single sign-on [#](#dashboard-configure-save)
 

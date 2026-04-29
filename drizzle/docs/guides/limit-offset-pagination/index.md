@@ -10,8 +10,8 @@ content_hash: "04ccfa5ef9614d8036bcb39aa63260b06f6a036e7541cd5847cbdf087a8681a0"
 menu_path: ["Drizzle ORM - SQL Limit/Offset pagination"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
-nav_next: {"path": "../mysql-local-setup/index.md", "title": "Drizzle ORM - How to setup MySQL locally"}
+nav_prev: {"path": "drizzle/docs/guides/incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
+nav_next: {"path": "drizzle/docs/guides/mysql-local-setup/index.md", "title": "Drizzle ORM - How to setup MySQL locally"}
 ---
 
 Drizzle | SQL Limit/Offset pagination

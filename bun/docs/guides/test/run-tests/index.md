@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:57.704Z"
 content_hash: "be42c24369cad9de3d5629a8a0235aed947e5bdb08c94a72517d94dcf58b6668"
 menu_path: ["Run your tests with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "../rerun-each/index.md", "title": "Re-run tests multiple times with the Bun test runner"}
-nav_next: {"path": "../skip-tests/index.md", "title": "Skip tests with the Bun test runner"}
+nav_prev: {"path": "bun/docs/guides/test/rerun-each/index.md", "title": "Re-run tests multiple times with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/skip-tests/index.md", "title": "Skip tests with the Bun test runner"}
 ---
 
 Bun has a built-in [test runner](../../../test/index.md) with a Jest-like `expect` API.

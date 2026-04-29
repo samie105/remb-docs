@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:34.709Z"
 content_hash: "655355a1eebdb8cd30ab1ea6cd5182eea733a7519e5c0fcb1ce5f4220bdde048"
 menu_path: ["Validation ​"]
 section_path: []
-nav_prev: {"path": "../testing/index.md", "title": "Testing \u200b"}
-nav_next: {"path": "../rpc/index.md", "title": "RPC \u200b"}
+nav_prev: {"path": "hono/docs/guides/testing/index.md", "title": "Testing \u200b"}
+nav_next: {"path": "hono/docs/guides/rpc/index.md", "title": "RPC \u200b"}
 ---
 
 Hono provides only a very thin Validator. However, it can be powerful when combined with a third-party Validator. In addition, the RPC feature allows you to share API specifications with your clients through types.

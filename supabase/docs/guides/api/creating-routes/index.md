@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:10.553Z"
 content_hash: "dd441ae7c3e2f3b240a127d1491a6fcfda15b6f90ba6849b55f861d1729b6f38"
 menu_path: ["Data REST API","Data REST API","Guides","Guides","Creating API routes","Creating API routes"]
 section_path: ["Data REST API","Data REST API","Guides","Guides","Creating API routes","Creating API routes"]
-nav_prev: {"path": "../automatic-retries-in-supabase-js/index.md", "title": "How to do automatic retries with supabase-js"}
-nav_next: {"path": "../custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
+nav_prev: {"path": "supabase/docs/guides/api/automatic-retries-in-supabase-js/index.md", "title": "How to do automatic retries with supabase-js"}
+nav_next: {"path": "supabase/docs/guides/api/custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
 ---
 
 # 
@@ -46,7 +46,7 @@ In most cases, you can get the correct key from [the Project's **Connect** dialo
 *   **For legacy keys**, copy the `anon` key for client-side operations and the `service_role` key for server-side operations from the **Legacy API Keys** tab.
 *   **For new keys**, open the **API Keys** tab, if you don't have a publishable key already, click **Create new API Keys**, and copy the value from the **Publishable key** section.
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../api-keys/index.md) for a full explanation of all key types and their uses.
 
 The REST API is accessible through the URL `https://<project_ref>.supabase.co/rest/v1`
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:02.465Z"
 content_hash: "aa6c4691f8110bc4f70bdae3267eb4d9e6be9a4f09c63a8e0201f9d93ca59e8a"
 menu_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Production checklist","Production checklist"]
 section_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Production checklist","Production checklist"]
-nav_prev: {"path": "../database-migrations/index.md", "title": "Database Migrations"}
-nav_next: {"path": "../managing-environments/index.md", "title": "Managing Environments"}
+nav_prev: {"path": "supabase/docs/guides/deployment/database-migrations/index.md", "title": "Database Migrations"}
+nav_next: {"path": "supabase/docs/guides/deployment/managing-environments/index.md", "title": "Managing Environments"}
 ---
 
 # 
@@ -31,23 +31,23 @@ Check and review issues in your database using [Security Advisor](/dashboard/pro
 
 *   Ensure you have enabled row level security (RLS) on all tables from the [**Database > Tables**](/dashboard/project/_/database/tables) section of the Supabase Dashboard.
     *   Tables that do not have RLS enabled with reasonable policies allow any client to access and modify their data. This is usually not what you want.
-    *   [Learn more about RLS](/docs/guides/database/postgres/row-level-security).
+    *   [Learn more about RLS](../../database/postgres/row-level-security/index.md).
 *   Enable replication on tables containing sensitive data by enabling RLS and setting row security policies:
     *   Go to the [**Authentication > Policies**](/dashboard/project/_/auth/policies) section of the Supabase Dashboard to enable RLS and create security policies.
     *   Go to the [**Database > Publications**](/dashboard/project/_/database/publications) section of the Supabase Dashboard to manage replication tables.
-*   Turn on [SSL Enforcement](/docs/guides/platform/ssl-enforcement) from the [**Database > Settings > SSL Configuration**](/dashboard/project/_/database/settings#ssl-configuration) section of the dashboard.
-*   Enable [Network Restrictions](/docs/guides/platform/network-restrictions) for the database from the [**Database > Settings > Network Restrictions**](/dashboard/project/_/database/settings#network-restrictions) section of the dashboard.
+*   Turn on [SSL Enforcement](../../platform/ssl-enforcement/index.md) from the [**Database > Settings > SSL Configuration**](/dashboard/project/_/database/settings#ssl-configuration) section of the dashboard.
+*   Enable [Network Restrictions](../../platform/network-restrictions/index.md) for the database from the [**Database > Settings > Network Restrictions**](/dashboard/project/_/database/settings#network-restrictions) section of the dashboard.
 *   Ensure that you protect your Supabase Account with multi-factor authentication (MFA).
     *   If using a GitHub sign-in, [enable 2FA on GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication).
     *   Since your GitHub account gives you administrative rights to your Supabase org, you should protect it with a strong password and 2FA using a U2F key or a TOTP app.
-    *   If using email+password sign-in, set up [MFA for your Supabase account](/docs/guides/platform/multi-factor-authentication#enable-mfa).
-*   Consider enabling [MFA enforcement on your organization](/docs/guides/platform/mfa/org-mfa-enforcement). This ensures all users must have a valid MFA-backed session to interact with organization and project resources.
+    *   If using email+password sign-in, set up [MFA for your Supabase account](../../platform/multi-factor-authentication/index.md#enable-mfa).
+*   Consider enabling [MFA enforcement on your organization](../../platform/mfa/org-mfa-enforcement/index.md). This ensures all users must have a valid MFA-backed session to interact with organization and project resources.
 *   Consider adding multiple owners on your Supabase org from [the **Organization > Team**](/dashboard/org/_/team) section of the Supabase Dashboard. This ensures that if one of the owners is unreachable or loses access to their account, you still have Owner access to your org.
 *   Enable email confirmations in the [**Authentication > Providers**](/dashboard/project/_/auth/providers) section of the dashboard.
 *   Set the expiry in the [**Authentication > Providers**](/dashboard/project/_/auth/providers) section of the dashboard for one-time passwords (OTPs) to a reasonable value that you are comfortable with.
     *   We recommend setting this to 3600 seconds (1 hour) or lower.
     *   Increase the length of the OTP if you need a higher level of entropy.
-*   If your application requires a higher level of security, consider setting up [multi-factor authentication](/docs/guides/auth/auth-mfa) (MFA) for your users.
+*   If your application requires a higher level of security, consider setting up [multi-factor authentication](../../auth/auth-mfa/index.md) (MFA) for your users.
 *   Use a custom SMTP server for auth emails so that your users can see that the mails are coming from a trusted domain (preferably the same domain that your app is hosted on). Grab SMTP credentials from any major email provider such as SendGrid, AWS SES, etc.
 *   Consider how _you_ might abuse your service as an attacker, and take steps to mitigate it.
 *   Review these [common cybersecurity threats](https://auth0.com/docs/security/prevent-threats).
@@ -61,23 +61,23 @@ Check and review issues in your database using [Performance Advisor](/dashboard/
     *   `pg_stat_statements` can help you [identify hot or slow queries](https://www.virtual-dba.com/blog/postgresql-performance-identifying-hot-and-slow-queries/).
 *   Perform load testing (preferably on a staging env)
     *   Tools like [k6](https://k6.io/) can simulate traffic from many different users.
-*   Upgrade your database if you require more resources. If you need anything beyond what is listed in [the compute and disk table](/docs/guides/platform/compute-and-disk), contact [enterprise@supabase.io](mailto:enterprise@supabase.io).
+*   Upgrade your database if you require more resources. If you need anything beyond what is listed in [the compute and disk table](../../platform/compute-and-disk/index.md), contact [enterprise@supabase.io](mailto:enterprise@supabase.io).
 *   If you are expecting a surge in traffic (for a big launch) and are on a Team or Enterprise Plan, [contact support](/dashboard/support/new) with more details about your launch and we'll help keep an eye on your project.
 *   If you expect your database size to be > 4 GB, enable the Point in Time Recovery (PITR) add-on in the [**Settings > Add-ons**](/dashboard/project/_/settings/addons?panel=pitr) section of the dashboard.
 
 ## Availability[#](#availability)
 
 *   Use your own SMTP credentials so that you have full control over the deliverability of your transactional auth emails in the [**Authentication > Emails > SMTP Settings**](/dashboard/project/_/auth/smtp) section of the dashboard.
-    *   You can grab SMTP credentials from any major email provider such as SendGrid, AWS SES, etc. Read our [SMTP guide](/docs/guides/auth/auth-smtp) for more setup details.
+    *   You can grab SMTP credentials from any major email provider such as SendGrid, AWS SES, etc. Read our [SMTP guide](../../auth/auth-smtp/index.md) for more setup details.
     *   The default rate limit for auth emails when using a custom SMTP provider is _30 new users per hour_. If you are doing a major public announcement, you will likely require more than this.
 *   We may pause applications on the Free Plan that exhibit low activity in a 7-day period to save on server resources.
     *   You can restore paused projects from [the Supabase dashboard](/dashboard/project/_).
     *   Upgrade to Pro to guarantee that we won't pause your project for inactivity.
 *   Database backups are not available for download for Free Plan projects.
-    *   Read [the Database Backups guide](/docs/guides/platform/backups) for more options and retention details.
+    *   Read [the Database Backups guide](../../platform/backups/index.md) for more options and retention details.
     *   If you need a lower recovery point objective (RPO), enable Point-in-Time Recovery (PITR). PITR allows you to back up a project at shorter intervals. This provides users an option to restore to any chosen point in time with second-level granularity.
 *   Supabase Projects use disks that offer 99.8-99.9% durability by default.
-    *   Use [Read Replicas](/docs/guides/platform/read-replicas) if you require availability resilience to a disk failure event
+    *   Use [Read Replicas](../../platform/read-replicas/index.md) if you require availability resilience to a disk failure event
     *   Use PITR if you require durability resilience to a disk failure event
 *   Upgrading to the Supabase Pro Plan gives you [access to our support team](/dashboard/support/new).
 
@@ -110,7 +110,7 @@ All endpoints that send emails
 
 Sum of combined requests
 
-As of 3 Sep 2024, this has been updated to 2 emails per hour. You can only change this with your own [custom SMTP setup](/docs/guides/auth/auth-smtp).
+As of 3 Sep 2024, this has been updated to 2 emails per hour. You can only change this with your own [custom SMTP setup](../../auth/auth-smtp/index.md).
 
 All endpoints that send One-Time-Passwords (OTP)
 
@@ -178,12 +178,12 @@ IP Address
 
 ### Realtime limits[#](#realtime-limits)
 
-*   Review the [Realtime limits](/docs/guides/realtime/limits).
+*   Review the [Realtime limits](../../realtime/limits/index.md).
 *   If you need limits increased, [contact support](/dashboard/support/new).
 
 ### Abuse prevention[#](#abuse-prevention)
 
-*   Supabase provides CAPTCHA protection on the signup, sign-in and password reset endpoints. Read [the Auth CAPTCHA guide](/docs/guides/auth/auth-captcha) for more details on how to protect against abuse using this method.
+*   Supabase provides CAPTCHA protection on the signup, sign-in and password reset endpoints. Read [the Auth CAPTCHA guide](../../auth/auth-captcha/index.md) for more details on how to protect against abuse using this method.
 
 ### Email link validity[#](#email-link-validity)
 

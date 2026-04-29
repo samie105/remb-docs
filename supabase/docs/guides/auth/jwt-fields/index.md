@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:57.175Z"
 content_hash: "ead8b2c211a444f61552fd9326596fdc1e941a57175b4f78e802f192fc4d7042"
 menu_path: ["Auth","Auth","More","More","More","JSON Web Tokens (JWT)","JSON Web Tokens (JWT)","Claims Reference","Claims Reference"]
 section_path: ["Auth","Auth","More","More","More","JSON Web Tokens (JWT)","JSON Web Tokens (JWT)","Claims Reference","Claims Reference"]
-nav_prev: {"path": "../identities/index.md", "title": "Identities"}
-nav_next: {"path": "../jwts/index.md", "title": "JSON Web Token (JWT)"}
+nav_prev: {"path": "supabase/docs/guides/auth/identities/index.md", "title": "Identities"}
+nav_next: {"path": "supabase/docs/guides/auth/jwts/index.md", "title": "JSON Web Token (JWT)"}
 ---
 
 # 
@@ -390,7 +390,7 @@ When implementing JWT validation on your server:
 
 ## Related documentation[#](#related-documentation)
 
-*   [JWT Overview](/docs/guides/auth/jwts)
-*   [Custom Access Token Hooks](/docs/guides/auth/auth-hooks/custom-access-token-hook)
-*   [Row Level Security](/docs/guides/database/postgres/row-level-security)
-*   [Server-Side Auth](/docs/guides/auth/server-side)
+*   [JWT Overview](../jwts/index.md)
+*   [Custom Access Token Hooks](../auth-hooks/custom-access-token-hook/index.md)
+*   [Row Level Security](../../database/postgres/row-level-security/index.md)
+*   [Server-Side Auth](../server-side/index.md)

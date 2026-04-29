@@ -10,8 +10,8 @@ content_hash: "60d623a99dbbcd131a729822b0647fbee5d3c028519fa04f0e1bc8c13324b6e8"
 menu_path: ["Connection management"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Database connections"}
-nav_next: {"path": "../connection-pool/index.md", "title": "Connection pool"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/index.md", "title": "Database connections"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/connection-pool/index.md", "title": "Connection pool"}
 ---
 
 Setup and Configuration

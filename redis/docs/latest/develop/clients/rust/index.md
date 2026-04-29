@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:16.211Z"
 content_hash: "589ff25b42372a854313c27d4223af3cd1bd4bacb6df21c899ec316f3deda144"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        redis-rs guide (Rust)","→","redis-rs guide (Rust)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        redis-rs guide (Rust)","→","redis-rs guide (Rust)"]
-nav_prev: {"path": "../redis-vl/index.md", "title": "Redis vector library guide (Python)"}
-nav_next: {"path": "../../data-types/compare-data-types/index.md", "title": "Compare data types"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/redis-vl/index.md", "title": "Redis vector library guide (Python)"}
+nav_next: {"path": "redis/docs/latest/develop/data-types/compare-data-types/index.md", "title": "Compare data types"}
 ---
 
 # redis-rs guide (Rust)

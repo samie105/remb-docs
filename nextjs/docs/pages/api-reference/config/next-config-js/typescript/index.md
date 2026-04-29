@@ -11,8 +11,8 @@ menu_path: ["typescript"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../turbopack/index.md", "title": "turbopack"}
-nav_next: {"path": "../urlImports/index.md", "title": "urlImports"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/turbopack/index.md", "title": "turbopack"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/urlImports/index.md", "title": "urlImports"}
 ---
 
 # typescript
@@ -77,6 +77,6 @@ module.exports = {
 }
 ```
 
-See the [TypeScript configuration](/docs/app/api-reference/config/typescript#custom-tsconfig-path) page for more details.
+See the [TypeScript configuration](../../../../../app/api-reference/config/typescript/index.md#custom-tsconfig-path) page for more details.
 
 Was this helpful?

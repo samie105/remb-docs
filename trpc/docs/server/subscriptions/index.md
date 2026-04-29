@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:41.920Z"
 content_hash: "00b0856800a8f25a40f9260319bb496da6a787b810a3d2e2b376403f942c7c7b"
 menu_path: ["Subscriptions"]
 section_path: []
-nav_prev: {"path": "../server-side-calls/index.md", "title": "Server Side Calls"}
-nav_next: {"path": "../validators/index.md", "title": "Input & Output Validators"}
+nav_prev: {"path": "trpc/docs/server/server-side-calls/index.md", "title": "Server Side Calls"}
+nav_next: {"path": "trpc/docs/server/validators/index.md", "title": "Input & Output Validators"}
 ---
 
 ## Introduction[​](#introduction "Direct link to Introduction")

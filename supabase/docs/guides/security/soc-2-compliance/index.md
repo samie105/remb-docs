@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:13.689Z"
 content_hash: "177618e65db07f5362803468aa68e93522165041fcd7edd587a59fe9f011f479"
 menu_path: ["Security","Security","Compliance","Compliance","SOC 2","SOC 2"]
 section_path: ["Security","Security","Compliance","Compliance","SOC 2","SOC 2"]
-nav_prev: {"path": "../security-testing/index.md", "title": "Security testing of your Supabase projects"}
-nav_next: {"path": "../../self-hosting/index.md", "title": "Self-Hosting"}
+nav_prev: {"path": "supabase/docs/guides/security/security-testing/index.md", "title": "Security testing of your Supabase projects"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/index.md", "title": "Self-Hosting"}
 ---
 
 # Meeting compliance requirements
@@ -62,7 +62,7 @@ This defines the boundary or border between Supabase and customer responsibility
 
 **We have strong data residency requirements. Does Supabase SOC 2 cover data residency?**
 
-While SOC 2 itself does not mandate specific data residency requirements, organizations may still need to comply with other regulatory frameworks, such as GDPR, that do have such requirements. Ensuring projects are deployed in the correct region is a customer responsibility as each Supabase project is deployed into the region the customer specifies at creation time. All data will remain within the chosen region. [Read replicas](/docs/guides/platform/read-replicas) can be created for multi-region availability, it remains the customer's responsibility to ensure regions chosen for read replicas are within the geographic area required by any additional regulatory frameworks.
+While SOC 2 itself does not mandate specific data residency requirements, organizations may still need to comply with other regulatory frameworks, such as GDPR, that do have such requirements. Ensuring projects are deployed in the correct region is a customer responsibility as each Supabase project is deployed into the region the customer specifies at creation time. All data will remain within the chosen region. [Read replicas](../../platform/read-replicas/index.md) can be created for multi-region availability, it remains the customer's responsibility to ensure regions chosen for read replicas are within the geographic area required by any additional regulatory frameworks.
 
 **Does SOC 2 cover health related data (HIPAA)?**
 
@@ -71,4 +71,4 @@ SOC 2 is non-industry specific and provides a framework for the security and pri
 ## Resources[#](#resources)
 
 1.  [System and Organization Controls: SOC Suite of Services](https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services)
-2.  [Shared Responsibility Model](/docs/guides/deployment/shared-responsibility-model)
+2.  [Shared Responsibility Model](../../deployment/shared-responsibility-model/index.md)

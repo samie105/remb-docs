@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:48.278Z"
 content_hash: "9093fd8fdad05a352f053e97d7ca2ff5f497f7e9f059c816f69c966fde2bb0db"
 menu_path: ["Database","Database","Access and security","Access and security","Managing secrets with Vault","Managing secrets with Vault"]
 section_path: ["Database","Database","Access and security","Access and security","Managing secrets with Vault","Managing secrets with Vault"]
-nav_prev: {"path": "../testing/index.md", "title": "Testing Your Database"}
-nav_next: {"path": "../webhooks/index.md", "title": "Database Webhooks"}
+nav_prev: {"path": "supabase/docs/guides/database/testing/index.md", "title": "Testing Your Database"}
+nav_next: {"path": "supabase/docs/guides/database/webhooks/index.md", "title": "Database Webhooks"}
 ---
 
 # 
@@ -29,7 +29,7 @@ Under the hood, the Vault is a table of Secrets that are stored using [Authentic
 
 Supabase provides a dashboard UI for the Vault that makes storing secrets easy. Click a button, type in your secret, and save.
 
-You can use Vault to store secrets - everything from Environment Variables to API Keys. You can then use these secrets anywhere in your database: Postgres [Functions](/docs/guides/database/functions), Triggers, and [Webhooks](/docs/guides/database/webhooks). From a SQL perspective, accessing secrets is as easy as querying a table (or in this case, a view). The underlying secrets tables will be stored in encrypted form.
+You can use Vault to store secrets - everything from Environment Variables to API Keys. You can then use these secrets anywhere in your database: Postgres [Functions](../functions/index.md), Triggers, and [Webhooks](../webhooks/index.md). From a SQL perspective, accessing secrets is as easy as querying a table (or in this case, a view). The underlying secrets tables will be stored in encrypted form.
 
 ## Using Vault[#](#using-vault)
 

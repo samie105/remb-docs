@@ -10,8 +10,8 @@ content_hash: "bac735aefea3688e666efa8deccdaa92cd464814a8090d5496f9cb3c72e8061e"
 menu_path: ["translate"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../transform-style/index.md", "title": "transform-style"}
-nav_next: {"path": "../accent-color/index.md", "title": "accent-color"}
+nav_prev: {"path": "tailwind/docs/transform-style/index.md", "title": "transform-style"}
+nav_next: {"path": "tailwind/docs/accent-color/index.md", "title": "accent-color"}
 ---
 
 Transforms

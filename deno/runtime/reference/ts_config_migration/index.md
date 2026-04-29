@@ -10,8 +10,8 @@ content_hash: "09f4fea471649d2edc7f8b04e92c05347fac68da1a18f65ea6875d3ace4f8ac7"
 menu_path: ["Configuring TypeScript"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../std/yaml/index.md", "title": "@std/yaml"}
-nav_next: {"path": "../continuous_integration/index.md", "title": "Continuous integration"}
+nav_prev: {"path": "deno/runtime/reference/std/yaml/index.md", "title": "@std/yaml"}
+nav_next: {"path": "deno/runtime/reference/continuous_integration/index.md", "title": "Continuous integration"}
 ---
 
 **On this page**
@@ -96,7 +96,7 @@ Deno aims to simplify TypeScript configuration based on the following design cho
 -   Allowing the omission of settings relating to the target runtime or compatibility, leveraging direct integration with the execution environment.
 -   Project references using `deno.json` directory scopes.
 
-The last point presents a simpler format than `tsconfig.json`'s [`references`](https://www.typescriptlang.org/tsconfig/#references) and [`extends`](https://www.typescriptlang.org/tsconfig/#extends) fields, replacing them with `deno.json` workspaces and root-member inheritance. See the section on [type checking in workspaces](/runtime/fundamentals/workspaces/#type-checking).
+The last point presents a simpler format than `tsconfig.json`'s [`references`](https://www.typescriptlang.org/tsconfig/#references) and [`extends`](https://www.typescriptlang.org/tsconfig/#extends) fields, replacing them with `deno.json` workspaces and root-member inheritance. See the section on [type checking in workspaces](../../fundamentals/workspaces/index.md#type-checking).
 
 ## `tsconfig.json` compatibility
 
@@ -182,7 +182,7 @@ The built-in libraries that are of interest to users:
 
 -   `"deno.ns"` - This includes all the custom `Deno` global namespace APIs plus the Deno additions to `import.meta`. This should generally not conflict with other libraries or global types.
 -   `"deno.window"` - This is the "default" library used when checking Deno main runtime scripts. It includes the `"deno.ns"` as well as other type libraries for the extensions that are built into Deno. This library will conflict with libraries like `"dom"` and `"dom.iterable"` that are standard TypeScript libraries.
--   `"deno.worker"` - This is the library used when checking a Deno web worker script. For more information about web workers, check out [Type Checking Web Workers](/runtime/reference/ts_config_migration/#type-checking-web-workers).
+-   `"deno.worker"` - This is the library used when checking a Deno web worker script. For more information about web workers, check out [Type Checking Web Workers](index.md#type-checking-web-workers).
 -   `"dom.asynciterable"` - TypeScript currently does not include the DOM async iterables that Deno implements (plus several browsers), so we have implemented it ourselves until it becomes available in TypeScript.
 
 These are common libraries that are not enabled by default, but are useful when writing code that is intended to also work in another runtime:

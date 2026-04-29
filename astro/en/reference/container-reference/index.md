@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:47.882Z"
 content_hash: "c68e00100acd9e9447852de2b0b859d62c66d3bf35560034f7aca9b1de5359e1"
 menu_path: ["Astro Container API (experimental)"]
 section_path: []
-nav_prev: {"path": "../font-provider-reference/index.md", "title": "Astro Font Provider API"}
-nav_next: {"path": "../programmatic-reference/index.md", "title": "Programmatic Astro API (experimental)"}
+nav_prev: {"path": "astro/en/reference/font-provider-reference/index.md", "title": "Astro Font Provider API"}
+nav_next: {"path": "astro/en/reference/programmatic-reference/index.md", "title": "Programmatic Astro API (experimental)"}
 ---
 
 # Astro Container API (experimental)
@@ -19,13 +19,13 @@ nav_next: {"path": "../programmatic-reference/index.md", "title": "Programmatic 
 
 The Container API allows you to render Astro components in isolation.
 
-This experimental server-side API unlocks a variety of potential future uses, but is currently scoped to allow [testing of `.astro` component output](/en/guides/testing/#vitest-and-container-api) in `vite` environments such as `vitest`.
+This experimental server-side API unlocks a variety of potential future uses, but is currently scoped to allow [testing of `.astro` component output](../../guides/testing/index.md#vitest-and-container-api) in `vite` environments such as `vitest`.
 
 It also allows you to [manually load rendering scripts](#adding-a-renderer-manually) for creating containers in pages rendered on demand or other “shell” environments outside of `vite` (e.g. inside a PHP or Elixir application).
 
 This API allows you to [create a new container](#create), and render an Astro component returning [a string](#rendertostring) or a [`Response`](#rendertoresponse).
 
-This API is experimental and subject to breaking changes, even in [minor or patch releases](/en/upgrade-astro/#semantic-versioning). Please consult [the Astro CHANGELOG](https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md) for changes as they occur. This page will always be updated with the most current information for the latest version of Astro.
+This API is experimental and subject to breaking changes, even in [minor or patch releases](../../upgrade-astro/index.md#semantic-versioning). Please consult [the Astro CHANGELOG](https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md) for changes as they occur. This page will always be updated with the most current information for the latest version of Astro.
 
 ## `create()`
 
@@ -54,7 +54,7 @@ export type AddServerRenderer =  | {      renderer: NamedSSRLoadedRendererValue;
 **Type:** `boolean`  
 **Default:** `false`
 
-Enables rendering components using [HTML streaming](/en/guides/on-demand-rendering/#html-streaming).
+Enables rendering components using [HTML streaming](../../guides/on-demand-rendering/index.md#html-streaming).
 
 ### `renderers` option
 
@@ -63,11 +63,11 @@ Enables rendering components using [HTML streaming](/en/guides/on-demand-renderi
 **Type:** `AddServerRenderer[]`  
 **Default:** `[]`
 
-A list of loaded client renderers required by the component. Use this if your `.astro` component renders any [UI framework components](/en/guides/framework-components/) or MDX using an official Astro integration (e.g. React, Vue, etc.).
+A list of loaded client renderers required by the component. Use this if your `.astro` component renders any [UI framework components](../../guides/framework-components/index.md) or MDX using an official Astro integration (e.g. React, Vue, etc.).
 
 Renderers can be added through the Container API automatically for static applications, or cases where the container isn’t called at runtime (e.g. testing with `vitest`).
 
-For [on-demand rendered applications](/en/guides/on-demand-rendering/), or cases where the container is called at runtime or inside other “shells” (e.g. PHP, Ruby, Java, etc.), renderers must be manually imported.
+For [on-demand rendered applications](../../guides/on-demand-rendering/index.md), or cases where the container is called at runtime or inside other “shells” (e.g. PHP, Ruby, Java, etc.), renderers must be manually imported.
 
 #### Adding a renderer through the Container API
 
@@ -92,7 +92,7 @@ const renderers = await loadRenderers([reactContainerRenderer(), svelteContainer
 
 When the container is called at runtime, or inside other “shells”, the `astro:container` virtual module’s helper functions are not available. You must import the necessary server and client renderers manually and store them inside the container using `addServerRenderer` and `addClientRenderer`.
 
-Server renderers are required to build your project, and must be stored in the container for every framework used. Client renderers are additionally needed to any hydrate client-side components using [`client:*` directives](/en/reference/directives-reference/#client-directives).
+Server renderers are required to build your project, and must be stored in the container for every framework used. Client renderers are additionally needed to any hydrate client-side components using [`client:*` directives](../directives-reference/index.md#client-directives).
 
 Only one import statement is needed per framework. Importing a renderer makes both the server and client renderers available to your container. However, **server renderers must be added to your container before client renderers**. This allows your entire container to render first, and then hydrate any interactive components.
 
@@ -154,7 +154,7 @@ These optional values can be passed to the rendering function in order to provid
 
 **Type**: `Record<string, any>`
 
-An option to pass content to be rendered with [`<slots>`](/en/basics/astro-components/#slots).
+An option to pass content to be rendered with [`<slots>`](../../basics/astro-components/index.md#slots).
 
 If your Astro component renders one default slot, pass an object with `default` as the key:
 
@@ -191,7 +191,7 @@ const result = await container.renderToString(Card, {  slots: {    header: await
 
 **Type**: `Record<string, unknown>`
 
-An option to pass [properties](/en/basics/astro-components/#component-props) for Astro components.
+An option to pass [properties](../../basics/astro-components/index.md#component-props) for Astro components.
 
 ```
 import Card from "../src/components/Card.astro";
@@ -226,7 +226,7 @@ const result = await container.renderToString(Card, {  request: new Request("htt
 
 **Type**: `Record<string, string | undefined>`
 
-An object to pass information about the path parameter to an Astro component responsible for [generating dynamic routes](/en/guides/routing/#dynamic-routes).
+An object to pass information about the path parameter to an Astro component responsible for [generating dynamic routes](../../guides/routing/index.md#dynamic-routes).
 
 Use this option when your component needs a value for `Astro.params` in order to generate a single route dynamically.
 
@@ -245,7 +245,7 @@ const result = await container.renderToString(LocaleSlug, {  params: {    locale
 
 **Type**: `App.Locals`
 
-An option to pass information from [`Astro.locals`](/en/reference/api-reference/#locals) for rendering your component.
+An option to pass information from [`Astro.locals`](../api-reference/index.md#locals) for rendering your component.
 
 Use this option to when your component needs information stored during the lifecycle of a request in order to render, such as logged in status.
 
@@ -268,7 +268,7 @@ test("User is out", async () => {  const result = await container.renderToString
 
 **Type**: `RouteType`
 
-An option available when using `renderToResponse()` to specify that you are rendering an [endpoint](/en/guides/endpoints/):
+An option available when using `renderToResponse()` to specify that you are rendering an [endpoint](../../guides/endpoints/index.md):
 
 ```
 container.renderToString(Endpoint, { routeType: "endpoint" });
@@ -300,7 +300,7 @@ const response = await container.renderToResponse(Endpoint, {    routeType: "end
 
 **Added in:** `astro@4.16.6`
 
-Whether or not the Container API renders components as if they were [page partials](/en/basics/astro-pages/#page-partials). The default `true` setting renders the component in isolation without a full page shell.
+Whether or not the Container API renders components as if they were [page partials](../../basics/astro-pages/index.md#page-partials). The default `true` setting renders the component in isolation without a full page shell.
 
 To render a component as a full Astro page, including `<!DOCTYPE html>`, you can opt-out of this behavior by setting `partial` to `false`:
 
@@ -309,4 +309,4 @@ import Blog from "../src/pages/Blog.astro";
 const result = await container.renderToString(Card, {    partial: false});console.log(result) // includes `<!DOCTYPE html>` at the beginning of the HTML
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

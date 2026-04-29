@@ -10,8 +10,8 @@ content_hash: "510548616b38d6b113e3e8dcc896e9f2595f2e3b7b2690c585ed69d6fd77a4ce"
 menu_path: ["text-wrap"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text-overflow/index.md", "title": "text-overflow"}
-nav_next: {"path": "../text-indent/index.md", "title": "text-indent"}
+nav_prev: {"path": "tailwind/docs/text-overflow/index.md", "title": "text-overflow"}
+nav_next: {"path": "tailwind/docs/text-indent/index.md", "title": "text-indent"}
 ---
 
 Utilities for controlling how text wraps within an element.

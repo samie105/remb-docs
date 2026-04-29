@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:02.601Z"
 content_hash: "a52922e570a8e409981160e649f5cef25c3ebaf8521519a358832d42ee0cda64"
 menu_path: ["@astrojs/\n\t\t\t\t\tmdx"]
 section_path: []
-nav_prev: {"path": "../markdoc/index.md", "title": "@astrojs/\n\t\t\t\t\tmarkdoc"}
-nav_next: {"path": "../partytown/index.md", "title": "@astrojs/\n\t\t\t\t\tpartytown"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/markdoc/index.md", "title": "@astrojs/\n\t\t\t\t\tmarkdoc"}
+nav_next: {"path": "astro/en/guides/integrations-guide/partytown/index.md", "title": "@astrojs/\n\t\t\t\t\tpartytown"}
 ---
 
 # @astrojs/ mdx
 
 v5.0.3 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/mdx/) [npm](https://www.npmjs.com/package/@astrojs/mdx) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/mdx/CHANGELOG.md)
 
-This **[Astro integration](/en/guides/integrations/)** enables the usage of [MDX](https://mdxjs.com/) components and allows you to create pages as `.mdx` files.
+This **[Astro integration](../../integrations/index.md)** enables the usage of [MDX](https://mdxjs.com/) components and allows you to create pages as `.mdx` files.
 
 ## Why MDX?
 
@@ -84,7 +84,7 @@ Visit the [MDX docs](https://mdxjs.com/docs/what-is-mdx/) to learn about using s
 
 Adding the MDX integration enhances your Markdown authoring with JSX variables, expressions and components.
 
-It also adds extra features to standard MDX, including support for Markdown-style frontmatter in MDX. This allows you to use most of [Astro’s built-in Markdown features](/en/guides/markdown-content/).
+It also adds extra features to standard MDX, including support for Markdown-style frontmatter in MDX. This allows you to use most of [Astro’s built-in Markdown features](../../markdown-content/index.md).
 
 `.mdx` files must be written in [MDX syntax](https://mdxjs.com/docs/what-is-mdx/#mdx-syntax) rather than Astro’s HTML-like syntax.
 
@@ -92,7 +92,7 @@ It also adds extra features to standard MDX, including support for Markdown-styl
 
 [Section titled “Using local MDX with content collections”](#using-local-mdx-with-content-collections)
 
-To include your local MDX files in a content collection, make sure that your [collection loader](/en/guides/content-collections/#build-time-collection-loaders) is configured to load content from `.mdx` files:
+To include your local MDX files in a content collection, make sure that your [collection loader](../../content-collections/index.md#build-time-collection-loaders) is configured to load content from `.mdx` files:
 
 ```
 import { defineCollection } from 'astro:content';import { glob } from 'astro/loaders';import { z } from 'astro/zod';
@@ -149,7 +149,7 @@ Written by: {frontmatter.author}
 
 [Section titled “Using Components in MDX”](#using-components-in-mdx)
 
-After installing the MDX integration, you can import and use both [Astro components](/en/basics/astro-components/) and [UI framework components](/en/guides/framework-components/#using-framework-components) in MDX (`.mdx`) files just as you would use them in any other Astro component.
+After installing the MDX integration, you can import and use both [Astro components](../../../basics/astro-components/index.md) and [UI framework components](../../framework-components/index.md#using-framework-components) in MDX (`.mdx`) files just as you would use them in any other Astro component.
 
 Don’t forget to include a `client:directive` on your UI framework components, if necessary!
 
@@ -221,14 +221,14 @@ You can configure how your MDX is rendered with the following options:
 
 [Section titled “Options inherited from Markdown config”](#options-inherited-from-markdown-config)
 
-All [`markdown` configuration options](/en/reference/configuration-reference/#markdown-options) can be configured separately in the MDX integration. This includes remark and rehype plugins, syntax highlighting, and more. Options will default to those in your Markdown config ([see the `extendMarkdownConfig` option](#extendmarkdownconfig) to modify this).
+All [`markdown` configuration options](../../../reference/configuration-reference/index.md#markdown-options) can be configured separately in the MDX integration. This includes remark and rehype plugins, syntax highlighting, and more. Options will default to those in your Markdown config ([see the `extendMarkdownConfig` option](#extendmarkdownconfig) to modify this).
 
 ```
 import { defineConfig } from 'astro/config';import mdx from '@astrojs/mdx';import remarkToc from 'remark-toc';import rehypePresetMinify from 'rehype-preset-minify';
 export default defineConfig({  // ...  integrations: [    mdx({      syntaxHighlight: 'shiki',      shikiConfig: { theme: 'dracula' },      remarkPlugins: [remarkToc],      rehypePlugins: [rehypePresetMinify],      remarkRehype: { footnoteLabel: 'Footnotes' },      gfm: false,    }),  ],});
 ```
 
-See the [Markdown Options reference](/en/reference/configuration-reference/#markdown-options) for a complete list of options.
+See the [Markdown Options reference](../../../reference/configuration-reference/index.md#markdown-options) for a complete list of options.
 
 ### `extendMarkdownConfig`
 
@@ -239,7 +239,7 @@ See the [Markdown Options reference](/en/reference/configuration-reference/#mark
 
 **Added in:** `@astrojs/mdx@0.15.0`
 
-MDX will extend [your project’s existing Markdown configuration](/en/reference/configuration-reference/#markdown-options) by default. To override individual options, you can specify their equivalent in your MDX configuration.
+MDX will extend [your project’s existing Markdown configuration](../../../reference/configuration-reference/index.md#markdown-options) by default. To override individual options, you can specify their equivalent in your MDX configuration.
 
 For example, say you need to disable GitHub-Flavored Markdown and apply a different set of remark plugins for MDX files. You can apply these options like so, with `extendMarkdownConfig` enabled by default:
 
@@ -315,7 +315,7 @@ import { defineConfig } from 'astro/config';import mdx from '@astrojs/mdx';
 export default defineConfig({  // ...  integrations: [    mdx({      optimize: {        // Prevent the optimizer from handling `h1` elements        ignoreElementNames: ['h1'],      },    }),  ],});
 ```
 
-Note that if your MDX file [configures custom components using `export const components = { ... }`](/en/guides/integrations-guide/mdx/#assigning-custom-components-to-html-elements), then you do not need to manually configure this option. The optimizer will automatically detect them.
+Note that if your MDX file [configures custom components using `export const components = { ... }`](index.md#assigning-custom-components-to-html-elements), then you do not need to manually configure this option. The optimizer will automatically detect them.
 
 ## Examples
 
@@ -329,34 +329,34 @@ Note that if your MDX file [configures custom components using `export const com
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -364,34 +364,34 @@ Note that if your MDX file [configures custom components using `export const com
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

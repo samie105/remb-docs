@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../version-14/index.md", "title": "How to upgrade to version 14"}
-nav_next: {"path": "../version-16/index.md", "title": "How to upgrade to version 16"}
+nav_prev: {"path": "nextjs/docs/app/guides/upgrading/version-14/index.md", "title": "How to upgrade to version 14"}
+nav_next: {"path": "nextjs/docs/app/guides/upgrading/version-16/index.md", "title": "How to upgrade to version 16"}
 ---
 
 # How to upgrade to version 15
@@ -87,13 +87,13 @@ pnpm add next@latest react@latest react-dom@latest eslint-config-next@latest
 
 Previously synchronous Request-time APIs that rely on request information are now **asynchronous**:
 
--   [`cookies`](/docs/app/api-reference/functions/cookies)
--   [`headers`](/docs/app/api-reference/functions/headers)
--   [`draftMode`](/docs/app/api-reference/functions/draft-mode)
--   `params` in [`layout.js`](/docs/app/api-reference/file-conventions/layout), [`page.js`](/docs/app/api-reference/file-conventions/page), [`route.js`](/docs/app/api-reference/file-conventions/route), [`default.js`](/docs/app/api-reference/file-conventions/default), [`opengraph-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), [`twitter-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), [`icon`](/docs/app/api-reference/file-conventions/metadata/app-icons), and [`apple-icon`](/docs/app/api-reference/file-conventions/metadata/app-icons).
--   `searchParams` in [`page.js`](/docs/app/api-reference/file-conventions/page)
+-   [`cookies`](../../../api-reference/functions/cookies/index.md)
+-   [`headers`](../../../api-reference/functions/headers/index.md)
+-   [`draftMode`](../../../api-reference/functions/draft-mode/index.md)
+-   `params` in [`layout.js`](../../../api-reference/file-conventions/layout/index.md), [`page.js`](../../../api-reference/file-conventions/page/index.md), [`route.js`](../../../api-reference/file-conventions/route/index.md), [`default.js`](../../../api-reference/file-conventions/default/index.md), [`opengraph-image`](../../../api-reference/file-conventions/metadata/opengraph-image/index.md), [`twitter-image`](../../../api-reference/file-conventions/metadata/opengraph-image/index.md), [`icon`](../../../api-reference/file-conventions/metadata/app-icons/index.md), and [`apple-icon`](../../../api-reference/file-conventions/metadata/app-icons/index.md).
+-   `searchParams` in [`page.js`](../../../api-reference/file-conventions/page/index.md)
 
-To ease the burden of migration, a [codemod is available](/docs/app/guides/upgrading/codemods#150) to automate the process and the APIs can temporarily be accessed synchronously.
+To ease the burden of migration, a [codemod is available](../codemods/index.md#150) to automate the process and the APIs can temporarily be accessed synchronously.
 
 ### `cookies`[](#cookies)
 
@@ -414,11 +414,11 @@ export async function GET(request: Request, segmentData: { params: Params }) {
 
 ## `runtime` configuration (Breaking change)[](#runtime-configuration-breaking-change)
 
-The `runtime` [segment configuration](/docs/app/api-reference/file-conventions/route-segment-config/runtime) previously supported a value of `experimental-edge` in addition to `edge`. Both configurations refer to the same thing, and to simplify the options, we will now error if `experimental-edge` is used. To fix this, update your `runtime` configuration to `edge`. A [codemod](/docs/app/guides/upgrading/codemods#app-dir-runtime-config-experimental-edge) is available to automatically do this.
+The `runtime` [segment configuration](../../../api-reference/file-conventions/route-segment-config/runtime/index.md) previously supported a value of `experimental-edge` in addition to `edge`. Both configurations refer to the same thing, and to simplify the options, we will now error if `experimental-edge` is used. To fix this, update your `runtime` configuration to `edge`. A [codemod](../codemods/index.md#app-dir-runtime-config-experimental-edge) is available to automatically do this.
 
 ## `fetch` requests[](#fetch-requests)
 
-[`fetch` requests](/docs/app/api-reference/functions/fetch) are no longer cached by default.
+[`fetch` requests](../../../api-reference/functions/fetch/index.md) are no longer cached by default.
 
 To opt specific `fetch` requests into caching, you can pass the `cache: 'force-cache'` option.
 
@@ -433,7 +433,7 @@ export default async function RootLayout() {
 }
 ```
 
-To opt all `fetch` requests in a layout or page into caching, you can use the `export const fetchCache = 'default-cache'` [segment config option](/docs/app/api-reference/file-conventions/route-segment-config). If individual `fetch` requests specify a `cache` option, that will be used instead.
+To opt all `fetch` requests in a layout or page into caching, you can use the `export const fetchCache = 'default-cache'` [segment config option](../../../api-reference/file-conventions/route-segment-config/index.md). If individual `fetch` requests specify a `cache` option, that will be used instead.
 
 app/layout.js
 
@@ -452,7 +452,7 @@ export default async function RootLayout() {
 
 ## Route Handlers[](#route-handlers-1)
 
-`GET` functions in [Route Handlers](/docs/app/api-reference/file-conventions/route) are no longer cached by default. To opt `GET` methods into caching, you can use a [route config option](/docs/app/api-reference/file-conventions/route-segment-config) such as `export const dynamic = 'force-static'` in your Route Handler file.
+`GET` functions in [Route Handlers](../../../api-reference/file-conventions/route/index.md) are no longer cached by default. To opt `GET` methods into caching, you can use a [route config option](../../../api-reference/file-conventions/route-segment-config/index.md) such as `export const dynamic = 'force-static'` in your Route Handler file.
 
 app/api/route.js
 
@@ -464,9 +464,9 @@ export async function GET() {}
 
 ## Client Cache[](#client-cache)
 
-When navigating between pages via `<Link>` or `useRouter`, [page](/docs/app/api-reference/file-conventions/page) segments are no longer reused from the [Client Cache](/docs/app/glossary#client-cache). However, they are still reused during browser backward and forward navigation and for shared layouts.
+When navigating between pages via `<Link>` or `useRouter`, [page](../../../api-reference/file-conventions/page/index.md) segments are no longer reused from the [Client Cache](../../../glossary/index.md#client-cache). However, they are still reused during browser backward and forward navigation and for shared layouts.
 
-To opt page segments into caching, you can use the [`staleTimes`](/docs/app/api-reference/config/next-config-js/staleTimes) config option:
+To opt page segments into caching, you can use the [`staleTimes`](../../../api-reference/config/next-config-js/staleTimes/index.md) config option:
 
 next.config.js
 
@@ -484,11 +484,11 @@ const nextConfig = {
 module.exports = nextConfig
 ```
 
-[Layouts](/docs/app/api-reference/file-conventions/layout) and [loading states](/docs/app/api-reference/file-conventions/loading) are still cached and reused on navigation.
+[Layouts](../../../api-reference/file-conventions/layout/index.md) and [loading states](../../../api-reference/file-conventions/loading/index.md) are still cached and reused on navigation.
 
 ## `next/font`[](#nextfont)
 
-The `@next/font` package has been removed in favor of the built-in [`next/font`](/docs/app/api-reference/components/font). A [codemod is available](/docs/app/guides/upgrading/codemods#built-in-next-font) to safely and automatically rename your imports.
+The `@next/font` package has been removed in favor of the built-in [`next/font`](../../../api-reference/components/font/index.md). A [codemod is available](../codemods/index.md#built-in-next-font) to safely and automatically rename your imports.
 
 app/layout.js
 
@@ -550,7 +550,7 @@ To continue using Speed Insights, follow the [Vercel Speed Insights Quickstart](
 
 ## `NextRequest` Geolocation[](#nextrequest-geolocation)
 
-The `geo` and `ip` properties on `NextRequest` have been removed as these values are provided by your hosting provider. A [codemod](/docs/app/guides/upgrading/codemods#150) is available to automate this migration.
+The `geo` and `ip` properties on `NextRequest` have been removed as these values are provided by your hosting provider. A [codemod](../codemods/index.md#150) is available to automate this migration.
 
 If you are using Vercel, you can alternatively use the `geolocation` and `ipAddress` functions from [`@vercel/functions`](https://vercel.com/docs/functions/vercel-functions-package) instead:
 

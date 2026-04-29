@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:53.953Z"
 content_hash: "bc13229dae436205f3701ee2d8c07fe8000e9790020e8a086015e56b43f3fe8a"
 menu_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Azure AD","SSO with Azure AD"]
 section_path: ["Platform","Platform","More","More","More","Single Sign-On","Single Sign-On","SSO with Azure AD","SSO with Azure AD"]
-nav_prev: {"path": "../index.md", "title": "Enable SSO for Your Organization"}
-nav_next: {"path": "../gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
+nav_prev: {"path": "supabase/docs/guides/platform/sso/index.md", "title": "Enable SSO for Your Organization"}
+nav_next: {"path": "supabase/docs/guides/platform/sso/gsuite/index.md", "title": "Set Up SSO with Google Workspace"}
 ---
 
 # 
@@ -21,7 +21,7 @@ Set Up SSO with Azure AD
 
 This feature is only available on the [Team and Enterprise Plans](/pricing). If you are an existing Team or Enterprise Plan customer, continue with the setup below.
 
-Looking for docs on how to add Single Sign-On support in your Supabase project? Head on over to [Single Sign-On with SAML 2.0 for Projects](/docs/guides/auth/enterprise-sso/auth-sso-saml).
+Looking for docs on how to add Single Sign-On support in your Supabase project? Head on over to [Single Sign-On with SAML 2.0 for Projects](../../../auth/enterprise-sso/auth-sso-saml/index.md).
 
 Supabase supports single sign-on (SSO) using Microsoft Azure AD.
 
@@ -144,7 +144,7 @@ When auto-join is enabled, you can choose the **default role** for new users:
 
 Choose a role that fits the level of access you want to grant to new members.
 
-Visit [access-control](/docs/guides/platform/access-control) documentation for details about each role.
+Visit [access-control](../../access-control/index.md) documentation for details about each role.
 
 ## Step 13: Save changes and test single sign-on [#](#dashboard-configure-save)
 

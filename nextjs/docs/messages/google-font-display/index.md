@@ -11,8 +11,8 @@ menu_path: ["Google Font Display"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../empty-generate-static-params/index.md", "title": "Empty generateStaticParams with Cache Components"}
-nav_next: {"path": "../google-font-preconnect/index.md", "title": "Google Font Preconnect"}
+nav_prev: {"path": "nextjs/docs/messages/empty-generate-static-params/index.md", "title": "Empty generateStaticParams with Cache Components"}
+nav_next: {"path": "nextjs/docs/messages/google-font-preconnect/index.md", "title": "Google Font Preconnect"}
 ---
 
 # Google Font Display

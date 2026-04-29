@@ -10,8 +10,8 @@ content_hash: "63a1fda240fef3723927d78823c0a8c6a7e2ba0090e292da4f7df3c7f1510d36"
 menu_path: ["deno types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../test/index.md", "title": "deno test"}
-nav_next: {"path": "../uninstall/index.md", "title": "deno uninstall"}
+nav_prev: {"path": "deno/runtime/reference/cli/test/index.md", "title": "deno test"}
+nav_next: {"path": "deno/runtime/reference/cli/uninstall/index.md", "title": "deno uninstall"}
 ---
 
 **On this page**
@@ -41,7 +41,7 @@ deno types > deno.d.ts
 
 ## When to use this
 
-Most editors with the [Deno extension](/runtime/reference/vscode/) handle types automatically. You may need `deno types` if you are:
+Most editors with the [Deno extension](../../vscode/index.md) handle types automatically. You may need `deno types` if you are:
 
 -   Using an editor without Deno LSP support
 -   Generating type declarations for a build pipeline

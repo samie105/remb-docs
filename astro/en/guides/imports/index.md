@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:35.942Z"
 content_hash: "c0b9a989437ad408cdb34fd0c1d1d3c1c5f7d76859a95dfb224e224a3a934a43"
 menu_path: ["Imports reference"]
 section_path: []
-nav_prev: {"path": "../../reference/cli-reference/index.md", "title": "CLI Commands"}
-nav_next: {"path": "../../reference/routing-reference/index.md", "title": "Routing Reference"}
+nav_prev: {"path": "astro/en/reference/cli-reference/index.md", "title": "CLI Commands"}
+nav_next: {"path": "astro/en/reference/routing-reference/index.md", "title": "Routing Reference"}
 ---
 
 # Imports reference
@@ -33,13 +33,13 @@ The following file types are supported out-of-the-box by Astro:
 *   CSS Modules (`.module.css`)
 *   Images & Assets (`.svg`, `.jpg`, `.png`, etc.)
 
-Additionally, you can extend Astro to add support for different [UI Frameworks](/en/guides/framework-components/) like React, Svelte and Vue components. You can also install the [Astro MDX integration](/en/guides/integrations-guide/mdx/) or the [Astro Markdoc integration](/en/guides/integrations-guide/markdoc/) to use `.mdx` or `.mdoc` files in your project.
+Additionally, you can extend Astro to add support for different [UI Frameworks](../framework-components/index.md) like React, Svelte and Vue components. You can also install the [Astro MDX integration](../integrations-guide/mdx/index.md) or the [Astro Markdoc integration](../integrations-guide/markdoc/index.md) to use `.mdx` or `.mdoc` files in your project.
 
 ### Files in `public/`
 
 [Section titled “Files in public/”](#files-in-public)
 
-You can place any static asset in the [`public/` directory](/en/basics/project-structure/#public) of your project, and Astro will copy it directly into your final build untouched. `public/` files are not built or bundled by Astro, which means that any type of file is supported.
+You can place any static asset in the [`public/` directory](../../basics/project-structure/index.md#public) of your project, and Astro will copy it directly into your final build untouched. `public/` files are not built or bundled by Astro, which means that any type of file is supported.
 
 You can reference a `public/` file by a URL path directly in your HTML templates.
 
@@ -72,11 +72,11 @@ JavaScript can be imported using normal ESM `import` & `export` syntax.
 import { getUser } from './user';import type { UserType } from './user';
 ```
 
-Astro includes built-in support for [TypeScript](https://www.typescriptlang.org/). You can import `.ts` and `.tsx` files directly in your Astro project, and even write TypeScript code directly inside your [Astro component script](/en/basics/astro-components/#the-component-script) and any [script tags](/en/guides/client-side-scripts/).
+Astro includes built-in support for [TypeScript](https://www.typescriptlang.org/). You can import `.ts` and `.tsx` files directly in your Astro project, and even write TypeScript code directly inside your [Astro component script](../../basics/astro-components/index.md#the-component-script) and any [script tags](../client-side-scripts/index.md).
 
-**Astro doesn’t perform any type checking itself.** Type checking should be taken care of outside of Astro, either by your IDE or through a separate script. For type checking Astro files, the [`astro check` command](/en/reference/cli-reference/#astro-check) is provided.
+**Astro doesn’t perform any type checking itself.** Type checking should be taken care of outside of Astro, either by your IDE or through a separate script. For type checking Astro files, the [`astro check` command](../../reference/cli-reference/index.md#astro-check) is provided.
 
-Read more about [TypeScript support in Astro](/en/guides/typescript/).
+Read more about [TypeScript support in Astro](../typescript/index.md).
 
 ### NPM Packages
 
@@ -88,7 +88,7 @@ If you’ve installed an NPM package, you can import it in Astro.
 ---import { Icon } from 'astro-icon';---
 ```
 
-If a package was published using a legacy format, Astro will try to convert the package to ESM so that `import` statements work. In some cases, you may need to adjust your [`vite` config](/en/reference/configuration-reference/#vite) for it to work.
+If a package was published using a legacy format, Astro will try to convert the package to ESM so that `import` statements work. In some cases, you may need to adjust your [`vite` config](../../reference/configuration-reference/index.md#vite) for it to work.
 
 ### JSON
 
@@ -110,7 +110,7 @@ Astro supports importing JSON files directly into your application. Imported fil
 
 Astro supports importing CSS files directly into your application. Imported styles expose no exports, but importing one will automatically add those styles to the page. This works for all CSS files by default, and can support compile-to-CSS languages like Sass & Less via plugins.
 
-Read more about advanced CSS import use cases such as a direct URL reference for a CSS file, or importing CSS as a string in the [Styling guide](/en/guides/styling/#advanced).
+Read more about advanced CSS import use cases such as a direct URL reference for a CSS file, or importing CSS as a string in the [Styling guide](../styling/index.md#advanced).
 
 ### CSS Modules
 
@@ -139,7 +139,7 @@ All other assets not explicitly mentioned above can be imported via ESM `import`
 
 This can be useful for referencing non-JS assets by URL, like creating a video element with a `src` attribute pointing to that image.
 
-It can also be useful to place images and other assets in the `public/` folder as explained on the [project-structure page](/en/basics/project-structure/#public).
+It can also be useful to place images and other assets in the `public/` folder as explained on the [project-structure page](../../basics/project-structure/index.md#public).
 
 Read more about appending Vite import parameters (e.g. `?url`, `?raw`) in [Vite’s static asset handling guide](https://vite.dev/guide/assets.html).
 
@@ -269,7 +269,7 @@ Additionally, glob patterns must begin with one of the following:
 
 [Section titled “import.meta.glob() vs getCollection()”](#importmetaglob-vs-getcollection)
 
-[Content collections](/en/guides/content-collections/) provide [performant, content-focused APIs](/en/reference/modules/astro-content/) for loading multiple files instead of `import.meta.glob()`. Use `getCollection()` and `getLiveCollection()` to query your collections and return content entries.
+[Content collections](../content-collections/index.md) provide [performant, content-focused APIs](../../reference/modules/astro-content/index.md) for loading multiple files instead of `import.meta.glob()`. Use `getCollection()` and `getLiveCollection()` to query your collections and return content entries.
 
 ## WASM
 
@@ -285,7 +285,7 @@ Astro supports loading WASM files directly into your application using the brows
 
 [Section titled “Node Builtins”](#node-builtins)
 
-Astro supports Node.js built-ins, with some limitations, using Node’s newer `node:` prefix. There may be differences between development and production, and some features may be incompatible with on-demand rendering. Some [adapters](/en/guides/on-demand-rendering/) may also be incompatible with these built-ins modules or require configuration to support a subset (e.g., [Cloudflare Workers](/en/guides/integrations-guide/cloudflare/) or [Deno](https://github.com/denoland/deno-astro-adapter)).
+Astro supports Node.js built-ins, with some limitations, using Node’s newer `node:` prefix. There may be differences between development and production, and some features may be incompatible with on-demand rendering. Some [adapters](../on-demand-rendering/index.md) may also be incompatible with these built-ins modules or require configuration to support a subset (e.g., [Cloudflare Workers](../integrations-guide/cloudflare/index.md) or [Deno](https://github.com/denoland/deno-astro-adapter)).
 
 The following example imports the `util` module from Node to parse a media type (MIME):
 
@@ -304,4 +304,4 @@ With **Vite** and compatible **Rollup** plugins, you can import file types which
 
 ![](/houston_chef.webp) **Related recipe:** [Installing a Vite or Rollup plugin](/en/recipes/add-yaml-support/)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

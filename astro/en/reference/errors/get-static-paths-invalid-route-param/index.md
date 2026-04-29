@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:51.657Z"
 content_hash: "7397a18eb2560e2697b372f90caa31b575f6c39923457260cc5e6ab48db960e9"
 menu_path: ["Invalid route parameter returned by getStaticPaths()."]
 section_path: []
-nav_prev: {"path": "../get-static-paths-expected-params/index.md", "title": "Missing params property on getStaticPaths route."}
-nav_next: {"path": "../get-static-paths-removed-rsshelper/index.md", "title": "getStaticPaths RSS helper is not available anymore."}
+nav_prev: {"path": "astro/en/reference/errors/get-static-paths-expected-params/index.md", "title": "Missing params property on getStaticPaths route."}
+nav_next: {"path": "astro/en/reference/errors/get-static-paths-removed-rsshelper/index.md", "title": "getStaticPaths RSS helper is not available anymore."}
 ---
 
 # Invalid route parameter returned by getStaticPaths().
@@ -27,7 +27,7 @@ Since `params` are encoded into the URL, only certain types are supported as val
 ---export async function getStaticPaths() {  return [    { params: { id: '1' } } // Works    { params: { id: 2 } } // Does not work    { params: { id: false } } // Does not work    { params: { id: [1, 2] } } // Does not work  ];}---
 ```
 
-In routes using [rest parameters](/en/guides/routing/#rest-parameters), `undefined` can be used to represent a path with no parameters passed in the URL:
+In routes using [rest parameters](../../../guides/routing/index.md#rest-parameters), `undefined` can be used to represent a path with no parameters passed in the URL:
 
 ```
 ---export async function getStaticPaths() {  return [    { params: { id: '1' } } // /route/1    { params: { id: '2' } } // /route/2    { params: { id: undefined } } // /route/  ];}---
@@ -35,7 +35,7 @@ In routes using [rest parameters](/en/guides/routing/#rest-parameters), `undefin
 
 **See Also:**
 
-*   [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths)
-*   [`params`](/en/reference/api-reference/#params)
+*   [`getStaticPaths()`](../../routing-reference/index.md#getstaticpaths)
+*   [`params`](../../api-reference/index.md#params)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

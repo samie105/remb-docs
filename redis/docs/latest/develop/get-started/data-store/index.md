@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:40.599Z"
 content_hash: "aac67aacbda765b65ef6133d77f017ba334a6635f8534d8251c6756fe7a9fbc2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as an in-memory data structure store quick start guide","→","Redis as an in-memory data structure store quick start guide"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Quick starts","→","Quick starts","→\n      \n        Redis as an in-memory data structure store quick start guide","→","Redis as an in-memory data structure store quick start guide"]
-nav_prev: {"path": "../../data-types/timeseries/use_cases/index.md", "title": "Use cases"}
-nav_next: {"path": "../document-database/index.md", "title": "Redis as a document database quick start guide"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/timeseries/use_cases/index.md", "title": "Use cases"}
+nav_next: {"path": "redis/docs/latest/develop/get-started/document-database/index.md", "title": "Redis as a document database quick start guide"}
 ---
 
 # Redis as an in-memory data structure store quick start guide
@@ -36,7 +36,7 @@ The easiest way to get started with Redis is to use Redis Cloud:
 2.  Follow the instructions to create a free database.
     
 
-You can alternatively follow the [installation guides](/docs/latest/operate/oss_and_stack/install/install-stack/) to install Redis on your local machine.
+You can alternatively follow the [installation guides](../../../operate/oss_and_stack/install/install-stack/index.md) to install Redis on your local machine.
 
 ## Connect
 
@@ -2525,8 +2525,8 @@ SCAN 0 MATCH "bike:*" COUNT 100
 
 You can address more use cases with Redis by reading these additional quick start guides:
 
-*   [Redis as a document database](/docs/latest/develop/get-started/document-database/)
-*   [Redis as a vector database](/docs/latest/develop/get-started/vector-database/)
+*   [Redis as a document database](../document-database/index.md)
+*   [Redis as a vector database](../vector-database/index.md)
 
 ## Continue learning with Redis University
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:38.374Z"
 content_hash: "741a552d80d5e5f0bcfe009bb71d8447e0e9536a52fce5473a22b474304f642b"
 menu_path: ["Start a cluster of HTTP servers"]
 section_path: []
-nav_prev: {"path": "../../html-rewriter/extract-social-meta/index.md", "title": "Extract social share images and Open Graph tags"}
-nav_next: {"path": "../fetch/index.md", "title": "Send an HTTP request using fetch"}
+nav_prev: {"path": "bun/docs/guides/html-rewriter/extract-social-meta/index.md", "title": "Extract social share images and Open Graph tags"}
+nav_next: {"path": "bun/docs/guides/http/fetch/index.md", "title": "Send an HTTP request using fetch"}
 ---
 
 To run multiple HTTP servers concurrently, use the `reusePort` option in `Bun.serve()` which shares the same port across multiple processes. This automatically load balances incoming requests across multiple instances of Bun.

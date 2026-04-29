@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:06.308Z"
 content_hash: "86374aca24d3ba615a62d9da0b0443080217fb1d574e34ac7814a342249484b9"
 menu_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Read Replicas","Read Replicas","Overview","Overview"]
-nav_prev: {"path": "../project-transfer/index.md", "title": "Project Transfers"}
-nav_next: {"path": "getting-started/index.md", "title": "Getting started with Read Replicas"}
+nav_prev: {"path": "supabase/docs/guides/platform/project-transfer/index.md", "title": "Project Transfers"}
+nav_next: {"path": "supabase/docs/guides/platform/read-replicas/getting-started/index.md", "title": "Getting started with Read Replicas"}
 ---
 
 # 
@@ -76,9 +76,9 @@ Each Read Replica has its own dedicated database and API endpoints.
 *   Find the database endpoint on the project's [**Connect** panel](/dashboard/project/_?showConnect=true). Toggle between Primary and Read Replicas using the **Source** dropdown.
 *   Find the API endpoint on the [API Settings page](/dashboard/project/_/settings/api) under **Project URL**. Toggle between Primary and Read Replicas using the **Source** dropdown.
 
-If you use an [IPv4 add-on](/docs/guides/platform/ipv4-address#read-replicas), the database endpoints for your Read Replicas also use an IPv4 add-on.
+If you use an [IPv4 add-on](../ipv4-address/index.md#read-replicas), the database endpoints for your Read Replicas also use an IPv4 add-on.
 
-Read Replicas only support `GET` requests from the [REST API](/docs/guides/api). If you are calling a read-only Postgres function through the REST API, make sure to set the `get: true` [option](/docs/reference/javascript/rpc?queryGroups=example&example=call-a-read-only-postgres-function).
+Read Replicas only support `GET` requests from the [REST API](../../api/index.md). If you are calling a read-only Postgres function through the REST API, make sure to set the `get: true` [option](/docs/reference/javascript/rpc?queryGroups=example&example=call-a-read-only-postgres-function).
 
 Requests to other Supabase products, such as Auth, Storage, and Realtime, aren't able to use a Read Replica or its API endpoint. Support for more products will be added in the future.
 
@@ -107,7 +107,7 @@ From April 4th, 2025, the routing behavior for eligible Data API requests change
 
 The new behavior delivers a better experience for your users by minimizing the latency to your project. You can take full advantage of this by placing Read Replicas close to your major customer bases.
 
-If you use a [custom domain](/docs/guides/platform/custom-domains), requests will not be routed through the load balancer. You should instead use the dedicated endpoints provided in the dashboard.
+If you use a [custom domain](../custom-domains/index.md), requests will not be routed through the load balancer. You should instead use the dedicated endpoints provided in the dashboard.
 
 ### Querying through the SQL editor[#](#querying-through-the-sql-editor)
 
@@ -140,4 +140,4 @@ All settings configured through the dashboard will be propagated across all data
 
 ## Pricing[#](#pricing)
 
-For a detailed breakdown of how we calculate charges, read the [Manage Read Replica usage guide](/docs/guides/platform/manage-your-usage/read-replicas).
+For a detailed breakdown of how we calculate charges, read the [Manage Read Replica usage guide](../manage-your-usage/read-replicas/index.md).

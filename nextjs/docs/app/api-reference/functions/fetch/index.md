@@ -11,8 +11,8 @@ menu_path: ["fetch"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../draft-mode/index.md", "title": "draftMode"}
-nav_next: {"path": "../forbidden/index.md", "title": "forbidden"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/draft-mode/index.md", "title": "draftMode"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/forbidden/index.md", "title": "forbidden"}
 ---
 
 # fetch
@@ -49,13 +49,13 @@ Since Next.js extends the [Web `fetch()` API](https://developer.mozilla.org/docs
 
 ### `options.cache`[](#optionscache)
 
-Configure how the request should interact with Next.js [caching](/docs/app/getting-started/caching).
+Configure how the request should interact with Next.js [caching](../../../getting-started/caching/index.md).
 
 ```
 fetch(`https://...`, { cache: 'force-cache' | 'no-store' })
 ```
 
--   **`auto no cache`** (default): Next.js fetches the resource from the remote server on every request in development, but will fetch once during `next build` because the route will be statically prerendered. If [Request-time APIs](/docs/app/glossary#request-time-apis) are detected on the route, Next.js will fetch the resource on every request.
+-   **`auto no cache`** (default): Next.js fetches the resource from the remote server on every request in development, but will fetch once during `next build` because the route will be statically prerendered. If [Request-time APIs](../../../glossary/index.md#request-time-apis) are detected on the route, Next.js will fetch the resource on every request.
 -   **`no-store`**: Next.js fetches the resource from the remote server on every request, even if Request-time APIs are not detected on the route.
 -   **`force-cache`**: Next.js looks for a matching request in its server-side cache.
     -   If there is a match and it is fresh, it will be returned from the cache.
@@ -75,7 +75,7 @@ Set the cache lifetime of a resource (in seconds).
 
 > **Good to know**:
 > 
-> -   If an individual `fetch()` request sets a `revalidate` number lower than the [default `revalidate`](/docs/app/guides/caching-without-cache-components#route-segment-config-revalidate) of a route, the whole route revalidation interval will be decreased.
+> -   If an individual `fetch()` request sets a `revalidate` number lower than the [default `revalidate`](../../../guides/caching-without-cache-components/index.md#route-segment-config-revalidate) of a route, the whole route revalidation interval will be decreased.
 > -   If two fetch requests with the same URL in the same route have different `revalidate` values, the lower value will be used.
 > -   Conflicting options such as `{ revalidate: 3600, cache: 'no-store' }` are not allowed, both will be ignored, and in development mode a warning will be printed to the terminal.
 
@@ -85,11 +85,11 @@ Set the cache lifetime of a resource (in seconds).
 fetch(`https://...`, { next: { tags: ['collection'] } })
 ```
 
-Set the cache tags of a resource. Data can then be revalidated on-demand using [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag). The max length for a custom tag is 256 characters and the max tag items is 128.
+Set the cache tags of a resource. Data can then be revalidated on-demand using [`revalidateTag`](../revalidateTag/index.md). The max length for a custom tag is 256 characters and the max tag items is 128.
 
 ## Memoization[](#memoization)
 
-`fetch` requests using `GET` with the same URL and options are automatically [memoized](/docs/app/glossary#memoization) during a server render pass. If you call the same `fetch` in multiple Server Components, layouts, pages, `generateStaticParams` and `generateViewport`, Next.js executes it only once and shares the result.
+`fetch` requests using `GET` with the same URL and options are automatically [memoized](../../../glossary/index.md#memoization) during a server render pass. If you call the same `fetch` in multiple Server Components, layouts, pages, `generateStaticParams` and `generateViewport`, Next.js executes it only once and shares the result.
 
 To opt out, pass an [`AbortController`](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) signal to `fetch`:
 
@@ -98,7 +98,7 @@ const { signal } = new AbortController()
 fetch(url, { signal })
 ```
 
-> **Good to know**: Memoization does not apply in [Route Handlers](/docs/app/api-reference/file-conventions/route), since they are not part of the React component tree.
+> **Good to know**: Memoization does not apply in [Route Handlers](../../file-conventions/route/index.md), since they are not part of the React component tree.
 
 ## Troubleshooting[](#troubleshooting)
 
@@ -106,9 +106,9 @@ fetch(url, { signal })
 
 Next.js caches `fetch` responses in Server Components across Hot Module Replacement (HMR) in local development for faster responses and to reduce costs for billed API calls.
 
-By default, the [HMR cache](/docs/app/api-reference/config/next-config-js/serverComponentsHmrCache) applies to all fetch requests, including those with the default `auto no cache` and `cache: 'no-store'` option. This means uncached requests will not show fresh data between HMR refreshes. However, the cache will be cleared on navigation or full-page reloads.
+By default, the [HMR cache](../../config/next-config-js/serverComponentsHmrCache/index.md) applies to all fetch requests, including those with the default `auto no cache` and `cache: 'no-store'` option. This means uncached requests will not show fresh data between HMR refreshes. However, the cache will be cleared on navigation or full-page reloads.
 
-See the [`serverComponentsHmrCache`](/docs/app/api-reference/config/next-config-js/serverComponentsHmrCache) docs for more information.
+See the [`serverComponentsHmrCache`](../../config/next-config-js/serverComponentsHmrCache/index.md) docs for more information.
 
 ### Hard refresh and caching in development[](#hard-refresh-and-caching-in-development)
 

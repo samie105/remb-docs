@@ -11,8 +11,8 @@ menu_path: ["serverComponentsHmrCache"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../serverActions/index.md", "title": "serverActions"}
-nav_next: {"path": "../serverExternalPackages/index.md", "title": "serverExternalPackages"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverActions/index.md", "title": "serverActions"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
 ---
 
 # serverComponentsHmrCache
@@ -43,6 +43,6 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
-> **Good to know:** For better observability, we recommend using the [`logging.fetches`](/docs/app/api-reference/config/next-config-js/logging) option which logs fetch cache hits and misses in the console during development.
+> **Good to know:** For better observability, we recommend using the [`logging.fetches`](../logging/index.md) option which logs fetch cache hits and misses in the console during development.
 
 Was this helpful?

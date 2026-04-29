@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:17.227Z"
 content_hash: "3f0a3a7a253e7757e9cd738ffb047ab04e02465ebe2107c19d6460d7e156023f"
 menu_path: ["Integrations","Integrations","More","More","More","Supabase OAuth Integration","Supabase OAuth Integration","Overview","Overview"]
 section_path: ["Integrations","Integrations","More","More","More","Supabase OAuth Integration","Supabase OAuth Integration","Overview","Overview"]
-nav_prev: {"path": "../index.md", "title": "Integrations"}
-nav_next: {"path": "../supabase-for-platforms/index.md", "title": "Supabase for Platforms"}
+nav_prev: {"path": "supabase/docs/guides/integrations/index.md", "title": "Integrations"}
+nav_next: {"path": "supabase/docs/guides/integrations/supabase-for-platforms/index.md", "title": "Supabase for Platforms"}
 ---
 
 # 
@@ -132,7 +132,7 @@ When creating a new project, you can either ask the user to provide a database p
 
 ### Configure custom Auth SMTP[#](#configure-custom-auth-smtp)
 
-You can configure the user's [custom SMTP settings](/docs/guides/auth/auth-smtp) using the [`/config/auth` endpoint](https://api.supabase.com/api/v1#/projects%20config/updateV1AuthConfig).
+You can configure the user's [custom SMTP settings](../../auth/auth-smtp/index.md) using the [`/config/auth` endpoint](https://api.supabase.com/api/v1#/projects%20config/updateV1AuthConfig).
 
 ### Handling dynamic redirect URLs[#](#handling-dynamic-redirect-urls)
 

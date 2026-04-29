@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:42.624Z"
 content_hash: "74dfcba7d5a1597d77789d2078458f32f35b807024d4c2fcb6f0c47c7a0d5625"
 menu_path: ["Routing"]
 section_path: []
-nav_prev: {"path": "../function-configuration/index.md", "title": "Function Configuration"}
-nav_next: {"path": "../kysely-postgres/index.md", "title": "Type-Safe SQL with Kysely"}
+nav_prev: {"path": "supabase/docs/guides/functions/function-configuration/index.md", "title": "Function Configuration"}
+nav_next: {"path": "supabase/docs/guides/functions/kysely-postgres/index.md", "title": "Type-Safe SQL with Kysely"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:28.846Z"
 content_hash: "c9ac0aeed7045b33ef66ef0efebf9c9bd358e32ed2931e2810a4e1bdbcb970f6"
 menu_path: ["AI & Vectors","AI & Vectors","Search","Search","Semantic search","Semantic search"]
 section_path: ["AI & Vectors","AI & Vectors","Search","Search","Semantic search","Semantic search"]
-nav_prev: {"path": "../rag-with-permissions/index.md", "title": "RAG with Permissions"}
-nav_next: {"path": "../structured-unstructured/index.md", "title": "Structured and Unstructured"}
+nav_prev: {"path": "supabase/docs/guides/ai/rag-with-permissions/index.md", "title": "RAG with Permissions"}
+nav_next: {"path": "supabase/docs/guides/ai/structured-unstructured/index.md", "title": "Structured and Unstructured"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Learn how to search by meaning rather than exact keywords.
 
 * * *
 
-Semantic search interprets the meaning behind user queries rather than exact [keywords](/docs/guides/ai/keyword-search). It uses machine learning to capture the intent and context behind the query, handling language nuances like synonyms, phrasing variations, and word relationships.
+Semantic search interprets the meaning behind user queries rather than exact [keywords](../keyword-search/index.md). It uses machine learning to capture the intent and context behind the query, handling language nuances like synonyms, phrasing variations, and word relationships.
 
 ## When to use semantic search[#](#when-to-use-semantic-search)
 
@@ -31,19 +31,19 @@ Semantic search is useful in applications where the depth of understanding and c
 
 For instance, a user searching for "increase text size on display" might miss articles titled "How to adjust font size in settings" in a keyword-based search system. However, a semantic search engine would understand the intent behind the query and correctly match it to relevant articles, regardless of the specific terminology used.
 
-It's also possible to combine semantic search with keyword search to get the best of both worlds. See [Hybrid search](/docs/guides/ai/hybrid-search) for more details.
+It's also possible to combine semantic search with keyword search to get the best of both worlds. See [Hybrid search](../hybrid-search/index.md) for more details.
 
 ## How semantic search works[#](#how-semantic-search-works)
 
 Semantic search uses an intermediate representation called an “embedding vector” to link database records with search queries. A vector, in the context of semantic search, is a list of numerical values. They represent various features of the text and allow for the semantic comparison between different pieces of text.
 
-The best way to think of embeddings is by plotting them on a graph, where each embedding is a single point whose coordinates are the numerical values within its vector. Importantly, embeddings are plotted such that similar concepts are positioned close together while dissimilar concepts are far apart. For more details, see [What are embeddings?](/docs/guides/ai/concepts#what-are-embeddings)
+The best way to think of embeddings is by plotting them on a graph, where each embedding is a single point whose coordinates are the numerical values within its vector. Importantly, embeddings are plotted such that similar concepts are positioned close together while dissimilar concepts are far apart. For more details, see [What are embeddings?](../concepts/index.md#what-are-embeddings)
 
 Embeddings are generated using a language model, and embeddings are compared to each other using a similarity metric. The language model is trained to understand the semantics of language, including syntax, context, and the relationships between words. It generates embeddings for both the content in the database and the search queries. Then the similarity metric, often a function like cosine similarity or dot product, is used to compare the query embeddings with the document embeddings (in other words, to measure how close they are to each other on the graph). The documents with embeddings most similar to the query's are deemed the most relevant and are returned as search results.
 
 ## Embedding models[#](#embedding-models)
 
-There are many embedding models available today. Supabase Edge Functions has [built in support](/docs/guides/functions/examples/semantic-search) for the `gte-small` model. Others can be accessed through third-party APIs like [OpenAI](https://platform.openai.com/docs/guides/embeddings), where you send your text in the request and receive an embedding vector in the response. Others can run locally on your own compute, such as through Transformers.js for JavaScript implementations. For more information on local implementation, see [Generate embeddings](/docs/guides/ai/quickstarts/generate-text-embeddings).
+There are many embedding models available today. Supabase Edge Functions has [built in support](../../functions/examples/semantic-search/index.md) for the `gte-small` model. Others can be accessed through third-party APIs like [OpenAI](https://platform.openai.com/docs/guides/embeddings), where you send your text in the request and receive an embedding vector in the response. Others can run locally on your own compute, such as through Transformers.js for JavaScript implementations. For more information on local implementation, see [Generate embeddings](../quickstarts/generate-text-embeddings/index.md).
 
 It's crucial to remember that when using embedding models with semantic search, you must use the same model for all embedding comparisons. Comparing embeddings created by different models will yield meaningless results.
 
@@ -72,7 +72,7 @@ To implement semantic search in Postgres we use `pgvector` - an extension that a
     In this example, we create a column named `embedding` which uses the newly enabled `vector` data type. The size of the vector (as indicated in parentheses) represents the number of dimensions in the embedding. Here we use 512, but adjust this to match the number of dimensions produced by your embedding model.
     
 
-For more details on vector columns, including how to generate embeddings and store them, see [Vector columns](/docs/guides/ai/vector-columns).
+For more details on vector columns, including how to generate embeddings and store them, see [Vector columns](../vector-columns/index.md).
 
 ### Similarity metric[#](#similarity-metric)
 
@@ -136,7 +136,7 @@ In this scenario, you'll likely use a Postgres client library to establish a dir
 
 ## Next steps[#](#next-steps)
 
-As your database scales, you will need an index on your vector columns to maintain fast query speeds. See [Vector indexes](/docs/guides/ai/vector-indexes) for an in-depth guide on the different types of indexes and how they work.
+As your database scales, you will need an index on your vector columns to maintain fast query speeds. See [Vector indexes](../vector-indexes/index.md) for an in-depth guide on the different types of indexes and how they work.
 
 For larger datasets, choosing and tuning the right index is critical for maintaining fast and accurate semantic search.
 
@@ -173,8 +173,8 @@ Supabase uses Postgres with the `pgvector` extension, which supports two primary
 
 ## See also[#](#see-also)
 
-*   [Embedding concepts](/docs/guides/ai/concepts)
-*   [Vector columns](/docs/guides/ai/vector-columns)
-*   [Vector indexes](/docs/guides/ai/vector-indexes)
-*   [Hybrid search](/docs/guides/ai/hybrid-search)
-*   [Keyword search](/docs/guides/ai/keyword-search)
+*   [Embedding concepts](../concepts/index.md)
+*   [Vector columns](../vector-columns/index.md)
+*   [Vector indexes](../vector-indexes/index.md)
+*   [Hybrid search](../hybrid-search/index.md)
+*   [Keyword search](../keyword-search/index.md)

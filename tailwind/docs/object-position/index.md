@@ -10,8 +10,8 @@ content_hash: "3d15d0b9d648253a3487e7be9532c180cfbf0470d7bc8e10e438977ee5b04e8a"
 menu_path: ["object-position"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../object-fit/index.md", "title": "object-fit"}
-nav_next: {"path": "../overflow/index.md", "title": "overflow"}
+nav_prev: {"path": "tailwind/docs/object-fit/index.md", "title": "object-fit"}
+nav_next: {"path": "tailwind/docs/overflow/index.md", "title": "overflow"}
 ---
 
 Utilities for controlling how a replaced element's content should be positioned within its container.

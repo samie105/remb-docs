@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:01.690Z"
 content_hash: "a6cb6ae05af725fb6136c815ffbc5efa454148fdccc009878f5a737cfad9c3e5"
 menu_path: ["Error Handling"]
 section_path: []
-nav_prev: {"path": "../cookies/index.md", "title": "Cookies"}
-nav_next: {"path": "../metrics/index.md", "title": "Metrics"}
+nav_prev: {"path": "bun/docs/runtime/http/cookies/index.md", "title": "Cookies"}
+nav_next: {"path": "bun/docs/runtime/http/metrics/index.md", "title": "Metrics"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../metrics/index.md", "title": "Metrics"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To activate development mode, set `development: true`.
 
@@ -77,7 +77,7 @@ Bun.serve({
 });
 ```
 
-[Learn more about debugging in Bun](/docs/runtime/debugger)
+[Learn more about debugging in Bun](../../debugger/index.md)
 
 Was this page helpful?
 
@@ -89,12 +89,12 @@ TLS
 
 Previous
 
-](/docs/runtime/http/tls)[
+](../tls/index.md)[
 
 Metrics
 
 Next
 
-](/docs/runtime/http/metrics)
+](../metrics/index.md)
 
 ![Bun's built-in 500 page](https://mintcdn.com/bun-1dd33a4e/PY1574V41bdK8wNs/images/exception_page.png?w=840&fit=max&auto=format&n=PY1574V41bdK8wNs&q=85&s=5c605029819509b6e1dbba7ff684ef4f)

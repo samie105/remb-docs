@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:32.940Z"
 content_hash: "0fb3a8eea4b1cd771e58969083b3824f9c23232df205484d873246e637fe168d"
 menu_path: ["Passing Data Deeply with Context"]
 section_path: []
-nav_prev: {"path": "../extracting-state-logic-into-a-reducer/index.md", "title": "Extracting State Logic into a Reducer"}
-nav_next: {"path": "../scaling-up-with-reducer-and-context/index.md", "title": "Scaling Up with Reducer and Context"}
+nav_prev: {"path": "react/learn/extracting-state-logic-into-a-reducer/index.md", "title": "Extracting State Logic into a Reducer"}
+nav_next: {"path": "react/learn/scaling-up-with-reducer-and-context/index.md", "title": "Scaling Up with Reducer and Context"}
 ---
 
 Usually, you will pass information from a parent component to a child component via props. But passing props can become verbose and inconvenient if you have to pass them through many components in the middle, or if many components in your app need the same information. _Context_ lets the parent component make some information available to any component in the tree below it—no matter how deep—without passing it explicitly through props.

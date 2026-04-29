@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:13:58.025Z"
 content_hash: "8b4d2fe31a9a95d40b632dd53d7e3b9bb47a91b5da046543d23c978b3e359943"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Combined queries","→","Combined queries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Combined queries","→","Combined queries"]
-nav_prev: {"path": "../aggregation/index.md", "title": "Aggregation queries"}
-nav_next: {"path": "../exact-match/index.md", "title": "Exact match queries"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/aggregation/index.md", "title": "Aggregation queries"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/exact-match/index.md", "title": "Exact match queries"}
 ---
 
 # Combined queries
@@ -19,17 +19,17 @@ Combine query expressions
 
 A combined query is a combination of several query types, such as:
 
-*   [Exact match](/docs/latest/develop/ai/search-and-query/query/exact-match/)
-*   [Range](/docs/latest/develop/ai/search-and-query/query/range/)
-*   [Full-text](/docs/latest/develop/ai/search-and-query/query/full-text/)
-*   [Geospatial](/docs/latest/develop/ai/search-and-query/query/geo-spatial/)
-*   [Vector search](/docs/latest/develop/ai/search-and-query/query/vector-search/)
+*   [Exact match](../exact-match/index.md)
+*   [Range](../range/index.md)
+*   [Full-text](../full-text/index.md)
+*   [Geospatial](../geo-spatial/index.md)
+*   [Vector search](../vector-search/index.md)
 
 You can use logical query operators to combine query expressions for numeric, tag, and text fields. For vector fields, you can combine a KNN query with a pre-filter.
 
 Note:
 
-The operators are interpreted slightly differently depending on the query dialect used. The default dialect is `DIALECT 1`; see [this article](/docs/latest/develop/ai/search-and-query/administration/configuration/#search-default-dialect) for information on how to change the dialect version. This article uses the second version of the query dialect, `DIALECT 2`, and uses additional brackets (`(...)`) to help clarify the examples. Further details can be found in the [query syntax documentation](/docs/latest/develop/ai/search-and-query/advanced-concepts/query_syntax/).
+The operators are interpreted slightly differently depending on the query dialect used. The default dialect is `DIALECT 1`; see [this article](../../administration/configuration/index.md#search-default-dialect) for information on how to change the dialect version. This article uses the second version of the query dialect, `DIALECT 2`, and uses additional brackets (`(...)`) to help clarify the examples. Further details can be found in the [query syntax documentation](/docs/latest/develop/ai/search-and-query/advanced-concepts/query_syntax/).
 
 The examples in this article use the following schema:
 
@@ -1551,7 +1551,7 @@ The [FT.SEARCH](/docs/latest/commands/ft.search/) command allows you to combine 
 FT.SEARCH index "expr" FILTER numeric_field start end
 ```
 
-Please see the [range query article](/docs/latest/develop/ai/search-and-query/query/range/) to learn more about numeric range queries and such filters.
+Please see the [range query article](../range/index.md) to learn more about numeric range queries and such filters.
 
 ## Pre-filter for a KNN vector query
 
@@ -1802,6 +1802,6 @@ console.log(res7); // >>>
 
 ```
 
-The [vector search article](/docs/latest/develop/ai/search-and-query/query/vector-search/) provides further details about vector queries in general.
+The [vector search article](../vector-search/index.md) provides further details about vector queries in general.
 
 ## On this page

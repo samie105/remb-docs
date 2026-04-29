@@ -10,8 +10,8 @@ content_hash: "3fad8ccbfb31758efe5a3e3754996fe74c47d255b1ceae16372f4dca4c45bb9f"
 menu_path: ["mask-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../mask-repeat/index.md", "title": "mask-repeat"}
-nav_next: {"path": "../mask-type/index.md", "title": "mask-type"}
+nav_prev: {"path": "tailwind/docs/mask-repeat/index.md", "title": "mask-repeat"}
+nav_next: {"path": "tailwind/docs/mask-type/index.md", "title": "mask-type"}
 ---
 
 # mask-size
@@ -83,7 +83,7 @@ Prefix a `mask-size` utility with a breakpoint variant like `md:` to only apply 
 <div class="mask-auto md:mask-contain ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

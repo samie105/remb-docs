@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:44.528Z"
 content_hash: "babda58994a1221d61e08a737b113ddde8ddfea756825b185fc53ea47407f0e3"
 menu_path: ["Compress and decompress data with DEFLATE"]
 section_path: []
-nav_prev: {"path": "../deep-equals/index.md", "title": "Check if two objects are deeply equal"}
-nav_next: {"path": "../detect-bun/index.md", "title": "Detect when code is executed with Bun"}
+nav_prev: {"path": "bun/docs/guides/util/deep-equals/index.md", "title": "Check if two objects are deeply equal"}
+nav_next: {"path": "bun/docs/guides/util/detect-bun/index.md", "title": "Detect when code is executed with Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../detect-bun/index.md", "title": "Detect when code is execu
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use `Bun.deflateSync()` to compress a `Uint8Array` with DEFLATE.
 
@@ -48,7 +48,7 @@ const decompressed = Bun.inflateSync(compressed);
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -60,10 +60,10 @@ Compress and decompress data with gzip
 
 Previous
 
-](/docs/guides/util/gzip)[
+](../gzip/index.md)[
 
 Escape an HTML string
 
 Next
 
-](/docs/guides/util/escape-html)
+](../escape-html/index.md)

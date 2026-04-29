@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:16.496Z"
 content_hash: "907c277729a6be95c5631c4257639765e13ae23216da369a1c735d157d68a634"
 menu_path: ["Auth","Auth","Third-party auth","Third-party auth","Firebase Auth","Firebase Auth"]
 section_path: ["Auth","Auth","Third-party auth","Third-party auth","Firebase Auth","Firebase Auth"]
-nav_prev: {"path": "../clerk/index.md", "title": "Clerk"}
-nav_next: {"path": "../overview/index.md", "title": "Third-party auth"}
+nav_prev: {"path": "supabase/docs/guides/auth/third-party/clerk/index.md", "title": "Clerk"}
+nav_next: {"path": "supabase/docs/guides/auth/third-party/overview/index.md", "title": "Third-party auth"}
 ---
 
 # 
@@ -61,7 +61,7 @@ When using the Supabase hosted platform, following this step is optional.
 
 Firebase Auth uses a single set of JWT signing keys for all projects. This means that JWTs issued from an unrelated Firebase project to yours could access data in your Supabase project.
 
-When using the Supabase hosted platform, JWTs coming from Firebase project IDs you have not registered will be rejected before they reach your database. When self-hosting implementing this mechanism is your responsibility. An easy way to guard against this is to create and maintain the following RLS policies for **all of your tables in the `public` schema**. You should also attach this policy to [Storage](/docs/guides/storage/security/access-control) buckets or [Realtime](/docs/guides/realtime/authorization) channels.
+When using the Supabase hosted platform, JWTs coming from Firebase project IDs you have not registered will be rejected before they reach your database. When self-hosting implementing this mechanism is your responsibility. An easy way to guard against this is to create and maintain the following RLS policies for **all of your tables in the `public` schema**. You should also attach this policy to [Storage](../../../storage/security/access-control/index.md) buckets or [Realtime](../../../realtime/authorization/index.md) channels.
 
 It's recommended you use a [restrictive Postgres Row-Level Security policy](https://www.postgresql.org/docs/current/sql-createpolicy.html).
 
@@ -75,7 +75,7 @@ This is an example of such an RLS policy that will restrict access to only your 
 1create policy "Restrict access to Supabase Auth and Firebase Auth for project ID <firebase-project-id>"2  on table_name3  as restrictive4  to authenticated5  using (6    (auth.jwt()->>'iss' = 'https://<project-ref>.supabase.co/auth/v1')7    or8    (9        auth.jwt()->>'iss' = 'https://securetoken.google.com/<firebase-project-id>'10        and11        auth.jwt()->>'aud' = '<firebase-project-id>'12     )13  );
 ```
 
-If you have a lot of tables in your app, or need to manage complex RLS policies for [Storage](/docs/guides/storage) or [Realtime](/docs/guides/realtime) it can be useful to define a [stable Postgres function](https://www.postgresql.org/docs/current/xfunc-volatility.html) that performs the check to cut down on duplicate code. For example:
+If you have a lot of tables in your app, or need to manage complex RLS policies for [Storage](../../../storage/index.md) or [Realtime](../../../realtime/index.md) it can be useful to define a [stable Postgres function](https://www.postgresql.org/docs/current/xfunc-volatility.html) that performs the check to cut down on duplicate code. For example:
 
 ```
 1create function public.is_supabase_or_firebase_project_jwt()2  returns bool3  language sql4  stable5  returns null on null input6  return (7    (auth.jwt()->>'iss' = 'https://<project-ref>.supabase.co/auth/v1')8    or9    (10        auth.jwt()->>'iss' = concat('https://securetoken.google.com/<firebase-project-id>')11        and12        auth.jwt()->>'aud' = '<firebase-project-id>'13     )14  );

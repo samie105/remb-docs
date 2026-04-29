@@ -10,8 +10,8 @@ content_hash: "0df75f88e9fb011582711d698896c6a507ec2ec5c92a61312f1c86d4f3e461ea"
 menu_path: ["Configuring error formatting"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
-nav_next: {"path": "../introduction/index.md", "title": "Introduction to Prisma Client"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/databases-connections/pgbouncer/index.md", "title": "Configure Prisma Client with PgBouncer"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/setup-and-configuration/introduction/index.md", "title": "Introduction to Prisma Client"}
 ---
 
 Setup and Configuration

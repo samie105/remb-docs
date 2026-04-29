@@ -10,8 +10,8 @@ content_hash: "0108fe213b66442a85855cceeac44262aec0a5af9791b4c2a541f2f8250dc6b4"
 menu_path: ["PostgreSQL: Documentation: 18: COPY"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
-nav_next: {"path": "../sql-create-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ACCESS METHOD"}
+nav_prev: {"path": "postgres/docs/current/sql-commit.html/index.md", "title": "PostgreSQL: Documentation: 18: COMMIT"}
+nav_next: {"path": "postgres/docs/current/sql-create-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE ACCESS METHOD"}
 ---
 
 COPY — copy data between a file and a table

@@ -10,8 +10,8 @@ content_hash: "e14573360eba2b980ba4e882e699bb7aa096f8671ea56a397929ba7521d7c3b7"
 menu_path: ["PostgreSQL: Documentation: 18: 53.20. pg_replication_slots"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
-nav_next: {"path": "../view-pg-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.21.\u00a0pg_roles"}
+nav_prev: {"path": "postgres/docs/current/view-pg-replication-origin-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.19.\u00a0pg_replication_origin_status"}
+nav_next: {"path": "postgres/docs/current/view-pg-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.21.\u00a0pg_roles"}
 ---
 
 | 

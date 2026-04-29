@@ -11,8 +11,8 @@ menu_path: ["generateImageMetadata"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../forbidden/index.md", "title": "forbidden"}
-nav_next: {"path": "../generate-metadata/index.md", "title": "generateMetadata"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/forbidden/index.md", "title": "forbidden"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/generate-metadata/index.md", "title": "generateMetadata"}
 ---
 
 # generateImageMetadata
@@ -27,7 +27,7 @@ You can use `generateImageMetadata` to generate different versions of one image 
 
 #### `params` (optional)[](#params-optional)
 
-An object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) object from the root segment down to the segment `generateImageMetadata` is called from.
+An object containing the [dynamic route parameters](../../file-conventions/dynamic-routes/index.md) object from the root segment down to the segment `generateImageMetadata` is called from.
 
 icon.tsx
 
@@ -126,7 +126,7 @@ export default async function Icon({ id }: { id: Promise<string | number> }) {
 
 #### `params` (optional)[](#params-optional-1)
 
-A promise that resolves to an object containing the [dynamic route parameters](/docs/app/api-reference/file-conventions/dynamic-routes) from the root segment down to the segment the image is colocated in.
+A promise that resolves to an object containing the [dynamic route parameters](../../file-conventions/dynamic-routes/index.md) from the root segment down to the segment the image is colocated in.
 
 icon.tsx
 
@@ -147,7 +147,7 @@ export default async function Icon({
 
 #### Using external data[](#using-external-data)
 
-This example uses the `params` object and external data to generate multiple [Open Graph images](/docs/app/api-reference/file-conventions/metadata/opengraph-image) for a route segment.
+This example uses the `params` object and external data to generate multiple [Open Graph images](../../file-conventions/metadata/opengraph-image/index.md) for a route segment.
 
 app/products/\[id\]/opengraph-image.tsx
 
@@ -217,6 +217,6 @@ View all the Metadata API options.
 
 API documentation for the metadata file conventions.
 
-](/docs/app/api-reference/file-conventions/metadata)
+](../../file-conventions/metadata/index.md)
 
 Was this helpful?

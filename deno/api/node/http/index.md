@@ -10,8 +10,8 @@ content_hash: "e14105376417cc7d886b4edfdadd15d8d5bdb345cb57a9afab3b58c570bdcfb1"
 menu_path: ["http - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../fs/promises/index.md", "title": "fs/promises - Node documentation"}
-nav_next: {"path": "../http2/index.md", "title": "http2 - Node documentation"}
+nav_prev: {"path": "deno/api/node/fs/promises/index.md", "title": "fs/promises - Node documentation"}
+nav_next: {"path": "deno/api/node/http2/index.md", "title": "http2 - Node documentation"}
 ---
 
 ### Usage in Deno

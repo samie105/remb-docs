@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:08.587Z"
 content_hash: "429bb2af4f2798aac4b175b8a763bd7c6a7e749ad36c9850c4ee145aa1876cfb"
 menu_path: ["Start with Supabase","Start with Supabase","Features","Features"]
 section_path: ["Start with Supabase","Start with Supabase","Features","Features"]
-nav_prev: {"path": "../byo-mcp/index.md", "title": "Deploy MCP servers"}
-nav_next: {"path": "../mcp/index.md", "title": "Model context protocol (MCP)"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/byo-mcp/index.md", "title": "Deploy MCP servers"}
+nav_next: {"path": "supabase/docs/guides/getting-started/mcp/index.md", "title": "Model context protocol (MCP)"}
 ---
 
 # 
@@ -29,11 +29,11 @@ Every project is a full Postgres database. [Docs](/docs/guides/database).
 
 ### Vector database[#](#vector-database)
 
-Store vector embeddings right next to the rest of your data. [Docs](/docs/guides/ai).
+Store vector embeddings right next to the rest of your data. [Docs](../../ai/index.md).
 
 ### Auto-generated REST API via PostgREST[#](#auto-generated-rest-api-via-postgrest)
 
-RESTful APIs are auto-generated from your database, without a single line of code. [Docs](/docs/guides/api#rest-api-overview).
+RESTful APIs are auto-generated from your database, without a single line of code. [Docs](../../api/index.md#rest-api-overview).
 
 ### Auto-generated GraphQL API via pg\_graphql[#](#auto-generated-graphql-api-via-pggraphql)
 
@@ -41,33 +41,33 @@ Fast GraphQL APIs using our custom Postgres GraphQL extension. [Docs](/docs/guid
 
 ### Database webhooks[#](#database-webhooks)
 
-Send database changes to any external service using Webhooks. [Docs](/docs/guides/database/webhooks).
+Send database changes to any external service using Webhooks. [Docs](../../database/webhooks/index.md).
 
 ### Secrets and encryption[#](#secrets-and-encryption)
 
-Encrypt sensitive data and store secrets using our Postgres extension, Supabase Vault. [Docs](/docs/guides/database/vault).
+Encrypt sensitive data and store secrets using our Postgres extension, Supabase Vault. [Docs](../../database/vault/index.md).
 
 ### Replication[#](#replication)
 
-Automatically replicate your database to external destinations like data warehouses and analytics platforms. [Docs](/docs/guides/database/replication/replication-setup).
+Automatically replicate your database to external destinations like data warehouses and analytics platforms. [Docs](../../database/replication/replication-setup/index.md).
 
 ## Platform[#](#platform)
 
 ### Database backups[#](#database-backups)
 
-Projects are backed up daily with the option to upgrade to Point in Time recovery. [Docs](/docs/guides/platform/backups).
+Projects are backed up daily with the option to upgrade to Point in Time recovery. [Docs](../../platform/backups/index.md).
 
 ### Custom domains[#](#custom-domains)
 
-White-label the Supabase APIs to create a branded experience for your users. [Docs](/docs/guides/platform/custom-domains).
+White-label the Supabase APIs to create a branded experience for your users. [Docs](../../platform/custom-domains/index.md).
 
 ### Network restrictions[#](#network-restrictions)
 
-Restrict IP ranges that can connect to your database. [Docs](/docs/guides/platform/network-restrictions).
+Restrict IP ranges that can connect to your database. [Docs](../../platform/network-restrictions/index.md).
 
 ### SSL enforcement[#](#ssl-enforcement)
 
-Enforce Postgres clients to connect via SSL. [Docs](/docs/guides/platform/ssl-enforcement).
+Enforce Postgres clients to connect via SSL. [Docs](../../platform/ssl-enforcement/index.md).
 
 ### Branching[#](#branching)
 
@@ -79,7 +79,7 @@ Manage Supabase infrastructure via Terraform, an Infrastructure as Code tool. [D
 
 ### Read replicas[#](#read-replicas)
 
-Deploy read-only databases across multiple regions, for lower latency and better resource management. [Docs](/docs/guides/platform/read-replicas).
+Deploy read-only databases across multiple regions, for lower latency and better resource management. [Docs](../../platform/read-replicas/index.md).
 
 ### Log drains[#](#log-drains)
 
@@ -89,7 +89,7 @@ Export Supabase logs to 3rd party providers and external tooling. [Docs](/docs/g
 
 ### Studio Single Sign-On[#](#studio-single-sign-on)
 
-Login to the Supabase dashboard via SSO. [Docs](/docs/guides/platform/sso).
+Login to the Supabase dashboard via SSO. [Docs](../../platform/sso/index.md).
 
   
 
@@ -97,15 +97,15 @@ Login to the Supabase dashboard via SSO. [Docs](/docs/guides/platform/sso).
 
 ### Postgres changes[#](#postgres-changes)
 
-Receive your database changes through WebSockets. [Docs](/docs/guides/realtime/postgres-changes).
+Receive your database changes through WebSockets. [Docs](../../realtime/postgres-changes/index.md).
 
 ### Broadcast[#](#broadcast)
 
-Send messages between connected users through WebSockets. [Docs](/docs/guides/realtime/broadcast).
+Send messages between connected users through WebSockets. [Docs](../../realtime/broadcast/index.md).
 
 ### Presence[#](#presence)
 
-Synchronize shared state across your users, including online status and typing indicators. [Docs](/docs/guides/realtime/presence).
+Synchronize shared state across your users, including online status and typing indicators. [Docs](../../realtime/presence/index.md).
 
 ## Auth[#](#auth)
 
@@ -115,11 +115,11 @@ Build email logins for your application or website. [Docs](/docs/guides/auth/aut
 
 ### Social login[#](#social-login)
 
-Provide social logins - everything from Apple, to GitHub, to Slack. [Docs](/docs/guides/auth/social-login).
+Provide social logins - everything from Apple, to GitHub, to Slack. [Docs](../../auth/social-login/index.md).
 
 ### Phone logins[#](#phone-logins)
 
-Provide phone logins using a third-party SMS provider. [Docs](/docs/guides/auth/phone-login).
+Provide phone logins using a third-party SMS provider. [Docs](../../auth/phone-login/index.md).
 
 ### Passwordless login[#](#passwordless-login)
 
@@ -127,15 +127,15 @@ Build passwordless logins via magic links for your application or website. [Docs
 
 ### Authorization via Row Level Security[#](#authorization-via-row-level-security)
 
-Control the data each user can access with Postgres Policies. [Docs](/docs/guides/database/postgres/row-level-security).
+Control the data each user can access with Postgres Policies. [Docs](../../database/postgres/row-level-security/index.md).
 
 ### CAPTCHA protection[#](#captcha-protection)
 
-Add CAPTCHA to your sign-in, sign-up, and password reset forms. [Docs](/docs/guides/auth/auth-captcha).
+Add CAPTCHA to your sign-in, sign-up, and password reset forms. [Docs](../../auth/auth-captcha/index.md).
 
 ### Server-Side Auth[#](#server-side-auth)
 
-Helpers for implementing user authentication in popular server-side languages and frameworks like Next.js, SvelteKit and Remix. [Docs](/docs/guides/auth/server-side).
+Helpers for implementing user authentication in popular server-side languages and frameworks like Next.js, SvelteKit and Remix. [Docs](../../auth/server-side/index.md).
 
   
 
@@ -143,15 +143,15 @@ Helpers for implementing user authentication in popular server-side languages an
 
 ### File storage[#](#file-storage)
 
-Supabase Storage makes it simple to store and serve files. [Docs](/docs/guides/storage).
+Supabase Storage makes it simple to store and serve files. [Docs](../../storage/index.md).
 
 ### Content Delivery Network[#](#content-delivery-network)
 
-Cache large files using the Supabase CDN. [Docs](/docs/guides/storage/cdn/fundamentals).
+Cache large files using the Supabase CDN. [Docs](../../storage/cdn/fundamentals/index.md).
 
 ### Smart Content Delivery Network[#](#smart-content-delivery-network)
 
-Automatically revalidate assets at the edge via the Smart CDN. [Docs](/docs/guides/storage/cdn/smart-cdn).
+Automatically revalidate assets at the edge via the Smart CDN. [Docs](../../storage/cdn/smart-cdn/index.md).
 
 ### Image transformations[#](#image-transformations)
 
@@ -163,17 +163,17 @@ Upload large files using resumable uploads. [Docs](/docs/guides/storage/uploads/
 
 ### S3 compatibility[#](#s3-compatibility)
 
-Interact with Storage from tool which supports the S3 protocol. [Docs](/docs/guides/storage/s3/compatibility).
+Interact with Storage from tool which supports the S3 protocol. [Docs](../../storage/s3/compatibility/index.md).
 
 ## Edge Functions[#](#edge-functions)
 
 ### Deno Edge Functions[#](#deno-edge-functions)
 
-Globally distributed TypeScript functions to execute custom business logic. [Docs](/docs/guides/functions).
+Globally distributed TypeScript functions to execute custom business logic. [Docs](../../functions/index.md).
 
 ### Regional invocations[#](#regional-invocations)
 
-Execute an Edge Function in a region close to your database. [Docs](/docs/guides/functions/regional-invocation).
+Execute an Edge Function in a region close to your database. [Docs](../../functions/regional-invocation/index.md).
 
 ### NPM compatibility[#](#npm-compatibility)
 

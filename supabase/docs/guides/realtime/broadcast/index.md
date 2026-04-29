@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:56.046Z"
 content_hash: "d76b018f2e75fe7ca4729ee88845fd1b48b8c36654000186dddb74069d18b0ec"
 menu_path: ["Realtime","Realtime","Usage","Usage","Broadcast","Broadcast"]
 section_path: ["Realtime","Realtime","Usage","Usage","Broadcast","Broadcast"]
-nav_prev: {"path": "../benchmarks/index.md", "title": "Benchmarks"}
-nav_next: {"path": "../concepts/index.md", "title": "Realtime Concepts"}
+nav_prev: {"path": "supabase/docs/guides/realtime/benchmarks/index.md", "title": "Benchmarks"}
+nav_next: {"path": "supabase/docs/guides/realtime/concepts/index.md", "title": "Realtime Concepts"}
 ---
 
 # 
@@ -40,7 +40,7 @@ The public flag (the last argument in `realtime.send(payload, event, topic, is_p
 
 Regardless if it's public or private, the Realtime service connects to your database as the authenticated Supabase Admin role.
 
-For Authorization, we insert a message and try to read it, and rollback the transaction to verify that the Row Level Security (RLS) policies set by the user are being respected by the user joining the channel, but this message isn't sent to the user. You can read more about it in [Authorization](/docs/guides/realtime/authorization).
+For Authorization, we insert a message and try to read it, and rollback the transaction to verify that the Row Level Security (RLS) policies set by the user are being respected by the user joining the channel, but this message isn't sent to the user. You can read more about it in [Authorization](../authorization/index.md).
 
 ## Subscribe to messages[#](#subscribe-to-messages)
 
@@ -97,7 +97,7 @@ The `realtime.send()` function in the database includes a flag that determines w
 
 By default, all database broadcasts are private, meaning clients must authenticate to receive them. If the database sends a public message but the client subscribes to a private channel, the message is not delivered because private channels only accept signed, authenticated messages.
 
-You can use the `realtime.broadcast_changes()` helper function to broadcast messages when a record is created, updated, or deleted. For more details, read [Subscribing to Database Changes](/docs/guides/realtime/subscribing-to-database-changes).
+You can use the `realtime.broadcast_changes()` helper function to broadcast messages when a record is created, updated, or deleted. For more details, read [Subscribing to Database Changes](../subscribing-to-database-changes/index.md).
 
 ### Broadcast using the REST API[#](#broadcast-using-the-rest-api)
 
@@ -147,7 +147,7 @@ Broadcast Changes allows you to trigger messages from your database. To achieve 
 
 It uses partitioned tables per day, which allows performant deletion of your previous messages by dropping the physical tables of this partitioned table. Tables older than 3 days are deleted.
 
-Broadcasting from the database works like a client-side broadcast, using WebSockets to send JSON payloads. [Realtime Authorization](/docs/guides/realtime/authorization) is required and enabled by default to protect your data.
+Broadcasting from the database works like a client-side broadcast, using WebSockets to send JSON payloads. [Realtime Authorization](../authorization/index.md) is required and enabled by default to protect your data.
 
 Broadcast Changes provides two functions to help you send messages:
 
@@ -172,7 +172,7 @@ Realtime Authorization is required and enabled by default. To allow your users t
 1CREATE POLICY "authenticated can receive broadcasts"2ON "realtime"."messages"3FOR SELECT4TO authenticated5USING ( true );
 ```
 
-Read [Realtime Authorization](/docs/guides/realtime/authorization) to learn how to set up more specific policies.
+Read [Realtime Authorization](../authorization/index.md) to learn how to set up more specific policies.
 
 #### Set up trigger function[#](#set-up-trigger-function)
 

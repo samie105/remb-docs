@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:10.661Z"
 content_hash: "a3c41c90e4e8588fd69a185fcf0186e92cb91753e4809933f925e591f806d95d"
 menu_path: ["Manipulating the DOM with Refs"]
 section_path: []
-nav_prev: {"path": "../referencing-values-with-refs/index.md", "title": "Referencing Values with Refs"}
-nav_next: {"path": "../synchronizing-with-effects/index.md", "title": "Synchronizing with Effects"}
+nav_prev: {"path": "react/learn/referencing-values-with-refs/index.md", "title": "Referencing Values with Refs"}
+nav_next: {"path": "react/learn/synchronizing-with-effects/index.md", "title": "Synchronizing with Effects"}
 ---
 
 React automatically updates the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) to match your render output, so your components won’t often need to manipulate it. However, sometimes you might need access to the DOM elements managed by React—for example, to focus a node, scroll to it, or measure its size and position. There is no built-in way to do those things in React, so you will need a _ref_ to the DOM node.

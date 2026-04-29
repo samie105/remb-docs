@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:22.234Z"
 content_hash: "b6697df49b2ca06dddb11deb971da430483ba8f44b73ccb4bb502a733c699b34"
 menu_path: ["Define Procedures"]
 section_path: []
-nav_prev: {"path": "../overview/index.md", "title": "Backend Usage"}
-nav_next: {"path": "../routers/index.md", "title": "Define Routers"}
+nav_prev: {"path": "trpc/docs/server/overview/index.md", "title": "Backend Usage"}
+nav_next: {"path": "trpc/docs/server/routers/index.md", "title": "Define Routers"}
 ---
 
 A procedure is a function which is exposed to the client, it can be one of:

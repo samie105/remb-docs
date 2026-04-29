@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:16.412Z"
 content_hash: "aac55545db1e7fd918815ab93f73b34600eb146cccd9d52f41f0cc5de2099109"
 menu_path: ["Using Environment Instances ​"]
 section_path: []
-nav_prev: {"path": "../api-environment/index.md", "title": "Environment API \u200b"}
-nav_next: {"path": "../api-environment-plugins/index.md", "title": "Environment API for Plugins \u200b"}
+nav_prev: {"path": "vite/guide/api-environment/index.md", "title": "Environment API \u200b"}
+nav_next: {"path": "vite/guide/api-environment-plugins/index.md", "title": "Environment API for Plugins \u200b"}
 ---
 
 ## Using `Environment` Instances [​](#using-environment-instances)

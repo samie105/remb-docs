@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:27.770Z"
 content_hash: "d5476b5c24b263dbb7552b699f5b1f96e724404d1d4080b925706e0eba2f55e6"
 menu_path: ["Factory Helper ​"]
 section_path: []
-nav_prev: {"path": "../dev/index.md", "title": "Dev Helper \u200b"}
-nav_next: {"path": "../html/index.md", "title": "html Helper \u200b"}
+nav_prev: {"path": "hono/docs/helpers/dev/index.md", "title": "Dev Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/html/index.md", "title": "html Helper \u200b"}
 ---
 
 The Factory Helper provides useful functions for creating Hono's components such as Middleware. Sometimes it's difficult to set the proper TypeScript types, but this helper facilitates that.

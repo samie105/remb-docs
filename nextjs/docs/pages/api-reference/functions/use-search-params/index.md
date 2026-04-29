@@ -11,8 +11,8 @@ menu_path: ["useSearchParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../use-router/index.md", "title": "useRouter"}
-nav_next: {"path": "../userAgent/index.md", "title": "userAgent"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/use-router/index.md", "title": "useRouter"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/userAgent/index.md", "title": "userAgent"}
 ---
 
 # useSearchParams
@@ -85,7 +85,7 @@ The interface includes utility methods for reading the URL's query string:
 
 ### Behavior during prerendering[](#behavior-during-prerendering)
 
-For pages that are [statically optimized](/docs/pages/building-your-application/rendering/automatic-static-optimization) (not using `getServerSideProps`), `useSearchParams` will return `null` during prerendering. After hydration, the value will be updated to the actual search params.
+For pages that are [statically optimized](../../../building-your-application/rendering/automatic-static-optimization/index.md) (not using `getServerSideProps`), `useSearchParams` will return `null` during prerendering. After hydration, the value will be updated to the actual search params.
 
 This is because search params cannot be known during static generation as they depend on the request.
 
@@ -113,7 +113,7 @@ export default function Dashboard() {
 
 ### Using with `getServerSideProps`[](#using-with-getserversideprops)
 
-When using [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), the page is server-rendered on each request and `useSearchParams` will return the actual search params immediately:
+When using [`getServerSideProps`](../../../building-your-application/data-fetching/get-server-side-props/index.md), the page is server-rendered on each request and `useSearchParams` will return the actual search params immediately:
 
 pages/dashboard.tsx
 
@@ -147,7 +147,7 @@ export async function getServerSideProps() {
 
 ### Updating search params[](#updating-search-params)
 
-You can use the [`useRouter`](/docs/pages/api-reference/functions/use-router) hook to update search params:
+You can use the [`useRouter`](../use-router/index.md) hook to update search params:
 
 pages/dashboard.tsx
 
@@ -223,7 +223,7 @@ export function SearchBar() {
 }
 ```
 
-> **Good to know**: When using this component in the App Router, wrap it in a `<Suspense>` boundary for [prerendering](/docs/app/api-reference/functions/use-search-params#prerendering) support.
+> **Good to know**: When using this component in the App Router, wrap it in a `<Suspense>` boundary for [prerendering](../../../../app/api-reference/functions/use-search-params/index.md#prerendering) support.
 
 ## Version History[](#version-history)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:28.954Z"
 content_hash: "e5a1bf5705a8f37a203eff1ea2202632be327d970db906361b0375f73593c618"
 menu_path: ["Incremental Adoption"]
 section_path: []
-nav_prev: {"path": "../installation/index.md", "title": "Installation"}
-nav_next: {"path": "../debugging/index.md", "title": "Debugging and Troubleshooting"}
+nav_prev: {"path": "react/learn/react-compiler/installation/index.md", "title": "Installation"}
+nav_next: {"path": "react/learn/react-compiler/debugging/index.md", "title": "Debugging and Troubleshooting"}
 ---
 
 React Compiler can be adopted incrementally, allowing you to try it on specific parts of your codebase first. This guide shows you how to gradually roll out the compiler in existing projects.

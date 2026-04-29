@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:29.327Z"
 content_hash: "f02a3a4475401a1ecee31a459eac15e3173ab6e183e51ae8a9f5b437aa14f1ba"
 menu_path: ["Synchronizing with Effects"]
 section_path: []
-nav_prev: {"path": "../manipulating-the-dom-with-refs/index.md", "title": "Manipulating the DOM with Refs"}
-nav_next: {"path": "../you-might-not-need-an-effect/index.md", "title": "You Might Not Need an Effect"}
+nav_prev: {"path": "react/learn/manipulating-the-dom-with-refs/index.md", "title": "Manipulating the DOM with Refs"}
+nav_next: {"path": "react/learn/you-might-not-need-an-effect/index.md", "title": "You Might Not Need an Effect"}
 ---
 
 Some components need to synchronize with external systems. For example, you might want to control a non-React component based on the React state, set up a server connection, or send an analytics log when a component appears on the screen. _Effects_ let you run some code after rendering so that you can synchronize your component with some system outside of React.

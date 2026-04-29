@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:18.475Z"
 content_hash: "5a582534e2ca8c36f9ed490a3091e2e7d613f867f4768048bcc9cd7ced8156c0"
 menu_path: ["Add a Git dependency"]
 section_path: []
-nav_prev: {"path": "../add-dev/index.md", "title": "Add a development dependency"}
-nav_next: {"path": "../add-optional/index.md", "title": "Add an optional dependency"}
+nav_prev: {"path": "bun/docs/guides/install/add-dev/index.md", "title": "Add a development dependency"}
+nav_next: {"path": "bun/docs/guides/install/add-optional/index.md", "title": "Add an optional dependency"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../add-optional/index.md", "title": "Add an optional depende
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun supports directly adding GitHub repositories as dependencies of your project.
 
@@ -74,7 +74,7 @@ bun add github:colinhacks/zod
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -86,10 +86,10 @@ Add a peer dependency
 
 Previous
 
-](/docs/guides/install/add-peer)[
+](../add-peer/index.md)[
 
 Add a tarball dependency
 
 Next
 
-](/docs/guides/install/add-tarball)
+](../add-tarball/index.md)

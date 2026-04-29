@@ -11,15 +11,15 @@ menu_path: ["template.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../src-folder/index.md", "title": "src Folder"}
-nav_next: {"path": "../unauthorized/index.md", "title": "unauthorized.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/src-folder/index.md", "title": "src Folder"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/unauthorized/index.md", "title": "unauthorized.js"}
 ---
 
 # template.js
 
 Last updated April 23, 2026
 
-A **template** file is similar to a [layout](/docs/app/getting-started/layouts-and-pages#creating-a-layout) in that it wraps a layout or page. Unlike layouts that persist across routes and maintain state, templates are given a unique key, meaning children Client Components reset their state on navigation.
+A **template** file is similar to a [layout](../../../getting-started/layouts-and-pages/index.md#creating-a-layout) in that it wraps a layout or page. Unlike layouts that persist across routes and maintain state, templates are given a unique key, meaning children Client Components reset their state on navigation.
 
 They are useful when you need to:
 
@@ -54,7 +54,7 @@ Output
 </Layout>
 ```
 
-In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `template.js` renders between `layout.js` and `error.js`. It wraps `error.js`, `loading.js`, `not-found.js`, and `page.js`, but does **not** wrap the `layout.js` in the same segment.
+In the [component hierarchy](../../../getting-started/project-structure/index.md#component-hierarchy), `template.js` renders between `layout.js` and `error.js`. It wraps `error.js`, `loading.js`, `not-found.js`, and `page.js`, but does **not** wrap the `layout.js` in the same segment.
 
 ## Props[](#props)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:53.098Z"
 content_hash: "a3f9eac84733c761167dad700fbfe464dc1c770bb275d4ee3a2292ea0385c111"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_gettype"]
 section_path: []
-nav_prev: {"path": "../spi-spi-getrelname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getrelname"}
-nav_next: {"path": "../spi-spi-gettypeid.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_gettypeid"}
+nav_prev: {"path": "postgres/docs/current/spi-spi-getrelname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getrelname"}
+nav_next: {"path": "postgres/docs/current/spi-spi-gettypeid.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_gettypeid"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

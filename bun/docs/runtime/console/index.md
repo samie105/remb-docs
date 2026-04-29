@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:10.482Z"
 content_hash: "4cfb55ef2d0801ee323d4fec58982234ec9f24c9bf71c1556d1bf37f2e5980a1"
 menu_path: ["Console"]
 section_path: []
-nav_prev: {"path": "../color/index.md", "title": "Color"}
-nav_next: {"path": "../cookies/index.md", "title": "Cookies"}
+nav_prev: {"path": "bun/docs/runtime/color/index.md", "title": "Color"}
+nav_next: {"path": "bun/docs/runtime/cookies/index.md", "title": "Cookies"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../cookies/index.md", "title": "Cookies"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Bun provides a browser- and Node.js-compatible [console](https://developer.mozilla.org/en-US/docs/Web/API/console) global. This page only documents Bun-native APIs.
 
@@ -123,10 +123,10 @@ Secrets
 
 Previous
 
-](/docs/runtime/secrets)[
+](../secrets/index.md)[
 
 TOML
 
 Next
 
-](/docs/runtime/toml)
+](../toml/index.md)

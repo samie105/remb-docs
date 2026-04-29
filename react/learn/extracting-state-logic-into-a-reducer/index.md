@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:09.750Z"
 content_hash: "f02d240be7c6c4c8734394d53342150d2554a140864f9e88dd18c7fa638e9988"
 menu_path: ["Extracting State Logic into a Reducer"]
 section_path: []
-nav_prev: {"path": "../preserving-and-resetting-state/index.md", "title": "Preserving and Resetting State"}
-nav_next: {"path": "../passing-data-deeply-with-context/index.md", "title": "Passing Data Deeply with Context"}
+nav_prev: {"path": "react/learn/preserving-and-resetting-state/index.md", "title": "Preserving and Resetting State"}
+nav_next: {"path": "react/learn/passing-data-deeply-with-context/index.md", "title": "Passing Data Deeply with Context"}
 ---
 
 Components with many state updates spread across many event handlers can get overwhelming. For these cases, you can consolidate all the state update logic outside your component in a single function, called a _reducer._

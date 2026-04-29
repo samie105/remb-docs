@@ -10,8 +10,8 @@ content_hash: "3cad93c94d98bbed3f039cefe095162c18ed1d96174828fde8eef01518617b3e"
 menu_path: ["drizzle-kit pull"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-kit-push/index.md", "title": "drizzle-kit push"}
-nav_next: {"path": "../drizzle-kit-export/index.md", "title": "drizzle-kit export"}
+nav_prev: {"path": "drizzle/docs/drizzle-kit-push/index.md", "title": "drizzle-kit push"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-export/index.md", "title": "drizzle-kit export"}
 ---
 
 `drizzle-kit pull` lets you literally pull(introspect) your existing database schema and generate `schema.ts` drizzle schema file, it is designed to cover [database first](../migrations/index.md) approach of Drizzle migrations.

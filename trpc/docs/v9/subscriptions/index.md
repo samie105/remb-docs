@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:16.621Z"
 content_hash: "5b1dba11492aeaa7e54bad2a21e821bc22f5a9cde1ce457faadb17269e457aea"
 menu_path: ["Subscriptions / WebSockets"]
 section_path: []
-nav_prev: {"path": "../starter-projects/index.md", "title": "Starter Projects"}
-nav_next: {"path": "../useInfiniteQuery/index.md", "title": "useInfiniteQuery"}
+nav_prev: {"path": "trpc/docs/v9/starter-projects/index.md", "title": "Starter Projects"}
+nav_next: {"path": "trpc/docs/v9/useInfiniteQuery/index.md", "title": "useInfiniteQuery"}
 ---
 
 ## Using Subscriptions[​](#using-subscriptions "Direct link to Using Subscriptions")

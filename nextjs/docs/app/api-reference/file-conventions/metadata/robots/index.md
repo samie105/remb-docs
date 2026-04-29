@@ -11,8 +11,8 @@ menu_path: ["robots.txt"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
-nav_next: {"path": "../sitemap/index.md", "title": "sitemap.xml"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/opengraph-image/index.md", "title": "opengraph-image and twitter-image"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/sitemap/index.md", "title": "sitemap.xml"}
 ---
 
 # robots.txt
@@ -37,7 +37,7 @@ Sitemap: https://acme.com/sitemap.xml
 
 Add a `robots.js` or `robots.ts` file that returns a [`Robots` object](#robots-object).
 
-> **Good to know**: `robots.js` is a special Route Handler that is cached by default unless it uses a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
+> **Good to know**: `robots.js` is a special Route Handler that is cached by default unless it uses a [Request-time API](../../../../glossary/index.md#request-time-apis) or [dynamic config](../../../../guides/caching-without-cache-components/index.md#dynamic) option.
 
 app/robots.ts
 

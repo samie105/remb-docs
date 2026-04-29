@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:00.606Z"
 content_hash: "26c2e80442db52df19a04842f2e934574c7f84bb6c1d748b1d59dc6fd14ccfc7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Debugging Lua scripts in Redis","→","Debugging Lua scripts in Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis programmability","→","Redis programmability","→\n      \n        Debugging Lua scripts in Redis","→","Debugging Lua scripts in Redis"]
-nav_prev: {"path": "../lua-api/index.md", "title": "Redis Lua API reference"}
-nav_next: {"path": "../../pubsub/keyspace-notifications/index.md", "title": "Redis keyspace notifications"}
+nav_prev: {"path": "redis/docs/latest/develop/programmability/lua-api/index.md", "title": "Redis Lua API reference"}
+nav_next: {"path": "redis/docs/latest/develop/pubsub/keyspace-notifications/index.md", "title": "Redis keyspace notifications"}
 ---
 
 # Debugging Lua scripts in Redis
@@ -186,7 +186,7 @@ lua debugger> e redis.sha1hex('foo')
 
 ## Debugging clients
 
-LDB uses the client-server model where the Redis server acts as a debugging server that communicates using [RESP](/docs/latest/develop/reference/protocol-spec/). While `redis-cli` is the default debug client, any client can be used for debugging as long as it meets one of the following conditions:
+LDB uses the client-server model where the Redis server acts as a debugging server that communicates using [RESP](../../reference/protocol-spec/index.md). While `redis-cli` is the default debug client, any client can be used for debugging as long as it meets one of the following conditions:
 
 1.  The client provides a native interface for setting the debug mode and controlling the debug session.
 2.  The client provides an interface for sending arbitrary commands over RESP.

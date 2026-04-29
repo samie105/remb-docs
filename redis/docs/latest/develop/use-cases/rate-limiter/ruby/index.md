@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:11:18.650Z"
 content_hash: "2c11a5e6470d04716732673566eded949ad9abee90e4eaf20443ebf9507745b6"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Ruby","→","Token bucket rate limiter with Redis and Ruby"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Token bucket rate limiter with Redis","→","Token bucket rate limiter with Redis","→\n      \n        Token bucket rate limiter with Redis and Ruby","→","Token bucket rate limiter with Redis and Ruby"]
-nav_prev: {"path": "../php/index.md", "title": "Token bucket rate limiter with Redis and PHP"}
-nav_next: {"path": "../rust/index.md", "title": "Token bucket rate limiter with Redis and Rust"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/php/index.md", "title": "Token bucket rate limiter with Redis and PHP"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/rate-limiter/rust/index.md", "title": "Token bucket rate limiter with Redis and Rust"}
 ---
 
 # Token bucket rate limiter with Redis and Ruby
@@ -293,7 +293,7 @@ end
 
 *   [EVAL command](/docs/latest/commands/eval/) - Execute Lua scripts
 *   [EVALSHA command](/docs/latest/commands/evalsha/) - Execute cached Lua scripts
-*   [Lua scripting](/docs/latest/develop/programmability/eval-intro/) - Introduction to Redis Lua scripting
+*   [Lua scripting](../../../programmability/eval-intro/index.md) - Introduction to Redis Lua scripting
 *   [HMGET command](/docs/latest/commands/hmget/) - Get multiple hash fields
 *   [HMSET command](/docs/latest/commands/hmset/) - Set multiple hash fields
 *   [Ruby client](/docs/latest/develop/clients/ruby/) - Redis Ruby client documentation

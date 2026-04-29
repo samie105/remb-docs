@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:58.709Z"
 content_hash: "459d386e3f93b69e21770b9187410166854b4194a33ed63f0cf393cd61cb00cd"
 menu_path: ["PostgreSQL: Documentation: 18: 4. Further Information"]
 section_path: []
-nav_prev: {"path": "../legalnotice.html/index.md", "title": "PostgreSQL: Documentation: 18: Legal Notice"}
-nav_next: {"path": "../bug-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.\u00a0Bug Reporting Guidelines"}
+nav_prev: {"path": "postgres/docs/current/legalnotice.html/index.md", "title": "PostgreSQL: Documentation: 18: Legal Notice"}
+nav_next: {"path": "postgres/docs/current/bug-reporting.html/index.md", "title": "PostgreSQL: Documentation: 18: 5.\u00a0Bug Reporting Guidelines"}
 ---
 
 Besides the documentation, that is, this book, there are other resources about PostgreSQL:

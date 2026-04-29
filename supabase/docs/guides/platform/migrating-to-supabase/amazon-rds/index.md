@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:22.932Z"
 content_hash: "78e2c04e63c264bc4ea1155500d2ad7efd0092e326ae17880d3438d916737a7f"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Amazon RDS","Amazon RDS"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Amazon RDS","Amazon RDS"]
-nav_prev: {"path": "../index.md", "title": "Migrating to Supabase"}
-nav_next: {"path": "../auth0/index.md", "title": "Migrate from Auth0 to Supabase Auth"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/index.md", "title": "Migrating to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/auth0/index.md", "title": "Migrate from Auth0 to Supabase Auth"}
 ---
 
 # 
@@ -60,7 +60,7 @@ Alternatively, you can use [pgloader](https://github.com/dimitri/pgloader), a fl
 
 *   If you're planning to migrate a database larger than 6 GB, we recommend [upgrading to at least a Large compute add-on](/docs/guides/platform/compute-add-ons). This will ensure you have the necessary resources to handle the migration efficiently.
     
-*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](/docs/guides/platform/compute-and-disk#disk) documentation.
+*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](../../compute-and-disk/index.md#disk) documentation.
     
 
 ## Enterprise[#](#enterprise)

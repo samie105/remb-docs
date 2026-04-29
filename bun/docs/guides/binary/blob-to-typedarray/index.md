@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:21.222Z"
 content_hash: "38a50a58df86853a4a952230f699984ffa8757513752bd61d346d0fa6c3be853"
 menu_path: ["Convert a Blob to a Uint8Array"]
 section_path: []
-nav_prev: {"path": "../blob-to-string/index.md", "title": "Convert a Blob to a string"}
-nav_next: {"path": "../buffer-to-arraybuffer/index.md", "title": "Convert a Buffer to an ArrayBuffer"}
+nav_prev: {"path": "bun/docs/guides/binary/blob-to-string/index.md", "title": "Convert a Blob to a string"}
+nav_next: {"path": "bun/docs/guides/binary/buffer-to-arraybuffer/index.md", "title": "Convert a Buffer to an ArrayBuffer"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../buffer-to-arraybuffer/index.md", "title": "Convert a Buff
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) class provides a number of methods for consuming its contents in different formats. This snippets reads the contents to an `ArrayBuffer`, then creates a `Uint8Array` from the buffer.
 
@@ -44,7 +44,7 @@ const arr = new Uint8Array(await blob.arrayBuffer());
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a Blob to an ArrayBuffer
 
 Previous
 
-](/docs/guides/binary/blob-to-arraybuffer)[
+](../blob-to-arraybuffer/index.md)[
 
 Convert a Blob to a DataView
 
 Next
 
-](/docs/guides/binary/blob-to-dataview)
+](../blob-to-dataview/index.md)

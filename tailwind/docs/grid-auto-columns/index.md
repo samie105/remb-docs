@@ -10,8 +10,8 @@ content_hash: "1d17a098b22d38cfc69742a460595de80c1cb32aa9df38ec13646d9aecfd1393"
 menu_path: ["grid-auto-columns"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../grid-auto-flow/index.md", "title": "grid-auto-flow"}
-nav_next: {"path": "../grid-auto-rows/index.md", "title": "grid-auto-rows"}
+nav_prev: {"path": "tailwind/docs/grid-auto-flow/index.md", "title": "grid-auto-flow"}
+nav_next: {"path": "tailwind/docs/grid-auto-rows/index.md", "title": "grid-auto-rows"}
 ---
 
 # grid-auto-columns
@@ -76,7 +76,7 @@ Prefix a `grid-auto-columns` utility with a breakpoint variant like `md:` to onl
 <div class="grid grid-flow-col auto-cols-max md:auto-cols-min ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

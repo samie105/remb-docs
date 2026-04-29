@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:34.575Z"
 content_hash: "966fede72c7ce07547ac43949c0134a462f73b786aa4de6238806d0bc93934e1"
 menu_path: ["Shell"]
 section_path: []
-nav_prev: {"path": "../semver/index.md", "title": "Semver"}
-nav_next: {"path": "../sql/index.md", "title": "SQL"}
+nav_prev: {"path": "bun/docs/runtime/semver/index.md", "title": "Semver"}
+nav_next: {"path": "bun/docs/runtime/sql/index.md", "title": "SQL"}
 ---
 
 Bun Shell makes shell scripting with JavaScript & TypeScript fun. It’s a cross-platform bash-like shell with seamless JavaScript interop. Quickstart:

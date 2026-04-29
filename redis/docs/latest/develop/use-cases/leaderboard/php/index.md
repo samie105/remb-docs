@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:10:36.613Z"
 content_hash: "6224e5a9319c86e443741331dcb9ffe5a301a547451f98ef768238312a3476c6"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with PHP","→","Redis leaderboard with PHP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with PHP","→","Redis leaderboard with PHP"]
-nav_prev: {"path": "../nodejs/index.md", "title": "Redis leaderboard with node-redis"}
-nav_next: {"path": "../redis-py/index.md", "title": "Redis leaderboard with redis-py"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/nodejs/index.md", "title": "Redis leaderboard with node-redis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/redis-py/index.md", "title": "Redis leaderboard with redis-py"}
 ---
 
 # Redis leaderboard with PHP
 
 Implement a Redis leaderboard in PHP with Predis and sorted sets
 
-This guide shows you how to implement a Redis-backed leaderboard in PHP with [Predis](/docs/latest/develop/clients/php/). It uses a sorted set to store rank order, Redis hashes to store per-user metadata, and a small local web server so you can explore the leaderboard interactively in your browser.
+This guide shows you how to implement a Redis-backed leaderboard in PHP with [Predis](../../../clients/php/index.md). It uses a sorted set to store rank order, Redis hashes to store per-user metadata, and a small local web server so you can explore the leaderboard interactively in your browser.
 
 ## Overview
 

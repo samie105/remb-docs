@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:02.544Z"
 content_hash: "806c759473c3ca0afb30d5b101e0db004dac7a469efea6575ecddf52b65182af"
 menu_path: ["PostgreSQL: Documentation: 18: postgres"]
 section_path: []
-nav_prev: {"path": "../app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
-nav_next: {"path": "../app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
+nav_prev: {"path": "postgres/docs/current/app-pgwalsummary.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_walsummary"}
+nav_next: {"path": "postgres/docs/current/app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
 ---
 
 postgres — PostgreSQL database server

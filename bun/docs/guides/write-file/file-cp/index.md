@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:49.132Z"
 content_hash: "c9934f18fad8a707627d9a9c85a46ea850354c150c5203869b96c758a61c95e7"
 menu_path: ["Copy a file to another location"]
 section_path: []
-nav_prev: {"path": "../cat/index.md", "title": "Write a file to stdout"}
-nav_next: {"path": "../filesink/index.md", "title": "Write a file incrementally"}
+nav_prev: {"path": "bun/docs/guides/write-file/cat/index.md", "title": "Write a file to stdout"}
+nav_next: {"path": "bun/docs/guides/write-file/filesink/index.md", "title": "Write a file incrementally"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../filesink/index.md", "title": "Write a file incrementally"
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-This code snippet copies a file to another location on disk. It uses the fast [`Bun.write()`](/docs/runtime/file-io#writing-files-bun-write) API to efficiently write data to disk. The first argument is a _destination_, like an absolute path or `BunFile` instance. The second argument is the _data_ to write.
+This code snippet copies a file to another location on disk. It uses the fast [`Bun.write()`](../../../runtime/file-io/index.md#writing-files-bun-write) API to efficiently write data to disk. The first argument is a _destination_, like an absolute path or `BunFile` instance. The second argument is the _data_ to write.
 
 ```
 const file = Bun.file("/path/to/original.txt");
@@ -44,7 +44,7 @@ await Bun.write("/path/to/copy.txt", file);
 
 * * *
 
-See [Docs > API > File I/O](/docs/runtime/file-io#writing-files-bun-write) for complete documentation of `Bun.write()`.
+See [Docs > API > File I/O](../../../runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Write a file to stdout
 
 Previous
 
-](/docs/guides/write-file/cat)[
+](../cat/index.md)[
 
 Delete a file
 
 Next
 
-](/docs/guides/write-file/unlink)
+](../unlink/index.md)

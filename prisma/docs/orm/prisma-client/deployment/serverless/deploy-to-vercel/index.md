@@ -11,8 +11,8 @@ menu_path: ["Deploy to Vercel"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../deploy-to-netlify/index.md", "title": "Deploy to Netlify"}
-nav_next: {"path": "../../traditional/deploy-to-flyio/index.md", "title": "Deploy to Fly.io"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-netlify/index.md", "title": "Deploy to Netlify"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-flyio/index.md", "title": "Deploy to Fly.io"}
 ---
 
 This guide takes you through the steps to set up and deploy a serverless application that uses Prisma to [Vercel](https://vercel.com/).

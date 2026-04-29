@@ -11,8 +11,8 @@ menu_path: ["urlImports"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../typescript/index.md", "title": "typescript"}
-nav_next: {"path": "../useLightningcss/index.md", "title": "useLightningcss"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/typescript/index.md", "title": "typescript"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/useLightningcss/index.md", "title": "useLightningcss"}
 ---
 
 # urlImports
@@ -47,7 +47,7 @@ URL Imports can be used everywhere normal package imports can be used.
 
 ## Security Model[](#security-model)
 
-This feature is being designed with **security as the top priority**. To start, we added an experimental flag forcing you to explicitly allow the domains you accept URL imports from. We're working to take this further by limiting URL imports to execute in the browser sandbox using the [Edge Runtime](/docs/app/api-reference/edge).
+This feature is being designed with **security as the top priority**. To start, we added an experimental flag forcing you to explicitly allow the domains you accept URL imports from. We're working to take this further by limiting URL imports to execute in the browser sandbox using the [Edge Runtime](../../../edge/index.md).
 
 ## Lockfile[](#lockfile)
 

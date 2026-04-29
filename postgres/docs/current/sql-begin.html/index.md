@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:02.060Z"
 content_hash: "214be7cb5a089cc18a75c5ad36cfaa6a423ab145621d0efa221ca1ed91277035"
 menu_path: ["PostgreSQL: Documentation: 18: BEGIN"]
 section_path: []
-nav_prev: {"path": "../sql-analyze.html/index.md", "title": "PostgreSQL: Documentation: 18: ANALYZE"}
-nav_next: {"path": "../sql-call.html/index.md", "title": "PostgreSQL: Documentation: 18: CALL"}
+nav_prev: {"path": "postgres/docs/current/sql-analyze.html/index.md", "title": "PostgreSQL: Documentation: 18: ANALYZE"}
+nav_next: {"path": "postgres/docs/current/sql-call.html/index.md", "title": "PostgreSQL: Documentation: 18: CALL"}
 ---
 
 BEGIN — start a transaction block

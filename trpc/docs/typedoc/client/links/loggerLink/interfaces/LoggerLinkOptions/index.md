@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:47.101Z"
 content_hash: "84ec29b3ed070aa9e745440f3db8ad71c28aceb1a5130c10ca80d550ae0c02b8"
 menu_path: ["Interface: LoggerLinkOptions<TRouter>"]
 section_path: []
-nav_prev: {"path": "../../functions/loggerLink/index.md", "title": "Function: loggerLink()"}
-nav_next: {"path": "../../../splitLink/index.md", "title": "links/splitLink"}
+nav_prev: {"path": "trpc/docs/typedoc/client/links/loggerLink/functions/loggerLink/index.md", "title": "Function: loggerLink()"}
+nav_next: {"path": "trpc/docs/typedoc/client/links/splitLink/index.md", "title": "links/splitLink"}
 ---
 
 Defined in: [packages/client/src/links/loggerLink.ts:61](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/links/loggerLink.ts#L61)

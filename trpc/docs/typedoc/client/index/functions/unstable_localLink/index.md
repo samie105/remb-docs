@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:49.730Z"
 content_hash: "f4c59b2e83836bc673cc71448877164cf62449d9c534976536c1522bc3694419"
 menu_path: ["Function: unstable_localLink()"]
 section_path: []
-nav_prev: {"path": "../unstable_httpSubscriptionLink/index.md", "title": "Function: unstable_httpSubscriptionLink()"}
-nav_next: {"path": "../../interfaces/Encoder/index.md", "title": "Interface: Encoder"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/unstable_httpSubscriptionLink/index.md", "title": "Function: unstable_httpSubscriptionLink()"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/interfaces/Encoder/index.md", "title": "Interface: Encoder"}
 ---
 
 > **unstable\_localLink**<`TRouter`\>(`opts`): [`TRPCLink`](../../type-aliases/TRPCLink/index.md)<`TRouter`\>

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:30.102Z"
 content_hash: "b0e8c476b58ad614e0d9a3402d13b6368d79b838a97d586b472b0d86e504683c"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 41. PL/pgSQL — SQL Procedural Language"]
 section_path: []
-nav_prev: {"path": "../event-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a038.\u00a0Event Triggers"}
-nav_next: {"path": "../plperl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a043.\u00a0PL/Perl \u2014 Perl Procedural Language"}
+nav_prev: {"path": "postgres/docs/current/event-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a038.\u00a0Event Triggers"}
+nav_next: {"path": "postgres/docs/current/plperl.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a043.\u00a0PL/Perl \u2014 Perl Procedural Language"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

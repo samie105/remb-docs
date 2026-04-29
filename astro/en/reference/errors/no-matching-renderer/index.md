@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:09.184Z"
 content_hash: "1a4ce2f0bc01ca0da9d23f7c35faf353dda6c4035f05f631fd69f8c9f2c02e23"
 menu_path: ["No matching renderer found."]
 section_path: []
-nav_prev: {"path": "../no-matching-import/index.md", "title": "No import found for component."}
-nav_next: {"path": "../no-matching-static-path-found/index.md", "title": "No static path found for requested path."}
+nav_prev: {"path": "astro/en/reference/errors/no-matching-import/index.md", "title": "No import found for component."}
+nav_next: {"path": "astro/en/reference/errors/no-matching-static-path-found/index.md", "title": "No static path found for requested path."}
 ---
 
 # No matching renderer found.
@@ -23,11 +23,11 @@ nav_next: {"path": "../no-matching-static-path-found/index.md", "title": "No sta
 
 None of the installed integrations were able to render the component you imported. Make sure to install the appropriate integration for the type of component you are trying to include in your page.
 
-For JSX / TSX files, [@astrojs/react](/en/guides/integrations-guide/react/), [@astrojs/preact](/en/guides/integrations-guide/preact/) or [@astrojs/solid-js](/en/guides/integrations-guide/solid-js/) can be used. For Vue and Svelte files, the [@astrojs/vue](/en/guides/integrations-guide/vue/) and [@astrojs/svelte](/en/guides/integrations-guide/svelte/) integrations can be used respectively
+For JSX / TSX files, [@astrojs/react](../../../guides/integrations-guide/react/index.md), [@astrojs/preact](../../../guides/integrations-guide/preact/index.md) or [@astrojs/solid-js](../../../guides/integrations-guide/solid-js/index.md) can be used. For Vue and Svelte files, the [@astrojs/vue](../../../guides/integrations-guide/vue/index.md) and [@astrojs/svelte](../../../guides/integrations-guide/svelte/index.md) integrations can be used respectively
 
 **See Also:**
 
-*   [Frameworks components](/en/guides/framework-components/)
-*   [UI Frameworks](/en/guides/integrations/#official-integrations)
+*   [Frameworks components](../../../guides/framework-components/index.md)
+*   [UI Frameworks](../../../guides/integrations/index.md#official-integrations)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

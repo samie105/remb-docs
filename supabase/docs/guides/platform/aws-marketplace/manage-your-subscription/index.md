@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:47.080Z"
 content_hash: "2d4c6d1028cda0595e04096a2057f563dceaaa3adc9ae9db1c34ef65740cfb01"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Manage your subscription","Manage your subscription"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Manage your subscription","Manage your subscription"]
-nav_prev: {"path": "../invoices/index.md", "title": "Invoices"}
-nav_next: {"path": "../../backups/index.md", "title": "Database Backups"}
+nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/invoices/index.md", "title": "Invoices"}
+nav_next: {"path": "supabase/docs/guides/platform/backups/index.md", "title": "Database Backups"}
 ---
 
 # 
@@ -41,7 +41,7 @@ Downgrades are only possible at the end of the billing cycle, not in the middle 
 
 If you want your subscription to be downgraded to the Free Plan at the end of the current billing cycle, you need to disable auto-renewal for the marketplace subscription.
 
-If the downgrade causes you to exceed the [free projects limit](/docs/guides/platform/billing-on-supabase#free-plan), **all** projects within the organization will be paused. We do not make the decision about which projects continue to run and which are paused. You must then decide which projects you want to keep active and manually reactivate them through the Supabase dashboard.
+If the downgrade causes you to exceed the [free projects limit](../../billing-on-supabase/index.md#free-plan), **all** projects within the organization will be paused. We do not make the decision about which projects continue to run and which are paused. You must then decide which projects you want to keep active and manually reactivate them through the Supabase dashboard.
 
 ![AWS Marketplace modify contract page](/docs/img/guides/platform/aws-marketplace-configure-auto-renewal.png)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:21.165Z"
 content_hash: "ac5fdbc3b36db76f1c750eac61c840893c1b35e864c53eef46e7cc91d866d7b9"
 menu_path: ["Database","Database","Extensions","Extensions","uuid-ossp: Unique Identifiers","uuid-ossp: Unique Identifiers"]
 section_path: ["Database","Database","Extensions","Extensions","uuid-ossp: Unique Identifiers","uuid-ossp: Unique Identifiers"]
-nav_prev: {"path": "../timescaledb/index.md", "title": "timescaledb: Time-Series data"}
-nav_next: {"path": "../../full-text-search/index.md", "title": "Full Text Search"}
+nav_prev: {"path": "supabase/docs/guides/database/extensions/timescaledb/index.md", "title": "timescaledb: Time-Series data"}
+nav_next: {"path": "supabase/docs/guides/database/full-text-search/index.md", "title": "Full Text Search"}
 ---
 
 # 

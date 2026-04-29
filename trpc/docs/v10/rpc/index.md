@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:57.429Z"
 content_hash: "45f7be0a55ee6c3141ae3254f19e913356cf815402f3c7a4c467d56860581330"
 menu_path: ["HTTP RPC Specification"]
 section_path: []
-nav_prev: {"path": "../quickstart/index.md", "title": "Quickstart"}
-nav_next: {"path": "../server/adapters/index.md", "title": "Adapters"}
+nav_prev: {"path": "trpc/docs/v10/quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "trpc/docs/v10/server/adapters/index.md", "title": "Adapters"}
 ---
 
 ## Methods <-> Type mapping[​](#methods---type-mapping "Direct link to Methods <-> Type mapping")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:11.639Z"
 content_hash: "1a5a9455a00f6aef427bdad85b65ba5a47542a2b73a11ae800626f42ec0c2645"
 menu_path: ["Type Alias: HTTPBatchStreamLinkOptions<TRoot>"]
 section_path: []
-nav_prev: {"path": "../HTTPBatchLinkOptions/index.md", "title": "Type Alias: HTTPBatchLinkOptions<TRoot>"}
-nav_next: {"path": "../LocalLinkOptions/index.md", "title": "Type Alias: LocalLinkOptions<TRouter>"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/type-aliases/HTTPBatchLinkOptions/index.md", "title": "Type Alias: HTTPBatchLinkOptions<TRoot>"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/type-aliases/LocalLinkOptions/index.md", "title": "Type Alias: LocalLinkOptions<TRouter>"}
 ---
 
 > **HTTPBatchStreamLinkOptions**<`TRoot`\>: [`HTTPBatchLinkOptions`](../HTTPBatchLinkOptions/index.md)<`TRoot`\> & `object`

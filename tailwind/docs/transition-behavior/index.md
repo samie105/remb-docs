@@ -10,8 +10,8 @@ content_hash: "2491c8524d8d94add99dd136e93597710c9c09e54f99d8eeb18cdccb29ec7303"
 menu_path: ["transition-behavior"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../transition-property/index.md", "title": "transition-property"}
-nav_next: {"path": "../transition-duration/index.md", "title": "transition-duration"}
+nav_prev: {"path": "tailwind/docs/transition-property/index.md", "title": "transition-property"}
+nav_next: {"path": "tailwind/docs/transition-duration/index.md", "title": "transition-duration"}
 ---
 
 Utilities to control the behavior of CSS transitions.

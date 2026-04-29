@@ -10,8 +10,8 @@ content_hash: "576a6aa9fcbf18ae321e945acd6a9c77e4c852f7c0aad53f055dd5a1f0494c0a"
 menu_path: ["@std/media-types"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../log/index.md", "title": "@std/log"}
-nav_next: {"path": "../msgpack/index.md", "title": "@std/msgpack"}
+nav_prev: {"path": "deno/runtime/reference/std/log/index.md", "title": "@std/log"}
+nav_next: {"path": "deno/runtime/reference/std/msgpack/index.md", "title": "@std/msgpack"}
 ---
 
 **On this page**

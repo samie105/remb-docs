@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:53.503Z"
 content_hash: "0c694aa756ffb13d05f3511fd63c7d4a0f14f26f40c227fbf656b1a0cc64a2b8"
 menu_path: ["Convert a file URL to an absolute path"]
 section_path: []
-nav_prev: {"path": "../escape-html/index.md", "title": "Escape an HTML string"}
-nav_next: {"path": "../gzip/index.md", "title": "Compress and decompress data with gzip"}
+nav_prev: {"path": "bun/docs/guides/util/escape-html/index.md", "title": "Escape an HTML string"}
+nav_next: {"path": "bun/docs/guides/util/gzip/index.md", "title": "Compress and decompress data with gzip"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../gzip/index.md", "title": "Compress and decompress data wi
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use `Bun.fileURLToPath()` to convert a `file://` URL to an absolute path.
 
@@ -44,7 +44,7 @@ Bun.fileURLToPath("file:///path/to/file.txt");
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Sleep for a fixed number of milliseconds
 
 Previous
 
-](/docs/guides/util/sleep)[
+](../sleep/index.md)[
 
 Convert an absolute path to a file URL
 
 Next
 
-](/docs/guides/util/path-to-file-url)
+](../path-to-file-url/index.md)

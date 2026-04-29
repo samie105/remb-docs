@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:17.396Z"
 content_hash: "3409db7cc2470de7ebad07fd3df9d63a97d1a8baa8dacd18d33ccbaf727f85d8"
 menu_path: ["Escape Hatches"]
 section_path: []
-nav_prev: {"path": "../scaling-up-with-reducer-and-context/index.md", "title": "Scaling Up with Reducer and Context"}
-nav_next: {"path": "../referencing-values-with-refs/index.md", "title": "Referencing Values with Refs"}
+nav_prev: {"path": "react/learn/scaling-up-with-reducer-and-context/index.md", "title": "Scaling Up with Reducer and Context"}
+nav_next: {"path": "react/learn/referencing-values-with-refs/index.md", "title": "Referencing Values with Refs"}
 ---
 
 Some of your components may need to control and synchronize with systems outside of React. For example, you might need to focus an input using the browser API, play and pause a video player implemented without React, or connect and listen to messages from a remote server. In this chapter, you’ll learn the escape hatches that let you “step outside” React and connect to external systems. Most of your application logic and data flow should not rely on these features.

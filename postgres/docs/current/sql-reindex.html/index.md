@@ -10,8 +10,8 @@ content_hash: "2f7d7e31e8ed001d448ca7790d8c5f4da0ddde768087e627ef2d2b9a47920706"
 menu_path: ["PostgreSQL: Documentation: 18: REINDEX"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql-refreshmaterializedview.html/index.md", "title": "PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"}
-nav_next: {"path": "../sql-set-role.html/index.md", "title": "PostgreSQL: Documentation: 18: SET ROLE"}
+nav_prev: {"path": "postgres/docs/current/sql-refreshmaterializedview.html/index.md", "title": "PostgreSQL: Documentation: 18: REFRESH MATERIALIZED VIEW"}
+nav_next: {"path": "postgres/docs/current/sql-set-role.html/index.md", "title": "PostgreSQL: Documentation: 18: SET ROLE"}
 ---
 
 ## Description

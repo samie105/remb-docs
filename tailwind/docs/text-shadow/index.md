@@ -10,8 +10,8 @@ content_hash: "088e60c34b0a606d67ed04578c7fb78fd89ad58209d9767530bb3fca0a227b4d"
 menu_path: ["text-shadow"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../box-shadow/index.md", "title": "box-shadow"}
-nav_next: {"path": "../opacity/index.md", "title": "opacity"}
+nav_prev: {"path": "tailwind/docs/box-shadow/index.md", "title": "box-shadow"}
+nav_next: {"path": "tailwind/docs/opacity/index.md", "title": "opacity"}
 ---
 
 Utilities for controlling the shadow of a text element.

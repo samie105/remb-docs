@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:38.060Z"
 content_hash: "b43e049d35e1d284aaaf12511dded60113435252823065a31aed8155f0d4055e"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Sending Push Notifications","Sending Push Notifications"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Sending Push Notifications","Sending Push Notifications"]
-nav_prev: {"path": "../og-image/index.md", "title": "Generating OG Images"}
-nav_next: {"path": "../rate-limiting/index.md", "title": "Rate Limiting Edge Functions"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/og-image/index.md", "title": "Generating OG Images"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/rate-limiting/index.md", "title": "Rate Limiting Edge Functions"}
 ---
 
 # 

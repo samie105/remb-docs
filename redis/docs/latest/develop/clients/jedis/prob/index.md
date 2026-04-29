@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:04:59.533Z"
 content_hash: "9ed544d406db7c302d603ad30bfc2a16580dc9fc1c77469282d897a664597ba7"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Probabilistic data types","→","Probabilistic data types"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Probabilistic data types","→","Probabilistic data types"]
-nav_prev: {"path": "../connect/index.md", "title": "Connect to the server"}
-nav_next: {"path": "../queryjson/index.md", "title": "Index and query documents"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/connect/index.md", "title": "Connect to the server"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/queryjson/index.md", "title": "Index and query documents"}
 ---
 
 # Probabilistic data types
@@ -47,7 +47,7 @@ In general, the probabilistic data types let you perform approximations with a b
 Redis supports the following approximate set operations:
 
 *   [Membership](#set-membership): The [Bloom filter](/docs/latest/develop/data-types/probabilistic/bloom-filter/) and [Cuckoo filter](/docs/latest/develop/data-types/probabilistic/cuckoo-filter/) data types let you track whether or not a given item is a member of a set.
-*   [Cardinality](#set-cardinality): The [HyperLogLog](/docs/latest/develop/data-types/probabilistic/hyperloglogs/) data type gives you an approximate value for the number of items in a set, also known as the _cardinality_ of the set.
+*   [Cardinality](#set-cardinality): The [HyperLogLog](../../../data-types/probabilistic/hyperloglogs/index.md) data type gives you an approximate value for the number of items in a set, also known as the _cardinality_ of the set.
 
 The sections below describe these operations in more detail.
 
@@ -401,7 +401,7 @@ Which of these two data types you choose depends on your use case. Bloom filters
 
 ### Set cardinality
 
-A [HyperLogLog](/docs/latest/develop/data-types/probabilistic/hyperloglogs/) object calculates the cardinality of a set. As you add items, the HyperLogLog tracks the number of distinct set members but doesn't let you retrieve them or query which items have been added. You can also merge two or more HyperLogLogs to find the cardinality of the [union](https://en.wikipedia.org/wiki/Union_\(set_theory\)) of the sets they represent.
+A [HyperLogLog](../../../data-types/probabilistic/hyperloglogs/index.md) object calculates the cardinality of a set. As you add items, the HyperLogLog tracks the number of distinct set members but doesn't let you retrieve them or query which items have been added. You can also merge two or more HyperLogLogs to find the cardinality of the [union](https://en.wikipedia.org/wiki/Union_\(set_theory\)) of the sets they represent.
 
 ```java
 package io.redis.examples;

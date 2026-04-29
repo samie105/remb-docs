@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:20.051Z"
 content_hash: "b2582527de0cfa300ca353de395a1ec6ae9cdcdb8038a856a2de8d69338d955d"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Svelte","Svelte"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Svelte","Svelte"]
-nav_prev: {"path": "../with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
-nav_next: {"path": "../with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a User Management App with Svelte
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/user-management-demo.png)
 
@@ -59,7 +59,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=sveltekit).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -95,7 +95,7 @@ Finally, save the environment variables in a `.env`. All you need are the API UR
 1VITE_SUPABASE_URL=YOUR_SUPABASE_URL2VITE_SUPABASE_PUBLISHABLE_KEY=YOUR_SUPABASE_PUBLISHABLE_KEY
 ```
 
-Now you have the API credentials in place, create a helper file to initialize the Supabase client. These variables will be exposed on the browser, and that's fine since you have [Row Level Security](/docs/guides/auth#row-level-security) enabled on the Database.
+Now you have the API credentials in place, create a helper file to initialize the Supabase client. These variables will be exposed on the browser, and that's fine since you have [Row Level Security](../../../auth/index.md#row-level-security) enabled on the Database.
 
 ###### src/supabaseClient.ts
 
@@ -157,7 +157,7 @@ Svelte uses Vite and the default port is `5173`, Supabase uses `port 3000`. To c
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Create an upload widget[#](#create-an-upload-widget)
 

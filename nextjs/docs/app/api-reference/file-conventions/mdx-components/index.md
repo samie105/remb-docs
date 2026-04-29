@@ -11,15 +11,15 @@ menu_path: ["mdx-components.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../loading/index.md", "title": "loading.js"}
-nav_next: {"path": "../not-found/index.md", "title": "not-found.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/loading/index.md", "title": "loading.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/not-found/index.md", "title": "not-found.js"}
 ---
 
 # mdx-components.js
 
 Last updated April 23, 2026
 
-The `mdx-components.js|tsx` file is **required** to use [`@next/mdx` with App Router](/docs/app/guides/mdx) and will not work without it. Additionally, you can use it to [customize styles](/docs/app/guides/mdx#using-custom-styles-and-components).
+The `mdx-components.js|tsx` file is **required** to use [`@next/mdx` with App Router](../../../guides/mdx/index.md) and will not work without it. Additionally, you can use it to [customize styles](../../../guides/mdx/index.md#using-custom-styles-and-components).
 
 Use the file `mdx-components.tsx` (or `.js`) in the root of your project to define MDX Components. For example, at the same level as `pages` or `app`, or inside `src` if applicable.
 
@@ -71,6 +71,6 @@ export function useMDXComponents(): MDXComponents {
 
 Learn how to configure MDX and use it in your Next.js apps.
 
-](/docs/app/guides/mdx)
+](../../../guides/mdx/index.md)
 
 Was this helpful?

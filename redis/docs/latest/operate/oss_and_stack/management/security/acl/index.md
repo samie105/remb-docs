@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:41.361Z"
 content_hash: "47758d7705c8e63b77a97bad3d58d10701548faef1b95ba2852b2b8855c9e59e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security","→\n      \n        ACL","→","ACL"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security","→\n      \n        ACL","→","ACL"]
-nav_prev: {"path": "../index.md", "title": "Redis security"}
-nav_next: {"path": "../encryption/index.md", "title": "TLS"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/index.md", "title": "Redis security"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/encryption/index.md", "title": "TLS"}
 ---
 
 # ACL
@@ -399,7 +399,7 @@ Permissions can be composed together by specifying multiple characters. Specifyi
 
 For a concrete example, consider a user with ACL rules `+@all ~app1:* (+@read ~app2:*)`. This user has full access on `app1:*` and readonly access on `app2:*`. However, some commands support reading data from one key, doing some transformation, and storing it into another key. One such command is the [`COPY`](/commands/copy) command, which copies the data from the source key into the destination key. The example set of ACL rules is unable to handle a request copying data from `app2:user` into `app1:user`, since neither the root permission nor the selector fully matches the command. However, using key selectors you can define a set of ACL rules that can handle this request `+@all ~app1:* %R~app2:*`. The first pattern is able to match `app1:user` and the second pattern is able to match `app2:user`.
 
-Which type of permission is required for a command is documented through [key specifications](/docs/latest/develop/reference/key-specs/#logical-operation-flags). The type of permission is based off the keys logical operation flags. The insert, update, and delete flags map to the write key permission. The access flag maps to the read key permission. If the key has no logical operation flags, such as [`EXISTS`](/commands/exists), the user still needs either key read or key write permissions to execute the command.
+Which type of permission is required for a command is documented through [key specifications](../../../../../develop/reference/key-specs/index.md#logical-operation-flags). The type of permission is based off the keys logical operation flags. The insert, update, and delete flags map to the write key permission. The access flag maps to the read key permission. If the key has no logical operation flags, such as [`EXISTS`](/commands/exists), the user still needs either key read or key write permissions to execute the command.
 
 Note: Side channels to accessing user data are ignored when it comes to evaluating whether read permissions are required to execute a command. This means that some write commands that return metadata about the modified key only require write permission on the key to execute. For example, consider the following two commands:
 

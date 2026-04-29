@@ -11,8 +11,8 @@ menu_path: ["instrumentation-client.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../instrumentation/index.md", "title": "instrumentation.js"}
-nav_next: {"path": "../intercepting-routes/index.md", "title": "Intercepting Routes"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/intercepting-routes/index.md", "title": "Intercepting Routes"}
 ---
 
 # instrumentation-client.js
@@ -25,7 +25,7 @@ To use it, place the file in the **root** of your application or inside a `src` 
 
 ## Usage[](#usage)
 
-Unlike [server-side instrumentation](/docs/app/guides/instrumentation), you do not need to export any specific functions. You can write your monitoring code directly in the file:
+Unlike [server-side instrumentation](../../../guides/instrumentation/index.md), you do not need to export any specific functions. You can write your monitoring code directly in the file:
 
 instrumentation-client.ts
 

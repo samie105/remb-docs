@@ -10,8 +10,8 @@ content_hash: "24d34dc548ea83ef0808fa581a209d6d8dd86a3714cf45313d22374fcac2b1d7"
 menu_path: ["drizzle-kit push"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-kit-migrate/index.md", "title": "drizzle-kit migrate"}
-nav_next: {"path": "../drizzle-kit-pull/index.md", "title": "drizzle-kit pull"}
+nav_prev: {"path": "drizzle/docs/drizzle-kit-migrate/index.md", "title": "drizzle-kit migrate"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-pull/index.md", "title": "drizzle-kit pull"}
 ---
 
 `drizzle-kit push` lets you literally push your schema and subsequent schema changes directly to the database while omitting SQL files generation, it’s designed to cover [code first](../migrations/index.md) approach of Drizzle migrations.

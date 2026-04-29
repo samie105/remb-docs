@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:08.261Z"
 content_hash: "9f2025cab08fdcebde168e5fc321f53faeedf6e94afe61ddbfdfaac3339564c6"
 menu_path: ["index"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "@trpc/client"}
-nav_next: {"path": "classes/TRPCClientError/index.md", "title": "Class: TRPCClientError<TRouterOrProcedure>"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index.md", "title": "@trpc/client"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/classes/TRPCClientError/index.md", "title": "Class: TRPCClientError<TRouterOrProcedure>"}
 ---
 
 Version: 11.x

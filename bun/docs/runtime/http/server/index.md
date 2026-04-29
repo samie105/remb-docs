@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:15.619Z"
 content_hash: "8b69a7fa30f7d13d0f8712ad6b852deb73a56c9c287195a6c6fe62c8e75c103a"
 menu_path: ["Server"]
 section_path: []
-nav_prev: {"path": "../routing/index.md", "title": "Routing"}
-nav_next: {"path": "../tls/index.md", "title": "TLS"}
+nav_prev: {"path": "bun/docs/runtime/http/routing/index.md", "title": "Routing"}
+nav_next: {"path": "bun/docs/runtime/http/tls/index.md", "title": "TLS"}
 ---
 
 ## Basic Setup

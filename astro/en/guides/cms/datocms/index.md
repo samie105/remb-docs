@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:51.568Z"
 content_hash: "4249e5611ba36e53b203b171c9e85330e266507f9b859c38089d212b6b71c132"
 menu_path: ["DatoCMS & Astro"]
 section_path: []
-nav_prev: {"path": "../crystallize/index.md", "title": "Crystallize & Astro"}
-nav_next: {"path": "../decap-cms/index.md", "title": "Decap CMS & Astro"}
+nav_prev: {"path": "astro/en/guides/cms/crystallize/index.md", "title": "Crystallize & Astro"}
+nav_next: {"path": "astro/en/guides/cms/decap-cms/index.md", "title": "Decap CMS & Astro"}
 ---
 
 # DatoCMS & Astro
@@ -29,7 +29,7 @@ In this guide, you will fetch content data from DatoCMS in your Astro project, t
 
 To get started, you will need to have the following:
 
-*   **An Astro project** - If you don’t have an Astro project yet, you can follow the instructions in our [Installation guide](/en/install-and-setup/).
+*   **An Astro project** - If you don’t have an Astro project yet, you can follow the instructions in our [Installation guide](../../../install-and-setup/index.md).
 *   **A DatoCMS account and project** - If you don’t have an account, you can [sign up for a free account](https://dashboard.datocms.com/signup).
 *   **The read-only API Key for your DatoCMS project** - You can find it in the admin dashboard of your project, under “Settings” > “API Tokens”.
 
@@ -59,7 +59,7 @@ Your root directory should now include these files:
 *   astro.config.mjs
 *   package.json
 
-Learn more about [environment variables](/en/guides/environment-variables/) and `.env` files in Astro.
+Learn more about [environment variables](../../environment-variables/index.md) and `.env` files in Astro.
 
 ## Create a Model in DatoCMS
 
@@ -117,7 +117,7 @@ const json = await response.json();const data = json.data.home;---
 
 [Section titled “Publishing your site”](#publishing-your-site)
 
-To deploy your website, visit our [deployment guides](/en/guides/deploy/) and follow the instructions for your preferred hosting provider.
+To deploy your website, visit our [deployment guides](../../deploy/index.md) and follow the instructions for your preferred hosting provider.
 
 ## Publish on DatoCMS content changes
 
@@ -169,7 +169,7 @@ You can also check out the [Astro blog template](https://www.datocms.com/marketp
 
 *   ![](/logos/cloudcannon.svg)
     
-    ### [CloudCannon](/en/guides/cms/cloudcannon/)
+    ### [CloudCannon](../cloudcannon/index.md)
     
     Git-based CMS built for speed, security, and zero headaches.
     
@@ -178,171 +178,171 @@ You can also check out the [Astro blog template](https://www.datocms.com/marketp
 
 *   ![](/logos/apostrophecms.svg)
     
-    ### [ApostropheCMS](/en/guides/cms/apostrophecms/)
+    ### [ApostropheCMS](../apostrophecms/index.md)
     
 *   ![](/logos/builderio.svg)
     
-    ### [Builder.io](/en/guides/cms/builderio/)
+    ### [Builder.io](../builderio/index.md)
     
 *   ![](/logos/buttercms.svg)
     
-    ### [ButterCMS](/en/guides/cms/buttercms/)
+    ### [ButterCMS](../buttercms/index.md)
     
 *   ![](/logos/caisy.svg)
     
-    ### [Caisy](/en/guides/cms/caisy/)
+    ### [Caisy](../caisy/index.md)
     
 *   ![](/logos/cloudcannon.svg)
     
-    ### [CloudCannon](/en/guides/cms/cloudcannon/)
+    ### [CloudCannon](../cloudcannon/index.md)
     
 *   ![](/logos/contentful.svg)
     
-    ### [Contentful](/en/guides/cms/contentful/)
+    ### [Contentful](../contentful/index.md)
     
 *   ![](/logos/cosmic.svg)
     
-    ### [Cosmic](/en/guides/cms/cosmic/)
+    ### [Cosmic](../cosmic/index.md)
     
 *   ![](/logos/craft-cms.svg)
     
-    ### [Craft CMS](/en/guides/cms/craft-cms/)
+    ### [Craft CMS](../craft-cms/index.md)
     
 *   ![](/logos/craft-cross-cms.svg)
     
-    ### [Craft Cross CMS](/en/guides/cms/craft-cross-cms/)
+    ### [Craft Cross CMS](../craft-cross-cms/index.md)
     
 *   ![](/logos/crystallize.svg)
     
-    ### [Crystallize](/en/guides/cms/crystallize/)
+    ### [Crystallize](../crystallize/index.md)
     
 *   ![](/logos/datocms.svg)
     
-    ### [DatoCMS](/en/guides/cms/datocms/)
+    ### [DatoCMS](index.md)
     
 *   ![](/logos/decap-cms.svg)
     
-    ### [Decap CMS](/en/guides/cms/decap-cms/)
+    ### [Decap CMS](../decap-cms/index.md)
     
 *   ![](/logos/directus.svg)
     
-    ### [Directus](/en/guides/cms/directus/)
+    ### [Directus](../directus/index.md)
     
 *   ![](/logos/drupal.svg)
     
-    ### [Drupal](/en/guides/cms/drupal/)
+    ### [Drupal](../drupal/index.md)
     
 *   ![](/logos/flotiq.svg)
     
-    ### [Flotiq](/en/guides/cms/flotiq/)
+    ### [Flotiq](../flotiq/index.md)
     
 *   ![](/logos/frontmatter-cms.svg)
     
-    ### [Front Matter CMS](/en/guides/cms/frontmatter-cms/)
+    ### [Front Matter CMS](../frontmatter-cms/index.md)
     
 *   ![](/logos/ghost.png)
     
-    ### [Ghost](/en/guides/cms/ghost/)
+    ### [Ghost](../ghost/index.md)
     
 *   ![](/logos/gitcms.svg)
     
-    ### [GitCMS](/en/guides/cms/gitcms/)
+    ### [GitCMS](../gitcms/index.md)
     
 *   ![](/logos/hashnode.png)
     
-    ### [Hashnode](/en/guides/cms/hashnode/)
+    ### [Hashnode](../hashnode/index.md)
     
 *   ![](/logos/hygraph.svg)
     
-    ### [Hygraph](/en/guides/cms/hygraph/)
+    ### [Hygraph](../hygraph/index.md)
     
 *   ![](/logos/jekyllpad.svg)
     
-    ### [JekyllPad](/en/guides/cms/jekyllpad/)
+    ### [JekyllPad](../jekyllpad/index.md)
     
 *   ![](/logos/keystatic.svg)
     
-    ### [Keystatic](/en/guides/cms/keystatic/)
+    ### [Keystatic](../keystatic/index.md)
     
 *   ![](/logos/keystonejs.svg)
     
-    ### [KeystoneJS](/en/guides/cms/keystonejs/)
+    ### [KeystoneJS](../keystonejs/index.md)
     
 *   ![](/logos/kontent-ai.svg)
     
-    ### [Kontent.ai](/en/guides/cms/kontent-ai/)
+    ### [Kontent.ai](../kontent-ai/index.md)
     
 *   ![](/logos/microcms.svg)
     
-    ### [microCMS](/en/guides/cms/microcms/)
+    ### [microCMS](../microcms/index.md)
     
 *   ![](/logos/optimizely.svg)
     
-    ### [Optimizely CMS](/en/guides/cms/optimizely/)
+    ### [Optimizely CMS](../optimizely/index.md)
     
 *   ![](/logos/pages-cms.svg)
     
-    ### [Pages CMS](/en/guides/cms/pages-cms/)
+    ### [Pages CMS](../pages-cms/index.md)
     
 *   ![](/logos/payload.svg)
     
-    ### [Payload CMS](/en/guides/cms/payload/)
+    ### [Payload CMS](../payload/index.md)
     
 *   ![](/logos/preprcms.svg)
     
-    ### [Prepr CMS](/en/guides/cms/preprcms/)
+    ### [Prepr CMS](../preprcms/index.md)
     
 *   ![](/logos/prismic.svg)
     
-    ### [Prismic](/en/guides/cms/prismic/)
+    ### [Prismic](../prismic/index.md)
     
 *   ![](/logos/sanity.svg)
     
-    ### [Sanity](/en/guides/cms/sanity/)
+    ### [Sanity](../sanity/index.md)
     
 *   ![](/logos/sitecore.svg)
     
-    ### [Sitecore XM](/en/guides/cms/sitecore/)
+    ### [Sitecore XM](../sitecore/index.md)
     
 *   ![](/logos/sitepins.svg)
     
-    ### [Sitepins](/en/guides/cms/sitepins/)
+    ### [Sitepins](../sitepins/index.md)
     
 *   ![](/logos/spinal.svg)
     
-    ### [Spinal](/en/guides/cms/spinal/)
+    ### [Spinal](../spinal/index.md)
     
 *   ![](/logos/statamic.svg)
     
-    ### [Statamic](/en/guides/cms/statamic/)
+    ### [Statamic](../statamic/index.md)
     
 *   ![](/logos/storyblok.svg)
     
-    ### [Storyblok](/en/guides/cms/storyblok/)
+    ### [Storyblok](../storyblok/index.md)
     
 *   ![](/logos/strapi.svg)
     
-    ### [Strapi](/en/guides/cms/strapi/)
+    ### [Strapi](../strapi/index.md)
     
 *   ![](/logos/studiocms.svg)
     
-    ### [StudioCMS](/en/guides/cms/studiocms/)
+    ### [StudioCMS](../studiocms/index.md)
     
 *   ![](/logos/tina-cms.svg)
     
-    ### [Tina CMS](/en/guides/cms/tina-cms/)
+    ### [Tina CMS](../tina-cms/index.md)
     
 *   ![](/logos/umbraco.svg)
     
-    ### [Umbraco](/en/guides/cms/umbraco/)
+    ### [Umbraco](../umbraco/index.md)
     
 *   ![](/logos/vault-cms.svg)
     
-    ### [Vault CMS](/en/guides/cms/vault-cms/)
+    ### [Vault CMS](../vault-cms/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [Wordpress](/en/guides/cms/wordpress/)
+    ### [Wordpress](../wordpress/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

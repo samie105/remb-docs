@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:05.013Z"
 content_hash: "90e2fa4c7a22d36d969142a22ca0df33012c2f08a9be3632e899774f09b64abe"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Expo React Native","Expo React Native"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Expo React Native","Expo React Native"]
-nav_prev: {"path": "../astrojs/index.md", "title": "Use Supabase with Astro"}
-nav_next: {"path": "../flask/index.md", "title": "Use Supabase with Python"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/astrojs/index.md", "title": "Use Supabase with Astro"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/flask/index.md", "title": "Use Supabase with Python"}
 ---
 
 # 
@@ -111,7 +111,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=&framework=).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -165,6 +165,6 @@ Run the development server and scan the QR code with the Expo Go app on your pho
 
 ## Next steps[#](#next-steps)
 
-*   Set up [Auth](/docs/guides/auth) for your app
-*   [Insert more data](/docs/guides/database/import-data) into your database
-*   Upload and serve static files using [Storage](/docs/guides/storage)
+*   Set up [Auth](../../../auth/index.md) for your app
+*   [Insert more data](../../../database/import-data/index.md) into your database
+*   Upload and serve static files using [Storage](../../../storage/index.md)

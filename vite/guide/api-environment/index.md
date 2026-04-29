@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:52.550Z"
 content_hash: "8f3d0a353cff46f24ceef4103cb695bdfaf55f160455c8b53d5cd1c587f48e80"
 menu_path: ["Environment API ​"]
 section_path: []
-nav_prev: {"path": "../../config/index.md", "title": "Configuring Vite \u200b"}
-nav_next: {"path": "../api-environment-instances/index.md", "title": "Using Environment Instances \u200b"}
+nav_prev: {"path": "vite/config/index.md", "title": "Configuring Vite \u200b"}
+nav_next: {"path": "vite/guide/api-environment-instances/index.md", "title": "Using Environment Instances \u200b"}
 ---
 
 ## Environment API [​](#environment-api)

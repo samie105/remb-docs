@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:29.354Z"
 content_hash: "055d8bd456b33176b8005617b73ed8c70f772060f9cb9cf73c6f39025c2eeb2f"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Speech Transcription with ElevenLabs","Speech Transcription with ElevenLabs"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Speech Transcription with ElevenLabs","Speech Transcription with ElevenLabs"]
-nav_prev: {"path": "../elevenlabs-generate-speech-stream/index.md", "title": "Streaming Speech with ElevenLabs"}
-nav_next: {"path": "../github-actions/index.md", "title": "GitHub Actions"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/elevenlabs-generate-speech-stream/index.md", "title": "Streaming Speech with ElevenLabs"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/github-actions/index.md", "title": "GitHub Actions"}
 ---
 
 # 
@@ -35,7 +35,7 @@ Find the [example project on GitHub](https://github.com/elevenlabs/elevenlabs-ex
 
 *   An ElevenLabs account with an [API key](/app/settings/api-keys).
 *   A [Supabase](https://supabase.com) account (you can sign up for a free account via [database.new](https://database.new)).
-*   The [Supabase CLI](/docs/guides/local-development) installed on your machine.
+*   The [Supabase CLI](../../../local-development/index.md) installed on your machine.
 *   The [Deno runtime](https://docs.deno.com/runtime/getting_started/installation/) installed on your machine and optionally [setup in your favourite IDE](https://docs.deno.com/runtime/getting_started/setup_your_environment).
 *   A [Telegram](https://telegram.org) account.
 
@@ -49,7 +49,7 @@ Use the [BotFather](https://t.me/BotFather) to create a new Telegram bot. Run th
 
 ### Create a Supabase project locally[#](#create-a-supabase-project-locally)
 
-After installing the [Supabase CLI](/docs/guides/local-development), run the following command to create a new Supabase project locally:
+After installing the [Supabase CLI](../../../local-development/index.md), run the following command to create a new Supabase project locally:
 
 ```
 1supabase init

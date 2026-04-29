@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:04:15.406Z"
 content_hash: "fec17a78b4b3864f89a3577cafa08ae702d3fb128eddeb3f2fa4f2c61edaa535"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)"]
-nav_prev: {"path": "../ioredis/index.md", "title": "ioredis guide (JavaScript)"}
-nav_next: {"path": "amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/ioredis/index.md", "title": "ioredis guide (JavaScript)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/amr/index.md", "title": "Connect to Azure Managed Redis"}
 ---
 
 # Jedis guide (Java)
 
 Connect your Java application to a Redis database
 
-[Jedis](https://github.com/redis/jedis) is a synchronous Java client for Redis. Use [Lettuce](/docs/latest/develop/clients/lettuce/) if you need a more advanced Java client that also supports asynchronous and reactive connections. The sections below explain how to install `Jedis` and connect your application to a Redis database.
+[Jedis](https://github.com/redis/jedis) is a synchronous Java client for Redis. Use [Lettuce](../lettuce/index.md) if you need a more advanced Java client that also supports asynchronous and reactive connections. The sections below explain how to install `Jedis` and connect your application to a Redis database.
 
 Note:
 

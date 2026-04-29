@@ -10,7 +10,7 @@ content_hash: "cb6770c524ba26e343452f48381e145071dd896f3116dc1fd5cb371af0e03570"
 menu_path: ["Web Platform APIs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../std/xml/index.md", "title": "@std/xml"}
+nav_prev: {"path": "deno/runtime/reference/std/xml/index.md", "title": "@std/xml"}
 ---
 
 **On this page**
@@ -36,7 +36,7 @@ nav_prev: {"path": "../std/xml/index.md", "title": "@std/xml"}
 
 One way Deno simplifies web and cloud development is by using standard Web Platform APIs (like `fetch`, WebSockets and more) over proprietary APIs. This means if you've ever built for the browser, you're likely already familiar with Deno, and if you're learning Deno, you're also investing in your knowledge of the web.
 
-[Explore supported Web APIs](/api/web/)
+[Explore supported Web APIs](../../../api/web/index.md)
 
 Below we'll highlight some of the standard Web APIs that Deno supports.
 
@@ -164,7 +164,7 @@ The `--location` flag is intended for those who have a specific purpose in mind 
 
 ## Web Storage
 
-The [Web Storage API](/api/web/storage) provides an API for storing string keys and values. Persisting data works similar to a browser, and has a 10MB storage limit. The global `sessionStorage` object only persists data for the current execution context, while `localStorage` persists data from execution to execution.
+The [Web Storage API](../../../api/web/storage/index.md) provides an API for storing string keys and values. Persisting data works similar to a browser, and has a 10MB storage limit. The global `sessionStorage` object only persists data for the current execution context, while `localStorage` persists data from execution to execution.
 
 In a browser, `localStorage` persists data uniquely per origin (effectively the protocol plus hostname plus port). As of Deno 1.16, Deno has a set of rules to determine what is a unique storage location:
 
@@ -190,7 +190,7 @@ localStorage.clear();
 
 ## Web Workers
 
-Deno supports the [`Web Worker API`](/api/web/workers).
+Deno supports the [`Web Worker API`](../../../api/web/workers/index.md).
 
 Workers can be used to run code on multiple threads. Each instance of `Worker` is run on a separate thread, dedicated only to that worker.
 
@@ -313,9 +313,9 @@ hello world
 
 Caution
 
-This is an unstable Deno feature. Learn more about [unstable features](/runtime/fundamentals/stability_and_releases/#unstable-apis).
+This is an unstable Deno feature. Learn more about [unstable features](../../fundamentals/stability_and_releases/index.md#unstable-apis).
 
-The permissions available for the worker are analogous to the CLI permission flags, meaning every permission enabled there can be disabled at the level of the Worker API. You can find a more detailed description of each of the permission options [here](/runtime/fundamentals/security/).
+The permissions available for the worker are analogous to the CLI permission flags, meaning every permission enabled there can be disabled at the level of the Worker API. You can find a more detailed description of each of the permission options [here](../../fundamentals/security/index.md).
 
 By default a worker will inherit permissions from the thread it was created in, however in order to allow users to limit the access of this worker we provide the `deno.permissions` option in the worker API.
 

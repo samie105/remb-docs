@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:52.747Z"
 content_hash: "4aeb049e264be72666f4017b4f7415963f0e65bd260a5b61a0f694c3f24d346c"
 menu_path: ["You Might Not Need an Effect"]
 section_path: []
-nav_prev: {"path": "../synchronizing-with-effects/index.md", "title": "Synchronizing with Effects"}
-nav_next: {"path": "../lifecycle-of-reactive-effects/index.md", "title": "Lifecycle of Reactive Effects"}
+nav_prev: {"path": "react/learn/synchronizing-with-effects/index.md", "title": "Synchronizing with Effects"}
+nav_next: {"path": "react/learn/lifecycle-of-reactive-effects/index.md", "title": "Lifecycle of Reactive Effects"}
 ---
 
 Effects are an escape hatch from the React paradigm. They let you “step outside” of React and synchronize your components with some external system like a non-React widget, network, or the browser DOM. If there is no external system involved (for example, if you want to update a component’s state when some props or state change), you shouldn’t need an Effect. Removing unnecessary Effects will make your code easier to follow, faster to run, and less error-prone.

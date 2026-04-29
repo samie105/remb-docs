@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:16.662Z"
 content_hash: "abc9b210b70df9502d44d75dcda448b2391b0b5708b5668c6f24cb3d8d810a50"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Logging","Logging"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Logging","Logging"]
-nav_prev: {"path": "../log-drains/index.md", "title": "Log Drains"}
-nav_next: {"path": "../metrics/index.md", "title": "Metrics API"}
+nav_prev: {"path": "supabase/docs/guides/telemetry/log-drains/index.md", "title": "Log Drains"}
+nav_next: {"path": "supabase/docs/guides/telemetry/metrics/index.md", "title": "Metrics API"}
 ---
 
 # 
@@ -25,7 +25,7 @@ The Supabase Platform includes a Logs Explorer that allows log tracing and debug
 
 Supabase provides a logging interface specific to each product. You can use simple regular expressions for keywords and patterns to search log event messages. You can also export and download the log events matching your query as a spreadsheet.
 
-[API logs](/dashboard/project/_/logs/edge-logs) show all network requests and response for the REST and GraphQL [APIs](../../guides/database/api). If [Read Replicas](/docs/guides/platform/read-replicas) are enabled, logs are automatically filtered between databases as well as the [API Load Balancer](/docs/guides/platform/read-replicas#api-load-balancer) endpoint. Logs for a specific endpoint can be toggled with the `Source` button on the upper-right section of the dashboard.
+[API logs](/dashboard/project/_/logs/edge-logs) show all network requests and response for the REST and GraphQL [APIs](../../guides/database/api). If [Read Replicas](../../platform/read-replicas/index.md) are enabled, logs are automatically filtered between databases as well as the [API Load Balancer](../../platform/read-replicas/index.md#api-load-balancer) endpoint. Logs for a specific endpoint can be toggled with the `Source` button on the upper-right section of the dashboard.
 
 When viewing logs originating from the API Load Balancer endpoint, the upstream database or the one that eventually handles the request can be found under the `Redirect Identifier` field. This is equivalent to `metadata.load_balancer_redirect_identifier` when querying the underlying logs.
 

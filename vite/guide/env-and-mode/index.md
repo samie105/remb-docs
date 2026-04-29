@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:15.389Z"
 content_hash: "9265f45e597dc7b7ac8a5df3b380c5794709b12d52c5fd5d73cae05a89e13d5e"
 menu_path: ["Env Variables and Modes ​"]
 section_path: []
-nav_prev: {"path": "../static-deploy/index.md", "title": "Deploying a Static Site \u200b"}
-nav_next: {"path": "../ssr/index.md", "title": "Server-Side Rendering (SSR) \u200b"}
+nav_prev: {"path": "vite/guide/static-deploy/index.md", "title": "Deploying a Static Site \u200b"}
+nav_next: {"path": "vite/guide/ssr/index.md", "title": "Server-Side Rendering (SSR) \u200b"}
 ---
 
 Vite exposes certain constants under the special `import.meta.env` object. These constants are defined as global variables during dev and statically replaced at build time to make tree-shaking effective.

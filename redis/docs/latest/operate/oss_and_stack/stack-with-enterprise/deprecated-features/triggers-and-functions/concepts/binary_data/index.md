@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:11:58.844Z"
 content_hash: "81ee4ea27165e18fe90fedc2eea16b5eb91a7e2d20b4fbb64ea8e82e445be99d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Binary data","→","Binary data"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Binary data","→","Binary data"]
-nav_prev: {"path": "../index.md", "title": "Concepts"}
-nav_next: {"path": "../cluster_support/index.md", "title": "Cluster support"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/index.md", "title": "Concepts"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/cluster_support/index.md", "title": "Cluster support"}
 ---
 
 # Binary data
@@ -33,12 +33,12 @@ By default, triggers and functions will decode all data as a string and will rai
 
 1.  Binary function arguments
 2.  Binary command results
-3.  Binary key names on [keyspace triggers](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/keyspace_triggers/)
-4.  Binary data on [stream triggers](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/stream_triggers/)
+3.  Binary key names on [keyspace triggers](../triggers/keyspace_triggers/index.md)
+4.  Binary data on [stream triggers](../triggers/stream_triggers/index.md)
 
 ### Binary function arguments
 
-It is possible to instruct triggers and functions not to decode function arguments as `JS` `Strings` using the [redis.functionFlags.RAW\_ARGUMENTS](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/function_flags/) function flag. In this case, the function arguments will be given as `JS` `ArrayBuffer`. Example:
+It is possible to instruct triggers and functions not to decode function arguments as `JS` `Strings` using the [redis.functionFlags.RAW\_ARGUMENTS](../function_flags/index.md) function flag. In this case, the function arguments will be given as `JS` `ArrayBuffer`. Example:
 
 ```js
 #!js api_version=1.0 name=lib
@@ -92,7 +92,7 @@ Notice that a `JS` `ArrayBuffer` can be returned by a function, it will be retur
 
 ### Binary keys names on database triggers
 
-On [keyspace triggers](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/keyspace_triggers/), if the key name that triggered the event is binary, the `data.key` field will be NULL. The `data.key_raw` field is always provided as a `JS` `ArrayBuffer` and can be used as in the following example:
+On [keyspace triggers](../triggers/keyspace_triggers/index.md), if the key name that triggered the event is binary, the `data.key` field will be NULL. The `data.key_raw` field is always provided as a `JS` `ArrayBuffer` and can be used as in the following example:
 
 ```js
 #!js api_version=1.0 name=lib
@@ -128,11 +128,11 @@ OK
 3) "\xaa"
 ```
 
-For more information see [keyspace triggers](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/keyspace_triggers/).
+For more information see [keyspace triggers](../triggers/keyspace_triggers/index.md).
 
 ### Binary data on stream consumers
 
-On [stream triggers](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/triggers/stream_triggers/), if the key name is binary. The `data.stream_name` field will be NULL. The `data.stream_name_raw` field is always provided as a `JS` `ArrayBuffer` and can be used in this case. In addition, if the content of the steam is binary, it will also appear as `null` under `data.record`. In this case, it is possible to use `data.record` (which always exists) and contains the data as a `JS` `ArrayBuffer`. Example:
+On [stream triggers](../triggers/stream_triggers/index.md), if the key name is binary. The `data.stream_name` field will be NULL. The `data.stream_name_raw` field is always provided as a `JS` `ArrayBuffer` and can be used in this case. In addition, if the content of the steam is binary, it will also appear as `null` under `data.record`. In this case, it is possible to use `data.record` (which always exists) and contains the data as a `JS` `ArrayBuffer`. Example:
 
 ```js
 #!js api_version=1.0 name=lib

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:10.919Z"
 content_hash: "f2f6c1a4aaa1792dab66509cdc73b4741c28f35b5171e14f3ff600d1dcb38b5d"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Point-in-Time Recovery","Point-in-Time Recovery"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Point-in-Time Recovery","Point-in-Time Recovery"]
-nav_prev: {"path": "../monthly-active-users-sso/index.md", "title": "Manage Monthly Active SSO Users usage"}
-nav_next: {"path": "../read-replicas/index.md", "title": "Manage Read Replica usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users-sso/index.md", "title": "Manage Monthly Active SSO Users usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/read-replicas/index.md", "title": "Manage Read Replica usage"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Manage Point-in-Time Recovery usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-You can configure [Point-in-Time Recovery (PITR)](/docs/guides/platform/backups#point-in-time-recovery) for a project by enabling the [PITR add-on](/dashboard/project/_/settings/addons?panel=pitr). You are charged for every enabled PITR add-on across your projects.
+You can configure [Point-in-Time Recovery (PITR)](../../backups/index.md#point-in-time-recovery) for a project by enabling the [PITR add-on](/dashboard/project/_/settings/addons?panel=pitr). You are charged for every enabled PITR add-on across your projects.
 
-Point-In-Time Recovery add-on is **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+Point-In-Time Recovery add-on is **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 ## How charges are calculated[#](#how-charges-are-calculated)
 
@@ -101,7 +101,7 @@ $0.55
 
 $400
 
-For a detailed breakdown of how charges are calculated, refer to [Manage Point-in-Time Recovery usage](/docs/guides/platform/manage-your-usage/point-in-time-recovery).
+For a detailed breakdown of how charges are calculated, refer to [Manage Point-in-Time Recovery usage](index.md).
 
 ## Billing examples[#](#billing-examples)
 
@@ -239,6 +239,6 @@ Compute Credits
 
 ## Optimize usage[#](#optimize-usage)
 
-*   Review your [backup frequency](/docs/guides/platform/backups#frequency-of-backups) needs to determine whether you require PITR or free Daily Backups are sufficient
+*   Review your [backup frequency](../../backups/index.md#frequency-of-backups) needs to determine whether you require PITR or free Daily Backups are sufficient
 *   Regularly check your projects and disable PITR where no longer needed
 *   Consider disabling PITR for non-production databases

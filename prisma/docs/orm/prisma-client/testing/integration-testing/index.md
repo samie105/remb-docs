@@ -10,8 +10,8 @@ content_hash: "4153cc90c8af218010e1dfc09ba7386af59d7f34d97d8f6507178aa1cafe96f9"
 menu_path: ["Integration testing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../special-fields-and-types/working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
-nav_next: {"path": "../unit-testing/index.md", "title": "Unit testing"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-scalar-lists-arrays/index.md", "title": "Working with scalar lists"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/testing/unit-testing/index.md", "title": "Unit testing"}
 ---
 
 # Set the version of docker compose to use

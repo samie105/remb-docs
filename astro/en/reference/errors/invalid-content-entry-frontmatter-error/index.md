@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:10.430Z"
 content_hash: "b9ebb46cbd8abd2a69ea08bac45e47cf23d11098d003a256d74b188810d80600"
 menu_path: ["Content entry frontmatter does not match schema."]
 section_path: []
-nav_prev: {"path": "../invalid-content-entry-data-error/index.md", "title": "Content entry data does not match schema."}
-nav_next: {"path": "../invalid-content-entry-slug-error/index.md", "title": "Invalid content entry slug."}
+nav_prev: {"path": "astro/en/reference/errors/invalid-content-entry-data-error/index.md", "title": "Content entry data does not match schema."}
+nav_next: {"path": "astro/en/reference/errors/invalid-content-entry-slug-error/index.md", "title": "Invalid content entry slug."}
 ---
 
 # Content entry frontmatter does not match schema.
@@ -24,6 +24,6 @@ nav_next: {"path": "../invalid-content-entry-slug-error/index.md", "title": "Inv
 
 [Section titled “What went wrong?”](#what-went-wrong)
 
-A Markdown or MDX entry does not match its collection schema. Make sure that all required fields are present, and that all fields are of the correct type. You can check against the collection schema in your `src/content.config.*` file. See the [Content collections documentation](/en/guides/content-collections/) for more information.
+A Markdown or MDX entry does not match its collection schema. Make sure that all required fields are present, and that all fields are of the correct type. You can check against the collection schema in your `src/content.config.*` file. See the [Content collections documentation](../../../guides/content-collections/index.md) for more information.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

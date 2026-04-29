@@ -11,8 +11,8 @@ menu_path: ["unauthorized"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../revalidateTag/index.md", "title": "revalidateTag"}
-nav_next: {"path": "../unstable_cache/index.md", "title": "unstable_cache"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/revalidateTag/index.md", "title": "revalidateTag"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/unstable_cache/index.md", "title": "unstable_cache"}
 ---
 
 # unauthorized
@@ -21,9 +21,9 @@ This feature is currently experimental and subject to change, it's not recommend
 
 Last updated April 23, 2026
 
-The `unauthorized` function throws an error that renders a Next.js 401 error page. It's useful for handling authorization errors in your application. You can customize the UI using the [`unauthorized.js` file](/docs/app/api-reference/file-conventions/unauthorized).
+The `unauthorized` function throws an error that renders a Next.js 401 error page. It's useful for handling authorization errors in your application. You can customize the UI using the [`unauthorized.js` file](../../file-conventions/unauthorized/index.md).
 
-To start using `unauthorized`, enable the experimental [`authInterrupts`](/docs/app/api-reference/config/next-config-js/authInterrupts) configuration option in your `next.config.js` file:
+To start using `unauthorized`, enable the experimental [`authInterrupts`](../../config/next-config-js/authInterrupts/index.md) configuration option in your `next.config.js` file:
 
 next.config.ts
 
@@ -41,7 +41,7 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
-`unauthorized` can be invoked in [Server Components](/docs/app/getting-started/server-and-client-components), [Server Functions](/docs/app/getting-started/mutating-data), and [Route Handlers](/docs/app/api-reference/file-conventions/route).
+`unauthorized` can be invoked in [Server Components](../../../getting-started/server-and-client-components/index.md), [Server Functions](../../../getting-started/mutating-data/index.md), and [Route Handlers](../../file-conventions/route/index.md).
 
 app/dashboard/page.tsx
 
@@ -70,7 +70,7 @@ export default async function DashboardPage() {
 
 ## Good to know[](#good-to-know)
 
--   The `unauthorized` function cannot be called in the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout).
+-   The `unauthorized` function cannot be called in the [root layout](../../file-conventions/layout/index.md#root-layout).
 
 ## Examples[](#examples)
 
@@ -182,6 +182,6 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
 API reference for the unauthorized.js special file.
 
-](/docs/app/api-reference/file-conventions/unauthorized)
+](../../file-conventions/unauthorized/index.md)
 
 Was this helpful?

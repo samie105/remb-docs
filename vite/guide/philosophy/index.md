@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:03.963Z"
 content_hash: "5ff3a98f8e119b66d387f70f920c3afa9b46a6472db191a4013ed0edcde4f89d"
 menu_path: ["Project Philosophy ​"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "Getting Started \u200b"}
-nav_next: {"path": "../why/index.md", "title": "Why Vite \u200b"}
+nav_prev: {"path": "vite/guide/index.md", "title": "Getting Started \u200b"}
+nav_next: {"path": "vite/guide/why/index.md", "title": "Why Vite \u200b"}
 ---
 
 ## Lean Extendable Core [​](#lean-extendable-core)

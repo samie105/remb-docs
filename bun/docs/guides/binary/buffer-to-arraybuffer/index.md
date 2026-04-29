@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:16.894Z"
 content_hash: "d2020fba4a4d108d2158dfa60bd7f9b61ca17920dfaa5af7283132b593f7b92c"
 menu_path: ["Convert a Buffer to an ArrayBuffer"]
 section_path: []
-nav_prev: {"path": "../blob-to-typedarray/index.md", "title": "Convert a Blob to a Uint8Array"}
-nav_next: {"path": "../buffer-to-blob/index.md", "title": "Convert a Buffer to a blob"}
+nav_prev: {"path": "bun/docs/guides/binary/blob-to-typedarray/index.md", "title": "Convert a Blob to a Uint8Array"}
+nav_next: {"path": "bun/docs/guides/binary/buffer-to-blob/index.md", "title": "Convert a Buffer to a blob"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../buffer-to-blob/index.md", "title": "Convert a Buffer to a
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The Node.js [`Buffer`](https://nodejs.org/api/buffer.html) class provides a way to view and manipulate data in an underlying `ArrayBuffer`, which is available via the `buffer` property.
 
@@ -44,7 +44,7 @@ const arrBuf = nodeBuf.buffer;
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a Buffer to a string
 
 Previous
 
-](/docs/guides/binary/buffer-to-string)[
+](../buffer-to-string/index.md)[
 
 Convert a Buffer to a blob
 
 Next
 
-](/docs/guides/binary/buffer-to-blob)
+](../buffer-to-blob/index.md)

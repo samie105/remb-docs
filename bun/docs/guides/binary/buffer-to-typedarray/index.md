@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:55.416Z"
 content_hash: "7d7f50431b8f50d894be8ee0c9631957c9dda6669ba35aa1c29f227a533650d8"
 menu_path: ["Convert a Buffer to a Uint8Array"]
 section_path: []
-nav_prev: {"path": "../buffer-to-string/index.md", "title": "Convert a Buffer to a string"}
-nav_next: {"path": "../dataview-to-string/index.md", "title": "Convert a DataView to a string"}
+nav_prev: {"path": "bun/docs/guides/binary/buffer-to-string/index.md", "title": "Convert a Buffer to a string"}
+nav_next: {"path": "bun/docs/guides/binary/dataview-to-string/index.md", "title": "Convert a DataView to a string"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../dataview-to-string/index.md", "title": "Convert a DataVie
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The Node.js [`Buffer`](https://nodejs.org/api/buffer.html) class extends [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array), so no conversion is needed. All properties and methods on `Uint8Array` are available on `Buffer`.
 
@@ -44,7 +44,7 @@ buf instanceof Uint8Array; // => true
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a Buffer to a blob
 
 Previous
 
-](/docs/guides/binary/buffer-to-blob)[
+](../buffer-to-blob/index.md)[
 
 Convert a Buffer to a ReadableStream
 
 Next
 
-](/docs/guides/binary/buffer-to-readablestream)
+](../buffer-to-readablestream/index.md)

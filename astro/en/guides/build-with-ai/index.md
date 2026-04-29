@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:56.821Z"
 content_hash: "5bc51d45e4a554ebbdc63d1be9e7f707c38d9ece8a71cfaf045a938ebbbfc368"
 menu_path: ["Building Astro sites with AI tools"]
 section_path: []
-nav_prev: {"path": "../integrations/index.md", "title": "Working with integrations"}
-nav_next: {"path": "../dev-toolbar/index.md", "title": "Dev toolbar"}
+nav_prev: {"path": "astro/en/guides/integrations/index.md", "title": "Working with integrations"}
+nav_next: {"path": "astro/en/guides/dev-toolbar/index.md", "title": "Dev toolbar"}
 ---
 
 # Building Astro sites with AI tools
@@ -312,4 +312,4 @@ The same technology that powers Astro’s MCP server is also available as a chat
 *   **Verify current APIs**: AI tools may use outdated patterns. Ask them to check the latest documentation, especially for newer features like sessions and actions. This is also important for features that have seen significant changes since their initial launch, such as content collections, or previously experimental features that may no longer be experimental.
 *   **Use project rules**: If your AI tool supports it, set up project rules to enforce best practices and coding standards, such as the ones listed above.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

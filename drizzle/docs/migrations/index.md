@@ -10,8 +10,8 @@ content_hash: "d5c918c0df4745ff7a09a8f40fa933a741e70b853f575c8e84592e5d9056fba9"
 menu_path: ["Drizzle migrations fundamentals"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../data-querying/index.md", "title": "Drizzle Queries + CRUD"}
-nav_next: {"path": "../get-started-postgresql/index.md", "title": "Drizzle <> PostgreSQL"}
+nav_prev: {"path": "drizzle/docs/data-querying/index.md", "title": "Drizzle Queries + CRUD"}
+nav_next: {"path": "drizzle/docs/get-started-postgresql/index.md", "title": "Drizzle <> PostgreSQL"}
 ---
 
 ## Drizzle migrations fundamentals

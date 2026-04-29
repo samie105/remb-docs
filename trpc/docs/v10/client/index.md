@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:59.304Z"
 content_hash: "e1eedc8eba6a775fcfb08304d9f6f2185664200419681c27caaeb047e599d029"
 menu_path: ["Client Overview"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "tRPC"}
-nav_next: {"path": "cors/index.md", "title": "Send cookies cross-origin"}
+nav_prev: {"path": "trpc/docs/v10/index.md", "title": "tRPC"}
+nav_next: {"path": "trpc/docs/v10/client/cors/index.md", "title": "Send cookies cross-origin"}
 ---
 
 While a tRPC API can be called using normal HTTP requests like any other REST API, you will need a **client** to benefit from tRPC's typesafety.

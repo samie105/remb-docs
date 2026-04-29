@@ -10,8 +10,8 @@ content_hash: "258f764c591944c6e9c0f6f491715fba2e3bc42e5c8a1ab1b4d0f8e552172bb7"
 menu_path: ["user-select"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../touch-action/index.md", "title": "touch-action"}
-nav_next: {"path": "../will-change/index.md", "title": "will-change"}
+nav_prev: {"path": "tailwind/docs/touch-action/index.md", "title": "touch-action"}
+nav_next: {"path": "tailwind/docs/will-change/index.md", "title": "will-change"}
 ---
 
 # user-select
@@ -86,7 +86,7 @@ Prefix an `user-select` utility with a breakpoint variant like `md:` to only app
 <div class="select-none md:select-all ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

@@ -11,15 +11,15 @@ menu_path: ["Font Module"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Components"}
-nav_next: {"path": "../form/index.md", "title": "Form Component"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/components/index.md", "title": "Components"}
+nav_next: {"path": "nextjs/docs/app/api-reference/components/form/index.md", "title": "Form Component"}
 ---
 
 # Font Module
 
 Last updated April 23, 2026
 
-[`next/font`](/docs/app/api-reference/components/font) automatically optimizes your fonts (including custom fonts) and removes external network requests for improved privacy and performance.
+[`next/font`](index.md) automatically optimizes your fonts (including custom fonts) and removes external network requests for improved privacy and performance.
 
 It includes **built-in automatic self-hosting** for any font file. This means you can optimally load web fonts with no [layout shift](https://web.dev/articles/cls).
 
@@ -119,7 +119,7 @@ Examples:
 
 ### `subsets`[](#subsets)
 
-The font [`subsets`](https://fonts.google.com/knowledge/glossary/subsetting) defined by an array of string values with the names of each subset you would like to be [preloaded](/docs/app/api-reference/components/font#specifying-a-subset). Fonts specified via `subsets` will have a link preload tag injected into the head when the [`preload`](#preload) option is true, which is the default.
+The font [`subsets`](https://fonts.google.com/knowledge/glossary/subsetting) defined by an array of string values with the names of each subset you would like to be [preloaded](index.md#specifying-a-subset). Fonts specified via `subsets` will have a link preload tag injected into the head when the [`preload`](#preload) option is true, which is the default.
 
 Used in `next/font/google`
 
@@ -157,7 +157,7 @@ Examples:
 
 ### `preload`[](#preload)
 
-A boolean value that specifies whether the font should be [preloaded](/docs/app/api-reference/components/font#preloading) or not. The default is `true`.
+A boolean value that specifies whether the font should be [preloaded](index.md#preloading) or not. The default is `true`.
 
 Used in `next/font/google` and `next/font/local`
 
@@ -294,7 +294,7 @@ const roboto = Roboto({
 
 ### Specifying a subset[](#specifying-a-subset)
 
-Google Fonts are automatically [subset](https://fonts.google.com/knowledge/glossary/subsetting). This reduces the size of the font file and improves performance. You'll need to define which of these subsets you want to preload. Failing to specify any subsets while [`preload`](/docs/app/api-reference/components/font#preload) is `true` will result in a warning.
+Google Fonts are automatically [subset](https://fonts.google.com/knowledge/glossary/subsetting). This reduces the size of the font file and improves performance. You'll need to define which of these subsets you want to preload. Failing to specify any subsets while [`preload`](index.md#preload) is `true` will result in a warning.
 
 This can be done by adding it to the function call:
 
@@ -306,7 +306,7 @@ JavaScriptTypeScript
 const inter = Inter({ subsets: ['latin'] })
 ```
 
-View the [Font API Reference](/docs/app/api-reference/components/font) for more information.
+View the [Font API Reference](index.md) for more information.
 
 ## Using Multiple Fonts[](#using-multiple-fonts)
 
@@ -368,7 +368,7 @@ export default function Page() {
 
 In the example above, `Inter` will be applied globally, and `Roboto Mono` can be imported and applied as needed.
 
-Alternatively, you can create a [CSS variable](/docs/app/api-reference/components/font#variable) and use it with your preferred CSS solution:
+Alternatively, you can create a [CSS variable](index.md#variable) and use it with your preferred CSS solution:
 
 app/layout.tsx
 
@@ -481,11 +481,11 @@ const roboto = localFont({
 })
 ```
 
-View the [Font API Reference](/docs/app/api-reference/components/font) for more information.
+View the [Font API Reference](index.md) for more information.
 
 ### With Tailwind CSS[](#with-tailwind-css)
 
-`next/font` integrates seamlessly with [Tailwind CSS](https://tailwindcss.com/) using [CSS variables](/docs/app/api-reference/components/font#css-variables).
+`next/font` integrates seamlessly with [Tailwind CSS](https://tailwindcss.com/) using [CSS variables](index.md#css-variables).
 
 In the example below, we use the `Inter` and `Roboto_Mono` fonts from `next/font/google` (you can use any Google Font or Local Font). Use the `variable` option to define a CSS variable name, such as `inter` and `roboto_mono` for these fonts, respectively. Then, apply `inter.variable` and `roboto_mono.variable` to include the CSS variables in your HTML document.
 
@@ -526,7 +526,7 @@ export default function RootLayout({
 }
 ```
 
-Finally, add the CSS variable to your [Tailwind CSS config](/docs/app/getting-started/css#tailwind-css):
+Finally, add the CSS variable to your [Tailwind CSS config](../../../getting-started/css/index.md#tailwind-css):
 
 global.css
 
@@ -718,9 +718,9 @@ import { greatVibes, sourceCodePro400 } from '@/fonts'
 
 When a font function is called on a page of your site, it is not globally available and preloaded on all routes. Rather, the font is only preloaded on the related routes based on the type of file where it is used:
 
--   If it's a [unique page](/docs/app/api-reference/file-conventions/page), it is preloaded on the unique route for that page.
--   If it's a [layout](/docs/app/api-reference/file-conventions/layout), it is preloaded on all the routes wrapped by the layout.
--   If it's the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout), it is preloaded on all routes.
+-   If it's a [unique page](../../file-conventions/page/index.md), it is preloaded on the unique route for that page.
+-   If it's a [layout](../../file-conventions/layout/index.md), it is preloaded on all the routes wrapped by the layout.
+-   If it's the [root layout](../../file-conventions/layout/index.md#root-layout), it is preloaded on all routes.
 
 ## Version Changes[](#version-changes)
 

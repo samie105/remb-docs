@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:17.529Z"
 content_hash: "4be339cc4d5829dc3be1b4e9e436dd26cbf499f434d7ea9a2972779cbc24d543"
 menu_path: ["$props"]
 section_path: []
-nav_prev: {"path": "../$effect/index.md", "title": "$effect"}
-nav_next: {"path": "../$bindable/index.md", "title": "$bindable"}
+nav_prev: {"path": "svelte/docs/svelte/$effect/index.md", "title": "$effect"}
+nav_next: {"path": "svelte/docs/svelte/$bindable/index.md", "title": "$bindable"}
 ---
 
 The inputs to a component are referred to as _props_, which is short for _properties_. You pass props to components just like you pass attributes to elements:

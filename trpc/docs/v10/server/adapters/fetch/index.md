@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:05.890Z"
 content_hash: "de9cdd83e186828896bffb9fa639db02e0de2803808c9036c84abbd06d208465"
 menu_path: ["Fetch / Edge Runtimes Adapter"]
 section_path: []
-nav_prev: {"path": "../fastify/index.md", "title": "Fastify Adapter"}
-nav_next: {"path": "../nextjs/index.md", "title": "Next.js Adapter"}
+nav_prev: {"path": "trpc/docs/v10/server/adapters/fastify/index.md", "title": "Fastify Adapter"}
+nav_next: {"path": "trpc/docs/v10/server/adapters/nextjs/index.md", "title": "Next.js Adapter"}
 ---
 
 You can create a tRPC server within any edge runtime that follow the [WinterCG](https://wintercg.org/), specifically the [Minimum Common Web Platform API](https://common-min-api.proposal.wintercg.org/) specification.

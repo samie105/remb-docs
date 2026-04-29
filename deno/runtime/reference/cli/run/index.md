@@ -10,8 +10,8 @@ content_hash: "c3e22534e3c6aaecc9af1191a061832d19d890496171ea0194e3d3ab9124e9e0"
 menu_path: ["deno run"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../repl/index.md", "title": "deno repl"}
-nav_next: {"path": "../sandbox/index.md", "title": "deno sandbox"}
+nav_prev: {"path": "deno/runtime/reference/cli/repl/index.md", "title": "deno repl"}
+nav_next: {"path": "deno/runtime/reference/cli/sandbox/index.md", "title": "deno sandbox"}
 ---
 
 **On this page**
@@ -46,7 +46,7 @@ The `run` subcommand is optional — you can also just use `deno <file>`:
 deno main.ts
 ```
 
-By default, Deno runs programs in a sandbox without access to disk, network or ability to spawn subprocesses. This is because the Deno runtime is [secure by default](/runtime/fundamentals/security/). You can grant or deny required permissions using the [`--allow-*` and `--deny-*` flags](/runtime/fundamentals/security/#permissions-list).
+By default, Deno runs programs in a sandbox without access to disk, network or ability to spawn subprocesses. This is because the Deno runtime is [secure by default](../../../fundamentals/security/index.md). You can grant or deny required permissions using the [`--allow-*` and `--deny-*` flags](../../../fundamentals/security/index.md#permissions-list).
 
 ### Permissions examples
 
@@ -74,7 +74,7 @@ Grant all permissions _this is not recommended and should only be used for testi
 deno run -A server.ts
 ```
 
-If your project requires multiple security flags you should consider using a [`deno task`](/runtime/reference/cli/task/) to execute them.
+If your project requires multiple security flags you should consider using a [`deno task`](../task/index.md) to execute them.
 
 ## Watch
 
@@ -92,7 +92,7 @@ Deno's watcher will notify you of changes in the console, and will warn in the c
 
 ## Running a package.json script
 
-`package.json` scripts can be executed with the [`deno task`](/runtime/reference/cli/task/) command.
+`package.json` scripts can be executed with the [`deno task`](../task/index.md) command.
 
 ## Running code from stdin
 

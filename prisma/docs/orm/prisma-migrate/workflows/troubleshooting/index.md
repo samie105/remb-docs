@@ -11,8 +11,8 @@ menu_path: ["Troubleshooting"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../squashing-migrations/index.md", "title": "Squashing migrations"}
-nav_next: {"path": "../unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Migrate)"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/squashing-migrations/index.md", "title": "Squashing migrations"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/unsupported-database-features/index.md", "title": "Unsupported database features (Prisma Migrate)"}
 ---
 
 Workflows

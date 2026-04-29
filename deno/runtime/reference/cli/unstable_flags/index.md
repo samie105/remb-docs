@@ -10,8 +10,8 @@ content_hash: "3f5b28a814c184e82c99f8deed6f460bdd4d213c925ad3f8fa021db3a9b4035a"
 menu_path: ["Unstable feature flags"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../upgrade/index.md", "title": "deno upgrade"}
-nav_next: {"path": "../x/index.md", "title": "deno x"}
+nav_prev: {"path": "deno/runtime/reference/cli/upgrade/index.md", "title": "deno upgrade"}
+nav_next: {"path": "deno/runtime/reference/cli/x/index.md", "title": "deno x"}
 ---
 
 **On this page**
@@ -54,7 +54,7 @@ deno run --unstable-node-globals main.ts
 
 ## Configuring flags in `deno.json`
 
-You can specify which unstable features you'd like to enable for your project using a [configuration option in `deno.json`](/runtime/fundamentals/configuration/).
+You can specify which unstable features you'd like to enable for your project using a [configuration option in `deno.json`](../../../fundamentals/configuration/index.md).
 
 deno.json
 
@@ -68,7 +68,7 @@ The possible values in the `unstable` array are the flag names with the `--unsta
 
 ## Configuration via environment variables
 
-Some flags can be enabled by setting a value (any value) for an environment variable of a given name, rather than being passed as a flag or [`deno.json`](/runtime/fundamentals/configuration/) configuration option. Flags that are settable via environment variables will be noted below.
+Some flags can be enabled by setting a value (any value) for an environment variable of a given name, rather than being passed as a flag or [`deno.json`](../../../fundamentals/configuration/index.md) configuration option. Flags that are settable via environment variables will be noted below.
 
 Here's an example of setting the `--unstable-bare-node-builtins` flag via environment variable:
 
@@ -82,7 +82,7 @@ export DENO_UNSTABLE_BARE_NODE_BUILTINS=true
 
 **Environment variable:** `DENO_UNSTABLE_BARE_NODE_BUILTINS`
 
-This flag enables you to [import Node.js built-in modules](/runtime/fundamentals/node/#node-built-in-modules) without a `node:` specifier, as in the example below. You can also use this flag to enable npm packages without an `npm:` specifier if you are manually managing your Node.js dependencies.
+This flag enables you to [import Node.js built-in modules](../../../fundamentals/node/index.md#node-built-in-modules) without a `node:` specifier, as in the example below. You can also use this flag to enable npm packages without an `npm:` specifier if you are manually managing your Node.js dependencies.
 
 example.ts
 
@@ -145,7 +145,7 @@ Sloppy imports will allow (but print warnings for) the following:
 -   Use incorrect file extensions (e.g. importing with a `.js` extension when the actual file is `.ts`)
 -   Import a directory path, and automatically use `index.js` or `index.ts` as the import for that directory
 
-[`deno compile`](/runtime/reference/cli/compile/) does not support sloppy imports.
+[`deno compile`](../compile/index.md) does not support sloppy imports.
 
 ## `--unstable-unsafe-proto`
 
@@ -215,7 +215,7 @@ Enable unstable net APIs. These APIs include:
 
 ## `--unstable-otel`
 
-Enable the [OpenTelemetry integration for Deno](/runtime/fundamentals/open_telemetry). This feature is now stable, so this flag is unnecessary in [Deno 2.4](https://deno.com/blog/v2.4)+.
+Enable the [OpenTelemetry integration for Deno](../../../fundamentals/open_telemetry/index.md). This feature is now stable, so this flag is unnecessary in [Deno 2.4](https://deno.com/blog/v2.4)+.
 
 ## `--unstable`
 

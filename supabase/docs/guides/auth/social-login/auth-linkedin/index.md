@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:41.877Z"
 content_hash: "a5bd42725e8a3726157e0eb88128967cd910c281cd5ce254a3c3b2ccae035da3"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","LinkedIn","LinkedIn"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","LinkedIn","LinkedIn"]
-nav_prev: {"path": "../auth-keycloak/index.md", "title": "Login with Keycloak"}
-nav_next: {"path": "../auth-notion/index.md", "title": "Login with Notion"}
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-keycloak/index.md", "title": "Login with Keycloak"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-notion/index.md", "title": "Login with Notion"}
 ---
 
 # 
@@ -53,9 +53,9 @@ When testing OAuth locally with the Supabase CLI, ensure your OAuth provider is 
 
 If this callback URL is missing or misconfigured, OAuth sign-in may fail or not redirect correctly during local development.
 
-See the [local development docs](/docs/guides/local-development) for more details.
+See the [local development docs](../../../local-development/index.md) for more details.
 
-For testing OAuth locally with the Supabase CLI see the [local development docs](/docs/guides/local-development).
+For testing OAuth locally with the Supabase CLI see the [local development docs](../../../local-development/index.md).
 
 ## Create a LinkedIn OAuth app[#](#create-a-linkedin-oauth-app)
 
@@ -93,7 +93,7 @@ You can also configure the LinkedIn (OIDC) auth provider using the Management AP
 
 Make sure you're using the right `supabase` client in the following code.
 
-If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](/docs/guides/auth/server-side/creating-a-client) for instructions on creating your Supabase client.
+If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](../../server-side/creating-a-client/index.md) for instructions on creating your Supabase client.
 
 When your user signs in, call [`signInWithOAuth()`](/docs/reference/javascript/auth-signinwithoauth) with `linkedin_oidc` as the `provider`:
 
@@ -101,7 +101,7 @@ When your user signs in, call [`signInWithOAuth()`](/docs/reference/javascript/a
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6async function signInWithLinkedIn() {7  const { data, error } = await supabase.auth.signInWithOAuth({8    provider: 'linkedin_oidc',9  })10}
 ```
 
-For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](/docs/guides/auth/redirect-urls).
+For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](../../redirect-urls/index.md).
 
 In the browser, `signInWithOAuth` automatically redirects to the OAuth provider's authentication endpoint, which then redirects to your endpoint.
 
@@ -127,7 +127,7 @@ When your user signs out, call [signOut()](/docs/reference/javascript/auth-signo
 
 ## LinkedIn Open ID Connect (OIDC)[#](#linkedin-open-id-connect-oidc)
 
-We will be replacing the _LinkedIn_ provider with a new _LinkedIn (OIDC)_ provider to support recent changes to the LinkedIn [OAuth APIs](https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin%2Fcontext&tabs=HTTPS1). The new provider utilizes the [Open ID Connect standard](https://learn.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/sign-in-with-linkedin-v2#validating-id-tokens). In view of this change, we have disabled edits on the _LinkedIn_ provider and will be removing it effective 4th January 2024. Developers with LinkedIn OAuth Applications created prior to 1st August 2023 should create a new OAuth application [via the steps outlined above](/docs/guides/auth/social-login/auth-linkedin#create-a-linkedin-oauth-app) and migrate their credentials from the _LinkedIn_ provider to the _LinkedIn (OIDC)_ provider. Alternatively, you can also head to the `Products` section and add the newly release`Sign In with LinkedIn using OpenID Connect` to your existing OAuth application.
+We will be replacing the _LinkedIn_ provider with a new _LinkedIn (OIDC)_ provider to support recent changes to the LinkedIn [OAuth APIs](https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin%2Fcontext&tabs=HTTPS1). The new provider utilizes the [Open ID Connect standard](https://learn.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/sign-in-with-linkedin-v2#validating-id-tokens). In view of this change, we have disabled edits on the _LinkedIn_ provider and will be removing it effective 4th January 2024. Developers with LinkedIn OAuth Applications created prior to 1st August 2023 should create a new OAuth application [via the steps outlined above](index.md#create-a-linkedin-oauth-app) and migrate their credentials from the _LinkedIn_ provider to the _LinkedIn (OIDC)_ provider. Alternatively, you can also head to the `Products` section and add the newly release`Sign In with LinkedIn using OpenID Connect` to your existing OAuth application.
 
 Developers using the Supabase CLI to test their LinkedIn OAuth application should also update their `config.toml` to make use of the new provider:
 

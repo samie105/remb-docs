@@ -10,8 +10,8 @@ content_hash: "d6393275c5d4713f5e76a2359340dba6bf27a22a5c9d31981d2696934caf1dbf"
 menu_path: ["Adding custom styles"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../colors/index.md", "title": "Colors"}
-nav_next: {"path": "../detecting-classes-in-source-files/index.md", "title": "Detecting classes in source files"}
+nav_prev: {"path": "tailwind/docs/colors/index.md", "title": "Colors"}
+nav_next: {"path": "tailwind/docs/detecting-classes-in-source-files/index.md", "title": "Detecting classes in source files"}
 ---
 
 Best practices for adding your own custom styles in Tailwind projects.

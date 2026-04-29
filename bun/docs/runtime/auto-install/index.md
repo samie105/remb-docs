@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:36.457Z"
 content_hash: "7cc35998886c1993e709589f6221e03ee572674089cd2417c28fda9617e6b057"
 menu_path: ["Auto-install"]
 section_path: []
-nav_prev: {"path": "../archive/index.md", "title": "Archive"}
-nav_next: {"path": "../binary-data/index.md", "title": "Binary Data"}
+nav_prev: {"path": "bun/docs/runtime/archive/index.md", "title": "Archive"}
+nav_next: {"path": "bun/docs/runtime/binary-data/index.md", "title": "Binary Data"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../binary-data/index.md", "title": "Binary Data"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
-If no `node_modules` directory is found in the working directory or higher, Bun will abandon Node.js-style module resolution in favor of the **Bun module resolution algorithm**. Under Bun-style module resolution, all imported packages are auto-installed on the fly into a [global module cache](/docs/pm/global-cache) during execution (the same cache used by [`bun install`](/docs/pm/cli/install)).
+If no `node_modules` directory is found in the working directory or higher, Bun will abandon Node.js-style module resolution in favor of the **Bun module resolution algorithm**. Under Bun-style module resolution, all imported packages are auto-installed on the fly into a [global module cache](../../pm/global-cache/index.md) during execution (the same cache used by [`bun install`](../../pm/cli/install/index.md)).
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)index.ts
 
@@ -173,10 +173,10 @@ JSX
 
 Previous
 
-](/docs/runtime/jsx)[
+](../jsx/index.md)[
 
 Plugins
 
 Next
 
-](/docs/runtime/plugins)
+](../plugins/index.md)

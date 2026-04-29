@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:19.818Z"
 content_hash: "0a41218ca7d5912df3917cca96fe55018291cfc6bce1bbcc4aa590cf7ff16b1a"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Anonymous Sign-Ins","Anonymous Sign-Ins"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Anonymous Sign-Ins","Anonymous Sign-Ins"]
-nav_prev: {"path": "../audit-logs/index.md", "title": "Auth Audit Logs"}
-nav_next: {"path": "../auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
+nav_prev: {"path": "supabase/docs/guides/auth/audit-logs/index.md", "title": "Auth Audit Logs"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-captcha/index.md", "title": "Enable CAPTCHA Protection"}
 ---
 
 # 
@@ -61,7 +61,7 @@ Call the [`signInAnonymously()`](/docs/reference/javascript/auth-signinanonymous
 
 ## Convert an anonymous user to a permanent user[#](#convert-an-anonymous-user-to-a-permanent-user)
 
-Converting an anonymous user to a permanent user requires [linking an identity](/docs/guides/auth/auth-identity-linking#manual-linking-beta) to the user. This requires you to [enable manual linking](/dashboard/project/_/auth/providers) in your Supabase project.
+Converting an anonymous user to a permanent user requires [linking an identity](../auth-identity-linking/index.md#manual-linking-beta) to the user. This requires you to [enable manual linking](/dashboard/project/_/auth/providers) in your Supabase project.
 
 ### Link an email / phone identity[#](#link-an-email--phone-identity)
 
@@ -109,7 +109,7 @@ In some cases, you may need to link an anonymous user to an existing account rat
 
 ## Abuse prevention and rate limits[#](#abuse-prevention-and-rate-limits)
 
-Since anonymous users are stored in your database, bad actors can abuse the endpoint to increase your database size drastically. It is strongly recommended to [enable invisible CAPTCHA or Cloudflare Turnstile](/docs/guides/auth/auth-captcha) to prevent abuse for anonymous sign-ins. An IP-based rate limit is enforced at 30 requests per hour which can be modified in your [dashboard](/dashboard/project/_/auth/rate-limits). You can refer to the full list of rate limits [here](/docs/guides/platform/going-into-prod#rate-limiting-resource-allocation--abuse-prevention).
+Since anonymous users are stored in your database, bad actors can abuse the endpoint to increase your database size drastically. It is strongly recommended to [enable invisible CAPTCHA or Cloudflare Turnstile](../auth-captcha/index.md) to prevent abuse for anonymous sign-ins. An IP-based rate limit is enforced at 30 requests per hour which can be modified in your [dashboard](/dashboard/project/_/auth/rate-limits). You can refer to the full list of rate limits [here](/docs/guides/platform/going-into-prod#rate-limiting-resource-allocation--abuse-prevention).
 
 ## Automatic cleanup[#](#automatic-cleanup)
 

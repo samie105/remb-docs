@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:41.766Z"
 content_hash: "3096dba06372943474563eaabcc00ae000493fb345407c70591bbefc472cf1c8"
 menu_path: ["PostgreSQL: Documentation: 18: 42.11. PL/Tcl Configuration"]
 section_path: []
-nav_prev: {"path": "../plpython-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.5.\u00a0Trigger Functions"}
-nav_next: {"path": "../pltcl-global.html/index.md", "title": "PostgreSQL: Documentation: 18: 42.4.\u00a0Global Data in PL/Tcl"}
+nav_prev: {"path": "postgres/docs/current/plpython-trigger.html/index.md", "title": "PostgreSQL: Documentation: 18: 44.5.\u00a0Trigger Functions"}
+nav_next: {"path": "postgres/docs/current/pltcl-global.html/index.md", "title": "PostgreSQL: Documentation: 18: 42.4.\u00a0Global Data in PL/Tcl"}
 ---
 
 This section lists configuration parameters that affect PL/Tcl.

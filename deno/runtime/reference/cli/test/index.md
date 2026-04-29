@@ -10,8 +10,8 @@ content_hash: "2eafd70fa34afb152404b851f3df8d385bcca74400c507b5b1c5ce6b34dae903"
 menu_path: ["deno test"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../task/index.md", "title": "deno task"}
-nav_next: {"path": "../types/index.md", "title": "deno types"}
+nav_prev: {"path": "deno/runtime/reference/cli/task/index.md", "title": "deno task"}
+nav_next: {"path": "deno/runtime/reference/cli/types/index.md", "title": "deno types"}
 ---
 
 **On this page**
@@ -32,7 +32,7 @@ nav_next: {"path": "../types/index.md", "title": "deno types"}
 -   [Testing options](#testing-options)
 -   [File watching options](#file-watching-options)
 
-Deno ships with a built-in test runner using the [`Deno.test()`](/api/deno/~/Deno.test) API. To learn how to write tests, see the [Testing fundamentals](/runtime/fundamentals/testing/) guide. For assertions, see [`@std/assert`](/runtime/reference/std/assert/) and [`@std/expect`](/runtime/reference/std/expect/).
+Deno ships with a built-in test runner using the [`Deno.test()`](/api/deno/~/Deno.test) API. To learn how to write tests, see the [Testing fundamentals](../../../fundamentals/testing/index.md) guide. For assertions, see [`@std/assert`](../../std/assert/index.md) and [`@std/expect`](../../std/expect/index.md).
 
 ## Running tests
 
@@ -79,7 +79,7 @@ deno test --no-check
 
 ## Permissions
 
-Tests run with the same [permission model](/runtime/fundamentals/security/) as `deno run`. Grant permissions for your test suite:
+Tests run with the same [permission model](../../../fundamentals/security/index.md) as `deno run`. Grant permissions for your test suite:
 
 \>\_
 
@@ -125,7 +125,7 @@ Collect coverage data and generate a report:
 deno test --coverage
 ```
 
-This writes raw coverage data to a `coverage/` directory. To generate a summary from existing coverage data, use [`deno coverage`](/runtime/reference/cli/coverage/):
+This writes raw coverage data to a `coverage/` directory. To generate a summary from existing coverage data, use [`deno coverage`](../coverage/index.md):
 
 \>\_
 
@@ -190,7 +190,7 @@ Evaluate code blocks in JSDoc and Markdown files as tests:
 deno test --doc
 ```
 
-See [Testing code in docs](/runtime/reference/documentation/) for details.
+See [Testing code in docs](../../documentation/index.md) for details.
 
 Command line usage:
 

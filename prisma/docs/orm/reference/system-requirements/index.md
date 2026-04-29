@@ -10,8 +10,8 @@ content_hash: "93fd7da363e638a2b76e74e27555b3398961f411a29b10cc8ce1584372ba7e6c"
 menu_path: ["System requirements"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../supported-databases/index.md", "title": "Supported databases"}
-nav_next: {"path": "../error-reference/index.md", "title": "Error Reference"}
+nav_prev: {"path": "prisma/docs/orm/reference/supported-databases/index.md", "title": "Supported databases"}
+nav_next: {"path": "prisma/docs/orm/reference/error-reference/index.md", "title": "Error Reference"}
 ---
 
 System requirements for running Prisma ORM

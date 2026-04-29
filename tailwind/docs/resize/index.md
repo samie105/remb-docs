@@ -10,8 +10,8 @@ content_hash: "6a08953b95456e80de552c304dbd0ca809cf0505ab47257a09c8f47701331cda"
 menu_path: ["resize"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../pointer-events/index.md", "title": "pointer-events"}
-nav_next: {"path": "../scroll-behavior/index.md", "title": "scroll-behavior"}
+nav_prev: {"path": "tailwind/docs/pointer-events/index.md", "title": "pointer-events"}
+nav_next: {"path": "tailwind/docs/scroll-behavior/index.md", "title": "scroll-behavior"}
 ---
 
 # resize
@@ -78,7 +78,7 @@ Prefix a `resize` utility with a breakpoint variant like `md:` to only apply the
 <div class="resize-none md:resize ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

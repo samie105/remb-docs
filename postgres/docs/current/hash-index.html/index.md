@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:27.980Z"
 content_hash: "921df280dafeda6d778b95b979a1cccd851808597a2cfb71cab2e4d55d00de6d"
 menu_path: ["PostgreSQL: Documentation: 18: 65.6. Hash Indexes"]
 section_path: []
-nav_prev: {"path": "../gssapi-enc.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.10.\u00a0Secure TCP/IP Connections with GSSAPI Encryption"}
-nav_next: {"path": "../index-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.2.\u00a0Index Access Method Functions"}
+nav_prev: {"path": "postgres/docs/current/gssapi-enc.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.10.\u00a0Secure TCP/IP Connections with GSSAPI Encryption"}
+nav_next: {"path": "postgres/docs/current/index-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 63.2.\u00a0Index Access Method Functions"}
 ---
 
 ### 65.6.1. Overview [#](#HASH-INTRO)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:38.265Z"
 content_hash: "808e917f24215dc381fca492f1d81733f05d7a740c50a01416bec1b515554b94"
 menu_path: ["Migrating from Docusaurus"]
 section_path: []
-nav_prev: {"path": "../from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
-nav_next: {"path": "../from-eleventy/index.md", "title": "Migrating from Eleventy"}
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-eleventy/index.md", "title": "Migrating from Eleventy"}
 ---
 
 # Migrating from Docusaurus
@@ -23,17 +23,17 @@ nav_next: {"path": "../from-eleventy/index.md", "title": "Migrating from Elevent
 
 Docusaurus and Astro share some similarities that will help you migrate your project:
 
-*   Both Astro and Docusaurus are modern, JavaScript-based (Jamstack) site builders intended for [content-driven websites](/en/concepts/why-astro/#content-driven), like documentation sites.
+*   Both Astro and Docusaurus are modern, JavaScript-based (Jamstack) site builders intended for [content-driven websites](../../../concepts/why-astro/index.md#content-driven), like documentation sites.
     
-*   Both Astro and Docusaurus support [MDX pages](/en/guides/markdown-content/). You should be able to use your existing `.mdx` files with Astro.
+*   Both Astro and Docusaurus support [MDX pages](../../markdown-content/index.md). You should be able to use your existing `.mdx` files with Astro.
     
-*   Both Astro and Docusaurus use [file-based routing](/en/guides/routing/) to generate page routes automatically for any MDX file located in `src/pages`. Using Astro’s file structure for your existing content and when adding new pages should feel familiar.
+*   Both Astro and Docusaurus use [file-based routing](../../routing/index.md) to generate page routes automatically for any MDX file located in `src/pages`. Using Astro’s file structure for your existing content and when adding new pages should feel familiar.
     
-*   Astro has an [official integration for using React components](/en/guides/integrations-guide/react/). Note that in Astro, React files **must** have a `.jsx` or `.tsx` extension.
+*   Astro has an [official integration for using React components](../../integrations-guide/react/index.md). Note that in Astro, React files **must** have a `.jsx` or `.tsx` extension.
     
-*   Astro supports [installing NPM packages](/en/guides/imports/#npm-packages), including several for React. You may be able to keep some or all of your existing React components and dependencies.
+*   Astro supports [installing NPM packages](../../imports/index.md#npm-packages), including several for React. You may be able to keep some or all of your existing React components and dependencies.
     
-*   [Astro’s JSX-like syntax](/en/basics/astro-components/#the-component-template) should feel familiar if you are used to writing React.
+*   [Astro’s JSX-like syntax](../../../basics/astro-components/index.md#the-component-template) should feel familiar if you are used to writing React.
     
 
 ## Key Differences between Docusaurus and Astro
@@ -42,11 +42,11 @@ Docusaurus and Astro share some similarities that will help you migrate your pro
 
 When you rebuild your Docusaurus site in Astro, you will notice some important differences:
 
-*   Docusaurus is a React-based single-page application (SPA). Astro sites are multi-page apps built using [`.astro` components](/en/basics/astro-components/), but can also support [React, Preact, Vue.js, Svelte, SolidJS, AlpineJS](/en/guides/framework-components/) and raw HTML templating.
+*   Docusaurus is a React-based single-page application (SPA). Astro sites are multi-page apps built using [`.astro` components](../../../basics/astro-components/index.md), but can also support [React, Preact, Vue.js, Svelte, SolidJS, AlpineJS](../../framework-components/index.md) and raw HTML templating.
     
 *   Docusaurus was designed to build documentation websites and has some built-in, documentation-specific website features that you would have to build yourself in Astro. Instead, Astro offers some of these features through [Starlight: an official docs theme](https://starlight.astro.build). This website was the inspiration for Starlight, and now runs on it! You can also find more [community docs themes](https://astro.build/themes?search=&categories%5B%5D=docs) with built-in features in our Themes Showcase.
     
-*   Docusaurus sites use MDX pages for content. Astro’s docs theme uses Markdown (`.md`) files by default and does not require you to use MDX. You can optionally [install Astro’s MDX integration](/en/guides/integrations-guide/mdx/) (included in our Starlight theme by default) and use `.mdx` files in addition to standard Markdown files.
+*   Docusaurus sites use MDX pages for content. Astro’s docs theme uses Markdown (`.md`) files by default and does not require you to use MDX. You can optionally [install Astro’s MDX integration](../../integrations-guide/mdx/index.md) (included in our Starlight theme by default) and use `.mdx` files in addition to standard Markdown files.
     
 
 ## Switch from Docusaurus to Astro
@@ -55,7 +55,7 @@ When you rebuild your Docusaurus site in Astro, you will notice some important d
 
 To convert a Docusaurus documentation site to Astro, start with our official [Starlight docs theme starter template](https://starlight.astro.build), or explore more community docs themes in our [theme showcase](https://astro.build/themes?search=&categories%5B%5D=docs).
 
-You can pass a `--template` argument to the `create astro` command to start a new Astro project with one of our official starters. Or, you can [start a new project from any existing Astro repository on GitHub](/en/install-and-setup/#install-from-the-cli-wizard).
+You can pass a `--template` argument to the `create astro` command to start a new Astro project with one of our official starters. Or, you can [start a new project from any existing Astro repository on GitHub](../../../install-and-setup/index.md#install-from-the-cli-wizard).
 
 *   [npm](#tab-panel-1801)
 *   [pnpm](#tab-panel-1802)
@@ -79,59 +79,59 @@ You can find Astro’s docs starter, and other official templates, on [astro.new
 
 *   ![](/logos/create-react-app.svg)
     
-    ### [Create React App](/en/guides/migrate-to-astro/from-create-react-app/)
+    ### [Create React App](../from-create-react-app/index.md)
     
 *   ![](/logos/docusaurus.svg)
     
-    ### [Docusaurus](/en/guides/migrate-to-astro/from-docusaurus/)
+    ### [Docusaurus](index.md)
     
 *   ![](/logos/eleventy.svg)
     
-    ### [Eleventy](/en/guides/migrate-to-astro/from-eleventy/)
+    ### [Eleventy](../from-eleventy/index.md)
     
 *   ![](/logos/gatsby.svg)
     
-    ### [Gatsby](/en/guides/migrate-to-astro/from-gatsby/)
+    ### [Gatsby](../from-gatsby/index.md)
     
 *   ![](/logos/gitbook.svg)
     
-    ### [GitBook](/en/guides/migrate-to-astro/from-gitbook/)
+    ### [GitBook](../from-gitbook/index.md)
     
 *   ![](/logos/gridsome.svg)
     
-    ### [Gridsome](/en/guides/migrate-to-astro/from-gridsome/)
+    ### [Gridsome](../from-gridsome/index.md)
     
 *   ![](/logos/hugo.svg)
     
-    ### [Hugo](/en/guides/migrate-to-astro/from-hugo/)
+    ### [Hugo](../from-hugo/index.md)
     
 *   ![](/logos/jekyll.png)
     
-    ### [Jekyll](/en/guides/migrate-to-astro/from-jekyll/)
+    ### [Jekyll](../from-jekyll/index.md)
     
 *   ![](/logos/nextjs.svg)
     
-    ### [Next.js](/en/guides/migrate-to-astro/from-nextjs/)
+    ### [Next.js](../from-nextjs/index.md)
     
 *   ![](/logos/nuxtjs.svg)
     
-    ### [NuxtJS](/en/guides/migrate-to-astro/from-nuxtjs/)
+    ### [NuxtJS](../from-nuxtjs/index.md)
     
 *   ![](/logos/pelican.svg)
     
-    ### [Pelican](/en/guides/migrate-to-astro/from-pelican/)
+    ### [Pelican](../from-pelican/index.md)
     
 *   ![](/logos/sveltekit.svg)
     
-    ### [SvelteKit](/en/guides/migrate-to-astro/from-sveltekit/)
+    ### [SvelteKit](../from-sveltekit/index.md)
     
 *   ![](/logos/vuepress.png)
     
-    ### [VuePress](/en/guides/migrate-to-astro/from-vuepress/)
+    ### [VuePress](../from-vuepress/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [WordPress](/en/guides/migrate-to-astro/from-wordpress/)
+    ### [WordPress](../from-wordpress/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

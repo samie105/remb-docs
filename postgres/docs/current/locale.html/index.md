@@ -10,8 +10,8 @@ content_hash: "5b245195ca30ae319d4b9dee787e085950c557c31cc77126fe0d84a7509e8834"
 menu_path: ["PostgreSQL: Documentation: 18: 23.1. Locale Support"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../lo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.21.\u00a0lo \u2014 manage large objects"}
-nav_next: {"path": "../locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
+nav_prev: {"path": "postgres/docs/current/lo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.21.\u00a0lo \u2014 manage large objects"}
+nav_next: {"path": "postgres/docs/current/locking-indexes.html/index.md", "title": "PostgreSQL: Documentation: 18: 13.7.\u00a0Locking and Indexes"}
 ---
 
 _Locale_ support refers to an application respecting cultural preferences regarding alphabets, sorting, number formatting, etc. PostgreSQL uses the standard ISO C and POSIX locale facilities provided by the server operating system. For additional information refer to the documentation of your system.

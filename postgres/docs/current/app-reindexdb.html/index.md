@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:03.138Z"
 content_hash: "2dc600c3cc2f8e3b9f4176207aa44bec7aa4564d802aa4a300052c35cea82357"
 menu_path: ["PostgreSQL: Documentation: 18: reindexdb"]
 section_path: []
-nav_prev: {"path": "../app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
-nav_next: {"path": "../app-vacuumdb.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumdb"}
+nav_prev: {"path": "postgres/docs/current/app-psql.html/index.md", "title": "PostgreSQL: Documentation: 18: psql"}
+nav_next: {"path": "postgres/docs/current/app-vacuumdb.html/index.md", "title": "PostgreSQL: Documentation: 18: vacuumdb"}
 ---
 
 reindexdb — reindex a PostgreSQL database

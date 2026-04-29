@@ -11,21 +11,21 @@ menu_path: ["Dynamic Routes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../pages-and-layouts/index.md", "title": "Pages and Layouts"}
-nav_next: {"path": "../linking-and-navigating/index.md", "title": "Linking and Navigating"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/pages-and-layouts/index.md", "title": "Pages and Layouts"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/linking-and-navigating/index.md", "title": "Linking and Navigating"}
 ---
 
 # Dynamic Routes
 
 Last updated April 23, 2026
 
-When you don't know the exact segment names ahead of time and want to create routes from dynamic data, you can use Dynamic Segments that are filled in at request time or [prerendered](/docs/pages/building-your-application/data-fetching/get-static-paths) at build time.
+When you don't know the exact segment names ahead of time and want to create routes from dynamic data, you can use Dynamic Segments that are filled in at request time or [prerendered](../../data-fetching/get-static-paths/index.md) at build time.
 
 ## Convention[](#convention)
 
 A Dynamic Segment can be created by wrapping a file or folder name in square brackets: `[segmentName]`. For example, `[id]` or `[slug]`.
 
-Dynamic Segments can be accessed from [`useRouter`](/docs/pages/api-reference/functions/use-router).
+Dynamic Segments can be accessed from [`useRouter`](../../../api-reference/functions/use-router/index.md).
 
 ## Example[](#example)
 
@@ -83,12 +83,12 @@ For more information on what to do next, we recommend the following sections
 
 Learn how navigation works in Next.js, and how to use the Link Component and \`useRouter\` hook.
 
-](/docs/pages/building-your-application/routing/linking-and-navigating)[
+](../linking-and-navigating/index.md)[
 
 ### useRouter
 
 Learn more about the API of the Next.js Router, and access the router instance in your page with the useRouter hook.
 
-](/docs/pages/api-reference/functions/use-router)
+](../../../api-reference/functions/use-router/index.md)
 
 Was this helpful?

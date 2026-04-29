@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:37.444Z"
 content_hash: "a475af2f17207ed0405a84dcd1106f86b7b6e5a8d2d562f381543571c3b4c038"
 menu_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Legacy JWT secret","Legacy JWT secret"]
 section_path: ["Edge Functions","Edge Functions","More","More","More","Supabase Auth","Supabase Auth","Legacy JWT secret","Legacy JWT secret"]
-nav_prev: {"path": "../auth/index.md", "title": "Securing Edge Functions"}
-nav_next: {"path": "../background-tasks/index.md", "title": "Background Tasks"}
+nav_prev: {"path": "supabase/docs/guides/functions/auth/index.md", "title": "Securing Edge Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/background-tasks/index.md", "title": "Background Tasks"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Integrate Supabase Auth with Edge Functions
 
 * * *
 
-Edge Functions work with [Supabase Auth](/docs/guides/auth).
+Edge Functions work with [Supabase Auth](../../auth/index.md).
 
 This allows you to:
 
@@ -55,7 +55,7 @@ By getting the JWT from the `Authorization` header, you can provide the token to
 
 ## Row Level Security[#](#row-level-security)
 
-After initializing a Supabase client with the Auth context, all queries will be executed with the context of the user. For database queries, this means [Row Level Security](/docs/guides/database/postgres/row-level-security) will be enforced.
+After initializing a Supabase client with the Auth context, all queries will be executed with the context of the user. For database queries, this means [Row Level Security](../../database/postgres/row-level-security/index.md) will be enforced.
 
 ```
 1import { createClient } from 'npm:@supabase/supabase-js@2'23Deno.serve(async (req: Request) => {4  // ...5  // This query respects RLS - users only see rows they have access to6  const { data, error } = await supabaseClient.from('profiles').select('*');78  if (error) {9    return new Response('Database error', { status: 500 })10  }1112  // ...13})

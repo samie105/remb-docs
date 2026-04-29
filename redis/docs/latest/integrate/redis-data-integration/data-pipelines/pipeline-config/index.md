@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:55:49.112Z"
 content_hash: "96e98037d8699f54eae4d6b9d85d0d075b1fd1a0419485f7623d596993090502"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Pipeline configuration file","→","Pipeline configuration file"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Pipeline configuration file","→","Pipeline configuration file"]
-nav_prev: {"path": "../../index.md", "title": "Redis Data Integration"}
-nav_next: {"path": "../prepare-dbs/index.md", "title": "Prepare source databases"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/index.md", "title": "Redis Data Integration"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/index.md", "title": "Prepare source databases"}
 ---
 
 # Pipeline configuration file
 
 Learn how to specify the main configuration details for an RDI pipeline.
 
-The main configuration details for an RDI pipeline are in the `config.yaml` file. This file specifies the connection details for the source and target databases, and also the set of tables you want to capture. You can also add one or more [job files](/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/) if you want to apply custom transformations to the captured data.
+The main configuration details for an RDI pipeline are in the `config.yaml` file. This file specifies the connection details for the source and target databases, and also the set of tables you want to capture. You can also add one or more [job files](../transform-examples/index.md) if you want to apply custom transformations to the captured data.
 
 ## Example
 
@@ -215,7 +215,7 @@ The `processors` section configures the behavior of the pipeline. The [example](
 
 *   `on_failed_retry_interval`: Number of seconds to wait before retrying a failed operation. The default is 5 seconds.
 *   `read_batch_size`: Maximum number of records to read from the source database. RDI will wait for the batch to fill up to `read_batch_size` or for `duration` to elapse, whichever happens first. The default is 2000.
-*   `target_data_type`: Data type to use in the target Redis database. The options are `hash` for Redis Hash (the default), or `json` for RedisJSON, which is available only if you have added the RedisJSON module to the target database. Note that this setting is mainly useful when you don't provide any custom jobs. When you do provide jobs, you can specify the target data type in each job individually and choose from a wider range of data types. See [Job files](/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/) (which requires the RedisJSON module) for more information.
+*   `target_data_type`: Data type to use in the target Redis database. The options are `hash` for Redis Hash (the default), or `json` for RedisJSON, which is available only if you have added the RedisJSON module to the target database. Note that this setting is mainly useful when you don't provide any custom jobs. When you do provide jobs, you can specify the target data type in each job individually and choose from a wider range of data types. See [Job files](../transform-examples/index.md) (which requires the RedisJSON module) for more information.
 *   `duration`: Time (in ms) after which data will be read from the stream even if `read_batch_size` was not reached. The default is 100 ms.
 *   `write_batch_size`: The batch size for writing data to the target Redis database. This should be less than or equal to the `read_batch_size`. The default is 200.
 *   `dedup`: Boolean value to enable the deduplication mechanism. The default is `false`.

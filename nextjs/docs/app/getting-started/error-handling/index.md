@@ -11,8 +11,8 @@ menu_path: ["Error Handling"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../revalidating/index.md", "title": "Revalidating"}
-nav_next: {"path": "../css/index.md", "title": "CSS"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/revalidating/index.md", "title": "Revalidating"}
+nav_next: {"path": "nextjs/docs/app/getting-started/css/index.md", "title": "CSS"}
 ---
 
 # Error Handling
@@ -23,7 +23,7 @@ Errors can be divided into two categories: [expected errors](#handling-expected-
 
 ## Handling expected errors[](#handling-expected-errors)
 
-Expected errors are those that can occur during the normal operation of the application, such as those from [server-side form validation](/docs/app/guides/forms) or failed requests. These errors should be handled explicitly and returned to the client.
+Expected errors are those that can occur during the normal operation of the application, such as those from [server-side form validation](../../guides/forms/index.md) or failed requests. These errors should be handled explicitly and returned to the client.
 
 ### Server Functions[](#server-functions)
 
@@ -88,7 +88,7 @@ export function Form() {
 
 ### Server Components[](#server-components)
 
-When fetching data inside of a Server Component, you can use the response to conditionally render an error message or [`redirect`](/docs/app/api-reference/functions/redirect).
+When fetching data inside of a Server Component, you can use the response to conditionally render an error message or [`redirect`](../../api-reference/functions/redirect/index.md).
 
 app/page.tsx
 
@@ -109,7 +109,7 @@ export default async function Page() {
 
 ### Not found[](#not-found)
 
-You can call the [`notFound`](/docs/app/api-reference/functions/not-found) function within a route segment and use the [`not-found.js`](/docs/app/api-reference/file-conventions/not-found) file to show a 404 UI.
+You can call the [`notFound`](../../api-reference/functions/not-found/index.md) function within a route segment and use the [`not-found.js`](../../api-reference/file-conventions/not-found/index.md) file to show a 404 UI.
 
 app/blog/\[slug\]/page.tsx
 
@@ -153,7 +153,7 @@ Uncaught exceptions are unexpected errors that indicate bugs or issues that shou
 
 Next.js uses error boundaries to handle uncaught exceptions. Error boundaries catch errors in their child components and display a fallback UI instead of the component tree that crashed.
 
-Create an error boundary by adding an [`error.js`](/docs/app/api-reference/file-conventions/error) file inside a route segment and exporting a React component:
+Create an error boundary by adding an [`error.js`](../../api-reference/file-conventions/error/index.md) file inside a route segment and exporting a React component:
 
 app/dashboard/error.tsx
 
@@ -192,11 +192,11 @@ export default function ErrorPage({
 }
 ```
 
-Errors will bubble up to the nearest parent error boundary. This allows for granular error handling by placing `error.tsx` files at different levels in the [route hierarchy](/docs/app/getting-started/project-structure#component-hierarchy).
+Errors will bubble up to the nearest parent error boundary. This allows for granular error handling by placing `error.tsx` files at different levels in the [route hierarchy](../project-structure/index.md#component-hierarchy).
 
 ![Nested Error Component Hierarchy](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/nested-error-component-hierarchy.png)
 
-For component-level error recovery, the [`unstable_catchError`](/docs/app/api-reference/functions/catchError) function lets you create error boundaries that can wrap any part of your component tree:
+For component-level error recovery, the [`unstable_catchError`](../../api-reference/functions/catchError/index.md) function lets you create error boundaries that can wrap any part of your component tree:
 
 app/custom-error-boundary.tsx
 
@@ -297,7 +297,7 @@ export function Button() {
 
 ### Global errors[](#global-errors)
 
-While less common, you can handle errors in the root layout using the [`global-error.js`](/docs/app/api-reference/file-conventions/error#global-error) file, located in the root app directory, even when leveraging [internationalization](/docs/app/guides/internationalization). Global error UI must define its own `<html>` and `<body>` tags, since it is replacing the root layout or template when active.
+While less common, you can handle errors in the root layout using the [`global-error.js`](../../api-reference/file-conventions/error/index.md#global-error) file, located in the root app directory, even when leveraging [internationalization](../../guides/internationalization/index.md). Global error UI must define its own `<html>` and `<body>` tags, since it is replacing the root layout or template when active.
 
 app/global-error.tsx
 
@@ -335,30 +335,30 @@ Learn more about the features mentioned in this page by reading the API Referenc
 
 API Reference for the redirect function.
 
-](/docs/app/api-reference/functions/redirect)[
+](../../api-reference/functions/redirect/index.md)[
 
 ### error.js
 
 API reference for the error.js special file.
 
-](/docs/app/api-reference/file-conventions/error)[
+](../../api-reference/file-conventions/error/index.md)[
 
 ### unstable\_catchError
 
 API Reference for the unstable\_catchError function.
 
-](/docs/app/api-reference/functions/catchError)[
+](../../api-reference/functions/catchError/index.md)[
 
 ### notFound
 
 API Reference for the notFound function.
 
-](/docs/app/api-reference/functions/not-found)[
+](../../api-reference/functions/not-found/index.md)[
 
 ### not-found.js
 
 API reference for the not-found.js file.
 
-](/docs/app/api-reference/file-conventions/not-found)
+](../../api-reference/file-conventions/not-found/index.md)
 
 Was this helpful?

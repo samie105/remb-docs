@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:09.773Z"
 content_hash: "218a5e8862df1ac968594a3cf46e5016c7e6998a89b346fe097db80190227ff4"
 menu_path: ["Get the absolute path to the current entrypoint"]
 section_path: []
-nav_prev: {"path": "../javascript-uuid/index.md", "title": "Generate a UUID"}
-nav_next: {"path": "../path-to-file-url/index.md", "title": "Convert an absolute path to a file URL"}
+nav_prev: {"path": "bun/docs/guides/util/javascript-uuid/index.md", "title": "Generate a UUID"}
+nav_next: {"path": "bun/docs/guides/util/path-to-file-url/index.md", "title": "Convert an absolute path to a file URL"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../path-to-file-url/index.md", "title": "Convert an absolute
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.main` property contains the absolute path to the current entrypoint.
 
@@ -67,7 +67,7 @@ bun run foo.ts
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -79,10 +79,10 @@ Check if the current file is the entrypoint
 
 Previous
 
-](/docs/guides/util/entrypoint)[
+](../entrypoint/index.md)[
 
 Build an app with Astro and Bun
 
 Next
 
-](/docs/guides/ecosystem/astro)
+](../../ecosystem/astro/index.md)

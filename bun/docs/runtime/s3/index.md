@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:27.661Z"
 content_hash: "f0bf4c1d31e16302058bb73ba898added7985287ec4220ae7e765d5854b0f550"
 menu_path: ["S3"]
 section_path: []
-nav_prev: {"path": "../repl/index.md", "title": "REPL"}
-nav_next: {"path": "../secrets/index.md", "title": "Secrets"}
+nav_prev: {"path": "bun/docs/runtime/repl/index.md", "title": "REPL"}
+nav_next: {"path": "bun/docs/runtime/secrets/index.md", "title": "Secrets"}
 ---
 
 Production servers often read, upload, and write files to S3-compatible object storage services instead of the local filesystem. Historically, that means local filesystem APIs you use in development can’t be used in production. When you use Bun, things are different.

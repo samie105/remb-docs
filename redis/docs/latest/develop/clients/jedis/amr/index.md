@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:02.328Z"
 content_hash: "53c6d93db878d34e1041406aa245c6072e212b808483a9ee5f629c864f4f3daa"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Jedis guide (Java)","→","Jedis guide (Java)","→\n      \n        Connect to Azure Managed Redis","→","Connect to Azure Managed Redis"]
-nav_prev: {"path": "../index.md", "title": "Jedis guide (Java)"}
-nav_next: {"path": "../connect/index.md", "title": "Connect to the server"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/jedis/index.md", "title": "Jedis guide (Java)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/jedis/connect/index.md", "title": "Connect to the server"}
 ---
 
 # Connect to Azure Managed Redis
@@ -23,7 +23,7 @@ See [Use Microsoft Entra for cache authentication](https://learn.microsoft.com/e
 
 ## Install
 
-Install [`jedis`](/docs/latest/develop/clients/jedis/) first, if you have not already done so.
+Install [`jedis`](../index.md) first, if you have not already done so.
 
 If you are using Maven, add the following dependency to your `pom.xml` file:
 
@@ -101,7 +101,7 @@ TokenAuthConfig authConfig = EntraIDTokenAuthConfigBuilder.builder()
 
 ## Connect using `DefaultJedisClientConfig`
 
-When you have created your `TokenAuthConfig` instance, you are ready to connect to AMR. The example below shows how to include the `TokenAuthConfig` details in a `JedisClientConfig` instance and use it with the `RedisClusterClient` connection. The connection uses [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security), which is recommended and enabled by default for managed identities. See [Connect to your production Redis with TLS](/docs/latest/develop/clients/jedis/connect/#connect-to-your-production-redis-with-tls) for more information about TLS connections, including the implementation of the `createSslSocketFactory()` method used in the example.
+When you have created your `TokenAuthConfig` instance, you are ready to connect to AMR. The example below shows how to include the `TokenAuthConfig` details in a `JedisClientConfig` instance and use it with the `RedisClusterClient` connection. The connection uses [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security), which is recommended and enabled by default for managed identities. See [Connect to your production Redis with TLS](../connect/index.md#connect-to-your-production-redis-with-tls) for more information about TLS connections, including the implementation of the `createSslSocketFactory()` method used in the example.
 
 ```java
 TokenAuthConfig authConfig = EntraIDTokenAuthConfigBuilder.builder()

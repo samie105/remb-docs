@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:31:57.688Z"
 content_hash: "8d973d985f0d6dccf1e49e9a15a54e49764c18ef4943f48da9386b23d288f14e"
 menu_path: ["Quickstart"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "tRPC | tRPC"}
-nav_next: {"path": "../skills/index.md", "title": "Agent Skills"}
+nav_prev: {"path": "trpc/docs/index.md", "title": "tRPC | tRPC"}
+nav_next: {"path": "trpc/docs/skills/index.md", "title": "Agent Skills"}
 ---
 
 ## Installation[​](#installation "Direct link to Installation")

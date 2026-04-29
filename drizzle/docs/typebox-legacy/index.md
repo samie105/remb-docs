@@ -10,8 +10,8 @@ content_hash: "26b97007d2bae1f15a5b781fce31ea7fe2b32181c935a18c8b5672b3eb80c356"
 menu_path: ["typebox-legacy"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../arktype/index.md", "title": "arktype"}
-nav_next: {"path": "../effect-schema/index.md", "title": "effect-schema"}
+nav_prev: {"path": "drizzle/docs/arktype/index.md", "title": "arktype"}
+nav_next: {"path": "drizzle/docs/effect-schema/index.md", "title": "effect-schema"}
 ---
 
 WARNING

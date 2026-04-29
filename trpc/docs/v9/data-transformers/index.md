@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:41.945Z"
 content_hash: "fb5b36fac612eab40eca03d9f8b00353f9920540a5610d1213d7c3e303e00ad9"
 menu_path: ["Data Transformers"]
 section_path: []
-nav_prev: {"path": "../cors/index.md", "title": "Send cookies cross-origin"}
-nav_next: {"path": "../error-formatting/index.md", "title": "Error Formatting"}
+nav_prev: {"path": "trpc/docs/v9/cors/index.md", "title": "Send cookies cross-origin"}
+nav_next: {"path": "trpc/docs/v9/error-formatting/index.md", "title": "Error Formatting"}
 ---
 
 You are able to serialize the response data & input args. The transformers need to be added both to the server and the client.

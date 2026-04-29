@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:47.939Z"
 content_hash: "de9528145e0b816cfe753169bfda424af4cb90e4841e9d4f74b7f2b49c0688d8"
 menu_path: ["Get the process uptime in nanoseconds"]
 section_path: []
-nav_prev: {"path": "../ipc/index.md", "title": "Spawn a child process and communicate using IPC"}
-nav_next: {"path": "../os-signals/index.md", "title": "Listen to OS signals"}
+nav_prev: {"path": "bun/docs/guides/process/ipc/index.md", "title": "Spawn a child process and communicate using IPC"}
+nav_next: {"path": "bun/docs/guides/process/os-signals/index.md", "title": "Listen to OS signals"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../os-signals/index.md", "title": "Listen to OS signals"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use `Bun.nanoseconds()` to get the total number of nanoseconds the `bun` process has been alive.
 
@@ -43,7 +43,7 @@ Bun.nanoseconds();
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -55,10 +55,10 @@ Listen to OS signals
 
 Previous
 
-](/docs/guides/process/os-signals)[
+](../os-signals/index.md)[
 
 Run a Shell Command
 
 Next
 
-](/docs/guides/runtime/shell)
+](../../runtime/shell/index.md)

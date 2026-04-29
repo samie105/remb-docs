@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:04.406Z"
 content_hash: "28ae3523c472b663daf49f0604e0fb05f9dd5870675e5dd8564d0b9773727021"
 menu_path: ["PostgreSQL: Documentation: 18: 39.5. Rules and Privileges"]
 section_path: []
-nav_prev: {"path": "../rule-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.4.\u00a0The PostgreSQL Rule System"}
-nav_next: {"path": "../rules-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.6.\u00a0Rules and Command Status"}
+nav_prev: {"path": "postgres/docs/current/rule-system.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.4.\u00a0The PostgreSQL Rule System"}
+nav_next: {"path": "postgres/docs/current/rules-status.html/index.md", "title": "PostgreSQL: Documentation: 18: 39.6.\u00a0Rules and Command Status"}
 ---
 
 Due to rewriting of queries by the PostgreSQL rule system, other tables/views than those used in the original query get accessed. When update rules are used, this can include write access to tables.

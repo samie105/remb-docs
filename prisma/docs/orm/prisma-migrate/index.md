@@ -10,8 +10,8 @@ content_hash: "96e934c1c0b9ea41856e973863c31e8ba7b13f11f2bc609f6b07bb45f5f6f054"
 menu_path: ["Overview of Prisma Migrate"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../prisma-schema/postgresql-extensions/index.md", "title": "PostgreSQL extensions"}
-nav_next: {"path": "getting-started/index.md", "title": "Getting started with Prisma Migrate"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/postgresql-extensions/index.md", "title": "PostgreSQL extensions"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/getting-started/index.md", "title": "Getting started with Prisma Migrate"}
 ---
 
 ## Overview of Prisma Migrate

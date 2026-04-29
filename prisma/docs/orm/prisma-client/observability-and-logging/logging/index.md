@@ -10,8 +10,8 @@ content_hash: "6678736b376f9291b19229b6287559e7b1a132b19a12728d18dcd4032bdc7ac3"
 menu_path: ["Logging"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../deployment/traditional/deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
-nav_next: {"path": "../opentelemetry-tracing/index.md", "title": "OpenTelemetry tracing"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/traditional/deploy-to-sevalla/index.md", "title": "Deploy to Sevalla"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/observability-and-logging/opentelemetry-tracing/index.md", "title": "OpenTelemetry tracing"}
 ---
 
 Observability and Logging

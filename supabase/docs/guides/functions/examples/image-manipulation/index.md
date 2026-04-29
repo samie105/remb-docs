@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:32.711Z"
 content_hash: "5ca1dd14d570bf26e609fead95319c77b5406c8c387e1b8d8378a73dfc3bc200"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Image Transformation & Optimization","Image Transformation & Optimization"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Image Transformation & Optimization","Image Transformation & Optimization"]
-nav_prev: {"path": "../github-actions/index.md", "title": "GitHub Actions"}
-nav_next: {"path": "../mcp-server-mcp-lite/index.md", "title": "Building an MCP Server with mcp-lite"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/github-actions/index.md", "title": "GitHub Actions"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/mcp-server-mcp-lite/index.md", "title": "Building an MCP Server with mcp-lite"}
 ---
 
 # 
@@ -27,7 +27,7 @@ Edge Functions currently doesn't support image processing libraries such as `Sha
 
 ### Prerequisites[#](#prerequisites)
 
-Make sure you have the latest version of the [Supabase CLI](/docs/guides/cli#installation) installed.
+Make sure you have the latest version of the [Supabase CLI](../../../cli/index.md#installation) installed.
 
 ### Create the Edge Function[#](#create-the-edge-function)
 
@@ -73,6 +73,6 @@ Now, let's deploy the function to your Supabase project.
 1supabase link2supabase functions deploy image-blur
 ```
 
-Hosted Edge Functions have [limits](/docs/guides/functions/limits) on memory and CPU usage.
+Hosted Edge Functions have [limits](../../limits/index.md) on memory and CPU usage.
 
 If you try to perform complex image processing or handle large images (> 5MB) your function may return a resource limit exceeded error.

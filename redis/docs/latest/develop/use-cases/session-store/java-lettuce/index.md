@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:04:02.866Z"
 content_hash: "7bba2a727f7f147209912ab0bc88383dcbf0eae84df146cf98f7b8dc6da42658"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Java (Lettuce)","→","Redis session store with Java (Lettuce)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Java (Lettuce)","→","Redis session store with Java (Lettuce)"]
-nav_prev: {"path": "../java-jedis/index.md", "title": "Redis session store with Java and Jedis"}
-nav_next: {"path": "../nodejs/index.md", "title": "Redis session store with node-redis"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/java-jedis/index.md", "title": "Redis session store with Java and Jedis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/nodejs/index.md", "title": "Redis session store with node-redis"}
 ---
 
 # Redis session store with Java (Lettuce)
 
 Implement a Redis-backed session store in Java with Lettuce
 
-This guide shows you how to implement a Redis-backed session store in Java with [`Lettuce`](/docs/latest/develop/clients/lettuce/). It includes both asynchronous and reactive store APIs, plus a small local demo server built on Java's built-in `HttpServer`.
+This guide shows you how to implement a Redis-backed session store in Java with [`Lettuce`](../../../clients/lettuce/index.md). It includes both asynchronous and reactive store APIs, plus a small local demo server built on Java's built-in `HttpServer`.
 
 ## Overview
 
@@ -38,7 +38,7 @@ For Lettuce, we generally show asynchronous and reactive APIs rather than a sync
 
 *   Async with `RedisAsyncCommands` works well for standard Java applications using `CompletableFuture`
 *   Reactive with `RedisReactiveCommands` is a good fit when you are already using Reactor
-*   For synchronous Java session-store examples, we recommend [Jedis](/docs/latest/develop/use-cases/session-store/java-jedis/)
+*   For synchronous Java session-store examples, we recommend [Jedis](../java-jedis/index.md)
 
 ## How it works
 
@@ -277,8 +277,8 @@ You now have Redis-backed session examples in Java using both Jedis and Lettuce.
 
 For more Redis data modeling patterns, see:
 
-*   [Session store overview](/docs/latest/develop/use-cases/session-store/)
-*   [Lettuce guide](/docs/latest/develop/clients/lettuce/)
-*   [Jedis session store](/docs/latest/develop/use-cases/session-store/java-jedis/)
+*   [Session store overview](../index.md)
+*   [Lettuce guide](../../../clients/lettuce/index.md)
+*   [Jedis session store](../java-jedis/index.md)
 
 ## On this page

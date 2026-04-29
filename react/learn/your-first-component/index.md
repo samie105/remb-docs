@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:14.262Z"
 content_hash: "aa3245882d0e50eb4db04219dd398a29e9302baa83f546cf2967c3ab14fb1b71"
 menu_path: ["Your First Component"]
 section_path: []
-nav_prev: {"path": "../describing-the-ui/index.md", "title": "Describing the UI"}
-nav_next: {"path": "../importing-and-exporting-components/index.md", "title": "Importing and Exporting Components"}
+nav_prev: {"path": "react/learn/describing-the-ui/index.md", "title": "Describing the UI"}
+nav_next: {"path": "react/learn/importing-and-exporting-components/index.md", "title": "Importing and Exporting Components"}
 ---
 
 _Components_ are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI), which makes them the perfect place to start your React journey!

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:45.115Z"
 content_hash: "f16216d322f3e3007f5a4b077ff5eda4316998c7913ec599a0ba8c4553f67b4b"
 menu_path: ["Middleware ​"]
 section_path: []
-nav_prev: {"path": "../create-hono/index.md", "title": "Create-hono \u200b"}
-nav_next: {"path": "../helpers/index.md", "title": "Helpers \u200b"}
+nav_prev: {"path": "hono/docs/guides/create-hono/index.md", "title": "Create-hono \u200b"}
+nav_next: {"path": "hono/docs/guides/helpers/index.md", "title": "Helpers \u200b"}
 ---
 
 ## Middleware [​](#middleware)

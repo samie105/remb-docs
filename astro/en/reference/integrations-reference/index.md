@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:47:34.761Z"
 content_hash: "5185462849e86022ac939f4bd7b9881e1fd9505d172dbcaf347cb21b21b73a90"
 menu_path: ["Astro Integration API"]
 section_path: []
-nav_prev: {"path": "../modules/astro-zod/index.md", "title": "Zod API Reference"}
-nav_next: {"path": "../adapter-reference/index.md", "title": "Astro Adapter API"}
+nav_prev: {"path": "astro/en/reference/modules/astro-zod/index.md", "title": "Zod API Reference"}
+nav_next: {"path": "astro/en/reference/adapter-reference/index.md", "title": "Astro Adapter API"}
 ---
 
 # Astro Integration API
 
 **Astro Integrations** add new functionality and behaviors for your project with only a few lines of code.
 
-This reference page is for anyone writing their own integration. To learn how to use an integration in your project, check out our [Using Integrations](/en/guides/integrations/) guide instead.
+This reference page is for anyone writing their own integration. To learn how to use an integration in your project, check out our [Using Integrations](../../guides/integrations/index.md) guide instead.
 
 ## Examples
 
@@ -25,9 +25,9 @@ This reference page is for anyone writing their own integration. To learn how to
 
 The official Astro integrations can act as reference for you as you go to build your own integrations.
 
-*   **Renderers:** [`svelte`](/en/guides/integrations-guide/svelte/), [`react`](/en/guides/integrations-guide/react/), [`preact`](/en/guides/integrations-guide/preact/), [`vue`](/en/guides/integrations-guide/vue/), [`solid`](/en/guides/integrations-guide/solid-js/)
-*   **Libraries:** [`partytown`](/en/guides/integrations-guide/partytown/)
-*   **Features:** [`sitemap`](/en/guides/integrations-guide/sitemap/)
+*   **Renderers:** [`svelte`](../../guides/integrations-guide/svelte/index.md), [`react`](../../guides/integrations-guide/react/index.md), [`preact`](../../guides/integrations-guide/preact/index.md), [`vue`](../../guides/integrations-guide/vue/index.md), [`solid`](../../guides/integrations-guide/solid-js/index.md)
+*   **Libraries:** [`partytown`](../../guides/integrations-guide/partytown/index.md)
+*   **Features:** [`sitemap`](../../guides/integrations-guide/sitemap/index.md)
 
 ## Quick API Reference
 
@@ -52,9 +52,9 @@ The following hooks are built in to Astro:
 
 **Next hook:** [`astro:route:setup`](#astroroutesetup)
 
-**When:** On initialization, before either the [Vite](https://vite.dev/config/) or [Astro config](/en/reference/configuration-reference/) have resolved.
+**When:** On initialization, before either the [Vite](https://vite.dev/config/) or [Astro config](../configuration-reference/index.md) have resolved.
 
-**Why:** To extend the project config. This includes updating the [Astro config](/en/reference/configuration-reference/), applying [Vite plugins](https://vite.dev/guide/api-plugin.html), adding component renderers, and injecting scripts onto the page.
+**Why:** To extend the project config. This includes updating the [Astro config](../configuration-reference/index.md), applying [Vite plugins](https://vite.dev/guide/api-plugin.html), adding component renderers, and injecting scripts onto the page.
 
 ```
 'astro:config:setup'?: (options: {  config: AstroConfig;  command: 'dev' | 'build' | 'preview' | 'sync';  isRestart: boolean;  updateConfig: (newConfig: DeepPartial<AstroConfig>) => AstroConfig;  addRenderer: (renderer: AstroRenderer) => void;  addClientDirective: (directive: ClientDirectiveConfig) => void;  addMiddleware: (middleware: AstroIntegrationMiddleware) => void;  addDevToolbarApp: (entrypoint: DevToolbarAppEntry) => void;  addWatchFile: (path: URL | string) => void;  injectScript: (stage: InjectedScriptStage, content: string) => void;  injectRoute: (injectedRoute: InjectedRoute) => void;  createCodegenDir: () => URL;  logger: AstroIntegrationLogger;}) => void | Promise<void>;
@@ -66,7 +66,7 @@ The following hooks are built in to Astro:
 
 **Type:** `AstroConfig`
 
-A read-only copy of the user-supplied [Astro config](/en/reference/configuration-reference/). This is resolved _before_ any other integrations have run. If you need a copy of the config after all integrations have completed their config updates, [see the `astro:config:done` hook](#astroconfigdone).
+A read-only copy of the user-supplied [Astro config](../configuration-reference/index.md). This is resolved _before_ any other integrations have run. If you need a copy of the config after all integrations have completed their config updates, [see the `astro:config:done` hook](#astroconfigdone).
 
 #### `command` option
 
@@ -95,7 +95,7 @@ A read-only copy of the user-supplied [Astro config](/en/reference/configuration
 
 **Type:** `(newConfig: DeepPartial<AstroConfig>) => AstroConfig;`
 
-A callback function to update the user-supplied [Astro config](/en/reference/configuration-reference/). Any config you provide **will be merged with the user config + other integration config updates,** so you are free to omit keys!
+A callback function to update the user-supplied [Astro config](../configuration-reference/index.md). Any config you provide **will be merged with the user config + other integration config updates,** so you are free to omit keys!
 
 For example, say you need to supply a [Vite](https://vite.dev/) plugin to the user’s project:
 
@@ -108,10 +108,10 @@ export default {  name: 'banana-css-integration',  hooks: {    'astro:config:set
 
 [Section titled “addRenderer() option”](#addrenderer-option)
 
-**Type:** `(renderer: [AstroRenderer](/en/reference/renderer-reference/#astrorenderer)) => void;`  
+**Type:** `(renderer: [AstroRenderer](../renderer-reference/index.md#astrorenderer)) => void;`  
 **Examples:** [`svelte`](https://github.com/withastro/astro/blob/main/packages/integrations/svelte/src/index.ts), [`react`](https://github.com/withastro/astro/blob/main/packages/integrations/react/src/index.ts), [`preact`](https://github.com/withastro/astro/blob/main/packages/integrations/preact/src/index.ts), [`vue`](https://github.com/withastro/astro/blob/main/packages/integrations/vue/src/index.ts), [`solid`](https://github.com/withastro/astro/blob/main/packages/integrations/solid/src/index.ts)
 
-A callback function to [add a component framework renderer](/en/reference/renderer-reference/) (i.e. React, Vue, Svelte, etc).
+A callback function to [add a component framework renderer](../renderer-reference/index.md) (i.e. React, Vue, Svelte, etc).
 
 #### `addWatchFile()` option
 
@@ -137,7 +137,7 @@ Example usage:
 
 **Added in:** `astro@2.6.0`
 
-Adds a [custom client directive](/en/reference/directives-reference/#custom-client-directives) to be used in `.astro` files.
+Adds a [custom client directive](../directives-reference/index.md#custom-client-directives) to be used in `.astro` files.
 
 Note that directive entrypoints are only bundled through esbuild and should be kept small so they don’t slow down component hydration.
 
@@ -170,7 +170,7 @@ import 'astro'declare module 'astro' {  interface AstroClientDirectives {    'cl
 
 **Added in:** `astro@3.4.0`
 
-Adds a [custom dev toolbar app](/en/reference/dev-toolbar-app-reference/).
+Adds a [custom dev toolbar app](../dev-toolbar-app-reference/index.md).
 
 Example usage:
 
@@ -195,13 +195,13 @@ import { defineConfig } from 'astro/config';import devToolbarIntegration from '.
 
 **Added in:** `astro@3.5.0`
 
-Adds [middleware](/en/guides/middleware/) to run on each request. Takes the `entrypoint` module that contains the middleware, and an `order` to specify whether it should run before (`pre`) other middleware or after (`post`).
+Adds [middleware](../../guides/middleware/index.md) to run on each request. Takes the `entrypoint` module that contains the middleware, and an `order` to specify whether it should run before (`pre`) other middleware or after (`post`).
 
 ```
 /** * @type {() => import('astro').AstroIntegration} */export default () => ({  name: "my-middleware-package",  hooks: {    "astro:config:setup": ({ addMiddleware }) => {      addMiddleware({        entrypoint: '@my-package/middleware',        order: 'pre'      });    },  },});
 ```
 
-Middleware is defined in a package with an [`onRequest()` function](/en/reference/modules/astro-middleware/#onrequest), as with user-defined middleware.
+Middleware is defined in a package with an [`onRequest()` function](../modules/astro-middleware/index.md#onrequest), as with user-defined middleware.
 
 ```
 import { defineMiddleware } from 'astro:middleware';
@@ -223,7 +223,7 @@ The function also accepts a `URL` for `entrypoint`:
 
 **Type:** `({ pattern: string; entrypoint: string | URL; prerender?: boolean }) => void;`
 
-A callback function to inject routes into an Astro project. Injected routes can be [`.astro` pages](/en/basics/astro-pages/) or [`.js` and `.ts` route handlers](/en/guides/endpoints/#static-file-endpoints).
+A callback function to inject routes into an Astro project. Injected routes can be [`.astro` pages](../../basics/astro-pages/index.md) or [`.js` and `.ts` route handlers](../../guides/endpoints/index.md#static-file-endpoints).
 
 `injectRoute()` takes an object with a `pattern` and an `entrypoint`.
 
@@ -313,7 +313,7 @@ const integration = {  name: 'my-integration',  hooks: {    'astro:config:setup'
 
 **When:** In `astro build`, before bundling starts. In `astro dev`, while building the module graph and on every change to a file based route (added/removed/updated).
 
-**Why:** To set options for a route at build or request time, such as enabling [on-demand server rendering](/en/guides/on-demand-rendering/#enabling-on-demand-rendering).
+**Why:** To set options for a route at build or request time, such as enabling [on-demand server rendering](../../guides/on-demand-rendering/index.md#enabling-on-demand-rendering).
 
 ```
 'astro:route:setup'?: (options: {  route: RouteOptions;  logger: AstroIntegrationLogger;}) => void | Promise<void>;
@@ -346,7 +346,7 @@ The `component` property indicates the entrypoint that will be rendered on the r
 
 **Added in:** `astro@4.14.0`
 
-The `prerender` property is used to configure [on-demand server rendering](/en/guides/on-demand-rendering/#enabling-on-demand-rendering) for a route. If the route file contains an explicit `export const prerender` value, the value will be used as the default instead of `undefined`.
+The `prerender` property is used to configure [on-demand server rendering](../../guides/on-demand-rendering/index.md#enabling-on-demand-rendering) for a route. If the route file contains an explicit `export const prerender` value, the value will be used as the default instead of `undefined`.
 
 ```
 import { defineConfig } from 'astro/config';
@@ -354,7 +354,7 @@ export default defineConfig({  integrations: [setPrerender()],});
 function setPrerender() {  return {    name: 'set-prerender',    hooks: {      'astro:route:setup': ({ route }) => {        if (route.component.endsWith('/blog/[slug].astro')) {          route.prerender = true;        }      },    },  };}
 ```
 
-If the final value after running all the hooks is `undefined`, the route will fall back to a prerender default based on the [`output` option](/en/reference/configuration-reference/#output): prerendered for `static` mode, and on-demand rendered for `server` mode.
+If the final value after running all the hooks is `undefined`, the route will fall back to a prerender default based on the [`output` option](../configuration-reference/index.md#output): prerendered for `static` mode, and on-demand rendered for `server` mode.
 
 ### `astro:routes:resolved`
 
@@ -411,7 +411,7 @@ const integration = () => {  return {    name: 'my-integration',    hooks: {    
 
 **Type:** `AstroConfig`
 
-A read-only copy of the user-supplied [Astro config](/en/reference/configuration-reference/). This is resolved _after_ other integrations have run.
+A read-only copy of the user-supplied [Astro config](../configuration-reference/index.md). This is resolved _after_ other integrations have run.
 
 #### `setAdapter()` option
 
@@ -419,7 +419,7 @@ A read-only copy of the user-supplied [Astro config](/en/reference/configuration
 
 **Type:** `(adapter: AstroAdapter) => void;`
 
-Makes the integration an adapter. Read more in the [adapter API](/en/reference/adapter-reference/).
+Makes the integration an adapter. Read more in the [adapter API](../adapter-reference/index.md).
 
 #### `injectTypes()` option
 
@@ -473,7 +473,7 @@ Allows you to adapt the logic of your integration depending on the user’s proj
 
 **Type:** [`ViteDevServer`](https://vite.dev/guide/api-javascript.html#vitedevserver)
 
-A mutable instance of the Vite server used in “dev” mode. For instance, this is [used by our Partytown integration](/en/guides/integrations-guide/partytown/) to inject the Partytown server as middleware:
+A mutable instance of the Vite server used in “dev” mode. For instance, this is [used by our Partytown integration](../../guides/integrations-guide/partytown/index.md) to inject the Partytown server as middleware:
 
 ```
 export default {  name: 'partytown',  hooks: {    'astro:server:setup': ({ server }) => {      server.middlewares.use(        function middleware(req, res, next) {          // handle requests        }      );    }  }}
@@ -487,7 +487,7 @@ export default {  name: 'partytown',  hooks: {    'astro:server:setup': ({ serve
 
 **Added in:** `astro@4.7.0`
 
-An object providing callback functions to interact with the [dev toolbar](/en/reference/dev-toolbar-app-reference/):
+An object providing callback functions to interact with the [dev toolbar](../dev-toolbar-app-reference/index.md):
 
 ##### `toolbar.on()`
 
@@ -539,7 +539,7 @@ You can also pass a `context` object to the loaders. This can be used to pass ar
 {  name: 'my-integration',  hooks: {    'astro:server:setup': async ({ server, refreshContent }) => {      // Register a dev server webhook endpoint      server.middlewares.use('/_refresh', async (req, res) => {        if(req.method !== 'POST') {          res.statusCode = 405          res.end('Method Not Allowed');          return        }        let body = '';        req.on('data', chunk => {          body += chunk.toString();        });        req.on('end', async () => {          try {            const webhookBody = JSON.parse(body);            await refreshContent({              context: { webhookBody },              loaders: ['my-loader']            });            res.writeHead(200, { 'Content-Type': 'application/json' });            res.end(JSON.stringify({ message: 'Content refreshed successfully' }));          } catch (error) {            res.writeHead(500, { 'Content-Type': 'application/json' });            res.end(JSON.stringify({ error: 'Failed to refresh content: ' + error.message }));          }        });      });    }  }}
 ```
 
-The loader can then access the `refreshContextData` property to get the webhook body. See the [`refreshContextData`](/en/reference/content-loader-reference/#loadercontextrefreshcontextdata) property for more information.
+The loader can then access the `refreshContextData` property to get the webhook body. See the [`refreshContextData`](../content-loader-reference/index.md#loadercontextrefreshcontextdata) property for more information.
 
 ### `astro:server:start`
 
@@ -589,7 +589,7 @@ The address, family and port number supplied by the [`server.address()` method o
 
 **When:** After the `astro:config:done` event, but before the production build begins.
 
-**Why:** To set up any global objects or clients needed during a production build. This can also extend the build configuration options in the [adapter API](/en/reference/adapter-reference/).
+**Why:** To set up any global objects or clients needed during a production build. This can also extend the build configuration options in the [adapter API](../adapter-reference/index.md).
 
 ```
 'astro:build:start'?: (options: {  logger: AstroIntegrationLogger;  setPrerenderer: (prerenderer: AstroPrerenderer | ((defaultPrerenderer: AstroPrerenderer) => AstroPrerenderer)) => void;}) => void | Promise<void>;
@@ -611,7 +611,7 @@ The function accepts either an [`AstroPrerenderer` object](#astroprerenderer) di
 'astro:build:start': ({ setPrerenderer }) => {  setPrerenderer((defaultPrerenderer) => ({    name: 'my-prerenderer',    async setup() {      // Optional: called once before prerendering starts    },    async getStaticPaths() {      // Returns array of { pathname: string, route: RouteData }      return defaultPrerenderer.getStaticPaths();    },    async render(request, { routeData }) {      // request: Request, options: { routeData: RouteData }      // Returns: Response    },    async teardown() {      // Optional: called after all pages are prerendered    }  }));}
 ```
 
-See the [adapter reference](/en/reference/adapter-reference/#custom-prerenderer) for more details on implementing a custom prerenderer.
+See the [adapter reference](../adapter-reference/index.md#custom-prerenderer) for more details on implementing a custom prerenderer.
 
 ### `astro:build:setup`
 
@@ -872,7 +872,7 @@ Specifies the cryptographic key, serialized as a string, used for encrypting ser
 
 **Added in:** `astro@2.8.0`
 
-Exposes the [middleware](/en/guides/middleware/) file path.
+Exposes the [middleware](../../guides/middleware/index.md) file path.
 
 ```
 export default {  name: 'my-integration',  hooks: {    'astro:build:ssr': ({ middlewareEntryPoint }) => {      if (middlewareEntryPoint) {        // do some operations if a middleware exist      }    },  },}
@@ -1003,7 +1003,7 @@ import type {  AstroIntegrationLogger,  AstroIntegrationMiddleware,  AstroMiddle
 
 [Section titled “AstroIntegrationLogger”](#astrointegrationlogger)
 
-An instance of the Astro logger, useful to write logs. This logger uses the same [log level](/en/reference/cli-reference/#--verbose) configured via CLI.
+An instance of the Astro logger, useful to write logs. This logger uses the same [log level](../cli-reference/index.md#--verbose) configured via CLI.
 
 **Methods available** to write to terminal:
 
@@ -1064,9 +1064,9 @@ Defines the import path of the middleware.
 
 [Section titled “AstroMiddlewareInstance”](#astromiddlewareinstance)
 
-**Type:** `{ onRequest?: [MiddlewareHandler](/en/reference/modules/astro-middleware/#middlewarehandler); }`
+**Type:** `{ onRequest?: [MiddlewareHandler](../modules/astro-middleware/index.md#middlewarehandler); }`
 
-An object containing an [`onRequest()`](/en/reference/modules/astro-middleware/#onrequest) property defined with the project’s middleware function when it exists.
+An object containing an [`onRequest()`](../modules/astro-middleware/index.md#onrequest) property defined with the project’s middleware function when it exists.
 
 ### `AstroPrerenderer`
 
@@ -1076,7 +1076,7 @@ An object containing an [`onRequest()`](/en/reference/modules/astro-middleware/#
 
 **Added in:** `astro@6.0.0`
 
-Describes a [custom prerender](/en/reference/adapter-reference/#custom-prerenderer) that adapters can provide to control page prerendering.
+Describes a [custom prerender](../adapter-reference/index.md#custom-prerenderer) that adapters can provide to control page prerendering.
 
 #### `AstroPrerenderer.name`
 
@@ -1108,7 +1108,7 @@ Returns a list of objects describing the prerendered route path and its associat
 
 **Type:** `(request: Request, options: { routeData: [RouteData](#routedata) }) => Promise<Response>`
 
-Defines an optional method describing how to render a page. This will be called by Astro for each path returned by [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths).
+Defines an optional method describing how to render a page. This will be called by Astro for each path returned by [`getStaticPaths()`](../routing-reference/index.md#getstaticpaths).
 
 #### `AstroPrerenderer.teardown()`
 
@@ -1201,7 +1201,7 @@ The URL pathname of the source component.
 
 **Type:** [`RouteData['prerender']`](#routedataprerender)
 
-Determines whether the route use [on demand rendering](/en/guides/on-demand-rendering/). The value will be `true` for projects configured with:
+Determines whether the route use [on demand rendering](../../guides/on-demand-rendering/index.md). The value will be `true` for projects configured with:
 
 *   `output: 'static'` when the route does not export `const prerender = true`
 *   `output: 'server'` when the route exports `const prerender = false`
@@ -1222,7 +1222,7 @@ When the value of `IntegrationResolvedRoute.type` is `redirect`, the value will 
 
 **Added in:** `astro@6.1.0` New
 
-When the project uses [i18n with fallback routes](/en/guides/internationalization/#fallback), the value will be a list of the routes this route falls back to when the requested locale isn’t available. The fallback content may be served as a redirect or rewrite depending on `i18n.routing.fallbackType`. Otherwise, the value will be an empty array.
+When the project uses [i18n with fallback routes](../../guides/internationalization/index.md#fallback), the value will be a list of the routes this route falls back to when the requested locale isn’t available. The fallback content may be served as a redirect or rewrite depending on `i18n.routing.fallbackType`. Otherwise, the value will be an empty array.
 
 #### `IntegrationResolvedRoute.generate()`
 
@@ -1280,7 +1280,7 @@ Specifies the source component URL.
 
 **Type:** `string[]`
 
-Allows you to access the route `params`. For example, when a project uses the following [dynamic routes](/en/guides/routing/#dynamic-routes) `/pages/[lang]/[...slug].astro`, the value will be `['lang', '...slug']`.
+Allows you to access the route `params`. For example, when a project uses the following [dynamic routes](../../guides/routing/index.md#dynamic-routes) `/pages/[lang]/[...slug].astro`, the value will be `['lang', '...slug']`.
 
 #### `RouteData.pathname`
 
@@ -1288,7 +1288,7 @@ Allows you to access the route `params`. For example, when a project uses the fo
 
 **Type:** `string | undefined`
 
-For regular routes, the value will be the URL pathname where this route will be served. When the project uses [dynamic routes](/en/guides/routing/#dynamic-routes) (ie. `[dynamic]` or `[...spread]`), the pathname will be undefined.
+For regular routes, the value will be the URL pathname where this route will be served. When the project uses [dynamic routes](../../guides/routing/index.md#dynamic-routes) (ie. `[dynamic]` or `[...spread]`), the pathname will be undefined.
 
 #### `RouteData.distURL`
 
@@ -1342,9 +1342,9 @@ Allows you to identify the [type of route](#routetype).
 
 **Type:** `boolean`
 
-Determines whether a route uses [on demand rendering](/en/guides/on-demand-rendering/) or is statically prerendered at build time.
+Determines whether a route uses [on demand rendering](../../guides/on-demand-rendering/index.md) or is statically prerendered at build time.
 
-See also [`prerendered`](/en/reference/routing-reference/#prerender) in the routing reference.
+See also [`prerendered`](../routing-reference/index.md#prerender) in the routing reference.
 
 #### `RouteData.redirect`
 
@@ -1370,7 +1370,7 @@ Specifies the `RouteData` to redirect to when [`RouteData.type`](#routedatatype)
 
 **Added in:** `astro@3.5.6`
 
-Defines a list of `RouteData` to fallback to when [`i18n.fallback`](/en/reference/configuration-reference/#i18nfallback) has a list of locales.
+Defines a list of `RouteData` to fallback to when [`i18n.fallback`](../configuration-reference/index.md#i18nfallback) has a list of locales.
 
 #### `RouteData.isIndex`
 
@@ -1479,7 +1479,7 @@ An object containing build configuration and project metadata that the server ad
 
 **Type:** `string`
 
-Defines the name of the [server adapter](/en/guides/on-demand-rendering/#server-adapters) used for on-demand rendering.
+Defines the name of the [server adapter](../../guides/on-demand-rendering/index.md#server-adapters) used for on-demand rendering.
 
 #### `SSRManifest.routes`
 
@@ -1537,7 +1537,7 @@ Defines the list of stylesheets associated with this route. This includes both i
 
 **Type:** `string`
 
-Specifies the [configured `site`](/en/reference/configuration-reference/#site).
+Specifies the [configured `site`](../configuration-reference/index.md#site).
 
 #### `SSRManifest.base`
 
@@ -1545,7 +1545,7 @@ Specifies the [configured `site`](/en/reference/configuration-reference/#site).
 
 **Type:** `string`
 
-Specifies the [configured `base` path](/en/reference/configuration-reference/#base) to deploy to.
+Specifies the [configured `base` path](../configuration-reference/index.md#base) to deploy to.
 
 #### `SSRManifest.userAssetsBase`
 
@@ -1565,7 +1565,7 @@ Specifies the base path to use in development mode for user-generated assets, su
 
 **Added in:** `astro@3.5.4`
 
-Specifies the [configured behavior for trailing slashes](/en/reference/configuration-reference/#trailingslash) in development mode and for on-demand rendered pages.
+Specifies the [configured behavior for trailing slashes](../configuration-reference/index.md#trailingslash) in development mode and for on-demand rendered pages.
 
 #### `SSRManifest.buildFormat`
 
@@ -1575,7 +1575,7 @@ Specifies the [configured behavior for trailing slashes](/en/reference/configura
 
 **Added in:** `astro@4.2.2`
 
-Specifies the [configured output file format](/en/reference/configuration-reference/#buildformat).
+Specifies the [configured output file format](../configuration-reference/index.md#buildformat).
 
 #### `SSRManifest.compressHTML`
 
@@ -1585,7 +1585,7 @@ Specifies the [configured output file format](/en/reference/configuration-refere
 
 **Added in:** `astro@2.7.2`
 
-Determines whether [HTML minification is enabled in the project configuration](/en/reference/configuration-reference/#compresshtml).
+Determines whether [HTML minification is enabled in the project configuration](../configuration-reference/index.md#compresshtml).
 
 #### `SSRManifest.assetsPrefix`
 
@@ -1595,13 +1595,13 @@ Determines whether [HTML minification is enabled in the project configuration](/
 
 **Added in:** `astro@2.3.1`
 
-Specifies the [configured prefix for Astro-generated asset links](/en/reference/configuration-reference/#buildassetsprefix).
+Specifies the [configured prefix for Astro-generated asset links](../configuration-reference/index.md#buildassetsprefix).
 
 #### `SSRManifest.renderers`
 
 [Section titled “SSRManifest.renderers”](#ssrmanifestrenderers)
 
-**Type:** `[SSRLoadedRenderer](/en/reference/renderer-reference/#ssrloadedrenderer)[]`
+**Type:** `[SSRLoadedRenderer](../renderer-reference/index.md#ssrloadedrenderer)[]`
 
 A list of renderers (e.g. React, Vue, Svelte, MDX) available for the server to use.
 
@@ -1623,7 +1623,7 @@ Determines whether this application uses any on-demand rendered routes.
 
 **Added in:** `astro@2.5.0`
 
-Defines a mapping of client directive names (e.g. `load`, `visible`) to their implementation code. This includes both [built-in client directives](/en/reference/directives-reference/#client-directives) and [custom client directives](/en/reference/directives-reference/#custom-client-directives).
+Defines a mapping of client directive names (e.g. `load`, `visible`) to their implementation code. This includes both [built-in client directives](../directives-reference/index.md#client-directives) and [custom client directives](../directives-reference/index.md#custom-client-directives).
 
 #### `SSRManifest.entryModules`
 
@@ -1683,11 +1683,11 @@ A function to retrieve an instance of the page component.
 
 [Section titled “SSRManifest.pageModule.onRequest()”](#ssrmanifestpagemoduleonrequest)
 
-**Type:** [`MiddlewareHandler`](/en/reference/modules/astro-middleware/#middlewarehandler)  
+**Type:** [`MiddlewareHandler`](../modules/astro-middleware/index.md#middlewarehandler)  
 
 **Added in:** `astro@3.0.3`
 
-An [Astro middleware function](/en/reference/modules/astro-middleware/#onrequest) when defined in the user project.
+An [Astro middleware function](../modules/astro-middleware/index.md#onrequest) when defined in the user project.
 
 #### `SSRManifest.pageMap`
 
@@ -1745,7 +1745,7 @@ Determines the [cryptographic key](https://developer.mozilla.org/en-US/docs/Web/
 
 **Added in:** `astro@3.5.0`
 
-Specifies the resolved [`i18n` configuration](/en/reference/configuration-reference/#i18n) when enabled in the project.
+Specifies the resolved [`i18n` configuration](../configuration-reference/index.md#i18n) when enabled in the project.
 
 ##### `SSRManifest.i18n.strategy`
 
@@ -1753,7 +1753,7 @@ Specifies the resolved [`i18n` configuration](/en/reference/configuration-refere
 
 **Type:** `"manual" | "pathname-prefix-always" | "pathname-prefix-other-locales" | "pathname-prefix-always-no-redirect" | "domains-prefix-always" | "domains-prefix-other-locales" | "domains-prefix-always-no-redirect"`
 
-Defines the [i18n routing strategy](/en/reference/configuration-reference/#i18nrouting) configured. This determines how locales are handled in URLs and whether redirects occur.
+Defines the [i18n routing strategy](../configuration-reference/index.md#i18nrouting) configured. This determines how locales are handled in URLs and whether redirects occur.
 
 ##### `SSRManifest.i18n.locales`
 
@@ -1761,7 +1761,7 @@ Defines the [i18n routing strategy](/en/reference/configuration-reference/#i18nr
 
 **Type:** `Locales`
 
-Specifies a list of [supported locales configured in the project](/en/reference/configuration-reference/#i18nlocales).
+Specifies a list of [supported locales configured in the project](../configuration-reference/index.md#i18nlocales).
 
 ##### `SSRManifest.i18n.defaultLocale`
 
@@ -1769,7 +1769,7 @@ Specifies a list of [supported locales configured in the project](/en/reference/
 
 **Type:** `string`
 
-Determines the [default locale configured in the project](/en/reference/configuration-reference/#i18ndefaultlocale).
+Determines the [default locale configured in the project](../configuration-reference/index.md#i18ndefaultlocale).
 
 ##### `SSRManifest.i18n.fallback`
 
@@ -1777,7 +1777,7 @@ Determines the [default locale configured in the project](/en/reference/configur
 
 **Type:** `Record<string, string> | undefined`
 
-Specifies a mapping of locales to their fallback locales as [configured in `i18n.fallback`](/en/reference/configuration-reference/#i18nfallback).
+Specifies a mapping of locales to their fallback locales as [configured in `i18n.fallback`](../configuration-reference/index.md#i18nfallback).
 
 ##### `SSRManifest.i18n.fallbackType`
 
@@ -1785,7 +1785,7 @@ Specifies a mapping of locales to their fallback locales as [configured in `i18n
 
 **Type:** `"redirect" | "rewrite"`
 
-Determines the [configured fallback strategy for the project](/en/reference/configuration-reference/#i18nroutingfallbacktype).
+Determines the [configured fallback strategy for the project](../configuration-reference/index.md#i18nroutingfallbacktype).
 
 ##### `SSRManifest.i18n.domainLookupTable`
 
@@ -1793,7 +1793,7 @@ Determines the [configured fallback strategy for the project](/en/reference/conf
 
 **Type:** `Record<string, string>`
 
-A mapping of [configured domains](/en/reference/configuration-reference/#i18ndomains) to their associated locales.
+A mapping of [configured domains](../configuration-reference/index.md#i18ndomains) to their associated locales.
 
 #### `SSRManifest.middleware`
 
@@ -1809,7 +1809,7 @@ Defines an instance to load the middleware.
 
 [Section titled “SSRManifest.actions”](#ssrmanifestactions)
 
-**Type:** `() => Promise<{ server: Record<string, [ActionClient](/en/reference/modules/astro-actions/#actionclient)>; }> | { server: Record<string, [ActionClient](/en/reference/modules/astro-actions/#actionclient)>; }`  
+**Type:** `() => Promise<{ server: Record<string, [ActionClient](../modules/astro-actions/index.md#actionclient)>; }> | { server: Record<string, [ActionClient](../modules/astro-actions/index.md#actionclient)>; }`  
 
 **Added in:** `astro@5.4.2`
 
@@ -1823,7 +1823,7 @@ An object, or a function that returns an object, with a `server` property that m
 
 **Added in:** `astro@6.0.0`
 
-Retrieves the [configured session driver](/en/reference/configuration-reference/#sessiondriver) when enabled.
+Retrieves the [configured session driver](../configuration-reference/index.md#sessiondriver) when enabled.
 
 #### `SSRManifest.checkOrigin`
 
@@ -1833,25 +1833,25 @@ Retrieves the [configured session driver](/en/reference/configuration-reference/
 
 **Added in:** `astro@4.6.0`
 
-Determines whether [origin checking is enabled in the security configuration](/en/reference/configuration-reference/#securitycheckorigin).
+Determines whether [origin checking is enabled in the security configuration](../configuration-reference/index.md#securitycheckorigin).
 
 #### `SSRManifest.allowedDomains`
 
 [Section titled “SSRManifest.allowedDomains”](#ssrmanifestalloweddomains)
 
-**Type:** `Partial<[RemotePattern](/en/reference/modules/astro-assets/#remotepattern)>[]`
+**Type:** `Partial<[RemotePattern](../modules/astro-assets/index.md#remotepattern)>[]`
 
-Specifies the [configured list of permitted host patterns](/en/reference/configuration-reference/#securityalloweddomains) for incoming requests when using on-demand rendering.
+Specifies the [configured list of permitted host patterns](../configuration-reference/index.md#securityalloweddomains) for incoming requests when using on-demand rendering.
 
 #### `SSRManifest.sessionConfig`
 
 [Section titled “SSRManifest.sessionConfig”](#ssrmanifestsessionconfig)
 
-**Type:** `[SessionConfig<TDriver>](/en/reference/configuration-reference/#session-options) & { driverModule?: () => Promise<{ default: () => unstorage.Driver }>; }`  
+**Type:** `[SessionConfig<TDriver>](../configuration-reference/index.md#session-options) & { driverModule?: () => Promise<{ default: () => unstorage.Driver }>; }`  
 
 **Added in:** `astro@5.1.0`
 
-An object containing the [resolved session configuration](/en/reference/configuration-reference/#session-options) and an additional property defining the driver in use.
+An object containing the [resolved session configuration](../configuration-reference/index.md#session-options) and an additional property defining the driver in use.
 
 #### `SSRManifest.cacheDir`
 
@@ -1861,7 +1861,7 @@ An object containing the [resolved session configuration](/en/reference/configur
 
 **Added in:** `astro@5.2.0`
 
-Specifies the [configured directory for caching build artifacts](/en/reference/configuration-reference/#cachedir).
+Specifies the [configured directory for caching build artifacts](../configuration-reference/index.md#cachedir).
 
 #### `SSRManifest.srcDir`
 
@@ -1871,7 +1871,7 @@ Specifies the [configured directory for caching build artifacts](/en/reference/c
 
 **Added in:** `astro@5.2.0`
 
-Specifies the [configured directory that Astro will read the site from](/en/reference/configuration-reference/#srcdir).
+Specifies the [configured directory that Astro will read the site from](../configuration-reference/index.md#srcdir).
 
 #### `SSRManifest.outDir`
 
@@ -1881,7 +1881,7 @@ Specifies the [configured directory that Astro will read the site from](/en/refe
 
 **Added in:** `astro@5.2.0`
 
-Specifies the [configured directory in which to write the final build](/en/reference/configuration-reference/#outdir).
+Specifies the [configured directory in which to write the final build](../configuration-reference/index.md#outdir).
 
 #### `SSRManifest.rootDir`
 
@@ -1891,7 +1891,7 @@ Specifies the [configured directory in which to write the final build](/en/refer
 
 **Added in:** `astro@6.0.0`
 
-Specifies the resolved URL for the [directory configured as the project root](/en/reference/configuration-reference/#root).
+Specifies the resolved URL for the [directory configured as the project root](../configuration-reference/index.md#root).
 
 #### `SSRManifest.publicDir`
 
@@ -1901,7 +1901,7 @@ Specifies the resolved URL for the [directory configured as the project root](/e
 
 **Added in:** `astro@5.2.0`
 
-Specifies the [configured directory for the static assets](/en/reference/configuration-reference/#publicdir).
+Specifies the [configured directory for the static assets](../configuration-reference/index.md#publicdir).
 
 #### `SSRManifest.assetsDir`
 
@@ -1911,7 +1911,7 @@ Specifies the [configured directory for the static assets](/en/reference/configu
 
 **Added in:** `astro@6.0.0`
 
-Specifies the [configured directory for generated assets](/en/reference/configuration-reference/#buildassets) in the build output.
+Specifies the [configured directory for generated assets](../configuration-reference/index.md#buildassets) in the build output.
 
 #### `SSRManifest.buildClientDir`
 
@@ -1941,7 +1941,7 @@ Determines the path where server-side build artifacts are output within the buil
 
 **Added in:** `astro@5.9.0`
 
-Describes the [Content Security Policy configuration](/en/reference/configuration-reference/#securitycsp).
+Describes the [Content Security Policy configuration](../configuration-reference/index.md#securitycsp).
 
 ##### `SSRManifest.csp.cspDestination`
 
@@ -1949,7 +1949,7 @@ Describes the [Content Security Policy configuration](/en/reference/configuratio
 
 **Type:** `'adapter' | 'meta' | 'header' | undefined`
 
-Specifies whether CSP directives should be injected as a `meta` element, as a response `header`, or by the [`adapter` when it supports setting response headers](/en/reference/adapter-reference/#staticheaders).
+Specifies whether CSP directives should be injected as a `meta` element, as a response `header`, or by the [`adapter` when it supports setting response headers](../adapter-reference/index.md#staticheaders).
 
 ##### `SSRManifest.csp.algorithm`
 
@@ -1957,7 +1957,7 @@ Specifies whether CSP directives should be injected as a `meta` element, as a re
 
 **Type:** `'SHA-256' | 'SHA-384' | 'SHA-512'`
 
-Specifies the [configured hash function](/en/reference/configuration-reference/#securitycspalgorithm).
+Specifies the [configured hash function](../configuration-reference/index.md#securitycspalgorithm).
 
 ##### `SSRManifest.csp.scriptHashes`
 
@@ -1965,7 +1965,7 @@ Specifies the [configured hash function](/en/reference/configuration-reference/#
 
 **Type:** `string[]`
 
-Specifies a list of generated hashes for project scripts and [user-supplied hashes](/en/reference/configuration-reference/#securitycspscriptdirectivehashes) for external scripts.
+Specifies a list of generated hashes for project scripts and [user-supplied hashes](../configuration-reference/index.md#securitycspscriptdirectivehashes) for external scripts.
 
 ##### `SSRManifest.csp.scriptResources`
 
@@ -1973,7 +1973,7 @@ Specifies a list of generated hashes for project scripts and [user-supplied hash
 
 **Type:** `string[]`
 
-Specifies a list of valid sources combining the [configured script resources](/en/reference/configuration-reference/#securitycspscriptdirectiveresources) and the [injected script resources](/en/reference/api-reference/#cspinsertscriptresource).
+Specifies a list of valid sources combining the [configured script resources](../configuration-reference/index.md#securitycspscriptdirectiveresources) and the [injected script resources](../api-reference/index.md#cspinsertscriptresource).
 
 ##### `SSRManifest.csp.isStrictDynamic`
 
@@ -1981,7 +1981,7 @@ Specifies a list of valid sources combining the [configured script resources](/e
 
 **Type:** `boolean`
 
-Determines whether support for [dynamic script injection is enabled in the configuration](/en/reference/configuration-reference/#securitycspscriptdirectivestrictdynamic).
+Determines whether support for [dynamic script injection is enabled in the configuration](../configuration-reference/index.md#securitycspscriptdirectivestrictdynamic).
 
 ##### `SSRManifest.csp.styleHashes`
 
@@ -1989,7 +1989,7 @@ Determines whether support for [dynamic script injection is enabled in the confi
 
 **Type:** `string[]`
 
-Specifies a list of generated hashes for project styles and [user-supplied hashes](/en/reference/configuration-reference/#securitycspstyledirectivehashes) for external styles.
+Specifies a list of generated hashes for project styles and [user-supplied hashes](../configuration-reference/index.md#securitycspstyledirectivehashes) for external styles.
 
 ##### `SSRManifest.csp.styleResources`
 
@@ -1997,7 +1997,7 @@ Specifies a list of generated hashes for project styles and [user-supplied hashe
 
 **Type:** `string[]`
 
-Specifies a list of valid sources combining the [configured style resources](/en/reference/configuration-reference/#securitycspstyledirectiveresources) and the [injected style resources](/en/reference/api-reference/#cspinsertstyleresource).
+Specifies a list of valid sources combining the [configured style resources](../configuration-reference/index.md#securitycspstyledirectiveresources) and the [injected style resources](../api-reference/index.md#cspinsertstyleresource).
 
 ##### `SSRManifest.csp.directives`
 
@@ -2005,7 +2005,7 @@ Specifies a list of valid sources combining the [configured style resources](/en
 
 **Type:** `CspDirective[]`
 
-Specifies the [configured list of valid sources](/en/reference/configuration-reference/#securitycspdirectives) for specific content types.
+Specifies the [configured list of valid sources](../configuration-reference/index.md#securitycspdirectives) for specific content types.
 
 #### `SSRManifest.devToolbar`
 
@@ -2025,7 +2025,7 @@ Describes the resolved dev toolbar settings.
 
 **Added in:** `astro@6.0.0`
 
-Determines [whether the dev toolbar is enabled](/en/reference/configuration-reference/#devtoolbarenabled).
+Determines [whether the dev toolbar is enabled](../configuration-reference/index.md#devtoolbarenabled).
 
 ##### `SSRManifest.devToolbar.latestAstroVersion`
 
@@ -2049,7 +2049,7 @@ Specifies the latest available version of Astro. This is used to notify the user
 
 **Added in:** `astro@6.0.0`
 
-Defines the serialized [debug information](/en/reference/cli-reference/#astro-info) passed to the dev toolbar for display.
+Defines the serialized [debug information](../cli-reference/index.md#astro-info) passed to the dev toolbar for display.
 
 #### `SSRManifest.internalFetchHeaders`
 
@@ -2083,7 +2083,7 @@ A union of supported redirect status code.
 
 [Section titled “Allow installation with astro add”](#allow-installation-with-astro-add)
 
-[The `astro add` command](/en/reference/cli-reference/#astro-add) allows users to easily add integrations and adapters to their project. If you want _your_ integration to be installable with this tool, **add `astro-integration` to the `keywords` field in your `package.json`**:
+[The `astro add` command](../cli-reference/index.md#astro-add) allows users to easily add integrations and adapters to their project. If you want _your_ integration to be installable with this tool, **add `astro-integration` to the `keywords` field in your `package.json`**:
 
 ```
 {  "name": "example",  "keywords": ["astro-integration"],}
@@ -2121,4 +2121,4 @@ integrations: [  // Example: where examplePreset() returns: [integrationOne, int
 *   [Build your own Astro Integrations](https://www.freecodecamp.org/news/how-to-use-the-astro-ui-framework/#chapter-8-build-your-own-astro-integrations-1) - by Emmanuel Ohans on FreeCodeCamp
 *   [Astro Integration Template](https://github.com/florian-lefebvre/astro-integration-template) - by Florian Lefebvre on GitHub
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

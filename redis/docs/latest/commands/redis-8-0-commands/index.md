@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:34.246Z"
 content_hash: "2ada9ac3f4c177eafb8c903187d13b080e66cf91ae62d4c1aa3833aabe37a955"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.0 Commands Reference","→","Redis 8.0 Commands Reference"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Commands","→","Commands","→\n      \n        Redis 8.0 Commands Reference","→","Redis 8.0 Commands Reference"]
-nav_prev: {"path": "../redis-7-4-commands/index.md", "title": "Redis 7.4 Commands Reference"}
-nav_next: {"path": "../redis-8-2-commands/index.md", "title": "Redis 8.2 Commands Reference"}
+nav_prev: {"path": "redis/docs/latest/commands/redis-7-4-commands/index.md", "title": "Redis 7.4 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/commands/redis-8-2-commands/index.md", "title": "Redis 8.2 Commands Reference"}
 ---
 
 # Redis 8.0 Commands Reference

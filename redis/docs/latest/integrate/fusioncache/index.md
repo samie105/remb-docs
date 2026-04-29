@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:13.326Z"
 content_hash: "8fc06c39b33cae3a9eda9b6718f4bc209e556cfa27ddbf32774c4158e2f688ec"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        FusionCache for C#/.NET","→","FusionCache for C#/.NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        FusionCache for C#/.NET","→","FusionCache for C#/.NET"]
-nav_prev: {"path": "../dynatrace-with-redis-enterprise/index.md", "title": "Dynatrace with Redis Software"}
-nav_next: {"path": "../go-redis/index.md", "title": "Go client for Redis"}
+nav_prev: {"path": "redis/docs/latest/integrate/dynatrace-with-redis-enterprise/index.md", "title": "Dynatrace with Redis Software"}
+nav_next: {"path": "redis/docs/latest/integrate/go-redis/index.md", "title": "Go client for Redis"}
 ---
 
 # FusionCache for C#/.NET

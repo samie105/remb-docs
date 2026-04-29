@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:28.017Z"
 content_hash: "8525aaadc0376118a25ab01984653a901e6c7cc070691106ee19608e51ab9676"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Database Size","Database Size"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Database Size","Database Size"]
-nav_prev: {"path": "../custom-domains/index.md", "title": "Custom Domains"}
-nav_next: {"path": "../get-set-up-for-billing/index.md", "title": "Get set up for billing"}
+nav_prev: {"path": "supabase/docs/guides/platform/custom-domains/index.md", "title": "Custom Domains"}
+nav_next: {"path": "supabase/docs/guides/platform/get-set-up-for-billing/index.md", "title": "Get set up for billing"}
 ---
 
 # 
@@ -42,7 +42,7 @@ Depending on your billing plan, your database can go into read-only mode which c
 
 ### Disk space usage[#](#disk-space-usage)
 
-Your database size is part of the disk usage for your Supabase project, there are many components to Postgres that consume additional disk space. One of the primary components, is the [Write Ahead Log (WAL)](https://www.postgresql.org/docs/current/wal-intro.html). Postgres will store database changes in log files that are cleared away after they are applied to the database. These same files are also used by [Read Replicas](/docs/guides/platform/read-replicas) or other replication methods.
+Your database size is part of the disk usage for your Supabase project, there are many components to Postgres that consume additional disk space. One of the primary components, is the [Write Ahead Log (WAL)](https://www.postgresql.org/docs/current/wal-intro.html). Postgres will store database changes in log files that are cleared away after they are applied to the database. These same files are also used by [Read Replicas](../read-replicas/index.md) or other replication methods.
 
 If you would like to determine the size of the WAL files stored on disk, Postgres provides `pg_ls_waldir` as a helper function; the following query can be run:
 
@@ -143,8 +143,8 @@ Your disk size usage falls in three categories:
 
 ### Reducing disk size[#](#reducing-disk-size)
 
-Disks don't automatically downsize during normal operation. Once you have [reduced your database size](/docs/guides/platform/database-size#database-size), they _will_ automatically "right-size" during a [project upgrade](/docs/guides/platform/upgrading). The final disk size after the upgrade is 1.2x the size of the database with a minimum of 8 GB. For example, if your database size is 100GB, and you have a 200GB disk, the size after a project upgrade will be 120 GB.
+Disks don't automatically downsize during normal operation. Once you have [reduced your database size](index.md#database-size), they _will_ automatically "right-size" during a [project upgrade](../upgrading/index.md). The final disk size after the upgrade is 1.2x the size of the database with a minimum of 8 GB. For example, if your database size is 100GB, and you have a 200GB disk, the size after a project upgrade will be 120 GB.
 
-In case you have a large WAL directory, you may [modify WAL settings](/docs/guides/database/custom-postgres-config) such as `max_wal_size`. Use at your own risk as changing these settings can have side effects. To query your current WAL size, use `SELECT SUM(size) FROM pg_ls_waldir()`.
+In case you have a large WAL directory, you may [modify WAL settings](../../database/custom-postgres-config/index.md) such as `max_wal_size`. Use at your own risk as changing these settings can have side effects. To query your current WAL size, use `SELECT SUM(size) FROM pg_ls_waldir()`.
 
 In the event that your project is already on the latest version of Postgres and cannot be upgraded, a new version of Postgres will be released approximately every week which you can then upgrade to once it becomes available.

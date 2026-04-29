@@ -10,8 +10,8 @@ content_hash: "e1a1bb2dae0d1492106864bf80432f2c0ee73de48c2106b93ef46878615a93b5"
 menu_path: ["PostgreSQL: Documentation: 18: 52.40. pg_publication"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../catalog-pg-publication-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.42.\u00a0pg_publication_rel"}
-nav_next: {"path": "../catalog-pg-shdepend.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.48.\u00a0pg_shdepend"}
+nav_prev: {"path": "postgres/docs/current/catalog-pg-publication-rel.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.42.\u00a0pg_publication_rel"}
+nav_next: {"path": "postgres/docs/current/catalog-pg-shdepend.html/index.md", "title": "PostgreSQL: Documentation: 18: 52.48.\u00a0pg_shdepend"}
 ---
 
 The catalog `pg_publication` contains all publications created in the database. For more on publications see [Section 29.1](https://www.postgresql.org/docs/current/logical-replication-publication.html "29.1. Publication").

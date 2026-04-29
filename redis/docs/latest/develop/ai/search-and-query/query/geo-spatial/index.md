@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:24.222Z"
 content_hash: "a334fe9e81682b5163a5246b87a9b2a704588b86474bd6f9d1e48db62fb33e28"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Geospatial queries","→","Geospatial queries"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Querying data","→","Querying data","→\n      \n        Geospatial queries","→","Geospatial queries"]
-nav_prev: {"path": "../full-text/index.md", "title": "Full-text search"}
-nav_next: {"path": "../range/index.md", "title": "Range queries"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/query/full-text/index.md", "title": "Full-text search"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/query/range/index.md", "title": "Range queries"}
 ---
 
 # Geospatial queries

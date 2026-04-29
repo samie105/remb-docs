@@ -11,8 +11,8 @@ menu_path: ["Uncached data was accessed outside of `<Suspense>`"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
-nav_next: {"path": "../conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
+nav_prev: {"path": "nextjs/docs/messages/app-container-deprecated/index.md", "title": "Addressing \"App Container Deprecated\" Error in Next.js"}
+nav_next: {"path": "nextjs/docs/messages/conflicting-public-file-page/index.md", "title": "Conflicting Public File and Page File"}
 ---
 
 # Uncached data was accessed outside of \`<Suspense>\`
@@ -201,8 +201,8 @@ Alternatively you can add a Suspense boundary above the component that is access
 Layout `params` and Page `params` and `searchParams` props are promises. If you await them directly in your Page or Layout component without a `<Suspense>` boundary, the page can be blocked from prerendering. You can fix this by:
 
 -   Passing the promise to a child component wrapped in `<Suspense>` and awaiting it there
--   Adding a [`loading.js`](/docs/app/api-reference/file-conventions/loading) file to the route segment
--   Using [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) to provide known param values at build time (see [below](#generatestaticparams))
+-   Adding a [`loading.js`](../../app/api-reference/file-conventions/loading/index.md) file to the route segment
+-   Using [`generateStaticParams`](../../app/api-reference/functions/generate-static-params/index.md) to provide known param values at build time (see [below](#generatestaticparams))
 
 For example, `const { id } = await params` directly in a Page component is a common trigger for this error:
 
@@ -248,7 +248,7 @@ async function ProductDetails({ params }) {
 }
 ```
 
-If the entire page depends on `params` and there is no static content to show, adding a [`loading.js`](/docs/app/api-reference/file-conventions/loading) file to the route segment is a simpler alternative.
+If the entire page depends on `params` and there is no static content to show, adding a [`loading.js`](../../app/api-reference/file-conventions/loading/index.md) file to the route segment is a simpler alternative.
 
 The same pattern applies to `searchParams`:
 
@@ -313,7 +313,7 @@ Alternatively you can add a Suspense boundary above the component that is access
 
 #### `generateStaticParams`[](#generatestaticparams)
 
-For Layout and Page `params`, you can use [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) to provide sample values for build-time validation, which allows you to await params directly without Suspense.
+For Layout and Page `params`, you can use [`generateStaticParams`](../../app/api-reference/functions/generate-static-params/index.md) to provide sample values for build-time validation, which allows you to await params directly without Suspense.
 
 app/blog/\[slug\]/page.js
 
@@ -328,11 +328,11 @@ export default async function Page({ params }) {
 }
 ```
 
-Note that validation is path-dependent. Runtime parameters may trigger conditional branches accessing runtime APIs without Suspense, or dynamic content without Suspense or `use cache`, resulting in errors. See [Dynamic Routes with Cache Components](/docs/app/api-reference/file-conventions/dynamic-routes#with-cache-components).
+Note that validation is path-dependent. Runtime parameters may trigger conditional branches accessing runtime APIs without Suspense, or dynamic content without Suspense or `use cache`, resulting in errors. See [Dynamic Routes with Cache Components](../../app/api-reference/file-conventions/dynamic-routes/index.md#with-cache-components).
 
 ### Short-lived Caches[](#short-lived-caches)
 
-`"use cache"` allows you to describe a [`cacheLife()`](/docs/app/api-reference/functions/cacheLife) that might be too short to be practical to prerender. The utility of doing this is that it can still describe a non-zero caching time for the client router cache to reuse the cache entry in the browser and it can also be useful for protecting upstream APIs while experiencing high request traffic.
+`"use cache"` allows you to describe a [`cacheLife()`](../../app/api-reference/functions/cacheLife/index.md) that might be too short to be practical to prerender. The utility of doing this is that it can still describe a non-zero caching time for the client router cache to reuse the cache entry in the browser and it can also be useful for protecting upstream APIs while experiencing high request traffic.
 
 If you expected the `"use cache"` entry to be prerenderable try describing a slightly longer `cacheLife()`.
 
@@ -384,11 +384,11 @@ Alternatively you can add a Suspense boundary above the component that is access
 ## Useful Links[](#useful-links)
 
 -   [`Suspense` React API](https://react.dev/reference/react/Suspense)
--   [`headers` function](/docs/app/api-reference/functions/headers)
--   [`cookies` function](/docs/app/api-reference/functions/cookies)
--   [`draftMode` function](/docs/app/api-reference/functions/draft-mode)
--   [`connection` function](/docs/app/api-reference/functions/connection)
--   [`cacheLife` function](/docs/app/api-reference/functions/cacheLife)
--   [`cacheTag` function](/docs/app/api-reference/functions/cacheTag)
+-   [`headers` function](../../app/api-reference/functions/headers/index.md)
+-   [`cookies` function](../../app/api-reference/functions/cookies/index.md)
+-   [`draftMode` function](../../app/api-reference/functions/draft-mode/index.md)
+-   [`connection` function](../../app/api-reference/functions/connection/index.md)
+-   [`cacheLife` function](../../app/api-reference/functions/cacheLife/index.md)
+-   [`cacheTag` function](../../app/api-reference/functions/cacheTag/index.md)
 
 Was this helpful?

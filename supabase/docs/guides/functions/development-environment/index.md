@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:19.524Z"
 content_hash: "a307d527c44add92a0b3ca05f485f52ae78f17c8143e22564fa7b2079ea548b5"
 menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Development Environment","Development Environment"]
 section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Development Environment","Development Environment"]
-nav_prev: {"path": "../deploy/index.md", "title": "Deploy to Production"}
-nav_next: {"path": "../development-tips/index.md", "title": "Development tips"}
+nav_prev: {"path": "supabase/docs/guides/functions/deploy/index.md", "title": "Deploy to Production"}
+nav_next: {"path": "supabase/docs/guides/functions/development-tips/index.md", "title": "Development tips"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Set up your local development environment for Edge Functions.
 
 * * *
 
-Before getting started, make sure you have the Supabase CLI installed. Check out the [CLI installation guide](/docs/guides/cli) for installation methods and troubleshooting.
+Before getting started, make sure you have the Supabase CLI installed. Check out the [CLI installation guide](../../cli/index.md) for installation methods and troubleshooting.
 
 * * *
 
@@ -92,7 +92,7 @@ It's recommended to organize your functions according to the following structure
 *   **Use "fat functions"**. Develop few, large functions by combining related functionality. This minimizes cold starts.
 *   **Name functions with hyphens (`-`)**. This is the most URL-friendly approach
 *   **Store shared code in `_shared`**. Store any shared code in a folder prefixed with an underscore (`_`).
-*   **Separate tests**. Use a separate folder for [Unit Tests](/docs/guides/functions/unit-test) that includes the name of the function followed by a `-test` suffix.
+*   **Separate tests**. Use a separate folder for [Unit Tests](../unit-test/index.md) that includes the name of the function followed by a `-test` suffix.
 
 * * *
 

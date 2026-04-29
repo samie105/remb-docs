@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:14.112Z"
 content_hash: "1a41ee47a59fd7aa86609c9a0826f017f870aa7535a8faae499d52912f074869"
 menu_path: ["Convert an ArrayBuffer to a Buffer"]
 section_path: []
-nav_prev: {"path": "../arraybuffer-to-blob/index.md", "title": "Convert an ArrayBuffer to a Blob"}
-nav_next: {"path": "../arraybuffer-to-string/index.md", "title": "Convert an ArrayBuffer to a string"}
+nav_prev: {"path": "bun/docs/guides/binary/arraybuffer-to-blob/index.md", "title": "Convert an ArrayBuffer to a Blob"}
+nav_next: {"path": "bun/docs/guides/binary/arraybuffer-to-string/index.md", "title": "Convert an ArrayBuffer to a string"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../arraybuffer-to-string/index.md", "title": "Convert an Arr
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The Node.js [`Buffer`](https://nodejs.org/api/buffer.html) API predates the introduction of `ArrayBuffer` into the JavaScript language. Bun implements both. Use the static `Buffer.from()` method to create a `Buffer` from an `ArrayBuffer`.
 
@@ -53,7 +53,7 @@ const nodeBuffer = Buffer.from(arrBuffer, 0, 16); // view first 16 bytes
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -65,10 +65,10 @@ Convert an ArrayBuffer to a string
 
 Previous
 
-](/docs/guides/binary/arraybuffer-to-string)[
+](../arraybuffer-to-string/index.md)[
 
 Convert an ArrayBuffer to a Blob
 
 Next
 
-](/docs/guides/binary/arraybuffer-to-blob)
+](../arraybuffer-to-blob/index.md)

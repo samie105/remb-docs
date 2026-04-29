@@ -11,15 +11,15 @@ menu_path: ["turbopack"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../transpilePackages/index.md", "title": "transpilePackages"}
-nav_next: {"path": "../turbopackFileSystemCache/index.md", "title": "Turbopack FileSystem Caching"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/transpilePackages/index.md", "title": "transpilePackages"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopackFileSystemCache/index.md", "title": "Turbopack FileSystem Caching"}
 ---
 
 # turbopack
 
 Last updated April 23, 2026
 
-The `turbopack` option lets you customize [Turbopack](/docs/app/api-reference/turbopack) to transform different files and change how modules are resolved.
+The `turbopack` option lets you customize [Turbopack](../../../turbopack/index.md) to transform different files and change how modules are resolved.
 
 > **Good to know**: The `turbopack` option was previously named `experimental.turbo` in Next.js versions 13.0.0 to 15.2.x. The `experimental.turbo` option will be removed in Next.js 16.
 > 
@@ -63,13 +63,13 @@ The following options are available for the `turbopack` configuration:
 
 The following loaders have been tested to work with Turbopack's webpack loader implementation, but many other webpack loaders should work as well even if not listed here:
 
--   [`babel-loader`](https://www.npmjs.com/package/babel-loader) [_(Configured automatically if a Babel configuration file is found)_](/docs/app/api-reference/turbopack#language-features)
+-   [`babel-loader`](https://www.npmjs.com/package/babel-loader) [_(Configured automatically if a Babel configuration file is found)_](../../../turbopack/index.md#language-features)
 -   [`@svgr/webpack`](https://www.npmjs.com/package/@svgr/webpack)
 -   [`svg-inline-loader`](https://www.npmjs.com/package/svg-inline-loader)
 -   [`yaml-loader`](https://www.npmjs.com/package/yaml-loader)
 -   [`string-replace-loader`](https://www.npmjs.com/package/string-replace-loader)
 -   [`raw-loader`](https://www.npmjs.com/package/raw-loader)
--   [`sass-loader`](https://www.npmjs.com/package/sass-loader) [_(Configured automatically)_](/docs/app/api-reference/turbopack#css-and-styling)
+-   [`sass-loader`](https://www.npmjs.com/package/sass-loader) [_(Configured automatically)_](../../../turbopack/index.md#css-and-styling)
 -   [`graphql-tag/loader`](https://www.npmjs.com/package/graphql-tag)
 
 #### Missing Webpack loader features[](#missing-webpack-loader-features)
@@ -244,7 +244,7 @@ In addition, a number of built-in conditions are supported:
 -   `development`: Matches when using `next dev`.
 -   `production`: Matches when using `next build`.
 -   `node`: Matches code that will run on the default Node.js runtime.
--   `edge-light`: Matches code that will run on the [Edge runtime](/docs/app/api-reference/edge).
+-   `edge-light`: Matches code that will run on the [Edge runtime](../../../edge/index.md).
 
 Rules can be an object or an array of objects. An array is often useful for modeling disjoint conditions:
 

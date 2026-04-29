@@ -10,8 +10,8 @@ content_hash: "36d7e00b446d6e999f160550b225c860bd6d88f933f402584b68de5436d01d32"
 menu_path: ["border-spacing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../border-collapse/index.md", "title": "border-collapse"}
-nav_next: {"path": "../table-layout/index.md", "title": "table-layout"}
+nav_prev: {"path": "tailwind/docs/border-collapse/index.md", "title": "border-collapse"}
+nav_next: {"path": "tailwind/docs/table-layout/index.md", "title": "table-layout"}
 ---
 
 Utilities for controlling the spacing between table borders.

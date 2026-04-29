@@ -11,8 +11,8 @@ menu_path: ["No Page Custom Font"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-img-element/index.md", "title": "No img element"}
-nav_next: {"path": "../no-script-component-in-head/index.md", "title": "No Script Component in Head"}
+nav_prev: {"path": "nextjs/docs/messages/no-img-element/index.md", "title": "No img element"}
+nav_next: {"path": "nextjs/docs/messages/no-script-component-in-head/index.md", "title": "No Script Component in Head"}
 ---
 
 # No Page Custom Font
@@ -86,7 +86,7 @@ If you have a reason to only load a font for a particular page or don't care abo
 
 ## Useful Links[](#useful-links)
 
--   [Custom Document](/docs/pages/building-your-application/routing/custom-document)
--   [Font Optimization](/docs/pages/api-reference/components/font)
+-   [Custom Document](../../pages/building-your-application/routing/custom-document/index.md)
+-   [Font Optimization](../../pages/api-reference/components/font/index.md)
 
 Was this helpful?

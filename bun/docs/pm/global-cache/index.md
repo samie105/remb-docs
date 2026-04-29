@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:51.009Z"
 content_hash: "c858d5f4adc165f07f599241c5b0b3cfb58e5253e6b8de9a2a6366aadb071c9e"
 menu_path: ["Global cache"]
 section_path: []
-nav_prev: {"path": "../filter/index.md", "title": "bun --filter"}
-nav_next: {"path": "../isolated-installs/index.md", "title": "Isolated installs"}
+nav_prev: {"path": "bun/docs/pm/filter/index.md", "title": "bun --filter"}
+nav_next: {"path": "bun/docs/pm/isolated-installs/index.md", "title": "Isolated installs"}
 ---
 
 # the directory to use for the cache
@@ -95,10 +95,10 @@ bun --filter
 
 Previous
 
-](/docs/pm/filter)[
+](../filter/index.md)[
 
 Isolated installs
 
 Next
 
-](/docs/pm/isolated-installs)
+](../isolated-installs/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:13.698Z"
 content_hash: "93a4aef65bec5979faa8cd25ddca2ed9b8f553680750a65a20282607ad534b1b"
 menu_path: ["Could not transform image."]
 section_path: []
-nav_prev: {"path": "../content-schema-contains-slug-error/index.md", "title": "Content Schema should not contain slug."}
-nav_next: {"path": "../csp-not-enabled/index.md", "title": "CSP feature isn't enabled"}
+nav_prev: {"path": "astro/en/reference/errors/content-schema-contains-slug-error/index.md", "title": "Content Schema should not contain slug."}
+nav_next: {"path": "astro/en/reference/errors/csp-not-enabled/index.md", "title": "CSP feature isn't enabled"}
 ---
 
 # Could not transform image.
@@ -27,6 +27,6 @@ Depending on the image service you are using, the stack trace may contain more i
 
 **See Also:**
 
-*   [Images](/en/guides/images/)
+*   [Images](../../../guides/images/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

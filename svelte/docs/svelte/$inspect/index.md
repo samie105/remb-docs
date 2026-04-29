@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:53.793Z"
 content_hash: "1e2a154b84583edd68d50ace16b43db956c9462686c558fee38aeef2fc133915"
 menu_path: ["$inspect"]
 section_path: []
-nav_prev: {"path": "../$bindable/index.md", "title": "$bindable"}
-nav_next: {"path": "../$host/index.md", "title": "$host"}
+nav_prev: {"path": "svelte/docs/svelte/$bindable/index.md", "title": "$bindable"}
+nav_next: {"path": "svelte/docs/svelte/$host/index.md", "title": "$host"}
 ---
 
 > `$inspect` only works during development. In a production build it becomes a noop.

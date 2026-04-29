@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:16.933Z"
 content_hash: "26c6b0a47af6e8a4c5420775dc568d8f9e669820eb26f7721ae01104a68a310e"
 menu_path: ["Data REST API","Data REST API","Security","Security","Hardening the Data API","Hardening the Data API"]
 section_path: ["Data REST API","Data REST API","Security","Security","Hardening the Data API","Hardening the Data API"]
-nav_prev: {"path": "../custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
-nav_next: {"path": "../quickstart/index.md", "title": "Build an API route in less than 2 minutes."}
+nav_prev: {"path": "supabase/docs/guides/api/custom-claims-and-role-based-access-control-rbac/index.md", "title": "Custom Claims & Role-based Access Control (RBAC)"}
+nav_next: {"path": "supabase/docs/guides/api/quickstart/index.md", "title": "Build an API route in less than 2 minutes."}
 ---
 
 # 
@@ -21,11 +21,11 @@ Hardening the Data API
 
 Your database's auto-generated Data API exposes the `public` schema by default. You can change this to any schema in your database, or even disable the Data API completely.
 
-Any tables that are accessible through the Data API _must_ have [Row Level Security](/docs/guides/database/postgres/row-level-security) enabled. Row Level Security (RLS) is enabled by default when you create tables from the Supabase Dashboard. If you create a table using the SQL editor or your own SQL client or migration runner, you_must_ enable RLS yourself.
+Any tables that are accessible through the Data API _must_ have [Row Level Security](../../database/postgres/row-level-security/index.md) enabled. Row Level Security (RLS) is enabled by default when you create tables from the Supabase Dashboard. If you create a table using the SQL editor or your own SQL client or migration runner, you_must_ enable RLS yourself.
 
 ## Shared responsibility[#](#shared-responsibility)
 
-Your application's security is your responsibility as a developer. This includes RLS, falling under the [Shared Responsibility](/docs/guides/deployment/shared-responsibility-model) model. To help you:
+Your application's security is your responsibility as a developer. This includes RLS, falling under the [Shared Responsibility](../../deployment/shared-responsibility-model/index.md) model. To help you:
 
 *   Supabase sends daily emails warning of any tables that are exposed to the Data API which do not have RLS enabled.
 *   Supabase provides a Security Advisor and other tools in the Supabase Dashboard to fix any issues.
@@ -96,7 +96,7 @@ Any data, views, or functions that should be exposed need to be deliberately put
 
 Tables created via the Supabase Dashboard have RLS enabled by default. However, if you or your team create tables using the SQL editor, migrations, or an external tool, RLS will not be enabled automatically.
 
-You can use an [event trigger](/docs/guides/database/postgres/event-triggers#example-trigger-function---auto-enable-row-level-security) to automatically enable RLS whenever a new table is created in the `public` schema. This ensures that no table is accidentally left exposed without RLS protection.
+You can use an [event trigger](../../database/postgres/event-triggers/index.md#example-trigger-function---auto-enable-row-level-security) to automatically enable RLS whenever a new table is created in the `public` schema. This ensures that no table is accidentally left exposed without RLS protection.
 
 ## Table-level grants[#](#table-level-grants)
 
@@ -108,7 +108,7 @@ You can adjust these privileges on a per-table basis to restrict which operation
 *   Prevent `anon` users from accessing a table entirely, making it available only to authenticated users.
 *   Restrict `authenticated` users to `SELECT` and `INSERT` only, preventing updates and deletes.
 
-Table-level privileges work alongside [Row Level Security](/docs/guides/database/postgres/row-level-security). Privileges control _which operations_ are possible, while RLS policies control _which rows_ are accessible. For full protection, use both: restrict privileges to limit operation types, and use RLS policies to control row-level access.
+Table-level privileges work alongside [Row Level Security](../../database/postgres/row-level-security/index.md). Privileges control _which operations_ are possible, while RLS policies control _which rows_ are accessible. For full protection, use both: restrict privileges to limit operation types, and use RLS policies to control row-level access.
 
 ### Adjusting table-level grants via the Dashboard[#](#adjusting-table-level-grants-via-the-dashboard)
 

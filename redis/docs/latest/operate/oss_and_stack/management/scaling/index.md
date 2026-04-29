@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:08:59.318Z"
 content_hash: "8ec4f9ce154684f716953c2471c70fd7eacb363f9f8a3eb5bcc6148e9ecd900c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Scale with Redis Cluster","→","Scale with Redis Cluster"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Scale with Redis Cluster","→","Scale with Redis Cluster"]
-nav_prev: {"path": "../replication/index.md", "title": "Redis replication"}
-nav_next: {"path": "../security/index.md", "title": "Redis security"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/replication/index.md", "title": "Redis replication"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/index.md", "title": "Redis security"}
 ---
 
 # Scale with Redis Cluster
@@ -21,7 +21,7 @@ Redis Open Source
 
 Redis scales horizontally with a deployment topology called Redis Cluster. This topic will teach you how to set up, test, and operate Redis Cluster in production. You will learn about the availability and consistency characteristics of Redis Cluster from the end user's point of view.
 
-If you plan to run a production Redis Cluster deployment or want to understand better how Redis Cluster works internally, consult the [Redis Cluster specification](/docs/latest/operate/oss_and_stack/reference/cluster-spec/). To learn how Redis Enterprise handles scaling, see [Linear Scaling with Redis Enterprise](https://redis.com/redis-enterprise/technology/linear-scaling-redis-enterprise/).
+If you plan to run a production Redis Cluster deployment or want to understand better how Redis Cluster works internally, consult the [Redis Cluster specification](../../reference/cluster-spec/index.md). To learn how Redis Enterprise handles scaling, see [Linear Scaling with Redis Enterprise](https://redis.com/redis-enterprise/technology/linear-scaling-redis-enterprise/).
 
 ## Redis Cluster 101
 
@@ -668,7 +668,7 @@ However there is a special scenario where you want replicas to move from one mas
 
 Note:
 
-You can read the details of replicas migration in the [Redis Cluster Specification](/docs/latest/operate/oss_and_stack/reference/cluster-spec/), here we'll only provide some information about the general idea and what you should do in order to benefit from it.
+You can read the details of replicas migration in the [Redis Cluster Specification](../../reference/cluster-spec/index.md), here we'll only provide some information about the general idea and what you should do in order to benefit from it.
 
 The reason why you may want to let your cluster replicas to move from one master to another under certain condition, is that usually the Redis Cluster is as resistant to failures as the number of replicas attached to a given master.
 
@@ -733,7 +733,7 @@ Starting with Redis 5, if not for backward compatibility, the Redis project no l
 
 ## Learn more
 
-*   [Redis Cluster specification](/docs/latest/operate/oss_and_stack/reference/cluster-spec/)
+*   [Redis Cluster specification](../../reference/cluster-spec/index.md)
 *   [Linear Scaling with Redis Enterprise](https://redis.com/redis-enterprise/technology/linear-scaling-redis-enterprise/)
 *   [Docker documentation](https://docs.docker.com/engine/userguide/networking/dockernetworks/)
 

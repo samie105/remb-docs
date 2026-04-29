@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:51.309Z"
 content_hash: "e40f4029a80156e9e1c3b41a34fd89b80f6fb5331f15c9acc4485ccaf31e95ca"
 menu_path: ["Fetch"]
 section_path: []
-nav_prev: {"path": "../dns/index.md", "title": "DNS"}
-nav_next: {"path": "../tcp/index.md", "title": "TCP"}
+nav_prev: {"path": "bun/docs/runtime/networking/dns/index.md", "title": "DNS"}
+nav_next: {"path": "bun/docs/runtime/networking/tcp/index.md", "title": "TCP"}
 ---
 
 Bun implements the WHATWG `fetch` standard, with some extensions to meet the needs of server-side JavaScript. Bun also implements `node:http`, but `fetch` is generally recommended instead.

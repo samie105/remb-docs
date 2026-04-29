@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:08.451Z"
 content_hash: "921eaa5ebc8c5249845b1c96c9613d6f67cf1ada7a632c82d40ecf9f8d912c1a"
 menu_path: ["Security","Security","Product security","Product security","Security testing","Security testing"]
 section_path: ["Security","Security","Product security","Product security","Security testing","Security testing"]
-nav_prev: {"path": "../product-security/index.md", "title": "Secure configuration of Supabase products"}
-nav_next: {"path": "../soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
+nav_prev: {"path": "supabase/docs/guides/security/product-security/index.md", "title": "Secure configuration of Supabase products"}
+nav_next: {"path": "supabase/docs/guides/security/soc-2-compliance/index.md", "title": "SOC 2 Compliance and Supabase"}
 ---
 
 # 

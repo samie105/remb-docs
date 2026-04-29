@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:21.370Z"
 content_hash: "4a59932a43c8b02f04b4767e42024d9bba8173682ce969d0e102e40e4a320656"
 menu_path: ["Setup"]
 section_path: []
-nav_prev: {"path": "../add-react-to-an-existing-project/index.md", "title": "Add React to an Existing Project"}
-nav_next: {"path": "../editor-setup/index.md", "title": "Editor Setup"}
+nav_prev: {"path": "react/learn/add-react-to-an-existing-project/index.md", "title": "Add React to an Existing Project"}
+nav_next: {"path": "react/learn/editor-setup/index.md", "title": "Editor Setup"}
 ---
 
 React integrates with tools like editors, TypeScript, browser extensions, and compilers. This section will help you get your environment set up.

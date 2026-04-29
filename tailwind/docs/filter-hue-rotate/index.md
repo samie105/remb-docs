@@ -10,8 +10,8 @@ content_hash: "0ad29f2ebf7b3df9d2f602772b477f5997fbe71494a2379c94c3742a43561e13"
 menu_path: ["filter: hue-rotate()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../filter-grayscale/index.md", "title": "filter: grayscale()"}
-nav_next: {"path": "../filter-invert/index.md", "title": "filter: invert()"}
+nav_prev: {"path": "tailwind/docs/filter-grayscale/index.md", "title": "filter: grayscale()"}
+nav_next: {"path": "tailwind/docs/filter-invert/index.md", "title": "filter: invert()"}
 ---
 
 # filter: hue-rotate()
@@ -100,7 +100,7 @@ Prefix a `filter: hue-rotate()` utility with a breakpoint variant like `md:` to 
 <img class="hue-rotate-60 md:hue-rotate-0 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

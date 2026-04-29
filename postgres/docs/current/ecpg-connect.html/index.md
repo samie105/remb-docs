@@ -10,8 +10,8 @@ content_hash: "db84fc964aaf0d115ee1a431611deb20cee8e2b96e821d06127ff3dd95dd3613"
 menu_path: ["PostgreSQL: Documentation: 18: 34.2. Managing Database Connections"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../ecpg-concept.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.1.\u00a0The Concept"}
-nav_next: {"path": "../ecpg-cpp.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.13.\u00a0C++ Applications"}
+nav_prev: {"path": "postgres/docs/current/ecpg-concept.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.1.\u00a0The Concept"}
+nav_next: {"path": "postgres/docs/current/ecpg-cpp.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.13.\u00a0C++ Applications"}
 ---
 
 This section describes how to open, close, and switch database connections.

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:54:05.796Z"
 content_hash: "c8755b61621b7db114f719121c32bfb3a81f660acfb640afa48088c376b9ca6b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Go","→","Redis session store with Go"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis session store","→","Redis session store","→\n      \n        Redis session store with Go","→","Redis session store with Go"]
-nav_prev: {"path": "../dotnet/index.md", "title": "Redis session store with .NET"}
-nav_next: {"path": "../java-jedis/index.md", "title": "Redis session store with Java and Jedis"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/session-store/dotnet/index.md", "title": "Redis session store with .NET"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/session-store/java-jedis/index.md", "title": "Redis session store with Java and Jedis"}
 ---
 
 # Redis session store with Go
 
 Implement a Redis-backed session store in Go with go-redis
 
-This guide shows you how to implement a Redis-backed session store in Go with the [`go-redis`](/docs/latest/develop/clients/go/) client library. It includes a small local web server built with Go's standard `net/http` package so you can see the session lifecycle end to end.
+This guide shows you how to implement a Redis-backed session store in Go with the [`go-redis`](../../../clients/go/index.md) client library. It includes a small local web server built with Go's standard `net/http` package so you can see the session lifecycle end to end.
 
 ## Overview
 
@@ -311,8 +311,8 @@ You now have a complete Redis-backed session example in Go using `go-redis`. Fro
 
 For more Redis data modeling patterns, see:
 
-*   [Session store overview](/docs/latest/develop/use-cases/session-store/)
-*   [Go client guide](/docs/latest/develop/clients/go/)
+*   [Session store overview](../index.md)
+*   [Go client guide](../../../clients/go/index.md)
 *   [Redis data types](/docs/latest/develop/data-types/)
 
 ## On this page

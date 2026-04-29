@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:24.181Z"
 content_hash: "4354f1a1b73075ebccd48943ccba9ec0886c37556822ff61c2824b94b5584054"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis latency monitoring","→","Redis latency monitoring"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Redis latency monitoring","→","Redis latency monitoring"]
-nav_prev: {"path": "../cpu-profiling/index.md", "title": "Redis CPU profiling"}
-nav_next: {"path": "../latency/index.md", "title": "Diagnosing latency issues"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/cpu-profiling/index.md", "title": "Redis CPU profiling"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/latency/index.md", "title": "Diagnosing latency issues"}
 ---
 
 # Redis latency monitoring
@@ -32,7 +32,7 @@ For all these reasons, Redis 2.8.13 introduced a new feature called **Latency Mo
 *   Reporting engine to fetch raw data from the time series.
 *   Analysis engine to provide human-readable reports and hints according to the measurements.
 
-The rest of this document covers the latency monitoring subsystem details. For more information about the general topic of Redis and latency, see [Redis latency problems troubleshooting](/docs/latest/operate/oss_and_stack/management/optimization/latency/).
+The rest of this document covers the latency monitoring subsystem details. For more information about the general topic of Redis and latency, see [Redis latency problems troubleshooting](../latency/index.md).
 
 ## Events and time series
 

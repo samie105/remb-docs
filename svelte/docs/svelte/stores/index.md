@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:23.585Z"
 content_hash: "f3769cc284aebad48e1ee288f580ee5a7b27ccd3760b5b55eb5b23537616f436"
 menu_path: ["Stores"]
 section_path: []
-nav_prev: {"path": "../svelte-options/index.md", "title": "<svelte:options>"}
-nav_next: {"path": "../context/index.md", "title": "Context"}
+nav_prev: {"path": "svelte/docs/svelte/svelte-options/index.md", "title": "<svelte:options>"}
+nav_next: {"path": "svelte/docs/svelte/context/index.md", "title": "Context"}
 ---
 
 A _store_ is an object that allows reactive access to a value via a simple _store contract_. The [`svelte/store` module](../svelte-store) contains minimal store implementations which fulfil this contract.
@@ -648,4 +648,4 @@ For interoperability with RxJS Observables, the `.subscribe` method is also allo
 
 previous next
 
-[<svelte:options>](/docs/svelte/svelte-options) [Context](/docs/svelte/context)
+[<svelte:options>](../svelte-options/index.md) [Context](../context/index.md)

@@ -10,8 +10,8 @@ content_hash: "cf238909375e3ca0aec0faaa5bea2876945ebc651e35926fd9c425ed3b386aca"
 menu_path: ["PostgreSQL: Documentation: 18: 53.5. pg_backend_memory_contexts"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../view-pg-available-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.3.\u00a0pg_available_extensions"}
-nav_next: {"path": "../view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
+nav_prev: {"path": "postgres/docs/current/view-pg-available-extensions.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.3.\u00a0pg_available_extensions"}
+nav_next: {"path": "postgres/docs/current/view-pg-config.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.6.\u00a0pg_config"}
 ---
 
 The view `pg_backend_memory_contexts` displays all the memory contexts of the server process attached to the current session.

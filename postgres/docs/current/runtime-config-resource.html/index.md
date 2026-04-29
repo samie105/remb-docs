@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:25.673Z"
 content_hash: "4081d9e169fb1045d63d2c91434881dc38bc26c169cb67120f16b66d9a8573e2"
 menu_path: ["PostgreSQL: Documentation: 18: 19.4. Resource Consumption"]
 section_path: []
-nav_prev: {"path": "../runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
-nav_next: {"path": "../runtime-config-short.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.18.\u00a0Short Options"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-replication.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.6.\u00a0Replication"}
+nav_next: {"path": "postgres/docs/current/runtime-config-short.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.18.\u00a0Short Options"}
 ---
 
 `shared_buffers` (`integer`) [#](#GUC-SHARED-BUFFERS)

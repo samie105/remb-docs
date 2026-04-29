@@ -10,8 +10,8 @@ content_hash: "18c9d5d07e8e7aad450ac7e4a895de2a1aa029fe0b6488ec42351c8c863712c1"
 menu_path: ["PostgreSQL: Documentation: 18: 53.9. pg_group"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
-nav_next: {"path": "../view-pg-hba-file-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.10.\u00a0pg_hba_file_rules"}
+nav_prev: {"path": "postgres/docs/current/view-pg-file-settings.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.8.\u00a0pg_file_settings"}
+nav_next: {"path": "postgres/docs/current/view-pg-hba-file-rules.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.10.\u00a0pg_hba_file_rules"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-group.html "PostgreSQL devel - 53.9. pg_group")

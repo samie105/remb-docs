@@ -10,8 +10,8 @@ content_hash: "3f666ba4b54e9e03985ea7f511364ecfed2b8f117aaf061fa7517b760ecb1281"
 menu_path: ["Jupyter Kernel for Deno"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../install/index.md", "title": "deno install"}
-nav_next: {"path": "../lint/index.md", "title": "deno lint"}
+nav_prev: {"path": "deno/runtime/reference/cli/install/index.md", "title": "deno install"}
+nav_next: {"path": "deno/runtime/reference/cli/lint/index.md", "title": "deno lint"}
 ---
 
 **On this page**
@@ -85,7 +85,7 @@ Info
 
 You can also use `Deno.jupyter.$display` instead of typing `Symbol.for("Jupyter.display")`
 
-This is a regular function, so you you can use any library you want to format the output - eg. use [`@std/fmt/colors`](/runtime/reference/std/fmt/) to provide a colorful output:
+This is a regular function, so you you can use any library you want to format the output - eg. use [`@std/fmt/colors`](../../std/fmt/index.md) to provide a colorful output:
 
 ```ts
 import * as colors from "jsr:@std/fmt/colors";

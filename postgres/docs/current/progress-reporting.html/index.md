@@ -10,8 +10,8 @@ content_hash: "a51d2214edd0cf339313a67484e51db9b7718113d90915576f17ac1db27ea064"
 menu_path: ["PostgreSQL: Documentation: 18: 27.4. Progress Reporting"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../predefined-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.5.\u00a0Predefined Roles"}
-nav_next: {"path": "../protocol-changes.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.10.\u00a0Summary of Changes since Protocol 2.0"}
+nav_prev: {"path": "postgres/docs/current/predefined-roles.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.5.\u00a0Predefined Roles"}
+nav_next: {"path": "postgres/docs/current/protocol-changes.html/index.md", "title": "PostgreSQL: Documentation: 18: 54.10.\u00a0Summary of Changes since Protocol 2.0"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/progress-reporting.html "PostgreSQL devel - 27.4. Progress Reporting")

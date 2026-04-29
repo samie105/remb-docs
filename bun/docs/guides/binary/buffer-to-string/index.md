@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:49.585Z"
 content_hash: "1683c25cfc25e4eaecc605cd02c9cb7803b4a356376e681bee027cd7745eda8a"
 menu_path: ["Convert a Buffer to a string"]
 section_path: []
-nav_prev: {"path": "../buffer-to-readablestream/index.md", "title": "Convert a Buffer to a ReadableStream"}
-nav_next: {"path": "../buffer-to-typedarray/index.md", "title": "Convert a Buffer to a Uint8Array"}
+nav_prev: {"path": "bun/docs/guides/binary/buffer-to-readablestream/index.md", "title": "Convert a Buffer to a ReadableStream"}
+nav_next: {"path": "bun/docs/guides/binary/buffer-to-typedarray/index.md", "title": "Convert a Buffer to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../buffer-to-typedarray/index.md", "title": "Convert a Buffe
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The [`Buffer`](https://nodejs.org/api/buffer.html) class provides a built-in `.toString()` method that converts a `Buffer` to a string.
 
@@ -55,7 +55,7 @@ const str = buf.toString("utf8", 0, 5);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -67,10 +67,10 @@ Convert an ArrayBuffer to a Uint8Array
 
 Previous
 
-](/docs/guides/binary/arraybuffer-to-typedarray)[
+](../arraybuffer-to-typedarray/index.md)[
 
 Convert a Buffer to an ArrayBuffer
 
 Next
 
-](/docs/guides/binary/buffer-to-arraybuffer)
+](../buffer-to-arraybuffer/index.md)

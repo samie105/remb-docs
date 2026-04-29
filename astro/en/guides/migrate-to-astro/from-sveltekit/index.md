@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:12.305Z"
 content_hash: "6ed7d5a800fe05befb4f9359d2ec53342317a20b0420a6a8f5e8e834ce04f710"
 menu_path: ["Migrating from SvelteKit"]
 section_path: []
-nav_prev: {"path": "../from-pelican/index.md", "title": "Migrating from Pelican"}
-nav_next: {"path": "../from-vuepress/index.md", "title": "Migrating from VuePress"}
+nav_prev: {"path": "astro/en/guides/migrate-to-astro/from-pelican/index.md", "title": "Migrating from Pelican"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-vuepress/index.md", "title": "Migrating from VuePress"}
 ---
 
 # Migrating from SvelteKit
@@ -25,11 +25,11 @@ SvelteKit and Astro share some similarities that will help you migrate your proj
 
 *   Both SvelteKit and Astro are modern JavaScript static-site generators and server-side rendering frameworks.
     
-*   Both SvelteKit and Astro use a [`src/` folder for your project files](/en/basics/project-structure/#src) and a [special folder for file-based routing](/en/basics/astro-pages/). Creating and managing pages for your site should feel familiar.
+*   Both SvelteKit and Astro use a [`src/` folder for your project files](../../../basics/project-structure/index.md#src) and a [special folder for file-based routing](../../../basics/astro-pages/index.md). Creating and managing pages for your site should feel familiar.
     
-*   Astro has [an official integration for using Svelte components](/en/guides/integrations-guide/svelte/) and supports [installing NPM packages](/en/guides/imports/#npm-packages), including several for Svelte. You will be able to write Svelte UI components, and may be able to keep some or all of your existing components and dependencies.
+*   Astro has [an official integration for using Svelte components](../../integrations-guide/svelte/index.md) and supports [installing NPM packages](../../imports/index.md#npm-packages), including several for Svelte. You will be able to write Svelte UI components, and may be able to keep some or all of your existing components and dependencies.
     
-*   Astro and SvelteKit both allow you to use a [headless CMS, APIs or Markdown files for data](/en/guides/data-fetching/). You can continue to use your preferred content authoring system, and will be able to keep your existing content.
+*   Astro and SvelteKit both allow you to use a [headless CMS, APIs or Markdown files for data](../../data-fetching/index.md). You can continue to use your preferred content authoring system, and will be able to keep your existing content.
     
 
 ## Key Differences between SvelteKit and Astro
@@ -40,11 +40,11 @@ When you rebuild your SvelteKit site in Astro, you will notice some important di
 
 *   Astro sites are multi-page apps, whereas SvelteKit defaults to SPAs (single-page applications) with server-side rendering, but can also create MPAs, traditional SPAs, or you can mix and match these techniques within an app.
     
-*   [Components](/en/basics/astro-components/): SvelteKit uses [Svelte](https://svelte.dev). Astro pages are built using [`.astro` components](/en/basics/astro-components/), but can also support [React, Preact, Vue.js, Svelte, SolidJS, AlpineJS](/en/guides/framework-components/) and raw HTML templating.
+*   [Components](../../../basics/astro-components/index.md): SvelteKit uses [Svelte](https://svelte.dev). Astro pages are built using [`.astro` components](../../../basics/astro-components/index.md), but can also support [React, Preact, Vue.js, Svelte, SolidJS, AlpineJS](../../framework-components/index.md) and raw HTML templating.
     
-*   [content-driven](/en/concepts/why-astro/#content-driven): Astro was designed to showcase your content and to allow you to opt-in to interactivity only as needed. An existing SvelteKit app might be built for high client-side interactivity. Astro has built-in capabilities for working with your content, such as page generation, but may require advanced Astro techniques to include items that are more challenging to replicate using `.astro` components, such as dashboards.
+*   [content-driven](../../../concepts/why-astro/index.md#content-driven): Astro was designed to showcase your content and to allow you to opt-in to interactivity only as needed. An existing SvelteKit app might be built for high client-side interactivity. Astro has built-in capabilities for working with your content, such as page generation, but may require advanced Astro techniques to include items that are more challenging to replicate using `.astro` components, such as dashboards.
     
-*   [Markdown-ready](/en/guides/markdown-content/): Astro includes built-in Markdown support, and includes a [special frontmatter YAML `layout` property](/en/basics/layouts/#markdown-layouts) used per-file for page templating. If you are converting a SvelteKit Markdown-based blog, you will not have to install a separate Markdown integration and you will not set a layout via a configuration file. You can bring your existing Markdown files, but you may need to reorganize as Astro’s file-based routing does not require a folder for each page route.
+*   [Markdown-ready](../../markdown-content/index.md): Astro includes built-in Markdown support, and includes a [special frontmatter YAML `layout` property](../../../basics/layouts/index.md#markdown-layouts) used per-file for page templating. If you are converting a SvelteKit Markdown-based blog, you will not have to install a separate Markdown integration and you will not set a layout via a configuration file. You can bring your existing Markdown files, but you may need to reorganize as Astro’s file-based routing does not require a folder for each page route.
     
 
 ## Switch from SvelteKit to Astro
@@ -53,7 +53,7 @@ When you rebuild your SvelteKit site in Astro, you will notice some important di
 
 To convert a SvelteKit blog to Astro, start with our blog theme starter template, or explore more community blog themes in our [theme showcase](https://astro.build/themes/).
 
-You can pass a `--template` argument to the `create astro` command to start a new Astro project with one of our official starters. Or, you can [start a new project from any existing Astro repository on GitHub](/en/install-and-setup/#install-from-the-cli-wizard).
+You can pass a `--template` argument to the `create astro` command to start a new Astro project with one of our official starters. Or, you can [start a new project from any existing Astro repository on GitHub](../../../install-and-setup/index.md#install-from-the-cli-wizard).
 
 *   [npm](#tab-panel-1837)
 *   [pnpm](#tab-panel-1838)
@@ -63,9 +63,9 @@ You can pass a `--template` argument to the `create astro` command to start a ne
 npm create astro@latest -- --template blog
 ```
 
-Bring your existing Markdown (or MDX, with our optional integration) files as content to [create Markdown or MDX pages](/en/guides/markdown-content/).
+Bring your existing Markdown (or MDX, with our optional integration) files as content to [create Markdown or MDX pages](../../markdown-content/index.md).
 
-While file-based routing and layout components are similar in Astro, you may wish to read about [Astro’s project structure](/en/basics/project-structure/) to learn where files should be located.
+While file-based routing and layout components are similar in Astro, you may wish to read about [Astro’s project structure](../../../basics/project-structure/index.md) to learn where files should be located.
 
 To convert other types of sites, such as a portfolio or documentation site, see more official starter templates on [astro.new](https://astro.new). You’ll find a link to each project’s GitHub repository, as well as one-click links to open a working project in StackBlitz and CodeSandbox online development environments.
 
@@ -79,59 +79,59 @@ To convert other types of sites, such as a portfolio or documentation site, see 
 
 *   ![](/logos/create-react-app.svg)
     
-    ### [Create React App](/en/guides/migrate-to-astro/from-create-react-app/)
+    ### [Create React App](../from-create-react-app/index.md)
     
 *   ![](/logos/docusaurus.svg)
     
-    ### [Docusaurus](/en/guides/migrate-to-astro/from-docusaurus/)
+    ### [Docusaurus](../from-docusaurus/index.md)
     
 *   ![](/logos/eleventy.svg)
     
-    ### [Eleventy](/en/guides/migrate-to-astro/from-eleventy/)
+    ### [Eleventy](../from-eleventy/index.md)
     
 *   ![](/logos/gatsby.svg)
     
-    ### [Gatsby](/en/guides/migrate-to-astro/from-gatsby/)
+    ### [Gatsby](../from-gatsby/index.md)
     
 *   ![](/logos/gitbook.svg)
     
-    ### [GitBook](/en/guides/migrate-to-astro/from-gitbook/)
+    ### [GitBook](../from-gitbook/index.md)
     
 *   ![](/logos/gridsome.svg)
     
-    ### [Gridsome](/en/guides/migrate-to-astro/from-gridsome/)
+    ### [Gridsome](../from-gridsome/index.md)
     
 *   ![](/logos/hugo.svg)
     
-    ### [Hugo](/en/guides/migrate-to-astro/from-hugo/)
+    ### [Hugo](../from-hugo/index.md)
     
 *   ![](/logos/jekyll.png)
     
-    ### [Jekyll](/en/guides/migrate-to-astro/from-jekyll/)
+    ### [Jekyll](../from-jekyll/index.md)
     
 *   ![](/logos/nextjs.svg)
     
-    ### [Next.js](/en/guides/migrate-to-astro/from-nextjs/)
+    ### [Next.js](../from-nextjs/index.md)
     
 *   ![](/logos/nuxtjs.svg)
     
-    ### [NuxtJS](/en/guides/migrate-to-astro/from-nuxtjs/)
+    ### [NuxtJS](../from-nuxtjs/index.md)
     
 *   ![](/logos/pelican.svg)
     
-    ### [Pelican](/en/guides/migrate-to-astro/from-pelican/)
+    ### [Pelican](../from-pelican/index.md)
     
 *   ![](/logos/sveltekit.svg)
     
-    ### [SvelteKit](/en/guides/migrate-to-astro/from-sveltekit/)
+    ### [SvelteKit](index.md)
     
 *   ![](/logos/vuepress.png)
     
-    ### [VuePress](/en/guides/migrate-to-astro/from-vuepress/)
+    ### [VuePress](../from-vuepress/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [WordPress](/en/guides/migrate-to-astro/from-wordpress/)
+    ### [WordPress](../from-wordpress/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

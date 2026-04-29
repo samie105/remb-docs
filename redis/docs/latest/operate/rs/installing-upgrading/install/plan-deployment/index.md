@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:37.686Z"
 content_hash: "0f192bf888cddb047debce0c6c2d10058a49524948224d915f58dec0e400dc24"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Install Redis Software","→","Install Redis Software","→\n      \n        Plan Redis Software deployment","→","Plan Redis Software deployment"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Software","→","Redis Software","→\n      \n        Install, set up, and upgrade Redis Software","→","Install, set up, and upgrade Redis Software","→\n      \n        Install Redis Software","→","Install Redis Software","→\n      \n        Plan Redis Software deployment","→","Plan Redis Software deployment"]
-nav_prev: {"path": "../../../../redisinsight/proxy/index.md", "title": "Subpath proxy"}
-nav_next: {"path": "../prepare-install/index.md", "title": "Prepare to install Redis Software"}
+nav_prev: {"path": "redis/docs/latest/operate/redisinsight/proxy/index.md", "title": "Subpath proxy"}
+nav_next: {"path": "redis/docs/latest/operate/rs/installing-upgrading/install/prepare-install/index.md", "title": "Prepare to install Redis Software"}
 ---
 
 # Plan Redis Software deployment
@@ -29,7 +29,7 @@ Before installing Redis Software, you need to:
     
     *   Multiple Linux distributions (Ubuntu, Red Hat Enterprise Linux (RHEL), IBM CentOS, Oracle Linux)
     *   [Amazon AWS AMI](/docs/latest/operate/rs/installing-upgrading/install/plan-deployment/configuring-aws-instances/)
-    *   [Docker container](/docs/latest/operate/rs/installing-upgrading/quickstarts/docker-quickstart/) (for development and testing only)
+    *   [Docker container](../../quickstarts/docker-quickstart/index.md) (for development and testing only)
     *   [Kubernetes](/docs/latest/operate/kubernetes/)
     
     For more details, see [Supported platforms](/docs/latest/operate/rs/installing-upgrading/install/plan-deployment/supported-platforms/).
@@ -49,7 +49,7 @@ After you finish planning your deployment, you can:
 
 *   [Download an installation package](/docs/latest/operate/rs/installing-upgrading/install/prepare-install/download-install-package/).
     
-*   [Prepare to install](/docs/latest/operate/rs/installing-upgrading/install/prepare-install/) Redis Software.
+*   [Prepare to install](../prepare-install/index.md) Redis Software.
     
 *   [View installation questions](/docs/latest/operate/rs/installing-upgrading/install/manage-installation-questions/) and prepare answers before installation.
     

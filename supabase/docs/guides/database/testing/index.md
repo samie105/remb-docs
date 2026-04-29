@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:42:38.548Z"
 content_hash: "d06b5321b385766287831ac0321401b7311fca0c518e0b4cf611c4bf0a081555"
 menu_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Testing your database","Testing your database"]
 section_path: ["Database","Database","Configuration, optimization, and testing","Configuration, optimization, and testing","Testing your database","Testing your database"]
-nav_prev: {"path": "../tables/index.md", "title": "Tables and Data"}
-nav_next: {"path": "../vault/index.md", "title": "Vault"}
+nav_prev: {"path": "supabase/docs/guides/database/tables/index.md", "title": "Tables and Data"}
+nav_next: {"path": "supabase/docs/guides/database/vault/index.md", "title": "Vault"}
 ---
 
 # Testing using the Supabase CLI
 
 You can use the Supabase CLI to test your database. The minimum required version of the CLI is [v1.11.4](https://github.com/supabase/cli/releases). To get started:
 
-*   [Install the Supabase CLI](/docs/guides/cli) on your local machine
+*   [Install the Supabase CLI](../../cli/index.md) on your local machine
 
 ## Creating a test[#](#creating-a-test)
 
@@ -35,7 +35,7 @@ Create a new file with the `.sql` extension which will contain the test.
 
 ## Writing tests[#](#writing-tests)
 
-All `sql` files use [pgTAP](/docs/guides/database/extensions/pgtap) as the test runner.
+All `sql` files use [pgTAP](../extensions/pgtap/index.md) as the test runner.
 
 Let's write a simple test to check that our `auth.users` table has an ID column. Open `hello_world.test.sql` and add the following code:
 
@@ -59,6 +59,6 @@ This will produce the following output:
 
 ## More resources[#](#more-resources)
 
-*   [Testing RLS policies](/docs/guides/database/extensions/pgtap#testing-rls-policies)
-*   [pgTAP extension](/docs/guides/database/extensions/pgtap)
+*   [Testing RLS policies](../extensions/pgtap/index.md#testing-rls-policies)
+*   [pgTAP extension](../extensions/pgtap/index.md)
 *   Official [pgTAP documentation](https://pgtap.org/)

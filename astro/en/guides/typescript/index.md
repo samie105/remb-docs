@@ -9,17 +9,17 @@ last_crawled_at: "2026-04-18T16:41:46.983Z"
 content_hash: "61dce6d0f2f235a17aada11911390578ecb82bb282fdad3265d3c08407968cba"
 menu_path: ["TypeScript"]
 section_path: []
-nav_prev: {"path": "../../editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "../environment-variables/index.md", "title": "Using environment variables"}
+nav_prev: {"path": "astro/en/editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "astro/en/guides/environment-variables/index.md", "title": "Using environment variables"}
 ---
 
 # TypeScript
 
-Astro ships with built-in support for [TypeScript](https://www.typescriptlang.org/). You can import `.ts` and `.tsx` files in your Astro project, write TypeScript code directly inside your [Astro component](/en/basics/astro-components/#the-component-script), and even use an [`astro.config.ts`](/en/guides/configuring-astro/#the-astro-config-file) file for your Astro configuration if you like.
+Astro ships with built-in support for [TypeScript](https://www.typescriptlang.org/). You can import `.ts` and `.tsx` files in your Astro project, write TypeScript code directly inside your [Astro component](../../basics/astro-components/index.md#the-component-script), and even use an [`astro.config.ts`](../configuring-astro/index.md#the-astro-config-file) file for your Astro configuration if you like.
 
 Using TypeScript, you can prevent errors at runtime by defining the shapes of objects and components in your code. For example, if you use TypeScript to [type your component’s props](#component-props), you’ll get an error in your editor if you set a prop that your component doesn’t accept.
 
-You don’t need to write TypeScript code in your Astro projects to benefit from it. Astro always treats your component code as TypeScript, and the [Astro VS Code Extension](/en/editor-setup/) will infer as much as it can to provide autocompletion, hints, and errors in your editor.
+You don’t need to write TypeScript code in your Astro projects to benefit from it. Astro always treats your component code as TypeScript, and the [Astro VS Code Extension](../../editor-setup/index.md) will infer as much as it can to provide autocompletion, hints, and errors in your editor.
 
 The Astro dev server won’t perform any type checking, but you can use a [separate script](#type-checking) to check for type errors from the command line.
 
@@ -53,7 +53,7 @@ Additionally, we recommend setting `include` and `exclude` as follows to benefit
 
 The [Astro TypeScript plugin](https://www.npmjs.com/package/@astrojs/ts-plugin) can be installed separately when you are not using the [official Astro VS Code extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode). This plugin is automatically installed and configured by the VS Code extension, and you do not need to install both.
 
-This plugin runs only in the editor. When running `tsc` in the terminal, `.astro` files are ignored entirely. Instead, you can use [the `astro check` CLI command](/en/reference/cli-reference/#astro-check) to check both `.astro` and `.ts` files.
+This plugin runs only in the editor. When running `tsc` in the terminal, `.astro` files are ignored entirely. Instead, you can use [the `astro check` CLI command](../../reference/cli-reference/index.md#astro-check) to check both `.astro` and `.ts` files.
 
 This plugin also supports importing `.astro` files from `.ts` files (which can be useful for re-exporting).
 
@@ -77,7 +77,7 @@ To check that the plugin is working, create a `.ts` file and import an Astro com
 
 [Section titled “UI Frameworks”](#ui-frameworks)
 
-If your project uses a [UI framework](/en/guides/framework-components/), additional settings depending on the framework might be needed. Please see your framework’s TypeScript documentation for more information. ([Vue](https://vuejs.org/guide/typescript/overview.html#using-vue-with-typescript), [React](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup), [Preact](https://preactjs.com/guide/v10/typescript), [Solid](https://www.solidjs.com/guides/typescript), [Svelte](https://svelte.dev/docs/svelte/typescript))
+If your project uses a [UI framework](../framework-components/index.md), additional settings depending on the framework might be needed. Please see your framework’s TypeScript documentation for more information. ([Vue](https://vuejs.org/guide/typescript/overview.html#using-vue-with-typescript), [React](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup), [Preact](https://preactjs.com/guide/v10/typescript), [Solid](https://www.solidjs.com/guides/typescript), [Svelte](https://svelte.dev/docs/svelte/typescript))
 
 ## Type Imports
 
@@ -101,7 +101,7 @@ You can configure TypeScript to enforce type imports in your `tsconfig.json` fil
 
 [Section titled “Import Aliases”](#import-aliases)
 
-Astro supports import aliases that you define in your `tsconfig.json` `paths` configuration. [Read our imports guide](/en/guides/imports/#aliases) to learn more.
+Astro supports import aliases that you define in your `tsconfig.json` `paths` configuration. [Read our imports guide](../imports/index.md#aliases) to learn more.
 
 ```
 ---import HelloWorld from "@components/HelloWorld.astro";import Layout from "@layouts/Layout.astro";---
@@ -170,7 +170,7 @@ A `.d.ts` file is an [ambient module](https://www.typescriptlang.org/docs/handbo
 
 [Section titled “Component Props”](#component-props)
 
-Astro supports typing your component props via TypeScript. To enable, add a TypeScript `Props` interface to your component frontmatter. An `export` statement may be used, but is not necessary. The [Astro VS Code Extension](/en/editor-setup/) will automatically look for the `Props` interface and give you proper TS support when you use that component inside another template.
+Astro supports typing your component props via TypeScript. To enable, add a TypeScript `Props` interface to your component frontmatter. An `export` statement may be used, but is not necessary. The [Astro VS Code Extension](../../editor-setup/index.md) will automatically look for the `Props` interface and give you proper TS support when you use that component inside another template.
 
 ```
 ---interface Props {  name: string;  greeting?: string;}
@@ -244,9 +244,9 @@ const { as: Tag, ...props } = Astro.props;---<Tag {...props} />
 
 **Added in:** `astro@2.1.0`
 
-Astro includes helpers for working with the types returned by your [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths) function for dynamic routes.
+Astro includes helpers for working with the types returned by your [`getStaticPaths()`](../../reference/routing-reference/index.md#getstaticpaths) function for dynamic routes.
 
-You can get the type of [`Astro.params`](/en/reference/api-reference/#params) with `InferGetStaticParamsType` and the type of [`Astro.props`](/en/reference/api-reference/#props) with `InferGetStaticPropsType` or you can use `GetStaticPaths` to infer both at once:
+You can get the type of [`Astro.params`](../../reference/api-reference/index.md#params) with `InferGetStaticParamsType` and the type of [`Astro.props`](../../reference/api-reference/index.md#props) with `InferGetStaticPropsType` or you can use `GetStaticPaths` to infer both at once:
 
 ```
 ---import type {  InferGetStaticParamsType,  InferGetStaticPropsType,  GetStaticPaths,} from "astro";
@@ -260,13 +260,13 @@ const { title } = Astro.props;//                      ^? { draft: boolean; title
 
 [Section titled “Type checking”](#type-checking)
 
-To see type errors in your editor, please make sure that you have the [Astro VS Code extension](/en/editor-setup/) installed. Please note that the `astro start` and `astro build` commands will transpile the code with esbuild, but will not run any type checking. To prevent your code from building if it contains TypeScript errors, change your “build” script in `package.json` to the following:
+To see type errors in your editor, please make sure that you have the [Astro VS Code extension](../../editor-setup/index.md) installed. Please note that the `astro start` and `astro build` commands will transpile the code with esbuild, but will not run any type checking. To prevent your code from building if it contains TypeScript errors, change your “build” script in `package.json` to the following:
 
 ```
 {  "scripts": {    "build": "astro build",    "build": "astro check && astro build",  },}
 ```
 
-Read more about [`.ts` file imports](/en/guides/imports/#typescript) in Astro.
+Read more about [`.ts` file imports](../imports/index.md#typescript) in Astro.
 
 Read more about [TypeScript Configuration](https://www.typescriptlang.org/tsconfig/).
 
@@ -289,4 +289,4 @@ For the default setting of `jsxImportSource: react`, you would use:
 // For Solid/** @jsxImportSource solid-js */
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:40.425Z"
 content_hash: "761951b9e106c87baf4fe2e9f660fc3f1ec151dc84f4882d48e568019fd2667d"
 menu_path: ["Append content to a file"]
 section_path: []
-nav_prev: {"path": "../../websocket/simple/index.md", "title": "Build a simple WebSocket server"}
-nav_next: {"path": "../basic/index.md", "title": "Write a string to a file"}
+nav_prev: {"path": "bun/docs/guides/websocket/simple/index.md", "title": "Build a simple WebSocket server"}
+nav_next: {"path": "bun/docs/guides/write-file/basic/index.md", "title": "Write a string to a file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../basic/index.md", "title": "Write a string to a file"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun implements the `node:fs` module, which includes the `fs.appendFile` and `fs.appendFileSync` functions for appending content to files.
 
@@ -94,10 +94,10 @@ Write a Response to a file
 
 Previous
 
-](/docs/guides/write-file/response)[
+](../response/index.md)[
 
 Write a file incrementally
 
 Next
 
-](/docs/guides/write-file/filesink)
+](../filesink/index.md)

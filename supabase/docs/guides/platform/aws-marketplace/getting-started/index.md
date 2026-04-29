@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:44.795Z"
 content_hash: "c4f7a0007abb4061ddb34091531b97b41e04ecbe3de742cb9d39c56265fe82f9"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Getting Started","Getting Started"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Getting Started","Getting Started"]
-nav_prev: {"path": "../faq/index.md", "title": "AWS Marketplace FAQ"}
-nav_next: {"path": "../invoices/index.md", "title": "Invoices"}
+nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/faq/index.md", "title": "AWS Marketplace FAQ"}
+nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/invoices/index.md", "title": "Invoices"}
 ---
 
 # 
@@ -49,9 +49,9 @@ Spend Cap available
 
 Downgrade Behaviour
 
-If a downgrade to the Free Plan causes you to exceed the [free projects limit](/docs/guides/platform/billing-on-supabase#free-plan), all projects will be paused.
+If a downgrade to the Free Plan causes you to exceed the [free projects limit](../../billing-on-supabase/index.md#free-plan), all projects will be paused.
 
-If a downgrade to the Free Plan causes you to exceed the [free projects limit](/docs/guides/platform/billing-on-supabase#free-plan), you have the option to prevent pausing by transferring projects.
+If a downgrade to the Free Plan causes you to exceed the [free projects limit](../../billing-on-supabase/index.md#free-plan), you have the option to prevent pausing by transferring projects.
 
 Invoicing
 
@@ -81,7 +81,7 @@ Select the desired plan (Pro Plan or Team Plan) and configure whether the subscr
 
 Disabling auto-renewal means that the subscription will be downgraded to the Free Plan after one month.
 
-If the downgrade causes you to exceed the [free projects limit](/docs/guides/platform/billing-on-supabase#free-plan), **all** projects within the organization will be paused. We do not make the decision about which projects continue to run and which are paused. You must then decide which projects you want to keep active and manually reactivate them through the Supabase dashboard.
+If the downgrade causes you to exceed the [free projects limit](../../billing-on-supabase/index.md#free-plan), **all** projects within the organization will be paused. We do not make the decision about which projects continue to run and which are paused. You must then decide which projects you want to keep active and manually reactivate them through the Supabase dashboard.
 
 ![Supabase purchase options on the AWS Marketplace](/docs/img/guides/platform/aws-marketplace-listing-purchase-options.png)
 

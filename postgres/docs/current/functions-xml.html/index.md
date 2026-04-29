@@ -10,8 +10,8 @@ content_hash: "f86aed342b3bb24961bd5aaaedd285b9aa1f5d0f2cf7d3e1fde4ad314b679b9f"
 menu_path: ["PostgreSQL: Documentation: 18: 9.15. XML Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
-nav_next: {"path": "../geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
+nav_prev: {"path": "postgres/docs/current/functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
+nav_next: {"path": "postgres/docs/current/geqo-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 61.1.\u00a0Query Handling as a Complex Optimization Problem"}
 ---
 
 The functions and function-like expressions described in this section operate on values of type `xml`. See [Section 8.13](https://www.postgresql.org/docs/current/datatype-xml.html "8.13. XML Type") for information about the `xml` type. The function-like expressions `xmlparse` and `xmlserialize` for converting to and from type `xml` are documented there, not in this section.

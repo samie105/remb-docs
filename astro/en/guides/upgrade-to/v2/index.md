@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:41:51.999Z"
 content_hash: "f91ca978684f3f98f4952cf2ab4928f51a7879eeb4de25934bd7534f1ee1b50a"
 menu_path: ["Upgrade to Astro v2"]
 section_path: []
-nav_prev: {"path": "../v3/index.md", "title": "Upgrade to Astro v3"}
-nav_next: {"path": "../v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
+nav_prev: {"path": "astro/en/guides/upgrade-to/v3/index.md", "title": "Upgrade to Astro v3"}
+nav_next: {"path": "astro/en/guides/upgrade-to/v1/index.md", "title": "Legacy v0.x Upgrade Guide"}
 ---
 
 # Upgrade to Astro v2
 
 This guide will help you migrate from Astro v1 to Astro v2.
 
-Need to upgrade an older project to v1? See our [older migration guide](/en/guides/upgrade-to/v1/).
+Need to upgrade an older project to v1? See our [older migration guide](../v1/index.md).
 
 ## Upgrade Astro
 
@@ -64,7 +64,7 @@ Check that both your development environment and your deployment environment are
     
     If your local development environment needs upgrading, [install Node](https://nodejs.org/en/download/).
     
-2.  Check your [deployment environment’s](/en/guides/deploy/) own documentation to verify that they support Node 16.
+2.  Check your [deployment environment’s](../../deploy/index.md) own documentation to verify that they support Node 16.
     
     You can specify Node `16.12.0` for your Astro project either in a dashboard configuration setting, or a `.nvmrc` file.
     
@@ -73,13 +73,13 @@ Check that both your development environment and your deployment environment are
 
 [Section titled “Reserved: src/content/”](#reserved-srccontent)
 
-Astro v2.0 now includes the Collections API for organizing your Markdown and MDX files into [content collections](/en/guides/content-collections/). This API reserves `src/content/` as a special folder.
+Astro v2.0 now includes the Collections API for organizing your Markdown and MDX files into [content collections](../../content-collections/index.md). This API reserves `src/content/` as a special folder.
 
 #### What should I do?
 
 [Section titled “What should I do?”](#what-should-i-do-1)
 
-Rename an existing `src/content/` folder to avoid conflicts. This folder, if it exists, can now only be used for [content collections](/en/guides/content-collections/).
+Rename an existing `src/content/` folder to avoid conflicts. This folder, if it exists, can now only be used for [content collections](../../content-collections/index.md).
 
 ### Changed: `Astro.site` trailing slash
 
@@ -117,7 +117,7 @@ Astro v2.0 moves and unifies the location of all build output assets to a new `_
         
     
 
-You can control this location with the [new `build.assets` configuration option](/en/reference/configuration-reference/#buildassets).
+You can control this location with the [new `build.assets` configuration option](../../../reference/configuration-reference/index.md#buildassets).
 
 #### What should I do?
 
@@ -184,7 +184,7 @@ In v1.x, the MDX integration’s `extendPlugins` option managed how your MDX fil
 
 Astro v2.0 replaces the behavior controlled by `mdx.extendPlugins` with three new, independently-configurable options that are `true` by default:
 
-*   **[`mdx.extendMarkdownConfig`](/en/guides/integrations-guide/mdx/#extendmarkdownconfig)** to inherit all or none of your Markdown configuration
+*   **[`mdx.extendMarkdownConfig`](../../integrations-guide/mdx/index.md#extendmarkdownconfig)** to inherit all or none of your Markdown configuration
 *   **`mdx.gfm`** to enable or disable GitHub-Flavored Markdown in MDX
 *   **`mdx.smartypants`** to enable or disable SmartyPants in MDX
 
@@ -210,7 +210,7 @@ export default defineConfig({  integrations: [    mdx({      extendPlugins: 'def
 
 [Section titled “Added: More MDX config options to match Markdown”](#added-more-mdx-config-options-to-match-markdown)
 
-Astro v2.0 allows you to now individually set [every available Markdown configuration option](/en/reference/configuration-reference/#markdown-options) (except `drafts`) separately in your MDX integration configuration.
+Astro v2.0 allows you to now individually set [every available Markdown configuration option](../../../reference/configuration-reference/index.md#markdown-options) (except `drafts`) separately in your MDX integration configuration.
 
 ```
 import { defineConfig } from 'astro/config';import mdx from '@astrojs/mdx';
@@ -260,7 +260,7 @@ export async function get(context) {  return rss({    items: await pagesGlobToRs
 
 [Section titled “Changed: Svelte IDE support”](#changed-svelte-ide-support)
 
-Astro v2.0 requires a `svelte.config.js` file in your project if you are using [the `@astrojs/svelte` integration](/en/guides/integrations-guide/svelte/). This is needed to provide IDE autocompletion.
+Astro v2.0 requires a `svelte.config.js` file in your project if you are using [the `@astrojs/svelte` integration](../../integrations-guide/svelte/index.md). This is needed to provide IDE autocompletion.
 
 #### What should I do?
 
@@ -293,7 +293,7 @@ Remove this legacy flag. It is no longer available in Astro.
 export default defineConfig({  legacy: {    astroFlavoredMarkdown: true,  },})
 ```
 
-If you were using this feature in v1.x, we recommend [using the MDX integration](/en/guides/integrations-guide/mdx/) which allows you to combine components and JSX expressions with Markdown syntax.
+If you were using this feature in v1.x, we recommend [using the MDX integration](../../integrations-guide/mdx/index.md) which allows you to combine components and JSX expressions with Markdown syntax.
 
 ### Removed: `Astro.resolve()`
 
@@ -326,7 +326,7 @@ Astro v2.0 removes this option entirely. `Astro.fetchContent()` in your code wil
 
 [Section titled “What should I do?”](#what-should-i-do-13)
 
-Use `Astro.glob()` to fetch Markdown files, or convert to the [Content Collections](/en/guides/content-collections/) feature.
+Use `Astro.glob()` to fetch Markdown files, or convert to the [Content Collections](../../content-collections/index.md) feature.
 
 ```
 ---const allPosts = await Astro.glob('./posts/*.md');---
@@ -377,8 +377,8 @@ export default defineConfig({  experimental: {    contentCollections: true,    p
 
 These features are now available by default:
 
-*   [Content collections](/en/guides/content-collections/) as a way to manage your Markdown and MDX files with type-safety.
-*   [Prerendering individual pages to static HTML](/en/guides/on-demand-rendering/) when using SSR to improve speed and cacheability.
+*   [Content collections](../../content-collections/index.md) as a way to manage your Markdown and MDX files with type-safety.
+*   [Prerendering individual pages to static HTML](../../on-demand-rendering/index.md) when using SSR to improve speed and cacheability.
 *   A redesigned error message overlay.
 
 ## Known Issues
@@ -387,4 +387,4 @@ These features are now available by default:
 
 There are currently no known issues.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

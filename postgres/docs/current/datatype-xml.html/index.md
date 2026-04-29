@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:26.247Z"
 content_hash: "c73af89a29ca501db039ce197df6f5204a026bb5e44bb9416eae99c8f43ca7e3"
 menu_path: ["PostgreSQL: Documentation: 18: 8.13. XML Type"]
 section_path: []
-nav_prev: {"path": "../contrib-dblink-get-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_get_notify"}
-nav_next: {"path": "../datetime-config-files.html/index.md", "title": "PostgreSQL: Documentation: 18: B.4.\u00a0Date/Time Configuration Files"}
+nav_prev: {"path": "postgres/docs/current/contrib-dblink-get-notify.html/index.md", "title": "PostgreSQL: Documentation: 18: dblink_get_notify"}
+nav_next: {"path": "postgres/docs/current/datetime-config-files.html/index.md", "title": "PostgreSQL: Documentation: 18: B.4.\u00a0Date/Time Configuration Files"}
 ---
 
 The `xml` data type can be used to store XML data. Its advantage over storing XML data in a `text` field is that it checks the input values for well-formedness, and there are support functions to perform type-safe operations on it; see [Section 9.15](https://www.postgresql.org/docs/current/functions-xml.html "9.15. XML Functions"). Use of this data type requires the installation to have been built with `configure --with-libxml`.

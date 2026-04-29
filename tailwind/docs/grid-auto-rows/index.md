@@ -10,8 +10,8 @@ content_hash: "1163f35ebddf6c69b33535921bbac7958c1576141b4ef9d4a9968d00c3cf981b"
 menu_path: ["grid-auto-rows"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../grid-auto-columns/index.md", "title": "grid-auto-columns"}
-nav_next: {"path": "../gap/index.md", "title": "gap"}
+nav_prev: {"path": "tailwind/docs/grid-auto-columns/index.md", "title": "grid-auto-columns"}
+nav_next: {"path": "tailwind/docs/gap/index.md", "title": "gap"}
 ---
 
 # grid-auto-rows
@@ -76,7 +76,7 @@ Prefix a `grid-auto-rows` utility with a breakpoint variant like `md:` to only a
 <div class="grid grid-flow-row auto-rows-max md:auto-rows-min ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

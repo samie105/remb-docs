@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:30.205Z"
 content_hash: "7bd09a758bece3b89c9d7a887d852a8da473d79338ae2ab976c1ca54a8c2eba0"
 menu_path: ["Module is only available server-side"]
 section_path: []
-nav_prev: {"path": "../route-not-found/index.md", "title": "Route not found."}
-nav_next: {"path": "../session-config-missing-error/index.md", "title": "Session storage was enabled but not configured."}
+nav_prev: {"path": "astro/en/reference/errors/route-not-found/index.md", "title": "Route not found."}
+nav_next: {"path": "astro/en/reference/errors/session-config-missing-error/index.md", "title": "Session storage was enabled but not configured."}
 ---
 
 # Module is only available server-side
@@ -23,4 +23,4 @@ nav_next: {"path": "../session-config-missing-error/index.md", "title": "Session
 
 This module is only available server-side.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

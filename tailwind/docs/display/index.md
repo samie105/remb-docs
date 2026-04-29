@@ -10,8 +10,8 @@ content_hash: "b8af814192628a81b773ee2591421c955291d8b2a06599740850d872230334cf"
 menu_path: ["display"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../box-sizing/index.md", "title": "box-sizing"}
-nav_next: {"path": "../float/index.md", "title": "float"}
+nav_prev: {"path": "tailwind/docs/box-sizing/index.md", "title": "box-sizing"}
+nav_next: {"path": "tailwind/docs/float/index.md", "title": "float"}
 ---
 
 Utilities for controlling the display box type of an element.

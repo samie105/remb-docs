@@ -10,8 +10,8 @@ content_hash: "18c1d6c41b259de6bf2164a679344d1c830242f3b44638704bb585a30d952027"
 menu_path: ["Null and undefined"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../composite-types/index.md", "title": "Composite types"}
-nav_next: {"path": "../working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/composite-types/index.md", "title": "Composite types"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-composite-ids-and-constraints/index.md", "title": "Working with compound IDs and unique constraints"}
 ---
 
 The `strictUndefinedChecks` preview feature changes how Prisma Client handles `undefined` values, offering better protection against accidental data loss or unintended query behavior.

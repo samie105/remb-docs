@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:26.402Z"
 content_hash: "aecadcde6d9ce9c2413196f9eb156a6ef15bc456ff9aa3a9a0ca71ee840f6d25"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","GitHub","GitHub"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","GitHub","GitHub"]
-nav_prev: {"path": "../auth-figma/index.md", "title": "Login with Figma"}
-nav_next: {"path": "../auth-gitlab/index.md", "title": "Login with GitLab"}
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-figma/index.md", "title": "Login with Figma"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-gitlab/index.md", "title": "Login with GitLab"}
 ---
 
 # 
@@ -46,9 +46,9 @@ When testing OAuth locally with the Supabase CLI, ensure your OAuth provider is 
 
 If this callback URL is missing or misconfigured, OAuth sign-in may fail or not redirect correctly during local development.
 
-See the [local development docs](/docs/guides/local-development) for more details.
+See the [local development docs](../../../local-development/index.md) for more details.
 
-For testing OAuth locally with the Supabase CLI see the [local development docs](/docs/guides/local-development).
+For testing OAuth locally with the Supabase CLI see the [local development docs](../../../local-development/index.md).
 
 ## Register a new OAuth application on GitHub[#](#register-a-new-oauth-application-on-github)
 
@@ -85,7 +85,7 @@ You can also configure the GitHub auth provider using the Management API:
 
 Make sure you're using the right `supabase` client in the following code.
 
-If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](/docs/guides/auth/server-side/creating-a-client) for instructions on creating your Supabase client.
+If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](../../server-side/creating-a-client/index.md) for instructions on creating your Supabase client.
 
 When your user signs in, call [`signInWithOAuth()`](/docs/reference/javascript/auth-signinwithoauth) with `github` as the `provider`:
 
@@ -93,7 +93,7 @@ When your user signs in, call [`signInWithOAuth()`](/docs/reference/javascript/a
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6async function signInWithGithub() {7  const { data, error } = await supabase.auth.signInWithOAuth({8    provider: 'github',9  })10}
 ```
 
-For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](/docs/guides/auth/redirect-urls).
+For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](../../redirect-urls/index.md).
 
 In the browser, `signInWithOAuth` automatically redirects to the OAuth provider's authentication endpoint, which then redirects to your endpoint.
 

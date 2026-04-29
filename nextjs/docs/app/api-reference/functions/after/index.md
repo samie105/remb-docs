@@ -11,8 +11,8 @@ menu_path: ["after"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Functions"}
-nav_next: {"path": "../cacheLife/index.md", "title": "cacheLife"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/index.md", "title": "Functions"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/cacheLife/index.md", "title": "cacheLife"}
 ---
 
 # after
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 `after` allows you to schedule work to be executed after a response (or prerender) is finished. This is useful for tasks and other side effects that should not block the response, such as logging and analytics.
 
-It can be used in [Server Components](/docs/app/getting-started/server-and-client-components) (including [`generateMetadata`](/docs/app/api-reference/functions/generate-metadata)), [Server Functions](/docs/app/getting-started/mutating-data), [Route Handlers](/docs/app/api-reference/file-conventions/route), and [Proxy](/docs/app/api-reference/file-conventions/proxy).
+It can be used in [Server Components](../../../getting-started/server-and-client-components/index.md) (including [`generateMetadata`](../generate-metadata/index.md)), [Server Functions](../../../getting-started/mutating-data/index.md), [Route Handlers](../../file-conventions/route/index.md), and [Proxy](../../file-conventions/proxy/index.md).
 
 The function accepts a callback that will be executed after the response (or prerender) is finished:
 
@@ -43,7 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 }
 ```
 
-> **Good to know:** `after` is not a [Request-time API](/docs/app/glossary#request-time-apis) and calling it does not cause a route to become dynamic. If it's used within a static page, the callback will execute at build time, or whenever a page is revalidated.
+> **Good to know:** `after` is not a [Request-time API](../../../glossary/index.md#request-time-apis) and calling it does not cause a route to become dynamic. If it's used within a static page, the callback will execute at build time, or whenever a page is revalidated.
 
 ## Reference[](#reference)
 
@@ -53,7 +53,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 ### Duration[](#duration)
 
-`after` will run for the platform's default or configured max duration of your route. If your platform supports it, you can configure the timeout limit using the [`maxDuration`](/docs/app/api-reference/file-conventions/route-segment-config/maxDuration) route segment config.
+`after` will run for the platform's default or configured max duration of your route. If your platform supports it, you can configure the timeout limit using the [`maxDuration`](../../file-conventions/route-segment-config/maxDuration/index.md) route segment config.
 
 ## Good to know[](#good-to-know)
 
@@ -65,11 +65,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 ### With request APIs[](#with-request-apis)
 
-Whether you can use request APIs like [`cookies`](/docs/app/api-reference/functions/cookies) and [`headers`](/docs/app/api-reference/functions/headers) inside `after` depends on where `after` is called from.
+Whether you can use request APIs like [`cookies`](../cookies/index.md) and [`headers`](../headers/index.md) inside `after` depends on where `after` is called from.
 
 #### In Route Handlers and Server Functions[](#in-route-handlers-and-server-functions)
 
-You can call `cookies` and `headers` directly inside the `after` callback when used in [Route Handlers](/docs/app/api-reference/file-conventions/route) and [Server Functions](/docs/app/getting-started/mutating-data). This is useful for logging activity after a mutation or API request. For example:
+You can call `cookies` and `headers` directly inside the `after` callback when used in [Route Handlers](../../file-conventions/route/index.md) and [Server Functions](../../../getting-started/mutating-data/index.md). This is useful for logging activity after a mutation or API request. For example:
 
 app/api/route.ts
 
@@ -102,7 +102,7 @@ export async function POST(request: Request) {
 
 #### In Server Components (pages and layouts)[](#in-server-components-pages-and-layouts)
 
-[Server Components](/docs/app/getting-started/server-and-client-components) (including pages, layouts, and `generateMetadata`) **cannot** use `cookies`, `headers`, or other Request-time APIs inside `after`. This is because Next.js needs to know which part of the component tree accesses request data to support [Partial Prerendering](/docs/app/glossary#partial-prerendering-ppr) and [Cache Components](/docs/app/getting-started/caching), but `after` runs after React's rendering lifecycle.
+[Server Components](../../../getting-started/server-and-client-components/index.md) (including pages, layouts, and `generateMetadata`) **cannot** use `cookies`, `headers`, or other Request-time APIs inside `after`. This is because Next.js needs to know which part of the component tree accesses request data to support [Partial Prerendering](../../../glossary/index.md#partial-prerendering-ppr) and [Cache Components](../../../getting-started/caching/index.md), but `after` runs after React's rendering lifecycle.
 
 If you need request data inside an `after` callback in a Server Component, read it beforehand and pass the values in:
 
@@ -135,7 +135,7 @@ Calling `cookies()` or `headers()` inside the `after` callback in a Server Compo
 
 #### With Cache Components[](#with-cache-components)
 
-When using [Cache Components](/docs/app/getting-started/caching), components that access request data like `cookies` or `headers` must be wrapped in [`<Suspense>`](https://react.dev/reference/react/Suspense) so the rest of the page can be prerendered into a static shell.
+When using [Cache Components](../../../getting-started/caching/index.md), components that access request data like `cookies` or `headers` must be wrapped in [`<Suspense>`](https://react.dev/reference/react/Suspense) so the rest of the page can be prerendered into a static shell.
 
 You can combine this pattern with `after` by reading request data in a dynamic component and passing it into `after`:
 
@@ -179,12 +179,12 @@ In this example, `<h1>` and the `<Suspense>` fallback are included in the static
 
 | Deployment Option | Supported |
 | --- | --- |
-| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
-| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
-| [Static export](/docs/app/getting-started/deploying#static-export) | No |
-| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
+| [Node.js server](../../../getting-started/deploying/index.md#nodejs-server) | Yes |
+| [Docker container](../../../getting-started/deploying/index.md#docker) | Yes |
+| [Static export](../../../getting-started/deploying/index.md#static-export) | No |
+| [Adapters](../../../getting-started/deploying/index.md#adapters) | Platform-specific |
 
-Learn how to [configure `after`](/docs/app/guides/self-hosting#after) when self-hosting Next.js.
+Learn how to [configure `after`](../../../guides/self-hosting/index.md#after) when self-hosting Next.js.
 
 **Reference: supporting after for serverless platforms**
 

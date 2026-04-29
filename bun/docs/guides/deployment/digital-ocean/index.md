@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:33.976Z"
 content_hash: "c5712831026b8e28ca85cb1a04d45816c079affd9e38cc90d66cb8332d3dc9bf"
 menu_path: ["Deploy a Bun application on DigitalOcean"]
 section_path: []
-nav_prev: {"path": "../aws-lambda/index.md", "title": "Deploy a Bun application on AWS Lambda"}
-nav_next: {"path": "../google-cloud-run/index.md", "title": "Deploy a Bun application on Google Cloud Run"}
+nav_prev: {"path": "bun/docs/guides/deployment/aws-lambda/index.md", "title": "Deploy a Bun application on AWS Lambda"}
+nav_next: {"path": "bun/docs/guides/deployment/google-cloud-run/index.md", "title": "Deploy a Bun application on Google Cloud Run"}
 ---
 
 # Use the official Bun image to run the application

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:24.745Z"
 content_hash: "e92c8c94fbe67e09ae6ccf8016d85e6b9c0cdf436ab854e41554b48aa299b42c"
 menu_path: ["Storage","Storage","More","More","More","S3","S3","Authentication","Authentication"]
 section_path: ["Storage","Storage","More","More","More","S3","S3","Authentication","Authentication"]
-nav_prev: {"path": "../../quickstart/index.md", "title": "Storage Quickstart"}
-nav_next: {"path": "../compatibility/index.md", "title": "S3 Compatibility"}
+nav_prev: {"path": "supabase/docs/guides/storage/quickstart/index.md", "title": "Storage Quickstart"}
+nav_next: {"path": "supabase/docs/guides/storage/s3/compatibility/index.md", "title": "S3 Compatibility"}
 ---
 
 # 
@@ -68,4 +68,4 @@ Typically we advise against using `getSession`, because the session is read from
 1import { S3Client } from '@aws-sdk/client-s3'23const {4  data: { session },5} = await supabase.auth.getSession()67const client = new S3Client({8  forcePathStyle: true,9  region: 'project_region',10  endpoint: 'https://project_ref.storage.supabase.co/storage/v1/s3',11  credentials: {12    accessKeyId: 'project_ref',13    secretAccessKey: 'anonKey',14    sessionToken: session.access_token,15  },16})
 ```
 
-On self-hosted Supabase, the `accessKeyId` is the `STORAGE_TENANT_ID` environment variable defined in the `.env` file. Refer to the [self-hosted S3 guide](/docs/guides/self-hosting/self-hosted-s3#session-token) for more details.
+On self-hosted Supabase, the `accessKeyId` is the `STORAGE_TENANT_ID` environment variable defined in the `.env` file. Refer to the [self-hosted S3 guide](../../../self-hosting/self-hosted-s3/index.md#session-token) for more details.

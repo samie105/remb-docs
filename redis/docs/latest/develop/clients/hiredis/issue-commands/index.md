@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:03:43.933Z"
 content_hash: "014da858ec99e94231c58513deb4f1c1c7e855405305f002ab8311fb51db1631"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Issue commands","→","Issue commands"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        hiredis guide (C)","→","hiredis guide (C)","→\n      \n        Issue commands","→","Issue commands"]
-nav_prev: {"path": "../connect/index.md", "title": "Connect"}
-nav_next: {"path": "../../ioredis/index.md", "title": "ioredis guide (JavaScript)"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/hiredis/connect/index.md", "title": "Connect"}
+nav_next: {"path": "redis/docs/latest/develop/clients/ioredis/index.md", "title": "ioredis guide (JavaScript)"}
 ---
 
 # Issue commands
@@ -29,7 +29,7 @@ Use the `redisCommand()` function to send commands to the server:
 void *redisCommand(redisContext *c, const char *format, ...);
 ```
 
-This function receives a `redisContext` pointer and a pointer to a string containing the command (see [Connect](/docs/latest/develop/clients/hiredis/connect/) to learn how to obtain the context pointer). The command text is the same as the equivalent [`redis-cli`](/docs/latest/develop/tools/cli/) command. For example, to issue the command:
+This function receives a `redisContext` pointer and a pointer to a string containing the command (see [Connect](../connect/index.md) to learn how to obtain the context pointer). The command text is the same as the equivalent [`redis-cli`](../../../tools/cli/index.md) command. For example, to issue the command:
 
 ```
 SET foo bar
@@ -53,7 +53,7 @@ char *myValue = "Hello";
 redisReply *reply = redisCommand(c, "SET key:%s %s", myKeyNumber, myValue);
 ```
 
-You may need to include binary data in the command (for example, to store [vector embeddings](/docs/latest/develop/ai/search-and-query/vectors/) in fields of a [hash](/docs/latest/develop/data-types/hashes/)) object. To do this, use the `%b` format specifier and pass a pointer to the data buffer, followed by a `size_t` value indicating its length in bytes. As the example below shows, you can freely mix `%s` and `%b` specifiers in the same format string. Also, you can use the sequence `%%` to denote a literal percent sign, but the other `printf()` specifiers, such as `%d`, are not supported.
+You may need to include binary data in the command (for example, to store [vector embeddings](../../../ai/search-and-query/vectors/index.md) in fields of a [hash](/docs/latest/develop/data-types/hashes/)) object. To do this, use the `%b` format specifier and pass a pointer to the data buffer, followed by a `size_t` value indicating its length in bytes. As the example below shows, you can freely mix `%s` and `%b` specifiers in the same format string. Also, you can use the sequence `%%` to denote a literal percent sign, but the other `printf()` specifiers, such as `%d`, are not supported.
 
 ```c
 char *entryNumber = "1";

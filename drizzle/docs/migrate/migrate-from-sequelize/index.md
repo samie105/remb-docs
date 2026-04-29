@@ -10,8 +10,8 @@ content_hash: "74142e070e93e174af4fd2faab2a89054a6bd4c0ef4cc2aaaf0b669a08a61183"
 menu_path: ["Migrate from Sequelize to Drizzle"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../migrate-from-prisma/index.md", "title": "Migrate from Prisma to Drizzle"}
-nav_next: {"path": "../migrate-from-typeorm/index.md", "title": "Migrate from TypeORM to Drizzle"}
+nav_prev: {"path": "drizzle/docs/migrate/migrate-from-prisma/index.md", "title": "Migrate from Prisma to Drizzle"}
+nav_next: {"path": "drizzle/docs/migrate/migrate-from-typeorm/index.md", "title": "Migrate from TypeORM to Drizzle"}
 ---
 
 This guide provides a straightforward approach to migrating a basic **Sequelize** project to **Drizzle ORM**. Although the example focuses on `PostgreSQL`, the process is similar for other supported databases.

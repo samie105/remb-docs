@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:25.928Z"
 content_hash: "da839a50634a8fa344c5956106489a59ec51935f3661e8851e14bda2fbba3300"
 menu_path: ["JSON5"]
 section_path: []
-nav_prev: {"path": "../http/websockets/index.md", "title": "WebSockets"}
-nav_next: {"path": "../jsonl/index.md", "title": "JSONL"}
+nav_prev: {"path": "bun/docs/runtime/http/websockets/index.md", "title": "WebSockets"}
+nav_next: {"path": "bun/docs/runtime/jsonl/index.md", "title": "JSONL"}
 ---
 
 In Bun, JSON5 is a first-class citizen alongside JSON, TOML, and YAML. You can:

@@ -10,8 +10,8 @@ content_hash: "06ede3ef6417d774d4f742877150fe8b66a1b5b6826719820b4de5e4a9f8bbee"
 menu_path: ["Add methods to Prisma Client"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "What are Client Extensions"}
-nav_next: {"path": "../extension-examples/index.md", "title": "Shared packages & examples"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/index.md", "title": "What are Client Extensions"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/extension-examples/index.md", "title": "Shared packages & examples"}
 ---
 
 Client Extensions

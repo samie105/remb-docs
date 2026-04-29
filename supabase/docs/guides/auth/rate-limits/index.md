@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:45.375Z"
 content_hash: "9ae7d80641178f11ecce350613199a1ff2abb0e9230b31a89deeae2b2f152a0f"
 menu_path: ["Auth","Auth","Security","Security","Rate Limits","Rate Limits"]
 section_path: ["Auth","Auth","Security","Security","Rate Limits","Rate Limits"]
-nav_prev: {"path": "../quickstarts/with-expo-react-native-social-auth/index.md", "title": "Build a Social Auth App with Expo React Native"}
-nav_next: {"path": "../redirect-urls/index.md", "title": "Redirect URLs"}
+nav_prev: {"path": "supabase/docs/guides/auth/quickstarts/with-expo-react-native-social-auth/index.md", "title": "Build a Social Auth App with Expo React Native"}
+nav_next: {"path": "supabase/docs/guides/auth/redirect-urls/index.md", "title": "Redirect URLs"}
 ---
 
 # 
@@ -143,7 +143,7 @@ No
 
 ## IP address forwarding[#](#ip-address-forwarding)
 
-By default, Supabase Auth uses the IP address of the client for rate limiting. In certain cases, such as when using server-side frameworks or proxies in front of a project, it may be necessary to forward the end-user IP address to avoid being rate limited based on the address of the server-side client. To use a forwarded IP address for rate limiting in Supabase Auth, set the `Sb-Forwarded-For` header to the end-user IP address and make a request with a [secret API key](/docs/guides/api/api-keys). Publishable API keys and legacy `anon`/`service_role` API keys are not supported.
+By default, Supabase Auth uses the IP address of the client for rate limiting. In certain cases, such as when using server-side frameworks or proxies in front of a project, it may be necessary to forward the end-user IP address to avoid being rate limited based on the address of the server-side client. To use a forwarded IP address for rate limiting in Supabase Auth, set the `Sb-Forwarded-For` header to the end-user IP address and make a request with a [secret API key](../../api/api-keys/index.md). Publishable API keys and legacy `anon`/`service_role` API keys are not supported.
 
 IP address forwarding must be explicitly enabled for new projects. You can enable this feature in your project under the **IP Address Forwarding** section of your project's rate limit settings at [**Authentication** > **Rate Limits**](/dashboard/project/_/auth/rate-limits).
 

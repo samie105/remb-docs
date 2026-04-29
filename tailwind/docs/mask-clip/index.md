@@ -10,8 +10,8 @@ content_hash: "ad7c3c89ef0dd906373da75882d0279deb891aa44751c7cff22c9d25b3e19bfa"
 menu_path: ["mask-clip"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../background-blend-mode/index.md", "title": "background-blend-mode"}
-nav_next: {"path": "../mask-composite/index.md", "title": "mask-composite"}
+nav_prev: {"path": "tailwind/docs/background-blend-mode/index.md", "title": "background-blend-mode"}
+nav_next: {"path": "tailwind/docs/mask-composite/index.md", "title": "mask-composite"}
 ---
 
 # mask-clip
@@ -73,7 +73,7 @@ Prefix a `mask-clip` utility with a breakpoint variant like `md:` to only apply 
 <div class="mask-clip-border md:mask-clip-padding ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

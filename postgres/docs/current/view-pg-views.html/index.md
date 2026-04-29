@@ -10,8 +10,8 @@ content_hash: "1793c4d20f8b8407ba132a74f1fbf425f69f48ab579c3307d04ce6317ec5ec6f"
 menu_path: ["PostgreSQL: Documentation: 18: 53.37. pg_views"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../view-pg-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.35.\u00a0pg_user"}
-nav_next: {"path": "../view-pg-wait-events.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.38.\u00a0pg_wait_events"}
+nav_prev: {"path": "postgres/docs/current/view-pg-user.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.35.\u00a0pg_user"}
+nav_next: {"path": "postgres/docs/current/view-pg-wait-events.html/index.md", "title": "PostgreSQL: Documentation: 18: 53.38.\u00a0pg_wait_events"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/view-pg-views.html "PostgreSQL devel - 53.37. pg_views")

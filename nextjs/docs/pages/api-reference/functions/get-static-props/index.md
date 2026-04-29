@@ -11,8 +11,8 @@ menu_path: ["getStaticProps"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../get-static-paths/index.md", "title": "getStaticPaths"}
-nav_next: {"path": "../next-request/index.md", "title": "NextRequest"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-static-paths/index.md", "title": "getStaticPaths"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/next-request/index.md", "title": "NextRequest"}
 ---
 
 # getStaticProps
@@ -56,14 +56,14 @@ The `context` parameter is an object containing the following keys:
 
 | Name | Description |
 | --- | --- |
-| `params` | Contains the route parameters for pages using [dynamic routes](/docs/pages/building-your-application/routing/dynamic-routes). For example, if the page name is `[id].js`, then `params` will look like `{ id: ... }`. You should use this together with `getStaticPaths`, which we'll explain later. |
+| `params` | Contains the route parameters for pages using [dynamic routes](../../../building-your-application/routing/dynamic-routes/index.md). For example, if the page name is `[id].js`, then `params` will look like `{ id: ... }`. You should use this together with `getStaticPaths`, which we'll explain later. |
 | `preview` | (Deprecated for `draftMode`) `preview` is `true` if the page is in the [Preview Mode](/docs/pages/guides/preview-mode) and `false` otherwise. |
 | `previewData` | (Deprecated for `draftMode`) The [preview](/docs/pages/guides/preview-mode) data set by `setPreviewData`. |
 | `draftMode` | `draftMode` is `true` if the page is in the [Draft Mode](/docs/pages/guides/draft-mode) and `false` otherwise. |
 | `locale` | Contains the active locale (if enabled). |
 | `locales` | Contains all supported locales (if enabled). |
 | `defaultLocale` | Contains the configured default locale (if enabled). |
-| `revalidateReason` | Provides a reason for why the function was called. Can be one of: "build" (run at build time), "stale" (revalidate period expired, or running in [development mode](/docs/pages/building-your-application/data-fetching/get-static-props#runs-on-every-request-in-development)), "on-demand" (triggered via [on-demand revalidation](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath)) |
+| `revalidateReason` | Provides a reason for why the function was called. Can be one of: "build" (run at build time), "stale" (revalidate period expired, or running in [development mode](../../../building-your-application/data-fetching/get-static-props/index.md#runs-on-every-request-in-development)), "on-demand" (triggered via [on-demand revalidation](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath)) |
 
 ## getStaticProps return values[](#getstaticprops-return-values)
 
@@ -115,7 +115,7 @@ The cache status of a page leveraging ISR can be determined by reading the value
 
 ### `notFound`[](#notfound)
 
-The `notFound` boolean allows the page to return a `404` status and [404 Page](/docs/pages/building-your-application/routing/custom-error#404-page). With `notFound: true`, the page will return a `404` even if there was a successfully generated page before. This is meant to support use cases like user-generated content getting removed by its author. Note, `notFound` follows the same `revalidate` behavior [described here](#revalidate).
+The `notFound` boolean allows the page to return a `404` status and [404 Page](../../../building-your-application/routing/custom-error/index.md#404-page). With `notFound: true`, the page will return a `404` even if there was a successfully generated page before. This is meant to support use cases like user-generated content getting removed by its author. Note, `notFound` follows the same `revalidate` behavior [described here](#revalidate).
 
 ```
 export async function getStaticProps(context) {
@@ -134,7 +134,7 @@ export async function getStaticProps(context) {
 }
 ```
 
-> **Good to know**: `notFound` is not needed for [`fallback: false`](/docs/pages/api-reference/functions/get-static-paths#fallback-false) mode as only paths returned from `getStaticPaths` will be prerendered.
+> **Good to know**: `notFound` is not needed for [`fallback: false`](../get-static-paths/index.md#fallback-false) mode as only paths returned from `getStaticPaths` will be prerendered.
 
 ### `redirect`[](#redirect)
 
@@ -163,7 +163,7 @@ export async function getStaticProps(context) {
 }
 ```
 
-If the redirects are known at build-time, they should be added in [`next.config.js`](/docs/pages/api-reference/config/next-config-js/redirects) instead.
+If the redirects are known at build-time, they should be added in [`next.config.js`](../../config/next-config-js/redirects/index.md) instead.
 
 ## Reading files: Use `process.cwd()`[](#reading-files-use-processcwd)
 
@@ -228,7 +228,7 @@ export default Blog
 
 | Version | Changes |
 | --- | --- |
-| `v13.4.0` | [App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching |
+| `v13.4.0` | [App Router](../../../../app/getting-started/fetching-data/index.md) is now stable with simplified data fetching |
 | `v12.2.0` | [On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) is stable. |
 | `v12.1.0` | [On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) added (beta). |
 | `v10.0.0` | `locale`, `locales`, `defaultLocale`, and `notFound` options added. |

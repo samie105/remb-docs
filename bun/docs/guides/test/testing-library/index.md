@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:21.766Z"
 content_hash: "95b9f14da0f8bee1bd771aea861ad53aa0f0be140e04a3ceb70f97144e256ecf"
 menu_path: ["Using Testing Library with Bun"]
 section_path: []
-nav_prev: {"path": "../svelte-test/index.md", "title": "import, require, and test Svelte components with bun test"}
-nav_next: {"path": "../timeout/index.md", "title": "Set a per-test timeout with the Bun test runner"}
+nav_prev: {"path": "bun/docs/guides/test/svelte-test/index.md", "title": "import, require, and test Svelte components with bun test"}
+nav_next: {"path": "bun/docs/guides/test/timeout/index.md", "title": "Set a per-test timeout with the Bun test runner"}
 ---
 
 You can use [Testing Library](https://testing-library.com/) with Bun’s test runner.

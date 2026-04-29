@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:07.628Z"
 content_hash: "bac327a22902cccab62ac7c87e37874e81ae9cb55470ba13d882c414b09c4cf2"
 menu_path: ["Storage","Storage","File Buckets","File Buckets","Creating Buckets","Creating Buckets"]
 section_path: ["Storage","Storage","File Buckets","File Buckets","Creating Buckets","Creating Buckets"]
-nav_prev: {"path": "../../analytics/query-with-postgres/index.md", "title": "Query with Postgres"}
-nav_next: {"path": "../fundamentals/index.md", "title": "Storage Buckets"}
+nav_prev: {"path": "supabase/docs/guides/storage/analytics/query-with-postgres/index.md", "title": "Query with Postgres"}
+nav_next: {"path": "supabase/docs/guides/storage/buckets/fundamentals/index.md", "title": "Storage Buckets"}
 ---
 
 # 

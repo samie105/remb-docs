@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:53.945Z"
 content_hash: "4a62eb857e39f92ef6de146b97a8ef577a0fd574f65025c9ad987f27e9823c39"
 menu_path: ["HTTP RPC Specification"]
 section_path: []
-nav_prev: {"path": "../openapi/index.md", "title": "OpenAPI (alpha)"}
-nav_next: {"path": "../server/adapters/index.md", "title": "Overview"}
+nav_prev: {"path": "trpc/docs/openapi/index.md", "title": "OpenAPI (alpha)"}
+nav_next: {"path": "trpc/docs/server/adapters/index.md", "title": "Overview"}
 ---
 
 ## Methods <-> Type mapping[​](#methods---type-mapping "Direct link to Methods <-> Type mapping")

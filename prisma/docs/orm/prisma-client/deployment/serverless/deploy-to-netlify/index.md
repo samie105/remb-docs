@@ -10,8 +10,8 @@ content_hash: "ffe7f9ba3d91274941c796e50e99ef22c80580c6b2bc5bec0a2e88293a61635f"
 menu_path: ["Deploy to Netlify"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
-nav_next: {"path": "../deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-azure-functions/index.md", "title": "Deploy to Azure Functions"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel/index.md", "title": "Deploy to Vercel"}
 ---
 
 # Connect to DB

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:50.518Z"
 content_hash: "d42f5701d5a5e654af702e6c7d33609ff20f10879293baf04eddf50e3a386ae5"
 menu_path: ["css Helper ​"]
 section_path: []
-nav_prev: {"path": "../cookie/index.md", "title": "Cookie Helper \u200b"}
-nav_next: {"path": "../dev/index.md", "title": "Dev Helper \u200b"}
+nav_prev: {"path": "hono/docs/helpers/cookie/index.md", "title": "Cookie Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/dev/index.md", "title": "Dev Helper \u200b"}
 ---
 
 The CSS helper - `hono/css` - is Hono's built-in CSS in JS(X).

@@ -10,8 +10,8 @@ content_hash: "5fa91665cb2af8dad12b7bad175621611136e124462d071cfddd407ce43f10dc"
 menu_path: ["drizzle-kit generate"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../kit-overview/index.md", "title": "Migrations with Drizzle Kit"}
-nav_next: {"path": "../drizzle-kit-migrate/index.md", "title": "drizzle-kit migrate"}
+nav_prev: {"path": "drizzle/docs/kit-overview/index.md", "title": "Migrations with Drizzle Kit"}
+nav_next: {"path": "drizzle/docs/drizzle-kit-migrate/index.md", "title": "drizzle-kit migrate"}
 ---
 
 `drizzle-kit generate` lets you generate SQL migrations based on your Drizzle schema upon declaration or on subsequent schema changes.

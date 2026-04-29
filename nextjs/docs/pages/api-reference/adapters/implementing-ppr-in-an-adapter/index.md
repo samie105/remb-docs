@@ -11,8 +11,8 @@ menu_path: ["Implementing PPR in an Adapter"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../routing-with-next-routing/index.md", "title": "Routing with @next/routing"}
-nav_next: {"path": "../runtime-integration/index.md", "title": "Runtime Integration"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/routing-with-next-routing/index.md", "title": "Routing with @next/routing"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/adapters/runtime-integration/index.md", "title": "Runtime Integration"}
 ---
 
 # Implementing PPR in an Adapter

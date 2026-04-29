@@ -10,8 +10,8 @@ content_hash: "5d7648abe5c8bdbc63ce9fae20b80f8db87a917985fcf541db404611d9938497"
 menu_path: ["min-height"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../height/index.md", "title": "height"}
-nav_next: {"path": "../max-height/index.md", "title": "max-height"}
+nav_prev: {"path": "tailwind/docs/height/index.md", "title": "height"}
+nav_next: {"path": "tailwind/docs/max-height/index.md", "title": "max-height"}
 ---
 
 Utilities for setting the minimum height of an element.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:30.265Z"
 content_hash: "18e8850caed36a293082b79b906756d41717d38abee6962a83e69c8e80335024"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Quick start using redis-cli","→","Quick start using redis-cli"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Quick start using redis-cli","→","Quick start using redis-cli"]
-nav_prev: {"path": "../known_limitations/index.md", "title": "Known limitations"}
-nav_next: {"path": "../quick_start_ri/index.md", "title": "Quick start using Redis Insight"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/known_limitations/index.md", "title": "Known limitations"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/quick_start_ri/index.md", "title": "Quick start using Redis Insight"}
 ---
 
 # Quick start using redis-cli
@@ -29,7 +29,7 @@ Redis Enterprise for Kubernetes
 
 clients
 
-Make sure that you have [Redis Stack installed](/docs/latest/operate/oss_and_stack/install/install-stack/) and running. Alternatively, you can create a [free Redis Cloud account](https://redis.com/try-free/?utm_source=redisio&utm_medium=referral&utm_campaign=2023-09-try_free&utm_content=cu-redis_cloud_users). The triggers and functions preview is available in the fixed subscription plan for the Google Cloud Asia Pacific (Tokyo) and AWS Asia Pacific (Singapore) regions.
+Make sure that you have [Redis Stack installed](../../../../install/install-stack/index.md) and running. Alternatively, you can create a [free Redis Cloud account](https://redis.com/try-free/?utm_source=redisio&utm_medium=referral&utm_campaign=2023-09-try_free&utm_content=cu-redis_cloud_users). The triggers and functions preview is available in the fixed subscription plan for the Google Cloud Asia Pacific (Tokyo) and AWS Asia Pacific (Singapore) regions.
 
 ## Connect to Redis Stack
 
@@ -110,7 +110,7 @@ redis-cli -x TFUNCTION LOAD REPLACE < ./main.js
 
 Functions within Redis can respond to events using keyspace triggers. While the majority of these events are initiated by command invocations, they also include events that occur when a key expires or is removed from the database.
 
-For the full list of supported events, please refer to the [Redis keyspace notifications page](/docs/latest/develop/pubsub/keyspace-notifications/#events-generated-by-different-commands/?utm_source=redis\&utm_medium=app\&utm_campaign=redisinsight_triggers_and_functions_guide).
+For the full list of supported events, please refer to the [Redis keyspace notifications page](../../../../../../develop/pubsub/keyspace-notifications/index.md#events-generated-by-different-commands/?utm_source=redis\&utm_medium=app\&utm_campaign=redisinsight_triggers_and_functions_guide).
 
 The following code creates a new keyspace trigger that adds a new field to a new or updated hash with the latest update time.
 

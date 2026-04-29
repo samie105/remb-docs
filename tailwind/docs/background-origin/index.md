@@ -10,8 +10,8 @@ content_hash: "87a2f57ab5cf2bb948601fbdc6c22460ef316dcccc2de93ae0a05bc7983d9cfa"
 menu_path: ["background-origin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../background-image/index.md", "title": "background-image"}
-nav_next: {"path": "../background-position/index.md", "title": "background-position"}
+nav_prev: {"path": "tailwind/docs/background-image/index.md", "title": "background-image"}
+nav_next: {"path": "tailwind/docs/background-position/index.md", "title": "background-position"}
 ---
 
 # background-origin
@@ -53,7 +53,7 @@ Prefix a `background-origin` utility with a breakpoint variant like `md:` to onl
 <div class="bg-origin-border md:bg-origin-padding ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

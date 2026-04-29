@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:18.611Z"
 content_hash: "1993926bbf937cc77b2fbe5c6a1e873e5d98e7efdcf76d22a40db481bb4e2ee9"
 menu_path: ["PostgreSQL: Documentation: 18: 9.24. Subquery Expressions"]
 section_path: []
-nav_prev: {"path": "../functions-string.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.4.\u00a0String Functions and Operators"}
-nav_next: {"path": "../functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
+nav_prev: {"path": "postgres/docs/current/functions-string.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.4.\u00a0String Functions and Operators"}
+nav_next: {"path": "postgres/docs/current/functions-uuid.html/index.md", "title": "PostgreSQL: Documentation: 18: 9.14.\u00a0UUID Functions"}
 ---
 
 This section describes the SQL\-compliant subquery expressions available in PostgreSQL. All of the expression forms documented in this section return Boolean (true/false) results.

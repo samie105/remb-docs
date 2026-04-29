@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:18.886Z"
 content_hash: "f38700d0c729498b8efdf36adbcdb3a09f35d7b76ab0a1316da2583655f38121"
 menu_path: ["Database","Database","Fundamentals","Fundamentals","Securing your data","Securing your data"]
 section_path: ["Database","Database","Fundamentals","Fundamentals","Securing your data","Securing your data"]
-nav_prev: {"path": "../replication/replication-setup/index.md", "title": "Replication Setup"}
-nav_next: {"path": "../supavisor/index.md", "title": "Supavisor"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/replication-setup/index.md", "title": "Replication Setup"}
+nav_next: {"path": "supabase/docs/guides/database/supavisor/index.md", "title": "Supavisor"}
 ---
 
 # 
@@ -23,11 +23,11 @@ Supabase helps you control access to your data. With access policies, you can pr
 
 ## Connecting your app securely[#](#connecting-your-app-securely)
 
-Supabase allows you to access your database using the auto-generated [Data APIs](/docs/guides/database/connecting-to-postgres#data-apis). This speeds up the process of building web apps, since you don't need to write your own backend services to pass database queries and results back and forth.
+Supabase allows you to access your database using the auto-generated [Data APIs](../connecting-to-postgres/index.md#data-apis). This speeds up the process of building web apps, since you don't need to write your own backend services to pass database queries and results back and forth.
 
 You can keep your data secure while accessing the Data APIs from the frontend, so long as you:
 
-*   Turn on [Row Level Security](/docs/guides/database/postgres/row-level-security) (RLS) for your tables
+*   Turn on [Row Level Security](../postgres/row-level-security/index.md) (RLS) for your tables
 *   Use your Supabase **anon key** when you create a Supabase client
 
 Your anon key is safe to expose with RLS enabled, because row access permission is checked against your access policies and the user's [JSON Web Token (JWT)](/docs/learn/auth-deep-dive/auth-deep-dive-jwts). The JWT is automatically sent by the Supabase client libraries if the user is logged in using Supabase Auth.
@@ -40,8 +40,8 @@ Unlike your anon key, your **service role key** is **never** safe to expose beca
 
 Supabase and Postgres provide you with multiple ways to manage security, including but not limited to Row Level Security. See the Access and Security pages for more information:
 
-*   [Row Level Security](/docs/guides/database/postgres/row-level-security)
-*   [Column Level Security](/docs/guides/database/postgres/column-level-security)
-*   [Hardening the Data API](/docs/guides/api/hardening-data-api)
-*   [Managing Postgres roles](/docs/guides/database/postgres/roles)
-*   [Managing secrets with Vault](/docs/guides/database/vault)
+*   [Row Level Security](../postgres/row-level-security/index.md)
+*   [Column Level Security](../postgres/column-level-security/index.md)
+*   [Hardening the Data API](../../api/hardening-data-api/index.md)
+*   [Managing Postgres roles](../postgres/roles/index.md)
+*   [Managing secrets with Vault](../vault/index.md)

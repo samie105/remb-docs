@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:08.245Z"
 content_hash: "b52eb773b7e963a7dc675f2626f7132add138666fed83b9357a6b223737e7c92"
 menu_path: ["Develop and build"]
 section_path: []
-nav_prev: {"path": "../basics/project-structure/index.md", "title": "Project structure"}
-nav_next: {"path": "../guides/configuring-astro/index.md", "title": "Configuration overview"}
+nav_prev: {"path": "astro/en/basics/project-structure/index.md", "title": "Project structure"}
+nav_next: {"path": "astro/en/guides/configuring-astro/index.md", "title": "Configuration overview"}
 ---
 
 # Develop and build
@@ -49,7 +49,7 @@ If all goes well, Astro will now be serving your project on [http://localhost:43
 
 Astro will listen for live file changes in your `src/` directory and update your site preview as you build, so you will not need to restart the server as you make changes during development. You will always be able to see an up-to-date version of your site in your browser when the dev server is running.
 
-When viewing your site in the browser, you’ll have access to the [Astro dev toolbar](/en/guides/dev-toolbar/). As you build, it will help you inspect your [islands](/en/concepts/islands/), spot accessibility issues, and more.
+When viewing your site in the browser, you’ll have access to the [Astro dev toolbar](../guides/dev-toolbar/index.md). As you build, it will help you inspect your [islands](../concepts/islands/index.md), spot accessibility issues, and more.
 
 If you aren’t able to open your project in the browser after starting the dev server, go back to the terminal where you ran the `dev` command and check the message displayed. It should tell you if an error occurred, or if your project is being served at a different URL than [http://localhost:4321/](http://localhost:4321/).
 
@@ -75,7 +75,7 @@ Note that this previews your code as it existed when the build command was last 
 
 Use (Ctrl + C) to quit the preview and run another terminal command, such as restarting the dev server to go back to [working in development mode](#work-in-development-mode) which does update as you edit to show a live preview of your code changes.
 
-Read more about [the Astro CLI](/en/reference/cli-reference/) and the terminal commands you will use as you build with Astro.
+Read more about [the Astro CLI](../reference/cli-reference/index.md) and the terminal commands you will use as you build with Astro.
 
 ## Next Steps
 
@@ -91,30 +91,30 @@ Here are a few things that we recommend exploring next. You can read them in any
 
 Explore the guides below to customize your development experience.
 
-[Editor Setup](/en/editor-setup/) Customize your code editor to improve the Astro developer experience and unlock new features.
+[Editor Setup](../editor-setup/index.md) Customize your code editor to improve the Astro developer experience and unlock new features.
 
-[Dev Toolbar](/en/guides/dev-toolbar/) Explore the helpful features of the dev toolbar.
+[Dev Toolbar](../guides/dev-toolbar/index.md) Explore the helpful features of the dev toolbar.
 
-[TypeScript Configuration](/en/guides/typescript/) Configure options for type-checking, IntelliSense, and more.
+[TypeScript Configuration](../guides/typescript/index.md) Configure options for type-checking, IntelliSense, and more.
 
 ### Explore Astro’s Features
 
 [Section titled “Explore Astro’s Features”](#explore-astros-features)
 
-[Understand your codebase](/en/basics/project-structure/) Learn about Astro’s file structure in our Project Structure guide.
+[Understand your codebase](../basics/project-structure/index.md) Learn about Astro’s file structure in our Project Structure guide.
 
-[Create content collections](/en/guides/content-collections/) Add content to your new site with frontmatter validation and automatic type-safety.
+[Create content collections](../guides/content-collections/index.md) Add content to your new site with frontmatter validation and automatic type-safety.
 
-[Add view transitions](/en/guides/view-transitions/) Create seamless page transitions and animations.
+[Add view transitions](../guides/view-transitions/index.md) Create seamless page transitions and animations.
 
-[Learn about Islands](/en/concepts/islands/) Read about Astro's islands architecture.
+[Learn about Islands](../concepts/islands/index.md) Read about Astro's islands architecture.
 
 ### Take the introductory tutorial
 
 [Section titled “Take the introductory tutorial”](#take-the-introductory-tutorial)
 
-Build a fully functional Astro blog starting from a single blank page in our [introductory tutorial](/en/tutorial/0-introduction/).
+Build a fully functional Astro blog starting from a single blank page in our [introductory tutorial](../tutorial/0-introduction/index.md).
 
 This is a great way to see how Astro works and walks you through the basics of pages, layouts, components, routing, islands, and more. It also includes an optional, beginner-friendly unit for those newer to web development concepts in general, which will guide you through installing the necessary applications on your computer, creating a GitHub account, and deploying your site.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

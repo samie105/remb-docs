@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:36.527Z"
 content_hash: "ee509bfae992d10f842e6ecb9aad1cc67ba0f3f27262522d6e2e20e48fe2c712"
 menu_path: ["Data REST API","Data REST API","Guides","Guides","Error Codes","Error Codes"]
 section_path: ["Data REST API","Data REST API","Guides","Guides","Error Codes","Error Codes"]
-nav_prev: {"path": "../generating-types/index.md", "title": "Generating TypeScript Types"}
-nav_next: {"path": "../../securing-your-api/index.md", "title": "Securing your API"}
+nav_prev: {"path": "supabase/docs/guides/api/rest/generating-types/index.md", "title": "Generating TypeScript Types"}
+nav_next: {"path": "supabase/docs/guides/api/securing-your-api/index.md", "title": "Securing your API"}
 ---
 
 # 

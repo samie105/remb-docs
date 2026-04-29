@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:07.039Z"
 content_hash: "384901a16bf56d9ea0f34904c982ea06909d8b0591ed6e8beefbbbd324728211"
 menu_path: ["Proxy HTTP requests using fetch()"]
 section_path: []
-nav_prev: {"path": "../hot/index.md", "title": "Hot reload an HTTP server"}
-nav_next: {"path": "../server/index.md", "title": "Common HTTP server usage"}
+nav_prev: {"path": "bun/docs/guides/http/hot/index.md", "title": "Hot reload an HTTP server"}
+nav_next: {"path": "bun/docs/guides/http/server/index.md", "title": "Common HTTP server usage"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../server/index.md", "title": "Common HTTP server usage"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 In Bun, `fetch` supports sending requests through an HTTP or HTTPS proxy. This is useful on corporate networks or when you need to ensure a request is sent through a specific IP address.
 
@@ -106,10 +106,10 @@ Configure TLS on an HTTP server
 
 Previous
 
-](/docs/guides/http/tls)[
+](../tls/index.md)[
 
 Stream a file as an HTTP Response
 
 Next
 
-](/docs/guides/http/stream-file)
+](../stream-file/index.md)

@@ -10,8 +10,8 @@ content_hash: "2f71ac8ce640c73abc0f436f14badcbefe558e0978ef8392d4d5d4f5004421b3"
 menu_path: ["Drizzle Queries"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql/index.md", "title": "Magical sql operator \ud83e\ude84"}
-nav_next: {"path": "../perf-queries/index.md", "title": "Query performance"}
+nav_prev: {"path": "drizzle/docs/sql/index.md", "title": "Magical sql operator \ud83e\ude84"}
+nav_next: {"path": "drizzle/docs/perf-queries/index.md", "title": "Query performance"}
 ---
 
 ## Drizzle Queries

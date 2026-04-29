@@ -11,8 +11,8 @@ menu_path: ["Edge Runtime"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../adapters/use-cases/index.md", "title": "Use Cases"}
-nav_next: {"path": "../turbopack/index.md", "title": "Turbopack"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/adapters/use-cases/index.md", "title": "Use Cases"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/turbopack/index.md", "title": "Turbopack"}
 ---
 
 # Edge Runtime
@@ -22,13 +22,13 @@ Last updated April 23, 2026
 Next.js has two server runtimes you can use in your application:
 
 -   The **Node.js Runtime** (default), which has access to all Node.js APIs and is used for rendering your application.
--   The **Edge Runtime** which contains a more limited [set of APIs](#reference), used in [Proxy](/docs/app/api-reference/file-conventions/proxy).
+-   The **Edge Runtime** which contains a more limited [set of APIs](#reference), used in [Proxy](../../../app/api-reference/file-conventions/proxy/index.md).
 
 ## Caveats[](#caveats)
 
 -   The Edge Runtime does not support all Node.js APIs. Some packages may not work as expected.
 -   The Edge Runtime does not support Incremental Static Regeneration (ISR).
--   Both runtimes can support [streaming](/docs/app/api-reference/file-conventions/loading) depending on your deployment adapter.
+-   Both runtimes can support [streaming](../../../app/api-reference/file-conventions/loading/index.md) depending on your deployment adapter.
 
 ## Reference[](#reference)
 
@@ -153,7 +153,7 @@ The Edge Runtime supports the following APIs:
 
 ### Environment Variables[](#environment-variables)
 
-You can use `process.env` to access [Environment Variables](/docs/app/guides/environment-variables) for both `next dev` and `next build`.
+You can use `process.env` to access [Environment Variables](../../../app/guides/environment-variables/index.md) for both `next dev` and `next build`.
 
 ### Unsupported APIs[](#unsupported-apis)
 

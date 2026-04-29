@@ -10,8 +10,8 @@ content_hash: "adff4f58b4f9eed2527f38b2e823c24c40d834dc4eb37a230ea33755c908c92d"
 menu_path: ["Deploy migrations from a local environment"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../deploy-database-changes-with-prisma-migrate/index.md", "title": "Deploying database changes with Prisma Migrate"}
-nav_next: {"path": "../deploy-prisma/index.md", "title": "Deploy Prisma ORM"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-database-changes-with-prisma-migrate/index.md", "title": "Deploying database changes with Prisma Migrate"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-prisma/index.md", "title": "Deploy Prisma ORM"}
 ---
 
 Deployment

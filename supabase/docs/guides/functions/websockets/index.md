@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:51.188Z"
 content_hash: "819f51f1365121ad1c2c7c873c739d8385162322118b875652d2436ba54695e5"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","WebSockets","WebSockets"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","WebSockets","WebSockets"]
-nav_prev: {"path": "../wasm/index.md", "title": "Using Wasm modules"}
-nav_next: {"path": "../../getting-started/ai-prompts/index.md", "title": "AI Prompts"}
+nav_prev: {"path": "supabase/docs/guides/functions/wasm/index.md", "title": "Using Wasm modules"}
+nav_next: {"path": "supabase/docs/guides/getting-started/ai-prompts/index.md", "title": "AI Prompts"}
 ---
 
 # 
@@ -69,7 +69,7 @@ To authenticate the user making WebSocket requests, you can pass the JWT in URL 
 1import { createClient } from 'npm:@supabase/supabase-js@2'23const supabase = createClient(4  Deno.env.get('SUPABASE_URL'),5  Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')6)78Deno.serve((req) => {9  const upgrade = req.headers.get('upgrade') || ''10  if (upgrade.toLowerCase() != 'WebSocket') {11    return new Response("request isn't trying to upgrade to WebSocket.", { status: 400 })12  }1314  // Please be aware query params may be logged in some logging systems.15  const url = new URL(req.url)16  const jwt = url.searchParams.get('jwt')1718  if (!jwt) {19    console.error('Auth token not provided')20    return new Response('Auth token not provided', { status: 403 })21  }2223  const { error, data } = await supabase.auth.getClaims()2425  if (error) {26    console.error(error)27    return new Response('Invalid token provided', { status: 403 })28  }2930  if (!data.user) {31    console.error('user is not authenticated')32    return new Response('User is not authenticated', { status: 403 })33  }3435  const { socket, response } = Deno.upgradeWebSocket(req)3637  socket.onopen = () => console.log('socket opened')38  socket.onmessage = (e) => {39    console.log('socket message:', e.data)40    socket.send(new Date().toString())41  }4243  socket.onerror = (e) => console.log('socket errored:', e.message)44  socket.onclose = () => console.log('socket closed')4546  return response47})
 ```
 
-The maximum duration is capped based on the wall-clock, CPU, and memory limits. The Function will shutdown when it reaches one of these [limits](/docs/guides/functions/limits).
+The maximum duration is capped based on the wall-clock, CPU, and memory limits. The Function will shutdown when it reaches one of these [limits](../limits/index.md).
 
 * * *
 

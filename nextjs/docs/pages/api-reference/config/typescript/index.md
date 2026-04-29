@@ -11,8 +11,8 @@ menu_path: ["TypeScript"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
-nav_next: {"path": "../eslint/index.md", "title": "ESLint"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/webVitalsAttribution/index.md", "title": "webVitalsAttribution"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/eslint/index.md", "title": "ESLint"}
 ---
 
 # TypeScript
@@ -29,7 +29,7 @@ To add TypeScript to an existing project, rename a file to `.ts` / `.tsx`. Run `
 
 Next.js generates a `next-env.d.ts` file in your project root. This file references Next.js type definitions, allowing TypeScript to recognize non-code imports (images, stylesheets, etc.) and Next.js-specific types.
 
-Running `next dev`, `next build`, or [`next typegen`](/docs/app/api-reference/cli/next#next-typegen-options) regenerates this file.
+Running `next dev`, `next build`, or [`next typegen`](../../../../app/api-reference/cli/next/index.md#next-typegen-options) regenerates this file.
 
 > **Good to know**:
 > 
@@ -280,7 +280,7 @@ export function Nav() {
 
 ### Type IntelliSense for Environment Variables[](#type-intellisense-for-environment-variables)
 
-During development, Next.js generates a `.d.ts` file in `.next/types` that contains information about the loaded environment variables for your editor's IntelliSense. If the same environment variable key is defined in multiple files, it is deduplicated according to the [Environment Variable Load Order](/docs/app/guides/environment-variables#environment-variable-load-order).
+During development, Next.js generates a `.d.ts` file in `.next/types` that contains information about the loaded environment variables for your editor's IntelliSense. If the same environment variable key is defined in multiple files, it is deduplicated according to the [Environment Variable Load Order](../../../../app/guides/environment-variables/index.md#environment-variable-load-order).
 
 To opt-into this feature, `experimental.typedEnv` needs to be enabled and the project needs to be using TypeScript.
 
@@ -302,7 +302,7 @@ export default nextConfig
 
 ### Static Generation and Server-side Rendering[](#static-generation-and-server-side-rendering)
 
-For [`getStaticProps`](/docs/pages/api-reference/functions/get-static-props), [`getStaticPaths`](/docs/pages/api-reference/functions/get-static-paths), and [`getServerSideProps`](/docs/pages/api-reference/functions/get-server-side-props), you can use the `GetStaticProps`, `GetStaticPaths`, and `GetServerSideProps` types respectively:
+For [`getStaticProps`](../../functions/get-static-props/index.md), [`getStaticPaths`](../../functions/get-static-paths/index.md), and [`getServerSideProps`](../../functions/get-server-side-props/index.md), you can use the `GetStaticProps`, `GetStaticPaths`, and `GetServerSideProps` types respectively:
 
 pages/blog/\[slug\].tsx
 
@@ -359,7 +359,7 @@ export default function handler(
 
 ### With custom `App`[](#with-custom-app)
 
-If you have a [custom `App`](/docs/pages/building-your-application/routing/custom-app), you can use the built-in type `AppProps` and change file name to `./pages/_app.tsx` like so:
+If you have a [custom `App`](../../../building-your-application/routing/custom-app/index.md), you can use the built-in type `AppProps` and change file name to `./pages/_app.tsx` like so:
 
 ```
 import type { AppProps } from 'next/app'
@@ -442,7 +442,7 @@ If you'd like Next.js to dangerously produce production code even when your appl
 
 If disabled, be sure you are running type checks as part of your build or deploy process, otherwise this can be very dangerous.
 
-Open `next.config.ts` and enable the `ignoreBuildErrors` option in the [`typescript`](/docs/app/api-reference/config/next-config-js/typescript) config:
+Open `next.config.ts` and enable the `ignoreBuildErrors` option in the [`typescript`](../../../../app/api-reference/config/next-config-js/typescript/index.md) config:
 
 next.config.ts
 
@@ -493,7 +493,7 @@ tsconfig.json
 | --- | --- |
 | `v15.0.0` | [`next.config.ts`](#type-checking-nextjs-configuration-files) support added for TypeScript projects. |
 | `v13.2.0` | Statically typed links are available in beta. |
-| `v12.0.0` | [SWC](/docs/architecture/nextjs-compiler) is now used by default to compile TypeScript and TSX for faster builds. |
+| `v12.0.0` | [SWC](../../../../architecture/nextjs-compiler/index.md) is now used by default to compile TypeScript and TSX for faster builds. |
 | `v10.2.1` | [Incremental type checking](https://www.typescriptlang.org/tsconfig#incremental) support added when enabled in your `tsconfig.json`. |
 
 Was this helpful?

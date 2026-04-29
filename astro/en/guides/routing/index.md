@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:28.986Z"
 content_hash: "586c5164ceb8e07a46db8fcce6958b9c035827f1d35a1b5385e38c3a4bf429b5"
 menu_path: ["Routing"]
 section_path: []
-nav_prev: {"path": "../../basics/astro-pages/index.md", "title": "Pages"}
-nav_next: {"path": "../endpoints/index.md", "title": "Endpoints"}
+nav_prev: {"path": "astro/en/basics/astro-pages/index.md", "title": "Pages"}
+nav_next: {"path": "astro/en/guides/endpoints/index.md", "title": "Endpoints"}
 ---
 
 # Routing
@@ -32,7 +32,7 @@ Astro uses standard HTML [`<a>` elements](https://developer.mozilla.org/en-US/do
 
 [Section titled “Static routes”](#static-routes)
 
-`.astro` [page components](/en/basics/astro-pages/) as well as Markdown and MDX Files (`.md`, `.mdx`) within the `src/pages/` directory **automatically become pages on your website**. Each page’s route corresponds to its path and filename within the `src/pages/` directory.
+`.astro` [page components](../../basics/astro-pages/index.md) as well as Markdown and MDX Files (`.md`, `.mdx`) within the `src/pages/` directory **automatically become pages on your website**. Each page’s route corresponds to its path and filename within the `src/pages/` directory.
 
 ```
 # Example: Static routessrc/pages/index.astro        -> mysite.com/src/pages/about.astro        -> mysite.com/aboutsrc/pages/about/index.astro  -> mysite.com/aboutsrc/pages/about/me.astro     -> mysite.com/about/mesrc/pages/posts/1.md         -> mysite.com/posts/1
@@ -82,7 +82,7 @@ Parameters can be included in separate parts of the path. For example, the file 
 ---export function getStaticPaths() {  return [    { params: { slug: decodeURI("%5Bpage%5D") }}, // decodes to "[page]"  ]}---
 ```
 
-Learn more about [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths).
+Learn more about [`getStaticPaths()`](../../reference/routing-reference/index.md#getstaticpaths).
 
 ![](/houston_chef.webp) **Related recipe:** [Add i18n features](/en/recipes/i18n/)
 
@@ -115,7 +115,7 @@ In this example, a request for `/withastro/astro/tree/main/docs/public/favicon.s
 
 [Section titled “Example: Dynamic pages at multiple levels”](#example-dynamic-pages-at-multiple-levels)
 
-In the following example, a rest parameter (`[...slug]`) and the [`props`](/en/reference/routing-reference/#data-passing-with-props) feature of `getStaticPaths()` generate pages for slugs of different depths.
+In the following example, a rest parameter (`[...slug]`) and the [`props`](../../reference/routing-reference/index.md#data-passing-with-props) feature of `getStaticPaths()` generate pages for slugs of different depths.
 
 ```
 ---export function getStaticPaths() {  const pages = [    {      slug: undefined,      title: "Astro Store",      text: "Welcome to the Astro store!",    },    {      slug: "products",      title: "Astro products",      text: "We have lots of products for you",    },    {      slug: "products/astro-handbook",      title: "The ultimate Astro handbook",      text: "If you want to learn Astro, you must read this book.",    },  ];
@@ -127,7 +127,7 @@ const { title, text } = Astro.props;---<html>  <head>    <title>{title}</title> 
 
 [Section titled “On-demand dynamic routes”](#on-demand-dynamic-routes)
 
-For [on-demand rendering](/en/guides/on-demand-rendering/) with an adapter, dynamic routes are defined the same way: include `[param]` or `[...path]` brackets in your file names to match arbitrary strings or paths. But because the routes are no longer built ahead of time, the page will be served to any matching route. Since these are not “static” routes, `getStaticPaths` should not be used.
+For [on-demand rendering](../on-demand-rendering/index.md) with an adapter, dynamic routes are defined the same way: include `[param]` or `[...path]` brackets in your file names to match arbitrary strings or paths. But because the routes are no longer built ahead of time, the page will be served to any matching route. Since these are not “static” routes, `getStaticPaths` should not be used.
 
 For on-demand rendered routes, only one rest parameter using the spread notation may be used in the file name (e.g. `src/pages/[locale]/[...slug].astro` or `src/pages/[...locale]/[slug].astro`, but not `src/pages/[...locale]/[...slug].astro`).
 
@@ -162,7 +162,7 @@ You can define rules to [redirect users to permanently-moved pages](#configured-
 
 **Added in:** `astro@2.9.0`
 
-You can specify a mapping of permanent redirects in your Astro config with the [`redirects`](/en/reference/configuration-reference/#redirects) value.
+You can specify a mapping of permanent redirects in your Astro config with the [`redirects`](../../reference/configuration-reference/index.md#redirects) value.
 
 For internal redirects, this is a mapping of an old route path to the new route. As of Astro v5.2.0, it is also possible to redirect to external URLs that start with `http` or `https` and [can be parsed](https://developer.mozilla.org/en-US/docs/Web/API/URL/canParse_static):
 
@@ -202,7 +202,7 @@ const cookie = Astro.request.headers.get("cookie");
 // If the user is not logged in, redirect them to the login pageif (!isLoggedIn(cookie)) {  return Astro.redirect("/login");}---
 ```
 
-Because Astro uses [HTML streaming](/en/guides/on-demand-rendering/#html-streaming) in on-demand rendering, redirects must be done at the page level, not inside child components.
+Because Astro uses [HTML streaming](../on-demand-rendering/index.md#html-streaming) in on-demand rendering, redirects must be done at the page level, not inside child components.
 
 ## Rewrites
 
@@ -210,7 +210,7 @@ Because Astro uses [HTML streaming](/en/guides/on-demand-rendering/#html-streami
 
 **Added in:** `astro@4.13.0`
 
-A rewrite allows you to serve a different route without redirecting the browser to a different page. The browser will show the original address in the URL bar, but will instead display the content of the URL provided to [`Astro.rewrite()`](/en/reference/api-reference/#rewrite).
+A rewrite allows you to serve a different route without redirecting the browser to a different page. The browser will show the original address in the URL bar, but will instead display the content of the URL provided to [`Astro.rewrite()`](../../reference/api-reference/index.md#rewrite).
 
 Rewrites can be useful for showing the same content at multiple paths (e.g. `/products/shoes/men/` and `/products/men/shoes/`) without needing to maintain two different source files.
 
@@ -245,7 +245,7 @@ export const onRequest = async (context, next) => {  const response = await next
 
 Before displaying the content from the specified rewrite path, the function `Astro.rewrite()` will trigger a new, complete rendering phase. This re-executes any middleware for the new route/request.
 
-See the [`Astro.rewrite()` API reference](/en/reference/api-reference/#rewrite) for more information.
+See the [`Astro.rewrite()` API reference](../../reference/api-reference/index.md#rewrite) for more information.
 
 ## Route Priority Order
 
@@ -291,8 +291,8 @@ Given the example above, here are a few examples of how the rules will match a r
 Internal routes take priority over any user-defined or integration-defined routes as they are required for Astro features to work. The following are Astro’s reserved routes:
 
 *   `_astro/`: Serves all of the static assets to the client, including CSS documents, bundled client scripts, optimized images, and any Vite assets.
-*   `_server_islands/`: Serves the dynamic components deferred into a [server island](/en/guides/server-islands/).
-*   `_actions/`: Serves any defined [actions](/en/guides/actions/).
+*   `_server_islands/`: Serves the dynamic components deferred into a [server island](../server-islands/index.md).
+*   `_actions/`: Serves any defined [actions](../actions/index.md).
 
 ## Pagination
 
@@ -330,7 +330,7 @@ The following example displays current information for the page along with links
 ---// Paginate same list of `{ astronaut }` objects as the previous exampleexport function getStaticPaths({ paginate }) { /* ... */ }const { page } = Astro.props;---<h1>Page {page.currentPage}</h1><ul>  {page.data.map(({ astronaut }) => <li>{astronaut}</li>)}</ul>{page.url.first ? <a href={page.url.first}>First</a> : null}{page.url.prev ? <a href={page.url.prev}>Previous</a> : null}{page.url.next ? <a href={page.url.next}>Next</a> : null}{page.url.last ? <a href={page.url.last}>Last</a> : null}
 ```
 
-Learn more about [the pagination `page` prop](/en/reference/routing-reference/#the-pagination-page-prop).
+Learn more about [the pagination `page` prop](../../reference/routing-reference/index.md#the-pagination-page-prop).
 
 ### Nested Pagination
 
@@ -381,4 +381,4 @@ In this example, only `src/pages/index.astro` and `src/pages/projects/project1.m
         
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

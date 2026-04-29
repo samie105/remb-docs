@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:00.615Z"
 content_hash: "fe6a2a9bf74d24c2751e0c70736be2ae3c11bf37979e571d217cad7764b3358a"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Memory optimization","→","Memory optimization"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Optimizing Redis","→","Optimizing Redis","→\n      \n        Memory optimization","→","Memory optimization"]
-nav_prev: {"path": "../latency/index.md", "title": "Diagnosing latency issues"}
-nav_next: {"path": "../../persistence/index.md", "title": "Redis persistence"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/optimization/latency/index.md", "title": "Diagnosing latency issues"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/persistence/index.md", "title": "Redis persistence"}
 ---
 
 # Memory optimization
@@ -180,7 +180,7 @@ But the Redis Way is that the user must understand how things work so that he ca
 
 To store user keys, Redis allocates at most as much memory as the `maxmemory` setting enables (however there are small extra allocations possible).
 
-The exact value can be set in the configuration file or set later via [`CONFIG SET`](/commands/config-set) (for more info, see [Using memory as an LRU cache](/docs/latest/develop/reference/eviction/)). There are a few things that should be noted about how Redis manages memory:
+The exact value can be set in the configuration file or set later via [`CONFIG SET`](/commands/config-set) (for more info, see [Using memory as an LRU cache](../../../../../develop/reference/eviction/index.md)). There are a few things that should be noted about how Redis manages memory:
 
 *   Redis will not always free up (return) memory to the OS when keys are removed. This is not something special about Redis, but it is how most malloc() implementations work. For example, if you fill an instance with 5GB worth of data, and then remove the equivalent of 2GB of data, the Resident Set Size (also known as the RSS, which is the number of memory pages consumed by the process) will probably still be around 5GB, even if Redis will claim that the user memory is around 3GB. This happens because the underlying allocator can't easily release the memory. For example, often most of the removed keys were allocated on the same pages as the other keys that still exist.
 *   The previous point means that you need to provision memory based on your **peak memory usage**. If your workload from time to time requires 10GB, even if most of the time 5GB could do, you need to provision for 10GB.

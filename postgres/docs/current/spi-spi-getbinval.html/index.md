@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:02.181Z"
 content_hash: "9f46ebb79d80876ad4aaaedc3b2dbd08628f3a8c5555662efcebf7a902028c0a"
 menu_path: ["PostgreSQL: Documentation: 18: SPI_getbinval"]
 section_path: []
-nav_prev: {"path": "../spgist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.3.\u00a0SP-GiST Indexes"}
-nav_next: {"path": "../spi-spi-getnspname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getnspname"}
+nav_prev: {"path": "postgres/docs/current/spgist.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.3.\u00a0SP-GiST Indexes"}
+nav_next: {"path": "postgres/docs/current/spi-spi-getnspname.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_getnspname"}
 ---
 
 February 26, 2026: [PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!](/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:59.675Z"
 content_hash: "efd322b8af32defdac958d8e484e1dc5a30786f13ad645c778a73850d1e8dba1"
 menu_path: ["Image not found."]
 section_path: []
-nav_prev: {"path": "../image-missing-alt/index.md", "title": "Image missing required \"alt\" property."}
-nav_next: {"path": "../incompatible-descriptor-options/index.md", "title": "Cannot set both densities and widths"}
+nav_prev: {"path": "astro/en/reference/errors/image-missing-alt/index.md", "title": "Image missing required \"alt\" property."}
+nav_next: {"path": "astro/en/reference/errors/incompatible-descriptor-options/index.md", "title": "Cannot set both densities and widths"}
 ---
 
 # Image not found.
@@ -27,6 +27,6 @@ Images in Markdown are relative to the current file. To refer to an image that i
 
 **See Also:**
 
-*   [Images](/en/guides/images/)
+*   [Images](../../../guides/images/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

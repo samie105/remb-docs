@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:53.593Z"
 content_hash: "46c054eec1006ffa675f557979b4057e5d6b00ca475cb53c2661cf1aaab77f3b"
 menu_path: ["Import a JSON5 file"]
 section_path: []
-nav_prev: {"path": "../import-json/index.md", "title": "Import a JSON file"}
-nav_next: {"path": "../import-toml/index.md", "title": "Import a TOML file"}
+nav_prev: {"path": "bun/docs/guides/runtime/import-json/index.md", "title": "Import a JSON file"}
+nav_next: {"path": "bun/docs/guides/runtime/import-toml/index.md", "title": "Import a TOML file"}
 ---
 
 Bun natively supports `.json5` imports.

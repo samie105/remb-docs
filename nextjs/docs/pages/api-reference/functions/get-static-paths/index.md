@@ -11,15 +11,15 @@ menu_path: ["getStaticPaths"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../get-server-side-props/index.md", "title": "getServerSideProps"}
-nav_next: {"path": "../get-static-props/index.md", "title": "getStaticProps"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-server-side-props/index.md", "title": "getServerSideProps"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/get-static-props/index.md", "title": "getStaticProps"}
 ---
 
 # getStaticPaths
 
 Last updated April 23, 2026
 
-When exporting a function called `getStaticPaths` from a page that uses [Dynamic Routes](/docs/pages/building-your-application/routing/dynamic-routes), Next.js will statically prerender all the paths specified by `getStaticPaths`.
+When exporting a function called `getStaticPaths` from a page that uses [Dynamic Routes](../../../building-your-application/routing/dynamic-routes/index.md), Next.js will statically prerender all the paths specified by `getStaticPaths`.
 
 pages/repo/\[name\].tsx
 
@@ -71,7 +71,7 @@ The `getStaticPaths` function should return an object with the following **requi
 
 ### `paths`[](#paths)
 
-The `paths` key determines which paths will be prerendered. For example, suppose that you have a page that uses [Dynamic Routes](/docs/pages/building-your-application/routing/dynamic-routes) named `pages/posts/[id].js`. If you export `getStaticPaths` from this page and return the following for `paths`:
+The `paths` key determines which paths will be prerendered. For example, suppose that you have a page that uses [Dynamic Routes](../../../building-your-application/routing/dynamic-routes/index.md) named `pages/posts/[id].js`. If you export `getStaticPaths` from this page and return the following for `paths`:
 
 ```
 return {
@@ -92,8 +92,8 @@ Then, Next.js will statically generate `/posts/1` and `/posts/2` during `next bu
 The value for each `params` object must match the parameters used in the page name:
 
 -   If the page name is `pages/posts/[postId]/[commentId]`, then `params` should contain `postId` and `commentId`.
--   If the page name uses [catch-all routes](/docs/pages/building-your-application/routing/dynamic-routes#catch-all-segments) like `pages/[...slug]`, then `params` should contain `slug` (which is an array). If this array is `['hello', 'world']`, then Next.js will statically generate the page at `/hello/world`.
--   If the page uses an [optional catch-all route](/docs/pages/building-your-application/routing/dynamic-routes#optional-catch-all-segments), use `null`, `[]`, `undefined` or `false` to render the root-most route. For example, if you supply `slug: false` for `pages/[[...slug]]`, Next.js will statically generate the page `/`.
+-   If the page name uses [catch-all routes](../../../building-your-application/routing/dynamic-routes/index.md#catch-all-segments) like `pages/[...slug]`, then `params` should contain `slug` (which is an array). If this array is `['hello', 'world']`, then Next.js will statically generate the page at `/hello/world`.
+-   If the page uses an [optional catch-all route](../../../building-your-application/routing/dynamic-routes/index.md#optional-catch-all-segments), use `null`, `[]`, `undefined` or `false` to render the root-most route. For example, if you supply `slug: false` for `pages/[[...slug]]`, Next.js will statically generate the page `/`.
 
 The `params` strings are **case-sensitive** and ideally should be normalized to ensure the paths are generated correctly. For example, if `WoRLD` is returned for a param it will only match if `WoRLD` is the actual path visited, not `world` or `World`.
 
@@ -105,7 +105,7 @@ If `fallback` is `false`, then any paths not returned by `getStaticPaths` will r
 
 When `next build` is run, Next.js will check if `getStaticPaths` returned `fallback: false`, it will then build **only** the paths returned by `getStaticPaths`. This option is useful if you have a small number of paths to create, or new page data is not added often. If you find that you need to add more paths, and you have `fallback: false`, you will need to run `next build` again so that the new paths can be generated.
 
-The following example prerenders one blog post per page called `pages/posts/[id].js`. The list of blog posts will be fetched from a CMS and returned by `getStaticPaths`. Then, for each page, it fetches the post data from a CMS using [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props).
+The following example prerenders one blog post per page called `pages/posts/[id].js`. The list of blog posts will be fetched from a CMS and returned by `getStaticPaths`. Then, for each page, it fetches the post data from a CMS using [`getStaticProps`](../../../building-your-application/data-fetching/get-static-props/index.md).
 
 pages/posts/\[id\].js
 
@@ -193,7 +193,7 @@ If `fallback` is `'blocking'`, new paths not returned by `getStaticPaths` will w
 In the “fallback” version of a page:
 
 -   The page’s props will be empty.
--   Using the [router](/docs/pages/api-reference/functions/use-router), you can detect if the fallback is being rendered, `router.isFallback` will be `true`.
+-   Using the [router](../use-router/index.md), you can detect if the fallback is being rendered, `router.isFallback` will be `true`.
 
 The following example showcases using `isFallback`:
 
@@ -248,7 +248,7 @@ export default Post
 
 | Version | Changes |
 | --- | --- |
-| `v13.4.0` | [App Router](/docs/app/getting-started/fetching-data) is now stable with simplified data fetching, including [`generateStaticParams()`](/docs/app/api-reference/functions/generate-static-params) |
+| `v13.4.0` | [App Router](../../../../app/getting-started/fetching-data/index.md) is now stable with simplified data fetching, including [`generateStaticParams()`](../../../../app/api-reference/functions/generate-static-params/index.md) |
 | `v12.2.0` | [On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) is stable. |
 | `v12.1.0` | [On-Demand Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath) added (beta). |
 | `v9.5.0` | Stable [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration) |

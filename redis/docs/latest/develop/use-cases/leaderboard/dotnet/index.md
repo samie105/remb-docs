@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:07:06.695Z"
 content_hash: "3a05596c87a0dd0e9edcfedf3e5a29d18a169b6cd46a22ccaa332883d318e61e"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with .NET","→","Redis leaderboard with .NET"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with .NET","→","Redis leaderboard with .NET"]
-nav_prev: {"path": "../index.md", "title": "Redis leaderboard"}
-nav_next: {"path": "../go/index.md", "title": "Redis leaderboard with Go"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/index.md", "title": "Redis leaderboard"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/go/index.md", "title": "Redis leaderboard with Go"}
 ---
 
 # Redis leaderboard with .NET
 
 Implement a Redis leaderboard in C# with StackExchange.Redis and sorted sets
 
-This guide shows you how to implement a Redis-backed leaderboard in C# with the [`StackExchange.Redis`](/docs/latest/develop/clients/dotnet/) client library. It uses a sorted set to store rank order, Redis hashes to store per-user metadata, and a small local web server so you can explore the leaderboard interactively in your browser.
+This guide shows you how to implement a Redis-backed leaderboard in C# with the [`StackExchange.Redis`](../../../clients/dotnet/index.md) client library. It uses a sorted set to store rank order, Redis hashes to store per-user metadata, and a small local web server so you can explore the leaderboard interactively in your browser.
 
 ## Overview
 

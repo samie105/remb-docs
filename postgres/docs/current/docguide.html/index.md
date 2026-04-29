@@ -10,8 +10,8 @@ content_hash: "375e43f493083ca1dfb8b871038c52baf0bd564cc48b949a680f3e2ed86d8dfa"
 menu_path: ["PostgreSQL: Documentation: 18: Appendix J. Documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sourcerepo.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0I.\u00a0The Source Code Repository"}
-nav_next: {"path": "../acronyms.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0L.\u00a0Acronyms"}
+nav_prev: {"path": "postgres/docs/current/sourcerepo.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0I.\u00a0The Source Code Repository"}
+nav_next: {"path": "postgres/docs/current/acronyms.html/index.md", "title": "PostgreSQL: Documentation: 18: Appendix\u00a0L.\u00a0Acronyms"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/docguide.html "PostgreSQL devel - Appendix J. Documentation")

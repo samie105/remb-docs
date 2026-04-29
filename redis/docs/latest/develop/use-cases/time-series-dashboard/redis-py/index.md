@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:44:16.865Z"
 content_hash: "81460b4c656502c04bfb76716f414e8dbc56ccaf3b89f50ed2b3326585137b03"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and redis-py","→","Rolling sensor graph demo with Redis and redis-py"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and redis-py","→","Rolling sensor graph demo with Redis and redis-py"]
-nav_prev: {"path": "../php/index.md", "title": "Rolling sensor graph demo with Redis and PHP"}
-nav_next: {"path": "../ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/php/index.md", "title": "Rolling sensor graph demo with Redis and PHP"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/ruby/index.md", "title": "Rolling sensor graph demo with Redis and Ruby"}
 ---
 
 # Rolling sensor graph demo with Redis and redis-py
 
 Build a Redis-backed rolling sensor graph demo in Python with redis-py
 
-This guide shows you how to build a compact rolling sensor graph demo in Python with [`redis-py`](/docs/latest/develop/clients/redis-py/) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
+This guide shows you how to build a compact rolling sensor graph demo in Python with [`redis-py`](../../../clients/redis-py/index.md) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
 
 ## Overview
 
@@ -150,7 +150,7 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 
 ## Learn more
 
-*   [redis-py guide](/docs/latest/develop/clients/redis-py/) - Install and use the Python client
+*   [redis-py guide](../../../clients/redis-py/index.md) - Install and use the Python client
 *   [Time series overview](/docs/latest/develop/data-types/timeseries/) - Time series concepts and commands
 *   [TS.RANGE command](/docs/latest/commands/ts.range/) - Query raw and aggregated ranges from a time series
 *   [TS.MADD command](/docs/latest/commands/ts.madd/) - Add multiple samples in one call

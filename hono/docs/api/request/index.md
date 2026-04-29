@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:45.211Z"
 content_hash: "384f4c80d158e1ed4d7a23283097c05feaedcbd8cfee2ea56a210e6f4c958e27"
 menu_path: ["HonoRequest ​"]
 section_path: []
-nav_prev: {"path": "../context/index.md", "title": "Context \u200b"}
-nav_next: {"path": "../exception/index.md", "title": "HTTPException \u200b"}
+nav_prev: {"path": "hono/docs/api/context/index.md", "title": "Context \u200b"}
+nav_next: {"path": "hono/docs/api/exception/index.md", "title": "HTTPException \u200b"}
 ---
 
 The `HonoRequest` is an object that can be taken from `c.req` which wraps a [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object.

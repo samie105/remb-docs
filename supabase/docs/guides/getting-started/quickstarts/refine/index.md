@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:28.196Z"
 content_hash: "27787c0884c591345bd0a47ddaaa1fd7b4943a496008abb6ba2e3cf3f7093d88"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Refine","Refine"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Refine","Refine"]
-nav_prev: {"path": "../redwoodjs/index.md", "title": "Use Supabase with RedwoodJS"}
-nav_next: {"path": "../ruby-on-rails/index.md", "title": "Use Supabase with Ruby on Rails"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/redwoodjs/index.md", "title": "Use Supabase with RedwoodJS"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/ruby-on-rails/index.md", "title": "Use Supabase with Ruby on Rails"}
 ---
 
 # 
@@ -117,7 +117,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=refine).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 

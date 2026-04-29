@@ -10,8 +10,8 @@ content_hash: "257b06c70773bcb17bd4242cf9d0e9e5345e0e2c5e407f948e00991618293fe0"
 menu_path: ["Drizzle <> PostgreSQL"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../migrations/index.md", "title": "Drizzle migrations fundamentals"}
-nav_next: {"path": "../get-started-gel/index.md", "title": "Drizzle <> Gel"}
+nav_prev: {"path": "drizzle/docs/migrations/index.md", "title": "Drizzle migrations fundamentals"}
+nav_next: {"path": "drizzle/docs/get-started-gel/index.md", "title": "Drizzle <> Gel"}
 ---
 
 Drizzle has native support for PostgreSQL connections with the `node-postgres` and `postgres.js` drivers.

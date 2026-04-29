@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:00.591Z"
 content_hash: "64008de28e68eb3b9d5ec879c2ad0997848f08f4aca58b843116d82e63869bf0"
 menu_path: ["Web Standards ​"]
 section_path: []
-nav_prev: {"path": "../benchmarks/index.md", "title": "Benchmarks \u200b"}
-nav_next: {"path": "../middleware/index.md", "title": "Middleware \u200b"}
+nav_prev: {"path": "hono/docs/concepts/benchmarks/index.md", "title": "Benchmarks \u200b"}
+nav_next: {"path": "hono/docs/concepts/middleware/index.md", "title": "Middleware \u200b"}
 ---
 
 Hono uses only **Web Standards** like Fetch. They were originally used in the `fetch` function and consist of basic objects that handle HTTP requests and responses. In addition to `Requests` and `Responses`, there are `URL`, `URLSearchParam`, `Headers` and others.

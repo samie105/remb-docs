@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:15.769Z"
 content_hash: "3a374378836f57d8bc5e6beeafd0dbc1e1c67447a15ac8224b71ea496b528132"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Realtime Messages","Realtime Messages"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Realtime Messages","Realtime Messages"]
-nav_prev: {"path": "../read-replicas/index.md", "title": "Manage Read Replica usage"}
-nav_next: {"path": "../realtime-peak-connections/index.md", "title": "Manage Realtime Peak Connections usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/read-replicas/index.md", "title": "Manage Read Replica usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/realtime-peak-connections/index.md", "title": "Manage Realtime Peak Connections usage"}
 ---
 
 # 
@@ -197,6 +197,6 @@ In the Realtime Messages section, you can see the usage for the selected time pe
 
 ## Exceeding Quotas[#](#exceeding-quotas)
 
-If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
+If you are on a paid plan and have [Spend Cap](../../cost-control/index.md#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
-When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](../../cost-control/index.md#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](../../billing-faq/index.md#fair-use-policy).

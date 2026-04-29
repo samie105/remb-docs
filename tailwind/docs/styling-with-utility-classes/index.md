@@ -10,8 +10,8 @@ content_hash: "f107f1b53eaf8e19cfa39a9ed68f06914e2d4b9297490c54957e20926708b2e4"
 menu_path: ["Styling with utility classes"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../upgrade-guide/index.md", "title": "Upgrade guide"}
-nav_next: {"path": "../hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
+nav_prev: {"path": "tailwind/docs/upgrade-guide/index.md", "title": "Upgrade guide"}
+nav_next: {"path": "tailwind/docs/hover-focus-and-other-states/index.md", "title": "Hover, focus, and other states"}
 ---
 
 Building complex components from a constrained set of primitive utilities.

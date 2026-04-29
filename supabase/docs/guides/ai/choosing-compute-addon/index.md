@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:12.758Z"
 content_hash: "d973733b5fe8233c9a4ca98ebb8715426288630e01ae8c327275f450fa7b1b47"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Choosing Compute Add-on","Choosing Compute Add-on"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Choosing Compute Add-on","Choosing Compute Add-on"]
-nav_prev: {"path": "../automatic-embeddings/index.md", "title": "Automatic embeddings"}
-nav_next: {"path": "../concepts/index.md", "title": "Concepts"}
+nav_prev: {"path": "supabase/docs/guides/ai/automatic-embeddings/index.md", "title": "Automatic embeddings"}
+nav_next: {"path": "supabase/docs/guides/ai/concepts/index.md", "title": "Concepts"}
 ---
 
 # 
@@ -486,7 +486,7 @@ XL
 
 Accuracy was 0.99 for benchmarks.
 
-QPS can also be improved by increasing [`m` and `ef_construction`](/docs/guides/ai/going-to-prod#hnsw-understanding-efconstruction--efsearch--and-m). This will allow you to use a smaller value for `ef_search` and increase QPS.
+QPS can also be improved by increasing [`m` and `ef_construction`](../going-to-prod/index.md#hnsw-understanding-efconstruction--efsearch--and-m). This will allow you to use a smaller value for `ef_search` and increase QPS.
 
 ### 1536 dimensions [#](#hnsw-1536-dimensions)
 
@@ -714,7 +714,7 @@ XL
 
 Accuracy was 0.99 for benchmarks.
 
-QPS can also be improved by increasing [`m` and `ef_construction`](/docs/guides/ai/going-to-prod#hnsw-understanding-efconstruction--efsearch--and-m). This will allow you to use a smaller value for `ef_search` and increase QPS. For example, increasing `m` to 32 and `ef_construction` to 80 for 4XL will increase QPS to 1280.
+QPS can also be improved by increasing [`m` and `ef_construction`](../going-to-prod/index.md#hnsw-understanding-efconstruction--efsearch--and-m). This will allow you to use a smaller value for `ef_search` and increase QPS. For example, increasing `m` to 32 and `ef_construction` to 80 for 4XL will increase QPS to 1280.
 
 It is possible to upload more vectors to a single table if Memory allows it (for example, 4XL plan and higher for OpenAI embeddings). But it will affect the performance of the queries: QPS will be lower, and latency will be higher. Scaling should be almost linear, but it is recommended to benchmark your workload to find the optimal number of vectors per table and per database instance.
 

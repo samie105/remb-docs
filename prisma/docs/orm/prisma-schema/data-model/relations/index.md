@@ -11,8 +11,8 @@ menu_path: ["Relations"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "../multi-schema/index.md", "title": "Multi-schema"}
-nav_next: {"path": "many-to-many-relations/index.md", "title": "Many-to-many relations"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/multi-schema/index.md", "title": "Multi-schema"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/many-to-many-relations/index.md", "title": "Many-to-many relations"}
 ---
 
 A relation is a connection between two models in the Prisma schema. This page explains how you can define one-to-one, one-to-many and many-to-many relations in Prisma

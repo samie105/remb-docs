@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:14.089Z"
 content_hash: "f57c6f76dd7b49ef9a315552caa78d413008a41c16c6e806dc95afa70eb16164"
 menu_path: ["Experimental SVG optimization"]
 section_path: []
-nav_prev: {"path": "../chrome-devtools-workspace/index.md", "title": "Experimental Chrome DevTools workspace"}
-nav_next: {"path": "../queued-rendering/index.md", "title": "Experimental queued rendering"}
+nav_prev: {"path": "astro/en/reference/experimental-flags/chrome-devtools-workspace/index.md", "title": "Experimental Chrome DevTools workspace"}
+nav_next: {"path": "astro/en/reference/experimental-flags/queued-rendering/index.md", "title": "Experimental queued rendering"}
 ---
 
 # Experimental SVG optimization
@@ -20,7 +20,7 @@ nav_next: {"path": "../queued-rendering/index.md", "title": "Experimental queued
 
 **Added in:** `astro@5.16.0`
 
-This experimental feature enables automatic optimization of your [SVG components](/en/guides/images/#svg-components) using [SVGO](https://svgo.dev/) during build time.
+This experimental feature enables automatic optimization of your [SVG components](../../../guides/images/index.md#svg-components) using [SVGO](https://svgo.dev/) during build time.
 
 When enabled, your imported SVG files used as components will be optimized for smaller file sizes and better performance while maintaining visual quality. This can significantly reduce the size of your SVG assets by removing unnecessary metadata, comments, and redundant code.
 
@@ -139,4 +139,4 @@ While the optimization process may slightly increase your build times, the resul
 
 *   [SVGO documentation](https://svgo.dev/)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

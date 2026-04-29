@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:39.725Z"
 content_hash: "6e6201bce863ded029142de94228cc70d0ccb468a8e1f55bc6298fac808a073b"
 menu_path: ["Write browser DOM tests with Bun and happy-dom"]
 section_path: []
-nav_prev: {"path": "../coverage-threshold/index.md", "title": "Set a code coverage threshold with the Bun test runner"}
-nav_next: {"path": "../migrate-from-jest/index.md", "title": "Migrate from Jest to Bun's test runner"}
+nav_prev: {"path": "bun/docs/guides/test/coverage-threshold/index.md", "title": "Set a code coverage threshold with the Bun test runner"}
+nav_next: {"path": "bun/docs/guides/test/migrate-from-jest/index.md", "title": "Migrate from Jest to Bun's test runner"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../migrate-from-jest/index.md", "title": "Migrate from Jest 
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 You can write and run browser tests with Bun’s test runner in conjunction with [Happy DOM](https://github.com/capricorn86/happy-dom). Happy DOM implements mocked versions of browser APIs like `document` and `location`.
 
@@ -109,7 +109,7 @@ Ran 1 tests across 1 files. 1 total [125.00ms]
 
 * * *
 
-Refer to the [Happy DOM repo](https://github.com/capricorn86/happy-dom) and [Docs > Test runner > DOM](/docs/test/dom) for complete documentation on writing browser tests with Bun.
+Refer to the [Happy DOM repo](https://github.com/capricorn86/happy-dom) and [Docs > Test runner > DOM](../../../test/dom/index.md) for complete documentation on writing browser tests with Bun.
 
 Was this page helpful?
 
@@ -121,10 +121,10 @@ Using Testing Library with Bun
 
 Previous
 
-](/docs/guides/test/testing-library)[
+](../testing-library/index.md)[
 
 import, require, and test Svelte components with bun test
 
 Next
 
-](/docs/guides/test/svelte-test)
+](../svelte-test/index.md)

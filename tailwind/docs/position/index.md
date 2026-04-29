@@ -10,8 +10,8 @@ content_hash: "83acc3057b468c3402ab40d3d68e90307060717b670dba3456a366723ee65873"
 menu_path: ["position"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../overscroll-behavior/index.md", "title": "overscroll-behavior"}
-nav_next: {"path": "../top-right-bottom-left/index.md", "title": "top / right / bottom / left"}
+nav_prev: {"path": "tailwind/docs/overscroll-behavior/index.md", "title": "overscroll-behavior"}
+nav_next: {"path": "tailwind/docs/top-right-bottom-left/index.md", "title": "top / right / bottom / left"}
 ---
 
 Utilities for controlling how an element is positioned in the document.

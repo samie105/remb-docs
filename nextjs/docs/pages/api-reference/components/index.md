@@ -11,8 +11,8 @@ menu_path: ["Components"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "API Reference"}
-nav_next: {"path": "font/index.md", "title": "Font Module"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/index.md", "title": "API Reference"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/components/font/index.md", "title": "Font Module"}
 ---
 
 # Components
@@ -25,42 +25,42 @@ Last updated April 23, 2026
 
 API Reference for the Font Module
 
-](/docs/pages/api-reference/components/font)[
+](font/index.md)[
 
 ### Form
 
 Learn how to use the \`<Form>\` component to handle form submissions and search params updates with client-side navigation.
 
-](/docs/pages/api-reference/components/form)[
+](form/index.md)[
 
 ### Head
 
 Add custom elements to the \`head\` of your page with the built-in Head component.
 
-](/docs/pages/api-reference/components/head)[
+](head/index.md)[
 
 ### Image
 
 Optimize Images in your Next.js Application using the built-in \`next/image\` Component.
 
-](/docs/pages/api-reference/components/image)[
+](image/index.md)[
 
 ### Image (Legacy)
 
 Backwards compatible Image Optimization with the Legacy Image component.
 
-](/docs/pages/api-reference/components/image-legacy)[
+](image-legacy/index.md)[
 
 ### Link
 
 API reference for the \`<Link>\` component.
 
-](/docs/pages/api-reference/components/link)[
+](link/index.md)[
 
 ### Script
 
 Optimize third-party scripts in your Next.js application using the built-in \`next/script\` Component.
 
-](/docs/pages/api-reference/components/script)
+](script/index.md)
 
 Was this helpful?

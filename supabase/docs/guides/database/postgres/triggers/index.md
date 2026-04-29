@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:49.632Z"
 content_hash: "358e697e1d02fe18ee826847aeb7995398fad6109dbb786f1e9d807da82d84db"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database triggers","Managing database triggers"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing database triggers","Managing database triggers"]
-nav_prev: {"path": "../timeouts/index.md", "title": "Timeouts"}
-nav_next: {"path": "../which-version-of-postgres/index.md", "title": "Print Postgres version"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/timeouts/index.md", "title": "Timeouts"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/which-version-of-postgres/index.md", "title": "Print Postgres version"}
 ---
 
 # 
@@ -29,7 +29,7 @@ In Postgres, a trigger executes a set of actions automatically on table events s
 
 Creating triggers involve 2 parts:
 
-1.  A [Function](/docs/guides/database/functions) which will be executed (called the Trigger Function)
+1.  A [Function](../../functions/index.md) which will be executed (called the Trigger Function)
 2.  The actual Trigger object, with parameters around when the trigger should be run.
 
 An example of a trigger is:
@@ -40,7 +40,7 @@ An example of a trigger is:
 
 ## Trigger functions[#](#trigger-functions)
 
-A trigger function is a user-defined [Function](/docs/guides/database/functions) that Postgres executes when the trigger is fired.
+A trigger function is a user-defined [Function](../../functions/index.md) that Postgres executes when the trigger is fired.
 
 ### Example trigger function[#](#example-trigger-function)
 

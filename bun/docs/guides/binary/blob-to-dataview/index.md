@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:59.019Z"
 content_hash: "dab982324ea6318eb4c805f884b32eeccbbe53996aa5d64ff8ee9158ebb96ee4"
 menu_path: ["Convert a Blob to a DataView"]
 section_path: []
-nav_prev: {"path": "../blob-to-arraybuffer/index.md", "title": "Convert a Blob to an ArrayBuffer"}
-nav_next: {"path": "../blob-to-stream/index.md", "title": "Convert a Blob to a ReadableStream"}
+nav_prev: {"path": "bun/docs/guides/binary/blob-to-arraybuffer/index.md", "title": "Convert a Blob to an ArrayBuffer"}
+nav_next: {"path": "bun/docs/guides/binary/blob-to-stream/index.md", "title": "Convert a Blob to a ReadableStream"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../blob-to-stream/index.md", "title": "Convert a Blob to a R
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) class provides a number of methods for consuming its contents in different formats. This snippets reads the contents to an `ArrayBuffer`, then creates a `DataView` from the buffer.
 
@@ -44,7 +44,7 @@ const arr = new DataView(await blob.arrayBuffer());
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a Blob to a Uint8Array
 
 Previous
 
-](/docs/guides/binary/blob-to-typedarray)[
+](../blob-to-typedarray/index.md)[
 
 Convert a Blob to a ReadableStream
 
 Next
 
-](/docs/guides/binary/blob-to-stream)
+](../blob-to-stream/index.md)

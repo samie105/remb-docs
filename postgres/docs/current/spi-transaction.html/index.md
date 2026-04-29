@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:41.938Z"
 content_hash: "089b403bb76bd554b683fb15f8c7414b23bf1142d894c283fe917a63bcfc355d"
 menu_path: ["PostgreSQL: Documentation: 18: 45.4. Transaction Management"]
 section_path: []
-nav_prev: {"path": "../spi-spi-unregister-relation.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_unregister_relation"}
-nav_next: {"path": "../spi-visibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.5.\u00a0Visibility of Data Changes"}
+nav_prev: {"path": "postgres/docs/current/spi-spi-unregister-relation.html/index.md", "title": "PostgreSQL: Documentation: 18: SPI_unregister_relation"}
+nav_next: {"path": "postgres/docs/current/spi-visibility.html/index.md", "title": "PostgreSQL: Documentation: 18: 45.5.\u00a0Visibility of Data Changes"}
 ---
 
 It is not possible to run transaction control commands such as `COMMIT` and `ROLLBACK` through SPI functions such as `SPI_execute`. There are, however, separate interface functions that allow transaction control through SPI.

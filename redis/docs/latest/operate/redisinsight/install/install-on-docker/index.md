@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:00.387Z"
 content_hash: "b8ccd2b202a7164dd96e46f7cf07ff85005de440091ab5fe455c5783bc25085b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on Docker","→","Install on Docker"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Insight","→","Redis Insight","→\n      \n        Install Redis Insight","→","Install Redis Insight","→\n      \n        Install on Docker","→","Install on Docker"]
-nav_prev: {"path": "../install-on-desktop/index.md", "title": "Install on desktop"}
-nav_next: {"path": "../install-on-k8s/index.md", "title": "Install on Kubernetes"}
+nav_prev: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-desktop/index.md", "title": "Install on desktop"}
+nav_next: {"path": "redis/docs/latest/operate/redisinsight/install/install-on-k8s/index.md", "title": "Install on Kubernetes"}
 ---
 
 # Install on Docker
@@ -19,7 +19,7 @@ How to install Redis Insight on Docker
 
 Redis Insight
 
-This tutorial shows how to install Redis Insight on [Docker](https://www.docker.com/) so you can use Redis Insight in development. See a separate guide for installing [Redis Insight on AWS](/docs/latest/operate/redisinsight/install/install-on-aws/).
+This tutorial shows how to install Redis Insight on [Docker](https://www.docker.com/) so you can use Redis Insight in development. See a separate guide for installing [Redis Insight on AWS](../install-on-aws/index.md).
 
 ## Install Docker
 

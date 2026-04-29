@@ -11,8 +11,8 @@ menu_path: ["sitemap.xml"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../robots/index.md", "title": "robots.txt"}
-nav_next: {"path": "../../route-segment-config/index.md", "title": "Route Segment Config"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/robots/index.md", "title": "robots.txt"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/index.md", "title": "Route Segment Config"}
 ---
 
 # sitemap.xml
@@ -54,7 +54,7 @@ app/sitemap.xml
 
 You can use the `sitemap.(js|ts)` file convention to programmatically **generate** a sitemap by exporting a default function that returns an array of URLs. If using TypeScript, a [`Sitemap`](#returns) type is available.
 
-> **Good to know**: `sitemap.js` is a special Route Handler that is cached by default unless it uses a [Request-time API](/docs/app/glossary#request-time-apis) or [dynamic config](/docs/app/guides/caching-without-cache-components#dynamic) option.
+> **Good to know**: `sitemap.js` is a special Route Handler that is cached by default unless it uses a [Request-time API](../../../../glossary/index.md#request-time-apis) or [dynamic config](../../../../guides/caching-without-cache-components/index.md#dynamic) option.
 
 app/sitemap.ts
 
@@ -311,7 +311,7 @@ While a single sitemap will work for most applications. For large web applicatio
 There are two ways you can create multiple sitemaps:
 
 -   By nesting `sitemap.(xml|js|ts)` inside multiple route segments e.g. `app/sitemap.xml` and `app/products/sitemap.xml`.
--   By using the [`generateSitemaps`](/docs/app/api-reference/functions/generate-sitemaps) function.
+-   By using the [`generateSitemaps`](../../../functions/generate-sitemaps/index.md) function.
 
 For example, to split a sitemap using `generateSitemaps`, return an array of objects with the sitemap `id`. Then, use the `id` to generate the unique sitemaps.
 
@@ -347,7 +347,7 @@ export default async function sitemap(props: {
 
 Your generated sitemaps will be available at `/.../sitemap/[id]`. For example, `/product/sitemap/1.xml`.
 
-See the [`generateSitemaps` API reference](/docs/app/api-reference/functions/generate-sitemaps) for more information.
+See the [`generateSitemaps` API reference](../../../functions/generate-sitemaps/index.md) for more information.
 
 ## Returns[](#returns)
 
@@ -391,6 +391,6 @@ Learn how to use the generateSitemaps function.
 
 Learn how to use the generateSiteMaps function to create multiple sitemaps for your application.
 
-](/docs/app/api-reference/functions/generate-sitemaps)
+](../../../functions/generate-sitemaps/index.md)
 
 Was this helpful?

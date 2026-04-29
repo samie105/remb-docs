@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:38:37.644Z"
 content_hash: "65ec82502416488d20a490738a05ed0bf6e1329a8614758f1d9d79afe3aa69d1"
 menu_path: ["@astrojs/\n\t\t\t\t\talpinejs"]
 section_path: []
-nav_prev: {"path": "../../../reference/error-reference/index.md", "title": "Error reference"}
-nav_next: {"path": "../preact/index.md", "title": "@astrojs/\n\t\t\t\t\tpreact"}
+nav_prev: {"path": "astro/en/reference/error-reference/index.md", "title": "Error reference"}
+nav_next: {"path": "astro/en/guides/integrations-guide/preact/index.md", "title": "@astrojs/\n\t\t\t\t\tpreact"}
 ---
 
 # @astrojs/ alpinejs
 
 v0.5.0 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/alpinejs/) [npm](https://www.npmjs.com/package/@astrojs/alpinejs) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/alpinejs/CHANGELOG.md)
 
-This **[Astro integration](/en/guides/integrations/)** adds [Alpine.js](https://alpinejs.dev/) to your project so that you can use Alpine.js anywhere on your page.
+This **[Astro integration](../../integrations/index.md)** adds [Alpine.js](https://alpinejs.dev/) to your project so that you can use Alpine.js anywhere on your page.
 
 ## Installation
 
@@ -111,7 +111,7 @@ The following example adds [Alpine’s Collapse plugin](https://alpinejs.dev/plu
 
 [Section titled “Intellisense for TypeScript”](#intellisense-for-typescript)
 
-The `@astrojs/alpine` integration adds `Alpine` to [the global window object](/en/guides/typescript/#window-and-globalthis). For IDE autocompletion, add the following to your `src/env.d.ts`:
+The `@astrojs/alpine` integration adds `Alpine` to [the global window object](../../typescript/index.md#window-and-globalthis). For IDE autocompletion, add the following to your `src/env.d.ts`:
 
 ```
 interface Window {  Alpine: import('alpinejs').Alpine;}
@@ -129,34 +129,34 @@ interface Window {  Alpine: import('alpinejs').Alpine;}
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -164,34 +164,34 @@ interface Window {  Alpine: import('alpinejs').Alpine;}
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -10,7 +10,7 @@ content_hash: "207d193a30fd320de7e8e1403e04e54dbf6284562d94a57b7d22840b164ada93"
 menu_path: ["Schema location"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../generators/index.md", "title": "Generators"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/overview/generators/index.md", "title": "Generators"}
 ---
 
 # All files must be inside the `prisma/` directory

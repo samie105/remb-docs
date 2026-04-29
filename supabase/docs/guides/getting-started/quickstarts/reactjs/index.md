@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:19.593Z"
 content_hash: "01b6e3c51997498dbfa022c6037ab4f5e38613aa49ab43a369603e83ad4eae3a"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","React","React"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","React","React"]
-nav_prev: {"path": "../nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
-nav_next: {"path": "../redwoodjs/index.md", "title": "Use Supabase with RedwoodJS"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/nuxtjs/index.md", "title": "Use Supabase with Nuxt"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/redwoodjs/index.md", "title": "Use Supabase with RedwoodJS"}
 ---
 
 # 
@@ -108,7 +108,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=react).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -146,6 +146,6 @@ Run the development server, go to [http://localhost:5173](http://localhost:5173)
 
 ## Next steps[#](#next-steps)
 
-*   Set up [Auth](/docs/guides/auth) for your app
-*   [Insert more data](/docs/guides/database/import-data) into your database
-*   Upload and serve static files using [Storage](/docs/guides/storage)
+*   Set up [Auth](../../../auth/index.md) for your app
+*   [Insert more data](../../../database/import-data/index.md) into your database
+*   Upload and serve static files using [Storage](../../../storage/index.md)

@@ -11,8 +11,8 @@ menu_path: ["Linking and Navigating"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../layouts-and-pages/index.md", "title": "Layouts and Pages"}
-nav_next: {"path": "../server-and-client-components/index.md", "title": "Server and Client Components"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/layouts-and-pages/index.md", "title": "Layouts and Pages"}
+nav_next: {"path": "nextjs/docs/app/getting-started/server-and-client-components/index.md", "title": "Server and Client Components"}
 ---
 
 # Linking and Navigating
@@ -32,11 +32,11 @@ To understand how navigation works in Next.js, it helps to be familiar with the 
 
 ### Server Rendering[](#server-rendering)
 
-In Next.js, [Layouts and Pages](/docs/app/getting-started/layouts-and-pages) are [React Server Components](https://react.dev/reference/rsc/server-components) by default. On initial and subsequent navigations, the [Server Component Payload](/docs/app/getting-started/server-and-client-components#how-do-server-and-client-components-work-in-nextjs) is generated on the server before being sent to the client.
+In Next.js, [Layouts and Pages](../layouts-and-pages/index.md) are [React Server Components](https://react.dev/reference/rsc/server-components) by default. On initial and subsequent navigations, the [Server Component Payload](../server-and-client-components/index.md#how-do-server-and-client-components-work-in-nextjs) is generated on the server before being sent to the client.
 
 There are two types of server rendering, based on _when_ it happens:
 
--   **Prerendering** happens at build time or during [revalidation](/docs/app/getting-started/revalidating) and the result is cached.
+-   **Prerendering** happens at build time or during [revalidation](../revalidating/index.md) and the result is cached.
 -   **Dynamic Rendering** happens at request time in response to a client request.
 
 The trade-off of server rendering is that the client must wait for the server to respond before the new route can be shown. Next.js addresses this delay by [prefetching](#prefetching) routes the user is likely to visit and performing [client-side transitions](#client-side-transitions).
@@ -47,7 +47,7 @@ The trade-off of server rendering is that the client must wait for the server to
 
 Prefetching is the process of loading a route in the background before the user navigates to it. This makes navigation between routes in your application feel instant, because by the time a user clicks on a link, the data to render the next route is already available client side.
 
-Next.js automatically prefetches routes linked with the [`<Link>` component](/docs/app/api-reference/components/link) when they enter the user's viewport.
+Next.js automatically prefetches routes linked with the [`<Link>` component](../../api-reference/components/link/index.md) when they enter the user's viewport.
 
 app/layout.tsx
 
@@ -76,7 +76,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 How much of the route is prefetched depends on whether it's static or dynamic:
 
 -   **Static Route**: the full route is prefetched.
--   **Dynamic Route**: prefetching is skipped, or the route is partially prefetched if [`loading.tsx`](/docs/app/api-reference/file-conventions/loading) is present.
+-   **Dynamic Route**: prefetching is skipped, or the route is partially prefetched if [`loading.tsx`](../../api-reference/file-conventions/loading/index.md) is present.
 
 By skipping or partially prefetching dynamic routes, Next.js avoids unnecessary work on the server for routes the users may never visit. However, waiting for a server response before navigation can give the users the impression that the app is not responding.
 
@@ -86,7 +86,7 @@ To improve the navigation experience to dynamic routes, you can use [streaming](
 
 ### Streaming[](#streaming)
 
-Streaming allows the server to send parts of a dynamic route to the client as soon as they're ready, rather than waiting for the entire route to be rendered. This means users see something sooner, even if parts of the page are still loading. See the [Streaming guide](/docs/app/guides/streaming) for a deep dive into how streaming works in Next.js.
+Streaming allows the server to send parts of a dynamic route to the client as soon as they're ready, rather than waiting for the entire route to be rendered. This means users see something sooner, even if parts of the page are still loading. See the [Streaming guide](../../guides/streaming/index.md) for a deep dive into how streaming works in Next.js.
 
 For dynamic routes, it means they can be **partially prefetched**. That is, shared layouts and loading skeletons can be requested ahead of time.
 
@@ -130,7 +130,7 @@ Next.js avoids this with client-side transitions using the `<Link>` component. I
 
 Client-side transitions are what makes a server-rendered apps _feel_ like client-rendered apps. And when paired with [prefetching](#prefetching) and [streaming](#streaming), it enables fast transitions, even for dynamic routes.
 
-Next.js also handles [scrolling to the top of the page](/docs/app/api-reference/components/link#scroll) during client-side transitions. If content scrolls behind a sticky or fixed header after navigation, you can fix this with CSS [`scroll-padding-top`](/docs/app/api-reference/components/link#scroll-offset-with-sticky-headers).
+Next.js also handles [scrolling to the top of the page](../../api-reference/components/link/index.md#scroll) during client-side transitions. If content scrolls behind a sticky or fixed header after navigation, you can fix this with CSS [`scroll-padding-top`](../../api-reference/components/link/index.md#scroll-offset-with-sticky-headers).
 
 ## What can make transitions slow?[](#what-can-make-transitions-slow)
 
@@ -152,11 +152,11 @@ export default function Loading() {
 }
 ```
 
-> **Good to know**: In development mode, you can use the Next.js Devtools to identify if the route is static or dynamic. See [`devIndicators`](/docs/app/api-reference/config/next-config-js/devIndicators) for more information.
+> **Good to know**: In development mode, you can use the Next.js Devtools to identify if the route is static or dynamic. See [`devIndicators`](../../api-reference/config/next-config-js/devIndicators/index.md) for more information.
 
 ### Dynamic segments without `generateStaticParams`[](#dynamic-segments-without-generatestaticparams)
 
-If a [dynamic segment](/docs/app/api-reference/file-conventions/dynamic-routes) could be prerendered but isn't because it's missing [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params), the route will fallback to dynamic rendering at request time.
+If a [dynamic segment](../../api-reference/file-conventions/dynamic-routes/index.md) could be prerendered but isn't because it's missing [`generateStaticParams`](../../api-reference/functions/generate-static-params/index.md), the route will fallback to dynamic rendering at request time.
 
 Ensure the route is statically generated at build time by adding `generateStaticParams`:
 
@@ -187,7 +187,7 @@ export default async function Page({
 
 On slow or unstable networks, prefetching may not finish before the user clicks a link. This can affect both static and dynamic routes. In these cases, the `loading.js` fallback may not appear immediately because it hasn't been prefetched yet.
 
-To improve perceived performance, you can use the [`useLinkStatus` hook](/docs/app/api-reference/functions/use-link-status) to show immediate feedback while the transition is in progress.
+To improve perceived performance, you can use the [`useLinkStatus` hook](../../api-reference/functions/use-link-status/index.md) to show immediate feedback while the transition is in progress.
 
 app/ui/loading-indicator.tsx
 
@@ -206,7 +206,7 @@ export default function LoadingIndicator() {
 }
 ```
 
-You can "debounce" the hint by adding an initial animation delay (e.g. 100ms) and starting as invisible (e.g. `opacity: 0`). This means the loading indicator will only be shown if the navigation takes longer than the specified delay. See the [`useLinkStatus` reference](/docs/app/api-reference/functions/use-link-status#gracefully-handling-fast-navigation) for a CSS example.
+You can "debounce" the hint by adding an initial animation delay (e.g. 100ms) and starting as invisible (e.g. `opacity: 0`). This means the loading indicator will only be shown if the navigation takes longer than the specified delay. See the [`useLinkStatus` reference](../../api-reference/functions/use-link-status/index.md#gracefully-handling-fast-navigation) for a CSS example.
 
 > **Good to know**: You can use other visual feedback patterns like a progress bar. View an example [here](https://github.com/vercel/react-transition-progress).
 
@@ -264,8 +264,8 @@ function HoverPrefetchLink({
 
 React mitigates this with Selective Hydration and you can further improve this by:
 
--   Using the [`@next/bundle-analyzer`](/docs/app/guides/package-bundling#nextbundle-analyzer-for-webpack) plugin to identify and reduce bundle size by removing large dependencies.
--   Moving logic from the client to the server where possible. See the [Server and Client Components](/docs/app/getting-started/server-and-client-components) docs for guidance.
+-   Using the [`@next/bundle-analyzer`](../../guides/package-bundling/index.md#nextbundle-analyzer-for-webpack) plugin to identify and reduce bundle size by removing large dependencies.
+-   Moving logic from the client to the server where possible. See the [Server and Client Components](../server-and-client-components/index.md) docs for guidance.
 
 ## Examples[](#examples)
 
@@ -273,7 +273,7 @@ React mitigates this with Selective Hydration and you can further improve this b
 
 Next.js allows you to use the native [`window.history.pushState`](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) and [`window.history.replaceState`](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState) methods to update the browser's history stack without reloading the page.
 
-`pushState` and `replaceState` calls integrate into the Next.js Router, allowing you to sync with [`usePathname`](/docs/app/api-reference/functions/use-pathname) and [`useSearchParams`](/docs/app/api-reference/functions/use-search-params).
+`pushState` and `replaceState` calls integrate into the Next.js Router, allowing you to sync with [`usePathname`](../../api-reference/functions/use-pathname/index.md) and [`useSearchParams`](../../api-reference/functions/use-search-params/index.md).
 
 #### `window.history.pushState`[](#windowhistorypushstate)
 
@@ -335,18 +335,18 @@ export function LocaleSwitcher() {
 
 Enable fast client-side navigation with the built-in \`next/link\` component.
 
-](/docs/app/api-reference/components/link)[
+](../../api-reference/components/link/index.md)[
 
 ### loading.js
 
 API reference for the loading.js file.
 
-](/docs/app/api-reference/file-conventions/loading)[
+](../../api-reference/file-conventions/loading/index.md)[
 
 ### Prefetching
 
 Learn how to configure prefetching in Next.js
 
-](/docs/app/guides/prefetching)
+](../../guides/prefetching/index.md)
 
 Was this helpful?

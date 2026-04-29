@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:16.656Z"
 content_hash: "8a111ba472caee2d723c78f389384faadde4b5e70b3fa786cdc336d1056a6fac"
 menu_path: ["Auth","Auth","Configuration","Configuration","Custom SMTP","Custom SMTP"]
 section_path: ["Auth","Auth","Configuration","Configuration","Custom SMTP","Custom SMTP"]
-nav_prev: {"path": "../auth-mfa/totp/index.md", "title": "Multi-Factor Authentication (TOTP)"}
-nav_next: {"path": "../auth-web3/index.md", "title": "Sign in with Web3"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-mfa/totp/index.md", "title": "Multi-Factor Authentication (TOTP)"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-web3/index.md", "title": "Sign in with Web3"}
 ---
 
 # 
@@ -89,7 +89,7 @@ Usually the goal for this behavior is:
 
 Mitigation strategies:
 
-*   [Configure CAPTCHA protection](/docs/guides/auth/auth-captcha) for your project, which is the most effective way to control bots in this scenario. You can use CAPTCHA services which provide invisible challenges where real users won't be asked to solve puzzles most of the time.
+*   [Configure CAPTCHA protection](../auth-captcha/index.md) for your project, which is the most effective way to control bots in this scenario. You can use CAPTCHA services which provide invisible challenges where real users won't be asked to solve puzzles most of the time.
 *   Prefer social login (OAuth) or SSO with SAML instead of email-based authentication flows in your apps.
 *   Prefer passwordless authentication (one-time password) as this limits the attacker's value to gain from this behavior.
 *   Do not disable email confirmations under pressure.
@@ -102,7 +102,7 @@ Work with your email sending service to configure [DKIM, DMARC and SPF](https://
 
 **Set up a custom domain.**
 
-Authentication messages often contain links to your project's Auth server. [Setting up a custom domain](/docs/guides/platform/custom-domains) will reduce the likelihood of your messages being picked up as spam due to another Supabase project's bad reputation.
+Authentication messages often contain links to your project's Auth server. [Setting up a custom domain](../../platform/custom-domains/index.md) will reduce the likelihood of your messages being picked up as spam due to another Supabase project's bad reputation.
 
 **Don't mix Auth emails with marketing emails.**
 
@@ -144,7 +144,7 @@ Consider implementing additional protections for such events:
 
 **Use the Send Email Auth Hook for more control.**
 
-If you need more control over the sending process, instead of using a SMTP server you can use the [Send Email Auth Hook](/docs/guides/auth/auth-hooks/send-email-hook). This can be useful in advanced scenarios such as:
+If you need more control over the sending process, instead of using a SMTP server you can use the [Send Email Auth Hook](../auth-hooks/send-email-hook/index.md). This can be useful in advanced scenarios such as:
 
 *   You want to use React or a different email templating engine.
 *   You want to use an email sending service that does not provide an SMTP service, or the non-SMTP API is more powerful.
@@ -158,6 +158,6 @@ If you need more control over the sending process, instead of using a SMTP serve
 
 **Increase the duration of user sessions.**
 
-Having short lived [user sessions](/docs/guides/auth/sessions) can be problematic for email sending, as it forces active users to sign-in frequently, increasing the number of messages needed to be sent. Consider increasing the maximum duration of user sessions. If you do see an unnecessary increase in logins without a clear cause, check your frontend application for bugs.
+Having short lived [user sessions](../sessions/index.md) can be problematic for email sending, as it forces active users to sign-in frequently, increasing the number of messages needed to be sent. Consider increasing the maximum duration of user sessions. If you do see an unnecessary increase in logins without a clear cause, check your frontend application for bugs.
 
-If you are using a [SSR](/docs/guides/auth/server-side) framework on the frontend and are seeing an increased number of user logins without a clear cause, check your set up. Make sure to keep the `@supabase/ssr` package up to date and closely follow the guides we publish. Make sure that the middleware components of your SSR frontend works as intended and matches the guides we've published. Sometimes a misplaced `return` or conditional can cause early session termination.
+If you are using a [SSR](../server-side/index.md) framework on the frontend and are seeing an increased number of user logins without a clear cause, check your set up. Make sure to keep the `@supabase/ssr` package up to date and closely follow the guides we publish. Make sure that the middleware components of your SSR frontend works as intended and matches the guides we've published. Sometimes a misplaced `return` or conditional can cause early session termination.

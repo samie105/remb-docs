@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:40.456Z"
 content_hash: "4dcb07cb6fd9b9d7409670f1019faeb9346b8d6f2ac5292eb1529d2d8e34f0e5"
 menu_path: ["Queues","Queues","Getting Started","Getting Started","Quickstart","Quickstart"]
 section_path: ["Queues","Queues","Getting Started","Getting Started","Quickstart","Quickstart"]
-nav_prev: {"path": "../pgmq/index.md", "title": "PGMQ Extension"}
-nav_next: {"path": "../../realtime/index.md", "title": "Realtime"}
+nav_prev: {"path": "supabase/docs/guides/queues/pgmq/index.md", "title": "PGMQ Extension"}
+nav_next: {"path": "supabase/docs/guides/realtime/index.md", "title": "Realtime"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Learn how to use Supabase Queues to add and read messages
 
 * * *
 
-This guide is an introduction to interacting with Supabase Queues via the Dashboard and official client library. Check out [Queues API Reference](/docs/guides/queues/api) for more details on our API.
+This guide is an introduction to interacting with Supabase Queues via the Dashboard and official client library. Check out [Queues API Reference](../api/index.md) for more details on our API.
 
 ## Concepts[#](#concepts)
 

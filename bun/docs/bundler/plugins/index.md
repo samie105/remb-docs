@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:12.952Z"
 content_hash: "4b0634037ce6fc8394d2dbe55c7b51c33c13da2ec030908497d8d59c5749d1e4"
 menu_path: ["Plugins"]
 section_path: []
-nav_prev: {"path": "../minifier/index.md", "title": "Minifier"}
-nav_next: {"path": "../standalone-html/index.md", "title": "Standalone HTML"}
+nav_prev: {"path": "bun/docs/bundler/minifier/index.md", "title": "Minifier"}
+nav_next: {"path": "bun/docs/bundler/standalone-html/index.md", "title": "Standalone HTML"}
 ---
 
 Bun provides a universal plugin API that can be used to extend both the runtime and bundler. Plugins intercept imports and perform custom loading logic: reading files, transpiling code, etc. They can be used to add support for additional file types, like `.scss` or `.yaml`. In the context of Bun’s bundler, plugins can be used to implement framework-level features like CSS extraction, macros, and client-server code co-location.

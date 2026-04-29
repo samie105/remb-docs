@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:47.977Z"
 content_hash: "a0771155f6990ecd722f6d82fbeb48e54b9095832e09d34916c0af4b017fe65c"
 menu_path: ["Preserving and Resetting State"]
 section_path: []
-nav_prev: {"path": "../sharing-state-between-components/index.md", "title": "Sharing State Between Components"}
-nav_next: {"path": "../extracting-state-logic-into-a-reducer/index.md", "title": "Extracting State Logic into a Reducer"}
+nav_prev: {"path": "react/learn/sharing-state-between-components/index.md", "title": "Sharing State Between Components"}
+nav_next: {"path": "react/learn/extracting-state-logic-into-a-reducer/index.md", "title": "Extracting State Logic into a Reducer"}
 ---
 
 State is isolated between components. React keeps track of which state belongs to which component based on their place in the UI tree. You can control when to preserve state and when to reset it between re-renders.

@@ -9,17 +9,17 @@ last_crawled_at: "2026-04-18T16:54:43.557Z"
 content_hash: "e600f74e805b71685864bb0a846f042d934062bc530efc4600d8fe2a063bdd47"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query vectors","→","Index and query vectors"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Index and query vectors","→","Index and query vectors"]
-nav_prev: {"path": "../transpipe/index.md", "title": "Pipelines and transactions"}
-nav_next: {"path": "../vecsets/index.md", "title": "Vector set embeddings"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/transpipe/index.md", "title": "Pipelines and transactions"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/vecsets/index.md", "title": "Vector set embeddings"}
 ---
 
 # Index and query vectors
 
 Learn how to index and query vector embeddings with Redis
 
-[Redis Search](/docs/latest/develop/ai/search-and-query/) lets you index vector fields in [hash](/docs/latest/develop/data-types/hashes/) or [JSON](/docs/latest/develop/data-types/json/) objects (see the [Vectors](/docs/latest/develop/ai/search-and-query/vectors/) reference page for more information).
+[Redis Search](/docs/latest/develop/ai/search-and-query/) lets you index vector fields in [hash](/docs/latest/develop/data-types/hashes/) or [JSON](/docs/latest/develop/data-types/json/) objects (see the [Vectors](../../../ai/search-and-query/vectors/index.md) reference page for more information).
 
-Vector fields can store _text embeddings_, which are AI-generated vector representations of text content. The [vector distance](/docs/latest/develop/ai/search-and-query/vectors/#distance-metrics) between two embeddings measures their semantic similarity. When you compare the similarity of a query embedding with stored embeddings, Redis can retrieve documents that closely match the query's meaning.
+Vector fields can store _text embeddings_, which are AI-generated vector representations of text content. The [vector distance](../../../ai/search-and-query/vectors/index.md#distance-metrics) between two embeddings measures their semantic similarity. When you compare the similarity of a query embedding with stored embeddings, Redis can retrieve documents that closely match the query's meaning.
 
 In the example below, we use the [`@xenova/transformers`](https://www.npmjs.com/package/@xenova/transformers) library to generate vector embeddings to store and index with Redis Search. The code is first demonstrated for hash documents with a separate section to explain the [differences with JSON documents](#differences-with-json-documents).
 
@@ -31,7 +31,7 @@ From [v5.0.0](https://github.com/redis/node-redis/releases/tag/redis%405.0.0) on
 
 Install the required dependencies:
 
-1.  Install [`node-redis`](/docs/latest/develop/clients/nodejs/) if you haven't already.
+1.  Install [`node-redis`](../index.md) if you haven't already.
 2.  Install `@xenova/transformers`:
 
 ```bash
@@ -560,9 +560,9 @@ Next, create the index with the following schema:
 
 *   `content`: Text field for the content to index
 *   `genre`: [Tag](/docs/latest/develop/ai/search-and-query/advanced-concepts/tags/) field representing the text's genre
-*   `embedding`: [Vector](/docs/latest/develop/ai/search-and-query/vectors/) field with:
-    *   [HNSW](/docs/latest/develop/ai/search-and-query/vectors/#hnsw-index) indexing
-    *   [L2](/docs/latest/develop/ai/search-and-query/vectors/#distance-metrics) distance metric
+*   `embedding`: [Vector](../../../ai/search-and-query/vectors/index.md) field with:
+    *   [HNSW](../../../ai/search-and-query/vectors/index.md#hnsw-index) indexing
+    *   [L2](../../../ai/search-and-query/vectors/index.md#distance-metrics) distance metric
     *   Float32 values
     *   768 dimensions (matching the embedding model)
 
@@ -1633,6 +1633,6 @@ jdoc:3: 'Today is a sunny day', Score: 1.50889515877
 
 ## Learn more
 
-See [Vector search](/docs/latest/develop/ai/search-and-query/query/vector-search/) for more information about indexing options, distance metrics, and query format.
+See [Vector search](../../../ai/search-and-query/query/vector-search/index.md) for more information about indexing options, distance metrics, and query format.
 
 ## On this page

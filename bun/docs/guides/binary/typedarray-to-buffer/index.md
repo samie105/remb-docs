@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:26.347Z"
 content_hash: "e280d5182acf364227e36fc8f9d3ad61864a973bf1f0edd639de46def4d28506"
 menu_path: ["Convert a Uint8Array to a Buffer"]
 section_path: []
-nav_prev: {"path": "../typedarray-to-blob/index.md", "title": "Convert a Uint8Array to a Blob"}
-nav_next: {"path": "../typedarray-to-dataview/index.md", "title": "Convert a Uint8Array to a DataView"}
+nav_prev: {"path": "bun/docs/guides/binary/typedarray-to-blob/index.md", "title": "Convert a Uint8Array to a Blob"}
+nav_next: {"path": "bun/docs/guides/binary/typedarray-to-dataview/index.md", "title": "Convert a Uint8Array to a DataView"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../typedarray-to-dataview/index.md", "title": "Convert a Uin
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The [`Buffer`](https://nodejs.org/api/buffer.html) class extends [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) with a number of additional methods. Use `Buffer.from()` to create a `Buffer` instance from a `Uint8Array`.
 
@@ -44,7 +44,7 @@ const buf = Buffer.from(arr);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -56,10 +56,10 @@ Convert a Uint8Array to an ArrayBuffer
 
 Previous
 
-](/docs/guides/binary/typedarray-to-arraybuffer)[
+](../typedarray-to-arraybuffer/index.md)[
 
 Convert a Uint8Array to a Blob
 
 Next
 
-](/docs/guides/binary/typedarray-to-blob)
+](../typedarray-to-blob/index.md)

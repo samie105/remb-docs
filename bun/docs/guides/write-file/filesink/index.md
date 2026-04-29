@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:50.574Z"
 content_hash: "e1b2b25dfad5586259ca10dcd900e11d086e0437ed87fe78206fddd0bbe78cea"
 menu_path: ["Write a file incrementally"]
 section_path: []
-nav_prev: {"path": "../file-cp/index.md", "title": "Copy a file to another location"}
-nav_next: {"path": "../response/index.md", "title": "Write a Response to a file"}
+nav_prev: {"path": "bun/docs/guides/write-file/file-cp/index.md", "title": "Copy a file to another location"}
+nav_next: {"path": "bun/docs/guides/write-file/response/index.md", "title": "Write a Response to a file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../response/index.md", "title": "Write a Response to a file"
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun provides an API for incrementally writing to a file. This is useful for writing large files, or for writing to a file over a long period of time. Call `.writer()` on a `BunFile` to retrieve a `FileSink` instance. This instance can be used to efficiently buffer data and periodically “flush” it to disk. You can write & flush many times.
 
@@ -80,7 +80,7 @@ writer.end();
 
 * * *
 
-Full documentation: [FileSink](/docs/runtime/file-io#incremental-writing-with-filesink).
+Full documentation: [FileSink](../../../runtime/file-io/index.md#incremental-writing-with-filesink).
 
 Was this page helpful?
 
@@ -92,10 +92,10 @@ Append content to a file
 
 Previous
 
-](/docs/guides/write-file/append)[
+](../append/index.md)[
 
 Write a ReadableStream to a file
 
 Next
 
-](/docs/guides/write-file/stream)
+](../stream/index.md)

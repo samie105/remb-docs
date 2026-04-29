@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:10.059Z"
 content_hash: "d7c8e8ce83e03b43808a9116db272055141734d1b95c237da59b6caa498fcd0d"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Hono","Hono"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Hono","Hono"]
-nav_prev: {"path": "../flutter/index.md", "title": "Use Supabase with Flutter"}
-nav_next: {"path": "../ios-swiftui/index.md", "title": "Use Supabase with iOS and SwiftUI"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/flutter/index.md", "title": "Use Supabase with Flutter"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/ios-swiftui/index.md", "title": "Use Supabase with iOS and SwiftUI"}
 ---
 
 # 
@@ -77,7 +77,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -106,5 +106,5 @@ Learn how [server side auth](/docs/guides/auth/server-side/creating-a-client?que
 ## Next steps[#](#next-steps)
 
 *   Learn how [server side auth](/docs/guides/auth/server-side/creating-a-client?queryGroups=framework&framework=hono) works with Hono.
-*   [Insert more data](/docs/guides/database/import-data) into your database
-*   Upload and serve static files using [Storage](/docs/guides/storage)
+*   [Insert more data](../../../database/import-data/index.md) into your database
+*   Upload and serve static files using [Storage](../../../storage/index.md)

@@ -9,13 +9,13 @@ last_crawled_at: "2026-04-18T16:42:57.941Z"
 content_hash: "072d7c5a65864301b3caec46ef97fefb522de2848f4965347c74acdf1d8de5bc"
 menu_path: ["Configuration Reference"]
 section_path: []
-nav_prev: {"path": "../directives-reference/index.md", "title": "Template directives reference"}
-nav_next: {"path": "../cli-reference/index.md", "title": "CLI Commands"}
+nav_prev: {"path": "astro/en/reference/directives-reference/index.md", "title": "Template directives reference"}
+nav_next: {"path": "astro/en/reference/cli-reference/index.md", "title": "CLI Commands"}
 ---
 
 # Configuration Reference
 
-The following reference covers all supported configuration options in Astro. To learn more about configuring Astro, read our guide on [Configuring Astro](/en/guides/configuring-astro/).
+The following reference covers all supported configuration options in Astro. To learn more about configuring Astro, read our guide on [Configuring Astro](../../guides/configuring-astro/index.md).
 
 ```
 import { defineConfig } from 'astro/config'
@@ -151,9 +151,9 @@ export default defineConfig({  output: 'static'})
 
 **Type:** `AstroIntegration`
 
-Deploy to your favorite server, serverless, or edge host with build adapters. Import one of our first-party adapters ([Cloudflare](/en/guides/integrations-guide/cloudflare/), [Netlify](/en/guides/integrations-guide/netlify/), [Node.js](/en/guides/integrations-guide/node/), [Vercel](/en/guides/integrations-guide/vercel/)) or explore [community adapters](https://astro.build/integrations/2/?search=&categories%5B%5D=adapters) to enable on-demand rendering in your Astro project.
+Deploy to your favorite server, serverless, or edge host with build adapters. Import one of our first-party adapters ([Cloudflare](../../guides/integrations-guide/cloudflare/index.md), [Netlify](/en/guides/integrations-guide/netlify/), [Node.js](../../guides/integrations-guide/node/index.md), [Vercel](../../guides/integrations-guide/vercel/index.md)) or explore [community adapters](https://astro.build/integrations/2/?search=&categories%5B%5D=adapters) to enable on-demand rendering in your Astro project.
 
-See our [on-demand rendering guide](/en/guides/on-demand-rendering/) for more on Astro’s server rendering options.
+See our [on-demand rendering guide](../../guides/on-demand-rendering/index.md) for more on Astro’s server rendering options.
 
 ```
 import netlify from '@astrojs/netlify';{  // Example: Build for Netlify serverless deployment  adapter: netlify(),}
@@ -171,7 +171,7 @@ import netlify from '@astrojs/netlify';{  // Example: Build for Netlify serverle
 
 Extend Astro with custom integrations. Integrations are your one-stop-shop for adding framework support (like Solid.js), new features (like sitemaps), and new libraries (like Partytown).
 
-Read our [Integrations Guide](/en/guides/integrations/) for help getting started with Astro Integrations.
+Read our [Integrations Guide](../../guides/integrations/index.md) for help getting started with Astro Integrations.
 
 ```
 import react from '@astrojs/react';import mdx from '@astrojs/mdx';{  // Example: Add React + MDX support to Astro  integrations: [react(), mdx()]}
@@ -454,8 +454,8 @@ Enabling this feature adds additional security to Astro’s handling of processe
 This feature comes with some limitations:
 
 *   External scripts and external styles are not supported out of the box, but you can [provide your own hashes](#securitycspscriptdirectivehashes).
-*   [Astro’s view transitions](/en/guides/view-transitions/) using the `<ClientRouter />` are not supported, but you can [consider migrating to the browser native View Transition API](https://events-3bg.pages.dev/jotter/astro-view-transitions/) instead if you are not using Astro’s enhancements to the native View Transitions and Navigation APIs.
-*   Shiki isn’t currently supported. By design, Shiki functions use inline styles that cannot work with Astro CSP implementation. Consider [using `<Prism />`](/en/guides/syntax-highlighting/#prism-) when your project requires both CSP and syntax highlighting.
+*   [Astro’s view transitions](../../guides/view-transitions/index.md) using the `<ClientRouter />` are not supported, but you can [consider migrating to the browser native View Transition API](https://events-3bg.pages.dev/jotter/astro-view-transitions/) instead if you are not using Astro’s enhancements to the native View Transitions and Navigation APIs.
+*   Shiki isn’t currently supported. By design, Shiki functions use inline styles that cannot work with Astro CSP implementation. Consider [using `<Prism />`](../../guides/syntax-highlighting/index.md#prism-) when your project requires both CSP and syntax highlighting.
 *   `unsafe-inline` directives are incompatible with Astro’s CSP implementation. By default, Astro will emit hashes for all its bundled scripts (e.g. client islands) and all modern browsers will automatically reject `unsafe-inline` when it occurs in a directive with a hash or nonce.
 
 When enabled, Astro will add a `<meta>` element inside the `<head>` element of each page. This element will have the `http-equiv="content-security-policy"` attribute, and the `content` attribute will provide values for the `script-src` and `style-src` [directives](#securitycspdirectives) based on the script and styles used in the page.
@@ -561,7 +561,7 @@ After the build, the `<meta>` element will instead apply your sources to the `st
 <head>  <meta    http-equiv="content-security-policy"    content="     style-src 'self' https://styles.cdn.example.com 'sha256-somehash';    "  ></head>
 ```
 
-When resources are inserted multiple times or from multiple sources (e.g. defined in your `csp` config and added using [the CSP runtime API](/en/reference/api-reference/#csp)), Astro will merge and deduplicate all resources to create your `<meta>` element.
+When resources are inserted multiple times or from multiple sources (e.g. defined in your `csp` config and added using [the CSP runtime API](../api-reference/index.md#csp)), Astro will merge and deduplicate all resources to create your `<meta>` element.
 
 ##### security.csp.scriptDirective
 
@@ -620,7 +620,7 @@ After the build, the `<meta>` element will instead apply your sources to the `sc
 <head>  <meta    http-equiv="content-security-policy"    content="     script-src 'self' https://cdn.example.com 'sha256-somehash';    "  ></head>
 ```
 
-When resources are inserted multiple times or from multiple sources (e.g. defined in your `csp` config and added using [the CSP runtime API](/en/reference/api-reference/#csp)), Astro will merge and deduplicate all resources to create your `<meta>` element.
+When resources are inserted multiple times or from multiple sources (e.g. defined in your `csp` config and added using [the CSP runtime API](../api-reference/index.md#csp)), Astro will merge and deduplicate all resources to create your `<meta>` element.
 
 ###### security.csp.scriptDirective.strictDynamic
 
@@ -918,7 +918,7 @@ Set custom HTTP response headers to be sent in `astro dev` and `astro preview`.
 
 Configures session storage for your Astro project. This is used to store session data in a persistent way, so that it can be accessed across different requests. Some adapters may provide a default session driver, but you can override it with your own configuration.
 
-See [the sessions guide](/en/guides/sessions/) for more information.
+See [the sessions guide](../../guides/sessions/index.md) for more information.
 
 ```
   {    session: {      // The name of the Unstorage driver      driver: 'redis',      // The required options depend on the driver      options: {        url: process.env.REDIS_URL,      },      ttl: 3600, // 1 hour    }  }
@@ -932,7 +932,7 @@ See [the sessions guide](/en/guides/sessions/) for more information.
 
 **Added in:** `astro@5.7.0`
 
-The driver to use for session storage. The [Node](/en/guides/integrations-guide/node/#sessions), [Cloudflare](/en/guides/integrations-guide/cloudflare/#sessions), and [Netlify](/en/guides/integrations-guide/netlify/#sessions) adapters automatically configure a default driver for you, but you can specify your own if you would prefer or if you are using an adapter that does not provide one.
+The driver to use for session storage. The [Node](../../guides/integrations-guide/node/index.md#sessions), [Cloudflare](../../guides/integrations-guide/cloudflare/index.md#sessions), and [Netlify](/en/guides/integrations-guide/netlify/#sessions) adapters automatically configure a default driver for you, but you can specify your own if you would prefer or if you are using an adapter that does not provide one.
 
 ```
 import { defineConfig, sessionDrivers } from 'astro/config'import vercel from '@astrojs/vercel'
@@ -984,7 +984,7 @@ The session cookie configuration. If set to a string, it will be used as the coo
 
 An optional default time-to-live expiration period for session values, in seconds.
 
-By default, session values persist until they are deleted or the session is destroyed, and do not automatically expire because a particular amount of time has passed. Set `session.ttl` to add a default expiration period for your session values. Passing a `ttl` option to [`session.set()`](/en/reference/api-reference/#sessionset) will override the global default for that individual entry.
+By default, session values persist until they are deleted or the session is destroyed, and do not automatically expire because a particular amount of time has passed. Set `session.ttl` to add a default expiration period for your session values. Passing a `ttl` option to [`session.set()`](../api-reference/index.md#sessionset) will override the global default for that individual entry.
 
 ```
 { session: {   // Set a default expiration period of 1 hour (3600 seconds)   ttl: 3600, }}
@@ -1034,7 +1034,7 @@ This configuration automatically adds a prefetch script to every page in the pro
 
 Further customize the default prefetching behavior using the [`prefetch.defaultStrategy`](#prefetchdefaultstrategy) and [`prefetch.prefetchAll`](#prefetchprefetchall) options.
 
-See the [Prefetch guide](/en/guides/prefetch/) for more information.
+See the [Prefetch guide](../../guides/prefetch/index.md) for more information.
 
 ### prefetch.prefetchAll
 
@@ -1252,7 +1252,7 @@ Whether to automatically add global styles for responsive images. You should ena
 
 This option is only used when `layout` is set to `constrained`, `full-width`, or `fixed` using the configuration or the `layout` prop on the image component.
 
-See [the images docs](/en/guides/images/#responsive-image-styles) for more information.
+See [the images docs](../../guides/images/index.md#responsive-image-styles) for more information.
 
 ### image.layout
 
@@ -1269,7 +1269,7 @@ The default layout type for responsive images. Can be overridden by the `layout`
 *   `fixed` - The image will maintain its original dimensions.
 *   `full-width` - The image will scale to fit the container, maintaining its aspect ratio.
 
-See [the `layout` component property](/en/reference/modules/astro-assets/#layout) for more details.
+See [the `layout` component property](../modules/astro-assets/index.md#layout) for more details.
 
 ### image.objectFit
 
@@ -1282,7 +1282,7 @@ See [the `layout` component property](/en/reference/modules/astro-assets/#layout
 
 The [`object-fit` CSS property value](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) for responsive images. Can be overridden by the `fit` prop on the image component. Requires a value for `layout` to be set.
 
-See [the `fit` component property](/en/reference/modules/astro-assets/#fit) for more details.
+See [the `fit` component property](../modules/astro-assets/index.md#fit) for more details.
 
 ### image.objectPosition
 
@@ -1295,7 +1295,7 @@ See [the `fit` component property](/en/reference/modules/astro-assets/#fit) for 
 
 The default [`object-position` CSS property value](https://developer.mozilla.org/en-US/docs/Web/CSS/object-position) for responsive images. Can be overridden by the `position` prop on the image component. Requires a value for `layout` to be set.
 
-See [the `position` component property](/en/reference/modules/astro-assets/#position) for more details.
+See [the `position` component property](../modules/astro-assets/index.md#position) for more details.
 
 ### image.breakpoints
 
@@ -1325,7 +1325,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({  markdown: {    shikiConfig: {      // Choose from Shiki's built-in themes (or add your own)      // https://shiki.style/themes      theme: 'dracula',      // Alternatively, provide multiple themes      // See note below for using dual light/dark themes      themes: {        light: 'github-light',        dark: 'github-dark',      },      // Disable the default colors      // https://shiki.style/guide/dual-themes#without-default-color      // (Added in v4.12.0)      defaultColor: false,      // Add custom languages      // Note: Shiki has countless langs built-in, including .astro!      // https://shiki.style/languages      langs: [],      // Add custom aliases for languages      // Map an alias to a Shiki language ID: https://shiki.style/languages#bundled-languages      // https://shiki.style/guide/load-lang#custom-language-aliases      langAlias: {        cjs: "javascript"      },      // Enable word wrap to prevent horizontal scrolling      wrap: true,      // Add custom transformers: https://shiki.style/guide/transformers      // Find common transformers: https://shiki.style/packages/transformers      transformers: [],    },  },});
 ```
 
-See the [code syntax highlighting guide](/en/guides/syntax-highlighting/) for usage and examples.
+See the [code syntax highlighting guide](../../guides/syntax-highlighting/index.md) for usage and examples.
 
 ### markdown.syntaxHighlight
 
@@ -1337,7 +1337,7 @@ See the [code syntax highlighting guide](/en/guides/syntax-highlighting/) for us
 Which syntax highlighter to use for Markdown code blocks (\`\`\`), if any. This determines the CSS classes that Astro will apply to your Markdown code blocks.
 
 *   `shiki` - use the [Shiki](https://shiki.style) highlighter (`github-dark` theme configured by default)
-*   `prism` - use the [Prism](https://prismjs.com/) highlighter and [provide your own Prism stylesheet](/en/guides/syntax-highlighting/#add-a-prism-stylesheet)
+*   `prism` - use the [Prism](https://prismjs.com/) highlighter and [provide your own Prism stylesheet](../../guides/syntax-highlighting/index.md#add-a-prism-stylesheet)
 *   `false` - do not apply syntax highlighting.
 
 ```
@@ -1449,7 +1449,7 @@ Pass options to [remark-rehype](https://github.com/remarkjs/remark-rehype#api).
 
 Configures i18n routing and allows you to specify some customization options.
 
-See our guide for more information on [internationalization in Astro](/en/guides/internationalization/)
+See our guide for more information on [internationalization in Astro](../../guides/internationalization/index.md)
 
 ### i18n.locales
 
@@ -1563,7 +1563,7 @@ export default defineConfig({  i18n:{    defaultLocale: "en",    locales: ["en",
 
 **Added in:** `astro@4.15.0`
 
-When [`i18n.fallback`](#i18nfallback) is configured to avoid showing a 404 page for missing page routes, this option controls whether to [redirect](/en/guides/routing/#redirects) to the fallback page, or to [rewrite](/en/guides/routing/#rewrites) the fallback page’s content in place.
+When [`i18n.fallback`](#i18nfallback) is configured to avoid showing a 404 page for missing page routes, this option controls whether to [redirect](../../guides/routing/index.md#redirects) to the fallback page, or to [rewrite](../../guides/routing/index.md#rewrites) the fallback page’s content in place.
 
 By default, Astro’s i18n routing creates pages that redirect your visitors to a new destination based on your fallback configuration. The browser will refresh and show the destination address in the URL bar.
 
@@ -1594,9 +1594,9 @@ Any other locale not configured will default to a localized path-based URL accor
 export default defineConfig({   site: "https://example.com",   output: "server", // required, with no prerendered pages   adapter: node({     mode: 'standalone',   }),   i18n: {    defaultLocale: "en",    locales: ["en", "fr", "pt-br", "es"],    prefixDefaultLocale: false,    domains: {      fr: "https://fr.example.com",      es: "https://example.es"    }  },})
 ```
 
-Both page routes built and URLs returned by the `astro:i18n` helper functions [`getAbsoluteLocaleUrl()`](/en/reference/modules/astro-i18n/#getabsolutelocaleurl) and [`getAbsoluteLocaleUrlList()`](/en/reference/modules/astro-i18n/#getabsolutelocaleurllist) will use the options set in `i18n.domains`.
+Both page routes built and URLs returned by the `astro:i18n` helper functions [`getAbsoluteLocaleUrl()`](../modules/astro-i18n/index.md#getabsolutelocaleurl) and [`getAbsoluteLocaleUrlList()`](../modules/astro-i18n/index.md#getabsolutelocaleurllist) will use the options set in `i18n.domains`.
 
-See the [Internationalization Guide](/en/guides/internationalization/#domains) for more details, including the limitations of this feature.
+See the [Internationalization Guide](../../guides/internationalization/index.md#domains) for more details, including the limitations of this feature.
 
 ## env
 
@@ -1609,7 +1609,7 @@ See the [Internationalization Guide](/en/guides/internationalization/#domains) f
 
 Configuration options for type-safe environment variables.
 
-See our guide for more information on [environment variables in Astro](/en/guides/environment-variables/).
+See our guide for more information on [environment variables in Astro](../../guides/environment-variables/index.md).
 
 ### env.schema
 
@@ -1620,7 +1620,7 @@ See our guide for more information on [environment variables in Astro](/en/guide
 
 **Added in:** `astro@5.0.0`
 
-Defines environment variables to be enforced by Zod validation and for which TypeScript support (e.g. autocompletion, type-safety) is available. Each key corresponds to the variable name and the value to the data type and validations [defined with `envField`](/en/reference/modules/astro-config/#envfield).
+Defines environment variables to be enforced by Zod validation and for which TypeScript support (e.g. autocompletion, type-safety) is available. Each key corresponds to the variable name and the value to the data type and validations [defined with `envField`](../modules/astro-config/index.md#envfield).
 
 Four data types are supported: string, number, enumeration, and boolean. Each type requires a `context` (client or server), an `access` level (public or secret), and additional validations, such as a `default` value and an indication of whether the variable is `optional` (defaults to `false`).
 
@@ -1658,7 +1658,7 @@ export default defineConfig({  env: {    schema: {      // ...    },    validate
 
 Configures fonts and allows you to specify some customization options on a per-font basis.
 
-See our guide for more information on [using custom fonts in Astro](/en/guides/fonts/).
+See our guide for more information on [using custom fonts in Astro](../../guides/fonts/index.md).
 
 ### font.provider
 
@@ -1668,7 +1668,7 @@ See our guide for more information on [using custom fonts in Astro](/en/guides/f
 
 **Added in:** `astro@6.0.0`
 
-The source of your font files. You can use a [built-in provider](/en/reference/font-provider-reference/#built-in-providers) or write your own [custom provider](/en/reference/font-provider-reference/#building-a-font-provider):
+The source of your font files. You can use a [built-in provider](../font-provider-reference/index.md#built-in-providers) or write your own [custom provider](../font-provider-reference/index.md#building-a-font-provider):
 
 ```
 import { defineConfig, fontProviders } from "astro/config";
@@ -1898,4 +1898,4 @@ Font [variation settings](https://developer.mozilla.org/en-US/docs/Web/CSS/@font
 variationSettings: "'xhgt' 0.7"
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

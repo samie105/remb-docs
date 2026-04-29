@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:50.788Z"
 content_hash: "3c9aff86e29a8cfad4cf22c59ea164e8521f7b8faff67881c9c8c8eab533cf5f"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Spotify","Spotify"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Spotify","Spotify"]
-nav_prev: {"path": "../auth-slack/index.md", "title": "Login with Slack"}
-nav_next: {"path": "../auth-twitch/index.md", "title": "Login with Twitch"}
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-slack/index.md", "title": "Login with Slack"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-twitch/index.md", "title": "Login with Twitch"}
 ---
 
 # 
@@ -53,9 +53,9 @@ When testing OAuth locally with the Supabase CLI, ensure your OAuth provider is 
 
 If this callback URL is missing or misconfigured, OAuth sign-in may fail or not redirect correctly during local development.
 
-See the [local development docs](/docs/guides/local-development) for more details.
+See the [local development docs](../../../local-development/index.md) for more details.
 
-For testing OAuth locally with the Supabase CLI see the [local development docs](/docs/guides/local-development).
+For testing OAuth locally with the Supabase CLI see the [local development docs](../../../local-development/index.md).
 
 ## Create a Spotify OAuth app[#](#create-a-spotify-oauth-app)
 
@@ -103,7 +103,7 @@ The following outlines the steps to sign in using Spotify with Supabase Auth.
 
 Make sure you're using the right `supabase` client in the following code.
 
-If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](/docs/guides/auth/server-side/creating-a-client) for instructions on creating your Supabase client.
+If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](../../server-side/creating-a-client/index.md) for instructions on creating your Supabase client.
 
 When your user signs in, call [`signInWithOAuth()`](/docs/reference/javascript/auth-signinwithoauth) with `spotify` as the `provider`:
 
@@ -111,7 +111,7 @@ When your user signs in, call [`signInWithOAuth()`](/docs/reference/javascript/a
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6async function signInWithSpotify() {7  const { data, error } = await supabase.auth.signInWithOAuth({8    provider: 'spotify',9  })10}
 ```
 
-For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](/docs/guides/auth/redirect-urls).
+For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](../../redirect-urls/index.md).
 
 In the browser, `signInWithOAuth` automatically redirects to the OAuth provider's authentication endpoint, which then redirects to your endpoint.
 

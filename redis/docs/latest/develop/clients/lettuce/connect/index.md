@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:42.919Z"
 content_hash: "8df55614df69d24f953575a70472cdbe823be025d12bed189f5be1fe0ff2cfa2"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Lettuce guide (Java)","→","Lettuce guide (Java)","→\n      \n        Connect to the server","→","Connect to the server"]
-nav_prev: {"path": "../amr/index.md", "title": "Connect to Azure Managed Redis"}
-nav_next: {"path": "../queryjson/index.md", "title": "Index and query documents"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/lettuce/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "redis/docs/latest/develop/clients/lettuce/queryjson/index.md", "title": "Index and query documents"}
 ---
 
 # Connect to the server
@@ -177,7 +177,7 @@ clusterClient.shutdown();
 
 ### TLS connection
 
-When you deploy your application, use TLS and follow the [Redis security guidelines](/docs/latest/operate/oss_and_stack/management/security/).
+When you deploy your application, use TLS and follow the [Redis security guidelines](../../../../operate/oss_and_stack/management/security/index.md).
 
 ```java
 RedisURI redisUri = RedisURI.Builder.redis("localhost")
@@ -256,7 +256,7 @@ In this setup, `LettuceConnectionFactory` is a custom class you would need to im
 
 _Smart client handoffs (SCH)_ is a feature of Redis Cloud and Redis Software servers that lets them actively notify clients about planned server maintenance shortly before it happens. This lets a client take action to avoid disruptions in service. See [Smart client handoffs](/docs/latest/develop/clients/sch/) for more information about SCH.
 
-By default, `Lettuce` always attempts to connect via SCH but falls back to a non-SCH connection if the server doesn't support it. However, you can configure SCH explicitly by creating a `MaintNotificationsConfig` object and/or a `TimeoutOptions` object and passing them to the `ClientOptions` builder as shown in the example below. Note that SCH also requires the [RESP3](/docs/latest/develop/reference/protocol-spec/#resp-versions) protocol. Lettuce uses this by default, but make sure you don't set `protocolVersion(ProtocolVersion.RESP2)` in the `ClientOptions` builder.
+By default, `Lettuce` always attempts to connect via SCH but falls back to a non-SCH connection if the server doesn't support it. However, you can configure SCH explicitly by creating a `MaintNotificationsConfig` object and/or a `TimeoutOptions` object and passing them to the `ClientOptions` builder as shown in the example below. Note that SCH also requires the [RESP3](../../../reference/protocol-spec/index.md#resp-versions) protocol. Lettuce uses this by default, but make sure you don't set `protocolVersion(ProtocolVersion.RESP2)` in the `ClientOptions` builder.
 
 ```java
 import io.lettuce.core.*;

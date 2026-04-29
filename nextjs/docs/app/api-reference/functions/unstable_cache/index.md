@@ -11,15 +11,15 @@ menu_path: ["unstable_cache"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../unauthorized/index.md", "title": "unauthorized"}
-nav_next: {"path": "../unstable_noStore/index.md", "title": "unstable_noStore"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unauthorized/index.md", "title": "unauthorized"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/unstable_noStore/index.md", "title": "unstable_noStore"}
 ---
 
 # unstable\_cache
 
 Last updated April 23, 2026
 
-> **Note:** This API has been replaced by [`use cache`](/docs/app/api-reference/directives/use-cache) in Next.js 16. We recommend opting into [Cache Components](/docs/app/getting-started/caching) and replacing `unstable_cache` with the `use cache` directive.
+> **Note:** This API has been replaced by [`use cache`](../../directives/use-cache/index.md) in Next.js 16. We recommend opting into [Cache Components](../../../getting-started/caching/index.md) and replacing `unstable_cache` with the `use cache` directive.
 
 `unstable_cache` allows you to cache the results of expensive operations, like database queries, and reuse them across multiple requests.
 
@@ -41,7 +41,7 @@ export default async function Component({ userID }) {
 > **Good to know**:
 > 
 > -   Accessing uncached data sources such as `headers` or `cookies` inside a cache scope is not supported. If you need this data inside a cached function use `headers` outside of the cached function and pass the required uncached data in as an argument.
-> -   This API uses Next.js' built-in cache to persist the result across requests and deployments. See [Caching and Revalidating](/docs/app/getting-started/caching).
+> -   This API uses Next.js' built-in cache to persist the result across requests and deployments. See [Caching and Revalidating](../../../getting-started/caching/index.md).
 
 ## Parameters[](#parameters)
 

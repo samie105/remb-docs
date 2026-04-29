@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:16.265Z"
 content_hash: "424ff8ed639368ddb51837384f5dfbc8f528821d3bb146e14b18db8e986f2ee5"
 menu_path: ["Benchmarks ​"]
 section_path: []
-nav_prev: {"path": "../routers/index.md", "title": "Routers \u200b"}
-nav_next: {"path": "../web-standard/index.md", "title": "Web Standards \u200b"}
+nav_prev: {"path": "hono/docs/concepts/routers/index.md", "title": "Routers \u200b"}
+nav_next: {"path": "hono/docs/concepts/web-standard/index.md", "title": "Web Standards \u200b"}
 ---
 
 Benchmarks are only benchmarks, but they are important to us.

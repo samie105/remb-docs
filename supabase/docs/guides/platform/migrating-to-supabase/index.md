@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:45.718Z"
 content_hash: "aa0fae493cfdc4a5dc915fce7e989af203a80f85626c277bee95ea10f823387d"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Overview","Overview"]
-nav_prev: {"path": "../mfa/org-mfa-enforcement/index.md", "title": "Enforce MFA on Organization"}
-nav_next: {"path": "amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/mfa/org-mfa-enforcement/index.md", "title": "Enforce MFA on Organization"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/amazon-rds/index.md", "title": "Migrate from Amazon RDS to Supabase"}
 ---
 
 # 

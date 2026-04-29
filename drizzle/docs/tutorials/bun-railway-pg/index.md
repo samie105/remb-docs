@@ -10,8 +10,8 @@ content_hash: "bc91d9bd6d48d198baa04faad0248e341e8ed00f1b6eed4bd78329c009f0b393"
 menu_path: ["Drizzle with Bun and PostgreSQL on Railway"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../../rqb-fundamentals/index.md", "title": "404"}
-nav_next: {"path": "../drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
+nav_prev: {"path": "drizzle/docs/rqb-fundamentals/index.md", "title": "404"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-nextjs-neon/index.md", "title": "Todo App with Neon Postgres"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Bun](https://bun.sh/) runtime and a PostgreSQL database, all deployed on [Railway](https://driz.link/railway).

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:15.229Z"
 content_hash: "93681463043e48077973443a9ac057a07762d12660e11e6f7c4354d62714a277"
 menu_path: ["Welcome to Bun"]
 section_path: []
-nav_prev: {"path": "installation/index.md", "title": "Installation"}
-nav_next: {"path": "bundler/index.md", "title": "Bundler"}
+nav_prev: {"path": "bun/docs/installation/index.md", "title": "Installation"}
+nav_next: {"path": "bun/docs/bundler/index.md", "title": "Bundler"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "bundler/index.md", "title": "Bundler"}
 
 [Runtime
 
-](/docs)[Package Manager
+](index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](test/index.md)[Guides
 
-](/docs/guides)[Reference
+](guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](feedback/index.md)
 
 * * *
 
@@ -138,7 +138,7 @@ Bun is designed from the ground-up with today’s JavaScript ecosystem in mind.
 *   **TypeScript & JSX support**. You can directly execute `.jsx`, `.ts`, and `.tsx` files; Bun’s transpiler converts these to vanilla JavaScript before execution.
 *   **ESM & CommonJS compatibility**. The world is moving towards ES modules (ESM), but millions of packages on npm still require CommonJS. Bun recommends ES modules, but supports CommonJS.
 *   **Web-standard APIs**. Bun implements standard Web APIs like `fetch`, `WebSocket`, and `ReadableStream`. Bun is powered by the JavaScriptCore engine, which is developed by Apple for Safari, so some APIs like [`Headers`](https://developer.mozilla.org/en-US/docs/Web/API/Headers) and [`URL`](https://developer.mozilla.org/en-US/docs/Web/API/URL) directly use [Safari’s implementation](https://github.com/oven-sh/bun/blob/HEAD/src/bun.js/bindings/webcore/JSFetchHeaders.cpp).
-*   **Node.js compatibility**. In addition to supporting Node-style module resolution, Bun aims for full compatibility with built-in Node.js globals (`process`, `Buffer`) and modules (`path`, `fs`, `http`, etc.) _This is an ongoing effort that is not complete._ Refer to the [compatibility page](/docs/runtime/nodejs-compat) for the current status.
+*   **Node.js compatibility**. In addition to supporting Node-style module resolution, Bun aims for full compatibility with built-in Node.js globals (`process`, `Buffer`) and modules (`path`, `fs`, `http`, etc.) _This is an ongoing effort that is not complete._ Refer to the [compatibility page](runtime/nodejs-compat/index.md) for the current status.
 
 Bun is more than a runtime. The long-term goal is to be a cohesive, infrastructural toolkit for building apps with JavaScript/TypeScript, including a package manager, transpiler, bundler, script runner, test runner, and more.
 
@@ -152,4 +152,4 @@ Installation
 
 Next
 
-](/docs/installation)
+](installation/index.md)

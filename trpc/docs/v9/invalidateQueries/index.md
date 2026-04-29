@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:29.464Z"
 content_hash: "c61b5f57a222c9c7909cb2ddd70312e6ac6f108f2f214792ab05c3813869149d"
 menu_path: ["invalidateQueries"]
 section_path: []
-nav_prev: {"path": "../infer-types/index.md", "title": "Inferring Types"}
-nav_next: {"path": "../links/index.md", "title": "Links & Request Batching"}
+nav_prev: {"path": "trpc/docs/v9/infer-types/index.md", "title": "Inferring Types"}
+nav_next: {"path": "trpc/docs/v9/links/index.md", "title": "Links & Request Batching"}
 ---
 
 A typesafe wrapper around calling `queryClient.invalidateQueries()`, all it does is to call `queryClient.invalidateQueries()` with the passed args. [See react-query docs](https://tanstack.com/query/v3/docs/react/guides/query-invalidation) if you want more fine-grained control.

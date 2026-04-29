@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:20.597Z"
 content_hash: "25957651ee425b536982b479495de557762117d6dbd8cb80107503afaf19ca6c"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Getting Started","Getting Started"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Getting Started","Getting Started"]
-nav_prev: {"path": "../index.md", "title": "OAuth 2.1 Server"}
-nav_next: {"path": "../mcp-authentication/index.md", "title": "Model Context Protocol (MCP) Authentication"}
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/index.md", "title": "OAuth 2.1 Server"}
+nav_next: {"path": "supabase/docs/guides/auth/oauth-server/mcp-authentication/index.md", "title": "Model Context Protocol (MCP) Authentication"}
 ---
 
 # 
@@ -27,7 +27,7 @@ Before you begin, make sure you have:
 
 *   A Supabase project (create one at [supabase.com](https://supabase.com))
 *   Admin access to your project
-*   (Optional) [Supabase CLI](/docs/guides/cli) v2.54.11 or higher for local development
+*   (Optional) [Supabase CLI](../../../cli/index.md) v2.54.11 or higher for local development
 
 ## Overview[#](#overview)
 
@@ -82,7 +82,7 @@ By default, Supabase uses HS256 (symmetric) for signing JWTs. For OAuth use case
 *   No need to share your JWT secret with third-party applications
 *   More resilient architecture for distributed systems
 
-Learn more about [configuring JWT signing keys](/docs/guides/auth/signing-keys).
+Learn more about [configuring JWT signing keys](../../signing-keys/index.md).
 
 **Note:** If you plan to use OpenID Connect ID tokens (by requesting the `openid` scope), asymmetric signing algorithms are **required**. ID token generation will fail with HS256.
 
@@ -201,7 +201,7 @@ Confidential clients
 
 **Constraints:** Public clients must use `none`. Confidential clients cannot use `none`.
 
-You can set this when registering a client via the dashboard or programmatically. See [OAuth Flows](/docs/guides/auth/oauth-server/oauth-flows#step-5-token-exchange) for examples of each method in action.
+You can set this when registering a client via the dashboard or programmatically. See [OAuth Flows](../oauth-flows/index.md#step-5-token-exchange) for examples of each method in action.
 
 ## Customizing tokens (optional)[#](#customizing-tokens-optional)
 
@@ -215,7 +215,7 @@ Custom Access Token Hooks are triggered for all token issuance, including OAuth 
 *   **Add client-specific permissions**: Include custom claims based on which OAuth client is requesting access
 *   **Implement dynamic scopes**: Add metadata that RLS policies can use for fine-grained access control
 
-For more examples, see [Token Security & RLS](/docs/guides/auth/oauth-server/token-security#custom-access-token-hooks).
+For more examples, see [Token Security & RLS](../token-security/index.md#custom-access-token-hooks).
 
 ## Redirect URI configuration[#](#redirect-uri-configuration)
 
@@ -223,7 +223,7 @@ Redirect URIs are critical for OAuth security. Supabase Auth will only redirect 
 
 **Not to be confused with general redirect URLs**
 
-This section is about **OAuth client redirect URIs** - where to send users after they authorize third-party apps to access your Supabase project. This is different from the general [Redirect URLs](/docs/guides/auth/redirect-urls) setting, which controls where to send users after they sign in TO your app using social providers.
+This section is about **OAuth client redirect URIs** - where to send users after they authorize third-party apps to access your Supabase project. This is different from the general [Redirect URLs](../../redirect-urls/index.md) setting, which controls where to send users after they sign in TO your app using social providers.
 
 **Exact matches only - No wildcards or patterns**
 
@@ -239,6 +239,6 @@ OAuth client redirect URIs require exact, complete URL matches. Unlike general r
 
 Now that you've registered your first OAuth client, you're ready to:
 
-*   [Understand OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Learn how the authorization code and refresh token flows work
-*   [Implement MCP authentication](/docs/guides/auth/oauth-server/mcp-authentication) - Enable AI agent authentication
-*   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Control data access for OAuth clients
+*   [Understand OAuth flows](../oauth-flows/index.md) - Learn how the authorization code and refresh token flows work
+*   [Implement MCP authentication](../mcp-authentication/index.md) - Enable AI agent authentication
+*   [Secure with RLS](../token-security/index.md) - Control data access for OAuth clients

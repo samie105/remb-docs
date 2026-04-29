@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:51.635Z"
 content_hash: "c2599a3686a444e86c25991ba2dc26ed6f76a52bc82669fbedf1a30e41a723bc"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis serialization protocol specification","→","Redis serialization protocol specification"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Redis serialization protocol specification","→","Redis serialization protocol specification"]
-nav_prev: {"path": "../modules/modules-native-types/index.md", "title": "Modules API for native types"}
-nav_next: {"path": "../sentinel-clients/index.md", "title": "Sentinel client spec"}
+nav_prev: {"path": "redis/docs/latest/develop/reference/modules/modules-native-types/index.md", "title": "Modules API for native types"}
+nav_next: {"path": "redis/docs/latest/develop/reference/sentinel-clients/index.md", "title": "Sentinel client spec"}
 ---
 
 # Redis serialization protocol specification
@@ -33,7 +33,7 @@ RESP is the protocol you should implement in your Redis client.
 
 Note:
 
-The protocol outlined here is used only for client-server communication. [Redis Cluster](/docs/latest/operate/oss_and_stack/reference/cluster-spec/) uses a different binary protocol for exchanging messages between nodes.
+The protocol outlined here is used only for client-server communication. [Redis Cluster](../../../operate/oss_and_stack/reference/cluster-spec/index.md) uses a different binary protocol for exchanging messages between nodes.
 
 ## RESP versions
 
@@ -62,7 +62,7 @@ This is the simplest model possible; however, there are some exceptions:
 *   Redis requests can be [pipelined](#multiple-commands-and-pipelining). Pipelining enables clients to send multiple commands at once and wait for replies later.
 *   When a RESP2 connection subscribes to a [Pub/Sub](/docs/latest/develop/pubsub/) channel, the protocol changes semantics and becomes a _push_ protocol. The client no longer requires sending commands because the server will automatically send new messages to the client (for the channels the client is subscribed to) as soon as they are received.
 *   The [`MONITOR`](/docs/latest/commands/monitor/) command. Invoking the [`MONITOR`](/docs/latest/commands/monitor/) command switches the connection to an ad-hoc push mode. The protocol of this mode is not specified but is obvious to parse.
-*   [Protected mode](/docs/latest/operate/oss_and_stack/management/security/#protected-mode). Connections opened from a non-loopback address to a Redis while in protected mode are denied and terminated by the server. Before terminating the connection, Redis unconditionally sends a `-DENIED` reply, regardless of whether the client writes to the socket.
+*   [Protected mode](../../../operate/oss_and_stack/management/security/index.md#protected-mode). Connections opened from a non-loopback address to a Redis while in protected mode are denied and terminated by the server. Before terminating the connection, Redis unconditionally sends a `-DENIED` reply, regardless of whether the client writes to the socket.
 *   The [RESP3 Push type](#resp3-pushes). As the name suggests, a push type allows the server to send out-of-band data to the connection. The server may push data at any time, and the data isn't necessarily related to specific commands executed by the client.
 
 Excluding these exceptions, the Redis protocol is a simple request-response protocol.
@@ -582,7 +582,7 @@ txt:Some string\r\n
 
 (The raw RESP encoding is split into multiple lines for readability).
 
-Some client libraries may ignore the difference between this type and the string type and return a native string in both cases. However, interactive clients, such as command line interfaces (e.g., [`redis-cli`](/docs/latest/develop/tools/cli/)), can use this type and know that their output should be presented to the human user as is and without quoting the string.
+Some client libraries may ignore the difference between this type and the string type and return a native string in both cases. However, interactive clients, such as command line interfaces (e.g., [`redis-cli`](../../tools/cli/index.md)), can use this type and know that their output should be presented to the human user as is and without quoting the string.
 
 For example, the Redis command [`INFO`](/docs/latest/commands/info/) outputs a report that includes newlines. When using RESP3, `redis-cli` displays it correctly because it is sent as a Verbatim String reply (with its three bytes being "txt"). When using RESP2, however, the `redis-cli` is hard-coded to look for the [`INFO`](/docs/latest/commands/info/) command to ensure its correct display to the user.
 
@@ -854,7 +854,7 @@ While comparable in performance to a binary protocol, the Redis protocol is sign
 
 ## Tips for Redis client authors
 
-*   For testing purposes, use [Lua's type conversions](/docs/latest/develop/programmability/lua-api/#lua-to-resp3-type-conversion) to have Redis reply with any RESP2/RESP3 needed. As an example, a RESP3 double can be generated like so:
+*   For testing purposes, use [Lua's type conversions](../../programmability/lua-api/index.md#lua-to-resp3-type-conversion) to have Redis reply with any RESP2/RESP3 needed. As an example, a RESP3 double can be generated like so:
     
     ```
     EVAL "return { double = tonumber(ARGV[1]) }" 0 1e0

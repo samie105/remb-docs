@@ -11,15 +11,15 @@ menu_path: ["refresh"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../redirect/index.md", "title": "redirect"}
-nav_next: {"path": "../revalidatePath/index.md", "title": "revalidatePath"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/redirect/index.md", "title": "redirect"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/revalidatePath/index.md", "title": "revalidatePath"}
 ---
 
 # refresh
 
 Last updated April 23, 2026
 
-`refresh` allows you to refresh the client router from within a [Server Action](/docs/app/getting-started/mutating-data).
+`refresh` allows you to refresh the client router from within a [Server Action](../../../getting-started/mutating-data/index.md).
 
 ## Usage[](#usage)
 

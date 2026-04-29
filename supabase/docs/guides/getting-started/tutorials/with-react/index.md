@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:10.214Z"
 content_hash: "a07552bb66108245ddcfe3f7144c22baeb2cea3768d45bf34caa77648ae5de7f"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","React","React"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","React","React"]
-nav_prev: {"path": "../with-nuxt-3/index.md", "title": "Build a User Management App with Nuxt 3"}
-nav_next: {"path": "../with-redwoodjs/index.md", "title": "Build a User Management App with RedwoodJS"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-nuxt-3/index.md", "title": "Build a User Management App with Nuxt 3"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-redwoodjs/index.md", "title": "Build a User Management App with RedwoodJS"}
 ---
 
 # 
@@ -27,9 +27,9 @@ UI components built on shadcn/ui that connect to Supabase via a single command.
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/user-management-demo.png)
 
@@ -65,7 +65,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=react).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -105,7 +105,7 @@ And finally, save the environment variables in a `.env.local` file. Use the Proj
 
 [View source](https://github.com/supabase/supabase/blob/e8df67d5d5291e05ea56596aee0f2b7fa152929b/examples/user-management/react-user-management/.env.example)
 
-With the API credentials in place, create a helper file to initialize the Supabase client. These variables will be exposed on the browser, and that's fine as you have [Row Level Security](/docs/guides/auth#row-level-security) enabled on the Database.
+With the API credentials in place, create a helper file to initialize the Supabase client. These variables will be exposed on the browser, and that's fine as you have [Row Level Security](../../../auth/index.md#row-level-security) enabled on the Database.
 
 Create and edit `src/supabaseClient.js`:
 
@@ -141,7 +141,7 @@ Users also need a way to edit their profile details and manage their accounts af
 
 ### Create an upload widget[#](#create-an-upload-widget)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 Create an avatar for the user so that they can upload a profile photo. Start by creating a new component:
 

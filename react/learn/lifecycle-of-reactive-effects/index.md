@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:18.750Z"
 content_hash: "d94b10330862a8d4488d97b785a995d7c2676fcaae3d20d182527aea5fc2bc93"
 menu_path: ["Lifecycle of Reactive Effects"]
 section_path: []
-nav_prev: {"path": "../you-might-not-need-an-effect/index.md", "title": "You Might Not Need an Effect"}
-nav_next: {"path": "../separating-events-from-effects/index.md", "title": "Separating Events from Effects"}
+nav_prev: {"path": "react/learn/you-might-not-need-an-effect/index.md", "title": "You Might Not Need an Effect"}
+nav_next: {"path": "react/learn/separating-events-from-effects/index.md", "title": "Separating Events from Effects"}
 ---
 
 Effects have a different lifecycle from components. Components may mount, update, or unmount. An Effect can only do two things: to start synchronizing something, and later to stop synchronizing it. This cycle can happen multiple times if your Effect depends on props and state that change over time. React provides a linter rule to check that you’ve specified your Effect’s dependencies correctly. This keeps your Effect synchronized to the latest props and state.

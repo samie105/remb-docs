@@ -10,8 +10,8 @@ content_hash: "ccaedaad8129fc639788b9e7014a6c73821f3933537df2129994664fe05c7465"
 menu_path: ["Drizzle schema"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../relations-v1-v2/index.md", "title": "Migrating to Relational Queries version 2"}
-nav_next: {"path": "../relations-schema-declaration/index.md", "title": "Drizzle Relations Fundamentals"}
+nav_prev: {"path": "drizzle/docs/relations-v1-v2/index.md", "title": "Migrating to Relational Queries version 2"}
+nav_next: {"path": "drizzle/docs/relations-schema-declaration/index.md", "title": "Drizzle Relations Fundamentals"}
 ---
 
 Drizzle lets you define a schema in TypeScript with various models and properties supported by the underlying database. When you define your schema, it serves as the source of truth for future modifications in queries (using Drizzle-ORM) and migrations (using Drizzle-Kit).

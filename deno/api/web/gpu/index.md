@@ -10,8 +10,8 @@ content_hash: "555c2d3c7b0fcb95de751bbe44b90bc3b1c49e33dd59e2694517d8a66c823946"
 menu_path: ["GPU - Web documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../file/index.md", "title": "File - Web documentation"}
-nav_next: {"path": "../intl/index.md", "title": "Intl - Web documentation"}
+nav_prev: {"path": "deno/api/web/file/index.md", "title": "File - Web documentation"}
+nav_next: {"path": "deno/api/web/intl/index.md", "title": "Intl - Web documentation"}
 ---
 
 c

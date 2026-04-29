@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:28.603Z"
 content_hash: "ba9e4bd1d5501ad713729c5965456ac5522b7c9d125c834ed012a4f31e445097"
 menu_path: ["PostgreSQL: Documentation: 18: Chapter 46. Background Worker Processes"]
 section_path: []
-nav_prev: {"path": "../plpython.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a044.\u00a0PL/Python \u2014 Python Procedural Language"}
-nav_next: {"path": "../sql-commands.html/index.md", "title": "SQL Commands"}
+nav_prev: {"path": "postgres/docs/current/plpython.html/index.md", "title": "PostgreSQL: Documentation: 18: Chapter\u00a044.\u00a0PL/Python \u2014 Python Procedural Language"}
+nav_next: {"path": "postgres/docs/current/sql-commands.html/index.md", "title": "SQL Commands"}
 ---
 
 PostgreSQL can be extended to run user-supplied code in separate processes. Such processes are started, stopped and monitored by `postgres`, which permits them to have a lifetime closely linked to the server's status. These processes are attached to PostgreSQL's shared memory area and have the option to connect to databases internally; they can also run multiple transactions serially, just like a regular client-connected server process. Also, by linking to libpq they can connect to the server and behave like a regular client application.

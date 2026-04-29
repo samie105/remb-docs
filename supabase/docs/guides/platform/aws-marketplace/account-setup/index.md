@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:38.562Z"
 content_hash: "3e5deef22970536b134dc57118a68c5d0014928f2606aca6d4801e7808f5763e"
 menu_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Account Setup","Account Setup"]
 section_path: ["Platform","Platform","More","More","More","AWS Marketplace","AWS Marketplace","Account Setup","Account Setup"]
-nav_prev: {"path": "../index.md", "title": "AWS Marketplace"}
-nav_next: {"path": "../faq/index.md", "title": "AWS Marketplace FAQ"}
+nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/index.md", "title": "AWS Marketplace"}
+nav_next: {"path": "supabase/docs/guides/platform/aws-marketplace/faq/index.md", "title": "AWS Marketplace FAQ"}
 ---
 
 # 
@@ -30,8 +30,8 @@ An AWS Marketplace subscription is linked to exactly one Supabase organization. 
 *   The billing details from your AWS account, such as the billing address and tax ID, are used. These details are managed through the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing).
 *   The subscription plan is managed through the AWS Marketplace. You can read more about this in the [Manage your subscription](./manage-your-subscription#manage-your-subscription-plan) guide.
 *   Charges will come from AWS rather than Supabase, using the default payment method set in your AWS account.
-*   The [Spend Cap](/docs/guides/platform/cost-control#spend-cap) for the organization is disabled. The Spend Cap is not available for organizations managed through AWS.
-*   When you downgrade your plan to the Free Plan, all projects within the organization will be paused if you exceed the [free projects limit](/docs/guides/platform/billing-on-supabase#free-plan).
+*   The [Spend Cap](../../cost-control/index.md#spend-cap) for the organization is disabled. The Spend Cap is not available for organizations managed through AWS.
+*   When you downgrade your plan to the Free Plan, all projects within the organization will be paused if you exceed the [free projects limit](../../billing-on-supabase/index.md#free-plan).
 
 ### Linking an existing Supabase organization[#](#linking-an-existing-supabase-organization)
 

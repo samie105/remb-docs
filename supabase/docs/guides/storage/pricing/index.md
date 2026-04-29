@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:58.922Z"
 content_hash: "f18acb9f2550849eb2cd9b9419762ec510095da89f2d3a4deedebf0cd05a30fb"
 menu_path: ["Storage","Storage","File Buckets","File Buckets","Pricing","Pricing"]
 section_path: ["Storage","Storage","File Buckets","File Buckets","Pricing","Pricing"]
-nav_prev: {"path": "../management/download-objects/index.md", "title": "Download Objects"}
-nav_next: {"path": "../production/scaling/index.md", "title": "Storage Optimizations"}
+nav_prev: {"path": "supabase/docs/guides/storage/management/download-objects/index.md", "title": "Download Objects"}
+nav_next: {"path": "supabase/docs/guides/storage/production/scaling/index.md", "title": "Storage Optimizations"}
 ---
 
 # 
@@ -73,6 +73,6 @@ Custom
 
 Custom
 
-For a detailed explanation of how charges are calculated, refer to [Manage Storage size usage](/docs/guides/platform/manage-your-usage/storage-size).
+For a detailed explanation of how charges are calculated, refer to [Manage Storage size usage](../../platform/manage-your-usage/storage-size/index.md).
 
 If you use [Storage Image Transformations](/docs/guides/storage/serving/image-transformations), additional charges apply.

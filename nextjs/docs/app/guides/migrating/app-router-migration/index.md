@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Migrating"}
-nav_next: {"path": "../from-create-react-app/index.md", "title": "How to migrate from Create React App to Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/migrating/index.md", "title": "Migrating"}
+nav_next: {"path": "nextjs/docs/app/guides/migrating/from-create-react-app/index.md", "title": "How to migrate from Create React App to Next.js"}
 ---
 
 # How to migrate from Pages to the App Router
@@ -95,7 +95,7 @@ After you've updated, see the following sections for next steps:
 
 ## Upgrading New Features[](#upgrading-new-features)
 
-Next.js 13 introduced the new [App Router](/docs/app) with new features and conventions. The new Router is available in the `app` directory and co-exists with the `pages` directory.
+Next.js 13 introduced the new [App Router](../../../index.md) with new features and conventions. The new Router is available in the `app` directory and co-exists with the `pages` directory.
 
 Upgrading to Next.js 13 does **not** require using the App Router. You can continue using `pages` with new features that work in both directories, such as the updated [Image component](#image-component), [Link component](#link-component), [Script component](#script-component), and [Font optimization](#font-optimization).
 
@@ -107,12 +107,12 @@ In version 13, this new behavior is now the default for `next/image`.
 
 There are two codemods to help you migrate to the new Image Component:
 
--   [**`next-image-to-legacy-image` codemod**](/docs/app/guides/upgrading/codemods#next-image-to-legacy-image): Safely and automatically renames `next/image` imports to `next/legacy/image`. Existing components will maintain the same behavior.
--   [**`next-image-experimental` codemod**](/docs/app/guides/upgrading/codemods#next-image-experimental): Dangerously adds inline styles and removes unused props. This will change the behavior of existing components to match the new defaults. To use this codemod, you need to run the `next-image-to-legacy-image` codemod first.
+-   [**`next-image-to-legacy-image` codemod**](../../upgrading/codemods/index.md#next-image-to-legacy-image): Safely and automatically renames `next/image` imports to `next/legacy/image`. Existing components will maintain the same behavior.
+-   [**`next-image-experimental` codemod**](../../upgrading/codemods/index.md#next-image-experimental): Dangerously adds inline styles and removes unused props. This will change the behavior of existing components to match the new defaults. To use this codemod, you need to run the `next-image-to-legacy-image` codemod first.
 
 ### `<Link>` Component[](#link-component)
 
-The [`<Link>` Component](/docs/app/api-reference/components/link) no longer requires manually adding an `<a>` tag as a child. This behavior was added as an experimental option in [version 12.2](https://nextjs.org/blog/next-12-2) and is now the default. In Next.js 13, `<Link>` always renders `<a>` and allows you to forward props to the underlying tag.
+The [`<Link>` Component](../../../api-reference/components/link/index.md) no longer requires manually adding an `<a>` tag as a child. This behavior was added as an experimental option in [version 12.2](https://nextjs.org/blog/next-12-2) and is now the default. In Next.js 13, `<Link>` always renders `<a>` and allows you to forward props to the underlying tag.
 
 For example:
 
@@ -130,44 +130,44 @@ import Link from 'next/link'
 </Link>
 ```
 
-To upgrade your links to Next.js 13, you can use the [`new-link` codemod](/docs/app/guides/upgrading/codemods#new-link).
+To upgrade your links to Next.js 13, you can use the [`new-link` codemod](../../upgrading/codemods/index.md#new-link).
 
 ### `<Script>` Component[](#script-component)
 
-The behavior of [`next/script`](/docs/app/api-reference/components/script) has been updated to support both `pages` and `app`, but some changes need to be made to ensure a smooth migration:
+The behavior of [`next/script`](../../../api-reference/components/script/index.md) has been updated to support both `pages` and `app`, but some changes need to be made to ensure a smooth migration:
 
 -   Move any `beforeInteractive` scripts you previously included in `_document.js` to the root layout file (`app/layout.tsx`).
 -   The experimental `worker` strategy does not yet work in `app` and scripts denoted with this strategy will either have to be removed or modified to use a different strategy (e.g. `lazyOnload`).
--   `onLoad`, `onReady`, and `onError` handlers will not work in Server Components so make sure to move them to a [Client Component](/docs/app/getting-started/server-and-client-components) or remove them altogether.
+-   `onLoad`, `onReady`, and `onError` handlers will not work in Server Components so make sure to move them to a [Client Component](../../../getting-started/server-and-client-components/index.md) or remove them altogether.
 
 ### Font Optimization[](#font-optimization)
 
-Previously, Next.js helped you optimize fonts by [inlining font CSS](/docs/app/api-reference/components/font). Version 13 introduces the new [`next/font`](/docs/app/api-reference/components/font) module which gives you the ability to customize your font loading experience while still ensuring great performance and privacy. `next/font` is supported in both the `pages` and `app` directories.
+Previously, Next.js helped you optimize fonts by [inlining font CSS](../../../api-reference/components/font/index.md). Version 13 introduces the new [`next/font`](../../../api-reference/components/font/index.md) module which gives you the ability to customize your font loading experience while still ensuring great performance and privacy. `next/font` is supported in both the `pages` and `app` directories.
 
-While [inlining CSS](/docs/app/api-reference/components/font) still works in `pages`, it does not work in `app`. You should use [`next/font`](/docs/app/api-reference/components/font) instead.
+While [inlining CSS](../../../api-reference/components/font/index.md) still works in `pages`, it does not work in `app`. You should use [`next/font`](../../../api-reference/components/font/index.md) instead.
 
-See the [Font Optimization](/docs/app/api-reference/components/font) page to learn how to use `next/font`.
+See the [Font Optimization](../../../api-reference/components/font/index.md) page to learn how to use `next/font`.
 
 ## Migrating from `pages` to `app`[](#migrating-from-pages-to-app)
 
 > **🎥 Watch:** Learn how to incrementally adopt the App Router → [YouTube (16 minutes)](https://www.youtube.com/watch?v=YQMSietiFm0).
 
-Moving to the App Router may be the first time using React features that Next.js builds on top of such as Server Components, Suspense, and more. When combined with new Next.js features such as [special files](/docs/app/api-reference/file-conventions) and [layouts](/docs/app/api-reference/file-conventions/layout), migration means new concepts, mental models, and behavioral changes to learn.
+Moving to the App Router may be the first time using React features that Next.js builds on top of such as Server Components, Suspense, and more. When combined with new Next.js features such as [special files](../../../api-reference/file-conventions/index.md) and [layouts](../../../api-reference/file-conventions/layout/index.md), migration means new concepts, mental models, and behavioral changes to learn.
 
 We recommend reducing the combined complexity of these updates by breaking down your migration into smaller steps. The `app` directory is intentionally designed to work simultaneously with the `pages` directory to allow for incremental page-by-page migration.
 
--   The `app` directory supports nested routes _and_ layouts. [Learn more](/docs/app/getting-started/layouts-and-pages).
+-   The `app` directory supports nested routes _and_ layouts. [Learn more](../../../getting-started/layouts-and-pages/index.md).
 -   Use nested folders to define routes and a special `page.js` file to make a route segment publicly accessible. [Learn more](#step-4-migrating-pages).
--   [Special file conventions](/docs/app/api-reference/file-conventions) are used to create UI for each route segment. The most common special files are `page.js` and `layout.js`.
+-   [Special file conventions](../../../api-reference/file-conventions/index.md) are used to create UI for each route segment. The most common special files are `page.js` and `layout.js`.
     -   Use `page.js` to define UI unique to a route.
     -   Use `layout.js` to define UI that is shared across multiple routes.
     -   `.js`, `.jsx`, or `.tsx` file extensions can be used for special files.
--   You can colocate other files inside the `app` directory such as components, styles, tests, and more. [Learn more](/docs/app).
--   Data fetching functions like `getServerSideProps` and `getStaticProps` have been replaced with [a new API](/docs/app/getting-started/fetching-data) inside `app`. `getStaticPaths` has been replaced with [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params).
--   `pages/_app.js` and `pages/_document.js` have been replaced with a single `app/layout.js` root layout. [Learn more](/docs/app/api-reference/file-conventions/layout#root-layout).
--   `pages/_error.js` has been replaced with more granular `error.js` special files. [Learn more](/docs/app/getting-started/error-handling).
--   `pages/404.js` has been replaced with the [`not-found.js`](/docs/app/api-reference/file-conventions/not-found) file.
--   `pages/api/*` API Routes have been replaced with the [`route.js`](/docs/app/api-reference/file-conventions/route) (Route Handler) special file.
+-   You can colocate other files inside the `app` directory such as components, styles, tests, and more. [Learn more](../../../index.md).
+-   Data fetching functions like `getServerSideProps` and `getStaticProps` have been replaced with [a new API](../../../getting-started/fetching-data/index.md) inside `app`. `getStaticPaths` has been replaced with [`generateStaticParams`](../../../api-reference/functions/generate-static-params/index.md).
+-   `pages/_app.js` and `pages/_document.js` have been replaced with a single `app/layout.js` root layout. [Learn more](../../../api-reference/file-conventions/layout/index.md#root-layout).
+-   `pages/_error.js` has been replaced with more granular `error.js` special files. [Learn more](../../../getting-started/error-handling/index.md).
+-   `pages/404.js` has been replaced with the [`not-found.js`](../../../api-reference/file-conventions/not-found/index.md) file.
+-   `pages/api/*` API Routes have been replaced with the [`route.js`](../../../api-reference/file-conventions/route/index.md) (Route Handler) special file.
 
 ### Step 1: Creating the `app` directory[](#step-1-creating-the-app-directory)
 
@@ -199,7 +199,7 @@ Then, create a new `app` directory at the root of your project (or `src/` direct
 
 ### Step 2: Creating a Root Layout[](#step-2-creating-a-root-layout)
 
-Create a new `app/layout.tsx` file inside the `app` directory. This is a [root layout](/docs/app/api-reference/file-conventions/layout#root-layout) that will apply to all routes inside `app`.
+Create a new `app/layout.tsx` file inside the `app` directory. This is a [root layout](../../../api-reference/file-conventions/layout/index.md#root-layout) that will apply to all routes inside `app`.
 
 app/layout.tsx
 
@@ -226,7 +226,7 @@ export default function RootLayout({
 -   The root layout replaces the `pages/_app.tsx` and `pages/_document.tsx` files.
 -   `.js`, `.jsx`, or `.tsx` extensions can be used for layout files.
 
-To manage `<head>` HTML elements, you can use the [built-in SEO support](/docs/app/getting-started/metadata-and-og-images):
+To manage `<head>` HTML elements, you can use the [built-in SEO support](../../../getting-started/metadata-and-og-images/index.md):
 
 app/layout.tsx
 
@@ -245,11 +245,11 @@ export const metadata: Metadata = {
 
 If you have an existing `_app` or `_document` file, you can copy the contents (e.g. global styles) to the root layout (`app/layout.tsx`). Styles in `app/layout.tsx` will _not_ apply to `pages/*`. You should keep `_app`/`_document` while migrating to prevent your `pages/*` routes from breaking. Once fully migrated, you can then safely delete them.
 
-If you are using any React Context providers, they will need to be moved to a [Client Component](/docs/app/getting-started/server-and-client-components).
+If you are using any React Context providers, they will need to be moved to a [Client Component](../../../getting-started/server-and-client-components/index.md).
 
 #### Migrating the `getLayout()` pattern to Layouts (Optional)[](#migrating-the-getlayout-pattern-to-layouts-optional)
 
-Next.js recommended adding a [property to Page components](/docs/pages/building-your-application/routing/pages-and-layouts#layout-pattern) to achieve per-page layouts in the `pages` directory. This pattern can be replaced with native support for [nested layouts](/docs/app/api-reference/file-conventions/layout) in the `app` directory.
+Next.js recommended adding a [property to Page components](../../../../pages/building-your-application/routing/pages-and-layouts/index.md#layout-pattern) to achieve per-page layouts in the `pages` directory. This pattern can be replaced with native support for [nested layouts](../../../api-reference/file-conventions/layout/index.md) in the `app` directory.
 
 **See before and after example**
 
@@ -294,7 +294,7 @@ Page.getLayout = function getLayout(page) {
     }
     ```
     
--   Move the contents of `DashboardLayout` into a new [Client Component](/docs/app/getting-started/server-and-client-components) to retain `pages` directory behavior.
+-   Move the contents of `DashboardLayout` into a new [Client Component](../../../getting-started/server-and-client-components/index.md) to retain `pages` directory behavior.
     
     app/dashboard/DashboardLayout.js
     
@@ -329,7 +329,7 @@ Page.getLayout = function getLayout(page) {
 
 ### Step 3: Migrating `next/head`[](#step-3-migrating-nexthead)
 
-In the `pages` directory, the `next/head` React component is used to manage `<head>` HTML elements such as `title` and `meta` . In the `app` directory, `next/head` is replaced with the new [built-in SEO support](/docs/app/getting-started/metadata-and-og-images).
+In the `pages` directory, the `next/head` React component is used to manage `<head>` HTML elements such as `title` and `meta` . In the `app` directory, `next/head` is replaced with the new [built-in SEO support](../../../getting-started/metadata-and-og-images/index.md).
 
 **Before:**
 
@@ -369,12 +369,12 @@ export default function Page() {
 }
 ```
 
-[See all metadata options](/docs/app/api-reference/functions/generate-metadata).
+[See all metadata options](../../../api-reference/functions/generate-metadata/index.md).
 
 ### Step 4: Migrating Pages[](#step-4-migrating-pages)
 
--   Pages in the [`app` directory](/docs/app) are [Server Components](/docs/app/getting-started/server-and-client-components) by default. This is different from the `pages` directory where pages are [Client Components](/docs/app/getting-started/server-and-client-components).
--   [Data fetching](/docs/app/getting-started/fetching-data) has changed in `app`. `getServerSideProps`, `getStaticProps` and `getInitialProps` have been replaced with a simpler API.
+-   Pages in the [`app` directory](../../../index.md) are [Server Components](../../../getting-started/server-and-client-components/index.md) by default. This is different from the `pages` directory where pages are [Client Components](../../../getting-started/server-and-client-components/index.md).
+-   [Data fetching](../../../getting-started/fetching-data/index.md) has changed in `app`. `getServerSideProps`, `getStaticProps` and `getInitialProps` have been replaced with a simpler API.
 -   The `app` directory uses nested folders to define routes and a special `page.js` file to make a route segment publicly accessible.
 -   | `pages` Directory | `app` Directory | Route |
     | --- | --- | --- |
@@ -393,7 +393,7 @@ We recommend breaking down the migration of a page into two main steps:
 **Step 1: Create a new Client Component**
 
 -   Create a new separate file inside the `app` directory (i.e. `app/home-page.tsx` or similar) that exports a Client Component. To define Client Components, add the `'use client'` directive to the top of the file (before any imports).
-    -   Similar to the Pages Router, there is an [optimization step](/docs/app/getting-started/server-and-client-components#on-the-client-first-load) to prerender Client Components to static HTML on the initial page load.
+    -   Similar to the Pages Router, there is an [optimization step](../../../getting-started/server-and-client-components/index.md#on-the-client-first-load) to prerender Client Components to static HTML on the initial page load.
 -   Move the default exported page component from `pages/index.js` to `app/home-page.tsx`.
 
 app/home-page.tsx
@@ -423,7 +423,7 @@ export default function HomePage({ recentPosts }) {
     
 -   Import the `home-page.tsx` Client Component into the page.
     
--   If you were fetching data in `pages/index.js`, move the data fetching logic directly into the Server Component using the new [data fetching APIs](/docs/app/getting-started/fetching-data). See the [data fetching upgrade guide](#step-6-migrating-data-fetching-methods) for more details.
+-   If you were fetching data in `pages/index.js`, move the data fetching logic directly into the Server Component using the new [data fetching APIs](../../../getting-started/fetching-data/index.md). See the [data fetching upgrade guide](#step-6-migrating-data-fetching-methods) for more details.
     
     app/page.tsx
     
@@ -447,7 +447,7 @@ export default function HomePage({ recentPosts }) {
     }
     ```
     
--   If your previous page used `useRouter`, you'll need to update to the new routing hooks. [Learn more](/docs/app/api-reference/functions/use-router).
+-   If your previous page used `useRouter`, you'll need to update to the new routing hooks. [Learn more](../../../api-reference/functions/use-router/index.md).
     
 -   Start your development server and visit [`http://localhost:3000`](http://localhost:3000). You should see your existing index route, now served through the app directory.
     
@@ -456,13 +456,13 @@ export default function HomePage({ recentPosts }) {
 
 A new router has been added to support the new behavior in the `app` directory.
 
-In `app`, you should use the three new hooks imported from `next/navigation`: [`useRouter()`](/docs/app/api-reference/functions/use-router), [`usePathname()`](/docs/app/api-reference/functions/use-pathname), and [`useSearchParams()`](/docs/app/api-reference/functions/use-search-params).
+In `app`, you should use the three new hooks imported from `next/navigation`: [`useRouter()`](../../../api-reference/functions/use-router/index.md), [`usePathname()`](../../../api-reference/functions/use-pathname/index.md), and [`useSearchParams()`](../../../api-reference/functions/use-search-params/index.md).
 
 -   The new `useRouter` hook is imported from `next/navigation` and has different behavior to the `useRouter` hook in `pages` which is imported from `next/router`.
-    -   The [`useRouter` hook imported from `next/router`](/docs/pages/api-reference/functions/use-router) is not supported in the `app` directory but can continue to be used in the `pages` directory.
+    -   The [`useRouter` hook imported from `next/router`](../../../../pages/api-reference/functions/use-router/index.md) is not supported in the `app` directory but can continue to be used in the `pages` directory.
 -   The new `useRouter` does not return the `pathname` string. Use the separate `usePathname` hook instead.
 -   The new `useRouter` does not return the `query` object. Search parameters and dynamic route parameters are now separate. Use the `useSearchParams` and `useParams` hooks instead.
--   You can use `useSearchParams` and `usePathname` together to listen to page changes. See the [Router Events](/docs/app/api-reference/functions/use-router#router-events) section for more details.
+-   You can use `useSearchParams` and `usePathname` together to listen to page changes. See the [Router Events](../../../api-reference/functions/use-router/index.md#router-events) section for more details.
 -   These new hooks are only supported in Client Components. They cannot be used in Server Components.
 
 app/example-client-component.tsx
@@ -486,21 +486,21 @@ export default function ExampleClientComponent() {
 In addition, the new `useRouter` hook has the following changes:
 
 -   `isFallback` has been removed because `fallback` has [been replaced](#replacing-fallback).
--   The `locale`, `locales`, `defaultLocales`, `domainLocales` values have been removed because built-in i18n Next.js features are no longer necessary in the `app` directory. [Learn more about i18n](/docs/app/guides/internationalization).
+-   The `locale`, `locales`, `defaultLocales`, `domainLocales` values have been removed because built-in i18n Next.js features are no longer necessary in the `app` directory. [Learn more about i18n](../../internationalization/index.md).
 -   `basePath` has been removed. The alternative will not be part of `useRouter`. It has not yet been implemented.
 -   `asPath` has been removed because the concept of `as` has been removed from the new router.
--   `isReady` has been removed because it is no longer necessary. During [prerendering](/docs/app/glossary#prerendering), any component that uses the [`useSearchParams()`](/docs/app/api-reference/functions/use-search-params) hook will skip the prerendering step and instead be rendered on the client at runtime.
+-   `isReady` has been removed because it is no longer necessary. During [prerendering](../../../glossary/index.md#prerendering), any component that uses the [`useSearchParams()`](../../../api-reference/functions/use-search-params/index.md) hook will skip the prerendering step and instead be rendered on the client at runtime.
 -   `route` has been removed. `usePathname` or `useSelectedLayoutSegments()` provide an alternative.
 
-[View the `useRouter()` API reference](/docs/app/api-reference/functions/use-router).
+[View the `useRouter()` API reference](../../../api-reference/functions/use-router/index.md).
 
 #### Sharing components between `pages` and `app`[](#sharing-components-between-pages-and-app)
 
-To keep components compatible between the `pages` and `app` routers, refer to the [`useRouter` hook from `next/compat/router`](/docs/pages/api-reference/functions/use-router#the-nextcompatrouter-export). This is the `useRouter` hook from the `pages` directory, but intended to be used while sharing components between routers. Once you are ready to use it only on the `app` router, update to the new [`useRouter` from `next/navigation`](/docs/app/api-reference/functions/use-router).
+To keep components compatible between the `pages` and `app` routers, refer to the [`useRouter` hook from `next/compat/router`](../../../../pages/api-reference/functions/use-router/index.md#the-nextcompatrouter-export). This is the `useRouter` hook from the `pages` directory, but intended to be used while sharing components between routers. Once you are ready to use it only on the `app` router, update to the new [`useRouter` from `next/navigation`](../../../api-reference/functions/use-router/index.md).
 
 ### Step 6: Migrating Data Fetching Methods[](#step-6-migrating-data-fetching-methods)
 
-The `pages` directory uses `getServerSideProps` and `getStaticProps` to fetch data for pages. Inside the `app` directory, these previous data fetching functions are replaced with a [simpler API](/docs/app/getting-started/fetching-data) built on top of `fetch()` and `async` React Server Components.
+The `pages` directory uses `getServerSideProps` and `getStaticProps` to fetch data for pages. Inside the `app` directory, these previous data fetching functions are replaced with a [simpler API](../../../getting-started/fetching-data/index.md) built on top of `fetch()` and `async` React Server Components.
 
 app/page.tsx
 
@@ -554,9 +554,9 @@ export default function Dashboard({ projects }) {
 }
 ```
 
-In the App Router, we can colocate our data fetching inside our React components using [Server Components](/docs/app/getting-started/server-and-client-components). This allows us to send less JavaScript to the client, while maintaining the rendered HTML from the server.
+In the App Router, we can colocate our data fetching inside our React components using [Server Components](../../../getting-started/server-and-client-components/index.md). This allows us to send less JavaScript to the client, while maintaining the rendered HTML from the server.
 
-By setting the `cache` option to `no-store`, we can indicate that the fetched data should [never be cached](/docs/app/getting-started/fetching-data). This is similar to `getServerSideProps` in the `pages` directory.
+By setting the `cache` option to `no-store`, we can indicate that the fetched data should [never be cached](../../../getting-started/fetching-data/index.md). This is similar to `getServerSideProps` in the `pages` directory.
 
 app/dashboard/page.tsx
 
@@ -611,8 +611,8 @@ export default function Page(props) {
 
 The `app` directory exposes new read-only functions to retrieve request data:
 
--   [`headers`](/docs/app/api-reference/functions/headers): Based on the Web Headers API, and can be used inside [Server Components](/docs/app/getting-started/server-and-client-components) to retrieve request headers.
--   [`cookies`](/docs/app/api-reference/functions/cookies): Based on the Web Cookies API, and can be used inside [Server Components](/docs/app/getting-started/server-and-client-components) to retrieve cookies.
+-   [`headers`](../../../api-reference/functions/headers/index.md): Based on the Web Headers API, and can be used inside [Server Components](../../../getting-started/server-and-client-components/index.md) to retrieve request headers.
+-   [`cookies`](../../../api-reference/functions/cookies/index.md): Based on the Web Cookies API, and can be used inside [Server Components](../../../getting-started/server-and-client-components/index.md) to retrieve cookies.
 
 app/page.tsx
 
@@ -658,7 +658,7 @@ export default function Index({ projects }) {
 }
 ```
 
-In the `app` directory, data fetching with [`fetch()`](/docs/app/api-reference/functions/fetch) will default to `cache: 'force-cache'`, which will cache the request data until manually invalidated. This is similar to `getStaticProps` in the `pages` directory.
+In the `app` directory, data fetching with [`fetch()`](../../../api-reference/functions/fetch/index.md) will default to `cache: 'force-cache'`, which will cache the request data until manually invalidated. This is similar to `getStaticProps` in the `pages` directory.
 
 app/page.js
 
@@ -708,9 +708,9 @@ export default function Post({ post }) {
 }
 ```
 
-In the `app` directory, `getStaticPaths` is replaced with [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params).
+In the `app` directory, `getStaticPaths` is replaced with [`generateStaticParams`](../../../api-reference/functions/generate-static-params/index.md).
 
-[`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) behaves similarly to `getStaticPaths`, but has a simplified API for returning route parameters and can be used inside [layouts](/docs/app/api-reference/file-conventions/layout). The return shape of `generateStaticParams` is an array of segments instead of an array of nested `param` objects or a string of resolved paths.
+[`generateStaticParams`](../../../api-reference/functions/generate-static-params/index.md) behaves similarly to `getStaticPaths`, but has a simplified API for returning route parameters and can be used inside [layouts](../../../api-reference/file-conventions/layout/index.md). The return shape of `generateStaticParams` is an array of segments instead of an array of nested `param` objects or a string of resolved paths.
 
 app/posts/\[id\]/page.js
 
@@ -765,7 +765,7 @@ export default function Post({ post }) {
 }
 ```
 
-In the `app` directory the [`config.dynamicParams` property](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams) controls how params outside of [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) are handled:
+In the `app` directory the [`config.dynamicParams` property](../../../api-reference/file-conventions/route-segment-config/dynamicParams/index.md) controls how params outside of [`generateStaticParams`](../../../api-reference/functions/generate-static-params/index.md) are handled:
 
 -   **`true`**: (default) Dynamic segments not included in `generateStaticParams` are generated on demand.
 -   **`false`**: Dynamic segments not included in `generateStaticParams` will return a 404.
@@ -794,7 +794,7 @@ export default async function Post({ params }) {
 }
 ```
 
-With [`dynamicParams`](/docs/app/api-reference/file-conventions/route-segment-config/dynamicParams) set to `true` (the default), when a route segment is requested that hasn't been generated, it will be server-rendered and cached.
+With [`dynamicParams`](../../../api-reference/file-conventions/route-segment-config/dynamicParams/index.md) set to `true` (the default), when a route segment is requested that hasn't been generated, it will be server-rendered and cached.
 
 #### Incremental Static Regeneration (`getStaticProps` with `revalidate`)[](#incremental-static-regeneration-getstaticprops-with-revalidate)
 
@@ -824,7 +824,7 @@ export default function Index({ posts }) {
 }
 ```
 
-In the `app` directory, data fetching with [`fetch()`](/docs/app/api-reference/functions/fetch) can use `revalidate`, which will cache the request for the specified amount of seconds.
+In the `app` directory, data fetching with [`fetch()`](../../../api-reference/functions/fetch/index.md) can use `revalidate`, which will cache the request for the specified amount of seconds.
 
 app/page.js
 
@@ -847,7 +847,7 @@ export default async function PostList() {
 
 #### API Routes[](#api-routes)
 
-API Routes continue to work in the `pages/api` directory without any changes. However, they have been replaced by [Route Handlers](/docs/app/api-reference/file-conventions/route) in the `app` directory.
+API Routes continue to work in the `pages/api` directory without any changes. However, they have been replaced by [Route Handlers](../../../api-reference/file-conventions/route/index.md) in the `app` directory.
 
 Route Handlers allow you to create custom request handlers for a given route using the Web [Request](https://developer.mozilla.org/docs/Web/API/Request) and [Response](https://developer.mozilla.org/docs/Web/API/Response) APIs.
 
@@ -859,22 +859,22 @@ JavaScriptTypeScript
 export async function GET(request: Request) {}
 ```
 
-> **Good to know**: If you previously used API routes to call an external API from the client, you can now use [Server Components](/docs/app/getting-started/server-and-client-components) instead to securely fetch data. Learn more about [data fetching](/docs/app/getting-started/fetching-data).
+> **Good to know**: If you previously used API routes to call an external API from the client, you can now use [Server Components](../../../getting-started/server-and-client-components/index.md) instead to securely fetch data. Learn more about [data fetching](../../../getting-started/fetching-data/index.md).
 
 #### Single-Page Applications[](#single-page-applications)
 
-If you are also migrating to Next.js from a Single-Page Application (SPA) at the same time, see our [documentation](/docs/app/guides/single-page-applications) to learn more.
+If you are also migrating to Next.js from a Single-Page Application (SPA) at the same time, see our [documentation](../../single-page-applications/index.md) to learn more.
 
 ### Step 7: Styling[](#step-7-styling)
 
 In the `pages` directory, global stylesheets are restricted to only `pages/_app.js`. With the `app` directory, this restriction has been lifted. Global styles can be added to any layout, page, or component.
 
--   [CSS Modules](/docs/app/getting-started/css#css-modules)
--   [Tailwind CSS](/docs/app/getting-started/css#tailwind-css)
--   [Global Styles](/docs/app/getting-started/css#global-css)
--   [CSS-in-JS](/docs/app/guides/css-in-js)
--   [External Stylesheets](/docs/app/getting-started/css#external-stylesheets)
--   [Sass](/docs/app/guides/sass)
+-   [CSS Modules](../../../getting-started/css/index.md#css-modules)
+-   [Tailwind CSS](../../../getting-started/css/index.md#tailwind-css)
+-   [Global Styles](../../../getting-started/css/index.md#global-css)
+-   [CSS-in-JS](../../css-in-js/index.md)
+-   [External Stylesheets](../../../getting-started/css/index.md#external-stylesheets)
+-   [Sass](../../sass/index.md)
 
 #### Tailwind CSS[](#tailwind-css)
 
@@ -908,7 +908,7 @@ export default function RootLayout({ children }) {
 }
 ```
 
-Learn more about [styling with Tailwind CSS](/docs/app/getting-started/css#tailwind-css)
+Learn more about [styling with Tailwind CSS](../../../getting-started/css/index.md#tailwind-css)
 
 ## Using App Router together with Pages Router[](#using-app-router-together-with-pages-router)
 
@@ -918,6 +918,6 @@ Instead, you can [optimize navigations](https://vercel.com/guides/optimizing-har
 
 ## Codemods[](#codemods)
 
-Next.js provides Codemod transformations to help upgrade your codebase when a feature is deprecated. See [Codemods](/docs/app/guides/upgrading/codemods) for more information.
+Next.js provides Codemod transformations to help upgrade your codebase when a feature is deprecated. See [Codemods](../../upgrading/codemods/index.md) for more information.
 
 Was this helpful?

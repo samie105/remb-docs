@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:42.781Z"
 content_hash: "a8d9642a40019d107b2026d706fb706be349c7cc40d39dc46de264e5cc27f833"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Angular","Angular"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Angular","Angular"]
-nav_prev: {"path": "../../quickstarts/vue/index.md", "title": "Use Supabase with Vue"}
-nav_next: {"path": "../with-expo-react-native/index.md", "title": "Build a User Management App with Expo React Native"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/vue/index.md", "title": "Use Supabase with Vue"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-expo-react-native/index.md", "title": "Build a User Management App with Expo React Native"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a User Management App with Angular
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/user-management-demo.png)
 
@@ -59,7 +59,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=ionicangular).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -89,7 +89,7 @@ Then, install the only additional dependency: [supabase-js](https://github.com/s
 1npm install @supabase/supabase-js
 ```
 
-Finally, save the environment variables in a new `src/environments/environment.ts` file. You need to create the `src/environments` directory first. All you need are the API URL and the key that you copied [earlier](#get-api-details). The application exposes these variables in the browser, and that's fine as you have [Row Level Security](/docs/guides/auth#row-level-security) enabled on the Database.
+Finally, save the environment variables in a new `src/environments/environment.ts` file. You need to create the `src/environments` directory first. All you need are the API URL and the key that you copied [earlier](#get-api-details). The application exposes these variables in the browser, and that's fine as you have [Row Level Security](../../../auth/index.md#row-level-security) enabled on the Database.
 
 ###### src/environments/environment.ts
 
@@ -115,7 +115,7 @@ Optionally, update `src/styles.css` to style the app. You can find the full cont
 
 ### Set up a login component[#](#set-up-a-login-component)
 
-Next, set up an Angular component to manage logins and sign ups. The component uses [Magic Links](/docs/guides/auth/auth-email-passwordless#with-magic-link), so users can sign in with their email without using passwords.
+Next, set up an Angular component to manage logins and sign ups. The component uses [Magic Links](../../../auth/auth-email-passwordless/index.md#with-magic-link), so users can sign in with their email without using passwords.
 
 Create an `AuthComponent` with the `ng g c auth` Angular CLI command and add the following code.
 
@@ -137,7 +137,7 @@ Users also need a way to edit their profile details and manage their accounts af
 
 ## Profile photos[#](#profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Create an upload widget[#](#create-an-upload-widget)
 

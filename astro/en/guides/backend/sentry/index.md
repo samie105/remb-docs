@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:43.411Z"
 content_hash: "1ca113ccc20f4d4371484563553df67e82fd4d5f95fde48f35dac562b92e33c9"
 menu_path: ["Monitor your Astro Site with Sentry"]
 section_path: []
-nav_prev: {"path": "../scalekit/index.md", "title": "Scalekit & Astro"}
-nav_next: {"path": "../supabase/index.md", "title": "Supabase & Astro"}
+nav_prev: {"path": "astro/en/guides/backend/scalekit/index.md", "title": "Scalekit & Astro"}
+nav_next: {"path": "astro/en/guides/backend/supabase/index.md", "title": "Supabase & Astro"}
 ---
 
 # Monitor your Astro Site with Sentry
@@ -78,39 +78,39 @@ To view and resolve the recorded error, log into [sentry.io](https://sentry.io/)
 
 *   ![](/logos/appwriteio.svg)
     
-    ### [Appwrite](/en/guides/backend/appwrite/)
+    ### [Appwrite](../appwrite/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/backend/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/neon.svg)
     
-    ### [Neon](/en/guides/backend/neon/)
+    ### [Neon](../neon/index.md)
     
 *   ![](/logos/prisma-postgres.svg)
     
-    ### [Prisma Postgres](/en/guides/backend/prisma-postgres/)
+    ### [Prisma Postgres](../prisma-postgres/index.md)
     
 *   ![](/logos/scalekit.svg)
     
-    ### [Scalekit](/en/guides/backend/scalekit/)
+    ### [Scalekit](../scalekit/index.md)
     
 *   ![](/logos/sentry.svg)
     
-    ### [Sentry](/en/guides/backend/sentry/)
+    ### [Sentry](index.md)
     
 *   ![](/logos/supabase.svg)
     
-    ### [Supabase](/en/guides/backend/supabase/)
+    ### [Supabase](../supabase/index.md)
     
 *   ![](/logos/turso.svg)
     
-    ### [Turso](/en/guides/backend/turso/)
+    ### [Turso](../turso/index.md)
     
 *   ![](/logos/xata.svg)
     
-    ### [Xata](/en/guides/backend/xata/)
+    ### [Xata](../xata/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

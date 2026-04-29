@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:57.904Z"
 content_hash: "c4d21605c7ec05a627c2a0def15b49bcab332a1781f1bab748cc24a15bb80233"
 menu_path: ["Hash a password"]
 section_path: []
-nav_prev: {"path": "../gzip/index.md", "title": "Compress and decompress data with gzip"}
-nav_next: {"path": "../import-meta-dir/index.md", "title": "Get the directory of the current file"}
+nav_prev: {"path": "bun/docs/guides/util/gzip/index.md", "title": "Compress and decompress data with gzip"}
+nav_next: {"path": "bun/docs/guides/util/import-meta-dir/index.md", "title": "Get the directory of the current file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../import-meta-dir/index.md", "title": "Get the directory of
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.password.hash()` function provides a fast, built-in mechanism for securely hashing passwords in Bun. No third-party dependencies are required.
 
@@ -84,7 +84,7 @@ const isMatch = await Bun.password.verify(password, hash);
 
 * * *
 
-See [Docs > API > Hashing](/docs/runtime/hashing#bun-password) for complete documentation.
+See [Docs > API > Hashing](../../../runtime/hashing/index.md#bun-password) for complete documentation.
 
 Was this page helpful?
 
@@ -96,10 +96,10 @@ Get the current Bun version
 
 Previous
 
-](/docs/guides/util/version)[
+](../version/index.md)[
 
 Generate a UUID
 
 Next
 
-](/docs/guides/util/javascript-uuid)
+](../javascript-uuid/index.md)

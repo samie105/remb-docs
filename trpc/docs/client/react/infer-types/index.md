@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:40.021Z"
 content_hash: "1e0f003d105ca662c052c06075577f5d5783501210db586c0de041674a355cc3"
 menu_path: ["Inferring Types"]
 section_path: []
-nav_prev: {"path": "../getQueryKey/index.md", "title": "getQueryKey"}
-nav_next: {"path": "../server-components/index.md", "title": "Set up with React Server Components"}
+nav_prev: {"path": "trpc/docs/client/react/getQueryKey/index.md", "title": "getQueryKey"}
+nav_next: {"path": "trpc/docs/client/react/server-components/index.md", "title": "Set up with React Server Components"}
 ---
 
 In addition to the type inference made available by `@trpc/server` ([see here](../../vanilla/infer-types/index.md)) this integration also provides some inference helpers for usage purely in React.

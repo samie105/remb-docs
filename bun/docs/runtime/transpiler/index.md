@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:57.660Z"
 content_hash: "9812927be0d4a77637e5c5df8225eb3fadfea66fa0f74378f880aa454e453490"
 menu_path: ["Transpiler"]
 section_path: []
-nav_prev: {"path": "../toml/index.md", "title": "TOML"}
-nav_next: {"path": "../utils/index.md", "title": "Utils"}
+nav_prev: {"path": "bun/docs/runtime/toml/index.md", "title": "TOML"}
+nav_next: {"path": "bun/docs/runtime/utils/index.md", "title": "Utils"}
 ---
 
 Bun exposes its internal transpiler via the `Bun.Transpiler` class. To create an instance of Bun’s transpiler:

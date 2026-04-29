@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../typescript/index.md", "title": "TypeScript"}
-nav_next: {"path": "../../cli/index.md", "title": "CLI"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/typescript/index.md", "title": "TypeScript"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/cli/index.md", "title": "CLI"}
 ---
 
 # ESLint
@@ -121,27 +121,27 @@ The `@next/eslint-plugin-next` rules included are:
 
 | Enabled in recommended config | Rule | Description |
 | --- | --- | --- |
-|  | [@next/next/google-font-display](/docs/messages/google-font-display) | Enforce font-display behavior with Google Fonts. |
-|  | [@next/next/google-font-preconnect](/docs/messages/google-font-preconnect) | Ensure `preconnect` is used with Google Fonts. |
-|  | [@next/next/inline-script-id](/docs/messages/inline-script-id) | Enforce `id` attribute on `next/script` components with inline content. |
-|  | [@next/next/next-script-for-ga](/docs/messages/next-script-for-ga) | Prefer `next/script` component when using the inline script for Google Analytics. |
-|  | [@next/next/no-assign-module-variable](/docs/messages/no-assign-module-variable) | Prevent assignment to the `module` variable. |
-|  | [@next/next/no-async-client-component](/docs/messages/no-async-client-component) | Prevent Client Components from being async functions. |
-|  | [@next/next/no-before-interactive-script-outside-document](/docs/messages/no-before-interactive-script-outside-document) | Prevent usage of `next/script`'s `beforeInteractive` strategy outside of `pages/_document.js`. |
-|  | [@next/next/no-css-tags](/docs/messages/no-css-tags) | Prevent manual stylesheet tags. |
-|  | [@next/next/no-document-import-in-page](/docs/messages/no-document-import-in-page) | Prevent importing `next/document` outside of `pages/_document.js`. |
-|  | [@next/next/no-duplicate-head](/docs/messages/no-duplicate-head) | Prevent duplicate usage of `<Head>` in `pages/_document.js`. |
-|  | [@next/next/no-head-element](/docs/messages/no-head-element) | Prevent usage of `<head>` element. |
-|  | [@next/next/no-head-import-in-document](/docs/messages/no-head-import-in-document) | Prevent usage of `next/head` in `pages/_document.js`. |
-|  | [@next/next/no-html-link-for-pages](/docs/messages/no-html-link-for-pages) | Prevent usage of `<a>` elements to navigate to internal Next.js pages. |
-|  | [@next/next/no-img-element](/docs/messages/no-img-element) | Prevent usage of `<img>` element due to slower LCP and higher bandwidth. |
-|  | [@next/next/no-page-custom-font](/docs/messages/no-page-custom-font) | Prevent page-only custom fonts. |
-|  | [@next/next/no-script-component-in-head](/docs/messages/no-script-component-in-head) | Prevent usage of `next/script` in `next/head` component. |
-|  | [@next/next/no-styled-jsx-in-document](/docs/messages/no-styled-jsx-in-document) | Prevent usage of `styled-jsx` in `pages/_document.js`. |
-|  | [@next/next/no-sync-scripts](/docs/messages/no-sync-scripts) | Prevent synchronous scripts. |
-|  | [@next/next/no-title-in-document-head](/docs/messages/no-title-in-document-head) | Prevent usage of `<title>` with `Head` component from `next/document`. |
-|  | @next/next/no-typos | Prevent common typos in [Next.js's data fetching functions](/docs/pages/building-your-application/data-fetching) |
-|  | [@next/next/no-unwanted-polyfillio](/docs/messages/no-unwanted-polyfillio) | Prevent duplicate polyfills from Polyfill.io. |
+|  | [@next/next/google-font-display](../../../../messages/google-font-display/index.md) | Enforce font-display behavior with Google Fonts. |
+|  | [@next/next/google-font-preconnect](../../../../messages/google-font-preconnect/index.md) | Ensure `preconnect` is used with Google Fonts. |
+|  | [@next/next/inline-script-id](../../../../messages/inline-script-id/index.md) | Enforce `id` attribute on `next/script` components with inline content. |
+|  | [@next/next/next-script-for-ga](../../../../messages/next-script-for-ga/index.md) | Prefer `next/script` component when using the inline script for Google Analytics. |
+|  | [@next/next/no-assign-module-variable](../../../../messages/no-assign-module-variable/index.md) | Prevent assignment to the `module` variable. |
+|  | [@next/next/no-async-client-component](../../../../messages/no-async-client-component/index.md) | Prevent Client Components from being async functions. |
+|  | [@next/next/no-before-interactive-script-outside-document](../../../../messages/no-before-interactive-script-outside-document/index.md) | Prevent usage of `next/script`'s `beforeInteractive` strategy outside of `pages/_document.js`. |
+|  | [@next/next/no-css-tags](../../../../messages/no-css-tags/index.md) | Prevent manual stylesheet tags. |
+|  | [@next/next/no-document-import-in-page](../../../../messages/no-document-import-in-page/index.md) | Prevent importing `next/document` outside of `pages/_document.js`. |
+|  | [@next/next/no-duplicate-head](../../../../messages/no-duplicate-head/index.md) | Prevent duplicate usage of `<Head>` in `pages/_document.js`. |
+|  | [@next/next/no-head-element](../../../../messages/no-head-element/index.md) | Prevent usage of `<head>` element. |
+|  | [@next/next/no-head-import-in-document](../../../../messages/no-head-import-in-document/index.md) | Prevent usage of `next/head` in `pages/_document.js`. |
+|  | [@next/next/no-html-link-for-pages](../../../../messages/no-html-link-for-pages/index.md) | Prevent usage of `<a>` elements to navigate to internal Next.js pages. |
+|  | [@next/next/no-img-element](../../../../messages/no-img-element/index.md) | Prevent usage of `<img>` element due to slower LCP and higher bandwidth. |
+|  | [@next/next/no-page-custom-font](../../../../messages/no-page-custom-font/index.md) | Prevent page-only custom fonts. |
+|  | [@next/next/no-script-component-in-head](../../../../messages/no-script-component-in-head/index.md) | Prevent usage of `next/script` in `next/head` component. |
+|  | [@next/next/no-styled-jsx-in-document](../../../../messages/no-styled-jsx-in-document/index.md) | Prevent usage of `styled-jsx` in `pages/_document.js`. |
+|  | [@next/next/no-sync-scripts](../../../../messages/no-sync-scripts/index.md) | Prevent synchronous scripts. |
+|  | [@next/next/no-title-in-document-head](../../../../messages/no-title-in-document-head/index.md) | Prevent usage of `<title>` with `Head` component from `next/document`. |
+|  | @next/next/no-typos | Prevent common typos in [Next.js's data fetching functions](../../../building-your-application/data-fetching/index.md) |
+|  | [@next/next/no-unwanted-polyfillio](../../../../messages/no-unwanted-polyfillio/index.md) | Prevent duplicate polyfills from Polyfill.io. |
 
 We recommend using an appropriate [integration](https://eslint.org/docs/user-guide/integrations#editors) to view warnings and errors directly in your code editor during development.
 
@@ -240,7 +240,7 @@ export default eslintConfig
 
 `eslint-config-next/core-web-vitals` upgrades certain lint rules in `@next/eslint-plugin-next` from warnings to errors to help improve your [Core Web Vitals](https://web.dev/vitals/) metrics.
 
-> The `eslint-config-next/core-web-vitals` configuration is automatically included for new applications built with [Create Next App](/docs/app/api-reference/cli/create-next-app).
+> The `eslint-config-next/core-web-vitals` configuration is automatically included for new applications built with [Create Next App](../../../../app/api-reference/cli/create-next-app/index.md).
 
 ### With TypeScript[](#with-typescript)
 
@@ -435,6 +435,6 @@ When you spread `...nextConfig`, you're adding multiple config objects that incl
 
 | Version | Changes |
 | --- | --- |
-| `v16.0.0` | `next lint` and the `eslint` next.config.js option were removed in favor of the ESLint CLI. A [codemod](/docs/app/guides/upgrading/codemods#migrate-from-next-lint-to-eslint-cli) is available to help you migrate. |
+| `v16.0.0` | `next lint` and the `eslint` next.config.js option were removed in favor of the ESLint CLI. A [codemod](../../../../app/guides/upgrading/codemods/index.md#migrate-from-next-lint-to-eslint-cli) is available to help you migrate. |
 
 Was this helpful?

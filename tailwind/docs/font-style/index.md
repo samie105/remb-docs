@@ -10,8 +10,8 @@ content_hash: "0505f6130d4de83e93d017dc8ec100612c0d5e0db976e9277c8c167b838344bf"
 menu_path: ["font-style"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../font-smoothing/index.md", "title": "font-smoothing"}
-nav_next: {"path": "../font-weight/index.md", "title": "font-weight"}
+nav_prev: {"path": "tailwind/docs/font-smoothing/index.md", "title": "font-smoothing"}
+nav_next: {"path": "tailwind/docs/font-weight/index.md", "title": "font-weight"}
 ---
 
 # font-style
@@ -52,7 +52,7 @@ Prefix a `font-style` utility with a breakpoint variant like `md:` to only apply
 <p class="italic md:not-italic ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

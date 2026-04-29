@@ -11,8 +11,8 @@ menu_path: ["Docs Contribution Guide"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Next.js Community"}
-nav_next: {"path": "../rspack/index.md", "title": "Rspack Integration"}
+nav_prev: {"path": "nextjs/docs/community/index.md", "title": "Next.js Community"}
+nav_next: {"path": "nextjs/docs/community/rspack/index.md", "title": "Rspack Integration"}
 ---
 
 # Docs Contribution Guide
@@ -86,7 +86,7 @@ The docs use **file-system routing**. Each folder and files inside [`/docs`](htt
 
 The file structure reflects the navigation that you see on the site, and by default, navigation items are sorted alphabetically. However, we can change the order of the items by prepending a two-digit number (`00-`) to the folder or file name.
 
-For example, in the [functions API Reference](/docs/app/api-reference/functions), the pages are sorted alphabetically because it makes it easier for developers to find a specific function:
+For example, in the [functions API Reference](../../app/api-reference/functions/index.md), the pages are sorted alphabetically because it makes it easier for developers to find a specific function:
 
 ```
 04-functions
@@ -96,7 +96,7 @@ For example, in the [functions API Reference](/docs/app/api-reference/functions)
 └── ...
 ```
 
-But, in the [app router section](/docs/app), the files are prefixed with a two-digit number, sorted in the order developers should learn these concepts:
+But, in the [app router section](../../app/index.md), the files are prefixed with a two-digit number, sorted in the order developers should learn these concepts:
 
 ```
 01-getting-started

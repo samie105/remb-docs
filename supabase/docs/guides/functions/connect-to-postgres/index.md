@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:55.676Z"
 content_hash: "6a7085af25778f23a8ed0c78d8f3b4986f7ff58f2cb4d7dcdd9b71edda312f00"
 menu_path: ["Edge Functions","Edge Functions","Integrations","Integrations","Supabase Database (Postgres)","Supabase Database (Postgres)"]
 section_path: ["Edge Functions","Edge Functions","Integrations","Integrations","Supabase Database (Postgres)","Supabase Database (Postgres)"]
-nav_prev: {"path": "../compression/index.md", "title": "Handling Compressed Requests"}
-nav_next: {"path": "../cors/index.md", "title": "CORS (Cross-Origin Resource Sharing) support for Invoking from the browser"}
+nav_prev: {"path": "supabase/docs/guides/functions/compression/index.md", "title": "Handling Compressed Requests"}
+nav_next: {"path": "supabase/docs/guides/functions/cors/index.md", "title": "CORS (Cross-Origin Resource Sharing) support for Invoking from the browser"}
 ---
 
 # 
@@ -89,7 +89,7 @@ Deployed edge functions are pre-configured to use SSL for connections to the Sup
 If you want to use SSL connections during local development, follow these steps:
 
 1.  Download the SSL certificate from [Database Settings](/dashboard/project/_/database/settings)
-2.  Add to your [local .env file](/docs/guides/functions/secrets), add these two variables:
+2.  Add to your [local .env file](../secrets/index.md), add these two variables:
 
 ```
 1SSL_CERT_FILE=/path/to/cert.crt # set the path to the downloaded cert2DENO_TLS_CA_STORE=mozilla,system

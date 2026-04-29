@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:46.009Z"
 content_hash: "2381c909a2cbcf612098ff198052e71d84636b34467c86cd8d4c121bc1ca8c6c"
 menu_path: ["Internationalization API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-env/index.md", "title": "Environment Variables API Reference"}
-nav_next: {"path": "../astro-middleware/index.md", "title": "Middleware API Reference"}
+nav_prev: {"path": "astro/en/reference/modules/astro-env/index.md", "title": "Environment Variables API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-middleware/index.md", "title": "Middleware API Reference"}
 ---
 
 # Internationalization API Reference
@@ -21,14 +21,14 @@ This module provides functions to help you create URLs using your project’s co
 
 Creating routes for your project with the i18n router will depend on certain configuration values you have set that affect your page routes. When creating routes with these functions, be sure to take into account your individual settings for:
 
-*   [`base`](/en/reference/configuration-reference/#base)
-*   [`trailingSlash`](/en/reference/configuration-reference/#trailingslash)
-*   [`build.format`](/en/reference/configuration-reference/#buildformat)
-*   [`site`](/en/reference/configuration-reference/#site)
+*   [`base`](../../configuration-reference/index.md#base)
+*   [`trailingSlash`](../../configuration-reference/index.md#trailingslash)
+*   [`build.format`](../../configuration-reference/index.md#buildformat)
+*   [`site`](../../configuration-reference/index.md#site)
 
 Also, note that the returned URLs created by these functions for your `defaultLocale` will reflect your `i18n.routing` configuration.
 
-For features and usage examples, [see our i18n routing guide](/en/guides/internationalization/).
+For features and usage examples, [see our i18n routing guide](../../../guides/internationalization/index.md).
 
 ## Imports from `astro:i18n`
 
@@ -87,7 +87,7 @@ Use this like [`getRelativeLocaleUrl`](#getrelativelocaleurl) to return a list o
 
 **Type:** `(path?: string, options?: GetLocaleOptions) => string[]`
 
-Use this like [`getAbsoluteLocaleUrl`](/en/guides/internationalization/#custom-locale-paths) to return a list of absolute paths for all the locales.
+Use this like [`getAbsoluteLocaleUrl`](../../../guides/internationalization/index.md#custom-locale-paths) to return a list of absolute paths for all the locales.
 
 ### `getPathByLocale()`
 
@@ -95,7 +95,7 @@ Use this like [`getAbsoluteLocaleUrl`](/en/guides/internationalization/#custom-l
 
 **Type:** `(locale: string) => string`
 
-A function that returns the `path` associated to one or more `codes` when [custom locale paths](/en/guides/internationalization/#custom-locale-paths) are configured.
+A function that returns the `path` associated to one or more `codes` when [custom locale paths](../../../guides/internationalization/index.md#custom-locale-paths) are configured.
 
 ```
 export default defineConfig({  i18n: {    locales: ["es", "en", {      path: "french",      codes: ["fr", "fr-BR", "fr-CA"]    }]  }})
@@ -146,7 +146,7 @@ export const onRequest = defineMiddleware((context, next) => {  if (context.url.
 
 **Added in:** `astro@4.6.0`
 
-A function that allows you to use your [`i18n.fallback` configuration](/en/reference/configuration-reference/#i18nfallback) in your own middleware.
+A function that allows you to use your [`i18n.fallback` configuration](../../configuration-reference/index.md#i18nfallback) in your own middleware.
 
 ```
 import { defineMiddleware } from "astro:middleware";import { redirectToFallback } from "astro:i18n";
@@ -280,4 +280,4 @@ export default defineConfig({  i18n: {    locales: [      { codes: ["it-VT", "it
 toPaths(i18n!.locales); // ["italiano", "es"]---
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -10,8 +10,8 @@ content_hash: "bafb9a1dcff6264e2046b9524b8576d6c04e3efb2d151a29baf935b12f115ba2"
 menu_path: ["Drizzle <> Vercel Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-neon/index.md", "title": "Drizzle <> Neon Postgres"}
-nav_next: {"path": "../connect-prisma-postgres/index.md", "title": "Drizzle <> Prisma Postgres"}
+nav_prev: {"path": "drizzle/docs/connect-neon/index.md", "title": "Drizzle <> Neon Postgres"}
+nav_next: {"path": "drizzle/docs/connect-prisma-postgres/index.md", "title": "Drizzle <> Prisma Postgres"}
 ---
 
 According to their **[official website](https://vercel.com/docs/storage/vercel-postgres)**, Vercel Postgres is a serverless SQL database designed to integrate with Vercel Functions.

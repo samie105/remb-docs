@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:07:30.544Z"
 content_hash: "315c21aa10e56ee8ac55657f39d4044a9f22c87b0327017c09406f14b32332ae"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Error handling","→","Error handling"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Error handling","→","Error handling"]
-nav_prev: {"path": "../connect/index.md", "title": "Connect to the server"}
-nav_next: {"path": "../prob/index.md", "title": "Probabilistic data types"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/connect/index.md", "title": "Connect to the server"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/prob/index.md", "title": "Probabilistic data types"}
 ---
 
 # Error handling
 
 Learn how to handle errors when using node-redis.
 
-node-redis uses [**promises**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) for error handling. Most Redis JavaScript examples throughout the documentation mainly show the "happy path" and omit error handling for brevity. This page shows how to apply error handling techniques in node-redis for real world code. For an overview of some common general error types and strategies for handling them, see [Error handling](/docs/latest/develop/clients/error-handling/). See also [Production usage](/docs/latest/develop/clients/nodejs/produsage/) for more information on connection management, timeouts, and other aspects of app reliability.
+node-redis uses [**promises**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) for error handling. Most Redis JavaScript examples throughout the documentation mainly show the "happy path" and omit error handling for brevity. This page shows how to apply error handling techniques in node-redis for real world code. For an overview of some common general error types and strategies for handling them, see [Error handling](/docs/latest/develop/clients/error-handling/). See also [Production usage](../produsage/index.md) for more information on connection management, timeouts, and other aspects of app reliability.
 
 ## Common error types
 
@@ -191,7 +191,7 @@ async function getWithRetry(key, { attempts = 3, baseDelayMs = 100 } = {}) {
 }
 ```
 
-Note that you can also configure node-redis to reconnect to the server automatically when the connection is lost. See [Reconnect after disconnection](/docs/latest/develop/clients/nodejs/connect/#reconnect-after-disconnection) for more information.
+Note that you can also configure node-redis to reconnect to the server automatically when the connection is lost. See [Reconnect after disconnection](../connect/index.md#reconnect-after-disconnection) for more information.
 
 ### Pattern 4: Log and continue
 
@@ -212,6 +212,6 @@ try {
 ## See also
 
 *   [Error handling](/docs/latest/develop/clients/error-handling/)
-*   [Production usage](/docs/latest/develop/clients/nodejs/produsage/)
+*   [Production usage](../produsage/index.md)
 
 ## On this page

@@ -10,8 +10,8 @@ content_hash: "b7a50818bcafd199a2e7a2760ca019b6973b81ea762df2561a6bf60aeff384f2"
 menu_path: ["process - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../perf_hooks/index.md", "title": "perf_hooks - Node documentation"}
-nav_next: {"path": "../punycode/index.md", "title": "punycode - Node documentation"}
+nav_prev: {"path": "deno/api/node/perf_hooks/index.md", "title": "perf_hooks - Node documentation"}
+nav_next: {"path": "deno/api/node/punycode/index.md", "title": "punycode - Node documentation"}
 ---
 
 ### Usage in Deno

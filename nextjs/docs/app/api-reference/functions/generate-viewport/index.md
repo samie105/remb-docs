@@ -11,8 +11,8 @@ menu_path: ["generateViewport"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../generate-static-params/index.md", "title": "generateStaticParams"}
-nav_next: {"path": "../headers/index.md", "title": "headers"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/generate-static-params/index.md", "title": "generateStaticParams"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/headers/index.md", "title": "headers"}
 ---
 
 # generateViewport
@@ -25,7 +25,7 @@ You can customize the initial viewport of the page with the static `viewport` ob
 > 
 > -   The `viewport` object and `generateViewport` function exports are **only supported in Server Components**.
 > -   You cannot export both the `viewport` object and `generateViewport` function from the same route segment.
-> -   If you're coming from migrating `metadata` exports, you can use [metadata-to-viewport-export codemod](/docs/app/guides/upgrading/codemods#metadata-to-viewport-export) to update your changes.
+> -   If you're coming from migrating `metadata` exports, you can use [metadata-to-viewport-export codemod](../../../guides/upgrading/codemods/index.md#metadata-to-viewport-export) to update your changes.
 
 ## The `viewport` object[](#the-viewport-object)
 
@@ -61,7 +61,7 @@ export function generateViewport({ params }) {
 }
 ```
 
-In TypeScript, the `params` argument can be typed via [`PageProps<'/route'>`](/docs/app/api-reference/file-conventions/page#page-props-helper) or [`LayoutProps<'/route'>`](/docs/app/api-reference/file-conventions/layout#layout-props-helper) depending on where `generateViewport` is defined.
+In TypeScript, the `params` argument can be typed via [`PageProps<'/route'>`](../../file-conventions/page/index.md#page-props-helper) or [`LayoutProps<'/route'>`](../../file-conventions/layout/index.md#layout-props-helper) depending on where `generateViewport` is defined.
 
 > **Good to know**:
 > 
@@ -171,7 +171,7 @@ export const viewport: Viewport = {
 
 ## With Cache Components[](#with-cache-components)
 
-When [Cache Components](/docs/app/getting-started/caching) is enabled, `generateViewport` follows the same rules as other components. If viewport accesses runtime data (`cookies()`, `headers()`, `params`, `searchParams`) or performs uncached data fetching, it defers to request time.
+When [Cache Components](../../../getting-started/caching/index.md) is enabled, `generateViewport` follows the same rules as other components. If viewport accesses runtime data (`cookies()`, `headers()`, `params`, `searchParams`) or performs uncached data fetching, it defers to request time.
 
 Unlike metadata, viewport cannot be streamed because it affects initial page load UI. If `generateViewport` defers to request time, the page would need to block until resolved.
 
@@ -215,11 +215,11 @@ export default function RootLayout({ children }) {
 
 Caching is preferred because it allows static shell generation. Wrapping the document `body` in Suspense means there is no static shell or content to immediately send when a request arrives, making the entire route block until ready on every request.
 
-> **Good to know**: Use [multiple root layouts](/docs/app/api-reference/file-conventions/layout#root-layout) to isolate fully dynamic viewport to specific routes, while still letting other routes in your application generate a static shell.
+> **Good to know**: Use [multiple root layouts](../../file-conventions/layout/index.md#root-layout) to isolate fully dynamic viewport to specific routes, while still letting other routes in your application generate a static shell.
 
 ## Types[](#types)
 
-You can add type safety to your viewport object by using the `Viewport` type. If you are using the [built-in TypeScript plugin](/docs/app/api-reference/config/typescript) in your IDE, you do not need to manually add the type, but you can still explicitly add it if you want.
+You can add type safety to your viewport object by using the `Viewport` type. If you are using the [built-in TypeScript plugin](../../config/typescript/index.md) in your IDE, you do not need to manually add the type, but you can still explicitly add it if you want.
 
 ### `viewport` object[](#viewport-object)
 
@@ -291,18 +291,18 @@ View all the Metadata API options.
 
 API documentation for the metadata file conventions.
 
-](/docs/app/api-reference/file-conventions/metadata)[
+](../../file-conventions/metadata/index.md)[
 
 ### Caching
 
 Learn how to cache data and UI in Next.js
 
-](/docs/app/getting-started/caching)[
+](../../../getting-started/caching/index.md)[
 
 ### cacheComponents
 
 Learn how to enable the cacheComponents flag in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheComponents)
+](../../config/next-config-js/cacheComponents/index.md)
 
 Was this helpful?

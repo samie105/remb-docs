@@ -11,8 +11,8 @@ menu_path: ["viewTransition"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../useLightningcss/index.md", "title": "useLightningcss"}
-nav_next: {"path": "../webpack/index.md", "title": "Custom Webpack Config"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/useLightningcss/index.md", "title": "useLightningcss"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/webpack/index.md", "title": "Custom Webpack Config"}
 ---
 
 # viewTransition
@@ -50,7 +50,7 @@ import { ViewTransition } from 'react'
 
 ### Live Demo[](#live-demo)
 
-Check out the [View Transitions Demo](https://react-view-transitions-demo.labs.vercel.dev) to see this feature in action, or read the [designing view transitions guide](/docs/app/guides/view-transitions) for a step-by-step walkthrough.
+Check out the [View Transitions Demo](https://react-view-transitions-demo.labs.vercel.dev) to see this feature in action, or read the [designing view transitions guide](../../../../guides/view-transitions/index.md) for a step-by-step walkthrough.
 
 The View Transitions API is a baseline web standard, and browser support continues to expand. As React's [`<ViewTransition>`](https://react.dev/reference/react/ViewTransition) component evolves, more transition patterns and use cases will become available.
 

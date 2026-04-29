@@ -10,8 +10,8 @@ content_hash: "9afde5caada6edbbac903cc46f104488112cb47604bf8489457a07d3ca1bb730"
 menu_path: ["scroll-snap-stop"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../scroll-snap-align/index.md", "title": "scroll-snap-align"}
-nav_next: {"path": "../scroll-snap-type/index.md", "title": "scroll-snap-type"}
+nav_prev: {"path": "tailwind/docs/scroll-snap-align/index.md", "title": "scroll-snap-align"}
+nav_next: {"path": "tailwind/docs/scroll-snap-type/index.md", "title": "scroll-snap-type"}
 ---
 
 Utilities for controlling whether you can skip past possible snap positions.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:55.587Z"
 content_hash: "332a4ce890d8f75f993900205618ab9f5222f848ff261a9f3a614b141baf9ea6"
 menu_path: ["Compress and decompress data with gzip"]
 section_path: []
-nav_prev: {"path": "../file-url-to-path/index.md", "title": "Convert a file URL to an absolute path"}
-nav_next: {"path": "../hash-a-password/index.md", "title": "Hash a password"}
+nav_prev: {"path": "bun/docs/guides/util/file-url-to-path/index.md", "title": "Convert a file URL to an absolute path"}
+nav_next: {"path": "bun/docs/guides/util/hash-a-password/index.md", "title": "Hash a password"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../hash-a-password/index.md", "title": "Hash a password"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use `Bun.gzipSync()` to compress a `Uint8Array` with gzip.
 
@@ -48,7 +48,7 @@ const decompressed = Bun.gunzipSync(compressed);
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -60,10 +60,10 @@ Encode and decode base64 strings
 
 Previous
 
-](/docs/guides/util/base64)[
+](../base64/index.md)[
 
 Compress and decompress data with DEFLATE
 
 Next
 
-](/docs/guides/util/deflate)
+](../deflate/index.md)

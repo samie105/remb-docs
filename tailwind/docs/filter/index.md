@@ -10,8 +10,8 @@ content_hash: "71f88212b74635631f01ea0eef6bbf35bc98a3baf89fcf6c50af327645c7b710"
 menu_path: ["filter"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../mask-type/index.md", "title": "mask-type"}
-nav_next: {"path": "../filter-blur/index.md", "title": "filter: blur()"}
+nav_prev: {"path": "tailwind/docs/mask-type/index.md", "title": "mask-type"}
+nav_next: {"path": "tailwind/docs/filter-blur/index.md", "title": "filter: blur()"}
 ---
 
 # filter
@@ -53,7 +53,7 @@ combined
 <img class="blur-xs" src="/img/mountains.jpg" /><img class="grayscale" src="/img/mountains.jpg" /><img class="blur-xs grayscale" src="/img/mountains.jpg" />
 ```
 
-You can combine the following filter utilities: [blur](/docs/filter-blur), [brightness](/docs/filter-brightness), [contrast](/docs/filter-contrast), [drop-shadow](/docs/filter-drop-shadow), [grayscale](/docs/filter-grayscale), [hue-rotate](/docs/filter-hue-rotate), [invert](/docs/filter-invert), [saturate](/docs/filter-saturate), and [sepia](/docs/filter-sepia).
+You can combine the following filter utilities: [blur](../filter-blur/index.md), [brightness](../filter-brightness/index.md), [contrast](../filter-contrast/index.md), [drop-shadow](../filter-drop-shadow/index.md), [grayscale](../filter-grayscale/index.md), [hue-rotate](../filter-hue-rotate/index.md), [invert](../filter-invert/index.md), [saturate](../filter-saturate/index.md), and [sepia](../filter-sepia/index.md).
 
 Use the `filter-none` utility to remove all of the filters applied to an element:
 
@@ -81,7 +81,7 @@ Prefix a `filter` utility with a variant like `hover:*` to only apply the utilit
 <img class="blur-sm hover:filter-none ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Prefix a `filter` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -89,7 +89,7 @@ Prefix a `filter` utility with a breakpoint variant like `md:` to only apply the
 <img class="blur-sm md:filter-none ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

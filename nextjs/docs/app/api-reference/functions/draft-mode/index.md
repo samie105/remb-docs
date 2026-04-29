@@ -11,15 +11,15 @@ menu_path: ["draftMode"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../cookies/index.md", "title": "cookies"}
-nav_next: {"path": "../fetch/index.md", "title": "fetch"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/cookies/index.md", "title": "cookies"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/fetch/index.md", "title": "fetch"}
 ---
 
 # draftMode
 
 Last updated April 23, 2026
 
-`draftMode` is an **async** function allows you to enable and disable [Draft Mode](/docs/app/guides/draft-mode), as well as check if Draft Mode is enabled in a [Server Component](/docs/app/getting-started/server-and-client-components).
+`draftMode` is an **async** function allows you to enable and disable [Draft Mode](../../../guides/draft-mode/index.md), as well as check if Draft Mode is enabled in a [Server Component](../../../getting-started/server-and-client-components/index.md).
 
 app/page.ts
 
@@ -54,7 +54,7 @@ The following methods and properties are available:
 
 ### Enabling Draft Mode[](#enabling-draft-mode)
 
-To enable Draft Mode, create a new [Route Handler](/docs/app/api-reference/file-conventions/route) and call the `enable()` method:
+To enable Draft Mode, create a new [Route Handler](../../file-conventions/route/index.md) and call the `enable()` method:
 
 app/draft/route.ts
 
@@ -74,7 +74,7 @@ export async function GET(request: Request) {
 
 By default, the Draft Mode session ends when the browser is closed.
 
-To disable Draft Mode manually, call the `disable()` method in your [Route Handler](/docs/app/api-reference/file-conventions/route):
+To disable Draft Mode manually, call the `disable()` method in your [Route Handler](../../file-conventions/route/index.md):
 
 app/draft/route.ts
 
@@ -90,7 +90,7 @@ export async function GET(request: Request) {
 }
 ```
 
-Then, send a request to invoke the Route Handler. If calling the route using the [`<Link>` component](/docs/app/api-reference/components/link), you must pass `prefetch={false}` to prevent accidentally deleting the cookie on prefetch.
+Then, send a request to invoke the Route Handler. If calling the route using the [`<Link>` component](../../components/link/index.md), you must pass `prefetch={false}` to prevent accidentally deleting the cookie on prefetch.
 
 ### Checking if Draft Mode is enabled[](#checking-if-draft-mode-is-enabled)
 
@@ -118,7 +118,7 @@ export default async function Page() {
 
 | Version | Changes |
 | --- | --- |
-| `v15.0.0-RC` | `draftMode` is now an async function. A [codemod](/docs/app/guides/upgrading/codemods#150) is available. |
+| `v15.0.0-RC` | `draftMode` is now an async function. A [codemod](../../../guides/upgrading/codemods/index.md#150) is available. |
 | `v13.4.0` | `draftMode` introduced. |
 
 ## Next Steps
@@ -131,6 +131,6 @@ Learn how to use Draft Mode with this step-by-step guide.
 
 Next.js has draft mode to toggle between static and dynamic pages. You can learn how it works with App Router here.
 
-](/docs/app/guides/draft-mode)
+](../../../guides/draft-mode/index.md)
 
 Was this helpful?

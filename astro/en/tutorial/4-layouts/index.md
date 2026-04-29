@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:39.796Z"
 content_hash: "c857a1f1c486cbd5b98aa8149edb7d2d88d2fef3a922d715964ba9e656d05a2a"
 menu_path: ["Check in: Unit 4 - Layouts"]
 section_path: []
-nav_prev: {"path": "../3-components/index.md", "title": "Check in: Unit 3 - Components"}
-nav_next: {"path": "../5-astro-api/index.md", "title": "Check in: Unit 5 - Astro API"}
+nav_prev: {"path": "astro/en/tutorial/3-components/index.md", "title": "Check in: Unit 3 - Components"}
+nav_next: {"path": "astro/en/tutorial/5-astro-api/index.md", "title": "Check in: Unit 5 - Astro API"}
 ---
 
 # Check in: Unit 4 - Layouts
@@ -36,4 +36,4 @@ To do this, you will:
 
  *    I am ready to take my page design to the next level with layouts!
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

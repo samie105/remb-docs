@@ -11,8 +11,8 @@ menu_path: ["TypeORM"]
 section_path: []
 tab_variants: ["find with select","Model","findMany with select","Model","find with relations","Models","find with relations","Models","User","Post","find with select","Model","Create with save","Create with insert","Model","Create with create","Model","Using include","Fluent API","Using relations","Using JOIN","Using eager relations","Using save","Using create","Using insert","Using delete","Using remove","Using delete","Using remove"]
 content_language: "en"
-nav_prev: {"path": "../prisma-and-sequelize/index.md", "title": "Sequelize"}
-nav_next: {"path": "../../dev-environment/editor-setup/index.md", "title": "Editor setup"}
+nav_prev: {"path": "prisma/docs/orm/more/comparisons/prisma-and-sequelize/index.md", "title": "Sequelize"}
+nav_next: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
 ---
 
 This page compares Prisma ORM and [TypeORM](https://typeorm.io/). If you want to learn how to migrate from TypeORM to Prisma ORM, check out this [guide](https://www.prisma.io/docs/guides/switch-to-prisma-orm/from-sql-orms).

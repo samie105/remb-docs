@@ -10,8 +10,8 @@ content_hash: "a174b9844fdd4c3f2f88aba042f09d47dfdd4fe79431defc9fe90eb31a5762b4"
 menu_path: ["Drizzle with Vercel Edge Functions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
-nav_next: {"path": "../drizzle-with-xata/index.md", "title": "Drizzle with Xata"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-xata/index.md", "title": "Drizzle with Xata"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Vercel Functions](https://vercel.com/docs/functions) in [Edge runtime](https://vercel.com/docs/functions/runtimes/edge-runtime).

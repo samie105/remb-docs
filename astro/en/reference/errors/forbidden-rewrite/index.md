@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:42.543Z"
 content_hash: "cb8bf659a731dfa196e55d6ed8464d6dadd3498fdcdbdb1010c4cf7daf30be75"
 menu_path: ["Forbidden rewrite to a static route."]
 section_path: []
-nav_prev: {"path": "../font-family-not-found/index.md", "title": "Font family not found"}
-nav_next: {"path": "../generate-content-types-error/index.md", "title": "Failed to generate content types."}
+nav_prev: {"path": "astro/en/reference/errors/font-family-not-found/index.md", "title": "Font family not found"}
+nav_next: {"path": "astro/en/reference/errors/generate-content-types-error/index.md", "title": "Failed to generate content types."}
 ---
 
 # Forbidden rewrite to a static route.
@@ -25,4 +25,4 @@ nav_next: {"path": "../generate-content-types-error/index.md", "title": "Failed 
 
 `Astro.rewrite()` can’t be used to rewrite an on-demand route with a static route when using the `"server"` output.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

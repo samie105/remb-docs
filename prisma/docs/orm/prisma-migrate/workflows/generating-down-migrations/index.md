@@ -11,8 +11,8 @@ menu_path: ["Generating down migrations"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../development-and-production/index.md", "title": "Development and production"}
-nav_next: {"path": "../native-database-functions/index.md", "title": "Native database functions"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/development-and-production/index.md", "title": "Development and production"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/native-database-functions/index.md", "title": "Native database functions"}
 ---
 
 Workflows

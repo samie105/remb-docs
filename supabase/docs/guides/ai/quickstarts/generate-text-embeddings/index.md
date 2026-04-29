@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:12.503Z"
 content_hash: "c72248b0e34f450bbf56263f55be78440feabb5bb70e29070a31299b40b5919f"
 menu_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Generate Embeddings","Generate Embeddings"]
 section_path: ["AI & Vectors","AI & Vectors","JavaScript Examples","JavaScript Examples","Generate Embeddings","Generate Embeddings"]
-nav_prev: {"path": "../face-similarity/index.md", "title": "Face similarity search"}
-nav_next: {"path": "../hello-world/index.md", "title": "Creating and managing collections"}
+nav_prev: {"path": "supabase/docs/guides/ai/quickstarts/face-similarity/index.md", "title": "Face similarity search"}
+nav_next: {"path": "supabase/docs/guides/ai/quickstarts/hello-world/index.md", "title": "Creating and managing collections"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Generate text embeddings using Edge Functions.
 
 * * *
 
-This guide will walk you through how to generate high quality text embeddings in [Edge Functions](/docs/guides/functions) using its built-in AI inference API, so no external API is required.
+This guide will walk you through how to generate high quality text embeddings in [Edge Functions](../../../functions/index.md) using its built-in AI inference API, so no external API is required.
 
 ## Build the Edge Function[#](#build-the-edge-function)
 
@@ -102,5 +102,5 @@ Be sure to replace `ANON_KEY` with your project's anonymous key. You can get thi
 
 ## Next steps[#](#next-steps)
 
-*   Learn more about [embedding concepts](/docs/guides/ai/concepts)
-*   [Store your embeddings](/docs/guides/ai/vector-columns) in a database
+*   Learn more about [embedding concepts](../../concepts/index.md)
+*   [Store your embeddings](../../vector-columns/index.md) in a database

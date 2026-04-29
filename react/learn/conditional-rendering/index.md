@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:03.999Z"
 content_hash: "84e0b7b48751da16529df3d7af61d133a2d1c5a2ab03468c97db3886d01f6918"
 menu_path: ["Conditional Rendering"]
 section_path: []
-nav_prev: {"path": "../passing-props-to-a-component/index.md", "title": "Passing Props to a Component"}
-nav_next: {"path": "../rendering-lists/index.md", "title": "Rendering Lists"}
+nav_prev: {"path": "react/learn/passing-props-to-a-component/index.md", "title": "Passing Props to a Component"}
+nav_next: {"path": "react/learn/rendering-lists/index.md", "title": "Rendering Lists"}
 ---
 
 Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like `if` statements, `&&`, and `? :` operators.

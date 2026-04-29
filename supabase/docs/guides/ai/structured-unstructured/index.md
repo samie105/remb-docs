@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:29.396Z"
 content_hash: "b762e946718e9ce804df7426e38f0fa134ff52fe905ce68c731f75b8cdc5dacc"
 menu_path: ["AI & Vectors","AI & Vectors","Structured & unstructured","Structured & unstructured"]
 section_path: ["AI & Vectors","AI & Vectors","Structured & unstructured","Structured & unstructured"]
-nav_prev: {"path": "../semantic-search/index.md", "title": "Semantic search"}
-nav_next: {"path": "../vecs-python-client/index.md", "title": "Python client"}
+nav_prev: {"path": "supabase/docs/guides/ai/semantic-search/index.md", "title": "Semantic search"}
+nav_next: {"path": "supabase/docs/guides/ai/vecs-python-client/index.md", "title": "Python client"}
 ---
 
 # 
@@ -31,7 +31,7 @@ Most vector stores treat metadata associated with embeddings like NoSQL, unstruc
 1create table docs (2  id uuid primary key,3  embedding extensions.vector(3),4  content text,5  url text6);78insert into docs9  (id, embedding, content, url)10values11  ('79409372-7556-4ccc-ab8f-5786a6cfa4f7', array[0.1, 0.2, 0.3], 'Hello world', '/hello-world');
 ```
 
-Notice that we've associated two pieces of metadata, `content` and `url`, with the embedding. Those fields can be filtered, constrained, indexed, and generally operated on using the full power of SQL. Structured metadata fits naturally with a traditional Supabase application, and can be managed via database [migrations](/docs/guides/deployment/database-migrations).
+Notice that we've associated two pieces of metadata, `content` and `url`, with the embedding. Those fields can be filtered, constrained, indexed, and generally operated on using the full power of SQL. Structured metadata fits naturally with a traditional Supabase application, and can be managed via database [migrations](../../deployment/database-migrations/index.md).
 
 ## Unstructured[#](#unstructured)
 

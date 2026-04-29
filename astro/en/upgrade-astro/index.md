@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:06.379Z"
 content_hash: "bbdd1248c651f8f693f4a7498f1a617eff2201c721ca2f52cc450978c27b364f"
 menu_path: ["Upgrade Astro"]
 section_path: []
-nav_prev: {"path": "../guides/sessions/index.md", "title": "Sessions"}
-nav_next: {"path": "../guides/upgrade-to/v6/index.md", "title": "Upgrade to Astro v6"}
+nav_prev: {"path": "astro/en/guides/sessions/index.md", "title": "Sessions"}
+nav_next: {"path": "astro/en/guides/upgrade-to/v6/index.md", "title": "Upgrade to Astro v6"}
 ---
 
 # Upgrade Astro
@@ -87,12 +87,12 @@ The main Astro documentation pages are always **accurate for the latest released
 
 See the upgrade guides below for an explanation of changes, comparing the new version to the old. The upgrade guides include everything that could require you to change your own code: breaking changes, deprecations, feature removals and replacements as well as updated usage guidance. Each change to Astro includes a “What should I do?” section to help you successfully update your project code.
 
-*   [Upgrade to v6](/en/guides/upgrade-to/v6/)
-*   [Upgrade to v5](/en/guides/upgrade-to/v5/)
-*   [Upgrade to v4](/en/guides/upgrade-to/v4/)
-*   [Upgrade to v3](/en/guides/upgrade-to/v3/)
-*   [Upgrade to v2](/en/guides/upgrade-to/v2/)
-*   [Upgrade to v1](/en/guides/upgrade-to/v1/)
+*   [Upgrade to v6](../guides/upgrade-to/v6/index.md)
+*   [Upgrade to v5](../guides/upgrade-to/v5/index.md)
+*   [Upgrade to v4](../guides/upgrade-to/v4/index.md)
+*   [Upgrade to v3](../guides/upgrade-to/v3/index.md)
+*   [Upgrade to v2](../guides/upgrade-to/v2/index.md)
+*   [Upgrade to v1](../guides/upgrade-to/v1/index.md)
 
 ### Older docs (unmaintained)
 
@@ -208,4 +208,4 @@ The following rules define when Astro may deprecate, drop, or add support for ve
 
 The Core team will provide extended maintenance **for security fixes only** for one previous major version. This means that if the current major is `v4.*`, the Core team will back port security fixes and issue a new `v3.*` release.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

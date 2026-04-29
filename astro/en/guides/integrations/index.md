@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:11.768Z"
 content_hash: "15fe91fdd119d243d2ba6a9e459bc7f9ffdd3e9c0e9a4330ccc78fcd2cf11ae5"
 menu_path: ["Working with integrations"]
 section_path: []
-nav_prev: {"path": "../environment-variables/index.md", "title": "Using environment variables"}
-nav_next: {"path": "../build-with-ai/index.md", "title": "Building Astro sites with AI tools"}
+nav_prev: {"path": "astro/en/guides/environment-variables/index.md", "title": "Using environment variables"}
+nav_next: {"path": "astro/en/guides/build-with-ai/index.md", "title": "Building Astro sites with AI tools"}
 ---
 
 # Working with integrations
@@ -19,8 +19,8 @@ nav_next: {"path": "../build-with-ai/index.md", "title": "Building Astro sites w
 
 Integrations can…
 
-*   Unlock React, Vue, Svelte, Solid, and other popular UI frameworks with a [renderer](/en/guides/framework-components/).
-*   Enable on-demand rendering with an [SSR adapter](/en/guides/on-demand-rendering/).
+*   Unlock React, Vue, Svelte, Solid, and other popular UI frameworks with a [renderer](../framework-components/index.md).
+*   Enable on-demand rendering with an [SSR adapter](../on-demand-rendering/index.md).
 *   Integrate tools like MDX, and Partytown with a few lines of code.
 *   Add new features to your project, like automatic sitemap generation.
 *   Write custom code that hooks into the build process, dev server, and more.
@@ -35,34 +35,34 @@ The following integrations are maintained by Astro.
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../integrations-guide/alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../integrations-guide/preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../integrations-guide/react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../integrations-guide/solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../integrations-guide/svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](../integrations-guide/vue/index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../integrations-guide/cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -70,34 +70,34 @@ The following integrations are maintained by Astro.
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../integrations-guide/node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../integrations-guide/vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../integrations-guide/db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../integrations-guide/markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../integrations-guide/mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../integrations-guide/partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../integrations-guide/sitemap/index.md)
     
 
 ## Automatic integration setup
@@ -146,7 +146,7 @@ There are three common ways to import an integration into your Astro project:
     ```
     
 
-Check out the [Integration API](/en/reference/integrations-reference/) reference to learn all of the different ways that you can write an integration.
+Check out the [Integration API](../../reference/integrations-reference/index.md) reference to learn all of the different ways that you can write an integration.
 
 #### Installing an npm package
 
@@ -262,7 +262,7 @@ You can find many integrations developed by the community in the [Astro Integrat
 
 Astro’s Integration API is inspired by Rollup and Vite, and designed to feel familiar to anyone who has ever written a Rollup or Vite plugin before.
 
-Check out the [Integration API](/en/reference/integrations-reference/) reference to learn what integrations can do and how to write one yourself.
+Check out the [Integration API](../../reference/integrations-reference/index.md) reference to learn what integrations can do and how to write one yourself.
 
 ## Publishing your integration to npm
 
@@ -564,4 +564,4 @@ Packages that don’t include any keyword matching a category will be shown as `
 
 We encourage you to share your work, and we really do love seeing what our talented Astronauts create. Come and share what you create with us in our [Discord](https://astro.build/chat) or mention [@astrodotbuild](https://twitter.com/astrodotbuild) in a Tweet!
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

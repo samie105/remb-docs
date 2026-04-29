@@ -10,8 +10,8 @@ content_hash: "370bcced80db52b844987936ff3bc26b8c799df15538d1522215aaf4b01eb86f"
 menu_path: ["text-decoration-color"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text-decoration-line/index.md", "title": "text-decoration-line"}
-nav_next: {"path": "../text-decoration-style/index.md", "title": "text-decoration-style"}
+nav_prev: {"path": "tailwind/docs/text-decoration-line/index.md", "title": "text-decoration-line"}
+nav_next: {"path": "tailwind/docs/text-decoration-style/index.md", "title": "text-decoration-style"}
 ---
 
 Utilities for controlling the color of text decorations.

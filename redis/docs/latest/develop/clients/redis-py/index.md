@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:09.035Z"
 content_hash: "880c22961dad0976d7cea4797b9fde0b7306a49c261f3fb2fe43cebc523ae624"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        redis-py guide (Python)","→","redis-py guide (Python)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        redis-py guide (Python)","→","redis-py guide (Python)"]
-nav_prev: {"path": "../php/index.md", "title": "Predis guide (PHP)"}
-nav_next: {"path": "../redis-vl/index.md", "title": "Redis vector library guide (Python)"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/php/index.md", "title": "Predis guide (PHP)"}
+nav_next: {"path": "redis/docs/latest/develop/clients/redis-vl/index.md", "title": "Redis vector library guide (Python)"}
 ---
 
 # redis-py guide (Python)
@@ -21,7 +21,7 @@ Connect your Python application to a Redis database
 
 `redis-py` requires a running Redis server. See [here](/docs/latest/operate/oss_and_stack/install/) for Redis Open Source installation instructions.
 
-You can also access Redis with an object-mapping client interface. See [RedisOM for Python](/docs/latest/integrate/redisom-for-python/) for more information.
+You can also access Redis with an object-mapping client interface. See [RedisOM for Python](../../../integrate/redisom-for-python/index.md) for more information.
 
 ## Install
 

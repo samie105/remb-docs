@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:07.804Z"
 content_hash: "7a65f3272301e906e31e0740ce15690a96f90183bbc1c9fe5a9a800e3cc78456"
 menu_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (CLI)","Quickstart (CLI)"]
 section_path: ["Edge Functions","Edge Functions","Getting started","Getting started","Quickstart (CLI)","Quickstart (CLI)"]
-nav_prev: {"path": "../pricing/index.md", "title": "Pricing"}
-nav_next: {"path": "../quickstart-dashboard/index.md", "title": "Getting Started with Edge Functions (Dashboard)"}
+nav_prev: {"path": "supabase/docs/guides/functions/pricing/index.md", "title": "Pricing"}
+nav_next: {"path": "supabase/docs/guides/functions/quickstart-dashboard/index.md", "title": "Getting Started with Edge Functions (Dashboard)"}
 ---
 
 # 
@@ -23,11 +23,11 @@ Learn how to create, test, and deploy your first Edge Function using the Supabas
 
 * * *
 
-Before getting started, make sure you have the **Supabase CLI installed**. Check out the [CLI installation guide](/docs/guides/cli) for installation methods and troubleshooting.
+Before getting started, make sure you have the **Supabase CLI installed**. Check out the [CLI installation guide](../../cli/index.md) for installation methods and troubleshooting.
 
 ##### Prefer using the Supabase Dashboard?
 
-You can also create and deploy functions directly from the Supabase Dashboard. Check out our [Dashboard Quickstart guide](/docs/guides/functions/quickstart-dashboard).
+You can also create and deploy functions directly from the Supabase Dashboard. Check out our [Dashboard Quickstart guide](../quickstart-dashboard/index.md).
 
 * * *
 

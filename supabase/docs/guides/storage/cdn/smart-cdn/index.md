@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:13.305Z"
 content_hash: "775d229e21ba771fdb254a91d907abc1c9b5a1aa221e2b6b50832759318773c6"
 menu_path: ["Storage","Storage","More","More","More","CDN","CDN","Smart CDN","Smart CDN"]
 section_path: ["Storage","Storage","More","More","More","CDN","CDN","Smart CDN","Smart CDN"]
-nav_prev: {"path": "../metrics/index.md", "title": "Cache Metrics"}
-nav_next: {"path": "../../debugging/error-codes/index.md", "title": "Error Codes"}
+nav_prev: {"path": "supabase/docs/guides/storage/cdn/metrics/index.md", "title": "Cache Metrics"}
+nav_next: {"path": "supabase/docs/guides/storage/debugging/error-codes/index.md", "title": "Error Codes"}
 ---
 
 # 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:11.052Z"
 content_hash: "9294b91722cd7554eae67288ff86bd6cc3596333aa7c9d038046123f0bc5d03b"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE CAST"]
 section_path: []
-nav_prev: {"path": "../sql-createaggregate.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE AGGREGATE"}
-nav_next: {"path": "../sql-createcollation.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE COLLATION"}
+nav_prev: {"path": "postgres/docs/current/sql-createaggregate.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE AGGREGATE"}
+nav_next: {"path": "postgres/docs/current/sql-createcollation.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE COLLATION"}
 ---
 
 CREATE CAST — define a new cast

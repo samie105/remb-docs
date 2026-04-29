@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:59.970Z"
 content_hash: "da91284ef9ad6d9a94c8ecd789f37c7422e314a6113a36e93130b6d92ad29a18"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Cluster support","→","Cluster support"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Redis Open Source and Redis Software","→","Redis Open Source and Redis Software","→\n      \n        Deprecated Redis Open Source features and modules","→","Deprecated Redis Open Source features and modules","→\n      \n        Triggers and functions","→","Triggers and functions","→\n      \n        Concepts","→","Concepts","→\n      \n        Cluster support","→","Cluster support"]
-nav_prev: {"path": "../binary_data/index.md", "title": "Binary data"}
-nav_next: {"path": "../function_flags/index.md", "title": "Function flags"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/binary_data/index.md", "title": "Binary data"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/function_flags/index.md", "title": "Function flags"}
 ---
 
 # Cluster support
@@ -43,7 +43,7 @@ redis.registerClusterFunction("dbsize", async(async_client) => {
 });
 ```
 
-`redis.registerClusterFunction` is passed the remote function name, which will be used later to call the remote function, and the remote function code. The remote function must be a Coroutine (async function) and it is executed in the background on the remote shard. For more information about async function, please refer to [sync and async](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/sync_async/) page.
+`redis.registerClusterFunction` is passed the remote function name, which will be used later to call the remote function, and the remote function code. The remote function must be a Coroutine (async function) and it is executed in the background on the remote shard. For more information about async function, please refer to [sync and async](../sync_async/index.md) page.
 
 We have couple of options for calling a remote function. These options are exposed through the async client that is given to a Coroutine:
 
@@ -121,11 +121,11 @@ The remote function arguments and results are serialized in the following way:
 
 ## Execution timeout
 
-Remote functions will not be permitted to run forever and will timeout. The timeout period can be configured using [remote-task-default-timeout](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/configuration/#remote-task-default-timeout). When using `async_client.runOnShards` API, the timeout will be added as error to the error array. When using `async_client.runOnKey`, a timeout will cause an exception to be raised.
+Remote functions will not be permitted to run forever and will timeout. The timeout period can be configured using [remote-task-default-timeout](../../configuration/index.md#remote-task-default-timeout). When using `async_client.runOnShards` API, the timeout will be added as error to the error array. When using `async_client.runOnKey`, a timeout will cause an exception to be raised.
 
 ## Remote function limitations
 
-All the limitations listed on [coroutines](/docs/latest/operate/oss_and_stack/stack-with-enterprise/deprecated-features/triggers-and-functions/concepts/sync_async/) also apply to remote functions. Remote function also come with some extra limitations:
+All the limitations listed on [coroutines](../sync_async/index.md) also apply to remote functions. Remote function also come with some extra limitations:
 
 *   Remote functions can only perform read operations. An attempt to perform a write operation will result in an error.
 *   Remote function are not guaranteed to succeed (if the shard crashed for example). In such cases a timeout error will be given.

@@ -10,8 +10,8 @@ content_hash: "5620a594db8165b5edb2defbbb698f73ef66e45bc76f5a26b016c83be0aedb7e"
 menu_path: ["PostgreSQL: Documentation: 18: F.40. sepgsql — SELinux-, label-based mandatory access control (MAC) security module"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../seg.html/index.md", "title": "PostgreSQL: Documentation: 18: F.39.\u00a0seg \u2014 a datatype for line segments or floating point intervals"}
-nav_next: {"path": "../server-shutdown.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.5.\u00a0Shutting Down the Server"}
+nav_prev: {"path": "postgres/docs/current/seg.html/index.md", "title": "PostgreSQL: Documentation: 18: F.39.\u00a0seg \u2014 a datatype for line segments or floating point intervals"}
+nav_next: {"path": "postgres/docs/current/server-shutdown.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.5.\u00a0Shutting Down the Server"}
 ---
 
 `sepgsql` is a loadable module that supports label-based mandatory access control (MAC) based on SELinux security policy.

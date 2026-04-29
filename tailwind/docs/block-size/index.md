@@ -10,8 +10,8 @@ content_hash: "176db791975868adadc6b0fd82caa005f40fb11fd0562590f4b8f64f3b17904e"
 menu_path: ["block-size"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../max-inline-size/index.md", "title": "max-inline-size"}
-nav_next: {"path": "../min-block-size/index.md", "title": "min-block-size"}
+nav_prev: {"path": "tailwind/docs/max-inline-size/index.md", "title": "max-inline-size"}
+nav_next: {"path": "tailwind/docs/min-block-size/index.md", "title": "min-block-size"}
 ---
 
 Utilities for setting the block size of an element.

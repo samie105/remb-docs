@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:50.617Z"
 content_hash: "f94327372b9e26a11352b15459d0dc7ff10b2cb150735ed3de8e4c05cf7ed822"
 menu_path: ["Method Override Middleware ​"]
 section_path: []
-nav_prev: {"path": "../language/index.md", "title": "Language Middleware \u200b"}
-nav_next: {"path": "../pretty-json/index.md", "title": "Pretty JSON Middleware \u200b"}
+nav_prev: {"path": "hono/docs/middleware/builtin/language/index.md", "title": "Language Middleware \u200b"}
+nav_next: {"path": "hono/docs/middleware/builtin/pretty-json/index.md", "title": "Pretty JSON Middleware \u200b"}
 ---
 
 ## Method Override Middleware [​](#method-override-middleware)

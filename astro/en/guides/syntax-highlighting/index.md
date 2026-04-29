@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:39.221Z"
 content_hash: "aeebdd29826633a0a3bb1d65664067d2ec06f8ef691b65cf0673c090a0fd5c81"
 menu_path: ["Syntax Highlighting"]
 section_path: []
-nav_prev: {"path": "../fonts/index.md", "title": "Using custom fonts"}
-nav_next: {"path": "../client-side-scripts/index.md", "title": "Scripts and event handling"}
+nav_prev: {"path": "astro/en/guides/fonts/index.md", "title": "Using custom fonts"}
+nav_next: {"path": "astro/en/guides/client-side-scripts/index.md", "title": "Scripts and event handling"}
 ---
 
 # Syntax Highlighting
@@ -35,9 +35,9 @@ A Markdown code block is indicated by a block with three backticks \`\`\` at the
 
 Astro’s Markdown code blocks are styled by Shiki by default, preconfigured with the `github-dark` theme. The compiled output will be limited to inline `style`s without any extraneous CSS classes, stylesheets, or client-side JS.
 
-You can [add a Prism stylesheet and switch to Prism’s highlighting](#add-a-prism-stylesheet), or disable Astro’s syntax highlighting entirely, with the [`markdown.syntaxHighlight`](/en/reference/configuration-reference/#markdownsyntaxhighlight) configuration option.
+You can [add a Prism stylesheet and switch to Prism’s highlighting](#add-a-prism-stylesheet), or disable Astro’s syntax highlighting entirely, with the [`markdown.syntaxHighlight`](../../reference/configuration-reference/index.md#markdownsyntaxhighlight) configuration option.
 
-See the full [`markdown.shikiConfig` reference](/en/reference/configuration-reference/#markdownshikiconfig) for the complete set of Markdown syntax highlighting options available when using Shiki.
+See the full [`markdown.shikiConfig` reference](../../reference/configuration-reference/index.md#markdownshikiconfig) for the complete set of Markdown syntax highlighting options available when using Shiki.
 
 ### Setting a default Shiki theme
 
@@ -50,7 +50,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({  markdown: {    shikiConfig: {      theme: 'dracula',    },  },});
 ```
 
-See the full [Shiki config reference](/en/reference/configuration-reference/#markdownshikiconfig) for the complete set of Markdown code block options.
+See the full [Shiki config reference](../../reference/configuration-reference/index.md#markdownshikiconfig) for the complete set of Markdown code block options.
 
 ### Setting light and dark mode themes
 
@@ -69,7 +69,7 @@ Then, [add Shiki’s dark mode CSS variables via media query or classes](https:/
 @media (prefers-color-scheme: dark) {  .shiki,  .shiki span {  .astro-code,  .astro-code span {    color: var(--shiki-dark) !important;    background-color: var(--shiki-dark-bg) !important;    /* Optional, if you also want font styles */    font-style: var(--shiki-dark-font-style) !important;    font-weight: var(--shiki-dark-font-weight) !important;    text-decoration: var(--shiki-dark-text-decoration) !important;  }}
 ```
 
-See the full [Shiki config reference](/en/reference/configuration-reference/#markdownshikiconfig) for the complete set of Markdown code block options.
+See the full [Shiki config reference](../../reference/configuration-reference/index.md#markdownshikiconfig) for the complete set of Markdown code block options.
 
 ### Adding your own Shiki theme
 
@@ -99,7 +99,7 @@ You will need to adjust the examples from Shiki’s documentation for your Astro
 
 There are two Astro components available for `.astro` and `.mdx` files to render code blocks: [`<Code />`](#code-) and [`<Prism />`](#prism-).
 
-You can reference the `Props` of these components using the [`ComponentProps` type](/en/guides/typescript/#componentprops-type) utility.
+You can reference the `Props` of these components using the [`ComponentProps` type](../typescript/index.md#componentprops-type) utility.
 
 ### `<Code />`
 
@@ -182,11 +182,11 @@ If you opt to use Prism (either by configuring `markdown.syntaxHighlight: 'prism
 
 1.  Choose a premade stylesheet from the available [Prism Themes](https://github.com/PrismJS/prism-themes).
     
-2.  Add this stylesheet to [your project’s `public/` directory](/en/basics/project-structure/#public).
+2.  Add this stylesheet to [your project’s `public/` directory](../../basics/project-structure/index.md#public).
     
-3.  Load this into your page’s `<head>` in a [layout component](/en/basics/layouts/) via a `<link>` tag. (See [Prism basic usage](https://prismjs.com/#basic-usage).)
+3.  Load this into your page’s `<head>` in a [layout component](../../basics/layouts/index.md) via a `<link>` tag. (See [Prism basic usage](https://prismjs.com/#basic-usage).)
     
 
 You can also visit the [list of languages supported by Prism](https://prismjs.com/#supported-languages) for options and usage.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

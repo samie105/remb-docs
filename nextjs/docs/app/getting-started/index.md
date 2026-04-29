@@ -11,8 +11,8 @@ menu_path: ["Getting Started"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../../index.md", "title": "Next.js Docs"}
-nav_next: {"path": "installation/index.md", "title": "Installation"}
+nav_prev: {"path": "nextjs/docs/index.md", "title": "Next.js Docs"}
+nav_next: {"path": "nextjs/docs/app/getting-started/installation/index.md", "title": "Installation"}
 ---
 
 # Getting Started
@@ -42,108 +42,108 @@ If you're new to React or need a refresher, we recommend starting with our [Reac
 
 Learn how to create a new Next.js application with the \`create-next-app\` CLI, and set up TypeScript, ESLint, and Module Path Aliases.
 
-](/docs/app/getting-started/installation)[
+](installation/index.md)[
 
 ### Project Structure
 
 Learn the folder and file conventions in Next.js, and how to organize your project.
 
-](/docs/app/getting-started/project-structure)[
+](project-structure/index.md)[
 
 ### Layouts and Pages
 
 Learn how to create your first pages and layouts, and link between them with the Link component.
 
-](/docs/app/getting-started/layouts-and-pages)[
+](layouts-and-pages/index.md)[
 
 ### Linking and Navigating
 
 Learn how the built-in navigation optimizations work, including prefetching, prerendering, and client-side navigation, and how to optimize navigation for dynamic routes and slow networks.
 
-](/docs/app/getting-started/linking-and-navigating)[
+](linking-and-navigating/index.md)[
 
 ### Server and Client Components
 
 Learn how you can use React Server and Client Components to render parts of your application on the server or the client.
 
-](/docs/app/getting-started/server-and-client-components)[
+](server-and-client-components/index.md)[
 
 ### Fetching Data
 
 Learn how to fetch data and stream content that depends on data.
 
-](/docs/app/getting-started/fetching-data)[
+](fetching-data/index.md)[
 
 ### Mutating Data
 
 Learn how to mutate data using Server Functions and Server Actions in Next.js.
 
-](/docs/app/getting-started/mutating-data)[
+](mutating-data/index.md)[
 
 ### Caching
 
 Learn how to cache data and UI in Next.js
 
-](/docs/app/getting-started/caching)[
+](caching/index.md)[
 
 ### Revalidating
 
 Learn how to revalidate cached data using time-based and on-demand strategies.
 
-](/docs/app/getting-started/revalidating)[
+](revalidating/index.md)[
 
 ### Error Handling
 
 Learn how to display expected errors and handle uncaught exceptions.
 
-](/docs/app/getting-started/error-handling)[
+](error-handling/index.md)[
 
 ### CSS
 
 Learn about the different ways to add CSS to your application, including Tailwind CSS, CSS Modules, Global CSS, and more.
 
-](/docs/app/getting-started/css)[
+](css/index.md)[
 
 ### Image Optimization
 
 Learn how to optimize images in Next.js
 
-](/docs/app/getting-started/images)[
+](images/index.md)[
 
 ### Font Optimization
 
 Learn how to optimize fonts in Next.js
 
-](/docs/app/getting-started/fonts)[
+](fonts/index.md)[
 
 ### Metadata and OG images
 
 Learn how to add metadata to your pages and create dynamic OG images.
 
-](/docs/app/getting-started/metadata-and-og-images)[
+](metadata-and-og-images/index.md)[
 
 ### Route Handlers
 
 Learn how to use Route Handlers
 
-](/docs/app/getting-started/route-handlers)[
+](route-handlers/index.md)[
 
 ### Proxy
 
 Learn how to use Proxy
 
-](/docs/app/getting-started/proxy)[
+](proxy/index.md)[
 
 ### Deploying
 
 Learn how to deploy your Next.js application.
 
-](/docs/app/getting-started/deploying)[
+](deploying/index.md)[
 
 ### Upgrading
 
 Learn how to upgrade your Next.js application to the latest version or canary.
 
-](/docs/app/getting-started/upgrading)
+](upgrading/index.md)
 
 Was this helpful?

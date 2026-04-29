@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:48.816Z"
 content_hash: "ccbed70a60dd3823133b723cd2561d534520bd6ad57ce3077ae5654acef39c82"
 menu_path: ["Unknown Content Collection Error."]
 section_path: []
-nav_prev: {"path": "../unknown-config-error/index.md", "title": "Unknown configuration error."}
-nav_next: {"path": "../unknown-csserror/index.md", "title": "Unknown CSS Error."}
+nav_prev: {"path": "astro/en/reference/errors/unknown-config-error/index.md", "title": "Unknown configuration error."}
+nav_next: {"path": "astro/en/reference/errors/unknown-csserror/index.md", "title": "Unknown CSS Error."}
 ---
 
 # Unknown Content Collection Error.
@@ -23,4 +23,4 @@ Astro encountered an unknown error loading your content collections. This can be
 
 If you can reliably cause this error to happen, we’d appreciate if you could [open an issue](https://astro.build/issues/)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

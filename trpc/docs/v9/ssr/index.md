@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:00.083Z"
 content_hash: "2abf8c33ee54b54e46ce1487d45c92851e35bfcf2fa59f3d686f46a21a09975f"
 menu_path: ["Server-Side Rendering"]
 section_path: []
-nav_prev: {"path": "../ssg-helpers/index.md", "title": "SSG Helpers"}
-nav_next: {"path": "../starter-projects/index.md", "title": "Starter Projects"}
+nav_prev: {"path": "trpc/docs/v9/ssg-helpers/index.md", "title": "SSG Helpers"}
+nav_next: {"path": "trpc/docs/v9/starter-projects/index.md", "title": "Starter Projects"}
 ---
 
 The only thing you need to do to get SSR on your application is to set `ssr: true` in your `_app.tsx`, but it comes with some additional considerations.

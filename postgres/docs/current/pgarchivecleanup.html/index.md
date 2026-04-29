@@ -10,8 +10,8 @@ content_hash: "0279255ab6451061f5c9b01bb872ee1f7af56eebc263009aa56e43d8766eec76"
 menu_path: ["PostgreSQL: Documentation: 18: pg_archivecleanup"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../perm-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.6.\u00a0Function Security"}
-nav_next: {"path": "../pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
+nav_prev: {"path": "postgres/docs/current/perm-functions.html/index.md", "title": "PostgreSQL: Documentation: 18: 21.6.\u00a0Function Security"}
+nav_next: {"path": "postgres/docs/current/pgbench.html/index.md", "title": "PostgreSQL: Documentation: 18: pgbench"}
 ---
 
 pg\_archivecleanup — clean up PostgreSQL WAL archive files

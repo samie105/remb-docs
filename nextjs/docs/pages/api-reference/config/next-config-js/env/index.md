@@ -11,8 +11,8 @@ menu_path: ["env"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../distDir/index.md", "title": "distDir"}
-nav_next: {"path": "../exportPathMap/index.md", "title": "exportPathMap"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/exportPathMap/index.md", "title": "exportPathMap"}
 ---
 
 # env

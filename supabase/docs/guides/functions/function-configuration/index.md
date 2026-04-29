@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:35.750Z"
 content_hash: "558f2216b1e073e49cb95688c70d8f978005fb705a986b37326aea7432cf8b3d"
 menu_path: ["Edge Functions","Edge Functions","Configuration","Configuration","Function Configuration","Function Configuration"]
 section_path: ["Edge Functions","Edge Functions","Configuration","Configuration","Function Configuration","Function Configuration"]
-nav_prev: {"path": "../examples/upstash-redis/index.md", "title": "Upstash Redis"}
-nav_next: {"path": "../http-methods/index.md", "title": "Routing"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/upstash-redis/index.md", "title": "Upstash Redis"}
+nav_next: {"path": "supabase/docs/guides/functions/http-methods/index.md", "title": "Routing"}
 ---
 
 # 
@@ -43,7 +43,7 @@ This configuration tell Supabase that the `stripe-webhook` function doesn't requ
 
 You set these rules once and never worry about them again. Deploy your functions knowing that the security and behavior is exactly what each endpoint needs.
 
-To see more general `config.toml` options, check out [this guide](/docs/guides/local-development/managing-config).
+To see more general `config.toml` options, check out [this guide](../../local-development/managing-config/index.md).
 
 * * *
 

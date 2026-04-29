@@ -10,8 +10,8 @@ content_hash: "22d913a92ffeec74264b62f9d90582f706c3bc18a3d829bd3cd0e9eb1ab310bf"
 menu_path: ["PostgreSQL: Documentation: 18: 12.11. Limitations"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../textsearch-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.4.\u00a0Additional Features"}
-nav_next: {"path": "../textsearch-parsers.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.5.\u00a0Parsers"}
+nav_prev: {"path": "postgres/docs/current/textsearch-features.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.4.\u00a0Additional Features"}
+nav_next: {"path": "postgres/docs/current/textsearch-parsers.html/index.md", "title": "PostgreSQL: Documentation: 18: 12.5.\u00a0Parsers"}
 ---
 
 The current limitations of PostgreSQL's text search features are:

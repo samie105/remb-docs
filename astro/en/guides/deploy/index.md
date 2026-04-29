@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:14.360Z"
 content_hash: "3daf0a0a09bf750d0d9cf5a7ae594820ffcf5eab4ebc2838780fde33ff40bf35"
 menu_path: ["Deploy your Astro Site"]
 section_path: []
-nav_prev: {"path": "../integrations-guide/sitemap/index.md", "title": "@astrojs/\n\t\t\t\t\tsitemap"}
-nav_next: {"path": "aws/index.md", "title": "Deploy your Astro Site to AWS"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/sitemap/index.md", "title": "@astrojs/\n\t\t\t\t\tsitemap"}
+nav_next: {"path": "astro/en/guides/deploy/aws/index.md", "title": "Deploy your Astro Site to AWS"}
 ---
 
 # Deploy your Astro Site
@@ -23,193 +23,193 @@ nav_next: {"path": "aws/index.md", "title": "Deploy your Astro Site to AWS"}
 
 *   ![](/logos/aws.svg)
     
-    ### [AWS](/en/guides/deploy/aws/)
+    ### [AWS](aws/index.md)
     
     On demandStatic
     
 *   ![](/logos/flightcontrol.svg)
     
-    ### [AWS via Flightcontrol](/en/guides/deploy/aws-via-flightcontrol/)
+    ### [AWS via Flightcontrol](aws-via-flightcontrol/index.md)
     
     On demandStatic
     
 *   ![](/logos/sst.svg)
     
-    ### [AWS via SST](/en/guides/deploy/aws-via-sst/)
+    ### [AWS via SST](aws-via-sst/index.md)
     
     On demandStatic
     
 *   ![](/logos/azion.svg)
     
-    ### [Azion](/en/guides/deploy/azion/)
+    ### [Azion](azion/index.md)
     
     On demandStatic
     
 *   ![](/logos/buddy.svg)
     
-    ### [Buddy](/en/guides/deploy/buddy/)
+    ### [Buddy](buddy/index.md)
     
     Static
     
 *   ![](/logos/cleavr.svg)
     
-    ### [Cleavr](/en/guides/deploy/cleavr/)
+    ### [Cleavr](cleavr/index.md)
     
     On demandStatic
     
 *   ![](/logos/clever-cloud.svg)
     
-    ### [Clever Cloud](/en/guides/deploy/clever-cloud/)
+    ### [Clever Cloud](clever-cloud/index.md)
     
     StaticOn demand
     
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [Cloudflare](/en/guides/deploy/cloudflare/)
+    ### [Cloudflare](cloudflare/index.md)
     
     On demandStatic
     
 *   ![](/logos/cloudray.svg)
     
-    ### [CloudRay](/en/guides/deploy/cloudray/)
+    ### [CloudRay](cloudray/index.md)
     
     Static
     
 *   ![](/logos/deno.svg)
     
-    ### [Deno Deploy](/en/guides/deploy/deno/)
+    ### [Deno Deploy](deno/index.md)
     
     On demandStatic
     
 *   ![](/logos/deployhq.svg)
     
-    ### [DeployHQ](/en/guides/deploy/deployhq/)
+    ### [DeployHQ](deployhq/index.md)
     
     Static
     
 *   ![](/logos/edgeone-pages.svg)
     
-    ### [EdgeOne Pages](/en/guides/deploy/edgeone-pages/)
+    ### [EdgeOne Pages](edgeone-pages/index.md)
     
     On demandStatic
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/deploy/firebase/)
+    ### [Firebase](firebase/index.md)
     
     On demandStatic
     
 *   ![](/logos/fleek.svg)
     
-    ### [Fleek](/en/guides/deploy/fleek/)
+    ### [Fleek](fleek/index.md)
     
     Static
     
 *   ![](/logos/flyio.svg)
     
-    ### [Fly.io](/en/guides/deploy/flyio/)
+    ### [Fly.io](flyio/index.md)
     
     On demandStatic
     
 *   ![](/logos/github.svg)
     
-    ### [GitHub Pages](/en/guides/deploy/github/)
+    ### [GitHub Pages](github/index.md)
     
     Static
     
 *   ![](/logos/gitlab.svg)
     
-    ### [GitLab Pages](/en/guides/deploy/gitlab/)
+    ### [GitLab Pages](gitlab/index.md)
     
     Static
     
 *   ![](/logos/google-cloud.svg)
     
-    ### [Google Cloud](/en/guides/deploy/google-cloud/)
+    ### [Google Cloud](google-cloud/index.md)
     
     On demandStatic
     
 *   ![](/logos/heroku.svg)
     
-    ### [Heroku](/en/guides/deploy/heroku/)
+    ### [Heroku](heroku/index.md)
     
     Static
     
 *   ![](/logos/juno.svg)
     
-    ### [Juno](/en/guides/deploy/juno/)
+    ### [Juno](juno/index.md)
     
     Static
     
 *   ![](/logos/microsoft-azure.svg)
     
-    ### [Microsoft Azure](/en/guides/deploy/microsoft-azure/)
+    ### [Microsoft Azure](microsoft-azure/index.md)
     
     Static
     
 *   ![](/logos/netlify.svg)
     
-    ### [Netlify](/en/guides/deploy/netlify/)
+    ### [Netlify](netlify/index.md)
     
     On demandStatic
     
 *   ![](/logos/railway.svg)
     
-    ### [Railway](/en/guides/deploy/railway/)
+    ### [Railway](railway/index.md)
     
     On demandStatic
     
 *   ![](/logos/render.svg)
     
-    ### [Render](/en/guides/deploy/render/)
+    ### [Render](render/index.md)
     
     Static
     
 *   ![](/logos/seenode.svg)
     
-    ### [Seenode](/en/guides/deploy/seenode/)
+    ### [Seenode](seenode/index.md)
     
     On demand
     
 *   ![](/logos/sevalla.svg)
     
-    ### [Sevalla](/en/guides/deploy/sevalla/)
+    ### [Sevalla](sevalla/index.md)
     
     On demandStatic
     
 *   ![](/logos/stormkit.svg)
     
-    ### [Stormkit](/en/guides/deploy/stormkit/)
+    ### [Stormkit](stormkit/index.md)
     
     Static
     
 *   ![](/logos/surge.svg)
     
-    ### [Surge](/en/guides/deploy/surge/)
+    ### [Surge](surge/index.md)
     
     Static
     
 *   ![](/logos/vercel.svg)
     
-    ### [Vercel](/en/guides/deploy/vercel/)
+    ### [Vercel](vercel/index.md)
     
     On demandStatic
     
 *   ![](/logos/zeabur.svg)
     
-    ### [Zeabur](/en/guides/deploy/zeabur/)
+    ### [Zeabur](zeabur/index.md)
     
     On demandStatic
     
 *   ![](/logos/zephyr.svg)
     
-    ### [Zephyr Cloud](/en/guides/deploy/zephyr/)
+    ### [Zephyr Cloud](zephyr/index.md)
     
     Static
     
 *   ![](/logos/zerops.svg)
     
-    ### [Zerops](/en/guides/deploy/zerops/)
+    ### [Zerops](zerops/index.md)
     
     On demandStatic
     
@@ -230,7 +230,7 @@ These host platforms automatically detect pushes to your Astro project’s sourc
 
 1.  Add your repository to an online Git provider (e.g. in GitHub, GitLab, Bitbucket)
     
-2.  Choose a host that supports **continuous deployment** (e.g. [Netlify](/en/guides/deploy/netlify/) or [Vercel](/en/guides/deploy/vercel/)) and import your Git repository as a new site/project.
+2.  Choose a host that supports **continuous deployment** (e.g. [Netlify](netlify/index.md) or [Vercel](vercel/index.md)) and import your Git repository as a new site/project.
     
     Many common hosts will recognize your project as an Astro site, and should choose the appropriate configuration settings to build and deploy your site as shown below. (If not, these settings can be changed.)
     
@@ -282,10 +282,10 @@ Run the command `npm run build` to build your Astro site.
 npm run build
 ```
 
-By default, the build output will be placed at `dist/`. This location can be changed using the [`outDir` configuration option](/en/reference/configuration-reference/#outdir).
+By default, the build output will be placed at `dist/`. This location can be changed using the [`outDir` configuration option](../../reference/configuration-reference/index.md#outdir).
 
 ## Adding an Adapter for on-demand rendering
 
 [Section titled “Adding an Adapter for on-demand rendering”](#adding-an-adapter-for-on-demand-rendering)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

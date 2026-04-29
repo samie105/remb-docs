@@ -10,8 +10,8 @@ content_hash: "d6ce319e4b4f79657f4b9311db2bb1d0ab9fc9e033a01c9bd875979aa9ba08c2"
 menu_path: ["Referential actions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../one-to-one-relations/index.md", "title": "One-to-one relations"}
-nav_next: {"path": "../relation-mode/index.md", "title": "Relation mode"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/one-to-one-relations/index.md", "title": "One-to-one relations"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/relations/relation-mode/index.md", "title": "Relation mode"}
 ---
 
 Referential actions let you define the update and delete behavior of related models on the database level

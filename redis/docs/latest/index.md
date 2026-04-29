@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:31:57.476Z"
 content_hash: "93990a34fd18114972261ca24c87fd9b6e5c17c1a51ec68307f4b4d2618a4844"
 menu_path: ["Welcome to Redis Docs"]
 section_path: []
-nav_next: {"path": "commands/redis-6-2-commands/index.md", "title": "Redis 6.2 Commands Reference"}
+nav_next: {"path": "redis/docs/latest/commands/redis-6-2-commands/index.md", "title": "Redis 6.2 Commands Reference"}
 ---
 
 # Welcome to Redis Docs

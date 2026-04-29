@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:32.968Z"
 content_hash: "a76926b5fb3912aabd48e895bf2bde9616ed8ba80d5abf9eafaff2796064c1ba"
 menu_path: ["Convert an ArrayBuffer to a string"]
 section_path: []
-nav_prev: {"path": "../arraybuffer-to-buffer/index.md", "title": "Convert an ArrayBuffer to a Buffer"}
-nav_next: {"path": "../arraybuffer-to-typedarray/index.md", "title": "Convert an ArrayBuffer to a Uint8Array"}
+nav_prev: {"path": "bun/docs/guides/binary/arraybuffer-to-buffer/index.md", "title": "Convert an ArrayBuffer to a Buffer"}
+nav_next: {"path": "bun/docs/guides/binary/arraybuffer-to-typedarray/index.md", "title": "Convert an ArrayBuffer to a Uint8Array"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../arraybuffer-to-typedarray/index.md", "title": "Convert an
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun implements the Web-standard [`TextDecoder`](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder) class for converting between binary data types and strings.
 
@@ -45,7 +45,7 @@ const str = decoder.decode(buf);
 
 * * *
 
-See [Docs > API > Binary Data](/docs/runtime/binary-data#conversion) for complete documentation on manipulating binary data with Bun.
+See [Docs > API > Binary Data](../../../runtime/binary-data/index.md#conversion) for complete documentation on manipulating binary data with Bun.
 
 Was this page helpful?
 
@@ -57,10 +57,10 @@ Extract social share images and Open Graph tags
 
 Previous
 
-](/docs/guides/html-rewriter/extract-social-meta)[
+](../../html-rewriter/extract-social-meta/index.md)[
 
 Convert an ArrayBuffer to a Buffer
 
 Next
 
-](/docs/guides/binary/arraybuffer-to-buffer)
+](../arraybuffer-to-buffer/index.md)

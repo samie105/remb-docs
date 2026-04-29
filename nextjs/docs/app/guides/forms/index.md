@@ -11,8 +11,8 @@ menu_path: ["How to create forms with Server Actions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../environment-variables/index.md", "title": "How to use environment variables in Next.js"}
-nav_next: {"path": "../how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/environment-variables/index.md", "title": "How to use environment variables in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/how-revalidation-works/index.md", "title": "How revalidation works in Next.js"}
 ---
 
 # How to create forms with Server Actions
@@ -21,7 +21,7 @@ Last updated April 23, 2026
 
 React Server Actions are [Server Functions](https://react.dev/reference/rsc/server-functions) that execute on the server. They can be called in Server and Client Components to handle form submissions. This guide will walk you through how to create forms in Next.js with Server Actions.
 
-Always verify [authentication and authorization](/docs/app/guides/authentication) inside each Server Action, even if the form is only rendered on an authenticated page. See the [Data Security guide](/docs/app/guides/data-security) for more details.
+Always verify [authentication and authorization](../authentication/index.md) inside each Server Action, even if the form is only rendered on an authenticated page. See the [Data Security guide](../data-security/index.md) for more details.
 
 ## How it works[](#how-it-works)
 

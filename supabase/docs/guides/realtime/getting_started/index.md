@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:08.524Z"
 content_hash: "a48f7682199905415ad7d9db0acf5faba85340ceb3eed049ec472400e5bdc0f0"
 menu_path: ["Realtime","Realtime","Getting Started","Getting Started"]
 section_path: ["Realtime","Realtime","Getting Started","Getting Started"]
-nav_prev: {"path": "../error_codes/index.md", "title": "Operational Error Codes"}
-nav_next: {"path": "../limits/index.md", "title": "Realtime Limits"}
+nav_prev: {"path": "supabase/docs/guides/realtime/error_codes/index.md", "title": "Operational Error Codes"}
+nav_next: {"path": "supabase/docs/guides/realtime/limits/index.md", "title": "Realtime Limits"}
 ---
 
 # 
@@ -41,7 +41,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=&framework=).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -165,29 +165,29 @@ Now that you understand the basics, dive deeper into each feature:
 
 ### Core features[#](#core-features)
 
-*   **[Broadcast](/docs/guides/realtime/broadcast)** - Learn about sending messages, database triggers, and REST API usage
-*   **[Presence](/docs/guides/realtime/presence)** - Implement user state tracking and online indicators
-*   **[Postgres Changes](/docs/guides/realtime/postgres-changes)** - Understanding database change listeners (consider migrating to Broadcast)
+*   **[Broadcast](../broadcast/index.md)** - Learn about sending messages, database triggers, and REST API usage
+*   **[Presence](../presence/index.md)** - Implement user state tracking and online indicators
+*   **[Postgres Changes](../postgres-changes/index.md)** - Understanding database change listeners (consider migrating to Broadcast)
 
 ### Security & configuration[#](#security--configuration)
 
-*   **[Authorization](/docs/guides/realtime/authorization)** - Set up RLS policies for private channels
-*   **[Settings](/docs/guides/realtime/settings)** - Configure your Realtime instance for optimal performance
+*   **[Authorization](../authorization/index.md)** - Set up RLS policies for private channels
+*   **[Settings](../settings/index.md)** - Configure your Realtime instance for optimal performance
 
 ### Advanced topics[#](#advanced-topics)
 
-*   **[Architecture](/docs/guides/realtime/architecture)** - Understand how Realtime works under the hood
-*   **[Benchmarks](/docs/guides/realtime/benchmarks)** - Performance characteristics and scaling considerations
-*   **[Limits](/docs/guides/realtime/limits)** - Usage limits and best practices
+*   **[Architecture](../architecture/index.md)** - Understand how Realtime works under the hood
+*   **[Benchmarks](../benchmarks/index.md)** - Performance characteristics and scaling considerations
+*   **[Limits](../limits/index.md)** - Usage limits and best practices
 
 ### Integration guides[#](#integration-guides)
 
-*   **[Realtime with Next.js](/docs/guides/realtime/realtime-with-nextjs)** - Build real-time Next.js applications
-*   **[User Presence](/docs/guides/realtime/realtime-user-presence)** - Implement user presence features
-*   **[Database Changes](/docs/guides/realtime/subscribing-to-database-changes)** - Listen to database changes
+*   **[Realtime with Next.js](../realtime-with-nextjs/index.md)** - Build real-time Next.js applications
+*   **[User Presence](../realtime-user-presence/index.md)** - Implement user presence features
+*   **[Database Changes](../subscribing-to-database-changes/index.md)** - Listen to database changes
 
 ### Framework examples[#](#framework-examples)
 
-*   **[Flutter Integration](/docs/guides/realtime/realtime-listening-flutter)** - Build real-time Flutter applications
+*   **[Flutter Integration](../realtime-listening-flutter/index.md)** - Build real-time Flutter applications
 
-Ready to build something amazing? Start with the [Broadcast guide](/docs/guides/realtime/broadcast) to create your first real-time feature!
+Ready to build something amazing? Start with the [Broadcast guide](../broadcast/index.md) to create your first real-time feature!

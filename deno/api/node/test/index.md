@@ -10,8 +10,8 @@ content_hash: "e45bc4cc7c9fc6c8d84e4b0dfdcad1e9356f781a73d0efcda9bcf5361b35aeea"
 menu_path: ["test - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../string_decoder/index.md", "title": "string_decoder - Node documentation"}
-nav_next: {"path": "reporters/index.md", "title": "test/reporters - Node documentation"}
+nav_prev: {"path": "deno/api/node/string_decoder/index.md", "title": "string_decoder - Node documentation"}
+nav_next: {"path": "deno/api/node/test/reporters/index.md", "title": "test/reporters - Node documentation"}
 ---
 
 ### Usage in Deno

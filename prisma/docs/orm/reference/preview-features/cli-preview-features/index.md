@@ -10,8 +10,8 @@ content_hash: "f7a36e8b69d4f4b0b1787984b6324a2644feeb9e436b08bdd324bfd5ba4abcf6"
 menu_path: ["Prisma CLI Preview features"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../client-preview-features/index.md", "title": "Prisma Client & Prisma schema"}
-nav_next: {"path": "../../../more/best-practices/index.md", "title": "Best practices"}
+nav_prev: {"path": "prisma/docs/orm/reference/preview-features/client-preview-features/index.md", "title": "Prisma Client & Prisma schema"}
+nav_next: {"path": "prisma/docs/orm/more/best-practices/index.md", "title": "Best practices"}
 ---
 
 Prisma CLI features that are currently in Preview.

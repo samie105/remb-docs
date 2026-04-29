@@ -11,8 +11,8 @@ menu_path: ["Designing view transitions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../videos/index.md", "title": "How to use and optimize videos"}
-nav_next: {"path": "../../api-reference/index.md", "title": "API Reference"}
+nav_prev: {"path": "nextjs/docs/app/guides/videos/index.md", "title": "How to use and optimize videos"}
+nav_next: {"path": "nextjs/docs/app/api-reference/index.md", "title": "API Reference"}
 ---
 
 # Designing view transitions
@@ -426,9 +426,9 @@ Each pattern answers a different question for the user:
 
 For API details and more patterns:
 
--   [View transition configuration](/docs/app/api-reference/config/next-config-js/viewTransition)
--   [Link `transitionTypes` prop](/docs/app/api-reference/components/link#transitiontypes)
--   [`useRouter`](/docs/app/api-reference/functions/use-router) — also supports `transitionTypes` in `push()` and `replace()`
+-   [View transition configuration](../../api-reference/config/next-config-js/viewTransition/index.md)
+-   [Link `transitionTypes` prop](../../api-reference/components/link/index.md#transitiontypes)
+-   [`useRouter`](../../api-reference/functions/use-router/index.md) — also supports `transitionTypes` in `push()` and `replace()`
 -   [React `ViewTransition` component](https://react.dev/reference/react/ViewTransition)
 -   [Complete CSS from this guide](https://github.com/vercel-labs/react-view-transitions-demo/blob/main/src/app/globals.css) — all keyframes and view transition rules in one file
 

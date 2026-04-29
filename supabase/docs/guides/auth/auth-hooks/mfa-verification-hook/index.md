@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:47.019Z"
 content_hash: "ad5ffc90904528bbf4c9e5a1cc8305b9d958b8b73f793dc54b4deafae0d2f6e0"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","MFA verification hook","MFA verification hook"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","MFA verification hook","MFA verification hook"]
-nav_prev: {"path": "../custom-access-token-hook/index.md", "title": "Custom Access Token Hook"}
-nav_next: {"path": "../password-verification-hook/index.md", "title": "Password Verification Hook"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/custom-access-token-hook/index.md", "title": "Custom Access Token Hook"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/password-verification-hook/index.md", "title": "Password Verification Hook"}
 ---
 
 # 
@@ -19,7 +19,7 @@ MFA Verification Hook
 
 * * *
 
-You can add additional checks to the [Supabase MFA implementation](/docs/guides/auth/auth-mfa) with hooks. For example, you can:
+You can add additional checks to the [Supabase MFA implementation](../../auth-mfa/index.md) with hooks. For example, you can:
 
 *   Limit the number of verification attempts performed over a period of time.
 *   Sign out users who have too many invalid verification attempts.

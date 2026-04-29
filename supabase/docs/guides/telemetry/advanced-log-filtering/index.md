@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:07.325Z"
 content_hash: "100852c0ac7f06988e5cdfcfb4632b54facc71e2d468ca5e82a4fdd252458aaf"
 menu_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Advanced log filtering","Advanced log filtering"]
 section_path: ["Telemetry","Telemetry","Logging & observability","Logging & observability","Advanced log filtering","Advanced log filtering"]
-nav_prev: {"path": "../index.md", "title": "Telemetry"}
-nav_next: {"path": "../log-drains/index.md", "title": "Log Drains"}
+nav_prev: {"path": "supabase/docs/guides/telemetry/index.md", "title": "Telemetry"}
+nav_next: {"path": "supabase/docs/guides/telemetry/log-drains/index.md", "title": "Log Drains"}
 ---
 
 # Querying the logs

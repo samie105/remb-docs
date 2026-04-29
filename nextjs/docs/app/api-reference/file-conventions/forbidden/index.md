@@ -11,8 +11,8 @@ menu_path: ["forbidden.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../error/index.md", "title": "error.js"}
-nav_next: {"path": "../instrumentation/index.md", "title": "instrumentation.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/error/index.md", "title": "error.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
 ---
 
 # forbidden.js
@@ -21,7 +21,7 @@ This feature is currently experimental and subject to change, it's not recommend
 
 Last updated April 23, 2026
 
-The **forbidden** file is used to render UI when the [`forbidden`](/docs/app/api-reference/functions/forbidden) function is invoked during authentication. Along with allowing you to customize the UI, Next.js will return a `403` status code.
+The **forbidden** file is used to render UI when the [`forbidden`](../../functions/forbidden/index.md) function is invoked during authentication. Along with allowing you to customize the UI, Next.js will return a `403` status code.
 
 app/forbidden.tsx
 
@@ -59,6 +59,6 @@ export default function Forbidden() {
 
 API Reference for the forbidden function.
 
-](/docs/app/api-reference/functions/forbidden)
+](../../functions/forbidden/index.md)
 
 Was this helpful?

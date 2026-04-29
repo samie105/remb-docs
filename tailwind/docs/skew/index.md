@@ -10,8 +10,8 @@ content_hash: "5c4ff7856e6ae193c630802a6c20fd5973d0b0eac63f01e1b42646a3958d3477"
 menu_path: ["skew"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../scale/index.md", "title": "scale"}
-nav_next: {"path": "../transform/index.md", "title": "transform"}
+nav_prev: {"path": "tailwind/docs/scale/index.md", "title": "scale"}
+nav_next: {"path": "tailwind/docs/transform/index.md", "title": "transform"}
 ---
 
 # skew
@@ -172,7 +172,7 @@ Prefix `skewX()` and `skewY()` utilities with a breakpoint variant like `md:` to
 <img class="skew-3 md:skew-12 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

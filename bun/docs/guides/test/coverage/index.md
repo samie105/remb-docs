@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:33.239Z"
 content_hash: "6470241ebf4b897464a50c0608470ddf63a7adfec50b4622dca06e9af49ae938"
 menu_path: ["Generate code coverage reports with the Bun test runner"]
 section_path: []
-nav_prev: {"path": "../concurrent-test-glob/index.md", "title": "Selectively run tests concurrently with glob patterns"}
-nav_next: {"path": "../coverage-threshold/index.md", "title": "Set a code coverage threshold with the Bun test runner"}
+nav_prev: {"path": "bun/docs/guides/test/concurrent-test-glob/index.md", "title": "Selectively run tests concurrently with glob patterns"}
+nav_next: {"path": "bun/docs/guides/test/coverage-threshold/index.md", "title": "Set a code coverage threshold with the Bun test runner"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../coverage-threshold/index.md", "title": "Set a code covera
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun’s test runner supports built-in _code coverage reporting_. Use it to see how much of your codebase is covered by tests and find areas that are not currently well-tested.
 
@@ -79,7 +79,7 @@ coverage = true # always enable coverage
 
 * * *
 
-Refer to [Docs > Test runner > Coverage](/docs/test/code-coverage) for complete documentation on code coverage reporting in Bun.
+Refer to [Docs > Test runner > Coverage](../../../test/code-coverage/index.md) for complete documentation on code coverage reporting in Bun.
 
 Was this page helpful?
 
@@ -91,10 +91,10 @@ Update snapshots in \`bun test\`
 
 Previous
 
-](/docs/guides/test/update-snapshots)[
+](../update-snapshots/index.md)[
 
 Set a code coverage threshold with the Bun test runner
 
 Next
 
-](/docs/guides/test/coverage-threshold)
+](../coverage-threshold/index.md)

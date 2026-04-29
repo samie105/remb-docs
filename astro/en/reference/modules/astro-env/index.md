@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:47:40.920Z"
 content_hash: "98dc5b486f98e8ba6d99055ead2a83967458344588796266a5dfa5c502efed6c"
 menu_path: ["Environment Variables API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-content/index.md", "title": "Content Collections API Reference"}
-nav_next: {"path": "../astro-i18n/index.md", "title": "Internationalization API Reference"}
+nav_prev: {"path": "astro/en/reference/modules/astro-content/index.md", "title": "Content Collections API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-i18n/index.md", "title": "Internationalization API Reference"}
 ---
 
 # Environment Variables API Reference
 
 **Added in:** `astro@5.0.0`
 
-The `astro:env` API lets you configure a type-safe schema for environment variables you have set. This allows you to indicate whether they should be available on the server or the client, and define their data type and additional properties. For examples and usage instructions, [see the `astro:env` guide](/en/guides/environment-variables/#type-safe-environment-variables).
+The `astro:env` API lets you configure a type-safe schema for environment variables you have set. This allows you to indicate whether they should be available on the server or the client, and define their data type and additional properties. For examples and usage instructions, [see the `astro:env` guide](../../../guides/environment-variables/index.md#type-safe-environment-variables).
 
 ## Imports from `astro:env`
 
@@ -46,4 +46,4 @@ This can also be useful to get a secret not defined in your schema, for example 
 
 If you need to retrieve environment variables programmatically, we recommend using `getSecret()` instead of `process.env` (or equivalent). Because its implementation is provided by your adapter, you won’t need to update all your calls if you switch adapters. It defaults to `process.env` in dev and build.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

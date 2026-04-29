@@ -10,8 +10,8 @@ content_hash: "c42ee4b71b9123694b71d872990f2bd5cc859094f970face5416e70d02ddbf56"
 menu_path: ["Drizzle ORM - Include or Exclude Columns in Query"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
-nav_next: {"path": "../incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
+nav_prev: {"path": "drizzle/docs/guides/gel-ext-auth/index.md", "title": "Drizzle ORM - Gel auth extension"}
+nav_next: {"path": "drizzle/docs/guides/incrementing-a-value/index.md", "title": "Drizzle ORM - SQL Increment value"}
 ---
 
 Drizzle | Include or Exclude Columns in Query

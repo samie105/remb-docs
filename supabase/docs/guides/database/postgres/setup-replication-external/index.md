@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:44.322Z"
 content_hash: "d932092c592ece100a913b1df46ade3ee4f99c07432fc4d339bdf60aedd0556b"
 menu_path: ["Database","Database","Examples","Examples","Replicating from Supabase to External Postgres","Replicating from Supabase to External Postgres"]
 section_path: ["Database","Database","Examples","Examples","Replicating from Supabase to External Postgres","Replicating from Supabase to External Postgres"]
-nav_prev: {"path": "../row-level-security/index.md", "title": "Row Level Security"}
-nav_next: {"path": "../timeouts/index.md", "title": "Timeouts"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/row-level-security/index.md", "title": "Row Level Security"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/timeouts/index.md", "title": "Timeouts"}
 ---
 
 # 
@@ -42,7 +42,7 @@ You will be running commands on both of these databases to publish changes from 
 
 This needs a **direct** connection (not a Connection Pooler) to your database and you can find the connection info in the [**Connect** panel](/dashboard/project/_?showConnect=true) in the `Direct connection` section.
 
-You will also need to ensure that IPv6 is supported by your replication destination (or you can enable the [IPv4 add-on](/docs/guides/platform/ipv4-address))
+You will also need to ensure that IPv6 is supported by your replication destination (or you can enable the [IPv4 add-on](../../../platform/ipv4-address/index.md))
 
 If you would prefer not to use the `postgres` user, then you can run `CREATE ROLE <user> WITH REPLICATION;` using the `postgres` user.
 
@@ -50,7 +50,7 @@ If you would prefer not to use the `postgres` user, then you can run `CREATE ROL
 1CREATE SUBSCRIPTION example_sub2CONNECTION 'host=db.oaguxblfdassqxvvwtfe.supabase.co user=postgres password=YOUR_PASS dbname=postgres'3PUBLICATION example_pub4WITH (copy_data = true, create_slot=false, slot_name=example_slot);
 ```
 
-For projects running Postgres 17+, it is possible to subscribe to a [Read Replica](/docs/guides/platform/read-replicas) by using your Read Replica's connection string.
+For projects running Postgres 17+, it is possible to subscribe to a [Read Replica](../../../platform/read-replicas/index.md) by using your Read Replica's connection string.
 
 `create_slot` is set to `false` because `slot_name` is provided and the slot was already created in Step 2. To copy data from before the slot was created, set `copy_data` to `true`.
 

@@ -10,8 +10,8 @@ content_hash: "909812deed33508e67a05b9da5e1bef6c3cdac5a99b411bde6b134ecef68ade1"
 menu_path: ["flex-grow"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../flex/index.md", "title": "flex"}
-nav_next: {"path": "../flex-shrink/index.md", "title": "flex-shrink"}
+nav_prev: {"path": "tailwind/docs/flex/index.md", "title": "flex"}
+nav_next: {"path": "tailwind/docs/flex-shrink/index.md", "title": "flex-shrink"}
 ---
 
 # flex-grow
@@ -96,7 +96,7 @@ Prefix a `flex-grow` utility with a breakpoint variant like `md:` to only apply 
 <div class="grow md:grow-0 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

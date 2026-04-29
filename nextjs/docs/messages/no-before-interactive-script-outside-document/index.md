@@ -11,8 +11,8 @@ menu_path: ["No Before Interactive Script Outside Document"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../no-async-client-component/index.md", "title": "No async Client Component"}
-nav_next: {"path": "../no-cache/index.md", "title": "No Cache Detected"}
+nav_prev: {"path": "nextjs/docs/messages/no-async-client-component/index.md", "title": "No async Client Component"}
+nav_next: {"path": "nextjs/docs/messages/no-cache/index.md", "title": "No Cache Detected"}
 ---
 
 # No Before Interactive Script Outside Document
@@ -76,7 +76,7 @@ export default function Document() {
 
 ## Useful Links[](#useful-links)
 
--   [App Router Script Optimization](/docs/app/guides/scripts)
+-   [App Router Script Optimization](../../app/guides/scripts/index.md)
 -   [Pages Router Script Optimization](/docs/pages/guides/scripts)
 
 Was this helpful?

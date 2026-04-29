@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:42.625Z"
 content_hash: "cdcbb8aa5048a02a8852c455f1c93388a4432d381340dbe8205ae97dfa475abb"
 menu_path: ["PostgreSQL: Documentation: 18: J.6. Style Guide"]
 section_path: []
-nav_prev: {"path": "../dict-int.html/index.md", "title": "PostgreSQL: Documentation: 18: F.12.\u00a0dict_int \u2014 example full-text search dictionary for integers"}
-nav_next: {"path": "../docguide-toolsets.html/index.md", "title": "PostgreSQL: Documentation: 18: J.2.\u00a0Tool Sets"}
+nav_prev: {"path": "postgres/docs/current/dict-int.html/index.md", "title": "PostgreSQL: Documentation: 18: F.12.\u00a0dict_int \u2014 example full-text search dictionary for integers"}
+nav_next: {"path": "postgres/docs/current/docguide-toolsets.html/index.md", "title": "PostgreSQL: Documentation: 18: J.2.\u00a0Tool Sets"}
 ---
 
 ### J.6.1. Reference Pages [#](#DOCGUIDE-STYLE-REF-PAGES)

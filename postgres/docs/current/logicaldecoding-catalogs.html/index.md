@@ -10,8 +10,8 @@ content_hash: "2b37a435365766d69e83f22c40aa53afc73890a2bd7a98118fe586f8f0516582"
 menu_path: ["PostgreSQL: Documentation: 18: 47.5. System Catalogs Related to Logical Decoding"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../logical-replication-upgrade.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.13.\u00a0Upgrade"}
-nav_next: {"path": "../logicaldecoding-two-phase-commits.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.10.\u00a0Two-phase Commit Support for Logical Decoding"}
+nav_prev: {"path": "postgres/docs/current/logical-replication-upgrade.html/index.md", "title": "PostgreSQL: Documentation: 18: 29.13.\u00a0Upgrade"}
+nav_next: {"path": "postgres/docs/current/logicaldecoding-two-phase-commits.html/index.md", "title": "PostgreSQL: Documentation: 18: 47.10.\u00a0Two-phase Commit Support for Logical Decoding"}
 ---
 
 Development Versions: [devel](https://www.postgresql.org/docs/devel/logicaldecoding-catalogs.html "PostgreSQL devel - 47.5. System Catalogs Related to Logical Decoding")

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:58.091Z"
 content_hash: "0145367bb5abd5035c9a82f56914cdb6e25728951fd8d9f21c20a79c0d48bcc3"
 menu_path: ["Extra Information"]
 section_path: []
-nav_prev: {"path": "../faq/index.md", "title": "FAQ / Troubleshooting"}
-nav_next: {"path": "../further-reading/index.md", "title": "Further Reading"}
+nav_prev: {"path": "trpc/docs/v10/faq/index.md", "title": "FAQ / Troubleshooting"}
+nav_next: {"path": "trpc/docs/v10/further-reading/index.md", "title": "Further Reading"}
 ---
 
 Extra Information | tRPC

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:05.762Z"
 content_hash: "d12c6caaeba0c80c83961f011149b1caf11df6804aa53c26c04e3fe8495da93f"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Nuxt 3","Nuxt 3"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Nuxt 3","Nuxt 3"]
-nav_prev: {"path": "../with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
-nav_next: {"path": "../with-react/index.md", "title": "Build a User Management App with React"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-nextjs/index.md", "title": "Build a User Management App with Next.js"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-react/index.md", "title": "Build a User Management App with React"}
 ---
 
 # 
@@ -27,9 +27,9 @@ UI components built on shadcn/ui that connect to Supabase via a single command.
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/user-management-demo.png)
 
@@ -65,7 +65,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nuxt).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -101,7 +101,7 @@ And finally we want to save the environment variables in a `.env`. All we need a
 1SUPABASE_URL="YOUR_SUPABASE_URL"2SUPABASE_KEY="YOUR_SUPABASE_PUBLISHABLE_KEY"
 ```
 
-These variables will be exposed on the browser, and that's completely fine since we have [Row Level Security](/docs/guides/auth#row-level-security) enabled on our Database. Amazing thing about [Nuxt Supabase](https://supabase.nuxtjs.org/) is that setting environment variables is all we need to do in order to start using Supabase. No need to initialize Supabase. The library will take care of it automatically.
+These variables will be exposed on the browser, and that's completely fine since we have [Row Level Security](../../../auth/index.md#row-level-security) enabled on our Database. Amazing thing about [Nuxt Supabase](https://supabase.nuxtjs.org/) is that setting environment variables is all we need to do in order to start using Supabase. No need to initialize Supabase. The library will take care of it automatically.
 
 ### App styling (optional)[#](#app-styling-optional)
 
@@ -151,7 +151,7 @@ And then open the browser to [localhost:3000](http://localhost:3000) and you sho
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Create an upload widget[#](#create-an-upload-widget)
 

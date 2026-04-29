@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:29.785Z"
 content_hash: "2e7565b6b398fcbe342a00a6ba0877c8d7dc5997ebe40356062b000580a7de05"
 menu_path: ["Function: httpSubscriptionLink()"]
 section_path: []
-nav_prev: {"path": "../httpBatchStreamLink/index.md", "title": "Function: httpBatchStreamLink()"}
-nav_next: {"path": "../isFormData/index.md", "title": "Function: isFormData()"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/functions/httpBatchStreamLink/index.md", "title": "Function: httpBatchStreamLink()"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/functions/isFormData/index.md", "title": "Function: isFormData()"}
 ---
 
 > **httpSubscriptionLink**<`TInferrable`, `TEventSource`\>(`opts`): [`TRPCLink`](../../type-aliases/TRPCLink/index.md)<`TInferrable`\>

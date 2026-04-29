@@ -10,8 +10,8 @@ content_hash: "550f2f22188016a12f9f6ea2751c846ac972ba0a5abe5f23000d59c32a4d3910"
 menu_path: ["SingleStore extensions"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../mysql/index.md", "title": "MySQL extensions"}
-nav_next: {"path": "../sqlite/index.md", "title": "SQLite extensions"}
+nav_prev: {"path": "drizzle/docs/extensions/mysql/index.md", "title": "MySQL extensions"}
+nav_next: {"path": "drizzle/docs/extensions/sqlite/index.md", "title": "SQLite extensions"}
 ---
 
 Drizzle ORM - SingleStore extensions

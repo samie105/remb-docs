@@ -11,8 +11,8 @@ menu_path: ["API Reference"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../creating-an-adapter/index.md", "title": "Creating an Adapter"}
-nav_next: {"path": "../testing-adapters/index.md", "title": "Testing Adapters"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/adapters/creating-an-adapter/index.md", "title": "Creating an Adapter"}
+nav_next: {"path": "nextjs/docs/app/api-reference/adapters/testing-adapters/index.md", "title": "Testing Adapters"}
 ---
 
 # API Reference
@@ -26,7 +26,7 @@ Called for any CLI command that loads the `next.config.js` file to allow modific
 **Parameters:**
 
 -   `config`: The complete Next.js configuration object
--   `context.phase`: The current build phase (see [phases](/docs/app/api-reference/config/next-config-js#phase))
+-   `context.phase`: The current build phase (see [phases](../../config/next-config-js/index.md#phase))
 -   `context.nextVersion`: Version of Next.js being used
 
 **Returns:** The modified configuration object (can be async)

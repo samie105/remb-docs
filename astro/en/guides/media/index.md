@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:19.791Z"
 content_hash: "cdd5f3ede60d83f3c3efb776034036d78a87154f829308210668de221d41da6c"
 menu_path: ["Image and video hosting with Astro"]
 section_path: []
-nav_prev: {"path": "../backend/xata/index.md", "title": "Xata & Astro"}
-nav_next: {"path": "cloudinary/index.md", "title": "Cloudinary & Astro"}
+nav_prev: {"path": "astro/en/guides/backend/xata/index.md", "title": "Xata & Astro"}
+nav_next: {"path": "astro/en/guides/media/cloudinary/index.md", "title": "Cloudinary & Astro"}
 ---
 
 # Image and video hosting with Astro
@@ -23,11 +23,11 @@ Follow one of our guides to integrate images and videos from a hosted media serv
 
 *   ![](/logos/cloudinary.svg)
     
-    ### [Cloudinary](/en/guides/media/cloudinary/)
+    ### [Cloudinary](cloudinary/index.md)
     
 *   ![](/logos/mux.svg)
     
-    ### [Mux](/en/guides/media/mux/)
+    ### [Mux](mux/index.md)
     
 
 ## Why use hosted media?
@@ -38,9 +38,9 @@ Hosted media helps individuals, teams, and organizations store, manage, optimize
 
 This centralization can be useful, particularly when using a single source of truth for your assets between multiple web or mobile properties. This is important if you’re part of an organization that requires multiple teams to use the same assets, or are integrating into other content systems like a PIM (Product Information Manager) to connect your assets to products.
 
-Image hosting services can transform and optimize your images, automatically delivering optimized versions for your visitors. These [remote images](/en/guides/images/#remote-images) can be used in Astro’s built-in `<Image />` and `<Picture />` components, and are available to all file types in your project, including Markdown, MDX, and UI Framework components.
+Image hosting services can transform and optimize your images, automatically delivering optimized versions for your visitors. These [remote images](../images/index.md#remote-images) can be used in Astro’s built-in `<Image />` and `<Picture />` components, and are available to all file types in your project, including Markdown, MDX, and UI Framework components.
 
-Video hosting services like [Mux](/en/guides/media/mux/) can provide performant on-demand and live-streaming video delivery along with customizable video players, giving significant reliability and scaling benefits over handling local content. They will handle video transcoding, compression, and transformation to provide a smooth user experience. A platform like Mux may also include data analysis to help you understand your user engagement.
+Video hosting services like [Mux](mux/index.md) can provide performant on-demand and live-streaming video delivery along with customizable video players, giving significant reliability and scaling benefits over handling local content. They will handle video transcoding, compression, and transformation to provide a smooth user experience. A platform like Mux may also include data analysis to help you understand your user engagement.
 
 ## Which hosted media systems work well with Astro?
 
@@ -52,8 +52,8 @@ Much like when using a CMS, you’ll want to use hosted services that allow you 
 
 [Section titled “Can I use Astro without a hosted media system?”](#can-i-use-astro-without-a-hosted-media-system)
 
-Yes! Astro provides built-in ways to [store images](/en/guides/images/#where-to-store-images), including support for referencing remote images.
+Yes! Astro provides built-in ways to [store images](../images/index.md#where-to-store-images), including support for referencing remote images.
 
-However, there is no native video support in Astro, and we recommend choosing a service like [Mux](/en/guides/media/mux/) to handle the demands of optimizing and streaming video content.
+However, there is no native video support in Astro, and we recommend choosing a service like [Mux](mux/index.md) to handle the demands of optimizing and streaming video content.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

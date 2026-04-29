@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:30.699Z"
 content_hash: "859c184e60c2f3f0f0d3e45176c5b68a12152d72d1f399e20d21ee6b88bf6b8c"
 menu_path: ["PostgreSQL: Documentation: 18: H.4. Extensions"]
 section_path: []
-nav_prev: {"path": "../external-admin-tools.html/index.md", "title": "PostgreSQL: Documentation: 18: H.2.\u00a0Administration Tools"}
-nav_next: {"path": "../external-interfaces.html/index.md", "title": "PostgreSQL: Documentation: 18: H.1.\u00a0Client Interfaces"}
+nav_prev: {"path": "postgres/docs/current/external-admin-tools.html/index.md", "title": "PostgreSQL: Documentation: 18: H.2.\u00a0Administration Tools"}
+nav_next: {"path": "postgres/docs/current/external-interfaces.html/index.md", "title": "PostgreSQL: Documentation: 18: H.1.\u00a0Client Interfaces"}
 ---
 
 PostgreSQL is designed to be easily extensible. For this reason, extensions loaded into the database can function just like features that are built in. The `contrib/` directory shipped with the source code contains several extensions, which are described in [Appendix F](https://www.postgresql.org/docs/current/contrib.html "Appendix F. Additional Supplied Modules and Extensions"). Other extensions are developed independently, like [PostGIS](https://postgis.net/). Even PostgreSQL replication solutions can be developed externally. For example, [Slony-I](https://www.slony.info/) is a popular primary/standby replication solution that is developed independently from the core project.

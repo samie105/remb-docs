@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:32.454Z"
 content_hash: "982fea055af3e981e12d13b191038702ec81414e651453de51211095dd3dbf3e"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE SERVER"]
 section_path: []
-nav_prev: {"path": "../sql-createsequence.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SEQUENCE"}
-nav_next: {"path": "../sql-createstatistics.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE STATISTICS"}
+nav_prev: {"path": "postgres/docs/current/sql-createsequence.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SEQUENCE"}
+nav_next: {"path": "postgres/docs/current/sql-createstatistics.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE STATISTICS"}
 ---
 
 CREATE SERVER — define a new foreign server

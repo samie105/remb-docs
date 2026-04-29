@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Getting Started"}
-nav_next: {"path": "../project-structure/index.md", "title": "Project structure and organization"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/index.md", "title": "Getting Started"}
+nav_next: {"path": "nextjs/docs/app/getting-started/project-structure/index.md", "title": "Project structure and organization"}
 ---
 
 # Installation
@@ -70,11 +70,11 @@ Next.js supports modern browsers with zero configuration.
 -   Firefox 111+
 -   Safari 16.4+
 
-Learn more about [browser support](/docs/architecture/supported-browsers), including how to configure polyfills and target specific browsers.
+Learn more about [browser support](../../../architecture/supported-browsers/index.md), including how to configure polyfills and target specific browsers.
 
 ## Create with the CLI[](#create-with-the-cli)
 
-The quickest way to create a new Next.js app is using [`create-next-app`](/docs/app/api-reference/cli/create-next-app), which sets up everything automatically for you. To create a project, run:
+The quickest way to create a new Next.js app is using [`create-next-app`](../../api-reference/cli/create-next-app/index.md), which sets up everything automatically for you. To create a project, run:
 
 #### pnpm
 
@@ -126,7 +126,7 @@ What import alias would you like configured? @/*
 Would you like to include AGENTS.md to guide coding agents to write up-to-date Next.js code? No / Yes
 ```
 
-After the prompts, [`create-next-app`](/docs/app/api-reference/cli/create-next-app) will create a folder with your project name and install the required dependencies.
+After the prompts, [`create-next-app`](../../api-reference/cli/create-next-app/index.md) will create a folder with your project name and install the required dependencies.
 
 ## Manual installation[](#manual-installation)
 
@@ -182,13 +182,13 @@ These scripts refer to the different stages of developing an application:
 -   `next start`: Starts the production server.
 -   `eslint`: Runs ESLint.
 
-Turbopack is now the default bundler. To use Webpack run `next dev --webpack` or `next build --webpack`. See the [Turbopack docs](/docs/app/api-reference/turbopack) for configuration details.
+Turbopack is now the default bundler. To use Webpack run `next dev --webpack` or `next build --webpack`. See the [Turbopack docs](../../api-reference/turbopack/index.md) for configuration details.
 
 ### Create the `app` directory[](#create-the-app-directory)
 
 Next.js uses file-system routing, which means the routes in your application are determined by how you structure your files.
 
-Create an `app` folder. Then, inside `app`, create a `layout.tsx` file. This file is the [root layout](/docs/app/api-reference/file-conventions/layout#root-layout). It's required and must contain the `<html>` and `<body>` tags.
+Create an `app` folder. Then, inside `app`, create a `layout.tsx` file. This file is the [root layout](../../api-reference/file-conventions/layout/index.md#root-layout). It's required and must contain the `<html>` and `<body>` tags.
 
 app/layout.tsx
 
@@ -227,11 +227,11 @@ Both `layout.tsx` and `page.tsx` will be rendered when the user visits the root 
 > **Good to know**:
 > 
 > -   If you forget to create the root layout, Next.js will automatically create this file when running the development server with `next dev`.
-> -   You can optionally use a [`src` folder](/docs/app/api-reference/file-conventions/src-folder) in the root of your project to separate your application's code from configuration files.
+> -   You can optionally use a [`src` folder](../../api-reference/file-conventions/src-folder/index.md) in the root of your project to separate your application's code from configuration files.
 
 ### Create the `public` folder (optional)[](#create-the-public-folder-optional)
 
-Create a [`public` folder](/docs/app/api-reference/file-conventions/public-folder) at the root of your project to store static assets such as images, fonts, etc. Files inside `public` can then be referenced by your code starting from the base URL (`/`).
+Create a [`public` folder](../../api-reference/file-conventions/public-folder/index.md) at the root of your project to store static assets such as images, fonts, etc. Files inside `public` can then be referenced by your code starting from the base URL (`/`).
 
 You can then reference these assets using the root path (`/`). For example, `public/profile.png` can be referenced as `/profile.png`:
 
@@ -271,7 +271,7 @@ You can enable the plugin in VS Code by:
 
 ![TypeScript Command Palette](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/typescript-command-palette.png)
 
-See the [TypeScript reference](/docs/app/api-reference/config/typescript) page for more information.
+See the [TypeScript reference](../../api-reference/config/typescript/index.md) page for more information.
 
 ## Set up linting[](#set-up-linting)
 
@@ -311,11 +311,11 @@ Terminal
 npx @next/codemod@canary next-lint-to-eslint-cli .
 ```
 
-If you use ESLint, create an explicit config (recommended `eslint.config.mjs`). ESLint supports both [the legacy `.eslintrc.*` and the newer `eslint.config.mjs` formats](https://eslint.org/docs/latest/use/configure/configuration-files#configuring-eslint). See the [ESLint API reference](/docs/app/api-reference/config/eslint#with-core-web-vitals) for a recommended setup.
+If you use ESLint, create an explicit config (recommended `eslint.config.mjs`). ESLint supports both [the legacy `.eslintrc.*` and the newer `eslint.config.mjs` formats](https://eslint.org/docs/latest/use/configure/configuration-files#configuring-eslint). See the [ESLint API reference](../../api-reference/config/eslint/index.md#with-core-web-vitals) for a recommended setup.
 
 > **Good to know**: Starting with Next.js 16, `next build` no longer runs the linter automatically. Instead, you can run your linter through NPM scripts.
 
-See the [ESLint Plugin](/docs/app/api-reference/config/eslint) page for more information.
+See the [ESLint Plugin](../../api-reference/config/eslint/index.md) page for more information.
 
 ## Set up Absolute Imports and Module Path Aliases[](#set-up-absolute-imports-and-module-path-aliases)
 

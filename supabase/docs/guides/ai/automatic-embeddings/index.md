@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:18.928Z"
 content_hash: "175eb48f10c6d695004028795df0f64eccf43b99a0b95b10d2625dea3fc2f9c7"
 menu_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Automatic embeddings","Automatic embeddings"]
 section_path: ["AI & Vectors","AI & Vectors","Learn","Learn","Automatic embeddings","Automatic embeddings"]
-nav_prev: {"path": "../index.md", "title": "AI & Vectors"}
-nav_next: {"path": "../choosing-compute-addon/index.md", "title": "Choosing your Compute Add-on"}
+nav_prev: {"path": "supabase/docs/guides/ai/index.md", "title": "AI & Vectors"}
+nav_next: {"path": "supabase/docs/guides/ai/choosing-compute-addon/index.md", "title": "Choosing your Compute Add-on"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Automatic embeddings
 
 * * *
 
-Vector embeddings enable powerful [semantic search](/docs/guides/ai/semantic-search) capabilities in Postgres, but managing them alongside your content has traditionally been complex. This guide demonstrates how to automate embedding generation and updates using Supabase [Edge Functions](/docs/guides/functions), [pgmq](/docs/guides/database/extensions/pgmq), [pg\_net](/docs/guides/database/extensions/pg_net), and [pg\_cron](/docs/guides/cron).
+Vector embeddings enable powerful [semantic search](../semantic-search/index.md) capabilities in Postgres, but managing them alongside your content has traditionally been complex. This guide demonstrates how to automate embedding generation and updates using Supabase [Edge Functions](../../functions/index.md), [pgmq](../../database/extensions/pgmq/index.md), [pg\_net](../../database/extensions/pg_net/index.md), and [pg\_cron](../../cron/index.md).
 
 ## Understanding the challenge[#](#understanding-the-challenge)
 
@@ -30,18 +30,18 @@ When implementing semantic search with pgvector, developers typically need to:
 3.  Keep embeddings in sync when content changes
 4.  Handle failures and retries in the embedding generation process
 
-While Postgres [full-text search](/docs/guides/database/full-text-search) can handle this internally through synchronous calls to `to_tsvector` and [triggers](https://www.postgresql.org/docs/current/textsearch-features.html#TEXTSEARCH-UPDATE-TRIGGERS), semantic search requires asynchronous API calls to a provider like OpenAI to generate vector embeddings. This guide demonstrates how to use triggers, queues, and Supabase Edge Functions to bridge this gap.
+While Postgres [full-text search](../../database/full-text-search/index.md) can handle this internally through synchronous calls to `to_tsvector` and [triggers](https://www.postgresql.org/docs/current/textsearch-features.html#TEXTSEARCH-UPDATE-TRIGGERS), semantic search requires asynchronous API calls to a provider like OpenAI to generate vector embeddings. This guide demonstrates how to use triggers, queues, and Supabase Edge Functions to bridge this gap.
 
 ## Understanding the architecture[#](#understanding-the-architecture)
 
 We'll leverage the following Postgres and Supabase features to create the automated embedding system:
 
-1.  [pgvector](/docs/guides/database/extensions/pgvector): Stores and queries vector embeddings
-2.  [pgmq](/docs/guides/queues): Queues embedding generation requests for processing and retries
-3.  [pg\_net](/docs/guides/database/extensions/pg_net): Handles asynchronous HTTP requests to Edge Functions directly from Postgres
-4.  [pg\_cron](/docs/guides/cron): Automatically processes and retries embedding generations
-5.  [Triggers](/docs/guides/database/postgres/triggers): Detects content changes and enqueues embedding generation requests
-6.  [Edge Functions](/docs/guides/functions): Generates embeddings via an API like OpenAI (customizable)
+1.  [pgvector](../../database/extensions/pgvector/index.md): Stores and queries vector embeddings
+2.  [pgmq](../../queues/index.md): Queues embedding generation requests for processing and retries
+3.  [pg\_net](../../database/extensions/pg_net/index.md): Handles asynchronous HTTP requests to Edge Functions directly from Postgres
+4.  [pg\_cron](../../cron/index.md): Automatically processes and retries embedding generations
+5.  [Triggers](../../database/postgres/triggers/index.md): Detects content changes and enqueues embedding generation requests
+6.  [Edge Functions](../../functions/index.md): Generates embeddings via an API like OpenAI (customizable)
 
 We'll design the system to:
 
@@ -75,7 +75,7 @@ Before we set up our embedding logic, we need to create some utility functions:
 Here we create:
 
 *   A schema `util` to store utility functions.
-*   A function to retrieve the Supabase project URL from [Vault](/docs/guides/database/vault). We'll add this secret next.
+*   A function to retrieve the Supabase project URL from [Vault](../../database/vault/index.md). We'll add this secret next.
 *   A generic function to invoke any Edge Function with a given name and request body.
 *   A generic trigger function to clear a column on update. This function accepts the column name as an argument and sets it to `NULL` in the `NEW` record. We'll explain how to use this function later.
 
@@ -196,7 +196,7 @@ or
 
 Alternatively, you can replace the `generateEmbedding` function with your own embedding generation logic.
 
-See [Deploy to Production](/docs/guides/functions/deploy) for more information on how to deploy the Edge Function.
+See [Deploy to Production](../../functions/deploy/index.md) for more information on how to deploy the Edge Function.
 
 ## Usage[#](#usage)
 
@@ -214,7 +214,7 @@ Our `documents` table stores the title and content of each document along with i
 
 `halfvec` is a `pgvector` data type that stores float values in half precision (16 bits) to save space. Our Edge Function used OpenAI's `text-embedding-3-small` model which generates 1536-dimensional embeddings, so we use the same dimensionality here. Adjust this based on the number of dimensions your embedding model generates.
 
-We use an [HNSW index](/docs/guides/ai/vector-indexes/hnsw-indexes) on the vector column. Note that we are choosing `halfvec_cosine_ops` as the index method, which means our future queries will need to use cosine distance (`<=>`) to find similar embeddings. Also note that HNSW indexes support a maximum of 4000 dimensions for `halfvec` vectors, so keep this in mind when choosing an embedding model. If your model generates embeddings with more than 4000 dimensions, you will need to reduce the dimensionality before indexing them. See [Matryoshka embeddings](/blog/matryoshka-embeddings) for a potential solution to shortening dimensions.
+We use an [HNSW index](../vector-indexes/hnsw-indexes/index.md) on the vector column. Note that we are choosing `halfvec_cosine_ops` as the index method, which means our future queries will need to use cosine distance (`<=>`) to find similar embeddings. Also note that HNSW indexes support a maximum of 4000 dimensions for `halfvec` vectors, so keep this in mind when choosing an embedding model. If your model generates embeddings with more than 4000 dimensions, you will need to reduce the dimensionality before indexing them. See [Matryoshka embeddings](/blog/matryoshka-embeddings) for a potential solution to shortening dimensions.
 
 Also note that the table must have a primary key column named `id` for our triggers to work correctly with the `util.queue_embeddings` function and for our Edge Function to update the correct row.
 
@@ -351,7 +351,7 @@ This system can be customized to work with any content and embedding generation 
 
 ## See also[#](#see-also)
 
-*   [What are embeddings?](/docs/guides/ai/concepts)
-*   [Semantic search](/docs/guides/ai/semantic-search)
-*   [Vector indexes](/docs/guides/ai/vector-indexes)
-*   [Supabase Edge Functions](/docs/guides/functions)
+*   [What are embeddings?](../concepts/index.md)
+*   [Semantic search](../semantic-search/index.md)
+*   [Vector indexes](../vector-indexes/index.md)
+*   [Supabase Edge Functions](../../functions/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:45.735Z"
 content_hash: "4ecb92e93ca6a211443f38d442eed9b4fb60e5fc9c25c348b7937d7a08342b4f"
 menu_path: ["The middleware returned something that is not a Response object."]
 section_path: []
-nav_prev: {"path": "../middleware-no-data-or-next-called/index.md", "title": "The middleware didn't return a Response."}
-nav_next: {"path": "../missing-image-dimension/index.md", "title": "Missing image dimensions"}
+nav_prev: {"path": "astro/en/reference/errors/middleware-no-data-or-next-called/index.md", "title": "The middleware didn't return a Response."}
+nav_next: {"path": "astro/en/reference/errors/missing-image-dimension/index.md", "title": "Missing image dimensions"}
 ---
 
 # The middleware returned something that is not a Response object.
@@ -29,4 +29,4 @@ For example:
 import {defineMiddleware} from "astro:middleware";export const onRequest = defineMiddleware(() => {  return "string"});
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

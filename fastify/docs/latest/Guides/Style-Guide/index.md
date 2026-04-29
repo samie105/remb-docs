@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:17.886Z"
 content_hash: "c86f61585ffdef3bb07e54e0a5516a3cedbb4536c96e277847ecafd9482e666a"
 menu_path: ["Fastify Style Guide"]
 section_path: []
-nav_prev: {"path": "../Serverless/index.md", "title": "Serverless"}
-nav_next: {"path": "../Testing/index.md", "title": "Testing"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Serverless/index.md", "title": "Serverless"}
+nav_next: {"path": "fastify/docs/latest/Guides/Testing/index.md", "title": "Testing"}
 ---
 
 Version: latest (v5.8.x)
@@ -75,7 +75,7 @@ There are a few things you need to use and avoid when writing your documentation
 
 ### When to use the second person "you" as the pronoun[​](#when-to-use-the-second-person-you-as-the-pronoun "Direct link to When to use the second person \"you\" as the pronoun")
 
-When writing articles or guides, your content should communicate directly to readers in the second person ("you") addressed form. It is easier to give them direct instruction on what to do on a particular topic. To see an example, visit the [Plugins Guide](/docs/latest/Guides/Plugins-Guide/).
+When writing articles or guides, your content should communicate directly to readers in the second person ("you") addressed form. It is easier to give them direct instruction on what to do on a particular topic. To see an example, visit the [Plugins Guide](../Plugins-Guide/index.md).
 
 **Example**
 
@@ -95,7 +95,7 @@ Less like this: You can use the following recommendation as an example.
 
 More like this: As an example, the following recommendations should be referenced.
 
-To view a live example, refer to the [Decorators](/docs/latest/Reference/Decorators/) reference document.
+To view a live example, refer to the [Decorators](../../Reference/Decorators/index.md) reference document.
 
 ### Avoid using contractions[​](#avoid-using-contractions "Direct link to Avoid using contractions")
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:15:32.204Z"
 content_hash: "957157d3db6a238a09604637b661fbca318c146150bdcc5f13d0903708641486"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Reference","→","Reference","→\n      \n        Data transformation reference","→","Data transformation reference","→\n      \n        add_field","→","add_field"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Reference","→","Reference","→\n      \n        Data transformation reference","→","Data transformation reference","→\n      \n        add_field","→","add_field"]
-nav_prev: {"path": "../../../installation/reqsummary/index.md", "title": "Requirements summary"}
-nav_next: {"path": "../../../when-to-use/index.md", "title": "When to use RDI"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/installation/reqsummary/index.md", "title": "Requirements summary"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/when-to-use/index.md", "title": "When to use RDI"}
 ---
 
 # add\_field

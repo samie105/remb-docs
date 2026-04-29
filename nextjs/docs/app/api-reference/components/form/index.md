@@ -11,15 +11,15 @@ menu_path: ["Form Component"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../font/index.md", "title": "Font Module"}
-nav_next: {"path": "../image/index.md", "title": "Image Component"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/components/font/index.md", "title": "Font Module"}
+nav_next: {"path": "nextjs/docs/app/api-reference/components/image/index.md", "title": "Image Component"}
 ---
 
 # Form Component
 
 Last updated April 23, 2026
 
-The `<Form>` component extends the HTML `<form>` element to provide [**prefetching**](/docs/app/getting-started/linking-and-navigating#prefetching) of [loading UI](/docs/app/api-reference/file-conventions/loading), **client-side navigation** on submission, and **progressive enhancement**.
+The `<Form>` component extends the HTML `<form>` element to provide [**prefetching**](../../../getting-started/linking-and-navigating/index.md#prefetching) of [loading UI](../../file-conventions/loading/index.md), **client-side navigation** on submission, and **progressive enhancement**.
 
 It's useful for forms that update URL search params as it reduces the boilerplate code needed to achieve the above.
 
@@ -49,8 +49,8 @@ export default function Page() {
 The behavior of the `<Form>` component depends on whether the `action` prop is passed a `string` or `function`.
 
 -   When `action` is a **string**, the `<Form>` behaves like a native HTML form that uses a **`GET`** method. The form data is encoded into the URL as search params, and when the form is submitted, it navigates to the specified URL. In addition, Next.js:
-    -   [Prefetches](/docs/app/getting-started/linking-and-navigating#prefetching) the path when the form becomes visible, this preloads shared UI (e.g. `layout.js` and `loading.js`), resulting in faster navigation.
-    -   Performs a [client-side navigation](/docs/app/getting-started/linking-and-navigating#client-side-transitions) instead of a full page reload when the form is submitted. This retains shared UI and client-side state.
+    -   [Prefetches](../../../getting-started/linking-and-navigating/index.md#prefetching) the path when the form becomes visible, this preloads shared UI (e.g. `layout.js` and `loading.js`), resulting in faster navigation.
+    -   Performs a [client-side navigation](../../../getting-started/linking-and-navigating/index.md#client-side-transitions) instead of a full page reload when the form is submitted. This retains shared UI and client-side state.
 -   When `action` is a **function** (Server Action), `<Form>` behaves like a [React form](https://react.dev/reference/react-dom/components/form), executing the action when the form is submitted.
 
 ### `action` (string) Props[](#action-string-props)
@@ -85,7 +85,7 @@ When `action` is a function, the `<Form>` component supports the following prop:
 ### Caveats[](#caveats)
 
 -   **`formAction`**: Can be used in a `<button>` or `<input type="submit">` fields to override the `action` prop. Next.js will perform a client-side navigation, however, this approach doesn't support prefetching.
-    -   When using [`basePath`](/docs/app/api-reference/config/next-config-js/basePath), you must also include it in the `formAction` path. e.g. `formAction="/base-path/search"`.
+    -   When using [`basePath`](../../config/next-config-js/basePath/index.md), you must also include it in the `formAction` path. e.g. `formAction="/base-path/search"`.
 -   **`key`**: Passing a `key` prop to a string `action` is not supported. If you'd like to trigger a re-render or perform a mutation, consider using a function `action` instead.
 
 -   **`onSubmit`**: Can be used to handle form submission logic. However, calling `event.preventDefault()` will override `<Form>` behavior such as navigating to the specified URL.
@@ -121,7 +121,7 @@ When the user updates the query input field and submits the form, the form data 
 
 > **Good to know**: If you pass an empty string `""` to `action`, the form will navigate to the same route with updated search params.
 
-On the results page, you can access the query using the [`searchParams`](/docs/app/api-reference/file-conventions/page#searchparams-optional) `page.js` prop and use it to fetch data from an external source.
+On the results page, you can access the query using the [`searchParams`](../../file-conventions/page/index.md#searchparams-optional) `page.js` prop and use it to fetch data from an external source.
 
 /app/search/page.tsx
 
@@ -141,7 +141,7 @@ export default async function SearchPage({
 }
 ```
 
-When the `<Form>` becomes visible in the user's viewport, shared UI (such as `layout.js` and `loading.js`) on the `/search` page will be prefetched. On submission, the form will immediately navigate to the new route and show loading UI while the results are being fetched. You can design the fallback UI using [`loading.js`](/docs/app/api-reference/file-conventions/loading):
+When the `<Form>` becomes visible in the user's viewport, shared UI (such as `layout.js` and `loading.js`) on the `/search` page will be prefetched. On submission, the form will immediately navigate to the new route and show loading UI while the results are being fetched. You can design the fallback UI using [`loading.js`](../../file-conventions/loading/index.md):
 
 /app/search/loading.tsx
 
@@ -216,7 +216,7 @@ export default function Page() {
 }
 ```
 
-After a mutation, it's common to redirect to the new resource. You can use the [`redirect`](/docs/app/guides/redirecting) function from `next/navigation` to navigate to the new post page.
+After a mutation, it's common to redirect to the new resource. You can use the [`redirect`](../../../guides/redirecting/index.md) function from `next/navigation` to navigate to the new post page.
 
 > **Good to know**: Since the "destination" of the form submission is not known until the action is executed, `<Form>` cannot automatically prefetch shared UI.
 
@@ -263,6 +263,6 @@ export default async function PostPage({
 }
 ```
 
-See the [Server Actions](/docs/app/getting-started/mutating-data) docs for more examples.
+See the [Server Actions](../../../getting-started/mutating-data/index.md) docs for more examples.
 
 Was this helpful?

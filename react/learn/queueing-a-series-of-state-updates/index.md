@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:05.885Z"
 content_hash: "6aba64657f55be72347657271eed12c10b6d0a08ccea56befa3d6960c7013dea"
 menu_path: ["Queueing a Series of State Updates"]
 section_path: []
-nav_prev: {"path": "../state-as-a-snapshot/index.md", "title": "State as a Snapshot"}
-nav_next: {"path": "../updating-objects-in-state/index.md", "title": "Updating Objects in State"}
+nav_prev: {"path": "react/learn/state-as-a-snapshot/index.md", "title": "State as a Snapshot"}
+nav_next: {"path": "react/learn/updating-objects-in-state/index.md", "title": "Updating Objects in State"}
 ---
 
 Setting a state variable will queue another render. But sometimes you might want to perform multiple operations on the value before queueing the next render. To do this, it helps to understand how React batches state updates.

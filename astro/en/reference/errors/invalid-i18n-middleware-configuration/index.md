@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:20.893Z"
 content_hash: "27495cb7eea0ea7113b0effcd36bc27157058d75e806e4c1ae1773e0913384d6"
 menu_path: ["Invalid internationalization middleware configuration"]
 section_path: []
-nav_prev: {"path": "../invalid-glob/index.md", "title": "Invalid glob pattern."}
-nav_next: {"path": "../invalid-image-service/index.md", "title": "Error while loading image service."}
+nav_prev: {"path": "astro/en/reference/errors/invalid-glob/index.md", "title": "Invalid glob pattern."}
+nav_next: {"path": "astro/en/reference/errors/invalid-image-service/index.md", "title": "Error while loading image service."}
 ---
 
 # Invalid internationalization middleware configuration
@@ -23,4 +23,4 @@ nav_next: {"path": "../invalid-image-service/index.md", "title": "Error while lo
 
 An invalid i18n middleware configuration was detected.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

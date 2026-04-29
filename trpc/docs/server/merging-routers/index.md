@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:55.012Z"
 content_hash: "8a8daaca720a179ccb8d7327f824ff7715f2b0227a261da42d10fc6b0ce349f1"
 menu_path: ["Merging Routers"]
 section_path: []
-nav_prev: {"path": "../error-handling/index.md", "title": "Error Handling"}
-nav_next: {"path": "../metadata/index.md", "title": "Metadata"}
+nav_prev: {"path": "trpc/docs/server/error-handling/index.md", "title": "Error Handling"}
+nav_next: {"path": "trpc/docs/server/metadata/index.md", "title": "Metadata"}
 ---
 
 Writing all API-code in the same file can become unwieldy. It's easy to merge routers together in order to break them up.

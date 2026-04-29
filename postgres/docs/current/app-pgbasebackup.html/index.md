@@ -10,8 +10,8 @@ content_hash: "012f299f0432c5355d0c2d4be41b3261995ae744cd695bb8f3f747a37088c121"
 menu_path: ["PostgreSQL: Documentation: 18: pg_basebackup"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../app-pg-dumpall.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_dumpall"}
-nav_next: {"path": "../app-pgchecksums.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_checksums"}
+nav_prev: {"path": "postgres/docs/current/app-pg-dumpall.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_dumpall"}
+nav_next: {"path": "postgres/docs/current/app-pgchecksums.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_checksums"}
 ---
 
 pg\_basebackup — take a base backup of a PostgreSQL cluster

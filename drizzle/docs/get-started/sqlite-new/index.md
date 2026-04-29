@@ -10,8 +10,8 @@ content_hash: "89beda67a541d26316f3846c193967474512f5c733caa1da2e9d1c1ce63950bc"
 menu_path: ["Get Started with Drizzle and SQLite"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sqlite-existing/index.md", "title": "Get Started with Drizzle and SQLite in existing project"}
-nav_next: {"path": "../supabase-existing/index.md", "title": "Get Started with Drizzle and Supabase in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/sqlite-existing/index.md", "title": "Get Started with Drizzle and SQLite in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/supabase-existing/index.md", "title": "Get Started with Drizzle and Supabase in existing project"}
 ---
 
 ## Get Started with Drizzle and SQLite

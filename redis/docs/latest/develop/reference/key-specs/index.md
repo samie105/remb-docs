@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:10.797Z"
 content_hash: "04bfc6278cfd85b2469fd0b0d3d864d6510e6ba79326c69f5550646b27db59ac"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Command key specifications","→","Command key specifications"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Command key specifications","→","Command key specifications"]
-nav_prev: {"path": "../eviction/index.md", "title": "Key eviction"}
-nav_next: {"path": "../modules/index.md", "title": "Redis modules API"}
+nav_prev: {"path": "redis/docs/latest/develop/reference/eviction/index.md", "title": "Key eviction"}
+nav_next: {"path": "redis/docs/latest/develop/reference/modules/index.md", "title": "Redis modules API"}
 ---
 
 # Command key specifications

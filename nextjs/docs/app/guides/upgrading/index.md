@@ -11,8 +11,8 @@ menu_path: ["Upgrade Guides"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../third-party-libraries/index.md", "title": "How to optimize third-party libraries"}
-nav_next: {"path": "codemods/index.md", "title": "Codemods"}
+nav_prev: {"path": "nextjs/docs/app/guides/third-party-libraries/index.md", "title": "How to optimize third-party libraries"}
+nav_next: {"path": "nextjs/docs/app/guides/upgrading/codemods/index.md", "title": "Codemods"}
 ---
 
 # Upgrade Guides
@@ -27,24 +27,24 @@ Learn how to upgrade to the latest versions of Next.js following the versions-sp
 
 Use codemods to upgrade your Next.js codebase when new features are released.
 
-](/docs/app/guides/upgrading/codemods)[
+](codemods/index.md)[
 
 ### Version 14
 
 Upgrade your Next.js Application from Version 13 to 14.
 
-](/docs/app/guides/upgrading/version-14)[
+](version-14/index.md)[
 
 ### Version 15
 
 Upgrade your Next.js Application from Version 14 to 15.
 
-](/docs/app/guides/upgrading/version-15)[
+](version-15/index.md)[
 
 ### Version 16
 
 Upgrade your Next.js Application from Version 15 to 16.
 
-](/docs/app/guides/upgrading/version-16)
+](version-16/index.md)
 
 Was this helpful?

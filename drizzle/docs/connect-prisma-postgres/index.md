@@ -10,8 +10,8 @@ content_hash: "caed94323d88cdc32c5da716dc93ea3c11a1eb4ab489b100bed66ae6c0a5be0f"
 menu_path: ["Drizzle <> Prisma Postgres"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../connect-vercel-postgres/index.md", "title": "Drizzle <> Vercel Postgres"}
-nav_next: {"path": "../connect-supabase/index.md", "title": "Drizzle <> Supabase"}
+nav_prev: {"path": "drizzle/docs/connect-vercel-postgres/index.md", "title": "Drizzle <> Vercel Postgres"}
+nav_next: {"path": "drizzle/docs/connect-supabase/index.md", "title": "Drizzle <> Supabase"}
 ---
 
 This guide assumes familiarity with:

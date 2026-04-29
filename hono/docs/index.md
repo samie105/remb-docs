@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:32:27.252Z"
 content_hash: "a50350254bf2c41db401b1f8ccfb625d0e91ce1517e42f3577027bfd64198ade"
 menu_path: ["Hono ​"]
 section_path: []
-nav_prev: {"path": "middleware/third-party/index.md", "title": "Third-party Middleware \u200b"}
+nav_prev: {"path": "hono/docs/middleware/third-party/index.md", "title": "Third-party Middleware \u200b"}
 ---
 
 ## Hono [​](#hono)

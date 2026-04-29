@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../authentication/index.md", "title": "How to implement authentication in Next.js"}
-nav_next: {"path": "../caching-without-cache-components/index.md", "title": "Caching and Revalidating (Previous Model)"}
+nav_prev: {"path": "nextjs/docs/app/guides/authentication/index.md", "title": "How to implement authentication in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/caching-without-cache-components/index.md", "title": "Caching and Revalidating (Previous Model)"}
 ---
 
 # How to use Next.js as a backend for your frontend
@@ -54,9 +54,9 @@ pnpm create next-app --api
 
 To implement this pattern, use:
 
--   [Route Handlers](/docs/app/api-reference/file-conventions/route)
--   [`proxy`](/docs/app/api-reference/file-conventions/proxy)
--   In Pages Router, [API Routes](/docs/pages/building-your-application/routing/api-routes)
+-   [Route Handlers](../../api-reference/file-conventions/route/index.md)
+-   [`proxy`](../../api-reference/file-conventions/proxy/index.md)
+-   In Pages Router, [API Routes](../../../pages/building-your-application/routing/api-routes/index.md)
 
 ## Public Endpoints[](#public-endpoints)
 
@@ -98,7 +98,7 @@ export async function POST(request: Request) {
 
 Avoid exposing sensitive information in error messages sent to the client.
 
-To restrict access, implement authentication and authorization. See [Authentication](/docs/app/guides/authentication).
+To restrict access, implement authentication and authorization. See [Authentication](../authentication/index.md).
 
 ## Content types[](#content-types)
 
@@ -106,11 +106,11 @@ Route Handlers let you serve non-UI responses, including JSON, XML, images, file
 
 Next.js uses file conventions for common endpoints:
 
--   [`sitemap.xml`](/docs/app/api-reference/file-conventions/metadata/sitemap)
--   [`opengraph-image.jpg`, `twitter-image`](/docs/app/api-reference/file-conventions/metadata/opengraph-image)
--   [favicon, app icon, and apple-icon](/docs/app/api-reference/file-conventions/metadata/app-icons)
--   [`manifest.json`](/docs/app/api-reference/file-conventions/metadata/manifest)
--   [`robots.txt`](/docs/app/api-reference/file-conventions/metadata/robots)
+-   [`sitemap.xml`](../../api-reference/file-conventions/metadata/sitemap/index.md)
+-   [`opengraph-image.jpg`, `twitter-image`](../../api-reference/file-conventions/metadata/opengraph-image/index.md)
+-   [favicon, app icon, and apple-icon](../../api-reference/file-conventions/metadata/app-icons/index.md)
+-   [`manifest.json`](../../api-reference/file-conventions/metadata/manifest/index.md)
+-   [`robots.txt`](../../api-reference/file-conventions/metadata/robots/index.md)
 
 You can also define custom ones, such as:
 
@@ -158,7 +158,7 @@ Sanitize any input used to generate markup.
 
 ### Content negotiation[](#content-negotiation)
 
-You can use [rewrites](/docs/app/api-reference/config/next-config-js/rewrites) with header matching to serve different content types from the same URL based on the request's `Accept` header. This is known as [content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation).
+You can use [rewrites](../../api-reference/config/next-config-js/rewrites/index.md) with header matching to serve different content types from the same URL based on the request's `Accept` header. This is known as [content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation).
 
 For example, a documentation site might serve HTML pages to browsers and raw Markdown to AI agents from the same `/docs/…` URLs.
 
@@ -234,8 +234,8 @@ curl https://example.com/docs/getting-started
 
 > **Good to know:**
 > 
-> -   The `/docs/md/...` route is still directly accessible without the rewrite. If you want to restrict it to only serve via the rewrite, use [`proxy`](/docs/app/api-reference/file-conventions/proxy) to block direct requests that don't include the expected `Accept` header.
-> -   For more advanced negotiation logic, you can use [`proxy`](/docs/app/api-reference/file-conventions/proxy) instead of rewrites for more flexibility.
+> -   The `/docs/md/...` route is still directly accessible without the rewrite. If you want to restrict it to only serve via the rewrite, use [`proxy`](../../api-reference/file-conventions/proxy/index.md) to block direct requests that don't include the expected `Accept` header.
+> -   For more advanced negotiation logic, you can use [`proxy`](../../api-reference/file-conventions/proxy/index.md) instead of rewrites for more flexibility.
 
 ### Consuming request payloads[](#consuming-request-payloads)
 
@@ -377,7 +377,7 @@ export async function POST(request: Request, { params }) {
 Or use:
 
 -   `proxy` [rewrites](#proxy)
--   [`rewrites`](/docs/app/api-reference/config/next-config-js/rewrites) in `next.config.js`.
+-   [`rewrites`](../../api-reference/config/next-config-js/rewrites/index.md) in `next.config.js`.
 
 ## NextRequest and NextResponse[](#nextrequest-and-nextresponse)
 
@@ -385,7 +385,7 @@ Next.js extends the [`Request`](https://developer.mozilla.org/en-US/docs/Web/API
 
 Both provide methods for reading and manipulating cookies.
 
-`NextRequest` includes the [`nextUrl`](/docs/app/api-reference/functions/next-request#nexturl) property, which exposes parsed values from the incoming request, for example, it makes it easier to access request pathname and search params.
+`NextRequest` includes the [`nextUrl`](../../api-reference/functions/next-request/index.md#nexturl) property, which exposes parsed values from the incoming request, for example, it makes it easier to access request pathname and search params.
 
 `NextResponse` provides helpers like `next()`, `json()`, `redirect()`, and `rewrite()`.
 
@@ -413,7 +413,7 @@ export async function GET(request: NextRequest) {
 }
 ```
 
-Learn more about [`NextRequest`](/docs/app/api-reference/functions/next-request) and [`NextResponse`](/docs/app/api-reference/functions/next-response).
+Learn more about [`NextRequest`](../../api-reference/functions/next-request/index.md) and [`NextResponse`](../../api-reference/functions/next-response/index.md).
 
 ## Webhooks and callback URLs[](#webhooks-and-callback-urls)
 
@@ -489,11 +489,11 @@ export async function GET(request: Request) {
 }
 ```
 
-Learn more about redirects in [`redirect`](/docs/app/api-reference/functions/redirect) and [`permanentRedirect`](/docs/app/api-reference/functions/permanentRedirect)
+Learn more about redirects in [`redirect`](../../api-reference/functions/redirect/index.md) and [`permanentRedirect`](../../api-reference/functions/permanentRedirect/index.md)
 
 ## Proxy[](#proxy)
 
-Only one `proxy` file is allowed per project. Use `config.matcher` to target specific paths. Learn more about [`proxy`](/docs/app/api-reference/file-conventions/proxy).
+Only one `proxy` file is allowed per project. Use `config.matcher` to target specific paths. Learn more about [`proxy`](../../api-reference/file-conventions/proxy/index.md).
 
 Use `proxy` to generate a response before the request reaches a route path.
 
@@ -561,7 +561,7 @@ Be deliberate about where headers go, and avoid directly passing incoming reques
 -   **Upstream request headers**: In Proxy, `NextResponse.next({ request: { headers } })` modifies the headers your server receives and does not expose them to the client.
 -   **Response headers**: `new Response(..., { headers })`, `NextResponse.json(..., { headers })`, `NextResponse.next({ headers })`, or `response.headers.set(...)` send headers back to the client. If sensitive values were appended to these headers, they will be visible to clients.
 
-Learn more in [NextResponse headers in Proxy](/docs/app/api-reference/functions/next-response#next).
+Learn more in [NextResponse headers in Proxy](../../api-reference/functions/next-response/index.md#next).
 
 ### Rate limiting[](#rate-limiting)
 
@@ -608,7 +608,7 @@ Preflight requests use the `OPTIONS` method to ask the server if a request is al
 
 If `OPTIONS` is not defined, Next.js adds it automatically and sets the `Allow` header based on the other defined methods.
 
--   [CORS](/docs/app/api-reference/file-conventions/route#cors)
+-   [CORS](../../api-reference/file-conventions/route/index.md#cors)
 
 ## Library patterns[](#library-patterns)
 
@@ -644,9 +644,9 @@ export default createMiddleware()
 
 ## More examples[](#more-examples)
 
-See more examples on using [Router Handlers](/docs/app/api-reference/file-conventions/route#examples) and the [`proxy`](/docs/app/api-reference/file-conventions/proxy#examples) API references.
+See more examples on using [Router Handlers](../../api-reference/file-conventions/route/index.md#examples) and the [`proxy`](../../api-reference/file-conventions/proxy/index.md#examples) API references.
 
-These examples include, working with [Cookies](/docs/app/api-reference/file-conventions/route#cookies), [Headers](/docs/app/api-reference/file-conventions/route#headers), [Streaming](/docs/app/api-reference/file-conventions/route#streaming), Proxy [negative matching](/docs/app/api-reference/file-conventions/proxy#negative-matching), and other useful code snippets.
+These examples include, working with [Cookies](../../api-reference/file-conventions/route/index.md#cookies), [Headers](../../api-reference/file-conventions/route/index.md#headers), [Streaming](../../api-reference/file-conventions/route/index.md#streaming), Proxy [negative matching](../../api-reference/file-conventions/proxy/index.md#negative-matching), and other useful code snippets.
 
 ## Caveats[](#caveats)
 
@@ -679,9 +679,9 @@ Server Actions are queued. Using them for data fetching introduces sequential ex
 
 ### `export` mode[](#export-mode)
 
-`export` mode outputs a static site without a runtime server. Features that require the Next.js runtime are [not supported](/docs/app/guides/static-exports#unsupported-features), because this mode produces a static site, and no runtime server.
+`export` mode outputs a static site without a runtime server. Features that require the Next.js runtime are [not supported](../static-exports/index.md#unsupported-features), because this mode produces a static site, and no runtime server.
 
-In `export mode`, only `GET` Route Handlers are supported, in combination with the [`dynamic`](/docs/app/guides/caching-without-cache-components#dynamic) route segment config, set to `'force-static'`.
+In `export mode`, only `GET` Route Handlers are supported, in combination with the [`dynamic`](../caching-without-cache-components/index.md#dynamic) route segment config, set to `'force-static'`.
 
 This can be used to generate static HTML, JSON, TXT, or other files.
 
@@ -714,18 +714,18 @@ Learn more about Route Handlers, Proxy, and Rewrites
 
 API reference for the route.js special file.
 
-](/docs/app/api-reference/file-conventions/route)[
+](../../api-reference/file-conventions/route/index.md)[
 
 ### proxy.js
 
 API reference for the proxy.js file.
 
-](/docs/app/api-reference/file-conventions/proxy)[
+](../../api-reference/file-conventions/proxy/index.md)[
 
 ### rewrites
 
 Add rewrites to your Next.js app.
 
-](/docs/app/api-reference/config/next-config-js/rewrites)
+](../../api-reference/config/next-config-js/rewrites/index.md)
 
 Was this helpful?

@@ -10,8 +10,8 @@ content_hash: "4a051f8497d1ac43fbdd5f93a09e764a6435bdb64b5002daa9a6be7f88a03340"
 menu_path: ["PostgreSQL: Documentation: 18: 55.2. Reporting Errors Within the Server"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../ecpg-variables.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.4.\u00a0Using Host Variables"}
-nav_next: {"path": "../event-log-registration.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.12.\u00a0Registering Event Log on Windows"}
+nav_prev: {"path": "postgres/docs/current/ecpg-variables.html/index.md", "title": "PostgreSQL: Documentation: 18: 34.4.\u00a0Using Host Variables"}
+nav_next: {"path": "postgres/docs/current/event-log-registration.html/index.md", "title": "PostgreSQL: Documentation: 18: 18.12.\u00a0Registering Event Log on Windows"}
 ---
 
 Error, warning, and log messages generated within the server code should be created using `ereport`, or its older cousin `elog`. The use of this function is complex enough to require some explanation.

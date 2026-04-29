@@ -10,8 +10,8 @@ content_hash: "5463d057949c38edbc0827ce003d4e7d217bf792f5b8af8f877f7911e558e947"
 menu_path: ["PostgreSQL: Documentation: 18: pg_restore"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../app-pgresetxlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.4.\u00a0pg_resetxlog renamed to pg_resetwal"}
-nav_next: {"path": "../app-pgrewind.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_rewind"}
+nav_prev: {"path": "postgres/docs/current/app-pgresetxlog.html/index.md", "title": "PostgreSQL: Documentation: 18: O.4.\u00a0pg_resetxlog renamed to pg_resetwal"}
+nav_next: {"path": "postgres/docs/current/app-pgrewind.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_rewind"}
 ---
 
 pg\_restore accepts the following command line arguments.

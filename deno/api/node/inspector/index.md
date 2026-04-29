@@ -10,8 +10,8 @@ content_hash: "83dec7442930414ae46b8c3cea98840bccdbc09e7c031d666436138a79a43faf"
 menu_path: ["inspector - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../https/index.md", "title": "https - Node documentation"}
-nav_next: {"path": "promises/index.md", "title": "inspector/promises - Node documentation"}
+nav_prev: {"path": "deno/api/node/https/index.md", "title": "https - Node documentation"}
+nav_next: {"path": "deno/api/node/inspector/promises/index.md", "title": "inspector/promises - Node documentation"}
 ---
 
 ### Usage in Deno

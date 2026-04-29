@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:15.850Z"
 content_hash: "2065e5bd874ce094f99993d175af575700e77f461cb869b4c6a0654602319dc6"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Working with branches","Working with branches"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Working with branches","Working with branches"]
-nav_prev: {"path": "../troubleshooting/index.md", "title": "Troubleshooting"}
-nav_next: {"path": "../../database-migrations/index.md", "title": "Database Migrations"}
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/troubleshooting/index.md", "title": "Troubleshooting"}
+nav_next: {"path": "supabase/docs/guides/deployment/database-migrations/index.md", "title": "Database Migrations"}
 ---
 
 # 
@@ -99,7 +99,7 @@ The new preview branch is reseeded from the `./supabase/seed.sql` file by defaul
 
 ### Seeding behavior[#](#seeding-behavior)
 
-Your Preview Branches are seeded with sample data using the same as [local seeding behavior](/docs/guides/local-development/seeding-your-database).
+Your Preview Branches are seeded with sample data using the same as [local seeding behavior](../../../local-development/seeding-your-database/index.md).
 
 The database is only seeded once, when the preview branch is created. To rerun seeding, delete the preview branch and recreate it by closing, and reopening your pull request.
 
@@ -155,6 +155,6 @@ Branches are completely isolated from each other. Changes made in one branch don
 
 ## Next steps[#](#next-steps)
 
-*   Learn about [branch configuration](/docs/guides/deployment/branching/configuration)
-*   Explore [integrations](/docs/guides/deployment/branching/integrations)
-*   Review [troubleshooting guide](/docs/guides/deployment/branching/troubleshooting)
+*   Learn about [branch configuration](../configuration/index.md)
+*   Explore [integrations](../integrations/index.md)
+*   Review [troubleshooting guide](../troubleshooting/index.md)

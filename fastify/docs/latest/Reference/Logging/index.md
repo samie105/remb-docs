@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:41.206Z"
 content_hash: "43858e2b2c46de0ee2a824eddb0d5c311d1e0e3d39298e7f4940290d04b7b62e"
 menu_path: ["Logging"]
 section_path: []
-nav_prev: {"path": "../Lifecycle/index.md", "title": "Lifecycle"}
-nav_next: {"path": "../Middleware/index.md", "title": "Middleware"}
+nav_prev: {"path": "fastify/docs/latest/Reference/Lifecycle/index.md", "title": "Lifecycle"}
+nav_next: {"path": "fastify/docs/latest/Reference/Middleware/index.md", "title": "Middleware"}
 ---
 
 Version: latest (v5.8.x)
@@ -73,13 +73,13 @@ const split = require('split2')const stream = split(JSON.parse)const fastify = r
 
 #### Request ID Tracking[​](#request-id-tracking "Direct link to Request ID Tracking")
 
-By default, Fastify adds an ID to every request for easier tracking. If the `requestIdHeader` option is set and the corresponding header is present, its value is used; otherwise, a new incremental ID is generated. See Fastify Factory [`requestIdHeader`](/docs/latest/Reference/Server/#factory-request-id-header) and Fastify Factory [`genReqId`](/docs/latest/Reference/Server/#genreqid) for customization options.
+By default, Fastify adds an ID to every request for easier tracking. If the `requestIdHeader` option is set and the corresponding header is present, its value is used; otherwise, a new incremental ID is generated. See Fastify Factory [`requestIdHeader`](../Server/index.md#factory-request-id-header) and Fastify Factory [`genReqId`](../Server/index.md#genreqid) for customization options.
 
 > ⚠ Warning: Enabling `requestIdHeader` allows any callers to set `reqId` to a value of their choosing. No validation is performed on `requestIdHeader`.
 
 #### Serializers[​](#serializers "Direct link to Serializers")
 
-The default logger uses standard serializers for objects with `req`, `res`, and `err` properties. The `req` object is the Fastify [`Request`](/docs/latest/Reference/Request/) object, and the `res` object is the Fastify [`Reply`](/docs/latest/Reference/Reply/) object. This behavior can be customized with custom serializers.
+The default logger uses standard serializers for objects with `req`, `res`, and `err` properties. The `req` object is the Fastify [`Request`](../Request/index.md) object, and the `res` object is the Fastify [`Reply`](../Reply/index.md) object. This behavior can be customized with custom serializers.
 
 ```
 const fastify = require('fastify')({  logger: {    serializers: {      req (request) {        return { url: request.url }      }    }  }})
@@ -91,7 +91,7 @@ For example, the response payload and headers could be logged using the approach
 const fastify = require('fastify')({  logger: {    transport: {      target: 'pino-pretty'    },    serializers: {      res (reply) {        // The default        return {          statusCode: reply.statusCode        }      },      req (request) {        return {          method: request.method,          url: request.url,          path: request.routeOptions.url,          parameters: request.params,          // Including headers in the log could violate privacy laws,          // e.g., GDPR. Use the "redact" option to remove sensitive          // fields. It could also leak authentication data in the logs.          headers: request.headers        };      }    }  }});
 ```
 
-> ℹ️ Note: In some cases, the [`Reply`](/docs/latest/Reference/Reply/) object passed to the `res` serializer cannot be fully constructed. When writing a custom `res` serializer, check for the existence of any properties on `reply` aside from `statusCode`, which is always present. For example, verify the existence of `getHeaders` before calling it:
+> ℹ️ Note: In some cases, the [`Reply`](../Reply/index.md) object passed to the `res` serializer cannot be fully constructed. When writing a custom `res` serializer, check for the existence of any properties on `reply` aside from `statusCode`, which is always present. For example, verify the existence of `getHeaders` before calling it:
 
 ```
 const fastify = require('fastify')({  logger: {    transport: {      target: 'pino-pretty'    },    serializers: {      res (reply) {        // The default        return {          statusCode: reply.statusCode,          headers: typeof reply.getHeaders === 'function'            ? reply.getHeaders()            : {}        }      },    }  }});
@@ -119,7 +119,7 @@ Example:
 const log = require('pino')({ level: 'info' })const fastify = require('fastify')({ loggerInstance: log })log.info('does not have request information')fastify.get('/', function (request, reply) {  request.log.info('includes request information, but is the same logger instance as `log`')  reply.send({ hello: 'world' })})
 ```
 
-_The logger instance for the current request is available in every part of the [lifecycle](/docs/latest/Reference/Lifecycle/)._
+_The logger instance for the current request is available in every part of the [lifecycle](../Lifecycle/index.md)._
 
 ### Log Redaction[​](#log-redaction "Direct link to Log Redaction")
 

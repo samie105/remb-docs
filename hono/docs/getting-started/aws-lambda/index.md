@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:14.872Z"
 content_hash: "04e2e7da2d3142559be30d763fa4b914edc5f30beab9c90cc08fdbad57a02d79"
 menu_path: ["AWS Lambda ​"]
 section_path: []
-nav_prev: {"path": "../netlify/index.md", "title": "Netlify \u200b"}
-nav_next: {"path": "../lambda-edge/index.md", "title": "Lambda@Edge \u200b"}
+nav_prev: {"path": "hono/docs/getting-started/netlify/index.md", "title": "Netlify \u200b"}
+nav_next: {"path": "hono/docs/getting-started/lambda-edge/index.md", "title": "Lambda@Edge \u200b"}
 ---
 
 AWS Lambda is a serverless platform by Amazon Web Services. You can run your code in response to events and automatically manages the underlying compute resources for you.

@@ -11,8 +11,8 @@ menu_path: ["unstable_noStore"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../unstable_cache/index.md", "title": "unstable_cache"}
-nav_next: {"path": "../unstable_rethrow/index.md", "title": "unstable_rethrow"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/unstable_cache/index.md", "title": "unstable_cache"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/unstable_rethrow/index.md", "title": "unstable_rethrow"}
 ---
 
 # unstable\_noStore
@@ -21,7 +21,7 @@ This is a legacy API and no longer recommended. It's still supported for backwar
 
 Last updated April 23, 2026
 
-**In version 15, we recommend using [`connection`](/docs/app/api-reference/functions/connection) instead of `unstable_noStore`.**
+**In version 15, we recommend using [`connection`](../connection/index.md) instead of `unstable_noStore`.**
 
 `unstable_noStore` can be used to declaratively opt out of prerendering and indicate a particular component should not be cached.
 
@@ -40,7 +40,7 @@ export default async function ServerComponent() {
 > -   `unstable_noStore` is equivalent to `cache: 'no-store'` on a `fetch`
 > -   `unstable_noStore` is preferred over `export const dynamic = 'force-dynamic'` as it is more granular and can be used on a per-component basis
 
--   Using `unstable_noStore` inside [`unstable_cache`](/docs/app/api-reference/functions/unstable_cache) will not opt out of static generation. Instead, it will defer to the cache configuration to determine whether to cache the result or not.
+-   Using `unstable_noStore` inside [`unstable_cache`](../unstable_cache/index.md) will not opt out of static generation. Instead, it will defer to the cache configuration to determine whether to cache the result or not.
 
 ## Usage[](#usage)
 

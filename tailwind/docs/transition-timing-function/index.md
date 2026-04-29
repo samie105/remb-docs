@@ -10,8 +10,8 @@ content_hash: "932a94f71d6d6713355f3890820059e1c2b7e02124cec86bfb1063fc410480ac"
 menu_path: ["transition-timing-function"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../transition-duration/index.md", "title": "transition-duration"}
-nav_next: {"path": "../transition-delay/index.md", "title": "transition-delay"}
+nav_prev: {"path": "tailwind/docs/transition-duration/index.md", "title": "transition-duration"}
+nav_next: {"path": "tailwind/docs/transition-delay/index.md", "title": "transition-delay"}
 ---
 
 # transition-timing-function
@@ -89,7 +89,7 @@ Prefix a `transition-timing-function` utility with a breakpoint variant like `md
 <button class="ease-out md:ease-in ...">  <!-- ... --></button>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `--ease-*` theme variables to customize the transition timing function utilities in your project:
 
@@ -103,7 +103,7 @@ Now the `ease-in-expo` utility can be used in your markup:
 <button class="ease-in-expo">  <!-- ... --></button>
 ```
 
-Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+Learn more about customizing your theme in the [theme documentation](../theme/index.md#customizing-your-theme).
 
 ### On this page
 

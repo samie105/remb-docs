@@ -11,8 +11,8 @@ menu_path: ["File-system conventions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../components/script/index.md", "title": "Script Component"}
-nav_next: {"path": "default/index.md", "title": "default.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/components/script/index.md", "title": "Script Component"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/default/index.md", "title": "default.js"}
 ---
 
 # File-system conventions
@@ -25,132 +25,132 @@ Last updated April 23, 2026
 
 API Reference for the default.js file.
 
-](/docs/app/api-reference/file-conventions/default)[
+](default/index.md)[
 
 ### Dynamic Segments
 
 Dynamic Route Segments can be used to programmatically generate route segments from dynamic data.
 
-](/docs/app/api-reference/file-conventions/dynamic-routes)[
+](dynamic-routes/index.md)[
 
 ### error.js
 
 API reference for the error.js special file.
 
-](/docs/app/api-reference/file-conventions/error)[
+](error/index.md)[
 
 ### forbidden.js
 
 API reference for the forbidden.js special file.
 
-](/docs/app/api-reference/file-conventions/forbidden)[
+](forbidden/index.md)[
 
 ### instrumentation.js
 
 API reference for the instrumentation.js file.
 
-](/docs/app/api-reference/file-conventions/instrumentation)[
+](instrumentation/index.md)[
 
 ### instrumentation-client.js
 
 Learn how to add client-side instrumentation to track and monitor your Next.js application's frontend performance.
 
-](/docs/app/api-reference/file-conventions/instrumentation-client)[
+](instrumentation-client/index.md)[
 
 ### Intercepting Routes
 
 Use intercepting routes to load a new route within the current layout while masking the browser URL, useful for advanced routing patterns such as modals.
 
-](/docs/app/api-reference/file-conventions/intercepting-routes)[
+](intercepting-routes/index.md)[
 
 ### layout.js
 
 API reference for the layout.js file.
 
-](/docs/app/api-reference/file-conventions/layout)[
+](layout/index.md)[
 
 ### loading.js
 
 API reference for the loading.js file.
 
-](/docs/app/api-reference/file-conventions/loading)[
+](loading/index.md)[
 
 ### mdx-components.js
 
 API reference for the mdx-components.js file.
 
-](/docs/app/api-reference/file-conventions/mdx-components)[
+](mdx-components/index.md)[
 
 ### not-found.js
 
 API reference for the not-found.js file.
 
-](/docs/app/api-reference/file-conventions/not-found)[
+](not-found/index.md)[
 
 ### page.js
 
 API reference for the page.js file.
 
-](/docs/app/api-reference/file-conventions/page)[
+](page/index.md)[
 
 ### Parallel Routes
 
 Simultaneously render one or more pages in the same view that can be navigated independently. A pattern for highly dynamic applications.
 
-](/docs/app/api-reference/file-conventions/parallel-routes)[
+](parallel-routes/index.md)[
 
 ### proxy.js
 
 API reference for the proxy.js file.
 
-](/docs/app/api-reference/file-conventions/proxy)[
+](proxy/index.md)[
 
 ### public
 
 Next.js allows you to serve static files, like images, in the public directory. You can learn how it works here.
 
-](/docs/app/api-reference/file-conventions/public-folder)[
+](public-folder/index.md)[
 
 ### route.js
 
 API reference for the route.js special file.
 
-](/docs/app/api-reference/file-conventions/route)[
+](route/index.md)[
 
 ### Route Groups
 
 Route Groups can be used to partition your Next.js application into different sections.
 
-](/docs/app/api-reference/file-conventions/route-groups)[
+](route-groups/index.md)[
 
 ### src
 
 Save pages under the \`src\` folder as an alternative to the root \`pages\` directory.
 
-](/docs/app/api-reference/file-conventions/src-folder)[
+](src-folder/index.md)[
 
 ### template.js
 
 API Reference for the template.js file.
 
-](/docs/app/api-reference/file-conventions/template)[
+](template/index.md)[
 
 ### unauthorized.js
 
 API reference for the unauthorized.js special file.
 
-](/docs/app/api-reference/file-conventions/unauthorized)[
+](unauthorized/index.md)[
 
 ### Metadata Files
 
 API documentation for the metadata file conventions.
 
-](/docs/app/api-reference/file-conventions/metadata)[
+](metadata/index.md)[
 
 ### Route Segment Config
 
 Learn about how to configure options for Next.js route segments.
 
-](/docs/app/api-reference/file-conventions/route-segment-config)
+](route-segment-config/index.md)
 
 Was this helpful?

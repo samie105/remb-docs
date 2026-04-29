@@ -10,8 +10,8 @@ content_hash: "477a5a17f34b3769b9e9430fcf582ac1e0aca061b8577e06fdd305beb1eb5a62"
 menu_path: ["Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../cursor-based-pagination/index.md", "title": "Drizzle ORM - SQL Cursor-based pagination"}
-nav_next: {"path": "../decrementing-a-value/index.md", "title": "Drizzle ORM - SQL Decrement value"}
+nav_prev: {"path": "drizzle/docs/guides/cursor-based-pagination/index.md", "title": "Drizzle ORM - SQL Cursor-based pagination"}
+nav_next: {"path": "drizzle/docs/guides/decrementing-a-value/index.md", "title": "Drizzle ORM - SQL Decrement value"}
 ---
 
 Drizzle ORM - Cloudflare D1 HTTP API with Drizzle Kit

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:27.584Z"
 content_hash: "318c627025340b8f4d9a61b71f3e164a86a8ff32d6d98dbd9005746679884d46"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Vue 3","Vue 3"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Vue 3","Vue 3"]
-nav_prev: {"path": "../with-swift/index.md", "title": "Build a User Management App with Swift and SwiftUI"}
-nav_next: {"path": "../../../integrations/index.md", "title": "Integrations"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-swift/index.md", "title": "Build a User Management App with Swift and SwiftUI"}
+nav_next: {"path": "supabase/docs/guides/integrations/index.md", "title": "Integrations"}
 ---
 
 # 
@@ -27,9 +27,9 @@ UI components built on shadcn/ui that connect to Supabase via a single command.
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/user-management-demo.png)
 
@@ -65,7 +65,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=vuejs).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -101,7 +101,7 @@ And finally save the environment variables in a `.env` file, you need the API UR
 1VITE_SUPABASE_URL=YOUR_SUPABASE_URL2VITE_SUPABASE_PUBLISHABLE_KEY=YOUR_SUPABASE_PUBLISHABLE_KEY
 ```
 
-With the API credentials in place, create an `src/supabase.js` helper file to initialize the Supabase client. These variables are exposed on the browser, and that's fine since you have [Row Level Security](/docs/guides/auth#row-level-security) enabled on the Database.
+With the API credentials in place, create an `src/supabase.js` helper file to initialize the Supabase client. These variables are exposed on the browser, and that's fine since you have [Row Level Security](../../../auth/index.md#row-level-security) enabled on the Database.
 
 ###### src/supabase.js
 
@@ -161,7 +161,7 @@ And then open the browser to [localhost:5173](http://localhost:5173) and you sho
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Create an upload widget[#](#create-an-upload-widget)
 

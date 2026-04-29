@@ -11,8 +11,8 @@ menu_path: ["staticGeneration*"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../staleTimes/index.md", "title": "staleTimes"}
-nav_next: {"path": "../taint/index.md", "title": "taint"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/staleTimes/index.md", "title": "staleTimes"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/taint/index.md", "title": "taint"}
 ---
 
 # staticGeneration\*

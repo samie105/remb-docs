@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:02.668Z"
 content_hash: "a9825b31c926e5a0e4bb05e7174a1dea55512ac451a57190e1be74a1325715b1"
 menu_path: ["Ecosystem"]
 section_path: []
-nav_prev: {"path": "../Detecting-When-Clients-Abort/index.md", "title": "Detecting When Clients Abort"}
-nav_next: {"path": "../Fluent-Schema/index.md", "title": "Fluent-Schema"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Detecting-When-Clients-Abort/index.md", "title": "Detecting When Clients Abort"}
+nav_next: {"path": "fastify/docs/latest/Guides/Fluent-Schema/index.md", "title": "Fluent-Schema"}
 ---
 
 Version: latest (v5.8.x)

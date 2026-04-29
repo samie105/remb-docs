@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:29.751Z"
 content_hash: "e22880ed4d85cf79acce5e1bfa2dadba4b21ecc96a8568d846749613b6d36a60"
 menu_path: ["Realtime","Realtime","Usage","Usage","Postgres Changes","Postgres Changes"]
 section_path: ["Realtime","Realtime","Usage","Usage","Postgres Changes","Postgres Changes"]
-nav_prev: {"path": "../limits/index.md", "title": "Realtime Limits"}
-nav_next: {"path": "../presence/index.md", "title": "Presence"}
+nav_prev: {"path": "supabase/docs/guides/realtime/limits/index.md", "title": "Realtime Limits"}
+nav_next: {"path": "supabase/docs/guides/realtime/presence/index.md", "title": "Presence"}
 ---
 
 # 
@@ -45,7 +45,7 @@ After your project is ready, create a table in your Supabase database. You can d
 
 ### Allow anonymous access
 
-In this example we'll turn on [Row Level Security](/docs/guides/database/postgres/row-level-security) for this table and allow anonymous access. In production, be sure to secure your application with the appropriate permissions.
+In this example we'll turn on [Row Level Security](../../database/postgres/row-level-security/index.md) for this table and allow anonymous access. In production, be sure to secure your application with the appropriate permissions.
 
 ```
 1-- Turn on security2alter table "todos"3enable row level security;45-- Allow anonymous access6create policy "Allow anonymous access"7on todos8for select9to anon10using (true);

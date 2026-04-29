@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:20.222Z"
 content_hash: "7b166c246be81c79962b8d190906bfa292c99677d8756a59fccb574a08b8f4fd"
 menu_path: ["Server-Side Rendering"]
 section_path: []
-nav_prev: {"path": "../ssg/index.md", "title": "Static Site Generation"}
-nav_next: {"path": "../starter-projects/index.md", "title": "Starter Projects"}
+nav_prev: {"path": "trpc/docs/v10/client/nextjs/ssg/index.md", "title": "Static Site Generation"}
+nav_next: {"path": "trpc/docs/v10/client/nextjs/starter-projects/index.md", "title": "Starter Projects"}
 ---
 
 To enable SSR just set `ssr: true` in your `createTRPCNext` config callback.

@@ -11,8 +11,8 @@ menu_path: ["Create custom Prisma Client queries"]
 section_path: []
 tab_variants: ["Relational databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "../model/index.md", "title": "Add custom methods to your models"}
-nav_next: {"path": "../result/index.md", "title": "Add custom fields and methods to query results"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/client-extensions/model/index.md", "title": "Add custom methods to your models"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/client-extensions/result/index.md", "title": "Add custom fields and methods to query results"}
 ---
 
 You can use the `query` [Prisma Client extensions](../index.md) component type to hook into the query life-cycle and modify an incoming query or its result.

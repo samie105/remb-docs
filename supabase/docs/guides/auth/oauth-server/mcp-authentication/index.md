@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:20.835Z"
 content_hash: "53773146900b9e68d86e5e6d4b49c24788b4469052eb8e9ecfcbe7213a2105ae"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","MCP Authentication","MCP Authentication"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","MCP Authentication","MCP Authentication"]
-nav_prev: {"path": "../getting-started/index.md", "title": "Getting Started with OAuth 2.1 Server"}
-nav_next: {"path": "../oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/getting-started/index.md", "title": "Getting Started with OAuth 2.1 Server"}
+nav_next: {"path": "supabase/docs/guides/auth/oauth-server/oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
 ---
 
 # 
@@ -49,8 +49,8 @@ By leveraging Supabase Auth, your MCP server can authenticate AI agents using yo
 
 Before setting up MCP authentication:
 
-*   [Enable OAuth 2.1 server](/docs/guides/auth/oauth-server/getting-started) in your Supabase project
-*   Build an [authorization endpoint](/docs/guides/auth/oauth-server/getting-started#build-your-authorization-endpoint)
+*   [Enable OAuth 2.1 server](../getting-started/index.md) in your Supabase project
+*   Build an [authorization endpoint](../getting-started/index.md#build-your-authorization-endpoint)
 *   (Optional) Enable dynamic client registration
 
 ## Setting up your MCP server[#](#setting-up-your-mcp-server)
@@ -73,7 +73,7 @@ MCP clients will automatically discover your OAuth configuration from:
 
 Depending on your MCP server implementation, you have two options:
 
-*   **Pre-register an OAuth client** - Manually register your client by following the [Register an OAuth client](/docs/guides/auth/oauth-server/getting-started#register-an-oauth-client) guide and use the client credentials in your MCP server
+*   **Pre-register an OAuth client** - Manually register your client by following the [Register an OAuth client](../getting-started/index.md#register-an-oauth-client) guide and use the client credentials in your MCP server
 *   **Dynamic client registration** - Enable this in **Authentication** > **OAuth Server** in your Supabase dashboard to allow MCP clients to register themselves automatically without manual intervention
 
 Dynamic registration allows any MCP client to register with your project. Consider:
@@ -98,7 +98,7 @@ When your MCP server makes requests to your Supabase APIs on behalf of authentic
 
 Use the same token validation as other OAuth clients.
 
-See [Token Security & RLS](/docs/guides/auth/oauth-server/token-security) for more examples.
+See [Token Security & RLS](../token-security/index.md) for more examples.
 
 ## Security considerations[#](#security-considerations)
 
@@ -154,10 +154,10 @@ Always require explicit user approval for MCP clients:
 *   Check RLS policies include the MCP client's `client_id`
 *   Verify user has necessary permissions
 *   Test with secret key to isolate RLS issues
-*   Review [Token Security guide](/docs/guides/auth/oauth-server/token-security)
+*   Review [Token Security guide](../token-security/index.md)
 
 ## Next steps[#](#next-steps)
 
-*   [Secure with RLS](/docs/guides/auth/oauth-server/token-security) - Create granular policies for MCP clients
-*   [OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Deep dive into OAuth implementation
+*   [Secure with RLS](../token-security/index.md) - Create granular policies for MCP clients
+*   [OAuth flows](../oauth-flows/index.md) - Deep dive into OAuth implementation
 *   [MCP Specification](https://modelcontextprotocol.io/docs) - Official MCP documentation

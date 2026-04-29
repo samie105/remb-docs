@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:19.770Z"
 content_hash: "d0446929003dda361539fc37f243cf70553777417750c71caf51c31e6bbce555"
 menu_path: ["React Query Integration (Classic)"]
 section_path: []
-nav_prev: {"path": "../nextjs/starter-projects/index.md", "title": "Starter Projects"}
-nav_next: {"path": "aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_prev: {"path": "trpc/docs/client/nextjs/starter-projects/index.md", "title": "Starter Projects"}
+nav_next: {"path": "trpc/docs/client/react/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
 
 tip

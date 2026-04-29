@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:32.995Z"
 content_hash: "2783c693f8834254ec547da6842a247baaacf05e44096eef844232b010215e6d"
 menu_path: ["PostgreSQL: Documentation: 18: 2.9. Deletions"]
 section_path: []
-nav_prev: {"path": "../tutorial-createdb.html/index.md", "title": "PostgreSQL: Documentation: 18: 1.3.\u00a0Creating a Database"}
-nav_next: {"path": "../tutorial-fk.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.3.\u00a0Foreign Keys"}
+nav_prev: {"path": "postgres/docs/current/tutorial-createdb.html/index.md", "title": "PostgreSQL: Documentation: 18: 1.3.\u00a0Creating a Database"}
+nav_next: {"path": "postgres/docs/current/tutorial-fk.html/index.md", "title": "PostgreSQL: Documentation: 18: 3.3.\u00a0Foreign Keys"}
 ---
 
 Rows can be removed from a table using the `DELETE` command. Suppose you are no longer interested in the weather of Hayward. Then you can do the following to delete those rows from the table:

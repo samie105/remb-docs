@@ -11,8 +11,8 @@ menu_path: ["basePath"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../authInterrupts/index.md", "title": "authInterrupts"}
-nav_next: {"path": "../cacheComponents/index.md", "title": "cacheComponents"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/authInterrupts/index.md", "title": "authInterrupts"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/cacheComponents/index.md", "title": "cacheComponents"}
 ---
 
 # basePath
@@ -59,7 +59,7 @@ This makes sure that you don't have to change all links in your application when
 
 ### Images[](#images)
 
-When using the [`next/image`](/docs/app/api-reference/components/image) component, you will need to add the `basePath` in front of `src`.
+When using the [`next/image`](../../../components/image/index.md) component, you will need to add the `basePath` in front of `src`.
 
 For example, using `/docs/me.png` will properly serve your image when `basePath` is set to `/docs`.
 

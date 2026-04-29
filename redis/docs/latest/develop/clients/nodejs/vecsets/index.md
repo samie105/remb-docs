@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:04.927Z"
 content_hash: "e356548cb3ea42bd72023fd5abd08f0b8726374df61aa7f74dd0726adeab1dee"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Vector set embeddings","→","Vector set embeddings"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Vector set embeddings","→","Vector set embeddings"]
-nav_prev: {"path": "../vecsearch/index.md", "title": "Index and query vectors"}
-nav_next: {"path": "../../patterns/bulk-loading/index.md", "title": "Bulk loading"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/vecsearch/index.md", "title": "Index and query vectors"}
+nav_next: {"path": "redis/docs/latest/develop/clients/patterns/bulk-loading/index.md", "title": "Bulk loading"}
 ---
 
 # Vector set embeddings
@@ -23,7 +23,7 @@ You can use vector sets to store any type of numeric vector but they are particu
 
 ## Initialize
 
-Start by [installing](/docs/latest/develop/clients/nodejs/#install) `node-redis` if you haven't already done so. Also, install `@xenova/transformers`:
+Start by [installing](../index.md#install) `node-redis` if you haven't already done so. Also, install `@xenova/transformers`:
 
 ```bash
 npm install @xenova/transformers
@@ -1316,6 +1316,6 @@ Note that the boolean filter expression is applied to items in the list before t
 
 See the [vector sets](/docs/latest/develop/data-types/vector-sets/) docs for more information and code examples. See the [Redis for AI](/docs/latest/develop/ai/) section for more details about text embeddings and other AI techniques you can use with Redis.
 
-You may also be interested in [vector search](/docs/latest/develop/clients/nodejs/vecsearch/). This is a feature of [Redis Search](/docs/latest/develop/ai/search-and-query/) that lets you retrieve [JSON](/docs/latest/develop/data-types/json/) and [hash](/docs/latest/develop/data-types/hashes/) documents based on vector data stored in their fields.
+You may also be interested in [vector search](../vecsearch/index.md). This is a feature of [Redis Search](/docs/latest/develop/ai/search-and-query/) that lets you retrieve [JSON](/docs/latest/develop/data-types/json/) and [hash](/docs/latest/develop/data-types/hashes/) documents based on vector data stored in their fields.
 
 ## On this page

@@ -10,8 +10,8 @@ content_hash: "8f2cbc47355da31ffb50b6164682378cc1379be8858acc59faf031579aceaf39"
 menu_path: ["PostgreSQL: Documentation: 18: F.35. pg_trgm — support for similarity of text using trigram matching"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../pgtesttiming.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_timing"}
-nav_next: {"path": "../plperl-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.6.\u00a0PL/Perl Triggers"}
+nav_prev: {"path": "postgres/docs/current/pgtesttiming.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_test_timing"}
+nav_next: {"path": "postgres/docs/current/plperl-triggers.html/index.md", "title": "PostgreSQL: Documentation: 18: 43.6.\u00a0PL/Perl Triggers"}
 ---
 
 The `pg_trgm` module provides functions and operators for determining the similarity of alphanumeric text based on trigram matching, as well as index operator classes that support fast searching for similar strings.

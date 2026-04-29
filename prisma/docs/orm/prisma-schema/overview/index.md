@@ -11,8 +11,8 @@ menu_path: ["Overview of Prisma Schema"]
 section_path: []
 tab_variants: ["Relational Databases","MongoDB"]
 content_language: "en"
-nav_prev: {"path": "../data-model/views/index.md", "title": "Views"}
-nav_next: {"path": "data-sources/index.md", "title": "Data sources"}
+nav_prev: {"path": "prisma/docs/orm/prisma-schema/data-model/views/index.md", "title": "Views"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/overview/data-sources/index.md", "title": "Data sources"}
 ---
 
 Overview

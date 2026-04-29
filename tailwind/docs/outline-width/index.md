@@ -10,8 +10,8 @@ content_hash: "fe824e165aac2251f4bda46bb9a0f6b3b15bfbd4a2b020011b1782b9d0fce24e"
 menu_path: ["outline-width"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../border-style/index.md", "title": "border-style"}
-nav_next: {"path": "../outline-color/index.md", "title": "outline-color"}
+nav_prev: {"path": "tailwind/docs/border-style/index.md", "title": "border-style"}
+nav_next: {"path": "tailwind/docs/outline-color/index.md", "title": "outline-color"}
 ---
 
 # outline-width
@@ -60,7 +60,7 @@ Focus the button to see the outline added
 <button class="outline-offset-2 outline-sky-500 focus:outline-2 ...">Save Changes</button>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Use the `outline-[<value>]` syntax to set the outline width based on a completely custom value:
 
@@ -82,7 +82,7 @@ Prefix an `outline-width` utility with a breakpoint variant like `md:` to only a
 <div class="outline md:outline-2 ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:16.215Z"
 content_hash: "b58d64bacc82f68c03dcdcbc09e22d1634010e6955209895c410ebb79d63648c"
 menu_path: ["Keeping Components Pure"]
 section_path: []
-nav_prev: {"path": "../rendering-lists/index.md", "title": "Rendering Lists"}
-nav_next: {"path": "../understanding-your-ui-as-a-tree/index.md", "title": "Understanding Your UI as a Tree"}
+nav_prev: {"path": "react/learn/rendering-lists/index.md", "title": "Rendering Lists"}
+nav_next: {"path": "react/learn/understanding-your-ui-as-a-tree/index.md", "title": "Understanding Your UI as a Tree"}
 ---
 
 Some JavaScript functions are _pure._ Pure functions only perform a calculation and nothing more. By strictly only writing your components as pure functions, you can avoid an entire class of baffling bugs and unpredictable behavior as your codebase grows. To get these benefits, though, there are a few rules you must follow.

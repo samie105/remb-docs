@@ -10,8 +10,8 @@ content_hash: "606107d275b69e1ae41f9665e5725130504684b924ea942313d20fa744abde6e"
 menu_path: ["Working with compound IDs and unique constraints"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../null-and-undefined/index.md", "title": "Null and undefined"}
-nav_next: {"path": "../working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/null-and-undefined/index.md", "title": "Null and undefined"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/special-fields-and-types/working-with-geometry-fields/index.md", "title": "Working with geometry fields"}
 ---
 
 Special Fields and Types

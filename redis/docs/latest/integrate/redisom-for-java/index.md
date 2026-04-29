@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:14:35.324Z"
 content_hash: "54b6affa9ffdb66cbece04915a4bc0feaafa0d2c21984bf0c658ac3d89b60cca"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Java","→","RedisOM for Java"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        RedisOM for Java","→","RedisOM for Java"]
-nav_prev: {"path": "../redisinsight/index.md", "title": "Redis Insight"}
-nav_next: {"path": "../redisom-for-net/index.md", "title": "RedisOM for .NET"}
+nav_prev: {"path": "redis/docs/latest/integrate/redisinsight/index.md", "title": "Redis Insight"}
+nav_next: {"path": "redis/docs/latest/integrate/redisom-for-net/index.md", "title": "RedisOM for .NET"}
 ---
 
 # RedisOM for Java
@@ -23,8 +23,8 @@ Redis Stack is supported by several client libraries, including Node.js, Java, a
 
 ## What you’ll need:
 
-*   Redis Stack: See [/docs/latest/operate/oss\_and\_stack/install/install-stack/](/docs/latest/operate/oss_and_stack/install/install-stack/)
-*   [Redis Insight](/docs/latest/develop/tools/insight/)
+*   Redis Stack: See [/docs/latest/operate/oss\_and\_stack/install/install-stack/](../../operate/oss_and_stack/install/install-stack/index.md)
+*   [Redis Insight](../../develop/tools/insight/index.md)
 *   Your favorite browser
 *   Java 11 or greater
 

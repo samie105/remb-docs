@@ -10,8 +10,8 @@ content_hash: "294ec35404f43493f736fc2235eac0fd03aaa66fe48326315feaf522f70c069b"
 menu_path: ["padding"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../place-self/index.md", "title": "place-self"}
-nav_next: {"path": "../margin/index.md", "title": "margin"}
+nav_prev: {"path": "tailwind/docs/place-self/index.md", "title": "place-self"}
+nav_next: {"path": "tailwind/docs/margin/index.md", "title": "margin"}
 ---
 
 Utilities for controlling an element's padding.

@@ -10,8 +10,8 @@ content_hash: "90ad3d4da9d2265481d3e2c5ea1cf879613740594fc766f94af17da6f1e9b963"
 menu_path: ["text-decoration-line"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../color/index.md", "title": "color"}
-nav_next: {"path": "../text-decoration-color/index.md", "title": "text-decoration-color"}
+nav_prev: {"path": "tailwind/docs/color/index.md", "title": "color"}
+nav_next: {"path": "tailwind/docs/text-decoration-color/index.md", "title": "text-decoration-color"}
 ---
 
 # text-decoration-line
@@ -82,7 +82,7 @@ The [quick brown fox](https://en.wikipedia.org/wiki/The_quick_brown_fox_jumps_ov
 <p>The <a href="..." class="no-underline hover:underline ...">quick brown fox</a> jumps over the lazy dog.</p>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 Prefix a `text-decoration-line` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
@@ -90,7 +90,7 @@ Prefix a `text-decoration-line` utility with a breakpoint variant like `md:` to 
 <a class="no-underline md:underline ..." href="...">  <!-- ... --></a>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

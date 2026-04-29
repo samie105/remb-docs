@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:51.456Z"
 content_hash: "5645a0e0aafe2cc0ef1c5ec25b4e88921533aea1c529f57bfe64f9a76275d391"
 menu_path: ["Escape an HTML string"]
 section_path: []
-nav_prev: {"path": "../entrypoint/index.md", "title": "Check if the current file is the entrypoint"}
-nav_next: {"path": "../file-url-to-path/index.md", "title": "Convert a file URL to an absolute path"}
+nav_prev: {"path": "bun/docs/guides/util/entrypoint/index.md", "title": "Check if the current file is the entrypoint"}
+nav_next: {"path": "bun/docs/guides/util/file-url-to-path/index.md", "title": "Convert a file URL to an absolute path"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../file-url-to-path/index.md", "title": "Convert a file URL 
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.escapeHTML()` utility can be used to escape HTML characters in a string. The following replacements are made.
 
@@ -52,7 +52,7 @@ Bun.escapeHTML("<script>alert('Hello World!')</script>");
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -64,10 +64,10 @@ Compress and decompress data with DEFLATE
 
 Previous
 
-](/docs/guides/util/deflate)[
+](../deflate/index.md)[
 
 Check if two objects are deeply equal
 
 Next
 
-](/docs/guides/util/deep-equals)
+](../deep-equals/index.md)

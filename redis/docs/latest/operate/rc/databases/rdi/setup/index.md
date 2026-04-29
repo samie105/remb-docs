@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:02.183Z"
 content_hash: "c29d2409120d3019b3c2172c82b4f84a4f86fa252c432fb6219e057b8806e39f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        Prepare source database","→","Prepare source database"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Data Integration","→","Data Integration","→\n      \n        Prepare source database","→","Prepare source database"]
-nav_prev: {"path": "../quick-start/index.md", "title": "RDI on Redis Cloud quick start"}
-nav_next: {"path": "../view-edit/index.md", "title": "View and edit data pipeline"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/quick-start/index.md", "title": "RDI on Redis Cloud quick start"}
+nav_next: {"path": "redis/docs/latest/operate/rc/databases/rdi/view-edit/index.md", "title": "View and edit data pipeline"}
 ---
 
 # Prepare source database
@@ -45,17 +45,17 @@ Redis Cloud
 
 Before using the pipeline, you must first prepare your source database to use the Debezium connector for change data capture (CDC). See [Prerequisites](/docs/latest/operate/rc/databases/rdi/#prerequisites) to find a list of supported source databases and database versions.
 
-See [Prepare source databases](/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/) to find steps for your database type:
+See [Prepare source databases](../../../../../integrate/redis-data-integration/data-pipelines/prepare-dbs/index.md) to find steps for your database type:
 
 *   Hosted on an AWS EC2 instance:
-    *   [MySQL and mariaDB](/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/my-sql-mariadb/)
-    *   [Oracle](/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/oracle/)
-    *   [SQL Server](/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/sql-server/)
-    *   [PostgreSQL](/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/postgresql/)
+    *   [MySQL and mariaDB](../../../../../integrate/redis-data-integration/data-pipelines/prepare-dbs/my-sql-mariadb/index.md)
+    *   [Oracle](../../../../../integrate/redis-data-integration/data-pipelines/prepare-dbs/oracle/index.md)
+    *   [SQL Server](../../../../../integrate/redis-data-integration/data-pipelines/prepare-dbs/sql-server/index.md)
+    *   [PostgreSQL](../../../../../integrate/redis-data-integration/data-pipelines/prepare-dbs/postgresql/index.md)
 *   Hosted on AWS RDS or AWS Aurora:
-    *   [AWS Aurora PostgreSQL and AWS RDS PostgreSQL](/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-pgsql/)
-    *   [AWS Aurora MySQL and AWS RDS MySQL](/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-mysql/)
-    *   [AWS RDS SQL Server](/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-rds-sqlserver/)
+    *   [AWS Aurora PostgreSQL and AWS RDS PostgreSQL](../../../../../integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-pgsql/index.md)
+    *   [AWS Aurora MySQL and AWS RDS MySQL](../../../../../integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-aur-mysql/index.md)
+    *   [AWS RDS SQL Server](../../../../../integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/aws-rds-sqlserver/index.md)
 
 See the [RDI architecture overview](/docs/latest/integrate/redis-data-integration/architecture/#overview) for more information about CDC.
 
@@ -246,11 +246,11 @@ In the [AWS Management Console](https://console.aws.amazon.com/), use the **Serv
 }
 ```
 
-After you store this secret, you can view and copy the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#iam-resources) of your secret on the secret details page. Save the secret ARN to use when you [define your source database](/docs/latest/operate/rc/databases/rdi/define/).
+After you store this secret, you can view and copy the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#iam-resources) of your secret on the secret details page. Save the secret ARN to use when you [define your source database](../define/index.md).
 
 ## Next steps
 
-After you have set up your source database and prepared connectivity and credentials, select **Define source database** to [define your source connection and data pipeline](/docs/latest/operate/rc/databases/rdi/define/).
+After you have set up your source database and prepared connectivity and credentials, select **Define source database** to [define your source connection and data pipeline](../define/index.md).
 
 [![The define source database button.](/docs/latest/images/rc/rdi/rdi-define-source-database.png)](/docs/latest/images/rc/rdi/rdi-define-source-database.png)
 

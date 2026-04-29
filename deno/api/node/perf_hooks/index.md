@@ -10,8 +10,8 @@ content_hash: "cf9dcbac2734147caa94add8c60f2b6d6f22602555e98264f3f2044a55f5193e"
 menu_path: ["perf_hooks - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../path/index.md", "title": "path - Node documentation"}
-nav_next: {"path": "../process/index.md", "title": "process - Node documentation"}
+nav_prev: {"path": "deno/api/node/path/index.md", "title": "path - Node documentation"}
+nav_next: {"path": "deno/api/node/process/index.md", "title": "process - Node documentation"}
 ---
 
 ### Usage in Deno

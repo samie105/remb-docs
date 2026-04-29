@@ -10,8 +10,8 @@ content_hash: "043438b063c6ae2731d89352be39e874b2e9c41e231aa1fa995b4de95ba90e84"
 menu_path: ["Standard Assertions (@std/assert)"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Deno Standard Library (@std)"}
-nav_next: {"path": "../async/index.md", "title": "@std/async"}
+nav_prev: {"path": "deno/runtime/reference/std/index.md", "title": "Deno Standard Library (@std)"}
+nav_next: {"path": "deno/runtime/reference/std/async/index.md", "title": "@std/async"}
 ---
 
 **On this page**

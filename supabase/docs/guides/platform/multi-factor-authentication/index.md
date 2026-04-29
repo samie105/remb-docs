@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:49.259Z"
 content_hash: "3c83d7142e3a5374e661c21e1a2587f0515e39d980424fc70a5a6cfd2766190d"
 menu_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Overview","Overview"]
 section_path: ["Platform","Platform","More","More","More","Multi-factor Authentication","Multi-factor Authentication","Overview","Overview"]
-nav_prev: {"path": "../migrating-within-supabase/dashboard-restore/index.md", "title": "Restore Dashboard backup"}
-nav_next: {"path": "../network-restrictions/index.md", "title": "Network Restrictions"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-within-supabase/dashboard-restore/index.md", "title": "Restore Dashboard backup"}
+nav_next: {"path": "supabase/docs/guides/platform/network-restrictions/index.md", "title": "Network Restrictions"}
 ---
 
 # 
@@ -23,7 +23,7 @@ Enable multi-factor authentication (MFA) to keep your account secure.
 
 * * *
 
-This guide is for adding MFA to your Supabase user account. If you want to enable MFA for users in your Supabase project, refer to [**this guide**](/docs/guides/auth/auth-mfa) instead.
+This guide is for adding MFA to your Supabase user account. If you want to enable MFA for users in your Supabase project, refer to [**this guide**](../../auth/auth-mfa/index.md) instead.
 
 Multi-factor authentication (MFA) adds an additional layer of security to your user account, by requiring a second factor to verify your user identity. Supabase allows users to enable MFA on their account and set it as a requirement for subsequent logins.
 
@@ -43,7 +43,7 @@ For security reasons, we will not be able to restore access to your account if y
 
 Once you've enabled MFA for your Supabase user account, you will be prompted to enter your second factor challenge code as seen in your preferred TOTP app.
 
-If you are an organization owner and on the Pro, Team or Enterprise plan, you can enforce that all organization members [must have MFA enabled](/docs/guides/platform/mfa/org-mfa-enforcement).
+If you are an organization owner and on the Pro, Team or Enterprise plan, you can enforce that all organization members [must have MFA enabled](../mfa/org-mfa-enforcement/index.md).
 
 ## Disable MFA[#](#disable-mfa)
 

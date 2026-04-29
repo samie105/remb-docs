@@ -10,8 +10,8 @@ content_hash: "b6c8fa038c98a7d65b83f0044a604b9aa5925234a091e3e947e055e57128f11a"
 menu_path: ["deno serve"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sandbox/index.md", "title": "deno sandbox"}
-nav_next: {"path": "../task/index.md", "title": "deno task"}
+nav_prev: {"path": "deno/runtime/reference/cli/sandbox/index.md", "title": "deno sandbox"}
+nav_next: {"path": "deno/runtime/reference/cli/task/index.md", "title": "deno task"}
 ---
 
 **On this page**
@@ -31,7 +31,7 @@ nav_next: {"path": "../task/index.md", "title": "deno task"}
 -   [Debugging options](#debugging-options)
 -   [File watching options](#file-watching-options)
 
-`deno serve` runs a file as an HTTP server using [`Deno.serve()`](/api/deno/~/Deno.serve). The file must export a default object with a `fetch` handler. For a full guide on building HTTP servers, see [Writing an HTTP Server](/runtime/fundamentals/http_server/).
+`deno serve` runs a file as an HTTP server using [`Deno.serve()`](/api/deno/~/Deno.serve). The file must export a default object with a `fetch` handler. For a full guide on building HTTP servers, see [Writing an HTTP Server](../../../fundamentals/http_server/index.md).
 
 ## Basic usage
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:00.197Z"
 content_hash: "a42bf12461858780c8eefc6a4df6e9c4d7ecb9b5b55f74fa88ac14304501d8af"
 menu_path: ["PostgreSQL: Documentation: 18: 18.10. Secure TCP/IP Connections with GSSAPI Encryption"]
 section_path: []
-nav_prev: {"path": "../gssapi-auth.html/index.md", "title": "PostgreSQL: Documentation: 18: 20.6.\u00a0GSSAPI Authentication"}
-nav_next: {"path": "../hash-index.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.6.\u00a0Hash Indexes"}
+nav_prev: {"path": "postgres/docs/current/gssapi-auth.html/index.md", "title": "PostgreSQL: Documentation: 18: 20.6.\u00a0GSSAPI Authentication"}
+nav_next: {"path": "postgres/docs/current/hash-index.html/index.md", "title": "PostgreSQL: Documentation: 18: 65.6.\u00a0Hash Indexes"}
 ---
 
 PostgreSQL also has native support for using GSSAPI to encrypt client/server communications for increased security. Support requires that a GSSAPI implementation (such as MIT Kerberos) is installed on both client and server systems, and that support in PostgreSQL is enabled at build time (see [Chapter 17](https://www.postgresql.org/docs/current/installation.html "Chapter 17. Installation from Source Code")).

@@ -11,8 +11,8 @@ menu_path: ["trailingSlash"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../serverExternalPackages/index.md", "title": "serverExternalPackages"}
-nav_next: {"path": "../transpilePackages/index.md", "title": "transpilePackages"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/serverExternalPackages/index.md", "title": "serverExternalPackages"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/transpilePackages/index.md", "title": "transpilePackages"}
 ---
 
 # trailingSlash
@@ -40,7 +40,7 @@ When using `trailingSlash: true`, certain URLs are exceptions and will not have 
 
 For example, the following URLs will remain unchanged: `/file.txt`, `images/photos/picture.png`, and `.well-known/subfolder/config.json`.
 
-When used with [`output: "export"`](/docs/app/guides/static-exports) configuration, the `/about` page will output `/about/index.html` (instead of the default `/about.html`).
+When used with [`output: "export"`](../../../../../app/guides/static-exports/index.md) configuration, the `/about` page will output `/about/index.html` (instead of the default `/about.html`).
 
 ## Version History[](#version-history)
 

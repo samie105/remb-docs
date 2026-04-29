@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:03.080Z"
 content_hash: "51f3de6606c85e9ac7a33c629a7c2b134a896a49fe181371474eeff439a0b1ca"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Manage Redis","→","Manage Redis","→\n      \n        Redis security","→","Redis security"]
-nav_prev: {"path": "../scaling/index.md", "title": "Scale with Redis Cluster"}
-nav_next: {"path": "acl/index.md", "title": "ACL"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/management/scaling/index.md", "title": "Scale with Redis Cluster"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/management/security/acl/index.md", "title": "ACL"}
 ---
 
 # Redis security
@@ -55,7 +55,7 @@ We expect protected mode to seriously decrease the security issues caused by unp
 
 ## Authentication
 
-Redis provides two ways to authenticate clients. The recommended authentication method, introduced in Redis 6, is via Access Control Lists, allowing named users to be created and assigned fine-grained permissions. Read more about Access Control Lists [here](/docs/latest/operate/oss_and_stack/management/security/acl/).
+Redis provides two ways to authenticate clients. The recommended authentication method, introduced in Redis 6, is via Access Control Lists, allowing named users to be created and assigned fine-grained permissions. Read more about Access Control Lists [here](acl/index.md).
 
 The legacy authentication method is enabled by editing the **redis.conf** file, and providing a database password using the `requirepass` setting. This password is then used by all clients.
 

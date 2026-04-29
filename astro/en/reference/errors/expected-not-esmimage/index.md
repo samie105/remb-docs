@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:35.356Z"
 content_hash: "7b57d55e882d1fb46e31c46c637f153053fec0fcbe680e90f0dc131303f165d3"
 menu_path: ["Expected image options, not an ESM-imported image."]
 section_path: []
-nav_prev: {"path": "../expected-image/index.md", "title": "Expected src to be an image."}
-nav_next: {"path": "../failed-to-fetch-remote-image-dimensions/index.md", "title": "Failed to retrieve remote image dimensions"}
+nav_prev: {"path": "astro/en/reference/errors/expected-image/index.md", "title": "Expected src to be an image."}
+nav_next: {"path": "astro/en/reference/errors/failed-to-fetch-remote-image-dimensions/index.md", "title": "Failed to retrieve remote image dimensions"}
 ---
 
 # Expected image options, not an ESM-imported image.
@@ -29,6 +29,6 @@ import { getImage } from "astro:assets";import myImage from "../assets/my_image.
 
 **See Also:**
 
-*   [Images](/en/guides/images/)
+*   [Images](../../../guides/images/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

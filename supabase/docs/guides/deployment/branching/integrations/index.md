@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:09.580Z"
 content_hash: "24f098d5d68ecf2f2cf89966f66c6f06b553f8d4d7545ef62a624e719975f012"
 menu_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Integrations","Integrations"]
 section_path: ["Deployment & Branching","Deployment & Branching","Branching","Branching","Integrations","Integrations"]
-nav_prev: {"path": "../github-integration/index.md", "title": "GitHub integration"}
-nav_next: {"path": "../troubleshooting/index.md", "title": "Troubleshooting"}
+nav_prev: {"path": "supabase/docs/guides/deployment/branching/github-integration/index.md", "title": "GitHub integration"}
+nav_next: {"path": "supabase/docs/guides/deployment/branching/troubleshooting/index.md", "title": "Troubleshooting"}
 ---
 
 # 

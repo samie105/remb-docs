@@ -10,8 +10,8 @@ content_hash: "4e20e4b5c69295f1863ec39e91a6e3295712e30ad6373227f1ddf4b570d3d676"
 menu_path: ["Upgrade guide"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../compatibility/index.md", "title": "Compatibility"}
-nav_next: {"path": "../styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
+nav_prev: {"path": "tailwind/docs/compatibility/index.md", "title": "Compatibility"}
+nav_next: {"path": "tailwind/docs/styling-with-utility-classes/index.md", "title": "Styling with utility classes"}
 ---
 
 Upgrading your Tailwind CSS projects from v3 to v4.

@@ -11,8 +11,8 @@ menu_path: ["Config API"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../prisma-schema-reference/index.md", "title": "Schema API"}
-nav_next: {"path": "../connection-urls/index.md", "title": "Connection URLs"}
+nav_prev: {"path": "prisma/docs/orm/reference/prisma-schema-reference/index.md", "title": "Schema API"}
+nav_next: {"path": "prisma/docs/orm/reference/connection-urls/index.md", "title": "Connection URLs"}
 ---
 
 # `migrations` and `schema.prisma` are on the same level

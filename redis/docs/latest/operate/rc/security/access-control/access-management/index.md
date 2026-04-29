@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:11.703Z"
 content_hash: "6789499d3ef1e5acdf5f81e041cab1cf79f20e5be3f449692ef67b21cd2e198c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control","→\n      \n        Access management","→","Access management"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Security","→","Security","→\n      \n        Access control","→","Access control","→\n      \n        Access management","→","Access management"]
-nav_prev: {"path": "../index.md", "title": "Access control"}
-nav_next: {"path": "../data-access-control/default-user/index.md", "title": "Default user"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/security/access-control/index.md", "title": "Access control"}
+nav_next: {"path": "redis/docs/latest/operate/rc/security/access-control/data-access-control/default-user/index.md", "title": "Default user"}
 ---
 
 # Access management

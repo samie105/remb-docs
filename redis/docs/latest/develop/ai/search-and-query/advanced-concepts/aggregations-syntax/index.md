@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:45.648Z"
 content_hash: "912c3eb9eb573a428c2c86713227e091de083ed2e488d3c38618fa18ed974d43"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        FT.AGGREGATE order of operations","→","FT.AGGREGATE order of operations"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        FT.AGGREGATE order of operations","→","FT.AGGREGATE order of operations"]
-nav_prev: {"path": "../index.md", "title": "Search concepts"}
-nav_next: {"path": "../aggregations/index.md", "title": "Aggregations"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/index.md", "title": "Search concepts"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/index.md", "title": "Aggregations"}
 ---
 
 # FT.AGGREGATE order of operations
@@ -21,7 +21,7 @@ Order of operations for the FT.AGGREGATE command
 
 [`FT.AGGREGATE`](/docs/latest/commands/ft.aggregate/) is a powerful Redis Search command for performing advanced data aggregation, filtering, sorting, and transformations on indexed hash or JSON documents. This reference page provides a structured breakdown of syntax, ordering rules, and best practices.
 
-The [main aggregations page](/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/) has a simple diagram showing how `FT.AGGREGATE` pipelines are constructed, but it doesn't tell the whole story. For example, you can create more complex aggregation pipelines by applying multiple `REDUCE` functions under a single `GROUPBY` clause, or you can chain groupings and mix in additional mapping steps:
+The [main aggregations page](../aggregations/index.md) has a simple diagram showing how `FT.AGGREGATE` pipelines are constructed, but it doesn't tell the whole story. For example, you can create more complex aggregation pipelines by applying multiple `REDUCE` functions under a single `GROUPBY` clause, or you can chain groupings and mix in additional mapping steps:
 
 `GROUPBY` ... `REDUCE` ... `APPLY` ... `GROUPBY` ... `REDUCE`
 
@@ -346,7 +346,7 @@ Must be at the end.
 
 ## LIMIT and WITHCURSOR used together
 
-While you wouldn't ordinarily use `LIMIT` and `WITHCURSOR` together in the same query, you can do so if necessary. `LIMIT`, as the name suggests, will limit the total number of results returned for the given query. `WITHCURSOR` will paginate the results in chunks of size `COUNT`. You can use the [cursor API](/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/#cursor-api) to retrieve more results, as shown below.
+While you wouldn't ordinarily use `LIMIT` and `WITHCURSOR` together in the same query, you can do so if necessary. `LIMIT`, as the name suggests, will limit the total number of results returned for the given query. `WITHCURSOR` will paginate the results in chunks of size `COUNT`. You can use the [cursor API](../aggregations/index.md#cursor-api) to retrieve more results, as shown below.
 
 ```sh
 FT.AGGREGATE products "*"
@@ -391,7 +391,7 @@ FT.AGGREGATE products "*"
 
 See the following resources for more information:
 
-*   [Aggregations](/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/) discussion page.
+*   [Aggregations](../aggregations/index.md) discussion page.
 *   [`FT.AGGREGATE` command page](https://redis.io/docs/latest/commands/ft.aggregate/)
 *   [Redis Search source code](https://github.com/RediSearch/RediSearch/tree/master/src/aggregate)
 

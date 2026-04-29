@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:40.296Z"
 content_hash: "b3cd2bc7ab1fb105ca736a683145bbe6226cc06efc948f0dbbfa49a0e40ac99f"
 menu_path: ["Convert a Node.js Readable to a Blob"]
 section_path: []
-nav_prev: {"path": "../node-readable-to-arraybuffer/index.md", "title": "Convert a Node.js Readable to an ArrayBuffer"}
-nav_next: {"path": "../node-readable-to-json/index.md", "title": "Convert a Node.js Readable to JSON"}
+nav_prev: {"path": "bun/docs/guides/streams/node-readable-to-arraybuffer/index.md", "title": "Convert a Node.js Readable to an ArrayBuffer"}
+nav_next: {"path": "bun/docs/guides/streams/node-readable-to-json/index.md", "title": "Convert a Node.js Readable to JSON"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../node-readable-to-json/index.md", "title": "Convert a Node
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To convert a Node.js `Readable` stream to a [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) in Bun, you can create a new [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object with the stream as the body, then use [`response.blob()`](https://developer.mozilla.org/en-US/docs/Web/API/Response/blob) to read the stream into a [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob).
 
@@ -53,10 +53,10 @@ Convert a Node.js Readable to JSON
 
 Previous
 
-](/docs/guides/streams/node-readable-to-json)[
+](../node-readable-to-json/index.md)[
 
 Convert a Node.js Readable to an Uint8Array
 
 Next
 
-](/docs/guides/streams/node-readable-to-uint8array)
+](../node-readable-to-uint8array/index.md)

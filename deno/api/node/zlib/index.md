@@ -10,8 +10,8 @@ content_hash: "29bb569e4782b649bd319b6e1cc9bf1b5ac52cd0824e1a87c26c77e525bafc65"
 menu_path: ["zlib - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../worker_threads/index.md", "title": "worker_threads - Node documentation"}
-nav_next: {"path": "../../web/index.md", "title": "Web Platform APIs"}
+nav_prev: {"path": "deno/api/node/worker_threads/index.md", "title": "worker_threads - Node documentation"}
+nav_next: {"path": "deno/api/web/index.md", "title": "Web Platform APIs"}
 ---
 
 ### Usage in Deno

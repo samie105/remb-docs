@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:22.062Z"
 content_hash: "2f691b26e3230f9283acc3c78c1c05a67a6cb470efd2793e6139ee2b49c9cef5"
 menu_path: ["PostgreSQL: Documentation: 18: 11.3. Multicolumn Indexes"]
 section_path: []
-nav_prev: {"path": "../indexes-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.1.\u00a0Introduction"}
-nav_next: {"path": "../indexes-opclass.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.10.\u00a0Operator Classes and Operator Families"}
+nav_prev: {"path": "postgres/docs/current/indexes-intro.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.1.\u00a0Introduction"}
+nav_next: {"path": "postgres/docs/current/indexes-opclass.html/index.md", "title": "PostgreSQL: Documentation: 18: 11.10.\u00a0Operator Classes and Operator Families"}
 ---
 
 An index can be defined on more than one column of a table. For example, if you have a table of this form:

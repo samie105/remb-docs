@@ -10,8 +10,8 @@ content_hash: "1beadf4db63e298d4fdd05ecf342ee17cfc0ed456fb22530cda0b2a09d33b8f1"
 menu_path: ["margin"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../padding/index.md", "title": "padding"}
-nav_next: {"path": "../width/index.md", "title": "width"}
+nav_prev: {"path": "tailwind/docs/padding/index.md", "title": "padding"}
+nav_next: {"path": "tailwind/docs/width/index.md", "title": "width"}
 ---
 
 Utilities for controlling an element's margin.

@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:38:19.228Z"
 content_hash: "915f602a8c57351cfed2b672b647770397cd5f9e949af014061db638aa6ec6b6"
 menu_path: ["Using environment variables"]
 section_path: []
-nav_prev: {"path": "../typescript/index.md", "title": "TypeScript"}
-nav_next: {"path": "../integrations/index.md", "title": "Working with integrations"}
+nav_prev: {"path": "astro/en/guides/typescript/index.md", "title": "TypeScript"}
+nav_next: {"path": "astro/en/guides/integrations/index.md", "title": "Working with integrations"}
 ---
 
 # Using environment variables
 
 Astro gives you access to [Vite’s built-in environment variables support](#vites-built-in-support) and includes some [default environment variables for your project](#default-environment-variables) that allow you to access configuration values for your current project (e.g. `site`, `base`), whether your project is running in development or production, and more.
 
-Astro also provides a way to [use and organize your environment variables with type safety](#type-safe-environment-variables). It is available for use inside the Astro context (e.g. Astro components, routes and endpoints, UI framework components, middleware), and managed with [a schema in your Astro configuration](/en/reference/configuration-reference/#env).
+Astro also provides a way to [use and organize your environment variables with type safety](#type-safe-environment-variables). It is available for use inside the Astro context (e.g. Astro components, routes and endpoints, UI framework components, middleware), and managed with [a schema in your Astro configuration](../../reference/configuration-reference/index.md#env).
 
 ## Vite’s built-in support
 
@@ -41,7 +41,7 @@ By default, Astro provides a type definition for `import.meta.env` in `astro/cli
 
 While you can define more custom env variables in `.env.[mode]` files, you may want to get TypeScript IntelliSense for user-defined env variables which are prefixed with `PUBLIC_`.
 
-To achieve this, you can create an `env.d.ts` in `src/` to [extend the global types](/en/guides/typescript/#extending-global-types) and configure `ImportMetaEnv` like this:
+To achieve this, you can create an `env.d.ts` in `src/` to [extend the global types](../typescript/index.md#extending-global-types) and configure `ImportMetaEnv` like this:
 
 ```
 interface ImportMetaEnv {  readonly DB_PASSWORD: string;  readonly PUBLIC_POKEAPI: string;  // more env variables...}
@@ -57,8 +57,8 @@ Astro includes a few environment variables out of the box:
 *   `import.meta.env.MODE`: The mode your site is running in. This is `development` when running `astro dev` and `production` when running `astro build`.
 *   `import.meta.env.PROD`: `true` if your site is running in production; `false` otherwise.
 *   `import.meta.env.DEV`: `true` if your site is running in development; `false` otherwise. Always the opposite of `import.meta.env.PROD`.
-*   `import.meta.env.BASE_URL`: The base URL your site is being served from. This is determined by the [`base` config option](/en/reference/configuration-reference/#base).
-*   `import.meta.env.SITE`: This is set to [the `site` option](/en/reference/configuration-reference/#site) specified in your project’s `astro.config`.
+*   `import.meta.env.BASE_URL`: The base URL your site is being served from. This is determined by the [`base` config option](../../reference/configuration-reference/index.md#base).
+*   `import.meta.env.SITE`: This is set to [the `site` option](../../reference/configuration-reference/index.md#site) specified in your project’s `astro.config`.
 
 Use them like any other environment variable.
 
@@ -85,7 +85,7 @@ Just create a `.env` file in the project directory and add some variables to it.
 
 You can also add `.production`, `.development` or a custom mode name to the filename itself (e.g `.env.testing`, `.env.staging`). This allows you to use different sets of environment variables at different times.
 
-The `astro dev` and `astro build` commands default to `"development"` and `"production"` modes, respectively. You can run these commands with the [`--mode` flag](/en/reference/cli-reference/#--mode-string) to pass a different value for `mode` and load the matching `.env` file.
+The `astro dev` and `astro build` commands default to `"development"` and `"production"` modes, respectively. You can run these commands with the [`--mode` flag](../../reference/cli-reference/index.md#--mode-string) to pass a different value for `mode` and load the matching `.env` file.
 
 This allows you to run the dev server or build your site connecting to different APIs:
 
@@ -143,7 +143,7 @@ For example, use `import.meta.env.PUBLIC_POKEAPI` to get the `PUBLIC_POKEAPI` en
 // When import.meta.env.SSR === falseconst data = fetch(`${import.meta.env.PUBLIC_POKEAPI}/pokemon/squirtle`);
 ```
 
-When using SSR, environment variables can be accessed at runtime based on the SSR adapter being used. With most adapters you can access environment variables with `process.env`, but some adapters work differently. For the Deno adapter, you will use `Deno.env.get()`. See how to [access the Cloudflare runtime](/en/guides/integrations-guide/cloudflare/#cloudflare-runtime) to handle environment variables when using the Cloudflare adapter. Astro will first check the server environment for variables, and if they don’t exist, Astro will look for them in `.env` files.
+When using SSR, environment variables can be accessed at runtime based on the SSR adapter being used. With most adapters you can access environment variables with `process.env`, but some adapters work differently. For the Deno adapter, you will use `Deno.env.get()`. See how to [access the Cloudflare runtime](../integrations-guide/cloudflare/index.md#cloudflare-runtime) to handle environment variables when using the Cloudflare adapter. Astro will first check the server environment for variables, and if they don’t exist, Astro will look for them in `.env` files.
 
 ## Type safe environment variables
 
@@ -151,7 +151,7 @@ When using SSR, environment variables can be accessed at runtime based on the SS
 
 The `astro:env` API lets you configure a type-safe schema for [environment variables you have set](#setting-environment-variables). This allows you to indicate whether they should be available on the server or the client, and define their data type and additional properties.
 
-Developing an adapter? See how to [make an adapter compatible with `astro:env`](/en/reference/adapter-reference/#envgetsecret).
+Developing an adapter? See how to [make an adapter compatible with `astro:env`](../../reference/adapter-reference/index.md#envgetsecret).
 
 ### Basic Usage
 
@@ -216,7 +216,7 @@ There are three kinds of environment variables, determined by the combination of
     
     By default, all secrets are validated whenever anything is imported from the `astro:env/server` module. This means, secrets may be validated even when they are not imported. You may need to [pass dummy environment variables](#setting-environment-variables) to satisfy this validation during the build.
     
-    You can also enable validating secrets on start by [configuring `validateSecrets: true`](/en/reference/configuration-reference/#envvalidatesecrets).
+    You can also enable validating secrets on start by [configuring `validateSecrets: true`](../../reference/configuration-reference/index.md#envvalidatesecrets).
     
 
 ### Data types
@@ -233,7 +233,7 @@ envField.boolean({   // context & access   optional: true,   default: true,})
 envField.enum({   // context & access   values: ["foo", "bar", "baz"],   optional: true,   default: "baz",})
 ```
 
-For a complete list of validation fields, see the [`envField` API reference](/en/reference/modules/astro-config/#envfield).
+For a complete list of validation fields, see the [`envField` API reference](../../reference/modules/astro-config/index.md#envfield).
 
 ### Retrieving secrets dynamically
 
@@ -246,7 +246,7 @@ import {   FOO, // boolean   getSecret} from "astro:env/server";
 getSecret("FOO"); // string | undefined
 ```
 
-Learn more in [the API reference](/en/reference/modules/astro-env/#getsecret).
+Learn more in [the API reference](../../reference/modules/astro-env/index.md#getsecret).
 
 ### Limitations
 
@@ -265,4 +265,4 @@ You cannot use it in the following and will have to resort to `process.env`:
 *   `astro.config.mjs`
 *   Scripts
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

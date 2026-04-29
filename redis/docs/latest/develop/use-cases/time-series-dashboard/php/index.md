@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T17:08:05.623Z"
 content_hash: "d59f0d47a593bd5dff568327f3b9c5f1ddb56c4fd21306bfdc4c9cd4d1c4c655"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and PHP","→","Rolling sensor graph demo with Redis and PHP"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Redis and PHP","→","Rolling sensor graph demo with Redis and PHP"]
-nav_prev: {"path": "../nodejs/index.md", "title": "Rolling sensor graph demo with Redis and Node.js"}
-nav_next: {"path": "../redis-py/index.md", "title": "Rolling sensor graph demo with Redis and redis-py"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/nodejs/index.md", "title": "Rolling sensor graph demo with Redis and Node.js"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/redis-py/index.md", "title": "Rolling sensor graph demo with Redis and redis-py"}
 ---
 
 # Rolling sensor graph demo with Redis and PHP
 
 Build a Redis-backed rolling sensor graph demo in PHP with Predis
 
-This guide shows you how to build a compact rolling sensor graph demo in PHP with [Predis](/docs/latest/develop/clients/php/) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
+This guide shows you how to build a compact rolling sensor graph demo in PHP with [Predis](../../../clients/php/index.md) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
 
 ## Overview
 
@@ -163,7 +163,7 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 
 ## Learn more
 
-*   [PHP client guide](/docs/latest/develop/clients/php/) - Install and use the PHP client
+*   [PHP client guide](../../../clients/php/index.md) - Install and use the PHP client
 *   [Time series overview](/docs/latest/develop/data-types/timeseries/) - Time series concepts and commands
 *   [TS.RANGE command](/docs/latest/commands/ts.range/) - Query raw and aggregated ranges from a time series
 *   [TS.MADD command](/docs/latest/commands/ts.madd/) - Add multiple samples in one call

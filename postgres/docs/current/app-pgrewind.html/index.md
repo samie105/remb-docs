@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:21.091Z"
 content_hash: "64e002df9fd9702297197a65aa2f679849bf0ac3a8159b5de0507f882a0b3cd6"
 menu_path: ["PostgreSQL: Documentation: 18: pg_rewind"]
 section_path: []
-nav_prev: {"path": "../app-pgrestore.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_restore"}
-nav_next: {"path": "../app-pgverifybackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_verifybackup"}
+nav_prev: {"path": "postgres/docs/current/app-pgrestore.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_restore"}
+nav_next: {"path": "postgres/docs/current/app-pgverifybackup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_verifybackup"}
 ---
 
 pg\_rewind — synchronize a PostgreSQL data directory with another data directory that was forked from it

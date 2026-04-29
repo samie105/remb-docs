@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:39.115Z"
 content_hash: "b949a55c41b5b9f49cd4d0da9a4e49b9790213bce68f5b5ca1706664d83df076"
 menu_path: ["Set up with Next.js App Router"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "Next.js Integration"}
-nav_next: {"path": "../pages-router/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
+nav_prev: {"path": "trpc/docs/client/nextjs/index.md", "title": "Next.js Integration"}
+nav_next: {"path": "trpc/docs/client/nextjs/pages-router/aborting-procedure-calls/index.md", "title": "Aborting Procedure Calls"}
 ---
 
 note

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:44.096Z"
 content_hash: "4b9c4e48ec8cf83e09d338e67e2978a46c64793ce20d4f9978f54cfa111e99f2"
 menu_path: ["Backend Integration ​"]
 section_path: []
-nav_prev: {"path": "../ssr/index.md", "title": "Server-Side Rendering (SSR) \u200b"}
-nav_next: {"path": "../troubleshooting/index.md", "title": "Troubleshooting \u200b"}
+nav_prev: {"path": "vite/guide/ssr/index.md", "title": "Server-Side Rendering (SSR) \u200b"}
+nav_next: {"path": "vite/guide/troubleshooting/index.md", "title": "Troubleshooting \u200b"}
 ---
 
 Note

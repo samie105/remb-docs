@@ -10,8 +10,8 @@ content_hash: "9c1790bf3b9eaceb828269ba8d85cb40e1824411bfe3461b59ac55cd3d00696f"
 menu_path: ["Drizzle with Turso"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../drizzle-with-supabase-edge-functions/index.md", "title": "Drizzle with Supabase Edge Functions"}
-nav_next: {"path": "../drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
+nav_prev: {"path": "drizzle/docs/tutorials/drizzle-with-supabase-edge-functions/index.md", "title": "Drizzle with Supabase Edge Functions"}
+nav_next: {"path": "drizzle/docs/tutorials/drizzle-with-vercel/index.md", "title": "Drizzle with Vercel Postgres"}
 ---
 
 This tutorial demonstrates how to use Drizzle ORM with [Turso](https://docs.turso.tech/introduction).

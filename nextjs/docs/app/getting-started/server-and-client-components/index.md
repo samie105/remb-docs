@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../linking-and-navigating/index.md", "title": "Linking and Navigating"}
-nav_next: {"path": "../fetching-data/index.md", "title": "Fetching Data"}
+nav_prev: {"path": "nextjs/docs/app/getting-started/linking-and-navigating/index.md", "title": "Linking and Navigating"}
+nav_next: {"path": "nextjs/docs/app/getting-started/fetching-data/index.md", "title": "Fetching Data"}
 ---
 
 # Server and Client Components
@@ -90,10 +90,10 @@ export default function LikeButton({ likes }: { likes: number }) {
 
 ### On the server[](#on-the-server)
 
-On the server, Next.js uses React's APIs to orchestrate rendering. The rendering work is split into chunks, by individual route segments ([layouts and pages](/docs/app/getting-started/layouts-and-pages)):
+On the server, Next.js uses React's APIs to orchestrate rendering. The rendering work is split into chunks, by individual route segments ([layouts and pages](../layouts-and-pages/index.md)):
 
 -   **Server Components** are rendered into a special data format called the React Server Component Payload (RSC Payload).
--   **Client Components** and the RSC Payload are used to [prerender](/docs/app/glossary#prerendering) HTML.
+-   **Client Components** and the RSC Payload are used to [prerender](../../glossary/index.md#prerendering) HTML.
 
 > **What is the React Server Component Payload (RSC)?**
 > 
@@ -229,7 +229,7 @@ export default function LikeButton({ likes }: { likes: number }) {
 }
 ```
 
-Alternatively, you can stream data from a Server Component to a Client Component with the [`use` API](https://react.dev/reference/react/use). See an [example](/docs/app/getting-started/fetching-data#streaming-data-with-the-use-api).
+Alternatively, you can stream data from a Server Component to a Client Component with the [`use` API](https://react.dev/reference/react/use). See an [example](../fetching-data/index.md#streaming-data-with-the-use-api).
 
 > **Good to know**: Props passed to Client Components need to be [serializable](https://react.dev/reference/react/use-server#serializable-parameters-and-return-values) by React.
 
@@ -487,6 +487,6 @@ Learn more about the APIs mentioned in this page.
 
 Learn how to use the use client directive to render a component on the client.
 
-](/docs/app/api-reference/directives/use-client)
+](../../api-reference/directives/use-client/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:15.708Z"
 content_hash: "bb0e7de1686175c5cdfb4fdb3033745d42c7920684c1938dbb11abd47443e6ba"
 menu_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Refine","Refine"]
 section_path: ["Start with Supabase","Start with Supabase","Web app demos","Web app demos","Refine","Refine"]
-nav_prev: {"path": "../with-redwoodjs/index.md", "title": "Build a User Management App with RedwoodJS"}
-nav_next: {"path": "../with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-redwoodjs/index.md", "title": "Build a User Management App with RedwoodJS"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-solidjs/index.md", "title": "Build a User Management App with SolidJS"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a User Management App with Refine
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/user-management-demo.png)
 
@@ -65,7 +65,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=refine).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -223,7 +223,7 @@ And then open the browser to [localhost:5173](http://localhost:5173) and you sho
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Create an upload widget[#](#create-an-upload-widget)
 

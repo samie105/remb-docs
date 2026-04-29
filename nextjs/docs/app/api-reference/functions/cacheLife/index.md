@@ -11,21 +11,21 @@ menu_path: ["cacheLife"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../after/index.md", "title": "after"}
-nav_next: {"path": "../cacheTag/index.md", "title": "cacheTag"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/after/index.md", "title": "after"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/cacheTag/index.md", "title": "cacheTag"}
 ---
 
 # cacheLife
 
 Last updated April 23, 2026
 
-The `cacheLife` function is used to set the cache lifetime of a function or component. It should be used alongside the [`use cache`](/docs/app/api-reference/directives/use-cache) directive, and within the scope of the function or component.
+The `cacheLife` function is used to set the cache lifetime of a function or component. It should be used alongside the [`use cache`](../../directives/use-cache/index.md) directive, and within the scope of the function or component.
 
 ## Usage[](#usage)
 
 ### Basic setup[](#basic-setup)
 
-To use `cacheLife`, first enable the [`cacheComponents` flag](/docs/app/api-reference/config/next-config-js/cacheComponents) in your `next.config.js` file:
+To use `cacheLife`, first enable the [`cacheComponents` flag](../../config/next-config-js/cacheComponents/index.md) in your `next.config.js` file:
 
 next.config.ts
 
@@ -99,7 +99,7 @@ Cache profiles control caching behavior through three timing properties:
 
 During this time, the client-side router displays cached content immediately without any network request. After this period expires, the router must check with the server on the next navigation or request. This provides instant page loads from the client cache, but data may be outdated.
 
--   If omitted, defaults to the `default` profile's `stale` value (5 minutes, see [`staleTimes`](/docs/app/api-reference/config/next-config-js/staleTimes))
+-   If omitted, defaults to the `default` profile's `stale` value (5 minutes, see [`staleTimes`](../../config/next-config-js/staleTimes/index.md))
 
 ```
 cacheLife({ stale: 300 }) // 5 minutes
@@ -113,7 +113,7 @@ How often the server regenerates cached content in the background.
     1.  Serves the cached version immediately (if available)
     2.  Regenerates content in the background
     3.  Updates the cache with fresh content
--   Similar to [Incremental Static Regeneration (ISR)](/docs/app/guides/incremental-static-regeneration)
+-   Similar to [Incremental Static Regeneration (ISR)](../../../guides/incremental-static-regeneration/index.md)
 -   If omitted, defaults to the `default` profile's `revalidate` value (15 minutes)
 
 ```
@@ -238,7 +238,7 @@ Using `cacheLife({})` with an empty object applies the `default` profile values.
 
 ### Client cache behavior[](#client-cache-behavior)
 
-The `stale` property controls the [Client Cache](/docs/app/glossary#client-cache), not the `Cache-Control` header:
+The `stale` property controls the [Client Cache](../../../glossary/index.md#client-cache), not the `Cache-Control` header:
 
 -   The server sends the stale time via the `x-nextjs-stale-time` response header
 -   The client router uses this value to determine when to revalidate
@@ -246,9 +246,9 @@ The `stale` property controls the [Client Cache](/docs/app/glossary#client-cache
 
 This 30-second minimum prevents prefetched data from expiring before users can click on links. It only applies to time-based expiration.
 
-When you call revalidation functions from a Server Action ([`revalidateTag`](/docs/app/api-reference/functions/revalidateTag), [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath), [`updateTag`](/docs/app/api-reference/functions/updateTag), or [`refresh`](/docs/app/api-reference/functions/refresh)), the entire client cache is immediately cleared, bypassing the stale time.
+When you call revalidation functions from a Server Action ([`revalidateTag`](../revalidateTag/index.md), [`revalidatePath`](../revalidatePath/index.md), [`updateTag`](../updateTag/index.md), or [`refresh`](../refresh/index.md)), the entire client cache is immediately cleared, bypassing the stale time.
 
-> **Good to know**: The `stale` property in `cacheLife` differs from [`staleTimes`](/docs/app/api-reference/config/next-config-js/staleTimes). While `staleTimes` is a global setting affecting all routes, `cacheLife` allows per-function or per-route configuration. Updating `staleTimes.static` also updates the `stale` value of the `default` cache profile.
+> **Good to know**: The `stale` property in `cacheLife` differs from [`staleTimes`](../../config/next-config-js/staleTimes/index.md). While `staleTimes` is a global setting affecting all routes, `cacheLife` allows per-function or per-route configuration. Updating `staleTimes.static` also updates the `stale` value of the `default` cache profile.
 
 ### Prerendering behavior[](#prerendering-behavior)
 
@@ -545,7 +545,7 @@ export default function Page() {
 }
 ```
 
-> **Note:** This example uses `"use cache: remote"` because runtime caching in serverless deployments doesn't persist across requests with the default in-memory cache. For self-hosted environments, `"use cache"` may be sufficient. See [Runtime caching considerations](/docs/app/api-reference/directives/use-cache#runtime-caching-considerations) for more details.
+> **Note:** This example uses `"use cache: remote"` because runtime caching in serverless deployments doesn't persist across requests with the default in-memory cache. For self-hosted environments, `"use cache"` may be sufficient. See [Runtime caching considerations](../../directives/use-cache/index.md#runtime-caching-considerations) for more details.
 
 ### Conditional cache lifetimes[](#conditional-cache-lifetimes)
 
@@ -622,24 +622,24 @@ View related API references.
 
 Learn how to enable the cacheComponents flag in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheComponents)[
+](../../config/next-config-js/cacheComponents/index.md)[
 
 ### use cache
 
 Learn how to use the "use cache" directive to cache data in your Next.js application.
 
-](/docs/app/api-reference/directives/use-cache)[
+](../../directives/use-cache/index.md)[
 
 ### revalidateTag
 
 API Reference for the revalidateTag function.
 
-](/docs/app/api-reference/functions/revalidateTag)[
+](../revalidateTag/index.md)[
 
 ### cacheTag
 
 Learn how to use the cacheTag function to manage cache invalidation in your Next.js application.
 
-](/docs/app/api-reference/functions/cacheTag)
+](../cacheTag/index.md)
 
 Was this helpful?

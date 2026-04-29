@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:36.348Z"
 content_hash: "4e810444ca1d325f798dc9e662f6f19cc3f6fa78f5a1d4cac4e042cde5928251"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Declarative database schemas","Declarative database schemas"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Declarative database schemas","Declarative database schemas"]
-nav_prev: {"path": "../customizing-email-templates/index.md", "title": "Customizing email templates"}
-nav_next: {"path": "../managing-config/index.md", "title": "Managing config and secrets"}
+nav_prev: {"path": "supabase/docs/guides/local-development/customizing-email-templates/index.md", "title": "Customizing email templates"}
+nav_next: {"path": "supabase/docs/guides/local-development/managing-config/index.md", "title": "Managing config and secrets"}
 ---
 
 # 
@@ -27,7 +27,7 @@ Manage your database schemas in one place and generate versioned migrations.
 
 Declarative schemas provide a developer-friendly way to maintain schema migrations.
 
-[Migrations](/docs/guides/deployment/database-migrations) are traditionally managed imperatively (you provide the instructions on how exactly to change the database). This can lead to related information being scattered over multiple migration files. With declarative schemas, you instead declare the state you want your database to be in, and the instructions are generated for you.
+[Migrations](../../deployment/database-migrations/index.md) are traditionally managed imperatively (you provide the instructions on how exactly to change the database). This can lead to related information being scattered over multiple migration files. With declarative schemas, you instead declare the state you want your database to be in, and the instructions are generated for you.
 
 ## Schema migrations[#](#schema-migrations)
 
@@ -189,7 +189,7 @@ SQL statements generated in a down migration are usually destructive. You must r
 
 The `migra` diff tool used for generating schema diff is capable of tracking most database changes. However, there are edge cases where it can fail.
 
-If you need to use any of the entities below, remember to add them through [versioned migrations](/docs/guides/deployment/database-migrations) instead.
+If you need to use any of the entities below, remember to add them through [versioned migrations](../../deployment/database-migrations/index.md) instead.
 
 ### Data manipulation language[#](#data-manipulation-language)
 

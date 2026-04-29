@@ -11,8 +11,8 @@ menu_path: ["Functions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../file-conventions/src-folder/index.md", "title": "src Directory"}
-nav_next: {"path": "get-initial-props/index.md", "title": "getInitialProps"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/file-conventions/src-folder/index.md", "title": "src Directory"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/get-initial-props/index.md", "title": "getInitialProps"}
 ---
 
 # Functions
@@ -25,66 +25,66 @@ Last updated April 23, 2026
 
 Fetch dynamic data on the server for your React component with getInitialProps.
 
-](/docs/pages/api-reference/functions/get-initial-props)[
+](get-initial-props/index.md)[
 
 ### getServerSideProps
 
 API reference for \`getServerSideProps\`. Learn how to fetch data on each request with Next.js.
 
-](/docs/pages/api-reference/functions/get-server-side-props)[
+](get-server-side-props/index.md)[
 
 ### getStaticPaths
 
 API reference for \`getStaticPaths\`. Learn how to fetch data and generate static pages with \`getStaticPaths\`.
 
-](/docs/pages/api-reference/functions/get-static-paths)[
+](get-static-paths/index.md)[
 
 ### getStaticProps
 
 API reference for \`getStaticProps\`. Learn how to use \`getStaticProps\` to generate static pages with Next.js.
 
-](/docs/pages/api-reference/functions/get-static-props)[
+](get-static-props/index.md)[
 
 ### NextRequest
 
 API Reference for NextRequest.
 
-](/docs/pages/api-reference/functions/next-request)[
+](next-request/index.md)[
 
 ### NextResponse
 
 API Reference for NextResponse.
 
-](/docs/pages/api-reference/functions/next-response)[
+](next-response/index.md)[
 
 ### useParams
 
 API Reference for the useParams hook in the Pages Router.
 
-](/docs/pages/api-reference/functions/use-params)[
+](use-params/index.md)[
 
 ### useReportWebVitals
 
 useReportWebVitals
 
-](/docs/pages/api-reference/functions/use-report-web-vitals)[
+](use-report-web-vitals/index.md)[
 
 ### useRouter
 
 Learn more about the API of the Next.js Router, and access the router instance in your page with the useRouter hook.
 
-](/docs/pages/api-reference/functions/use-router)[
+](use-router/index.md)[
 
 ### useSearchParams
 
 API Reference for the useSearchParams hook in the Pages Router.
 
-](/docs/pages/api-reference/functions/use-search-params)[
+](use-search-params/index.md)[
 
 ### userAgent
 
 The userAgent helper extends the Web Request API with additional properties and methods to interact with the user agent object from the request.
 
-](/docs/pages/api-reference/functions/userAgent)
+](userAgent/index.md)
 
 Was this helpful?

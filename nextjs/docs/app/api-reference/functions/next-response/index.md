@@ -11,8 +11,8 @@ menu_path: ["NextResponse"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../next-request/index.md", "title": "NextRequest"}
-nav_next: {"path": "../not-found/index.md", "title": "notFound"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/next-request/index.md", "title": "NextRequest"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/not-found/index.md", "title": "notFound"}
 ---
 
 # NextResponse

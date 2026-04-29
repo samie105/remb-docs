@@ -11,15 +11,15 @@ menu_path: ["turbopack.ignoreIssue"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../turbopackFileSystemCache/index.md", "title": "Turbopack FileSystem Caching"}
-nav_next: {"path": "../typedRoutes/index.md", "title": "typedRoutes"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopackFileSystemCache/index.md", "title": "Turbopack FileSystem Caching"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/typedRoutes/index.md", "title": "typedRoutes"}
 ---
 
 # turbopack.ignoreIssue
 
 Last updated April 23, 2026
 
-The `turbopack.ignoreIssue` option allows you to filter out specific [Turbopack](/docs/app/api-reference/turbopack) errors and warnings so they do not appear in the CLI output or the error overlay. This is useful for suppressing known warnings that do not affect your application, such as intentionally unresolved optional dependencies.
+The `turbopack.ignoreIssue` option allows you to filter out specific [Turbopack](../../../turbopack/index.md) errors and warnings so they do not appear in the CLI output or the error overlay. This is useful for suppressing known warnings that do not affect your application, such as intentionally unresolved optional dependencies.
 
 This option is only available when using Turbopack (`next dev --turbopack`).
 
@@ -177,12 +177,12 @@ Learn more about Turbopack configuration.
 
 Configure Next.js with Turbopack-specific options
 
-](/docs/app/api-reference/config/next-config-js/turbopack)[
+](../turbopack/index.md)[
 
 ### Turbopack
 
 Turbopack is an incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.
 
-](/docs/app/api-reference/turbopack)
+](../../../turbopack/index.md)
 
 Was this helpful?

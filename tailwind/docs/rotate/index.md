@@ -10,8 +10,8 @@ content_hash: "8e273dbc9cafe36916db1e651d15f959c79b3d1788f30849f6dfc47b35b97dcb"
 menu_path: ["rotate"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../perspective-origin/index.md", "title": "perspective-origin"}
-nav_next: {"path": "../scale/index.md", "title": "scale"}
+nav_prev: {"path": "tailwind/docs/perspective-origin/index.md", "title": "perspective-origin"}
+nav_next: {"path": "tailwind/docs/scale/index.md", "title": "scale"}
 ---
 
 Utilities for rotating elements.

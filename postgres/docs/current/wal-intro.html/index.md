@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:26.063Z"
 content_hash: "dc4f18b2000accafb705cd29e9efefc135d43875425d6010f2ef568782399f65"
 menu_path: ["PostgreSQL: Documentation: 18: 28.3. Write-Ahead Logging (WAL)"]
 section_path: []
-nav_prev: {"path": "../wal-configuration.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.5.\u00a0WAL Configuration"}
-nav_next: {"path": "../wal-reliability.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.1.\u00a0Reliability"}
+nav_prev: {"path": "postgres/docs/current/wal-configuration.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.5.\u00a0WAL Configuration"}
+nav_next: {"path": "postgres/docs/current/wal-reliability.html/index.md", "title": "PostgreSQL: Documentation: 18: 28.1.\u00a0Reliability"}
 ---
 
 _Write-Ahead Logging_ (WAL) is a standard method for ensuring data integrity. A detailed description can be found in most (if not all) books about transaction processing. Briefly, WAL's central concept is that changes to data files (where tables and indexes reside) must be written only after those changes have been logged, that is, after WAL records describing the changes have been flushed to permanent storage. If we follow this procedure, we do not need to flush data pages to disk on every transaction commit, because we know that in the event of a crash we will be able to recover the database using the log: any changes that have not been applied to the data pages can be redone from the WAL records. (This is roll-forward recovery, also known as REDO.)

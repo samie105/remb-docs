@@ -11,8 +11,8 @@ menu_path: ["devIndicators"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../deploymentId/index.md", "title": "deploymentId"}
-nav_next: {"path": "../distDir/index.md", "title": "distDir"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/deploymentId/index.md", "title": "deploymentId"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/distDir/index.md", "title": "distDir"}
 ---
 
 # devIndicators
@@ -40,7 +40,7 @@ Setting `devIndicators` to `false` will hide the indicator, however Next.js will
 
 If you expect a route to be static and the indicator has marked it as dynamic, it's likely the route has opted out of prerendering.
 
-You can confirm if a route is [prerendered](/docs/app/glossary#prerendering) or [dynamically rendered](/docs/app/glossary#dynamic-rendering) by building your application using `next build --debug`, and checking the output in your terminal. Static (or prerendered) routes will display a `○` symbol, whereas dynamic routes will display a `ƒ` symbol. For example:
+You can confirm if a route is [prerendered](../../../../glossary/index.md#prerendering) or [dynamically rendered](../../../../glossary/index.md#dynamic-rendering) by building your application using `next build --debug`, and checking the output in your terminal. Static (or prerendered) routes will display a `○` symbol, whereas dynamic routes will display a `ƒ` symbol. For example:
 
 Build Output
 
@@ -55,10 +55,10 @@ Route (app)
 
 There are two reasons a route might opt out of prerendering:
 
--   The presence of [Request-time APIs](/docs/app/glossary#request-time-apis) which rely on request information.
--   An [uncached data request](/docs/app/getting-started/fetching-data), like a call to an ORM or database driver.
+-   The presence of [Request-time APIs](../../../../glossary/index.md#request-time-apis) which rely on request information.
+-   An [uncached data request](../../../../getting-started/fetching-data/index.md), like a call to an ORM or database driver.
 
-Check your route for any of these conditions, and if you are not able to statically render the route, then consider using [`loading.js`](/docs/app/api-reference/file-conventions/loading) or [`<Suspense />`](https://react.dev/reference/react/Suspense) to leverage [streaming](/docs/app/getting-started/linking-and-navigating#streaming).
+Check your route for any of these conditions, and if you are not able to statically render the route, then consider using [`loading.js`](../../../file-conventions/loading/index.md) or [`<Suspense />`](https://react.dev/reference/react/Suspense) to leverage [streaming](../../../../getting-started/linking-and-navigating/index.md#streaming).
 
 ## Version History[](#version-history)
 

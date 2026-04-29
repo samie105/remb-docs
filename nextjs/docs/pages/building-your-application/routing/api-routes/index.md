@@ -11,8 +11,8 @@ menu_path: ["API Routes"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../custom-document/index.md", "title": "Custom Document"}
-nav_next: {"path": "../custom-error/index.md", "title": "Custom Errors"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/custom-document/index.md", "title": "Custom Document"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/routing/custom-error/index.md", "title": "Custom Errors"}
 ---
 
 # API Routes
@@ -26,7 +26,7 @@ Last updated April 23, 2026
 -   [API Routes with REST](https://github.com/vercel/next.js/tree/canary/examples/api-routes-rest)
 -   [API Routes with CORS](https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors)
 
-> **Good to know**: If you are using the App Router, you can use [Server Components](/docs/app/getting-started/server-and-client-components) or [Route Handlers](/docs/app/api-reference/file-conventions/route) instead of API Routes.
+> **Good to know**: If you are using the App Router, you can use [Server Components](../../../../app/getting-started/server-and-client-components/index.md) or [Route Handlers](../../../../app/api-reference/file-conventions/route/index.md) instead of API Routes.
 
 API routes provide a solution to build a **public API** with Next.js.
 
@@ -56,8 +56,8 @@ export default function handler(
 > **Good to know**:
 > 
 > -   API Routes [do not specify CORS headers](https://developer.mozilla.org/docs/Web/HTTP/CORS), meaning they are **same-origin only** by default. You can customize such behavior by wrapping the request handler with the [CORS request helpers](https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors).
-> -   API Routes can't be used with [static exports](/docs/pages/guides/static-exports). However, [Route Handlers](/docs/app/api-reference/file-conventions/route) in the App Router can.
-> -   API Routes will be affected by [`pageExtensions` configuration](/docs/pages/api-reference/config/next-config-js/pageExtensions) in `next.config.js`.
+> -   API Routes can't be used with [static exports](/docs/pages/guides/static-exports). However, [Route Handlers](../../../../app/api-reference/file-conventions/route/index.md) in the App Router can.
+> -   API Routes will be affected by [`pageExtensions` configuration](../../../api-reference/config/next-config-js/pageExtensions/index.md) in `next.config.js`.
 
 ## Parameters[](#parameters)
 
@@ -310,7 +310,7 @@ export default function handler(
 
 ## Dynamic API Routes[](#dynamic-api-routes)
 
-API Routes support [dynamic routes](/docs/pages/building-your-application/routing/dynamic-routes), and follow the same file naming rules used for `pages/`.
+API Routes support [dynamic routes](../dynamic-routes/index.md), and follow the same file naming rules used for `pages/`.
 
 pages/api/post/\[pid\].ts
 
@@ -389,7 +389,7 @@ The `query` objects are as follows:
 
 ## Streaming responses[](#streaming-responses)
 
-While the Pages Router does support streaming responses with API Routes, we recommend incrementally adopting the App Router and using [Route Handlers](/docs/app/api-reference/file-conventions/route) if you are on Next.js 14+.
+While the Pages Router does support streaming responses with API Routes, we recommend incrementally adopting the App Router and using [Route Handlers](../../../../app/api-reference/file-conventions/route/index.md) if you are on Next.js 14+.
 
 Here's how you can stream a response from an API Route with `writeHead`:
 

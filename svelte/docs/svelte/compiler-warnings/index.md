@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:07.424Z"
 content_hash: "2639a6c3b398bbc59953821e45e367b280e9904c5b2789533715e51551639341"
 menu_path: ["Compiler warnings"]
 section_path: []
-nav_prev: {"path": "../compiler-errors/index.md", "title": "Compiler errors"}
-nav_next: {"path": "../runtime-errors/index.md", "title": "Runtime errors"}
+nav_prev: {"path": "svelte/docs/svelte/compiler-errors/index.md", "title": "Compiler errors"}
+nav_next: {"path": "svelte/docs/svelte/runtime-errors/index.md", "title": "Runtime errors"}
 ---
 
 Svelte warns you at compile time if it catches potential mistakes, such as writing inaccessible markup.
@@ -641,7 +641,7 @@ Unused CSS selector "%name%"
 
 Svelte traverses both the template and the `<style>` tag to find out which of the CSS selectors are not used within the template, so it can remove them.
 
-In some situations a selector may target an element that is not 'visible' to the compiler, for example because it is part of an `{@html ...}` tag or you're overriding styles in a child component. In these cases, use [`:global`](/docs/svelte/global-styles) to preserve the selector as-is:
+In some situations a selector may target an element that is not 'visible' to the compiler, for example because it is part of an `{@html ...}` tag or you're overriding styles in a child component. In these cases, use [`:global`](../global-styles/index.md) to preserve the selector as-is:
 
 ```
 <div class="post">{@html content}</div>
@@ -1070,4 +1070,4 @@ See [the note in the docs](legacy-svelte-self) for more info.
 
 previous next
 
-[Compiler errors](/docs/svelte/compiler-errors) [Runtime errors](/docs/svelte/runtime-errors)
+[Compiler errors](../compiler-errors/index.md) [Runtime errors](../runtime-errors/index.md)

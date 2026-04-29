@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:41:48.239Z"
 content_hash: "db83fbbc4397154247714c759693153e24a2fa70da231c1c33cbcd27b20002cb"
 menu_path: ["Choosing the State Structure"]
 section_path: []
-nav_prev: {"path": "../reacting-to-input-with-state/index.md", "title": "Reacting to Input with State"}
-nav_next: {"path": "../sharing-state-between-components/index.md", "title": "Sharing State Between Components"}
+nav_prev: {"path": "react/learn/reacting-to-input-with-state/index.md", "title": "Reacting to Input with State"}
+nav_next: {"path": "react/learn/sharing-state-between-components/index.md", "title": "Sharing State Between Components"}
 ---
 
 Structuring state well can make a difference between a component that is pleasant to modify and debug, and one that is a constant source of bugs. Here are some tips you should consider when structuring state.

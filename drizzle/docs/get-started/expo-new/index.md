@@ -10,8 +10,8 @@ content_hash: "ddf63cfd09a9545dba79e7086468506883ca78526b1ca78c08e327d82ce61ac3"
 menu_path: ["Get Started with Drizzle and Expo"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../expo-existing/index.md", "title": "Get Started with Drizzle and Expo in existing project"}
-nav_next: {"path": "../gel-existing/index.md", "title": "Get Started with Drizzle and Gel in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/expo-existing/index.md", "title": "Get Started with Drizzle and Expo in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/gel-existing/index.md", "title": "Get Started with Drizzle and Gel in existing project"}
 ---
 
 ## Get Started with Drizzle and Expo

@@ -11,8 +11,8 @@ menu_path: ["Custom Errors"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../api-routes/index.md", "title": "API Routes"}
-nav_next: {"path": "../../rendering/server-side-rendering/index.md", "title": "Server-side Rendering (SSR)"}
+nav_prev: {"path": "nextjs/docs/pages/building-your-application/routing/api-routes/index.md", "title": "API Routes"}
+nav_next: {"path": "nextjs/docs/pages/building-your-application/rendering/server-side-rendering/index.md", "title": "Server-side Rendering (SSR)"}
 ---
 
 # Custom Errors
@@ -37,7 +37,7 @@ export default function Custom404() {
 }
 ```
 
-> **Good to know**: You can use [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) inside this page if you need to fetch data at build time.
+> **Good to know**: You can use [`getStaticProps`](../../data-fetching/get-static-props/index.md) inside this page if you need to fetch data at build time.
 
 ## 500 Page[](#500-page)
 
@@ -55,7 +55,7 @@ export default function Custom500() {
 }
 ```
 
-> **Good to know**: You can use [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) inside this page if you need to fetch data at build time.
+> **Good to know**: You can use [`getStaticProps`](../../data-fetching/get-static-props/index.md) inside this page if you need to fetch data at build time.
 
 ### More Advanced Error Page Customizing[](#more-advanced-error-page-customizing)
 
@@ -114,7 +114,7 @@ If you have a custom `Error` component be sure to import that one instead. `next
 
 ### Caveats[](#caveats)
 
--   `Error` does not currently support Next.js [Data Fetching methods](/docs/pages/building-your-application/data-fetching) like [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props) or [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props).
--   `_error`, like `_app`, is a reserved pathname. `_error` is used to define the customized layouts and behaviors of the error pages. `/_error` will render 404 when accessed directly via [routing](/docs/pages/building-your-application/routing) or rendering in a [custom server](/docs/pages/guides/custom-server).
+-   `Error` does not currently support Next.js [Data Fetching methods](../../data-fetching/index.md) like [`getStaticProps`](../../data-fetching/get-static-props/index.md) or [`getServerSideProps`](../../data-fetching/get-server-side-props/index.md).
+-   `_error`, like `_app`, is a reserved pathname. `_error` is used to define the customized layouts and behaviors of the error pages. `/_error` will render 404 when accessed directly via [routing](../index.md) or rendering in a [custom server](/docs/pages/guides/custom-server).
 
 Was this helpful?

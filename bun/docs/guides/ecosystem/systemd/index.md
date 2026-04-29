@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:53.932Z"
 content_hash: "d968957851af253270b1fc2c7104c51cb8707533cecb1f3fd133ae60eafea940"
 menu_path: ["Run Bun as a daemon with systemd"]
 section_path: []
-nav_prev: {"path": "../sveltekit/index.md", "title": "Build an app with SvelteKit and Bun"}
-nav_next: {"path": "../tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/sveltekit/index.md", "title": "Build an app with SvelteKit and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/tanstack-start/index.md", "title": "Use TanStack Start with Bun"}
 ---
 
 # describe the app

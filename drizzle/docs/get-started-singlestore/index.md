@@ -10,8 +10,8 @@ content_hash: "47b815405ffe967dacf2091732401d480d16fbaeaef60764136a47dcdbaeec88"
 menu_path: ["Drizzle <> SingleStore"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../get-started-cockroach/index.md", "title": "Drizzle <> PostgreSQL"}
-nav_next: {"path": "../connect-planetscale-postgres/index.md", "title": "Drizzle <> PlanetScale Postgres"}
+nav_prev: {"path": "drizzle/docs/get-started-cockroach/index.md", "title": "Drizzle <> PostgreSQL"}
+nav_next: {"path": "drizzle/docs/connect-planetscale-postgres/index.md", "title": "Drizzle <> PlanetScale Postgres"}
 ---
 
 To use Drizzle with a SingleStore database, you should use the `mysql2` driver

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:18.188Z"
 content_hash: "fee8862062c20336a47324240bfd9fd0e438b10e5072871989302820cbdcad69"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Sentinel client spec","→","Sentinel client spec"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis reference","→","Redis reference","→\n      \n        Sentinel client spec","→","Sentinel client spec"]
-nav_prev: {"path": "../protocol-spec/index.md", "title": "Redis serialization protocol specification"}
-nav_next: {"path": "../../tools/cli/index.md", "title": "Redis CLI"}
+nav_prev: {"path": "redis/docs/latest/develop/reference/protocol-spec/index.md", "title": "Redis serialization protocol specification"}
+nav_next: {"path": "redis/docs/latest/develop/tools/cli/index.md", "title": "Redis CLI"}
 ---
 
 # Sentinel client spec
@@ -24,7 +24,7 @@ This document is targeted at Redis clients developers that want to support Senti
 *   Automatic configuration of clients via Sentinel.
 *   Improved safety of Redis Sentinel automatic failover.
 
-For details about how Redis Sentinel works, please check the [Redis Documentation](/docs/latest/operate/oss_and_stack/management/sentinel/), as this document only contains information needed for Redis client developers, and it is expected that readers are familiar with the way Redis Sentinel works.
+For details about how Redis Sentinel works, please check the [Redis Documentation](../../../operate/oss_and_stack/management/sentinel/index.md), as this document only contains information needed for Redis client developers, and it is expected that readers are familiar with the way Redis Sentinel works.
 
 ## Redis service discovery via Sentinel
 
@@ -131,7 +131,7 @@ It is not needed for a client to be able to make the list persistent updating it
 
 ## Subscribe to Sentinel events to improve responsiveness
 
-The [Sentinel documentation](/docs/latest/operate/oss_and_stack/management/sentinel/) shows how clients can connect to Sentinel instances using Pub/Sub in order to subscribe to changes in the Redis instances configurations.
+The [Sentinel documentation](../../../operate/oss_and_stack/management/sentinel/index.md) shows how clients can connect to Sentinel instances using Pub/Sub in order to subscribe to changes in the Redis instances configurations.
 
 This mechanism can be used in order to speedup the reconfiguration of clients, that is, clients may listen to Pub/Sub in order to know when a configuration change happened in order to run the three steps protocol explained in this document in order to resolve the new Redis master (or replica) address.
 

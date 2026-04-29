@@ -10,8 +10,8 @@ content_hash: "b75f6fa98d8f7796acde534120de079da8062858ed1cafc11296a72c469ab02d"
 menu_path: ["PostgreSQL: Documentation: 18: 19.1. Setting Parameters"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../color-which.html/index.md", "title": "PostgreSQL: Documentation: 18: N.2.\u00a0Configuring the Colors"}
-nav_next: {"path": "../connect-estab.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.2.\u00a0How Connections Are Established"}
+nav_prev: {"path": "postgres/docs/current/color-which.html/index.md", "title": "PostgreSQL: Documentation: 18: N.2.\u00a0Configuring the Colors"}
+nav_next: {"path": "postgres/docs/current/connect-estab.html/index.md", "title": "PostgreSQL: Documentation: 18: 51.2.\u00a0How Connections Are Established"}
 ---
 
 ### 19.1.1. Parameter Names and Values [#](#CONFIG-SETTING-NAMES-VALUES)

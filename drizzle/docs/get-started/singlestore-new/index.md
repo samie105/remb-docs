@@ -10,8 +10,8 @@ content_hash: "b01b073183c500591654124ac1581c490813425c99d00c50e420569c2e869f61"
 menu_path: ["Get Started with Drizzle and SingleStore"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../singlestore-existing/index.md", "title": "Get Started with Drizzle and SingleStore in existing project"}
-nav_next: {"path": "../sqlite-cloud-existing/index.md", "title": "Get Started with Drizzle and SQLite Cloud in existing project"}
+nav_prev: {"path": "drizzle/docs/get-started/singlestore-existing/index.md", "title": "Get Started with Drizzle and SingleStore in existing project"}
+nav_next: {"path": "drizzle/docs/get-started/sqlite-cloud-existing/index.md", "title": "Get Started with Drizzle and SQLite Cloud in existing project"}
 ---
 
 ## Get Started with Drizzle and SingleStore

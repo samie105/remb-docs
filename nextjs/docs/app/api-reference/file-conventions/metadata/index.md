@@ -11,8 +11,8 @@ menu_path: ["Metadata Files API Reference"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../unauthorized/index.md", "title": "unauthorized.js"}
-nav_next: {"path": "app-icons/index.md", "title": "favicon, icon, and apple-icon"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/unauthorized/index.md", "title": "unauthorized.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/metadata/app-icons/index.md", "title": "favicon, icon, and apple-icon"}
 ---
 
 # Metadata Files API Reference
@@ -27,8 +27,8 @@ Once a file is defined, Next.js will automatically serve the file (with hashes i
 
 > **Good to know**:
 > 
-> -   Special Route Handlers like [`sitemap.ts`](/docs/app/api-reference/file-conventions/metadata/sitemap), [`opengraph-image.tsx`](/docs/app/api-reference/file-conventions/metadata/opengraph-image), and [`icon.tsx`](/docs/app/api-reference/file-conventions/metadata/app-icons), and other [metadata files](/docs/app/api-reference/file-conventions/metadata) are cached by default.
-> -   If using along with [`proxy.ts`](/docs/app/api-reference/file-conventions/proxy), [configure the matcher](/docs/app/api-reference/file-conventions/proxy#matcher) to exclude the metadata files.
+> -   Special Route Handlers like [`sitemap.ts`](sitemap/index.md), [`opengraph-image.tsx`](opengraph-image/index.md), and [`icon.tsx`](app-icons/index.md), and other [metadata files](index.md) are cached by default.
+> -   If using along with [`proxy.ts`](../proxy/index.md), [configure the matcher](../proxy/index.md#matcher) to exclude the metadata files.
 
 [
 
@@ -36,30 +36,30 @@ Once a file is defined, Next.js will automatically serve the file (with hashes i
 
 API Reference for the Favicon, Icon and Apple Icon file conventions.
 
-](/docs/app/api-reference/file-conventions/metadata/app-icons)[
+](app-icons/index.md)[
 
 ### manifest.json
 
 API Reference for manifest.json file.
 
-](/docs/app/api-reference/file-conventions/metadata/manifest)[
+](manifest/index.md)[
 
 ### opengraph-image and twitter-image
 
 API Reference for the Open Graph Image and Twitter Image file conventions.
 
-](/docs/app/api-reference/file-conventions/metadata/opengraph-image)[
+](opengraph-image/index.md)[
 
 ### robots.txt
 
 API Reference for robots.txt file.
 
-](/docs/app/api-reference/file-conventions/metadata/robots)[
+](robots/index.md)[
 
 ### sitemap.xml
 
 API Reference for the sitemap.xml file.
 
-](/docs/app/api-reference/file-conventions/metadata/sitemap)
+](sitemap/index.md)
 
 Was this helpful?

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:00.541Z"
 content_hash: "6fe8eee05a6cd435e47405edb0b2c290665eb2148a3d27ae0e726a1da2f9f8fc"
 menu_path: ["Node-API"]
 section_path: []
-nav_prev: {"path": "../networking/udp/index.md", "title": "UDP"}
-nav_next: {"path": "../nodejs-compat/index.md", "title": "Node.js Compatibility"}
+nav_prev: {"path": "bun/docs/runtime/networking/udp/index.md", "title": "UDP"}
+nav_next: {"path": "bun/docs/runtime/nodejs-compat/index.md", "title": "Node.js Compatibility"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../nodejs-compat/index.md", "title": "Node.js Compatibility"
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Node-API is an interface for building native add-ons to Node.js. Bun implements 95% of this interface from scratch, so most existing Node-API extensions will work with Bun out of the box. Track the completion status of it in [this issue](https://github.com/oven-sh/bun/issues/158). As in Node.js, `.node` files (Node-API modules) can be required directly in Bun.
 
@@ -58,10 +58,10 @@ Cron
 
 Previous
 
-](/docs/runtime/cron)[
+](../cron/index.md)[
 
 FFI
 
 Next
 
-](/docs/runtime/ffi)
+](../ffi/index.md)

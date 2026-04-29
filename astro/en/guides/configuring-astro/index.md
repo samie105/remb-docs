@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:36:00.600Z"
 content_hash: "671a3301fb5d4f47666b1e813da6110dc422abd36717a3a1fef432ff3299c6ec"
 menu_path: ["Configuration overview"]
 section_path: []
-nav_prev: {"path": "../../develop-and-build/index.md", "title": "Develop and build"}
-nav_next: {"path": "../../editor-setup/index.md", "title": "Editor setup"}
+nav_prev: {"path": "astro/en/develop-and-build/index.md", "title": "Develop and build"}
+nav_next: {"path": "astro/en/editor-setup/index.md", "title": "Editor setup"}
 ---
 
 # Configuration overview
@@ -25,7 +25,7 @@ If this is your first Astro project, or if it’s been a while since you’ve se
 
 [Section titled “The Astro config File”](#the-astro-config-file)
 
-The [Astro config file](/en/reference/configuration-reference/) is a JavaScript file included at the root of every starter project:
+The [Astro config file](../../reference/configuration-reference/index.md) is a JavaScript file included at the root of every starter project:
 
 ```
 import { defineConfig } from "astro/config";
@@ -36,17 +36,17 @@ It is only required if you have something to configure, but most projects will u
 
 We recommend using the default file format `.mjs` in most cases, or `.ts` if you want to write TypeScript in your config file. However, `astro.config.js` is also supported.
 
-Read Astro’s [configuration reference](/en/reference/configuration-reference/) for a full overview of all supported configuration options.
+Read Astro’s [configuration reference](../../reference/configuration-reference/index.md) for a full overview of all supported configuration options.
 
 ## The TypeScript config File
 
 [Section titled “The TypeScript config File”](#the-typescript-config-file)
 
-Every Astro starter project includes a `tsconfig.json` file in your project. Astro’s [component script](/en/basics/astro-components/#the-component-script) is Typescript, which provides Astro’s editor tooling and allows you to optionally add syntax to your JavaScript for type checking of your own project code.
+Every Astro starter project includes a `tsconfig.json` file in your project. Astro’s [component script](../../basics/astro-components/index.md#the-component-script) is Typescript, which provides Astro’s editor tooling and allows you to optionally add syntax to your JavaScript for type checking of your own project code.
 
 Use the `tsconfig.json` file to configure the TypeScript template that will perform type checks on your code, configure TypeScript plugins, set import aliases, and more.
 
-Read Astro’s [TypeScript guide](/en/guides/typescript/) for a full overview of TypeScript options and Astro’s built-in utility types.
+Read Astro’s [TypeScript guide](../typescript/index.md) for a full overview of TypeScript options and Astro’s built-in utility types.
 
 ## Development Experience
 
@@ -56,7 +56,7 @@ While you work in development mode, you can take advantage of your code editor a
 
 Astro provides its own official VS Code extension and is compatible with several other popular editor tools. Astro also provides a customizable toolbar that displays in your browser preview while the dev server is running. You can install and even build your own toolbar apps for additional functionality.
 
-Read Astro’s guides to [editor setup options](/en/editor-setup/) and [using the dev toolbar](/en/guides/dev-toolbar/) to learn how to customize your development experience.
+Read Astro’s guides to [editor setup options](../../editor-setup/index.md) and [using the dev toolbar](../dev-toolbar/index.md) to learn how to customize your development experience.
 
 ## Common new project tasks
 
@@ -68,9 +68,9 @@ Here are some first steps you might choose to take with a new Astro project.
 
 [Section titled “Add your deployment domain”](#add-your-deployment-domain)
 
-For generating your sitemap and creating canonical URLs, configure your deployment URL in the [`site`](/en/reference/configuration-reference/#site) option. If you are deploying to a path (e.g. `www.example.com/docs`), you can also configure a [`base`](/en/reference/configuration-reference/#base) for the root of your project.
+For generating your sitemap and creating canonical URLs, configure your deployment URL in the [`site`](../../reference/configuration-reference/index.md#site) option. If you are deploying to a path (e.g. `www.example.com/docs`), you can also configure a [`base`](../../reference/configuration-reference/index.md#base) for the root of your project.
 
-Additionally, different deployment hosts may have different behavior regarding trailing slashes at the end of your URLs. (e.g. `example.com/about` vs `example.com/about/`). Once your site is deployed, you may need to configure your [`trailingSlash`](/en/reference/configuration-reference/#trailingslash) preference.
+Additionally, different deployment hosts may have different behavior regarding trailing slashes at the end of your URLs. (e.g. `example.com/about` vs `example.com/about/`). Once your site is deployed, you may need to configure your [`trailingSlash`](../../reference/configuration-reference/index.md#trailingslash) preference.
 
 ```
 import { defineConfig } from "astro/config";
@@ -85,7 +85,7 @@ Astro does not use its configuration file for common SEO or meta data, only for 
 
 Instead, this information is added to your page `<head>` using standard HTML `<link>` and `<meta>` tags, just as if you were writing plain HTML pages.
 
-One common pattern for Astro sites is to create a `<Head />` [`.astro` component](/en/basics/astro-components/) that can be added to a common [layout component](/en/basics/layouts/) so it can apply to all your pages.
+One common pattern for Astro sites is to create a `<Head />` [`.astro` component](../../basics/astro-components/index.md) that can be added to a common [layout component](../../basics/layouts/index.md) so it can apply to all your pages.
 
 ```
 ---import Head from "./Head.astro";
@@ -103,4 +103,4 @@ const { title = "My Astro Website", ...props } = Astro.props;---<link rel="sitem
 <Favicon />
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

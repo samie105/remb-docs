@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:52.362Z"
 content_hash: "5eff6b92662afa2b4ff70214f062d8905d40d8f7f02360a75698518df5c14224"
 menu_path: ["Suspense"]
 section_path: []
-nav_prev: {"path": "../setup/index.md", "title": "Set up the React Query Integration"}
-nav_next: {"path": "../useInfiniteQuery/index.md", "title": "useInfiniteQuery()"}
+nav_prev: {"path": "trpc/docs/client/react/setup/index.md", "title": "Set up the React Query Integration"}
+nav_next: {"path": "trpc/docs/client/react/useInfiniteQuery/index.md", "title": "useInfiniteQuery()"}
 ---
 
 info

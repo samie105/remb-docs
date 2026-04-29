@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:00.088Z"
 content_hash: "2cdbf33166468d09f9eda5462089665c90c73d5288c6c63d1b3cc1faf29b4019"
 menu_path: ["Platform","Platform","Add-ons","Add-ons","Database Backups","Database Backups"]
 section_path: ["Platform","Platform","Add-ons","Add-ons","Database Backups","Database Backups"]
-nav_prev: {"path": "../aws-marketplace/manage-your-subscription/index.md", "title": "Manage your subscription"}
-nav_next: {"path": "../billing-faq/index.md", "title": "Billing FAQ"}
+nav_prev: {"path": "supabase/docs/guides/platform/aws-marketplace/manage-your-subscription/index.md", "title": "Manage your subscription"}
+nav_next: {"path": "supabase/docs/guides/platform/billing-faq/index.md", "title": "Billing FAQ"}
 ---
 
 # 
@@ -119,12 +119,12 @@ $0.55
 
 $400
 
-For a detailed breakdown of how charges are calculated, refer to [Manage Point-in-Time Recovery usage](/docs/guides/platform/manage-your-usage/point-in-time-recovery).
+For a detailed breakdown of how charges are calculated, refer to [Manage Point-in-Time Recovery usage](../manage-your-usage/point-in-time-recovery/index.md).
 
 ### Downloading backups after disabling PITR[#](#downloading-backups-after-disabling-pitr)
 
-When you disable PITR, we still take all new backups as physical backups only. You can still use physical backups for restoration, but they are not available for direct download. If you need to download a backup after disabling PITR, you need to take a manual [legacy logical backup using the Supabase CLI or pg\_dump](/docs/guides/platform/migrating-within-supabase/backup-restore#backup-database-using-the-cli).
+When you disable PITR, we still take all new backups as physical backups only. You can still use physical backups for restoration, but they are not available for direct download. If you need to download a backup after disabling PITR, you need to take a manual [legacy logical backup using the Supabase CLI or pg\_dump](../migrating-within-supabase/backup-restore/index.md#backup-database-using-the-cli).
 
 ## Restore to a new project[#](#restore-to-a-new-project)
 
-See the [Duplicate Project docs](/docs/guides/platform/clone-project).
+See the [Duplicate Project docs](../clone-project/index.md).

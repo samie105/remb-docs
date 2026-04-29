@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:32.086Z"
 content_hash: "0225dbab1fe84398f0f9693a1f340648453b80f826409d6cf298b655584ac0a4"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Insight","→","Redis Insight"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Insight","→","Redis Insight"]
-nav_prev: {"path": "../redis-py/index.md", "title": "Python client for Redis"}
-nav_next: {"path": "../redisom-for-java/index.md", "title": "RedisOM for Java"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-py/index.md", "title": "Python client for Redis"}
+nav_next: {"path": "redis/docs/latest/integrate/redisom-for-java/index.md", "title": "RedisOM for Java"}
 ---
 
 # Redis Insight
@@ -39,13 +39,13 @@ Redis Insight is a powerful tool for visualizing and optimizing data in Redis, m
 
 Redis Insight is available for multiple platforms:
 
-*   [Install on Desktop](/docs/latest/operate/redisinsight/install/install-on-desktop/) - Windows, macOS, Linux
-*   [Install on Docker](/docs/latest/operate/redisinsight/install/install-on-docker/) - Container deployment
-*   [Install on Kubernetes](/docs/latest/operate/redisinsight/install/install-on-k8s/) - K8s clusters
-*   [Install on AWS](/docs/latest/operate/redisinsight/install/install-on-aws/) - Amazon Web Services
+*   [Install on Desktop](../../operate/redisinsight/install/install-on-desktop/index.md) - Windows, macOS, Linux
+*   [Install on Docker](../../operate/redisinsight/install/install-on-docker/index.md) - Container deployment
+*   [Install on Kubernetes](../../operate/redisinsight/install/install-on-k8s/index.md) - K8s clusters
+*   [Install on AWS](../../operate/redisinsight/install/install-on-aws/index.md) - Amazon Web Services
 
 ## Getting Started
 
-Refer to the complete [Redis Insight guide](/docs/latest/develop/tools/insight/) to install, connect, and use Redis Insight for data visualization and database management.
+Refer to the complete [Redis Insight guide](../../develop/tools/insight/index.md) to install, connect, and use Redis Insight for data visualization and database management.
 
 ## On this page

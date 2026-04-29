@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:46.420Z"
 content_hash: "11f328c1016c7f27377b4fc7c9a921d52ce663362830660a03265647d8178713"
 menu_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Restoring downloaded backup","Restoring downloaded backup"]
 section_path: ["Local Dev / CLI","Local Dev / CLI","Local development","Local development","Restoring downloaded backup","Restoring downloaded backup"]
-nav_prev: {"path": "../overview/index.md", "title": "Local development with schema migrations"}
-nav_next: {"path": "../seeding-your-database/index.md", "title": "Seeding your database"}
+nav_prev: {"path": "supabase/docs/guides/local-development/overview/index.md", "title": "Local development with schema migrations"}
+nav_next: {"path": "supabase/docs/guides/local-development/seeding-your-database/index.md", "title": "Seeding your database"}
 ---
 
 # 
@@ -23,9 +23,9 @@ Restore a backup of a remote database on a local instance to inspect and extract
 
 * * *
 
-If your paused project has exceeded its [restoring time limit](/docs/guides/platform/upgrading#time-limits), you can download a backup from the dashboard and restore it to your local development environment. This might be useful for inspecting and extracting data from your paused project.
+If your paused project has exceeded its [restoring time limit](../../platform/upgrading/index.md#time-limits), you can download a backup from the dashboard and restore it to your local development environment. This might be useful for inspecting and extracting data from your paused project.
 
-If you want to restore your backup to a hosted Supabase project, follow the [Migrating within Supabase guide](/docs/guides/platform/migrating-within-supabase) instead.
+If you want to restore your backup to a hosted Supabase project, follow the [Migrating within Supabase guide](../../platform/migrating-within-supabase/index.md) instead.
 
 ## Downloading your backup[#](#downloading-your-backup)
 

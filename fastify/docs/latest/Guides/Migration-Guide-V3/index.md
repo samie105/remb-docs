@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:38:28.176Z"
 content_hash: "20dced8549be0c09172ad18bcb42cdadcf08406ad5104edcf3cb026c4d6f91d4"
 menu_path: ["V3 Migration Guide"]
 section_path: []
-nav_prev: {"path": "../Getting-Started/index.md", "title": "Getting-Started"}
-nav_next: {"path": "../Migration-Guide-V4/index.md", "title": "V4 Migration Guide"}
+nav_prev: {"path": "fastify/docs/latest/Guides/Getting-Started/index.md", "title": "Getting-Started"}
+nav_next: {"path": "fastify/docs/latest/Guides/Migration-Guide-V4/index.md", "title": "V4 Migration Guide"}
 ---
 
 Version: latest (v5.8.x)
 
 Version 3 and before of Fastify are no longer maintained.
 
-For information about support options for end-of-life versions, see the [Long Term Support](/docs/latest/Reference/LTS/) page.
+For information about support options for end-of-life versions, see the [Long Term Support](../../Reference/LTS/index.md) page.
 
 This guide is intended to help with migration from Fastify v2 to v3.
 
@@ -45,7 +45,7 @@ If you use Express middleware in your application, please install and register t
 
 ### Changed logging serialization ([#2017](https://github.com/fastify/fastify/pull/2017))[​](#changed-logging-serialization-2017 "Direct link to changed-logging-serialization-2017")
 
-The logging [Serializers](/docs/latest/Reference/Logging/) have been updated to now Fastify [`Request`](/docs/latest/Reference/Request/) and [`Reply`](/docs/latest/Reference/Reply/) objects instead of native ones.
+The logging [Serializers](../../Reference/Logging/index.md) have been updated to now Fastify [`Request`](../../Reference/Request/index.md) and [`Reply`](../../Reference/Reply/index.md) objects instead of native ones.
 
 Any custom serializers must be updated if they rely upon `request` or `reply` properties that are present on the native objects but not the Fastify objects.
 
@@ -157,9 +157,9 @@ fastify.setErrorHandler((error, request, reply) => {  // this IS called  reply.s
 ## Further additions and improvements[​](#further-additions-and-improvements "Direct link to Further additions and improvements")
 
 *   Hooks now have consistent context regardless of how they are registered ([#2005](https://github.com/fastify/fastify/pull/2005))
-*   Deprecated `request.req` and `reply.res` for [`request.raw`](/docs/latest/Reference/Request/) and [`reply.raw`](/docs/latest/Reference/Reply/) ([#2008](https://github.com/fastify/fastify/pull/2008))
+*   Deprecated `request.req` and `reply.res` for [`request.raw`](../../Reference/Request/index.md) and [`reply.raw`](../../Reference/Reply/index.md) ([#2008](https://github.com/fastify/fastify/pull/2008))
 *   Removed `modifyCoreObjects` option ([#2015](https://github.com/fastify/fastify/pull/2015))
-*   Added [`connectionTimeout`](/docs/latest/Reference/Server/#factory-connection-timeout) option ([#2086](https://github.com/fastify/fastify/pull/2086))
-*   Added [`keepAliveTimeout`](/docs/latest/Reference/Server/#factory-keep-alive-timeout) option ([#2086](https://github.com/fastify/fastify/pull/2086))
-*   Added async-await support for [plugins](/docs/latest/Reference/Plugins/#async-await) ([#2093](https://github.com/fastify/fastify/pull/2093))
+*   Added [`connectionTimeout`](../../Reference/Server/index.md#factory-connection-timeout) option ([#2086](https://github.com/fastify/fastify/pull/2086))
+*   Added [`keepAliveTimeout`](../../Reference/Server/index.md#factory-keep-alive-timeout) option ([#2086](https://github.com/fastify/fastify/pull/2086))
+*   Added async-await support for [plugins](../../Reference/Plugins/index.md#async-await) ([#2093](https://github.com/fastify/fastify/pull/2093))
 *   Added the feature to throw object as error ([#2134](https://github.com/fastify/fastify/pull/2134))

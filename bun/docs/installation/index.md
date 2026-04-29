@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T17:02:53.187Z"
 content_hash: "e526f403d65500393cddd6ad80c0fc95abb05c305c1429ae4448d0b88437e1fe"
 menu_path: ["Installation"]
 section_path: []
-nav_next: {"path": "../index.md", "title": "Welcome to Bun"}
+nav_next: {"path": "bun/docs/index.md", "title": "Welcome to Bun"}
 ---
 
 # Output: 1.x.y
@@ -337,10 +337,10 @@ Welcome to Bun
 
 Previous
 
-](/docs)[
+](../index.md)[
 
 Quickstart
 
 Next
 
-](/docs/quickstart)
+](../quickstart/index.md)

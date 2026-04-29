@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../fonts/index.md", "title": "How to use fonts"}
-nav_next: {"path": "../deploying/index.md", "title": "How to deploy your Next.js application"}
+nav_prev: {"path": "nextjs/docs/pages/getting-started/fonts/index.md", "title": "How to use fonts"}
+nav_next: {"path": "nextjs/docs/pages/getting-started/deploying/index.md", "title": "How to deploy your Next.js application"}
 ---
 
 # How to use CSS in your application
@@ -26,8 +26,8 @@ Next.js provides several ways to style your application using CSS, including:
 -   [CSS Modules](#css-modules)
 -   [Global CSS](#global-css)
 -   [External Stylesheets](#external-stylesheets)
--   [Sass](/docs/app/guides/sass)
--   [CSS-in-JS](/docs/app/guides/css-in-js)
+-   [Sass](../../../app/guides/sass/index.md)
+-   [CSS-in-JS](../../../app/guides/css-in-js/index.md)
 
 ## Tailwind CSS[](#tailwind-css)
 
@@ -105,7 +105,7 @@ export default function Home() {
 }
 ```
 
-> **Good to know:** If you need broader browser support for very old browsers, see the [Tailwind CSS v3 setup instructions](/docs/app/guides/tailwind-v3-css).
+> **Good to know:** If you need broader browser support for very old browsers, see the [Tailwind CSS v3 setup instructions](../../../app/guides/tailwind-v3-css/index.md).
 
 ## CSS Modules[](#css-modules)
 
@@ -149,7 +149,7 @@ export default function MyApp({ Component, pageProps }) {
 }
 ```
 
-Due to the global nature of stylesheets, and to avoid conflicts, you should import them inside [`pages/_app.js`](/docs/pages/building-your-application/routing/custom-app).
+Due to the global nature of stylesheets, and to avoid conflicts, you should import them inside [`pages/_app.js`](../../building-your-application/routing/custom-app/index.md).
 
 ## External stylesheets[](#external-stylesheets)
 
@@ -243,11 +243,11 @@ To keep CSS ordering predictable:
 -   Use a consistent naming convention for your CSS modules. For example, using `<name>.module.css` over `<name>.tsx`.
 -   Extract shared styles into shared components to avoid duplicate imports.
 -   Turn off linters or formatters that auto-sort imports like ESLint’s [`sort-imports`](https://eslint.org/docs/latest/rules/sort-imports).
--   You can use the [`cssChunking`](/docs/app/api-reference/config/next-config-js/cssChunking) option in `next.config.js` to control how CSS is chunked.
+-   You can use the [`cssChunking`](../../../app/api-reference/config/next-config-js/cssChunking/index.md) option in `next.config.js` to control how CSS is chunked.
 
 ## Development vs Production[](#development-vs-production)
 
--   In development (`next dev`), CSS updates apply instantly with [Fast Refresh](/docs/architecture/fast-refresh).
+-   In development (`next dev`), CSS updates apply instantly with [Fast Refresh](../../../architecture/fast-refresh/index.md).
 -   In production (`next build`), all CSS files are automatically concatenated into **many minified and code-split** `.css` files, ensuring the minimal amount of CSS is loaded for a route.
 -   CSS still loads with JavaScript disabled in production, but JavaScript is required in development for Fast Refresh.
 -   CSS ordering can behave differently in development, always ensure to check the build (`next build`) to verify the final CSS order.

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:44.726Z"
 content_hash: "3093a88470ac8756efc2c3e8f3f0286246a025dc1cae2081e189305336e4b9c4"
 menu_path: ["Snapshots"]
 section_path: []
-nav_prev: {"path": "../runtime-behavior/index.md", "title": "Runtime behavior"}
-nav_next: {"path": "../writing-tests/index.md", "title": "Writing tests"}
+nav_prev: {"path": "bun/docs/test/runtime-behavior/index.md", "title": "Runtime behavior"}
+nav_next: {"path": "bun/docs/test/writing-tests/index.md", "title": "Writing tests"}
 ---
 
 # See what changed

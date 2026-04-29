@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:20.782Z"
 content_hash: "3d5544c32a7d33b31246743a5fad6db7b7f1d14acdfda31212383a03c0f07a83"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Nuxt","Nuxt"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","Nuxt","Nuxt"]
-nav_prev: {"path": "../nextjs/index.md", "title": "Use Supabase with Next.js"}
-nav_next: {"path": "../reactjs/index.md", "title": "Use Supabase with React"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/nextjs/index.md", "title": "Use Supabase with Next.js"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/reactjs/index.md", "title": "Use Supabase with React"}
 ---
 
 # 
@@ -108,7 +108,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nuxt).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 

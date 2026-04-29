@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:00.005Z"
 content_hash: "021b24c20454045ffb7200df1daa259917bd05d450a9642bfddc91efcee81fb0"
 menu_path: ["Add a dependency"]
 section_path: []
-nav_prev: {"path": "../../http/tls/index.md", "title": "Configure TLS on an HTTP server"}
-nav_next: {"path": "../add-dev/index.md", "title": "Add a development dependency"}
+nav_prev: {"path": "bun/docs/guides/http/tls/index.md", "title": "Configure TLS on an HTTP server"}
+nav_next: {"path": "bun/docs/guides/install/add-dev/index.md", "title": "Add a development dependency"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../add-dev/index.md", "title": "Add a development dependency
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To add an npm package as a dependency, use `bun add`.
 
@@ -80,7 +80,7 @@ bun add zod@next
 
 * * *
 
-See [Docs > Package manager](/docs/pm/cli/install) for complete documentation of Bun’s package manager.
+See [Docs > Package manager](../../../pm/cli/install/index.md) for complete documentation of Bun’s package manager.
 
 Was this page helpful?
 
@@ -92,10 +92,10 @@ Read environment variables
 
 Previous
 
-](/docs/guides/runtime/read-env)[
+](../../runtime/read-env/index.md)[
 
 Add a development dependency
 
 Next
 
-](/docs/guides/install/add-dev)
+](../add-dev/index.md)

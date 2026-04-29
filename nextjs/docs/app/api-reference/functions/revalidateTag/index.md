@@ -11,8 +11,8 @@ menu_path: ["revalidateTag"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../revalidatePath/index.md", "title": "revalidatePath"}
-nav_next: {"path": "../unauthorized/index.md", "title": "unauthorized"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/revalidatePath/index.md", "title": "revalidatePath"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/unauthorized/index.md", "title": "unauthorized"}
 ---
 
 # revalidateTag
@@ -35,7 +35,7 @@ The revalidation behavior depends on whether you provide the second argument:
 
 -   **With `profile="max"` (recommended)**: The tag entry is marked as stale, and the next time a resource with that tag is visited, it will use stale-while-revalidate semantics. This means the stale content is served while fresh content is fetched in the background.
 -   **With a custom cache life profile**: For advanced usage, you can specify any cache life profile that your application has defined, allowing for custom revalidation behaviors tailored to your specific caching requirements.
--   **Without the second argument (deprecated)**: The tag entry is expired immediately, and the next request to that resource will be a blocking revalidate/cache miss. This behavior is now deprecated, and you should either use `profile="max"` or migrate to [`updateTag`](/docs/app/api-reference/functions/updateTag).
+-   **Without the second argument (deprecated)**: The tag entry is expired immediately, and the next request to that resource will be a blocking revalidate/cache miss. This behavior is now deprecated, and you should either use `profile="max"` or migrate to [`updateTag`](../updateTag/index.md).
 
 > **Good to know**: When using `profile="max"`, `revalidateTag` marks tagged data as stale, but fresh data is only fetched when pages using that tag are next visited. This means calling `revalidateTag` will not immediately trigger many revalidations at once. The invalidation only happens when any page using that tag is next visited.
 
@@ -46,17 +46,17 @@ revalidateTag(tag: string, profile: string | { expire?: number }): void;
 ```
 
 -   `tag`: A string representing the cache tag associated with the data you want to revalidate. Must not exceed 256 characters. This value is case-sensitive.
--   `profile`: A string that specifies the revalidation behavior. The recommended value is `"max"` which provides stale-while-revalidate semantics, or any of the other default or custom profiles defined in [`cacheLife`](/docs/app/api-reference/config/next-config-js/cacheLife). Alternatively, you can pass an object with an `expire` property for custom expiration behavior.
+-   `profile`: A string that specifies the revalidation behavior. The recommended value is `"max"` which provides stale-while-revalidate semantics, or any of the other default or custom profiles defined in [`cacheLife`](../../config/next-config-js/cacheLife/index.md). Alternatively, you can pass an object with an `expire` property for custom expiration behavior.
 
 Tags must first be assigned to cached data. You can do this in two ways:
 
--   Using the [`next.tags`](/docs/app/api-reference/functions/fetch) option with `fetch` for caching external API requests:
+-   Using the [`next.tags`](../fetch/index.md) option with `fetch` for caching external API requests:
 
 ```
 fetch(url, { next: { tags: ['posts'] } })
 ```
 
--   Using [`cacheTag`](/docs/app/api-reference/functions/cacheTag) inside cached functions or components with the `'use cache'` directive:
+-   Using [`cacheTag`](../cacheTag/index.md) inside cached functions or components with the `'use cache'` directive:
 
 ```
 import { cacheTag } from 'next/cache'
@@ -76,9 +76,9 @@ async function getData() {
 
 ## Relationship with `revalidatePath`[](#relationship-with-revalidatepath)
 
-`revalidateTag` invalidates data with specific tags across all pages that use those tags, while [`revalidatePath`](/docs/app/api-reference/functions/revalidatePath) invalidates specific page or layout paths.
+`revalidateTag` invalidates data with specific tags across all pages that use those tags, while [`revalidatePath`](../revalidatePath/index.md) invalidates specific page or layout paths.
 
-> **Good to know**: These functions serve different purposes and may need to be used together for comprehensive data consistency. For detailed examples and considerations, see [relationship with revalidateTag and updateTag](/docs/app/api-reference/functions/revalidatePath#relationship-with-revalidatetag-and-updatetag) for more information.
+> **Good to know**: These functions serve different purposes and may need to be used together for comprehensive data consistency. For detailed examples and considerations, see [relationship with revalidateTag and updateTag](../revalidatePath/index.md#relationship-with-revalidatetag-and-updatetag) for more information.
 
 ## Examples[](#examples)
 
@@ -127,6 +127,6 @@ export async function GET(request: NextRequest) {
 }
 ```
 
-> **Good to know**: For webhooks or third-party services that need immediate expiration, you can pass `{ expire: 0 }` as the second argument: `revalidateTag(tag, { expire: 0 })`. This pattern is necessary when external systems call your Route Handlers and require data to expire immediately. For all other cases, it's recommended to use [`updateTag`](/docs/app/api-reference/functions/updateTag) in Server Actions for immediate updates instead.
+> **Good to know**: For webhooks or third-party services that need immediate expiration, you can pass `{ expire: 0 }` as the second argument: `revalidateTag(tag, { expire: 0 })`. This pattern is necessary when external systems call your Route Handlers and require data to expire immediately. For all other cases, it's recommended to use [`updateTag`](../updateTag/index.md) in Server Actions for immediate updates instead.
 
 Was this helpful?

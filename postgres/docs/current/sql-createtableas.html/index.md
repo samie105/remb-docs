@@ -10,8 +10,8 @@ content_hash: "2ce3ea29da20b205c8fedf9f5bea8d0c7dcdff6400c9b3ed380a8c04525ee884"
 menu_path: ["PostgreSQL: Documentation: 18: CREATE TABLE AS"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
-nav_next: {"path": "../sql-createtsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH PARSER"}
+nav_prev: {"path": "postgres/docs/current/sql-createsubscription.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE SUBSCRIPTION"}
+nav_next: {"path": "postgres/docs/current/sql-createtsparser.html/index.md", "title": "PostgreSQL: Documentation: 18: CREATE TEXT SEARCH PARSER"}
 ---
 
 CREATE TABLE AS — define a new table from the results of a query

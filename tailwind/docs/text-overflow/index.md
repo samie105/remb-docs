@@ -10,8 +10,8 @@ content_hash: "5bed5dc6d68d4de3c3f388c6732caa5418f00b5f85a872b088618208cd9eb017"
 menu_path: ["text-overflow"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../text-transform/index.md", "title": "text-transform"}
-nav_next: {"path": "../text-wrap/index.md", "title": "text-wrap"}
+nav_prev: {"path": "tailwind/docs/text-transform/index.md", "title": "text-transform"}
+nav_next: {"path": "tailwind/docs/text-wrap/index.md", "title": "text-wrap"}
 ---
 
 Utilities for controlling how the text of an element overflows.

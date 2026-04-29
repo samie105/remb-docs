@@ -11,8 +11,8 @@ menu_path: ["Turbopack FileSystem Caching"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../turbopack/index.md", "title": "turbopack"}
-nav_next: {"path": "../turbopackIgnoreIssue/index.md", "title": "turbopack.ignoreIssue"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopack/index.md", "title": "turbopack"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/turbopackIgnoreIssue/index.md", "title": "turbopack.ignoreIssue"}
 ---
 
 # Turbopack FileSystem Caching

@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:32:12.323Z"
 content_hash: "2b7ba0b91ec70b16b139df142c570d02a4fe49401d21fa9433c661495d57b195"
 menu_path: ["Overview"]
 section_path: []
-nav_next: {"path": "../getting-started/index.md", "title": "Getting started"}
+nav_next: {"path": "svelte/docs/svelte/getting-started/index.md", "title": "Getting started"}
 ---
 
 Svelte is a framework for building user interfaces on the web. It uses a compiler to turn declarative components written in HTML, CSS and JavaScript...
@@ -60,4 +60,4 @@ You can also try Svelte online in the [playground](/playground) or, if you need 
 
 previous next
 
-[Getting started](/docs/svelte/getting-started)
+[Getting started](../getting-started/index.md)

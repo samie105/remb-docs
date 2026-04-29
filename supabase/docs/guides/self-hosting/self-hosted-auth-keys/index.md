@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:36.868Z"
 content_hash: "9511a3b517eaa0539a3467e66f582f8eea7f3476a0e6de4c5e144b700e648d5c"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure new API keys","Configure new API keys"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure new API keys","Configure new API keys"]
-nav_prev: {"path": "../restore-from-platform/index.md", "title": "Restore a Platform Project to Self-Hosted"}
-nav_next: {"path": "../self-hosted-functions/index.md", "title": "Self-Hosted Functions"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/restore-from-platform/index.md", "title": "Restore a Platform Project to Self-Hosted"}
+nav_next: {"path": "supabase/docs/guides/self-hosting/self-hosted-functions/index.md", "title": "Self-Hosted Functions"}
 ---
 
 # 
@@ -23,11 +23,11 @@ Configure new API keys and ES256 asymmetric authentication for self-hosted Supab
 
 * * *
 
-You can configure self-hosted Supabase to use the [new API keys](/docs/guides/api/api-keys) alongside the legacy API keys (`ANON_KEY` and `SERVICE_ROLE_KEY` HS256-signed JWTs).
+You can configure self-hosted Supabase to use the [new API keys](../../api/api-keys/index.md) alongside the legacy API keys (`ANON_KEY` and `SERVICE_ROLE_KEY` HS256-signed JWTs).
 
 ## Before you begin[#](#before-you-begin)
 
-*   Complete the [Docker setup guide](/docs/guides/self-hosting/docker), including running `generate-keys.sh` so that `JWT_SECRET`, `ANON_KEY`, and `SERVICE_ROLE_KEY` are set in your `.env` file.
+*   Complete the [Docker setup guide](../docker/index.md), including running `generate-keys.sh` so that `JWT_SECRET`, `ANON_KEY`, and `SERVICE_ROLE_KEY` are set in your `.env` file.
 *   Ensure `openssl` and `node` version 16 or newer are available on the machine where you will generate new keys.
 *   If you are upgrading an existing self-hosted Supabase environment, make sure to check the [changelog](https://github.com/supabase/supabase/blob/master/docker/CHANGELOG.md) and add/update the following files:
     *   `.env.example` (merge new sections into your `.env` file)
@@ -65,7 +65,7 @@ Then restart all services:
 
 ### New API keys format[#](#new-api-keys-format)
 
-The new API keys use the [same format](/docs/guides/api/api-keys) as the Supabase platform:
+The new API keys use the [same format](../../api/api-keys/index.md) as the Supabase platform:
 
 ```
 1sb_publishable_<22-char-random>_<8-char-checksum>2sb_secret_<22-char-random>_<8-char-checksum>
@@ -319,11 +319,11 @@ The `request-transformer` expression in `kong.yml` implements this as a single L
 
 ## Additional resources[#](#additional-resources)
 
-*   [Understanding API keys](/docs/guides/api/api-keys) - How API keys work on the Supabase platform
-*   [Auth architecture](/docs/guides/auth/architecture) - How the Auth service handles authentication and token signing
-*   [JWT Signing Keys](/docs/guides/auth/signing-keys) - Best practices on managing keys used by Supabase Auth to create and verify JSON Web Tokens
-*   [JSON Web Token (JWT)](/docs/guides/auth/jwts) - How to best use JSON Web Tokens with Supabase
-*   [Self-hosting with Docker](/docs/guides/self-hosting/docker) - Initial setup guide, including legacy key generation
+*   [Understanding API keys](../../api/api-keys/index.md) - How API keys work on the Supabase platform
+*   [Auth architecture](../../auth/architecture/index.md) - How the Auth service handles authentication and token signing
+*   [JWT Signing Keys](../../auth/signing-keys/index.md) - Best practices on managing keys used by Supabase Auth to create and verify JSON Web Tokens
+*   [JSON Web Token (JWT)](../../auth/jwts/index.md) - How to best use JSON Web Tokens with Supabase
+*   [Self-hosting with Docker](../docker/index.md) - Initial setup guide, including legacy key generation
 
 On GitHub:
 

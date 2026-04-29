@@ -11,8 +11,8 @@ menu_path: ["Environment variables"]
 section_path: []
 tab_variants: ["Command Prompt","PowerShell","Command Prompt","PowerShell"]
 content_language: "en"
-nav_prev: {"path": "../editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "../../troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
+nav_prev: {"path": "prisma/docs/orm/more/dev-environment/editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "prisma/docs/orm/more/troubleshooting/bundler-issues/index.md", "title": "Bundler issues"}
 ---
 
 # environment variable already set in the environment of the system

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:54:34.516Z"
 content_hash: "32a0ac0068ae975170782d60391d7fd8e36f1381a143c5448e521dff79e19f2a"
 menu_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Google","Google"]
 section_path: ["Auth","Auth","More","More","More","Social Login (OAuth)","Social Login (OAuth)","Google","Google"]
-nav_prev: {"path": "../auth-gitlab/index.md", "title": "Login with GitLab"}
-nav_next: {"path": "../auth-kakao/index.md", "title": "Login with Kakao"}
+nav_prev: {"path": "supabase/docs/guides/auth/social-login/auth-gitlab/index.md", "title": "Login with GitLab"}
+nav_next: {"path": "supabase/docs/guides/auth/social-login/auth-kakao/index.md", "title": "Login with Kakao"}
 ---
 
 # 
@@ -53,7 +53,7 @@ It's strongly recommended you set up a custom domain and optionally verify your 
 Google's consent screen is shown to users when they sign in. Optionally configure one of the following to improve the appearance of the screen, increasing the perception of trust by your users:
 
 1.  Verify your application's brand (logo and name) by configuring it in the [Branding](https://console.cloud.google.com/auth/branding) section of the Google Auth Platform console. Brand verification is not automatic and may take a few business days.
-2.  Set up a [custom domain for your project](/docs/guides/platform/custom-domains) to present the user with a clear relationship to the website they clicked Sign in with Google on.
+2.  Set up a [custom domain for your project](../../../platform/custom-domains/index.md) to present the user with a clear relationship to the website they clicked Sign in with Google on.
     *   A good approach is to use `auth.example.com` or `api.example.com`, if your application is hosted on `example.com`.
     *   If you don't set this up, users will see `<project-id>.supabase.co` which does not inspire trust and can make your application more susceptible to successful phishing attempts.
 
@@ -64,9 +64,9 @@ To support Sign In with Google, you need to configure the Google provider for yo
 Regardless of whether you use application code or Google's pre-built solutions to implement the sign in flow, you need to configure your project by obtaining a Client ID and Client Secret in the [Clients](https://console.cloud.google.com/auth/clients) section of the Google Auth Platform console:
 
 1.  [Create a new OAuth client ID](https://console.cloud.google.com/auth/clients/create) and choose **Web application** for the application type.
-2.  Under **Authorized JavaScript origins** add your application's URL. These should also be configured as the [Site URL or redirect configuration in your project](/docs/guides/auth/redirect-urls).
+2.  Under **Authorized JavaScript origins** add your application's URL. These should also be configured as the [Site URL or redirect configuration in your project](../../redirect-urls/index.md).
     *   If your app is hosted on `https://example.com/app` add `https://example.com`.
-    *   Add `http://localhost:<port>` while developing locally. Remember to remove this when your application [goes into production](/docs/guides/deployment/going-into-prod).
+    *   Add `http://localhost:<port>` while developing locally. Remember to remove this when your application [goes into production](../../../deployment/going-into-prod/index.md).
 3.  Under **Authorized redirect URIs** add your Supabase project's callback URL.
     *   Access it from the [Google provider page on the Dashboard](/dashboard/project/_/auth/providers?provider=Google).
     *   For local development, use `http://127.0.0.1:54321/auth/v1/callback`.
@@ -108,7 +108,7 @@ To use your own application code for the signin button, call the `signInWithOAut
 
 Make sure you're using the right `supabase` client in the following code.
 
-If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](/docs/guides/auth/server-side/creating-a-client) for instructions on creating your Supabase client.
+If you're not using Server-Side Rendering or cookie-based Auth, you can directly use the `createClient` from `@supabase/supabase-js`. If you're using Server-Side Rendering, see the [Server-Side Auth guide](../../server-side/creating-a-client/index.md) for instructions on creating your Supabase client.
 
 ```
 1import { createClient } from '@supabase/supabase-js'23const supabase = createClient('https://your-project-id.supabase.co', 'sb_publishable_...')45// ---cut---6supabase.auth.signInWithOAuth({7  provider: 'google',8})
@@ -116,7 +116,7 @@ If you're not using Server-Side Rendering or cookie-based Auth, you can directly
 
 For an implicit flow, that's all you need to do. The user will be taken to Google's consent screen, and finally redirected to your app with an access and refresh token pair representing their session.
 
-For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](/docs/guides/auth/redirect-urls).
+For a PKCE flow, for example in Server-Side Auth, you need an extra step to handle the code exchange. When calling `signInWithOAuth`, provide a `redirectTo` URL which points to a callback route. This redirect URL should be added to your [redirect allow list](../../redirect-urls/index.md).
 
 In the browser, `signInWithOAuth` automatically redirects to the OAuth provider's authentication endpoint, which then redirects to your endpoint.
 

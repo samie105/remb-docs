@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:16.087Z"
 content_hash: "6c16536d0deff09ab3ff66df7e02374f09aab801a573428c0151502ffed76d94"
 menu_path: ["Sleep for a fixed number of milliseconds"]
 section_path: []
-nav_prev: {"path": "../path-to-file-url/index.md", "title": "Convert an absolute path to a file URL"}
-nav_next: {"path": "../upgrade/index.md", "title": "Upgrade Bun to the latest version"}
+nav_prev: {"path": "bun/docs/guides/util/path-to-file-url/index.md", "title": "Convert an absolute path to a file URL"}
+nav_next: {"path": "bun/docs/guides/util/upgrade/index.md", "title": "Upgrade Bun to the latest version"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../upgrade/index.md", "title": "Upgrade Bun to the latest ve
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `Bun.sleep` method provides a convenient way to create a void `Promise` that resolves in a fixed number of milliseconds.
 
@@ -52,7 +52,7 @@ await new Promise(resolve => setTimeout(resolve, ms));
 
 * * *
 
-See [Docs > API > Utils](/docs/runtime/utils) for more useful utilities.
+See [Docs > API > Utils](../../../runtime/utils/index.md) for more useful utilities.
 
 Was this page helpful?
 
@@ -64,10 +64,10 @@ Check if two objects are deeply equal
 
 Previous
 
-](/docs/guides/util/deep-equals)[
+](../deep-equals/index.md)[
 
 Convert a file URL to an absolute path
 
 Next
 
-](/docs/guides/util/file-url-to-path)
+](../file-url-to-path/index.md)

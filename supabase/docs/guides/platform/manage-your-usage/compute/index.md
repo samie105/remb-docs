@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:52.664Z"
 content_hash: "cd02372b2e9659df4a6f84e9d991b2598cca93e180ade5c3f0fb53f71e0bd78e"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Compute","Compute"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Compute","Compute"]
-nav_prev: {"path": "../branching/index.md", "title": "Manage Branching usage"}
-nav_next: {"path": "../custom-domains/index.md", "title": "Manage Custom Domain usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/branching/index.md", "title": "Manage Branching usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/custom-domains/index.md", "title": "Manage Custom Domain usage"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Manage Compute usage
 
 ## What you are charged for[#](#what-you-are-charged-for)
 
-Each project on the Supabase platform includes a dedicated Postgres instance running on its own server. You are charged for the [Compute](/docs/guides/platform/compute-and-disk#compute) resources of that server, independent of your database usage.
+Each project on the Supabase platform includes a dedicated Postgres instance running on its own server. You are charged for the [Compute](../../compute-and-disk/index.md#compute) resources of that server, independent of your database usage.
 
-Paused projects do not count towards Compute usage. Compute Hours are **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+Paused projects do not count towards Compute usage. Compute Hours are **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
 ## How charges are calculated[#](#how-charges-are-calculated)
 
@@ -345,7 +345,7 @@ In the Compute Hours section, you can see how many hours of a specific Compute s
 
 *   Start out on a smaller Compute size, [create a report](/dashboard/project/_/observability) on the Dashboard to monitor your CPU and memory utilization, and upgrade the Compute size as needed
 *   Load test your application in staging to understand your Compute requirements
-*   [Transfer projects](/docs/guides/platform/project-transfer) to a Free Plan organization to reduce Compute usage
+*   [Transfer projects](../../project-transfer/index.md) to a Free Plan organization to reduce Compute usage
 *   Delete unused projects
 
 ## FAQ[#](#faq)

@@ -10,8 +10,8 @@ content_hash: "41ab6c04bb2947a7597157e5c2816a7e85207bb0d0282b42dfe90b7a0c704373"
 menu_path: ["Get Started with Drizzle and TiDB in existing project"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../supabase-new/index.md", "title": "Get Started with Drizzle and Supabase"}
-nav_next: {"path": "../tidb-new/index.md", "title": "Get Started with Drizzle and TiDB"}
+nav_prev: {"path": "drizzle/docs/get-started/supabase-new/index.md", "title": "Get Started with Drizzle and Supabase"}
+nav_next: {"path": "drizzle/docs/get-started/tidb-new/index.md", "title": "Get Started with Drizzle and TiDB"}
 ---
 
 ## Get Started with Drizzle and TiDB in existing project

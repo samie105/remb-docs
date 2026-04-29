@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:19.280Z"
 content_hash: "0b6830adadbb185127895a570a3ab656f7424352fc56bd8d9ea78aba3e32fbe0"
 menu_path: ["svelte/reactivity"]
 section_path: []
-nav_prev: {"path": "../svelte-reactivity-window/index.md", "title": "svelte/reactivity/window"}
-nav_next: {"path": "../svelte-server/index.md", "title": "svelte/server"}
+nav_prev: {"path": "svelte/docs/svelte/svelte-reactivity-window/index.md", "title": "svelte/reactivity/window"}
+nav_next: {"path": "svelte/docs/svelte/svelte-server/index.md", "title": "svelte/server"}
 ---
 
 Svelte provides reactive versions of various built-ins like [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) and [`URL`](https://developer.mozilla.org/en-US/docs/Web/API/URL) that can be used just like their native counterparts, as well as a handful of additional utilities for handling reactivity.
@@ -362,7 +362,7 @@ add(value: T): this;
 
 A reactive version of the built-in [`URL`](https://developer.mozilla.org/en-US/docs/Web/API/URL) object. Reading properties of the URL (such as `url.href` or `url.pathname`) in an [effect](/docs/svelte/$effect) or [derived](/docs/svelte/$derived) will cause it to be re-evaluated as necessary when the URL changes.
 
-The `searchParams` property is an instance of [SvelteURLSearchParams](/docs/svelte/svelte-reactivity#SvelteURLSearchParams).
+The `searchParams` property is an instance of [SvelteURLSearchParams](index.md#SvelteURLSearchParams).
 
 [Example](/playground/5a694758901b448c83dc40dc31c71f2a):
 
@@ -437,7 +437,7 @@ If `start` returns a cleanup function, it will be called when the effect is dest
 
 If `subscribe` is called in multiple effects, `start` will only be called once as long as the effects are active, and the returned teardown function will only be called when all effects are destroyed.
 
-It's best understood with an example. Here's an implementation of [`MediaQuery`](/docs/svelte/svelte-reactivity#MediaQuery):
+It's best understood with an example. Here's an implementation of [`MediaQuery`](index.md#MediaQuery):
 
 ```
 import { function createSubscriber(start: (update: () => void) => (() => void) | void): () => voidReturns a subscribe function that integrates external event-based systems with Svelte's reactivity.
@@ -563,4 +563,4 @@ function createSubscriber(
 
 previous next
 
-[svelte/reactivity/window](/docs/svelte/svelte-reactivity-window) [svelte/server](/docs/svelte/svelte-server)
+[svelte/reactivity/window](../svelte-reactivity-window/index.md) [svelte/server](../svelte-server/index.md)

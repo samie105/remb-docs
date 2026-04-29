@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:39.142Z"
 content_hash: "0136364c6815759e9c3026ff7ee954ab9b53547036926584369bd3ae6988d7bb"
 menu_path: ["Cache is not enabled."]
 section_path: []
-nav_prev: {"path": "../astro-response-headers-reassigned/index.md", "title": "Astro.response.headers must not be reassigned."}
-nav_next: {"path": "../cache-provider-not-found/index.md", "title": "Cache provider not found."}
+nav_prev: {"path": "astro/en/reference/errors/astro-response-headers-reassigned/index.md", "title": "Astro.response.headers must not be reassigned."}
+nav_next: {"path": "astro/en/reference/errors/cache-provider-not-found/index.md", "title": "Cache provider not found."}
 ---
 
 # Cache is not enabled.
@@ -23,4 +23,4 @@ nav_next: {"path": "../cache-provider-not-found/index.md", "title": "Cache provi
 
 Thrown when `Astro.cache` or `context.cache` is used but the cache feature has not been enabled in the Astro config.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

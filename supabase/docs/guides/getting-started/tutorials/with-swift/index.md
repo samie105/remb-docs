@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:26.230Z"
 content_hash: "be08488dadf5d2f1ac1c7bc221703c7be1c04d5f7d02e094797144630b5711cd"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Swift","Swift"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Swift","Swift"]
-nav_prev: {"path": "../with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
-nav_next: {"path": "../with-vue-3/index.md", "title": "Build a User Management App with Vue 3"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-sveltekit/index.md", "title": "Build a User Management App with SvelteKit"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-vue-3/index.md", "title": "Build a User Management App with Vue 3"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a User Management App with Swift and SwiftUI
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/supabase-swift-demo.png)
 
@@ -59,7 +59,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=swift).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -83,7 +83,7 @@ Add the [supabase-swift](https://github.com/supabase/supabase-swift) dependency.
 
 Add the `https://github.com/supabase/supabase-swift` package to your app. For instructions, see the [Apple tutorial on adding package dependencies](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
-Create a helper file to initialize the Supabase client. You need the API URL and the key that you copied [earlier](#get-api-details). These variables will be exposed on the application, and that's completely fine since you have [Row Level Security](/docs/guides/auth#row-level-security) enabled on your database.
+Create a helper file to initialize the Supabase client. You need the API URL and the key that you copied [earlier](#get-api-details). These variables will be exposed on the application, and that's completely fine since you have [Row Level Security](../../../auth/index.md#row-level-security) enabled on your database.
 
 ```
 1import Foundation2import Supabase34let supabase = SupabaseClient(5  supabaseURL: URL(string: "YOUR_SUPABASE_URL")!,6  supabaseKey: "YOUR_SUPABASE_PUBLISHABLE_KEY"7)
@@ -131,7 +131,7 @@ Update the entry point to the newly created `AppView`. Run in Xcode to launch yo
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Add `PhotosPicker`[#](#add-photospicker)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:30.714Z"
 content_hash: "38c835e70ac8718cf58d7121dc166d1e618d5dbe8b0bebafe42646da4cc7e167"
 menu_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","File Storage","File Storage"]
 section_path: ["Edge Functions","Edge Functions","Advanced Features","Advanced Features","File Storage","File Storage"]
-nav_prev: {"path": "../development-tips/index.md", "title": "Development tips"}
-nav_next: {"path": "../error-handling/index.md", "title": "Error Handling"}
+nav_prev: {"path": "supabase/docs/guides/functions/development-tips/index.md", "title": "Development tips"}
+nav_next: {"path": "supabase/docs/guides/functions/error-handling/index.md", "title": "Error Handling"}
 ---
 
 # 
@@ -48,7 +48,7 @@ To access an S3 bucket from Edge Functions, you must set the following for envir
 *   `S3FS_ACCESS_KEY_ID`
 *   `S3FS_SECRET_ACCESS_KEY`
 
-[Follow this guide](/docs/guides/storage/s3/authentication) to enable and create an access key for Supabase Storage S3.
+[Follow this guide](../../storage/s3/authentication/index.md) to enable and create an access key for Supabase Storage S3.
 
 To access a file path in your mounted bucket from your Edge Function, use the prefix `/s3/YOUR-BUCKET-NAME`.
 
@@ -72,7 +72,7 @@ You can use [Deno File System APIs](https://docs.deno.com/api/deno/file-system) 
 
 ### Archive processing with background tasks[#](#archive-processing-with-background-tasks)
 
-You can use ephemeral storage with [Background Tasks](/docs/guides/functions/background-tasks) to handle large file processing operations that exceed memory limits.
+You can use ephemeral storage with [Background Tasks](../background-tasks/index.md) to handle large file processing operations that exceed memory limits.
 
 Imagine you have a Photo Album application that accepts photo uploads as zip files. A streaming implementation will run into memory limit errors with zip files exceeding 100MB, as it retains all archive files in memory simultaneously.
 
@@ -84,7 +84,7 @@ You can write the zip file to ephemeral storage first, then use a background tas
 
 ### Image manipulation[#](#image-manipulation)
 
-Custom image manipulation workflows using [`magick-wasm`](/docs/guides/functions/examples/image-manipulation).
+Custom image manipulation workflows using [`magick-wasm`](../examples/image-manipulation/index.md).
 
 ```
 1Deno.serve(async (req) => {2  // Save uploaded image to temp storage3  const imagePath = `/tmp/input-${crypto.randomUUID()}.jpg`4  await Deno.writeFile(imagePath, req.body)56  // Process image with magick-wasm7  const processedPath = `/tmp/output-${crypto.randomUUID()}.jpg`8  // ... image manipulation logic910  // Read processed image and return11  const processedImage = await Deno.readFile(processedPath)12  return new Response(processedImage, {13    headers: { 'Content-Type': 'image/jpeg' },14  })15})

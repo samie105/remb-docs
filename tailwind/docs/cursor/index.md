@@ -10,8 +10,8 @@ content_hash: "d7db93ed4a9299cf613405cab169c091e64cb8c47e2e09238c66c790df7257aa"
 menu_path: ["cursor"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../color-scheme/index.md", "title": "color-scheme"}
-nav_next: {"path": "../field-sizing/index.md", "title": "field-sizing"}
+nav_prev: {"path": "tailwind/docs/color-scheme/index.md", "title": "color-scheme"}
+nav_next: {"path": "tailwind/docs/field-sizing/index.md", "title": "field-sizing"}
 ---
 
 # cursor
@@ -98,7 +98,7 @@ Prefix a `cursor` utility with a breakpoint variant like `md:` to only apply the
 <button class="cursor-not-allowed md:cursor-auto ...">  <!-- ... --></button>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

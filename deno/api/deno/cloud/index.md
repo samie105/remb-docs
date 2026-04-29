@@ -10,8 +10,8 @@ content_hash: "57396667af04448529a974600ae6bf3b7c4cea11f071ec90811a09cd1d523d0e"
 menu_path: ["Cloud - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../all_symbols/index.md", "title": "All Symbols - Deno documentation"}
-nav_next: {"path": "../errors/index.md", "title": "Errors - Deno documentation"}
+nav_prev: {"path": "deno/api/deno/all_symbols/index.md", "title": "All Symbols - Deno documentation"}
+nav_next: {"path": "deno/api/deno/errors/index.md", "title": "Errors - Deno documentation"}
 ---
 
 c

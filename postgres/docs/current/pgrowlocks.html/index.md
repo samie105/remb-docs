@@ -10,8 +10,8 @@ content_hash: "04e037d02d6b7d2f8c9cbb8b7e4b4eaffe3ddcd70cd05258c55adb1482b8e4e7"
 menu_path: ["PostgreSQL: Documentation: 18: F.31. pgrowlocks — show a table's row locking information"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../pgprewarm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.30.\u00a0pg_prewarm \u2014 preload relation data into buffer caches"}
-nav_next: {"path": "../pgstatstatements.html/index.md", "title": "PostgreSQL: Documentation: 18: F.32.\u00a0pg_stat_statements \u2014 track statistics of SQL planning and execution"}
+nav_prev: {"path": "postgres/docs/current/pgprewarm.html/index.md", "title": "PostgreSQL: Documentation: 18: F.30.\u00a0pg_prewarm \u2014 preload relation data into buffer caches"}
+nav_next: {"path": "postgres/docs/current/pgstatstatements.html/index.md", "title": "PostgreSQL: Documentation: 18: F.32.\u00a0pg_stat_statements \u2014 track statistics of SQL planning and execution"}
 ---
 
 The `pgrowlocks` module provides a function to show row locking information for a specified table.

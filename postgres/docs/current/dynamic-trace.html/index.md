@@ -10,8 +10,8 @@ content_hash: "b597a25a7d2db0ab866fa01c01010bcdeb7f1dbccd410b63689dc7e3e571c073"
 menu_path: ["PostgreSQL: Documentation: 18: 27.5. Dynamic Tracing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.18.\u00a0Domain Types"}
-nav_next: {"path": "../earthdistance.html/index.md", "title": "PostgreSQL: Documentation: 18: F.14.\u00a0earthdistance \u2014 calculate great-circle distances"}
+nav_prev: {"path": "postgres/docs/current/domains.html/index.md", "title": "PostgreSQL: Documentation: 18: 8.18.\u00a0Domain Types"}
+nav_next: {"path": "postgres/docs/current/earthdistance.html/index.md", "title": "PostgreSQL: Documentation: 18: F.14.\u00a0earthdistance \u2014 calculate great-circle distances"}
 ---
 
 | Name | Parameters | Description |

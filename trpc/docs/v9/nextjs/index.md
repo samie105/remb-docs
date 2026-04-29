@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:01.910Z"
 content_hash: "db1396623e1eeed135bd6949b35b623e1a346be04ebe7586fb4c10a042c760fa"
 menu_path: ["Usage with Next.js"]
 section_path: []
-nav_prev: {"path": "../middlewares/index.md", "title": "Middlewares"}
-nav_next: {"path": "../output-validation/index.md", "title": "Output Validation"}
+nav_prev: {"path": "trpc/docs/v9/middlewares/index.md", "title": "Middlewares"}
+nav_next: {"path": "trpc/docs/v9/output-validation/index.md", "title": "Output Validation"}
 ---
 
 tip

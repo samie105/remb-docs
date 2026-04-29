@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:07.918Z"
 content_hash: "d2425a236678a7bb41a0e10ced98b0888bf32c30c9bc61908529a274da78b187"
 menu_path: ["Introduction"]
 section_path: []
-nav_prev: {"path": "../index.md", "title": "React Compiler"}
-nav_next: {"path": "../installation/index.md", "title": "Installation"}
+nav_prev: {"path": "react/learn/react-compiler/index.md", "title": "React Compiler"}
+nav_next: {"path": "react/learn/react-compiler/installation/index.md", "title": "Installation"}
 ---
 
 React Compiler is a new build-time tool that automatically optimizes your React app. It works with plain JavaScript, and understands the [Rules of React](https://react.dev/reference/rules), so you don’t need to rewrite any code to use it.

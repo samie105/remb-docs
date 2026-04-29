@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:59.715Z"
 content_hash: "c54065b99e4361cd02c9a8d42bd1cc774014b5815976591af8e3c7604b560801"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Secondary indexing","→","Secondary indexing"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Coding patterns","→","Coding patterns","→\n      \n        Secondary indexing","→","Secondary indexing"]
-nav_prev: {"path": "../distributed-locks/index.md", "title": "Distributed Locks with Redis"}
-nav_next: {"path": "../../php/index.md", "title": "Predis guide (PHP)"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/patterns/distributed-locks/index.md", "title": "Distributed Locks with Redis"}
+nav_next: {"path": "redis/docs/latest/develop/clients/php/index.md", "title": "Predis guide (PHP)"}
 ---
 
 # Secondary indexing
@@ -45,8 +45,8 @@ Once hash or JSON keys have been indexed using the [`FT.CREATE`](/docs/latest/co
 
 For more information on creating hash and JSON indexes, see the following pages.
 
-*   [Hash indexes](/docs/latest/develop/ai/search-and-query/indexing/schema-definition/)
-*   [JSON indexes](/docs/latest/develop/ai/search-and-query/indexing/)
+*   [Hash indexes](../../../ai/search-and-query/indexing/schema-definition/index.md)
+*   [JSON indexes](../../../ai/search-and-query/indexing/index.md)
 
 ## Simple numerical indexes with sorted sets
 

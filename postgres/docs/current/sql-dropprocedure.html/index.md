@@ -10,8 +10,8 @@ content_hash: "21205eda5147916b5396bd04d9e1ac72ecc3f909b3d4a924c6543dce7f7ba5a4"
 menu_path: ["PostgreSQL: Documentation: 18: DROP PROCEDURE"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql-droplanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP LANGUAGE"}
-nav_next: {"path": "../sql-droprole.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ROLE"}
+nav_prev: {"path": "postgres/docs/current/sql-droplanguage.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP LANGUAGE"}
+nav_next: {"path": "postgres/docs/current/sql-droprole.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ROLE"}
 ---
 
 DROP PROCEDURE — remove a procedure

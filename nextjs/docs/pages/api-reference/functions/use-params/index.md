@@ -11,15 +11,15 @@ menu_path: ["useParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../next-response/index.md", "title": "NextResponse"}
-nav_next: {"path": "../use-report-web-vitals/index.md", "title": "useReportWebVitals"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/next-response/index.md", "title": "NextResponse"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/use-report-web-vitals/index.md", "title": "useReportWebVitals"}
 ---
 
 # useParams
 
 Last updated April 23, 2026
 
-`useParams` is a hook that lets you read a route's [dynamic params](/docs/pages/building-your-application/routing/dynamic-routes) filled in by the current URL.
+`useParams` is a hook that lets you read a route's [dynamic params](../../../building-your-application/routing/dynamic-routes/index.md) filled in by the current URL.
 
 pages/shop/\[slug\].tsx
 
@@ -53,11 +53,11 @@ const params = useParams()
 
 ## Returns[](#returns)
 
-`useParams` returns an object containing the current route's filled in [dynamic parameters](/docs/pages/building-your-application/routing/dynamic-routes), or `null` during [prerendering](#behavior-during-prerendering).
+`useParams` returns an object containing the current route's filled in [dynamic parameters](../../../building-your-application/routing/dynamic-routes/index.md), or `null` during [prerendering](#behavior-during-prerendering).
 
 -   Each property in the object is an active dynamic segment.
 -   The property name is the segment's name, and the property value is what the segment is filled in with.
--   The property value will either be a `string` or array of `string`s depending on the [type of dynamic segment](/docs/pages/building-your-application/routing/dynamic-routes).
+-   The property value will either be a `string` or array of `string`s depending on the [type of dynamic segment](../../../building-your-application/routing/dynamic-routes/index.md).
 -   If the route contains no dynamic parameters, `useParams` returns an empty object.
 
 For example:
@@ -75,7 +75,7 @@ For example:
 
 ### Behavior during prerendering[](#behavior-during-prerendering)
 
-For pages that are [statically optimized](/docs/pages/building-your-application/rendering/automatic-static-optimization), `useParams` will return `null` on the initial render. After hydration, the value will be updated to the actual params once the router is ready.
+For pages that are [statically optimized](../../../building-your-application/rendering/automatic-static-optimization/index.md), `useParams` will return `null` on the initial render. After hydration, the value will be updated to the actual params once the router is ready.
 
 This is because params cannot be known during static generation for dynamic routes.
 
@@ -101,7 +101,7 @@ export default function ShopPage() {
 
 ### Using with `getServerSideProps`[](#using-with-getserversideprops)
 
-When using [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props), the page is server-rendered on each request and `useParams` will return the actual params immediately:
+When using [`getServerSideProps`](../../../building-your-application/data-fetching/get-server-side-props/index.md), the page is server-rendered on each request and `useParams` will return the actual params immediately:
 
 pages/shop/\[slug\].tsx
 
@@ -131,7 +131,7 @@ export async function getServerSideProps() {
 
 ### Comparison with `router.query`[](#comparison-with-routerquery)
 
-`useParams` only returns the dynamic route parameters, whereas [`router.query`](/docs/pages/api-reference/functions/use-router#router-object) from `useRouter` includes both dynamic parameters and query string parameters.
+`useParams` only returns the dynamic route parameters, whereas [`router.query`](../use-router/index.md#router-object) from `useRouter` includes both dynamic parameters and query string parameters.
 
 pages/shop/\[slug\].tsx
 

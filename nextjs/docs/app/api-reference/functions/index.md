@@ -11,8 +11,8 @@ menu_path: ["Functions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../file-conventions/route-segment-config/index.md", "title": "Route Segment Config"}
-nav_next: {"path": "after/index.md", "title": "after"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/route-segment-config/index.md", "title": "Route Segment Config"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/after/index.md", "title": "after"}
 ---
 
 # Functions
@@ -25,228 +25,228 @@ Last updated April 23, 2026
 
 API Reference for the after function.
 
-](/docs/app/api-reference/functions/after)[
+](after/index.md)[
 
 ### cacheLife
 
 Learn how to use the cacheLife function to set the cache expiration time for a cached function or component.
 
-](/docs/app/api-reference/functions/cacheLife)[
+](cacheLife/index.md)[
 
 ### cacheTag
 
 Learn how to use the cacheTag function to manage cache invalidation in your Next.js application.
 
-](/docs/app/api-reference/functions/cacheTag)[
+](cacheTag/index.md)[
 
 ### unstable\_catchError
 
 API Reference for the unstable\_catchError function.
 
-](/docs/app/api-reference/functions/catchError)[
+](catchError/index.md)[
 
 ### connection
 
 API Reference for the connection function.
 
-](/docs/app/api-reference/functions/connection)[
+](connection/index.md)[
 
 ### cookies
 
 API Reference for the cookies function.
 
-](/docs/app/api-reference/functions/cookies)[
+](cookies/index.md)[
 
 ### draftMode
 
 API Reference for the draftMode function.
 
-](/docs/app/api-reference/functions/draft-mode)[
+](draft-mode/index.md)[
 
 ### fetch
 
 API reference for the extended fetch function.
 
-](/docs/app/api-reference/functions/fetch)[
+](fetch/index.md)[
 
 ### forbidden
 
 API Reference for the forbidden function.
 
-](/docs/app/api-reference/functions/forbidden)[
+](forbidden/index.md)[
 
 ### generateImageMetadata
 
 Learn how to generate multiple images in a single Metadata API special file.
 
-](/docs/app/api-reference/functions/generate-image-metadata)[
+](generate-image-metadata/index.md)[
 
 ### generateMetadata
 
 Learn how to add Metadata to your Next.js application for improved search engine optimization (SEO) and web shareability.
 
-](/docs/app/api-reference/functions/generate-metadata)[
+](generate-metadata/index.md)[
 
 ### generateSitemaps
 
 Learn how to use the generateSiteMaps function to create multiple sitemaps for your application.
 
-](/docs/app/api-reference/functions/generate-sitemaps)[
+](generate-sitemaps/index.md)[
 
 ### generateStaticParams
 
 API reference for the generateStaticParams function.
 
-](/docs/app/api-reference/functions/generate-static-params)[
+](generate-static-params/index.md)[
 
 ### generateViewport
 
 API Reference for the generateViewport function.
 
-](/docs/app/api-reference/functions/generate-viewport)[
+](generate-viewport/index.md)[
 
 ### headers
 
 API reference for the headers function.
 
-](/docs/app/api-reference/functions/headers)[
+](headers/index.md)[
 
 ### ImageResponse
 
 API Reference for the ImageResponse constructor.
 
-](/docs/app/api-reference/functions/image-response)[
+](image-response/index.md)[
 
 ### NextRequest
 
 API Reference for NextRequest.
 
-](/docs/app/api-reference/functions/next-request)[
+](next-request/index.md)[
 
 ### NextResponse
 
 API Reference for NextResponse.
 
-](/docs/app/api-reference/functions/next-response)[
+](next-response/index.md)[
 
 ### notFound
 
 API Reference for the notFound function.
 
-](/docs/app/api-reference/functions/not-found)[
+](not-found/index.md)[
 
 ### permanentRedirect
 
 API Reference for the permanentRedirect function.
 
-](/docs/app/api-reference/functions/permanentRedirect)[
+](permanentRedirect/index.md)[
 
 ### redirect
 
 API Reference for the redirect function.
 
-](/docs/app/api-reference/functions/redirect)[
+](redirect/index.md)[
 
 ### refresh
 
 API Reference for the refresh function.
 
-](/docs/app/api-reference/functions/refresh)[
+](refresh/index.md)[
 
 ### revalidatePath
 
 API Reference for the revalidatePath function.
 
-](/docs/app/api-reference/functions/revalidatePath)[
+](revalidatePath/index.md)[
 
 ### revalidateTag
 
 API Reference for the revalidateTag function.
 
-](/docs/app/api-reference/functions/revalidateTag)[
+](revalidateTag/index.md)[
 
 ### unauthorized
 
 API Reference for the unauthorized function.
 
-](/docs/app/api-reference/functions/unauthorized)[
+](unauthorized/index.md)[
 
 ### unstable\_cache
 
 API Reference for the unstable\_cache function.
 
-](/docs/app/api-reference/functions/unstable_cache)[
+](unstable_cache/index.md)[
 
 ### unstable\_noStore
 
 API Reference for the unstable\_noStore function.
 
-](/docs/app/api-reference/functions/unstable_noStore)[
+](unstable_noStore/index.md)[
 
 ### unstable\_rethrow
 
 API Reference for the unstable\_rethrow function.
 
-](/docs/app/api-reference/functions/unstable_rethrow)[
+](unstable_rethrow/index.md)[
 
 ### updateTag
 
 API Reference for the updateTag function.
 
-](/docs/app/api-reference/functions/updateTag)[
+](updateTag/index.md)[
 
 ### useLinkStatus
 
 API Reference for the useLinkStatus hook.
 
-](/docs/app/api-reference/functions/use-link-status)[
+](use-link-status/index.md)[
 
 ### useParams
 
 API Reference for the useParams hook.
 
-](/docs/app/api-reference/functions/use-params)[
+](use-params/index.md)[
 
 ### usePathname
 
 API Reference for the usePathname hook.
 
-](/docs/app/api-reference/functions/use-pathname)[
+](use-pathname/index.md)[
 
 ### useReportWebVitals
 
 API Reference for the useReportWebVitals function.
 
-](/docs/app/api-reference/functions/use-report-web-vitals)[
+](use-report-web-vitals/index.md)[
 
 ### useRouter
 
 API reference for the useRouter hook.
 
-](/docs/app/api-reference/functions/use-router)[
+](use-router/index.md)[
 
 ### useSearchParams
 
 API Reference for the useSearchParams hook.
 
-](/docs/app/api-reference/functions/use-search-params)[
+](use-search-params/index.md)[
 
 ### useSelectedLayoutSegment
 
 API Reference for the useSelectedLayoutSegment hook.
 
-](/docs/app/api-reference/functions/use-selected-layout-segment)[
+](use-selected-layout-segment/index.md)[
 
 ### useSelectedLayoutSegments
 
 API Reference for the useSelectedLayoutSegments hook.
 
-](/docs/app/api-reference/functions/use-selected-layout-segments)[
+](use-selected-layout-segments/index.md)[
 
 ### userAgent
 
 The userAgent helper extends the Web Request API with additional properties and methods to interact with the user agent object from the request.
 
-](/docs/app/api-reference/functions/userAgent)
+](userAgent/index.md)
 
 Was this helpful?

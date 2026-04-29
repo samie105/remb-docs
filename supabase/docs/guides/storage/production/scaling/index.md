@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:23.831Z"
 content_hash: "516908f9ab3d35278f64158f25d9e450904edfcb377a02ee13639760ea6da609"
 menu_path: ["Storage","Storage","More","More","More","Going to production","Going to production","Scaling","Scaling"]
 section_path: ["Storage","Storage","More","More","More","Going to production","Going to production","Scaling","Scaling"]
-nav_prev: {"path": "../../pricing/index.md", "title": "Pricing"}
-nav_next: {"path": "../../quickstart/index.md", "title": "Storage Quickstart"}
+nav_prev: {"path": "supabase/docs/guides/storage/pricing/index.md", "title": "Pricing"}
+nav_next: {"path": "supabase/docs/guides/storage/quickstart/index.md", "title": "Storage Quickstart"}
 ---
 
 # 
@@ -35,15 +35,15 @@ Images typically make up most of your egress. By keeping them as small as possib
 
 #### Set a high cache-control value[#](#set-a-high-cache-control-value)
 
-Using the browser cache can effectively lower your egress since the asset remains stored in the user's browser after the initial download. Setting a high `cache-control` value ensures the asset stays in the user's browser for an extended period, decreasing the need to download it from the server repeatedly. Read more [here](/docs/guides/storage/cdn/smart-cdn#cache-duration)
+Using the browser cache can effectively lower your egress since the asset remains stored in the user's browser after the initial download. Setting a high `cache-control` value ensures the asset stays in the user's browser for an extended period, decreasing the need to download it from the server repeatedly. Read more [here](../../cdn/smart-cdn/index.md#cache-duration)
 
 #### Limit the upload size[#](#limit-the-upload-size)
 
-You have the option to set a maximum upload size for your bucket. Doing this can prevent users from uploading and then downloading excessively large files. You can control the maximum file size by configuring this option at the [bucket level](/docs/guides/storage/buckets/creating-buckets).
+You have the option to set a maximum upload size for your bucket. Doing this can prevent users from uploading and then downloading excessively large files. You can control the maximum file size by configuring this option at the [bucket level](../../buckets/creating-buckets/index.md).
 
 #### Smart CDN[#](#smart-cdn)
 
-By leveraging our [Smart CDN](/docs/guides/storage/cdn/smart-cdn), you can achieve a higher cache hit rate and therefore lower your egress cached, as we charge less for cached egress (see [egress pricing](/docs/guides/platform/manage-your-usage/egress#pricing)).
+By leveraging our [Smart CDN](../../cdn/smart-cdn/index.md), you can achieve a higher cache hit rate and therefore lower your egress cached, as we charge less for cached egress (see [egress pricing](../../../platform/manage-your-usage/egress/index.md#pricing)).
 
 ## Optimize listing objects[#](#optimize-listing-objects)
 

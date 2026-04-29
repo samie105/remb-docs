@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:43:17.788Z"
 content_hash: "d935e34007e8a13e51913813fae2cc314829a76e65e5350e19ab6ffcef5cde50"
 menu_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Shared responsibility model","Shared responsibility model"]
 section_path: ["Deployment & Branching","Deployment & Branching","Production readiness","Production readiness","Shared responsibility model","Shared responsibility model"]
-nav_prev: {"path": "../maturity-model/index.md", "title": "Maturity Model"}
-nav_next: {"path": "../../functions/index.md", "title": "Edge Functions"}
+nav_prev: {"path": "supabase/docs/guides/deployment/maturity-model/index.md", "title": "Maturity Model"}
+nav_next: {"path": "supabase/docs/guides/functions/index.md", "title": "Edge Functions"}
 ---
 
 # 
@@ -40,7 +40,7 @@ If you have an inexperienced member on your team, then you probably shouldn’t 
 
 You are also responsible for ensuring that tables with sensitive data have the right level of access. You are also responsible for managing your database secrets and API keys, storing them safely in an encrypted store.
 
-Supabase provides controls for [securing your data](/docs/guides/database/secure-data), and it is recommended that you always apply [Row Level Security](/docs/guides/database/postgres/row-level-security) (RLS).
+Supabase provides controls for [securing your data](../../database/secure-data/index.md), and it is recommended that you always apply [Row Level Security](../../database/postgres/row-level-security/index.md) (RLS).
 
 We will also provide you with security alerts through [Security Advisor](/dashboard/project/_/database/security-advisor) and applying the recommendations are your responsibility.
 
@@ -91,21 +91,21 @@ We recommend reviewing and applying the recommendations offered in our [Producti
 
 ## SOC 2 and compliance[#](#soc-2-and-compliance)
 
-Supabase provides a SOC 2 compliant environment for hosting and managing sensitive data. We recommend reviewing the [SOC 2 compliance responsibilities document](/docs/guides/security/soc-2-compliance) alongside the aforementioned production checklist.
+Supabase provides a SOC 2 compliant environment for hosting and managing sensitive data. We recommend reviewing the [SOC 2 compliance responsibilities document](../../security/soc-2-compliance/index.md) alongside the aforementioned production checklist.
 
 ## Managing healthcare data[#](#managing-healthcare-data)
 
 You can use Supabase to store and process Protected Health Information (PHI). You are responsible for the following
 
 *   Signing a Business Associate Agreement (BAA) with Supabase. Submit a [HIPAA add-on request](https://forms.supabase.com/hipaa2) to get started. You will need to be at least on the [Team Plan](/pricing) to sign a BAA with us.
-*   [Marking specific projects as HIPAA projects](/docs/guides/platform/hipaa-projects) and addressing security issues raised by the advisor.
-*   Ensuring [MFA is enabled](/docs/guides/platform/multi-factor-authentication) on all Supabase accounts.
-    *   [Enforce MFA](/docs/guides/platform/mfa/org-mfa-enforcement) as a requirement to access the organization
-*   Enabling [Point in Time Recovery](/docs/guides/platform/backups#point-in-time-recovery) which requires at least a [small compute add-on](/docs/guides/platform/compute-add-ons).
-*   Turning on [SSL Enforcement](/docs/guides/platform/ssl-enforcement).
-*   Enabling [Network Restrictions](/docs/guides/platform/network-restrictions).
+*   [Marking specific projects as HIPAA projects](../../platform/hipaa-projects/index.md) and addressing security issues raised by the advisor.
+*   Ensuring [MFA is enabled](../../platform/multi-factor-authentication/index.md) on all Supabase accounts.
+    *   [Enforce MFA](../../platform/mfa/org-mfa-enforcement/index.md) as a requirement to access the organization
+*   Enabling [Point in Time Recovery](../../platform/backups/index.md#point-in-time-recovery) which requires at least a [small compute add-on](/docs/guides/platform/compute-add-ons).
+*   Turning on [SSL Enforcement](../../platform/ssl-enforcement/index.md).
+*   Enabling [Network Restrictions](../../platform/network-restrictions/index.md).
 *   Complying with encryption requirements in the HIPAA Security Rule. Data is encrypted at rest and in transit by Supabase. You can consider encrypting the data at your application layer.
-*   Not storing PHI in [public Storage buckets](/docs/guides/storage/buckets/fundamentals#public-buckets).
-*   Not [transferring projects](/docs/guides/platform/project-transfer) to a non-HIPAA organization.
+*   Not storing PHI in [public Storage buckets](../../storage/buckets/fundamentals/index.md#public-buckets).
+*   Not [transferring projects](../../platform/project-transfer/index.md) to a non-HIPAA organization.
 
-For more information on the shared responsibilities and rules under HIPAA, review the [HIPAA compliance responsibilities document](/docs/guides/security/hipaa-compliance).
+For more information on the shared responsibilities and rules under HIPAA, review the [HIPAA compliance responsibilities document](../../security/hipaa-compliance/index.md).

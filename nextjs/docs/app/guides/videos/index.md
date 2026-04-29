@@ -11,8 +11,8 @@ menu_path: ["How to use and optimize videos"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../upgrading/version-16/index.md", "title": "How to upgrade to version 16"}
-nav_next: {"path": "../view-transitions/index.md", "title": "Designing view transitions"}
+nav_prev: {"path": "nextjs/docs/app/guides/upgrading/version-16/index.md", "title": "How to upgrade to version 16"}
+nav_next: {"path": "nextjs/docs/app/guides/view-transitions/index.md", "title": "Designing view transitions"}
 ---
 
 # How to use and optimize videos
@@ -115,7 +115,7 @@ To embed videos from external platforms, you can use Next.js to fetch the video 
 
 **1\. Create a Server Component for video embedding**
 
-The first step is to create a [Server Component](/docs/app/getting-started/server-and-client-components) that generates the appropriate iframe for embedding the video. This component will fetch the source URL for the video and render the iframe.
+The first step is to create a [Server Component](../../getting-started/server-and-client-components/index.md) that generates the appropriate iframe for embedding the video. This component will fetch the source URL for the video and render the iframe.
 
 app/ui/video-component.jsx
 
@@ -129,7 +129,7 @@ export default async function VideoComponent() {
 
 **2\. Stream the video component using React Suspense**
 
-After creating the Server Component to embed the video, the next step is to [stream](/docs/app/api-reference/file-conventions/loading) the component using [React Suspense](https://react.dev/reference/react/Suspense).
+After creating the Server Component to embed the video, the next step is to [stream](../../api-reference/file-conventions/loading/index.md) the component using [React Suspense](https://react.dev/reference/react/Suspense).
 
 app/page.jsx
 

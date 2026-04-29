@@ -11,8 +11,8 @@ menu_path: ["use cache"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../index.md", "title": "Directives"}
-nav_next: {"path": "../use-cache-private/index.md", "title": "use cache: private"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/directives/index.md", "title": "Directives"}
+nav_next: {"path": "nextjs/docs/app/api-reference/directives/use-cache-private/index.md", "title": "use cache: private"}
 ---
 
 # use cache
@@ -24,12 +24,12 @@ The `use cache` directive allows you to mark a route, React component, or a func
 > **Good to know:**
 > 
 > -   To use cookies or headers, read them outside cached scopes and pass values as arguments. This is the preferred pattern.
-> -   If the in-memory cache isn't sufficient for runtime data, [`'use cache: remote'`](/docs/app/api-reference/directives/use-cache-remote) allows platforms to provide a dedicated cache handler, though it requires a network roundtrip to check the cache and typically incurs platform fees.
-> -   For compliance requirements or when you can't refactor to pass runtime data as arguments to a `use cache` scope, see [`'use cache: private'`](/docs/app/api-reference/directives/use-cache-private).
+> -   If the in-memory cache isn't sufficient for runtime data, [`'use cache: remote'`](../use-cache-remote/index.md) allows platforms to provide a dedicated cache handler, though it requires a network roundtrip to check the cache and typically incurs platform fees.
+> -   For compliance requirements or when you can't refactor to pass runtime data as arguments to a `use cache` scope, see [`'use cache: private'`](../use-cache-private/index.md).
 
 ## Usage[](#usage)
 
-`use cache` is a Cache Components feature. To enable it, add the [`cacheComponents`](/docs/app/api-reference/config/next-config-js/cacheComponents) option to your `next.config.ts` file:
+`use cache` is a Cache Components feature. To enable it, add the [`cacheComponents`](../../config/next-config-js/cacheComponents/index.md) option to your `next.config.ts` file:
 
 next.config.ts
 
@@ -212,11 +212,11 @@ Runtime cache behavior depends on your hosting environment:
 | Environment | Runtime Caching Behavior |
 | --- | --- |
 | **Serverless** | Cache entries typically don't persist across requests (each request can be a different instance). Build-time caching works normally. |
-| **Self-hosted** | Cache entries persist across requests. Control cache size with [`cacheMaxMemorySize`](/docs/app/api-reference/config/next-config-js/incrementalCacheHandlerPath). |
+| **Self-hosted** | Cache entries persist across requests. Control cache size with [`cacheMaxMemorySize`](../../config/next-config-js/incrementalCacheHandlerPath/index.md). |
 
-If the default in-memory cache isn't enough, consider **[`use cache: remote`](/docs/app/api-reference/directives/use-cache-remote)** which allows platforms to provide a dedicated cache handler (like Redis or KV database). This helps reduce hits against data sources not scaled to your total traffic, though it comes with costs (storage, network latency, platform fees).
+If the default in-memory cache isn't enough, consider **[`use cache: remote`](../use-cache-remote/index.md)** which allows platforms to provide a dedicated cache handler (like Redis or KV database). This helps reduce hits against data sources not scaled to your total traffic, though it comes with costs (storage, network latency, platform fees).
 
-Very rarely, for compliance requirements or when you can't refactor your code to pass runtime data as arguments to a `use cache` scope, you might need [`use cache: private`](/docs/app/api-reference/directives/use-cache-private).
+Very rarely, for compliance requirements or when you can't refactor your code to pass runtime data as arguments to a `use cache` scope, you might need [`use cache: private`](../use-cache-private/index.md).
 
 ### React.cache isolation[](#reactcache-isolation)
 
@@ -248,7 +248,7 @@ This isolation ensures cached functions have predictable, self-contained behavio
 
 ## `use cache` at runtime[](#use-cache-at-runtime)
 
-On the **server**, cache entries are stored in-memory and respect the `revalidate` and `expire` times from your `cacheLife` configuration. You can customize the cache storage by configuring [`cacheHandlers`](/docs/app/api-reference/config/next-config-js/cacheHandlers) in your `next.config.js` file.
+On the **server**, cache entries are stored in-memory and respect the `revalidate` and `expire` times from your `cacheLife` configuration. You can customize the cache storage by configuring [`cacheHandlers`](../../config/next-config-js/cacheHandlers/index.md) in your `next.config.js` file.
 
 On the **client**, content from the server cache is stored in the browser's memory for the duration defined by the `stale` time. The client router enforces a **minimum 30-second stale time**, regardless of configuration.
 
@@ -274,7 +274,7 @@ async function getData() {
 
 ### Customizing cache lifetime[](#customizing-cache-lifetime)
 
-Use the [`cacheLife`](/docs/app/api-reference/functions/cacheLife) function to customize cache duration:
+Use the [`cacheLife`](../../functions/cacheLife/index.md) function to customize cache duration:
 
 lib/data.ts
 
@@ -290,7 +290,7 @@ async function getData() {
 
 ### On-demand revalidation[](#on-demand-revalidation)
 
-Use [`cacheTag`](/docs/app/api-reference/functions/cacheTag), [`updateTag`](/docs/app/api-reference/functions/updateTag), or [`revalidateTag`](/docs/app/api-reference/functions/revalidateTag) for on-demand cache invalidation:
+Use [`cacheTag`](../../functions/cacheTag/index.md), [`updateTag`](../../functions/updateTag/index.md), or [`revalidateTag`](../../functions/revalidateTag/index.md) for on-demand cache invalidation:
 
 lib/data.ts
 
@@ -505,7 +505,7 @@ NEXT_PRIVATE_DEBUG_CACHE=1 npm run dev
 NEXT_PRIVATE_DEBUG_CACHE=1 npm run start
 ```
 
-> **Good to know:** This environment variable also logs ISR and other caching mechanisms. See [Verifying correct production behavior](/docs/app/guides/incremental-static-regeneration#verifying-correct-production-behavior) for more details.
+> **Good to know:** This environment variable also logs ISR and other caching mechanisms. See [Verifying correct production behavior](../../../guides/incremental-static-regeneration/index.md#verifying-correct-production-behavior) for more details.
 
 #### Console log replays[](#console-log-replays)
 
@@ -521,7 +521,7 @@ When the build timeouts you'll see this error message:
 
 Common ways this happens: passing such Promises as props, accessing them via closure, or retrieving them from shared storage (Maps).
 
-> **Good to know:** Directly calling `cookies()` or `headers()` inside `use cache` fails immediately with a [different error](/docs/messages/next-request-in-use-cache), not a timeout.
+> **Good to know:** Directly calling `cookies()` or `headers()` inside `use cache` fails immediately with a [different error](../../../../messages/next-request-in-use-cache/index.md), not a timeout.
 
 **Passing runtime data Promises as props:**
 
@@ -595,12 +595,12 @@ Use Next.js's built-in `fetch()` deduplication or use separate Maps for cached a
 
 | Deployment Option | Supported |
 | --- | --- |
-| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
-| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
-| [Static export](/docs/app/getting-started/deploying#static-export) | No |
-| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
+| [Node.js server](../../../getting-started/deploying/index.md#nodejs-server) | Yes |
+| [Docker container](../../../getting-started/deploying/index.md#docker) | Yes |
+| [Static export](../../../getting-started/deploying/index.md#static-export) | No |
+| [Adapters](../../../getting-started/deploying/index.md#adapters) | Platform-specific |
 
-Learn how to [configure caching](/docs/app/guides/self-hosting#caching-and-isr) when self-hosting Next.js.
+Learn how to [configure caching](../../../guides/self-hosting/index.md#caching-and-isr) when self-hosting Next.js.
 
 ## Version History[](#version-history)
 
@@ -619,42 +619,42 @@ View related API references.
 
 Learn how to use the "use cache: private" directive to cache functions that access runtime request APIs.
 
-](/docs/app/api-reference/directives/use-cache-private)[
+](../use-cache-private/index.md)[
 
 ### cacheComponents
 
 Learn how to enable the cacheComponents flag in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheComponents)[
+](../../config/next-config-js/cacheComponents/index.md)[
 
 ### cacheLife
 
 Learn how to set up cacheLife configurations in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheLife)[
+](../../config/next-config-js/cacheLife/index.md)[
 
 ### cacheHandlers
 
 Configure custom cache handlers for use cache directives in Next.js.
 
-](/docs/app/api-reference/config/next-config-js/cacheHandlers)[
+](../../config/next-config-js/cacheHandlers/index.md)[
 
 ### cacheTag
 
 Learn how to use the cacheTag function to manage cache invalidation in your Next.js application.
 
-](/docs/app/api-reference/functions/cacheTag)[
+](../../functions/cacheTag/index.md)[
 
 ### cacheLife
 
 Learn how to use the cacheLife function to set the cache expiration time for a cached function or component.
 
-](/docs/app/api-reference/functions/cacheLife)[
+](../../functions/cacheLife/index.md)[
 
 ### revalidateTag
 
 API Reference for the revalidateTag function.
 
-](/docs/app/api-reference/functions/revalidateTag)
+](../../functions/revalidateTag/index.md)
 
 Was this helpful?

@@ -10,8 +10,8 @@ content_hash: "6a2a02a89bd53c54097186d70477616eef86ee48646bf7c4e2a2149cb1e86e49"
 menu_path: ["deno create"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../compile/index.md", "title": "deno compile"}
-nav_next: {"path": "../completions/index.md", "title": "deno completions"}
+nav_prev: {"path": "deno/runtime/reference/cli/compile/index.md", "title": "deno compile"}
+nav_next: {"path": "deno/runtime/reference/cli/completions/index.md", "title": "deno completions"}
 ---
 
 **On this page**
@@ -39,7 +39,7 @@ By default, unprefixed package names are resolved from JSR. You can use the `npm
 Package resolution differs between npm and JSR:
 
 -   **npm packages** use the `create-` naming convention. Running `deno create npm:vite` resolves to the `create-vite` package on npm and executes its main entry point.
--   **JSR packages** use the `./create` export. Any JSR package can act as a template by defining a `./create` entry point in its [`deno.json`](/runtime/fundamentals/configuration/):
+-   **JSR packages** use the `./create` export. Any JSR package can act as a template by defining a `./create` entry point in its [`deno.json`](../../../fundamentals/configuration/index.md):
 
 deno.json
 

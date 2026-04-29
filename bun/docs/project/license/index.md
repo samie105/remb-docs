@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:19.538Z"
 content_hash: "bcead06f9593986b82c9c89762c950e343e8d39a7acdcb3e8c1e7076197d8796"
 menu_path: ["License"]
 section_path: []
-nav_prev: {"path": "../contributing/index.md", "title": "Contributing"}
-nav_next: {"path": "../roadmap/index.md", "title": "Roadmap"}
+nav_prev: {"path": "bun/docs/project/contributing/index.md", "title": "Contributing"}
+nav_next: {"path": "bun/docs/project/roadmap/index.md", "title": "Roadmap"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../roadmap/index.md", "title": "Roadmap"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Bun itself is MIT-licensed.
 
@@ -262,4 +262,4 @@ Bindgen
 
 Previous
 
-](/docs/project/bindgen)
+](../bindgen/index.md)

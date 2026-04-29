@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:59:02.508Z"
 content_hash: "d57ff5bc2c3da9c59ebf2468ff051d8ef43553d2c49581adba5c0c74abd65566"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Java and Jedis","→","Redis leaderboard with Java and Jedis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Redis leaderboard","→","Redis leaderboard","→\n      \n        Redis leaderboard with Java and Jedis","→","Redis leaderboard with Java and Jedis"]
-nav_prev: {"path": "../go/index.md", "title": "Redis leaderboard with Go"}
-nav_next: {"path": "../java-lettuce/index.md", "title": "Redis leaderboard with Java (Lettuce)"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/leaderboard/go/index.md", "title": "Redis leaderboard with Go"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/leaderboard/java-lettuce/index.md", "title": "Redis leaderboard with Java (Lettuce)"}
 ---
 
 # Redis leaderboard with Java and Jedis
 
 Implement a Redis leaderboard in Java with Jedis and sorted sets
 
-This guide shows you how to implement a Redis-backed leaderboard in Java with the [`Jedis`](/docs/latest/develop/clients/jedis/) client library. It uses a sorted set to store rank order, Redis hashes to store per-user metadata, and a small local web server so you can explore the leaderboard interactively in your browser.
+This guide shows you how to implement a Redis-backed leaderboard in Java with the [`Jedis`](../../../clients/jedis/index.md) client library. It uses a sorted set to store rank order, Redis hashes to store per-user metadata, and a small local web server so you can explore the leaderboard interactively in your browser.
 
 ## Overview
 

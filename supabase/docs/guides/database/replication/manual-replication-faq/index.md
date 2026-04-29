@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:52.842Z"
 content_hash: "5fd6f9672c062f16494d59117b4f0be99c8b78ec584bfcf36f760368c4002f53"
 menu_path: ["Database","Database","More","More","More","Manual replication","Manual replication","FAQ","FAQ"]
 section_path: ["Database","Database","More","More","More","Manual replication","Manual replication","FAQ","FAQ"]
-nav_prev: {"path": "../index.md", "title": "Database Replication"}
-nav_next: {"path": "../manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/index.md", "title": "Database Replication"}
+nav_next: {"path": "supabase/docs/guides/database/replication/manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
 ---
 
 # 
@@ -31,7 +31,7 @@ Connections through a pooler, such as Supavisor, will not work.
 
 ## The tool in use does not support IPv6[#](#the-tool-in-use-does-not-support-ipv6)
 
-You can enable the [IPv4 add-on](/docs/guides/platform/ipv4-address) for your project.
+You can enable the [IPv4 add-on](../../../platform/ipv4-address/index.md) for your project.
 
 ## What is XMIN and should it be used?[#](#what-is-xmin-and-should-it-be-used)
 
@@ -47,7 +47,7 @@ You can view [publications](/dashboard/project/default/database/publications) in
 
 ## How to configure database settings for replication?[#](#how-to-configure-database-settings-for-replication)
 
-Using the Supabase CLI, you can [configure database settings](/docs/guides/database/custom-postgres-config#cli-configurable-settings) to optimize them for your replication needs. These values can vary depending on your database size and activity.
+Using the Supabase CLI, you can [configure database settings](../../custom-postgres-config/index.md#cli-configurable-settings) to optimize them for your replication needs. These values can vary depending on your database size and activity.
 
 ## What are some important configuration options?[#](#what-are-some-important-configuration-options)
 

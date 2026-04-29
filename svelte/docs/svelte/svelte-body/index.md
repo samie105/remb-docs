@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:35.021Z"
 content_hash: "12a52267ee7dbd5240a681ef61f6ea0b33d7bf8f709e5be0bc463ae6dc311d87"
 menu_path: ["<svelte:body>"]
 section_path: []
-nav_prev: {"path": "../svelte-document/index.md", "title": "<svelte:document>"}
-nav_next: {"path": "../svelte-head/index.md", "title": "<svelte:head>"}
+nav_prev: {"path": "svelte/docs/svelte/svelte-document/index.md", "title": "<svelte:document>"}
+nav_next: {"path": "svelte/docs/svelte/svelte-head/index.md", "title": "<svelte:head>"}
 ---
 
 ```
@@ -29,4 +29,4 @@ As with `<svelte:window>` and `<svelte:document>`, this element may only appear 
 
 previous next
 
-[<svelte:document>](/docs/svelte/svelte-document) [<svelte:head>](/docs/svelte/svelte-head)
+[<svelte:document>](../svelte-document/index.md) [<svelte:head>](../svelte-head/index.md)

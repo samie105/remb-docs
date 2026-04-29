@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:18.189Z"
 content_hash: "d22d90ec381dffb995b55898a407aa205b70223abd537b14a38ffc678a62ab1a"
 menu_path: ["Realtime","Realtime","Deep dive","Deep dive","Pricing","Pricing"]
 section_path: ["Realtime","Realtime","Deep dive","Deep dive","Pricing","Pricing"]
-nav_prev: {"path": "../presence/index.md", "title": "Presence"}
-nav_next: {"path": "../protocol/index.md", "title": "Realtime Protocol"}
+nav_prev: {"path": "supabase/docs/guides/realtime/presence/index.md", "title": "Presence"}
+nav_next: {"path": "supabase/docs/guides/realtime/protocol/index.md", "title": "Realtime Protocol"}
 ---
 
 # 
@@ -55,7 +55,7 @@ Custom
 
 Custom
 
-For a detailed explanation of how charges are calculated, refer to [Manage Realtime Messages usage](/docs/guides/platform/manage-your-usage/realtime-messages).
+For a detailed explanation of how charges are calculated, refer to [Manage Realtime Messages usage](../../platform/manage-your-usage/realtime-messages/index.md).
 
 ## Peak connections[#](#peak-connections)
 
@@ -91,4 +91,4 @@ Custom
 
 Custom
 
-For a detailed explanation of how charges are calculated, refer to [Manage Realtime Peak Connections usage](/docs/guides/platform/manage-your-usage/realtime-peak-connections).
+For a detailed explanation of how charges are calculated, refer to [Manage Realtime Peak Connections usage](../../platform/manage-your-usage/realtime-peak-connections/index.md).

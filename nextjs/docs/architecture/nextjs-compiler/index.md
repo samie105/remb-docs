@@ -11,8 +11,8 @@ menu_path: ["Next.js Compiler"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../fast-refresh/index.md", "title": "Fast Refresh"}
-nav_next: {"path": "../supported-browsers/index.md", "title": "Supported Browsers"}
+nav_prev: {"path": "nextjs/docs/architecture/fast-refresh/index.md", "title": "Fast Refresh"}
+nav_next: {"path": "nextjs/docs/architecture/supported-browsers/index.md", "title": "Supported Browsers"}
 ---
 
 # Next.js Compiler
@@ -294,7 +294,7 @@ module.exports = {
 
 ### Modularize Imports[](#modularize-imports)
 
-This option has been superseded by [`optimizePackageImports`](/docs/app/api-reference/config/next-config-js/optimizePackageImports) in Next.js 13.5. We recommend upgrading to use the new option that does not require manual configuration of import paths.
+This option has been superseded by [`optimizePackageImports`](../../app/api-reference/config/next-config-js/optimizePackageImports/index.md) in Next.js 13.5. We recommend upgrading to use the new option that does not require manual configuration of import paths.
 
 ### Define (Replacing variables during build)[](#define-replacing-variables-during-build)
 

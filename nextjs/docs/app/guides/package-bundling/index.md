@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun","pnpm","npm","yarn","bun","pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
-nav_next: {"path": "../ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
+nav_prev: {"path": "nextjs/docs/app/guides/open-telemetry/index.md", "title": "How to set up instrumentation with OpenTelemetry"}
+nav_next: {"path": "nextjs/docs/app/guides/ppr-platform-guide/index.md", "title": "Implementing Partial Prerendering on your platform"}
 ---
 
 # Optimizing package bundling
@@ -117,7 +117,7 @@ cp -r .next/diagnostics/analyze ./analyze-before-refactor
 
 ## `@next/bundle-analyzer` for Webpack[](#nextbundle-analyzer-for-webpack)
 
-The [`@next/bundle-analyzer`](https://www.npmjs.com/package/@next/bundle-analyzer) is a plugin that helps you manage the size of your application bundles. It generates a visual report of the size of each package and their dependencies. You can use the information to remove large dependencies, split, or [lazy-load](/docs/app/guides/lazy-loading) your code.
+The [`@next/bundle-analyzer`](https://www.npmjs.com/package/@next/bundle-analyzer) is a plugin that helps you manage the size of your application bundles. It generates a visual report of the size of each package and their dependencies. You can use the information to remove large dependencies, split, or [lazy-load](../lazy-loading/index.md) your code.
 
 ### Step 1: Installation[](#step-1-installation)
 
@@ -180,7 +180,7 @@ Once you've identified a large module, the solution will depend on your use case
 
 ### Packages with many exports[](#packages-with-many-exports)
 
-If you're using a package that exports hundreds of modules (such as icon and utility libraries), you can optimize how those imports are resolved using the [`optimizePackageImports`](/docs/app/api-reference/config/next-config-js/optimizePackageImports) option in your `next.config.js` file. This option will only load the modules you _actually_ use, while still giving you the convenience of writing import statements with many named exports.
+If you're using a package that exports hundreds of modules (such as icon and utility libraries), you can optimize how those imports are resolved using the [`optimizePackageImports`](../../api-reference/config/next-config-js/optimizePackageImports/index.md) option in your `next.config.js` file. This option will only load the modules you _actually_ use, while still giving you the convenience of writing import statements with many named exports.
 
 next.config.js
 
@@ -195,7 +195,7 @@ const nextConfig = {
 module.exports = nextConfig
 ```
 
-> **Good to know:** Next.js also optimizes some libraries automatically, thus they do not need to be included in the `optimizePackageImports` list. See the [full list](/docs/app/api-reference/config/next-config-js/optimizePackageImports) of supported packages.
+> **Good to know:** Next.js also optimizes some libraries automatically, thus they do not need to be included in the `optimizePackageImports` list. See the [full list](../../api-reference/config/next-config-js/optimizePackageImports/index.md) of supported packages.
 
 ### Heavy client workloads[](#heavy-client-workloads)
 
@@ -280,7 +280,7 @@ export default async function Page() {
 
 Packages imported inside Server Components and Route Handlers are automatically bundled by Next.js.
 
-You can opt specific packages out of bundling using the [`serverExternalPackages`](/docs/app/api-reference/config/next-config-js/serverExternalPackages) option in your `next.config.js`.
+You can opt specific packages out of bundling using the [`serverExternalPackages`](../../api-reference/config/next-config-js/serverExternalPackages/index.md) option in your `next.config.js`.
 
 next.config.js
 
@@ -301,6 +301,6 @@ Learn more about optimizing your application for production.
 
 Recommendations to ensure the best performance and user experience before taking your Next.js application to production.
 
-](/docs/app/guides/production-checklist)
+](../production-checklist/index.md)
 
 Was this helpful?

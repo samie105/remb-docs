@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:17.939Z"
 content_hash: "932de1d7cb49529bd128fa7c6d861aec8749e9adf959046d6047a188d58cf0af"
 menu_path: ["Static Asset Handling ​"]
 section_path: []
-nav_prev: {"path": "../dep-pre-bundling/index.md", "title": "Dependency Pre-Bundling \u200b"}
-nav_next: {"path": "../build/index.md", "title": "Building for Production \u200b"}
+nav_prev: {"path": "vite/guide/dep-pre-bundling/index.md", "title": "Dependency Pre-Bundling \u200b"}
+nav_next: {"path": "vite/guide/build/index.md", "title": "Building for Production \u200b"}
 ---
 
 *   Related: [Public Base Path](../build/index.md#public-base-path)

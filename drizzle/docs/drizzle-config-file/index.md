@@ -10,8 +10,8 @@ content_hash: "183fd8ecc1291172e2dc839d594be58b5ad79e6ba63fe364be8b896ba64a7a88"
 menu_path: ["Drizzle Kit configuration file"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../kit-web-mobile/index.md", "title": "Drizzle migrations in web and mobile environments"}
-nav_next: {"path": "../seed-overview/index.md", "title": "Drizzle Seed"}
+nav_prev: {"path": "drizzle/docs/kit-web-mobile/index.md", "title": "Drizzle migrations in web and mobile environments"}
+nav_next: {"path": "drizzle/docs/seed-overview/index.md", "title": "Drizzle Seed"}
 ---
 
 ## Drizzle Kit configuration file

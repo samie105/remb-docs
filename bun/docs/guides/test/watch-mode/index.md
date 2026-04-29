@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:55:35.731Z"
 content_hash: "539e0a52fe283a886a70f054fba3db79e95113ec3618fb7af3b78b4018bc7f05"
 menu_path: ["Run tests in watch mode with Bun"]
 section_path: []
-nav_prev: {"path": "../update-snapshots/index.md", "title": "Update snapshots in `bun test`"}
-nav_next: {"path": "../../util/base64/index.md", "title": "Encode and decode base64 strings"}
+nav_prev: {"path": "bun/docs/guides/test/update-snapshots/index.md", "title": "Update snapshots in `bun test`"}
+nav_next: {"path": "bun/docs/guides/util/base64/index.md", "title": "Encode and decode base64 strings"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../../util/base64/index.md", "title": "Encode and decode bas
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Use the `--watch` flag to run your tests in watch mode.
 
@@ -52,7 +52,7 @@ Bun](https://github.com/oven-sh/bun/assets/3084745/dc49a36e-ba82-416f-b960-1c883
 
 * * *
 
-See [Docs > Test Runner](/docs/test) for complete documentation on the test runner.
+See [Docs > Test Runner](../../../test/index.md) for complete documentation on the test runner.
 
 Was this page helpful?
 
@@ -64,13 +64,13 @@ Run your tests with the Bun test runner
 
 Previous
 
-](/docs/guides/test/run-tests)[
+](../run-tests/index.md)[
 
 Migrate from Jest to Bun's test runner
 
 Next
 
-](/docs/guides/test/migrate-from-jest)
+](../migrate-from-jest/index.md)
 
 ![Running tests in watch mode in
 Bun](https://github.com/oven-sh/bun/assets/3084745/dc49a36e-ba82-416f-b960-1c883a924248)

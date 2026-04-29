@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:31.897Z"
 content_hash: "3a74136e7dec30a0358763943a3ca7641240ecb66acff3305085d3babcb254a3"
 menu_path: ["Edge Functions","Edge Functions","Examples","Examples","Scheduling Functions","Scheduling Functions"]
 section_path: ["Edge Functions","Edge Functions","Examples","Examples","Scheduling Functions","Scheduling Functions"]
-nav_prev: {"path": "../routing/index.md", "title": "Handling Routing in Functions"}
-nav_next: {"path": "../secrets/index.md", "title": "Environment Variables"}
+nav_prev: {"path": "supabase/docs/guides/functions/routing/index.md", "title": "Handling Routing in Functions"}
+nav_next: {"path": "supabase/docs/guides/functions/secrets/index.md", "title": "Environment Variables"}
 ---
 
 # 
@@ -23,7 +23,7 @@ The hosted Supabase Platform supports the [`pg_cron` extension](/docs/guides/dat
 
 In combination with the [`pg_net` extension](/docs/guides/database/extensions/pgnet), this allows us to invoke Edge Functions periodically on a set schedule.
 
-To access the auth token securely for your Edge Function call, we recommend storing them in [Supabase Vault](/docs/guides/database/vault).
+To access the auth token securely for your Edge Function call, we recommend storing them in [Supabase Vault](../../database/vault/index.md).
 
 ## Examples[#](#examples)
 

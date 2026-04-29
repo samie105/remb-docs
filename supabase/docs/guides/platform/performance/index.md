@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:57.452Z"
 content_hash: "ef66f91e4575b472a898291a5ee24c18e4bea34fdf148119039633915b115418"
 menu_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Performance Tuning","Performance Tuning"]
 section_path: ["Platform","Platform","Platform Configuration","Platform Configuration","Performance Tuning","Performance Tuning"]
-nav_prev: {"path": "../network-restrictions/index.md", "title": "Network Restrictions"}
-nav_next: {"path": "../permissions/index.md", "title": "Permissions"}
+nav_prev: {"path": "supabase/docs/guides/platform/network-restrictions/index.md", "title": "Network Restrictions"}
+nav_next: {"path": "supabase/docs/guides/platform/permissions/index.md", "title": "Permissions"}
 ---
 
 # 
@@ -23,7 +23,7 @@ The Supabase platform automatically optimizes your Postgres database to take adv
 
 ## Examining query performance[#](#examining-query-performance)
 
-Unoptimized queries are a major cause of poor database performance. To analyze the performance of your queries, see the [Debugging and monitoring guide](/docs/guides/database/inspect).
+Unoptimized queries are a major cause of poor database performance. To analyze the performance of your queries, see the [Debugging and monitoring guide](../../database/inspect/index.md).
 
 ## Optimizing the number of connections[#](#optimizing-the-number-of-connections)
 
@@ -45,7 +45,7 @@ In such a scenario, you can consider:
 
 You can use the [pg\_stat\_activity](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ACTIVITY-VIEW) view to debug which clients are holding open connections on your DB. `pg_stat_activity` only exposes information on direct connections to the database. Information on the number of connections to Supavisor is available [via the metrics endpoint](../platform/metrics).
 
-Depending on the clients involved, you might be able to configure them to work with fewer connections (e.g. by imposing a limit on the maximum number of connections they're allowed to use), or shift specific workloads to connect via [Supavisor](/docs/guides/database/connecting-to-postgres#connection-pooler) instead. Transient workflows, which can quickly scale up and down in response to traffic (e.g. serverless functions), can especially benefit from using a connection pooler rather than connecting to the DB directly.
+Depending on the clients involved, you might be able to configure them to work with fewer connections (e.g. by imposing a limit on the maximum number of connections they're allowed to use), or shift specific workloads to connect via [Supavisor](../../database/connecting-to-postgres/index.md#connection-pooler) instead. Transient workflows, which can quickly scale up and down in response to traffic (e.g. serverless functions), can especially benefit from using a connection pooler rather than connecting to the DB directly.
 
 ### Allowing higher number of connections[#](#allowing-higher-number-of-connections)
 

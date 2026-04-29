@@ -10,8 +10,8 @@ content_hash: "aea11b28207ed0013df876e6e3653ab0b166a3b75c088f0065f72d66e01c4545"
 menu_path: ["font-smoothing"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../font-size/index.md", "title": "font-size"}
-nav_next: {"path": "../font-style/index.md", "title": "font-style"}
+nav_prev: {"path": "tailwind/docs/font-size/index.md", "title": "font-size"}
+nav_next: {"path": "tailwind/docs/font-style/index.md", "title": "font-style"}
 ---
 
 # font-smoothing
@@ -52,7 +52,7 @@ Prefix `-webkit-font-smoothing` and `-moz-osx-font-smoothing` utilities with a b
 <p class="antialiased md:subpixel-antialiased ...">  Lorem ipsum dolor sit amet...</p>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

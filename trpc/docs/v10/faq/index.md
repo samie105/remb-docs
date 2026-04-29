@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:35:46.198Z"
 content_hash: "70da03accda58ec77372d2261f8dde6d15d5ea9cdd877fe40b55c86615b61875"
 menu_path: ["FAQ / Troubleshooting"]
 section_path: []
-nav_prev: {"path": "../example-apps/index.md", "title": "Example Apps"}
-nav_next: {"path": "../further/index.md", "title": "Extra Information"}
+nav_prev: {"path": "trpc/docs/v10/example-apps/index.md", "title": "Example Apps"}
+nav_next: {"path": "trpc/docs/v10/further/index.md", "title": "Extra Information"}
 ---
 
 Collection of frequently asked questions with ideas on how to troubleshoot & resolve them.

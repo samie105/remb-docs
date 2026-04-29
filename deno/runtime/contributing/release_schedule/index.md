@@ -10,8 +10,8 @@ content_hash: "983cad56dfaaf4bbd76e94a9bdaaa828fd8ecbed8d9f812fd8de9c98925ba2d6"
 menu_path: ["Release Schedule"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../profiling/index.md", "title": "Contributing and support"}
-nav_next: {"path": "../style_guide/index.md", "title": "Deno Style Guide"}
+nav_prev: {"path": "deno/runtime/contributing/profiling/index.md", "title": "Contributing and support"}
+nav_next: {"path": "deno/runtime/contributing/style_guide/index.md", "title": "Deno Style Guide"}
 ---
 
 **On this page**

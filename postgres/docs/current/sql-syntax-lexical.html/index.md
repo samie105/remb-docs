@@ -10,8 +10,8 @@ content_hash: "b1ad2a6a451f9b2e81543ef14878b14f6fffba9721e345aa9a295d7e037579b0"
 menu_path: ["PostgreSQL: Documentation: 18: 4.1. Lexical Structure"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
-nav_next: {"path": "../sql-truncate.html/index.md", "title": "PostgreSQL: Documentation: 18: TRUNCATE"}
+nav_prev: {"path": "postgres/docs/current/sql-syntax-calling-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 4.3.\u00a0Calling Functions"}
+nav_next: {"path": "postgres/docs/current/sql-truncate.html/index.md", "title": "PostgreSQL: Documentation: 18: TRUNCATE"}
 ---
 
 SQL input consists of a sequence of _commands_. A command is composed of a sequence of _tokens_, terminated by a semicolon (“;”). The end of the input stream also terminates a command. Which tokens are valid depends on the syntax of the particular command.

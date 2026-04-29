@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:22.897Z"
 content_hash: "760dfc4fbbcca5ef802bce332384233664e502271b753c79b6124d0bf22bccf6"
 menu_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Mobile Deep Linking","Mobile Deep Linking"]
 section_path: ["Auth","Auth","Flows (How-tos)","Flows (How-tos)","Mobile Deep Linking","Mobile Deep Linking"]
-nav_prev: {"path": "../managing-user-data/index.md", "title": "User Management"}
-nav_next: {"path": "../oauth-server/index.md", "title": "OAuth 2.1 Server"}
+nav_prev: {"path": "supabase/docs/guides/auth/managing-user-data/index.md", "title": "User Management"}
+nav_next: {"path": "supabase/docs/guides/auth/oauth-server/index.md", "title": "OAuth 2.1 Server"}
 ---
 
 # 
@@ -28,7 +28,7 @@ Many Auth methods involve a redirect to your app. For example:
 *   Signup confirmation emails, Magic Link signins, and password reset emails contain a link that redirects to your app.
 *   In OAuth signins, an automatic redirect occurs to your app.
 
-With Deep Linking, you can configure this redirect to open a specific page. This is necessary if, for example, you need to display a form for [password reset](/docs/guides/auth/passwords#resetting-a-users-password-forgot-password), or to manually exchange a token hash.
+With Deep Linking, you can configure this redirect to open a specific page. This is necessary if, for example, you need to display a form for [password reset](../passwords/index.md#resetting-a-users-password-forgot-password), or to manually exchange a token hash.
 
 ## Setting up deep linking[#](#setting-up-deep-linking)
 

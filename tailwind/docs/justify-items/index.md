@@ -10,8 +10,8 @@ content_hash: "b57260be32a024aabd33a6e8d0566a9da49fbf2b192550e0990578c34c5ed96e"
 menu_path: ["justify-items"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../justify-content/index.md", "title": "justify-content"}
-nav_next: {"path": "../justify-self/index.md", "title": "justify-self"}
+nav_prev: {"path": "tailwind/docs/justify-content/index.md", "title": "justify-content"}
+nav_next: {"path": "tailwind/docs/justify-self/index.md", "title": "justify-self"}
 ---
 
 # justify-items
@@ -165,7 +165,7 @@ Prefix a `justify-items` utility with a breakpoint variant like `md:` to only ap
 <div class="grid justify-items-start md:justify-items-center ...">  <!-- ... --></div>
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

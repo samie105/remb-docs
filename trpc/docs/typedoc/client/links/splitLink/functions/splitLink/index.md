@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:52.410Z"
 content_hash: "d0a339e270df8028de87c9b26e84593063b50f0b566c946a196b222fc7e43a4f"
 menu_path: ["Function: splitLink()"]
 section_path: []
-nav_prev: {"path": "../../index.md", "title": "links/splitLink"}
-nav_next: {"path": "../../../wsLink/wsLink/index.md", "title": "links/wsLink/wsLink"}
+nav_prev: {"path": "trpc/docs/typedoc/client/links/splitLink/index.md", "title": "links/splitLink"}
+nav_next: {"path": "trpc/docs/typedoc/client/links/wsLink/wsLink/index.md", "title": "links/wsLink/wsLink"}
 ---
 
 > **splitLink**<`TRouter`\>(`opts`): [`TRPCLink`](../../../../index/type-aliases/TRPCLink/index.md)<`TRouter`\>

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:06.227Z"
 content_hash: "a2205516910ca3295854e39122d7cd30908c98aec7c27aba4b8af7fea6ba3fe0"
 menu_path: ["Build a frontend using Vite and Bun"]
 section_path: []
-nav_prev: {"path": "../upstash/index.md", "title": "Bun Redis with Upstash"}
-nav_next: {"path": "../../html-rewriter/extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/upstash/index.md", "title": "Bun Redis with Upstash"}
+nav_next: {"path": "bun/docs/guides/html-rewriter/extract-links/index.md", "title": "Extract links from a webpage using HTMLRewriter"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../../html-rewriter/extract-links/index.md", "title": "Extra
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-You can use Vite with Bun, but many projects get faster builds & drop hundreds of dependencies by switching to [HTML imports](/docs/bundler/html-static).
+You can use Vite with Bun, but many projects get faster builds & drop hundreds of dependencies by switching to [HTML imports](../../../bundler/html-static/index.md).
 
 * * *
 
@@ -124,10 +124,10 @@ Run Bun as a daemon with systemd
 
 Previous
 
-](/docs/guides/ecosystem/systemd)[
+](../systemd/index.md)[
 
 Bun Redis with Upstash
 
 Next
 
-](/docs/guides/ecosystem/upstash)
+](../upstash/index.md)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:56.341Z"
 content_hash: "c5eef501cd588aa967af4d1672817f139a6a4bb52bbbc7f33544b67ce9a34b4a"
 menu_path: ["Write a ReadableStream to a file"]
 section_path: []
-nav_prev: {"path": "../stdout/index.md", "title": "Write to stdout"}
-nav_next: {"path": "../unlink/index.md", "title": "Delete a file"}
+nav_prev: {"path": "bun/docs/guides/write-file/stdout/index.md", "title": "Write to stdout"}
+nav_next: {"path": "bun/docs/guides/write-file/unlink/index.md", "title": "Delete a file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../unlink/index.md", "title": "Delete a file"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-To write a `ReadableStream` to disk, first create a `Response` instance from the stream. This `Response` can then be written to disk using [`Bun.write()`](/docs/runtime/file-io#writing-files-bun-write).
+To write a `ReadableStream` to disk, first create a `Response` instance from the stream. This `Response` can then be written to disk using [`Bun.write()`](../../../runtime/file-io/index.md#writing-files-bun-write).
 
 ```
 const stream: ReadableStream = ...;
@@ -47,7 +47,7 @@ await Bun.write(path, response);
 
 * * *
 
-See [Docs > API > File I/O](/docs/runtime/file-io#writing-files-bun-write) for complete documentation of `Bun.write()`.
+See [Docs > API > File I/O](../../../runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
 
 Was this page helpful?
 
@@ -59,10 +59,10 @@ Write a file incrementally
 
 Previous
 
-](/docs/guides/write-file/filesink)[
+](../filesink/index.md)[
 
 Write to stdout
 
 Next
 
-](/docs/guides/write-file/stdout)
+](../stdout/index.md)

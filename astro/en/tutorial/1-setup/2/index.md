@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:08.919Z"
 content_hash: "461f37983ebdf5d4bee4326761dfe85499f46400782dd3b802768f75db463eb4"
 menu_path: ["Create your first Astro project"]
 section_path: []
-nav_prev: {"path": "../1/index.md", "title": "Prepare your dev environment"}
-nav_next: {"path": "../3/index.md", "title": "Write your first line of Astro"}
+nav_prev: {"path": "astro/en/tutorial/1-setup/1/index.md", "title": "Prepare your dev environment"}
+nav_next: {"path": "astro/en/tutorial/1-setup/3/index.md", "title": "Write your first line of Astro"}
 ---
 
 # Create your first Astro project
@@ -119,4 +119,4 @@ Your project files contain all the code necessary to display an Astro website, b
 *   [Getting Started with Visual Studio Code](https://code.visualstudio.com/docs/introvideos/basics) external — a video tutorial for installing, setting up and working with VS Code
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

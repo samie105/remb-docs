@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:42.761Z"
 content_hash: "dd84f74c71dda79523bc60a546fb7abe6b3c1c662588821b3b0d00d6d993d680"
 menu_path: ["Convert a Node.js Readable to JSON"]
 section_path: []
-nav_prev: {"path": "../node-readable-to-blob/index.md", "title": "Convert a Node.js Readable to a Blob"}
-nav_next: {"path": "../node-readable-to-string/index.md", "title": "Convert a Node.js Readable to a string"}
+nav_prev: {"path": "bun/docs/guides/streams/node-readable-to-blob/index.md", "title": "Convert a Node.js Readable to a Blob"}
+nav_next: {"path": "bun/docs/guides/streams/node-readable-to-string/index.md", "title": "Convert a Node.js Readable to a string"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../node-readable-to-string/index.md", "title": "Convert a No
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 To convert a Node.js `Readable` stream to a JSON object in Bun, you can create a new [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object with the stream as the body, then use [`response.json()`](https://developer.mozilla.org/en-US/docs/Web/API/Response/json) to read the stream into a JSON object.
 
@@ -54,10 +54,10 @@ Convert a Node.js Readable to a string
 
 Previous
 
-](/docs/guides/streams/node-readable-to-string)[
+](../node-readable-to-string/index.md)[
 
 Convert a Node.js Readable to a Blob
 
 Next
 
-](/docs/guides/streams/node-readable-to-blob)
+](../node-readable-to-blob/index.md)

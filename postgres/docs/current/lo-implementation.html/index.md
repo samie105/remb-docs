@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:48.646Z"
 content_hash: "d58860134f035069353fdc6e33458ecee9b2e2a943957f0635ec0c89b6116354"
 menu_path: ["PostgreSQL: Documentation: 18: 33.2. Implementation Features"]
 section_path: []
-nav_prev: {"path": "../lo-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.4.\u00a0Server-Side Functions"}
-nav_next: {"path": "../lo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.21.\u00a0lo \u2014 manage large objects"}
+nav_prev: {"path": "postgres/docs/current/lo-funcs.html/index.md", "title": "PostgreSQL: Documentation: 18: 33.4.\u00a0Server-Side Functions"}
+nav_next: {"path": "postgres/docs/current/lo.html/index.md", "title": "PostgreSQL: Documentation: 18: F.21.\u00a0lo \u2014 manage large objects"}
 ---
 
 The large object implementation breaks large objects up into “chunks” and stores the chunks in rows in the database. A B-tree index guarantees fast searches for the correct chunk number when doing random access reads and writes.

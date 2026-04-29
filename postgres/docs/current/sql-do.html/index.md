@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:12.567Z"
 content_hash: "6afe7c4657478945e846a78b5955478f3a23644f002204b7e4dd35088cac8f31"
 menu_path: ["PostgreSQL: Documentation: 18: DO"]
 section_path: []
-nav_prev: {"path": "../sql-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: DELETE"}
-nav_next: {"path": "../sql-drop-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ACCESS METHOD"}
+nav_prev: {"path": "postgres/docs/current/sql-delete.html/index.md", "title": "PostgreSQL: Documentation: 18: DELETE"}
+nav_next: {"path": "postgres/docs/current/sql-drop-access-method.html/index.md", "title": "PostgreSQL: Documentation: 18: DROP ACCESS METHOD"}
 ---
 
 DO — execute an anonymous code block

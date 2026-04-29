@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:46.775Z"
 content_hash: "954501918080f187abce70bcb1d1d73c107baa5133368bcc6c4b9c35b2d8e3b8"
 menu_path: ["Unknown configuration error."]
 section_path: []
-nav_prev: {"path": "../unknown-compiler-error/index.md", "title": "Unknown compiler error."}
-nav_next: {"path": "../unknown-content-collection-error/index.md", "title": "Unknown Content Collection Error."}
+nav_prev: {"path": "astro/en/reference/errors/unknown-compiler-error/index.md", "title": "Unknown compiler error."}
+nav_next: {"path": "astro/en/reference/errors/unknown-content-collection-error/index.md", "title": "Unknown Content Collection Error."}
 ---
 
 # Unknown configuration error.
@@ -25,6 +25,6 @@ If you can reliably cause this error to happen, we’d appreciate if you could [
 
 **See Also:**
 
-*   [Configuration Reference](/en/reference/configuration-reference/)
+*   [Configuration Reference](../../configuration-reference/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:34:32.697Z"
 content_hash: "a685d0c97b064a286ff323b501824e05f9a28c452e83a7508d929ffe5f62abd6"
 menu_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Developing locally with Vecs","Developing locally with Vecs"]
 section_path: ["AI & Vectors","AI & Vectors","Python Examples","Python Examples","Developing locally with Vecs","Developing locally with Vecs"]
-nav_prev: {"path": "../structured-unstructured/index.md", "title": "Structured and Unstructured"}
-nav_next: {"path": "../vector-columns/index.md", "title": "Vector columns"}
+nav_prev: {"path": "supabase/docs/guides/ai/structured-unstructured/index.md", "title": "Structured and Unstructured"}
+nav_next: {"path": "supabase/docs/guides/ai/vector-columns/index.md", "title": "Vector columns"}
 ---
 
 # 
@@ -23,11 +23,11 @@ Manage unstructured vector stores in Postgres.
 
 * * *
 
-Supabase provides a Python client called [`vecs`](https://github.com/supabase/vecs) for managing unstructured vector stores. This client provides a set of useful tools for creating and querying collections in Postgres using the [pgvector](/docs/guides/database/extensions/pgvector) extension.
+Supabase provides a Python client called [`vecs`](https://github.com/supabase/vecs) for managing unstructured vector stores. This client provides a set of useful tools for creating and querying collections in Postgres using the [pgvector](../../database/extensions/pgvector/index.md) extension.
 
 ## Quick start[#](#quick-start)
 
-Let's see how Vecs works using a local database. Make sure you have the Supabase CLI [installed](/docs/guides/cli#installation) on your machine.
+Let's see how Vecs works using a local database. Make sure you have the Supabase CLI [installed](../../cli/index.md#installation) on your machine.
 
 ### Initialize your project[#](#initialize-your-project)
 

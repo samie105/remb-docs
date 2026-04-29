@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:13.406Z"
 content_hash: "d84cddd5dec93fa5d0832267338d62600dcb1aa4b72f7eb174a961055de28a8f"
 menu_path: ["Run Bun as a daemon with PM2"]
 section_path: []
-nav_prev: {"path": "../nuxt/index.md", "title": "Build an app with Nuxt and Bun"}
-nav_next: {"path": "../prisma/index.md", "title": "Use Prisma with Bun"}
+nav_prev: {"path": "bun/docs/guides/ecosystem/nuxt/index.md", "title": "Build an app with Nuxt and Bun"}
+nav_next: {"path": "bun/docs/guides/ecosystem/prisma/index.md", "title": "Use Prisma with Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../prisma/index.md", "title": "Use Prisma with Bun"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 [PM2](https://pm2.keymetrics.io/) is a popular process manager that manages and runs your applications as daemons (background processes). It offers features like process monitoring, automatic restarts, and scaling. Using a process manager is common when deploying a Bun application on a cloud-hosted virtual private server (VPS), as it:
 
@@ -111,10 +111,10 @@ Build an app with Nuxt and Bun
 
 Previous
 
-](/docs/guides/ecosystem/nuxt)[
+](../nuxt/index.md)[
 
 Use Prisma with Bun
 
 Next
 
-](/docs/guides/ecosystem/prisma)
+](../prisma/index.md)

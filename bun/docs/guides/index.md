@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:49:04.761Z"
 content_hash: "997b8504e5c89417955cf40ccef41d9e725a911a46a633b488ffb5d2af8e4b8f"
 menu_path: ["Guides"]
 section_path: []
-nav_prev: {"path": "../feedback/index.md", "title": "Feedback"}
-nav_next: {"path": "binary/arraybuffer-to-array/index.md", "title": "Convert an ArrayBuffer to an array of numbers"}
+nav_prev: {"path": "bun/docs/feedback/index.md", "title": "Feedback"}
+nav_next: {"path": "bun/docs/guides/binary/arraybuffer-to-array/index.md", "title": "Convert an ArrayBuffer to an array of numbers"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "binary/arraybuffer-to-array/index.md", "title": "Convert an 
 
 [Runtime
 
-](/docs)[Package Manager
+](../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../feedback/index.md)
 
 ## Featured
 
@@ -77,4 +77,4 @@ Deploy a Bun application on Vercel
 
 Next
 
-](/docs/guides/deployment/vercel)
+](deployment/vercel/index.md)

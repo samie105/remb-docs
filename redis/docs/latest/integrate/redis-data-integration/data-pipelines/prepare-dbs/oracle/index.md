@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:32.026Z"
 content_hash: "94faabdcc07ab3cba198a048681ac786ce4061a925af2f34469ceab6017b421c"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare Oracle and Oracle RAC for RDI","→","Prepare Oracle and Oracle RAC for RDI"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases","→\n      \n        Prepare Oracle and Oracle RAC for RDI","→","Prepare Oracle and Oracle RAC for RDI"]
-nav_prev: {"path": "../my-sql-mariadb/index.md", "title": "Prepare MySQL/MariaDB for RDI"}
-nav_next: {"path": "../postgresql/index.md", "title": "Prepare PostgreSQL/Supabase for RDI"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/my-sql-mariadb/index.md", "title": "Prepare MySQL/MariaDB for RDI"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/postgresql/index.md", "title": "Prepare PostgreSQL/Supabase for RDI"}
 ---
 
 # Prepare Oracle and Oracle RAC for RDI

@@ -11,8 +11,8 @@ menu_path: ["File-system conventions"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../components/script/index.md", "title": "Script"}
-nav_next: {"path": "instrumentation/index.md", "title": "instrumentation.js"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/components/script/index.md", "title": "Script"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/file-conventions/instrumentation/index.md", "title": "instrumentation.js"}
 ---
 
 # File-system conventions
@@ -25,24 +25,24 @@ Last updated April 23, 2026
 
 API reference for the instrumentation.js file.
 
-](/docs/pages/api-reference/file-conventions/instrumentation)[
+](instrumentation/index.md)[
 
 ### Proxy
 
 Learn how to use Proxy to run code before a request is completed.
 
-](/docs/pages/api-reference/file-conventions/proxy)[
+](proxy/index.md)[
 
 ### public
 
 Next.js allows you to serve static files, like images, in the public directory. You can learn how it works here.
 
-](/docs/pages/api-reference/file-conventions/public-folder)[
+](public-folder/index.md)[
 
 ### src Directory
 
 Save pages under the \`src\` folder as an alternative to the root \`pages\` directory.
 
-](/docs/pages/api-reference/file-conventions/src-folder)
+](src-folder/index.md)
 
 Was this helpful?

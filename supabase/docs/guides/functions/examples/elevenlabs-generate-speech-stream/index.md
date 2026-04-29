@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:25.310Z"
 content_hash: "fa2025a05ca6690c535fbb59b82482da3fb278f45ea364a3f952a7a7450b7564"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Text To Speech with ElevenLabs","Text To Speech with ElevenLabs"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Text To Speech with ElevenLabs","Text To Speech with ElevenLabs"]
-nav_prev: {"path": "../discord-bot/index.md", "title": "Building a Discord Bot"}
-nav_next: {"path": "../elevenlabs-transcribe-speech/index.md", "title": "Transcription Telegram Bot"}
+nav_prev: {"path": "supabase/docs/guides/functions/examples/discord-bot/index.md", "title": "Building a Discord Bot"}
+nav_next: {"path": "supabase/docs/guides/functions/examples/elevenlabs-transcribe-speech/index.md", "title": "Transcription Telegram Bot"}
 ---
 
 # 
@@ -33,14 +33,14 @@ Find the [example project on GitHub](https://github.com/elevenlabs/elevenlabs-ex
 
 *   An ElevenLabs account with an [API key](/app/settings/api-keys).
 *   A [Supabase](https://supabase.com) account (you can sign up for a free account via [database.new](https://database.new)).
-*   The [Supabase CLI](/docs/guides/local-development) installed on your machine.
+*   The [Supabase CLI](../../../local-development/index.md) installed on your machine.
 *   The [Deno runtime](https://docs.deno.com/runtime/getting_started/installation/) installed on your machine and optionally [setup in your favourite IDE](https://docs.deno.com/runtime/getting_started/setup_your_environment).
 
 ## Setup[#](#setup)
 
 ### Create a Supabase project locally[#](#create-a-supabase-project-locally)
 
-After installing the [Supabase CLI](/docs/guides/local-development), run the following command to create a new Supabase project locally:
+After installing the [Supabase CLI](../../../local-development/index.md), run the following command to create a new Supabase project locally:
 
 ```
 1supabase init

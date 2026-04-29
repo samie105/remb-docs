@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:06:37.178Z"
 content_hash: "9d6a0b5d3f55313a1b54d3508ee32bacd6fbd2a6735aff47ab51deaba2d581ec"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Use cases","→","Use cases"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis data types","→","Redis data types","→\n      \n        Time series","→","Time series","→\n      \n        Use cases","→","Use cases"]
-nav_prev: {"path": "../out-of-order_performance_considerations/index.md", "title": "Out-of-order / backfilled ingestion performance considerations"}
-nav_next: {"path": "../../../get-started/data-store/index.md", "title": "Redis as an in-memory data structure store quick start guide"}
+nav_prev: {"path": "redis/docs/latest/develop/data-types/timeseries/out-of-order_performance_considerations/index.md", "title": "Out-of-order / backfilled ingestion performance considerations"}
+nav_next: {"path": "redis/docs/latest/develop/get-started/data-store/index.md", "title": "Redis as an in-memory data structure store quick start guide"}
 ---
 
 # Use cases

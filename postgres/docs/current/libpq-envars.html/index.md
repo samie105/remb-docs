@@ -10,8 +10,8 @@ content_hash: "b56dc6981f70b07bcd7e660ad6b72d38500e160b2ad57a5b8eaa7cc59a42ed1c"
 menu_path: ["PostgreSQL: Documentation: 18: 32.15. Environment Variables"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../libpq-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.10.\u00a0Functions Associated with the COPY Command"}
-nav_next: {"path": "../libpq-notice-processing.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.13.\u00a0Notice Processing"}
+nav_prev: {"path": "postgres/docs/current/libpq-copy.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.10.\u00a0Functions Associated with the COPY Command"}
+nav_next: {"path": "postgres/docs/current/libpq-notice-processing.html/index.md", "title": "PostgreSQL: Documentation: 18: 32.13.\u00a0Notice Processing"}
 ---
 
 The following environment variables can be used to select default connection parameter values, which will be used by [`PQconnectdb`](../libpq-connect.html/index.md#LIBPQ-PQCONNECTDB), [`PQsetdbLogin`](../libpq-connect.html/index.md#LIBPQ-PQSETDBLOGIN) and [`PQsetdb`](../libpq-connect.html/index.md#LIBPQ-PQSETDB) if no value is directly specified by the calling code. These are useful to avoid hard-coding database connection information into simple client applications, for example.

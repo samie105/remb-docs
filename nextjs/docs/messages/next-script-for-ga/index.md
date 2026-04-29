@@ -11,8 +11,8 @@ menu_path: ["Using Google Analytics with Next.js (through `@next/third-parties/g
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../next-request-in-use-cache/index.md", "title": "Cannot access `cookies()` or `headers()` in `\"use cache\"`"}
-nav_next: {"path": "../no-assign-module-variable/index.md", "title": "No assign module variable"}
+nav_prev: {"path": "nextjs/docs/messages/next-request-in-use-cache/index.md", "title": "Cannot access `cookies()` or `headers()` in `\"use cache\"`"}
+nav_next: {"path": "nextjs/docs/messages/no-assign-module-variable/index.md", "title": "No assign module variable"}
 ---
 
 # Using Google Analytics with Next.js (through \`@next/third-parties/google\`)
@@ -108,12 +108,12 @@ export default function Page() {
 ## Good to know[](#good-to-know)
 
 -   If you are using the Pages Router, please refer to the [`pages/` documentation](/docs/pages/guides/third-party-libraries).
--   `@next/third-parties` also supports [other third parties](/docs/app/guides/third-party-libraries#google-tag-manager).
--   Using `@next/third-parties` is not required. You can also use the `next/script` component directly. Refer to the [`next/script` documentation](/docs/app/guides/scripts) to learn more.
+-   `@next/third-parties` also supports [other third parties](../../app/guides/third-party-libraries/index.md#google-tag-manager).
+-   Using `@next/third-parties` is not required. You can also use the `next/script` component directly. Refer to the [`next/script` documentation](../../app/guides/scripts/index.md) to learn more.
 
 ## Useful Links[](#useful-links)
 
--   [`@next/third-parties` Documentation](/docs/app/guides/third-party-libraries)
--   [`next/script` Documentation](/docs/app/guides/scripts)
+-   [`@next/third-parties` Documentation](../../app/guides/third-party-libraries/index.md)
+-   [`next/script` Documentation](../../app/guides/scripts/index.md)
 
 Was this helpful?

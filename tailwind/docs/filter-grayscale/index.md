@@ -10,8 +10,8 @@ content_hash: "ecfba0b96c05430d0e94cf6a8a246f5b0a64f279a1835cfa8159f1480aa2fd57"
 menu_path: ["filter: grayscale()"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
-nav_next: {"path": "../filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
+nav_prev: {"path": "tailwind/docs/filter-drop-shadow/index.md", "title": "filter: drop-shadow()"}
+nav_next: {"path": "tailwind/docs/filter-hue-rotate/index.md", "title": "filter: hue-rotate()"}
 ---
 
 # filter: grayscale()
@@ -82,7 +82,7 @@ Prefix a `filter: grayscale()` utility with a breakpoint variant like `md:` to o
 <img class="grayscale md:grayscale-0 ..." src="/img/mountains.jpg" />
 ```
 
-Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+Learn more about using variants in the [variants documentation](../hover-focus-and-other-states/index.md).
 
 ### On this page
 

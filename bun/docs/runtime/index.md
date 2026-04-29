@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:28.059Z"
 content_hash: "198f7daebedba9540b493c2d13b467e80021b8e7a55d8535b5e72c0a118b85ae"
 menu_path: ["Bun Runtime"]
 section_path: []
-nav_prev: {"path": "../quickstart/index.md", "title": "Quickstart"}
-nav_next: {"path": "archive/index.md", "title": "Archive"}
+nav_prev: {"path": "bun/docs/quickstart/index.md", "title": "Quickstart"}
+nav_next: {"path": "bun/docs/runtime/archive/index.md", "title": "Archive"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "archive/index.md", "title": "Archive"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../feedback/index.md)
 
 The Bun Runtime is designed to start fast and run fast. Under the hood, Bun uses the [JavaScriptCore engine](https://developer.apple.com/documentation/javascriptcore), which is developed by Apple for Safari. In most cases, the startup and running performance is faster than V8, the engine used by Node.js and Chromium-based browsers. Its transpiler and runtime are written in Zig, a modern, high-performance language. On Linux, this translates into startup times [4x faster](https://twitter.com/jarredsumner/status/1499225725492076544) than Node.js.
 
@@ -154,7 +154,7 @@ Cleaning...
 Done.
 ```
 
-Bun executes the script command in a subshell. On Linux & macOS, it checks for the following shells in order, using the first one it finds: `bash`, `sh`, `zsh`. On Windows, it uses [bun shell](/docs/runtime/shell) to support bash-like syntax and many common commands.
+Bun executes the script command in a subshell. On Linux & macOS, it checks for the following shells in order, using the first one it finds: `bash`, `sh`, `zsh`. On Windows, it uses [bun shell](shell/index.md) to support bash-like syntax and many common commands.
 
 ⚡️ The startup time for `npm run` on Linux is roughly 170ms; with Bun it is `6ms`.
 
@@ -230,7 +230,7 @@ terminal
 bun run --filter 'ba*' <script>
 ```
 
-will execute `<script>` in both `bar` and `baz`, but not in `foo`. Find more details in the docs page for [filter](/docs/pm/filter#running-scripts-with-filter).
+will execute `<script>` in both `bar` and `baz`, but not in `foo`. Find more details in the docs page for [filter](../pm/filter/index.md#running-scripts-with-filter).
 
 ## 
 
@@ -1111,10 +1111,10 @@ bun create
 
 Previous
 
-](/docs/runtime/templating/create)[
+](templating/create/index.md)[
 
 Watch Mode
 
 Next
 
-](/docs/runtime/watch-mode)
+](watch-mode/index.md)

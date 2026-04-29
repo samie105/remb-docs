@@ -11,15 +11,15 @@ menu_path: ["Link"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../image-legacy/index.md", "title": "Image (Legacy)"}
-nav_next: {"path": "../script/index.md", "title": "Script"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/components/image-legacy/index.md", "title": "Image (Legacy)"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/components/script/index.md", "title": "Script"}
 ---
 
 # Link
 
 Last updated April 23, 2026
 
-`<Link>` is a React component that extends the HTML `<a>` element to provide [prefetching](/docs/app/getting-started/linking-and-navigating#prefetching) and client-side navigation between routes. It is the primary way to navigate between routes in Next.js.
+`<Link>` is a React component that extends the HTML `<a>` element to provide [prefetching](../../../../app/getting-started/linking-and-navigating/index.md#prefetching) and client-side navigation between routes. It is the primary way to navigate between routes in Next.js.
 
 Basic usage:
 
@@ -100,7 +100,7 @@ export default function Home() {
 
 ### `scroll`[](#scroll)
 
-**Defaults to `true`.** The default scrolling behavior of `<Link>` in Next.js **is to maintain scroll position**, similar to how browsers handle back and forwards navigation. When you navigate to a new [Page](/docs/app/api-reference/file-conventions/page), scroll position will stay the same as long as the Page is visible in the viewport. However, if the Page is not visible in the viewport, Next.js will scroll to the top of the first Page element.
+**Defaults to `true`.** The default scrolling behavior of `<Link>` in Next.js **is to maintain scroll position**, similar to how browsers handle back and forwards navigation. When you navigate to a new [Page](../../../../app/api-reference/file-conventions/page/index.md), scroll position will stay the same as long as the Page is visible in the viewport. However, if the Page is not visible in the viewport, Next.js will scroll to the top of the first Page element.
 
 When `scroll = {false}`, Next.js will not attempt to scroll to the first Page element.
 
@@ -129,7 +129,7 @@ Prefetching happens when a `<Link />` component enters the user's viewport (init
 The following values can be passed to the `prefetch` prop:
 
 -   **`true` (default)**: The full route and its data will be prefetched.
--   `false`: Prefetching will not happen when entering the viewport, but will happen on hover. If you want to completely remove fetching on hover as well, consider using an `<a>` tag or [incrementally adopting](/docs/app/guides/migrating/app-router-migration) the App Router, which enables disabling prefetching on hover too.
+-   `false`: Prefetching will not happen when entering the viewport, but will happen on hover. If you want to completely remove fetching on hover as well, consider using an `<a>` tag or [incrementally adopting](../../../../app/guides/migrating/app-router-migration/index.md) the App Router, which enables disabling prefetching on hover too.
 
 pages/index.tsx
 
@@ -149,7 +149,7 @@ export default function Home() {
 
 ### `shallow`[](#shallow)
 
-Update the path of the current page without rerunning [`getStaticProps`](/docs/pages/building-your-application/data-fetching/get-static-props), [`getServerSideProps`](/docs/pages/building-your-application/data-fetching/get-server-side-props) or [`getInitialProps`](/docs/pages/api-reference/functions/get-initial-props). Defaults to `false`.
+Update the path of the current page without rerunning [`getStaticProps`](../../../building-your-application/data-fetching/get-static-props/index.md), [`getServerSideProps`](../../../building-your-application/data-fetching/get-server-side-props/index.md) or [`getInitialProps`](../../functions/get-initial-props/index.md). Defaults to `false`.
 
 pages/index.tsx
 
@@ -247,7 +247,7 @@ The following examples demonstrate how to use the `<Link>` component in differen
 
 ### Linking to dynamic route segments[](#linking-to-dynamic-route-segments-1)
 
-For [dynamic route segments](/docs/pages/building-your-application/routing/dynamic-routes#convention), it can be handy to use template literals to create the link's path.
+For [dynamic route segments](../../../building-your-application/routing/dynamic-routes/index.md#convention), it can be handy to use template literals to create the link's path.
 
 For example, you can generate a list of links to the dynamic route `pages/blog/[slug].js`
 
@@ -326,7 +326,7 @@ export default Home
 The above example has a link to:
 
 -   A predefined route: `/about?name=test`
--   A [dynamic route](/docs/pages/building-your-application/routing/dynamic-routes#convention): `/blog/my-post`
+-   A [dynamic route](../../../building-your-application/routing/dynamic-routes/index.md#convention): `/blog/my-post`
 
 You can use every property as defined in the [Node.js URL module documentation](https://nodejs.org/api/url.html#url_url_strings_and_url_objects).
 
@@ -413,7 +413,7 @@ This is a browser CSS property that offsets scroll-based positioning. It applies
 
 ### Prefetching links in Proxy[](#prefetching-links-in-proxy)
 
-It's common to use [Proxy](/docs/app/api-reference/file-conventions/proxy) for authentication or other purposes that involve rewriting the user to a different page. In order for the `<Link />` component to properly prefetch links with rewrites via Proxy, you need to tell Next.js both the URL to display and the URL to prefetch. This is required to avoid un-necessary fetches to proxy to know the correct route to prefetch.
+It's common to use [Proxy](../../../../app/api-reference/file-conventions/proxy/index.md) for authentication or other purposes that involve rewriting the user to a different page. In order for the `<Link />` component to properly prefetch links with rewrites via Proxy, you need to tell Next.js both the URL to display and the URL to prefetch. This is required to avoid un-necessary fetches to proxy to know the correct route to prefetch.
 
 For example, if you want to serve a `/dashboard` route that has authenticated and visitor views, you can add the following in your Proxy to redirect the user to the correct page:
 
@@ -459,7 +459,7 @@ export default function Home() {
 }
 ```
 
-> **Good to know**: If you're using [Dynamic Routes](/docs/pages/building-your-application/routing/dynamic-routes#convention), you'll need to adapt your `as` and `href` props. For example, if you have a Dynamic Route like `/dashboard/authed/[user]` that you want to present differently via proxy, you would write: `<Link href={{ pathname: '/dashboard/authed/[user]', query: { user: username } }} as="/dashboard/[user]">Profile</Link>`.
+> **Good to know**: If you're using [Dynamic Routes](../../../building-your-application/routing/dynamic-routes/index.md#convention), you'll need to adapt your `as` and `href` props. For example, if you have a Dynamic Route like `/dashboard/authed/[user]` that you want to present differently via proxy, you would write: `<Link href={{ pathname: '/dashboard/authed/[user]', query: { user: username } }} as="/dashboard/[user]">Profile</Link>`.
 
 ## Version history[](#version-history)
 
@@ -467,7 +467,7 @@ export default function Home() {
 | --- | --- |
 | `v15.4.0` | Add `auto` as an alias to the default `prefetch` behavior. |
 | `v15.3.0` | Add `onNavigate` API |
-| `v13.0.0` | No longer requires a child `<a>` tag. A [codemod](/docs/app/guides/upgrading/codemods#remove-a-tags-from-link-components) is provided to automatically update your codebase. |
+| `v13.0.0` | No longer requires a child `<a>` tag. A [codemod](../../../../app/guides/upgrading/codemods/index.md#remove-a-tags-from-link-components) is provided to automatically update your codebase. |
 | `v10.0.0` | `href` props pointing to a dynamic route are automatically resolved and no longer require an `as` prop. |
 | `v8.0.0` | Improved prefetching performance. |
 | `v1.0.0` | `next/link` introduced. |

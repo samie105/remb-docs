@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:43.166Z"
 content_hash: "eb1fd92300bbaa2e69b7041ce4a9d662410843a26bdd03aec8aad8071c19f2cc"
 menu_path: ["CLI Commands"]
 section_path: []
-nav_prev: {"path": "../configuration-reference/index.md", "title": "Configuration Reference"}
-nav_next: {"path": "../../guides/imports/index.md", "title": "Imports reference"}
+nav_prev: {"path": "astro/en/reference/configuration-reference/index.md", "title": "Configuration Reference"}
+nav_next: {"path": "astro/en/guides/imports/index.md", "title": "Imports reference"}
 ---
 
 # CLI Commands
@@ -74,9 +74,9 @@ Flags                 --port  Specify which port to run on. Defaults to 4321.   
 
 You can also use scripts in `package.json` for shorter versions of these commands. Using a script allows you to use the same commands that you may be familiar with from other projects, such as `npm run build`.
 
-The following scripts for the most common `astro` commands (`astro dev`, `astro build`, and `astro preview`) are added for you automatically when you create a project using [the `create astro` wizard](/en/install-and-setup/).
+The following scripts for the most common `astro` commands (`astro dev`, `astro build`, and `astro preview`) are added for you automatically when you create a project using [the `create astro` wizard](../../install-and-setup/index.md).
 
-When you follow the instructions to [install Astro manually](/en/install-and-setup/#manual-setup), you are instructed to add these scripts yourself. You can also add more scripts to this list manually for any commands you use frequently.
+When you follow the instructions to [install Astro manually](../../install-and-setup/index.md#manual-setup), you are instructed to add these scripts yourself. You can also add more scripts to this list manually for any commands you use frequently.
 
 ```
 {  "scripts": {    "dev": "astro dev",    "build": "astro build",    "preview": "astro preview"  }}
@@ -109,7 +109,7 @@ The following hotkeys can be used in the terminal where the Astro development se
 
 [Section titled “astro build”](#astro-build)
 
-Builds your site for deployment. By default, this will generate static files and place them in a `dist/` directory. If any routes are [rendered on demand](/en/guides/on-demand-rendering/), this will generate the necessary server files to serve your site.
+Builds your site for deployment. By default, this will generate static files and place them in a `dist/` directory. If any routes are [rendered on demand](../../guides/on-demand-rendering/index.md), this will generate the necessary server files to serve your site.
 
 ### Flags
 
@@ -129,7 +129,7 @@ Outputs a development-based build similar to code transformed in `astro dev`. Th
 
 Starts a local server to serve the contents of your static directory (`dist/` by default) created by running `astro build`.
 
-This command allows you to preview your site locally [after building](#astro-build) to catch any errors in your build output before deploying it. It is not designed to be run in production. For help with production hosting, check out our guide on [Deploying an Astro Website](/en/guides/deploy/).
+This command allows you to preview your site locally [after building](#astro-build) to catch any errors in your build output before deploying it. It is not designed to be run in production. For help with production hosting, check out our guide on [Deploying an Astro Website](../../guides/deploy/index.md).
 
 The following hotkeys can be used in the terminal where the Astro preview server is running:
 
@@ -196,7 +196,7 @@ Specifies not to clear the output between checks when in watch mode.
 
 Specifies not to run `astro sync` before checking the project.
 
-Read more about [type checking in Astro](/en/guides/typescript/#type-checking).
+Read more about [type checking in Astro](../../guides/typescript/index.md#type-checking).
 
 ## `astro sync`
 
@@ -204,18 +204,18 @@ Read more about [type checking in Astro](/en/guides/typescript/#type-checking).
 
 **Added in:** `astro@2.0.0`
 
-Generates TypeScript types for all Astro modules. This sets up a [`.astro/types.d.ts` file](/en/guides/typescript/#setup) for type inferencing, and defines modules for features that rely on generated types:
+Generates TypeScript types for all Astro modules. This sets up a [`.astro/types.d.ts` file](../../guides/typescript/index.md#setup) for type inferencing, and defines modules for features that rely on generated types:
 
-*   The `astro:content` module for the [Content Collections API](/en/guides/content-collections/).
-*   The `astro:db` module for [Astro DB](/en/guides/astro-db/).
-*   The `astro:env` module for [Astro Env](/en/guides/environment-variables/).
-*   The `astro:actions` module for [Astro Actions](/en/guides/actions/)
+*   The `astro:content` module for the [Content Collections API](../../guides/content-collections/index.md).
+*   The `astro:db` module for [Astro DB](../../guides/astro-db/index.md).
+*   The `astro:env` module for [Astro Env](../../guides/environment-variables/index.md).
+*   The `astro:actions` module for [Astro Actions](../../guides/actions/index.md)
 
 ## `astro add`
 
 [Section titled “astro add”](#astro-add)
 
-Adds an integration to your configuration. Read more in [the integrations guide](/en/guides/integrations/#automatic-integration-setup).
+Adds an integration to your configuration. Read more in [the integrations guide](../../guides/integrations/index.md#automatic-integration-setup).
 
 ## `astro docs`
 
@@ -344,7 +344,7 @@ Generates a key to encrypt props passed to server islands.
 astro create-key
 ```
 
-Set this key as the `ASTRO_KEY` environment variable (e.g. in a `.env` file) and include it in your CI/CD or host’s build settings when you need [a constant encryption key for your server islands](/en/guides/server-islands/#reusing-the-encryption-key) for situations like rolling deployments, multi-region hosting or a CDN that caches pages containing server islands.
+Set this key as the `ASTRO_KEY` environment variable (e.g. in a `.env` file) and include it in your CI/CD or host’s build settings when you need [a constant encryption key for your server islands](../../guides/server-islands/index.md#reusing-the-encryption-key) for situations like rolling deployments, multi-region hosting or a CDN that caches pages containing server islands.
 
 ## Common flags
 
@@ -386,7 +386,7 @@ Clear the content layer cache, forcing a full rebuild.
 
 **Added in:** `astro@5.0.0`
 
-Configures the [`mode`](/en/reference/programmatic-reference/#astroinlineconfigmode) inline config for your project.
+Configures the [`mode`](../programmatic-reference/index.md#astroinlineconfigmode) inline config for your project.
 
 ### `--outDir <path>`
 
@@ -394,13 +394,13 @@ Configures the [`mode`](/en/reference/programmatic-reference/#astroinlineconfigm
 
 **Added in:** `astro@3.3.0`
 
-Configures the [`outDir`](/en/reference/configuration-reference/#outdir) for your project. Passing this flag will override the `outDir` value in your `astro.config.mjs` file, if one exists.
+Configures the [`outDir`](../configuration-reference/index.md#outdir) for your project. Passing this flag will override the `outDir` value in your `astro.config.mjs` file, if one exists.
 
 ### `--site <url>`
 
 [Section titled “--site <url>”](#--site-url)
 
-Configures the [`site`](/en/reference/configuration-reference/#site) for your project. Passing this flag will override the `site` value in your `astro.config.mjs` file, if one exists.
+Configures the [`site`](../configuration-reference/index.md#site) for your project. Passing this flag will override the `site` value in your `astro.config.mjs` file, if one exists.
 
 ### `--base <pathname>`
 
@@ -408,7 +408,7 @@ Configures the [`site`](/en/reference/configuration-reference/#site) for your pr
 
 **Added in:** `astro@1.4.1`
 
-Configures the [`base`](/en/reference/configuration-reference/#base) for your project. Passing this flag will override the `base` value in your `astro.config.mjs` file, if one exists.
+Configures the [`base`](../configuration-reference/index.md#base) for your project. Passing this flag will override the `base` value in your `astro.config.mjs` file, if one exists.
 
 ### `--port <number>`
 
@@ -471,4 +471,4 @@ Prints the Astro version number and exits.
 
 Prints the help message and exits.
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

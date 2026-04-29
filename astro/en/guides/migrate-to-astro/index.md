@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:40:33.795Z"
 content_hash: "478d02bf80824e5a8b804f8316fb2de00f3e59ccd19888d75d75ed3465f1651b"
 menu_path: ["Migrate an existing project to Astro"]
 section_path: []
-nav_prev: {"path": "../troubleshooting/index.md", "title": "Troubleshooting"}
-nav_next: {"path": "from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
+nav_prev: {"path": "astro/en/guides/troubleshooting/index.md", "title": "Troubleshooting"}
+nav_next: {"path": "astro/en/guides/migrate-to-astro/from-create-react-app/index.md", "title": "Migrating from Create React App (CRA)"}
 ---
 
 # Migrate an existing project to Astro
@@ -23,59 +23,59 @@ nav_next: {"path": "from-create-react-app/index.md", "title": "Migrating from Cr
 
 *   ![](/logos/create-react-app.svg)
     
-    ### [Create React App](/en/guides/migrate-to-astro/from-create-react-app/)
+    ### [Create React App](from-create-react-app/index.md)
     
 *   ![](/logos/docusaurus.svg)
     
-    ### [Docusaurus](/en/guides/migrate-to-astro/from-docusaurus/)
+    ### [Docusaurus](from-docusaurus/index.md)
     
 *   ![](/logos/eleventy.svg)
     
-    ### [Eleventy](/en/guides/migrate-to-astro/from-eleventy/)
+    ### [Eleventy](from-eleventy/index.md)
     
 *   ![](/logos/gatsby.svg)
     
-    ### [Gatsby](/en/guides/migrate-to-astro/from-gatsby/)
+    ### [Gatsby](from-gatsby/index.md)
     
 *   ![](/logos/gitbook.svg)
     
-    ### [GitBook](/en/guides/migrate-to-astro/from-gitbook/)
+    ### [GitBook](from-gitbook/index.md)
     
 *   ![](/logos/gridsome.svg)
     
-    ### [Gridsome](/en/guides/migrate-to-astro/from-gridsome/)
+    ### [Gridsome](from-gridsome/index.md)
     
 *   ![](/logos/hugo.svg)
     
-    ### [Hugo](/en/guides/migrate-to-astro/from-hugo/)
+    ### [Hugo](from-hugo/index.md)
     
 *   ![](/logos/jekyll.png)
     
-    ### [Jekyll](/en/guides/migrate-to-astro/from-jekyll/)
+    ### [Jekyll](from-jekyll/index.md)
     
 *   ![](/logos/nextjs.svg)
     
-    ### [Next.js](/en/guides/migrate-to-astro/from-nextjs/)
+    ### [Next.js](from-nextjs/index.md)
     
 *   ![](/logos/nuxtjs.svg)
     
-    ### [NuxtJS](/en/guides/migrate-to-astro/from-nuxtjs/)
+    ### [NuxtJS](from-nuxtjs/index.md)
     
 *   ![](/logos/pelican.svg)
     
-    ### [Pelican](/en/guides/migrate-to-astro/from-pelican/)
+    ### [Pelican](from-pelican/index.md)
     
 *   ![](/logos/sveltekit.svg)
     
-    ### [SvelteKit](/en/guides/migrate-to-astro/from-sveltekit/)
+    ### [SvelteKit](from-sveltekit/index.md)
     
 *   ![](/logos/vuepress.png)
     
-    ### [VuePress](/en/guides/migrate-to-astro/from-vuepress/)
+    ### [VuePress](from-vuepress/index.md)
     
 *   ![](/logos/wordpress.svg)
     
-    ### [WordPress](/en/guides/migrate-to-astro/from-wordpress/)
+    ### [WordPress](from-wordpress/index.md)
     
 
 Note that many of these pages are **stubs**: they’re collections of resources waiting for your contribution!
@@ -90,22 +90,22 @@ Migrating may be less work than you think!
 
 Depending on your existing project, you may be able to use your existing:
 
-*   [UI framework components](/en/guides/framework-components/) directly in Astro.
+*   [UI framework components](../framework-components/index.md) directly in Astro.
     
-*   [CSS stylesheets or libraries](/en/guides/styling/) including Tailwind.
+*   [CSS stylesheets or libraries](../styling/index.md) including Tailwind.
     
-*   [Markdown/MDX files](/en/guides/markdown-content/), configured using your existing [remark and rehype plugins](/en/guides/markdown-content/#markdown-plugins).
+*   [Markdown/MDX files](../markdown-content/index.md), configured using your existing [remark and rehype plugins](../markdown-content/index.md#markdown-plugins).
     
-*   [Content from a CMS](/en/guides/cms/) through an integration or API.
+*   [Content from a CMS](../cms/index.md) through an integration or API.
     
 
 ## Which projects can I convert to Astro?
 
 [Section titled “Which projects can I convert to Astro?”](#which-projects-can-i-convert-to-astro)
 
-[Many existing sites can be built with Astro](/en/concepts/why-astro/). Astro is ideally suited for your existing content-based sites like blogs, landing pages, marketing sites and portfolios. Astro integrates with several popular headless CMSes, and allows you to connect eCommerce shop carts.
+[Many existing sites can be built with Astro](../../concepts/why-astro/index.md). Astro is ideally suited for your existing content-based sites like blogs, landing pages, marketing sites and portfolios. Astro integrates with several popular headless CMSes, and allows you to connect eCommerce shop carts.
 
-Astro allows you have a fully statically-generated website, a dynamic app with routes rendered on demand, or a combination of both with [complete control over your project rendering](/en/guides/on-demand-rendering/), making it a great replacement for SSGs or for sites that need to fetch some page data on the fly.
+Astro allows you have a fully statically-generated website, a dynamic app with routes rendered on demand, or a combination of both with [complete control over your project rendering](../on-demand-rendering/index.md), making it a great replacement for SSGs or for sites that need to fetch some page data on the fly.
 
 ## How will my project design change?
 
@@ -113,11 +113,11 @@ Astro allows you have a fully statically-generated website, a dynamic app with r
 
 Depending on your existing project, you may need to think differently about:
 
-*   Designing in [Astro Islands](/en/concepts/islands/#what-is-an-island) to avoid sending unnecessary JavaScript to the browser.
+*   Designing in [Astro Islands](../../concepts/islands/index.md#what-is-an-island) to avoid sending unnecessary JavaScript to the browser.
     
-*   Providing client-side interactivity with [client-side `<script>` tags](/en/guides/client-side-scripts/) or [UI framework components](/en/guides/framework-components/).
+*   Providing client-side interactivity with [client-side `<script>` tags](../client-side-scripts/index.md) or [UI framework components](../framework-components/index.md).
     
 *   Managing [shared state](/en/recipes/sharing-state-islands/) with Nano Stores or local storage instead of app-wide hooks or wrappers.
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

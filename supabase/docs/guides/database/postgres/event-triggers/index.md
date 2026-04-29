@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:33.369Z"
 content_hash: "dda6005c8313f3a15a427ef1257d444add4ff4ebde29fc5bcba0fc66a0825dba"
 menu_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing event triggers","Managing event triggers"]
 section_path: ["Database","Database","Working with your database (intermediate)","Working with your database (intermediate)","Managing event triggers","Managing event triggers"]
-nav_prev: {"path": "../enums/index.md", "title": "Managing Enums in Postgres"}
-nav_next: {"path": "../first-row-in-group/index.md", "title": "Select first row for each group in Postgres"}
+nav_prev: {"path": "supabase/docs/guides/database/postgres/enums/index.md", "title": "Managing Enums in Postgres"}
+nav_next: {"path": "supabase/docs/guides/database/postgres/first-row-in-group/index.md", "title": "Select first row for each group in Postgres"}
 ---
 
 # 
@@ -23,13 +23,13 @@ Automatically execute SQL on database events.
 
 * * *
 
-In Postgres, an [event trigger](https://www.postgresql.org/docs/current/event-triggers.html) is similar to a [trigger](/docs/guides/database/postgres/triggers), except that it is triggered by database level events (and is usually reserved for [superusers](/docs/guides/database/postgres/roles-superuser))
+In Postgres, an [event trigger](https://www.postgresql.org/docs/current/event-triggers.html) is similar to a [trigger](../triggers/index.md), except that it is triggered by database level events (and is usually reserved for [superusers](../roles-superuser/index.md))
 
 With our `Supautils` extension (installed automatically for all Supabase projects), the `postgres` user has the ability to create and manage event triggers.
 
 Some use cases for event triggers are:
 
-*   Capturing Data Definition Language (DDL) changes - these are changes to your database schema (though the [pgAudit](/docs/guides/database/extensions/pgaudit) extension provides a more complete solution)
+*   Capturing Data Definition Language (DDL) changes - these are changes to your database schema (though the [pgAudit](../../extensions/pgaudit/index.md) extension provides a more complete solution)
 *   Enforcing/monitoring/preventing actions - such as preventing tables from being dropped in Production or enforcing RLS on all new tables
 
 The guide covers two example event triggers:
@@ -41,7 +41,7 @@ The guide covers two example event triggers:
 
 Only the `postgres` user can create event triggers, so make sure you are authenticated as them. As with triggers, event triggers consist of 2 parts
 
-1.  A [Function](/docs/guides/database/functions) which will be executed when the triggering event occurs
+1.  A [Function](../../functions/index.md) which will be executed when the triggering event occurs
 2.  The actual Event Trigger object, with parameters around when the trigger should be run
 
 ### Example trigger function - prevent dropping tables[#](#example-trigger-function---prevent-dropping-tables)
@@ -54,7 +54,7 @@ This example protects any table from being dropped. You can override it by tempo
 
 ### Example trigger function - auto enable Row Level Security[#](#example-trigger-function---auto-enable-row-level-security)
 
-See how to [auto enable RLS for new tables](/docs/guides/database/postgres/row-level-security#auto-enable-rls-for-new-tables).
+See how to [auto enable RLS for new tables](../row-level-security/index.md#auto-enable-rls-for-new-tables).
 
 ### Event trigger Functions and firing events[#](#event-trigger-functions-and-firing-events)
 

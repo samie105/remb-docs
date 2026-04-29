@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:38:55.296Z"
 content_hash: "df9583bf85984c6f85741cecb9f8d4f3f477f8a9d014d08a96cf176d0af43527"
 menu_path: ["Adding Interactivity"]
 section_path: []
-nav_prev: {"path": "../understanding-your-ui-as-a-tree/index.md", "title": "Understanding Your UI as a Tree"}
-nav_next: {"path": "../responding-to-events/index.md", "title": "Responding to Events"}
+nav_prev: {"path": "react/learn/understanding-your-ui-as-a-tree/index.md", "title": "Understanding Your UI as a Tree"}
+nav_next: {"path": "react/learn/responding-to-events/index.md", "title": "Responding to Events"}
 ---
 
 Some things on the screen update in response to user input. For example, clicking an image gallery switches the active image. In React, data that changes over time is called _state._ You can add state to any component, and update it as needed. In this chapter, you’ll learn how to write components that handle interactions, update their state, and display different output over time.

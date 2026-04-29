@@ -10,8 +10,8 @@ content_hash: "43d7ac3b9f0e2793a856db9c0ff4bd4493381614181c378788c873d1f6eaf71f"
 menu_path: ["Drizzle ORM - Empty array as a default value"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../decrementing-a-value/index.md", "title": "Drizzle ORM - SQL Decrement value"}
-nav_next: {"path": "../full-text-search-with-generated-columns/index.md", "title": "Drizzle ORM - Full-text search with Generated Columns"}
+nav_prev: {"path": "drizzle/docs/guides/decrementing-a-value/index.md", "title": "Drizzle ORM - SQL Decrement value"}
+nav_next: {"path": "drizzle/docs/guides/full-text-search-with-generated-columns/index.md", "title": "Drizzle ORM - Full-text search with Generated Columns"}
 ---
 
 Drizzle | Empty array as a default value

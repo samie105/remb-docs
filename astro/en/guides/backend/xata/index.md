@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:50.550Z"
 content_hash: "01b431150205a1a28c5c1afb8e894247dbefdbc1453b04fd8bbdcd316c855512"
 menu_path: ["Xata & Astro"]
 section_path: []
-nav_prev: {"path": "../turso/index.md", "title": "Turso & Astro"}
-nav_next: {"path": "../../media/index.md", "title": "Image and video hosting with Astro"}
+nav_prev: {"path": "astro/en/guides/backend/turso/index.md", "title": "Turso & Astro"}
+nav_next: {"path": "astro/en/guides/media/index.md", "title": "Image and video hosting with Astro"}
 ---
 
 # Xata & Astro
@@ -97,39 +97,39 @@ It’s important to note the SDK needs to be regenerated every time your schema 
 
 *   ![](/logos/appwriteio.svg)
     
-    ### [Appwrite](/en/guides/backend/appwrite/)
+    ### [Appwrite](../appwrite/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/backend/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/neon.svg)
     
-    ### [Neon](/en/guides/backend/neon/)
+    ### [Neon](../neon/index.md)
     
 *   ![](/logos/prisma-postgres.svg)
     
-    ### [Prisma Postgres](/en/guides/backend/prisma-postgres/)
+    ### [Prisma Postgres](../prisma-postgres/index.md)
     
 *   ![](/logos/scalekit.svg)
     
-    ### [Scalekit](/en/guides/backend/scalekit/)
+    ### [Scalekit](../scalekit/index.md)
     
 *   ![](/logos/sentry.svg)
     
-    ### [Sentry](/en/guides/backend/sentry/)
+    ### [Sentry](../sentry/index.md)
     
 *   ![](/logos/supabase.svg)
     
-    ### [Supabase](/en/guides/backend/supabase/)
+    ### [Supabase](../supabase/index.md)
     
 *   ![](/logos/turso.svg)
     
-    ### [Turso](/en/guides/backend/turso/)
+    ### [Turso](../turso/index.md)
     
 *   ![](/logos/xata.svg)
     
-    ### [Xata](/en/guides/backend/xata/)
+    ### [Xata](index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

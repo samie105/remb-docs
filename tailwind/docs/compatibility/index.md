@@ -10,8 +10,8 @@ content_hash: "ed7dacd05cf67783a406d56c5a897aa7029d6abb3d6e76193633cb6ccb754771"
 menu_path: ["Compatibility"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../editor-setup/index.md", "title": "Editor setup"}
-nav_next: {"path": "../upgrade-guide/index.md", "title": "Upgrade guide"}
+nav_prev: {"path": "tailwind/docs/editor-setup/index.md", "title": "Editor setup"}
+nav_next: {"path": "tailwind/docs/upgrade-guide/index.md", "title": "Upgrade guide"}
 ---
 
 Learn about browser support and compatibility with other tooling.

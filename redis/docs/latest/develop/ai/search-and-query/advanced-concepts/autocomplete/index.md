@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:09:15.352Z"
 content_hash: "1cde7c8439b742388bcd9ddcb2793e46d1cfc42b39775eb9b157523812f47e7b"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        Autocomplete with Redis","→","Autocomplete with Redis"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Search concepts","→","Search concepts","→\n      \n        Autocomplete with Redis","→","Autocomplete with Redis"]
-nav_prev: {"path": "../aggregations/index.md", "title": "Aggregations"}
-nav_next: {"path": "../../best-practices/index.md", "title": "Best practices"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/advanced-concepts/aggregations/index.md", "title": "Aggregations"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/best-practices/index.md", "title": "Best practices"}
 ---
 
 # Autocomplete with Redis

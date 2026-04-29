@@ -11,15 +11,15 @@ menu_path: ["useParams"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../use-link-status/index.md", "title": "useLinkStatus"}
-nav_next: {"path": "../use-pathname/index.md", "title": "usePathname"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/functions/use-link-status/index.md", "title": "useLinkStatus"}
+nav_next: {"path": "nextjs/docs/app/api-reference/functions/use-pathname/index.md", "title": "usePathname"}
 ---
 
 # useParams
 
 Last updated April 23, 2026
 
-`useParams` is a **Client Component** hook that lets you read a route's [dynamic params](/docs/app/api-reference/file-conventions/dynamic-routes) filled in by the current URL.
+`useParams` is a **Client Component** hook that lets you read a route's [dynamic params](../../file-conventions/dynamic-routes/index.md) filled in by the current URL.
 
 app/example-client-component.tsx
 
@@ -52,11 +52,11 @@ const params = useParams()
 
 ## Returns[](#returns)
 
-`useParams` returns an object containing the current route's filled in [dynamic parameters](/docs/app/api-reference/file-conventions/dynamic-routes).
+`useParams` returns an object containing the current route's filled in [dynamic parameters](../../file-conventions/dynamic-routes/index.md).
 
 -   Each property in the object is an active dynamic segment.
 -   The properties name is the segment's name, and the properties value is what the segment is filled in with.
--   The properties value will either be a `string` or array of `string`'s depending on the [type of dynamic segment](/docs/app/api-reference/file-conventions/dynamic-routes).
+-   The properties value will either be a `string` or array of `string`'s depending on the [type of dynamic segment](../../file-conventions/dynamic-routes/index.md).
 -   If the route contains no dynamic parameters, `useParams` returns an empty object.
 -   If used in Pages Router, `useParams` will return `null` on the initial render and updates with properties following the rules above once the router is ready.
 

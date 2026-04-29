@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:59:55.044Z"
 content_hash: "e5f5a9c63d47af61176a372b29f32a11c4f847f625a9c5a68b863de25f12f537"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk IOPS","Disk IOPS"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Disk IOPS","Disk IOPS"]
-nav_prev: {"path": "../custom-domains/index.md", "title": "Manage Custom Domain usage"}
-nav_next: {"path": "../disk-size/index.md", "title": "Manage Disk size usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/custom-domains/index.md", "title": "Manage Custom Domain usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/disk-size/index.md", "title": "Manage Disk size usage"}
 ---
 
 # 
@@ -23,11 +23,11 @@ Manage Disk IOPS usage
 
 Each database has a dedicated disk, and you are charged for its provisioned disk IOPS. However, unless you explicitly opt in for additional IOPS, no charges apply.
 
-Refer to our [disk guide](/docs/guides/platform/compute-and-disk#disk) for details on how disk IOPS, disk throughput, disk size, disk type and compute size interact, along with their limitations and constraints.
+Refer to our [disk guide](../../compute-and-disk/index.md#disk) for details on how disk IOPS, disk throughput, disk size, disk type and compute size interact, along with their limitations and constraints.
 
-Disk IOPS Hours are **not** covered by the [Spend Cap](/docs/guides/platform/cost-control#spend-cap).
+Disk IOPS Hours are **not** covered by the [Spend Cap](../../cost-control/index.md#spend-cap).
 
-Launching a Read Replica creates an additional database with its own dedicated disk. Read Replicas inherit the primary database's disk IOPS settings. You are charged for the provisioned IOPS of the Read Replica. Refer to [Manage Read Replica usage](/docs/guides/platform/manage-your-usage/read-replicas) for details on billing.
+Launching a Read Replica creates an additional database with its own dedicated disk. Read Replicas inherit the primary database's disk IOPS settings. You are charged for the provisioned IOPS of the Read Replica. Refer to [Manage Read Replica usage](../read-replicas/index.md) for details on billing.
 
 ## How charges are calculated[#](#how-charges-are-calculated)
 
@@ -39,7 +39,7 @@ Usage is shown as "Disk IOPS-Hrs" on your invoice.
 
 ## Pricing[#](#pricing)
 
-Pricing depends on the [disk type](/docs/guides/platform/compute-and-disk#disk-types), with type gp3 being the default.
+Pricing depends on the [disk type](../../compute-and-disk/index.md#disk-types), with type gp3 being the default.
 
 ### General purpose disks (gp3)[#](#general-purpose-disks-gp3)
 

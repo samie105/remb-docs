@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:32:18.632Z"
 content_hash: "6a7c330701f58a6e839169853f6111d95075c2c6c9365543af73b4c1bab49fbc"
 menu_path: ["Quick Start"]
 section_path: []
-nav_next: {"path": "tutorial-tic-tac-toe/index.md", "title": "Tutorial: Tic-Tac-Toe"}
+nav_next: {"path": "react/learn/tutorial-tic-tac-toe/index.md", "title": "Tutorial: Tic-Tac-Toe"}
 ---
 
 Welcome to the React documentation! This page will give you an introduction to 80% of the React concepts that you will use on a daily basis.

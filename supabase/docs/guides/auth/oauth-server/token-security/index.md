@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:29.960Z"
 content_hash: "49a772e74ed4b195b58e4724822ad68d8d160bb9e12c2e2027b13757f164bccc"
 menu_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Token Security & RLS","Token Security & RLS"]
 section_path: ["Auth","Auth","OAuth 2.1 Server","OAuth 2.1 Server","Token Security & RLS","Token Security & RLS"]
-nav_prev: {"path": "../oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
-nav_next: {"path": "../../password-security/index.md", "title": "Password security"}
+nav_prev: {"path": "supabase/docs/guides/auth/oauth-server/oauth-flows/index.md", "title": "OAuth 2.1 Flows"}
+nav_next: {"path": "supabase/docs/guides/auth/password-security/index.md", "title": "Password security"}
 ---
 
 # 
@@ -105,7 +105,7 @@ You have a web app, mobile app, and third-party integrations:
 
 ## Custom access token hooks[#](#custom-access-token-hooks)
 
-[Custom Access Token Hooks](/docs/guides/auth/auth-hooks/custom-access-token-hook) work with OAuth tokens, allowing you to inject custom claims based on the OAuth client. This is particularly useful for customizing standard JWT claims like `audience` (`aud`) or adding client-specific metadata.
+[Custom Access Token Hooks](../../auth-hooks/custom-access-token-hook/index.md) work with OAuth tokens, allowing you to inject custom claims based on the OAuth client. This is particularly useful for customizing standard JWT claims like `audience` (`aud`) or adding client-specific metadata.
 
 Custom Access Token Hooks are triggered for **all** token issuance. Use `client_id` or `authentication_method` (`oauth_provider/authorization_code` for OAuth flows) to differentiate OAuth from regular authentication.
 
@@ -212,7 +212,7 @@ Or use the Supabase Dashboard's [RLS policy tester](/dashboard/project/_/auth/po
 
 ## Next steps[#](#next-steps)
 
-*   [Learn about JWTs](/docs/guides/auth/jwts) - Deep dive into Supabase token structure
+*   [Learn about JWTs](../../jwts/index.md) - Deep dive into Supabase token structure
 *   [Row Level Security](/docs/guides/auth/row-level-security) - Complete RLS guide
-*   [Custom Access Token Hooks](/docs/guides/auth/auth-hooks/custom-access-token-hook) - Inject custom claims
-*   [OAuth flows](/docs/guides/auth/oauth-server/oauth-flows) - Understand token issuance
+*   [Custom Access Token Hooks](../../auth-hooks/custom-access-token-hook/index.md) - Inject custom claims
+*   [OAuth flows](../oauth-flows/index.md) - Understand token issuance

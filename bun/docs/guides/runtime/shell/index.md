@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:53:15.082Z"
 content_hash: "109610d2542791cafdf834cea268190e4a3356cf566ecef72626879ba48bcf89"
 menu_path: ["Run a Shell Command"]
 section_path: []
-nav_prev: {"path": "../set-env/index.md", "title": "Set environment variables"}
-nav_next: {"path": "../timezone/index.md", "title": "Set a time zone in Bun"}
+nav_prev: {"path": "bun/docs/guides/runtime/set-env/index.md", "title": "Set environment variables"}
+nav_next: {"path": "bun/docs/guides/runtime/timezone/index.md", "title": "Set a time zone in Bun"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../timezone/index.md", "title": "Set a time zone in Bun"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 Bun Shell is a cross-platform bash-like shell built in to Bun. It runs shell commands in JavaScript and TypeScript. To get started, import the `$` function from the `bun` package and use it to run shell commands.
 
@@ -74,7 +74,7 @@ for await (const line of $`ls -l`.lines()) {
 
 * * *
 
-See [Docs > API > Shell](/docs/runtime/shell) for complete documentation.
+See [Docs > API > Shell](../../../runtime/shell/index.md) for complete documentation.
 
 Was this page helpful?
 
@@ -86,10 +86,10 @@ Get the process uptime in nanoseconds
 
 Previous
 
-](/docs/guides/process/nanoseconds)[
+](../../process/nanoseconds/index.md)[
 
 Set a time zone in Bun
 
 Next
 
-](/docs/guides/runtime/timezone)
+](../timezone/index.md)

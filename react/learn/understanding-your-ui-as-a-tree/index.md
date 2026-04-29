@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:48.790Z"
 content_hash: "8ee2bc79c422f5766e95dfd9064ce465ae506e63cb2add82527aa99141088a50"
 menu_path: ["Understanding Your UI as a Tree"]
 section_path: []
-nav_prev: {"path": "../keeping-components-pure/index.md", "title": "Keeping Components Pure"}
-nav_next: {"path": "../adding-interactivity/index.md", "title": "Adding Interactivity"}
+nav_prev: {"path": "react/learn/keeping-components-pure/index.md", "title": "Keeping Components Pure"}
+nav_next: {"path": "react/learn/adding-interactivity/index.md", "title": "Adding Interactivity"}
 ---
 
 Your React app is taking shape with many components being nested within each other. How does React keep track of your app’s component structure?

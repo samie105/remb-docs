@@ -12,8 +12,8 @@ section_path: []
 version: "latest"
 tab_variants: ["pnpm","npm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../custom-server/index.md", "title": "How to set up a custom server in Next.js"}
-nav_next: {"path": "../debugging/index.md", "title": "How to use debugging tools with Next.js"}
+nav_prev: {"path": "nextjs/docs/app/guides/custom-server/index.md", "title": "How to set up a custom server in Next.js"}
+nav_next: {"path": "nextjs/docs/app/guides/debugging/index.md", "title": "How to use debugging tools with Next.js"}
 ---
 
 # How to think about data security in Next.js
@@ -36,7 +36,7 @@ We recommend choosing one data fetching approach and avoiding mixing them. This 
 
 ### External HTTP APIs[](#external-http-apis)
 
-You should follow a **Zero Trust** model when adopting Server Components in an existing project. You can continue calling your existing API endpoints such as REST or GraphQL from Server Components using [`fetch`](/docs/app/api-reference/functions/fetch), just as you would in Client Components.
+You should follow a **Zero Trust** model when adopting Server Components in an existing project. You can continue calling your existing API endpoints such as REST or GraphQL from Server Components using [`fetch`](../../api-reference/functions/fetch/index.md), just as you would in Client Components.
 
 app/page.tsx
 
@@ -243,7 +243,7 @@ To prevent accidental exposure of private data to the client, you can use React 
 -   [`experimental_taintObjectReference`](https://react.dev/reference/react/experimental_taintObjectReference) for data objects.
 -   [`experimental_taintUniqueValue`](https://react.dev/reference/react/experimental_taintUniqueValue) for specific values.
 
-You can enable usage in your Next.js app with the [`experimental.taint`](/docs/app/api-reference/config/next-config-js/taint) option in `next.config.js`:
+You can enable usage in your Next.js app with the [`experimental.taint`](../../api-reference/config/next-config-js/taint/index.md) option in `next.config.js`:
 
 next.config.js
 
@@ -259,7 +259,7 @@ This prevents the tainted objects or values from being passed to the client. How
 
 > **Good to know:**
 > 
-> -   By default, environment variables are only available on the Server. Next.js exposes any environment variable prefixed with `NEXT_PUBLIC_` to the client. [Learn more](/docs/app/guides/environment-variables).
+> -   By default, environment variables are only available on the Server. Next.js exposes any environment variable prefixed with `NEXT_PUBLIC_` to the client. [Learn more](../environment-variables/index.md).
 > -   Functions and classes are already blocked from being passed to Client Components by default.
 
 ### Preventing client-side execution of server-only code[](#preventing-client-side-execution-of-server-only-code)
@@ -422,7 +422,7 @@ export async function deletePost(postId: string) {
 }
 ```
 
-Learn more about [Authentication](/docs/app/guides/authentication) in Next.js.
+Learn more about [Authentication](../authentication/index.md) in Next.js.
 
 ### Using a Data Access Layer for mutations[](#using-a-data-access-layer-for-mutations)
 
@@ -511,7 +511,7 @@ export async function updateUserSafe(data: FormData) {
 
 ### Rate limiting[](#rate-limiting)
 
-For expensive operations (sending emails, writing to a database), consider adding rate limiting to prevent abuse. See the [Rate limiting](/docs/app/guides/backend-for-frontend#rate-limiting) example in the Backend for Frontend guide.
+For expensive operations (sending emails, writing to a database), consider adding rate limiting to prevent abuse. See the [Rate limiting](../backend-for-frontend/index.md#rate-limiting) example in the Backend for Frontend guide.
 
 ### Closures and encryption[](#closures-and-encryption)
 
@@ -559,7 +559,7 @@ The key must be a base64-encoded value whose decoded length matches a valid AES 
 openssl rand -base64 32
 ```
 
-This is an advanced use case where consistent encryption behavior across multiple deployments is critical for your application. Follow standard security practices such as key rotation and signing. See the [Self-Hosting guide](/docs/app/guides/self-hosting#server-functions-encryption-key) for deployment-specific considerations.
+This is an advanced use case where consistent encryption behavior across multiple deployments is critical for your application. Follow standard security practices such as key rotation and signing. See the [Self-Hosting guide](../self-hosting/index.md#server-functions-encryption-key) for deployment-specific considerations.
 
 ### Allowed origins (advanced)[](#allowed-origins-advanced)
 
@@ -569,7 +569,7 @@ Behind the scenes, Server Actions use the `POST` method, and only this HTTP meth
 
 As an additional protection, Server Actions in Next.js also compare the [Origin header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin) to the [Host header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host) (or `X-Forwarded-Host`). If these don't match, the request will be aborted. In other words, Server Actions can only be invoked on the same host as the page that hosts it.
 
-For large applications that use reverse proxies or multi-layered backend architectures (where the server API differs from the production domain), it's recommended to use the configuration option [`serverActions.allowedOrigins`](/docs/app/api-reference/config/next-config-js/serverActions) option to specify a list of safe origins. The option accepts an array of strings.
+For large applications that use reverse proxies or multi-layered backend architectures (where the server API differs from the production domain), it's recommended to use the configuration option [`serverActions.allowedOrigins`](../../api-reference/config/next-config-js/serverActions/index.md) option to specify a list of safe origins. The option accepts an array of strings.
 
 next.config.js
 
@@ -645,18 +645,18 @@ Learn more about the topics mentioned in this guide.
 
 Learn how to implement authentication in your Next.js application.
 
-](/docs/app/guides/authentication)[
+](../authentication/index.md)[
 
 ### Content Security Policy
 
 Learn how to set a Content Security Policy (CSP) for your Next.js application.
 
-](/docs/app/guides/content-security-policy)[
+](../content-security-policy/index.md)[
 
 ### Forms
 
 Learn how to create forms in Next.js with React Server Actions.
 
-](/docs/app/guides/forms)
+](../forms/index.md)
 
 Was this helpful?

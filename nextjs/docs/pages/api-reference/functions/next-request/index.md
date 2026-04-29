@@ -11,8 +11,8 @@ menu_path: ["NextRequest"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../get-static-props/index.md", "title": "getStaticProps"}
-nav_next: {"path": "../next-response/index.md", "title": "NextResponse"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/functions/get-static-props/index.md", "title": "getStaticProps"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/functions/next-response/index.md", "title": "NextResponse"}
 ---
 
 # NextRequest
@@ -102,8 +102,8 @@ The following options are available:
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `basePath` | `string` | The [base path](/docs/pages/api-reference/config/next-config-js/basePath) of the URL. |
-| `buildId` | `string` | `undefined` | The build identifier of the Next.js application. Can be [customized](/docs/pages/api-reference/config/next-config-js/generateBuildId). |
+| `basePath` | `string` | The [base path](../../config/next-config-js/basePath/index.md) of the URL. |
+| `buildId` | `string` | `undefined` | The build identifier of the Next.js application. Can be [customized](../../config/next-config-js/generateBuildId/index.md). |
 | `defaultLocale` | `string` | `undefined` | The default locale for [internationalization](/docs/pages/guides/internationalization). |
 | `domainLocale` |  |  |
 | \- `defaultLocale` | `string` | The default locale within a domain. |

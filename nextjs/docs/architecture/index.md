@@ -11,8 +11,8 @@ menu_path: ["Architecture"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../pages/api-reference/turbopack/index.md", "title": "Turbopack"}
-nav_next: {"path": "accessibility/index.md", "title": "Accessibility"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/turbopack/index.md", "title": "Turbopack"}
+nav_next: {"path": "nextjs/docs/architecture/accessibility/index.md", "title": "Accessibility"}
 ---
 
 # Architecture
@@ -27,24 +27,24 @@ Learn about the Next.js architecture and how it works under the hood.
 
 The built-in accessibility features of Next.js.
 
-](/docs/architecture/accessibility)[
+](accessibility/index.md)[
 
 ### Fast Refresh
 
 Fast Refresh is a hot module reloading experience that gives you instantaneous feedback on edits made to your React components.
 
-](/docs/architecture/fast-refresh)[
+](fast-refresh/index.md)[
 
 ### Next.js Compiler
 
 Next.js Compiler, written in Rust, which transforms and minifies your Next.js application.
 
-](/docs/architecture/nextjs-compiler)[
+](nextjs-compiler/index.md)[
 
 ### Supported Browsers
 
 Browser support and which JavaScript features are supported by Next.js.
 
-](/docs/architecture/supported-browsers)
+](supported-browsers/index.md)
 
 Was this helpful?

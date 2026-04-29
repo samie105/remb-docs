@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:33:04.993Z"
 content_hash: "17282963ce587cf3b5d95dd9b9aa04cf510268281264118bedb31394aff364cd"
 menu_path: ["PostgreSQL: Documentation: 18: 19.15. Preset Options"]
 section_path: []
-nav_prev: {"path": "../runtime-config-connection.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.3.\u00a0Connections and Authentication"}
-nav_next: {"path": "../runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
+nav_prev: {"path": "postgres/docs/current/runtime-config-connection.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.3.\u00a0Connections and Authentication"}
+nav_next: {"path": "postgres/docs/current/runtime-config-query.html/index.md", "title": "PostgreSQL: Documentation: 18: 19.7.\u00a0Query Planning"}
 ---
 
 The following “parameters” are read-only. As such, they have been excluded from the sample `postgresql.conf` file. These options report various aspects of PostgreSQL behavior that might be of interest to certain applications, particularly administrative front-ends. Most of them are determined when PostgreSQL is compiled or when it is installed.

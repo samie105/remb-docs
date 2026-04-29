@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:59:01.621Z"
 content_hash: "7d50d7f5eb4edebf4cd4495d89e53ae2b68f3cbb920d42f392d948cd3b55438f"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Java and Lettuce","→","Rolling sensor graph demo with Java and Lettuce"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis use cases","→","Redis use cases","→\n      \n        Rolling sensor graph demo with Redis","→","Rolling sensor graph demo with Redis","→\n      \n        Rolling sensor graph demo with Java and Lettuce","→","Rolling sensor graph demo with Java and Lettuce"]
-nav_prev: {"path": "../java-jedis/index.md", "title": "Rolling sensor graph demo with Java and Jedis"}
-nav_next: {"path": "../nodejs/index.md", "title": "Rolling sensor graph demo with Redis and Node.js"}
+nav_prev: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/java-jedis/index.md", "title": "Rolling sensor graph demo with Java and Jedis"}
+nav_next: {"path": "redis/docs/latest/develop/use-cases/time-series-dashboard/nodejs/index.md", "title": "Rolling sensor graph demo with Redis and Node.js"}
 ---
 
 # Rolling sensor graph demo with Java and Lettuce
 
 Build a Redis-backed rolling sensor graph demo in Java with Lettuce
 
-This guide shows you how to build a compact rolling sensor graph demo in Java with [`Lettuce`](/docs/latest/develop/clients/lettuce/) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
+This guide shows you how to build a compact rolling sensor graph demo in Java with [`Lettuce`](../../../clients/lettuce/index.md) and Redis time series support. The example simulates three power sensors, ingests readings into Redis, and serves a local browser dashboard that updates in real time.
 
 ## Overview
 
@@ -37,7 +37,7 @@ For Lettuce, we show asynchronous and reactive APIs rather than a synchronous AP
 
 *   Async with `RedisAsyncCommands` works well for a small local demo server using `CompletableFuture`
 *   Reactive with `RedisReactiveCommands` is a good fit when you are already using Reactor
-*   For a synchronous Java version of this dashboard, see [Jedis](/docs/latest/develop/use-cases/time-series-dashboard/java-jedis/)
+*   For a synchronous Java version of this dashboard, see [Jedis](../java-jedis/index.md)
 
 ## How it works
 
@@ -223,7 +223,7 @@ This example intentionally keeps the server and UI small so the Redis behavior i
 
 ## Learn more
 
-*   [Lettuce guide](/docs/latest/develop/clients/lettuce/) - Install and use the Java client
+*   [Lettuce guide](../../../clients/lettuce/index.md) - Install and use the Java client
 *   [Time series overview](/docs/latest/develop/data-types/timeseries/) - Time series concepts and commands
 *   [TS.RANGE command](/docs/latest/commands/ts.range/) - Query raw and aggregated ranges from a time series
 *   [TS.MADD command](/docs/latest/commands/ts.madd/) - Add multiple samples in one call

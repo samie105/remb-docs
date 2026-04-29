@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:57.852Z"
 content_hash: "687ad84f1db44cd4cfa7fecd611eb78d76c3d1d846744e05a5b49bc7a779b7ff"
 menu_path: ["Unsupported image format"]
 section_path: []
-nav_prev: {"path": "../unsupported-image-conversion/index.md", "title": "Unsupported image conversion"}
-nav_next: {"path": "../../../tutorial/0-introduction/1/index.md", "title": "About this Tutorial"}
+nav_prev: {"path": "astro/en/reference/errors/unsupported-image-conversion/index.md", "title": "Unsupported image conversion"}
+nav_next: {"path": "astro/en/tutorial/0-introduction/1/index.md", "title": "About this Tutorial"}
 ---
 
 # Unsupported image format
@@ -30,4 +30,4 @@ For unsupported formats such as GIFs, you may be able to use an `img` tag direct
 <img src={rocket.src} width={rocket.width} height={rocket.height} alt="A rocketship in space." />
 ```
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

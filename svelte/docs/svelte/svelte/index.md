@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:06.579Z"
 content_hash: "c9f4ac1deb49f2150416aea958d1c7d9568eba3125af853516259f7a0a669f56"
 menu_path: ["svelte"]
 section_path: []
-nav_prev: {"path": "../faq/index.md", "title": "Frequently asked questions"}
-nav_next: {"path": "../svelte-action/index.md", "title": "svelte/action"}
+nav_prev: {"path": "svelte/docs/svelte/faq/index.md", "title": "Frequently asked questions"}
+nav_next: {"path": "svelte/docs/svelte/svelte-action/index.md", "title": "svelte/action"}
 ---
 
 ```
@@ -161,7 +161,7 @@ $effect(() => {
 
 ## SvelteComponent[](#SvelteComponent)
 
-This was the base class for Svelte components in Svelte 4. Svelte 5+ components are completely different under the hood. For typing, use `Component` instead. To instantiate components, use `mount` instead. See [migration guide](/docs/svelte/v5-migration-guide#Components-are-no-longer-classes) for more info.
+This was the base class for Svelte components in Svelte 4. Svelte 5+ components are completely different under the hood. For typing, use `Component` instead. To instantiate components, use `mount` instead. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
 
 ```
 class SvelteComponent<
@@ -210,7 +210,7 @@ $set(props: Partial<Props>): void;
 
 ## SvelteComponentTyped[](#SvelteComponentTyped)
 
-> Use `Component` instead. See [migration guide](/docs/svelte/v5-migration-guide#Components-are-no-longer-classes) for more information.
+> Use `Component` instead. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more information.
 
 ```
 class SvelteComponentTyped<
@@ -262,9 +262,9 @@ function createContext<T>(): [() => T, (context: T) => T];
 
 ## createEventDispatcher[](#createEventDispatcher)
 
-> Use callback props and/or the `$host()` rune instead — see [migration guide](/docs/svelte/v5-migration-guide#Event-changes-Component-events)
+> Use callback props and/or the `$host()` rune instead — see [migration guide](../v5-migration-guide/index.md#Event-changes-Component-events)
 
-Creates an event dispatcher that can be used to dispatch [component events](/docs/svelte/legacy-on#Component-events). Event dispatchers are functions that can take two arguments: `name` and `detail`.
+Creates an event dispatcher that can be used to dispatch [component events](../legacy-on/index.md#Component-events). Event dispatchers are functions that can take two arguments: `name` and `detail`.
 
 Component events created with `createEventDispatcher` create a [CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent). These events do not [bubble](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture). The `detail` argument corresponds to the [CustomEvent.detail](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/detail) property and can contain any type of data.
 
@@ -363,7 +363,7 @@ function getAllContexts<
 
 Retrieves the context that belongs to the closest parent component with the specified `key`. Must be called during component initialisation.
 
-[`createContext`](/docs/svelte/svelte#createContext) is a type-safe alternative.
+[`createContext`](index.md#createContext) is a type-safe alternative.
 
 ```
 function getContext<T>(key: any): T;
@@ -449,7 +449,7 @@ function onDestroy(fn: () => any): void;
 
 It must be called during the component's initialisation (but doesn't need to live _inside_ the component; it can be called from an external module). If a function is returned _synchronously_ from `onMount`, it will be called when the component is unmounted.
 
-`onMount` functions do not run during [server-side rendering](/docs/svelte/svelte-server#render).
+`onMount` functions do not run during [server-side rendering](../svelte-server/index.md#render).
 
 ```
 function onMount<T>(
@@ -466,7 +466,7 @@ Associates an arbitrary `context` object with the current component and the spec
 
 Like lifecycle functions, this must be called during component initialisation.
 
-[`createContext`](/docs/svelte/svelte#createContext) is a type-safe alternative.
+[`createContext`](index.md#createContext) is a type-safe alternative.
 
 ```
 function setContext<T>(key: any, context: T): T;
@@ -494,7 +494,7 @@ function tick(): Promise<void>;
 
 Unmounts a component that was previously mounted using `mount` or `hydrate`.
 
-Since 5.13.0, if `options.outro` is `true`, [transitions](/docs/svelte/transition) will play before the component is removed from the DOM.
+Since 5.13.0, if `options.outro` is `true`, [transitions](../transition/index.md) will play before the component is removed from the DOM.
 
 Returns a `Promise` that resolves after transitions have completed if `options.outro` is true, or immediately otherwise (prior to 5.13.0, returns `void`).
 
@@ -651,7 +651,7 @@ The custom element version of the component. Only present if compiled with the `
 
 ## ComponentConstructorOptions[](#ComponentConstructorOptions)
 
-> In Svelte 4, components are classes. In Svelte 5, they are functions. Use `mount` instead to instantiate components. See [migration guide](/docs/svelte/v5-migration-guide#Components-are-no-longer-classes) for more info.
+> In Svelte 4, components are classes. In Svelte 5, they are functions. Use `mount` instead to instantiate components. See [migration guide](../v5-migration-guide/index.md#Components-are-no-longer-classes) for more info.
 
 ```
 interface ComponentConstructorOptions<
@@ -1018,7 +1018,7 @@ let { optionalProp = 42, requiredProp, bindableProp = $bindable() }: { optionalP
 
 You can only call a snippet through the `{@render ...}` tag.
 
-See the [snippet documentation](/docs/svelte/snippet) for more info.
+See the [snippet documentation](../snippet/index.md) for more info.
 
 ```
 interface Snippet<Parameters extends unknown[] = []> {…}
@@ -1040,4 +1040,4 @@ interface Snippet<Parameters extends unknown[] = []> {…}
 
 previous next
 
-[Frequently asked questions](/docs/svelte/faq) [svelte/action](/docs/svelte/svelte-action)
+[Frequently asked questions](../faq/index.md) [svelte/action](../svelte-action/index.md)

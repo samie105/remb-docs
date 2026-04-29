@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:30.500Z"
 content_hash: "48ce96060c4ad16a910e5da079823c11ae2c35d67df175b236a6238cab99aec2"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Firestore Data","Firestore Data"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Firestore Data","Firestore Data"]
-nav_prev: {"path": "../firebase-storage/index.md", "title": "Migrated from Firebase Storage to Supabase"}
-nav_next: {"path": "../heroku/index.md", "title": "Migrate from Heroku to Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/firebase-storage/index.md", "title": "Migrated from Firebase Storage to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-to-supabase/heroku/index.md", "title": "Migrate from Heroku to Supabase"}
 ---
 
 # 

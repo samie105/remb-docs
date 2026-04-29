@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:37:58.250Z"
 content_hash: "92242d5f36301dfcfa718c512aa7389c0947dbc81f342935869dff5c8ed7c791"
 menu_path: ["Auth","Auth","More","More","More","JSON Web Tokens (JWT)","JSON Web Tokens (JWT)","Overview","Overview"]
 section_path: ["Auth","Auth","More","More","More","JSON Web Tokens (JWT)","JSON Web Tokens (JWT)","Overview","Overview"]
-nav_prev: {"path": "../jwt-fields/index.md", "title": "JWT Claims Reference"}
-nav_next: {"path": "../managing-user-data/index.md", "title": "User Management"}
+nav_prev: {"path": "supabase/docs/guides/auth/jwt-fields/index.md", "title": "JWT Claims Reference"}
+nav_next: {"path": "supabase/docs/guides/auth/managing-user-data/index.md", "title": "User Management"}
 ---
 
 # 
@@ -25,11 +25,11 @@ Information on how best to use JSON Web Tokens with Supabase
 
 A [JSON Web Token](https://jwt.io/introduction) is a type of data structure, represented as a string, that usually contains identity and authorization information about a user. It encodes information about its lifetime and is signed with a cryptographic key to make it tamper-resistant.
 
-Supabase Auth continuously issues a new JWT for each user session, for as long as the user remains signed in. Check the comprehensive guide on [Sessions](/docs/guides/auth/sessions) to find out how you can tailor this process for your needs.
+Supabase Auth continuously issues a new JWT for each user session, for as long as the user remains signed in. Check the comprehensive guide on [Sessions](../sessions/index.md) to find out how you can tailor this process for your needs.
 
-JWTs provide the foundation for [Row Level Security](/docs/guides/database/postgres/row-level-security). Each Supabase product is able to securely decode and verify the validity of a JWT it receives before using Postgres policies and roles to authorize access to the project's data.
+JWTs provide the foundation for [Row Level Security](../../database/postgres/row-level-security/index.md). Each Supabase product is able to securely decode and verify the validity of a JWT it receives before using Postgres policies and roles to authorize access to the project's data.
 
-Supabase provides a comprehensive system of managing [JWT Signing Keys](/docs/guides/auth/signing-keys) used to create and verify JSON Web Tokens.
+Supabase provides a comprehensive system of managing [JWT Signing Keys](../signing-keys/index.md) used to create and verify JSON Web Tokens.
 
 ## Introduction[#](#introduction)
 
@@ -55,7 +55,7 @@ Gives some basic identifying information about the string, indicating its type `
 1{2  "iss": "https://project_id.supabase.co/auth/v1",3  "exp": 12345678,4  "sub": "<user ID>",5  "role": "authenticated",6  "email": "someone@example.com",7  "phone": "+15552368"8  // ...9}
 ```
 
-Provides identifying information (called "claims") about the user (or other entity) that is represented by the token. Usually a JWT conveys information about what the user can access (then called Access Token) or who the user is (then called ID Token). You can use a [Custom Access Token Hook](/docs/guides/auth/auth-hooks/custom-access-token-hook) to add, remove or change claims present in the token. A few claims are important:
+Provides identifying information (called "claims") about the user (or other entity) that is represented by the token. Usually a JWT conveys information about what the user can access (then called Access Token) or who the user is (then called ID Token). You can use a [Custom Access Token Hook](../auth-hooks/custom-access-token-hook/index.md) to add, remove or change claims present in the token. A few claims are important:
 
 Claim
 
@@ -90,10 +90,10 @@ A [digital signature](https://en.wikipedia.org/wiki/Digital_signature) using a [
 Supabase creates JWTs in these cases for you:
 
 1.  When using Supabase Auth, an access token (JWT) is created for each user while they remain signed in. These are short lived, so they are continuously issued as your user interacts with Supabase APIs.
-2.  As the legacy JWT-based [API keys](/docs/guides/api/api-keys) `anon` and `service_role`. These have a 10 year expiry and are signed with a shared secret, making them hard to rotate or expire. These JWTs express public access via the `anon` key, or elevated access via the `service_role` key. We strongly recommend switching to publishable and secret API keys.
+2.  As the legacy JWT-based [API keys](../../api/api-keys/index.md) `anon` and `service_role`. These have a 10 year expiry and are signed with a shared secret, making them hard to rotate or expire. These JWTs express public access via the `anon` key, or elevated access via the `service_role` key. We strongly recommend switching to publishable and secret API keys.
 3.  On-the-fly when using publishable or secret API keys. Each API key is transformed into a short-lived JWT that is then used to authorize access to your data. Accessing these short-lived tokens is generally not possible.
 
-In addition to creating JWTs, Supabase can also accept JWTs from other Auth servers via the [Third-Party Auth](/docs/guides/auth/third-party/overview) feature or ones you've made yourself using the legacy JWT secret or if you've imported in [JWT Signing Key](/docs/guides/auth/signing-keys).
+In addition to creating JWTs, Supabase can also accept JWTs from other Auth servers via the [Third-Party Auth](../third-party/overview/index.md) feature or ones you've made yourself using the legacy JWT secret or if you've imported in [JWT Signing Key](../signing-keys/index.md).
 
 ## Using custom or third-party JWTs[#](#using-custom-or-third-party-jwts)
 
@@ -121,7 +121,7 @@ Supabase Auth exposes a [JSON Web Key](https://datatracker.ietf.org/doc/html/rfc
 1GET https://project-id.supabase.co/auth/v1/.well-known/jwks.json
 ```
 
-Which responds with JWKS object containing one or more asymmetric [JWT signing keys](/docs/guides/auth/signing-keys) (only their public keys). Be aware that this endpoint does not return any keys if you are not using asymmetric JWT signing keys.
+Which responds with JWKS object containing one or more asymmetric [JWT signing keys](../signing-keys/index.md) (only their public keys). Be aware that this endpoint does not return any keys if you are not using asymmetric JWT signing keys.
 
 ```
 1{2  "keys": [3    {4      "kid": "<match with kid from JWT header>",5      "alg": "<match with alg from JWT header>",6      "kty": "<RSA|EC|OKP>",7      "key_ops": ["verify"]8      // public key fields9    }10  ]11}
@@ -168,6 +168,6 @@ Check the JWT verification libraries for your language on how to securely verify
 ## Resources[#](#resources)
 
 *   JWT debugger: [https://jwt.io/](https://jwt.io/)
-*   [JWT Signing Keys](/docs/guides/auth/signing-keys)
-*   [JWT Claims Reference](/docs/guides/auth/jwt-fields) - Complete reference for all JWT claims used by Supabase Auth
-*   [API keys](/docs/guides/api/api-keys)
+*   [JWT Signing Keys](../signing-keys/index.md)
+*   [JWT Claims Reference](../jwt-fields/index.md) - Complete reference for all JWT claims used by Supabase Auth
+*   [API keys](../../api/api-keys/index.md)

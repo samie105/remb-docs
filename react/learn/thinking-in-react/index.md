@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:42.433Z"
 content_hash: "4c366f029a0e25e686f3ac67188fa1ec35a584db50efd9af3afe178d0d9020b5"
 menu_path: ["Thinking in React"]
 section_path: []
-nav_prev: {"path": "../tutorial-tic-tac-toe/index.md", "title": "Tutorial: Tic-Tac-Toe"}
-nav_next: {"path": "../installation/index.md", "title": "Installation"}
+nav_prev: {"path": "react/learn/tutorial-tic-tac-toe/index.md", "title": "Tutorial: Tic-Tac-Toe"}
+nav_next: {"path": "react/learn/installation/index.md", "title": "Installation"}
 ---
 
 React can change how you think about the designs you look at and the apps you build. When you build a user interface with React, you will first break it apart into pieces called _components_. Then, you will describe the different visual states for each of your components. Finally, you will connect your components together so that the data flows through them. In this tutorial, we’ll guide you through the thought process of building a searchable product data table with React.

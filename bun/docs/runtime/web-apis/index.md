@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:02:02.162Z"
 content_hash: "076ae0d6770ef6f993d146a0bdbf724882be1aa450b719cc45783e4a63e1d057"
 menu_path: ["Web APIs"]
 section_path: []
-nav_prev: {"path": "../watch-mode/index.md", "title": "Watch Mode"}
-nav_next: {"path": "../workers/index.md", "title": "Workers"}
+nav_prev: {"path": "bun/docs/runtime/watch-mode/index.md", "title": "Watch Mode"}
+nav_next: {"path": "bun/docs/runtime/workers/index.md", "title": "Workers"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../workers/index.md", "title": "Workers"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Some Web APIs aren’t relevant in the context of a server-first runtime like Bun, such as the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_dom_api_interfaces) or [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API). Many others, though, are broadly useful outside of the browser context; when possible, Bun implements these Web-standard APIs instead of introducing new APIs. The following Web APIs are partially or completely supported.
 
@@ -119,10 +119,10 @@ Bun APIs
 
 Previous
 
-](/docs/runtime/bun-apis)[
+](../bun-apis/index.md)[
 
 Node.js Compatibility
 
 Next
 
-](/docs/runtime/nodejs-compat)
+](../nodejs-compat/index.md)

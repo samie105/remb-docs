@@ -11,8 +11,8 @@ menu_path: ["Migrating"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../memory-usage/index.md", "title": "How to optimize memory usage"}
-nav_next: {"path": "app-router-migration/index.md", "title": "How to migrate from Pages to the App Router"}
+nav_prev: {"path": "nextjs/docs/app/guides/memory-usage/index.md", "title": "How to optimize memory usage"}
+nav_next: {"path": "nextjs/docs/app/guides/migrating/app-router-migration/index.md", "title": "How to migrate from Pages to the App Router"}
 ---
 
 # Migrating
@@ -25,18 +25,18 @@ Last updated April 23, 2026
 
 Learn how to upgrade your existing Next.js application from the Pages Router to the App Router.
 
-](/docs/app/guides/migrating/app-router-migration)[
+](app-router-migration/index.md)[
 
 ### Create React App
 
 Learn how to migrate your existing React application from Create React App to Next.js.
 
-](/docs/app/guides/migrating/from-create-react-app)[
+](from-create-react-app/index.md)[
 
 ### Vite
 
 Learn how to migrate your existing React application from Vite to Next.js.
 
-](/docs/app/guides/migrating/from-vite)
+](from-vite/index.md)
 
 Was this helpful?

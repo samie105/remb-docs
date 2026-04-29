@@ -10,8 +10,8 @@ content_hash: "8becc9e722b02609591289edc988dc4586cb0f90b25c7a5a5317971547027e74"
 menu_path: ["child_process - Node documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../buffer/index.md", "title": "buffer - Node documentation"}
-nav_next: {"path": "../cluster/index.md", "title": "cluster - Node documentation"}
+nav_prev: {"path": "deno/api/node/buffer/index.md", "title": "buffer - Node documentation"}
+nav_next: {"path": "deno/api/node/cluster/index.md", "title": "cluster - Node documentation"}
 ---
 
 ### Usage in Deno

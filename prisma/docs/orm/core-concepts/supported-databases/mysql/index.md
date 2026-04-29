@@ -11,8 +11,8 @@ menu_path: ["MySQL"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../mongodb/index.md", "title": "MongoDB"}
-nav_next: {"path": "../postgresql/index.md", "title": "PostgreSQL"}
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/mongodb/index.md", "title": "MongoDB"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
 ---
 
 Supported databases

@@ -11,8 +11,8 @@ menu_path: ["Unsupported database features (Prisma Migrate)"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../troubleshooting/index.md", "title": "Troubleshooting"}
-nav_next: {"path": "../../../prisma-schema/data-model/database-mapping/index.md", "title": "Database mapping"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/troubleshooting/index.md", "title": "Troubleshooting"}
+nav_next: {"path": "prisma/docs/orm/prisma-schema/data-model/database-mapping/index.md", "title": "Database mapping"}
 ---
 
 Workflows

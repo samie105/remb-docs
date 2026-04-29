@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:47.024Z"
 content_hash: "71cb11e72d0397b9c4ef8bfa0b072ca8fd949ad58f70bd483f61a84e0c883f91"
 menu_path: ["Turso & Astro"]
 section_path: []
-nav_prev: {"path": "../supabase/index.md", "title": "Supabase & Astro"}
-nav_next: {"path": "../xata/index.md", "title": "Xata & Astro"}
+nav_prev: {"path": "astro/en/guides/backend/supabase/index.md", "title": "Supabase & Astro"}
+nav_next: {"path": "astro/en/guides/backend/xata/index.md", "title": "Xata & Astro"}
 ---
 
 # Turso & Astro
@@ -118,39 +118,39 @@ const { rows } = await turso.execute({  sql: 'SELECT * FROM posts WHERE slug = ?
 
 *   ![](/logos/appwriteio.svg)
     
-    ### [Appwrite](/en/guides/backend/appwrite/)
+    ### [Appwrite](../appwrite/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/backend/firebase/)
+    ### [Firebase](../firebase/index.md)
     
 *   ![](/logos/neon.svg)
     
-    ### [Neon](/en/guides/backend/neon/)
+    ### [Neon](../neon/index.md)
     
 *   ![](/logos/prisma-postgres.svg)
     
-    ### [Prisma Postgres](/en/guides/backend/prisma-postgres/)
+    ### [Prisma Postgres](../prisma-postgres/index.md)
     
 *   ![](/logos/scalekit.svg)
     
-    ### [Scalekit](/en/guides/backend/scalekit/)
+    ### [Scalekit](../scalekit/index.md)
     
 *   ![](/logos/sentry.svg)
     
-    ### [Sentry](/en/guides/backend/sentry/)
+    ### [Sentry](../sentry/index.md)
     
 *   ![](/logos/supabase.svg)
     
-    ### [Supabase](/en/guides/backend/supabase/)
+    ### [Supabase](../supabase/index.md)
     
 *   ![](/logos/turso.svg)
     
-    ### [Turso](/en/guides/backend/turso/)
+    ### [Turso](index.md)
     
 *   ![](/logos/xata.svg)
     
-    ### [Xata](/en/guides/backend/xata/)
+    ### [Xata](../xata/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

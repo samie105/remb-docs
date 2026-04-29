@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:52.816Z"
 content_hash: "b45881c66f53afadc05d1ab4e7773352ea72779234cfba559b09edaea8a2acbf"
 menu_path: ["Testing Helper ​"]
 section_path: []
-nav_prev: {"path": "../streaming/index.md", "title": "Streaming Helper \u200b"}
-nav_next: {"path": "../websocket/index.md", "title": "WebSocket Helper \u200b"}
+nav_prev: {"path": "hono/docs/helpers/streaming/index.md", "title": "Streaming Helper \u200b"}
+nav_next: {"path": "hono/docs/helpers/websocket/index.md", "title": "WebSocket Helper \u200b"}
 ---
 
 The Testing Helper provides functions to make testing of Hono applications easier.

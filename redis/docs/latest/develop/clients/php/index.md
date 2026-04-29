@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:12:38.032Z"
 content_hash: "eead975363cc8f29ba0f93b7b02b7e0b179b782a1b4b1c1d37a753213e6ebc97"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Predis guide (PHP)","→","Predis guide (PHP)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        Predis guide (PHP)","→","Predis guide (PHP)"]
-nav_prev: {"path": "../patterns/indexes/index.md", "title": "Secondary indexing"}
-nav_next: {"path": "../redis-py/index.md", "title": "redis-py guide (Python)"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/patterns/indexes/index.md", "title": "Secondary indexing"}
+nav_next: {"path": "redis/docs/latest/develop/clients/redis-py/index.md", "title": "redis-py guide (Python)"}
 ---
 
 # Predis guide (PHP)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:57.480Z"
 content_hash: "d8c79034a4ab8553473a57a1f6bc2b063e9111882bc042628cd01db86dcc2a2c"
 menu_path: ["Database","Database","More","More","More","Manual replication","Manual replication","Setting up","Setting up"]
 section_path: ["Database","Database","More","More","More","Manual replication","Manual replication","Setting up","Setting up"]
-nav_prev: {"path": "../manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
-nav_next: {"path": "../replication-faq/index.md", "title": "Replication FAQ"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/manual-replication-monitoring/index.md", "title": "Manual Replication Monitoring"}
+nav_next: {"path": "supabase/docs/guides/database/replication/replication-faq/index.md", "title": "Replication FAQ"}
 ---
 
 # 
@@ -23,18 +23,18 @@ Set up replication with Airbyte, Estuary, Fivetran, and other tools.
 
 * * *
 
-This guide covers setting up **manual logical replication** using external tools. If you prefer a simpler, managed solution, read [the Replication setup docs](/docs/guides/database/replication/replication-setup) instead.
+This guide covers setting up **manual logical replication** using external tools. If you prefer a simpler, managed solution, read [the Replication setup docs](../replication-setup/index.md) instead.
 
-This guide is for replicating data to external systems using your own tools. For deploying read-only databases across multiple regions, see [Read Replicas](/docs/guides/platform/read-replicas) instead.
+This guide is for replicating data to external systems using your own tools. For deploying read-only databases across multiple regions, see [Read Replicas](../../../platform/read-replicas/index.md) instead.
 
 ### Prerequisites[#](#prerequisites)
 
 To set up replication, the following is recommended:
 
 *   Instance size of XL or greater
-*   [IPv4 add-on](/docs/guides/platform/ipv4-address) enabled
+*   [IPv4 add-on](../../../platform/ipv4-address/index.md) enabled
 
-To create a replication slot, you will need to use the `postgres` user and follow the instructions in the [external replication setup guide](/docs/guides/database/postgres/setup-replication-external).
+To create a replication slot, you will need to use the `postgres` user and follow the instructions in the [external replication setup guide](../../postgres/setup-replication-external/index.md).
 
 If you are running Postgres 17 or higher, you can create a new user and grant them replication permissions with the `postgres` user. For versions below 17, you will need to use the `postgres` user.
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:35.923Z"
 content_hash: "620ea03b36e0f9a32461559c35b6224bfd11d8174c85814235370f4094b9c5da"
 menu_path: ["Config imports API Reference"]
 section_path: []
-nav_prev: {"path": "../astro-assets/index.md", "title": "Image and Assets API Reference"}
-nav_next: {"path": "../astro-content/index.md", "title": "Content Collections API Reference"}
+nav_prev: {"path": "astro/en/reference/modules/astro-assets/index.md", "title": "Image and Assets API Reference"}
+nav_next: {"path": "astro/en/reference/modules/astro-content/index.md", "title": "Content Collections API Reference"}
 ---
 
 # Config imports API Reference
@@ -40,12 +40,12 @@ function addForwardSlash(path) {  if (trailingSlash === "always") {    return pa
 
 See more about the configuration imports available from `astro:config/client`:
 
-*   [`i18n`](/en/reference/configuration-reference/#i18n)
-*   [`trailingSlash`](/en/reference/configuration-reference/#trailingslash)
-*   [`base`](/en/reference/configuration-reference/#base)
-*   [`build.format`](/en/reference/configuration-reference/#buildformat)
-*   [`site`](/en/reference/configuration-reference/#site)
-*   [`compressHTML`](/en/reference/configuration-reference/#compresshtml)
+*   [`i18n`](../../configuration-reference/index.md#i18n)
+*   [`trailingSlash`](../../configuration-reference/index.md#trailingslash)
+*   [`base`](../../configuration-reference/index.md#base)
+*   [`build.format`](../../configuration-reference/index.md#buildformat)
+*   [`site`](../../configuration-reference/index.md#site)
+*   [`compressHTML`](../../configuration-reference/index.md#compresshtml)
 
 ## Imports from `astro:config/server`
 
@@ -73,19 +73,19 @@ export default function() {  return {    name: "internal-integration",    hooks:
 
 See more about the configuration imports available from `astro:config/server`:
 
-*   [`i18n`](/en/reference/configuration-reference/#i18n)
-*   [`trailingSlash`](/en/reference/configuration-reference/#trailingslash)
-*   [`base`](/en/reference/configuration-reference/#base)
-*   [`build.format`](/en/reference/configuration-reference/#buildformat)
-*   [`build.client`](/en/reference/configuration-reference/#buildclient)
-*   [`build.server`](/en/reference/configuration-reference/#buildserver)
-*   [`site`](/en/reference/configuration-reference/#site)
-*   [`srcDir`](/en/reference/configuration-reference/#srcdir)
-*   [`cacheDir`](/en/reference/configuration-reference/#cachedir)
-*   [`outDir`](/en/reference/configuration-reference/#outdir)
-*   [`publicDir`](/en/reference/configuration-reference/#publicdir)
-*   [`root`](/en/reference/configuration-reference/#root)
-*   [`compressHTML`](/en/reference/configuration-reference/#compresshtml)
+*   [`i18n`](../../configuration-reference/index.md#i18n)
+*   [`trailingSlash`](../../configuration-reference/index.md#trailingslash)
+*   [`base`](../../configuration-reference/index.md#base)
+*   [`build.format`](../../configuration-reference/index.md#buildformat)
+*   [`build.client`](../../configuration-reference/index.md#buildclient)
+*   [`build.server`](../../configuration-reference/index.md#buildserver)
+*   [`site`](../../configuration-reference/index.md#site)
+*   [`srcDir`](../../configuration-reference/index.md#srcdir)
+*   [`cacheDir`](../../configuration-reference/index.md#cachedir)
+*   [`outDir`](../../configuration-reference/index.md#outdir)
+*   [`publicDir`](../../configuration-reference/index.md#publicdir)
+*   [`root`](../../configuration-reference/index.md#root)
+*   [`compressHTML`](../../configuration-reference/index.md#compresshtml)
 
 ## Imports from `astro/config`
 
@@ -101,9 +101,9 @@ import {  defineConfig,  envField,  fontProviders,  getViteConfig,  mergeConfig,
 
 [Section titled “defineConfig()”](#defineconfig)
 
-**Type:** `(config: [AstroUserConfig](/en/reference/configuration-reference/)) => AstroUserConfig`
+**Type:** `(config: [AstroUserConfig](../../configuration-reference/index.md)) => AstroUserConfig`
 
-Configures your project with type safety [in a supported Astro configuration file](/en/guides/configuring-astro/#the-astro-config-file).
+Configures your project with type safety [in a supported Astro configuration file](../../../guides/configuring-astro/index.md#the-astro-config-file).
 
 ### `envField`
 
@@ -113,11 +113,11 @@ Configures your project with type safety [in a supported Astro configuration fil
 
 **Added in:** `astro@5.0.0`
 
-Describes the supported data types when [defining environment variables](/en/reference/configuration-reference/#envschema).
+Describes the supported data types when [defining environment variables](../../configuration-reference/index.md#envschema).
 
-Each data type must define the [variable type](/en/guides/environment-variables/#variable-types) with `context` (`"client"` or `"server"`) and `access` (`"secret"` or `"public"`). In addition, you can define a `default` value, specify whether the variable is `optional` (default `false`), and some data types provide optional validation methods.
+Each data type must define the [variable type](../../../guides/environment-variables/index.md#variable-types) with `context` (`"client"` or `"server"`) and `access` (`"secret"` or `"public"`). In addition, you can define a `default` value, specify whether the variable is `optional` (default `false`), and some data types provide optional validation methods.
 
-Learn more about [using type safe environment variables](/en/guides/environment-variables/#type-safe-environment-variables) in your Astro project.
+Learn more about [using type safe environment variables](../../../guides/environment-variables/index.md#type-safe-environment-variables) in your Astro project.
 
 #### `envField.string()`
 
@@ -187,29 +187,29 @@ export default defineConfig({  env: {    schema: {      DEBUG_MODE: envField.enu
 
 **Added in:** `astro@6.0.0`
 
-Describes the [built-in provider](/en/reference/font-provider-reference/#built-in-providers) used [to retrieve the configured font](/en/reference/configuration-reference/#fontprovider).
+Describes the [built-in provider](../../font-provider-reference/index.md#built-in-providers) used [to retrieve the configured font](../../configuration-reference/index.md#fontprovider).
 
 ### `getViteConfig()`
 
 [Section titled “getViteConfig()”](#getviteconfig)
 
-**Type:** `(userViteConfig: [ViteUserConfig](/en/reference/configuration-reference/#vite), inlineAstroConfig?: [AstroInlineConfig](/en/reference/configuration-reference/)) => ViteUserConfigFn`
+**Type:** `(userViteConfig: [ViteUserConfig](../../configuration-reference/index.md#vite), inlineAstroConfig?: [AstroInlineConfig](../../configuration-reference/index.md)) => ViteUserConfigFn`
 
-Retrieves the Vite configuration to use by merging a custom Vite configuration object and an optional Astro configuration object. This is useful [to set up Vitest for testing](/en/guides/testing/#vitest).
+Retrieves the Vite configuration to use by merging a custom Vite configuration object and an optional Astro configuration object. This is useful [to set up Vitest for testing](../../../guides/testing/index.md#vitest).
 
 ### `mergeConfig()`
 
 [Section titled “mergeConfig()”](#mergeconfig)
 
-See [`mergeConfig()` in the Programmatic API reference](/en/reference/programmatic-reference/#mergeconfig).
+See [`mergeConfig()` in the Programmatic API reference](../../programmatic-reference/index.md#mergeconfig).
 
 ### `passthroughImageService()`
 
 [Section titled “passthroughImageService()”](#passthroughimageservice)
 
-**Type:** `() => [ImageServiceConfig](/en/reference/modules/astro-assets/#imageserviceconfig)`
+**Type:** `() => [ImageServiceConfig](../astro-assets/index.md#imageserviceconfig)`
 
-Retrieves a no-op image service. This is useful when your adapter does not support Astro’s built-in Sharp image optimization and you want to [use the `<Image />` and `<Picture />` components](/en/guides/images/#astro-components-for-images).
+Retrieves a no-op image service. This is useful when your adapter does not support Astro’s built-in Sharp image optimization and you want to [use the `<Image />` and `<Picture />` components](../../../guides/images/index.md#astro-components-for-images).
 
 The following example defines `passthroughImageService()` as image service in the Astro configuration file to avoid Sharp image processing:
 
@@ -218,7 +218,7 @@ import { defineConfig, passthroughImageService } from "astro/config";
 export default defineConfig({  image: {    service: passthroughImageService()  }});
 ```
 
-Learn more about [configuring a no-op passthrough service](/en/guides/images/#configure-no-op-passthrough-service).
+Learn more about [configuring a no-op passthrough service](../../../guides/images/index.md#configure-no-op-passthrough-service).
 
 ### `sessionDrivers`
 
@@ -228,7 +228,7 @@ Learn more about [configuring a no-op passthrough service](/en/guides/images/#co
 
 **Added in:** `astro@5.7.0`
 
-Describes the [built-in driver](/en/reference/session-driver-reference/#built-in-drivers) used [for session storage](/en/reference/configuration-reference/#session-options).
+Describes the [built-in driver](../../session-driver-reference/index.md#built-in-drivers) used [for session storage](../../configuration-reference/index.md#session-options).
 
 The following example configures the Redis driver to enable sessions:
 
@@ -237,22 +237,22 @@ import { defineConfig, sessionDrivers } from "astro/config";
 export default defineConfig({  session: {    driver: sessionDrivers.redis({      url: process.env.REDIS_URL    }),  }})
 ```
 
-Learn more about [using sessions](/en/guides/sessions/) in your Astro project.
+Learn more about [using sessions](../../../guides/sessions/index.md) in your Astro project.
 
 ### `sharpImageService()`
 
 [Section titled “sharpImageService()”](#sharpimageservice)
 
-**Type:** `(config?: SharpImageServiceConfig) => [ImageServiceConfig](/en/reference/modules/astro-assets/#imageserviceconfig)`  
+**Type:** `(config?: SharpImageServiceConfig) => [ImageServiceConfig](../astro-assets/index.md#imageserviceconfig)`  
 
 **Added in:** `astro@2.4.1`
 
-Retrieves the Sharp service used to process Astro’s image assets. This takes an optional object describing the [configuration options for Sharp](/en/reference/configuration-reference/#imageservice).
+Retrieves the Sharp service used to process Astro’s image assets. This takes an optional object describing the [configuration options for Sharp](../../configuration-reference/index.md#imageservice).
 
 ### `validateConfig()`
 
 [Section titled “validateConfig()”](#validateconfig)
 
-See [`validateConfig()` in the Programmatic API reference](/en/reference/programmatic-reference/#validateconfig).
+See [`validateConfig()` in the Programmatic API reference](../../programmatic-reference/index.md#validateconfig).
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:10.201Z"
 content_hash: "0e22e4a5d910e284ca0d95eccca86dc68911b806ef2265fb67378923f4dd32b2"
 menu_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active SSO Users","Monthly Active SSO Users"]
 section_path: ["Platform","Platform","More","More","More","Manage your usage","Manage your usage","Monthly Active SSO Users","Monthly Active SSO Users"]
-nav_prev: {"path": "../monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
-nav_next: {"path": "../point-in-time-recovery/index.md", "title": "Manage Point-in-Time Recovery usage"}
+nav_prev: {"path": "supabase/docs/guides/platform/manage-your-usage/monthly-active-users/index.md", "title": "Manage Monthly Active Users usage"}
+nav_next: {"path": "supabase/docs/guides/platform/manage-your-usage/point-in-time-recovery/index.md", "title": "Manage Point-in-Time Recovery usage"}
 ---
 
 # 
@@ -69,7 +69,7 @@ Usage is shown as "Monthly Active SSO Users" on your invoice.
 
 $0.015 per SSO MAU. You are only charged for usage exceeding your subscription plan's quota.
 
-For a detailed breakdown of how charges are calculated, refer to [Manage Monthly Active SSO Users usage](/docs/guides/platform/manage-your-usage/monthly-active-users-sso).
+For a detailed breakdown of how charges are calculated, refer to [Manage Monthly Active SSO Users usage](index.md).
 
 The count resets at the start of each billing cycle.
 
@@ -191,6 +191,6 @@ In the Monthly Active SSO Users section, you can see the usage for the selected 
 
 ## Exceeding Quotas[#](#exceeding-quotas)
 
-If you are on a paid plan and have [Spend Cap](/docs/guides/platform/cost-control#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
+If you are on a paid plan and have [Spend Cap](../../cost-control/index.md#spend-cap) disabled or your organization is on Team Plan or above, you will pay for any overages.
 
-When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](/docs/guides/platform/cost-control#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](/docs/guides/platform/billing-faq#fair-use-policy).
+When you are exceeding your quotas while being on a Free Plan or having [Spend Cap](../../cost-control/index.md#spend-cap) enabled, you will get a notification to your billing email address and put under a grace period. For more details, refer to our [Fair Use Policy](../../billing-faq/index.md#fair-use-policy).

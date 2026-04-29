@@ -9,7 +9,7 @@ last_crawled_at: "2026-04-18T16:33:07.767Z"
 content_hash: "6fa31eedf6c1f32f5291f01bf6b5d315eca54f77cc8cdc43d6d09ac795848e6f"
 menu_path: ["Philosophy ​"]
 section_path: []
-nav_next: {"path": "../routers/index.md", "title": "Routers \u200b"}
+nav_next: {"path": "hono/docs/concepts/routers/index.md", "title": "Routers \u200b"}
 ---
 
 In this section, we talk about the concept, or philosophy, of Hono.

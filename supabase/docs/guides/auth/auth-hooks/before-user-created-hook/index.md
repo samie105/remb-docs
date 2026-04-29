@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:52:41.159Z"
 content_hash: "c95985abe29000f45d26e2d0686b3ea7a2dc91b6812b6896965848eab75fa535"
 menu_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Before User Created hook","Before User Created hook"]
 section_path: ["Auth","Auth","More","More","More","Auth Hooks","Auth Hooks","Before User Created hook","Before User Created hook"]
-nav_prev: {"path": "../index.md", "title": "Auth Hooks"}
-nav_next: {"path": "../custom-access-token-hook/index.md", "title": "Custom Access Token Hook"}
+nav_prev: {"path": "supabase/docs/guides/auth/auth-hooks/index.md", "title": "Auth Hooks"}
+nav_next: {"path": "supabase/docs/guides/auth/auth-hooks/custom-access-token-hook/index.md", "title": "Custom Access Token Hook"}
 ---
 
 # 
@@ -71,7 +71,7 @@ Description
 
 (Optional) Return this to reject the signup. Includes a code, message, and optional HTTP status code.
 
-Returning an empty object with a `200` or `204` status code allows the request to proceed. Returning a JSON response with an `error` object and a `4xx` status code blocks the request and propagates the error message to the client. See the [error handling documentation](/docs/guides/auth/auth-hooks#error-handling) for more details.
+Returning an empty object with a `200` or `204` status code allows the request to proceed. Returning a JSON response with an `error` object and a `4xx` status code blocks the request and propagates the error message to the client. See the [error handling documentation](../index.md#error-handling) for more details.
 
 ### Allow the signup[#](#allow-the-signup)
 

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:11.482Z"
 content_hash: "78c679e80707636740d882905a7f7d3d9ee73e6fee9d0eb25a95f5d4b1307b45"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Libraries and tools","→","Libraries and tools","→\n      \n        Redis Data Integration","→","Redis Data Integration","→\n      \n        Data pipelines","→","Data pipelines","→\n      \n        Prepare source databases","→","Prepare source databases"]
-nav_prev: {"path": "../pipeline-config/index.md", "title": "Pipeline configuration file"}
-nav_next: {"path": "aws-aurora-rds/index.md", "title": "Prepare AWS RDS and Aurora databases for RDI"}
+nav_prev: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/pipeline-config/index.md", "title": "Pipeline configuration file"}
+nav_next: {"path": "redis/docs/latest/integrate/redis-data-integration/data-pipelines/prepare-dbs/aws-aurora-rds/index.md", "title": "Prepare AWS RDS and Aurora databases for RDI"}
 ---
 
 # Prepare source databases

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:41.167Z"
 content_hash: "e21011242229a9b062495c01ef86394d25a5e90459b53790d9c03e49285c5116"
 menu_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Mixpeek","Mixpeek"]
 section_path: ["AI & Vectors","AI & Vectors","Third-Party Tools","Third-Party Tools","Mixpeek","Mixpeek"]
-nav_prev: {"path": "../image-search-openai-clip/index.md", "title": "Image Search with OpenAI CLIP"}
-nav_next: {"path": "../nextjs-vector-search/index.md", "title": "Vector search with Next.js and OpenAI"}
+nav_prev: {"path": "supabase/docs/guides/ai/examples/image-search-openai-clip/index.md", "title": "Image Search with OpenAI CLIP"}
+nav_next: {"path": "supabase/docs/guides/ai/examples/nextjs-vector-search/index.md", "title": "Vector search with Next.js and OpenAI"}
 ---
 
 # 
@@ -46,7 +46,7 @@ Then initialize a new project:
 
 ## Setup Supabase project[#](#setup-supabase-project)
 
-If you haven't already, [install the Supabase CLI](/docs/guides/cli), then initialize Supabase in the root of your newly created poetry project:
+If you haven't already, [install the Supabase CLI](../../../cli/index.md), then initialize Supabase in the root of your newly created poetry project:
 
 ```
 1supabase init

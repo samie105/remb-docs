@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:54.852Z"
 content_hash: "d40f6352ad04d7db46eb3924f6da599e7eb6dd6e8f38768c77a4650ab70041a7"
 menu_path: ["Configure TLS on an HTTP server"]
 section_path: []
-nav_prev: {"path": "../stream-node-streams-in-bun/index.md", "title": "Streaming HTTP Server with Node.js Streams"}
-nav_next: {"path": "../../install/add/index.md", "title": "Add a dependency"}
+nav_prev: {"path": "bun/docs/guides/http/stream-node-streams-in-bun/index.md", "title": "Streaming HTTP Server with Node.js Streams"}
+nav_next: {"path": "bun/docs/guides/install/add/index.md", "title": "Add a dependency"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,23 +19,23 @@ nav_next: {"path": "../../install/add/index.md", "title": "Add a dependency"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
-Set the `tls` key to configure TLS. Both `key` and `cert` are required. The `key` should be the contents of your private key; `cert` should be the contents of your issued certificate. Use [`Bun.file()`](/docs/runtime/file-io#reading-files-bun-file) to read the contents.
+Set the `tls` key to configure TLS. Both `key` and `cert` are required. The `key` should be the contents of your private key; `cert` should be the contents of your issued certificate. Use [`Bun.file()`](../../../runtime/file-io/index.md#reading-files-bun-file) to read the contents.
 
 ![https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z\_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z\_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b](https://mintcdn.com/bun-1dd33a4e/JUhaF6Mf68z_zHyy/icons/typescript.svg?fit=max&auto=format&n=JUhaF6Mf68z_zHyy&q=85&s=7ac549adaea8d5487d8fbd58cc3ea35b)server.ts
 
@@ -76,10 +76,10 @@ Start a cluster of HTTP servers
 
 Previous
 
-](/docs/guides/http/cluster)[
+](../cluster/index.md)[
 
 Proxy HTTP requests using fetch()
 
 Next
 
-](/docs/guides/http/proxy)
+](../proxy/index.md)

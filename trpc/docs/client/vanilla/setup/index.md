@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:01.387Z"
 content_hash: "e3cbee63dd56c0b451e69cd5693bbfbe702fb463827177ba266bfe773c689db6"
 menu_path: ["Set up a tRPC Client"]
 section_path: []
-nav_prev: {"path": "../infer-types/index.md", "title": "Inferring Types"}
-nav_next: {"path": "../../../community/awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
+nav_prev: {"path": "trpc/docs/client/vanilla/infer-types/index.md", "title": "Inferring Types"}
+nav_next: {"path": "trpc/docs/community/awesome-trpc/index.md", "title": "Awesome tRPC Collection"}
 ---
 
 ### 1\. Install the tRPC Client library[​](#1-install-the-trpc-client-library "Direct link to 1. Install the tRPC Client library")

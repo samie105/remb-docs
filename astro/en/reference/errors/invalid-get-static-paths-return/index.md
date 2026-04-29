@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:18.703Z"
 content_hash: "8175ac930cfcb09e41e3c9cf80c44cc54dbab0a720239b1f42cd5109ed5b6098"
 menu_path: ["Invalid value returned by getStaticPaths."]
 section_path: []
-nav_prev: {"path": "../invalid-get-static-paths-entry/index.md", "title": "Invalid entry inside getStaticPath's return value"}
-nav_next: {"path": "../invalid-glob/index.md", "title": "Invalid glob pattern."}
+nav_prev: {"path": "astro/en/reference/errors/invalid-get-static-paths-entry/index.md", "title": "Invalid entry inside getStaticPath's return value"}
+nav_next: {"path": "astro/en/reference/errors/invalid-glob/index.md", "title": "Invalid glob pattern."}
 ---
 
 # Invalid value returned by getStaticPaths.
@@ -29,7 +29,7 @@ export async function getStaticPaths() {  return [ // <-- Array    { params: { s
 
 **See Also:**
 
-*   [`getStaticPaths()`](/en/reference/routing-reference/#getstaticpaths)
-*   [`params`](/en/reference/api-reference/#params)
+*   [`getStaticPaths()`](../../routing-reference/index.md#getstaticpaths)
+*   [`params`](../../api-reference/index.md#params)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

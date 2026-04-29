@@ -11,8 +11,8 @@ menu_path: ["headers"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../generateEtags/index.md", "title": "generateEtags"}
-nav_next: {"path": "../htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/config/next-config-js/generateEtags/index.md", "title": "generateEtags"}
+nav_next: {"path": "nextjs/docs/app/api-reference/config/next-config-js/htmlLimitedBots/index.md", "title": "htmlLimitedBots"}
 ---
 
 # headers
@@ -318,7 +318,7 @@ module.exports = {
 
 ## Headers with basePath support[](#headers-with-basepath-support)
 
-When leveraging [`basePath` support](/docs/app/api-reference/config/next-config-js/basePath) with headers each `source` is automatically prefixed with the `basePath` unless you add `basePath: false` to the header:
+When leveraging [`basePath` support](../basePath/index.md) with headers each `source` is automatically prefixed with the `basePath` unless you add `basePath: false` to the header:
 
 next.config.js
 
@@ -354,7 +354,7 @@ module.exports = {
 
 ## Headers with i18n support[](#headers-with-i18n-support)
 
-When leveraging [`i18n` support](/docs/app/guides/internationalization) with headers each `source` is automatically prefixed to handle the configured `locales` unless you add `locale: false` to the header. If `locale: false` is used you must prefix the `source` with a locale for it to be matched correctly.
+When leveraging [`i18n` support](../../../../guides/internationalization/index.md) with headers each `source` is automatically prefixed to handle the configured `locales` unless you add `locale: false` to the header. If `locale: false` is used you must prefix the `source` with a locale for it to be matched correctly.
 
 next.config.js
 
@@ -416,11 +416,11 @@ module.exports = {
 
 ## Cache-Control[](#cache-control)
 
-Next.js sets the `Cache-Control` header of `public, max-age=31536000, immutable` for truly immutable assets. It cannot be overridden. These immutable files contain a SHA-hash in the file name, so they can be safely cached indefinitely. For example, [Static Image Imports](/docs/app/getting-started/images#local-images). You cannot set `Cache-Control` headers in `next.config.js` for these assets.
+Next.js sets the `Cache-Control` header of `public, max-age=31536000, immutable` for truly immutable assets. It cannot be overridden. These immutable files contain a SHA-hash in the file name, so they can be safely cached indefinitely. For example, [Static Image Imports](../../../../getting-started/images/index.md#local-images). You cannot set `Cache-Control` headers in `next.config.js` for these assets.
 
 However, you can set `Cache-Control` headers for other responses or data.
 
-Learn more about [caching](/docs/app/getting-started/caching) with the App Router.
+Learn more about [caching](../../../../getting-started/caching/index.md) with the App Router.
 
 ## Options[](#options)
 
@@ -478,7 +478,7 @@ async headers() {
 
 [This header](https://developer.mozilla.org/docs/Web/HTTP/Headers/X-Frame-Options) indicates whether the site should be allowed to be displayed within an `iframe`. This can prevent against clickjacking attacks.
 
-**This header has been superseded by CSP's `frame-ancestors` option**, which has better support in modern browsers (see [Content Security Policy](/docs/app/guides/content-security-policy) for configuration details).
+**This header has been superseded by CSP's `frame-ancestors` option**, which has better support in modern browsers (see [Content Security Policy](../../../../guides/content-security-policy/index.md) for configuration details).
 
 ```
 {
@@ -524,7 +524,7 @@ For example, a user trying to download an image, but having it treated as a diff
 
 ### Content-Security-Policy[](#content-security-policy)
 
-Learn more about adding a [Content Security Policy](/docs/app/guides/content-security-policy) to your application.
+Learn more about adding a [Content Security Policy](../../../../guides/content-security-policy/index.md) to your application.
 
 ## Version History[](#version-history)
 

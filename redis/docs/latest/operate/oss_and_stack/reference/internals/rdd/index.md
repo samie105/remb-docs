@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:51.897Z"
 content_hash: "aba09f5bc6d343c94a5b050eddd0a870484b9df62fc43d72bbfd3c94e835961d"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Redis design draft #2 (historical)","→","Redis design draft #2 (historical)"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Open Source","→","Redis Open Source","→\n      \n        Reference","→","Reference","→\n      \n        Redis internals","→","Redis internals","→\n      \n        Redis design draft #2 (historical)","→","Redis design draft #2 (historical)"]
-nav_prev: {"path": "../internals-vm/index.md", "title": "Virtual memory (deprecated)"}
-nav_next: {"path": "../../signals/index.md", "title": "Redis signal handling"}
+nav_prev: {"path": "redis/docs/latest/operate/oss_and_stack/reference/internals/internals-vm/index.md", "title": "Virtual memory (deprecated)"}
+nav_next: {"path": "redis/docs/latest/operate/oss_and_stack/reference/signals/index.md", "title": "Redis signal handling"}
 ---
 
 # Redis design draft #2 (historical)

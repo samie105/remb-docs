@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:26.365Z"
 content_hash: "090ef707953bd5ea638575cb202e67e7920a197b0e272fcc30a25ad910a6d6e2"
 menu_path: ["Use a backend service with Astro"]
 section_path: []
-nav_prev: {"path": "../cms/wordpress/index.md", "title": "Headless WordPress & Astro"}
-nav_next: {"path": "appwrite/index.md", "title": "Appwrite & Astro"}
+nav_prev: {"path": "astro/en/guides/cms/wordpress/index.md", "title": "Headless WordPress & Astro"}
+nav_next: {"path": "astro/en/guides/backend/appwrite/index.md", "title": "Appwrite & Astro"}
 ---
 
 # Use a backend service with Astro
@@ -25,39 +25,39 @@ Note that many of these pages are **stubs**: they’re collections of resources 
 
 *   ![](/logos/appwriteio.svg)
     
-    ### [Appwrite](/en/guides/backend/appwrite/)
+    ### [Appwrite](appwrite/index.md)
     
 *   ![](/logos/firebase.svg)
     
-    ### [Firebase](/en/guides/backend/firebase/)
+    ### [Firebase](firebase/index.md)
     
 *   ![](/logos/neon.svg)
     
-    ### [Neon](/en/guides/backend/neon/)
+    ### [Neon](neon/index.md)
     
 *   ![](/logos/prisma-postgres.svg)
     
-    ### [Prisma Postgres](/en/guides/backend/prisma-postgres/)
+    ### [Prisma Postgres](prisma-postgres/index.md)
     
 *   ![](/logos/scalekit.svg)
     
-    ### [Scalekit](/en/guides/backend/scalekit/)
+    ### [Scalekit](scalekit/index.md)
     
 *   ![](/logos/sentry.svg)
     
-    ### [Sentry](/en/guides/backend/sentry/)
+    ### [Sentry](sentry/index.md)
     
 *   ![](/logos/supabase.svg)
     
-    ### [Supabase](/en/guides/backend/supabase/)
+    ### [Supabase](supabase/index.md)
     
 *   ![](/logos/turso.svg)
     
-    ### [Turso](/en/guides/backend/turso/)
+    ### [Turso](turso/index.md)
     
 *   ![](/logos/xata.svg)
     
-    ### [Xata](/en/guides/backend/xata/)
+    ### [Xata](xata/index.md)
     
 
 ## What is a backend service?
@@ -79,4 +79,4 @@ You might want to consider a backend service if your project has complex server-
 *   realtime communication
 *   application monitoring
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

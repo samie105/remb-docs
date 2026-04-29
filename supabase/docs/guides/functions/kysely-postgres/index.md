@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:44:50.140Z"
 content_hash: "bf20df760c134c8819aeaa3b674c56abd72086d1ba5b058c195afe465392998a"
 menu_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Type-Safe SQL with Kysely","Type-Safe SQL with Kysely"]
 section_path: ["Edge Functions","Edge Functions","Third-Party Tools","Third-Party Tools","Type-Safe SQL with Kysely","Type-Safe SQL with Kysely"]
-nav_prev: {"path": "../http-methods/index.md", "title": "Routing"}
-nav_next: {"path": "../limits/index.md", "title": "Limits"}
+nav_prev: {"path": "supabase/docs/guides/functions/http-methods/index.md", "title": "Routing"}
+nav_next: {"path": "supabase/docs/guides/functions/limits/index.md", "title": "Limits"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Type-Safe SQL with Kysely
 
 * * *
 
-Supabase Edge Functions can [connect directly to your Postgres database](/docs/guides/functions/connect-to-postgres) to execute SQL queries. [Kysely](https://github.com/kysely-org/kysely#kysely) is a type-safe and autocompletion-friendly typescript SQL query builder.
+Supabase Edge Functions can [connect directly to your Postgres database](../connect-to-postgres/index.md) to execute SQL queries. [Kysely](https://github.com/kysely-org/kysely#kysely) is a type-safe and autocompletion-friendly typescript SQL query builder.
 
 Combining Kysely with Deno Postgres gives you a convenient developer experience for interacting directly with your Postgres database.
 

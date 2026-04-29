@@ -10,8 +10,8 @@ content_hash: "58c7a2f510fb3c0727cbccbc116b8d6d2a497b0ce1d45db84110d825c2b45cf4"
 menu_path: ["PostgreSQL: Documentation: 18: pgbench"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../pgarchivecleanup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_archivecleanup"}
-nav_next: {"path": "../pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
+nav_prev: {"path": "postgres/docs/current/pgarchivecleanup.html/index.md", "title": "PostgreSQL: Documentation: 18: pg_archivecleanup"}
+nav_next: {"path": "postgres/docs/current/pgbuffercache.html/index.md", "title": "PostgreSQL: Documentation: 18: F.25.\u00a0pg_buffercache \u2014 inspect PostgreSQL buffer cache state"}
 ---
 
 ## Description

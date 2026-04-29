@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:00:40.114Z"
 content_hash: "d78f5877502b5a019b20e3ca3d8ed36589515ecfbb044c63c84cfe6b83d8c6fd"
 menu_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Vercel Postgres","Vercel Postgres"]
 section_path: ["Platform","Platform","More","More","More","Migrating to Supabase","Migrating to Supabase","Vercel Postgres","Vercel Postgres"]
-nav_prev: {"path": "../render/index.md", "title": "Migrate from Render to Supabase"}
-nav_next: {"path": "../../migrating-within-supabase/index.md", "title": "Migrating within Supabase"}
+nav_prev: {"path": "supabase/docs/guides/platform/migrating-to-supabase/render/index.md", "title": "Migrate from Render to Supabase"}
+nav_next: {"path": "supabase/docs/guides/platform/migrating-within-supabase/index.md", "title": "Migrating within Supabase"}
 ---
 
 # 
@@ -107,7 +107,7 @@ Run `pg_dump --help` for a full list of options.
 
 *   If you're planning to migrate a database larger than 6 GB, we recommend [upgrading to at least a Large compute add-on](/docs/guides/platform/compute-add-ons). This will ensure you have the necessary resources to handle the migration efficiently.
     
-*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](/docs/guides/platform/compute-and-disk#disk) documentation.
+*   We strongly advise you to pre-provision the disk space you will need for your migration. On paid projects, you can do this by navigating to the [Compute and Disk Settings](/dashboard/project/_/settings/compute-and-disk) page. For more information on disk scaling and disk limits, check out our [disk settings](../../compute-and-disk/index.md#disk) documentation.
     
 
 ## Enterprise[#](#enterprise)

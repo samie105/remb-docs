@@ -10,8 +10,8 @@ content_hash: "41790bc83183de57f77e8cc9441921bf36fc599cf13a1869f31f86475d8a3ce4"
 menu_path: ["@std/webgpu"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../uuid/index.md", "title": "@std/uuid"}
-nav_next: {"path": "../yaml/index.md", "title": "@std/yaml"}
+nav_prev: {"path": "deno/runtime/reference/std/uuid/index.md", "title": "@std/uuid"}
+nav_next: {"path": "deno/runtime/reference/std/yaml/index.md", "title": "@std/yaml"}
 ---
 
 **On this page**

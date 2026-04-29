@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:57:01.052Z"
 content_hash: "6e64ed9d368300af115ddddf50901df5c49ac87d88e0a53d414784294fa7f94f"
 menu_path: ["Database","Database","More","More","More","Replication","Replication","Monitoring","Monitoring"]
 section_path: ["Database","Database","More","More","More","Replication","Replication","Monitoring","Monitoring"]
-nav_prev: {"path": "../replication-faq/index.md", "title": "Replication FAQ"}
-nav_next: {"path": "../replication-setup/index.md", "title": "Replication Setup"}
+nav_prev: {"path": "supabase/docs/guides/database/replication/replication-faq/index.md", "title": "Replication FAQ"}
+nav_next: {"path": "supabase/docs/guides/database/replication/replication-setup/index.md", "title": "Replication Setup"}
 ---
 
 # 
@@ -197,9 +197,9 @@ If you notice issues with your replication:
 4.  **Verify publication**: Ensure your Postgres publication is properly configured
 5.  **Monitor replication lag**: High lag may indicate performance issues
 
-For more troubleshooting tips, see the [Replication FAQ](/docs/guides/database/replication/replication-faq).
+For more troubleshooting tips, see the [Replication FAQ](../replication-faq/index.md).
 
 ### Next steps[#](#next-steps)
 
-*   [Set up replication](/docs/guides/database/replication/replication-setup)
-*   [View replication FAQ](/docs/guides/database/replication/replication-faq)
+*   [Set up replication](../replication-setup/index.md)
+*   [View replication FAQ](../replication-faq/index.md)

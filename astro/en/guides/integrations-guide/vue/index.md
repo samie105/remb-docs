@@ -9,15 +9,15 @@ last_crawled_at: "2026-04-18T16:39:59.675Z"
 content_hash: "4a99edf75679625d99534d21a7d87fe78080fcf6197f976e928f29daa2dadd3e"
 menu_path: ["@astrojs/\n\t\t\t\t\tvue"]
 section_path: []
-nav_prev: {"path": "../svelte/index.md", "title": "@astrojs/\n\t\t\t\t\tsvelte"}
-nav_next: {"path": "../cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
+nav_prev: {"path": "astro/en/guides/integrations-guide/svelte/index.md", "title": "@astrojs/\n\t\t\t\t\tsvelte"}
+nav_next: {"path": "astro/en/guides/integrations-guide/cloudflare/index.md", "title": "@astrojs/\n\t\t\t\t\tcloudflare"}
 ---
 
 # @astrojs/ vue
 
 v6.0.1 [GitHub](https://github.com/withastro/astro/tree/main/packages/integrations/vue/) [npm](https://www.npmjs.com/package/@astrojs/vue) [Changelog](https://github.com/withastro/astro/tree/main/packages/integrations/vue/CHANGELOG.md)
 
-This **[Astro integration](/en/guides/integrations/)** enables rendering and client-side hydration for your [Vue 3](https://vuejs.org/) components.
+This **[Astro integration](../../integrations/index.md)** enables rendering and client-side hydration for your [Vue 3](https://vuejs.org/) components.
 
 ## Installation
 
@@ -72,7 +72,7 @@ export default defineConfig({  // ...  integrations: [vue()],});
 
 [Section titled “Getting started”](#getting-started)
 
-To use your first Vue component in Astro, head to our [UI framework documentation](/en/guides/framework-components/#using-framework-components). You’ll explore:
+To use your first Vue component in Astro, head to our [UI framework documentation](../../framework-components/index.md#using-framework-components). You’ll explore:
 
 *   📦 how framework components are loaded,
 *   💧 client-side hydration options, and
@@ -84,7 +84,7 @@ To use your first Vue component in Astro, head to our [UI framework documentatio
 
 For help, check out the `#support` channel on [Discord](https://astro.build/chat). Our friendly Support Squad members are here to help!
 
-You can also check our [Astro Integration Documentation](/en/guides/integrations/) for more on integrations.
+You can also check our [Astro Integration Documentation](../../integrations/index.md) for more on integrations.
 
 ## Contributing
 
@@ -183,34 +183,34 @@ export default defineConfig({  // ...  integrations: [    vue({      devtools: {
 
 *   ![](/logos/alpine-js.svg)
     
-    ### [@astrojs/alpinejs](/en/guides/integrations-guide/alpinejs/)
+    ### [@astrojs/alpinejs](../alpinejs/index.md)
     
 *   ![](/logos/preact.svg)
     
-    ### [@astrojs/preact](/en/guides/integrations-guide/preact/)
+    ### [@astrojs/preact](../preact/index.md)
     
 *   ![](/logos/react.svg)
     
-    ### [@astrojs/react](/en/guides/integrations-guide/react/)
+    ### [@astrojs/react](../react/index.md)
     
 *   ![](/logos/solid.svg)
     
-    ### [@astrojs/solid⁠-⁠js](/en/guides/integrations-guide/solid-js/)
+    ### [@astrojs/solid⁠-⁠js](../solid-js/index.md)
     
 *   ![](/logos/svelte.svg)
     
-    ### [@astrojs/svelte](/en/guides/integrations-guide/svelte/)
+    ### [@astrojs/svelte](../svelte/index.md)
     
 *   ![](/logos/vue.svg)
     
-    ### [@astrojs/vue](/en/guides/integrations-guide/vue/)
+    ### [@astrojs/vue](index.md)
     
 
 ### Adapters
 
 *   ![](/logos/cloudflare-pages.svg)
     
-    ### [@astrojs/cloudflare](/en/guides/integrations-guide/cloudflare/)
+    ### [@astrojs/cloudflare](../cloudflare/index.md)
     
 *   ![](/logos/netlify.svg)
     
@@ -218,34 +218,34 @@ export default defineConfig({  // ...  integrations: [    vue({      devtools: {
     
 *   ![](/logos/node.svg)
     
-    ### [@astrojs/node](/en/guides/integrations-guide/node/)
+    ### [@astrojs/node](../node/index.md)
     
 *   ![](/logos/vercel.svg)
     
-    ### [@astrojs/vercel](/en/guides/integrations-guide/vercel/)
+    ### [@astrojs/vercel](../vercel/index.md)
     
 
 ### Other integrations
 
 *   ![](/logos/db.svg)
     
-    ### [@astrojs/db](/en/guides/integrations-guide/db/)
+    ### [@astrojs/db](../db/index.md)
     
 *   ![](/logos/markdoc.svg)
     
-    ### [@astrojs/markdoc](/en/guides/integrations-guide/markdoc/)
+    ### [@astrojs/markdoc](../markdoc/index.md)
     
 *   ![](/logos/mdx.svg)
     
-    ### [@astrojs/mdx](/en/guides/integrations-guide/mdx/)
+    ### [@astrojs/mdx](../mdx/index.md)
     
 *   ![](/logos/partytown.svg)
     
-    ### [@astrojs/partytown](/en/guides/integrations-guide/partytown/)
+    ### [@astrojs/partytown](../partytown/index.md)
     
 *   ![](/logos/sitemap.svg)
     
-    ### [@astrojs/sitemap](/en/guides/integrations-guide/sitemap/)
+    ### [@astrojs/sitemap](../sitemap/index.md)
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

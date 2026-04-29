@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:32.324Z"
 content_hash: "58d65394d80fe850453b543cdf12d14537cc75acbefc7f95c948d5a7dde92308"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Redis version management","→","Redis version management","→\n      \n        Upgrade Redis database version","→","Upgrade Redis database version"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Redis products","→","Redis products","→\n      \n        Redis Cloud","→","Redis Cloud","→\n      \n        Manage databases","→","Manage databases","→\n      \n        Redis version management","→","Redis version management","→\n      \n        Upgrade Redis database version","→","Upgrade Redis database version"]
-nav_prev: {"path": "../../rdi/view-edit/index.md", "title": "View and edit data pipeline"}
-nav_next: {"path": "../../../langcache/create-service/index.md", "title": "Create a LangCache service"}
+nav_prev: {"path": "redis/docs/latest/operate/rc/databases/rdi/view-edit/index.md", "title": "View and edit data pipeline"}
+nav_next: {"path": "redis/docs/latest/operate/rc/langcache/create-service/index.md", "title": "Create a LangCache service"}
 ---
 
 # Upgrade Redis database version
@@ -33,9 +33,9 @@ Please keep in mind the following before upgrading your database version:
     
     *   [Redis 7.2](/docs/latest/operate/rc/changelog/version-release-notes/7-2/)
     *   [Redis 7.4](/docs/latest/operate/rc/changelog/version-release-notes/7-4/)
-    *   [Redis 8.0](/docs/latest/operate/rc/changelog/version-release-notes/8-0/)
-    *   [Redis 8.2](/docs/latest/operate/rc/changelog/version-release-notes/8-2/)
-    *   [Redis 8.4](/docs/latest/operate/rc/changelog/version-release-notes/8-4/)
+    *   [Redis 8.0](../../../changelog/version-release-notes/8-0/index.md)
+    *   [Redis 8.2](../../../changelog/version-release-notes/8-2/index.md)
+    *   [Redis 8.4](../../../changelog/version-release-notes/8-4/index.md)
 *   You must upgrade the target database in an [Active-Passive](/docs/latest/operate/rc/databases/migrate-databases/#sync-using-active-passive) setup before you upgrade the source database to prevent compatibility issues.
     
 

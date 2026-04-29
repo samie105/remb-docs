@@ -11,8 +11,8 @@ menu_path: ["Webpack 5 Adoption"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../url-deprecated/index.md", "title": "`url` is deprecated"}
-nav_next: {"path": "../../pages/index.md", "title": "Pages Router"}
+nav_prev: {"path": "nextjs/docs/messages/url-deprecated/index.md", "title": "`url` is deprecated"}
+nav_next: {"path": "nextjs/docs/pages/index.md", "title": "Pages Router"}
 ---
 
 # Webpack 5 Adoption
@@ -55,9 +55,9 @@ In the past releases we have gradually rolled out webpack 5 to Next.js applicati
 In case you do have custom webpack configuration, either through custom plugins or your own modifications you'll have to take a few steps to ensure your applications works with webpack 5.
 
 -   When using `next-transpile-modules` make sure you use the latest version which includes [this patch](https://github.com/martpie/next-transpile-modules/pull/179)
--   When using `@zeit/next-css` / `@zeit/next-sass` make sure you use the [built-in CSS/Sass support](/docs/app/getting-started/css) instead
+-   When using `@zeit/next-css` / `@zeit/next-sass` make sure you use the [built-in CSS/Sass support](../../app/getting-started/css/index.md) instead
 -   When using `@zeit/next-preact` use [this example](https://github.com/vercel/next.js/tree/canary/examples/using-preact) instead
--   When using `@zeit/next-source-maps` use the [built-in production Source Map support](/docs/pages/api-reference/config/next-config-js/productionBrowserSourceMaps)
+-   When using `@zeit/next-source-maps` use the [built-in production Source Map support](../../pages/api-reference/config/next-config-js/productionBrowserSourceMaps/index.md)
 -   When using webpack plugins make sure they're upgraded to the latest version, in most cases the latest version will include webpack 5 support. In some cases these upgraded webpack plugins will only support webpack 5.
 
 ## Useful Links[](#useful-links)

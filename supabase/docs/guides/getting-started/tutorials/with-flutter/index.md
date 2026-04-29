@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:49.415Z"
 content_hash: "a5f757342383ee9b5a7d1a19ec2438ef4f8a91dd27fca93e0babf92de2f0362e"
 menu_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Flutter","Flutter"]
 section_path: ["Start with Supabase","Start with Supabase","Mobile tutorials","Mobile tutorials","Flutter","Flutter"]
-nav_prev: {"path": "../with-expo-react-native/index.md", "title": "Build a User Management App with Expo React Native"}
-nav_next: {"path": "../with-ionic-angular/index.md", "title": "Build a User Management App with Ionic Angular"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/tutorials/with-expo-react-native/index.md", "title": "Build a User Management App with Expo React Native"}
+nav_next: {"path": "supabase/docs/guides/getting-started/tutorials/with-ionic-angular/index.md", "title": "Build a User Management App with Ionic Angular"}
 ---
 
 # 
@@ -21,9 +21,9 @@ Build a User Management App with Flutter
 
 This tutorial demonstrates how to build a basic user management app. The app authenticates and identifies the user, stores their profile information in the database, and allows the user to log in, update their profile details, and upload a profile photo. The app uses:
 
-*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](/docs/guides/auth#row-level-security) so data is protected and users can only access their own information.
-*   [Supabase Auth](/docs/guides/auth) - allow users to sign up and log in.
-*   [Supabase Storage](/docs/guides/storage) - allow users to upload a profile photo.
+*   [Supabase Database](/docs/guides/database) - a Postgres database for storing your user data and [Row Level Security](../../../auth/index.md#row-level-security) so data is protected and users can only access their own information.
+*   [Supabase Auth](../../../auth/index.md) - allow users to sign up and log in.
+*   [Supabase Storage](../../../storage/index.md) - allow users to upload a profile photo.
 
 ![Supabase User Management example](/docs/img/supabase-flutter-demo.png)
 
@@ -59,7 +59,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=flutter).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -115,7 +115,7 @@ Add `CFBundleURLTypes` to enable deep linking:
 
 ### Main function[#](#main-function)
 
-Now that we have deep links ready let's initialize the Supabase client inside our `main` function with the API credentials that you copied [earlier](#get-the-api-keys). These variables will be exposed on the app, and that's completely fine since we have [Row Level Security](/docs/guides/auth#row-level-security) enabled on our Database.
+Now that we have deep links ready let's initialize the Supabase client inside our `main` function with the API credentials that you copied [earlier](#get-the-api-keys). These variables will be exposed on the app, and that's completely fine since we have [Row Level Security](../../../auth/index.md#row-level-security) enabled on our Database.
 
 ```
 1import 'package:flutter/material.dart';2import 'package:supabase_flutter/supabase_flutter.dart';34Future<void> main() async {5  await Supabase.initialize(6    url: 'YOUR_SUPABASE_URL',7    publishableKey: 'YOUR_SUPABASE_PUBLISHABLE_KEY',8  );9  runApp(const MyApp());10}1112final supabase = Supabase.instance.client;1314class MyApp extends StatelessWidget {15  const MyApp({super.key});1617  @override18  Widget build(BuildContext context) {19    return const MaterialApp(title: 'Supabase Flutter');20  }21}2223extension ContextExtension on BuildContext {24  void showSnackBar(String message, {bool isError = false}) {25    ScaffoldMessenger.of(this).showSnackBar(26      SnackBar(27        content: Text(message),28        backgroundColor: isError29            ? Theme.of(this).colorScheme.error30            : Theme.of(this).snackBarTheme.backgroundColor,31      ),32    );33  }34}
@@ -167,7 +167,7 @@ And then open the browser to [localhost:3000](http://localhost:3000) and you sho
 
 ## Bonus: Profile photos[#](#bonus-profile-photos)
 
-Every Supabase project is configured with [Storage](/docs/guides/storage) for managing large files like photos and videos.
+Every Supabase project is configured with [Storage](../../../storage/index.md) for managing large files like photos and videos.
 
 ### Making sure we have a public bucket[#](#making-sure-we-have-a-public-bucket)
 

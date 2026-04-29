@@ -10,8 +10,8 @@ content_hash: "ece94b96037e7913b0a300194b028848c5abb5c188741163585b917cd251223f"
 menu_path: ["Connection URLs"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../prisma-config-reference/index.md", "title": "Config API"}
-nav_next: {"path": "../environment-variables-reference/index.md", "title": "Environment Variables"}
+nav_prev: {"path": "prisma/docs/orm/reference/prisma-config-reference/index.md", "title": "Config API"}
+nav_next: {"path": "prisma/docs/orm/reference/environment-variables-reference/index.md", "title": "Environment Variables"}
 ---
 
 Learn about the format and syntax Prisma ORM uses for defining database connection URLs for PostgreSQL, MySQL and SQLite

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:56:55.125Z"
 content_hash: "44322afa143bd23091c9d1fb4190df0a0a14dced3848a9abddd2d6905c5b47c2"
 menu_path: ["Write to stdout"]
 section_path: []
-nav_prev: {"path": "../response/index.md", "title": "Write a Response to a file"}
-nav_next: {"path": "../stream/index.md", "title": "Write a ReadableStream to a file"}
+nav_prev: {"path": "bun/docs/guides/write-file/response/index.md", "title": "Write a Response to a file"}
+nav_next: {"path": "bun/docs/guides/write-file/stream/index.md", "title": "Write a ReadableStream to a file"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../stream/index.md", "title": "Write a ReadableStream to a f
 
 [Runtime
 
-](/docs)[Package Manager
+](../../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../../feedback/index.md)
 
 The `console.log` function writes to `stdout`. It will automatically append a line break at the end of the printed data.
 
@@ -43,7 +43,7 @@ console.log("Lorem ipsum");
 
 * * *
 
-For more advanced use cases, Bun exposes `stdout` as a `BunFile` via the `Bun.stdout` property. This can be used as a destination for [`Bun.write()`](/docs/runtime/file-io#writing-files-bun-write).
+For more advanced use cases, Bun exposes `stdout` as a `BunFile` via the `Bun.stdout` property. This can be used as a destination for [`Bun.write()`](../../../runtime/file-io/index.md#writing-files-bun-write).
 
 ```
 await Bun.write(Bun.stdout, "Lorem ipsum");
@@ -51,7 +51,7 @@ await Bun.write(Bun.stdout, "Lorem ipsum");
 
 * * *
 
-See [Docs > API > File I/O](/docs/runtime/file-io#writing-files-bun-write) for complete documentation of `Bun.write()`.
+See [Docs > API > File I/O](../../../runtime/file-io/index.md#writing-files-bun-write) for complete documentation of `Bun.write()`.
 
 Was this page helpful?
 
@@ -63,10 +63,10 @@ Write a ReadableStream to a file
 
 Previous
 
-](/docs/guides/write-file/stream)[
+](../stream/index.md)[
 
 Write a file to stdout
 
 Next
 
-](/docs/guides/write-file/cat)
+](../cat/index.md)

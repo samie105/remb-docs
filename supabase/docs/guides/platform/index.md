@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:32:23.225Z"
 content_hash: "04f60656e2316cc42971ad04cca25e4918c7f6c254238ec10e29695cc28cad73"
 menu_path: ["Supabase Platform"]
 section_path: []
-nav_prev: {"path": "../local-development/testing/pgtap-extended/index.md", "title": "Advanced pgTAP Testing"}
-nav_next: {"path": "access-control/index.md", "title": "Access Control"}
+nav_prev: {"path": "supabase/docs/guides/local-development/testing/pgtap-extended/index.md", "title": "Advanced pgTAP Testing"}
+nav_next: {"path": "supabase/docs/guides/platform/access-control/index.md", "title": "Access Control"}
 ---
 
 # 
@@ -29,14 +29,14 @@ Each project on Supabase comes with:
 
 *   A dedicated [Postgres database](/docs/guides/database)
 *   [Auto-generated APIs](/docs/guides/database/api)
-*   [Auth and user management](/docs/guides/auth)
-*   [Edge Functions](/docs/guides/functions)
-*   [Realtime API](/docs/guides/realtime)
-*   [Storage](/docs/guides/storage)
+*   [Auth and user management](../auth/index.md)
+*   [Edge Functions](../functions/index.md)
+*   [Realtime API](../realtime/index.md)
+*   [Storage](../storage/index.md)
 
 ## Organizations[#](#organizations)
 
-Organizations are a way to group your projects. Each organization can be configured with different team members and billing settings. Refer to [access control](/docs/guides/platform/access-control) for more information on how to manage team members within an organization.
+Organizations are a way to group your projects. Each organization can be configured with different team members and billing settings. Refer to [access control](access-control/index.md) for more information on how to manage team members within an organization.
 
 ## Platform status[#](#platform-status)
 

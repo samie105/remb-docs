@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:54.937Z"
 content_hash: "3f068b0c0ea67f4ce47fc91a89e44c913bd65929de01738d5256cea06eb1c2cb"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Field and type options","→","Field and type options"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Redis for AI and search","→","Redis for AI and search","→\n      \n        Redis Search","→","Redis Search","→\n      \n        Indexing","→","Indexing","→\n      \n        Field and type options","→","Field and type options"]
-nav_prev: {"path": "../index.md", "title": "Indexing"}
-nav_next: {"path": "../geoindex/index.md", "title": "Geospatial indexing"}
+nav_prev: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/index.md", "title": "Indexing"}
+nav_next: {"path": "redis/docs/latest/develop/ai/search-and-query/indexing/geoindex/index.md", "title": "Geospatial indexing"}
 ---
 
 # Field and type options
@@ -145,7 +145,7 @@ You can query geo fields using the `@<field_name>:[<lon> <lat> <radius> <unit>]`
 FT.SEARCH cities "@coords:[2.34 48.86 1000 km]"
 ```
 
-See [Geospatial queries](/docs/latest/develop/ai/search-and-query/query/geo-spatial/) for more information and code examples.
+See [Geospatial queries](../../query/geo-spatial/index.md) for more information and code examples.
 
 ## Geoshape fields
 
@@ -173,7 +173,7 @@ Query geoshape fields using the syntax `@<field_name>:[<OPERATION> <shape>]` whe
 FT.SEARCH idx "(@geom:[CONTAINS $qshape])" PARAMS 2 qshape "POINT (2 2)" RETURN 1 name DIALECT 2
 ```
 
-See [Geospatial queries](/docs/latest/develop/ai/search-and-query/query/geo-spatial/) for more information and code examples.
+See [Geospatial queries](../../query/geo-spatial/index.md) for more information and code examples.
 
 ## Vector fields
 
@@ -208,7 +208,7 @@ Where:
 *   `{attribute_name} {attribute_value}` are algorithm attributes for the creation of the vector index. Every algorithm has its own mandatory and optional attributes.
     
 
-For more information about vector fields, see [vector fields](/docs/latest/develop/ai/search-and-query/vectors/).
+For more information about vector fields, see [vector fields](../../vectors/index.md).
 
 ## Tag fields
 

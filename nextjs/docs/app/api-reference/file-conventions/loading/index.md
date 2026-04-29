@@ -11,8 +11,8 @@ menu_path: ["loading.js"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../layout/index.md", "title": "layout.js"}
-nav_next: {"path": "../mdx-components/index.md", "title": "mdx-components.js"}
+nav_prev: {"path": "nextjs/docs/app/api-reference/file-conventions/layout/index.md", "title": "layout.js"}
+nav_next: {"path": "nextjs/docs/app/api-reference/file-conventions/mdx-components/index.md", "title": "mdx-components.js"}
 ---
 
 # loading.js
@@ -36,7 +36,7 @@ export default function Loading() {
 
 Inside the `loading.js` file, you can add any light-weight loading UI. You may find it helpful to use the [React Developer Tools](https://react.dev/learn/react-developer-tools) to manually toggle Suspense boundaries.
 
-By default, this file is a [Server Component](/docs/app/getting-started/server-and-client-components) - but can also be used as a Client Component through the `"use client"` directive.
+By default, this file is a [Server Component](../../../getting-started/server-and-client-components/index.md) - but can also be used as a Client Component through the `"use client"` directive.
 
 ## Reference[](#reference)
 
@@ -46,7 +46,7 @@ Loading UI components do not accept any parameters.
 
 ## Behavior[](#behavior)
 
--   The Fallback UI is [prefetched](/docs/app/getting-started/linking-and-navigating#prefetching), making navigation immediate unless prefetching hasn't completed.
+-   The Fallback UI is [prefetched](../../../getting-started/linking-and-navigating/index.md#prefetching), making navigation immediate unless prefetching hasn't completed.
 -   Navigation is interruptible, meaning changing routes does not need to wait for the content of the route to fully load before navigating to another route.
 -   Shared layouts remain interactive while new route segments load.
 
@@ -73,26 +73,26 @@ In the same folder, `loading.js` will be nested inside `layout.js`. It will auto
 
 ![loading.js overview](https://h8DxKfmAPhn8O0p3.public.blob.vercel-storage.com/docs/light/loading-overview.png)
 
-In the [component hierarchy](/docs/app/getting-started/project-structure#component-hierarchy), `loading.js` wraps `not-found.js`, `page.js`, and nested `layout.js` files in a `<Suspense>` boundary. It does **not** wrap the `layout.js`, `template.js`, or `error.js` in the same segment.
+In the [component hierarchy](../../../getting-started/project-structure/index.md#component-hierarchy), `loading.js` wraps `not-found.js`, `page.js`, and nested `layout.js` files in a `<Suspense>` boundary. It does **not** wrap the `layout.js`, `template.js`, or `error.js` in the same segment.
 
 > **Good to know**: If the layout accesses uncached or runtime data (e.g. `cookies()`, `headers()`, or uncached fetches), `loading.js` will not show a fallback for it.
 > 
-> -   **Without [Cache Components](/docs/app/getting-started/caching):** Navigation blocks until the layout finishes rendering.
-> -   **With [Cache Components](/docs/app/getting-started/caching):** Uncached or runtime data access in the layout must be explicitly wrapped in `<Suspense>`, otherwise Next.js guides you with a build-time error. The static shell streams first, and the uncached content fills in.
+> -   **Without [Cache Components](../../../getting-started/caching/index.md):** Navigation blocks until the layout finishes rendering.
+> -   **With [Cache Components](../../../getting-started/caching/index.md):** Uncached or runtime data access in the layout must be explicitly wrapped in `<Suspense>`, otherwise Next.js guides you with a build-time error. The static shell streams first, and the uncached content fills in.
 > 
-> To ensure instant navigation, move uncached data fetching from `layout.js` into `page.js`, or wrap the runtime data access in your layout in its own `<Suspense>` boundary. See [layout.js Caveats](/docs/app/api-reference/file-conventions/layout#interaction-with-loadingjs) for details and examples.
+> To ensure instant navigation, move uncached data fetching from `layout.js` into `page.js`, or wrap the runtime data access in your layout in its own `<Suspense>` boundary. See [layout.js Caveats](../layout/index.md#interaction-with-loadingjs) for details and examples.
 
 ### SEO[](#seo)
 
--   For bots that only scrape static HTML, and cannot execute JavaScript like a full browser, such as Twitterbot, Next.js resolves [`generateMetadata`](/docs/app/api-reference/functions/generate-metadata) before streaming UI, and metadata is placed in the `<head>` of the initial HTML.
--   Otherwise, [streaming metadata](/docs/app/api-reference/functions/generate-metadata#streaming-metadata) may be used. Next.js automatically detects user agents to choose between blocking and streaming behavior.
+-   For bots that only scrape static HTML, and cannot execute JavaScript like a full browser, such as Twitterbot, Next.js resolves [`generateMetadata`](../../functions/generate-metadata/index.md) before streaming UI, and metadata is placed in the `<head>` of the initial HTML.
+-   Otherwise, [streaming metadata](../../functions/generate-metadata/index.md#streaming-metadata) may be used. Next.js automatically detects user agents to choose between blocking and streaming behavior.
 -   Since streaming is server-rendered, it does not impact SEO. You can use the [Rich Results Test](https://search.google.com/test/rich-results) tool from Google to see how your page appears to Google's web crawlers and view the serialized HTML ([source](https://web.dev/rendering-on-the-web/#seo-considerations)).
 
 ### Status Codes[](#status-codes)
 
 When streaming, a `200` status code will be returned to signal that the request was successful.
 
-The server can still communicate errors or issues to the client within the streamed content itself, for example, when using [`redirect`](/docs/app/api-reference/functions/redirect) or [`notFound`](/docs/app/api-reference/functions/not-found). Because the response headers have already been sent to the client, the status code of the response cannot be updated.
+The server can still communicate errors or issues to the client within the streamed content itself, for example, when using [`redirect`](../../functions/redirect/index.md) or [`notFound`](../../functions/not-found/index.md). Because the response headers have already been sent to the client, the status code of the response cannot be updated.
 
 For example, when a 404 page is streamed to the client, Next.js includes a `<meta name="robots" content="noindex">` tag in the streamed HTML. This prevents search engines from indexing that URL even if the HTTP status is 200. See Google’s guidance on the [`robots` meta tag](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag).
 
@@ -100,7 +100,7 @@ Some crawlers may label these responses as “soft 404s”. In the streaming cas
 
 If you need a 404 status, for compliance or analytics, ensure the resource exists before the response body is streamed, so that the server can set the HTTP status code.
 
-You can run this check in [`proxy`](/docs/app/api-reference/file-conventions/proxy) to rewrite missing slugs to a not-found route, or [produce a 404 response](/docs/app/api-reference/file-conventions/proxy#producing-a-response). Keep proxy checks fast, and avoid fetching full content there.
+You can run this check in [`proxy`](../proxy/index.md) to rewrite missing slugs to a not-found route, or [produce a 404 response](../proxy/index.md#producing-a-response). Keep proxy checks fast, and avoid fetching full content there.
 
 **When is the response body streamed?**
 
@@ -116,18 +116,18 @@ To start streaming, the response headers must be set. This is why it is not poss
 
 | Deployment Option | Supported |
 | --- | --- |
-| [Node.js server](/docs/app/getting-started/deploying#nodejs-server) | Yes |
-| [Docker container](/docs/app/getting-started/deploying#docker) | Yes |
-| [Static export](/docs/app/getting-started/deploying#static-export) | No |
-| [Adapters](/docs/app/getting-started/deploying#adapters) | Platform-specific |
+| [Node.js server](../../../getting-started/deploying/index.md#nodejs-server) | Yes |
+| [Docker container](../../../getting-started/deploying/index.md#docker) | Yes |
+| [Static export](../../../getting-started/deploying/index.md#static-export) | No |
+| [Adapters](../../../getting-started/deploying/index.md#adapters) | Platform-specific |
 
-Learn how to [configure streaming](/docs/app/guides/self-hosting#streaming-and-suspense) when self-hosting Next.js.
+Learn how to [configure streaming](../../../guides/self-hosting/index.md#streaming-and-suspense) when self-hosting Next.js.
 
 ## Examples[](#examples)
 
 ### Streaming with Suspense[](#streaming-with-suspense)
 
-In addition to `loading.js`, you can also manually create Suspense Boundaries for your own UI components. The App Router supports streaming with [Suspense](https://react.dev/reference/react/Suspense). See the [Streaming guide](/docs/app/guides/streaming) for more on how streaming works, including granular Suspense patterns, Route Handler streaming, and infrastructure considerations.
+In addition to `loading.js`, you can also manually create Suspense Boundaries for your own UI components. The App Router supports streaming with [Suspense](https://react.dev/reference/react/Suspense). See the [Streaming guide](../../../guides/streaming/index.md) for more on how streaming works, including granular Suspense patterns, Route Handler streaming, and infrastructure considerations.
 
 `<Suspense>` works by wrapping a component that performs an asynchronous action (e.g. fetch data), showing fallback UI (e.g. skeleton, spinner) while it's happening, and then swapping in your component once the action completes.
 

@@ -10,8 +10,8 @@ content_hash: "8f29c6dd69de38d647f3ca4c32e2054f646e0d969588497b701df2c3ff7a430c"
 menu_path: ["Drizzle ORM - Gel auth extension"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../full-text-search-with-generated-columns/index.md", "title": "Drizzle ORM - Full-text search with Generated Columns"}
-nav_next: {"path": "../include-or-exclude-columns/index.md", "title": "Drizzle ORM - Include or Exclude Columns in Query"}
+nav_prev: {"path": "drizzle/docs/guides/full-text-search-with-generated-columns/index.md", "title": "Drizzle ORM - Full-text search with Generated Columns"}
+nav_next: {"path": "drizzle/docs/guides/include-or-exclude-columns/index.md", "title": "Drizzle ORM - Include or Exclude Columns in Query"}
 ---
 
 Drizzle | Gel auth extension

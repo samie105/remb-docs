@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T17:01:05.675Z"
 content_hash: "aede478b61174b7b6601c9519efc28a4a0205ea90a5d08e13f0478aa1b6e8631"
 menu_path: ["Node.js Compatibility"]
 section_path: []
-nav_prev: {"path": "../node-api/index.md", "title": "Node-API"}
-nav_next: {"path": "../plugins/index.md", "title": "Plugins"}
+nav_prev: {"path": "bun/docs/runtime/node-api/index.md", "title": "Node-API"}
+nav_next: {"path": "bun/docs/runtime/plugins/index.md", "title": "Plugins"}
 ---
 
 [Skip to main content](#content-area)
@@ -19,21 +19,21 @@ nav_next: {"path": "../plugins/index.md", "title": "Plugins"}
 
 [Runtime
 
-](/docs)[Package Manager
+](../../index.md)[Package Manager
 
-](/docs/pm/cli/install)[Bundler
+](../../pm/cli/install/index.md)[Bundler
 
-](/docs/bundler)[Test Runner
+](../../bundler/index.md)[Test Runner
 
-](/docs/test)[Guides
+](../../test/index.md)[Guides
 
-](/docs/guides)[Reference
+](../../guides/index.md)[Reference
 
 ](https://bun.com/reference)[Blog
 
 ](https://bun.com/blog)[Feedback
 
-](/docs/feedback)
+](../../feedback/index.md)
 
 Every day, Bun gets closer to 100% Node.js API compatibility. Today, popular frameworks like Next.js, Express, and millions of `npm` packages intended for Node work with Bun. To ensure compatibility, we run thousands of tests from Node.js’ test suite before every release of Bun. **If a package works in Node.js but doesn’t work in Bun, we consider it a bug in Bun.** Please [open an issue](https://bun.com/issues) and we’ll fix it. This page is updated regularly to reflect compatibility status of the latest version of Bun. The information below reflects Bun’s compatibility with _Node.js v23_.
 
@@ -323,7 +323,7 @@ Built-in Node.js modules
 
 [`node:module`](https://nodejs.org/api/module.html)
 
-🟡 Missing `syncBuiltinESMExports`, `Module#load()`. Overriding `require.cache` is supported for ESM & CJS modules. `module._extensions`, `module._pathCache`, `module._cache` are no-ops. `module.register` is not implemented and we recommend using a [`Bun.plugin`](/docs/runtime/plugins) in the meantime.
+🟡 Missing `syncBuiltinESMExports`, `Module#load()`. Overriding `require.cache` is supported for ESM & CJS modules. `module._extensions`, `module._pathCache`, `module._cache` are no-ops. `module.register` is not implemented and we recommend using a [`Bun.plugin`](../plugins/index.md) in the meantime.
 
 ### 
 
@@ -393,7 +393,7 @@ Built-in Node.js modules
 
 [`node:v8`](https://nodejs.org/api/v8.html)
 
-🟡 `writeHeapSnapshot` and `getHeapSnapshot` are implemented. `serialize` and `deserialize` use JavaScriptCore’s wire format instead of V8’s. Other methods are not implemented. For profiling, use [`bun:jsc`](/docs/project/benchmarking#javascript-heap-stats) instead.
+🟡 `writeHeapSnapshot` and `getHeapSnapshot` are implemented. `serialize` and `deserialize` use JavaScriptCore’s wire format instead of V8’s. Other methods are not implemented. For profiling, use [`bun:jsc`](../../project/benchmarking/index.md#javascript-heap-stats) instead.
 
 ### 
 
@@ -463,7 +463,7 @@ Built-in Node.js modules
 
 [`node:test`](https://nodejs.org/api/test.html)
 
-🟡 Partly implemented. Missing mocks, snapshots, timers. Use [`bun:test`](/docs/test) instead.
+🟡 Partly implemented. Missing mocks, snapshots, timers. Use [`bun:test`](../../test/index.md) instead.
 
 ### 
 
@@ -1195,10 +1195,10 @@ Web APIs
 
 Previous
 
-](/docs/runtime/web-apis)[
+](../web-apis/index.md)[
 
 Roadmap
 
 Next
 
-](/docs/project/roadmap)
+](../../project/roadmap/index.md)

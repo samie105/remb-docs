@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:45:48.233Z"
 content_hash: "2729b32799825b3d7fda3105780b0f4faa1280fd30a05ef12f039a027ba6116e"
 menu_path: ["Separating Events from Effects"]
 section_path: []
-nav_prev: {"path": "../lifecycle-of-reactive-effects/index.md", "title": "Lifecycle of Reactive Effects"}
-nav_next: {"path": "../removing-effect-dependencies/index.md", "title": "Removing Effect Dependencies"}
+nav_prev: {"path": "react/learn/lifecycle-of-reactive-effects/index.md", "title": "Lifecycle of Reactive Effects"}
+nav_next: {"path": "react/learn/removing-effect-dependencies/index.md", "title": "Removing Effect Dependencies"}
 ---
 
 Event handlers only re-run when you perform the same interaction again. Unlike event handlers, Effects re-synchronize if some value they read, like a prop or a state variable, is different from what it was during the last render. Sometimes, you also want a mix of both behaviors: an Effect that re-runs in response to some values but not others. This page will teach you how to do that.

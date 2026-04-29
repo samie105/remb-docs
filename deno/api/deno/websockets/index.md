@@ -10,8 +10,8 @@ content_hash: "f215932323a495e01e8732dbaf42a55f58abfd3350194e1232bab49a97bc3afe"
 menu_path: ["WebSockets - Deno documentation"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../testing/index.md", "title": "Testing - Deno documentation"}
-nav_next: {"path": "../~/Deno/index.md", "title": "namespace Deno"}
+nav_prev: {"path": "deno/api/deno/testing/index.md", "title": "Testing - Deno documentation"}
+nav_next: {"path": "deno/api/deno/~/Deno/index.md", "title": "namespace Deno"}
 ---
 
 f

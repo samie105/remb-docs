@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:58:12.347Z"
 content_hash: "010622ad3abf9a8dedef9ad077fc75c8ed0cc08a71ab8ad2bfe4e445816b5e4d"
 menu_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","iOS SwiftUI","iOS SwiftUI"]
 section_path: ["Start with Supabase","Start with Supabase","Framework Quickstarts","Framework Quickstarts","iOS SwiftUI","iOS SwiftUI"]
-nav_prev: {"path": "../hono/index.md", "title": "Use Supabase with Hono"}
-nav_next: {"path": "../kotlin/index.md", "title": "Use Supabase with Android Kotlin"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/quickstarts/hono/index.md", "title": "Use Supabase with Hono"}
+nav_next: {"path": "supabase/docs/guides/getting-started/quickstarts/kotlin/index.md", "title": "Use Supabase with Android Kotlin"}
 ---
 
 # 
@@ -93,7 +93,7 @@ Now that you've created some database tables, you are ready to insert data using
 
 To do this, you need to get the Project URL and key from [the project **Connect** dialog](/dashboard/project/_?showConnect=true&connectTab=mobiles&framework=swift).
 
-[Read the API keys docs](/docs/guides/api/api-keys) for a full explanation of all key types and their uses.
+[Read the API keys docs](../../../api/api-keys/index.md) for a full explanation of all key types and their uses.
 
 ##### Changes to API keys
 
@@ -145,5 +145,5 @@ If you want to implement authentication features like magic links or OAuth, you 
 
 ## Next steps[#](#next-steps)
 
-*   Learn how to build a complete user management app with authentication in the [Swift tutorial](/docs/guides/getting-started/tutorials/with-swift)
+*   Learn how to build a complete user management app with authentication in the [Swift tutorial](../../tutorials/with-swift/index.md)
 *   Explore the [supabase-swift](https://github.com/supabase/supabase-swift) library on GitHub

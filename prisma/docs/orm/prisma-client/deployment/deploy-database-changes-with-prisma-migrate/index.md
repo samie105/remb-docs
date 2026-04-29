@@ -11,8 +11,8 @@ menu_path: ["Deploying database changes with Prisma Migrate"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../caveats-when-deploying-to-aws-platforms/index.md", "title": "Caveats when deploying to AWS platforms"}
-nav_next: {"path": "../deploy-migrations-from-a-local-environment/index.md", "title": "Deploy migrations from a local environment"}
+nav_prev: {"path": "prisma/docs/orm/prisma-client/deployment/caveats-when-deploying-to-aws-platforms/index.md", "title": "Caveats when deploying to AWS platforms"}
+nav_next: {"path": "prisma/docs/orm/prisma-client/deployment/deploy-migrations-from-a-local-environment/index.md", "title": "Deploy migrations from a local environment"}
 ---
 
 Deployment

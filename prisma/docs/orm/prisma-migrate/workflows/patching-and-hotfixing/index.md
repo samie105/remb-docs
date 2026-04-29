@@ -11,8 +11,8 @@ menu_path: ["Patching & hotfixing"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun","npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../native-database-types/index.md", "title": "Native database types"}
-nav_next: {"path": "../prototyping-your-schema/index.md", "title": "Prototyping your schema"}
+nav_prev: {"path": "prisma/docs/orm/prisma-migrate/workflows/native-database-types/index.md", "title": "Native database types"}
+nav_next: {"path": "prisma/docs/orm/prisma-migrate/workflows/prototyping-your-schema/index.md", "title": "Prototyping your schema"}
 ---
 
 How to reconcile the migration history after applying a hotfix or patch to a production environment.

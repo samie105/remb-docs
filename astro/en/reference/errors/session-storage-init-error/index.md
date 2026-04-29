@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:35.150Z"
 content_hash: "77dff7faf83078e364f242a90a93f4572c0e6d21808740bc1e8c3eab51be5c65"
 menu_path: ["Session storage could not be initialized."]
 section_path: []
-nav_prev: {"path": "../session-config-without-flag-error/index.md", "title": "Session flag not set"}
-nav_next: {"path": "../session-storage-save-error/index.md", "title": "Session data could not be saved."}
+nav_prev: {"path": "astro/en/reference/errors/session-config-without-flag-error/index.md", "title": "Session flag not set"}
+nav_next: {"path": "astro/en/reference/errors/session-storage-save-error/index.md", "title": "Session data could not be saved."}
 ---
 
 # Session storage could not be initialized.
@@ -25,6 +25,6 @@ Thrown when the session storage could not be initialized.
 
 **See Also:**
 
-*   [Sessions](/en/guides/sessions/)
+*   [Sessions](../../../guides/sessions/index.md)
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../../../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:42:24.396Z"
 content_hash: "9961153b90594d0fca78f7988b1927a1582500f0a2db73761f2e0c0bdf407904"
 menu_path: ["Install Astro"]
 section_path: []
-nav_prev: {"path": "../astro-courses/index.md", "title": "Astro Courses"}
-nav_next: {"path": "../basics/project-structure/index.md", "title": "Project structure"}
+nav_prev: {"path": "astro/en/astro-courses/index.md", "title": "Astro Courses"}
+nav_next: {"path": "astro/en/basics/project-structure/index.md", "title": "Project structure"}
 ---
 
 # Install Astro
@@ -65,7 +65,7 @@ You can run `create astro` anywhere on your machine, so there’s no need to cre
     npm install
     ```
     
-4.  You can now [start the Astro dev server](/en/develop-and-build/#start-the-astro-dev-server) and see a live preview of your project while you build!
+4.  You can now [start the Astro dev server](../develop-and-build/index.md#start-the-astro-dev-server) and see a live preview of your project while you build!
     
 
 ## CLI installation flags
@@ -80,7 +80,7 @@ See [all the available `create astro` command flags](https://github.com/withastr
 
 [Section titled “Add integrations”](#add-integrations)
 
-You can start a new Astro project and install any [official integrations](/en/guides/integrations/) or community integrations that support the `astro add` command at the same time by passing the `--add` argument to the `create astro` command.
+You can start a new Astro project and install any [official integrations](../guides/integrations/index.md) or community integrations that support the `astro add` command at the same time by passing the `--add` argument to the `create astro` command.
 
 Run the following command in your terminal, substituting any integration that supports the `astro add` command:
 
@@ -190,9 +190,9 @@ If you prefer not to use our automatic `create astro` CLI tool, you can set up y
     // https://astro.build/configexport default defineConfig({});
     ```
     
-    If you want to include [UI framework components](/en/guides/framework-components/) such as React, Svelte, etc. or use other tools such as MDX or Partytown in your project, here is where you will [manually import and configure integrations](/en/guides/integrations/).
+    If you want to include [UI framework components](../guides/framework-components/index.md) such as React, Svelte, etc. or use other tools such as MDX or Partytown in your project, here is where you will [manually import and configure integrations](../guides/integrations/index.md).
     
-    Read Astro’s [API configuration reference](/en/reference/configuration-reference/) for more information.
+    Read Astro’s [API configuration reference](../reference/configuration-reference/index.md) for more information.
     
 6.  Add TypeScript support
     
@@ -206,7 +206,7 @@ If you prefer not to use our automatic `create astro` CLI tool, you can set up y
     {  "extends": "astro/tsconfigs/base"}
     ```
     
-    Read Astro’s [TypeScript setup guide](/en/guides/typescript/#setup) for more information.
+    Read Astro’s [TypeScript setup guide](../guides/typescript/index.md#setup) for more information.
     
 7.  Next Steps
     
@@ -232,7 +232,7 @@ If you prefer not to use our automatic `create astro` CLI tool, you can set up y
     *   package.json
     *   tsconfig.json
     
-8.  You can now [start the Astro dev server](/en/develop-and-build/#start-the-astro-dev-server) and see a live preview of your project while you build!
+8.  You can now [start the Astro dev server](../develop-and-build/index.md#start-the-astro-dev-server) and see a live preview of your project while you build!
     
 
-[Contribute](/en/contribute/) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)
+[Contribute](../contribute/index.md) [Community](https://astro.build/chat) [Sponsor](https://opencollective.com/astrodotbuild)

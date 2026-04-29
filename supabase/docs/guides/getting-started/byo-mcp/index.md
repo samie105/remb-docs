@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:46:06.071Z"
 content_hash: "1eb6716b4e7ad9b54b579c62ff713569f3a23be5ea5ab173b0b8a8d4a581b31a"
 menu_path: ["Start with Supabase","Start with Supabase","AI Tools","AI Tools","Deploy MCP servers","Deploy MCP servers"]
 section_path: ["Start with Supabase","Start with Supabase","AI Tools","AI Tools","Deploy MCP servers","Deploy MCP servers"]
-nav_prev: {"path": "../architecture/index.md", "title": "Architecture"}
-nav_next: {"path": "../features/index.md", "title": "Features"}
+nav_prev: {"path": "supabase/docs/guides/getting-started/architecture/index.md", "title": "Architecture"}
+nav_next: {"path": "supabase/docs/guides/getting-started/features/index.md", "title": "Features"}
 ---
 
 # 
@@ -19,7 +19,7 @@ Deploy MCP servers
 
 * * *
 
-Build and deploy [Model Context Protocol](https://modelcontextprotocol.io/specification/2025-11-25) (MCP) servers on Supabase using [Edge Functions](/docs/guides/functions).
+Build and deploy [Model Context Protocol](https://modelcontextprotocol.io/specification/2025-11-25) (MCP) servers on Supabase using [Edge Functions](../../functions/index.md).
 
 This guide covers MCP servers that do not require authentication. Auth support for MCP on Edge Functions is coming soon.
 
@@ -29,7 +29,7 @@ Before you begin, make sure you have:
 
 *   [Docker](https://docs.docker.com/get-docker/) or a compatible runtime installed and running (required for local development)
 *   [Deno](https://deno.land/) installed (Supabase Edge Functions runtime)
-*   [Supabase CLI](/docs/guides/local-development) installed and authenticated
+*   [Supabase CLI](../../local-development/index.md) installed and authenticated
 *   [Node.js 20 or later](https://nodejs.org/) (required by Supabase CLI)
 
 ## Deploy your MCP server[#](#deploy-your-mcp-server)
@@ -54,7 +54,7 @@ Create a new Edge Function for your MCP server:
 1supabase functions new mcp
 ```
 
-This tutorial uses the [official MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) with the `WebStandardStreamableHTTPServerTransport`, but you can use any MCP framework that's compatible with the [Edge Runtime](/docs/guides/functions), such as [mcp-lite](https://github.com/fiberplane/mcp-lite) or [mcp-handler](https://github.com/vercel/mcp-handler).
+This tutorial uses the [official MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) with the `WebStandardStreamableHTTPServerTransport`, but you can use any MCP framework that's compatible with the [Edge Runtime](../../functions/index.md), such as [mcp-lite](https://github.com/fiberplane/mcp-lite) or [mcp-handler](https://github.com/vercel/mcp-handler).
 
 Replace the contents of `supabase/functions/mcp/index.ts` with:
 
@@ -150,7 +150,7 @@ You can find ready-to-use MCP server implementations here:
 
 *   [Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25)
 *   [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
-*   [Supabase Edge Functions](/docs/guides/functions)
-*   [OAuth 2.1 Server](/docs/guides/auth/oauth-server)
-*   [MCP Authentication](/docs/guides/auth/oauth-server/mcp-authentication)
-*   [Building MCP servers with mcp-lite](/docs/guides/functions/examples/mcp-server-mcp-lite) - Alternative lightweight framework
+*   [Supabase Edge Functions](../../functions/index.md)
+*   [OAuth 2.1 Server](../../auth/oauth-server/index.md)
+*   [MCP Authentication](../../auth/oauth-server/mcp-authentication/index.md)
+*   [Building MCP servers with mcp-lite](../../functions/examples/mcp-server-mcp-lite/index.md) - Alternative lightweight framework

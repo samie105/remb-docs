@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:50:56.293Z"
 content_hash: "6ad76bbde2b9a7913eead211f04f426392c40390d6a7c29fc384932688d54cb2"
 menu_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure SAML 2.0 SSO","Configure SAML 2.0 SSO"]
 section_path: ["Self-Hosting","Self-Hosting","How-to Guides","How-to Guides","Configure SAML 2.0 SSO","Configure SAML 2.0 SSO"]
-nav_prev: {"path": "../self-hosted-s3/index.md", "title": "Configure S3 Storage"}
-nav_next: {"path": "../../storage/index.md", "title": "Storage"}
+nav_prev: {"path": "supabase/docs/guides/self-hosting/self-hosted-s3/index.md", "title": "Configure S3 Storage"}
+nav_next: {"path": "supabase/docs/guides/storage/index.md", "title": "Storage"}
 ---
 
 # 
@@ -27,13 +27,13 @@ SAML 2.0 SSO lets your users authenticate through an enterprise Identity Provide
 
 This guide covers the full setup: generating a signing key, enabling SAML in your Supabase instance, registering an IdP, and integrating SSO into your application.
 
-Client-side integration uses the same `supabase.auth.signInWithSSO()` method documented in the [SSO with SAML 2.0](/docs/guides/auth/enterprise-sso/auth-sso-saml) guide. This guide focuses on the self-hosted server configuration.
+Client-side integration uses the same `supabase.auth.signInWithSSO()` method documented in the [SSO with SAML 2.0](../../auth/enterprise-sso/auth-sso-saml/index.md) guide. This guide focuses on the self-hosted server configuration.
 
 ## Before you begin[#](#before-you-begin)
 
 You need:
 
-*   A running self-hosted Supabase instance (see the [setup guide](/docs/guides/self-hosting/docker))
+*   A running self-hosted Supabase instance (see the [setup guide](../docker/index.md))
 *   Open SSL installed (for key generation)
 *   Your IdP's SAML metadata URL or metadata XML
 *   The `SERVICE_ROLE_KEY` from your `.env` file (needed for admin API calls)
@@ -504,6 +504,6 @@ The user took too long between initiating SSO and completing authentication at t
 
 ## Additional resources[#](#additional-resources)
 
-*   [SSO with SAML 2.0](/docs/guides/auth/enterprise-sso/auth-sso-saml) - Client-side SAML integration guide
+*   [SSO with SAML 2.0](../../auth/enterprise-sso/auth-sso-saml/index.md) - Client-side SAML integration guide
 *   [Auth server configuration reference](/docs/guides/self-hosting/auth/config) - Full list of Auth environment variables
 *   [SAML 2.0 specification](http://docs.oasis-open.org/security/saml/v2.0/) - The underlying standard

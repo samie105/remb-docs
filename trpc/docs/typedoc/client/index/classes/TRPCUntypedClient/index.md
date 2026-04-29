@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:51:12.574Z"
 content_hash: "2aa258bb097743cc9f709f6b609cf6fe042874ccb36f11d4da9aa4f634085dfc"
 menu_path: ["Class: TRPCUntypedClient<TInferrable>"]
 section_path: []
-nav_prev: {"path": "../TRPCClientError/index.md", "title": "Class: TRPCClientError<TRouterOrProcedure>"}
-nav_next: {"path": "../../functions/createTRPCProxyClient/index.md", "title": "Function: createTRPCProxyClient()"}
+nav_prev: {"path": "trpc/docs/typedoc/client/index/classes/TRPCClientError/index.md", "title": "Class: TRPCClientError<TRouterOrProcedure>"}
+nav_next: {"path": "trpc/docs/typedoc/client/index/functions/createTRPCProxyClient/index.md", "title": "Function: createTRPCProxyClient()"}
 ---
 
 Defined in: [packages/client/src/internals/TRPCUntypedClient.ts:47](https://github.com/trpc/trpc/blob/63407c577124e7a2890a7599484d52a0cf025536/packages/client/src/internals/TRPCUntypedClient.ts#L47)

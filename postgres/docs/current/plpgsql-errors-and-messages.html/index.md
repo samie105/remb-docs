@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:39:59.708Z"
 content_hash: "f6a267ecc2653b75bcd53d63ca282e2ea1714aed76c51f2677e32dbf5386c982"
 menu_path: ["PostgreSQL: Documentation: 18: 41.9. Errors and Messages"]
 section_path: []
-nav_prev: {"path": "../plpgsql-development-tips.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.12.\u00a0Tips for Developing in PL/pgSQL"}
-nav_next: {"path": "../plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
+nav_prev: {"path": "postgres/docs/current/plpgsql-development-tips.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.12.\u00a0Tips for Developing in PL/pgSQL"}
+nav_next: {"path": "postgres/docs/current/plpgsql-expressions.html/index.md", "title": "PostgreSQL: Documentation: 18: 41.4.\u00a0Expressions"}
 ---
 
 ### 41.9.1. Reporting Errors and Messages [#](#PLPGSQL-STATEMENTS-RAISE)

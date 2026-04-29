@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:48:49.857Z"
 content_hash: "f7c0c3039371976145b50819a60a65f83303f346177308f1218f1a20704ae67c"
 menu_path: ["PostgreSQL: Documentation: 18: 31.3. Variant Comparison Files"]
 section_path: []
-nav_prev: {"path": "../recovery-config.html/index.md", "title": "PostgreSQL: Documentation: 18: O.1.\u00a0recovery.conf file merged into postgresql.conf"}
-nav_next: {"path": "../release-18-1.html/index.md", "title": "PostgreSQL: Documentation: 18: E.3.\u00a0Release 18.1"}
+nav_prev: {"path": "postgres/docs/current/recovery-config.html/index.md", "title": "PostgreSQL: Documentation: 18: O.1.\u00a0recovery.conf file merged into postgresql.conf"}
+nav_next: {"path": "postgres/docs/current/release-18-1.html/index.md", "title": "PostgreSQL: Documentation: 18: E.3.\u00a0Release 18.1"}
 ---
 
 Since some of the tests inherently produce environment-dependent results, we have provided ways to specify alternate “expected” result files. Each regression test can have several comparison files showing possible results on different platforms. There are two independent mechanisms for determining which comparison file is used for each test.

@@ -11,8 +11,8 @@ menu_path: ["poweredByHeader"]
 section_path: []
 version: "latest"
 content_language: "en"
-nav_prev: {"path": "../pageExtensions/index.md", "title": "pageExtensions"}
-nav_next: {"path": "../productionBrowserSourceMaps/index.md", "title": "productionBrowserSourceMaps"}
+nav_prev: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/pageExtensions/index.md", "title": "pageExtensions"}
+nav_next: {"path": "nextjs/docs/pages/api-reference/config/next-config-js/productionBrowserSourceMaps/index.md", "title": "productionBrowserSourceMaps"}
 ---
 
 # poweredByHeader

@@ -10,8 +10,8 @@ content_hash: "5b2c61d17d6def875989af9520152a581d94a675e6fd475afe3badde0cbcab6d"
 menu_path: ["border-width"]
 section_path: []
 content_language: "en"
-nav_prev: {"path": "../border-radius/index.md", "title": "border-radius"}
-nav_next: {"path": "../border-color/index.md", "title": "border-color"}
+nav_prev: {"path": "tailwind/docs/border-radius/index.md", "title": "border-radius"}
+nav_next: {"path": "tailwind/docs/border-color/index.md", "title": "border-color"}
 ---
 
 Utilities for controlling the width of an element's borders.

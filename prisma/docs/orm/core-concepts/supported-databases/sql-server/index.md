@@ -11,8 +11,8 @@ menu_path: ["SQL Server"]
 section_path: []
 tab_variants: ["npm","pnpm","yarn","bun"]
 content_language: "en"
-nav_prev: {"path": "../postgresql/index.md", "title": "PostgreSQL"}
-nav_next: {"path": "../sqlite/index.md", "title": "SQLite"}
+nav_prev: {"path": "prisma/docs/orm/core-concepts/supported-databases/postgresql/index.md", "title": "PostgreSQL"}
+nav_next: {"path": "prisma/docs/orm/core-concepts/supported-databases/sqlite/index.md", "title": "SQLite"}
 ---
 
 Supported databases

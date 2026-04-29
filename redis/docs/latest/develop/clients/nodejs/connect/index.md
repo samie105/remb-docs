@@ -9,8 +9,8 @@ last_crawled_at: "2026-04-18T16:47:00.759Z"
 content_hash: "89cbcdd3372afb413e9fa54363ec175250e1988811422a9c4e8a288a31e70b05"
 menu_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Connect to the server","→","Connect to the server"]
 section_path: ["Docs\n        Docs","Docs\n        Docs","Docs","Docs","→\n      \n        Develop with Redis","→","Develop with Redis","→\n      \n        Connect with Redis client API libraries","→","Connect with Redis client API libraries","→\n      \n        node-redis guide (JavaScript)","→","node-redis guide (JavaScript)","→\n      \n        Connect to the server","→","Connect to the server"]
-nav_prev: {"path": "../amr/index.md", "title": "Connect to Azure Managed Redis"}
-nav_next: {"path": "../error-handling/index.md", "title": "Error handling"}
+nav_prev: {"path": "redis/docs/latest/develop/clients/nodejs/amr/index.md", "title": "Connect to Azure Managed Redis"}
+nav_next: {"path": "redis/docs/latest/develop/clients/nodejs/error-handling/index.md", "title": "Error handling"}
 ---
 
 # Connect to the server
@@ -102,7 +102,7 @@ await cluster.close();
 
 ## Connect to your production Redis with TLS
 
-When you deploy your application, use TLS and follow the [Redis security](/docs/latest/operate/oss_and_stack/management/security/) guidelines.
+When you deploy your application, use TLS and follow the [Redis security](../../../../operate/oss_and_stack/management/security/index.md) guidelines.
 
 ```js
 const client = createClient({
@@ -139,9 +139,9 @@ Note:
 
 Client-side caching requires `node-redis` v5.1.0 or later. To maximize compatibility with all Redis products, client-side caching is supported by Redis v7.4 or later.
 
-The [Redis server products](/docs/latest/operate/) support [opt-in/opt-out](/docs/latest/develop/reference/client-side-caching/#opt-in-and-opt-out-caching) mode and [broadcasting mode](/docs/latest/develop/reference/client-side-caching/#broadcasting-mode) for CSC, but these modes are not currently implemented by `node-redis`.
+The [Redis server products](/docs/latest/operate/) support [opt-in/opt-out](../../../reference/client-side-caching/index.md#opt-in-and-opt-out-caching) mode and [broadcasting mode](../../../reference/client-side-caching/index.md#broadcasting-mode) for CSC, but these modes are not currently implemented by `node-redis`.
 
-To enable client-side caching, specify the [RESP3](/docs/latest/develop/reference/protocol-spec/#resp-versions) protocol and configure the cache with the `clientSideCache` parameter when you connect. If you want `node-redis` to create the cache for you, then you can pass a simple configuration object in `clientSideCache`, as shown below:
+To enable client-side caching, specify the [RESP3](../../../reference/protocol-spec/index.md#resp-versions) protocol and configure the cache with the `clientSideCache` parameter when you connect. If you want `node-redis` to create the cache for you, then you can pass a simple configuration object in `clientSideCache`, as shown below:
 
 ```js
 const client = createClient({
@@ -202,7 +202,7 @@ client.get("city");     // Retrieved from Redis server and cached
 client.get("city");     // Retrieved from cache
 ```
 
-You can see the cache working if you connect to the same Redis database with [`redis-cli`](/docs/latest/develop/tools/cli/) and run the [`MONITOR`](/docs/latest/commands/monitor/) command. If you run the code above but without passing `clientSideCache` during the connection, you should see the following in the CLI among the output from `MONITOR`:
+You can see the cache working if you connect to the same Redis database with [`redis-cli`](../../../tools/cli/index.md) and run the [`MONITOR`](/docs/latest/commands/monitor/) command. If you run the code above but without passing `clientSideCache` during the connection, you should see the following in the CLI among the output from `MONITOR`:
 
 ```
 1723109720.268903 [...] "SET" "city" "New York"
@@ -311,7 +311,7 @@ const client = createClient({
 
 Note:
 
-SCH requires the [RESP3](/docs/latest/develop/reference/protocol-spec/#resp-versions) protocol, so you must set the `RESP:3` option explicitly when you connect.
+SCH requires the [RESP3](../../../reference/protocol-spec/index.md#resp-versions) protocol, so you must set the `RESP:3` option explicitly when you connect.
 
 The available options are:
 
