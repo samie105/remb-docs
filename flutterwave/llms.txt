@@ -1,54 +1,58 @@
-# Flutterwave Docs
+# Flutterwave
 
-Clean, markdown-formatted snapshot of Flutterwave developer documentation.
+> Documentation corpus for Flutterwave. 41 pages.
 
-## Overview
+## Concept Index
 
-| | |
-|---|---|
-| **Source** | https://developer.flutterwave.com |
-| **Pages** | 80 |
-| **Kind** | platform |
-| **Adapter** | generic |
+- **in a django-like app** — [`flutterwave/docs/webhooks/index.md`](flutterwave/docs/webhooks/index.md)
+- **supported request headers** — [`flutterwave/docs/api-headers/index.md`](flutterwave/docs/api-headers/index.md)
+- **sample curl request to the payment gateways api endpoint** — [`flutterwave/docs/authentication/index.md`](flutterwave/docs/authentication/index.md)
+- **integration journey** — [`flutterwave/docs/integration-journey/index.md`](flutterwave/docs/integration-journey/index.md)
+- **loan disbursements** — [`flutterwave/docs/managing-instant-loan-disbursements/index.md`](flutterwave/docs/managing-instant-loan-disbursements/index.md)
+- **reporting vat** — [`flutterwave/docs/reporting-vat/index.md`](flutterwave/docs/reporting-vat/index.md)
+- **testing** — [`flutterwave/docs/testing/index.md`](flutterwave/docs/testing/index.md)
 
-## Pages
+## Pages by Area
 
-- [Getting Started](flutterwave/docs/index.md)
-- [Quickstart](flutterwave/docs/quickstart/index.md)
-- [Integration Journey](flutterwave/docs/integration-journey/index.md)
-- [Environments](flutterwave/docs/environments/index.md)
-- [Authentication](flutterwave/docs/authentication/index.md)
+### docs
 - [Supported Request Headers](flutterwave/docs/api-headers/index.md)
-- [Encryption](flutterwave/docs/encryption/index.md)
-- [Errors](flutterwave/docs/common-errors/index.md)
-- [Webhooks](flutterwave/docs/payment-webhooks/index.md)
-- [Idempotency](flutterwave/docs/idempotency/index.md)
-- [Testing](flutterwave/docs/sandbox-testing/index.md)
-- [Best Practices](flutterwave/docs/best-practices/index.md)
-- [Collections — Introduction](flutterwave/docs/introduction-1/index.md)
-- [General Flow](flutterwave/docs/general-flow/index.md)
-- [Orchestrator Flow](flutterwave/docs/orchestrator-flow/index.md)
-- [Card Payments](flutterwave/docs/card/index.md)
-- [Mobile Money](flutterwave/docs/mobile-money/index.md)
-- [Pay With Bank Transfer](flutterwave/docs/bank-transfer/index.md)
-- [USSD](flutterwave/docs/ussd/index.md)
-- [OPay](flutterwave/docs/opay/index.md)
-- [Payouts — Introduction](flutterwave/docs/introduction-3/index.md)
-- [General Transfer Flow](flutterwave/docs/general-transfer-flow/index.md)
-- [Transfer Orchestrator](flutterwave/docs/direct-transfer-flow/index.md)
+- [Authentication](flutterwave/docs/authentication/index.md)
 - [Bank Account Transfers](flutterwave/docs/bank-transfer/index.md)
-- [Mobile Money Transfers](flutterwave/docs/mobile-money-1/index.md)
-- [Wallet-to-Wallet](flutterwave/docs/wallet-to-wallet/index.md)
-- [Settlements](flutterwave/docs/settlements/index.md)
-- [Refunds](flutterwave/docs/refunds/index.md)
-- [Chargebacks](flutterwave/docs/chargebacks-1/index.md)
-- [Reporting VAT](flutterwave/docs/reporting-vat/index.md)
-- [Fintechs](flutterwave/docs/fintechs/index.md)
 - [Banks and OFIs](flutterwave/docs/banks-and-ofis/index.md)
-- [Travel and Hospitality](flutterwave/docs/travel-and-hospitality/index.md)
+- [Best Practices](flutterwave/docs/best-practices/index.md)
+- [Card Payments](flutterwave/docs/card/index.md)
+- [Chargebacks](flutterwave/docs/chargebacks-1/index.md)
+- [Charging a Card](flutterwave/docs/charging-a-card/index.md)
+- [Errors](flutterwave/docs/common-errors/index.md)
+- [Transfer Orchestrator](flutterwave/docs/direct-transfer-flow/index.md)
 - [E-Commerce](flutterwave/docs/e-commerce/index.md)
-- [Remittance](flutterwave/docs/remittance/index.md)
-- [Telecommunications](flutterwave/docs/telecommunications/index.md)
+- [Encryption](flutterwave/docs/encryption/index.md)
+- [Environments](flutterwave/docs/environments/index.md)
+- [Fintechs](flutterwave/docs/fintechs/index.md)
+- [General Transfer Flow](flutterwave/docs/general-transfer-flow/index.md)
+- [Getting Started](flutterwave/docs/getting-started/index.md)
+- [Idempotency](flutterwave/docs/idempotency/index.md)
+- [Getting Started](flutterwave/docs/index.md)
+- [Integration Journey](flutterwave/docs/integration-journey/index.md)
+- [Introduction](flutterwave/docs/introduction-1/index.md)
+- [Introduction](flutterwave/docs/introduction-3/index.md)
+- [General Flow](flutterwave/docs/main-payment-flow/index.md)
+- [Making a Transfer](flutterwave/docs/making-a-transfer/index.md)
 - [Loan disbursements](flutterwave/docs/managing-instant-loan-disbursements/index.md)
+- [Mobile Money](flutterwave/docs/mobile-money/index.md)
+- [Mobile Money Transfers](flutterwave/docs/mobile-money-1/index.md)
+- [OPay](flutterwave/docs/opay/index.md)
+- [Pay With Bank Transfer](flutterwave/docs/pay-with-bank-transfer/index.md)
+- [Orchestrator Flow](flutterwave/docs/payment-orchestrator-flow/index.md)
+- [Charging a Card](flutterwave/docs/quickstart/index.md)
 - [Real-time FX conversion](flutterwave/docs/real-time-fx-conversion/index.md)
-- [API Reference (partial)](flutterwave/docs/api-headers/index.md)
+- [Refunds](flutterwave/docs/refunds/index.md)
+- [Remittance](flutterwave/docs/remittance/index.md)
+- [Reporting VAT](flutterwave/docs/reporting-vat/index.md)
+- [Settlements](flutterwave/docs/settlements/index.md)
+- [Telecommunications](flutterwave/docs/telecommunications/index.md)
+- [Testing](flutterwave/docs/testing/index.md)
+- [Travel and Hospitality](flutterwave/docs/travel-and-hospitality/index.md)
+- [USSD](flutterwave/docs/ussd/index.md)
+- [Wallet-to-Wallet](flutterwave/docs/wallet-to-wallet/index.md)
+- [Webhooks](flutterwave/docs/webhooks/index.md)

@@ -1,32 +1,64 @@
 # Outray
 
-Clean, markdown-formatted snapshot of Outray developer documentation.
+> Documentation corpus for Outray. 17 pages.
 
-## Overview
+## Concept Index
 
-| | |
-|---|---|
-| **Source** | https://outray.dev |
-| **Pages** | 17 |
-| **Kind** | tool |
-| **Adapter** | generic |
+- **optionsoptions** — [`outray/docs/vite-plugin/index.md`](outray/docs/vite-plugin/index.md)
+- **custom subdomaincustom-subdomain** — [`outray/docs/vite-plugin/index.md`](outray/docs/vite-plugin/index.md)
+- **custom domaincustom-domain** — [`outray/docs/vite-plugin/index.md`](outray/docs/vite-plugin/index.md)
+- **conditional enablingconditional-enabling** — [`outray/docs/vite-plugin/index.md`](outray/docs/vite-plugin/index.md)
+- **with callbackswith-callbacks** — [`outray/docs/vite-plugin/index.md`](outray/docs/vite-plugin/index.md)
+- **silent modesilent-mode** — [`outray/docs/vite-plugin/index.md`](outray/docs/vite-plugin/index.md)
+- **architecture** — [`outray/docs/architecture/index.md`](outray/docs/architecture/index.md)
+- **authentication** — [`outray/docs/authentication/index.md`](outray/docs/authentication/index.md)
+- **ci/cd integration** — [`outray/docs/ci-cd/index.md`](outray/docs/ci-cd/index.md)
+- **use default outray/configtoml** — [`outray/docs/cli-reference/index.md`](outray/docs/cli-reference/index.md)
+- **use a custom config file** — [`outray/docs/cli-reference/index.md`](outray/docs/cli-reference/index.md)
+- **outray validate-configoutray-validate-config** — [`outray/docs/cli-reference/index.md`](outray/docs/cli-reference/index.md)
+- **validate default outray/configtoml** — [`outray/docs/cli-reference/index.md`](outray/docs/cli-reference/index.md)
+- **validate a custom config file** — [`outray/docs/cli-reference/index.md`](outray/docs/cli-reference/index.md)
+- **outray portoutray-port** — [`outray/docs/cli-reference/index.md`](outray/docs/cli-reference/index.md)
+- **outray switchoutray-switch** — [`outray/docs/cli-reference/index.md`](outray/docs/cli-reference/index.md)
+- **interactive selection** — [`outray/docs/cli-reference/index.md`](outray/docs/cli-reference/index.md)
+- **custom domains** — [`outray/docs/custom-domains/index.md`](outray/docs/custom-domains/index.md)
+- **express plugin** — [`outray/docs/express-plugin/index.md`](outray/docs/express-plugin/index.md)
+- **dynamic portdynamic-port** — [`outray/docs/express-plugin/index.md`](outray/docs/express-plugin/index.md)
+- **introduction** — [`outray/docs/index.md`](outray/docs/index.md)
+- **installation** — [`outray/docs/installation/index.md`](outray/docs/installation/index.md)
+- **nestjs plugin** — [`outray/docs/nestjs-plugin/index.md`](outray/docs/nestjs-plugin/index.md)
+- **explicit portexplicit-port** — [`outray/docs/nestjs-plugin/index.md`](outray/docs/nestjs-plugin/index.md)
+- **nextjs plugin** — [`outray/docs/nextjs-plugin/index.md`](outray/docs/nextjs-plugin/index.md)
+- **with other pluginswith-other-plugins** — [`outray/docs/nextjs-plugin/index.md`](outray/docs/nextjs-plugin/index.md)
+- **observability** — [`outray/docs/observability/index.md`](outray/docs/observability/index.md)
+- **opening a tunnel** — [`outray/docs/opening-a-tunnel/index.md`](outray/docs/opening-a-tunnel/index.md)
+- **password protection** — [`outray/docs/password-protection/index.md`](outray/docs/password-protection/index.md)
+- **tcp udp tunnels** — [`outray/docs/protocols/index.md`](outray/docs/protocols/index.md)
+- **reserved subdomains** — [`outray/docs/reserved-subdomains/index.md`](outray/docs/reserved-subdomains/index.md)
+- **teams organizations** — [`outray/docs/teams/index.md`](outray/docs/teams/index.md)
+- **interactive switchinteractive-switch** — [`outray/docs/teams/index.md`](outray/docs/teams/index.md)
+- **direct switchdirect-switch** — [`outray/docs/teams/index.md`](outray/docs/teams/index.md)
+- **per-command overrideper-command-override** — [`outray/docs/teams/index.md`](outray/docs/teams/index.md)
+- **vite plugin** — [`outray/docs/vite-plugin/index.md`](outray/docs/vite-plugin/index.md)
+- **reactreact** — [`outray/docs/vite-plugin/index.md`](outray/docs/vite-plugin/index.md)
 
-## Pages
+## Pages by Area
 
+### docs
+- [Architecture](outray/docs/architecture/index.md)
+- [Authentication](outray/docs/authentication/index.md)
+- [CI/CD Integration](outray/docs/ci-cd/index.md)
+- [CLI Reference](outray/docs/cli-reference/index.md)
+- [Custom Domains](outray/docs/custom-domains/index.md)
+- [Express Plugin](outray/docs/express-plugin/index.md)
 - [Introduction](outray/docs/index.md)
 - [Installation](outray/docs/installation/index.md)
-- [Authentication](outray/docs/authentication/index.md)
-- [Opening a Tunnel](outray/docs/opening-a-tunnel/index.md)
-- [Reserved Subdomains](outray/docs/reserved-subdomains/index.md)
-- [Password Protection](outray/docs/password-protection/index.md)
-- [Custom Domains](outray/docs/custom-domains/index.md)
-- [Teams & Organizations](outray/docs/teams/index.md)
-- [CI/CD Integration](outray/docs/ci-cd/index.md)
-- [Observability](outray/docs/observability/index.md)
-- [Vite Plugin](outray/docs/vite-plugin/index.md)
-- [Next.js Plugin](outray/docs/nextjs-plugin/index.md)
 - [NestJS Plugin](outray/docs/nestjs-plugin/index.md)
-- [Express Plugin](outray/docs/express-plugin/index.md)
+- [Next.js Plugin](outray/docs/nextjs-plugin/index.md)
+- [Observability](outray/docs/observability/index.md)
+- [Opening a Tunnel](outray/docs/opening-a-tunnel/index.md)
+- [Password Protection](outray/docs/password-protection/index.md)
 - [TCP & UDP Tunnels](outray/docs/protocols/index.md)
-- [CLI Reference](outray/docs/cli-reference/index.md)
-- [Architecture](outray/docs/architecture/index.md)
+- [Reserved Subdomains](outray/docs/reserved-subdomains/index.md)
+- [Teams & Organizations](outray/docs/teams/index.md)
+- [Vite Plugin](outray/docs/vite-plugin/index.md)
