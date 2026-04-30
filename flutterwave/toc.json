@@ -1,0 +1,207 @@
+[
+  {
+    "title": "Getting Started",
+    "url": "https://developer.flutterwave.com/docs/getting-started",
+    "children": []
+  },
+  {
+    "title": "Quickstart",
+    "url": "https://developer.flutterwave.com/docs/charging-a-card",
+    "children": []
+  },
+  {
+    "title": "Making a Transfer",
+    "url": "https://developer.flutterwave.com/docs/making-a-transfer",
+    "children": []
+  },
+  {
+    "title": "Integration Journey",
+    "url": "https://developer.flutterwave.com/docs/integration-journey",
+    "children": []
+  },
+  {
+    "title": "Environments",
+    "url": "https://developer.flutterwave.com/docs/environments",
+    "children": []
+  },
+  {
+    "title": "Authentication",
+    "url": "https://developer.flutterwave.com/docs/authentication",
+    "children": []
+  },
+  {
+    "title": "Supported Request Headers",
+    "url": "https://developer.flutterwave.com/docs/api-headers",
+    "children": []
+  },
+  {
+    "title": "Encryption",
+    "url": "https://developer.flutterwave.com/docs/encryption",
+    "children": []
+  },
+  {
+    "title": "Errors",
+    "url": "https://developer.flutterwave.com/docs/common-errors",
+    "children": []
+  },
+  {
+    "title": "Webhooks",
+    "url": "https://developer.flutterwave.com/docs/webhooks",
+    "children": []
+  },
+  {
+    "title": "Idempotency",
+    "url": "https://developer.flutterwave.com/docs/idempotency",
+    "children": []
+  },
+  {
+    "title": "Testing",
+    "url": "https://developer.flutterwave.com/docs/testing",
+    "children": []
+  },
+  {
+    "title": "Best Practices",
+    "url": "https://developer.flutterwave.com/docs/best-practices",
+    "children": []
+  },
+  {
+    "title": "Introduction",
+    "url": "https://developer.flutterwave.com/docs/introduction-1",
+    "children": []
+  },
+  {
+    "title": "General Flow",
+    "url": "https://developer.flutterwave.com/docs/main-payment-flow",
+    "children": []
+  },
+  {
+    "title": "Orchestrator Flow",
+    "url": "https://developer.flutterwave.com/docs/payment-orchestrator-flow",
+    "children": []
+  },
+  {
+    "title": "Card Payments",
+    "url": "https://developer.flutterwave.com/docs/card",
+    "children": []
+  },
+  {
+    "title": "Mobile Money",
+    "url": "https://developer.flutterwave.com/docs/mobile-money",
+    "children": []
+  },
+  {
+    "title": "Pay With Bank Transfer",
+    "url": "https://developer.flutterwave.com/docs/pay-with-bank-transfer",
+    "children": []
+  },
+  {
+    "title": "USSD",
+    "url": "https://developer.flutterwave.com/docs/ussd",
+    "children": []
+  },
+  {
+    "title": "OPay",
+    "url": "https://developer.flutterwave.com/docs/opay",
+    "children": []
+  },
+  {
+    "title": "Introduction",
+    "url": "https://developer.flutterwave.com/docs/introduction-3",
+    "children": []
+  },
+  {
+    "title": "General Transfer Flow",
+    "url": "https://developer.flutterwave.com/docs/general-transfer-flow",
+    "children": []
+  },
+  {
+    "title": "Transfer Orchestrator",
+    "url": "https://developer.flutterwave.com/docs/direct-transfer-flow",
+    "children": []
+  },
+  {
+    "title": "Bank Account Transfers",
+    "url": "https://developer.flutterwave.com/docs/bank-transfer",
+    "children": []
+  },
+  {
+    "title": "Mobile Money Transfers",
+    "url": "https://developer.flutterwave.com/docs/mobile-money-1",
+    "children": []
+  },
+  {
+    "title": "Wallet-to-Wallet",
+    "url": "https://developer.flutterwave.com/docs/wallet-to-wallet",
+    "children": []
+  },
+  {
+    "title": "Settlements",
+    "url": "https://developer.flutterwave.com/docs/settlements",
+    "children": []
+  },
+  {
+    "title": "Refunds",
+    "url": "https://developer.flutterwave.com/docs/refunds",
+    "children": []
+  },
+  {
+    "title": "Chargebacks",
+    "url": "https://developer.flutterwave.com/docs/chargebacks-1",
+    "children": []
+  },
+  {
+    "title": "Reporting VAT",
+    "url": "https://developer.flutterwave.com/docs/reporting-vat",
+    "children": []
+  },
+  {
+    "title": "Fintechs",
+    "url": "https://developer.flutterwave.com/docs/fintechs",
+    "children": []
+  },
+  {
+    "title": "Banks and OFIs",
+    "url": "https://developer.flutterwave.com/docs/banks-and-ofis",
+    "children": []
+  },
+  {
+    "title": "Travel and Hospitality",
+    "url": "https://developer.flutterwave.com/docs/travel-and-hospitality",
+    "children": []
+  },
+  {
+    "title": "E-Commerce",
+    "url": "https://developer.flutterwave.com/docs/e-commerce",
+    "children": []
+  },
+  {
+    "title": "Remittance",
+    "url": "https://developer.flutterwave.com/docs/remittance",
+    "children": []
+  },
+  {
+    "title": "Telecommunications",
+    "url": "https://developer.flutterwave.com/docs/telecommunications",
+    "children": []
+  },
+  {
+    "title": "Loan disbursements",
+    "url": "https://developer.flutterwave.com/docs/managing-instant-loan-disbursements",
+    "children": []
+  },
+  {
+    "title": "Real-time FX conversion",
+    "url": "https://developer.flutterwave.com/docs/real-time-fx-conversion",
+    "children": []
+  },
+  {
+    "title": "Quickstart",
+    "url": "https://developer.flutterwave.com/docs/quickstart",
+    "children": []
+  },
+  {
+    "title": "Table of Contents",
+    "url": "https://developer.flutterwave.com/docs#",
+    "children": []
+  }
+]

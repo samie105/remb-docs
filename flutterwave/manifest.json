@@ -1,0 +1,642 @@
+[
+  {
+    "url": "https://developer.flutterwave.com/docs",
+    "outputPath": "flutterwave/docs/index.md",
+    "title": "Getting Started",
+    "contentHash": "9a3037535d333ca061a37220a215d385e5cfee387bd43f4428e77f9ea5b289a3",
+    "visitedAt": "2026-04-29T23:29:43.865Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/getting-started",
+    "outputPath": "flutterwave/docs/getting-started/index.md",
+    "title": "Getting Started",
+    "contentHash": "9a3037535d333ca061a37220a215d385e5cfee387bd43f4428e77f9ea5b289a3",
+    "visitedAt": "2026-04-29T23:29:49.905Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/charging-a-card",
+    "outputPath": "flutterwave/docs/charging-a-card/index.md",
+    "title": "Charging a Card",
+    "contentHash": "0ec7c5d5f25130a8fd888880da4f77b2ffb0a83a76611c5ed2ea6e66daeb942d",
+    "visitedAt": "2026-04-29T23:29:52.493Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/making-a-transfer",
+    "outputPath": "flutterwave/docs/making-a-transfer/index.md",
+    "title": "Making a Transfer",
+    "contentHash": "c9056a5b615c67a583a66b12b46105a7deb68957b568beeca1de614e53412935",
+    "visitedAt": "2026-04-29T23:29:57.535Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/integration-journey",
+    "outputPath": "flutterwave/docs/integration-journey/index.md",
+    "title": "Integration Journey",
+    "contentHash": "6344249ed402df51fd93e5696dae362e0d6257a63edab2d387c4d66a7ed5675b",
+    "visitedAt": "2026-04-29T23:29:58.729Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/environments",
+    "outputPath": "flutterwave/docs/environments/index.md",
+    "title": "Environments",
+    "contentHash": "dcef13a497157d2585f6af2d0d1f1c39877b47828dd4b1c53db856838c225387",
+    "visitedAt": "2026-04-29T23:30:03.702Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/authentication",
+    "outputPath": "flutterwave/docs/authentication/index.md",
+    "title": "Authentication",
+    "contentHash": "589df348356c109fca9696f2166d8e0e8209b2646fe83d2941f8ef8d771ec024",
+    "visitedAt": "2026-04-29T23:30:06.593Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/api-headers",
+    "outputPath": "flutterwave/docs/api-headers/index.md",
+    "title": "Supported Request Headers",
+    "contentHash": "2d860513da1b84aad124611fff727a7576ab49ae42d582ca5fbdab930a56501b",
+    "visitedAt": "2026-04-29T23:30:10.814Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/encryption",
+    "outputPath": "flutterwave/docs/encryption/index.md",
+    "title": "Encryption",
+    "contentHash": "dcd0c0e02097f1fe3529bbc3ff23bc11d4b5f2d1b90de51dc5853a450f1cd01e",
+    "visitedAt": "2026-04-29T23:30:14.472Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/common-errors",
+    "outputPath": "flutterwave/docs/common-errors/index.md",
+    "title": "Errors",
+    "contentHash": "c45c75e1d32c923a4994db12b31e4fd25a522c9542fc0fe738beb492c3f2ac2b",
+    "visitedAt": "2026-04-29T23:30:17.375Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/webhooks",
+    "outputPath": "flutterwave/docs/webhooks/index.md",
+    "title": "Webhooks",
+    "contentHash": "61d2d163b3fc656dbe5710658a6ec8d276e53613f457d94d62dbcc61e939937b",
+    "visitedAt": "2026-04-29T23:30:22.036Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/idempotency",
+    "outputPath": "flutterwave/docs/idempotency/index.md",
+    "title": "Idempotency",
+    "contentHash": "1cb879741e259bf3e1ebbe442ee4b43b224b63965de26b84a6c49a7dba0f9f09",
+    "visitedAt": "2026-04-29T23:30:23.649Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/testing",
+    "outputPath": "flutterwave/docs/testing/index.md",
+    "title": "Testing",
+    "contentHash": "637db3818508c6e34672731ad3f013f6c127fc82794349fc2fc033a8b2aa16b4",
+    "visitedAt": "2026-04-29T23:30:28.515Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/best-practices",
+    "outputPath": "flutterwave/docs/best-practices/index.md",
+    "title": "Best Practices",
+    "contentHash": "263150f891084a3383723488800512a321c657a04151a084c1028b32dfaa56de",
+    "visitedAt": "2026-04-29T23:30:30.150Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/introduction-1",
+    "outputPath": "flutterwave/docs/introduction-1/index.md",
+    "title": "Introduction",
+    "contentHash": "3d25fb55e8e33b76242291e49a31f6e539581596e2d2bd1bf9ff091d4437a423",
+    "visitedAt": "2026-04-29T23:30:34.515Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/main-payment-flow",
+    "outputPath": "flutterwave/docs/main-payment-flow/index.md",
+    "title": "General Flow",
+    "contentHash": "99bc88cb261dcbbfc79cc498514c71f6a6559ad4eb5ed415cc2df08127894087",
+    "visitedAt": "2026-04-29T23:30:38.521Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/payment-orchestrator-flow",
+    "outputPath": "flutterwave/docs/payment-orchestrator-flow/index.md",
+    "title": "Orchestrator Flow",
+    "contentHash": "eed60a75e9de63ca65c177ee9e46f2625d8c9893319ed54427d264397dcfcd98",
+    "visitedAt": "2026-04-29T23:30:42.855Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/card",
+    "outputPath": "flutterwave/docs/card/index.md",
+    "title": "Card Payments",
+    "contentHash": "91ff40e1d8736d79b943c82c0b06e8cb8136aba122614cb11b3d3fff2274f908",
+    "visitedAt": "2026-04-29T23:30:47.237Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/mobile-money",
+    "outputPath": "flutterwave/docs/mobile-money/index.md",
+    "title": "Mobile Money",
+    "contentHash": "3491ee0eab869c86c6ffb4713581857a4a928917f8aa76ef3d43d35e3ddb8a1e",
+    "visitedAt": "2026-04-29T23:30:49.601Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/pay-with-bank-transfer",
+    "outputPath": "flutterwave/docs/pay-with-bank-transfer/index.md",
+    "title": "Pay With Bank Transfer",
+    "contentHash": "519597103dd3e90cb999ab0342c109db439b415d4dbe37a79397c7cd14f182b8",
+    "visitedAt": "2026-04-29T23:30:53.639Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/ussd",
+    "outputPath": "flutterwave/docs/ussd/index.md",
+    "title": "USSD",
+    "contentHash": "75b9133ce58b2d39f3bf27ac3215b0b8f5870f47fc74ac4a7dd98dc3d6863673",
+    "visitedAt": "2026-04-29T23:30:56.474Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/opay",
+    "outputPath": "flutterwave/docs/opay/index.md",
+    "title": "OPay",
+    "contentHash": "f749f22f4a50ff58249cc6d80ca2a5b3b6e813f25c60ec8bd5089d5849461f2b",
+    "visitedAt": "2026-04-29T23:30:59.999Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/introduction-3",
+    "outputPath": "flutterwave/docs/introduction-3/index.md",
+    "title": "Introduction",
+    "contentHash": "e4a687c4999577be73f86f8ca5329d80ebb1ab4072977ca0618a4a4cfef488ac",
+    "visitedAt": "2026-04-29T23:31:04.243Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/general-transfer-flow",
+    "outputPath": "flutterwave/docs/general-transfer-flow/index.md",
+    "title": "General Transfer Flow",
+    "contentHash": "30d37440bd897d9cb7bbdf6ee868caeb8175b13ae0c6ce41067b2f02bec3d79f",
+    "visitedAt": "2026-04-29T23:31:08.180Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/direct-transfer-flow",
+    "outputPath": "flutterwave/docs/direct-transfer-flow/index.md",
+    "title": "Transfer Orchestrator",
+    "contentHash": "06f416b271809e8f9333c5391912226b775e2739c6660064765a9c889c2f8ae3",
+    "visitedAt": "2026-04-29T23:31:12.035Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/bank-transfer",
+    "outputPath": "flutterwave/docs/bank-transfer/index.md",
+    "title": "Bank Account Transfers",
+    "contentHash": "2e56be1681c1ec522b56896a952982eefd6ef70625e2ded1a162f5217c6c9a05",
+    "visitedAt": "2026-04-29T23:31:22.341Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/mobile-money-1",
+    "outputPath": "flutterwave/docs/mobile-money-1/index.md",
+    "title": "Mobile Money Transfers",
+    "contentHash": "6de7d34a1611d1fe27a151824ee76377e166e38411335e81aa6aad24e0cd0e3e",
+    "visitedAt": "2026-04-29T23:31:26.689Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/wallet-to-wallet",
+    "outputPath": "flutterwave/docs/wallet-to-wallet/index.md",
+    "title": "Wallet-to-Wallet",
+    "contentHash": "5aa63b641618d697cffcefda899739fc908c0501f6e4e0f459b7d0d13fb3d462",
+    "visitedAt": "2026-04-29T23:31:30.426Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/settlements",
+    "outputPath": "flutterwave/docs/settlements/index.md",
+    "title": "Settlements",
+    "contentHash": "bff001fc1eeae90832d1d45e9a63b0e4f7147668f5236f1ec1896e983f1574fa",
+    "visitedAt": "2026-04-29T23:31:32.711Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/refunds",
+    "outputPath": "flutterwave/docs/refunds/index.md",
+    "title": "Refunds",
+    "contentHash": "60d35a4f213048bfb7cc9013c9d32c73bec4515e2f2feaadd3b0260bc519c78d",
+    "visitedAt": "2026-04-29T23:31:36.369Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/chargebacks-1",
+    "outputPath": "flutterwave/docs/chargebacks-1/index.md",
+    "title": "Chargebacks",
+    "contentHash": "88746610a8f4d7d9d3468764a531ea0ee58635bc77ab2b1dcce4d35477e6a3f2",
+    "visitedAt": "2026-04-29T23:31:39.103Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/reporting-vat",
+    "outputPath": "flutterwave/docs/reporting-vat/index.md",
+    "title": "Reporting VAT",
+    "contentHash": "cee5be99c6ed8f150bb3d5b36faae015301f28a1c49cc2e26771fa065d18b09b",
+    "visitedAt": "2026-04-29T23:31:43.244Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/fintechs",
+    "outputPath": "flutterwave/docs/fintechs/index.md",
+    "title": "Fintechs",
+    "contentHash": "4eee1a28cc8697e4f02f00951173e0723768b1da8ea7ef12a270223d2ccfb5e0",
+    "visitedAt": "2026-04-29T23:31:44.809Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/banks-and-ofis",
+    "outputPath": "flutterwave/docs/banks-and-ofis/index.md",
+    "title": "Banks and OFIs",
+    "contentHash": "9a921e378fb5e41f2829db519cad70f5e99ef2602aff09b114106fef9ebfa6f2",
+    "visitedAt": "2026-04-29T23:31:49.233Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/travel-and-hospitality",
+    "outputPath": "flutterwave/docs/travel-and-hospitality/index.md",
+    "title": "Travel and Hospitality",
+    "contentHash": "7cb6de48110174a87fdcd3ff8adc90b6220ff7bc7eb948a6face54033d2417eb",
+    "visitedAt": "2026-04-29T23:31:50.784Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/e-commerce",
+    "outputPath": "flutterwave/docs/e-commerce/index.md",
+    "title": "E-Commerce",
+    "contentHash": "8087e62dcfc8091ee2a91e866edc33512ea3bb337967bf07692d38686482e8b6",
+    "visitedAt": "2026-04-29T23:31:55.133Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/remittance",
+    "outputPath": "flutterwave/docs/remittance/index.md",
+    "title": "Remittance",
+    "contentHash": "43d2cce43a05cf5648505ea9a34db9e14e6e9fbabd747341aa66827ddcfbe1af",
+    "visitedAt": "2026-04-29T23:31:56.728Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/telecommunications",
+    "outputPath": "flutterwave/docs/telecommunications/index.md",
+    "title": "Telecommunications",
+    "contentHash": "ac5eda8ff3a18d270563d5e06415549f00922fb0c83ed053375b4d9e7382b366",
+    "visitedAt": "2026-04-29T23:32:00.979Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/managing-instant-loan-disbursements",
+    "outputPath": "flutterwave/docs/managing-instant-loan-disbursements/index.md",
+    "title": "Loan disbursements",
+    "contentHash": "86d0de79ad9daf968832c040ab677c925b4dd1a43b5d7c710f2350a021a92b70",
+    "visitedAt": "2026-04-29T23:32:02.845Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/real-time-fx-conversion",
+    "outputPath": "flutterwave/docs/real-time-fx-conversion/index.md",
+    "title": "Real-time FX conversion",
+    "contentHash": "7cf4479d6134fb53a611e275f3152fcb7ca92d66aeb501983d9ad97c420470ec",
+    "visitedAt": "2026-04-29T23:32:06.719Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/quickstart",
+    "outputPath": "flutterwave/docs/quickstart/index.md",
+    "title": "Charging a Card",
+    "contentHash": "0ec7c5d5f25130a8fd888880da4f77b2ffb0a83a76611c5ed2ea6e66daeb942d",
+    "visitedAt": "2026-04-29T23:32:11.256Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs#",
+    "outputPath": "flutterwave/docs/index.md",
+    "title": "Getting Started",
+    "contentHash": "9a3037535d333ca061a37220a215d385e5cfee387bd43f4428e77f9ea5b289a3",
+    "visitedAt": "2026-04-29T23:32:13.000Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/getting-started#",
+    "outputPath": "flutterwave/docs/getting-started/index.md",
+    "title": "Getting Started",
+    "contentHash": "9a3037535d333ca061a37220a215d385e5cfee387bd43f4428e77f9ea5b289a3",
+    "visitedAt": "2026-04-29T23:32:17.502Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/charging-a-card#",
+    "outputPath": "flutterwave/docs/charging-a-card/index.md",
+    "title": "Charging a Card",
+    "contentHash": "0ec7c5d5f25130a8fd888880da4f77b2ffb0a83a76611c5ed2ea6e66daeb942d",
+    "visitedAt": "2026-04-29T23:32:21.573Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/making-a-transfer#",
+    "outputPath": "flutterwave/docs/making-a-transfer/index.md",
+    "title": "Making a Transfer",
+    "contentHash": "c9056a5b615c67a583a66b12b46105a7deb68957b568beeca1de614e53412935",
+    "visitedAt": "2026-04-29T23:32:24.918Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/integration-journey#",
+    "outputPath": "flutterwave/docs/integration-journey/index.md",
+    "title": "Integration Journey",
+    "contentHash": "6344249ed402df51fd93e5696dae362e0d6257a63edab2d387c4d66a7ed5675b",
+    "visitedAt": "2026-04-29T23:32:27.511Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/environments#",
+    "outputPath": "flutterwave/docs/environments/index.md",
+    "title": "Environments",
+    "contentHash": "dcef13a497157d2585f6af2d0d1f1c39877b47828dd4b1c53db856838c225387",
+    "visitedAt": "2026-04-29T23:32:30.551Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/authentication#",
+    "outputPath": "flutterwave/docs/authentication/index.md",
+    "title": "Authentication",
+    "contentHash": "589df348356c109fca9696f2166d8e0e8209b2646fe83d2941f8ef8d771ec024",
+    "visitedAt": "2026-04-29T23:32:34.924Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/api-headers#",
+    "outputPath": "flutterwave/docs/api-headers/index.md",
+    "title": "Supported Request Headers",
+    "contentHash": "2d860513da1b84aad124611fff727a7576ab49ae42d582ca5fbdab930a56501b",
+    "visitedAt": "2026-04-29T23:32:38.144Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/common-errors#",
+    "outputPath": "flutterwave/docs/common-errors/index.md",
+    "title": "Errors",
+    "contentHash": "c45c75e1d32c923a4994db12b31e4fd25a522c9542fc0fe738beb492c3f2ac2b",
+    "visitedAt": "2026-04-29T23:32:41.015Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/webhooks#",
+    "outputPath": "flutterwave/docs/webhooks/index.md",
+    "title": "Webhooks",
+    "contentHash": "61d2d163b3fc656dbe5710658a6ec8d276e53613f457d94d62dbcc61e939937b",
+    "visitedAt": "2026-04-29T23:32:45.321Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/idempotency#",
+    "outputPath": "flutterwave/docs/idempotency/index.md",
+    "title": "Idempotency",
+    "contentHash": "1cb879741e259bf3e1ebbe442ee4b43b224b63965de26b84a6c49a7dba0f9f09",
+    "visitedAt": "2026-04-29T23:32:46.922Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/testing#",
+    "outputPath": "flutterwave/docs/testing/index.md",
+    "title": "Testing",
+    "contentHash": "637db3818508c6e34672731ad3f013f6c127fc82794349fc2fc033a8b2aa16b4",
+    "visitedAt": "2026-04-29T23:32:51.422Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/best-practices#",
+    "outputPath": "flutterwave/docs/best-practices/index.md",
+    "title": "Best Practices",
+    "contentHash": "263150f891084a3383723488800512a321c657a04151a084c1028b32dfaa56de",
+    "visitedAt": "2026-04-29T23:32:52.522Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/introduction-1#",
+    "outputPath": "flutterwave/docs/introduction-1/index.md",
+    "title": "Introduction",
+    "contentHash": "3d25fb55e8e33b76242291e49a31f6e539581596e2d2bd1bf9ff091d4437a423",
+    "visitedAt": "2026-04-29T23:32:56.853Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/main-payment-flow#",
+    "outputPath": "flutterwave/docs/main-payment-flow/index.md",
+    "title": "General Flow",
+    "contentHash": "99bc88cb261dcbbfc79cc498514c71f6a6559ad4eb5ed415cc2df08127894087",
+    "visitedAt": "2026-04-29T23:33:00.666Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/payment-orchestrator-flow#",
+    "outputPath": "flutterwave/docs/payment-orchestrator-flow/index.md",
+    "title": "Orchestrator Flow",
+    "contentHash": "eed60a75e9de63ca65c177ee9e46f2625d8c9893319ed54427d264397dcfcd98",
+    "visitedAt": "2026-04-29T23:33:05.074Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/card#",
+    "outputPath": "flutterwave/docs/card/index.md",
+    "title": "Card Payments",
+    "contentHash": "91ff40e1d8736d79b943c82c0b06e8cb8136aba122614cb11b3d3fff2274f908",
+    "visitedAt": "2026-04-29T23:33:08.910Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/mobile-money#",
+    "outputPath": "flutterwave/docs/mobile-money/index.md",
+    "title": "Mobile Money",
+    "contentHash": "3491ee0eab869c86c6ffb4713581857a4a928917f8aa76ef3d43d35e3ddb8a1e",
+    "visitedAt": "2026-04-29T23:33:11.896Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/pay-with-bank-transfer#",
+    "outputPath": "flutterwave/docs/pay-with-bank-transfer/index.md",
+    "title": "Pay With Bank Transfer",
+    "contentHash": "519597103dd3e90cb999ab0342c109db439b415d4dbe37a79397c7cd14f182b8",
+    "visitedAt": "2026-04-29T23:33:15.123Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/ussd#",
+    "outputPath": "flutterwave/docs/ussd/index.md",
+    "title": "USSD",
+    "contentHash": "75b9133ce58b2d39f3bf27ac3215b0b8f5870f47fc74ac4a7dd98dc3d6863673",
+    "visitedAt": "2026-04-29T23:33:18.024Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/opay#",
+    "outputPath": "flutterwave/docs/opay/index.md",
+    "title": "OPay",
+    "contentHash": "f749f22f4a50ff58249cc6d80ca2a5b3b6e813f25c60ec8bd5089d5849461f2b",
+    "visitedAt": "2026-04-29T23:33:21.061Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/introduction-3#",
+    "outputPath": "flutterwave/docs/introduction-3/index.md",
+    "title": "Introduction",
+    "contentHash": "e4a687c4999577be73f86f8ca5329d80ebb1ab4072977ca0618a4a4cfef488ac",
+    "visitedAt": "2026-04-29T23:33:25.222Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/general-transfer-flow#",
+    "outputPath": "flutterwave/docs/general-transfer-flow/index.md",
+    "title": "General Transfer Flow",
+    "contentHash": "30d37440bd897d9cb7bbdf6ee868caeb8175b13ae0c6ce41067b2f02bec3d79f",
+    "visitedAt": "2026-04-29T23:33:28.755Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/direct-transfer-flow#",
+    "outputPath": "flutterwave/docs/direct-transfer-flow/index.md",
+    "title": "Transfer Orchestrator",
+    "contentHash": "06f416b271809e8f9333c5391912226b775e2739c6660064765a9c889c2f8ae3",
+    "visitedAt": "2026-04-29T23:33:32.580Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/bank-transfer#",
+    "outputPath": "flutterwave/docs/bank-transfer/index.md",
+    "title": "Bank Account Transfers",
+    "contentHash": "2e56be1681c1ec522b56896a952982eefd6ef70625e2ded1a162f5217c6c9a05",
+    "visitedAt": "2026-04-29T23:33:42.331Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/mobile-money-1#",
+    "outputPath": "flutterwave/docs/mobile-money-1/index.md",
+    "title": "Mobile Money Transfers",
+    "contentHash": "6de7d34a1611d1fe27a151824ee76377e166e38411335e81aa6aad24e0cd0e3e",
+    "visitedAt": "2026-04-29T23:33:46.906Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/wallet-to-wallet#",
+    "outputPath": "flutterwave/docs/wallet-to-wallet/index.md",
+    "title": "Wallet-to-Wallet",
+    "contentHash": "5aa63b641618d697cffcefda899739fc908c0501f6e4e0f459b7d0d13fb3d462",
+    "visitedAt": "2026-04-29T23:33:50.653Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/settlements#",
+    "outputPath": "flutterwave/docs/settlements/index.md",
+    "title": "Settlements",
+    "contentHash": "bff001fc1eeae90832d1d45e9a63b0e4f7147668f5236f1ec1896e983f1574fa",
+    "visitedAt": "2026-04-29T23:33:52.904Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/refunds#",
+    "outputPath": "flutterwave/docs/refunds/index.md",
+    "title": "Refunds",
+    "contentHash": "60d35a4f213048bfb7cc9013c9d32c73bec4515e2f2feaadd3b0260bc519c78d",
+    "visitedAt": "2026-04-29T23:33:56.296Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/chargebacks-1#",
+    "outputPath": "flutterwave/docs/chargebacks-1/index.md",
+    "title": "Chargebacks",
+    "contentHash": "88746610a8f4d7d9d3468764a531ea0ee58635bc77ab2b1dcce4d35477e6a3f2",
+    "visitedAt": "2026-04-29T23:33:58.658Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/fintechs#",
+    "outputPath": "flutterwave/docs/fintechs/index.md",
+    "title": "Fintechs",
+    "contentHash": "4eee1a28cc8697e4f02f00951173e0723768b1da8ea7ef12a270223d2ccfb5e0",
+    "visitedAt": "2026-04-29T23:34:01.853Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/banks-and-ofis#",
+    "outputPath": "flutterwave/docs/banks-and-ofis/index.md",
+    "title": "Banks and OFIs",
+    "contentHash": "9a921e378fb5e41f2829db519cad70f5e99ef2602aff09b114106fef9ebfa6f2",
+    "visitedAt": "2026-04-29T23:34:04.115Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/travel-and-hospitality#",
+    "outputPath": "flutterwave/docs/travel-and-hospitality/index.md",
+    "title": "Travel and Hospitality",
+    "contentHash": "7cb6de48110174a87fdcd3ff8adc90b6220ff7bc7eb948a6face54033d2417eb",
+    "visitedAt": "2026-04-29T23:34:07.299Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/e-commerce#",
+    "outputPath": "flutterwave/docs/e-commerce/index.md",
+    "title": "E-Commerce",
+    "contentHash": "8087e62dcfc8091ee2a91e866edc33512ea3bb337967bf07692d38686482e8b6",
+    "visitedAt": "2026-04-29T23:34:09.563Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/remittance#",
+    "outputPath": "flutterwave/docs/remittance/index.md",
+    "title": "Remittance",
+    "contentHash": "43d2cce43a05cf5648505ea9a34db9e14e6e9fbabd747341aa66827ddcfbe1af",
+    "visitedAt": "2026-04-29T23:34:13.081Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/telecommunications#",
+    "outputPath": "flutterwave/docs/telecommunications/index.md",
+    "title": "Telecommunications",
+    "contentHash": "ac5eda8ff3a18d270563d5e06415549f00922fb0c83ed053375b4d9e7382b366",
+    "visitedAt": "2026-04-29T23:34:15.175Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/managing-instant-loan-disbursements#",
+    "outputPath": "flutterwave/docs/managing-instant-loan-disbursements/index.md",
+    "title": "Loan disbursements",
+    "contentHash": "86d0de79ad9daf968832c040ab677c925b4dd1a43b5d7c710f2350a021a92b70",
+    "visitedAt": "2026-04-29T23:34:18.916Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/real-time-fx-conversion#",
+    "outputPath": "flutterwave/docs/real-time-fx-conversion/index.md",
+    "title": "Real-time FX conversion",
+    "contentHash": "7cf4479d6134fb53a611e275f3152fcb7ca92d66aeb501983d9ad97c420470ec",
+    "visitedAt": "2026-04-29T23:34:21.144Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://developer.flutterwave.com/docs/quickstart#",
+    "outputPath": "flutterwave/docs/quickstart/index.md",
+    "title": "Charging a Card",
+    "contentHash": "0ec7c5d5f25130a8fd888880da4f77b2ffb0a83a76611c5ed2ea6e66daeb942d",
+    "visitedAt": "2026-04-29T23:34:27.331Z",
+    "status": "visited"
+  }
+]

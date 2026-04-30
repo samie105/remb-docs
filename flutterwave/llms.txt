@@ -1,0 +1,54 @@
+# Flutterwave Docs
+
+Clean, markdown-formatted snapshot of Flutterwave developer documentation.
+
+## Overview
+
+| | |
+|---|---|
+| **Source** | https://developer.flutterwave.com |
+| **Pages** | 80 |
+| **Kind** | platform |
+| **Adapter** | generic |
+
+## Pages
+
+- [Getting Started](flutterwave/docs/index.md)
+- [Quickstart](flutterwave/docs/quickstart/index.md)
+- [Integration Journey](flutterwave/docs/integration-journey/index.md)
+- [Environments](flutterwave/docs/environments/index.md)
+- [Authentication](flutterwave/docs/authentication/index.md)
+- [Supported Request Headers](flutterwave/docs/api-headers/index.md)
+- [Encryption](flutterwave/docs/encryption/index.md)
+- [Errors](flutterwave/docs/common-errors/index.md)
+- [Webhooks](flutterwave/docs/payment-webhooks/index.md)
+- [Idempotency](flutterwave/docs/idempotency/index.md)
+- [Testing](flutterwave/docs/sandbox-testing/index.md)
+- [Best Practices](flutterwave/docs/best-practices/index.md)
+- [Collections — Introduction](flutterwave/docs/introduction-1/index.md)
+- [General Flow](flutterwave/docs/general-flow/index.md)
+- [Orchestrator Flow](flutterwave/docs/orchestrator-flow/index.md)
+- [Card Payments](flutterwave/docs/card/index.md)
+- [Mobile Money](flutterwave/docs/mobile-money/index.md)
+- [Pay With Bank Transfer](flutterwave/docs/bank-transfer/index.md)
+- [USSD](flutterwave/docs/ussd/index.md)
+- [OPay](flutterwave/docs/opay/index.md)
+- [Payouts — Introduction](flutterwave/docs/introduction-3/index.md)
+- [General Transfer Flow](flutterwave/docs/general-transfer-flow/index.md)
+- [Transfer Orchestrator](flutterwave/docs/direct-transfer-flow/index.md)
+- [Bank Account Transfers](flutterwave/docs/bank-transfer/index.md)
+- [Mobile Money Transfers](flutterwave/docs/mobile-money-1/index.md)
+- [Wallet-to-Wallet](flutterwave/docs/wallet-to-wallet/index.md)
+- [Settlements](flutterwave/docs/settlements/index.md)
+- [Refunds](flutterwave/docs/refunds/index.md)
+- [Chargebacks](flutterwave/docs/chargebacks-1/index.md)
+- [Reporting VAT](flutterwave/docs/reporting-vat/index.md)
+- [Fintechs](flutterwave/docs/fintechs/index.md)
+- [Banks and OFIs](flutterwave/docs/banks-and-ofis/index.md)
+- [Travel and Hospitality](flutterwave/docs/travel-and-hospitality/index.md)
+- [E-Commerce](flutterwave/docs/e-commerce/index.md)
+- [Remittance](flutterwave/docs/remittance/index.md)
+- [Telecommunications](flutterwave/docs/telecommunications/index.md)
+- [Loan disbursements](flutterwave/docs/managing-instant-loan-disbursements/index.md)
+- [Real-time FX conversion](flutterwave/docs/real-time-fx-conversion/index.md)
+- [API Reference (partial)](flutterwave/docs/api-headers/index.md)

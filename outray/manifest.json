@@ -1,0 +1,138 @@
+[
+  {
+    "url": "https://outray.dev/docs",
+    "outputPath": "outray/docs/index.md",
+    "title": "Introduction",
+    "contentHash": "48044f5e5d3920da61bc9eb42eddfc1337e944dd2a1b2ff63cc0bc69e0728b1b",
+    "visitedAt": "2026-04-29T23:23:27.022Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/installation",
+    "outputPath": "outray/docs/installation/index.md",
+    "title": "Installation",
+    "contentHash": "de3c64485a1be815dbdabf0d96c725facd2d886144de398a57c4c04dbc8da044",
+    "visitedAt": "2026-04-29T23:23:59.436Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/authentication",
+    "outputPath": "outray/docs/authentication/index.md",
+    "title": "Authentication",
+    "contentHash": "fcbb9e9404020a458e4399b4016534dd2af7ce4e1153430c0bfff0d9345dab7a",
+    "visitedAt": "2026-04-29T23:23:59.611Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/opening-a-tunnel",
+    "outputPath": "outray/docs/opening-a-tunnel/index.md",
+    "title": "Opening a Tunnel",
+    "contentHash": "a4a1f0902609edc91bde4c439fd40767bd2fa9a7d5b7a0e0f799add94ae50d9b",
+    "visitedAt": "2026-04-29T23:24:32.107Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/reserved-subdomains",
+    "outputPath": "outray/docs/reserved-subdomains/index.md",
+    "title": "Reserved Subdomains",
+    "contentHash": "3e297a413180ec22b8fbab4f775d12c1465f55e273638ccf701d379407f624f9",
+    "visitedAt": "2026-04-29T23:24:32.246Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/custom-domains",
+    "outputPath": "outray/docs/custom-domains/index.md",
+    "title": "Custom Domains",
+    "contentHash": "45450dbc914a7658d6050523d72b015e99357037755cbdff0f47fd7b2111fb1d",
+    "visitedAt": "2026-04-29T23:25:04.520Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/password-protection",
+    "outputPath": "outray/docs/password-protection/index.md",
+    "title": "Password Protection",
+    "contentHash": "f0bf1e1aacf05d6fe192825c46a195d5ec299d99b4219539cb77ae7e85d06ca1",
+    "visitedAt": "2026-04-29T23:25:04.721Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/teams",
+    "outputPath": "outray/docs/teams/index.md",
+    "title": "Teams & Organizations",
+    "contentHash": "801d988b7b456cf08ee674efb65290ab3c3b09f0b74205d94a861acc3622357b",
+    "visitedAt": "2026-04-29T23:25:36.840Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/ci-cd",
+    "outputPath": "outray/docs/ci-cd/index.md",
+    "title": "CI/CD Integration",
+    "contentHash": "24701b0134434bc1c435553caad2b2c4d74f752ec5a52afd5200463521d4f49f",
+    "visitedAt": "2026-04-29T23:25:37.156Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/observability",
+    "outputPath": "outray/docs/observability/index.md",
+    "title": "Observability",
+    "contentHash": "a9024ac0e128ac643448a61d0cbbf6815077eec409a9b5d79fcaf71e83671bc0",
+    "visitedAt": "2026-04-29T23:26:09.119Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/vite-plugin",
+    "outputPath": "outray/docs/vite-plugin/index.md",
+    "title": "Vite Plugin",
+    "contentHash": "a1d846214e4ec5a7d63b99220f93246116b82bbf35441bf84ac1aa19811c281e",
+    "visitedAt": "2026-04-29T23:26:10.594Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/nextjs-plugin",
+    "outputPath": "outray/docs/nextjs-plugin/index.md",
+    "title": "Next.js Plugin",
+    "contentHash": "49e28dd86cc1a510d74761e96cc140052f937396f69198c419fdbceaf71b7edc",
+    "visitedAt": "2026-04-29T23:26:42.775Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/nestjs-plugin",
+    "outputPath": "outray/docs/nestjs-plugin/index.md",
+    "title": "NestJS Plugin",
+    "contentHash": "4c03aaa40875a2ef540ef2e35c4cb1539a0d8b5fe9235556f74c0103c7835c98",
+    "visitedAt": "2026-04-29T23:26:44.430Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/protocols",
+    "outputPath": "outray/docs/protocols/index.md",
+    "title": "TCP & UDP Tunnels",
+    "contentHash": "0fa177beb1eaae753a7c7e703bff3dc6bd2b95d4c01dabf83cfda87cbc9f9c3f",
+    "visitedAt": "2026-04-29T23:27:16.765Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/express-plugin",
+    "outputPath": "outray/docs/express-plugin/index.md",
+    "title": "Express Plugin",
+    "contentHash": "e041b97c2f74bbb2d44b2deca442a418c89f8b4df85dca1a4da33560d2cde0ea",
+    "visitedAt": "2026-04-29T23:27:17.280Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/cli-reference",
+    "outputPath": "outray/docs/cli-reference/index.md",
+    "title": "CLI Reference",
+    "contentHash": "e321740412d79c59d5559e09e9844c1a8ccd79d6ef9e7f2ccf9575eed4757d2d",
+    "visitedAt": "2026-04-29T23:27:50.236Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://outray.dev/docs/architecture",
+    "outputPath": "outray/docs/architecture/index.md",
+    "title": "Architecture",
+    "contentHash": "cc060eb27e0884f6acc9cd8e45c9ec91fec8b61c525abd9367a7cd4450979565",
+    "visitedAt": "2026-04-29T23:27:50.674Z",
+    "status": "visited"
+  }
+]

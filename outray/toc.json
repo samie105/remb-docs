@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Introduction",
+    "url": "https://outray.dev/docs",
+    "children": []
+  },
+  {
+    "title": "Installation",
+    "url": "https://outray.dev/docs/installation",
+    "children": []
+  },
+  {
+    "title": "Authentication",
+    "url": "https://outray.dev/docs/authentication",
+    "children": []
+  },
+  {
+    "title": "Opening a Tunnel",
+    "url": "https://outray.dev/docs/opening-a-tunnel",
+    "children": []
+  },
+  {
+    "title": "Reserved Subdomains",
+    "url": "https://outray.dev/docs/reserved-subdomains",
+    "children": []
+  },
+  {
+    "title": "Password Protection",
+    "url": "https://outray.dev/docs/password-protection",
+    "children": []
+  },
+  {
+    "title": "Custom Domains",
+    "url": "https://outray.dev/docs/custom-domains",
+    "children": []
+  },
+  {
+    "title": "Teams & Organizations",
+    "url": "https://outray.dev/docs/teams",
+    "children": []
+  },
+  {
+    "title": "CI/CD Integration",
+    "url": "https://outray.dev/docs/ci-cd",
+    "children": []
+  },
+  {
+    "title": "Observability",
+    "url": "https://outray.dev/docs/observability",
+    "children": []
+  },
+  {
+    "title": "Vite Plugin",
+    "url": "https://outray.dev/docs/vite-plugin",
+    "children": []
+  },
+  {
+    "title": "Next.js Plugin",
+    "url": "https://outray.dev/docs/nextjs-plugin",
+    "children": []
+  },
+  {
+    "title": "NestJS Plugin",
+    "url": "https://outray.dev/docs/nestjs-plugin",
+    "children": []
+  },
+  {
+    "title": "Express Plugin",
+    "url": "https://outray.dev/docs/express-plugin",
+    "children": []
+  },
+  {
+    "title": "TCP & UDP Tunnels",
+    "url": "https://outray.dev/docs/protocols",
+    "children": []
+  },
+  {
+    "title": "CLI Reference",
+    "url": "https://outray.dev/docs/cli-reference",
+    "children": []
+  },
+  {
+    "title": "Architecture",
+    "url": "https://outray.dev/docs/architecture",
+    "children": []
+  }
+]

@@ -1,0 +1,32 @@
+# Outray
+
+Clean, markdown-formatted snapshot of Outray developer documentation.
+
+## Overview
+
+| | |
+|---|---|
+| **Source** | https://outray.dev |
+| **Pages** | 17 |
+| **Kind** | tool |
+| **Adapter** | generic |
+
+## Pages
+
+- [Introduction](outray/docs/index.md)
+- [Installation](outray/docs/installation/index.md)
+- [Authentication](outray/docs/authentication/index.md)
+- [Opening a Tunnel](outray/docs/opening-a-tunnel/index.md)
+- [Reserved Subdomains](outray/docs/reserved-subdomains/index.md)
+- [Password Protection](outray/docs/password-protection/index.md)
+- [Custom Domains](outray/docs/custom-domains/index.md)
+- [Teams & Organizations](outray/docs/teams/index.md)
+- [CI/CD Integration](outray/docs/ci-cd/index.md)
+- [Observability](outray/docs/observability/index.md)
+- [Vite Plugin](outray/docs/vite-plugin/index.md)
+- [Next.js Plugin](outray/docs/nextjs-plugin/index.md)
+- [NestJS Plugin](outray/docs/nestjs-plugin/index.md)
+- [Express Plugin](outray/docs/express-plugin/index.md)
+- [TCP & UDP Tunnels](outray/docs/protocols/index.md)
+- [CLI Reference](outray/docs/cli-reference/index.md)
+- [Architecture](outray/docs/architecture/index.md)
