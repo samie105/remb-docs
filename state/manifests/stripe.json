@@ -1,0 +1,1202 @@
+[
+  {
+    "url": "https://docs.stripe.com/acceptable-verification-documents",
+    "outputPath": "acceptable-verification-documents/index.md",
+    "title": "Acceptable verification documents by country",
+    "contentHash": "bd2bc4c65a132f3aefb2c0994e5dc5add233141a1fb877f506d907704cd9c38c",
+    "visitedAt": "2026-04-30T12:37:03.926Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/checklist",
+    "outputPath": "get-started/account/checklist/index.md",
+    "title": "Account checklist",
+    "contentHash": "c9396a3c0f66a3d863f18a46bc5c1686c96d3e7eb28a130eaf612ed2cc69dd43",
+    "visitedAt": "2026-04-30T12:37:23.769Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/set-up",
+    "outputPath": "get-started/account/set-up/index.md",
+    "title": "Set up your account",
+    "contentHash": "de0cd6292d759ae1efa6026ee4bd46f875f736adceef856daab162362aced592",
+    "visitedAt": "2026-04-30T12:37:42.994Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/account/approvals",
+    "outputPath": "account/approvals/index.md",
+    "title": "Set up two-party approvals",
+    "contentHash": "b82ad1d5c24b1b85558e737b8aa5a9376b491941e6315dd2735b9a9df2b79945",
+    "visitedAt": "2026-04-30T12:38:02.777Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/data-migrations/payment-method-imports",
+    "outputPath": "get-started/data-migrations/payment-method-imports/index.md",
+    "title": "Import payment method data",
+    "contentHash": "ad2f1a39540070f24b09278d5b019cd0eac99f70e44056f8a2e4713114370747",
+    "visitedAt": "2026-04-30T12:38:22.449Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/data-migrations/export-file-formats",
+    "outputPath": "get-started/data-migrations/export-file-formats/index.md",
+    "title": "Export file formats",
+    "contentHash": "f3cf9efc88cf658cf992759469aa5da013850f9d783935bd81ca1ff40cf19664",
+    "visitedAt": "2026-04-30T12:38:42.259Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/data-migrations/map-payment-data",
+    "outputPath": "get-started/data-migrations/map-payment-data/index.md",
+    "title": "Map payment data",
+    "contentHash": "cf5aefc2d4fd45a5a3b7a90a4add2fc509ea19784961a373ef1970df31822f4a",
+    "visitedAt": "2026-04-30T12:39:01.229Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/data-migrations/pan-copy-self-serve",
+    "outputPath": "get-started/data-migrations/pan-copy-self-serve/index.md",
+    "title": "Copy PAN data across Stripe accounts",
+    "contentHash": "d8db286954416d18be0edf93d08ba3213be2ac8e0ebd8d7330c1e7879c77e72b",
+    "visitedAt": "2026-04-30T12:39:21.016Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/data-migrations/pan-export",
+    "outputPath": "get-started/data-migrations/pan-export/index.md",
+    "title": "Request a payment data export",
+    "contentHash": "2d12af767900cbaf5f626a79b83c496322b7bb37b26105890f0bcc04d58fe10f",
+    "visitedAt": "2026-04-30T12:39:40.159Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/data-migrations/pan-import",
+    "outputPath": "get-started/data-migrations/pan-import/index.md",
+    "title": "Request a payment data import",
+    "contentHash": "468033ef00c9181d561fc69b1a89b7e4e95fc2d0c7715d08253995d2b2c4cfe6",
+    "visitedAt": "2026-04-30T12:40:00.173Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/data-migrations/supplementary-data",
+    "outputPath": "get-started/data-migrations/supplementary-data/index.md",
+    "title": "Upload supplementary  data",
+    "contentHash": "b4ae3da93b4cbe87ac0ea8cccc9b838c77e36355f5d2e5ef96b01ecb14790000",
+    "visitedAt": "2026-04-30T12:40:19.314Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account",
+    "outputPath": "get-started/account/index.md",
+    "title": "Stripe accounts",
+    "contentHash": "be6a4ec4bb56834683369a1d2aaf1610d7ce3b04191d79af5d8a592b6768e9d1",
+    "visitedAt": "2026-04-30T12:40:38.474Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/linked-external-accounts",
+    "outputPath": "get-started/account/linked-external-accounts/index.md",
+    "title": "Linked external accounts",
+    "contentHash": "c32a866c04b91ec0b6ba2fba76f8323d876fe6de32ab41964dde568579bc2e6a",
+    "visitedAt": "2026-04-30T12:40:57.599Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/multiple-accounts",
+    "outputPath": "get-started/account/multiple-accounts/index.md",
+    "title": "Multiple separate accounts",
+    "contentHash": "d67dea9b185daf9e70b77d4aa510011b1f92a8268cb823da9d8a9035ec678997",
+    "visitedAt": "2026-04-30T12:41:16.635Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/orgs/build",
+    "outputPath": "get-started/account/orgs/build/index.md",
+    "title": "Build an organization",
+    "contentHash": "ba4f8f80eaaf3e8ea4f82b0ac3a543f5097a84b27720cabed37356882445cde8",
+    "visitedAt": "2026-04-30T12:41:35.898Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/orgs",
+    "outputPath": "get-started/account/orgs/index.md",
+    "title": "Stripe Organizations",
+    "contentHash": "b508965cf638adf613bb43f38ab13a6ce57e334a557055daa5d884c3e6451e84",
+    "visitedAt": "2026-04-30T12:41:55.320Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/orgs/setup",
+    "outputPath": "get-started/account/orgs/setup/index.md",
+    "title": "Supported Organization setups",
+    "contentHash": "b84491254355a4f2ba1db6d23aec6c06e945133b52f117d7500d7c3b0d4c69a0",
+    "visitedAt": "2026-04-30T12:42:15.429Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/orgs/sharing/customers-payment-methods",
+    "outputPath": "get-started/account/orgs/sharing/customers-payment-methods/index.md",
+    "title": "Share customers and payment methods across accounts in an organization",
+    "contentHash": "7bd0f35dcf970acd4fb791e2707de1927e991cb3af541207b2c200b1007dcd90",
+    "visitedAt": "2026-04-30T12:42:35.250Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/orgs/team",
+    "outputPath": "get-started/account/orgs/team/index.md",
+    "title": "Manage access to your organization",
+    "contentHash": "ca601ef5411e013ac0fd15e3842103c5558bc8c74252a51f86f2e229540d2520",
+    "visitedAt": "2026-04-30T12:42:54.339Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/statement-descriptors",
+    "outputPath": "get-started/account/statement-descriptors/index.md",
+    "title": "Statement descriptors",
+    "contentHash": "15b4af172b24140d94934d5df1750e0ebfe635bcda38720b520319ecc5d30dbf",
+    "visitedAt": "2026-04-30T12:43:13.920Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/teams/roles",
+    "outputPath": "get-started/account/teams/roles/index.md",
+    "title": "User roles",
+    "contentHash": "a84923dd383e2454cd3693eb0cdfc74511d3f364acb588363828aedc3d995646",
+    "visitedAt": "2026-04-30T12:43:33.837Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/teams",
+    "outputPath": "get-started/account/teams/index.md",
+    "title": "Start a team",
+    "contentHash": "a4d5ca51ef3990a218fa0d88b1de7cb48c70640227a8ce9fb29f0d12487e6562",
+    "visitedAt": "2026-04-30T12:43:52.932Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/ach-deprecated",
+    "outputPath": "ach-deprecated/index.md",
+    "title": "ACH Direct Debit with Charges",
+    "contentHash": "c9ad29979c103952167e7ba1a74cf77564f0a75d82c6f7dd883d5acc22f5a5bb",
+    "visitedAt": "2026-04-30T12:44:14.372Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/get-started/account/add-funds",
+    "outputPath": "get-started/account/add-funds/index.md",
+    "title": "Add funds to your Stripe balance",
+    "contentHash": "1cbf165a3fa09248d731e3b95e2d28e5721aebb3bcbf6ab3b3a35a49375b882a",
+    "visitedAt": "2026-04-30T12:44:33.779Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agents-billing-workflows",
+    "outputPath": "agents-billing-workflows/index.md",
+    "title": "Build agentic AI SaaS Billing workflows",
+    "contentHash": "eb7d5ab7cb719a8fa5b29c19151f752001fa2c54e340784c230dbe8bc42cfde4",
+    "visitedAt": "2026-04-30T12:44:53.752Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/product-feed",
+    "outputPath": "agentic-commerce/product-feed/index.md",
+    "title": "Catalog feed",
+    "contentHash": "e9dd58022cdb3717aac9dedc72e9aa33ce79bd2f3e0036311741a897e60c5964",
+    "visitedAt": "2026-04-30T12:45:14.492Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/product-feed/sftp-catalog-ingestion",
+    "outputPath": "agentic-commerce/product-feed/sftp-catalog-ingestion/index.md",
+    "title": "SFTP catalog ingestion",
+    "contentHash": "7cdbe68dcd77cb753803fafdf920b3af720380c1a3437f3d842aac72ea94891c",
+    "visitedAt": "2026-04-30T12:45:34.117Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/acp",
+    "outputPath": "agentic-commerce/acp/index.md",
+    "title": "Agentic Commerce Protocol",
+    "contentHash": "37b4c939cae6dad65ca1f048501397738577bec1e14d3a4c8288d825d9f1ed49",
+    "visitedAt": "2026-04-30T12:45:53.253Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/protocol",
+    "outputPath": "agentic-commerce/protocol/index.md",
+    "title": "Universal Commerce Protocol",
+    "contentHash": "226f96fc60f8eed9c1cc14a9d8d64e2ef51dd898f7370435637744572c0fb3d0",
+    "visitedAt": "2026-04-30T12:46:12.761Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens",
+    "outputPath": "agentic-commerce/concepts/shared-payment-tokens/index.md",
+    "title": "Shared payment tokens",
+    "contentHash": "dd46861c7a8383830c7118b6cdb450cf50df87d89e9b0321b906191f391d3315",
+    "visitedAt": "2026-04-30T12:46:32.947Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/for-agents",
+    "outputPath": "agentic-commerce/for-agents/index.md",
+    "title": "Embed commerce into your AI interface",
+    "contentHash": "75d2e59371864f79cac2cd1521a4d76bf1827eb11afadb32bd291c404db4950c",
+    "visitedAt": "2026-04-30T12:46:53.760Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/for-sellers/custom",
+    "outputPath": "agentic-commerce/for-sellers/custom/index.md",
+    "title": "Build a custom integration",
+    "contentHash": "f858f5c4264afc950da8e492b73e8ea1cf06a4911686e95c150ecffd247e1d01",
+    "visitedAt": "2026-04-30T12:47:14.091Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/apps/accept-payment",
+    "outputPath": "agentic-commerce/apps/accept-payment/index.md",
+    "title": "Accept a payment",
+    "contentHash": "8f8594895847b7c1ae956a2cd8fe3e8803e8992dafb0d206c36275bcac4d6122",
+    "visitedAt": "2026-04-30T12:47:34.257Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/apps",
+    "outputPath": "agentic-commerce/apps/index.md",
+    "title": "Monetize your Model Context Protocol (MCP) app",
+    "contentHash": "a3f6105096ea820300fb68439470bd8f61222563317ad932fc4e22f1eaf38684",
+    "visitedAt": "2026-04-30T12:47:53.566Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/for-sellers",
+    "outputPath": "agentic-commerce/for-sellers/index.md",
+    "title": "Sell through agents",
+    "contentHash": "8a5e6d4993ce30a47273646e3459b2d92f4e7dbf235be2ef93924d078496aad4",
+    "visitedAt": "2026-04-30T12:48:13.710Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce",
+    "outputPath": "agentic-commerce/index.md",
+    "title": "Agentic commerce",
+    "contentHash": "02124887be7444336b2f614b0a6fff6a8b9944a4bf3e842033cef0b5d6364a39",
+    "visitedAt": "2026-04-30T12:48:33.095Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/agents",
+    "outputPath": "agents/index.md",
+    "title": "Add Stripe to your agentic workflows",
+    "contentHash": "36a31836b4eaa62a08924aacc1fca0be32ba6bc83e684c14976bd114d0592b1c",
+    "visitedAt": "2026-04-30T12:48:52.865Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/products",
+    "outputPath": "products/index.md",
+    "title": "See all products",
+    "contentHash": "320816410d8e852409216fef1135d101d06c2859b19c97ca2638a81adf142226",
+    "visitedAt": "2026-04-30T12:49:12.385Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/api-v2-overview",
+    "outputPath": "api-v2-overview/index.md",
+    "title": "API v2 overview",
+    "contentHash": "63fdfd6df8741924e84d4ad407618d20fabefbb2f9df09e76883dd0012682b80",
+    "visitedAt": "2026-04-30T12:49:32.883Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/automated-testing",
+    "outputPath": "automated-testing/index.md",
+    "title": "Automated testing",
+    "contentHash": "38141373027b3666d8dcf9d9715b3aafad2ebe8afe5077e056bf261000800c43",
+    "visitedAt": "2026-04-30T12:49:52.661Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/context",
+    "outputPath": "context/index.md",
+    "title": "Stripe-Context header",
+    "contentHash": "310c6a08b5110afbb55e2acaba73a5a7679cc0e23ebf9df582937b2bbe13741f",
+    "visitedAt": "2026-04-30T12:50:12.499Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/error-low-level",
+    "outputPath": "error-low-level/index.md",
+    "title": "Advanced error handling",
+    "contentHash": "9bfcff5d24430d8aede322ad2d35e32301b7e335cc7213969df9eec42aef22e7",
+    "visitedAt": "2026-04-30T12:50:32.543Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/error-codes",
+    "outputPath": "error-codes/index.md",
+    "title": "Error codes",
+    "contentHash": "560db002af1c69612e62e77a0e9ed00b6c4c623b87ba20286e2e7940315e3178",
+    "visitedAt": "2026-04-30T12:50:53.399Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/error-handling",
+    "outputPath": "error-handling/index.md",
+    "title": "Error handling",
+    "contentHash": "949bb9962f7a45ffcc5d78c04fd100aa286baf49b70d76a8043bb0843bfe3fb2",
+    "visitedAt": "2026-04-30T12:51:15.260Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/file-upload",
+    "outputPath": "file-upload/index.md",
+    "title": "File upload guide",
+    "contentHash": "8bef2ab224d689bd5a9a5973f2bc6720cb5810969a2522830b417e4dfc88a004",
+    "visitedAt": "2026-04-30T12:51:35.622Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/api-includable-response-values",
+    "outputPath": "api-includable-response-values/index.md",
+    "title": "Include-dependent response values in API v2",
+    "contentHash": "959fb09cc1ea3b809aba85d592800aa7adc30c5bbfc93817d525a7ce90d0c5df",
+    "visitedAt": "2026-04-30T12:51:55.693Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/apis",
+    "outputPath": "apis/index.md",
+    "title": "Stripe APIs",
+    "contentHash": "79dfd229454f1980f792ef55e3fd19a50bf8e83da29dcf18c2dd246ba0585fdd",
+    "visitedAt": "2026-04-30T12:52:16.130Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/ips",
+    "outputPath": "ips/index.md",
+    "title": "Domains and IP addresses",
+    "contentHash": "9d6975773c8580260312f2e51c1d24e386cf7a088be430e87e0a516ccb62b04c",
+    "visitedAt": "2026-04-30T12:52:35.773Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/keys-best-practices",
+    "outputPath": "keys-best-practices/index.md",
+    "title": "Best practices for managing secret API keys",
+    "contentHash": "f9c92a0311bdff6c5a1eee5b424cf59f82c309676f8ffdaa03012a9f9cc147df",
+    "visitedAt": "2026-04-30T12:52:55.718Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/keys",
+    "outputPath": "keys/index.md",
+    "title": "API keys",
+    "contentHash": "72a5737c94b3f619721a69258472e7719b835d7ec03e4a28e209c617c003704c",
+    "visitedAt": "2026-04-30T12:53:15.820Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/metadata/use-cases",
+    "outputPath": "metadata/use-cases/index.md",
+    "title": "Metadata use cases",
+    "contentHash": "a98ff5aad6d695a043ca5efc4711895dc32ac25896caa46e2aefe5e5ce423373",
+    "visitedAt": "2026-04-30T12:53:37.436Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/metadata",
+    "outputPath": "metadata/index.md",
+    "title": "Metadata",
+    "contentHash": "478e58663c7578d33ceda017c617904c76abd67251e282469f636d70b0bb974b",
+    "visitedAt": "2026-04-30T12:53:58.152Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/upgrades/manage-payment-methods",
+    "outputPath": "upgrades/manage-payment-methods/index.md",
+    "title": "Manage default payment methods in the Dashboard",
+    "contentHash": "aa4fe82353d55d6df384208014481370092f08877766f31439306c7aca62535c",
+    "visitedAt": "2026-04-30T12:54:18.247Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/pagination",
+    "outputPath": "pagination/index.md",
+    "title": "How pagination works",
+    "contentHash": "f059369c72172ec1adaba634990e321eba6d26554271961935234518c4c19449",
+    "visitedAt": "2026-04-30T12:54:38.162Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/rate-limits",
+    "outputPath": "rate-limits/index.md",
+    "title": "Rate limits",
+    "contentHash": "84296a4b3e40a35831f98501791aabf99860a6496295d9dd09220b6784cd0de2",
+    "visitedAt": "2026-04-30T12:54:57.726Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/keys/restricted-api-keys",
+    "outputPath": "keys/restricted-api-keys/index.md",
+    "title": "Restricted API keys",
+    "contentHash": "0274cb1791b5658d6843ac3e0f63c9f21023e828aa1d2ea6cbc941eacc7e9148",
+    "visitedAt": "2026-04-30T12:55:17.567Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/upgrades",
+    "outputPath": "upgrades/index.md",
+    "title": "API upgrades",
+    "contentHash": "d6ba4da299f12c31f7bddd488669f94006a77130df6b5ae06f799877ade1b085",
+    "visitedAt": "2026-04-30T12:55:39.242Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/apple-pay/disputes-refunds",
+    "outputPath": "apple-pay/disputes-refunds/index.md",
+    "title": "Apple Pay liability shift, disputes, and refunds",
+    "contentHash": "763ed2e2bb2f21808b483150c354251517a149cc411aa3f406fd08319b37dfb7",
+    "visitedAt": "2026-04-30T12:55:58.942Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/apple-pay/merchant-tokens",
+    "outputPath": "apple-pay/merchant-tokens/index.md",
+    "title": "Apple Pay merchant tokens",
+    "contentHash": "09be9e56bcd4da4cb6bef4acc4c2358bdded5fb886b2c726205faa8d2e974b9f",
+    "visitedAt": "2026-04-30T12:56:18.989Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/apple-pay/apple-pay-recurring",
+    "outputPath": "apple-pay/apple-pay-recurring/index.md",
+    "title": "Manage recurring payments on Apple Pay",
+    "contentHash": "523e5f174a596e1c0e5ff55af053b5d14831eccdc6d5b38877dc5c7045fba0c0",
+    "visitedAt": "2026-04-30T12:56:38.498Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/apple-pay/best-practices",
+    "outputPath": "apple-pay/best-practices/index.md",
+    "title": "Apple Pay Best Practices",
+    "contentHash": "af514b192080ef678b2e8688609137acf3130f0af7b47eee36087f51f220da35",
+    "visitedAt": "2026-04-30T12:56:57.973Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/apple-pay/cartes-bancaires",
+    "outputPath": "apple-pay/cartes-bancaires/index.md",
+    "title": "Cartes Bancaires with Apple Pay",
+    "contentHash": "e9a3125f18260222a73340d31c5f6fcaefee8a558dc15134561988d3e179e858",
+    "visitedAt": "2026-04-30T12:57:17.686Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/apple-pay",
+    "outputPath": "apple-pay/index.md",
+    "title": "Apple Pay",
+    "contentHash": "93b2aea26486aea3a3dd252f8f9df78e8cc44306c53e89bf687ee8a23af5639d",
+    "visitedAt": "2026-04-30T12:57:39.814Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/accept-payments",
+    "outputPath": "atlas/accept-payments/index.md",
+    "title": "Accept payments after incorporating",
+    "contentHash": "b37eaef41f68676d24d208a2460548299cab4f64b2441187712eb78515cdc7f8",
+    "visitedAt": "2026-04-30T12:57:58.999Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/business-taxes",
+    "outputPath": "atlas/business-taxes/index.md",
+    "title": "Business taxes",
+    "contentHash": "86776fbc57c1d118ddd0b00ed9b8265c2e1f42ce31c2067a6a34e8dd134d548d",
+    "visitedAt": "2026-04-30T12:58:18.342Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/company-types",
+    "outputPath": "atlas/company-types/index.md",
+    "title": "Company types",
+    "contentHash": "346324b56c9d1b1b254e3a5b06ce9c80f8d6730f8502a7937defe83c37a5afe6",
+    "visitedAt": "2026-04-30T12:58:37.417Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/equity-terms",
+    "outputPath": "atlas/equity-terms/index.md",
+    "title": "Founder equity terms",
+    "contentHash": "9f92d28cf45b467aa6d3f3577ba58f7a0d0542debe4f902b00e047c6ab09b3a1",
+    "visitedAt": "2026-04-30T12:58:56.728Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/fundraise-with-safes",
+    "outputPath": "atlas/fundraise-with-safes/index.md",
+    "title": "Fundraise with SAFEs",
+    "contentHash": "e7324c969cbbefe906eee01634e410bf3140d07b9efd1e6890277f421c51d19a",
+    "visitedAt": "2026-04-30T12:59:16.087Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/incorporation-documents",
+    "outputPath": "atlas/incorporation-documents/index.md",
+    "title": "Incorporation documents",
+    "contentHash": "f5e4053b65609f617784d0c3ca65a7b690ff5fb52bf72a398520dd477c61f09a",
+    "visitedAt": "2026-04-30T12:59:35.420Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/indian-founder-guide",
+    "outputPath": "atlas/indian-founder-guide/index.md",
+    "title": "Incorporate a company with Indian resident founders",
+    "contentHash": "c9ef15f85e8e5ea1743f3f6660778137eedf13291eca341549db2c045b30d606",
+    "visitedAt": "2026-04-30T12:59:54.766Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/83b-elections-non-us-founders",
+    "outputPath": "atlas/83b-elections-non-us-founders/index.md",
+    "title": "File Section 83(b) elections as a non-US founder",
+    "contentHash": "84ea8bb3fc0a476b215b48e538b46e2b58a5675dc2b46e89f397c890923ac576",
+    "visitedAt": "2026-04-30T13:00:14.014Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas",
+    "outputPath": "atlas/index.md",
+    "title": "Stripe Atlas",
+    "contentHash": "cdb03f763214c8e739c1812cc8082039d669768909cbcbff76e6868a5f05b33b",
+    "visitedAt": "2026-04-30T13:00:33.593Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/payments-business-bank",
+    "outputPath": "atlas/payments-business-bank/index.md",
+    "title": "Business bank accounts",
+    "contentHash": "8b9428755d3dc4d32a492aed33b84d8e3ca49735807422fa9bafb39a17145067",
+    "visitedAt": "2026-04-30T13:00:53.393Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/83b-election",
+    "outputPath": "atlas/83b-election/index.md",
+    "title": "Section 83(b) elections",
+    "contentHash": "e486c9b8348d00cee80e00cd3c489da657c8bede67799224a0790197e8e42aeb",
+    "visitedAt": "2026-04-30T13:01:12.628Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/singapore-founder-guide",
+    "outputPath": "atlas/singapore-founder-guide/index.md",
+    "title": "Incorporating a US company from Singapore",
+    "contentHash": "1a1125622e30c70be42bef7f6e7d9b7fe10e645d01825c4b9e7245f9609f3124",
+    "visitedAt": "2026-04-30T13:01:32.125Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/signup",
+    "outputPath": "atlas/signup/index.md",
+    "title": "How to incorporate your company",
+    "contentHash": "92afe66b13065eda493b7699dcaaf08f4243b1a22c7e4815e60141fd42d33147",
+    "visitedAt": "2026-04-30T13:01:51.604Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/atlas/stripe-treasury-offer",
+    "outputPath": "atlas/stripe-treasury-offer/index.md",
+    "title": "Stripe Treasury offer for Atlas users",
+    "contentHash": "f43a513f4bcd8ec54871e2c17b10f2bf251c73e454018e753c2036a49f625860",
+    "visitedAt": "2026-04-30T13:02:11.710Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/payment-authentication/writing-queries",
+    "outputPath": "payment-authentication/writing-queries/index.md",
+    "title": "Querying authentication conversion",
+    "contentHash": "dddbdafdb40bb915ee8515d4b2a6692226d6d7b7f65c0301b3b6492552adc163",
+    "visitedAt": "2026-04-30T13:02:31.217Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/issuing/customer-support",
+    "outputPath": "issuing/customer-support/index.md",
+    "title": "Customer support for Issuing and Treasury for platforms",
+    "contentHash": "78b438c2736b438dec9faddf096464896d50c27d8083a0348200d54020c5e4db",
+    "visitedAt": "2026-04-30T13:02:50.687Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/money-management",
+    "outputPath": "money-management/index.md",
+    "title": "Money management",
+    "contentHash": "20dc8ee0c946d03b4a86d7530ca0ce3876129230ce08690730c1a0f5266e1bd0",
+    "visitedAt": "2026-04-30T13:03:10.299Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/issuing/integration-guides/b2b-payments",
+    "outputPath": "issuing/integration-guides/b2b-payments/index.md",
+    "title": "B2B payments integration guide",
+    "contentHash": "6462e0d40e362cda018225faa58bfacc9d94dec3ba72eb7a7d2c5966593b819e",
+    "visitedAt": "2026-04-30T13:03:30.554Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/issuing/integration-guides/embedded-finance",
+    "outputPath": "issuing/integration-guides/embedded-finance/index.md",
+    "title": "Embedded Finance integration guide",
+    "contentHash": "66cf113f37d0bbef78bd448e7febcdf8b2c292b1df27809aecab15e3e0adc475",
+    "visitedAt": "2026-04-30T13:03:52.174Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/issuing/integration-guides/fleet",
+    "outputPath": "issuing/integration-guides/fleet/index.md",
+    "title": "Fleet integration guide",
+    "contentHash": "d875160cee8fad141fcb477ad6be418cf2db19b8543c35a52dd594e126565126",
+    "visitedAt": "2026-04-30T13:04:13.387Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/issuing/integration-guides",
+    "outputPath": "issuing/integration-guides/index.md",
+    "title": "Integration guides",
+    "contentHash": "9e958f1a88fa8ac1d908c9e2efeba3864e8107772c30c6175e35362fb1d72bd9",
+    "visitedAt": "2026-04-30T13:04:33.220Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/issuing/onboarding-overview",
+    "outputPath": "issuing/onboarding-overview/index.md",
+    "title": "Onboarding overview",
+    "contentHash": "b2f5f2259e858450de95a30197ef2c04c8be256590b532324fe681a98f0e3bf8",
+    "visitedAt": "2026-04-30T13:04:52.780Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/issuing/sample-app",
+    "outputPath": "issuing/sample-app/index.md",
+    "title": "Issuing and Treasury for platforms sample app",
+    "contentHash": "d4ee3c7f1bb4ade60c60ab7c2a547e822d6fd790398357073460ae0655b57077",
+    "visitedAt": "2026-04-30T13:05:12.166Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/batch-api/best-practices",
+    "outputPath": "batch-api/best-practices/index.md",
+    "title": "Best practices",
+    "contentHash": "cb1d4d75cedb4088410e7ac882058dd0e290dbea3c315884ac7cbe44240f1051",
+    "visitedAt": "2026-04-30T13:05:31.615Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/batch-api/create",
+    "outputPath": "batch-api/create/index.md",
+    "title": "Running a batch job",
+    "contentHash": "79e0abc764fbaae4fe45f240cbbc2a70b6834c5713196531dda8ca42e59567a2",
+    "visitedAt": "2026-04-30T13:05:51.990Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/batch-api",
+    "outputPath": "batch-api/index.md",
+    "title": "Batch jobs",
+    "contentHash": "95e40986a5b19a39e86d30a6118c6b755bbbf4f2823857b4504444da3457d1ad",
+    "visitedAt": "2026-04-30T13:06:11.411Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/billing-apis",
+    "outputPath": "billing/billing-apis/index.md",
+    "title": "About the Billing APIs",
+    "contentHash": "3157f0e9c37e6f0ca7433f5bb609928b7fbec2738af300d40ff82804f34e84b1",
+    "visitedAt": "2026-04-30T13:06:31.094Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/collection-method",
+    "outputPath": "billing/collection-method/index.md",
+    "title": "Billing collection methods",
+    "contentHash": "f934e65de7d0b6da3185a5ac68bf587f84854c503ead713903b754d6fa268ca6",
+    "visitedAt": "2026-04-30T13:06:50.594Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/customer-management/cancellation-page",
+    "outputPath": "customer-management/cancellation-page/index.md",
+    "title": "Add a cancellation page to the customer portal",
+    "contentHash": "fc2efc8b1e776e4c553f7b92e308e0aeecdc76fbd6be5a479f4fa1ef91fb1503",
+    "visitedAt": "2026-04-30T13:07:09.633Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/customer-management/portal-deep-links",
+    "outputPath": "customer-management/portal-deep-links/index.md",
+    "title": "Deep links in the customer portal",
+    "contentHash": "43df0632fab5a8482ffd7651546ccfd934e27f8aa1690e7fbd44110ead7cfe0e",
+    "visitedAt": "2026-04-30T13:07:29.198Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/customer-management/integrate-customer-portal",
+    "outputPath": "customer-management/integrate-customer-portal/index.md",
+    "title": "Integrate the customer portal with the API",
+    "contentHash": "44b32166c065ecf0ec76ea5b5c1b992b1779d8c74cf2098fc26fe6a3a8e5abaa",
+    "visitedAt": "2026-04-30T13:07:49.244Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/customer-management/activate-no-code-customer-portal",
+    "outputPath": "customer-management/activate-no-code-customer-portal/index.md",
+    "title": "Activate the no-code customer portal",
+    "contentHash": "e3a883c7369e79cfebafef4cd871f02abe3292014ca6c70d7ed94a88bf701b49",
+    "visitedAt": "2026-04-30T13:08:08.445Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/customer-management",
+    "outputPath": "customer-management/index.md",
+    "title": "Provide a customer portal to your customers",
+    "contentHash": "c30c79471f4f467c0c980bce205fa4360ecf9445ddaff8dbd911bf01d00e15cb",
+    "visitedAt": "2026-04-30T13:08:28.123Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/customer-management/configure-portal",
+    "outputPath": "customer-management/configure-portal/index.md",
+    "title": "Configure the customer portal",
+    "contentHash": "6c677e44c151997347c647c4f41bf6fbd783448739f50d58aa18b259fb010cb9",
+    "visitedAt": "2026-04-30T13:08:47.589Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/customer/balance",
+    "outputPath": "billing/customer/balance/index.md",
+    "title": "Customer invoice balance",
+    "contentHash": "2d00295e63877ef8c4ca4c592a99568bbe0851c9ec6172061c6d65fc3a399d1a",
+    "visitedAt": "2026-04-30T13:09:07.208Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/customer",
+    "outputPath": "billing/customer/index.md",
+    "title": "Customers",
+    "contentHash": "6887251ef4fb110ad086f9e7688f0feba1aaa1c0922cc415a1c6cf0496038d7e",
+    "visitedAt": "2026-04-30T13:09:27.472Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/entitlements",
+    "outputPath": "billing/entitlements/index.md",
+    "title": "Entitlements",
+    "contentHash": "23b4e556da20682cccd62178b2b6b37c61358a3136b0abc4da217a4678195cf9",
+    "visitedAt": "2026-04-30T13:09:46.998Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/how-metronome-works-with-stripe",
+    "outputPath": "billing/how-metronome-works-with-stripe/index.md",
+    "title": "How Metronome works with Stripe",
+    "contentHash": "92000ffa0939788f9741ba9e5a7cb91fdad70a9d0adf67ee4ef72742af4f8b6e",
+    "visitedAt": "2026-04-30T13:10:06.860Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing",
+    "outputPath": "billing/index.md",
+    "title": "Billing",
+    "contentHash": "81ba9630061fb057dd9954d16826abb60731cc511bf2abf3f979f7043d025654",
+    "visitedAt": "2026-04-30T13:10:26.164Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/invoices/subscription",
+    "outputPath": "billing/invoices/subscription/index.md",
+    "title": "Subscription invoices",
+    "contentHash": "e044fa23032aa7b0e2cb807e9dbc206254e233c19e105d2bd14f3c22580de743",
+    "visitedAt": "2026-04-30T13:10:46.509Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/overview",
+    "outputPath": "billing/subscriptions/overview/index.md",
+    "title": "How subscriptions work",
+    "contentHash": "754a9b5f6aa6f2c682564c0e2b53f7da4b4c6582e8db0ea58d4a79884105dda6",
+    "visitedAt": "2026-04-30T13:11:06.089Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/connect/use-accounts-as-customers",
+    "outputPath": "connect/use-accounts-as-customers/index.md",
+    "title": "Represent customers using Account objects",
+    "contentHash": "ec923bd6d9f032b9e53d34e1a477515fcda800c60c693b8d1fd9ed4611c4c8d5",
+    "visitedAt": "2026-04-30T13:11:26.028Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/products-prices/manage-prices",
+    "outputPath": "products-prices/manage-prices/index.md",
+    "title": "Manage products and prices",
+    "contentHash": "77607078e1b0fb359785a0b9491c50737c8276c6be781e9b68b30f35f20e699f",
+    "visitedAt": "2026-04-30T13:11:46.764Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/products-prices/overview",
+    "outputPath": "products-prices/overview/index.md",
+    "title": "Overview",
+    "contentHash": "c35805f3a7dc0d4534d15646037c1ff525200349b16677ec7fd44973fc91dc25",
+    "visitedAt": "2026-04-30T13:12:06.157Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/saas",
+    "outputPath": "saas/index.md",
+    "title": "Integrate a SaaS business on Stripe",
+    "contentHash": "35abe9ebb95dc3d4abedfa98798cc1121bc0801c503ae863ae95358afa2ace98",
+    "visitedAt": "2026-04-30T13:12:26.762Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/scripts",
+    "outputPath": "billing/scripts/index.md",
+    "title": "Customize Billing with scripts",
+    "contentHash": "bb463ca310fa14d43c001f236dc2d620d189ef14da7cf99cbee502b36c4eef18",
+    "visitedAt": "2026-04-30T13:12:45.844Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/scripts/script-language",
+    "outputPath": "billing/scripts/script-language/index.md",
+    "title": "Script language definition",
+    "contentHash": "a53c9bca4257792902b0a140af158ed7d02a64d34ebad629db04ba95d58ad6d2",
+    "visitedAt": "2026-04-30T13:13:07.088Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/analytics/benchmarking",
+    "outputPath": "billing/subscriptions/analytics/benchmarking/index.md",
+    "title": "Benchmarking",
+    "contentHash": "50a99e89ae2f96cb66feb7d6861b6829e4e7be0a586716bcd9560bdc218229f5",
+    "visitedAt": "2026-04-30T13:13:26.275Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/analytics",
+    "outputPath": "billing/subscriptions/analytics/index.md",
+    "title": "Analytics",
+    "contentHash": "da3ea34fec84c1c5370eac53006755a981efa7f8607422d5caea7d9e5e4d6e5c",
+    "visitedAt": "2026-04-30T13:13:45.847Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/backdating",
+    "outputPath": "billing/subscriptions/backdating/index.md",
+    "title": "Backdate subscriptions",
+    "contentHash": "9c5a4c2e3bd6001da2d1a0e653319d2e4fc59b96934e7eea3529b631b969ee56",
+    "visitedAt": "2026-04-30T13:14:05.663Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/billing-cycle",
+    "outputPath": "billing/subscriptions/billing-cycle/index.md",
+    "title": "Set the subscription billing renewal date",
+    "contentHash": "e1b8146e2f0244d7e11e04a0aae45c1f65328a73670f981059f862ee76ed3abc",
+    "visitedAt": "2026-04-30T13:14:26.131Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions",
+    "outputPath": "billing/subscriptions/build-subscriptions/index.md",
+    "title": "Build a subscriptions integration",
+    "contentHash": "01885754fdbc309e51a55bbc12f72a7759e038bbdf9a5979acf1030ae16aa1d8",
+    "visitedAt": "2026-04-30T13:14:48.068Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=checkout&ui=embedded-page",
+    "outputPath": "billing/subscriptions/build-subscriptions/index.md",
+    "title": "Build a subscriptions integration",
+    "contentHash": "6d998ff74477f82ccc9f1205db4649466f109285d7942bdd3e19a221c77559c5",
+    "visitedAt": "2026-04-30T13:15:10.068Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=elements&api-integration=checkout",
+    "outputPath": "billing/subscriptions/build-subscriptions/index.md",
+    "title": "Build a subscriptions integration",
+    "contentHash": "075f44ac97350b7109306915cfad09af4b72e2d6e4b2adce05a54f348d3c43cb",
+    "visitedAt": "2026-04-30T13:15:32.608Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=elements&api-integration=paymentintents",
+    "outputPath": "billing/subscriptions/build-subscriptions/index.md",
+    "title": "Build a subscriptions integration",
+    "contentHash": "dd87a934047149c8b38cc9fe2f3cd7d62a989d3317dcd52c1829faa147aa75cc",
+    "visitedAt": "2026-04-30T13:15:56.120Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=mobile&platform=ios",
+    "outputPath": "billing/subscriptions/build-subscriptions/index.md",
+    "title": "Build a subscriptions integration",
+    "contentHash": "c8e9274d6498ca638a2a311c8b98641e6a33cd330d5ea8e306bc733c2bdfb30c",
+    "visitedAt": "2026-04-30T13:16:19.689Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=mobile&platform=android",
+    "outputPath": "billing/subscriptions/build-subscriptions/index.md",
+    "title": "Build a subscriptions integration",
+    "contentHash": "9eb278b2ee4d4881db29002cc2b45f5b29ef6a850efc003a8dd32241c19448da",
+    "visitedAt": "2026-04-30T13:16:42.755Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=mobile&platform=react-native",
+    "outputPath": "billing/subscriptions/build-subscriptions/index.md",
+    "title": "Build a subscriptions integration",
+    "contentHash": "0053ded186ce5a2a2d480cc06cf100c6c55cbf34ba4919d847ec321624501c76",
+    "visitedAt": "2026-04-30T13:17:06.729Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/cancel",
+    "outputPath": "billing/subscriptions/cancel/index.md",
+    "title": "Cancel subscriptions",
+    "contentHash": "0de70f9862ab8894719332539a56cc799743be73cf33a43160ef750beaf00ca3",
+    "visitedAt": "2026-04-30T13:17:26.959Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/change",
+    "outputPath": "billing/subscriptions/change/index.md",
+    "title": "Modify subscriptions",
+    "contentHash": "263d59fd7f3740bb7aca59b970657e741c50818acf71a7d24d05503e83f882d7",
+    "visitedAt": "2026-04-30T13:17:46.200Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/billing-mode/compare",
+    "outputPath": "billing/subscriptions/billing-mode/compare/index.md",
+    "title": "Compare classic and flexible billing mode",
+    "contentHash": "a006761bfbed788070575badb8b1e3b7c5d0f2aab1aefac0d8077cb4d4716780",
+    "visitedAt": "2026-04-30T13:18:05.945Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/deferred-payment",
+    "outputPath": "billing/subscriptions/deferred-payment/index.md",
+    "title": "Set up payment methods for subscriptions with no initial payment",
+    "contentHash": "0088b6bee8076b7cf5eebfe937acd836e0f4a198dd40ed9b31ec6c0ba7cee18d",
+    "visitedAt": "2026-04-30T13:18:25.445Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/design-an-integration",
+    "outputPath": "billing/subscriptions/design-an-integration/index.md",
+    "title": "Design a subscriptions integration",
+    "contentHash": "7807c71e756b045ec83d6f2f0791c34dc4088c5688000170f3cda80ac126f0fd",
+    "visitedAt": "2026-04-30T13:18:45.187Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/coupons",
+    "outputPath": "billing/subscriptions/coupons/index.md",
+    "title": "Coupons and promotion codes",
+    "contentHash": "c79db5654f6511d9a193bab4af4c004dc67397f433463bcda1eb8c51af11d22e",
+    "visitedAt": "2026-04-30T13:19:05.715Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/subscriptions/pricing-models/flat-rate-pricing",
+    "outputPath": "subscriptions/pricing-models/flat-rate-pricing/index.md",
+    "title": "Set up flat rate pricing",
+    "contentHash": "7c4dafaf9da2e00f406e8410e2f4fe35bf183dc396cf1bf5dd3088dfaf32feef",
+    "visitedAt": "2026-04-30T13:19:25.512Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/subscriptions/pricing-models/per-seat-pricing",
+    "outputPath": "subscriptions/pricing-models/per-seat-pricing/index.md",
+    "title": "Set up per-seat pricing",
+    "contentHash": "0b493d420ee54a567e1f3638eb33dfed097016cfab859bec959de1802b5c1591",
+    "visitedAt": "2026-04-30T13:19:44.772Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/subscriptions/pricing-models/tiered-pricing",
+    "outputPath": "subscriptions/pricing-models/tiered-pricing/index.md",
+    "title": "Set up tiered pricing",
+    "contentHash": "0932723f9069dc5149d1f6509277837c27e066a557cadeb96c36936a0aefc52a",
+    "visitedAt": "2026-04-30T13:20:04.561Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/subscriptions/pricing-models/usage-based-pricing",
+    "outputPath": "subscriptions/pricing-models/usage-based-pricing/index.md",
+    "title": "Set up usage-based pricing models",
+    "contentHash": "9098b2ed5c73cad908dd180c3c1a9f851fdd3d84a8647fa2a28f8d549b381746",
+    "visitedAt": "2026-04-30T13:20:24.050Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/products-prices/how-products-and-prices-work",
+    "outputPath": "products-prices/how-products-and-prices-work/index.md",
+    "title": "How products and prices work",
+    "contentHash": "4cdbe9c57f38d9ea30ff088f676a945011d95eaa700d3c3cf679329f03be4ac8",
+    "visitedAt": "2026-04-30T13:20:43.616Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/import-subscriptions-toolkit",
+    "outputPath": "billing/subscriptions/import-subscriptions-toolkit/index.md",
+    "title": "Migrate subscriptions to Stripe Billing using toolkit",
+    "contentHash": "f9c0df010eaea29e9f0000c044a06a94312799a31e92e2a3aa84535bfaf47549",
+    "visitedAt": "2026-04-30T13:21:03.522Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/import-subscriptions",
+    "outputPath": "billing/subscriptions/import-subscriptions/index.md",
+    "title": "Migrate subscriptions to Stripe Billing using Stripe APIs",
+    "contentHash": "c7b916d9ffd6c1b81e4d2daef16bfd6f54c072eb7ea3d40f7d1fa4ba28d631a8",
+    "visitedAt": "2026-04-30T13:21:23.437Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/subscriptions",
+    "outputPath": "subscriptions/index.md",
+    "title": "Subscriptions",
+    "contentHash": "c0fd7eaa5a7e9d9f4030039f82b6ca28324ba0968b2d5861534780cf731e1877",
+    "visitedAt": "2026-04-30T13:21:44.214Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/manage-ios",
+    "outputPath": "billing/subscriptions/manage-ios/index.md",
+    "title": "Manage subscriptions on iOS",
+    "contentHash": "19524e4f552bb98543128974c798c3b157c3e801bfbde68daa6b2c85b6bc5247",
+    "visitedAt": "2026-04-30T13:22:04.558Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/migrate-subscriptions",
+    "outputPath": "billing/subscriptions/migrate-subscriptions/index.md",
+    "title": "Migrate subscriptions to Stripe Billing",
+    "contentHash": "cf3157cb698787c4252b061ed91777fc578a08e263aac9d3ae9f7acc6de2ab45",
+    "visitedAt": "2026-04-30T13:22:24.354Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/mixed-interval",
+    "outputPath": "billing/subscriptions/mixed-interval/index.md",
+    "title": "Mixed interval subscriptions",
+    "contentHash": "a08c51aee00edfad21eef76901c14bfea9d42786e0c5e293e3e0ae9e253513f1",
+    "visitedAt": "2026-04-30T13:22:43.843Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/trials",
+    "outputPath": "billing/subscriptions/trials/index.md",
+    "title": "Configure trial offers on subscriptions",
+    "contentHash": "96c8d5aff6338c6d94e60f925b5857f37b153399e32bafb314fecc8f9d23a501",
+    "visitedAt": "2026-04-30T13:23:05.593Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/pause",
+    "outputPath": "billing/subscriptions/pause/index.md",
+    "title": "Pause subscriptions",
+    "contentHash": "c8bbaa64ce1f95ce7e2ebfa1200bd8dbc49dc5ae9bf1dc5ad38c4ae3aa297727",
+    "visitedAt": "2026-04-30T13:23:25.232Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/pause-payment",
+    "outputPath": "billing/subscriptions/pause-payment/index.md",
+    "title": "Pause payment collection",
+    "contentHash": "21b0458d863494eebfe581af1df133245ab77288d1e8c364a40c5d9bf5ba98b8",
+    "visitedAt": "2026-04-30T13:23:45.220Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/payment-methods-setting",
+    "outputPath": "billing/subscriptions/payment-methods-setting/index.md",
+    "title": "Set payment methods per-subscription",
+    "contentHash": "9a6f5dd1af99b105671414b9568b185cb629a8601e502e2ec775f06413e13842",
+    "visitedAt": "2026-04-30T13:24:04.684Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/pending-updates",
+    "outputPath": "billing/subscriptions/pending-updates/index.md",
+    "title": "Pending updates",
+    "contentHash": "f77301c9a8d5a95d4ea0e48f8dca48ebff31df2432be01c9ee2a58b4b7e4d73a",
+    "visitedAt": "2026-04-30T13:24:24.981Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/prebilling",
+    "outputPath": "billing/subscriptions/prebilling/index.md",
+    "title": "Bill customers in advance",
+    "contentHash": "9a072c6b4e008311e697efdda97d2f7067076590c81427375537a7e6dca0abf3",
+    "visitedAt": "2026-04-30T13:24:44.347Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/payments/checkout/pricing-table",
+    "outputPath": "payments/checkout/pricing-table/index.md",
+    "title": "Embeddable pricing table for subscriptions",
+    "contentHash": "085be52214c34cb233d1cc24636f54251080aabccfc604d65df7abcc12820eb3",
+    "visitedAt": "2026-04-30T13:25:04.889Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/billing-mode",
+    "outputPath": "billing/subscriptions/billing-mode/index.md",
+    "title": "Enable increased flexibility for subscriptions",
+    "contentHash": "b8d23e8ed0b3914ab7dffbd7d0475e491b57c9940d6fbe21cc25c4304286dcb9",
+    "visitedAt": "2026-04-30T13:25:24.449Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/prorations",
+    "outputPath": "billing/subscriptions/prorations/index.md",
+    "title": "Prorations",
+    "contentHash": "4b3134d90dfd526439ad209cbb27b9d7c510220a2aba46647410b0a6b49c85c3",
+    "visitedAt": "2026-04-30T13:25:45.376Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/quantities",
+    "outputPath": "billing/subscriptions/quantities/index.md",
+    "title": "Set product or subscription quantities",
+    "contentHash": "d728288d22fa157d5408b8ed31cf41b375b5d53c576d0a65784db2969ccd63f7",
+    "visitedAt": "2026-04-30T13:26:06.630Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/billing/subscriptions/sales-led-billing",
+    "outputPath": "billing/subscriptions/sales-led-billing/index.md",
+    "title": "Sales-led B2B billing",
+    "contentHash": "503ad19cab8aafc6f1cff866adb8c3f550f9e13b5e9c6946e8d929526a709133",
+    "visitedAt": "2026-04-30T13:26:26.902Z",
+    "status": "visited"
+  },
+  {
+    "url": "https://docs.stripe.com/products-prices/pricing-models",
+    "outputPath": "products-prices/pricing-models/index.md",
+    "title": "Recurring pricing models",
+    "contentHash": "f8b37709909620c0f4ddbe5e0b51c171cba7baad2e37b924840b67627f8781b7",
+    "visitedAt": "2026-04-30T13:26:46.094Z",
+    "status": "visited"
+  }
+]

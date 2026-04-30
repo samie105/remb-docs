@@ -1,0 +1,752 @@
+[
+  {
+    "title": "Acceptable verification documents by country",
+    "url": "https://docs.stripe.com/acceptable-verification-documents",
+    "children": []
+  },
+  {
+    "title": "Account checklist",
+    "url": "https://docs.stripe.com/get-started/account/checklist",
+    "children": []
+  },
+  {
+    "title": "Set up your account",
+    "url": "https://docs.stripe.com/get-started/account/set-up",
+    "children": []
+  },
+  {
+    "title": "Set up two-party approvals",
+    "url": "https://docs.stripe.com/account/approvals",
+    "children": []
+  },
+  {
+    "title": "Import payment method data",
+    "url": "https://docs.stripe.com/get-started/data-migrations/payment-method-imports",
+    "children": []
+  },
+  {
+    "title": "Export file formats",
+    "url": "https://docs.stripe.com/get-started/data-migrations/export-file-formats",
+    "children": []
+  },
+  {
+    "title": "Map payment data",
+    "url": "https://docs.stripe.com/get-started/data-migrations/map-payment-data",
+    "children": []
+  },
+  {
+    "title": "Copy PAN data across Stripe accounts",
+    "url": "https://docs.stripe.com/get-started/data-migrations/pan-copy-self-serve",
+    "children": []
+  },
+  {
+    "title": "Request a payment data export",
+    "url": "https://docs.stripe.com/get-started/data-migrations/pan-export",
+    "children": []
+  },
+  {
+    "title": "Request a payment data import",
+    "url": "https://docs.stripe.com/get-started/data-migrations/pan-import",
+    "children": []
+  },
+  {
+    "title": "Upload supplementary  data",
+    "url": "https://docs.stripe.com/get-started/data-migrations/supplementary-data",
+    "children": []
+  },
+  {
+    "title": "Stripe accounts",
+    "url": "https://docs.stripe.com/get-started/account",
+    "children": []
+  },
+  {
+    "title": "Linked external accounts",
+    "url": "https://docs.stripe.com/get-started/account/linked-external-accounts",
+    "children": []
+  },
+  {
+    "title": "Multiple separate accounts",
+    "url": "https://docs.stripe.com/get-started/account/multiple-accounts",
+    "children": []
+  },
+  {
+    "title": "Build an organization",
+    "url": "https://docs.stripe.com/get-started/account/orgs/build",
+    "children": []
+  },
+  {
+    "title": "Stripe Organizations",
+    "url": "https://docs.stripe.com/get-started/account/orgs",
+    "children": []
+  },
+  {
+    "title": "Supported Organization setups",
+    "url": "https://docs.stripe.com/get-started/account/orgs/setup",
+    "children": []
+  },
+  {
+    "title": "Share customers and payment methods across accounts in an organization",
+    "url": "https://docs.stripe.com/get-started/account/orgs/sharing/customers-payment-methods",
+    "children": []
+  },
+  {
+    "title": "Manage access to your organization",
+    "url": "https://docs.stripe.com/get-started/account/orgs/team",
+    "children": []
+  },
+  {
+    "title": "Statement descriptors",
+    "url": "https://docs.stripe.com/get-started/account/statement-descriptors",
+    "children": []
+  },
+  {
+    "title": "User roles",
+    "url": "https://docs.stripe.com/get-started/account/teams/roles",
+    "children": []
+  },
+  {
+    "title": "Start a team",
+    "url": "https://docs.stripe.com/get-started/account/teams",
+    "children": []
+  },
+  {
+    "title": "ACH Direct Debit with Charges",
+    "url": "https://docs.stripe.com/ach-deprecated",
+    "children": []
+  },
+  {
+    "title": "Add funds to your Stripe balance",
+    "url": "https://docs.stripe.com/get-started/account/add-funds",
+    "children": []
+  },
+  {
+    "title": "Build agentic AI SaaS Billing workflows",
+    "url": "https://docs.stripe.com/agents-billing-workflows",
+    "children": []
+  },
+  {
+    "title": "Catalog feed",
+    "url": "https://docs.stripe.com/agentic-commerce/product-feed",
+    "children": []
+  },
+  {
+    "title": "SFTP catalog ingestion",
+    "url": "https://docs.stripe.com/agentic-commerce/product-feed/sftp-catalog-ingestion",
+    "children": []
+  },
+  {
+    "title": "Agentic Commerce Protocol",
+    "url": "https://docs.stripe.com/agentic-commerce/acp",
+    "children": []
+  },
+  {
+    "title": "Universal Commerce Protocol",
+    "url": "https://docs.stripe.com/agentic-commerce/protocol",
+    "children": []
+  },
+  {
+    "title": "Shared payment tokens",
+    "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens",
+    "children": []
+  },
+  {
+    "title": "Embed commerce into your AI interface",
+    "url": "https://docs.stripe.com/agentic-commerce/for-agents",
+    "children": []
+  },
+  {
+    "title": "Build a custom integration",
+    "url": "https://docs.stripe.com/agentic-commerce/for-sellers/custom",
+    "children": []
+  },
+  {
+    "title": "Accept a payment",
+    "url": "https://docs.stripe.com/agentic-commerce/apps/accept-payment",
+    "children": []
+  },
+  {
+    "title": "Monetize your Model Context Protocol (MCP) app",
+    "url": "https://docs.stripe.com/agentic-commerce/apps",
+    "children": []
+  },
+  {
+    "title": "Sell through agents",
+    "url": "https://docs.stripe.com/agentic-commerce/for-sellers",
+    "children": []
+  },
+  {
+    "title": "Agentic commerce",
+    "url": "https://docs.stripe.com/agentic-commerce",
+    "children": []
+  },
+  {
+    "title": "Add Stripe to your agentic workflows",
+    "url": "https://docs.stripe.com/agents",
+    "children": []
+  },
+  {
+    "title": "See all products",
+    "url": "https://docs.stripe.com/products",
+    "children": []
+  },
+  {
+    "title": "API v2 overview",
+    "url": "https://docs.stripe.com/api-v2-overview",
+    "children": []
+  },
+  {
+    "title": "Automated testing",
+    "url": "https://docs.stripe.com/automated-testing",
+    "children": []
+  },
+  {
+    "title": "Stripe-Context header",
+    "url": "https://docs.stripe.com/context",
+    "children": []
+  },
+  {
+    "title": "Advanced error handling",
+    "url": "https://docs.stripe.com/error-low-level",
+    "children": []
+  },
+  {
+    "title": "Error codes",
+    "url": "https://docs.stripe.com/error-codes",
+    "children": []
+  },
+  {
+    "title": "Error handling",
+    "url": "https://docs.stripe.com/error-handling",
+    "children": []
+  },
+  {
+    "title": "File upload guide",
+    "url": "https://docs.stripe.com/file-upload",
+    "children": []
+  },
+  {
+    "title": "Include-dependent response values in API v2",
+    "url": "https://docs.stripe.com/api-includable-response-values",
+    "children": []
+  },
+  {
+    "title": "Stripe APIs",
+    "url": "https://docs.stripe.com/apis",
+    "children": []
+  },
+  {
+    "title": "Domains and IP addresses",
+    "url": "https://docs.stripe.com/ips",
+    "children": []
+  },
+  {
+    "title": "Best practices for managing secret API keys",
+    "url": "https://docs.stripe.com/keys-best-practices",
+    "children": []
+  },
+  {
+    "title": "API keys",
+    "url": "https://docs.stripe.com/keys",
+    "children": []
+  },
+  {
+    "title": "Metadata use cases",
+    "url": "https://docs.stripe.com/metadata/use-cases",
+    "children": []
+  },
+  {
+    "title": "Metadata",
+    "url": "https://docs.stripe.com/metadata",
+    "children": []
+  },
+  {
+    "title": "Manage default payment methods in the Dashboard",
+    "url": "https://docs.stripe.com/upgrades/manage-payment-methods",
+    "children": []
+  },
+  {
+    "title": "How pagination works",
+    "url": "https://docs.stripe.com/pagination",
+    "children": []
+  },
+  {
+    "title": "Rate limits",
+    "url": "https://docs.stripe.com/rate-limits",
+    "children": []
+  },
+  {
+    "title": "Restricted API keys",
+    "url": "https://docs.stripe.com/keys/restricted-api-keys",
+    "children": []
+  },
+  {
+    "title": "API upgrades",
+    "url": "https://docs.stripe.com/upgrades",
+    "children": []
+  },
+  {
+    "title": "Apple Pay liability shift, disputes, and refunds",
+    "url": "https://docs.stripe.com/apple-pay/disputes-refunds",
+    "children": []
+  },
+  {
+    "title": "Apple Pay merchant tokens",
+    "url": "https://docs.stripe.com/apple-pay/merchant-tokens",
+    "children": []
+  },
+  {
+    "title": "Manage recurring payments on Apple Pay",
+    "url": "https://docs.stripe.com/apple-pay/apple-pay-recurring",
+    "children": []
+  },
+  {
+    "title": "Apple Pay Best Practices",
+    "url": "https://docs.stripe.com/apple-pay/best-practices",
+    "children": []
+  },
+  {
+    "title": "Cartes Bancaires with Apple Pay",
+    "url": "https://docs.stripe.com/apple-pay/cartes-bancaires",
+    "children": []
+  },
+  {
+    "title": "Apple Pay",
+    "url": "https://docs.stripe.com/apple-pay",
+    "children": []
+  },
+  {
+    "title": "Accept payments after incorporating",
+    "url": "https://docs.stripe.com/atlas/accept-payments",
+    "children": []
+  },
+  {
+    "title": "Business taxes",
+    "url": "https://docs.stripe.com/atlas/business-taxes",
+    "children": []
+  },
+  {
+    "title": "Company types",
+    "url": "https://docs.stripe.com/atlas/company-types",
+    "children": []
+  },
+  {
+    "title": "Founder equity terms",
+    "url": "https://docs.stripe.com/atlas/equity-terms",
+    "children": []
+  },
+  {
+    "title": "Fundraise with SAFEs",
+    "url": "https://docs.stripe.com/atlas/fundraise-with-safes",
+    "children": []
+  },
+  {
+    "title": "Incorporation documents",
+    "url": "https://docs.stripe.com/atlas/incorporation-documents",
+    "children": []
+  },
+  {
+    "title": "Incorporate a company with Indian resident founders",
+    "url": "https://docs.stripe.com/atlas/indian-founder-guide",
+    "children": []
+  },
+  {
+    "title": "File Section 83(b) elections as a non-US founder",
+    "url": "https://docs.stripe.com/atlas/83b-elections-non-us-founders",
+    "children": []
+  },
+  {
+    "title": "Stripe Atlas",
+    "url": "https://docs.stripe.com/atlas",
+    "children": []
+  },
+  {
+    "title": "Business bank accounts",
+    "url": "https://docs.stripe.com/atlas/payments-business-bank",
+    "children": []
+  },
+  {
+    "title": "Section 83(b) elections",
+    "url": "https://docs.stripe.com/atlas/83b-election",
+    "children": []
+  },
+  {
+    "title": "Incorporating a US company from Singapore",
+    "url": "https://docs.stripe.com/atlas/singapore-founder-guide",
+    "children": []
+  },
+  {
+    "title": "How to incorporate your company",
+    "url": "https://docs.stripe.com/atlas/signup",
+    "children": []
+  },
+  {
+    "title": "Stripe Treasury offer for Atlas users",
+    "url": "https://docs.stripe.com/atlas/stripe-treasury-offer",
+    "children": []
+  },
+  {
+    "title": "Querying authentication conversion",
+    "url": "https://docs.stripe.com/payment-authentication/writing-queries",
+    "children": []
+  },
+  {
+    "title": "Customer support for Issuing and Treasury for platforms",
+    "url": "https://docs.stripe.com/issuing/customer-support",
+    "children": []
+  },
+  {
+    "title": "Money management",
+    "url": "https://docs.stripe.com/money-management",
+    "children": []
+  },
+  {
+    "title": "B2B payments integration guide",
+    "url": "https://docs.stripe.com/issuing/integration-guides/b2b-payments",
+    "children": []
+  },
+  {
+    "title": "Embedded Finance integration guide",
+    "url": "https://docs.stripe.com/issuing/integration-guides/embedded-finance",
+    "children": []
+  },
+  {
+    "title": "Fleet integration guide",
+    "url": "https://docs.stripe.com/issuing/integration-guides/fleet",
+    "children": []
+  },
+  {
+    "title": "Integration guides",
+    "url": "https://docs.stripe.com/issuing/integration-guides",
+    "children": []
+  },
+  {
+    "title": "Onboarding overview",
+    "url": "https://docs.stripe.com/issuing/onboarding-overview",
+    "children": []
+  },
+  {
+    "title": "Issuing and Treasury for platforms sample app",
+    "url": "https://docs.stripe.com/issuing/sample-app",
+    "children": []
+  },
+  {
+    "title": "Best practices",
+    "url": "https://docs.stripe.com/batch-api/best-practices",
+    "children": []
+  },
+  {
+    "title": "Running a batch job",
+    "url": "https://docs.stripe.com/batch-api/create",
+    "children": []
+  },
+  {
+    "title": "Batch jobs",
+    "url": "https://docs.stripe.com/batch-api",
+    "children": []
+  },
+  {
+    "title": "About the Billing APIs",
+    "url": "https://docs.stripe.com/billing/billing-apis",
+    "children": []
+  },
+  {
+    "title": "Billing collection methods",
+    "url": "https://docs.stripe.com/billing/collection-method",
+    "children": []
+  },
+  {
+    "title": "Add a cancellation page to the customer portal",
+    "url": "https://docs.stripe.com/customer-management/cancellation-page",
+    "children": []
+  },
+  {
+    "title": "Deep links in the customer portal",
+    "url": "https://docs.stripe.com/customer-management/portal-deep-links",
+    "children": []
+  },
+  {
+    "title": "Integrate the customer portal with the API",
+    "url": "https://docs.stripe.com/customer-management/integrate-customer-portal",
+    "children": []
+  },
+  {
+    "title": "Activate the no-code customer portal",
+    "url": "https://docs.stripe.com/customer-management/activate-no-code-customer-portal",
+    "children": []
+  },
+  {
+    "title": "Provide a customer portal to your customers",
+    "url": "https://docs.stripe.com/customer-management",
+    "children": []
+  },
+  {
+    "title": "Configure the customer portal",
+    "url": "https://docs.stripe.com/customer-management/configure-portal",
+    "children": []
+  },
+  {
+    "title": "Customer invoice balance",
+    "url": "https://docs.stripe.com/billing/customer/balance",
+    "children": []
+  },
+  {
+    "title": "Customers",
+    "url": "https://docs.stripe.com/billing/customer",
+    "children": []
+  },
+  {
+    "title": "Entitlements",
+    "url": "https://docs.stripe.com/billing/entitlements",
+    "children": []
+  },
+  {
+    "title": "How Metronome works with Stripe",
+    "url": "https://docs.stripe.com/billing/how-metronome-works-with-stripe",
+    "children": []
+  },
+  {
+    "title": "Billing",
+    "url": "https://docs.stripe.com/billing",
+    "children": []
+  },
+  {
+    "title": "Subscription invoices",
+    "url": "https://docs.stripe.com/billing/invoices/subscription",
+    "children": []
+  },
+  {
+    "title": "How subscriptions work",
+    "url": "https://docs.stripe.com/billing/subscriptions/overview",
+    "children": []
+  },
+  {
+    "title": "Represent customers using Account objects",
+    "url": "https://docs.stripe.com/connect/use-accounts-as-customers",
+    "children": []
+  },
+  {
+    "title": "Manage products and prices",
+    "url": "https://docs.stripe.com/products-prices/manage-prices",
+    "children": []
+  },
+  {
+    "title": "Overview",
+    "url": "https://docs.stripe.com/products-prices/overview",
+    "children": []
+  },
+  {
+    "title": "Integrate a SaaS business on Stripe",
+    "url": "https://docs.stripe.com/saas",
+    "children": []
+  },
+  {
+    "title": "Customize Billing with scripts",
+    "url": "https://docs.stripe.com/billing/scripts",
+    "children": []
+  },
+  {
+    "title": "Script language definition",
+    "url": "https://docs.stripe.com/billing/scripts/script-language",
+    "children": []
+  },
+  {
+    "title": "Benchmarking",
+    "url": "https://docs.stripe.com/billing/subscriptions/analytics/benchmarking",
+    "children": []
+  },
+  {
+    "title": "Analytics",
+    "url": "https://docs.stripe.com/billing/subscriptions/analytics",
+    "children": []
+  },
+  {
+    "title": "Backdate subscriptions",
+    "url": "https://docs.stripe.com/billing/subscriptions/backdating",
+    "children": []
+  },
+  {
+    "title": "Set the subscription billing renewal date",
+    "url": "https://docs.stripe.com/billing/subscriptions/billing-cycle",
+    "children": []
+  },
+  {
+    "title": "Build a subscriptions integration",
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions",
+    "children": []
+  },
+  {
+    "title": "Build a subscriptions integration",
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=checkout&ui=embedded-page",
+    "children": []
+  },
+  {
+    "title": "Build a subscriptions integration",
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=elements&api-integration=checkout",
+    "children": []
+  },
+  {
+    "title": "Build a subscriptions integration",
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=elements&api-integration=paymentintents",
+    "children": []
+  },
+  {
+    "title": "Build a subscriptions integration",
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=mobile&platform=ios",
+    "children": []
+  },
+  {
+    "title": "Build a subscriptions integration",
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=mobile&platform=android",
+    "children": []
+  },
+  {
+    "title": "Build a subscriptions integration",
+    "url": "https://docs.stripe.com/billing/subscriptions/build-subscriptions?payment-ui=mobile&platform=react-native",
+    "children": []
+  },
+  {
+    "title": "Cancel subscriptions",
+    "url": "https://docs.stripe.com/billing/subscriptions/cancel",
+    "children": []
+  },
+  {
+    "title": "Modify subscriptions",
+    "url": "https://docs.stripe.com/billing/subscriptions/change",
+    "children": []
+  },
+  {
+    "title": "Compare classic and flexible billing mode",
+    "url": "https://docs.stripe.com/billing/subscriptions/billing-mode/compare",
+    "children": []
+  },
+  {
+    "title": "Set up payment methods for subscriptions with no initial payment",
+    "url": "https://docs.stripe.com/billing/subscriptions/deferred-payment",
+    "children": []
+  },
+  {
+    "title": "Design a subscriptions integration",
+    "url": "https://docs.stripe.com/billing/subscriptions/design-an-integration",
+    "children": []
+  },
+  {
+    "title": "Coupons and promotion codes",
+    "url": "https://docs.stripe.com/billing/subscriptions/coupons",
+    "children": []
+  },
+  {
+    "title": "Set up flat rate pricing",
+    "url": "https://docs.stripe.com/subscriptions/pricing-models/flat-rate-pricing",
+    "children": []
+  },
+  {
+    "title": "Set up per-seat pricing",
+    "url": "https://docs.stripe.com/subscriptions/pricing-models/per-seat-pricing",
+    "children": []
+  },
+  {
+    "title": "Set up tiered pricing",
+    "url": "https://docs.stripe.com/subscriptions/pricing-models/tiered-pricing",
+    "children": []
+  },
+  {
+    "title": "Set up usage-based pricing models",
+    "url": "https://docs.stripe.com/subscriptions/pricing-models/usage-based-pricing",
+    "children": []
+  },
+  {
+    "title": "How products and prices work",
+    "url": "https://docs.stripe.com/products-prices/how-products-and-prices-work",
+    "children": []
+  },
+  {
+    "title": "Migrate subscriptions to Stripe Billing using toolkit",
+    "url": "https://docs.stripe.com/billing/subscriptions/import-subscriptions-toolkit",
+    "children": []
+  },
+  {
+    "title": "Migrate subscriptions to Stripe Billing using Stripe APIs",
+    "url": "https://docs.stripe.com/billing/subscriptions/import-subscriptions",
+    "children": []
+  },
+  {
+    "title": "Subscriptions",
+    "url": "https://docs.stripe.com/subscriptions",
+    "children": []
+  },
+  {
+    "title": "Manage subscriptions on iOS",
+    "url": "https://docs.stripe.com/billing/subscriptions/manage-ios",
+    "children": []
+  },
+  {
+    "title": "Migrate subscriptions to Stripe Billing",
+    "url": "https://docs.stripe.com/billing/subscriptions/migrate-subscriptions",
+    "children": []
+  },
+  {
+    "title": "Mixed interval subscriptions",
+    "url": "https://docs.stripe.com/billing/subscriptions/mixed-interval",
+    "children": []
+  },
+  {
+    "title": "Configure trial offers on subscriptions",
+    "url": "https://docs.stripe.com/billing/subscriptions/trials",
+    "children": []
+  },
+  {
+    "title": "Pause subscriptions",
+    "url": "https://docs.stripe.com/billing/subscriptions/pause",
+    "children": []
+  },
+  {
+    "title": "Pause payment collection",
+    "url": "https://docs.stripe.com/billing/subscriptions/pause-payment",
+    "children": []
+  },
+  {
+    "title": "Set payment methods per-subscription",
+    "url": "https://docs.stripe.com/billing/subscriptions/payment-methods-setting",
+    "children": []
+  },
+  {
+    "title": "Pending updates",
+    "url": "https://docs.stripe.com/billing/subscriptions/pending-updates",
+    "children": []
+  },
+  {
+    "title": "Bill customers in advance",
+    "url": "https://docs.stripe.com/billing/subscriptions/prebilling",
+    "children": []
+  },
+  {
+    "title": "Embeddable pricing table for subscriptions",
+    "url": "https://docs.stripe.com/payments/checkout/pricing-table",
+    "children": []
+  },
+  {
+    "title": "Enable increased flexibility for subscriptions",
+    "url": "https://docs.stripe.com/billing/subscriptions/billing-mode",
+    "children": []
+  },
+  {
+    "title": "Prorations",
+    "url": "https://docs.stripe.com/billing/subscriptions/prorations",
+    "children": []
+  },
+  {
+    "title": "Set product or subscription quantities",
+    "url": "https://docs.stripe.com/billing/subscriptions/quantities",
+    "children": []
+  },
+  {
+    "title": "Sales-led B2B billing",
+    "url": "https://docs.stripe.com/billing/subscriptions/sales-led-billing",
+    "children": []
+  },
+  {
+    "title": "Recurring pricing models",
+    "url": "https://docs.stripe.com/products-prices/pricing-models",
+    "children": []
+  }
+]
